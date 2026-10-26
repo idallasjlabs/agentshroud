@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Network Topology.md"
+source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
 type: "document"
-community: "MiddlewareManager (2) (2)"
-location: "L106"
+community: "Community 579"
+location: "L120"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2_2
+  - community/Community_579
 ---
 
 # Related Notes
 
 ## Connections
-- [[Network Topology_1]] - `contains` [EXTRACTED]
+- [[All Dependencies_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_579

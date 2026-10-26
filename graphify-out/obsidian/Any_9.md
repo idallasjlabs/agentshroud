@@ -1,17 +1,23 @@
 ---
-source_file: "gateway/security/canary.py"
+source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "AgentTarget (2)"
-location: "L50"
+community: "Community 34"
+location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/Community_34
 ---
 
 # Any
 
 ## Connections
-- [[dot-to_dict()_3]] - `references` [EXTRACTED]
+- [[._build_forward_payload()]] - `references` [EXTRACTED]
+- [[.forward_to_agent()]] - `references` [EXTRACTED]
+- [[.forward_to_agent_stream()]] - `references` [EXTRACTED]
+- [[.health_check()]] - `references` [EXTRACTED]
+- [[AgentTarget]] - `uses` [INFERRED]
+- [[ForwardRequest]] - `uses` [INFERRED]
+- [[RouterConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/code #graphify/EXTRACTED #community/Community_34

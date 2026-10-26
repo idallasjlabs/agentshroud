@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "concept"
-community: "Technical Details"
+community: "Community 1302"
 location: "line 298"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Technical_Details
+  - community/Community_1302
 ---
 
 # Fail-Closed Outbound: pipeline exception blocks delivery to non-owner
@@ -16,4 +16,4 @@ tags:
 - [[SlackAPIProxy Multi-Field Outbound Scanning (blocks, attachments)]] - `semantically_similar_to` [INFERRED]
 - [[SlackAPIProxy Owner vs Collaborator Channel Filtering Tests]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Technical_Details
+#graphify/concept #graphify/INFERRED #community/Community_1302

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
+source_file: "docs/setup/TAILSCALE_SETUP.md"
 type: "document"
-community: "DelegationManager"
-location: "L22"
+community: "Community 696"
+location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/Community_696
 ---
 
 # Current Status
 
 ## Connections
-- [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
+- [[Tailscale Access to OpenClaw Control UI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DelegationManager
+#graphify/document #graphify/EXTRACTED #community/Community_696

@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
+source_file: ".agents/agents/i-tw.md"
 type: "document"
-community: "OpenClaw Workspace Usage Guide"
-location: "L66"
+community: "Community 712"
+location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Workspace_Usage_Guide
+  - community/Community_712
 ---
 
 # Expected output:
 
 ## Connections
-- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[hermesskillsi-twSKILL]] - `contains` [EXTRACTED]
+- [[i-tw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_712

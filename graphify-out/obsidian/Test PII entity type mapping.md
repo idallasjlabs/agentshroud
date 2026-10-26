@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "rationale"
-community: "GroupConfig"
+community: "Community 32"
 location: "L137"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupConfig
+  - community/Community_32
 ---
 
 # Test PII entity type mapping
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_entity_type_mapping()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_32

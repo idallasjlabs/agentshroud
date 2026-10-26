@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
 type: "concept"
-community: "test_sanitizer.py (2)"
+community: "Community 747"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_sanitizerpy_2
+  - community/Community_747
 ---
 
 # ADR-008: Progressive Trust Level System
@@ -15,4 +15,4 @@ tags:
 - [[TrustManager_5]] - `conceptually_related_to` [EXTRACTED]
 - [[agent_trust SQLite table]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_sanitizerpy_2
+#graphify/concept #graphify/EXTRACTED #community/Community_747

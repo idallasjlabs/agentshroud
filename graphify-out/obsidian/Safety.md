@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/oracle/SKILL.md"
+source_file: ".agents/agents/i-pr.md"
 type: "document"
-community: "test_anthropic_openai_translator.py (3)"
-location: "L113"
+community: "Community 1950"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy_3
+  - community/Community_1950
 ---
 
 # Safety
 
 ## Connections
-- [[oracle — best use]] - `contains` [EXTRACTED]
+- [[Content Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy_3
+#graphify/document #graphify/EXTRACTED #community/Community_1950

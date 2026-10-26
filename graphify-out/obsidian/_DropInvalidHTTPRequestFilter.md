@@ -1,22 +1,31 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
+community: "Community 36"
 location: "L62"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - graphify/INFERRED
+  - community/Community_36
 ---
 
 # _DropInvalidHTTPRequestFilter
 
 ## Connections
-- [[dot-filter()]] - `method` [EXTRACTED]
-- [[dot-test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()]] - `calls` [EXTRACTED]
+- [[.filter()]] - `method` [EXTRACTED]
+- [[.test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()]] - `calls` [EXTRACTED]
+- [[AlertTelegramRelay]] - `uses` [INFERRED]
+- [[DataLedger]] - `uses` [INFERRED]
+- [[EventBus]] - `uses` [INFERRED]
+- [[GroupRegistry]] - `uses` [INFERRED]
+- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[MultiAgentRouter]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[Suppress noisy uvicorn warning spam for malformed probe traffic.]] - `rationale_for` [EXTRACTED]
+- [[UserSessionManager]] - `uses` [INFERRED]
 - [[_install_uvicorn_warning_filter()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `contains` [EXTRACTED]
-- [[test_config_validation.py]] - `references` [EXTRACTED]
+- [[test_config_validation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/INFERRED #community/Community_36

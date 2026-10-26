@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "document"
-community: "Sunday Upgrade HEAD Guard Test"
+community: "Community 1252"
 location: "L282"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_HEAD_Guard_Test
+  - community/Community_1252
 ---
 
 # Trademark vs. Patent
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SECTION 9 IMPORTANT NOTES]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sunday_Upgrade_HEAD_Guard_Test
+#graphify/document #graphify/EXTRACTED #community/Community_1252

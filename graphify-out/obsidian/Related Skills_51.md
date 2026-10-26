@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ps/README.md"
+source_file: ".omp/agents/i-mcpm-doctor.md"
 type: "document"
-community: "OpenClaw Bot SSH Configuration"
-location: "L14"
+community: "Community 1045"
+location: "L163"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_SSH_Configuration
+  - community/Community_1045
 ---
 
 # Related Skills
 
 ## Connections
-- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
+- [[Skill MCP Doctor (MCPM-DOCTOR)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration
+#graphify/document #graphify/EXTRACTED #community/Community_1045

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Enum"
+community: "Community 54"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/Community_54
 ---
 
 # services.py
 
 ## Connections
-- [[HealthStatus_1]] - `imports` [EXTRACTED]
-- [[ServiceDescriptor_1]] - `imports` [EXTRACTED]
+- [[HealthStatus]] - `imports` [EXTRACTED]
+- [[ServiceDescriptor]] - `imports` [EXTRACTED]
 - [[ServiceManager]] - `references` [EXTRACTED]
-- [[ServiceStatus_1]] - `imports` [EXTRACTED]
+- [[ServiceStatus]] - `imports` [EXTRACTED]
 - [[_INTERNAL_SERVICE_ATTRS (internal gateway service table)]] - `references` [EXTRACTED]
 - [[_check_clamd()]] - `references` [EXTRACTED]
 - [[_check_fluent_bit()]] - `references` [EXTRACTED]
@@ -25,8 +25,7 @@ tags:
 - [[_engine_status_to_service_status()]] - `contains` [EXTRACTED]
 - [[_inspect_via_socket()]] - `contains` [EXTRACTED]
 - [[_known_services()]] - `references` [EXTRACTED]
-- [[agent_cve_registry.py]] - `conceptually_related_to` [INFERRED]
 - [[load_config()]] - `imports` [EXTRACTED]
-- [[socmodels.py]] - `imports_from` [EXTRACTED]
+- [[models.py_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/Community_54

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mnemosyne/SKILL.md"
+source_file: ".agents/agents/hermes.md"
 type: "document"
-community: "hermes/manifest.json"
-location: "L14"
+community: "Community 1977"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/manifestjson
+  - community/Community_1977
 ---
 
 # Persona
 
 ## Connections
-- [[Mnemosyne — Retention Engineer]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/manifestjson
+#graphify/document #graphify/EXTRACTED #community/Community_1977

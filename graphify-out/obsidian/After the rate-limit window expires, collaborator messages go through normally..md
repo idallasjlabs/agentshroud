@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Sunday Upgrade Report — 2026-09-17 (prod, on-demand)"
+community: "Community 138"
 location: "L7863"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_Report__2026-09-17_prod_on-demand
+  - community/Community_138
 ---
 
 # After the rate-limit window expires, collaborator messages go through normally.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCollaboratorRateLimitRecovery]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Sunday_Upgrade_Report__2026-09-17_prod_on-demand
+#graphify/rationale #graphify/EXTRACTED #community/Community_138

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "What You Must Do When Invoked (3)"
+community: "Community 376"
 location: "L93"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked_3
+  - community/Community_376
 ---
 
 # 📊 Security Rules
@@ -17,4 +17,4 @@ tags:
 - [[Rule 3 Always Use Internally]] - `contains` [EXTRACTED]
 - [[System Instructions Credential Security (Ultra-Conservative)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked_3
+#graphify/document #graphify/EXTRACTED #community/Community_376

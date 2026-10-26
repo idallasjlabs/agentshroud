@@ -1,18 +1,17 @@
 ---
 source_file: "docker/config/openclaw/cron/templates/html-report-instructions.md"
 type: "document"
-community: "AgentTarget (5)"
+community: "Community 212"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentTarget_5
+  - community/Community_212
 ---
 
 # Report Delivery Format Instructions
 
 ## Connections
-- [[AgentShroud Branded HTML Report Template]] - `references` [EXTRACTED]
 - [[AgentShroud Branded Report Template]] - `references` [EXTRACTED]
 - [[AgentShroud Weekly Summary (Hermes Prompt)]] - `references` [EXTRACTED]
 - [[Canonical storage]] - `contains` [EXTRACTED]
@@ -26,7 +25,6 @@ tags:
 - [[Quick checklist]] - `contains` [EXTRACTED]
 - [[Source Verification Policy]] - `rationale_for` [EXTRACTED]
 - [[Source Verification Policy (MANDATORY)]] - `contains` [EXTRACTED]
-- [[Stdin-Pipe File Deployment Pattern (never docker cp)]] - `references` [EXTRACTED]
 - [[html-report-instructions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentTarget_5
+#graphify/document #graphify/EXTRACTED #community/Community_212

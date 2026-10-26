@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup-slack.md"
 type: "document"
-community: "test_collaborator_greeter.py (2)"
+community: "Community 324"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_collaborator_greeterpy_2
+  - community/Community_324
 ---
 
 # setup-slack.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Slack Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_collaborator_greeterpy_2
+#graphify/document #graphify/EXTRACTED #community/Community_324

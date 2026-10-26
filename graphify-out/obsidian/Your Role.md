@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/agents/hermes-soul.md"
+source_file: "docker/config/hermes/SOUL.md"
 type: "document"
-community: ".proxy_messages() (2)"
+community: "Community 339"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/proxy_messages_2
+  - community/Community_339
 ---
 
 # Your Role
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Hermes — System Identity]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/proxy_messages_2
+#graphify/document #graphify/EXTRACTED #community/Community_339

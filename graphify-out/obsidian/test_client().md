@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "Community 7"
 location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # test_client()
 
 ## Connections
 - [[Create a FastAPI TestClient with test configuration      Note This doesn't init]] - `rationale_for` [EXTRACTED]
-- [[GatewayConfig_1]] - `references` [EXTRACTED]
+- [[GatewayConfig_2]] - `references` [EXTRACTED]
 - [[conftest.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/Community_7

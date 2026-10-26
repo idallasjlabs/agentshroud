@@ -1,17 +1,18 @@
 ---
-source_file: "docs/planning/README.md"
-type: "document"
-community: "TestToolAuthorization"
-location: "L24"
+source_file: "docs/diagrams/images/diagram-17-state-bot-session.svg"
+type: "concept"
+community: "Community 1250"
 tags:
-  - graphify/document
+  - graphify/concept
   - graphify/EXTRACTED
-  - community/TestToolAuthorization
+  - community/Community_1250
 ---
 
-# Active
+# active
 
 ## Connections
-- [[`docsplanning` — Index]] - `contains` [EXTRACTED]
+- [[compacting (token count approaches reserveTokensFloor, 196K of 200K)]] - `calls` [EXTRACTED]
+- [[fresh (container starts, new session created)]] - `calls` [EXTRACTED]
+- [[idle (health monitor 300s interval)]] - `calls` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestToolAuthorization
+#graphify/concept #graphify/EXTRACTED #community/Community_1250

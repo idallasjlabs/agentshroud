@@ -1,18 +1,18 @@
 ---
-source_file: "skills/openclaw/video-frames/scripts/frame.sh"
+source_file: "scripts/agentshroud-manage.sh"
 type: "code"
-community: "ClamAV (2)"
-location: "L4"
+community: "Community 1270"
+location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ClamAV_2
+  - community/Community_1270
 ---
 
 # usage()
 
 ## Connections
-- [[frame.sh]] - `defines` [EXTRACTED]
-- [[frame.sh script]] - `calls` [EXTRACTED]
+- [[agentshroud-manage.sh]] - `defines` [EXTRACTED]
+- [[agentshroud-manage.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ClamAV_2
+#graphify/code #graphify/EXTRACTED #community/Community_1270

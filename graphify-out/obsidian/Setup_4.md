@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/apple-reminders/SKILL.md"
+source_file: ".omp/agents/icloud.md"
 type: "document"
-community: "System Audit & Documentation (2)"
-location: "L49"
+community: "Community 680"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Audit__Documentation_2
+  - community/Community_680
 ---
 
 # Setup
 
 ## Connections
-- [[Apple Reminders CLI (remindctl)]] - `contains` [EXTRACTED]
+- [[iCloud Services_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Audit__Documentation_2
+#graphify/document #graphify/EXTRACTED #community/Community_680

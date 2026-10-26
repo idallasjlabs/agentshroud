@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/promote-firmware.sh"
 type: "rationale"
-community: ".test_urlencoded_without_content_type_caption_is_still_filtered"
+community: "Community 1419"
 location: "1"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_urlencoded_without_content_type_caption_is_still_filtered
+  - community/Community_1419
 ---
 
 # OTA Promotion Gate Rationale (2026-07-27 incident)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[promote-firmware.sh]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_urlencoded_without_content_type_caption_is_still_filtered
+#graphify/rationale #graphify/EXTRACTED #community/Community_1419

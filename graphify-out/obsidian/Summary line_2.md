@@ -1,17 +1,17 @@
 ---
-source_file: "reports/upgrade-2026-09-06.md"
+source_file: "reports/upgrade-2026-09-14.md"
 type: "document"
-community: "Add information filtering to prevent agent self-disclosure"
+community: "Community 611"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Add_information_filtering_to_prevent_agent_self-disclosure
+  - community/Community_611
 ---
 
 # Summary line
 
 ## Connections
-- [[AgentShroud Sunday Upgrade — 2026-09-06 (dev-only, read-only inventory → scoped fixes)_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Sunday Upgrade — 2026-09-14 (dev account, agentshroud-bot@marvin)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Add_information_filtering_to_prevent_agent_self-disclosure
+#graphify/document #graphify/EXTRACTED #community/Community_611

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "A2AGovernanceProxy"
+community: "Community 88"
 location: "L108"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/A2AGovernanceProxy
+  - community/Community_88
 ---
 
 # IncidentRecord
 
 ## Connections
-- [[dot-get_incidents()]] - `references` [EXTRACTED]
-- [[dot-record_incident()]] - `references` [EXTRACTED]
+- [[.get_incidents()]] - `references` [EXTRACTED]
+- [[.record_incident()]] - `references` [EXTRACTED]
 - [[A single cross-bot incident recorded in the ledger.]] - `rationale_for` [EXTRACTED]
 - [[CrossBotTrustLedger_1]] - `uses` [INFERRED]
 - [[TestBotIncidentSeverity]] - `uses` [INFERRED]
@@ -24,9 +24,9 @@ tags:
 - [[TestIncidentPropagation]] - `uses` [INFERRED]
 - [[TestTrustDecayPolicyValidation]] - `uses` [INFERRED]
 - [[TrustDecayPolicy_1]] - `uses` [INFERRED]
-- [[TrustManager_4]] - `uses` [INFERRED]
+- [[TrustManager_3]] - `uses` [INFERRED]
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
 - [[test_cross_bot_trust_ledger.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/A2AGovernanceProxy
+#graphify/code #graphify/INFERRED #community/Community_88

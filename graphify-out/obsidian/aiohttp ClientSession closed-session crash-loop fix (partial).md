@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/patch_slack_session_recreate.py"
 type: "rationale"
-community: "run-standalone.sh"
+community: "Community 150"
 location: "6-32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/run-standalonesh
+  - community/Community_150
 ---
 
 # aiohttp ClientSession closed-session crash-loop fix (partial)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[patch_slack_session_recreate.py]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/run-standalonesh
+#graphify/rationale #graphify/EXTRACTED #community/Community_150

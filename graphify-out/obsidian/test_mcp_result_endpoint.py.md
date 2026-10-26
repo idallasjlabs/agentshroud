@@ -1,32 +1,31 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "Community 7"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # test_mcp_result_endpoint.py
 
 ## Connections
 - [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[GatewayConfig_3]] - `imports` [EXTRACTED]
-- [[LedgerConfig_1]] - `imports` [EXTRACTED]
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[GatewayConfig_1]] - `imports` [EXTRACTED]
+- [[LedgerConfig]] - `imports` [EXTRACTED]
+- [[PIIConfig]] - `imports` [EXTRACTED]
 - [[ProxyResult]] - `imports` [EXTRACTED]
-- [[RouterConfig_1]] - `imports` [EXTRACTED]
+- [[RouterConfig]] - `imports` [EXTRACTED]
 - [[TestMCPProxyConfigLoading]] - `contains` [EXTRACTED]
 - [[TestMCPResultEndpoint]] - `contains` [EXTRACTED]
-- [[auth_headers()_3]] - `contains` [EXTRACTED]
-- [[client()_9]] - `contains` [EXTRACTED]
-- [[ingest_apiconfig.py]] - `references` [EXTRACTED]
-- [[ingest_apimain.py]] - `references` [EXTRACTED]
+- [[auth_headers()_2]] - `contains` [EXTRACTED]
+- [[client()_10]] - `contains` [EXTRACTED]
+- [[config.py]] - `references` [EXTRACTED]
 - [[load_config()]] - `imports` [EXTRACTED]
 - [[mcp_proxy.py]] - `references` [EXTRACTED]
 - [[state.py]] - `references` [EXTRACTED]
 - [[test_config()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/Community_7

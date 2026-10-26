@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
+source_file: "docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md"
 type: "document"
-community: "KeyRotationManager (2)"
+community: "Community 578"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/KeyRotationManager_2
+  - community/Community_578
 ---
 
 # Description
 
 ## Connections
-- [[OPENCLAW_SANDBOX_MODE]] - `contains` [EXTRACTED]
+- [[ANTHROPIC_BASE_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/KeyRotationManager_2
+#graphify/document #graphify/EXTRACTED #community/Community_578

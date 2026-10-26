@@ -1,32 +1,32 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "Community 84"
 location: "L82"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig
+  - community/Community_84
 ---
 
 # TestE2E01PromptGuardBlocking
 
 ## Connections
-- [[dot-test_benign_message_passes()]] - `method` [EXTRACTED]
-- [[dot-test_classic_injection_blocked()]] - `method` [EXTRACTED]
-- [[dot-test_jailbreak_blocked()]] - `method` [EXTRACTED]
+- [[.test_benign_message_passes()]] - `method` [EXTRACTED]
+- [[.test_classic_injection_blocked()]] - `method` [EXTRACTED]
+- [[.test_jailbreak_blocked()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[CanaryTripwire]] - `uses` [INFERRED]
 - [[ContextGuard]] - `uses` [INFERRED]
 - [[E2E-01 PromptGuard blocks high-confidence injection payloads.]] - `rationale_for` [EXTRACTED]
 - [[EncodingDetector]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer_3]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
-- [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig
+#graphify/code #graphify/INFERRED #community/Community_84

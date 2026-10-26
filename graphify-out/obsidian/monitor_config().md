@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_subagent_monitor.py"
+source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "SubagentMonitor"
-location: "L33"
+community: "Community 72"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/Community_72
 ---
 
 # monitor_config()
 
 ## Connections
-- [[SubagentMonitorConfig]] - `calls` [EXTRACTED]
-- [[test_subagent_monitor.py]] - `contains` [EXTRACTED]
+- [[DNSFilterConfig]] - `calls` [EXTRACTED]
+- [[test_dns_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/code #graphify/EXTRACTED #community/Community_72

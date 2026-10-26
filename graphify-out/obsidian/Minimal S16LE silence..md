@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "TestSSRFDetection"
+community: "Community 101"
 location: "L920"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/Community_101
 ---
 
 # Minimal S16LE silence.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_pcm_bytes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/rationale #graphify/EXTRACTED #community/Community_101

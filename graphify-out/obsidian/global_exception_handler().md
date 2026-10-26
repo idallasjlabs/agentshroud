@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "pick_latest_stable"
+community: "Community 6"
 location: "L406"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pick_latest_stable
+  - community/Community_6
 ---
 
 # global_exception_handler()
 
 ## Connections
-- [[Catch-all error handler Never leaks stack traces or internal details to client.…]] - `rationale_for` [EXTRACTED]
-- [[Exception_2]] - `references` [EXTRACTED]
+- [[Catch-all error handler      Never leaks stack traces or internal details to cli]] - `rationale_for` [EXTRACTED]
+- [[Exception_1]] - `references` [EXTRACTED]
+- [[JSONResponse]] - `calls` [EXTRACTED]
 - [[Request_1]] - `references` [EXTRACTED]
-- [[exception_handler]] - `references` [EXTRACTED]
-- [[ingest_apimain.py]] - `contains` [EXTRACTED]
+- [[main.py_2]] - `contains` [EXTRACTED]
 - [[test_global_exception_handler()]] - `calls` [EXTRACTED]
 - [[test_global_exception_handler_http_exception()]] - `calls` [EXTRACTED]
 - [[test_main_simple.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pick_latest_stable
+#graphify/code #graphify/EXTRACTED #community/Community_6

@@ -1,17 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/test/test_playback_state/test_playback_state.c"
+source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "AgentShroud Device Pairing Management"
-location: "L39"
+community: "Community 378"
+location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Device_Pairing_Management
+  - community/Community_378
 ---
 
 # vt_agent_count()
 
 ## Connections
-- [[test_playback_state.c]] - `contains` [EXTRACTED]
+- [[app_main.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management
+#graphify/code #graphify/EXTRACTED #community/Community_378

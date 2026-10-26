@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "AgentShroud Access Control Matrix"
+community: "Community 201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/Community_201
 ---
 
 # Protocol
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SmtpLike]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/code #graphify/EXTRACTED #community/Community_201

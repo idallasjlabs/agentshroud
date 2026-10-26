@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sav/README.md"
+source_file: "docker/config/openclaw/skills/i-ti/README.md"
 type: "document"
-community: "soc.js"
+community: "Community 1245"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_1245
 ---
 
 # Purpose
 
 ## Connections
-- [[System Audit Vault_1]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_1245

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: ".test_gives_up_and_marks_sent_after_max_retries()"
+community: "Community 736"
 location: "L1764"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_gives_up_and_marks_sent_after_max_retries
+  - community/Community_736
 ---
 
 # TestCveReportSchedulerRetry
 
 ## Connections
-- [[dot-test_gives_up_and_marks_sent_after_max_retries()]] - `method` [EXTRACTED]
-- [[dot-test_retries_on_failed_send_before_giving_up()]] - `method` [EXTRACTED]
-- [[dot-test_successful_send_marks_sent_immediately_no_retry()]] - `method` [EXTRACTED]
+- [[.test_gives_up_and_marks_sent_after_max_retries()]] - `method` [EXTRACTED]
+- [[.test_retries_on_failed_send_before_giving_up()]] - `method` [EXTRACTED]
+- [[.test_successful_send_marks_sent_immediately_no_retry()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_gives_up_and_marks_sent_after_max_retries
+#graphify/code #graphify/EXTRACTED #community/Community_736

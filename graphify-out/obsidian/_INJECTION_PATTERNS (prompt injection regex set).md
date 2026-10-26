@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "test_alert_telegram_relay.py — AlertTelegramRelay tests"
+community: "Community 1789"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_alert_telegram_relaypy__AlertTelegramRelay_tests
+  - community/Community_1789
 ---
 
 # _INJECTION_PATTERNS (prompt injection regex set)
 
-#graphify/code #graphify/EXTRACTED #community/test_alert_telegram_relaypy__AlertTelegramRelay_tests
+#graphify/code #graphify/EXTRACTED #community/Community_1789

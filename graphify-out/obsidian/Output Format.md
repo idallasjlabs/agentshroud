@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
+source_file: ".agents/agents/sav.md"
 type: "document"
-community: "dashboard_endpoints.py (2) (2)"
-location: "L26"
+community: "Community 297"
+location: "L398"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy_2_2
+  - community/Community_297
 ---
 
-# Output Format
+# OUTPUT FORMAT
 
 ## Connections
-- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
+- [[System Audit Vault (Obsidian)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard_endpointspy_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_297

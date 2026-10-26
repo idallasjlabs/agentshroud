@@ -1,24 +1,18 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "ServiceManager"
-location: "L2704"
+community: "Community 7"
+location: "L350"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ServiceManager
+  - graphify/EXTRACTED
+  - community/Community_7
 ---
 
 # WebSocket
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult_1]] - `uses` [INFERRED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller_1]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface_1]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
-- [[soc_websocket()]] - `references` [EXTRACTED]
+- [[.connect()_1]] - `references` [EXTRACTED]
+- [[.disconnect()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/Community_7

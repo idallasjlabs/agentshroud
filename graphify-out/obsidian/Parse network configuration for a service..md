@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "WebProxy"
+community: "Community 71"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/Community_71
 ---
 
 # Parse network configuration for a service.
 
 ## Connections
-- [[dot-_parse_service_network_config()]] - `rationale_for` [EXTRACTED]
+- [[._parse_service_network_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_71

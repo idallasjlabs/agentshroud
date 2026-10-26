@@ -1,21 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
 type: "document"
-community: "egress_config.py"
-location: "L44"
+community: "Community 675"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_configpy
+  - community/Community_675
 ---
 
 # Function Details
 
 ## Connections
-- [[IsolationVerifier.generate_compose()]] - `contains` [EXTRACTED]
-- [[IsolationVerifier.verify_network_isolation()]] - `contains` [EXTRACTED]
-- [[IsolationVerifier.verify_shared_nothing()]] - `contains` [EXTRACTED]
-- [[IsolationVerifier.verify_volume_isolation()]] - `contains` [EXTRACTED]
-- [[agent_isolation.py_2]] - `contains` [EXTRACTED]
+- [[BrowserSecurityGuard.analyze_content(content)]] - `contains` [EXTRACTED]
+- [[BrowserSecurityGuard.analyze_screenshot(image_data)]] - `contains` [EXTRACTED]
+- [[BrowserSecurityGuard.can_enter_credentials(url)]] - `contains` [EXTRACTED]
+- [[BrowserSecurityGuard.check_url_reputation(url)]] - `contains` [EXTRACTED]
+- [[BrowserSecurityGuard.register_screenshot_hook(hook)]] - `contains` [EXTRACTED]
+- [[browser_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_configpy
+#graphify/document #graphify/EXTRACTED #community/Community_675

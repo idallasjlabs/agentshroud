@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "ContextSegment"
+community: "Community 30"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/Community_30
 ---
 
 # enhanced_queue.py
@@ -14,16 +14,17 @@ tags:
 ## Connections
 - [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
 - [[ApprovalQueueItem_3]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_2]] - `imports` [EXTRACTED]
-- [[ApprovalStore]] - `imports` [EXTRACTED]
-- [[EnhancedApprovalQueue_1]] - `contains` [EXTRACTED]
+- [[ApprovalRequest_3]] - `imports` [EXTRACTED]
+- [[ApprovalStore_1]] - `imports` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `contains` [EXTRACTED]
 - [[MFAGuard_2]] - `imports` [EXTRACTED]
-- [[ToolRiskConfig]] - `imports` [EXTRACTED]
-- [[ToolRiskPolicy]] - `imports` [EXTRACTED]
-- [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
+- [[SKILL_200]] - `references` [EXTRACTED]
+- [[ToolRiskConfig_1]] - `imports` [EXTRACTED]
+- [[ToolRiskPolicy_1]] - `imports` [EXTRACTED]
 - [[group_router.py]] - `references` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports_from` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[test_mfa_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/Community_30

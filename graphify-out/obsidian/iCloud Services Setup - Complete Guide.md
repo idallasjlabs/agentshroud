@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/ICLOUD-SERVICES-SETUP.md"
 type: "document"
-community: "TestOutboundClassifierHelpers"
+community: "Community 349"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundClassifierHelpers
+  - community/Community_349
 ---
 
 # iCloud Services Setup - Complete Guide
@@ -24,4 +24,4 @@ tags:
 - [[🔐 Important App-Specific Passwords]] - `contains` [EXTRACTED]
 - [[🚀 Complete Setup Script]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundClassifierHelpers
+#graphify/document #graphify/EXTRACTED #community/Community_349

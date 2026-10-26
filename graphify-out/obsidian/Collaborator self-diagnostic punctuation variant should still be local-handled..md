@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TestInboundPipelineOnGetUpdates"
+community: "Community 4"
 location: "L5069"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestInboundPipelineOnGetUpdates
+  - community/Community_4
 ---
 
 # Collaborator self-diagnostic punctuation variant should still be local-handled.
 
 ## Connections
-- [[dot-test_self_diagnostic_with_punctuation_is_handled_locally_for_collaborator()]] - `rationale_for` [EXTRACTED]
+- [[.test_self_diagnostic_with_punctuation_is_handled_locally_for_collaborator()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates
+#graphify/rationale #graphify/EXTRACTED #community/Community_4

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "rationale"
-community: "TestPatternDetection"
+community: "Community 512"
 location: "L112"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPatternDetection
+  - community/Community_512
 ---
 
 # Missing 'subject' or 'body' returns 422.
 
 ## Connections
-- [[dot-test_missing_required_fields_returns_422()_1]] - `rationale_for` [EXTRACTED]
+- [[.test_missing_required_fields_returns_422()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPatternDetection
+#graphify/rationale #graphify/EXTRACTED #community/Community_512

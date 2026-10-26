@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "TestCredentialInjection"
+community: "Community 935"
 location: "L397"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestCredentialInjection
+  - community/Community_935
 ---
 
 # Mitigation Coverage Matrix
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Threat Model (STRIDE Analysis)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestCredentialInjection
+#graphify/document #graphify/EXTRACTED #community/Community_935

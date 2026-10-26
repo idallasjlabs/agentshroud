@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
+source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "ADR-006: Multi-Runtime Container Support"
-location: "L50"
+community: "Community 762"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-006_Multi-Runtime_Container_Support
+  - community/Community_762
 ---
 
 # Problem
 
 ## Connections
-- [[Cisco AnyConnect VPN Networking Fix]] - `contains` [EXTRACTED]
+- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support
+#graphify/document #graphify/EXTRACTED #community/Community_762

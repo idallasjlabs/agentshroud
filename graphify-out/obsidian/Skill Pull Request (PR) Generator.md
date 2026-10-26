@@ -1,22 +1,21 @@
 ---
-source_file: ".agents/skills/i-pr/SKILL.md"
+source_file: ".agents/agents/i-pr.md"
 type: "document"
-community: "Turbo Fieldfare (MLX inference backend)"
-location: "L5"
+community: "Community 1950"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Turbo_Fieldfare_MLX_inference_backend
+  - community/Community_1950
 ---
 
 # Skill: Pull Request (PR) Generator
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-prSKILL]] - `contains` [EXTRACTED]
-- [[Constraints_7]] - `contains` [EXTRACTED]
+- [[Constraints]] - `contains` [EXTRACTED]
 - [[Content Requirements]] - `contains` [EXTRACTED]
-- [[Objective_3]] - `contains` [EXTRACTED]
-- [[Role_96]] - `contains` [EXTRACTED]
+- [[Objective]] - `contains` [EXTRACTED]
+- [[Role_24]] - `contains` [EXTRACTED]
+- [[i-pr]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Turbo_Fieldfare_MLX_inference_backend
+#graphify/document #graphify/EXTRACTED #community/Community_1950

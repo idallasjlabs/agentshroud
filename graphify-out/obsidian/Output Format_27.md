@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-oracle/SKILL.md"
+source_file: ".agents/skills/socrates/SKILL.md"
 type: "document"
-community: "Quick Reference Commands"
-location: "L26"
+community: "Community 1124"
+location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference_Commands
+  - community/Community_1124
 ---
 
 # Output Format
 
 ## Connections
-- [[Oracle — Feedback Analyst_3]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference_Commands
+#graphify/document #graphify/EXTRACTED #community/Community_1124

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md"
 type: "document"
-community: "TeamsConfig (3)"
+community: "Community 357"
 location: "L193"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TeamsConfig_3
+  - community/Community_357
 ---
 
 # Verification of Round 1 Fixes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TeamsConfig_3
+#graphify/document #graphify/EXTRACTED #community/Community_357

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "AgentShroud Device Pairing Management"
+community: "Community 341"
 location: "L511"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AgentShroud_Device_Pairing_Management
+  - community/Community_341
 ---
 
 # wakeword_tts_stop_requested()
@@ -19,4 +19,4 @@ tags:
 - [[voice_task()]] - `calls` [INFERRED]
 - [[wakeword.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AgentShroud_Device_Pairing_Management
+#graphify/code #graphify/INFERRED #community/Community_341

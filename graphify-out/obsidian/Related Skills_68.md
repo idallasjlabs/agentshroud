@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cr/README.md"
+source_file: "docker/config/hermes/skills/i-icloud/README.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM)"
+community: "Community 1211"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM
+  - community/Community_1211
 ---
 
 # Related Skills
 
 ## Connections
-- [[Code Review (CR)]] - `contains` [EXTRACTED]
-- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
+- [[iCloud Data Manager (ICLOUD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM
+#graphify/document #graphify/EXTRACTED #community/Community_1211

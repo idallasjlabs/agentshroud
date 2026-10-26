@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/CMakeLists.txt"
 type: "code"
-community: "ssh_proxy.py"
+community: "Community 972"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ssh_proxypy
+  - community/Community_972
 ---
 
 # Kawaii Face Basic Cycle Example Root CMakeLists
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[LVGL Kawaii Face Component CMakeLists]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ssh_proxypy
+#graphify/code #graphify/EXTRACTED #community/Community_972

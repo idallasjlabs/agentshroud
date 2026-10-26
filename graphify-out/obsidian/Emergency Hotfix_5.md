@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-gg/SKILL.md"
+source_file: ".cursor/agents/i-mc.md"
 type: "document"
-community: "LVGL Kawaii Face Component CMakeLists"
-location: "L69"
+community: "Community 1653"
+location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LVGL_Kawaii_Face_Component_CMakeLists
+  - community/Community_1653
 ---
 
 # Emergency Hotfix
 
 ## Connections
-- [[Skill Git Workflow Guardian (GIT-GUARD)_2]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LVGL_Kawaii_Face_Component_CMakeLists
+#graphify/document #graphify/EXTRACTED #community/Community_1653

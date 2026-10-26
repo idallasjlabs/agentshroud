@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md"
 type: "document"
-community: "agent_cve_registry.py"
+community: "Community 655"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agent_cve_registrypy
+  - community/Community_655
 ---
 
 # Root `.env`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Secrets Usage and Collaborator Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agent_cve_registrypy
+#graphify/document #graphify/EXTRACTED #community/Community_655

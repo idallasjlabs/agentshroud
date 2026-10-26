@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "SkillGuard"
+community: "Community 93"
 location: "L239"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/Community_93
 ---
 
 # Assess risk level for a domain/port combination.          Returns:             R
 
 ## Connections
-- [[dot-_assess_risk()]] - `rationale_for` [EXTRACTED]
+- [[._assess_risk()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SkillGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_93

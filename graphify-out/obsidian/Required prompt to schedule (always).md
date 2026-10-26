@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "oracle — best use"
+community: "Community 769"
 location: "L180"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/oracle__best_use
+  - community/Community_769
 ---
 
 # Required prompt to schedule (always)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Periodic checks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/oracle__best_use
+#graphify/document #graphify/EXTRACTED #community/Community_769

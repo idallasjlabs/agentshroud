@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec/SKILL.md"
+source_file: ".agents/skills/sec-defense/SKILL.md"
 type: "document"
-community: "dashboard_endpoints.py (2)"
-location: "L81"
+community: "Community 1341"
+location: "L129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy_2
+  - community/Community_1341
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Security Review (SEC)]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard_endpointspy_2
+#graphify/document #graphify/EXTRACTED #community/Community_1341

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-11-trust-boundary.png"
 type: "image"
-community: "sanitizer.py"
+community: "Community 421"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/sanitizerpy
+  - community/Community_421
 ---
 
 # Blocked/Untrusted (LAN RFC1918, unlisted domains)
@@ -14,4 +14,4 @@ tags:
 - [[Trust Boundary Diagram]] - `conceptually_related_to` [EXTRACTED]
 - [[Trust Zone 2 — Bot (Supervised Agent no direct credentialinternet access)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/sanitizerpy
+#graphify/image #graphify/EXTRACTED #community/Community_421

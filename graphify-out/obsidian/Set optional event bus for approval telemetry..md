@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "SkillGuard"
+community: "Community 93"
 location: "L201"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/Community_93
 ---
 
 # Set optional event bus for approval telemetry.
 
 ## Connections
-- [[dot-set_event_bus()_1]] - `rationale_for` [EXTRACTED]
+- [[.set_event_bus()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SkillGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_93

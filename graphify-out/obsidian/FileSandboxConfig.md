@@ -1,41 +1,41 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "._make_proxy()"
+community: "Community 0"
 location: "L93"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_make_proxy
+  - community/Community_0
 ---
 
 # FileSandboxConfig
 
 ## Connections
-- [[dot-__init__()_118]] - `calls` [EXTRACTED]
-- [[dot-__init__()_132]] - `references` [EXTRACTED]
-- [[dot-monitor_sandbox()]] - `calls` [EXTRACTED]
-- [[dot-sandbox()]] - `calls` [EXTRACTED]
-- [[dot-test_default_mode_is_enforce()_5]] - `calls` [EXTRACTED]
-- [[dot-test_file_sandbox_instantiates()]] - `calls` [EXTRACTED]
-- [[dot-test_file_sandbox_mcp_write()]] - `calls` [INFERRED]
-- [[dot-test_file_sandbox_staging_detection()]] - `calls` [INFERRED]
-- [[dot-test_monitor_mode_allows_everything()]] - `calls` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_42]] - `uses` [INFERRED]
-- [[Exception_3]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_81]] - `references` [EXTRACTED]
+- [[.monitor_sandbox()]] - `calls` [EXTRACTED]
+- [[.sandbox()]] - `calls` [EXTRACTED]
+- [[.test_default_mode_is_enforce()_5]] - `calls` [EXTRACTED]
+- [[.test_file_sandbox_instantiates()]] - `calls` [EXTRACTED]
+- [[.test_file_sandbox_mcp_write()]] - `calls` [INFERRED]
+- [[.test_file_sandbox_staging_detection()]] - `calls` [INFERRED]
+- [[.test_monitor_mode_allows_everything()]] - `calls` [EXTRACTED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[TestAgentShroudSourceCodeProtection]] - `uses` [INFERRED]
-- [[TestAuditTrail]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuditTrail_1]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestConfigurationProtection]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard]] - `uses` [INFERRED]
+- [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDRYOwnerChatID]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
@@ -61,7 +61,7 @@ tags:
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
 - [[TestNormalFileOperations]] - `uses` [INFERRED]
 - [[TestNotifyUserBlockedSanitization]] - `uses` [INFERRED]
-- [[TestPIIDetection]] - `uses` [INFERRED]
+- [[TestPIIDetection_1]] - `uses` [INFERRED]
 - [[TestPIIScanning]] - `uses` [INFERRED]
 - [[TestPatternMatching]] - `uses` [INFERRED]
 - [[TestPrivilegeEscalation]] - `uses` [INFERRED]
@@ -74,23 +74,24 @@ tags:
 - [[TestSecurityViolationLogging]] - `uses` [INFERRED]
 - [[TestSensitivePathBlocking]] - `uses` [INFERRED]
 - [[TestStagingPatternDetection]] - `uses` [INFERRED]
-- [[TestSupplyChain]] - `uses` [INFERRED]
+- [[TestSupplyChain_1]] - `uses` [INFERRED]
 - [[TestSystemPathProtection]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
 - [[TestWorkspaceAccessPreserved]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
-- [[default_config()_1]] - `calls` [EXTRACTED]
+- [[default_config()_3]] - `calls` [EXTRACTED]
 - [[enforce_config()]] - `calls` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[file_sandbox.py]] - `contains` [EXTRACTED]
-- [[middleware.py_1]] - `imports` [EXTRACTED]
-- [[run()_5]] - `calls` [EXTRACTED]
-- [[strict_config()_2]] - `calls` [EXTRACTED]
+- [[main.py_2]] - `imports` [EXTRACTED]
+- [[middleware.py]] - `imports` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
+- [[strict_config()_1]] - `calls` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_file_sandbox.py]] - `imports` [EXTRACTED]
 - [[test_privilege_separation.py]] - `imports` [EXTRACTED]
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_make_proxy
+#graphify/code #graphify/INFERRED #community/Community_0

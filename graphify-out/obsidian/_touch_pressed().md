@@ -1,19 +1,17 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "graphify reference: extra exports and benchmark (2)"
+community: "Community 341"
 location: "L172"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/graphify_reference_extra_exports_and_benchmark_2
+  - community/Community_341
 ---
 
 # _touch_pressed()
 
 ## Connections
-- [[face_animation_pause()]] - `calls` [INFERRED]
-- [[face_set_emotion()]] - `calls` [INFERRED]
 - [[lv_event_t]] - `references` [EXTRACTED]
 - [[ui_face.c]] - `contains` [EXTRACTED]
 - [[wakeword_ended()]] - `calls` [INFERRED]
@@ -23,4 +21,4 @@ tags:
 - [[wakeword_triggered()]] - `calls` [INFERRED]
 - [[wakeword_tts_stop_request()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/graphify_reference_extra_exports_and_benchmark_2
+#graphify/code #graphify/INFERRED #community/Community_341

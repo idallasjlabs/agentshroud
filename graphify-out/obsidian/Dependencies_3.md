@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
+source_file: ".agents/agents/i-tw.md"
 type: "document"
-community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE (2)"
-location: "L279"
+community: "Community 712"
+location: "L249"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE_2
+  - community/Community_712
 ---
 
 # Dependencies
 
 ## Connections
-- [[Skill UX Expert (UX)_1]] - `contains` [EXTRACTED]
+- [[→ {site site1, test_mode True, output_prefix _testsite1}]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE_2
+#graphify/document #graphify/EXTRACTED #community/Community_712

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "ESP32-S3-BOX-3 Voice Terminal (2)"
-location: "L201"
+community: "Community 583"
+location: "L202"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32-S3-BOX-3_Voice_Terminal_2
+  - community/Community_583
 ---
 
 # GitHub PAT
 
 ## Connections
-- [[Security Best Practices_2]] - `contains` [EXTRACTED]
+- [[Security Best Practices_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal_2
+#graphify/document #graphify/EXTRACTED #community/Community_583

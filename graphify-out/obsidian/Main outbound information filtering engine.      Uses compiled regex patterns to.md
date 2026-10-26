@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "rationale"
-community: "KeyVaultConfig"
+community: "Community 24"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/Community_24
 ---
 
 # Main outbound information filtering engine.      Uses compiled regex patterns to
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OutboundInfoFilter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_24

@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "parse_trivy_output"
+community: "Community 514"
 location: "L69"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/parse_trivy_output
+  - community/Community_514
 ---
 
 # HostResult
 
 ## Connections
-- [[dot-failed()]] - `references` [EXTRACTED]
-- [[dot-ok()_1]] - `method` [EXTRACTED]
-- [[dot-passed()]] - `references` [EXTRACTED]
-- [[dot-test_ok_only_when_pass()]] - `calls` [EXTRACTED]
-- [[dot-test_render_summary_all_pass_overall()]] - `calls` [EXTRACTED]
-- [[dot-test_render_summary_contains_hosts_and_overall()]] - `calls` [EXTRACTED]
-- [[dot-unreachable()]] - `references` [EXTRACTED]
-- [[Path_65]] - `uses` [INFERRED]
+- [[.failed()]] - `references` [EXTRACTED]
+- [[.ok()_2]] - `method` [EXTRACTED]
+- [[.passed()]] - `references` [EXTRACTED]
+- [[.test_ok_only_when_pass()]] - `calls` [EXTRACTED]
+- [[.test_render_summary_all_pass_overall()]] - `calls` [EXTRACTED]
+- [[.test_render_summary_contains_hosts_and_overall()]] - `calls` [EXTRACTED]
+- [[.unreachable()]] - `references` [EXTRACTED]
+- [[Path_34]] - `uses` [INFERRED]
 - [[Result of running the command on a single host.]] - `rationale_for` [EXTRACTED]
 - [[TestBuildSshArgv]] - `uses` [INFERRED]
-- [[TestClassify_1]] - `uses` [INFERRED]
+- [[TestClassify]] - `uses` [INFERRED]
 - [[TestHostResult]] - `uses` [INFERRED]
-- [[TestMain_1]] - `uses` [INFERRED]
+- [[TestMain]] - `uses` [INFERRED]
 - [[TestMultiHostResultProperties]] - `uses` [INFERRED]
 - [[TestParseHosts]] - `uses` [INFERRED]
 - [[TestParserAndCommandResolution]] - `uses` [INFERRED]
@@ -36,4 +36,4 @@ tags:
 - [[run_multi_host()]] - `references` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/parse_trivy_output
+#graphify/code #graphify/INFERRED #community/Community_514

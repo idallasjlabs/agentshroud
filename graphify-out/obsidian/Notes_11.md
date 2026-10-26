@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/bear-notes/SKILL.md"
+source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "Daedalus — Concept Illustrator (2)"
-location: "L102"
+community: "Community 416"
+location: "L453"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator_2
+  - community/Community_416
 ---
 
 # Notes
 
 ## Connections
-- [[Bear Notes]] - `contains` [EXTRACTED]
+- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator_2
+#graphify/document #graphify/EXTRACTED #community/Community_416

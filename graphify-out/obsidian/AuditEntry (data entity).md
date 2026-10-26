@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "concept"
-community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
+community: "Community 630"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
+  - community/Community_630
 ---
 
 # AuditEntry (data entity)
@@ -16,4 +16,4 @@ tags:
 - [[audit_entries SQLite table]] - `implements` [EXTRACTED]
 - [[mcp_audit_entries SQLite table]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
+#graphify/concept #graphify/EXTRACTED #community/Community_630

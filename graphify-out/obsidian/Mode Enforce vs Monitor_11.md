@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
 type: "document"
-community: "trivy_report.py"
-location: "L63"
+community: "Community 392"
+location: "L99"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/trivy_reportpy
+  - community/Community_392
 ---
 
 # Mode: Enforce vs Monitor
 
 ## Connections
-- [[canary.py_2]] - `contains` [EXTRACTED]
+- [[TrustManager_5]] - `contains` [EXTRACTED]
+- [[trust_manager.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/trivy_reportpy
+#graphify/document #graphify/EXTRACTED #community/Community_392

@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-kanban/SKILL.md"
+source_file: ".cursor/agents/i-kanban.md"
 type: "document"
-community: "soc.js"
-location: "L5"
+community: "Community 2256"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_2256
 ---
 
 # Skill: kanban
 
 ## Connections
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-kanbanSKILL]] - `contains` [EXTRACTED]
+- [[i-kanban_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_2256

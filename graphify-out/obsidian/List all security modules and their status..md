@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "TrustConfig"
+community: "Community 6"
 location: "L1237"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/Community_6
 ---
 
 # List all security modules and their status.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[list_security_modules()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_6

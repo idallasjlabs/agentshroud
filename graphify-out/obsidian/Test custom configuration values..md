@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_path_isolation.py"
+source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "PathIsolationManager"
+community: "Community 3"
 location: "L35"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/Community_3
 ---
 
 # Test custom configuration values.
 
 ## Connections
-- [[dot-test_custom_config()]] - `rationale_for` [EXTRACTED]
+- [[.test_custom_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_3

@@ -1,13 +1,13 @@
 ---
 source_file: "branding/agentshroud-logo-light-bg.png"
 type: "image"
-community: "AgentShroud LinkedIn Banner"
+community: "Community 1624"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/AgentShroud_LinkedIn_Banner
+  - community/Community_1624
 ---
 
 # AgentShroud Logo — Glow/Light Variant
 
-#graphify/image #graphify/EXTRACTED #community/AgentShroud_LinkedIn_Banner
+#graphify/image #graphify/EXTRACTED #community/Community_1624

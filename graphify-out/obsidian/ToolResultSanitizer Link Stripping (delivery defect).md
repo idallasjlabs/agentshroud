@@ -1,11 +1,11 @@
 ---
 source_file: "docs/dev-notes/job-quality-matrix.md"
 type: "rationale"
-community: "All Dependencies.md"
+community: "Community 289"
 tags:
   - graphify/rationale
-  - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - graphify/INFERRED
+  - community/Community_289
 ---
 
 # ToolResultSanitizer Link Stripping (delivery defect)
@@ -14,4 +14,4 @@ tags:
 - [[Local-Model Job Quality Matrix]] - `references` [EXTRACTED]
 - [[OWASP Agentic AI (ASI) Coverage Map]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/rationale #graphify/INFERRED #community/Community_289

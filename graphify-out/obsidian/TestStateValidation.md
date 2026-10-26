@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "_wrap_response()"
+community: "Community 0"
 location: "L69"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_wrap_response
+  - community/Community_0
 ---
 
 # TestStateValidation
 
 ## Connections
-- [[dot-test_empty_state_rejected()]] - `method` [EXTRACTED]
-- [[dot-test_short_state_rejected()]] - `method` [EXTRACTED]
-- [[dot-test_state_replay_detected()]] - `method` [EXTRACTED]
-- [[dot-test_valid_state_accepted()]] - `method` [EXTRACTED]
+- [[.test_empty_state_rejected()]] - `method` [EXTRACTED]
+- [[.test_short_state_rejected()]] - `method` [EXTRACTED]
+- [[.test_state_replay_detected()]] - `method` [EXTRACTED]
+- [[.test_valid_state_accepted()]] - `method` [EXTRACTED]
 - [[ConfusedDeputyError]] - `uses` [INFERRED]
 - [[OAuthError]] - `uses` [INFERRED]
 - [[OAuthRequest]] - `uses` [INFERRED]
@@ -24,4 +24,4 @@ tags:
 - [[RedirectMismatch]] - `uses` [INFERRED]
 - [[test_oauth_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_wrap_response
+#graphify/code #graphify/INFERRED #community/Community_0

@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/security/session_security.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "TelegramAPIProxy (2)"
-location: "L127"
+community: "Community 6"
+location: "L347"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - graphify/INFERRED
+  - community/Community_6
 ---
 
 # Any
 
 ## Connections
-- [[dot-validate_event()]] - `references` [EXTRACTED]
+- [[.get_stats()_1]] - `references` [EXTRACTED]
+- [[LedgerConfig]] - `uses` [INFERRED]
+- [[LedgerEntry_1]] - `uses` [INFERRED]
+- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/code #graphify/INFERRED #community/Community_6

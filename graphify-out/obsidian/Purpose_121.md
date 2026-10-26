@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
+source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
 type: "document"
-community: "_make_proxy() (2)"
-location: "L12"
+community: "Community 1174"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_make_proxy_2
+  - community/Community_1174
 ---
 
 # Purpose
 
 ## Connections
-- [[ledger.py_1]] - `contains` [EXTRACTED]
+- [[browser-fetch.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_make_proxy_2
+#graphify/document #graphify/EXTRACTED #community/Community_1174

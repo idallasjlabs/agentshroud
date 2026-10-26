@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-data/README.md"
+source_file: "docker/config/hermes/skills/i-vulcan/README.md"
 type: "document"
-community: "TestOutboundInfoFilter"
+community: "Community 90"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/Community_90
 ---
 
 # Related Skills
 
 ## Connections
-- [[Data Validation (DATA-VAL)_2]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/Community_90

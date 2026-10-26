@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "First Time Setup (2)"
+community: "Community 400"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_Time_Setup_2
+  - community/Community_400
 ---
 
 # Hay, Enterprise Security Feature Priorities Assessment (2026)
@@ -15,4 +15,4 @@ tags:
 - [[Steve Hay Blue Team Assessment]] - `conceptually_related_to` [INFERRED]
 - [[agentshroud-ieee-paper]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_Time_Setup_2
+#graphify/document #graphify/EXTRACTED #community/Community_400

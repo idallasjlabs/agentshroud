@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "ApprovalQueueConfig (3)"
+community: "Community 223"
 location: "L293"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/Community_223
 ---
 
 # Persist a runtime collab mode change for a group.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[persist_group_collab_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_223

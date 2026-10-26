@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/email_service.py"
 type: "code"
-community: "AgentShroud Access Control Matrix"
+community: "Community 201"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/Community_201
 ---
 
 # TransportFactory
 
 ## Connections
-- [[dot-__init__()_84]] - `references` [EXTRACTED]
+- [[.__init__()_11]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/code #graphify/EXTRACTED #community/Community_201

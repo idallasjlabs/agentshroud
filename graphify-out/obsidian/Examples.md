@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/peekaboo/SKILL.md"
 type: "document"
-community: "AgentShroud Sunday Upgrade — 2026-09-14 (dev account, agentshroud-bot@marvin)"
+community: "Community 603"
 location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Sunday_Upgrade__2026-09-14_dev_account_agentshroud-botmarvin
+  - community/Community_603
 ---
 
 # Examples
@@ -22,4 +22,4 @@ tags:
 - [[See - click - type (most reliable flow)]] - `contains` [EXTRACTED]
 - [[Target by window id]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Sunday_Upgrade__2026-09-14_dev_account_agentshroud-botmarvin
+#graphify/document #graphify/EXTRACTED #community/Community_603

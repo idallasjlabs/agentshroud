@@ -1,14 +1,17 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "TestBenchmarkRegression (3)"
+community: "Community 1657"
 location: "L359"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestBenchmarkRegression_3
+  - community/Community_1657
 ---
 
 # Provisioning philosophy
 
-#graphify/document #graphify/EXTRACTED #community/TestBenchmarkRegression_3
+## Connections
+- [[5) LANGUAGE & TOOLING STANDARDS]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Community_1657

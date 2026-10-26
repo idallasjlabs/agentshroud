@@ -1,18 +1,18 @@
 ---
-source_file: "docker/scripts/security-report.sh"
+source_file: "scripts/openclaw_triage.sh"
 type: "code"
-community: "Red Team Assessment v1.2.0"
-location: "L18"
+community: "Community 1272"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Red_Team_Assessment_v120
+  - community/Community_1272
 ---
 
 # log()
 
 ## Connections
-- [[security-report.sh]] - `defines` [EXTRACTED]
-- [[security-report.sh script]] - `calls` [EXTRACTED]
+- [[openclaw_triage.sh]] - `defines` [EXTRACTED]
+- [[openclaw_triage.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Red_Team_Assessment_v120
+#graphify/code #graphify/EXTRACTED #community/Community_1272

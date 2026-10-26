@@ -1,17 +1,18 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Mnemosyne — Retention Engineer (2)"
+community: "Community 748"
 location: "L567"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer_2
+  - community/Community_748
 ---
 
 # Metrics to Track
 
 ## Connections
+- [[Monitoring & Observability]] - `contains` [EXTRACTED]
 - [[Monitoring and Observability]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer_2
+#graphify/document #graphify/EXTRACTED #community/Community_748

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-oracle/README.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/README.md"
 type: "document"
-community: "Test-Driven Development (TDD)"
+community: "Community 583"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_TDD
+  - community/Community_583
 ---
 
 # Usage
 
 ## Connections
-- [[Oracle — Feedback Analyst_1]] - `contains` [EXTRACTED]
+- [[MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_TDD
+#graphify/document #graphify/EXTRACTED #community/Community_583

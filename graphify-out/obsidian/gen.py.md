@@ -1,24 +1,24 @@
 ---
 source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
 type: "code"
-community: "EgressTelegramNotifier"
+community: "Community 382"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressTelegramNotifier
+  - community/Community_382
 ---
 
 # gen.py
 
 ## Connections
+- [[SKILL_230]] - `references` [EXTRACTED]
 - [[default_out_dir()]] - `contains` [EXTRACTED]
 - [[get_model_defaults()]] - `contains` [EXTRACTED]
-- [[main()_17]] - `contains` [EXTRACTED]
-- [[openai-image-genSKILL]] - `references` [EXTRACTED]
+- [[main()_32]] - `contains` [EXTRACTED]
 - [[pick_prompts()]] - `contains` [EXTRACTED]
 - [[request_images()]] - `contains` [EXTRACTED]
 - [[slugify()]] - `contains` [EXTRACTED]
 - [[write_gallery()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressTelegramNotifier
+#graphify/code #graphify/EXTRACTED #community/Community_382

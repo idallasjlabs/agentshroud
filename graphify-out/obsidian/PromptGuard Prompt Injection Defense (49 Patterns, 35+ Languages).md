@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "concept"
-community: "Socrates — Dialogue Architect (2)"
+community: "Community 817"
 location: "Module 1"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect_2
+  - community/Community_817
 ---
 
 # PromptGuard: Prompt Injection Defense (49 Patterns, 35+ Languages)
@@ -18,4 +18,4 @@ tags:
 - [[Red Team Assessment v1.2.0]] - `references` [EXTRACTED]
 - [[SecurityPipeline Central InboundOutbound Module Orchestrator]] - `calls` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_2
+#graphify/concept #graphify/EXTRACTED #community/Community_817

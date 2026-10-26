@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "api.py (2)"
+community: "Community 1127"
 location: "L486"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/apipy_2
+  - graphify/INFERRED
+  - community/Community_1127
 ---
 
 # test_egress_pending_queue_raises()
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
+- [[RuntimeError]] - `calls` [INFERRED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy_2
+#graphify/code #graphify/INFERRED #community/Community_1127

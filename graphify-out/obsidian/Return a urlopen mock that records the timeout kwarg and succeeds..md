@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "hermes/skills/i-bs/README.md (5)"
+community: "Community 1074"
 location: "L4480"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd_5
+  - community/Community_1074
 ---
 
 # Return a urlopen mock that records the timeout kwarg and succeeds.
 
 ## Connections
-- [[dot-_fake_urlopen_factory()]] - `rationale_for` [EXTRACTED]
+- [[._fake_urlopen_factory()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd_5
+#graphify/rationale #graphify/EXTRACTED #community/Community_1074

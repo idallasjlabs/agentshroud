@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/README.md"
 type: "document"
-community: "TestIsFresh"
+community: "Community 1107"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestIsFresh
+  - community/Community_1107
 ---
 
 # Future Interfaces
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Text Interfaces]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestIsFresh
+#graphify/document #graphify/EXTRACTED #community/Community_1107

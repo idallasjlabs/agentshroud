@@ -1,17 +1,24 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
-type: "document"
-community: "2. Security Analysis"
+source_file: "gateway/proxy/url_analyzer.py"
+type: "code"
+community: "Community 8"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/2_Security_Analysis
+  - community/Community_8
 ---
 
-# url_analyzer.py.md
+# url_analyzer.py
 
 ## Connections
-- [[url_analyzer.py_1]] - `contains` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
+- [[URLAnalysisResult]] - `contains` [EXTRACTED]
+- [[URLAnalyzer]] - `contains` [EXTRACTED]
+- [[URLFinding]] - `contains` [EXTRACTED]
+- [[URLVerdict]] - `contains` [EXTRACTED]
+- [[_looks_like_base64()]] - `contains` [EXTRACTED]
+- [[web_config.py]] - `references` [EXTRACTED]
+- [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/2_Security_Analysis
+#graphify/code #graphify/EXTRACTED #community/Community_8

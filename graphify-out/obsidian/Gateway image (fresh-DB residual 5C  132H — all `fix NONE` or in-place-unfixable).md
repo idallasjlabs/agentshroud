@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "AgentShroud™ CVE Mitigation Matrix"
+community: "Community 215"
 location: "L205"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_CVE_Mitigation_Matrix
+  - community/Community_215
 ---
 
 # Gateway image (fresh-DB residual: 5C / 132H — all `fix: NONE` or in-place-unfixable)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Currently Unmitigable Residual (verified no fix exists anywhere yet)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix
+#graphify/document #graphify/EXTRACTED #community/Community_215

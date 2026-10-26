@@ -1,12 +1,12 @@
 ---
 source_file: ".github/PULL_REQUEST_TEMPLATE.md"
 type: "document"
-community: "DelegationManager"
+community: "Community 162"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/Community_162
 ---
 
 # Checklist
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PULL_REQUEST_TEMPLATE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DelegationManager
+#graphify/document #graphify/EXTRACTED #community/Community_162

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "rationale"
-community: "ApprovalStore"
+community: "Community 30"
 location: "L58"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalStore
+  - community/Community_30
 ---
 
 # Close the database connection.
 
 ## Connections
-- [[dot-close()_9]] - `rationale_for` [EXTRACTED]
+- [[.close()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalStore
+#graphify/rationale #graphify/EXTRACTED #community/Community_30

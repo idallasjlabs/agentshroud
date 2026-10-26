@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
 type: "document"
-community: "Telegram Bot Setup for OpenClaw"
+community: "Community 540"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Bot_Setup_for_OpenClaw
+  - community/Community_540
 ---
 
 # Threat Model
 
 ## Connections
-- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
+- [[resource_guard.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Bot_Setup_for_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/Community_540

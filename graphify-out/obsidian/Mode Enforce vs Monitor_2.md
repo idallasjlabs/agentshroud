@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
 type: "document"
-community: "sunday-scan.sh"
-location: "L97"
+community: "Community 730"
+location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sunday-scansh
+  - community/Community_730
 ---
 
 # Mode: Enforce vs Monitor
 
 ## Connections
-- [[env_guard.py_2]] - `contains` [EXTRACTED]
+- [[canary.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sunday-scansh
+#graphify/document #graphify/EXTRACTED #community/Community_730

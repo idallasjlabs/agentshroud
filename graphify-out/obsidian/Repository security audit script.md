@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/SECURITY_GUIDE.md"
 type: "concept"
-community: "MCPPermissionManager (3) (2)"
+community: "Community 1508"
 location: "Security Audit"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_3_2
+  - community/Community_1508
 ---
 
 # Repository security audit script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Secret-in-history remediation (BFG  git-filter-repo)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/MCPPermissionManager_3_2
+#graphify/concept #graphify/EXTRACTED #community/Community_1508

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "SkillGuard"
+community: "Community 23"
 location: "L335"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/Community_23
 ---
 
 # log_external_decision appends an entry to the decision log.
 
 ## Connections
-- [[dot-test_log_external_decision_basic()]] - `rationale_for` [EXTRACTED]
+- [[.test_log_external_decision_basic()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SkillGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_23

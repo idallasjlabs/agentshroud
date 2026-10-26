@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pr/SKILL.md"
+source_file: ".cursor/agents/i-production.md"
 type: "document"
-community: "Claude Code (claude-sonnet-4-6) — Lead Engineer / Primary Developer"
-location: "L7"
+community: "Community 1180"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Claude_Code_claude-sonnet-4-6__Lead_Engineer_/_Primary_Developer
+  - community/Community_1180
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pull Request (PR) Generator_1]] - `contains` [EXTRACTED]
+- [[Skill Incident Response (INCIDENT)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Claude_Code_claude-sonnet-4-6__Lead_Engineer_/_Primary_Developer
+#graphify/document #graphify/EXTRACTED #community/Community_1180

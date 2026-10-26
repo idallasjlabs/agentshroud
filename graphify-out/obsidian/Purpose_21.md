@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/text_control_center.py.md"
+source_file: ".agents/skills/i-ps/README.md"
 type: "document"
-community: "Key Benefits"
-location: "L14"
+community: "Community 177"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Key_Benefits
+  - community/Community_177
 ---
 
 # Purpose
 
 ## Connections
-- [[text_control_center.py  agentshroud_manager.py]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Key_Benefits
+#graphify/document #graphify/EXTRACTED #community/Community_177

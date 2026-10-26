@@ -1,13 +1,13 @@
 ---
 source_file: "src/interfaces/chat_console.py"
 type: "code"
-community: "web/__init__.py"
+community: "Community 1896"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/web/__init__py
+  - community/Community_1896
 ---
 
 # Admin CLI Chat Console (OpenClaw via Gateway)
 
-#graphify/code #graphify/EXTRACTED #community/web/__init__py
+#graphify/code #graphify/EXTRACTED #community/Community_1896

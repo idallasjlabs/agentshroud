@@ -1,13 +1,13 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: "Atlassian MCP Server (Jira + Confluence, concept)"
+community: "Community 1596"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Atlassian_MCP_Server_Jira__Confluence_concept
+  - community/Community_1596
 ---
 
 # Prime Directive — no new files, minimal diffs
 
-#graphify/rationale #graphify/EXTRACTED #community/Atlassian_MCP_Server_Jira__Confluence_concept
+#graphify/rationale #graphify/EXTRACTED #community/Community_1596

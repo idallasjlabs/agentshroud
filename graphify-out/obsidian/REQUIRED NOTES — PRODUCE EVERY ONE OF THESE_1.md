@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sav/SKILL.md"
+source_file: ".agents/skills/sav/SKILL.md"
 type: "document"
-community: "Skill: UX Expert (UX) (2)"
+community: "Community 426"
 location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX_2
+  - community/Community_426
 ---
 
 # REQUIRED NOTES — PRODUCE EVERY ONE OF THESE
@@ -35,4 +35,4 @@ tags:
 - [[`09 - DiagramsFull System Flowchart.md`_1]] - `contains` [EXTRACTED]
 - [[`09 - DiagramsStartup Flow Diagram.md`_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX_2
+#graphify/document #graphify/EXTRACTED #community/Community_426

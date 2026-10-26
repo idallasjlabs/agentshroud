@@ -1,21 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
 type: "document"
-community: "input_normalizer.py"
-location: "L39"
+community: "Community 731"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/input_normalizerpy
+  - community/Community_731
 ---
 
 # Function Details
 
 ## Connections
-- [[EgressMonitor.check_anomalies(agent_id)]] - `contains` [EXTRACTED]
-- [[EgressMonitor.daily_summary(agent_id)]] - `contains` [EXTRACTED]
-- [[EgressMonitor.get_events(agent_id, channel)]] - `contains` [EXTRACTED]
-- [[EgressMonitor.record(event)]] - `contains` [EXTRACTED]
-- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
+- [[ConsentFramework.add_to_blacklist(command)  remove_from_blacklist(command)]] - `contains` [EXTRACTED]
+- [[ConsentFramework.add_to_whitelist(command)  remove_from_whitelist(command)]] - `contains` [EXTRACTED]
+- [[ConsentFramework.get_whitelist()  get_blacklist()]] - `contains` [EXTRACTED]
+- [[ConsentFramework.validate_config(config)]] - `contains` [EXTRACTED]
+- [[ConsentFramework.validate_configs(configs)]] - `contains` [EXTRACTED]
+- [[consent_framework.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/input_normalizerpy
+#graphify/document #graphify/EXTRACTED #community/Community_731

@@ -1,19 +1,19 @@
 ---
 source_file: "docs/setup-slack.md"
 type: "document"
-community: "test_collaborator_greeter.py (2)"
+community: "Community 324"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_collaborator_greeterpy_2
+  - community/Community_324
 ---
 
 # Slack Channel Setup
 
 ## Connections
-- [[Architecture_5]] - `contains` [EXTRACTED]
-- [[Collaborators]] - `contains` [EXTRACTED]
+- [[Architecture_10]] - `contains` [EXTRACTED]
+- [[Collaborators_1]] - `contains` [EXTRACTED]
 - [[Sending Messages to the Bot]] - `contains` [EXTRACTED]
 - [[Step 10 Verify]] - `contains` [EXTRACTED]
 - [[Step 1 Create a Slack App]] - `contains` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[Step 7 Find Your Slack User ID]] - `contains` [EXTRACTED]
 - [[Step 8 Configure Environment]] - `contains` [EXTRACTED]
 - [[Step 9 Rebuild and Start]] - `contains` [EXTRACTED]
-- [[Troubleshooting_20]] - `contains` [EXTRACTED]
+- [[Troubleshooting_44]] - `contains` [EXTRACTED]
 - [[setup-slack]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_collaborator_greeterpy_2
+#graphify/document #graphify/EXTRACTED #community/Community_324

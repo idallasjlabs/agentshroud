@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "code"
-community: "gifgrep/SKILL.md"
+community: "Community 1387"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/gifgrep/SKILLmd
+  - community/Community_1387
 ---
 
 # OpenClaw cron: Collaborator Daily Digest
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[OpenClaw cron Collaborator Report - Morning (Telegram HTML, PII filter rules)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/gifgrep/SKILLmd
+#graphify/code #graphify/INFERRED #community/Community_1387

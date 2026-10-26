@@ -1,27 +1,25 @@
 ---
-source_file: "scripts/triage-cve-mitigations.py"
+source_file: ".agents/skills/browser/scripts/browse.py"
 type: "code"
-community: "._run_and_read"
-location: "L1254"
+community: "Community 149"
+location: "L431"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run_and_read
+  - community/Community_149
 ---
 
 # main()
 
 ## Connections
-- [[CLI entry point. Args argv Optional argv override (for tests). Returns…]] - `rationale_for` [EXTRACTED]
-- [[TestMain]] - `calls` [EXTRACTED]
-- [[_rel()]] - `calls` [EXTRACTED]
-- [[gap_report_path()]] - `calls` [EXTRACTED]
-- [[render_gap_report()]] - `calls` [EXTRACTED]
-- [[rewrite_registry_text()]] - `calls` [EXTRACTED]
-- [[summarize()]] - `calls` [EXTRACTED]
-- [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
-- [[triage_agent()]] - `calls` [EXTRACTED]
-- [[triage_agent_full()]] - `calls` [EXTRACTED]
-- [[untriageable_reason()]] - `calls` [EXTRACTED]
+- [[._take_screenshot()]] - `calls` [EXTRACTED]
+- [[.click()]] - `calls` [EXTRACTED]
+- [[.close()]] - `calls` [EXTRACTED]
+- [[.extract()]] - `calls` [EXTRACTED]
+- [[.fill_field()]] - `calls` [EXTRACTED]
+- [[.navigate()]] - `calls` [EXTRACTED]
+- [[CLI interface for SecureBrowser]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser]] - `calls` [EXTRACTED]
+- [[browse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run_and_read
+#graphify/code #graphify/EXTRACTED #community/Community_149

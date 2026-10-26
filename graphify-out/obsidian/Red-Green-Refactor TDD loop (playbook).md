@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/Claude-Code-TDD-Playbook.md"
 type: "concept"
-community: "MCPPermissionManager (2) (6)"
+community: "Community 1507"
 location: "Section 5"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2_6
+  - community/Community_1507
 ---
 
 # Red-Green-Refactor TDD loop (playbook)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GitHub workflow integration (gg → tdd → pr → ps)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/MCPPermissionManager_2_6
+#graphify/concept #graphify/EXTRACTED #community/Community_1507

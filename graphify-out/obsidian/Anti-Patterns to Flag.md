@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
+source_file: ".agents/agents/i-bs.md"
 type: "document"
-community: "postmortem.md (2)"
-location: "L40"
+community: "Community 1009"
+location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/postmortemmd_2
+  - community/Community_1009
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Technical Writer (TW)]] - `contains` [EXTRACTED]
+- [[Skill Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/postmortemmd_2
+#graphify/document #graphify/EXTRACTED #community/Community_1009

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "Any"
+community: "Community 72"
 location: "L261"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Any
+  - community/Community_72
 ---
 
 # Test cooldown is disabled when feature is disabled.
 
 ## Connections
-- [[dot-test_cooldown_disabled_when_feature_disabled()]] - `rationale_for` [EXTRACTED]
+- [[.test_cooldown_disabled_when_feature_disabled()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Any
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

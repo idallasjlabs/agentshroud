@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "test_soc_bots.py"
+community: "Community 1808"
 location: "L254"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/Community_1808
 ---
 
 # Regular member denied gmail (private tool) even in group context.
 
 ## Connections
-- [[dot-test_member_denied_gmail_private_tool_in_group()]] - `rationale_for` [EXTRACTED]
+- [[.test_member_denied_gmail_private_tool_in_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/rationale #graphify/EXTRACTED #community/Community_1808

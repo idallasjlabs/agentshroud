@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "KillSwitchMonitor (2) (5)"
+community: "Community 107"
 location: "L476"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_2_5
+  - community/Community_107
 ---
 
 # Post-Incident Activities
@@ -17,4 +17,4 @@ tags:
 - [[Lessons Learned Integration]] - `contains` [EXTRACTED]
 - [[Post-Incident Review Template]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/KillSwitchMonitor_2_5
+#graphify/document #graphify/EXTRACTED #community/Community_107

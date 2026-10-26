@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "Enum"
+community: "Community 8"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/Community_8
 ---
 
 # multi_turn_tracker.py
@@ -16,12 +16,12 @@ tags:
 - [[ConsistencyScore]] - `contains` [EXTRACTED]
 - [[DisclosureCategory]] - `contains` [EXTRACTED]
 - [[DisclosureEvent]] - `contains` [EXTRACTED]
-- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
 - [[MultiTurnTracker]] - `contains` [EXTRACTED]
+- [[SKILL_200]] - `references` [EXTRACTED]
 - [[SessionContext_1]] - `contains` [EXTRACTED]
 - [[ThresholdConfig]] - `contains` [EXTRACTED]
-- [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
-- [[prompt_guard.py_1]] - `semantically_similar_to` [INFERRED]
+- [[prompt_guard.py]] - `semantically_similar_to` [INFERRED]
 - [[test_multi_turn_tracker.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/Community_8

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "rationale"
-community: "test_scorecard_scoring.py"
+community: "Community 683"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_scorecard_scoringpy
+  - community/Community_683
 ---
 
 # Build a minimal DNS query packet in wire format.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[build_dns_query()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_scorecard_scoringpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_683

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/bots/openclaw/config/workspace/PUBLIC-INFO.md"
+source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "Vulcan — Subject Matter Auditor (2)"
-location: "L42"
+community: "Community 164"
+location: "L508"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Vulcan__Subject_Matter_Auditor_2
+  - community/Community_164
 ---
 
 # Project Goals
 
 ## Connections
-- [[AgentShroud — Collaborator Knowledge Base]] - `contains` [EXTRACTED]
+- [[For Open-Source Contributors]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor_2
+#graphify/document #graphify/EXTRACTED #community/Community_164

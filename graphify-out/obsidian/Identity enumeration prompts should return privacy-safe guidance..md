@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TestInboundPipelineOnGetUpdates"
+community: "Community 2380"
 location: "L2239"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestInboundPipelineOnGetUpdates
+  - community/Community_2380
 ---
 
 # Identity enumeration prompts should return privacy-safe guidance.
 
 ## Connections
-- [[dot-test_collaborator_identity_enumeration_query_gets_privacy_safe_info()]] - `rationale_for` [EXTRACTED]
+- [[.test_collaborator_identity_enumeration_query_gets_privacy_safe_info()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates
+#graphify/rationale #graphify/EXTRACTED #community/Community_2380

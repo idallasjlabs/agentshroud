@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
+source_file: ".agents/skills/i-cr/SKILL.md"
 type: "document"
-community: "GitHub Branch Protection — `main`"
-location: "L31"
+community: "Community 117"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Branch_Protection__main
+  - community/Community_117
 ---
 
 # Feedback Guidelines
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Code Review (CR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Branch_Protection__main
+#graphify/document #graphify/EXTRACTED #community/Community_117

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/falco-rules.md"
+source_file: ".agents/skills/athena/README.md"
 type: "document"
-community: "falco-rules.yaml"
-location: "L16"
+community: "Community 2064"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/falco-rulesyaml
+  - community/Community_2064
 ---
 
 # Purpose
 
 ## Connections
-- [[falco-rules.yaml]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/falco-rulesyaml
+#graphify/document #graphify/EXTRACTED #community/Community_2064

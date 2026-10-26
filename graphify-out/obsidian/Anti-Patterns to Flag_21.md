@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tdd/SKILL.md"
+source_file: ".cursor/agents/i-tw.md"
 type: "document"
-community: "workspace.sh"
-location: "L34"
+community: "Community 729"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/workspacesh
+  - community/Community_729
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
+- [[Skill Technical Writer (TW)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/workspacesh
+#graphify/document #graphify/EXTRACTED #community/Community_729

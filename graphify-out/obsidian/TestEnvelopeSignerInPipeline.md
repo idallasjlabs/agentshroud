@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "KeyVaultConfig"
+community: "Community 24"
 location: "L502"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KeyVaultConfig
+  - community/Community_24
 ---
 
 # TestEnvelopeSignerInPipeline
 
 ## Connections
-- [[dot-test_envelope_metadata_in_audit_entry()]] - `method` [EXTRACTED]
-- [[dot-test_no_signer_leaves_envelope_empty()]] - `method` [EXTRACTED]
-- [[dot-test_outbound_response_is_signed_and_verifiable()]] - `method` [EXTRACTED]
-- [[dot-test_signer_failure_never_blocks()]] - `method` [EXTRACTED]
-- [[dot-test_tool_result_uses_wrap_tool_result()]] - `method` [EXTRACTED]
+- [[.test_envelope_metadata_in_audit_entry()]] - `method` [EXTRACTED]
+- [[.test_no_signer_leaves_envelope_empty()]] - `method` [EXTRACTED]
+- [[.test_outbound_response_is_signed_and_verifiable()]] - `method` [EXTRACTED]
+- [[.test_signer_failure_never_blocks()]] - `method` [EXTRACTED]
+- [[.test_tool_result_uses_wrap_tool_result()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[CrossBotTrustLedger]] - `uses` [INFERRED]
 - [[EnvelopeSigner]] - `uses` [INFERRED]
@@ -29,10 +29,10 @@ tags:
 - [[OutboundInfoFilter]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
 - [[ScanResult_1]] - `uses` [INFERRED]
-- [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/KeyVaultConfig
+#graphify/code #graphify/INFERRED #community/Community_24

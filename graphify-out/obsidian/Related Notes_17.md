@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/clamav.md"
+source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
 type: "document"
-community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)"
-location: "L48"
+community: "Community 855"
+location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
+  - community/Community_855
 ---
 
 # Related Notes
 
 ## Connections
-- [[ClamAV]] - `contains` [EXTRACTED]
+- [[Dockerfile — Bot (OpenClaw)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
+#graphify/document #graphify/EXTRACTED #community/Community_855

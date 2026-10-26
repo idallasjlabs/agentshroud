@@ -1,18 +1,17 @@
 ---
 source_file: "scripts/lib/sunday-scan.sh"
 type: "code"
-community: "run_multi_host"
+community: "Community 869"
 location: "L514"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run_multi_host
+  - community/Community_869
 ---
 
 # sunday_notify_direct()
 
 ## Connections
 - [[sunday-scan.sh]] - `defines` [EXTRACTED]
-- [[sunday_telegram_post()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run_multi_host
+#graphify/code #graphify/EXTRACTED #community/Community_869

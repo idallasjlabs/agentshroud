@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cr/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm/README.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM)"
+community: "Community 1236"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM
+  - community/Community_1236
 ---
 
 # Purpose
 
 ## Connections
-- [[Code Review (CR)]] - `contains` [EXTRACTED]
-- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM
+#graphify/document #graphify/EXTRACTED #community/Community_1236

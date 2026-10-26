@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
+source_file: ".agents/skills/aws/SKILL.md"
 type: "document"
-community: "The 8D Investigation Process (2)"
+community: "Community 242"
 location: "L193"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process_2
+  - community/Community_242
 ---
 
 # Reports (`./reports/`)
 
 ## Connections
-- [[Deliverables_2]] - `contains` [EXTRACTED]
+- [[Deliverables_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process_2
+#graphify/document #graphify/EXTRACTED #community/Community_242

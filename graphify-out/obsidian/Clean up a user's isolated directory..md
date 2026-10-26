@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "PathIsolationManager"
+community: "Community 72"
 location: "L234"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/Community_72
 ---
 
 # Clean up a user's isolated directory.
 
 ## Connections
-- [[dot-_cleanup_user_directory()]] - `rationale_for` [EXTRACTED]
+- [[._cleanup_user_directory()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

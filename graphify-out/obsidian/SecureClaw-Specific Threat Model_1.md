@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec/SKILL.md"
+source_file: ".agents/skills/i-sec/SKILL.md"
 type: "document"
-community: "Skill: Test-Driven Development (TDD) (3)"
-location: "L50"
+community: "Community 744"
+location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Test-Driven_Development_TDD_3
+  - community/Community_744
 ---
 
 # SecureClaw-Specific Threat Model
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Security Review (SEC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD_3
+#graphify/document #graphify/EXTRACTED #community/Community_744

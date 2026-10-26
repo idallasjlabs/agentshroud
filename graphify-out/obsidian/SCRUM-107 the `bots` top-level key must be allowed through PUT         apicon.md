@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "rationale"
-community: "Skill: CI/CD Pipeline Advisor (CICD)"
+community: "Community 943"
 location: "L425"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Skill_CI/CD_Pipeline_Advisor_CICD
+  - community/Community_943
 ---
 
 # SCRUM-107: the `bots` top-level key must be allowed through PUT         /api/con
 
 ## Connections
-- [[dot-test_update_config_round_trips_bots_key()]] - `rationale_for` [EXTRACTED]
+- [[.test_update_config_round_trips_bots_key()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD
+#graphify/rationale #graphify/EXTRACTED #community/Community_943

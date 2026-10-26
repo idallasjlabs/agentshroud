@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "rationale"
-community: "TestEgressTelegramNotify"
+community: "Community 238"
 location: "L186"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEgressTelegramNotify
+  - community/Community_238
 ---
 
 # Extract SCRUM-<n> keys mentioned in commit subjects.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[extract_scrum_items()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEgressTelegramNotify
+#graphify/rationale #graphify/EXTRACTED #community/Community_238

@@ -1,18 +1,17 @@
 ---
 source_file: "scripts/lib/sunday-scan.sh"
 type: "code"
-community: "run_multi_host"
+community: "Community 869"
 location: "L353"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run_multi_host
+  - community/Community_869
 ---
 
 # sunday_handoff_status()
 
 ## Connections
 - [[sunday-scan.sh]] - `defines` [EXTRACTED]
-- [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run_multi_host
+#graphify/code #graphify/EXTRACTED #community/Community_869

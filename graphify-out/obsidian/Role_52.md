@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-bs/SKILL.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements (2)"
-location: "L7"
+community: "Community 583"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Required__45_for_text__30_for_UI_elements_2
+  - community/Community_583
 ---
 
 # Role
 
 ## Connections
-- [[Skill Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements_2
+#graphify/document #graphify/EXTRACTED #community/Community_583

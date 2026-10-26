@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_heuristic_classifier.py"
 type: "rationale"
-community: "TestHeuristicClassifier"
+community: "Community 325"
 location: "L110"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestHeuristicClassifier
+  - community/Community_325
 ---
 
 # InjectionClassifier alias should still work.
 
 ## Connections
-- [[dot-test_backward_compat_alias()]] - `rationale_for` [EXTRACTED]
+- [[.test_backward_compat_alias()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestHeuristicClassifier
+#graphify/rationale #graphify/EXTRACTED #community/Community_325

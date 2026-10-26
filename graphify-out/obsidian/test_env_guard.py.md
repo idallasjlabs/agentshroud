@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_env_guard.py"
 type: "code"
-community: "check_command"
+community: "Community 362"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check_command
+  - community/Community_362
 ---
 
 # test_env_guard.py
@@ -17,4 +17,4 @@ tags:
 - [[check_command()]] - `imports` [EXTRACTED]
 - [[scrub_output()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check_command
+#graphify/code #graphify/EXTRACTED #community/Community_362

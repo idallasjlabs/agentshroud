@@ -1,22 +1,17 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: "docs/architecture/per-agent-isolation.md"
 type: "document"
-community: "LOW — Informational"
-location: "L914"
+community: "Community 749"
+location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LOW__Informational
+  - community/Community_749
 ---
 
 # Security Verification
 
 ## Connections
-- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
-- [[Audit Trail Verification]] - `contains` [EXTRACTED]
-- [[Dashboard Security Events]] - `contains` [EXTRACTED]
-- [[Health Check Verification]] - `contains` [EXTRACTED]
-- [[Production Checklist]] - `contains` [EXTRACTED]
-- [[Security Testing]] - `contains` [EXTRACTED]
+- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LOW__Informational
+#graphify/document #graphify/EXTRACTED #community/Community_749

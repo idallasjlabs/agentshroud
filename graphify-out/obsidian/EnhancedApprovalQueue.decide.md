@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "PWA Icon 192x192 (AgentShroud logo mark)"
+community: "Community 1610"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PWA_Icon_192x192_AgentShroud_logo_mark
+  - community/Community_1610
 ---
 
 # EnhancedApprovalQueue.decide
 
-#graphify/code #graphify/EXTRACTED #community/PWA_Icon_192x192_AgentShroud_logo_mark
+#graphify/code #graphify/EXTRACTED #community/Community_1610

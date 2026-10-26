@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "rationale"
-community: "proxy_status.py"
+community: "Community 851"
 location: "L51"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/proxy_statuspy
+  - community/Community_851
 ---
 
 # Read WHISPER_MODEL_SIZE from the environment and validate it (A/B knob).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_resolve_model_size()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/proxy_statuspy
+#graphify/rationale #graphify/EXTRACTED #community/Community_851

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-doctor/SKILL.md"
+source_file: "docker/config/hermes/skills/i-daedalus/README.md"
 type: "document"
-community: "02-infrastructure.md"
-location: "L161"
+community: "Community 1208"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/02-infrastructuremd
+  - community/Community_1208
 ---
 
 # Related Skills
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/02-infrastructuremd
+#graphify/document #graphify/EXTRACTED #community/Community_1208

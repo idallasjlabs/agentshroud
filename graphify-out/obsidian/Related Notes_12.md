@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/pydantic.md"
+source_file: "docs/vault/02 - Modules/Other/text_control_center.py.md"
 type: "document"
-community: "AgentShroud™ — Trademark Prior Use Record"
-location: "L53"
+community: "Community 1178"
+location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__Trademark_Prior_Use_Record
+  - community/Community_1178
 ---
 
 # Related Notes
 
 ## Connections
-- [[Pydantic]] - `contains` [EXTRACTED]
+- [[text_control_center.py  agentshroud_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record
+#graphify/document #graphify/EXTRACTED #community/Community_1178

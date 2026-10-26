@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "§4 — Hermes-Specific Section (NEW — first assessment)"
+community: "Community 1113"
 location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/4__Hermes-Specific_Section_NEW__first_assessment
+  - community/Community_1113
 ---
 
 # Step 3: Verify Skill Ready
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📋 Detailed Step-by-Step]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/4__Hermes-Specific_Section_NEW__first_assessment
+#graphify/document #graphify/EXTRACTED #community/Community_1113

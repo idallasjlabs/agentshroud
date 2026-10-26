@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "MemoryIntegrityMonitor"
+community: "Community 16"
 location: "L184"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/Community_16
 ---
 
 # Validate content before writing to memory file.
 
 ## Connections
-- [[dot-validate_memory_write()]] - `rationale_for` [EXTRACTED]
+- [[.validate_memory_write()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/Community_16

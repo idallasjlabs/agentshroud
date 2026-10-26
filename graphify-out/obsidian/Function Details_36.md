@@ -1,22 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
 type: "document"
-community: "2. Security Analysis"
-location: "L34"
+community: "Community 677"
+location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/2_Security_Analysis
+  - community/Community_677
 ---
 
 # Function Details
 
 ## Connections
-- [[URLAnalyzer._check_base64(parsed, result)]] - `contains` [EXTRACTED]
-- [[URLAnalyzer._is_private_ip(ip_str)]] - `contains` [EXTRACTED]
-- [[URLAnalyzer._is_ssrf(hostname)]] - `contains` [EXTRACTED]
-- [[URLAnalyzer.analyze(url)]] - `contains` [EXTRACTED]
-- [[URLAnalyzer.analyze_and_pin(url)]] - `contains` [EXTRACTED]
-- [[url_analyzer.py_1]] - `contains` [EXTRACTED]
+- [[EgressMonitor.check_anomalies(agent_id)]] - `contains` [EXTRACTED]
+- [[EgressMonitor.daily_summary(agent_id)]] - `contains` [EXTRACTED]
+- [[EgressMonitor.get_events(agent_id, channel)]] - `contains` [EXTRACTED]
+- [[EgressMonitor.record(event)]] - `contains` [EXTRACTED]
+- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/2_Security_Analysis
+#graphify/document #graphify/EXTRACTED #community/Community_677

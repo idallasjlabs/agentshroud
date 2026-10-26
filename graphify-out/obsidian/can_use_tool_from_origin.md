@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "record_decision()"
+community: "Community 61"
 location: "462"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/record_decision
+  - community/Community_61
 ---
 
 # can_use_tool_from_origin
@@ -18,4 +18,4 @@ tags:
 - [[record_decision()]] - `calls` [EXTRACTED]
 - [[test_tool_acl.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/record_decision
+#graphify/code #graphify/EXTRACTED #community/Community_61

@@ -1,12 +1,12 @@
 ---
 source_file: ".claude/statusline.sh"
 type: "code"
-community: "MemoryIntegrityMonitor Tamper Detection"
+community: "Community 1382"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor_Tamper_Detection
+  - community/Community_1382
 ---
 
 # statusline.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[statusline.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor_Tamper_Detection
+#graphify/code #graphify/EXTRACTED #community/Community_1382

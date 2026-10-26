@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_replay.py"
 type: "rationale"
-community: ".test_collaborator_web_access_imperative_with_url_queues_owner_approval()"
+community: "Community 165"
 location: "L103"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
+  - community/Community_165
 ---
 
 # Mark all updates with update_id < offset as delivered (normal getUpdates ack).
 
 ## Connections
-- [[dot-mark_delivered()]] - `rationale_for` [EXTRACTED]
+- [[.mark_delivered()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
+#graphify/rationale #graphify/EXTRACTED #community/Community_165

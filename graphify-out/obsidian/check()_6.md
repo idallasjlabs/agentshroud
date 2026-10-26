@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/smoke.d/test-sunday-upgrade-scan.sh"
+source_file: "tests/startup_smoke/test_bot_boot_static.sh"
 type: "code"
-community: "Function Details (5)"
-location: "L56"
+community: "Community 2205"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Function_Details_5
+  - community/Community_2205
 ---
 
 # check()
 
 ## Connections
-- [[test-sunday-upgrade-scan.sh]] - `defines` [EXTRACTED]
-- [[test-sunday-upgrade-scan.sh script]] - `calls` [EXTRACTED]
+- [[test_bot_boot_static.sh]] - `defines` [EXTRACTED]
+- [[test_bot_boot_static.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Function_Details_5
+#graphify/code #graphify/EXTRACTED #community/Community_2205

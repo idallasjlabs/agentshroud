@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: ".cursor/mcp.json"
-location: "L110"
+community: "Community 766"
+location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/cursor/mcpjson
+  - community/Community_766
 ---
 
 # Related
 
 ## Connections
-- [[TrustManager_5]] - `contains` [EXTRACTED]
+- [[auth.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/cursor/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Community_766

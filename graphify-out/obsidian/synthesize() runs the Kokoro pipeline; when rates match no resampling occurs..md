@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Operating Rules (Non-Negotiable) (2)"
+community: "Community 46"
 location: "L142"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Operating_Rules_Non-Negotiable_2
+  - community/Community_46
 ---
 
 # synthesize() runs the Kokoro pipeline; when rates match no resampling occurs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_tts_synthesize_via_kokoro()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Operating_Rules_Non-Negotiable_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_46

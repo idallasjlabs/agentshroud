@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "Step-by-Step Deployment"
+community: "Community 657"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Step-by-Step_Deployment
+  - community/Community_657
 ---
 
 # Purpose
 
 ## Connections
-- [[middleware.py_2]] - `contains` [EXTRACTED]
+- [[ledger.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Deployment
+#graphify/document #graphify/EXTRACTED #community/Community_657

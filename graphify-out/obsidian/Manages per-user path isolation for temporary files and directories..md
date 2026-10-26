@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "PathIsolationManager"
+community: "Community 72"
 location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/Community_72
 ---
 
 # Manages per-user path isolation for temporary files and directories.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PathIsolationManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

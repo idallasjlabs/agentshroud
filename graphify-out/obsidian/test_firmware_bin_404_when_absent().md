@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "TestSplitForSpeech"
+community: "Community 846"
 location: "L3664"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSplitForSpeech
+  - community/Community_846
 ---
 
 # test_firmware_bin_404_when_absent()
@@ -16,4 +16,4 @@ tags:
 - [[_fw_client()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSplitForSpeech
+#graphify/code #graphify/EXTRACTED #community/Community_846

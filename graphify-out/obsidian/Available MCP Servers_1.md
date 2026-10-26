@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm/SKILL.md"
+source_file: ".agents/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "First Time Setup"
-location: "L11"
+community: "Community 1085"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_Time_Setup
+  - community/Community_1085
 ---
 
 # Available MCP Servers
@@ -17,4 +17,4 @@ tags:
 - [[3. AWS API MCP_1]] - `contains` [EXTRACTED]
 - [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_Time_Setup
+#graphify/document #graphify/EXTRACTED #community/Community_1085

@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-hermes/README.md"
+source_file: ".agents/skills/i-cicd/README.md"
 type: "document"
-community: "TestOutboundInfoFilter (3)"
+community: "Community 1877"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_3
+  - community/Community_1877
 ---
 
 # Usage
 
 ## Connections
-- [[Hermes — Podcast Production Orchestrator]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_3
+#graphify/document #graphify/EXTRACTED #community/Community_1877

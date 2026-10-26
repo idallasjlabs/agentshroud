@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "ContextGuard"
+community: "Community 0"
 location: "L361"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/Community_0
 ---
 
 # Get summary of all detected leakages.
 
 ## Connections
-- [[dot-get_leakage_summary()]] - `rationale_for` [EXTRACTED]
+- [[.get_leakage_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

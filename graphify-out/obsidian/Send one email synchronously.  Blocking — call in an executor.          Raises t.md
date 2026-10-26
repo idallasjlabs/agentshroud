@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/email_service.py"
 type: "rationale"
-community: "AgentShroud Access Control Matrix"
+community: "Community 201"
 location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/Community_201
 ---
 
 # Send one email synchronously.  Blocking — call in an executor.          Raises t
 
 ## Connections
-- [[dot-send()]] - `rationale_for` [EXTRACTED]
+- [[.send()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/rationale #graphify/EXTRACTED #community/Community_201

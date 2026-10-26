@@ -1,17 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/main/app_main.c"
+source_file: "firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c"
 type: "code"
-community: "System Instructions: Credential Security (Ultra-Conservative)"
-location: "L72"
+community: "Community 341"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/System_Instructions_Credential_Security_Ultra-Conservative
+  - community/Community_341
 ---
 
 # vt_agent_count()
 
 ## Connections
-- [[app_main.c]] - `contains` [EXTRACTED]
+- [[test_ptt_state.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/System_Instructions_Credential_Security_Ultra-Conservative
+#graphify/code #graphify/EXTRACTED #community/Community_341

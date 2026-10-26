@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "Community 34"
 location: "L325"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_34
 ---
 
 # route_to='hermes' must resolve to the Hermes AgentTarget.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_resolves_hermes_target()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_34

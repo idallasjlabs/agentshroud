@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "MiddlewareManager (2)"
-location: "L187"
+community: "Community 102"
+location: "L66"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/MiddlewareManager_2
+  - graphify/EXTRACTED
+  - community/Community_102
 ---
 
 # Any
 
 ## Connections
-- [[dot-check_permission()_1]] - `references` [EXTRACTED]
-- [[dot-get_user_permissions_summary()]] - `references` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_64]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[generate_summary()_3]] - `references` [EXTRACTED]
+- [[get_fim_events()]] - `references` [EXTRACTED]
+- [[get_rootkit_events()]] - `references` [EXTRACTED]
+- [[parse_alert()_1]] - `references` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/Community_102

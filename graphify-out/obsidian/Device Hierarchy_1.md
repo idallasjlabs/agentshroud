@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
+source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
 type: "document"
-community: "AgentShroud Phase 3 - Quick Start Guide"
+community: "Community 255"
 location: "L501"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
+  - community/Community_255
 ---
 
 # Device Hierarchy
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[XML Configuration File Parsing_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_255

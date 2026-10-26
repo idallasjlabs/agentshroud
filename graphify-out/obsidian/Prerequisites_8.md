@@ -1,17 +1,17 @@
 ---
-source_file: "docs/integrations/voice-terminal-esp32-s3.md"
+source_file: "docs/runbooks/deployment.md"
 type: "document"
-community: "AgentShroud: Enterprise Governance for Autonomous AI Agents"
-location: "L41"
+community: "Community 725"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents
+  - community/Community_725
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
+- [[Deployment Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents
+#graphify/document #graphify/EXTRACTED #community/Community_725

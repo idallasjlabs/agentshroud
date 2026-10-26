@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_chat_completions_alias.py"
+source_file: "chatbot/test_main.py"
 type: "code"
-community: "7. Security findings"
-location: "L27"
+community: "Community 95"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/7_Security_findings
+  - community/Community_95
 ---
 
 # client()
 
 ## Connections
-- [[AsyncMock]] - `calls` [INFERRED]
-- [[test_chat_completions_alias.py]] - `contains` [EXTRACTED]
+- [[test_main.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/7_Security_findings
+#graphify/code #graphify/EXTRACTED #community/Community_95

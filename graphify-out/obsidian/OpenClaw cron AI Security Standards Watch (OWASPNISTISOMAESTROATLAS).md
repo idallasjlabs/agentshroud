@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "code"
-community: "Gateway observability (GET /status, GET /ledger, MCP audit log, HTTP CONNECT proxy stats)"
+community: "Community 1372"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_observability_GET_/status_GET_/ledger_MCP_audit_log_HTTP_CONNECT_proxy_stats
+  - community/Community_1372
 ---
 
 # OpenClaw cron: AI Security Standards Watch (OWASP/NIST/ISO/MAESTRO/ATLAS)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[75 Active Security Modules — no stubs, fully wired]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_observability_GET_/status_GET_/ledger_MCP_audit_log_HTTP_CONNECT_proxy_stats
+#graphify/code #graphify/INFERRED #community/Community_1372

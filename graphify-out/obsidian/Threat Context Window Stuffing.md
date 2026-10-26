@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "_llm_init_agent_reference_paths()"
+community: "Community 971"
 location: "L187"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_llm_init_agent_reference_paths
+  - community/Community_971
 ---
 
 # Threat: Context Window Stuffing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[D - Denial of Service]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_llm_init_agent_reference_paths
+#graphify/document #graphify/EXTRACTED #community/Community_971

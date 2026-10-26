@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "soc/router.py"
+community: "Community 11"
 location: "L221"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/soc/routerpy
+  - community/Community_11
 ---
 
 # ViolationType
 
 ## Connections
-- [[dot-record_violation()]] - `references` [EXTRACTED]
-- [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
+- [[.record_violation()]] - `references` [EXTRACTED]
+- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/soc/routerpy
+#graphify/code #graphify/INFERRED #community/Community_11

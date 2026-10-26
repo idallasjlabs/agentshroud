@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "models.py"
+community: "Community 294"
 location: "L209"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/modelspy
+  - community/Community_294
 ---
 
 # MCP Tools
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skills by Category_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/modelspy
+#graphify/document #graphify/EXTRACTED #community/Community_294

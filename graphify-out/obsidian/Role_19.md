@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cicd/SKILL.md"
+source_file: ".agents/agents/i-mcpm.md"
 type: "document"
-community: "Skill: UI Expert (UI)"
-location: "L7"
+community: "Community 1929"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UI_Expert_UI
+  - community/Community_1929
 ---
 
 # Role
 
 ## Connections
-- [[Skill CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Tools Usage (MCP-TOOLS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI
+#graphify/document #graphify/EXTRACTED #community/Community_1929

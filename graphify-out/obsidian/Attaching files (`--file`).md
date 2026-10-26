@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/oracle/SKILL.md"
 type: "document"
-community: "test_anthropic_openai_translator.py (3)"
+community: "Community 771"
 location: "L65"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy_3
+  - community/Community_771
 ---
 
 # Attaching files (`--file`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[oracle — best use]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy_3
+#graphify/document #graphify/EXTRACTED #community/Community_771

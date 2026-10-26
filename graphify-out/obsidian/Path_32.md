@@ -1,17 +1,18 @@
 ---
-source_file: ""
+source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "test_wazuh_watchdog.py"
+community: "Community 99"
+location: "L43"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_wazuh_watchdogpy
+  - graphify/INFERRED
+  - community/Community_99
 ---
 
 # Path
 
 ## Connections
-- [[_run()]] - `references` [EXTRACTED]
-- [[_run_4b()]] - `references` [EXTRACTED]
+- [[CollaboratorActivityTracker]] - `uses` [INFERRED]
+- [[_make_md()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_wazuh_watchdogpy
+#graphify/code #graphify/INFERRED #community/Community_99

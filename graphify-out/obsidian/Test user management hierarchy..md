@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "MiddlewareManager (2)"
+community: "Community 6"
 location: "L298"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/Community_6
 ---
 
 # Test user management hierarchy.
 
 ## Connections
-- [[dot-test_user_management_hierarchy()]] - `rationale_for` [EXTRACTED]
+- [[.test_user_management_hierarchy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_6

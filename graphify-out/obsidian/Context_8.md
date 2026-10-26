@@ -1,17 +1,18 @@
 ---
-source_file: "docs/architecture/adr/ADR-003-two-network-container-isolation.md"
+source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
 type: "document"
-community: "Route map (by router)"
+community: "Community 859"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Route_map_by_router
+  - community/Community_859
 ---
 
 # Context
 
 ## Connections
-- [[ADR-003 Two-Network Container Isolation]] - `contains` [EXTRACTED]
+- [[ADR-008-progressive-trust-levels]] - `contains` [EXTRACTED]
+- [[ADR-008 Progressive Trust Levels for Agents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Route_map_by_router
+#graphify/document #graphify/EXTRACTED #community/Community_859

@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "Community 99"
 location: "L4526"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/Community_99
 ---
 
 # TestTelegram400Retry
 
 ## Connections
-- [[dot-_make_proxy()_5]] - `method` [EXTRACTED]
-- [[dot-test_400_retry_no_loop()]] - `method` [EXTRACTED]
-- [[dot-test_400_retry_succeeds_when_text_strippable()]] - `method` [EXTRACTED]
+- [[._make_proxy()_5]] - `method` [EXTRACTED]
+- [[.test_400_retry_no_loop()]] - `method` [EXTRACTED]
+- [[.test_400_retry_succeeds_when_text_strippable()]] - `method` [EXTRACTED]
 - [[B1 one-shot 400-retry for unbalanced HTML parse errors.]] - `rationale_for` [EXTRACTED]
-- [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer_3]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
+- [[CollaboratorActivityTracker]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/Community_99

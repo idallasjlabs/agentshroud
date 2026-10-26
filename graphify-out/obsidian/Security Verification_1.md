@@ -1,17 +1,22 @@
 ---
-source_file: "docs/architecture/per-agent-isolation.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Skill: Security Review (SEC) (2)"
-location: "L132"
+community: "Community 350"
+location: "L914"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Security_Review_SEC_2
+  - community/Community_350
 ---
 
 # Security Verification
 
 ## Connections
-- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
+- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
+- [[Audit Trail Verification]] - `contains` [EXTRACTED]
+- [[Dashboard Security Events]] - `contains` [EXTRACTED]
+- [[Health Check Verification]] - `contains` [EXTRACTED]
+- [[Production Checklist]] - `contains` [EXTRACTED]
+- [[Security Testing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC_2
+#graphify/document #graphify/EXTRACTED #community/Community_350

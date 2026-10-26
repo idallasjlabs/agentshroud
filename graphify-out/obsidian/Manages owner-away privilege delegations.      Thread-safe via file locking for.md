@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "rationale"
-community: "_make_proxy"
+community: "Community 89"
 location: "L94"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_89
 ---
 
 # Manages owner-away privilege delegations.      Thread-safe via file locking for
 
 ## Connections
-- [[DelegationManager_1]] - `rationale_for` [EXTRACTED]
+- [[DelegationManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_89

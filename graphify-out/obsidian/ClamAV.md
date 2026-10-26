@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/clamav.md"
 type: "document"
-community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)"
+community: "Community 1139"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
+  - community/Community_1139
 ---
 
 # ClamAV
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[First Boot]] - `contains` [EXTRACTED]
 - [[Gateway Usage]] - `contains` [EXTRACTED]
-- [[Installation]] - `contains` [EXTRACTED]
-- [[Purpose_12]] - `contains` [EXTRACTED]
-- [[Related Notes_17]] - `contains` [EXTRACTED]
-- [[clamav_1]] - `contains` [EXTRACTED]
+- [[Installation_2]] - `contains` [EXTRACTED]
+- [[Purpose_185]] - `contains` [EXTRACTED]
+- [[Related Notes_40]] - `contains` [EXTRACTED]
+- [[clamav]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
+#graphify/document #graphify/EXTRACTED #community/Community_1139

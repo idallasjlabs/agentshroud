@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pr/SKILL.md"
+source_file: ".agents/skills/i-qa/SKILL.md"
 type: "document"
-community: "Turbo Fieldfare (MLX inference backend)"
-location: "L11"
+community: "Community 462"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Turbo_Fieldfare_MLX_inference_backend
+  - community/Community_462
 ---
 
 # Objective
 
 ## Connections
-- [[Skill Pull Request (PR) Generator]] - `contains` [EXTRACTED]
+- [[Skill Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Turbo_Fieldfare_MLX_inference_backend
+#graphify/document #graphify/EXTRACTED #community/Community_462

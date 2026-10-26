@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "concept"
-community: "All Dependencies.md"
+community: "Community 289"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/Community_289
 ---
 
 # OWASP Agentic AI (ASI) Coverage Map
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud™ CVE Mitigation Matrix]] - `references` [EXTRACTED]
 - [[ToolResultSanitizer Link Stripping (delivery defect)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/concept #graphify/EXTRACTED #community/Community_289

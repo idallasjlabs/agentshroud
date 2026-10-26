@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
+source_file: ".agents/skills/aws/README.md"
 type: "document"
-community: "wazuh-ossec.conf"
-location: "L16"
+community: "Community 2066"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/wazuh-ossecconf
+  - community/Community_2066
 ---
 
 # Purpose
 
 ## Connections
-- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/wazuh-ossecconf
+#graphify/document #graphify/EXTRACTED #community/Community_2066

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/security.py"
 type: "rationale"
-community: "MCPPolicyEngine"
+community: "Community 918"
 location: "L141"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/Community_918
 ---
 
 # Return a comparison dict: {feature_name: {runtime: supported}}.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_security_comparison()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/rationale #graphify/EXTRACTED #community/Community_918

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "rationale"
-community: "ConfigIntegrityMonitor"
+community: "Community 133"
 location: "L421"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - community/Community_133
 ---
 
 # Scan every file in a skill/MCP/agent tree and aggregate findings.          ``fil
 
 ## Connections
-- [[dot-scan_skill_tree()]] - `rationale_for` [EXTRACTED]
+- [[.scan_skill_tree()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/Community_133

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/video-frames/SKILL.md"
+source_file: "skills/openclaw/model-usage/SKILL.md"
 type: "document"
-community: "ClamAV (2)"
-location: "L29"
+community: "Community 273"
+location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ClamAV_2
+  - community/Community_273
 ---
 
 # Quick start
 
 ## Connections
-- [[Video Frames (ffmpeg)]] - `contains` [EXTRACTED]
+- [[Model usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ClamAV_2
+#graphify/document #graphify/EXTRACTED #community/Community_273

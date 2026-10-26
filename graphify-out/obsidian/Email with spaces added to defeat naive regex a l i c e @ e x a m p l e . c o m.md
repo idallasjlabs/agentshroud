@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "rationale"
-community: "test_llm_proxy.py"
+community: "Community 56"
 location: "L305"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/Community_56
 ---
 
 # Email with spaces added to defeat naive regex: a l i c e @ e x a m p l e . c o m
 
 ## Connections
-- [[dot-test_spaced_email_caught_in_tool_result()]] - `rationale_for` [EXTRACTED]
+- [[.test_spaced_email_caught_in_tool_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/Community_56

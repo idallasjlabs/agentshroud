@@ -1,34 +1,55 @@
 ---
-source_file: "gateway/tests/test_intel_pipeline.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "KillSwitchMonitor (3)"
-location: "L229"
+community: "Community 57"
+location: "L194"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/KillSwitchMonitor_3
+  - graphify/INFERRED
+  - community/Community_57
 ---
 
 # IntelReportStore
 
 ## Connections
-- [[dot-store()_2]] - `references` [EXTRACTED]
-- [[dot-test_chain_hash_links_reports()]] - `references` [EXTRACTED]
-- [[dot-test_integrity_check_fails_for_tampered_file()]] - `references` [EXTRACTED]
-- [[dot-test_integrity_check_passes_for_saved_report()]] - `references` [EXTRACTED]
-- [[dot-test_load_all_returns_all_reports()]] - `references` [EXTRACTED]
-- [[dot-test_load_all_skips_malformed_files()]] - `references` [EXTRACTED]
-- [[dot-test_load_latest_returns_none_when_empty()]] - `references` [EXTRACTED]
-- [[dot-test_multiple_saves_latest_is_newest()]] - `references` [EXTRACTED]
-- [[dot-test_save_and_load_latest()]] - `references` [EXTRACTED]
-- [[dot-test_save_with_corrupt_previous_file_falls_back_to_genesis()]] - `references` [EXTRACTED]
-- [[dot-test_store_creates_directory()]] - `references` [EXTRACTED]
-- [[dot-test_verify_chain_empty_store_is_valid()]] - `references` [EXTRACTED]
-- [[dot-test_verify_chain_fails_for_tampered_entry()]] - `references` [EXTRACTED]
-- [[dot-test_verify_chain_passes_for_intact_store()]] - `references` [EXTRACTED]
+- [[.__init__()_87]] - `method` [EXTRACTED]
+- [[._load_latest_file()]] - `method` [EXTRACTED]
+- [[.load_all()_1]] - `method` [EXTRACTED]
+- [[.load_latest()]] - `method` [EXTRACTED]
+- [[.save()_1]] - `method` [EXTRACTED]
+- [[.test_verified_report_persists_with_intact_hashchain()]] - `calls` [EXTRACTED]
+- [[.verify_chain()_2]] - `method` [EXTRACTED]
+- [[CompetitiveIntelReport_1]] - `calls` [EXTRACTED]
 - [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
-- [[CompetitorEntry_1]] - `uses` [INFERRED]
+- [[ConfigUpdate]] - `uses` [INFERRED]
+- [[FetchOutcome_1]] - `uses` [INFERRED]
+- [[HTTPAuthorizationCredentials_1]] - `uses` [INFERRED]
+- [[IntelDraftEntry]] - `uses` [INFERRED]
+- [[IntelDraftRequest]] - `uses` [INFERRED]
 - [[IntelReportStore_1]] - `uses` [INFERRED]
-- [[ReportIntegrityError]] - `uses` [INFERRED]
+- [[KillSwitchAction]] - `uses` [INFERRED]
+- [[ModeRequest]] - `uses` [INFERRED]
+- [[Path_31]] - `uses` [INFERRED]
+- [[Path_44]] - `uses` [INFERRED]
+- [[Persistent store for competitive intelligence reports.      Each report is saved]] - `rationale_for` [EXTRACTED]
+- [[ServiceAction]] - `uses` [INFERRED]
+- [[SkillGuardBlocked]] - `uses` [INFERRED]
+- [[TestCompetitiveIntelReportSchema]] - `uses` [INFERRED]
+- [[TestFetchOutcome]] - `uses` [INFERRED]
+- [[TestIntelReportHashIntegrity]] - `uses` [INFERRED]
+- [[TestIntelReportStore]] - `uses` [INFERRED]
+- [[TestMakeHttpxFetcher]] - `uses` [INFERRED]
+- [[TestVerifyEntry]] - `uses` [INFERRED]
+- [[TestVerifyReport]] - `uses` [INFERRED]
+- [[UpdateRequest]] - `uses` [INFERRED]
+- [[WebSocket_7]] - `uses` [INFERRED]
+- [[_FakeFetcher]] - `uses` [INFERRED]
+- [[_FakeStreamResponse]] - `uses` [INFERRED]
+- [[_intel_store()]] - `calls` [EXTRACTED]
+- [[api.py]] - `imports` [EXTRACTED]
+- [[get_competitive_intel()]] - `calls` [EXTRACTED]
+- [[intel_report.py]] - `contains` [EXTRACTED]
+- [[test_citation_verifier.py]] - `imports` [EXTRACTED]
+- [[test_intel_pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3
+#graphify/code #graphify/INFERRED #community/Community_57

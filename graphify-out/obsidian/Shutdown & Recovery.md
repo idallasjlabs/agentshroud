@@ -1,23 +1,19 @@
 ---
 source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "Mode A — Single task (3)"
-location: "L8"
+community: "Community 94"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_3
+  - community/Community_94
 ---
 
-# Shutdown & Recovery
+# Shutdown & Recovery.md
 
 ## Connections
-- [[Crash Recovery]] - `contains` [EXTRACTED]
-- [[Data Integrity After Crash]] - `contains` [EXTRACTED]
-- [[Graceful Shutdown_1]] - `contains` [EXTRACTED]
-- [[Kill Switch (Emergency Stop)]] - `contains` [EXTRACTED]
-- [[Related Notes_26]] - `contains` [EXTRACTED]
+- [[Home]] - `references` [EXTRACTED]
 - [[Shutdown & Recovery_1]] - `contains` [EXTRACTED]
-- [[State After Recovery]] - `contains` [EXTRACTED]
+- [[Startup Sequence]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_3
+#graphify/document #graphify/EXTRACTED #community/Community_94

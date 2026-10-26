@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "EgressFilterConfig (3) (2)"
+community: "Community 413"
 location: "L303"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_3_2
+  - community/Community_413
 ---
 
 # Step 5: Configure Ports
@@ -17,4 +17,4 @@ tags:
 - [[Multi-Instance Setup]] - `contains` [EXTRACTED]
 - [[Step-by-Step Installation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilterConfig_3_2
+#graphify/document #graphify/EXTRACTED #community/Community_413

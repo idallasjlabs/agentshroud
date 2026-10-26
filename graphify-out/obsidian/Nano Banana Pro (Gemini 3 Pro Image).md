@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/nano-banana-pro/SKILL.md"
 type: "document"
-community: "EgressTelegramNotifier"
+community: "Community 382"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressTelegramNotifier
+  - community/Community_382
 ---
 
 # Nano Banana Pro (Gemini 3 Pro Image)
 
 ## Connections
-- [[nano-banana-proSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_226]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressTelegramNotifier
+#graphify/document #graphify/EXTRACTED #community/Community_382

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: ".github/mcp.json"
-location: "L383"
+community: "Community 2039"
+location: "L570"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/github/mcpjson
+  - community/Community_2039
 ---
 
 # Summary
 
 ## Connections
-- [[Credential Security Policy]] - `contains` [EXTRACTED]
+- [[1.1.1 — fixguard-wiring-and-ops-hardening (2026-06-10)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/github/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Community_2039

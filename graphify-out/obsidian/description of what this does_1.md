@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
+source_file: ".agents/skills/athena/SKILL.md"
 type: "document"
-community: "FR3: System Integrity"
+community: "Community 1568"
 location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/FR3_System_Integrity
+  - community/Community_1568
 ---
 
 # <description of what this does>
 
 ## Connections
-- [[Quality Checklist_13]] - `contains` [EXTRACTED]
-- [[System Prompt_11]] - `contains` [EXTRACTED]
-- [[User Prompt Template_5]] - `contains` [EXTRACTED]
-- [[cheatsheet_2]] - `contains` [EXTRACTED]
-- [[openclawskillsi-athenaSKILL]] - `contains` [EXTRACTED]
+- [[Quality Checklist_10]] - `contains` [EXTRACTED]
+- [[SKILL_1]] - `contains` [EXTRACTED]
+- [[System Prompt_8]] - `contains` [EXTRACTED]
+- [[User Prompt Template_4]] - `contains` [EXTRACTED]
+- [[cheatsheet_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FR3_System_Integrity
+#graphify/document #graphify/EXTRACTED #community/Community_1568

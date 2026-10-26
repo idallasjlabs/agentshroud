@@ -1,17 +1,17 @@
 ---
-source_file: "browser-extension/package.json"
-type: "code"
-community: "Technical Specification"
-location: "L5"
+source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
+type: "document"
+community: "Community 73"
+location: "L11"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Specification
+  - community/Community_73
 ---
 
-# description
+# Description
 
 ## Connections
-- [[browser-extensionpackage.json]] - `contains` [EXTRACTED]
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Technical_Specification
+#graphify/document #graphify/EXTRACTED #community/Community_73

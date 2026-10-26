@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "MiddlewareManager (6)"
+community: "Community 225"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_6
+  - community/Community_225
 ---
 
 # Push an image to a registry.
 
 ## Connections
-- [[dot-push()_1]] - `rationale_for` [EXTRACTED]
+- [[.push()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_6
+#graphify/rationale #graphify/EXTRACTED #community/Community_225

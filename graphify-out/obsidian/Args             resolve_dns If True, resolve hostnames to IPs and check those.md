@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "rationale"
-community: "URLAnalyzer"
+community: "Community 562"
 location: "L103"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/URLAnalyzer
+  - community/Community_562
 ---
 
 # Args:             resolve_dns: If True, resolve hostnames to IPs and check those
 
 ## Connections
-- [[dot-__init__()_193]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_41]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/URLAnalyzer
+#graphify/rationale #graphify/EXTRACTED #community/Community_562

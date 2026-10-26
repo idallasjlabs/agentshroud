@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: ".cursor/agents/i-mcpm-auth-reset.md"
 type: "document"
-community: "ESP32-S3-BOX-3 Voice Terminal (2)"
-location: "L169"
+community: "Community 263"
+location: "L172"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32-S3-BOX-3_Voice_Terminal_2
+  - community/Community_263
 ---
 
 # GitHub: "Docker image not found"
 
 ## Connections
-- [[Troubleshooting_30]] - `contains` [EXTRACTED]
+- [[Troubleshooting_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal_2
+#graphify/document #graphify/EXTRACTED #community/Community_263

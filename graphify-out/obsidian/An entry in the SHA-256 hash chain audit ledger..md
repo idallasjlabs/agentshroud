@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "rationale"
-community: "SecurityPipeline (2)"
+community: "Community 203"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecurityPipeline_2
+  - community/Community_203
 ---
 
 # An entry in the SHA-256 hash chain audit ledger.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AuditChainEntry]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_203

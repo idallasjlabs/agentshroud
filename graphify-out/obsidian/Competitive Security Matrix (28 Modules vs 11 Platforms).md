@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/competitive-security-matrix.md"
 type: "document"
-community: "Socrates — Dialogue Architect (2)"
+community: "Community 817"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect_2
+  - community/Community_817
 ---
 
 # Competitive Security Matrix (28 Modules vs 11 Platforms)
@@ -16,4 +16,4 @@ tags:
 - [[Security Module 28 Differential PII Detector on Tool Results 0.7-floor (v1.2.0)]] - `references` [EXTRACTED]
 - [[Workstream B Security Features from Competitive Intel]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_2
+#graphify/document #graphify/EXTRACTED #community/Community_817

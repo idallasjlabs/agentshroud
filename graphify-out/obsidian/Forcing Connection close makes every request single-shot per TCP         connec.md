@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_hermes_dashboard_bridge.py"
 type: "rationale"
-community: "Athena — Knowledge Distiller (2)"
+community: "Community 808"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller_2
+  - community/Community_808
 ---
 
 # Forcing Connection: close makes every request single-shot per TCP         connec
 
 ## Connections
-- [[dot-test_forces_connection_close_on_plain_request()]] - `rationale_for` [EXTRACTED]
+- [[.test_forces_connection_close_on_plain_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Athena__Knowledge_Distiller_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_808

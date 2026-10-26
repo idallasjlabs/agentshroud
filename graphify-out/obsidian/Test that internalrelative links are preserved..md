@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Any"
+community: "Community 50"
 location: "L177"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Any
+  - community/Community_50
 ---
 
 # Test that internal/relative links are preserved.
 
 ## Connections
-- [[dot-test_internal_links_preserved()]] - `rationale_for` [EXTRACTED]
+- [[.test_internal_links_preserved()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Any
+#graphify/rationale #graphify/EXTRACTED #community/Community_50

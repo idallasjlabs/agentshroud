@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "Community 84"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/Community_84
 ---
 
 # test_e2e_watchtower.py
@@ -16,11 +16,11 @@ tags:
 - [[CanaryTripwire]] - `imports` [EXTRACTED]
 - [[ContextGuard]] - `imports` [EXTRACTED]
 - [[EncodingDetector]] - `imports` [EXTRACTED]
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
-- [[PIISanitizer_3]] - `imports` [EXTRACTED]
+- [[PIIConfig]] - `imports` [EXTRACTED]
+- [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[PipelineAction]] - `imports` [EXTRACTED]
-- [[PromptGuard_1]] - `imports` [EXTRACTED]
-- [[SecurityPipeline_1]] - `imports` [EXTRACTED]
+- [[PromptGuard]] - `imports` [EXTRACTED]
+- [[SecurityPipeline]] - `imports` [EXTRACTED]
 - [[TestE2E01PromptGuardBlocking]] - `contains` [EXTRACTED]
 - [[TestE2E02InboundPIIRedaction]] - `contains` [EXTRACTED]
 - [[TestE2E03OutboundPIIRedaction]] - `contains` [EXTRACTED]
@@ -36,11 +36,11 @@ tags:
 - [[_BrokenOutputCanary]] - `contains` [EXTRACTED]
 - [[_BrokenSanitizer]] - `contains` [EXTRACTED]
 - [[pii_config()_1]] - `contains` [EXTRACTED]
-- [[pipeline()_2]] - `contains` [EXTRACTED]
-- [[sanitizer()_4]] - `contains` [EXTRACTED]
+- [[pipeline()_1]] - `contains` [EXTRACTED]
+- [[sanitizer()_2]] - `contains` [EXTRACTED]
 - [[test_pipeline_fails_closed_on_enhanced_sanitizer_error()]] - `contains` [EXTRACTED]
 - [[test_pipeline_fails_closed_on_output_canary_error()]] - `contains` [EXTRACTED]
 - [[test_pipeline_owner_exempt_from_fail_closed()]] - `contains` [EXTRACTED]
-- [[trust_manager()_2]] - `contains` [EXTRACTED]
+- [[trust_manager()_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/Community_84

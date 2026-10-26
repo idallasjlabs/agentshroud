@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
+source_file: ".agents/agents/i-bs.md"
 type: "document"
-community: "P2 High Priority Incidents"
-location: "L246"
+community: "Community 1009"
+location: "L300"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/P2_High_Priority_Incidents
+  - community/Community_1009
 ---
 
 # Dependencies
 
 ## Connections
-- [[→ {site site1, test_mode True, output_prefix _testsite1}]] - `contains` [EXTRACTED]
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/P2_High_Priority_Incidents
+#graphify/document #graphify/EXTRACTED #community/Community_1009

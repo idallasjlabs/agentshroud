@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
 type: "document"
-community: "egress_config.py"
+community: "Community 539"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_configpy
+  - community/Community_539
 ---
 
 # Threat Model
 
 ## Connections
-- [[agent_isolation.py_2]] - `contains` [EXTRACTED]
+- [[key_vault.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_configpy
+#graphify/document #graphify/EXTRACTED #community/Community_539

@@ -1,23 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
+source_file: ".agents/skills/apollo/README.md"
 type: "document"
-community: "SSH Capability Architecture Document"
-location: "L6"
+community: "Community 2061"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Capability_Architecture_Document
+  - community/Community_2061
 ---
 
 # Apollo — Audio Systems Producer
 
 ## Connections
-- [[Input Requirements_10]] - `contains` [EXTRACTED]
-- [[Output_5]] - `contains` [EXTRACTED]
-- [[Quality Checklist_8]] - `contains` [EXTRACTED]
-- [[Role_71]] - `contains` [EXTRACTED]
-- [[Technical Specification]] - `contains` [EXTRACTED]
-- [[hermesskillsi-apolloSKILL]] - `contains` [EXTRACTED]
-- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[Purpose]] - `contains` [EXTRACTED]
+- [[README]] - `contains` [EXTRACTED]
+- [[Related Skills_3]] - `contains` [EXTRACTED]
+- [[Usage_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document
+#graphify/document #graphify/EXTRACTED #community/Community_2061

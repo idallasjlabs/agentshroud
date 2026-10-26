@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "A2AMethod"
+community: "Community 381"
 location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/A2AMethod
+  - community/Community_381
 ---
 
 # RotationStatus
 
 ## Connections
-- [[CredentialRotationPolicy]] - `uses` [INFERRED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
-- [[KeyRotationConfig]] - `uses` [INFERRED]
+- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
+- [[Enum]] - `inherits` [EXTRACTED]
+- [[KeyRotationConfig_1]] - `uses` [INFERRED]
 - [[MockValidator]] - `uses` [INFERRED]
 - [[Status of a credential rotation.]] - `rationale_for` [EXTRACTED]
 - [[TestCheckAndRotateDisabled]] - `uses` [INFERRED]
@@ -33,4 +33,4 @@ tags:
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]
 - [[test_key_rotation_internals.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/A2AMethod
+#graphify/code #graphify/INFERRED #community/Community_381

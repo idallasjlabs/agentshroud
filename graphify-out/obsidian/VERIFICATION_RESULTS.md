@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/VERIFICATION_RESULTS.md"
 type: "document"
-community: "test_anthropic_openai_translator.py"
+community: "Community 398"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy
+  - community/Community_398
 ---
 
 # VERIFICATION_RESULTS.md
@@ -16,6 +16,6 @@ tags:
 - [[Phase 3A3B Implementation Verification Results]] - `contains` [EXTRACTED]
 - [[SECURITY-IMPLEMENTATION-VERIFICATION]] - `conceptually_related_to` [AMBIGUOUS]
 - [[SECURITY_VALUE_PROPOSITION]] - `conceptually_related_to` [INFERRED]
-- [[verify-security.sh]] - `references` [EXTRACTED]
+- [[verify-security.sh_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy
+#graphify/document #graphify/EXTRACTED #community/Community_398

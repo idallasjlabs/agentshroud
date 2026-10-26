@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tdd/SKILL.md"
+source_file: ".cursor/agents/i-ux.md"
 type: "document"
-community: "auth.py"
-location: "L34"
+community: "Community 342"
+location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy
+  - community/Community_342
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Test-Driven Development (TDD)_2]] - `contains` [EXTRACTED]
+- [[Skill UX Expert (UX)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy
+#graphify/document #graphify/EXTRACTED #community/Community_342

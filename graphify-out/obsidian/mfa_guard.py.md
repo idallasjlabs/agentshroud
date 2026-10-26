@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "test_voice_latency_guard.py"
+community: "Community 70"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/Community_70
 ---
 
 # mfa_guard.py
@@ -19,4 +19,4 @@ tags:
 - [[queue.py]] - `imports_from` [EXTRACTED]
 - [[test_mfa_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/code #graphify/EXTRACTED #community/Community_70

@@ -1,18 +1,18 @@
 ---
 source_file: "skills/openclaw/video-frames/scripts/frame.sh"
 type: "code"
-community: "ClamAV (2)"
+community: "Community 1117"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ClamAV_2
+  - community/Community_1117
 ---
 
 # frame.sh script
 
 ## Connections
 - [[frame.sh]] - `contains` [EXTRACTED]
-- [[usage()_3]] - `calls` [EXTRACTED]
+- [[usage()_8]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ClamAV_2
+#graphify/code #graphify/EXTRACTED #community/Community_1117

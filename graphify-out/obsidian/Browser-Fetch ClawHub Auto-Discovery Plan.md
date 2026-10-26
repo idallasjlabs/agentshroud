@@ -1,11 +1,11 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "rationale"
-community: "scripts/security-scan.sh"
+community: "Community 1099"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scripts/security-scansh
+  - community/Community_1099
 ---
 
 # Browser-Fetch ClawHub Auto-Discovery Plan
@@ -14,4 +14,4 @@ tags:
 - [[BROWSER_FETCH_SKILL]] - `references` [EXTRACTED]
 - [[PUBLISH-TO-CLAWHUB]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scripts/security-scansh
+#graphify/rationale #graphify/EXTRACTED #community/Community_1099

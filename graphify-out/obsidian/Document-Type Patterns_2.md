@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-tw/SKILL.md"
+source_file: ".cursor/agents/i-tw.md"
 type: "document"
-community: "hermes/SOUL.md"
-location: "L50"
+community: "Community 729"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/SOULmd
+  - community/Community_729
 ---
 
 # Document-Type Patterns
@@ -15,4 +15,4 @@ tags:
 - [[README — Entry Point for a Repo or Service_2]] - `contains` [EXTRACTED]
 - [[Skill Technical Writer (TW)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/SOULmd
+#graphify/document #graphify/EXTRACTED #community/Community_729

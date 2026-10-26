@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
 type: "document"
-community: "test_collaborator_tracker.py (2) (3)"
+community: "Community 482"
 location: "L77"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_2_3
+  - community/Community_482
 ---
 
 # Recovery Procedures
@@ -19,4 +19,4 @@ tags:
 - [[Option 4 Volume-Safe Reset]] - `contains` [EXTRACTED]
 - [[Option 5 Nuclear Reset (DATA LOSS WARNING)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_collaborator_trackerpy_2_3
+#graphify/document #graphify/EXTRACTED #community/Community_482

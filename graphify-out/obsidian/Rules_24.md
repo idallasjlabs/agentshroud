@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tdd/SKILL.md"
+source_file: ".github/agents/i-bs.agent.md"
 type: "document"
-community: "auth.py"
-location: "L20"
+community: "Community 1013"
+location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy
+  - community/Community_1013
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Test-Driven Development (TDD)_2]] - `contains` [EXTRACTED]
+- [[Skill Branding Specialist (BS)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy
+#graphify/document #graphify/EXTRACTED #community/Community_1013

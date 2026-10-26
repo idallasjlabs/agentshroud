@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "ServiceManager"
+community: "Community 20"
 location: "L248"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ServiceManager
+  - community/Community_20
 ---
 
 # SCLConfirmationRequired
 
 ## Connections
-- [[dot-test_confirmation_required()]] - `calls` [EXTRACTED]
-- [[dot-test_destructive_requires_confirmation()]] - `calls` [EXTRACTED]
+- [[.test_confirmation_required()]] - `calls` [EXTRACTED]
+- [[.test_destructive_requires_confirmation()]] - `calls` [EXTRACTED]
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_28]] - `uses` [INFERRED]
+- [[Any_67]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
-- [[AuditResult]] - `uses` [INFERRED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[AuditResult_1]] - `uses` [INFERRED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
 - [[CreateDelegationRequest]] - `uses` [INFERRED]
 - [[CreateGroupRequest]] - `uses` [INFERRED]
 - [[DisconnectRequest]] - `uses` [INFERRED]
@@ -30,10 +30,10 @@ tags:
 - [[JSONResponse]] - `uses` [INFERRED]
 - [[LoginRequest]] - `uses` [INFERRED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
-- [[Request_4]] - `uses` [INFERRED]
-- [[SCLCaller]] - `uses` [INFERRED]
-- [[SCLInterface]] - `uses` [INFERRED]
-- [[ScanRequest]] - `uses` [INFERRED]
+- [[Request_6]] - `uses` [INFERRED]
+- [[SCLCaller_1]] - `uses` [INFERRED]
+- [[SCLInterface_1]] - `uses` [INFERRED]
+- [[ScanRequest_1]] - `uses` [INFERRED]
 - [[ServiceActionRequest]] - `uses` [INFERRED]
 - [[SetLogLevelRequest]] - `uses` [INFERRED]
 - [[SetModeRequest]] - `uses` [INFERRED]
@@ -41,11 +41,11 @@ tags:
 - [[SetRoleRequest]] - `uses` [INFERRED]
 - [[SetUserModeRequest]] - `uses` [INFERRED]
 - [[UpdateDisplayNameRequest]] - `uses` [INFERRED]
-- [[WebSocket_1]] - `uses` [INFERRED]
+- [[WebSocket_5]] - `uses` [INFERRED]
 - [[_confirmation_required()]] - `calls` [EXTRACTED]
-- [[socmodels.py]] - `contains` [EXTRACTED]
-- [[socrouter.py]] - `imports` [EXTRACTED]
+- [[models.py_1]] - `contains` [EXTRACTED]
+- [[router.py_1]] - `imports` [EXTRACTED]
 - [[test_soc_egress.py]] - `imports` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ServiceManager
+#graphify/code #graphify/INFERRED #community/Community_20

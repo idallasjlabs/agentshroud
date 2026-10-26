@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-sdlc/SKILL.md"
+source_file: ".agents/agents/i-sdlc.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md (2)"
-location: "L5"
+community: "Community 2224"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd_2
+  - community/Community_2224
 ---
 
 # Skill: sdlc
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-sdlcSKILL]] - `contains` [EXTRACTED]
+- [[i-sdlc]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_2
+#graphify/document #graphify/EXTRACTED #community/Community_2224

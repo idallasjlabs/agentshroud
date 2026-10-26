@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
+source_file: ".omp/agents/sav.md"
 type: "document"
-community: ".test_egress_callback_from_collaborator_is_rejected()"
-location: "L36"
+community: "Community 359"
+location: "L397"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_egress_callback_from_collaborator_is_rejected
+  - community/Community_359
 ---
 
-# Output Format
+# OUTPUT FORMAT
 
 ## Connections
-- [[Skill Code Review (CR)]] - `contains` [EXTRACTED]
+- [[System Audit Vault (Obsidian)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_egress_callback_from_collaborator_is_rejected
+#graphify/document #graphify/EXTRACTED #community/Community_359

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "MCPPolicyEngine"
+community: "Community 49"
 location: "L305"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/Community_49
 ---
 
 # start_service()
@@ -15,6 +15,6 @@ tags:
 - [[Start a specific service container.]] - `rationale_for` [EXTRACTED]
 - [[_get_engine()]] - `calls` [EXTRACTED]
 - [[_validate_service_name()]] - `calls` [EXTRACTED]
-- [[api.py_2]] - `contains` [EXTRACTED]
+- [[api.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/Community_49

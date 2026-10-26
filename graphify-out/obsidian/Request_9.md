@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/ingest_api/routes/health.py"
+source_file: "voice_gateway/server.py"
 type: "code"
-community: "create_auth_dependency()"
-location: "L18"
+community: "Community 1006"
+location: "L377"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/Community_1006
 ---
 
 # Request
 
 ## Connections
-- [[auth_dep()_4]] - `references` [EXTRACTED]
+- [[firmware_bin()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/Community_1006

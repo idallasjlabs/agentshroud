@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/05-behavior.md"
 type: "concept"
-community: "openclaw/skills/i-browser/package.json"
+community: "Community 904"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-browser/packagejson
+  - community/Community_904
 ---
 
 # Sequence Diagram — Telegram Message to Response
@@ -14,4 +14,4 @@ tags:
 - [[05-behavior]] - `conceptually_related_to` [EXTRACTED]
 - [[Logic Flow — Request Execution]] - `references` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/openclaw/skills/i-browser/packagejson
+#graphify/concept #graphify/EXTRACTED #community/Community_904

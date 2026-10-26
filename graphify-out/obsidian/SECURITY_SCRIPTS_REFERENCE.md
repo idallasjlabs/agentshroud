@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "test_anthropic_openai_translator.py"
+community: "Community 398"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy
+  - community/Community_398
 ---
 
 # SECURITY_SCRIPTS_REFERENCE.md
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
 - [[Kill Switch]] - `references` [EXTRACTED]
-- [[scan.sh]] - `references` [EXTRACTED]
-- [[verify-security.sh]] - `references` [EXTRACTED]
+- [[scan.sh_1]] - `references` [EXTRACTED]
+- [[verify-security.sh_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy
+#graphify/document #graphify/EXTRACTED #community/Community_398

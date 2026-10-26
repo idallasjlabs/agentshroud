@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "Community 2446"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/Community_2446
 ---
 
 # Default PII configuration for tests
 
 ## Connections
-- [[dot-default_config()]] - `rationale_for` [EXTRACTED]
+- [[.default_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/Community_2446

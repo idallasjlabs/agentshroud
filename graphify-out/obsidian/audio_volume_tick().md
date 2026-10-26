@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/audio.c"
 type: "code"
-community: "System Instructions: Credential Security (Ultra-Conservative)"
+community: "Community 378"
 location: "L178"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/System_Instructions_Credential_Security_Ultra-Conservative
+  - graphify/INFERRED
+  - community/Community_378
 ---
 
 # audio_volume_tick()
@@ -15,4 +15,4 @@ tags:
 - [[audio.c]] - `contains` [EXTRACTED]
 - [[tts_task()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/System_Instructions_Credential_Security_Ultra-Conservative
+#graphify/code #graphify/INFERRED #community/Community_378

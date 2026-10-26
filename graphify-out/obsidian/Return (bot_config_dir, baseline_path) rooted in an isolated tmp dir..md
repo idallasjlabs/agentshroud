@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_integrity_monitor.py"
 type: "rationale"
-community: "test_runtime_engines.py"
+community: "Community 241"
 location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy
+  - community/Community_241
 ---
 
 # Return (bot_config_dir, baseline_path) rooted in an isolated tmp dir.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dirs()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_runtime_enginespy
+#graphify/rationale #graphify/EXTRACTED #community/Community_241

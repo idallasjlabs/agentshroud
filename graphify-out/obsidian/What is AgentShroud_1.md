@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: "docs/claude-security-audit-prompt.md"
 type: "document"
-community: "LOW — Informational"
-location: "L5"
+community: "Community 470"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LOW__Informational
+  - community/Community_470
 ---
 
 # What is AgentShroud?
 
 ## Connections
-- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LOW__Informational
+#graphify/document #graphify/EXTRACTED #community/Community_470

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "rationale"
-community: "_t"
+community: "Community 154"
 location: "L177"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_t
+  - community/Community_154
 ---
 
 # Initialize the scanner with optional custom rules.          Args:             cu
 
 ## Connections
-- [[dot-__init__()_101]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_123]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_t
+#graphify/rationale #graphify/EXTRACTED #community/Community_154

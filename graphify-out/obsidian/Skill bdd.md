@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-bdd/SKILL.md"
+source_file: ".agents/agents/i-bdd.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md (2)"
-location: "L5"
+community: "Community 2212"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd_2
+  - community/Community_2212
 ---
 
 # Skill: bdd
 
 ## Connections
-- [[dot-agentsskillsi-bddSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[i-bdd]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_2
+#graphify/document #graphify/EXTRACTED #community/Community_2212

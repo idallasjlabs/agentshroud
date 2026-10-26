@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/main.py"
 type: "rationale"
-community: "egress_filter.py"
+community: "Community 95"
 location: "L184"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/Community_95
 ---
 
 # Process chat message with Isaiah's personality.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[chat()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/egress_filterpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_95

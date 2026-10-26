@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L24"
+community: "Community 9"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/Community_9
 ---
 
 # config()
 
 ## Connections
-- [[WebProxyConfig]] - `calls` [EXTRACTED]
-- [[test_web_proxy.py]] - `contains` [EXTRACTED]
+- [[KillSwitchConfig]] - `calls` [EXTRACTED]
+- [[test_killswitch_monitor_behavior.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/Community_9

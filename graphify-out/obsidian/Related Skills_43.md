@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tdd/README.md"
+source_file: ".cursor/agents/i-mcpm-auth-reset.md"
 type: "document"
-community: "SecureBrowser Skill (4)"
-location: "L14"
+community: "Community 263"
+location: "L224"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill_4
+  - community/Community_263
 ---
 
 # Related Skills
 
 ## Connections
-- [[Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill_4
+#graphify/document #graphify/EXTRACTED #community/Community_263

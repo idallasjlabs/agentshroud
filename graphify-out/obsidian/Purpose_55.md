@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-offense/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "launch-instance.sh"
+community: "Community 2072"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/launch-instancesh
+  - community/Community_2072
 ---
 
 # Purpose
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - `contains` [EXTRACTED]
+- [[MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/launch-instancesh
+#graphify/document #graphify/EXTRACTED #community/Community_2072

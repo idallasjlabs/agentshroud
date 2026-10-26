@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "rationale"
-community: "ForwardRequest"
+community: "Community 92"
 location: "L145"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/Community_92
 ---
 
 # The iOS/macOS Shortcuts source value ('shortcut') is on the allowlist.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_shortcut_source_accepted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest
+#graphify/rationale #graphify/EXTRACTED #community/Community_92

@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "Community 7"
 location: "L214"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # TestConcurrentWrites
 
 ## Connections
-- [[dot-test_50_concurrent_writes()]] - `method` [EXTRACTED]
-- [[dot-test_concurrent_write_and_read()]] - `method` [EXTRACTED]
+- [[.test_50_concurrent_writes()]] - `method` [EXTRACTED]
+- [[.test_concurrent_write_and_read()]] - `method` [EXTRACTED]
 - [[Concurrent writes to chain.]] - `rationale_for` [EXTRACTED]
 - [[DataLedger]] - `uses` [INFERRED]
-- [[LedgerConfig_1]] - `uses` [INFERRED]
+- [[LedgerConfig]] - `uses` [INFERRED]
 - [[test_audit_chain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/Community_7

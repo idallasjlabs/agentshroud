@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "Community 7"
 location: "L76"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # Content hash should be a valid SHA-256 hex digest.
 
 ## Connections
-- [[dot-test_hash_is_sha256()]] - `rationale_for` [EXTRACTED]
+- [[.test_hash_is_sha256()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

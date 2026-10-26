@@ -1,21 +1,22 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Outbound Infrastructure Content Filter (deny-list for hostnames, tool names, user IDs)"
-location: "L368"
+community: "Community 185"
+location: "L623"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Outbound_Infrastructure_Content_Filter_deny-list_for_hostnames_tool_names_user_IDs
+  - community/Community_185
 ---
 
 # TestFalcoSummary
 
 ## Connections
-- [[dot-test_installed_not_running_is_clean_note()]] - `method` [EXTRACTED]
-- [[dot-test_not_installed_not_running()]] - `method` [EXTRACTED]
-- [[dot-test_running_with_alerts_sets_timestamp()]] - `method` [EXTRACTED]
-- [[dot-test_running_without_alert_dir()]] - `method` [EXTRACTED]
-- [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
+- [[.test_read_alerts_missing_dir()]] - `method` [EXTRACTED]
+- [[.test_summary_clean()_2]] - `method` [EXTRACTED]
+- [[.test_summary_top_rules()]] - `method` [EXTRACTED]
+- [[.test_summary_with_alerts()]] - `method` [EXTRACTED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
+- [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Outbound_Infrastructure_Content_Filter_deny-list_for_hostnames_tool_names_user_IDs
+#graphify/code #graphify/EXTRACTED #community/Community_185

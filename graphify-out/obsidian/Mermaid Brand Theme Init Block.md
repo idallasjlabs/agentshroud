@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
 type: "concept"
-community: "Hermes Local-Model Temperature Repetition-Loop Investigation"
+community: "Community 1851"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Hermes_Local-Model_Temperature_Repetition-Loop_Investigation
+  - community/Community_1851
 ---
 
 # Mermaid Brand Theme Init Block
 
-#graphify/concept #graphify/EXTRACTED #community/Hermes_Local-Model_Temperature_Repetition-Loop_Investigation
+#graphify/concept #graphify/EXTRACTED #community/Community_1851

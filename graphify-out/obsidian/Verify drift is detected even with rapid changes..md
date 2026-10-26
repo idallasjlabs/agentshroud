@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "EgressFilterConfig (2)"
+community: "Community 0"
 location: "L923"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/Community_0
 ---
 
 # Verify drift is detected even with rapid changes.
 
 ## Connections
-- [[dot-test_simultaneous_baseline_and_config_change()]] - `rationale_for` [EXTRACTED]
+- [[.test_simultaneous_baseline_and_config_change()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

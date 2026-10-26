@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pr/SKILL.md"
+source_file: ".github/agents/i-pr.agent.md"
 type: "document"
-community: "test_multi_host_test.py"
-location: "L34"
+community: "Community 1953"
+location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_multi_host_testpy
+  - community/Community_1953
 ---
 
 # Safety
 
 ## Connections
-- [[Content Requirements_2]] - `contains` [EXTRACTED]
+- [[Content Requirements_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_multi_host_testpy
+#graphify/document #graphify/EXTRACTED #community/Community_1953

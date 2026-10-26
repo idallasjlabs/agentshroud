@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "TrustConfig (2) (2)"
+community: "Community 538"
 location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TrustConfig_2_2
+  - community/Community_538
 ---
 
 # Environment Variables
 
 ## Connections
-- [[prompt_guard.py]] - `contains` [EXTRACTED]
+- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TrustConfig_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_538

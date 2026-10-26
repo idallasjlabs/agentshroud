@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "EgressFilterConfig (2)"
+community: "Community 792"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EgressFilterConfig_2
+  - community/Community_792
 ---
 
 # EgressAction
 
 ## Connections
-- [[dot-_record()]] - `references` [EXTRACTED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
+- [[._record()_1]] - `references` [EXTRACTED]
+- [[EgressFilter_2]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
-- [[FakeAuditStore_1]] - `uses` [INFERRED]
+- [[Enum]] - `inherits` [EXTRACTED]
+- [[FakeAuditStore]] - `uses` [INFERRED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAuditStorePersistence]] - `uses` [INFERRED]
 - [[TestDriftDetector]] - `uses` [INFERRED]
@@ -45,12 +45,12 @@ tags:
 - [[TestTrustManager]] - `uses` [INFERRED]
 - [[TestTrustManagerHardened]] - `uses` [INFERRED]
 - [[TestURLParsing]] - `uses` [INFERRED]
-- [[_DummyTargetWriter_1]] - `uses` [INFERRED]
-- [[_MockWriter_1]] - `uses` [INFERRED]
-- [[egress_filter.py_1]] - `contains` [EXTRACTED]
+- [[_DummyTargetWriter]] - `uses` [INFERRED]
+- [[_MockWriter]] - `uses` [INFERRED]
+- [[egress_filter.py]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[http_proxy.py]] - `imports` [EXTRACTED]
-- [[str_3]] - `inherits` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 - [[test_egress_enforce.py]] - `imports` [EXTRACTED]
 - [[test_egress_filter.py]] - `imports` [EXTRACTED]
 - [[test_http_proxy.py]] - `imports` [EXTRACTED]
@@ -58,4 +58,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EgressFilterConfig_2
+#graphify/code #graphify/INFERRED #community/Community_792

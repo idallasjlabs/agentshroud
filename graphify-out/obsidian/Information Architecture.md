@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-ux/SKILL.md"
+source_file: ".agents/agents/i-ux.md"
 type: "document"
-community: "Skill: UX Expert (UX)"
-location: "L55"
+community: "Community 296"
+location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX
+  - community/Community_296
 ---
 
 # Information Architecture
@@ -17,4 +17,4 @@ tags:
 - [[Skill UX Expert (UX)]] - `contains` [EXTRACTED]
 - [[Wayfinding]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX
+#graphify/document #graphify/EXTRACTED #community/Community_296

@@ -1,17 +1,18 @@
 ---
-source_file: "docs/adr/ADR-001-proxy-layer-inversion.md"
+source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
 type: "document"
-community: "AgentShroud Brand Quick Reference"
-location: "L8"
+community: "Community 856"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Quick_Reference
+  - community/Community_856
 ---
 
 # Decision
 
 ## Connections
-- [[ADR-001-proxy-layer-inversion]] - `contains` [EXTRACTED]
+- [[ADR-002 Default-Allow Security Philosophy]] - `contains` [EXTRACTED]
+- [[Implementation Approach]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Quick_Reference
+#graphify/document #graphify/EXTRACTED #community/Community_856

@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-odev/SKILL.md"
+source_file: ".agents/skills/i-hdev/references/mode-b-sweep.md"
 type: "document"
-community: "AgentShroud Phase Review — 2026-02-23 (2)"
-location: "L354"
+community: "Community 2059"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_Review__2026-02-23_2
+  - community/Community_2059
 ---
 
 # Mode B — Comprehensive review sweep
 
 ## Connections
-- [[Skill OpenClaw Dev Workflow (ODEV)_1]] - `contains` [EXTRACTED]
-- [[Step 1 — One branch + worktree for the whole sweep_3]] - `contains` [EXTRACTED]
-- [[Step 2 — Work through directories one at a time_3]] - `contains` [EXTRACTED]
-- [[Step 3 — After the last directory (or a natural stopping point)_3]] - `contains` [EXTRACTED]
+- [[Step 1 — One branch + worktree for the whole sweep]] - `contains` [EXTRACTED]
+- [[Step 2 — Work through directories one at a time]] - `contains` [EXTRACTED]
+- [[Step 3 — After the last directory (or a natural stopping point)]] - `contains` [EXTRACTED]
+- [[mode-b-sweep]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23_2
+#graphify/document #graphify/EXTRACTED #community/Community_2059

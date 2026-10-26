@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-odev/SKILL.md"
 type: "document"
-community: "Prompt: Hermes Competitive Intelligence Email (AM/PM)"
+community: "Community 336"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM
+  - community/Community_336
 ---
 
 # OpenClaw Dev Workflow (ODEV)
@@ -17,4 +17,4 @@ tags:
 - [[graphify Skill]] - `references` [EXTRACTED]
 - [[omlx DeepSeek-R1-Qwen3-8B (local model)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM
+#graphify/document #graphify/EXTRACTED #community/Community_336

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-13-network-security-egress.svg"
 type: "concept"
-community: "frame.sh"
+community: "Community 1094"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/framesh
+  - community/Community_1094
 ---
 
 # Domain allowlisted? (agentshroud.yaml proxy.allowed_domains)
@@ -16,4 +16,4 @@ tags:
 - [[HTTP CONNECT tunnel to gateway8181]] - `calls` [EXTRACTED]
 - [[HTTP_PROXY set (httpgateway8181)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/framesh
+#graphify/concept #graphify/EXTRACTED #community/Community_1094

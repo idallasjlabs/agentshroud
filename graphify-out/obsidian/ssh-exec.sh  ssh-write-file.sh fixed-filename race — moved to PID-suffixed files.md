@@ -1,11 +1,11 @@
 ---
 source_file: "CHANGELOG.md"
 type: "rationale"
-community: "Contributing to AgentShroud™"
+community: "Community 584"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Contributing_to_AgentShroud
+  - community/Community_584
 ---
 
 # ssh-exec.sh / ssh-write-file.sh fixed-filename race — moved to PID-suffixed files
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[OpenClaw cron AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)]] - `references` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Contributing_to_AgentShroud
+#graphify/rationale #graphify/INFERRED #community/Community_584

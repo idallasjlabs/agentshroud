@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/tts.py"
 type: "rationale"
-community: "AgentShroud Security Verification (13-check driver)"
+community: "Community 688"
 location: "L53"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Verification_13-check_driver
+  - community/Community_688
 ---
 
 # Resample raw S16LE mono PCM from *src_rate* Hz to *dst_rate* Hz.      For downsa
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_resample_s16le_mono()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Verification_13-check_driver
+#graphify/rationale #graphify/EXTRACTED #community/Community_688

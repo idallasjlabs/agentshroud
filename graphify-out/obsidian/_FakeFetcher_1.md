@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "TelegramAPIProxy (3)"
+community: "Community 137"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_3
+  - community/Community_137
 ---
 
 # _FakeFetcher
 
 ## Connections
-- [[dot-__call__()_4]] - `method` [EXTRACTED]
-- [[dot-__init__()_51]] - `method` [EXTRACTED]
+- [[.__call__()_6]] - `method` [EXTRACTED]
+- [[.__init__()_165]] - `method` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
-- [[FetchOutcome_1]] - `uses` [INFERRED]
+- [[FetchOutcome]] - `uses` [INFERRED]
 - [[_inject_fetcher()]] - `calls` [EXTRACTED]
 - [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3
+#graphify/code #graphify/EXTRACTED #community/Community_137

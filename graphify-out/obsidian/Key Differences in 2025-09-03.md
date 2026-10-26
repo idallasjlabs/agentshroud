@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/notion/SKILL.md"
 type: "document"
-community: "LVGL KAWAII FACE"
+community: "Community 829"
 location: "L157"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LVGL_KAWAII_FACE
+  - community/Community_829
 ---
 
 # Key Differences in 2025-09-03
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[notion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LVGL_KAWAII_FACE
+#graphify/document #graphify/EXTRACTED #community/Community_829

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "forwarder.py"
+community: "Community 538"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/forwarderpy
+  - community/Community_538
 ---
 
 # Purpose
 
 ## Connections
-- [[forwarder.py_2]] - `contains` [EXTRACTED]
+- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/forwarderpy
+#graphify/document #graphify/EXTRACTED #community/Community_538

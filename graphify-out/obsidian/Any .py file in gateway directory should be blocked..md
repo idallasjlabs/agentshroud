@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "._make_proxy()"
+community: "Community 31"
 location: "L91"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_31
 ---
 
 # Any .py file in gateway directory should be blocked.
 
 ## Connections
-- [[dot-test_any_python_file_in_gateway_blocked()]] - `rationale_for` [EXTRACTED]
+- [[.test_any_python_file_in_gateway_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_31

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
 type: "document"
-community: "EgressFilter"
+community: "Community 253"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/Community_253
 ---
 
 # All Dependencies.md
@@ -15,16 +15,16 @@ tags:
 - [[All Dependencies_1]] - `contains` [EXTRACTED]
 - [[aiosqlite]] - `references` [EXTRACTED]
 - [[ci-workflows]] - `references` [EXTRACTED]
-- [[clamav_1]] - `references` [EXTRACTED]
-- [[fastapi_1]] - `references` [EXTRACTED]
+- [[clamav]] - `references` [EXTRACTED]
+- [[fastapi]] - `references` [EXTRACTED]
 - [[httpx]] - `references` [EXTRACTED]
 - [[openclaw]] - `references` [EXTRACTED]
-- [[playwright]] - `references` [EXTRACTED]
+- [[playwright_1]] - `references` [EXTRACTED]
 - [[presidio-analyzer]] - `references` [EXTRACTED]
-- [[pydantic_1]] - `references` [EXTRACTED]
-- [[pytest.ini_1]] - `references` [EXTRACTED]
+- [[pydantic]] - `references` [EXTRACTED]
+- [[pytest.ini]] - `references` [EXTRACTED]
 - [[python-jose]] - `references` [EXTRACTED]
-- [[spacy_1]] - `references` [EXTRACTED]
+- [[spacy]] - `references` [EXTRACTED]
 - [[trivy]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/Community_253

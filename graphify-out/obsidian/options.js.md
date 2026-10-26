@@ -1,21 +1,21 @@
 ---
 source_file: "browser-extension/options.js"
 type: "code"
-community: "AgentShroud Development Roadmap — 2026 Gantt Chart"
+community: "Community 2037"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+  - community/Community_2037
 ---
 
 # options.js
 
 ## Connections
-- [[restore()_1]] - `references` [EXTRACTED]
-- [[save()_1]] - `references` [EXTRACTED]
+- [[restore()]] - `references` [EXTRACTED]
+- [[save()]] - `references` [EXTRACTED]
 - [[savedEl]] - `contains` [EXTRACTED]
 - [[tokenEl]] - `contains` [EXTRACTED]
 - [[urlEl]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+#graphify/code #graphify/EXTRACTED #community/Community_2037

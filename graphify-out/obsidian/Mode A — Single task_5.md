@@ -1,18 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-odev/SKILL.md"
+source_file: ".cursor/agents/i-odev.md"
 type: "document"
-community: "check_upstream_cves()"
-location: "L122"
+community: "Community 844"
+location: "L124"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/check_upstream_cves
+  - community/Community_844
 ---
 
 # Mode A — Single task
 
 ## Connections
-- [[Skill OpenClaw Dev Workflow (ODEV)_1]] - `contains` [EXTRACTED]
+- [[Skill OpenClaw Dev Workflow (ODEV)_2]] - `contains` [EXTRACTED]
 - [[Step 1 — Sync and confirm clean state_5]] - `contains` [EXTRACTED]
 - [[Step 10 — Notify the owner_5]] - `contains` [EXTRACTED]
 - [[Step 11 — Merge (only on explicit owner instruction)_5]] - `contains` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[Step 9 — Push and open the PR_5]] - `contains` [EXTRACTED]
 - [[Step 9b — Update the Jira ticket with the PR link_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/check_upstream_cves
+#graphify/document #graphify/EXTRACTED #community/Community_844

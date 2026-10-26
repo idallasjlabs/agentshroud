@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rate_limit_failover.py"
 type: "rationale"
-community: "TestLoadFromText"
+community: "Community 1058"
 location: "L73"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestLoadFromText
+  - community/Community_1058
 ---
 
 # A 429 that escaped the retry loop must trigger local failover.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_proxy_failover_on_post_retry_429()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestLoadFromText
+#graphify/rationale #graphify/EXTRACTED #community/Community_1058

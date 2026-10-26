@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-apollo/README.md"
+source_file: ".agents/skills/i-production/README.md"
 type: "document"
-community: "SOC Command Center — Five Pillars"
+community: "Community 177"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SOC_Command_Center__Five_Pillars
+  - community/Community_177
 ---
 
 # Usage
 
 ## Connections
-- [[Apollo — Audio Systems Producer]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
+- [[incident-response]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SOC_Command_Center__Five_Pillars
+#graphify/document #graphify/EXTRACTED #community/Community_177

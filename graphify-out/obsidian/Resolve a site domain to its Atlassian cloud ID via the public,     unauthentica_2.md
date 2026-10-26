@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
+source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "rationale"
-community: "TestEgressTelegramNotify"
-location: "L238"
+community: "Community 181"
+location: "L226"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEgressTelegramNotify
+  - community/Community_181
 ---
 
 # Resolve a site domain to its Atlassian cloud ID via the public,     unauthentica
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[resolve_cloud_id()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEgressTelegramNotify
+#graphify/rationale #graphify/EXTRACTED #community/Community_181

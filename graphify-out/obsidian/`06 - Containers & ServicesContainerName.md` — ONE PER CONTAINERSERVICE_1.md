@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sav/SKILL.md"
+source_file: ".agents/skills/sav/SKILL.md"
 type: "document"
-community: "Skill: UX Expert (UX) (2)"
+community: "Community 426"
 location: "L256"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX_2
+  - community/Community_426
 ---
 
 # `06 - Containers & Services/[ContainerName].md` — ONE PER CONTAINER/SERVICE
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[REQUIRED NOTES — PRODUCE EVERY ONE OF THESE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX_2
+#graphify/document #graphify/EXTRACTED #community/Community_426

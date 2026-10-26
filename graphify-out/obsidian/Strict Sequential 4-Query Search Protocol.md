@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt"
 type: "concept"
-community: "DockerEngine"
+community: "Community 373"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/DockerEngine
+  - community/Community_373
 ---
 
 # Strict Sequential 4-Query Search Protocol
@@ -24,4 +24,4 @@ tags:
 - [[Search-Snippets-Only Rule (web_extractfetchbrowse unconfigured)]] - `rationale_for` [EXTRACTED]
 - [[Zero-Hallucination Primary-Source Rule (30-day recency)]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/DockerEngine
+#graphify/concept #graphify/EXTRACTED #community/Community_373

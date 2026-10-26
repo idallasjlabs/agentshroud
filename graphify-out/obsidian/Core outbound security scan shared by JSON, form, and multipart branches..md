@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "test_collaborator_tracker.py (2)"
+community: "Community 96"
 location: "L3584"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_2
+  - community/Community_96
 ---
 
 # Core outbound security scan shared by JSON, form, and multipart branches.
 
 ## Connections
-- [[dot-_scan_outbound_text()]] - `rationale_for` [EXTRACTED]
+- [[._scan_outbound_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_96

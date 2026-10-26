@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "Community 61"
 location: "L28"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ingest_api/mainpy
+  - community/Community_61
 ---
 
 # TeamsConfig
 
 ## Connections
-- [[dot-test_group_allowlist_grants_extra_tool()]] - `calls` [EXTRACTED]
-- [[dot-test_project_allowed_tools_grant_access()]] - `calls` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_64]] - `uses` [INFERRED]
-- [[TeamsConfig_1]] - `uses` [INFERRED]
+- [[.test_group_allowlist_grants_extra_tool()]] - `calls` [EXTRACTED]
+- [[.test_project_allowed_tools_grant_access()]] - `calls` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[ToolACLConfig]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
-- [[_make_rbac()]] - `references` [EXTRACTED]
+- [[_make_rbac()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ingest_api/mainpy
+#graphify/code #graphify/INFERRED #community/Community_61

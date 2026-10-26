@@ -1,17 +1,17 @@
 ---
-source_file: "docker/DOCKER-VPN-NETWORKING.md"
+source_file: "docs/planning/redteam/05-credential-isolation.md"
 type: "document"
-community: "event_bus.py"
-location: "L3"
+community: "Community 609"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/event_buspy
+  - community/Community_609
 ---
 
 # Problem
 
 ## Connections
-- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
+- [[Remove secret mounts from agent container and implement transparent credential injection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/event_buspy
+#graphify/document #graphify/EXTRACTED #community/Community_609

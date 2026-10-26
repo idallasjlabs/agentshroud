@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/conftest.py"
+source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L154"
+community: "Community 7"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # auth_headers()
 
 ## Connections
-- [[Return Authorization headers with test token]] - `rationale_for` [EXTRACTED]
-- [[conftest.py]] - `contains` [EXTRACTED]
+- [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/Community_7

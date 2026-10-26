@@ -1,23 +1,22 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "domain_matches()"
+community: "Community 2178"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/domain_matches
+  - community/Community_2178
 ---
 
 # domain_matches()
 
 ## Connections
-- [[dot-_matches_any_pattern()]] - `calls` [EXTRACTED]
-- [[dot-_verify_url()]] - `calls` [EXTRACTED]
-- [[dot-matches_allowlist()]] - `calls` [EXTRACTED]
-- [[EgressFilterConfig]] - `calls` [EXTRACTED]
-- [[Return True if domain matches any pattern (exact or ``.`` wildcard). Single…]] - `rationale_for` [EXTRACTED]
+- [[._matches_any_pattern()]] - `calls` [EXTRACTED]
+- [[._verify_url()]] - `calls` [EXTRACTED]
+- [[.matches_allowlist()]] - `calls` [EXTRACTED]
+- [[Return True if domain matches any pattern (exact or ``.`` wildcard).      Sin]] - `rationale_for` [EXTRACTED]
 - [[citation_verifier.py]] - `imports` [EXTRACTED]
 - [[egress_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/domain_matches
+#graphify/code #graphify/EXTRACTED #community/Community_2178

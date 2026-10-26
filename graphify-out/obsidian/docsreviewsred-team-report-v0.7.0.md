@@ -1,13 +1,13 @@
 ---
 source_file: "docs/reviews/red-team-report-v0.7.0.md"
 type: "concept"
-community: "docs/reviews/red-team-report-v0.7.0.md"
+community: "Community 1752"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/reviews/red-team-report-v070md
+  - community/Community_1752
 ---
 
 # docs/reviews/red-team-report-v0.7.0.md
 
-#graphify/concept #graphify/EXTRACTED #community/docs/reviews/red-team-report-v070md
+#graphify/concept #graphify/EXTRACTED #community/Community_1752

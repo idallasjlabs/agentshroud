@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-007-zero-config-security.md"
+source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "Bear Notes"
-location: "L6"
+community: "Community 517"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bear_Notes
+  - community/Community_517
 ---
 
 # Context
 
 ## Connections
-- [[ADR-007 Zero-Config Security (docker-compose up = fully secured)]] - `contains` [EXTRACTED]
+- [[ADR-009 Enforce-by-Default Security Philosophy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bear_Notes
+#graphify/document #graphify/EXTRACTED #community/Community_517

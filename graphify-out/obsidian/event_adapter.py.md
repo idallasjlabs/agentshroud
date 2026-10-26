@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "Enum"
+community: "Community 884"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/Community_884
 ---
 
 # event_adapter.py
 
 ## Connections
 - [[SecurityEvent_1]] - `imports` [EXTRACTED]
-- [[Severity_8]] - `imports` [EXTRACTED]
+- [[Severity_2]] - `imports` [EXTRACTED]
 - [[_map_severity()]] - `contains` [EXTRACTED]
 - [[collect_recent_events()]] - `contains` [EXTRACTED]
 - [[from_anomaly_alert()]] - `contains` [EXTRACTED]
@@ -21,7 +21,7 @@ tags:
 - [[from_dict()]] - `contains` [EXTRACTED]
 - [[from_egress_attempt()]] - `contains` [EXTRACTED]
 - [[from_pipeline_result()]] - `contains` [EXTRACTED]
-- [[socmodels.py]] - `imports_from` [EXTRACTED]
+- [[models.py_1]] - `imports_from` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/Community_884

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "AgentShroud: Enterprise Governance for Autonomous AI Agents"
+community: "Community 427"
 location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents
+  - community/Community_427
 ---
 
 # Voice-gateway configuration (env vars, set in `docker/docker-compose.yml`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[3. Start the voice gateway]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents
+#graphify/document #graphify/EXTRACTED #community/Community_427

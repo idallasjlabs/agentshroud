@@ -1,20 +1,20 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: ".test_stranger_within_limit_triggers_approval_workflow()"
+community: "Community 327"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_stranger_within_limit_triggers_approval_workflow
+  - community/Community_327
 ---
 
 # Interacting via Telegram
 
 ## Connections
 - [[AgentShroud User Guide]] - `contains` [EXTRACTED]
-- [[Commands_1]] - `contains` [EXTRACTED]
+- [[Commands_2]] - `contains` [EXTRACTED]
 - [[Regular Messages]] - `contains` [EXTRACTED]
-- [[Tips_1]] - `contains` [EXTRACTED]
+- [[Tips]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_stranger_within_limit_triggers_approval_workflow
+#graphify/document #graphify/EXTRACTED #community/Community_327

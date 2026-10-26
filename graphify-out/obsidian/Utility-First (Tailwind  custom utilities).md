@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-ui/SKILL.md"
+source_file: ".agents/agents/i-ui.md"
 type: "document"
-community: "Mode A — Single task"
-location: "L56"
+community: "Community 515"
+location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/Community_515
 ---
 
 # Utility-First (Tailwind / custom utilities)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CSS Architecture Recommendations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/document #graphify/EXTRACTED #community/Community_515

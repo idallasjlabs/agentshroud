@@ -1,36 +1,46 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "SkillGuard"
+community: "Community 6"
 location: "L37"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/SkillGuard
+  - graphify/INFERRED
+  - community/Community_6
 ---
 
 # ApprovalMode
 
 ## Connections
-- [[dot-_load_rules()]] - `calls` [EXTRACTED]
-- [[dot-add_rule()]] - `references` [EXTRACTED]
-- [[dot-approve()]] - `references` [EXTRACTED]
-- [[dot-deny()]] - `references` [EXTRACTED]
-- [[Any_83]] - `uses` [INFERRED]
+- [[._load_rules()]] - `calls` [EXTRACTED]
+- [[.add_rule()]] - `references` [EXTRACTED]
+- [[.approve()]] - `references` [EXTRACTED]
+- [[.deny()]] - `references` [EXTRACTED]
+- [[Any_21]] - `uses` [INFERRED]
 - [[Approval modes for rules.]] - `rationale_for` [EXTRACTED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
-- [[FakeAuditStore]] - `uses` [INFERRED]
+- [[AuthRequired]] - `uses` [INFERRED]
+- [[Enum]] - `inherits` [EXTRACTED]
+- [[Exception_1]] - `uses` [INFERRED]
+- [[FakeAuditStore_1]] - `uses` [INFERRED]
 - [[FakeCaller]] - `uses` [INFERRED]
 - [[FakeGroup]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
+- [[MCPProxyRequest]] - `uses` [INFERRED]
+- [[MCPResultRequest]] - `uses` [INFERRED]
+- [[OpProxyRequest]] - `uses` [INFERRED]
+- [[Request_1]] - `uses` [INFERRED]
+- [[SSHExecRequest]] - `uses` [INFERRED]
+- [[SSHWriteFileRequest]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[TestEgressApprovalAPI]] - `uses` [INFERRED]
 - [[TestEgressApprovalQueue]] - `uses` [INFERRED]
+- [[WebSocket_2]] - `uses` [INFERRED]
 - [[_OutboundScan]] - `uses` [INFERRED]
 - [[_Svc]] - `uses` [INFERRED]
 - [[egress_approval.py]] - `contains` [EXTRACTED]
-- [[socrouter.py]] - `imports` [EXTRACTED]
+- [[main.py_2]] - `imports` [EXTRACTED]
+- [[router.py_1]] - `imports` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/INFERRED #community/Community_6

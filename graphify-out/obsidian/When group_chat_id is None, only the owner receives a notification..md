@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "rationale"
-community: "test_a2a_proxy.py"
+community: "Community 124"
 location: "L178"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/Community_124
 ---
 
 # When group_chat_id is None, only the owner receives a notification.
 
 ## Connections
-- [[dot-test_dm_approval_routes_only_to_owner()]] - `rationale_for` [EXTRACTED]
+- [[.test_dm_approval_routes_only_to_owner()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/Community_124

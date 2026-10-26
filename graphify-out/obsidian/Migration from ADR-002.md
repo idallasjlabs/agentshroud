@@ -1,17 +1,17 @@
 ---
 source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "AgentShroud Color Palette"
+community: "Community 517"
 location: "L88"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Color_Palette
+  - community/Community_517
 ---
 
 # Migration from ADR-002
 
 ## Connections
-- [[Consequences_1]] - `contains` [EXTRACTED]
+- [[Consequences_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Color_Palette
+#graphify/document #graphify/EXTRACTED #community/Community_517

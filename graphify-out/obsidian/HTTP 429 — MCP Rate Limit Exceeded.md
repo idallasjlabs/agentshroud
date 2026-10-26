@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md"
 type: "document"
-community: "ApprovalQueueConfig (7)"
+community: "Community 389"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_7
+  - community/Community_389
 ---
 
 # HTTP 429 — MCP Rate Limit Exceeded
 
 ## Connections
-- [[MCP Proxy Errors_1]] - `contains` [EXTRACTED]
+- [[MCP Proxy Errors_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_7
+#graphify/document #graphify/EXTRACTED #community/Community_389

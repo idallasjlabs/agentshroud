@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "rationale"
-community: "TestAllowlistMode"
+community: "Community 27"
 location: "L565"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestAllowlistMode
+  - community/Community_27
 ---
 
 # Default (denylist) mode is unchanged.
 
 ## Connections
-- [[dot-test_denylist_mode_still_works()]] - `rationale_for` [EXTRACTED]
+- [[.test_denylist_mode_still_works()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestAllowlistMode
+#graphify/rationale #graphify/EXTRACTED #community/Community_27

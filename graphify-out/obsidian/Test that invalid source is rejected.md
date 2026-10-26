@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "rationale"
-community: "ForwardRequest"
+community: "Community 92"
 location: "L121"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/Community_92
 ---
 
 # Test that invalid source is rejected
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_invalid_source_rejection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest
+#graphify/rationale #graphify/EXTRACTED #community/Community_92

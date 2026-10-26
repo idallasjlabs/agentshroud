@@ -1,21 +1,20 @@
 ---
-source_file: "docs/operations/deployment-procedure.md"
+source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "KillSwitchMonitor (2) (4)"
-location: "L5"
+community: "Community 400"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_2_4
+  - community/Community_400
 ---
 
-# Prerequisites
+# PREREQUISITES.md
 
 ## Connections
-- [[1Password Integration (Optional)]] - `contains` [EXTRACTED]
-- [[AgentShroud Deployment Procedure]] - `contains` [EXTRACTED]
-- [[Network Requirements]] - `contains` [EXTRACTED]
-- [[Software Dependencies]] - `contains` [EXTRACTED]
-- [[System Requirements]] - `contains` [EXTRACTED]
+- [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
+- [[QUICK_REFERENCE]] - `conceptually_related_to` [INFERRED]
+- [[Secrets Backend Auto-Detection]] - `references` [EXTRACTED]
+- [[Separation of Concerns  Isolated Bot Accounts]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/KillSwitchMonitor_2_4
+#graphify/document #graphify/EXTRACTED #community/Community_400

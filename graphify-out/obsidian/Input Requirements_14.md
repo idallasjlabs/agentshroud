@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
+source_file: ".agents/skills/eightd-root-cause-analysis/SKILL.md"
 type: "document"
-community: "GSDE&G Development Master Checklist (2)"
-location: "L21"
+community: "Community 790"
+location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist_2
+  - community/Community_790
 ---
 
 # Input Requirements
 
 ## Connections
-- [[Athena — Knowledge Distiller_1]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_2
+#graphify/document #graphify/EXTRACTED #community/Community_790

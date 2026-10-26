@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/colima-docker-guide.md"
 type: "document"
-community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
+community: "Community 168"
 location: "L402"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
+  - community/Community_168
 ---
 
 # Safe prune (removes only stopped containers + unused images + build cache)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[8. Docker System Pruning]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
+#graphify/document #graphify/EXTRACTED #community/Community_168

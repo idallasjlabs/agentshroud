@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "rationale"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "Community 113"
 location: "L191"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/Community_113
 ---
 
 # Mimics AlertDispatcher's id-based 24h dedup — the real downstream.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_DedupDispatchFake]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/Community_113

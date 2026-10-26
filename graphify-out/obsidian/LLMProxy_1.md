@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "test_llm_proxy_failover.py"
+community: "Community 251"
 location: "L44"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_llm_proxy_failoverpy
+  - graphify/INFERRED
+  - community/Community_251
 ---
 
 # LLMProxy
 
 ## Connections
 - [[LLMProxy]] - `uses` [INFERRED]
-- [[make_proxy()_1]] - `references` [EXTRACTED]
+- [[make_proxy()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy
+#graphify/code #graphify/INFERRED #community/Community_251

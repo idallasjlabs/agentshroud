@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/README.md"
 type: "document"
-community: "telegram_proxy.py (3) (2)"
+community: "Community 1264"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/telegram_proxypy_3_2
+  - community/Community_1264
 ---
 
 # Browser Skill README (OpenClaw)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Browser — Secure Browser Automation SKILL (OpenClaw)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/telegram_proxypy_3_2
+#graphify/document #graphify/EXTRACTED #community/Community_1264

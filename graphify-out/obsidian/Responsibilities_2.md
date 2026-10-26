@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "Mode A — Single task (3)"
-location: "L19"
+community: "Community 657"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_3
+  - community/Community_657
 ---
 
 # Responsibilities
 
 ## Connections
-- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
+- [[ledger.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_3
+#graphify/document #graphify/EXTRACTED #community/Community_657

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "ApprovalHardening"
+community: "Community 91"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/Community_91
 ---
 
 # AgentShroud (security proxy)
@@ -16,4 +16,4 @@ tags:
 - [[competitive-analysis-reports-archive]] - `references` [EXTRACTED]
 - [[setup-guide]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/concept #graphify/EXTRACTED #community/Community_91

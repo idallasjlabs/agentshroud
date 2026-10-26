@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "Community 84"
 location: "L100"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_84
 ---
 
 # Initialize Microsoft Presidio engines          Falls back to regex if Presidio/s
 
 ## Connections
-- [[dot-_init_presidio()_1]] - `rationale_for` [EXTRACTED]
+- [[._init_presidio()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_84

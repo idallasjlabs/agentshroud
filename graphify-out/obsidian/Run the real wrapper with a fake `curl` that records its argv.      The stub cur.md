@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "rationale"
-community: "AgentShroud v0.9.0"
+community: "Community 167"
 location: "L270"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_v090
+  - community/Community_167
 ---
 
 # Run the real wrapper with a fake `curl` that records its argv.      The stub cur
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_run_wrapper_capture_bearer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_v090
+#graphify/rationale #graphify/EXTRACTED #community/Community_167

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "rationale"
-community: "MCPPermissionManager (2)"
+community: "Community 25"
 location: "L167"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/Community_25
 ---
 
 # Test newline-based injection attempts (Finding #11)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestInjectionNewline]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_25

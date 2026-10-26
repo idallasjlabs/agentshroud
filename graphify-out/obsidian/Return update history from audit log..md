@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "MCPPolicyEngine"
+community: "Community 49"
 location: "L811"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/Community_49
 ---
 
 # Return update history from audit log.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[update_history()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/rationale #graphify/EXTRACTED #community/Community_49

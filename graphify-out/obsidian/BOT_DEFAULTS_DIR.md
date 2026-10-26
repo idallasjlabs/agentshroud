@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/update-bot-agents.sh"
 type: "code"
-community: "Mode A — Single task (5)"
+community: "Community 644"
 location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_5
+  - community/Community_644
 ---
 
 # BOT_DEFAULTS_DIR
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[update-bot-agents.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mode_A__Single_task_5
+#graphify/code #graphify/EXTRACTED #community/Community_644

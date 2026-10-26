@@ -1,19 +1,24 @@
 ---
-source_file: "gateway/security/outbound_filter.py"
+source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md (2)"
-location: "L73"
+community: "Community 271"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_2
+  - community/Community_271
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_38]] - `references` [EXTRACTED]
-- [[dot-_compile_patterns()_1]] - `references` [EXTRACTED]
-- [[dot-get_stats()_2]] - `references` [EXTRACTED]
+- [[.__init__()_17]] - `references` [EXTRACTED]
+- [[.extract_text_for_pii_scan()]] - `references` [EXTRACTED]
+- [[.parse_jsonrpc_request()]] - `references` [EXTRACTED]
+- [[.process_inbound_request()]] - `references` [EXTRACTED]
+- [[A2AMethod]] - `uses` [INFERRED]
+- [[A2APolicyEngine_1]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
+- [[_redact_message_text()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2
+#graphify/code #graphify/EXTRACTED #community/Community_271

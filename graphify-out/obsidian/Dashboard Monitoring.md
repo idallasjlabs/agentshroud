@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/daily-operations.md"
 type: "document"
-community: "security.py"
+community: "Community 654"
 location: "L105"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/securitypy
+  - community/Community_654
 ---
 
 # Dashboard Monitoring
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Daily Operations Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/securitypy
+#graphify/document #graphify/EXTRACTED #community/Community_654

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "SubagentGovernance"
+community: "Community 38"
 location: "L354"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SubagentGovernance
+  - community/Community_38
 ---
 
 # Score a subagent's output for safety and quality.          In a full deployment,
 
 ## Connections
-- [[dot-score_output()]] - `rationale_for` [EXTRACTED]
+- [[.score_output()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SubagentGovernance
+#graphify/rationale #graphify/EXTRACTED #community/Community_38

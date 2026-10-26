@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/04-security.md"
 type: "document"
-community: "Distributed OpenClaw Node Architecture — Raspberry Pi 4"
+community: "Community 466"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
+  - community/Community_466
 ---
 
 # AgentShroud — Security & Access Diagrams
@@ -17,4 +17,4 @@ tags:
 - [[12. Credential Flow Diagram]] - `contains` [EXTRACTED]
 - [[13. Network Security Diagram — Egress Controls]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
+#graphify/document #graphify/EXTRACTED #community/Community_466

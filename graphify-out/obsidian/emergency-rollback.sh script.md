@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/emergency-rollback.sh"
 type: "code"
-community: "patch-ws-proxy.sh"
+community: "Community 1525"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/patch-ws-proxysh
+  - community/Community_1525
 ---
 
 # emergency-rollback.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[emergency-rollback.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/patch-ws-proxysh
+#graphify/code #graphify/EXTRACTED #community/Community_1525

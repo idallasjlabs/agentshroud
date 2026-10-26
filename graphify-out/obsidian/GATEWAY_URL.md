@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/GATEWAY_URL.md"
 type: "document"
-community: "MCP AWS Profile Configuration README"
+community: "Community 578"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_AWS_Profile_Configuration_README
+  - community/Community_578
 ---
 
 # GATEWAY_URL.md
@@ -15,4 +15,4 @@ tags:
 - [[ANTHROPIC_BASE_URL]] - `references` [EXTRACTED]
 - [[GATEWAY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_README
+#graphify/document #graphify/EXTRACTED #community/Community_578

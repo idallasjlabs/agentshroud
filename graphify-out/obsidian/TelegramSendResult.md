@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/proxy/telegram_gateway_relay.py"
 type: "code"
-community: "Required Software"
+community: "Community 928"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Required_Software
+  - community/Community_928
 ---
 
 # TelegramSendResult
 
 ## Connections
-- [[dot-send_message()]] - `references` [EXTRACTED]
-- [[dot-send_status_update()]] - `references` [EXTRACTED]
+- [[.send_message()]] - `references` [EXTRACTED]
+- [[.send_status_update()]] - `references` [EXTRACTED]
 - [[Result of a Telegram send operation via gateway.]] - `rationale_for` [EXTRACTED]
 - [[telegram_gateway_relay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Required_Software
+#graphify/code #graphify/EXTRACTED #community/Community_928

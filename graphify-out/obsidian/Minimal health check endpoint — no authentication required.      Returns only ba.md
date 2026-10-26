@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/routes/health.py"
 type: "rationale"
-community: "create_auth_dependency()"
+community: "Community 6"
 location: "L31"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/Community_6
 ---
 
 # Minimal health check endpoint — no authentication required.      Returns only ba
 
 ## Connections
-- [[health_check()]] - `rationale_for` [EXTRACTED]
+- [[health_check()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/rationale #graphify/EXTRACTED #community/Community_6

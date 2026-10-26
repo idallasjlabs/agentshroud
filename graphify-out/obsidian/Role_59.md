@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-production/SKILL.md"
+source_file: ".agents/skills/i-pm/SKILL.md"
 type: "document"
-community: "Atlas — Curriculum Architect"
-location: "L7"
+community: "Community 486"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/Community_486
 ---
 
 # Role
 
 ## Connections
-- [[Skill Incident Response (INCIDENT)_2]] - `contains` [EXTRACTED]
+- [[Skill Project Management (PM)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/document #graphify/EXTRACTED #community/Community_486

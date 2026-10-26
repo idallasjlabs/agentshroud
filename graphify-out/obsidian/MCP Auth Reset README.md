@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-mcpm-auth-reset/README.md"
 type: "document"
-community: "Browser Extension"
+community: "Community 582"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Browser_Extension
+  - community/Community_582
 ---
 
 # MCP Auth Reset README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[MCP Auth Reset Skill_1]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Browser_Extension
+#graphify/document #graphify/INFERRED #community/Community_582

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "ContextSegment"
+community: "Community 30"
 location: "L109"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/Community_30
 ---
 
 # Test risk tier lookup.
 
 ## Connections
-- [[dot-test_get_tool_risk_tier()]] - `rationale_for` [EXTRACTED]
+- [[.test_get_tool_risk_tier()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextSegment
+#graphify/rationale #graphify/EXTRACTED #community/Community_30

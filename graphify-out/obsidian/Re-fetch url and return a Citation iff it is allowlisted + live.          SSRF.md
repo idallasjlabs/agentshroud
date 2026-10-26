@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "rationale"
-community: "MCPPolicyEngine (2)"
+community: "Community 125"
 location: "L143"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine_2
+  - community/Community_125
 ---
 
 # Re-fetch *url* and return a Citation iff it is allowlisted + live.          SSRF
 
 ## Connections
-- [[dot-_verify_url()]] - `rationale_for` [EXTRACTED]
+- [[._verify_url()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_125

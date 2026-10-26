@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/03-data.md"
 type: "document"
-community: "canvas_proxy_app"
+community: "Community 589"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/canvas_proxy_app
+  - community/Community_589
 ---
 
 # 03-data.md
@@ -17,6 +17,6 @@ tags:
 - [[Data Flow Diagram]] - `conceptually_related_to` [EXTRACTED]
 - [[Data Lineage Diagram]] - `conceptually_related_to` [EXTRACTED]
 - [[Entity Relationship Diagram (ledger, approval_items)]] - `conceptually_related_to` [EXTRACTED]
-- [[diagramsREADME]] - `references` [EXTRACTED]
+- [[README_120]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/canvas_proxy_app
+#graphify/document #graphify/EXTRACTED #community/Community_589

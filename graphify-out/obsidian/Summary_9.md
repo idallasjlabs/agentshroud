@@ -1,19 +1,17 @@
 ---
-source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "OpenClaw Setup Guide - agentshroud.ai Bot"
-location: "L339"
+community: "Community 2122"
+location: "L430"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+  - community/Community_2122
 ---
 
 # Summary
 
 ## Connections
-- [[Quick Start Commands]] - `contains` [EXTRACTED]
-- [[Telegram & Gmail Integration Guide]] - `contains` [EXTRACTED]
-- [[✅ Current Status]] - `contains` [EXTRACTED]
+- [[1.2.2 — releasev1.2.2 (2026-06-28)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+#graphify/document #graphify/EXTRACTED #community/Community_2122

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "A2APolicyEngine"
+community: "Community 42"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/Community_42
 ---
 
 # test_agent_cve_registry.py
@@ -16,10 +16,8 @@ tags:
 - [[_hermes_by_title()]] - `contains` [EXTRACTED]
 - [[_load_triage_module()]] - `contains` [EXTRACTED]
 - [[_run_triage()]] - `contains` [EXTRACTED]
-- [[agent_cve_registry.py]] - `references` [EXTRACTED]
-- [[get_agent_cve_source()]] - `references` [EXTRACTED]
-- [[get_agent_cve_summary()]] - `references` [EXTRACTED]
-- [[list_cve_agents()]] - `references` [EXTRACTED]
+- [[get_agent_cve_summary()]] - `imports` [EXTRACTED]
+- [[list_cve_agents()]] - `imports` [EXTRACTED]
 - [[test_agent_cve_registries_contains_both()]] - `contains` [EXTRACTED]
 - [[test_agent_cve_registries_objects_match_lists()]] - `contains` [EXTRACTED]
 - [[test_agent_cve_registry_alias_is_openclaw_list()]] - `contains` [EXTRACTED]
@@ -81,4 +79,4 @@ tags:
 - [[test_untriageable_agents_are_refused_not_guessed()]] - `contains` [EXTRACTED]
 - [[test_wrapped_agent_constant_unchanged()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/Community_42

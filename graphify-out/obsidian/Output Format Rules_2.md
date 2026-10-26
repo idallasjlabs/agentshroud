@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pca/SKILL.md"
+source_file: ".cursor/agents/i-pca.md"
 type: "document"
-community: "router.py"
-location: "L80"
+community: "Community 1256"
+location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/routerpy
+  - community/Community_1256
 ---
 
 # Output Format Rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Pre-Change Analysis (PCA)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/routerpy
+#graphify/document #graphify/EXTRACTED #community/Community_1256

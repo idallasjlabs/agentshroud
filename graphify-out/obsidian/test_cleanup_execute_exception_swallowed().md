@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_replay.py"
 type: "code"
-community: ".test_collaborator_web_access_imperative_with_url_queues_owner_approval()"
+community: "Community 165"
 location: "L208"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
+  - community/Community_165
 ---
 
 # test_cleanup_execute_exception_swallowed()
@@ -15,4 +15,4 @@ tags:
 - [[Exception during cleanup execute must be swallowed.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_replay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
+#graphify/code #graphify/EXTRACTED #community/Community_165

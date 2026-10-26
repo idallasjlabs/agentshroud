@@ -1,21 +1,17 @@
 ---
-source_file: "docs/project/legal/TRADEMARK.md"
+source_file: "docker/config/openclaw/agents/hermes-soul.md"
 type: "document"
-community: "SecureBrowser Skill (3)"
-location: "L1"
+community: "Community 1028"
+location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill_3
+  - community/Community_1028
 ---
 
 # Trademark Notice
 
 ## Connections
-- [[Contact]] - `contains` [EXTRACTED]
-- [[Standard Footer]] - `contains` [EXTRACTED]
-- [[TRADEMARK]] - `contains` [EXTRACTED]
-- [[Trademark Details]] - `contains` [EXTRACTED]
-- [[Usage Guidelines]] - `contains` [EXTRACTED]
+- [[AgentShroud Hermes — System Identity_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill_3
+#graphify/document #graphify/EXTRACTED #community/Community_1028

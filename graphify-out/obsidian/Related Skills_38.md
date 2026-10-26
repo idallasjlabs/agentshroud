@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ps/README.md"
+source_file: ".agents/skills/sav/README.md"
 type: "document"
-community: "2. Security Value Audit — Real Protection vs. Theater Assessment"
-location: "L14"
+community: "Community 2094"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/2_Security_Value_Audit__Real_Protection_vs_Theater_Assessment
+  - community/Community_2094
 ---
 
 # Related Skills
 
 ## Connections
-- [[Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
+- [[System Audit Vault]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/2_Security_Value_Audit__Real_Protection_vs_Theater_Assessment
+#graphify/document #graphify/EXTRACTED #community/Community_2094

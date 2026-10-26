@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.9/release-notes-v0.9.0.md"
+source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md"
 type: "document"
-community: "SecureBrowser - Enterprise Secure Browser Automation"
+community: "Community 357"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
+  - community/Community_357
 ---
 
 # Executive Summary
 
 ## Connections
-- [[Release Notes - AgentShroud v0.9.0]] - `contains` [EXTRACTED]
+- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/Community_357

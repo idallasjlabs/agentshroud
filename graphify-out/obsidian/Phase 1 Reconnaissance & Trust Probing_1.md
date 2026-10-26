@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
+source_file: ".agents/skills/sec-offense/SKILL.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester"
+community: "Community 1120"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester
+  - community/Community_1120
 ---
 
 # Phase 1: Reconnaissance & Trust Probing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Attack Phases_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester
+#graphify/document #graphify/EXTRACTED #community/Community_1120

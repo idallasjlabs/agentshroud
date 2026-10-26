@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/auto_remediate_cves.py"
 type: "rationale"
-community: "test_daily_cve_report.py"
+community: "Community 261"
 location: "L221"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/Community_261
 ---
 
 # Import the committed OpenClaw registry.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[load_registry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_261

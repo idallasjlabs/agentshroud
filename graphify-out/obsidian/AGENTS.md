@@ -1,17 +1,19 @@
 ---
-source_file: "docker/config/openclaw/AGENTS.md"
+source_file: "AGENTS.md"
 type: "document"
-community: "notion"
+community: "Community 283"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/notion
+  - community/Community_283
 ---
 
 # AGENTS.md
 
 ## Connections
-- [[AgentShroud™ — OpenClaw Local-Model Tool-Use Instructions]] - `contains` [EXTRACTED]
+- [[AGENTS_1]] - `contains` [EXTRACTED]
+- [[Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]] - `contains` [EXTRACTED]
+- [[Guidance for ChatGPT Codex CLI when working in this repository.]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/notion
+#graphify/document #graphify/EXTRACTED #community/Community_283

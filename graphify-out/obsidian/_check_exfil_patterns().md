@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "SubagentGovernance"
+community: "Community 38"
 location: "L622"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentGovernance
+  - community/Community_38
 ---
 
 # _check_exfil_patterns()
 
 ## Connections
-- [[dot-score_output()]] - `calls` [EXTRACTED]
-- [[dot-test_clean_text_no_patterns()]] - `calls` [EXTRACTED]
-- [[dot-test_exfil_base64()]] - `calls` [EXTRACTED]
-- [[dot-test_exfil_hex()]] - `calls` [EXTRACTED]
-- [[dot-test_exfil_webhook()]] - `calls` [EXTRACTED]
+- [[.score_output()]] - `calls` [EXTRACTED]
+- [[.test_clean_text_no_patterns()]] - `calls` [EXTRACTED]
+- [[.test_exfil_base64()]] - `calls` [EXTRACTED]
+- [[.test_exfil_hex()]] - `calls` [EXTRACTED]
+- [[.test_exfil_webhook()]] - `calls` [EXTRACTED]
 - [[Check text for data exfiltration patterns.]] - `rationale_for` [EXTRACTED]
 - [[subagent_governance.py]] - `contains` [EXTRACTED]
 - [[test_subagent_governance.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentGovernance
+#graphify/code #graphify/EXTRACTED #community/Community_38

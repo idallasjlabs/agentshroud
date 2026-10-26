@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "AuditEvent"
-location: "L30"
+community: "Community 657"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditEvent
+  - community/Community_657
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[llm_proxy.py_1]] - `contains` [EXTRACTED]
+- [[ledger.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditEvent
+#graphify/document #graphify/EXTRACTED #community/Community_657

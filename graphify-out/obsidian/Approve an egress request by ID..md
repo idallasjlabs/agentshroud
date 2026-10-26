@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "rationale"
-community: "AlertDispatcher (4)"
+community: "Community 87"
 location: "L248"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_4
+  - community/Community_87
 ---
 
 # Approve an egress request by ID.
 
 ## Connections
-- [[approve()_3]] - `rationale_for` [EXTRACTED]
+- [[approve()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_4
+#graphify/rationale #graphify/EXTRACTED #community/Community_87

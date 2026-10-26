@@ -1,11 +1,11 @@
 ---
 source_file: "docs/agentshroud-knowledge.md"
 type: "concept"
-community: "I - Information Disclosure"
+community: "Community 1249"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/I_-_Information_Disclosure
+  - community/Community_1249
 ---
 
 # SOC Command Center — Five Pillars
@@ -13,6 +13,6 @@ tags:
 ## Connections
 - [[Collaborator System (multi-user agentic workspace)]] - `conceptually_related_to` [EXTRACTED]
 - [[Dashboard Overview (request volume, security events, audit trail)]] - `semantically_similar_to` [INFERRED]
-- [[Kill Switch (freezeshutdowndisconnect)_1]] - `conceptually_related_to` [INFERRED]
+- [[Kill Switch (freezeshutdowndisconnect)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/I_-_Information_Disclosure
+#graphify/concept #graphify/INFERRED #community/Community_1249

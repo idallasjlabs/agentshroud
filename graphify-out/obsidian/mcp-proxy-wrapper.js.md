@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/mcp-proxy-wrapper.js"
 type: "code"
-community: "v1.3.0 — Platform Expansion (53 items)"
+community: "Community 658"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/v130__Platform_Expansion_53_items
+  - community/Community_658
 ---
 
 # mcp-proxy-wrapper.js
@@ -19,7 +19,7 @@ tags:
 - [[dashDash]] - `contains` [EXTRACTED]
 - [[gatewayPost()]] - `contains` [EXTRACTED]
 - [[http_1]] - `contains` [EXTRACTED]
-- [[https_1]] - `contains` [EXTRACTED]
+- [[https_4]] - `contains` [EXTRACTED]
 - [[inboundRl]] - `contains` [EXTRACTED]
 - [[inspectCall()]] - `contains` [EXTRACTED]
 - [[outboundRl]] - `contains` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[readline]] - `contains` [EXTRACTED]
 - [[{ spawn }]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/v130__Platform_Expansion_53_items
+#graphify/code #graphify/EXTRACTED #community/Community_658

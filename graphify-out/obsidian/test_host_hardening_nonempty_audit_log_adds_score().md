@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_integrity.py"
 type: "code"
-community: "Incident: Conduit/Hermes instability 2026-10-16"
+community: "Community 207"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Incident_Conduit/Hermes_instability_2026-10-16
+  - community/Community_207
 ---
 
 # test_host_hardening_nonempty_audit_log_adds_score()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_scorecard_integrity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Incident_Conduit/Hermes_instability_2026-10-16
+#graphify/code #graphify/EXTRACTED #community/Community_207

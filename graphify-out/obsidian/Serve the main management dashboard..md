@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "EgressFilterConfig (2) (2)"
+community: "Community 49"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2_2
+  - community/Community_49
 ---
 
 # Serve the main management dashboard.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dashboard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_49

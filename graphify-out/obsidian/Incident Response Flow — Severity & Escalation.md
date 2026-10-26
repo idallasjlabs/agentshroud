@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/06-operations.md"
 type: "concept"
-community: "Distributed OpenClaw Node Architecture — Raspberry Pi 4"
+community: "Community 1989"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
+  - community/Community_1989
 ---
 
 # Incident Response Flow — Severity & Escalation
@@ -15,4 +15,4 @@ tags:
 - [[Kill Switch (freeze  shutdown  disconnect)]] - `conceptually_related_to` [INFERRED]
 - [[Runbook  Decision Tree — On-Call Logic]] - `references` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
+#graphify/concept #graphify/INFERRED #community/Community_1989

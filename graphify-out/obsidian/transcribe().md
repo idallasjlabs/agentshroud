@@ -1,20 +1,21 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "code"
-community: "proxy_status.py"
+community: "Community 851"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/proxy_statuspy
+  - community/Community_851
 ---
 
 # transcribe()
 
 ## Connections
+- [[RuntimeError]] - `calls` [INFERRED]
 - [[Transcribe raw 16-bit signed PCM mono audio to text.      Args         pcm_byte]] - `rationale_for` [EXTRACTED]
 - [[_get_model()]] - `calls` [EXTRACTED]
 - [[record_transcription_latency()]] - `calls` [EXTRACTED]
 - [[stt.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/proxy_statuspy
+#graphify/code #graphify/EXTRACTED #community/Community_851

@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-pm/SKILL.md"
+source_file: ".agents/agents/i-pm.md"
 type: "document"
-community: "Crash Recovery"
-location: "L135"
+community: "Community 1011"
+location: "L138"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crash_Recovery
+  - community/Community_1011
 ---
 
 # Risk Management
@@ -16,4 +16,4 @@ tags:
 - [[Known Risks]] - `contains` [EXTRACTED]
 - [[Skill Project Management (PM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crash_Recovery
+#graphify/document #graphify/EXTRACTED #community/Community_1011

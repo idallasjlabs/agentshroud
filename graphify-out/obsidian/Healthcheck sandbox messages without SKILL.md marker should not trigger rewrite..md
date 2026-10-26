@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "Community 2405"
 location: "L1585"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/Community_2405
 ---
 
 # Healthcheck sandbox messages without SKILL.md marker should not trigger rewrite.
 
 ## Connections
-- [[dot-test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten()]] - `rationale_for` [EXTRACTED]
+- [[.test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_2405

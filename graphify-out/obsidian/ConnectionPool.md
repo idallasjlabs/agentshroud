@@ -1,37 +1,37 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "test_bots_ssh_exec_wrapper.py"
+community: "Community 140"
 location: "L198"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_bots_ssh_exec_wrapperpy
+  - community/Community_140
 ---
 
 # ConnectionPool
 
 ## Connections
-- [[dot-__init__()_99]] - `calls` [EXTRACTED]
-- [[dot-__init__()_48]] - `method` [EXTRACTED]
-- [[dot-get_or_create()]] - `method` [EXTRACTED]
-- [[dot-remove()]] - `method` [EXTRACTED]
-- [[dot-stop_all()]] - `method` [EXTRACTED]
-- [[dot-test_get_or_create_by_transport_and_caching()]] - `calls` [EXTRACTED]
-- [[dot-test_stop_all_clears_pool()]] - `calls` [EXTRACTED]
-- [[Exception]] - `uses` [INFERRED]
+- [[.__init__()_30]] - `method` [EXTRACTED]
+- [[.__init__()_31]] - `calls` [EXTRACTED]
+- [[.get_or_create()]] - `method` [EXTRACTED]
+- [[.remove()]] - `method` [EXTRACTED]
+- [[.stop_all()]] - `method` [EXTRACTED]
+- [[.test_get_or_create_by_transport_and_caching()]] - `calls` [EXTRACTED]
+- [[.test_stop_all_clears_pool()]] - `calls` [EXTRACTED]
+- [[Exception_4]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
 - [[InspectionResult]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector_1]] - `uses` [INFERRED]
+- [[MCPInspector]] - `uses` [INFERRED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxy]] - `uses` [INFERRED]
-- [[MCPProxyConfig_2]] - `uses` [INFERRED]
+- [[MCPProxy_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
-- [[MCPToolCall]] - `uses` [INFERRED]
+- [[MCPServerConfig]] - `uses` [INFERRED]
+- [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
 - [[Pool of connections to MCP servers.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalQueue]] - `uses` [INFERRED]
@@ -49,4 +49,4 @@ tags:
 - [[mcp_proxy.py]] - `contains` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_bots_ssh_exec_wrapperpy
+#graphify/code #graphify/INFERRED #community/Community_140

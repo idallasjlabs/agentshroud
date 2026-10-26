@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/README.md"
+source_file: ".agents/skills/mac-app-discovery/README.md"
 type: "document"
-community: "AgentShroud Incident Response Plan (3)"
+community: "Community 2085"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan_3
+  - community/Community_2085
 ---
 
 # Related Skills
 
 ## Connections
-- [[MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
+- [[macOS System Administrator (MAC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan_3
+#graphify/document #graphify/EXTRACTED #community/Community_2085

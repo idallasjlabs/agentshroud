@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-04-infrastructure-hosting.svg"
 type: "image"
-community: "Control Center"
+community: "Community 1087"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Control_Center
+  - community/Community_1087
 ---
 
 # Docker Compose (infra diagram)
@@ -16,4 +16,4 @@ tags:
 - [[agentshroud-internal network (172.20.0.016)]] - `shares_data_with` [EXTRACTED]
 - [[agentshroud-isolated network (172.21.0.016)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Control_Center
+#graphify/image #graphify/EXTRACTED #community/Community_1087

@@ -1,20 +1,17 @@
 ---
-source_file: "browser-extension/background.js"
+source_file: "scripts/smoke.d/test-sunday-upgrade-scan.sh"
 type: "code"
-community: "AgentShroud Development Roadmap — 2026 Gantt Chart"
-location: "L45"
+community: "Community 1111"
+location: "L548"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+  - community/Community_1111
 ---
 
 # notify()
 
 ## Connections
-- [[background.js]] - `references` [EXTRACTED]
-- [[clipPage()]] - `calls` [EXTRACTED]
-- [[forwardUrl()]] - `calls` [EXTRACTED]
-- [[reportResult()]] - `calls` [EXTRACTED]
+- [[test-sunday-upgrade-scan.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+#graphify/code #graphify/EXTRACTED #community/Community_1111

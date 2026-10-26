@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mc/README.md"
+source_file: "docker/config/hermes/skills/i-eightd/README.md"
 type: "document"
-community: "Browser — Secure Browser Automation (SKILL) (2)"
+community: "Community 90"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_SKILL_2
+  - community/Community_90
 ---
 
 # Purpose
 
 ## Connections
-- [[GSDE&G Development Master Checklist (MC)]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL_2
+#graphify/document #graphify/EXTRACTED #community/Community_90

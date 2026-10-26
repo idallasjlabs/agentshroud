@@ -1,17 +1,17 @@
 ---
 source_file: "docker/README.md"
 type: "concept"
-community: "TestMultilingualInjection"
+community: "Community 213"
 location: "docker/README.md:188"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/TestMultilingualInjection
+  - community/Community_213
 ---
 
 # Network DMZ — IEC 62443 FR5 (SCRUM-93)
 
 ## Connections
-- [[dockerREADME]] - `references` [EXTRACTED]
+- [[README_41]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/TestMultilingualInjection
+#graphify/concept #graphify/EXTRACTED #community/Community_213

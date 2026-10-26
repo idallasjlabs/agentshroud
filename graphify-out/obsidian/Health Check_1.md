@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
 type: "document"
-community: "AgentShroud Branding Assets Index"
-location: "L88"
+community: "Community 628"
+location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Branding_Assets_Index
+  - community/Community_628
 ---
 
 # Health Check
 
 ## Connections
-- [[agentshroud-gateway_2]] - `contains` [EXTRACTED]
+- [[agentshroud-bot_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Branding_Assets_Index
+#graphify/document #graphify/EXTRACTED #community/Community_628

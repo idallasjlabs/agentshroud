@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "DNSFilterConfig"
+community: "Community 78"
 location: "L593"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Community_78
 ---
 
 # OpenClaw patch script should default to local Ollama but keep API adapter config
 
 ## Connections
-- [[dot-test_openclaw_patch_defaults_to_qwen_local_model()]] - `rationale_for` [EXTRACTED]
+- [[.test_openclaw_patch_defaults_to_qwen_local_model()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_78

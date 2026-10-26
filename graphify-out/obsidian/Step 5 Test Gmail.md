@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "OpenClaw Setup Guide - agentshroud.ai Bot"
+community: "Community 244"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+  - community/Community_244
 ---
 
 # Step 5: Test Gmail
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Part 2 Set Up Gmail Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+#graphify/document #graphify/EXTRACTED #community/Community_244

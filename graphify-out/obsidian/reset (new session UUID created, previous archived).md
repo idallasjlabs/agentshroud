@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-17-state-bot-session.svg"
 type: "concept"
-community: "test_launchd_install.sh"
+community: "Community 1250"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_launchd_installsh
+  - community/Community_1250
 ---
 
 # reset (new session UUID created, previous archived)
@@ -14,4 +14,4 @@ tags:
 - [[compacting (token count approaches reserveTokensFloor, 196K of 200K)]] - `calls` [EXTRACTED]
 - [[fresh (container starts, new session created)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_launchd_installsh
+#graphify/concept #graphify/EXTRACTED #community/Community_1250

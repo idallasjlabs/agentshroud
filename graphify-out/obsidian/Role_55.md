@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
+source_file: ".agents/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "run-standalone.sh (Hermes docker run launcher)"
+community: "Community 1085"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/run-standalonesh_Hermes_docker_run_launcher
+  - community/Community_1085
 ---
 
 # Role
 
 ## Connections
-- [[Socrates — Dialogue Architect_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher
+#graphify/document #graphify/EXTRACTED #community/Community_1085

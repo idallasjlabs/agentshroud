@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "ToolChainAnalyzer"
+community: "Community 8"
 location: "L560"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzer
+  - community/Community_8
 ---
 
 # Get global analyzer statistics.
 
 ## Connections
-- [[dot-get_global_stats()_1]] - `rationale_for` [EXTRACTED]
+- [[.get_global_stats()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolChainAnalyzer
+#graphify/rationale #graphify/EXTRACTED #community/Community_8

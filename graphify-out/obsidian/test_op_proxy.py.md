@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "export-bot-conversations.py"
+community: "Community 260"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy
+  - community/Community_260
 ---
 
 # test_op_proxy.py
@@ -17,7 +17,6 @@ tags:
 - [[TestOpRefAllowlistCoverage]] - `contains` [EXTRACTED]
 - [[_is_op_reference_allowed()]] - `imports` [EXTRACTED]
 - [[auth_dep()]] - `imports` [EXTRACTED]
-- [[client()_4]] - `contains` [EXTRACTED]
-- [[ingest_apimain.py]] - `references` [EXTRACTED]
+- [[client()_12]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy
+#graphify/code #graphify/EXTRACTED #community/Community_260

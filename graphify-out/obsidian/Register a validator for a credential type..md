@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "TestNormalizeForSpeech"
+community: "Community 198"
 location: "L156"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestNormalizeForSpeech
+  - community/Community_198
 ---
 
 # Register a validator for a credential type.
 
 ## Connections
-- [[dot-register_validator()]] - `rationale_for` [EXTRACTED]
+- [[.register_validator()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestNormalizeForSpeech
+#graphify/rationale #graphify/EXTRACTED #community/Community_198

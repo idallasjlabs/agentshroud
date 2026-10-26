@@ -1,18 +1,18 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h"
 type: "code"
-community: "1. Accomplishments This Phase — Delivered Security Infrastructure"
+community: "Community 1161"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/1_Accomplishments_This_Phase__Delivered_Security_Infrastructure
+  - community/Community_1161
 ---
 
 # iot_button_delete()
 
 ## Connections
-- [[button_handle_t_1]] - `references` [EXTRACTED]
-- [[test_wakeword_statestubsiot_button.h]] - `contains` [EXTRACTED]
+- [[button_handle_t_3]] - `references` [EXTRACTED]
+- [[iot_button.h_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/1_Accomplishments_This_Phase__Delivered_Security_Infrastructure
+#graphify/code #graphify/EXTRACTED #community/Community_1161

@@ -1,16 +1,17 @@
 ---
-source_file: ""
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
+community: "Community 575"
+location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/Community_575
 ---
 
 # LogRecord
 
 ## Connections
-- [[dot-filter()]] - `references` [EXTRACTED]
+- [[.emit()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/Community_575

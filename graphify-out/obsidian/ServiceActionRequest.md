@@ -1,35 +1,35 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "Community 10"
 location: "L564"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/Community_10
 ---
 
 # ServiceActionRequest
 
 ## Connections
 - [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult_1]] - `uses` [INFERRED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[AuditResult]] - `uses` [INFERRED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
 - [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller_1]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
 - [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface_1]] - `uses` [INFERRED]
+- [[SCLInterface]] - `uses` [INFERRED]
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[killswitch_freeze()]] - `references` [EXTRACTED]
 - [[killswitch_shutdown()]] - `references` [EXTRACTED]
 - [[rebuild_all_services()]] - `references` [EXTRACTED]
-- [[restart_service()]] - `references` [EXTRACTED]
+- [[restart_service()_1]] - `references` [EXTRACTED]
 - [[rollback_gateway()]] - `references` [EXTRACTED]
-- [[socrouter.py]] - `contains` [EXTRACTED]
-- [[stop_service()]] - `references` [EXTRACTED]
+- [[router.py_1]] - `contains` [EXTRACTED]
+- [[stop_service()_1]] - `references` [EXTRACTED]
 - [[update_service()]] - `references` [EXTRACTED]
 - [[upgrade_bot()]] - `references` [EXTRACTED]
 - [[upgrade_gateway()]] - `references` [EXTRACTED]
 - [[upgrade_hermes()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/Community_10

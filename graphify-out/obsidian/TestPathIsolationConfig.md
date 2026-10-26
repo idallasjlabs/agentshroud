@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "PathIsolationManager"
+community: "Community 1342"
 location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/Community_1342
 ---
 
 # TestPathIsolationConfig
 
 ## Connections
-- [[dot-test_custom_config()]] - `method` [EXTRACTED]
-- [[dot-test_default_config()_4]] - `method` [EXTRACTED]
+- [[.test_custom_config()_2]] - `method` [EXTRACTED]
+- [[.test_default_config()_5]] - `method` [EXTRACTED]
 - [[PathIsolationConfig]] - `uses` [INFERRED]
 - [[PathIsolationManager]] - `uses` [INFERRED]
 - [[PathRewriteResult]] - `uses` [INFERRED]
 - [[Test path isolation configuration.]] - `rationale_for` [EXTRACTED]
 - [[test_path_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/Community_1342

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/tmux/scripts/find-sessions.sh"
 type: "code"
-community: "test_voice_gateway.py (2)"
+community: "Community 1064"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy_2
+  - community/Community_1064
 ---
 
 # list_sessions()
@@ -15,4 +15,4 @@ tags:
 - [[find-sessions.sh]] - `defines` [EXTRACTED]
 - [[find-sessions.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy_2
+#graphify/code #graphify/EXTRACTED #community/Community_1064

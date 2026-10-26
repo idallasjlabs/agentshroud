@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: "iot_button_register_cb (2)"
+community: "Community 1143"
 location: "L437"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/iot_button_register_cb_2
+  - community/Community_1143
 ---
 
 # Load queue items from store file when present.
 
 ## Connections
-- [[dot-_load_pending_store()]] - `rationale_for` [EXTRACTED]
+- [[._load_pending_store()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/iot_button_register_cb_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_1143

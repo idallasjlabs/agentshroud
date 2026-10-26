@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_port_manager.py"
 type: "code"
-community: "TrustConfig (2)"
+community: "Community 109"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig_2
+  - community/Community_109
 ---
 
 # TestIsPortAvailable
 
 ## Connections
-- [[dot-test_bound_port_is_not_available()]] - `method` [EXTRACTED]
-- [[dot-test_udp_bound_not_available()]] - `method` [EXTRACTED]
-- [[dot-test_udp_unbound_available()]] - `method` [EXTRACTED]
-- [[dot-test_unbound_port_is_available()]] - `method` [EXTRACTED]
+- [[.test_bound_port_is_not_available()]] - `method` [EXTRACTED]
+- [[.test_udp_bound_not_available()]] - `method` [EXTRACTED]
+- [[.test_udp_unbound_available()]] - `method` [EXTRACTED]
+- [[.test_unbound_port_is_available()]] - `method` [EXTRACTED]
 - [[PortAssignment]] - `uses` [INFERRED]
 - [[PortManager]] - `uses` [INFERRED]
 - [[PortResolution]] - `uses` [INFERRED]
 - [[Test port availability detection.]] - `rationale_for` [EXTRACTED]
 - [[test_port_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig_2
+#graphify/code #graphify/EXTRACTED #community/Community_109

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "FalcoAlertWatcher (2)"
+community: "Community 842"
 location: "L863"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher_2
+  - community/Community_842
 ---
 
 # Return the latest SBOM (Software Bill of Materials) as parsed JSON.
 
 ## Connections
-- [[get_sbom()_1]] - `rationale_for` [EXTRACTED]
+- [[get_sbom()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FalcoAlertWatcher_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_842

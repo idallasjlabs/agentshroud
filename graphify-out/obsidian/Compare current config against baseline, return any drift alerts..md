@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "rationale"
-community: "ContextGuard"
+community: "Community 0"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/Community_0
 ---
 
 # Compare current config against baseline, return any drift alerts.
 
 ## Connections
-- [[dot-check_drift()]] - `rationale_for` [EXTRACTED]
+- [[.check_drift()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

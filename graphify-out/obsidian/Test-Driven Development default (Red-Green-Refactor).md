@@ -1,13 +1,13 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: "AWS API MCP Server (concept)"
+community: "Community 1597"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AWS_API_MCP_Server_concept
+  - community/Community_1597
 ---
 
 # Test-Driven Development default (Red-Green-Refactor)
 
-#graphify/rationale #graphify/EXTRACTED #community/AWS_API_MCP_Server_concept
+#graphify/rationale #graphify/EXTRACTED #community/Community_1597

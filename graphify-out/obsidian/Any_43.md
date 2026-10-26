@@ -1,26 +1,29 @@
 ---
-source_file: "gateway/security/approval_hardening.py"
+source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "Any"
-location: "L119"
+community: "Community 198"
+location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/Community_198
 ---
 
 # Any
 
 ## Connections
-- [[dot-_check_description_parameter_mismatch()]] - `references` [EXTRACTED]
-- [[dot-_check_parameter_obfuscation()]] - `references` [EXTRACTED]
-- [[dot-_check_repeat_request_patterns()]] - `references` [EXTRACTED]
-- [[dot-_create_parameter_fingerprint()]] - `references` [EXTRACTED]
-- [[dot-_format_parameters_with_highlighting()]] - `references` [EXTRACTED]
-- [[dot-analyze_request()]] - `references` [EXTRACTED]
-- [[dot-format_hardened_message()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_11]] - `references` [EXTRACTED]
-- [[dot-is_request_in_cooldown()]] - `references` [EXTRACTED]
-- [[dot-record_denied_request()]] - `references` [EXTRACTED]
+- [[._generate_new_credential()]] - `references` [EXTRACTED]
+- [[._validate_credential()]] - `references` [EXTRACTED]
+- [[.check_and_rotate_due_credentials()]] - `references` [EXTRACTED]
+- [[.cleanup_retired_credentials()]] - `references` [EXTRACTED]
+- [[.emergency_rotate_credential()]] - `references` [EXTRACTED]
+- [[.get_all_credentials_status()]] - `references` [EXTRACTED]
+- [[.get_credential_status()]] - `references` [EXTRACTED]
+- [[.get_health_score()]] - `references` [EXTRACTED]
+- [[.register_credential()]] - `references` [EXTRACTED]
+- [[.rotate_credential()]] - `references` [EXTRACTED]
+- [[.validate()]] - `references` [EXTRACTED]
+- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
+- [[KeyRotationConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/Community_198

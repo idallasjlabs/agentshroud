@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-session-prompt/SKILL.md"
+source_file: ".cursor/agents/i-tdd.md"
 type: "document"
-community: "Quickstart"
-location: "L137"
+community: "Community 1498"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quickstart
+  - community/Community_1498
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Session Prompt Generator (SESSION-PROMPT)]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quickstart
+#graphify/document #graphify/EXTRACTED #community/Community_1498

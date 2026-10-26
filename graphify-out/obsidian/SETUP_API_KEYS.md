@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "Hermes Cron Dedupe (dev)"
+community: "Community 696"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Hermes_Cron_Dedupe_dev
+  - community/Community_696
 ---
 
 # SETUP_API_KEYS.md
@@ -18,4 +18,4 @@ tags:
 - [[TELEGRAM_SETUP]] - `conceptually_related_to` [INFERRED]
 - [[VAULT-SHARING-INSTRUCTIONS]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Hermes_Cron_Dedupe_dev
+#graphify/document #graphify/INFERRED #community/Community_696

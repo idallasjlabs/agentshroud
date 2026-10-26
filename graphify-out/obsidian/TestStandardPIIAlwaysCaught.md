@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "test_llm_proxy.py"
+community: "Community 56"
 location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/Community_56
 ---
 
 # TestStandardPIIAlwaysCaught
 
 ## Connections
-- [[dot-test_clean_content_no_hits()]] - `method` [EXTRACTED]
-- [[dot-test_plain_email_caught_in_prompt()]] - `method` [EXTRACTED]
-- [[dot-test_plain_email_caught_in_tool_result()]] - `method` [EXTRACTED]
-- [[dot-test_us_ssn_caught_in_tool_result()]] - `method` [EXTRACTED]
+- [[.test_clean_content_no_hits()]] - `method` [EXTRACTED]
+- [[.test_plain_email_caught_in_prompt()]] - `method` [EXTRACTED]
+- [[.test_plain_email_caught_in_tool_result()]] - `method` [EXTRACTED]
+- [[.test_us_ssn_caught_in_tool_result()]] - `method` [EXTRACTED]
 - [[DifferentialPIIConfig]] - `uses` [INFERRED]
-- [[DifferentialPIIDetector_1]] - `uses` [INFERRED]
+- [[DifferentialPIIDetector]] - `uses` [INFERRED]
 - [[PIIHit]] - `uses` [INFERRED]
 - [[PIIHitSeverity]] - `uses` [INFERRED]
 - [[test_differential_pii_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/Community_56

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "Community 10"
 location: "L2362"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/Community_10
 ---
 
 # get_updates()
 
 ## Connections
-- [[SCLCaller]] - `references` [EXTRACTED]
-- [[socrouter.py]] - `contains` [EXTRACTED]
+- [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/Community_10

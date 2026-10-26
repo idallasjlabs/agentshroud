@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "MiddlewareManager (2)"
+community: "Community 6"
 location: "L439"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/Community_6
 ---
 
 # Test RBAC manager initialization without explicit config.
 
 ## Connections
-- [[dot-test_rbac_manager_without_config()]] - `rationale_for` [EXTRACTED]
+- [[.test_rbac_manager_without_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_6

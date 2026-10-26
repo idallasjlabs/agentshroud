@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/tests/test_scorecard_scoring.py"
+source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "run-as-root.sh"
-location: "L306"
+community: "Community 67"
+location: "L702"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run-as-rootsh
+  - community/Community_67
 ---
 
 # TestScoreContainerHardening
 
 ## Connections
-- [[dot-test_five_openscap_all_passing()]] - `method` [EXTRACTED]
-- [[dot-test_four_with_openscap_running_but_failures()]] - `method` [EXTRACTED]
-- [[dot-test_three_baseline_no_openscap()]] - `method` [EXTRACTED]
-- [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
+- [[.test_baseline_three_when_openscap_not_run()]] - `method` [EXTRACTED]
+- [[.test_five_when_openscap_clean()]] - `method` [EXTRACTED]
+- [[.test_four_when_openscap_running_with_failures()]] - `method` [EXTRACTED]
+- [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run-as-rootsh
+#graphify/code #graphify/EXTRACTED #community/Community_67

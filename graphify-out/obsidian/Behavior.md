@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
+source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
 type: "document"
-community: "DelegationManager"
-location: "L22"
+community: "Community 826"
+location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/Community_826
 ---
 
 # Behavior
 
 ## Connections
-- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
+- [[apply-patches.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DelegationManager
+#graphify/document #graphify/EXTRACTED #community/Community_826

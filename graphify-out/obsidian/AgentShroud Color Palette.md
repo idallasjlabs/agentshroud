@@ -1,12 +1,12 @@
 ---
 source_file: "branding/colors/palette.md"
 type: "document"
-community: "SSH Configuration Guide"
+community: "Community 395"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Configuration_Guide
+  - community/Community_395
 ---
 
 # AgentShroud Color Palette
@@ -18,7 +18,7 @@ tags:
 - [[Primary Colors]] - `contains` [EXTRACTED]
 - [[Secondary Colors]] - `contains` [EXTRACTED]
 - [[Semantic Colors]] - `contains` [EXTRACTED]
-- [[Usage Guidelines_2]] - `contains` [EXTRACTED]
+- [[Usage Guidelines_1]] - `contains` [EXTRACTED]
 - [[palette]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Configuration_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_395

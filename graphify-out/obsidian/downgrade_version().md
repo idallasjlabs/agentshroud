@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/ingest_api/version_routes.py"
 type: "code"
-community: "upgrade"
+community: "Community 66"
 location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/upgrade
+  - community/Community_66
 ---
 
 # downgrade_version()
 
 ## Connections
-- [[Any_68]] - `references` [EXTRACTED]
+- [[Any_10]] - `references` [EXTRACTED]
 - [[Downgrade to a previous version. Requires approval_id unless dry_run.]] - `rationale_for` [EXTRACTED]
 - [[VersionRequest]] - `references` [EXTRACTED]
 - [[downgrade()]] - `calls` [EXTRACTED]
-- [[version_routes.py_2]] - `contains` [EXTRACTED]
+- [[version_routes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/upgrade
+#graphify/code #graphify/EXTRACTED #community/Community_66

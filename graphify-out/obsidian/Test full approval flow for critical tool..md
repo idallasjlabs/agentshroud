@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "ContextSegment"
+community: "Community 30"
 location: "L148"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/Community_30
 ---
 
 # Test full approval flow for critical tool.
 
 ## Connections
-- [[dot-test_critical_tool_approval_flow()]] - `rationale_for` [EXTRACTED]
+- [[.test_critical_tool_approval_flow()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextSegment
+#graphify/rationale #graphify/EXTRACTED #community/Community_30

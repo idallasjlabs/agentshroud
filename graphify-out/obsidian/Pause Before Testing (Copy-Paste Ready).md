@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-ps/SKILL.md"
+source_file: ".agents/agents/i-ps.md"
 type: "document"
-community: "TestSSRFDetection (2)"
-location: "L79"
+community: "Community 921"
+location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSSRFDetection_2
+  - community/Community_921
 ---
 
 # Pause Before Testing (Copy-Paste Ready)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[8. Service Control Commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSSRFDetection_2
+#graphify/document #graphify/EXTRACTED #community/Community_921

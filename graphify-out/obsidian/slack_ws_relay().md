@@ -1,21 +1,19 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "_is_op_reference_allowed"
+community: "Community 6"
 location: "L4758"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_is_op_reference_allowed
+  - community/Community_6
 ---
 
 # slack_ws_relay()
 
 ## Connections
-- [[WebSocket relay for Slack Socket Mode inbound traffic. Bot connects here…]] - `rationale_for` [EXTRACTED]
-- [[_bot_to_upstream()]] - `contains` [EXTRACTED]
-- [[_upstream_to_bot()]] - `contains` [EXTRACTED]
-- [[ingest_apimain.py]] - `contains` [EXTRACTED]
-- [[websocket_2]] - `references` [EXTRACTED]
+- [[WebSocket_2]] - `references` [EXTRACTED]
+- [[WebSocket relay for Slack Socket Mode inbound traffic.      Bot connects here (w]] - `rationale_for` [EXTRACTED]
+- [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed
+#graphify/code #graphify/EXTRACTED #community/Community_6

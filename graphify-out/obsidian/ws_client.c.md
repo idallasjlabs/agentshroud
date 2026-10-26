@@ -1,19 +1,21 @@
 ---
 source_file: "firmware/voice-terminal/main/ws_client.c"
 type: "code"
-community: "TestMetadataGuard"
+community: "Community 358"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMetadataGuard
+  - community/Community_358
 ---
 
 # ws_client.c
 
 ## Connections
+- [[String]] - `imports` [EXTRACTED]
 - [[_on_event()]] - `contains` [EXTRACTED]
 - [[remote_log.h]] - `imports` [EXTRACTED]
+- [[ws_client.c]] - `imports` [EXTRACTED]
 - [[ws_client_connected()]] - `contains` [EXTRACTED]
 - [[ws_client_create()]] - `contains` [EXTRACTED]
 - [[ws_client_destroy()]] - `contains` [EXTRACTED]
@@ -25,4 +27,4 @@ tags:
 - [[ws_client_send_pcm()]] - `contains` [EXTRACTED]
 - [[ws_client_send_stop()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMetadataGuard
+#graphify/code #graphify/EXTRACTED #community/Community_358

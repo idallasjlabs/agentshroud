@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-14.md"
 type: "rationale"
-community: "format_upstream_cve_alert()"
+community: "Community 555"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/format_upstream_cve_alert
+  - community/Community_555
 ---
 
 # OpenClaw BLOCKED — node:sqlite NUL Truncation
@@ -15,4 +15,4 @@ tags:
 - [[Sunday Upgrade 2026-09-14 (dev)]] - `references` [EXTRACTED]
 - [[Voice-Gateway Bookworm Rebase Measured And Reverted]] - `cites` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/format_upstream_cve_alert
+#graphify/rationale #graphify/EXTRACTED #community/Community_555

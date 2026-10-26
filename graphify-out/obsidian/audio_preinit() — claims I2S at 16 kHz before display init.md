@@ -1,14 +1,14 @@
 ---
 source_file: "firmware/voice-terminal/main/audio.c"
 type: "code"
-community: "test_playback_state/stubs/esp_log.h"
+community: "Community 1760"
 location: "line 41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_playback_state/stubs/esp_logh
+  - community/Community_1760
 ---
 
 # audio_preinit() — claims I2S at 16 kHz before display init
 
-#graphify/code #graphify/EXTRACTED #community/test_playback_state/stubs/esp_logh
+#graphify/code #graphify/EXTRACTED #community/Community_1760

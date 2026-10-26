@@ -1,11 +1,11 @@
 ---
 source_file: "branding/taglines.json"
 type: "document"
-community: "Recommendation"
+community: "Community 547"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Recommendation
+  - community/Community_547
 ---
 
 # AgentShroud Taglines List
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Tagline]] - `references` [EXTRACTED]
 - [[test_openclaw_photo.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Recommendation
+#graphify/document #graphify/EXTRACTED #community/Community_547

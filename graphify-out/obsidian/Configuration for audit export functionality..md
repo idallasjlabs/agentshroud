@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "rationale"
-community: "AuditExportConfig"
+community: "Community 254"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AuditExportConfig
+  - community/Community_254
 ---
 
 # Configuration for audit export functionality.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AuditExportConfig_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AuditExportConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_254

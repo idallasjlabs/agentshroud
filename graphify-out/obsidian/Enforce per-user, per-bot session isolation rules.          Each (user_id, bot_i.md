@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "Community 72"
 location: "L1040"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Community_72
 ---
 
 # Enforce per-user, per-bot session isolation rules.          Each (user_id, bot_i
 
 ## Connections
-- [[dot-_enforce_session_isolation()]] - `rationale_for` [EXTRACTED]
+- [[._enforce_session_isolation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

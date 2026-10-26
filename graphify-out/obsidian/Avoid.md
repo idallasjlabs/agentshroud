@@ -1,17 +1,17 @@
 ---
-source_file: "CLAUDE.md"
+source_file: ".github/copilot-instructions.md"
 type: "document"
-community: "Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary) (2)"
-location: "L485"
+community: "Community 2143"
+location: "L226"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary_2
+  - community/Community_2143
 ---
 
 # Avoid
 
 ## Connections
-- [[8) OUTPUT FORMATTING CONTRACT]] - `contains` [EXTRACTED]
+- [[6. Working Style Contract]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary_2
+#graphify/document #graphify/EXTRACTED #community/Community_2143

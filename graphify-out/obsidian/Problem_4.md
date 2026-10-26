@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/03-session-isolation.md"
+source_file: "docs/planning/redteam/01-enforce-by-default.md"
 type: "document"
-community: "telegram_proxy.py"
+community: "Community 721"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/Community_721
 ---
 
 # Problem
 
 ## Connections
-- [[Implement per-user session isolation using Telegram user ID]] - `contains` [EXTRACTED]
+- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/document #graphify/EXTRACTED #community/Community_721

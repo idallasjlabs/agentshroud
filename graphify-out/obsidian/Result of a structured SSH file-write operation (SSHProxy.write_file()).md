@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "rationale"
-community: "SSHProxy"
+community: "Community 7"
 location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/Community_7
 ---
 
 # Result of a structured SSH file-write operation (SSHProxy.write_file())
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSHWriteResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SSHProxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

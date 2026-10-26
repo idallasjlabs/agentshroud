@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "ApprovalQueueConfig (3)"
+community: "Community 223"
 location: "L265"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/Community_223
 ---
 
 # Persist a runtime group membership addition.
@@ -15,4 +15,4 @@ tags:
 - [[persist_group_member_add()]] - `rationale_for` [EXTRACTED]
 - [[persist_group_member_remove()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_223

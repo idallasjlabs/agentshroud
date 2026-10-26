@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_consent_framework.py"
 type: "code"
-community: "SecureBrowser (3)"
+community: "Community 152"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_3
+  - community/Community_152
 ---
 
 # test_consent_framework.py
@@ -20,4 +20,4 @@ tags:
 - [[consent_framework.py]] - `imports_from` [EXTRACTED]
 - [[framework()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_3
+#graphify/code #graphify/EXTRACTED #community/Community_152

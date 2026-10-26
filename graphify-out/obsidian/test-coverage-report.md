@@ -1,12 +1,12 @@
 ---
 source_file: "docs/testing/test-coverage-report.md"
 type: "document"
-community: "test_scorecard_integrity.py"
+community: "Community 173"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_scorecard_integritypy
+  - community/Community_173
 ---
 
 # test-coverage-report.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Test Coverage Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_scorecard_integritypy
+#graphify/document #graphify/EXTRACTED #community/Community_173

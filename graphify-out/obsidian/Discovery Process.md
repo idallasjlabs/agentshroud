@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/ICLOUD-SERVICES-SETUP.md"
 type: "document"
-community: "TestOutboundClassifierHelpers"
+community: "Community 349"
 location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundClassifierHelpers
+  - community/Community_349
 ---
 
 # Discovery Process
@@ -15,4 +15,4 @@ tags:
 - [[📅 iCloud Calendar (CalDAV)]] - `contains` [EXTRACTED]
 - [[📞 iCloud Contacts (CardDAV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundClassifierHelpers
+#graphify/document #graphify/EXTRACTED #community/Community_349

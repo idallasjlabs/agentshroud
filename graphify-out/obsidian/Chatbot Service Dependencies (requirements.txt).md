@@ -1,13 +1,13 @@
 ---
 source_file: "chatbot/requirements.txt"
 type: "code"
-community: "docker-compose.secure.yml — Proxy Mode Deployment"
+community: "Community 1656"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docker-composesecureyml__Proxy_Mode_Deployment
+  - community/Community_1656
 ---
 
 # Chatbot Service Dependencies (requirements.txt)
 
-#graphify/code #graphify/EXTRACTED #community/docker-composesecureyml__Proxy_Mode_Deployment
+#graphify/code #graphify/EXTRACTED #community/Community_1656

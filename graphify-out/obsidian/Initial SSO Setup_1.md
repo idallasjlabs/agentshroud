@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE) (2)"
-location: "L169"
+community: "Community 308"
+location: "L170"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_2
+  - community/Community_308
 ---
 
 # Initial SSO Setup
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AWS SSO Configuration_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_2
+#graphify/document #graphify/EXTRACTED #community/Community_308

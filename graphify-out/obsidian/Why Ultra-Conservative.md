@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "TestRewriteRequestHeaders"
+community: "Community 806"
 location: "L184"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestRewriteRequestHeaders
+  - community/Community_806
 ---
 
 # Why Ultra-Conservative?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Credential Management - 1Password Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestRewriteRequestHeaders
+#graphify/document #graphify/EXTRACTED #community/Community_806

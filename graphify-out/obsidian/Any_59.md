@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/security/resource_guard.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "._make_proxy()"
-location: "L102"
+community: "Community 143"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_143
 ---
 
 # Any
 
 ## Connections
-- [[dot-_alert_high_usage()]] - `references` [EXTRACTED]
-- [[dot-_get_disk_io_stats()]] - `references` [EXTRACTED]
-- [[dot-add_alert_callback()_2]] - `references` [EXTRACTED]
-- [[dot-get_usage_stats()]] - `references` [EXTRACTED]
+- [[.add_conversation_message()]] - `references` [EXTRACTED]
+- [[.from_dict()_11]] - `references` [EXTRACTED]
+- [[.get_session_context()]] - `references` [EXTRACTED]
+- [[.reanchor_system_prompt()]] - `references` [EXTRACTED]
+- [[.to_dict()_12]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_143

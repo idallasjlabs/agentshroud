@@ -1,34 +1,25 @@
 ---
-source_file: "gateway/tools/multi_host_test.py"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "🎯 High-Value Features (Justify the Effort)"
-location: "L312"
+community: "Community 160"
+location: "L431"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_High-Value_Features_Justify_the_Effort
+  - community/Community_160
 ---
 
 # main()
 
 ## Connections
-- [[dot-render_summary()]] - `calls` [EXTRACTED]
-- [[dot-test_dry_run_default_command()]] - `calls` [EXTRACTED]
-- [[dot-test_dry_run_touches_nothing()]] - `calls` [EXTRACTED]
-- [[dot-test_main_all_pass_with_injected_runner()]] - `calls` [EXTRACTED]
-- [[dot-test_main_default_hosts()]] - `calls` [EXTRACTED]
-- [[dot-test_main_failure_nonzero_exit()]] - `calls` [EXTRACTED]
-- [[dot-test_main_unreachable_nonzero_exit()]] - `calls` [EXTRACTED]
-- [[CLI entry point. Returns the aggregated exit code (0 = all passed).]] - `rationale_for` [EXTRACTED]
-- [[HostRunner]] - `references` [EXTRACTED]
-- [[_dry_run_report()]] - `calls` [EXTRACTED]
-- [[_resolve_command()]] - `calls` [EXTRACTED]
-- [[build_parser()]] - `calls` [EXTRACTED]
-- [[multi-host-test.sh]] - `calls` [EXTRACTED]
-- [[multi_host_test.py]] - `contains` [EXTRACTED]
-- [[parse_hosts()]] - `calls` [EXTRACTED]
-- [[run_multi_host()]] - `calls` [EXTRACTED]
-- [[ssh_runner()]] - `calls` [EXTRACTED]
-- [[test_multi_host_test.py]] - `imports` [EXTRACTED]
+- [[._take_screenshot()_3]] - `calls` [EXTRACTED]
+- [[.click()_3]] - `calls` [EXTRACTED]
+- [[.close()_20]] - `calls` [EXTRACTED]
+- [[.extract()_3]] - `calls` [EXTRACTED]
+- [[.fill_field()_3]] - `calls` [EXTRACTED]
+- [[.navigate()_3]] - `calls` [EXTRACTED]
+- [[CLI interface for SecureBrowser_3]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_3]] - `calls` [EXTRACTED]
+- [[browse.py_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_High-Value_Features_Justify_the_Effort
+#graphify/code #graphify/EXTRACTED #community/Community_160

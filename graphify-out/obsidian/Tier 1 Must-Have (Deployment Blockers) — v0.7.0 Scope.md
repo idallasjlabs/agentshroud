@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/v0.7.0-remediation-plan.md"
 type: "document"
-community: "Phase 3: MITIGATE (Rollback First!)"
+community: "Community 422"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First
+  - community/Community_422
 ---
 
 # Tier 1: Must-Have (Deployment Blockers) — v0.7.0 Scope
@@ -20,4 +20,4 @@ tags:
 - [[Sprint 5 Separation of Privilege (R-06, R-07)]] - `contains` [EXTRACTED]
 - [[Sprint 6 Credential Isolation (R-10, R-11, R-12)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First
+#graphify/document #graphify/EXTRACTED #community/Community_422

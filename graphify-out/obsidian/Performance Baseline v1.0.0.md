@@ -1,13 +1,13 @@
 ---
 source_file: ".benchmarks/baseline-v1.0.0.json"
 type: "document"
-community: "AgentShroud GitHub Social Preview Image"
+community: "Community 1623"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_GitHub_Social_Preview_Image
+  - community/Community_1623
 ---
 
 # Performance Baseline v1.0.0
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_GitHub_Social_Preview_Image
+#graphify/document #graphify/EXTRACTED #community/Community_1623

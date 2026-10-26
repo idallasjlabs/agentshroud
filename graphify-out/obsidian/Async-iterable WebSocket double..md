@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "rationale"
-community: "1. GitHub MCP Authentication Reset (2)"
+community: "Community 488"
 location: "L611"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/1_GitHub_MCP_Authentication_Reset_2
+  - community/Community_488
 ---
 
 # Async-iterable WebSocket double.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeWS]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_488

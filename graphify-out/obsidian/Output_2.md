@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/agentshroud-redteam/SKILL.md"
+source_file: ".agents/skills/apollo/SKILL.md"
 type: "document"
-community: "Test-Driven Development README"
-location: "L354"
+community: "Community 1379"
+location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_README
+  - community/Community_1379
 ---
 
 # Output
 
 ## Connections
-- [[AgentShroud Red Team Adversarial Tester]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README
+#graphify/document #graphify/EXTRACTED #community/Community_1379

@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "Community 223"
 location: "L292"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/Community_223
 ---
 
 # persist_group_collab_mode()
 
 ## Connections
-- [[dot-_handle_setmode_command()]] - `calls` [EXTRACTED]
+- [[._handle_setmode_command()]] - `calls` [EXTRACTED]
 - [[Persist a runtime collab mode change for a group.]] - `rationale_for` [EXTRACTED]
 - [[_load_overrides()]] - `calls` [EXTRACTED]
 - [[_save_overrides()]] - `calls` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
+- [[router.py_1]] - `imports` [EXTRACTED]
 - [[set_group_mode()]] - `calls` [EXTRACTED]
-- [[socrouter.py]] - `imports` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/Community_223

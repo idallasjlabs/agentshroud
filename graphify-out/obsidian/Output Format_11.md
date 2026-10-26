@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-qa/SKILL.md"
+source_file: ".agents/agents/sf.md"
 type: "document"
-community: "Dockerfile — Bot (OpenClaw)"
-location: "L27"
+community: "Community 1445"
+location: "L131"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dockerfile__Bot_OpenClaw
+  - community/Community_1445
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Quality Assurance (QA)]] - `contains` [EXTRACTED]
+- [[Salesforce CLI (`sf`) Agent]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/Community_1445

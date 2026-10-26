@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cr/README.md"
+source_file: "docker/config/hermes/skills/i-mac/README.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM)"
+community: "Community 1212"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM
+  - community/Community_1212
 ---
 
 # Usage
 
 ## Connections
-- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
+- [[macOS System Administrator (MAC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM
+#graphify/document #graphify/EXTRACTED #community/Community_1212

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "MemoryIntegrityMonitor"
+community: "Community 16"
 location: "L84"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/Community_16
 ---
 
 # Test file hash computation.
 
 ## Connections
-- [[dot-test_hash_computation()]] - `rationale_for` [EXTRACTED]
+- [[.test_hash_computation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/Community_16

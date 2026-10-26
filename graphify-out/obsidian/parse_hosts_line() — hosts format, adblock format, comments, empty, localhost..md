@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "rationale"
-community: "Kill Switch Procedure"
+community: "Community 737"
 location: "L14"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Kill_Switch_Procedure
+  - community/Community_737
 ---
 
 # parse_hosts_line() — hosts format, adblock format, comments, empty, localhost.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestParseHostsLine]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Kill_Switch_Procedure
+#graphify/rationale #graphify/EXTRACTED #community/Community_737

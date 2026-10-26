@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "Community 223"
 location: "L428"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/Community_223
 ---
 
 # persist_approved_collaborator()
 
 ## Connections
-- [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
+- [[._filter_inbound_updates()]] - `calls` [EXTRACTED]
 - [[Append a collaborator UID to the persistent store (idempotent, file-locked).]] - `rationale_for` [EXTRACTED]
 - [[_ensure_collab_dir()]] - `calls` [EXTRACTED]
 - [[_load_collab_store()]] - `calls` [EXTRACTED]
 - [[_write_collab_store()]] - `calls` [EXTRACTED]
-- [[add_collaborator()]] - `calls` [EXTRACTED]
+- [[add_collaborator()_1]] - `calls` [EXTRACTED]
 - [[load_persisted_collaborators()]] - `calls` [EXTRACTED]
 - [[rbac_config.py]] - `contains` [EXTRACTED]
-- [[socrouter.py]] - `imports` [EXTRACTED]
+- [[router.py_1]] - `imports` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/Community_223

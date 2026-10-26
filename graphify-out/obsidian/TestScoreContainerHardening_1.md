@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/tests/test_scanner_integration.py"
+source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "parse_clamscan_output"
-location: "L702"
+community: "Community 1361"
+location: "L306"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_clamscan_output
+  - community/Community_1361
 ---
 
 # TestScoreContainerHardening
 
 ## Connections
-- [[dot-test_baseline_three_when_openscap_not_run()]] - `method` [EXTRACTED]
-- [[dot-test_five_when_openscap_clean()]] - `method` [EXTRACTED]
-- [[dot-test_four_when_openscap_running_with_failures()]] - `method` [EXTRACTED]
-- [[test_scanner_integration.py]] - `contains` [EXTRACTED]
+- [[.test_five_openscap_all_passing()]] - `method` [EXTRACTED]
+- [[.test_four_with_openscap_running_but_failures()]] - `method` [EXTRACTED]
+- [[.test_three_baseline_no_openscap()]] - `method` [EXTRACTED]
+- [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output
+#graphify/code #graphify/EXTRACTED #community/Community_1361

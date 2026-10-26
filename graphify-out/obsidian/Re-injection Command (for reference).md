@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-session-prompt/SKILL.md"
+source_file: ".agents/agents/i-session-prompt.md"
 type: "document"
-community: "Quickstart"
-location: "L150"
+community: "Community 1422"
+location: "L153"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quickstart
+  - community/Community_1422
 ---
 
 # Re-injection Command (for reference)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Session Prompt Generator (SESSION-PROMPT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quickstart
+#graphify/document #graphify/EXTRACTED #community/Community_1422

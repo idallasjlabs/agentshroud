@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-ab/SKILL.md"
+source_file: ".agents/agents/i-ab.md"
 type: "document"
-community: "main"
-location: "L87"
+community: "Community 1275"
+location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/main
+  - community/Community_1275
 ---
 
 # Step 4 — Triage each finding
@@ -17,4 +17,4 @@ tags:
 - [[Check C — Still broken at HEAD (not self-healed)]] - `contains` [EXTRACTED]
 - [[Skill Audit Branch (AB) — Merge Regression Detection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/main
+#graphify/document #graphify/EXTRACTED #community/Community_1275

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "TestPromptProtection"
+community: "Community 348"
 location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestPromptProtection
+  - community/Community_348
 ---
 
 # 🚨 Security Notes
@@ -17,4 +17,4 @@ tags:
 - [[Credential Storage]] - `contains` [EXTRACTED]
 - [[Two-Factor Authentication]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestPromptProtection
+#graphify/document #graphify/EXTRACTED #community/Community_348

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
+source_file: "docker/config/hermes/skills/i-daedalus/README.md"
 type: "document"
-community: "What You Must Do When Invoked (2)"
+community: "Community 1208"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked_2
+  - community/Community_1208
 ---
 
 # Usage
 
 ## Connections
-- [[graphify_2]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked_2
+#graphify/document #graphify/EXTRACTED #community/Community_1208

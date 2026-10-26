@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/spacy.md"
+source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "document"
-community: "BROWSER_FETCH_SKILL.md"
-location: "L27"
+community: "Community 1015"
+location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BROWSER_FETCH_SKILLmd
+  - community/Community_1015
 ---
 
 # Where Used
 
 ## Connections
-- [[spaCy]] - `contains` [EXTRACTED]
+- [[Presidio Analyzer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BROWSER_FETCH_SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Community_1015

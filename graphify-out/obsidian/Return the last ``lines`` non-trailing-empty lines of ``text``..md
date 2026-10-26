@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "rationale"
-community: "Migration Path (SSH → Distributed Node)"
+community: "Community 1073"
 location: "L108"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Migration_Path_SSH__Distributed_Node
+  - community/Community_1073
 ---
 
 # Return the last ``lines`` non-trailing-empty lines of ``text``.
 
 ## Connections
-- [[tail()]] - `rationale_for` [EXTRACTED]
+- [[tail()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Migration_Path_SSH__Distributed_Node
+#graphify/rationale #graphify/EXTRACTED #community/Community_1073

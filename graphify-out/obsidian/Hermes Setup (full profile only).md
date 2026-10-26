@@ -1,12 +1,12 @@
 ---
 source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "test_main_endpoints.py (2)"
+community: "Community 258"
 location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_main_endpointspy_2
+  - community/Community_258
 ---
 
 # Hermes Setup (full profile only)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Launch the Stack]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_main_endpointspy_2
+#graphify/document #graphify/EXTRACTED #community/Community_258

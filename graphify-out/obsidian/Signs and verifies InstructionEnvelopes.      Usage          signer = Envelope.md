@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "rationale"
-community: "KeyVaultConfig"
+community: "Community 24"
 location: "L42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/Community_24
 ---
 
 # Signs and verifies InstructionEnvelopes.      Usage::          signer = Envelope
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EnvelopeSigner]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_24

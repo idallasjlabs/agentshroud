@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "auth.py (2)"
+community: "Community 807"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy_2
+  - community/Community_807
 ---
 
 # How to retrieve a credential at runtime
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🏗️ Credential Architecture — How Secrets Are Retrieved]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy_2
+#graphify/document #graphify/EXTRACTED #community/Community_807

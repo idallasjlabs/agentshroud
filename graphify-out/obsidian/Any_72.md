@@ -1,17 +1,23 @@
 ---
-source_file: "voice_gateway/tts.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "AgentShroud Security Verification (13-check driver)"
-location: "L39"
+community: "Community 6"
+location: "L726"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/AgentShroud_Security_Verification_13-check_driver
+  - graphify/INFERRED
+  - community/Community_6
 ---
 
 # Any
 
 ## Connections
-- [[_get_pipeline()]] - `references` [EXTRACTED]
+- [[._handler()]] - `references` [EXTRACTED]
+- [[Action_1]] - `uses` [INFERRED]
+- [[PermissionResult]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Verification_13-check_driver
+#graphify/code #graphify/INFERRED #community/Community_6

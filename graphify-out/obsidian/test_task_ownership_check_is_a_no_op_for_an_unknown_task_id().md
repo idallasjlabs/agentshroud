@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "hermes/skills/i-bs/README.md"
+community: "Community 111"
 location: "L191"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/Community_111
 ---
 
 # test_task_ownership_check_is_a_no_op_for_an_unknown_task_id()
 
 ## Connections
 - [[A task_id AgentShroud never saw created (e.g. the very first GetTask     against]] - `rationale_for` [EXTRACTED]
-- [[A2APolicyEngine]] - `references` [EXTRACTED]
+- [[A2APolicyEngine_2]] - `references` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/code #graphify/EXTRACTED #community/Community_111

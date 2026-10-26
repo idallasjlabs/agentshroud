@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
+source_file: ".agents/skills/athena/SKILL.md"
 type: "document"
-community: "FR3: System Integrity"
+community: "Community 1568"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/FR3_System_Integrity
+  - community/Community_1568
 ---
 
 # Athena — Knowledge Distiller
 
 ## Connections
-- [[Input Requirements_15]] - `contains` [EXTRACTED]
-- [[Output Format_30]] - `contains` [EXTRACTED]
-- [[Persona_11]] - `contains` [EXTRACTED]
-- [[Role_87]] - `contains` [EXTRACTED]
-- [[openclawskillsi-athenaSKILL]] - `contains` [EXTRACTED]
+- [[Input Requirements_11]] - `contains` [EXTRACTED]
+- [[Output Format_14]] - `contains` [EXTRACTED]
+- [[Persona_8]] - `contains` [EXTRACTED]
+- [[Role_40]] - `contains` [EXTRACTED]
+- [[SKILL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FR3_System_Integrity
+#graphify/document #graphify/EXTRACTED #community/Community_1568

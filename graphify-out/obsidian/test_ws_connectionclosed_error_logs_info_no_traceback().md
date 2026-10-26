@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "main.rs"
+community: "Community 46"
 location: "L1727"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/Community_46
 ---
 
 # test_ws_connectionclosed_error_logs_info_no_traceback()
@@ -16,4 +16,4 @@ tags:
 - [[_run_disconnect_test()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/Community_46

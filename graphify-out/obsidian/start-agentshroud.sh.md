@@ -1,24 +1,17 @@
 ---
 source_file: "docker/scripts/start-agentshroud.sh"
 type: "code"
-community: "Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)"
+community: "Community 997"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On
+  - community/Community_997
 ---
 
 # start-agentshroud.sh
 
 ## Connections
-- [[Env-split cron enabledisable pass (dev enables, prod disables)]] - `references` [EXTRACTED]
-- [[OpenClawHermesMCP sandbox container reaper]] - `references` [EXTRACTED]
-- [[Pending OpenClaw migration repair (openclaw doctor --fix) before gateway start]] - `references` [EXTRACTED]
-- [[Rule Container Shell Spawned]] - `references` [EXTRACTED]
-- [[TestIsOpReferenceAllowed]] - `references` [EXTRACTED]
-- [[_check_clamd()]] - `shares_data_with` [INFERRED]
-- [[_check_wazuh_agent()]] - `shares_data_with` [INFERRED]
 - [[_container_age_seconds()]] - `defines` [EXTRACTED]
 - [[_dns_warmup_probe()]] - `defines` [EXTRACTED]
 - [[_enforce_sandbox_cap()]] - `defines` [EXTRACTED]
@@ -32,13 +25,11 @@ tags:
 - [[_rename_to_meaningful()]] - `defines` [EXTRACTED]
 - [[_slack_channel_id()]] - `defines` [EXTRACTED]
 - [[_slack_send()]] - `defines` [EXTRACTED]
-- [[_telegram_bot_token()]] - `defines` [EXTRACTED]
-- [[_telegram_get_me_ready()]] - `defines` [EXTRACTED]
-- [[_telegram_send()]] - `defines` [EXTRACTED]
-- [[_telegram_send_photo()]] - `defines` [EXTRACTED]
-- [[dockerscriptsinit-openclaw-config.sh (baked into OpenClaw image; seeds sandbox mode, runs doctor --fix)]] - `calls` [EXTRACTED]
-- [[gateway-start.sh]] - `semantically_similar_to` [INFERRED]
+- [[_telegram_bot_token()_1]] - `defines` [EXTRACTED]
+- [[_telegram_get_me_ready()_1]] - `defines` [EXTRACTED]
+- [[_telegram_send()_1]] - `defines` [EXTRACTED]
+- [[_telegram_send_photo()_1]] - `defines` [EXTRACTED]
 - [[op_proxy_read_with_retry()]] - `defines` [EXTRACTED]
 - [[start-agentshroud.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On
+#graphify/code #graphify/EXTRACTED #community/Community_997

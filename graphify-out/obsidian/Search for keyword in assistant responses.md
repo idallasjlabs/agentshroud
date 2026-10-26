@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/session-logs/SKILL.md"
 type: "document"
-community: "EgressFilterConfig (2) (3)"
+community: "Community 273"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2_3
+  - community/Community_273
 ---
 
 # Search for keyword in assistant responses
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Queries]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilterConfig_2_3
+#graphify/document #graphify/EXTRACTED #community/Community_273

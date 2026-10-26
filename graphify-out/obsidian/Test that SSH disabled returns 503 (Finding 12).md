@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "Community 7"
 location: "L309"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # Test that SSH disabled returns 503 (Finding #12)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSSHDisabledEndpoint]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

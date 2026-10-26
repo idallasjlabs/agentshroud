@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/05 - Dependencies/spacy.md"
+source_file: ".agents/skills/i-cr/README.md"
 type: "document"
-community: "BROWSER_FETCH_SKILL.md"
-location: "L16"
+community: "Community 544"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BROWSER_FETCH_SKILLmd
+  - community/Community_544
 ---
 
 # Purpose
 
 ## Connections
-- [[spaCy]] - `contains` [EXTRACTED]
+- [[Code Review (CR)]] - `contains` [EXTRACTED]
+- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BROWSER_FETCH_SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Community_544

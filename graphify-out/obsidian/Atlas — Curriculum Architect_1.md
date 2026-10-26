@@ -1,27 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
+source_file: ".agents/skills/atlas/README.md"
 type: "document"
-community: "Skill: Data Validation (DATA-VAL) (3)"
-location: "L6"
+community: "Community 2065"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Data_Validation_DATA-VAL_3
+  - community/Community_2065
 ---
 
 # Atlas — Curriculum Architect
 
 ## Connections
-- [[Input Requirements_6]] - `contains` [EXTRACTED]
-- [[OKE Channel — CPA Exam Context_1]] - `contains` [EXTRACTED]
-- [[Output Format_9]] - `contains` [EXTRACTED]
-- [[Persona_4]] - `contains` [EXTRACTED]
-- [[Quality Checklist_4]] - `contains` [EXTRACTED]
-- [[Role_35]] - `contains` [EXTRACTED]
-- [[System Prompt_4]] - `contains` [EXTRACTED]
-- [[User Prompt Template]] - `contains` [EXTRACTED]
-- [[User Prompt Template — OKE Channel]] - `contains` [EXTRACTED]
-- [[hermesskillsi-atlasSKILL]] - `contains` [EXTRACTED]
-- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_2]] - `contains` [EXTRACTED]
+- [[README_2]] - `contains` [EXTRACTED]
+- [[Related Skills_5]] - `contains` [EXTRACTED]
+- [[Usage_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL_3
+#graphify/document #graphify/EXTRACTED #community/Community_2065

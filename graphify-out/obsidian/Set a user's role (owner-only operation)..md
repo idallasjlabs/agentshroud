@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "MiddlewareManager (2)"
+community: "Community 6"
 location: "L266"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/Community_6
 ---
 
 # Set a user's role (owner-only operation).
 
 ## Connections
-- [[dot-set_user_role()_1]] - `rationale_for` [EXTRACTED]
+- [[.set_user_role()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_6

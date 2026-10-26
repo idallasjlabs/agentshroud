@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/export-bot-conversations.py"
 type: "code"
-community: "1. Accomplishments This Phase"
+community: "Community 777"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/1_Accomplishments_This_Phase
+  - community/Community_777
 ---
 
 # _parse_since()
@@ -17,6 +17,6 @@ tags:
 - [[_parse_since()_2]] - `semantically_similar_to` [INFERRED]
 - [[datetime_6]] - `references` [EXTRACTED]
 - [[export-bot-conversations.py]] - `contains` [EXTRACTED]
-- [[main()_28]] - `calls` [EXTRACTED]
+- [[main()_18]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/1_Accomplishments_This_Phase
+#graphify/code #graphify/EXTRACTED #community/Community_777

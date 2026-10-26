@@ -1,24 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Web & Dashboard/api.py.md"
 type: "document"
-community: "Hermes Dev Workflow (HDEV) Skill"
-location: "L10"
+community: "Community 1007"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Dev_Workflow_HDEV_Skill
+  - community/Community_1007
 ---
 
-# api.py
+# api.py.md
 
 ## Connections
-- [[Key Endpoints]] - `contains` [EXTRACTED]
-- [[Purpose]] - `contains` [EXTRACTED]
-- [[Pydantic Models]] - `contains` [EXTRACTED]
-- [[Related Notes]] - `contains` [EXTRACTED]
-- [[Responsibilities]] - `contains` [EXTRACTED]
-- [[Runtime Engine Integration]] - `contains` [EXTRACTED]
-- [[Security]] - `contains` [EXTRACTED]
-- [[api.py]] - `contains` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Dev_Workflow_HDEV_Skill
+#graphify/document #graphify/EXTRACTED #community/Community_1007

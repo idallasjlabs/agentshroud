@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate-job-schedule.py"
 type: "code"
-community: "test_apply_patches.js"
+community: "Community 989"
 location: "L139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_apply_patchesjs
+  - community/Community_989
 ---
 
 # render_html()
@@ -15,6 +15,6 @@ tags:
 - [[describe_cron()]] - `calls` [EXTRACTED]
 - [[fmt_ts()]] - `calls` [EXTRACTED]
 - [[generate-job-schedule.py]] - `contains` [EXTRACTED]
-- [[main()_36]] - `calls` [EXTRACTED]
+- [[main()_22]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_apply_patchesjs
+#graphify/code #graphify/EXTRACTED #community/Community_989

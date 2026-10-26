@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/render_md_email.py"
 type: "code"
-community: "Architecture"
+community: "Community 522"
 location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Architecture
+  - community/Community_522
 ---
 
 # _inline()
@@ -15,7 +15,7 @@ tags:
 - [[Apply inline Markdown spans to plain text (no recursive nesting).]] - `rationale_for` [EXTRACTED]
 - [[_esc()]] - `calls` [EXTRACTED]
 - [[_render_table()]] - `calls` [EXTRACTED]
-- [[render()_2]] - `calls` [EXTRACTED]
+- [[render()]] - `calls` [EXTRACTED]
 - [[render_md_email.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Architecture
+#graphify/code #graphify/EXTRACTED #community/Community_522

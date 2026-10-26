@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "rationale"
-community: "test_soc_services_coverage.py"
+community: "Community 80"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_services_coveragepy
+  - community/Community_80
 ---
 
 # Build one Docker multiplexed-log frame (stdout).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_frame()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_services_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/Community_80

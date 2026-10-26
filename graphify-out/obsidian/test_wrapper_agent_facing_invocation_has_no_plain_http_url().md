@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "code"
-community: "AgentShroud v0.9.0"
+community: "Community 167"
 location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_v090
+  - community/Community_167
 ---
 
 # test_wrapper_agent_facing_invocation_has_no_plain_http_url()
@@ -16,4 +16,4 @@ tags:
 - [[_fenced_code_blocks()]] - `calls` [EXTRACTED]
 - [[test_bots_ssh_exec_wrapper.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_v090
+#graphify/code #graphify/EXTRACTED #community/Community_167

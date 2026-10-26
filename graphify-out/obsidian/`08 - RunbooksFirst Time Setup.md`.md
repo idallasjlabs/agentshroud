@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-sav/SKILL.md"
+source_file: ".agents/agents/sav.md"
 type: "document"
-community: "migrate-cve-registry-ghsa.py"
-location: "L321"
+community: "Community 297"
+location: "L323"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/migrate-cve-registry-ghsapy
+  - community/Community_297
 ---
 
 # `08 - Runbooks/First Time Setup.md`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[REQUIRED NOTES — PRODUCE EVERY ONE OF THESE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy
+#graphify/document #graphify/EXTRACTED #community/Community_297

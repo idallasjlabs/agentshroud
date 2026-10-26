@@ -1,13 +1,13 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "Favicon 32x32 (AgentShroud logo mark)"
+community: "Community 1607"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Favicon_32x32_AgentShroud_logo_mark
+  - community/Community_1607
 ---
 
 # MCP Server: xmind
 
-#graphify/code #graphify/EXTRACTED #community/Favicon_32x32_AgentShroud_logo_mark
+#graphify/code #graphify/EXTRACTED #community/Community_1607

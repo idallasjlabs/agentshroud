@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "._make_proxy()"
+community: "Community 5"
 location: "L199"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_5
 ---
 
 # Check if resource usage is allowed for an agent.          Args:             agen
 
 ## Connections
-- [[dot-check_resource()]] - `rationale_for` [EXTRACTED]
+- [[.check_resource()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_5

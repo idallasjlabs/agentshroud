@@ -1,19 +1,19 @@
 ---
 source_file: "docs/integrations/README.md"
 type: "document"
-community: "competitive-report-*.md dated reports"
+community: "Community 1262"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/competitive-report-md_dated_reports
+  - community/Community_1262
 ---
 
 # Integrations Documentation
 
 ## Connections
-- [[Current Status_2]] - `contains` [EXTRACTED]
-- [[Planned Documents_2]] - `contains` [EXTRACTED]
-- [[integrationsREADME]] - `contains` [EXTRACTED]
+- [[Current Status_4]] - `contains` [EXTRACTED]
+- [[Planned Documents_3]] - `contains` [EXTRACTED]
+- [[README_122]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/competitive-report-md_dated_reports
+#graphify/document #graphify/EXTRACTED #community/Community_1262

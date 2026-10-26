@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "rationale"
-community: "TestNewPatternsV080"
+community: "Community 702"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestNewPatternsV080
+  - community/Community_702
 ---
 
 # Glibc TLS Incompatibility (Trillian)
@@ -14,4 +14,4 @@ tags:
 - [[Glibc TLS Block Allocation Fix (Container Rebuild)]] - `conceptually_related_to` [INFERRED]
 - [[TELEGRAM_ISSUES]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestNewPatternsV080
+#graphify/rationale #graphify/EXTRACTED #community/Community_702

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/anthropic_openai_translator.py"
 type: "rationale"
-community: "Function Details (8)"
+community: "Community 360"
 location: "L90"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Function_Details_8
+  - community/Community_360
 ---
 
 # Flatten Anthropic system prompt (string or content-block list) to plain text.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_anthropic_system_to_openai()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Function_Details_8
+#graphify/rationale #graphify/EXTRACTED #community/Community_360

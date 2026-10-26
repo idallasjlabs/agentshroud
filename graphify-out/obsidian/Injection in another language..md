@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "ContextGuard"
+community: "Community 0"
 location: "L257"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/Community_0
 ---
 
 # Injection in another language.
 
 ## Connections
-- [[dot-test_multilingual_injection()]] - `rationale_for` [EXTRACTED]
+- [[.test_multilingual_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

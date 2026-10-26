@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "TestOutboundPipelineIntegration"
+community: "Community 21"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutboundPipelineIntegration
+  - community/Community_21
 ---
 
 # Egress policy for an agent or global default.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EgressPolicy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutboundPipelineIntegration
+#graphify/rationale #graphify/EXTRACTED #community/Community_21

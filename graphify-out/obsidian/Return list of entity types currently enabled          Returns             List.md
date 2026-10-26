@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "Community 84"
 location: "L402"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_84
 ---
 
 # Return list of entity types currently enabled          Returns:             List
 
 ## Connections
-- [[dot-get_supported_entities()]] - `rationale_for` [EXTRACTED]
+- [[.get_supported_entities()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_84

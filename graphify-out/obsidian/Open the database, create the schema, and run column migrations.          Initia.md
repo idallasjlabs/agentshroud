@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "rationale"
-community: "AlertDispatcher (5)"
+community: "Community 254"
 location: "L130"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_5
+  - community/Community_254
 ---
 
 # Open the database, create the schema, and run column migrations.          Initia
 
 ## Connections
-- [[dot-initialize()_2]] - `rationale_for` [EXTRACTED]
+- [[.initialize()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_5
+#graphify/rationale #graphify/EXTRACTED #community/Community_254

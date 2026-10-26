@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/legal/COMMUNICATION-TEMPLATES.md"
 type: "concept"
-community: "COMMUNICATION-TEMPLATES.md"
+community: "Community 1251"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/COMMUNICATION-TEMPLATESmd
+  - community/Community_1251
 ---
 
 # Option 4 — Documentation Footer Trademark Notice
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[COMMUNICATION-TEMPLATES]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/COMMUNICATION-TEMPLATESmd
+#graphify/concept #graphify/EXTRACTED #community/Community_1251

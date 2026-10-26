@@ -1,11 +1,11 @@
 ---
 source_file: "docs/runbooks/daily-operations.md"
 type: "concept"
-community: "_sync"
+community: "Community 654"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/_sync
+  - community/Community_654
 ---
 
 # Daily Audit Ledger Review
@@ -14,4 +14,4 @@ tags:
 - [[Tamper-Evident Audit (SHA-256 Hash Chain)]] - `conceptually_related_to` [INFERRED]
 - [[daily-operations]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/_sync
+#graphify/concept #graphify/EXTRACTED #community/Community_654

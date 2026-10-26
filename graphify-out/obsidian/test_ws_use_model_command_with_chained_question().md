@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "TestSSRFDetection"
+community: "Community 101"
 location: "L3093"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/Community_101
 ---
 
 # test_ws_use_model_command_with_chained_question()
@@ -17,4 +17,4 @@ tags:
 - [[_pcm_bytes()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/Community_101

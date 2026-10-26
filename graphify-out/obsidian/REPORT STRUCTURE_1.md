@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/competitive-analysis.md"
 type: "document"
-community: "test_alert_dispatcher_retry.py"
+community: "Community 913"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_alert_dispatcher_retrypy
+  - community/Community_913
 ---
 
 # REPORT STRUCTURE
@@ -18,4 +18,4 @@ tags:
 - [[SECTION 3 AUTONOMOUS AGENT ECOSYSTEM UPDATE_1]] - `contains` [EXTRACTED]
 - [[SECTION 4 NEXT STEPS TO STAY AHEAD_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_alert_dispatcher_retrypy
+#graphify/document #graphify/EXTRACTED #community/Community_913

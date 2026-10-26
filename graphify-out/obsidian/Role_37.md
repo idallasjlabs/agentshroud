@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
+source_file: ".agents/agents/socrates.md"
 type: "document"
-community: "start-agentshroud.sh"
-location: "L7"
+community: "Community 1071"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/start-agentshroudsh
+  - community/Community_1071
 ---
 
 # Role
 
 ## Connections
-- [[Skill Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/start-agentshroudsh
+#graphify/document #graphify/EXTRACTED #community/Community_1071

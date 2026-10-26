@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "_wrap_response()"
+community: "Community 0"
 location: "L499"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/Community_0
 ---
 
 # Monitor-mode sandbox for comparison testing.
 
 ## Connections
-- [[dot-monitor_sandbox()]] - `rationale_for` [EXTRACTED]
+- [[.monitor_sandbox()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_wrap_response
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

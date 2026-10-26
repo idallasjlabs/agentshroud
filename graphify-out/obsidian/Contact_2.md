@@ -1,17 +1,17 @@
 ---
-source_file: "docker/bots/openclaw/config/workspace/PUBLIC-INFO.md"
+source_file: "docs/project/legal/TRADEMARK.md"
 type: "document"
-community: "Vulcan — Subject Matter Auditor (2)"
-location: "L48"
+community: "Community 1175"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Vulcan__Subject_Matter_Auditor_2
+  - community/Community_1175
 ---
 
 # Contact
 
 ## Connections
-- [[AgentShroud — Collaborator Knowledge Base]] - `contains` [EXTRACTED]
+- [[Trademark Notice_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor_2
+#graphify/document #graphify/EXTRACTED #community/Community_1175

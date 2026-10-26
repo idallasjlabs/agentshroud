@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "rationale"
-community: "AgentShroud Security Value Proposition"
+community: "Community 232"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition
+  - community/Community_232
 ---
 
 # A clean tool call with no threats should be allowed (200).
 
 ## Connections
-- [[dot-test_clean_tool_call_allowed()]] - `rationale_for` [EXTRACTED]
+- [[.test_clean_tool_call_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition
+#graphify/rationale #graphify/EXTRACTED #community/Community_232

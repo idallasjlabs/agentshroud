@@ -1,19 +1,19 @@
 ---
-source_file: "docs/architecture/deployment-diagram.md"
+source_file: "docs/vault/09 - Diagrams/Network Topology.md"
 type: "document"
-community: "xurl — Agent Skill Reference"
-location: "L218"
+community: "Community 390"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/xurl__Agent_Skill_Reference
+  - community/Community_390
 ---
 
-# Network Topology
+# Network Topology.md
 
 ## Connections
-- [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
-- [[DNS Routing Configuration]] - `contains` [EXTRACTED]
-- [[Three-Network Architecture]] - `contains` [EXTRACTED]
+- [[Bot Network Isolation Design]] - `rationale_for` [EXTRACTED]
+- [[Full System Flowchart]] - `references` [EXTRACTED]
+- [[Network Topology_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference
+#graphify/document #graphify/EXTRACTED #community/Community_390

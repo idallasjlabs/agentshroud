@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "AgentShroud™ Telegram-Reported Issues (2)"
+community: "Community 980"
 location: "L231"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Telegram-Reported_Issues_2
+  - community/Community_980
 ---
 
 # VIII. Evaluation
@@ -22,4 +22,4 @@ tags:
 - [[VIII-C. Module Coverage Matrix]] - `contains` [EXTRACTED]
 - [[VIII-D. Competitive Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Telegram-Reported_Issues_2
+#graphify/document #graphify/EXTRACTED #community/Community_980

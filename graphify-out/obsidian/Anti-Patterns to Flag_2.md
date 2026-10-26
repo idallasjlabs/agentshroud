@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ux/SKILL.md"
+source_file: ".agents/agents/i-sec.md"
 type: "document"
-community: "Skill: UX Expert (UX)"
-location: "L42"
+community: "Community 1413"
+location: "L100"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX
+  - community/Community_1413
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill UX Expert (UX)]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX
+#graphify/document #graphify/EXTRACTED #community/Community_1413

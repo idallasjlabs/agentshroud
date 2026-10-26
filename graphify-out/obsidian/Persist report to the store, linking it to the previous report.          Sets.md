@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "KillSwitchMonitor (3)"
+community: "Community 57"
 location: "L213"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_3
+  - community/Community_57
 ---
 
 # Persist *report* to the store, linking it to the previous report.          Sets
 
 ## Connections
-- [[dot-save()_2]] - `rationale_for` [EXTRACTED]
+- [[.save()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_57

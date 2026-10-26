@@ -1,21 +1,20 @@
 ---
-source_file: ".agents/skills/i-mcpm-auth-reset/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/README.md"
 type: "document"
-community: "AgentShroud Gateway (Trust Zone 1): holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMAC/JWT validation"
+community: "Community 1235"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Gateway_Trust_Zone_1_holds_1Password_service_account_enforces_policy_signs_ledger_entries_controls_approval_queue_HMAC/JWT_validation
+  - community/Community_1235
 ---
 
 # MCP Auth Reset (MCPM-AUTH-RESET)
 
 ## Connections
-- [[dot-agentsskillsi-mcpm-auth-resetREADME]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-mcpm-auth-resetSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_112]] - `contains` [EXTRACTED]
-- [[Related Skills_83]] - `contains` [EXTRACTED]
-- [[Usage_89]] - `contains` [EXTRACTED]
+- [[Purpose_90]] - `contains` [EXTRACTED]
+- [[README_95]] - `contains` [EXTRACTED]
+- [[Related Skills_111]] - `contains` [EXTRACTED]
+- [[Usage_115]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Gateway_Trust_Zone_1_holds_1Password_service_account_enforces_policy_signs_ledger_entries_controls_approval_queue_HMAC/JWT_validation
+#graphify/document #graphify/EXTRACTED #community/Community_1235

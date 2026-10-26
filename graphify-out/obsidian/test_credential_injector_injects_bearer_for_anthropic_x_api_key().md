@@ -1,23 +1,22 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "test_voice_gateway.py"
+community: "Community 1278"
 location: "L428"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/Community_1278
 ---
 
 # test_credential_injector_injects_bearer_for_anthropic_x_api_key()
 
 ## Connections
-- [[Anthropic-bound request with x-api-key injector injects Bearer + beta, strips…]] - `rationale_for` [EXTRACTED]
-- [[LLMProxy]] - `uses` [INFERRED]
+- [[Anthropic-bound request with x-api-key injector injects Bearer + beta, strips x]] - `rationale_for` [EXTRACTED]
+- [[LLMProxy]] - `calls` [EXTRACTED]
 - [[_FakeSanitizer]] - `calls` [EXTRACTED]
 - [[_TrackingInjector]] - `calls` [EXTRACTED]
 - [[_make_fake_urlopen()]] - `calls` [EXTRACTED]
-- [[asyncio_2]] - `references` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/Community_1278

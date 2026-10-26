@@ -1,19 +1,19 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "GroupRoleResolver"
+community: "Community 39"
 location: "L340"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/Community_39
 ---
 
 # GatewayClient<T>
 
 ## Connections
-- [[dot-get()_2]] - `method` [EXTRACTED]
-- [[dot-new()]] - `method` [EXTRACTED]
-- [[dot-post()_1]] - `method` [EXTRACTED]
+- [[.get()]] - `method` [EXTRACTED]
+- [[.new()_1]] - `method` [EXTRACTED]
+- [[.post()]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/Community_39

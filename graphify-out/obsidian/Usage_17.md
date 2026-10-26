@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/README.md"
+source_file: ".agents/skills/i-gg/README.md"
 type: "document"
-community: "Security Review (SEC) (2)"
+community: "Community 117"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Review_SEC_2
+  - community/Community_117
 ---
 
 # Usage
 
 ## Connections
-- [[MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
+- [[Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC_2
+#graphify/document #graphify/EXTRACTED #community/Community_117

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "code"
-community: "Pre-Deployment Checklist"
+community: "Community 637"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist
+  - community/Community_637
 ---
 
 # gateway/soc/router.py (SOC Shared Command Layer)
@@ -14,4 +14,4 @@ tags:
 - [[Gateway ManagementControl-Plane API (v1.3.0)]] - `implements` [EXTRACTED]
 - [[SOC Dashboard]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Pre-Deployment_Checklist
+#graphify/code #graphify/EXTRACTED #community/Community_637

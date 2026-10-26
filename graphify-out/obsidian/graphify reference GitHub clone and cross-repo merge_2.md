@@ -1,18 +1,18 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/github-and-merge.md"
 type: "document"
-community: "heartbeat.sh"
+community: "Community 1389"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/heartbeatsh
+  - community/Community_1389
 ---
 
 # graphify reference: GitHub clone and cross-repo merge
 
 ## Connections
 - [[Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given)_2]] - `contains` [EXTRACTED]
-- [[openclawskillsgraphifyreferencesgithub-and-merge]] - `contains` [EXTRACTED]
+- [[github-and-merge_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/heartbeatsh
+#graphify/document #graphify/EXTRACTED #community/Community_1389

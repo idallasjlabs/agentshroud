@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-08-erd.png"
 type: "image"
-community: "canvas_proxy_app"
+community: "Community 589"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/canvas_proxy_app
+  - community/Community_589
 ---
 
 # Rendered ERD Diagram (PNG)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Entity Relationship Diagram (ledger, approval_items)]] - `implements` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/canvas_proxy_app
+#graphify/image #graphify/EXTRACTED #community/Community_589

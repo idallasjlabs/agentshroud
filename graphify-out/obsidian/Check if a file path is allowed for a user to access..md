@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "Community 72"
 location: "L1123"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Community_72
 ---
 
 # Check if a file path is allowed for a user to access.
 
 ## Connections
-- [[dot-_is_path_allowed_for_user()]] - `rationale_for` [EXTRACTED]
+- [[._is_path_allowed_for_user()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

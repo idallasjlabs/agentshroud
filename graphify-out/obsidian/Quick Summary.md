@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/deployment.md"
 type: "document"
-community: "_run"
+community: "Community 725"
 location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_run
+  - community/Community_725
 ---
 
 # Quick Summary
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[First-Time Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_run
+#graphify/document #graphify/EXTRACTED #community/Community_725

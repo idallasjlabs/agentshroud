@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_subagent_monitor.py"
+source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "SubagentMonitor"
-location: "L38"
+community: "Community 431"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/Community_431
 ---
 
 # monitor()
 
 ## Connections
-- [[SubagentMonitor]] - `calls` [EXTRACTED]
-- [[test_subagent_monitor.py]] - `contains` [EXTRACTED]
+- [[EgressMonitor]] - `calls` [EXTRACTED]
+- [[test_egress_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/code #graphify/EXTRACTED #community/Community_431

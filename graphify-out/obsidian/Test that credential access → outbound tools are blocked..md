@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "test_soc_router_coverage.py"
+community: "Community 8"
 location: "L125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/Community_8
 ---
 
 # Test that credential access → outbound tools are blocked.
 
 ## Connections
-- [[dot-test_credential_to_outbound_blocking()]] - `rationale_for` [EXTRACTED]
+- [[.test_credential_to_outbound_blocking()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/Community_8

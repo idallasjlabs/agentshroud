@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-incident-response/SKILL.md"
+source_file: ".cursor/agents/i-incident-response.md"
 type: "document"
-community: "_PII_PATTERNS (URL PII regex set)"
-location: "L5"
+community: "Community 2254"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_PII_PATTERNS_URL_PII_regex_set
+  - community/Community_2254
 ---
 
 # Skill: incident-response
 
 ## Connections
-- [[openclawskillsi-incident-responseSKILL]] - `contains` [EXTRACTED]
+- [[i-incident-response_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_PII_PATTERNS_URL_PII_regex_set
+#graphify/document #graphify/EXTRACTED #community/Community_2254

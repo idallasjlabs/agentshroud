@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
+source_file: ".agents/agents/mnemosyne.md"
 type: "document"
-community: "run-standalone.sh (Hermes docker run launcher)"
-location: "L158"
+community: "Community 1978"
+location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/run-standalonesh_Hermes_docker_run_launcher
+  - community/Community_1978
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Socrates — Dialogue Architect_1]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher
+#graphify/document #graphify/EXTRACTED #community/Community_1978

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/text_control_center.py.md"
 type: "document"
-community: "Key Benefits"
+community: "Community 1178"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Key_Benefits
+  - community/Community_1178
 ---
 
 # Key Operations (Inferred)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[text_control_center.py  agentshroud_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Key_Benefits
+#graphify/document #graphify/EXTRACTED #community/Community_1178

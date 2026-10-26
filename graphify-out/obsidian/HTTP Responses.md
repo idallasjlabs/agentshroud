@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "test_gemini_openai_translator.py"
+community: "Community 766"
 location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_gemini_openai_translatorpy
+  - community/Community_766
 ---
 
 # HTTP Responses
 
 ## Connections
-- [[auth.py]] - `contains` [EXTRACTED]
+- [[auth.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_gemini_openai_translatorpy
+#graphify/document #graphify/EXTRACTED #community/Community_766

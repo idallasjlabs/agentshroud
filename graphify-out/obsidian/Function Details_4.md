@@ -1,21 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
 type: "document"
-community: "AgentShroud Weekly Upgrade — 2026-09-06"
-location: "L43"
+community: "Community 593"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Weekly_Upgrade__2026-09-06
+  - community/Community_593
 ---
 
 # Function Details
 
 ## Connections
-- [[AlertDispatcher._send_notification(alert)]] - `contains` [EXTRACTED]
-- [[AlertDispatcher.cleanup_seen()]] - `contains` [EXTRACTED]
-- [[AlertDispatcher.dispatch(alert)]] - `contains` [EXTRACTED]
-- [[AlertDispatcher.get_digest(clear)]] - `contains` [EXTRACTED]
-- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
+- [[_sanitize_presidio(content)]] - `contains` [EXTRACTED]
+- [[_sanitize_regex(content)]] - `contains` [EXTRACTED]
+- [[block_credentials(content, source)]] - `contains` [EXTRACTED]
+- [[filter_xml_blocks(content)]] - `contains` [EXTRACTED]
+- [[sanitize(content)]] - `contains` [EXTRACTED]
+- [[sanitizer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade__2026-09-06
+#graphify/document #graphify/EXTRACTED #community/Community_593

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/cron/prompts/collaborator-report-evening.txt"
 type: "document"
-community: "AgentTarget (5)"
+community: "Community 212"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/AgentTarget_5
+  - community/Community_212
 ---
 
 # Collaborator Report (Evening) Cron Prompt
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Collaborator Report (Morning) Cron Prompt]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/AgentTarget_5
+#graphify/document #graphify/INFERRED #community/Community_212

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "rationale"
-community: "TestMultipartOutboundPipeline"
+community: "Community 205"
 location: "L100"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestMultipartOutboundPipeline
+  - community/Community_205
 ---
 
 # Observe one outbound response and decide allow/block.          A blocked respons
 
 ## Connections
-- [[dot-observe()]] - `rationale_for` [EXTRACTED]
+- [[.observe()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestMultipartOutboundPipeline
+#graphify/rationale #graphify/EXTRACTED #community/Community_205

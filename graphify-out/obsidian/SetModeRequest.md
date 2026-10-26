@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "ServiceManager"
+community: "Community 20"
 location: "L1382"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ServiceManager
+  - community/Community_20
 ---
 
 # SetModeRequest
 
 ## Connections
 - [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult_1]] - `uses` [INFERRED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[AuditResult]] - `uses` [INFERRED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
 - [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller_1]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
 - [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface_1]] - `uses` [INFERRED]
+- [[SCLInterface]] - `uses` [INFERRED]
 - [[ServiceManager]] - `uses` [INFERRED]
+- [[router.py_1]] - `contains` [EXTRACTED]
 - [[set_group_mode()]] - `references` [EXTRACTED]
-- [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ServiceManager
+#graphify/code #graphify/INFERRED #community/Community_20

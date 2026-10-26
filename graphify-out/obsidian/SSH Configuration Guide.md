@@ -1,17 +1,18 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "document"
-community: ".omp/mcp.json"
+community: "Community 818"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/omp/mcpjson
+  - community/Community_818
 ---
 
 # SSH Configuration Guide
 
 ## Connections
+- [[Configuration File]] - `contains` [EXTRACTED]
 - [[Example Production Server with Strict Restrictions]] - `contains` [EXTRACTED]
 - [[Field Reference]] - `contains` [EXTRACTED]
 - [[Full Annotated Example]] - `contains` [EXTRACTED]
@@ -20,4 +21,4 @@ tags:
 - [[How to Add a New Trusted Host]] - `contains` [EXTRACTED]
 - [[ssh-configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/omp/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Community_818

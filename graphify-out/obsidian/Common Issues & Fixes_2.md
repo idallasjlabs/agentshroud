@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md"
+source_file: ".cursor/agents/i-mcpm-doctor.md"
 type: "document"
-community: "Skill: MCP Doctor (MCPM-DOCTOR) (2)"
-location: "L72"
+community: "Community 1040"
+location: "L75"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR_2
+  - community/Community_1040
 ---
 
 # Common Issues & Fixes
@@ -20,4 +20,4 @@ tags:
 - [[Issue uvx not found_2]] - `contains` [EXTRACTED]
 - [[Skill MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR_2
+#graphify/document #graphify/EXTRACTED #community/Community_1040

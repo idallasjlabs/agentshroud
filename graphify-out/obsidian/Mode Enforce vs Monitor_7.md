@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "iOS / macOS Shortcuts — Relay to AgentShroud"
-location: "L80"
+community: "Community 538"
+location: "L100"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud
+  - community/Community_538
 ---
 
 # Mode: Enforce vs Monitor
 
 ## Connections
-- [[dns_filter.py_1]] - `contains` [EXTRACTED]
+- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Community_538

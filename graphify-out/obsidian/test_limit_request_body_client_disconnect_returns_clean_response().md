@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "code"
-community: "pick_latest_stable"
+community: "Community 6"
 location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pick_latest_stable
+  - community/Community_6
 ---
 
 # test_limit_request_body_client_disconnect_returns_clean_response()
@@ -16,4 +16,4 @@ tags:
 - [[limit_request_body()]] - `calls` [EXTRACTED]
 - [[test_main_simple.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pick_latest_stable
+#graphify/code #graphify/EXTRACTED #community/Community_6

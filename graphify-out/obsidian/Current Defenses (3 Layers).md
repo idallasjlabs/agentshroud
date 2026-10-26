@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/prompt-injection-assessment-2026-02-25.md"
 type: "document"
-community: "TestDockerEngine"
+community: "Community 782"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestDockerEngine
+  - community/Community_782
 ---
 
 # Current Defenses (3 Layers)
@@ -18,4 +18,4 @@ tags:
 - [[Layer 4 PromptProtection (outbound) — P2, ACTIVE]] - `contains` [EXTRACTED]
 - [[Prompt Injection Assessment — AgentShroud v0.7.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestDockerEngine
+#graphify/document #graphify/EXTRACTED #community/Community_782

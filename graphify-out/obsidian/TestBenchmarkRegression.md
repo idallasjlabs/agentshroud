@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/tests/test_benchmark_regression.py"
 type: "code"
-community: "RuntimeConfig"
+community: "Community 511"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RuntimeConfig
+  - community/Community_511
 ---
 
 # TestBenchmarkRegression
 
 ## Connections
-- [[dot-_time_fn()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_26]] - `method` [EXTRACTED]
-- [[dot-test_100_inbound_requests()]] - `method` [EXTRACTED]
-- [[dot-test_baseline_file_exists()]] - `method` [EXTRACTED]
-- [[dot-test_baseline_values_are_reasonable()]] - `method` [EXTRACTED]
-- [[dot-test_single_inbound_latency()]] - `method` [EXTRACTED]
-- [[dot-test_single_outbound_latency()]] - `method` [EXTRACTED]
+- [[._time_fn()]] - `method` [EXTRACTED]
+- [[.setup_method()]] - `method` [EXTRACTED]
+- [[.test_100_inbound_requests()]] - `method` [EXTRACTED]
+- [[.test_baseline_file_exists()]] - `method` [EXTRACTED]
+- [[.test_baseline_values_are_reasonable()]] - `method` [EXTRACTED]
+- [[.test_single_inbound_latency()]] - `method` [EXTRACTED]
+- [[.test_single_outbound_latency()]] - `method` [EXTRACTED]
 - [[Benchmark regression tests — ensure latency stays within 20% of baseline.]] - `rationale_for` [EXTRACTED]
-- [[HTTPConnectProxy_1]] - `references` [EXTRACTED]
+- [[HTTPConnectProxy]] - `references` [EXTRACTED]
 - [[test_benchmark_regression.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RuntimeConfig
+#graphify/code #graphify/EXTRACTED #community/Community_511

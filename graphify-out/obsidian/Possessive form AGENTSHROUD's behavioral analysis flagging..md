@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "agentshroud-blueteam/SKILL.md (2)"
+community: "Community 119"
 location: "L555"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_2
+  - community/Community_119
 ---
 
 # Possessive form: AGENTSHROUD's behavioral analysis flagging.
 
 ## Connections
-- [[dot-test_possessive_flagging()]] - `rationale_for` [EXTRACTED]
+- [[.test_possessive_flagging()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_119

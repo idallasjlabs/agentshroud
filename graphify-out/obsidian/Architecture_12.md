@@ -1,17 +1,17 @@
 ---
-source_file: "docs/ssh-capability.md"
+source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "document"
-community: "create_auth_dependency (2) (2)"
-location: "L14"
+community: "Community 1015"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/create_auth_dependency_2_2
+  - community/Community_1015
 ---
 
 # Architecture
 
 ## Connections
-- [[SSH Capability Architecture Document]] - `contains` [EXTRACTED]
+- [[Presidio Analyzer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/create_auth_dependency_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_1015

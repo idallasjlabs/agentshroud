@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
+source_file: "docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md"
 type: "document"
-community: "_make_proxy()"
-location: "L137"
+community: "Community 1012"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_1012
 ---
 
 # Related Notes
 
 ## Connections
-- [[Dependency Graph_1]] - `contains` [EXTRACTED]
+- [[GATEWAY_OP_PROXY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_make_proxy
+#graphify/document #graphify/EXTRACTED #community/Community_1012

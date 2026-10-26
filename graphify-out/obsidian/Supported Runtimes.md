@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "ADR-006: Multi-Runtime Container Support"
+community: "Community 236"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-006_Multi-Runtime_Container_Support
+  - community/Community_236
 ---
 
 # Supported Runtimes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ADR-006 Multi-Runtime Container Support]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support
+#graphify/document #graphify/EXTRACTED #community/Community_236

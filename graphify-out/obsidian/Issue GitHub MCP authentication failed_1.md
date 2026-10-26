@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-doctor/SKILL.md"
+source_file: ".agents/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "02-infrastructure.md"
-location: "L85"
+community: "Community 485"
+location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/02-infrastructuremd
+  - community/Community_485
 ---
 
 # Issue: "GitHub MCP authentication failed"
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Issues & Fixes_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/02-infrastructuremd
+#graphify/document #graphify/EXTRACTED #community/Community_485

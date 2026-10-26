@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05.md"
 type: "document"
-community: "🟢 INFO (nice to have) (2)"
+community: "Community 840"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_INFO_nice_to_have_2
+  - community/Community_840
 ---
 
 # 🔴 ERRORS (must fix)
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[2. Findings]] - `contains` [EXTRACTED]
 - [[E1 YAML indentation error in `docker-compose.pi.yml`]] - `contains` [EXTRACTED]
+- [[E2 YAML indentation error in `docker-compose.trillian.yml`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_INFO_nice_to_have_2
+#graphify/document #graphify/EXTRACTED #community/Community_840

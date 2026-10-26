@@ -1,18 +1,19 @@
 ---
-source_file: "tests/startup_smoke/test_sunday_prompt_unattended.sh"
+source_file: "scripts/check-vendor-compat.sh"
 type: "code"
-community: "AWS Cloud Management & FinOps Agent (2)"
-location: "L11"
+community: "Community 227"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent_2
+  - community/Community_227
 ---
 
 # pass()
 
 ## Connections
-- [[test_sunday_prompt_unattended.sh]] - `defines` [EXTRACTED]
-- [[test_sunday_prompt_unattended.sh script]] - `calls` [EXTRACTED]
+- [[check-vendor-compat.sh]] - `defines` [EXTRACTED]
+- [[check_hermes()]] - `calls` [EXTRACTED]
+- [[check_openclaw()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_2
+#graphify/code #graphify/EXTRACTED #community/Community_227

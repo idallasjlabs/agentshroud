@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "AgentShroud™ CVE Mitigation Matrix"
+community: "Community 215"
 location: "L543"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_CVE_Mitigation_Matrix
+  - community/Community_215
 ---
 
 # 2026-09-12 re-verification (Sunday upgrade cycle)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud™ CVE Mitigation Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix
+#graphify/document #graphify/EXTRACTED #community/Community_215

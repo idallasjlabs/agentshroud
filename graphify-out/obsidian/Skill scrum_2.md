@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-scrum/SKILL.md"
+source_file: ".cursor/agents/i-scrum.md"
 type: "document"
-community: "soc.js"
-location: "L5"
+community: "Community 2259"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_2259
 ---
 
 # Skill: scrum
 
 ## Connections
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-scrumSKILL]] - `contains` [EXTRACTED]
+- [[i-scrum_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_2259

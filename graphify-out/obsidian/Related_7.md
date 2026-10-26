@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
 type: "document"
-community: "AgentShroud Color Palette"
-location: "L97"
+community: "Community 705"
+location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Color_Palette
+  - community/Community_705
 ---
 
 # Related
 
 ## Connections
-- [[ADR-009 Enforce-by-Default Security Philosophy]] - `contains` [EXTRACTED]
+- [[router.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Color_Palette
+#graphify/document #graphify/EXTRACTED #community/Community_705

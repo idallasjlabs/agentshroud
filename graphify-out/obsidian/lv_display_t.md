@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "System Instructions: Credential Security (Ultra-Conservative)"
+community: "Community 378"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/System_Instructions_Credential_Security_Ultra-Conservative
+  - community/Community_378
 ---
 
 # lv_display_t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_lvgl_flush_wait_yield()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/System_Instructions_Credential_Security_Ultra-Conservative
+#graphify/code #graphify/EXTRACTED #community/Community_378

@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
 type: "document"
-community: "test_runtime_engines.py (2)"
+community: "Community 287"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy_2
+  - community/Community_287
 ---
 
 # Purpose
 
 ## Connections
-- [[ssh_config.py_2]] - `contains` [EXTRACTED]
+- [[EgressFilter_3]] - `contains` [EXTRACTED]
+- [[egress_filter.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_runtime_enginespy_2
+#graphify/document #graphify/EXTRACTED #community/Community_287

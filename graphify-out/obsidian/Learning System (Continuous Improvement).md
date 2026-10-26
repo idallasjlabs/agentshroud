@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
+source_file: ".agents/skills/eightd-root-cause-analysis/references/learning-and-xml.md"
 type: "document"
-community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE) (3)"
-location: "L426"
+community: "Community 1965"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_3
+  - community/Community_1965
 ---
 
 # Learning System (Continuous Improvement)
 
 ## Connections
-- [[8D Root Cause Analysis — Data-Driven Control System Investigation]] - `contains` [EXTRACTED]
 - [[Confidence Scoring]] - `contains` [EXTRACTED]
 - [[Knowledge Base Schema]] - `contains` [EXTRACTED]
 - [[Pattern Matching for New Incidents]] - `contains` [EXTRACTED]
+- [[learning-and-xml]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_3
+#graphify/document #graphify/EXTRACTED #community/Community_1965

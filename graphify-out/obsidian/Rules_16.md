@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-bs/SKILL.md"
+source_file: ".cursor/agents/i-bs.md"
 type: "document"
-community: "TestBuildCollaboratorSafeInfoResponse"
-location: "L23"
+community: "Community 1020"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestBuildCollaboratorSafeInfoResponse
+  - community/Community_1020
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Branding Specialist (BS)]] - `contains` [EXTRACTED]
+- [[Skill Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse
+#graphify/document #graphify/EXTRACTED #community/Community_1020

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "MiddlewareManager (2)"
+community: "Community 6"
 location: "L353"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/Community_6
 ---
 
 # Close sqlite-holding sub-modules so Python 3.13's GC does not         finalize t
 
 ## Connections
-- [[dot-teardown_method()_6]] - `rationale_for` [EXTRACTED]
+- [[.teardown_method()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_6

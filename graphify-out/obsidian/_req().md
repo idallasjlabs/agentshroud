@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_thinking_suppression.py"
 type: "code"
-community: "Steps"
+community: "Community 1943"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Steps
+  - community/Community_1943
 ---
 
 # _req()
@@ -20,4 +20,4 @@ tags:
 - [[test_qwen_model_gets_no_think_suffix()]] - `calls` [EXTRACTED]
 - [[test_qwen_model_suffix_already_present_is_noop()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Steps
+#graphify/code #graphify/EXTRACTED #community/Community_1943

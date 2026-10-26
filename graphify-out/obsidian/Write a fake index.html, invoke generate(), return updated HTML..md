@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_generate_cve_page.py"
 type: "rationale"
-community: "GatewayEmailService"
+community: "Community 200"
 location: "L257"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/Community_200
 ---
 
 # Write a fake index.html, invoke generate(), return updated HTML.
 
 ## Connections
-- [[dot-_run_generate()]] - `rationale_for` [EXTRACTED]
+- [[._run_generate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/rationale #graphify/EXTRACTED #community/Community_200

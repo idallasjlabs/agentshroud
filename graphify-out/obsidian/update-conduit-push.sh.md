@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/update-conduit-push.sh"
 type: "code"
-community: "update-conduit-push.sh"
+community: "Community 787"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/update-conduit-pushsh
+  - community/Community_787
 ---
 
 # update-conduit-push.sh
@@ -25,4 +25,4 @@ tags:
 - [[say()_1]] - `defines` [EXTRACTED]
 - [[update-conduit-push.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/update-conduit-pushsh
+#graphify/code #graphify/EXTRACTED #community/Community_787

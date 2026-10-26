@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mac/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "soc.js"
+community: "Community 2072"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_2072
 ---
 
 # Related Skills
 
 ## Connections
-- [[macOS System Administrator (MAC)_1]] - `contains` [EXTRACTED]
+- [[MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_2072

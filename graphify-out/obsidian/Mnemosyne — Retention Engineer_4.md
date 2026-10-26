@@ -1,17 +1,23 @@
 ---
-source_file: "docs/architecture/agentic-os.md"
-type: "concept"
-community: "Output Sections (ALL required) (3)"
+source_file: ".github/agents/i-mnemosyne.agent.md"
+type: "document"
+community: "Community 1981"
+location: "L11"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Output_Sections_ALL_required_3
+  - community/Community_1981
 ---
 
 # Mnemosyne — Retention Engineer
 
 ## Connections
-- [[Apollo — Audio Systems Producer_4]] - `shares_data_with` [EXTRACTED]
-- [[Oracle — Feedback Analyst_4]] - `shares_data_with` [EXTRACTED]
+- [[Input Requirements_36]] - `contains` [EXTRACTED]
+- [[Output Format_49]] - `contains` [EXTRACTED]
+- [[Persona_28]] - `contains` [EXTRACTED]
+- [[Quality Checklist_32]] - `contains` [EXTRACTED]
+- [[Role_130]] - `contains` [EXTRACTED]
+- [[System Prompt_28]] - `contains` [EXTRACTED]
+- [[i-mnemosyne.agent]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Output_Sections_ALL_required_3
+#graphify/document #graphify/EXTRACTED #community/Community_1981

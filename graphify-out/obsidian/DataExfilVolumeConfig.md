@@ -1,20 +1,22 @@
 ---
 source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "TestMultipartOutboundPipeline"
+community: "Community 205"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMultipartOutboundPipeline
+  - community/Community_205
 ---
 
 # DataExfilVolumeConfig
 
 ## Connections
-- [[dot-__init__()_88]] - `references` [EXTRACTED]
+- [[.__init__()_69]] - `references` [EXTRACTED]
 - [[Configuration for class`DataExfilVolumeGuard`.]] - `rationale_for` [EXTRACTED]
 - [[data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_accepts_str_and_bytes()]] - `calls` [EXTRACTED]
 - [[test_adaptive_floor_prevents_noise_blocks()]] - `calls` [EXTRACTED]
 - [[test_adaptive_needs_min_samples()]] - `calls` [EXTRACTED]
@@ -32,4 +34,4 @@ tags:
 - [[test_single_response_over_cap_blocks()]] - `calls` [EXTRACTED]
 - [[test_under_single_cap_allows()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMultipartOutboundPipeline
+#graphify/code #graphify/EXTRACTED #community/Community_205

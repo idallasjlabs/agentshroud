@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/incident-response.md"
+source_file: "docs/vault/03 - Configuration/falco-rules.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
-location: "L7"
+community: "Community 102"
+location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/Community_102
 ---
 
 # Priority Levels
 
 ## Connections
-- [[Incident Classification System]] - `contains` [EXTRACTED]
+- [[falco-rules.yaml]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_102

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "PathIsolationManager"
+community: "Community 72"
 location: "L287"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/Community_72
 ---
 
 # Get statistics about path isolation manager.
 
 ## Connections
-- [[dot-get_stats()_9]] - `rationale_for` [EXTRACTED]
+- [[.get_stats()_18]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

@@ -1,23 +1,23 @@
 ---
 source_file: ".llm_settings/docs/SKILLS_REFERENCE.md"
 type: "concept"
-community: "Skill: Test-Driven Development (TDD)"
+community: "Community 743"
 location: "Skills by Category"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_Test-Driven_Development_TDD
+  - community/Community_743
 ---
 
 # Claude Code skill catalog (59 skills)
 
 ## Connections
 - [[AWS API MCP server (official, recommended)]] - `references` [EXTRACTED]
-- [[AWS Cloud Management & FinOps Agent_1]] - `references` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_6]] - `references` [EXTRACTED]
 - [[Agent layer (skills, subagents, orchestration)]] - `references` [INFERRED]
 - [[Autonomous remote dev workflows (hdev, odev)]] - `references` [EXTRACTED]
 - [[Claude Code (PRIMARY developer configuration)]] - `references` [EXTRACTED]
 - [[Four-tool role hierarchy summary]] - `references` [EXTRACTED]
 - [[Podcast pipeline skills (atlas→socrates→…→oracle)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD
+#graphify/concept #graphify/EXTRACTED #community/Community_743

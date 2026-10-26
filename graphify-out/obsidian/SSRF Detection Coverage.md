@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
 type: "document"
-community: "2. Security Analysis"
+community: "Community 720"
 location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/2_Security_Analysis
+  - community/Community_720
 ---
 
 # SSRF Detection Coverage
 
 ## Connections
-- [[url_analyzer.py_1]] - `contains` [EXTRACTED]
+- [[url_analyzer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/2_Security_Analysis
+#graphify/document #graphify/EXTRACTED #community/Community_720

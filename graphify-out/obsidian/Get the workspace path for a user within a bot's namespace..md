@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "Community 143"
 location: "L452"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Community_143
 ---
 
 # Get the workspace path for a user within a bot's namespace.
 
 ## Connections
-- [[dot-get_user_workspace_path()]] - `rationale_for` [EXTRACTED]
+- [[.get_user_workspace_path()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_143

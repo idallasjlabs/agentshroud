@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "AgentShroud™ Telegram-Reported Issues (2)"
+community: "Community 980"
 location: "L237"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Telegram-Reported_Issues_2
+  - community/Community_980
 ---
 
 # TABLE IV: Test Coverage by Defense Layer
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[VIII. Evaluation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Telegram-Reported_Issues_2
+#graphify/document #graphify/EXTRACTED #community/Community_980

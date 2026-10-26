@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-production/SKILL.md"
 type: "document"
-community: "test_openclaw_photo.sh"
-location: "L119"
+community: "Community 545"
+location: "L120"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_openclaw_photosh
+  - community/Community_545
 ---
 
 # Zabbix Rollback
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 3 MITIGATE (Rollback First!)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_openclaw_photosh
+#graphify/document #graphify/EXTRACTED #community/Community_545

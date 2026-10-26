@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/apple-reminders/SKILL.md"
+source_file: "skills/openclaw/github/SKILL.md"
 type: "document"
-community: "System Audit & Documentation (2)"
-location: "L39"
+community: "Community 713"
+location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Audit__Documentation_2
+  - community/Community_713
 ---
 
 # When NOT to Use
 
 ## Connections
-- [[Apple Reminders CLI (remindctl)]] - `contains` [EXTRACTED]
+- [[GitHub Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Audit__Documentation_2
+#graphify/document #graphify/EXTRACTED #community/Community_713

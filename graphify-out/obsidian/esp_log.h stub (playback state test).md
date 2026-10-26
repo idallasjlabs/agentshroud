@@ -1,13 +1,13 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/stubs/esp_log.h"
 type: "code"
-community: "routes/__init__.py"
+community: "Community 1860"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/routes/__init__py
+  - community/Community_1860
 ---
 
 # esp_log.h stub (playback state test)
 
-#graphify/code #graphify/EXTRACTED #community/routes/__init__py
+#graphify/code #graphify/EXTRACTED #community/Community_1860

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
 type: "document"
-community: "v0.6.0 Baseline Results"
+community: "Community 675"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/v060_Baseline_Results
+  - community/Community_675
 ---
 
 # Purpose
 
 ## Connections
-- [[mcp_config.py_2]] - `contains` [EXTRACTED]
+- [[browser_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/v060_Baseline_Results
+#graphify/document #graphify/EXTRACTED #community/Community_675

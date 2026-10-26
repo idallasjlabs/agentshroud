@@ -1,22 +1,18 @@
 ---
-source_file: "scripts/verify-proxy.sh"
+source_file: "docker/scripts/container-net-diag.sh"
 type: "code"
-community: "AgentTarget (2)"
-location: "L24"
+community: "Community 932"
+location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/Community_932
 ---
 
 # info()
 
 ## Connections
-- [[run_bypass()]] - `calls` [EXTRACTED]
-- [[run_canary()]] - `calls` [EXTRACTED]
-- [[run_chain()]] - `calls` [EXTRACTED]
-- [[run_full()]] - `calls` [EXTRACTED]
-- [[run_quick()]] - `calls` [EXTRACTED]
-- [[verify-proxy.sh]] - `defines` [EXTRACTED]
+- [[container-net-diag.sh]] - `defines` [EXTRACTED]
+- [[container-net-diag.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/code #graphify/EXTRACTED #community/Community_932

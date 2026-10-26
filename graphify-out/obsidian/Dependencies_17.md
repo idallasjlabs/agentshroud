@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
+source_file: ".cursor/agents/i-ux.md"
 type: "document"
-community: "model_usage.py"
-location: "L297"
+community: "Community 342"
+location: "L282"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/model_usagepy
+  - community/Community_342
 ---
 
 # Dependencies
 
 ## Connections
-- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_1]] - `contains` [EXTRACTED]
+- [[Skill UX Expert (UX)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/model_usagepy
+#graphify/document #graphify/EXTRACTED #community/Community_342

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/01-enforce-by-default.md"
+source_file: "docs/planning/redteam/03-session-isolation.md"
 type: "document"
-community: "Morning Checklist (5 minutes)"
-location: "L14"
+community: "Community 608"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Morning_Checklist_5_minutes
+  - community/Community_608
 ---
 
 # Root Cause
 
 ## Connections
-- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
+- [[Implement per-user session isolation using Telegram user ID]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Morning_Checklist_5_minutes
+#graphify/document #graphify/EXTRACTED #community/Community_608

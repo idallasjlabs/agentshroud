@@ -1,21 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-bs/README.md"
+source_file: "docker/config/hermes/skills/i-bs/README.md"
 type: "document"
-community: "soc.js"
+community: "Community 90"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_90
 ---
 
 # Branding Specialist (BS)
 
 ## Connections
-- [[Purpose_101]] - `contains` [EXTRACTED]
-- [[Related Skills_72]] - `contains` [EXTRACTED]
-- [[Usage_78]] - `contains` [EXTRACTED]
-- [[openclawskillsi-bsREADME]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_42]] - `contains` [EXTRACTED]
+- [[README_47]] - `contains` [EXTRACTED]
+- [[Related Skills_60]] - `contains` [EXTRACTED]
+- [[Usage_64]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_90

@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "concept"
-community: "agentshroud-ssh-exec.sh"
+community: "Community 1018"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/agentshroud-ssh-execsh
+  - community/Community_1018
 ---
 
 # LM Studio local model (Qwen3-14B)
@@ -15,4 +15,4 @@ tags:
 - [[OpenClaw Dev Workflow (ODEV)]] - `references` [EXTRACTED]
 - [[omlx local model (DeepSeek-R1-0528-Qwen3-8B)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/agentshroud-ssh-execsh
+#graphify/concept #graphify/EXTRACTED #community/Community_1018

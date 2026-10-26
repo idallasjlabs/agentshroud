@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Restart Procedure.md"
 type: "document"
-community: "Restart Procedure"
+community: "Community 333"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Restart_Procedure
+  - community/Community_333
 ---
 
 # Restart Procedure.md
@@ -16,4 +16,4 @@ tags:
 - [[First Time Setup]] - `references` [EXTRACTED]
 - [[Restart Procedure_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Restart_Procedure
+#graphify/document #graphify/EXTRACTED #community/Community_333

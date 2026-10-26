@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "rationale"
-community: "TestToolChainAnalyzer"
+community: "Community 65"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/Community_65
 ---
 
 # Raised when a user is not permitted to access a group workspace.      Subclasses
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GroupAccessDenied]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/rationale #graphify/EXTRACTED #community/Community_65

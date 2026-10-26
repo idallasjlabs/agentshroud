@@ -1,14 +1,14 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.h"
 type: "code"
-community: "._filter_streaming_event"
+community: "Community 1771"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_filter_streaming_event
+  - community/Community_1771
 ---
 
 # wakeword.h
 
-#graphify/code #graphify/EXTRACTED #community/_filter_streaming_event
+#graphify/code #graphify/EXTRACTED #community/Community_1771

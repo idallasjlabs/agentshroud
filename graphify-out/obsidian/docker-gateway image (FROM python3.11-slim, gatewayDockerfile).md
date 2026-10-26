@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-22-dependency-graph.svg"
 type: "concept"
-community: "AgentShroud Incident Response Plan (2)"
+community: "Community 1157"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan_2
+  - community/Community_1157
 ---
 
 # docker-gateway image (FROM python:3.11-slim, gateway/Dockerfile)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[agentshroud-gateway container (starts first)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan_2
+#graphify/concept #graphify/EXTRACTED #community/Community_1157

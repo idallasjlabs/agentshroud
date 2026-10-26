@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-pm/SKILL.md"
+source_file: ".agents/skills/i-pm/SKILL.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent (3)"
-location: "L40"
+community: "Community 486"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent_3
+  - community/Community_486
 ---
 
 # `session-notes/SESSION_SUMMARY_YYYY-MM-DD.md` (session report)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Continuity Files_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_3
+#graphify/document #graphify/EXTRACTED #community/Community_486

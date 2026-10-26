@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cicd/README.md"
+source_file: ".agents/skills/i-ps/README.md"
 type: "document"
-community: "_HeadFakeClient"
+community: "Community 177"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_HeadFakeClient
+  - community/Community_177
 ---
 
 # Related Skills
 
 ## Connections
-- [[CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_HeadFakeClient
+#graphify/document #graphify/EXTRACTED #community/Community_177

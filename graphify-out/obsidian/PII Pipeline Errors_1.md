@@ -1,21 +1,21 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
 type: "document"
-community: "ApprovalQueueConfig (7)"
+community: "Community 1015"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_7
+  - community/Community_1015
 ---
 
 # PII Pipeline Errors.md
 
 ## Connections
 - [[Error Index]] - `references` [EXTRACTED]
-- [[PII Pipeline Errors]] - `contains` [EXTRACTED]
-- [[Prompt Injection Blocks]] - `semantically_similar_to` [INFERRED]
+- [[PII Pipeline Errors_2]] - `contains` [EXTRACTED]
+- [[Prompt Injection Blocks_1]] - `semantically_similar_to` [INFERRED]
 - [[presidio-analyzer]] - `references` [EXTRACTED]
-- [[spacy_1]] - `references` [EXTRACTED]
+- [[spacy]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_7
+#graphify/document #graphify/EXTRACTED #community/Community_1015

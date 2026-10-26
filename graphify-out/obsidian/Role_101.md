@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pr/SKILL.md"
+source_file: ".cursor/agents/i-sec.md"
 type: "document"
-community: "test_multi_host_test.py"
-location: "L7"
+community: "Community 1496"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_multi_host_testpy
+  - community/Community_1496
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pull Request (PR) Generator_2]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_multi_host_testpy
+#graphify/document #graphify/EXTRACTED #community/Community_1496

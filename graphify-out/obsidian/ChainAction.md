@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "test_tool_chain_analyzer.py"
+community: "Community 8"
 location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_tool_chain_analyzerpy
+  - community/Community_8
 ---
 
 # ChainAction
 
 ## Connections
-- [[dot-_load_custom_patterns()]] - `calls` [EXTRACTED]
+- [[._load_custom_patterns()]] - `calls` [EXTRACTED]
 - [[Actions to take on suspicious chains.]] - `rationale_for` [EXTRACTED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[TestParamSanitization]] - `uses` [INFERRED]
 - [[TestReversibilityScoring]] - `uses` [INFERRED]
 - [[TestShellBleedPatterns]] - `uses` [INFERRED]
 - [[TestToolChainAnalyzer_1]] - `uses` [INFERRED]
-- [[str_3]] - `inherits` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 - [[test_tool_chain_analyzer.py]] - `imports` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_tool_chain_analyzerpy
+#graphify/code #graphify/EXTRACTED #community/Community_8

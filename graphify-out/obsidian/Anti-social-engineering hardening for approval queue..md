@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "Any"
+community: "Community 72"
 location: "L112"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Any
+  - community/Community_72
 ---
 
 # Anti-social-engineering hardening for approval queue.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ApprovalHardening]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Any
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

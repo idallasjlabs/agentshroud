@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/agentshroud-redteam/SKILL.md"
+source_file: ".agents/agents/sec-defense.md"
 type: "document"
-community: "Test-Driven Development README"
-location: "L367"
+community: "Community 1279"
+location: "L152"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_README
+  - community/Community_1279
 ---
 
 # Infrastructure
 
 ## Connections
-- [[AgentShroud Red Team Adversarial Tester]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README
+#graphify/document #graphify/EXTRACTED #community/Community_1279

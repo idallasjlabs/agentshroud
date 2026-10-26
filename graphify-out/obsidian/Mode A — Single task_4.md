@@ -1,18 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hdev/SKILL.md"
+source_file: ".cursor/agents/i-hdev.md"
 type: "document"
-community: "Features"
-location: "L122"
+community: "Community 841"
+location: "L124"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Features
+  - community/Community_841
 ---
 
 # Mode A — Single task
 
 ## Connections
-- [[Skill Hermes Dev Workflow (HDEV)_1]] - `contains` [EXTRACTED]
+- [[Skill Hermes Dev Workflow (HDEV)_2]] - `contains` [EXTRACTED]
 - [[Step 1 — Sync and confirm clean state_4]] - `contains` [EXTRACTED]
 - [[Step 10 — Notify the owner_4]] - `contains` [EXTRACTED]
 - [[Step 11 — Merge (only on explicit owner instruction)_4]] - `contains` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[Step 9 — Push and open the PR_4]] - `contains` [EXTRACTED]
 - [[Step 9b — Update the Jira ticket with the PR link_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Features
+#graphify/document #graphify/EXTRACTED #community/Community_841

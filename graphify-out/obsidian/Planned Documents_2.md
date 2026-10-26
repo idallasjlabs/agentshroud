@@ -1,17 +1,17 @@
 ---
-source_file: "docs/integrations/README.md"
+source_file: "docs/flows/README.md"
 type: "document"
-community: "competitive-report-*.md dated reports"
+community: "Community 523"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/competitive-report-md_dated_reports
+  - community/Community_523
 ---
 
 # Planned Documents
 
 ## Connections
-- [[Integrations Documentation]] - `contains` [EXTRACTED]
+- [[Flows Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/competitive-report-md_dated_reports
+#graphify/document #graphify/EXTRACTED #community/Community_523

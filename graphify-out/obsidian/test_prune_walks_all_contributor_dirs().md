@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "Community 99"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/Community_99
 ---
 
 # test_prune_walks_all_contributor_dirs()
@@ -19,4 +19,4 @@ tags:
 - [[_prune_fixture_markdown()]] - `calls` [EXTRACTED]
 - [[test_lifespan_prune.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/Community_99

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "rationale"
-community: "AlertDispatcher (3)"
+community: "Community 75"
 location: "L257"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/Community_75
 ---
 
 # Verify suspended users get a drop notice (rate-limited to avoid spam).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSuspendedDropNotice]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_75

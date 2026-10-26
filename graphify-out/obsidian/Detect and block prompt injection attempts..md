@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "rationale"
-community: "PromptGuard"
+community: "Community 84"
 location: "L582"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/Community_84
 ---
 
 # Detect and block prompt injection attempts.
 
 ## Connections
-- [[PromptGuard_1]] - `rationale_for` [EXTRACTED]
+- [[PromptGuard]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PromptGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_84

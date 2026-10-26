@@ -1,17 +1,17 @@
 ---
-source_file: "README.md"
+source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "Skill: Test-Driven Development (TDD) (2)"
-location: "L264"
+community: "Community 874"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Test-Driven_Development_TDD_2
+  - community/Community_874
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Quickstart_1]] - `contains` [EXTRACTED]
+- [[Himalaya Email CLI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD_2
+#graphify/document #graphify/EXTRACTED #community/Community_874

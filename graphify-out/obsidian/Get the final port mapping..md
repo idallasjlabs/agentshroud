@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "rationale"
-community: "TrustConfig (2)"
+community: "Community 109"
 location: "L70"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustConfig_2
+  - community/Community_109
 ---
 
 # Get the final port mapping.
 
 ## Connections
-- [[dot-ports()]] - `rationale_for` [EXTRACTED]
+- [[.ports()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_109

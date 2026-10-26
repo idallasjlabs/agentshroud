@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "MemoryIntegrityMonitor"
+community: "Community 16"
 location: "L33"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/Community_16
 ---
 
 # Test memory integrity configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMemoryIntegrityConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/Community_16

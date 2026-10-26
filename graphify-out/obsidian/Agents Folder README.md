@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/agents/_README.txt"
 type: "document"
-community: "test_ptt_state.c"
+community: "Community 339"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/test_ptt_statec
+  - community/Community_339
 ---
 
 # Agents Folder README
@@ -15,4 +15,4 @@ tags:
 - [[OpenClawAgentShroud Bot Identity]] - `references` [INFERRED]
 - [[Security Reviewer Agent]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/test_ptt_statec
+#graphify/document #graphify/INFERRED #community/Community_339

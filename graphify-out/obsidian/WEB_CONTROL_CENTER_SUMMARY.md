@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/WEB_CONTROL_CENTER_SUMMARY.md"
 type: "document"
-community: "ApprovalHardening"
+community: "Community 91"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/Community_91
 ---
 
 # WEB_CONTROL_CENTER_SUMMARY.md
@@ -19,4 +19,4 @@ tags:
 - [[Kill Switch_2]] - `references` [EXTRACTED]
 - [[access-control-matrix]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/document #graphify/EXTRACTED #community/Community_91

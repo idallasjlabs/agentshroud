@@ -1,0 +1,17 @@
+---
+source_file: ".opencode/agents/i-mcpm-auth-reset.md"
+type: "document"
+community: "Community 279"
+location: "L103"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Community_279
+---
+
+# Verify Authentication
+
+## Connections
+- [[2. Atlassian MCP Authentication Reset_5]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Community_279

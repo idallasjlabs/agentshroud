@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/chat_console.py"
 type: "rationale"
-community: ".test_unknown_user_always_gets_pending_or_rate_limit_notice()"
+community: "Community 825"
 location: "L56"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_unknown_user_always_gets_pending_or_rate_limit_notice
+  - community/Community_825
 ---
 
 # Check gateway and bot status
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check_status()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_unknown_user_always_gets_pending_or_rate_limit_notice
+#graphify/rationale #graphify/EXTRACTED #community/Community_825

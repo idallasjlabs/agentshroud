@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_latency_guard.py"
 type: "rationale"
-community: "ProgressiveLockdown"
+community: "Community 77"
 location: "L109"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/Community_77
 ---
 
 # ON: no_memory=True → {"no_memory": True} ephemeral tag.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_voice_forward_metadata_on_sets_no_memory_tag()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/rationale #graphify/EXTRACTED #community/Community_77

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "KeyRotationManager (2) (3)"
+community: "Community 1330"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/KeyRotationManager_2_3
+  - community/Community_1330
 ---
 
 # Step 2: Fetch with Browser-Fetch Skill
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Manual Usage (Current Method)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/KeyRotationManager_2_3
+#graphify/document #graphify/EXTRACTED #community/Community_1330

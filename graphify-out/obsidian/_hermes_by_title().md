@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "A2APolicyEngine"
+community: "Community 42"
 location: "L366"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/Community_42
 ---
 
 # _hermes_by_title()
@@ -18,4 +18,4 @@ tags:
 - [[test_hermes_symlink_entry_upstream_fix()]] - `calls` [EXTRACTED]
 - [[test_hermes_wechat_adapter_fully_mitigated()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/Community_42

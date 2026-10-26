@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "rationale"
-community: "SharedMemoryManager"
+community: "Community 60"
 location: "L233"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SharedMemoryManager
+  - community/Community_60
 ---
 
 # Build merged memory context for bot prompt injection.          Includes:
 
 ## Connections
-- [[dot-get_merged_memory_for_user()]] - `rationale_for` [EXTRACTED]
+- [[.get_merged_memory_for_user()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SharedMemoryManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_60

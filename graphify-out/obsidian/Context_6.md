@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md"
+source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "Weather Skill"
-location: "L3"
+community: "Community 236"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Weather_Skill
+  - community/Community_236
 ---
 
 # Context
 
 ## Connections
-- [[AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap]] - `contains` [EXTRACTED]
+- [[ADR-006 Multi-Runtime Container Support]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Weather_Skill
+#graphify/document #graphify/EXTRACTED #community/Community_236

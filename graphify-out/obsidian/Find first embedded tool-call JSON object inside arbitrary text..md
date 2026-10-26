@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "test_collaborator_tracker.py (2)"
+community: "Community 344"
 location: "L2736"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_2
+  - community/Community_344
 ---
 
 # Find first embedded tool-call JSON object inside arbitrary text.
 
 ## Connections
-- [[dot-_extract_embedded_tool_call_json()]] - `rationale_for` [EXTRACTED]
+- [[._extract_embedded_tool_call_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_344

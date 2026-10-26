@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "deploy.sh"
+community: "Community 1402"
 location: "310"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/deploysh
+  - community/Community_1402
 ---
 
 # TrustManager._update_score
@@ -15,4 +15,4 @@ tags:
 - [[TrustManager._promotion_allowed]] - `calls` [EXTRACTED]
 - [[TrustManager.record_violation]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/deploysh
+#graphify/code #graphify/EXTRACTED #community/Community_1402

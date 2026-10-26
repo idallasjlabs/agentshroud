@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
 type: "document"
-community: "_make_proxy() (2)"
-location: "L77"
+community: "Community 392"
+location: "L105"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_make_proxy_2
+  - community/Community_392
 ---
 
 # Database Schema
 
 ## Connections
-- [[ledger.py_1]] - `contains` [EXTRACTED]
+- [[TrustManager_5]] - `contains` [EXTRACTED]
+- [[trust_manager.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_make_proxy_2
+#graphify/document #graphify/EXTRACTED #community/Community_392

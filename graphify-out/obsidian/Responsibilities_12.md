@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
 type: "document"
-community: "Detailed Profiles"
-location: "L18"
+community: "Community 407"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Detailed_Profiles
+  - community/Community_407
 ---
 
 # Responsibilities
 
 ## Connections
-- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
+- [[http_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Detailed_Profiles
+#graphify/document #graphify/EXTRACTED #community/Community_407

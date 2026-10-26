@@ -1,20 +1,18 @@
 ---
-source_file: "opencode.json"
+source_file: ".cursor/mcp.json"
 type: "code"
-community: "opencode.json"
-location: "L65"
+community: "Community 397"
+location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/opencodejson
+  - community/Community_397
 ---
 
 # home-assistant
 
 ## Connections
-- [[command_6]] - `contains` [EXTRACTED]
-- [[enabled_6]] - `contains` [EXTRACTED]
-- [[mcp]] - `contains` [EXTRACTED]
-- [[type_6]] - `contains` [EXTRACTED]
+- [[.llm_settingsmcp-servershome-assistantmcp-ha.sh]] - `references` [EXTRACTED]
+- [[mcp.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/opencodejson
+#graphify/code #graphify/EXTRACTED #community/Community_397

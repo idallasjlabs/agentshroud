@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pm/SKILL.md"
+source_file: ".agents/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "Skill: Project Management (PM) (2)"
-location: "L7"
+community: "Community 485"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM_2
+  - community/Community_485
 ---
 
 # Role
 
 ## Connections
-- [[Skill Project Management (PM)_2]] - `contains` [EXTRACTED]
+- [[Skill MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM_2
+#graphify/document #graphify/EXTRACTED #community/Community_485

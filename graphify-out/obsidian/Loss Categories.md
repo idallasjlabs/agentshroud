@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/v0.7.0-remediation-plan.md"
+source_file: ".agents/agents/sec-defense.md"
 type: "document"
-community: "Phase 3: MITIGATE (Rollback First!)"
-location: "L19"
+community: "Community 1279"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First
+  - community/Community_1279
 ---
 
 # Loss Categories
 
 ## Connections
-- [[AgentShroud v0.7.0 — Red Team Remediation Plan]] - `contains` [EXTRACTED]
+- [[Methodology]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First
+#graphify/document #graphify/EXTRACTED #community/Community_1279

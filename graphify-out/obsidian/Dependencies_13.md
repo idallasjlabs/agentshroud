@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ti/SKILL.md"
+source_file: ".cursor/agents/i-mm.md"
 type: "document"
-community: "AgentShroud v0.7.0 — Red Team Remediation Plan"
-location: "L301"
+community: "Community 624"
+location: "L339"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070__Red_Team_Remediation_Plan
+  - community/Community_624
 ---
 
 # Dependencies
 
 ## Connections
-- [[Skill Technical Illustrator (TI)]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070__Red_Team_Remediation_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_624

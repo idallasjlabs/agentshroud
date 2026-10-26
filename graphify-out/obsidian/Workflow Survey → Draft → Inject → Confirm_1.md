@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-session-prompt/SKILL.md"
+source_file: ".agents/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "ModeRequest (2)"
-location: "L20"
+community: "Community 745"
+location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ModeRequest_2
+  - community/Community_745
 ---
 
 # Workflow: Survey → Draft → Inject → Confirm
@@ -20,4 +20,4 @@ tags:
 - [[Step 5 — Inject into All Three LLMs_1]] - `contains` [EXTRACTED]
 - [[Step 6 — Confirm_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ModeRequest_2
+#graphify/document #graphify/EXTRACTED #community/Community_745

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
+source_file: ".agents/skills/i-bs/SKILL.md"
 type: "document"
-community: "Skill: UI Expert (UI) (2)"
-location: "L27"
+community: "Community 483"
+location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UI_Expert_UI_2
+  - community/Community_483
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Mindmap Architect (MM)_1]] - `contains` [EXTRACTED]
+- [[Skill Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI_2
+#graphify/document #graphify/EXTRACTED #community/Community_483

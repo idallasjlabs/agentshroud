@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/dns_forwarder.py"
+source_file: "scripts/list_registry_ghsa_ids.py"
 type: "code"
-community: "TestOAuthInjection"
-location: "L309"
+community: "Community 934"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOAuthInjection
+  - community/Community_934
 ---
 
 # main()
 
 ## Connections
-- [[dns_forwarder.py]] - `contains` [EXTRACTED]
-- [[start_dns_forwarder()]] - `calls` [EXTRACTED]
+- [[list_registry_ghsa_ids.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection
+#graphify/code #graphify/EXTRACTED #community/Community_934

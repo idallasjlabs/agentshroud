@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE) (2)"
-location: "L69"
+community: "Community 308"
+location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_2
+  - community/Community_308
 ---
 
 # Option 1: Interactive Configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Configure New Profile_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_2
+#graphify/document #graphify/EXTRACTED #community/Community_308

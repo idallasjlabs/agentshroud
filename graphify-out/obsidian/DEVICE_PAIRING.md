@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "BotConfig (2)"
+community: "Community 1315"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BotConfig_2
+  - community/Community_1315
 ---
 
 # DEVICE_PAIRING.md
@@ -16,4 +16,4 @@ tags:
 - [[Four-Layer Access Security Model (Password  Pairing  Allowlist  Approval)]] - `references` [EXTRACTED]
 - [[Ultra-Conservative Credential Display Policy]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/BotConfig_2
+#graphify/document #graphify/EXTRACTED #community/Community_1315

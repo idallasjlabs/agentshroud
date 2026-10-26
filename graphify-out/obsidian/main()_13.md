@@ -1,23 +1,21 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "gateway/skills/scan.py"
 type: "code"
-community: "Job details"
-location: "L524"
+community: "Community 133"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Job_details
+  - community/Community_133
 ---
 
 # main()
 
 ## Connections
-- [[build_id_plan()]] - `calls` [EXTRACTED]
-- [[compute_stats()]] - `calls` [EXTRACTED]
-- [[gather_advisories()]] - `calls` [EXTRACTED]
-- [[load_registry()_1]] - `calls` [EXTRACTED]
-- [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
-- [[render_manual_review()]] - `calls` [EXTRACTED]
-- [[rewrite_registry_text()_1]] - `calls` [EXTRACTED]
+- [[Path_22]] - `calls` [EXTRACTED]
+- [[SkillGuard]] - `calls` [EXTRACTED]
+- [[_build_tree()]] - `calls` [EXTRACTED]
+- [[_print_findings()]] - `calls` [EXTRACTED]
+- [[scan.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Job_details
+#graphify/code #graphify/EXTRACTED #community/Community_133

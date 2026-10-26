@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-crpr/SKILL.md"
+source_file: ".cursor/agents/i-crpr.md"
 type: "document"
-community: "Skill: Create PR with Pre-Flight Audit (CRPR) (3)"
-location: "L17"
+community: "Community 1303"
+location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR_3
+  - community/Community_1303
 ---
 
 # Invocation
 
 ## Connections
-- [[Skill Create PR with Pre-Flight Audit (CRPR)_1]] - `contains` [EXTRACTED]
+- [[Skill Create PR with Pre-Flight Audit (CRPR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR_3
+#graphify/document #graphify/EXTRACTED #community/Community_1303

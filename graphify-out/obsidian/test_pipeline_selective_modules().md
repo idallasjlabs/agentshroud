@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "test_security_integration.py"
+community: "Community 7"
 location: "L275"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_integrationpy
+  - community/Community_7
 ---
 
 # test_pipeline_selective_modules()
 
 ## Connections
-- [[PIIConfig_2]] - `calls` [EXTRACTED]
-- [[PIISanitizer_3]] - `calls` [EXTRACTED]
+- [[PIIConfig]] - `calls` [EXTRACTED]
+- [[PIISanitizer]] - `calls` [EXTRACTED]
 - [[Pipeline with only PII enabled, prompt guard disabled.]] - `rationale_for` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_integrationpy
+#graphify/code #graphify/EXTRACTED #community/Community_7

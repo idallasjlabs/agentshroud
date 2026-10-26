@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mm/SKILL.md"
+source_file: ".agents/agents/i-tw.md"
 type: "document"
-community: "OpenClaw Management Scripts"
-location: "L42"
+community: "Community 712"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Management_Scripts
+  - community/Community_712
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Mindmap Architect (MM)]] - `contains` [EXTRACTED]
+- [[Skill Technical Writer (TW)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts
+#graphify/document #graphify/EXTRACTED #community/Community_712

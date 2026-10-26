@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
+source_file: ".github/agents/i-sec-offense.agent.md"
 type: "document"
-community: "TestHandleEvent"
-location: "L150"
+community: "Community 1075"
+location: "L372"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestHandleEvent
+  - community/Community_1075
 ---
 
 # Infrastructure
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestHandleEvent
+#graphify/document #graphify/EXTRACTED #community/Community_1075

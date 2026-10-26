@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "FileSandbox"
+community: "Community 31"
 location: "L102"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/Community_31
 ---
 
 # Agent cannot modify SOUL.md behavioral instructions.
 
 ## Connections
-- [[dot-test_soul_md_write_blocked()]] - `rationale_for` [EXTRACTED]
+- [[.test_soul_md_write_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FileSandbox
+#graphify/rationale #graphify/EXTRACTED #community/Community_31

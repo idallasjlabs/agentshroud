@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/04-separation-of-privilege.md"
+source_file: "docs/planning/redteam/03-session-isolation.md"
 type: "document"
-community: "🟢 INFO (nice to have)"
+community: "Community 608"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_INFO_nice_to_have
+  - community/Community_608
 ---
 
 # Problem
 
 ## Connections
-- [[Make gateway source code, config, and security policies read-only to the agent]] - `contains` [EXTRACTED]
+- [[Implement per-user session isolation using Telegram user ID]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_INFO_nice_to_have
+#graphify/document #graphify/EXTRACTED #community/Community_608

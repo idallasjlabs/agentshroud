@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
+source_file: "docs/vault/09 - Diagrams/Full System Flowchart.md"
 type: "document"
-community: "Dockerfile — Gateway"
-location: "L96"
+community: "Community 390"
+location: "L129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dockerfile__Gateway
+  - community/Community_390
 ---
 
 # Related Notes
 
 ## Connections
-- [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
+- [[Full System Flowchart_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dockerfile__Gateway
+#graphify/document #graphify/EXTRACTED #community/Community_390

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-13-network-security-egress.svg"
 type: "concept"
-community: "frame.sh"
+community: "Community 1094"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/framesh
+  - community/Community_1094
 ---
 
 # Connection logged (timestamp, domain, allowed/blocked, count)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[HTTP CONNECT tunnel to gateway8181]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/framesh
+#graphify/concept #graphify/EXTRACTED #community/Community_1094

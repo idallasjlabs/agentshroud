@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "rationale"
-community: "EgressFilterConfig (2)"
+community: "Community 17"
 location: "L328"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/Community_17
 ---
 
 # Get the effective allowlist for a specific agent.
 
 ## Connections
-- [[dot-get_effective_allowlist()]] - `rationale_for` [EXTRACTED]
+- [[.get_effective_allowlist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_17

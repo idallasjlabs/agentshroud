@@ -1,18 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "ApprovalQueueConfig (7)"
-location: "L1"
+community: "Community 389"
+location: "L79"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_7
+  - community/Community_389
 ---
 
-# MCP Proxy Errors.md
+# MCP Proxy Errors
 
 ## Connections
-- [[Error Index]] - `references` [EXTRACTED]
-- [[MCP Proxy Errors_1]] - `contains` [EXTRACTED]
+- [[Error Index_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_7
+#graphify/document #graphify/EXTRACTED #community/Community_389

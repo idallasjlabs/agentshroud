@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-21-team-structure.svg"
 type: "concept"
-community: "AgentShroud™ Communication Templates"
+community: "Community 970"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Communication_Templates
+  - community/Community_970
 ---
 
 # Gemini CLI — Test Engineer / Secondary Developer
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Claude Code (claude-sonnet-4-6) — Lead Engineer  Primary Developer]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Communication_Templates
+#graphify/concept #graphify/EXTRACTED #community/Community_970

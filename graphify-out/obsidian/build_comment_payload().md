@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
+source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "code"
-community: "test_hermes_cron_seed.py"
+community: "Community 194"
 location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_cron_seedpy
+  - community/Community_194
 ---
 
 # build_comment_payload()
@@ -16,6 +16,6 @@ tags:
 - [[Build the Atlassian Document Format (ADF) body for POST ...comment.      The RE]] - `rationale_for` [EXTRACTED]
 - [[_adf_doc()]] - `calls` [EXTRACTED]
 - [[add_comment()]] - `calls` [EXTRACTED]
-- [[openclawworkspacejira_dev_ticket.py]] - `contains` [EXTRACTED]
+- [[jira_dev_ticket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_cron_seedpy
+#graphify/code #graphify/EXTRACTED #community/Community_194

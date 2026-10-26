@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
 type: "code"
-community: "test_cli_coverage.py"
+community: "Community 492"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/Community_492
 ---
 
 # ModelCost
@@ -15,4 +15,4 @@ tags:
 - [[model_usage.py]] - `contains` [EXTRACTED]
 - [[pick_current_model()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/code #graphify/EXTRACTED #community/Community_492

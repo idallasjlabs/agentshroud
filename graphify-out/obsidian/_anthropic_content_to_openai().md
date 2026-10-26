@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/anthropic_openai_translator.py"
 type: "code"
-community: "Function Details (8)"
+community: "Community 360"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Function_Details_8
+  - community/Community_360
 ---
 
 # _anthropic_content_to_openai()
@@ -16,4 +16,4 @@ tags:
 - [[anthropic_openai_translator.py]] - `contains` [EXTRACTED]
 - [[anthropic_to_openai_request()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Function_Details_8
+#graphify/code #graphify/EXTRACTED #community/Community_360

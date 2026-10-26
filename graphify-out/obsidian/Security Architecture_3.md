@@ -1,24 +1,17 @@
 ---
-source_file: "SECURITY.md"
+source_file: ".github/agents/i-browser.agent.md"
 type: "document"
-community: "agentshroud-ieee-paper.md"
-location: "L15"
+community: "Community 449"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-ieee-papermd
+  - community/Community_449
 ---
 
 # Security Architecture
 
 ## Connections
-- [[AgentShroud™ Security Policy]] - `contains` [EXTRACTED]
-- [[Layer 1 — Core Pipeline (P0)]] - `contains` [EXTRACTED]
-- [[Layer 2 — Middleware (P1)]] - `contains` [EXTRACTED]
-- [[Layer 3 — Output Protection]] - `contains` [EXTRACTED]
-- [[Layer 4 — Tool & Agent Control]] - `contains` [EXTRACTED]
-- [[Layer 5 — Network & Egress]] - `contains` [EXTRACTED]
-- [[Layer 6 — File & Memory Integrity]] - `contains` [EXTRACTED]
-- [[Layer 7 — Infrastructure & Supply Chain]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-ieee-papermd
+#graphify/document #graphify/EXTRACTED #community/Community_449

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/MASTER-FEATURE-LIST.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "package_skill"
-location: "L406"
+community: "Community 2016"
+location: "L905"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/package_skill
+  - community/Community_2016
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - `contains` [EXTRACTED]
+- [[Unreleased — feathttp-connect-proxy + featcredential-isolation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/package_skill
+#graphify/document #graphify/EXTRACTED #community/Community_2016

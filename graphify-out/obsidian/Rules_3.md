@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ux/SKILL.md"
+source_file: ".agents/agents/i-tdd.md"
 type: "document"
-community: "Skill: UX Expert (UX)"
-location: "L29"
+community: "Community 1444"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX
+  - community/Community_1444
 ---
 
 # Rules
 
 ## Connections
-- [[Skill UX Expert (UX)]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX
+#graphify/document #graphify/EXTRACTED #community/Community_1444

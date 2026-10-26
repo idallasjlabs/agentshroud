@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/README.md"
 type: "document"
-community: "port_manager.py"
+community: "Community 1036"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/port_managerpy
+  - community/Community_1036
 ---
 
 # Planning Docs Index (redteam, reviews, recovery, version buckets)
@@ -14,4 +14,4 @@ tags:
 - [[Recovery Plan v0.4.0 — Systematic Stabilization]] - `references` [EXTRACTED]
 - [[Security Hardening Plan Reset — Real Agent Containment v0.8]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/port_managerpy
+#graphify/document #graphify/EXTRACTED #community/Community_1036

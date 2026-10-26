@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
 type: "document"
-community: "DelegationManager"
+community: "Community 73"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/Community_73
 ---
 
 # Default Search Order (when NOT set)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DelegationManager
+#graphify/document #graphify/EXTRACTED #community/Community_73

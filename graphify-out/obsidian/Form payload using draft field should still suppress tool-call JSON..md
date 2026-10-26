@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "Community 2421"
 location: "L2547"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/Community_2421
 ---
 
 # Form payload using draft field should still suppress tool-call JSON.
 
 ## Connections
-- [[dot-test_form_payload_with_draft_field_is_filtered()]] - `rationale_for` [EXTRACTED]
+- [[.test_form_payload_with_draft_field_is_filtered()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_2421

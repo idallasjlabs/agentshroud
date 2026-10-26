@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "Community 7"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # Create a test configuration      Uses regex fallback for PII (no spaCy model req
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

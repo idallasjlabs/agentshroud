@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-offense/README.md"
+source_file: ".cursor/agents/graphify.md"
 type: "document"
-community: "launch-instance.sh"
-location: "L10"
+community: "Community 926"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/launch-instancesh
+  - community/Community_926
 ---
 
 # Usage
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - `contains` [EXTRACTED]
+- [[graphify_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/launch-instancesh
+#graphify/document #graphify/EXTRACTED #community/Community_926

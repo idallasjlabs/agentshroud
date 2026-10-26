@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "AuditExporter"
+community: "Community 195"
 location: "L250"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/Community_195
 ---
 
 # Terminal Control Center
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Control Centers]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditExporter
+#graphify/document #graphify/EXTRACTED #community/Community_195

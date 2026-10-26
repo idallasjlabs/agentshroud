@@ -1,25 +1,25 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
 type: "document"
-community: "drift_detector.py"
+community: "Community 539"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/drift_detectorpy
+  - community/Community_539
 ---
 
 # key_vault.py
 
 ## Connections
-- [[Configuration  Environment Variables_1]] - `contains` [EXTRACTED]
-- [[Function Details_7]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_24]] - `contains` [EXTRACTED]
+- [[Function Details_42]] - `contains` [EXTRACTED]
 - [[Generic Key Patterns Detected]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_7]] - `contains` [EXTRACTED]
-- [[Purpose_90]] - `contains` [EXTRACTED]
-- [[Related_11]] - `contains` [EXTRACTED]
-- [[Responsibilities_9]] - `contains` [EXTRACTED]
-- [[Threat Model_8]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_45]] - `contains` [EXTRACTED]
+- [[Purpose_163]] - `contains` [EXTRACTED]
+- [[Related_49]] - `contains` [EXTRACTED]
+- [[Responsibilities_47]] - `contains` [EXTRACTED]
+- [[Threat Model_18]] - `contains` [EXTRACTED]
 - [[key_vault.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/drift_detectorpy
+#graphify/document #graphify/EXTRACTED #community/Community_539

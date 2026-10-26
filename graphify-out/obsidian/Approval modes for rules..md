@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "SkillGuard"
+community: "Community 6"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/Community_6
 ---
 
 # Approval modes for rules.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ApprovalMode]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SkillGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_6

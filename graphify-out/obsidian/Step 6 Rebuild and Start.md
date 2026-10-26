@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup-telegram.md"
 type: "document"
-community: "First Time Setup (2)"
+community: "Community 324"
 location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_Time_Setup_2
+  - community/Community_324
 ---
 
 # Step 6: Rebuild and Start
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Telegram Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_Time_Setup_2
+#graphify/document #graphify/EXTRACTED #community/Community_324

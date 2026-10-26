@@ -1,17 +1,17 @@
 ---
 source_file: "opencode.json"
 type: "code"
-community: "opencode.json"
-location: "L66"
+community: "Community 159"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/opencodejson
+  - community/Community_159
 ---
 
 # type
 
 ## Connections
-- [[home-assistant]] - `contains` [EXTRACTED]
+- [[safari_5]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/opencodejson
+#graphify/code #graphify/EXTRACTED #community/Community_159

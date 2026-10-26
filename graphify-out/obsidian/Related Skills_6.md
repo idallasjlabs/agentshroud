@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pr/README.md"
+source_file: ".agents/skills/aws/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md (2)"
+community: "Community 2066"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd_2
+  - community/Community_2066
 ---
 
 # Related Skills
 
 ## Connections
-- [[Pull Request Generator (PR)]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_2
+#graphify/document #graphify/EXTRACTED #community/Community_2066

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
+source_file: ".agents/skills/mac-app-discovery/SKILL.md"
 type: "document"
-community: "ENTERPRISE GOVERNANCE PROXY SYSTEM AND METHOD FOR POLICY-ENFORCED INTERCEPTION, INSPECTION, AND MEDIATION OF AUTONOMOUS AI AGENT COMMUNICATIONS WITH EXTERNAL SYSTEMS"
+community: "Community 870"
 location: "L287"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ENTERPRISE_GOVERNANCE_PROXY_SYSTEM_AND_METHOD_FOR_POLICY-ENFORCED_INTERCEPTION_INSPECTION_AND_MEDIATION_OF_AUTONOMOUS_AI_AGENT_COMMUNICATIONS_WITH_EXTERNAL_SYSTEMS
+  - community/Community_870
 ---
 
 # Phase 5 — Output Generation
@@ -16,4 +16,4 @@ tags:
 - [[B. `mac_app_catalog.md` — Human-readable catalog_1]] - `contains` [EXTRACTED]
 - [[Discovery Strategy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ENTERPRISE_GOVERNANCE_PROXY_SYSTEM_AND_METHOD_FOR_POLICY-ENFORCED_INTERCEPTION_INSPECTION_AND_MEDIATION_OF_AUTONOMOUS_AI_AGENT_COMMUNICATIONS_WITH_EXTERNAL_SYSTEMS
+#graphify/document #graphify/EXTRACTED #community/Community_870

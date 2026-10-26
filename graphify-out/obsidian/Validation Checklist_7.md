@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
+source_file: ".cursor/agents/i-ti.md"
 type: "document"
-community: "start-agentshroud.sh"
-location: "L286"
+community: "Community 893"
+location: "L289"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/start-agentshroudsh
+  - community/Community_893
 ---
 
 # Validation Checklist
 
 ## Connections
-- [[Skill Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/start-agentshroudsh
+#graphify/document #graphify/EXTRACTED #community/Community_893

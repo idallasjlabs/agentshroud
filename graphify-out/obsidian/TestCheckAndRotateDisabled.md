@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "test_key_rotation_internals.py"
+community: "Community 381"
 location: "L233"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_key_rotation_internalspy
+  - community/Community_381
 ---
 
 # TestCheckAndRotateDisabled
 
 ## Connections
-- [[dot-test_scheduled_rotation_disabled_short_circuits()]] - `method` [EXTRACTED]
+- [[.test_scheduled_rotation_disabled_short_circuits()]] - `method` [EXTRACTED]
 - [[CredentialInfo]] - `uses` [INFERRED]
 - [[CredentialValidator]] - `uses` [INFERRED]
-- [[KeyRotationConfig]] - `uses` [INFERRED]
+- [[KeyRotationConfig_1]] - `uses` [INFERRED]
 - [[KeyRotationManager]] - `uses` [INFERRED]
 - [[RotationStatus]] - `uses` [INFERRED]
 - [[test_key_rotation_internals.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_key_rotation_internalspy
+#graphify/code #graphify/INFERRED #community/Community_381

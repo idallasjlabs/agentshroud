@@ -1,17 +1,17 @@
 ---
-source_file: "docs/data/README.md"
+source_file: "docs/requirements/README.md"
 type: "document"
-community: "canvas_proxy_app"
-location: "L13"
+community: "Community 1056"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/canvas_proxy_app
+  - community/Community_1056
 ---
 
 # Current Status
 
 ## Connections
-- [[Data Documentation]] - `contains` [EXTRACTED]
+- [[Requirements Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/canvas_proxy_app
+#graphify/document #graphify/EXTRACTED #community/Community_1056

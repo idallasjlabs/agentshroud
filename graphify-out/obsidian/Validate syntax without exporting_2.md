@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
+source_file: ".cursor/agents/i-ti.md"
 type: "document"
-community: "Path (3)"
-location: "L251"
+community: "Community 893"
+location: "L254"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Path_3
+  - community/Community_893
 ---
 
 # Validate syntax without exporting
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Rendering and Export_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Path_3
+#graphify/document #graphify/EXTRACTED #community/Community_893

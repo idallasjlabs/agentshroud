@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "rationale"
-community: "test_forward_stream.py"
+community: "Community 130"
 location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/Community_130
 ---
 
 # Verify CONTRIBUTING.md references are correct.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestContributingMdAccuracy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/rationale #graphify/EXTRACTED #community/Community_130

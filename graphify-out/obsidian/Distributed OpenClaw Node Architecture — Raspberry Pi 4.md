@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Docker Volumes"
+community: "Community 463"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Volumes
+  - community/Community_463
 ---
 
 # Distributed OpenClaw Node Architecture — Raspberry Pi 4
@@ -16,15 +16,17 @@ tags:
 - [[Architecture Comparison]] - `contains` [EXTRACTED]
 - [[Comparison Matrix]] - `contains` [EXTRACTED]
 - [[Concept Overview]] - `contains` [EXTRACTED]
-- [[Conclusion_1]] - `contains` [EXTRACTED]
+- [[Conclusion]] - `contains` [EXTRACTED]
 - [[Cost-Benefit Analysis]] - `contains` [EXTRACTED]
 - [[DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE]] - `contains` [EXTRACTED]
+- [[Implementation Plan]] - `contains` [EXTRACTED]
 - [[Key Benefits]] - `contains` [EXTRACTED]
 - [[Migration Path (SSH → Distributed Node)]] - `contains` [EXTRACTED]
+- [[Monitoring & Observability]] - `contains` [EXTRACTED]
 - [[Monitoring and Observability]] - `contains` [EXTRACTED]
-- [[Next Steps_5]] - `contains` [EXTRACTED]
+- [[Next Steps_1]] - `contains` [EXTRACTED]
 - [[Resources]] - `contains` [EXTRACTED]
-- [[Security Architecture_4]] - `contains` [EXTRACTED]
-- [[Use Cases_1]] - `contains` [EXTRACTED]
+- [[Security Architecture_9]] - `contains` [EXTRACTED]
+- [[Use Cases]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Volumes
+#graphify/document #graphify/EXTRACTED #community/Community_463

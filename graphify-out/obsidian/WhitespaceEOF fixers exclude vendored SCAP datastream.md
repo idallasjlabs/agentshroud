@@ -1,14 +1,14 @@
 ---
 source_file: ".pre-commit-config.yaml"
 type: "rationale"
-community: "Collaborator Greeter State Debug Helper"
+community: "Community 1867"
 location: "39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Greeter_State_Debug_Helper
+  - community/Community_1867
 ---
 
 # Whitespace/EOF fixers exclude vendored SCAP datastream
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Greeter_State_Debug_Helper
+#graphify/rationale #graphify/EXTRACTED #community/Community_1867

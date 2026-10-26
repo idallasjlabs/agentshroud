@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
+source_file: "docker/config/openclaw/skills/i-mnemosyne/README.md"
 type: "document"
-community: "Update AgentShroud"
-location: "L12"
+community: "Community 1237"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Update_AgentShroud
+  - community/Community_1237
 ---
 
 # Purpose
 
 ## Connections
-- [[models.py_1]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Update_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Community_1237

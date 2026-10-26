@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "TestOutboundPipelineIntegration"
+community: "Community 21"
 location: "L158"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutboundPipelineIntegration
+  - community/Community_21
 ---
 
 # Per-agent policies override the default.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPerAgentPolicy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutboundPipelineIntegration
+#graphify/rationale #graphify/EXTRACTED #community/Community_21

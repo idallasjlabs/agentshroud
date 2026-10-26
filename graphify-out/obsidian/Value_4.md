@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md"
+source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
 type: "document"
-community: "MCP AWS Profile Configuration README"
+community: "Community 73"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_AWS_Profile_Configuration_README
+  - community/Community_73
 ---
 
 # Value
 
 ## Connections
-- [[ANTHROPIC_BASE_URL_1]] - `contains` [EXTRACTED]
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_README
+#graphify/document #graphify/EXTRACTED #community/Community_73

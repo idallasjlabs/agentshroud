@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "docker-cleanup.sh"
+community: "Community 164"
 location: "L278"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker-cleanupsh
+  - community/Community_164
 ---
 
 # Multi-Layer Detection Strategy
@@ -15,6 +15,7 @@ tags:
 - [[Layer 1 Pattern Matching]] - `contains` [EXTRACTED]
 - [[Layer 2 Unicode Normalization]] - `contains` [EXTRACTED]
 - [[Layer 3 Multi-Layer Decoding]] - `contains` [EXTRACTED]
+- [[Prompt Injection Defense]] - `contains` [EXTRACTED]
 - [[Prompt Injection Detected]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker-cleanupsh
+#graphify/document #graphify/EXTRACTED #community/Community_164

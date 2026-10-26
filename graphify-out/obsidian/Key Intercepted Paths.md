@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/05 - Dependencies/openclaw.md"
 type: "document"
-community: "OpenClaw cron: AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)"
+community: "Community 368"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh
+  - community/Community_368
 ---
 
 # Key Intercepted Paths
 
 ## Connections
-- [[OpenClaw_1]] - `contains` [EXTRACTED]
+- [[OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh
+#graphify/document #graphify/EXTRACTED #community/Community_368

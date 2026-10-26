@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/secrets-inventory.md"
 type: "concept"
-community: "Slack Channel Setup (2)"
+community: "Community 445"
 tags:
   - graphify/concept
-  - graphify/EXTRACTED
-  - community/Slack_Channel_Setup_2
+  - graphify/INFERRED
+  - community/Community_445
 ---
 
 # Credential Rotation Checklist
@@ -14,4 +14,4 @@ tags:
 - [[Pre-Purge Secret Rotation Checklist]] - `shares_data_with` [INFERRED]
 - [[Real Credentials Present in Git History]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Slack_Channel_Setup_2
+#graphify/concept #graphify/INFERRED #community/Community_445

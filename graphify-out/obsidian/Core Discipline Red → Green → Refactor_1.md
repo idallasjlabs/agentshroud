@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-tdd/SKILL.md"
+source_file: ".agents/skills/i-tdd/SKILL.md"
 type: "document"
-community: "workspace.sh"
-location: "L11"
+community: "Community 746"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/workspacesh
+  - community/Community_746
 ---
 
 # Core Discipline: Red → Green → Refactor
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/workspacesh
+#graphify/document #graphify/EXTRACTED #community/Community_746

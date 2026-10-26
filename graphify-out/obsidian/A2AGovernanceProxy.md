@@ -1,39 +1,39 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "api.py"
+community: "Community 44"
 location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/Community_44
 ---
 
 # A2AGovernanceProxy
 
 ## Connections
-- [[dot-__init__()_150]] - `method` [EXTRACTED]
-- [[dot-_check_message_size()]] - `method` [EXTRACTED]
-- [[dot-_check_peer()]] - `method` [EXTRACTED]
-- [[dot-_check_rate_limit()]] - `method` [EXTRACTED]
-- [[dot-_check_task_concurrency()]] - `method` [EXTRACTED]
-- [[dot-_finalize()]] - `method` [EXTRACTED]
-- [[dot-_process()]] - `method` [EXTRACTED]
-- [[dot-_sanitize_message()]] - `method` [EXTRACTED]
-- [[dot-complete_task()]] - `method` [EXTRACTED]
-- [[dot-get_events()_2]] - `method` [EXTRACTED]
-- [[dot-get_peer()]] - `method` [EXTRACTED]
-- [[dot-get_summary()_1]] - `method` [EXTRACTED]
-- [[dot-process_inbound()_7]] - `method` [EXTRACTED]
-- [[dot-process_outbound()_4]] - `method` [EXTRACTED]
-- [[dot-register_peer()_1]] - `method` [EXTRACTED]
-- [[dot-test_complete_task_frees_slot()]] - `calls` [EXTRACTED]
-- [[dot-test_disabled_allows_all()]] - `calls` [EXTRACTED]
-- [[dot-test_oversized_denied()]] - `calls` [EXTRACTED]
-- [[dot-test_rate_limit_exceeded()_1]] - `calls` [EXTRACTED]
-- [[dot-test_task_limit_exceeded()]] - `calls` [EXTRACTED]
-- [[dot-unregister_peer()]] - `method` [EXTRACTED]
-- [[dot-update_peer_trust()]] - `method` [EXTRACTED]
+- [[.__init__()_49]] - `method` [EXTRACTED]
+- [[._check_message_size()]] - `method` [EXTRACTED]
+- [[._check_peer()]] - `method` [EXTRACTED]
+- [[._check_rate_limit()]] - `method` [EXTRACTED]
+- [[._check_task_concurrency()]] - `method` [EXTRACTED]
+- [[._finalize()]] - `method` [EXTRACTED]
+- [[._process()]] - `method` [EXTRACTED]
+- [[._sanitize_message()]] - `method` [EXTRACTED]
+- [[.complete_task()]] - `method` [EXTRACTED]
+- [[.get_events()_1]] - `method` [EXTRACTED]
+- [[.get_peer()]] - `method` [EXTRACTED]
+- [[.get_summary()]] - `method` [EXTRACTED]
+- [[.process_inbound()_1]] - `method` [EXTRACTED]
+- [[.process_outbound()_1]] - `method` [EXTRACTED]
+- [[.register_peer()]] - `method` [EXTRACTED]
+- [[.test_complete_task_frees_slot()]] - `calls` [EXTRACTED]
+- [[.test_disabled_allows_all()]] - `calls` [EXTRACTED]
+- [[.test_oversized_denied()]] - `calls` [EXTRACTED]
+- [[.test_rate_limit_exceeded()]] - `calls` [EXTRACTED]
+- [[.test_task_limit_exceeded()]] - `calls` [EXTRACTED]
+- [[.unregister_peer()]] - `method` [EXTRACTED]
+- [[.update_peer_trust()]] - `method` [EXTRACTED]
 - [[A2ADecision]] - `shares_data_with` [EXTRACTED]
 - [[A2AGovernanceConfig]] - `shares_data_with` [EXTRACTED]
 - [[A2AGovernanceEvent]] - `calls` [EXTRACTED]
@@ -47,13 +47,13 @@ tags:
 - [[TestOutboundProcessing]] - `uses` [INFERRED]
 - [[TestPIISanitization]] - `uses` [INFERRED]
 - [[TestPeerManagement]] - `uses` [INFERRED]
-- [[TestRateLimiting_2]] - `uses` [INFERRED]
+- [[TestRateLimiting]] - `uses` [INFERRED]
 - [[TestReporting]] - `uses` [INFERRED]
 - [[TestTaskConcurrency]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `semantically_similar_to` [INFERRED]
 - [[a2a_governance.py]] - `contains` [EXTRACTED]
 - [[monitor_proxy()]] - `calls` [EXTRACTED]
-- [[proxy()_3]] - `calls` [EXTRACTED]
+- [[proxy()]] - `calls` [EXTRACTED]
 - [[test_a2a_governance.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/Community_44

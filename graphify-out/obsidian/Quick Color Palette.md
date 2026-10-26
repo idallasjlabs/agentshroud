@@ -1,12 +1,12 @@
 ---
 source_file: "branding/QUICK-REFERENCE.md"
 type: "document"
-community: "BotConfig (3)"
+community: "Community 586"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BotConfig_3
+  - community/Community_586
 ---
 
 # Quick Color Palette
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Brand Quick Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BotConfig_3
+#graphify/document #graphify/EXTRACTED #community/Community_586

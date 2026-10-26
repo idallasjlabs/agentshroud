@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-capability.md"
 type: "document"
-community: "create_auth_dependency (2) (2)"
+community: "Community 703"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/create_auth_dependency_2_2
+  - community/Community_703
 ---
 
 # Approval-Required Commands
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Request Flow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/create_auth_dependency_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_703

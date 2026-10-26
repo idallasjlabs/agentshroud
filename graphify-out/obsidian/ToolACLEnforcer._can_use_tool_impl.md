@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "test_hermes_model_resolver.py (2)"
+community: "Community 221"
 location: "248"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy_2
+  - community/Community_221
 ---
 
 # ToolACLEnforcer._can_use_tool_impl
@@ -15,4 +15,4 @@ tags:
 - [[ToolACLEnforcer.can_use_tool]] - `calls` [EXTRACTED]
 - [[TrustManager.is_tool_allowed]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy_2
+#graphify/code #graphify/EXTRACTED #community/Community_221

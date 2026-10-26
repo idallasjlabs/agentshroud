@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "rationale"
-community: "AgentShroud v0.9.0"
+community: "Community 167"
 location: "L76"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_v090
+  - community/Community_167
 ---
 
 # The documented agent-facing RECIPE (fenced code) must be scanner-clean.      Thi
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_wrapper_agent_facing_invocation_has_no_plain_http_url()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_v090
+#graphify/rationale #graphify/EXTRACTED #community/Community_167

@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/i-qa/SKILL.md"
 type: "concept"
-community: "asb Canary Service"
+community: "Community 1864"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/asb_Canary_Service
+  - community/Community_1864
 ---
 
 # PostgreSQL RDS (fe-gsdl-poc-database)
 
-#graphify/concept #graphify/EXTRACTED #community/asb_Canary_Service
+#graphify/concept #graphify/EXTRACTED #community/Community_1864

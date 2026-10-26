@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "document"
-community: "MiddlewareManager (4)"
+community: "Community 94"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/Community_94
 ---
 
 # System Overview.md
@@ -15,8 +15,8 @@ tags:
 - [[AgentShroud Security Perimeter]] - `references` [EXTRACTED]
 - [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
 - [[Architecture Overview_2]] - `references` [EXTRACTED]
-- [[Data Flow_1]] - `references` [EXTRACTED]
-- [[Home_1]] - `references` [EXTRACTED]
-- [[Quick Reference_10]] - `references` [EXTRACTED]
+- [[Data Flow]] - `references` [EXTRACTED]
+- [[Home]] - `references` [EXTRACTED]
+- [[Quick Reference_14]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/document #graphify/EXTRACTED #community/Community_94

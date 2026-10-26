@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
 type: "document"
-community: "llm_proxy.py"
+community: "Community 407"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/llm_proxypy
+  - community/Community_407
 ---
 
 # `HTTPConnectProxy._process_connect(reader, writer)`
 
 ## Connections
-- [[Function Details_2]] - `contains` [EXTRACTED]
+- [[Function Details_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/llm_proxypy
+#graphify/document #graphify/EXTRACTED #community/Community_407

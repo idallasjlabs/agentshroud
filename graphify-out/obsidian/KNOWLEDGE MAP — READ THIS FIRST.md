@@ -1,18 +1,17 @@
 ---
-source_file: "CLAUDE.md"
+source_file: ".github/copilot-instructions.md"
 type: "document"
-community: "Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary) (2)"
-location: "L10"
+community: "Community 2022"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary_2
+  - community/Community_2022
 ---
 
 # KNOWLEDGE MAP — READ THIS FIRST
 
 ## Connections
-- [[Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]] - `contains` [EXTRACTED]
-- [[GRAPHIFY — QUERY IT FIRST, THEN KEEP IT CURRENT]] - `contains` [EXTRACTED]
+- [[CLAUDE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary_2
+#graphify/document #graphify/EXTRACTED #community/Community_2022

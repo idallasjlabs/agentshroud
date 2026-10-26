@@ -1,18 +1,17 @@
 ---
-source_file: "docs/architecture/WORKSPACE_DECISION.md"
+source_file: ".agents/skills/icloud/SKILL.md"
 type: "document"
-community: "test_jira_dev_ticket.py"
-location: "L23"
+community: "Community 623"
+location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_jira_dev_ticketpy
+  - community/Community_623
 ---
 
 # Configuration
 
 ## Connections
-- [[Current Setup (Kept)]] - `contains` [EXTRACTED]
-- [[Workspace Configuration Decision]] - `contains` [EXTRACTED]
+- [[iCloud Services_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/Community_623

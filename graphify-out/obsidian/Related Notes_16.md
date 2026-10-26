@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
+source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "OPENCLAW_DISABLE_HOST_FILESYSTEM"
-location: "L36"
+community: "Community 739"
+location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OPENCLAW_DISABLE_HOST_FILESYSTEM
+  - community/Community_739
 ---
 
 # Related Notes
 
 ## Connections
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - `contains` [EXTRACTED]
+- [[4. Environment Variables]] - `contains` [EXTRACTED]
+- [[All Environment Variables_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OPENCLAW_DISABLE_HOST_FILESYSTEM
+#graphify/document #graphify/EXTRACTED #community/Community_739

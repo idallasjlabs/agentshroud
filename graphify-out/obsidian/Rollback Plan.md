@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
 type: "document"
-community: "PHASE_3A_3B_IMPLEMENTATION.md"
+community: "Community 393"
 location: "L257"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PHASE_3A_3B_IMPLEMENTATIONmd
+  - community/Community_393
 ---
 
 # Rollback Plan
@@ -15,6 +15,7 @@ tags:
 - [[Disable seccomp (if causing startup failures)]] - `contains` [EXTRACTED]
 - [[Emergency container access]] - `contains` [EXTRACTED]
 - [[PHASE_3A_3B_IMPLEMENTATION]] - `contains` [EXTRACTED]
+- [[Phase 3A & 3B Implementation Summary]] - `contains` [EXTRACTED]
 - [[Restore hardcoded gateway password (if secret mounting fails)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PHASE_3A_3B_IMPLEMENTATIONmd
+#graphify/document #graphify/EXTRACTED #community/Community_393

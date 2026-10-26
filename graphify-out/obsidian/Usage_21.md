@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-sad/README.md"
+source_file: ".agents/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "TestOutboundInfoFilter (6)"
-location: "L9"
+community: "Community 582"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_6
+  - community/Community_582
 ---
 
 # Usage
 
 ## Connections
-- [[System Audit Documentation]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_6
+#graphify/document #graphify/EXTRACTED #community/Community_582

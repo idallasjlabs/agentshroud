@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "code"
-community: "WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)"
+community: "Community 305"
 location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WS-E_Security_Audit__AgentShroud_v12_Gateway__OpenClaw__Hermes
+  - community/Community_305
 ---
 
 # test_module_model_size_invalid_env_falls_back()
@@ -15,4 +15,4 @@ tags:
 - [[A garbage WHISPER_MODEL_SIZE env value does not break startup.]] - `rationale_for` [EXTRACTED]
 - [[test_voice_stt_model_ab.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WS-E_Security_Audit__AgentShroud_v12_Gateway__OpenClaw__Hermes
+#graphify/code #graphify/EXTRACTED #community/Community_305

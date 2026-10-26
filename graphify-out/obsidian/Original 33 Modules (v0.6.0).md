@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/references/module-inventory.md"
 type: "document"
-community: "TestCredentialLeakDetection"
+community: "Community 937"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestCredentialLeakDetection
+  - community/Community_937
 ---
 
 # Original 33 Modules (v0.6.0)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Module Inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestCredentialLeakDetection
+#graphify/document #graphify/EXTRACTED #community/Community_937

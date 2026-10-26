@@ -1,23 +1,23 @@
 ---
 source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
 type: "document"
-community: "chat_console.py"
+community: "Community 826"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/chat_consolepy
+  - community/Community_826
 ---
 
 # apply-patches.js
 
 ## Connections
-- [[Behavior_1]] - `contains` [EXTRACTED]
+- [[Behavior]] - `contains` [EXTRACTED]
 - [[Patches Applied]] - `contains` [EXTRACTED]
-- [[Purpose_157]] - `contains` [EXTRACTED]
-- [[Related Notes_62]] - `contains` [EXTRACTED]
-- [[Usage_99]] - `contains` [EXTRACTED]
+- [[Purpose_120]] - `contains` [EXTRACTED]
+- [[Related Notes_6]] - `contains` [EXTRACTED]
+- [[Usage_138]] - `contains` [EXTRACTED]
 - [[Why Required]] - `contains` [EXTRACTED]
 - [[apply-patches.js_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/chat_consolepy
+#graphify/document #graphify/EXTRACTED #community/Community_826

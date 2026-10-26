@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "test_voice_latency_guard.py (2)"
+community: "Community 995"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy_2
+  - community/Community_995
 ---
 
 # test_credential_injector.py
@@ -16,8 +16,8 @@ tags:
 - [[TestLeakDetection]] - `contains` [EXTRACTED]
 - [[TestLoadAllSecretFileValues]] - `contains` [EXTRACTED]
 - [[TestOAuthInjection]] - `contains` [EXTRACTED]
-- [[TestStatus_1]] - `contains` [EXTRACTED]
+- [[TestStatus]] - `contains` [EXTRACTED]
 - [[injector()]] - `contains` [EXTRACTED]
 - [[secrets_dir()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy_2
+#graphify/code #graphify/EXTRACTED #community/Community_995

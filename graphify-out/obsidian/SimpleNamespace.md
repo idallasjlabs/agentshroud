@@ -1,30 +1,30 @@
 ---
-source_file: "gateway/tests/test_web_api_coverage.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "AsyncMock"
-location: "L75"
+community: "Community 6"
+location: "L297"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/Community_6
 ---
 
 # SimpleNamespace
 
 ## Connections
-- [[dot-test_default_bot_dockerfile_used()]] - `calls` [EXTRACTED]
-- [[dot-test_disconnect_stops_and_removes_bot()]] - `calls` [EXTRACTED]
-- [[dot-test_fallback_when_default_bot_has_no_dockerfile()]] - `calls` [EXTRACTED]
-- [[dot-test_fallback_when_no_bots()]] - `calls` [EXTRACTED]
-- [[dot-test_first_bot_used_when_no_default_flag()]] - `calls` [EXTRACTED]
-- [[dot-test_get_logs_combined_handles_partial_failure()]] - `calls` [EXTRACTED]
-- [[dot-test_invalid_token_raises_401()]] - `calls` [EXTRACTED]
-- [[dot-test_rebuild_success()]] - `calls` [EXTRACTED]
-- [[dot-test_upgrade_success_with_tests_and_security_review()]] - `calls` [EXTRACTED]
-- [[dot-test_valid_token_authenticates()]] - `calls` [EXTRACTED]
-- [[KillSwitchAction]] - `uses` [INFERRED]
-- [[ModeRequest]] - `uses` [INFERRED]
-- [[UpdateRequest]] - `uses` [INFERRED]
-- [[_container()]] - `references` [EXTRACTED]
+- [[.__init__()_186]] - `calls` [EXTRACTED]
+- [[.test_allowed()]] - `calls` [EXTRACTED]
+- [[.test_blocked()]] - `calls` [EXTRACTED]
+- [[.test_is_group_admin_with_teams_config()]] - `calls` [EXTRACTED]
+- [[.test_object_form()]] - `calls` [EXTRACTED]
+- [[.test_object_form_with_defaults()]] - `calls` [EXTRACTED]
+- [[.test_sanitized()]] - `calls` [EXTRACTED]
+- [[Action_1]] - `uses` [INFERRED]
+- [[PermissionResult]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler]] - `uses` [INFERRED]
+- [[_audit_entry()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/Community_6

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "SkillGuard"
+community: "Community 23"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/Community_23
 ---
 
 # Create EgressApprovalQueue instance for testing.
 
 ## Connections
-- [[dot-approval_queue()]] - `rationale_for` [EXTRACTED]
+- [[.approval_queue()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SkillGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_23

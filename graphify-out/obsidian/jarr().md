@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/testing/impact-map.sh"
 type: "code"
-community: "impact-map.sh (2)"
+community: "Community 2175"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/impact-mapsh_2
+  - community/Community_2175
 ---
 
 # jarr()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[impact-map.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/impact-mapsh_2
+#graphify/code #graphify/EXTRACTED #community/Community_2175

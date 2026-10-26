@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_path_isolation.py"
+source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "rationale"
-community: "PathIsolationManager"
-location: "L24"
+community: "Community 9"
+location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/Community_9
 ---
 
 # Test default configuration values.
 
 ## Connections
-- [[dot-test_default_config()_4]] - `rationale_for` [EXTRACTED]
+- [[.test_default_config()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_9

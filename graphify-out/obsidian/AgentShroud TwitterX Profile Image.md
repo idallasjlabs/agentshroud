@@ -1,13 +1,13 @@
 ---
 source_file: "branding/social/twitter-profile-400x400.png"
 type: "image"
-community: "AGENTSHROUD_VERSION fallback to docker/versions.env"
+community: "Community 1651"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/AGENTSHROUD_VERSION_fallback_to_docker/versionsenv
+  - community/Community_1651
 ---
 
 # AgentShroud Twitter/X Profile Image
 
-#graphify/image #graphify/EXTRACTED #community/AGENTSHROUD_VERSION_fallback_to_docker/versionsenv
+#graphify/image #graphify/EXTRACTED #community/Community_1651

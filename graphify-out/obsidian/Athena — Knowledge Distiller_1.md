@@ -1,21 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
+source_file: ".agents/skills/athena/README.md"
 type: "document"
-community: "GSDE&G Development Master Checklist (2)"
-location: "L6"
+community: "Community 2064"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist_2
+  - community/Community_2064
 ---
 
 # Athena — Knowledge Distiller
 
 ## Connections
-- [[Input Requirements_14]] - `contains` [EXTRACTED]
-- [[Output Format_29]] - `contains` [EXTRACTED]
-- [[Persona_10]] - `contains` [EXTRACTED]
-- [[Role_86]] - `contains` [EXTRACTED]
-- [[hermesskillsi-athenaSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_1]] - `contains` [EXTRACTED]
+- [[README_1]] - `contains` [EXTRACTED]
+- [[Related Skills_4]] - `contains` [EXTRACTED]
+- [[Usage_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_2
+#graphify/document #graphify/EXTRACTED #community/Community_2064

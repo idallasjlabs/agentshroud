@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "stt.py"
-location: "L74"
+community: "Community 1916"
+location: "L674"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sttpy
+  - community/Community_1916
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud v0.8.0 — Blue Team Security Assessment]] - `contains` [EXTRACTED]
+- [[1.0.0 — featv1.0.0 — Fortress (2026-03-31)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sttpy
+#graphify/document #graphify/EXTRACTED #community/Community_1916

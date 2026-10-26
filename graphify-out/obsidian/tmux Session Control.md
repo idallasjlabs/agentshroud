@@ -1,24 +1,24 @@
 ---
 source_file: "skills/openclaw/tmux/SKILL.md"
 type: "document"
-community: "agentshroud-gateway"
+community: "Community 576"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-gateway
+  - community/Community_576
 ---
 
 # tmux Session Control
 
 ## Connections
 - [[Claude Code Session Patterns]] - `contains` [EXTRACTED]
-- [[Common Commands]] - `contains` [EXTRACTED]
+- [[Common Commands_3]] - `contains` [EXTRACTED]
 - [[Example Sessions]] - `contains` [EXTRACTED]
-- [[Notes_5]] - `contains` [EXTRACTED]
+- [[Notes_7]] - `contains` [EXTRACTED]
+- [[SKILL_244]] - `contains` [EXTRACTED]
 - [[Sending Input Safely]] - `contains` [EXTRACTED]
-- [[When NOT to Use]] - `contains` [EXTRACTED]
-- [[When to Use]] - `contains` [EXTRACTED]
-- [[tmuxSKILL]] - `contains` [EXTRACTED]
+- [[When NOT to Use_2]] - `contains` [EXTRACTED]
+- [[When to Use_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway
+#graphify/document #graphify/EXTRACTED #community/Community_576

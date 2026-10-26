@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md"
 type: "document"
-community: "troubleshooting.md"
-location: "L109"
+community: "Community 334"
+location: "L143"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/troubleshootingmd
+  - community/Community_334
 ---
 
 # Related Notes
 
 ## Connections
-- [[Dockerfile — Bot (OpenClaw)]] - `contains` [EXTRACTED]
+- [[Troubleshooting Matrix_1]] - `contains` [EXTRACTED]
+- [[troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/troubleshootingmd
+#graphify/document #graphify/EXTRACTED #community/Community_334

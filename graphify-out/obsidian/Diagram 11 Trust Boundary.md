@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-11-trust-boundary.svg"
 type: "image"
-community: "Animation Guidelines"
+community: "Community 969"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Animation_Guidelines
+  - community/Community_969
 ---
 
 # Diagram 11: Trust Boundary
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Trust Manager (Level 1 security component)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Animation_Guidelines
+#graphify/image #graphify/INFERRED #community/Community_969

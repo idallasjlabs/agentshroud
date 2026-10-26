@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-production/README.md"
+source_file: "docker/config/openclaw/skills/i-daedalus/README.md"
 type: "document"
-community: "MiddlewareManager (8)"
+community: "Community 1229"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_8
+  - community/Community_1229
 ---
 
 # Purpose
 
 ## Connections
-- [[Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_8
+#graphify/document #graphify/EXTRACTED #community/Community_1229

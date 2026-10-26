@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/references/message-composition.md"
 type: "document"
-community: "Multi-Agent Role Matrix"
+community: "Community 475"
 location: "L118"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Multi-Agent_Role_Matrix
+  - community/Community_475
 ---
 
 # Mixed Content (Text + Attachments)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MML for Rich Emails]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix
+#graphify/document #graphify/EXTRACTED #community/Community_475

@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
 type: "document"
-community: "TestParseHostsLine"
+community: "Community 732"
 location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestParseHostsLine
+  - community/Community_732
 ---
 
 # LogSanitizer._sanitize_text(text)
 
 ## Connections
-- [[Function Details_40]] - `contains` [EXTRACTED]
+- [[Function Details_43]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestParseHostsLine
+#graphify/document #graphify/EXTRACTED #community/Community_732

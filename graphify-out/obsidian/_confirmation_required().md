@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "Community 10"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/Community_10
 ---
 
 # _confirmation_required()
@@ -19,13 +19,13 @@ tags:
 - [[killswitch_freeze()]] - `calls` [EXTRACTED]
 - [[killswitch_shutdown()]] - `calls` [EXTRACTED]
 - [[rebuild_all_services()]] - `calls` [EXTRACTED]
-- [[restart_service()]] - `calls` [EXTRACTED]
+- [[restart_service()_1]] - `calls` [EXTRACTED]
 - [[rollback_gateway()]] - `calls` [EXTRACTED]
-- [[socrouter.py]] - `contains` [EXTRACTED]
-- [[stop_service()]] - `calls` [EXTRACTED]
+- [[router.py_1]] - `contains` [EXTRACTED]
+- [[stop_service()_1]] - `calls` [EXTRACTED]
 - [[update_service()]] - `calls` [EXTRACTED]
 - [[upgrade_bot()]] - `calls` [EXTRACTED]
 - [[upgrade_gateway()]] - `calls` [EXTRACTED]
 - [[upgrade_hermes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/Community_10

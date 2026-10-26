@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm/SKILL.md"
+source_file: ".agents/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "First Time Setup"
-location: "L5"
+community: "Community 1085"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_Time_Setup
+  - community/Community_1085
 ---
 
 # Skill: MCP Tools Usage (MCP-TOOLS)
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[10. Troubleshooting]] - `contains` [EXTRACTED]
 - [[Available MCP Servers_1]] - `contains` [EXTRACTED]
-- [[MCP Troubleshooting]] - `contains` [EXTRACTED]
-- [[Role_23]] - `contains` [EXTRACTED]
-- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[hermesskillsi-mcpmSKILL]] - `contains` [EXTRACTED]
+- [[MCP Troubleshooting_1]] - `contains` [EXTRACTED]
+- [[Role_55]] - `contains` [EXTRACTED]
+- [[SKILL_19]] - `contains` [EXTRACTED]
+- [[SKILL_35]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_Time_Setup
+#graphify/document #graphify/EXTRACTED #community/Community_1085

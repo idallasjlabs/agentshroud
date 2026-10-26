@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mc/README.md"
+source_file: ".agents/skills/oracle/README.md"
 type: "document"
-community: "Browser — Secure Browser Automation (SKILL) (2)"
+community: "Community 2088"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_SKILL_2
+  - community/Community_2088
 ---
 
 # Usage
 
 ## Connections
-- [[GSDE&G Development Master Checklist (MC)]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL_2
+#graphify/document #graphify/EXTRACTED #community/Community_2088

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "AgentRegistry"
+community: "Community 100"
 location: "L253"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/Community_100
 ---
 
 # Non-owner channel: high-risk leakage detected before pipeline → blocked.
 
 ## Connections
-- [[dot-test_non_owner_high_risk_leakage_blocked_before_pipeline()]] - `rationale_for` [EXTRACTED]
+- [[.test_non_owner_high_risk_leakage_blocked_before_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry
+#graphify/rationale #graphify/EXTRACTED #community/Community_100

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sav/README.md"
+source_file: "docker/config/hermes/skills/i-oracle/README.md"
 type: "document"
-community: "soc.js"
-location: "L12"
+community: "Community 1216"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_1216
 ---
 
 # Related Skills
 
 ## Connections
-- [[System Audit Vault_1]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_1216

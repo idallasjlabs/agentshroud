@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: ".agents/agents/browser.md"
 type: "document"
-community: "Browser — Secure Browser Automation (2)"
-location: "L62"
+community: "Community 432"
+location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_2
+  - community/Community_432
 ---
 
 # Fill Form
 
 ## Connections
-- [[Usage_62]] - `contains` [EXTRACTED]
+- [[Usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_2
+#graphify/document #graphify/EXTRACTED #community/Community_432

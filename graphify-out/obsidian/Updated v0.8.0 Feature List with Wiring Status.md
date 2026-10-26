@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-wiring-audit.md"
 type: "document"
-community: "GSDE&G Development Master Checklist Skill (2)"
+community: "Community 797"
 location: "L179"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist_Skill_2
+  - community/Community_797
 ---
 
 # Updated v0.8.0 Feature List with Wiring Status
@@ -21,8 +21,9 @@ tags:
 - [[E. Observatory Mode (6) — ALL ✅]] - `contains` [EXTRACTED]
 - [[F. Prompt Injection Hardening (8) — ALL ✅]] - `contains` [EXTRACTED]
 - [[G. Pi-hole DNS Stack (9)]] - `contains` [EXTRACTED]
+- [[H. Enhanced Audit & Compliance (5)]] - `contains` [EXTRACTED]
 - [[I. E2E Verification (4) — ALL ✅]] - `contains` [EXTRACTED]
 - [[J. Code Cleanup (5) — ALL ✅]] - `contains` [EXTRACTED]
 - [[K. Misc Quick Wins (11) — ALL ✅]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_Skill_2
+#graphify/document #graphify/EXTRACTED #community/Community_797

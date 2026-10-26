@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "code"
-community: "AgentShroud v0.9.0"
+community: "Community 167"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_v090
+  - community/Community_167
 ---
 
 # test_wrapper_exists_and_is_executable()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_bots_ssh_exec_wrapper.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_v090
+#graphify/code #graphify/EXTRACTED #community/Community_167

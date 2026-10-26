@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "agentshroud-blueteam/SKILL.md"
+community: "Community 36"
 location: "L301"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/Community_36
 ---
 
 # Lifespan filter should suppress repeated malformed HTTP warning noise.
 
 ## Connections
-- [[dot-test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()]] - `rationale_for` [EXTRACTED]
+- [[.test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/Community_36

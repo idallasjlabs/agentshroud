@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "AgentShroud Blue Team Security Auditor (3)"
+community: "Community 1219"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Blue_Team_Security_Auditor_3
+  - community/Community_1219
 ---
 
 # Layer-by-Layer Breakdown
@@ -20,10 +20,12 @@ tags:
 - [[4. Input Normalization]] - `contains` [EXTRACTED]
 - [[5. PII Sanitization]] - `contains` [EXTRACTED]
 - [[6. Prompt Injection Defense]] - `contains` [EXTRACTED]
+- [[7. Egress Filter]] - `contains` [EXTRACTED]
+- [[8. Security Pipeline]] - `contains` [EXTRACTED]
 - [[9. Proxy Routing]] - `contains` [EXTRACTED]
-- [[Data Flow]] - `contains` [EXTRACTED]
+- [[Data Flow_1]] - `contains` [EXTRACTED]
 - [[EgressFilter_3]] - `contains` [EXTRACTED]
 - [[`SecurityPipeline`]] - `contains` [EXTRACTED]
 - [[approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor_3
+#graphify/document #graphify/EXTRACTED #community/Community_1219

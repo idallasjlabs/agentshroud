@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "GroupRoleResolver"
+community: "Community 39"
 location: "L977"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/Community_39
 ---
 
 # map_http_error_includes_detail()
@@ -15,4 +15,4 @@ tags:
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[map_http_error()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/Community_39

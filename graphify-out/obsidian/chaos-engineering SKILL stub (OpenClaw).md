@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/i-chaos-engineering/SKILL.md"
 type: "document"
-community: "BLOCKED-Awaiting-Dev Outcome"
+community: "Community 1856"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BLOCKED-Awaiting-Dev_Outcome
+  - community/Community_1856
 ---
 
 # chaos-engineering SKILL stub (OpenClaw)
 
-#graphify/document #graphify/EXTRACTED #community/BLOCKED-Awaiting-Dev_Outcome
+#graphify/document #graphify/EXTRACTED #community/Community_1856

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "_make_proxy()"
+community: "Community 34"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_34
 ---
 
 # test_router.py
@@ -15,9 +15,9 @@ tags:
 - [[AgentTarget]] - `imports` [EXTRACTED]
 - [[ForwardError]] - `imports` [EXTRACTED]
 - [[ForwardRequest]] - `imports` [EXTRACTED]
-- [[GatewayConfig_3]] - `imports` [EXTRACTED]
+- [[GatewayConfig_1]] - `imports` [EXTRACTED]
 - [[MultiAgentRouter]] - `imports` [EXTRACTED]
-- [[RouterConfig_1]] - `imports` [EXTRACTED]
+- [[RouterConfig]] - `imports` [EXTRACTED]
 - [[router()_1]] - `contains` [EXTRACTED]
 - [[router_config()]] - `contains` [EXTRACTED]
 - [[test_agent_target_custom_paths()]] - `contains` [EXTRACTED]
@@ -41,4 +41,4 @@ tags:
 - [[test_router_streaming.py]] - `conceptually_related_to` [INFERRED]
 - [[test_scanner_integration_coverage.py]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_34

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "WebProxy"
+community: "Community 71"
 location: "L232"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/Community_71
 ---
 
 # Validate service network isolation.
 
 ## Connections
-- [[dot-_validate_service_network_isolation()]] - `rationale_for` [EXTRACTED]
+- [[._validate_service_network_isolation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_71

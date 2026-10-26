@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_isolation.py"
 type: "rationale"
-community: "test_a2a_policy.py"
+community: "Community 52"
 location: "L18"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/Community_52
 ---
 
 # Helper to create a ContainerConfig with sensible defaults.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/rationale #graphify/EXTRACTED #community/Community_52

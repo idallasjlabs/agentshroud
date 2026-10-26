@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
+source_file: ".cursor/agents/icloud.md"
 type: "document"
-community: "AgentShroud Brand Guidelines"
-location: "L495"
+community: "Community 635"
+location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/Community_635
 ---
 
-# Configuration:
+# Configuration
 
 ## Connections
-- [[Recommended Configuration for Your Use Case]] - `contains` [EXTRACTED]
+- [[iCloud Services_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/document #graphify/EXTRACTED #community/Community_635

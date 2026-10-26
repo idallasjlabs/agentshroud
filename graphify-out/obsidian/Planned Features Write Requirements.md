@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "triage-cve-mitigations.py"
+community: "Community 157"
 location: "L267"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - community/Community_157
 ---
 
 # Planned Features: Write Requirements
@@ -17,4 +17,4 @@ tags:
 - [[Feature OpenSCAP Scanning (Phase 3A)]] - `contains` [EXTRACTED]
 - [[Feature SSH Proxy (Phase 4)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/document #graphify/EXTRACTED #community/Community_157

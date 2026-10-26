@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "Community 27"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/Community_27
 ---
 
 # test_web_proxy.py
@@ -15,7 +15,7 @@ tags:
 - [[AuditChain]] - `imports` [EXTRACTED]
 - [[DomainSettings]] - `imports` [EXTRACTED]
 - [[ProxyAction]] - `imports` [EXTRACTED]
-- [[RateLimiter]] - `imports` [EXTRACTED]
+- [[RateLimiter_1]] - `imports` [EXTRACTED]
 - [[TestAllowlistMode]] - `contains` [EXTRACTED]
 - [[TestAuditChain_1]] - `contains` [EXTRACTED]
 - [[TestContentTypeFiltering]] - `contains` [EXTRACTED]
@@ -25,19 +25,19 @@ tags:
 - [[TestHiddenContent]] - `contains` [EXTRACTED]
 - [[TestIsDomainAllowed]] - `contains` [EXTRACTED]
 - [[TestPIIDetection_2]] - `contains` [EXTRACTED]
-- [[TestPassthroughMode]] - `contains` [EXTRACTED]
+- [[TestPassthroughMode_1]] - `contains` [EXTRACTED]
 - [[TestPromptInjectionDetection]] - `contains` [EXTRACTED]
-- [[TestRateLimiting_1]] - `contains` [EXTRACTED]
+- [[TestRateLimiting_4]] - `contains` [EXTRACTED]
 - [[TestResponseSizeLimits]] - `contains` [EXTRACTED]
 - [[TestSSRFBlocking]] - `contains` [EXTRACTED]
 - [[TestStats_1]] - `contains` [EXTRACTED]
 - [[TestWebProxyConfig]] - `contains` [EXTRACTED]
 - [[TestZeroWidthAttacks]] - `contains` [EXTRACTED]
-- [[WebProxy]] - `imports` [EXTRACTED]
+- [[WebProxy_1]] - `imports` [EXTRACTED]
 - [[WebProxyConfig]] - `imports` [EXTRACTED]
 - [[audit_chain()]] - `contains` [EXTRACTED]
-- [[config()_1]] - `contains` [EXTRACTED]
-- [[passthrough_proxy()]] - `contains` [EXTRACTED]
-- [[proxy()_2]] - `contains` [EXTRACTED]
+- [[config()_4]] - `contains` [EXTRACTED]
+- [[passthrough_proxy()_1]] - `contains` [EXTRACTED]
+- [[proxy()_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/Community_27

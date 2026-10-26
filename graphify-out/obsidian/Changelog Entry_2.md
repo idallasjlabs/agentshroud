@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-tw/SKILL.md"
+source_file: ".cursor/agents/i-tw.md"
 type: "document"
-community: "hermes/SOUL.md"
-location: "L180"
+community: "Community 729"
+location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/SOULmd
+  - community/Community_729
 ---
 
 # Changelog Entry
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[→ {site site1, test_mode True, output_prefix _testsite1}_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/SOULmd
+#graphify/document #graphify/EXTRACTED #community/Community_729

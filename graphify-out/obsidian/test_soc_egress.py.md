@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_egress.py"
 type: "code"
-community: "Enum"
+community: "Community 54"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/Community_54
 ---
 
 # test_soc_egress.py
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[EgressRequest_1]] - `imports` [EXTRACTED]
 - [[EgressStatus]] - `imports` [EXTRACTED]
-- [[RiskLevel_6]] - `imports` [EXTRACTED]
+- [[RiskLevel_5]] - `imports` [EXTRACTED]
 - [[SCLConfirmationRequired]] - `imports` [EXTRACTED]
 - [[SCLError]] - `imports` [EXTRACTED]
 - [[TestConfirmationModel]] - `contains` [EXTRACTED]
 - [[TestEgressRequestModel]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/Community_54

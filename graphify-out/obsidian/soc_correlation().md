@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "TrustConfig"
+community: "Community 6"
 location: "L2329"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/Community_6
 ---
 
 # soc_correlation()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AuthRequired]] - `references` [EXTRACTED]
 - [[Cross-signal SOC correlation summary.]] - `rationale_for` [EXTRACTED]
-- [[get]] - `references` [EXTRACTED]
-- [[ingest_apimain.py]] - `contains` [EXTRACTED]
+- [[build_correlation_summary()]] - `calls` [EXTRACTED]
+- [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/Community_6

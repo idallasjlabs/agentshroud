@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "rationale"
-community: "AgentShroud v0.9.0"
+community: "Community 167"
 location: "L383"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_v090
+  - community/Community_167
 ---
 
 # Belt-and-suspenders: the wrapper must not contain a literal empty Bearer.      T
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_wrapper_never_sends_empty_bearer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_v090
+#graphify/rationale #graphify/EXTRACTED #community/Community_167

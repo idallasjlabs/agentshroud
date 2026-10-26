@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Session Isolation End-to-End Tests"
+community: "Community 1795"
 location: "558"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Isolation_End-to-End_Tests
+  - community/Community_1795
 ---
 
 # ToolACLEnforcer.get_allowed_tools
 
-#graphify/code #graphify/EXTRACTED #community/Session_Isolation_End-to-End_Tests
+#graphify/code #graphify/EXTRACTED #community/Community_1795

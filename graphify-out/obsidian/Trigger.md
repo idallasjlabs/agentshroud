@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/session-logs/SKILL.md"
+source_file: ".agents/agents/i-session-prompt.md"
 type: "document"
-community: "EgressFilterConfig (2) (3)"
-location: "L11"
+community: "Community 1422"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2_3
+  - community/Community_1422
 ---
 
 # Trigger
 
 ## Connections
-- [[session-logs]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilterConfig_2_3
+#graphify/document #graphify/EXTRACTED #community/Community_1422

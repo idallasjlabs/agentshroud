@@ -1,22 +1,21 @@
 ---
-source_file: ".agents/skills/i-data/SKILL.md"
+source_file: ".agents/agents/i-data.md"
 type: "document"
-community: "Identity Reference - AgentShroud System"
-location: "L5"
+community: "Community 1928"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Identity_Reference_-_AgentShroud_System
+  - community/Community_1928
 ---
 
 # Skill: Data Validation (DATA-VAL)
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-dataSKILL]] - `contains` [EXTRACTED]
 - [[Critical Cost Control]] - `contains` [EXTRACTED]
-- [[Role_90]] - `contains` [EXTRACTED]
+- [[Role_13]] - `contains` [EXTRACTED]
 - [[Test Data Validation Pattern]] - `contains` [EXTRACTED]
 - [[Validation Layers]] - `contains` [EXTRACTED]
+- [[i-data]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Identity_Reference_-_AgentShroud_System
+#graphify/document #graphify/EXTRACTED #community/Community_1928

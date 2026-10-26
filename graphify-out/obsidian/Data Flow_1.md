@@ -1,27 +1,22 @@
 ---
 source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "MiddlewareManager (4)"
-location: "L1"
+community: "Community 1219"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/Community_1219
 ---
 
-# Data Flow.md
+# Data Flow
 
 ## Connections
-- [[Architecture Overview_2]] - `references` [EXTRACTED]
 - [[Data Flow]] - `contains` [EXTRACTED]
-- [[DataLedger]] - `references` [EXTRACTED]
-- [[EgressFilter]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue_1]] - `references` [EXTRACTED]
-- [[Home_1]] - `references` [EXTRACTED]
-- [[PromptGuard_1]] - `references` [EXTRACTED]
-- [[SecurityPipeline_1]] - `references` [EXTRACTED]
-- [[System Overview]] - `references` [EXTRACTED]
-- [[ledger.py_2]] - `references` [EXTRACTED]
-- [[main.py_1]] - `references` [EXTRACTED]
+- [[Layer-by-Layer Breakdown]] - `contains` [EXTRACTED]
+- [[Overview_24]] - `contains` [EXTRACTED]
+- [[Related Notes_3]] - `contains` [EXTRACTED]
+- [[Request Flow Diagram]] - `contains` [EXTRACTED]
+- [[Response Path]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/document #graphify/EXTRACTED #community/Community_1219

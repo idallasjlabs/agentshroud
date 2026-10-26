@@ -1,17 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c"
+source_file: "firmware/voice-terminal/test/test_playback_state/test_playback_state.c"
 type: "code"
-community: "test_security_toolchain.py (2)"
-location: "L37"
+community: "Community 228"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy_2
+  - community/Community_228
 ---
 
 # vt_remote_log()
 
 ## Connections
-- [[test_ptt_state.c]] - `contains` [EXTRACTED]
+- [[test_playback_state.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy_2
+#graphify/code #graphify/EXTRACTED #community/Community_228

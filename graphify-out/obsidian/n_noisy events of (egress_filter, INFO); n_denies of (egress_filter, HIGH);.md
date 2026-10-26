@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_archive.py"
 type: "rationale"
-community: "🟢 INFO (nice to have) (2)"
+community: "Community 380"
 location: "L285"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_INFO_nice_to_have_2
+  - community/Community_380
 ---
 
 # n_noisy events of (egress_filter, INFO); n_denies of (egress_filter, HIGH);
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_mixed_live_db()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_INFO_nice_to_have_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_380

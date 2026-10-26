@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
 type: "document"
-community: "llm_proxy.py"
+community: "Community 407"
 location: "L165"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/llm_proxypy
+  - community/Community_407
 ---
 
 # Domain Policy Decision Tree
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[http_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/llm_proxypy
+#graphify/document #graphify/EXTRACTED #community/Community_407

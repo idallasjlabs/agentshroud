@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "ResourceGuard (2)"
+community: "Community 82"
 location: "L1626"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard_2
+  - community/Community_82
 ---
 
 # _appendLogLine()
 
 ## Connections
 - [[_handleWSEvent()]] - `calls` [EXTRACTED]
-- [[_ts()_1]] - `calls` [EXTRACTED]
+- [[_ts()]] - `calls` [EXTRACTED]
 - [[soc.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard_2
+#graphify/code #graphify/EXTRACTED #community/Community_82

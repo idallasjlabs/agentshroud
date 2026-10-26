@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TestInboundPipelineOnGetUpdates"
+community: "Community 4"
 location: "L4751"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestInboundPipelineOnGetUpdates
+  - community/Community_4
 ---
 
 # Minor punctuation obfuscation should not bypass local healthcheck handling.
 
 ## Connections
-- [[dot-test_healthcheck_with_trailing_punctuation_is_handled_locally()]] - `rationale_for` [EXTRACTED]
+- [[.test_healthcheck_with_trailing_punctuation_is_handled_locally()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates
+#graphify/rationale #graphify/EXTRACTED #community/Community_4

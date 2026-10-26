@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "ApprovalQueueConfig (3)"
+community: "Community 10"
 location: "L1803"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/Community_10
 ---
 
 # Live per-module enforcement heat-map (SCRUM-80).      Real allow/block/sanitize
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_modules_heatmap()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_10

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/scripts/browse.py"
+source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "format_cve_report()"
+community: "Community 156"
 location: "L174"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/format_cve_report
+  - community/Community_156
 ---
 
 # Check if action requires approval          Security: Approval queue integration
 
 ## Connections
-- [[dot-_requires_approval()_3]] - `rationale_for` [EXTRACTED]
+- [[._requires_approval()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/format_cve_report
+#graphify/rationale #graphify/EXTRACTED #community/Community_156

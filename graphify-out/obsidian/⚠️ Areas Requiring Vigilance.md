@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-24.md"
 type: "document"
-community: "ApprovalQueueConfig (5) (3)"
+community: "Community 780"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_5_3
+  - community/Community_780
 ---
 
 # ⚠️ **Areas Requiring Vigilance**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[2. Security Value Audit_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_5_3
+#graphify/document #graphify/EXTRACTED #community/Community_780

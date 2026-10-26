@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "rationale"
-community: "MCPPermissionManager (2)"
+community: "Community 7"
 location: "L404"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/Community_7
 ---
 
 # Execute a command on a remote host via SSH.
 
 ## Connections
-- [[dot-execute()]] - `rationale_for` [EXTRACTED]
+- [[.execute()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

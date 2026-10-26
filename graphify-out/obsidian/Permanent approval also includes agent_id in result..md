@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_telegram_notify.py"
 type: "rationale"
-community: "apply-patches.js"
+community: "Community 234"
 location: "L224"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apply-patchesjs
+  - community/Community_234
 ---
 
 # Permanent approval also includes agent_id in result.
 
 ## Connections
-- [[dot-test_handle_callback_allow_always_returns_agent_id()]] - `rationale_for` [EXTRACTED]
+- [[.test_handle_callback_allow_always_returns_agent_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apply-patchesjs
+#graphify/rationale #graphify/EXTRACTED #community/Community_234

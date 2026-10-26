@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "concept"
-community: "_make_proxy()"
+community: "Community 104"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_104
 ---
 
 # Gateway Startup Initialization Order
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Dependency Graph]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/_make_proxy
+#graphify/concept #graphify/EXTRACTED #community/Community_104

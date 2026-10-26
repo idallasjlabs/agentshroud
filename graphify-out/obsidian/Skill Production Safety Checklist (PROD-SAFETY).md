@@ -1,23 +1,22 @@
 ---
-source_file: ".agents/skills/i-ps/SKILL.md"
+source_file: ".agents/agents/i-ps.md"
 type: "document"
-community: "TestSSRFDetection (2)"
-location: "L5"
+community: "Community 921"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSSRFDetection_2
+  - community/Community_921
 ---
 
 # Skill: Production Safety Checklist (PROD-SAFETY)
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-psSKILL]] - `contains` [EXTRACTED]
 - [[If Something Goes Wrong]] - `contains` [EXTRACTED]
 - [[Invoke Before]] - `contains` [EXTRACTED]
 - [[Post-Deployment Verification]] - `contains` [EXTRACTED]
 - [[Pre-Deployment Checklist]] - `contains` [EXTRACTED]
-- [[Role_40]] - `contains` [EXTRACTED]
+- [[Role_26]] - `contains` [EXTRACTED]
+- [[i-ps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSSRFDetection_2
+#graphify/document #graphify/EXTRACTED #community/Community_921

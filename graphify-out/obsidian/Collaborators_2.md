@@ -1,17 +1,18 @@
 ---
-source_file: "docs/planning/MASTER-FEATURE-LIST.md"
+source_file: "docs/setup-telegram.md"
 type: "document"
-community: "package_skill"
-location: "L388"
+community: "Community 324"
+location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/package_skill
+  - community/Community_324
 ---
 
 # Collaborators
 
 ## Connections
-- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - `contains` [EXTRACTED]
+- [[Collaborators_1]] - `conceptually_related_to` [EXTRACTED]
+- [[Telegram Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/package_skill
+#graphify/document #graphify/EXTRACTED #community/Community_324

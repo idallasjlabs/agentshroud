@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "document"
-community: ".update"
+community: "Community 704"
 location: "L129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/update
+  - community/Community_704
 ---
 
 # Option A: Section 1(a) — Use in Commerce (if mark is already in use)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SECTION 4 FILING BASIS]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/update
+#graphify/document #graphify/EXTRACTED #community/Community_704

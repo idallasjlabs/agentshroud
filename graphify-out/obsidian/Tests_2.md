@@ -1,18 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "TestMCPProxyEndpoint"
-location: "L191"
+community: "Community 1934"
+location: "L851"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMCPProxyEndpoint
+  - community/Community_1934
 ---
 
 # Tests
 
 ## Connections
-- [[P4 Wire MCP Proxy]] - `contains` [EXTRACTED]
-- [[P5 Wire SecurityPipeline to forward]] - `contains` [EXTRACTED]
+- [[Unreleased — featv0.8.0-enforcement-hardening (session 3 — 2026-03-15)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMCPProxyEndpoint
+#graphify/document #graphify/EXTRACTED #community/Community_1934

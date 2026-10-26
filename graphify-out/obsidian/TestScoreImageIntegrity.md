@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "parse_clamscan_output"
+community: "Community 67"
 location: "L622"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_clamscan_output
+  - community/Community_67
 ---
 
 # TestScoreImageIntegrity
 
 ## Connections
-- [[dot-test_capped_at_five()]] - `method` [EXTRACTED]
-- [[dot-test_four_when_sbom_and_clean_trivy()]] - `method` [EXTRACTED]
-- [[dot-test_one_when_sbom_exists()]] - `method` [EXTRACTED]
-- [[dot-test_zero_when_no_sbom_no_trivy()]] - `method` [EXTRACTED]
+- [[.test_capped_at_five()]] - `method` [EXTRACTED]
+- [[.test_four_when_sbom_and_clean_trivy()]] - `method` [EXTRACTED]
+- [[.test_one_when_sbom_exists()]] - `method` [EXTRACTED]
+- [[.test_zero_when_no_sbom_no_trivy()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output
+#graphify/code #graphify/EXTRACTED #community/Community_67

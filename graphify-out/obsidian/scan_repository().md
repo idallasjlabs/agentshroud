@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "SessionManager"
+community: "Community 121"
 location: "L490"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/Community_121
 ---
 
 # scan_repository()
 
 ## Connections
-- [[dot-scan_git_repository()]] - `calls` [EXTRACTED]
+- [[.scan_git_repository()]] - `calls` [EXTRACTED]
 - [[Convenience function to scan a repository.]] - `rationale_for` [EXTRACTED]
 - [[GitGuard]] - `references` [EXTRACTED]
 - [[git_guard.py]] - `contains` [EXTRACTED]
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/Community_121

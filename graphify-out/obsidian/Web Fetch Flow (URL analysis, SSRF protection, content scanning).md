@@ -1,11 +1,11 @@
 ---
 source_file: "docs/flows/sequence-diagrams.md"
 type: "concept"
-community: "browser-fetch.js"
+community: "Community 1154"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/browser-fetchjs
+  - community/Community_1154
 ---
 
 # Web Fetch Flow (URL analysis, SSRF protection, content scanning)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Sequence Diagrams (doc)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/browser-fetchjs
+#graphify/concept #graphify/EXTRACTED #community/Community_1154

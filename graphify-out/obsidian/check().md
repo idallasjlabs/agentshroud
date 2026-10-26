@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/smoke.d/test-container-runtime.sh"
+source_file: "scripts/post-deploy-check.sh"
 type: "code"
-community: "v1.6.0 Release — Voice Terminal"
-location: "L40"
+community: "Community 227"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/v160_Release__Voice_Terminal
+  - community/Community_227
 ---
 
 # check()
 
 ## Connections
-- [[test-container-runtime.sh]] - `defines` [EXTRACTED]
-- [[test-container-runtime.sh script]] - `calls` [EXTRACTED]
+- [[post-deploy-check.sh]] - `defines` [EXTRACTED]
+- [[post-deploy-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/v160_Release__Voice_Terminal
+#graphify/code #graphify/EXTRACTED #community/Community_227

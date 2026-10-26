@@ -1,13 +1,13 @@
 ---
 source_file: "branding/favicons/apple-touch-icon.png"
 type: "image"
-community: "AgentShroud LinkedIn Profile Image"
+community: "Community 1625"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/AgentShroud_LinkedIn_Profile_Image
+  - community/Community_1625
 ---
 
 # Apple Touch Icon (AgentShroud logo mark)
 
-#graphify/image #graphify/EXTRACTED #community/AgentShroud_LinkedIn_Profile_Image
+#graphify/image #graphify/EXTRACTED #community/Community_1625

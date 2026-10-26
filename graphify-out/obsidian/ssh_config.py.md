@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ingest_api/ssh_config.py"
 type: "code"
-community: "MCPPermissionManager (2)"
+community: "Community 7"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/Community_7
 ---
 
 # ssh_config.py
 
 ## Connections
-- [[SSHConfig_2]] - `contains` [EXTRACTED]
+- [[SSHConfig]] - `contains` [EXTRACTED]
 - [[SSHHostConfig]] - `contains` [EXTRACTED]
-- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
+- [[config.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/code #graphify/EXTRACTED #community/Community_7

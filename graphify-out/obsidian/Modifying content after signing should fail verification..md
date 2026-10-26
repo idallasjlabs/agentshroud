@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "rationale"
-community: "KeyVaultConfig"
+community: "Community 24"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/Community_24
 ---
 
 # Modifying content after signing should fail verification.
 
 ## Connections
-- [[dot-test_tampered_content_fails()]] - `rationale_for` [EXTRACTED]
+- [[.test_tampered_content_fails()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_24

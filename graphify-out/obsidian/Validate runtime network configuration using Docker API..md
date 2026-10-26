@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "WebProxy"
+community: "Community 71"
 location: "L434"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/Community_71
 ---
 
 # Validate runtime network configuration using Docker API.
 
 ## Connections
-- [[dot-validate_runtime_configuration()]] - `rationale_for` [EXTRACTED]
+- [[.validate_runtime_configuration()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_71

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "document"
-community: "Hermes Cron Jobs Reference & Recreation Guide"
+community: "Community 373"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+  - community/Community_373
 ---
 
 # Cron: Daily Competitive Landscape Update
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Hermes Cron Jobs Reference & Recreation Guide]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_373

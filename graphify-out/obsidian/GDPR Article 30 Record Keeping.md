@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Action"
+community: "Community 217"
 location: "L450"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Action
+  - community/Community_217
 ---
 
 # GDPR Article 30 Record Keeping
@@ -15,4 +15,4 @@ tags:
 - [[Compliance Mapping]] - `contains` [EXTRACTED]
 - [[Processing Activities Register]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Action
+#graphify/document #graphify/EXTRACTED #community/Community_217

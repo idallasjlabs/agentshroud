@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Quickstart"
-location: "L13"
+community: "Community 745"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quickstart
+  - community/Community_745
 ---
 
 # Trigger
 
 ## Connections
-- [[Skill Session Prompt Generator (SESSION-PROMPT)]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quickstart
+#graphify/document #graphify/EXTRACTED #community/Community_745

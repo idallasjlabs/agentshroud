@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/workspace/BRAND.md"
+source_file: "BRAND.md"
 type: "document"
-community: "AgentShroud Config with Tool Risk Tiers (example)"
+community: "Community 192"
 location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Config_with_Tool_Risk_Tiers_example
+  - community/Community_192
 ---
 
 # Elevator pitch
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Key Messaging]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Config_with_Tool_Risk_Tiers_example
+#graphify/document #graphify/EXTRACTED #community/Community_192

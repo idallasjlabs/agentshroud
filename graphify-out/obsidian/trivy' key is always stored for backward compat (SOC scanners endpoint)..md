@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "rationale"
-community: "ADR-001: Transparent Proxy vs Agent Modification"
+community: "Community 625"
 location: "L395"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ADR-001_Transparent_Proxy_vs_Agent_Modification
+  - community/Community_625
 ---
 
 # trivy' key is always stored for backward compat (SOC /scanners endpoint).
 
 ## Connections
-- [[dot-test_legacy_trivy_key_present()]] - `rationale_for` [EXTRACTED]
+- [[.test_legacy_trivy_key_present()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_vs_Agent_Modification
+#graphify/rationale #graphify/EXTRACTED #community/Community_625

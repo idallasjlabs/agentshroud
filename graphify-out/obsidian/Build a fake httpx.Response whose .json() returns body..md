@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router_openai_translation.py"
 type: "rationale"
-community: "_make_proxy()"
+community: "Community 34"
 location: "L31"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_34
 ---
 
 # Build a fake httpx.Response whose .json() returns *body*.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_mock_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_34

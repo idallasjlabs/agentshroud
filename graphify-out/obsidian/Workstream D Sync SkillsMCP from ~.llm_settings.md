@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/v1.2.0-master-plan.md"
 type: "concept"
-community: "TrustManager"
+community: "Community 1973"
 location: "Workstream D"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/Community_1973
 ---
 
 # Workstream D: Sync Skills/MCP from ~/.llm_settings
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud v1.2.0 Master Plan]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/TrustManager
+#graphify/concept #graphify/EXTRACTED #community/Community_1973

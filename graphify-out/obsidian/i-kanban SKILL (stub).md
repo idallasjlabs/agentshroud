@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-kanban/SKILL.md"
 type: "document"
-community: "scripts/audit_merge_regression.py"
+community: "Community 1706"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/audit_merge_regressionpy
+  - community/Community_1706
 ---
 
 # i-kanban SKILL (stub)
 
-#graphify/document #graphify/EXTRACTED #community/scripts/audit_merge_regressionpy
+#graphify/document #graphify/EXTRACTED #community/Community_1706

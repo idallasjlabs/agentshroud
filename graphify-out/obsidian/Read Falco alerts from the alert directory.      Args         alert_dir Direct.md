@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "rationale"
-community: "LLMProxy.proxy_messages (non-streaming)"
+community: "Community 185"
 location: "L72"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming
+  - community/Community_185
 ---
 
 # Read Falco alerts from the alert directory.      Args:         alert_dir: Direct
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[read_alerts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming
+#graphify/rationale #graphify/EXTRACTED #community/Community_185

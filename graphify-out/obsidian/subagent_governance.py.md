@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "SubagentGovernance"
+community: "Community 1269"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentGovernance
+  - community/Community_1269
 ---
 
 # subagent_governance.py
 
 ## Connections
-- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
 - [[GovernanceAction]] - `contains` [EXTRACTED]
 - [[GovernanceConfig]] - `contains` [EXTRACTED]
 - [[GovernanceEvent]] - `contains` [EXTRACTED]
@@ -21,11 +21,11 @@ tags:
 - [[OutputTrustConfig]] - `contains` [EXTRACTED]
 - [[PrivilegePolicy]] - `contains` [EXTRACTED]
 - [[ResourceBudget]] - `contains` [EXTRACTED]
-- [[ResourceUsage]] - `contains` [EXTRACTED]
+- [[ResourceUsage_1]] - `contains` [EXTRACTED]
 - [[SubagentGovernance]] - `contains` [EXTRACTED]
 - [[_check_exfil_patterns()]] - `contains` [EXTRACTED]
 - [[_check_injection_patterns()]] - `contains` [EXTRACTED]
 - [[_check_pii_patterns()]] - `contains` [EXTRACTED]
 - [[progressive_trust_config.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentGovernance
+#graphify/code #graphify/EXTRACTED #community/Community_1269

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "scanner_integration.py"
+community: "Community 120"
 location: "L38"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/scanner_integrationpy
+  - community/Community_120
 ---
 
 # ProxyAction
@@ -27,18 +27,21 @@ tags:
 - [[TestHiddenContent]] - `uses` [INFERRED]
 - [[TestIsDomainAllowed]] - `uses` [INFERRED]
 - [[TestPIIDetection_2]] - `uses` [INFERRED]
-- [[TestPassthroughMode]] - `uses` [INFERRED]
+- [[TestPassthroughMode_1]] - `uses` [INFERRED]
 - [[TestPromptInjectionDetection]] - `uses` [INFERRED]
-- [[TestRateLimiting_1]] - `uses` [INFERRED]
+- [[TestRateLimiting_4]] - `uses` [INFERRED]
 - [[TestResponseSizeLimits]] - `uses` [INFERRED]
 - [[TestSSRFBlocking]] - `uses` [INFERRED]
 - [[TestStats_1]] - `uses` [INFERRED]
 - [[TestWebProxyConfig]] - `uses` [INFERRED]
 - [[TestWebProxySecurityIntegration]] - `uses` [INFERRED]
 - [[TestZeroWidthAttacks]] - `uses` [INFERRED]
+- [[URLAnalyzer]] - `uses` [INFERRED]
+- [[WebContentScanner]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
 - [[str]] - `inherits` [EXTRACTED]
 - [[test_web_proxy.py]] - `imports` [EXTRACTED]
 - [[test_web_proxy_security.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/scanner_integrationpy
+#graphify/code #graphify/INFERRED #community/Community_120

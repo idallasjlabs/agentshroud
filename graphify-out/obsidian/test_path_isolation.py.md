@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "PathIsolationManager"
+community: "Community 1342"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/Community_1342
 ---
 
 # test_path_isolation.py
@@ -19,4 +19,4 @@ tags:
 - [[TestPathIsolationManager]] - `contains` [EXTRACTED]
 - [[TestPathRewriteResult]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/Community_1342

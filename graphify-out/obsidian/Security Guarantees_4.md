@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/SECURITY_VERIFICATION.md"
+source_file: ".omp/agents/browser.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark"
-location: "L83"
+community: "Community 476"
+location: "L299"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark
+  - community/Community_476
 ---
 
 # Security Guarantees
 
 ## Connections
-- [[Security Verification Report]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark
+#graphify/document #graphify/EXTRACTED #community/Community_476

@@ -1,18 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "TeamsConfig (3)"
-location: "L170"
+community: "Community 773"
+location: "L521"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TeamsConfig_3
+  - community/Community_773
 ---
 
 # Summary
 
 ## Connections
-- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `contains` [EXTRACTED]
-- [[Overall Security Posture STRONG 🟢]] - `contains` [EXTRACTED]
+- [[1.2.0 — featesp32-s3-hermes-voice (2026-06-24)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TeamsConfig_3
+#graphify/document #graphify/EXTRACTED #community/Community_773

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/SKILL.md"
+source_file: ".agents/agents/browser.md"
 type: "document"
-community: "hermes/workspace/jira_dev_ticket.py"
-location: "L22"
+community: "Community 432"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/workspace/jira_dev_ticketpy
+  - community/Community_432
 ---
 
 # Security Architecture
 
 ## Connections
-- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/workspace/jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/Community_432

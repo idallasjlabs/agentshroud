@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
+source_file: "docker/config/openclaw/skills/i-oracle/README.md"
 type: "document"
-community: "Detailed Profiles"
-location: "L12"
+community: "Community 758"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Detailed_Profiles
+  - community/Community_758
 ---
 
 # Purpose
 
 ## Connections
-- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Detailed_Profiles
+#graphify/document #graphify/EXTRACTED #community/Community_758

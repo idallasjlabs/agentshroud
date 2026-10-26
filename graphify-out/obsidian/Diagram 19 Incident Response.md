@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-19-incident-response.svg"
 type: "image"
-community: "SharedMemoryManager Merged Memory Tests"
+community: "Community 1480"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/SharedMemoryManager_Merged_Memory_Tests
+  - community/Community_1480
 ---
 
 # Diagram 19: Incident Response
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Diagram 18 Runbook]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/SharedMemoryManager_Merged_Memory_Tests
+#graphify/image #graphify/INFERRED #community/Community_1480

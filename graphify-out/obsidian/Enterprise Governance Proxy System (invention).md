@@ -1,11 +1,11 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "concept"
-community: "AgentShroud Brand Quick Reference"
+community: "Community 581"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Quick_Reference
+  - community/Community_581
 ---
 
 # Enterprise Governance Proxy System (invention)
@@ -20,4 +20,4 @@ tags:
 - [[Transparent Interception Architecture]] - `conceptually_related_to` [EXTRACTED]
 - [[Trust-Differentiated Processing (RBAC tiers)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Brand_Quick_Reference
+#graphify/concept #graphify/EXTRACTED #community/Community_581

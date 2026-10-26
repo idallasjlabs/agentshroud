@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_cron_seed.py"
 type: "code"
-community: "TestFabricatedSecurityNotice (2)"
-location: "L28"
+community: "Community 190"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice_2
+  - community/Community_190
 ---
 
 # _parse_cron_names_from_sh()
@@ -20,4 +20,4 @@ tags:
 - [[test_jira_weekly_review_job_present()]] - `calls` [EXTRACTED]
 - [[test_stability_report_job_present()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2
+#graphify/code #graphify/EXTRACTED #community/Community_190

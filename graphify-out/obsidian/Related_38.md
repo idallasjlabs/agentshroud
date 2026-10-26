@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
 type: "document"
-community: "Telegram Bot Setup for OpenClaw"
-location: "L81"
+community: "Community 731"
+location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Bot_Setup_for_OpenClaw
+  - community/Community_731
 ---
 
 # Related
 
 ## Connections
-- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
+- [[consent_framework.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Bot_Setup_for_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/Community_731

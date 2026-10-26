@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/version_routes.py"
 type: "rationale"
-community: "upgrade"
+community: "Community 66"
 location: "L58"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/upgrade
+  - community/Community_66
 ---
 
 # Get version change history.
 
 ## Connections
-- [[get_version_history()_1]] - `rationale_for` [EXTRACTED]
+- [[get_version_history()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/upgrade
+#graphify/rationale #graphify/EXTRACTED #community/Community_66

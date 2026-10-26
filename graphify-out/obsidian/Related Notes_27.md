@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
+source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "Mode A — Single task (3)"
-location: "L76"
+community: "Community 102"
+location: "L75"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_3
+  - community/Community_102
 ---
 
 # Related Notes
 
 ## Connections
-- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
+- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_3
+#graphify/document #graphify/EXTRACTED #community/Community_102

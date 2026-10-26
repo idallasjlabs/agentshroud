@@ -1,13 +1,13 @@
 ---
 source_file: "docker-compose.secure.yml"
 type: "document"
-community: "BDD Skill (Gherkin Given/When/Then specs)"
+community: "Community 1678"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BDD_Skill_Gherkin_Given/When/Then_specs
+  - community/Community_1678
 ---
 
 # docker-compose.secure.yml — Proxy Mode Deployment
 
-#graphify/document #graphify/EXTRACTED #community/BDD_Skill_Gherkin_Given/When/Then_specs
+#graphify/document #graphify/EXTRACTED #community/Community_1678

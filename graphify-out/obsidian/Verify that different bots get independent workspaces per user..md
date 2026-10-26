@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "RBACConfig (2)"
+community: "Community 1128"
 location: "L199"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/Community_1128
 ---
 
 # Verify that different bots get independent workspaces per user.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMultiBotIsolation]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_1128

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
 type: "document"
-community: "test_wire_llm_settings.js"
+community: "Community 679"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_wire_llm_settingsjs
+  - community/Community_679
 ---
 
 # input_normalizer.py.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[input_normalizer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_wire_llm_settingsjs
+#graphify/document #graphify/EXTRACTED #community/Community_679

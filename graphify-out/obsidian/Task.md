@@ -1,17 +1,19 @@
 ---
 source_file: "gateway/security/cron_state_monitor.py"
 type: "code"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "Community 113"
 location: "L291"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/Community_113
 ---
 
 # Task
 
 ## Connections
-- [[dot-start()]] - `references` [EXTRACTED]
+- [[.start()_2]] - `references` [EXTRACTED]
+- [[app_main.c]] - `imports` [EXTRACTED]
+- [[wakeword.c]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/Community_113

@@ -1,31 +1,31 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "EgressFilterConfig (2)"
+community: "Community 792"
 location: "L919"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EgressFilterConfig_2
+  - community/Community_792
 ---
 
 # TestDriftDetectorHardened
 
 ## Connections
-- [[dot-test_simultaneous_baseline_and_config_change()]] - `method` [EXTRACTED]
+- [[.test_simultaneous_baseline_and_config_change()]] - `method` [EXTRACTED]
 - [[AgentRegistry]] - `uses` [INFERRED]
-- [[ContainerConfig_1]] - `uses` [INFERRED]
+- [[ContainerConfig]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
 - [[DriftDetector]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter]] - `uses` [INFERRED]
+- [[EgressFilter_1]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[EncryptedStore]] - `uses` [INFERRED]
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[IsolationVerifier]] - `uses` [INFERRED]
 - [[PatternRule]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[Tests for drift detector hardening.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
@@ -33,4 +33,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EgressFilterConfig_2
+#graphify/code #graphify/INFERRED #community/Community_792

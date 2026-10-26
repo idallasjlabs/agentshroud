@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
 type: "document"
-community: "AgentShroud Weekly Upgrade Report — 2026-08-30 (2)"
-location: "L53"
+community: "Community 392"
+location: "L110"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Weekly_Upgrade_Report__2026-08-30_2
+  - community/Community_392
 ---
 
 # Related
 
 ## Connections
-- [[sidecar.py_2]] - `contains` [EXTRACTED]
+- [[TrustManager_5]] - `contains` [EXTRACTED]
+- [[trust_manager.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade_Report__2026-08-30_2
+#graphify/document #graphify/EXTRACTED #community/Community_392

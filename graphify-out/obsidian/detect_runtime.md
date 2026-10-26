@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/runtime/__init__.py"
 type: "code"
-community: "soc/__init__.py"
+community: "Community 1879"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/__init__py
+  - community/Community_1879
 ---
 
 # detect_runtime
 
-#graphify/code #graphify/EXTRACTED #community/soc/__init__py
+#graphify/code #graphify/EXTRACTED #community/Community_1879

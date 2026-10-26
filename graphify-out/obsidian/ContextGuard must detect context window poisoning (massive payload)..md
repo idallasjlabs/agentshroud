@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "test_agent_cve_registry.py"
+community: "Community 123"
 location: "L303"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy
+  - community/Community_123
 ---
 
 # ContextGuard must detect context window poisoning (massive payload).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_context_poisoning_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_agent_cve_registrypy
+#graphify/rationale #graphify/EXTRACTED #community/Community_123

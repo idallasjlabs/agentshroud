@@ -1,18 +1,18 @@
 ---
 source_file: "tests/startup_smoke/test_hermes_mcp_reconciliation.sh"
 type: "code"
-community: "Accepted-Risk Register for Sunday Upgrade CVE Gate"
+community: "Community 1421"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Accepted-Risk_Register_for_Sunday_Upgrade_CVE_Gate
+  - community/Community_1421
 ---
 
 # test_hermes_mcp_reconciliation.sh
 
 ## Connections
-- [[check()_2]] - `defines` [EXTRACTED]
+- [[check()_10]] - `defines` [EXTRACTED]
 - [[test_hermes_mcp_reconciliation.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Accepted-Risk_Register_for_Sunday_Upgrade_CVE_Gate
+#graphify/code #graphify/EXTRACTED #community/Community_1421

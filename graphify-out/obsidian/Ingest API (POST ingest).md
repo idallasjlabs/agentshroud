@@ -1,16 +1,13 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "TrustConfig"
+community: "Community 2483"
 tags:
   - graphify/image
-  - graphify/INFERRED
-  - community/TrustConfig
+  - graphify/EXTRACTED
+  - community/Community_2483
 ---
 
 # Ingest API (POST /ingest)
 
-## Connections
-- [[ingest_apimain.py]] - `conceptually_related_to` [INFERRED]
-
-#graphify/image #graphify/INFERRED #community/TrustConfig
+#graphify/image #graphify/EXTRACTED #community/Community_2483

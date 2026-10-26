@@ -1,17 +1,20 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: ".agents/agents/aws.md"
 type: "document"
-community: "Restart Procedure (2)"
-location: "L300"
+community: "Community 209"
+location: "L193"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Restart_Procedure_2
+  - community/Community_209
 ---
 
 # Deliverables
 
 ## Connections
-- [[7. Pi-hole DNS Security Layer (Built-In)]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent]] - `contains` [EXTRACTED]
+- [[Reports (`.reports`)]] - `contains` [EXTRACTED]
+- [[Script Templates]] - `contains` [EXTRACTED]
+- [[Scripts (`.scripts`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Restart_Procedure_2
+#graphify/document #graphify/EXTRACTED #community/Community_209

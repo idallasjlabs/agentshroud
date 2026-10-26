@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-production/SKILL.md"
+source_file: ".cursor/agents/i-production.md"
 type: "document"
-community: "Atlas — Curriculum Architect"
-location: "L5"
+community: "Community 1180"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/Community_1180
 ---
 
 # Skill: Incident Response (INCIDENT)
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Incident Response Workflow_2]] - `contains` [EXTRACTED]
 - [[Post-Incident_2]] - `contains` [EXTRACTED]
-- [[Role_59]] - `contains` [EXTRACTED]
+- [[Role_98]] - `contains` [EXTRACTED]
 - [[Severity Matrix_2]] - `contains` [EXTRACTED]
-- [[hermesskillsi-productionSKILL]] - `contains` [EXTRACTED]
+- [[i-production_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/document #graphify/EXTRACTED #community/Community_1180

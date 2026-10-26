@@ -1,17 +1,19 @@
 ---
-source_file: "skills/custom/browser-fetch/SKILL.md"
+source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "SubagentMonitor._log_event"
-location: "L12"
+community: "Community 463"
+location: "L527"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SubagentMonitor_log_event
+  - community/Community_463
 ---
 
 # Use Cases
 
 ## Connections
-- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
+- [[Best Use Cases for Distributed Node Approach]] - `contains` [EXTRACTED]
+- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
+- [[Not Ideal For]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SubagentMonitor_log_event
+#graphify/document #graphify/EXTRACTED #community/Community_463

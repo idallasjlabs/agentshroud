@@ -1,16 +1,16 @@
 ---
 source_file: "docker/config/hermes/SOUL.md"
 type: "concept"
-community: "test_ptt_state.c"
+community: "Community 339"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_ptt_statec
+  - community/Community_339
 ---
 
 # PII Sanitizer
 
 ## Connections
-- [[hermesSOUL]] - `references` [EXTRACTED]
+- [[SOUL_2]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_ptt_statec
+#graphify/concept #graphify/EXTRACTED #community/Community_339

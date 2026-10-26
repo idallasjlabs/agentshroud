@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-aws-profile/README.md"
+source_file: "docker/config/hermes/skills/i-pr/README.md"
 type: "document"
-community: "Browser Extension"
+community: "Community 90"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Extension
+  - community/Community_90
 ---
 
 # Related Skills
 
 ## Connections
-- [[MCP AWS Profile Configuration README]] - `contains` [EXTRACTED]
+- [[Pull Request Generator (PR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Extension
+#graphify/document #graphify/EXTRACTED #community/Community_90

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/heuristic_classifier.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "HeuristicClassifier"
-location: "L129"
+community: "Community 72"
+location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/Community_72
 ---
 
 # Pattern
 
 ## Connections
-- [[dot-_score_signal()]] - `references` [EXTRACTED]
+- [[._create_detection_patterns()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/Community_72

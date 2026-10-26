@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec/README.md"
+source_file: ".agents/skills/sec-offense/README.md"
 type: "document"
-community: "TestOutboundInfoFilter (7)"
+community: "Community 2096"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_7
+  - community/Community_2096
 ---
 
 # Purpose
 
 ## Connections
-- [[Security Review (SEC)_1]] - `contains` [EXTRACTED]
+- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_7
+#graphify/document #graphify/EXTRACTED #community/Community_2096

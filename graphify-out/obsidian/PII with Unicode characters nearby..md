@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "ContextGuard"
+community: "Community 0"
 location: "L189"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/Community_0
 ---
 
 # PII with Unicode characters nearby.
 
 ## Connections
-- [[dot-test_unicode_pii()]] - `rationale_for` [EXTRACTED]
+- [[.test_unicode_pii()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

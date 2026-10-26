@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "ApprovalQueueConfig (3)"
+community: "Community 10"
 location: "L1135"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/Community_10
 ---
 
 # Set per-user collab mode override (persists across restarts).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[set_user_collab_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_10

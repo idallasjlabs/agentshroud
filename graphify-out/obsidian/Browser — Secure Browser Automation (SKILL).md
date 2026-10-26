@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "telegram_proxy.py (3)"
+community: "Community 549"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/telegram_proxypy_3
+  - community/Community_549
 ---
 
 # Browser — Secure Browser Automation (SKILL)
@@ -20,4 +20,4 @@ tags:
 - [[SecureBrowser.fill_field()]] - `references` [EXTRACTED]
 - [[SecureBrowser.navigate()]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/telegram_proxypy_3
+#graphify/document #graphify/EXTRACTED #community/Community_549

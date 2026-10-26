@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "rationale"
-community: "ApprovalStore"
+community: "Community 30"
 location: "L139"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalStore
+  - community/Community_30
 ---
 
 # Load all items (for audit/debugging).
 
 ## Connections
-- [[dot-load_all()]] - `rationale_for` [EXTRACTED]
+- [[.load_all()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalStore
+#graphify/rationale #graphify/EXTRACTED #community/Community_30

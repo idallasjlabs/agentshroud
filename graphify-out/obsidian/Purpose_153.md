@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/ssh-config.md"
+source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "Report Delivery Format Instructions"
-location: "L16"
+community: "Community 616"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Report_Delivery_Format_Instructions
+  - community/Community_616
 ---
 
 # Purpose
 
 ## Connections
-- [[SSH Config]] - `contains` [EXTRACTED]
+- [[dns_filter.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions
+#graphify/document #graphify/EXTRACTED #community/Community_616

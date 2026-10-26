@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
 type: "document"
-community: "Use Cases"
+community: "Community 567"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Use_Cases
+  - community/Community_567
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[web_proxy.py_2]] - `contains` [EXTRACTED]
+- [[oauth_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Use_Cases
+#graphify/document #graphify/EXTRACTED #community/Community_567

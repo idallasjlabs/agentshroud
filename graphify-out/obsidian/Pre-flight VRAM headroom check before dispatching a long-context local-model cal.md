@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "._make_proxy()"
+community: "Community 5"
 location: "L357"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_5
 ---
 
 # Pre-flight VRAM headroom check before dispatching a long-context local-model cal
 
 ## Connections
-- [[dot-check_vram_headroom()]] - `rationale_for` [EXTRACTED]
+- [[.check_vram_headroom()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_5

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/email_service.py"
 type: "rationale"
-community: "AgentShroud Access Control Matrix"
+community: "Community 201"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/Community_201
 ---
 
 # Build the MIME message string (multipart/alternative).          For HTML mail th
 
 ## Connections
-- [[dot-build_message()]] - `rationale_for` [EXTRACTED]
+- [[.build_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/rationale #graphify/EXTRACTED #community/Community_201

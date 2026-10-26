@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "test_mfa_guard.py"
+community: "Community 29"
 location: "L321"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/Community_29
 ---
 
 # _is_fresh()
 
 ## Connections
-- [[Path_31]] - `references` [EXTRACTED]
+- [[Path_17]] - `references` [EXTRACTED]
 - [[Return True if the most recent report file was written within max_age_hours.]] - `rationale_for` [EXTRACTED]
 - [[_score_ai_model_supply_chain()]] - `calls` [EXTRACTED]
 - [[_score_compliance_auditing()]] - `calls` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[_score_vulnerability_management()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/Community_29

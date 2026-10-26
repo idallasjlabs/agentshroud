@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
+source_file: "docker/config/openclaw/skills/i-athena/README.md"
 type: "document"
-community: "AgentShroud Blue Team Security Auditor (3)"
-location: "L12"
+community: "Community 1225"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Blue_Team_Security_Auditor_3
+  - community/Community_1225
 ---
 
 # Purpose
 
 ## Connections
-- [[EgressFilter_3]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor_3
+#graphify/document #graphify/EXTRACTED #community/Community_1225

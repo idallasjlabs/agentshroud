@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "xurl — Agent Skill Reference"
+community: "Community 418"
 location: "L306"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/xurl__Agent_Skill_Reference
+  - community/Community_418
 ---
 
 # Multi-Instance Support
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Port Mappings and Auto-Detection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference
+#graphify/document #graphify/EXTRACTED #community/Community_418

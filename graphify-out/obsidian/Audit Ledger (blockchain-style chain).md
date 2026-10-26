@@ -1,11 +1,11 @@
 ---
 source_file: "docs/flows/data-flow-diagram.md"
 type: "concept"
-community: "Animation Guidelines"
+community: "Community 969"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Animation_Guidelines
+  - community/Community_969
 ---
 
 # Audit Ledger (blockchain-style chain)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[PII Sanitizer (Level 1 security component)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Animation_Guidelines
+#graphify/concept #graphify/EXTRACTED #community/Community_969

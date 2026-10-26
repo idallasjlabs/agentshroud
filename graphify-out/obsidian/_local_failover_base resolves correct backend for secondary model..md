@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "ModeRequest"
+community: "Community 2326"
 location: "L566"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/Community_2326
 ---
 
 # _local_failover_base resolves correct backend for secondary model.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_local_secondary_failover_base_routes_correctly()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ModeRequest
+#graphify/rationale #graphify/EXTRACTED #community/Community_2326

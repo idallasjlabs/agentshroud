@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
+source_file: ".agents/skills/atlas/SKILL.md"
 type: "document"
-community: "FR3: System Integrity"
-location: "L131"
+community: "Community 1169"
+location: "L154"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/FR3_System_Integrity
+  - community/Community_1169
 ---
 
 # User Prompt Template
 
 ## Connections
-- [[description of what this does_1]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FR3_System_Integrity
+#graphify/document #graphify/EXTRACTED #community/Community_1169

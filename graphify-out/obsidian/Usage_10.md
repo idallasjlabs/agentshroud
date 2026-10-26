@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tw/README.md"
+source_file: ".agents/skills/eightd-root-cause-analysis/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md (2)"
+community: "Community 2076"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd_2
+  - community/Community_2076
 ---
 
 # Usage
 
 ## Connections
-- [[Technical Writer (TW)]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_2
+#graphify/document #graphify/EXTRACTED #community/Community_2076

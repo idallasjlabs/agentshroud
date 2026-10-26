@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "AgentShroud™ CVE Mitigation Matrix"
+community: "Community 215"
 location: "L226"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_CVE_Mitigation_Matrix
+  - community/Community_215
 ---
 
 # voice-gateway image (4 residual, all Debian, all `fix: NONE`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Currently Unmitigable Residual (verified no fix exists anywhere yet)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix
+#graphify/document #graphify/EXTRACTED #community/Community_215

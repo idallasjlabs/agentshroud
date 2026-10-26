@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
 type: "document"
-community: "egress_monitor.py"
+community: "Community 665"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_monitorpy
+  - community/Community_665
 ---
 
 # Purpose
 
 ## Connections
-- [[browser_security.py_2]] - `contains` [EXTRACTED]
+- [[mcp_audit.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_monitorpy
+#graphify/document #graphify/EXTRACTED #community/Community_665

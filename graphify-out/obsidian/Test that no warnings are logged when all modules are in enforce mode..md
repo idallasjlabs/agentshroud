@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "rationale"
-community: "TestEnforceDefaults"
+community: "Community 196"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEnforceDefaults
+  - community/Community_196
 ---
 
 # Test that no warnings are logged when all modules are in enforce mode.
 
 ## Connections
-- [[dot-test_monitor_mode_warnings_no_warnings_in_enforce()]] - `rationale_for` [EXTRACTED]
+- [[.test_monitor_mode_warnings_no_warnings_in_enforce()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEnforceDefaults
+#graphify/rationale #graphify/EXTRACTED #community/Community_196

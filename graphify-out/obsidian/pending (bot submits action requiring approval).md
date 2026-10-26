@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-16-state-approval-queue.svg"
 type: "concept"
-community: "AgentShroud Phase Review — 2026-02-23 (3)"
+community: "Community 1309"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_Review__2026-02-23_3
+  - community/Community_1309
 ---
 
 # pending (bot submits action requiring approval)
@@ -15,4 +15,4 @@ tags:
 - [[expired (1-hour TTL exceeded, auto-transition on load)]] - `calls` [EXTRACTED]
 - [[rejected (action blocked, bot notified)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23_3
+#graphify/concept #graphify/EXTRACTED #community/Community_1309

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mnemosyne/README.md"
+source_file: "docker/config/hermes/skills/i-sad/README.md"
 type: "document"
-community: "Workflow: Survey → Draft → Inject → Confirm (3)"
-location: "L14"
+community: "Community 90"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workflow_Survey__Draft__Inject__Confirm_3
+  - community/Community_90
 ---
 
 # Related Skills
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_2]] - `contains` [EXTRACTED]
+- [[System Audit Documentation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm_3
+#graphify/document #graphify/EXTRACTED #community/Community_90

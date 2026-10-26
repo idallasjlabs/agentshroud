@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/text_control_center.py.md"
+source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "document"
-community: "Key Benefits"
-location: "L31"
+community: "Community 73"
+location: "L213"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Key_Benefits
+  - community/Community_73
 ---
 
 # Related Notes
 
 ## Connections
-- [[text_control_center.py  agentshroud_manager.py]] - `contains` [EXTRACTED]
+- [[agentshroud.yaml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Key_Benefits
+#graphify/document #graphify/EXTRACTED #community/Community_73

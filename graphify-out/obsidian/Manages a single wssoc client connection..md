@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "rationale"
-community: "MiddlewareManager (2)"
+community: "Community 169"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/Community_169
 ---
 
 # Manages a single /ws/soc client connection.
 
 ## Connections
-- [[SOCWebSocketHandler_2]] - `rationale_for` [EXTRACTED]
+- [[SOCWebSocketHandler]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_169

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/init-config.sh"
 type: "code"
-community: "TestFabricatedSecurityNotice (2)"
+community: "Community 290"
 location: "L1-L767"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice_2
+  - community/Community_290
 ---
 
 # init-config.sh (Hermes first-boot config materialisation)
@@ -20,8 +20,7 @@ tags:
 - [[_hermes_cron_ids_names]] - `defines` [EXTRACTED]
 - [[_seed_cron]] - `defines` [EXTRACTED]
 - [[_write_soul]] - `defines` [EXTRACTED]
-- [[init-config.sh script]] - `contains` [EXTRACTED]
 - [[start.sh (Hermes s6 main program  startup wrapper)]] - `calls` [EXTRACTED]
 - [[test_hermes_cron_seed.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2
+#graphify/code #graphify/EXTRACTED #community/Community_290

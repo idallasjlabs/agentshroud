@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "MemoryIntegrityMonitor"
-location: "L36"
+community: "Community 3"
+location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/Community_3
 ---
 
 # Test default configuration values.
 
 ## Connections
-- [[dot-test_default_config()_2]] - `rationale_for` [EXTRACTED]
+- [[.test_default_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/Community_3

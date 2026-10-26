@@ -1,29 +1,24 @@
 ---
-source_file: "branding/guidelines/brand-guidelines.md"
+source_file: "branding/README.md"
 type: "document"
-community: "AgentShroud Agentic OS"
+community: "Community 192"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Agentic_OS
+  - community/Community_192
 ---
 
 # AgentShroud Brand Guidelines
 
 ## Connections
-- [[Animation Guidelines]] - `contains` [EXTRACTED]
-- [[Brand Applications]] - `contains` [EXTRACTED]
-- [[Brand Approval Process]] - `contains` [EXTRACTED]
-- [[Brand Identity_2]] - `contains` [EXTRACTED]
-- [[Brand Personality]] - `contains` [EXTRACTED]
-- [[Co-Branding Guidelines]] - `contains` [EXTRACTED]
-- [[Color Usage]] - `contains` [EXTRACTED]
-- [[Contact_1]] - `contains` [EXTRACTED]
-- [[File Formats & Deliverables]] - `contains` [EXTRACTED]
-- [[Logo Usage_3]] - `contains` [EXTRACTED]
-- [[Press Kit]] - `contains` [EXTRACTED]
-- [[Typography in Practice]] - `contains` [EXTRACTED]
-- [[brand-guidelines]] - `contains` [EXTRACTED]
+- [[Brand Colors]] - `contains` [EXTRACTED]
+- [[Directory Structure]] - `contains` [EXTRACTED]
+- [[File Formats]] - `contains` [EXTRACTED]
+- [[Logos]] - `contains` [EXTRACTED]
+- [[Need Help]] - `contains` [EXTRACTED]
+- [[README_38]] - `contains` [EXTRACTED]
+- [[Typography_1]] - `contains` [EXTRACTED]
+- [[Usage Guidelines]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Agentic_OS
+#graphify/document #graphify/EXTRACTED #community/Community_192

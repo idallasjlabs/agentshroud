@@ -1,37 +1,25 @@
 ---
-source_file: "gateway/security/citation_verifier.py"
+source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "KillSwitchMonitor (3)"
-location: "L46"
+community: "Community 125"
+location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KillSwitchMonitor_3
+  - community/Community_125
 ---
 
 # FetchOutcome
 
 ## Connections
-- [[dot-__call__()_4]] - `calls` [EXTRACTED]
-- [[dot-ok()_2]] - `method` [EXTRACTED]
-- [[Citation_1]] - `uses` [INFERRED]
-- [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
-- [[CompetitorEntry_1]] - `uses` [INFERRED]
+- [[.__call__()_2]] - `references` [EXTRACTED]
+- [[.test_not_ok_on_non_2xx()]] - `calls` [EXTRACTED]
+- [[.test_not_ok_without_content()]] - `calls` [EXTRACTED]
+- [[.test_ok_requires_2xx_and_content()]] - `calls` [EXTRACTED]
+- [[CitationVerifier]] - `uses` [INFERRED]
+- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
+- [[DraftEntry]] - `uses` [INFERRED]
 - [[FetchOutcome]] - `uses` [INFERRED]
-- [[Result of re-fetching a candidate citation URL through the web proxy.]] - `rationale_for` [EXTRACTED]
-- [[TestFetchOutcome]] - `uses` [INFERRED]
-- [[TestHttpxFetcher]] - `uses` [INFERRED]
-- [[TestMakeHttpxFetcher]] - `uses` [INFERRED]
-- [[TestSubmitAuth]] - `uses` [INFERRED]
-- [[TestSubmitEndpoint]] - `uses` [INFERRED]
-- [[TestVerifyEntry]] - `uses` [INFERRED]
-- [[TestVerifyReport]] - `uses` [INFERRED]
-- [[_FakeFetcher]] - `uses` [INFERRED]
-- [[_FakeFetcher_1]] - `uses` [INFERRED]
-- [[_FakeStreamResponse_1]] - `uses` [INFERRED]
-- [[_StreamResp]] - `uses` [INFERRED]
-- [[citation_verifier.py]] - `contains` [EXTRACTED]
-- [[test_citation_verifier.py]] - `imports` [EXTRACTED]
-- [[test_intel_endpoint.py]] - `imports` [EXTRACTED]
+- [[IntelReportStore]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/KillSwitchMonitor_3
+#graphify/code #graphify/INFERRED #community/Community_125

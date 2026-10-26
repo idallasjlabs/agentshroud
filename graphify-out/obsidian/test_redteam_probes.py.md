@@ -1,33 +1,33 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "test_agent_cve_registry.py"
+community: "Community 123"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy
+  - community/Community_123
 ---
 
 # test_redteam_probes.py
 
 ## Connections
 - [[ContextGuard]] - `imports` [EXTRACTED]
-- [[EgressFilter]] - `imports` [EXTRACTED]
+- [[EgressFilter_1]] - `imports` [EXTRACTED]
 - [[EgressFilterConfig]] - `imports` [EXTRACTED]
 - [[EgressPolicy]] - `imports` [EXTRACTED]
 - [[EncodingDetector]] - `imports` [EXTRACTED]
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
-- [[PIISanitizer_3]] - `imports` [EXTRACTED]
-- [[PromptGuard_1]] - `imports` [EXTRACTED]
-- [[SecurityPipeline_1]] - `imports` [EXTRACTED]
+- [[PIIConfig]] - `imports` [EXTRACTED]
+- [[PIISanitizer]] - `imports` [EXTRACTED]
+- [[PromptGuard]] - `imports` [EXTRACTED]
+- [[SecurityPipeline]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
 - [[TrustLevel_1]] - `imports` [EXTRACTED]
 - [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[_make_approval_queue()]] - `contains` [EXTRACTED]
 - [[_make_full_pipeline()]] - `contains` [EXTRACTED]
 - [[_make_pii_sanitizer()]] - `contains` [EXTRACTED]
-- [[pipeline()]] - `contains` [EXTRACTED]
+- [[pipeline()_2]] - `contains` [EXTRACTED]
 - [[test_admin_action_requires_approval()]] - `contains` [EXTRACTED]
 - [[test_audit_chain_records_all_events()]] - `contains` [EXTRACTED]
 - [[test_audit_chain_tamper_detection()]] - `contains` [EXTRACTED]
@@ -52,4 +52,4 @@ tags:
 - [[test_ssn_redacted_outbound()]] - `contains` [EXTRACTED]
 - [[test_trust_escalation_blocked()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy
+#graphify/code #graphify/EXTRACTED #community/Community_123

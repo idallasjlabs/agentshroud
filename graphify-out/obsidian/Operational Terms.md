@@ -1,17 +1,17 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "document"
-community: "AgentShroud Prerequisites"
+community: "Community 345"
 location: "L226"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Prerequisites
+  - community/Community_345
 ---
 
 # Operational Terms
 
 ## Connections
-- [[Glossary_1]] - `contains` [EXTRACTED]
+- [[Glossary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites
+#graphify/document #graphify/EXTRACTED #community/Community_345

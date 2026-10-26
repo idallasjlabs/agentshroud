@@ -1,13 +1,13 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "Apple Touch Icon (AgentShroud logo mark)"
+community: "Community 1603"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Apple_Touch_Icon_AgentShroud_logo_mark
+  - community/Community_1603
 ---
 
 # MCP Server: github-fluence
 
-#graphify/code #graphify/EXTRACTED #community/Apple_Touch_Icon_AgentShroud_logo_mark
+#graphify/code #graphify/EXTRACTED #community/Community_1603

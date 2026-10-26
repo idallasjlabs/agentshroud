@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-gg/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "soc.js"
-location: "L14"
+community: "Community 317"
+location: "L346"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_317
 ---
 
 # Related Skills
 
 ## Connections
-- [[Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_317

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0.md"
 type: "document"
-community: "stt.py"
+community: "Community 414"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sttpy
+  - community/Community_414
 ---
 
 # Findings
@@ -18,4 +18,4 @@ tags:
 - [[LOW — Informational_1]] - `contains` [EXTRACTED]
 - [[MEDIUM — Recommended]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sttpy
+#graphify/document #graphify/EXTRACTED #community/Community_414

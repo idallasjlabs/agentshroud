@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "OpenClaw Bot SSH Configuration"
+community: "Community 177"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/OpenClaw_Bot_SSH_Configuration
+  - community/Community_177
 ---
 
 # MCP Tools Usage (SKILL)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[MCP Tools Usage (README)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/OpenClaw_Bot_SSH_Configuration
+#graphify/document #graphify/INFERRED #community/Community_177

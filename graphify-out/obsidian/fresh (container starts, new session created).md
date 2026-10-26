@@ -1,17 +1,17 @@
 ---
 source_file: "docs/diagrams/images/diagram-17-state-bot-session.svg"
 type: "concept"
-community: "test_launchd_install.sh"
+community: "Community 1250"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_launchd_installsh
+  - community/Community_1250
 ---
 
 # fresh (container starts, new session created)
 
 ## Connections
-- [[active_1]] - `calls` [EXTRACTED]
+- [[active]] - `calls` [EXTRACTED]
 - [[reset (new session UUID created, previous archived)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_launchd_installsh
+#graphify/concept #graphify/EXTRACTED #community/Community_1250

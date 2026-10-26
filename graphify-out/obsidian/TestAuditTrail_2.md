@@ -1,39 +1,24 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy.py"
+source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "Egress Filter Errors"
-location: "L286"
+community: "Community 105"
+location: "L184"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Egress_Filter_Errors
+  - graphify/EXTRACTED
+  - community/Community_105
 ---
 
 # TestAuditTrail
 
 ## Connections
-- [[dot-test_blocked_entry_logged()]] - `method` [EXTRACTED]
-- [[dot-test_chain_entries_linked()]] - `method` [EXTRACTED]
-- [[dot-test_hash_chain_changes_on_append()]] - `method` [EXTRACTED]
-- [[dot-test_hash_chain_genesis()]] - `method` [EXTRACTED]
-- [[dot-test_hash_chain_valid()]] - `method` [EXTRACTED]
-- [[dot-test_log_tool_call()]] - `method` [EXTRACTED]
-- [[dot-test_log_tool_result()]] - `method` [EXTRACTED]
-- [[dot-test_pii_redacted_flag()]] - `method` [EXTRACTED]
-- [[dot-test_tampered_chain_detected()]] - `method` [EXTRACTED]
-- [[FindingType]] - `uses` [INFERRED]
-- [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxy_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
-- [[MCPToolCall_1]] - `uses` [INFERRED]
-- [[MCPToolConfig]] - `uses` [INFERRED]
-- [[MCPToolResult]] - `uses` [INFERRED]
-- [[MCPTransport]] - `uses` [INFERRED]
-- [[PermissionLevel_1]] - `uses` [INFERRED]
-- [[ThreatLevel_1]] - `uses` [INFERRED]
-- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
+- [[.test_audit_filterable_by_agent()]] - `method` [EXTRACTED]
+- [[.test_audit_has_timestamps()]] - `method` [EXTRACTED]
+- [[.test_deregister_logged()]] - `method` [EXTRACTED]
+- [[.test_spawn_logged()]] - `method` [EXTRACTED]
+- [[SubagentEventType]] - `uses` [INFERRED]
+- [[SubagentMonitor]] - `uses` [INFERRED]
+- [[SubagentMonitorConfig]] - `uses` [INFERRED]
+- [[test_subagent_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress_Filter_Errors
+#graphify/code #graphify/EXTRACTED #community/Community_105

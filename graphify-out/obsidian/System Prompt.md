@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
+source_file: ".agents/agents/athena.md"
 type: "document"
-community: "dashboard_endpoints.py (2) (2)"
-location: "L59"
+community: "Community 1557"
+location: "L120"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy_2_2
+  - community/Community_1557
 ---
 
 # System Prompt
 
 ## Connections
-- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
+- [[description of what this does]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard_endpointspy_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_1557

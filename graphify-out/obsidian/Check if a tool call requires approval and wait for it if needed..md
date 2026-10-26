@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "AgentShroud Security Value Proposition"
+community: "Community 232"
 location: "L860"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition
+  - community/Community_232
 ---
 
 # Check if a tool call requires approval and wait for it if needed.
 
 ## Connections
-- [[dot-check_approval_required()]] - `rationale_for` [EXTRACTED]
+- [[.check_approval_required()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition
+#graphify/rationale #graphify/EXTRACTED #community/Community_232

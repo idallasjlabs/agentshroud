@@ -1,17 +1,18 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05-r3.md"
 type: "document"
-community: "main (2)"
+community: "Community 781"
 location: "L134"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/main_2
+  - community/Community_781
 ---
 
 # Release Recommendation
 
 ## Connections
 - [[AgentShroud v0.8.0 Peer Review Round 3 (FINAL)]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 — Peer Review Round 3 (FINAL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/main_2
+#graphify/document #graphify/EXTRACTED #community/Community_781

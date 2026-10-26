@@ -1,17 +1,21 @@
 ---
-source_file: "firmware/voice-terminal/test/test_playback_state/test_playback_state.c"
+source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "AgentShroud Device Pairing Management"
-location: "L44"
+community: "Community 378"
+location: "L521"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Device_Pairing_Management
+  - community/Community_378
 ---
 
 # vt_remote_log()
 
 ## Connections
-- [[test_playback_state.c]] - `contains` [EXTRACTED]
+- [[_deliver_utterance()]] - `calls` [EXTRACTED]
+- [[_on_ws_ctrl()]] - `calls` [EXTRACTED]
+- [[app_main.c]] - `contains` [EXTRACTED]
+- [[voice_task()]] - `calls` [EXTRACTED]
+- [[wifi_event_handler()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management
+#graphify/code #graphify/EXTRACTED #community/Community_378

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "Community 7"
 location: "L273"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # TestRetention
 
 ## Connections
-- [[dot-test_enforce_retention_deletes_expired()]] - `method` [EXTRACTED]
+- [[.test_enforce_retention_deletes_expired()]] - `method` [EXTRACTED]
 - [[DataLedger]] - `uses` [INFERRED]
-- [[LedgerConfig_1]] - `uses` [INFERRED]
+- [[LedgerConfig]] - `uses` [INFERRED]
 - [[Retention enforcement.]] - `rationale_for` [EXTRACTED]
 - [[test_audit_chain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/Community_7

@@ -1,23 +1,22 @@
 ---
-source_file: ".agents/skills/i-qa/SKILL.md"
+source_file: ".agents/agents/i-qa.md"
 type: "document"
-community: "Dockerfile — Bot (OpenClaw)"
-location: "L5"
+community: "Community 974"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dockerfile__Bot_OpenClaw
+  - community/Community_974
 ---
 
 # Skill: Quality Assurance (QA)
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-qaSKILL]] - `contains` [EXTRACTED]
-- [[Objective]] - `contains` [EXTRACTED]
-- [[Output Format_11]] - `contains` [EXTRACTED]
+- [[Objective_1]] - `contains` [EXTRACTED]
+- [[Output Format_6]] - `contains` [EXTRACTED]
 - [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT]] - `contains` [EXTRACTED]
-- [[Role_43]] - `contains` [EXTRACTED]
+- [[Role_27]] - `contains` [EXTRACTED]
 - [[Testing Hierarchy]] - `contains` [EXTRACTED]
+- [[i-qa]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/Community_974

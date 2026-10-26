@@ -1,20 +1,27 @@
 ---
-source_file: "docs/vault/05 - Dependencies/fastapi.md"
-type: "document"
-community: "EgressFilter"
-location: "L1"
+source_file: "gateway/ingest_api/lifespan.py"
+type: "code"
+community: "Community 24"
+location: "L108"
 tags:
-  - graphify/document
-  - graphify/EXTRACTED
-  - community/EgressFilter
+  - graphify/code
+  - graphify/INFERRED
+  - community/Community_24
 ---
 
-# fastapi.md
+# FastAPI
 
 ## Connections
-- [[All Dependencies]] - `references` [EXTRACTED]
-- [[FastAPI_2]] - `contains` [EXTRACTED]
-- [[main.py_1]] - `references` [INFERRED]
-- [[pydantic_1]] - `references` [EXTRACTED]
+- [[AlertTelegramRelay]] - `uses` [INFERRED]
+- [[DataLedger]] - `uses` [INFERRED]
+- [[EventBus]] - `uses` [INFERRED]
+- [[GroupRegistry]] - `uses` [INFERRED]
+- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[MultiAgentRouter]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
+- [[lifespan()_1]] - `references` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/code #graphify/INFERRED #community/Community_24

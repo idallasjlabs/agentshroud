@@ -1,12 +1,12 @@
 ---
 source_file: "branding/typography/typography.md"
 type: "document"
-community: "Findings & Mitigations"
+community: "Community 542"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Findings__Mitigations
+  - community/Community_542
 ---
 
 # Type Scale
@@ -17,4 +17,4 @@ tags:
 - [[CodeMonospace]] - `contains` [EXTRACTED]
 - [[Headings]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Findings__Mitigations
+#graphify/document #graphify/EXTRACTED #community/Community_542

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
 type: "document"
-community: "TestParseHostsLine"
+community: "Community 678"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestParseHostsLine
+  - community/Community_678
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestParseHostsLine
+#graphify/document #graphify/EXTRACTED #community/Community_678

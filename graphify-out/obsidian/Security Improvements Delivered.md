@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/VERIFICATION_RESULTS.md"
 type: "document"
-community: "TestSecurityFeatures"
+community: "Community 478"
 location: "L148"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSecurityFeatures
+  - community/Community_478
 ---
 
 # Security Improvements Delivered
@@ -16,4 +16,4 @@ tags:
 - [[Before Phase 3A]] - `contains` [EXTRACTED]
 - [[Phase 3A3B Implementation Verification Results]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSecurityFeatures
+#graphify/document #graphify/EXTRACTED #community/Community_478

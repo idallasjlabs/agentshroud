@@ -1,17 +1,18 @@
 ---
-source_file: "docs/setup/OPENCLAW_SETUP.md"
+source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
 type: "document"
-community: "SkillGuard (2)"
-location: "L445"
+community: "Community 393"
+location: "L293"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SkillGuard_2
+  - community/Community_393
 ---
 
 # Next Steps
 
 ## Connections
-- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
+- [[PHASE_3A_3B_IMPLEMENTATION]] - `contains` [EXTRACTED]
+- [[Phase 3A & 3B Implementation Summary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SkillGuard_2
+#graphify/document #graphify/EXTRACTED #community/Community_393

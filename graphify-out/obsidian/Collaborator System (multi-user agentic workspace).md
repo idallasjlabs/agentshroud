@@ -1,11 +1,11 @@
 ---
 source_file: "docs/agentshroud-knowledge.md"
 type: "concept"
-community: "I - Information Disclosure"
+community: "Community 1249"
 tags:
   - graphify/concept
-  - graphify/EXTRACTED
-  - community/I_-_Information_Disclosure
+  - graphify/INFERRED
+  - community/Community_1249
 ---
 
 # Collaborator System (multi-user agentic workspace)
@@ -14,4 +14,4 @@ tags:
 - [[OpenClaw — primary integration target agent]] - `conceptually_related_to` [INFERRED]
 - [[SOC Command Center — Five Pillars]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/I_-_Information_Disclosure
+#graphify/concept #graphify/INFERRED #community/Community_1249

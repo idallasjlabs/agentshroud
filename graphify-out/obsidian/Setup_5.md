@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/README.md"
+source_file: ".opencode/agents/icloud.md"
 type: "document"
-community: "🛡️ AgentShroud Release Plan"
-location: "L64"
+community: "Community 706"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_AgentShroud_Release_Plan
+  - community/Community_706
 ---
 
 # Setup
 
 ## Connections
-- [[1. Install Dependencies]] - `contains` [EXTRACTED]
-- [[2. Configure]] - `contains` [EXTRACTED]
-- [[3. Run]] - `contains` [EXTRACTED]
-- [[4. Test]] - `contains` [EXTRACTED]
-- [[Gateway Layer]] - `contains` [EXTRACTED]
+- [[iCloud Services_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_706

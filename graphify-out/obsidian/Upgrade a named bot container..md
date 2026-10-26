@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "MCPPolicyEngine"
+community: "Community 40"
 location: "L557"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/Community_40
 ---
 
 # Upgrade a named bot container.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[upgrade_bot()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/rationale #graphify/EXTRACTED #community/Community_40

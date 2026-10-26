@@ -1,19 +1,19 @@
 ---
 source_file: "scripts/README.md"
 type: "document"
-community: "version_routes.py"
+community: "Community 588"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/Community_588
 ---
 
 # Utility Scripts
 
 ## Connections
-- [[Implementation Status_2]] - `contains` [EXTRACTED]
+- [[Implementation Status_3]] - `contains` [EXTRACTED]
+- [[README_128]] - `contains` [EXTRACTED]
 - [[Scripts (to be implemented throughout development)]] - `contains` [EXTRACTED]
-- [[scriptsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/version_routespy
+#graphify/document #graphify/EXTRACTED #community/Community_588

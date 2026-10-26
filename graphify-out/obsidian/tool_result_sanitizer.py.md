@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "Community 72"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/Community_72
 ---
 
 # tool_result_sanitizer.py
 
 ## Connections
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
-- [[PIISanitizer_3]] - `imports` [EXTRACTED]
-- [[RedactionResult_2]] - `imports` [EXTRACTED]
+- [[PIIConfig]] - `imports` [EXTRACTED]
+- [[PIISanitizer]] - `imports` [EXTRACTED]
+- [[RedactionResult]] - `imports` [EXTRACTED]
+- [[SKILL_200]] - `references` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `contains` [EXTRACTED]
 - [[ToolResultSanitizer]] - `contains` [EXTRACTED]
-- [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 - [[cve-mitigation-matrix]] - `references` [EXTRACTED]
 - [[job-quality-matrix]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/Community_72

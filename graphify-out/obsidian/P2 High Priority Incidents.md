@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "docker-cleanup.sh"
+community: "Community 164"
 location: "L281"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker-cleanupsh
+  - community/Community_164
 ---
 
 # P2 High Priority Incidents
@@ -17,4 +17,4 @@ tags:
 - [[PII Leak Incident]] - `contains` [EXTRACTED]
 - [[Prompt Injection Detected]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker-cleanupsh
+#graphify/document #graphify/EXTRACTED #community/Community_164

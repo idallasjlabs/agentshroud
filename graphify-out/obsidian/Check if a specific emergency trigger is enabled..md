@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "rationale"
-community: "A2AMethod"
+community: "Community 122"
 location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2AMethod
+  - community/Community_122
 ---
 
 # Check if a specific emergency trigger is enabled.
 
 ## Connections
-- [[dot-is_emergency_trigger_enabled()]] - `rationale_for` [EXTRACTED]
+- [[.is_emergency_trigger_enabled()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2AMethod
+#graphify/rationale #graphify/EXTRACTED #community/Community_122

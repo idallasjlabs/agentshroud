@@ -1,18 +1,18 @@
 ---
 source_file: "docs/requirements/use-cases.md"
 type: "document"
-community: "compose_generator.py"
+community: "Community 779"
 location: "L2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/compose_generatorpy
+  - community/Community_779
 ---
 
 # AgentShroud Security Proxy
 
 ## Connections
-- [[Overview_25]] - `contains` [EXTRACTED]
-- [[Use Cases_3]] - `contains` [EXTRACTED]
+- [[Overview_16]] - `contains` [EXTRACTED]
+- [[Use Cases_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/compose_generatorpy
+#graphify/document #graphify/EXTRACTED #community/Community_779

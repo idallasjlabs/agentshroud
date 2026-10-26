@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ux/SKILL.md"
+source_file: ".agents/agents/i-mm.md"
 type: "document"
-community: "Skill: UX Expert (UX)"
-location: "L7"
+community: "Community 513"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX
+  - community/Community_513
 ---
 
 # Role
 
 ## Connections
-- [[Skill UX Expert (UX)]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX
+#graphify/document #graphify/EXTRACTED #community/Community_513

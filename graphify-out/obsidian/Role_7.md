@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-odev/SKILL.md"
+source_file: ".agents/agents/hermes.md"
 type: "document"
-community: "test_claude_via_openai_path.py"
-location: "L8"
+community: "Community 1977"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_claude_via_openai_pathpy
+  - community/Community_1977
 ---
 
 # Role
 
 ## Connections
-- [[Skill OpenClaw Dev Workflow (ODEV)_1]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_claude_via_openai_pathpy
+#graphify/document #graphify/EXTRACTED #community/Community_1977

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "SkillGuard"
+community: "Community 93"
 location: "L160"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/Community_93
 ---
 
 # Initialize the approval queue.          Args:             rules_file: Path to pe
 
 ## Connections
-- [[dot-__init__()_97]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_74]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SkillGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_93

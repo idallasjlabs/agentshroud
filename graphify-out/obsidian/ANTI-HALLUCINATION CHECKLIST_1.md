@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/competitive-analysis.md"
 type: "document"
-community: "test_alert_dispatcher_retry.py"
+community: "Community 913"
 location: "L232"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_alert_dispatcher_retrypy
+  - community/Community_913
 ---
 
 # ANTI-HALLUCINATION CHECKLIST
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Competitive Intelligence Report — Standard Prompt]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_alert_dispatcher_retrypy
+#graphify/document #graphify/EXTRACTED #community/Community_913

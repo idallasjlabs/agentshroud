@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L47"
+community: "Community 84"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_84
 ---
 
 # sanitizer()
 
 ## Connections
-- [[PIISanitizer_3]] - `calls` [EXTRACTED]
-- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
+- [[PIIConfig]] - `calls` [EXTRACTED]
+- [[PIISanitizer]] - `calls` [EXTRACTED]
+- [[test_filter_xml_blocks.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/Community_84

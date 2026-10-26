@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "TestPromptProtection"
+community: "Community 348"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestPromptProtection
+  - community/Community_348
 ---
 
 # 📧 Apple Mail (IMAP/SMTP)
@@ -16,4 +16,4 @@ tags:
 - [[IMAP Settings (Incoming Mail)]] - `contains` [EXTRACTED]
 - [[SMTP Settings (Outgoing Mail)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestPromptProtection
+#graphify/document #graphify/EXTRACTED #community/Community_348

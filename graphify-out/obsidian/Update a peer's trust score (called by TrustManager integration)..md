@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "rationale"
-community: "api.py"
+community: "Community 44"
 location: "L214"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apipy
+  - community/Community_44
 ---
 
 # Update a peer's trust score (called by TrustManager integration).
 
 ## Connections
-- [[dot-update_peer_trust()]] - `rationale_for` [EXTRACTED]
+- [[.update_peer_trust()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apipy
+#graphify/rationale #graphify/EXTRACTED #community/Community_44

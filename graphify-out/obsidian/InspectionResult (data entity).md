@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "concept"
-community: "Pre-Deployment Checklist"
+community: "Community 637"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist
+  - community/Community_637
 ---
 
 # InspectionResult (data entity)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SecurityFinding (data entity)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Pre-Deployment_Checklist
+#graphify/concept #graphify/EXTRACTED #community/Community_637

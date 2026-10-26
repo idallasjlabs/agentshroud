@@ -1,21 +1,17 @@
 ---
-source_file: "docs/security/audit-specification.md"
+source_file: "docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md"
 type: "document"
-community: "Action"
-location: "L146"
+community: "Community 630"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Action
+  - community/Community_630
 ---
 
 # Hash Chain Structure
 
 ## Connections
-- [[AgentShroud Audit Specification]] - `contains` [EXTRACTED]
-- [[Block Structure]] - `contains` [EXTRACTED]
-- [[Chain Architecture]] - `contains` [EXTRACTED]
-- [[Genesis Block Specification]] - `contains` [EXTRACTED]
-- [[Hash Calculation Algorithm]] - `contains` [EXTRACTED]
+- [[Decision_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Action
+#graphify/document #graphify/EXTRACTED #community/Community_630

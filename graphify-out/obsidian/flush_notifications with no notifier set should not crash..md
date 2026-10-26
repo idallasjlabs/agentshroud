@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "TestOutboundPipelineIntegration"
+community: "Community 21"
 location: "L494"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutboundPipelineIntegration
+  - community/Community_21
 ---
 
 # flush_notifications with no notifier set should not crash.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_egress_filter_flush_without_notifier()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutboundPipelineIntegration
+#graphify/rationale #graphify/EXTRACTED #community/Community_21

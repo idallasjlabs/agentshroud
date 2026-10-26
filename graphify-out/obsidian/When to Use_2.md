@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/github/SKILL.md"
 type: "document"
-community: "AgentShroud™ Telegram-Reported Issues"
+community: "Community 713"
 location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Telegram-Reported_Issues
+  - community/Community_713
 ---
 
 # When to Use
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GitHub Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Telegram-Reported_Issues
+#graphify/document #graphify/EXTRACTED #community/Community_713

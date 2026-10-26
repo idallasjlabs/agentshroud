@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/HERMES_SETUP.md"
+source_file: "docs/requirements/use-cases.md"
 type: "document"
-community: "Hermes Agent — Connection Setup"
-location: "L33"
+community: "Community 779"
+location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Agent__Connection_Setup
+  - community/Community_779
 ---
 
 # Overview
 
 ## Connections
-- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Proxy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup
+#graphify/document #graphify/EXTRACTED #community/Community_779

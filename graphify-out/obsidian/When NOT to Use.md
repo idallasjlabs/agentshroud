@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/tmux/SKILL.md"
+source_file: "skills/openclaw/apple-reminders/SKILL.md"
 type: "document"
-community: "agentshroud-gateway"
-location: "L22"
+community: "Community 638"
+location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-gateway
+  - community/Community_638
 ---
 
 # When NOT to Use
 
 ## Connections
-- [[tmux Session Control]] - `contains` [EXTRACTED]
+- [[Apple Reminders CLI (remindctl)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway
+#graphify/document #graphify/EXTRACTED #community/Community_638

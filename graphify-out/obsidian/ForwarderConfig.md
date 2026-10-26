@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "AgentTarget"
+community: "Community 112"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/Community_112
 ---
 
 # ForwarderConfig
 
 ## Connections
-- [[dot-__init__()_146]] - `references` [EXTRACTED]
+- [[.__init__()_22]] - `references` [EXTRACTED]
 - [[Configuration for the HTTP forwarder.]] - `rationale_for` [EXTRACTED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
 - [[_StubForwarder_2]] - `uses` [INFERRED]
@@ -24,4 +24,4 @@ tags:
 - [[test_forwarder_error_handling()]] - `calls` [EXTRACTED]
 - [[unhealthy_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/Community_112

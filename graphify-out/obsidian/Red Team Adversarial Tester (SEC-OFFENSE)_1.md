@@ -1,21 +1,21 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec-offense/README.md"
 type: "document"
-community: "TestOutboundInfoFilter"
+community: "Community 2073"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/Community_2073
 ---
 
 # Red Team Adversarial Tester (SEC-OFFENSE)
 
 ## Connections
-- [[Purpose_173]] - `contains` [EXTRACTED]
-- [[Related Skills_100]] - `contains` [EXTRACTED]
-- [[Usage_112]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
-- [[hermesskillsi-sec-offenseREADME]] - `contains` [EXTRACTED]
+- [[Purpose_67]] - `contains` [EXTRACTED]
+- [[README_47]] - `contains` [EXTRACTED]
+- [[README_72]] - `contains` [EXTRACTED]
+- [[Related Skills_88]] - `contains` [EXTRACTED]
+- [[Usage_90]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/Community_2073

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
-community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET) (3)"
-location: "L49"
+community: "Community 565"
+location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET_3
+  - community/Community_565
 ---
 
 # Configuration
 
 ## Connections
-- [[Gateway Python Dependencies (`gatewayrequirements.txt`)]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET_3
+#graphify/document #graphify/EXTRACTED #community/Community_565

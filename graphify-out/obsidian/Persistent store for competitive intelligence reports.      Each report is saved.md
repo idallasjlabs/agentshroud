@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "KillSwitchMonitor (3)"
+community: "Community 57"
 location: "L195"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_3
+  - community/Community_57
 ---
 
 # Persistent store for competitive intelligence reports.      Each report is saved
 
 ## Connections
-- [[IntelReportStore_1]] - `rationale_for` [EXTRACTED]
+- [[IntelReportStore]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_57

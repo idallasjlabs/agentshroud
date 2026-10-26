@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/v0.7.0-remediation-plan.md"
 type: "document"
-community: "Phase 3: MITIGATE (Rollback First!)"
+community: "Community 422"
 location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First
+  - community/Community_422
 ---
 
 # Sprint 3: Human-in-the-Loop (R-08, R-09)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Tier 1 Must-Have (Deployment Blockers) — v0.7.0 Scope]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First
+#graphify/document #graphify/EXTRACTED #community/Community_422

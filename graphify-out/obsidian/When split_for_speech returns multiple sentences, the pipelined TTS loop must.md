@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "TestSSRFDetection"
+community: "Community 101"
 location: "L2069"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/Community_101
 ---
 
 # When split_for_speech returns multiple sentences, the pipelined TTS loop must
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_tts_pipeline_sends_all_sentences()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/rationale #graphify/EXTRACTED #community/Community_101

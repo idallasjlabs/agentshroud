@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "parse_trivy_output"
+community: "Community 514"
 location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_trivy_output
+  - community/Community_514
 ---
 
 # TestMultiHostResultProperties
 
 ## Connections
-- [[dot-test_render_summary_all_pass_overall()]] - `method` [EXTRACTED]
-- [[dot-test_render_summary_contains_hosts_and_overall()]] - `method` [EXTRACTED]
-- [[dot-test_render_summary_empty()]] - `method` [EXTRACTED]
+- [[.test_render_summary_all_pass_overall()]] - `method` [EXTRACTED]
+- [[.test_render_summary_contains_hosts_and_overall()]] - `method` [EXTRACTED]
+- [[.test_render_summary_empty()]] - `method` [EXTRACTED]
 - [[HostResult]] - `uses` [INFERRED]
 - [[HostStatus]] - `uses` [INFERRED]
 - [[MultiHostResult]] - `uses` [INFERRED]
 - [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_trivy_output
+#graphify/code #graphify/EXTRACTED #community/Community_514

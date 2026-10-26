@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "rationale"
-community: "format_cve_report()"
+community: "Community 160"
 location: "L138"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/format_cve_report
+  - community/Community_160
 ---
 
 # Check if domain matches pattern (supports wildcards)
 
 ## Connections
-- [[dot-_domain_matches()_3]] - `rationale_for` [EXTRACTED]
+- [[._domain_matches()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/format_cve_report
+#graphify/rationale #graphify/EXTRACTED #community/Community_160

@@ -1,20 +1,22 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
+source_file: ".omp/agents/i-mcpm-auth-reset.md"
 type: "document"
-community: "Mode A — Single task (2)"
-location: "L142"
+community: "Community 274"
+location: "L162"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_2
+  - community/Community_274
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[401 Unauthorized]] - `contains` [EXTRACTED]
-- [[CalendarContacts not found]] - `contains` [EXTRACTED]
-- [[Connection timeout]] - `contains` [EXTRACTED]
-- [[iCloud Services]] - `contains` [EXTRACTED]
+- [[AWS Token expired (SSO)_4]] - `contains` [EXTRACTED]
+- [[AWS Unable to locate credentials_4]] - `contains` [EXTRACTED]
+- [[Atlassian OAuth flow failed_4]] - `contains` [EXTRACTED]
+- [[GitHub Bad credentials_4]] - `contains` [EXTRACTED]
+- [[GitHub Docker image not found_4]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_2
+#graphify/document #graphify/EXTRACTED #community/Community_274

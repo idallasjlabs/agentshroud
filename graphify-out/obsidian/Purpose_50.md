@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mnemosyne/README.md"
+source_file: "docker/config/hermes/skills/i-icloud/README.md"
 type: "document"
-community: "Mnemosyne — Retention Engineer"
+community: "Community 1211"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer
+  - community/Community_1211
 ---
 
 # Purpose
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_1]] - `contains` [EXTRACTED]
+- [[iCloud Data Manager (ICLOUD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer
+#graphify/document #graphify/EXTRACTED #community/Community_1211

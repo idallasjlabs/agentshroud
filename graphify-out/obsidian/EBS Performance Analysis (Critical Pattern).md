@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
+source_file: ".agents/agents/aws.md"
 type: "document"
-community: "The 8D Investigation Process (2)"
-location: "L125"
+community: "Community 209"
+location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process_2
+  - community/Community_209
 ---
 
 # EBS Performance Analysis (Critical Pattern)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Decision Framework]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process_2
+#graphify/document #graphify/EXTRACTED #community/Community_209

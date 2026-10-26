@@ -1,23 +1,21 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
-type: "code"
-community: "TestOutboundInfoFilter (2)"
+source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
+type: "document"
+community: "Community 978"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_2
+  - community/Community_978
 ---
 
-# event_bus.py
+# event_bus.py.md
 
 ## Connections
-- [[EventBus]] - `contains` [EXTRACTED]
-- [[GatewayEvent]] - `contains` [EXTRACTED]
-- [[approval.py]] - `imports_from` [EXTRACTED]
-- [[dashboard.py]] - `imports_from` [EXTRACTED]
-- [[forward.py]] - `imports_from` [EXTRACTED]
-- [[make_event()]] - `contains` [EXTRACTED]
-- [[state.py]] - `imports_from` [EXTRACTED]
+- [[EventBus]] - `references` [EXTRACTED]
+- [[GatewayEvent]] - `references` [EXTRACTED]
+- [[event_bus.py_2]] - `contains` [EXTRACTED]
+- [[main.py_3]] - `references` [EXTRACTED]
+- [[make_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_2
+#graphify/document #graphify/EXTRACTED #community/Community_978

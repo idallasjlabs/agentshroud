@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
+source_file: "docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md"
 type: "document"
-community: "DelegationManager"
+community: "Community 223"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/Community_223
 ---
 
 # Value
 
 ## Connections
-- [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
+- [[TELEGRAM_API_BASE_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DelegationManager
+#graphify/document #graphify/EXTRACTED #community/Community_223

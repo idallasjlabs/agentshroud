@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "ContextSegment"
+community: "Community 30"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/Community_30
 ---
 
 # Create a temporary SQLite store for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[temp_store()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextSegment
+#graphify/rationale #graphify/EXTRACTED #community/Community_30

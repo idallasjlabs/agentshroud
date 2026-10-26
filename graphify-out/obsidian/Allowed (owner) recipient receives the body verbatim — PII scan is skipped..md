@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "rationale"
-community: "TestPatternDetection"
+community: "Community 512"
 location: "L185"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPatternDetection
+  - community/Community_512
 ---
 
 # Allowed (owner) recipient receives the body verbatim — PII scan is skipped.
 
 ## Connections
-- [[dot-test_owner_body_not_redacted()]] - `rationale_for` [EXTRACTED]
+- [[.test_owner_body_not_redacted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPatternDetection
+#graphify/rationale #graphify/EXTRACTED #community/Community_512

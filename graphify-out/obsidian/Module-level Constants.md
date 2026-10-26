@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
 type: "document"
-community: "llm_proxy.py"
-location: "L27"
+community: "Community 536"
+location: "L79"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/llm_proxypy
+  - community/Community_536
 ---
 
-# Module-level Constants
+# Module-Level Constants
 
 ## Connections
-- [[http_proxy.py_2]] - `contains` [EXTRACTED]
+- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/llm_proxypy
+#graphify/document #graphify/EXTRACTED #community/Community_536

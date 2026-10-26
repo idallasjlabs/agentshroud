@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/01-enforce-by-default.md"
+source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "Morning Checklist (5 minutes)"
-location: "L130"
+community: "Community 481"
+location: "L135"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Morning_Checklist_5_minutes
+  - community/Community_481
 ---
 
 # Verification
 
 ## Connections
-- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
+- [[P2 Credential Isolation (op-proxy)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Morning_Checklist_5_minutes
+#graphify/document #graphify/EXTRACTED #community/Community_481

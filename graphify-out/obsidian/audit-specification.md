@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "ApprovalHardening"
+community: "Community 91"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/Community_91
 ---
 
 # audit-specification.md
@@ -19,4 +19,4 @@ tags:
 - [[PII (Personally Identifiable Information)]] - `references` [EXTRACTED]
 - [[cve-mitigation-matrix]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/document #graphify/EXTRACTED #community/Community_91

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Action"
+community: "Community 217"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Action
+  - community/Community_217
 ---
 
 # Audit Event Types and Schema
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Audit Specification]] - `contains` [EXTRACTED]
 - [[Core Event Categories]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Action
+#graphify/document #graphify/EXTRACTED #community/Community_217

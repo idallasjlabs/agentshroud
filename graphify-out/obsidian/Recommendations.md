@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/OPENCLAW_SETUP.md"
+source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md"
 type: "document"
-community: "SkillGuard (2)"
-location: "L435"
+community: "Community 357"
+location: "L213"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SkillGuard_2
+  - community/Community_357
 ---
 
 # Recommendations
 
 ## Connections
-- [[Security Notes]] - `contains` [EXTRACTED]
+- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SkillGuard_2
+#graphify/document #graphify/EXTRACTED #community/Community_357

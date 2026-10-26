@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "AgentShroud Audit Specification"
+community: "Community 218"
 location: "L223"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Audit_Specification
+  - community/Community_218
 ---
 
 # From OpenClaw Bot (Natural Language)
 
 ## Connections
-- [[Usage Examples]] - `contains` [EXTRACTED]
+- [[Usage Examples_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification
+#graphify/document #graphify/EXTRACTED #community/Community_218

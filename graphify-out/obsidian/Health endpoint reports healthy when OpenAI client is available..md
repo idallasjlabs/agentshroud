@@ -1,17 +1,17 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "rationale"
-community: "egress_filter.py"
+community: "Community 95"
 location: "L125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/Community_95
 ---
 
 # Health endpoint reports healthy when OpenAI client is available.
 
 ## Connections
-- [[dot-test_health_healthy_with_client()]] - `rationale_for` [EXTRACTED]
+- [[.test_health_healthy_with_client()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/egress_filterpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_95

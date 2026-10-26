@@ -1,18 +1,20 @@
 ---
-source_file: ""
-type: "code"
-community: "agentshroud-blueteam/SKILL.md"
+source_file: "docs/vault/05 - Dependencies/fastapi.md"
+type: "document"
+community: "Community 253"
+location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/Community_253
 ---
 
-# FastAPI
+# fastapi.md
 
 ## Connections
-- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
-- [[lifespan()]] - `references` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[All Dependencies]] - `references` [EXTRACTED]
+- [[FastAPI_4]] - `contains` [EXTRACTED]
+- [[main.py_3]] - `references` [INFERRED]
+- [[pydantic]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Community_253

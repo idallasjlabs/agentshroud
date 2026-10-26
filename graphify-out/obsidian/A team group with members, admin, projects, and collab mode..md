@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "colima-health-check.sh"
+community: "Community 18"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/Community_18
 ---
 
 # A team group with members, admin, projects, and collab mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GroupConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/rationale #graphify/EXTRACTED #community/Community_18

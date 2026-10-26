@@ -1,19 +1,22 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
 type: "document"
-community: "test_a2a_policy.py"
-location: "L1"
+community: "Community 73"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/Community_73
 ---
 
-# OPENCLAW_DISABLE_HOST_FILESYSTEM.md
+# OPENCLAW_DISABLE_HOST_FILESYSTEM
 
 ## Connections
+- [[Description_7]] - `contains` [EXTRACTED]
+- [[Effect]] - `contains` [EXTRACTED]
 - [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - `contains` [EXTRACTED]
-- [[OPENCLAW_SANDBOX_MODE_1]] - `references` [EXTRACTED]
-- [[agent_isolation.py]] - `references` [INFERRED]
+- [[Related Notes_35]] - `contains` [EXTRACTED]
+- [[Set In_3]] - `contains` [EXTRACTED]
+- [[Value_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/document #graphify/EXTRACTED #community/Community_73

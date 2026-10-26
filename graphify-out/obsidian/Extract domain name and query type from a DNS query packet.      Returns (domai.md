@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "rationale"
-community: "web_proxy.py"
+community: "Community 774"
 location: "L105"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/web_proxypy
+  - community/Community_774
 ---
 
 # Extract domain name and query type from a DNS query packet.      Returns: (domai
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[parse_query()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/web_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/Community_774

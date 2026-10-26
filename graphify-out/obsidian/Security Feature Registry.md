@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
 type: "document"
-community: "consent_framework.py"
+community: "Community 727"
 location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/consent_frameworkpy
+  - community/Community_727
 ---
 
 # Security Feature Registry
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/consent_frameworkpy
+#graphify/document #graphify/EXTRACTED #community/Community_727

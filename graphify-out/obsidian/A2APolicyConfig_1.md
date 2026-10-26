@@ -1,43 +1,22 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "A2APolicyConfig"
-location: "L175"
+community: "Community 111"
+location: "L38"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/A2APolicyConfig
+  - community/Community_111
 ---
 
 # A2APolicyConfig
 
 ## Connections
-- [[dot-__init__()_130]] - `references` [EXTRACTED]
-- [[dot-__post_init__()_5]] - `method` [EXTRACTED]
-- [[dot-from_dict()_4]] - `method` [EXTRACTED]
-- [[dot-test_bare_config_denies_every_peer()]] - `calls` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]
-- [[A2APeerTestDouble]] - `uses` [INFERRED]
+- [[A2APolicyAction]] - `uses` [INFERRED]
 - [[A2APolicyConfig]] - `uses` [INFERRED]
-- [[A2APolicyEngine]] - `uses` [INFERRED]
+- [[A2APolicyDecision]] - `uses` [INFERRED]
 - [[A2APolicyEngine_1]] - `uses` [INFERRED]
-- [[A2AProxy]] - `uses` [INFERRED]
-- [[Declarative A2A security policy.      Loaded from the ``a2a_policy`` section of]] - `rationale_for` [EXTRACTED]
-- [[Request_2]] - `uses` [INFERRED]
-- [[Response_1]] - `uses` [INFERRED]
-- [[TestDefaultA2APolicyIsFailClosed]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
-- [[_Event]] - `uses` [INFERRED]
-- [[_LegacyStubApprovalQueue]] - `uses` [INFERRED]
-- [[_StubApprovalQueue]] - `uses` [INFERRED]
-- [[_StubAuditStore]] - `uses` [INFERRED]
-- [[_StubForwarder]] - `uses` [INFERRED]
-- [[_StubForwarder_1]] - `uses` [INFERRED]
-- [[a2a_policy.py]] - `contains` [EXTRACTED]
-- [[test_a2a_integration.py]] - `imports` [EXTRACTED]
-- [[test_a2a_policy.py]] - `imports` [EXTRACTED]
-- [[test_a2a_policy_default_failclosed.py]] - `imports` [EXTRACTED]
-- [[test_a2a_proxy.py]] - `imports` [EXTRACTED]
-- [[test_a2a_trust_scoring.py]] - `imports` [EXTRACTED]
+- [[_base_config()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/A2APolicyConfig
+#graphify/code #graphify/INFERRED #community/Community_111

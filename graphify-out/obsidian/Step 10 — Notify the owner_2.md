@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "document"
-community: "CredentialInjector"
+community: "Community 634"
 location: "L309"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CredentialInjector
+  - community/Community_634
 ---
 
 # Step 10 — Notify the owner
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode A — Single task_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CredentialInjector
+#graphify/document #graphify/EXTRACTED #community/Community_634

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-wiring-audit.md"
 type: "document"
-community: "Integration Guide"
+community: "Community 459"
 location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Integration_Guide
+  - community/Community_459
 ---
 
 # Pipeline (pipeline.py → process_inbound / process_outbound)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[✅ CONFIRMED WIRED AND WORKING]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Integration_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_459

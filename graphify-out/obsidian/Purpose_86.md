@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tdd/README.md"
+source_file: "docker/config/openclaw/skills/i-hermes/README.md"
 type: "document"
-community: "MultiHostResult"
+community: "Community 1232"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MultiHostResult
+  - community/Community_1232
 ---
 
 # Purpose
 
 ## Connections
-- [[Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
-- [[Test-Driven Development README]] - `contains` [EXTRACTED]
+- [[Hermes — Podcast Production Orchestrator_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MultiHostResult
+#graphify/document #graphify/EXTRACTED #community/Community_1232

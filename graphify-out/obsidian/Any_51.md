@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
+source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "AppleContainerEngine"
-location: "L149"
+community: "Community 71"
+location: "L124"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/AppleContainerEngine
+  - graphify/EXTRACTED
+  - community/Community_71
 ---
 
 # Any
 
 ## Connections
-- [[dot-inspect()_3]] - `references` [EXTRACTED]
-- [[ContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo_3]] - `uses` [INFERRED]
+- [[._parse_service_network_config()]] - `references` [EXTRACTED]
+- [[._validate_network_definitions()]] - `references` [EXTRACTED]
+- [[.get_security_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/Community_71

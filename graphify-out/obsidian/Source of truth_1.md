@@ -1,17 +1,20 @@
 ---
-source_file: "docs/api/api-reference.md"
+source_file: "docs/planning/v1.2/v1.2.0-master-plan.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester (2)"
-location: "L172"
+community: "Community 2034"
+location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester_2
+  - community/Community_2034
 ---
 
 # Source of truth
 
 ## Connections
-- [[API Reference]] - `contains` [EXTRACTED]
+- [[Workstream B — Security features from competitive intel]] - `contains` [EXTRACTED]
+- [[Workstream B Security Features from Competitive Intel]] - `contains` [EXTRACTED]
+- [[Workstream C Full Local-Model Parity (Both Bots)]] - `contains` [EXTRACTED]
+- [[Workstream E Blue and Red Team Security Scan (Both Bots)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester_2
+#graphify/document #graphify/EXTRACTED #community/Community_2034

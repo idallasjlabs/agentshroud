@@ -1,19 +1,17 @@
 ---
-source_file: "docs/setup/ICLOUD-SERVICES-SETUP.md"
+source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "TestOutboundClassifierHelpers"
-location: "L33"
+community: "Community 285"
+location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundClassifierHelpers
+  - community/Community_285
 ---
 
 # Server Settings
 
 ## Connections
-- [[📅 iCloud Calendar (CalDAV)]] - `contains` [EXTRACTED]
-- [[📞 iCloud Contacts (CardDAV)]] - `contains` [EXTRACTED]
-- [[📧 iCloud Mail (IMAPSMTP)]] - `contains` [EXTRACTED]
+- [[📞 Google Contacts (CardDAV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundClassifierHelpers
+#graphify/document #graphify/EXTRACTED #community/Community_285

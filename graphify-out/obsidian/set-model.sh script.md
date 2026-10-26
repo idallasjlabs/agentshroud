@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/set-model.sh"
 type: "code"
-community: "run-unit.sh"
+community: "Community 1533"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run-unitsh
+  - community/Community_1533
 ---
 
 # set-model.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[set-model.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run-unitsh
+#graphify/code #graphify/EXTRACTED #community/Community_1533

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "_make_proxy()"
+community: "Community 34"
 location: "L305"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_34
 ---
 
 # test_cors_origins_include_configured_port()
 
 ## Connections
-- [[GatewayConfig_3]] - `calls` [EXTRACTED]
+- [[GatewayConfig_1]] - `calls` [EXTRACTED]
 - [[load_config computes CORS origins from the configured port.]] - `rationale_for` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_34

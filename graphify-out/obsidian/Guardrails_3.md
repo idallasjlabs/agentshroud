@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-odev/SKILL.md"
+source_file: ".agents/agents/i-hdev.md"
 type: "document"
-community: "test_claude_via_openai_path.py"
-location: "L478"
+community: "Community 819"
+location: "L365"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_claude_via_openai_pathpy
+  - community/Community_819
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill OpenClaw Dev Workflow (ODEV)_1]] - `contains` [EXTRACTED]
+- [[Skill Hermes Dev Workflow (HDEV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_claude_via_openai_pathpy
+#graphify/document #graphify/EXTRACTED #community/Community_819

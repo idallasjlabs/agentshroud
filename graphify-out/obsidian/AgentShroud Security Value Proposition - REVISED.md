@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "document"
-community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md"
+community: "Community 472"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+  - community/Community_472
 ---
 
 # AgentShroud Security Value Proposition - Revised
@@ -13,16 +13,11 @@ tags:
 ## Connections
 - [[Bottom Line (Corrected)]] - `contains` [EXTRACTED]
 - [[Critical Context (What I Missed)]] - `contains` [EXTRACTED]
-- [[IEC 62443 Compliance Matrix]] - `references` [EXTRACTED]
 - [[Immediate Action Plan (Phase 3A - Completion)]] - `contains` [EXTRACTED]
 - [[Immediate Next Steps (This Session)]] - `contains` [EXTRACTED]
-- [[OpenSCAP & IEC 62443 compliance validation]] - `references` [EXTRACTED]
-- [[Read-only filesystem (immutable infrastructure)]] - `references` [EXTRACTED]
 - [[Revised Assessment Nothing is Over-Engineered]] - `contains` [EXTRACTED]
 - [[Revised Threat Model]] - `contains` [EXTRACTED]
 - [[SECURITY_VALUE_PROPOSITION]] - `contains` [EXTRACTED]
-- [[Seccomp profiles (critical, re-enable)]] - `references` [EXTRACTED]
-- [[Ultra-conservative credential policy (multi-user threat model)]] - `references` [EXTRACTED]
 - [[What's Actually Over-Engineered (Revised Answer)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+#graphify/document #graphify/EXTRACTED #community/Community_472

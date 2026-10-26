@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/Claude-Code-TDD-Playbook.md"
 type: "concept"
-community: "health-check.sh"
+community: "Community 1321"
 location: "Section 7.2"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/health-checksh
+  - community/Community_1321
 ---
 
 # MCP OAuth preflight checker (mcp_oauth_preflight.py)
@@ -15,4 +15,4 @@ tags:
 - [[Atlassian OAuth 2.0 (3LO) config]] - `references` [EXTRACTED]
 - [[GitHub OAuth device authorization flow config]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/health-checksh
+#graphify/concept #graphify/EXTRACTED #community/Community_1321

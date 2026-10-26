@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "rationale"
-community: "_wrap_response() (3)"
+community: "Community 431"
 location: "L150"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_wrap_response_3
+  - community/Community_431
 ---
 
 # Small amounts across multiple channels should be detected.
 
 ## Connections
-- [[dot-test_slow_drip_across_channels()]] - `rationale_for` [EXTRACTED]
+- [[.test_slow_drip_across_channels()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_wrap_response_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_431

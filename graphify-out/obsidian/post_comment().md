@@ -1,21 +1,21 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "TestEgressTelegramNotify"
+community: "Community 238"
 location: "L260"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressTelegramNotify
+  - community/Community_238
 ---
 
 # post_comment()
 
 ## Connections
 - [[POST the ADF comment to Jira with Basic auth. Returns (status, text).]] - `rationale_for` [EXTRACTED]
-- [[build_basic_auth_header()_2]] - `calls` [EXTRACTED]
-- [[build_comment_url()_2]] - `calls` [EXTRACTED]
+- [[build_basic_auth_header()_1]] - `calls` [EXTRACTED]
+- [[build_comment_url()_1]] - `calls` [EXTRACTED]
 - [[jira_weekly_review.py]] - `contains` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[run()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressTelegramNotify
+#graphify/code #graphify/EXTRACTED #community/Community_238

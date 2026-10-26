@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-bs/SKILL.md"
+source_file: ".agents/agents/i-bs.md"
 type: "document"
-community: "TestBuildCollaboratorSafeInfoResponse"
-location: "L223"
+community: "Community 1009"
+location: "L226"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestBuildCollaboratorSafeInfoResponse
+  - community/Community_1009
 ---
 
 # Deck / Slide Master Rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse
+#graphify/document #graphify/EXTRACTED #community/Community_1009

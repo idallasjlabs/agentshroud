@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/cve-triage-gaps.md"
 type: "concept"
-community: "_wrap_response() (2)"
+community: "Community 227"
 location: "37"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/_wrap_response_2
+  - community/Community_227
 ---
 
 # ASH-OCLAW-113 auth_bypass partially_mitigated (running 2026.9.8, fixed_in None)
@@ -15,4 +15,4 @@ tags:
 - [[CVE Triage — Gaps & Development Plan (OpenClaw), 891 triaged]] - `references` [EXTRACTED]
 - [[Two-arm CVE remediation (vendor fix + AgentShroud gateway control)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/_wrap_response_2
+#graphify/concept #graphify/EXTRACTED #community/Community_227

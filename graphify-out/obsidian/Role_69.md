@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ab/SKILL.md"
+source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "mcp-proxy-wrapper.js"
-location: "L7"
+community: "Community 337"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp-proxy-wrapperjs
+  - community/Community_337
 ---
 
 # Role
 
 ## Connections
-- [[Skill Audit Branch (AB) — Merge Regression Detection_2]] - `contains` [EXTRACTED]
+- [[Skill Technical Writer (TW)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs
+#graphify/document #graphify/EXTRACTED #community/Community_337

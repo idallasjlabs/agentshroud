@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
+source_file: ".cursor/agents/i-ui.md"
 type: "document"
-community: "Slack Channel Setup"
-location: "L144"
+community: "Community 629"
+location: "L147"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Slack_Channel_Setup
+  - community/Community_629
 ---
 
 # Form Field
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Component Patterns_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup
+#graphify/document #graphify/EXTRACTED #community/Community_629

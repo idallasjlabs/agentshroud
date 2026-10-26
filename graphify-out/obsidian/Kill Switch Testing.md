@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/VERIFICATION_RESULTS.md"
 type: "document"
-community: "TestSecurityFeatures"
+community: "Community 478"
 location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSecurityFeatures
+  - community/Community_478
 ---
 
 # Kill Switch Testing
@@ -17,4 +17,4 @@ tags:
 - [[Phase 3A3B Implementation Verification Results]] - `contains` [EXTRACTED]
 - [[Shutdown Mode]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSecurityFeatures
+#graphify/document #graphify/EXTRACTED #community/Community_478

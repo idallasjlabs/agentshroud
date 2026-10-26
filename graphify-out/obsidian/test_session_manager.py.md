@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "Community 79"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/Community_79
 ---
 
 # test_session_manager.py
 
 ## Connections
-- [[TestAccessControl_1]] - `contains` [EXTRACTED]
+- [[TestAccessControl_2]] - `contains` [EXTRACTED]
 - [[TestAtomicRegistryWrites]] - `contains` [EXTRACTED]
 - [[TestConversationHistory]] - `contains` [EXTRACTED]
 - [[TestInputValidation]] - `contains` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[TestTrustLevel]] - `contains` [EXTRACTED]
 - [[UserSession]] - `imports` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
-- [[mgr()_1]] - `contains` [EXTRACTED]
+- [[mgr()_2]] - `contains` [EXTRACTED]
 - [[session_manager.py (UserSessionManager)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/Community_79

@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-atlas/README.md"
+source_file: "docker/config/hermes/skills/i-tdd/README.md"
 type: "document"
-community: "TestOutboundInfoFilter"
+community: "Community 518"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/Community_518
 ---
 
 # Related Skills
 
 ## Connections
-- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
+- [[Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
+- [[Test-Driven Development README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/Community_518

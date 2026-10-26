@@ -1,25 +1,25 @@
 ---
-source_file: "gateway/tests/test_a2a_governance.py"
+source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "api.py"
-location: "L121"
+community: "Community 59"
+location: "L392"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/apipy
+  - community/Community_59
 ---
 
 # TestRateLimiting
 
 ## Connections
-- [[dot-test_rate_limit_exceeded()_1]] - `method` [EXTRACTED]
-- [[dot-test_within_rate_limit()]] - `method` [EXTRACTED]
-- [[A2ADecision]] - `uses` [INFERRED]
-- [[A2AGovernanceConfig]] - `uses` [INFERRED]
-- [[A2AGovernanceProxy]] - `uses` [INFERRED]
-- [[A2AMessage]] - `uses` [INFERRED]
-- [[A2AMessageType]] - `uses` [INFERRED]
-- [[A2APeer]] - `uses` [INFERRED]
-- [[test_a2a_governance.py]] - `contains` [EXTRACTED]
+- [[.test_no_limit_always_allowed()]] - `method` [EXTRACTED]
+- [[.test_rate_limit_enforced()_1]] - `method` [EXTRACTED]
+- [[.test_rate_limit_per_agent()]] - `method` [EXTRACTED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig]] - `uses` [INFERRED]
+- [[MCPToolConfig]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
+- [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/apipy
+#graphify/code #graphify/INFERRED #community/Community_59

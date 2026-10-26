@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/security/prompt_protection.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "AgentShroud Module Inventory"
-location: "L39"
+community: "Community 84"
+location: "L71"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/AgentShroud_Module_Inventory
+  - graphify/INFERRED
+  - community/Community_84
 ---
 
 # RedactionResult
 
 ## Connections
-- [[dot-scan_response()_2]] - `references` [EXTRACTED]
-- [[Result of scanning and redacting content.]] - `rationale_for` [EXTRACTED]
-- [[prompt_protection.py]] - `contains` [EXTRACTED]
+- [[.sanitize_tool_result()]] - `references` [EXTRACTED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[RedactionResult]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Module_Inventory
+#graphify/code #graphify/INFERRED #community/Community_84

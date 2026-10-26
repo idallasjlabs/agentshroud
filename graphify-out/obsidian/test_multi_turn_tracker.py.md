@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "code"
-community: "Enum"
+community: "Community 8"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/Community_8
 ---
 
 # test_multi_turn_tracker.py
@@ -17,8 +17,8 @@ tags:
 - [[MultiTurnTracker]] - `imports` [EXTRACTED]
 - [[TestMultiTurnTracker_1]] - `contains` [EXTRACTED]
 - [[TestResponseConsistency]] - `contains` [EXTRACTED]
-- [[mock_alert_callback()_1]] - `contains` [EXTRACTED]
+- [[mock_alert_callback()]] - `contains` [EXTRACTED]
 - [[multi_turn_tracker()]] - `contains` [EXTRACTED]
 - [[multi_turn_tracker.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/Community_8

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "SkillGuard"
+community: "Community 23"
 location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/Community_23
 ---
 
 # Test suite for EgressApprovalQueue functionality.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEgressApprovalQueue]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SkillGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_23

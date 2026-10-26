@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: ".github/agents/i-browser.agent.md"
 type: "document"
-community: "test_security.py"
-location: "L341"
+community: "Community 449"
+location: "L272"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_securitypy
+  - community/Community_449
 ---
 
 # Limitations
 
 ## Connections
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_securitypy
+#graphify/document #graphify/EXTRACTED #community/Community_449

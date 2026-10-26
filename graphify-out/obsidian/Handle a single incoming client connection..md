@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "rationale"
-community: "GitHub Skill"
+community: "Community 709"
 location: "L179"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GitHub_Skill
+  - community/Community_709
 ---
 
 # Handle a single incoming client connection.
 
 ## Connections
-- [[dot-_handle_client()]] - `rationale_for` [EXTRACTED]
+- [[._handle_client()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GitHub_Skill
+#graphify/rationale #graphify/EXTRACTED #community/Community_709

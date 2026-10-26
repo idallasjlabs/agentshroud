@@ -1,12 +1,12 @@
 ---
 source_file: "CONTRIBUTING.md"
 type: "document"
-community: "version_routes.py"
+community: "Community 588"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/Community_588
 ---
 
 # Test Guidelines
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Contributing to AgentShroud™]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/version_routespy
+#graphify/document #graphify/EXTRACTED #community/Community_588

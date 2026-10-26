@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "rationale"
-community: "SecurityPipeline (3)"
+community: "Community 83"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecurityPipeline_3
+  - community/Community_83
 ---
 
 # Compute the deploy plan without mutating the filesystem.      Pure with respect
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[plan_deploy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_83

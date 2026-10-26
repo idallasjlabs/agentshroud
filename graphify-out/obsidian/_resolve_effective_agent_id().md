@@ -1,21 +1,22 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "sync-llm-settings.sh"
+community: "Community 6"
 location: "L690"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-llm-settingssh
+  - community/Community_6
 ---
 
 # _resolve_effective_agent_id()
 
 ## Connections
+- [[RBACConfig_1]] - `calls` [EXTRACTED]
 - [[Resolve trusted effective identity and prevent owner spoofing via body.]] - `rationale_for` [EXTRACTED]
 - [[_normalize_agent_identity()]] - `calls` [EXTRACTED]
-- [[ingest_apimain.py]] - `contains` [EXTRACTED]
+- [[main.py_2]] - `contains` [EXTRACTED]
 - [[mcp_proxy_endpoint()]] - `calls` [EXTRACTED]
 - [[mcp_result_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-llm-settingssh
+#graphify/code #graphify/EXTRACTED #community/Community_6

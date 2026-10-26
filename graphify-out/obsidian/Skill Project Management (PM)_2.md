@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pm/SKILL.md"
+source_file: ".cursor/agents/i-pm.md"
 type: "document"
-community: "Skill: Project Management (PM) (2)"
-location: "L5"
+community: "Community 1041"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM_2
+  - community/Community_1041
 ---
 
 # Skill: Project Management (PM)
@@ -15,10 +15,9 @@ tags:
 - [[Continuity Files_2]] - `contains` [EXTRACTED]
 - [[Project Roadmap_2]] - `contains` [EXTRACTED]
 - [[Risk Management_2]] - `contains` [EXTRACTED]
-- [[Role_54]] - `contains` [EXTRACTED]
+- [[Role_96]] - `contains` [EXTRACTED]
 - [[Status Reporting_2]] - `contains` [EXTRACTED]
 - [[Task Coordination_2]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-pmSKILL]] - `contains` [EXTRACTED]
+- [[i-pm_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM_2
+#graphify/document #graphify/EXTRACTED #community/Community_1041

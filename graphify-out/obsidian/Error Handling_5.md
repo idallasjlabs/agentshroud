@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
+source_file: ".cursor/agents/mac-app-discovery.md"
 type: "document"
-community: "AgentShroud -- USPTO Trademark Application"
-location: "L121"
+community: "Community 848"
+location: "L341"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_--_USPTO_Trademark_Application
+  - community/Community_848
 ---
 
 # Error Handling
 
 ## Connections
-- [[Technical Specification_1]] - `contains` [EXTRACTED]
+- [[Mac App Discovery Skill_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Trademark_Application
+#graphify/document #graphify/EXTRACTED #community/Community_848

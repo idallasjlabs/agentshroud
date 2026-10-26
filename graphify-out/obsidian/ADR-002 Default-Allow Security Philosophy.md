@@ -1,21 +1,21 @@
 ---
 source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
 type: "document"
-community: "ADR-008-progressive-trust-levels.md"
+community: "Community 856"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-008-progressive-trust-levelsmd
+  - community/Community_856
 ---
 
 # ADR-002: Default-Allow Security Philosophy
 
 ## Connections
 - [[ADR-002-default-allow-security-philosophy]] - `contains` [EXTRACTED]
-- [[Consequences_4]] - `contains` [EXTRACTED]
-- [[Context_7]] - `contains` [EXTRACTED]
-- [[Decision_7]] - `contains` [EXTRACTED]
-- [[Status_7]] - `contains` [EXTRACTED]
+- [[Consequences_1]] - `contains` [EXTRACTED]
+- [[Context_2]] - `contains` [EXTRACTED]
+- [[Decision_3]] - `contains` [EXTRACTED]
+- [[Status_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-008-progressive-trust-levelsmd
+#graphify/document #graphify/EXTRACTED #community/Community_856

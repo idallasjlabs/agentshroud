@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
+community: "Community 2171"
 location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/Community_2171
 ---
 
 # P1 Critical Incidents
@@ -17,4 +17,4 @@ tags:
 - [[Container Escape Attempt]] - `contains` [EXTRACTED]
 - [[Data Exfiltration Detected]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_2171

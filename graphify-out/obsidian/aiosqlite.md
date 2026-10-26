@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
 type: "document"
-community: "Phase 2 — Security Core (HMAC Auth + PII Sanitizer, HTTP CONNECT Proxy, Approval Queue)"
+community: "Community 1014"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_2__Security_Core_HMAC_Auth__PII_Sanitizer_HTTP_CONNECT_Proxy_Approval_Queue
+  - community/Community_1014
 ---
 
 # aiosqlite.md
@@ -18,4 +18,4 @@ tags:
 - [[ledger.py]] - `references` [EXTRACTED]
 - [[store.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_2__Security_Core_HMAC_Auth__PII_Sanitizer_HTTP_CONNECT_Proxy_Approval_Queue
+#graphify/document #graphify/EXTRACTED #community/Community_1014

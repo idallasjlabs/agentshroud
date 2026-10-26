@@ -1,11 +1,11 @@
 ---
 source_file: "docs/flows/data-flow-diagram.md"
 type: "concept"
-community: "Animation Guidelines"
+community: "Community 969"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Animation_Guidelines
+  - community/Community_969
 ---
 
 # MCP Proxy Detailed Flow (tool call inspection, permission check, rate limit, forward, result inspection)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Data Flow Diagrams (doc)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Animation_Guidelines
+#graphify/concept #graphify/EXTRACTED #community/Community_969

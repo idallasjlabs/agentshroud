@@ -1,21 +1,22 @@
 ---
-source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "TestOutboundInfoFilter (17)"
-location: "L237"
+community: "Community 288"
+location: "L161"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_17
+  - community/Community_288
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
-- [[Problem 1Password link shows only page shell]] - `contains` [EXTRACTED]
-- [[Problem Browser binaries not found]] - `contains` [EXTRACTED]
-- [[Problem Permission denied executing browser]] - `contains` [EXTRACTED]
-- [[Problem Skill not auto-discovered by bot]] - `contains` [EXTRACTED]
+- [[AWS Token expired (SSO)_1]] - `contains` [EXTRACTED]
+- [[AWS Unable to locate credentials_1]] - `contains` [EXTRACTED]
+- [[Atlassian OAuth flow failed_1]] - `contains` [EXTRACTED]
+- [[GitHub Bad credentials_1]] - `contains` [EXTRACTED]
+- [[GitHub Docker image not found_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_17
+#graphify/document #graphify/EXTRACTED #community/Community_288

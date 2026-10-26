@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "Known Log Messages"
-location: "L97"
+community: "Community 616"
+location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Known_Log_Messages
+  - community/Community_616
 ---
 
 # Mode: Enforce vs Monitor
 
 ## Connections
-- [[drift_detector.py_2]] - `contains` [EXTRACTED]
+- [[dns_filter.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Known_Log_Messages
+#graphify/document #graphify/EXTRACTED #community/Community_616

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-agile/SKILL.md"
+source_file: ".agents/agents/i-agile.md"
 type: "document"
-community: "Prove the Outcome, Never the Steps — assert on state deltas not exit codes"
-location: "L5"
+community: "Community 2210"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prove_the_Outcome_Never_the_Steps__assert_on_state_deltas_not_exit_codes
+  - community/Community_2210
 ---
 
 # Skill: agile
 
 ## Connections
-- [[dot-agentsskillsi-agileSKILL]] - `contains` [EXTRACTED]
+- [[i-agile]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prove_the_Outcome_Never_the_Steps__assert_on_state_deltas_not_exit_codes
+#graphify/document #graphify/EXTRACTED #community/Community_2210

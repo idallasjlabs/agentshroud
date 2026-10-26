@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
+source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "models.py"
+community: "Community 292"
 location: "L336"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/modelspy
+  - community/Community_292
 ---
 
 # Related Documentation
 
 ## Connections
-- [[GSDE&G Skills Reference_1]] - `contains` [EXTRACTED]
+- [[GSDE&G Skills Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/modelspy
+#graphify/document #graphify/EXTRACTED #community/Community_292

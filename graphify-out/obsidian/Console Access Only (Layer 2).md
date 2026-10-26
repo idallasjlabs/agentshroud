@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "rationale"
-community: "Skill: UX Expert (UX) (3)"
+community: "Community 270"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX_3
+  - community/Community_270
 ---
 
 # Console Access Only (Layer 2)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[CREDENTIAL-PROTECTION-IMPLEMENTED]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Skill_UX_Expert_UX_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_270

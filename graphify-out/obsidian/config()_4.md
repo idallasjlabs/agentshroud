@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L27"
+community: "Community 27"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/Community_27
 ---
 
 # config()
 
 ## Connections
-- [[KillSwitchConfig_1]] - `calls` [EXTRACTED]
-- [[test_killswitch_monitor_behavior.py]] - `contains` [EXTRACTED]
+- [[WebProxyConfig]] - `calls` [EXTRACTED]
+- [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/Community_27

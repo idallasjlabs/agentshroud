@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "ReportStore"
+community: "Community 116"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/Community_116
 ---
 
 # test_resolve_peer_id_missing_header_returns_none()
 
 ## Connections
-- [[A2AProxy]] - `references` [EXTRACTED]
+- [[A2AProxy_1]] - `references` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportStore
+#graphify/code #graphify/EXTRACTED #community/Community_116

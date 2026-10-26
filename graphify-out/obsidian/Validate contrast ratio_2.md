@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-bs/SKILL.md"
+source_file: ".cursor/agents/i-bs.md"
 type: "document"
-community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements (2)"
-location: "L89"
+community: "Community 1020"
+location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Required__45_for_text__30_for_UI_elements_2
+  - community/Community_1020
 ---
 
 # Validate contrast ratio
 
 ## Connections
-- [[openclawskillsi-bsSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[i-bs_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements_2
+#graphify/document #graphify/EXTRACTED #community/Community_1020

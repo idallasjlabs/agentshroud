@@ -1,13 +1,13 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.h"
 type: "code"
-community: "AgentShroud Gateway OpenAPI Spec"
+community: "Community 1770"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Gateway_OpenAPI_Spec
+  - community/Community_1770
 ---
 
 # wakeword.h (PTT/WakeNet public API)
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Gateway_OpenAPI_Spec
+#graphify/code #graphify/EXTRACTED #community/Community_1770

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "Mode A — Single task (3)"
-location: "L72"
+community: "Community 766"
+location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_3
+  - community/Community_766
 ---
 
 # Environment Variables Used
 
 ## Connections
-- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
+- [[auth.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_3
+#graphify/document #graphify/EXTRACTED #community/Community_766

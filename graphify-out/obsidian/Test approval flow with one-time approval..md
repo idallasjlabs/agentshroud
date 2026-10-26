@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "SkillGuard"
+community: "Community 23"
 location: "L183"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/Community_23
 ---
 
 # Test approval flow with one-time approval.
 
 ## Connections
-- [[dot-test_approval_flow_once()]] - `rationale_for` [EXTRACTED]
+- [[.test_approval_flow_once()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SkillGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_23

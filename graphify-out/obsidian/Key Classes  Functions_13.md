@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
 type: "document"
-community: "Actions"
-location: "L28"
+community: "Community 666"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Actions
+  - community/Community_666
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[session_security.py_2]] - `contains` [EXTRACTED]
+- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Actions
+#graphify/document #graphify/EXTRACTED #community/Community_666

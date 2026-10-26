@@ -1,17 +1,19 @@
 ---
-source_file: "docker/bots/hermes/docker_proxy_relay.py"
+source_file: "scripts/soak_status.py"
 type: "code"
-community: "test_cron_jobs_prompts.py"
-location: "L70"
+community: "Community 310"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cron_jobs_promptspy
+  - community/Community_310
 ---
 
 # main()
 
 ## Connections
-- [[docker_proxy_relay.py]] - `contains` [EXTRACTED]
+- [[check-soak-status.sh]] - `references` [EXTRACTED]
+- [[classify()_1]] - `calls` [EXTRACTED]
+- [[soak_status.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cron_jobs_promptspy
+#graphify/code #graphify/EXTRACTED #community/Community_310

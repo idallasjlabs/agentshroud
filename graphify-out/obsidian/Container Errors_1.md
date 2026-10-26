@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
 type: "document"
-community: "Restart Procedure"
+community: "Community 333"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Restart_Procedure
+  - community/Community_333
 ---
 
 # Container Errors
@@ -16,9 +16,9 @@ tags:
 - [[Container Won't Stop (Stuck in Stopping)]] - `contains` [EXTRACTED]
 - [[Exit Code Reference]] - `contains` [EXTRACTED]
 - [[OOM Kill (Exit Code 137)]] - `contains` [EXTRACTED]
-- [[Port Already in Use_1]] - `contains` [EXTRACTED]
+- [[Port Already in Use_2]] - `contains` [EXTRACTED]
 - [[Read-Only Filesystem Errors]] - `contains` [EXTRACTED]
-- [[Related Notes_28]] - `contains` [EXTRACTED]
+- [[Related Notes_56]] - `contains` [EXTRACTED]
 - [[`no-new-privileges` Security Denial]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Restart_Procedure
+#graphify/document #graphify/EXTRACTED #community/Community_333

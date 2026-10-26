@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/ws-e-audit-v1.2.md"
 type: "document"
-community: "ApprovalHardening"
+community: "Community 734"
 location: "L156"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/Community_734
 ---
 
 # IEC 62443 risk justification for ACCEPTED items
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Part 3 — Fix-or-Accept Closure (SCRUM-74)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/document #graphify/EXTRACTED #community/Community_734

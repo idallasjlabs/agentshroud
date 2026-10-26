@@ -1,20 +1,21 @@
 ---
-source_file: ".pi/mcp.json"
+source_file: "opencode.json"
 type: "code"
-community: ".pi/mcp.json (2)"
-location: "L1"
+community: "Community 159"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pi/mcpjson_2
+  - community/Community_159
 ---
 
 # safari
 
 ## Connections
-- [[dot-pimcp.json]] - `contains` [EXTRACTED]
-- [[opthomebrewbinnpx_4]] - `references` [EXTRACTED]
-- [[PATH_45]] - `requires_env` [EXTRACTED]
-- [[safari-mcp_4]] - `references` [EXTRACTED]
+- [[command_6]] - `contains` [EXTRACTED]
+- [[enabled_6]] - `contains` [EXTRACTED]
+- [[environment_1]] - `contains` [EXTRACTED]
+- [[mcp]] - `contains` [EXTRACTED]
+- [[type_6]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pi/mcpjson_2
+#graphify/code #graphify/EXTRACTED #community/Community_159

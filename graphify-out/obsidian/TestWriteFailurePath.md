@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "SharedMemoryManager"
+community: "Community 60"
 location: "L230"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SharedMemoryManager
+  - community/Community_60
 ---
 
 # TestWriteFailurePath
 
 ## Connections
-- [[dot-test_group_write_io_failure_returns_false()]] - `method` [EXTRACTED]
-- [[dot-test_user_write_io_failure_returns_false()]] - `method` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[.test_group_write_io_failure_returns_false()]] - `method` [EXTRACTED]
+- [[.test_user_write_io_failure_returns_false()]] - `method` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig_1]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_shared_memory_write_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SharedMemoryManager
+#graphify/code #graphify/INFERRED #community/Community_60

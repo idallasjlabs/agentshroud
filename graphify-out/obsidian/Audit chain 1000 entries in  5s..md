@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "Community 84"
 location: "L119"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_84
 ---
 
 # Audit chain: 1000 entries in < 5s.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditChainPerformance]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_84

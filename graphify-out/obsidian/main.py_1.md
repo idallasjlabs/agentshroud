@@ -1,33 +1,49 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
-type: "document"
-community: "MiddlewareManager (4)"
+source_file: "gateway/cli/main.py"
+type: "code"
+community: "Community 87"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/Community_87
 ---
 
-# main.py.md
+# main.py
 
 ## Connections
-- [[Architecture Overview_2]] - `references` [EXTRACTED]
-- [[Data Flow_1]] - `references` [EXTRACTED]
-- [[EgressFilter]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue_1]] - `references` [EXTRACTED]
-- [[Home_1]] - `references` [EXTRACTED]
-- [[MiddlewareManager]] - `references` [EXTRACTED]
-- [[MultiAgentRouter]] - `references` [EXTRACTED]
-- [[PromptGuard_1]] - `references` [EXTRACTED]
-- [[SecurityPipeline_1]] - `references` [EXTRACTED]
-- [[Startup Sequence]] - `references` [EXTRACTED]
-- [[auth.py_1]] - `references` [EXTRACTED]
-- [[event_bus.py_2]] - `references` [EXTRACTED]
-- [[fastapi_1]] - `references` [INFERRED]
-- [[ledger.py_2]] - `references` [EXTRACTED]
-- [[lifespan()]] - `references` [EXTRACTED]
-- [[main.py]] - `contains` [EXTRACTED]
-- [[middleware.py]] - `references` [EXTRACTED]
+- [[SCLClient]] - `imports` [EXTRACTED]
+- [[_default_format()]] - `contains` [EXTRACTED]
+- [[_is_tty()]] - `contains` [EXTRACTED]
+- [[_output()]] - `contains` [EXTRACTED]
+- [[_print_table()]] - `contains` [EXTRACTED]
+- [[_tail_ws()]] - `contains` [EXTRACTED]
+- [[add()]] - `contains` [EXTRACTED]
+- [[add_collaborator()]] - `contains` [EXTRACTED]
+- [[add_group_member()]] - `contains` [EXTRACTED]
+- [[approve()]] - `contains` [EXTRACTED]
+- [[cli()]] - `contains` [EXTRACTED]
+- [[client.py]] - `imports_from` [EXTRACTED]
+- [[deny()]] - `contains` [EXTRACTED]
+- [[freeze()]] - `contains` [EXTRACTED]
+- [[get()]] - `contains` [EXTRACTED]
+- [[get_correlation()]] - `contains` [EXTRACTED]
+- [[get_egress_pending()]] - `contains` [EXTRACTED]
+- [[get_events()]] - `contains` [EXTRACTED]
+- [[get_groups()]] - `contains` [EXTRACTED]
+- [[get_health()]] - `contains` [EXTRACTED]
+- [[get_logs()]] - `contains` [EXTRACTED]
+- [[get_risk()]] - `contains` [EXTRACTED]
+- [[get_services()]] - `contains` [EXTRACTED]
+- [[get_users()]] - `contains` [EXTRACTED]
+- [[main()_11]] - `contains` [EXTRACTED]
+- [[restart()]] - `contains` [EXTRACTED]
+- [[restart_service()]] - `contains` [EXTRACTED]
+- [[scan()]] - `contains` [EXTRACTED]
+- [[set()]] - `contains` [EXTRACTED]
+- [[set_mode()]] - `contains` [EXTRACTED]
+- [[stop()]] - `contains` [EXTRACTED]
+- [[stop_service()]] - `contains` [EXTRACTED]
+- [[tail()]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/code #graphify/EXTRACTED #community/Community_87

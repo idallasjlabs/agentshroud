@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sad/README.md"
+source_file: "docker/config/hermes/skills/i-mnemosyne/README.md"
 type: "document"
-community: "soc.js"
-location: "L12"
+community: "Community 754"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_754
 ---
 
 # Related Skills
 
 ## Connections
-- [[System Audit Documentation_1]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_754

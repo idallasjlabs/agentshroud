@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
+community: "Community 2199"
 location: "L581"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/Community_2199
 ---
 
 # External Contacts
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Contact Information]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_2199

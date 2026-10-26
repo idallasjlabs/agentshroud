@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
 type: "document"
-community: "ADR-002: Default-Allow Security Philosophy"
-location: "L15"
+community: "Community 678"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-002_Default-Allow_Security_Philosophy
+  - community/Community_678
 ---
 
 # Purpose
 
 ## Connections
-- [[proxy_status.py_2]] - `contains` [EXTRACTED]
+- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-002_Default-Allow_Security_Philosophy
+#graphify/document #graphify/EXTRACTED #community/Community_678

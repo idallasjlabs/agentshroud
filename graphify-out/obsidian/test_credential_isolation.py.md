@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_isolation.py"
 type: "code"
-community: "Browser Fetch Skill"
+community: "Community 1126"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browser_Fetch_Skill
+  - community/Community_1126
 ---
 
 # test_credential_isolation.py
@@ -16,4 +16,4 @@ tags:
 - [[TestCredentialLeakDetection]] - `contains` [EXTRACTED]
 - [[TestDockerSecretIsolation]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browser_Fetch_Skill
+#graphify/code #graphify/EXTRACTED #community/Community_1126

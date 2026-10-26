@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-architecture-review/SKILL.md"
+source_file: ".cursor/agents/i-architecture-review.md"
 type: "document"
-community: "Obsidian workspace.json (open-tab layout)"
-location: "L5"
+community: "Community 2247"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Obsidian_workspacejson_open-tab_layout
+  - community/Community_2247
 ---
 
 # Skill: architecture-review
 
 ## Connections
-- [[openclawskillsi-architecture-reviewSKILL]] - `contains` [EXTRACTED]
+- [[i-architecture-review_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Obsidian_workspacejson_open-tab_layout
+#graphify/document #graphify/EXTRACTED #community/Community_2247

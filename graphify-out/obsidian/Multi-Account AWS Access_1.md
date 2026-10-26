@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE) (2)"
-location: "L209"
+community: "Community 308"
+location: "L210"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_2
+  - community/Community_308
 ---
 
 # Multi-Account AWS Access
@@ -16,4 +16,4 @@ tags:
 - [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
 - [[Using AssumeRole for Cross-Account Access_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_2
+#graphify/document #graphify/EXTRACTED #community/Community_308

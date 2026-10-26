@@ -1,17 +1,17 @@
 ---
-source_file: "voice_gateway/server.py"
+source_file: "chatbot/main.py"
 type: "code"
-community: "AgentShroud (system, C4 context) (2) (2)"
-location: "L377"
+community: "Community 95"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_system_C4_context_2_2
+  - community/Community_95
 ---
 
 # Request
 
 ## Connections
-- [[firmware_bin()]] - `references` [EXTRACTED]
+- [[chat()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_system_C4_context_2_2
+#graphify/code #graphify/EXTRACTED #community/Community_95

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/scripts/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "iCloud Services (2)"
-location: "L5"
+community: "Community 175"
+location: "L319"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services_2
+  - community/Community_175
 ---
 
 # Quick Reference
 
 ## Connections
-- [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services_2
+#graphify/document #graphify/EXTRACTED #community/Community_175

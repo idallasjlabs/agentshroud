@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "TestHeuristicClassifierDirectly"
+community: "Community 187"
 location: "L434"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestHeuristicClassifierDirectly
+  - community/Community_187
 ---
 
 # PromptGuard scans high-confidence classic payloads with non-zero score.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPromptGuardDirectly]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestHeuristicClassifierDirectly
+#graphify/rationale #graphify/EXTRACTED #community/Community_187

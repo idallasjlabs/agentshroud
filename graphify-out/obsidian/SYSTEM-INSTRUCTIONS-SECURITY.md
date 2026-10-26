@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "Credential Isolation — Gateway op-proxy (ACTIVE)"
+community: "Community 805"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Credential_Isolation__Gateway_op-proxy_ACTIVE
+  - community/Community_805
 ---
 
 # SYSTEM-INSTRUCTIONS-SECURITY.md
@@ -17,4 +17,4 @@ tags:
 - [[System Instructions Credential Security (Ultra-Conservative)]] - `contains` [EXTRACTED]
 - [[bot-capabilities]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Credential_Isolation__Gateway_op-proxy_ACTIVE
+#graphify/document #graphify/EXTRACTED #community/Community_805

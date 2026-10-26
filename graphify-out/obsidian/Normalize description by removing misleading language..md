@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "Any"
+community: "Community 3"
 location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Any
+  - community/Community_3
 ---
 
 # Normalize description by removing misleading language.
 
 ## Connections
-- [[dot-_normalize_description()]] - `rationale_for` [EXTRACTED]
+- [[._normalize_description()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Any
+#graphify/rationale #graphify/EXTRACTED #community/Community_3

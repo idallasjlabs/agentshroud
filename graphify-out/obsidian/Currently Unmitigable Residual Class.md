@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "rationale"
-community: "format_upstream_cve_alert()"
+community: "Community 555"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/format_upstream_cve_alert
+  - community/Community_555
 ---
 
 # Currently Unmitigable Residual Class
@@ -18,4 +18,4 @@ tags:
 - [[Reachability Context (cap_drop ALL, isolated network)]] - `references` [EXTRACTED]
 - [[Two-Terminal-State Finding Taxonomy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/format_upstream_cve_alert
+#graphify/rationale #graphify/EXTRACTED #community/Community_555

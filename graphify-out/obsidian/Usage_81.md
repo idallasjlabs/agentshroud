@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mac/README.md"
+source_file: "docker/config/hermes/skills/i-oracle/README.md"
 type: "document"
-community: "soc.js"
+community: "Community 1216"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_1216
 ---
 
 # Usage
 
 ## Connections
-- [[macOS System Administrator (MAC)_1]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_1216

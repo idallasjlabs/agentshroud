@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/PREREQUISITES.md"
+source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Apple Services Setup Guide"
-location: "L552"
+community: "Community 321"
+location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Services_Setup_Guide
+  - community/Community_321
 ---
 
 # Configuration
 
 ## Connections
-- [[✅ Setup Checklist]] - `contains` [EXTRACTED]
+- [[iCloud Services_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_321

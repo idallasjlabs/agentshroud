@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "GATEWAY_OP_PROXY_URL"
+community: "Community 77"
 location: "L1238"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GATEWAY_OP_PROXY_URL
+  - community/Community_77
 ---
 
 # test_call_agent_stream_skips_blank_and_comment_lines()
@@ -17,4 +17,4 @@ tags:
 - [[_sse_body()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GATEWAY_OP_PROXY_URL
+#graphify/code #graphify/EXTRACTED #community/Community_77

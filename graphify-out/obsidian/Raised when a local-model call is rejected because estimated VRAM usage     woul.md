@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "._make_proxy()"
+community: "Community 5"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_5
 ---
 
 # Raised when a local-model call is rejected because estimated VRAM usage     woul
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[VRAMHeadroomError]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_5

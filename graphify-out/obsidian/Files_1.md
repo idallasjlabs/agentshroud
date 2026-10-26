@@ -1,20 +1,17 @@
 ---
-source_file: "docker/README.md"
+source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "TestMultilingualInjection"
-location: "L90"
+community: "Community 1329"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMultilingualInjection
+  - community/Community_1329
 ---
 
 # Files
 
 ## Connections
-- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
-- [[Core Configuration]] - `contains` [EXTRACTED]
-- [[Documentation_2]] - `contains` [EXTRACTED]
-- [[Secrets]] - `contains` [EXTRACTED]
+- [[Technical Details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMultilingualInjection
+#graphify/document #graphify/EXTRACTED #community/Community_1329

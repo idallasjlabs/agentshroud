@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "ContextGuard"
+community: "Community 0"
 location: "L290"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/Community_0
 ---
 
 # Monitor an agent's environment access attempts.          Args:             agent
 
 ## Connections
-- [[dot-monitor_environment_access()]] - `rationale_for` [EXTRACTED]
+- [[.monitor_environment_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/01-architecture.md"
 type: "concept"
-community: "REPORT STRUCTURE"
+community: "Community 903"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/REPORT_STRUCTURE
+  - community/Community_903
 ---
 
 # C4 Level 0 — System Context Diagram
@@ -15,4 +15,4 @@ tags:
 - [[C4 Level 1 — Container Diagram]] - `references` [INFERRED]
 - [[Rendered C4 Context Diagram (PNG)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/REPORT_STRUCTURE
+#graphify/concept #graphify/EXTRACTED #community/Community_903

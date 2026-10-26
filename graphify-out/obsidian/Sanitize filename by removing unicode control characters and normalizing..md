@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "rationale"
-community: "ContextGuard"
+community: "Community 0"
 location: "L102"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/Community_0
 ---
 
 # Sanitize filename by removing unicode control characters and normalizing.
 
 ## Connections
-- [[dot-sanitize_filename()]] - `rationale_for` [EXTRACTED]
+- [[.sanitize_filename()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

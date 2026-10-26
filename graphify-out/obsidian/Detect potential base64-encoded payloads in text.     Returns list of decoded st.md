@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/input_normalizer.py"
 type: "rationale"
-community: "PromptGuard"
+community: "Community 154"
 location: "L73"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/Community_154
 ---
 
 # Detect potential base64-encoded payloads in text.     Returns list of decoded st
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[detect_base64_payloads()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PromptGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_154

@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Added"
+community: "Community 106"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Added
+  - community/Community_106
 ---
 
 # Added
@@ -40,4 +40,4 @@ tags:
 - [[Unreleased — feathttp-connect-proxy + featcredential-isolation]] - `contains` [EXTRACTED]
 - [[Unreleased — featv0.8.0-enforcement-hardening (session 3 — 2026-03-15)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Added
+#graphify/document #graphify/EXTRACTED #community/Community_106

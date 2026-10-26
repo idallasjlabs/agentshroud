@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
+source_file: ".agents/skills/sec-defense/SKILL.md"
 type: "document"
-community: "TestHandleEvent"
+community: "Community 1341"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestHandleEvent
+  - community/Community_1341
 ---
 
 # Unsafe Control Actions (UCAs)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Methodology_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestHandleEvent
+#graphify/document #graphify/EXTRACTED #community/Community_1341

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "MCPPolicyEngine"
+community: "Community 49"
 location: "L786"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/Community_49
 ---
 
 # Revert to previous git commit and rebuild.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[rollback_agentshroud()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/rationale #graphify/EXTRACTED #community/Community_49

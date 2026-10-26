@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_multi_turn_tracker.py"
+source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "Enum"
-location: "L431"
+community: "Community 8"
+location: "L443"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enum
+  - community/Community_8
 ---
 
 # Test edge cases and error conditions.
 
 ## Connections
-- [[dot-test_edge_cases()_3]] - `rationale_for` [EXTRACTED]
+- [[.test_edge_cases()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enum
+#graphify/rationale #graphify/EXTRACTED #community/Community_8

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
 type: "document"
-community: "iOS / macOS Shortcuts — Relay to AgentShroud"
-location: "L96"
+community: "Community 669"
+location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud
+  - community/Community_669
 ---
 
 # Related
 
 ## Connections
-- [[dns_filter.py_1]] - `contains` [EXTRACTED]
+- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Community_669

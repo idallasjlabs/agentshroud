@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "MiddlewareManager (3)"
+community: "Community 30"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3
+  - community/Community_30
 ---
 
 # TestApprovalStorePersistence
 
 ## Connections
-- [[dot-test_store_expires_old_items()]] - `method` [EXTRACTED]
-- [[dot-test_store_persists_across_reopen()]] - `method` [EXTRACTED]
-- [[dot-test_store_save_and_load()]] - `method` [EXTRACTED]
-- [[dot-test_store_update_status()]] - `method` [EXTRACTED]
+- [[.test_store_expires_old_items()]] - `method` [EXTRACTED]
+- [[.test_store_persists_across_reopen()]] - `method` [EXTRACTED]
+- [[.test_store_save_and_load()]] - `method` [EXTRACTED]
+- [[.test_store_update_status()]] - `method` [EXTRACTED]
 - [[ApprovalQueue]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[ApprovalQueueItem_3]] - `uses` [INFERRED]
-- [[ApprovalRequest_2]] - `uses` [INFERRED]
-- [[ApprovalStore]] - `uses` [INFERRED]
+- [[ApprovalRequest_3]] - `uses` [INFERRED]
+- [[ApprovalStore_1]] - `uses` [INFERRED]
 - [[Queue persistence across restart.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_stress.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3
+#graphify/code #graphify/EXTRACTED #community/Community_30

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
+community: "Community 2201"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/Community_2201
 ---
 
 # Severity Assessment Matrix
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Incident Classification System]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_2201

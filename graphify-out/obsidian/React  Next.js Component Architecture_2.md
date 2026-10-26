@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
+source_file: ".cursor/agents/i-ui.md"
 type: "document"
-community: "Slack Channel Setup"
-location: "L338"
+community: "Community 629"
+location: "L341"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Slack_Channel_Setup
+  - community/Community_629
 ---
 
 # React / Next.js Component Architecture
@@ -16,4 +16,4 @@ tags:
 - [[Component file structure_2]] - `contains` [EXTRACTED]
 - [[Skill UI Expert (UI)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup
+#graphify/document #graphify/EXTRACTED #community/Community_629

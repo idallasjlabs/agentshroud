@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
+source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET) (3)"
-location: "L36"
+community: "Community 520"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET_3
+  - community/Community_520
 ---
 
 # Authentication
 
 ## Connections
-- [[Gateway Python Dependencies (`gatewayrequirements.txt`)]] - `contains` [EXTRACTED]
+- [[API Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET_3
+#graphify/document #graphify/EXTRACTED #community/Community_520

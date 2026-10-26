@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pm/SKILL.md"
+source_file: ".agents/skills/i-crpr/SKILL.md"
 type: "document"
-community: "Crash Recovery"
-location: "L7"
+community: "Community 633"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crash_Recovery
+  - community/Community_633
 ---
 
 # Role
 
 ## Connections
-- [[Skill Project Management (PM)]] - `contains` [EXTRACTED]
+- [[Skill Create PR with Pre-Flight Audit (CRPR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crash_Recovery
+#graphify/document #graphify/EXTRACTED #community/Community_633

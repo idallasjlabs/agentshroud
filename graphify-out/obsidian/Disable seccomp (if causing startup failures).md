@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
 type: "document"
-community: "PHASE_3A_3B_IMPLEMENTATION.md"
+community: "Community 393"
 location: "L261"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PHASE_3A_3B_IMPLEMENTATIONmd
+  - community/Community_393
 ---
 
 # Disable seccomp (if causing startup failures)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Rollback Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PHASE_3A_3B_IMPLEMENTATIONmd
+#graphify/document #graphify/EXTRACTED #community/Community_393

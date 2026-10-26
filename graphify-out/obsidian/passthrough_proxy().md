@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L39"
+community: "Community 64"
+location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/Community_64
 ---
 
 # passthrough_proxy()
 
 ## Connections
-- [[WebProxy]] - `calls` [EXTRACTED]
-- [[WebProxyConfig]] - `calls` [EXTRACTED]
-- [[test_web_proxy.py]] - `contains` [EXTRACTED]
+- [[MCPProxy]] - `calls` [EXTRACTED]
+- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/Community_64

@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/main/audio.c"
 type: "code"
-community: ".test_action_risk_probe_gets_no_banner_risk_guidance()"
+community: "Community 1485"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_action_risk_probe_gets_no_banner_risk_guidance
+  - community/Community_1485
 ---
 
 # audio.c (ES7210 mic / ES8311 speaker driver)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[audio.h (audio public API)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_action_risk_probe_gets_no_banner_risk_guidance
+#graphify/code #graphify/EXTRACTED #community/Community_1485

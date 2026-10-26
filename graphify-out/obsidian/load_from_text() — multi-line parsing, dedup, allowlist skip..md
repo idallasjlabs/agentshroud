@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "rationale"
-community: "Pydantic"
+community: "Community 1069"
 location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Pydantic
+  - community/Community_1069
 ---
 
 # load_from_text() — multi-line parsing, dedup, allowlist skip.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestLoadFromText]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Pydantic
+#graphify/rationale #graphify/EXTRACTED #community/Community_1069

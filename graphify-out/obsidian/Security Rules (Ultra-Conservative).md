@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "TestRewriteRequestHeaders"
+community: "Community 806"
 location: "L111"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestRewriteRequestHeaders
+  - community/Community_806
 ---
 
 # Security Rules (Ultra-Conservative)
@@ -17,4 +17,4 @@ tags:
 - [[🟢 Console Commands (ALWAYS display)]] - `contains` [EXTRACTED]
 - [[🟢 Internal Use (ALWAYS allowed)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestRewriteRequestHeaders
+#graphify/document #graphify/EXTRACTED #community/Community_806

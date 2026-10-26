@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
 type: "document"
-community: "consent_framework.py"
+community: "Community 776"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/consent_frameworkpy
+  - community/Community_776
 ---
 
 # Purpose
 
 ## Connections
-- [[security.py_2]] - `contains` [EXTRACTED]
+- [[web_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/consent_frameworkpy
+#graphify/document #graphify/EXTRACTED #community/Community_776

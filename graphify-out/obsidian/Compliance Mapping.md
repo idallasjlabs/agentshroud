@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Action"
+community: "Community 217"
 location: "L399"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Action
+  - community/Community_217
 ---
 
 # Compliance Mapping
@@ -18,4 +18,4 @@ tags:
 - [[ISO 27001 Control Objectives]] - `contains` [EXTRACTED]
 - [[SOX Compliance (Section 404)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Action
+#graphify/document #graphify/EXTRACTED #community/Community_217

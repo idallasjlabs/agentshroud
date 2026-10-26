@@ -1,17 +1,17 @@
 ---
-source_file: "docs/papers/agentshroud-whitepaper.md"
+source_file: "docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md"
 type: "document"
-community: "MiddlewareManager (9)"
-location: "L10"
+community: "Community 655"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_9
+  - community/Community_655
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - `contains` [EXTRACTED]
+- [[Secrets Usage and Collaborator Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_9
+#graphify/document #graphify/EXTRACTED #community/Community_655

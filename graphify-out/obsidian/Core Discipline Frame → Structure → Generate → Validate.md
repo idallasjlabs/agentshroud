@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-mm/SKILL.md"
+source_file: ".agents/agents/i-mm.md"
 type: "document"
-community: "OpenClaw Management Scripts"
-location: "L13"
+community: "Community 513"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Management_Scripts
+  - community/Community_513
 ---
 
 # Core Discipline: Frame → Structure → Generate → Validate
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Mindmap Architect (MM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts
+#graphify/document #graphify/EXTRACTED #community/Community_513

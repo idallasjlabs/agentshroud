@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-06-dev.md"
 type: "document"
-community: "format_upstream_cve_alert()"
+community: "Community 555"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/format_upstream_cve_alert
+  - community/Community_555
 ---
 
 # Dev-Side Copy of the 2026-09-06 Report
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Sunday Upgrade 2026-09-06 (dev-only scoped run)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/format_upstream_cve_alert
+#graphify/document #graphify/INFERRED #community/Community_555

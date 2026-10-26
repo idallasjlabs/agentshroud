@@ -1,18 +1,18 @@
 ---
 source_file: "branding/INDEX.md"
 type: "document"
-community: "dashboard_bridge.py"
+community: "Community 585"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard_bridgepy
+  - community/Community_585
 ---
 
 # AgentShroud Branding Assets Index
 
 ## Connections
-- [[INDEX_1]] - `contains` [EXTRACTED]
+- [[INDEX]] - `contains` [EXTRACTED]
 - [[🎨 Quick Access]] - `contains` [EXTRACTED]
 - [[💡 Usage Tips]] - `contains` [EXTRACTED]
 - [[📁 Directory Overview]] - `contains` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[📝 To-Do]] - `contains` [EXTRACTED]
 - [[📞 Contact]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard_bridgepy
+#graphify/document #graphify/EXTRACTED #community/Community_585

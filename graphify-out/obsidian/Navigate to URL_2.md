@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: ".cursor/agents/browser.md"
 type: "document"
-community: "setup-secrets.sh (2)"
-location: "L57"
+community: "Community 473"
+location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/setup-secretssh_2
+  - community/Community_473
 ---
 
 # Navigate to URL
 
 ## Connections
-- [[Usage_63]] - `contains` [EXTRACTED]
+- [[Usage_43]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/setup-secretssh_2
+#graphify/document #graphify/EXTRACTED #community/Community_473

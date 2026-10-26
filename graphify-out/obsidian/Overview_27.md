@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "MiddlewareManager (4)"
-location: "L10"
+community: "Community 408"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/Community_408
 ---
 
 # Overview
 
 ## Connections
-- [[Startup Sequence_1]] - `contains` [EXTRACTED]
+- [[llm_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/document #graphify/EXTRACTED #community/Community_408

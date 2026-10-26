@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "rationale"
-community: "SSHProxy"
+community: "Community 7"
 location: "L136"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/Community_7
 ---
 
 # SSH command proxy with validation and audit support
 
 ## Connections
-- [[SSHProxy_1]] - `rationale_for` [EXTRACTED]
+- [[SSHProxy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SSHProxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "AuditChain"
+community: "Community 24"
 location: "L155"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/Community_24
 ---
 
 # The fire-and-forget SQLite log must record the entry's actual         previous_h
 
 ## Connections
-- [[dot-test_persisted_event_records_true_previous_hash()]] - `rationale_for` [EXTRACTED]
+- [[.test_persisted_event_records_true_previous_hash()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AuditChain
+#graphify/rationale #graphify/EXTRACTED #community/Community_24

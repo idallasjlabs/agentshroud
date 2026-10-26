@@ -1,22 +1,22 @@
 ---
 source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "MiddlewareManager (4)"
+community: "Community 94"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/Community_94
 ---
 
 # Architecture Overview.md
 
 ## Connections
 - [[Architecture Overview_3]] - `contains` [EXTRACTED]
-- [[Data Flow_1]] - `references` [EXTRACTED]
-- [[Home_1]] - `references` [EXTRACTED]
+- [[Data Flow]] - `references` [EXTRACTED]
+- [[Home]] - `references` [EXTRACTED]
 - [[Startup Sequence]] - `references` [EXTRACTED]
 - [[System Overview]] - `references` [EXTRACTED]
-- [[main.py_1]] - `references` [EXTRACTED]
+- [[main.py_3]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/document #graphify/EXTRACTED #community/Community_94

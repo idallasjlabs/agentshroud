@@ -1,13 +1,13 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "image"
-community: "Voice Terminal CMakeLists (IDF v5.4 BSP patch)"
+community: "Community 1738"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Voice_Terminal_CMakeLists_IDF_v54_BSP_patch
+  - community/Community_1738
 ---
 
 # Diagram 07: Data Flow
 
-#graphify/image #graphify/EXTRACTED #community/Voice_Terminal_CMakeLists_IDF_v54_BSP_patch
+#graphify/image #graphify/EXTRACTED #community/Community_1738

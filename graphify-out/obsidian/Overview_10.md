@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
+source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "MiddlewareManager (2) (2)"
-location: "L11"
+community: "Community 546"
+location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2_2
+  - community/Community_546
 ---
 
 # Overview
 
 ## Connections
-- [[`SecurityPipeline`]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.9.0]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_546

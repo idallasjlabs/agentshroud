@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/00 - START HERE/Home.md"
 type: "document"
-community: "MiddlewareManager (4)"
+community: "Community 94"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/Community_94
 ---
 
 # AgentShroud — Vault Home
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[Configuration & Infrastructure]] - `contains` [EXTRACTED]
 - [[Diagrams]] - `contains` [EXTRACTED]
-- [[Home_1]] - `contains` [EXTRACTED]
+- [[Home]] - `contains` [EXTRACTED]
 - [[Module Index]] - `contains` [EXTRACTED]
 - [[Navigate This Vault]] - `contains` [EXTRACTED]
-- [[Operations]] - `contains` [EXTRACTED]
+- [[Operations_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/document #graphify/EXTRACTED #community/Community_94

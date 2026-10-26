@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "ProxyAction"
+community: "Community 154"
 location: "L164"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ProxyAction
+  - graphify/INFERRED
+  - community/Community_154
 ---
 
 # TestSanitization
 
 ## Connections
-- [[dot-test_high_severity_strips_content()]] - `method` [EXTRACTED]
-- [[dot-test_medium_severity_warns()]] - `method` [EXTRACTED]
+- [[.test_high_severity_strips_content()]] - `method` [EXTRACTED]
+- [[.test_medium_severity_warns()]] - `method` [EXTRACTED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[InjectionSeverity]] - `uses` [INFERRED]
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[test_tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/INFERRED #community/Community_154

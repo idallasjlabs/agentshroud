@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "SkillGuard"
+community: "Community 93"
 location: "L618"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/Community_93
 ---
 
 # Get all rules (permanent and session) with scope information.
 
 ## Connections
-- [[dot-get_all_rules()]] - `rationale_for` [EXTRACTED]
+- [[.get_all_rules()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SkillGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_93

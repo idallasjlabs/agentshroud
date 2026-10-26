@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
+source_file: "skills/openclaw/tmux/SKILL.md"
 type: "document"
-community: "Workflow: Survey → Draft → Inject → Confirm"
-location: "L11"
+community: "Community 576"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workflow_Survey__Draft__Inject__Confirm
+  - community/Community_576
 ---
 
 # When to Use
 
 ## Connections
-- [[Kill Switch Procedure_1]] - `contains` [EXTRACTED]
+- [[tmux Session Control]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm
+#graphify/document #graphify/EXTRACTED #community/Community_576

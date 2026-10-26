@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/main.py"
 type: "rationale"
-community: "egress_filter.py"
+community: "Community 95"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/Community_95
 ---
 
 # Raise 429 if the client has exceeded the rate limit.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_check_rate_limit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/egress_filterpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_95

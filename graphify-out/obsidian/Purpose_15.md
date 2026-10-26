@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/skills/i-gg/README.md"
+source_file: ".agents/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md (2)"
+community: "Community 582"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd_2
+  - community/Community_582
 ---
 
 # Purpose
 
 ## Connections
-- [[Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_2
+#graphify/document #graphify/EXTRACTED #community/Community_582

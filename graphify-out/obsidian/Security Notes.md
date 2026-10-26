@@ -1,19 +1,17 @@
 ---
-source_file: "docs/setup/OPENCLAW_SETUP.md"
+source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "SkillGuard (2)"
-location: "L412"
+community: "Community 427"
+location: "L281"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SkillGuard_2
+  - community/Community_427
 ---
 
-# Security Notes
+# Security notes
 
 ## Connections
-- [[Current Security Posture]] - `contains` [EXTRACTED]
-- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
-- [[Recommendations]] - `contains` [EXTRACTED]
+- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SkillGuard_2
+#graphify/document #graphify/EXTRACTED #community/Community_427

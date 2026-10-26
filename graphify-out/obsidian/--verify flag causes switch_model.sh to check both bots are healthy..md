@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "rationale"
-community: "AgentShroud Phase Review — 2026-02-23"
+community: "Community 145"
 location: "L182"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_Review__2026-02-23
+  - community/Community_145
 ---
 
 # --verify flag causes switch_model.sh to check both bots are healthy.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSwitchModelVerifyFlag]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23
+#graphify/rationale #graphify/EXTRACTED #community/Community_145

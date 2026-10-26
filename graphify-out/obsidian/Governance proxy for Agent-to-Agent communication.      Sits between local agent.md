@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "rationale"
-community: "api.py"
+community: "Community 44"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apipy
+  - community/Community_44
 ---
 
 # Governance proxy for Agent-to-Agent communication.      Sits between local agent
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[A2AGovernanceProxy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apipy
+#graphify/rationale #graphify/EXTRACTED #community/Community_44

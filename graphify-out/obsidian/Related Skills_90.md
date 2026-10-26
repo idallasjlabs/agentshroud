@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/README.md"
+source_file: "docker/config/hermes/skills/i-socrates/README.md"
 type: "document"
-community: "TestOutboundInfoFilter"
+community: "Community 1222"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/Community_1222
 ---
 
 # Related Skills
 
 ## Connections
-- [[Athena — Knowledge Distiller_3]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/Community_1222

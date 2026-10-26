@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
+source_file: "docs/architecture/adr/ADR-007-zero-config-security.md"
 type: "document"
-community: "branding/README.md"
-location: "L50"
+community: "Community 858"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/READMEmd
+  - community/Community_858
 ---
 
 # Mitigation
 
 ## Connections
-- [[Consequences_7]] - `contains` [EXTRACTED]
+- [[Consequences_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Community_858

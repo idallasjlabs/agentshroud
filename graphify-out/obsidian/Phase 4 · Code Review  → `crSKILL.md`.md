@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-mc/SKILL.md"
+source_file: ".agents/agents/i-mc.md"
 type: "document"
-community: "Technical Illustrator (i-ti)"
-location: "L29"
+community: "Community 1562"
+location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Illustrator_i-ti
+  - community/Community_1562
 ---
 
 # Phase 4 · Code Review  → `cr/SKILL.md`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GSDE&G Development Master Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_i-ti
+#graphify/document #graphify/EXTRACTED #community/Community_1562

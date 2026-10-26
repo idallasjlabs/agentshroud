@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tdd/SKILL.md"
+source_file: ".cursor/agents/i-tdd.md"
 type: "document"
-community: "workspace.sh"
-location: "L27"
+community: "Community 1498"
+location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/workspacesh
+  - community/Community_1498
 ---
 
 # Test Structure
 
 ## Connections
-- [[Skill Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/workspacesh
+#graphify/document #graphify/EXTRACTED #community/Community_1498

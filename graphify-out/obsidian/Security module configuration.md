@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "TestEnforceDefaults"
+community: "Community 72"
 location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEnforceDefaults
+  - community/Community_72
 ---
 
 # Security module configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SecurityModuleConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEnforceDefaults
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

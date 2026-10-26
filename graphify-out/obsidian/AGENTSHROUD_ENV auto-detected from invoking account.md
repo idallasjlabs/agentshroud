@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/run-standalone.sh"
 type: "rationale"
-community: "hermes/skills/i-incident-response/SKILL.md"
+community: "Community 1452"
 location: "docker/bots/hermes/run-standalone.sh:67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/hermes/skills/i-incident-response/SKILLmd
+  - community/Community_1452
 ---
 
 # AGENTSHROUD_ENV auto-detected from invoking account
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Hermes resource caps by environment]] - `shares_data_with` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/hermes/skills/i-incident-response/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/Community_1452

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
+source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM) (3)"
-location: "L390"
+community: "Community 419"
+location: "L302"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM_3
+  - community/Community_419
 ---
 
 # Dependencies
 
 ## Connections
-- [[Skill UI Expert (UI)_1]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM_3
+#graphify/document #graphify/EXTRACTED #community/Community_419

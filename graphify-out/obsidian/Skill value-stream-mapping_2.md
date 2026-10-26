@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-value-stream-mapping/SKILL.md"
+source_file: ".cursor/agents/i-value-stream-mapping.md"
 type: "document"
-community: "Scorecard Data Integrity Tests (no stub inflation)"
-location: "L5"
+community: "Community 2263"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Scorecard_Data_Integrity_Tests_no_stub_inflation
+  - community/Community_2263
 ---
 
 # Skill: value-stream-mapping
 
 ## Connections
-- [[openclawskillsi-value-stream-mappingSKILL]] - `contains` [EXTRACTED]
+- [[i-value-stream-mapping_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Scorecard_Data_Integrity_Tests_no_stub_inflation
+#graphify/document #graphify/EXTRACTED #community/Community_2263

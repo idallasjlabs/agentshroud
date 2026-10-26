@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "create_auth_dependency"
+community: "Community 60"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/Community_60
 ---
 
 # test_security_regressions_v1_2.py
 
 ## Connections
+- [[SharedMemoryManager]] - `imports` [EXTRACTED]
 - [[TestBotIdIsolationInSharedMemory]] - `contains` [EXTRACTED]
 - [[TestCrossBotTrustPivot]] - `contains` [EXTRACTED]
 - [[TestHermesDashboardBridgeReachability]] - `contains` [EXTRACTED]
@@ -19,11 +20,12 @@ tags:
 - [[TestHermesEgressAllowlist]] - `contains` [EXTRACTED]
 - [[TestHermesTrustSeeding]] - `contains` [EXTRACTED]
 - [[TestSessionPathSeparation]] - `contains` [EXTRACTED]
-- [[session_manager()]] - `contains` [EXTRACTED]
+- [[TrustLevel_1]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
+- [[UserSessionManager]] - `imports` [EXTRACTED]
+- [[session_manager()_3]] - `contains` [EXTRACTED]
 - [[smm()]] - `contains` [EXTRACTED]
-- [[test_hermes_dashboard_bridge.py]] - `references` [EXTRACTED]
-- [[tmp_workspace()]] - `contains` [EXTRACTED]
-- [[trust_manager()]] - `contains` [EXTRACTED]
-- [[v1.2.0 Security Regression Tests Every test in this file corresponds to a…]] - `rationale_for` [EXTRACTED]
+- [[tmp_workspace()_1]] - `contains` [EXTRACTED]
+- [[trust_manager()_5]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/Community_60

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Enum"
+community: "Community 54"
 location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/Community_54
 ---
 
 # _engine_status_to_service_status()
 
 ## Connections
-- [[dot-_describe_service()]] - `calls` [EXTRACTED]
-- [[ServiceStatus]] - `references` [EXTRACTED]
+- [[._describe_service()]] - `calls` [EXTRACTED]
+- [[ServiceStatus_1]] - `references` [EXTRACTED]
 - [[services.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/Community_54

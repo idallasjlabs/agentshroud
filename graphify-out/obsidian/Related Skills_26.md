@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-aws/README.md"
+source_file: ".agents/skills/i-production/README.md"
 type: "document"
-community: "SECTION 9: IMPORTANT NOTES"
+community: "Community 177"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SECTION_9_IMPORTANT_NOTES
+  - community/Community_177
 ---
 
 # Related Skills
 
 ## Connections
-- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
+- [[incident-response]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SECTION_9_IMPORTANT_NOTES
+#graphify/document #graphify/EXTRACTED #community/Community_177

@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "HTTPConnectProxy"
+community: "Community 81"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/Community_81
 ---
 
 # _CloseRaisesWriter
 
 ## Connections
-- [[dot-close()_17]] - `method` [EXTRACTED]
-- [[HTTPConnectProxy_1]] - `uses` [INFERRED]
-- [[WebProxy]] - `uses` [INFERRED]
+- [[.close()_16]] - `method` [EXTRACTED]
+- [[HTTPConnectProxy]] - `uses` [INFERRED]
+- [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
-- [[_MockWriter]] - `inherits` [EXTRACTED]
+- [[_MockWriter_1]] - `inherits` [EXTRACTED]
 - [[test_handle_client_tolerates_writer_close_failure()]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 - [[test_relay_and_scan_swallows_writer_close_failure()]] - `calls` [EXTRACTED]
 - [[test_relay_swallows_writer_close_failure()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/code #graphify/EXTRACTED #community/Community_81

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/api.py.md"
+source_file: ".agents/skills/apollo/README.md"
 type: "document"
-community: "Hermes Dev Workflow (HDEV) Skill"
-location: "L16"
+community: "Community 2061"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Dev_Workflow_HDEV_Skill
+  - community/Community_2061
 ---
 
 # Purpose
 
 ## Connections
-- [[api.py_1]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Dev_Workflow_HDEV_Skill
+#graphify/document #graphify/EXTRACTED #community/Community_2061

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/ssh-capability.md"
+source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "create_auth_dependency (2) (2)"
-location: "L3"
+community: "Community 510"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/create_auth_dependency_2_2
+  - community/Community_510
 ---
 
 # Overview
 
 ## Connections
-- [[SSH Capability Architecture Document]] - `contains` [EXTRACTED]
+- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/create_auth_dependency_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_510

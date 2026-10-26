@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/agentshroud-ssh-write-file.sh"
 type: "code"
-community: "TestScoreLoggingMonitoring"
+community: "Community 1345"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestScoreLoggingMonitoring
+  - community/Community_1345
 ---
 
 # agentshroud-ssh-write-file.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[agentshroud-ssh-write-file.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestScoreLoggingMonitoring
+#graphify/code #graphify/EXTRACTED #community/Community_1345

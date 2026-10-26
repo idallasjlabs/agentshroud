@@ -1,19 +1,17 @@
 ---
-source_file: "skills/openclaw/canvas/SKILL.md"
+source_file: "firmware/voice-terminal/SETUP.md"
 type: "document"
-community: "test_security_toolchain.py"
-location: "L13"
+community: "Community 2101"
+location: "L494"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/Community_2101
 ---
 
-# How It Works
+# How it works
 
 ## Connections
-- [[Architecture_6]] - `contains` [EXTRACTED]
-- [[Canvas Skill]] - `contains` [EXTRACTED]
-- [[Tailscale Integration]] - `contains` [EXTRACTED]
+- [[12. OTA Wireless Firmware Updates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/document #graphify/EXTRACTED #community/Community_2101

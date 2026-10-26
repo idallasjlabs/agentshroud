@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "rationale"
-community: "OpenClaw Skill Metadata Schema (frontmatter convention)"
+community: "Community 311"
 location: "L1122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention
+  - community/Community_311
 ---
 
 # bot_id + config param restricts results to that bot's image.
 
 ## Connections
-- [[dot-test_bot_id_filter_matches_bot_image()]] - `rationale_for` [EXTRACTED]
+- [[.test_bot_id_filter_matches_bot_image()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention
+#graphify/rationale #graphify/EXTRACTED #community/Community_311

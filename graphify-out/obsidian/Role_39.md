@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
+source_file: ".agents/skills/apollo/SKILL.md"
 type: "document"
-community: "Path (3)"
-location: "L7"
+community: "Community 1379"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Path_3
+  - community/Community_1379
 ---
 
 # Role
 
 ## Connections
-- [[Skill Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Path_3
+#graphify/document #graphify/EXTRACTED #community/Community_1379

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "Community 114"
 location: "L415"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Community_114
 ---
 
 # Test that middleware blocks cross-session access attempts.
 
 ## Connections
-- [[dot-test_middleware_cross_session_blocking()]] - `rationale_for` [EXTRACTED]
+- [[.test_middleware_cross_session_blocking()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_114

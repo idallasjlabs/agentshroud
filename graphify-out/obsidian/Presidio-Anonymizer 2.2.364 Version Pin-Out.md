@@ -1,12 +1,12 @@
 ---
 source_file: ".github/dependabot.yml"
 type: "rationale"
-community: "bsp/esp-bsp.h stub (playback state test)"
+community: "Community 1503"
 location: "lines 12-21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/bsp/esp-bsph_stub_playback_state_test
+  - community/Community_1503
 ---
 
 # Presidio-Anonymizer 2.2.364 Version Pin-Out
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Dependabot Configuration]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/bsp/esp-bsph_stub_playback_state_test
+#graphify/rationale #graphify/EXTRACTED #community/Community_1503

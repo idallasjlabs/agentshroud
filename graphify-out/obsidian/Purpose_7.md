@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
+source_file: ".agents/skills/hermes/README.md"
 type: "document"
-community: "find-sessions.sh"
-location: "L15"
+community: "Community 2083"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/find-sessionssh
+  - community/Community_2083
 ---
 
 # Purpose
 
 ## Connections
-- [[port_manager.py_1]] - `contains` [EXTRACTED]
+- [[Hermes — Podcast Production Orchestrator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/find-sessionssh
+#graphify/document #graphify/EXTRACTED #community/Community_2083

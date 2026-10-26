@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "concept"
-community: "AgentShroud™ CVE Mitigation Matrix"
+community: "Community 215"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_CVE_Mitigation_Matrix
+  - community/Community_215
 ---
 
 # slsa-verifier From-Source Dependency Override
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Container-Image CVE Domain (our own images)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix
+#graphify/concept #graphify/EXTRACTED #community/Community_215

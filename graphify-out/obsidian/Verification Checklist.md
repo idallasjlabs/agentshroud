@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
+source_file: ".agents/agents/i-mcpm-auth-reset.md"
 type: "document"
-community: "AgentShroud Audit Specification"
-location: "L334"
+community: "Community 211"
+location: "L229"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Audit_Specification
+  - community/Community_211
 ---
 
 # Verification Checklist
 
 ## Connections
-- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification
+#graphify/document #graphify/EXTRACTED #community/Community_211

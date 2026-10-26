@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "MiddlewareManager"
+community: "Community 114"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Community_114
 ---
 
 # test_session_isolation.py
 
 ## Connections
 - [[MiddlewareManager]] - `imports` [EXTRACTED]
-- [[Role_64]] - `imports` [EXTRACTED]
+- [[Role_1]] - `imports` [EXTRACTED]
 - [[TestMiddlewareSessionEnforcement]] - `contains` [EXTRACTED]
 - [[TestSessionIsolationEndToEnd]] - `contains` [EXTRACTED]
 - [[TestUserSessionManager]] - `contains` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[UserSessionManager]] - `imports` [EXTRACTED]
 - [[WebhookReceiver]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/Community_114

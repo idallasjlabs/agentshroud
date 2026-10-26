@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "rationale"
-community: "test_a2a_policy.py"
+community: "Community 52"
 location: "L88"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/Community_52
 ---
 
 # Verify container isolation properties.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IsolationVerifier]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/rationale #graphify/EXTRACTED #community/Community_52

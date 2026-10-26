@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "._record_leakage()"
+community: "Community 0"
 location: "L270"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_record_leakage
+  - community/Community_0
 ---
 
 # Check if a value looks like a credential.
 
 ## Connections
-- [[dot-_looks_like_credential()]] - `rationale_for` [EXTRACTED]
+- [[._looks_like_credential()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_record_leakage
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

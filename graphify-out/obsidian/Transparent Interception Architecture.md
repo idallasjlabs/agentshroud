@@ -1,11 +1,11 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "concept"
-community: "AgentShroud Brand Quick Reference"
+community: "Community 581"
 tags:
   - graphify/concept
-  - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Quick_Reference
+  - graphify/INFERRED
+  - community/Community_581
 ---
 
 # Transparent Interception Architecture
@@ -14,4 +14,4 @@ tags:
 - [[ADR-001-proxy-layer-inversion]] - `semantically_similar_to` [INFERRED]
 - [[Enterprise Governance Proxy System (invention)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Brand_Quick_Reference
+#graphify/concept #graphify/INFERRED #community/Community_581

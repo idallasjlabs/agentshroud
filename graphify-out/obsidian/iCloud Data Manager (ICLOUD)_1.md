@@ -1,21 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/README.md"
+source_file: "docker/config/hermes/skills/i-icloud/README.md"
 type: "document"
-community: "AgentShroud Brand Guidelines (2)"
+community: "Community 1211"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines_2
+  - community/Community_1211
 ---
 
 # iCloud Data Manager (ICLOUD)
 
 ## Connections
-- [[Purpose_46]] - `contains` [EXTRACTED]
-- [[Related Skills_32]] - `contains` [EXTRACTED]
-- [[Usage_35]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-icloudREADME]] - `contains` [EXTRACTED]
+- [[Purpose_50]] - `contains` [EXTRACTED]
+- [[README_55]] - `contains` [EXTRACTED]
+- [[Related Skills_68]] - `contains` [EXTRACTED]
+- [[Usage_72]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines_2
+#graphify/document #graphify/EXTRACTED #community/Community_1211

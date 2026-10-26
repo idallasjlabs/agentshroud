@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/IMESSAGE_PERMISSION_FIX.md"
+source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "Skill: Technical Illustrator (TI) (2)"
-location: "L89"
+community: "Community 244"
+location: "L341"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Technical_Illustrator_TI_2
+  - community/Community_244
 ---
 
 # Current Status
 
 ## Connections
-- [[iMessage Permission Fix - Step by Step]] - `contains` [EXTRACTED]
+- [[Summary_43]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI_2
+#graphify/document #graphify/EXTRACTED #community/Community_244

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-observability/SKILL.md"
+source_file: ".agents/skills/i-observability/SKILL.md"
 type: "document"
-community: "openclaw/skills/i-incident-response/SKILL.md"
-location: "L5"
+community: "Community 1438"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-incident-response/SKILLmd
+  - community/Community_1438
 ---
 
 # Skill: observability
 
 ## Connections
-- [[hermesskillsi-observabilitySKILL]] - `contains` [EXTRACTED]
+- [[SKILL_37]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-incident-response/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Community_1438

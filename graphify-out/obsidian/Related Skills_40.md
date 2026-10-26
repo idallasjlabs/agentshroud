@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-defense/README.md"
+source_file: ".agents/skills/sec-offense/README.md"
 type: "document"
-community: "soc.js (4)"
+community: "Community 2096"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs_4
+  - community/Community_2096
 ---
 
 # Related Skills
 
 ## Connections
-- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
+- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs_4
+#graphify/document #graphify/EXTRACTED #community/Community_2096

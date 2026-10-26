@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "AgentShroud Operations Cheat Sheet"
+community: "Community 491"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Operations_Cheat_Sheet
+  - community/Community_491
 ---
 
 # AgentShroud Data Dictionary
@@ -22,4 +22,4 @@ tags:
 - [[Security Management Entities]] - `contains` [EXTRACTED]
 - [[data-dictionary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet
+#graphify/document #graphify/EXTRACTED #community/Community_491

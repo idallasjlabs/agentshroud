@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/04-separation-of-privilege.md"
 type: "document"
-community: "🟢 INFO (nice to have)"
+community: "Community 670"
 location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_INFO_nice_to_have
+  - community/Community_670
 ---
 
 # Step 1: Mount gateway source as read-only Docker volumes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Remediation_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_INFO_nice_to_have
+#graphify/document #graphify/EXTRACTED #community/Community_670

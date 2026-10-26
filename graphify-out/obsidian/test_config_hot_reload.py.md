@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "GroupConfig"
+community: "Community 104"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupConfig
+  - community/Community_104
 ---
 
 # test_config_hot_reload.py
 
 ## Connections
-- [[GatewayConfig_3]] - `imports` [EXTRACTED]
+- [[GatewayConfig_1]] - `imports` [EXTRACTED]
 - [[_default_mtime()]] - `imports` [EXTRACTED]
 - [[_load()]] - `contains` [EXTRACTED]
 - [[_write()]] - `contains` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[test_watcher_reloads_on_mtime_change()]] - `contains` [EXTRACTED]
 - [[test_watcher_stops_on_event()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupConfig
+#graphify/code #graphify/EXTRACTED #community/Community_104

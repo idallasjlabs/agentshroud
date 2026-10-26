@@ -1,22 +1,22 @@
 ---
-source_file: "skills/openclaw/tmux/SKILL.md"
+source_file: "skills/openclaw/apple-reminders/SKILL.md"
 type: "document"
-community: "agentshroud-gateway"
-location: "L39"
+community: "Community 638"
+location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-gateway
+  - community/Community_638
 ---
 
 # Common Commands
 
 ## Connections
-- [[Capture Output]] - `contains` [EXTRACTED]
-- [[List Sessions]] - `contains` [EXTRACTED]
-- [[Send Keys]] - `contains` [EXTRACTED]
-- [[Session Management]] - `contains` [EXTRACTED]
-- [[WindowPane Navigation]] - `contains` [EXTRACTED]
-- [[tmux Session Control]] - `contains` [EXTRACTED]
+- [[Apple Reminders CLI (remindctl)]] - `contains` [EXTRACTED]
+- [[CompleteDelete]] - `contains` [EXTRACTED]
+- [[Create Reminders]] - `contains` [EXTRACTED]
+- [[Manage Lists]] - `contains` [EXTRACTED]
+- [[Output Formats]] - `contains` [EXTRACTED]
+- [[View Reminders]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway
+#graphify/document #graphify/EXTRACTED #community/Community_638

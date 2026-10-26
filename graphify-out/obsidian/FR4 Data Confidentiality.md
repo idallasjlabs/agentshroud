@@ -1,11 +1,11 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "concept"
-community: "agentshroud-blueteam/SKILL.md (2)"
+community: "Community 24"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_2
+  - community/Community_24
 ---
 
 # FR4: Data Confidentiality
@@ -20,4 +20,4 @@ tags:
 - [[outbound_filter.py]] - `references` [EXTRACTED]
 - [[sanitizer.py]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2
+#graphify/concept #graphify/EXTRACTED #community/Community_24

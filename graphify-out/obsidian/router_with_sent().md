@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "code"
-community: "test_a2a_proxy.py"
+community: "Community 124"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/Community_124
 ---
 
 # router_with_sent()
@@ -16,4 +16,4 @@ tags:
 - [[Return (router, sent_list) tuple for assertion convenience.]] - `rationale_for` [EXTRACTED]
 - [[test_group_approval_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/code #graphify/EXTRACTED #community/Community_124

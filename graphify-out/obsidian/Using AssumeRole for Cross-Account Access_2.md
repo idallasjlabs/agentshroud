@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: ".cursor/agents/i-mcpm-aws-profile.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent"
-location: "L222"
+community: "Community 182"
+location: "L225"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent
+  - community/Community_182
 ---
 
 # Using AssumeRole for Cross-Account Access
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Multi-Account AWS Access_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent
+#graphify/document #graphify/EXTRACTED #community/Community_182

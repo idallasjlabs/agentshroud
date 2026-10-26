@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "rationale"
-community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
+community: "Community 254"
 location: "L89"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue_enhanced_queuepy
+  - community/Community_254
 ---
 
 # Convert to dictionary representation.
 
 ## Connections
-- [[dot-to_dict()_7]] - `rationale_for` [EXTRACTED]
+- [[.to_dict()_5]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy
+#graphify/rationale #graphify/EXTRACTED #community/Community_254

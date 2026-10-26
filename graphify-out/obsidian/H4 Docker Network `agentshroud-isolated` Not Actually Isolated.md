@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md"
 type: "document"
-community: "Error Index.md (2)"
+community: "Community 354"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd_2
+  - community/Community_354
 ---
 
 # H4: Docker Network `agentshroud-isolated` Not Actually Isolated
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[HIGH — Should Fix Before Release]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_2
+#graphify/document #graphify/EXTRACTED #community/Community_354

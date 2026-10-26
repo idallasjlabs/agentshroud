@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "chatbot/main.py"
+community: "Community 8"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/Community_8
 ---
 
 # privacy_policy.py
 
 ## Connections
-- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
 - [[PrivacyPolicy]] - `contains` [EXTRACTED]
 - [[PrivacyPolicyEnforcer]] - `contains` [EXTRACTED]
-- [[RBACConfig_3]] - `imports` [EXTRACTED]
+- [[RBACConfig_1]] - `imports` [EXTRACTED]
 - [[ServicePolicy]] - `contains` [EXTRACTED]
 - [[ServicePrivacy]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/code #graphify/EXTRACTED #community/Community_8

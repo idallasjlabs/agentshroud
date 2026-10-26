@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade.sh"
 type: "code"
-community: "_make_sanitizer()"
+community: "Community 118"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/Community_118
 ---
 
 # sunday-upgrade.sh script
@@ -15,4 +15,4 @@ tags:
 - [[_return_to_main()]] - `calls` [EXTRACTED]
 - [[sunday-upgrade.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/code #graphify/EXTRACTED #community/Community_118

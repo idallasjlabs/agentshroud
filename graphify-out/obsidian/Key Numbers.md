@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "PipelineAction"
+community: "Community 178"
 location: "L115"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/Community_178
 ---
 
 # Key Numbers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1. System Overview]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PipelineAction
+#graphify/document #graphify/EXTRACTED #community/Community_178

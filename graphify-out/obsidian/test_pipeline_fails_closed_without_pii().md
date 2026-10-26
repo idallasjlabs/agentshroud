@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "test_agent_cve_registry.py"
+community: "Community 84"
 location: "L318"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy
+  - community/Community_84
 ---
 
 # test_pipeline_fails_closed_without_pii()
@@ -17,4 +17,4 @@ tags:
 - [[SecurityPipeline_1]] - `calls` [EXTRACTED]
 - [[test_redteam_probes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy
+#graphify/code #graphify/EXTRACTED #community/Community_84

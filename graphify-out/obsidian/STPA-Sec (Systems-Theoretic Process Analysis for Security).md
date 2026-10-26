@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v0.9/release-notes-v0.9.0.md"
 type: "concept"
-community: "ApprovalHardening"
+community: "Community 91"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/Community_91
 ---
 
 # STPA-Sec (Systems-Theoretic Process Analysis for Security)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud v0.9.0 Deep Hardening Release Notes]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/concept #graphify/EXTRACTED #community/Community_91

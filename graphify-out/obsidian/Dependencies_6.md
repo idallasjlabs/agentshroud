@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ui/SKILL.md"
+source_file: ".agents/skills/i-bs/SKILL.md"
 type: "document"
-community: "Mode A — Single task"
-location: "L390"
+community: "Community 483"
+location: "L298"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/Community_483
 ---
 
 # Dependencies
 
 ## Connections
-- [[Skill UI Expert (UI)]] - `contains` [EXTRACTED]
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/document #graphify/EXTRACTED #community/Community_483

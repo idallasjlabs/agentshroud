@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/backup-restore.md"
 type: "document"
-community: "_sync"
+community: "Community 654"
 location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_sync
+  - community/Community_654
 ---
 
 # Daily Automated Backup
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Backup Procedure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_sync
+#graphify/document #graphify/EXTRACTED #community/Community_654

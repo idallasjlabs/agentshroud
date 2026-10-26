@@ -1,17 +1,18 @@
 ---
-source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h"
+source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h"
 type: "code"
-community: "2. Security Value Audit"
-location: "L17"
+community: "Community 1161"
+location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/2_Security_Value_Audit
+  - community/Community_1161
 ---
 
 # button_handle_t
 
 ## Connections
-- [[bsp_iot_button_create()_1]] - `references` [EXTRACTED]
+- [[iot_button_delete()_1]] - `references` [EXTRACTED]
+- [[iot_button_register_cb()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/2_Security_Value_Audit
+#graphify/code #graphify/EXTRACTED #community/Community_1161

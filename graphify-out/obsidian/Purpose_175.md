@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/python-jose.md"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
 type: "document"
-community: "create_auth_dependency()"
+community: "Community 853"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/Community_853
 ---
 
 # Purpose
 
 ## Connections
-- [[python-jose_1]] - `contains` [EXTRACTED]
+- [[proxy_status.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/document #graphify/EXTRACTED #community/Community_853

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "TestPromptProtection"
+community: "Community 348"
 location: "L210"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestPromptProtection
+  - community/Community_348
 ---
 
 # 📚 Documentation Links
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Apple Services Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestPromptProtection
+#graphify/document #graphify/EXTRACTED #community/Community_348

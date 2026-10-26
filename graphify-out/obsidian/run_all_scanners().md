@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "TrustConfig"
+community: "Community 6"
 location: "L2702"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/Community_6
 ---
 
 # run_all_scanners()
@@ -16,7 +16,7 @@ tags:
 - [[Run all locally available security scanners and return consolidated results.]] - `rationale_for` [EXTRACTED]
 - [[_record_scanner_result()]] - `calls` [EXTRACTED]
 - [[_scanner_summary()]] - `calls` [EXTRACTED]
-- [[ingest_apimain.py]] - `contains` [EXTRACTED]
-- [[post]] - `references` [EXTRACTED]
+- [[main.py_2]] - `contains` [EXTRACTED]
+- [[run_trivy_scan()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/Community_6

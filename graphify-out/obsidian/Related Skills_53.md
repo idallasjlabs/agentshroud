@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pm/README.md"
+source_file: ".opencode/agents/i-mcpm-aws-profile.md"
 type: "document"
-community: "OpenClaw Bot SSH Configuration"
-location: "L14"
+community: "Community 202"
+location: "L348"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_SSH_Configuration
+  - community/Community_202
 ---
 
 # Related Skills
 
 ## Connections
-- [[Project Management (PM)]] - `contains` [EXTRACTED]
-- [[Project Management (README)]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration
+#graphify/document #graphify/EXTRACTED #community/Community_202

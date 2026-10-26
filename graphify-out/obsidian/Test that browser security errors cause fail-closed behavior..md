@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "rationale"
-community: "scanner_integration.py"
+community: "Community 120"
 location: "L249"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/Community_120
 ---
 
 # Test that browser security errors cause fail-closed behavior.
 
 ## Connections
-- [[dot-test_graceful_degradation_browser_security_error()]] - `rationale_for` [EXTRACTED]
+- [[.test_graceful_degradation_browser_security_error()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_120

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "document"
-community: ".omp/mcp.json"
+community: "Community 818"
 location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/omp/mcpjson
+  - community/Community_818
 ---
 
 # Field Reference
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSH Configuration Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/omp/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Community_818

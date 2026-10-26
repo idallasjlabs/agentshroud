@@ -1,25 +1,25 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Skill: Project Management (PM)"
+community: "Community 490"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM
+  - community/Community_490
 ---
 
 # AgentShroud™ — Project Knowledge Base
 
 ## Connections
 - [[About the Creator]] - `contains` [EXTRACTED]
-- [[Architecture_10]] - `contains` [EXTRACTED]
-- [[Current Status_6]] - `contains` [EXTRACTED]
+- [[Architecture_2]] - `contains` [EXTRACTED]
+- [[Current Status]] - `contains` [EXTRACTED]
 - [[Frequently Asked Questions]] - `contains` [EXTRACTED]
 - [[How to Contribute]] - `contains` [EXTRACTED]
+- [[PUBLIC-INFO_1]] - `contains` [EXTRACTED]
 - [[Technology Stack]] - `contains` [EXTRACTED]
-- [[What Is AgentShroud_3]] - `contains` [EXTRACTED]
+- [[What Is AgentShroud]] - `contains` [EXTRACTED]
 - [[Why AgentShroud Exists]] - `contains` [EXTRACTED]
-- [[collaborator-workspacePUBLIC-INFO]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM
+#graphify/document #graphify/EXTRACTED #community/Community_490

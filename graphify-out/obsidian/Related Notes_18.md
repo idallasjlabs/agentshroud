@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
+source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "document"
-community: "Skill: Pre-Change Analysis (PCA)"
-location: "L37"
+community: "Community 944"
+location: "L96"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Pre-Change_Analysis_PCA
+  - community/Community_944
 ---
 
 # Related Notes
 
 ## Connections
-- [[browser-fetch.js_1]] - `contains` [EXTRACTED]
+- [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Pre-Change_Analysis_PCA
+#graphify/document #graphify/EXTRACTED #community/Community_944

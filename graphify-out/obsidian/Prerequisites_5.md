@@ -1,20 +1,17 @@
 ---
-source_file: "skills/openclaw/xurl/SKILL.md"
+source_file: "docs/operations/macos.md"
 type: "document"
-community: "AgentShroud Security Hardening Plan"
-location: "L67"
+community: "Community 715"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Hardening_Plan
+  - community/Community_715
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Other auth methods]] - `contains` [EXTRACTED]
-- [[Register an app (recommended)]] - `contains` [EXTRACTED]
-- [[Secret Safety (Mandatory)]] - `contains` [EXTRACTED]
-- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
+- [[Deploying AgentShroud on macOS (Apple Silicon  Intel)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Hardening_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_715

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "AgentTarget"
+community: "Community 43"
 location: "L576"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/Community_43
 ---
 
 # test_egress_allowed_domain()
 
 ## Connections
-- [[dot-process_outbound()_3]] - `calls` [EXTRACTED]
+- [[.process_outbound()_2]] - `calls` [EXTRACTED]
 - [[Verify allowed domains pass egress check.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/Community_43

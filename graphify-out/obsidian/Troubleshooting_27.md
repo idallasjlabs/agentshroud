@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/HERMES_SETUP.md"
+source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Hermes Agent — Connection Setup"
-location: "L253"
+community: "Community 806"
+location: "L211"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Agent__Connection_Setup
+  - community/Community_806
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
+- [[Credential Management - 1Password Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup
+#graphify/document #graphify/EXTRACTED #community/Community_806

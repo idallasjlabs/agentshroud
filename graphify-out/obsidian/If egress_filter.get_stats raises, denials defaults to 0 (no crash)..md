@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "rationale"
-community: "AlertDispatcher (2)"
+community: "Community 919"
 location: "L783"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/Community_919
 ---
 
 # If egress_filter.get_stats raises, denials defaults to 0 (no crash).
 
 ## Connections
-- [[dot-test_egress_filter_exception_defaults_denials_zero()]] - `rationale_for` [EXTRACTED]
+- [[.test_egress_filter_exception_defaults_denials_zero()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_919

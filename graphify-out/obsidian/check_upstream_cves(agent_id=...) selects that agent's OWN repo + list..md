@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "asyncio"
+community: "Community 1001"
 location: "L784"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/Community_1001
 ---
 
 # check_upstream_cves(agent_id=...) selects that agent's OWN repo + list.
 
 ## Connections
-- [[dot-test_check_scoped_to_agent_registry_and_repo()]] - `rationale_for` [EXTRACTED]
+- [[.test_check_scoped_to_agent_registry_and_repo()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/asyncio
+#graphify/rationale #graphify/EXTRACTED #community/Community_1001

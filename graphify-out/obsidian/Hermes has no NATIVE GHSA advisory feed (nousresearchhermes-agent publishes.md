@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "rationale"
-community: "A2APolicyEngine"
+community: "Community 42"
 location: "L407"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/Community_42
 ---
 
 # Hermes has no NATIVE GHSA advisory feed (nousresearch/hermes-agent publishes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_hermes_verified_ids_are_never_fabricated()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/rationale #graphify/EXTRACTED #community/Community_42

@@ -1,16 +1,20 @@
 ---
-source_file: ""
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "Community 562"
+location: "L155"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - graphify/INFERRED
+  - community/Community_562
 ---
 
 # WebProxyConfig
 
 ## Connections
-- [[dot-__init__()_5]] - `references` [EXTRACTED]
+- [[.__init__()_44]] - `references` [EXTRACTED]
+- [[URLAnalyzer]] - `uses` [INFERRED]
+- [[WebContentScanner]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/INFERRED #community/Community_562

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup-slack.md"
 type: "concept"
-community: "AgentShroud Brand Quick Reference"
+community: "Community 581"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Quick_Reference
+  - community/Community_581
 ---
 
 # Slack Socket Mode Integration Architecture
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Telegram Bot Setup (BotFather token + gateway config)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Brand_Quick_Reference
+#graphify/concept #graphify/EXTRACTED #community/Community_581

@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "ConfigIntegrityMonitor"
+community: "Community 133"
 location: "L86"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ConfigIntegrityMonitor
+  - community/Community_133
 ---
 
 # Recommendation
 
 ## Connections
-- [[dot-recommendation()]] - `references` [EXTRACTED]
-- [[CompletedProcess_3]] - `uses` [INFERRED]
+- [[.recommendation()]] - `references` [EXTRACTED]
+- [[CompletedProcess_4]] - `uses` [INFERRED]
 - [[IntEnum]] - `inherits` [EXTRACTED]
-- [[Path_27]] - `uses` [INFERRED]
-- [[Path_30]] - `uses` [INFERRED]
-- [[ScanResult_2]] - `uses` [INFERRED]
+- [[Path_22]] - `uses` [INFERRED]
+- [[Path_39]] - `uses` [INFERRED]
 - [[ScanResult_3]] - `uses` [INFERRED]
-- [[SkillGuard]] - `uses` [INFERRED]
+- [[ScanResult_4]] - `uses` [INFERRED]
+- [[SkillGuard_1]] - `uses` [INFERRED]
 - [[TestAggregation]] - `uses` [INFERRED]
 - [[TestCleanSkill]] - `uses` [INFERRED]
 - [[TestClient]] - `uses` [INFERRED]
@@ -40,4 +40,4 @@ tags:
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ConfigIntegrityMonitor
+#graphify/code #graphify/INFERRED #community/Community_133

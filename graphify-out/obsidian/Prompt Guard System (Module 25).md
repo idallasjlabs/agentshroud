@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "concept"
-community: "MiddlewareManager (5)"
+community: "Community 164"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/Community_164
 ---
 
 # Prompt Guard System (Module #25)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Security Architecture]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/concept #graphify/EXTRACTED #community/Community_164

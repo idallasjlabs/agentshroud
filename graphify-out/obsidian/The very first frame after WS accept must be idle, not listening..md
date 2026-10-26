@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "main.rs"
+community: "Community 46"
 location: "L991"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/Community_46
 ---
 
 # The very first frame after WS accept must be idle, not listening.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_connect_sends_idle_first()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/mainrs
+#graphify/rationale #graphify/EXTRACTED #community/Community_46

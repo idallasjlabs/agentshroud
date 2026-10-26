@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "oracle — best use"
+community: "Community 769"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/oracle__best_use
+  - community/Community_769
 ---
 
 # OpenClaw Host Hardening
@@ -16,10 +16,10 @@ tags:
 - [[Logging and audit trail]] - `contains` [EXTRACTED]
 - [[Memory writes (conditional)]] - `contains` [EXTRACTED]
 - [[OpenClaw command accuracy]] - `contains` [EXTRACTED]
-- [[Overview_24]] - `contains` [EXTRACTED]
+- [[Overview_32]] - `contains` [EXTRACTED]
 - [[Periodic checks]] - `contains` [EXTRACTED]
 - [[Required confirmations (always)]] - `contains` [EXTRACTED]
+- [[SKILL_222]] - `contains` [EXTRACTED]
 - [[Workflow (follow in order)]] - `contains` [EXTRACTED]
-- [[healthcheckSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/oracle__best_use
+#graphify/document #graphify/EXTRACTED #community/Community_769

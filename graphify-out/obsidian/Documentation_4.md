@@ -1,17 +1,17 @@
 ---
-source_file: "branding/INDEX.md"
+source_file: "docker/README.md"
 type: "document"
-community: "dashboard_bridge.py"
-location: "L81"
+community: "Community 213"
+location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard_bridgepy
+  - community/Community_213
 ---
 
 # Documentation
 
 ## Connections
-- [[🎨 Quick Access]] - `contains` [EXTRACTED]
+- [[Files]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard_bridgepy
+#graphify/document #graphify/EXTRACTED #community/Community_213

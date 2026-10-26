@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/skills/i-mcpm-doctor/SKILL.md"
+source_file: "docker/config/hermes/skills/i-cr/README.md"
 type: "document"
-community: "Plan: AgentShroud Security Hardening — Real Agent Containment"
-location: "L161"
+community: "Community 544"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment
+  - community/Community_544
 ---
 
 # Related Skills
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
+- [[Code Review (CR)_1]] - `contains` [EXTRACTED]
+- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment
+#graphify/document #graphify/EXTRACTED #community/Community_544

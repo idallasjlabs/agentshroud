@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "pick_latest_stable"
+community: "Community 6"
 location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pick_latest_stable
+  - community/Community_6
 ---
 
 # ApprovalDecision
 
 ## Connections
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
 - [[User's decision on a pending approval request]] - `rationale_for` [EXTRACTED]
 - [[approval.py]] - `imports` [EXTRACTED]
-- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
+- [[models.py]] - `contains` [EXTRACTED]
 - [[test_approval_decision_valid()]] - `calls` [EXTRACTED]
 - [[test_main_simple.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pick_latest_stable
+#graphify/code #graphify/EXTRACTED #community/Community_6

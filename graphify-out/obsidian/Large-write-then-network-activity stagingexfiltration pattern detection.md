@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "concept"
-community: "FileSandbox"
+community: "Community 31"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/Community_31
 ---
 
 # Large-write-then-network-activity staging/exfiltration pattern detection
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[FileSandbox]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/FileSandbox
+#graphify/concept #graphify/EXTRACTED #community/Community_31

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
 type: "document"
-community: "encrypted_store.py"
-location: "L90"
+community: "Community 407"
+location: "L204"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/encrypted_storepy
+  - community/Community_407
 ---
 
 # Related
 
 ## Connections
-- [[resource_guard.py_2]] - `contains` [EXTRACTED]
+- [[http_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/encrypted_storepy
+#graphify/document #graphify/EXTRACTED #community/Community_407

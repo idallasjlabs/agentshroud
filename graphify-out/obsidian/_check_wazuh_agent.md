@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "test_soc_services_coverage.py"
+community: "Community 986"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_services_coveragepy
+  - community/Community_986
 ---
 
 # _check_wazuh_agent
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[TestCheckWazuhAgent]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_services_coveragepy
+#graphify/code #graphify/EXTRACTED #community/Community_986

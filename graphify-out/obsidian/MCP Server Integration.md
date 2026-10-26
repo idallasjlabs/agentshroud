@@ -1,18 +1,17 @@
 ---
-source_file: "docs/api/integration-guide.md"
+source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "Path (4)"
-location: "L244"
+community: "Community 1992"
+location: "L369"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Path_4
+  - community/Community_1992
 ---
 
 # MCP Server Integration
 
 ## Connections
-- [[Integration Guide]] - `contains` [EXTRACTED]
-- [[MCP Proxy Configuration]] - `contains` [EXTRACTED]
+- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Path_4
+#graphify/document #graphify/EXTRACTED #community/Community_1992

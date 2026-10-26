@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pca/SKILL.md"
+source_file: ".agents/skills/oracle/SKILL.md"
 type: "document"
-community: "router.py"
-location: "L7"
+community: "Community 1983"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/routerpy
+  - community/Community_1983
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pre-Change Analysis (PCA)_2]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/routerpy
+#graphify/document #graphify/EXTRACTED #community/Community_1983

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/bots/hermes/start.sh"
 type: "code"
-community: "_make_cve"
+community: "Community 1500"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_cve
+  - community/Community_1500
 ---
 
 # XDG_DATA_HOME
 
 ## Connections
-- [[start.sh (Hermes s6 main program  startup wrapper)]] - `defines` [EXTRACTED]
+- [[start.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_cve
+#graphify/code #graphify/EXTRACTED #community/Community_1500

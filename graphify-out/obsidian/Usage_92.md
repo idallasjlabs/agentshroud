@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
+source_file: "docker/config/hermes/skills/i-socrates/README.md"
 type: "document"
-community: "DelegationManager"
-location: "L22"
+community: "Community 1222"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/Community_1222
 ---
 
 # Usage
 
 ## Connections
-- [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DelegationManager
+#graphify/document #graphify/EXTRACTED #community/Community_1222

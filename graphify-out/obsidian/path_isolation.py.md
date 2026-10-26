@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "PathIsolationManager"
+community: "Community 72"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/Community_72
 ---
 
 # path_isolation.py
@@ -16,6 +16,6 @@ tags:
 - [[PathIsolationManager]] - `contains` [EXTRACTED]
 - [[PathRewriteResult]] - `contains` [EXTRACTED]
 - [[Rule agentshroud-path-traversal-open]] - `references` [EXTRACTED]
-- [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
+- [[SKILL_200]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/Community_72

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "ProxyDashboard"
+community: "Community 156"
 location: "L402"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/Community_156
 ---
 
 # Clean up browser resources
 
 ## Connections
-- [[dot-close()_6]] - `rationale_for` [EXTRACTED]
+- [[.close()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/rationale #graphify/EXTRACTED #community/Community_156

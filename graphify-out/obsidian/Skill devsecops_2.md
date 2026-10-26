@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-devsecops/SKILL.md"
+source_file: ".cursor/agents/i-devsecops.md"
 type: "document"
-community: "soc.js"
-location: "L5"
+community: "Community 2252"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_2252
 ---
 
 # Skill: devsecops
 
 ## Connections
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-devsecopsSKILL]] - `contains` [EXTRACTED]
+- [[i-devsecops_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_2252

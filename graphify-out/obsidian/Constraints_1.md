@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/02-human-in-the-loop.md"
+source_file: ".agents/skills/i-pr/SKILL.md"
 type: "document"
-community: "Incident Response Playbook — AgentShroud"
-location: "L229"
+community: "Community 951"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Incident_Response_Playbook__AgentShroud
+  - community/Community_951
 ---
 
 # Constraints
 
 ## Connections
-- [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Incident_Response_Playbook__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Community_951

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Full System Flowchart.md"
 type: "document"
-community: "MiddlewareManager (2) (2)"
+community: "Community 390"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2_2
+  - community/Community_390
 ---
 
 # Full System Flowchart
@@ -15,6 +15,6 @@ tags:
 - [[Complete System Diagram]] - `contains` [EXTRACTED]
 - [[Full System Flowchart]] - `contains` [EXTRACTED]
 - [[Legend]] - `contains` [EXTRACTED]
-- [[Related Notes_37]] - `contains` [EXTRACTED]
+- [[Related Notes_71]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_390

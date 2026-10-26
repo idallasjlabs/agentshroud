@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/cli/main.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
-location: "L889"
+community: "Community 87"
+location: "L276"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/Community_87
 ---
 
 # add_collaborator()
 
 ## Connections
-- [[AddCollaboratorRequest]] - `references` [EXTRACTED]
-- [[SCLCaller]] - `references` [EXTRACTED]
-- [[_log_audit()]] - `calls` [EXTRACTED]
-- [[persist_approved_collaborator()]] - `calls` [EXTRACTED]
-- [[socrouter.py]] - `contains` [EXTRACTED]
+- [[Add a collaborator by Telegram user ID.]] - `rationale_for` [EXTRACTED]
+- [[_output()]] - `calls` [EXTRACTED]
+- [[main.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/Community_87

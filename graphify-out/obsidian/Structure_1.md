@@ -1,20 +1,17 @@
 ---
-source_file: "browser-extension/README.md"
+source_file: "gateway/README.md"
 type: "document"
-community: "middleware.py"
+community: "Community 659"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/Community_659
 ---
 
 # Structure
 
 ## Connections
-- [[Browser Extension]] - `contains` [EXTRACTED]
-- [[Gateway wiring]] - `contains` [EXTRACTED]
-- [[Safari_6]] - `contains` [EXTRACTED]
-- [[Tests_3]] - `contains` [EXTRACTED]
+- [[Gateway Layer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/middlewarepy
+#graphify/document #graphify/EXTRACTED #community/Community_659

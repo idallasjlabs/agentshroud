@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TestInboundPipelineOnGetUpdates"
+community: "Community 4"
 location: "L666"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestInboundPipelineOnGetUpdates
+  - community/Community_4
 ---
 
 # Owner /revoke should locally revoke collaborator access for the target user id.
 
 ## Connections
-- [[dot-test_owner_revoke_command_revokes_target_user()]] - `rationale_for` [EXTRACTED]
+- [[.test_owner_revoke_command_revokes_target_user()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates
+#graphify/rationale #graphify/EXTRACTED #community/Community_4

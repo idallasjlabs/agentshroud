@@ -1,21 +1,21 @@
 ---
 source_file: ".agents/skills/i-bs/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md (2)"
+community: "Community 117"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd_2
+  - community/Community_117
 ---
 
 # Branding Specialist (BS)
 
 ## Connections
-- [[dot-agentsskillsi-bsREADME]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_13]] - `contains` [EXTRACTED]
-- [[Related Skills_1]] - `contains` [EXTRACTED]
-- [[Usage_4]] - `contains` [EXTRACTED]
+- [[Purpose_8]] - `contains` [EXTRACTED]
+- [[README_8]] - `contains` [EXTRACTED]
+- [[Related Skills_11]] - `contains` [EXTRACTED]
+- [[SKILL_19]] - `contains` [EXTRACTED]
+- [[Usage_13]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_2
+#graphify/document #graphify/EXTRACTED #community/Community_117

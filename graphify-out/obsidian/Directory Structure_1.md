@@ -1,17 +1,17 @@
 ---
-source_file: "skills/README.md"
+source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
 type: "document"
-community: "FileSandbox"
-location: "L5"
+community: "Community 855"
+location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/Community_855
 ---
 
 # Directory Structure
 
 ## Connections
-- [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
+- [[Dockerfile — Bot (OpenClaw)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FileSandbox
+#graphify/document #graphify/EXTRACTED #community/Community_855

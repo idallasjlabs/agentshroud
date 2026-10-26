@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/eightctl/SKILL.md"
 type: "document"
-community: "kaizen Skill (stub) (2)"
+community: "Community 1394"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/kaizen_Skill_stub_2
+  - community/Community_1394
 ---
 
 # eightctl
 
 ## Connections
-- [[eightctlSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_215]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/kaizen_Skill_stub_2
+#graphify/document #graphify/EXTRACTED #community/Community_1394

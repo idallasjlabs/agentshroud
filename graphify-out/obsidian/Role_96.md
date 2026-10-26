@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pr/SKILL.md"
+source_file: ".cursor/agents/i-pm.md"
 type: "document"
-community: "Turbo Fieldfare (MLX inference backend)"
-location: "L7"
+community: "Community 1041"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Turbo_Fieldfare_MLX_inference_backend
+  - community/Community_1041
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pull Request (PR) Generator]] - `contains` [EXTRACTED]
+- [[Skill Project Management (PM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Turbo_Fieldfare_MLX_inference_backend
+#graphify/document #graphify/EXTRACTED #community/Community_1041

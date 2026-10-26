@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "AgentTarget"
+community: "Community 43"
 location: "L617"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/Community_43
 ---
 
 # test_mixed_pii_and_injection()
 
 ## Connections
-- [[dot-process_inbound()_6]] - `calls` [EXTRACTED]
+- [[.process_inbound()_2]] - `calls` [EXTRACTED]
 - [[Message with both PII and injection — blocked before PII scan.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/Community_43

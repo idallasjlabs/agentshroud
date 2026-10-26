@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "rationale"
-community: "_pcm_bytes"
+community: "Community 86"
 location: "L167"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/Community_86
 ---
 
 # CONNECT to a private IP is blocked by SSRF protection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ssrf_attempt_returns_403()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/rationale #graphify/EXTRACTED #community/Community_86

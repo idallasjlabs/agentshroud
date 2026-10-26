@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "ApprovalHardening"
+community: "Community 91"
 location: "L401"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/Community_91
 ---
 
 # IEC 62443 Industrial Security Framework
@@ -20,4 +20,4 @@ tags:
 - [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `references` [EXTRACTED]
 - [[audit-specification]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/document #graphify/EXTRACTED #community/Community_91

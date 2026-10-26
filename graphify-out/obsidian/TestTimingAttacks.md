@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "ContextGuard"
+community: "Community 0"
 location: "L41"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ContextGuard
+  - community/Community_0
 ---
 
 # TestTimingAttacks
 
 ## Connections
-- [[dot-test_encrypted_store_constant_time()]] - `method` [EXTRACTED]
-- [[dot-test_hmac_comparison_for_secrets()]] - `method` [EXTRACTED]
-- [[dot-test_pii_scan_time_independent_of_content()]] - `method` [EXTRACTED]
-- [[dot-test_prompt_guard_no_early_exit_leak()]] - `method` [EXTRACTED]
-- [[dot-test_token_validation_rejects_fast()]] - `method` [EXTRACTED]
+- [[.test_encrypted_store_constant_time()]] - `method` [EXTRACTED]
+- [[.test_hmac_comparison_for_secrets()]] - `method` [EXTRACTED]
+- [[.test_pii_scan_time_independent_of_content()]] - `method` [EXTRACTED]
+- [[.test_prompt_guard_no_early_exit_leak()]] - `method` [EXTRACTED]
+- [[.test_token_validation_rejects_fast()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
@@ -31,15 +31,15 @@ tags:
 - [[FileSandbox]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]
 - [[GitGuard]] - `uses` [INFERRED]
-- [[LogSanitizer]] - `uses` [INFERRED]
+- [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MetadataGuard]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[PIISanitizer_3]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[Session]] - `uses` [INFERRED]
 - [[SubagentEventType]] - `uses` [INFERRED]
 - [[Test for timing side-channels in security-critical comparisons.]] - `rationale_for` [EXTRACTED]
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ContextGuard
+#graphify/code #graphify/INFERRED #community/Community_0

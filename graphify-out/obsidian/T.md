@@ -1,17 +1,23 @@
 ---
-source_file: "docs/project/glossary.md"
-type: "document"
-community: "AgentShroud Prerequisites"
-location: "L115"
+source_file: "cli/src/main.rs"
+type: "code"
+community: "Community 39"
+location: "L337"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Prerequisites
+  - community/Community_39
 ---
 
 # T
 
 ## Connections
-- [[AgentShroud Project Terminology]] - `contains` [EXTRACTED]
+- [[.new()_1]] - `references` [EXTRACTED]
+- [[GatewayClient]] - `references` [EXTRACTED]
+- [[run_approvals_decide()]] - `references` [EXTRACTED]
+- [[run_approvals_list()]] - `references` [EXTRACTED]
+- [[run_cves()]] - `references` [EXTRACTED]
+- [[run_deploy_status()]] - `references` [EXTRACTED]
+- [[run_status()]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites
+#graphify/code #graphify/EXTRACTED #community/Community_39

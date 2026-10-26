@@ -1,22 +1,17 @@
 ---
-source_file: "skills/openclaw/apple-reminders/SKILL.md"
+source_file: "skills/openclaw/bear-notes/SKILL.md"
 type: "document"
-community: "System Audit & Documentation (2)"
-location: "L56"
+community: "Community 860"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Audit__Documentation_2
+  - community/Community_860
 ---
 
 # Common Commands
 
 ## Connections
-- [[Apple Reminders CLI (remindctl)]] - `contains` [EXTRACTED]
-- [[CompleteDelete]] - `contains` [EXTRACTED]
-- [[Create Reminders]] - `contains` [EXTRACTED]
-- [[Manage Lists]] - `contains` [EXTRACTED]
-- [[Output Formats]] - `contains` [EXTRACTED]
-- [[View Reminders]] - `contains` [EXTRACTED]
+- [[Bear Notes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Audit__Documentation_2
+#graphify/document #graphify/EXTRACTED #community/Community_860

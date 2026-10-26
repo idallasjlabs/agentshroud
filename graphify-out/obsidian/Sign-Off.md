@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-ps/SKILL.md"
+source_file: ".agents/agents/i-ps.md"
 type: "document"
-community: "TestSSRFDetection (2)"
-location: "L167"
+community: "Community 921"
+location: "L170"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSSRFDetection_2
+  - community/Community_921
 ---
 
 # Sign-Off
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Deployment Verification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSSRFDetection_2
+#graphify/document #graphify/EXTRACTED #community/Community_921

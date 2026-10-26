@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: ".cursor/agents/i-mcpm-aws-profile.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent"
-location: "L120"
+community: "Community 182"
+location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent
+  - community/Community_182
 ---
 
 # Switch AWS Profile for MCP
@@ -17,4 +17,4 @@ tags:
 - [[Method 3 Configure in .mcp.json_2]] - `contains` [EXTRACTED]
 - [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent
+#graphify/document #graphify/EXTRACTED #community/Community_182

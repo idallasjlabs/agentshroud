@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/gemini-review.py"
+source_file: "docker/bots/hermes/render_md_email.py"
 type: "code"
-community: "AgentShroud™ Communication Templates (2)"
-location: "L83"
+community: "Community 522"
+location: "L250"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Communication_Templates_2
+  - community/Community_522
 ---
 
 # main()
 
 ## Connections
-- [[call_gemini()]] - `calls` [EXTRACTED]
-- [[gemini-review.py]] - `contains` [EXTRACTED]
+- [[render()]] - `calls` [EXTRACTED]
+- [[render_md_email.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Communication_Templates_2
+#graphify/code #graphify/EXTRACTED #community/Community_522

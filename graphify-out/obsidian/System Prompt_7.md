@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
+source_file: ".agents/agents/vulcan.md"
 type: "document"
-community: "WebProxyConfig (2)"
-location: "L91"
+community: "Community 1951"
+location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/WebProxyConfig_2
+  - community/Community_1951
 ---
 
 # System Prompt
 
 ## Connections
-- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/WebProxyConfig_2
+#graphify/document #graphify/EXTRACTED #community/Community_1951

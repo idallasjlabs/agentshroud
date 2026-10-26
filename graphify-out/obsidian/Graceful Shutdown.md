@@ -1,17 +1,17 @@
 ---
 source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "test_main_endpoints.py (2)"
+community: "Community 258"
 location: "L288"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_main_endpointspy_2
+  - community/Community_258
 ---
 
 # Graceful Shutdown
 
 ## Connections
-- [[Stop the Stack_1]] - `contains` [EXTRACTED]
+- [[Stop the Stack]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_main_endpointspy_2
+#graphify/document #graphify/EXTRACTED #community/Community_258

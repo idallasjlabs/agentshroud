@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "._proxy_request_impl()"
+community: "Community 605"
 location: "L4177"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_proxy_request_impl
+  - community/Community_605
 ---
 
 # True when filtered payload should be dropped instead of forwarded.
 
 ## Connections
-- [[dot-_is_suppressed_outbound_payload()]] - `rationale_for` [EXTRACTED]
+- [[._is_suppressed_outbound_payload()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_proxy_request_impl
+#graphify/rationale #graphify/EXTRACTED #community/Community_605

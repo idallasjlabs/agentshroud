@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "document"
-community: "MiddlewareManager (4)"
+community: "Community 94"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/Community_94
 ---
 
 # AgentShroud — System Overview
@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[Components_2]] - `contains` [EXTRACTED]
 - [[Key Design Decisions]] - `contains` [EXTRACTED]
-- [[Related Notes_68]] - `contains` [EXTRACTED]
+- [[Related Notes_1]] - `contains` [EXTRACTED]
 - [[Security Layers (in order)]] - `contains` [EXTRACTED]
 - [[System Overview]] - `contains` [EXTRACTED]
 - [[What It Is]] - `contains` [EXTRACTED]
 - [[Who Depends On It]] - `contains` [EXTRACTED]
 - [[Why It Exists]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/document #graphify/EXTRACTED #community/Community_94

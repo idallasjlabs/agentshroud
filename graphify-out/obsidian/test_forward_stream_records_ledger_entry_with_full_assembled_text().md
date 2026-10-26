@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "UserSessionManager (2) (2)"
+community: "Community 47"
 location: "L392"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2_2
+  - community/Community_47
 ---
 
 # test_forward_stream_records_ledger_entry_with_full_assembled_text()
@@ -16,4 +16,4 @@ tags:
 - [[_post_stream()]] - `calls` [EXTRACTED]
 - [[test_forward_stream.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_2
+#graphify/code #graphify/EXTRACTED #community/Community_47

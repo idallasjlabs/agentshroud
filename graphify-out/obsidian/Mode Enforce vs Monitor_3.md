@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
-community: "AgentShroud Weekly Upgrade — 2026-09-06"
-location: "L87"
+community: "Community 565"
+location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Weekly_Upgrade__2026-09-06
+  - community/Community_565
 ---
 
 # Mode: Enforce vs Monitor
 
 ## Connections
-- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade__2026-09-06
+#graphify/document #graphify/EXTRACTED #community/Community_565

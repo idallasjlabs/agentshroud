@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_auth.py"
 type: "code"
-community: "create_auth_dependency()"
+community: "Community 92"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/Community_92
 ---
 
 # test_auth.py
 
 ## Connections
-- [[RateLimiter_1]] - `imports` [EXTRACTED]
+- [[RateLimiter]] - `imports` [EXTRACTED]
 - [[create_auth_dependency()]] - `imports` [EXTRACTED]
 - [[test_auth_dependency_invalid_scheme()]] - `contains` [EXTRACTED]
 - [[test_auth_dependency_invalid_token()]] - `contains` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[test_verify_token_valid()]] - `contains` [EXTRACTED]
 - [[verify_token()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/Community_92

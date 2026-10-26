@@ -1,19 +1,17 @@
 ---
-source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
+source_file: "docs/reference/TAILSCALE_COMMANDS.md"
 type: "document"
-community: "Skill: Project Management (PM)"
-location: "L105"
+community: "Community 816"
+location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM
+  - community/Community_816
 ---
 
 # Current Status
 
 ## Connections
-- [[AgentShroud™ — Project Knowledge Base]] - `contains` [EXTRACTED]
-- [[Development Phases]] - `contains` [EXTRACTED]
-- [[v0.8.0 Focus Areas]] - `contains` [EXTRACTED]
+- [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM
+#graphify/document #graphify/EXTRACTED #community/Community_816

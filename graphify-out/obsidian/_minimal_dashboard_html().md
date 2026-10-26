@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "Community 2180"
 location: "L2735"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/Community_2180
 ---
 
 # _minimal_dashboard_html()
 
 ## Connections
 - [[Fallback minimal dashboard when template file is missing.]] - `rationale_for` [EXTRACTED]
-- [[socrouter.py]] - `contains` [EXTRACTED]
+- [[router.py_1]] - `contains` [EXTRACTED]
 - [[soc_dashboard()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/Community_2180

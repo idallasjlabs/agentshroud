@@ -1,24 +1,17 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "openclaw/skills/i-cr/SKILL.md"
-location: "L28"
+community: "Community 121"
+location: "L439"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/Community_121
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_113]] - `references` [EXTRACTED]
-- [[dot-_extract_dict_content()]] - `references` [EXTRACTED]
-- [[dot-_extract_scannable_content()]] - `references` [EXTRACTED]
-- [[dot-_reconstruct_result()]] - `references` [EXTRACTED]
-- [[dot-sanitize_tool_result()]] - `references` [EXTRACTED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer_3]] - `uses` [INFERRED]
-- [[RedactionResult_2]] - `uses` [INFERRED]
+- [[.get_findings_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/Community_121

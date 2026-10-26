@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "§4 — Hermes-Specific Section (NEW — first assessment)"
+community: "Community 1113"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/4__Hermes-Specific_Section_NEW__first_assessment
+  - community/Community_1113
 ---
 
 # 📋 Detailed Step-by-Step
@@ -20,4 +20,4 @@ tags:
 - [[Step 5 Verify Publication]] - `contains` [EXTRACTED]
 - [[Step 6 Test Installation (Optional)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/4__Hermes-Specific_Section_NEW__first_assessment
+#graphify/document #graphify/EXTRACTED #community/Community_1113

@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-mc/README.md"
+source_file: "docker/config/hermes/skills/i-bs/README.md"
 type: "document"
-community: "Implementation Status"
+community: "Community 90"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implementation_Status
+  - community/Community_90
 ---
 
 # Related Skills
 
 ## Connections
-- [[GSDE&G Development Master Checklist (MC)_1]] - `contains` [EXTRACTED]
-- [[GSDE&G Development Master Checklist Skill]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implementation_Status
+#graphify/document #graphify/EXTRACTED #community/Community_90

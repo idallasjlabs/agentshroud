@@ -1,17 +1,17 @@
 ---
-source_file: "docker/README.md"
+source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "TestMultilingualInjection"
-location: "L286"
+community: "Community 258"
+location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMultilingualInjection
+  - community/Community_258
 ---
 
 # Check Status
 
 ## Connections
-- [[Usage_61]] - `contains` [EXTRACTED]
+- [[Launch the Stack]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMultilingualInjection
+#graphify/document #graphify/EXTRACTED #community/Community_258

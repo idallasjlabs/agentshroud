@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
-community: "input_normalizer.py"
+community: "Community 565"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/input_normalizerpy
+  - community/Community_565
 ---
 
 # Responsibilities
 
 ## Connections
-- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/input_normalizerpy
+#graphify/document #graphify/EXTRACTED #community/Community_565

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Mode A — Single task (4)"
-location: "L11"
+community: "Community 773"
+location: "L1025"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_4
+  - community/Community_773
 ---
 
 # Summary
 
 ## Connections
-- [[agentshroud-bot_1]] - `contains` [EXTRACTED]
+- [[0.5.0 - 2026-02-21]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_4
+#graphify/document #graphify/EXTRACTED #community/Community_773

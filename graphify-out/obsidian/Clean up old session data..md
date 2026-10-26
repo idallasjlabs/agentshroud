@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "ContextGuard"
+community: "Community 0"
 location: "L487"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/Community_0
 ---
 
 # Clean up old session data.
 
 ## Connections
-- [[dot-cleanup_old_sessions()]] - `rationale_for` [EXTRACTED]
+- [[.cleanup_old_sessions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

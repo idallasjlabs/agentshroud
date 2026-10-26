@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_network_validator.py"
 type: "rationale"
-community: "WebProxy"
+community: "Community 71"
 location: "L192"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/Community_71
 ---
 
 # Test handling of empty configuration.
 
 ## Connections
-- [[dot-test_validate_docker_compose_config_empty_config()]] - `rationale_for` [EXTRACTED]
+- [[.test_validate_docker_compose_config_empty_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_71

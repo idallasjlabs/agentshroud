@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "TestSSRFDetection"
+community: "Community 101"
 location: "L3201"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/Community_101
 ---
 
 # Tell Hermes to check my email.' must switch the agent AND route the     remainin
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_tell_agent_command_with_chained_instruction()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/rationale #graphify/EXTRACTED #community/Community_101

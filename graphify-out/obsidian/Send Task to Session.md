@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/tmux/SKILL.md"
 type: "document"
-community: "agentshroud-gateway"
+community: "Community 576"
 location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-gateway
+  - community/Community_576
 ---
 
 # Send Task to Session
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Claude Code Session Patterns]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway
+#graphify/document #graphify/EXTRACTED #community/Community_576

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mac/README.md"
 type: "document"
-community: "Phase 3: MITIGATE (Rollback First!) (3)"
-location: "L221"
+community: "Community 1212"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First_3
+  - community/Community_1212
 ---
 
 # Related Skills
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
+- [[macOS System Administrator (MAC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First_3
+#graphify/document #graphify/EXTRACTED #community/Community_1212

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "code"
-community: "._make_proxy()"
+community: "Community 5"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_5
 ---
 
 # test_resource_guard.py
@@ -17,4 +17,4 @@ tags:
 - [[TestResourceGuard]] - `contains` [EXTRACTED]
 - [[test_resource_guard_wiring.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_5

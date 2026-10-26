@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: ".cursor/agents/i-mcpm-doctor.md"
 type: "document"
-community: "AgentShroud Gateway (Trust Zone 1): holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMAC/JWT validation"
-location: "L10"
+community: "Community 1040"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Gateway_Trust_Zone_1_holds_1Password_service_account_enforces_policy_signs_ledger_entries_controls_approval_queue_HMAC/JWT_validation
+  - community/Community_1040
 ---
 
 # When to Invoke
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
+- [[Skill MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Gateway_Trust_Zone_1_holds_1Password_service_account_enforces_policy_signs_ledger_entries_controls_approval_queue_HMAC/JWT_validation
+#graphify/document #graphify/EXTRACTED #community/Community_1040

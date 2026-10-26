@@ -1,18 +1,20 @@
 ---
-source_file: "scripts/soak_status.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "_FakeUpstreamWS"
-location: "L33"
+community: "Community 35"
+location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeUpstreamWS
+  - community/Community_35
 ---
 
 # Any
 
 ## Connections
-- [[_is_benign_skip()]] - `references` [EXTRACTED]
-- [[classify()_2]] - `references` [EXTRACTED]
+- [[.enforce()_1]] - `references` [EXTRACTED]
+- [[.evaluate()_1]] - `references` [EXTRACTED]
+- [[.from_dict()_7]] - `references` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeUpstreamWS
+#graphify/code #graphify/EXTRACTED #community/Community_35

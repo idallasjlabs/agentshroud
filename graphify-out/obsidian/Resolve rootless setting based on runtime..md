@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/config.py"
 type: "rationale"
-community: "pipeline.py — Security Pipeline"
+community: "Community 225"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/pipelinepy__Security_Pipeline
+  - community/Community_225
 ---
 
 # Resolve rootless setting based on runtime.
 
 ## Connections
-- [[dot-effective_rootless()]] - `rationale_for` [EXTRACTED]
+- [[.effective_rootless()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Community_225

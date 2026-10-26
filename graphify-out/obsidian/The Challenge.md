@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "triage-cve-mitigations.py"
+community: "Community 157"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - community/Community_157
 ---
 
 # The Challenge
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Development Workflow Read-Only Filesystem Strategy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/document #graphify/EXTRACTED #community/Community_157

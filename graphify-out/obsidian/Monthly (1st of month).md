@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/GSD_CADENCE.md"
 type: "document"
-community: "Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (2)"
+community: "Community 471"
 location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_2
+  - community/Community_471
 ---
 
 # Monthly (1st of month)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Rule 3 — Weekly Kaizen + Monthly Chaos Drill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_2
+#graphify/document #graphify/EXTRACTED #community/Community_471

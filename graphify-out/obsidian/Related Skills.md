@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec/README.md"
+source_file: ".agents/agents/i-mcpm-auth-reset.md"
 type: "document"
-community: "Skill: OpenClaw Dev Workflow (ODEV) (2)"
-location: "L14"
+community: "Community 211"
+location: "L224"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_OpenClaw_Dev_Workflow_ODEV_2
+  - community/Community_211
 ---
 
 # Related Skills
 
 ## Connections
-- [[Security Review (SEC)]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_OpenClaw_Dev_Workflow_ODEV_2
+#graphify/document #graphify/EXTRACTED #community/Community_211

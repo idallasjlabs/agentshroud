@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "PathIsolationManager"
+community: "Community 72"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/Community_72
 ---
 
 # test_all_modules_enforce.py
@@ -15,19 +15,19 @@ tags:
 - [[BrowserSecurityGuard]] - `imports` [EXTRACTED]
 - [[ContextGuard]] - `imports` [EXTRACTED]
 - [[DNSFilterConfig]] - `imports` [EXTRACTED]
-- [[EgressFilter]] - `imports` [EXTRACTED]
+- [[EgressFilter_1]] - `imports` [EXTRACTED]
 - [[EgressMonitorConfig]] - `imports` [EXTRACTED]
 - [[FileSandbox]] - `imports` [EXTRACTED]
 - [[FileSandboxConfig]] - `imports` [EXTRACTED]
-- [[GatewayConfig_3]] - `imports` [EXTRACTED]
+- [[GatewayConfig_1]] - `imports` [EXTRACTED]
 - [[GitGuard]] - `imports` [EXTRACTED]
-- [[KillSwitchConfig_1]] - `imports` [EXTRACTED]
+- [[KillSwitchConfig]] - `imports` [EXTRACTED]
 - [[MultiTurnTracker]] - `imports` [EXTRACTED]
 - [[OutputCanary]] - `imports` [EXTRACTED]
 - [[PathIsolationConfig]] - `imports` [EXTRACTED]
 - [[PathIsolationManager]] - `imports` [EXTRACTED]
-- [[PromptGuard_1]] - `imports` [EXTRACTED]
-- [[SecurityConfig_4]] - `imports` [EXTRACTED]
+- [[PromptGuard]] - `imports` [EXTRACTED]
+- [[SecurityConfig_3]] - `imports` [EXTRACTED]
 - [[SecurityModuleConfig]] - `imports` [EXTRACTED]
 - [[SubagentMonitorConfig]] - `imports` [EXTRACTED]
 - [[TestGetModuleModeEnforceDefault]] - `contains` [EXTRACTED]
@@ -37,4 +37,4 @@ tags:
 - [[ToolChainAnalyzer]] - `imports` [EXTRACTED]
 - [[get_module_mode()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/Community_72

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
+source_file: ".cursor/agents/athena.md"
 type: "document"
-community: "FR3: System Integrity"
-location: "L80"
+community: "Community 1652"
+location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/FR3_System_Integrity
+  - community/Community_1652
 ---
 
 # cheatsheet.md
 
 ## Connections
-- [[description of what this does_1]] - `contains` [EXTRACTED]
+- [[description of what this does_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FR3_System_Integrity
+#graphify/document #graphify/EXTRACTED #community/Community_1652

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "ResourceGuard"
+community: "Community 19"
 location: "L885"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/Community_19
 ---
 
 # test_revoke_collaborator_ok_reflects_actual_result()
@@ -15,4 +15,4 @@ tags:
 - [[Bug 1 fix 'ok' must reflect whether the removal actually took effect,     not b]] - `rationale_for` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/Community_19

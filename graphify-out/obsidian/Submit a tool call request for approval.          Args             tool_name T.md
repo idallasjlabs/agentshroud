@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "rationale"
-community: "ContextSegment"
+community: "Community 30"
 location: "L148"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/Community_30
 ---
 
 # Submit a tool call request for approval.          Args:             tool_name: T
 
 ## Connections
-- [[dot-submit_tool_request()_2]] - `rationale_for` [EXTRACTED]
+- [[.submit_tool_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextSegment
+#graphify/rationale #graphify/EXTRACTED #community/Community_30

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/SECURITY_ARCHITECTURE.md"
+source_file: "docker/bots/openclaw/config/workspace/PUBLIC-INFO.md"
 type: "document"
-community: "MiddlewareManager (5)"
-location: "L508"
+community: "Community 957"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/Community_957
 ---
 
 # Project Goals
 
 ## Connections
-- [[For Open-Source Contributors]] - `contains` [EXTRACTED]
+- [[AgentShroud — Collaborator Knowledge Base]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/document #graphify/EXTRACTED #community/Community_957

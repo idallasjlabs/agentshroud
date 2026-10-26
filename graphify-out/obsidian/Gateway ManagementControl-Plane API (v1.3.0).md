@@ -1,11 +1,11 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Pre-Deployment Checklist"
+community: "Community 637"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist
+  - community/Community_637
 ---
 
 # Gateway Management/Control-Plane API (v1.3.0)
@@ -17,6 +17,5 @@ tags:
 - [[OpenClaw Integration Guide (v0.9.0)]] - `conceptually_related_to` [AMBIGUOUS]
 - [[gatewaysocrouter.py (SOC Shared Command Layer)]] - `implements` [EXTRACTED]
 - [[gatewaywebapi.py (Web control center)]] - `implements` [EXTRACTED]
-- [[ingest_apimain.py]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist
+#graphify/document #graphify/EXTRACTED #community/Community_637

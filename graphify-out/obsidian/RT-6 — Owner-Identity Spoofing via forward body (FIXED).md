@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/ws-e-audit-v1.2.md"
 type: "rationale"
-community: "ApprovalHardening"
+community: "Community 734"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/Community_734
 ---
 
 # RT-6 — Owner-Identity Spoofing via /forward body (FIXED)
@@ -14,4 +14,4 @@ tags:
 - [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `references` [EXTRACTED]
 - [[forward.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/rationale #graphify/EXTRACTED #community/Community_734

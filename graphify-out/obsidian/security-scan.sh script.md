@@ -1,22 +1,22 @@
 ---
-source_file: "scripts/security-scan.sh"
+source_file: "docker/scripts/security-scan.sh"
 type: "code"
-community: "browser/browse.js"
+community: "Community 1990"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser/browsejs
+  - community/Community_1990
 ---
 
 # security-scan.sh script
 
 ## Connections
-- [[error()]] - `calls` [EXTRACTED]
-- [[info()_1]] - `calls` [EXTRACTED]
-- [[require_tool()]] - `calls` [EXTRACTED]
-- [[scriptssecurity-scan.sh]] - `contains` [EXTRACTED]
-- [[success()]] - `calls` [EXTRACTED]
-- [[warn()]] - `calls` [EXTRACTED]
+- [[log()_4]] - `calls` [EXTRACTED]
+- [[run_clamav()]] - `calls` [EXTRACTED]
+- [[run_oscap()]] - `calls` [EXTRACTED]
+- [[run_sbom()]] - `calls` [EXTRACTED]
+- [[run_trivy()]] - `calls` [EXTRACTED]
+- [[security-scan.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser/browsejs
+#graphify/code #graphify/EXTRACTED #community/Community_1990

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/seccomp-profiles.md"
+source_file: "docker/config/openclaw/skills/i-eightd/README.md"
 type: "document"
-community: "Seccomp Profiles"
-location: "L18"
+community: "Community 1231"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Seccomp_Profiles
+  - community/Community_1231
 ---
 
 # Purpose
 
 ## Connections
-- [[Seccomp Profiles]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles
+#graphify/document #graphify/EXTRACTED #community/Community_1231

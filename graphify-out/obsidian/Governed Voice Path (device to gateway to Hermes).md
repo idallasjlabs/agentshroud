@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "concept"
-community: "format_upstream_cve_alert()"
+community: "Community 555"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/format_upstream_cve_alert
+  - community/Community_555
 ---
 
 # Governed Voice Path (device to gateway to Hermes)
@@ -16,4 +16,4 @@ tags:
 - [[Spoken High-Risk Command Approval Pause]] - `references` [EXTRACTED]
 - [[Voice Gateway Service (STTTTS on marvin)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/format_upstream_cve_alert
+#graphify/concept #graphify/EXTRACTED #community/Community_555

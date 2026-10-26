@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-supply-chain.md"
 type: "document"
-community: "dashboard_endpoints.py"
+community: "Community 570"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy
+  - community/Community_570
 ---
 
 # Detailed Profiles
@@ -26,4 +26,4 @@ tags:
 - [[cryptography (Python) — Encryption Library]] - `contains` [EXTRACTED]
 - [[spaCy + Presidio — PII Detection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard_endpointspy
+#graphify/document #graphify/EXTRACTED #community/Community_570

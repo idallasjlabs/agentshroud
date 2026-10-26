@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "test_soc_egress_endpoints.py"
+community: "Community 187"
 location: "L283"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_egress_endpointspy
+  - community/Community_187
 ---
 
 # TestPersonaHijack
 
 ## Connections
-- [[dot-test_persona_hijack_detection_rate()]] - `method` [EXTRACTED]
-- [[HeuristicClassifier_1]] - `uses` [INFERRED]
+- [[.test_persona_hijack_detection_rate()]] - `method` [EXTRACTED]
+- [[HeuristicClassifier]] - `uses` [INFERRED]
 - [[Persona hijack  DAN-style payloads.]] - `rationale_for` [EXTRACTED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy
+#graphify/code #graphify/EXTRACTED #community/Community_187

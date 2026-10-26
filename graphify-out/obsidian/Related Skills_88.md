@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ti/README.md"
+source_file: "docker/config/hermes/skills/i-sec-offense/README.md"
 type: "document"
-community: "AgentShroud System Architecture Document (SAD)"
+community: "Community 2073"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_System_Architecture_Document_SAD
+  - community/Community_2073
 ---
 
 # Related Skills
 
 ## Connections
-- [[Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
-- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
+- [[Red Team Adversarial Tester (SEC-OFFENSE)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD
+#graphify/document #graphify/EXTRACTED #community/Community_2073

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md"
+source_file: "docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md"
 type: "document"
-community: "Key Skills in Detail"
-location: "L41"
+community: "Community 578"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Key_Skills_in_Detail
+  - community/Community_578
 ---
 
 # Set In
 
 ## Connections
-- [[GATEWAY_OP_PROXY_URL_1]] - `contains` [EXTRACTED]
+- [[ANTHROPIC_BASE_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Key_Skills_in_Detail
+#graphify/document #graphify/EXTRACTED #community/Community_578

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "document"
-community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md"
+community: "Community 472"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+  - community/Community_472
 ---
 
 # This is NOT a Personal Tool
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Critical Context (What I Missed)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+#graphify/document #graphify/EXTRACTED #community/Community_472

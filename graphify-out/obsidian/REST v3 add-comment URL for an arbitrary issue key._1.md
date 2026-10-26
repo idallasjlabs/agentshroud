@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
+source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "rationale"
-community: "test_scanner_integration.py"
+community: "Community 181"
 location: "L116"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/Community_181
 ---
 
 # REST v3 add-comment URL for an arbitrary issue key.
 
 ## Connections
-- [[build_comment_url()_1]] - `rationale_for` [EXTRACTED]
+- [[build_comment_url()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_181

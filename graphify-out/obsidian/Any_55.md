@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "AgentTarget"
-location: "L93"
+community: "Community 6"
+location: "L187"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/AgentTarget
+  - graphify/INFERRED
+  - community/Community_6
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_stats()_15]] - `references` [EXTRACTED]
+- [[.check_permission()]] - `references` [EXTRACTED]
+- [[.get_user_permissions_summary()]] - `references` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/INFERRED #community/Community_6

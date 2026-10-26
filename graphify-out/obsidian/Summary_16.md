@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/security-inventory.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "SecurityPipeline (4)"
-location: "L215"
+community: "Community 1934"
+location: "L838"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecurityPipeline_4
+  - community/Community_1934
 ---
 
 # Summary
 
 ## Connections
-- [[🛡️ AgentShroud Security Inventory (v0.8.0)]] - `contains` [EXTRACTED]
+- [[Unreleased — featv0.8.0-enforcement-hardening (session 3 — 2026-03-15)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecurityPipeline_4
+#graphify/document #graphify/EXTRACTED #community/Community_1934

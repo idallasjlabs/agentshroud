@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/playwright.md"
+source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
 type: "document"
-community: "OpenClaw cron: AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)"
-location: "L32"
+community: "Community 1174"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh
+  - community/Community_1174
 ---
 
 # Security Controls
 
 ## Connections
-- [[Playwright_1]] - `contains` [EXTRACTED]
+- [[browser-fetch.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh
+#graphify/document #graphify/EXTRACTED #community/Community_1174

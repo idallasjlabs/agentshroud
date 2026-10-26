@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "rationale"
-community: "TestToolChainAnalyzer"
+community: "Community 65"
 location: "L113"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/Community_65
 ---
 
 # Canonical workspace id for a group chat_id: ``group-{chat_id}``.
 
 ## Connections
-- [[dot-group_workspace_id()]] - `rationale_for` [EXTRACTED]
+- [[.group_workspace_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/rationale #graphify/EXTRACTED #community/Community_65

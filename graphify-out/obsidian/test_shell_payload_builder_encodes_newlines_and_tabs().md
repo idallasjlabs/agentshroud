@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "code"
-community: "AgentShroud v0.9.0"
+community: "Community 167"
 location: "L246"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_v090
+  - community/Community_167
 ---
 
 # test_shell_payload_builder_encodes_newlines_and_tabs()
@@ -16,4 +16,4 @@ tags:
 - [[_build_payload_via_shell()]] - `calls` [EXTRACTED]
 - [[test_bots_ssh_exec_wrapper.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_v090
+#graphify/code #graphify/EXTRACTED #community/Community_167

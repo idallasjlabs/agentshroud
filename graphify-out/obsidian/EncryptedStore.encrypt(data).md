@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "alert_dispatcher.py"
+community: "Community 538"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/alert_dispatcherpy
+  - community/Community_538
 ---
 
 # EncryptedStore.encrypt(data)
 
 ## Connections
-- [[Function Details_6]] - `contains` [EXTRACTED]
+- [[Function Details_37]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy
+#graphify/document #graphify/EXTRACTED #community/Community_538

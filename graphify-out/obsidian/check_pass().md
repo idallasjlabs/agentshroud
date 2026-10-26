@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/health-check.sh"
 type: "code"
-community: "AgentShroud™ Brand Guidelines (2)"
+community: "Community 1348"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines_2
+  - community/Community_1348
 ---
 
 # check_pass()
@@ -15,4 +15,4 @@ tags:
 - [[health-check.sh]] - `defines` [EXTRACTED]
 - [[health-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines_2
+#graphify/code #graphify/EXTRACTED #community/Community_1348

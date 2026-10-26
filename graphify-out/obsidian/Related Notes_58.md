@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "Workflow: Survey → Draft → Inject → Confirm"
-location: "L141"
+community: "Community 389"
+location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workflow_Survey__Draft__Inject__Confirm
+  - community/Community_389
 ---
 
 # Related Notes
 
 ## Connections
-- [[Kill Switch Procedure_1]] - `contains` [EXTRACTED]
+- [[Error Index_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm
+#graphify/document #graphify/EXTRACTED #community/Community_389

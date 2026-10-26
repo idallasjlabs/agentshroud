@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/test_playback_state.c"
 type: "code"
-community: "AgentShroud Device Pairing Management"
+community: "Community 228"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Device_Pairing_Management
+  - community/Community_228
 ---
 
 # test_playback_state.c (host-native unit tests, SCRUM-59)
@@ -16,4 +16,4 @@ tags:
 - [[playback_logic.h (pure END-gateresume math, extracted for host testing)]] - `references` [EXTRACTED]
 - [[stubsaudio.h (host-test stub replacing audio.h constants)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management
+#graphify/code #graphify/EXTRACTED #community/Community_228

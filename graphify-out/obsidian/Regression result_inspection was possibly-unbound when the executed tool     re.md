@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "rationale"
-community: "MCPToolCall"
+community: "Community 64"
 location: "L807"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/Community_64
 ---
 
 # Regression: result_inspection was possibly-unbound when the executed tool     re
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestExecuteResultInspectionBinding]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPToolCall
+#graphify/rationale #graphify/EXTRACTED #community/Community_64

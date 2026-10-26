@@ -1,17 +1,17 @@
 ---
 source_file: "docs/architecture/adr/ADR-003-two-network-container-isolation.md"
 type: "document"
-community: "Route map (by router)"
+community: "Community 857"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Route_map_by_router
+  - community/Community_857
 ---
 
 # Network Configuration
 
 ## Connections
-- [[Decision_8]] - `contains` [EXTRACTED]
+- [[Decision_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Route_map_by_router
+#graphify/document #graphify/EXTRACTED #community/Community_857

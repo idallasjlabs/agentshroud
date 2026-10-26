@@ -1,17 +1,17 @@
 ---
-source_file: "docs/compliance/iec-62443-matrix.md"
+source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "IEC 62443 Compliance Matrix — AgentShroud"
-location: "L5"
+community: "Community 346"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/IEC_62443_Compliance_Matrix__AgentShroud
+  - community/Community_346
 ---
 
 # Overview
 
 ## Connections
-- [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
+- [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Community_346

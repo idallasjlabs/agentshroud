@@ -1,17 +1,17 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "TestOutboundInfoFilter (17)"
+community: "Community 1266"
 location: "L239"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_17
+  - community/Community_1266
 ---
 
 # Problem: Browser binaries not found
 
 ## Connections
-- [[Troubleshooting_5]] - `contains` [EXTRACTED]
+- [[Troubleshooting_40]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_17
+#graphify/document #graphify/EXTRACTED #community/Community_1266

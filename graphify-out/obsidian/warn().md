@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/security-scan.sh"
+source_file: "docker/scripts/container-net-diag.sh"
 type: "code"
-community: "browser/browse.js"
-location: "L51"
+community: "Community 932"
+location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser/browsejs
+  - community/Community_932
 ---
 
 # warn()
 
 ## Connections
-- [[scriptssecurity-scan.sh]] - `defines` [EXTRACTED]
-- [[security-scan.sh script]] - `calls` [EXTRACTED]
+- [[container-net-diag.sh]] - `defines` [EXTRACTED]
+- [[container-net-diag.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser/browsejs
+#graphify/code #graphify/EXTRACTED #community/Community_932

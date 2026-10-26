@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "MiddlewareManager (4)"
-location: "L10"
+community: "Community 420"
+location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/Community_420
 ---
 
 # Summary
 
 ## Connections
-- [[Architecture Overview_3]] - `contains` [EXTRACTED]
+- [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
+- [[Key Components Referenced (v1.0.0)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/document #graphify/EXTRACTED #community/Community_420

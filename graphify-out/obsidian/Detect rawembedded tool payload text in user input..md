@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "test_collaborator_tracker.py"
+community: "Community 14"
 location: "L2685"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/Community_14
 ---
 
 # Detect raw/embedded tool payload text in user input.
 
 ## Connections
-- [[dot-_looks_like_tool_payload_text()]] - `rationale_for` [EXTRACTED]
+- [[._looks_like_tool_payload_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

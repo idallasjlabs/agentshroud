@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/feature-priorities.md"
 type: "document"
-community: "check-status.sh"
+community: "Community 1515"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/check-statussh
+  - community/Community_1515
 ---
 
 # feature-priorities.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[feature-priorities_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/check-statussh
+#graphify/document #graphify/EXTRACTED #community/Community_1515

@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
 type: "document"
-community: "ADR-002: Default-Allow Security Philosophy"
-location: "L19"
+community: "Community 392"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-002_Default-Allow_Security_Philosophy
+  - community/Community_392
 ---
 
 # Responsibilities
 
 ## Connections
-- [[proxy_status.py_2]] - `contains` [EXTRACTED]
+- [[TrustManager_5]] - `contains` [EXTRACTED]
+- [[trust_manager.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-002_Default-Allow_Security_Philosophy
+#graphify/document #graphify/EXTRACTED #community/Community_392

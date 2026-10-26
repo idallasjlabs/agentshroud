@@ -1,17 +1,18 @@
 ---
 source_file: "docs/planning/v1.0/POST_FABLE5_TASK_DELEGATION.md"
 type: "document"
-community: "ADR-004: API Keys Never in Agent Container"
+community: "Community 386"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-004_API_Keys_Never_in_Agent_Container
+  - community/Community_386
 ---
 
 # Task list
 
 ## Connections
 - [[POST_FABLE5_TASK_DELEGATION]] - `contains` [EXTRACTED]
+- [[Post-fable-5 Task Delegation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-004_API_Keys_Never_in_Agent_Container
+#graphify/document #graphify/EXTRACTED #community/Community_386

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
+source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
 type: "document"
-community: "client_from_env"
-location: "L63"
+community: "Community 1174"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/client_from_env
+  - community/Community_1174
 ---
 
 # Related Notes
 
 ## Connections
-- [[Presidio Analyzer]] - `contains` [EXTRACTED]
+- [[browser-fetch.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/client_from_env
+#graphify/document #graphify/EXTRACTED #community/Community_1174

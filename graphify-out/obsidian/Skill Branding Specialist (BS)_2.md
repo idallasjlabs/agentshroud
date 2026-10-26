@@ -1,24 +1,23 @@
 ---
-source_file: "docker/config/openclaw/skills/i-bs/SKILL.md"
+source_file: ".cursor/agents/i-bs.md"
 type: "document"
-community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements (2)"
-location: "L5"
+community: "Community 1020"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Required__45_for_text__30_for_UI_elements_2
+  - community/Community_1020
 ---
 
 # Skill: Branding Specialist (BS)
 
 ## Connections
-- [[Anti-Patterns to Flag_17]] - `contains` [EXTRACTED]
+- [[Anti-Patterns to Flag_16]] - `contains` [EXTRACTED]
 - [[Brand System Components_2]] - `contains` [EXTRACTED]
 - [[Core Discipline Audit → Define → Apply → Enforce_2]] - `contains` [EXTRACTED]
 - [[Patterns by Output Type_2]] - `contains` [EXTRACTED]
-- [[Role_52]] - `contains` [EXTRACTED]
-- [[Rules_18]] - `contains` [EXTRACTED]
-- [[openclawskillsi-bsSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[Role_82]] - `contains` [EXTRACTED]
+- [[Rules_16]] - `contains` [EXTRACTED]
+- [[i-bs_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements_2
+#graphify/document #graphify/EXTRACTED #community/Community_1020

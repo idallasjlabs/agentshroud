@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services.py"
 type: "rationale"
-community: "ServiceManager"
+community: "Community 80"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/Community_80
 ---
 
 # Verify ServiceManager can be imported without a running container engine.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestServiceManagerImport]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ServiceManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_80

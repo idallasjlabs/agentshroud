@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/testing/sec-scan.sh"
 type: "code"
-community: "sec-scan.sh"
+community: "Community 2311"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sec-scansh
+  - community/Community_2311
 ---
 
 # sec-scan.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sec-scan.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sec-scansh
+#graphify/code #graphify/EXTRACTED #community/Community_2311

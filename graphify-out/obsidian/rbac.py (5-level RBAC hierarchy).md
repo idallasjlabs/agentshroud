@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "ApprovalHardening"
+community: "Community 734"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/Community_734
 ---
 
 # rbac.py (5-level RBAC hierarchy)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/code #graphify/EXTRACTED #community/Community_734

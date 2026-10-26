@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "_pcm_bytes"
+community: "Community 27"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/Community_27
 ---
 
 # test_proxy_created_with_custom_web_proxy()
 
 ## Connections
-- [[HTTPConnectProxy_1]] - `calls` [EXTRACTED]
-- [[WebProxy]] - `calls` [EXTRACTED]
+- [[HTTPConnectProxy]] - `calls` [EXTRACTED]
+- [[WebProxy_1]] - `calls` [EXTRACTED]
 - [[WebProxyConfig]] - `calls` [EXTRACTED]
 - [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/code #graphify/EXTRACTED #community/Community_27

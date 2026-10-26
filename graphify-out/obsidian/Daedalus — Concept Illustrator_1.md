@@ -1,21 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-daedalus/README.md"
+source_file: ".agents/skills/daedalus/README.md"
 type: "document"
-community: "soc.js (2)"
+community: "Community 2069"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs_2
+  - community/Community_2069
 ---
 
 # Daedalus — Concept Illustrator
 
 ## Connections
-- [[Purpose_42]] - `contains` [EXTRACTED]
-- [[Related Skills_28]] - `contains` [EXTRACTED]
-- [[Usage_31]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-daedalusREADME]] - `contains` [EXTRACTED]
+- [[Purpose_5]] - `contains` [EXTRACTED]
+- [[README_5]] - `contains` [EXTRACTED]
+- [[Related Skills_8]] - `contains` [EXTRACTED]
+- [[Usage_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs_2
+#graphify/document #graphify/EXTRACTED #community/Community_2069

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_integrity.py"
 type: "code"
-community: "Incident: Conduit/Hermes instability 2026-10-16"
+community: "Community 207"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Incident_Conduit/Hermes_instability_2026-10-16
+  - community/Community_207
 ---
 
 # test_vuln_stale_report_scores_1()
@@ -17,4 +17,4 @@ tags:
 - [[_score_vulnerability_management()]] - `calls` [EXTRACTED]
 - [[test_scorecard_integrity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Incident_Conduit/Hermes_instability_2026-10-16
+#graphify/code #graphify/EXTRACTED #community/Community_207

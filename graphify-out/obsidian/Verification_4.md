@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/IMESSAGE_FIX.md"
+source_file: "docs/planning/redteam/02-human-in-the-loop.md"
 type: "document"
-community: "Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (3)"
-location: "L69"
+community: "Community 607"
+location: "L215"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_3
+  - community/Community_607
 ---
 
 # Verification
 
 ## Connections
-- [[iMessage Integration Fix - Using imsg + imessage-exporter]] - `contains` [EXTRACTED]
+- [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_3
+#graphify/document #graphify/EXTRACTED #community/Community_607

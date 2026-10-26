@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "UserSessionManager (2)"
+community: "Community 271"
 location: "L472"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/Community_271
 ---
 
 # _redact_message_text()
 
 ## Connections
-- [[dot-process_inbound_request()]] - `calls` [EXTRACTED]
-- [[Any_39]] - `references` [EXTRACTED]
+- [[.process_inbound_request()]] - `calls` [EXTRACTED]
+- [[Any_11]] - `references` [EXTRACTED]
 - [[Return a copy of raw_body with the first text Part's content replaced     by the]] - `rationale_for` [EXTRACTED]
 - [[a2a_proxy.py]] - `contains` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `imports` [EXTRACTED]
 - [[test_redact_message_text_clears_all_text_parts_not_just_the_first()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/code #graphify/EXTRACTED #community/Community_271

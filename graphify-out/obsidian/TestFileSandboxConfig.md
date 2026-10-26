@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "FileSandbox"
+community: "Community 31"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/Community_31
 ---
 
 # TestFileSandboxConfig
 
 ## Connections
-- [[dot-test_default_blocks_sensitive_paths()]] - `method` [EXTRACTED]
-- [[dot-test_default_has_reasonable_allowed_paths()]] - `method` [EXTRACTED]
-- [[dot-test_default_mode_is_enforce()_4]] - `method` [EXTRACTED]
+- [[.test_default_blocks_sensitive_paths()]] - `method` [EXTRACTED]
+- [[.test_default_has_reasonable_allowed_paths()]] - `method` [EXTRACTED]
+- [[.test_default_mode_is_enforce()_2]] - `method` [EXTRACTED]
 - [[FileSandbox]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]
 - [[PIIScanner]] - `uses` [INFERRED]
 - [[test_file_sandbox.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/Community_31

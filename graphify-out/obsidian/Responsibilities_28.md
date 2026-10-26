@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/engine.py.md"
 type: "document"
-community: "MCPPermissionManager (3)"
+community: "Community 931"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_3
+  - community/Community_931
 ---
 
 # Responsibilities
 
 ## Connections
-- [[mcp_proxy.py_2]] - `contains` [EXTRACTED]
+- [[engine.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCPPermissionManager_3
+#graphify/document #graphify/EXTRACTED #community/Community_931

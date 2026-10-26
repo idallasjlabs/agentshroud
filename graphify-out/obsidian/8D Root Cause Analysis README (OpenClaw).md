@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-eightd/README.md"
 type: "document"
-community: "patch-anthropic-sdk.sh"
+community: "Community 1324"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/patch-anthropic-sdksh
+  - community/Community_1324
 ---
 
 # 8D Root Cause Analysis README (OpenClaw)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[8D Root Cause Analysis SKILL (OpenClaw)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/patch-anthropic-sdksh
+#graphify/document #graphify/EXTRACTED #community/Community_1324

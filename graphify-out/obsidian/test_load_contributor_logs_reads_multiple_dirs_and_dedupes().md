@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "CompetitiveIntelReport"
+community: "Community 62"
 location: "L272"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - community/Community_62
 ---
 
 # test_load_contributor_logs_reads_multiple_dirs_and_dedupes()
@@ -15,4 +15,4 @@ tags:
 - [[_load_contributor_logs()]] - `calls` [EXTRACTED]
 - [[test_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/code #graphify/EXTRACTED #community/Community_62

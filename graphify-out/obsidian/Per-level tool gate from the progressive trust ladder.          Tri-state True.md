@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "soc/router.py"
+community: "Community 11"
 location: "L290"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/Community_11
 ---
 
 # Per-level tool gate from the progressive trust ladder.          Tri-state: True/
 
 ## Connections
-- [[dot-is_tool_allowed()_1]] - `rationale_for` [EXTRACTED]
+- [[.is_tool_allowed()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_11

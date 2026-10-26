@@ -1,18 +1,17 @@
 ---
 source_file: "scripts/check_benchmark_regression.py"
 type: "code"
-community: "DataExfilVolumeGuard"
+community: "Community 186"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataExfilVolumeGuard
+  - community/Community_186
 ---
 
 # check_benchmark_regression.py
 
 ## Connections
-- [[CI benchmark regression job]] - `references` [EXTRACTED]
-- [[main()_9]] - `contains` [EXTRACTED]
+- [[main()_16]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard
+#graphify/code #graphify/EXTRACTED #community/Community_186

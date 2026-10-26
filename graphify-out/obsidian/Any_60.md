@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/tests/test_resource_guard_wiring.py"
+source_file: "gateway/security/session_security.py"
 type: "code"
-community: "._make_proxy()"
-location: "L62"
+community: "Community 76"
+location: "L127"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/_make_proxy
+  - graphify/EXTRACTED
+  - community/Community_76
 ---
 
 # Any
 
 ## Connections
-- [[dot-_build_bridge()]] - `references` [EXTRACTED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[ResourceLimits]] - `uses` [INFERRED]
+- [[.validate_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_76

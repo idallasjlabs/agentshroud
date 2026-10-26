@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05.md"
 type: "document"
-community: "🟢 INFO (nice to have) (2)"
+community: "Community 840"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_INFO_nice_to_have_2
+  - community/Community_840
 ---
 
 # E1: YAML indentation error in `docker-compose.pi.yml`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🔴 ERRORS (must fix)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_INFO_nice_to_have_2
+#graphify/document #graphify/EXTRACTED #community/Community_840

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_latency_guard.py"
 type: "rationale"
-community: "ProgressiveLockdown"
+community: "Community 77"
 location: "L164"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/Community_77
 ---
 
 # _call_agent_stream emits a latency record on the success path.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_call_agent_records_latency_on_success()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/rationale #graphify/EXTRACTED #community/Community_77

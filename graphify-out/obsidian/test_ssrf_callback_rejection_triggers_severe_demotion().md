@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "code"
-community: "UserSessionManager"
+community: "Community 148"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/Community_148
 ---
 
 # test_ssrf_callback_rejection_triggers_severe_demotion()
 
 ## Connections
-- [[A2APolicyEngine_2]] - `calls` [EXTRACTED]
-- [[A2AProxy_1]] - `calls` [EXTRACTED]
-- [[TrustManager_3]] - `references` [EXTRACTED]
+- [[A2APolicyEngine_1]] - `calls` [EXTRACTED]
+- [[A2AProxy]] - `calls` [EXTRACTED]
+- [[TrustManager_2]] - `references` [EXTRACTED]
 - [[_StubForwarder_1]] - `calls` [EXTRACTED]
 - [[_jsonrpc()_2]] - `calls` [EXTRACTED]
 - [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/Community_148

@@ -1,19 +1,19 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm/SKILL.md"
+source_file: ".agents/agents/i-mcpm.md"
 type: "document"
-community: "First Time Setup"
-location: "L125"
+community: "Community 1929"
+location: "L128"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_Time_Setup
+  - community/Community_1929
 ---
 
 # MCP Troubleshooting
 
 ## Connections
-- [[Authentication Issues_1]] - `contains` [EXTRACTED]
-- [[Common Errors_1]] - `contains` [EXTRACTED]
-- [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - `contains` [EXTRACTED]
+- [[Authentication Issues]] - `contains` [EXTRACTED]
+- [[Common Errors]] - `contains` [EXTRACTED]
+- [[Skill MCP Tools Usage (MCP-TOOLS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_Time_Setup
+#graphify/document #graphify/EXTRACTED #community/Community_1929

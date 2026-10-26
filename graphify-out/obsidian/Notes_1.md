@@ -1,17 +1,18 @@
 ---
-source_file: "skills/openclaw/model-usage/references/codexbar-cli.md"
+source_file: "docs/planning/v1.0/POST_FABLE5_TASK_DELEGATION.md"
 type: "document"
-community: "EgressFilterConfig (2) (3)"
-location: "L28"
+community: "Community 386"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2_3
+  - community/Community_386
 ---
 
 # Notes
 
 ## Connections
-- [[CodexBar CLI quick ref (usage + cost)]] - `contains` [EXTRACTED]
+- [[POST_FABLE5_TASK_DELEGATION]] - `contains` [EXTRACTED]
+- [[Post-fable-5 Task Delegation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilterConfig_2_3
+#graphify/document #graphify/EXTRACTED #community/Community_386

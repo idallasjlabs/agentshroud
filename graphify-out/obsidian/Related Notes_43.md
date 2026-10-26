@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
+source_file: "docs/vault/05 - Dependencies/openclaw.md"
 type: "document"
-community: "test_collaborator_tracker.py (2) (3)"
-location: "L197"
+community: "Community 368"
+location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_2_3
+  - community/Community_368
 ---
 
 # Related Notes
 
 ## Connections
-- [[Crash Recovery_2]] - `contains` [EXTRACTED]
+- [[OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_collaborator_trackerpy_2_3
+#graphify/document #graphify/EXTRACTED #community/Community_368

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pm/SKILL.md"
+source_file: ".cursor/agents/i-pm.md"
 type: "document"
-community: "Skill: Project Management (PM) (2)"
-location: "L28"
+community: "Community 1041"
+location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM_2
+  - community/Community_1041
 ---
 
 # `session-notes/CONTINUE.md` (always current)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Continuity Files_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM_2
+#graphify/document #graphify/EXTRACTED #community/Community_1041

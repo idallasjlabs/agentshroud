@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "What Does OpenClaw Actually Need to Write?"
+community: "Community 184"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/What_Does_OpenClaw_Actually_Need_to_Write
+  - community/Community_184
 ---
 
 # audit()
@@ -15,4 +15,4 @@ tags:
 - [[MCPAuditTrail]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write
+#graphify/code #graphify/EXTRACTED #community/Community_184

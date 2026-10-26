@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/weather/SKILL.md"
 type: "document"
-community: "DEVELOPER.md — Development Context for AgentShroud"
+community: "Community 852"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DEVELOPERmd__Development_Context_for_AgentShroud
+  - community/Community_852
 ---
 
 # Weather Skill
@@ -16,8 +16,8 @@ tags:
 - [[Location_1]] - `contains` [EXTRACTED]
 - [[Notes_10]] - `contains` [EXTRACTED]
 - [[Quick Responses]] - `contains` [EXTRACTED]
+- [[SKILL_249]] - `contains` [EXTRACTED]
 - [[When NOT to Use_3]] - `contains` [EXTRACTED]
 - [[When to Use_4]] - `contains` [EXTRACTED]
-- [[weatherSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DEVELOPERmd__Development_Context_for_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Community_852

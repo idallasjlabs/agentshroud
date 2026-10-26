@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
+source_file: ".cursor/agents/graphify.md"
 type: "document"
-community: "What You Must Do When Invoked (2)"
-location: "L460"
+community: "Community 926"
+location: "L263"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked_2
+  - community/Community_926
 ---
 
 # Step 6 - Generate Obsidian vault (opt-in) + HTML
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[What You Must Do When Invoked_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked_2
+#graphify/document #graphify/EXTRACTED #community/Community_926

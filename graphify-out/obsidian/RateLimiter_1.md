@@ -1,34 +1,44 @@
 ---
-source_file: "gateway/ingest_api/auth.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "test_collaborator_tracker.py"
-location: "L30"
+community: "Community 27"
+location: "L95"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - graphify/INFERRED
+  - community/Community_27
 ---
 
 # RateLimiter
 
 ## Connections
-- [[dot-__init__()_56]] - `calls` [EXTRACTED]
-- [[dot-__init__()_55]] - `method` [EXTRACTED]
-- [[dot-check()_6]] - `method` [EXTRACTED]
-- [[Any_83]] - `uses` [INFERRED]
-- [[GatewayConfig_3]] - `uses` [INFERRED]
-- [[Simple token-bucket rate limiter      Limits requests per client IP to prevent r]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
-- [[_OutboundScan]] - `uses` [INFERRED]
-- [[auth.py_1]] - `references` [EXTRACTED]
-- [[ingest_apiauth.py]] - `contains` [EXTRACTED]
-- [[telegram_proxy.py]] - `imports` [EXTRACTED]
-- [[test_auth.py]] - `imports` [EXTRACTED]
-- [[test_rate_limiter()]] - `calls` [EXTRACTED]
-- [[test_rate_limiter_allows_requests()]] - `calls` [EXTRACTED]
-- [[test_rate_limiter_blocks_excess_requests()]] - `calls` [EXTRACTED]
-- [[test_rate_limiter_separate_clients()]] - `calls` [EXTRACTED]
-- [[test_rate_limiter_window_cleanup()]] - `calls` [EXTRACTED]
-- [[test_security.py]] - `imports` [EXTRACTED]
+- [[.__init__()_43]] - `method` [EXTRACTED]
+- [[.__init__()_44]] - `calls` [EXTRACTED]
+- [[.check()_1]] - `method` [EXTRACTED]
+- [[.reset()]] - `method` [EXTRACTED]
+- [[.test_rate_limiter_reset()]] - `calls` [EXTRACTED]
+- [[Simple in-memory per-domain rate limiter using sliding window.]] - `rationale_for` [EXTRACTED]
+- [[TestAllowlistMode]] - `uses` [INFERRED]
+- [[TestAuditChain_1]] - `uses` [INFERRED]
+- [[TestContentTypeFiltering]] - `uses` [INFERRED]
+- [[TestDataExfiltration_1]] - `uses` [INFERRED]
+- [[TestDomainDenylist]] - `uses` [INFERRED]
+- [[TestEncodedPayloads]] - `uses` [INFERRED]
+- [[TestHiddenContent]] - `uses` [INFERRED]
+- [[TestIsDomainAllowed]] - `uses` [INFERRED]
+- [[TestPIIDetection_2]] - `uses` [INFERRED]
+- [[TestPassthroughMode_1]] - `uses` [INFERRED]
+- [[TestPromptInjectionDetection]] - `uses` [INFERRED]
+- [[TestRateLimiting_4]] - `uses` [INFERRED]
+- [[TestResponseSizeLimits]] - `uses` [INFERRED]
+- [[TestSSRFBlocking]] - `uses` [INFERRED]
+- [[TestStats_1]] - `uses` [INFERRED]
+- [[TestWebProxyConfig]] - `uses` [INFERRED]
+- [[TestZeroWidthAttacks]] - `uses` [INFERRED]
+- [[URLAnalyzer]] - `uses` [INFERRED]
+- [[WebContentScanner]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[test_web_proxy.py]] - `imports` [EXTRACTED]
+- [[web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/INFERRED #community/Community_27

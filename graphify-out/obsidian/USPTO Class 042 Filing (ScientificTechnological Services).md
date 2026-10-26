@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "concept"
-community: "SecureBrowser Skill"
+community: "Community 1098"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill
+  - community/Community_1098
 ---
 
 # USPTO Class 042 Filing (Scientific/Technological Services)
@@ -14,4 +14,4 @@ tags:
 - [[First Use in Commerce (Feb 20, 2026)]] - `conceptually_related_to` [INFERRED]
 - [[USPTO-APPLICATION]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/SecureBrowser_Skill
+#graphify/concept #graphify/EXTRACTED #community/Community_1098

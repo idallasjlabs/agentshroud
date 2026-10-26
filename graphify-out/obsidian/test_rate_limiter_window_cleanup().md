@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_auth.py"
 type: "code"
-community: "create_auth_dependency()"
+community: "Community 92"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/Community_92
 ---
 
 # test_rate_limiter_window_cleanup()
 
 ## Connections
-- [[RateLimiter_1]] - `calls` [EXTRACTED]
+- [[RateLimiter]] - `calls` [EXTRACTED]
 - [[Test rate limiter cleans up old requests]] - `rationale_for` [EXTRACTED]
 - [[test_auth.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/Community_92

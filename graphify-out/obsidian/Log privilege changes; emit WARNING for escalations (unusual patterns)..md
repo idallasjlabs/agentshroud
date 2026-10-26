@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "MiddlewareManager (2)"
+community: "Community 6"
 location: "L360"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/Community_6
 ---
 
 # Log privilege changes; emit WARNING for escalations (unusual patterns).
 
 ## Connections
-- [[dot-audit_privilege_change()]] - `rationale_for` [EXTRACTED]
+- [[.audit_privilege_change()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_6

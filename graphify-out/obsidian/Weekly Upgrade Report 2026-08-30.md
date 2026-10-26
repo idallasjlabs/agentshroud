@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-08-30.md"
 type: "document"
-community: "All Dependencies.md"
+community: "Community 289"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/Community_289
 ---
 
 # Weekly Upgrade Report 2026-08-30
@@ -17,4 +17,4 @@ tags:
 - [[Sidecar Gap Finding (declared vs running)]] - `references` [EXTRACTED]
 - [[Upgrade Report Snapshot 20260830-2009]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/document #graphify/EXTRACTED #community/Community_289

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "code"
-community: "Hermes Cron Jobs Reference & Recreation Guide"
+community: "Community 199"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+  - community/Community_199
 ---
 
 # OpenClaw cron: AgentShroud Weekly Summary
@@ -14,7 +14,6 @@ tags:
 - [[Hermes Cron Jobs Reference & Recreation Guide]] - `references` [EXTRACTED]
 - [[OpenClaw Cron Jobs Reference & Recreation Guide]] - `references` [EXTRACTED]
 - [[SHIPPED  FRICTION  IMPROVE Retrospective Format]] - `semantically_similar_to` [INFERRED]
-- [[Seed Job AgentShroud Weekly Summary]] - `conceptually_related_to` [INFERRED]
 - [[Telegram Formatting Rule (bold only, no headers or tables)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+#graphify/code #graphify/EXTRACTED #community/Community_199

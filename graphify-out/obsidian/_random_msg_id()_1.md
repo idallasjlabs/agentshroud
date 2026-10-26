@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/proxy/anthropic_openai_sse_translator.py"
+source_file: "gateway/proxy/anthropic_openai_translator.py"
 type: "code"
-community: "mcp_config.py"
-location: "L35"
+community: "Community 360"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mcp_configpy
+  - community/Community_360
 ---
 
 # _random_msg_id()
 
 ## Connections
-- [[anthropic_openai_sse_translator.py]] - `contains` [EXTRACTED]
-- [[translate_openai_sse_to_anthropic()]] - `calls` [EXTRACTED]
+- [[anthropic_openai_translator.py]] - `contains` [EXTRACTED]
+- [[anthropic_to_openai_request()]] - `calls` [EXTRACTED]
+- [[anthropic_to_openai_response()]] - `calls` [EXTRACTED]
+- [[openai_to_anthropic_response()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mcp_configpy
+#graphify/code #graphify/EXTRACTED #community/Community_360

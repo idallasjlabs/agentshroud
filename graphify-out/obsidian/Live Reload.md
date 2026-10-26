@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "test_security_toolchain.py"
+community: "Community 356"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/Community_356
 ---
 
 # Live Reload
 
 ## Connections
-- [[Configuration_8]] - `contains` [EXTRACTED]
+- [[Configuration_27]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/document #graphify/EXTRACTED #community/Community_356

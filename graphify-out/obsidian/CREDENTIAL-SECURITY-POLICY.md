@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: ".github/mcp.json"
+community: "Community 396"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/github/mcpjson
+  - community/Community_396
 ---
 
 # CREDENTIAL-SECURITY-POLICY.md
@@ -19,7 +19,7 @@ tags:
 - [[Option 3 Disable Credential Commands via Telegram]] - `references` [EXTRACTED]
 - [[Option 4 Role-Based Access Control]] - `references` [EXTRACTED]
 - [[SECURITY-POLICY-FINAL]] - `cites` [EXTRACTED]
-- [[ingest_apirouter.py]] - `references` [EXTRACTED]
+- [[router.py]] - `references` [EXTRACTED]
 - [[sanitizer.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/github/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Community_396

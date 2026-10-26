@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
+source_file: "docker/config/openclaw/skills/i-athena/README.md"
 type: "document"
-community: "chat_console.py"
-location: "L61"
+community: "Community 1225"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/chat_consolepy
+  - community/Community_1225
 ---
 
 # Usage
 
 ## Connections
-- [[apply-patches.js_2]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/chat_consolepy
+#graphify/document #graphify/EXTRACTED #community/Community_1225

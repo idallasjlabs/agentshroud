@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
 type: "document"
-community: "DelegationManager"
+community: "Community 73"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/Community_73
 ---
 
 # AGENTSHROUD_CONFIG.md
@@ -15,4 +15,4 @@ tags:
 - [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
 - [[agentshroud.yaml]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DelegationManager
+#graphify/document #graphify/EXTRACTED #community/Community_73

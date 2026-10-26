@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
 type: "document"
-community: "TestOpenAPIContract"
-location: "L27"
+community: "Community 719"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOpenAPIContract
+  - community/Community_719
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[subagent_monitor.py_2]] - `contains` [EXTRACTED]
+- [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOpenAPIContract
+#graphify/document #graphify/EXTRACTED #community/Community_719

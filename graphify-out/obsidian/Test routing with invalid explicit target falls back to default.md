@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "ForwardRequest"
+community: "Community 34"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/Community_34
 ---
 
 # Test routing with invalid explicit target falls back to default
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_resolve_target_invalid_explicit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest
+#graphify/rationale #graphify/EXTRACTED #community/Community_34

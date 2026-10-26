@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
 type: "document"
-community: "chat_console.py"
+community: "Community 826"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/chat_consolepy
+  - community/Community_826
 ---
 
 # Patch 1: Main Agent as Default
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Patches Applied]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/chat_consolepy
+#graphify/document #graphify/EXTRACTED #community/Community_826

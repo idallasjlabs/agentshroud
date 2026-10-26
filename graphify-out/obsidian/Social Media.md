@@ -1,17 +1,17 @@
 ---
-source_file: "branding/guidelines/brand-guidelines.md"
+source_file: "branding/INDEX.md"
 type: "document"
-community: "AgentShroud Agentic OS"
-location: "L127"
+community: "Community 585"
+location: "L99"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Agentic_OS
+  - community/Community_585
 ---
 
 # Social Media
 
 ## Connections
-- [[Brand Applications]] - `contains` [EXTRACTED]
+- [[📊 Asset Summary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Agentic_OS
+#graphify/document #graphify/EXTRACTED #community/Community_585

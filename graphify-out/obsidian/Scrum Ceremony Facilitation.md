@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-scrum/SKILL.md"
 type: "document"
-community: "Gateway-Enforced Intel Verification (SCRUM-75)"
+community: "Community 1439"
 tags:
   - graphify/document
   - graphify/AMBIGUOUS
-  - community/Gateway-Enforced_Intel_Verification_SCRUM-75
+  - community/Community_1439
 ---
 
 # Scrum Ceremony Facilitation
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SDLC Governance]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/document #graphify/AMBIGUOUS #community/Gateway-Enforced_Intel_Verification_SCRUM-75
+#graphify/document #graphify/AMBIGUOUS #community/Community_1439

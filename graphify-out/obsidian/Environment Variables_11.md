@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
 type: "document"
-community: "iOS / macOS Shortcuts — Relay to AgentShroud"
+community: "Community 287"
 location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud
+  - community/Community_287
 ---
 
 # Environment Variables
 
 ## Connections
-- [[dns_filter.py_1]] - `contains` [EXTRACTED]
+- [[EgressFilter_3]] - `contains` [EXTRACTED]
+- [[egress_filter.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Community_287

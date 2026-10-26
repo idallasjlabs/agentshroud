@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
+source_file: ".cursor/agents/sec-offense.md"
 type: "document"
-community: "Phase 1 — Raw Collection"
-location: "L21"
+community: "Community 1077"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_1__Raw_Collection
+  - community/Community_1077
 ---
 
 # Attack Phases
@@ -20,4 +20,4 @@ tags:
 - [[Phase 5 Exploitation Chains_2]] - `contains` [EXTRACTED]
 - [[Phase 6 Detection Validation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection
+#graphify/document #graphify/EXTRACTED #community/Community_1077

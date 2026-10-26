@@ -1,17 +1,17 @@
 ---
-source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
+source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "auth.py (2)"
-location: "L46"
+community: "Community 807"
+location: "L274"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy_2
+  - community/Community_807
 ---
 
 # What NEVER to do
 
 ## Connections
-- [[🏗️ Credential Architecture — How Secrets Are Retrieved]] - `contains` [EXTRACTED]
+- [[Credential Isolation — Gateway op-proxy (ACTIVE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy_2
+#graphify/document #graphify/EXTRACTED #community/Community_807

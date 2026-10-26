@@ -1,32 +1,30 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L113"
+community: "Community 35"
+location: "L33"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - graphify/INFERRED
+  - community/Community_35
 ---
 
 # MCPPolicyConfig
 
 ## Connections
-- [[dot-__init__()_137]] - `references` [EXTRACTED]
-- [[dot-__post_init__()_7]] - `method` [EXTRACTED]
-- [[dot-from_dict()_5]] - `method` [EXTRACTED]
-- [[Declarative MCP security policy.      Loaded from the ``mcp_policy`` section of]] - `rationale_for` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalStore_1]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
+- [[MCPPolicyAction]] - `uses` [INFERRED]
 - [[MCPPolicyConfig]] - `uses` [INFERRED]
+- [[MCPPolicyDecision]] - `uses` [INFERRED]
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
-- [[MonkeyPatch]] - `uses` [INFERRED]
-- [[Path_36]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[TestDefaultMcpPolicyIsFailClosed]] - `uses` [INFERRED]
-- [[TestDefaultPolicyNoMcpServers]] - `uses` [INFERRED]
-- [[_FakeApprovalQueue]] - `uses` [INFERRED]
-- [[mcp_policy.py]] - `contains` [EXTRACTED]
+- [[MCPProxy]] - `uses` [INFERRED]
+- [[MCPToolCall]] - `uses` [INFERRED]
+- [[MCPToolResult]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[ToolRiskConfig_1]] - `uses` [INFERRED]
+- [[_base_config()_1]] - `references` [EXTRACTED]
 - [[test_default_deny_posture_when_no_config()]] - `calls` [EXTRACTED]
-- [[test_mcp_policy.py]] - `imports` [EXTRACTED]
-- [[test_mcp_policy_default_failclosed.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/INFERRED #community/Community_35

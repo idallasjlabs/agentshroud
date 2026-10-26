@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/reviews/enforcement-audit-v0.7.0.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "AgentShroud v0.7.0 Enforcement Audit Results"
-location: "L6"
+community: "Community 773"
+location: "L79"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Enforcement_Audit_Results
+  - community/Community_773
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud v0.7.0 Enforcement Audit Results]] - `contains` [EXTRACTED]
+- [[1.5.3 (2026-08-23)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results
+#graphify/document #graphify/EXTRACTED #community/Community_773

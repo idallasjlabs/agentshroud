@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "rationale"
-community: "TelegramAPIProxy (3)"
+community: "Community 137"
 location: "L335"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_3
+  - community/Community_137
 ---
 
 # Patch httpx.stream; return a list that records the call kwargs.
 
 ## Connections
-- [[dot-_patch_stream()]] - `rationale_for` [EXTRACTED]
+- [[._patch_stream()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_137

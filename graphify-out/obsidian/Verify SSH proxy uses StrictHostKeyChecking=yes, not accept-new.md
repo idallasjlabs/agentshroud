@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "MCPPermissionManager (2)"
+community: "Community 7"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/Community_7
 ---
 
 # Verify SSH proxy uses StrictHostKeyChecking=yes, not accept-new
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSSHStrictHostKeyChecking]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

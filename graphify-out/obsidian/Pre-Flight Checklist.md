@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "TestMCPProxyEndpoint"
+community: "Community 481"
 location: "L239"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMCPProxyEndpoint
+  - community/Community_481
 ---
 
 # Pre-Flight Checklist
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FINAL Network Lockdown Activation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMCPProxyEndpoint
+#graphify/document #graphify/EXTRACTED #community/Community_481

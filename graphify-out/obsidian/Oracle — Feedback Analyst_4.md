@@ -1,17 +1,23 @@
 ---
-source_file: "docs/architecture/agentic-os.md"
-type: "concept"
-community: "Output Sections (ALL required) (3)"
+source_file: ".github/agents/i-oracle.agent.md"
+type: "document"
+community: "Community 1982"
+location: "L11"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Output_Sections_ALL_required_3
+  - community/Community_1982
 ---
 
 # Oracle — Feedback Analyst
 
 ## Connections
-- [[Athena — Knowledge Distiller_4]] - `shares_data_with` [EXTRACTED]
-- [[Mnemosyne — Retention Engineer_4]] - `shares_data_with` [EXTRACTED]
+- [[Input Requirements_37]] - `contains` [EXTRACTED]
+- [[Output Format_50]] - `contains` [EXTRACTED]
+- [[Persona_29]] - `contains` [EXTRACTED]
+- [[Quality Checklist_33]] - `contains` [EXTRACTED]
+- [[Role_132]] - `contains` [EXTRACTED]
+- [[System Prompt_29]] - `contains` [EXTRACTED]
+- [[i-oracle.agent]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Output_Sections_ALL_required_3
+#graphify/document #graphify/EXTRACTED #community/Community_1982

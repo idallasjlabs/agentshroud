@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-production/README.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Technical Writer (TW)"
-location: "L10"
+community: "Community 583"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Writer_TW
+  - community/Community_583
 ---
 
 # Usage
 
 ## Connections
-- [[Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Writer_TW
+#graphify/document #graphify/EXTRACTED #community/Community_583

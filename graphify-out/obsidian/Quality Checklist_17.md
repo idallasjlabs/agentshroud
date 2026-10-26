@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-vulcan/SKILL.md"
+source_file: ".agents/skills/vulcan/SKILL.md"
 type: "document"
-community: "aquasecurity/trivy 403s the Actions token but serves the public feed."
+community: "Community 1974"
 location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/aquasecurity/trivy_403s_the_Actions_token_but_serves_the_public_feed
+  - community/Community_1974
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_3]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/aquasecurity/trivy_403s_the_Actions_token_but_serves_the_public_feed
+#graphify/document #graphify/EXTRACTED #community/Community_1974

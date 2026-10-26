@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cd/SKILL.md"
+source_file: ".agents/agents/i-cd.md"
 type: "document"
-community: "OpenClaw Workspace Usage Guide"
-location: "L5"
+community: "Community 2213"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Workspace_Usage_Guide
+  - community/Community_2213
 ---
 
 # Skill: cd
 
 ## Connections
-- [[hermesskillsi-cdSKILL]] - `contains` [EXTRACTED]
-- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[i-cd]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_2213

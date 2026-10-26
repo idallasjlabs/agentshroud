@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Network Topology.md"
 type: "document"
-community: "MiddlewareManager (2) (2)"
+community: "Community 390"
 location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2_2
+  - community/Community_390
 ---
 
 # Hostname Resolution
 
 ## Connections
-- [[Network Topology_1]] - `contains` [EXTRACTED]
+- [[Network Topology_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_390

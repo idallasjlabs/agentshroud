@@ -1,17 +1,23 @@
 ---
-source_file: "docker/config/hermes/skills/i-atlas/README.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "TestOutboundInfoFilter"
-location: "L10"
+community: "Community 277"
+location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/Community_277
 ---
 
 # Usage
 
 ## Connections
-- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_10]] - `contains` [EXTRACTED]
+- [[Click Element_7]] - `contains` [EXTRACTED]
+- [[Extract Data_7]] - `contains` [EXTRACTED]
+- [[Fetch JavaScript-Heavy Page (Node.js)_7]] - `contains` [EXTRACTED]
+- [[Fill Form_7]] - `contains` [EXTRACTED]
+- [[Navigate to URL_7]] - `contains` [EXTRACTED]
+- [[Take Screenshot_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/Community_277

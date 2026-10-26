@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_responses.py"
 type: "code"
-community: "colima-health-check.sh"
+community: "Community 18"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/Community_18
 ---
 
 # test_collaborator_responses.py
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[GroupConfig]] - `imports` [EXTRACTED]
 - [[ProjectConfig]] - `imports` [EXTRACTED]
-- [[TeamsConfig_1]] - `references` [EXTRACTED]
+- [[TeamsConfig]] - `references` [EXTRACTED]
 - [[TestBuildProjectContextInjection]] - `contains` [EXTRACTED]
 - [[TestConstantMessages]] - `contains` [EXTRACTED]
 - [[TestErrorFormatters]] - `contains` [EXTRACTED]
@@ -36,4 +36,4 @@ tags:
 - [[project()]] - `contains` [EXTRACTED]
 - [[teams()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/Community_18

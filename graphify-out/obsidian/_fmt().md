@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/scripts/daily-checkin.sh"
 type: "code"
-community: "test_security_regressions_v1_2.py (4)"
+community: "Community 1029"
 location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_regressions_v1_2py_4
+  - community/Community_1029
 ---
 
 # _fmt()
@@ -15,4 +15,4 @@ tags:
 - [[daily-checkin.sh]] - `defines` [EXTRACTED]
 - [[daily-checkin.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py_4
+#graphify/code #graphify/EXTRACTED #community/Community_1029

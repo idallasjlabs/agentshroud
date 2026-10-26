@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/engine.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
 type: "document"
-community: "egress_filter.py (5)"
-location: "L59"
+community: "Community 618"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_filterpy_5
+  - community/Community_618
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[engine.py_2]] - `contains` [EXTRACTED]
+- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_filterpy_5
+#graphify/document #graphify/EXTRACTED #community/Community_618

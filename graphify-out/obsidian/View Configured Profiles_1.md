@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "01-architecture.md"
-location: "L31"
+community: "Community 897"
+location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/01-architecturemd
+  - community/Community_897
 ---
 
 # View Configured Profiles
 
 ## Connections
-- [[List Available Profiles_2]] - `contains` [EXTRACTED]
+- [[List Available Profiles_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/01-architecturemd
+#graphify/document #graphify/EXTRACTED #community/Community_897

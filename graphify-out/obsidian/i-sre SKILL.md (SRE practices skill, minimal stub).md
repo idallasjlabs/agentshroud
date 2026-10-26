@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-sre/SKILL.md"
 type: "document"
-community: "app.json"
+community: "Community 1834"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/appjson
+  - community/Community_1834
 ---
 
 # i-sre SKILL.md (SRE practices skill, minimal stub)
 
-#graphify/document #graphify/EXTRACTED #community/appjson
+#graphify/document #graphify/EXTRACTED #community/Community_1834

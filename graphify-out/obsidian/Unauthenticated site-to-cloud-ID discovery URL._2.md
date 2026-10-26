@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
+source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "rationale"
-community: "TestEgressTelegramNotify"
-location: "L131"
+community: "Community 181"
+location: "L130"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEgressTelegramNotify
+  - community/Community_181
 ---
 
 # Unauthenticated site-to-cloud-ID discovery URL.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[build_tenant_info_url()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEgressTelegramNotify
+#graphify/rationale #graphify/EXTRACTED #community/Community_181

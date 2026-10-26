@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "Enum"
+community: "Community 8"
 location: "L186"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enum
+  - community/Community_8
 ---
 
 # Test threshold-based warning system.
 
 ## Connections
-- [[dot-test_threshold_warnings()]] - `rationale_for` [EXTRACTED]
+- [[.test_threshold_warnings()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enum
+#graphify/rationale #graphify/EXTRACTED #community/Community_8

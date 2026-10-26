@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
+source_file: ".agents/agents/socrates.md"
 type: "document"
-community: "run-standalone.sh (Hermes docker run launcher)"
-location: "L20"
+community: "Community 1071"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/run-standalonesh_Hermes_docker_run_launcher
+  - community/Community_1071
 ---
 
 # Speaker Definitions
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[EXPERT]] - `contains` [EXTRACTED]
 - [[HOST]] - `contains` [EXTRACTED]
-- [[Socrates — Dialogue Architect_1]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher
+#graphify/document #graphify/EXTRACTED #community/Community_1071

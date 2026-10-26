@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tdd/README.md"
+source_file: "docker/config/hermes/skills/i-hermes/README.md"
 type: "document"
-community: "MultiHostResult"
+community: "Community 1210"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MultiHostResult
+  - community/Community_1210
 ---
 
 # Usage
 
 ## Connections
-- [[Test-Driven Development README]] - `contains` [EXTRACTED]
+- [[Hermes — Podcast Production Orchestrator_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MultiHostResult
+#graphify/document #graphify/EXTRACTED #community/Community_1210

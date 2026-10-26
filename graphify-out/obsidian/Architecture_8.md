@@ -1,17 +1,17 @@
 ---
-source_file: "docs/integrations/voice-terminal-esp32-s3.md"
+source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "AgentShroud: Enterprise Governance for Autonomous AI Agents"
-location: "L13"
+community: "Community 1003"
+location: "L218"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents
+  - community/Community_1003
 ---
 
 # Architecture
 
 ## Connections
-- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
+- [[7. Pi-hole DNS Security Layer (Built-In)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents
+#graphify/document #graphify/EXTRACTED #community/Community_1003

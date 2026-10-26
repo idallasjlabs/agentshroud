@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cicd/SKILL.md"
+source_file: ".cursor/agents/i-odev.md"
 type: "document"
-community: "Management Dashboard"
-location: "L7"
+community: "Community 844"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Management_Dashboard
+  - community/Community_844
 ---
 
 # Role
 
 ## Connections
-- [[Skill CICD Pipeline Advisor (CICD)_2]] - `contains` [EXTRACTED]
+- [[Skill OpenClaw Dev Workflow (ODEV)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Management_Dashboard
+#graphify/document #graphify/EXTRACTED #community/Community_844

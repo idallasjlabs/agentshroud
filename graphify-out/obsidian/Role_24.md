@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: ".agents/agents/i-pr.md"
 type: "document"
-community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE) (2)"
-location: "L7"
+community: "Community 1950"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_2
+  - community/Community_1950
 ---
 
 # Role
 
 ## Connections
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_2
+#graphify/document #graphify/EXTRACTED #community/Community_1950

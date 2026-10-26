@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "Community 51"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/Community_51
 ---
 
 # test_soc_bots.py
 
 ## Connections
-- [[RBACConfig_3]] - `imports` [EXTRACTED]
-- [[Role_64]] - `imports` [EXTRACTED]
-- [[SCLCaller_1]] - `imports` [EXTRACTED]
+- [[RBACConfig_1]] - `imports` [EXTRACTED]
+- [[Role_1]] - `imports` [EXTRACTED]
+- [[SCLCaller]] - `imports` [EXTRACTED]
 - [[SecurityEvent_1]] - `imports` [EXTRACTED]
-- [[ServiceDescriptor_1]] - `imports` [EXTRACTED]
-- [[ServiceStatus_1]] - `imports` [EXTRACTED]
-- [[Severity_8]] - `imports` [EXTRACTED]
+- [[ServiceDescriptor]] - `imports` [EXTRACTED]
+- [[ServiceStatus]] - `imports` [EXTRACTED]
+- [[Severity_2]] - `imports` [EXTRACTED]
 - [[TestAgentCvesBotId]] - `contains` [EXTRACTED]
 - [[TestBotSelectorFrontend]] - `contains` [EXTRACTED]
 - [[TestCollaboratorActivityBotFilter]] - `contains` [EXTRACTED]
@@ -41,14 +41,14 @@ tags:
 - [[compute_bot_scorecard()]] - `imports` [EXTRACTED]
 - [[get_agent_cves()]] - `imports` [EXTRACTED]
 - [[get_collaborator_activity()]] - `imports` [EXTRACTED]
-- [[get_config()_1]] - `imports` [EXTRACTED]
+- [[get_config()]] - `imports` [EXTRACTED]
 - [[get_egress_history()]] - `imports` [EXTRACTED]
 - [[get_egress_log()]] - `imports` [EXTRACTED]
-- [[get_egress_pending()]] - `imports` [EXTRACTED]
+- [[get_egress_pending()_1]] - `imports` [EXTRACTED]
 - [[get_scanner_results()]] - `imports` [EXTRACTED]
 - [[get_security_events()]] - `imports` [EXTRACTED]
 - [[get_security_scorecard()]] - `imports` [EXTRACTED]
 - [[list_bots()]] - `imports` [EXTRACTED]
 - [[list_services()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/Community_51

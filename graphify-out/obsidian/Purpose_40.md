@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-aws/README.md"
+source_file: "docker/config/hermes/skills/i-aws/README.md"
 type: "document"
-community: "SECTION 9: IMPORTANT NOTES"
+community: "Community 90"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SECTION_9_IMPORTANT_NOTES
+  - community/Community_90
 ---
 
 # Purpose
 
 ## Connections
-- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SECTION_9_IMPORTANT_NOTES
+#graphify/document #graphify/EXTRACTED #community/Community_90

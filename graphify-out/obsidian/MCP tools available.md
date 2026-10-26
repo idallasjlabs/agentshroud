@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary) (2)"
-location: "L530"
+community: "Community 2187"
+location: "L551"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary_2
+  - community/Community_2187
 ---
 
 # MCP tools available
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[10) CLAUDE CODE OPERATIONAL RULES]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary_2
+#graphify/document #graphify/EXTRACTED #community/Community_2187

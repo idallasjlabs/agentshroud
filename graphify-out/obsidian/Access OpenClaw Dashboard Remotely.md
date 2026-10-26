@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/TAILSCALE_COMMANDS.md"
 type: "document"
-community: "test_security_regressions_v1_2.py"
+community: "Community 816"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_security_regressions_v1_2py
+  - community/Community_816
 ---
 
 # Access OpenClaw Dashboard Remotely
@@ -17,4 +17,4 @@ tags:
 - [[Option 3 Both Services]] - `contains` [EXTRACTED]
 - [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_security_regressions_v1_2py
+#graphify/document #graphify/EXTRACTED #community/Community_816

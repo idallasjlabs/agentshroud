@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "ApprovalHardening"
+community: "Community 91"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/Community_91
 ---
 
 # setup-guide.md
@@ -24,4 +24,4 @@ tags:
 - [[colima-docker-guide]] - `conceptually_related_to` [INFERRED]
 - [[system-requirements]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/document #graphify/EXTRACTED #community/Community_91

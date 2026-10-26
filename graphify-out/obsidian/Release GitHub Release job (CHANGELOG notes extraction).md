@@ -1,12 +1,12 @@
 ---
 source_file: ".github/workflows/release.yml"
 type: "code"
-community: "TestScoreVulnerabilityManagement"
+community: "Community 1170"
 location: "123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestScoreVulnerabilityManagement
+  - community/Community_1170
 ---
 
 # Release GitHub Release job (CHANGELOG notes extraction)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Release Docker build & tag job]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestScoreVulnerabilityManagement
+#graphify/code #graphify/EXTRACTED #community/Community_1170

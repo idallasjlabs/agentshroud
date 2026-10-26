@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mm/SKILL.md"
+source_file: ".agents/agents/i-tw.md"
 type: "document"
-community: "Incident → Test Backfill Rule (R3 extension): every postmortem must add a regression test in the same PR as the fix, not deferred"
-location: "L7"
+community: "Community 712"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Incident__Test_Backfill_Rule_R3_extension_every_postmortem_must_add_a_regression_test_in_the_same_PR_as_the_fix_not_deferred
+  - community/Community_712
 ---
 
 # Role
 
 ## Connections
-- [[Skill Mindmap Architect (MM)_2]] - `contains` [EXTRACTED]
+- [[Skill Technical Writer (TW)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Incident__Test_Backfill_Rule_R3_extension_every_postmortem_must_add_a_regression_test_in_the_same_PR_as_the_fix_not_deferred
+#graphify/document #graphify/EXTRACTED #community/Community_712

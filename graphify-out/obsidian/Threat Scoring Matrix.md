@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "TestCredentialInjection"
+community: "Community 935"
 location: "L381"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestCredentialInjection
+  - community/Community_935
 ---
 
 # Threat Scoring Matrix
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Threat Intelligence Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestCredentialInjection
+#graphify/document #graphify/EXTRACTED #community/Community_935

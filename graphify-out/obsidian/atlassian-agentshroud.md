@@ -1,20 +1,18 @@
 ---
-source_file: "opencode.json"
+source_file: ".cursor/mcp.json"
 type: "code"
-community: "opencode.json"
-location: "L25"
+community: "Community 397"
+location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/opencodejson
+  - community/Community_397
 ---
 
 # atlassian-agentshroud
 
 ## Connections
-- [[command]] - `contains` [EXTRACTED]
-- [[enabled]] - `contains` [EXTRACTED]
-- [[mcp]] - `contains` [EXTRACTED]
-- [[type]] - `contains` [EXTRACTED]
+- [[.llm_settingsmcp-serversatlassianagentshroudmcp-atlassian.sh]] - `references` [EXTRACTED]
+- [[mcp.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/opencodejson
+#graphify/code #graphify/EXTRACTED #community/Community_397

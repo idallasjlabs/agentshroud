@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2)"
+community: "Community 4"
 location: "L145"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/Community_4
 ---
 
 # Pipeline that allows everything.
 
 ## Connections
-- [[PassthroughPipeline]] - `rationale_for` [EXTRACTED]
+- [[PassthroughPipeline_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_4

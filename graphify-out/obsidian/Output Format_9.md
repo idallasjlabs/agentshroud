@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
+source_file: ".agents/agents/oracle.md"
 type: "document"
-community: "Skill: Data Validation (DATA-VAL) (3)"
-location: "L26"
+community: "Community 1979"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Data_Validation_DATA-VAL_3
+  - community/Community_1979
 ---
 
 # Output Format
 
 ## Connections
-- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL_3
+#graphify/document #graphify/EXTRACTED #community/Community_1979

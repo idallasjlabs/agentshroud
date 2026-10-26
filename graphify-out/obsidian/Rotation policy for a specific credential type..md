@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "rationale"
-community: "A2AMethod"
+community: "Community 122"
 location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2AMethod
+  - community/Community_122
 ---
 
 # Rotation policy for a specific credential type.
 
 ## Connections
-- [[CredentialRotationPolicy]] - `rationale_for` [EXTRACTED]
+- [[CredentialRotationPolicy_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2AMethod
+#graphify/rationale #graphify/EXTRACTED #community/Community_122

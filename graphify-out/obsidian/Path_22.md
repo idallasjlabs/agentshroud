@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/tests/test_generate_cve_page.py"
+source_file: "gateway/skills/scan.py"
 type: "code"
-community: "GatewayEmailService"
-location: "L249"
+community: "Community 133"
+location: "L42"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - graphify/INFERRED
+  - community/Community_133
 ---
 
 # Path
 
 ## Connections
-- [[dot-_run_generate()]] - `references` [EXTRACTED]
+- [[Recommendation]] - `uses` [INFERRED]
+- [[ScanResult_2]] - `uses` [INFERRED]
+- [[SkillGuard]] - `uses` [INFERRED]
+- [[SkillsManifest]] - `uses` [INFERRED]
+- [[_build_tree()]] - `references` [EXTRACTED]
+- [[main()_13]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/code #graphify/INFERRED #community/Community_133

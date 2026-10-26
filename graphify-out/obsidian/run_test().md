@@ -1,19 +1,19 @@
 ---
 source_file: "scripts/smoke.sh"
 type: "code"
-community: "Recommendation"
+community: "Community 547"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Recommendation
+  - community/Community_547
 ---
 
 # run_test()
 
 ## Connections
 - [[post-deploy-check.sh]] - `semantically_similar_to` [INFERRED]
-- [[scriptssmoke.sh]] - `defines` [EXTRACTED]
-- [[smoke.sh script_1]] - `calls` [EXTRACTED]
+- [[smoke.sh]] - `defines` [EXTRACTED]
+- [[smoke.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Recommendation
+#graphify/code #graphify/EXTRACTED #community/Community_547

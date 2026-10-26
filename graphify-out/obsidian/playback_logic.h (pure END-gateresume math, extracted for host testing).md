@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/main/playback_logic.h"
 type: "code"
-community: "AgentShroud Device Pairing Management"
+community: "Community 228"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Device_Pairing_Management
+  - community/Community_228
 ---
 
 # playback_logic.h (pure END-gate/resume math, extracted for host testing)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_playback_state.c (host-native unit tests, SCRUM-59)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management
+#graphify/code #graphify/EXTRACTED #community/Community_228

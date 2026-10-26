@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
+source_file: ".agents/skills/atlas/SKILL.md"
 type: "document"
-community: "WebProxyConfig (2)"
+community: "Community 1169"
 location: "L128"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/WebProxyConfig_2
+  - community/Community_1169
 ---
 
 # Mandatory Acronym Expansion
 
 ## Connections
-- [[OKE Channel — CPA Exam Context]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Context_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/WebProxyConfig_2
+#graphify/document #graphify/EXTRACTED #community/Community_1169

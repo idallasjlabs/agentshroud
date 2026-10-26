@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: ".cursor/agents/browser.md"
 type: "document"
-community: "setup-secrets.sh (2)"
-location: "L286"
+community: "Community 473"
+location: "L288"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/setup-secretssh_2
+  - community/Community_473
 ---
 
 # "Action requires approval but none granted"
 
 ## Connections
-- [[Troubleshooting_14]] - `contains` [EXTRACTED]
+- [[Troubleshooting_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/setup-secretssh_2
+#graphify/document #graphify/EXTRACTED #community/Community_473

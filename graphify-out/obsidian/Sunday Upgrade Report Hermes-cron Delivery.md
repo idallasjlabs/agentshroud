@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/hermes-cron/sunday-upgrade-report.sh"
 type: "code"
-community: "One Shroud Over Every Wire (founding mantra)"
+community: "Community 227"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/One_Shroud_Over_Every_Wire_founding_mantra
+  - community/Community_227
 ---
 
 # Sunday Upgrade Report Hermes-cron Delivery
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[sunday-upgrade.sh (remote-control launcher)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/One_Shroud_Over_Every_Wire_founding_mantra
+#graphify/code #graphify/EXTRACTED #community/Community_227

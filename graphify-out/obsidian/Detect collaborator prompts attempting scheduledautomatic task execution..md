@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "test_collaborator_tracker.py"
+community: "Community 14"
 location: "L1885"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/Community_14
 ---
 
 # Detect collaborator prompts attempting scheduled/automatic task execution.
 
 ## Connections
-- [[dot-_looks_like_scheduler_or_autorun_request()]] - `rationale_for` [EXTRACTED]
+- [[._looks_like_scheduler_or_autorun_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

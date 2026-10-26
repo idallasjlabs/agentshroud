@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_telegram_notify.py"
 type: "rationale"
-community: "apply-patches.js"
+community: "Community 234"
 location: "L209"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apply-patchesjs
+  - community/Community_234
 ---
 
 # handle_callback must include agent_id so the proxy can notify the originating co
 
 ## Connections
-- [[dot-test_handle_callback_returns_agent_id()]] - `rationale_for` [EXTRACTED]
+- [[.test_handle_callback_returns_agent_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apply-patchesjs
+#graphify/rationale #graphify/EXTRACTED #community/Community_234

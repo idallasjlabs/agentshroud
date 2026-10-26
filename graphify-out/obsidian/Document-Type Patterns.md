@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
+source_file: ".agents/agents/i-tw.md"
 type: "document"
-community: "postmortem.md (2)"
-location: "L50"
+community: "Community 712"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/postmortemmd_2
+  - community/Community_712
 ---
 
 # Document-Type Patterns
@@ -15,4 +15,4 @@ tags:
 - [[README — Entry Point for a Repo or Service]] - `contains` [EXTRACTED]
 - [[Skill Technical Writer (TW)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/postmortemmd_2
+#graphify/document #graphify/EXTRACTED #community/Community_712

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "._make_proxy()"
+community: "Community 5"
 location: "L147"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_5
 ---
 
 # Check system-wide resource usage for anomalies (synchronous).
 
 ## Connections
-- [[dot-_check_system_resources()]] - `rationale_for` [EXTRACTED]
+- [[._check_system_resources()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_5

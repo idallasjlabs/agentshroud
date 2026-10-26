@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
+source_file: ".agents/agents/atlas.md"
 type: "document"
-community: "Skill: Data Validation (DATA-VAL) (3)"
-location: "L117"
+community: "Community 1138"
+location: "L119"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Data_Validation_DATA-VAL_3
+  - community/Community_1138
 ---
 
 # Gleim Unit Mapping
 
 ## Connections
-- [[OKE Channel — CPA Exam Context_1]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Context]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL_3
+#graphify/document #graphify/EXTRACTED #community/Community_1138

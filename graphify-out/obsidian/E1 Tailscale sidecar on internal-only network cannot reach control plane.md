@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05-r2.md"
 type: "document"
-community: "test_security_toolchain.py (2) (2)"
+community: "Community 153"
 location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy_2_2
+  - community/Community_153
 ---
 
 # E1: Tailscale sidecar on internal-only network cannot reach control plane
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🔴 ERRORS (must fix)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_security_toolchainpy_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_153

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
 type: "document"
-community: "drift_detector.py"
-location: "L82"
+community: "Community 407"
+location: "L184"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/drift_detectorpy
+  - community/Community_407
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[key_vault.py_2]] - `contains` [EXTRACTED]
+- [[http_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/drift_detectorpy
+#graphify/document #graphify/EXTRACTED #community/Community_407

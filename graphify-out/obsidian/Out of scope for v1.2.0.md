@@ -1,17 +1,18 @@
 ---
 source_file: "docs/planning/v1.2/v1.2.0-master-plan.md"
 type: "document"
-community: "TrustManager"
+community: "Community 1973"
 location: "L237"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/Community_1973
 ---
 
 # Out of scope for v1.2.0
 
 ## Connections
 - [[AgentShroud v1.2.0 Master Plan]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.2.0 — Master Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TrustManager
+#graphify/document #graphify/EXTRACTED #community/Community_1973

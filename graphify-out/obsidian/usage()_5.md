@@ -1,19 +1,18 @@
 ---
-source_file: "docker/scripts/workspace.sh"
+source_file: "skills/openclaw/openai-whisper-api/scripts/transcribe.sh"
 type: "code"
-community: "TestToolChainAnalyzer (2)"
-location: "L13"
+community: "Community 772"
+location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer_2
+  - community/Community_772
 ---
 
 # usage()
 
 ## Connections
-- [[main command dispatcher (case $COMMAND)]] - `calls` [EXTRACTED]
-- [[workspace.sh]] - `defines` [EXTRACTED]
-- [[workspace.sh script]] - `calls` [EXTRACTED]
+- [[transcribe.sh]] - `defines` [EXTRACTED]
+- [[transcribe.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer_2
+#graphify/code #graphify/EXTRACTED #community/Community_772

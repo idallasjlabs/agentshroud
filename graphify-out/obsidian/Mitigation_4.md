@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md"
+source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
 type: "document"
-community: "Quick Reference"
-location: "L52"
+community: "Community 859"
+location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference
+  - community/Community_859
 ---
 
 # Mitigation
 
 ## Connections
-- [[Consequences_8]] - `contains` [EXTRACTED]
+- [[Consequences_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference
+#graphify/document #graphify/EXTRACTED #community/Community_859

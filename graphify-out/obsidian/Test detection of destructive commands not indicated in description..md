@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "Any"
+community: "Community 3"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Any
+  - community/Community_3
 ---
 
 # Test detection of destructive commands not indicated in description.
 
 ## Connections
-- [[dot-test_deception_detection_destructive_command_not_indicated()]] - `rationale_for` [EXTRACTED]
+- [[.test_deception_detection_destructive_command_not_indicated()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Any
+#graphify/rationale #graphify/EXTRACTED #community/Community_3

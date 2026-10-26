@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Function Details"
+community: "Community 223"
 location: "L336"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/Community_223
 ---
 
 # _persist_groups()
 
 ## Connections
-- [[dot-add_member()]] - `calls` [EXTRACTED]
-- [[dot-create_group()]] - `calls` [EXTRACTED]
-- [[dot-delete_group()]] - `calls` [EXTRACTED]
-- [[dot-remove_member()]] - `calls` [EXTRACTED]
+- [[.add_member()]] - `calls` [EXTRACTED]
+- [[.create_group()]] - `calls` [EXTRACTED]
+- [[.delete_group()]] - `calls` [EXTRACTED]
+- [[.remove_member()]] - `calls` [EXTRACTED]
 - [[Group]] - `references` [EXTRACTED]
 - [[Write only custom groups to disk (auto-groups are derived at runtime).]] - `rationale_for` [EXTRACTED]
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Function_Details
+#graphify/code #graphify/EXTRACTED #community/Community_223

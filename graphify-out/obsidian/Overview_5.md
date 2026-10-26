@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/DEVICE_PAIRING.md"
+source_file: ".omp/agents/eightd-root-cause-analysis.md"
 type: "document"
-community: "AgentShroud v0.7.0 Enforcement Audit Results (2)"
-location: "L8"
+community: "Community 795"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Enforcement_Audit_Results_2
+  - community/Community_795
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results_2
+#graphify/document #graphify/EXTRACTED #community/Community_795

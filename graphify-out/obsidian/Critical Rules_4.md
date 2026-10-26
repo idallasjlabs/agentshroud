@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
+source_file: ".agents/skills/sec-defense/SKILL.md"
 type: "document"
-community: "Phase 1 — Raw Collection"
-location: "L376"
+community: "Community 1341"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_1__Raw_Collection
+  - community/Community_1341
 ---
 
 # Critical Rules
 
 ## Connections
-- [[AgentShroud Red Team Adversarial Tester_2]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection
+#graphify/document #graphify/EXTRACTED #community/Community_1341

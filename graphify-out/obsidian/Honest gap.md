@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/attack-teardowns-rovoblast-cross-turn.md"
 type: "document"
-community: "GovernanceAction (2)"
+community: "Community 1055"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GovernanceAction_2
+  - community/Community_1055
 ---
 
 # Honest gap
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Part 1 — RovoBlast how AgentShroud's pipeline would have stopped it]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GovernanceAction_2
+#graphify/document #graphify/EXTRACTED #community/Community_1055

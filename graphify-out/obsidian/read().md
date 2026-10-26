@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
+source_file: "tests/startup_smoke/test_wire_llm_settings.js"
 type: "code"
-community: ".test_fetch_paginates_via_link_cursor() (2)"
-location: "L522"
+community: "Community 682"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_fetch_paginates_via_link_cursor_2
+  - community/Community_682
 ---
 
 # read()
 
 ## Connections
-- [[dot-test_fetch_paginates_via_link_cursor()]] - `contains` [EXTRACTED]
+- [[readHermesMcpServers()]] - `calls` [EXTRACTED]
+- [[test_wire_llm_settings.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_fetch_paginates_via_link_cursor_2
+#graphify/code #graphify/EXTRACTED #community/Community_682

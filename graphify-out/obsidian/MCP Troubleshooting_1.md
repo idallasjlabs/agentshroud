@@ -1,19 +1,19 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm/SKILL.md"
+source_file: ".agents/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "_t (3)"
-location: "L125"
+community: "Community 288"
+location: "L126"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_t_3
+  - community/Community_288
 ---
 
 # MCP Troubleshooting
 
 ## Connections
-- [[Authentication Issues_2]] - `contains` [EXTRACTED]
-- [[Common Errors_2]] - `contains` [EXTRACTED]
-- [[Skill MCP Tools Usage (MCP-TOOLS)_2]] - `contains` [EXTRACTED]
+- [[Authentication Issues_1]] - `contains` [EXTRACTED]
+- [[Common Errors_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_t_3
+#graphify/document #graphify/EXTRACTED #community/Community_288

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
+source_file: ".agents/agents/i-tdd.md"
 type: "document"
-community: "iCloud Services (3)"
-location: "L8"
+community: "Community 1444"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services_3
+  - community/Community_1444
 ---
 
 # Role
 
 ## Connections
-- [[Skill OpenClaw Dev Workflow (ODEV)_2]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services_3
+#graphify/document #graphify/EXTRACTED #community/Community_1444

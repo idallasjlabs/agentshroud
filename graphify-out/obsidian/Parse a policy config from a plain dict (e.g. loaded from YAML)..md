@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "rationale"
-community: "A2APolicyConfig"
+community: "Community 307"
 location: "L211"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2APolicyConfig
+  - community/Community_307
 ---
 
 # Parse a policy config from a plain dict (e.g. loaded from YAML).
 
 ## Connections
-- [[dot-from_dict()_4]] - `rationale_for` [EXTRACTED]
+- [[.from_dict()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2APolicyConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_307

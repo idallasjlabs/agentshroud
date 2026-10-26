@@ -1,20 +1,19 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "TrustConfig"
+community: "Community 6"
 location: "L1615"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/Community_6
 ---
 
 # full_security_report()
 
 ## Connections
 - [[AuthRequired]] - `references` [EXTRACTED]
-- [[Scored security health report — grade, per-tool scores, recommendations.…]] - `rationale_for` [EXTRACTED]
-- [[get]] - `references` [EXTRACTED]
-- [[ingest_apimain.py]] - `contains` [EXTRACTED]
+- [[Scored security health report — grade, per-tool scores, recommendations.      Co]] - `rationale_for` [EXTRACTED]
+- [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/Community_6

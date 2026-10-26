@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/01-enforce-by-default.md"
+source_file: "docs/planning/redteam/04-separation-of-privilege.md"
 type: "document"
-community: "Morning Checklist (5 minutes)"
+community: "Community 670"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Morning_Checklist_5_minutes
+  - community/Community_670
 ---
 
 # Problem
 
 ## Connections
-- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
+- [[Make gateway source code, config, and security policies read-only to the agent]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Morning_Checklist_5_minutes
+#graphify/document #graphify/EXTRACTED #community/Community_670

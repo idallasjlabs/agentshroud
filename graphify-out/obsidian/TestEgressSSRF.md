@@ -1,39 +1,39 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "EgressFilterConfig (2)"
+community: "Community 792"
 location: "L842"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EgressFilterConfig_2
+  - community/Community_792
 ---
 
 # TestEgressSSRF
 
 ## Connections
-- [[dot-setup_method()_12]] - `method` [EXTRACTED]
-- [[dot-test_block_ipv4_mapped_ipv6_loopback()]] - `method` [EXTRACTED]
-- [[dot-test_block_ipv4_mapped_ipv6_private()]] - `method` [EXTRACTED]
-- [[dot-test_block_ipv4_private()]] - `method` [EXTRACTED]
-- [[dot-test_block_ipv6_link_local()]] - `method` [EXTRACTED]
-- [[dot-test_block_ipv6_loopback()]] - `method` [EXTRACTED]
-- [[dot-test_block_ipv6_ula()]] - `method` [EXTRACTED]
-- [[dot-test_block_link_local()]] - `method` [EXTRACTED]
-- [[dot-test_block_localhost_variants()]] - `method` [EXTRACTED]
+- [[.setup_method()_33]] - `method` [EXTRACTED]
+- [[.test_block_ipv4_mapped_ipv6_loopback()]] - `method` [EXTRACTED]
+- [[.test_block_ipv4_mapped_ipv6_private()]] - `method` [EXTRACTED]
+- [[.test_block_ipv4_private()]] - `method` [EXTRACTED]
+- [[.test_block_ipv6_link_local()]] - `method` [EXTRACTED]
+- [[.test_block_ipv6_loopback()]] - `method` [EXTRACTED]
+- [[.test_block_ipv6_ula()]] - `method` [EXTRACTED]
+- [[.test_block_link_local()]] - `method` [EXTRACTED]
+- [[.test_block_localhost_variants()]] - `method` [EXTRACTED]
 - [[AgentRegistry]] - `uses` [INFERRED]
-- [[ContainerConfig_1]] - `uses` [INFERRED]
+- [[ContainerConfig]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
 - [[DriftDetector]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter]] - `uses` [INFERRED]
+- [[EgressFilter_1]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[EncryptedStore]] - `uses` [INFERRED]
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[IsolationVerifier]] - `uses` [INFERRED]
 - [[PatternRule]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[Tests for SSRF protection in egress filter.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
@@ -41,4 +41,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EgressFilterConfig_2
+#graphify/code #graphify/INFERRED #community/Community_792

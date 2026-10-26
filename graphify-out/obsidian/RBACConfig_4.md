@@ -1,23 +1,22 @@
 ---
-source_file: "gateway/tests/test_privacy_policy.py"
+source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "chatbot/main.py"
-location: "L26"
+community: "Community 61"
+location: "L28"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/chatbot/mainpy
+  - community/Community_61
 ---
 
 # RBACConfig
 
 ## Connections
-- [[PrivacyPolicy]] - `uses` [INFERRED]
-- [[PrivacyPolicyEnforcer]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_64]] - `uses` [INFERRED]
-- [[ServicePrivacy]] - `uses` [INFERRED]
-- [[TeamsConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
+- [[ToolACLConfig]] - `uses` [INFERRED]
+- [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[_make_rbac()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/chatbot/mainpy
+#graphify/code #graphify/INFERRED #community/Community_61

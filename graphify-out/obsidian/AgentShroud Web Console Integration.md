@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "Restart Procedure (2)"
+community: "Community 1003"
 location: "L247"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Restart_Procedure_2
+  - community/Community_1003
 ---
 
 # AgentShroud Web Console Integration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[7. Pi-hole DNS Security Layer (Built-In)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Restart_Procedure_2
+#graphify/document #graphify/EXTRACTED #community/Community_1003

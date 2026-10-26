@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/daily-operations.md"
 type: "document"
-community: "security.py"
+community: "Community 654"
 location: "L60"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/securitypy
+  - community/Community_654
 ---
 
 # Weekly Checklist (15 minutes)
@@ -18,4 +18,4 @@ tags:
 - [[4. Test Suite]] - `contains` [EXTRACTED]
 - [[Daily Operations Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/securitypy
+#graphify/document #graphify/EXTRACTED #community/Community_654

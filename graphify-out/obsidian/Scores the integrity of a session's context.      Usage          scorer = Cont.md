@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_integrity.py"
 type: "rationale"
-community: "PromptGuard"
+community: "Community 22"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/Community_22
 ---
 
 # Scores the integrity of a session's context.      Usage::          scorer = Cont
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ContextIntegrityScorer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PromptGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_22

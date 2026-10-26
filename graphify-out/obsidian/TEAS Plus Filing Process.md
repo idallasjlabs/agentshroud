@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "concept"
-community: "SecureBrowser Skill"
+community: "Community 1098"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill
+  - community/Community_1098
 ---
 
 # TEAS Plus Filing Process
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[USPTO-APPLICATION]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/SecureBrowser_Skill
+#graphify/concept #graphify/EXTRACTED #community/Community_1098

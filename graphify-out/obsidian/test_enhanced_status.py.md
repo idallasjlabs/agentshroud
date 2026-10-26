@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_status.py"
 type: "code"
-community: "test_fieldflare_route_strips_unsupported_fields_streaming"
+community: "Community 707"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_fieldflare_route_strips_unsupported_fields_streaming
+  - community/Community_707
 ---
 
 # test_enhanced_status.py
@@ -15,4 +15,4 @@ tags:
 - [[StatusResponse]] - `imports` [EXTRACTED]
 - [[TestEnhancedStatus]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_fieldflare_route_strips_unsupported_fields_streaming
+#graphify/code #graphify/EXTRACTED #community/Community_707

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-vulcan/README.md"
+source_file: ".github/agents/i-mcpm-auth-reset.agent.md"
 type: "document"
-community: "soc.js (6)"
-location: "L14"
+community: "Community 239"
+location: "L227"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs_6
+  - community/Community_239
 ---
 
 # Related Skills
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs_6
+#graphify/document #graphify/EXTRACTED #community/Community_239

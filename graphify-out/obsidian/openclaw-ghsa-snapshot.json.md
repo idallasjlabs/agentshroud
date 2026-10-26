@@ -1,13 +1,13 @@
 ---
 source_file: "scripts/data/openclaw-ghsa-snapshot.json"
 type: "document"
-community: "Per-subfolder graphify-out avoids output clobbering"
+community: "Community 1670"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Per-subfolder_graphify-out_avoids_output_clobbering
+  - community/Community_1670
 ---
 
 # openclaw-ghsa-snapshot.json
 
-#graphify/document #graphify/EXTRACTED #community/Per-subfolder_graphify-out_avoids_output_clobbering
+#graphify/document #graphify/EXTRACTED #community/Community_1670

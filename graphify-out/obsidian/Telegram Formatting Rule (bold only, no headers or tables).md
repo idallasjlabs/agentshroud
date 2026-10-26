@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/agentshroud-daily-check-in.txt"
 type: "rationale"
-community: "Hermes Cron Jobs Reference & Recreation Guide"
+community: "Community 199"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+  - community/Community_199
 ---
 
 # Telegram Formatting Rule (bold only, no headers or tables)
@@ -18,4 +18,4 @@ tags:
 - [[Prompt Weekly Hermes Stability Report]] - `implements` [EXTRACTED]
 - [[Prompt Weekly Kaizen Review]] - `implements` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+#graphify/rationale #graphify/EXTRACTED #community/Community_199

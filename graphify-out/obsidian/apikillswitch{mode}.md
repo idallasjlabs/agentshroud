@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/templates/management.html"
 type: "concept"
-community: "Skill: Git Workflow Guardian (GIT-GUARD) (2)"
+community: "Community 952"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_Git_Workflow_Guardian_GIT-GUARD_2
+  - community/Community_952
 ---
 
 # /api/killswitch/{mode}
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Management Dashboard]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD_2
+#graphify/concept #graphify/EXTRACTED #community/Community_952

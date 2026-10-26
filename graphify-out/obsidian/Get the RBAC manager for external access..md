@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "Community 72"
 location: "L989"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Community_72
 ---
 
 # Get the RBAC manager for external access.
 
 ## Connections
-- [[dot-get_rbac_manager()]] - `rationale_for` [EXTRACTED]
+- [[.get_rbac_manager()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

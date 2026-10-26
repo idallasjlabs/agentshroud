@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "WebhookReceiver"
+community: "Community 43"
 location: "L301"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/Community_43
 ---
 
 # Test that conversations are logged per user.
 
 ## Connections
-- [[dot-test_webhook_conversation_logging()]] - `rationale_for` [EXTRACTED]
+- [[.test_webhook_conversation_logging()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/rationale #graphify/EXTRACTED #community/Community_43

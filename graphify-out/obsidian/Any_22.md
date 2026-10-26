@@ -1,25 +1,18 @@
 ---
-source_file: "gateway/proxy/webhook_receiver.py"
+source_file: "gateway/proxy/telegram_replay.py"
 type: "code"
-community: "WebhookReceiver"
-location: "L121"
+community: "Community 165"
+location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/Community_165
 ---
 
 # Any
 
 ## Connections
-- [[dot-_extract_message()]] - `references` [EXTRACTED]
-- [[dot-_extract_user_id()_1]] - `references` [EXTRACTED]
-- [[dot-_extract_username()]] - `references` [EXTRACTED]
-- [[dot-_prepare_session_payload()]] - `references` [EXTRACTED]
-- [[dot-_replace_message()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_4]] - `references` [EXTRACTED]
-- [[dot-process_webhook()]] - `references` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
+- [[.pull_undelivered()]] - `references` [EXTRACTED]
+- [[.record_inbound()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/code #graphify/EXTRACTED #community/Community_165

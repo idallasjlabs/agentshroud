@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-ab/SKILL.md"
 type: "concept"
-community: "Manual Usage (Current Method)"
+community: "Community 1304"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Manual_Usage_Current_Method
+  - community/Community_1304
 ---
 
 # scripts/audit_merge_regression.py
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[GSDL-715 (silent regression incident)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Manual_Usage_Current_Method
+#graphify/concept #graphify/EXTRACTED #community/Community_1304

@@ -1,19 +1,17 @@
 ---
-source_file: "scripts/sync-cve-registry.py"
+source_file: "docker/bots/hermes/docker_proxy_relay.py"
 type: "code"
-community: "browser/scripts/browse.py"
-location: "L932"
+community: "Community 591"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser/scripts/browsepy
+  - community/Community_591
 ---
 
 # main()
 
 ## Connections
-- [[_run_nvd_sync()]] - `calls` [EXTRACTED]
-- [[run_ghsa_sync()]] - `calls` [EXTRACTED]
-- [[sync-cve-registry.py]] - `contains` [EXTRACTED]
+- [[docker_proxy_relay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy
+#graphify/code #graphify/EXTRACTED #community/Community_591

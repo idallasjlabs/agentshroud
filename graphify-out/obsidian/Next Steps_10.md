@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/TAILSCALE_COMMANDS.md"
+source_file: "docs/setup/VAULT-SHARING-INSTRUCTIONS.md"
 type: "document"
-community: "test_security_regressions_v1_2.py"
-location: "L78"
+community: "Community 620"
+location: "L204"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_security_regressions_v1_2py
+  - community/Community_620
 ---
 
 # Next Steps
 
 ## Connections
-- [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
+- [[1Password Vault Sharing Instructions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_security_regressions_v1_2py
+#graphify/document #graphify/EXTRACTED #community/Community_620

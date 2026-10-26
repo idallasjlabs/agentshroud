@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_proxy_dashboard.py"
 type: "code"
-community: "Colima & Docker Operations Guide — AgentShroud"
+community: "Community 163"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Colima__Docker_Operations_Guide__AgentShroud
+  - community/Community_163
 ---
 
 # test_proxy_dashboard.py
@@ -28,4 +28,4 @@ tags:
 - [[test_dashboard_uptime()]] - `contains` [EXTRACTED]
 - [[test_status_report_to_display()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Colima__Docker_Operations_Guide__AgentShroud
+#graphify/code #graphify/EXTRACTED #community/Community_163

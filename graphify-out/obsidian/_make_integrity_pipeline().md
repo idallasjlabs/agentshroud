@@ -1,29 +1,29 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "KeyVaultConfig"
+community: "Community 24"
 location: "L387"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/Community_24
 ---
 
 # _make_integrity_pipeline()
 
 ## Connections
-- [[dot-test_high_score_forwards_and_records()]] - `calls` [EXTRACTED]
-- [[dot-test_lockdown_block_is_audited()]] - `calls` [EXTRACTED]
-- [[dot-test_lockdown_score_allows_owner()]] - `calls` [EXTRACTED]
-- [[dot-test_lockdown_score_blocks_non_owner()]] - `calls` [EXTRACTED]
-- [[dot-test_scorer_error_allows_owner()]] - `calls` [EXTRACTED]
-- [[dot-test_scorer_error_fails_closed_non_owner()]] - `calls` [EXTRACTED]
-- [[dot-test_scorer_invoked_with_session_segments()]] - `calls` [EXTRACTED]
-- [[dot-test_warn_zone_forwards()]] - `calls` [EXTRACTED]
+- [[.test_high_score_forwards_and_records()]] - `calls` [EXTRACTED]
+- [[.test_lockdown_block_is_audited()]] - `calls` [EXTRACTED]
+- [[.test_lockdown_score_allows_owner()]] - `calls` [EXTRACTED]
+- [[.test_lockdown_score_blocks_non_owner()]] - `calls` [EXTRACTED]
+- [[.test_scorer_error_allows_owner()]] - `calls` [EXTRACTED]
+- [[.test_scorer_error_fails_closed_non_owner()]] - `calls` [EXTRACTED]
+- [[.test_scorer_invoked_with_session_segments()]] - `calls` [EXTRACTED]
+- [[.test_warn_zone_forwards()]] - `calls` [EXTRACTED]
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[Pipeline with ContextGuard + ContextIntegrityScorer mocks.]] - `rationale_for` [EXTRACTED]
-- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
+- [[SecurityPipeline]] - `calls` [EXTRACTED]
 - [[_FakeIntegrityScore]] - `calls` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/code #graphify/EXTRACTED #community/Community_24

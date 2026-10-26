@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ti/README.md"
+source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "document"
-community: "AgentShroud System Architecture Document (SAD)"
+community: "Community 375"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_System_Architecture_Document_SAD
+  - community/Community_375
 ---
 
 # Usage
 
 ## Connections
-- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
+- [[graphify_11]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD
+#graphify/document #graphify/EXTRACTED #community/Community_375

@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/bear-notes/SKILL.md"
 type: "concept"
-community: "Daedalus — Concept Illustrator (2)"
+community: "Community 860"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator_2
+  - community/Community_860
 ---
 
 # grizzly CLI (Bear notes)
 
 ## Connections
-- [[bear-notesSKILL]] - `implements` [EXTRACTED]
+- [[SKILL_207]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator_2
+#graphify/concept #graphify/EXTRACTED #community/Community_860

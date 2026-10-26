@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/SECURITY_PLAN.md"
 type: "document"
-community: "Findings"
+community: "Community 415"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Findings
+  - community/Community_415
 ---
 
 # AgentShroud Security Hardening Plan
@@ -20,6 +20,6 @@ tags:
 - [[SECURITY_PLAN]] - `contains` [EXTRACTED]
 - [[Threat Coverage Matrix]] - `contains` [EXTRACTED]
 - [[What Security Experts Will See]] - `contains` [EXTRACTED]
-- [[Why This Matters_2]] - `contains` [EXTRACTED]
+- [[Why This Matters_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Findings
+#graphify/document #graphify/EXTRACTED #community/Community_415

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "document"
-community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md"
+community: "Community 472"
 location: "L232"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+  - community/Community_472
 ---
 
 # NOTHING is over-engineered. Everything has a purpose.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[What's Actually Over-Engineered (Revised Answer)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+#graphify/document #graphify/EXTRACTED #community/Community_472

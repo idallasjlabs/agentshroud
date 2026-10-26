@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
+source_file: ".agents/agents/i-odev.md"
 type: "document"
-community: "iCloud Services (3)"
-location: "L303"
+community: "Community 821"
+location: "L305"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services_3
+  - community/Community_821
 ---
 
 # Step 9b — Update the Jira ticket with the PR link
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode A — Single task_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services_3
+#graphify/document #graphify/EXTRACTED #community/Community_821

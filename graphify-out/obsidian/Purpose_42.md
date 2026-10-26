@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-daedalus/README.md"
+source_file: "docker/config/hermes/skills/i-bs/README.md"
 type: "document"
-community: "soc.js (2)"
+community: "Community 90"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs_2
+  - community/Community_90
 ---
 
 # Purpose
 
 ## Connections
-- [[Daedalus — Concept Illustrator_1]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs_2
+#graphify/document #graphify/EXTRACTED #community/Community_90

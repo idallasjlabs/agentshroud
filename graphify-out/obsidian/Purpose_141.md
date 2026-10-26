@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
 type: "document"
-community: "trivy_report.py"
+community: "Community 783"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/trivy_reportpy
+  - community/Community_783
 ---
 
 # Purpose
 
 ## Connections
-- [[canary.py_2]] - `contains` [EXTRACTED]
+- [[compose_generator.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/trivy_reportpy
+#graphify/document #graphify/EXTRACTED #community/Community_783

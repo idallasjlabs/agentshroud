@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: ".agents/agents/i-mcpm-aws-profile.md"
 type: "document"
-community: "openclaw/workspace/jira_dev_ticket.py"
-location: "L29"
+community: "Community 171"
+location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/workspace/jira_dev_ticketpy
+  - community/Community_171
 ---
 
 # List Available Profiles
@@ -16,4 +16,4 @@ tags:
 - [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 - [[View Configured Profiles]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/Community_171

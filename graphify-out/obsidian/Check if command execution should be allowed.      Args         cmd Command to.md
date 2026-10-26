@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "check_command"
+community: "Community 362"
 location: "L433"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/check_command
+  - community/Community_362
 ---
 
 # Check if command execution should be allowed.      Args:         cmd: Command to
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check_command()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/check_command
+#graphify/rationale #graphify/EXTRACTED #community/Community_362

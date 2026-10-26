@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ti/README.md"
+source_file: "docker/config/hermes/skills/i-sec-defense/README.md"
 type: "document"
-community: "AgentShroud System Architecture Document (SAD)"
+community: "Community 90"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_System_Architecture_Document_SAD
+  - community/Community_90
 ---
 
 # Related Skills
 
 ## Connections
-- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD
+#graphify/document #graphify/EXTRACTED #community/Community_90

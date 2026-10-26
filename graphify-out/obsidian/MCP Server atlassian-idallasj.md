@@ -1,13 +1,13 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "AWS Glue Jobs"
+community: "Community 1599"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AWS_Glue_Jobs
+  - community/Community_1599
 ---
 
 # MCP Server: atlassian-idallasj
 
-#graphify/code #graphify/EXTRACTED #community/AWS_Glue_Jobs
+#graphify/code #graphify/EXTRACTED #community/Community_1599

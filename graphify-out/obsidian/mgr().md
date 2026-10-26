@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_mcp_permissions.py"
+source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "CrossBotTrustLedger"
-location: "L112"
+community: "Community 89"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/Community_89
 ---
 
 # mgr()
 
 ## Connections
-- [[MCPPermissionManager]] - `calls` [EXTRACTED]
-- [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
+- [[DelegationManager_1]] - `references` [EXTRACTED]
+- [[In-memory delegation manager (no disk IO).]] - `rationale_for` [EXTRACTED]
+- [[test_delegation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/Community_89

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "rationale"
-community: "Skill: Project Management (PM) (3)"
+community: "Community 131"
 location: "L279"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM_3
+  - community/Community_131
 ---
 
 # Saved file is valid JSON containing the report keys.
 
 ## Connections
-- [[dot-test_report_content_persisted()]] - `rationale_for` [EXTRACTED]
+- [[.test_report_content_persisted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Skill_Project_Management_PM_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_131

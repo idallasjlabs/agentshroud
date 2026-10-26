@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/tmux/SKILL.md"
+source_file: "skills/openclaw/model-usage/references/codexbar-cli.md"
 type: "document"
-community: "agentshroud-gateway"
-location: "L148"
+community: "Community 273"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-gateway
+  - community/Community_273
 ---
 
 # Notes
 
 ## Connections
-- [[tmux Session Control]] - `contains` [EXTRACTED]
+- [[CodexBar CLI quick ref (usage + cost)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway
+#graphify/document #graphify/EXTRACTED #community/Community_273

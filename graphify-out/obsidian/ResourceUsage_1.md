@@ -1,19 +1,23 @@
 ---
-source_file: "gateway/security/resource_guard.py"
+source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "._make_proxy()"
-location: "L73"
+community: "Community 1782"
+location: "L134"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_1782
 ---
 
 # ResourceUsage
 
 ## Connections
-- [[dot-get_usage_stats()]] - `calls` [EXTRACTED]
-- [[Current resource usage metrics.]] - `rationale_for` [EXTRACTED]
-- [[resource_guard.py]] - `contains` [EXTRACTED]
+- [[.authorize_spawn()]] - `calls` [EXTRACTED]
+- [[.deregister()]] - `references` [EXTRACTED]
+- [[.get_usage()]] - `references` [EXTRACTED]
+- [[.runtime_seconds()]] - `method` [EXTRACTED]
+- [[.to_dict()_14]] - `method` [EXTRACTED]
+- [[Tracks cumulative resource consumption for a single subagent.]] - `rationale_for` [EXTRACTED]
+- [[subagent_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_1782

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: ".cursor/mcp.json"
+community: "Community 392"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/cursor/mcpjson
+  - community/Community_392
 ---
 
 # Approval Queue (SQLite)
@@ -16,4 +16,4 @@ tags:
 - [[Kill Switch (MonitorBlockIsolate)]] - `calls` [EXTRACTED]
 - [[TrustManager_5]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/cursor/mcpjson
+#graphify/concept #graphify/EXTRACTED #community/Community_392

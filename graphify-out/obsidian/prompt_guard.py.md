@@ -1,28 +1,34 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
-type: "document"
-community: "TrustConfig (2) (2)"
+source_file: "gateway/security/prompt_guard.py"
+type: "code"
+community: "Community 162"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig_2_2
+  - community/Community_162
 ---
 
-# prompt_guard.py.md
+# prompt_guard.py
 
 ## Connections
-- [[Configuration_18]] - `contains` [EXTRACTED]
-- [[Dependencies_19]] - `contains` [EXTRACTED]
-- [[Environment Variables_12]] - `contains` [EXTRACTED]
-- [[Function Details_19]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_21]] - `contains` [EXTRACTED]
-- [[Mode Enforce vs Monitor_8]] - `contains` [EXTRACTED]
-- [[Pattern Categories and Weights]] - `contains` [EXTRACTED]
-- [[Purpose_119]] - `contains` [EXTRACTED]
-- [[Related_25]] - `contains` [EXTRACTED]
-- [[Responsibilities_23]] - `contains` [EXTRACTED]
-- [[Threat Model_16]] - `contains` [EXTRACTED]
-- [[hermesSOUL]] - `references` [EXTRACTED]
+- [[AGENTSHROUD_MODE]] - `references` [INFERRED]
+- [[Enum]] - `imports_from` [EXTRACTED]
+- [[FR3 System Integrity]] - `references` [EXTRACTED]
+- [[PatternRule]] - `contains` [EXTRACTED]
+- [[Prompt Guard Module Badge Icon]] - `conceptually_related_to` [INFERRED]
+- [[PromptGuard]] - `contains` [EXTRACTED]
+- [[ScanResult_1]] - `contains` [EXTRACTED]
+- [[SystemPromptFingerprint]] - `contains` [EXTRACTED]
+- [[ThreatAction]] - `contains` [EXTRACTED]
+- [[Troubleshooting Matrix]] - `references` [INFERRED]
+- [[detect_base64_payloads()]] - `imports` [EXTRACTED]
+- [[egress_filter.py]] - `references` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[main.py_2]] - `imports_from` [EXTRACTED]
+- [[multi_turn_tracker.py]] - `semantically_similar_to` [INFERRED]
+- [[normalize_input()]] - `imports` [EXTRACTED]
+- [[state.py]] - `imports_from` [EXTRACTED]
+- [[test_multilingual_injection.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TrustConfig_2_2
+#graphify/code #graphify/EXTRACTED #community/Community_162

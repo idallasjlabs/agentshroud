@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/lib/sunday-scan.sh"
 type: "code"
-community: "run_multi_host"
+community: "Community 869"
 location: "L555"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run_multi_host
+  - community/Community_869
 ---
 
 # sunday_hermes_container()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sunday-scan.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run_multi_host
+#graphify/code #graphify/EXTRACTED #community/Community_869

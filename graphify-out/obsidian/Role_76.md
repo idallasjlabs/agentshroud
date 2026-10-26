@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tdd/SKILL.md"
+source_file: ".cursor/agents/apollo.md"
 type: "document"
-community: "1. GitHub MCP Authentication Reset"
-location: "L7"
+community: "Community 1404"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1_GitHub_MCP_Authentication_Reset
+  - community/Community_1404
 ---
 
 # Role
 
 ## Connections
-- [[Skill Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset
+#graphify/document #graphify/EXTRACTED #community/Community_1404

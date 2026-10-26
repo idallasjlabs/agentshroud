@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
 type: "document"
-community: "Actions"
-location: "L78"
+community: "Community 719"
+location: "L74"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Actions
+  - community/Community_719
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[session_security.py_2]] - `contains` [EXTRACTED]
+- [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Actions
+#graphify/document #graphify/EXTRACTED #community/Community_719

@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "ContextGuard"
+community: "Community 0"
 location: "L689"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ContextGuard
+  - community/Community_0
 ---
 
 # TestCryptography
 
 ## Connections
-- [[dot-store()]] - `method` [EXTRACTED]
-- [[dot-test_ciphertext_not_plaintext()]] - `method` [EXTRACTED]
-- [[dot-test_different_plaintexts_different_ciphertexts()]] - `method` [EXTRACTED]
-- [[dot-test_encrypt_decrypt_roundtrip()]] - `method` [EXTRACTED]
-- [[dot-test_encrypt_json()]] - `method` [EXTRACTED]
-- [[dot-test_key_rotation()]] - `method` [EXTRACTED]
-- [[dot-test_key_vault_init()]] - `method` [EXTRACTED]
-- [[dot-test_tampered_ciphertext_fails()]] - `method` [EXTRACTED]
-- [[dot-test_wrong_key_fails()]] - `method` [EXTRACTED]
+- [[.store()_2]] - `method` [EXTRACTED]
+- [[.test_ciphertext_not_plaintext()]] - `method` [EXTRACTED]
+- [[.test_different_plaintexts_different_ciphertexts()]] - `method` [EXTRACTED]
+- [[.test_encrypt_decrypt_roundtrip()]] - `method` [EXTRACTED]
+- [[.test_encrypt_json()]] - `method` [EXTRACTED]
+- [[.test_key_rotation()]] - `method` [EXTRACTED]
+- [[.test_key_vault_init()]] - `method` [EXTRACTED]
+- [[.test_tampered_ciphertext_fails()]] - `method` [EXTRACTED]
+- [[.test_wrong_key_fails()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConfusedDeputyError]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
@@ -39,13 +39,13 @@ tags:
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[KeyVault]] - `uses` [INFERRED]
 - [[KeyVaultConfig]] - `uses` [INFERRED]
-- [[LogSanitizer]] - `uses` [INFERRED]
+- [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MetadataGuard]] - `uses` [INFERRED]
 - [[NetworkValidator]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[PIISanitizer_3]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
 - [[PKCEViolation]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[RedirectMismatch]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
 - [[ResourceLimits]] - `uses` [INFERRED]
@@ -57,4 +57,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ContextGuard
+#graphify/code #graphify/INFERRED #community/Community_0

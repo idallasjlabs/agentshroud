@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "AuditExporter"
+community: "Community 195"
 location: "L380"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/Community_195
 ---
 
 # AgentShroud vs Unprotected Agent
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Why AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditExporter
+#graphify/document #graphify/EXTRACTED #community/Community_195

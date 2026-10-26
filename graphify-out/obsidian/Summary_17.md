@@ -1,17 +1,17 @@
 ---
-source_file: "reports/upgrade-2026-09-06-prod.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "agentshroud-blueteam/SKILL.md (3)"
-location: "L3"
+community: "Community 1255"
+location: "L874"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_3
+  - community/Community_1255
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud Weekly Upgrade — 2026-09-06]] - `contains` [EXTRACTED]
+- [[Unreleased — featv0.8.0-enforcement-hardening (session 2 — 2026-03-14)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3
+#graphify/document #graphify/EXTRACTED #community/Community_1255

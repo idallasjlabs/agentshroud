@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pca/SKILL.md"
+source_file: ".agents/agents/i-gg.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md (2)"
-location: "L7"
+community: "Community 1949"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd_2
+  - community/Community_1949
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pre-Change Analysis (PCA)]] - `contains` [EXTRACTED]
+- [[Skill Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd_2
+#graphify/document #graphify/EXTRACTED #community/Community_1949

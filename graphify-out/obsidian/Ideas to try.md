@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/slack/SKILL.md"
 type: "document"
-community: "ANTHROPIC_BASE_URL"
+community: "Community 573"
 location: "L141"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ANTHROPIC_BASE_URL
+  - community/Community_573
 ---
 
 # Ideas to try
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Slack Actions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL
+#graphify/document #graphify/EXTRACTED #community/Community_573

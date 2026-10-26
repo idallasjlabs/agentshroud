@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/feed_hosts.py"
 type: "code"
-community: "EgressFilterConfig (2)"
+community: "Community 2265"
 location: "19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/Community_2265
 ---
 
 # FEED_HOSTS
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PERMANENT_EGRESS_DOMAINS]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/Community_2265

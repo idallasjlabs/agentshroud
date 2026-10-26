@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Restart Procedure (2)"
-location: "L213"
+community: "Community 521"
+location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Restart_Procedure_2
+  - community/Community_521
 ---
 
 # Design Philosophy
 
 ## Connections
-- [[7. Pi-hole DNS Security Layer (Built-In)]] - `contains` [EXTRACTED]
+- [[Architecture_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Restart_Procedure_2
+#graphify/document #graphify/EXTRACTED #community/Community_521

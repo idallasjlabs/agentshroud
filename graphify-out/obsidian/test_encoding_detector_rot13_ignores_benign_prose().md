@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "test_agent_cve_registry.py (2)"
+community: "Community 84"
 location: "L307"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy_2
+  - community/Community_84
 ---
 
 # test_encoding_detector_rot13_ignores_benign_prose()
@@ -16,4 +16,4 @@ tags:
 - [[rot13 decode is NOT applied to benign prose (no injection indicators).]] - `rationale_for` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy_2
+#graphify/code #graphify/EXTRACTED #community/Community_84

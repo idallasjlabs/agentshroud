@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "code"
-community: "proxy_status.py"
+community: "Community 851"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/proxy_statuspy
+  - community/Community_851
 ---
 
 # _get_model()
@@ -15,4 +15,4 @@ tags:
 - [[stt.py]] - `contains` [EXTRACTED]
 - [[transcribe()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/proxy_statuspy
+#graphify/code #graphify/EXTRACTED #community/Community_851

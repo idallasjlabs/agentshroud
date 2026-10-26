@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-p0-2026-02-23.md"
 type: "document"
-community: "InjectionAction"
+community: "Community 331"
 location: "L161"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/Community_331
 ---
 
 # ❌ NOT READY FOR MERGE
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[5. Merge Readiness Assessment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/InjectionAction
+#graphify/document #graphify/EXTRACTED #community/Community_331

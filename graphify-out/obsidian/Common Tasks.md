@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "iCloud Services (2)"
+community: "Community 469"
 location: "L134"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services_2
+  - community/Community_469
 ---
 
 # Common Tasks
@@ -18,4 +18,4 @@ tags:
 - [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
 - [[Updating Telegram Bot Token]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services_2
+#graphify/document #graphify/EXTRACTED #community/Community_469

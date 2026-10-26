@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "._make_proxy()"
+community: "Community 5"
 location: "L331"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_5
 ---
 
 # Check if agent has exceeded disk write limit.
 
 ## Connections
-- [[dot-check_disk_write_limit()]] - `rationale_for` [EXTRACTED]
+- [[.check_disk_write_limit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_5

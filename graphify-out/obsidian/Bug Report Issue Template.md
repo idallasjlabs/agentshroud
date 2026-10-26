@@ -1,13 +1,13 @@
 ---
 source_file: ".github/ISSUE_TEMPLATE/bug_report.yml"
 type: "document"
-community: "Production testing guidelines (test isolation patterns)"
+community: "Community 1829"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_testing_guidelines_test_isolation_patterns
+  - community/Community_1829
 ---
 
 # Bug Report Issue Template
 
-#graphify/document #graphify/EXTRACTED #community/Production_testing_guidelines_test_isolation_patterns
+#graphify/document #graphify/EXTRACTED #community/Community_1829

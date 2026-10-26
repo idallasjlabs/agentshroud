@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "Enum"
+community: "Community 8"
 location: "L404"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enum
+  - community/Community_8
 ---
 
 # Test behavior of blocked sessions.
 
 ## Connections
-- [[dot-test_blocked_session_behavior()]] - `rationale_for` [EXTRACTED]
+- [[.test_blocked_session_behavior()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enum
+#graphify/rationale #graphify/EXTRACTED #community/Community_8

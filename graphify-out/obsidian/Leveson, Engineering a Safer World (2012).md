@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: ".mcp.json"
+community: "Community 400"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcpjson
+  - community/Community_400
 ---
 
 # Leveson, Engineering a Safer World (2012)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[agentshroud-ieee-paper]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Community_400

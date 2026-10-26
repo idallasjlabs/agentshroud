@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "Community 2411"
 location: "L1733"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/Community_2411
 ---
 
 # Form draft should keep healthcheck sandbox text unchanged when SKILL.md marker i
 
 ## Connections
-- [[dot-test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten_for_form_draft()]] - `rationale_for` [EXTRACTED]
+- [[.test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten_for_form_draft()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_2411

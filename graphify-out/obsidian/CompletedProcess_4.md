@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/tests/test_agent_cve_registry.py"
+source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L580"
+community: "Community 133"
+location: "L458"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - graphify/INFERRED
+  - community/Community_133
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[_run_triage()]] - `references` [EXTRACTED]
+- [[Recommendation]] - `uses` [INFERRED]
+- [[ScanResult_2]] - `uses` [INFERRED]
+- [[Severity]] - `uses` [INFERRED]
+- [[SkillGuard]] - `uses` [INFERRED]
+- [[SkillScanError]] - `uses` [INFERRED]
+- [[_run_scan_cli()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/INFERRED #community/Community_133

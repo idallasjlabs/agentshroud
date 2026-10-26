@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_web_proxy_security.py"
+source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "scanner_integration.py"
-location: "L63"
+community: "Community 2344"
+location: "L23"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/Community_2344
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[dot-setUp()_1]] - `rationale_for` [EXTRACTED]
+- [[.setup_method()_17]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_2344

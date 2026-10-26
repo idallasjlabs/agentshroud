@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-06-cicd-deployment.svg"
 type: "image"
-community: "telegram_api_proxy (/telegram-api/{path}) (2)"
+community: "Community 1086"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path_2
+  - community/Community_1086
 ---
 
 # GitHub Actions CI (test + lint + security-scan)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[CICD Quality Gates (14 jobs, 6 workflows)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path_2
+#graphify/image #graphify/EXTRACTED #community/Community_1086

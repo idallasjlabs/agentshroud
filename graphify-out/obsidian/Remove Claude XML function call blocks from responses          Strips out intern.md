@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "Community 84"
 location: "L518"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_84
 ---
 
 # Remove Claude XML function call blocks from responses          Strips out intern
 
 ## Connections
-- [[dot-filter_xml_blocks()_2]] - `rationale_for` [EXTRACTED]
+- [[.filter_xml_blocks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_84

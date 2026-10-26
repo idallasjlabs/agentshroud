@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "package_skill"
+community: "Community 560"
 location: "L375"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/package_skill
+  - community/Community_560
 ---
 
 # AgentShroud Tasks (all overdue, added to v0.8.0):
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Apple Reminders — Items Recovered]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/package_skill
+#graphify/document #graphify/EXTRACTED #community/Community_560

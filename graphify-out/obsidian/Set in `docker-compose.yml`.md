@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "Skill: Security Review (SEC)"
+community: "Community 739"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Security_Review_SEC
+  - community/Community_739
 ---
 
 # Set in `docker-compose.yml`
 
 ## Connections
-- [[Bot Container (`agentshroud-bot`)]] - `contains` [EXTRACTED]
+- [[Bot Container (`agentshroud-bot`)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC
+#graphify/document #graphify/EXTRACTED #community/Community_739

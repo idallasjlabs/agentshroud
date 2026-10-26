@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/ci-workflows.md"
+source_file: "docs/vault/03 - Configuration/docker-compose.yml.md"
 type: "document"
-community: "EgressFilter"
-location: "L47"
+community: "Community 460"
+location: "L166"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/Community_460
 ---
 
 # Related Notes
 
 ## Connections
-- [[CI Workflows]] - `contains` [EXTRACTED]
+- [[docker-compose.yml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/Community_460

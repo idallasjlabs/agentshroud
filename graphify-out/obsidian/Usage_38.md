@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm/README.md"
+source_file: ".agents/skills/sav/README.md"
 type: "document"
-community: "MCP Tools Usage (MCPM) (2)"
-location: "L10"
+community: "Community 2094"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Tools_Usage_MCPM_2
+  - community/Community_2094
 ---
 
 # Usage
 
 ## Connections
-- [[MCP Tools Usage (MCPM)_2]] - `contains` [EXTRACTED]
+- [[System Audit Vault]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Tools_Usage_MCPM_2
+#graphify/document #graphify/EXTRACTED #community/Community_2094

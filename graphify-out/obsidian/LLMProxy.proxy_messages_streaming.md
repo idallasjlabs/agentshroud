@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "test_voice_stt_model_ab.py"
+community: "Community 129"
 location: "L1202-L1590"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_stt_model_abpy
+  - community/Community_129
 ---
 
 # LLMProxy.proxy_messages_streaming
@@ -29,8 +29,7 @@ tags:
 - [[StreamHead]] - `shares_data_with` [EXTRACTED]
 - [[_LOCAL_BACKEND_HINTS]] - `references` [EXTRACTED]
 - [[_run_stream (StreamHead test harness)]] - `calls` [EXTRACTED]
-- [[llm_api_proxy()]] - `calls` [EXTRACTED]
 - [[test_fieldflare_route_strips_unsupported_fields_streaming]] - `calls` [EXTRACTED]
 - [[test_streaming_connect_failure_keeps_in_stream_error_frame]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_stt_model_abpy
+#graphify/code #graphify/EXTRACTED #community/Community_129

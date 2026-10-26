@@ -1,19 +1,19 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "ProxyDashboard"
+community: "Community 156"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/Community_156
 ---
 
 # SecurityConfig
 
 ## Connections
-- [[dot-_load_config()_2]] - `references` [EXTRACTED]
+- [[._load_config()_2]] - `references` [EXTRACTED]
 - [[Security configuration for browser automation_2]] - `rationale_for` [EXTRACTED]
-- [[openclawskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
+- [[browse.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/code #graphify/EXTRACTED #community/Community_156

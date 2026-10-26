@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/__main__.py"
 type: "code"
-community: "ProgressiveLockdown"
+community: "Community 1006"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/Community_1006
 ---
 
 # __main__.py
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[server.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/code #graphify/EXTRACTED #community/Community_1006

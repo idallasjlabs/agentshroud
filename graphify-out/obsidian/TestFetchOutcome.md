@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "MCPPolicyEngine (2)"
+community: "Community 125"
 location: "L48"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPPolicyEngine_2
+  - community/Community_125
 ---
 
 # TestFetchOutcome
 
 ## Connections
-- [[dot-test_not_ok_on_non_2xx()]] - `method` [EXTRACTED]
-- [[dot-test_not_ok_without_content()]] - `method` [EXTRACTED]
-- [[dot-test_ok_requires_2xx_and_content()]] - `method` [EXTRACTED]
+- [[.test_not_ok_on_non_2xx()]] - `method` [EXTRACTED]
+- [[.test_not_ok_without_content()]] - `method` [EXTRACTED]
+- [[.test_ok_requires_2xx_and_content()]] - `method` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
-- [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
+- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
-- [[FetchOutcome_1]] - `uses` [INFERRED]
-- [[IntelReportStore_1]] - `uses` [INFERRED]
+- [[FetchOutcome]] - `uses` [INFERRED]
+- [[IntelReportStore]] - `uses` [INFERRED]
 - [[test_citation_verifier.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPPolicyEngine_2
+#graphify/code #graphify/INFERRED #community/Community_125

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: ".agents/agents/browser.md"
 type: "document"
-community: "test_security.py (2)"
-location: "L305"
+community: "Community 432"
+location: "L294"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_securitypy_2
+  - community/Community_432
 ---
 
 # "Browser timeout"
 
 ## Connections
-- [[Troubleshooting_2]] - `contains` [EXTRACTED]
+- [[Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_securitypy_2
+#graphify/document #graphify/EXTRACTED #community/Community_432

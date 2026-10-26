@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/IDENTITY.md"
 type: "concept"
-community: "AgentShroud Brand Quick Reference"
+community: "Community 581"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/AgentShroud_Brand_Quick_Reference
+  - community/Community_581
 ---
 
 # Owner vs Bot Telegram Identity Separation
@@ -15,4 +15,4 @@ tags:
 - [[Telegram Bot Setup (BotFather token + gateway config)]] - `conceptually_related_to` [INFERRED]
 - [[Trust-Differentiated Processing (RBAC tiers)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/AgentShroud_Brand_Quick_Reference
+#graphify/concept #graphify/INFERRED #community/Community_581

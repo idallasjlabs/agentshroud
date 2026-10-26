@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "code"
-community: "FileSandbox"
+community: "Community 141"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/Community_141
 ---
 
 # xml_leak_filter.py
 
 ## Connections
 - [[CVE-2026-34425 — Preflight Validation Bypass (Shell-Bleed)]] - `references` [EXTRACTED]
-- [[FilterResult]] - `contains` [EXTRACTED]
+- [[FilterResult_1]] - `contains` [EXTRACTED]
+- [[SKILL_200]] - `references` [EXTRACTED]
 - [[XMLLeakFilter]] - `contains` [EXTRACTED]
-- [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/Community_141

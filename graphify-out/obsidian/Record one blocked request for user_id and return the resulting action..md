@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "rationale"
-community: "AlertDispatcher (3)"
+community: "Community 75"
 location: "L83"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/Community_75
 ---
 
 # Record one blocked request for user_id and return the resulting action.
 
 ## Connections
-- [[dot-record_block()]] - `rationale_for` [EXTRACTED]
+- [[.record_block()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_75

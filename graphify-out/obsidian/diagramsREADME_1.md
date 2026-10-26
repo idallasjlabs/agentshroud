@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
+source_file: ".agents/skills/daedalus/SKILL.md"
 type: "document"
-community: "AgentShroud -- USPTO Provisional Patent Application"
+community: "Community 1918"
 location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_--_USPTO_Provisional_Patent_Application
+  - community/Community_1918
 ---
 
 # diagrams/README.md
 
 ## Connections
-- [[Output Format_31]] - `contains` [EXTRACTED]
+- [[Output Format_16]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Provisional_Patent_Application
+#graphify/document #graphify/EXTRACTED #community/Community_1918

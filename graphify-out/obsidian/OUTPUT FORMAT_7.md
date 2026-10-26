@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sav/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-sav/SKILL.md"
 type: "document"
-community: "migrate-cve-registry-ghsa.py"
+community: "Community 268"
 location: "L396"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/migrate-cve-registry-ghsapy
+  - community/Community_268
 ---
 
 # OUTPUT FORMAT
 
 ## Connections
-- [[System Audit Vault (Obsidian)]] - `contains` [EXTRACTED]
+- [[System Audit Vault (Obsidian)_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy
+#graphify/document #graphify/EXTRACTED #community/Community_268

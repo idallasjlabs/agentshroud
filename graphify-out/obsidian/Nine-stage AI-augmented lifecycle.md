@@ -1,20 +1,17 @@
 ---
 source_file: ".llm_settings/WORKFLOW.md"
 type: "concept"
-community: "Skill: Test-Driven Development (TDD)"
+community: "Community 743"
 location: "Lifecycle"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_Test-Driven_Development_TDD
+  - community/Community_743
 ---
 
 # Nine-stage AI-augmented lifecycle
 
 ## Connections
-- [[AI Engineering OS v1.0 integration (2026-03-08)]] - `references` [EXTRACTED]
 - [[Agent layer (skills, subagents, orchestration)]] - `references` [EXTRACTED]
-- [[CICD system capabilities (GitOps, self-healing, progressive delivery)]] - `conceptually_related_to` [EXTRACTED]
-- [[SRE practice area (observability, runbooks, postmortems)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD
+#graphify/concept #graphify/EXTRACTED #community/Community_743

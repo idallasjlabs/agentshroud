@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "rationale"
-community: "Sunday Upgrade prompt"
+community: "Community 48"
 location: "L258"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/Community_48
 ---
 
 # One attempt of ``fetch``: hard-bounded, IPv4-only after the first failure.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_guarded_fetch()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/rationale #graphify/EXTRACTED #community/Community_48

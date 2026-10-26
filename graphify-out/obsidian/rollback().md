@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "upgrade"
+community: "Community 66"
 location: "L285"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/upgrade
+  - community/Community_66
 ---
 
 # rollback()
 
 ## Connections
-- [[dot-test_no_history()]] - `calls` [EXTRACTED]
-- [[dot-test_no_previous_version()]] - `calls` [EXTRACTED]
-- [[dot-test_successful_rollback()]] - `calls` [EXTRACTED]
-- [[Any_69]] - `references` [EXTRACTED]
+- [[.test_no_history()]] - `calls` [EXTRACTED]
+- [[.test_no_previous_version()]] - `calls` [EXTRACTED]
+- [[.test_successful_rollback()]] - `calls` [EXTRACTED]
+- [[Any_73]] - `references` [EXTRACTED]
 - [[Rollback to the previous version.]] - `rationale_for` [EXTRACTED]
 - [[_get_db()]] - `calls` [EXTRACTED]
 - [[agentshroud_manager.py]] - `contains` [EXTRACTED]
@@ -23,6 +23,6 @@ tags:
 - [[rollback_bot()]] - `semantically_similar_to` [INFERRED]
 - [[rollback_version()]] - `calls` [EXTRACTED]
 - [[test_agentshroud_manager.py]] - `imports` [EXTRACTED]
-- [[version_routes.py_2]] - `imports` [EXTRACTED]
+- [[version_routes.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/upgrade
+#graphify/code #graphify/EXTRACTED #community/Community_66

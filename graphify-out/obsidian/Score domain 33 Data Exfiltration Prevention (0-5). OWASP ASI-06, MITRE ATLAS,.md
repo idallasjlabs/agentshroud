@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "test_mfa_guard.py"
+community: "Community 29"
 location: "L2036"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/Community_29
 ---
 
 # Score domain 33: Data Exfiltration Prevention (0-5). OWASP ASI-06, MITRE ATLAS,
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_score_data_exfiltration_prevention()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_29

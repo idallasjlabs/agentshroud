@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "document"
-community: "Mnemosyne — Retention Engineer (2)"
+community: "Community 748"
 location: "L168"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer_2
+  - community/Community_748
 ---
 
 # Two-Network Docker Architecture
@@ -16,4 +16,4 @@ tags:
 - [[AgentShroud System Architecture Document (SAD)]] - `contains` [EXTRACTED]
 - [[Network Isolation Benefits]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer_2
+#graphify/document #graphify/EXTRACTED #community/Community_748

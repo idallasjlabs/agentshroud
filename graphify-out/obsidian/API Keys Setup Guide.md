@@ -1,21 +1,21 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "iCloud Services Setup - Complete Guide"
+community: "Community 510"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services_Setup_-_Complete_Guide
+  - community/Community_510
 ---
 
 # API Keys Setup Guide
 
 ## Connections
-- [[Overview_17]] - `contains` [EXTRACTED]
-- [[Quick Reference_9]] - `contains` [EXTRACTED]
+- [[Overview_22]] - `contains` [EXTRACTED]
+- [[Quick Reference_13]] - `contains` [EXTRACTED]
 - [[SETUP_API_KEYS]] - `contains` [EXTRACTED]
-- [[Security Notes_6]] - `contains` [EXTRACTED]
+- [[Security Notes_3]] - `contains` [EXTRACTED]
 - [[Step 1 Save API Keys to Secret Files]] - `contains` [EXTRACTED]
 - [[Step 2 Restart OpenClaw Container]] - `contains` [EXTRACTED]
 - [[Step 3 Configure API Keys in OpenClaw]] - `contains` [EXTRACTED]
@@ -24,6 +24,6 @@ tags:
 - [[Step 6 Add Telegram Bot]] - `contains` [EXTRACTED]
 - [[Step 7 Test the Bot]] - `contains` [EXTRACTED]
 - [[Summary Checklist]] - `contains` [EXTRACTED]
-- [[Troubleshooting_1]] - `contains` [EXTRACTED]
+- [[Troubleshooting_52]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services_Setup_-_Complete_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_510

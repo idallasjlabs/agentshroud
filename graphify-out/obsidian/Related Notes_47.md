@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
+source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "AgentShroud Branding Assets Index"
-location: "L127"
+community: "Community 1082"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Branding_Assets_Index
+  - community/Community_1082
 ---
 
 # Related Notes
 
 ## Connections
-- [[agentshroud-gateway_2]] - `contains` [EXTRACTED]
+- [[Pydantic]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Branding_Assets_Index
+#graphify/document #graphify/EXTRACTED #community/Community_1082

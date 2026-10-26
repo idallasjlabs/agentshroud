@@ -1,32 +1,32 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "soc/router.py"
+community: "Community 11"
 location: "L44"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/soc/routerpy
+  - community/Community_11
 ---
 
 # ViolationType
 
 ## Connections
-- [[A2APolicyEngine_3]] - `uses` [INFERRED]
-- [[A2AProxy_1]] - `uses` [INFERRED]
+- [[A2APolicyEngine]] - `uses` [INFERRED]
+- [[A2AProxy]] - `uses` [INFERRED]
 - [[A2AProxyResult]] - `uses` [INFERRED]
-- [[Any_39]] - `uses` [INFERRED]
-- [[Any_67]] - `uses` [INFERRED]
+- [[Any_11]] - `uses` [INFERRED]
+- [[Any_19]] - `uses` [INFERRED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[AuditChainEntry]] - `uses` [INFERRED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[HermesA2AForwarder]] - `uses` [INFERRED]
 - [[ParsedA2ARequest]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
-- [[PipelineResult_1]] - `uses` [INFERRED]
-- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
+- [[PipelineResult]] - `uses` [INFERRED]
 - [[ProgressiveTrustConfig_1]] - `uses` [INFERRED]
-- [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
 - [[TestBackwardCompat]] - `uses` [INFERRED]
 - [[TestEnforcementMode]] - `uses` [INFERRED]
 - [[TestEnforcementModeResolver]] - `uses` [INFERRED]
@@ -39,17 +39,17 @@ tags:
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
 - [[TrustLevel_2]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_2]] - `uses` [INFERRED]
+- [[TrustManager_4]] - `uses` [INFERRED]
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[Types of security violations.]] - `rationale_for` [EXTRACTED]
 - [[ViolationType_1]] - `uses` [INFERRED]
 - [[_StubForwarder_1]] - `uses` [INFERRED]
 - [[a2a_proxy.py]] - `imports` [EXTRACTED]
-- [[pipeline.py_1]] - `imports` [EXTRACTED]
+- [[pipeline.py]] - `imports` [EXTRACTED]
 - [[progressive_trust_config.py]] - `contains` [EXTRACTED]
 - [[test_a2a_trust_scoring.py]] - `imports` [EXTRACTED]
 - [[test_progressive_trust_integration.py]] - `imports` [EXTRACTED]
 - [[trust_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/soc/routerpy
+#graphify/code #graphify/INFERRED #community/Community_11

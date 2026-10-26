@@ -1,22 +1,20 @@
 ---
-source_file: ".agents/skills/i-crpr/SKILL.md"
+source_file: ".agents/agents/i-crpr.md"
 type: "document"
-community: "1.4 Implementation Plan"
-location: "L5"
+community: "Community 1276"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/14_Implementation_Plan
+  - community/Community_1276
 ---
 
 # Skill: Create PR with Pre-Flight Audit (CRPR)
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-crprSKILL]] - `contains` [EXTRACTED]
-- [[Guardrails_9]] - `contains` [EXTRACTED]
-- [[Invocation_6]] - `contains` [EXTRACTED]
-- [[Role_66]] - `contains` [EXTRACTED]
+- [[Guardrails_2]] - `contains` [EXTRACTED]
+- [[Invocation]] - `contains` [EXTRACTED]
+- [[Role_12]] - `contains` [EXTRACTED]
 - [[Step 0 — Pre-flight checks]] - `contains` [EXTRACTED]
 - [[Step 1 — Check for an in-progress merge]] - `contains` [EXTRACTED]
 - [[Step 2 — Merge without committing]] - `contains` [EXTRACTED]
@@ -27,5 +25,6 @@ tags:
 - [[Step 4 — Push the branch]] - `contains` [EXTRACTED]
 - [[Step 5 — Generate the PR description]] - `contains` [EXTRACTED]
 - [[Step 6 — Create the PR]] - `contains` [EXTRACTED]
+- [[i-crpr]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/14_Implementation_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_1276

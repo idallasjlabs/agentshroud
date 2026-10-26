@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "AgentTarget"
+community: "Community 112"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/Community_112
 ---
 
 # forwarder()
@@ -16,4 +16,4 @@ tags:
 - [[HTTPForwarder]] - `calls` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/Community_112

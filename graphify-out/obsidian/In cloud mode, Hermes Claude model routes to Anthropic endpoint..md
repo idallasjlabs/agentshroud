@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "TestCollaboratorPromptClassifiers"
+community: "Community 506"
 location: "L699"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestCollaboratorPromptClassifiers
+  - community/Community_506
 ---
 
 # In cloud mode, Hermes Claude model routes to Anthropic endpoint.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_hermes_cloud_mode_uses_anthropic_endpoint()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers
+#graphify/rationale #graphify/EXTRACTED #community/Community_506

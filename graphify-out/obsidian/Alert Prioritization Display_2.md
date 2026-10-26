@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ux/SKILL.md"
+source_file: ".cursor/agents/i-ux.md"
 type: "document"
-community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE (3)"
-location: "L232"
+community: "Community 342"
+location: "L235"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE_3
+  - community/Community_342
 ---
 
 # Alert Prioritization Display
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Dashboard UX_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE_3
+#graphify/document #graphify/EXTRACTED #community/Community_342

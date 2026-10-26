@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/VERIFICATION_RESULTS.md"
 type: "document"
-community: "TestSecurityFeatures"
+community: "Community 478"
 location: "L223"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSecurityFeatures
+  - community/Community_478
 ---
 
 # Manual Testing (Next Session)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Testing Recommendations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSecurityFeatures
+#graphify/document #graphify/EXTRACTED #community/Community_478

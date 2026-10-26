@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "ApprovalHardening"
+community: "Community 91"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/Community_91
 ---
 
 # Approval Queue
@@ -19,4 +19,4 @@ tags:
 - [[system-requirements]] - `references` [EXTRACTED]
 - [[use-cases]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/concept #graphify/EXTRACTED #community/Community_91

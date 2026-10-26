@@ -1,14 +1,14 @@
 ---
 source_file: "firmware/voice-terminal/main/ws_client.h"
 type: "code"
-community: "SecurityPipeline.process_outbound"
+community: "Community 1772"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipelineprocess_outbound
+  - community/Community_1772
 ---
 
 # ws_client.h
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipelineprocess_outbound
+#graphify/code #graphify/EXTRACTED #community/Community_1772

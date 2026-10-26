@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-pm/SKILL.md"
+source_file: ".agents/agents/i-pm.md"
 type: "document"
-community: "Crash Recovery"
-location: "L26"
+community: "Community 1011"
+location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crash_Recovery
+  - community/Community_1011
 ---
 
 # Continuity Files
@@ -17,4 +17,4 @@ tags:
 - [[`session-notesCONTINUE.md` (always current)]] - `contains` [EXTRACTED]
 - [[`session-notesSESSION_SUMMARY_YYYY-MM-DD.md` (session report)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crash_Recovery
+#graphify/document #graphify/EXTRACTED #community/Community_1011

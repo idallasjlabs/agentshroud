@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-offense/README.md"
+source_file: "docker/config/openclaw/skills/i-bs/README.md"
 type: "document"
-community: "TestOutboundInfoFilter"
+community: "Community 58"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/Community_58
 ---
 
 # Related Skills
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)_1]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/Community_58

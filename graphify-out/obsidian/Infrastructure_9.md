@@ -1,17 +1,17 @@
 ---
-source_file: "docs/runbooks/RUNBOOK.md"
+source_file: ".omp/agents/sec-offense.md"
 type: "document"
-community: "canary.py"
-location: "L3"
+community: "Community 1083"
+location: "L368"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/canarypy
+  - community/Community_1083
 ---
 
 # Infrastructure
 
 ## Connections
-- [[AgentShroud Deployment & Troubleshooting Runbook]] - `contains` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/canarypy
+#graphify/document #graphify/EXTRACTED #community/Community_1083

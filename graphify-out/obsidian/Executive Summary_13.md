@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md"
+source_file: "docs/security/ws-e-audit-v1.2.md"
 type: "document"
-community: "agent_cve_registry.py"
-location: "L3"
+community: "Community 734"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agent_cve_registrypy
+  - community/Community_734
 ---
 
 # Executive Summary
 
 ## Connections
-- [[Secrets Usage and Collaborator Checklist]] - `contains` [EXTRACTED]
+- [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agent_cve_registrypy
+#graphify/document #graphify/EXTRACTED #community/Community_734

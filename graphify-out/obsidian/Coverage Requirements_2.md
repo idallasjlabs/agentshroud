@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
+source_file: ".cursor/agents/sec-offense.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester"
-location: "L323"
+community: "Community 1077"
+location: "L325"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester
+  - community/Community_1077
 ---
 
 # Coverage Requirements
 
 ## Connections
-- [[Writing Exploit Tests_1]] - `contains` [EXTRACTED]
+- [[Writing Exploit Tests_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester
+#graphify/document #graphify/EXTRACTED #community/Community_1077

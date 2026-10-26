@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "Community 7"
 location: "L173"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # PIISanitizer
@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[DataLedger]] - `uses` [INFERRED]
-- [[GatewayConfig_3]] - `uses` [INFERRED]
-- [[LedgerConfig_1]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer_3]] - `uses` [INFERRED]
-- [[RouterConfig_1]] - `uses` [INFERRED]
-- [[sanitizer()_2]] - `references` [EXTRACTED]
+- [[GatewayConfig_1]] - `uses` [INFERRED]
+- [[LedgerConfig]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[RouterConfig]] - `uses` [INFERRED]
+- [[sanitizer()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPPermissionManager
+#graphify/code #graphify/INFERRED #community/Community_7

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ps/README.md"
+source_file: "docker/config/hermes/skills/i-sad/README.md"
 type: "document"
-community: "OpenClaw Bot SSH Configuration"
+community: "Community 90"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_SSH_Configuration
+  - community/Community_90
 ---
 
 # Purpose
 
 ## Connections
-- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
+- [[System Audit Documentation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration
+#graphify/document #graphify/EXTRACTED #community/Community_90

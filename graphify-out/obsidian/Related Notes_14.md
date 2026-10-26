@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
 type: "document"
-community: "SSH Proxy Errors"
-location: "L97"
+community: "Community 1136"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Proxy_Errors
+  - community/Community_1136
 ---
 
 # Related Notes
 
 ## Connections
-- [[SSH Proxy Errors]] - `contains` [EXTRACTED]
+- [[installer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Proxy_Errors
+#graphify/document #graphify/EXTRACTED #community/Community_1136

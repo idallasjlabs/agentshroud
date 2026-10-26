@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/SPRINT_CADENCE.md"
 type: "document"
-community: "PermissionLevel (3)"
+community: "Community 1104"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PermissionLevel_3
+  - community/Community_1104
 ---
 
 # GSD Issue Requirements
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Sprint Cadence Decision]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PermissionLevel_3
+#graphify/document #graphify/EXTRACTED #community/Community_1104

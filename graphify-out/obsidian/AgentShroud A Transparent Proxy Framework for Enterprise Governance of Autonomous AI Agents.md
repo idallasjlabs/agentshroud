@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "test_telegram_proxy_inbound.py"
+community: "Community 330"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/Community_330
 ---
 
 # AgentShroud: A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents
@@ -19,11 +19,12 @@ tags:
 - [[III. Threat Model]] - `contains` [EXTRACTED]
 - [[IV. System Architecture]] - `contains` [EXTRACTED]
 - [[IX. Discussion]] - `contains` [EXTRACTED]
-- [[References_1]] - `contains` [EXTRACTED]
+- [[References_3]] - `contains` [EXTRACTED]
+- [[V. Security Modules]] - `contains` [EXTRACTED]
 - [[VI. STPA-Sec Analysis]] - `contains` [EXTRACTED]
 - [[VII. v0.8.0 Remediation]] - `contains` [EXTRACTED]
 - [[VIII. Evaluation]] - `contains` [EXTRACTED]
 - [[X. Conclusion and Future Work]] - `contains` [EXTRACTED]
 - [[agentshroud-ieee-paper]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/document #graphify/EXTRACTED #community/Community_330

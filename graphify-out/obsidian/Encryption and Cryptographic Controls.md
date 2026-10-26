@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "MiddlewareManager (5)"
+community: "Community 164"
 location: "L324"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/Community_164
 ---
 
 # Encryption and Cryptographic Controls
@@ -17,4 +17,4 @@ tags:
 - [[Memory Encryption]] - `contains` [EXTRACTED]
 - [[Transport Encryption]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/document #graphify/EXTRACTED #community/Community_164

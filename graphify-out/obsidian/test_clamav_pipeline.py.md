@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "asyncio"
+community: "Community 220"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/Community_220
 ---
 
 # test_clamav_pipeline.py
 
 ## Connections
-- [[Tests for ClamAV inline pipeline integration. Covers - scan_bytes() happy…]] - `rationale_for` [EXTRACTED]
+- [[PipelineAction]] - `imports` [EXTRACTED]
+- [[SecurityPipeline]] - `imports` [EXTRACTED]
 - [[_b64_payload()]] - `contains` [EXTRACTED]
 - [[_instant_wait_for()]] - `contains` [EXTRACTED]
 - [[_make_pipeline()]] - `contains` [EXTRACTED]
 - [[_run_capture()]] - `contains` [EXTRACTED]
 - [[_timeout_wait_for()]] - `contains` [EXTRACTED]
-- [[asyncio_3]] - `imports` [EXTRACTED]
 - [[clamav_scanner.py]] - `imports_from` [EXTRACTED]
 - [[clamd_sock_path()]] - `contains` [EXTRACTED]
+- [[scan_bytes()]] - `imports` [EXTRACTED]
 - [[test_apt_repo_signatures_are_verified()]] - `contains` [EXTRACTED]
-- [[test_canary.py]] - `semantically_similar_to` [INFERRED]
 - [[test_clamav_comes_from_proposed_updates_and_nothing_else_does()]] - `contains` [EXTRACTED]
 - [[test_clamd_available_false_for_stale_socket_left_by_killed_daemon()]] - `contains` [EXTRACTED]
 - [[test_clamd_available_false_when_socket_missing()]] - `contains` [EXTRACTED]
@@ -44,4 +44,4 @@ tags:
 - [[test_scan_bytes_infected()]] - `contains` [EXTRACTED]
 - [[test_scan_bytes_timeout()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/Community_220

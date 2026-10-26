@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm/README.md"
+source_file: ".agents/skills/mnemosyne/README.md"
 type: "document"
-community: "MCP Tools Usage (MCPM) (2)"
+community: "Community 2086"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Tools_Usage_MCPM_2
+  - community/Community_2086
 ---
 
 # Related Skills
 
 ## Connections
-- [[MCP Tools Usage (MCPM)_2]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Tools_Usage_MCPM_2
+#graphify/document #graphify/EXTRACTED #community/Community_2086

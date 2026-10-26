@@ -1,0 +1,619 @@
+---
+type: community
+members: 497
+---
+
+# Community 6
+
+**Members:** 497 nodes
+
+## Members
+- [[.__init__()_112]] - code - gateway/security/rbac.py
+- [[.__init__()_186]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.__init__()_187]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[._build_permission_matrix()]] - code - gateway/security/rbac.py
+- [[._build_tool_permissions()]] - code - gateway/security/rbac.py
+- [[._handler()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[._make_rbac()]] - code - gateway/tests/test_rbac.py
+- [[._path()]] - code - gateway/security/report_store.py
+- [[.audit_privilege_change()]] - code - gateway/security/rbac.py
+- [[.can_user_manage_user()]] - code - gateway/security/rbac.py
+- [[.check_group_permission()]] - code - gateway/security/rbac.py
+- [[.check_permission()]] - code - gateway/security/rbac.py
+- [[.check_permission()_2]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.check_tool_permission()_1]] - code - gateway/security/rbac.py
+- [[.get_role_hierarchy()]] - code - gateway/security/rbac.py
+- [[.get_user_groups_by_id()]] - code - gateway/security/rbac_config.py
+- [[.get_user_permissions_summary()]] - code - gateway/security/rbac.py
+- [[.get_user_role()]] - code - gateway/security/rbac.py
+- [[.get_user_role()_1]] - code - gateway/security/rbac_config.py
+- [[.get_users_by_role()]] - code - gateway/security/rbac_config.py
+- [[.is_admin_or_higher()]] - code - gateway/security/rbac_config.py
+- [[.is_collaborator_or_higher()]] - code - gateway/security/rbac_config.py
+- [[.is_member()_1]] - code - gateway/security/rbac_config.py
+- [[.is_operator_or_higher()]] - code - gateway/security/rbac_config.py
+- [[.is_owner()_1]] - code - gateway/security/rbac_config.py
+- [[.is_privilege_escalation()]] - code - gateway/security/rbac.py
+- [[.list_users_and_roles()]] - code - gateway/security/rbac.py
+- [[.path_not_empty()]] - code - gateway/ingest_api/models.py
+- [[.query()]] - code - gateway/ingest_api/ledger.py
+- [[.set_user_role()]] - code - gateway/security/rbac.py
+- [[.set_user_role()_1]] - code - gateway/security/rbac_config.py
+- [[.setup_method()_20]] - code - gateway/tests/test_rbac.py
+- [[.setup_method()_21]] - code - gateway/tests/test_rbac.py
+- [[.subscribe()_1]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.teardown_method()_4]] - code - gateway/tests/test_rbac.py
+- [[.test_add_remove_member()]] - code - gateway/tests/test_rbac.py
+- [[.test_alerts_accepted_from_localhost()]] - code - gateway/tests/test_main_endpoints.py
+- [[.test_alerts_rejected_from_non_localhost()]] - code - gateway/tests/test_main_endpoints.py
+- [[.test_allowed()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_auto_groups_created()]] - code - gateway/tests/test_rbac.py
+- [[.test_bearer_header_valid()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_blocked()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_cannot_create_reserved_group_id()]] - code - gateway/tests/test_rbac.py
+- [[.test_cannot_delete_auto_group()]] - code - gateway/tests/test_rbac.py
+- [[.test_collects_and_converts()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_command_invalid_json_ignored()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_command_message_updates_subscription()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_conversion_error_path()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_conversion_error_path()_1]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_conversion_error_path()_2]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_conversion_error_path()_3]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_conversion_error_path()_4]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_cookie_raw_bearer_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_create_custom_group()]] - code - gateway/tests/test_rbac.py
+- [[.test_default_config_initialization()]] - code - gateway/tests/test_rbac.py
+- [[.test_delete_custom_group()]] - code - gateway/tests/test_rbac.py
+- [[.test_dict_allowed_without_reason()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_dict_blocked_with_reason()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_dict_form()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_empty_token_or_config()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_everyone_group_contains_all_users()]] - code - gateway/tests/test_rbac.py
+- [[.test_fan_out_filters_and_forwards()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_fan_out_survives_coerce_exception()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_full_context_summary_from_details()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_full_dict()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_get_caller_passthrough()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_get_rbac_manager_builds_real_manager()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_get_users_by_role()]] - code - gateway/tests/test_rbac.py
+- [[.test_initial_invalid_json_ignored()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_initial_subscribe_message_sets_filter()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_initial_timeout_subscribes_to_all()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_inner_timeout_continues_loop()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_invalid_action_resource_combinations()]] - code - gateway/tests/test_rbac.py
+- [[.test_invalid_user_id()]] - code - gateway/tests/test_rbac.py
+- [[.test_is_group_admin_with_teams_config()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_is_group_admin_without_teams_config()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_is_member_unknown_group_returns_false()]] - code - gateway/tests/test_rbac.py
+- [[.test_is_owner_delegates_to_config()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_keepalive_breaks_on_construction_error()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_keepalive_sends_pings()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_list_users_and_roles()]] - code - gateway/tests/test_rbac.py
+- [[.test_match()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_minimal_dict_uses_fallbacks()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_mismatch()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_missing_timestamp_uses_now()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_no_credentials_raises_401()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_none_bus_returns_immediately()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_none_store_returns_empty()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_object_form()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_object_form_with_defaults()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_owner_and_collaborators_can_be_overridden_from_env()]] - code - gateway/tests/test_rbac.py
+- [[.test_permission_check_with_context()]] - code - gateway/tests/test_rbac.py
+- [[.test_permission_matrix_admin()]] - code - gateway/tests/test_rbac.py
+- [[.test_permission_matrix_collaborator()]] - code - gateway/tests/test_rbac.py
+- [[.test_permission_matrix_owner()]] - code - gateway/tests/test_rbac.py
+- [[.test_permission_matrix_viewer()]] - code - gateway/tests/test_rbac.py
+- [[.test_rbac_allows_authorized_access()]] - code - gateway/tests/test_rbac.py
+- [[.test_rbac_blocks_unauthorized_access()]] - code - gateway/tests/test_rbac.py
+- [[.test_rbac_handles_missing_user_id()]] - code - gateway/tests/test_rbac.py
+- [[.test_rbac_initialization_in_middleware()]] - code - gateway/tests/test_rbac.py
+- [[.test_rbac_manager_without_config()]] - code - gateway/tests/test_rbac.py
+- [[.test_require_allowed_does_not_raise()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_require_denied_raises_403_with_reason()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_require_denied_without_reason_uses_forbidden()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_role_assignment()]] - code - gateway/tests/test_rbac.py
+- [[.test_role_hierarchy_checks()]] - code - gateway/tests/test_rbac.py
+- [[.test_role_hierarchy_levels()]] - code - gateway/tests/test_rbac.py
+- [[.test_sanitized()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_send_event_serializes()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_send_event_swallows_transport_error()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_session_cookie_valid()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_set_user_role()]] - code - gateway/tests/test_rbac.py
+- [[.test_severity_enum_passthrough()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_severity_filter_drops_lower()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_slack_group_contains_slack_ids()]] - code - gateway/tests/test_rbac.py
+- [[.test_string_mapping()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_summary_falls_back_to_block_reason()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_summary_falls_back_to_event_type()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_summary_falls_back_to_message()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_summary_from_agent_id()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_summary_from_non_allowed_action()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_telegram_group_contains_numeric_ids()]] - code - gateway/tests/test_rbac.py
+- [[.test_tool_tier_permissions()]] - code - gateway/tests/test_rbac.py
+- [[.test_user_key_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_user_management_hierarchy()]] - code - gateway/tests/test_rbac.py
+- [[.test_user_permissions_summary()]] - code - gateway/tests/test_rbac.py
+- [[.test_wrong_bearer_raises_401()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_x_soc_token_header_valid()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.unsubscribe()_1]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.validate_base64()]] - code - gateway/ingest_api/models.py
+- [[.wire_teams_config()]] - code - gateway/security/rbac_config.py
+- [[apialerts must reject non-localhost callers (S1 fix).]] - rationale - gateway/tests/test_main_endpoints.py
+- [[1Password credential proxy (P2 credential isolation).      Reads a secret from]] - rationale - gateway/ingest_api/main.py
+- [[Action_1]] - code - gateway/security/rbac.py
+- [[Actions that can be performed in the system.]] - rationale - gateway/security/rbac.py
+- [[Add a domain to the local denylist.      Authentication required.]] - rationale - gateway/ingest_api/main.py
+- [[Add an egress allowdeny rule.]] - rationale - gateway/ingest_api/main.py
+- [[Add security headers to all responses (defense-in-depth).      Also catches Pyth]] - rationale - gateway/ingest_api/main.py
+- [[Alias for Hermes Anthropic SDK's apiv1 preflight path.      Some Anthropic S]] - rationale - gateway/ingest_api/main.py
+- [[Alias for hermes v0.16.0+'s OpenAI client.      Hermes upgraded to v0.16.0 on 20]] - rationale - gateway/ingest_api/main.py
+- [[Any_7]] - code - gateway/ingest_api/ledger.py
+- [[Any_55]] - code - gateway/security/rbac.py
+- [[Any_72]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[Approval modes for rules.]] - rationale - gateway/security/egress_approval.py
+- [[ApprovalDecision]] - code - gateway/ingest_api/models.py
+- [[ApprovalMode]] - code - gateway/security/egress_approval.py
+- [[Approve an egress request (oncesessionpermanent).]] - rationale - gateway/ingest_api/main.py
+- [[Audit feed for private-data access policy violations.]] - rationale - gateway/ingest_api/main.py
+- [[AuthRequired]] - code - gateway/ingest_api/main.py
+- [[Authentication dependency for protected endpoints]] - rationale - gateway/ingest_api/main.py
+- [[Build normalized scanner summary for SOCdashboard telemetry.]] - rationale - gateway/ingest_api/main.py
+- [[Build the permission matrix for all roles.]] - rationale - gateway/security/rbac.py
+- [[Build tool tier permissions for each role.]] - rationale - gateway/security/rbac.py
+- [[CIS Docker Benchmark checks for this container.]] - rationale - gateway/ingest_api/main.py
+- [[CORS middleware that uses config from app_state]] - rationale - gateway/ingest_api/main.py
+- [[Catch-all error handler      Never leaks stack traces or internal details to cli]] - rationale - gateway/ingest_api/main.py
+- [[Check if a user can perform an action on a group.          Permission matrix]] - rationale - gateway/security/rbac.py
+- [[Check if a user can use tools of a specific tier.]] - rationale - gateway/security/rbac.py
+- [[Check if a user has permission to perform an action on a resource.]] - rationale - gateway/security/rbac.py
+- [[Check if one user can manage another user.]] - rationale - gateway/security/rbac.py
+- [[Check if user has admin privileges or higher.]] - rationale - gateway/security/rbac_config.py
+- [[Check if user has collaborator privileges or higher.]] - rationale - gateway/security/rbac_config.py
+- [[Check if user has operator privileges or higher (admin, operator, owner).]] - rationale - gateway/security/rbac_config.py
+- [[Check if user is the owner (any platform).]] - rationale - gateway/security/rbac_config.py
+- [[Close sqlite-holding sub-modules so Python 3.13's GC does not         finalize t]] - rationale - gateway/tests/test_rbac.py
+- [[Comprehensive container security profile — runs all applicable checks.]] - rationale - gateway/ingest_api/main.py
+- [[Comprehensive security integration test — tests every module with real payloads.]] - rationale - gateway/ingest_api/main.py
+- [[Configuration for Role-Based Access Control.]] - rationale - gateway/security/rbac_config.py
+- [[Constant-time comparison against the gateway shared secret.]] - rationale - gateway/soc/auth.py
+- [[Cross-signal SOC correlation summary.]] - rationale - gateway/ingest_api/main.py
+- [[Deny an egress request (oncesessionpermanent).]] - rationale - gateway/ingest_api/main.py
+- [[Discard (keep quarantined) a blocked message after admin review.]] - rationale - gateway/ingest_api/main.py
+- [[Discard a blocked outbound message after admin review.]] - rationale - gateway/ingest_api/main.py
+- [[Enabledisable emergency block-all for outbound egress.]] - rationale - gateway/ingest_api/main.py
+- [[Env overrides should drive runtime ownercollaborator identity.]] - rationale - gateway/tests/test_rbac.py
+- [[Exception_1]] - code - gateway/ingest_api/main.py
+- [[Execute SSH command with validation and approval]] - rationale - gateway/ingest_api/main.py
+- [[FastAPI dependency resolve Bearercookie token → user_id → role.]] - rationale - gateway/soc/auth.py
+- [[Fetch one report (metadata + content). Authentication required.]] - rationale - gateway/ingest_api/main.py
+- [[Forget this' - permanently delete a ledger entry      Implements right to erasur]] - rationale - gateway/ingest_api/main.py
+- [[Generate comprehensive security health report.]] - rationale - gateway/ingest_api/main.py
+- [[Get DNS blocklist statistics.      Returns current DNS filtering statistics from]] - rationale - gateway/ingest_api/main.py
+- [[Get a single ledger entry by ID      Authentication required.]] - rationale - gateway/ingest_api/main.py
+- [[Get a summary of permissions for a user.]] - rationale - gateway/security/rbac.py
+- [[Get all users with a specific role.]] - rationale - gateway/security/rbac_config.py
+- [[Get kill switch monitor status and recent results.      Returns         Current]] - rationale - gateway/ingest_api/main.py
+- [[Get permissions summary for a user (admin+ only).]] - rationale - gateway/ingest_api/main.py
+- [[Get permissions summary for the current user.]] - rationale - gateway/ingest_api/main.py
+- [[Get role for a user ID.]] - rationale - gateway/security/rbac_config.py
+- [[Get role hierarchy levels (higher number = more privileges).]] - rationale - gateway/security/rbac.py
+- [[Get the role for a user.]] - rationale - gateway/security/rbac.py
+- [[GroupRegistry]] - code - gateway/security/rbac_config.py
+- [[HTTP CONNECT proxy traffic statistics.      Shows allowedblocked counts and rec]] - rationale - gateway/ingest_api/main.py
+- [[Handler returns ok=True when called from 127.0.0.1.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Initialize RBAC manager with configuration.]] - rationale - gateway/security/rbac.py
+- [[LedgerConfig_1]] - code - gateway/ingest_api/ledger.py
+- [[LedgerEntry]] - code - gateway/ingest_api/ledger.py
+- [[LedgerEntry_1]] - code - gateway/ingest_api/models.py
+- [[LedgerQueryResponse]] - code - gateway/ingest_api/ledger.py
+- [[LedgerQueryResponse_1]] - code - gateway/ingest_api/models.py
+- [[List all configured agent targets with health status      Authentication require]] - rationale - gateway/ingest_api/main.py
+- [[List all security modules and their status.]] - rationale - gateway/ingest_api/main.py
+- [[List all users and their roles (admin+ only).]] - rationale - gateway/ingest_api/main.py
+- [[List all users and their roles (admin+ only)._1]] - rationale - gateway/security/rbac.py
+- [[List configured SSH hosts (names only)]] - rationale - gateway/ingest_api/main.py
+- [[List pending interactive egress approval requests.]] - rationale - gateway/ingest_api/main.py
+- [[List quarantined blocked inbound messages for admin review.]] - rationale - gateway/ingest_api/main.py
+- [[List quarantined blocked outbound messages for admin review.]] - rationale - gateway/ingest_api/main.py
+- [[List recent egress attempts for dashboardSOC triage.]] - rationale - gateway/ingest_api/main.py
+- [[List report metadata (no content), newest first, optionally by bot.      Cross-b]] - rationale - gateway/ingest_api/main.py
+- [[Log all incoming requests      Never logs request bodies (may contain PII).]] - rationale - gateway/ingest_api/main.py
+- [[Log privilege changes; emit WARNING for escalations (unusual patterns).]] - rationale - gateway/security/rbac.py
+- [[MCP tool call interception endpoint.      Receives an MCP tool call, runs it thr]] - rationale - gateway/ingest_api/main.py
+- [[MCP tool result outbound audit endpoint.      Receives a tool result from the bo]] - rationale - gateway/ingest_api/main.py
+- [[MCPProxyRequest]] - code - gateway/ingest_api/main.py
+- [[MCPResultRequest]] - code - gateway/ingest_api/main.py
+- [[Manages user groups including auto-groups and custom groups.]] - rationale - gateway/security/rbac_config.py
+- [[Merge group membership and admin IDs from TeamsConfig into RBAC.          Called]] - rationale - gateway/security/rbac_config.py
+- [[Minimal RBAC stand-in with controllable check_permission results.]] - rationale - gateway/tests/test_soc_realtime_coverage.py
+- [[Minimal health check endpoint — no authentication required.      Returns only ba]] - rationale - gateway/ingest_api/routes/health.py
+- [[OpProxyRequest]] - code - gateway/ingest_api/main.py
+- [[Paginated ledger query results]] - rationale - gateway/ingest_api/models.py
+- [[Per-tool call rate limit configuration.]] - rationale - gateway/security/tool_acl.py
+- [[PermissionResult]] - code - gateway/security/rbac.py
+- [[Persist last scanner result and emit live event-bus telemetry.]] - rationale - gateway/ingest_api/main.py
+- [[Preview egress risk heuristic for domainport combos.]] - rationale - gateway/ingest_api/main.py
+- [[Proxy Anthropic API calls through security pipeline.]] - rationale - gateway/ingest_api/main.py
+- [[Proxy Google Gemini API calls through security pipeline.]] - rationale - gateway/ingest_api/main.py
+- [[Proxy bot Slack Web API calls through SecurityPipeline.      Restricted to the i]] - rationale - gateway/ingest_api/main.py
+- [[Proxy native Ollama API calls through security pipeline.]] - rationale - gateway/ingest_api/main.py
+- [[Public FastAPI dependency injected by SCL route handlers.]] - rationale - gateway/soc/auth.py
+- [[Query SSH audit entries from ledger]] - rationale - gateway/ingest_api/main.py
+- [[Query ledger entries with pagination and filters          Args             page]] - rationale - gateway/ingest_api/ledger.py
+- [[Query the data ledger      Returns paginated results with optional filters.]] - rationale - gateway/ingest_api/main.py
+- [[RBACConfig]] - code - gateway/security/rbac.py
+- [[RBACConfig_1]] - code - gateway/security/rbac_config.py
+- [[RBACConfig_2]] - code - gateway/tests/test_privacy_policy.py
+- [[RBACConfig_3]] - code - gateway/tests/test_rbac.py
+- [[RBACManager_1]] - code - gateway/security/rbac.py
+- [[Receive structured security alerts from gateway-internal scripts.      Called by]] - rationale - gateway/ingest_api/main.py
+- [[Redirect bare hermes-dashboard to hermes-dashboard so assets resolve.]] - rationale - gateway/ingest_api/main.py
+- [[Regression tests for v1beta proxy response handling.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Reject request bodies larger than 1MB before parsing.      Checks Content-Length]] - rationale - gateway/ingest_api/main.py
+- [[Release a blocked outbound message for adminmanual resend flow.]] - rationale - gateway/ingest_api/main.py
+- [[Release a quarantined message for admin workflow follow-up.]] - rationale - gateway/ingest_api/main.py
+- [[Remove a domain from the local denylist.      Authentication required.]] - rationale - gateway/ingest_api/main.py
+- [[Remove all gateway-password env vars and clear token stores.]] - rationale - gateway/tests/test_soc_realtime_coverage.py
+- [[Remove an egress rule by domain.]] - rationale - gateway/ingest_api/main.py
+- [[Request_1]] - code - gateway/ingest_api/main.py
+- [[Request body for POST credentialsop-proxy.]] - rationale - gateway/ingest_api/main.py
+- [[Request body for POST mcpproxy — intercept a single MCP tool call.]] - rationale - gateway/ingest_api/main.py
+- [[Request body for POST mcpresult — submit a tool result for outbound audit.]] - rationale - gateway/ingest_api/main.py
+- [[Request to execute an SSH command]] - rationale - gateway/ingest_api/models.py
+- [[Request to write file content to an allowlisted SSH host.      Unlike SSHExecReq]] - rationale - gateway/ingest_api/models.py
+- [[Resolve trusted effective identity and prevent owner spoofing via body.]] - rationale - gateway/ingest_api/main.py
+- [[Resource_1]] - code - gateway/security/rbac.py
+- [[Resources that can be accessed in the system.]] - rationale - gateway/security/rbac.py
+- [[Response from POST sshwrite_file.      success reflects whether the remote wri]] - rationale - gateway/ingest_api/models.py
+- [[Response from SSH command execution]] - rationale - gateway/ingest_api/models.py
+- [[Result of the shared outbound text security scan.      processed a scan path (c]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return LLM proxy statistics.]] - rationale - gateway/ingest_api/main.py
+- [[Return True if changing from_role → to_role represents an escalation.]] - rationale - gateway/security/rbac.py
+- [[Return True if the recipient is in the allowlist.]] - rationale - gateway/ingest_api/main.py
+- [[Return True if user_id is in the group.]] - rationale - gateway/security/rbac_config.py
+- [[Return a paginated list of blocked domains.      Authentication required.]] - rationale - gateway/ingest_api/main.py
+- [[Return current private-data policy configuration and enforcement state.]] - rationale - gateway/ingest_api/main.py
+- [[Return egress rules and emergency-block status.]] - rationale - gateway/ingest_api/main.py
+- [[Return member IDs of a group, or empty list if no teams config.]] - rationale - gateway/security/rbac_config.py
+- [[Return normalized scanner state + latest results for SOCdashboard views.]] - rationale - gateway/ingest_api/main.py
+- [[Return recent Falco runtime security alerts with summary.]] - rationale - gateway/ingest_api/main.py
+- [[Return recent Wazuh HIDS alerts with FIM and rootkit summary.]] - rationale - gateway/ingest_api/main.py
+- [[Return recent security telemetry events with optional filters.]] - rationale - gateway/ingest_api/main.py
+- [[Return scanner result history for SOC timeline views.]] - rationale - gateway/ingest_api/main.py
+- [[Reverse-proxy the Hermes Agent dashboard through the gateway.]] - rationale - gateway/ingest_api/main.py
+- [[Role]] - code - gateway/security/rbac.py
+- [[Role_1]] - code - gateway/security/rbac_config.py
+- [[Role-Based Access Control Manager.]] - rationale - gateway/security/rbac.py
+- [[Run ClamAV antivirus scan. Tries clamdscan (daemon) first, falls back to clamsca]] - rationale - gateway/ingest_api/main.py
+- [[Run OpenSCAP XCCDF evaluation against the running container.]] - rationale - gateway/ingest_api/main.py
+- [[Run Trivy vulnerability scan.]] - rationale - gateway/ingest_api/main.py
+- [[Run all locally available security scanners and return consolidated results.]] - rationale - gateway/ingest_api/main.py
+- [[Run canary integrity checks.]] - rationale - gateway/ingest_api/main.py
+- [[Run kill switch verification test.      Args         dry_run If True (default)]] - rationale - gateway/ingest_api/main.py
+- [[SCLCaller_2]] - code - gateway/tests/test_soc_bots.py
+- [[SOC 2 Trust Service Criteria compliance coverage report.      Maps active AgentS]] - rationale - gateway/ingest_api/main.py
+- [[SOCWebSocketHandler_1]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[SSHExecRequest]] - code - gateway/ingest_api/main.py
+- [[SSHExecRequest_1]] - code - gateway/ingest_api/models.py
+- [[SSHExecResponse]] - code - gateway/ingest_api/models.py
+- [[SSHWriteFileRequest]] - code - gateway/ingest_api/main.py
+- [[SSHWriteFileRequest_1]] - code - gateway/ingest_api/models.py
+- [[SSHWriteFileResponse]] - code - gateway/ingest_api/models.py
+- [[Scored security health report — grade, per-tool scores, recommendations.      Co]] - rationale - gateway/ingest_api/main.py
+- [[Set a user's role (owner only).]] - rationale - gateway/ingest_api/main.py
+- [[Set a user's role (owner-only operation).]] - rationale - gateway/security/rbac.py
+- [[Set role for a user ID (owner-only operation).]] - rationale - gateway/security/rbac_config.py
+- [[Set up test environment._2]] - rationale - gateway/tests/test_rbac.py
+- [[Set up test environment._3]] - rationale - gateway/tests/test_rbac.py
+- [[SimpleNamespace]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[Single entry from the data ledger]] - rationale - gateway/ingest_api/models.py
+- [[Store a report in the gateway-managed multi-bot report store.      Body {bot]] - rationale - gateway/ingest_api/main.py
+- [[Summarize inboundoutbound quarantine state for SOCdashboard use.]] - rationale - gateway/ingest_api/main.py
+- [[System Control - Live Dashboard      Shows real-time system status with links to]] - rationale - gateway/ingest_api/main.py
+- [[Test mcpproxy endpoint.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Test status endpoint.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Test ApprovalDecision with valid data]] - rationale - gateway/tests/test_main_simple.py
+- [[Test FastAPI lifespan initialization]] - rationale - gateway/tests/test_main_simple.py
+- [[Test RBAC configuration.]] - rationale - gateway/tests/test_rbac.py
+- [[Test RBAC error handling and edge cases.]] - rationale - gateway/tests/test_rbac.py
+- [[Test RBAC handling when user ID is missing.]] - rationale - gateway/tests/test_rbac.py
+- [[Test RBAC integration with middleware.]] - rationale - gateway/tests/test_rbac.py
+- [[Test RBAC manager functionality.]] - rationale - gateway/tests/test_rbac.py
+- [[Test RBAC manager initialization without explicit config.]] - rationale - gateway/tests/test_rbac.py
+- [[Test admin role permissions.]] - rationale - gateway/tests/test_rbac.py
+- [[Test approval queue endpoints.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Test collaborator role permissions.]] - rationale - gateway/tests/test_rbac.py
+- [[Test default RBAC configuration initialization.]] - rationale - gateway/tests/test_rbac.py
+- [[Test dynamic role assignment.]] - rationale - gateway/tests/test_rbac.py
+- [[Test getting user permissions summary.]] - rationale - gateway/tests/test_rbac.py
+- [[Test getting users by role.]] - rationale - gateway/tests/test_rbac.py
+- [[Test global exception handler]] - rationale - gateway/tests/test_main_simple.py
+- [[Test global exception handler with HTTPException]] - rationale - gateway/tests/test_main_simple.py
+- [[Test handling of invalid actionresource combinations.]] - rationale - gateway/tests/test_rbac.py
+- [[Test handling of invalid user IDs.]] - rationale - gateway/tests/test_rbac.py
+- [[Test listing users and roles.]] - rationale - gateway/tests/test_rbac.py
+- [[Test owner role permissions.]] - rationale - gateway/tests/test_rbac.py
+- [[Test permission checks with additional context.]] - rationale - gateway/tests/test_rbac.py
+- [[Test request logging middleware]] - rationale - gateway/tests/test_main_simple.py
+- [[Test role hierarchy helper methods.]] - rationale - gateway/tests/test_rbac.py
+- [[Test role hierarchy levels.]] - rationale - gateway/tests/test_rbac.py
+- [[Test setting user roles.]] - rationale - gateway/tests/test_rbac.py
+- [[Test that RBAC allows authorized access.]] - rationale - gateway/tests/test_rbac.py
+- [[Test that RBAC blocks unauthorized access attempts.]] - rationale - gateway/tests/test_rbac.py
+- [[Test that RBAC is properly initialized in middleware.]] - rationale - gateway/tests/test_rbac.py
+- [[Test tool tier access permissions.]] - rationale - gateway/tests/test_rbac.py
+- [[Test user management hierarchy.]] - rationale - gateway/tests/test_rbac.py
+- [[Test viewer role permissions.]] - rationale - gateway/tests/test_rbac.py
+- [[TestAlertsLocalhostEnforcement]] - code - gateway/tests/test_main_endpoints.py
+- [[TestApprovalEndpoints]] - code - gateway/tests/test_main_endpoints.py
+- [[TestCollectRecentEvents]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestEventFanOut]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestFromAnomalyAlert]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestFromAuditChainEntry]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestFromDict]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestFromEgressAttempt]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestFromPipelineResult]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestGoogleAPIProxy]] - code - gateway/tests/test_main_endpoints.py
+- [[TestGroupRegistry]] - code - gateway/tests/test_rbac.py
+- [[TestHandlerRun]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestMCPProxyEndpoint]] - code - gateway/tests/test_main_endpoints.py
+- [[TestMapSeverity]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestRBACConfig]] - code - gateway/tests/test_rbac.py
+- [[TestRBACErrorHandling]] - code - gateway/tests/test_rbac.py
+- [[TestRBACIntegration]] - code - gateway/tests/test_rbac.py
+- [[TestRBACManager]] - code - gateway/tests/test_rbac.py
+- [[TestResolveCaller]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestSCLCaller]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestSendEventAndKeepalive]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestStatusEndpoint]] - code - gateway/tests/test_main_endpoints.py
+- [[TestTokenStorePruning]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestVerifyBearer]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[Tests for GroupRegistry auto-groups and custom group management.]] - rationale - gateway/tests/test_rbac.py
+- [[Tool security tiers for RBAC permissions.]] - rationale - gateway/security/rbac_config.py
+- [[ToolRateLimit]] - code - gateway/security/tool_acl.py
+- [[ToolTier_1]] - code - gateway/security/rbac.py
+- [[ToolTier_2]] - code - gateway/security/rbac_config.py
+- [[Trigger an immediate blocklist refresh from upstream adlists.      Authenticatio]] - rationale - gateway/ingest_api/main.py
+- [[User roles in AgentShroud RBAC system.      Hierarchy (highest to lowest)]] - rationale - gateway/security/rbac_config.py
+- [[User's decision on a pending approval request]] - rationale - gateway/ingest_api/models.py
+- [[Validate and normalize agentuser identity used for policy checks.]] - rationale - gateway/ingest_api/main.py
+- [[WebSocket_2]] - code - gateway/ingest_api/main.py
+- [[WebSocket relay for Slack Socket Mode inbound traffic.      Bot connects here (w]] - rationale - gateway/ingest_api/main.py
+- [[Write file content to an allowlisted SSH host via structured transport.      Unl]] - rationale - gateway/ingest_api/main.py
+- [[_FakeBus]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[_FakeRBAC_2]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[_OutboundScan]] - code - gateway/proxy/telegram_proxy.py
+- [[_audit_entry()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[_get_rbac_manager()]] - code - gateway/soc/auth.py
+- [[_is_imessage_recipient_allowed()]] - code - gateway/ingest_api/main.py
+- [[_normalize_agent_identity()]] - code - gateway/ingest_api/main.py
+- [[_record_scanner_result()]] - code - gateway/ingest_api/main.py
+- [[_resolve_caller()]] - code - gateway/soc/auth.py
+- [[_resolve_effective_agent_id()]] - code - gateway/ingest_api/main.py
+- [[_scanner_summary()]] - code - gateway/ingest_api/main.py
+- [[_spin()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[_verify_bearer()]] - code - gateway/soc/auth.py
+- [[add()]] - code - gateway/cli/main.py
+- [[add_blocked_domain()]] - code - gateway/ingest_api/main.py
+- [[auth.py_1]] - code - gateway/soc/auth.py
+- [[auth_dep()]] - code - gateway/ingest_api/main.py
+- [[clean_auth_env()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[container_security_profile()]] - code - gateway/ingest_api/main.py
+- [[cors_middleware()]] - code - gateway/ingest_api/main.py
+- [[create_report()]] - code - gateway/ingest_api/main.py
+- [[deep_security_test()]] - code - gateway/ingest_api/main.py
+- [[delete_ledger_entry()]] - code - gateway/ingest_api/main.py
+- [[discard_blocked_message()]] - code - gateway/ingest_api/main.py
+- [[discard_blocked_outbound()]] - code - gateway/ingest_api/main.py
+- [[egress_add_rule()]] - code - gateway/ingest_api/main.py
+- [[egress_approve()]] - code - gateway/ingest_api/main.py
+- [[egress_deny()]] - code - gateway/ingest_api/main.py
+- [[egress_emergency_block()]] - code - gateway/ingest_api/main.py
+- [[egress_log()]] - code - gateway/ingest_api/main.py
+- [[egress_pending()]] - code - gateway/ingest_api/main.py
+- [[egress_remove_rule()]] - code - gateway/ingest_api/main.py
+- [[egress_risk_preview()]] - code - gateway/ingest_api/main.py
+- [[egress_rules()]] - code - gateway/ingest_api/main.py
+- [[falco_alerts()]] - code - gateway/ingest_api/main.py
+- [[full_security_report()]] - code - gateway/ingest_api/main.py
+- [[get_caller()]] - code - gateway/soc/auth.py
+- [[get_dns_stats()]] - code - gateway/ingest_api/main.py
+- [[get_ledger_entry()]] - code - gateway/ingest_api/main.py
+- [[get_my_permissions()]] - code - gateway/ingest_api/main.py
+- [[get_report()]] - code - gateway/ingest_api/main.py
+- [[get_soc2_compliance_report()]] - code - gateway/ingest_api/main.py
+- [[get_user_permissions()]] - code - gateway/ingest_api/main.py
+- [[global_exception_handler()]] - code - gateway/ingest_api/main.py
+- [[google_api_proxy()]] - code - gateway/ingest_api/main.py
+- [[health.py]] - code - gateway/ingest_api/routes/health.py
+- [[health_check()_1]] - code - gateway/ingest_api/routes/health.py
+- [[hermes_dashboard_proxy()]] - code - gateway/ingest_api/main.py
+- [[hermes_dashboard_root()]] - code - gateway/ingest_api/main.py
+- [[killswitch_status()]] - code - gateway/ingest_api/main.py
+- [[limit_request_body re-injects a fully-read chunked body and calls downstream.]] - rationale - gateway/tests/test_main_simple.py
+- [[limit_request_body rejects chunked bodies over 1MB with 413.]] - rationale - gateway/tests/test_main_simple.py
+- [[limit_request_body returns a clean 400 when the client drops mid-upload.      Wi]] - rationale - gateway/tests/test_main_simple.py
+- [[limit_request_body()]] - code - gateway/ingest_api/main.py
+- [[list_agents()]] - code - gateway/ingest_api/main.py
+- [[list_blocked_domains()]] - code - gateway/ingest_api/main.py
+- [[list_blocked_message_quarantine()]] - code - gateway/ingest_api/main.py
+- [[list_blocked_outbound_quarantine()]] - code - gateway/ingest_api/main.py
+- [[list_reports()]] - code - gateway/ingest_api/main.py
+- [[list_security_modules()]] - code - gateway/ingest_api/main.py
+- [[list_users_and_roles()]] - code - gateway/ingest_api/main.py
+- [[llm_api_proxy()]] - code - gateway/ingest_api/main.py
+- [[llm_api_v1_prefix_alias()]] - code - gateway/ingest_api/main.py
+- [[llm_openai_chat_alias()]] - code - gateway/ingest_api/main.py
+- [[llm_proxy_stats()]] - code - gateway/ingest_api/main.py
+- [[log_requests()]] - code - gateway/ingest_api/main.py
+- [[main.py_2]] - code - gateway/ingest_api/main.py
+- [[mcp_proxy_endpoint()]] - code - gateway/ingest_api/main.py
+- [[mcp_result_endpoint()]] - code - gateway/ingest_api/main.py
+- [[models.py]] - code - gateway/ingest_api/models.py
+- [[ollama_api_proxy()]] - code - gateway/ingest_api/main.py
+- [[op_proxy()]] - code - gateway/ingest_api/main.py
+- [[privacy_audit()]] - code - gateway/ingest_api/main.py
+- [[privacy_policy_status()]] - code - gateway/ingest_api/main.py
+- [[proxy_status()]] - code - gateway/ingest_api/main.py
+- [[quarantine_summary()]] - code - gateway/ingest_api/main.py
+- [[query_ledger()]] - code - gateway/ingest_api/main.py
+- [[rbac.py]] - code - gateway/security/rbac.py
+- [[receive_security_alert()]] - code - gateway/ingest_api/main.py
+- [[refresh_dns_blocklist()]] - code - gateway/ingest_api/main.py
+- [[release_blocked_message()]] - code - gateway/ingest_api/main.py
+- [[release_blocked_outbound()]] - code - gateway/ingest_api/main.py
+- [[remove_blocked_domain()]] - code - gateway/ingest_api/main.py
+- [[run_all_scanners()]] - code - gateway/ingest_api/main.py
+- [[run_canary_checks()]] - code - gateway/ingest_api/main.py
+- [[run_cis_benchmark()]] - code - gateway/ingest_api/main.py
+- [[run_clamav_scan()]] - code - gateway/ingest_api/main.py
+- [[run_openscap_scan()]] - code - gateway/ingest_api/main.py
+- [[run_trivy_scan()]] - code - gateway/ingest_api/main.py
+- [[scanner_history()]] - code - gateway/ingest_api/main.py
+- [[security_headers_middleware adds expected security headers.]] - rationale - gateway/tests/test_main_simple.py
+- [[security_headers_middleware re-raises BaseExceptions that are not groups.]] - rationale - gateway/tests/test_main_simple.py
+- [[security_headers_middleware returns 500 when anyio BaseExceptionGroup is raised.]] - rationale - gateway/tests/test_main_simple.py
+- [[security_headers_middleware()]] - code - gateway/ingest_api/main.py
+- [[security_health_report()]] - code - gateway/ingest_api/main.py
+- [[set_user_role()]] - code - gateway/ingest_api/main.py
+- [[slack_api_proxy()]] - code - gateway/ingest_api/main.py
+- [[slack_ws_relay()]] - code - gateway/ingest_api/main.py
+- [[soc_correlation()]] - code - gateway/ingest_api/main.py
+- [[soc_events()]] - code - gateway/ingest_api/main.py
+- [[soc_redirect()]] - code - gateway/ingest_api/main.py
+- [[ssh_exec()]] - code - gateway/ingest_api/main.py
+- [[ssh_history()]] - code - gateway/ingest_api/main.py
+- [[ssh_hosts()]] - code - gateway/ingest_api/main.py
+- [[ssh_write_file()]] - code - gateway/ingest_api/main.py
+- [[system_control()]] - code - gateway/ingest_api/main.py
+- [[test_approval_decision_valid()]] - code - gateway/tests/test_main_simple.py
+- [[test_global_exception_handler()]] - code - gateway/tests/test_main_simple.py
+- [[test_global_exception_handler_http_exception()]] - code - gateway/tests/test_main_simple.py
+- [[test_lifespan_initialization()]] - code - gateway/tests/test_main_simple.py
+- [[test_limit_request_body_chunked_body_over_limit_rejected()]] - code - gateway/tests/test_main_simple.py
+- [[test_limit_request_body_chunked_body_within_limit_passes_through()]] - code - gateway/tests/test_main_simple.py
+- [[test_limit_request_body_client_disconnect_returns_clean_response()]] - code - gateway/tests/test_main_simple.py
+- [[test_log_requests_middleware()]] - code - gateway/tests/test_main_simple.py
+- [[test_main_endpoints.py]] - code - gateway/tests/test_main_endpoints.py
+- [[test_main_simple.py]] - code - gateway/tests/test_main_simple.py
+- [[test_rbac.py]] - code - gateway/tests/test_rbac.py
+- [[test_security_headers_middleware_catches_exception_group()]] - code - gateway/tests/test_main_simple.py
+- [[test_security_headers_middleware_normal_response()]] - code - gateway/tests/test_main_simple.py
+- [[test_security_headers_middleware_reraises_non_group()]] - code - gateway/tests/test_main_simple.py
+- [[test_soc_realtime_coverage.py]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[tool_acl.py]] - code - gateway/security/tool_acl.py
+- [[verify_killswitch()]] - code - gateway/ingest_api/main.py
+- [[wazuh_alerts()]] - code - gateway/ingest_api/main.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Community_6
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 88 edges to [[_COMMUNITY_Community 72]]
+- 67 edges to [[_COMMUNITY_Community 169]]
+- 37 edges to [[_COMMUNITY_Community 61]]
+- 28 edges to [[_COMMUNITY_Community 20]]
+- 28 edges to [[_COMMUNITY_Community 51]]
+- 26 edges to [[_COMMUNITY_Community 10]]
+- 22 edges to [[_COMMUNITY_Community 254]]
+- 21 edges to [[_COMMUNITY_Community 34]]
+- 19 edges to [[_COMMUNITY_Community 223]]
+- 17 edges to [[_COMMUNITY_Community 30]]
+- 17 edges to [[_COMMUNITY_Community 1127]]
+- 17 edges to [[_COMMUNITY_Community 60]]
+- 17 edges to [[_COMMUNITY_Community 97]]
+- 16 edges to [[_COMMUNITY_Community 8]]
+- 16 edges to [[_COMMUNITY_Community 7]]
+- 15 edges to [[_COMMUNITY_Community 65]]
+- 14 edges to [[_COMMUNITY_Community 24]]
+- 13 edges to [[_COMMUNITY_Community 35]]
+- 12 edges to [[_COMMUNITY_Community 59]]
+- 11 edges to [[_COMMUNITY_Community 85]]
+- 11 edges to [[_COMMUNITY_Community 19]]
+- 11 edges to [[_COMMUNITY_Community 216]]
+- 10 edges to [[_COMMUNITY_Community 53]]
+- 8 edges to [[_COMMUNITY_Community 62]]
+- 7 edges to [[_COMMUNITY_Community 0]]
+- 6 edges to [[_COMMUNITY_Community 92]]
+- 6 edges to [[_COMMUNITY_Community 18]]
+- 5 edges to [[_COMMUNITY_Community 181]]
+- 5 edges to [[_COMMUNITY_Community 110]]
+- 5 edges to [[_COMMUNITY_Community 93]]
+- 5 edges to [[_COMMUNITY_Community 114]]
+- 4 edges to [[_COMMUNITY_Community 36]]
+- 4 edges to [[_COMMUNITY_Community 1658]]
+- 4 edges to [[_COMMUNITY_Community 14]]
+- 3 edges to [[_COMMUNITY_Community 32]]
+- 3 edges to [[_COMMUNITY_Community 260]]
+- 3 edges to [[_COMMUNITY_Community 84]]
+- 3 edges to [[_COMMUNITY_Community 1248]]
+- 3 edges to [[_COMMUNITY_Community 1926]]
+- 3 edges to [[_COMMUNITY_Community 707]]
+- 3 edges to [[_COMMUNITY_Community 23]]
+- 3 edges to [[_COMMUNITY_Community 33]]
+- 3 edges to [[_COMMUNITY_Community 115]]
+- 3 edges to [[_COMMUNITY_Community 884]]
+- 2 edges to [[_COMMUNITY_Community 197]]
+- 2 edges to [[_COMMUNITY_Community 64]]
+- 2 edges to [[_COMMUNITY_Community 329]]
+- 2 edges to [[_COMMUNITY_Community 165]]
+- 2 edges to [[_COMMUNITY_Community 220]]
+- 2 edges to [[_COMMUNITY_Community 5]]
+- 2 edges to [[_COMMUNITY_Community 11]]
+- 2 edges to [[_COMMUNITY_Community 49]]
+- 2 edges to [[_COMMUNITY_Community 47]]
+- 2 edges to [[_COMMUNITY_Community 2005]]
+- 2 edges to [[_COMMUNITY_Community 104]]
+- 2 edges to [[_COMMUNITY_Community 203]]
+- 2 edges to [[_COMMUNITY_Community 75]]
+- 2 edges to [[_COMMUNITY_Community 344]]
+- 2 edges to [[_COMMUNITY_Community 43]]
+- 2 edges to [[_COMMUNITY_Community 598]]
+- 2 edges to [[_COMMUNITY_Community 54]]
+- 2 edges to [[_COMMUNITY_Community 919]]
+- 2 edges to [[_COMMUNITY_Community 1344]]
+- 1 edge to [[_COMMUNITY_Community 70]]
+- 1 edge to [[_COMMUNITY_Community 87]]
+- 1 edge to [[_COMMUNITY_Community 138]]
+- 1 edge to [[_COMMUNITY_Community 978]]
+- 1 edge to [[_COMMUNITY_Community 66]]
+- 1 edge to [[_COMMUNITY_Community 37]]
+- 1 edge to [[_COMMUNITY_Community 21]]
+- 1 edge to [[_COMMUNITY_Community 185]]
+- 1 edge to [[_COMMUNITY_Community 31]]
+- 1 edge to [[_COMMUNITY_Community 121]]
+- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 102]]
+- 1 edge to [[_COMMUNITY_Community 575]]
+- 1 edge to [[_COMMUNITY_Community 17]]
+- 1 edge to [[_COMMUNITY_Community 229]]
+- 1 edge to [[_COMMUNITY_Community 130]]
+- 1 edge to [[_COMMUNITY_Community 201]]
+- 1 edge to [[_COMMUNITY_Community 480]]
+- 1 edge to [[_COMMUNITY_Community 2154]]
+- 1 edge to [[_COMMUNITY_Community 918]]
+- 1 edge to [[_COMMUNITY_Community 63]]
+- 1 edge to [[_COMMUNITY_Community 89]]
+- 1 edge to [[_COMMUNITY_Community 96]]
+- 1 edge to [[_COMMUNITY_Community 221]]
+- 1 edge to [[_COMMUNITY_Community 141]]
+- 1 edge to [[_COMMUNITY_Community 9]]
+- 1 edge to [[_COMMUNITY_Community 309]]
+- 1 edge to [[_COMMUNITY_Community 52]]
+- 1 edge to [[_COMMUNITY_Community 1052]]
+- 1 edge to [[_COMMUNITY_Community 1808]]
+- 1 edge to [[_COMMUNITY_Community 794]]
+- 1 edge to [[_COMMUNITY_Community 1971]]
+- 1 edge to [[_COMMUNITY_Community 2050]]
+
+## Top bridge nodes
+- [[main.py_2]] - degree 174, connects to 42 communities
+- [[RBACConfig_1]] - degree 224, connects to 36 communities
+- [[Role_1]] - degree 118, connects to 17 communities
+- [[models.py]] - degree 28, connects to 9 communities
+- [[ApprovalMode]] - degree 30, connects to 8 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_quota_detector.py"
 type: "rationale"
-community: "ConsentFramework"
+community: "Community 965"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/Community_965
 ---
 
 # Anthropic returns the Claude.ai OAuth quota copy with HTTP 400     (wrapped as i
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_detect_anthropic_400_oauth_extra_usage()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ConsentFramework
+#graphify/rationale #graphify/EXTRACTED #community/Community_965

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "telegram_proxy.py (3)"
+community: "Community 549"
 location: "browse.py:173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy_3
+  - community/Community_549
 ---
 
 # SecureBrowser._requires_approval()
@@ -15,4 +15,4 @@ tags:
 - [[SecureBrowser.click()]] - `calls` [EXTRACTED]
 - [[SecureBrowser.fill_field()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_3
+#graphify/code #graphify/EXTRACTED #community/Community_549

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/HERMES_SETUP.md"
+source_file: "docs/setup-telegram.md"
 type: "document"
-community: "Hermes Agent — Connection Setup"
-location: "L46"
+community: "Community 324"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Agent__Connection_Setup
+  - community/Community_324
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
+- [[Telegram Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup
+#graphify/document #graphify/EXTRACTED #community/Community_324

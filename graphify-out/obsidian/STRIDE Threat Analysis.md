@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "TestIsContainerRunning"
+community: "Community 992"
 location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestIsContainerRunning
+  - community/Community_992
 ---
 
 # STRIDE Threat Analysis
@@ -20,4 +20,4 @@ tags:
 - [[S - Spoofing Identity]] - `contains` [EXTRACTED]
 - [[T - Tampering with Data]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestIsContainerRunning
+#graphify/document #graphify/EXTRACTED #community/Community_992

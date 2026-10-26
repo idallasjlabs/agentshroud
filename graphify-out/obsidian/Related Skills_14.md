@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/README.md"
+source_file: ".agents/skills/i-data/README.md"
 type: "document"
-community: "Security Review (SEC) (2)"
+community: "Community 117"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Review_SEC_2
+  - community/Community_117
 ---
 
 # Related Skills
 
 ## Connections
-- [[MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
+- [[Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC_2
+#graphify/document #graphify/EXTRACTED #community/Community_117

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "Update AgentShroud"
-location: "L85"
+community: "Community 766"
+location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Update_AgentShroud
+  - community/Community_766
 ---
 
 # Imports From / Exports To
 
 ## Connections
-- [[models.py_1]] - `contains` [EXTRACTED]
+- [[auth.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Update_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Community_766

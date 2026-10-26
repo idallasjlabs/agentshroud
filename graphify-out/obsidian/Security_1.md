@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md"
+source_file: ".agents/agents/icloud.md"
 type: "document"
-community: "Key Skills in Detail"
-location: "L35"
+community: "Community 530"
+location: "L137"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Key_Skills_in_Detail
+  - community/Community_530
 ---
 
 # Security
 
 ## Connections
-- [[GATEWAY_OP_PROXY_URL_1]] - `contains` [EXTRACTED]
+- [[iCloud Services]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Key_Skills_in_Detail
+#graphify/document #graphify/EXTRACTED #community/Community_530

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/canvas/SKILL.md"
+source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "test_security_toolchain.py"
-location: "L192"
+community: "Community 874"
+location: "L252"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/Community_874
 ---
 
 # Tips
 
 ## Connections
-- [[Canvas Skill]] - `contains` [EXTRACTED]
+- [[Himalaya Email CLI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/document #graphify/EXTRACTED #community/Community_874

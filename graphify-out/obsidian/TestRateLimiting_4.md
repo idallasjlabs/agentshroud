@@ -1,22 +1,26 @@
 ---
-source_file: "gateway/tests/test_dns_filter.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "NetworkSecurityFinding"
-location: "L161"
+community: "Community 27"
+location: "L326"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - graphify/INFERRED
+  - community/Community_27
 ---
 
 # TestRateLimiting
 
 ## Connections
-- [[dot-test_burst_queries_flagged()]] - `method` [EXTRACTED]
-- [[dot-test_normal_rate_not_flagged()]] - `method` [EXTRACTED]
-- [[DNSFilter]] - `uses` [INFERRED]
-- [[DNSFilterConfig]] - `uses` [INFERRED]
-- [[EntropyCalculator]] - `uses` [INFERRED]
-- [[test_dns_filter.py]] - `contains` [EXTRACTED]
+- [[.test_different_domains_independent()]] - `method` [EXTRACTED]
+- [[.test_rate_limit_blocks_excess()]] - `method` [EXTRACTED]
+- [[.test_rate_limiter_reset()]] - `method` [EXTRACTED]
+- [[AuditChain]] - `uses` [INFERRED]
+- [[DomainSettings]] - `uses` [INFERRED]
+- [[ProxyAction]] - `uses` [INFERRED]
+- [[RateLimiter_1]] - `uses` [INFERRED]
+- [[WebProxy_1]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/INFERRED #community/Community_27

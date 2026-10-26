@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-session-prompt/SKILL.md"
+source_file: ".github/agents/i-session-prompt.agent.md"
 type: "document"
-community: "Security Verification Report (2)"
-location: "L13"
+community: "Community 1484"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Verification_Report_2
+  - community/Community_1484
 ---
 
 # Trigger
 
 ## Connections
-- [[Skill Session Prompt Generator (SESSION-PROMPT)_2]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Verification_Report_2
+#graphify/document #graphify/EXTRACTED #community/Community_1484

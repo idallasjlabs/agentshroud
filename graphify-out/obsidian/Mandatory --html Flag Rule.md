@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt"
 type: "rationale"
-community: "Atlas — Curriculum Architect (3)"
+community: "Community 338"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect_3
+  - community/Community_338
 ---
 
 # Mandatory --html Flag Rule
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[agentshroud-email-send.sh Gateway Email Sender]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Atlas__Curriculum_Architect_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_338

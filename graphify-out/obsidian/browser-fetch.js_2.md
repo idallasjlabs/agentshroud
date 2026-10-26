@@ -1,22 +1,21 @@
 ---
-source_file: "skills/custom/browser-fetch/browser-fetch.js"
-type: "code"
-community: "hermes/workspace/jira_dev_ticket.py"
-location: "L1"
+source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
+type: "document"
+community: "Community 1174"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/workspace/jira_dev_ticketpy
+  - community/Community_1174
 ---
 
 # browser-fetch.js
 
 ## Connections
-- [[SecureBrowser SKILL_2]] - `semantically_similar_to` [INFERRED]
-- [[appendLog()_3]] - `contains` [EXTRACTED]
-- [[browserFetch()_3]] - `contains` [EXTRACTED]
-- [[fs_4]] - `contains` [EXTRACTED]
-- [[path_21]] - `contains` [EXTRACTED]
-- [[{ chromium }_3]] - `contains` [EXTRACTED]
+- [[Expected Behavior]] - `contains` [EXTRACTED]
+- [[Purpose_121]] - `contains` [EXTRACTED]
+- [[Related Notes_7]] - `contains` [EXTRACTED]
+- [[Security Controls_1]] - `contains` [EXTRACTED]
+- [[browser-fetch.js_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/workspace/jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/Community_1174

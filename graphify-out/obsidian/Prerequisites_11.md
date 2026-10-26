@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/linux.md"
+source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "Himalaya Configuration Reference"
-location: "L3"
+community: "Community 244"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Himalaya_Configuration_Reference
+  - community/Community_244
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - `contains` [EXTRACTED]
+- [[Part 2 Set Up Gmail Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Himalaya_Configuration_Reference
+#graphify/document #graphify/EXTRACTED #community/Community_244

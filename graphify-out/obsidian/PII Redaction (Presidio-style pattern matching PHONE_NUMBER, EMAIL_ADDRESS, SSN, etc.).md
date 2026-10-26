@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-09-data-lineage.png"
 type: "concept"
-community: "start-agentshroud.sh (2)"
+community: "Community 523"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/start-agentshroudsh_2
+  - community/Community_523
 ---
 
 # PII Redaction (Presidio-style pattern matching: PHONE_NUMBER, EMAIL_ADDRESS, SSN, etc.)
@@ -16,4 +16,4 @@ tags:
 - [[PII redaction result (hash only in ledger, never persisted raw)]] - `semantically_similar_to` [INFERRED]
 - [[SHA-256 content hashing (original_content_hash + sanitized content_hash)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/start-agentshroudsh_2
+#graphify/concept #graphify/EXTRACTED #community/Community_523

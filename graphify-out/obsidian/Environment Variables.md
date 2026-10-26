@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "find-sessions.sh"
-location: "L43"
+community: "Community 408"
+location: "L150"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/find-sessionssh
+  - community/Community_408
 ---
 
-# Environment Variables
+# Environment variables
 
 ## Connections
-- [[port_manager.py_1]] - `contains` [EXTRACTED]
+- [[Configuration_14]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/find-sessionssh
+#graphify/document #graphify/EXTRACTED #community/Community_408

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pr/README.md"
+source_file: "docker/config/hermes/skills/i-mac/README.md"
 type: "document"
-community: "7. Recommendations by Severity"
+community: "Community 1212"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/7_Recommendations_by_Severity
+  - community/Community_1212
 ---
 
 # Purpose
 
 ## Connections
-- [[Pull Request Generator (PR)_1]] - `contains` [EXTRACTED]
+- [[macOS System Administrator (MAC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/7_Recommendations_by_Severity
+#graphify/document #graphify/EXTRACTED #community/Community_1212

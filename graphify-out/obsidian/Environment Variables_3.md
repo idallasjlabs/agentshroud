@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
+source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
 type: "document"
-community: ".cursor/mcp.json"
-location: "L102"
+community: "Community 1053"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/cursor/mcpjson
+  - community/Community_1053
 ---
 
 # Environment Variables
 
 ## Connections
-- [[TrustManager_5]] - `contains` [EXTRACTED]
+- [[port_manager.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/cursor/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Community_1053

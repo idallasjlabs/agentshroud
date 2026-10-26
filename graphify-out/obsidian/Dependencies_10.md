@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
+source_file: ".agents/skills/i-ui/SKILL.md"
 type: "document"
-community: "Slack Channel Setup"
-location: "L390"
+community: "Community 314"
+location: "L391"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Slack_Channel_Setup
+  - community/Community_314
 ---
 
 # Dependencies
 
 ## Connections
-- [[Skill UI Expert (UI)_2]] - `contains` [EXTRACTED]
+- [[Skill UI Expert (UI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup
+#graphify/document #graphify/EXTRACTED #community/Community_314

@@ -1,22 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
 type: "document"
-community: "alert_dispatcher.py"
-location: "L43"
+community: "Community 833"
+location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/alert_dispatcherpy
+  - community/Community_833
 ---
 
 # Function Details
 
 ## Connections
-- [[EncryptedStore.__init__(master_secret, secret_path, iterations, key_id)]] - `contains` [EXTRACTED]
-- [[EncryptedStore.decrypt(blob)]] - `contains` [EXTRACTED]
-- [[EncryptedStore.encrypt(data)]] - `contains` [EXTRACTED]
-- [[EncryptedStore.rotate(blobs, new_secret, new_key_id)]] - `contains` [EXTRACTED]
-- [[_secure_zero(buffer)]] - `contains` [EXTRACTED]
-- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
+- [[HTTPForwarder.forward(path, body, headers, method)]] - `contains` [EXTRACTED]
+- [[HTTPForwarder.get_stats()]] - `contains` [EXTRACTED]
+- [[HTTPForwarder.health_check()]] - `contains` [EXTRACTED]
+- [[HTTPForwarder.set_response_handler(handler)]] - `contains` [EXTRACTED]
+- [[forwarder.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy
+#graphify/document #graphify/EXTRACTED #community/Community_833

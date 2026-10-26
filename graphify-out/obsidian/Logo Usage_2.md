@@ -1,17 +1,22 @@
 ---
-source_file: "docker/config/openclaw/workspace/BRAND.md"
+source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "test_hermes_model_resolver.py"
-location: "L30"
+community: "Community 231"
+location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy
+  - community/Community_231
 ---
 
 # Logo Usage
 
 ## Connections
-- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Brand Guidelines_1]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
+- [[Backgrounds]] - `contains` [EXTRACTED]
+- [[Clear Space]] - `contains` [EXTRACTED]
+- [[Minimum Size]] - `contains` [EXTRACTED]
+- [[Prohibited Uses]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_hermes_model_resolverpy
+#graphify/document #graphify/EXTRACTED #community/Community_231

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "LLMProxy.proxy_messages (non-streaming) (2)"
-location: "L67"
+community: "Community 265"
+location: "L472"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming_2
+  - community/Community_265
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_161]] - `references` [EXTRACTED]
-- [[read_alerts()]] - `references` [EXTRACTED]
+- [[gather_advisories()]] - `calls` [EXTRACTED]
+- [[load_snapshot()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming_2
+#graphify/code #graphify/EXTRACTED #community/Community_265

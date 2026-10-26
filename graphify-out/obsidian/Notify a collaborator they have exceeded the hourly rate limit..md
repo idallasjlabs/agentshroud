@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "test_collaborator_tracker.py (3)"
+community: "Community 14"
 location: "L6984"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_3
+  - community/Community_14
 ---
 
 # Notify a collaborator they have exceeded the hourly rate limit.
 
 ## Connections
-- [[dot-_send_rate_limit_notice()]] - `rationale_for` [EXTRACTED]
+- [[._send_rate_limit_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

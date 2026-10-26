@@ -1,17 +1,18 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "AgentShroud Phase Review — 2026-02-23 (5)"
+community: "Community 867"
 location: "L773"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_Review__2026-02-23_5
+  - community/Community_867
 ---
 
 # Pre-Filing Preparation
 
 ## Connections
+- [[SECTION 4 FILING CHECKLIST]] - `contains` [EXTRACTED]
 - [[SECTION 7 FILING CHECKLIST]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23_5
+#graphify/document #graphify/EXTRACTED #community/Community_867

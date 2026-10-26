@@ -1,20 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Auth Errors.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "Output Sections (ALL required) (2)"
-location: "L9"
+community: "Community 389"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Output_Sections_ALL_required_2
+  - community/Community_389
 ---
 
 # Auth Errors
 
 ## Connections
-- [[1Password Auth Failures]] - `contains` [EXTRACTED]
-- [[Auth Errors]] - `contains` [EXTRACTED]
-- [[HTTP 401 — Unauthorized]] - `contains` [EXTRACTED]
-- [[Related Notes_72]] - `contains` [EXTRACTED]
+- [[Error Index_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required_2
+#graphify/document #graphify/EXTRACTED #community/Community_389

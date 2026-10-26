@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "rationale"
-community: "AgentShroud™ CVE Mitigation Matrix"
+community: "Community 215"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_CVE_Mitigation_Matrix
+  - community/Community_215
 ---
 
 # Under Review Is Honest, Not Mitigated
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Application CVE Domain (OpenClaw  Hermes)]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix
+#graphify/rationale #graphify/EXTRACTED #community/Community_215

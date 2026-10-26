@@ -1,18 +1,18 @@
 ---
 source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "document"
-community: "CredentialInjector"
+community: "Community 634"
 location: "L122"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CredentialInjector
+  - community/Community_634
 ---
 
 # Mode A — Single task
 
 ## Connections
-- [[Skill Hermes Dev Workflow (HDEV)]] - `contains` [EXTRACTED]
+- [[Skill Hermes Dev Workflow (HDEV)_1]] - `contains` [EXTRACTED]
 - [[Step 1 — Sync and confirm clean state_2]] - `contains` [EXTRACTED]
 - [[Step 10 — Notify the owner_2]] - `contains` [EXTRACTED]
 - [[Step 11 — Merge (only on explicit owner instruction)_2]] - `contains` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[Step 9 — Push and open the PR_2]] - `contains` [EXTRACTED]
 - [[Step 9b — Update the Jira ticket with the PR link_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CredentialInjector
+#graphify/document #graphify/EXTRACTED #community/Community_634

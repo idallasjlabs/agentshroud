@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
+source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "AgentShroud Weekly Upgrade — 2026-09-06"
-location: "L70"
+community: "Community 1003"
+location: "L267"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Weekly_Upgrade__2026-09-06
+  - community/Community_1003
 ---
 
 # Configuration
 
 ## Connections
-- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
+- [[7. Pi-hole DNS Security Layer (Built-In)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade__2026-09-06
+#graphify/document #graphify/EXTRACTED #community/Community_1003

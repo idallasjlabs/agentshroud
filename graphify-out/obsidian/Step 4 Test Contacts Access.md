@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Development Workflow: Read-Only Filesystem Strategy"
+community: "Community 285"
 location: "L244"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Development_Workflow_Read-Only_Filesystem_Strategy
+  - community/Community_285
 ---
 
 # Step 4: Test Contacts Access
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🔐 Setup Steps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read-Only_Filesystem_Strategy
+#graphify/document #graphify/EXTRACTED #community/Community_285

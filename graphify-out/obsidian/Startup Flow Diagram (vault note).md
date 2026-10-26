@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Startup Flow Diagram.md"
 type: "document"
-community: "SOC Models SecurityEvent Tests"
+community: "Community 1483"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SOC_Models_SecurityEvent_Tests
+  - community/Community_1483
 ---
 
 # Startup Flow Diagram (vault note)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Obsidian workspace.json (open-tab layout)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SOC_Models_SecurityEvent_Tests
+#graphify/document #graphify/EXTRACTED #community/Community_1483

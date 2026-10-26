@@ -1,13 +1,13 @@
 ---
 source_file: "CHANGELOG.md"
 type: "rationale"
-community: "EnhancedApprovalQueue.broadcast (SCRUM-154 bounded)"
+community: "Community 1587"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueuebroadcast_SCRUM-154_bounded
+  - community/Community_1587
 ---
 
 # Voice robustness — volume-command STT tolerance + stream timeout/repr logging
 
-#graphify/rationale #graphify/EXTRACTED #community/EnhancedApprovalQueuebroadcast_SCRUM-154_bounded
+#graphify/rationale #graphify/EXTRACTED #community/Community_1587

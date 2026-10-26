@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "Community 7"
 location: "L87"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # Validate that each target URL uses http/https and targets an internal Docker hos
 
 ## Connections
-- [[dot-validate_targets()]] - `rationale_for` [EXTRACTED]
+- [[.validate_targets()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

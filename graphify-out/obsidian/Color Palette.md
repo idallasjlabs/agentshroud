@@ -1,12 +1,12 @@
 ---
 source_file: "branding/README.md"
 type: "document"
-community: "test_hermes_model_resolver.py"
+community: "Community 192"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy
+  - community/Community_192
 ---
 
 # Color Palette
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Brand Colors]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_hermes_model_resolverpy
+#graphify/document #graphify/EXTRACTED #community/Community_192

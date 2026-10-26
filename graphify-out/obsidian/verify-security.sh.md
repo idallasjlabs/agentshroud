@@ -1,19 +1,21 @@
 ---
-source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
-type: "document"
-community: "test_anthropic_openai_translator.py"
-location: "L7"
+source_file: "docker/scripts/verify-security.sh"
+type: "code"
+community: "Community 691"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy
+  - community/Community_691
 ---
 
 # verify-security.sh
 
 ## Connections
-- [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
-- [[SECURITY_SCRIPTS_REFERENCE]] - `references` [EXTRACTED]
-- [[VERIFICATION_RESULTS]] - `references` [EXTRACTED]
+- [[SecureClaw Security Review (SEC)]] - `references` [EXTRACTED]
+- [[check_fail()_1]] - `defines` [EXTRACTED]
+- [[check_pass()_1]] - `defines` [EXTRACTED]
+- [[check_warn()]] - `defines` [EXTRACTED]
+- [[verify-security.sh script]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy
+#graphify/code #graphify/EXTRACTED #community/Community_691

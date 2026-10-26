@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-apollo/README.md"
+source_file: "docker/config/openclaw/skills/i-aws/README.md"
 type: "document"
-community: "TestOutboundInfoFilter"
+community: "Community 1227"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/Community_1227
 ---
 
 # Usage
 
 ## Connections
-- [[Apollo — Audio Systems Producer_3]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/Community_1227

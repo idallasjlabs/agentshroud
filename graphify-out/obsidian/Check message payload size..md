@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "rationale"
-community: "api.py"
+community: "Community 44"
 location: "L340"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apipy
+  - community/Community_44
 ---
 
 # Check message payload size.
 
 ## Connections
-- [[dot-_check_message_size()]] - `rationale_for` [EXTRACTED]
+- [[._check_message_size()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apipy
+#graphify/rationale #graphify/EXTRACTED #community/Community_44

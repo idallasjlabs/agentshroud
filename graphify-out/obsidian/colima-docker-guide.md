@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/colima-docker-guide.md"
 type: "document"
-community: "ApprovalHardening"
+community: "Community 91"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/Community_91
 ---
 
 # colima-docker-guide.md
@@ -18,4 +18,4 @@ tags:
 - [[OPENCLAW_SETUP]] - `conceptually_related_to` [INFERRED]
 - [[setup-guide]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/document #graphify/EXTRACTED #community/Community_91

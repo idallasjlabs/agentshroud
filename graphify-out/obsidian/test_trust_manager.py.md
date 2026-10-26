@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "soc/router.py"
+community: "Community 11"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/Community_11
 ---
 
 # test_trust_manager.py
@@ -16,15 +16,15 @@ tags:
 - [[TestAgentRegistration]] - `contains` [EXTRACTED]
 - [[TestConfig]] - `contains` [EXTRACTED]
 - [[TestHistory]] - `contains` [EXTRACTED]
-- [[TestPersistence]] - `contains` [EXTRACTED]
-- [[TestTrustLevels]] - `contains` [EXTRACTED]
+- [[TestPersistence_2]] - `contains` [EXTRACTED]
+- [[TestTrustLevels_1]] - `contains` [EXTRACTED]
 - [[TestTrustProgression]] - `contains` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
 - [[TrustLevel_1]] - `imports` [EXTRACTED]
 - [[TrustManager_1]] - `imports` [EXTRACTED]
-- [[manager()_2]] - `contains` [EXTRACTED]
-- [[strict_config()_1]] - `contains` [EXTRACTED]
+- [[manager()_4]] - `contains` [EXTRACTED]
+- [[strict_config()_3]] - `contains` [EXTRACTED]
 - [[strict_manager()]] - `contains` [EXTRACTED]
 - [[trust_db()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/Community_11

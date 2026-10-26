@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/VERIFICATION_RESULTS.md"
 type: "document"
-community: "TestSecurityFeatures"
+community: "Community 478"
 location: "L221"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSecurityFeatures
+  - community/Community_478
 ---
 
 # Testing Recommendations
@@ -15,4 +15,4 @@ tags:
 - [[Manual Testing (Next Session)]] - `contains` [EXTRACTED]
 - [[Phase 3A3B Implementation Verification Results]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSecurityFeatures
+#graphify/document #graphify/EXTRACTED #community/Community_478

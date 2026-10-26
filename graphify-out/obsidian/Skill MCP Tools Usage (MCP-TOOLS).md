@@ -1,21 +1,20 @@
 ---
-source_file: ".agents/skills/i-mcpm/SKILL.md"
+source_file: ".agents/agents/i-mcpm.md"
 type: "document"
-community: "Sprint Cadence Decision"
-location: "L5"
+community: "Community 1929"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sprint_Cadence_Decision
+  - community/Community_1929
 ---
 
 # Skill: MCP Tools Usage (MCP-TOOLS)
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-mcpmSKILL]] - `contains` [EXTRACTED]
-- [[10. Troubleshooting]] - `contains` [EXTRACTED]
 - [[Available MCP Servers]] - `contains` [EXTRACTED]
-- [[Role_9]] - `contains` [EXTRACTED]
+- [[MCP Troubleshooting]] - `contains` [EXTRACTED]
+- [[Role_19]] - `contains` [EXTRACTED]
+- [[i-mcpm]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sprint_Cadence_Decision
+#graphify/document #graphify/EXTRACTED #community/Community_1929

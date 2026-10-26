@@ -1,31 +1,31 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "Community 35"
 location: "L51"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ToolResultSanitizer
+  - community/Community_35
 ---
 
 # MCPPolicyAction
 
 ## Connections
-- [[dot-from_dict()_5]] - `calls` [EXTRACTED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
-- [[MCPPolicyConfig]] - `uses` [INFERRED]
-- [[MCPPolicyEngine]] - `uses` [INFERRED]
+- [[.from_dict()_7]] - `calls` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
+- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
+- [[MCPPolicyEngine_1]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
-- [[Path_36]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[Path_33]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `uses` [INFERRED]
 - [[TestDefaultPolicyNoMcpServers]] - `uses` [INFERRED]
 - [[The three terminal policy outcomes for an MCP tool call.]] - `rationale_for` [EXTRACTED]
 - [[_FakeApprovalQueue]] - `uses` [INFERRED]
 - [[mcp_policy.py]] - `contains` [EXTRACTED]
-- [[str_3]] - `inherits` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 - [[test_mcp_policy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_policy_default_failclosed.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ToolResultSanitizer
+#graphify/code #graphify/INFERRED #community/Community_35

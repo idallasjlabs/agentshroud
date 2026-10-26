@@ -1,21 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pm/README.md"
+source_file: "docker/config/hermes/skills/i-pm/README.md"
 type: "document"
-community: "soc.js"
+community: "Community 1915"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_1915
 ---
 
 # Project Management (PM)
 
 ## Connections
-- [[Purpose_106]] - `contains` [EXTRACTED]
-- [[Related Skills_77]] - `contains` [EXTRACTED]
-- [[Usage_83]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-pmREADME]] - `contains` [EXTRACTED]
+- [[Purpose_59]] - `contains` [EXTRACTED]
+- [[README_64]] - `contains` [EXTRACTED]
+- [[Related Skills_80]] - `contains` [EXTRACTED]
+- [[Usage_82]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_1915

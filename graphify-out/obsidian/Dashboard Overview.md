@@ -1,12 +1,12 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: ".test_stranger_within_limit_triggers_approval_workflow()"
+community: "Community 327"
 location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_stranger_within_limit_triggers_approval_workflow
+  - community/Community_327
 ---
 
 # Dashboard Overview
@@ -16,4 +16,4 @@ tags:
 - [[Reading the Audit Trail]] - `contains` [EXTRACTED]
 - [[What You'll See]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_stranger_within_limit_triggers_approval_workflow
+#graphify/document #graphify/EXTRACTED #community/Community_327

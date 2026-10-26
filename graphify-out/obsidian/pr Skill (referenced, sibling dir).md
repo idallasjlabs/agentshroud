@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-pr/SKILL.md"
 type: "document"
-community: "Implementation Status"
+community: "Community 391"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implementation_Status
+  - community/Community_391
 ---
 
 # pr Skill (referenced, sibling dir)
@@ -15,4 +15,4 @@ tags:
 - [[GIT-GUARD Skill Definition]] - `references` [EXTRACTED]
 - [[GSDE&G Development Master Checklist Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implementation_Status
+#graphify/document #graphify/EXTRACTED #community/Community_391

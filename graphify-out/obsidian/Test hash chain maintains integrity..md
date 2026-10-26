@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "rationale"
-community: "The 8D Investigation Process"
+community: "Community 254"
 location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process
+  - community/Community_254
 ---
 
 # Test hash chain maintains integrity.
 
 ## Connections
-- [[dot-test_hash_chain_integrity()]] - `rationale_for` [EXTRACTED]
+- [[.test_hash_chain_integrity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/The_8D_Investigation_Process
+#graphify/rationale #graphify/EXTRACTED #community/Community_254

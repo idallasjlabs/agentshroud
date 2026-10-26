@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/README.md"
+source_file: ".cursor/agents/athena.md"
 type: "document"
-community: "TestOutboundInfoFilter"
-location: "L1"
+community: "Community 1652"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/Community_1652
 ---
 
 # Athena — Knowledge Distiller
 
 ## Connections
-- [[Purpose_163]] - `contains` [EXTRACTED]
-- [[Related Skills_90]] - `contains` [EXTRACTED]
-- [[Usage_102]] - `contains` [EXTRACTED]
-- [[hermesskillsi-athenaREADME]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[Input Requirements_21]] - `contains` [EXTRACTED]
+- [[Output Format_29]] - `contains` [EXTRACTED]
+- [[Persona_16]] - `contains` [EXTRACTED]
+- [[Role_77]] - `contains` [EXTRACTED]
+- [[athena_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/Community_1652

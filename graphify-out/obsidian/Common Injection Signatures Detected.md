@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
 type: "document"
-community: "ApprovalQueueConfig (7)"
+community: "Community 1976"
 location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_7
+  - community/Community_1976
 ---
 
 # Common Injection Signatures Detected
 
 ## Connections
-- [[Prompt Injection Blocks_1]] - `contains` [EXTRACTED]
+- [[Prompt Injection Blocks_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_7
+#graphify/document #graphify/EXTRACTED #community/Community_1976

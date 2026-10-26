@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "test_collaborator_tracker.py (3)"
+community: "Community 146"
 location: "L7278"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_3
+  - community/Community_146
 ---
 
 # Send deterministic gateway health status without model invocation.
 
 ## Connections
-- [[dot-_send_local_healthcheck_notice()]] - `rationale_for` [EXTRACTED]
+- [[._send_local_healthcheck_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_146

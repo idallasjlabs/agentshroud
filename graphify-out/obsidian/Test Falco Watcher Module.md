@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_falco_watcher.py"
 type: "code"
-community: "LLMProxy.proxy_messages (non-streaming) (2)"
+community: "Community 531"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming_2
+  - community/Community_531
 ---
 
 # Test Falco Watcher Module
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[FalcoAlertWatcher]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming_2
+#graphify/code #graphify/EXTRACTED #community/Community_531

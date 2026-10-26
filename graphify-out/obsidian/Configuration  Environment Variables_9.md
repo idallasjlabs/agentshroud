@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
 type: "document"
-community: "TestStartupScannerKeying"
-location: "L67"
+community: "Community 720"
+location: "L74"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestStartupScannerKeying
+  - community/Community_720
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
+- [[url_analyzer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestStartupScannerKeying
+#graphify/document #graphify/EXTRACTED #community/Community_720

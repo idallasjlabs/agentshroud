@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-doctor/SKILL.md"
+source_file: ".agents/skills/atlas/SKILL.md"
 type: "document"
-community: "Plan: AgentShroud Security Hardening — Real Agent Containment"
-location: "L154"
+community: "Community 1169"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment
+  - community/Community_1169
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment
+#graphify/document #graphify/EXTRACTED #community/Community_1169

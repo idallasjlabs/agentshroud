@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "rationale"
-community: "ContextGuard"
+community: "Community 0"
 location: "L25"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/Community_0
 ---
 
 # Compile regex patterns for sensitive data detection.
 
 ## Connections
-- [[dot-_compile_patterns()]] - `rationale_for` [EXTRACTED]
+- [[._compile_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

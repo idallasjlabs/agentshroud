@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/soc/event_adapter.py"
-type: "code"
-community: "Enum"
-location: "L23"
+source_file: "docs/planning/redteam/04-separation-of-privilege.md"
+type: "document"
+community: "Community 670"
+location: "L3"
 tags:
-  - graphify/code
-  - graphify/INFERRED
-  - community/Enum
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Community_670
 ---
 
 # Severity
 
 ## Connections
-- [[SecurityEvent_1]] - `uses` [INFERRED]
-- [[Severity_8]] - `uses` [INFERRED]
-- [[_map_severity()]] - `references` [EXTRACTED]
+- [[Make gateway source code, config, and security policies read-only to the agent]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enum
+#graphify/document #graphify/EXTRACTED #community/Community_670

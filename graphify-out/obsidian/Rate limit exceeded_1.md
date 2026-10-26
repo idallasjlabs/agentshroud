@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: ".agents/skills/browser/SKILL.md"
 type: "document"
-community: "Browser — Secure Browser Automation (2)"
+community: "Community 450"
 location: "L289"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_2
+  - community/Community_450
 ---
 
 # "Rate limit exceeded"
 
 ## Connections
-- [[Troubleshooting_13]] - `contains` [EXTRACTED]
+- [[Troubleshooting_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_2
+#graphify/document #graphify/EXTRACTED #community/Community_450

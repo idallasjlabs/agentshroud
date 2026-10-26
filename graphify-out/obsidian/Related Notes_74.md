@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
+source_file: "docs/vault/09 - Diagrams/Startup Flow Diagram.md"
 type: "document"
-community: "v0.8.0 \"Watchtower\" — Security Fixes + Module Wiring (104 items)"
-location: "L65"
+community: "Community 1366"
+location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/v080_Watchtower__Security_Fixes__Module_Wiring_104_items
+  - community/Community_1366
 ---
 
 # Related Notes
 
 ## Connections
-- [[ssh_proxy.py_1]] - `contains` [EXTRACTED]
+- [[Startup Flow Diagram_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/v080_Watchtower__Security_Fixes__Module_Wiring_104_items
+#graphify/document #graphify/EXTRACTED #community/Community_1366

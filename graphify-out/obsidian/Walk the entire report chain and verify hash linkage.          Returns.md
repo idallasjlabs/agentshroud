@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "KillSwitchMonitor (3)"
+community: "Community 57"
 location: "L279"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_3
+  - community/Community_57
 ---
 
 # Walk the entire report chain and verify hash linkage.          Returns:
 
 ## Connections
-- [[dot-verify_chain()_1]] - `rationale_for` [EXTRACTED]
+- [[.verify_chain()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_57

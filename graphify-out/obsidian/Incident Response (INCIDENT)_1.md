@@ -1,21 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-production/README.md"
+source_file: "docker/config/hermes/skills/i-production/README.md"
 type: "document"
-community: "MiddlewareManager (8)"
+community: "Community 1218"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_8
+  - community/Community_1218
 ---
 
 # Incident Response (INCIDENT)
 
 ## Connections
-- [[Purpose_82]] - `contains` [EXTRACTED]
-- [[Related Skills_61]] - `contains` [EXTRACTED]
-- [[Usage_69]] - `contains` [EXTRACTED]
-- [[openclawskillsi-productionREADME]] - `contains` [EXTRACTED]
-- [[openclawskillsi-productionSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_61]] - `contains` [EXTRACTED]
+- [[README_66]] - `contains` [EXTRACTED]
+- [[Related Skills_82]] - `contains` [EXTRACTED]
+- [[Usage_84]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_8
+#graphify/document #graphify/EXTRACTED #community/Community_1218

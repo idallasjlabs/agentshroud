@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/lib/container-runtime.sh"
 type: "code"
-community: "v1.6.0 Release — Voice Terminal"
+community: "Community 1176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/v160_Release__Voice_Terminal
+  - community/Community_1176
 ---
 
 # container-runtime.sh (detection shim)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test-container-runtime.sh]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/v160_Release__Voice_Terminal
+#graphify/code #graphify/EXTRACTED #community/Community_1176

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mm/SKILL.md"
+source_file: ".agents/agents/i-ui.md"
 type: "document"
-community: "OpenClaw Management Scripts"
-location: "L27"
+community: "Community 515"
+location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Management_Scripts
+  - community/Community_515
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Mindmap Architect (MM)]] - `contains` [EXTRACTED]
+- [[Skill UI Expert (UI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts
+#graphify/document #graphify/EXTRACTED #community/Community_515

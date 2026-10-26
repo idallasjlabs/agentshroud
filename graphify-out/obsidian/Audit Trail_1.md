@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "ApprovalHardening"
+community: "Community 91"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/Community_91
 ---
 
 # Audit Trail
@@ -15,9 +15,9 @@ tags:
 - [[AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]] - `references` [EXTRACTED]
 - [[WEB_CONTROL_CENTER_SUMMARY]] - `references` [EXTRACTED]
 - [[audit-specification]] - `references` [EXTRACTED]
-- [[securityincident-response]] - `references` [EXTRACTED]
+- [[incident-response_1]] - `references` [EXTRACTED]
 - [[setup-guide]] - `references` [EXTRACTED]
 - [[system-requirements]] - `references` [EXTRACTED]
 - [[use-cases]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/concept #graphify/EXTRACTED #community/Community_91

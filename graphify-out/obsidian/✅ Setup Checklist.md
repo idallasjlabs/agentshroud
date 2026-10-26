@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "Apple Services Setup Guide"
+community: "Community 346"
 location: "L529"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Services_Setup_Guide
+  - community/Community_346
 ---
 
 # ✅ Setup Checklist
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Accounts]] - `contains` [EXTRACTED]
 - [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
-- [[Configuration_7]] - `contains` [EXTRACTED]
+- [[Configuration_13]] - `contains` [EXTRACTED]
 - [[Software]] - `contains` [EXTRACTED]
-- [[Verification_2]] - `contains` [EXTRACTED]
+- [[Verification_16]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_346

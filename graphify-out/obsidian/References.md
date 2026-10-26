@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/model-usage/SKILL.md"
+source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "EgressFilterConfig (2) (3)"
-location: "L67"
+community: "Community 1992"
+location: "L430"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2_3
+  - community/Community_1992
 ---
 
 # References
 
 ## Connections
-- [[Model usage]] - `contains` [EXTRACTED]
+- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilterConfig_2_3
+#graphify/document #graphify/EXTRACTED #community/Community_1992

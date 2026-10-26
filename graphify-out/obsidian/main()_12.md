@@ -1,23 +1,18 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "test_daily_cve_report.py"
-location: "L300"
+community: "Community 590"
+location: "L309"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/Community_590
 ---
 
 # main()
 
 ## Connections
-- [[dot-to_dict()_6]] - `calls` [EXTRACTED]
-- [[_print_plan()]] - `calls` [EXTRACTED]
-- [[apply_remediation()]] - `calls` [EXTRACTED]
-- [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
-- [[load_registry()]] - `calls` [EXTRACTED]
-- [[plan_remediation()]] - `calls` [EXTRACTED]
-- [[read_pin()]] - `calls` [EXTRACTED]
+- [[dns_forwarder.py]] - `contains` [EXTRACTED]
+- [[start_dns_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/Community_590

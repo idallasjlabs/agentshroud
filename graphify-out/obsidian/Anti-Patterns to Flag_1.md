@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
+source_file: ".agents/agents/i-mm.md"
 type: "document"
-community: "OpenClaw Workspace Usage Guide"
-location: "L40"
+community: "Community 513"
+location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Workspace_Usage_Guide
+  - community/Community_513
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Technical Writer (TW)_1]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_513

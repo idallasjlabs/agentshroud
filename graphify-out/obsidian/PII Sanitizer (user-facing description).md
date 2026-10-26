@@ -1,11 +1,11 @@
 ---
 source_file: "docs/user-guide.md"
 type: "concept"
-community: "test_collaborator_greeter.py (2)"
+community: "Community 915"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/test_collaborator_greeterpy_2
+  - community/Community_915
 ---
 
 # PII Sanitizer (user-facing description)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[pii_sanitizer module (disabled — false positives)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/test_collaborator_greeterpy_2
+#graphify/concept #graphify/INFERRED #community/Community_915

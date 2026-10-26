@@ -1,17 +1,18 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "test_collaborator_greeter.py (3)"
+community: "Community 1054"
 location: "L1519"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_collaborator_greeterpy_3
+  - community/Community_1054
 ---
 
 # GitHub Integration Test
 
 ## Connections
 - [[Phase 10 Validation Checklist]] - `contains` [EXTRACTED]
+- [[Phase 10 Validation Checklist_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_collaborator_greeterpy_3
+#graphify/document #graphify/EXTRACTED #community/Community_1054

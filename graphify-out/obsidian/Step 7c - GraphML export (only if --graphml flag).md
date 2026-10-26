@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/graphify/references/exports.md"
+source_file: ".agents/skills/graphify/references/exports.md"
 type: "document"
-community: "10. Troubleshooting"
+community: "Community 335"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/10_Troubleshooting
+  - community/Community_335
 ---
 
 # Step 7c - GraphML export (only if --graphml flag)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference extra exports and benchmark]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/Community_335

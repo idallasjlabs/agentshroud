@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/recovery/RECOVERY_PLAN.md"
 type: "document"
-community: "port_manager.py"
+community: "Community 1036"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/port_managerpy
+  - community/Community_1036
 ---
 
 # Recovery Plan v0.4.0 — Systematic Stabilization
@@ -14,4 +14,4 @@ tags:
 - [[Planning Docs Index (redteam, reviews, recovery, version buckets)]] - `references` [EXTRACTED]
 - [[XML Function-Call Block Filter (filter_xml_blocks) — Response Sanitization]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/port_managerpy
+#graphify/document #graphify/EXTRACTED #community/Community_1036

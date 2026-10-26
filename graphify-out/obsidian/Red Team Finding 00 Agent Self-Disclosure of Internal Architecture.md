@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/redteam/00-information-disclosure.md"
 type: "document"
-community: "5. Test Results"
+community: "Community 1310"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/5_Test_Results
+  - community/Community_1310
 ---
 
 # Red Team Finding 00: Agent Self-Disclosure of Internal Architecture
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Outbound Infrastructure Content Filter (deny-list for hostnames, tool names, user IDs)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/5_Test_Results
+#graphify/document #graphify/EXTRACTED #community/Community_1310

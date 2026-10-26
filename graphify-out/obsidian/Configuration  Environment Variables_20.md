@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
 type: "document"
-community: "2. Security Analysis"
-location: "L74"
+community: "Community 676"
+location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/2_Security_Analysis
+  - community/Community_676
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[url_analyzer.py_1]] - `contains` [EXTRACTED]
+- [[egress_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/2_Security_Analysis
+#graphify/document #graphify/EXTRACTED #community/Community_676

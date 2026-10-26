@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-devsecops/SKILL.md"
 type: "document"
-community: "Cumulative Token Cost Tracker"
+community: "Community 1703"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Cumulative_Token_Cost_Tracker
+  - community/Community_1703
 ---
 
 # i-devsecops SKILL (stub)
 
-#graphify/document #graphify/EXTRACTED #community/Cumulative_Token_Cost_Tracker
+#graphify/document #graphify/EXTRACTED #community/Community_1703

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/competitive-analysis.md"
 type: "document"
-community: "docker/scripts/security-scan.sh"
+community: "Community 908"
 location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/scripts/security-scansh
+  - community/Community_908
 ---
 
 # SECTION 1: MARKET ANALYSIS
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[REPORT STRUCTURE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/scripts/security-scansh
+#graphify/document #graphify/EXTRACTED #community/Community_908

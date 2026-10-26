@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-session-prompt/SKILL.md"
+source_file: ".agents/skills/vulcan/SKILL.md"
 type: "document"
-community: "Quickstart"
-location: "L7"
+community: "Community 1974"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quickstart
+  - community/Community_1974
 ---
 
 # Role
 
 ## Connections
-- [[Skill Session Prompt Generator (SESSION-PROMPT)]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quickstart
+#graphify/document #graphify/EXTRACTED #community/Community_1974

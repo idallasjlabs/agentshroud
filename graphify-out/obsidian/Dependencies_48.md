@@ -1,0 +1,18 @@
+---
+source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+type: "document"
+community: "Community 406"
+location: "L177"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Community_406
+---
+
+# Dependencies
+
+## Connections
+- [[AgentShroud v0.8.0 — Release Plan]] - `contains` [EXTRACTED]
+- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Community_406

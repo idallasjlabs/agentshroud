@@ -1,17 +1,17 @@
 ---
-source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
+source_file: ".agents/agents/sec-offense.md"
 type: "document"
-community: "Skill: Git Workflow Guardian (GIT-GUARD) (3)"
-location: "L98"
+community: "Community 1059"
+location: "L369"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Git_Workflow_Guardian_GIT-GUARD_3
+  - community/Community_1059
 ---
 
 # Infrastructure
 
 ## Connections
-- [[Architecture_10]] - `contains` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD_3
+#graphify/document #graphify/EXTRACTED #community/Community_1059

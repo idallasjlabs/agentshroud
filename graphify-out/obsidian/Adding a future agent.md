@@ -1,17 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/SETUP.md"
+source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "API Keys Setup Guide"
-location: "L479"
+community: "Community 427"
+location: "L269"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/API_Keys_Setup_Guide
+  - community/Community_427
 ---
 
 # Adding a future agent
 
 ## Connections
-- [[11. Current status (v1.2.0)]] - `contains` [EXTRACTED]
+- [[Usage_137]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_427

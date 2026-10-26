@@ -1,29 +1,27 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
-type: "document"
-community: ".pi/mcp.json"
-location: "L11"
+source_file: "chatbot/main.py"
+type: "code"
+community: "Community 95"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/pi/mcpjson
+  - community/Community_95
 ---
 
 # main.py
 
 ## Connections
-- [[Endpoints]] - `contains` [EXTRACTED]
-- [[Environment Variables Used_1]] - `contains` [EXTRACTED]
-- [[Key Dependencies — Modules Wired at Init]] - `contains` [EXTRACTED]
-- [[Known Issues  Notes]] - `contains` [EXTRACTED]
-- [[Lifespan  Startup]] - `contains` [EXTRACTED]
-- [[Middleware (applied to all requests, outermost first)]] - `contains` [EXTRACTED]
-- [[Overview_11]] - `contains` [EXTRACTED]
-- [[POST forward — 5-Step Security Pipeline]] - `contains` [EXTRACTED]
-- [[Related_2]] - `contains` [EXTRACTED]
-- [[Security Notes_2]] - `contains` [EXTRACTED]
-- [[Static Mounts]] - `contains` [EXTRACTED]
-- [[WebSocket Endpoints]] - `contains` [EXTRACTED]
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[ChatRequest]] - `contains` [EXTRACTED]
+- [[ChatResponse]] - `contains` [EXTRACTED]
+- [[FastAPI]] - `imports_from` [EXTRACTED]
+- [[Isaiah Chat Service - Phase 3 MVP Minimal chat service with Isaiah's personality]] - `rationale_for` [EXTRACTED]
+- [[_check_rate_limit()]] - `contains` [EXTRACTED]
+- [[_get_auth_token()]] - `contains` [EXTRACTED]
+- [[chat()]] - `contains` [EXTRACTED]
+- [[health_check()]] - `contains` [EXTRACTED]
+- [[lifespan()]] - `contains` [EXTRACTED]
+- [[load_persona_files()]] - `contains` [EXTRACTED]
+- [[require_auth()]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pi/mcpjson
+#graphify/code #graphify/EXTRACTED #community/Community_95

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-session-prompt/SKILL.md"
+source_file: ".agents/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "ModeRequest (2)"
-location: "L35"
+community: "Community 745"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ModeRequest_2
+  - community/Community_745
 ---
 
 # Step 2 — Answer Six Questions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Workflow Survey → Draft → Inject → Confirm_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ModeRequest_2
+#graphify/document #graphify/EXTRACTED #community/Community_745

@@ -1,21 +1,22 @@
 ---
 source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
 type: "document"
-community: "First Time Setup (2)"
+community: "Community 417"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_Time_Setup_2
+  - community/Community_417
 ---
 
 # First Time Setup
 
 ## Connections
 - [[First Time Setup]] - `contains` [EXTRACTED]
-- [[Prerequisites_6]] - `contains` [EXTRACTED]
-- [[Related Notes_40]] - `contains` [EXTRACTED]
+- [[Prerequisites_13]] - `contains` [EXTRACTED]
+- [[Related Notes_66]] - `contains` [EXTRACTED]
 - [[Step 1 Create Secret Files]] - `contains` [EXTRACTED]
+- [[Step 2 Configure agentshroud.yaml]] - `contains` [EXTRACTED]
 - [[Step 3 Configure 1Password Items]] - `contains` [EXTRACTED]
 - [[Step 4 Build Container Images]] - `contains` [EXTRACTED]
 - [[Step 5 Configure agentshroud.yaml]] - `contains` [EXTRACTED]
@@ -25,4 +26,4 @@ tags:
 - [[Step 8 Verify Security Posture]] - `contains` [EXTRACTED]
 - [[Troubleshooting First Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_Time_Setup_2
+#graphify/document #graphify/EXTRACTED #community/Community_417

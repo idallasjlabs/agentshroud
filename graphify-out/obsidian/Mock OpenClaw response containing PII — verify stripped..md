@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "AgentTarget"
+community: "Community 43"
 location: "L312"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/Community_43
 ---
 
 # Mock OpenClaw response containing PII — verify stripped.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_outbound_pii_stripped()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/Community_43

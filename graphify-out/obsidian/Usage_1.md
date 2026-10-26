@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
+source_file: ".agents/agents/graphify.md"
 type: "document"
-community: "What is the symptom?"
-location: "L19"
+community: "Community 920"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_is_the_symptom
+  - community/Community_920
 ---
 
 # Usage
 
 ## Connections
-- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
+- [[graphify_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_is_the_symptom
+#graphify/document #graphify/EXTRACTED #community/Community_920

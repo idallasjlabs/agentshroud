@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
+source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "AgentShroud Development Team — Agile Structure"
-location: "L16"
+community: "Community 420"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Development_Team__Agile_Structure
+  - community/Community_420
 ---
 
 # Overview
 
 ## Connections
-- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
+- [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Development_Team__Agile_Structure
+#graphify/document #graphify/EXTRACTED #community/Community_420

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "rationale"
-community: "chatbot/main.py"
+community: "Community 97"
 location: "L302"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/Community_97
 ---
 
 # Return True if text appears to contain admin-private data.
 
 ## Connections
-- [[dot-contains_private_data()]] - `rationale_for` [EXTRACTED]
+- [[.contains_private_data()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_97

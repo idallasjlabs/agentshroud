@@ -1,12 +1,12 @@
 ---
-source_file: ".mcp.json"
+source_file: ".omp/mcp.json"
 type: "code"
-community: "Mac App Discovery Skill"
+community: "Community 404"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mac_App_Discovery_Skill
+  - community/Community_404
 ---
 
 # autoOpenFile
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[xmind_3]] - `requires_env` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mac_App_Discovery_Skill
+#graphify/code #graphify/EXTRACTED #community/Community_404

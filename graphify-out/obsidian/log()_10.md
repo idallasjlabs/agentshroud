@@ -1,18 +1,17 @@
 ---
-source_file: "docker/scripts/security-scheduler.sh"
+source_file: "tests/startup_smoke/test_sunday_upgrade_head_guard.sh"
 type: "code"
-community: "Red Team Assessment v1.2.0"
-location: "L24"
+community: "Community 2090"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Red_Team_Assessment_v120
+  - community/Community_2090
 ---
 
 # log()
 
 ## Connections
-- [[security-scheduler.sh]] - `defines` [EXTRACTED]
-- [[security-scheduler.sh script]] - `calls` [EXTRACTED]
+- [[test_sunday_upgrade_head_guard.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Red_Team_Assessment_v120
+#graphify/code #graphify/EXTRACTED #community/Community_2090

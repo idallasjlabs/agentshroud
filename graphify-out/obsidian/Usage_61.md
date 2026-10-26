@@ -1,24 +1,17 @@
 ---
-source_file: "docker/README.md"
+source_file: "docker/config/hermes/skills/i-aws/README.md"
 type: "document"
-community: "TestMultilingualInjection"
-location: "L274"
+community: "Community 90"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMultilingualInjection
+  - community/Community_90
 ---
 
 # Usage
 
 ## Connections
-- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
-- [[Check Status]] - `contains` [EXTRACTED]
-- [[Hermes  HCI]] - `contains` [EXTRACTED]
-- [[Port Reference]] - `contains` [EXTRACTED]
-- [[Start the Stack]] - `contains` [EXTRACTED]
-- [[Stop the Stack]] - `contains` [EXTRACTED]
-- [[Test Chat]] - `contains` [EXTRACTED]
-- [[View Logs]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMultilingualInjection
+#graphify/document #graphify/EXTRACTED #community/Community_90

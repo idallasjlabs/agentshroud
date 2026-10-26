@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "EgressFilter"
+community: "Community 2011"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/Community_2011
 ---
 
 # httpx.md
@@ -15,4 +15,4 @@ tags:
 - [[All Dependencies]] - `references` [EXTRACTED]
 - [[httpx_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/Community_2011

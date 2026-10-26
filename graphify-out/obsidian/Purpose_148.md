@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
 type: "document"
-community: "OpenClaw Host Hardening"
+community: "Community 536"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Host_Hardening
+  - community/Community_536
 ---
 
 # Purpose
 
 ## Connections
-- [[event_bus.py]] - `contains` [EXTRACTED]
+- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Host_Hardening
+#graphify/document #graphify/EXTRACTED #community/Community_536

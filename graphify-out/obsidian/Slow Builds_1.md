@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/raspberry-pi.md"
+source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "MCPAuditTrail"
-location: "L131"
+community: "Community 1188"
+location: "L1734"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCPAuditTrail
+  - community/Community_1188
 ---
 
 # Slow Builds
 
 ## Connections
-- [[Troubleshooting_28]] - `contains` [EXTRACTED]
+- [[Troubleshooting_46]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCPAuditTrail
+#graphify/document #graphify/EXTRACTED #community/Community_1188

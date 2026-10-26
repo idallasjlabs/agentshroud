@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "Community 7"
 location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # In-memory approval queue with WebSocket notifications      Actions requiring app
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ApprovalQueue]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

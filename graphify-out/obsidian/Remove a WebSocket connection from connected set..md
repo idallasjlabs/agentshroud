@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "rationale"
-community: "ContextSegment"
+community: "Community 30"
 location: "L505"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/Community_30
 ---
 
 # Remove a WebSocket connection from connected set.
 
 ## Connections
-- [[dot-disconnect()_1]] - `rationale_for` [EXTRACTED]
+- [[.disconnect()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextSegment
+#graphify/rationale #graphify/EXTRACTED #community/Community_30

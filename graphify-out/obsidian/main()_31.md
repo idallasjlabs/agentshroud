@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "skills/openclaw/nano-banana-pro/scripts/generate_image.py"
 type: "code"
-community: "AlertDispatcher (4)"
-location: "L391"
+community: "Community 382"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_4
+  - community/Community_382
 ---
 
 # main()
 
 ## Connections
-- [[cli()]] - `calls` [EXTRACTED]
-- [[climain.py]] - `contains` [EXTRACTED]
+- [[generate_image.py]] - `contains` [EXTRACTED]
+- [[get_api_key()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_4
+#graphify/code #graphify/EXTRACTED #community/Community_382

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "SecurityPipeline"
+community: "Community 12"
 location: "L9051"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/Community_12
 ---
 
 # Unknown bot_id falls back to _bot_username.
 
 ## Connections
-- [[dot-test_username_for_bot_falls_back_to_default()]] - `rationale_for` [EXTRACTED]
+- [[.test_username_for_bot_falls_back_to_default()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/rationale #graphify/EXTRACTED #community/Community_12

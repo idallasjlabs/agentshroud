@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-03.md"
 type: "document"
-community: "TestScoreContainerHardening"
+community: "Community 1115"
 location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestScoreContainerHardening
+  - community/Community_1115
 ---
 
 # SECURITY THEATER RISK (looks good, limited real value)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[2. Security Value Audit_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestScoreContainerHardening
+#graphify/document #graphify/EXTRACTED #community/Community_1115

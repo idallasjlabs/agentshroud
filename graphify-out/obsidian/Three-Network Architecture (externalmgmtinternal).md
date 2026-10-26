@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "concept"
-community: "Route map (by router)"
+community: "Community 857"
 tags:
   - graphify/concept
   - graphify/AMBIGUOUS
-  - community/Route_map_by_router
+  - community/Community_857
 ---
 
 # Three-Network Architecture (external/mgmt/internal)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ADR-003 Two-Network Container Isolation]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/concept #graphify/AMBIGUOUS #community/Route_map_by_router
+#graphify/concept #graphify/AMBIGUOUS #community/Community_857

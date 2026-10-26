@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "TestOAuthInjection"
+community: "Community 590"
 location: "L279"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/TestOAuthInjection
+  - graphify/INFERRED
+  - community/Community_590
 ---
 
 # DatagramTransport
@@ -15,4 +15,4 @@ tags:
 - [[DNSBlocklist]] - `uses` [INFERRED]
 - [[start_dns_forwarder()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection
+#graphify/code #graphify/INFERRED #community/Community_590

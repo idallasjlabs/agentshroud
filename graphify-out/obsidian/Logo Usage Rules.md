@@ -1,12 +1,12 @@
 ---
 source_file: "branding/QUICK-REFERENCE.md"
 type: "document"
-community: "BotConfig (3)"
+community: "Community 586"
 location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BotConfig_3
+  - community/Community_586
 ---
 
 # Logo Usage Rules
@@ -16,4 +16,4 @@ tags:
 - [[✅ Do]] - `contains` [EXTRACTED]
 - [[❌ Don't]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BotConfig_3
+#graphify/document #graphify/EXTRACTED #community/Community_586

@@ -1,19 +1,29 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "ServiceManager"
+community: "Community 6"
 location: "L232"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ServiceManager
+  - graphify/INFERRED
+  - community/Community_6
 ---
 
 # SSHExecRequest
 
 ## Connections
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[AuthRequired]] - `uses` [INFERRED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[Exception_1]] - `uses` [INFERRED]
+- [[MCPProxyRequest]] - `uses` [INFERRED]
+- [[MCPResultRequest]] - `uses` [INFERRED]
+- [[OpProxyRequest]] - `uses` [INFERRED]
+- [[Request_1]] - `uses` [INFERRED]
 - [[Request to execute an SSH command]] - `rationale_for` [EXTRACTED]
-- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
+- [[SSHExecRequest]] - `uses` [INFERRED]
+- [[SSHWriteFileRequest]] - `uses` [INFERRED]
+- [[WebSocket_2]] - `uses` [INFERRED]
+- [[main.py_2]] - `imports` [EXTRACTED]
+- [[models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/INFERRED #community/Community_6

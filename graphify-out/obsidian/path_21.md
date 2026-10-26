@@ -1,17 +1,21 @@
 ---
-source_file: "skills/custom/browser-fetch/browser-fetch.js"
+source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "hermes/workspace/jira_dev_ticket.py"
-location: "L8"
+community: "Community 489"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/workspace/jira_dev_ticketpy
+  - community/Community_489
 ---
 
-# path
+# Path
 
 ## Connections
-- [[browser-fetch.js_2]] - `contains` [EXTRACTED]
+- [[.from_file()]] - `references` [EXTRACTED]
+- [[.from_source()]] - `references` [EXTRACTED]
+- [[deploy_manifest()]] - `references` [EXTRACTED]
+- [[plan_deploy()]] - `references` [EXTRACTED]
+- [[validate_manifest()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/workspace/jira_dev_ticketpy
+#graphify/code #graphify/EXTRACTED #community/Community_489

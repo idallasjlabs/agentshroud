@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
+source_file: "docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md"
 type: "document"
-community: "ADR-008-progressive-trust-levels.md"
-location: "L49"
+community: "Community 894"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-008-progressive-trust-levelsmd
+  - community/Community_894
 ---
 
 # Positive Consequences
 
 ## Connections
-- [[Consequences_4]] - `contains` [EXTRACTED]
+- [[Consequences_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-008-progressive-trust-levelsmd
+#graphify/document #graphify/EXTRACTED #community/Community_894

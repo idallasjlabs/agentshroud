@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-observability/SKILL.md"
+source_file: ".agents/agents/i-observability.md"
 type: "document"
-community: "Control-Plane / Data-Plane Separation"
-location: "L5"
+community: "Community 2221"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Control-Plane_/_Data-Plane_Separation
+  - community/Community_2221
 ---
 
 # Skill: observability
 
 ## Connections
-- [[dot-agentsskillsi-observabilitySKILL]] - `contains` [EXTRACTED]
+- [[i-observability]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Control-Plane_/_Data-Plane_Separation
+#graphify/document #graphify/EXTRACTED #community/Community_2221

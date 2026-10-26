@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
+source_file: ".cursor/agents/i-ui.md"
 type: "document"
-community: "Slack Channel Setup"
-location: "L269"
+community: "Community 629"
+location: "L272"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Slack_Channel_Setup
+  - community/Community_629
 ---
 
 # Dark / Light Theme Implementation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill UI Expert (UI)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup
+#graphify/document #graphify/EXTRACTED #community/Community_629

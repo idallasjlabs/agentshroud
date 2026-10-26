@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "rationale"
-community: "._make_proxy()"
+community: "Community 5"
 location: "L154"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_5
 ---
 
 # The lifespan must stop the background monitor task on shutdown.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestResourceGuardLifecycle]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_5

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/VAULT-SHARING-INSTRUCTIONS.md"
 type: "document"
-community: "`SecurityPipeline`"
+community: "Community 619"
 location: "L189"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/Community_619
 ---
 
 # Current Files Status
@@ -17,4 +17,4 @@ tags:
 - [[✅ Authoritative Files (Active)]] - `contains` [EXTRACTED]
 - [[❌ Removed Files (Outdated)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/document #graphify/EXTRACTED #community/Community_619

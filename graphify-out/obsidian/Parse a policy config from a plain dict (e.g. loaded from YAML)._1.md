@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "Community 35"
 location: "L201"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/Community_35
 ---
 
 # Parse a policy config from a plain dict (e.g. loaded from YAML).
 
 ## Connections
-- [[dot-from_dict()_5]] - `rationale_for` [EXTRACTED]
+- [[.from_dict()_7]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/Community_35

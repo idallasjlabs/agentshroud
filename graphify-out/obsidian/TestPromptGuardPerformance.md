@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "Community 84"
 location: "L92"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPPermissionManager
+  - community/Community_84
 ---
 
 # TestPromptGuardPerformance
 
 ## Connections
-- [[dot-guard()_6]] - `method` [EXTRACTED]
-- [[dot-test_1000_messages_under_5s()]] - `method` [EXTRACTED]
-- [[dot-test_detection_accuracy_at_scale()]] - `method` [EXTRACTED]
+- [[.guard()_2]] - `method` [EXTRACTED]
+- [[.test_1000_messages_under_5s()]] - `method` [EXTRACTED]
+- [[.test_detection_accuracy_at_scale()]] - `method` [EXTRACTED]
 - [[DataLedger]] - `uses` [INFERRED]
-- [[LedgerConfig_1]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer_3]] - `uses` [INFERRED]
+- [[LedgerConfig]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
 - [[Prompt guard 1000 messages in  5s.]] - `rationale_for` [EXTRACTED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
-- [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_performance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPPermissionManager
+#graphify/code #graphify/INFERRED #community/Community_84

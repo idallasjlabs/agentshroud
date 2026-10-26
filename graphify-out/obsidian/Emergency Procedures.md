@@ -1,17 +1,19 @@
 ---
-source_file: "docs/security/SECURITY_ARCHITECTURE.md"
+source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "MiddlewareManager (5)"
-location: "L541"
+community: "Community 292"
+location: "L252"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/Community_292
 ---
 
 # Emergency Procedures
 
 ## Connections
-- [[Quick Reference]] - `contains` [EXTRACTED]
+- [[Emergency Contacts]] - `contains` [EXTRACTED]
+- [[GSDE&G Skills Reference]] - `contains` [EXTRACTED]
+- [[P1 Incident Response]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/document #graphify/EXTRACTED #community/Community_292

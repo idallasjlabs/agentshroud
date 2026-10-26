@@ -1,0 +1,22 @@
+---
+source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
+type: "document"
+community: "Community 1152"
+location: "L5"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Community_1152
+---
+
+# Skill: Code Review (CR)
+
+## Connections
+- [[Feedback Guidelines_7]] - `contains` [EXTRACTED]
+- [[Output Format_100]] - `contains` [EXTRACTED]
+- [[Production-Specific Review Checks_7]] - `contains` [EXTRACTED]
+- [[Review Principles_7]] - `contains` [EXTRACTED]
+- [[Role_262]] - `contains` [EXTRACTED]
+- [[SKILL_152]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Community_1152

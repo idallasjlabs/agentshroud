@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
+source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "wazuh-ossec.conf"
-location: "L75"
+community: "Community 1219"
+location: "L221"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/wazuh-ossecconf
+  - community/Community_1219
 ---
 
 # Related Notes
 
 ## Connections
-- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
+- [[Data Flow_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/wazuh-ossecconf
+#graphify/document #graphify/EXTRACTED #community/Community_1219

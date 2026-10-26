@@ -1,16 +1,19 @@
 ---
-source_file: ""
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "A2APolicyEngine"
+community: "Community 24"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/Community_24
 ---
 
 # Any
 
 ## Connections
-- [[get_agent_cve_summary()]] - `references` [EXTRACTED]
+- [[.__init__()_103]] - `references` [EXTRACTED]
+- [[._compile_patterns()_1]] - `references` [EXTRACTED]
+- [[.get_stats()_17]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/Community_24

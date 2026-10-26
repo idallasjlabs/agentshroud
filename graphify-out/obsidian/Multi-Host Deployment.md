@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/RELEASE-PLAN.md"
+source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "mcp_audit.py"
-location: "L414"
+community: "Community 831"
+location: "L366"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_auditpy
+  - community/Community_831
 ---
 
 # Multi-Host Deployment
 
 ## Connections
-- [[v1.3.0 — Platform Expansion (53 items)]] - `contains` [EXTRACTED]
+- [[Post-v1.0.0 — Deferred]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_auditpy
+#graphify/document #graphify/EXTRACTED #community/Community_831

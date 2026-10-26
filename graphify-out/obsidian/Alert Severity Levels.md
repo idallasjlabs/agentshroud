@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "KillSwitchMonitor (2) (6)"
+community: "Community 1327"
 location: "L259"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_2_6
+  - community/Community_1327
 ---
 
 # Alert Severity Levels
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[4. Handling Alerts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/KillSwitchMonitor_2_6
+#graphify/document #graphify/EXTRACTED #community/Community_1327

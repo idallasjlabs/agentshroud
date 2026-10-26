@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "MiddlewareManager"
+community: "Community 509"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Community_509
 ---
 
 # temp_workspace()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_file_sandbox_message_gate.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/Community_509

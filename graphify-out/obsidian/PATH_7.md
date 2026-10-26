@@ -1,17 +1,17 @@
 ---
-source_file: "scripts/sunday-upgrade.sh"
+source_file: "scripts/deploy.sh"
 type: "code"
-community: "_make_sanitizer()"
-location: "L31"
+community: "Community 1418"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/Community_1418
 ---
 
 # PATH
 
 ## Connections
-- [[sunday-upgrade.sh]] - `defines` [EXTRACTED]
+- [[deploy.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/code #graphify/EXTRACTED #community/Community_1418

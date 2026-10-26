@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "test_security.py"
+community: "Community 299"
 location: "L269"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_securitypy
+  - community/Community_299
 ---
 
 # Integration
@@ -16,4 +16,4 @@ tags:
 - [[With 1Password]] - `contains` [EXTRACTED]
 - [[With AgentShroud Gateway]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_securitypy
+#graphify/document #graphify/EXTRACTED #community/Community_299

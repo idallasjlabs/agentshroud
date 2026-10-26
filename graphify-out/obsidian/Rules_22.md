@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tdd/SKILL.md"
+source_file: ".cursor/agents/i-ui.md"
 type: "document"
-community: "workspace.sh"
-location: "L20"
+community: "Community 629"
+location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/workspacesh
+  - community/Community_629
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
+- [[Skill UI Expert (UI)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/workspacesh
+#graphify/document #graphify/EXTRACTED #community/Community_629

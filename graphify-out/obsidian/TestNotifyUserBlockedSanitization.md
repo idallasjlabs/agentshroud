@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "._make_proxy()"
+community: "Community 121"
 location: "L194"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_make_proxy
+  - community/Community_121
 ---
 
 # TestNotifyUserBlockedSanitization
 
 ## Connections
-- [[dot-test_sanitize_reason_preserves_simple_text()]] - `method` [EXTRACTED]
-- [[dot-test_sanitize_reason_strips_file_paths()]] - `method` [EXTRACTED]
-- [[dot-test_sanitize_reason_strips_module_paths()]] - `method` [EXTRACTED]
+- [[.test_sanitize_reason_preserves_simple_text()]] - `method` [EXTRACTED]
+- [[.test_sanitize_reason_strips_file_paths()]] - `method` [EXTRACTED]
+- [[.test_sanitize_reason_strips_module_paths()]] - `method` [EXTRACTED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EnvironmentGuard]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]
 - [[GitGuard]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_round2_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_make_proxy
+#graphify/code #graphify/INFERRED #community/Community_121

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/browser-fetch/skill.json"
 type: "code"
-community: "Technical Specification (2)"
+community: "Community 694"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Technical_Specification_2
+  - community/Community_694
 ---
 
 # tools
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[skill.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Technical_Specification_2
+#graphify/code #graphify/EXTRACTED #community/Community_694

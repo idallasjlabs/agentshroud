@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/oracle/SKILL.md"
 type: "document"
-community: "test_anthropic_openai_translator.py (3)"
+community: "Community 771"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy_3
+  - community/Community_771
 ---
 
 # oracle — best use
@@ -18,9 +18,9 @@ tags:
 - [[Golden path]] - `contains` [EXTRACTED]
 - [[Main use case (browser, GPT‑5.2 Pro)]] - `contains` [EXTRACTED]
 - [[Prompt template (high signal)]] - `contains` [EXTRACTED]
-- [[Safety]] - `contains` [EXTRACTED]
+- [[SKILL_233]] - `contains` [EXTRACTED]
+- [[Safety_8]] - `contains` [EXTRACTED]
 - [[Sessions + slugs]] - `contains` [EXTRACTED]
-- [[oracleSKILL]] - `contains` [EXTRACTED]
 - [[“Exhaustive prompt” restoration pattern]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy_3
+#graphify/document #graphify/EXTRACTED #community/Community_771

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
+source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "start-agentshroud.sh"
-location: "L236"
+community: "Community 419"
+location: "L237"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/start-agentshroudsh
+  - community/Community_419
 ---
 
 # Render locally with mmdc
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Rendering and Export_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/start-agentshroudsh
+#graphify/document #graphify/EXTRACTED #community/Community_419

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
+source_file: ".cursor/agents/aws.md"
 type: "document"
-community: "models.py"
-location: "L183"
+community: "Community 259"
+location: "L366"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/modelspy
+  - community/Community_259
 ---
 
 # Workflow
 
 ## Connections
-- [[Skills by Category_1]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/modelspy
+#graphify/document #graphify/EXTRACTED #community/Community_259

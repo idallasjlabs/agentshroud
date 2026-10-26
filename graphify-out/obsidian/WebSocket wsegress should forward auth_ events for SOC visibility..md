@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "rationale"
-community: "CompetitiveIntelReport"
+community: "Community 62"
 location: "L241"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - community/Community_62
 ---
 
 # WebSocket /ws/egress should forward auth_* events for SOC visibility.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_egress_receives_auth_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/rationale #graphify/EXTRACTED #community/Community_62

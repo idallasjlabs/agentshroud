@@ -1,21 +1,21 @@
 ---
-source_file: ".agents/skills/i-tw/SKILL.md"
+source_file: ".cursor/agents/i-tw.md"
 type: "document"
-community: "hermes/SOUL.md"
-location: "L176"
+community: "Community 729"
+location: "L179"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/SOULmd
+  - community/Community_729
 ---
 
 # → {"site": "site1", "test_mode": True, "output_prefix": "_test/site1/"}
 
 ## Connections
-- [[dot-agentsskillsi-twSKILL]] - `contains` [EXTRACTED]
 - [[Changelog Entry_2]] - `contains` [EXTRACTED]
-- [[Dependencies_11]] - `contains` [EXTRACTED]
-- [[Validation Checklist_5]] - `contains` [EXTRACTED]
+- [[Dependencies_15]] - `contains` [EXTRACTED]
+- [[Validation Checklist_8]] - `contains` [EXTRACTED]
 - [[Writing Style Rules_2]] - `contains` [EXTRACTED]
+- [[i-tw_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/SOULmd
+#graphify/document #graphify/EXTRACTED #community/Community_729

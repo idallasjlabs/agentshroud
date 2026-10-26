@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "concept"
-community: "Newsletter: Coding Agent CLIs"
+community: "Community 1662"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Newsletter_Coding_Agent_CLIs
+  - community/Community_1662
 ---
 
 # Critical/High/Medium/Low tool risk tiers gating approval requirement
 
-#graphify/concept #graphify/EXTRACTED #community/Newsletter_Coding_Agent_CLIs
+#graphify/concept #graphify/EXTRACTED #community/Community_1662

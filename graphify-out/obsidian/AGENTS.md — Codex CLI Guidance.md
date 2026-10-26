@@ -1,11 +1,11 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "voice_task (2)"
+community: "Community 1140"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/voice_task_2
+  - community/Community_1140
 ---
 
 # AGENTS.md — Codex CLI Guidance
@@ -18,4 +18,4 @@ tags:
 - [[Codex Validation Runner Role]] - `references` [EXTRACTED]
 - [[Data Lakehouse Platform (GSDL)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/voice_task_2
+#graphify/document #graphify/EXTRACTED #community/Community_1140

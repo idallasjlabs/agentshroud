@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "Community 99"
 location: "L4581"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/Community_99
 ---
 
 # Persistent 400 returns the error after exactly one retry (no infinite loop).
 
 ## Connections
-- [[dot-test_400_retry_no_loop()]] - `rationale_for` [EXTRACTED]
+- [[.test_400_retry_no_loop()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_99

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/compliance/eu-ai-act-nist-matrix.md"
 type: "document"
-community: "TrustManager._update_score"
+community: "Community 1383"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TrustManager_update_score
+  - community/Community_1383
 ---
 
 # EU AI Act & NIST Alignment Matrix
@@ -14,4 +14,4 @@ tags:
 - [[Governance Proxy Positioning (deployer compliance enabler)]] - `references` [EXTRACTED]
 - [[SOC 2 Type II Attestation Path (SCRUM-99)]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TrustManager_update_score
+#graphify/document #graphify/EXTRACTED #community/Community_1383

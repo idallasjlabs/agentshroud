@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "Community 72"
 location: "L583"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/Community_72
 ---
 
 # CLAUDE.md §7.8 mandates a 0.9 minimum PII confidence — guard the floor.      The
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestConfidenceFloor]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

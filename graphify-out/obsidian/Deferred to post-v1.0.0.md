@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Added"
+community: "Community 1984"
 location: "L821"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Added
+  - community/Community_1984
 ---
 
 # Deferred to post-v1.0.0
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[0.9.0 — featv0.9.0-soc-team-collab — Sentinel (2026-03-18)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Added
+#graphify/document #graphify/EXTRACTED #community/Community_1984

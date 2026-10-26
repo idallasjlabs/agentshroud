@@ -1,27 +1,29 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
-type: "document"
-community: "test_gemini_openai_translator.py"
-location: "L10"
+source_file: "gateway/ingest_api/auth.py"
+type: "code"
+community: "Community 92"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/test_gemini_openai_translatorpy
+  - community/Community_92
 ---
 
 # auth.py
 
 ## Connections
-- [[Config Keys Read_6]] - `contains` [EXTRACTED]
-- [[Environment Variables_16]] - `contains` [EXTRACTED]
-- [[Function Details_42]] - `contains` [EXTRACTED]
-- [[HTTP Responses]] - `contains` [EXTRACTED]
-- [[Imports From  Exports To_6]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_44]] - `contains` [EXTRACTED]
-- [[Known Issues  Notes_7]] - `contains` [EXTRACTED]
-- [[Purpose_147]] - `contains` [EXTRACTED]
-- [[Related_48]] - `contains` [EXTRACTED]
-- [[Responsibilities_51]] - `contains` [EXTRACTED]
-- [[auth.py_1]] - `contains` [EXTRACTED]
+- [[GatewayConfig_1]] - `imports` [EXTRACTED]
+- [[README_127]] - `references` [EXTRACTED]
+- [[RateLimiter]] - `contains` [EXTRACTED]
+- [[api.py]] - `imports_from` [EXTRACTED]
+- [[approval.py]] - `imports_from` [EXTRACTED]
+- [[config.py]] - `imports_from` [EXTRACTED]
+- [[create_auth_dependency()]] - `contains` [EXTRACTED]
+- [[dashboard.py]] - `imports_from` [EXTRACTED]
+- [[forward.py]] - `imports_from` [EXTRACTED]
+- [[get_auth_dependency()]] - `contains` [EXTRACTED]
+- [[health.py]] - `imports_from` [EXTRACTED]
+- [[main.py_2]] - `imports_from` [EXTRACTED]
+- [[verify_token()]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_gemini_openai_translatorpy
+#graphify/code #graphify/EXTRACTED #community/Community_92

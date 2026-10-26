@@ -1,18 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md"
+source_file: "docs/governance/SPRINT_CADENCE.md"
 type: "document"
-community: "Quick Reference"
-location: "L14"
+community: "Community 1104"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference
+  - community/Community_1104
 ---
 
 # Decision
 
 ## Connections
-- [[ADR-004 API Keys Never in Agent Container]] - `contains` [EXTRACTED]
-- [[Implementation]] - `contains` [EXTRACTED]
+- [[Sprint Cadence Decision]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference
+#graphify/document #graphify/EXTRACTED #community/Community_1104

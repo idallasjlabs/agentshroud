@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "test_mfa_guard.py"
+community: "Community 29"
 location: "L1101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/Community_29
 ---
 
 # _score_network_segmentation()
 
 ## Connections
-- [[dot-test_baseline_three_without_daemon_config()]] - `calls` [EXTRACTED]
+- [[.test_baseline_three_without_daemon_config()]] - `calls` [EXTRACTED]
 - [[Score domain 7 Network Segmentation (0-5).      3=Docker network architecture b]] - `rationale_for` [EXTRACTED]
 - [[_app_state_has()]] - `calls` [EXTRACTED]
 - [[_is_containerized()]] - `calls` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/Community_29

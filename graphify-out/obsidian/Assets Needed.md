@@ -1,12 +1,12 @@
 ---
 source_file: "branding/INDEX.md"
 type: "document"
-community: "dashboard_bridge.py"
+community: "Community 585"
 location: "L117"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard_bridgepy
+  - community/Community_585
 ---
 
 # Assets Needed
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📝 To-Do]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard_bridgepy
+#graphify/document #graphify/EXTRACTED #community/Community_585

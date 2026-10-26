@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/canvas/SKILL.md"
+source_file: "docs/planning/v0.8/SECURITY_PLAN.md"
 type: "document"
-community: "test_security_toolchain.py"
-location: "L15"
+community: "Community 415"
+location: "L356"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/Community_415
 ---
 
 # Architecture
 
 ## Connections
-- [[How It Works]] - `contains` [EXTRACTED]
+- [[Current State (2026-02-24)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/document #graphify/EXTRACTED #community/Community_415

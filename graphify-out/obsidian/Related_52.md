@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
 type: "document"
-community: "lib.sh"
-location: "L73"
+community: "Community 617"
+location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/libsh
+  - community/Community_617
 ---
 
 # Related
 
 ## Connections
-- [[compose_generator.py_2]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_2]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/libsh
+#graphify/document #graphify/EXTRACTED #community/Community_617

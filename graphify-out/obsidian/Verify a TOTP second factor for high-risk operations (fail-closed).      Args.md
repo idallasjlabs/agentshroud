@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mfa_guard.py"
 type: "rationale"
-community: "test_voice_latency_guard.py"
+community: "Community 70"
 location: "L100"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/Community_70
 ---
 
 # Verify a TOTP second factor for high-risk operations (fail-closed).      Args:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MFAGuard_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_70

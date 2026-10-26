@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "document"
-community: "SecurityPipeline (4)"
+community: "Community 457"
 location: "L110"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecurityPipeline_4
+  - community/Community_457
 ---
 
 # Orchestration (3)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Modules (58)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecurityPipeline_4
+#graphify/document #graphify/EXTRACTED #community/Community_457

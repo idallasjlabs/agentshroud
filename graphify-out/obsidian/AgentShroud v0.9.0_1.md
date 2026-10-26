@@ -1,12 +1,12 @@
 ---
 source_file: "docs/requirements/system-requirements.md"
 type: "document"
-community: "Common Operations"
+community: "Community 508"
 location: "L2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Operations
+  - community/Community_508
 ---
 
 # AgentShroud v0.9.0
@@ -20,4 +20,4 @@ tags:
 - [[6. Risk Assessment]] - `contains` [EXTRACTED]
 - [[System Requirements Specification (SRS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Operations
+#graphify/document #graphify/EXTRACTED #community/Community_508

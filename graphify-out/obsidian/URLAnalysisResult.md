@@ -1,17 +1,22 @@
 ---
-source_file: "docs/data/data-dictionary.md"
-type: "document"
-community: "AgentShroud Operations Cheat Sheet"
-location: "L135"
+source_file: "gateway/proxy/url_analyzer.py"
+type: "code"
+community: "Community 562"
+location: "L44"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Operations_Cheat_Sheet
+  - community/Community_562
 ---
 
 # URLAnalysisResult
 
 ## Connections
-- [[Network Security Entities]] - `contains` [EXTRACTED]
+- [[._check_base64()]] - `references` [EXTRACTED]
+- [[.analyze()]] - `references` [EXTRACTED]
+- [[.analyze_and_pin()]] - `references` [EXTRACTED]
+- [[.flagged()]] - `method` [EXTRACTED]
+- [[Result of analyzing a URL.]] - `rationale_for` [EXTRACTED]
+- [[url_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet
+#graphify/code #graphify/EXTRACTED #community/Community_562

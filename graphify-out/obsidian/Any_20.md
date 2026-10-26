@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
-location: "L379"
+community: "Community 43"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/Community_43
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_lifecycle_status()]] - `references` [EXTRACTED]
-- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
+- [[.get_stats()_7]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/Community_43

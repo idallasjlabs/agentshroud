@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "code"
-community: "Enum"
+community: "Community 169"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/Community_169
 ---
 
 # test_soc_websocket.py
 
 ## Connections
-- [[SOCWebSocketHandler_2]] - `imports` [EXTRACTED]
-- [[Severity_8]] - `imports` [EXTRACTED]
+- [[SOCWebSocketHandler]] - `imports` [EXTRACTED]
+- [[Severity_2]] - `imports` [EXTRACTED]
 - [[TestCoerceToWSEvent]] - `contains` [EXTRACTED]
 - [[TestSOCWebSocketHandlerImport]] - `contains` [EXTRACTED]
 - [[TestSubscriptionFilter]] - `contains` [EXTRACTED]
 - [[WSEventType]] - `imports` [EXTRACTED]
 - [[_coerce_to_ws_event()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/Community_169

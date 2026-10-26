@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "document"
-community: "Sunday Upgrade HEAD Guard Test"
+community: "Community 1252"
 location: "L265"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_HEAD_Guard_Test
+  - community/Community_1252
 ---
 
 # SECTION 9: IMPORTANT NOTES
@@ -18,4 +18,4 @@ tags:
 - [[Trademark vs. Patent]] - `contains` [EXTRACTED]
 - [[Why Standard Character Mark First]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sunday_Upgrade_HEAD_Guard_Test
+#graphify/document #graphify/EXTRACTED #community/Community_1252

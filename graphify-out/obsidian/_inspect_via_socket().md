@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Enum"
+community: "Community 54"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/Community_54
 ---
 
 # _inspect_via_socket()
 
 ## Connections
-- [[dot-_describe_service()]] - `calls` [EXTRACTED]
-- [[Any_76]] - `references` [EXTRACTED]
+- [[._describe_service()]] - `calls` [EXTRACTED]
+- [[Any_68]] - `references` [EXTRACTED]
 - [[Query Docker daemon directly via Unix socket — no CLI needed.]] - `rationale_for` [EXTRACTED]
 - [[services.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/Community_54

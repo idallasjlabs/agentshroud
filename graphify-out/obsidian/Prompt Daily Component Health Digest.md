@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/daily-component-health-digest.txt"
 type: "document"
-community: "Hermes Cron Jobs Reference & Recreation Guide"
+community: "Community 373"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+  - community/Community_373
 ---
 
 # Prompt: Daily Component Health Digest
@@ -19,4 +19,4 @@ tags:
 - [[Stale Trivy Scan Disclosure Requirement]] - `rationale_for` [EXTRACTED]
 - [[Telegram Formatting Rule (bold only, no headers or tables)]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_373

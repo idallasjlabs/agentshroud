@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "document"
-community: "AgentShroud Brand Guidelines"
+community: "Community 237"
 location: "L384"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/Community_237
 ---
 
 # Can We Use ONLY a Shared Folder?
@@ -15,4 +15,4 @@ tags:
 - [[What Does OpenClaw Actually Need to Write]] - `contains` [EXTRACTED]
 - [[❌ NO - Here's What Would Break]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/document #graphify/EXTRACTED #community/Community_237

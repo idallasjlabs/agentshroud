@@ -1,22 +1,23 @@
 ---
-source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
+source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "code"
-community: "test_hermes_cron_seed.py"
+community: "Community 194"
 location: "L261"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_cron_seedpy
+  - community/Community_194
 ---
 
 # create_issue()
 
 ## Connections
 - [[Create a Jira issue. Returns the new issue key (e.g. 'SCRUM-124').]] - `rationale_for` [EXTRACTED]
+- [[RuntimeError]] - `calls` [INFERRED]
 - [[_auth_headers()]] - `calls` [EXTRACTED]
 - [[build_create_issue_payload()]] - `calls` [EXTRACTED]
 - [[build_issue_url()]] - `calls` [EXTRACTED]
-- [[openclawworkspacejira_dev_ticket.py]] - `contains` [EXTRACTED]
-- [[run()_2]] - `calls` [EXTRACTED]
+- [[jira_dev_ticket.py]] - `contains` [EXTRACTED]
+- [[run()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_cron_seedpy
+#graphify/code #graphify/EXTRACTED #community/Community_194

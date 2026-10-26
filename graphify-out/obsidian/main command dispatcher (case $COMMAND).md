@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/workspace.sh"
 type: "code"
-community: "TestToolChainAnalyzer (2)"
+community: "Community 763"
 location: "125-181"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer_2
+  - community/Community_763
 ---
 
 # main command dispatcher (case $COMMAND)
@@ -20,6 +20,6 @@ tags:
 - [[cmd_rm()]] - `calls` [EXTRACTED]
 - [[cmd_shell()]] - `calls` [EXTRACTED]
 - [[cmd_tree()]] - `calls` [EXTRACTED]
-- [[usage()_5]] - `calls` [EXTRACTED]
+- [[usage()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer_2
+#graphify/code #graphify/EXTRACTED #community/Community_763

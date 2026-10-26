@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "rationale"
-community: "format_cve_report()"
+community: "Community 160"
 location: "L195"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/format_cve_report
+  - community/Community_160
 ---
 
 # Log security-related events
 
 ## Connections
-- [[dot-_log_security_event()_3]] - `rationale_for` [EXTRACTED]
+- [[._log_security_event()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/format_cve_report
+#graphify/rationale #graphify/EXTRACTED #community/Community_160

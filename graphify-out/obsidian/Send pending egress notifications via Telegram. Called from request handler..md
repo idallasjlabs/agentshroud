@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "EgressFilterConfig (2)"
+community: "Community 68"
 location: "L607"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/Community_68
 ---
 
 # Send pending egress notifications via Telegram. Called from request handler.
 
 ## Connections
-- [[dot-flush_notifications()]] - `rationale_for` [EXTRACTED]
+- [[.flush_notifications()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_68

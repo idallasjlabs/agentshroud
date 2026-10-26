@@ -1,20 +1,20 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Auth Errors.md"
 type: "document"
-community: "ApprovalQueueConfig (7)"
+community: "Community 389"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_7
+  - graphify/INFERRED
+  - community/Community_389
 ---
 
 # Auth Errors.md
 
 ## Connections
-- [[Auth Errors_2]] - `contains` [EXTRACTED]
+- [[Auth Errors_1]] - `contains` [EXTRACTED]
 - [[Egress Filter Errors]] - `semantically_similar_to` [INFERRED]
 - [[Error Index]] - `references` [EXTRACTED]
-- [[auth.py_1]] - `references` [INFERRED]
+- [[auth.py_2]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_7
+#graphify/document #graphify/INFERRED #community/Community_389

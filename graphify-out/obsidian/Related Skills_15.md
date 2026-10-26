@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm/README.md"
+source_file: ".agents/skills/i-gg/README.md"
 type: "document"
-community: "TestOutboundInfoFilter (5)"
+community: "Community 117"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_5
+  - community/Community_117
 ---
 
 # Related Skills
 
 ## Connections
-- [[MCP Tools Usage (MCPM)_1]] - `contains` [EXTRACTED]
+- [[Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_5
+#graphify/document #graphify/EXTRACTED #community/Community_117

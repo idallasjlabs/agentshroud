@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-eightd/README.md"
+source_file: "docker/config/hermes/skills/i-cr/README.md"
 type: "document"
-community: "dashboard_endpoints.py (3)"
+community: "Community 544"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy_3
+  - community/Community_544
 ---
 
 # Purpose
 
 ## Connections
-- [[8D Root Cause Analysis_1]] - `contains` [EXTRACTED]
+- [[Code Review (CR)_1]] - `contains` [EXTRACTED]
+- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard_endpointspy_3
+#graphify/document #graphify/EXTRACTED #community/Community_544

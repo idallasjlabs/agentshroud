@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/README.md"
+source_file: "docker/config/hermes/skills/i-qa/README.md"
 type: "document"
-community: "soc.js"
+community: "Community 177"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_177
 ---
 
 # Usage
 
 ## Connections
-- [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
+- [[Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
+- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_177

@@ -1,18 +1,18 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "Skill: Git Workflow Guardian (GIT-GUARD) (3)"
+community: "Community 521"
 location: "L218"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Git_Workflow_Guardian_GIT-GUARD_3
+  - community/Community_521
 ---
 
 # F. Infrastructure
 
 ## Connections
-- [[Architecture_10]] - `contains` [EXTRACTED]
+- [[Architecture_2]] - `contains` [EXTRACTED]
 - [[v0.9.0 — Sentinel (Blue Team Remediation + Data Isolation + SOC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD_3
+#graphify/document #graphify/EXTRACTED #community/Community_521

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/macos.md"
 type: "document"
-community: "url_analyzer.py"
+community: "Community 715"
 location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/url_analyzerpy
+  - community/Community_715
 ---
 
 # Docker Desktop Resource Allocation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Deploying AgentShroud on macOS (Apple Silicon  Intel)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/url_analyzerpy
+#graphify/document #graphify/EXTRACTED #community/Community_715

@@ -1,0 +1,17 @@
+---
+source_file: "docker/config/hermes/skills/i-tdd/SKILL.md"
+type: "document"
+community: "Community 757"
+location: "L109"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Community_757
+---
+
+# Glue Job Logic  →  test transformations outside Spark
+
+## Connections
+- [[Stack-Specific Testing Patterns_6]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Community_757

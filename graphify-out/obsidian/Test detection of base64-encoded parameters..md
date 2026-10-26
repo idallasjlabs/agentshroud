@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "Any"
+community: "Community 3"
 location: "L163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Any
+  - community/Community_3
 ---
 
 # Test detection of base64-encoded parameters.
 
 ## Connections
-- [[dot-test_parameter_obfuscation_detection_base64()]] - `rationale_for` [EXTRACTED]
-- [[dot-test_parameter_obfuscation_detection_hex()]] - `rationale_for` [EXTRACTED]
+- [[.test_parameter_obfuscation_detection_base64()]] - `rationale_for` [EXTRACTED]
+- [[.test_parameter_obfuscation_detection_hex()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Any
+#graphify/rationale #graphify/EXTRACTED #community/Community_3

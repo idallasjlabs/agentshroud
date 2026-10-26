@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-tw/SKILL.md"
+source_file: ".cursor/agents/i-tw.md"
 type: "document"
-community: "hermes/SOUL.md"
-location: "L218"
+community: "Community 729"
+location: "L221"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/SOULmd
+  - community/Community_729
 ---
 
 # What Belongs Where
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Writing Style Rules_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/SOULmd
+#graphify/document #graphify/EXTRACTED #community/Community_729

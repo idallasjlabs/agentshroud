@@ -1,21 +1,21 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "GroupRoleResolver"
+community: "Community 39"
 location: "L243"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/Community_39
 ---
 
 # Self
 
 ## Connections
-- [[dot-new()]] - `references` [EXTRACTED]
-- [[dot-new()_1]] - `references` [EXTRACTED]
-- [[dot-new()_2]] - `references` [EXTRACTED]
-- [[dot-ok()]] - `references` [EXTRACTED]
-- [[dot-with()]] - `references` [EXTRACTED]
+- [[.new()]] - `references` [EXTRACTED]
+- [[.new()_1]] - `references` [EXTRACTED]
+- [[.new()_2]] - `references` [EXTRACTED]
+- [[.ok()]] - `references` [EXTRACTED]
+- [[.with()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/Community_39

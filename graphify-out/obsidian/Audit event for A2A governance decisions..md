@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "rationale"
-community: "api.py"
+community: "Community 44"
 location: "L130"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apipy
+  - community/Community_44
 ---
 
 # Audit event for A2A governance decisions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[A2AGovernanceEvent]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apipy
+#graphify/rationale #graphify/EXTRACTED #community/Community_44

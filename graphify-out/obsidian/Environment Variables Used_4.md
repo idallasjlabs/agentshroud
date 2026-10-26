@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
 type: "document"
-community: "Deploying AgentShroud on Linux (x86_64 / aarch64)"
-location: "L67"
+community: "Community 592"
+location: "L110"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64
+  - community/Community_592
 ---
 
 # Environment Variables Used
 
 ## Connections
-- [[sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[middleware.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64
+#graphify/document #graphify/EXTRACTED #community/Community_592

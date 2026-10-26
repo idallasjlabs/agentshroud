@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-oracle/SKILL.md"
+source_file: ".agents/agents/atlas.md"
 type: "document"
-community: "TestAggregateResults"
-location: "L73"
+community: "Community 1138"
+location: "L93"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestAggregateResults
+  - community/Community_1138
 ---
 
 # System Prompt
 
 ## Connections
-- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestAggregateResults
+#graphify/document #graphify/EXTRACTED #community/Community_1138

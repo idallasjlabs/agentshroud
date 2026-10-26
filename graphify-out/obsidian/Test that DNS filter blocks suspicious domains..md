@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "rationale"
-community: "scanner_integration.py"
+community: "Community 120"
 location: "L110"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/Community_120
 ---
 
 # Test that DNS filter blocks suspicious domains.
 
 ## Connections
-- [[dot-test_dns_filter_blocks_suspicious_domains()]] - `rationale_for` [EXTRACTED]
+- [[.test_dns_filter_blocks_suspicious_domains()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_120

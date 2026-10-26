@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/switch_model.sh"
+source_file: "skills/openclaw/video-frames/scripts/frame.sh"
 type: "code"
-community: "test_egress_callback_stale.py"
-location: "L18"
+community: "Community 1117"
+location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_egress_callback_stalepy
+  - community/Community_1117
 ---
 
 # usage()
 
 ## Connections
-- [[switch_model.sh]] - `defines` [EXTRACTED]
-- [[switch_model.sh script]] - `calls` [EXTRACTED]
+- [[frame.sh]] - `defines` [EXTRACTED]
+- [[frame.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_egress_callback_stalepy
+#graphify/code #graphify/EXTRACTED #community/Community_1117

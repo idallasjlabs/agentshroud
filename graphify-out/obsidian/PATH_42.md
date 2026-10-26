@@ -1,18 +1,17 @@
 ---
-source_file: ".github/mcp.json"
+source_file: "gateway/tests/test_update_conduit_push.py"
 type: "code"
-community: ".github/mcp.json (2)"
-location: "L1"
+community: "Community 1042"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/github/mcpjson_2
+  - community/Community_1042
 ---
 
-# PATH
+# Path
 
 ## Connections
-- [[safari_2]] - `requires_env` [EXTRACTED]
-- [[xmind_2]] - `requires_env` [EXTRACTED]
+- [[_versions_file()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/github/mcpjson_2
+#graphify/code #graphify/EXTRACTED #community/Community_1042

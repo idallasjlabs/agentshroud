@@ -1,11 +1,11 @@
 ---
 source_file: "examples/docker-compose.minimal.yml"
 type: "document"
-community: "ssh_config.py"
+community: "Community 656"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/ssh_configpy
+  - community/Community_656
 ---
 
 # AgentShroud Minimal Docker Compose
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Production Docker Compose]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/ssh_configpy
+#graphify/document #graphify/INFERRED #community/Community_656

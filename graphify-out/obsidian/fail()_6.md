@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/tailscale-check.sh"
+source_file: "tests/startup_smoke/test_sunday_prompt_unattended.sh"
 type: "code"
-community: "ResourceUsage"
-location: "L17"
+community: "Community 2176"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceUsage
+  - community/Community_2176
 ---
 
 # fail()
 
 ## Connections
-- [[tailscale-check.sh]] - `defines` [EXTRACTED]
-- [[tailscale-check.sh script]] - `calls` [EXTRACTED]
+- [[test_sunday_prompt_unattended.sh]] - `defines` [EXTRACTED]
+- [[test_sunday_prompt_unattended.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceUsage
+#graphify/code #graphify/EXTRACTED #community/Community_2176

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "_wrap_response() (3)"
+community: "Community 431"
 location: "L32"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_wrap_response_3
+  - community/Community_431
 ---
 
 # AlertSeverity
@@ -22,4 +22,4 @@ tags:
 - [[egress_monitor.py]] - `contains` [EXTRACTED]
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_wrap_response_3
+#graphify/code #graphify/INFERRED #community/Community_431

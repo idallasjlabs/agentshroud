@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-data/README.md"
 type: "document"
-community: "Skill: UI Expert (UI)"
+community: "Community 210"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Skill_UI_Expert_UI
+  - community/Community_210
 ---
 
 # Data Validation README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Data Validation (DATA-VAL) Skill]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Skill_UI_Expert_UI
+#graphify/document #graphify/INFERRED #community/Community_210

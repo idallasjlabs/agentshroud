@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "MiddlewareManager (5)"
+community: "Community 164"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/Community_164
 ---
 
 # security-architecture.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/document #graphify/EXTRACTED #community/Community_164

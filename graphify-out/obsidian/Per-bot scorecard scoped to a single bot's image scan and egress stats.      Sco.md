@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "AlertDispatcher (2)"
+community: "Community 919"
 location: "L2618"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/Community_919
 ---
 
 # Per-bot scorecard scoped to a single bot's image scan and egress stats.      Sco
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[compute_bot_scorecard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_919

@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "Community 27"
 location: "L298"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_soc_realtime_coveragepy
+  - community/Community_27
 ---
 
 # TestResponseSizeLimits
 
 ## Connections
-- [[dot-test_custom_domain_size_limit()]] - `method` [EXTRACTED]
-- [[dot-test_large_response_flagged()]] - `method` [EXTRACTED]
-- [[dot-test_normal_response_not_flagged_for_size()]] - `method` [EXTRACTED]
+- [[.test_custom_domain_size_limit()]] - `method` [EXTRACTED]
+- [[.test_large_response_flagged()]] - `method` [EXTRACTED]
+- [[.test_normal_response_not_flagged_for_size()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[DomainSettings]] - `uses` [INFERRED]
 - [[ProxyAction]] - `uses` [INFERRED]
-- [[RateLimiter]] - `uses` [INFERRED]
-- [[WebProxy]] - `uses` [INFERRED]
+- [[RateLimiter_1]] - `uses` [INFERRED]
+- [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/INFERRED #community/Community_27

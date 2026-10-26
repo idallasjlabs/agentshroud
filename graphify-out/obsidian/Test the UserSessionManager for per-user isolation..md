@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "Community 114"
 location: "L30"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Community_114
 ---
 
 # Test the UserSessionManager for per-user isolation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestUserSessionManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_114

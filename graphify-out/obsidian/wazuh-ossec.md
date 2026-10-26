@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "LLMProxy.proxy_messages (non-streaming)"
+community: "Community 102"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/LLMProxyproxy_messages_non-streaming
+  - community/Community_102
 ---
 
 # wazuh-ossec.md
@@ -19,4 +19,4 @@ tags:
 - [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 - [[wazuh_client.py]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/LLMProxyproxy_messages_non-streaming
+#graphify/document #graphify/INFERRED #community/Community_102

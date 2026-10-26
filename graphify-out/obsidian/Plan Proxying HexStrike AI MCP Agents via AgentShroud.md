@@ -1,18 +1,18 @@
 ---
 source_file: "docs/planning/HEXSTRIKE_PROXY_PLAN.md"
 type: "document"
-community: "AgentShroud Weekly Upgrade Report — 2026-08-30"
+community: "Community 876"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Weekly_Upgrade_Report__2026-08-30
+  - community/Community_876
 ---
 
 # Plan: Proxying HexStrike AI MCP Agents via AgentShroud
 
 ## Connections
-- [[Context_11]] - `contains` [EXTRACTED]
+- [[Context_10]] - `contains` [EXTRACTED]
 - [[Deliverable & branch]] - `contains` [EXTRACTED]
 - [[HEXSTRIKE_PROXY_PLAN]] - `contains` [EXTRACTED]
 - [[Known integration gaps to document (not fix in this planning branch)]] - `contains` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[Verification (of the planning deliverable, once implementation begins)]] - `contains` [EXTRACTED]
 - [[What already exists (no build needed)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade_Report__2026-08-30
+#graphify/document #graphify/EXTRACTED #community/Community_876

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "concept"
-community: "agentshroud-gateway service (proxy mode)"
+community: "Community 2071"
 location: "Infrastructure the Agent Understands"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/agentshroud-gateway_service_proxy_mode
+  - community/Community_2071
 ---
 
 # CDAS — Central Data Acquisition Systems
@@ -15,4 +15,4 @@ tags:
 - [[FODL — Fluence Operational Data Lakehouse]] - `shares_data_with` [EXTRACTED]
 - [[FY26 Cost Reduction Plan (40% target)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/agentshroud-gateway_service_proxy_mode
+#graphify/concept #graphify/EXTRACTED #community/Community_2071

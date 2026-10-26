@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "rationale"
-community: "format_cve_report()"
+community: "Community 160"
 location: "L402"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/format_cve_report
+  - community/Community_160
 ---
 
 # Clean up browser resources
 
 ## Connections
-- [[dot-close()_7]] - `rationale_for` [EXTRACTED]
+- [[.close()_20]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/format_cve_report
+#graphify/rationale #graphify/EXTRACTED #community/Community_160

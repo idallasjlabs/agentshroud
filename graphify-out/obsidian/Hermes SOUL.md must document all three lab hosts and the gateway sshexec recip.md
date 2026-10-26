@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "DNSFilterConfig"
-location: "L677"
+community: "Community 78"
+location: "L681"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Community_78
 ---
 
 # Hermes SOUL.md must document all three lab hosts and the gateway /ssh/exec recip
 
 ## Connections
-- [[dot-test_hermes_soul_documents_ssh_hosts()]] - `rationale_for` [EXTRACTED]
+- [[.test_hermes_soul_documents_ssh_hosts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_78

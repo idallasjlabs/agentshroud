@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h"
 type: "code"
-community: "test_security_toolchain.py (2)"
+community: "Community 341"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy_2
+  - community/Community_341
 ---
 
 # iot_button.h stub (wakeword PTT test)
@@ -14,4 +14,4 @@ tags:
 - [[bspesp-bsp.h stub (wakeword PTT test)]] - `references` [EXTRACTED]
 - [[test_ptt_state.c]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy_2
+#graphify/code #graphify/EXTRACTED #community/Community_341

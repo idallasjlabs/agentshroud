@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "Community 6"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/Community_6
 ---
 
 # test_soc_realtime_coverage.py
 
 ## Connections
-- [[Action_3]] - `imports` [EXTRACTED]
+- [[Action_1]] - `imports` [EXTRACTED]
 - [[PermissionResult]] - `imports` [EXTRACTED]
-- [[RBACConfig_3]] - `imports` [EXTRACTED]
-- [[Resource_2]] - `imports` [EXTRACTED]
-- [[Role_64]] - `imports` [EXTRACTED]
-- [[SCLCaller_1]] - `imports` [EXTRACTED]
-- [[SOCWebSocketHandler_2]] - `imports` [EXTRACTED]
+- [[RBACConfig_1]] - `imports` [EXTRACTED]
+- [[Resource_1]] - `imports` [EXTRACTED]
+- [[Role_1]] - `imports` [EXTRACTED]
+- [[SCLCaller]] - `imports` [EXTRACTED]
+- [[SOCWebSocketHandler]] - `imports` [EXTRACTED]
 - [[SecurityEvent_1]] - `imports` [EXTRACTED]
-- [[Severity_8]] - `imports` [EXTRACTED]
+- [[Severity_2]] - `imports` [EXTRACTED]
 - [[TestCoerceToWSEventExtra]] - `contains` [EXTRACTED]
 - [[TestCollectRecentEvents]] - `contains` [EXTRACTED]
 - [[TestEventFanOut]] - `contains` [EXTRACTED]
@@ -60,4 +60,4 @@ tags:
 - [[redeem_ws_token()]] - `imports` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/Community_6

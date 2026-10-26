@@ -1,23 +1,16 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openclaw.md"
-type: "document"
-community: "OpenClaw cron: AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)"
-location: "L9"
+source_file: "docker/config/hermes/SOUL.md"
+type: "concept"
+community: "Community 339"
 tags:
-  - graphify/document
+  - graphify/concept
   - graphify/EXTRACTED
-  - community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh
+  - community/Community_339
 ---
 
 # OpenClaw
 
 ## Connections
-- [[Config Location]] - `contains` [EXTRACTED]
-- [[Key Intercepted Paths]] - `contains` [EXTRACTED]
-- [[Purpose_77]] - `contains` [EXTRACTED]
-- [[Related Notes_32]] - `contains` [EXTRACTED]
-- [[Role in AgentShroud]] - `contains` [EXTRACTED]
-- [[Version Note]] - `contains` [EXTRACTED]
-- [[openclaw]] - `contains` [EXTRACTED]
+- [[SOUL_2]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh
+#graphify/concept #graphify/EXTRACTED #community/Community_339

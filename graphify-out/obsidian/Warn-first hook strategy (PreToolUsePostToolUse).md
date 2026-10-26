@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/Claude-Code-TDD-Playbook.md"
 type: "rationale"
-community: "AgentShroud: Enterprise Governance for Autonomous AI Agents (2) (2)"
+community: "Community 742"
 location: "Section 8"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents_2_2
+  - community/Community_742
 ---
 
 # Warn-first hook strategy (PreToolUse/PostToolUse)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Claude Code (PRIMARY developer configuration)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents_2_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_742

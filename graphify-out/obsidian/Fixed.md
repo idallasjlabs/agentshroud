@@ -1,19 +1,19 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Added"
+community: "Community 773"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Added
+  - community/Community_773
 ---
 
 # Fixed
 
 ## Connections
 - [[Agent Routing (P0)]] - `contains` [EXTRACTED]
-- [[Security_2]] - `contains` [EXTRACTED]
+- [[Security_12]] - `contains` [EXTRACTED]
 - [[0.5.0 - 2026-02-21]] - `contains` [EXTRACTED]
 - [[0.6.0 - 2026-02-23]] - `contains` [EXTRACTED]
 - [[0.7.0 - 2026-02-25]] - `contains` [EXTRACTED]
@@ -32,4 +32,4 @@ tags:
 - [[Unreleased — feathttp-connect-proxy + featcredential-isolation]] - `contains` [EXTRACTED]
 - [[Unreleased — featv0.8.0-enforcement-hardening (session 3 — 2026-03-15)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Added
+#graphify/document #graphify/EXTRACTED #community/Community_773

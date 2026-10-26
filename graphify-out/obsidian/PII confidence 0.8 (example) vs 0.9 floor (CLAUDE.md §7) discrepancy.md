@@ -1,12 +1,12 @@
 ---
 source_file: "examples/agentshroud-with-tool-risk.yaml"
 type: "rationale"
-community: "test_security_regressions_v1_2.py (8)"
+community: "Community 1385"
 location: "line 11"
 tags:
   - graphify/rationale
   - graphify/AMBIGUOUS
-  - community/test_security_regressions_v1_2py_8
+  - community/Community_1385
 ---
 
 # PII confidence 0.8 (example) vs 0.9 floor (CLAUDE.md §7) discrepancy
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Config with Tool Risk Tiers (example)]] - `rationale_for` [AMBIGUOUS]
 
-#graphify/rationale #graphify/AMBIGUOUS #community/test_security_regressions_v1_2py_8
+#graphify/rationale #graphify/AMBIGUOUS #community/Community_1385

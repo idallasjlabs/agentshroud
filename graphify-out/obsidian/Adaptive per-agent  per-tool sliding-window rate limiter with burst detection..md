@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rate_limit_guard.py"
 type: "rationale"
-community: "CI/CD Pipeline Advisor (SKILL)"
+community: "Community 206"
 location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_SKILL
+  - community/Community_206
 ---
 
 # Adaptive per-agent / per-tool sliding-window rate limiter with burst detection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RateLimitGuard]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL
+#graphify/rationale #graphify/EXTRACTED #community/Community_206

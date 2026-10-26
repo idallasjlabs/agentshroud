@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "MCPPermissionManager (2)"
+community: "Community 59"
 location: "L206"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/Community_59
 ---
 
 # Compile private data patterns once for efficient repeated use.
 
 ## Connections
-- [[dot-_recompile_private_data_patterns()]] - `rationale_for` [EXTRACTED]
+- [[._recompile_private_data_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_59

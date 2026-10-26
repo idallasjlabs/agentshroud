@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
+source_file: ".agents/skills/i-data/SKILL.md"
 type: "document"
-community: "model_usage.py"
-location: "L7"
+community: "Community 896"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/model_usagepy
+  - community/Community_896
 ---
 
 # Role
 
 ## Connections
-- [[Skill Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
+- [[Skill Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/model_usagepy
+#graphify/document #graphify/EXTRACTED #community/Community_896

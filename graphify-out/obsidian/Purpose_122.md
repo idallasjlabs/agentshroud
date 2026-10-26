@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
+source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
 type: "document"
-community: "telegram_proxy.py (4)"
-location: "L12"
+community: "Community 714"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/telegram_proxypy_4
+  - community/Community_714
 ---
 
 # Purpose
 
 ## Connections
-- [[mcp_audit.py_2]] - `contains` [EXTRACTED]
+- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/telegram_proxypy_4
+#graphify/document #graphify/EXTRACTED #community/Community_714

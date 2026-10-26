@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-qa/SKILL.md"
+source_file: ".agents/skills/i-qa/SKILL.md"
 type: "document"
-community: "background.js"
-location: "L101"
+community: "Community 462"
+location: "L104"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/backgroundjs
+  - community/Community_462
 ---
 
 # C. AWS Athena
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/backgroundjs
+#graphify/document #graphify/EXTRACTED #community/Community_462

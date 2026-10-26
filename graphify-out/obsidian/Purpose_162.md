@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-apollo/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
 type: "document"
-community: "TestOutboundInfoFilter"
-location: "L6"
+community: "Community 679"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/Community_679
 ---
 
 # Purpose
 
 ## Connections
-- [[Apollo — Audio Systems Producer_3]] - `contains` [EXTRACTED]
+- [[input_normalizer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/Community_679

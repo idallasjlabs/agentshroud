@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ps/SKILL.md"
+source_file: ".agents/skills/athena/SKILL.md"
 type: "document"
-community: "TestSSRFDetection (2)"
-location: "L7"
+community: "Community 1568"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSSRFDetection_2
+  - community/Community_1568
 ---
 
 # Role
 
 ## Connections
-- [[Skill Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSSRFDetection_2
+#graphify/document #graphify/EXTRACTED #community/Community_1568

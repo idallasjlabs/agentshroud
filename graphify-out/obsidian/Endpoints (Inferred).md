@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
 type: "document"
-community: "agentshroud-gateway container (starts first)"
+community: "Community 1136"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-gateway_container_starts_first
+  - community/Community_1136
 ---
 
 # Endpoints (Inferred)
 
 ## Connections
-- [[installer.py_1]] - `contains` [EXTRACTED]
+- [[installer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway_container_starts_first
+#graphify/document #graphify/EXTRACTED #community/Community_1136

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "Community 7"
 location: "L133"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # Deleted entry is gone (right to erasure).
 
 ## Connections
-- [[dot-test_delete_entry_removes_it()]] - `rationale_for` [EXTRACTED]
+- [[.test_delete_entry_removes_it()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

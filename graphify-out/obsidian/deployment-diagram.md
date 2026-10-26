@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "xurl — Agent Skill Reference"
+community: "Community 418"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/xurl__Agent_Skill_Reference
+  - community/Community_418
 ---
 
 # deployment-diagram.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference
+#graphify/document #graphify/EXTRACTED #community/Community_418

@@ -1,17 +1,23 @@
 ---
-source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
+source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "UserSessionManager (2) (2)"
-location: "L38"
+community: "Community 7"
+location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2_2
+  - community/Community_7
 ---
 
 # client()
 
 ## Connections
-- [[test_email_owner_bypasses_pii.py]] - `contains` [EXTRACTED]
+- [[ApprovalQueue]] - `calls` [EXTRACTED]
+- [[DataLedger]] - `calls` [EXTRACTED]
+- [[MultiAgentRouter]] - `calls` [EXTRACTED]
+- [[PIISanitizer]] - `calls` [EXTRACTED]
+- [[SSHProxy]] - `calls` [EXTRACTED]
+- [[Set up app state and provide TestClient.]] - `rationale_for` [EXTRACTED]
+- [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_2
+#graphify/code #graphify/EXTRACTED #community/Community_7

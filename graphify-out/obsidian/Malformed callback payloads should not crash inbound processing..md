@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2)"
+community: "Community 4"
 location: "L5712"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/Community_4
 ---
 
 # Malformed callback payloads should not crash inbound processing.
 
 ## Connections
-- [[dot-test_egress_callback_non_dict_result_is_handled()]] - `rationale_for` [EXTRACTED]
+- [[.test_egress_callback_non_dict_result_is_handled()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_4

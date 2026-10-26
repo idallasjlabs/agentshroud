@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-kaizen/SKILL.md"
+source_file: ".cursor/agents/i-kaizen.md"
 type: "document"
-community: "soc.js"
-location: "L5"
+community: "Community 2255"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_2255
 ---
 
 # Skill: kaizen
 
 ## Connections
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-kaizenSKILL]] - `contains` [EXTRACTED]
+- [[i-kaizen_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_2255

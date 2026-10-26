@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "Any"
+community: "Community 72"
 location: "L301"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Any
+  - community/Community_72
 ---
 
 # Return canary status for dashboard.          Args:             session_id: Sessi
 
 ## Connections
-- [[dot-get_status()]] - `rationale_for` [EXTRACTED]
+- [[.get_status()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Any
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

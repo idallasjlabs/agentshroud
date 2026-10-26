@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "AgentShroud Documentation"
+community: "Community 249"
 location: "L235"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Documentation
+  - community/Community_249
 ---
 
 # Naming Conventions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📝 Contributing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Documentation
+#graphify/document #graphify/EXTRACTED #community/Community_249

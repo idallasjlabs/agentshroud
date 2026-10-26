@@ -1,22 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: ".cursor/mcp.json"
-location: "L44"
+community: "Community 767"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/cursor/mcpjson
+  - community/Community_767
 ---
 
 # Function Details
 
 ## Connections
-- [[TrustManager_5]] - `contains` [EXTRACTED]
-- [[TrustManager._apply_decay(score, last_action_time)]] - `contains` [EXTRACTED]
-- [[TrustManager._update_score(agent_id, delta, event_type, details)]] - `contains` [EXTRACTED]
-- [[TrustManager.get_history(agent_id, limit)]] - `contains` [EXTRACTED]
-- [[TrustManager.get_trust(agent_id)]] - `contains` [EXTRACTED]
-- [[TrustManager.is_action_allowed(agent_id, action)]] - `contains` [EXTRACTED]
+- [[EventBus.emit(event)]] - `contains` [EXTRACTED]
+- [[event_bus.py_2]] - `contains` [EXTRACTED]
+- [[make_event(event_type, summary, details, severity)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/cursor/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Community_767

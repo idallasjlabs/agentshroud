@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "code"
-community: "test_sanitizer.py"
+community: "Community 435"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_sanitizerpy
+  - community/Community_435
 ---
 
 # test_credit_card_detection()
@@ -15,4 +15,4 @@ tags:
 - [[Test credit card redaction]] - `rationale_for` [EXTRACTED]
 - [[test_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_sanitizerpy
+#graphify/code #graphify/EXTRACTED #community/Community_435

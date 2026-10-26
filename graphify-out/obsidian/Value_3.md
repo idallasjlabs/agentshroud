@@ -1,31 +1,17 @@
 ---
-source_file: "cli/src/main.rs"
-type: "code"
-community: "GroupRoleResolver"
-location: "L255"
+source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
+type: "document"
+community: "Community 2010"
+location: "L15"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/Community_2010
 ---
 
 # Value
 
 ## Connections
-- [[dot-get()_2]] - `references` [EXTRACTED]
-- [[dot-get()_3]] - `references` [EXTRACTED]
-- [[dot-post()_1]] - `references` [EXTRACTED]
-- [[dot-post()_2]] - `references` [EXTRACTED]
-- [[dot-request()]] - `references` [EXTRACTED]
-- [[dot-request()_1]] - `references` [EXTRACTED]
-- [[FakeTransport]] - `references` [EXTRACTED]
-- [[format_approvals()]] - `references` [EXTRACTED]
-- [[format_cves()]] - `references` [EXTRACTED]
-- [[format_decision()]] - `references` [EXTRACTED]
-- [[format_deploy_status()]] - `references` [EXTRACTED]
-- [[format_status()]] - `references` [EXTRACTED]
-- [[json_str()]] - `references` [EXTRACTED]
-- [[print_output()]] - `references` [EXTRACTED]
-- [[render_output_lines()]] - `references` [EXTRACTED]
+- [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/document #graphify/EXTRACTED #community/Community_2010

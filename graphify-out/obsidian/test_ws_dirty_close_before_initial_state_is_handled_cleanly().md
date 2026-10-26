@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "main.rs"
+community: "Community 46"
 location: "L1937"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/Community_46
 ---
 
 # test_ws_dirty_close_before_initial_state_is_handled_cleanly()
@@ -16,4 +16,4 @@ tags:
 - [[When the WS dirty-closes (code 1006) before the initial _send_state(IDLE) frame]] - `rationale_for` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/Community_46

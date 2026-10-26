@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
+source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "SSHProxy"
-location: "L87"
+community: "Community 7"
+location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/Community_7
 ---
 
 # auth_headers()
 
 ## Connections
-- [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
+- [[Return Authorization headers with test token]] - `rationale_for` [EXTRACTED]
+- [[conftest.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/Community_7

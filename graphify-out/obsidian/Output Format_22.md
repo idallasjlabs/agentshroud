@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
+source_file: ".agents/skills/mnemosyne/SKILL.md"
 type: "document"
-community: "TestHandleEvent"
-location: "L129"
+community: "Community 1994"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestHandleEvent
+  - community/Community_1994
 ---
 
 # Output Format
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor_1]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestHandleEvent
+#graphify/document #graphify/EXTRACTED #community/Community_1994

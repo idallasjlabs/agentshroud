@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "test_agent_cve_registry.py"
+community: "Community 123"
 location: "L161"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy
+  - community/Community_123
 ---
 
 # Probe 1.9b: PII sanitizer must redact SSN on outbound responses.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ssn_redacted_outbound()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_agent_cve_registrypy
+#graphify/rationale #graphify/EXTRACTED #community/Community_123

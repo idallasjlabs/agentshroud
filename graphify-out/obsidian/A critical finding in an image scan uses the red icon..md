@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "format_cve_report() (2)"
+community: "Community 1554"
 location: "L1421"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/format_cve_report_2
+  - community/Community_1554
 ---
 
 # A critical finding in an image scan uses the red icon.
 
 ## Connections
-- [[dot-test_critical_image_finding_uses_red_icon()]] - `rationale_for` [EXTRACTED]
+- [[.test_critical_image_finding_uses_red_icon()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/format_cve_report_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_1554

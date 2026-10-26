@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "concept"
-community: ".mcp.json"
+community: "Community 400"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/mcpjson
+  - community/Community_400
 ---
 
 # DNS-Layer Enforcement
@@ -14,4 +14,4 @@ tags:
 - [[Pi-hole DNS Filtering]] - `implements` [EXTRACTED]
 - [[agentshroud-ieee-paper]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/mcpjson
+#graphify/concept #graphify/EXTRACTED #community/Community_400

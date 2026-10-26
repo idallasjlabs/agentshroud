@@ -1,11 +1,11 @@
 ---
 source_file: "CHEATSHEET.md"
 type: "concept"
-community: "browser-extension/manifest.json"
+community: "Community 441"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/browser-extension/manifestjson
+  - community/Community_441
 ---
 
 # SOC API
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Operations Cheat Sheet]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/browser-extension/manifestjson
+#graphify/concept #graphify/EXTRACTED #community/Community_441

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/red-team-assessment-v1.2.0.md"
 type: "concept"
-community: "Socrates — Dialogue Architect (2)"
+community: "Community 817"
 location: "RT-MB2 code trace"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect_2
+  - community/Community_817
 ---
 
 # SharedMemoryManager: Per-User Per-Bot Memory Isolation
@@ -16,4 +16,4 @@ tags:
 - [[Red Team Assessment v1.2.0]] - `references` [EXTRACTED]
 - [[Workstream A Groups and Teamwork in OpenClaw]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_2
+#graphify/concept #graphify/EXTRACTED #community/Community_817

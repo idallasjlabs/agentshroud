@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cicd/README.md"
+source_file: "docker/config/hermes/skills/i-atlas/README.md"
 type: "document"
-community: "Skill: UI Expert (UI)"
+community: "Community 90"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UI_Expert_UI
+  - community/Community_90
 ---
 
 # Related Skills
 
 ## Connections
-- [[CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
-- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI
+#graphify/document #graphify/EXTRACTED #community/Community_90

@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "MCPPermissionManager (2)"
+community: "Community 7"
 location: "L379"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - graphify/INFERRED
+  - community/Community_7
 ---
 
 # TestVersionConsistency
 
 ## Connections
-- [[dot-test_status_returns_current_version()]] - `method` [EXTRACTED]
-- [[SSHConfig_2]] - `uses` [INFERRED]
+- [[.test_status_returns_current_version()]] - `method` [EXTRACTED]
+- [[SSHConfig]] - `uses` [INFERRED]
 - [[SSHHostConfig]] - `uses` [INFERRED]
-- [[SSHProxy_1]] - `uses` [INFERRED]
+- [[SSHProxy]] - `uses` [INFERRED]
 - [[Version strings should be consistent across the codebase.]] - `rationale_for` [EXTRACTED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/code #graphify/INFERRED #community/Community_7

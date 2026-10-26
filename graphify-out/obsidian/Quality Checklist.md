@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
+source_file: ".agents/agents/apollo.md"
 type: "document"
-community: "dashboard_endpoints.py (2) (2)"
-location: "L71"
+community: "Community 1351"
+location: "L139"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy_2_2
+  - community/Community_1351
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard_endpointspy_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_1351

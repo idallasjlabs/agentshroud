@@ -1,17 +1,17 @@
 ---
 source_file: "docs/requirements/use-cases.md"
 type: "document"
-community: "compose_generator.py"
+community: "Community 779"
 location: "L217"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/compose_generatorpy
+  - community/Community_779
 ---
 
 # UC-007: New Agent Onboarding (Trust Level 0)
 
 ## Connections
-- [[Use Cases_3]] - `contains` [EXTRACTED]
+- [[Use Cases_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/compose_generatorpy
+#graphify/document #graphify/EXTRACTED #community/Community_779

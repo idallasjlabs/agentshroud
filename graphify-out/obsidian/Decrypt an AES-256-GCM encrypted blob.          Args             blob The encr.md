@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "rationale"
-community: "PortManager"
+community: "Community 477"
 location: "L156"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/Community_477
 ---
 
 # Decrypt an AES-256-GCM encrypted blob.          Args:             blob: The encr
 
 ## Connections
-- [[dot-decrypt()]] - `rationale_for` [EXTRACTED]
+- [[.decrypt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PortManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_477

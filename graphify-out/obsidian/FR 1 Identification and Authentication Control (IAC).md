@@ -1,12 +1,12 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "IEC 62443 Compliance Matrix — AgentShroud"
+community: "Community 420"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/IEC_62443_Compliance_Matrix__AgentShroud
+  - community/Community_420
 ---
 
 # FR 1: Identification and Authentication Control (IAC)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Community_420

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "MultiTurnTracker"
+community: "Community 115"
 location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/Community_115
 ---
 
 # Analyze a message for context poisoning attempts.          Args:             ses
 
 ## Connections
-- [[dot-analyze_message()]] - `rationale_for` [EXTRACTED]
+- [[.analyze_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/rationale #graphify/EXTRACTED #community/Community_115

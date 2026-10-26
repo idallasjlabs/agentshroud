@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
+source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "OpenClaw Workspace Usage Guide"
-location: "L52"
+community: "Community 337"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Workspace_Usage_Guide
+  - community/Community_337
 ---
 
 # README — Entry Point for a Repo or Service
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Document-Type Patterns_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_337

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Skill: Technical Writer (TW)"
+community: "Community 1022"
 location: "L285"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Technical_Writer_TW
+  - community/Community_1022
 ---
 
 # Key Skills in Detail
@@ -19,4 +19,4 @@ tags:
 - [[`sec-offense` — Red Team Adversarial Tester]] - `contains` [EXTRACTED]
 - [[`tdd` — Test-Driven Development Coach]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Writer_TW
+#graphify/document #graphify/EXTRACTED #community/Community_1022

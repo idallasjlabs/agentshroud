@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "PipelineAction"
+community: "Community 178"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/Community_178
 ---
 
 # agentic-os.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Agentic OS]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PipelineAction
+#graphify/document #graphify/EXTRACTED #community/Community_178

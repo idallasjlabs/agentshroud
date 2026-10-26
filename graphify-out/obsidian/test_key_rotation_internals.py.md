@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "test_key_rotation_internals.py"
+community: "Community 381"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_key_rotation_internalspy
+  - community/Community_381
 ---
 
 # test_key_rotation_internals.py
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[CredentialInfo]] - `imports` [EXTRACTED]
 - [[CredentialValidator]] - `imports` [EXTRACTED]
-- [[KeyRotationConfig]] - `imports` [EXTRACTED]
+- [[KeyRotationConfig_1]] - `imports` [EXTRACTED]
 - [[KeyRotationManager]] - `imports` [EXTRACTED]
 - [[RotationStatus]] - `imports` [EXTRACTED]
 - [[TestCheckAndRotateDisabled]] - `contains` [EXTRACTED]
@@ -27,7 +27,7 @@ tags:
 - [[_old_cred()]] - `contains` [EXTRACTED]
 - [[key_rotation.py (KeyRotationManager)]] - `implements` [EXTRACTED]
 - [[key_rotation_config.py (KeyRotationConfig)]] - `references` [EXTRACTED]
-- [[manager()_3]] - `contains` [EXTRACTED]
+- [[manager()_2]] - `contains` [EXTRACTED]
 - [[test_key_rotation.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_key_rotation_internalspy
+#graphify/code #graphify/EXTRACTED #community/Community_381

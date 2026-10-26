@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "WebProxy"
+community: "Community 71"
 location: "L383"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/Community_71
 ---
 
 # Validate network mode configurations.
 
 ## Connections
-- [[dot-_validate_network_modes()]] - `rationale_for` [EXTRACTED]
+- [[._validate_network_modes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_71

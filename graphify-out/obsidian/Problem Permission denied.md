@@ -1,17 +1,17 @@
 ---
 source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "test_jira_dev_ticket.py"
+community: "Community 179"
 location: "L300"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_jira_dev_ticketpy
+  - community/Community_179
 ---
 
 # Problem: "Permission denied"
 
 ## Connections
-- [[Troubleshooting_7]] - `contains` [EXTRACTED]
+- [[Troubleshooting_37]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/Community_179

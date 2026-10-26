@@ -1,21 +1,21 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec/README.md"
 type: "document"
-community: "TestOutboundInfoFilter (7)"
+community: "Community 1221"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_7
+  - community/Community_1221
 ---
 
 # Security Review (SEC)
 
 ## Connections
-- [[Purpose_34]] - `contains` [EXTRACTED]
-- [[Related Skills_20]] - `contains` [EXTRACTED]
-- [[Usage_23]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
-- [[hermesskillsi-secREADME]] - `contains` [EXTRACTED]
+- [[Purpose_68]] - `contains` [EXTRACTED]
+- [[README_47]] - `contains` [EXTRACTED]
+- [[README_73]] - `contains` [EXTRACTED]
+- [[Related Skills_89]] - `contains` [EXTRACTED]
+- [[Usage_91]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_7
+#graphify/document #graphify/EXTRACTED #community/Community_1221

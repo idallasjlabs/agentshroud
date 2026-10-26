@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "browser/package.json"
+community: "Community 389"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser/packagejson
+  - community/Community_389
 ---
 
 # HTTP Status Codes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Error Index_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser/packagejson
+#graphify/document #graphify/EXTRACTED #community/Community_389

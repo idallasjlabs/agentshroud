@@ -1,22 +1,21 @@
 ---
-source_file: "gateway/tests/test_observatory_mode.py"
-type: "code"
-community: "KillSwitchMonitor"
-location: "L60"
+source_file: "docs/vault/05 - Dependencies/fastapi.md"
+type: "document"
+community: "Community 253"
+location: "L9"
 tags:
-  - graphify/code
-  - graphify/INFERRED
-  - community/KillSwitchMonitor
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Community_253
 ---
 
 # FastAPI
 
 ## Connections
-- [[KillSwitchConfig_1]] - `uses` [INFERRED]
-- [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[ModeRequest]] - `uses` [INFERRED]
-- [[SecurityPipeline_1]] - `uses` [INFERRED]
-- [[_make_app()]] - `references` [EXTRACTED]
-- [[test_observatory_mode.py]] - `imports_from` [EXTRACTED]
+- [[Key FastAPI Features Used]] - `contains` [EXTRACTED]
+- [[Purpose_186]] - `contains` [EXTRACTED]
+- [[Related Notes_41]] - `contains` [EXTRACTED]
+- [[Where Used_1]] - `contains` [EXTRACTED]
+- [[fastapi]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/KillSwitchMonitor
+#graphify/document #graphify/EXTRACTED #community/Community_253

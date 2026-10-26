@@ -1,20 +1,23 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L318"
+community: "Community 10"
+location: "L631"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/Community_10
 ---
 
 # stop_service()
 
 ## Connections
-- [[Stop a specific service container.]] - `rationale_for` [EXTRACTED]
-- [[_get_engine()]] - `calls` [EXTRACTED]
-- [[_validate_service_name()]] - `calls` [EXTRACTED]
-- [[api.py_2]] - `contains` [EXTRACTED]
+- [[JSONResponse]] - `references` [EXTRACTED]
+- [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[ServiceActionRequest]] - `references` [EXTRACTED]
+- [[ServiceManager]] - `calls` [EXTRACTED]
+- [[_confirmation_required()]] - `calls` [EXTRACTED]
+- [[_log_audit()]] - `calls` [EXTRACTED]
+- [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/Community_10

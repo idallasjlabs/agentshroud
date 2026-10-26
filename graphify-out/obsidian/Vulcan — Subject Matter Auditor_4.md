@@ -1,17 +1,24 @@
 ---
-source_file: "docs/architecture/agentic-os.md"
-type: "concept"
-community: "Output Sections (ALL required) (3)"
+source_file: ".github/agents/i-vulcan.agent.md"
+type: "document"
+community: "Community 1954"
+location: "L11"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Output_Sections_ALL_required_3
+  - community/Community_1954
 ---
 
 # Vulcan — Subject Matter Auditor
 
 ## Connections
-- [[Apollo — Audio Systems Producer_4]] - `shares_data_with` [EXTRACTED]
-- [[Socrates — Dialogue Architect_4]] - `shares_data_with` [EXTRACTED]
+- [[Input Requirements_39]] - `contains` [EXTRACTED]
+- [[Output Format_56]] - `contains` [EXTRACTED]
+- [[Persona_31]] - `contains` [EXTRACTED]
+- [[Quality Checklist_35]] - `contains` [EXTRACTED]
+- [[Role_147]] - `contains` [EXTRACTED]
+- [[System Prompt_31]] - `contains` [EXTRACTED]
+- [[User Prompt Template_15]] - `contains` [EXTRACTED]
+- [[i-vulcan.agent]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Output_Sections_ALL_required_3
+#graphify/document #graphify/EXTRACTED #community/Community_1954

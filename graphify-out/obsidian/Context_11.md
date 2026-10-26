@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/HEXSTRIKE_PROXY_PLAN.md"
+source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "AgentShroud Weekly Upgrade Report — 2026-08-30"
-location: "L6"
+community: "Community 481"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Weekly_Upgrade_Report__2026-08-30
+  - community/Community_481
 ---
 
 # Context
 
 ## Connections
-- [[Plan Proxying HexStrike AI MCP Agents via AgentShroud]] - `contains` [EXTRACTED]
+- [[Plan AgentShroud Security Hardening — Real Agent Containment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade_Report__2026-08-30
+#graphify/document #graphify/EXTRACTED #community/Community_481

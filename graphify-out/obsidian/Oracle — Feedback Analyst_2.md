@@ -1,21 +1,23 @@
 ---
-source_file: "docker/config/openclaw/skills/i-oracle/README.md"
+source_file: ".agents/skills/oracle/SKILL.md"
 type: "document"
-community: "Quick Reference Commands"
-location: "L1"
+community: "Community 1983"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference_Commands
+  - community/Community_1983
 ---
 
 # Oracle — Feedback Analyst
 
 ## Connections
-- [[Purpose_146]] - `contains` [EXTRACTED]
-- [[Related Skills_86]] - `contains` [EXTRACTED]
-- [[Usage_95]] - `contains` [EXTRACTED]
-- [[openclawskillsi-oracleREADME]] - `contains` [EXTRACTED]
-- [[openclawskillsi-oracleSKILL]] - `contains` [EXTRACTED]
+- [[Input Requirements_17]] - `contains` [EXTRACTED]
+- [[Output Format_23]] - `contains` [EXTRACTED]
+- [[Persona_13]] - `contains` [EXTRACTED]
+- [[Quality Checklist_15]] - `contains` [EXTRACTED]
+- [[Role_73]] - `contains` [EXTRACTED]
+- [[SKILL_66]] - `contains` [EXTRACTED]
+- [[System Prompt_13]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference_Commands
+#graphify/document #graphify/EXTRACTED #community/Community_1983

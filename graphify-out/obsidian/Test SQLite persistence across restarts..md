@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "ContextSegment"
+community: "Community 30"
 location: "L318"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/Community_30
 ---
 
 # Test SQLite persistence across restarts.
 
 ## Connections
-- [[TestPersistence_2]] - `rationale_for` [EXTRACTED]
+- [[TestPersistence]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextSegment
+#graphify/rationale #graphify/EXTRACTED #community/Community_30

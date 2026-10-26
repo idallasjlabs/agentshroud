@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/hermes/dashboard_bridge.py"
 type: "code"
-community: "Athena — Knowledge Distiller (2)"
+community: "Community 808"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller_2
+  - community/Community_808
 ---
 
 # dashboard_bridge.py (Hermes)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_hermes_dashboard_bridge.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Athena__Knowledge_Distiller_2
+#graphify/code #graphify/EXTRACTED #community/Community_808

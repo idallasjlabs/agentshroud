@@ -1,13 +1,13 @@
 ---
 source_file: "CHANGELOG.md"
 type: "rationale"
-community: "MCP Server: github-idallasj"
+community: "Community 1582"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Server_github-idallasj
+  - community/Community_1582
 ---
 
 # Build-config pinning — sdkconfig.defaults pins TCP_MSS/stack/WDT/TCP buffers
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Server_github-idallasj
+#graphify/rationale #graphify/EXTRACTED #community/Community_1582

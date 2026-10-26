@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "_make_proxy()"
-location: "L347"
+community: "Community 16"
+location: "L49"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/_make_proxy
+  - graphify/EXTRACTED
+  - community/Community_16
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_stats()_12]] - `references` [EXTRACTED]
-- [[LedgerConfig_1]] - `uses` [INFERRED]
-- [[LedgerEntry]] - `uses` [INFERRED]
-- [[LedgerQueryResponse]] - `uses` [INFERRED]
+- [[.from_dict()_8]] - `references` [EXTRACTED]
+- [[.get_integrity_status()]] - `references` [EXTRACTED]
+- [[.get_recent_alerts()]] - `references` [EXTRACTED]
+- [[.to_dict()_11]] - `references` [EXTRACTED]
+- [[MemoryIntegrityConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_16

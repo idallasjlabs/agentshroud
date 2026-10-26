@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
+source_file: ".opencode/agents/sav.md"
 type: "document"
-community: "GitHub Branch Protection — `main`"
-location: "L36"
+community: "Community 412"
+location: "L397"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Branch_Protection__main
+  - community/Community_412
 ---
 
-# Output Format
+# OUTPUT FORMAT
 
 ## Connections
-- [[Skill Code Review (CR)_1]] - `contains` [EXTRACTED]
+- [[System Audit Vault (Obsidian)_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Branch_Protection__main
+#graphify/document #graphify/EXTRACTED #community/Community_412

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/README.md"
+source_file: "docker/config/hermes/skills/i-atlas/README.md"
 type: "document"
-community: "AgentShroud™ — Trademark Prior Use Record (4)"
+community: "Community 90"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__Trademark_Prior_Use_Record_4
+  - community/Community_90
 ---
 
 # Purpose
 
 ## Connections
-- [[Atlas — Curriculum Architect]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record_4
+#graphify/document #graphify/EXTRACTED #community/Community_90

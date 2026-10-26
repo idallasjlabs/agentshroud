@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-22-dependency-graph.png"
 type: "image"
-community: "sanitizer.py"
+community: "Community 421"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/sanitizerpy
+  - community/Community_421
 ---
 
 # Docker Deployment Dependency Graph
@@ -17,4 +17,4 @@ tags:
 - [[Docker Volumes (auto-created) agentshroud-config, agentshroud-workspace, agentshroud-ssh, gateway-data]] - `conceptually_related_to` [EXTRACTED]
 - [[External Dependencies (no deploy) 1Password Cloud, OpenAIAnthropicTelegram APIs, Tailscale Network via SSH]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/sanitizerpy
+#graphify/image #graphify/EXTRACTED #community/Community_421

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/templates/installer.html"
 type: "code"
-community: "test_hermes_mcp_reconciliation.sh"
+community: "Community 1408"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_hermes_mcp_reconciliationsh
+  - graphify/INFERRED
+  - community/Community_1408
 ---
 
 # startInstall()
@@ -14,4 +14,4 @@ tags:
 - [[installapiinstall endpoint]] - `references` [EXTRACTED]
 - [[buildSummary()]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_mcp_reconciliationsh
+#graphify/code #graphify/INFERRED #community/Community_1408

@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "hermes/skills/i-bs/README.md"
+community: "Community 111"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/Community_111
 ---
 
 # test_a2a_policy.py
 
 ## Connections
-- [[A2AMethod_1]] - `imports` [EXTRACTED]
+- [[A2AMethod]] - `imports` [EXTRACTED]
 - [[A2APolicyAction]] - `imports` [EXTRACTED]
-- [[A2APolicyConfig_1]] - `imports` [EXTRACTED]
+- [[A2APolicyConfig]] - `imports` [EXTRACTED]
 - [[A2APolicyDecision]] - `imports` [EXTRACTED]
-- [[A2APolicyEngine_2]] - `imports` [EXTRACTED]
+- [[A2APolicyEngine_1]] - `imports` [EXTRACTED]
 - [[Upstream A2A Gap 78298 — SSRF Push-Notification Callback URL Bypass]] - `references` [EXTRACTED]
 - [[Upstream A2A Gap 83701 — TaskContextId Collision Hijack]] - `references` [EXTRACTED]
 - [[_LegacyStubApprovalQueue]] - `contains` [EXTRACTED]
@@ -61,4 +61,4 @@ tags:
 - [[test_task_ownership_denial_is_not_bypassable_by_high_risk_approval_path()]] - `contains` [EXTRACTED]
 - [[test_unknown_peer_is_denied_by_default()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/code #graphify/EXTRACTED #community/Community_111

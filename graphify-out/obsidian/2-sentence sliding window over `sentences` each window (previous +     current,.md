@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "rationale"
-community: "UserSessionManager (2) (2)"
+community: "Community 47"
 location: "L804"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager_2_2
+  - community/Community_47
 ---
 
 # 2-sentence sliding window over `sentences`: each window (previous +     current,
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_filtered_sentence_stream()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_2_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_47

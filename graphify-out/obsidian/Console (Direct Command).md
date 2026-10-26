@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-POLICY-FINAL.md"
 type: "document"
-community: "BotConfig (2)"
+community: "Community 377"
 location: "L65"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BotConfig_2
+  - community/Community_377
 ---
 
 # Console (Direct Command)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[✅ How to Access Credentials]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BotConfig_2
+#graphify/document #graphify/EXTRACTED #community/Community_377

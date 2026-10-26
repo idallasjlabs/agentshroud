@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-doctor/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "soc.js"
+community: "Community 2072"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_2072
 ---
 
 # MCP Doctor (MCPM-DOCTOR)
 
 ## Connections
-- [[Purpose_105]] - `contains` [EXTRACTED]
-- [[Related Skills_76]] - `contains` [EXTRACTED]
-- [[Usage_82]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-mcpm-doctorREADME]] - `contains` [EXTRACTED]
+- [[Purpose_55]] - `contains` [EXTRACTED]
+- [[README_47]] - `contains` [EXTRACTED]
+- [[README_60]] - `contains` [EXTRACTED]
+- [[Related Skills_75]] - `contains` [EXTRACTED]
+- [[Usage_78]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_2072

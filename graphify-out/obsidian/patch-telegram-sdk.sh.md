@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/patch-telegram-sdk.sh"
 type: "code"
-community: "deploy-crush.sh — global Crush skill deployment"
+community: "Community 1350"
 location: "L1"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/deploy-crushsh__global_Crush_skill_deployment
+  - graphify/INFERRED
+  - community/Community_1350
 ---
 
 # patch-telegram-sdk.sh
@@ -15,4 +15,4 @@ tags:
 - [[patch-anthropic-sdk.sh]] - `semantically_similar_to` [INFERRED]
 - [[patch-telegram-sdk.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/deploy-crushsh__global_Crush_skill_deployment
+#graphify/code #graphify/INFERRED #community/Community_1350

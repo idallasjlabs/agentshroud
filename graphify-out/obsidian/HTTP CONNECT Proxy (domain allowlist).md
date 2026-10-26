@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "concept"
-community: "test_jira_weekly_review.py"
+community: "Community 487"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_jira_weekly_reviewpy
+  - community/Community_487
 ---
 
 # HTTP CONNECT Proxy (domain allowlist)
@@ -19,4 +19,4 @@ tags:
 - [[OpenAI API]] - `calls` [EXTRACTED]
 - [[Telegram API_1]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_jira_weekly_reviewpy
+#graphify/concept #graphify/EXTRACTED #community/Community_487

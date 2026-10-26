@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "ServiceManager"
+community: "Community 20"
 location: "L531"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ServiceManager
+  - community/Community_20
 ---
 
 # EmergencyBlockRequest
 
 ## Connections
 - [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult_1]] - `uses` [INFERRED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[AuditResult]] - `uses` [INFERRED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
 - [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller_1]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
 - [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface_1]] - `uses` [INFERRED]
+- [[SCLInterface]] - `uses` [INFERRED]
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[emergency_block_egress()]] - `references` [EXTRACTED]
-- [[socrouter.py]] - `contains` [EXTRACTED]
+- [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ServiceManager
+#graphify/code #graphify/INFERRED #community/Community_20

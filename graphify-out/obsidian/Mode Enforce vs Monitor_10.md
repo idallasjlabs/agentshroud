@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
 type: "document"
-community: "test_wire_llm_settings.js"
-location: "L81"
+community: "Community 617"
+location: "L97"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_wire_llm_settingsjs
+  - community/Community_617
 ---
 
 # Mode: Enforce vs Monitor
 
 ## Connections
-- [[input_normalizer.py_2]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_2]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_wire_llm_settingsjs
+#graphify/document #graphify/EXTRACTED #community/Community_617

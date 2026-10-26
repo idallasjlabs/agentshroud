@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "rationale"
-community: "record_decision()"
+community: "Community 221"
 location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/record_decision
+  - community/Community_221
 ---
 
 # Normalize a peer-id reference for robust, evasion-resistant matching.      Same
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_norm()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/record_decision
+#graphify/rationale #graphify/EXTRACTED #community/Community_221

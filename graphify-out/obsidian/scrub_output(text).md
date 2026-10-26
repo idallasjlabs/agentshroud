@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
 type: "document"
-community: "sunday-scan.sh"
+community: "Community 456"
 location: "L75"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sunday-scansh
+  - community/Community_456
 ---
 
 # scrub_output(text)
 
 ## Connections
-- [[Function Details_3]] - `contains` [EXTRACTED]
+- [[Function Details_38]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sunday-scansh
+#graphify/document #graphify/EXTRACTED #community/Community_456

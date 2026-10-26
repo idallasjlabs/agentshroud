@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md"
+source_file: "docs/planning/v0.8/v0.8.0-wiring-audit.md"
 type: "document"
-community: "TeamsConfig (3)"
+community: "Community 459"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TeamsConfig_3
+  - community/Community_459
 ---
 
 # Executive Summary
 
 ## Connections
-- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TeamsConfig_3
+#graphify/document #graphify/EXTRACTED #community/Community_459

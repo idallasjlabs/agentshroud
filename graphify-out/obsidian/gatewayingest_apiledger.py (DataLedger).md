@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "SSHProxy"
+community: "Community 7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/Community_7
 ---
 
 # gateway/ingest_api/ledger.py (DataLedger)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_ssh_write_file_endpoint.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/Community_7

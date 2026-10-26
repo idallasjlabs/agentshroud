@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "create_auth_dependency (4)"
+community: "Community 60"
 location: "L558"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/create_auth_dependency_4
+  - community/Community_60
 ---
 
 # Session manager must reject user_id with path traversal characters.
 
 ## Connections
-- [[dot-test_path_traversal_rejected_for_crafted_user_id()]] - `rationale_for` [EXTRACTED]
+- [[.test_path_traversal_rejected_for_crafted_user_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency_4
+#graphify/rationale #graphify/EXTRACTED #community/Community_60

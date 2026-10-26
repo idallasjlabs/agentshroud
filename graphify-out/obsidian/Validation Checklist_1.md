@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
+source_file: ".agents/agents/i-ti.md"
 type: "document"
-community: "OpenClaw Workspace Usage Guide"
-location: "L231"
+community: "Community 891"
+location: "L289"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Workspace_Usage_Guide
+  - community/Community_891
 ---
 
 # Validation Checklist
 
 ## Connections
-- [[→ {site site1, test_mode True, output_prefix _testsite1}_1]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_891

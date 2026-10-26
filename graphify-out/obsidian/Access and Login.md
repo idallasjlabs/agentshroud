@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.9/v0.9.0-testing-guide.md"
 type: "document"
-community: "AgentShroud v0.9.0 — Human Interface Testing Guide"
+community: "Community 286"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v090__Human_Interface_Testing_Guide
+  - community/Community_286
 ---
 
 # Access and Login
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1. SOC Command Center (Web UI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090__Human_Interface_Testing_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_286

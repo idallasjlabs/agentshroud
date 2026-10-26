@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gemini_openai_translator.py"
 type: "code"
-community: "BotConfig"
+community: "Community 361"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/Community_361
 ---
 
 # test_gemini_openai_translator.py
@@ -43,4 +43,4 @@ tags:
 - [[test_unsupported_reason_streaming_path()]] - `contains` [EXTRACTED]
 - [[test_unsupported_reason_tools_in_body()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BotConfig
+#graphify/code #graphify/EXTRACTED #community/Community_361

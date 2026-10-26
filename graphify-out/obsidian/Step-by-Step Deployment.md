@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Remediation (2)"
+community: "Community 600"
 location: "L99"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Remediation_2
+  - community/Community_600
 ---
 
 # Step-by-Step Deployment
@@ -24,4 +24,4 @@ tags:
 - [[Step 8 Service Startup]] - `contains` [EXTRACTED]
 - [[Step 9 Health Verification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Remediation_2
+#graphify/document #graphify/EXTRACTED #community/Community_600

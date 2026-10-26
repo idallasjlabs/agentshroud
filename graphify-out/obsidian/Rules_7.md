@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ui/SKILL.md"
+source_file: ".agents/agents/i-ux.md"
 type: "document"
-community: "Mode A — Single task"
-location: "L28"
+community: "Community 296"
+location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/Community_296
 ---
 
 # Rules
 
 ## Connections
-- [[Skill UI Expert (UI)]] - `contains` [EXTRACTED]
+- [[Skill UX Expert (UX)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/document #graphify/EXTRACTED #community/Community_296

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "SessionManager"
+community: "Community 121"
 location: "L51"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/Community_121
 ---
 
 # Monitor and analyze git hooks and package installation scripts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GitGuard]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SessionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_121

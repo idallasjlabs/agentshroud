@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "concept"
-community: "Pre-Deployment Checklist"
+community: "Community 637"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist
+  - community/Community_637
 ---
 
 # URLAnalysisResult (data entity)
@@ -14,4 +14,4 @@ tags:
 - [[Blocked by default (private RFC1918 ranges)]] - `conceptually_related_to` [EXTRACTED]
 - [[SecurityFinding (data entity)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Pre-Deployment_Checklist
+#graphify/concept #graphify/EXTRACTED #community/Community_637

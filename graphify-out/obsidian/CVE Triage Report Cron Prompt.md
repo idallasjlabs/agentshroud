@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/cron/prompts/cve-triage-report.txt"
 type: "document"
-community: "Audit-log-every-fetch design rationale"
+community: "Community 1710"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Audit-log-every-fetch_design_rationale
+  - community/Community_1710
 ---
 
 # CVE Triage Report Cron Prompt
 
-#graphify/document #graphify/EXTRACTED #community/Audit-log-every-fetch_design_rationale
+#graphify/document #graphify/EXTRACTED #community/Community_1710

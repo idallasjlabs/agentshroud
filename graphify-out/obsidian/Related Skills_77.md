@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pm/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm/README.md"
 type: "document"
-community: "soc.js"
+community: "Community 1215"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_1215
 ---
 
 # Related Skills
 
 ## Connections
-- [[Project Management (PM)_1]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_1215

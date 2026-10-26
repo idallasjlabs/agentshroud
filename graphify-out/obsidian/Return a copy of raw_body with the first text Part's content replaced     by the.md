@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "rationale"
-community: "UserSessionManager (2)"
+community: "Community 271"
 location: "L473"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/Community_271
 ---
 
 # Return a copy of raw_body with the first text Part's content replaced     by the
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_redact_message_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_271

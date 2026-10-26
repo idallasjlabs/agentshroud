@@ -1,22 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
 type: "document"
-community: "Deploying AgentShroud on Linux (x86_64 / aarch64)"
-location: "L38"
+community: "Community 668"
+location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64
+  - community/Community_668
 ---
 
 # Function Details
 
 ## Connections
-- [[_sanitize_presidio(content)]] - `contains` [EXTRACTED]
-- [[_sanitize_regex(content)]] - `contains` [EXTRACTED]
-- [[block_credentials(content, source)]] - `contains` [EXTRACTED]
-- [[filter_xml_blocks(content)]] - `contains` [EXTRACTED]
-- [[sanitize(content)]] - `contains` [EXTRACTED]
-- [[sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[TelegramAPIProxy._filter_inbound_updates(response_data)]] - `contains` [EXTRACTED]
+- [[TelegramAPIProxy._filter_outbound(body, content_type)]] - `contains` [EXTRACTED]
+- [[TelegramAPIProxy._forward_to_telegram(url, body, content_type)]] - `contains` [EXTRACTED]
+- [[TelegramAPIProxy.get_stats()]] - `contains` [EXTRACTED]
+- [[TelegramAPIProxy.proxy_request(bot_token, method, body, content_type)]] - `contains` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64
+#graphify/document #graphify/EXTRACTED #community/Community_668

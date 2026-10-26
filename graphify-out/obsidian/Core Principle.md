@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-sec/SKILL.md"
+source_file: ".agents/agents/i-sec.md"
 type: "document"
-community: "dashboard_endpoints.py (2)"
-location: "L13"
+community: "Community 1413"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy_2
+  - community/Community_1413
 ---
 
 # Core Principle
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard_endpointspy_2
+#graphify/document #graphify/EXTRACTED #community/Community_1413

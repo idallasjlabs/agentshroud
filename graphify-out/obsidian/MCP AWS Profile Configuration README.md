@@ -1,25 +1,25 @@
 ---
 source_file: ".agents/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "Browser Extension"
+community: "Community 582"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Extension
+  - community/Community_582
 ---
 
 # MCP AWS Profile Configuration README
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-mcpm-aws-profileREADME]] - `contains` [EXTRACTED]
 - [[MCP AWS Profile Configuration Skill_1]] - `references` [INFERRED]
-- [[Purpose_110]] - `contains` [EXTRACTED]
-- [[Purpose_111]] - `contains` [EXTRACTED]
-- [[Related Skills_81]] - `contains` [EXTRACTED]
-- [[Related Skills_82]] - `contains` [EXTRACTED]
-- [[Usage_87]] - `contains` [EXTRACTED]
-- [[Usage_88]] - `contains` [EXTRACTED]
-- [[hermesskillsi-mcpm-aws-profileSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_15]] - `contains` [EXTRACTED]
+- [[Purpose_54]] - `contains` [EXTRACTED]
+- [[README_15]] - `contains` [EXTRACTED]
+- [[Related Skills_19]] - `contains` [EXTRACTED]
+- [[Related Skills_73]] - `contains` [EXTRACTED]
+- [[SKILL_19]] - `contains` [EXTRACTED]
+- [[SKILL_106]] - `contains` [EXTRACTED]
+- [[Usage_21]] - `contains` [EXTRACTED]
+- [[Usage_77]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Extension
+#graphify/document #graphify/EXTRACTED #community/Community_582

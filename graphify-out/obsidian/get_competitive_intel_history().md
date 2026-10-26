@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "MCPPolicyEngine"
+community: "Community 49"
 location: "L1189"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/Community_49
 ---
 
 # get_competitive_intel_history()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Return recent competitive-intelligence reports in reverse-chronological order.]] - `rationale_for` [EXTRACTED]
 - [[_intel_store()]] - `calls` [EXTRACTED]
-- [[api.py_2]] - `contains` [EXTRACTED]
+- [[api.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/Community_49

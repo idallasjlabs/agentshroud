@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/07-team-planning.md"
 type: "concept"
-community: "AgentShroud™ — Project Knowledge Base"
+community: "Community 466"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud__Project_Knowledge_Base
+  - community/Community_466
 ---
 
 # Dependency Graph — Component Deployment Order
@@ -14,4 +14,4 @@ tags:
 - [[07-team-planning]] - `conceptually_related_to` [EXTRACTED]
 - [[Deployment Diagram — What Runs Where]] - `references` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud__Project_Knowledge_Base
+#graphify/concept #graphify/EXTRACTED #community/Community_466

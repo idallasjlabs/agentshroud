@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "test_collaborator_tracker.py (3)"
+community: "Community 14"
 location: "L7054"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_3
+  - community/Community_14
 ---
 
 # Notify an unknown/unapproved user they have exceeded the access request rate lim
 
 ## Connections
-- [[dot-_send_stranger_rate_limit_notice()]] - `rationale_for` [EXTRACTED]
+- [[._send_stranger_rate_limit_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

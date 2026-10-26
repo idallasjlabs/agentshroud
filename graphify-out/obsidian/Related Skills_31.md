@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hermes/README.md"
+source_file: ".agents/skills/i-ti/README.md"
 type: "document"
-community: "soc.js (3)"
+community: "Community 803"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs_3
+  - community/Community_803
 ---
 
 # Related Skills
 
 ## Connections
-- [[Hermes — Podcast Production Orchestrator_1]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs_3
+#graphify/document #graphify/EXTRACTED #community/Community_803

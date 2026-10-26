@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pm/README.md"
+source_file: ".omp/agents/graphify.md"
 type: "document"
-community: "OpenClaw Bot SSH Configuration"
-location: "L10"
+community: "Community 936"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_SSH_Configuration
+  - community/Community_936
 ---
 
 # Usage
 
 ## Connections
-- [[Project Management (README)]] - `contains` [EXTRACTED]
+- [[graphify_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration
+#graphify/document #graphify/EXTRACTED #community/Community_936

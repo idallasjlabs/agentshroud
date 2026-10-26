@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "PromptGuard"
+community: "Community 22"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PromptGuard
+  - community/Community_22
 ---
 
 # SystemPromptFingerprint
 
 ## Connections
-- [[dot-register_system_prompt()]] - `references` [EXTRACTED]
-- [[dot-verify_system_prompt()]] - `references` [EXTRACTED]
-- [[Any_29]] - `uses` [INFERRED]
+- [[.register_system_prompt()]] - `references` [EXTRACTED]
+- [[.verify_system_prompt()]] - `references` [EXTRACTED]
+- [[Any_36]] - `uses` [INFERRED]
 - [[ContextIntegrityScorer]] - `uses` [INFERRED]
 - [[HMAC-SHA256 fingerprint for a registered system prompt.]] - `rationale_for` [EXTRACTED]
 - [[IntegrityScore]] - `uses` [INFERRED]
@@ -23,7 +23,7 @@ tags:
 - [[TestSystemPromptHMAC]] - `uses` [INFERRED]
 - [[TestToolResultScan]] - `uses` [INFERRED]
 - [[context_integrity.py]] - `imports` [EXTRACTED]
-- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
+- [[prompt_guard.py]] - `contains` [EXTRACTED]
 - [[test_prompt_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PromptGuard
+#graphify/code #graphify/INFERRED #community/Community_22

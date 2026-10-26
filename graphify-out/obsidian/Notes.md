@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/video-frames/SKILL.md"
+source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "ClamAV (2)"
-location: "L43"
+community: "Community 370"
+location: "L364"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ClamAV_2
+  - community/Community_370
 ---
 
 # Notes
 
 ## Connections
-- [[Video Frames (ffmpeg)]] - `contains` [EXTRACTED]
+- [[Phase 3 Requirements Working Chat Container]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ClamAV_2
+#graphify/document #graphify/EXTRACTED #community/Community_370

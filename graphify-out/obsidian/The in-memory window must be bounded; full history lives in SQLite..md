@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "AuditChain"
+community: "Community 24"
 location: "L95"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/Community_24
 ---
 
 # The in-memory window must be bounded; full history lives in SQLite.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditChainBounded]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AuditChain
+#graphify/rationale #graphify/EXTRACTED #community/Community_24

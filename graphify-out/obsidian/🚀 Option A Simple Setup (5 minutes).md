@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md"
 type: "document"
-community: "tmux Session Control"
+community: "Community 571"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/tmux_Session_Control
+  - community/Community_571
 ---
 
 # 🚀 Option A: Simple Setup (5 minutes)
@@ -17,4 +17,4 @@ tags:
 - [[Install Node CalDAV Client]] - `contains` [EXTRACTED]
 - [[Run Test]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/tmux_Session_Control
+#graphify/document #graphify/EXTRACTED #community/Community_571

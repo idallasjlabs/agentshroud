@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "rationale"
-community: "AgentTarget (2)"
+community: "Community 112"
 location: "L42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/Community_112
 ---
 
 # Result of running the canary system.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CanaryResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_112

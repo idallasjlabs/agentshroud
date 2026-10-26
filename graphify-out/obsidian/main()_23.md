@@ -1,18 +1,25 @@
 ---
-source_file: "skills/openclaw/skill-creator/scripts/package_skill.py"
+source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "Function Details (4)"
-location: "L99"
+community: "Community 446"
+location: "L550"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Function_Details_4
+  - community/Community_446
 ---
 
 # main()
 
 ## Connections
-- [[package_skill()]] - `calls` [EXTRACTED]
-- [[package_skill.py]] - `contains` [EXTRACTED]
+- [[generate_branding_assets.py]] - `contains` [EXTRACTED]
+- [[generate_email()]] - `calls` [EXTRACTED]
+- [[generate_favicons()]] - `calls` [EXTRACTED]
+- [[generate_feature_icons()]] - `calls` [EXTRACTED]
+- [[generate_icon_sizes()]] - `calls` [EXTRACTED]
+- [[generate_presentation()]] - `calls` [EXTRACTED]
+- [[generate_social()]] - `calls` [EXTRACTED]
+- [[generate_svg_logos()]] - `calls` [EXTRACTED]
+- [[generate_variants()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Function_Details_4
+#graphify/code #graphify/EXTRACTED #community/Community_446

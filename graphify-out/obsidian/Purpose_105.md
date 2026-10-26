@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-doctor/README.md"
+source_file: "docker/config/openclaw/skills/i-sec/README.md"
 type: "document"
-community: "soc.js"
+community: "Community 1243"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_1243
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
+- [[Security Review (SEC)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_1243

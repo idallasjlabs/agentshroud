@@ -1,17 +1,18 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "AuditExporter"
+community: "Community 1260"
 location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/Community_1260
 ---
 
 # V-B. Prompt Injection Defense
 
 ## Connections
 - [[75 Security Modules]] - `contains` [EXTRACTED]
+- [[V. Security Modules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditExporter
+#graphify/document #graphify/EXTRACTED #community/Community_1260

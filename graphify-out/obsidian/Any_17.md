@@ -1,21 +1,20 @@
 ---
-source_file: ""
+source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "sync-cve-registry.py"
+community: "Community 230"
+location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/Community_230
 ---
 
 # Any
 
 ## Connections
-- [[check_upstream_cves()]] - `references` [EXTRACTED]
-- [[format_cve_report()]] - `references` [EXTRACTED]
-- [[format_upstream_cve_alert()]] - `references` [EXTRACTED]
-- [[run_and_send_cve_report()]] - `references` [EXTRACTED]
-- [[run_upstream_cve_check()]] - `references` [EXTRACTED]
-- [[run_upstream_cve_check_all_agents()]] - `references` [EXTRACTED]
+- [[._redact_pii()]] - `references` [EXTRACTED]
+- [[._scan_value()]] - `references` [EXTRACTED]
+- [[.inspect_tool_call()]] - `references` [EXTRACTED]
+- [[.inspect_tool_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/Community_230

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/SOUL.md"
 type: "concept"
-community: "test_ptt_state.c"
+community: "Community 339"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_ptt_statec
+  - community/Community_339
 ---
 
 # tirith command-safety scanner
 
 ## Connections
+- [[SOUL_2]] - `references` [EXTRACTED]
 - [[agentshroud-ssh-exec.sh helper]] - `conceptually_related_to` [EXTRACTED]
-- [[hermesSOUL]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_ptt_statec
+#graphify/concept #graphify/EXTRACTED #community/Community_339

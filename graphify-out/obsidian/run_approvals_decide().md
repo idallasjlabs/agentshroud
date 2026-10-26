@@ -1,28 +1,28 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "GroupRoleResolver"
+community: "Community 39"
 location: "L585"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/Community_39
 ---
 
 # run_approvals_decide()
 
 ## Connections
-- [[dot-post()_2]] - `calls` [EXTRACTED]
+- [[.post()_1]] - `calls` [EXTRACTED]
 - [[GatewayClient]] - `references` [EXTRACTED]
 - [[Result]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
-- [[_T]] - `references` [EXTRACTED]
+- [[T]] - `references` [EXTRACTED]
 - [[approve_sends_correct_body_and_path()]] - `calls` [EXTRACTED]
 - [[decide_errors_on_404()]] - `calls` [EXTRACTED]
 - [[decide_errors_on_409_conflict()]] - `calls` [EXTRACTED]
 - [[deny_sends_false_and_formats()]] - `calls` [EXTRACTED]
 - [[format_decision()]] - `calls` [EXTRACTED]
-- [[main()_19]] - `calls` [EXTRACTED]
+- [[main()_1]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/Community_39

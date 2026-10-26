@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "format_cve_report() (2)"
+community: "Community 1554"
 location: "L1392"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/format_cve_report_2
+  - community/Community_1554
 ---
 
 # A failing image scan appends an error line but does not raise.
 
 ## Connections
-- [[dot-test_image_scan_error_does_not_abort_report()]] - `rationale_for` [EXTRACTED]
+- [[.test_image_scan_error_does_not_abort_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/format_cve_report_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_1554

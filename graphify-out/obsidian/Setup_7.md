@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/trello/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "TestFabricatedSecurityNotice (2) (2)"
-location: "L16"
+community: "Community 321"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice_2_2
+  - community/Community_321
 ---
 
 # Setup
 
 ## Connections
-- [[Trello Skill]] - `contains` [EXTRACTED]
+- [[iCloud Services_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_321

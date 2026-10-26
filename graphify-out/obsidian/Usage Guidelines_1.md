@@ -1,20 +1,19 @@
 ---
-source_file: "branding/README.md"
+source_file: "branding/colors/palette.md"
 type: "document"
-community: "test_hermes_model_resolver.py"
-location: "L54"
+community: "Community 395"
+location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy
+  - community/Community_395
 ---
 
 # Usage Guidelines
 
 ## Connections
-- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
-- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
-- [[Do's]] - `contains` [EXTRACTED]
-- [[Don'ts]] - `contains` [EXTRACTED]
+- [[Accessibility]] - `contains` [EXTRACTED]
+- [[AgentShroud Color Palette]] - `contains` [EXTRACTED]
+- [[Applications]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_hermes_model_resolverpy
+#graphify/document #graphify/EXTRACTED #community/Community_395

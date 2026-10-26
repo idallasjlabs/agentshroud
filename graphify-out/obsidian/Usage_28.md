@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/README.md"
+source_file: ".agents/skills/i-qa/README.md"
 type: "document"
-community: "AgentShroud™ — Trademark Prior Use Record (4)"
+community: "Community 177"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__Trademark_Prior_Use_Record_4
+  - community/Community_177
 ---
 
 # Usage
 
 ## Connections
-- [[Atlas — Curriculum Architect]] - `contains` [EXTRACTED]
+- [[Quality Assurance (QA)]] - `contains` [EXTRACTED]
+- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record_4
+#graphify/document #graphify/EXTRACTED #community/Community_177

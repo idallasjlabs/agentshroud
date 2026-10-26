@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/SKILL.md"
 type: "document"
-community: "Layer-by-Layer Breakdown (3)"
+community: "Community 843"
 location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Layer-by-Layer_Breakdown_3
+  - community/Community_843
 ---
 
 # What Skills Provide
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[About Skills]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown_3
+#graphify/document #graphify/EXTRACTED #community/Community_843

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "ApprovalHardening"
+community: "Community 734"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/Community_734
 ---
 
 # gateway/proxy/pipeline.py (inbound/outbound guard chain)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/code #graphify/EXTRACTED #community/Community_734

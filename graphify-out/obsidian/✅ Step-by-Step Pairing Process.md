@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "test_collaborator_tracker.py (4) (2)"
+community: "Community 735"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_4_2
+  - community/Community_735
 ---
 
 # ✅ Step-by-Step Pairing Process
@@ -18,4 +18,4 @@ tags:
 - [[Step 3 Enter the Gateway Token]] - `contains` [EXTRACTED]
 - [[Step 4 Verify Connection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_collaborator_trackerpy_4_2
+#graphify/document #graphify/EXTRACTED #community/Community_735

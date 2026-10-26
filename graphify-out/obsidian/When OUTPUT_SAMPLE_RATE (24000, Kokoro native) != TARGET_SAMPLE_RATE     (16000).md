@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Operating Rules (Non-Negotiable) (2)"
+community: "Community 46"
 location: "L158"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Operating_Rules_Non-Negotiable_2
+  - community/Community_46
 ---
 
 # When OUTPUT_SAMPLE_RATE (24000, Kokoro native) != TARGET_SAMPLE_RATE     (16000)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_tts_resamples_24000_to_16000()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Operating_Rules_Non-Negotiable_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_46

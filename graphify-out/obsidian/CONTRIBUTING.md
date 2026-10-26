@@ -1,18 +1,17 @@
 ---
-source_file: "CONTRIBUTING.md"
+source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "test_forward_stream.py"
-location: "L1"
+community: "Community 164"
+location: "L515"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/Community_164
 ---
 
-# CONTRIBUTING.md
+# Contributing
 
 ## Connections
-- [[Contributing to AgentShroud™]] - `contains` [EXTRACTED]
-- [[test_docs_accuracy.py]] - `references` [EXTRACTED]
+- [[For Open-Source Contributors]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/document #graphify/EXTRACTED #community/Community_164

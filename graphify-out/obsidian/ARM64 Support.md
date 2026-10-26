@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/05 - Dependencies/trivy.md"
 type: "document"
-community: "EgressFilter"
+community: "Community 1139"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/Community_1139
 ---
 
 # ARM64 Support
 
 ## Connections
-- [[Trivy_1]] - `contains` [EXTRACTED]
+- [[Trivy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/Community_1139

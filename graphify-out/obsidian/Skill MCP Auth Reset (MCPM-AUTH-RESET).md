@@ -1,25 +1,25 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: ".agents/agents/i-mcpm-auth-reset.md"
 type: "document"
-community: "Phase 3: MITIGATE (Rollback First!) (3)"
-location: "L5"
+community: "Community 211"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First_3
+  - community/Community_211
 ---
 
 # Skill: MCP Auth Reset (MCPM-AUTH-RESET)
 
 ## Connections
-- [[Authentication Reset Procedures_1]] - `contains` [EXTRACTED]
-- [[Related Skills_69]] - `contains` [EXTRACTED]
-- [[Role_58]] - `contains` [EXTRACTED]
-- [[Security Best Practices_1]] - `contains` [EXTRACTED]
-- [[Troubleshooting_29]] - `contains` [EXTRACTED]
-- [[Usage_75]] - `contains` [EXTRACTED]
-- [[Verification Checklist_1]] - `contains` [EXTRACTED]
-- [[When to Invoke_6]] - `contains` [EXTRACTED]
-- [[hermesskillsi-mcpm-auth-resetSKILL]] - `contains` [EXTRACTED]
+- [[Authentication Reset Procedures]] - `contains` [EXTRACTED]
+- [[Related Skills]] - `contains` [EXTRACTED]
+- [[Role_16]] - `contains` [EXTRACTED]
+- [[Security Best Practices]] - `contains` [EXTRACTED]
+- [[Troubleshooting_1]] - `contains` [EXTRACTED]
+- [[Usage_2]] - `contains` [EXTRACTED]
+- [[Verification Checklist]] - `contains` [EXTRACTED]
+- [[When to Invoke]] - `contains` [EXTRACTED]
+- [[i-mcpm-auth-reset]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First_3
+#graphify/document #graphify/EXTRACTED #community/Community_211

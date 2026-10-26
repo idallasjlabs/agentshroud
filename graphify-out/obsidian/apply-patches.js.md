@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/apply-patches.js"
 type: "code"
-community: "Release Notes - AgentShroud v0.9.0"
+community: "Community 180"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Release_Notes_-_AgentShroud_v090
+  - community/Community_180
 ---
 
 # apply-patches.js
@@ -38,17 +38,17 @@ tags:
 - [[desiredAllowFrom]] - `contains` [EXTRACTED]
 - [[desiredProvider]] - `contains` [EXTRACTED]
 - [[extraOrigins]] - `contains` [EXTRACTED]
-- [[fs_3]] - `contains` [EXTRACTED]
+- [[fs_2]] - `contains` [EXTRACTED]
 - [[gpIdx]] - `contains` [EXTRACTED]
 - [[hasChannelWideFallback]] - `contains` [EXTRACTED]
 - [[hasMain]] - `contains` [EXTRACTED]
 - [[hasOwnerBinding]] - `contains` [EXTRACTED]
 - [[missingOrigins]] - `contains` [EXTRACTED]
 - [[missingProxies]] - `contains` [EXTRACTED]
-- [[path_19]] - `contains` [EXTRACTED]
+- [[path_2]] - `contains` [EXTRACTED]
 - [[providerModels]] - `contains` [EXTRACTED]
 - [[staleGroupBindings]] - `contains` [EXTRACTED]
 - [[trustedProxies]] - `contains` [EXTRACTED]
 - [[{ profile _genericProfile, deny _genericCollabDeny }]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Release_Notes_-_AgentShroud_v090
+#graphify/code #graphify/EXTRACTED #community/Community_180

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/README.md"
 type: "document"
-community: "drift_detector.py"
-location: "L12"
+community: "Community 1235"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/drift_detectorpy
+  - community/Community_1235
 ---
 
 # Purpose
 
 ## Connections
-- [[key_vault.py_2]] - `contains` [EXTRACTED]
+- [[MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/drift_detectorpy
+#graphify/document #graphify/EXTRACTED #community/Community_1235

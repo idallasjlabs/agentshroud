@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "document"
-community: "Skill: UX Expert (UX) (3)"
+community: "Community 270"
 location: "L265"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX_3
+  - community/Community_270
 ---
 
 # Scenario 4: Telegram Account Compromised
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🎯 Real-World Scenarios]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX_3
+#graphify/document #graphify/EXTRACTED #community/Community_270

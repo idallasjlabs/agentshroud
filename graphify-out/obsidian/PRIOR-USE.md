@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/PRIOR-USE.md"
 type: "document"
-community: "SecureBrowser Skill"
+community: "Community 1098"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill
+  - community/Community_1098
 ---
 
 # PRIOR-USE.md
@@ -18,4 +18,4 @@ tags:
 - [[TRADEMARK]] - `conceptually_related_to` [INFERRED]
 - [[USPTO-APPLICATION]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill
+#graphify/document #graphify/EXTRACTED #community/Community_1098

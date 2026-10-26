@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/security.py"
 type: "code"
-community: "pipeline.py — Security Pipeline"
+community: "Community 225"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pipelinepy__Security_Pipeline
+  - community/Community_225
 ---
 
 # security.py
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[SecurityFeature]] - `contains` [EXTRACTED]
 - [[_validate_runtime()]] - `contains` [EXTRACTED]
-- [[api.py_2]] - `imports_from` [EXTRACTED]
+- [[api.py]] - `imports_from` [EXTRACTED]
 - [[apple_engine.py]] - `references` [EXTRACTED]
 - [[compose_generator.py]] - `references` [EXTRACTED]
 - [[docker_engine.py]] - `references` [EXTRACTED]
@@ -22,7 +22,8 @@ tags:
 - [[get_missing_features()]] - `contains` [EXTRACTED]
 - [[get_security_comparison()]] - `contains` [EXTRACTED]
 - [[get_security_options()]] - `contains` [EXTRACTED]
+- [[installer.py]] - `imports_from` [EXTRACTED]
 - [[podman_engine.py]] - `references` [EXTRACTED]
 - [[warn_missing_features()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Community_225

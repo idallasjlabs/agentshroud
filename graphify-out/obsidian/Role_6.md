@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mnemosyne/SKILL.md"
+source_file: ".agents/agents/daedalus.md"
 type: "document"
-community: "hermes/manifest.json"
-location: "L8"
+community: "Community 1858"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/manifestjson
+  - community/Community_1858
 ---
 
 # Role
 
 ## Connections
-- [[Mnemosyne — Retention Engineer]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/manifestjson
+#graphify/document #graphify/EXTRACTED #community/Community_1858

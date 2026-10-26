@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: ".test_how_does_routes_to_local_handler()"
+community: "Community 1486"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_how_does_routes_to_local_handler
+  - community/Community_1486
 ---
 
 # _PII_PATTERNS (URL PII regex set)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[_RESPONSE_PII_PATTERNS (content PII regex set)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/test_how_does_routes_to_local_handler
+#graphify/code #graphify/INFERRED #community/Community_1486

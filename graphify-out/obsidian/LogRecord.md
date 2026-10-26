@@ -1,17 +1,26 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
+source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "ContextGuard"
-location: "L63"
+community: "Community 36"
+location: "L65"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ContextGuard
+  - graphify/INFERRED
+  - community/Community_36
 ---
 
 # LogRecord
 
 ## Connections
-- [[dot-filter()_1]] - `references` [EXTRACTED]
+- [[.filter()]] - `references` [EXTRACTED]
+- [[AlertTelegramRelay]] - `uses` [INFERRED]
+- [[DataLedger]] - `uses` [INFERRED]
+- [[EventBus]] - `uses` [INFERRED]
+- [[GroupRegistry]] - `uses` [INFERRED]
+- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[MultiAgentRouter]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/INFERRED #community/Community_36

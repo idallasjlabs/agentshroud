@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Phase 3A/3B Implementation Verification Results"
+community: "Community 480"
 location: "L4252"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Phase_3A/3B_Implementation_Verification_Results
+  - community/Community_480
 ---
 
 # Static response builder for collaborator conceptual queries.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestBuildCollaboratorSafeInfoResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Phase_3A/3B_Implementation_Verification_Results
+#graphify/rationale #graphify/EXTRACTED #community/Community_480

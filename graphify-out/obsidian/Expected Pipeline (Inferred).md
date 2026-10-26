@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/ci-workflows.md"
 type: "document"
-community: "EgressFilter"
+community: "Community 253"
 location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/Community_253
 ---
 
 # Expected Pipeline (Inferred)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CI Workflows]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/Community_253

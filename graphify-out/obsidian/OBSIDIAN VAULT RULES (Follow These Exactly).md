@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-sav/SKILL.md"
+source_file: ".agents/agents/sav.md"
 type: "document"
-community: "migrate-cve-registry-ghsa.py"
-location: "L14"
+community: "Community 297"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/migrate-cve-registry-ghsapy
+  - community/Community_297
 ---
 
 # OBSIDIAN VAULT RULES (Follow These Exactly)
@@ -18,4 +18,4 @@ tags:
 - [[Tags]] - `contains` [EXTRACTED]
 - [[YAML Frontmatter]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy
+#graphify/document #graphify/EXTRACTED #community/Community_297

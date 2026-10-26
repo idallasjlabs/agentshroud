@@ -1,24 +1,24 @@
 ---
-source_file: ".agents/skills/i-mcpm-doctor/SKILL.md"
+source_file: ".agents/agents/i-mcpm-doctor.md"
 type: "document"
-community: "Plan: AgentShroud Security Hardening — Real Agent Containment"
-location: "L5"
+community: "Community 1010"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment
+  - community/Community_1010
 ---
 
 # Skill: MCP Doctor (MCPM-DOCTOR)
 
 ## Connections
-- [[dot-agentsskillsi-mcpm-doctorSKILL]] - `contains` [EXTRACTED]
 - [[Common Issues & Fixes]] - `contains` [EXTRACTED]
 - [[Diagnostic Capabilities]] - `contains` [EXTRACTED]
 - [[Diagnostic Workflow]] - `contains` [EXTRACTED]
-- [[Output Format_15]] - `contains` [EXTRACTED]
-- [[Related Skills_62]] - `contains` [EXTRACTED]
-- [[Role_47]] - `contains` [EXTRACTED]
-- [[When to Invoke_3]] - `contains` [EXTRACTED]
+- [[Output Format_5]] - `contains` [EXTRACTED]
+- [[Related Skills_2]] - `contains` [EXTRACTED]
+- [[Role_18]] - `contains` [EXTRACTED]
+- [[When to Invoke_2]] - `contains` [EXTRACTED]
+- [[i-mcpm-doctor]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment
+#graphify/document #graphify/EXTRACTED #community/Community_1010

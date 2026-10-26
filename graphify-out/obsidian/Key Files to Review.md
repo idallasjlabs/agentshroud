@@ -1,12 +1,12 @@
 ---
 source_file: "docs/claude-security-audit-prompt.md"
 type: "document"
-community: "diagrams/README.md"
+community: "Community 470"
 location: "L252"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/diagrams/READMEmd
+  - community/Community_470
 ---
 
 # Key Files to Review
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/diagrams/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Community_470

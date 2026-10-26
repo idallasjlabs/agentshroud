@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "test_jira_dev_ticket.py"
+community: "Community 179"
 location: "L157"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_jira_dev_ticketpy
+  - community/Community_179
 ---
 
 # Advanced: Direct Docker Commands
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/Community_179

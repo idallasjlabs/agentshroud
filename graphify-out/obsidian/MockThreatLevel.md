@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "scanner_integration.py"
+community: "Community 120"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/scanner_integrationpy
+  - community/Community_120
 ---
 
 # MockThreatLevel
 
 ## Connections
-- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[ProxyAction]] - `uses` [INFERRED]
-- [[ThreatLevel]] - `shares_data_with` [AMBIGUOUS]
-- [[WebProxy]] - `uses` [INFERRED]
+- [[ThreatLevel_1]] - `shares_data_with` [AMBIGUOUS]
+- [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyResult]] - `uses` [INFERRED]
 - [[test_web_proxy_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/scanner_integrationpy
+#graphify/code #graphify/INFERRED #community/Community_120

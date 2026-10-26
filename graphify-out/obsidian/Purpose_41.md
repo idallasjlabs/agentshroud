@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cicd/README.md"
+source_file: "docker/config/hermes/skills/i-browser/README.md"
 type: "document"
-community: "_HeadFakeClient"
+community: "Community 1207"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_HeadFakeClient
+  - community/Community_1207
 ---
 
 # Purpose
 
 ## Connections
-- [[CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_HeadFakeClient
+#graphify/document #graphify/EXTRACTED #community/Community_1207

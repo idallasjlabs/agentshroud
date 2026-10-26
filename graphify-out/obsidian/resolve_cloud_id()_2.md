@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
+source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "code"
-community: "TestEgressTelegramNotify"
-location: "L237"
+community: "Community 181"
+location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressTelegramNotify
+  - community/Community_181
 ---
 
 # resolve_cloud_id()
 
 ## Connections
 - [[Resolve a site domain to its Atlassian cloud ID via the public,     unauthentica_2]] - `rationale_for` [EXTRACTED]
+- [[RuntimeError]] - `calls` [INFERRED]
 - [[build_tenant_info_url()_2]] - `calls` [EXTRACTED]
-- [[jira_dev_ticket resolve_cloud_id()]] - `semantically_similar_to` [INFERRED]
-- [[jira_weekly_review.py]] - `contains` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[fetch_credentials()_1]] - `calls` [EXTRACTED]
+- [[jira_dev_ticket.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressTelegramNotify
+#graphify/code #graphify/EXTRACTED #community/Community_181

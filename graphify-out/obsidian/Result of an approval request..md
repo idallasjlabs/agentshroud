@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "TestOutboundPipelineIntegration"
+community: "Community 21"
 location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutboundPipelineIntegration
+  - community/Community_21
 ---
 
 # Result of an approval request.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ApprovalResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutboundPipelineIntegration
+#graphify/rationale #graphify/EXTRACTED #community/Community_21

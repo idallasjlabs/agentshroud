@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "rationale"
-community: "GroupConfig"
+community: "Community 104"
 location: "L150"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupConfig
+  - community/Community_104
 ---
 
 # A structurally-valid YAML that violates the pydantic schema is rejected.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_reload_rejects_schema_violation_and_keeps_last_good()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_104

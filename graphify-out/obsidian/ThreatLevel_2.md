@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "Enum"
+community: "Community 8"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/Community_8
 ---
 
 # ThreatLevel
 
 ## Connections
-- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[Threat levels for detected issues.]] - `rationale_for` [EXTRACTED]
-- [[ThreatLevel]] - `semantically_similar_to` [INFERRED]
+- [[ThreatLevel_1]] - `semantically_similar_to` [INFERRED]
 - [[git_guard.py]] - `contains` [EXTRACTED]
-- [[str_3]] - `inherits` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/Community_8

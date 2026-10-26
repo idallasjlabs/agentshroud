@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gmail_credential_retrieval.py"
 type: "code"
-community: "Remediation"
+community: "Community 598"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Remediation
+  - community/Community_598
 ---
 
 # test_gmail_credential_retrieval.py
@@ -17,4 +17,4 @@ tags:
 - [[_completed()]] - `contains` [EXTRACTED]
 - [[_get_gmail_app_password()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Remediation
+#graphify/code #graphify/EXTRACTED #community/Community_598

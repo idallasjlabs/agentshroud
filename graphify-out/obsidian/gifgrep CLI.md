@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/gifgrep/SKILL.md"
 type: "concept"
-community: "test_sunday_upgrade_session_guard.sh"
+community: "Community 1409"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_sunday_upgrade_session_guardsh
+  - community/Community_1409
 ---
 
 # gifgrep CLI
 
 ## Connections
-- [[gifgrepSKILL]] - `implements` [EXTRACTED]
+- [[SKILL_218]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_sunday_upgrade_session_guardsh
+#graphify/concept #graphify/EXTRACTED #community/Community_1409

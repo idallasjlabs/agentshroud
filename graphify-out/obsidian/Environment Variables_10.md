@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
+source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "AgentShroud Branding Assets Index"
-location: "L58"
+community: "Community 537"
+location: "L100"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Branding_Assets_Index
+  - community/Community_537
 ---
 
 # Environment Variables
 
 ## Connections
-- [[agentshroud-gateway_2]] - `contains` [EXTRACTED]
+- [[drift_detector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Branding_Assets_Index
+#graphify/document #graphify/EXTRACTED #community/Community_537

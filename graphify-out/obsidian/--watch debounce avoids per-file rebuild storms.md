@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/add-watch.md"
 type: "rationale"
-community: "Jira Ticket Per Dev Batch (Standing Rule)"
+community: "Community 1686"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Jira_Ticket_Per_Dev_Batch_Standing_Rule
+  - community/Community_1686
 ---
 
 # --watch debounce avoids per-file rebuild storms
 
-#graphify/rationale #graphify/EXTRACTED #community/Jira_Ticket_Per_Dev_Batch_Standing_Rule
+#graphify/rationale #graphify/EXTRACTED #community/Community_1686

@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-mac-clustering.txt"
 type: "document"
-community: "SecureBrowser.get_audit_log"
+community: "Community 1682"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowserget_audit_log
+  - community/Community_1682
 ---
 
 # Newsletter: Mac Clustering
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowserget_audit_log
+#graphify/document #graphify/EXTRACTED #community/Community_1682

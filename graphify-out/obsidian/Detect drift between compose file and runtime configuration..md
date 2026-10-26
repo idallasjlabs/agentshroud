@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "WebProxy"
+community: "Community 71"
 location: "L536"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/Community_71
 ---
 
 # Detect drift between compose file and runtime configuration.
 
 ## Connections
-- [[dot-detect_configuration_drift()]] - `rationale_for` [EXTRACTED]
+- [[.detect_configuration_drift()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_71

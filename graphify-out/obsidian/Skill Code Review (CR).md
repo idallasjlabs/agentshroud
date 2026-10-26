@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
+source_file: ".agents/agents/i-cr.md"
 type: "document"
-community: ".test_egress_callback_from_collaborator_is_rejected()"
-location: "L5"
+community: "Community 2013"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_egress_callback_from_collaborator_is_rejected
+  - community/Community_2013
 ---
 
 # Skill: Code Review (CR)
@@ -17,6 +17,6 @@ tags:
 - [[Production-Specific Review Checks]] - `contains` [EXTRACTED]
 - [[Review Principles]] - `contains` [EXTRACTED]
 - [[Role_11]] - `contains` [EXTRACTED]
-- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[i-cr]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_egress_callback_from_collaborator_is_rejected
+#graphify/document #graphify/EXTRACTED #community/Community_2013

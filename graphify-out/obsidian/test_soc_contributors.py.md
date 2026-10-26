@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_contributors.py"
 type: "code"
-community: "ServiceManager"
+community: "Community 20"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/Community_20
 ---
 
 # test_soc_contributors.py
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[ContributorManager]] - `tests` [EXTRACTED]
 - [[ProgressiveLockdown]] - `imports` [EXTRACTED]
-- [[Role_64]] - `imports` [EXTRACTED]
+- [[Role_1]] - `imports` [EXTRACTED]
 - [[TestLockdownLevelWiring]] - `contains` [EXTRACTED]
 - [[TestPausedFieldWiring]] - `contains` [EXTRACTED]
 - [[_FakeRBAC_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/Community_20

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ab/SKILL.md"
+source_file: ".agents/skills/i-sec/SKILL.md"
 type: "document"
-community: "main"
-location: "L7"
+community: "Community 744"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/main
+  - community/Community_744
 ---
 
 # Role
 
 ## Connections
-- [[Skill Audit Branch (AB) — Merge Regression Detection]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/main
+#graphify/document #graphify/EXTRACTED #community/Community_744

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-01-c4-context.svg"
 type: "image"
-community: "AgentShroud (system, C4 context)"
+community: "Community 747"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/AgentShroud_system_C4_context
+  - community/Community_747
 ---
 
 # AgentShroud (system, C4 context)
@@ -21,4 +21,4 @@ tags:
 - [[Tailscale (encrypted overlay network)]] - `shares_data_with` [EXTRACTED]
 - [[Telegram (external system)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/AgentShroud_system_C4_context
+#graphify/image #graphify/EXTRACTED #community/Community_747

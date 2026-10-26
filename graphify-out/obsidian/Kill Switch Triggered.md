@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "docker-cleanup.sh"
+community: "Community 164"
 location: "L349"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker-cleanupsh
+  - community/Community_164
 ---
 
 # Kill Switch Triggered
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[P2 High Priority Incidents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker-cleanupsh
+#graphify/document #graphify/EXTRACTED #community/Community_164

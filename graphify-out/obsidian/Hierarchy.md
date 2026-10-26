@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "AgentShroud Agentic OS"
+community: "Community 231"
 location: "L100"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Agentic_OS
+  - community/Community_231
 ---
 
 # Hierarchy
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Typography in Practice]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Agentic_OS
+#graphify/document #graphify/EXTRACTED #community/Community_231

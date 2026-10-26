@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "Community 7"
 location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # TestChainExportAndVerification
 
 ## Connections
-- [[dot-test_query_filter_by_source()]] - `method` [EXTRACTED]
-- [[dot-test_query_pagination()]] - `method` [EXTRACTED]
-- [[dot-test_stats_correct()]] - `method` [EXTRACTED]
+- [[.test_query_filter_by_source()]] - `method` [EXTRACTED]
+- [[.test_query_pagination()]] - `method` [EXTRACTED]
+- [[.test_stats_correct()]] - `method` [EXTRACTED]
 - [[DataLedger]] - `uses` [INFERRED]
 - [[Export chain and re-verify.]] - `rationale_for` [EXTRACTED]
-- [[LedgerConfig_1]] - `uses` [INFERRED]
+- [[LedgerConfig]] - `uses` [INFERRED]
 - [[test_audit_chain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/Community_7

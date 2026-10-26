@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pr/README.md"
+source_file: ".agents/skills/daedalus/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md (2)"
+community: "Community 2069"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd_2
+  - community/Community_2069
 ---
 
 # Usage
 
 ## Connections
-- [[Pull Request Generator (PR)]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_2
+#graphify/document #graphify/EXTRACTED #community/Community_2069

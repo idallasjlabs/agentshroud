@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-23-roadmap-gantt.svg"
 type: "image"
-community: "Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (2)"
+community: "Community 471"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_2
+  - community/Community_471
 ---
 
 # Diagram 23: Roadmap Gantt (2026)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[GSD Cadence — Get Shit Done Governance (doc)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_2
+#graphify/image #graphify/INFERRED #community/Community_471

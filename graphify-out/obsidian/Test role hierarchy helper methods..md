@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "Canvas Skill"
+community: "Community 6"
 location: "L51"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Canvas_Skill
+  - community/Community_6
 ---
 
 # Test role hierarchy helper methods.
 
 ## Connections
-- [[dot-test_role_hierarchy_checks()]] - `rationale_for` [EXTRACTED]
+- [[.test_role_hierarchy_checks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Canvas_Skill
+#graphify/rationale #graphify/EXTRACTED #community/Community_6

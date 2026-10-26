@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: "AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist (3)"
+community: "Community 1163"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist_3
+  - community/Community_1163
 ---
 
 # telegram_egress_notify.py
@@ -17,4 +17,4 @@ tags:
 - [[_is_stale_callback_error()]] - `contains` [EXTRACTED]
 - [[_is_stale_edit_error()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist_3
+#graphify/code #graphify/EXTRACTED #community/Community_1163

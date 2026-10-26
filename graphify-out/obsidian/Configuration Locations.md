@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "PipelineAction"
+community: "Community 2119"
 location: "L182"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/Community_2119
 ---
 
 # Configuration Locations
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[2. Multi-Agent Hierarchy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PipelineAction
+#graphify/document #graphify/EXTRACTED #community/Community_2119

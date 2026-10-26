@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_e2e_watchtower.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "soc/router.py"
-location: "L54"
+community: "Community 11"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/Community_11
 ---
 
 # trust_manager()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TrustConfig]] - `calls` [EXTRACTED]
 - [[TrustManager_1]] - `calls` [EXTRACTED]
-- [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
+- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/Community_11

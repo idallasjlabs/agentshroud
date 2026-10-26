@@ -1,21 +1,21 @@
 ---
 source_file: ".agents/skills/i-mcpm/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md (2)"
+community: "Community 117"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd_2
+  - community/Community_117
 ---
 
 # MCP Tools Usage (MCPM)
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-mcpmREADME]] - `contains` [EXTRACTED]
 - [[Purpose_17]] - `contains` [EXTRACTED]
-- [[Related Skills_5]] - `contains` [EXTRACTED]
-- [[Usage_8]] - `contains` [EXTRACTED]
+- [[README_17]] - `contains` [EXTRACTED]
+- [[Related Skills_23]] - `contains` [EXTRACTED]
+- [[SKILL_19]] - `contains` [EXTRACTED]
+- [[Usage_23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_2
+#graphify/document #graphify/EXTRACTED #community/Community_117

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/init-config.sh"
 type: "rationale"
-community: "TestFabricatedSecurityNotice (2)"
+community: "Community 290"
 location: "L499-L687"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice_2
+  - community/Community_290
 ---
 
 # MCP servers reconciliation from mcp/servers.json into config.yaml
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[init-config.sh (Hermes first-boot config materialisation)]] - `implements` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_290

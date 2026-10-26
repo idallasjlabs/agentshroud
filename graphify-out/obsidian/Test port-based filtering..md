@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "rationale"
-community: "EgressFilterConfig (2)"
+community: "Community 17"
 location: "L207"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/Community_17
 ---
 
 # Test port-based filtering.
 
 ## Connections
-- [[dot-test_port_filtering()]] - `rationale_for` [EXTRACTED]
+- [[.test_port_filtering()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_17

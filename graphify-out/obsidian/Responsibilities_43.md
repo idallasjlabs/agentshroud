@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
 type: "document"
-community: "OpenClaw Control UI Pairing Instructions"
+community: "Community 456"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Control_UI_Pairing_Instructions
+  - community/Community_456
 ---
 
 # Responsibilities
 
 ## Connections
-- [[consent_framework.py_2]] - `contains` [EXTRACTED]
+- [[env_guard.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Control_UI_Pairing_Instructions
+#graphify/document #graphify/EXTRACTED #community/Community_456

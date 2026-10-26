@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-production/README.md"
+source_file: ".omp/agents/i-mcpm-aws-profile.md"
 type: "document"
-community: "OpenClaw Bot SSH Configuration"
-location: "L14"
+community: "Community 183"
+location: "L348"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_SSH_Configuration
+  - community/Community_183
 ---
 
 # Related Skills
 
 ## Connections
-- [[operationsincident-response]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration
+#graphify/document #graphify/EXTRACTED #community/Community_183

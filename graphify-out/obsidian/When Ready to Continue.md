@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/SYSTEM_STATUS.md"
 type: "document"
-community: "apple_engine.py"
+community: "Community 604"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/apple_enginepy
+  - community/Community_604
 ---
 
 # When Ready to Continue
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📋 Next Steps for User]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/apple_enginepy
+#graphify/document #graphify/EXTRACTED #community/Community_604

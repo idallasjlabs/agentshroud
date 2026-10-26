@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: ".cursor/agents/i-mcpm-auth-reset.md"
 type: "document"
-community: "AgentShroud Gateway (Trust Zone 1): holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMAC/JWT validation"
-location: "L201"
+community: "Community 263"
+location: "L204"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Gateway_Trust_Zone_1_holds_1Password_service_account_enforces_policy_signs_ledger_entries_controls_approval_queue_HMAC/JWT_validation
+  - community/Community_263
 ---
 
 # GitHub PAT
 
 ## Connections
-- [[Security Best Practices_3]] - `contains` [EXTRACTED]
+- [[Security Best Practices_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Gateway_Trust_Zone_1_holds_1Password_service_account_enforces_policy_signs_ledger_entries_controls_approval_queue_HMAC/JWT_validation
+#graphify/document #graphify/EXTRACTED #community/Community_263

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
+community: "Community 107"
 location: "L473"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/Community_107
 ---
 
 # Production Hardening
@@ -16,4 +16,4 @@ tags:
 - [[Performance Tuning]] - `contains` [EXTRACTED]
 - [[Security Hardening]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_107

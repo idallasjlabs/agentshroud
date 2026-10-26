@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "OpenClaw Setup Guide - agentshroud.ai Bot"
+community: "Community 244"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+  - community/Community_244
 ---
 
 # Part 1: Test Telegram Bot
@@ -17,4 +17,4 @@ tags:
 - [[Test Now]] - `contains` [EXTRACTED]
 - [[✅ Current Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+#graphify/document #graphify/EXTRACTED #community/Community_244

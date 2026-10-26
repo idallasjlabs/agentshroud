@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: ".can_use_tool()"
+community: "Community 61"
 location: "L469"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/can_use_tool
+  - community/Community_61
 ---
 
 # Authorize a tool call, refusing owner elevation over an unverified origin.
 
 ## Connections
-- [[dot-can_use_tool_from_origin()]] - `rationale_for` [EXTRACTED]
+- [[.can_use_tool_from_origin()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/can_use_tool
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

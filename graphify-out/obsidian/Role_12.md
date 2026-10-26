@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
+source_file: ".agents/agents/i-crpr.md"
 type: "document"
-community: "GitHub Branch Protection — `main`"
-location: "L7"
+community: "Community 1276"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Branch_Protection__main
+  - community/Community_1276
 ---
 
 # Role
 
 ## Connections
-- [[Skill Code Review (CR)_1]] - `contains` [EXTRACTED]
+- [[Skill Create PR with Pre-Flight Audit (CRPR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Branch_Protection__main
+#graphify/document #graphify/EXTRACTED #community/Community_1276

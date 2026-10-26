@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Action"
+community: "Community 217"
 location: "L377"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Action
+  - community/Community_217
 ---
 
 # Real-Time Event Streaming
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Query Capabilities]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Action
+#graphify/document #graphify/EXTRACTED #community/Community_217

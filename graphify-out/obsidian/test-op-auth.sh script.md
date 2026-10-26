@@ -1,12 +1,12 @@
 ---
 source_file: "docker/tests/test-op-auth.sh"
 type: "code"
-community: "MCP Tools Usage (MCPM)"
+community: "Community 1206"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Tools_Usage_MCPM
+  - community/Community_1206
 ---
 
 # test-op-auth.sh script
@@ -16,4 +16,4 @@ tags:
 - [[pass()_1]] - `calls` [EXTRACTED]
 - [[test-op-auth.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Tools_Usage_MCPM
+#graphify/code #graphify/EXTRACTED #community/Community_1206

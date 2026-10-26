@@ -1,18 +1,17 @@
 ---
-source_file: "branding/guidelines/brand-guidelines.md"
+source_file: "docker/bots/openclaw/config/workspace/PUBLIC-INFO.md"
 type: "document"
-community: "AgentShroud Agentic OS"
-location: "L334"
+community: "Community 957"
+location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Agentic_OS
+  - community/Community_957
 ---
 
 # Contact
 
 ## Connections
-- [[AgentShroud Brand Guidelines]] - `contains` [EXTRACTED]
-- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
+- [[AgentShroud — Collaborator Knowledge Base]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Agentic_OS
+#graphify/document #graphify/EXTRACTED #community/Community_957

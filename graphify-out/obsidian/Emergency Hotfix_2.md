@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mc/SKILL.md"
+source_file: ".agents/skills/i-gg/SKILL.md"
 type: "document"
-community: "ledger row (id, timestamp, source, hashes, sanitized flag, expires_at)"
-location: "L52"
+community: "Community 949"
+location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ledger_row_id_timestamp_source_hashes_sanitized_flag_expires_at
+  - community/Community_949
 ---
 
 # Emergency Hotfix
 
 ## Connections
-- [[GSDE&G Development Master Checklist_2]] - `contains` [EXTRACTED]
+- [[Skill Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ledger_row_id_timestamp_source_hashes_sanitized_flag_expires_at
+#graphify/document #graphify/EXTRACTED #community/Community_949

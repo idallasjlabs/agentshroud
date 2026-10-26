@@ -1,14 +1,14 @@
 ---
 source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
 type: "rationale"
-community: "Obsidian Vault Export (opt-in --obsidian)"
+community: "Community 1705"
 location: "lines 70-101"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Obsidian_Vault_Export_opt-in_--obsidian
+  - community/Community_1705
 ---
 
 # Jira Ticket Per Dev Batch (Standing Rule)
 
-#graphify/rationale #graphify/EXTRACTED #community/Obsidian_Vault_Export_opt-in_--obsidian
+#graphify/rationale #graphify/EXTRACTED #community/Community_1705

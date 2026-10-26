@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "encrypted_store.py"
-location: "L12"
+community: "Community 175"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/encrypted_storepy
+  - community/Community_175
 ---
 
 # Purpose
 
 ## Connections
-- [[resource_guard.py_2]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/encrypted_storepy
+#graphify/document #graphify/EXTRACTED #community/Community_175

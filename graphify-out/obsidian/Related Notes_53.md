@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
+source_file: "docs/vault/06 - Containers & Services/networks.md"
 type: "document"
-community: "DelegationManager"
-location: "L64"
+community: "Community 628"
+location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/Community_628
 ---
 
 # Related Notes
 
 ## Connections
-- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
+- [[Docker Networks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DelegationManager
+#graphify/document #graphify/EXTRACTED #community/Community_628

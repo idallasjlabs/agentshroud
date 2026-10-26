@@ -1,18 +1,17 @@
 ---
-source_file: "skills/openclaw/canvas/SKILL.md"
+source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "test_security_toolchain.py"
-location: "L58"
+community: "Community 690"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/Community_690
 ---
 
 # Configuration
 
 ## Connections
-- [[Canvas Skill]] - `contains` [EXTRACTED]
-- [[Live Reload]] - `contains` [EXTRACTED]
+- [[OpenClaw Integration (Primary Target)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/document #graphify/EXTRACTED #community/Community_690

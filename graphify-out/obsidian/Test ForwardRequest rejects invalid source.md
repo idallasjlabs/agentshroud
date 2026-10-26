@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "rationale"
-community: "ForwardRequest"
+community: "Community 34"
 location: "L224"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/Community_34
 ---
 
 # Test ForwardRequest rejects invalid source
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_forward_request_validation_invalid_source()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest
+#graphify/rationale #graphify/EXTRACTED #community/Community_34

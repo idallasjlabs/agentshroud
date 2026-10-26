@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "code"
-community: "SSHProxy"
+community: "Community 7"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/Community_7
 ---
 
 # test_ssh_write_file_endpoint.py
@@ -16,15 +16,15 @@ tags:
 - [[ApprovalQueue]] - `imports` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
 - [[DataLedger]] - `imports` [EXTRACTED]
-- [[GatewayConfig_3]] - `imports` [EXTRACTED]
-- [[LedgerConfig_1]] - `imports` [EXTRACTED]
+- [[GatewayConfig_1]] - `imports` [EXTRACTED]
+- [[LedgerConfig]] - `imports` [EXTRACTED]
 - [[MultiAgentRouter]] - `imports` [EXTRACTED]
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
-- [[PIISanitizer_3]] - `imports` [EXTRACTED]
-- [[RouterConfig_1]] - `imports` [EXTRACTED]
-- [[SSHConfig_2]] - `imports` [EXTRACTED]
+- [[PIIConfig]] - `imports` [EXTRACTED]
+- [[PIISanitizer]] - `imports` [EXTRACTED]
+- [[RouterConfig]] - `imports` [EXTRACTED]
+- [[SSHConfig]] - `imports` [EXTRACTED]
 - [[SSHHostConfig]] - `imports` [EXTRACTED]
-- [[SSHProxy_1]] - `imports` [EXTRACTED]
+- [[SSHProxy]] - `imports` [EXTRACTED]
 - [[SSHWriteResult]] - `imports` [EXTRACTED]
 - [[TestSSHProxyValidateWriteFile]] - `contains` [EXTRACTED]
 - [[TestSSHProxyWriteFileTransport]] - `contains` [EXTRACTED]
@@ -32,12 +32,12 @@ tags:
 - [[TestSSHWriteFileLedgerAudit]] - `contains` [EXTRACTED]
 - [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - `contains` [EXTRACTED]
 - [[_b64()]] - `contains` [EXTRACTED]
-- [[auth_headers()]] - `contains` [EXTRACTED]
-- [[client()_18]] - `contains` [EXTRACTED]
+- [[auth_headers()_4]] - `contains` [EXTRACTED]
+- [[client()_17]] - `contains` [EXTRACTED]
 - [[gatewayingest_apiledger.py (DataLedger)]] - `references` [EXTRACTED]
 - [[gatewayingest_apissh_config.py (SSHConfig)]] - `references` [EXTRACTED]
 - [[proxy.py]] - `references` [EXTRACTED]
-- [[ssh_config()_1]] - `contains` [EXTRACTED]
+- [[ssh_config()_2]] - `contains` [EXTRACTED]
 - [[test_config_with_ssh()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/Community_7

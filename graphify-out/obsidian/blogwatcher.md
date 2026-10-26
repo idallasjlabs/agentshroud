@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/blogwatcher/SKILL.md"
 type: "document"
-community: "xTaskGetTickCount (2)"
+community: "Community 1376"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/xTaskGetTickCount_2
+  - community/Community_1376
 ---
 
 # blogwatcher
 
 ## Connections
-- [[blogwatcherSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_208]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/xTaskGetTickCount_2
+#graphify/document #graphify/EXTRACTED #community/Community_1376

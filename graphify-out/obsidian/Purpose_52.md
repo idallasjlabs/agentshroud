@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ps/README.md"
+source_file: "docker/config/hermes/skills/i-mc/README.md"
 type: "document"
-community: "2. Security Value Audit — Real Protection vs. Theater Assessment"
+community: "Community 90"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/2_Security_Value_Audit__Real_Protection_vs_Theater_Assessment
+  - community/Community_90
 ---
 
 # Purpose
 
 ## Connections
-- [[Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/2_Security_Value_Audit__Real_Protection_vs_Theater_Assessment
+#graphify/document #graphify/EXTRACTED #community/Community_90

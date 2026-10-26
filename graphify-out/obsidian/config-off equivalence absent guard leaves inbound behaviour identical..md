@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "rationale"
-community: "CI/CD Pipeline Advisor (SKILL)"
+community: "Community 206"
 location: "L288"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_SKILL
+  - community/Community_206
 ---
 
 # config-off equivalence: absent guard leaves inbound behaviour identical.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pipeline_no_guard_is_unchanged()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL
+#graphify/rationale #graphify/EXTRACTED #community/Community_206

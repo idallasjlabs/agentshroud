@@ -1,17 +1,17 @@
 ---
-source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
+source_file: "docs/architecture/IDENTITY.md"
 type: "document"
-community: "What You Must Do When Invoked (3)"
-location: "L304"
+community: "Community 899"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked_3
+  - community/Community_899
 ---
 
-# Via Telegram
+# Via Telegram:
 
 ## Connections
-- [[💬 Example Conversations]] - `contains` [EXTRACTED]
+- [[💬 Communication Flow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked_3
+#graphify/document #graphify/EXTRACTED #community/Community_899

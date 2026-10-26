@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "AgentShroud Module Inventory"
+community: "Community 532"
 location: "L30"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Module_Inventory
+  - community/Community_532
 ---
 
 # A piece of content that should be protected from disclosure.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ProtectedContent]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Module_Inventory
+#graphify/rationale #graphify/EXTRACTED #community/Community_532

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "test_mfa_guard.py"
+community: "Community 29"
 location: "L1631"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/Community_29
 ---
 
 # _score_docker_daemon_config()
@@ -19,4 +19,4 @@ tags:
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/Community_29

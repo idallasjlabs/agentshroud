@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-release/SKILL.md"
+source_file: ".cursor/agents/i-crpr.md"
 type: "document"
-community: "openai-whisper-api/SKILL.md"
-location: "L8"
+community: "Community 1303"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openai-whisper-api/SKILLmd
+  - community/Community_1303
 ---
 
 # Role
 
 ## Connections
-- [[Skill Release (i-release)]] - `contains` [EXTRACTED]
+- [[Skill Create PR with Pre-Flight Audit (CRPR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Community_1303

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "trivy_report.py"
-location: "L75"
+community: "Community 538"
+location: "L118"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/trivy_reportpy
+  - community/Community_538
 ---
 
 # Related
 
 ## Connections
-- [[canary.py_2]] - `contains` [EXTRACTED]
+- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/trivy_reportpy
+#graphify/document #graphify/EXTRACTED #community/Community_538

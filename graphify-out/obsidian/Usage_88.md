@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/README.md"
+source_file: "docker/config/hermes/skills/i-sav/README.md"
 type: "document"
-community: "Browser Extension"
-location: "L10"
+community: "Community 90"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Extension
+  - community/Community_90
 ---
 
 # Usage
 
 ## Connections
-- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
-- [[MCP AWS Profile Configuration README]] - `contains` [EXTRACTED]
+- [[System Audit Vault_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Extension
+#graphify/document #graphify/EXTRACTED #community/Community_90

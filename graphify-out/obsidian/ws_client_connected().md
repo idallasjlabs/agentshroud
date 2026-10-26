@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ws_client.c"
 type: "code"
-community: "TestMetadataGuard"
+community: "Community 358"
 location: "L322"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TestMetadataGuard
+  - community/Community_358
 ---
 
 # ws_client_connected()
@@ -18,4 +18,4 @@ tags:
 - [[ws_client.c]] - `contains` [EXTRACTED]
 - [[ws_client_handle_t_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TestMetadataGuard
+#graphify/code #graphify/INFERRED #community/Community_358

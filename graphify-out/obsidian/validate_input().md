@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/agentshroud-manage.sh"
 type: "code"
-community: "test_collaborator_tracker.py (5)"
+community: "Community 1270"
 location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_5
+  - community/Community_1270
 ---
 
 # validate_input()
@@ -15,4 +15,4 @@ tags:
 - [[agentshroud-manage.sh]] - `defines` [EXTRACTED]
 - [[agentshroud-manage.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_5
+#graphify/code #graphify/EXTRACTED #community/Community_1270

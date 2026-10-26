@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-007-zero-config-security.md"
 type: "document"
-community: "Bear Notes"
+community: "Community 858"
 location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bear_Notes
+  - community/Community_858
 ---
 
 # Positive Consequences
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Consequences_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bear_Notes
+#graphify/document #graphify/EXTRACTED #community/Community_858

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "Community 84"
 location: "L134"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_84
 ---
 
 # Write 1000 audit entries in under 5 seconds.
 
 ## Connections
-- [[dot-test_1000_entries_under_5s()]] - `rationale_for` [EXTRACTED]
+- [[.test_1000_entries_under_5s()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_84

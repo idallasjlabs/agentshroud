@@ -1,22 +1,28 @@
 ---
-source_file: "gateway/tests/test_trust_manager.py"
+source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "soc/router.py"
-location: "L184"
+community: "Community 30"
+location: "L317"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/soc/routerpy
+  - graphify/INFERRED
+  - community/Community_30
 ---
 
 # TestPersistence
 
 ## Connections
-- [[dot-test_persistence_across_instances()]] - `method` [EXTRACTED]
-- [[Test trust survives restart.]] - `rationale_for` [EXTRACTED]
-- [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
-- [[test_trust_manager.py]] - `contains` [EXTRACTED]
+- [[.test_restart_recovery_preserves_timeout_action()]] - `method` [EXTRACTED]
+- [[.test_restore_pending_items()]] - `method` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalRequest_3]] - `uses` [INFERRED]
+- [[ApprovalStore_1]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
+- [[MCPProxy]] - `uses` [INFERRED]
+- [[MCPToolCall]] - `uses` [INFERRED]
+- [[Test SQLite persistence across restarts.]] - `rationale_for` [EXTRACTED]
+- [[ToolRiskConfig_1]] - `uses` [INFERRED]
+- [[ToolRiskPolicy_1]] - `uses` [INFERRED]
+- [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/INFERRED #community/Community_30

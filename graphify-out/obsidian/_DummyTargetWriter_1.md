@@ -1,24 +1,25 @@
 ---
-source_file: "gateway/tests/test_http_proxy.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "_pcm_bytes"
-location: "L110"
+community: "Community 81"
+location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/Community_81
 ---
 
 # _DummyTargetWriter
 
 ## Connections
-- [[dot-close()_19]] - `method` [EXTRACTED]
-- [[dot-drain()_2]] - `method` [EXTRACTED]
-- [[dot-write()_2]] - `method` [EXTRACTED]
-- [[EgressAction]] - `uses` [INFERRED]
-- [[HTTPConnectProxy_1]] - `uses` [INFERRED]
-- [[WebProxy]] - `uses` [INFERRED]
+- [[.__init__()_163]] - `method` [EXTRACTED]
+- [[.close()_17]] - `method` [EXTRACTED]
+- [[.drain()_3]] - `method` [EXTRACTED]
+- [[.write()_3]] - `method` [EXTRACTED]
+- [[HTTPConnectProxy]] - `uses` [INFERRED]
+- [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
-- [[test_http_proxy.py]] - `contains` [EXTRACTED]
+- [[_CloseRaisesTargetWriter]] - `inherits` [EXTRACTED]
+- [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/code #graphify/EXTRACTED #community/Community_81

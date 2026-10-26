@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-wiring-audit.md"
+source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Integration Guide"
-location: "L10"
+community: "Community 164"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Integration_Guide
+  - community/Community_164
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Integration_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_164

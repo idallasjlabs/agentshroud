@@ -1,20 +1,17 @@
 ---
-source_file: "docker/DOCKER-VPN-NETWORKING.md"
+source_file: "docs/planning/redteam/04-separation-of-privilege.md"
 type: "document"
-community: "event_bus.py"
-location: "L22"
+community: "Community 670"
+location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/event_buspy
+  - community/Community_670
 ---
 
 # Root Cause
 
 ## Connections
-- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
-- [[Primary gVisor networking mode]] - `contains` [EXTRACTED]
-- [[Secondary Python IPv6 fallback (misleading error)]] - `contains` [EXTRACTED]
-- [[Secondary transparent HTTPS proxy]] - `contains` [EXTRACTED]
+- [[Make gateway source code, config, and security policies read-only to the agent]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/event_buspy
+#graphify/document #graphify/EXTRACTED #community/Community_670

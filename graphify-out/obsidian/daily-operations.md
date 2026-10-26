@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/daily-operations.md"
 type: "document"
-community: "_sync"
+community: "Community 654"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_sync
+  - community/Community_654
 ---
 
 # daily-operations.md
@@ -16,4 +16,4 @@ tags:
 - [[Daily Operations Runbook — AgentShroud]] - `contains` [EXTRACTED]
 - [[backup-restore]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_sync
+#graphify/document #graphify/EXTRACTED #community/Community_654

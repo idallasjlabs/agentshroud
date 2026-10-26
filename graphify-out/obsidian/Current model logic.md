@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/model-usage/SKILL.md"
 type: "document"
-community: "EgressFilterConfig (2) (3)"
+community: "Community 273"
 location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2_3
+  - community/Community_273
 ---
 
 # Current model logic
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Model usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilterConfig_2_3
+#graphify/document #graphify/EXTRACTED #community/Community_273

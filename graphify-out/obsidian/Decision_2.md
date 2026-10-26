@@ -1,19 +1,19 @@
 ---
-source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
+source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
 type: "document"
-community: "AgentShroud Color Palette"
-location: "L28"
+community: "Community 631"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Color_Palette
+  - community/Community_631
 ---
 
 # Decision
 
 ## Connections
-- [[ADR-009 Enforce-by-Default Security Philosophy]] - `contains` [EXTRACTED]
-- [[Configuration_11]] - `contains` [EXTRACTED]
-- [[Policy Table]] - `contains` [EXTRACTED]
+- [[ADR-001 Transparent Proxy vs Agent Modification]] - `contains` [EXTRACTED]
+- [[Implementation Status]] - `contains` [EXTRACTED]
+- [[Implementation Strategy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Color_Palette
+#graphify/document #graphify/EXTRACTED #community/Community_631

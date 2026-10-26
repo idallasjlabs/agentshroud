@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
 type: "document"
-community: "Use Cases"
-location: "L15"
+community: "Community 732"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Use_Cases
+  - community/Community_732
 ---
 
 # Responsibilities
 
 ## Connections
-- [[web_proxy.py_2]] - `contains` [EXTRACTED]
+- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Use_Cases
+#graphify/document #graphify/EXTRACTED #community/Community_732

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "rationale"
-community: "UserSessionManager (2)"
+community: "Community 271"
 location: "L256"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/Community_271
 ---
 
 # Flatten an A2A Message's `parts` array to plain text for PII         scanning.
 
 ## Connections
-- [[dot-extract_text_for_pii_scan()]] - `rationale_for` [EXTRACTED]
+- [[.extract_text_for_pii_scan()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_271

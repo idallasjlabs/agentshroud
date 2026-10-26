@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Development Workflow: Read-Only Filesystem Strategy"
+community: "Community 285"
 location: "L295"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Development_Workflow_Read-Only_Filesystem_Strategy
+  - community/Community_285
 ---
 
 # For Production: OAuth2 + Google APIs
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🚀 Recommended Approach]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read-Only_Filesystem_Strategy
+#graphify/document #graphify/EXTRACTED #community/Community_285

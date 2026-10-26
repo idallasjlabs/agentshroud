@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "test_soc_egress_endpoints.py"
+community: "Community 187"
 location: "L388"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_egress_endpointspy
+  - community/Community_187
 ---
 
 # End-to-end: all 110+ payloads against combined defense layer.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOverallDetectionRate]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_egress_endpointspy
+#graphify/rationale #graphify/EXTRACTED #community/Community_187

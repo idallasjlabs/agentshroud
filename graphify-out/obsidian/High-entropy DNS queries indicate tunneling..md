@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "ContextGuard"
+community: "Community 0"
 location: "L588"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/Community_0
 ---
 
 # High-entropy DNS queries indicate tunneling.
 
 ## Connections
-- [[dot-test_dns_tunneling_detection()]] - `rationale_for` [EXTRACTED]
+- [[.test_dns_tunneling_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

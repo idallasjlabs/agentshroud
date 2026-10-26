@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "rationale"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "Community 28"
 location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/Community_28
 ---
 
 # Get or create a PIISanitizer instance for the specified tool
 
 ## Connections
-- [[dot-_get_sanitizer_for_tool()]] - `rationale_for` [EXTRACTED]
+- [[._get_sanitizer_for_tool()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/Community_28

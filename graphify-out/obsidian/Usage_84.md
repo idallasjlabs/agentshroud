@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sad/README.md"
+source_file: "docker/config/hermes/skills/i-production/README.md"
 type: "document"
-community: "soc.js"
-location: "L9"
+community: "Community 1218"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_1218
 ---
 
 # Usage
 
 ## Connections
-- [[System Audit Documentation_1]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_1218

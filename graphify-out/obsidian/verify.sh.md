@@ -1,20 +1,19 @@
 ---
 source_file: "gateway/verify.sh"
 type: "code"
-community: "GroupConfig"
+community: "Community 104"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupConfig
+  - community/Community_104
 ---
 
 # verify.sh
 
 ## Connections
-- [[ingest_apiconfig.py]] - `references` [EXTRACTED]
-- [[ingest_apimain.py]] - `references` [EXTRACTED]
+- [[config.py]] - `references` [EXTRACTED]
 - [[sanitizer.py]] - `references` [EXTRACTED]
 - [[verify.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupConfig
+#graphify/code #graphify/EXTRACTED #community/Community_104

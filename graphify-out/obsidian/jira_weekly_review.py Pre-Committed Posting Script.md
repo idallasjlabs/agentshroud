@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/jira-weekly-review.txt"
 type: "concept"
-community: "Atlas — Curriculum Architect (3)"
+community: "Community 338"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect_3
+  - community/Community_338
 ---
 
 # jira_weekly_review.py Pre-Committed Posting Script
@@ -16,4 +16,4 @@ tags:
 - [[SCRUM-81 Weekly Review Ticket]] - `references` [EXTRACTED]
 - [[render_md_email.py Markdown-to-Inline-CSS Email Renderer]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Atlas__Curriculum_Architect_3
+#graphify/concept #graphify/EXTRACTED #community/Community_338

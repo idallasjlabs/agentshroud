@@ -1,18 +1,18 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/task.h"
 type: "code"
-community: "AgentShroud Incident Response Plan (10)"
+community: "Community 1398"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan_10
+  - community/Community_1398
 ---
 
 # vTaskDelay()
 
 ## Connections
 - [[TickType_t_3]] - `references` [EXTRACTED]
-- [[test_wakeword_statestubsfreertostask.h]] - `contains` [EXTRACTED]
+- [[task.h_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan_10
+#graphify/code #graphify/EXTRACTED #community/Community_1398

@@ -1,20 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-bs/README.md"
+source_file: "docker/config/openclaw/skills/i-bs/README.md"
 type: "document"
-community: "TestOutboundInfoFilter"
+community: "Community 58"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/Community_58
 ---
 
 # Branding Specialist (BS)
 
 ## Connections
-- [[Purpose_166]] - `contains` [EXTRACTED]
-- [[Related Skills_93]] - `contains` [EXTRACTED]
-- [[Usage_105]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[Purpose_79]] - `contains` [EXTRACTED]
+- [[README_84]] - `contains` [EXTRACTED]
+- [[Related Skills_100]] - `contains` [EXTRACTED]
+- [[SKILL_152]] - `contains` [EXTRACTED]
+- [[Usage_104]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/Community_58

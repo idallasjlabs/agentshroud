@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "Community 2414"
 location: "L1832"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/Community_2414
 ---
 
 # Ollama auth errors should map to concise operator guidance.
 
 ## Connections
-- [[dot-test_ollama_auth_required_error_is_sanitized()]] - `rationale_for` [EXTRACTED]
+- [[.test_ollama_auth_required_error_is_sanitized()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_2414

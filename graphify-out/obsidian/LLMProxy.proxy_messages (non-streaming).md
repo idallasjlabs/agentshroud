@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "test_voice_stt_model_ab.py"
+community: "Community 129"
 location: "L834-L1200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_stt_model_abpy
+  - community/Community_129
 ---
 
 # LLMProxy.proxy_messages (non-streaming)
@@ -35,9 +35,8 @@ tags:
 - [[LLMProxy.proxy_messages_streaming]] - `semantically_similar_to` [EXTRACTED]
 - [[LOCAL_MODEL_ROUTES]] - `references` [EXTRACTED]
 - [[google_api_proxy]] - `calls` [EXTRACTED]
-- [[llm_api_proxy()]] - `calls` [EXTRACTED]
 - [[ollama_api_proxy]] - `calls` [EXTRACTED]
 - [[test_fieldflare_route_strips_unsupported_fields_non_streaming]] - `calls` [EXTRACTED]
 - [[test_non_fieldflare_local_route_keeps_fields]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_stt_model_abpy
+#graphify/code #graphify/EXTRACTED #community/Community_129

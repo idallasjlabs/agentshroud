@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-11-trust-boundary.svg"
 type: "concept"
-community: ".test_collaborator_rate_limit_notice_is_sent_for_each_limited_message()"
+community: "Community 968"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_collaborator_rate_limit_notice_is_sent_for_each_limited_message
+  - community/Community_968
 ---
 
 # Isaiah Jefferson (full control)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Gateway (holds 1Password service account)]] - `calls` [EXTRACTED]
 - [[Trust Zone 0 — Owner (Highest Trust)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_collaborator_rate_limit_notice_is_sent_for_each_limited_message
+#graphify/concept #graphify/EXTRACTED #community/Community_968

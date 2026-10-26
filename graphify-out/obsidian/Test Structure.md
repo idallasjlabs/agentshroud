@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/agentshroud-redteam/SKILL.md"
+source_file: ".agents/agents/i-tdd.md"
 type: "document"
-community: "Test-Driven Development README"
-location: "L280"
+community: "Community 1444"
+location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_README
+  - community/Community_1444
 ---
 
 # Test Structure
 
 ## Connections
-- [[Writing Exploit Tests]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README
+#graphify/document #graphify/EXTRACTED #community/Community_1444

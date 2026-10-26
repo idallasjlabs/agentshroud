@@ -1,17 +1,17 @@
 ---
-source_file: "reports/upgrade-2026-09-14.md"
+source_file: "reports/upgrade-2026-09-06.md"
 type: "document"
-community: "wazuh_client.py"
+community: "Community 839"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/wazuh_clientpy
+  - community/Community_839
 ---
 
 # Summary line
 
 ## Connections
-- [[AgentShroud Sunday Upgrade — 2026-09-14 (dev account, agentshroud-bot@marvin)]] - `contains` [EXTRACTED]
+- [[AgentShroud Sunday Upgrade — 2026-09-06 (dev-only, read-only inventory → scoped fixes)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/wazuh_clientpy
+#graphify/document #graphify/EXTRACTED #community/Community_839

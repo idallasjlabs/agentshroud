@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "rationale"
-community: "ContextSegment"
+community: "Community 30"
 location: "L451"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/Community_30
 ---
 
 # Get all pending approval items.
 
 ## Connections
-- [[dot-get_pending()]] - `rationale_for` [EXTRACTED]
+- [[.get_pending()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextSegment
+#graphify/rationale #graphify/EXTRACTED #community/Community_30

@@ -1,17 +1,17 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "postmortem.md (2) (2)"
+community: "Community 1181"
 location: "L350"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/postmortemmd_2_2
+  - community/Community_1181
 ---
 
 # Priority 3: Screenshot Capture
 
 ## Connections
-- [[Future Enhancements]] - `contains` [EXTRACTED]
+- [[Future Enhancements_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/postmortemmd_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_1181

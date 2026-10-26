@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "ReportStore"
+community: "Community 56"
 location: "L259"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ReportStore
+  - community/Community_56
 ---
 
 # DifferentialPIIConfig
 
 ## Connections
-- [[dot-__init__()_164]] - `references` [EXTRACTED]
-- [[dot-__post_init__()_2]] - `method` [EXTRACTED]
-- [[A2APolicyEngine_1]] - `uses` [INFERRED]
-- [[A2AProxy]] - `uses` [INFERRED]
+- [[.__init__()_71]] - `references` [EXTRACTED]
+- [[.__post_init__()_4]] - `method` [EXTRACTED]
+- [[A2APolicyEngine_3]] - `uses` [INFERRED]
+- [[A2AProxy_1]] - `uses` [INFERRED]
 - [[Configuration for DifferentialPIIDetector.      Attributes         tool_result_]] - `rationale_for` [EXTRACTED]
 - [[DifferentialPIIConfig_1]] - `uses` [INFERRED]
-- [[DifferentialPIIDetector]] - `uses` [INFERRED]
+- [[DifferentialPIIDetector_1]] - `uses` [INFERRED]
 - [[TestAdversarialFormattingCaught]] - `uses` [INFERRED]
 - [[TestAsymmetricFloor]] - `uses` [INFERRED]
 - [[TestDeterministicPresidioInit]] - `uses` [INFERRED]
@@ -38,4 +38,4 @@ tags:
 - [[test_process_inbound_request_binary_part_is_forwarded_unscanned_and_flagged()]] - `calls` [EXTRACTED]
 - [[test_process_inbound_request_pii_in_message_is_redacted_before_forwarding()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ReportStore
+#graphify/code #graphify/INFERRED #community/Community_56

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "rationale"
-community: "agentshroud-blueteam/SKILL.md (2)"
+community: "Community 24"
 location: "L137"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_2
+  - community/Community_24
 ---
 
 # Compile all filter patterns into regex objects.
 
 ## Connections
-- [[dot-_compile_patterns()_1]] - `rationale_for` [EXTRACTED]
+- [[._compile_patterns()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_24

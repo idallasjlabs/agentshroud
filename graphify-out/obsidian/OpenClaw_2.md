@@ -1,16 +1,18 @@
 ---
-source_file: "docker/config/hermes/SOUL.md"
+source_file: "docs/project/glossary.md"
 type: "concept"
-community: "test_ptt_state.c"
+community: "Community 91"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_ptt_statec
+  - community/Community_91
 ---
 
 # OpenClaw
 
 ## Connections
-- [[hermesSOUL]] - `references` [EXTRACTED]
+- [[AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]] - `references` [EXTRACTED]
+- [[OPENCLAW_SETUP]] - `references` [EXTRACTED]
+- [[TELEGRAM_GMAIL_SETUP]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_ptt_statec
+#graphify/concept #graphify/EXTRACTED #community/Community_91

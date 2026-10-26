@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "Community 72"
 location: "L208"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/Community_72
 ---
 
 # Result of PII sanitization
 
 ## Connections
-- [[RedactionResult_2]] - `rationale_for` [EXTRACTED]
+- [[RedactionResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

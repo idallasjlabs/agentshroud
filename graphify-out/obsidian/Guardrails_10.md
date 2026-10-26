@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ab/SKILL.md"
+source_file: ".agents/skills/i-release/SKILL.md"
 type: "document"
-community: "Skill: Audit Branch (AB) — Merge Regression Detection (3)"
-location: "L226"
+community: "Community 770"
+location: "L197"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Audit_Branch_AB__Merge_Regression_Detection_3
+  - community/Community_770
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill Audit Branch (AB) — Merge Regression Detection_1]] - `contains` [EXTRACTED]
+- [[Skill Release (i-release)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Detection_3
+#graphify/document #graphify/EXTRACTED #community/Community_770

@@ -1,24 +1,17 @@
 ---
-source_file: "skills/openclaw/trello/SKILL.md"
+source_file: "docker/config/hermes/skills/i-vulcan/README.md"
 type: "document"
-community: "TestFabricatedSecurityNotice (2) (2)"
-location: "L26"
+community: "Community 90"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice_2_2
+  - community/Community_90
 ---
 
 # Usage
 
 ## Connections
-- [[Add a comment to a card]] - `contains` [EXTRACTED]
-- [[Archive a card]] - `contains` [EXTRACTED]
-- [[Create a card]] - `contains` [EXTRACTED]
-- [[List boards]] - `contains` [EXTRACTED]
-- [[List cards in a list]] - `contains` [EXTRACTED]
-- [[List lists in a board]] - `contains` [EXTRACTED]
-- [[Move a card to another list]] - `contains` [EXTRACTED]
-- [[Trello Skill]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_90

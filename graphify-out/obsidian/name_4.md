@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/package.json"
+source_file: "docker/config/openclaw/skills/i-browser/package.json"
 type: "code"
-community: "Skill: Data Validation (DATA-VAL) (2)"
+community: "Community 909"
 location: "L2"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Data_Validation_DATA-VAL_2
+  - community/Community_909
 ---
 
 # name
 
 ## Connections
-- [[browser-fetchpackage.json]] - `contains` [EXTRACTED]
+- [[package.json_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL_2
+#graphify/code #graphify/EXTRACTED #community/Community_909

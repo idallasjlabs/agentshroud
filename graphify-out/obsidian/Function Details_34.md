@@ -1,20 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
 type: "document"
-community: "._process_connect"
-location: "L36"
+community: "Community 676"
+location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_process_connect
+  - community/Community_676
 ---
 
 # Function Details
 
 ## Connections
-- [[forward_to_agent(target, sanitized_content, ledger_id, metadata)]] - `contains` [EXTRACTED]
-- [[health_check(target)]] - `contains` [EXTRACTED]
-- [[resolve_target(request)]] - `contains` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[EgressFilterConfig._matches_any_pattern(domain, patterns)]] - `contains` [EXTRACTED]
+- [[EgressFilterConfig.from_environment()]] - `contains` [EXTRACTED]
+- [[EgressFilterConfig.get_effective_allowlist(agent_id)]] - `contains` [EXTRACTED]
+- [[EgressFilterConfig.is_denylisted(domain)]] - `contains` [EXTRACTED]
+- [[egress_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_process_connect
+#graphify/document #graphify/EXTRACTED #community/Community_676

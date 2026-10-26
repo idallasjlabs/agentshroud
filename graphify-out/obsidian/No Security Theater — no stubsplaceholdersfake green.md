@@ -1,13 +1,13 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: "approval_queue/__init__.py"
+community: "Community 1593"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/approval_queue/__init__py
+  - community/Community_1593
 ---
 
 # No Security Theater — no stubs/placeholders/fake green
 
-#graphify/rationale #graphify/EXTRACTED #community/approval_queue/__init__py
+#graphify/rationale #graphify/EXTRACTED #community/Community_1593

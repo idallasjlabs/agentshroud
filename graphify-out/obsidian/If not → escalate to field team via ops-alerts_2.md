@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
+source_file: ".cursor/agents/i-tw.md"
 type: "document"
-community: "soc.js"
-location: "L114"
+community: "Community 729"
+location: "L117"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_729
 ---
 
 # If not → escalate to field team via #ops-alerts
@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[API  Function Reference_2]] - `contains` [EXTRACTED]
 - [[Architecture Decision Record (ADR)_2]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-twSKILL]] - `contains` [EXTRACTED]
+- [[i-tw_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_729

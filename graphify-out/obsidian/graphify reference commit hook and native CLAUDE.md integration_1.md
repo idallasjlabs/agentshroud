@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/graphify/references/hooks.md"
+source_file: "docker/config/hermes/skills/graphify/references/hooks.md"
 type: "document"
-community: "Local-Model Job Quality Matrix"
+community: "Community 291"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Local-Model_Job_Quality_Matrix
+  - community/Community_291
 ---
 
 # graphify reference: commit hook and native CLAUDE.md integration
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[For git commit hook_1]] - `contains` [EXTRACTED]
 - [[For native CLAUDE.md integration_1]] - `contains` [EXTRACTED]
-- [[openclawskillsgraphifyreferenceshooks]] - `contains` [EXTRACTED]
-- [[openclawskillsgraphifyreferencesquery]] - `contains` [EXTRACTED]
+- [[hooks_1]] - `contains` [EXTRACTED]
+- [[query_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Local-Model_Job_Quality_Matrix
+#graphify/document #graphify/EXTRACTED #community/Community_291

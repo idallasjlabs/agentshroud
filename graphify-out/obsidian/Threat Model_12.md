@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
 type: "document"
-community: "Skill Creation Process"
+community: "Community 677"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Creation_Process
+  - community/Community_677
 ---
 
 # Threat Model
 
 ## Connections
-- [[oauth_security.py_1]] - `contains` [EXTRACTED]
+- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Creation_Process
+#graphify/document #graphify/EXTRACTED #community/Community_677

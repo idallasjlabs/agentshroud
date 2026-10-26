@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "All Dependencies.md (2)"
+community: "Community 84"
 location: "L4331"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd_2
+  - community/Community_84
 ---
 
 # Regression tests for Telegram HTML parse error caused by PII placeholders.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestParseModeStrippedAfterPIIRedaction]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/All_Dependenciesmd_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_84

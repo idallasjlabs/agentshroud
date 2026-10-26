@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_integrity.py"
 type: "rationale"
-community: "Incident: Conduit/Hermes instability 2026-10-16"
+community: "Community 207"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Incident_Conduit/Hermes_instability_2026-10-16
+  - community/Community_207
 ---
 
 # A report that is >48h old must not score above 1.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_vuln_stale_report_scores_1()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Incident_Conduit/Hermes_instability_2026-10-16
+#graphify/rationale #graphify/EXTRACTED #community/Community_207

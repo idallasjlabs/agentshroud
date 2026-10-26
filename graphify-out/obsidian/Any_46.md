@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "A2APolicyConfig"
-location: "L210"
+community: "Community 0"
+location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyConfig
+  - community/Community_0
 ---
 
 # Any
 
 ## Connections
-- [[dot-from_dict()_4]] - `references` [EXTRACTED]
+- [[get_sanitizer_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig
+#graphify/code #graphify/EXTRACTED #community/Community_0

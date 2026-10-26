@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "PipelineAction"
+community: "Community 2062"
 location: "L742"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/Community_2062
 ---
 
 # Multi-Runtime Support
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[10. Infrastructure & Runtime]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PipelineAction
+#graphify/document #graphify/EXTRACTED #community/Community_2062

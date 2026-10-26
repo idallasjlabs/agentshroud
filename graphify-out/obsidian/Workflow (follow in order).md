@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "_llm_init_emit_merge_json()"
+community: "Community 923"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_llm_init_emit_merge_json
+  - community/Community_923
 ---
 
 # Workflow (follow in order)
@@ -23,4 +23,4 @@ tags:
 - [[8) Verify and report]] - `contains` [EXTRACTED]
 - [[OpenClaw Host Hardening]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_llm_init_emit_merge_json
+#graphify/document #graphify/EXTRACTED #community/Community_923

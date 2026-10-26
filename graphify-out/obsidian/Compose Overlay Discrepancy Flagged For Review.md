@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-06-20260906-0808.md"
 type: "rationale"
-community: "All Dependencies.md"
+community: "Community 289"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/Community_289
 ---
 
 # Compose Overlay Discrepancy Flagged For Review
@@ -14,4 +14,4 @@ tags:
 - [[Five Previously-Unexercised Apply-Script Bugs]] - `conceptually_related_to` [INFERRED]
 - [[Prod BLOCKED Snapshot 20260906-0808]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/rationale #graphify/EXTRACTED #community/Community_289

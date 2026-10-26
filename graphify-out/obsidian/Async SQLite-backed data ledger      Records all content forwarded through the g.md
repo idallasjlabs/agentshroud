@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "Community 7"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # Async SQLite-backed data ledger      Records all content forwarded through the g
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DataLedger]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

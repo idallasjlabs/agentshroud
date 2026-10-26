@@ -1,20 +1,20 @@
 ---
-source_file: "docs/architecture/adr/ADR-003-two-network-container-isolation.md"
+source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "Route map (by router)"
-location: "L33"
+community: "Community 236"
+location: "L198"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Route_map_by_router
+  - community/Community_236
 ---
 
 # Consequences
 
 ## Connections
-- [[ADR-003 Two-Network Container Isolation]] - `contains` [EXTRACTED]
-- [[Mitigation_1]] - `contains` [EXTRACTED]
-- [[Negative Consequences_4]] - `contains` [EXTRACTED]
-- [[Positive Consequences_4]] - `contains` [EXTRACTED]
+- [[ADR-006 Multi-Runtime Container Support]] - `contains` [EXTRACTED]
+- [[Mitigation_2]] - `contains` [EXTRACTED]
+- [[Negative]] - `contains` [EXTRACTED]
+- [[Positive]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Route_map_by_router
+#graphify/document #graphify/EXTRACTED #community/Community_236

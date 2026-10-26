@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
+source_file: ".agents/agents/i-tw.md"
 type: "document"
-community: "OpenClaw Workspace Usage Guide"
-location: "L80"
+community: "Community 712"
+location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Workspace_Usage_Guide
+  - community/Community_712
 ---
 
 # Runbook — Operational Decision Tree
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[INFO Extracted 1,204 records → s3my-bucketlanding...]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_712

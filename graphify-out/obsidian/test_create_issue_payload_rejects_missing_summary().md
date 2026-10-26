@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_jira_dev_ticket.py"
 type: "code"
-community: "AgentShroud™ Brand Guidelines"
+community: "Community 188"
 location: "L217"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/Community_188
 ---
 
 # test_create_issue_payload_rejects_missing_summary()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_jira_dev_ticket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/code #graphify/EXTRACTED #community/Community_188

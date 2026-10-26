@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "DNSFilterConfig"
-location: "L656"
+community: "Community 78"
+location: "L660"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Community_78
 ---
 
 # Init config should seed auth profiles for cloud providers and Ollama in local mo
 
 ## Connections
-- [[dot-test_init_config_skips_anthropic_auth_seed_for_local_model()]] - `rationale_for` [EXTRACTED]
+- [[.test_init_config_skips_anthropic_auth_seed_for_local_model()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_78

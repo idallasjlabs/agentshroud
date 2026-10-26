@@ -1,11 +1,11 @@
 ---
 source_file: "docs/user-guide.md"
 type: "concept"
-community: "I - Information Disclosure"
+community: "Community 1249"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/I_-_Information_Disclosure
+  - community/Community_1249
 ---
 
 # Dashboard Overview (request volume, security events, audit trail)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SOC Command Center — Five Pillars]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/I_-_Information_Disclosure
+#graphify/concept #graphify/INFERRED #community/Community_1249

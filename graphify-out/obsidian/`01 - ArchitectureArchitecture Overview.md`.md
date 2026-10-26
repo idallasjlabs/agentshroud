@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-sav/SKILL.md"
+source_file: ".agents/agents/sav.md"
 type: "document"
-community: "migrate-cve-registry-ghsa.py"
-location: "L135"
+community: "Community 297"
+location: "L137"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/migrate-cve-registry-ghsapy
+  - community/Community_297
 ---
 
 # `01 - Architecture/Architecture Overview.md`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[REQUIRED NOTES — PRODUCE EVERY ONE OF THESE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy
+#graphify/document #graphify/EXTRACTED #community/Community_297

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/scripts/browse.py"
+source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "format_cve_report()"
+community: "Community 156"
 location: "L145"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/format_cve_report
+  - community/Community_156
 ---
 
 # Classify action risk level          Security: Determines if approval is needed
 
 ## Connections
-- [[dot-_classify_risk()_3]] - `rationale_for` [EXTRACTED]
+- [[._classify_risk()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/format_cve_report
+#graphify/rationale #graphify/EXTRACTED #community/Community_156

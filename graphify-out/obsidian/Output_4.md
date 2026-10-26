@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
+source_file: ".cursor/agents/apollo.md"
 type: "document"
-community: "Phase 1 — Raw Collection"
-location: "L354"
+community: "Community 1404"
+location: "L134"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_1__Raw_Collection
+  - community/Community_1404
 ---
 
 # Output
 
 ## Connections
-- [[AgentShroud Red Team Adversarial Tester_2]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection
+#graphify/document #graphify/EXTRACTED #community/Community_1404

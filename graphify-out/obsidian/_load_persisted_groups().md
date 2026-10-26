@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Function Details"
+community: "Community 223"
 location: "L314"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/Community_223
 ---
 
 # _load_persisted_groups()
 
 ## Connections
-- [[dot-init_auto_groups()]] - `calls` [EXTRACTED]
+- [[.init_auto_groups()]] - `calls` [EXTRACTED]
 - [[Group]] - `references` [EXTRACTED]
 - [[Read custom groups from disk.]] - `rationale_for` [EXTRACTED]
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Function_Details
+#graphify/code #graphify/EXTRACTED #community/Community_223

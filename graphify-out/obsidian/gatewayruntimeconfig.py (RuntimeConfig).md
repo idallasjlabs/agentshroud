@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/runtime/config.py"
 type: "code"
-community: "jira_weekly_review.py"
+community: "Community 240"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/jira_weekly_reviewpy
+  - community/Community_240
 ---
 
 # gateway/runtime/config.py (RuntimeConfig)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_runtime_engines.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/jira_weekly_reviewpy
+#graphify/code #graphify/EXTRACTED #community/Community_240

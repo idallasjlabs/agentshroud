@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
+community: "Community 16"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/Community_16
 ---
 
 # memory_integrity.py
 
 ## Connections
-- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
 - [[FileIntegrityRecord]] - `contains` [EXTRACTED]
-- [[MemoryIntegrityConfig_1]] - `imports` [EXTRACTED]
+- [[MemoryIntegrityConfig]] - `imports` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `contains` [EXTRACTED]
 - [[ModificationSource]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/Community_16

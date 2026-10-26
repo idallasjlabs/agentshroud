@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/dashboard_bridge.py"
 type: "rationale"
-community: "test_cron_jobs_prompts.py"
+community: "Community 591"
 location: "L73"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_cron_jobs_promptspy
+  - community/Community_591
 ---
 
 # Read up to the end of the request's header block (\\r\\n\\r\\n).      Returns (h
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_read_request_headers()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_cron_jobs_promptspy
+#graphify/rationale #graphify/EXTRACTED #community/Community_591

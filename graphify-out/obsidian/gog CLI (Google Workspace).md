@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/gog/SKILL.md"
 type: "concept"
-community: "ssh-configuration.md"
+community: "Community 865"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ssh-configurationmd
+  - community/Community_865
 ---
 
 # gog CLI (Google Workspace)
 
 ## Connections
-- [[gogSKILL]] - `implements` [EXTRACTED]
+- [[SKILL_220]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ssh-configurationmd
+#graphify/concept #graphify/EXTRACTED #community/Community_865

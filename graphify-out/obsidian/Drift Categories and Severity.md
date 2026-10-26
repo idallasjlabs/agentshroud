@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "Known Log Messages"
+community: "Community 537"
 location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Known_Log_Messages
+  - community/Community_537
 ---
 
 # Drift Categories and Severity
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[drift_detector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Known_Log_Messages
+#graphify/document #graphify/EXTRACTED #community/Community_537

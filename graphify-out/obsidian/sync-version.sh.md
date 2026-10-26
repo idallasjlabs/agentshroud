@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-version.sh"
 type: "code"
-community: "TestScoreVulnerabilityManagement"
+community: "Community 1170"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestScoreVulnerabilityManagement
+  - community/Community_1170
 ---
 
 # sync-version.sh
@@ -16,4 +16,4 @@ tags:
 - [[check_or_fix()]] - `defines` [EXTRACTED]
 - [[sync-version.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestScoreVulnerabilityManagement
+#graphify/code #graphify/EXTRACTED #community/Community_1170

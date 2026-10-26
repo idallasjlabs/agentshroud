@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/redteam/05-credential-isolation.md"
 type: "document"
-community: "dns_filter.py"
+community: "Community 609"
 location: "L107"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dns_filterpy
+  - community/Community_609
 ---
 
 # Step 4: Implement transparent credential injection in the gateway
 
 ## Connections
-- [[Remediation_4]] - `contains` [EXTRACTED]
+- [[Remediation_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dns_filterpy
+#graphify/document #graphify/EXTRACTED #community/Community_609

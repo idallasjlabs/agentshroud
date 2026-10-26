@@ -1,17 +1,17 @@
 ---
-source_file: "scripts/README.md"
+source_file: "gateway/README.md"
 type: "document"
-community: "version_routes.py"
-location: "L47"
+community: "Community 659"
+location: "L118"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/Community_659
 ---
 
 # Implementation Status
 
 ## Connections
-- [[Utility Scripts]] - `contains` [EXTRACTED]
+- [[Gateway Layer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/version_routespy
+#graphify/document #graphify/EXTRACTED #community/Community_659

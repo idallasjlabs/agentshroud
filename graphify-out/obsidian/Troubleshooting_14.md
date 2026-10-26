@@ -1,22 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: ".github/agents/i-icloud.agent.md"
 type: "document"
-community: "setup-secrets.sh (2)"
-location: "L281"
+community: "Community 554"
+location: "L147"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/setup-secretssh_2
+  - community/Community_554
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Action requires approval but none granted_2]] - `contains` [EXTRACTED]
-- [[Browser timeout_3]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected_3]] - `contains` [EXTRACTED]
-- [[Rate limit exceeded_2]] - `contains` [EXTRACTED]
-- [[URL not in allowlist_3]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_2]] - `contains` [EXTRACTED]
+- [[401 Unauthorized_3]] - `contains` [EXTRACTED]
+- [[CalendarContacts not found_3]] - `contains` [EXTRACTED]
+- [[Connection timeout_3]] - `contains` [EXTRACTED]
+- [[iCloud Services_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/setup-secretssh_2
+#graphify/document #graphify/EXTRACTED #community/Community_554

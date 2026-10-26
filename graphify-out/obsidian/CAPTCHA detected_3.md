@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: ".github/agents/i-browser.agent.md"
 type: "document"
-community: "setup-secrets.sh (2)"
-location: "L295"
+community: "Community 449"
+location: "L300"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/setup-secretssh_2
+  - community/Community_449
 ---
 
 # "CAPTCHA detected"
 
 ## Connections
-- [[Troubleshooting_14]] - `contains` [EXTRACTED]
+- [[Troubleshooting_13]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/setup-secretssh_2
+#graphify/document #graphify/EXTRACTED #community/Community_449

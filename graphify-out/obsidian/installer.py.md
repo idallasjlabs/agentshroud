@@ -1,17 +1,25 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
-type: "document"
-community: "agentshroud-gateway container (starts first)"
+source_file: "gateway/web/installer.py"
+type: "code"
+community: "Community 918"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-gateway_container_starts_first
+  - community/Community_918
 ---
 
-# installer.py.md
+# installer.py
 
 ## Connections
-- [[installer.py_1]] - `contains` [EXTRACTED]
+- [[InstallConfig]] - `contains` [EXTRACTED]
+- [[PrerequisiteCheck]] - `contains` [EXTRACTED]
+- [[check_prerequisites()]] - `contains` [EXTRACTED]
+- [[detect_runtime()]] - `imports` [EXTRACTED]
+- [[get_runtimes()]] - `contains` [EXTRACTED]
+- [[get_security_comparison()]] - `imports` [EXTRACTED]
+- [[installer_page()]] - `contains` [EXTRACTED]
+- [[security.py]] - `imports_from` [EXTRACTED]
+- [[start_install()]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway_container_starts_first
+#graphify/code #graphify/EXTRACTED #community/Community_918

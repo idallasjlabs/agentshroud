@@ -1,19 +1,21 @@
 ---
-source_file: "docs/architecture/adr/ADR-007-zero-config-security.md"
+source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
 type: "document"
-community: "Bear Notes"
+community: "Community 859"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bear_Notes
+  - community/Community_859
 ---
 
 # Decision
 
 ## Connections
-- [[ADR-007 Zero-Config Security (docker-compose up = fully secured)]] - `contains` [EXTRACTED]
-- [[Auto-Configuration Features]] - `contains` [EXTRACTED]
-- [[Configuration Hierarchy]] - `contains` [EXTRACTED]
+- [[ADR-008-progressive-trust-levels]] - `contains` [EXTRACTED]
+- [[ADR-008 Progressive Trust Levels for Agents]] - `contains` [EXTRACTED]
+- [[Progressive Controls]] - `contains` [EXTRACTED]
+- [[Trust Calculation]] - `contains` [EXTRACTED]
+- [[Trust Levels (0-4)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bear_Notes
+#graphify/document #graphify/EXTRACTED #community/Community_859

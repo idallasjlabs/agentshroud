@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-data/README.md"
+source_file: ".agents/skills/atlas/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md (2)"
+community: "Community 2065"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd_2
+  - community/Community_2065
 ---
 
 # Usage
 
 ## Connections
-- [[Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_2
+#graphify/document #graphify/EXTRACTED #community/Community_2065

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tw/SKILL.md"
+source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "hermes/SOUL.md"
-location: "L22"
+community: "Community 419"
+location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/SOULmd
+  - community/Community_419
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Technical Writer (TW)_2]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/SOULmd
+#graphify/document #graphify/EXTRACTED #community/Community_419

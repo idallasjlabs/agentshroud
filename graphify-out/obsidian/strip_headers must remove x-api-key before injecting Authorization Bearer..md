@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "rationale"
-community: "multi_host_test.py"
+community: "Community 939"
 location: "L90"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/multi_host_testpy
+  - community/Community_939
 ---
 
 # strip_headers must remove x-api-key before injecting Authorization: Bearer.
 
 ## Connections
-- [[dot-test_strip_headers_removes_conflicting_header()]] - `rationale_for` [EXTRACTED]
+- [[.test_strip_headers_removes_conflicting_header()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/multi_host_testpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_939

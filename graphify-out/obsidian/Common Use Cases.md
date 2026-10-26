@@ -1,12 +1,12 @@
 ---
 source_file: "branding/QUICK-REFERENCE.md"
 type: "document"
-community: "BotConfig (3)"
+community: "Community 586"
 location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BotConfig_3
+  - community/Community_586
 ---
 
 # Common Use Cases
@@ -18,4 +18,4 @@ tags:
 - [[Favicon]] - `contains` [EXTRACTED]
 - [[Website Header]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BotConfig_3
+#graphify/document #graphify/EXTRACTED #community/Community_586

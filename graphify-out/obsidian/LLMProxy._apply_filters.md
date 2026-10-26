@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "test_voice_stt_model_ab.py"
+community: "Community 129"
 location: "L1832-L1852"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_stt_model_abpy
+  - community/Community_129
 ---
 
 # LLMProxy._apply_filters
@@ -15,4 +15,4 @@ tags:
 - [[LLMProxy._filter_outbound]] - `calls` [EXTRACTED]
 - [[LLMProxy._filter_streaming_event]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_stt_model_abpy
+#graphify/code #graphify/EXTRACTED #community/Community_129

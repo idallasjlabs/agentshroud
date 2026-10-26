@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "AuditEvent"
+community: "Community 408"
 location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditEvent
+  - community/Community_408
 ---
 
 # Quota Failover
@@ -16,6 +16,6 @@ tags:
 - [[Failover controls]] - `contains` [EXTRACTED]
 - [[Failover notifications]] - `contains` [EXTRACTED]
 - [[Stats tracked]] - `contains` [EXTRACTED]
-- [[llm_proxy.py_1]] - `contains` [EXTRACTED]
+- [[llm_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditEvent
+#graphify/document #graphify/EXTRACTED #community/Community_408

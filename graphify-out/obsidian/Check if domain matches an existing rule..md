@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "SkillGuard"
+community: "Community 93"
 location: "L338"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/Community_93
 ---
 
 # Check if domain matches an existing rule.
 
 ## Connections
-- [[dot-_check_existing_rule()]] - `rationale_for` [EXTRACTED]
+- [[._check_existing_rule()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SkillGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_93

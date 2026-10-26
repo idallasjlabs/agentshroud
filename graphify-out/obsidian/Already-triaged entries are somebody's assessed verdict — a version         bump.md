@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_auto_remediate_cves.py"
 type: "rationale"
-community: "test_daily_cve_report.py (2)"
+community: "Community 261"
 location: "L115"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy_2
+  - community/Community_261
 ---
 
 # Already-triaged entries are somebody's assessed verdict — a version         bump
 
 ## Connections
-- [[dot-test_only_under_review_entries_are_considered()]] - `rationale_for` [EXTRACTED]
+- [[.test_only_under_review_entries_are_considered()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_daily_cve_reportpy_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_261

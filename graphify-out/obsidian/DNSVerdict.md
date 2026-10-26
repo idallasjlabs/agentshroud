@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "NetworkSecurityFinding"
+community: "Community 72"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/Community_72
 ---
 
 # DNSVerdict
 
 ## Connections
-- [[dot-check()_5]] - `references` [EXTRACTED]
+- [[.check()_4]] - `references` [EXTRACTED]
 - [[MockDNSVerdict]] - `shares_data_with` [AMBIGUOUS]
-- [[dns_filter.py_2]] - `contains` [EXTRACTED]
+- [[dns_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/Community_72

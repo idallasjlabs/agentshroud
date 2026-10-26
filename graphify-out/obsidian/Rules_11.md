@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
+source_file: ".agents/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Slack Channel Setup"
-location: "L28"
+community: "Community 746"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Slack_Channel_Setup
+  - community/Community_746
 ---
 
 # Rules
 
 ## Connections
-- [[Skill UI Expert (UI)_2]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup
+#graphify/document #graphify/EXTRACTED #community/Community_746

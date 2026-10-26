@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-apollo/README.md"
+source_file: ".agents/skills/i-mcpm/README.md"
 type: "document"
-community: "SOC Command Center — Five Pillars"
+community: "Community 117"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SOC_Command_Center__Five_Pillars
+  - community/Community_117
 ---
 
 # Related Skills
 
 ## Connections
-- [[Apollo — Audio Systems Producer]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SOC_Command_Center__Five_Pillars
+#graphify/document #graphify/EXTRACTED #community/Community_117

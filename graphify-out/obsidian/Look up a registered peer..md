@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "rationale"
-community: "api.py"
+community: "Community 44"
 location: "L227"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apipy
+  - community/Community_44
 ---
 
 # Look up a registered peer.
 
 ## Connections
-- [[dot-get_peer()]] - `rationale_for` [EXTRACTED]
+- [[.get_peer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apipy
+#graphify/rationale #graphify/EXTRACTED #community/Community_44

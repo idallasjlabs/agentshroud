@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "SecurityPipeline (3)"
+community: "Community 83"
 location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline_3
+  - community/Community_83
 ---
 
 # SkillsManifest
 
 ## Connections
-- [[dot-by_name()]] - `method` [EXTRACTED]
-- [[dot-from_source()]] - `method` [EXTRACTED]
-- [[dot-to_dict()_14]] - `method` [EXTRACTED]
-- [[dot-to_json()]] - `method` [EXTRACTED]
+- [[.by_name()]] - `method` [EXTRACTED]
+- [[.from_source()]] - `method` [EXTRACTED]
+- [[.to_dict()_16]] - `method` [EXTRACTED]
+- [[.to_json()]] - `method` [EXTRACTED]
 - [[In-memory representation of the skillsagentsMCP manifest.]] - `rationale_for` [EXTRACTED]
-- [[Path_27]] - `uses` [INFERRED]
-- [[Path_61]] - `uses` [INFERRED]
-- [[ScanResult_2]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `shares_data_with` [EXTRACTED]
+- [[Path_22]] - `uses` [INFERRED]
+- [[Path_40]] - `uses` [INFERRED]
+- [[ScanResult_3]] - `uses` [INFERRED]
+- [[SkillGuard]] - `shares_data_with` [EXTRACTED]
 - [[TestClient_1]] - `uses` [INFERRED]
 - [[TestDeployDryRun]] - `uses` [INFERRED]
 - [[TestDeployManifest]] - `uses` [INFERRED]
@@ -30,7 +30,7 @@ tags:
 - [[TestSkillsReloadEndpoint]] - `uses` [INFERRED]
 - [[TestValidateManifest]] - `uses` [INFERRED]
 - [[_skills_reload_impl()]] - `calls` [EXTRACTED]
-- [[api.py_2]] - `imports` [EXTRACTED]
+- [[api.py]] - `imports` [EXTRACTED]
 - [[deploy_manifest()]] - `references` [EXTRACTED]
 - [[manifest.py]] - `contains` [EXTRACTED]
 - [[plan_deploy()]] - `references` [EXTRACTED]
@@ -38,4 +38,4 @@ tags:
 - [[test_skills_manifest_sync.py]] - `imports` [EXTRACTED]
 - [[validate_manifest()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_3
+#graphify/code #graphify/EXTRACTED #community/Community_83

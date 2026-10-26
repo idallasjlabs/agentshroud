@@ -1,17 +1,17 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "AgentShroud Agentic OS"
+community: "Community 231"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Agentic_OS
+  - community/Community_231
 ---
 
 # Vision
 
 ## Connections
-- [[Brand Identity_2]] - `contains` [EXTRACTED]
+- [[Brand Identity_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Agentic_OS
+#graphify/document #graphify/EXTRACTED #community/Community_231

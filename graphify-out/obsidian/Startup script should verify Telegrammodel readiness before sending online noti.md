@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "DNSFilterConfig"
+community: "Community 78"
 location: "L369"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Community_78
 ---
 
 # Startup script should verify Telegram/model readiness before sending online noti
 
 ## Connections
-- [[dot-test_startup_notifications_wait_for_runtime_readiness()]] - `rationale_for` [EXTRACTED]
+- [[.test_startup_notifications_wait_for_runtime_readiness()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_78

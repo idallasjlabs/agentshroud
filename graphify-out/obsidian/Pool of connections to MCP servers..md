@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "test_bots_ssh_exec_wrapper.py"
+community: "Community 140"
 location: "L199"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_bots_ssh_exec_wrapperpy
+  - community/Community_140
 ---
 
 # Pool of connections to MCP servers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ConnectionPool]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_140

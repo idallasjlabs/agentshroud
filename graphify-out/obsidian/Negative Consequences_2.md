@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
+source_file: "docs/architecture/adr/ADR-003-two-network-container-isolation.md"
 type: "document"
-community: "Apple Reminders CLI (remindctl)"
-location: "L72"
+community: "Community 857"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Reminders_CLI_remindctl
+  - community/Community_857
 ---
 
 # Negative Consequences
 
 ## Connections
-- [[Consequences_3]] - `contains` [EXTRACTED]
+- [[Consequences_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Reminders_CLI_remindctl
+#graphify/document #graphify/EXTRACTED #community/Community_857

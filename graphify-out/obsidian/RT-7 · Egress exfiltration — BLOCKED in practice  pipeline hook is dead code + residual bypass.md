@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/ws-e-audit-v1.2.md"
 type: "document"
-community: "GSDE&G Skills Reference (2)"
+community: "Community 734"
 location: "L113"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Skills_Reference_2
+  - community/Community_734
 ---
 
 # RT-7 · Egress exfiltration — **BLOCKED in practice / pipeline hook is dead code + residual bypass**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Part 2 — Red-Team Attack Run (SCRUM-73)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference_2
+#graphify/document #graphify/EXTRACTED #community/Community_734

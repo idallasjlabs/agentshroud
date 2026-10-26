@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "telegram_api_proxy (/telegram-api/{path})"
+community: "Community 295"
 location: "L594-L596"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path
+  - community/Community_295
 ---
 
 # _PROFILE_FLAG
@@ -17,4 +17,4 @@ tags:
 - [[asb rebuild fullhermes]] - `shares_data_with` [EXTRACTED]
 - [[asb up fullhermes]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path
+#graphify/code #graphify/EXTRACTED #community/Community_295

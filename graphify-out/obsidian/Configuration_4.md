@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
+source_file: ".omp/agents/icloud.md"
 type: "document"
-community: "Mode A — Single task (2)"
-location: "L125"
+community: "Community 680"
+location: "L126"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_2
+  - community/Community_680
 ---
 
 # Configuration
 
 ## Connections
-- [[iCloud Services]] - `contains` [EXTRACTED]
+- [[iCloud Services_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_2
+#graphify/document #graphify/EXTRACTED #community/Community_680

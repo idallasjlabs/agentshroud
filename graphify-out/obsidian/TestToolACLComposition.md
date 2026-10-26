@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "soc/router.py"
+community: "Community 11"
 location: "L270"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/soc/routerpy
+  - community/Community_11
 ---
 
 # TestToolACLComposition
 
 ## Connections
-- [[dot-test_enforcer_without_trust_manager_unchanged()]] - `method` [EXTRACTED]
-- [[dot-test_trust_deny_wins_over_acl()]] - `method` [EXTRACTED]
-- [[dot-test_unknown_tool_falls_through_to_acl()]] - `method` [EXTRACTED]
-- [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
+- [[.test_enforcer_without_trust_manager_unchanged()]] - `method` [EXTRACTED]
+- [[.test_trust_deny_wins_over_acl()]] - `method` [EXTRACTED]
+- [[.test_unknown_tool_falls_through_to_acl()]] - `method` [EXTRACTED]
+- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
 - [[PromotionThreshold]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
@@ -25,4 +25,4 @@ tags:
 - [[ViolationType]] - `uses` [INFERRED]
 - [[test_progressive_trust_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/soc/routerpy
+#graphify/code #graphify/INFERRED #community/Community_11

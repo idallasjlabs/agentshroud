@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "hermes/workspace/jira_dev_ticket.py"
+community: "Community 193"
 location: "L278"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/workspace/jira_dev_ticketpy
+  - community/Community_193
 ---
 
 # Gateway Integration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Integration with AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/workspace/jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/Community_193

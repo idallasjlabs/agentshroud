@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/red-team-assessment-v1.2.0.md"
 type: "document"
-community: "Error Index.md (4)"
+community: "Community 1005"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd_4
+  - community/Community_1005
 ---
 
 # AgentShroud v1.2.0 — Red Team Assessment
@@ -21,4 +21,4 @@ tags:
 - [[§5 — Acceptance Rationales (Signed Off)]] - `contains` [EXTRACTED]
 - [[§6 — Regression Test Index]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_4
+#graphify/document #graphify/EXTRACTED #community/Community_1005

@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "test_soc_services_coverage.py"
+community: "Community 80"
 location: "L308"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_services_coveragepy
+  - community/Community_80
 ---
 
 # TestCheckOpenscap
 
 ## Connections
-- [[dot-test_not_installed()_3]] - `method` [EXTRACTED]
-- [[dot-test_running_when_content_present()]] - `method` [EXTRACTED]
-- [[dot-test_stopped_when_content_missing()]] - `method` [EXTRACTED]
+- [[.test_not_installed()_4]] - `method` [EXTRACTED]
+- [[.test_running_when_content_present()]] - `method` [EXTRACTED]
+- [[.test_stopped_when_content_missing()]] - `method` [EXTRACTED]
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[_check_openscap]] - `calls` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_services_coveragepy
+#graphify/code #graphify/EXTRACTED #community/Community_80

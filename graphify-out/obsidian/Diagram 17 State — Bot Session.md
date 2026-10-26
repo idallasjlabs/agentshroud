@@ -1,13 +1,13 @@
 ---
 source_file: "docs/diagrams/images/diagram-17-state-bot-session.svg"
 type: "image"
-community: "audio_init() — mic/speaker codec init"
+community: "Community 1741"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/audio_init__mic/speaker_codec_init
+  - community/Community_1741
 ---
 
 # Diagram 17: State — Bot Session
 
-#graphify/image #graphify/EXTRACTED #community/audio_init__mic/speaker_codec_init
+#graphify/image #graphify/EXTRACTED #community/Community_1741

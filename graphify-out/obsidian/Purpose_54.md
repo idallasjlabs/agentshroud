@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-defense/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "soc.js (4)"
+community: "Community 582"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs_4
+  - community/Community_582
 ---
 
 # Purpose
 
 ## Connections
-- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs_4
+#graphify/document #graphify/EXTRACTED #community/Community_582

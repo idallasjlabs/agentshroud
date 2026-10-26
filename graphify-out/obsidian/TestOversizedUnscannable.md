@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "FalcoAlertWatcher"
+community: "Community 133"
 location: "L329"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/FalcoAlertWatcher
+  - community/Community_133
 ---
 
 # TestOversizedUnscannable
 
 ## Connections
-- [[dot-test_at_limit_file_scans_normally()]] - `method` [EXTRACTED]
-- [[dot-test_oversized_file_blocks()]] - `method` [EXTRACTED]
+- [[.test_at_limit_file_scans_normally()]] - `method` [EXTRACTED]
+- [[.test_oversized_file_blocks()]] - `method` [EXTRACTED]
 - [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_4]] - `uses` [INFERRED]
+- [[ScanResult_2]] - `uses` [INFERRED]
 - [[Severity]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[SkillGuard]] - `uses` [INFERRED]
 - [[SkillScanError]] - `uses` [INFERRED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/FalcoAlertWatcher
+#graphify/code #graphify/INFERRED #community/Community_133

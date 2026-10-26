@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auto_remediate_cves.py"
 type: "rationale"
-community: "test_daily_cve_report.py"
+community: "Community 261"
 location: "L153"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/Community_261
 ---
 
 # Reading and rewriting docker/versions.env.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestVersionPinIO]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_261

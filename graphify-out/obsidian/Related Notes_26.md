@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
+source_file: "docs/vault/03 - Configuration/ssh-config.md"
 type: "document"
-community: "Mode A — Single task (3)"
-location: "L192"
+community: "Community 799"
+location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_3
+  - community/Community_799
 ---
 
 # Related Notes
 
 ## Connections
-- [[Shutdown & Recovery]] - `contains` [EXTRACTED]
+- [[SSH Config]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_3
+#graphify/document #graphify/EXTRACTED #community/Community_799

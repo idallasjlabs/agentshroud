@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/LOCAL_LLM_REVIEW.md"
 type: "document"
-community: "iCloud Services"
+community: "Community 798"
 location: "L150"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/Community_798
 ---
 
 # Multi-model mode (`local-multi`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[6. Three Local Backends]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/Community_798

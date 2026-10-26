@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
 type: "document"
-community: "Step-by-Step Deployment"
-location: "L128"
+community: "Community 409"
+location: "L345"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Step-by-Step_Deployment
+  - community/Community_409
 ---
 
 # Related
 
 ## Connections
-- [[middleware.py_2]] - `contains` [EXTRACTED]
+- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Deployment
+#graphify/document #graphify/EXTRACTED #community/Community_409

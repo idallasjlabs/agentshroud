@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "AgentTarget"
-location: "L52"
+community: "Community 7"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/Community_7
 ---
 
 # prompt_guard()
 
 ## Connections
-- [[PromptGuard_1]] - `calls` [EXTRACTED]
-- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/Community_7

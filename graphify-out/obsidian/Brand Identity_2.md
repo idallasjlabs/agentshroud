@@ -1,21 +1,17 @@
 ---
-source_file: "branding/guidelines/brand-guidelines.md"
+source_file: "docker/config/openclaw/workspace/BRAND.md"
 type: "document"
-community: "AgentShroud Agentic OS"
+community: "Community 192"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Agentic_OS
+  - community/Community_192
 ---
 
 # Brand Identity
 
 ## Connections
-- [[AgentShroud Brand Guidelines]] - `contains` [EXTRACTED]
-- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
-- [[Mission]] - `contains` [EXTRACTED]
-- [[Values_1]] - `contains` [EXTRACTED]
-- [[Vision]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Agentic_OS
+#graphify/document #graphify/EXTRACTED #community/Community_192

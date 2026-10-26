@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/graphify/references/update.md"
+source_file: ".agents/skills/graphify/references/update.md"
 type: "document"
-community: "10. Troubleshooting"
+community: "Community 335"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/10_Troubleshooting
+  - community/Community_335
 ---
 
 # graphify reference: incremental update and cluster-only
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[For --cluster-only]] - `contains` [EXTRACTED]
 - [[For --update (incremental re-extraction)]] - `contains` [EXTRACTED]
-- [[hermesskillsgraphifyreferencesquery]] - `contains` [EXTRACTED]
-- [[hermesskillsgraphifyreferencesupdate]] - `contains` [EXTRACTED]
+- [[query]] - `contains` [EXTRACTED]
+- [[update]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/Community_335

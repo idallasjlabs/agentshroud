@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "test_soc_bots.py"
+community: "Community 8"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/Community_8
 ---
 
 # GroupRole
 
 ## Connections
-- [[dot-can_use_high_risk()]] - `method` [EXTRACTED]
-- [[dot-get_all_roles()]] - `references` [EXTRACTED]
-- [[dot-get_role()]] - `references` [EXTRACTED]
-- [[dot-rank()]] - `method` [EXTRACTED]
-- [[dot-set_role()]] - `references` [EXTRACTED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[.can_use_high_risk()]] - `method` [EXTRACTED]
+- [[.get_all_roles()]] - `references` [EXTRACTED]
+- [[.get_role()]] - `references` [EXTRACTED]
+- [[.rank()]] - `method` [EXTRACTED]
+- [[.set_role()]] - `references` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[Per-group roles for Telegram group workspace members.      Hierarchy (highest to]] - `rationale_for` [EXTRACTED]
 - [[TestGroupRoleProperties]] - `uses` [INFERRED]
 - [[TestGroupRoleResolver]] - `uses` [INFERRED]
@@ -28,8 +28,8 @@ tags:
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[ToolRateLimit]] - `uses` [INFERRED]
 - [[group_rbac.py]] - `contains` [EXTRACTED]
-- [[str_3]] - `inherits` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 - [[test_group_rbac.py]] - `imports` [EXTRACTED]
 - [[tool_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/EXTRACTED #community/Community_8

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Development Workflow: Read-Only Filesystem Strategy"
+community: "Community 285"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Development_Workflow_Read-Only_Filesystem_Strategy
+  - community/Community_285
 ---
 
 # Google Services Setup - Calendar, Contacts, Keep
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[GOOGLE-SERVICES-SETUP]] - `contains` [EXTRACTED]
 - [[✅ Quick Start Command]] - `contains` [EXTRACTED]
-- [[🎯 Next Steps]] - `contains` [EXTRACTED]
+- [[🎯 Next Steps_1]] - `contains` [EXTRACTED]
 - [[📅 Google Calendar (CalDAV)]] - `contains` [EXTRACTED]
 - [[📊 Comparison CalDAV vs OAuth2]] - `contains` [EXTRACTED]
 - [[📝 Google Keep (Notes)]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[🚀 Recommended Approach]] - `contains` [EXTRACTED]
 - [[🛠️ OAuth2 Setup (If Needed)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read-Only_Filesystem_Strategy
+#graphify/document #graphify/EXTRACTED #community/Community_285

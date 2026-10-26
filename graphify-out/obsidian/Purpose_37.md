@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-apollo/README.md"
+source_file: "docker/config/hermes/skills/i-apollo/README.md"
 type: "document"
-community: "SOC Command Center — Five Pillars"
+community: "Community 90"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SOC_Command_Center__Five_Pillars
+  - community/Community_90
 ---
 
 # Purpose
 
 ## Connections
-- [[Apollo — Audio Systems Producer]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SOC_Command_Center__Five_Pillars
+#graphify/document #graphify/EXTRACTED #community/Community_90

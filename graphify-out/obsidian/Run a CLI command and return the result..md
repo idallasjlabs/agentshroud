@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "MiddlewareManager (6)"
+community: "Community 225"
 location: "L44"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_6
+  - community/Community_225
 ---
 
 # Run a CLI command and return the result.
 
 ## Connections
-- [[dot-_run()_2]] - `rationale_for` [EXTRACTED]
+- [[._run()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_6
+#graphify/rationale #graphify/EXTRACTED #community/Community_225

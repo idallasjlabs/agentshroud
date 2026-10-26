@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md"
 type: "document"
-community: "02-infrastructure.md (2)"
+community: "Community 357"
 location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/02-infrastructuremd_2
+  - community/Community_357
 ---
 
 # MEDIUM Findings
@@ -17,4 +17,4 @@ tags:
 - [[R3-M3 Stale Version String in Root Dashboard HTML]] - `contains` [EXTRACTED]
 - [[Round 3 New Findings]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/02-infrastructuremd_2
+#graphify/document #graphify/EXTRACTED #community/Community_357

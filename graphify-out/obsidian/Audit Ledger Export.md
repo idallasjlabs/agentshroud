@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/incident-response.md"
 type: "document"
-community: "Security Verification Report"
+community: "Community 615"
 location: "L143"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Verification_Report
+  - community/Community_615
 ---
 
 # Audit Ledger Export
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[5. Evidence Preservation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Verification_Report
+#graphify/document #graphify/EXTRACTED #community/Community_615

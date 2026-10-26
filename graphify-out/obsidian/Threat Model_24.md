@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
 type: "document"
-community: "trivy_report.py"
+community: "Community 569"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/trivy_reportpy
+  - community/Community_569
 ---
 
 # Threat Model
 
 ## Connections
-- [[canary.py_2]] - `contains` [EXTRACTED]
+- [[subagent_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/trivy_reportpy
+#graphify/document #graphify/EXTRACTED #community/Community_569

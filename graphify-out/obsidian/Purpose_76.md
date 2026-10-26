@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
+source_file: "docker/config/openclaw/skills/i-atlas/README.md"
 type: "document"
-community: "Mode A — Single task (3)"
-location: "L15"
+community: "Community 1226"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_3
+  - community/Community_1226
 ---
 
 # Purpose
 
 ## Connections
-- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_3
+#graphify/document #graphify/EXTRACTED #community/Community_1226

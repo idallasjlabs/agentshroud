@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_browser_security.py"
+source_file: "gateway/tests/test_context_integrity.py"
 type: "code"
-community: "AgentShroud™ README"
-location: "L26"
+community: "Community 22"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_README
+  - community/Community_22
 ---
 
 # guard()
 
 ## Connections
-- [[BrowserSecurityGuard]] - `calls` [EXTRACTED]
-- [[test_browser_security.py]] - `contains` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[test_context_integrity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_README
+#graphify/code #graphify/EXTRACTED #community/Community_22

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/graphify/references/exports.md"
+source_file: ".agents/skills/graphify/references/exports.md"
 type: "document"
-community: "10. Troubleshooting"
+community: "Community 335"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/10_Troubleshooting
+  - community/Community_335
 ---
 
 # graphify reference: extra exports and benchmark
@@ -18,7 +18,7 @@ tags:
 - [[Step 7c - GraphML export (only if --graphml flag)]] - `contains` [EXTRACTED]
 - [[Step 7d - MCP server (only if --mcp flag)]] - `contains` [EXTRACTED]
 - [[Step 8 - Token reduction benchmark (only if total_words  5000)]] - `contains` [EXTRACTED]
-- [[hermesskillsgraphifyreferencesexports]] - `contains` [EXTRACTED]
-- [[hermesskillsgraphifyreferencesquery]] - `contains` [EXTRACTED]
+- [[exports]] - `contains` [EXTRACTED]
+- [[query]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/Community_335

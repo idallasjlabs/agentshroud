@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/linux.md"
 type: "document"
-community: "Himalaya Configuration Reference"
+community: "Community 601"
 location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Himalaya_Configuration_Reference
+  - community/Community_601
 ---
 
 # VPS Deployment Notes
@@ -16,4 +16,4 @@ tags:
 - [[Firewall]] - `contains` [EXTRACTED]
 - [[Non-Root User]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Himalaya_Configuration_Reference
+#graphify/document #graphify/EXTRACTED #community/Community_601

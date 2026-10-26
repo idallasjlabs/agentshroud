@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "rationale"
-community: "chatbot/main.py"
+community: "Community 8"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/Community_8
 ---
 
 # Privacy classification for a service.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ServicePrivacy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_8

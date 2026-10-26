@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt"
 type: "code"
-community: "Python/Boto3/AWS moto test pattern"
+community: "Community 1881"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Python/Boto3/AWS_moto_test_pattern
+  - community/Community_1881
 ---
 
 # append_trend_log.py
 
-#graphify/code #graphify/EXTRACTED #community/Python/Boto3/AWS_moto_test_pattern
+#graphify/code #graphify/EXTRACTED #community/Community_1881

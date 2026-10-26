@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-mm/SKILL.md"
+source_file: ".agents/agents/i-mm.md"
 type: "document"
-community: "OpenClaw Management Scripts"
-location: "L123"
+community: "Community 513"
+location: "L126"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Management_Scripts
+  - community/Community_513
 ---
 
 # XMind Generation via MCP
@@ -16,4 +16,4 @@ tags:
 - [[MCP Tool xmind-generator-mcp]] - `contains` [EXTRACTED]
 - [[Skill Mindmap Architect (MM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts
+#graphify/document #graphify/EXTRACTED #community/Community_513

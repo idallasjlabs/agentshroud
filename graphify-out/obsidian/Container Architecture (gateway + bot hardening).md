@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "hermes/skills/graphify/references/extraction-spec.md"
+community: "Community 1443"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/hermes/skills/graphify/references/extraction-specmd
+  - community/Community_1443
 ---
 
 # Container Architecture (gateway + bot hardening)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[asb CLI — Deployment Tool]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/hermes/skills/graphify/references/extraction-specmd
+#graphify/concept #graphify/EXTRACTED #community/Community_1443

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "rationale"
-community: "UserSessionManager (2) (2)"
+community: "Community 47"
 location: "L285"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager_2_2
+  - community/Community_47
 ---
 
 # Build a mock app_state whose router streams `sentences_out` as raw     text delt
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_stream_app_state()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_2_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_47

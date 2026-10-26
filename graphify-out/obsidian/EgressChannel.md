@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "ContextGuard"
+community: "Community 431"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ContextGuard
+  - community/Community_431
 ---
 
 # EgressChannel
 
 ## Connections
-- [[dot-get_events()]] - `references` [EXTRACTED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[.get_events()_2]] - `references` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[MockEgressChannel]] - `shares_data_with` [AMBIGUOUS]
 - [[TestAlertGeneration]] - `uses` [INFERRED]
 - [[TestAnomalyDetection]] - `uses` [INFERRED]
@@ -32,7 +32,8 @@ tags:
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
 - [[egress_monitor.py]] - `contains` [EXTRACTED]
-- [[str_3]] - `inherits` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
+- [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ContextGuard
+#graphify/code #graphify/INFERRED #community/Community_431

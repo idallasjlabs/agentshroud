@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "Deploying AgentShroud on Linux (x86_64 / aarch64)"
-location: "L76"
+community: "Community 657"
+location: "L96"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64
+  - community/Community_657
 ---
 
 # Imports From / Exports To
 
 ## Connections
-- [[sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[ledger.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64
+#graphify/document #graphify/EXTRACTED #community/Community_657

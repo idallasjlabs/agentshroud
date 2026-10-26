@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_agent_isolation.py"
 type: "code"
-community: "test_a2a_policy.py"
+community: "Community 52"
 location: "L103"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_a2a_policypy
+  - community/Community_52
 ---
 
 # TestVolumeIsolation
 
 ## Connections
-- [[dot-test_separate_volumes_pass()]] - `method` [EXTRACTED]
-- [[dot-test_shared_volume_detected()]] - `method` [EXTRACTED]
+- [[.test_separate_volumes_pass()]] - `method` [EXTRACTED]
+- [[.test_shared_volume_detected()]] - `method` [EXTRACTED]
 - [[AgentRegistry]] - `uses` [INFERRED]
-- [[ContainerConfig_1]] - `uses` [INFERRED]
+- [[ContainerConfig]] - `uses` [INFERRED]
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[IsolationVerifier]] - `uses` [INFERRED]
 - [[test_agent_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_a2a_policypy
+#graphify/code #graphify/INFERRED #community/Community_52

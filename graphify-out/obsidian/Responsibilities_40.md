@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
 type: "document"
-community: "2. Security Analysis"
-location: "L15"
+community: "Community 287"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/2_Security_Analysis
+  - community/Community_287
 ---
 
 # Responsibilities
 
 ## Connections
-- [[url_analyzer.py_1]] - `contains` [EXTRACTED]
+- [[EgressFilter_3]] - `contains` [EXTRACTED]
+- [[egress_filter.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/2_Security_Analysis
+#graphify/document #graphify/EXTRACTED #community/Community_287

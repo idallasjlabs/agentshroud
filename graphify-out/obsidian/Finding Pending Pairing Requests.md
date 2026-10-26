@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "AgentShroud v0.7.0 Enforcement Audit Results (2)"
+community: "Community 284"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Enforcement_Audit_Results_2
+  - community/Community_284
 ---
 
 # Finding Pending Pairing Requests
@@ -17,4 +17,4 @@ tags:
 - [[Method 2 View Raw Pending File]] - `contains` [EXTRACTED]
 - [[Method 3 Check Container Logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results_2
+#graphify/document #graphify/EXTRACTED #community/Community_284

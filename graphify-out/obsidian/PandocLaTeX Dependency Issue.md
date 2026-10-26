@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "rationale"
-community: "TELEGRAM_ISSUES.md"
+community: "Community 702"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TELEGRAM_ISSUESmd
+  - community/Community_702
 ---
 
 # Pandoc/LaTeX Dependency Issue
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[TELEGRAM_ISSUES]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd
+#graphify/rationale #graphify/EXTRACTED #community/Community_702

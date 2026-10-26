@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
+source_file: ".agents/skills/aws/SKILL.md"
 type: "document"
-community: "Skill: Technical Illustrator (TI) (3)"
+community: "Community 242"
 location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Technical_Illustrator_TI_3
+  - community/Community_242
 ---
 
 # Required Tags (All Resources)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Tagging Standard_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI_3
+#graphify/document #graphify/EXTRACTED #community/Community_242

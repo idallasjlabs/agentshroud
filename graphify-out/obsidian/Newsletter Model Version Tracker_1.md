@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-model-version-tracker.txt"
 type: "document"
-community: "Chaos Engineering Skill (2)"
+community: "Community 1683"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Chaos_Engineering_Skill_2
+  - community/Community_1683
 ---
 
 # Newsletter: Model Version Tracker
 
-#graphify/document #graphify/EXTRACTED #community/Chaos_Engineering_Skill_2
+#graphify/document #graphify/EXTRACTED #community/Community_1683

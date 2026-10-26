@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/reference/SKILLS_GUIDE.md"
 type: "document"
-community: "OpenClaw Bot SSH Configuration"
+community: "Community 177"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_SSH_Configuration
+  - community/Community_177
 ---
 
 # Skills Guide (catalog)
@@ -16,6 +16,6 @@ tags:
 - [[Project Management (README)]] - `references` [EXTRACTED]
 - [[Pull Request Generator (README)]] - `references` [EXTRACTED]
 - [[Quality Assurance (README)]] - `references` [EXTRACTED]
-- [[operationsincident-response]] - `references` [EXTRACTED]
+- [[incident-response]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration
+#graphify/document #graphify/EXTRACTED #community/Community_177

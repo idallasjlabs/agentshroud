@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/background.js"
 type: "code"
-community: "AgentShroud Development Roadmap — 2026 Gantt Chart"
+community: "Community 464"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+  - community/Community_464
 ---
 
 # reportResult()
@@ -15,6 +15,6 @@ tags:
 - [[background.js]] - `references` [EXTRACTED]
 - [[clipPage()]] - `calls` [EXTRACTED]
 - [[forwardUrl()]] - `calls` [EXTRACTED]
-- [[notify()_2]] - `calls` [EXTRACTED]
+- [[notify()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+#graphify/code #graphify/EXTRACTED #community/Community_464

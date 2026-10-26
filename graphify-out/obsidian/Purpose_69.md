@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cicd/README.md"
+source_file: "docker/config/hermes/skills/i-socrates/README.md"
 type: "document"
-community: "Skill: UI Expert (UI)"
+community: "Community 1222"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UI_Expert_UI
+  - community/Community_1222
 ---
 
 # Purpose
 
 ## Connections
-- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI
+#graphify/document #graphify/EXTRACTED #community/Community_1222

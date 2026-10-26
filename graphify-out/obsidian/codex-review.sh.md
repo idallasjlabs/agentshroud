@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/codex-review.sh"
 type: "code"
-community: "entrypoint-agentshroud.sh"
+community: "Community 1521"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/entrypoint-agentshroudsh
+  - community/Community_1521
 ---
 
 # codex-review.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[codex-review.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/entrypoint-agentshroudsh
+#graphify/code #graphify/EXTRACTED #community/Community_1521

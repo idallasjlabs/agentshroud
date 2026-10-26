@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "rationale"
-community: "First Time Setup (2)"
+community: "Community 400"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/First_Time_Setup_2
+  - community/Community_400
 ---
 
 # STPA-Sec Analysis of AgentShroud
@@ -21,4 +21,4 @@ tags:
 - [[agentshroud-ieee-paper]] - `references` [EXTRACTED]
 - [[v0.8.0 Watchtower — Security Fixes + Module Wiring]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/First_Time_Setup_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_400

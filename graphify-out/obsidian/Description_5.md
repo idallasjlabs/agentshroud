@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md"
+source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
 type: "document"
-community: "MCP AWS Profile Configuration README"
+community: "Community 2010"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_AWS_Profile_Configuration_README
+  - community/Community_2010
 ---
 
 # Description
 
 ## Connections
-- [[ANTHROPIC_BASE_URL_1]] - `contains` [EXTRACTED]
+- [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_README
+#graphify/document #graphify/EXTRACTED #community/Community_2010

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "rationale"
-community: "TestEgressTelegramNotify"
+community: "Community 238"
 location: "L282"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEgressTelegramNotify
+  - community/Community_238
 ---
 
 # Fetch creds, build summary, post the comment. Returns a process exit code.
 
 ## Connections
-- [[run()_4]] - `rationale_for` [EXTRACTED]
+- [[run()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEgressTelegramNotify
+#graphify/rationale #graphify/EXTRACTED #community/Community_238

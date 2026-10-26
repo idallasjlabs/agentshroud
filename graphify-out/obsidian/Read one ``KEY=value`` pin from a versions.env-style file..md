@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/auto_remediate_cves.py"
 type: "rationale"
-community: "test_daily_cve_report.py"
+community: "Community 261"
 location: "L90"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/Community_261
 ---
 
 # Read one ``KEY=value`` pin from a versions.env-style file.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[read_pin()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_261

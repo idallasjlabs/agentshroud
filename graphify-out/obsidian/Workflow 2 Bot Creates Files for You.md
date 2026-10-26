@@ -1,17 +1,17 @@
 ---
 source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "test_jira_dev_ticket.py"
+community: "Community 179"
 location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_jira_dev_ticketpy
+  - community/Community_179
 ---
 
 # Workflow 2: Bot Creates Files for You
 
 ## Connections
-- [[Common Workflows]] - `contains` [EXTRACTED]
+- [[Common Workflows_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/Community_179

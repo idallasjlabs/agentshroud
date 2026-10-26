@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "AlertDispatcher (2)"
+community: "Community 51"
 location: "L1901"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/Community_51
 ---
 
 # Return the list of registered bots. Falls back to backward-compat OpenClaw defau
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[list_bots()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_51

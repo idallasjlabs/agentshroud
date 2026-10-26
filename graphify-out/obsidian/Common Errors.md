@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm/SKILL.md"
+source_file: ".agents/agents/i-mcpm.md"
 type: "document"
-community: "First Time Setup"
-location: "L139"
+community: "Community 1929"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_Time_Setup
+  - community/Community_1929
 ---
 
 # Common Errors
 
 ## Connections
-- [[10. Troubleshooting]] - `contains` [EXTRACTED]
+- [[MCP Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_Time_Setup
+#graphify/document #graphify/EXTRACTED #community/Community_1929

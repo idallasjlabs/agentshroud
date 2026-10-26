@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/TEST_STRATEGY.md"
 type: "document"
-community: "AgentShroud User Guide"
+community: "Community 326"
 location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_User_Guide
+  - community/Community_326
 ---
 
 # Running Tests Locally
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Test Strategy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_User_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_326

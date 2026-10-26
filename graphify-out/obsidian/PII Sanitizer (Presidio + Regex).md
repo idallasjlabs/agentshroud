@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "ADR-007: Zero-Config Security (docker-compose up = fully secured)"
+community: "Community 947"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ADR-007_Zero-Config_Security_docker-compose_up__fully_secured
+  - community/Community_947
 ---
 
 # PII Sanitizer (Presidio + Regex)
@@ -15,4 +15,4 @@ tags:
 - [[Gateway (FastAPI)]] - `calls` [EXTRACTED]
 - [[sanitizer.py (PII redaction, Presidioregex)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ADR-007_Zero-Config_Security_docker-compose_up__fully_secured
+#graphify/concept #graphify/EXTRACTED #community/Community_947

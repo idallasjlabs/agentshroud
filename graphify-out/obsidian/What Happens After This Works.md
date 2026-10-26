@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/VAULT-SHARING-INSTRUCTIONS.md"
 type: "document"
-community: "`SecurityPipeline`"
+community: "Community 620"
 location: "L167"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/Community_620
 ---
 
 # What Happens After This Works
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1Password Vault Sharing Instructions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/document #graphify/EXTRACTED #community/Community_620

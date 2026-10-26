@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "rationale"
-community: "_coerce_to_ws_event()"
+community: "Community 169"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_coerce_to_ws_event
+  - community/Community_169
 ---
 
 # Main connection loop.
 
 ## Connections
-- [[dot-run()_1]] - `rationale_for` [EXTRACTED]
+- [[.run()_5]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_coerce_to_ws_event
+#graphify/rationale #graphify/EXTRACTED #community/Community_169

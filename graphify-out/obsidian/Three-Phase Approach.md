@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "triage-cve-mitigations.py"
+community: "Community 1315"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - community/Community_1315
 ---
 
 # Three-Phase Approach
@@ -18,4 +18,4 @@ tags:
 - [[Phase B Compatibility Testing]] - `contains` [EXTRACTED]
 - [[Phase C Production Lockdown]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/document #graphify/EXTRACTED #community/Community_1315

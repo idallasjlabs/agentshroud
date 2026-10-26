@@ -1,20 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-daedalus/SKILL.md"
+source_file: ".cursor/agents/hermes.md"
 type: "document"
-community: "._run_proxy()"
-location: "L25"
+community: "Community 1986"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_run_proxy
+  - community/Community_1986
 ---
 
 # Output Format
 
 ## Connections
-- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
-- [[architecture.puml (PlantUML)_1]] - `contains` [EXTRACTED]
-- [[diagramsREADME_2]] - `contains` [EXTRACTED]
-- [[flow.mmd (Mermaid)_1]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_run_proxy
+#graphify/document #graphify/EXTRACTED #community/Community_1986

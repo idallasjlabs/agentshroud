@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "System Instructions: Credential Security (Ultra-Conservative)"
+community: "Community 378"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/System_Instructions_Credential_Security_Ultra-Conservative
+  - community/Community_378
 ---
 
 # ui_state_t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ui_update()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/System_Instructions_Credential_Security_Ultra-Conservative
+#graphify/code #graphify/EXTRACTED #community/Community_378

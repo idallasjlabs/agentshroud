@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "AgentShroud (system, C4 context) (3)"
+community: "Community 942"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_system_C4_context_3
+  - community/Community_942
 ---
 
 # multi_host_test.py
 
 ## Connections
-- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
 - [[HostResult]] - `contains` [EXTRACTED]
 - [[HostStatus]] - `contains` [EXTRACTED]
 - [[MultiHostResult]] - `contains` [EXTRACTED]
@@ -20,12 +20,12 @@ tags:
 - [[_resolve_command()]] - `contains` [EXTRACTED]
 - [[build_parser()]] - `contains` [EXTRACTED]
 - [[build_ssh_argv()]] - `contains` [EXTRACTED]
-- [[classify()_1]] - `contains` [EXTRACTED]
-- [[main()_29]] - `contains` [EXTRACTED]
+- [[classify()]] - `contains` [EXTRACTED]
+- [[main()_14]] - `contains` [EXTRACTED]
 - [[parse_hosts()]] - `contains` [EXTRACTED]
 - [[run_multi_host()]] - `contains` [EXTRACTED]
 - [[ssh_runner()]] - `contains` [EXTRACTED]
-- [[tail()]] - `contains` [EXTRACTED]
+- [[tail()_1]] - `contains` [EXTRACTED]
 - [[test_multi_host_test.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_system_C4_context_3
+#graphify/code #graphify/EXTRACTED #community/Community_942

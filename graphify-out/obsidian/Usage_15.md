@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/README.md"
+source_file: ".agents/skills/i-cr/README.md"
 type: "document"
-community: "Red Team Adversarial Tester (SEC-OFFENSE)"
+community: "Community 544"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Red_Team_Adversarial_Tester_SEC-OFFENSE
+  - community/Community_544
 ---
 
 # Usage
 
 ## Connections
-- [[iCloud Data Manager (ICLOUD)]] - `contains` [EXTRACTED]
+- [[Code Review (CR)]] - `contains` [EXTRACTED]
+- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Red_Team_Adversarial_Tester_SEC-OFFENSE
+#graphify/document #graphify/EXTRACTED #community/Community_544

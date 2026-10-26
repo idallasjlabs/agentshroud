@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
+source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
 type: "document"
-community: "Restart Procedure"
-location: "L119"
+community: "Community 73"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Restart_Procedure
+  - community/Community_73
 ---
 
 # Related Notes
 
 ## Connections
-- [[Container Errors_1]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Restart_Procedure
+#graphify/document #graphify/EXTRACTED #community/Community_73

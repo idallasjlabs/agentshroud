@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "ProgressiveLockdown"
+community: "Community 77"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/Community_77
 ---
 
 # _record_turn_latency()
@@ -23,4 +23,4 @@ tags:
 - [[test_record_turn_latency_over_threshold_is_outlier()]] - `calls` [EXTRACTED]
 - [[test_voice_latency_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/code #graphify/EXTRACTED #community/Community_77

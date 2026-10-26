@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
 type: "document"
-community: "Step-by-Step Deployment"
-location: "L26"
+community: "Community 667"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Step-by-Step_Deployment
+  - community/Community_667
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[middleware.py_2]] - `contains` [EXTRACTED]
+- [[mcp_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Deployment
+#graphify/document #graphify/EXTRACTED #community/Community_667

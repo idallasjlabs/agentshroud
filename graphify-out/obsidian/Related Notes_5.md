@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md"
+source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "TestCheckCommandExecution (2)"
-location: "L39"
+community: "Community 1555"
+location: "L173"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestCheckCommandExecution_2
+  - community/Community_1555
 ---
 
 # Related Notes
 
 ## Connections
-- [[TELEGRAM_API_BASE_URL_1]] - `contains` [EXTRACTED]
+- [[Startup Sequence_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestCheckCommandExecution_2
+#graphify/document #graphify/EXTRACTED #community/Community_1555

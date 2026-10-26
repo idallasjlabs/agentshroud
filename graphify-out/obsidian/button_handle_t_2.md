@@ -1,17 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/test/test_playback_state/stubs/bsp/esp-bsp.h"
+source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h"
 type: "code"
-community: "AgentShroud Phase Review — 2026-02-23 (6)"
+community: "Community 1314"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_Review__2026-02-23_6
+  - community/Community_1314
 ---
 
 # button_handle_t
 
 ## Connections
-- [[bsp_iot_button_create()]] - `references` [EXTRACTED]
+- [[bsp_iot_button_create()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23_6
+#graphify/code #graphify/EXTRACTED #community/Community_1314

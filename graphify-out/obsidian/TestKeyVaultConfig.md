@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "KeyVault"
+community: "Community 24"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KeyVault
+  - community/Community_24
 ---
 
 # TestKeyVaultConfig
 
 ## Connections
-- [[dot-test_default_config()]] - `method` [EXTRACTED]
+- [[.test_default_config()_2]] - `method` [EXTRACTED]
 - [[KeyInjector]] - `uses` [INFERRED]
 - [[KeyLeakDetector]] - `uses` [INFERRED]
 - [[KeyVault]] - `uses` [INFERRED]
 - [[KeyVaultConfig]] - `uses` [INFERRED]
 - [[test_key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/KeyVault
+#graphify/code #graphify/INFERRED #community/Community_24

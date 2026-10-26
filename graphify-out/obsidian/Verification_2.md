@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/PREREQUISITES.md"
+source_file: "docs/planning/redteam/00-information-disclosure.md"
 type: "document"
-community: "Apple Services Setup Guide"
-location: "L560"
+community: "Community 836"
+location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Services_Setup_Guide
+  - community/Community_836
 ---
 
 # Verification
 
 ## Connections
-- [[✅ Setup Checklist]] - `contains` [EXTRACTED]
+- [[Add information filtering to prevent agent self-disclosure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_836

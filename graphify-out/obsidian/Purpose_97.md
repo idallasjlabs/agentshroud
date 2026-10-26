@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
+source_file: "docker/config/openclaw/skills/i-pr/README.md"
 type: "document"
-community: "Skill Creation Process"
-location: "L12"
+community: "Community 1238"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Creation_Process
+  - community/Community_1238
 ---
 
 # Purpose
 
 ## Connections
-- [[oauth_security.py_1]] - `contains` [EXTRACTED]
+- [[Pull Request Generator (PR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Creation_Process
+#graphify/document #graphify/EXTRACTED #community/Community_1238

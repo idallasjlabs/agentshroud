@@ -1,13 +1,13 @@
 ---
 source_file: "branding/social/github-social-preview-1280x640.png"
 type: "image"
-community: "ConfigurationSetting (data entity)"
+community: "Community 1645"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/ConfigurationSetting_data_entity
+  - community/Community_1645
 ---
 
 # AgentShroud GitHub Social Preview Image
 
-#graphify/image #graphify/EXTRACTED #community/ConfigurationSetting_data_entity
+#graphify/image #graphify/EXTRACTED #community/Community_1645

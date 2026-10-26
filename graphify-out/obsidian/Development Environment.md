@@ -1,17 +1,21 @@
 ---
-source_file: "docs/security/VERIFICATION_RESULTS.md"
+source_file: "docs/TEAM.md"
 type: "document"
-community: "TestSecurityFeatures"
-location: "L206"
+community: "Community 503"
+location: "L126"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSecurityFeatures
+  - community/Community_503
 ---
 
 # Development Environment
 
 ## Connections
-- [[Deployment Readiness]] - `contains` [EXTRACTED]
+- [[AgentShroud Development Team — Agile Structure]] - `contains` [EXTRACTED]
+- [[Communication & Tooling]] - `contains` [EXTRACTED]
+- [[Container Architecture]] - `contains` [EXTRACTED]
+- [[Development Workflow]] - `contains` [EXTRACTED]
+- [[Hardware]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSecurityFeatures
+#graphify/document #graphify/EXTRACTED #community/Community_503

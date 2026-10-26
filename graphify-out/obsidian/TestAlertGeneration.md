@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "_wrap_response() (3)"
+community: "Community 431"
 location: "L235"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_wrap_response_3
+  - community/Community_431
 ---
 
 # TestAlertGeneration
 
 ## Connections
-- [[dot-test_alert_has_description()]] - `method` [EXTRACTED]
-- [[dot-test_alert_has_severity()]] - `method` [EXTRACTED]
-- [[dot-test_alert_monitor_mode_no_block()]] - `method` [EXTRACTED]
+- [[.test_alert_has_description()]] - `method` [EXTRACTED]
+- [[.test_alert_has_severity()]] - `method` [EXTRACTED]
+- [[.test_alert_monitor_mode_no_block()]] - `method` [EXTRACTED]
 - [[AlertSeverity]] - `uses` [INFERRED]
 - [[EgressChannel]] - `uses` [INFERRED]
 - [[EgressEvent]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[EgressMonitorConfig]] - `uses` [INFERRED]
 - [[test_egress_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_wrap_response_3
+#graphify/code #graphify/INFERRED #community/Community_431

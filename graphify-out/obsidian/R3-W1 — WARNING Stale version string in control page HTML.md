@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05-r3.md"
 type: "document"
-community: "main (2)"
+community: "Community 781"
 location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/main_2
+  - community/Community_781
 ---
 
 # R3-W1 — WARNING: Stale version string in control page HTML
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[R3 Findings (NEW — this round)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/main_2
+#graphify/document #graphify/EXTRACTED #community/Community_781

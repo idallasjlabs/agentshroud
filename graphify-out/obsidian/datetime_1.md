@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: "gateway/security/audit_archive.py"
 type: "code"
-community: "LLMProxy.proxy_messages (non-streaming)"
-location: "L66"
+community: "Community 380"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming
+  - community/Community_380
 ---
 
 # datetime
 
 ## Connections
-- [[read_alerts()_1]] - `references` [EXTRACTED]
-- [[wazuh_client.py]] - `imports_from` [EXTRACTED]
+- [[archive_old_events()]] - `references` [EXTRACTED]
+- [[audit_archive.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming
+#graphify/code #graphify/EXTRACTED #community/Community_380

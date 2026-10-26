@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "test_telegram_proxy_inbound.py (3)"
+community: "Community 2075"
 location: "L807"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy_3
+  - community/Community_2075
 ---
 
 # What is NOT in this application (by design)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SECTION 5 IMPORTANT NOTES]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy_3
+#graphify/document #graphify/EXTRACTED #community/Community_2075

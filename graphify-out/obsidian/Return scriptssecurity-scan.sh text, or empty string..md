@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "test_mfa_guard.py"
+community: "Community 29"
 location: "L434"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/Community_29
 ---
 
 # Return scripts/security-scan.sh text, or empty string.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_security_scan_sh_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_29

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-POLICY-FINAL.md"
 type: "document"
-community: "BotConfig (2)"
+community: "Community 377"
 location: "L140"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BotConfig_2
+  - community/Community_377
 ---
 
 # 🎓 Response Templates
@@ -16,4 +16,4 @@ tags:
 - [[When asked for credentials via ANY chat]] - `contains` [EXTRACTED]
 - [[When executing console commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BotConfig_2
+#graphify/document #graphify/EXTRACTED #community/Community_377

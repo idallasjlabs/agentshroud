@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "colima-health-check.sh"
+community: "Community 223"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/Community_223
 ---
 
 # _ipv4_first_getaddrinfo()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[telegram_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/Community_223

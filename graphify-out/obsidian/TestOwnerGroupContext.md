@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "test_soc_bots.py"
+community: "Community 61"
 location: "L298"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_soc_botspy
+  - community/Community_61
 ---
 
 # TestOwnerGroupContext
 
 ## Connections
-- [[dot-test_owner_allowed_all_tools_in_group()]] - `method` [EXTRACTED]
-- [[dot-test_owner_unrestricted_matches_dm_behavior()]] - `method` [EXTRACTED]
+- [[.test_owner_allowed_all_tools_in_group()]] - `method` [EXTRACTED]
+- [[.test_owner_unrestricted_matches_dm_behavior()]] - `method` [EXTRACTED]
 - [[GroupRole]] - `uses` [INFERRED]
 - [[GroupRoleResolver]] - `uses` [INFERRED]
 - [[Owner must have unrestricted access even in group context.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[TeamsConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[ToolACLConfig]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_group_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_soc_botspy
+#graphify/code #graphify/INFERRED #community/Community_61

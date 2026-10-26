@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "rationale"
-community: "api.py (2)"
+community: "Community 37"
 location: "L245"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apipy_2
+  - community/Community_37
 ---
 
 # Exception during inbound recovery → swallowed; outbound still recorded.
 
 ## Connections
-- [[dot-test_recovery_exception_is_non_fatal()]] - `rationale_for` [EXTRACTED]
+- [[.test_recovery_exception_is_non_fatal()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apipy_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_37

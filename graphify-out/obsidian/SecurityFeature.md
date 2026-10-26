@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/security.py"
 type: "code"
-community: "_get_gmail_app_password"
+community: "Community 240"
 location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_get_gmail_app_password
+  - community/Community_240
 ---
 
 # SecurityFeature
@@ -17,4 +17,4 @@ tags:
 - [[get_missing_features()]] - `references` [EXTRACTED]
 - [[security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_get_gmail_app_password
+#graphify/code #graphify/EXTRACTED #community/Community_240

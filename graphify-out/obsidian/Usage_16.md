@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mac/README.md"
+source_file: ".agents/skills/i-data/README.md"
 type: "document"
-community: "TestOutboundInfoFilter (4)"
+community: "Community 117"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_4
+  - community/Community_117
 ---
 
 # Usage
 
 ## Connections
-- [[macOS System Administrator (MAC)]] - `contains` [EXTRACTED]
+- [[Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_4
+#graphify/document #graphify/EXTRACTED #community/Community_117

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "rationale"
-community: "PromptGuard"
+community: "Community 154"
 location: "L787"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/Community_154
 ---
 
 # Scan tool result content for indirect prompt injection.          Tool results (w
 
 ## Connections
-- [[dot-scan_tool_result()_1]] - `rationale_for` [EXTRACTED]
+- [[.scan_tool_result()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PromptGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_154

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/export-email-reports.py"
 type: "rationale"
-community: "export_bot()"
+community: "Community 777"
 location: "L42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/Community_777
 ---
 
 # Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_parse_since()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/export_bot
+#graphify/rationale #graphify/EXTRACTED #community/Community_777

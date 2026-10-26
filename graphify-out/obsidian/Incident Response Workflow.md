@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-production/SKILL.md"
+source_file: ".agents/agents/i-production.md"
 type: "document"
-community: "MiddlewareManager (8)"
-location: "L22"
+community: "Community 1142"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_8
+  - community/Community_1142
 ---
 
 # Incident Response Workflow
@@ -17,4 +17,4 @@ tags:
 - [[Phase 3 MITIGATE (Rollback First!)]] - `contains` [EXTRACTED]
 - [[Skill Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_8
+#graphify/document #graphify/EXTRACTED #community/Community_1142

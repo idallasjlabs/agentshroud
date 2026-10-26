@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "rationale"
-community: "upgrade"
+community: "Community 66"
 location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/upgrade
+  - community/Community_66
 ---
 
 # Perform a security review before version change.      Checks:     - Known CVEs f
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[security_review()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/upgrade
+#graphify/rationale #graphify/EXTRACTED #community/Community_66

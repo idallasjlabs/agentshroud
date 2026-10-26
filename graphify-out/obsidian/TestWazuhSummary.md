@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/tests/test_security_toolchain.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "LLMProxy.proxy_messages (non-streaming)"
-location: "L705"
+community: "Community 1291"
+location: "L404"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming
+  - community/Community_1291
 ---
 
 # TestWazuhSummary
 
 ## Connections
-- [[dot-test_summary_clean()_1]] - `method` [EXTRACTED]
-- [[dot-test_summary_with_rootkit()]] - `method` [EXTRACTED]
-- [[AlertDispatcher]] - `uses` [INFERRED]
-- [[test_security_toolchain.py]] - `contains` [EXTRACTED]
+- [[.test_installed_not_running()]] - `method` [EXTRACTED]
+- [[.test_not_installed()]] - `method` [EXTRACTED]
+- [[.test_running_no_alert_dir()]] - `method` [EXTRACTED]
+- [[.test_running_with_alert_dir()]] - `method` [EXTRACTED]
+- [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming
+#graphify/code #graphify/EXTRACTED #community/Community_1291

@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "AlertDispatcher (4)"
+community: "Community 488"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_4
+  - community/Community_488
 ---
 
 # _default_format()
 
 ## Connections
-- [[dot-test_default_format_for_pipe()]] - `calls` [EXTRACTED]
-- [[dot-test_is_tty_and_default_format_for_tty()]] - `calls` [EXTRACTED]
+- [[.test_default_format_for_pipe()]] - `calls` [EXTRACTED]
+- [[.test_is_tty_and_default_format_for_tty()]] - `calls` [EXTRACTED]
 - [[_is_tty()]] - `calls` [EXTRACTED]
 - [[cli()]] - `calls` [EXTRACTED]
-- [[climain.py]] - `contains` [EXTRACTED]
+- [[main.py_1]] - `contains` [EXTRACTED]
 - [[test_cli_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_4
+#graphify/code #graphify/EXTRACTED #community/Community_488

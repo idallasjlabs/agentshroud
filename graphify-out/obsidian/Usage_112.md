@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-offense/README.md"
+source_file: "docker/config/openclaw/skills/i-icloud/README.md"
 type: "document"
-community: "TestOutboundInfoFilter"
+community: "Community 1233"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/Community_1233
 ---
 
 # Usage
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)_1]] - `contains` [EXTRACTED]
+- [[iCloud Data Manager (ICLOUD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/Community_1233

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "trivy_report.py"
-location: "L66"
+community: "Community 580"
+location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/trivy_reportpy
+  - community/Community_580
 ---
 
 # Environment Variables
 
 ## Connections
-- [[canary.py_2]] - `contains` [EXTRACTED]
+- [[agentshroud-gateway_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/trivy_reportpy
+#graphify/document #graphify/EXTRACTED #community/Community_580

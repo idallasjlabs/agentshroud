@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "rationale"
-community: "Enum"
+community: "Community 884"
 location: "L42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enum
+  - community/Community_884
 ---
 
 # Convert AuditEvent (from AuditStore) to SecurityEvent.      AuditEvent fields: e
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[from_audit_chain_entry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enum
+#graphify/rationale #graphify/EXTRACTED #community/Community_884

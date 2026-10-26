@@ -1,11 +1,11 @@
 ---
 source_file: "SECURITY.md"
 type: "concept"
-community: "agentshroud-ieee-paper.md"
+community: "Community 394"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/agentshroud-ieee-papermd
+  - community/Community_394
 ---
 
 # CI Security Scanning Toolchain
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud™ Security Policy]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/agentshroud-ieee-papermd
+#graphify/concept #graphify/EXTRACTED #community/Community_394

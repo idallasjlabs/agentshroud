@@ -1,19 +1,23 @@
 ---
-source_file: "gateway/ingest_api/auth.py"
+source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "create_auth_dependency()"
-location: "L92"
+community: "Community 7"
+location: "L31"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - graphify/INFERRED
+  - community/Community_7
 ---
 
 # GatewayConfig
 
 ## Connections
-- [[GatewayConfig_3]] - `uses` [INFERRED]
-- [[create_auth_dependency()]] - `references` [EXTRACTED]
-- [[get_auth_dependency()]] - `references` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[GatewayConfig_1]] - `uses` [INFERRED]
+- [[LedgerConfig]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[ProxyResult]] - `uses` [INFERRED]
+- [[RouterConfig]] - `uses` [INFERRED]
+- [[test_config()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/INFERRED #community/Community_7

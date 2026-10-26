@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/trivy.md"
+source_file: "docker/config/openclaw/skills/i-apollo/README.md"
 type: "document"
-community: "EgressFilter"
-location: "L15"
+community: "Community 1224"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/Community_1224
 ---
 
 # Purpose
 
 ## Connections
-- [[Trivy_1]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/Community_1224

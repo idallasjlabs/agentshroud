@@ -1,19 +1,22 @@
 ---
 source_file: "docs/vault/05 - Dependencies/playwright.md"
 type: "document"
-community: "OpenClaw cron: AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)"
-location: "L1"
+community: "Community 800"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh
+  - community/Community_800
 ---
 
-# playwright.md
+# Playwright
 
 ## Connections
-- [[All Dependencies]] - `references` [EXTRACTED]
-- [[Playwright_1]] - `contains` [EXTRACTED]
-- [[volumes]] - `references` [EXTRACTED]
+- [[Container Integration]] - `contains` [EXTRACTED]
+- [[Purpose_190]] - `contains` [EXTRACTED]
+- [[Related Notes_45]] - `contains` [EXTRACTED]
+- [[Security Controls_2]] - `contains` [EXTRACTED]
+- [[Volume]] - `contains` [EXTRACTED]
+- [[playwright_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh
+#graphify/document #graphify/EXTRACTED #community/Community_800

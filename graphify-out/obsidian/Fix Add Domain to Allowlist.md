@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md"
 type: "document"
-community: "Skill: Pull Request (PR) Generator"
+community: "Community 946"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Pull_Request_PR_Generator
+  - community/Community_946
 ---
 
 # Fix: Add Domain to Allowlist
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[HTTP 403 — Egress Blocked]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator
+#graphify/document #graphify/EXTRACTED #community/Community_946

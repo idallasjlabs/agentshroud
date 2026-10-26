@@ -1,17 +1,18 @@
 ---
-source_file: "docs/claude-security-audit-prompt.md"
+source_file: ".agents/skills/athena/SKILL.md"
 type: "document"
-community: "diagrams/README.md"
-location: "L266"
+community: "Community 1568"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/diagrams/READMEmd
+  - community/Community_1568
 ---
 
 # Output Format
 
 ## Connections
-- [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_2]] - `contains` [EXTRACTED]
+- [[show_notes_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/diagrams/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Community_1568

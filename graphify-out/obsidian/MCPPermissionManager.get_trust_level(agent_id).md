@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
 type: "document"
-community: "Publish SecureBrowser to ClawHub - Step-by-Step Guide"
+community: "Community 719"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Publish_SecureBrowser_to_ClawHub_-_Step-by-Step_Guide
+  - community/Community_719
 ---
 
 # MCPPermissionManager.get_trust_level(agent_id)
 
 ## Connections
-- [[Function Details_35]] - `contains` [EXTRACTED]
+- [[Function Details_11]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Publish_SecureBrowser_to_ClawHub_-_Step-by-Step_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_719

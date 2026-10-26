@@ -1,23 +1,18 @@
 ---
-source_file: "gateway/ingest_api/router.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "AgentTarget (2)"
-location: "L152"
+community: "Community 72"
+location: "L231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/Community_72
 ---
 
 # Any
 
 ## Connections
-- [[dot-_build_forward_payload()]] - `references` [EXTRACTED]
-- [[dot-forward_to_agent()]] - `references` [EXTRACTED]
-- [[dot-forward_to_agent_stream()]] - `references` [EXTRACTED]
-- [[dot-health_check()_4]] - `references` [EXTRACTED]
-- [[AgentTarget]] - `uses` [INFERRED]
-- [[ForwardRequest]] - `uses` [INFERRED]
-- [[RouterConfig_1]] - `uses` [INFERRED]
+- [[._scan_for_canary()]] - `references` [EXTRACTED]
+- [[.get_status()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/code #graphify/EXTRACTED #community/Community_72

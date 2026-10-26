@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/README.md"
+source_file: "docker/config/hermes/skills/i-pm/README.md"
 type: "document"
-community: "soc.js"
+community: "Community 1915"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_1915
 ---
 
 # Related Skills
 
 ## Connections
-- [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
+- [[Project Management (PM)_1]] - `contains` [EXTRACTED]
+- [[Project Management (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_1915

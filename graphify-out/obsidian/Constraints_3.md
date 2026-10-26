@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/05-credential-isolation.md"
+source_file: ".github/agents/i-pr.agent.md"
 type: "document"
-community: "dns_filter.py"
-location: "L301"
+community: "Community 1953"
+location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dns_filterpy
+  - community/Community_1953
 ---
 
 # Constraints
 
 ## Connections
-- [[Remove secret mounts from agent container and implement transparent credential injection]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dns_filterpy
+#graphify/document #graphify/EXTRACTED #community/Community_1953

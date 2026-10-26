@@ -1,27 +1,27 @@
 ---
 source_file: ".agents/skills/i-ps/SKILL.md"
 type: "document"
-community: "OpenClaw Bot SSH Configuration"
+community: "Community 177"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_SSH_Configuration
+  - community/Community_177
 ---
 
 # Production Safety Checklist (SKILL)
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-psREADME]] - `contains` [EXTRACTED]
 - [[Incident Response (SKILL)]] - `semantically_similar_to` [INFERRED]
-- [[Purpose_64]] - `contains` [EXTRACTED]
-- [[Purpose_67]] - `contains` [EXTRACTED]
+- [[Purpose_21]] - `contains` [EXTRACTED]
+- [[Purpose_62]] - `contains` [EXTRACTED]
 - [[Quality Assurance (SKILL)]] - `semantically_similar_to` [INFERRED]
-- [[Related Skills_51]] - `contains` [EXTRACTED]
-- [[Related Skills_54]] - `contains` [EXTRACTED]
+- [[README_21]] - `contains` [EXTRACTED]
+- [[README_47]] - `contains` [EXTRACTED]
+- [[Related Skills_27]] - `contains` [EXTRACTED]
+- [[Related Skills_83]] - `contains` [EXTRACTED]
+- [[SKILL_19]] - `contains` [EXTRACTED]
 - [[Skills Guide (catalog)]] - `references` [EXTRACTED]
-- [[Usage_53]] - `contains` [EXTRACTED]
-- [[Usage_56]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[Usage_27]] - `contains` [EXTRACTED]
+- [[Usage_85]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration
+#graphify/document #graphify/EXTRACTED #community/Community_177

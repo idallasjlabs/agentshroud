@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/v1.2.0-master-plan.md"
 type: "concept"
-community: "TrustManager"
+community: "Community 2034"
 location: "Workstream B"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/Community_2034
 ---
 
 # Workstream B: Security Features from Competitive Intel
@@ -17,7 +17,7 @@ tags:
 - [[B.1 — Lock the lead 26+ modules]] - `contains` [EXTRACTED]
 - [[B.2 — Strengthen the report pipeline itself]] - `contains` [EXTRACTED]
 - [[Competitive Security Matrix (28 Modules vs 11 Platforms)]] - `references` [EXTRACTED]
-- [[Source of truth]] - `contains` [EXTRACTED]
+- [[Source of truth_1]] - `contains` [EXTRACTED]
 - [[Tests to add]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/TrustManager
+#graphify/concept #graphify/EXTRACTED #community/Community_2034

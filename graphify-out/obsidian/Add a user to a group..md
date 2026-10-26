@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "rationale"
-community: "AlertDispatcher (4)"
+community: "Community 87"
 location: "L287"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_4
+  - community/Community_87
 ---
 
 # Add a user to a group.
 
 ## Connections
-- [[add_group_member()_1]] - `rationale_for` [EXTRACTED]
+- [[add_group_member()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_4
+#graphify/rationale #graphify/EXTRACTED #community/Community_87

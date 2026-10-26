@@ -1,20 +1,19 @@
 ---
-source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
+source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "branding/README.md"
-location: "L10"
+community: "Community 517"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/READMEmd
+  - community/Community_517
 ---
 
 # Decision
 
 ## Connections
-- [[ADR-008-progressive-trust-levels]] - `contains` [EXTRACTED]
-- [[Progressive Controls]] - `contains` [EXTRACTED]
-- [[Trust Calculation]] - `contains` [EXTRACTED]
-- [[Trust Levels (0-4)]] - `contains` [EXTRACTED]
+- [[ADR-009 Enforce-by-Default Security Philosophy]] - `contains` [EXTRACTED]
+- [[Configuration_11]] - `contains` [EXTRACTED]
+- [[Policy Table]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Community_517

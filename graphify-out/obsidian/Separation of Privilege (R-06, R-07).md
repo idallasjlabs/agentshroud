@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "concept"
-community: "First Time Setup (2)"
+community: "Community 400"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/First_Time_Setup_2
+  - community/Community_400
 ---
 
 # Separation of Privilege (R-06, R-07)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[STPA-Sec Analysis of AgentShroud]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/First_Time_Setup_2
+#graphify/concept #graphify/EXTRACTED #community/Community_400

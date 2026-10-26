@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
 type: "document"
-community: "egress_monitor.py"
+community: "Community 675"
 location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_monitorpy
+  - community/Community_675
 ---
 
 # BrowserSecurityGuard.analyze_screenshot(image_data)
 
 ## Connections
-- [[Function Details_29]] - `contains` [EXTRACTED]
+- [[Function Details_28]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_monitorpy
+#graphify/document #graphify/EXTRACTED #community/Community_675

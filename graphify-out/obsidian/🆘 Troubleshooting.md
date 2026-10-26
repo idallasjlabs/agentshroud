@@ -1,21 +1,18 @@
 ---
-source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
+source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "TestPathIsolationManager"
-location: "L364"
+community: "Community 346"
+location: "L640"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/Community_346
 ---
 
 # 🆘 Troubleshooting
 
 ## Connections
-- [[Authentication required]] - `contains` [EXTRACTED]
-- [[Permission denied]] - `contains` [EXTRACTED]
-- [[Skill validation failed]] - `contains` [EXTRACTED]
-- [[clawhub command not found]] - `contains` [EXTRACTED]
-- [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - `contains` [EXTRACTED]
+- [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
+- [[Common Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/document #graphify/EXTRACTED #community/Community_346

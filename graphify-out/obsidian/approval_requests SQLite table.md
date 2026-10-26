@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "code"
-community: "test_sanitizer.py (2)"
+community: "Community 747"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_sanitizerpy_2
+  - community/Community_747
 ---
 
 # approval_requests SQLite table
@@ -14,4 +14,4 @@ tags:
 - [[ApprovalRequest (data entity)]] - `implements` [EXTRACTED]
 - [[agentshroud.yaml (main config schema)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_sanitizerpy_2
+#graphify/code #graphify/EXTRACTED #community/Community_747

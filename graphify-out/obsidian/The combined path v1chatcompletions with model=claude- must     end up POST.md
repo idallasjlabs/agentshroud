@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_claude_via_openai_path.py"
 type: "rationale"
-community: "Function Details (8)"
+community: "Community 360"
 location: "L66"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Function_Details_8
+  - community/Community_360
 ---
 
 # The combined path: /v1/chat/completions with model=claude-* must     end up POST
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_proxy_rewrites_claude_via_openai_path()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Function_Details_8
+#graphify/rationale #graphify/EXTRACTED #community/Community_360

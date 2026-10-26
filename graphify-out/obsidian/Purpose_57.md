@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tdd/README.md"
+source_file: "docker/config/hermes/skills/i-mnemosyne/README.md"
 type: "document"
-community: "SecureBrowser Skill (4)"
+community: "Community 754"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill_4
+  - community/Community_754
 ---
 
 # Purpose
 
 ## Connections
-- [[Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill_4
+#graphify/document #graphify/EXTRACTED #community/Community_754

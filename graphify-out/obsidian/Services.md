@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/docker-compose.yml.md"
 type: "document"
-community: "Seccomp Profiles"
+community: "Community 460"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Seccomp_Profiles
+  - community/Community_460
 ---
 
 # Services
@@ -16,4 +16,4 @@ tags:
 - [[docker-compose.yml_1]] - `contains` [EXTRACTED]
 - [[gateway (agentshroud-gateway)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles
+#graphify/document #graphify/EXTRACTED #community/Community_460

@@ -1,17 +1,17 @@
 ---
 source_file: "opencode.json"
 type: "code"
-community: "opencode.json"
-location: "L77"
+community: "Community 159"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/opencodejson
+  - community/Community_159
 ---
 
 # enabled
 
 ## Connections
-- [[devonthink]] - `contains` [EXTRACTED]
+- [[github-agentshroud_5]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/opencodejson
+#graphify/code #graphify/EXTRACTED #community/Community_159

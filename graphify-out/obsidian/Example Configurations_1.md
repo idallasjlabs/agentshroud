@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "TestNewPatternsV080"
+community: "Community 764"
 location: "L617"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestNewPatternsV080
+  - community/Community_764
 ---
 
 # Example Configurations
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Configuration Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestNewPatternsV080
+#graphify/document #graphify/EXTRACTED #community/Community_764

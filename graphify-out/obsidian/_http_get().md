@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "TestEgressTelegramNotify"
+community: "Community 238"
 location: "L226"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressTelegramNotify
+  - community/Community_238
 ---
 
 # _http_get()
@@ -15,4 +15,4 @@ tags:
 - [[GET and return (status_code, response_text). HTTPError is treated as a     norma]] - `rationale_for` [EXTRACTED]
 - [[jira_weekly_review.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressTelegramNotify
+#graphify/code #graphify/EXTRACTED #community/Community_238

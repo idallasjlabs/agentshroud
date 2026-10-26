@@ -1,11 +1,11 @@
 ---
 source_file: "CHANGELOG.md"
 type: "rationale"
-community: "Contributing to AgentShroud™"
+community: "Community 584"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Contributing_to_AgentShroud
+  - community/Community_584
 ---
 
 # Daily Check-in dumped raw ssh-exec JSON verbatim — rewritten to parse stdout/stderr
@@ -14,4 +14,4 @@ tags:
 - [[OpenClaw cron AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)]] - `references` [EXTRACTED]
 - [[v1.5.3 Release — Telegramcron delivery fixes]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Contributing_to_AgentShroud
+#graphify/rationale #graphify/EXTRACTED #community/Community_584

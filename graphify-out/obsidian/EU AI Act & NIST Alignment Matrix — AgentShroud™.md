@@ -1,12 +1,12 @@
 ---
 source_file: "docs/compliance/eu-ai-act-nist-matrix.md"
 type: "document"
-community: "SECTION 1: COVER SHEET (Form PTO/SB/16)"
+community: "Community 1024"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SECTION_1_COVER_SHEET_Form_PTO/SB/16
+  - community/Community_1024
 ---
 
 # EU AI Act & NIST Alignment Matrix — AgentShroud™
@@ -20,4 +20,4 @@ tags:
 - [[Positioning]] - `contains` [EXTRACTED]
 - [[eu-ai-act-nist-matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SECTION_1_COVER_SHEET_Form_PTO/SB/16
+#graphify/document #graphify/EXTRACTED #community/Community_1024

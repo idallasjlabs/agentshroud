@@ -1,20 +1,20 @@
 ---
-source_file: "scripts/export-email-reports.py"
+source_file: "skills/openclaw/skill-creator/scripts/init_skill.py"
 type: "code"
-community: "export_bot()"
-location: "L136"
+community: "Community 882"
+location: "L320"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/Community_882
 ---
 
 # main()
 
 ## Connections
-- [[Path_64]] - `calls` [EXTRACTED]
-- [[_parse_since()_1]] - `calls` [EXTRACTED]
-- [[export-email-reports.py]] - `contains` [EXTRACTED]
-- [[export_bot()]] - `calls` [EXTRACTED]
+- [[init_skill()]] - `calls` [EXTRACTED]
+- [[init_skill.py]] - `contains` [EXTRACTED]
+- [[normalize_skill_name()]] - `calls` [EXTRACTED]
+- [[parse_resources()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export_bot
+#graphify/code #graphify/EXTRACTED #community/Community_882

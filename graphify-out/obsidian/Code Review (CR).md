@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-cr/README.md"
+source_file: ".agents/skills/i-cr/README.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM)"
+community: "Community 544"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM
+  - community/Community_544
 ---
 
 # Code Review (CR)
 
 ## Connections
-- [[Purpose_93]] - `contains` [EXTRACTED]
-- [[Related Skills_68]] - `contains` [EXTRACTED]
-- [[Usage_74]] - `contains` [EXTRACTED]
-- [[hermesskillsi-crREADME]] - `contains` [EXTRACTED]
+- [[Purpose_10]] - `contains` [EXTRACTED]
+- [[README_10]] - `contains` [EXTRACTED]
+- [[Related Skills_13]] - `contains` [EXTRACTED]
+- [[Usage_15]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM
+#graphify/document #graphify/EXTRACTED #community/Community_544

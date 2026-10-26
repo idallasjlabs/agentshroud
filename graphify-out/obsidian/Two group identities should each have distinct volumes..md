@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "test_a2a_policy.py"
+community: "Community 52"
 location: "L249"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/Community_52
 ---
 
 # Two group identities should each have distinct volumes.
 
 ## Connections
-- [[dot-test_group_agents_are_isolatable()]] - `rationale_for` [EXTRACTED]
+- [[.test_group_agents_are_isolatable()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/rationale #graphify/EXTRACTED #community/Community_52

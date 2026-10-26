@@ -1,17 +1,23 @@
 ---
-source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
+source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "test_sunday_prompt_unattended.sh"
-location: "L153"
+community: "Community 521"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_sunday_prompt_unattendedsh
+  - community/Community_521
 ---
 
 # Architecture
 
 ## Connections
-- [[Technical Details]] - `contains` [EXTRACTED]
+- [[AgentShroud™ — Project Knowledge Base]] - `contains` [EXTRACTED]
+- [[Design Philosophy]] - `contains` [EXTRACTED]
+- [[F. Infrastructure]] - `contains` [EXTRACTED]
+- [[Infrastructure_12]] - `contains` [EXTRACTED]
+- [[Multi-Platform Support]] - `contains` [EXTRACTED]
+- [[Security Modules]] - `contains` [EXTRACTED]
+- [[The Security Pipeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_sunday_prompt_unattendedsh
+#graphify/document #graphify/EXTRACTED #community/Community_521

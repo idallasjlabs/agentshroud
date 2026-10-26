@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "Community 84"
 location: "L209"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_84
 ---
 
 # End-to-end pipeline latency for a single message.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFullPipelineLatency]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_84

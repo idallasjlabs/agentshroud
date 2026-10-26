@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-observability/SKILL.md"
 type: "document"
-community: "MCP Server: awslabs.aws-api-mcp-server"
+community: "Community 1577"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Server_awslabsaws-api-mcp-server
+  - community/Community_1577
 ---
 
 # Observability Skill
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Server_awslabsaws-api-mcp-server
+#graphify/document #graphify/EXTRACTED #community/Community_1577

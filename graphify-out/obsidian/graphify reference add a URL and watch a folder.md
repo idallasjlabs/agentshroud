@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/graphify/references/add-watch.md"
+source_file: ".agents/skills/graphify/references/add-watch.md"
 type: "document"
-community: "10. Troubleshooting"
+community: "Community 335"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/10_Troubleshooting
+  - community/Community_335
 ---
 
 # graphify reference: add a URL and watch a folder
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[For --watch]] - `contains` [EXTRACTED]
 - [[For graphify add]] - `contains` [EXTRACTED]
-- [[hermesskillsgraphifyreferencesadd-watch]] - `contains` [EXTRACTED]
-- [[hermesskillsgraphifyreferencesquery]] - `contains` [EXTRACTED]
+- [[add-watch]] - `contains` [EXTRACTED]
+- [[query]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/Community_335

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/gemini_openai_translator.py"
 type: "rationale"
-community: "Post-v1.0.0 — Deferred"
+community: "Community 361"
 location: "L87"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Post-v100__Deferred
+  - community/Community_361
 ---
 
 # Extract the system instruction as plain text (camelCase or snake_case key).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_system_instruction_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Post-v100__Deferred
+#graphify/rationale #graphify/EXTRACTED #community/Community_361

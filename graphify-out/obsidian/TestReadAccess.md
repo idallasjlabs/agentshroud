@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "._make_proxy()"
+community: "Community 31"
 location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_31
 ---
 
 # TestReadAccess
 
 ## Connections
-- [[dot-test_gateway_source_read_flagged()]] - `method` [EXTRACTED]
-- [[dot-test_sensitive_config_read_blocked()]] - `method` [EXTRACTED]
-- [[dot-test_system_info_read_allowed()]] - `method` [EXTRACTED]
-- [[dot-test_workspace_read_allowed()_1]] - `method` [EXTRACTED]
+- [[.test_gateway_source_read_flagged()]] - `method` [EXTRACTED]
+- [[.test_sensitive_config_read_blocked()]] - `method` [EXTRACTED]
+- [[.test_system_info_read_allowed()]] - `method` [EXTRACTED]
+- [[.test_workspace_read_allowed()_1]] - `method` [EXTRACTED]
 - [[FileSandbox]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[Test read access controls.]] - `rationale_for` [EXTRACTED]
 - [[test_privilege_separation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_31

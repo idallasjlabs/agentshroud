@@ -1,17 +1,17 @@
 ---
-source_file: "CLAUDE.md"
+source_file: ".github/copilot-instructions.md"
 type: "document"
-community: "Credential Management - 1Password Integration (2)"
-location: "L4"
+community: "Community 2022"
+location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Credential_Management_-_1Password_Integration_2
+  - community/Community_2022
 ---
 
 # These instructions are authoritative. Follow them strictly.
 
 ## Connections
-- [[CLAUDE]] - `contains` [EXTRACTED]
+- [[copilot-instructions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Credential_Management_-_1Password_Integration_2
+#graphify/document #graphify/EXTRACTED #community/Community_2022

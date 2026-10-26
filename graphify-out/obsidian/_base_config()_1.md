@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "Community 35"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/Community_35
 ---
 
 # _base_config()
 
 ## Connections
 - [[A representative policy two allowlisted servers, one denylisted server,     a p]] - `rationale_for` [EXTRACTED]
-- [[MCPPolicyConfig]] - `references` [EXTRACTED]
+- [[MCPPolicyConfig_1]] - `references` [EXTRACTED]
 - [[engine()_1]] - `calls` [EXTRACTED]
 - [[test_decision_records_soc_heatmap()]] - `calls` [EXTRACTED]
 - [[test_enforce_allows_allowlisted_safe_tool()]] - `calls` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[test_mcp_proxy_allows_policy_permitted_call()]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy_blocks_policy_denied_call()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/Community_35

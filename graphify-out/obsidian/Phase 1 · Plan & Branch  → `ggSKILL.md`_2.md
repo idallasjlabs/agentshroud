@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mc/SKILL.md"
+source_file: ".cursor/agents/i-mc.md"
 type: "document"
-community: "ledger row (id, timestamp, source, hashes, sanitized flag, expires_at)"
-location: "L12"
+community: "Community 1653"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ledger_row_id_timestamp_source_hashes_sanitized_flag_expires_at
+  - community/Community_1653
 ---
 
 # Phase 1 · Plan & Branch  → `gg/SKILL.md`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GSDE&G Development Master Checklist_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ledger_row_id_timestamp_source_hashes_sanitized_flag_expires_at
+#graphify/document #graphify/EXTRACTED #community/Community_1653

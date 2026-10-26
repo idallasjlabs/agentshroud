@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "concept"
-community: "test_jira_dev_ticket.py"
+community: "Community 179"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_jira_dev_ticketpy
+  - community/Community_179
 ---
 
 # workspace.sh Helper Script
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[WORKSPACE_USAGE]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_jira_dev_ticketpy
+#graphify/concept #graphify/EXTRACTED #community/Community_179

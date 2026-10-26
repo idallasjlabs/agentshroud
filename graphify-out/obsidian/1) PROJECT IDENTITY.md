@@ -1,17 +1,19 @@
 ---
-source_file: "CLAUDE.md"
+source_file: ".github/copilot-instructions.md"
 type: "document"
-community: "Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary) (2)"
-location: "L208"
+community: "Community 2195"
+location: "L562"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary_2
+  - community/Community_2195
 ---
 
 # 1) PROJECT IDENTITY
 
 ## Connections
-- [[Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]] - `contains` [EXTRACTED]
+- [[Key Files]] - `contains` [EXTRACTED]
+- [[LLM Operating Context — Isaiah Jefferson]] - `contains` [EXTRACTED]
+- [[Usage_49]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary_2
+#graphify/document #graphify/EXTRACTED #community/Community_2195

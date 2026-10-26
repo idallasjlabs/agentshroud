@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mnemosyne/SKILL.md"
+source_file: ".github/agents/i-sav.agent.md"
 type: "document"
-community: "hermes/manifest.json"
-location: "L25"
+community: "Community 328"
+location: "L401"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/manifestjson
+  - community/Community_328
 ---
 
-# Output Format
+# OUTPUT FORMAT
 
 ## Connections
-- [[Mnemosyne — Retention Engineer]] - `contains` [EXTRACTED]
+- [[System Audit Vault (Obsidian)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/manifestjson
+#graphify/document #graphify/EXTRACTED #community/Community_328

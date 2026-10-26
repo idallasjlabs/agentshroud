@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "ContextGuard"
+community: "Community 0"
 location: "L107"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ContextGuard
+  - community/Community_0
 ---
 
 # TestHTTPSecurity
 
 ## Connections
-- [[dot-test_crlf_in_prompt_guard()]] - `method` [EXTRACTED]
-- [[dot-test_deeply_nested_json()]] - `method` [EXTRACTED]
-- [[dot-test_json_injection_in_context()]] - `method` [EXTRACTED]
-- [[dot-test_null_byte_in_prompt()]] - `method` [EXTRACTED]
-- [[dot-test_oversized_json_payload()]] - `method` [EXTRACTED]
-- [[dot-test_polyglot_payload()]] - `method` [EXTRACTED]
-- [[dot-test_unicode_normalization_bypass()]] - `method` [EXTRACTED]
-- [[dot-test_xml_entity_expansion()]] - `method` [EXTRACTED]
+- [[.test_crlf_in_prompt_guard()]] - `method` [EXTRACTED]
+- [[.test_deeply_nested_json()]] - `method` [EXTRACTED]
+- [[.test_json_injection_in_context()]] - `method` [EXTRACTED]
+- [[.test_null_byte_in_prompt()]] - `method` [EXTRACTED]
+- [[.test_oversized_json_payload()]] - `method` [EXTRACTED]
+- [[.test_polyglot_payload()]] - `method` [EXTRACTED]
+- [[.test_unicode_normalization_bypass()]] - `method` [EXTRACTED]
+- [[.test_xml_entity_expansion()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
@@ -34,15 +34,15 @@ tags:
 - [[FileSandbox]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]
 - [[GitGuard]] - `uses` [INFERRED]
-- [[LogSanitizer]] - `uses` [INFERRED]
+- [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MetadataGuard]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[PIISanitizer_3]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[Session]] - `uses` [INFERRED]
 - [[SubagentEventType]] - `uses` [INFERRED]
 - [[Test HTTP-level security CRLF, header injection, content types.]] - `rationale_for` [EXTRACTED]
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ContextGuard
+#graphify/code #graphify/INFERRED #community/Community_0

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
+source_file: "docs/vault/05 - Dependencies/trivy.md"
 type: "document"
-community: "mcp_permissions.py"
-location: "L112"
+community: "Community 1139"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_permissionspy
+  - community/Community_1139
 ---
 
 # Related Notes
 
 ## Connections
-- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
+- [[Trivy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_permissionspy
+#graphify/document #graphify/EXTRACTED #community/Community_1139

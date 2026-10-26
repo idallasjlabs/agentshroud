@@ -1,17 +1,18 @@
 ---
-source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
+source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
 type: "document"
-community: "TestMCPProxyEndpoint"
-location: "L3"
+community: "Community 856"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMCPProxyEndpoint
+  - community/Community_856
 ---
 
 # Context
 
 ## Connections
-- [[Plan AgentShroud Security Hardening — Real Agent Containment]] - `contains` [EXTRACTED]
+- [[ADR-002 Default-Allow Security Philosophy]] - `contains` [EXTRACTED]
+- [[Evaluation Criteria]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMCPProxyEndpoint
+#graphify/document #graphify/EXTRACTED #community/Community_856

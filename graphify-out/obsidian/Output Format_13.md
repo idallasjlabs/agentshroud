@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-qa/SKILL.md"
+source_file: ".agents/agents/vulcan.md"
 type: "document"
-community: "DOCKER-VPN-NETWORKING.md"
-location: "L27"
+community: "Community 1951"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DOCKER-VPN-NETWORKINGmd
+  - community/Community_1951
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Quality Assurance (QA)_2]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd
+#graphify/document #graphify/EXTRACTED #community/Community_1951

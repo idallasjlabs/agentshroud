@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "code"
-community: "AgentShroud Phase Review — 2026-02-23"
+community: "Community 145"
 location: "L181"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_Review__2026-02-23
+  - community/Community_145
 ---
 
 # TestSwitchModelVerifyFlag
 
 ## Connections
 - [[--verify flag causes switch_model.sh to check both bots are healthy.]] - `rationale_for` [EXTRACTED]
-- [[dot-test_verify_flag_accepted_without_error()]] - `method` [EXTRACTED]
-- [[dot-test_verify_flag_with_model_ref()]] - `method` [EXTRACTED]
+- [[.test_verify_flag_accepted_without_error()]] - `method` [EXTRACTED]
+- [[.test_verify_flag_with_model_ref()]] - `method` [EXTRACTED]
 - [[test_switch_model_idempotent.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23
+#graphify/code #graphify/EXTRACTED #community/Community_145

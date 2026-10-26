@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
 type: "document"
-community: "Known Log Messages"
-location: "L103"
+community: "Community 820"
+location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Known_Log_Messages
+  - community/Community_820
 ---
 
 # Related
 
 ## Connections
-- [[drift_detector.py_2]] - `contains` [EXTRACTED]
+- [[ssh_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Known_Log_Messages
+#graphify/document #graphify/EXTRACTED #community/Community_820

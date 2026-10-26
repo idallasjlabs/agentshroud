@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "MultiTurnTracker"
+community: "Community 115"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/Community_115
 ---
 
 # SessionContext
 
 ## Connections
-- [[dot-_detect_rapid_context_growth()]] - `references` [EXTRACTED]
-- [[dot-analyze_message()]] - `calls` [EXTRACTED]
+- [[._detect_rapid_context_growth()]] - `references` [EXTRACTED]
+- [[.analyze_message()]] - `calls` [EXTRACTED]
 - [[Context tracking for a session.]] - `rationale_for` [EXTRACTED]
 - [[context_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/code #graphify/EXTRACTED #community/Community_115

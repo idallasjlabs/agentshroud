@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "Hermes Cron Dedupe (dev)"
+community: "Community 696"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Dedupe_dev
+  - community/Community_696
 ---
 
 # PAIRING_INSTRUCTIONS.md
@@ -17,4 +17,4 @@ tags:
 - [[TAILSCALE_SETUP]] - `conceptually_related_to` [INFERRED]
 - [[TELEGRAM_SETUP]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Dedupe_dev
+#graphify/document #graphify/EXTRACTED #community/Community_696

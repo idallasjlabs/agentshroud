@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-gg/SKILL.md"
+source_file: ".cursor/agents/i-pca.md"
 type: "document"
-community: "ADR-005: SHA-256 Hash Chain Audit Integrity (2)"
-location: "L7"
+community: "Community 1256"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity_2
+  - community/Community_1256
 ---
 
 # Role
 
 ## Connections
-- [[Skill Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
+- [[Skill Pre-Change Analysis (PCA)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity_2
+#graphify/document #graphify/EXTRACTED #community/Community_1256

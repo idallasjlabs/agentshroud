@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "rationale"
-community: "AgentTarget (2)"
+community: "Community 112"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/Community_112
 ---
 
 # Run the canary verification system.      Args:         pipeline: SecurityPipelin
 
 ## Connections
-- [[run_canary()_1]] - `rationale_for` [EXTRACTED]
+- [[run_canary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_112

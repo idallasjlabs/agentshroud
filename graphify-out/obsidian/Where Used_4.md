@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/fastapi.md"
+source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "EgressFilter"
-location: "L24"
+community: "Community 1082"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/Community_1082
 ---
 
 # Where Used
 
 ## Connections
-- [[FastAPI_2]] - `contains` [EXTRACTED]
+- [[Pydantic]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/Community_1082

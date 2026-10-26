@@ -1,17 +1,13 @@
 ---
-source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
+source_file: "docker/config/hermes/cron/prompts/newsletter-chat-front-ends-search-infra.txt"
 type: "document"
-community: "Browser — Secure Browser Automation"
-location: "L198"
+community: "Community 1680"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/Community_1680
 ---
 
-# Newsletter: Chat Front-Ends & Search Infra
+# Newsletter: Chat Front-ends & Search Infra
 
-## Connections
-- [[Job details]] - `contains` [EXTRACTED]
-
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/Community_1680

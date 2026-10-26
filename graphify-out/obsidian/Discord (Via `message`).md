@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/discord/SKILL.md"
 type: "document"
-community: "Skill: Pull Request (PR) Generator (3)"
+community: "Community 959"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Pull_Request_PR_Generator_3
+  - community/Community_959
 ---
 
 # Discord (Via `message`)
@@ -15,8 +15,8 @@ tags:
 - [[Common Actions (Examples)]] - `contains` [EXTRACTED]
 - [[Guidelines]] - `contains` [EXTRACTED]
 - [[Musts]] - `contains` [EXTRACTED]
+- [[SKILL_214]] - `contains` [EXTRACTED]
 - [[Targets]] - `contains` [EXTRACTED]
 - [[Writing Style (Discord)]] - `contains` [EXTRACTED]
-- [[discordSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator_3
+#graphify/document #graphify/EXTRACTED #community/Community_959

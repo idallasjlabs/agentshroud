@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-sav/SKILL.md"
+source_file: ".agents/agents/sav.md"
 type: "document"
-community: "migrate-cve-registry-ghsa.py"
-location: "L52"
+community: "Community 297"
+location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/migrate-cve-registry-ghsapy
+  - community/Community_297
 ---
 
 # Folder Structure
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OBSIDIAN VAULT RULES (Follow These Exactly)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy
+#graphify/document #graphify/EXTRACTED #community/Community_297

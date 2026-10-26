@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/1password/SKILL.md"
 type: "rationale"
-community: "Slack Channel Setup (2)"
+community: "Community 445"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_Channel_Setup_2
+  - community/Community_445
 ---
 
 # Required Dedicated tmux Session For op
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[1Password CLI Skill]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_Channel_Setup_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_445

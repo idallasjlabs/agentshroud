@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec/SKILL.md"
+source_file: ".cursor/agents/i-ti.md"
 type: "document"
-community: "Skill: Test-Driven Development (TDD) (3)"
-location: "L97"
+community: "Community 893"
+location: "L224"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Test-Driven_Development_TDD_3
+  - community/Community_893
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Security Review (SEC)_1]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD_3
+#graphify/document #graphify/EXTRACTED #community/Community_893

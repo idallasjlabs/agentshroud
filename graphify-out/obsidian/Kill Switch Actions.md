@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
 type: "document"
-community: "Workflow: Survey → Draft → Inject → Confirm"
+community: "Community 741"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workflow_Survey__Draft__Inject__Confirm
+  - community/Community_741
 ---
 
 # Kill Switch Actions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Kill Switch Procedure_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm
+#graphify/document #graphify/EXTRACTED #community/Community_741

@@ -1,18 +1,23 @@
 ---
-source_file: "gateway/ingest_api/lifespan.py"
+source_file: "docker/bots/hermes/dashboard_bridge.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L2322"
+community: "Community 591"
+location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/Community_591
 ---
 
 # _handle()
 
 ## Connections
+- [[StreamReader]] - `references` [EXTRACTED]
+- [[StreamWriter]] - `references` [EXTRACTED]
 - [[_pipe()]] - `calls` [EXTRACTED]
-- [[_run_hermes_api_forwarder()]] - `contains` [EXTRACTED]
+- [[_read_request_headers()]] - `calls` [EXTRACTED]
+- [[dashboard_bridge.py]] - `contains` [EXTRACTED]
+- [[main()_2]] - `calls` [EXTRACTED]
+- [[rewrite_request_headers()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/Community_591

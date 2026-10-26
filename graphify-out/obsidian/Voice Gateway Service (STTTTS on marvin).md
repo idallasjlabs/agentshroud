@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "concept"
-community: "format_upstream_cve_alert()"
+community: "Community 555"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/format_upstream_cve_alert
+  - community/Community_555
 ---
 
 # Voice Gateway Service (STT/TTS on marvin)
@@ -15,4 +15,4 @@ tags:
 - [[Reachability Context (cap_drop ALL, isolated network)]] - `conceptually_related_to` [INFERRED]
 - [[Tailscale Funnel Exposure (supersedes on-device client)]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/format_upstream_cve_alert
+#graphify/concept #graphify/EXTRACTED #community/Community_555

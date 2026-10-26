@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/cli/main.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
-location: "L5684"
+community: "Community 87"
+location: "L256"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/Community_87
 ---
 
 # deny()
 
 ## Connections
-- [[dot-test_egress_callback_applies_queue_decision()]] - `contains` [EXTRACTED]
+- [[Deny an egress request by ID.]] - `rationale_for` [EXTRACTED]
+- [[_output()]] - `calls` [EXTRACTED]
+- [[main.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/Community_87

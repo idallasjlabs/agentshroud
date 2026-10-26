@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "Community 7"
 location: "L355"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # Test require_approval=false executes directly (Finding #5)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSSHRequireApprovalFalse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

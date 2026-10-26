@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "graphify reference: GitHub clone and cross-repo merge"
+community: "Community 1353"
 location: "L196"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_GitHub_clone_and_cross-repo_merge
+  - community/Community_1353
 ---
 
 # E - Elevation of Privilege
@@ -17,4 +17,4 @@ tags:
 - [[Threat Docker Socket Access]] - `contains` [EXTRACTED]
 - [[Threat Prompt Injection Attacks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_GitHub_clone_and_cross-repo_merge
+#graphify/document #graphify/EXTRACTED #community/Community_1353

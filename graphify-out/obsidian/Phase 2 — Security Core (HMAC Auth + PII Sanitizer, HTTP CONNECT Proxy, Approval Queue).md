@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-23-roadmap-gantt.svg"
 type: "concept"
-community: "API Keys Setup Guide (2)"
+community: "Community 1097"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/API_Keys_Setup_Guide_2
+  - community/Community_1097
 ---
 
 # Phase 2 — Security Core (HMAC Auth + PII Sanitizer, HTTP CONNECT Proxy, Approval Queue)
@@ -14,4 +14,4 @@ tags:
 - [[Phase 1 — Foundation (Bot Container + Telegram, Gateway API + Ledger)]] - `conceptually_related_to` [EXTRACTED]
 - [[Phase 3 — Credential Isolation (Op-Proxy, 1Password service account)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/API_Keys_Setup_Guide_2
+#graphify/concept #graphify/EXTRACTED #community/Community_1097

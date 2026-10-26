@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
 type: "document"
-community: "v0.6.0 Baseline Results"
-location: "L82"
+community: "Community 732"
+location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/v060_Baseline_Results
+  - community/Community_732
 ---
 
 # Related
 
 ## Connections
-- [[mcp_config.py_2]] - `contains` [EXTRACTED]
+- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/v060_Baseline_Results
+#graphify/document #graphify/EXTRACTED #community/Community_732

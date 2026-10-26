@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "TestCollaboratorPromptClassifiers"
+community: "Community 506"
 location: "L559"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestCollaboratorPromptClassifiers
+  - community/Community_506
 ---
 
 # _get_local_secondary_model returns None if env var is unset.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_get_local_secondary_model_returns_none_when_unset()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers
+#graphify/rationale #graphify/EXTRACTED #community/Community_506

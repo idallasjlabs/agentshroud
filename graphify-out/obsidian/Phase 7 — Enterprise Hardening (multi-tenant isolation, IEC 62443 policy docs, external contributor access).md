@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-23-roadmap-gantt.svg"
 type: "concept"
-community: "API Keys Setup Guide (2)"
+community: "Community 1097"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/API_Keys_Setup_Guide_2
+  - community/Community_1097
 ---
 
 # Phase 7 — Enterprise Hardening (multi-tenant isolation, IEC 62443 policy docs, external contributor access)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Phase 6 — Observability (Prometheus + Grafana, log aggregation)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/API_Keys_Setup_Guide_2
+#graphify/concept #graphify/EXTRACTED #community/Community_1097

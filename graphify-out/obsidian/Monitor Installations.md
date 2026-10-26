@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "Deployment Runbook — AgentShroud"
+community: "Community 722"
 location: "L284"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deployment_Runbook__AgentShroud
+  - community/Community_722
 ---
 
 # Monitor Installations
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📊 Track Success]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deployment_Runbook__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Community_722

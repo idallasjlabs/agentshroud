@@ -1,23 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
+source_file: ".agents/agents/sf.md"
 type: "document"
-community: "MCP Doctor (MCPM-DOCTOR)"
-location: "L26"
+community: "Community 1445"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Doctor_MCPM-DOCTOR
+  - community/Community_1445
 ---
 
-# Operating Rules (Non-Negotiable)
+# Operating Rules (non-negotiable)
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent_1]] - `contains` [EXTRACTED]
-- [[Rule 1 All Regions, Every Time]] - `contains` [EXTRACTED]
-- [[Rule 2 Default Read-Only]] - `contains` [EXTRACTED]
-- [[Rule 3 Script Everything]] - `contains` [EXTRACTED]
-- [[Rule 4 Evidence-First Recommendations]] - `contains` [EXTRACTED]
-- [[Rule 5 Safe Tagging]] - `contains` [EXTRACTED]
-- [[Rule 6 Never Delete Automatically]] - `contains` [EXTRACTED]
+- [[Salesforce CLI (`sf`) Agent]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Doctor_MCPM-DOCTOR
+#graphify/document #graphify/EXTRACTED #community/Community_1445

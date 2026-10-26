@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "SubagentGovernance"
+community: "Community 1343"
 location: "L329"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SubagentGovernance
+  - community/Community_1343
 ---
 
 # Record a tool invocation.
 
 ## Connections
-- [[dot-record_tool_call()]] - `rationale_for` [EXTRACTED]
+- [[.record_tool_call()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SubagentGovernance
+#graphify/rationale #graphify/EXTRACTED #community/Community_1343

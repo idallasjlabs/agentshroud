@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_thinking_suppression.py"
 type: "code"
-community: "Steps"
+community: "Community 1943"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Steps
+  - community/Community_1943
 ---
 
 # test_nemotron_normalized_full_path_gets_reasoning_effort_none()
@@ -15,4 +15,4 @@ tags:
 - [[_req()]] - `calls` [EXTRACTED]
 - [[test_llm_proxy_thinking_suppression.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Steps
+#graphify/code #graphify/EXTRACTED #community/Community_1943

@@ -1,23 +1,17 @@
 ---
-source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
+source_file: "docs/setup-slack.md"
 type: "document"
-community: "Skill: Git Workflow Guardian (GIT-GUARD) (3)"
-location: "L28"
+community: "Community 324"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Git_Workflow_Guardian_GIT-GUARD_3
+  - community/Community_324
 ---
 
 # Architecture
 
 ## Connections
-- [[AgentShroud™ — Project Knowledge Base]] - `contains` [EXTRACTED]
-- [[Design Philosophy_1]] - `contains` [EXTRACTED]
-- [[F. Infrastructure]] - `contains` [EXTRACTED]
-- [[Infrastructure_1]] - `contains` [EXTRACTED]
-- [[Multi-Platform Support]] - `contains` [EXTRACTED]
-- [[Security Modules]] - `contains` [EXTRACTED]
-- [[The Security Pipeline]] - `contains` [EXTRACTED]
+- [[Slack Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD_3
+#graphify/document #graphify/EXTRACTED #community/Community_324

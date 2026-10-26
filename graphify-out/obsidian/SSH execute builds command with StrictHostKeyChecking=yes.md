@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "MCPPermissionManager (2)"
+community: "Community 7"
 location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/Community_7
 ---
 
 # SSH execute builds command with StrictHostKeyChecking=yes
 
 ## Connections
-- [[dot-test_ssh_command_uses_strict_checking()]] - `rationale_for` [EXTRACTED]
+- [[.test_ssh_command_uses_strict_checking()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

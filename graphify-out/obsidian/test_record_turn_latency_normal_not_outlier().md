@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_latency_guard.py"
 type: "code"
-community: "ProgressiveLockdown"
+community: "Community 77"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/Community_77
 ---
 
 # test_record_turn_latency_normal_not_outlier()
@@ -16,4 +16,4 @@ tags:
 - [[_record_turn_latency()]] - `calls` [EXTRACTED]
 - [[test_voice_latency_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/code #graphify/EXTRACTED #community/Community_77

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "ToolChainAnalyzer"
+community: "Community 8"
 location: "L306"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzer
+  - community/Community_8
 ---
 
 # Load custom patterns from configuration.
 
 ## Connections
-- [[dot-_load_custom_patterns()]] - `rationale_for` [EXTRACTED]
+- [[._load_custom_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolChainAnalyzer
+#graphify/rationale #graphify/EXTRACTED #community/Community_8

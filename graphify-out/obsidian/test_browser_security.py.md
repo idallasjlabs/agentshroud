@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "AgentShroud™ README"
+community: "Community 152"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_README
+  - community/Community_152
 ---
 
 # test_browser_security.py
@@ -18,6 +18,6 @@ tags:
 - [[TestSocialEngineeringDetection]] - `contains` [EXTRACTED]
 - [[TestURLReputation]] - `contains` [EXTRACTED]
 - [[browser_security.py]] - `imports_from` [EXTRACTED]
-- [[guard()_1]] - `contains` [EXTRACTED]
+- [[guard()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_README
+#graphify/code #graphify/EXTRACTED #community/Community_152

@@ -1,13 +1,13 @@
 ---
 source_file: "branding/icons/app/icon-128x128.png"
 type: "image"
-community: "chatbot/__init__.py"
+community: "Community 1633"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/chatbot/__init__py
+  - community/Community_1633
 ---
 
 # App Icon 128x128 (AgentShroud logo mark)
 
-#graphify/image #graphify/EXTRACTED #community/chatbot/__init__py
+#graphify/image #graphify/EXTRACTED #community/Community_1633

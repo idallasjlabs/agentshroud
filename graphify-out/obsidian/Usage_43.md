@@ -1,17 +1,23 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-defense/README.md"
+source_file: ".cursor/agents/browser.md"
 type: "document"
-community: "soc.js (4)"
-location: "L10"
+community: "Community 473"
+location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs_4
+  - community/Community_473
 ---
 
 # Usage
 
 ## Connections
-- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_3]] - `contains` [EXTRACTED]
+- [[Click Element_2]] - `contains` [EXTRACTED]
+- [[Extract Data_2]] - `contains` [EXTRACTED]
+- [[Fetch JavaScript-Heavy Page (Node.js)_2]] - `contains` [EXTRACTED]
+- [[Fill Form_2]] - `contains` [EXTRACTED]
+- [[Navigate to URL_2]] - `contains` [EXTRACTED]
+- [[Take Screenshot_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs_4
+#graphify/document #graphify/EXTRACTED #community/Community_473

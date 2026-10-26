@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/pydantic.md"
+source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "AgentShroud™ — Trademark Prior Use Record"
-location: "L22"
+community: "Community 2011"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__Trademark_Prior_Use_Record
+  - community/Community_2011
 ---
 
 # Where Used
 
 ## Connections
-- [[Pydantic]] - `contains` [EXTRACTED]
+- [[httpx_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record
+#graphify/document #graphify/EXTRACTED #community/Community_2011

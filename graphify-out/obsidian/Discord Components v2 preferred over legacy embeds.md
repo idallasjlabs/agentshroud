@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/discord/SKILL.md"
 type: "rationale"
-community: "Skill: Pull Request (PR) Generator (3)"
+community: "Community 959"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Skill_Pull_Request_PR_Generator_3
+  - community/Community_959
 ---
 
 # Discord Components v2 preferred over legacy embeds
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[message tool (channel=discord)]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_959

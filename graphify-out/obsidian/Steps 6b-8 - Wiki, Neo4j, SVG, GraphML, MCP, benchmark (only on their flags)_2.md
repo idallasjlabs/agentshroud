@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
+source_file: ".cursor/agents/graphify.md"
 type: "document"
-community: "What You Must Do When Invoked (2)"
-location: "L480"
+community: "Community 926"
+location: "L283"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked_2
+  - community/Community_926
 ---
 
 # Steps 6b-8 - Wiki, Neo4j, SVG, GraphML, MCP, benchmark (only on their flags)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[What You Must Do When Invoked_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked_2
+#graphify/document #graphify/EXTRACTED #community/Community_926

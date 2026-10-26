@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-bs/SKILL.md"
+source_file: ".github/agents/i-bs.agent.md"
 type: "document"
-community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements (2)"
-location: "L297"
+community: "Community 1013"
+location: "L303"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Required__45_for_text__30_for_UI_elements_2
+  - community/Community_1013
 ---
 
 # Dependencies
 
 ## Connections
-- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_2]] - `contains` [EXTRACTED]
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements_2
+#graphify/document #graphify/EXTRACTED #community/Community_1013

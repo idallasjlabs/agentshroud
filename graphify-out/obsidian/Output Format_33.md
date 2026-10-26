@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-vulcan/SKILL.md"
+source_file: ".cursor/agents/i-cr.md"
 type: "document"
-community: "Threat Model"
-location: "L26"
+community: "Community 2019"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Threat_Model
+  - community/Community_2019
 ---
 
 # Output Format
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_2]] - `contains` [EXTRACTED]
+- [[Skill Code Review (CR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Threat_Model
+#graphify/document #graphify/EXTRACTED #community/Community_2019

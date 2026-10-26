@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
+source_file: ".agents/skills/eightd-root-cause-analysis/SKILL.md"
 type: "document"
-community: "AgentShroud Phase 3 - Quick Start Guide"
+community: "Community 790"
 location: "L361"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
+  - community/Community_790
 ---
 
 # D6 — Implementation Verification
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[The 8D Investigation Process_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_790

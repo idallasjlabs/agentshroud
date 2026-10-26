@@ -1,19 +1,17 @@
 ---
-source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
+source_file: "docs/planning/v0.8/v0.8.0-egress-firewall.md"
 type: "document"
-community: "Docker Volumes"
-location: "L527"
+community: "Community 689"
+location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Volumes
+  - community/Community_689
 ---
 
 # Use Cases
 
 ## Connections
-- [[Best Use Cases for Distributed Node Approach]] - `contains` [EXTRACTED]
-- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
-- [[Not Ideal For]] - `contains` [EXTRACTED]
+- [[Feature Global Monitor-Only Mode (Observatory Mode)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Volumes
+#graphify/document #graphify/EXTRACTED #community/Community_689

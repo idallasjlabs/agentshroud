@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "rationale"
-community: "_pcm_bytes"
+community: "Community 86"
 location: "L393"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/Community_86
 ---
 
 # Unknown IP with no bot_hostnames registered → generic label, cached.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_agent_id_for_peer_unknown_no_hostnames()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/rationale #graphify/EXTRACTED #community/Community_86

@@ -1,18 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
+source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "OpenSCAP dependency note"
-location: "L51"
+community: "Community 663"
+location: "L417"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenSCAP_dependency_note
+  - community/Community_663
 ---
 
 # Security Hardening
 
 ## Connections
-- [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
-- [[Dockerfile.gateway vault note]] - `references` [EXTRACTED]
+- [[v1.3.0 — Platform Expansion (53 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenSCAP_dependency_note
+#graphify/document #graphify/EXTRACTED #community/Community_663

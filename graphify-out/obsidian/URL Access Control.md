@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "test_security.py"
-location: "L127"
+community: "Community 2080"
+location: "L236"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_securitypy
+  - community/Community_2080
 ---
 
 # URL Access Control
 
 ## Connections
-- [[Security Model]] - `contains` [EXTRACTED]
+- [[Security & Permissions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_securitypy
+#graphify/document #graphify/EXTRACTED #community/Community_2080

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/tmux/SKILL.md"
+source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
 type: "document"
-community: "agentshroud-gateway"
-location: "L12"
+community: "Community 741"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-gateway
+  - community/Community_741
 ---
 
 # When to Use
 
 ## Connections
-- [[tmux Session Control]] - `contains` [EXTRACTED]
+- [[Kill Switch Procedure_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway
+#graphify/document #graphify/EXTRACTED #community/Community_741

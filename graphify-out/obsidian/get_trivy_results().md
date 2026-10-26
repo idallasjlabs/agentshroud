@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "Community 10"
 location: "L2232"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/Community_10
 ---
 
 # get_trivy_results()
 
 ## Connections
 - [[Return the latest Trivy vulnerability scan results.      Trivy scans are run at]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller]] - `references` [EXTRACTED]
+- [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[get_trivy_summary()]] - `calls` [EXTRACTED]
-- [[socrouter.py]] - `contains` [EXTRACTED]
+- [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/Community_10

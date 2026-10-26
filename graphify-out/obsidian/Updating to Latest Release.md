@@ -1,19 +1,17 @@
 ---
-source_file: "docs/operations/raspberry-pi.md"
+source_file: "docs/operations/linux.md"
 type: "document"
-community: "MCPAuditTrail"
-location: "L93"
+community: "Community 601"
+location: "L131"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCPAuditTrail
+  - community/Community_601
 ---
 
 # Updating to Latest Release
 
 ## Connections
-- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - `contains` [EXTRACTED]
-- [[From Git (tracking main)]] - `contains` [EXTRACTED]
-- [[From a Tagged Release]] - `contains` [EXTRACTED]
+- [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCPAuditTrail
+#graphify/document #graphify/EXTRACTED #community/Community_601

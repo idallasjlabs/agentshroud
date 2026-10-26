@@ -1,17 +1,31 @@
 ---
-source_file: "tests/startup_smoke/test_sunday_upgrade_head_guard.sh"
+source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "test_canvas_proxy.py"
-location: "L45"
+community: "Community 126"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_canvas_proxypy
+  - community/Community_126
 ---
 
 # err()
 
 ## Connections
-- [[test_sunday_upgrade_head_guard.sh]] - `defines` [EXTRACTED]
+- [[_agent_selfcheck()]] - `calls` [EXTRACTED]
+- [[_assert_head_unchanged()]] - `calls` [EXTRACTED]
+- [[_attempt_rollback()]] - `calls` [EXTRACTED]
+- [[_container_is_up()]] - `calls` [EXTRACTED]
+- [[_ensure_build_space()]] - `calls` [EXTRACTED]
+- [[_take_apply_lock()]] - `calls` [EXTRACTED]
+- [[check_noop_gate()]] - `calls` [EXTRACTED]
+- [[die()_2]] - `calls` [EXTRACTED]
+- [[head-guard function extraction (line-number sed)]] - `references` [EXTRACTED]
+- [[phase_apply()]] - `calls` [EXTRACTED]
+- [[phase_baseline()]] - `calls` [EXTRACTED]
+- [[phase_preflight()]] - `calls` [EXTRACTED]
+- [[phase_verify()]] - `calls` [EXTRACTED]
+- [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
+- [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_canvas_proxypy
+#graphify/code #graphify/EXTRACTED #community/Community_126

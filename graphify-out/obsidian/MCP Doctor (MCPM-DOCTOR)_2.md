@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-doctor/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "TestOutboundInfoFilter"
+community: "Community 58"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/Community_58
 ---
 
 # MCP Doctor (MCPM-DOCTOR)
 
 ## Connections
-- [[Purpose_170]] - `contains` [EXTRACTED]
-- [[Related Skills_97]] - `contains` [EXTRACTED]
-- [[Usage_109]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
-- [[hermesskillsi-mcpm-doctorREADME]] - `contains` [EXTRACTED]
+- [[Purpose_92]] - `contains` [EXTRACTED]
+- [[README_97]] - `contains` [EXTRACTED]
+- [[Related Skills_115]] - `contains` [EXTRACTED]
+- [[SKILL_152]] - `contains` [EXTRACTED]
+- [[Usage_118]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/Community_58

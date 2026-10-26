@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "Community 223"
 location: "L250"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/Community_223
 ---
 
 # _save_overrides()
@@ -20,4 +20,4 @@ tags:
 - [[persist_group_member_remove()]] - `calls` [EXTRACTED]
 - [[persist_user_collab_mode()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/Community_223

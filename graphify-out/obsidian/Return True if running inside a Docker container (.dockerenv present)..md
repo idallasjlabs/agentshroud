@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "test_mfa_guard.py"
+community: "Community 29"
 location: "L412"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/Community_29
 ---
 
 # Return True if running inside a Docker container (/.dockerenv present).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_is_containerized()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_29

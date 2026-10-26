@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_alert_dispatcher_retry.py"
 type: "code"
-community: "§1 — Re-run of Prior Scenarios"
+community: "Community 1066"
 location: "L81"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/1__Re-run_of_Prior_Scenarios
+  - community/Community_1066
 ---
 
 # test_all_attempts_fail_logs_warning_not_error()
@@ -15,4 +15,4 @@ tags:
 - [[_alert()]] - `calls` [EXTRACTED]
 - [[test_alert_dispatcher_retry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/1__Re-run_of_Prior_Scenarios
+#graphify/code #graphify/EXTRACTED #community/Community_1066

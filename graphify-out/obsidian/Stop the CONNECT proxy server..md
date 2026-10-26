@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "rationale"
-community: "_pcm_bytes"
+community: "Community 81"
 location: "L159"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/Community_81
 ---
 
 # Stop the CONNECT proxy server.
 
 ## Connections
-- [[dot-stop()_12]] - `rationale_for` [EXTRACTED]
+- [[.stop()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/rationale #graphify/EXTRACTED #community/Community_81

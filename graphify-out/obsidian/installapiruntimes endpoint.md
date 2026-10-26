@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/templates/installer.html"
 type: "concept"
-community: "ordercli/SKILL.md"
+community: "Community 1502"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ordercli/SKILLmd
+  - community/Community_1502
 ---
 
 # /install/api/runtimes endpoint
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[loadRuntimes()]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ordercli/SKILLmd
+#graphify/concept #graphify/EXTRACTED #community/Community_1502

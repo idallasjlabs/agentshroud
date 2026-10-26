@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-daedalus/README.md"
+source_file: ".agents/skills/eightd-root-cause-analysis/README.md"
 type: "document"
-community: "Quality Assurance (QA)"
+community: "Community 2076"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quality_Assurance_QA
+  - community/Community_2076
 ---
 
 # Related Skills
 
 ## Connections
-- [[Daedalus — Concept Illustrator]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quality_Assurance_QA
+#graphify/document #graphify/EXTRACTED #community/Community_2076

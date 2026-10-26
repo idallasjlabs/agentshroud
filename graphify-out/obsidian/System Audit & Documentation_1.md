@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sad/SKILL.md"
+source_file: ".agents/skills/sad/SKILL.md"
 type: "document"
-community: "MiddlewareManager (7)"
+community: "Community 1340"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_7
+  - community/Community_1340
 ---
 
 # System Audit & Documentation
@@ -25,7 +25,6 @@ tags:
 - [[SECTION 7 — EVERY MODULE & FUNCTION REFERENCE_1]] - `contains` [EXTRACTED]
 - [[SECTION 8 — DATA FLOW_1]] - `contains` [EXTRACTED]
 - [[SECTION 9 — ERROR CATALOG_1]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-sadSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_67]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_7
+#graphify/document #graphify/EXTRACTED #community/Community_1340

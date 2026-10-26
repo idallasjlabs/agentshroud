@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "ContextSegment"
-location: "L498"
+community: "Community 1248"
+location: "L119"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ContextSegment
+  - graphify/EXTRACTED
+  - community/Community_1248
 ---
 
 # WebSocket
 
 ## Connections
-- [[dot-connect()_1]] - `references` [EXTRACTED]
-- [[dot-disconnect()_1]] - `references` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
-- [[ApprovalRequest_2]] - `uses` [INFERRED]
-- [[ApprovalStore]] - `uses` [INFERRED]
-- [[MFAGuard_2]] - `uses` [INFERRED]
-- [[ToolRiskConfig]] - `uses` [INFERRED]
-- [[ToolRiskPolicy]] - `uses` [INFERRED]
+- [[approval_websocket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/Community_1248

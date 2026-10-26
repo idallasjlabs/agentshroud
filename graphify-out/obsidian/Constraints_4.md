@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/04-separation-of-privilege.md"
+source_file: ".omp/agents/i-pr.md"
 type: "document"
-community: "🟢 INFO (nice to have)"
-location: "L266"
+community: "Community 1960"
+location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_INFO_nice_to_have
+  - community/Community_1960
 ---
 
 # Constraints
 
 ## Connections
-- [[Make gateway source code, config, and security policies read-only to the agent]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_INFO_nice_to_have
+#graphify/document #graphify/EXTRACTED #community/Community_1960

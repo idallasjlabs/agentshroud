@@ -1,12 +1,12 @@
 ---
-source_file: "skills/custom/icloud/SKILL.md"
+source_file: ".cursor/agents/icloud.md"
 type: "document"
-community: "AgentShroud Project Terminology"
-location: "L10"
+community: "Community 635"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Project_Terminology
+  - community/Community_635
 ---
 
 # Setup
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[iCloud Services_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Project_Terminology
+#graphify/document #graphify/EXTRACTED #community/Community_635

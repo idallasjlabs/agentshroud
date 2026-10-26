@@ -1,23 +1,22 @@
 ---
-source_file: "docker/config/openclaw/skills/i-qa/SKILL.md"
+source_file: ".cursor/agents/i-qa.md"
 type: "document"
-community: "DOCKER-VPN-NETWORKING.md"
-location: "L5"
+community: "Community 985"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DOCKER-VPN-NETWORKINGmd
+  - community/Community_985
 ---
 
 # Skill: Quality Assurance (QA)
 
 ## Connections
-- [[Objective_2]] - `contains` [EXTRACTED]
-- [[Output Format_13]] - `contains` [EXTRACTED]
+- [[Objective_5]] - `contains` [EXTRACTED]
+- [[Output Format_35]] - `contains` [EXTRACTED]
 - [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_2]] - `contains` [EXTRACTED]
-- [[Role_45]] - `contains` [EXTRACTED]
+- [[Role_100]] - `contains` [EXTRACTED]
 - [[Testing Hierarchy_2]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-qaSKILL]] - `contains` [EXTRACTED]
+- [[i-qa_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd
+#graphify/document #graphify/EXTRACTED #community/Community_985

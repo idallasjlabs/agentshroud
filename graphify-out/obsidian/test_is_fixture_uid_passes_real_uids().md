@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "Community 99"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/Community_99
 ---
 
 # test_is_fixture_uid_passes_real_uids()
@@ -15,4 +15,4 @@ tags:
 - [[_is_fixture_uid()]] - `calls` [EXTRACTED]
 - [[test_lifespan_prune.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/Community_99

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
 type: "concept"
-community: "Skill: UI Expert (UI)"
+community: "Community 210"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_UI_Expert_UI
+  - community/Community_210
 ---
 
 # WCAG AA Contrast Standard
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Branding Specialist (BS) (SKILL)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_UI_Expert_UI
+#graphify/concept #graphify/EXTRACTED #community/Community_210

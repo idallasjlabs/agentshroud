@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
+source_file: "docs/architecture/per-agent-isolation.md"
 type: "document"
-community: "AuditEvent"
-location: "L22"
+community: "Community 749"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditEvent
+  - community/Community_749
 ---
 
 # Overview
 
 ## Connections
-- [[llm_proxy.py_1]] - `contains` [EXTRACTED]
+- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditEvent
+#graphify/document #graphify/EXTRACTED #community/Community_749

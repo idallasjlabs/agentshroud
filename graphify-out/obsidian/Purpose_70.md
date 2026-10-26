@@ -1,18 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-cicd/README.md"
+source_file: "docker/config/hermes/skills/i-tdd/README.md"
 type: "document"
-community: "Skill: UI Expert (UI)"
+community: "Community 518"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UI_Expert_UI
+  - community/Community_518
 ---
 
 # Purpose
 
 ## Connections
-- [[CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
-- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
+- [[Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
+- [[Test-Driven Development README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI
+#graphify/document #graphify/EXTRACTED #community/Community_518

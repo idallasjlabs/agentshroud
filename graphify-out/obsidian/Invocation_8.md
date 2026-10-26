@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-crpr/SKILL.md"
+source_file: ".cursor/agents/i-hdev.md"
 type: "document"
-community: "Skill: Create PR with Pre-Flight Audit (CRPR) (2)"
-location: "L17"
+community: "Community 841"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR_2
+  - community/Community_841
 ---
 
 # Invocation
 
 ## Connections
-- [[Skill Create PR with Pre-Flight Audit (CRPR)_2]] - `contains` [EXTRACTED]
+- [[Skill Hermes Dev Workflow (HDEV)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR_2
+#graphify/document #graphify/EXTRACTED #community/Community_841

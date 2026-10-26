@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
+source_file: "docker/config/openclaw/skills/i-mc/README.md"
 type: "document"
-community: "alert_dispatcher.py"
-location: "L12"
+community: "Community 1234"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/alert_dispatcherpy
+  - community/Community_1234
 ---
 
 # Purpose
 
 ## Connections
-- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy
+#graphify/document #graphify/EXTRACTED #community/Community_1234

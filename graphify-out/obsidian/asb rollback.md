@@ -1,14 +1,14 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "Zabbix API unittest.mock test pattern"
+community: "Community 1883"
 location: "L714-L728"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Zabbix_API_unittestmock_test_pattern
+  - community/Community_1883
 ---
 
 # asb rollback
 
-#graphify/code #graphify/EXTRACTED #community/Zabbix_API_unittestmock_test_pattern
+#graphify/code #graphify/EXTRACTED #community/Community_1883

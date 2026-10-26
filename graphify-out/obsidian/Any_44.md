@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "gateway/security/killswitch_config.py"
 type: "code"
-community: "Any"
-location: "L231"
+community: "Community 9"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/Community_9
 ---
 
 # Any
 
 ## Connections
-- [[dot-_scan_for_canary()]] - `references` [EXTRACTED]
-- [[dot-get_status()]] - `references` [EXTRACTED]
+- [[.to_dict()_10]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/Community_9

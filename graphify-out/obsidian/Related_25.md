@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
 type: "document"
-community: "TrustConfig (2) (2)"
-location: "L109"
+community: "Community 776"
+location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TrustConfig_2_2
+  - community/Community_776
 ---
 
 # Related
 
 ## Connections
-- [[prompt_guard.py]] - `contains` [EXTRACTED]
+- [[web_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TrustConfig_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_776

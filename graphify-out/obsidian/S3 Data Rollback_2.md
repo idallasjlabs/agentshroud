@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-production/SKILL.md"
+source_file: ".cursor/agents/i-production.md"
 type: "document"
-community: "Atlas — Curriculum Architect"
-location: "L106"
+community: "Community 1180"
+location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/Community_1180
 ---
 
 # S3 Data Rollback
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 3 MITIGATE (Rollback First!)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/document #graphify/EXTRACTED #community/Community_1180

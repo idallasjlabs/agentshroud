@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-ui/SKILL.md"
+source_file: ".agents/agents/i-ui.md"
 type: "document"
-community: "Mode A — Single task"
-location: "L132"
+community: "Community 515"
+location: "L135"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/Community_515
 ---
 
 # Component Patterns
@@ -19,4 +19,4 @@ tags:
 - [[Navigation]] - `contains` [EXTRACTED]
 - [[Skill UI Expert (UI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/document #graphify/EXTRACTED #community/Community_515

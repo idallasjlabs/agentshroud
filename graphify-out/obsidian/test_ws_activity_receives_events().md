@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "CompetitiveIntelReport"
+community: "Community 62"
 location: "L158"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - community/Community_62
 ---
 
 # test_ws_activity_receives_events()
@@ -17,4 +17,4 @@ tags:
 - [[make_event()]] - `calls` [EXTRACTED]
 - [[test_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/code #graphify/EXTRACTED #community/Community_62

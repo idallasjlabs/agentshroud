@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_falco_watcher.py"
 type: "code"
-community: "LLMProxy.proxy_messages (non-streaming) (2)"
+community: "Community 531"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming_2
+  - community/Community_531
 ---
 
 # _make_alert()
@@ -19,4 +19,4 @@ tags:
 - [[test_no_progressive_lockdown_configured()]] - `calls` [EXTRACTED]
 - [[test_warning_alert_not_blocked()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming_2
+#graphify/code #graphify/EXTRACTED #community/Community_531

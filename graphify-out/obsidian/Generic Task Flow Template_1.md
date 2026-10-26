@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
+source_file: ".agents/skills/i-ux/SKILL.md"
 type: "document"
-community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE (2)"
-location: "L145"
+community: "Community 264"
+location: "L146"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE_2
+  - community/Community_264
 ---
 
 # Generic Task Flow Template
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[User Flow Diagrams_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE_2
+#graphify/document #graphify/EXTRACTED #community/Community_264

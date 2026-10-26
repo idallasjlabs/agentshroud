@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "colima-health-check.sh (2)"
+community: "Community 930"
 location: "L250"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/colima-health-checksh_2
+  - community/Community_930
 ---
 
 # Required Software
@@ -20,4 +20,4 @@ tags:
 - [[6. Tailscale (Optional but Recommended)]] - `contains` [EXTRACTED]
 - [[💻 System Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/colima-health-checksh_2
+#graphify/document #graphify/EXTRACTED #community/Community_930

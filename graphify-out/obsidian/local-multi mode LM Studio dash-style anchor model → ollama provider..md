@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_model_resolver.py"
 type: "rationale"
-community: "is_overloaded"
+community: "Community 134"
 location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/is_overloaded
+  - community/Community_134
 ---
 
 # local-multi mode: LM Studio dash-style anchor model → ollama provider.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_local_multi_mode_uses_lmstudio_dash_model()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/is_overloaded
+#graphify/rationale #graphify/EXTRACTED #community/Community_134

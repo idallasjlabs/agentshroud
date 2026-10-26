@@ -1,21 +1,22 @@
 ---
-source_file: "docker/config/openclaw/skills/i-apollo/README.md"
+source_file: ".agents/agents/apollo.md"
 type: "document"
-community: "SOC Command Center — Five Pillars"
-location: "L1"
+community: "Community 1351"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SOC_Command_Center__Five_Pillars
+  - community/Community_1351
 ---
 
 # Apollo — Audio Systems Producer
 
 ## Connections
-- [[Purpose_37]] - `contains` [EXTRACTED]
-- [[Related Skills_23]] - `contains` [EXTRACTED]
-- [[Usage_26]] - `contains` [EXTRACTED]
-- [[openclawskillsi-apolloREADME]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[Input Requirements]] - `contains` [EXTRACTED]
+- [[Output]] - `contains` [EXTRACTED]
+- [[Quality Checklist]] - `contains` [EXTRACTED]
+- [[Role_3]] - `contains` [EXTRACTED]
+- [[Technical Specification]] - `contains` [EXTRACTED]
+- [[apollo]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SOC_Command_Center__Five_Pillars
+#graphify/document #graphify/EXTRACTED #community/Community_1351

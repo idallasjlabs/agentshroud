@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/docker-compose.yml.md"
+source_file: "docs/vault/05 - Dependencies/fastapi.md"
 type: "document"
-community: "Seccomp Profiles"
-location: "L166"
+community: "Community 253"
+location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Seccomp_Profiles
+  - community/Community_253
 ---
 
 # Related Notes
 
 ## Connections
-- [[docker-compose.yml_1]] - `contains` [EXTRACTED]
+- [[FastAPI_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles
+#graphify/document #graphify/EXTRACTED #community/Community_253

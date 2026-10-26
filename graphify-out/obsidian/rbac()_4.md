@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_tool_acl.py"
+source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L41"
+community: "Community 60"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/Community_60
 ---
 
 # rbac()
 
 ## Connections
-- [[_make_rbac()]] - `calls` [EXTRACTED]
-- [[test_tool_acl.py]] - `contains` [EXTRACTED]
+- [[RBACConfig_1]] - `calls` [EXTRACTED]
+- [[TeamsConfig]] - `calls` [EXTRACTED]
+- [[test_shared_memory.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/Community_60

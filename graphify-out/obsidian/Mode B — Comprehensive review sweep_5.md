@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
+source_file: ".agents/skills/i-odev/references/mode-b-sweep.md"
 type: "document"
-community: "iCloud Services (3)"
-location: "L354"
+community: "Community 2060"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services_3
+  - community/Community_2060
 ---
 
 # Mode B — Comprehensive review sweep
 
 ## Connections
-- [[Skill OpenClaw Dev Workflow (ODEV)_2]] - `contains` [EXTRACTED]
-- [[Step 1 — One branch + worktree for the whole sweep_5]] - `contains` [EXTRACTED]
-- [[Step 2 — Work through directories one at a time_5]] - `contains` [EXTRACTED]
-- [[Step 3 — After the last directory (or a natural stopping point)_5]] - `contains` [EXTRACTED]
+- [[Step 1 — One branch + worktree for the whole sweep_1]] - `contains` [EXTRACTED]
+- [[Step 2 — Work through directories one at a time_1]] - `contains` [EXTRACTED]
+- [[Step 3 — After the last directory (or a natural stopping point)_1]] - `contains` [EXTRACTED]
+- [[mode-b-sweep_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services_3
+#graphify/document #graphify/EXTRACTED #community/Community_2060

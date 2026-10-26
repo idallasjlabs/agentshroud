@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-qa/SKILL.md"
+source_file: ".cursor/agents/i-qa.md"
 type: "document"
-community: "DOCKER-VPN-NETWORKING.md"
-location: "L283"
+community: "Community 985"
+location: "L288"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DOCKER-VPN-NETWORKINGmd
+  - community/Community_985
 ---
 
 # H.3 Database Tables for Test Data
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[H. Service Control for Production Testing_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd
+#graphify/document #graphify/EXTRACTED #community/Community_985

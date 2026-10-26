@@ -1,22 +1,23 @@
 ---
-source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
+source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "code"
-community: "test_hermes_cron_seed.py"
+community: "Community 194"
 location: "L286"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_cron_seedpy
+  - community/Community_194
 ---
 
 # add_comment()
 
 ## Connections
 - [[Add a comment to an existing Jira issue.]] - `rationale_for` [EXTRACTED]
+- [[RuntimeError]] - `calls` [INFERRED]
 - [[_auth_headers()]] - `calls` [EXTRACTED]
 - [[build_comment_payload()]] - `calls` [EXTRACTED]
 - [[build_comment_url()]] - `calls` [EXTRACTED]
-- [[openclawworkspacejira_dev_ticket.py]] - `contains` [EXTRACTED]
-- [[run()_2]] - `calls` [EXTRACTED]
+- [[jira_dev_ticket.py]] - `contains` [EXTRACTED]
+- [[run()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_cron_seedpy
+#graphify/code #graphify/EXTRACTED #community/Community_194

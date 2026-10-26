@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/README.md"
+source_file: ".cursor/agents/i-mcpm-doctor.md"
 type: "document"
-community: "AgentTarget (8)"
-location: "L14"
+community: "Community 1040"
+location: "L164"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentTarget_8
+  - community/Community_1040
 ---
 
 # Related Skills
 
 ## Connections
-- [[Technical Writer (TW)_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentTarget_8
+#graphify/document #graphify/EXTRACTED #community/Community_1040

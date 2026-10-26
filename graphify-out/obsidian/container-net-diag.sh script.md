@@ -1,25 +1,25 @@
 ---
 source_file: "docker/scripts/container-net-diag.sh"
 type: "code"
-community: "_script"
+community: "Community 932"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_script
+  - community/Community_932
 ---
 
 # container-net-diag.sh script
 
 ## Connections
 - [[container-net-diag.sh]] - `contains` [EXTRACTED]
-- [[fail()_5]] - `calls` [EXTRACTED]
+- [[fail()]] - `calls` [EXTRACTED]
 - [[has()]] - `calls` [EXTRACTED]
 - [[header()]] - `calls` [EXTRACTED]
 - [[http_test()]] - `calls` [EXTRACTED]
-- [[info()_2]] - `calls` [EXTRACTED]
-- [[pass()_4]] - `calls` [EXTRACTED]
+- [[info()]] - `calls` [EXTRACTED]
+- [[pass()]] - `calls` [EXTRACTED]
 - [[tcp_test()]] - `calls` [EXTRACTED]
-- [[warn()_5]] - `calls` [EXTRACTED]
+- [[warn()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_script
+#graphify/code #graphify/EXTRACTED #community/Community_932

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "soc/router.py"
+community: "Community 11"
 location: "L891"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/Community_11
 ---
 
 # Rapid successes should be capped by rate limiting.
 
 ## Connections
-- [[dot-test_rate_limiting_prevents_rapid_escalation()]] - `rationale_for` [EXTRACTED]
+- [[.test_rate_limiting_prevents_rapid_escalation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_11

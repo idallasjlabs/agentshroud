@@ -1,11 +1,11 @@
 ---
 source_file: "branding/colors/palette.md"
 type: "concept"
-community: "SSH Configuration Guide"
+community: "Community 395"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/SSH_Configuration_Guide
+  - community/Community_395
 ---
 
 # AgentShroud Blue #1583f0
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Color Palette]] - `references` [EXTRACTED]
 - [[Master Feature List (historical index)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/SSH_Configuration_Guide
+#graphify/concept #graphify/EXTRACTED #community/Community_395

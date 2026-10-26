@@ -1,13 +1,13 @@
 ---
 source_file: "branding/social/open-graph-1200x630.png"
 type: "image"
-community: "openclaw-ghsa-snapshot.json"
+community: "Community 1648"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/openclaw-ghsa-snapshotjson
+  - community/Community_1648
 ---
 
 # AgentShroud Open Graph Preview Image
 
-#graphify/image #graphify/EXTRACTED #community/openclaw-ghsa-snapshotjson
+#graphify/image #graphify/EXTRACTED #community/Community_1648

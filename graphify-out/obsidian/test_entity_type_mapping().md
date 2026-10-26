@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "code"
-community: "GroupConfig"
+community: "Community 32"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupConfig
+  - community/Community_32
 ---
 
 # test_entity_type_mapping()
@@ -16,4 +16,4 @@ tags:
 - [[_entity_type_mapping()]] - `calls` [EXTRACTED]
 - [[test_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupConfig
+#graphify/code #graphify/EXTRACTED #community/Community_32

@@ -1,17 +1,18 @@
 ---
-source_file: "docs/project/legal/TRADEMARK.md"
+source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "SecureBrowser Skill (3)"
-location: "L37"
+community: "Community 231"
+location: "L334"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill_3
+  - community/Community_231
 ---
 
 # Contact
 
 ## Connections
-- [[Trademark Notice_2]] - `contains` [EXTRACTED]
+- [[AgentShroud Brand Guidelines_1]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill_3
+#graphify/document #graphify/EXTRACTED #community/Community_231

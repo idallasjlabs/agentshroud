@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "TestCollaboratorPromptClassifiers"
+community: "Community 506"
 location: "L896"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestCollaboratorPromptClassifiers
+  - community/Community_506
 ---
 
 # Exception during secondary dispatch increments failed stat and returns None.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_local_secondary_failover_exception_returns_none()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers
+#graphify/rationale #graphify/EXTRACTED #community/Community_506

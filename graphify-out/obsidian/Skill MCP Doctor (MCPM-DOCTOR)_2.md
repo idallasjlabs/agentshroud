@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md"
+source_file: ".cursor/agents/i-mcpm-doctor.md"
 type: "document"
-community: "Skill: MCP Doctor (MCPM-DOCTOR) (2)"
-location: "L5"
+community: "Community 1040"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR_2
+  - community/Community_1040
 ---
 
 # Skill: MCP Doctor (MCPM-DOCTOR)
@@ -15,11 +15,10 @@ tags:
 - [[Common Issues & Fixes_2]] - `contains` [EXTRACTED]
 - [[Diagnostic Capabilities_2]] - `contains` [EXTRACTED]
 - [[Diagnostic Workflow_2]] - `contains` [EXTRACTED]
-- [[Output Format_17]] - `contains` [EXTRACTED]
-- [[Related Skills_64]] - `contains` [EXTRACTED]
-- [[Role_53]] - `contains` [EXTRACTED]
-- [[When to Invoke_5]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-mcpm-doctorSKILL]] - `contains` [EXTRACTED]
+- [[Output Format_34]] - `contains` [EXTRACTED]
+- [[Related Skills_45]] - `contains` [EXTRACTED]
+- [[Role_91]] - `contains` [EXTRACTED]
+- [[When to Invoke_8]] - `contains` [EXTRACTED]
+- [[i-mcpm-doctor_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR_2
+#graphify/document #graphify/EXTRACTED #community/Community_1040

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "PIIConfig"
+community: "Community 126"
 location: "L140-L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/Community_126
 ---
 
 # COMPOSE_CMD
@@ -20,4 +20,4 @@ tags:
 - [[detect_container_runtime()]] - `calls` [EXTRACTED]
 - [[phase_apply()]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/Community_126

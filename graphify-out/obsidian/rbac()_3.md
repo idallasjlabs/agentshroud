@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_shared_memory_write_acl.py"
+source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "SharedMemoryManager"
-location: "L74"
+community: "Community 97"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SharedMemoryManager
+  - community/Community_97
 ---
 
 # rbac()
 
 ## Connections
-- [[RBACConfig_3]] - `calls` [EXTRACTED]
-- [[TeamsConfig_1]] - `calls` [EXTRACTED]
-- [[test_shared_memory_write_acl.py]] - `contains` [EXTRACTED]
+- [[_make_rbac()]] - `calls` [EXTRACTED]
+- [[test_privacy_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager
+#graphify/code #graphify/EXTRACTED #community/Community_97

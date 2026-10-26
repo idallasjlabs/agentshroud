@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "MiddlewareManager (6)"
-location: "L123"
+community: "Community 557"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_6
+  - community/Community_557
 ---
 
 # Any
 
 ## Connections
-- [[dot-inspect()]] - `references` [EXTRACTED]
+- [[._format_alert_message()]] - `references` [EXTRACTED]
+- [[._log_alert()]] - `references` [EXTRACTED]
+- [[._send_notification()]] - `references` [EXTRACTED]
+- [[.dispatch()]] - `references` [EXTRACTED]
+- [[.get_digest()]] - `references` [EXTRACTED]
+- [[.get_stats()_12]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6
+#graphify/code #graphify/EXTRACTED #community/Community_557

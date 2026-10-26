@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
 type: "document"
-community: "OpenClaw cron: AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)"
+community: "Community 628"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh
+  - community/Community_628
 ---
 
 # agentshroud-bot.md
@@ -17,4 +17,4 @@ tags:
 - [[openclaw]] - `references` [EXTRACTED]
 - [[volumes]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh
+#graphify/document #graphify/EXTRACTED #community/Community_628

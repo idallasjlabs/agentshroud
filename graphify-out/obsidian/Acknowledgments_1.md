@@ -1,17 +1,20 @@
 ---
-source_file: "README.md"
+source_file: "docs/planning/v0.9/release-notes-v0.9.0.md"
 type: "document"
-community: "AuditExporter"
-location: "L493"
+community: "Community 189"
+location: "L443"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/Community_189
 ---
 
 # Acknowledgments
 
 ## Connections
-- [[AgentShroud™ README]] - `contains` [EXTRACTED]
+- [[Release Notes - AgentShroud v0.9.0]] - `contains` [EXTRACTED]
+- [[🏢 Enterprise Partners]] - `contains` [EXTRACTED]
+- [[👥 Contributors]] - `contains` [EXTRACTED]
+- [[🔒 Security Research]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditExporter
+#graphify/document #graphify/EXTRACTED #community/Community_189

@@ -1,20 +1,21 @@
 ---
-source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
+source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "code"
-community: "test_hermes_cron_seed.py"
+community: "Community 194"
 location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_cron_seedpy
+  - community/Community_194
 ---
 
 # resolve_cloud_id()
 
 ## Connections
 - [[Resolve a site domain to its Atlassian cloud ID via the public,     unauthentica]] - `rationale_for` [EXTRACTED]
+- [[RuntimeError]] - `calls` [INFERRED]
 - [[build_tenant_info_url()]] - `calls` [EXTRACTED]
 - [[fetch_credentials()]] - `calls` [EXTRACTED]
-- [[openclawworkspacejira_dev_ticket.py]] - `contains` [EXTRACTED]
+- [[jira_dev_ticket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_cron_seedpy
+#graphify/code #graphify/EXTRACTED #community/Community_194

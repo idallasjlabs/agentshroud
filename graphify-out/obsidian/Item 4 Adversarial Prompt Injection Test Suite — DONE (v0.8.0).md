@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md"
 type: "document"
-community: "System Audit Vault"
+community: "Community 1132"
 location: "L254"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Audit_Vault
+  - community/Community_1132
 ---
 
 # Item 4: Adversarial Prompt Injection Test Suite — **DONE (v0.8.0)**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DELIVERABLE 3 — v0.8.0 Implementation Items]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Audit_Vault
+#graphify/document #graphify/EXTRACTED #community/Community_1132

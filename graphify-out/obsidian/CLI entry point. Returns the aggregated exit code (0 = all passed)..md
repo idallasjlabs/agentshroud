@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "rationale"
-community: "🎯 High-Value Features (Justify the Effort)"
+community: "Community 785"
 location: "L313"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_High-Value_Features_Justify_the_Effort
+  - community/Community_785
 ---
 
 # CLI entry point. Returns the aggregated exit code (0 = all passed).
 
 ## Connections
-- [[main()_29]] - `rationale_for` [EXTRACTED]
+- [[main()_14]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_High-Value_Features_Justify_the_Effort
+#graphify/rationale #graphify/EXTRACTED #community/Community_785

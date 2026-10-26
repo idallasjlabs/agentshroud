@@ -1,17 +1,18 @@
 ---
-source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
+source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
 type: "document"
-community: "ADR-006: Multi-Runtime Container Support"
+community: "Community 631"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-006_Multi-Runtime_Container_Support
+  - community/Community_631
 ---
 
 # Context
 
 ## Connections
-- [[ADR-006 Multi-Runtime Container Support]] - `contains` [EXTRACTED]
+- [[ADR-001 Transparent Proxy vs Agent Modification]] - `contains` [EXTRACTED]
+- [[Key Considerations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support
+#graphify/document #graphify/EXTRACTED #community/Community_631

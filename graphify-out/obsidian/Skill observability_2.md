@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-observability/SKILL.md"
+source_file: ".cursor/agents/i-observability.md"
 type: "document"
-community: "LogSanitizer PII-Scrubbing Log Filter"
-location: "L5"
+community: "Community 2257"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LogSanitizer_PII-Scrubbing_Log_Filter
+  - community/Community_2257
 ---
 
 # Skill: observability
 
 ## Connections
-- [[openclawskillsi-observabilitySKILL]] - `contains` [EXTRACTED]
+- [[i-observability_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LogSanitizer_PII-Scrubbing_Log_Filter
+#graphify/document #graphify/EXTRACTED #community/Community_2257

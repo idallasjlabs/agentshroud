@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "document"
-community: ".update"
+community: "Community 704"
 location: "L209"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/update
+  - community/Community_704
 ---
 
 # SECTION 6: PRIOR SEARCH RESULTS
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud -- USPTO Trademark Application]] - `contains` [EXTRACTED]
 - [[Recommended Searches]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/update
+#graphify/document #graphify/EXTRACTED #community/Community_704

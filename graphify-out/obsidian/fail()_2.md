@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_sunday_prompt_unattended.sh"
+source_file: "docs/planning/reviews/enforcement-audit-script.py"
 type: "code"
-community: "AWS Cloud Management & FinOps Agent (2)"
-location: "L12"
+community: "Community 72"
+location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent_2
+  - community/Community_72
 ---
 
 # fail()
 
 ## Connections
-- [[test_sunday_prompt_unattended.sh]] - `defines` [EXTRACTED]
-- [[test_sunday_prompt_unattended.sh script]] - `calls` [EXTRACTED]
+- [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_2
+#graphify/code #graphify/EXTRACTED #community/Community_72

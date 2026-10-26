@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "_make_proxy()"
+community: "Community 34"
 location: "L90"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_34
 ---
 
 # Test listing all configured targets
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_list_targets()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_34

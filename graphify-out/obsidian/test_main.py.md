@@ -1,26 +1,26 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "code"
-community: "egress_filter.py"
+community: "Community 95"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/Community_95
 ---
 
 # test_main.py
 
 ## Connections
 - [[TestAsyncClient]] - `contains` [EXTRACTED]
-- [[TestAuth_1]] - `contains` [EXTRACTED]
+- [[TestAuth]] - `contains` [EXTRACTED]
 - [[TestAuthTokenSource]] - `contains` [EXTRACTED]
 - [[TestErrorSanitization]] - `contains` [EXTRACTED]
 - [[TestHealthCheck]] - `contains` [EXTRACTED]
 - [[TestLifespan]] - `contains` [EXTRACTED]
 - [[TestRateLimit]] - `contains` [EXTRACTED]
 - [[Tests for chatbotmain.py.  Covers the four SCRUM-109 fixes 1. Auth enforcement]] - `rationale_for` [EXTRACTED]
-- [[app()_1]] - `contains` [EXTRACTED]
-- [[client()_20]] - `contains` [EXTRACTED]
+- [[app()]] - `contains` [EXTRACTED]
+- [[client()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_filterpy
+#graphify/code #graphify/EXTRACTED #community/Community_95

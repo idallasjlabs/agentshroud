@@ -1,21 +1,26 @@
 ---
-source_file: "scripts/export-bot-conversations.py"
+source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "1. Accomplishments This Phase"
-location: "L232"
+community: "Community 8"
+location: "L1254"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/1_Accomplishments_This_Phase
+  - community/Community_8
 ---
 
 # main()
 
 ## Connections
-- [[Path_60]] - `calls` [EXTRACTED]
-- [[_parse_since()]] - `calls` [EXTRACTED]
-- [[export-bot-conversations.py]] - `contains` [EXTRACTED]
-- [[export_hermes()]] - `calls` [EXTRACTED]
-- [[export_openclaw()]] - `calls` [EXTRACTED]
+- [[CLI entry point.      Args         argv Optional argv override (for tests).]] - `rationale_for` [EXTRACTED]
+- [[_rel()]] - `calls` [EXTRACTED]
+- [[gap_report_path()]] - `calls` [EXTRACTED]
+- [[render_gap_report()]] - `calls` [EXTRACTED]
+- [[rewrite_registry_text()_1]] - `calls` [EXTRACTED]
+- [[summarize()]] - `calls` [EXTRACTED]
+- [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
+- [[triage_agent()]] - `calls` [EXTRACTED]
+- [[triage_agent_full()]] - `calls` [EXTRACTED]
+- [[untriageable_reason()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/1_Accomplishments_This_Phase
+#graphify/code #graphify/EXTRACTED #community/Community_8

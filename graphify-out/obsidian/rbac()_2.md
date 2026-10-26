@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_shared_memory.py"
+source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "SharedMemoryManager"
-location: "L65"
+community: "Community 65"
+location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SharedMemoryManager
+  - community/Community_65
 ---
 
 # rbac()
 
 ## Connections
-- [[RBACConfig_3]] - `calls` [EXTRACTED]
-- [[TeamsConfig_1]] - `calls` [EXTRACTED]
-- [[test_shared_memory.py]] - `contains` [EXTRACTED]
+- [[RBACConfig_1]] - `calls` [EXTRACTED]
+- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager
+#graphify/code #graphify/EXTRACTED #community/Community_65

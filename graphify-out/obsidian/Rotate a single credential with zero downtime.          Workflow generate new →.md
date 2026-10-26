@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "TestNormalizeForSpeech"
+community: "Community 198"
 location: "L341"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestNormalizeForSpeech
+  - community/Community_198
 ---
 
 # Rotate a single credential with zero downtime.          Workflow: generate new →
 
 ## Connections
-- [[dot-rotate_credential()]] - `rationale_for` [EXTRACTED]
+- [[.rotate_credential()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestNormalizeForSpeech
+#graphify/rationale #graphify/EXTRACTED #community/Community_198

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/mcp_audit.py"
+source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "What Does OpenClaw Actually Need to Write?"
-location: "L93"
+community: "Community 379"
+location: "L149"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/What_Does_OpenClaw_Actually_Need_to_Write
+  - graphify/INFERRED
+  - community/Community_379
 ---
 
 # Any
 
 ## Connections
-- [[dot-generate_report()]] - `references` [EXTRACTED]
-- [[dot-log_tool_call()]] - `references` [EXTRACTED]
+- [[.inspect()]] - `references` [EXTRACTED]
+- [[ContainerEngine_2]] - `uses` [INFERRED]
+- [[ContainerInfo_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write
+#graphify/code #graphify/INFERRED #community/Community_379

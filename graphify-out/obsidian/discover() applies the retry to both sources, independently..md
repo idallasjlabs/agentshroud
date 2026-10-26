@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "rationale"
-community: "Sunday Upgrade prompt"
+community: "Community 48"
 location: "L303"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/Community_48
 ---
 
 # discover() applies the retry to both sources, independently.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDiscoverRetries]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/rationale #graphify/EXTRACTED #community/Community_48

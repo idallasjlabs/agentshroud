@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "AgentShroud macOS App Icon (1024x1024, Rounded Squircle) (3)"
-location: "L67"
+community: "Community 184"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle_3
+  - community/Community_184
 ---
 
 # Any
 
 ## Connections
-- [[dot-recent()]] - `references` [EXTRACTED]
-- [[dot-tail()]] - `references` [EXTRACTED]
-- [[_check_host()]] - `references` [EXTRACTED]
+- [[.generate_report()]] - `references` [EXTRACTED]
+- [[.log_tool_call()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle_3
+#graphify/code #graphify/EXTRACTED #community/Community_184

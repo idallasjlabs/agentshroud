@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "test_mfa_guard.py"
+community: "Community 29"
 location: "L1696"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/Community_29
 ---
 
 # Score domain 21: Container Runtime Isolation (0-5). CIS Section 5.      0=privil
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_score_container_runtime_isolation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_29

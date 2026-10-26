@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "parse_clamscan_output"
+community: "Community 67"
 location: "L1036"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/parse_clamscan_output
+  - community/Community_67
 ---
 
 # Score domain 5: Runtime Protection (0-5).      1=module exists, 2=running with c
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_score_runtime_protection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/parse_clamscan_output
+#graphify/rationale #graphify/EXTRACTED #community/Community_67

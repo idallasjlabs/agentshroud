@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_launchd_install.sh"
 type: "code"
-community: "camsnap/SKILL.md"
+community: "Community 2089"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/camsnap/SKILLmd
+  - community/Community_2089
 ---
 
 # bad()
@@ -15,4 +15,4 @@ tags:
 - [[test_launchd_install.sh]] - `defines` [EXTRACTED]
 - [[test_launchd_install.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/camsnap/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/Community_2089

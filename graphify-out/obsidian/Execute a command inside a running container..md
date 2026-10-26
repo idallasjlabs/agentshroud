@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "MiddlewareManager (6)"
+community: "Community 225"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_6
+  - community/Community_225
 ---
 
 # Execute a command inside a running container.
 
 ## Connections
-- [[dot-exec()]] - `rationale_for` [EXTRACTED]
+- [[.exec()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_6
+#graphify/rationale #graphify/EXTRACTED #community/Community_225

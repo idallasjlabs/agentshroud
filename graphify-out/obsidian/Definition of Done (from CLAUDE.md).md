@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pm/SKILL.md"
+source_file: ".agents/agents/i-pm.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent (3)"
-location: "L82"
+community: "Community 1011"
+location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent_3
+  - community/Community_1011
 ---
 
 # Definition of Done (from CLAUDE.md)
 
 ## Connections
-- [[Task Coordination_1]] - `contains` [EXTRACTED]
+- [[Task Coordination]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_3
+#graphify/document #graphify/EXTRACTED #community/Community_1011

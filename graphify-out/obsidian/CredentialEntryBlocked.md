@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "AgentShroud™ README"
+community: "Community 152"
 location: "L39"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AgentShroud_README
+  - community/Community_152
 ---
 
 # CredentialEntryBlocked
 
 ## Connections
-- [[dot-can_enter_credentials()]] - `calls` [EXTRACTED]
-- [[Exception_2]] - `inherits` [EXTRACTED]
+- [[.can_enter_credentials()]] - `calls` [EXTRACTED]
+- [[Exception]] - `inherits` [EXTRACTED]
 - [[TestCredentialProtection]] - `uses` [INFERRED]
 - [[TestScreenshotAnalysis]] - `uses` [INFERRED]
 - [[TestSocialEngineeringDetection]] - `uses` [INFERRED]
 - [[TestURLReputation]] - `uses` [INFERRED]
 - [[browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AgentShroud_README
+#graphify/code #graphify/INFERRED #community/Community_152

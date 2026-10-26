@@ -1,18 +1,32 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "OpenClaw and Hermes are processed on fully separate paths; one failing never…"
-location: "L49"
+community: "Community 6"
+location: "L406"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never
+  - graphify/INFERRED
+  - community/Community_6
 ---
 
 # Exception
 
 ## Connections
-- [[SCLClient]] - `uses` [INFERRED]
-- [[_patch_urlopen()]] - `references` [EXTRACTED]
+- [[.test_forward_middleware_error_handling()]] - `calls` [EXTRACTED]
+- [[Action_1]] - `uses` [INFERRED]
+- [[ApprovalMode]] - `uses` [INFERRED]
+- [[ApprovalRequest_3]] - `uses` [INFERRED]
+- [[AuditExportConfig_1]] - `uses` [INFERRED]
+- [[AuditExporter]] - `uses` [INFERRED]
+- [[LedgerEntry_1]] - `uses` [INFERRED]
+- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
+- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[SSHExecRequest_1]] - `uses` [INFERRED]
+- [[SSHExecResponse]] - `uses` [INFERRED]
+- [[SSHWriteFileRequest_1]] - `uses` [INFERRED]
+- [[SSHWriteFileResponse]] - `uses` [INFERRED]
+- [[global_exception_handler()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never
+#graphify/code #graphify/INFERRED #community/Community_6

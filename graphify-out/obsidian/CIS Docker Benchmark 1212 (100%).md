@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/live-assessment-results.md"
 type: "document"
-community: "AgentShroud v0.8.0 Peer Review Round 3 (FINAL)"
+community: "Community 778"
 location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Peer_Review_Round_3_FINAL
+  - community/Community_778
 ---
 
 # CIS Docker Benchmark: 12/12 (100%)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v0.6.0 Baseline Results]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Peer_Review_Round_3_FINAL
+#graphify/document #graphify/EXTRACTED #community/Community_778

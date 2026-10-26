@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "SessionManager"
-location: "L439"
+community: "Community 112"
+location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/Community_112
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_findings_summary()]] - `references` [EXTRACTED]
+- [[.get_stats()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/Community_112

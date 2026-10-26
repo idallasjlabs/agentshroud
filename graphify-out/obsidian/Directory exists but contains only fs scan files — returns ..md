@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "rationale"
-community: "OpenClaw Skill Metadata Schema (frontmatter convention)"
+community: "Community 311"
 location: "L1159"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention
+  - community/Community_311
 ---
 
 # Directory exists but contains only fs scan files — returns [].
 
 ## Connections
-- [[dot-test_returns_empty_when_no_image_reports()]] - `rationale_for` [EXTRACTED]
+- [[.test_returns_empty_when_no_image_reports()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention
+#graphify/rationale #graphify/EXTRACTED #community/Community_311

@@ -1,23 +1,23 @@
 ---
-source_file: "docker/config/hermes/skills/i-cicd/SKILL.md"
+source_file: ".agents/skills/i-cicd/SKILL.md"
 type: "document"
-community: "Skill: UI Expert (UI)"
-location: "L5"
+community: "Community 948"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UI_Expert_UI
+  - community/Community_948
 ---
 
 # Skill: CI/CD Pipeline Advisor (CICD)
 
 ## Connections
-- [[Deployment Matrix (Direct to Prod)]] - `contains` [EXTRACTED]
+- [[Deployment Matrix  (Direct to Prod)_1]] - `contains` [EXTRACTED]
 - [[GitHub Actions Best Practices_1]] - `contains` [EXTRACTED]
 - [[Quality Gates  (execution order)_1]] - `contains` [EXTRACTED]
 - [[Review Flags  (block the merge)_1]] - `contains` [EXTRACTED]
-- [[Role_19]] - `contains` [EXTRACTED]
-- [[hermesskillsi-cicdSKILL]] - `contains` [EXTRACTED]
-- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[Role_46]] - `contains` [EXTRACTED]
+- [[SKILL_14]] - `contains` [EXTRACTED]
+- [[SKILL_17]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI
+#graphify/document #graphify/EXTRACTED #community/Community_948

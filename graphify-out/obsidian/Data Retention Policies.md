@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "AgentShroud Operations Cheat Sheet"
+community: "Community 491"
 location: "L321"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Operations_Cheat_Sheet
+  - community/Community_491
 ---
 
 # Data Retention Policies
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Data Dictionary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet
+#graphify/document #graphify/EXTRACTED #community/Community_491

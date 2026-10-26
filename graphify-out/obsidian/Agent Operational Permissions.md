@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "RateLimitGuard"
+community: "Community 204"
 location: "L118"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/Community_204
 ---
 
 # Agent Operational Permissions
@@ -17,4 +17,4 @@ tags:
 - [[External Service Access]] - `contains` [EXTRACTED]
 - [[Tool and Capability Access]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/document #graphify/EXTRACTED #community/Community_204

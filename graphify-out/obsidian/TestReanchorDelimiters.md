@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "PromptGuard"
+community: "Community 84"
 location: "L213"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/Community_84
 ---
 
 # TestReanchorDelimiters
 
 ## Connections
-- [[dot-guard()_1]] - `method` [EXTRACTED]
-- [[dot-test_preserves_legitimate_markdown()]] - `method` [EXTRACTED]
-- [[dot-test_strips_fake_system_tags()]] - `method` [EXTRACTED]
-- [[dot-test_strips_separator_overrides()]] - `method` [EXTRACTED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[.guard()_4]] - `method` [EXTRACTED]
+- [[.test_preserves_legitimate_markdown()]] - `method` [EXTRACTED]
+- [[.test_strips_fake_system_tags()]] - `method` [EXTRACTED]
+- [[.test_strips_separator_overrides()]] - `method` [EXTRACTED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[SystemPromptFingerprint]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[test_prompt_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptGuard
+#graphify/code #graphify/EXTRACTED #community/Community_84

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "code"
-community: "loadRuntimes"
+community: "Community 1492"
 location: "line 12"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/loadRuntimes
+  - community/Community_1492
 ---
 
 # SOCWebSocketHandler Subscription Filter Tests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SOC Auth WS Token IssuanceRedemption Tests]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/loadRuntimes
+#graphify/code #graphify/INFERRED #community/Community_1492

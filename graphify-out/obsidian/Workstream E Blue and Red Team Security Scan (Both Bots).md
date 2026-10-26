@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/v1.2.0-master-plan.md"
 type: "concept"
-community: "TrustManager"
+community: "Community 387"
 location: "Workstream E"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/Community_387
 ---
 
 # Workstream E: Blue and Red Team Security Scan (Both Bots)
@@ -17,7 +17,7 @@ tags:
 - [[AgentShroud v1.2.0 Master Plan]] - `references` [EXTRACTED]
 - [[Intent]] - `contains` [EXTRACTED]
 - [[Phases]] - `contains` [EXTRACTED]
-- [[Source of truth]] - `contains` [EXTRACTED]
+- [[Source of truth_1]] - `contains` [EXTRACTED]
 - [[Tests to add]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/TrustManager
+#graphify/concept #graphify/EXTRACTED #community/Community_387

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "ContextSegment"
+community: "Community 64"
 location: "L256"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/Community_64
 ---
 
 # Create an MCP proxy with approval queue.
 
 ## Connections
-- [[dot-mcp_proxy_with_approval()]] - `rationale_for` [EXTRACTED]
+- [[.mcp_proxy_with_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextSegment
+#graphify/rationale #graphify/EXTRACTED #community/Community_64

@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-daedalus/README.md"
+source_file: ".agents/skills/i-qa/README.md"
 type: "document"
-community: "soc.js (2)"
+community: "Community 177"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs_2
+  - community/Community_177
 ---
 
 # Related Skills
 
 ## Connections
-- [[Daedalus — Concept Illustrator_1]] - `contains` [EXTRACTED]
+- [[Quality Assurance (QA)]] - `contains` [EXTRACTED]
+- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs_2
+#graphify/document #graphify/EXTRACTED #community/Community_177

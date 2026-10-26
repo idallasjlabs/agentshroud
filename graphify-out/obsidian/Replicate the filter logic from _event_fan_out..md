@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "rationale"
-community: "_coerce_to_ws_event()"
+community: "Community 169"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_coerce_to_ws_event
+  - community/Community_169
 ---
 
 # Replicate the filter logic from _event_fan_out.
 
 ## Connections
-- [[dot-_matches()]] - `rationale_for` [EXTRACTED]
+- [[._matches()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_coerce_to_ws_event
+#graphify/rationale #graphify/EXTRACTED #community/Community_169

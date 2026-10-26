@@ -1,20 +1,23 @@
 ---
 source_file: "docs/setup/ICLOUD-SERVICES-SETUP.md"
 type: "document"
-community: "TestOutboundClassifierHelpers"
+community: "Community 349"
 location: "L148"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundClassifierHelpers
+  - community/Community_349
 ---
 
 # 📞 iCloud Contacts (CardDAV)
 
 ## Connections
 - [[Discovery Process]] - `contains` [EXTRACTED]
-- [[Server Settings_1]] - `contains` [EXTRACTED]
+- [[Discovery Process_1]] - `contains` [EXTRACTED]
+- [[Server Settings_2]] - `contains` [EXTRACTED]
+- [[Server Settings_4]] - `contains` [EXTRACTED]
 - [[Test CalDAV Connection]] - `contains` [EXTRACTED]
+- [[Test CardDAV Connection]] - `contains` [EXTRACTED]
 - [[iCloud Services Setup - Complete Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundClassifierHelpers
+#graphify/document #graphify/EXTRACTED #community/Community_349

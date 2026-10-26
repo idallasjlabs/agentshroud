@@ -1,11 +1,11 @@
 ---
 source_file: "docs/governance/BRANCH_PROTECTION.md"
 type: "concept"
-community: "AgentShroud User Guide"
+community: "Community 326"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_User_Guide
+  - community/Community_326
 ---
 
 # Local PreToolUse hook block_main_commits.sh (blocks commit/push/merge on main before GitHub is reached)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[GitHub Branch Protection — main (docsgovernanceBRANCH_PROTECTION.md)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_User_Guide
+#graphify/concept #graphify/EXTRACTED #community/Community_326

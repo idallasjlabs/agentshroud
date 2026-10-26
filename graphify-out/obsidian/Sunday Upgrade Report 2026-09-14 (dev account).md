@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-14.md"
 type: "document"
-community: "One Shroud Over Every Wire (founding mantra)"
+community: "Community 227"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/One_Shroud_Over_Every_Wire_founding_mantra
+  - community/Community_227
 ---
 
 # Sunday Upgrade Report 2026-09-14 (dev account)
@@ -16,4 +16,4 @@ tags:
 - [[sunday-upgrade-apply.sh]] - `references` [EXTRACTED]
 - [[sunday-upgrade.sh (remote-control launcher)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/One_Shroud_Over_Every_Wire_founding_mantra
+#graphify/document #graphify/EXTRACTED #community/Community_227

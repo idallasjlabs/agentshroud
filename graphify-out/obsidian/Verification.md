@@ -1,17 +1,18 @@
 ---
-source_file: "docs/governance/BRANCH_PROTECTION.md"
+source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "TestForwardToTelegramTimeouts"
-location: "L39"
+community: "Community 762"
+location: "L93"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestForwardToTelegramTimeouts
+  - community/Community_762
 ---
 
 # Verification
 
 ## Connections
-- [[GitHub Branch Protection — `main`]] - `contains` [EXTRACTED]
+- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
+- [[With VPN connected]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestForwardToTelegramTimeouts
+#graphify/document #graphify/EXTRACTED #community/Community_762

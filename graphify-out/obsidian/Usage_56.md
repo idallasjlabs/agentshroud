@@ -1,18 +1,24 @@
 ---
-source_file: "docker/config/hermes/skills/i-ps/README.md"
+source_file: "docker/README.md"
 type: "document"
-community: "OpenClaw Bot SSH Configuration"
-location: "L10"
+community: "Community 213"
+location: "L274"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_SSH_Configuration
+  - community/Community_213
 ---
 
 # Usage
 
 ## Connections
-- [[Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
-- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
+- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
+- [[Check Status_1]] - `contains` [EXTRACTED]
+- [[Hermes  HCI]] - `contains` [EXTRACTED]
+- [[Port Reference]] - `contains` [EXTRACTED]
+- [[Start the Stack]] - `contains` [EXTRACTED]
+- [[Stop the Stack_1]] - `contains` [EXTRACTED]
+- [[Test Chat]] - `contains` [EXTRACTED]
+- [[View Logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration
+#graphify/document #graphify/EXTRACTED #community/Community_213

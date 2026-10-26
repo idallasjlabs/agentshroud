@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/web/templates/installer.html"
 type: "code"
-community: "AWS RDS MCP server"
+community: "Community 1827"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AWS_RDS_MCP_server
+  - community/Community_1827
 ---
 
 # goStep()
 
-#graphify/code #graphify/EXTRACTED #community/AWS_RDS_MCP_server
+#graphify/code #graphify/EXTRACTED #community/Community_1827

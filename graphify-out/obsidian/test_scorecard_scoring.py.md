@@ -1,31 +1,31 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Feature: Global Monitor-Only Mode (\"Observatory Mode\")"
+community: "Community 686"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Feature_Global_Monitor-Only_Mode_Observatory_Mode
+  - community/Community_686
 ---
 
 # test_scorecard_scoring.py
 
 ## Connections
 - [[TestAppStateHas_1]] - `contains` [EXTRACTED]
-- [[TestIsFresh]] - `contains` [EXTRACTED]
+- [[TestIsFresh_1]] - `contains` [EXTRACTED]
 - [[TestScoreComplianceAuditing_1]] - `contains` [EXTRACTED]
-- [[TestScoreContainerHardening]] - `contains` [EXTRACTED]
+- [[TestScoreContainerHardening_1]] - `contains` [EXTRACTED]
 - [[TestScoreImageIntegrity_1]] - `contains` [EXTRACTED]
-- [[TestScoreIncidentResponse]] - `contains` [EXTRACTED]
-- [[TestScoreLoggingMonitoring]] - `contains` [EXTRACTED]
-- [[TestScoreMalwareDefense]] - `contains` [EXTRACTED]
-- [[TestScoreNetworkSegmentation]] - `contains` [EXTRACTED]
-- [[TestScoreRuntimeProtection]] - `contains` [EXTRACTED]
-- [[TestScoreSecretsManagement]] - `contains` [EXTRACTED]
+- [[TestScoreIncidentResponse_1]] - `contains` [EXTRACTED]
+- [[TestScoreLoggingMonitoring_1]] - `contains` [EXTRACTED]
+- [[TestScoreMalwareDefense_1]] - `contains` [EXTRACTED]
+- [[TestScoreNetworkSegmentation_1]] - `contains` [EXTRACTED]
+- [[TestScoreRuntimeProtection_1]] - `contains` [EXTRACTED]
+- [[TestScoreSecretsManagement_1]] - `contains` [EXTRACTED]
 - [[TestScoreSecureDevelopment_1]] - `contains` [EXTRACTED]
-- [[TestScoreSupplyChain]] - `contains` [EXTRACTED]
-- [[TestScoreVulnerabilityManagement]] - `contains` [EXTRACTED]
+- [[TestScoreSupplyChain_1]] - `contains` [EXTRACTED]
+- [[TestScoreVulnerabilityManagement_1]] - `contains` [EXTRACTED]
 - [[_mock_dir_with_files()]] - `contains` [EXTRACTED]
 - [[_mock_dir_with_fresh_files()]] - `contains` [EXTRACTED]
 - [[_mock_empty_dir()]] - `contains` [EXTRACTED]
@@ -40,4 +40,4 @@ tags:
 - [[not_run_trivy()]] - `contains` [EXTRACTED]
 - [[scanner_integration.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Feature_Global_Monitor-Only_Mode_Observatory_Mode
+#graphify/code #graphify/EXTRACTED #community/Community_686

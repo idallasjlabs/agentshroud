@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ti/SKILL.md"
+source_file: ".agents/agents/oracle.md"
 type: "document"
-community: "AgentShroud v0.7.0 — Red Team Remediation Plan"
-location: "L7"
+community: "Community 1979"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070__Red_Team_Remediation_Plan
+  - community/Community_1979
 ---
 
 # Role
 
 ## Connections
-- [[Skill Technical Illustrator (TI)]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070__Red_Team_Remediation_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_1979

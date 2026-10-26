@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "i-gg SKILL — Git Workflow Guardian (GIT-GUARD)"
+community: "Community 1006"
 location: "L595"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/i-gg_SKILL__Git_Workflow_Guardian_GIT-GUARD
+  - community/Community_1006
 ---
 
 # test_call_llm_stream_flushes_trailing_fragment()
@@ -17,4 +17,4 @@ tags:
 - [[_openai_delta_lines()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/i-gg_SKILL__Git_Workflow_Guardian_GIT-GUARD
+#graphify/code #graphify/EXTRACTED #community/Community_1006

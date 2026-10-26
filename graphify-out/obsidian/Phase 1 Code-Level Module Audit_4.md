@@ -1,0 +1,17 @@
+---
+source_file: ".omp/agents/sec-defense.md"
+type: "document"
+community: "Community 1332"
+location: "L34"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Community_1332
+---
+
+# Phase 1: Code-Level Module Audit
+
+## Connections
+- [[Audit Procedure_4]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Community_1332

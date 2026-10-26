@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
+source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
 type: "document"
-community: "Phase 2 — Security Core (HMAC Auth + PII Sanitizer, HTTP CONNECT Proxy, Approval Queue)"
-location: "L42"
+community: "Community 826"
+location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_2__Security_Core_HMAC_Auth__PII_Sanitizer_HTTP_CONNECT_Proxy_Approval_Queue
+  - community/Community_826
 ---
 
 # Related Notes
 
 ## Connections
-- [[aiosqlite_1]] - `contains` [EXTRACTED]
+- [[apply-patches.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_2__Security_Core_HMAC_Auth__PII_Sanitizer_HTTP_CONNECT_Proxy_Approval_Queue
+#graphify/document #graphify/EXTRACTED #community/Community_826

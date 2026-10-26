@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "i-gg SKILL — Git Workflow Guardian (GIT-GUARD)"
+community: "Community 1006"
 location: "L613"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/i-gg_SKILL__Git_Workflow_Guardian_GIT-GUARD
+  - community/Community_1006
 ---
 
 # A malformed/unexpected-shape SSE chunk is skipped, not fatal — a good     senten
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_call_llm_stream_skips_malformed_chunks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/i-gg_SKILL__Git_Workflow_Guardian_GIT-GUARD
+#graphify/rationale #graphify/EXTRACTED #community/Community_1006

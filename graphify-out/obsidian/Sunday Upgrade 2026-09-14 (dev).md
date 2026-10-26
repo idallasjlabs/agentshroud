@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-14.md"
 type: "document"
-community: "test_prompt_guard.py (2)"
+community: "Community 700"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_prompt_guardpy_2
+  - community/Community_700
 ---
 
 # Sunday Upgrade 2026-09-14 (dev)
@@ -16,4 +16,4 @@ tags:
 - [[Hermes Cron Dedupe (dev)]] - `references` [AMBIGUOUS]
 - [[OpenClaw BLOCKED — nodesqlite NUL Truncation]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_prompt_guardpy_2
+#graphify/document #graphify/EXTRACTED #community/Community_700

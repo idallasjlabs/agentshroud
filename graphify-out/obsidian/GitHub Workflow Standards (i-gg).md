@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-gg/SKILL.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM)"
+community: "Community 177"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM
+  - community/Community_177
 ---
 
 # GitHub Workflow Standards (i-gg)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Project Management (SKILL)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM
+#graphify/document #graphify/EXTRACTED #community/Community_177

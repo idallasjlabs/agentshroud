@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/QUICK_REFERENCE.md"
 type: "document"
-community: "test_llm_proxy_thinking_suppression.py"
+community: "Community 764"
 location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_llm_proxy_thinking_suppressionpy
+  - community/Community_764
 ---
 
 # Files
@@ -15,4 +15,4 @@ tags:
 - [[Quick Reference Card]] - `contains` [EXTRACTED]
 - [[Quick Reference Commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_llm_proxy_thinking_suppressionpy
+#graphify/document #graphify/EXTRACTED #community/Community_764

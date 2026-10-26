@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "WebhookReceiver Session Isolation Integration"
+community: "Community 1797"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebhookReceiver_Session_Isolation_Integration
+  - community/Community_1797
 ---
 
 # ToolChainAnalyzer.sanitize_tool_params (C34)
 
-#graphify/code #graphify/EXTRACTED #community/WebhookReceiver_Session_Isolation_Integration
+#graphify/code #graphify/EXTRACTED #community/Community_1797

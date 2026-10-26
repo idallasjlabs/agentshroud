@@ -1,17 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/main/ws_client.c"
+source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "TestMetadataGuard"
-location: "L32"
+community: "Community 378"
+location: "L199"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMetadataGuard
+  - community/Community_378
 ---
 
 # esp_event_base_t
 
 ## Connections
-- [[_on_event()]] - `references` [EXTRACTED]
+- [[wifi_event_handler()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMetadataGuard
+#graphify/code #graphify/EXTRACTED #community/Community_378

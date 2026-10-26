@@ -1,23 +1,24 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "PIIConfig"
-location: "L1138"
+community: "Community 126"
+location: "L1241"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/Community_126
 ---
 
 # phase_verify()
 
 ## Connections
+- [[_agent_selfcheck()]] - `calls` [EXTRACTED]
 - [[_attempt_rollback()]] - `calls` [EXTRACTED]
-- [[err()]] - `calls` [EXTRACTED]
-- [[log()_2]] - `calls` [EXTRACTED]
+- [[err()_1]] - `calls` [EXTRACTED]
+- [[log()_9]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply main sequence]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 - [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
-- [[warn()_1]] - `calls` [EXTRACTED]
+- [[warn()_5]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/Community_126

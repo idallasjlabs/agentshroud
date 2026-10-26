@@ -1,17 +1,17 @@
 ---
-source_file: "docs/user-guide.md"
-type: "document"
-community: ".test_stranger_within_limit_triggers_approval_workflow()"
-location: "L38"
+source_file: "cli/src/main.rs"
+type: "code"
+community: "Community 39"
+location: "L57"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/test_stranger_within_limit_triggers_approval_workflow
+  - community/Community_39
 ---
 
 # Commands
 
 ## Connections
-- [[Interacting via Telegram]] - `contains` [EXTRACTED]
+- [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_stranger_within_limit_triggers_approval_workflow
+#graphify/code #graphify/EXTRACTED #community/Community_39

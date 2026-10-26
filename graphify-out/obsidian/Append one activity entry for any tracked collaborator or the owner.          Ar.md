@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "Community 99"
 location: "L136"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/Community_99
 ---
 
 # Append one activity entry for any tracked collaborator or the owner.          Ar
 
 ## Connections
-- [[dot-record_activity()]] - `rationale_for` [EXTRACTED]
+- [[.record_activity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_99

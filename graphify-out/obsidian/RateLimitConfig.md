@@ -1,20 +1,22 @@
 ---
 source_file: "gateway/security/rate_limit_guard.py"
 type: "code"
-community: "CI/CD Pipeline Advisor (SKILL)"
+community: "Community 206"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_SKILL
+  - community/Community_206
 ---
 
 # RateLimitConfig
 
 ## Connections
-- [[dot-__init__()_89]] - `references` [EXTRACTED]
+- [[.__init__()_111]] - `references` [EXTRACTED]
 - [[Configuration for class`RateLimitGuard`.      All windows are per (agent_id, t]] - `rationale_for` [EXTRACTED]
 - [[FakeClock]] - `uses` [INFERRED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[rate_limit_guard.py]] - `contains` [EXTRACTED]
 - [[test_burst_clears_after_burst_window()]] - `calls` [EXTRACTED]
 - [[test_burst_detection_blocks()]] - `calls` [EXTRACTED]
@@ -32,4 +34,4 @@ tags:
 - [[test_under_limit_allows()]] - `calls` [EXTRACTED]
 - [[test_window_slides_and_allows_again()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL
+#graphify/code #graphify/EXTRACTED #community/Community_206

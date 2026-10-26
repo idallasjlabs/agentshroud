@@ -1,21 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/SKILL.md"
+source_file: "docker/config/hermes/skills/i-apollo/README.md"
 type: "document"
-community: "hermes/workspace/jira_dev_ticket.py"
-location: "L54"
+community: "Community 90"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/workspace/jira_dev_ticketpy
+  - community/Community_90
 ---
 
 # Usage
 
 ## Connections
-- [[Click Element]] - `contains` [EXTRACTED]
-- [[Extract Data]] - `contains` [EXTRACTED]
-- [[Navigate to URL]] - `contains` [EXTRACTED]
-- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
-- [[Take Screenshot]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/workspace/jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/Community_90

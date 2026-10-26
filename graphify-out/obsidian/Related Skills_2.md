@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-data/README.md"
+source_file: ".agents/agents/i-mcpm-doctor.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md (2)"
-location: "L14"
+community: "Community 1010"
+location: "L164"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd_2
+  - community/Community_1010
 ---
 
 # Related Skills
 
 ## Connections
-- [[Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
+- [[Skill MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_2
+#graphify/document #graphify/EXTRACTED #community/Community_1010

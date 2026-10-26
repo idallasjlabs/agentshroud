@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm/SKILL.md"
+source_file: ".cursor/agents/i-mm.md"
 type: "document"
-community: "_t (3)"
-location: "L7"
+community: "Community 624"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_t_3
+  - community/Community_624
 ---
 
 # Role
 
 ## Connections
-- [[Skill MCP Tools Usage (MCP-TOOLS)_2]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_t_3
+#graphify/document #graphify/EXTRACTED #community/Community_624

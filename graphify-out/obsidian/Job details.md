@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
+community: "Community 275"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/Community_275
 ---
 
 # Job details
@@ -27,6 +27,7 @@ tags:
 - [[Hermes Competitive Intelligence Email (AMPM)]] - `contains` [EXTRACTED]
 - [[Hermes Competitive Landscape Update (AMPM)]] - `contains` [EXTRACTED]
 - [[Hermes Cron Jobs Reference & Recreation Guide]] - `contains` [EXTRACTED]
+- [[Hermes Cron Jobs — Reference & Recreation Guide]] - `contains` [EXTRACTED]
 - [[Monthly Chaos Engineering Drill]] - `contains` [EXTRACTED]
 - [[Newsletter Chat Front-Ends & Search Infra]] - `contains` [EXTRACTED]
 - [[Newsletter Coding-Agent CLIs]] - `contains` [EXTRACTED]
@@ -43,4 +44,4 @@ tags:
 - [[Weekly job-log cleanup]] - `contains` [EXTRACTED]
 - [[jira-weekly-review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/Community_275

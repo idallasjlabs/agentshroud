@@ -1,29 +1,29 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "ReportStore"
+community: "Community 116"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/Community_116
 ---
 
 # _StubForwarder
 
 ## Connections
-- [[dot-__init__()_37]] - `method` [EXTRACTED]
-- [[dot-forward()]] - `method` [EXTRACTED]
-- [[A2AMethod_1]] - `uses` [INFERRED]
-- [[A2APolicyConfig_1]] - `uses` [INFERRED]
-- [[A2APolicyEngine_2]] - `uses` [INFERRED]
-- [[A2AProxy_1]] - `uses` [INFERRED]
+- [[.__init__()_137]] - `method` [EXTRACTED]
+- [[.forward()_2]] - `method` [EXTRACTED]
+- [[A2AMethod]] - `uses` [INFERRED]
+- [[A2APolicyConfig]] - `uses` [INFERRED]
+- [[A2APolicyEngine_1]] - `uses` [INFERRED]
+- [[A2AProxy]] - `uses` [INFERRED]
 - [[A2AProxyResult]] - `uses` [INFERRED]
 - [[DifferentialPIIConfig]] - `uses` [INFERRED]
-- [[DifferentialPIIDetector_1]] - `uses` [INFERRED]
+- [[DifferentialPIIDetector]] - `uses` [INFERRED]
 - [[Records what it was asked to forward; returns a canned response.]] - `rationale_for` [EXTRACTED]
 - [[forwarder()]] - `references` [EXTRACTED]
-- [[proxy()]] - `references` [EXTRACTED]
+- [[proxy()_1]] - `references` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 - [[test_agent_card_discovery_is_never_policy_gated()]] - `references` [EXTRACTED]
 - [[test_agent_card_discovery_is_still_audited()]] - `references` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[test_process_inbound_request_task_ownership_violation_blocked()]] - `references` [EXTRACTED]
 - [[test_process_inbound_request_unknown_token_is_blocked()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportStore
+#graphify/code #graphify/EXTRACTED #community/Community_116

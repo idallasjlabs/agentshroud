@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
+source_file: ".cursor/agents/i-tw.md"
 type: "document"
-community: "Path (3)"
-location: "L286"
+community: "Community 729"
+location: "L234"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Path_3
+  - community/Community_729
 ---
 
 # Validation Checklist
 
 ## Connections
-- [[Skill Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
+- [[→ {site site1, test_mode True, output_prefix _testsite1}_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Path_3
+#graphify/document #graphify/EXTRACTED #community/Community_729

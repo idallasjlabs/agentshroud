@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
+source_file: ".agents/skills/icloud/SKILL.md"
 type: "document"
-community: "Skill: UI Expert (UI) (3)"
+community: "Community 623"
 location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UI_Expert_UI_3
+  - community/Community_623
 ---
 
 # Contact Operations
@@ -18,4 +18,4 @@ tags:
 - [[Update Contact_1]] - `contains` [EXTRACTED]
 - [[iCloud Services_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI_3
+#graphify/document #graphify/EXTRACTED #community/Community_623

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_observatory_mode.py"
+source_file: "gateway/tests/test_version_routes.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L72"
+community: "Community 447"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/Community_447
 ---
 
 # client()
 
 ## Connections
-- [[_make_app()]] - `calls` [EXTRACTED]
-- [[test_observatory_mode.py]] - `contains` [EXTRACTED]
+- [[test_version_routes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/Community_447

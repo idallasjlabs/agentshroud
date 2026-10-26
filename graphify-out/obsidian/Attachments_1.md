@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/himalaya/SKILL.md"
+source_file: "skills/openclaw/himalaya/references/message-composition.md"
 type: "document"
-community: "Himalaya Email CLI"
-location: "L215"
+community: "Community 475"
+location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Himalaya_Email_CLI
+  - community/Community_475
 ---
 
 # Attachments
 
 ## Connections
-- [[Himalaya Email CLI]] - `contains` [EXTRACTED]
+- [[MML for Rich Emails]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Himalaya_Email_CLI
+#graphify/document #graphify/EXTRACTED #community/Community_475

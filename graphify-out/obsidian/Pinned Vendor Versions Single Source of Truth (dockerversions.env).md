@@ -1,16 +1,16 @@
 ---
 source_file: ".github/workflows/update-cve-page.yml"
 type: "rationale"
-community: "agentshroud-ieee-paper.md"
+community: "Community 394"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agentshroud-ieee-papermd
+  - community/Community_394
 ---
 
 # Pinned Vendor Versions Single Source of Truth (docker/versions.env)
 
 ## Connections
-- [[Daily CVE Sync + Page Update Workflow_1]] - `references` [EXTRACTED]
+- [[Daily CVE Sync + Page Update Workflow]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agentshroud-ieee-papermd
+#graphify/rationale #graphify/EXTRACTED #community/Community_394

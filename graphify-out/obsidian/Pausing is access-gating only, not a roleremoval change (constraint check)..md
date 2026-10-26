@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "Canvas Skill"
+community: "Community 216"
 location: "L647"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Canvas_Skill
+  - community/Community_216
 ---
 
 # Pausing is access-gating only, not a role/removal change (constraint check).
 
 ## Connections
-- [[dot-test_pause_does_not_remove_from_collaborator_role()]] - `rationale_for` [EXTRACTED]
+- [[.test_pause_does_not_remove_from_collaborator_role()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Canvas_Skill
+#graphify/rationale #graphify/EXTRACTED #community/Community_216

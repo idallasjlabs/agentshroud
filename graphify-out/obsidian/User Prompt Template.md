@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
+source_file: ".agents/agents/athena.md"
 type: "document"
-community: "Skill: Data Validation (DATA-VAL) (3)"
-location: "L154"
+community: "Community 1557"
+location: "L133"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Data_Validation_DATA-VAL_3
+  - community/Community_1557
 ---
 
 # User Prompt Template
 
 ## Connections
-- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
+- [[description of what this does]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL_3
+#graphify/document #graphify/EXTRACTED #community/Community_1557

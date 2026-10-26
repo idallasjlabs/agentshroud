@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/browse.js"
+source_file: "tests/startup_smoke/test_wire_llm_settings.js"
 type: "code"
-community: "Commit list 2026-10-10 through 2026-10-16 on main"
-location: "L8"
+community: "Community 682"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Commit_list_2026-10-10_through_2026-10-16_on_main
+  - community/Community_682
 ---
 
 # path
 
 ## Connections
-- [[openclawskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
+- [[test_wire_llm_settings.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Commit_list_2026-10-10_through_2026-10-16_on_main
+#graphify/code #graphify/EXTRACTED #community/Community_682

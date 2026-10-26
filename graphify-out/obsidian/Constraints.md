@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/06-outbound-info-filter.md"
+source_file: ".agents/agents/i-pr.md"
 type: "document"
-community: "Function Details (3)"
-location: "L383"
+community: "Community 1950"
+location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details_3
+  - community/Community_1950
 ---
 
 # Constraints
 
 ## Connections
-- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details_3
+#graphify/document #graphify/EXTRACTED #community/Community_1950

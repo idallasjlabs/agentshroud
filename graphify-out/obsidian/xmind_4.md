@@ -1,22 +1,22 @@
 ---
-source_file: ".omp/mcp.json"
+source_file: ".pi/mcp.json"
 type: "code"
-community: ".omp/mcp.json (2)"
+community: "Community 405"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/omp/mcpjson_2
+  - community/Community_405
 ---
 
 # xmind
 
 ## Connections
-- [[dot-ompmcp.json]] - `contains` [EXTRACTED]
-- [[opthomebrewbinnpx_3]] - `references` [EXTRACTED]
-- [[PATH_44]] - `requires_env` [EXTRACTED]
+- [[opthomebrewbinnpx_4]] - `references` [EXTRACTED]
+- [[PATH_4]] - `requires_env` [EXTRACTED]
 - [[autoOpenFile_4]] - `requires_env` [EXTRACTED]
+- [[mcp.json_3]] - `contains` [EXTRACTED]
 - [[outputPath_4]] - `requires_env` [EXTRACTED]
-- [[xmind-generator-mcp_3]] - `references` [EXTRACTED]
+- [[xmind-generator-mcp_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/omp/mcpjson_2
+#graphify/code #graphify/EXTRACTED #community/Community_405

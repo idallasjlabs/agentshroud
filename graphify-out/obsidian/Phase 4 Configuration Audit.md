@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
+source_file: ".agents/agents/sec-defense.md"
 type: "document"
-community: "System Audit & Documentation (3)"
-location: "L106"
+community: "Community 1279"
+location: "L108"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Audit__Documentation_3
+  - community/Community_1279
 ---
 
 # Phase 4: Configuration Audit
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Audit Procedure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Audit__Documentation_3
+#graphify/document #graphify/EXTRACTED #community/Community_1279

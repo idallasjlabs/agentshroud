@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "MiddlewareManager (5)"
+community: "Community 164"
 location: "L343"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/Community_164
 ---
 
 # Authentication and Authorization Framework
@@ -17,4 +17,4 @@ tags:
 - [[Approval Queue Workflow]] - `contains` [EXTRACTED]
 - [[Trust Level Progression]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/document #graphify/EXTRACTED #community/Community_164

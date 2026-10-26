@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "FalcoAlertWatcher"
+community: "Community 281"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/Community_281
 ---
 
 # IntEnum
@@ -16,7 +16,7 @@ tags:
 - [[PIIHitSeverity]] - `inherits` [EXTRACTED]
 - [[Recommendation]] - `inherits` [EXTRACTED]
 - [[Severity]] - `inherits` [EXTRACTED]
-- [[ThreatLevel]] - `inherits` [EXTRACTED]
+- [[ThreatLevel_1]] - `inherits` [EXTRACTED]
 - [[TrustLevel_1]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/Community_281

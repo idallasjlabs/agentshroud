@@ -1,17 +1,17 @@
 ---
 source_file: "branding/agentshroud-mockup.png"
 type: "image"
-community: "run-standalone.sh (Hermes docker run launcher) (2)"
+community: "Community 861"
 tags:
   - graphify/image
   - graphify/AMBIGUOUS
-  - community/run-standalonesh_Hermes_docker_run_launcher_2
+  - community/Community_861
 ---
 
 # AgentShroud Merchandise/Stationery Mockup
 
 ## Connections
 - [[AgentShroud Primary Logo]] - `conceptually_related_to` [INFERRED]
-- [[brandingREADME]] - `references` [AMBIGUOUS]
+- [[README_38]] - `references` [AMBIGUOUS]
 
-#graphify/image #graphify/AMBIGUOUS #community/run-standalonesh_Hermes_docker_run_launcher_2
+#graphify/image #graphify/AMBIGUOUS #community/Community_861

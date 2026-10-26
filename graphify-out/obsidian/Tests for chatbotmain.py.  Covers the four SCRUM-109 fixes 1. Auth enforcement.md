@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "rationale"
-community: "egress_filter.py"
+community: "Community 95"
 location: "L1"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/Community_95
 ---
 
 # Tests for chatbot/main.py.  Covers the four SCRUM-109 fixes: 1. Auth enforcement
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_main.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/egress_filterpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_95

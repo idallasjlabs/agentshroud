@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
 type: "document"
-community: "sunday-scan.sh"
-location: "L30"
+community: "Community 592"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sunday-scansh
+  - community/Community_592
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[env_guard.py_2]] - `contains` [EXTRACTED]
+- [[middleware.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sunday-scansh
+#graphify/document #graphify/EXTRACTED #community/Community_592

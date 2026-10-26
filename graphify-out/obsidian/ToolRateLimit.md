@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "Community 6"
 location: "L145"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MiddlewareManager_2
+  - community/Community_6
 ---
 
 # ToolRateLimit
@@ -15,8 +15,8 @@ tags:
 - [[GroupRole]] - `uses` [INFERRED]
 - [[GroupRoleResolver]] - `uses` [INFERRED]
 - [[Per-tool call rate limit configuration.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_64]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
 - [[tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager_2
+#graphify/code #graphify/INFERRED #community/Community_6

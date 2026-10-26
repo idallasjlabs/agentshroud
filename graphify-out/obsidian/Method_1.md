@@ -1,20 +1,17 @@
 ---
-source_file: "cli/src/main.rs"
-type: "code"
-community: "GroupRoleResolver"
-location: "L213"
+source_file: "docs/planning/v1.2/blue-team-assessment-v1.2.0.md"
+type: "document"
+community: "Community 1004"
+location: "L11"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/Community_1004
 ---
 
 # Method
 
 ## Connections
-- [[dot-request()]] - `references` [EXTRACTED]
-- [[dot-request()_1]] - `references` [EXTRACTED]
-- [[FakeTransport]] - `references` [EXTRACTED]
-- [[main.rs]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.2.0 — Blue Team Security Assessment]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/document #graphify/EXTRACTED #community/Community_1004

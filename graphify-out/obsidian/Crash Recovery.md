@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "Mode A — Single task (3)"
+community: "Community 306"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_3
+  - community/Community_306
 ---
 
 # Crash Recovery
@@ -16,6 +16,6 @@ tags:
 - [[Detecting a Crash]] - `contains` [EXTRACTED]
 - [[Manual Recovery]] - `contains` [EXTRACTED]
 - [[OOM Recovery]] - `contains` [EXTRACTED]
-- [[Shutdown & Recovery]] - `contains` [EXTRACTED]
+- [[Shutdown & Recovery_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_3
+#graphify/document #graphify/EXTRACTED #community/Community_306

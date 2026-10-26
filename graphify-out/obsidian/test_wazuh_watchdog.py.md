@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_wazuh_watchdog.py"
 type: "code"
-community: "test_wazuh_watchdog.py"
+community: "Community 298"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_wazuh_watchdogpy
+  - community/Community_298
 ---
 
 # test_wazuh_watchdog.py
@@ -16,9 +16,8 @@ tags:
 - [[TestWatchdogBehaviour]] - `contains` [EXTRACTED]
 - [[TestWatchdogWiring]] - `contains` [EXTRACTED]
 - [[_all()]] - `contains` [EXTRACTED]
-- [[_run()]] - `contains` [EXTRACTED]
+- [[_run()_3]] - `contains` [EXTRACTED]
 - [[_run_4b()]] - `contains` [EXTRACTED]
 - [[_step_4b()]] - `contains` [EXTRACTED]
-- [[wazuh-manager daemon watchdog (dockerwazuhservices.dwazuh-watchdogrun). The…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_wazuh_watchdogpy
+#graphify/code #graphify/EXTRACTED #community/Community_298

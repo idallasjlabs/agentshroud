@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "rationale"
-community: "Browser — Secure Browser Automation (6)"
+community: "Community 1191"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_6
+  - community/Community_1191
 ---
 
 # Context-manager stand-in for the object urlopen() yields.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeHTTPResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_6
+#graphify/rationale #graphify/EXTRACTED #community/Community_1191

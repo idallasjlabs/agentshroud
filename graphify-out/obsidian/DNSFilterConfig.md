@@ -1,35 +1,36 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "NetworkSecurityFinding"
+community: "Community 72"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/NetworkSecurityFinding
+  - community/Community_72
 ---
 
 # DNSFilterConfig
 
 ## Connections
-- [[dot-__init__()_118]] - `calls` [EXTRACTED]
-- [[dot-__init__()_178]] - `references` [EXTRACTED]
-- [[dot-dns_filter()]] - `calls` [EXTRACTED]
-- [[dot-test_dns_filter_config()]] - `calls` [EXTRACTED]
-- [[dot-test_dns_filter_default_enforce()]] - `calls` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_42]] - `uses` [INFERRED]
-- [[Exception_3]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_44]] - `calls` [EXTRACTED]
+- [[.__init__()_72]] - `references` [EXTRACTED]
+- [[.dns_filter()]] - `calls` [EXTRACTED]
+- [[.test_dns_filter_config()]] - `calls` [EXTRACTED]
+- [[.test_dns_filter_default_enforce()]] - `calls` [EXTRACTED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[TestAuditLogging]] - `uses` [INFERRED]
-- [[TestAuditTrail]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuditTrail_1]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard]] - `uses` [INFERRED]
+- [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDNSAllowlist]] - `uses` [INFERRED]
 - [[TestDNSFilterConfig]] - `uses` [INFERRED]
@@ -43,20 +44,22 @@ tags:
 - [[TestModuleInstantiationInEnforceMode]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
 - [[TestNormalDNSResolution]] - `uses` [INFERRED]
-- [[TestPIIDetection]] - `uses` [INFERRED]
+- [[TestPIIDetection_1]] - `uses` [INFERRED]
 - [[TestPromptGuard]] - `uses` [INFERRED]
-- [[TestRateLimiting_4]] - `uses` [INFERRED]
+- [[TestRateLimiting_1]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestSecurityConfigDefaults]] - `uses` [INFERRED]
-- [[TestSupplyChain]] - `uses` [INFERRED]
+- [[TestSupplyChain_1]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
-- [[default_config()_4]] - `calls` [EXTRACTED]
-- [[dns_filter.py_2]] - `contains` [EXTRACTED]
-- [[middleware.py_1]] - `imports` [EXTRACTED]
-- [[monitor_config()_2]] - `calls` [EXTRACTED]
-- [[strict_config()_3]] - `calls` [EXTRACTED]
+- [[default_config()_1]] - `calls` [EXTRACTED]
+- [[dns_filter.py]] - `contains` [EXTRACTED]
+- [[main.py_2]] - `imports` [EXTRACTED]
+- [[middleware.py]] - `imports` [EXTRACTED]
+- [[monitor_config()]] - `calls` [EXTRACTED]
+- [[strict_config()]] - `calls` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_dns_filter.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
+- [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/NetworkSecurityFinding
+#graphify/code #graphify/INFERRED #community/Community_72

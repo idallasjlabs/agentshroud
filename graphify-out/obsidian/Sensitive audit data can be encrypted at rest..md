@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "rationale"
-community: "test_security_integration.py"
+community: "Community 7"
 location: "L300"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_security_integrationpy
+  - community/Community_7
 ---
 
 # Sensitive audit data can be encrypted at rest.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_encrypted_store_in_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_security_integrationpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

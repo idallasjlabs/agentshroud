@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/README.md"
+source_file: "scripts/README.md"
 type: "document"
-community: "🛡️ AgentShroud Release Plan"
-location: "L118"
+community: "Community 588"
+location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_AgentShroud_Release_Plan
+  - community/Community_588
 ---
 
 # Implementation Status
 
 ## Connections
-- [[Gateway Layer]] - `contains` [EXTRACTED]
+- [[Utility Scripts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_588

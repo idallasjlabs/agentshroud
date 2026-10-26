@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "rationale"
-community: "system-requirements.md"
+community: "Community 185"
 location: "L78"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/system-requirementsmd
+  - community/Community_185
 ---
 
 # Calculate weighted overall security score.      Args:         summaries: Dict ma
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[calculate_overall_score()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/system-requirementsmd
+#graphify/rationale #graphify/EXTRACTED #community/Community_185

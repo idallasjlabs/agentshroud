@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/init_skill.py"
 type: "rationale"
-community: "test_integration.py"
+community: "Community 882"
 location: "L195"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_integrationpy
+  - community/Community_882
 ---
 
 # Normalize a skill name to lowercase hyphen-case.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[normalize_skill_name()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_integrationpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_882

@@ -1,11 +1,11 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "eightctl/SKILL.md"
+community: "Community 1373"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/eightctl/SKILLmd
+  - community/Community_1373
 ---
 
 # MCP Server: github-agentshroud
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[MCP tools available — GitHub (reposPRsissues), Atlassian (JiraConfluence)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/eightctl/SKILLmd
+#graphify/code #graphify/INFERRED #community/Community_1373

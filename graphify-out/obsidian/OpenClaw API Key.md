@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "KillSwitchMonitor (2) (7)"
+community: "Community 1328"
 location: "L345"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_2_7
+  - community/Community_1328
 ---
 
 # OpenClaw API Key
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[5. API Key Rotation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/KillSwitchMonitor_2_7
+#graphify/document #graphify/EXTRACTED #community/Community_1328

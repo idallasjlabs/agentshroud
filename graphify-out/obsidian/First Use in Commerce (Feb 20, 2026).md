@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/legal/PRIOR-USE.md"
 type: "concept"
-community: "SecureBrowser Skill"
+community: "Community 1098"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill
+  - community/Community_1098
 ---
 
 # First Use in Commerce (Feb 20, 2026)
@@ -14,4 +14,4 @@ tags:
 - [[PRIOR-USE]] - `references` [EXTRACTED]
 - [[USPTO Class 042 Filing (ScientificTechnological Services)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/SecureBrowser_Skill
+#graphify/concept #graphify/EXTRACTED #community/Community_1098

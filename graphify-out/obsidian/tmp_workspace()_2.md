@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "SharedMemoryManager"
+community: "Community 60"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SharedMemoryManager
+  - community/Community_60
 ---
 
 # tmp_workspace()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_shared_memory.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager
+#graphify/code #graphify/EXTRACTED #community/Community_60

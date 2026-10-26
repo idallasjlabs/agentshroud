@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
 type: "document"
-community: "Skill Creation Process"
-location: "L77"
+community: "Community 666"
+location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Creation_Process
+  - community/Community_666
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[oauth_security.py_1]] - `contains` [EXTRACTED]
+- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Creation_Process
+#graphify/document #graphify/EXTRACTED #community/Community_666

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-vulcan/README.md"
+source_file: "docker/config/hermes/skills/i-pr/README.md"
 type: "document"
-community: "soc.js (6)"
+community: "Community 90"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs_6
+  - community/Community_90
 ---
 
 # Purpose
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_1]] - `contains` [EXTRACTED]
+- [[Pull Request Generator (PR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs_6
+#graphify/document #graphify/EXTRACTED #community/Community_90

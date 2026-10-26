@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/MASTER-FEATURE-LIST.md"
+source_file: ".cursor/agents/sec-defense.md"
 type: "document"
-community: "package_skill"
-location: "L395"
+community: "Community 1312"
+location: "L152"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/package_skill
+  - community/Community_1312
 ---
 
 # Infrastructure
 
 ## Connections
-- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/package_skill
+#graphify/document #graphify/EXTRACTED #community/Community_1312

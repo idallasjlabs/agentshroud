@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-ux/SKILL.md"
+source_file: ".agents/agents/i-ux.md"
 type: "document"
-community: "Skill: UX Expert (UX)"
-location: "L84"
+community: "Community 296"
+location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX
+  - community/Community_296
 ---
 
 # Interaction Design Patterns
@@ -18,4 +18,4 @@ tags:
 - [[Progressive Disclosure]] - `contains` [EXTRACTED]
 - [[Skill UX Expert (UX)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX
+#graphify/document #graphify/EXTRACTED #community/Community_296

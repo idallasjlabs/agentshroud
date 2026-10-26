@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_op_proxy.py"
+source_file: "gateway/tests/test_channel_ownership.py"
 type: "rationale"
-community: "export-bot-conversations.py"
-location: "L185"
+community: "Community 512"
+location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy
+  - community/Community_512
 ---
 
 # Endpoint returns 401 without auth override.
 
 ## Connections
-- [[dot-test_requires_auth()_2]] - `rationale_for` [EXTRACTED]
+- [[.test_requires_auth()]] - `rationale_for` [EXTRACTED]
+- [[.test_requires_auth()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/export-bot-conversationspy
+#graphify/rationale #graphify/EXTRACTED #community/Community_512

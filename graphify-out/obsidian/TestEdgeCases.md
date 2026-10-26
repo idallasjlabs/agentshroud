@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "._make_proxy()"
+community: "Community 31"
 location: "L313"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_31
 ---
 
 # TestEdgeCases
 
 ## Connections
-- [[dot-test_case_sensitivity()]] - `method` [EXTRACTED]
-- [[dot-test_path_traversal_blocked()_1]] - `method` [EXTRACTED]
-- [[dot-test_relative_path_resolution()]] - `method` [EXTRACTED]
+- [[.test_case_sensitivity()]] - `method` [EXTRACTED]
+- [[.test_path_traversal_blocked()_1]] - `method` [EXTRACTED]
+- [[.test_relative_path_resolution()]] - `method` [EXTRACTED]
 - [[FileSandbox]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[Test edge cases and potential bypass attempts.]] - `rationale_for` [EXTRACTED]
 - [[test_privilege_separation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_31

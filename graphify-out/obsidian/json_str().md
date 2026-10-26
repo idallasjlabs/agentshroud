@@ -1,24 +1,24 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "GroupRoleResolver"
+community: "Community 39"
 location: "L378"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/Community_39
 ---
 
 # json_str()
 
 ## Connections
-- [[dot-get()_3]] - `calls` [EXTRACTED]
+- [[.get()_1]] - `calls` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
-- [[Value_3]] - `references` [EXTRACTED]
+- [[Value]] - `references` [EXTRACTED]
 - [[format_approvals()]] - `calls` [EXTRACTED]
 - [[format_decision()]] - `calls` [EXTRACTED]
 - [[format_deploy_status()]] - `calls` [EXTRACTED]
 - [[format_status()]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/Community_39

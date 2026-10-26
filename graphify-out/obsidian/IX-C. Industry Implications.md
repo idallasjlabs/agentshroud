@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "test_telegram_proxy_inbound.py"
+community: "Community 330"
 location: "L313"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/Community_330
 ---
 
 # IX-C. Industry Implications
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IX. Discussion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/document #graphify/EXTRACTED #community/Community_330

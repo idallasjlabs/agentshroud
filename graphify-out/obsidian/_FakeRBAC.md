@@ -1,37 +1,37 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "MiddlewareManager"
+community: "Community 1"
 location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Community_1
 ---
 
 # _FakeRBAC
 
 ## Connections
-- [[dot-__init__()_20]] - `method` [EXTRACTED]
-- [[dot-check_permission()]] - `method` [EXTRACTED]
-- [[dot-check_tool_permission()]] - `method` [EXTRACTED]
-- [[dot-get_user_role()]] - `method` [EXTRACTED]
-- [[dot-test_owner_bypass()]] - `calls` [EXTRACTED]
-- [[dot-test_owner_bypass()_1]] - `calls` [EXTRACTED]
-- [[dot-test_owner_bypasses_sandbox()]] - `calls` [EXTRACTED]
-- [[dot-test_owner_exempt_when_critical_guard_failed()]] - `calls` [EXTRACTED]
-- [[dot-test_rbac_denied()]] - `calls` [EXTRACTED]
-- [[dot-test_rbac_exception_fails_closed()]] - `calls` [EXTRACTED]
-- [[dot-test_rbac_pass_logs_role_and_allows()]] - `calls` [EXTRACTED]
-- [[dot-test_rbac_requires_approval()]] - `calls` [EXTRACTED]
-- [[dot-test_tool_permission_denied()]] - `calls` [EXTRACTED]
-- [[dot-test_tool_permission_requires_approval()]] - `calls` [EXTRACTED]
-- [[dot-test_with_rbac_manager()]] - `calls` [EXTRACTED]
+- [[.__init__()_180]] - `method` [EXTRACTED]
+- [[.check_permission()_1]] - `method` [EXTRACTED]
+- [[.check_tool_permission()_2]] - `method` [EXTRACTED]
+- [[.get_user_role()_2]] - `method` [EXTRACTED]
+- [[.test_owner_bypass()_1]] - `calls` [EXTRACTED]
+- [[.test_owner_bypass()_2]] - `calls` [EXTRACTED]
+- [[.test_owner_bypasses_sandbox()]] - `calls` [EXTRACTED]
+- [[.test_owner_exempt_when_critical_guard_failed()]] - `calls` [EXTRACTED]
+- [[.test_rbac_denied()]] - `calls` [EXTRACTED]
+- [[.test_rbac_exception_fails_closed()]] - `calls` [EXTRACTED]
+- [[.test_rbac_pass_logs_role_and_allows()]] - `calls` [EXTRACTED]
+- [[.test_rbac_requires_approval()]] - `calls` [EXTRACTED]
+- [[.test_tool_permission_denied()]] - `calls` [EXTRACTED]
+- [[.test_tool_permission_requires_approval()]] - `calls` [EXTRACTED]
+- [[.test_with_rbac_manager()]] - `calls` [EXTRACTED]
 - [[Deterministic stand-in for RBACManager.]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/Community_1

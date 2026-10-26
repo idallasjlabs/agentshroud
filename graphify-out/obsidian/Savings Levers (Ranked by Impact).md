@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
+source_file: ".agents/agents/aws.md"
 type: "document"
-community: ".test_fetch_paginates_via_link_cursor()"
-location: "L181"
+community: "Community 209"
+location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_fetch_paginates_via_link_cursor
+  - community/Community_209
 ---
 
 # Savings Levers (Ranked by Impact)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FY26 Cost Reduction Context]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_fetch_paginates_via_link_cursor
+#graphify/document #graphify/EXTRACTED #community/Community_209

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "document"
-community: "MiddlewareManager (9)"
+community: "Community 429"
 location: "L1196"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_9
+  - community/Community_429
 ---
 
 # Completed Phases
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[12. Roadmap]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_9
+#graphify/document #graphify/EXTRACTED #community/Community_429

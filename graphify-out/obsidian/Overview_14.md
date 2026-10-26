@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/deployment-diagram.md"
+source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "xurl — Agent Skill Reference"
-location: "L3"
+community: "Community 837"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/xurl__Agent_Skill_Reference
+  - community/Community_837
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
+- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference
+#graphify/document #graphify/EXTRACTED #community/Community_837

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "rationale"
-community: "FileSandbox"
+community: "Community 31"
 location: "L422"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/Community_31
 ---
 
 # Get all flagged operations that indicate security violations.
 
 ## Connections
-- [[dot-get_security_violations()]] - `rationale_for` [EXTRACTED]
+- [[.get_security_violations()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FileSandbox
+#graphify/rationale #graphify/EXTRACTED #community/Community_31

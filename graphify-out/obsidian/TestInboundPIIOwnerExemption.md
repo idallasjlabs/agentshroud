@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "KeyVaultConfig"
+community: "Community 24"
 location: "L724"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KeyVaultConfig
+  - community/Community_24
 ---
 
 # TestInboundPIIOwnerExemption
 
 ## Connections
-- [[dot-_redacting_pii()]] - `method` [EXTRACTED]
-- [[dot-test_non_owner_inbound_query_still_redacted()]] - `method` [EXTRACTED]
-- [[dot-test_owner_inbound_query_not_pii_redacted()]] - `method` [EXTRACTED]
+- [[._redacting_pii()]] - `method` [EXTRACTED]
+- [[.test_non_owner_inbound_query_still_redacted()]] - `method` [EXTRACTED]
+- [[.test_owner_inbound_query_not_pii_redacted()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[CrossBotTrustLedger]] - `uses` [INFERRED]
 - [[EnvelopeSigner]] - `uses` [INFERRED]
@@ -26,11 +26,11 @@ tags:
 - [[OutboundInfoFilter]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
 - [[ScanResult_1]] - `uses` [INFERRED]
-- [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
 - [[Step 2 PII sanitisation must be skipped for the authenticated owner.      Non-ow]] - `rationale_for` [EXTRACTED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/KeyVaultConfig
+#graphify/code #graphify/INFERRED #community/Community_24

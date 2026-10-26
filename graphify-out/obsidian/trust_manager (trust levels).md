@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "AgentShroud Color Palette"
+community: "Community 517"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/AgentShroud_Color_Palette
+  - community/Community_517
 ---
 
 # trust_manager (trust levels)
@@ -14,4 +14,4 @@ tags:
 - [[Security Modules (30+, gateway diagram)]] - `shares_data_with` [EXTRACTED]
 - [[TrustManager_5]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/AgentShroud_Color_Palette
+#graphify/image #graphify/EXTRACTED #community/Community_517

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
+source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "AgentShroud Branding Assets Index"
-location: "L114"
+community: "Community 94"
+location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Branding_Assets_Index
+  - community/Community_94
 ---
 
 # Logs
 
 ## Connections
-- [[agentshroud-gateway_2]] - `contains` [EXTRACTED]
+- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Branding_Assets_Index
+#graphify/document #graphify/EXTRACTED #community/Community_94

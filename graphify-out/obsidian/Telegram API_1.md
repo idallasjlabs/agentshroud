@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "concept"
-community: "Mode A — Single task (3)"
+community: "Community 487"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_3
+  - community/Community_487
 ---
 
 # Telegram API
@@ -14,4 +14,4 @@ tags:
 - [[Approval Queue (human gate)]] - `calls` [EXTRACTED]
 - [[HTTP CONNECT Proxy (domain allowlist)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Mode_A__Single_task_3
+#graphify/concept #graphify/EXTRACTED #community/Community_487

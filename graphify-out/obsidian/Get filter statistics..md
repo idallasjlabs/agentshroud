@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "rationale"
-community: "agentshroud-blueteam/SKILL.md (2)"
+community: "Community 24"
 location: "L472"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_2
+  - community/Community_24
 ---
 
 # Get filter statistics.
 
 ## Connections
-- [[dot-get_stats()_2]] - `rationale_for` [EXTRACTED]
+- [[.get_stats()_17]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_24

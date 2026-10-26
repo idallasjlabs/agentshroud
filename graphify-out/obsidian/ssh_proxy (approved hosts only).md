@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "test_jira_weekly_review.py"
+community: "Community 947"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/test_jira_weekly_reviewpy
+  - community/Community_947
 ---
 
 # ssh_proxy (approved hosts only)
@@ -14,4 +14,4 @@ tags:
 - [[Proxy Layer_1]] - `shares_data_with` [EXTRACTED]
 - [[SSH Proxy]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/test_jira_weekly_reviewpy
+#graphify/image #graphify/EXTRACTED #community/Community_947

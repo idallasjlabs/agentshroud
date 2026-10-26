@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "test_a2a_proxy.py"
+community: "Community 30"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/Community_30
 ---
 
 # group_router.py
 
 ## Connections
-- [[ApprovalRequest_2]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_3]] - `imports` [EXTRACTED]
 - [[GroupApprovalRouter]] - `contains` [EXTRACTED]
 - [[enhanced_queue.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/code #graphify/EXTRACTED #community/Community_30

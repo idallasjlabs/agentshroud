@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "document"
-community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md"
+community: "Community 472"
 location: "L121"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+  - community/Community_472
 ---
 
 # OpenSCAP & IEC 62443 Compliance - CRITICAL ✅
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Revised Assessment Nothing is Over-Engineered]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+#graphify/document #graphify/EXTRACTED #community/Community_472

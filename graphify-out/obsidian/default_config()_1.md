@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_file_sandbox.py"
+source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "FileSandbox"
+community: "Community 72"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/Community_72
 ---
 
 # default_config()
 
 ## Connections
-- [[FileSandboxConfig]] - `calls` [EXTRACTED]
-- [[test_file_sandbox.py]] - `contains` [EXTRACTED]
+- [[DNSFilterConfig]] - `calls` [EXTRACTED]
+- [[test_dns_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/Community_72

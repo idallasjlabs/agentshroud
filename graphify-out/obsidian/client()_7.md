@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/tests/test_e2e.py"
+source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
 type: "code"
-community: "UserSessionManager (3)"
-location: "L24"
+community: "Community 1127"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_3
+  - community/Community_1127
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[Fully initialized async client with lifespan.]] - `rationale_for` [EXTRACTED]
-- [[test_e2e.py]] - `contains` [EXTRACTED]
+- [[test_email_owner_bypasses_pii.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_3
+#graphify/code #graphify/EXTRACTED #community/Community_1127

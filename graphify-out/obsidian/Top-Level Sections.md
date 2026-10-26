@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "document"
-community: "DelegationManager"
+community: "Community 73"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/Community_73
 ---
 
 # Top-Level Sections
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[agentshroud.yaml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DelegationManager
+#graphify/document #graphify/EXTRACTED #community/Community_73

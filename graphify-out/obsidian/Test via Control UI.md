@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "iCloud Services Setup - Complete Guide"
+community: "Community 510"
 location: "L195"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services_Setup_-_Complete_Guide
+  - community/Community_510
 ---
 
 # Test via Control UI
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 7 Test the Bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services_Setup_-_Complete_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_510

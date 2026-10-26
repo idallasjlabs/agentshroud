@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "PipelineAction"
+community: "Community 2063"
 location: "L565"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/Community_2063
 ---
 
 # Semgrep SAST Rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[7. CICD Quality Gates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PipelineAction
+#graphify/document #graphify/EXTRACTED #community/Community_2063

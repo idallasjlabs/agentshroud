@@ -1,12 +1,12 @@
 ---
 source_file: "reports/upgrade-2026-09-14.md"
 type: "document"
-community: "wazuh_client.py"
+community: "Community 611"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/wazuh_clientpy
+  - community/Community_611
 ---
 
 # AgentShroud Sunday Upgrade — 2026-09-14 (dev account, agentshroud-bot@marvin)
@@ -21,7 +21,7 @@ tags:
 - [[7. Apply  verify — final result PASS]] - `contains` [EXTRACTED]
 - [[8. Post-rebuild CVE rescan]] - `contains` [EXTRACTED]
 - [[9. Remaining work]] - `contains` [EXTRACTED]
-- [[Summary line_1]] - `contains` [EXTRACTED]
+- [[Summary line_2]] - `contains` [EXTRACTED]
 - [[upgrade-2026-09-14]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/wazuh_clientpy
+#graphify/document #graphify/EXTRACTED #community/Community_611

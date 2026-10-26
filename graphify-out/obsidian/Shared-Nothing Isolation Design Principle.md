@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/per-agent-isolation.md"
 type: "rationale"
-community: "Skill: Security Review (SEC) (2)"
+community: "Community 749"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Skill_Security_Review_SEC_2
+  - community/Community_749
 ---
 
 # Shared-Nothing Isolation Design Principle
@@ -15,4 +15,4 @@ tags:
 - [[Trust Boundary Diagram]] - `semantically_similar_to` [INFERRED]
 - [[per-agent-isolation]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/INFERRED #community/Skill_Security_Review_SEC_2
+#graphify/rationale #graphify/INFERRED #community/Community_749

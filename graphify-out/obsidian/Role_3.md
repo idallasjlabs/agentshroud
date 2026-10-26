@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-oracle/SKILL.md"
+source_file: ".agents/agents/apollo.md"
 type: "document"
-community: "TestAggregateResults"
-location: "L8"
+community: "Community 1351"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestAggregateResults
+  - community/Community_1351
 ---
 
 # Role
 
 ## Connections
-- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestAggregateResults
+#graphify/document #graphify/EXTRACTED #community/Community_1351

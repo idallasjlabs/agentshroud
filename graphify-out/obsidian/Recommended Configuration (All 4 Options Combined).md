@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: ".github/mcp.json"
+community: "Community 396"
 location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/github/mcpjson
+  - community/Community_396
 ---
 
 # Recommended Configuration (All 4 Options Combined)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Credential Security Policy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/github/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Community_396

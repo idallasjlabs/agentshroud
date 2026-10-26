@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-eightd/README.md"
+source_file: ".agents/skills/i-bs/README.md"
 type: "document"
-community: "8D Root Cause Analysis"
+community: "Community 117"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/8D_Root_Cause_Analysis
+  - community/Community_117
 ---
 
 # Usage
 
 ## Connections
-- [[8D Root Cause Analysis]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis
+#graphify/document #graphify/EXTRACTED #community/Community_117

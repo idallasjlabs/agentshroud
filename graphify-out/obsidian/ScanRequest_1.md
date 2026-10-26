@@ -1,23 +1,26 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "AgentTarget"
-location: "L33"
+community: "Community 20"
+location: "L2040"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/AgentTarget
+  - graphify/INFERRED
+  - community/Community_20
 ---
 
 # ScanRequest
 
 ## Connections
-- [[dot-scan()_3]] - `references` [EXTRACTED]
-- [[Request to scan a message.]] - `rationale_for` [EXTRACTED]
-- [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder_2]] - `uses` [INFERRED]
-- [[sidecar.py]] - `contains` [EXTRACTED]
-- [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
-- [[test_sidecar_scanner()]] - `calls` [EXTRACTED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult]] - `uses` [INFERRED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[router.py_1]] - `contains` [EXTRACTED]
+- [[run_scanner()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/INFERRED #community/Community_20

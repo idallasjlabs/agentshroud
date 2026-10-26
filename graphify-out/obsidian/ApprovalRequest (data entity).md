@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "concept"
-community: "test_sanitizer.py (2)"
+community: "Community 747"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/test_sanitizerpy_2
+  - community/Community_747
 ---
 
 # ApprovalRequest (data entity)
@@ -15,4 +15,4 @@ tags:
 - [[TrustLevel (data entity)]] - `conceptually_related_to` [INFERRED]
 - [[approval_requests SQLite table]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/test_sanitizerpy_2
+#graphify/concept #graphify/INFERRED #community/Community_747

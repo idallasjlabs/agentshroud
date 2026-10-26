@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "MCPPermissionManager (2)"
+community: "Community 7"
 location: "L394"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/Community_7
 ---
 
 # ClientDisconnect mid-body-read must not crash the gateway process.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTelegramProxyClientDisconnect]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

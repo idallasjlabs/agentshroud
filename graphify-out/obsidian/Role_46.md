@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-bs/SKILL.md"
+source_file: ".agents/skills/i-cicd/SKILL.md"
 type: "document"
-community: "TestBuildCollaboratorSafeInfoResponse"
-location: "L7"
+community: "Community 948"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestBuildCollaboratorSafeInfoResponse
+  - community/Community_948
 ---
 
 # Role
 
 ## Connections
-- [[Skill Branding Specialist (BS)]] - `contains` [EXTRACTED]
+- [[Skill CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse
+#graphify/document #graphify/EXTRACTED #community/Community_948

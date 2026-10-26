@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/README.md"
 type: "concept"
-community: "docker/scripts README.md"
+community: "Community 469"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docker/scripts_READMEmd
+  - community/Community_469
 ---
 
 # memory-scrubber.py (planned)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dockerscripts README]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docker/scripts_READMEmd
+#graphify/concept #graphify/EXTRACTED #community/Community_469

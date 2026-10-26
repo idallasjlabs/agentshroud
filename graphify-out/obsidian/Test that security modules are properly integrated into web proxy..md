@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "rationale"
-community: "scanner_integration.py"
+community: "Community 120"
 location: "L60"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/Community_120
 ---
 
 # Test that security modules are properly integrated into web proxy.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestWebProxySecurityIntegration]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_120

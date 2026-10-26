@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-kanban/SKILL.md"
 type: "document"
-community: "Diagram 08: Entity Relationship Diagram"
+community: "Community 1371"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Diagram_08_Entity_Relationship_Diagram
+  - community/Community_1371
 ---
 
 # kanban Skill (stub)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[kaizen Skill (stub)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Diagram_08_Entity_Relationship_Diagram
+#graphify/document #graphify/INFERRED #community/Community_1371

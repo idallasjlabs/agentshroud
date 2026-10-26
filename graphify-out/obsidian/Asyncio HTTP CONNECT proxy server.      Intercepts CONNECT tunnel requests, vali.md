@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "rationale"
-community: "_pcm_bytes"
+community: "Community 81"
 location: "L89"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/Community_81
 ---
 
 # Asyncio HTTP CONNECT proxy server.      Intercepts CONNECT tunnel requests, vali
 
 ## Connections
-- [[HTTPConnectProxy_1]] - `rationale_for` [EXTRACTED]
+- [[HTTPConnectProxy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/rationale #graphify/EXTRACTED #community/Community_81

@@ -1,23 +1,17 @@
 ---
-source_file: "gateway/tests/test_a2a_integration.py"
+source_file: "voice_gateway/server.py"
 type: "code"
-community: "UserSessionManager"
-location: "L61"
+community: "Community 1006"
+location: "L377"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/UserSessionManager
+  - graphify/EXTRACTED
+  - community/Community_1006
 ---
 
 # Response
 
 ## Connections
-- [[dot-_handle()]] - `references` [EXTRACTED]
-- [[A2APolicyConfig_1]] - `uses` [INFERRED]
-- [[A2APolicyEngine_2]] - `uses` [INFERRED]
-- [[A2AProxy_1]] - `uses` [INFERRED]
-- [[HermesA2AForwarder]] - `uses` [INFERRED]
-- [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[firmware_bin()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/Community_1006

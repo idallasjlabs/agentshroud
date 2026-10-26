@@ -1,19 +1,17 @@
 ---
-source_file: "docs/vault/00 - START HERE/Quick Reference.md"
+source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "MiddlewareManager (4)"
-location: "L1"
+community: "Community 837"
+location: "L381"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/Community_837
 ---
 
-# Quick Reference.md
+# Quick Reference
 
 ## Connections
-- [[Home_1]] - `references` [EXTRACTED]
-- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
-- [[System Overview]] - `references` [EXTRACTED]
+- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/document #graphify/EXTRACTED #community/Community_837

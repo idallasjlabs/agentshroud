@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "test_telegram_replay.py"
+community: "Community 2047"
 location: "L1613"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_telegram_replaypy
+  - community/Community_2047
 ---
 
 # Temperature Management
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Performance Considerations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_telegram_replaypy
+#graphify/document #graphify/EXTRACTED #community/Community_2047

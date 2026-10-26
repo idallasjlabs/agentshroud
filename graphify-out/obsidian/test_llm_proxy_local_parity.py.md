@@ -1,22 +1,24 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "ModeRequest"
+community: "Community 208"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/Community_208
 ---
 
 # test_llm_proxy_local_parity.py
 
 ## Connections
 - [[LLMProxy]] - `imports` [EXTRACTED]
-- [[Workstream C — Full local-model parity for both bots. Tests that every cloud-…]] - `rationale_for` [EXTRACTED]
+- [[ResourceGuard]] - `imports` [EXTRACTED]
+- [[ResourceLimits]] - `imports` [EXTRACTED]
+- [[VRAMHeadroomError]] - `imports` [EXTRACTED]
 - [[_FakeSanitizer_1]] - `contains` [EXTRACTED]
 - [[_FakeStreamClient]] - `contains` [EXTRACTED]
-- [[_FakeStreamResponse]] - `contains` [EXTRACTED]
+- [[_FakeStreamResponse_1]] - `contains` [EXTRACTED]
 - [[_anthropic_ok()]] - `contains` [EXTRACTED]
 - [[_anthropic_tool_use_ok()]] - `contains` [EXTRACTED]
 - [[_make_proxy()]] - `contains` [EXTRACTED]
@@ -24,14 +26,14 @@ tags:
 - [[_openai_ok()]] - `contains` [EXTRACTED]
 - [[_openai_tool_use_ok()]] - `contains` [EXTRACTED]
 - [[_skill_manage_like_request()]] - `contains` [EXTRACTED]
-- [[llm_proxy.py_2]] - `imports_from` [EXTRACTED]
+- [[llm_proxy.py]] - `imports_from` [EXTRACTED]
 - [[test_cloud_mode_anthropic_tool_use_shape_passes_through()]] - `contains` [EXTRACTED]
 - [[test_deepseek_r1_routes_to_mlxlm()]] - `contains` [EXTRACTED]
-- [[test_fieldflare_route_strips_unsupported_fields_non_streaming]] - `contains` [EXTRACTED]
-- [[test_fieldflare_route_strips_unsupported_fields_streaming]] - `contains` [EXTRACTED]
+- [[test_fieldflare_route_strips_unsupported_fields_non_streaming()]] - `contains` [EXTRACTED]
+- [[test_fieldflare_route_strips_unsupported_fields_streaming()]] - `contains` [EXTRACTED]
 - [[test_fieldflare_shim_collapses_type_list_to_one_concrete_type_plus_null()]] - `contains` [EXTRACTED]
 - [[test_fieldflare_shim_degenerate_unions()]] - `contains` [EXTRACTED]
-- [[test_fieldflare_shim_drops_parallel_tool_calls_true_and_false]] - `contains` [EXTRACTED]
+- [[test_fieldflare_shim_drops_parallel_tool_calls_true_and_false()]] - `contains` [EXTRACTED]
 - [[test_fieldflare_shim_inlines_allof_and_recurses_into_nested_nodes()]] - `contains` [EXTRACTED]
 - [[test_fieldflare_shim_is_noop_without_the_fields()]] - `contains` [EXTRACTED]
 - [[test_fieldflare_shim_keeps_first_branch_of_scalar_union()]] - `contains` [EXTRACTED]
@@ -40,8 +42,8 @@ tags:
 - [[test_fieldflare_shim_leaves_accepted_tool_choice_strings_alone()]] - `contains` [EXTRACTED]
 - [[test_fieldflare_shim_leaves_representable_tool_schemas_alone()]] - `contains` [EXTRACTED]
 - [[test_fieldflare_shim_merges_multi_branch_object_union_into_one_object()]] - `contains` [EXTRACTED]
-- [[test_fieldflare_shim_rewrites_named_tool_choice_object_to_auto]] - `contains` [EXTRACTED]
-- [[test_fieldflare_shim_rewrites_required_tool_choice_to_auto]] - `contains` [EXTRACTED]
+- [[test_fieldflare_shim_rewrites_named_tool_choice_object_to_auto()]] - `contains` [EXTRACTED]
+- [[test_fieldflare_shim_rewrites_required_tool_choice_to_auto()]] - `contains` [EXTRACTED]
 - [[test_fieldflare_shim_tolerates_malformed_tool_entries()]] - `contains` [EXTRACTED]
 - [[test_get_local_model_reads_fieldflare_ref()]] - `contains` [EXTRACTED]
 - [[test_get_local_secondary_model_reads_env()]] - `contains` [EXTRACTED]
@@ -67,7 +69,7 @@ tags:
 - [[test_local_mode_openai_tool_call_shape_passes_through()]] - `contains` [EXTRACTED]
 - [[test_local_oom_failover_disabled_does_not_retry()]] - `contains` [EXTRACTED]
 - [[test_local_oom_no_secondary_falls_through_to_503()]] - `contains` [EXTRACTED]
-- [[test_local_oom_triggers_secondary_failover]] - `contains` [EXTRACTED]
+- [[test_local_oom_triggers_secondary_failover()]] - `contains` [EXTRACTED]
 - [[test_local_p99_timeout_triggers_secondary_failover()]] - `contains` [EXTRACTED]
 - [[test_local_secondary_failover_anthropic_path()]] - `contains` [EXTRACTED]
 - [[test_local_secondary_failover_base_routes_correctly()]] - `contains` [EXTRACTED]
@@ -76,12 +78,12 @@ tags:
 - [[test_local_secondary_failover_unknown_path_returns_none()]] - `contains` [EXTRACTED]
 - [[test_mlx_community_deepseek_routes_to_mlxlm()]] - `contains` [EXTRACTED]
 - [[test_model_ref_round_trip()]] - `contains` [EXTRACTED]
-- [[test_non_fieldflare_local_route_keeps_fields]] - `contains` [EXTRACTED]
+- [[test_non_fieldflare_local_route_keeps_fields()]] - `contains` [EXTRACTED]
 - [[test_normalize_local_model_already_dashed_is_idempotent()]] - `contains` [EXTRACTED]
 - [[test_normalize_local_model_lmstudio_replaces_colon_with_dash()]] - `contains` [EXTRACTED]
 - [[test_normalize_local_model_mlxlm_keeps_colon()]] - `contains` [EXTRACTED]
 - [[test_normalize_local_model_ollama_keeps_colon()]] - `contains` [EXTRACTED]
-- [[test_normalize_local_model_omlx_deepseek_renamed_to_real_catalog_id]] - `contains` [EXTRACTED]
+- [[test_normalize_local_model_omlx_deepseek_renamed_to_real_catalog_id()]] - `contains` [EXTRACTED]
 - [[test_normalize_local_model_omlx_gemma_passes_through_unchanged()]] - `contains` [EXTRACTED]
 - [[test_normalize_local_model_omlx_unknown_model_passes_through_unchanged()]] - `contains` [EXTRACTED]
 - [[test_normalize_local_model_provider_prefix_stripped_before_normalize()]] - `contains` [EXTRACTED]
@@ -92,4 +94,4 @@ tags:
 - [[test_stats_local_secondary_failover_succeeded_incremented()]] - `contains` [EXTRACTED]
 - [[test_vram_headroom_error_is_not_resource_warning()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModeRequest
+#graphify/code #graphify/EXTRACTED #community/Community_208

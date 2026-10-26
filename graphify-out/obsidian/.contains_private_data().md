@@ -1,0 +1,18 @@
+---
+source_file: "gateway/security/privacy_policy.py"
+type: "code"
+community: "Community 97"
+location: "L301"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_97
+---
+
+# .contains_private_data()
+
+## Connections
+- [[PrivacyPolicyEnforcer]] - `method` [EXTRACTED]
+- [[Return True if text appears to contain admin-private data.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_97

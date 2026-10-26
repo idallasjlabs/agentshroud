@@ -1,17 +1,17 @@
 ---
-source_file: "examples/docker-commands.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "ssh_config.py"
-location: "L134"
+community: "Community 580"
+location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ssh_configpy
+  - community/Community_580
 ---
 
 # Logs
 
 ## Connections
-- [[Docker Commands Reference]] - `contains` [EXTRACTED]
+- [[agentshroud-gateway_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ssh_configpy
+#graphify/document #graphify/EXTRACTED #community/Community_580

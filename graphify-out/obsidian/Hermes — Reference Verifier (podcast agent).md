@@ -1,16 +1,16 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "Output Sections (ALL required) (3)"
+community: "Community 954"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Output_Sections_ALL_required_3
+  - community/Community_954
 ---
 
 # Hermes — Reference Verifier (podcast agent)
 
 ## Connections
-- [[Socrates — Dialogue Architect_4]] - `shares_data_with` [EXTRACTED]
+- [[Socrates — Dialogue Architect_11]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Output_Sections_ALL_required_3
+#graphify/concept #graphify/EXTRACTED #community/Community_954

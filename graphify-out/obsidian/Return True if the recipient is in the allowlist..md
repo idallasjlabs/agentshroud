@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "sync-llm-settings.sh"
+community: "Community 6"
 location: "L152"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/sync-llm-settingssh
+  - community/Community_6
 ---
 
 # Return True if the recipient is in the allowlist.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_is_imessage_recipient_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/sync-llm-settingssh
+#graphify/rationale #graphify/EXTRACTED #community/Community_6

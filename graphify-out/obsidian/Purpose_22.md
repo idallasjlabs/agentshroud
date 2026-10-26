@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/README.md"
+source_file: ".agents/skills/i-qa/README.md"
 type: "document"
-community: "Production Safety Checklist (PROD-SAFETY)"
+community: "Community 177"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_PROD-SAFETY
+  - community/Community_177
 ---
 
 # Purpose
 
 ## Connections
-- [[Browser — Secure Browser Automation]] - `contains` [EXTRACTED]
+- [[Quality Assurance (QA)]] - `contains` [EXTRACTED]
+- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_PROD-SAFETY
+#graphify/document #graphify/EXTRACTED #community/Community_177

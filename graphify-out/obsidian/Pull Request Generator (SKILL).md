@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-pr/SKILL.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM)"
+community: "Community 177"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM
+  - community/Community_177
 ---
 
 # Pull Request Generator (SKILL)
@@ -15,4 +15,4 @@ tags:
 - [[Project Management (SKILL)]] - `references` [EXTRACTED]
 - [[Pull Request Generator (README)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM
+#graphify/document #graphify/EXTRACTED #community/Community_177

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "test_telegram_proxy_inbound.py"
+community: "Community 330"
 location: "L301"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/Community_330
 ---
 
 # IX. Discussion
@@ -17,4 +17,4 @@ tags:
 - [[IX-B. STPA-Sec as Applied to AI Agent Systems]] - `contains` [EXTRACTED]
 - [[IX-C. Industry Implications]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/document #graphify/EXTRACTED #community/Community_330

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/graphify/SKILL.md"
+source_file: ".agents/skills/graphify/SKILL.md"
 type: "document"
-community: "Hermes Cron Jobs Reference & Recreation Guide (2)"
-location: "L579"
+community: "Community 369"
+location: "L380"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide_2
+  - community/Community_369
 ---
 
 # For --update and --cluster-only
 
 ## Connections
-- [[graphify_1]] - `contains` [EXTRACTED]
+- [[graphify_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide_2
+#graphify/document #graphify/EXTRACTED #community/Community_369

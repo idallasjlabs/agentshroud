@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/03-session-isolation.md"
+source_file: "docs/planning/redteam/00-information-disclosure.md"
 type: "document"
-community: "telegram_proxy.py"
+community: "Community 836"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/Community_836
 ---
 
 # Severity
 
 ## Connections
-- [[Implement per-user session isolation using Telegram user ID]] - `contains` [EXTRACTED]
+- [[Add information filtering to prevent agent self-disclosure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/document #graphify/EXTRACTED #community/Community_836

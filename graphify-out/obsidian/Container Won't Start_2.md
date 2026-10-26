@@ -1,17 +1,17 @@
 ---
 source_file: "docs/operations/raspberry-pi.md"
 type: "document"
-community: "MCPAuditTrail"
+community: "Community 451"
 location: "L137"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCPAuditTrail
+  - community/Community_451
 ---
 
 # Container Won't Start
 
 ## Connections
-- [[Troubleshooting_28]] - `contains` [EXTRACTED]
+- [[Troubleshooting_39]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCPAuditTrail
+#graphify/document #graphify/EXTRACTED #community/Community_451

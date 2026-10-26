@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_collaborator_responses.py"
 type: "code"
-community: "colima-health-check.sh"
+community: "Community 18"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/Community_18
 ---
 
 # TestConstantMessages
 
 ## Connections
-- [[dot-test_collab_outside_scope_not_empty()]] - `method` [EXTRACTED]
-- [[dot-test_collab_unavailable_not_empty()]] - `method` [EXTRACTED]
-- [[dot-test_no_groups_not_empty()]] - `method` [EXTRACTED]
-- [[dot-test_no_projects_not_empty()]] - `method` [EXTRACTED]
+- [[.test_collab_outside_scope_not_empty()]] - `method` [EXTRACTED]
+- [[.test_collab_unavailable_not_empty()]] - `method` [EXTRACTED]
+- [[.test_no_groups_not_empty()]] - `method` [EXTRACTED]
+- [[.test_no_projects_not_empty()]] - `method` [EXTRACTED]
 - [[GroupConfig]] - `uses` [INFERRED]
 - [[ProjectConfig]] - `uses` [INFERRED]
-- [[TeamsConfig_1]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[test_collaborator_responses.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/Community_18

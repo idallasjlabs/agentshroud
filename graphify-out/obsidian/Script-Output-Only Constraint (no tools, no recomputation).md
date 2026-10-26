@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/daily-component-health-digest.txt"
 type: "rationale"
-community: "Hermes Cron Jobs Reference & Recreation Guide"
+community: "Community 373"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+  - community/Community_373
 ---
 
 # Script-Output-Only Constraint (no tools, no recomputation)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Prompt Daily Component Health Digest]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+#graphify/rationale #graphify/EXTRACTED #community/Community_373

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "PromptGuard"
+community: "Community 22"
 location: "L512"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/Community_22
 ---
 
 # Create a provenance record for a context segment.
 
 ## Connections
-- [[dot-tag_segment()]] - `rationale_for` [EXTRACTED]
+- [[.tag_segment()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PromptGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_22

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "UserSessionManager (3) (2)"
+community: "Community 312"
 location: "L706"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_3_2
+  - community/Community_312
 ---
 
 # TestIncidentResponse
 
 ## Connections
-- [[dot-test_full_stack()_2]] - `method` [EXTRACTED]
+- [[.test_full_stack()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_3_2
+#graphify/code #graphify/EXTRACTED #community/Community_312

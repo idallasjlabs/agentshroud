@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_dashboard.py"
+source_file: "gateway/tests/test_e2e.py"
 type: "code"
-community: "CompetitiveIntelReport"
-location: "L63"
+community: "Community 309"
+location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - community/Community_309
 ---
 
 # test_dashboard_requires_auth()
 
 ## Connections
-- [[GET dashboard without auth returns 403]] - `rationale_for` [EXTRACTED]
-- [[test_dashboard.py]] - `contains` [EXTRACTED]
+- [[GET dashboard without auth returns 403.]] - `rationale_for` [EXTRACTED]
+- [[test_e2e.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/code #graphify/EXTRACTED #community/Community_309

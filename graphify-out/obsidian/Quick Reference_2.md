@@ -1,18 +1,17 @@
 ---
-source_file: "docs/architecture/WORKSPACE_USAGE.md"
+source_file: ".cursor/agents/i-mcpm-aws-profile.md"
 type: "document"
-community: "test_jira_dev_ticket.py"
-location: "L17"
+community: "Community 182"
+location: "L322"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_jira_dev_ticketpy
+  - community/Community_182
 ---
 
 # Quick Reference
 
 ## Connections
-- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
-- [[Using the Helper Script]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/Community_182

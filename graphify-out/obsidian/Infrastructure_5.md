@@ -1,17 +1,17 @@
 ---
-source_file: "docs/project/SYSTEM_STATUS.md"
+source_file: ".cursor/agents/sec-offense.md"
 type: "document"
-community: "apple_engine.py"
-location: "L6"
+community: "Community 1077"
+location: "L369"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/apple_enginepy
+  - community/Community_1077
 ---
 
 # Infrastructure
 
 ## Connections
-- [[✅ What's WORKING]] - `contains` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/apple_enginepy
+#graphify/document #graphify/EXTRACTED #community/Community_1077

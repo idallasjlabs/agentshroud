@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "rationale"
-community: "chatbot/main.py"
+community: "Community 97"
 location: "L241"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/Community_97
 ---
 
 # Return True if an access attempt to this service should be logged.
 
 ## Connections
-- [[dot-should_audit()]] - `rationale_for` [EXTRACTED]
+- [[.should_audit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_97

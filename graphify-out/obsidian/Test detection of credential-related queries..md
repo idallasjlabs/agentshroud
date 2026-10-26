@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "Enum"
+community: "Community 8"
 location: "L121"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enum
+  - community/Community_8
 ---
 
 # Test detection of credential-related queries.
 
 ## Connections
-- [[dot-test_credential_detection()]] - `rationale_for` [EXTRACTED]
+- [[.test_credential_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enum
+#graphify/rationale #graphify/EXTRACTED #community/Community_8

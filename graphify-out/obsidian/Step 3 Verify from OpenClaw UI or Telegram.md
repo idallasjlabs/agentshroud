@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "AgentShroud Audit Specification"
+community: "Community 218"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Audit_Specification
+  - community/Community_218
 ---
 
 # Step 3: Verify from OpenClaw UI or Telegram
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Setup Instructions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification
+#graphify/document #graphify/EXTRACTED #community/Community_218

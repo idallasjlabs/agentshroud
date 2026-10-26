@@ -1,16 +1,16 @@
 ---
 source_file: "reports/upgrade-2026-09-21.md"
 type: "rationale"
-community: "_make_sanitizer()"
+community: "Community 118"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/Community_118
 ---
 
 # Vendor supply-chain freshness gate (npm min-release-age / uv exclude-newer)
 
 ## Connections
-- [[Upgrade Report 2026-09-21 (dev, PARTIAL)]] - `references` [EXTRACTED]
+- [[upgrade-2026-09-21]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/Community_118

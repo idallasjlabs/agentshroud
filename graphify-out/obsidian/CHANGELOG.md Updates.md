@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-pm/SKILL.md"
+source_file: ".agents/agents/i-pm.md"
 type: "document"
-community: "Crash Recovery"
-location: "L121"
+community: "Community 1011"
+location: "L124"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crash_Recovery
+  - community/Community_1011
 ---
 
 # CHANGELOG.md Updates
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Status Reporting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crash_Recovery
+#graphify/document #graphify/EXTRACTED #community/Community_1011

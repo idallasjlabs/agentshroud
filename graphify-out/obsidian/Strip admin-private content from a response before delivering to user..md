@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "rationale"
-community: "chatbot/main.py"
+community: "Community 97"
 location: "L262"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/Community_97
 ---
 
 # Strip admin-private content from a response before delivering to user.
 
 ## Connections
-- [[dot-filter_response()_2]] - `rationale_for` [EXTRACTED]
+- [[.filter_response()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_97

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v0.8/SECURITY_PLAN.md"
 type: "document"
-community: "port_manager.py"
+community: "Community 1036"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/port_managerpy
+  - community/Community_1036
 ---
 
 # Security Plan v0.8 — Wikipedia Threat Coverage Matrix
@@ -15,4 +15,4 @@ tags:
 - [[OpenClaw Threat Model Prompt Injection, Data Exfiltration, Misconfigured Instance]] - `references` [EXTRACTED]
 - [[Security Hardening Plan Reset — Real Agent Containment v0.8]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/port_managerpy
+#graphify/document #graphify/EXTRACTED #community/Community_1036

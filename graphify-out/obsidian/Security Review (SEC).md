@@ -1,23 +1,23 @@
 ---
 source_file: ".agents/skills/i-sec/README.md"
 type: "document"
-community: "Skill: OpenClaw Dev Workflow (ODEV) (2)"
+community: "Community 1021"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_OpenClaw_Dev_Workflow_ODEV_2
+  - community/Community_1021
 ---
 
 # Security Review (SEC)
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-secREADME]] - `contains` [EXTRACTED]
-- [[Purpose_6]] - `contains` [EXTRACTED]
-- [[Related Skills]] - `contains` [EXTRACTED]
-- [[Usage]] - `contains` [EXTRACTED]
-- [[hermesagentsi-security-reviewer]] - `contains` [EXTRACTED]
-- [[openclawagentsi-security-reviewer]] - `contains` [EXTRACTED]
+- [[Purpose_23]] - `contains` [EXTRACTED]
+- [[README_23]] - `contains` [EXTRACTED]
+- [[Related Skills_29]] - `contains` [EXTRACTED]
+- [[SKILL_19]] - `contains` [EXTRACTED]
+- [[Usage_29]] - `contains` [EXTRACTED]
+- [[i-security-reviewer_4]] - `contains` [EXTRACTED]
+- [[i-security-reviewer_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_OpenClaw_Dev_Workflow_ODEV_2
+#graphify/document #graphify/EXTRACTED #community/Community_1021

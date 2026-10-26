@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/turbo-fieldfare-fix-watch.txt"
 type: "document"
-community: "DockerEngine"
+community: "Community 373"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DockerEngine
+  - community/Community_373
 ---
 
 # Prompt: Turbo Fieldfare Fix Watch
@@ -15,4 +15,4 @@ tags:
 - [[Minimal GitHub API Polling (2 calls, last 1-2 comments only)]] - `rationale_for` [EXTRACTED]
 - [[Turbo Fieldfare Issue 84 (decoder_consume malformed tool-call bug)]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DockerEngine
+#graphify/document #graphify/EXTRACTED #community/Community_373

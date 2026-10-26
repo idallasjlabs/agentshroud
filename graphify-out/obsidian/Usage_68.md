@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-mc/README.md"
+source_file: "docker/config/hermes/skills/i-data/README.md"
 type: "document"
-community: "Implementation Status"
+community: "Community 90"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implementation_Status
+  - community/Community_90
 ---
 
 # Usage
 
 ## Connections
-- [[GSDE&G Development Master Checklist (MC)_1]] - `contains` [EXTRACTED]
-- [[GSDE&G Development Master Checklist Skill]] - `contains` [EXTRACTED]
+- [[Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implementation_Status
+#graphify/document #graphify/EXTRACTED #community/Community_90

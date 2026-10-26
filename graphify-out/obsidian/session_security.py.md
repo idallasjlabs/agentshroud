@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "TelegramAPIProxy (2)"
+community: "Community 76"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/Community_76
 ---
 
 # session_security.py
@@ -23,8 +23,8 @@ tags:
 - [[Wang et al. 2026 (arXiv2602.08412) — Confused Deputy  Event Injection Attacks]] - `cites` [EXTRACTED]
 - [[browser_security.py]] - `references` [EXTRACTED]
 - [[log_sanitizer.py]] - `references` [EXTRACTED]
-- [[oauth_security.py_2]] - `references` [EXTRACTED]
+- [[oauth_security.py]] - `references` [EXTRACTED]
 - [[subagent_monitor.py]] - `references` [EXTRACTED]
 - [[test_session_security.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/code #graphify/EXTRACTED #community/Community_76

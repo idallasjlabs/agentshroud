@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "iCloud Services (2)"
+community: "Community 469"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services_2
+  - community/Community_469
 ---
 
 # set-model.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services_2
+#graphify/document #graphify/EXTRACTED #community/Community_469

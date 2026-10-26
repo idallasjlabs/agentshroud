@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "rationale"
-community: "A2AGovernanceProxy"
+community: "Community 88"
 location: "L535"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/Community_88
 ---
 
 # The exact scenario the user asked for: add a 4th bot and it just works.
 
 ## Connections
-- [[dot-test_adding_a_fourth_bot_extends_the_mesh_to_everyone()]] - `rationale_for` [EXTRACTED]
+- [[.test_adding_a_fourth_bot_extends_the_mesh_to_everyone()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_88

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: ".get_op_reference()"
+community: "Community 1352"
 location: "L197"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/get_op_reference
+  - community/Community_1352
 ---
 
 # Test credential status reporting.
 
 ## Connections
-- [[dot-test_get_credential_status()]] - `rationale_for` [EXTRACTED]
+- [[.test_get_credential_status()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/get_op_reference
+#graphify/rationale #graphify/EXTRACTED #community/Community_1352

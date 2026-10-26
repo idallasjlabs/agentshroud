@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "rationale"
-community: "PIIConfig"
+community: "Community 126"
 location: "L822-L851"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/Community_126
 ---
 
 # Shared working-tree stability guard
@@ -17,4 +17,4 @@ tags:
 - [[detects HEAD moving mid-run]] - `references` [EXTRACTED]
 - [[phase_apply()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_126

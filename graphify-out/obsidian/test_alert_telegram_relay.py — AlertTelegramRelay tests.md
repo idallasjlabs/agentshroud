@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "SOC Models ServiceDescriptor Tests"
+community: "Community 1804"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Models_ServiceDescriptor_Tests
+  - community/Community_1804
 ---
 
 # test_alert_telegram_relay.py — AlertTelegramRelay tests
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Models_ServiceDescriptor_Tests
+#graphify/code #graphify/EXTRACTED #community/Community_1804

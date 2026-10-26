@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "hermes/skills/i-cr/SKILL.md (2)"
+community: "Community 1129"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd_2
+  - community/Community_1129
 ---
 
 # _mock_empty_dir()
 
 ## Connections
-- [[dot-test_returns_false_for_empty_dir()]] - `calls` [EXTRACTED]
-- [[dot-test_three_zero_failures_no_report_on_disk()]] - `calls` [EXTRACTED]
+- [[.test_returns_false_for_empty_dir()]] - `calls` [EXTRACTED]
+- [[.test_three_zero_failures_no_report_on_disk()]] - `calls` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd_2
+#graphify/code #graphify/EXTRACTED #community/Community_1129

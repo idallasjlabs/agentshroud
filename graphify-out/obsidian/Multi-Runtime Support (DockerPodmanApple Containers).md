@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "concept"
-community: "ADR-006: Multi-Runtime Container Support"
+community: "Community 236"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ADR-006_Multi-Runtime_Container_Support
+  - community/Community_236
 ---
 
 # Multi-Runtime Support (Docker/Podman/Apple Containers)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ADR-006 Multi-Runtime Container Support]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support
+#graphify/concept #graphify/EXTRACTED #community/Community_236

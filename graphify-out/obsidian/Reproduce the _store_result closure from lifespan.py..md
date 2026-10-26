@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "rationale"
-community: "ADR-001: Transparent Proxy vs Agent Modification"
+community: "Community 625"
 location: "L317"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ADR-001_Transparent_Proxy_vs_Agent_Modification
+  - community/Community_625
 ---
 
 # Reproduce the _store_result closure from lifespan.py.
 
 ## Connections
-- [[dot-_make_store_result_fn()]] - `rationale_for` [EXTRACTED]
+- [[._make_store_result_fn()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_vs_Agent_Modification
+#graphify/rationale #graphify/EXTRACTED #community/Community_625

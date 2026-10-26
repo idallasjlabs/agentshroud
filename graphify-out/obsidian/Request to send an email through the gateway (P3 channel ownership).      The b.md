@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "UserSessionManager (2) (2)"
+community: "Community 2154"
 location: "L330"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager_2_2
+  - community/Community_2154
 ---
 
 # Request to send an email through the gateway (P3: channel ownership).      The b
 
 ## Connections
-- [[EmailSendRequest_1]] - `rationale_for` [EXTRACTED]
+- [[EmailSendRequest]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_2_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_2154

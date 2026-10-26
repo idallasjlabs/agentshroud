@@ -1,18 +1,18 @@
 ---
-source_file: "docker/scripts/scan.sh"
-type: "code"
-community: "Regression guard (2026-08-30): the report scanned :latest tags while deploys…"
-location: "L1"
+source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
+type: "document"
+community: "Community 398"
+location: "L46"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Regression_guard_2026-08-30_the_report_scanned_latest_tags_while_deploys
+  - community/Community_398
 ---
 
 # scan.sh
 
 ## Connections
-- [[dockerscriptssecurity-scan.sh]] - `semantically_similar_to` [INFERRED]
-- [[scan.sh script]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
+- [[SECURITY_SCRIPTS_REFERENCE]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Regression_guard_2026-08-30_the_report_scanned_latest_tags_while_deploys
+#graphify/document #graphify/EXTRACTED #community/Community_398

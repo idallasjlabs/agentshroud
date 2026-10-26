@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "rationale"
-community: "test_a2a_policy.py"
+community: "Community 52"
 location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/Community_52
 ---
 
 # Remove an agent from the registry.
 
 ## Connections
-- [[dot-unregister()]] - `rationale_for` [EXTRACTED]
+- [[.unregister()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/rationale #graphify/EXTRACTED #community/Community_52

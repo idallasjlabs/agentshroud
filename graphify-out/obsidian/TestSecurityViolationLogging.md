@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "._make_proxy()"
+community: "Community 31"
 location: "L275"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_31
 ---
 
 # TestSecurityViolationLogging
 
 ## Connections
-- [[dot-test_multiple_violations_tracked()]] - `method` [EXTRACTED]
-- [[dot-test_normal_operations_not_violations()]] - `method` [EXTRACTED]
-- [[dot-test_violation_recorded_in_audit()]] - `method` [EXTRACTED]
+- [[.test_multiple_violations_tracked()]] - `method` [EXTRACTED]
+- [[.test_normal_operations_not_violations()]] - `method` [EXTRACTED]
+- [[.test_violation_recorded_in_audit()]] - `method` [EXTRACTED]
 - [[FileSandbox]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[Test that security violations are properly logged and tracked.]] - `rationale_for` [EXTRACTED]
 - [[test_privilege_separation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_31

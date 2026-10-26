@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "ContextGuard"
+community: "Community 0"
 location: "L56"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/Community_0
 ---
 
 # Prompt guard should scan full input, not short-circuit on first match.
 
 ## Connections
-- [[dot-test_prompt_guard_no_early_exit_leak()]] - `rationale_for` [EXTRACTED]
+- [[.test_prompt_guard_no_early_exit_leak()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

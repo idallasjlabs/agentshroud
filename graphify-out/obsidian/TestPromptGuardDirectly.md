@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "TestHeuristicClassifierDirectly"
+community: "Community 187"
 location: "L433"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestHeuristicClassifierDirectly
+  - community/Community_187
 ---
 
 # TestPromptGuardDirectly
 
 ## Connections
-- [[dot-test_high_confidence_payloads()]] - `method` [EXTRACTED]
-- [[HeuristicClassifier_1]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[.test_high_confidence_payloads()]] - `method` [EXTRACTED]
+- [[HeuristicClassifier]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[PromptGuard scans high-confidence classic payloads with non-zero score.]] - `rationale_for` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestHeuristicClassifierDirectly
+#graphify/code #graphify/EXTRACTED #community/Community_187

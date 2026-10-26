@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/tests/test_soc_egress.py"
 type: "code"
-community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes) (4)"
+community: "Community 1821"
 location: "line 15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes_4
+  - community/Community_1821
 ---
 
 # SOC Egress EgressRequest Model Tests
 
-#graphify/code #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes_4
+#graphify/code #graphify/EXTRACTED #community/Community_1821

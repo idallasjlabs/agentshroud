@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/cli/main.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
-location: "L1711"
+community: "Community 87"
+location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/Community_87
 ---
 
 # get_health()
 
 ## Connections
-- [[SCLCaller]] - `references` [EXTRACTED]
-- [[ServiceManager]] - `calls` [EXTRACTED]
-- [[_app_state()]] - `calls` [EXTRACTED]
-- [[list_services()]] - `calls` [EXTRACTED]
-- [[socrouter.py]] - `contains` [EXTRACTED]
+- [[Aggregate health report.]] - `rationale_for` [EXTRACTED]
+- [[_output()]] - `calls` [EXTRACTED]
+- [[main.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/Community_87

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "AgentShroud Device Pairing Management"
+community: "Community 341"
 location: "L409"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AgentShroud_Device_Pairing_Management
+  - community/Community_341
 ---
 
 # _on_vg_state()
@@ -19,4 +19,4 @@ tags:
 - [[wakeword_tts_stop_requested()]] - `calls` [INFERRED]
 - [[ws_vg_state_t]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AgentShroud_Device_Pairing_Management
+#graphify/code #graphify/INFERRED #community/Community_341

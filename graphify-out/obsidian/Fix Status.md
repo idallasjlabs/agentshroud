@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05.md"
 type: "document"
-community: "ApprovalQueueConfig (5)"
+community: "Community 153"
 location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_5
+  - community/Community_153
 ---
 
 # Fix Status
 
 ## Connections
-- [[6. Verdict_1]] - `contains` [EXTRACTED]
+- [[6. Verdict_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_5
+#graphify/document #graphify/EXTRACTED #community/Community_153

@@ -1,21 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/main/app_main.c"
+source_file: "firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c"
 type: "code"
-community: "System Instructions: Credential Security (Ultra-Conservative)"
-location: "L521"
+community: "Community 341"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/System_Instructions_Credential_Security_Ultra-Conservative
+  - community/Community_341
 ---
 
 # vt_remote_log()
 
 ## Connections
-- [[_deliver_utterance()]] - `calls` [EXTRACTED]
-- [[_on_ws_ctrl()]] - `calls` [EXTRACTED]
-- [[app_main.c]] - `contains` [EXTRACTED]
-- [[voice_task()]] - `calls` [EXTRACTED]
-- [[wifi_event_handler()]] - `calls` [EXTRACTED]
+- [[test_ptt_state.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/System_Instructions_Credential_Security_Ultra-Conservative
+#graphify/code #graphify/EXTRACTED #community/Community_341

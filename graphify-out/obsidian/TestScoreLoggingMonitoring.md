@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/tests/test_scorecard_scoring.py"
+source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "A2APolicyEngine (gateway/security/a2a_policy.py)"
-location: "L438"
+community: "Community 67"
+location: "L775"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine_gateway/security/a2a_policypy
+  - community/Community_67
 ---
 
 # TestScoreLoggingMonitoring
 
 ## Connections
-- [[dot-test_five_all_pillars()]] - `method` [EXTRACTED]
-- [[dot-test_one_baseline()]] - `method` [EXTRACTED]
-- [[dot-test_two_with_wazuh()]] - `method` [EXTRACTED]
-- [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
+- [[.test_one_when_no_wazuh_no_fluent()]] - `method` [EXTRACTED]
+- [[.test_two_when_wazuh_running()]] - `method` [EXTRACTED]
+- [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine_gateway/security/a2a_policypy
+#graphify/code #graphify/EXTRACTED #community/Community_67

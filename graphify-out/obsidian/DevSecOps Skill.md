@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-devsecops/SKILL.md"
 type: "document"
-community: "MCP Server: atlassian-idallasj"
+community: "Community 1576"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Server_atlassian-idallasj
+  - community/Community_1576
 ---
 
 # DevSecOps Skill
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Server_atlassian-idallasj
+#graphify/document #graphify/EXTRACTED #community/Community_1576

@@ -1,12 +1,12 @@
 ---
 source_file: "SECURITY.md"
 type: "document"
-community: "agentshroud-ieee-paper.md"
+community: "Community 394"
 location: "L104"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-ieee-papermd
+  - community/Community_394
 ---
 
 # Emergency Response
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud™ Security Policy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-ieee-papermd
+#graphify/document #graphify/EXTRACTED #community/Community_394

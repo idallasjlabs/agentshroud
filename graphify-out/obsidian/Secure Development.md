@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "AgentShroud Documentation"
+community: "Community 249"
 location: "L181"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Documentation
+  - community/Community_249
 ---
 
 # Secure Development
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🎯 Use Cases]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Documentation
+#graphify/document #graphify/EXTRACTED #community/Community_249

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/TAILSCALE_COMMANDS.md"
 type: "document"
-community: "test_security_regressions_v1_2.py"
+community: "Community 764"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/test_security_regressions_v1_2py
+  - community/Community_764
 ---
 
 # TAILSCALE_COMMANDS.md
@@ -15,6 +15,6 @@ tags:
 - [[QUICK_REFERENCE]] - `conceptually_related_to` [INFERRED]
 - [[Tailscale Remote Access (Pi)]] - `conceptually_related_to` [INFERRED]
 - [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
-- [[troubleshooting_21]] - `conceptually_related_to` [INFERRED]
+- [[troubleshooting]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/test_security_regressions_v1_2py
+#graphify/document #graphify/INFERRED #community/Community_764

@@ -1,18 +1,17 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-03-05-r3.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "main (2)"
-location: "L11"
+community: "Community 1380"
+location: "L1129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/main_2
+  - community/Community_1380
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud v0.8.0 Peer Review Round 3 (FINAL)]] - `contains` [EXTRACTED]
-- [[Test Results_1]] - `contains` [EXTRACTED]
+- [[0.1.0 - 2026-02-16]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/main_2
+#graphify/document #graphify/EXTRACTED #community/Community_1380

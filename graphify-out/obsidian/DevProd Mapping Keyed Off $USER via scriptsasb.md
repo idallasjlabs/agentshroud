@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-06.md"
 type: "rationale"
-community: "format_upstream_cve_alert()"
+community: "Community 555"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/format_upstream_cve_alert
+  - community/Community_555
 ---
 
 # Dev/Prod Mapping Keyed Off $USER via scripts/asb
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Sunday Upgrade 2026-09-06 (dev-only scoped run)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/format_upstream_cve_alert
+#graphify/rationale #graphify/EXTRACTED #community/Community_555

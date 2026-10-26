@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-ps/SKILL.md"
+source_file: ".agents/agents/i-ps.md"
 type: "document"
-community: "TestSSRFDetection (2)"
-location: "L173"
+community: "Community 921"
+location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSSRFDetection_2
+  - community/Community_921
 ---
 
 # If Something Goes Wrong
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSSRFDetection_2
+#graphify/document #graphify/EXTRACTED #community/Community_921

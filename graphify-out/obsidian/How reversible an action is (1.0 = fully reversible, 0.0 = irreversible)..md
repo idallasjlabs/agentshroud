@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "test_tool_chain_analyzer.py"
+community: "Community 8"
 location: "L119"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_tool_chain_analyzerpy
+  - community/Community_8
 ---
 
 # How reversible an action is (1.0 = fully reversible, 0.0 = irreversible).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ReversibilityScore]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_tool_chain_analyzerpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_8
