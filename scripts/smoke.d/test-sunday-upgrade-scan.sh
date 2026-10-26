@@ -750,7 +750,7 @@ t19_run() {
     env -i PATH="$B19:/usr/bin:/bin" T19_MODE="$mode" T19_STATE="$st" \
         SUNDAY_VERIFY_SETTLE_SECONDS=20 SUNDAY_VERIFY_POLL_SECONDS=0 "$BASH_BIN" -c "
         log() { echo \"LOG \$*\"; }; err() { echo \"ERR \$*\"; }; warn() { :; }
-        _attempt_rollback() { echo ROLLBACK; }
+        _attempt_rollback() { echo ROLLBACK; }; _agent_selfcheck() { return 0; }
         CONTAINERS='gw oc'; SOAK_SECONDS=0
         . '$TMPROOT/t19/verify.sh'; phase_verify" > "$st/out" 2>&1
     echo $?
@@ -767,6 +767,78 @@ check "T19: a crash loop that never settles still fails verify and rolls back" \
 check "T19: a restart AFTER health settled still fails verify" \
     "$([ "$rc19c" = 40 ] && grep -q 'RESTARTED during soak' "$TMPROOT/t19/late/out" && echo true || echo false)" \
     "rc=$rc19c out=$(tail -4 "$TMPROOT/t19/late/out")"
+
+# ── T20: verify runs each agent's own read-only diagnostics ──────────────────
+# 2026-10-25: OpenClaw 2026.10.6 stayed "healthy" while its doctor had re-pinned
+# agents to openai/gpt-6-astra, a provider openclaw.json never declared. A
+# healthcheck cannot see that; the agents' own diagnostics can. Hermes 0.22.5's
+# doctor always reports one false ✗ (model.provider 'ollama', which its runtime
+# maps to "custom"), so the gate must judge ✗ lines, not doctor's exit code.
+T20="$TMPROOT/t20"; B20="$T20/bin"; mkdir -p "$T20"
+# shellcheck disable=SC2016
+write_fake "$B20" docker '
+case "$1" in
+  inspect) case "$3" in *RestartCount*) echo 0 ;; *Health*) echo healthy ;; *) echo running ;; esac; exit 0 ;;
+  exec) shift; c="$1"; shift ;;
+  *) exit 0 ;;
+esac
+[ "$1" = timeout ] && shift 2
+case "$1 $2" in
+  "hermes doctor")   cat "$T20_DIR/hdoc"; exit "$(cat "$T20_DIR/hrc")" ;;
+  "openclaw config") exit "$(cat "$T20_DIR/vrc")" ;;
+  "openclaw health") cat "$T20_DIR/och" ;;
+  "node -e")         node -e "$3" "$T20_DIR/oc.json" ;;
+esac
+'
+{ sed -n '/^# ── Agent self-check (read-only)/,/^phase_verify() {/p' "$APPLY_SH" | sed '$d'
+  sed -n '/^phase_verify() {/,/^}/p;/^_hermes_container() {/,/^}/p' "$APPLY_SH"; } > "$T20/verify.sh"
+HDOC_OK='  ✓ No active security advisories
+  ✓ config.yaml found
+  ✗ model.provider '"'"'ollama'"'"' is not a recognised provider (known: custom, lmstudio)
+  ⚠ No GITHUB_TOKEN'
+OC_LOCAL='{"models":{"providers":{"openai-local":{},"ollama":{}}},"agents":{"defaults":{"model":{"primary":"openai-local/m"}},"entries":{"main":{"model":"openai-local/m"},"collaborator":{"model":"openai-local/m"}}}}'
+OC_CLOUD='{"models":{"providers":{"ollama":{}}},"agents":{"defaults":{"model":"openai/gpt-6-astra"},"entries":{"main":{"model":"ollama/m"},"collaborator":{"model":{"primary":"openai/gpt-6-astra"}}}}}'
+t20_run() {  # <name> <hermes-doctor-output> <hermes-rc> <validate-rc> <health-json> <openclaw.json>
+    local d="$T20/$1"; mkdir -p "$d"
+    printf '%s\n' "$2" > "$d/hdoc"; echo "$3" > "$d/hrc"; echo "$4" > "$d/vrc"
+    printf '%s\n' "$5" > "$d/och"; printf '%s\n' "$6" > "$d/oc.json"
+    env -i PATH="$B20:$(dirname "$(command -v node)"):/usr/bin:/bin" T20_DIR="$d" \
+        SUNDAY_VERIFY_SETTLE_SECONDS=0 SUNDAY_VERIFY_POLL_SECONDS=0 "$BASH_BIN" -c "
+        log() { echo \"LOG \$*\"; }; err() { echo \"ERR \$*\"; }; warn() { echo \"WARN \$*\"; }
+        _attempt_rollback() { echo ROLLBACK; }
+        CONTAINERS='gw agentshroud-dev-openclaw agentshroud-dev-hermes-v2'; SOAK_SECONDS=0
+        . '$T20/verify.sh'; phase_verify" > "$d/out" 2>&1
+    echo $?
+}
+HOK='{"ok":true,"plugins":{"errors":[]}}'
+set +e
+rc20a=$(t20_run clean    "$HDOC_OK" 1 0 "$HOK" "$OC_LOCAL")
+rc20b=$(t20_run hermesx  "$HDOC_OK
+  ✗ state.db schema is newer than this Hermes" 1 0 "$HOK" "$OC_LOCAL")
+rc20c=$(t20_run cloudpin "$HDOC_OK" 1 0 "$HOK" "$OC_CLOUD")
+rc20d=$(t20_run nodoctor "" 124 0 "$HOK" "$OC_LOCAL")
+rc20e=$(t20_run invalid  "$HDOC_OK" 1 1 "$HOK" "$OC_LOCAL")
+rc20f=$(t20_run plugerr  "$HDOC_OK" 1 0 '{"ok":true,"plugins":{"errors":[{"id":"telegram"}]}}' "$OC_LOCAL")
+set -e
+check "T20: clean agents pass; Hermes' known 'ollama' false ✗ is not a failure" \
+    "$([ "$rc20a" = 0 ] && grep -q 'verify: PASS' "$T20/clean/out" && ! grep -q ROLLBACK "$T20/clean/out" && echo true || echo false)" \
+    "rc=$rc20a out=$(tail -6 "$T20/clean/out")"
+check "T20: any other ✗ from hermes doctor fails verify" \
+    "$([ "$rc20b" = 40 ] && grep -q 'state.db schema is newer' "$T20/hermesx/out" && echo true || echo false)" \
+    "rc=$rc20b out=$(tail -6 "$T20/hermesx/out")"
+check "T20: an agent pinned to an undeclared (cloud) provider fails verify" \
+    "$([ "$rc20c" = 40 ] && grep -q 'agents.entries.collaborator.model=openai/gpt-6-astra' "$T20/cloudpin/out" \
+        && grep -q 'agents.defaults.model=openai/gpt-6-astra' "$T20/cloudpin/out" && echo true || echo false)" \
+    "rc=$rc20c out=$(tail -8 "$T20/cloudpin/out")"
+check "T20: a hermes doctor that produced nothing (timeout) fails, never passes" \
+    "$([ "$rc20d" = 40 ] && grep -q 'hermes doctor produced no results (rc=124)' "$T20/nodoctor/out" && echo true || echo false)" \
+    "rc=$rc20d out=$(tail -6 "$T20/nodoctor/out")"
+check "T20: openclaw config validate failing fails verify" \
+    "$([ "$rc20e" = 40 ] && grep -q 'openclaw config validate rc=1' "$T20/invalid/out" && echo true || echo false)" \
+    "rc=$rc20e out=$(tail -6 "$T20/invalid/out")"
+check "T20: openclaw health reporting plugin errors fails verify" \
+    "$([ "$rc20f" = 40 ] && grep -q 'openclaw health' "$T20/plugerr/out" && echo true || echo false)" \
+    "rc=$rc20f out=$(tail -6 "$T20/plugerr/out")"
 
 # ── Summary ──────────────────────────────────────────────────────────────────
 echo ""
