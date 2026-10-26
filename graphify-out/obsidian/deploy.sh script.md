@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/deploy.sh"
 type: "code"
-community: "TestScoreSecretsManagement"
+community: "Community 1418"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestScoreSecretsManagement
+  - community/Community_1418
 ---
 
 # deploy.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[deploy.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestScoreSecretsManagement
+#graphify/code #graphify/EXTRACTED #community/Community_1418

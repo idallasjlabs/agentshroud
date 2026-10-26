@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "code"
-community: "Pre-Deployment Checklist"
+community: "Community 637"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist
+  - community/Community_637
 ---
 
 # egress-config.yml
@@ -14,4 +14,4 @@ tags:
 - [[Blocked by default (private RFC1918 ranges)]] - `conceptually_related_to` [EXTRACTED]
 - [[DNS Filter]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Pre-Deployment_Checklist
+#graphify/code #graphify/EXTRACTED #community/Community_637

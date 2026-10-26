@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "check_command"
+community: "Community 0"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check_command
+  - community/Community_0
 ---
 
 # env_guard.py
@@ -16,11 +16,11 @@ tags:
 - [[EnvironmentLeakage]] - `contains` [EXTRACTED]
 - [[agent_isolation.py]] - `references` [EXTRACTED]
 - [[check_command()]] - `contains` [EXTRACTED]
-- [[egress_filter.py_1]] - `references` [EXTRACTED]
+- [[egress_filter.py]] - `references` [EXTRACTED]
 - [[encrypted_store.py]] - `references` [EXTRACTED]
 - [[get_env_guard()]] - `contains` [EXTRACTED]
 - [[key_vault.py]] - `semantically_similar_to` [INFERRED]
 - [[log_sanitizer.py]] - `semantically_similar_to` [INFERRED]
 - [[scrub_output()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check_command
+#graphify/code #graphify/EXTRACTED #community/Community_0

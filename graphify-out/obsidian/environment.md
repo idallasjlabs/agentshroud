@@ -1,18 +1,17 @@
 ---
-source_file: "opencode.json"
-type: "code"
-community: "opencode.json"
-location: "L61"
+source_file: ".github/COPILOT_CLI_SETUP.md"
+type: "document"
+community: "Community 2137"
+location: "L284"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/opencodejson
+  - community/Community_2137
 ---
 
-# environment
+# Environment
 
 ## Connections
-- [[PATH_15]] - `contains` [EXTRACTED]
-- [[safari]] - `contains` [EXTRACTED]
+- [[Repository Context]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/opencodejson
+#graphify/document #graphify/EXTRACTED #community/Community_2137

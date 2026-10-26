@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "TestOAuthInjection"
+community: "Community 590"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOAuthInjection
+  - community/Community_590
 ---
 
 # dns_blocklist.py
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[DNSBlocklist]] - `contains` [EXTRACTED]
 - [[dns_forwarder.py]] - `imports_from` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection
+#graphify/code #graphify/EXTRACTED #community/Community_590

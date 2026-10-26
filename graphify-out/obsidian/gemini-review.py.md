@@ -1,19 +1,19 @@
 ---
 source_file: "scripts/gemini-review.py"
 type: "code"
-community: "AgentShroud™ Communication Templates (2)"
+community: "Community 1118"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Communication_Templates_2
+  - community/Community_1118
 ---
 
 # gemini-review.py
 
 ## Connections
 - [[call_gemini()]] - `contains` [EXTRACTED]
-- [[main()_4]] - `contains` [EXTRACTED]
+- [[main()_21]] - `contains` [EXTRACTED]
 - [[peer-review.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Communication_Templates_2
+#graphify/code #graphify/EXTRACTED #community/Community_1118

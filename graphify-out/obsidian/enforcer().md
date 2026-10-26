@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_output_schema.py"
+source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "plan_remediation"
-location: "L17"
+community: "Community 61"
+location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/Community_61
 ---
 
 # enforcer()
 
 ## Connections
-- [[OutputSchemaEnforcer]] - `calls` [EXTRACTED]
-- [[test_output_schema.py]] - `contains` [EXTRACTED]
+- [[ToolACLEnforcer]] - `calls` [EXTRACTED]
+- [[test_group_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/Community_61

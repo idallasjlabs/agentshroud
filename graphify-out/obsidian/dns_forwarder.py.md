@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "TestOAuthInjection"
+community: "Community 590"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOAuthInjection
+  - community/Community_590
 ---
 
 # dns_forwarder.py
@@ -17,9 +17,10 @@ tags:
 - [[DNSForwarderProtocol]] - `contains` [EXTRACTED]
 - [[dns_blocklist.py]] - `imports_from` [EXTRACTED]
 - [[forward_query()]] - `contains` [EXTRACTED]
-- [[main()_24]] - `contains` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[main()_12]] - `contains` [EXTRACTED]
 - [[parse_domain_name()]] - `contains` [EXTRACTED]
 - [[parse_query()]] - `contains` [EXTRACTED]
 - [[start_dns_forwarder()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection
+#graphify/code #graphify/EXTRACTED #community/Community_590

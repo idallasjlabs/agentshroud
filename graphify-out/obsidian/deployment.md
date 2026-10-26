@@ -1,20 +1,20 @@
 ---
 source_file: "docs/runbooks/deployment.md"
 type: "document"
-community: "Implement gateway-level outbound information filtering module"
+community: "Community 559"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Implement_gateway-level_outbound_information_filtering_module
+  - community/Community_559
 ---
 
 # deployment.md
 
 ## Connections
 - [[Deployment Runbook — AgentShroud]] - `contains` [EXTRACTED]
-- [[RUNBOOK_1]] - `conceptually_related_to` [INFERRED]
+- [[RUNBOOK]] - `conceptually_related_to` [INFERRED]
 - [[Rollback Procedure]] - `semantically_similar_to` [INFERRED]
 - [[raspberry-pi]] - `references` [AMBIGUOUS]
 
-#graphify/document #graphify/INFERRED #community/Implement_gateway-level_outbound_information_filtering_module
+#graphify/document #graphify/INFERRED #community/Community_559

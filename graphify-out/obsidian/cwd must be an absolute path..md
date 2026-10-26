@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "Community 7"
 location: "L207"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # cwd must be an absolute path.
 
 ## Connections
-- [[dot-test_ssh_exec_cwd_relative_path_rejects_400()]] - `rationale_for` [EXTRACTED]
+- [[.test_ssh_exec_cwd_relative_path_rejects_400()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

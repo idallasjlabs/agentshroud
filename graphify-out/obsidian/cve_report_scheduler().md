@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "sync-cve-registry.py"
+community: "Community 127"
 location: "L396"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/Community_127
 ---
 
 # cve_report_scheduler()
 
 ## Connections
-- [[Background loop sends one CVE report per day at ``report_hour`` UTC. Runs…]] - `rationale_for` [EXTRACTED]
+- [[Background loop sends one CVE report per day at ``report_hour`` UTC.      Runs]] - `rationale_for` [EXTRACTED]
 - [[_already_sent_today()]] - `calls` [EXTRACTED]
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
+- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[run_and_send_cve_report()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/Community_127

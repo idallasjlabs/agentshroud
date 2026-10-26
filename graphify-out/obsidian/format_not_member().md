@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/proxy/collaborator_responses.py"
 type: "code"
-community: "colima-health-check.sh"
+community: "Community 18"
 location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/Community_18
 ---
 
 # format_not_member()
 
 ## Connections
-- [[dot-_handle_groupinfo_command()]] - `calls` [EXTRACTED]
-- [[dot-test_not_member()]] - `calls` [EXTRACTED]
+- [[._handle_groupinfo_command()]] - `calls` [EXTRACTED]
+- [[.test_not_member()]] - `calls` [EXTRACTED]
 - [[collaborator_responses.py]] - `contains` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 - [[test_collaborator_responses.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/Community_18

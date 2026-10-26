@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/test_playback_state.c"
 type: "code"
-community: "AgentShroud Device Pairing Management"
+community: "Community 228"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Device_Pairing_Management
+  - community/Community_228
 ---
 
 # face_state_t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[face_set_state()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management
+#graphify/code #graphify/EXTRACTED #community/Community_228

@@ -1,13 +1,13 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "UI Face API Header"
+community: "Community 1750"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/UI_Face_API_Header
+  - community/Community_1750
 ---
 
 # docs/README.md — documentation structure index and project phase status
 
-#graphify/document #graphify/EXTRACTED #community/UI_Face_API_Header
+#graphify/document #graphify/EXTRACTED #community/Community_1750

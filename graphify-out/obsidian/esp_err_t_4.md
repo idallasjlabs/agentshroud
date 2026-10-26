@@ -1,17 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/main/wakeword.c"
+source_file: "firmware/voice-terminal/test/test_playback_state/stubs/bsp/esp-bsp.h"
 type: "code"
-community: "graphify reference: extra exports and benchmark (2)"
-location: "L178"
+community: "Community 1313"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark_2
+  - community/Community_1313
 ---
 
 # esp_err_t
 
 ## Connections
-- [[wakeword_init()]] - `references` [EXTRACTED]
+- [[bsp_iot_button_create()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark_2
+#graphify/code #graphify/EXTRACTED #community/Community_1313

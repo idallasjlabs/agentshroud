@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/browser-fetch/browser-fetch.js"
 type: "code"
-community: "hermes/workspace/jira_dev_ticket.py"
+community: "Community 193"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/workspace/jira_dev_ticketpy
+  - community/Community_193
 ---
 
 # fs
 
 ## Connections
-- [[browser-fetch.js_2]] - `contains` [EXTRACTED]
+- [[browser-fetch.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/workspace/jira_dev_ticketpy
+#graphify/code #graphify/EXTRACTED #community/Community_193

@@ -1,18 +1,20 @@
 ---
-source_file: "firmware/voice-terminal/main/ota.c"
+source_file: "firmware/voice-terminal/main/audio.c"
 type: "code"
-community: "Project Documentation"
-location: "L14"
+community: "Community 378"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Project_Documentation
+  - community/Community_378
 ---
 
 # esp_err_t
 
 ## Connections
-- [[_http_event_handler()]] - `references` [EXTRACTED]
-- [[ota_check()]] - `references` [EXTRACTED]
+- [[audio_init()]] - `references` [EXTRACTED]
+- [[audio_play()]] - `references` [EXTRACTED]
+- [[audio_preinit()]] - `references` [EXTRACTED]
+- [[audio_set_volume()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Project_Documentation
+#graphify/code #graphify/EXTRACTED #community/Community_378

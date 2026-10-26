@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "AgentTarget (2)"
+community: "Community 0"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/Community_0
 ---
 
 # drift_detector.py
@@ -18,6 +18,5 @@ tags:
 - [[DriftDetector]] - `contains` [EXTRACTED]
 - [[agent_isolation.py]] - `references` [EXTRACTED]
 - [[alert_dispatcher.py]] - `references` [EXTRACTED]
-- [[clamav_scanner.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/code #graphify/EXTRACTED #community/Community_0

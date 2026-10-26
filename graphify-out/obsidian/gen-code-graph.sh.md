@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/gen-code-graph.sh"
 type: "code"
-community: "Test Kill Switch Monitor"
+community: "Community 1384"
 location: "L1"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Test_Kill_Switch_Monitor
+  - graphify/AMBIGUOUS
+  - community/Community_1384
 ---
 
 # gen-code-graph.sh
@@ -15,4 +15,4 @@ tags:
 - [[Obsidian code-architecture vault (.obsidian-vaultscode-architecture)]] - `references` [AMBIGUOUS]
 - [[gen-code-graph.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Test_Kill_Switch_Monitor
+#graphify/code #graphify/AMBIGUOUS #community/Community_1384

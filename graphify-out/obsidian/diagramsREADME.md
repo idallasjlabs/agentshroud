@@ -1,24 +1,17 @@
 ---
-source_file: "docs/diagrams/README.md"
+source_file: ".agents/agents/daedalus.md"
 type: "document"
-community: "Distributed OpenClaw Node Architecture — Raspberry Pi 4"
-location: "L1"
+community: "Community 1858"
+location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
+  - community/Community_1858
 ---
 
 # diagrams/README.md
 
 ## Connections
-- [[01-architecture]] - `references` [EXTRACTED]
-- [[02-infrastructure]] - `references` [EXTRACTED]
-- [[03-data]] - `references` [EXTRACTED]
-- [[04-security]] - `references` [EXTRACTED]
-- [[05-behavior]] - `references` [EXTRACTED]
-- [[06-operations]] - `references` [EXTRACTED]
-- [[07-team-planning]] - `references` [EXTRACTED]
-- [[AgentShroud — Diagram Library]] - `contains` [EXTRACTED]
+- [[Output Format_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
+#graphify/document #graphify/EXTRACTED #community/Community_1858

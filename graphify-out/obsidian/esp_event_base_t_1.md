@@ -1,17 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/main/app_main.c"
+source_file: "firmware/voice-terminal/main/ws_client.c"
 type: "code"
-community: "System Instructions: Credential Security (Ultra-Conservative)"
-location: "L199"
+community: "Community 358"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/System_Instructions_Credential_Security_Ultra-Conservative
+  - community/Community_358
 ---
 
 # esp_event_base_t
 
 ## Connections
-- [[wifi_event_handler()]] - `references` [EXTRACTED]
+- [[_on_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/System_Instructions_Credential_Security_Ultra-Conservative
+#graphify/code #graphify/EXTRACTED #community/Community_358

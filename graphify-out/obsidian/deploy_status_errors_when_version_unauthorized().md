@@ -1,19 +1,19 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "GroupRoleResolver"
+community: "Community 39"
 location: "L1207"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/Community_39
 ---
 
 # deploy_status_errors_when_version_unauthorized()
 
 ## Connections
-- [[dot-new()_2]] - `calls` [EXTRACTED]
-- [[dot-with()]] - `calls` [EXTRACTED]
+- [[.new()_2]] - `calls` [EXTRACTED]
+- [[.with()]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/Community_39

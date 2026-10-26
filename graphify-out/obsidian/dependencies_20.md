@@ -1,18 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/skill.json"
-type: "code"
-community: "Technical Specification (2)"
-location: "L40"
+source_file: ".github/agents/i-ti.agent.md"
+type: "document"
+community: "Community 892"
+location: "L307"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Specification_2
+  - community/Community_892
 ---
 
-# dependencies
+# Dependencies
 
 ## Connections
-- [[playwright_2]] - `contains` [EXTRACTED]
-- [[skill.json]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Technical_Specification_2
+#graphify/document #graphify/EXTRACTED #community/Community_892

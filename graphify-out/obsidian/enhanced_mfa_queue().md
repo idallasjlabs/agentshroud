@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "test_voice_latency_guard.py"
+community: "Community 30"
 location: "L396"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/Community_30
 ---
 
 # enhanced_mfa_queue()
 
 ## Connections
 - [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
-- [[ApprovalStore]] - `calls` [EXTRACTED]
+- [[ApprovalStore_1]] - `calls` [EXTRACTED]
 - [[EnhancedApprovalQueue_2]] - `calls` [EXTRACTED]
 - [[MFAGuard_2]] - `calls` [EXTRACTED]
-- [[ToolRiskConfig]] - `calls` [EXTRACTED]
+- [[ToolRiskConfig_1]] - `calls` [EXTRACTED]
 - [[test_mfa_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/code #graphify/EXTRACTED #community/Community_30

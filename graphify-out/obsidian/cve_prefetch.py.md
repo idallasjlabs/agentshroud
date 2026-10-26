@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/scripts/cve_prefetch.py"
 type: "code"
-community: "AgentShroud Blue Team Security Auditor (2)"
+community: "Community 2017"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Blue_Team_Security_Auditor_2
+  - community/Community_2017
 ---
 
 # cve_prefetch.py
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[curl_json()]] - `contains` [EXTRACTED]
 - [[known_ghsa_ids()]] - `contains` [EXTRACTED]
-- [[main()_27]] - `contains` [EXTRACTED]
+- [[main()_7]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor_2
+#graphify/code #graphify/EXTRACTED #community/Community_2017

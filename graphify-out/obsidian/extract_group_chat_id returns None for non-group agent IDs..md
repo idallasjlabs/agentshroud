@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "rationale"
-community: "test_a2a_proxy.py"
+community: "Community 124"
 location: "L252"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/Community_124
 ---
 
 # extract_group_chat_id returns None for non-group agent IDs.
 
 ## Connections
-- [[dot-test_extract_chat_id_returns_none_for_non_group()]] - `rationale_for` [EXTRACTED]
+- [[.test_extract_chat_id_returns_none_for_non_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/Community_124

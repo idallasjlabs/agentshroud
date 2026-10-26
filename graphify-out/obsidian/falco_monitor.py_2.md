@@ -1,25 +1,25 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
 type: "document"
-community: "Telegram Bot Setup for OpenClaw"
+community: "Community 678"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Bot_Setup_for_OpenClaw
+  - community/Community_678
 ---
 
 # falco_monitor.py
 
 ## Connections
-- [[Configuration  Environment Variables_18]] - `contains` [EXTRACTED]
-- [[Function Details_32]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_34]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_22]] - `contains` [EXTRACTED]
+- [[Function Details_39]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_42]] - `contains` [EXTRACTED]
 - [[Priority Mapping]] - `contains` [EXTRACTED]
-- [[Purpose_132]] - `contains` [EXTRACTED]
-- [[Related_38]] - `contains` [EXTRACTED]
-- [[Responsibilities_36]] - `contains` [EXTRACTED]
-- [[Threat Model_22]] - `contains` [EXTRACTED]
+- [[Purpose_160]] - `contains` [EXTRACTED]
+- [[Related_46]] - `contains` [EXTRACTED]
+- [[Responsibilities_44]] - `contains` [EXTRACTED]
+- [[Threat Model_15]] - `contains` [EXTRACTED]
 - [[falco_monitor.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Bot_Setup_for_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/Community_678

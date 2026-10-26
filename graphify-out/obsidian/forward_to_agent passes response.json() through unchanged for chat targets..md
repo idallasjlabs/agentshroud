@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router_openai_translation.py"
 type: "rationale"
-community: "_make_proxy()"
+community: "Community 34"
 location: "L208"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_34
 ---
 
 # forward_to_agent passes response.json() through unchanged for /chat targets.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_generic_target_returns_json_as_is()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_34

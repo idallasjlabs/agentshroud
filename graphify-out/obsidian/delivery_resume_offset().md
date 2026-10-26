@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/playback_logic.h"
 type: "code"
-community: "AgentShroud Device Pairing Management"
+community: "Community 228"
 location: "L75"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AgentShroud_Device_Pairing_Management
+  - community/Community_228
 ---
 
 # delivery_resume_offset()
@@ -18,4 +18,4 @@ tags:
 - [[test_resume_offset_first_attempt_is_zero()]] - `calls` [INFERRED]
 - [[test_resume_offset_rewinds_8kb()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/AgentShroud_Device_Pairing_Management
+#graphify/code #graphify/INFERRED #community/Community_228

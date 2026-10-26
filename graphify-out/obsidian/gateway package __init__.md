@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/__init__.py"
 type: "code"
-community: "TrustConfig"
+community: "Community 2471"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/TrustConfig
+  - graphify/EXTRACTED
+  - community/Community_2471
 ---
 
 # gateway package __init__
 
-## Connections
-- [[ingest_apimain.py]] - `conceptually_related_to` [INFERRED]
-
-#graphify/code #graphify/INFERRED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/Community_2471

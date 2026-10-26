@@ -1,21 +1,27 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: "TestOutboundInfoFilter (2)"
-location: "L1"
+community: "Community 767"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_2
+  - community/Community_767
 ---
 
-# event_bus.py.md
+# event_bus.py
 
 ## Connections
-- [[EventBus]] - `references` [EXTRACTED]
-- [[GatewayEvent]] - `references` [EXTRACTED]
-- [[event_bus.py]] - `contains` [EXTRACTED]
-- [[main.py_1]] - `references` [EXTRACTED]
-- [[make_event()]] - `references` [EXTRACTED]
+- [[Config Keys Read_1]] - `contains` [EXTRACTED]
+- [[Environment Variables Used_1]] - `contains` [EXTRACTED]
+- [[Event Types Emitted by main.py]] - `contains` [EXTRACTED]
+- [[Function Details_1]] - `contains` [EXTRACTED]
+- [[Imports From  Exports To_1]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_1]] - `contains` [EXTRACTED]
+- [[Known Issues  Notes_1]] - `contains` [EXTRACTED]
+- [[Purpose_112]] - `contains` [EXTRACTED]
+- [[Related_2]] - `contains` [EXTRACTED]
+- [[Responsibilities_1]] - `contains` [EXTRACTED]
+- [[event_bus.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_2
+#graphify/document #graphify/EXTRACTED #community/Community_767

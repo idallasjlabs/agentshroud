@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "Community 9"
 location: "L497"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KillSwitchMonitor
+  - community/Community_9
 ---
 
 # deque
 
 ## Connections
-- [[dot-__init__()_199]] - `calls` [EXTRACTED]
-- [[dot-__init__()_196]] - `calls` [INFERRED]
-- [[dot-__init__()_197]] - `calls` [INFERRED]
-- [[dot-__init__()_198]] - `calls` [INFERRED]
-- [[dot-__init__()_194]] - `calls` [INFERRED]
-- [[dot-_count_recent_events()]] - `references` [EXTRACTED]
-- [[dot-analyze_message()]] - `calls` [INFERRED]
-- [[KillSwitchConfig_1]] - `uses` [INFERRED]
+- [[.__init__()_25]] - `calls` [INFERRED]
+- [[.__init__()_32]] - `calls` [INFERRED]
+- [[.__init__()_53]] - `calls` [INFERRED]
+- [[.__init__()_68]] - `calls` [INFERRED]
+- [[.__init__()_92]] - `calls` [EXTRACTED]
+- [[._count_recent_events()]] - `references` [EXTRACTED]
+- [[.analyze_message()]] - `calls` [INFERRED]
+- [[KillSwitchConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/KillSwitchMonitor
+#graphify/code #graphify/INFERRED #community/Community_9

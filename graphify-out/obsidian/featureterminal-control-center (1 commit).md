@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-23.md"
 type: "document"
-community: "§2 — New Multi-Bot Attack Scenarios (v1.1+ Surface)"
+community: "Community 1114"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/2__New_Multi-Bot_Attack_Scenarios_v11_Surface
+  - community/Community_1114
 ---
 
 # feature/terminal-control-center (1 commit)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1. Accomplishments This Phase]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/2__New_Multi-Bot_Attack_Scenarios_v11_Surface
+#graphify/document #graphify/EXTRACTED #community/Community_1114

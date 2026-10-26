@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/export-bot-conversations.py"
 type: "code"
-community: "1. Accomplishments This Phase"
+community: "Community 777"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/1_Accomplishments_This_Phase
+  - community/Community_777
 ---
 
 # export-bot-conversations.py
@@ -18,6 +18,6 @@ tags:
 - [[datetime_6]] - `imports_from` [EXTRACTED]
 - [[export_hermes()]] - `contains` [EXTRACTED]
 - [[export_openclaw()]] - `contains` [EXTRACTED]
-- [[main()_28]] - `contains` [EXTRACTED]
+- [[main()_18]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/1_Accomplishments_This_Phase
+#graphify/code #graphify/EXTRACTED #community/Community_777

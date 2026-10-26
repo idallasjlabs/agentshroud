@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/reviews/enforcement-audit-script.py"
 type: "code"
-community: "AgentShroud v0.7.0 Enforcement Audit Results"
+community: "Community 144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Enforcement_Audit_Results
+  - community/Community_144
 ---
 
 # enforcement-audit-script.py (P0/P1/P2 module smoke test)
@@ -23,4 +23,4 @@ tags:
 - [[Trust Manager  Progressive Trust System]] - `implements` [EXTRACTED]
 - [[XMLFunction-Call Leak Filter]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results
+#graphify/code #graphify/EXTRACTED #community/Community_144

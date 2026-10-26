@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "ContextGuard"
+community: "Community 0"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/Community_0
 ---
 
 # gateway/security/metadata_guard.py (MetadataGuard)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_security_audit.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/Community_0

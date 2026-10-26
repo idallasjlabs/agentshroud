@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_group_rbac.py"
+source_file: "gateway/tests/test_output_schema.py"
 type: "code"
-community: "test_soc_bots.py"
-location: "L99"
+community: "Community 262"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/Community_262
 ---
 
 # enforcer()
 
 ## Connections
-- [[ToolACLEnforcer]] - `calls` [EXTRACTED]
-- [[test_group_rbac.py]] - `contains` [EXTRACTED]
+- [[OutputSchemaEnforcer]] - `calls` [EXTRACTED]
+- [[test_output_schema.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/EXTRACTED #community/Community_262

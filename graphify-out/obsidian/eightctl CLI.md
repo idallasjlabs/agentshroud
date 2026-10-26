@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/eightctl/SKILL.md"
 type: "concept"
-community: "kaizen Skill (stub) (2)"
+community: "Community 1394"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/kaizen_Skill_stub_2
+  - community/Community_1394
 ---
 
 # eightctl CLI
 
 ## Connections
-- [[eightctlSKILL]] - `implements` [EXTRACTED]
+- [[SKILL_215]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/kaizen_Skill_stub_2
+#graphify/concept #graphify/EXTRACTED #community/Community_1394

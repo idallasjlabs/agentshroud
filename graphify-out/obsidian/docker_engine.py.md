@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "pipeline.py — Security Pipeline"
+community: "Community 225"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pipelinepy__Security_Pipeline
+  - community/Community_225
 ---
 
 # docker_engine.py
 
 ## Connections
 - [[ADR-006 Multi-Runtime Container Support]] - `implements` [EXTRACTED]
-- [[ContainerEngine]] - `imports` [EXTRACTED]
-- [[ContainerInfo_3]] - `imports` [EXTRACTED]
+- [[ContainerEngine_2]] - `imports` [EXTRACTED]
+- [[ContainerInfo_2]] - `imports` [EXTRACTED]
 - [[DockerEngine]] - `contains` [EXTRACTED]
 - [[RuntimeConfig]] - `references` [EXTRACTED]
+- [[__init__.py_8]] - `re_exports` [EXTRACTED]
 - [[compose_generator.py]] - `references` [EXTRACTED]
 - [[engine.py]] - `imports_from` [EXTRACTED]
-- [[runtime__init__.py]] - `re_exports` [EXTRACTED]
 - [[security.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Community_225

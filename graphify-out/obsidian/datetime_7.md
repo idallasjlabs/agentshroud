@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/export-email-reports.py"
 type: "code"
-community: "export_bot()"
+community: "Community 777"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/Community_777
 ---
 
 # datetime
@@ -17,4 +17,4 @@ tags:
 - [[export-email-reports.py]] - `imports_from` [EXTRACTED]
 - [[export_bot()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export_bot
+#graphify/code #graphify/EXTRACTED #community/Community_777

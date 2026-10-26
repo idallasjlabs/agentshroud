@@ -1,11 +1,11 @@
 ---
 source_file: "docker/seccomp/gateway-seccomp.json"
 type: "code"
-community: "Red Team Assessment v1.2.0"
+community: "Community 814"
 tags:
   - graphify/code
   - graphify/AMBIGUOUS
-  - community/Red_Team_Assessment_v120
+  - community/Community_814
 ---
 
 # gateway-seccomp.json (Docker seccomp profile)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[security-scheduler.sh]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/code #graphify/AMBIGUOUS #community/Red_Team_Assessment_v120
+#graphify/code #graphify/AMBIGUOUS #community/Community_814

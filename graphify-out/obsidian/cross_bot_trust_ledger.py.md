@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "A2AGovernanceProxy"
+community: "Community 88"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/Community_88
 ---
 
 # cross_bot_trust_ledger.py
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[BotIncidentSeverity]] - `contains` [EXTRACTED]
 - [[CrossBotTrustLedger]] - `contains` [EXTRACTED]
-- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
 - [[IncidentRecord]] - `contains` [EXTRACTED]
 - [[TrustDecayPolicy]] - `contains` [EXTRACTED]
 - [[TrustManager_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/Community_88

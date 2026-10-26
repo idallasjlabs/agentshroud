@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/audit_archive.py"
+source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "archive_old_events"
-location: "L46"
+community: "Community 102"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/archive_old_events
+  - community/Community_102
 ---
 
 # datetime
 
 ## Connections
-- [[archive_old_events()]] - `references` [EXTRACTED]
-- [[audit_archive.py]] - `imports_from` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
+- [[wazuh_client.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/archive_old_events
+#graphify/code #graphify/EXTRACTED #community/Community_102
