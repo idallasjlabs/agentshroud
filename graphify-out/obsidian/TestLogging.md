@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "TestOutboundPipelineIntegration"
+community: "Community 21"
 location: "L207"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/TestOutboundPipelineIntegration
+  - graphify/INFERRED
+  - community/Community_21
 ---
 
 # TestLogging
 
 ## Connections
-- [[dot-test_log_filters_by_agent()]] - `method` [EXTRACTED]
-- [[dot-test_log_records_attempts()]] - `method` [EXTRACTED]
-- [[dot-test_log_size_limit()]] - `method` [EXTRACTED]
-- [[dot-test_stats_counts()]] - `method` [EXTRACTED]
+- [[.test_log_filters_by_agent()]] - `method` [EXTRACTED]
+- [[.test_log_records_attempts()]] - `method` [EXTRACTED]
+- [[.test_log_size_limit()]] - `method` [EXTRACTED]
+- [[.test_stats_counts()]] - `method` [EXTRACTED]
 - [[ApprovalResult]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
 - [[EgressAttempt]] - `uses` [INFERRED]
-- [[EgressFilter]] - `uses` [INFERRED]
+- [[EgressFilter_1]] - `uses` [INFERRED]
 - [[EgressFilter records attempts and provides stats.]] - `rationale_for` [EXTRACTED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration
+#graphify/code #graphify/INFERRED #community/Community_21

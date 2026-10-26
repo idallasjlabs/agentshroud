@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "A2AGovernanceProxy"
+community: "Community 88"
 location: "L311"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - graphify/INFERRED
+  - community/Community_88
 ---
 
 # TestIncidentAudit
 
 ## Connections
-- [[dot-test_get_incidents_by_source()]] - `method` [EXTRACTED]
-- [[dot-test_incident_limit_retained()]] - `method` [EXTRACTED]
-- [[dot-test_incident_record_fields()]] - `method` [EXTRACTED]
-- [[dot-test_incidents_are_recorded()]] - `method` [EXTRACTED]
-- [[dot-test_propagated_to_is_empty_for_no_peers()]] - `method` [EXTRACTED]
+- [[.test_get_incidents_by_source()]] - `method` [EXTRACTED]
+- [[.test_incident_limit_retained()]] - `method` [EXTRACTED]
+- [[.test_incident_record_fields()]] - `method` [EXTRACTED]
+- [[.test_incidents_are_recorded()]] - `method` [EXTRACTED]
+- [[.test_propagated_to_is_empty_for_no_peers()]] - `method` [EXTRACTED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
 - [[CrossBotTrustLedger]] - `uses` [INFERRED]
 - [[IncidentRecord]] - `uses` [INFERRED]
@@ -25,4 +25,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/INFERRED #community/Community_88

@@ -1,20 +1,22 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "WebContentScanner"
+community: "Community 6"
 location: "L240"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebContentScanner
+  - community/Community_6
 ---
 
 # TestGoogleAPIProxy
 
 ## Connections
-- [[dot-test_google_proxy_json_body_passthrough()]] - `method` [EXTRACTED]
-- [[dot-test_google_proxy_non_json_body_passthrough()]] - `method` [EXTRACTED]
+- [[.test_google_proxy_json_body_passthrough()]] - `method` [EXTRACTED]
+- [[.test_google_proxy_non_json_body_passthrough()]] - `method` [EXTRACTED]
+- [[MiddlewareResult]] - `uses` [INFERRED]
 - [[Regression tests for v1beta proxy response handling.]] - `rationale_for` [EXTRACTED]
+- [[StreamHead]] - `uses` [INFERRED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebContentScanner
+#graphify/code #graphify/EXTRACTED #community/Community_6

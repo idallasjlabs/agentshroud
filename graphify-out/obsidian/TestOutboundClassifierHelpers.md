@@ -1,43 +1,43 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Blue Team Security Assessment — AgentShroud v0.8.0 Round 2"
+community: "Community 353"
 location: "L4034"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Blue_Team_Security_Assessment__AgentShroud_v080_Round_2
+  - community/Community_353
 ---
 
 # TestOutboundClassifierHelpers
 
 ## Connections
-- [[dot-test_contains_high_risk_leakage_detects_bootstrap_md_in_content_context()]] - `method` [EXTRACTED]
-- [[dot-test_contains_high_risk_leakage_detects_function_calls_xml()]] - `method` [EXTRACTED]
-- [[dot-test_contains_high_risk_leakage_detects_identity_md_in_reveal_context()]] - `method` [EXTRACTED]
-- [[dot-test_contains_high_risk_leakage_detects_invoke_xml()]] - `method` [EXTRACTED]
-- [[dot-test_contains_high_risk_leakage_skips_bootstrap_md_in_denial_context()]] - `method` [EXTRACTED]
-- [[dot-test_contains_high_risk_leakage_skips_protected_header_text()]] - `method` [EXTRACTED]
-- [[dot-test_contains_internal_approval_banner_detects_allow_always_callback()]] - `method` [EXTRACTED]
-- [[dot-test_contains_internal_approval_banner_detects_allow_once_callback()]] - `method` [EXTRACTED]
-- [[dot-test_contains_internal_approval_banner_detects_deny_callback()]] - `method` [EXTRACTED]
-- [[dot-test_contains_internal_approval_banner_detects_standard_banner()]] - `method` [EXTRACTED]
-- [[dot-test_contains_internal_approval_banner_ignores_normal_text()]] - `method` [EXTRACTED]
-- [[dot-test_contains_internal_approval_banner_ignores_unrelated_deny_text()]] - `method` [EXTRACTED]
-- [[dot-test_contains_legacy_block_notice_detects_legacy_bracket_text()]] - `method` [EXTRACTED]
-- [[dot-test_contains_legacy_block_notice_detects_legacy_protected_phrase()]] - `method` [EXTRACTED]
-- [[dot-test_extract_first_egress_target_skips_identity_md()]] - `method` [EXTRACTED]
-- [[dot-test_extract_first_egress_target_skips_md_filenames()]] - `method` [EXTRACTED]
-- [[dot-test_extract_first_egress_target_still_catches_real_domains()]] - `method` [EXTRACTED]
-- [[dot-test_is_no_reply_token_accepts_fenced_and_punctuated_variants()]] - `method` [EXTRACTED]
-- [[dot-test_is_no_reply_token_rejects_non_token_text()]] - `method` [EXTRACTED]
-- [[dot-test_looks_like_filename_reference_catches_common_extensions()]] - `method` [EXTRACTED]
-- [[dot-test_looks_like_filename_reference_rejects_real_domains()]] - `method` [EXTRACTED]
-- [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer_3]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
+- [[.test_contains_high_risk_leakage_detects_bootstrap_md_in_content_context()]] - `method` [EXTRACTED]
+- [[.test_contains_high_risk_leakage_detects_function_calls_xml()]] - `method` [EXTRACTED]
+- [[.test_contains_high_risk_leakage_detects_identity_md_in_reveal_context()]] - `method` [EXTRACTED]
+- [[.test_contains_high_risk_leakage_detects_invoke_xml()]] - `method` [EXTRACTED]
+- [[.test_contains_high_risk_leakage_skips_bootstrap_md_in_denial_context()]] - `method` [EXTRACTED]
+- [[.test_contains_high_risk_leakage_skips_protected_header_text()]] - `method` [EXTRACTED]
+- [[.test_contains_internal_approval_banner_detects_allow_always_callback()]] - `method` [EXTRACTED]
+- [[.test_contains_internal_approval_banner_detects_allow_once_callback()]] - `method` [EXTRACTED]
+- [[.test_contains_internal_approval_banner_detects_deny_callback()]] - `method` [EXTRACTED]
+- [[.test_contains_internal_approval_banner_detects_standard_banner()]] - `method` [EXTRACTED]
+- [[.test_contains_internal_approval_banner_ignores_normal_text()]] - `method` [EXTRACTED]
+- [[.test_contains_internal_approval_banner_ignores_unrelated_deny_text()]] - `method` [EXTRACTED]
+- [[.test_contains_legacy_block_notice_detects_legacy_bracket_text()]] - `method` [EXTRACTED]
+- [[.test_contains_legacy_block_notice_detects_legacy_protected_phrase()]] - `method` [EXTRACTED]
+- [[.test_extract_first_egress_target_skips_identity_md()]] - `method` [EXTRACTED]
+- [[.test_extract_first_egress_target_skips_md_filenames()]] - `method` [EXTRACTED]
+- [[.test_extract_first_egress_target_still_catches_real_domains()]] - `method` [EXTRACTED]
+- [[.test_is_no_reply_token_accepts_fenced_and_punctuated_variants()]] - `method` [EXTRACTED]
+- [[.test_is_no_reply_token_rejects_non_token_text()]] - `method` [EXTRACTED]
+- [[.test_looks_like_filename_reference_catches_common_extensions()]] - `method` [EXTRACTED]
+- [[.test_looks_like_filename_reference_rejects_real_domains()]] - `method` [EXTRACTED]
+- [[CollaboratorActivityTracker]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[Unit tests for outbound helper classifiers used by collaborator filtering.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Blue_Team_Security_Assessment__AgentShroud_v080_Round_2
+#graphify/code #graphify/EXTRACTED #community/Community_353

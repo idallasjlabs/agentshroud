@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_port_manager.py"
 type: "code"
-community: "TrustConfig (2)"
+community: "Community 109"
 location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig_2
+  - community/Community_109
 ---
 
 # TestPortResolution
 
 ## Connections
-- [[dot-test_has_conflicts()]] - `method` [EXTRACTED]
-- [[dot-test_ports_property()]] - `method` [EXTRACTED]
-- [[dot-test_summary_format()]] - `method` [EXTRACTED]
+- [[.test_has_conflicts()]] - `method` [EXTRACTED]
+- [[.test_ports_property()]] - `method` [EXTRACTED]
+- [[.test_summary_format()]] - `method` [EXTRACTED]
 - [[PortAssignment]] - `uses` [INFERRED]
 - [[PortManager]] - `uses` [INFERRED]
 - [[PortResolution]] - `uses` [INFERRED]
 - [[Test PortResolution dataclass.]] - `rationale_for` [EXTRACTED]
 - [[test_port_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig_2
+#graphify/code #graphify/EXTRACTED #community/Community_109

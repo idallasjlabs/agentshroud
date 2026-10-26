@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "AgentShroud Security Architecture"
+community: "Community 158"
 location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/Community_158
 ---
 
 # TestLifecycle
 
 ## Connections
-- [[dot-test_start_creates_task()]] - `method` [EXTRACTED]
-- [[dot-test_stats_returns_counts()]] - `method` [EXTRACTED]
-- [[dot-test_stop_cancels_task()]] - `method` [EXTRACTED]
+- [[.test_start_creates_task()]] - `method` [EXTRACTED]
+- [[.test_stats_returns_counts()]] - `method` [EXTRACTED]
+- [[.test_stop_cancels_task()]] - `method` [EXTRACTED]
 - [[DNSBlocklist]] - `uses` [INFERRED]
 - [[Lifecycle start_periodic_updates()stop() task management.]] - `rationale_for` [EXTRACTED]
 - [[test_dns_blocklist.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/code #graphify/EXTRACTED #community/Community_158

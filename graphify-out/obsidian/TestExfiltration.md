@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "FalcoAlertWatcher"
+community: "Community 133"
 location: "L135"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/FalcoAlertWatcher
+  - community/Community_133
 ---
 
 # TestExfiltration
 
 ## Connections
-- [[dot-test_curl_pipe_to_shell_blocks()]] - `method` [EXTRACTED]
-- [[dot-test_requests_post_to_external_host_flags()]] - `method` [EXTRACTED]
-- [[dot-test_urllib_urlopen_flags()]] - `method` [EXTRACTED]
+- [[.test_curl_pipe_to_shell_blocks()]] - `method` [EXTRACTED]
+- [[.test_requests_post_to_external_host_flags()]] - `method` [EXTRACTED]
+- [[.test_urllib_urlopen_flags()]] - `method` [EXTRACTED]
 - [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_4]] - `uses` [INFERRED]
+- [[ScanResult_2]] - `uses` [INFERRED]
 - [[Severity]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[SkillGuard]] - `uses` [INFERRED]
 - [[SkillScanError]] - `uses` [INFERRED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/FalcoAlertWatcher
+#graphify/code #graphify/INFERRED #community/Community_133

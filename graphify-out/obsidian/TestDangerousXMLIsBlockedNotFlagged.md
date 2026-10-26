@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_xml_dtd_control.py"
 type: "code"
-community: "test_main_endpoints.py"
+community: "Community 562"
 location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/Community_562
 ---
 
 # TestDangerousXMLIsBlockedNotFlagged
 
 ## Connections
-- [[dot-test_finding_severity_is_critical()]] - `method` [EXTRACTED]
-- [[dot-test_web_proxy_blocks_on_dangerous_xml()]] - `method` [EXTRACTED]
+- [[.test_finding_severity_is_critical()]] - `method` [EXTRACTED]
+- [[.test_web_proxy_blocks_on_dangerous_xml()]] - `method` [EXTRACTED]
 - [[FindingSeverity]] - `uses` [INFERRED]
 - [[The distinction this whole control rests on.]] - `rationale_for` [EXTRACTED]
 - [[WebContentScanner]] - `uses` [INFERRED]
 - [[test_xml_dtd_control.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/code #graphify/EXTRACTED #community/Community_562

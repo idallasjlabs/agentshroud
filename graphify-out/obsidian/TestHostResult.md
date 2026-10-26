@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "parse_trivy_output"
+community: "Community 514"
 location: "L92"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/parse_trivy_output
+  - community/Community_514
 ---
 
 # TestHostResult
 
 ## Connections
-- [[dot-test_ok_only_when_pass()]] - `method` [EXTRACTED]
+- [[.test_ok_only_when_pass()]] - `method` [EXTRACTED]
 - [[HostResult]] - `uses` [INFERRED]
 - [[HostStatus]] - `uses` [INFERRED]
 - [[MultiHostResult]] - `uses` [INFERRED]
 - [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/parse_trivy_output
+#graphify/code #graphify/INFERRED #community/Community_514

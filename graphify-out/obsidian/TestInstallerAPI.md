@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "hermes/skills/i-browser/browse.js"
+community: "Community 240"
 location: "L779"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-browser/browsejs
+  - community/Community_240
 ---
 
 # TestInstallerAPI
 
 ## Connections
-- [[dot-client()_1]] - `method` [EXTRACTED]
-- [[dot-test_install()]] - `method` [EXTRACTED]
-- [[dot-test_installer_page()]] - `method` [EXTRACTED]
-- [[dot-test_prerequisites()]] - `method` [EXTRACTED]
-- [[dot-test_runtimes()]] - `method` [EXTRACTED]
+- [[.client()_3]] - `method` [EXTRACTED]
+- [[.test_install()]] - `method` [EXTRACTED]
+- [[.test_installer_page()]] - `method` [EXTRACTED]
+- [[.test_prerequisites()]] - `method` [EXTRACTED]
+- [[.test_runtimes()]] - `method` [EXTRACTED]
 - [[AppleContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo_3]] - `uses` [INFERRED]
+- [[ContainerInfo_2]] - `uses` [INFERRED]
 - [[DockerEngine]] - `uses` [INFERRED]
 - [[PodmanEngine]] - `uses` [INFERRED]
 - [[ServiceDef]] - `uses` [INFERRED]
 - [[test_runtime_engines.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-browser/browsejs
+#graphify/code #graphify/EXTRACTED #community/Community_240

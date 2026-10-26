@@ -1,20 +1,20 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "code"
-community: "egress_filter.py"
+community: "Community 95"
 location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/Community_95
 ---
 
 # TestErrorSanitization
 
 ## Connections
-- [[dot-test_internal_error_not_leaked()]] - `method` [EXTRACTED]
-- [[dot-test_openai_auth_error_returns_503()]] - `method` [EXTRACTED]
+- [[.test_internal_error_not_leaked()]] - `method` [EXTRACTED]
+- [[.test_openai_auth_error_returns_503()]] - `method` [EXTRACTED]
 - [[chat()]] - `calls` [EXTRACTED]
 - [[test_main.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_filterpy
+#graphify/code #graphify/EXTRACTED #community/Community_95

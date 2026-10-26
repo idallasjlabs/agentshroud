@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "A2AGovernanceProxy"
+community: "Community 88"
 location: "L463"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/A2AGovernanceProxy
+  - community/Community_88
 ---
 
 # TestGetIncidentsLimit
 
 ## Connections
-- [[dot-test_get_incidents_with_limit()]] - `method` [EXTRACTED]
-- [[dot-test_propagation_registers_unregistered_peer_agent()]] - `method` [EXTRACTED]
+- [[.test_get_incidents_with_limit()]] - `method` [EXTRACTED]
+- [[.test_propagation_registers_unregistered_peer_agent()]] - `method` [EXTRACTED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
 - [[CrossBotTrustLedger]] - `uses` [INFERRED]
 - [[IncidentRecord]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/A2AGovernanceProxy
+#graphify/code #graphify/INFERRED #community/Community_88

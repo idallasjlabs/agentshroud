@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "test_soc_egress_endpoints.py"
+community: "Community 14"
 location: "L332"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_egress_endpointspy
+  - community/Community_14
 ---
 
 # TestEncodingBypass
 
 ## Connections
-- [[dot-test_base64_payload_normalized()]] - `method` [EXTRACTED]
-- [[dot-test_encoding_bypass_detection_rate()]] - `method` [EXTRACTED]
-- [[dot-test_url_encoded_payload_normalized()]] - `method` [EXTRACTED]
-- [[dot-test_zero_width_space_stripped()]] - `method` [EXTRACTED]
+- [[.test_base64_payload_normalized()]] - `method` [EXTRACTED]
+- [[.test_encoding_bypass_detection_rate()]] - `method` [EXTRACTED]
+- [[.test_url_encoded_payload_normalized()]] - `method` [EXTRACTED]
+- [[.test_zero_width_space_stripped()]] - `method` [EXTRACTED]
 - [[Encoding bypass variants — validates InputNormalizer multi-pass decode.]] - `rationale_for` [EXTRACTED]
-- [[HeuristicClassifier_1]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[HeuristicClassifier]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[normalize_input()]] - `references` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy
+#graphify/code #graphify/EXTRACTED #community/Community_14

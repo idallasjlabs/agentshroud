@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/tests/test_scorecard_scoring.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "hermes/skills/i-cr/SKILL.md (2)"
-location: "L562"
+community: "Community 1287"
+location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd_2
+  - community/Community_1287
 ---
 
 # TestIsFresh
 
 ## Connections
-- [[dot-test_returns_false_for_empty_dir()]] - `method` [EXTRACTED]
-- [[dot-test_returns_false_for_missing_dir()]] - `method` [EXTRACTED]
-- [[dot-test_returns_false_for_stale_file()]] - `method` [EXTRACTED]
-- [[dot-test_returns_true_for_fresh_file()]] - `method` [EXTRACTED]
-- [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
+- [[.test_empty_dir_returns_false()]] - `method` [EXTRACTED]
+- [[.test_fresh_file_returns_true()]] - `method` [EXTRACTED]
+- [[.test_old_file_returns_false()]] - `method` [EXTRACTED]
+- [[.test_stat_error_returns_false()]] - `method` [EXTRACTED]
+- [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd_2
+#graphify/code #graphify/EXTRACTED #community/Community_1287

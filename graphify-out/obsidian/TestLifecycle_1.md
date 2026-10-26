@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "SubagentGovernance"
+community: "Community 1269"
 location: "L196"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SubagentGovernance
+  - community/Community_1269
 ---
 
 # TestLifecycle
 
 ## Connections
-- [[dot-test_deregister_cleans_up()]] - `method` [EXTRACTED]
-- [[dot-test_deregister_returns_usage()]] - `method` [EXTRACTED]
-- [[dot-test_summary()]] - `method` [EXTRACTED]
+- [[.test_deregister_cleans_up()]] - `method` [EXTRACTED]
+- [[.test_deregister_returns_usage()]] - `method` [EXTRACTED]
+- [[.test_summary()_1]] - `method` [EXTRACTED]
 - [[GovernanceAction]] - `uses` [INFERRED]
 - [[GovernanceConfig]] - `uses` [INFERRED]
 - [[GovernanceEventType]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[SubagentGovernance]] - `uses` [INFERRED]
 - [[test_subagent_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SubagentGovernance
+#graphify/code #graphify/INFERRED #community/Community_1269

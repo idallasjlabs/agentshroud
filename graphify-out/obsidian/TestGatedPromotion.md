@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "soc/router.py"
+community: "Community 11"
 location: "L118"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/soc/routerpy
+  - community/Community_11
 ---
 
 # TestGatedPromotion
 
 ## Connections
-- [[dot-test_get_trust_respects_stored_ceiling()]] - `method` [EXTRACTED]
-- [[dot-test_promotion_granted_once_thresholds_met()]] - `method` [EXTRACTED]
-- [[dot-test_score_alone_cannot_promote_with_ladder()]] - `method` [EXTRACTED]
-- [[dot-test_vouching_required_for_top_rung()]] - `method` [EXTRACTED]
-- [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
+- [[.test_get_trust_respects_stored_ceiling()]] - `method` [EXTRACTED]
+- [[.test_promotion_granted_once_thresholds_met()]] - `method` [EXTRACTED]
+- [[.test_score_alone_cannot_promote_with_ladder()]] - `method` [EXTRACTED]
+- [[.test_vouching_required_for_top_rung()]] - `method` [EXTRACTED]
+- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
 - [[PromotionThreshold]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
@@ -26,4 +26,4 @@ tags:
 - [[ViolationType]] - `uses` [INFERRED]
 - [[test_progressive_trust_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/soc/routerpy
+#graphify/code #graphify/INFERRED #community/Community_11

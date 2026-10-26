@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "ControlCenter"
+community: "Community 55"
 location: "L284"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ControlCenter
+  - community/Community_55
 ---
 
 # TestLiveRegistryLayout
 
 ## Connections
-- [[dot-test_every_agent_list_accepts_an_append()]] - `method` [EXTRACTED]
-- [[Runs against the REAL gatewaysecurityagent_cve_registry.py. Every registered…]] - `rationale_for` [EXTRACTED]
+- [[.test_every_agent_list_accepts_an_append()]] - `method` [EXTRACTED]
+- [[Runs against the REAL gatewaysecurityagent_cve_registry.py.      Every registe]] - `rationale_for` [EXTRACTED]
 - [[test_sync_cve_registry_ghsa.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ControlCenter
+#graphify/code #graphify/EXTRACTED #community/Community_55

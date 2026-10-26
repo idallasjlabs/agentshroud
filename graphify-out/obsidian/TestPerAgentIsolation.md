@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "ControlCenter"
+community: "Community 55"
 location: "L604"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ControlCenter
+  - community/Community_55
 ---
 
 # TestPerAgentIsolation
 
 ## Connections
-- [[dot-test_openclaw_advisory_does_not_touch_hermes_registry()]] - `method` [EXTRACTED]
+- [[.test_openclaw_advisory_does_not_touch_hermes_registry()]] - `method` [EXTRACTED]
 - [[test_sync_cve_registry_ghsa.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ControlCenter
+#graphify/code #graphify/EXTRACTED #community/Community_55

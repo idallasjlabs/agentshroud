@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "MiddlewareManager"
+community: "Community 1"
 location: "L625"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - graphify/INFERRED
+  - community/Community_1
 ---
 
 # TestPathIsolationStep
 
 ## Connections
-- [[dot-test_blocked_rewrite_denied()]] - `method` [EXTRACTED]
-- [[dot-test_isolation_exception_fails_closed()]] - `method` [EXTRACTED]
-- [[dot-test_unblocked_rewrite_allowed()]] - `method` [EXTRACTED]
+- [[.test_blocked_rewrite_denied()]] - `method` [EXTRACTED]
+- [[.test_isolation_exception_fails_closed()]] - `method` [EXTRACTED]
+- [[.test_unblocked_rewrite_allowed()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/INFERRED #community/Community_1

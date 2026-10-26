@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
+community: "Community 16"
 location: "L32"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MemoryIntegrityMonitor
+  - community/Community_16
 ---
 
 # TestMemoryIntegrityConfig
 
 ## Connections
-- [[dot-test_config_from_env()]] - `method` [EXTRACTED]
-- [[dot-test_default_config()_2]] - `method` [EXTRACTED]
+- [[.test_config_from_env()]] - `method` [EXTRACTED]
+- [[.test_default_config()_4]] - `method` [EXTRACTED]
 - [[ContentThreat]] - `uses` [INFERRED]
 - [[ContentThreatType]] - `uses` [INFERRED]
-- [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
+- [[MemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
-- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
+- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
 - [[MemoryLifecycleManager]] - `uses` [INFERRED]
 - [[MemorySecurityConfig]] - `uses` [INFERRED]
 - [[ModificationSource]] - `uses` [INFERRED]
 - [[Test memory integrity configuration.]] - `rationale_for` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/INFERRED #community/Community_16

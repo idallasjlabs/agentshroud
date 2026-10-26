@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "MiddlewareManager (3) (2)"
+community: "Community 219"
 location: "L766"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3_2
+  - community/Community_219
 ---
 
 # TestImageSigningProvenance
 
 ## Connections
-- [[dot-test_containerized_no_cosign_no_pipeline_evidence()]] - `method` [EXTRACTED]
-- [[dot-test_containerized_pipeline_evidence_full()]] - `method` [EXTRACTED]
-- [[dot-test_cosign_with_runtime_verification()]] - `method` [EXTRACTED]
-- [[dot-test_cosign_with_wired_verifier_module()]] - `method` [EXTRACTED]
-- [[dot-test_no_cosign_outside_container_zero()]] - `method` [EXTRACTED]
+- [[.test_containerized_no_cosign_no_pipeline_evidence()]] - `method` [EXTRACTED]
+- [[.test_containerized_pipeline_evidence_full()]] - `method` [EXTRACTED]
+- [[.test_cosign_with_runtime_verification()]] - `method` [EXTRACTED]
+- [[.test_cosign_with_wired_verifier_module()]] - `method` [EXTRACTED]
+- [[.test_no_cosign_outside_container_zero()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3_2
+#graphify/code #graphify/EXTRACTED #community/Community_219

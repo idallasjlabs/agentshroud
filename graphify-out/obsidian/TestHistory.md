@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "soc/router.py"
+community: "Community 11"
 location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/Community_11
 ---
 
 # TestHistory
 
 ## Connections
-- [[dot-test_history_empty_for_new_agent()]] - `method` [EXTRACTED]
-- [[dot-test_history_recorded()]] - `method` [EXTRACTED]
+- [[.test_history_empty_for_new_agent()]] - `method` [EXTRACTED]
+- [[.test_history_recorded()]] - `method` [EXTRACTED]
 - [[Test trust history tracking.]] - `rationale_for` [EXTRACTED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/Community_11

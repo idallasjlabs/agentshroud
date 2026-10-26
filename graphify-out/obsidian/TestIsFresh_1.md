@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "SECTION 7: FILING CHECKLIST"
-location: "L103"
+community: "Community 1129"
+location: "L562"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SECTION_7_FILING_CHECKLIST
+  - community/Community_1129
 ---
 
 # TestIsFresh
 
 ## Connections
-- [[dot-test_empty_dir_returns_false()]] - `method` [EXTRACTED]
-- [[dot-test_fresh_file_returns_true()]] - `method` [EXTRACTED]
-- [[dot-test_old_file_returns_false()]] - `method` [EXTRACTED]
-- [[dot-test_stat_error_returns_false()]] - `method` [EXTRACTED]
-- [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
+- [[.test_returns_false_for_empty_dir()]] - `method` [EXTRACTED]
+- [[.test_returns_false_for_missing_dir()]] - `method` [EXTRACTED]
+- [[.test_returns_false_for_stale_file()]] - `method` [EXTRACTED]
+- [[.test_returns_true_for_fresh_file()]] - `method` [EXTRACTED]
+- [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SECTION_7_FILING_CHECKLIST
+#graphify/code #graphify/EXTRACTED #community/Community_1129

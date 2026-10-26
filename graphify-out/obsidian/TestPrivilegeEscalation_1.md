@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "FalcoAlertWatcher"
+community: "Community 133"
 location: "L245"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/FalcoAlertWatcher
+  - community/Community_133
 ---
 
 # TestPrivilegeEscalation
 
 ## Connections
-- [[dot-test_manifest_all_tools_wildcard_flags()]] - `method` [EXTRACTED]
-- [[dot-test_manifest_disable_approval_flags()]] - `method` [EXTRACTED]
-- [[dot-test_manifest_sudo_command_flags()]] - `method` [EXTRACTED]
+- [[.test_manifest_all_tools_wildcard_flags()]] - `method` [EXTRACTED]
+- [[.test_manifest_disable_approval_flags()]] - `method` [EXTRACTED]
+- [[.test_manifest_sudo_command_flags()]] - `method` [EXTRACTED]
 - [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_4]] - `uses` [INFERRED]
+- [[ScanResult_2]] - `uses` [INFERRED]
 - [[Severity]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[SkillGuard]] - `uses` [INFERRED]
 - [[SkillScanError]] - `uses` [INFERRED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/FalcoAlertWatcher
+#graphify/code #graphify/INFERRED #community/Community_133
