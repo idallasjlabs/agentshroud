@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "MiddlewareManager"
+community: "Community 143"
 location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Community_143
 ---
 
 # GroupSession
 
 ## Connections
-- [[dot-get_or_create_group_session()]] - `references` [EXTRACTED]
+- [[.get_or_create_group_session()]] - `references` [EXTRACTED]
 - [[Represents a shared workspace + memory for a group.]] - `rationale_for` [EXTRACTED]
 - [[session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/Community_143

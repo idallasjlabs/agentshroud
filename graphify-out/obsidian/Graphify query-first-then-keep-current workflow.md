@@ -1,13 +1,13 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: "EnhancedApprovalQueue.submit"
+community: "Community 1590"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueuesubmit
+  - community/Community_1590
 ---
 
 # Graphify query-first-then-keep-current workflow
 
-#graphify/rationale #graphify/EXTRACTED #community/EnhancedApprovalQueuesubmit
+#graphify/rationale #graphify/EXTRACTED #community/Community_1590

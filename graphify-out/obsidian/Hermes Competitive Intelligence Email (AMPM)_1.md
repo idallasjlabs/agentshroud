@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt"
 type: "document"
-community: "Architecture"
+community: "Community 522"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture
+  - community/Community_522
 ---
 
 # Hermes Competitive Intelligence Email (AM/PM)
@@ -18,4 +18,4 @@ tags:
 - [[cron-operations skill]] - `references` [EXTRACTED]
 - [[render_md_email.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture
+#graphify/document #graphify/EXTRACTED #community/Community_522

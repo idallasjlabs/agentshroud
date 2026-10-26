@@ -1,11 +1,11 @@
 ---
 source_file: "docs/dev-notes/cron-backup-20260831-161542/DEDUPE-REPORT.md"
 type: "rationale"
-community: "test_prompt_guard.py (2)"
+community: "Community 700"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_prompt_guardpy_2
+  - community/Community_700
 ---
 
 # Hermes Cron Dedupe (dev)
@@ -17,4 +17,4 @@ tags:
 - [[Sunday Upgrade 2026-09-14 (dev)]] - `references` [AMBIGUOUS]
 - [[_seed_cron Missing --all Defect]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_prompt_guardpy_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_700

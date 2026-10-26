@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/BRANCH_PROTECTION.md"
 type: "document"
-community: "TestForwardToTelegramTimeouts"
+community: "Community 1171"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestForwardToTelegramTimeouts
+  - community/Community_1171
 ---
 
 # GitHub Branch Protection — `main`
@@ -15,6 +15,6 @@ tags:
 - [[BRANCH_PROTECTION]] - `contains` [EXTRACTED]
 - [[Local Enforcement (already active)]] - `contains` [EXTRACTED]
 - [[Required Settings]] - `contains` [EXTRACTED]
-- [[Verification]] - `contains` [EXTRACTED]
+- [[Verification_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestForwardToTelegramTimeouts
+#graphify/document #graphify/EXTRACTED #community/Community_1171

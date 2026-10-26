@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "rationale"
-community: "ConfigIntegrityMonitor"
+community: "Community 133"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - community/Community_133
 ---
 
 # Highest severity across all findings (``NONE`` when clean).
 
 ## Connections
-- [[dot-severity()]] - `rationale_for` [EXTRACTED]
+- [[.severity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/Community_133

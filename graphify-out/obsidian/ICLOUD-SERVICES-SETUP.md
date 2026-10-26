@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/ICLOUD-SERVICES-SETUP.md"
 type: "document"
-community: "Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (3)"
+community: "Community 571"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_3
+  - community/Community_571
 ---
 
 # ICLOUD-SERVICES-SETUP.md
@@ -16,4 +16,4 @@ tags:
 - [[GOOGLE-SERVICES-SETUP]] - `semantically_similar_to` [INFERRED]
 - [[iCloud Services Setup - Complete Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_3
+#graphify/document #graphify/INFERRED #community/Community_571

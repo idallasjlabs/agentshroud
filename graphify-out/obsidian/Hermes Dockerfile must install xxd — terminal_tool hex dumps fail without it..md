@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "DNSFilterConfig"
+community: "Community 78"
 location: "L448"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Community_78
 ---
 
 # Hermes Dockerfile must install xxd — terminal_tool hex dumps fail without it.
 
 ## Connections
-- [[dot-test_hermes_dockerfile_installs_xxd()]] - `rationale_for` [EXTRACTED]
+- [[.test_hermes_dockerfile_installs_xxd()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_78

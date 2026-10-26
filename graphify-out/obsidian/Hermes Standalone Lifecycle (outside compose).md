@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-08-30.md"
 type: "rationale"
-community: "All Dependencies.md"
+community: "Community 289"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/Community_289
 ---
 
 # Hermes Standalone Lifecycle (outside compose)
@@ -14,4 +14,4 @@ tags:
 - [[Hermes Is Not Compose-Managed (asb owns it)]] - `semantically_similar_to` [INFERRED]
 - [[Weekly Upgrade Report 2026-08-30]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/rationale #graphify/EXTRACTED #community/Community_289

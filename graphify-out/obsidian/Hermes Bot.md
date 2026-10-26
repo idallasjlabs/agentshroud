@@ -1,11 +1,11 @@
 ---
 source_file: "README.md"
 type: "concept"
-community: "browser-extension/manifest.json"
+community: "Community 441"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/browser-extension/manifestjson
+  - community/Community_441
 ---
 
 # Hermes Bot
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud™ README]] - `references` [EXTRACTED]
 - [[Hermes Control Interface (HCI)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/browser-extension/manifestjson
+#graphify/concept #graphify/EXTRACTED #community/Community_441

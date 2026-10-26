@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-crpr/SKILL.md"
+source_file: ".agents/skills/i-odev/SKILL.md"
 type: "document"
-community: "1.4 Implementation Plan"
-location: "L254"
+community: "Community 634"
+location: "L363"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/14_Implementation_Plan
+  - community/Community_634
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill Create PR with Pre-Flight Audit (CRPR)]] - `contains` [EXTRACTED]
+- [[Skill OpenClaw Dev Workflow (ODEV)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/14_Implementation_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_634

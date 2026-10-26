@@ -1,11 +1,11 @@
 ---
 source_file: "docs/dev-notes/job-quality-matrix.md"
 type: "rationale"
-community: "All Dependencies.md"
+community: "Community 289"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/Community_289
 ---
 
 # Hard-Fail Rather Than Deliver an Empty Shell
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Failure Class Search Backend Unreachable]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/rationale #graphify/EXTRACTED #community/Community_289

@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/extraction-spec.md"
 type: "concept"
-community: "agentshroud-knowledge.md"
+community: "Community 1715"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/agentshroud-knowledgemd
+  - community/Community_1715
 ---
 
 # Hyperedges Rule (max 3/chunk)
 
-#graphify/concept #graphify/EXTRACTED #community/agentshroud-knowledgemd
+#graphify/concept #graphify/EXTRACTED #community/Community_1715

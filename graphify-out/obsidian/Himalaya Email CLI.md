@@ -1,26 +1,26 @@
 ---
 source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "Himalaya Email CLI"
+community: "Community 874"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Himalaya_Email_CLI
+  - community/Community_874
 ---
 
 # Himalaya Email CLI
 
 ## Connections
-- [[Attachments_1]] - `contains` [EXTRACTED]
-- [[Common Operations_1]] - `contains` [EXTRACTED]
+- [[Attachments]] - `contains` [EXTRACTED]
+- [[Common Operations]] - `contains` [EXTRACTED]
 - [[Configuration Setup]] - `contains` [EXTRACTED]
 - [[Debugging_1]] - `contains` [EXTRACTED]
-- [[Multiple Accounts_1]] - `contains` [EXTRACTED]
+- [[Multiple Accounts]] - `contains` [EXTRACTED]
 - [[Output Formats_1]] - `contains` [EXTRACTED]
-- [[Prerequisites_16]] - `contains` [EXTRACTED]
+- [[Prerequisites_14]] - `contains` [EXTRACTED]
 - [[References_4]] - `contains` [EXTRACTED]
-- [[Tips_4]] - `contains` [EXTRACTED]
-- [[himalayaSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_223]] - `contains` [EXTRACTED]
+- [[Tips_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Himalaya_Email_CLI
+#graphify/document #graphify/EXTRACTED #community/Community_874

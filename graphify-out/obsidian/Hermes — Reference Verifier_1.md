@@ -1,24 +1,23 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hermes/SKILL.md"
+source_file: ".agents/skills/hermes/SKILL.md"
 type: "document"
-community: "WebContentScanner (2)"
+community: "Community 1993"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/WebContentScanner_2
+  - community/Community_1993
 ---
 
 # Hermes — Reference Verifier
 
 ## Connections
-- [[Input Requirements_2]] - `contains` [EXTRACTED]
-- [[Output Format_2]] - `contains` [EXTRACTED]
-- [[Persona_2]] - `contains` [EXTRACTED]
-- [[Quality Checklist_2]] - `contains` [EXTRACTED]
-- [[Role_5]] - `contains` [EXTRACTED]
-- [[System Prompt_2]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-hermesSKILL]] - `contains` [EXTRACTED]
+- [[Input Requirements_15]] - `contains` [EXTRACTED]
+- [[Output Format_17]] - `contains` [EXTRACTED]
+- [[Persona_11]] - `contains` [EXTRACTED]
+- [[Quality Checklist_13]] - `contains` [EXTRACTED]
+- [[Role_43]] - `contains` [EXTRACTED]
+- [[SKILL_8]] - `contains` [EXTRACTED]
+- [[System Prompt_11]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/WebContentScanner_2
+#graphify/document #graphify/EXTRACTED #community/Community_1993

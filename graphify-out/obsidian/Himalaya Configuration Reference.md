@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/references/configuration.md"
 type: "document"
-community: "prompt_guard.py.md"
+community: "Community 610"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/prompt_guardpymd
+  - community/Community_610
 ---
 
 # Himalaya Configuration Reference
@@ -16,11 +16,12 @@ tags:
 - [[Folder Aliases]] - `contains` [EXTRACTED]
 - [[Gmail Configuration]] - `contains` [EXTRACTED]
 - [[Minimal IMAP + SMTP Setup]] - `contains` [EXTRACTED]
-- [[Multiple Accounts]] - `contains` [EXTRACTED]
+- [[Multiple Accounts_1]] - `contains` [EXTRACTED]
 - [[Notmuch Backend (local mail)]] - `contains` [EXTRACTED]
 - [[OAuth2 Authentication (for providers that support it)]] - `contains` [EXTRACTED]
 - [[Password Options]] - `contains` [EXTRACTED]
+- [[configuration]] - `contains` [EXTRACTED]
 - [[iCloud Configuration]] - `contains` [EXTRACTED]
 - [[ssh-configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/prompt_guardpymd
+#graphify/document #graphify/EXTRACTED #community/Community_610

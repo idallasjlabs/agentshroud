@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "KillSwitchMonitor (5)"
+community: "Community 60"
 location: "L148"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_5
+  - community/Community_60
 ---
 
 # Group workspace content must not leak into any user's DM workspace.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGroupMemoryInvisibleFromDM]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor_5
+#graphify/rationale #graphify/EXTRACTED #community/Community_60

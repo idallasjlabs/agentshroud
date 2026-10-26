@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-gg/README.md"
+source_file: "docker/config/openclaw/skills/i-gg/README.md"
 type: "document"
-community: "TestOutboundInfoFilter"
+community: "Community 58"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/Community_58
 ---
 
 # Git Workflow Guardian (GIT-GUARD)
 
 ## Connections
-- [[Purpose_168]] - `contains` [EXTRACTED]
-- [[Related Skills_95]] - `contains` [EXTRACTED]
-- [[Usage_107]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
-- [[hermesskillsi-ggREADME]] - `contains` [EXTRACTED]
+- [[Purpose_85]] - `contains` [EXTRACTED]
+- [[README_90]] - `contains` [EXTRACTED]
+- [[Related Skills_106]] - `contains` [EXTRACTED]
+- [[SKILL_152]] - `contains` [EXTRACTED]
+- [[Usage_110]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/Community_58

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ab/SKILL.md"
+source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "document"
-community: "main"
-location: "L226"
+community: "Community 634"
+location: "L363"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/main
+  - community/Community_634
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill Audit Branch (AB) — Merge Regression Detection]] - `contains` [EXTRACTED]
+- [[Skill Hermes Dev Workflow (HDEV)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/main
+#graphify/document #graphify/EXTRACTED #community/Community_634

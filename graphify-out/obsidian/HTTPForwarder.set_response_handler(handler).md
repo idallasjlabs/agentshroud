@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
 type: "document"
-community: "forwarder.py"
+community: "Community 833"
 location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/forwarderpy
+  - community/Community_833
 ---
 
 # HTTPForwarder.set_response_handler(handler)
 
 ## Connections
-- [[Function Details_48]] - `contains` [EXTRACTED]
+- [[Function Details_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/forwarderpy
+#graphify/document #graphify/EXTRACTED #community/Community_833

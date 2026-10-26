@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-pr/SKILL.md"
+source_file: ".agents/agents/i-pr.md"
 type: "document"
-community: "Turbo Fieldfare (MLX inference backend)"
-location: "L17"
+community: "Community 1950"
+location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Turbo_Fieldfare_MLX_inference_backend
+  - community/Community_1950
 ---
 
 # Header
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Content Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Turbo_Fieldfare_MLX_inference_backend
+#graphify/document #graphify/EXTRACTED #community/Community_1950

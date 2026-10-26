@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-hdev/SKILL.md"
+source_file: ".agents/agents/aws.md"
 type: "document"
-community: "Skill: Hermes Dev Workflow (HDEV) (2)"
-location: "L478"
+community: "Community 209"
+location: "L390"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Hermes_Dev_Workflow_HDEV_2
+  - community/Community_209
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill Hermes Dev Workflow (HDEV)]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Hermes_Dev_Workflow_HDEV_2
+#graphify/document #graphify/EXTRACTED #community/Community_209

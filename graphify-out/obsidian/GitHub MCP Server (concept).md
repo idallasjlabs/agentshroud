@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm/SKILL.md"
 type: "concept"
-community: "markmap-mcp-server (MCP server)"
+community: "Community 1831"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/markmap-mcp-server_MCP_server
+  - community/Community_1831
 ---
 
 # GitHub MCP Server (concept)
 
-#graphify/concept #graphify/EXTRACTED #community/markmap-mcp-server_MCP_server
+#graphify/concept #graphify/EXTRACTED #community/Community_1831

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/github/SKILL.md"
 type: "document"
-community: "AgentShroud™ Telegram-Reported Issues"
+community: "Community 713"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Telegram-Reported_Issues
+  - community/Community_713
 ---
 
 # GitHub Skill
@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[Common Commands_2]] - `contains` [EXTRACTED]
 - [[JSON Output]] - `contains` [EXTRACTED]
-- [[Notes_6]] - `contains` [EXTRACTED]
-- [[Setup_6]] - `contains` [EXTRACTED]
+- [[Notes_4]] - `contains` [EXTRACTED]
+- [[SKILL_219]] - `contains` [EXTRACTED]
+- [[Setup_11]] - `contains` [EXTRACTED]
 - [[Templates]] - `contains` [EXTRACTED]
-- [[When NOT to Use_2]] - `contains` [EXTRACTED]
+- [[When NOT to Use_1]] - `contains` [EXTRACTED]
 - [[When to Use_2]] - `contains` [EXTRACTED]
-- [[githubSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Telegram-Reported_Issues
+#graphify/document #graphify/EXTRACTED #community/Community_713

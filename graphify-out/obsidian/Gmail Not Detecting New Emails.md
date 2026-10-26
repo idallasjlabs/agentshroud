@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "OpenClaw Setup Guide - agentshroud.ai Bot"
+community: "Community 244"
 location: "L214"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+  - community/Community_244
 ---
 
 # Gmail Not Detecting New Emails
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Part 4 Gmail Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+#graphify/document #graphify/EXTRACTED #community/Community_244

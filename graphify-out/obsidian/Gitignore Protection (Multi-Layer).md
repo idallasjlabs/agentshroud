@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VERIFICATION.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark"
+community: "Community 621"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark
+  - community/Community_621
 ---
 
 # Gitignore Protection (Multi-Layer)
@@ -16,4 +16,4 @@ tags:
 - [[Security Verification Report]] - `contains` [EXTRACTED]
 - [[docker.gitignore]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark
+#graphify/document #graphify/EXTRACTED #community/Community_621

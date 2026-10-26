@@ -1,17 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/SETUP.md"
+source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
 type: "document"
-community: "API Keys Setup Guide"
-location: "L494"
+community: "Community 714"
+location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/API_Keys_Setup_Guide
+  - community/Community_714
 ---
 
-# How it works
+# How It Works
 
 ## Connections
-- [[12. OTA Wireless Firmware Updates]] - `contains` [EXTRACTED]
+- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_714

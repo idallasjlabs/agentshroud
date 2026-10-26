@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-qa/SKILL.md"
+source_file: ".agents/agents/i-qa.md"
 type: "document"
-community: "Dockerfile — Bot (OpenClaw)"
-location: "L246"
+community: "Community 974"
+location: "L251"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dockerfile__Bot_OpenClaw
+  - community/Community_974
 ---
 
 # H. Service Control for Production Testing
@@ -18,4 +18,4 @@ tags:
 - [[H.4 Cleanup Verification Checklist]] - `contains` [EXTRACTED]
 - [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/Community_974

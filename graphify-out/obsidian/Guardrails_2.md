@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hdev/SKILL.md"
+source_file: ".agents/agents/i-crpr.md"
 type: "document"
-community: "fixture"
-location: "L478"
+community: "Community 1276"
+location: "L257"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/fixture
+  - community/Community_1276
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill Hermes Dev Workflow (HDEV)_1]] - `contains` [EXTRACTED]
+- [[Skill Create PR with Pre-Flight Audit (CRPR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/fixture
+#graphify/document #graphify/EXTRACTED #community/Community_1276

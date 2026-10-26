@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "rationale"
-community: "_pcm_bytes"
+community: "Community 86"
 location: "L29"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/Community_86
 ---
 
 # HTTPConnectProxy ships with a populated default allowlist.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_default_allowed_domains_non_empty()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/rationale #graphify/EXTRACTED #community/Community_86

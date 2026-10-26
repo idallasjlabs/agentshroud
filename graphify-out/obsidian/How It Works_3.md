@@ -1,17 +1,19 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "MCP AWS Profile Configuration README"
-location: "L23"
+community: "Community 356"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_AWS_Profile_Configuration_README
+  - community/Community_356
 ---
 
 # How It Works
 
 ## Connections
-- [[ANTHROPIC_BASE_URL_1]] - `contains` [EXTRACTED]
+- [[Architecture_13]] - `contains` [EXTRACTED]
+- [[Canvas Skill]] - `contains` [EXTRACTED]
+- [[Tailscale Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_README
+#graphify/document #graphify/EXTRACTED #community/Community_356

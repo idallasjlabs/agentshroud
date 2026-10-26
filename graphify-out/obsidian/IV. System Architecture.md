@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "test_telegram_proxy_inbound.py"
+community: "Community 330"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/Community_330
 ---
 
 # IV. System Architecture
@@ -18,4 +18,4 @@ tags:
 - [[IV-C. Middleware Manager]] - `contains` [EXTRACTED]
 - [[IV-D. MCP Proxy Layer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/document #graphify/EXTRACTED #community/Community_330

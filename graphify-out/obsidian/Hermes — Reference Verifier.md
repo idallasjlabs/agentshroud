@@ -1,24 +1,23 @@
 ---
-source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
+source_file: ".agents/agents/hermes.md"
 type: "document"
-community: "dashboard_endpoints.py (2) (2)"
-location: "L6"
+community: "Community 1977"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy_2_2
+  - community/Community_1977
 ---
 
 # Hermes — Reference Verifier
 
 ## Connections
-- [[Input Requirements]] - `contains` [EXTRACTED]
-- [[Output Format]] - `contains` [EXTRACTED]
-- [[Persona]] - `contains` [EXTRACTED]
-- [[Quality Checklist]] - `contains` [EXTRACTED]
-- [[Role_2]] - `contains` [EXTRACTED]
-- [[System Prompt]] - `contains` [EXTRACTED]
-- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[hermesskillsi-hermesSKILL]] - `contains` [EXTRACTED]
+- [[Input Requirements_5]] - `contains` [EXTRACTED]
+- [[Output Format_3]] - `contains` [EXTRACTED]
+- [[Persona_3]] - `contains` [EXTRACTED]
+- [[Quality Checklist_4]] - `contains` [EXTRACTED]
+- [[Role_7]] - `contains` [EXTRACTED]
+- [[System Prompt_3]] - `contains` [EXTRACTED]
+- [[hermes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard_endpointspy_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_1977

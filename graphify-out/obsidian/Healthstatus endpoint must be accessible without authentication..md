@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_api_contract.py"
 type: "rationale"
-community: "Gateway Python Dependencies (`gateway/requirements.txt`)"
+community: "Community 574"
 location: "L66"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Python_Dependencies_gateway/requirementstxt
+  - community/Community_574
 ---
 
 # Health/status endpoint must be accessible without authentication.
 
 ## Connections
-- [[dot-test_health_endpoint_unauthenticated()]] - `rationale_for` [EXTRACTED]
+- [[.test_health_endpoint_unauthenticated()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Python_Dependencies_gateway/requirementstxt
+#graphify/rationale #graphify/EXTRACTED #community/Community_574

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/HEXSTRIKE_PROXY_PLAN.md"
 type: "document"
-community: "i-daedalus README — Concept Illustrator"
+community: "Community 1448"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/i-daedalus_README__Concept_Illustrator
+  - community/Community_1448
 ---
 
 # HexStrike MCP Proxy Plan
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Control-Plane  Data-Plane Separation]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/i-daedalus_README__Concept_Illustrator
+#graphify/document #graphify/EXTRACTED #community/Community_1448

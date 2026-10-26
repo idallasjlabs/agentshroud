@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
+source_file: ".agents/skills/aws/SKILL.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM) (2)"
-location: "L478"
+community: "Community 242"
+location: "L388"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM_2
+  - community/Community_242
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill Hermes Dev Workflow (HDEV)_2]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM_2
+#graphify/document #graphify/EXTRACTED #community/Community_242

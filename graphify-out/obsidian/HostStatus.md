@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "Docker Compose (infra diagram)"
+community: "Community 1072"
 location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Docker_Compose_infra_diagram
+  - community/Community_1072
 ---
 
 # HostStatus
 
 ## Connections
-- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[Outcome classification for a single host.]] - `rationale_for` [EXTRACTED]
-- [[Path_65]] - `uses` [INFERRED]
+- [[Path_34]] - `uses` [INFERRED]
 - [[TestBuildSshArgv]] - `uses` [INFERRED]
-- [[TestClassify_1]] - `uses` [INFERRED]
+- [[TestClassify]] - `uses` [INFERRED]
 - [[TestHostResult]] - `uses` [INFERRED]
-- [[TestMain_1]] - `uses` [INFERRED]
+- [[TestMain]] - `uses` [INFERRED]
 - [[TestMultiHostResultProperties]] - `uses` [INFERRED]
 - [[TestParseHosts]] - `uses` [INFERRED]
 - [[TestParserAndCommandResolution]] - `uses` [INFERRED]
@@ -26,9 +26,9 @@ tags:
 - [[TestSshRunner]] - `uses` [INFERRED]
 - [[TestTail]] - `uses` [INFERRED]
 - [[TestWrapperSubprocess]] - `uses` [INFERRED]
-- [[classify()_1]] - `references` [EXTRACTED]
+- [[classify()]] - `references` [EXTRACTED]
 - [[multi_host_test.py]] - `contains` [EXTRACTED]
-- [[str_3]] - `inherits` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Docker_Compose_infra_diagram
+#graphify/code #graphify/INFERRED #community/Community_1072

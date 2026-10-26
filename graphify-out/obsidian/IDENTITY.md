@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
+source_file: "docker/config/openclaw/workspace/IDENTITY.md"
 type: "document"
-community: "The 8D Investigation Process (2)"
-location: "L8"
+community: "Community 853"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process_2
+  - community/Community_853
 ---
 
-# Identity
+# IDENTITY.md
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent]] - `contains` [EXTRACTED]
+- [[IDENTITY.md - Who I Am_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process_2
+#graphify/document #graphify/EXTRACTED #community/Community_853

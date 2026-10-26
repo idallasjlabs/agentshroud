@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-release/SKILL.md"
+source_file: ".cursor/agents/i-hdev.md"
 type: "document"
-community: "openai-whisper-api/SKILL.md"
-location: "L197"
+community: "Community 841"
+location: "L365"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openai-whisper-api/SKILLmd
+  - community/Community_841
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill Release (i-release)]] - `contains` [EXTRACTED]
+- [[Skill Hermes Dev Workflow (HDEV)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Community_841

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/governance/BRANCH_PROTECTION.md"
 type: "document"
-community: "AgentShroud User Guide"
+community: "Community 326"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_User_Guide
+  - community/Community_326
 ---
 
 # GitHub Branch Protection — main (docs/governance/BRANCH_PROTECTION.md)
@@ -14,4 +14,4 @@ tags:
 - [[Local PreToolUse hook block_main_commits.sh (blocks commitpushmerge on main before GitHub is reached)]] - `conceptually_related_to` [EXTRACTED]
 - [[Required status checks test, lint, smoke-static]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_User_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_326

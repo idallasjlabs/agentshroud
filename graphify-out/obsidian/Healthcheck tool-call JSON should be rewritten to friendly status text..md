@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "Community 626"
 location: "L518"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/Community_626
 ---
 
 # Healthcheck tool-call JSON should be rewritten to friendly status text.
 
 ## Connections
-- [[dot-test_healthcheck_sessions_spawn_json_is_rewritten()]] - `rationale_for` [EXTRACTED]
+- [[.test_healthcheck_sessions_spawn_json_is_rewritten()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_626

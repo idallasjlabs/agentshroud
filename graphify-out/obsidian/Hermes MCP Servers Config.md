@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/mcp/servers.json"
 type: "document"
-community: "test_ptt_state.c"
+community: "Community 339"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_ptt_statec
+  - community/Community_339
 ---
 
 # Hermes MCP Servers Config
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[agentshroud-gateway MCP proxy entry (disabled)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_ptt_statec
+#graphify/document #graphify/EXTRACTED #community/Community_339

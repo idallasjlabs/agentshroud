@@ -1,12 +1,12 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "IEC 62443 Compliance Matrix — AgentShroud"
+community: "Community 420"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/IEC_62443_Compliance_Matrix__AgentShroud
+  - community/Community_420
 ---
 
 # IEC 62443 Compliance Matrix — AgentShroud
@@ -16,12 +16,13 @@ tags:
 - [[FR 1 Identification and Authentication Control (IAC)]] - `contains` [EXTRACTED]
 - [[FR 2 Use Control (UC)]] - `contains` [EXTRACTED]
 - [[FR 3 System Integrity (SI)]] - `contains` [EXTRACTED]
+- [[FR 4 Data Confidentiality (DC)]] - `contains` [EXTRACTED]
 - [[FR 5 Restricted Data Flow (RDF)]] - `contains` [EXTRACTED]
 - [[FR 6 Timely Response to Events (TRE)]] - `contains` [EXTRACTED]
 - [[FR 7 Resource Availability (RA)]] - `contains` [EXTRACTED]
 - [[FR4 Data Confidentiality]] - `contains` [EXTRACTED]
-- [[Overview_15]] - `contains` [EXTRACTED]
-- [[Summary_15]] - `contains` [EXTRACTED]
+- [[Overview_13]] - `contains` [EXTRACTED]
+- [[Summary_26]] - `contains` [EXTRACTED]
 - [[iec-62443-matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Community_420

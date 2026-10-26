@@ -1,11 +1,11 @@
 ---
 source_file: ".github/workflows/pages.yml"
 type: "document"
-community: "AuditExporter"
+community: "Community 195"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/AuditExporter
+  - community/Community_195
 ---
 
 # GitHub Pages Deploy Workflow
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud™ README]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/AuditExporter
+#graphify/document #graphify/INFERRED #community/Community_195

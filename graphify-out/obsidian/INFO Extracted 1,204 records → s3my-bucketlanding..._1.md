@@ -1,18 +1,18 @@
 ---
 source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "hermes/SOUL.md"
-location: "L67"
+community: "Community 337"
+location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/SOULmd
+  - community/Community_337
 ---
 
 # [INFO] Extracted 1,204 records → s3://my-bucket/landing/...
 
 ## Connections
-- [[dot-agentsskillsi-twSKILL]] - `contains` [EXTRACTED]
 - [[Runbook — Operational Decision Tree_1]] - `contains` [EXTRACTED]
+- [[SKILL_58]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/SOULmd
+#graphify/document #graphify/EXTRACTED #community/Community_337

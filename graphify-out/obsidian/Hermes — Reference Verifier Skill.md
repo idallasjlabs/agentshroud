@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-hermes/SKILL.md"
 type: "document"
-community: "TestIdentityAuth"
+community: "Community 1415"
 tags:
   - graphify/document
-  - graphify/AMBIGUOUS
-  - community/TestIdentityAuth
+  - graphify/EXTRACTED
+  - community/Community_1415
 ---
 
 # Hermes — Reference Verifier Skill
@@ -14,4 +14,4 @@ tags:
 - [[Podcast Production Pipeline (multi-agent)]] - `conceptually_related_to` [EXTRACTED]
 - [[i-hermes README (Podcast Production Orchestrator)]] - `references` [AMBIGUOUS]
 
-#graphify/document #graphify/AMBIGUOUS #community/TestIdentityAuth
+#graphify/document #graphify/EXTRACTED #community/Community_1415

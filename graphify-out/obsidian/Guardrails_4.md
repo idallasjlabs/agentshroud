@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
+source_file: ".agents/agents/i-odev.md"
 type: "document"
-community: "The 8D Investigation Process (2)"
-location: "L388"
+community: "Community 821"
+location: "L365"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process_2
+  - community/Community_821
 ---
 
 # Guardrails
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent]] - `contains` [EXTRACTED]
+- [[Skill OpenClaw Dev Workflow (ODEV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process_2
+#graphify/document #graphify/EXTRACTED #community/Community_821

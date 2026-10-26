@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "colima-health-check.sh"
+community: "Community 1119"
 location: "L7941"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/Community_1119
 ---
 
 # Handle /rmfromgroup <user_id> <group_id> (owner or group admin).
 
 ## Connections
-- [[dot-_handle_rmfromgroup_command()]] - `rationale_for` [EXTRACTED]
+- [[._handle_rmfromgroup_command()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/rationale #graphify/EXTRACTED #community/Community_1119

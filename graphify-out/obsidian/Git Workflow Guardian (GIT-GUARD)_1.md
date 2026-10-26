@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-gg/README.md"
+source_file: "docker/config/hermes/skills/i-gg/README.md"
 type: "document"
-community: "soc.js"
+community: "Community 90"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_90
 ---
 
 # Git Workflow Guardian (GIT-GUARD)
 
 ## Connections
-- [[Purpose_103]] - `contains` [EXTRACTED]
-- [[Related Skills_74]] - `contains` [EXTRACTED]
-- [[Usage_80]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-ggREADME]] - `contains` [EXTRACTED]
+- [[Purpose_48]] - `contains` [EXTRACTED]
+- [[README_47]] - `contains` [EXTRACTED]
+- [[README_53]] - `contains` [EXTRACTED]
+- [[Related Skills_66]] - `contains` [EXTRACTED]
+- [[Usage_70]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_90

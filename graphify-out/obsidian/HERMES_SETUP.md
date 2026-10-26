@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "ApprovalHardening"
+community: "Community 91"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/Community_91
 ---
 
 # HERMES_SETUP.md
@@ -20,4 +20,4 @@ tags:
 - [[PII (Personally Identifiable Information)]] - `references` [EXTRACTED]
 - [[Prompt Injection]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/document #graphify/EXTRACTED #community/Community_91

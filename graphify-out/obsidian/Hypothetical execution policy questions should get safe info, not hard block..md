@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2)"
+community: "Community 4"
 location: "L3050"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/Community_4
 ---
 
 # Hypothetical execution policy questions should get safe info, not hard block.
 
 ## Connections
-- [[dot-test_collaborator_hypothetical_execution_question_gets_safe_info()]] - `rationale_for` [EXTRACTED]
+- [[.test_collaborator_hypothetical_execution_question_gets_safe_info()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_4

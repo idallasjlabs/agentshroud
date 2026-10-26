@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/secrets-inventory.md"
 type: "rationale"
-community: "Slack Channel Setup (2)"
+community: "Community 445"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_Channel_Setup_2
+  - community/Community_445
 ---
 
 # GitHub 90-Day Unreferenced-Commit Cache Warning
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Git History Expungement via filter-repo]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_Channel_Setup_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_445

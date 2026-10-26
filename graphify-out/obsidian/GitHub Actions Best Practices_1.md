@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-cicd/SKILL.md"
+source_file: ".agents/skills/i-cicd/SKILL.md"
 type: "document"
-community: "Skill: UI Expert (UI)"
-location: "L21"
+community: "Community 948"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UI_Expert_UI
+  - community/Community_948
 ---
 
 # GitHub Actions Best Practices
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI
+#graphify/document #graphify/EXTRACTED #community/Community_948

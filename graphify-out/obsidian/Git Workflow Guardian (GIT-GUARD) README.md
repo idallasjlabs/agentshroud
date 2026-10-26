@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-gg/README.md"
 type: "document"
-community: "Implementation Status"
+community: "Community 391"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Implementation_Status
+  - community/Community_391
 ---
 
 # Git Workflow Guardian (GIT-GUARD) README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[GIT-GUARD Skill]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Implementation_Status
+#graphify/document #graphify/INFERRED #community/Community_391
