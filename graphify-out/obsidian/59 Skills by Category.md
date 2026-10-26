@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Skill: Technical Writer (TW)"
+community: "Community 1022"
 location: "L272"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Technical_Writer_TW
+  - community/Community_1022
 ---
 
 # 59 Skills by Category
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[4. Skill System]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Writer_TW
+#graphify/document #graphify/EXTRACTED #community/Community_1022

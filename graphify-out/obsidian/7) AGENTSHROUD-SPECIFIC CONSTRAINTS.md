@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "GSDE&G Development Master Checklist (MC)"
+community: "Community 1204"
 location: "L392"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist_MC
+  - community/Community_1204
 ---
 
 # 7) AGENTSHROUD-SPECIFIC CONSTRAINTS
@@ -18,4 +18,4 @@ tags:
 - [[Hard constraints]] - `contains` [EXTRACTED]
 - [[Key source directories]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_MC
+#graphify/document #graphify/EXTRACTED #community/Community_1204

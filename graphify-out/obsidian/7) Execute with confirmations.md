@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "_llm_init_emit_merge_json()"
+community: "Community 923"
 location: "L133"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_llm_init_emit_merge_json
+  - community/Community_923
 ---
 
 # 7) Execute with confirmations
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Workflow (follow in order)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_llm_init_emit_merge_json
+#graphify/document #graphify/EXTRACTED #community/Community_923
