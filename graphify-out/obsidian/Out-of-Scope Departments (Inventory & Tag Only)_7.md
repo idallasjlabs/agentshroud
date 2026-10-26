@@ -1,0 +1,17 @@
+---
+source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
+type: "document"
+community: "Community 256"
+location: "L166"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Community_256
+---
+
+# Out-of-Scope Departments (Inventory & Tag Only)
+
+## Connections
+- [[FY26 Cost Reduction Context_7]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Community_256
