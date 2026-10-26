@@ -1,24 +1,24 @@
 ---
 source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "document"
-community: "client_from_env"
+community: "Community 1015"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/client_from_env
+  - community/Community_1015
 ---
 
 # Presidio Analyzer
 
 ## Connections
-- [[Architecture_1]] - `contains` [EXTRACTED]
+- [[Architecture_12]] - `contains` [EXTRACTED]
 - [[Confidence Threshold]] - `contains` [EXTRACTED]
 - [[Configured Entities]] - `contains` [EXTRACTED]
 - [[NLP Backend]] - `contains` [EXTRACTED]
-- [[Purpose_5]] - `contains` [EXTRACTED]
-- [[Related Notes_7]] - `contains` [EXTRACTED]
-- [[Where Used_1]] - `contains` [EXTRACTED]
+- [[Purpose_191]] - `contains` [EXTRACTED]
+- [[Related Notes_46]] - `contains` [EXTRACTED]
+- [[Where Used_3]] - `contains` [EXTRACTED]
 - [[presidio-analyzer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/client_from_env
+#graphify/document #graphify/EXTRACTED #community/Community_1015

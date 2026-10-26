@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: "UserSessionManager (4)"
+community: "Community 439"
 location: "L414"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager_4
+  - community/Community_439
 ---
 
 # Persist queue items to disk for restart durability (best effort).          Uses
 
 ## Connections
-- [[dot-_persist_pending_store()]] - `rationale_for` [EXTRACTED]
+- [[._persist_pending_store()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_4
+#graphify/rationale #graphify/EXTRACTED #community/Community_439

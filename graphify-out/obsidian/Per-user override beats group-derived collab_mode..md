@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "rationale"
-community: "colima-health-check.sh"
+community: "Community 18"
 location: "L254"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/Community_18
 ---
 
 # Per-user override beats group-derived collab_mode.
 
 ## Connections
-- [[dot-test_user_override_takes_precedence_over_group()]] - `rationale_for` [EXTRACTED]
+- [[.test_user_override_takes_precedence_over_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/rationale #graphify/EXTRACTED #community/Community_18

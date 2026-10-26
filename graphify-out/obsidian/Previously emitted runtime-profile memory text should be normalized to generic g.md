@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "Community 2441"
 location: "L912"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/Community_2441
 ---
 
 # Previously emitted runtime-profile memory text should be normalized to generic g
 
 ## Connections
-- [[dot-test_runtime_profile_memory_error_text_is_rewritten_generic()]] - `rationale_for` [EXTRACTED]
+- [[.test_runtime_profile_memory_error_text_is_rewritten_generic()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_2441

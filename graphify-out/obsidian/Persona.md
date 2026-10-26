@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
+source_file: ".agents/agents/athena.md"
 type: "document"
-community: "dashboard_endpoints.py (2) (2)"
-location: "L14"
+community: "Community 1557"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy_2_2
+  - community/Community_1557
 ---
 
 # Persona
 
 ## Connections
-- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard_endpointspy_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_1557

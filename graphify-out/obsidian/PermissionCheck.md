@@ -1,28 +1,29 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "MCPPermissionManager (2)"
+community: "Community 59"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/Community_59
 ---
 
 # PermissionCheck
 
 ## Connections
-- [[dot-check_agent_server_access()]] - `references` [EXTRACTED]
-- [[dot-check_all()]] - `references` [EXTRACTED]
-- [[dot-check_rate_limit()]] - `references` [EXTRACTED]
-- [[dot-check_tool_parameters()]] - `references` [EXTRACTED]
-- [[dot-check_tool_permission()_1]] - `references` [EXTRACTED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
-- [[PermissionLevel_1]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[.check_agent_server_access()]] - `references` [EXTRACTED]
+- [[.check_all()]] - `references` [EXTRACTED]
+- [[.check_rate_limit()]] - `references` [EXTRACTED]
+- [[.check_tool_parameters()]] - `references` [EXTRACTED]
+- [[.check_tool_permission()]] - `references` [EXTRACTED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Result of a permission check.]] - `rationale_for` [EXTRACTED]
 - [[Result of permission check.]] - `rationale_for` [EXTRACTED]
+- [[__init__.py_7]] - `imports` [EXTRACTED]
 - [[mcp_permissions.py]] - `contains` [EXTRACTED]
-- [[proxy__init__.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/code #graphify/EXTRACTED #community/Community_59

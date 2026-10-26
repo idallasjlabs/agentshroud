@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Flip core security modules from monitor to enforce mode"
+community: "Community 717"
 location: "L284"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Flip_core_security_modules_from_monitor_to_enforce_mode
+  - community/Community_717
 ---
 
 # Phase 10: Community & GitHub Setup (10 items)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v1.0.0 Fortress — Ship-Ready Public Release (116 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Flip_core_security_modules_from_monitor_to_enforce_mode
+#graphify/document #graphify/EXTRACTED #community/Community_717

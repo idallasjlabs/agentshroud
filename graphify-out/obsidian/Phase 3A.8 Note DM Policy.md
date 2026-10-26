@@ -1,17 +1,18 @@
 ---
 source_file: "docs/security/VERIFICATION_RESULTS.md"
 type: "document"
-community: "wazuh_client.py"
+community: "Community 478"
 location: "L170"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/wazuh_clientpy
+  - community/Community_478
 ---
 
 # Phase 3A.8 Note: DM Policy
 
 ## Connections
 - [[9. Remaining work]] - `contains` [EXTRACTED]
+- [[Remaining Work]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/wazuh_clientpy
+#graphify/document #graphify/EXTRACTED #community/Community_478

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md"
 type: "document"
-community: "Weather Skill"
+community: "Community 850"
 location: "L315"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Weather_Skill
+  - community/Community_850
 ---
 
 # Phase 3: Operational Maturity (v0.9.6–v1.0.0, Weeks 11-16)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DELIVERABLE 4 — v1.0 Roadmap]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Weather_Skill
+#graphify/document #graphify/EXTRACTED #community/Community_850

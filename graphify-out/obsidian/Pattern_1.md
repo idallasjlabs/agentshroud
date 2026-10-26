@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "Any"
-location: "L170"
+community: "Community 0"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/Community_0
 ---
 
 # Pattern
 
 ## Connections
-- [[dot-_create_detection_patterns()]] - `references` [EXTRACTED]
+- [[._compile_patterns()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/Community_0

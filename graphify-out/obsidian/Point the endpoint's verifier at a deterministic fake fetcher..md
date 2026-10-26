@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "rationale"
-community: "TelegramAPIProxy (3)"
+community: "Community 137"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_3
+  - community/Community_137
 ---
 
 # Point the endpoint's verifier at a deterministic fake fetcher.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_inject_fetcher()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_137

@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "concept"
-community: "Prompt: Hermes Competitive Intelligence Email (AM/PM)"
+community: "Community 336"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM
+  - community/Community_336
 ---
 
 # Pi Coding Agent CLI
 
 ## Connections
-- [[coding-agentSKILL]] - `implements` [EXTRACTED]
+- [[SKILL_213]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM
+#graphify/concept #graphify/EXTRACTED #community/Community_336

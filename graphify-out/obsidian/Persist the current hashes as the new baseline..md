@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/config_integrity.py"
 type: "rationale"
-community: "test_runtime_engines.py"
+community: "Community 241"
 location: "L74"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy
+  - community/Community_241
 ---
 
 # Persist the current hashes as the new baseline.
 
 ## Connections
-- [[dot-_save_baseline()]] - `rationale_for` [EXTRACTED]
+- [[._save_baseline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_runtime_enginespy
+#graphify/rationale #graphify/EXTRACTED #community/Community_241

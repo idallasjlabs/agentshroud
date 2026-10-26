@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
+source_file: ".agents/skills/eightd-root-cause-analysis/references/learning-and-xml.md"
 type: "document"
-community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE) (3)"
-location: "L464"
+community: "Community 1965"
+location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_3
+  - community/Community_1965
 ---
 
 # Pattern Matching for New Incidents
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Learning System (Continuous Improvement)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_3
+#graphify/document #graphify/EXTRACTED #community/Community_1965

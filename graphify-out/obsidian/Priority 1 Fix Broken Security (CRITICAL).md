@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "document"
-community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md (2)"
+community: "Community 472"
 location: "L255"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd_2
+  - community/Community_472
 ---
 
 # Priority 1: Fix Broken Security (CRITICAL)
@@ -19,4 +19,4 @@ tags:
 - [[5. Set DM Policy to Allowlist]] - `contains` [EXTRACTED]
 - [[Immediate Action Plan (Phase 3A - Completion)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd_2
+#graphify/document #graphify/EXTRACTED #community/Community_472

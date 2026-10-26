@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
+source_file: ".agents/agents/oracle.md"
 type: "document"
-community: "run-standalone.sh (Hermes docker run launcher)"
-location: "L14"
+community: "Community 1979"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/run-standalonesh_Hermes_docker_run_launcher
+  - community/Community_1979
 ---
 
 # Persona
 
 ## Connections
-- [[Socrates — Dialogue Architect_1]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher
+#graphify/document #graphify/EXTRACTED #community/Community_1979

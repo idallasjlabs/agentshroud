@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
+source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "ContextGuard"
-location: "L24"
+community: "Community 325"
+location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/Community_325
 ---
 
 # Pattern
 
 ## Connections
-- [[dot-_compile_patterns()]] - `references` [EXTRACTED]
+- [[._score_signal()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/Community_325

@@ -1,17 +1,18 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "jira_dev_ticket run"
+community: "Community 640"
 location: "L272"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/jira_dev_ticket_run
+  - community/Community_640
 ---
 
 # Phase 4: Skill Development
 
 ## Connections
 - [[1.4 Implementation Plan]] - `contains` [EXTRACTED]
+- [[Implementation Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/jira_dev_ticket_run
+#graphify/document #graphify/EXTRACTED #community/Community_640

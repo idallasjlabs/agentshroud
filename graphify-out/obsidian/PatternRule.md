@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "EgressFilterConfig (2)"
+community: "Community 792"
 location: "L45"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EgressFilterConfig_2
+  - community/Community_792
 ---
 
 # PatternRule
 
 ## Connections
-- [[dot-__init__()_94]] - `references` [EXTRACTED]
-- [[dot-test_custom_pattern()]] - `calls` [EXTRACTED]
+- [[.__init__()_109]] - `references` [EXTRACTED]
+- [[.test_custom_pattern()]] - `calls` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestDriftDetector]] - `uses` [INFERRED]
 - [[TestDriftDetectorHardened]] - `uses` [INFERRED]
@@ -25,7 +25,7 @@ tags:
 - [[TestSecureZero]] - `uses` [INFERRED]
 - [[TestTrustManager]] - `uses` [INFERRED]
 - [[TestTrustManagerHardened]] - `uses` [INFERRED]
-- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
+- [[prompt_guard.py]] - `contains` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EgressFilterConfig_2
+#graphify/code #graphify/INFERRED #community/Community_792

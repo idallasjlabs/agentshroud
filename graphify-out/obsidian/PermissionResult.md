@@ -1,29 +1,29 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "Community 6"
 location: "L23"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MiddlewareManager_2
+  - community/Community_6
 ---
 
 # PermissionResult
 
 ## Connections
-- [[dot-__init__()_170]] - `calls` [EXTRACTED]
-- [[dot-check_group_permission()]] - `references` [EXTRACTED]
-- [[dot-check_permission()_1]] - `references` [EXTRACTED]
-- [[dot-check_tool_permission()_2]] - `references` [EXTRACTED]
-- [[dot-list_users_and_roles()]] - `references` [EXTRACTED]
-- [[dot-set_user_role()_1]] - `references` [EXTRACTED]
-- [[Any_66]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[.__init__()_186]] - `calls` [EXTRACTED]
+- [[.check_group_permission()]] - `references` [EXTRACTED]
+- [[.check_permission()]] - `references` [EXTRACTED]
+- [[.check_tool_permission()_1]] - `references` [EXTRACTED]
+- [[.list_users_and_roles()]] - `references` [EXTRACTED]
+- [[.set_user_role()]] - `references` [EXTRACTED]
+- [[Any_72]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[Result of permission check.]] - `rationale_for` [EXTRACTED]
-- [[Role_64]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
 - [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
-- [[SimpleNamespace_1]] - `uses` [INFERRED]
+- [[SimpleNamespace]] - `uses` [INFERRED]
 - [[TestCoerceToWSEventExtra]] - `uses` [INFERRED]
 - [[TestCollectRecentEvents]] - `uses` [INFERRED]
 - [[TestEventFanOut]] - `uses` [INFERRED]
@@ -47,4 +47,4 @@ tags:
 - [[rbac.py]] - `contains` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager_2
+#graphify/code #graphify/INFERRED #community/Community_6

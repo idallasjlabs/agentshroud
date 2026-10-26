@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-bs/SKILL.md"
+source_file: ".agents/agents/i-bs.md"
 type: "document"
-community: "TestBuildCollaboratorSafeInfoResponse"
-location: "L55"
+community: "Community 1009"
+location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestBuildCollaboratorSafeInfoResponse
+  - community/Community_1009
 ---
 
 # Patterns by Output Type
@@ -15,4 +15,4 @@ tags:
 - [[Color Token Definition]] - `contains` [EXTRACTED]
 - [[Skill Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse
+#graphify/document #graphify/EXTRACTED #community/Community_1009

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "rationale"
-community: "test_soc_realtime_coverage.py"
+community: "Community 27"
 location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/Community_27
 ---
 
 # Per-domain configuration overrides.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DomainSettings]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/Community_27

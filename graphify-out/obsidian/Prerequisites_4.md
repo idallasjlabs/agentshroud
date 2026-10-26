@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: "docs/operations/linux.md"
 type: "document"
-community: "mcp_inspector.py"
-location: "L375"
+community: "Community 601"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_inspectorpy
+  - community/Community_601
 ---
 
 # Prerequisites
 
 ## Connections
-- [[v0.9.0 — Apple Messages Integration]] - `contains` [EXTRACTED]
+- [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy
+#graphify/document #graphify/EXTRACTED #community/Community_601

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "SecureBrowser (4)"
+community: "Community 1787"
 location: "L784"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecureBrowser_4
+  - community/Community_1787
 ---
 
 # Persist a failover event to the audit chain if wired.
 
 ## Connections
-- [[dot-_record_failover_event()]] - `rationale_for` [EXTRACTED]
+- [[._record_failover_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser_4
+#graphify/rationale #graphify/EXTRACTED #community/Community_1787

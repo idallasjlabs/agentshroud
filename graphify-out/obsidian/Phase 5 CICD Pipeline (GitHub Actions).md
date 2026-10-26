@@ -1,17 +1,18 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "test_telegram_replay.py"
+community: "Community 364"
 location: "L269"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_telegram_replaypy
+  - community/Community_364
 ---
 
 # Phase 5: CI/CD Pipeline (GitHub Actions)
 
 ## Connections
 - [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - `contains` [EXTRACTED]
+- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_telegram_replaypy
+#graphify/document #graphify/EXTRACTED #community/Community_364

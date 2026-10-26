@@ -1,17 +1,18 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
 type: "document"
-community: "TrustConfig (2) (2)"
+community: "Community 617"
 location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TrustConfig_2_2
+  - community/Community_617
 ---
 
 # Pattern Categories and Weights
 
 ## Connections
-- [[prompt_guard.py]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_2]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TrustConfig_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_617

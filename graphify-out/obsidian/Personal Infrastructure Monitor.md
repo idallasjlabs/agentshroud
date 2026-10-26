@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "mcp_audit.py"
+community: "Community 663"
 location: "L405"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_auditpy
+  - community/Community_663
 ---
 
 # Personal Infrastructure Monitor
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v1.3.0 — Platform Expansion (53 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_auditpy
+#graphify/document #graphify/EXTRACTED #community/Community_663

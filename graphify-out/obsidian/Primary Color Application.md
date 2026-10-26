@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "test_telegram_executor.py"
+community: "Community 976"
 location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_telegram_executorpy
+  - community/Community_976
 ---
 
 # Primary Color Application
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Color Usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_telegram_executorpy
+#graphify/document #graphify/EXTRACTED #community/Community_976

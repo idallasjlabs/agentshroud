@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "test_collaborator_tracker.py (2)"
+community: "Community 14"
 location: "L6822"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_2
+  - community/Community_14
 ---
 
 # Persist blocked inbound messages for admin review.          Also records the blo
 
 ## Connections
-- [[dot-_quarantine_blocked_message()]] - `rationale_for` [EXTRACTED]
+- [[._quarantine_blocked_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_14
