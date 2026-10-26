@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Operating Rules (Non-Negotiable) (2)"
+community: "Community 46"
 location: "L498"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Operating_Rules_Non-Negotiable_2
+  - community/Community_46
 ---
 
 # test_tts_synthesize_passes_normalised_text_to_kokoro()
@@ -16,4 +16,4 @@ tags:
 - [[synthesize() feeds the normalised (no-markdown, no-token) text to Kokoro.      V]] - `rationale_for` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Operating_Rules_Non-Negotiable_2
+#graphify/code #graphify/EXTRACTED #community/Community_46

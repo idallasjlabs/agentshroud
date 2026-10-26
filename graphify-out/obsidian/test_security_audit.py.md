@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "ContextGuard"
+community: "Community 0"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/Community_0
 ---
 
 # test_security_audit.py
@@ -30,30 +30,30 @@ tags:
 - [[IsolationStatus]] - `imports` [EXTRACTED]
 - [[KeyVault]] - `imports` [EXTRACTED]
 - [[KeyVaultConfig]] - `imports` [EXTRACTED]
-- [[LogSanitizer]] - `imports` [EXTRACTED]
+- [[LogSanitizer_1]] - `imports` [EXTRACTED]
 - [[MetadataGuard]] - `imports` [EXTRACTED]
 - [[NetworkValidator]] - `imports` [EXTRACTED]
-- [[PIISanitizer_3]] - `imports` [EXTRACTED]
+- [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[PKCEViolation]] - `imports` [EXTRACTED]
-- [[PromptGuard_1]] - `imports` [EXTRACTED]
+- [[PromptGuard]] - `imports` [EXTRACTED]
 - [[RedirectMismatch]] - `imports` [EXTRACTED]
 - [[ResourceGuard]] - `imports` [EXTRACTED]
 - [[ResourceLimits]] - `imports` [EXTRACTED]
 - [[Session]] - `imports` [EXTRACTED]
 - [[SubagentEvent]] - `imports` [EXTRACTED]
 - [[SubagentMonitor]] - `imports` [EXTRACTED]
-- [[TestAuditTrail]] - `contains` [EXTRACTED]
-- [[TestAuth]] - `contains` [EXTRACTED]
+- [[TestAuditTrail_1]] - `contains` [EXTRACTED]
+- [[TestAuth_1]] - `contains` [EXTRACTED]
 - [[TestContainerSecurity]] - `contains` [EXTRACTED]
-- [[TestContextGuard]] - `contains` [EXTRACTED]
+- [[TestContextGuard_1]] - `contains` [EXTRACTED]
 - [[TestCryptography]] - `contains` [EXTRACTED]
 - [[TestFileSandbox]] - `contains` [EXTRACTED]
 - [[TestLoggingSecurity]] - `contains` [EXTRACTED]
 - [[TestNetworkSecurity]] - `contains` [EXTRACTED]
-- [[TestPIIDetection]] - `contains` [EXTRACTED]
+- [[TestPIIDetection_1]] - `contains` [EXTRACTED]
 - [[TestPromptGuard]] - `contains` [EXTRACTED]
 - [[TestResourceProtection]] - `contains` [EXTRACTED]
-- [[TestSupplyChain]] - `contains` [EXTRACTED]
+- [[TestSupplyChain_1]] - `contains` [EXTRACTED]
 - [[ThreatAssessment]] - `imports` [EXTRACTED]
 - [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[clamav_scanner.py]] - `imports_from` [EXTRACTED]
@@ -67,13 +67,13 @@ tags:
 - [[gatewaysecuritynetwork_validator.py (NetworkValidator)]] - `references` [EXTRACTED]
 - [[gatewaysecurityprompt_guard.py (PromptGuard)]] - `references` [EXTRACTED]
 - [[health_report.py]] - `imports_from` [EXTRACTED]
-- [[oauth_security.py_2]] - `references` [EXTRACTED]
+- [[oauth_security.py]] - `references` [EXTRACTED]
 - [[parse_clamscan_output()]] - `imports` [EXTRACTED]
-- [[run_canary()_1]] - `imports` [EXTRACTED]
+- [[run_canary()]] - `imports` [EXTRACTED]
 - [[run_clamscan()]] - `imports` [EXTRACTED]
 - [[run_trivy_scan()_1]] - `imports` [EXTRACTED]
 - [[test_security_audit_advanced.py]] - `conceptually_related_to` [INFERRED]
 - [[trivy_report.py]] - `imports_from` [EXTRACTED]
 - [[wazuh_client.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/Community_0

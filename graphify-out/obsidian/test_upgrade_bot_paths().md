@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "api.py (2)"
+community: "Community 1127"
 location: "L2031"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy_2
+  - community/Community_1127
 ---
 
 # test_upgrade_bot_paths()
@@ -15,4 +15,4 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy_2
+#graphify/code #graphify/EXTRACTED #community/Community_1127

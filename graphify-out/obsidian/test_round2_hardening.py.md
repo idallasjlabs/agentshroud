@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "._make_proxy()"
+community: "Community 121"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_121
 ---
 
 # test_round2_hardening.py
@@ -17,7 +17,7 @@ tags:
 - [[FileSandboxConfig]] - `imports` [EXTRACTED]
 - [[GitGuard]] - `imports` [EXTRACTED]
 - [[ResourceGuard]] - `imports` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `imports` [EXTRACTED]
+- [[TelegramAPIProxy]] - `imports` [EXTRACTED]
 - [[TestDRYOwnerChatID]] - `contains` [EXTRACTED]
 - [[TestEgressConfigDefaultEnforce]] - `contains` [EXTRACTED]
 - [[TestEnvGuardFailOpen]] - `contains` [EXTRACTED]
@@ -30,4 +30,4 @@ tags:
 - [[Tests for Round 2 hardening — 9 fixes.]] - `rationale_for` [EXTRACTED]
 - [[scan_repository()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_121

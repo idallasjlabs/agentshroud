@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "FalcoAlertWatcher"
+community: "Community 281"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/Community_281
 ---
 
 # test_skill_guard.py
 
 ## Connections
 - [[Recommendation]] - `imports` [EXTRACTED]
-- [[ScanResult_4]] - `imports` [EXTRACTED]
+- [[ScanResult_2]] - `imports` [EXTRACTED]
 - [[Severity]] - `imports` [EXTRACTED]
-- [[SkillGuard_1]] - `imports` [EXTRACTED]
+- [[SkillGuard]] - `imports` [EXTRACTED]
 - [[SkillScanError]] - `imports` [EXTRACTED]
 - [[TestAggregation]] - `contains` [EXTRACTED]
 - [[TestCleanSkill]] - `contains` [EXTRACTED]
@@ -36,9 +36,9 @@ tags:
 - [[_write_tree()]] - `contains` [EXTRACTED]
 - [[gatewaysecurityskill_guard.py (SkillGuard)]] - `references` [EXTRACTED]
 - [[gatewayskillsscan.py (scan CLI)]] - `references` [EXTRACTED]
-- [[guard()]] - `contains` [EXTRACTED]
-- [[require_auth()]] - `imports` [EXTRACTED]
+- [[guard()_4]] - `contains` [EXTRACTED]
+- [[require_auth()_1]] - `imports` [EXTRACTED]
 - [[scan.py]] - `imports_from` [EXTRACTED]
 - [[webapi.py (POST apiintelreports)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/Community_281

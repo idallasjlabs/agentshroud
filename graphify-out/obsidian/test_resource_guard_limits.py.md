@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_limits.py"
 type: "code"
-community: "._make_proxy()"
+community: "Community 5"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_5
 ---
 
 # test_resource_guard_limits.py
@@ -22,7 +22,7 @@ tags:
 - [[TestVramHeadroom]] - `contains` [EXTRACTED]
 - [[VRAMHeadroomError]] - `imports` [EXTRACTED]
 - [[get_resource_guard()]] - `imports` [EXTRACTED]
-- [[guard()_4]] - `contains` [EXTRACTED]
+- [[guard()_3]] - `contains` [EXTRACTED]
 - [[resource_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_5

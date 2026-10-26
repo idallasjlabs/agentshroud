@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "EgressFilterConfig (2)"
+community: "Community 792"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/Community_792
 ---
 
 # test_security_hardening.py
 
 ## Connections
 - [[AgentRegistry]] - `imports` [EXTRACTED]
-- [[ContainerConfig_1]] - `imports` [EXTRACTED]
+- [[ContainerConfig]] - `imports` [EXTRACTED]
 - [[ContainerSnapshot]] - `imports` [EXTRACTED]
 - [[DriftDetector]] - `imports` [EXTRACTED]
 - [[EgressAction]] - `imports` [EXTRACTED]
-- [[EgressFilter]] - `imports` [EXTRACTED]
+- [[EgressFilter_1]] - `imports` [EXTRACTED]
 - [[EgressFilterConfig]] - `imports` [EXTRACTED]
 - [[EgressPolicy]] - `imports` [EXTRACTED]
 - [[EncryptedStore]] - `imports` [EXTRACTED]
 - [[IsolationStatus]] - `imports` [EXTRACTED]
 - [[IsolationVerifier]] - `imports` [EXTRACTED]
 - [[PatternRule]] - `imports` [EXTRACTED]
-- [[PromptGuard_1]] - `imports` [EXTRACTED]
+- [[PromptGuard]] - `imports` [EXTRACTED]
 - [[TestAgentIsolation]] - `contains` [EXTRACTED]
 - [[TestDriftDetector]] - `contains` [EXTRACTED]
 - [[TestDriftDetectorHardened]] - `contains` [EXTRACTED]
@@ -43,4 +43,4 @@ tags:
 - [[_secure_zero()]] - `imports` [EXTRACTED]
 - [[test_prompt_guard.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/Community_792

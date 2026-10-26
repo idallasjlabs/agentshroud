@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_socket_client.py"
 type: "code"
-community: "Request (2)"
+community: "Community 176"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Request_2
+  - community/Community_176
 ---
 
 # test_slack_socket_client.py
@@ -18,4 +18,4 @@ tags:
 - [[_make_client()]] - `contains` [EXTRACTED]
 - [[compute_backoff()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Request_2
+#graphify/code #graphify/EXTRACTED #community/Community_176

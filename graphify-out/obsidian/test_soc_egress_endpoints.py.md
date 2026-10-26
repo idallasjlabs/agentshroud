@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_egress_endpoints.py"
 type: "code"
-community: "TestOutboundInfoFilter (2)"
+community: "Community 85"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_2
+  - community/Community_85
 ---
 
 # test_soc_egress_endpoints.py
 
 ## Connections
-- [[client()_11]] - `contains` [EXTRACTED]
+- [[client()_14]] - `contains` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
 - [[test_manage_egress_add_remove_rule_and_risk()]] - `contains` [EXTRACTED]
 - [[test_manage_egress_emergency_toggle()]] - `contains` [EXTRACTED]
@@ -38,4 +38,4 @@ tags:
 - [[test_soc_scanners_recent_returns_history()]] - `contains` [EXTRACTED]
 - [[test_soc_scanners_recent_status_filter()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_2
+#graphify/code #graphify/EXTRACTED #community/Community_85

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_cron_seed.py"
 type: "code"
-community: "TestFabricatedSecurityNotice (2)"
-location: "L207"
+community: "Community 190"
+location: "L251"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice_2
+  - community/Community_190
 ---
 
 # test_seed_cron_supports_optional_model_and_provider_args()
@@ -15,4 +15,4 @@ tags:
 - [[_seed_cron must accept optional $5 (model)  $6 (provider) and forward     them]] - `rationale_for` [EXTRACTED]
 - [[test_hermes_cron_seed.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2
+#graphify/code #graphify/EXTRACTED #community/Community_190

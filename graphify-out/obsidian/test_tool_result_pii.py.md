@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "Community 72"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/Community_72
 ---
 
 # test_tool_result_pii.py
 
 ## Connections
-- [[GatewayConfig_3]] - `imports` [EXTRACTED]
+- [[GatewayConfig_1]] - `imports` [EXTRACTED]
 - [[MiddlewareManager]] - `imports` [EXTRACTED]
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIIConfig]] - `imports` [EXTRACTED]
 - [[RedactionDetail]] - `imports` [EXTRACTED]
-- [[RedactionResult_2]] - `imports` [EXTRACTED]
+- [[RedactionResult]] - `imports` [EXTRACTED]
 - [[TestConfidenceFloor]] - `contains` [EXTRACTED]
 - [[TestConfigurationLoading]] - `contains` [EXTRACTED]
 - [[TestMiddlewareIntegration]] - `contains` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[ToolResultPIIConfig]] - `imports` [EXTRACTED]
 - [[ToolResultSanitizer]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/Community_72

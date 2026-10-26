@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router_streaming.py"
 type: "code"
-community: "_make_proxy()"
+community: "Community 34"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_34
 ---
 
 # test_router_streaming.py
@@ -15,7 +15,7 @@ tags:
 - [[AgentTarget]] - `imports` [EXTRACTED]
 - [[ForwardError]] - `imports` [EXTRACTED]
 - [[MultiAgentRouter]] - `imports` [EXTRACTED]
-- [[RouterConfig_1]] - `imports` [EXTRACTED]
+- [[RouterConfig]] - `imports` [EXTRACTED]
 - [[_mock_stream_response()]] - `contains` [EXTRACTED]
 - [[_sse_lines()]] - `contains` [EXTRACTED]
 - [[router()_3]] - `contains` [EXTRACTED]
@@ -30,4 +30,4 @@ tags:
 - [[test_stream_skips_chunk_missing_choices_key_and_continues()]] - `contains` [EXTRACTED]
 - [[test_stream_yields_content_deltas_in_order()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_34

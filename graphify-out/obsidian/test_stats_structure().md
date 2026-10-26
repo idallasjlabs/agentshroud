@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "_pcm_bytes"
+community: "Community 86"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/Community_86
 ---
 
 # test_stats_structure()
 
 ## Connections
-- [[HTTPConnectProxy_1]] - `calls` [EXTRACTED]
+- [[HTTPConnectProxy]] - `calls` [EXTRACTED]
 - [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/code #graphify/EXTRACTED #community/Community_86

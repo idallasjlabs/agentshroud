@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "_pcm_bytes"
+community: "Community 86"
 location: "L319"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/Community_86
 ---
 
 # test_system_bypass_domain_logs_external_decision()
 
 ## Connections
-- [[HTTPConnectProxy_1]] - `calls` [EXTRACTED]
+- [[HTTPConnectProxy]] - `calls` [EXTRACTED]
 - [[System bypass domains should be logged to the SOC decision history.]] - `rationale_for` [EXTRACTED]
-- [[_MockWriter_1]] - `calls` [EXTRACTED]
-- [[_make_stream()_1]] - `calls` [EXTRACTED]
+- [[_MockWriter]] - `calls` [EXTRACTED]
+- [[_make_stream()]] - `calls` [EXTRACTED]
 - [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/code #graphify/EXTRACTED #community/Community_86

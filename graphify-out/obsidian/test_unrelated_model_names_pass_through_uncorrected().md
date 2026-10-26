@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_model_resolver.py"
 type: "code"
-community: "is_overloaded"
+community: "Community 134"
 location: "L317"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/is_overloaded
+  - graphify/INFERRED
+  - community/Community_134
 ---
 
 # test_unrelated_model_names_pass_through_uncorrected()
@@ -15,4 +15,4 @@ tags:
 - [[_apply_stale_alias_correction()]] - `calls` [INFERRED]
 - [[test_hermes_model_resolver.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/is_overloaded
+#graphify/code #graphify/INFERRED #community/Community_134

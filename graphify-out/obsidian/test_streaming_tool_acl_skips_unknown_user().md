@@ -1,22 +1,21 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "test_voice_gateway.py"
+community: "Community 1278"
 location: "L588"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/Community_1278
 ---
 
 # test_streaming_tool_acl_skips_unknown_user()
 
 ## Connections
 - [[Events from 'unknown' user_id must not be blocked (not authenticated).]] - `rationale_for` [EXTRACTED]
-- [[LLMProxy]] - `uses` [INFERRED]
+- [[LLMProxy]] - `calls` [EXTRACTED]
 - [[_FakeSanitizer]] - `calls` [EXTRACTED]
 - [[_FakeToolACL]] - `calls` [EXTRACTED]
-- [[asyncio_2]] - `references` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/Community_1278

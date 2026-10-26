@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "ResourceGuard"
+community: "Community 19"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/Community_19
 ---
 
 # test_soc_router_coverage.py
 
 ## Connections
 - [[ApprovalMode]] - `imports` [EXTRACTED]
-- [[FakeAuditStore]] - `contains` [EXTRACTED]
+- [[FakeAuditStore_1]] - `contains` [EXTRACTED]
 - [[FakeCaller]] - `contains` [EXTRACTED]
 - [[FakeGroup]] - `contains` [EXTRACTED]
-- [[Role_64]] - `imports` [EXTRACTED]
+- [[Role_1]] - `imports` [EXTRACTED]
 - [[_Svc]] - `contains` [EXTRACTED]
 - [[_fake_contributor_manager()]] - `contains` [EXTRACTED]
 - [[_make_service_manager()]] - `contains` [EXTRACTED]
-- [[client()_12]] - `contains` [EXTRACTED]
+- [[client()_15]] - `contains` [EXTRACTED]
 - [[gatewaysocauth.py (get_caller)]] - `references` [EXTRACTED]
 - [[get_caller()]] - `imports` [EXTRACTED]
 - [[holder()]] - `contains` [EXTRACTED]
-- [[socrouter.py]] - `tests` [EXTRACTED]
+- [[router.py_1]] - `tests` [EXTRACTED]
 - [[state()]] - `contains` [EXTRACTED]
 - [[test_add_collaborator()]] - `contains` [EXTRACTED]
 - [[test_add_group_member_paths()]] - `contains` [EXTRACTED]
@@ -164,4 +164,4 @@ tags:
 - [[test_upgrade_hermes_restarts_the_real_container_name()]] - `contains` [EXTRACTED]
 - [[test_websocket_route_dispatch()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/Community_19

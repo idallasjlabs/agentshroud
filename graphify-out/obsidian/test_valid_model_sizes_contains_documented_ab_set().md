@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "code"
-community: "WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)"
+community: "Community 305"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WS-E_Security_Audit__AgentShroud_v12_Gateway__OpenClaw__Hermes
+  - community/Community_305
 ---
 
 # test_valid_model_sizes_contains_documented_ab_set()
@@ -15,4 +15,4 @@ tags:
 - [[The documented AB knob values are all accepted.]] - `rationale_for` [EXTRACTED]
 - [[test_voice_stt_model_ab.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WS-E_Security_Audit__AgentShroud_v12_Gateway__OpenClaw__Hermes
+#graphify/code #graphify/EXTRACTED #community/Community_305

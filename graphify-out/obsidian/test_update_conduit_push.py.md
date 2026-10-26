@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_update_conduit_push.py"
 type: "code"
-community: "_run()"
+community: "Community 1042"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run
+  - community/Community_1042
 ---
 
 # test_update_conduit_push.py
@@ -15,9 +15,8 @@ tags:
 - [[TestPinIsValidated]] - `contains` [EXTRACTED]
 - [[TestProvesTheOutcome]] - `contains` [EXTRACTED]
 - [[TestRepoPin]] - `contains` [EXTRACTED]
-- [[TestUpgrade]] - `contains` [EXTRACTED]
-- [[_run()_1]] - `contains` [EXTRACTED]
+- [[TestUpgrade_1]] - `contains` [EXTRACTED]
+- [[_run()_2]] - `contains` [EXTRACTED]
 - [[_versions_file()]] - `contains` [EXTRACTED]
-- [[scriptsupdate-conduit-push.sh — pinned installer for Hermes's conduit_push…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run
+#graphify/code #graphify/EXTRACTED #community/Community_1042

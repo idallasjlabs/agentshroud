@@ -1,23 +1,23 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c"
 type: "code"
-community: "test_security_toolchain.py (2)"
+community: "Community 341"
 location: "L128"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_security_toolchainpy_2
+  - community/Community_341
 ---
 
 # test_vad_timeout_fires_without_audio()
 
 ## Connections
 - [[do_tap()]] - `calls` [EXTRACTED]
-- [[main()_16]] - `calls` [EXTRACTED]
+- [[main()_10]] - `calls` [EXTRACTED]
 - [[test_ptt_state.c]] - `contains` [EXTRACTED]
 - [[wakeword_clear()]] - `calls` [INFERRED]
 - [[wakeword_ended()]] - `calls` [INFERRED]
 - [[wakeword_tick()]] - `calls` [INFERRED]
 - [[wakeword_triggered()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/test_security_toolchainpy_2
+#graphify/code #graphify/INFERRED #community/Community_341

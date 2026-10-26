@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "AgentRegistry"
+community: "Community 100"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/Community_100
 ---
 
 # test_slack_proxy.py
@@ -20,7 +20,7 @@ tags:
 - [[TestSocketModeRelay]] - `contains` [EXTRACTED]
 - [[TestWebhookReceiverSlackExtraction]] - `contains` [EXTRACTED]
 - [[WebhookReceiver]] - `imports` [EXTRACTED]
-- [[_make_proxy()_1]] - `contains` [EXTRACTED]
+- [[_make_proxy()_2]] - `contains` [EXTRACTED]
 - [[_pass_result()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/Community_100

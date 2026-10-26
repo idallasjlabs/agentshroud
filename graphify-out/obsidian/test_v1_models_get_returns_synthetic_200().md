@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_v1_models_synthetic.py"
 type: "code"
-community: "Apple Platform Integration"
+community: "Community 1112"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Apple_Platform_Integration
+  - community/Community_1112
 ---
 
 # test_v1_models_get_returns_synthetic_200()
@@ -15,4 +15,4 @@ tags:
 - [[Synthetic v1modelsid shim for hermes v0.16.0 OAuth-token preflight incompatibility]] - `rationale_for` [EXTRACTED]
 - [[test_v1_models_synthetic.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Apple_Platform_Integration
+#graphify/code #graphify/EXTRACTED #community/Community_1112

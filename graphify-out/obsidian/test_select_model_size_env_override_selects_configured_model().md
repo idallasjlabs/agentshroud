@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "code"
-community: "WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)"
+community: "Community 305"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WS-E_Security_Audit__AgentShroud_v12_Gateway__OpenClaw__Hermes
+  - community/Community_305
 ---
 
 # test_select_model_size_env_override_selects_configured_model()
@@ -15,4 +15,4 @@ tags:
 - [[A valid requested value overrides the default (the AB knob).]] - `rationale_for` [EXTRACTED]
 - [[test_voice_stt_model_ab.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WS-E_Security_Audit__AgentShroud_v12_Gateway__OpenClaw__Hermes
+#graphify/code #graphify/EXTRACTED #community/Community_305

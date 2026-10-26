@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "LLMProxy.proxy_messages (non-streaming)"
+community: "Community 185"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming
+  - community/Community_185
 ---
 
 # test_security_toolchain.py
@@ -16,10 +16,10 @@ tags:
 - [[TestAlertDispatcher]] - `contains` [EXTRACTED]
 - [[TestClamAVParser]] - `contains` [EXTRACTED]
 - [[TestClamAVRun]] - `contains` [EXTRACTED]
-- [[TestClamAVSummary_1]] - `contains` [EXTRACTED]
+- [[TestClamAVSummary]] - `contains` [EXTRACTED]
 - [[TestFalcoCategorize]] - `contains` [EXTRACTED]
 - [[TestFalcoParser]] - `contains` [EXTRACTED]
-- [[TestFalcoSummary]] - `contains` [EXTRACTED]
+- [[TestFalcoSummary_1]] - `contains` [EXTRACTED]
 - [[TestHealthOverallScore]] - `contains` [EXTRACTED]
 - [[TestHealthReport]] - `contains` [EXTRACTED]
 - [[TestHealthScoring]] - `contains` [EXTRACTED]
@@ -27,18 +27,18 @@ tags:
 - [[TestTrivyParser]] - `contains` [EXTRACTED]
 - [[TestTrivyRun]] - `contains` [EXTRACTED]
 - [[TestTrivySaveReport]] - `contains` [EXTRACTED]
-- [[TestTrivySummary]] - `contains` [EXTRACTED]
+- [[TestTrivySummary_1]] - `contains` [EXTRACTED]
 - [[TestWazuhParser]] - `contains` [EXTRACTED]
-- [[TestWazuhSummary]] - `contains` [EXTRACTED]
+- [[TestWazuhSummary_1]] - `contains` [EXTRACTED]
 - [[calculate_overall_score()]] - `imports` [EXTRACTED]
 - [[calculate_tool_score()]] - `imports` [EXTRACTED]
 - [[categorize_alerts()]] - `imports` [EXTRACTED]
 - [[format_report()]] - `imports` [EXTRACTED]
 - [[generate_report()]] - `imports` [EXTRACTED]
-- [[generate_summary()_3]] - `imports` [EXTRACTED]
 - [[generate_summary()]] - `imports` [EXTRACTED]
 - [[generate_summary()_1]] - `imports` [EXTRACTED]
 - [[generate_summary()_2]] - `imports` [EXTRACTED]
+- [[generate_summary()_3]] - `imports` [EXTRACTED]
 - [[get_fim_events()]] - `imports` [EXTRACTED]
 - [[get_rootkit_events()]] - `imports` [EXTRACTED]
 - [[get_trend()]] - `imports` [EXTRACTED]
@@ -55,4 +55,4 @@ tags:
 - [[score_to_grade()]] - `imports` [EXTRACTED]
 - [[update_virus_db()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming
+#graphify/code #graphify/EXTRACTED #community/Community_185
