@@ -1,18 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
+source_file: "docs/architecture/adr/ADR-007-zero-config-security.md"
 type: "document"
-community: "ADR-008-progressive-trust-levels.md"
-location: "L8"
+community: "Community 858"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-008-progressive-trust-levelsmd
+  - community/Community_858
 ---
 
 # Context
 
 ## Connections
-- [[ADR-002 Default-Allow Security Philosophy]] - `contains` [EXTRACTED]
-- [[Evaluation Criteria]] - `contains` [EXTRACTED]
+- [[ADR-007 Zero-Config Security (docker-compose up = fully secured)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-008-progressive-trust-levelsmd
+#graphify/document #graphify/EXTRACTED #community/Community_858

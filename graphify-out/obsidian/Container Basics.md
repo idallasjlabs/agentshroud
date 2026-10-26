@@ -1,12 +1,12 @@
 ---
 source_file: "CHEATSHEET.md"
 type: "document"
-community: "browser-extension/manifest.json"
+community: "Community 441"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser-extension/manifestjson
+  - community/Community_441
 ---
 
 # Container Basics
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Operations Cheat Sheet]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser-extension/manifestjson
+#graphify/document #graphify/EXTRACTED #community/Community_441

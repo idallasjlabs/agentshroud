@@ -1,21 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
+source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "document"
-community: "AuditEvent"
-location: "L148"
+community: "Community 237"
+location: "L495"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditEvent
+  - community/Community_237
 ---
 
-# Configuration
+# Configuration:
 
 ## Connections
-- [[Constructor dependencies (dependency injection)]] - `contains` [EXTRACTED]
-- [[Environment variables_4]] - `contains` [EXTRACTED]
-- [[Header pass-through policy]] - `contains` [EXTRACTED]
-- [[Retry policy (`_forward_request`)]] - `contains` [EXTRACTED]
-- [[llm_proxy.py_1]] - `contains` [EXTRACTED]
+- [[Recommended Configuration for Your Use Case]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditEvent
+#graphify/document #graphify/EXTRACTED #community/Community_237

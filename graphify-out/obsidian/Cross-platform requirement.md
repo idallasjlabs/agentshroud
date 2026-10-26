@@ -1,14 +1,17 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "TestBenchmarkRegression (2)"
+community: "Community 1657"
 location: "L371"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestBenchmarkRegression_2
+  - community/Community_1657
 ---
 
 # Cross-platform requirement
 
-#graphify/document #graphify/EXTRACTED #community/TestBenchmarkRegression_2
+## Connections
+- [[5) LANGUAGE & TOOLING STANDARDS]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Community_1657

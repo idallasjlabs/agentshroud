@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Current Features: Write Requirements"
+community: "Community 157"
 location: "L232"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Current_Features_Write_Requirements
+  - community/Community_157
 ---
 
 # Current Features: Write Requirements
@@ -18,4 +18,4 @@ tags:
 - [[Feature SecureBrowser (Playwright)]] - `contains` [EXTRACTED]
 - [[Feature iCloudGmail Services]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Current_Features_Write_Requirements
+#graphify/document #graphify/EXTRACTED #community/Community_157

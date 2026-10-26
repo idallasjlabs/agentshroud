@@ -1,20 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "Report Delivery Format Instructions"
-location: "L191"
+community: "Community 538"
+location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Report_Delivery_Format_Instructions
+  - community/Community_538
 ---
 
 # Configuration
 
 ## Connections
-- [[7. Deployment]] - `contains` [EXTRACTED]
-- [[Full Configuration Example]] - `contains` [EXTRACTED]
-- [[SSH Config]] - `contains` [EXTRACTED]
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions
+#graphify/document #graphify/EXTRACTED #community/Community_538

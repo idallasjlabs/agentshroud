@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "rationale"
-community: "graphify reference: extra exports and benchmark (3)"
+community: "Community 334"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark_3
+  - community/Community_334
 ---
 
 # ContextGuard False Positive Collaborator Block
@@ -14,4 +14,4 @@ tags:
 - [[PII Sanitizer Blocking Legitimate Content]] - `semantically_similar_to` [INFERRED]
 - [[TELEGRAM_ISSUES]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_334

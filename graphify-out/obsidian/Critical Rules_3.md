@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
+source_file: ".agents/skills/eightd-root-cause-analysis/SKILL.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester"
-location: "L376"
+community: "Community 790"
+location: "L481"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester
+  - community/Community_790
 ---
 
 # Critical Rules
 
 ## Connections
-- [[AgentShroud Red Team Adversarial Tester_1]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester
+#graphify/document #graphify/EXTRACTED #community/Community_790

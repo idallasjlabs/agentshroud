@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/query.md"
 type: "rationale"
-community: "hermes/skills/i-kanban/SKILL.md"
+community: "Community 1454"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/hermes/skills/i-kanban/SKILLmd
+  - community/Community_1454
 ---
 
 # Constrained query-vocabulary expansion
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[save-result Feedback Loop]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/hermes/skills/i-kanban/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/Community_1454

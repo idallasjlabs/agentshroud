@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
 type: "document"
-community: "OpenClaw Control UI Pairing Instructions"
+community: "Community 731"
 location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Control_UI_Pairing_Instructions
+  - community/Community_731
 ---
 
 # ConsentFramework.add_to_whitelist(command) / remove_from_whitelist(command)
 
 ## Connections
-- [[Function Details_39]] - `contains` [EXTRACTED]
+- [[Function Details_31]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Control_UI_Pairing_Instructions
+#graphify/document #graphify/EXTRACTED #community/Community_731

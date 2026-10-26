@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/security-assessment-v0.8.0.md"
 type: "document"
-community: "Skill: Create PR with Pre-Flight Audit (CRPR)"
+community: "Community 627"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
+  - community/Community_627
 ---
 
 # Critical Findings
@@ -16,4 +16,4 @@ tags:
 - [[CRITICAL-1 `history.env` committed to git with live Telegram credentials]] - `contains` [EXTRACTED]
 - [[CRITICAL-2 No request body size limits on API models]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
+#graphify/document #graphify/EXTRACTED #community/Community_627

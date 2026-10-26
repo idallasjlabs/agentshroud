@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "concept"
-community: "AgentShroud™ CVE Mitigation Matrix"
+community: "Community 215"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_CVE_Mitigation_Matrix
+  - community/Community_215
 ---
 
 # Container-Image CVE Domain (our own images)
@@ -15,4 +15,4 @@ tags:
 - [[Fresh-DB vs Cached-DB Trivy Verification]] - `rationale_for` [EXTRACTED]
 - [[slsa-verifier From-Source Dependency Override]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix
+#graphify/concept #graphify/EXTRACTED #community/Community_215

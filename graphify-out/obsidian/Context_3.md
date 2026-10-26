@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
+source_file: "docs/architecture/adr/ADR-003-two-network-container-isolation.md"
 type: "document"
-community: "AgentShroud Color Palette"
-location: "L8"
+community: "Community 857"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Color_Palette
+  - community/Community_857
 ---
 
 # Context
 
 ## Connections
-- [[ADR-009 Enforce-by-Default Security Philosophy]] - `contains` [EXTRACTED]
+- [[ADR-003 Two-Network Container Isolation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Color_Palette
+#graphify/document #graphify/EXTRACTED #community/Community_857

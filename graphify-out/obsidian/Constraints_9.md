@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pr/SKILL.md"
+source_file: "docs/planning/redteam/01-enforce-by-default.md"
 type: "document"
-community: "test_multi_host_test.py"
-location: "L48"
+community: "Community 721"
+location: "L144"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_multi_host_testpy
+  - community/Community_721
 ---
 
 # Constraints
 
 ## Connections
-- [[Skill Pull Request (PR) Generator_2]] - `contains` [EXTRACTED]
+- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_multi_host_testpy
+#graphify/document #graphify/EXTRACTED #community/Community_721

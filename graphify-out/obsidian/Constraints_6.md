@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/00-information-disclosure.md"
+source_file: "docker/config/hermes/skills/i-pr/SKILL.md"
 type: "document"
-community: "MCPPermissionManager (2) (2)"
-location: "L60"
+community: "Community 962"
+location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2_2
+  - community/Community_962
 ---
 
 # Constraints
 
 ## Connections
-- [[Add information filtering to prevent agent self-disclosure]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCPPermissionManager_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_962

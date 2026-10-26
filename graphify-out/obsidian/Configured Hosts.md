@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "AgentShroud Audit Specification"
+community: "Community 218"
 location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Audit_Specification
+  - community/Community_218
 ---
 
 # Configured Hosts
@@ -15,4 +15,4 @@ tags:
 - [[Raspberry Pi (pi-dev)]] - `contains` [EXTRACTED]
 - [[SSH Configuration Details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification
+#graphify/document #graphify/EXTRACTED #community/Community_218

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
+source_file: ".cursor/agents/eightd-root-cause-analysis.md"
 type: "document"
-community: "TestHandleEvent"
-location: "L142"
+community: "Community 786"
+location: "L475"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestHandleEvent
+  - community/Community_786
 ---
 
 # Critical Rules
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor_1]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestHandleEvent
+#graphify/document #graphify/EXTRACTED #community/Community_786

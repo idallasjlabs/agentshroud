@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "A2AMethod"
+community: "Community 381"
 location: "L107"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/A2AMethod
+  - community/Community_381
 ---
 
 # CredentialValidator
 
 ## Connections
-- [[dot-register_validator()]] - `references` [EXTRACTED]
-- [[dot-validate()]] - `method` [EXTRACTED]
+- [[.register_validator()]] - `references` [EXTRACTED]
+- [[.validate()]] - `method` [EXTRACTED]
 - [[Base class for credential validators.]] - `rationale_for` [EXTRACTED]
-- [[CredentialRotationPolicy]] - `uses` [INFERRED]
-- [[KeyRotationConfig]] - `uses` [INFERRED]
+- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
+- [[KeyRotationConfig_1]] - `uses` [INFERRED]
 - [[MockValidator]] - `uses` [INFERRED]
 - [[TestCheckAndRotateDisabled]] - `uses` [INFERRED]
 - [[TestCredentialInfo]] - `uses` [INFERRED]
@@ -34,4 +34,4 @@ tags:
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]
 - [[test_key_rotation_internals.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/A2AMethod
+#graphify/code #graphify/INFERRED #community/Community_381

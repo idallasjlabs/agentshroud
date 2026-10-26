@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "auth.py (2)"
+community: "Community 807"
 location: "L220"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy_2
+  - community/Community_807
 ---
 
 # Credential Isolation — Gateway op-proxy (ACTIVE)
@@ -18,6 +18,6 @@ tags:
 - [[Credential flow]] - `contains` [EXTRACTED]
 - [[How to retrieve a credential]] - `contains` [EXTRACTED]
 - [[Known working credentials]] - `contains` [EXTRACTED]
-- [[What NEVER to do]] - `contains` [EXTRACTED]
+- [[What NEVER to do_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy_2
+#graphify/document #graphify/EXTRACTED #community/Community_807

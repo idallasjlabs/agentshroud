@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/01-enforce-by-default.md"
+source_file: ".opencode/agents/i-pr.md"
 type: "document"
-community: "Morning Checklist (5 minutes)"
-location: "L144"
+community: "Community 1963"
+location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Morning_Checklist_5_minutes
+  - community/Community_1963
 ---
 
 # Constraints
 
 ## Connections
-- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Morning_Checklist_5_minutes
+#graphify/document #graphify/EXTRACTED #community/Community_1963

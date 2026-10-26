@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/GATEWAY_URL.md"
+source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
 type: "document"
-community: "MCP AWS Profile Configuration README"
-location: "L34"
+community: "Community 536"
+location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_AWS_Profile_Configuration_README
+  - community/Community_536
 ---
 
 # Configuration
 
 ## Connections
-- [[GATEWAY_URL_1]] - `contains` [EXTRACTED]
+- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_README
+#graphify/document #graphify/EXTRACTED #community/Community_536

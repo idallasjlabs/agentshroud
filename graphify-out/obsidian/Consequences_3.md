@@ -1,21 +1,20 @@
 ---
-source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
+source_file: "docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md"
 type: "document"
-community: "Apple Reminders CLI (remindctl)"
-location: "L63"
+community: "Community 894"
+location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Reminders_CLI_remindctl
+  - community/Community_894
 ---
 
 # Consequences
 
 ## Connections
-- [[ADR-001 Transparent Proxy vs Agent Modification]] - `contains` [EXTRACTED]
-- [[Mitigation Strategies]] - `contains` [EXTRACTED]
-- [[Negative Consequences_2]] - `contains` [EXTRACTED]
-- [[Positive Consequences_2]] - `contains` [EXTRACTED]
-- [[Risk Assessment]] - `contains` [EXTRACTED]
+- [[ADR-004 API Keys Never in Agent Container]] - `contains` [EXTRACTED]
+- [[Mitigation_1]] - `contains` [EXTRACTED]
+- [[Negative Consequences_3]] - `contains` [EXTRACTED]
+- [[Positive Consequences_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Reminders_CLI_remindctl
+#graphify/document #graphify/EXTRACTED #community/Community_894

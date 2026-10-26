@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TestInboundPipelineOnGetUpdates"
+community: "Community 4"
 location: "L2280"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestInboundPipelineOnGetUpdates
+  - community/Community_4
 ---
 
 # Cross-user activity probes should return privacy-safe collaborator guidance.
 
 ## Connections
-- [[dot-test_collaborator_who_else_uses_query_gets_privacy_safe_info()]] - `rationale_for` [EXTRACTED]
+- [[.test_collaborator_who_else_uses_query_gets_privacy_safe_info()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates
+#graphify/rationale #graphify/EXTRACTED #community/Community_4

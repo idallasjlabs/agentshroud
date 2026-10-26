@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "egress_retry.py"
+community: "Community 225"
 location: "L112"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/egress_retrypy
+  - community/Community_225
 ---
 
 # ContainerInfo
 
 ## Connections
-- [[dot-ps()_1]] - `references` [EXTRACTED]
-- [[ContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo_3]] - `uses` [INFERRED]
+- [[.ps()_1]] - `references` [EXTRACTED]
+- [[ContainerEngine_2]] - `uses` [INFERRED]
+- [[ContainerInfo_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/egress_retrypy
+#graphify/code #graphify/INFERRED #community/Community_225

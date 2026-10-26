@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "Community 114"
 location: "L358"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Community_114
 ---
 
 # Create middleware manager with session isolation.
 
 ## Connections
-- [[dot-middleware_manager()]] - `rationale_for` [EXTRACTED]
+- [[.middleware_manager()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_114

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "concept"
-community: "First Time Setup (2)"
+community: "Community 400"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/First_Time_Setup_2
+  - community/Community_400
 ---
 
 # Credential Isolation Architecture
@@ -16,4 +16,4 @@ tags:
 - [[agentshroud-ieee-paper]] - `references` [EXTRACTED]
 - [[v0.8.0 Watchtower — Security Fixes + Module Wiring]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/First_Time_Setup_2
+#graphify/concept #graphify/EXTRACTED #community/Community_400

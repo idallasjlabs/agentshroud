@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "Community 143"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Community_143
 ---
 
 # Create session from dictionary.
 
 ## Connections
-- [[dot-from_dict()_1]] - `rationale_for` [EXTRACTED]
+- [[.from_dict()_11]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_143

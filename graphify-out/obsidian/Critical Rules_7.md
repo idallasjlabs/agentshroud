@@ -1,12 +1,12 @@
 ---
-source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
+source_file: ".cursor/agents/sec-defense.md"
 type: "document"
-community: "Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)"
-location: "L142"
+community: "Community 1312"
+location: "L144"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary
+  - community/Community_1312
 ---
 
 # Critical Rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Blue Team Security Auditor_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary
+#graphify/document #graphify/EXTRACTED #community/Community_1312

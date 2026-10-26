@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "_make_proxy()"
+community: "Community 7"
 location: "L126"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_7
 ---
 
 # Create a new ledger entry          Args:             source: Source identifier (
 
 ## Connections
-- [[dot-record()_2]] - `rationale_for` [EXTRACTED]
+- [[.record()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-crpr/SKILL.md"
 type: "document"
-community: "Test-Driven Development default (Red-Green-Refactor)"
+community: "Community 1575"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_default_Red-Green-Refactor
+  - community/Community_1575
 ---
 
 # Create PR with Pre-Flight Audit (CRPR) Skill
 
-#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_default_Red-Green-Refactor
+#graphify/document #graphify/EXTRACTED #community/Community_1575

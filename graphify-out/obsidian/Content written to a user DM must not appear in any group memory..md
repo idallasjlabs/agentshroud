@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "KillSwitchMonitor (5)"
+community: "Community 60"
 location: "L158"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_5
+  - community/Community_60
 ---
 
 # Content written to a user DM must not appear in any group memory.
 
 ## Connections
-- [[dot-test_user_dm_write_invisible_from_group()]] - `rationale_for` [EXTRACTED]
+- [[.test_user_dm_write_invisible_from_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor_5
+#graphify/rationale #graphify/EXTRACTED #community/Community_60

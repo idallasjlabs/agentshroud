@@ -1,13 +1,13 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "document"
-community: "Vulcan (i-vulcan skill, script approver)"
+community: "Community 1677"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Vulcan_i-vulcan_skill_script_approver
+  - community/Community_1677
 ---
 
 # Cron: Monthly Chaos Engineering Drill
 
-#graphify/document #graphify/EXTRACTED #community/Vulcan_i-vulcan_skill_script_approver
+#graphify/document #graphify/EXTRACTED #community/Community_1677

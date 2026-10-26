@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
+source_file: ".agents/agents/sec-defense.md"
 type: "document"
-community: "AgentShroud Phase 3 - Quick Start Guide"
-location: "L578"
+community: "Community 1279"
+location: "L144"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
+  - community/Community_1279
 ---
 
 # Critical Rules
 
 ## Connections
-- [[8D Root Cause Analysis — Data-Driven Control System Investigation_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_1279

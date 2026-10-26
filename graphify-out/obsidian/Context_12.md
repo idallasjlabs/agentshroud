@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md"
+source_file: "docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md"
 type: "document"
-community: "Quick Reference"
-location: "L6"
+community: "Community 850"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference
+  - community/Community_850
 ---
 
 # Context
 
 ## Connections
-- [[ADR-004 API Keys Never in Agent Container]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference
+#graphify/document #graphify/EXTRACTED #community/Community_850

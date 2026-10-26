@@ -1,17 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "alert_dispatcher.py"
-location: "L92"
+community: "Community 408"
+location: "L148"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/alert_dispatcherpy
+  - community/Community_408
 ---
 
 # Configuration
 
 ## Connections
-- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
+- [[Constructor dependencies (dependency injection)]] - `contains` [EXTRACTED]
+- [[Environment variables]] - `contains` [EXTRACTED]
+- [[Header pass-through policy]] - `contains` [EXTRACTED]
+- [[Retry policy (`_forward_request`)]] - `contains` [EXTRACTED]
+- [[llm_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy
+#graphify/document #graphify/EXTRACTED #community/Community_408

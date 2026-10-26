@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "Community 7"
 location: "L174"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # Create a PIISanitizer instance for testing
 
 ## Connections
-- [[sanitizer()_2]] - `rationale_for` [EXTRACTED]
+- [[sanitizer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

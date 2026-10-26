@@ -1,17 +1,17 @@
 ---
-source_file: "docs/TEAM.md"
+source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Skill: MCP Doctor (MCPM-DOCTOR) (3)"
-location: "L149"
+community: "Community 2062"
+location: "L693"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR_3
+  - community/Community_2062
 ---
 
 # Container Architecture
 
 ## Connections
-- [[Development Environment_1]] - `contains` [EXTRACTED]
+- [[10. Infrastructure & Runtime]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR_3
+#graphify/document #graphify/EXTRACTED #community/Community_2062

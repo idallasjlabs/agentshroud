@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "Community 7"
 location: "L130"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # Create an initialized in-memory ledger for testing      Yields the ledger, then
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ledger()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

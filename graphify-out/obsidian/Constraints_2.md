@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/03-session-isolation.md"
+source_file: ".cursor/agents/i-pr.md"
 type: "document"
-community: "telegram_proxy.py"
-location: "L244"
+community: "Community 1957"
+location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/Community_1957
 ---
 
 # Constraints
 
 ## Connections
-- [[Implement per-user session isolation using Telegram user ID]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/document #graphify/EXTRACTED #community/Community_1957

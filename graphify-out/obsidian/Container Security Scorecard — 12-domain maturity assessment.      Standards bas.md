@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "AlertDispatcher (2)"
+community: "Community 51"
 location: "L2170"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/Community_51
 ---
 
 # Container Security Scorecard — 12-domain maturity assessment.      Standards bas
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_security_scorecard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_51

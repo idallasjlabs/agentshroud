@@ -1,17 +1,18 @@
 ---
-source_file: "skills/openclaw/bear-notes/SKILL.md"
+source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
 type: "document"
-community: "Daedalus — Concept Illustrator (2)"
-location: "L85"
+community: "Community 617"
+location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator_2
+  - community/Community_617
 ---
 
 # Configuration
 
 ## Connections
-- [[Bear Notes]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_2]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator_2
+#graphify/document #graphify/EXTRACTED #community/Community_617

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "Mode B — Comprehensive review sweep (3)"
+community: "Community 532"
 location: "L20"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Mode_B__Comprehensive_review_sweep_3
+  - community/Community_532
 ---
 
 # Create a PromptProtection instance for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[prompt_protection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Mode_B__Comprehensive_review_sweep_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_532

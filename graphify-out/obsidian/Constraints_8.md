@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pr/SKILL.md"
+source_file: "docs/planning/redteam/00-information-disclosure.md"
 type: "document"
-community: "Claude Code (claude-sonnet-4-6) — Lead Engineer / Primary Developer"
-location: "L48"
+community: "Community 836"
+location: "L60"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Claude_Code_claude-sonnet-4-6__Lead_Engineer_/_Primary_Developer
+  - community/Community_836
 ---
 
 # Constraints
 
 ## Connections
-- [[Skill Pull Request (PR) Generator_1]] - `contains` [EXTRACTED]
+- [[Add information filtering to prevent agent self-disclosure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Claude_Code_claude-sonnet-4-6__Lead_Engineer_/_Primary_Developer
+#graphify/document #graphify/EXTRACTED #community/Community_836

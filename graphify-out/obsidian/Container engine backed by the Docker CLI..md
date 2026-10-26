@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/docker_engine.py"
 type: "rationale"
-community: "Approval Queue (human-in-the-loop)"
+community: "Community 372"
 location: "L20"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Queue_human-in-the-loop
+  - community/Community_372
 ---
 
 # Container engine backed by the Docker CLI.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DockerEngine]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop
+#graphify/rationale #graphify/EXTRACTED #community/Community_372

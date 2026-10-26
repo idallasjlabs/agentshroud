@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/deployment-procedure.md"
+source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
-location: "L598"
+community: "Community 258"
+location: "L234"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/Community_258
 ---
 
 # Container Won't Start
 
 ## Connections
-- [[Troubleshooting Common Issues]] - `contains` [EXTRACTED]
+- [[Troubleshooting_25]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_258

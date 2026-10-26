@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/agentic-os.md"
+source_file: "docs/TEAM.md"
 type: "document"
-community: "PipelineAction"
-location: "L693"
+community: "Community 503"
+location: "L149"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/Community_503
 ---
 
 # Container Architecture
 
 ## Connections
-- [[10. Infrastructure & Runtime]] - `contains` [EXTRACTED]
+- [[Development Environment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PipelineAction
+#graphify/document #graphify/EXTRACTED #community/Community_503

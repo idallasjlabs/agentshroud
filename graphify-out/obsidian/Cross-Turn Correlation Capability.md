@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/attack-teardowns-rovoblast-cross-turn.md"
 type: "concept"
-community: "Security Module Inventory"
+community: "Community 917"
 location: "lines 39-49"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Security_Module_Inventory
+  - community/Community_917
 ---
 
 # Cross-Turn Correlation Capability
@@ -18,4 +18,4 @@ tags:
 - [[context_guard.py Provenance Tagging (ContextSegment)]] - `implements` [EXTRACTED]
 - [[multi_turn_tracker.py  SubagentMonitor]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Security_Module_Inventory
+#graphify/concept #graphify/EXTRACTED #community/Community_917

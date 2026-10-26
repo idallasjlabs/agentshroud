@@ -1,17 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
 type: "document"
-community: "Detailed Profiles"
-location: "L83"
+community: "Community 409"
+location: "L223"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Detailed_Profiles
+  - community/Community_409
 ---
 
 # Configuration
 
 ## Connections
-- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
+- [[Guard Presence and Startup Behavior]] - `contains` [EXTRACTED]
+- [[Key Thresholds]] - `contains` [EXTRACTED]
+- [[Monitor vs. Enforce Mode]] - `contains` [EXTRACTED]
+- [[Owner Exemption]] - `contains` [EXTRACTED]
+- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Detailed_Profiles
+#graphify/document #graphify/EXTRACTED #community/Community_409

@@ -1,20 +1,20 @@
 ---
-source_file: "docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md"
+source_file: "docs/architecture/adr/ADR-003-two-network-container-isolation.md"
 type: "document"
-community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
-location: "L38"
+community: "Community 857"
+location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
+  - community/Community_857
 ---
 
 # Consequences
 
 ## Connections
-- [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - `contains` [EXTRACTED]
-- [[Implementation Details]] - `contains` [EXTRACTED]
-- [[Negative Consequences_1]] - `contains` [EXTRACTED]
-- [[Positive Consequences_1]] - `contains` [EXTRACTED]
+- [[ADR-003 Two-Network Container Isolation]] - `contains` [EXTRACTED]
+- [[Mitigation]] - `contains` [EXTRACTED]
+- [[Negative Consequences_2]] - `contains` [EXTRACTED]
+- [[Positive Consequences_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
+#graphify/document #graphify/EXTRACTED #community/Community_857

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/scripts/README.md"
+source_file: "examples/docker-commands.md"
 type: "document"
-community: "iCloud Services (2)"
-location: "L195"
+community: "Community 656"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services_2
+  - community/Community_656
 ---
 
-# Container Management
+# Container management
 
 ## Connections
-- [[Direct Docker Commands]] - `contains` [EXTRACTED]
+- [[Docker Commands Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services_2
+#graphify/document #graphify/EXTRACTED #community/Community_656

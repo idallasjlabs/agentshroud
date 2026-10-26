@@ -1,17 +1,17 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "TestMultilingualInjection"
+community: "Community 213"
 location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMultilingualInjection
+  - community/Community_213
 ---
 
 # Container Stack
 
 ## Connections
-- [[Architecture_4]] - `contains` [EXTRACTED]
+- [[Architecture_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMultilingualInjection
+#graphify/document #graphify/EXTRACTED #community/Community_213

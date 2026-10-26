@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
+source_file: ".agents/skills/i-bs/SKILL.md"
 type: "document"
-community: "model_usage.py"
-location: "L12"
+community: "Community 483"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/model_usagepy
+  - community/Community_483
 ---
 
 # Core Discipline: Audit → Define → Apply → Enforce
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/model_usagepy
+#graphify/document #graphify/EXTRACTED #community/Community_483

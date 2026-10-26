@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-bs/SKILL.md"
+source_file: ".agents/agents/i-bs.md"
 type: "document"
-community: "TestBuildCollaboratorSafeInfoResponse"
-location: "L12"
+community: "Community 1009"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestBuildCollaboratorSafeInfoResponse
+  - community/Community_1009
 ---
 
 # Core Discipline: Audit → Define → Apply → Enforce
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse
+#graphify/document #graphify/EXTRACTED #community/Community_1009

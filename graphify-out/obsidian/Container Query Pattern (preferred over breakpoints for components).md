@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-ui/SKILL.md"
+source_file: ".agents/agents/i-ui.md"
 type: "document"
-community: "Mode A — Single task"
-location: "L252"
+community: "Community 515"
+location: "L255"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/Community_515
 ---
 
 # Container Query Pattern (preferred over breakpoints for components)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Responsive Layout System]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/document #graphify/EXTRACTED #community/Community_515

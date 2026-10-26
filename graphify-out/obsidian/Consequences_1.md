@@ -1,20 +1,20 @@
 ---
-source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
+source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
 type: "document"
-community: "AgentShroud Color Palette"
-location: "L73"
+community: "Community 856"
+location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Color_Palette
+  - community/Community_856
 ---
 
 # Consequences
 
 ## Connections
-- [[ADR-009 Enforce-by-Default Security Philosophy]] - `contains` [EXTRACTED]
-- [[Migration from ADR-002]] - `contains` [EXTRACTED]
-- [[Negative Consequences]] - `contains` [EXTRACTED]
-- [[Positive Consequences]] - `contains` [EXTRACTED]
+- [[ADR-002 Default-Allow Security Philosophy]] - `contains` [EXTRACTED]
+- [[Mitigation Strategies_1]] - `contains` [EXTRACTED]
+- [[Negative Consequences_1]] - `contains` [EXTRACTED]
+- [[Positive Consequences_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Color_Palette
+#graphify/document #graphify/EXTRACTED #community/Community_856

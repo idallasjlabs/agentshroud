@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "mcp_inspector.py"
+community: "Community 406"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_inspectorpy
+  - community/Community_406
 ---
 
 # Current Execution Tracker (2026-03-14)
@@ -17,4 +17,4 @@ tags:
 - [[Live tracker files]] - `contains` [EXTRACTED]
 - [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy
+#graphify/document #graphify/EXTRACTED #community/Community_406

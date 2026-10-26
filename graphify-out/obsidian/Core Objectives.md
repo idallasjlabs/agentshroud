@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "AuditExporter"
+community: "Community 195"
 location: "L368"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/Community_195
 ---
 
 # Core Objectives
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Why AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditExporter
+#graphify/document #graphify/EXTRACTED #community/Community_195

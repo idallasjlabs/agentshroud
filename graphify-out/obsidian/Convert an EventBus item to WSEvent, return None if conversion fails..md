@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "rationale"
-community: "_coerce_to_ws_event()"
+community: "Community 169"
 location: "L124"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_coerce_to_ws_event
+  - community/Community_169
 ---
 
 # Convert an EventBus item to WSEvent, return None if conversion fails.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_coerce_to_ws_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_coerce_to_ws_event
+#graphify/rationale #graphify/EXTRACTED #community/Community_169

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
+source_file: ".github/agents/i-sec-offense.agent.md"
 type: "document"
-community: "Phase 1 — Raw Collection"
-location: "L323"
+community: "Community 1075"
+location: "L328"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_1__Raw_Collection
+  - community/Community_1075
 ---
 
 # Coverage Requirements
 
 ## Connections
-- [[Writing Exploit Tests_2]] - `contains` [EXTRACTED]
+- [[Writing Exploit Tests_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection
+#graphify/document #graphify/EXTRACTED #community/Community_1075

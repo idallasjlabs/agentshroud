@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/04-security.md"
 type: "concept"
-community: "Distributed OpenClaw Node Architecture — Raspberry Pi 4"
+community: "Community 466"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
+  - community/Community_466
 ---
 
 # Credential Flow Diagram (op-proxy)
@@ -14,4 +14,4 @@ tags:
 - [[04-security]] - `conceptually_related_to` [EXTRACTED]
 - [[FR4 Data Confidentiality]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
+#graphify/concept #graphify/EXTRACTED #community/Community_466

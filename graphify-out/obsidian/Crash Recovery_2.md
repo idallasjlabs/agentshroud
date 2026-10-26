@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
 type: "document"
-community: "test_collaborator_tracker.py (2) (3)"
+community: "Community 482"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_2_3
+  - community/Community_482
 ---
 
 # Crash Recovery
@@ -20,6 +20,6 @@ tags:
 - [[Post-Recovery Verification]] - `contains` [EXTRACTED]
 - [[Recovery Procedures]] - `contains` [EXTRACTED]
 - [[Recurring Crashes]] - `contains` [EXTRACTED]
-- [[Related Notes_43]] - `contains` [EXTRACTED]
+- [[Related Notes_65]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_collaborator_trackerpy_2_3
+#graphify/document #graphify/EXTRACTED #community/Community_482

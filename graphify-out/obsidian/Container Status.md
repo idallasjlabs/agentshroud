@@ -1,18 +1,17 @@
 ---
-source_file: "docs/security/VERIFICATION_RESULTS.md"
+source_file: "examples/docker-commands.md"
 type: "document"
-community: "TestSecurityFeatures"
-location: "L97"
+community: "Community 656"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSecurityFeatures
+  - community/Community_656
 ---
 
-# Container Status
+# Container status
 
 ## Connections
-- [[OpenClaw Bot Logs (Recent)]] - `contains` [EXTRACTED]
-- [[Phase 3A3B Implementation Verification Results]] - `contains` [EXTRACTED]
+- [[Docker Commands Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSecurityFeatures
+#graphify/document #graphify/EXTRACTED #community/Community_656

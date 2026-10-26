@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/agentshroud-redteam/SKILL.md"
+source_file: ".agents/skills/sec-offense/SKILL.md"
 type: "document"
-community: "Test-Driven Development README"
+community: "Community 1120"
 location: "L323"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_README
+  - community/Community_1120
 ---
 
 # Coverage Requirements
 
 ## Connections
-- [[Writing Exploit Tests]] - `contains` [EXTRACTED]
+- [[Writing Exploit Tests_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README
+#graphify/document #graphify/EXTRACTED #community/Community_1120

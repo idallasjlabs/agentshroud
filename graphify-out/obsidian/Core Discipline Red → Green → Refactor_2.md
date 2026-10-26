@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tdd/SKILL.md"
+source_file: ".cursor/agents/i-tdd.md"
 type: "document"
-community: "auth.py"
-location: "L11"
+community: "Community 1498"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy
+  - community/Community_1498
 ---
 
 # Core Discipline: Red → Green → Refactor
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Test-Driven Development (TDD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy
+#graphify/document #graphify/EXTRACTED #community/Community_1498

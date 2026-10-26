@@ -1,21 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
+source_file: "docs/architecture/WORKSPACE_DECISION.md"
 type: "document"
-community: "AgentShroud Development Team — Agile Structure"
-location: "L223"
+community: "Community 179"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Development_Team__Agile_Structure
+  - community/Community_179
 ---
 
 # Configuration
 
 ## Connections
-- [[Guard Presence and Startup Behavior]] - `contains` [EXTRACTED]
-- [[Key Thresholds]] - `contains` [EXTRACTED]
-- [[Monitor vs. Enforce Mode]] - `contains` [EXTRACTED]
-- [[Owner Exemption]] - `contains` [EXTRACTED]
-- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
+- [[Current Setup (Kept)]] - `contains` [EXTRACTED]
+- [[Workspace Configuration Decision]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Development_Team__Agile_Structure
+#graphify/document #graphify/EXTRACTED #community/Community_179
