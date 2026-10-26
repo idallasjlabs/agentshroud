@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "DNSFilterConfig"
-location: "L730"
+community: "Community 78"
+location: "L734"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Community_78
 ---
 
 # agentshroud.yaml must define all three lab hosts in ssh.hosts as agentshroud-bot
 
 ## Connections
-- [[dot-test_gateway_yaml_ssh_hosts_cover_all_lab_hosts()]] - `rationale_for` [EXTRACTED]
+- [[.test_gateway_yaml_ssh_hosts_cover_all_lab_hosts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_78

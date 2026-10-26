@@ -1,14 +1,17 @@
 ---
-source_file: "gateway/pyproject.toml"
-type: "code"
-community: "Test Augmentation Specialist"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
+type: "document"
+community: "Community 580"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Test_Augmentation_Specialist
+  - community/Community_580
 ---
 
-# agentshroud-gateway
+# agentshroud-gateway.md
 
-#graphify/code #graphify/EXTRACTED #community/Test_Augmentation_Specialist
+## Connections
+- [[agentshroud-gateway_1]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Community_580

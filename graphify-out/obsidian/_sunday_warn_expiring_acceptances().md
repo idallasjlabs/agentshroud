@@ -1,20 +1,19 @@
 ---
 source_file: "scripts/lib/sunday-scan.sh"
 type: "code"
-community: "run_multi_host"
+community: "Community 869"
 location: "L149"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run_multi_host
+  - community/Community_869
 ---
 
 # _sunday_warn_expiring_acceptances()
 
 ## Connections
-- [[Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)]] - `references` [EXTRACTED]
 - [[sunday-scan.sh]] - `defines` [EXTRACTED]
 - [[sunday_run_scan_gate()]] - `calls` [EXTRACTED]
-- [[warn()_4]] - `calls` [EXTRACTED]
+- [[warn()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run_multi_host
+#graphify/code #graphify/EXTRACTED #community/Community_869

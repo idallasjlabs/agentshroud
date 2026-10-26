@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "UserSessionManager (2) (2)"
+community: "Community 47"
 location: "L779"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2_2
+  - community/Community_47
 ---
 
 # _sentences_from_deltas()
@@ -20,4 +20,4 @@ tags:
 - [[test_sentences_from_deltas_single_delta_full_sentence()]] - `calls` [EXTRACTED]
 - [[test_sentences_from_deltas_splits_on_boundaries()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_2
+#graphify/code #graphify/EXTRACTED #community/Community_47

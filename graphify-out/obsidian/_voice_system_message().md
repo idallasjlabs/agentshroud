@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "ProgressiveLockdown"
+community: "Community 1006"
 location: "L678"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/Community_1006
 ---
 
 # _voice_system_message()
@@ -17,4 +17,4 @@ tags:
 - [[server.py]] - `contains` [EXTRACTED]
 - [[voice_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/code #graphify/EXTRACTED #community/Community_1006

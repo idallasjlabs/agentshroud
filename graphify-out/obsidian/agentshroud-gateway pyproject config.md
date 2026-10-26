@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/pyproject.toml"
 type: "code"
-community: "AgentShroud Incident Response Plan (11)"
+community: "Community 1399"
 location: "6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan_11
+  - community/Community_1399
 ---
 
 # agentshroud-gateway pyproject config
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Gateway Package (__init__.py)]] - `shares_data_with` [EXTRACTED]
 - [[Gateway OpenAPI Spec]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan_11
+#graphify/code #graphify/EXTRACTED #community/Community_1399

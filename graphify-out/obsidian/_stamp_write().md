@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/security-scheduler.sh"
 type: "code"
-community: "Red Team Assessment v1.2.0"
+community: "Community 814"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Red_Team_Assessment_v120
+  - community/Community_814
 ---
 
 # _stamp_write()
@@ -15,4 +15,4 @@ tags:
 - [[security-scheduler.sh]] - `defines` [EXTRACTED]
 - [[security-scheduler.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Red_Team_Assessment_v120
+#graphify/code #graphify/EXTRACTED #community/Community_814

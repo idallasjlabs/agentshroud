@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/proxy/anthropic_openai_translator.py"
+source_file: "gateway/proxy/anthropic_openai_sse_translator.py"
 type: "code"
-community: "Function Details (8)"
-location: "L31"
+community: "Community 361"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Function_Details_8
+  - community/Community_361
 ---
 
 # _random_msg_id()
 
 ## Connections
-- [[anthropic_openai_translator.py]] - `contains` [EXTRACTED]
-- [[anthropic_to_openai_request()]] - `calls` [EXTRACTED]
-- [[anthropic_to_openai_response()]] - `calls` [EXTRACTED]
-- [[openai_to_anthropic_response()]] - `calls` [EXTRACTED]
+- [[anthropic_openai_sse_translator.py]] - `contains` [EXTRACTED]
+- [[translate_openai_sse_to_anthropic()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Function_Details_8
+#graphify/code #graphify/EXTRACTED #community/Community_361

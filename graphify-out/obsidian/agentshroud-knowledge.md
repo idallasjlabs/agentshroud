@@ -1,14 +1,14 @@
 ---
 source_file: "docs/agentshroud-knowledge.md"
 type: "document"
-community: "MiddlewareManager (2) (3)"
+community: "Community 1734"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2_3
+  - community/Community_1734
 ---
 
 # agentshroud-knowledge.md
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_2_3
+#graphify/document #graphify/EXTRACTED #community/Community_1734

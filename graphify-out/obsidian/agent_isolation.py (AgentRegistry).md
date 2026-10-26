@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "KillSwitchMonitor (5)"
+community: "Community 60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_5
+  - community/Community_60
 ---
 
 # agent_isolation.py (AgentRegistry)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_group_isolation.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_5
+#graphify/code #graphify/EXTRACTED #community/Community_60

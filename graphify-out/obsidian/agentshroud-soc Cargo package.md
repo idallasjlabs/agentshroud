@@ -1,13 +1,13 @@
 ---
 source_file: "cli/Cargo.toml"
 type: "document"
-community: "docker-compose.sidecar.yml — Sidecar Mode Deployment"
+community: "Community 1660"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker-composesidecaryml__Sidecar_Mode_Deployment
+  - community/Community_1660
 ---
 
 # agentshroud-soc Cargo package
 
-#graphify/document #graphify/EXTRACTED #community/docker-composesidecaryml__Sidecar_Mode_Deployment
+#graphify/document #graphify/EXTRACTED #community/Community_1660

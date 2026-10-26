@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: ".mcp.json"
+community: "Community 400"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcpjson
+  - community/Community_400
 ---
 
 # agentshroud-ieee-paper.md
@@ -37,4 +37,4 @@ tags:
 - [[Transparent Proxy Architecture]] - `references` [EXTRACTED]
 - [[Zetherion AI Platform]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Community_400

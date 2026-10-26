@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "Community 6"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/Community_6
 ---
 
 # _verify_bearer()
 
 ## Connections
-- [[dot-test_empty_token_or_config()]] - `calls` [EXTRACTED]
-- [[dot-test_match()]] - `calls` [EXTRACTED]
-- [[dot-test_mismatch()]] - `calls` [EXTRACTED]
+- [[.test_empty_token_or_config()]] - `calls` [EXTRACTED]
+- [[.test_match()]] - `calls` [EXTRACTED]
+- [[.test_mismatch()]] - `calls` [EXTRACTED]
 - [[Constant-time comparison against the gateway shared secret.]] - `rationale_for` [EXTRACTED]
 - [[_resolve_caller()]] - `calls` [EXTRACTED]
-- [[socauth.py]] - `contains` [EXTRACTED]
+- [[auth.py_1]] - `contains` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/Community_6

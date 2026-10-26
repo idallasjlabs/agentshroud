@@ -1,27 +1,28 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
 type: "document"
-community: "egress_config.py"
+community: "Community 674"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_configpy
+  - community/Community_674
 ---
 
 # agent_isolation.py
 
 ## Connections
 - [[ContainerConfig Defaults]] - `contains` [EXTRACTED]
-- [[Environment Variables_13]] - `contains` [EXTRACTED]
-- [[Function Details_28]] - `contains` [EXTRACTED]
+- [[Environment Variables_5]] - `contains` [EXTRACTED]
+- [[Function Details_26]] - `contains` [EXTRACTED]
+- [[Integration Notes]] - `contains` [EXTRACTED]
 - [[Integration Testing]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_30]] - `contains` [EXTRACTED]
-- [[Mode Enforce vs Monitor_9]] - `contains` [EXTRACTED]
-- [[Purpose_128]] - `contains` [EXTRACTED]
-- [[Related_34]] - `contains` [EXTRACTED]
-- [[Responsibilities_32]] - `contains` [EXTRACTED]
-- [[Threat Model_18]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_29]] - `contains` [EXTRACTED]
+- [[Mode Enforce vs Monitor]] - `contains` [EXTRACTED]
+- [[Purpose_147]] - `contains` [EXTRACTED]
+- [[Related_33]] - `contains` [EXTRACTED]
+- [[Responsibilities_31]] - `contains` [EXTRACTED]
+- [[Threat Model_2]] - `contains` [EXTRACTED]
 - [[agent_isolation.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_configpy
+#graphify/document #graphify/EXTRACTED #community/Community_674

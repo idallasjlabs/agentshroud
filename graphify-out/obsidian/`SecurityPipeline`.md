@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
 type: "document"
-community: "MiddlewareManager (2) (2)"
+community: "Community 1556"
 location: "L169"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2_2
+  - community/Community_1556
 ---
 
 # `SecurityPipeline`
@@ -19,9 +19,9 @@ tags:
 - [[Layer-by-Layer Breakdown]] - `contains` [EXTRACTED]
 - [[Module Count by Layer]] - `contains` [EXTRACTED]
 - [[Monitor Mode]] - `contains` [EXTRACTED]
-- [[Overview_10]] - `contains` [EXTRACTED]
+- [[Overview_29]] - `contains` [EXTRACTED]
 - [[Proxy Layer]] - `contains` [EXTRACTED]
-- [[Related Notes_39]] - `contains` [EXTRACTED]
+- [[Related Notes_73]] - `contains` [EXTRACTED]
 - [[Security Pipeline Flow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_1556

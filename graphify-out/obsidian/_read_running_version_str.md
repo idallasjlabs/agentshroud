@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "_make_sanitizer()"
+community: "Community 118"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - graphify/INFERRED
+  - community/Community_118
 ---
 
 # _read_running_version_str
@@ -14,4 +14,4 @@ tags:
 - [[check-version-pins-parity.sh]] - `semantically_similar_to` [INFERRED]
 - [[versions.env]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/code #graphify/INFERRED #community/Community_118

@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "test_voice_latency_guard.py"
+community: "Community 70"
 location: "L410"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/Community_70
 ---
 
 # _submit_enhanced_high_risk()
 
 ## Connections
-- [[ApprovalRequest_2]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_3]] - `calls` [EXTRACTED]
 - [[EnhancedApprovalQueue_2]] - `references` [EXTRACTED]
 - [[test_enhanced_decide_missing_code_denied()]] - `calls` [EXTRACTED]
 - [[test_enhanced_decide_reject_no_mfa()]] - `calls` [EXTRACTED]
 - [[test_enhanced_decide_valid_code_approves()]] - `calls` [EXTRACTED]
 - [[test_mfa_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/code #graphify/EXTRACTED #community/Community_70

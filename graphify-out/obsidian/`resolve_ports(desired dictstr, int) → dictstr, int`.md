@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
 type: "document"
-community: "find-sessions.sh"
+community: "Community 1053"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/find-sessionssh
+  - community/Community_1053
 ---
 
 # `resolve_ports(desired: dict[str, int]) → dict[str, int]`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Key Class `PortManager`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/find-sessionssh
+#graphify/document #graphify/EXTRACTED #community/Community_1053

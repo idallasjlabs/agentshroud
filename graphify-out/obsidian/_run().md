@@ -1,25 +1,24 @@
 ---
-source_file: "gateway/tests/test_wazuh_watchdog.py"
+source_file: "gateway/tests/test_canary_deploy.py"
 type: "code"
-community: "test_wazuh_watchdog.py"
-location: "L51"
+community: "Community 728"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_wazuh_watchdogpy
+  - community/Community_728
 ---
 
 # _run()
 
 ## Connections
-- [[dot-test_all_daemons_dead_is_restarted_after_grace()]] - `calls` [EXTRACTED]
-- [[dot-test_daemons_it_does_not_require_are_ignored()]] - `calls` [EXTRACTED]
-- [[dot-test_failed_restart_is_reported_not_claimed()]] - `calls` [EXTRACTED]
-- [[dot-test_healthy_manager_is_left_alone()]] - `calls` [EXTRACTED]
-- [[dot-test_keeps_retrying_while_still_down()]] - `calls` [EXTRACTED]
-- [[dot-test_one_missing_daemon_is_enough()]] - `calls` [EXTRACTED]
-- [[dot-test_single_miss_within_grace_does_not_restart()]] - `calls` [EXTRACTED]
-- [[Path_32]] - `references` [EXTRACTED]
-- [[test_wazuh_watchdog.py]] - `contains` [EXTRACTED]
+- [[.test_dry_run_allowed_for_any_user()]] - `calls` [EXTRACTED]
+- [[.test_dry_run_changes_nothing_and_previews_actions()]] - `calls` [EXTRACTED]
+- [[.test_dry_run_targets_green_ports_not_blue()]] - `calls` [EXTRACTED]
+- [[.test_refuses_when_not_green_user()]] - `calls` [EXTRACTED]
+- [[.test_tag_fetch_uses_force()]] - `calls` [EXTRACTED]
+- [[.test_unknown_arg_rejected()]] - `calls` [EXTRACTED]
+- [[test_canary_deploy.py]] - `contains` [EXTRACTED]
+- [[test_help_prints_usage()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_wazuh_watchdogpy
+#graphify/code #graphify/EXTRACTED #community/Community_728

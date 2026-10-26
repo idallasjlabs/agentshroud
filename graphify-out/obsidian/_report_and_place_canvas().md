@@ -1,20 +1,20 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "graphify reference: extra exports and benchmark (2)"
+community: "Community 378"
 location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark_2
+  - community/Community_378
 ---
 
 # _report_and_place_canvas()
 
 ## Connections
 - [[_find_canvas()]] - `calls` [EXTRACTED]
-- [[lv_obj_t_1]] - `references` [EXTRACTED]
+- [[lv_obj_t]] - `references` [EXTRACTED]
 - [[ui_face.c]] - `contains` [EXTRACTED]
 - [[ui_face_init()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark_2
+#graphify/code #graphify/EXTRACTED #community/Community_378

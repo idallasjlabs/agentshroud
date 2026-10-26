@@ -1,19 +1,18 @@
 ---
-source_file: "docker/scripts/start-agentshroud.sh"
+source_file: "docker/bots/hermes/start.sh"
 type: "code"
-community: "Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)"
-location: "L628"
+community: "Community 1500"
+location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On
+  - community/Community_1500
 ---
 
 # _telegram_send()
 
 ## Connections
-- [[_telegram_bot_token()]] - `calls` [EXTRACTED]
-- [[start-agentshroud.sh]] - `defines` [EXTRACTED]
-- [[start-agentshroud.sh script]] - `calls` [EXTRACTED]
+- [[start.sh]] - `defines` [EXTRACTED]
+- [[start.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On
+#graphify/code #graphify/EXTRACTED #community/Community_1500

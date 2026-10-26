@@ -1,24 +1,18 @@
 ---
-source_file: "gateway/tests/test_canary_deploy.py"
+source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "log_sanitizer.py"
-location: "L18"
+community: "Community 261"
+location: "L230"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/log_sanitizerpy
+  - community/Community_261
 ---
 
 # _run()
 
 ## Connections
-- [[dot-test_dry_run_allowed_for_any_user()]] - `calls` [EXTRACTED]
-- [[dot-test_dry_run_changes_nothing_and_previews_actions()]] - `calls` [EXTRACTED]
-- [[dot-test_dry_run_targets_green_ports_not_blue()]] - `calls` [EXTRACTED]
-- [[dot-test_refuses_when_not_green_user()]] - `calls` [EXTRACTED]
-- [[dot-test_tag_fetch_uses_force()]] - `calls` [EXTRACTED]
-- [[dot-test_unknown_arg_rejected()]] - `calls` [EXTRACTED]
-- [[test_canary_deploy.py]] - `contains` [EXTRACTED]
-- [[test_help_prints_usage()]] - `calls` [EXTRACTED]
+- [[apply_remediation()]] - `calls` [EXTRACTED]
+- [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/log_sanitizerpy
+#graphify/code #graphify/EXTRACTED #community/Community_261

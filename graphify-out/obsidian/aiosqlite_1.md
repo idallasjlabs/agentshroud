@@ -1,22 +1,22 @@
 ---
 source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
 type: "document"
-community: "Phase 2 — Security Core (HMAC Auth + PII Sanitizer, HTTP CONNECT Proxy, Approval Queue)"
+community: "Community 1014"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_2__Security_Core_HMAC_Auth__PII_Sanitizer_HTTP_CONNECT_Proxy_Approval_Queue
+  - community/Community_1014
 ---
 
 # aiosqlite
 
 ## Connections
 - [[Database Files]] - `contains` [EXTRACTED]
-- [[Purpose_4]] - `contains` [EXTRACTED]
-- [[Related Notes_6]] - `contains` [EXTRACTED]
+- [[Purpose_184]] - `contains` [EXTRACTED]
+- [[Related Notes_39]] - `contains` [EXTRACTED]
 - [[WAL Mode]] - `contains` [EXTRACTED]
 - [[Where Used]] - `contains` [EXTRACTED]
 - [[aiosqlite]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_2__Security_Core_HMAC_Auth__PII_Sanitizer_HTTP_CONNECT_Proxy_Approval_Queue
+#graphify/document #graphify/EXTRACTED #community/Community_1014

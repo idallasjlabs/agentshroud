@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/security.py"
 type: "code"
-community: "_get_gmail_app_password"
+community: "Community 240"
 location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_get_gmail_app_password
+  - community/Community_240
 ---
 
 # _validate_runtime()
@@ -19,4 +19,4 @@ tags:
 - [[security.py]] - `contains` [EXTRACTED]
 - [[warn_missing_features()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_get_gmail_app_password
+#graphify/code #graphify/EXTRACTED #community/Community_240
