@@ -1,11 +1,11 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "concept"
-community: "Community 764"
+community: "Community 726"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_764
+  - community/Community_726
 ---
 
 # Multi-Host Infrastructure (Marvin/Trillian/Pi)
@@ -14,4 +14,4 @@ tags:
 - [[RUNBOOK]] - `references` [EXTRACTED]
 - [[raspberry-pi]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_764
+#graphify/concept #graphify/INFERRED #community/Community_726

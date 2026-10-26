@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 626"
+community: "Community 2"
 location: "L531"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_626
+  - community/Community_2
 ---
 
 # Generic session spawn JSON should be rewritten, not shown raw.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_generic_sessions_spawn_json_is_rewritten()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_626
+#graphify/rationale #graphify/EXTRACTED #community/Community_2

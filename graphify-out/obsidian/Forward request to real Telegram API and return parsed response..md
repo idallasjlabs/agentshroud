@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 605"
+community: "Community 14"
 location: "L8143"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_605
+  - community/Community_14
 ---
 
 # Forward request to real Telegram API and return parsed response.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._forward_to_telegram()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_605
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

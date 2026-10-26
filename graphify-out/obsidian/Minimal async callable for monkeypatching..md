@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 1127"
+community: "Community 37"
 location: "L8631"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1127
+  - community/Community_37
 ---
 
 # Minimal async callable for monkeypatching.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AsyncMock]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1127
+#graphify/rationale #graphify/EXTRACTED #community/Community_37

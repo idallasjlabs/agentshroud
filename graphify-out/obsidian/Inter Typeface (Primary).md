@@ -1,11 +1,11 @@
 ---
 source_file: "branding/typography/typography.md"
 type: "concept"
-community: "Community 861"
+community: "Community 542"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_861
+  - community/Community_542
 ---
 
 # Inter Typeface (Primary)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[typography]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_861
+#graphify/concept #graphify/EXTRACTED #community/Community_542

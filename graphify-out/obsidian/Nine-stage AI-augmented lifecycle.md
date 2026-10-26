@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/WORKFLOW.md"
 type: "concept"
-community: "Community 743"
+community: "Community 742"
 location: "Lifecycle"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_743
+  - community/Community_742
 ---
 
 # Nine-stage AI-augmented lifecycle
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Agent layer (skills, subagents, orchestration)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_743
+#graphify/concept #graphify/EXTRACTED #community/Community_742

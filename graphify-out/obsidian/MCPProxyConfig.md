@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "Community 59"
+community: "Community 54"
 location: "L85"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_59
+  - community/Community_54
 ---
 
 # MCPProxyConfig
@@ -101,4 +101,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_59
+#graphify/code #graphify/INFERRED #community/Community_54

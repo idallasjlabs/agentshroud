@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "rationale"
-community: "Community 1552"
+community: "Community 52"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1552
+  - community/Community_52
 ---
 
 # Get container config for an agent.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1552
+#graphify/rationale #graphify/EXTRACTED #community/Community_52

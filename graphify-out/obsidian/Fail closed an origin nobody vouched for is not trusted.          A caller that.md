@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "rationale"
-community: "Community 1344"
+community: "Community 61"
 location: "L391"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1344
+  - community/Community_61
 ---
 
 # Fail closed: an origin nobody vouched for is not trusted.          A caller that
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_unknown_origin_defaults_to_unverified()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1344
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

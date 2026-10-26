@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
 type: "document"
-community: "Community 1016"
+community: "Community 1015"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1016
+  - community/Community_1015
 ---
 
 # PII Pipeline Errors
@@ -21,4 +21,4 @@ tags:
 - [[Tool Result PII Not Scanned]] - `contains` [EXTRACTED]
 - [[spaCy Model Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1016
+#graphify/document #graphify/EXTRACTED #community/Community_1015

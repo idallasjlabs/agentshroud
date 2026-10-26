@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "Community 2330"
+community: "Community 208"
 location: "L644"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2330
+  - community/Community_208
 ---
 
 # Fieldflare and other no-auth local backends are left untouched.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_local_backend_headers_no_auth_for_fieldflare()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2330
+#graphify/rationale #graphify/EXTRACTED #community/Community_208

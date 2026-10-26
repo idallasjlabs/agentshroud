@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "Community 31"
+community: "Community 0"
 location: "L186"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_31
+  - community/Community_0
 ---
 
 # FileSandbox
@@ -99,4 +99,4 @@ tags:
 - [[test_privilege_separation.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_31
+#graphify/code #graphify/INFERRED #community/Community_0

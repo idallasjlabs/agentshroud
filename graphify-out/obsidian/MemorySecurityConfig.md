@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "code"
-community: "Community 16"
+community: "Community 72"
 location: "L97"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_16
+  - community/Community_72
 ---
 
 # MemorySecurityConfig
@@ -32,4 +32,4 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_16
+#graphify/code #graphify/INFERRED #community/Community_72

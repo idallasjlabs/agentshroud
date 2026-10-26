@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "Community 137"
+community: "Community 794"
 location: "L46"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_137
+  - community/Community_794
 ---
 
 # FetchOutcome
@@ -34,4 +34,4 @@ tags:
 - [[test_citation_verifier.py]] - `imports` [EXTRACTED]
 - [[test_intel_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_137
+#graphify/code #graphify/INFERRED #community/Community_794

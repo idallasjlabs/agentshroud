@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Health Checks.md"
 type: "document"
-community: "Community 801"
+community: "Community 656"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_801
+  - community/Community_656
 ---
 
 # Gateway Health Endpoints
@@ -16,4 +16,4 @@ tags:
 - [[Full Health Report (Auth Required)]] - `contains` [EXTRACTED]
 - [[Health Checks_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_801
+#graphify/document #graphify/EXTRACTED #community/Community_656

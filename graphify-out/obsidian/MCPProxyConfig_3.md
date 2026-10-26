@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Community 140"
+community: "Community 132"
 location: "L48"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_140
+  - community/Community_132
 ---
 
 # MCPProxyConfig
@@ -28,4 +28,4 @@ tags:
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[make_config()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_140
+#graphify/code #graphify/INFERRED #community/Community_132

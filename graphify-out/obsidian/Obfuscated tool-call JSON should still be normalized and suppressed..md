@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 2"
+community: "Community 2371"
 location: "L425"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2
+  - community/Community_2371
 ---
 
 # Obfuscated tool-call JSON should still be normalized and suppressed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_raw_tool_call_json_with_zero_width_chars_is_suppressed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_2371

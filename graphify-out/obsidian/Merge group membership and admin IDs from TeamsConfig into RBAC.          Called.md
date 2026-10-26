@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Community 6"
+community: "Community 61"
 location: "L133"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_61
 ---
 
 # Merge group membership and admin IDs from TeamsConfig into RBAC.          Called
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.wire_teams_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

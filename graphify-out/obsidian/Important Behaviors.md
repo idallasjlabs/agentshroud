@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
 type: "document"
-community: "Community 2042"
+community: "Community 409"
 location: "L278"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2042
+  - community/Community_409
 ---
 
 # Important Behaviors
@@ -19,4 +19,4 @@ tags:
 - [[`AuditChain.append_block()` — Guaranteed Persistence Guarantee]] - `contains` [EXTRACTED]
 - [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2042
+#graphify/document #graphify/EXTRACTED #community/Community_409

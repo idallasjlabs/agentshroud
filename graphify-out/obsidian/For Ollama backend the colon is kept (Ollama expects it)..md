@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "Community 2318"
+community: "Community 208"
 location: "L152"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2318
+  - community/Community_208
 ---
 
 # For Ollama backend the colon is kept (Ollama expects it).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_normalize_local_model_ollama_keeps_colon()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2318
+#graphify/rationale #graphify/EXTRACTED #community/Community_208

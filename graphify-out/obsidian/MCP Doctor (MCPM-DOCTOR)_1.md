@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "Community 2072"
+community: "Community 90"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2072
+  - community/Community_90
 ---
 
 # MCP Doctor (MCPM-DOCTOR)
@@ -18,4 +18,4 @@ tags:
 - [[Related Skills_75]] - `contains` [EXTRACTED]
 - [[Usage_78]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2072
+#graphify/document #graphify/EXTRACTED #community/Community_90

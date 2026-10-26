@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "Community 2445"
+community: "Community 28"
 location: "L299"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2445
+  - community/Community_28
 ---
 
 # Mock configuration for middleware tests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.mock_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2445
+#graphify/rationale #graphify/EXTRACTED #community/Community_28
