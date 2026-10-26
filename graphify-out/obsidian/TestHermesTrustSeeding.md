@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "Community 60"
+community: "Community 11"
 location: "L267"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_60
+  - community/Community_11
 ---
 
 # TestHermesTrustSeeding
@@ -20,4 +20,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_security_regressions_v1_2.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_60
+#graphify/code #graphify/INFERRED #community/Community_11

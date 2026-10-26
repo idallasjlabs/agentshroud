@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "code"
-community: "Community 130"
+community: "Community 1971"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_130
+  - community/Community_1971
 ---
 
 # TestReadmeAccuracy
@@ -24,4 +24,4 @@ tags:
 - [[Verify README.md claims match actual implementation.]] - `rationale_for` [EXTRACTED]
 - [[test_docs_accuracy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_130
+#graphify/code #graphify/EXTRACTED #community/Community_1971

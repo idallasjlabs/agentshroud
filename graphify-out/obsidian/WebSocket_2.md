@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 6"
+community: "Community 254"
 location: "L4758"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_6
+  - community/Community_254
 ---
 
 # WebSocket
@@ -29,4 +29,4 @@ tags:
 - [[hermes_dashboard_ws_proxy()]] - `references` [EXTRACTED]
 - [[slack_ws_relay()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_6
+#graphify/code #graphify/INFERRED #community/Community_254

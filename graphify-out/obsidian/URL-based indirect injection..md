@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Community 0"
+community: "Community 509"
 location: "L284"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/Community_509
 ---
 
 # URL-based indirect injection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_indirect_injection_url()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/Community_509

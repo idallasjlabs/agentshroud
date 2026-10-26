@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "Community 84"
+community: "Community 7"
 location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_84
+  - community/Community_7
 ---
 
 # Verify detection accuracy doesn't degrade at scale.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_pii_detection_accuracy_at_scale()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_84
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

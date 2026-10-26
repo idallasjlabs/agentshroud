@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Community 792"
+community: "Community 52"
 location: "L767"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_792
+  - community/Community_52
 ---
 
 # Tests for key material zeroing (C2 fix).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSecureZero]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_792
+#graphify/rationale #graphify/EXTRACTED #community/Community_52

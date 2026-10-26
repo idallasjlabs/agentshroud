@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "rationale"
-community: "Community 5"
+community: "Community 1945"
 location: "L53"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_5
+  - community/Community_1945
 ---
 
 # The lifespan bridges ResourceGuard's native callback payload to AlertDispatcher.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestResourceGuardAlertBridge]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_5
+#graphify/rationale #graphify/EXTRACTED #community/Community_1945

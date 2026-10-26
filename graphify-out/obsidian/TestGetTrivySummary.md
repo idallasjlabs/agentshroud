@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Community 311"
+community: "Community 363"
 location: "L196"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_311
+  - community/Community_363
 ---
 
 # TestGetTrivySummary
@@ -17,4 +17,4 @@ tags:
 - [[.test_returns_generate_summary_output()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_311
+#graphify/code #graphify/EXTRACTED #community/Community_363

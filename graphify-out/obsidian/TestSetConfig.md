@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Community 2030"
+community: "Community 1"
 location: "L903"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2030
+  - community/Community_1
 ---
 
 # TestSetConfig
@@ -23,4 +23,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2030
+#graphify/code #graphify/EXTRACTED #community/Community_1

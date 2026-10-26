@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "code"
-community: "Community 9"
+community: "Community 65"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_9
+  - community/Community_65
 ---
 
 # TestKillSwitchConfig
@@ -18,4 +18,4 @@ tags:
 - [[Test kill switch configuration.]] - `rationale_for` [EXTRACTED]
 - [[test_killswitch_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_9
+#graphify/code #graphify/EXTRACTED #community/Community_65

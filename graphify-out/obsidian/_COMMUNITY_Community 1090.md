@@ -1,20 +1,27 @@
 ---
 type: community
-members: 7
+members: 14
 ---
 
 # Community 1090
 
-**Members:** 7 nodes
+**Members:** 14 nodes
 
 ## Members
-- [[Operating Rules (Non-Negotiable)_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Rule 1 All Regions, Every Time_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Rule 2 Default Read-Only_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Rule 3 Script Everything_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Rule 4 Evidence-First Recommendations_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Rule 5 Safe Tagging_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Rule 6 Never Delete Automatically_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[1. Dependency Updates]] - document - docs/runbooks/daily-operations.md
+- [[1. Service Health]] - document - docs/runbooks/daily-operations.md
+- [[2. Backup Verification]] - document - docs/runbooks/daily-operations.md
+- [[2. Tailscale Connectivity]] - document - docs/runbooks/daily-operations.md
+- [[3. Audit Ledger Review]] - document - docs/runbooks/daily-operations.md
+- [[3. Tailscale ACL Review]] - document - docs/runbooks/daily-operations.md
+- [[4. Log Review]] - document - docs/runbooks/daily-operations.md
+- [[4. Test Suite]] - document - docs/runbooks/daily-operations.md
+- [[5. Resource Usage]] - document - docs/runbooks/daily-operations.md
+- [[Daily Operations Runbook — AgentShroud]] - document - docs/runbooks/daily-operations.md
+- [[Dashboard Monitoring]] - document - docs/runbooks/daily-operations.md
+- [[Monthly Checklist (30 minutes)]] - document - docs/runbooks/daily-operations.md
+- [[Morning Checklist (5 minutes)]] - document - docs/runbooks/daily-operations.md
+- [[Weekly Checklist (15 minutes)]] - document - docs/runbooks/daily-operations.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 494]]
+- 1 edge to [[_COMMUNITY_Community 654]]
 
 ## Top bridge nodes
-- [[Operating Rules (Non-Negotiable)_6]] - degree 7, connects to 1 community
+- [[Daily Operations Runbook — AgentShroud]] - degree 5, connects to 1 community

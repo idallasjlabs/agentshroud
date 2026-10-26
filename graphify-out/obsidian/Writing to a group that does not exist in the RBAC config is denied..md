@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "rationale"
-community: "Community 794"
+community: "Community 60"
 location: "L140"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_794
+  - community/Community_60
 ---
 
 # Writing to a group that does not exist in the RBAC config is denied.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_unknown_group_write_is_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_794
+#graphify/rationale #graphify/EXTRACTED #community/Community_60

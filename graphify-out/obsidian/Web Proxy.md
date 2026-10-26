@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Community 947"
+community: "Community 637"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_947
+  - community/Community_637
 ---
 
 # Web Proxy
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[web_proxy.py (domain allowlist engine)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_947
+#graphify/concept #graphify/EXTRACTED #community/Community_637

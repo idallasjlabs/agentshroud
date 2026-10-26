@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "Community 65"
+community: "Community 61"
 location: "L148"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_65
+  - community/Community_61
 ---
 
 # TestNonMemberDenied
@@ -27,4 +27,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_65
+#graphify/code #graphify/INFERRED #community/Community_61

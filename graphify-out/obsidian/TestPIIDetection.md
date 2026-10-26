@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Community 329"
+community: "Community 2042"
 location: "L183"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_329
+  - community/Community_2042
 ---
 
 # TestPIIDetection
@@ -34,4 +34,4 @@ tags:
 - [[ThreatLevel]] - `uses` [INFERRED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_329
+#graphify/code #graphify/INFERRED #community/Community_2042

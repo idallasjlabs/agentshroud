@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "Community 84"
+community: "Community 45"
 location: "L376"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_84
+  - community/Community_45
 ---
 
 # _BrokenSanitizer
@@ -29,4 +29,4 @@ tags:
 - [[test_pipeline_fails_closed_on_enhanced_sanitizer_error()]] - `calls` [EXTRACTED]
 - [[test_pipeline_owner_exempt_from_fail_closed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_84
+#graphify/code #graphify/INFERRED #community/Community_45

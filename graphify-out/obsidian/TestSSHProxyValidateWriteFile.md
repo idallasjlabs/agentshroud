@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "code"
-community: "Community 7"
+community: "Community 50"
 location: "L338"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/Community_50
 ---
 
 # TestSSHProxyValidateWriteFile
@@ -42,4 +42,4 @@ tags:
 - [[Unit tests for SSHProxy.validate_write_file().]] - `rationale_for` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/Community_50

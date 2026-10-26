@@ -1,21 +1,27 @@
 ---
 type: community
-members: 8
+members: 14
 ---
 
 # Community 1070
 
-**Members:** 8 nodes
+**Members:** 14 nodes
 
 ## Members
-- [[.test_deeply_nested_pii()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_empty_params()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_list_params()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_no_pii_scan()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_none_values_in_params()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_tool_result_none_content()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_tool_result_string_content()]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestInspectorEdgeCases]] - code - gateway/tests/test_mcp_proxy.py
+- [[._call_slack_api()]] - code - gateway/proxy/slack_proxy.py
+- [[._intercept_connections_open()]] - code - gateway/proxy/slack_proxy.py
+- [[._is_owner_channel()]] - code - gateway/proxy/slack_proxy.py
+- [[.invite_channel_member()]] - code - gateway/proxy/slack_proxy.py
+- [[.kick_channel_member()]] - code - gateway/proxy/slack_proxy.py
+- [[.provision_group_channel()]] - code - gateway/proxy/slack_proxy.py
+- [[.proxy_outbound()]] - code - gateway/proxy/slack_proxy.py
+- [[Create a Slack channel for a group. Returns channel_id or None on failure.]] - rationale - gateway/proxy/slack_proxy.py
+- [[Intercept apps.connections.open rewrite the returned WSS URL to route         t]] - rationale - gateway/proxy/slack_proxy.py
+- [[Invite a Slack user to a channel. Returns True on success.]] - rationale - gateway/proxy/slack_proxy.py
+- [[POST to httpsslack.comapimethod with the bot token.]] - rationale - gateway/proxy/slack_proxy.py
+- [[Proxy a bot Slack Web API call through the security pipeline.          For messa]] - rationale - gateway/proxy/slack_proxy.py
+- [[Remove a Slack user from a channel. Returns True on success.]] - rationale - gateway/proxy/slack_proxy.py
+- [[Return True if channel is a DM with the configured owner.          In Slack, DM]] - rationale - gateway/proxy/slack_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,12 +31,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 64]]
-- 4 edges to [[_COMMUNITY_Community 59]]
-- 2 edges to [[_COMMUNITY_Community 230]]
-- 1 edge to [[_COMMUNITY_Community 184]]
-- 1 edge to [[_COMMUNITY_Community 140]]
-- 1 edge to [[_COMMUNITY_Community 329]]
+- 7 edges to [[_COMMUNITY_Community 37]]
 
 ## Top bridge nodes
-- [[TestInspectorEdgeCases]] - degree 21, connects to 6 communities
+- [[._call_slack_api()]] - degree 7, connects to 1 community
+- [[.proxy_outbound()]] - degree 5, connects to 1 community
+- [[._intercept_connections_open()]] - degree 4, connects to 1 community
+- [[._is_owner_channel()]] - degree 3, connects to 1 community
+- [[.provision_group_channel()]] - degree 3, connects to 1 community

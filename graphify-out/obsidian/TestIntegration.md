@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "Community 24"
+community: "Community 119"
 location: "L600"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/Community_119
 ---
 
 # TestIntegration
@@ -19,4 +19,4 @@ tags:
 - [[OutboundInfoFilter]] - `uses` [INFERRED]
 - [[test_outbound_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_24
+#graphify/code #graphify/EXTRACTED #community/Community_119

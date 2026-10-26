@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 626"
+community: "Community 2402"
 location: "L753"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_626
+  - community/Community_2402
 ---
 
 # Unknown model errors should be rewritten without leaking raw stack text.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_unknown_model_error_is_sanitized()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_626
+#graphify/rationale #graphify/EXTRACTED #community/Community_2402

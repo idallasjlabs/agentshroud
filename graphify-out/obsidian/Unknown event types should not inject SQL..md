@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Community 792"
+community: "Community 52"
 location: "L909"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_792
+  - community/Community_52
 ---
 
 # Unknown event types should not inject SQL.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_event_type_validation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_792
+#graphify/rationale #graphify/EXTRACTED #community/Community_52

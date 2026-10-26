@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "Community 50"
+community: "Community 72"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_50
+  - community/Community_72
 ---
 
 # TestToolResultSanitizerConfig
@@ -19,4 +19,4 @@ tags:
 - [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
 - [[test_tool_result_sanitizer_enhanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_50
+#graphify/code #graphify/EXTRACTED #community/Community_72

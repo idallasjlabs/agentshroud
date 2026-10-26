@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 2"
+community: "Community 626"
 location: "L3069"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2
+  - community/Community_626
 ---
 
 # Trailing quote punctuation in leaked URL should still normalize and queue approv
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_raw_web_fetch_json_url_with_trailing_quote_still_queues_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_626
