@@ -1,0 +1,17 @@
+---
+source_file: "reports/upgrade-2026-09-06-dev.md"
+type: "document"
+community: "Community 1780"
+location: "L1"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Community_1780
+---
+
+# upgrade-2026-09-06-dev.md
+
+## Connections
+- [[AgentShroud Sunday Upgrade — 2026-09-06 (dev-only, read-only inventory → scoped fixes)]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Community_1780
