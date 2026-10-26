@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
 type: "document"
-community: "Hermes — Reference Verifier (2)"
+community: "Community 1016"
 location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes__Reference_Verifier_2
+  - community/Community_1016
 ---
 
 # spaCy Model Issues
 
 ## Connections
-- [[PII Pipeline Errors]] - `contains` [EXTRACTED]
+- [[PII Pipeline Errors_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier_2
+#graphify/document #graphify/EXTRACTED #community/Community_1016

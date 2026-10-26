@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_file_sandbox.py"
+source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "FileSandbox"
+community: "Community 105"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/Community_105
 ---
 
 # strict_config()
 
 ## Connections
-- [[FileSandboxConfig]] - `calls` [EXTRACTED]
-- [[test_file_sandbox.py]] - `contains` [EXTRACTED]
+- [[SubagentMonitorConfig]] - `calls` [EXTRACTED]
+- [[test_subagent_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/Community_105

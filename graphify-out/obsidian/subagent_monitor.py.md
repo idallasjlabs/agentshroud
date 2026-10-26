@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "SubagentMonitor"
+community: "Community 105"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/Community_105
 ---
 
 # subagent_monitor.py
 
 ## Connections
-- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
 - [[SubagentEvent]] - `contains` [EXTRACTED]
 - [[SubagentEventType]] - `contains` [EXTRACTED]
 - [[SubagentInfo]] - `contains` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[resource_guard.py]] - `references` [EXTRACTED]
 - [[session_security.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/code #graphify/EXTRACTED #community/Community_105

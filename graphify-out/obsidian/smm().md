@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "create_auth_dependency"
+community: "Community 60"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/Community_60
 ---
 
 # smm()
 
 ## Connections
-- [[fixture_2]] - `references` [EXTRACTED]
+- [[SharedMemoryManager]] - `calls` [EXTRACTED]
 - [[test_security_regressions_v1_2.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/Community_60

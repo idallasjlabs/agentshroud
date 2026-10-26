@@ -1,25 +1,21 @@
 ---
-source_file: "gateway/tools/multi_host_test.py"
+source_file: "gateway/cli/main.py"
 type: "code"
-community: "Migration Path (SSH → Distributed Node)"
-location: "L107"
+community: "Community 87"
+location: "L352"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Migration_Path_SSH__Distributed_Node
+  - community/Community_87
 ---
 
 # tail()
 
 ## Connections
-- [[dot-test_empty()]] - `calls` [EXTRACTED]
-- [[dot-test_keeps_last_n_lines()]] - `calls` [EXTRACTED]
-- [[dot-test_only_newlines()]] - `calls` [EXTRACTED]
-- [[dot-test_shorter_than_n()]] - `calls` [EXTRACTED]
-- [[dot-test_strips_trailing_newline()]] - `calls` [EXTRACTED]
-- [[Return the last ``lines`` non-trailing-empty lines of ``text``.]] - `rationale_for` [EXTRACTED]
-- [[multi_host_test.py]] - `contains` [EXTRACTED]
-- [[run_multi_host()]] - `calls` [EXTRACTED]
-- [[test_multi_host_test.py]] - `imports` [EXTRACTED]
+- [[SCLClient]] - `calls` [EXTRACTED]
+- [[Stream real-time events or logs via WebSocket.]] - `rationale_for` [EXTRACTED]
+- [[_tail_ws()]] - `calls` [EXTRACTED]
+- [[get()]] - `calls` [EXTRACTED]
+- [[main.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Migration_Path_SSH__Distributed_Node
+#graphify/code #graphify/EXTRACTED #community/Community_87

@@ -1,12 +1,12 @@
 ---
-source_file: "browser-extension/package.json"
+source_file: ".agents/skills/browser/package.json"
 type: "code"
-community: "Technical Specification"
-location: "L8"
+community: "Community 1933"
+location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Technical_Specification
+  - community/Community_1933
 ---
 
 # test
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[scripts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Technical_Specification
+#graphify/code #graphify/EXTRACTED #community/Community_1933

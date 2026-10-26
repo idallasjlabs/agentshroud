@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_event_bus.py"
 type: "code"
-community: "TestOutboundInfoFilter (2)"
+community: "Community 85"
 location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_2
+  - community/Community_85
 ---
 
 # test_async_subscriber()
@@ -15,4 +15,4 @@ tags:
 - [[make_event()]] - `calls` [EXTRACTED]
 - [[test_event_bus.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_2
+#graphify/code #graphify/EXTRACTED #community/Community_85

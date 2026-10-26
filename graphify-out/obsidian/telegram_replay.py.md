@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/proxy/telegram_replay.py"
 type: "code"
-community: ".test_collaborator_web_access_imperative_with_url_queues_owner_approval()"
+community: "Community 165"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
+  - community/Community_165
 ---
 
 # telegram_replay.py
 
 ## Connections
 - [[UpdateReplayBuffer]] - `contains` [EXTRACTED]
+- [[main.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
+#graphify/code #graphify/EXTRACTED #community/Community_165

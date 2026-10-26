@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: "SharedMemoryManager"
+community: "Community 60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SharedMemoryManager
+  - community/Community_60
 ---
 
 # shared_memory.py (SharedMemoryManager)
@@ -15,4 +15,4 @@ tags:
 - [[test_group_workspace_manager.py]] - `references` [EXTRACTED]
 - [[test_shared_memory_write_acl.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager
+#graphify/code #graphify/EXTRACTED #community/Community_60

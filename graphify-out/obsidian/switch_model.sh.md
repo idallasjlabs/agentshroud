@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/switch_model.sh"
 type: "code"
-community: "test_egress_callback_stale.py"
+community: "Community 991"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_egress_callback_stalepy
+  - community/Community_991
 ---
 
 # switch_model.sh
@@ -17,8 +17,8 @@ tags:
 - [[preflight_local()]] - `defines` [EXTRACTED]
 - [[switch_model.sh script]] - `contains` [EXTRACTED]
 - [[upsert_env_value()]] - `defines` [EXTRACTED]
-- [[usage()_8]] - `defines` [EXTRACTED]
+- [[usage()_4]] - `defines` [EXTRACTED]
 - [[verify_both_bots_healthy()]] - `defines` [EXTRACTED]
 - [[wait_for_local_model()]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_egress_callback_stalepy
+#graphify/code #graphify/EXTRACTED #community/Community_991

@@ -1,16 +1,13 @@
 ---
 source_file: "docker/scripts/start-agentshroud.sh"
 type: "code"
-community: "run-standalone.sh"
+community: "Community 2463"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run-standalonesh
+  - community/Community_2463
 ---
 
 # start-agentshroud.sh (OpenClaw entrypoint)
 
-## Connections
-- [[openclaw service]] - `shares_data_with` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/run-standalonesh
+#graphify/code #graphify/EXTRACTED #community/Community_2463

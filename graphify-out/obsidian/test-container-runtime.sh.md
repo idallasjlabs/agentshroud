@@ -1,21 +1,21 @@
 ---
 source_file: "scripts/smoke.d/test-container-runtime.sh"
 type: "code"
-community: "v1.6.0 Release — Voice Terminal"
+community: "Community 1176"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/v160_Release__Voice_Terminal
+  - community/Community_1176
 ---
 
 # test-container-runtime.sh
 
 ## Connections
-- [[check()]] - `defines` [EXTRACTED]
+- [[check()_2]] - `defines` [EXTRACTED]
 - [[container-runtime.sh (detection shim)]] - `calls` [EXTRACTED]
 - [[make_fake_bin()]] - `defines` [EXTRACTED]
 - [[run_detect()]] - `defines` [EXTRACTED]
 - [[test-container-runtime.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/v160_Release__Voice_Terminal
+#graphify/code #graphify/EXTRACTED #community/Community_1176

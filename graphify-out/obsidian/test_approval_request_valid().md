@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "code"
-community: "pick_latest_stable"
+community: "Community 30"
 location: "L253"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pick_latest_stable
+  - community/Community_30
 ---
 
 # test_approval_request_valid()
 
 ## Connections
-- [[ApprovalRequest_2]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_3]] - `calls` [EXTRACTED]
 - [[Test ApprovalRequest with valid data]] - `rationale_for` [EXTRACTED]
 - [[test_main_simple.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pick_latest_stable
+#graphify/code #graphify/EXTRACTED #community/Community_30

@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/setup-https-proxy.js"
 type: "code"
-community: "GSDE&G Skills Reference Guide (2)"
+community: "Community 1711"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GSDEG_Skills_Reference_Guide_2
+  - community/Community_1711
 ---
 
 # setup-https-proxy patchUndiciForProxy()
 
-#graphify/code #graphify/EXTRACTED #community/GSDEG_Skills_Reference_Guide_2
+#graphify/code #graphify/EXTRACTED #community/Community_1711

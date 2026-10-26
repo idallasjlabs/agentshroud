@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "_pcm_bytes"
+community: "Community 86"
 location: "L392"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/Community_86
 ---
 
 # test_agent_id_for_peer_unknown_no_hostnames()
 
 ## Connections
-- [[HTTPConnectProxy_1]] - `calls` [EXTRACTED]
+- [[HTTPConnectProxy]] - `calls` [EXTRACTED]
 - [[Unknown IP with no bot_hostnames registered → generic label, cached.]] - `rationale_for` [EXTRACTED]
 - [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/code #graphify/EXTRACTED #community/Community_86

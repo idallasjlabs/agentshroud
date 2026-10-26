@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_report_store.py"
+source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "test_dashboard.py"
-location: "L12"
+community: "Community 30"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/Community_30
 ---
 
 # store()
 
 ## Connections
-- [[ReportStore]] - `calls` [EXTRACTED]
-- [[test_report_store.py]] - `contains` [EXTRACTED]
+- [[ApprovalStore_1]] - `calls` [EXTRACTED]
+- [[Path_24]] - `references` [EXTRACTED]
+- [[test_approval_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/Community_30

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "Community 7"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # test_audit_chain.py
 
 ## Connections
 - [[DataLedger]] - `imports` [EXTRACTED]
-- [[LedgerConfig_1]] - `references` [EXTRACTED]
+- [[LedgerConfig]] - `references` [EXTRACTED]
 - [[TestAuditChainIntegrity]] - `contains` [EXTRACTED]
 - [[TestChainExportAndVerification]] - `contains` [EXTRACTED]
 - [[TestConcurrentWrites]] - `contains` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[TestTamperDetection]] - `contains` [EXTRACTED]
 - [[ledger()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/Community_7

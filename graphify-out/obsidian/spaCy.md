@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "BROWSER_FETCH_SKILL.md"
+community: "Community 1015"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BROWSER_FETCH_SKILLmd
+  - community/Community_1015
 ---
 
 # spaCy
@@ -15,9 +15,9 @@ tags:
 - [[Fallback Behavior]] - `contains` [EXTRACTED]
 - [[First-Boot Performance]] - `contains` [EXTRACTED]
 - [[Model]] - `contains` [EXTRACTED]
-- [[Purpose_10]] - `contains` [EXTRACTED]
-- [[Related Notes_13]] - `contains` [EXTRACTED]
-- [[Where Used_3]] - `contains` [EXTRACTED]
-- [[spacy_1]] - `contains` [EXTRACTED]
+- [[Purpose_194]] - `contains` [EXTRACTED]
+- [[Related Notes_49]] - `contains` [EXTRACTED]
+- [[Where Used_5]] - `contains` [EXTRACTED]
+- [[spacy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BROWSER_FETCH_SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Community_1015

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_alert_dispatcher_retry.py"
 type: "code"
-community: "§1 — Re-run of Prior Scenarios"
+community: "Community 1066"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/1__Re-run_of_Prior_Scenarios
+  - community/Community_1066
 ---
 
 # test_alert_dispatcher_retry.py
@@ -21,4 +21,4 @@ tags:
 - [[test_succeeds_after_one_transient_failure()]] - `contains` [EXTRACTED]
 - [[test_succeeds_on_first_attempt()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/1__Re-run_of_Prior_Scenarios
+#graphify/code #graphify/EXTRACTED #community/Community_1066

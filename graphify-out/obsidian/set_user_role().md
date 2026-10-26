@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "test_voice_stt_model_ab.py"
+community: "Community 6"
 location: "L3958"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_stt_model_abpy
+  - community/Community_6
 ---
 
 # set_user_role()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[AuthRequired]] - `references` [EXTRACTED]
 - [[Request_1]] - `references` [EXTRACTED]
+- [[Role_1]] - `calls` [EXTRACTED]
 - [[Set a user's role (owner only).]] - `rationale_for` [EXTRACTED]
-- [[ingest_apimain.py]] - `contains` [EXTRACTED]
-- [[put]] - `references` [EXTRACTED]
+- [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_stt_model_abpy
+#graphify/code #graphify/EXTRACTED #community/Community_6

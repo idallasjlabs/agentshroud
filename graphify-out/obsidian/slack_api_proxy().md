@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "test_voice_stt_model_ab.py"
+community: "Community 6"
 location: "L4716"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_stt_model_abpy
+  - community/Community_6
 ---
 
 # slack_api_proxy()
 
 ## Connections
-- [[Proxy bot Slack Web API calls through SecurityPipeline. Restricted to the…]] - `rationale_for` [EXTRACTED]
+- [[JSONResponse]] - `calls` [EXTRACTED]
+- [[Proxy bot Slack Web API calls through SecurityPipeline.      Restricted to the i]] - `rationale_for` [EXTRACTED]
 - [[Request_1]] - `references` [EXTRACTED]
-- [[api_route]] - `references` [EXTRACTED]
-- [[ingest_apimain.py]] - `contains` [EXTRACTED]
+- [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_stt_model_abpy
+#graphify/code #graphify/EXTRACTED #community/Community_6

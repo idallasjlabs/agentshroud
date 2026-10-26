@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "test_soc_egress_endpoints.py"
+community: "Community 187"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_egress_endpointspy
+  - community/Community_187
 ---
 
 # test_adversarial_injection.py
 
 ## Connections
-- [[HeuristicClassifier_1]] - `imports` [EXTRACTED]
-- [[PromptGuard_1]] - `imports` [EXTRACTED]
+- [[HeuristicClassifier]] - `imports` [EXTRACTED]
+- [[PromptGuard]] - `imports` [EXTRACTED]
 - [[TestClassicOverride]] - `contains` [EXTRACTED]
 - [[TestContextInjection]] - `contains` [EXTRACTED]
 - [[TestEncodingBypass]] - `contains` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[_prompt_guard_detects()]] - `contains` [EXTRACTED]
 - [[normalize_input()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy
+#graphify/code #graphify/EXTRACTED #community/Community_187

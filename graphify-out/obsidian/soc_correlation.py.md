@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/soc_correlation.py"
 type: "code"
-community: "ResourceGuard (2)"
+community: "Community 82"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard_2
+  - community/Community_82
 ---
 
 # soc_correlation.py
@@ -15,4 +15,4 @@ tags:
 - [[CorrelationSummary]] - `contains` [EXTRACTED]
 - [[build_correlation_summary()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard_2
+#graphify/code #graphify/EXTRACTED #community/Community_82

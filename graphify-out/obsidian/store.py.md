@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "Phase 2 — Security Core (HMAC Auth + PII Sanitizer, HTTP CONNECT Proxy, Approval Queue)"
+community: "Community 30"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Phase_2__Security_Core_HMAC_Auth__PII_Sanitizer_HTTP_CONNECT_Proxy_Approval_Queue
+  - community/Community_30
 ---
 
 # store.py
 
 ## Connections
 - [[ApprovalQueueItem_3]] - `imports` [EXTRACTED]
-- [[ApprovalStore]] - `contains` [EXTRACTED]
+- [[ApprovalStore_1]] - `contains` [EXTRACTED]
 - [[Crash Recovery_1]] - `references` [INFERRED]
 - [[Troubleshooting Matrix]] - `references` [INFERRED]
 - [[aiosqlite]] - `references` [EXTRACTED]
-- [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
+- [[models.py]] - `imports_from` [EXTRACTED]
 - [[test_mfa_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Phase_2__Security_Core_HMAC_Auth__PII_Sanitizer_HTTP_CONNECT_Proxy_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/Community_30

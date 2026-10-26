@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_dns_filter.py"
+source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "NetworkSecurityFinding"
-location: "L24"
+community: "Community 11"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/Community_11
 ---
 
 # strict_config()
 
 ## Connections
-- [[DNSFilterConfig]] - `calls` [EXTRACTED]
-- [[test_dns_filter.py]] - `contains` [EXTRACTED]
+- [[Config with strict thresholds.]] - `rationale_for` [EXTRACTED]
+- [[TrustConfig]] - `calls` [EXTRACTED]
+- [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/Community_11

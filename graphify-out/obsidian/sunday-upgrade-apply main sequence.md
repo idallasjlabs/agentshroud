@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "PIIConfig"
+community: "Community 126"
 location: "L1382-L1448"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/Community_126
 ---
 
 # sunday-upgrade-apply main sequence
@@ -32,4 +32,4 @@ tags:
 - [[sunday-upgrade.sh]] - `references` [EXTRACTED]
 - [[write_handoff()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/Community_126

@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "Community 10"
 location: "L1094"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/Community_10
 ---
 
 # set_user_role()
 
 ## Connections
-- [[RBACConfig_3]] - `calls` [EXTRACTED]
-- [[RBACManager_2]] - `calls` [EXTRACTED]
-- [[Role_64]] - `calls` [EXTRACTED]
-- [[SCLCaller]] - `references` [EXTRACTED]
+- [[RBACConfig_1]] - `calls` [EXTRACTED]
+- [[RBACManager_1]] - `calls` [EXTRACTED]
+- [[Role_1]] - `calls` [EXTRACTED]
+- [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[SetRoleRequest]] - `references` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]
-- [[socrouter.py]] - `contains` [EXTRACTED]
+- [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/Community_10
