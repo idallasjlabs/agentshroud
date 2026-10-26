@@ -1135,6 +1135,109 @@ phase_apply() {
 # ═════════════════════════════════════════════════════════════════════════════
 # PHASE: verify — the gate that actually decides GO/NO-GO.
 # ═════════════════════════════════════════════════════════════════════════════
+
+# ── Agent self-check (read-only) ─────────────────────────────────────────────
+# A healthcheck proves a process answers HTTP, not that the agent behind it can
+# work. 2026-10-25: OpenClaw 2026.10.6 was "healthy" while its doctor had
+# re-pinned agents to openai/gpt-6-astra, a provider openclaw.json never
+# declared. So after the soak, ask each agent's own diagnostics. Nothing here
+# writes — no `doctor --fix`, no restart. Repairs go through a PR, never an
+# agent patching itself mid-upgrade.
+_AGENT_SELFCHECK_FAILURES=""
+
+_openclaw_container() {
+  local c
+  for c in $CONTAINERS; do
+    case "$c" in *openclaw*) printf '%s' "$c"; return 0 ;; esac
+  done
+  return 1
+}
+
+# Every model an agent is pinned to must name a provider that openclaw.json
+# declares. Runs inside the container; argv[1] is the openclaw.json path.
+# shellcheck disable=SC2016
+_OPENCLAW_PIN_CHECK_JS='
+const c = JSON.parse(require("fs").readFileSync(process.argv[1], "utf8"));
+const declared = new Set(Object.keys((c.models && c.models.providers) || {}));
+const a = c.agents || {};
+const pins = [["agents.defaults.model", a.defaults && a.defaults.model]];
+for (const [id, e] of Object.entries(a.entries || {})) pins.push(["agents.entries." + id + ".model", e && e.model]);
+for (const e of a.list || []) pins.push(["agents.list." + e.id + ".model", e.model]);
+let bad = 0;
+for (const [where, m] of pins) {
+  const ref = typeof m === "string" ? m : (m && m.primary);
+  if (!ref) continue;
+  const p = ref.includes("/") ? ref.split("/")[0] : "";
+  if (!declared.has(p)) { console.log(where + "=" + ref + " (provider \"" + p + "\" not in models.providers)"); bad++; }
+}
+process.exit(bad ? 1 : 0);
+'
+
+_selfcheck_fail() { _AGENT_SELFCHECK_FAILURES="${_AGENT_SELFCHECK_FAILURES}\n  - $1"; }
+
+_agent_selfcheck() {
+  _AGENT_SELFCHECK_FAILURES=""
+  local c out rc fails tmo="${SUNDAY_SELFCHECK_TIMEOUT:-120}"
+
+  if c="$(_hermes_container)" \
+     && [ "$(docker inspect --format '{{.State.Status}}' "$c" 2>/dev/null)" = running ]; then
+    rc=0; out="$(docker exec "$c" timeout "$tmo" hermes doctor 2>&1)" || rc=$?
+    # `hermes doctor` exits 1 on any ✗, and 0.22.5 always reports one false ✗:
+    # its config check rejects model.provider "ollama" (what resolve_model.py
+    # writes) although the runtime maps "ollama" to its "custom" provider
+    # (hermes_cli/auth.py:1479, providers.py:141). Judge the ✗ lines minus
+    # exactly that one, not the exit code.
+    if ! printf '%s\n' "$out" | grep -q '✓'; then
+      _selfcheck_fail "${c}: hermes doctor produced no results (rc=${rc})"
+    else
+      fails="$(printf '%s\n' "$out" | grep -E '^[[:space:]]*✗' \
+               | grep -vE "model\.provider 'ollama' is not a recognised provider" || true)"
+      if [ -n "$fails" ]; then
+        _selfcheck_fail "${c}: hermes doctor: $(printf '%s\n' "$fails" | cut -c1-200 | tr '\n' ' ')"
+      else
+        log "selfcheck: $c hermes doctor clean"
+      fi
+      if ! printf '%s\n' "$out" | grep -q 'No active security advisories'; then
+        warn "selfcheck: $c reports an active security advisory — review: docker exec $c hermes doctor"
+      fi
+    fi
+  fi
+
+  if c="$(_openclaw_container)" \
+     && [ "$(docker inspect --format '{{.State.Status}}' "$c" 2>/dev/null)" = running ]; then
+    rc=0; out="$(docker exec "$c" timeout "$tmo" openclaw config validate 2>&1)" || rc=$?
+    if [ "$rc" -ne 0 ]; then
+      _selfcheck_fail "${c}: openclaw config validate rc=${rc}: $(printf '%s\n' "$out" | tail -1 | cut -c1-200)"
+    else
+      log "selfcheck: $c openclaw config valid"
+    fi
+
+    rc=0; out="$(docker exec "$c" timeout "$tmo" openclaw health --json 2>&1)" || rc=$?
+    if ! printf '%s' "$out" | python3 -c '
+import json, sys
+raw = sys.stdin.read(); d = json.loads(raw[raw.index("{"):])
+errs = (d.get("plugins") or {}).get("errors") or []
+sys.exit(0 if d.get("ok") is True and not errs else 1)' 2>/dev/null; then
+      _selfcheck_fail "${c}: openclaw health not ok or plugin errors (rc=${rc}): $(printf '%s' "$out" | tr -d '\n' | cut -c1-200)"
+    else
+      log "selfcheck: $c openclaw health ok, no plugin errors"
+    fi
+
+    rc=0; out="$(docker exec "$c" node -e "$_OPENCLAW_PIN_CHECK_JS" /home/node/.openclaw/openclaw.json 2>&1)" || rc=$?
+    if [ "$rc" -ne 0 ]; then
+      _selfcheck_fail "${c}: agent model pinned to an undeclared provider: $(printf '%s\n' "$out" | head -8 | tr '\n' ' ')"
+    else
+      log "selfcheck: $c every agent model uses a declared provider"
+    fi
+  fi
+
+  if [ -n "$_AGENT_SELFCHECK_FAILURES" ]; then
+    err "selfcheck: FAILED:$(printf '%b' "$_AGENT_SELFCHECK_FAILURES")"
+    return 1
+  fi
+  return 0
+}
+
 phase_verify() {
   log "verify: checking ${CONTAINERS// /, }"
   local failures=""
@@ -1216,7 +1319,13 @@ phase_verify() {
     esac
   done
 
-  # 4. Error scan of recent logs.
+  # 4. Agent self-check, only once the stack itself is up: on top of a dead
+  #    container it would only add noise.
+  if [ -z "$failures" ]; then
+    _agent_selfcheck || failures="${failures}${_AGENT_SELFCHECK_FAILURES}"
+  fi
+
+  # 5. Error scan of recent logs.
   for c in $CONTAINERS; do
     local hits
     hits="$(docker logs --since "${SOAK_SECONDS}s" "$c" 2>&1 \
