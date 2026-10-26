@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "code"
-community: "_coerce_to_ws_event()"
+community: "Community 169"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_coerce_to_ws_event
+  - community/Community_169
 ---
 
 # TestCoerceToWSEvent
 
 ## Connections
-- [[dot-test_egress_denied()]] - `method` [EXTRACTED]
-- [[dot-test_legacy_inbound_blocked()]] - `method` [EXTRACTED]
-- [[dot-test_preserves_severity()]] - `method` [EXTRACTED]
-- [[dot-test_returns_none_on_bad_input()]] - `method` [EXTRACTED]
-- [[dot-test_security_event()]] - `method` [EXTRACTED]
-- [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
+- [[.test_egress_denied()]] - `method` [EXTRACTED]
+- [[.test_legacy_inbound_blocked()]] - `method` [EXTRACTED]
+- [[.test_preserves_severity()]] - `method` [EXTRACTED]
+- [[.test_returns_none_on_bad_input()]] - `method` [EXTRACTED]
+- [[.test_security_event()]] - `method` [EXTRACTED]
+- [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[test_soc_websocket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_coerce_to_ws_event
+#graphify/code #graphify/EXTRACTED #community/Community_169

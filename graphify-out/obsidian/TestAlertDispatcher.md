@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "AgentShroud™ v0.8.0 \"Watchtower\" — Complete Feature List"
+community: "Community 793"
 location: "L878"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Watchtower__Complete_Feature_List
+  - community/Community_793
 ---
 
 # TestAlertDispatcher
 
 ## Connections
-- [[dot-_make_dispatcher()]] - `method` [EXTRACTED]
-- [[dot-test_cleanup_seen()]] - `method` [EXTRACTED]
-- [[dot-test_critical_alert_notified()]] - `method` [EXTRACTED]
-- [[dot-test_dedup()]] - `method` [EXTRACTED]
-- [[dot-test_get_digest()]] - `method` [EXTRACTED]
-- [[dot-test_get_stats()_2]] - `method` [EXTRACTED]
-- [[dot-test_high_alert_notified()]] - `method` [EXTRACTED]
-- [[dot-test_log_to_jsonl()]] - `method` [EXTRACTED]
-- [[dot-test_low_alert_buffered()]] - `method` [EXTRACTED]
-- [[dot-test_medium_alert_buffered()]] - `method` [EXTRACTED]
-- [[dot-test_notify_failure()]] - `method` [EXTRACTED]
-- [[dot-test_rate_limiting()]] - `method` [EXTRACTED]
+- [[._make_dispatcher()]] - `method` [EXTRACTED]
+- [[.test_cleanup_seen()]] - `method` [EXTRACTED]
+- [[.test_critical_alert_notified()]] - `method` [EXTRACTED]
+- [[.test_dedup()]] - `method` [EXTRACTED]
+- [[.test_get_digest()]] - `method` [EXTRACTED]
+- [[.test_get_stats()_2]] - `method` [EXTRACTED]
+- [[.test_high_alert_notified()]] - `method` [EXTRACTED]
+- [[.test_log_to_jsonl()]] - `method` [EXTRACTED]
+- [[.test_low_alert_buffered()]] - `method` [EXTRACTED]
+- [[.test_medium_alert_buffered()]] - `method` [EXTRACTED]
+- [[.test_notify_failure()]] - `method` [EXTRACTED]
+- [[.test_rate_limiting()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Complete_Feature_List
+#graphify/code #graphify/EXTRACTED #community/Community_793

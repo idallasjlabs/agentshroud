@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "rationale"
-community: "AgentShroud v0.8.0 \"Watchtower\" — Execution Summary (Draft)"
+community: "Community 365"
 location: "L162"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Watchtower__Execution_Summary_Draft
+  - community/Community_365
 ---
 
 # Test that all specified unicode control characters are stripped.
 
 ## Connections
-- [[dot-test_all_unicode_control_chars_stripped()]] - `rationale_for` [EXTRACTED]
+- [[.test_all_unicode_control_chars_stripped()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Execution_Summary_Draft
+#graphify/rationale #graphify/EXTRACTED #community/Community_365

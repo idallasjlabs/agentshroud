@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "rationale"
-community: "test_sanitizer.py"
+community: "Community 435"
 location: "L36"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_sanitizerpy
+  - community/Community_435
 ---
 
 # Test phone number redaction
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_phone_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_sanitizerpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_435

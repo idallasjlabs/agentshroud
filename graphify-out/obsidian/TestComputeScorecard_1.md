@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "UserSessionManager (3) (2)"
+community: "Community 312"
 location: "L1112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_3_2
+  - community/Community_312
 ---
 
 # TestComputeScorecard
 
 ## Connections
-- [[dot-test_bare_environment()]] - `method` [EXTRACTED]
-- [[dot-test_rich_environment()]] - `method` [EXTRACTED]
+- [[.test_bare_environment()]] - `method` [EXTRACTED]
+- [[.test_rich_environment()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_3_2
+#graphify/code #graphify/EXTRACTED #community/Community_312

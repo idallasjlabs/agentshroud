@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_enhanced_status.py"
 type: "rationale"
-community: "test_fieldflare_route_strips_unsupported_fields_streaming"
+community: "Community 707"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_fieldflare_route_strips_unsupported_fields_streaming
+  - community/Community_707
 ---
 
 # Test that new fields are optional (backward compat).
 
 ## Connections
-- [[dot-test_status_response_optional_fields()]] - `rationale_for` [EXTRACTED]
+- [[.test_status_response_optional_fields()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_fieldflare_route_strips_unsupported_fields_streaming
+#graphify/rationale #graphify/EXTRACTED #community/Community_707

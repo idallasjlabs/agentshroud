@@ -1,30 +1,22 @@
 ---
-source_file: "gateway/tests/test_soak_status.py"
+source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "_FakeUpstreamWS"
-location: "L36"
+community: "Community 69"
+location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeUpstreamWS
+  - community/Community_69
 ---
 
 # TestClassify
 
 ## Connections
-- [[dot-test_any_error_since_boot_blocks_regardless_of_successes()]] - `method` [EXTRACTED]
-- [[dot-test_below_threshold_not_soaked()]] - `method` [EXTRACTED]
-- [[dot-test_empty_heartbeat_file_skip_alone_is_not_soaked()]] - `method` [EXTRACTED]
-- [[dot-test_empty_heartbeat_file_skip_does_not_mask_a_real_error()]] - `method` [EXTRACTED]
-- [[dot-test_empty_heartbeat_file_skip_is_benign_not_blocking()]] - `method` [EXTRACTED]
-- [[dot-test_empty_job_list()]] - `method` [EXTRACTED]
-- [[dot-test_missing_state_key_does_not_crash()]] - `method` [EXTRACTED]
-- [[dot-test_no_runs_since_boot_not_soaked()]] - `method` [EXTRACTED]
-- [[dot-test_one_success_since_boot_meets_default_threshold()]] - `method` [EXTRACTED]
-- [[dot-test_other_skipped_status_counts_as_not_ok()]] - `method` [EXTRACTED]
-- [[dot-test_runs_before_boot_are_ignored()]] - `method` [EXTRACTED]
-- [[OpenClaw isHeartbeatContentEffectivelyEmpty benign skip]] - `references` [EXTRACTED]
-- [[classify()_2]] - `calls` [EXTRACTED]
-- [[test_soak_status.py]] - `contains` [EXTRACTED]
+- [[.test_classification_is_deterministic()]] - `method` [EXTRACTED]
+- [[.test_priority_rce_before_generic_injection()]] - `method` [EXTRACTED]
+- [[.test_representative_titles()]] - `method` [EXTRACTED]
+- [[.test_unmatched_is_unknown()]] - `method` [EXTRACTED]
+- [[WebContentScanner]] - `uses` [INFERRED]
+- [[test_triage_cve_mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeUpstreamWS
+#graphify/code #graphify/EXTRACTED #community/Community_69

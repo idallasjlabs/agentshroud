@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "soc/router.py"
+community: "Community 11"
 location: "L85"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/soc/routerpy
+  - community/Community_11
 ---
 
 # TestBackwardCompat
 
 ## Connections
-- [[dot-test_is_tool_allowed_returns_none_without_config()]] - `method` [EXTRACTED]
-- [[dot-test_score_alone_promotes_without_config()]] - `method` [EXTRACTED]
-- [[dot-test_untyped_violation_uses_legacy_points()]] - `method` [EXTRACTED]
-- [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
+- [[.test_is_tool_allowed_returns_none_without_config()]] - `method` [EXTRACTED]
+- [[.test_score_alone_promotes_without_config()]] - `method` [EXTRACTED]
+- [[.test_untyped_violation_uses_legacy_points()]] - `method` [EXTRACTED]
+- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
 - [[PromotionThreshold]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
@@ -26,4 +26,4 @@ tags:
 - [[ViolationType]] - `uses` [INFERRED]
 - [[test_progressive_trust_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/soc/routerpy
+#graphify/code #graphify/INFERRED #community/Community_11

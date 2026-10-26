@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "ForwardRequest"
-location: "L786"
+community: "Community 36"
+location: "L790"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/Community_36
 ---
 
 # TestAllExampleConfigsExist
 
 ## Connections
-- [[dot-test_file_exists()]] - `method` [EXTRACTED]
+- [[.test_file_exists()]] - `method` [EXTRACTED]
 - [[ForwardRequest]] - `uses` [INFERRED]
-- [[RouterConfig_1]] - `uses` [INFERRED]
+- [[RouterConfig]] - `uses` [INFERRED]
 - [[Verify all referenced example configs exist.]] - `rationale_for` [EXTRACTED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ForwardRequest
+#graphify/code #graphify/EXTRACTED #community/Community_36

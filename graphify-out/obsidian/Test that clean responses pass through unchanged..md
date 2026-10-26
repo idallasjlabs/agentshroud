@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "rationale"
-community: "Any"
+community: "Community 141"
 location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Any
+  - community/Community_141
 ---
 
 # Test that clean responses pass through unchanged.
 
 ## Connections
-- [[dot-test_clean_response_passes_through()]] - `rationale_for` [EXTRACTED]
+- [[.test_clean_response_passes_through()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Any
+#graphify/rationale #graphify/EXTRACTED #community/Community_141

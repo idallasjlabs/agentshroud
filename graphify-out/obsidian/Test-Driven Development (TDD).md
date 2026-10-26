@@ -1,21 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tdd/README.md"
+source_file: ".agents/skills/i-tdd/README.md"
 type: "document"
-community: "SecureBrowser Skill (4)"
+community: "Community 518"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill_4
+  - community/Community_518
 ---
 
 # Test-Driven Development (TDD)
 
 ## Connections
-- [[Purpose_57]] - `contains` [EXTRACTED]
-- [[Related Skills_43]] - `contains` [EXTRACTED]
-- [[Usage_46]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-tddREADME]] - `contains` [EXTRACTED]
+- [[Purpose_24]] - `contains` [EXTRACTED]
+- [[README_24]] - `contains` [EXTRACTED]
+- [[Related Skills_30]] - `contains` [EXTRACTED]
+- [[Usage_30]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill_4
+#graphify/document #graphify/EXTRACTED #community/Community_518

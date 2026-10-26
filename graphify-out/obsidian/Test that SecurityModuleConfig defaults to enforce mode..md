@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "rationale"
-community: "TestEnforceDefaults"
+community: "Community 196"
 location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEnforceDefaults
+  - community/Community_196
 ---
 
 # Test that SecurityModuleConfig defaults to enforce mode.
 
 ## Connections
-- [[dot-test_security_module_config_defaults()]] - `rationale_for` [EXTRACTED]
+- [[.test_security_module_config_defaults()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEnforceDefaults
+#graphify/rationale #graphify/EXTRACTED #community/Community_196

@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "soc/router.py"
+community: "Community 11"
 location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/Community_11
 ---
 
 # TestAgentRegistration
 
 ## Connections
-- [[dot-test_get_trust_registered()]] - `method` [EXTRACTED]
-- [[dot-test_get_trust_unregistered()]] - `method` [EXTRACTED]
-- [[dot-test_register_idempotent()]] - `method` [EXTRACTED]
-- [[dot-test_register_new_agent()]] - `method` [EXTRACTED]
+- [[.test_get_trust_registered()]] - `method` [EXTRACTED]
+- [[.test_get_trust_unregistered()]] - `method` [EXTRACTED]
+- [[.test_register_idempotent()_1]] - `method` [EXTRACTED]
+- [[.test_register_new_agent()]] - `method` [EXTRACTED]
 - [[Test agent registration and initial trust.]] - `rationale_for` [EXTRACTED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/Community_11

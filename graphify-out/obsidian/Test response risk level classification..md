@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "FetchOutcome"
+community: "Community 2351"
 location: "L316"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/Community_2351
 ---
 
 # Test response risk level classification.
 
 ## Connections
-- [[dot-test_risk_classification()]] - `rationale_for` [EXTRACTED]
+- [[.test_risk_classification()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FetchOutcome
+#graphify/rationale #graphify/EXTRACTED #community/Community_2351

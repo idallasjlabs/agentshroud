@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "Community 61"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/Community_61
 ---
 
 # TestCollaboratorAccess
 
 ## Connections
-- [[dot-test_collaborator_allowed_tools_does_not_include_private()]] - `method` [EXTRACTED]
-- [[dot-test_collaborator_blocked_from_admin_tool()]] - `method` [EXTRACTED]
-- [[dot-test_collaborator_blocked_from_private_tool()]] - `method` [EXTRACTED]
-- [[dot-test_collaborator_can_use_allowed_tool()]] - `method` [EXTRACTED]
-- [[dot-test_collaborator_denied_tools_includes_admin_and_private()]] - `method` [EXTRACTED]
-- [[dot-test_collaborator_denied_unknown_by_default()]] - `method` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_64]] - `uses` [INFERRED]
-- [[TeamsConfig_1]] - `uses` [INFERRED]
+- [[.test_collaborator_allowed_tools_does_not_include_private()]] - `method` [EXTRACTED]
+- [[.test_collaborator_blocked_from_admin_tool()]] - `method` [EXTRACTED]
+- [[.test_collaborator_blocked_from_private_tool()]] - `method` [EXTRACTED]
+- [[.test_collaborator_can_use_allowed_tool()]] - `method` [EXTRACTED]
+- [[.test_collaborator_denied_tools_includes_admin_and_private()]] - `method` [EXTRACTED]
+- [[.test_collaborator_denied_unknown_by_default()]] - `method` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[ToolACLConfig]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/Community_61

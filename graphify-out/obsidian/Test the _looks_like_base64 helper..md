@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "rationale"
-community: "_looks_like_base64()"
+community: "Community 1000"
 location: "L236"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_looks_like_base64
+  - community/Community_1000
 ---
 
 # Test the _looks_like_base64 helper.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestBase64Heuristic]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_looks_like_base64
+#graphify/rationale #graphify/EXTRACTED #community/Community_1000

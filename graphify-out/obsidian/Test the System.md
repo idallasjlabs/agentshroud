@@ -1,12 +1,12 @@
 ---
 source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "test_main_endpoints.py (2)"
+community: "Community 258"
 location: "L166"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_main_endpointspy_2
+  - community/Community_258
 ---
 
 # Test the System
@@ -18,4 +18,4 @@ tags:
 - [[4. Verify Isaiah's Personality]] - `contains` [EXTRACTED]
 - [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_main_endpointspy_2
+#graphify/document #graphify/EXTRACTED #community/Community_258

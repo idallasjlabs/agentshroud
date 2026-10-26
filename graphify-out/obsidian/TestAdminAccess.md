@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "Community 61"
 location: "L78"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - graphify/INFERRED
+  - community/Community_61
 ---
 
 # TestAdminAccess
 
 ## Connections
-- [[dot-test_admin_blocked_from_private_tool()]] - `method` [EXTRACTED]
-- [[dot-test_admin_can_use_admin_tool()]] - `method` [EXTRACTED]
-- [[dot-test_admin_can_use_collaborator_tool()]] - `method` [EXTRACTED]
-- [[dot-test_admin_denied_tools_contains_private()]] - `method` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_64]] - `uses` [INFERRED]
-- [[TeamsConfig_1]] - `uses` [INFERRED]
+- [[.test_admin_blocked_from_private_tool()]] - `method` [EXTRACTED]
+- [[.test_admin_can_use_admin_tool()]] - `method` [EXTRACTED]
+- [[.test_admin_can_use_collaborator_tool()]] - `method` [EXTRACTED]
+- [[.test_admin_denied_tools_contains_private()]] - `method` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[ToolACLConfig]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/INFERRED #community/Community_61
