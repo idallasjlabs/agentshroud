@@ -1,14 +1,84 @@
 {
   "permissions": {
     "defaultMode": "plan",
+    "additionalDirectories": ["/Users/Shared/agentshroud-sunday"],
     "allow": [
+      "Read(//Users/Shared/agentshroud-sunday/**)",
+      "Write(reports/**)",
+      "Bash(whoami)",
+      "Bash(date)",
+      "Bash(date:*)",
+      "Bash(hostname)",
+      "Bash(trivy:*)",
+      "Bash(pip-audit:*)",
+      "Bash(cosign:*)",
+      "Bash(syft:*)",
       "Bash(chmod:*)",
       "Bash(python:*)",
       "Bash(python3:*)",
       "Bash(conda run:*)",
       "Bash(ruff:*)",
       "Bash(black:*)",
-      "Bash(pytest:*)"
+      "Bash(pytest:*)",
+      "Bash(git:*)",
+      "Bash(gh:*)",
+      "Bash(gitleaks:*)",
+      "Bash(docker:*)",
+      "Bash(docker-compose:*)",
+      "Bash(colima:*)",
+      "Bash(limactl:*)",
+      "Bash(pip:*)",
+      "Bash(uv:*)",
+      "Bash(mypy:*)",
+      "Bash(semgrep:*)",
+      "Bash(shellcheck:*)",
+      "Bash(node:*)",
+      "Bash(npm:*)",
+      "Bash(conda:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(wc:*)",
+      "Bash(grep:*)",
+      "Bash(rg:*)",
+      "Bash(find:*)",
+      "Bash(awk:*)",
+      "Bash(sed:*)",
+      "Bash(sort:*)",
+      "Bash(uniq:*)",
+      "Bash(jq:*)",
+      "Bash(stat:*)",
+      "Bash(file:*)",
+      "Bash(df:*)",
+      "Bash(du:*)",
+      "Bash(ps:*)",
+      "Bash(lsof:*)",
+      "Bash(sysctl:*)",
+      "Bash(echo:*)",
+      "Bash(printf:*)",
+      "Bash(true)",
+      "Bash(false)",
+      "Bash(mkdir:*)",
+      "Bash(cp:*)",
+      "Bash(mv:*)",
+      "Bash(tar:*)",
+      "Bash(rsync:*)",
+      "Bash(tee:*)",
+      "Bash(xargs:*)",
+      "Bash(timeout:*)",
+      "Bash(curl:*)",
+      "Bash(tmux:*)",
+      "Bash(scripts/:*)",
+      "Bash(docker/scripts/:*)",
+      "Bash(bash scripts/:*)",
+      "mcp__atlassian__searchJiraIssuesUsingJql",
+      "mcp__atlassian__getVisibleJiraProjects",
+      "mcp__atlassian__getJiraIssue",
+      "mcp__atlassian__createJiraIssue",
+      "mcp__atlassian__addCommentToJiraIssue",
+      "mcp__atlassian__getTransitionsForJiraIssue",
+      "mcp__atlassian__transitionJiraIssue"
     ],
     "deny": [
       "Read(docker/secrets/**)",
@@ -19,13 +89,10 @@
       "Read(**/.env.*)"
     ]
   },
-
+  "model": "sonnet",
   "agentPushNotifEnabled": true,
   "tui": "fullscreen",
   "remoteControlAtStartup": true,
-
-  "model": "sonnet",
-
   "hooks": {
     "PreToolUse": [
       {
@@ -68,7 +135,6 @@
         ]
       }
     ],
-
     "PostToolUse": [
       {
         "matcher": "tools:BashTool",
