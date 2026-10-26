@@ -1,0 +1,23 @@
+---
+type: community
+members: 6
+---
+
+# Community 1170
+
+**Members:** 6 nodes
+
+## Members
+- [[Release Docker build & tag job]] - code - .github/workflows/release.yml
+- [[Release GitHub Release job (CHANGELOG notes extraction)]] - code - .github/workflows/release.yml
+- [[Release test job (py3.13, tagversion sync checks)]] - code - .github/workflows/release.yml
+- [[check_or_fix()]] - code - scripts/sync-version.sh
+- [[sync-version.sh]] - code - scripts/sync-version.sh
+- [[sync-version.sh script]] - code - scripts/sync-version.sh
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Community_1170
+SORT file.name ASC
+```
