@@ -1,21 +1,22 @@
 ---
-source_file: "docs/vault/05 - Dependencies/fastapi.md"
-type: "document"
-community: "EgressFilter"
-location: "L9"
+source_file: "gateway/tests/test_observatory_mode.py"
+type: "code"
+community: "Community 103"
+location: "L60"
 tags:
-  - graphify/document
-  - graphify/EXTRACTED
-  - community/EgressFilter
+  - graphify/code
+  - graphify/INFERRED
+  - community/Community_103
 ---
 
 # FastAPI
 
 ## Connections
-- [[Key FastAPI Features Used]] - `contains` [EXTRACTED]
-- [[Purpose_72]] - `contains` [EXTRACTED]
-- [[Related Notes_22]] - `contains` [EXTRACTED]
-- [[Where Used_4]] - `contains` [EXTRACTED]
-- [[fastapi_1]] - `contains` [EXTRACTED]
+- [[KillSwitchConfig]] - `uses` [INFERRED]
+- [[KillSwitchMonitor]] - `uses` [INFERRED]
+- [[ModeRequest]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[_make_app()]] - `references` [EXTRACTED]
+- [[test_observatory_mode.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/code #graphify/INFERRED #community/Community_103

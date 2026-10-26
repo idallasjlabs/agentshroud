@@ -1,22 +1,23 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "test_main_endpoints.py"
+community: "Community 8"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/Community_8
 ---
 
 # FindingSeverity
 
 ## Connections
-- [[Enum_1]] - `inherits` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[TestDangerousXMLDetection]] - `uses` [INFERRED]
 - [[TestDangerousXMLIsBlockedNotFlagged]] - `uses` [INFERRED]
-- [[str_1]] - `inherits` [EXTRACTED]
+- [[TestTriageClassLevelCoverage]] - `uses` [INFERRED]
+- [[str]] - `inherits` [EXTRACTED]
 - [[test_xml_dtd_control.py]] - `imports` [EXTRACTED]
 - [[web_content_scanner.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/code #graphify/EXTRACTED #community/Community_8

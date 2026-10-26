@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "EgressFilterConfig (2)"
+community: "Community 792"
 location: "L783"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/Community_792
 ---
 
 # Ensure zeroing doesn't break normal encrypt/decrypt flow.
 
 ## Connections
-- [[dot-test_encrypt_decrypt_still_works_after_zeroing()]] - `rationale_for` [EXTRACTED]
+- [[.test_encrypt_decrypt_still_works_after_zeroing()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_792

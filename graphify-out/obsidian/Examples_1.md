@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/trello/SKILL.md"
 type: "document"
-community: "TestFabricatedSecurityNotice (2) (2)"
+community: "Community 796"
 location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice_2_2
+  - community/Community_796
 ---
 
 # Examples
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Trello Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_796

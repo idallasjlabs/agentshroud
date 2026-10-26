@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "SecureBrowser (4) (2)"
+community: "Community 1787"
 location: "L1802"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecureBrowser_4_2
+  - community/Community_1787
 ---
 
 # Filter outbound LLM response for credential leaks and XML.
 
 ## Connections
-- [[dot-_filter_outbound()]] - `rationale_for` [EXTRACTED]
+- [[._filter_outbound()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser_4_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_1787

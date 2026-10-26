@@ -1,23 +1,22 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: "dashboard/README.md"
 type: "document"
-community: "test-sunday-upgrade-scan.sh"
-location: "L6"
+community: "Community 465"
+location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test-sunday-upgrade-scansh
+  - community/Community_465
 ---
 
 # Features
 
 ## Connections
-- [[1. Observatory Mode (Global Monitor-Only Switch)]] - `contains` [EXTRACTED]
-- [[2. Prompt Injection Hardening]] - `contains` [EXTRACTED]
-- [[3. Interactive Egress Firewall (Little Snitch for Agents)]] - `contains` [EXTRACTED]
-- [[4. ML-Based Injection Classifier (Stretch)]] - `contains` [EXTRACTED]
-- [[5. Output Canary System]] - `contains` [EXTRACTED]
-- [[6. Enhanced Audit & Compliance]] - `contains` [EXTRACTED]
-- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
+- [[Action Feed]] - `contains` [EXTRACTED]
+- [[AgentShroud Dashboard]] - `contains` [EXTRACTED]
+- [[Data Ledger Viewer]] - `contains` [EXTRACTED]
+- [[Kill Switch]] - `contains` [EXTRACTED]
+- [[Memory Browser]] - `contains` [EXTRACTED]
+- [[Network Inspector]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test-sunday-upgrade-scansh
+#graphify/document #graphify/EXTRACTED #community/Community_465

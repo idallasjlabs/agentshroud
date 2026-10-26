@@ -1,17 +1,17 @@
 ---
-source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
+source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "document"
-community: "test_telegram_proxy_inbound.py (3)"
+community: "Community 704"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy_3
+  - community/Community_704
 ---
 
 # Filing Reference
 
 ## Connections
-- [[AgentShroud -- USPTO Provisional Patent Application]] - `contains` [EXTRACTED]
+- [[AgentShroud -- USPTO Trademark Application]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy_3
+#graphify/document #graphify/EXTRACTED #community/Community_704

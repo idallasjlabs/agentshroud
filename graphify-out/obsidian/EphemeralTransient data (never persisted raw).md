@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-10-data-dictionary.svg"
 type: "concept"
-community: "start-agentshroud.sh (2)"
+community: "Community 523"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/start-agentshroudsh_2
+  - community/Community_523
 ---
 
 # Ephemeral/Transient data (never persisted raw)
@@ -17,4 +17,4 @@ tags:
 - [[MCP inspection result (in-memory only, logged to gateway stdout)]] - `conceptually_related_to` [EXTRACTED]
 - [[PII redaction result (hash only in ledger, never persisted raw)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/start-agentshroudsh_2
+#graphify/concept #graphify/EXTRACTED #community/Community_523

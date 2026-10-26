@@ -1,26 +1,26 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "browser/package.json"
+community: "Community 389"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser/packagejson
+  - community/Community_389
 ---
 
 # Error Index
 
 ## Connections
-- [[Auth Errors_1]] - `contains` [EXTRACTED]
+- [[Auth Errors_2]] - `contains` [EXTRACTED]
 - [[Container Errors_2]] - `contains` [EXTRACTED]
-- [[Egress Filter Errors_1]] - `contains` [EXTRACTED]
+- [[Egress Filter Errors_2]] - `contains` [EXTRACTED]
 - [[Error Index]] - `contains` [EXTRACTED]
 - [[HTTP Status Codes]] - `contains` [EXTRACTED]
-- [[MCP Proxy Errors_2]] - `contains` [EXTRACTED]
-- [[PII Pipeline Errors_2]] - `contains` [EXTRACTED]
-- [[Prompt Injection Blocks_2]] - `contains` [EXTRACTED]
-- [[Related Notes_65]] - `contains` [EXTRACTED]
-- [[Startup Errors_2]] - `contains` [EXTRACTED]
+- [[MCP Proxy Errors]] - `contains` [EXTRACTED]
+- [[PII Pipeline Errors]] - `contains` [EXTRACTED]
+- [[Prompt Injection Blocks]] - `contains` [EXTRACTED]
+- [[Related Notes_58]] - `contains` [EXTRACTED]
+- [[Startup Errors]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser/packagejson
+#graphify/document #graphify/EXTRACTED #community/Community_389

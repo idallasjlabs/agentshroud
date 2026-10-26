@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_anthropic_openai_translator.py"
 type: "rationale"
-community: "mcp_config.py"
+community: "Community 360"
 location: "L219"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/mcp_configpy
+  - community/Community_360
 ---
 
 # Feed raw SSE bytes into the translator and collect Anthropic events.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_collect_sse()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/mcp_configpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_360

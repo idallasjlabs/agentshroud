@@ -1,32 +1,64 @@
 ---
-source_file: ""
+source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "AgentShroud™ README"
+community: "Community 72"
+location: "L459"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/AgentShroud_README
+  - graphify/INFERRED
+  - community/Community_72
 ---
 
 # Exception
 
 ## Connections
-- [[ConfigValidationError]] - `inherits` [EXTRACTED]
-- [[CredentialEntryBlocked]] - `inherits` [EXTRACTED]
-- [[ForwardError]] - `inherits` [EXTRACTED]
-- [[OAuthError]] - `inherits` [EXTRACTED]
-- [[PhishingURLDetected]] - `inherits` [EXTRACTED]
-- [[ReportIntegrityError]] - `inherits` [EXTRACTED]
-- [[RouterError]] - `inherits` [EXTRACTED]
-- [[SecurityError]] - `inherits` [EXTRACTED]
-- [[SecurityError_1]] - `inherits` [EXTRACTED]
-- [[SecurityError_2]] - `inherits` [EXTRACTED]
-- [[SecurityError_3]] - `inherits` [EXTRACTED]
-- [[SessionError]] - `inherits` [EXTRACTED]
-- [[SkillGuardBlocked]] - `inherits` [EXTRACTED]
-- [[SocialEngineeringDetected]] - `inherits` [EXTRACTED]
-- [[VRAMHeadroomError]] - `inherits` [EXTRACTED]
-- [[global_exception_handler()]] - `references` [EXTRACTED]
-- [[test_broadcast_with_failed_client()]] - `calls` [INFERRED]
+- [[._record_guard_init_failure()]] - `references` [EXTRACTED]
+- [[Action_1]] - `uses` [INFERRED]
+- [[AgentRegistry]] - `uses` [INFERRED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
+- [[ApprovalHardening]] - `uses` [INFERRED]
+- [[ApprovalHardeningConfig]] - `uses` [INFERRED]
+- [[BrowserSecurityGuard]] - `uses` [INFERRED]
+- [[ConsentFramework]] - `uses` [INFERRED]
+- [[ContextGuard]] - `uses` [INFERRED]
+- [[DNSFilter]] - `uses` [INFERRED]
+- [[DNSFilterConfig]] - `uses` [INFERRED]
+- [[DriftDetector]] - `uses` [INFERRED]
+- [[EgressMonitor]] - `uses` [INFERRED]
+- [[EgressMonitorConfig]] - `uses` [INFERRED]
+- [[EnvironmentGuard]] - `uses` [INFERRED]
+- [[FileSandbox]] - `uses` [INFERRED]
+- [[FileSandboxConfig]] - `uses` [INFERRED]
+- [[GitGuard]] - `uses` [INFERRED]
+- [[KeyRotationManager]] - `uses` [INFERRED]
+- [[KillSwitchMonitor]] - `uses` [INFERRED]
+- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
+- [[MemoryLifecycleManager]] - `uses` [INFERRED]
+- [[MemorySecurityConfig]] - `uses` [INFERRED]
+- [[MetadataGuard]] - `uses` [INFERRED]
+- [[MultiTurnTracker]] - `uses` [INFERRED]
+- [[NetworkValidator]] - `uses` [INFERRED]
+- [[OAuthSecurityValidator]] - `uses` [INFERRED]
+- [[OutputCanary]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PathIsolationConfig]] - `uses` [INFERRED]
+- [[PathIsolationManager]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACManager_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
+- [[ResourceGuard]] - `uses` [INFERRED]
+- [[SessionManager]] - `uses` [INFERRED]
+- [[SubagentMonitor]] - `uses` [INFERRED]
+- [[SubagentMonitorConfig]] - `uses` [INFERRED]
+- [[ToolChainAnalyzer]] - `uses` [INFERRED]
+- [[ToolResultInjectionScanner]] - `uses` [INFERRED]
+- [[ToolResultPIIConfig]] - `uses` [INFERRED]
+- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
+- [[ToolResultSanitizer]] - `uses` [INFERRED]
+- [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
+- [[ToolTier_1]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
+- [[XMLLeakFilter]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_README
+#graphify/code #graphify/INFERRED #community/Community_72

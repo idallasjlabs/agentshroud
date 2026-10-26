@@ -1,39 +1,39 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "StdioConnection"
+community: "Community 140"
 location: "L93"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/StdioConnection
+  - community/Community_140
 ---
 
 # FakeProcess
 
 ## Connections
-- [[dot-__init__()_140]] - `method` [EXTRACTED]
-- [[dot-kill()]] - `method` [EXTRACTED]
-- [[dot-terminate()]] - `method` [EXTRACTED]
-- [[dot-test_start_send_and_stop()]] - `calls` [EXTRACTED]
-- [[dot-test_start_without_env_passes_none()]] - `calls` [EXTRACTED]
-- [[dot-test_stop_kills_on_wait_timeout()]] - `calls` [EXTRACTED]
-- [[dot-wait()]] - `method` [EXTRACTED]
+- [[.__init__()_177]] - `method` [EXTRACTED]
+- [[.kill()]] - `method` [EXTRACTED]
+- [[.terminate()]] - `method` [EXTRACTED]
+- [[.test_start_send_and_stop()]] - `calls` [EXTRACTED]
+- [[.test_start_without_env_passes_none()]] - `calls` [EXTRACTED]
+- [[.test_stop_kills_on_wait_timeout()]] - `calls` [EXTRACTED]
+- [[.wait()]] - `method` [EXTRACTED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector_1]] - `uses` [INFERRED]
+- [[MCPInspector]] - `uses` [INFERRED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxy_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
-- [[MCPToolCall_1]] - `uses` [INFERRED]
+- [[MCPProxy]] - `uses` [INFERRED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig]] - `uses` [INFERRED]
+- [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPToolConfig]] - `uses` [INFERRED]
 - [[MCPToolResult]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
-- [[PermissionLevel_1]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
 - [[Stand-in for asyncio.subprocess.Process — no real child process.]] - `rationale_for` [EXTRACTED]
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/StdioConnection
+#graphify/code #graphify/INFERRED #community/Community_140

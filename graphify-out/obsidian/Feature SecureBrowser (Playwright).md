@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Current Features: Write Requirements"
+community: "Community 157"
 location: "L242"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Current_Features_Write_Requirements
+  - community/Community_157
 ---
 
 # Feature: SecureBrowser (Playwright)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Current Features Write Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Current_Features_Write_Requirements
+#graphify/document #graphify/EXTRACTED #community/Community_157

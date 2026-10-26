@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "rationale"
-community: "UserSessionManager (2) (2)"
+community: "Community 34"
 location: "L370"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager_2_2
+  - community/Community_34
 ---
 
 # Everything the post-routing forwarding steps (blocking or streaming)     need, o
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_InboundResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_2_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_34

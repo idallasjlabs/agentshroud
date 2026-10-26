@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-cr/SKILL.md"
+source_file: ".cursor/agents/i-cr.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md (2)"
-location: "L31"
+community: "Community 2019"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd_2
+  - community/Community_2019
 ---
 
 # Feedback Guidelines
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Code Review (CR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_2
+#graphify/document #graphify/EXTRACTED #community/Community_2019

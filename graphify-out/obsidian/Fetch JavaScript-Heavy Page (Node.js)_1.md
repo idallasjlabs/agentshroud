@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: ".agents/skills/browser/SKILL.md"
 type: "document"
-community: "setup-secrets.sh (2)"
+community: "Community 450"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/setup-secretssh_2
+  - community/Community_450
 ---
 
 # Fetch JavaScript-Heavy Page (Node.js)
 
 ## Connections
-- [[Usage_63]] - `contains` [EXTRACTED]
+- [[Usage_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/setup-secretssh_2
+#graphify/document #graphify/EXTRACTED #community/Community_450

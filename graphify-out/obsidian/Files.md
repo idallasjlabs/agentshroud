@@ -1,17 +1,20 @@
 ---
-source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
+source_file: "docker/README.md"
 type: "document"
-community: "test_sunday_prompt_unattended.sh"
-location: "L142"
+community: "Community 213"
+location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_sunday_prompt_unattendedsh
+  - community/Community_213
 ---
 
 # Files
 
 ## Connections
-- [[Technical Details]] - `contains` [EXTRACTED]
+- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
+- [[Core Configuration]] - `contains` [EXTRACTED]
+- [[Documentation_4]] - `contains` [EXTRACTED]
+- [[Secrets_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_sunday_prompt_unattendedsh
+#graphify/document #graphify/EXTRACTED #community/Community_213

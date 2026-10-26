@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: ".pi/mcp.json"
-location: "L433"
+community: "Community 767"
+location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pi/mcpjson
+  - community/Community_767
 ---
 
 # Environment Variables Used
 
 ## Connections
-- [[main.py]] - `contains` [EXTRACTED]
+- [[event_bus.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pi/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Community_767

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "rationale"
-community: "test_voice_gateway.py"
+community: "Community 1278"
 location: "L885"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/Community_1278
 ---
 
 # Existing callers (with_head=False) keep getting bytes only — no StreamHead.
 
 ## Connections
-- [[test_streaming_default_contract_yields_only_bytes]] - `rationale_for` [EXTRACTED]
+- [[test_streaming_default_contract_yields_only_bytes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/rationale #graphify/EXTRACTED #community/Community_1278

@@ -1,22 +1,22 @@
 ---
-source_file: "browser-extension/README.md"
+source_file: "docs/planning/v0.9/v0.9.0-release-plan.md"
 type: "document"
-community: "middleware.py"
-location: "L47"
+community: "Community 406"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/Community_406
 ---
 
 # Features
 
 ## Connections
-- [[1. URL Forwarder]] - `contains` [EXTRACTED]
-- [[2. Page Clipper]] - `contains` [EXTRACTED]
-- [[3. Form Fill Request (Reverse Flow)]] - `contains` [EXTRACTED]
-- [[4. Tab Session Exporter]] - `contains` [EXTRACTED]
-- [[5. Reading List Queue]] - `contains` [EXTRACTED]
-- [[Browser Extension]] - `contains` [EXTRACTED]
+- [[1. Multi-Runtime Testing (Podman + Apple Containers)]] - `contains` [EXTRACTED]
+- [[2. Multi-Host Deployment Orchestration]] - `contains` [EXTRACTED]
+- [[3. ARM32  Low-Resource Support]] - `contains` [EXTRACTED]
+- [[4. Compliance & Standards Alignment]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.9.0 — Release Plan]] - `contains` [EXTRACTED]
+- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/middlewarepy
+#graphify/document #graphify/EXTRACTED #community/Community_406

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
+source_file: ".agents/skills/browser/scripts/browse.py"
 type: "rationale"
-community: ".proxy_messages()"
+community: "Community 149"
 location: "L350"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/proxy_messages
+  - community/Community_149
 ---
 
 # Extract data from page          Security: No credential extraction allowed
 
 ## Connections
-- [[dot-extract()_1]] - `rationale_for` [EXTRACTED]
+- [[.extract()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/proxy_messages
+#graphify/rationale #graphify/EXTRACTED #community/Community_149

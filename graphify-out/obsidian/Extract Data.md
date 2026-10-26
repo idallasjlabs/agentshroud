@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/SKILL.md"
+source_file: ".agents/agents/browser.md"
 type: "document"
-community: "hermes/workspace/jira_dev_ticket.py"
-location: "L69"
+community: "Community 432"
+location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/workspace/jira_dev_ticketpy
+  - community/Community_432
 ---
 
 # Extract Data
 
 ## Connections
-- [[Usage_58]] - `contains` [EXTRACTED]
+- [[Usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/workspace/jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/Community_432

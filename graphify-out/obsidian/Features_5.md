@@ -1,21 +1,17 @@
 ---
-source_file: "docs/planning/v0.9/v0.9.0-release-plan.md"
+source_file: "skills/custom/browser-fetch/SKILL.md"
 type: "document"
-community: "AsyncMock (2)"
+community: "Community 1145"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AsyncMock_2
+  - community/Community_1145
 ---
 
 # Features
 
 ## Connections
-- [[1. Multi-Runtime Testing (Podman + Apple Containers)]] - `contains` [EXTRACTED]
-- [[2. Multi-Host Deployment Orchestration]] - `contains` [EXTRACTED]
-- [[3. ARM32  Low-Resource Support]] - `contains` [EXTRACTED]
-- [[4. Compliance & Standards Alignment]] - `contains` [EXTRACTED]
-- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
+- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AsyncMock_2
+#graphify/document #graphify/EXTRACTED #community/Community_1145

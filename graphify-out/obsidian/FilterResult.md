@@ -1,24 +1,26 @@
 ---
-source_file: "gateway/security/xml_leak_filter.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "Any"
-location: "L20"
+community: "Community 24"
+location: "L54"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Any
+  - graphify/INFERRED
+  - community/Community_24
 ---
 
 # FilterResult
 
 ## Connections
-- [[dot-filter_response()_1]] - `references` [EXTRACTED]
-- [[dot-scan_command_injection()]] - `references` [EXTRACTED]
-- [[Result from XML leak filtering.]] - `rationale_for` [EXTRACTED]
-- [[TestCommandInjectionScan]] - `uses` [INFERRED]
-- [[TestXMLLeakFilter]] - `uses` [INFERRED]
-- [[XMLLeakFilter]] - `references` [EXTRACTED]
-- [[test_xml_leak_filter.py]] - `imports` [EXTRACTED]
-- [[xml_leak_filter.py]] - `contains` [EXTRACTED]
+- [[.filter_response()]] - `references` [EXTRACTED]
+- [[Any_19]] - `uses` [INFERRED]
+- [[AuditChain]] - `uses` [INFERRED]
+- [[AuditChainEntry]] - `uses` [INFERRED]
+- [[PipelineAction]] - `uses` [INFERRED]
+- [[PipelineResult]] - `uses` [INFERRED]
+- [[Result of filtering agent response content.]] - `rationale_for` [EXTRACTED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[outbound_filter.py]] - `contains` [EXTRACTED]
+- [[pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/INFERRED #community/Community_24

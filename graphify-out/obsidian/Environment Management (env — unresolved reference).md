@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-env/SKILL.md"
 type: "concept"
-community: "Skill: Mindmap Architect (MM)"
+community: "Community 177"
 tags:
   - graphify/concept
   - graphify/AMBIGUOUS
-  - community/Skill_Mindmap_Architect_MM
+  - community/Community_177
 ---
 
 # Environment Management (env — unresolved reference)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Project Management (SKILL)]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/concept #graphify/AMBIGUOUS #community/Skill_Mindmap_Architect_MM
+#graphify/concept #graphify/AMBIGUOUS #community/Community_177

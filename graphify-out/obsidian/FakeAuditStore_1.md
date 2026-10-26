@@ -1,27 +1,23 @@
 ---
-source_file: "gateway/tests/test_egress_filter.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "TestOutboundPipelineIntegration"
-location: "L277"
+community: "Community 19"
+location: "L57"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/TestOutboundPipelineIntegration
+  - graphify/EXTRACTED
+  - community/Community_19
 ---
 
 # FakeAuditStore
 
 ## Connections
-- [[dot-__init__()_91]] - `method` [EXTRACTED]
-- [[dot-log_event()]] - `method` [EXTRACTED]
-- [[dot-test_allow_is_not_persisted_to_audit_store()]] - `calls` [EXTRACTED]
-- [[dot-test_deny_is_persisted_to_audit_store()]] - `calls` [EXTRACTED]
-- [[ApprovalResult]] - `uses` [INFERRED]
-- [[EgressAction]] - `uses` [INFERRED]
-- [[EgressAttempt]] - `uses` [INFERRED]
-- [[EgressFilter]] - `uses` [INFERRED]
-- [[EgressFilterConfig]] - `uses` [INFERRED]
-- [[EgressPolicy]] - `uses` [INFERRED]
-- [[test_egress_filter.py]] - `contains` [EXTRACTED]
+- [[.__init__()_189]] - `method` [EXTRACTED]
+- [[.get_recent_entries()_1]] - `method` [EXTRACTED]
+- [[ApprovalMode]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[test_egress_log_filters_egress_events()]] - `calls` [EXTRACTED]
+- [[test_security_events_with_filters()]] - `calls` [EXTRACTED]
+- [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TestOutboundPipelineIntegration
+#graphify/code #graphify/EXTRACTED #community/Community_19

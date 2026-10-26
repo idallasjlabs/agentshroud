@@ -1,13 +1,13 @@
 ---
 source_file: "branding/favicons/favicon-96x96.png"
 type: "image"
-community: "v0.9.0 \"Sentinel\" — SOC team collaboration"
+community: "Community 1631"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/v090_Sentinel__SOC_team_collaboration
+  - community/Community_1631
 ---
 
 # Favicon 96x96 (AgentShroud logo mark)
 
-#graphify/image #graphify/EXTRACTED #community/v090_Sentinel__SOC_team_collaboration
+#graphify/image #graphify/EXTRACTED #community/Community_1631

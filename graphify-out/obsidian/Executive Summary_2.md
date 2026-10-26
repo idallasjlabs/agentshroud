@@ -1,18 +1,18 @@
 ---
-source_file: "docs/testing/test-coverage-report.md"
+source_file: "docs/planning/reviews/phase-review-p0-2026-02-23.md"
 type: "document"
-community: "test_scorecard_integrity.py"
-location: "L4"
+community: "Community 331"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_scorecard_integritypy
+  - community/Community_331
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud v0.9.0]] - `contains` [EXTRACTED]
-- [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
+- [[Phase Review P0 - Core Pipeline Wiring]] - `contains` [EXTRACTED]
+- [[Phase Review P0 — Core Pipeline Wiring]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_scorecard_integritypy
+#graphify/document #graphify/EXTRACTED #community/Community_331

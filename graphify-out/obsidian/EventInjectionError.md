@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "TelegramAPIProxy (2)"
+community: "Community 76"
 location: "L36"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TelegramAPIProxy_2
+  - community/Community_76
 ---
 
 # EventInjectionError
 
 ## Connections
-- [[dot-validate_event()]] - `calls` [EXTRACTED]
+- [[.validate_event()]] - `calls` [EXTRACTED]
 - [[SessionError]] - `inherits` [EXTRACTED]
 - [[TestEventInjection]] - `uses` [INFERRED]
 - [[TestInstructionNonce]] - `uses` [INFERRED]
-- [[TestRateLimiting]] - `uses` [INFERRED]
+- [[TestRateLimiting_3]] - `uses` [INFERRED]
 - [[TestSessionCleanup]] - `uses` [INFERRED]
 - [[TestSessionCreation]] - `uses` [INFERRED]
 - [[TestSessionRotation]] - `uses` [INFERRED]
 - [[TestSessionValidation]] - `uses` [INFERRED]
 - [[session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TelegramAPIProxy_2
+#graphify/code #graphify/INFERRED #community/Community_76

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "ResourceGuard"
+community: "Community 19"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/Community_19
 ---
 
 # FakeGroup
 
 ## Connections
-- [[dot-__init__()_78]] - `method` [EXTRACTED]
-- [[dot-model_dump()]] - `method` [EXTRACTED]
+- [[.__init__()_191]] - `method` [EXTRACTED]
+- [[.model_dump()_1]] - `method` [EXTRACTED]
 - [[ApprovalMode]] - `uses` [INFERRED]
-- [[Role_64]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
 - [[test_add_group_member_paths()]] - `calls` [EXTRACTED]
 - [[test_create_group_paths()]] - `calls` [EXTRACTED]
 - [[test_delete_group_paths()]] - `calls` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[test_set_group_mode_paths()]] - `calls` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/Community_19

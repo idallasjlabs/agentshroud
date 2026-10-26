@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/redteam/feature-priorities.md"
 type: "document"
-community: "Phase 3: MITIGATE (Rollback First!)"
+community: "Community 422"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First
+  - community/Community_422
 ---
 
 # Enterprise Security Feature Priorities
@@ -16,4 +16,4 @@ tags:
 - [[Outbound Information Filter Planning]] - `references` [EXTRACTED]
 - [[Separation of Privilege Planning]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First
+#graphify/document #graphify/EXTRACTED #community/Community_422

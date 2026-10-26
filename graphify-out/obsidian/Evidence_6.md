@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/00-information-disclosure.md"
+source_file: "docs/planning/redteam/06-outbound-info-filter.md"
 type: "document"
-community: "MCPPermissionManager (2) (2)"
-location: "L9"
+community: "Community 563"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2_2
+  - community/Community_563
 ---
 
 # Evidence
 
 ## Connections
-- [[Add information filtering to prevent agent self-disclosure]] - `contains` [EXTRACTED]
+- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCPPermissionManager_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_563
