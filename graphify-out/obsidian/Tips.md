@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/session-logs/SKILL.md"
+source_file: "docs/user-guide.md"
 type: "document"
-community: "EgressFilterConfig (2) (3)"
-location: "L104"
+community: "Community 327"
+location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2_3
+  - community/Community_327
 ---
 
 # Tips
 
 ## Connections
-- [[session-logs]] - `contains` [EXTRACTED]
+- [[Interacting via Telegram]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilterConfig_2_3
+#graphify/document #graphify/EXTRACTED #community/Community_327

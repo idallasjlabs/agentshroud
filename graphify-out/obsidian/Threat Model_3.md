@@ -1,19 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/references/security-policies.md"
+source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
 type: "document"
-community: "AgentShroud: A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents"
-location: "L69"
+community: "Community 536"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_A_Transparent_Proxy_Framework_for_Enterprise_Governance_of_Autonomous_AI_Agents
+  - community/Community_536
 ---
 
 # Threat Model
 
 ## Connections
-- [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
-- [[What We Don't Protect Against]] - `contains` [EXTRACTED]
-- [[What We Protect Against]] - `contains` [EXTRACTED]
+- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_A_Transparent_Proxy_Framework_for_Enterprise_Governance_of_Autonomous_AI_Agents
+#graphify/document #graphify/EXTRACTED #community/Community_536

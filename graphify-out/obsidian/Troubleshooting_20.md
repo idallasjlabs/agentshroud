@@ -1,17 +1,20 @@
 ---
-source_file: "docs/setup-slack.md"
+source_file: ".omp/agents/icloud.md"
 type: "document"
-community: "test_collaborator_greeter.py (2)"
-location: "L171"
+community: "Community 680"
+location: "L143"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_collaborator_greeterpy_2
+  - community/Community_680
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Slack Channel Setup]] - `contains` [EXTRACTED]
+- [[401 Unauthorized_4]] - `contains` [EXTRACTED]
+- [[CalendarContacts not found_4]] - `contains` [EXTRACTED]
+- [[Connection timeout_4]] - `contains` [EXTRACTED]
+- [[iCloud Services_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_collaborator_greeterpy_2
+#graphify/document #graphify/EXTRACTED #community/Community_680

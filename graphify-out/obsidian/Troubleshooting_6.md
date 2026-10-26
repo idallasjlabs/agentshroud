@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "openclaw/workspace/jira_dev_ticket.py"
-location: "L246"
+community: "Community 308"
+location: "L247"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/workspace/jira_dev_ticketpy
+  - community/Community_308
 ---
 
 # Troubleshooting
@@ -16,6 +16,6 @@ tags:
 - [[Token expired (SSO)_1]] - `contains` [EXTRACTED]
 - [[Unable to locate credentials_1]] - `contains` [EXTRACTED]
 - [[MCP Not Using Profile_1]] - `contains` [EXTRACTED]
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/Community_308

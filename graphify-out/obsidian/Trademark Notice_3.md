@@ -1,17 +1,21 @@
 ---
-source_file: "docker/config/hermes/SOUL.md"
+source_file: "docs/project/legal/TRADEMARK.md"
 type: "document"
-community: "test_ptt_state.c"
-location: "L81"
+community: "Community 1175"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_ptt_statec
+  - community/Community_1175
 ---
 
 # Trademark Notice
 
 ## Connections
-- [[AgentShroud Hermes — System Identity_2]] - `contains` [EXTRACTED]
+- [[Contact_2]] - `contains` [EXTRACTED]
+- [[Standard Footer]] - `contains` [EXTRACTED]
+- [[TRADEMARK]] - `contains` [EXTRACTED]
+- [[Trademark Details]] - `contains` [EXTRACTED]
+- [[Usage Guidelines_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_ptt_statec
+#graphify/document #graphify/EXTRACTED #community/Community_1175

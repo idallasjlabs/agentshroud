@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "document"
-community: "apply-patches.js (2)"
+community: "Community 827"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/apply-patchesjs_2
+  - community/Community_827
 ---
 
 # USPTO Trademark Application — AgentShroud™
@@ -16,8 +16,8 @@ tags:
 - [[Application Fields]] - `contains` [EXTRACTED]
 - [[Filing Instructions (TEAS Plus)]] - `contains` [EXTRACTED]
 - [[International Classification]] - `contains` [EXTRACTED]
-- [[Notes_8]] - `contains` [EXTRACTED]
+- [[Notes_2]] - `contains` [EXTRACTED]
 - [[Specimen]] - `contains` [EXTRACTED]
 - [[USPTO-APPLICATION]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/apply-patchesjs_2
+#graphify/document #graphify/EXTRACTED #community/Community_827

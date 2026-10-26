@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md"
 type: "document"
-community: "Restart Procedure"
+community: "Community 333"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Restart_Procedure
+  - community/Community_333
 ---
 
 # Troubleshooting Matrix.md
@@ -14,11 +14,12 @@ tags:
 ## Connections
 - [[Crash Recovery_1]] - `references` [EXTRACTED]
 - [[Error Index]] - `references` [EXTRACTED]
-- [[Health Checks]] - `references` [EXTRACTED]
+- [[Health Checks_1]] - `references` [EXTRACTED]
 - [[Kill Switch Procedure]] - `references` [EXTRACTED]
-- [[Startup Errors]] - `references` [EXTRACTED]
-- [[prompt_guard.py_1]] - `references` [INFERRED]
+- [[Startup Errors_1]] - `references` [EXTRACTED]
+- [[Troubleshooting Matrix_1]] - `contains` [EXTRACTED]
+- [[prompt_guard.py]] - `references` [INFERRED]
 - [[store.py]] - `references` [INFERRED]
-- [[troubleshooting_21]] - `contains` [EXTRACTED]
+- [[troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Restart_Procedure
+#graphify/document #graphify/EXTRACTED #community/Community_333

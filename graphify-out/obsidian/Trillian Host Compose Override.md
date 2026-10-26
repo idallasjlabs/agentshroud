@@ -1,11 +1,11 @@
 ---
 source_file: "docker/docker-compose.agentshroud-bot.trillian.yml"
 type: "document"
-community: "._redact_match"
+community: "Community 1391"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_redact_match
+  - community/Community_1391
 ---
 
 # Trillian Host Compose Override
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[upgrade.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_redact_match
+#graphify/document #graphify/EXTRACTED #community/Community_1391

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "colima-health-check.sh"
+community: "Community 18"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/Community_18
 ---
 
 # Top-level teams configuration parsed from agentshroud.yaml `teams:` section.
 
 ## Connections
-- [[TeamsConfig_1]] - `rationale_for` [EXTRACTED]
+- [[TeamsConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/rationale #graphify/EXTRACTED #community/Community_18

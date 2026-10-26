@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "AgentShroud™ CVE Mitigation Matrix"
+community: "Community 215"
 location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_CVE_Mitigation_Matrix
+  - community/Community_215
 ---
 
 # Three-status taxonomy (SCRUM-101, 2026-07-14)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Infrastructure — Container Image Vulnerabilities]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix
+#graphify/document #graphify/EXTRACTED #community/Community_215

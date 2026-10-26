@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
 type: "document"
-community: "TestDomainValidationHelper (2)"
+community: "Community 618"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestDomainValidationHelper_2
+  - community/Community_618
 ---
 
 # Threat Model
 
 ## Connections
-- [[trivy_report.py_2]] - `contains` [EXTRACTED]
+- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestDomainValidationHelper_2
+#graphify/document #graphify/EXTRACTED #community/Community_618

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-11-trust-boundary.svg"
 type: "concept"
-community: ".test_collaborator_rate_limit_notice_is_sent_for_each_limited_message()"
+community: "Community 968"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_collaborator_rate_limit_notice_is_sent_for_each_limited_message
+  - community/Community_968
 ---
 
 # Trust Zone 3 — External Services (Conditional)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Bot (no direct credentialinternet access)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_collaborator_rate_limit_notice_is_sent_for_each_limited_message
+#graphify/concept #graphify/EXTRACTED #community/Community_968

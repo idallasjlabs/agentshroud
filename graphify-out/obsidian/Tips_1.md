@@ -1,17 +1,17 @@
 ---
-source_file: "docs/user-guide.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: ".test_stranger_within_limit_triggers_approval_workflow()"
-location: "L48"
+community: "Community 356"
+location: "L192"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_stranger_within_limit_triggers_approval_workflow
+  - community/Community_356
 ---
 
 # Tips
 
 ## Connections
-- [[Interacting via Telegram]] - `contains` [EXTRACTED]
+- [[Canvas Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_stranger_within_limit_triggers_approval_workflow
+#graphify/document #graphify/EXTRACTED #community/Community_356

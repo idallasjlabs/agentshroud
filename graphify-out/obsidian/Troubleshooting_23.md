@@ -1,23 +1,21 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: ".opencode/agents/i-mcpm-aws-profile.md"
 type: "document"
-community: "LOW — Informational"
-location: "L787"
+community: "Community 202"
+location: "L248"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LOW__Informational
+  - community/Community_202
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[1Password Authentication Failed]] - `contains` [EXTRACTED]
-- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
-- [[Container Unhealthy_1]] - `contains` [EXTRACTED]
-- [[Gmail Connection Issues]] - `contains` [EXTRACTED]
-- [[Performance Issues_1]] - `contains` [EXTRACTED]
-- [[Port Already in Use_2]] - `contains` [EXTRACTED]
-- [[Tests Failing_1]] - `contains` [EXTRACTED]
+- [[Access Denied_5]] - `contains` [EXTRACTED]
+- [[Token expired (SSO)_5]] - `contains` [EXTRACTED]
+- [[Unable to locate credentials_5]] - `contains` [EXTRACTED]
+- [[MCP Not Using Profile_5]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LOW__Informational
+#graphify/document #graphify/EXTRACTED #community/Community_202

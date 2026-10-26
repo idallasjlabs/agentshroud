@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "Enum"
+community: "Community 8"
 location: "L27"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Enum
+  - community/Community_8
 ---
 
 # URLVerdict
 
 ## Connections
-- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[TestBase64Heuristic]] - `uses` [INFERRED]
 - [[TestDataExfiltration]] - `uses` [INFERRED]
 - [[TestLegitimateURLsAllowed]] - `uses` [INFERRED]
 - [[TestMalformedURLs]] - `uses` [INFERRED]
 - [[TestPIIInURLs]] - `uses` [INFERRED]
 - [[TestSSRFDetection]] - `uses` [INFERRED]
-- [[str_3]] - `inherits` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 - [[test_url_analyzer.py]] - `imports` [EXTRACTED]
-- [[url_analyzer.py_2]] - `contains` [EXTRACTED]
+- [[url_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enum
+#graphify/code #graphify/INFERRED #community/Community_8

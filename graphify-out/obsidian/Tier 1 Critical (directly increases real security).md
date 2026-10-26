@@ -1,17 +1,18 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-03.md"
 type: "document"
-community: "switch_model.sh"
+community: "Community 987"
 location: "L171"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/switch_modelsh
+  - community/Community_987
 ---
 
 # Tier 1: Critical (directly increases real security)
 
 ## Connections
-- [[3. Remaining Work — Prioritized by Value_3]] - `contains` [EXTRACTED]
+- [[3. Remaining Work — Prioritized by Value]] - `contains` [EXTRACTED]
+- [[4. Remaining Work — Prioritized by Value]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/switch_modelsh
+#graphify/document #graphify/EXTRACTED #community/Community_987

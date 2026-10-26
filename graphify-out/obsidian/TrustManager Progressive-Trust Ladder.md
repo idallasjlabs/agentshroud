@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "concept"
-community: "hermes/skills/i-icloud/scripts/calendar.js"
+community: "Community 901"
 location: "## [1.5.0]"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/hermes/skills/i-icloud/scripts/calendarjs
+  - community/Community_901
 ---
 
 # TrustManager Progressive-Trust Ladder
@@ -15,4 +15,4 @@ tags:
 - [[A2A Governance (A2APolicyEngine  A2AProxy)]] - `conceptually_related_to` [EXTRACTED]
 - [[AgentShroud Changelog]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/hermes/skills/i-icloud/scripts/calendarjs
+#graphify/concept #graphify/EXTRACTED #community/Community_901

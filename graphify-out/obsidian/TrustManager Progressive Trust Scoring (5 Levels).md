@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "concept"
-community: "Socrates — Dialogue Architect (2)"
+community: "Community 817"
 location: "Module 17"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect_2
+  - community/Community_817
 ---
 
 # TrustManager: Progressive Trust Scoring (5 Levels)
@@ -16,4 +16,4 @@ tags:
 - [[Red Team Assessment v1.2.0]] - `references` [EXTRACTED]
 - [[Security Module 27 Cross-Bot Trust Ledger (v1.2.0)]] - `implements` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_2
+#graphify/concept #graphify/EXTRACTED #community/Community_817

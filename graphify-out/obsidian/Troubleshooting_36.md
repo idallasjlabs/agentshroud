@@ -1,17 +1,20 @@
 ---
-source_file: "docker/bot-capabilities.md"
+source_file: "docker/scripts/README.md"
 type: "document"
-community: "TestRewriteRequestHeaders"
-location: "L211"
+community: "Community 510"
+location: "L247"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestRewriteRequestHeaders
+  - community/Community_510
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Credential Management - 1Password Integration]] - `contains` [EXTRACTED]
+- [[Missing auth for API providers]] - `contains` [EXTRACTED]
+- [[Container unhealthy]] - `contains` [EXTRACTED]
+- [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
+- [[Telegram bot not responding]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestRewriteRequestHeaders
+#graphify/document #graphify/EXTRACTED #community/Community_510

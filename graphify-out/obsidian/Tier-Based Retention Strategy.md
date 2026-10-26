@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Action"
+community: "Community 217"
 location: "L253"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Action
+  - community/Community_217
 ---
 
 # Tier-Based Retention Strategy
@@ -18,4 +18,4 @@ tags:
 - [[Tier 3 Debug and Diagnostic Events (1 Year)]] - `contains` [EXTRACTED]
 - [[Tier 4 High-Volume Events (90 Days)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Action
+#graphify/document #graphify/EXTRACTED #community/Community_217

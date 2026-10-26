@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "Community 99"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/Community_99
 ---
 
 # Tracks collaborator messages at the gateway level.      Records every inbound me
 
 ## Connections
-- [[CollaboratorActivityTracker_1]] - `rationale_for` [EXTRACTED]
+- [[CollaboratorActivityTracker]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_99

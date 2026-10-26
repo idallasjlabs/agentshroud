@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "rationale"
-community: "AlertDispatcher (3)"
+community: "Community 75"
 location: "L64"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/Community_75
 ---
 
 # Tracks per-user block counts and returns escalation actions.      Thread-safe fo
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ProgressiveLockdown]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_75

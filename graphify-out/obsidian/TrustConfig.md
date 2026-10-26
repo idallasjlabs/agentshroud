@@ -1,36 +1,36 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "soc/router.py"
+community: "Community 11"
 location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/soc/routerpy
+  - community/Community_11
 ---
 
 # TrustConfig
 
 ## Connections
-- [[dot-__init__()_28]] - `references` [EXTRACTED]
-- [[dot-__post_init__()_1]] - `method` [EXTRACTED]
-- [[dot-_pipeline_with_trust()]] - `calls` [EXTRACTED]
-- [[dot-_shared_tm()]] - `calls` [EXTRACTED]
-- [[dot-test_custom_points()]] - `calls` [EXTRACTED]
-- [[dot-test_default_config()_1]] - `calls` [EXTRACTED]
-- [[dot-test_empty_bot_list_does_not_raise()]] - `calls` [EXTRACTED]
-- [[dot-test_propagation_limited_to_max_depth()]] - `calls` [EXTRACTED]
-- [[dot-test_propagation_registers_unregistered_peer_agent()]] - `calls` [EXTRACTED]
-- [[dot-test_rate_limiting_prevents_rapid_escalation()]] - `calls` [EXTRACTED]
-- [[dot-test_single_bot_has_no_peers_and_does_not_raise()]] - `calls` [EXTRACTED]
-- [[dot-test_thresholds_populated()]] - `calls` [EXTRACTED]
-- [[dot-test_trust_escalation_attack()]] - `calls` [EXTRACTED]
-- [[dot-test_trust_level_progression()]] - `calls` [EXTRACTED]
+- [[.__init__()_127]] - `references` [EXTRACTED]
+- [[.__post_init__()_9]] - `method` [EXTRACTED]
+- [[._pipeline_with_trust()]] - `calls` [EXTRACTED]
+- [[._shared_tm()]] - `calls` [EXTRACTED]
+- [[.test_custom_points()]] - `calls` [EXTRACTED]
+- [[.test_default_config()_8]] - `calls` [EXTRACTED]
+- [[.test_empty_bot_list_does_not_raise()]] - `calls` [EXTRACTED]
+- [[.test_propagation_limited_to_max_depth()]] - `calls` [EXTRACTED]
+- [[.test_propagation_registers_unregistered_peer_agent()]] - `calls` [EXTRACTED]
+- [[.test_rate_limiting_prevents_rapid_escalation()]] - `calls` [EXTRACTED]
+- [[.test_single_bot_has_no_peers_and_does_not_raise()]] - `calls` [EXTRACTED]
+- [[.test_thresholds_populated()]] - `calls` [EXTRACTED]
+- [[.test_trust_escalation_attack()]] - `calls` [EXTRACTED]
+- [[.test_trust_level_progression()]] - `calls` [EXTRACTED]
 - [[CrossBotTrustLedger_1]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[ProgressiveTrustConfig_1]] - `uses` [INFERRED]
+- [[PIISanitizer_3]] - `uses` [INFERRED]
+- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
 - [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[TestActionGating]] - `uses` [INFERRED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAgentRegistration]] - `uses` [INFERRED]
@@ -70,7 +70,7 @@ tags:
 - [[TestIncidentPropagation]] - `uses` [INFERRED]
 - [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
-- [[TestPersistence]] - `uses` [INFERRED]
+- [[TestPersistence_2]] - `uses` [INFERRED]
 - [[TestProgressiveTrustConfigUnit]] - `uses` [INFERRED]
 - [[TestPromptGuard_1]] - `uses` [INFERRED]
 - [[TestPromptGuardEvasion]] - `uses` [INFERRED]
@@ -79,7 +79,7 @@ tags:
 - [[TestToolACLComposition]] - `uses` [INFERRED]
 - [[TestToolGating]] - `uses` [INFERRED]
 - [[TestTrustDecayPolicyValidation]] - `uses` [INFERRED]
-- [[TestTrustLevels]] - `uses` [INFERRED]
+- [[TestTrustLevels_1]] - `uses` [INFERRED]
 - [[TestTrustManager]] - `uses` [INFERRED]
 - [[TestTrustManagerHardened]] - `uses` [INFERRED]
 - [[TestTrustProgression]] - `uses` [INFERRED]
@@ -88,8 +88,8 @@ tags:
 - [[TrustDecayPolicy_1]] - `uses` [INFERRED]
 - [[TrustLevel]] - `uses` [INFERRED]
 - [[TrustLevel_2]] - `uses` [INFERRED]
+- [[TrustManager_3]] - `uses` [INFERRED]
 - [[TrustManager_4]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 - [[_BrokenOutputCanary]] - `uses` [INFERRED]
 - [[_BrokenSanitizer]] - `uses` [INFERRED]
@@ -101,7 +101,7 @@ tags:
 - [[_make_tm()]] - `calls` [EXTRACTED]
 - [[hermes_tm()]] - `calls` [EXTRACTED]
 - [[openclaw_tm()]] - `calls` [EXTRACTED]
-- [[strict_config()_1]] - `calls` [EXTRACTED]
+- [[strict_config()_3]] - `calls` [EXTRACTED]
 - [[test_cross_bot_trust_ledger.py]] - `imports` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
@@ -110,8 +110,8 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_trust_manager.py]] - `imports` [EXTRACTED]
-- [[trust_manager()_1]] - `calls` [EXTRACTED]
 - [[trust_manager()_2]] - `calls` [EXTRACTED]
+- [[trust_manager()_3]] - `calls` [EXTRACTED]
 - [[trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/soc/routerpy
+#graphify/code #graphify/INFERRED #community/Community_11

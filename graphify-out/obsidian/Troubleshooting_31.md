@@ -1,17 +1,21 @@
 ---
-source_file: "shortcuts/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "GitHub Copilot CLI Setup Guide"
-location: "L291"
+community: "Community 317"
+location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide
+  - community/Community_317
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[iOS  macOS Shortcuts — Relay to AgentShroud]] - `contains` [EXTRACTED]
+- [[Access Denied_6]] - `contains` [EXTRACTED]
+- [[Token expired (SSO)_6]] - `contains` [EXTRACTED]
+- [[Unable to locate credentials_6]] - `contains` [EXTRACTED]
+- [[MCP Not Using Profile_6]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_317

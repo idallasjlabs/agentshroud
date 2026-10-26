@@ -1,17 +1,17 @@
 ---
 source_file: "docs/requirements/use-cases.md"
 type: "document"
-community: "compose_generator.py"
+community: "Community 779"
 location: "L148"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/compose_generatorpy
+  - community/Community_779
 ---
 
 # UC-005: Agent Requests SSH Access (Approval Queue)
 
 ## Connections
-- [[Use Cases_3]] - `contains` [EXTRACTED]
+- [[Use Cases_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/compose_generatorpy
+#graphify/document #graphify/EXTRACTED #community/Community_779

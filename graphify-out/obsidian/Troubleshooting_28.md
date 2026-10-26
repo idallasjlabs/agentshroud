@@ -1,20 +1,22 @@
 ---
-source_file: "docs/operations/raspberry-pi.md"
+source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "MCPAuditTrail"
-location: "L123"
+community: "Community 276"
+location: "L281"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCPAuditTrail
+  - community/Community_276
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Container Won't Start_2]] - `contains` [EXTRACTED]
-- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - `contains` [EXTRACTED]
-- [[Out-of-Memory (OOM) Kills]] - `contains` [EXTRACTED]
-- [[Slow Builds_1]] - `contains` [EXTRACTED]
+- [[Action requires approval but none granted_6]] - `contains` [EXTRACTED]
+- [[Browser timeout_6]] - `contains` [EXTRACTED]
+- [[CAPTCHA detected_6]] - `contains` [EXTRACTED]
+- [[Rate limit exceeded_6]] - `contains` [EXTRACTED]
+- [[URL not in allowlist_6]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCPAuditTrail
+#graphify/document #graphify/EXTRACTED #community/Community_276

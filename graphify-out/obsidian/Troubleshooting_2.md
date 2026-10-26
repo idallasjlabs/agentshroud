@@ -1,22 +1,21 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: ".agents/agents/i-mcpm-aws-profile.md"
 type: "document"
-community: "test_security.py (2)"
-location: "L293"
+community: "Community 171"
+location: "L249"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_securitypy_2
+  - community/Community_171
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Approval required but none granted]] - `contains` [EXTRACTED]
-- [[Browser timeout]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected]] - `contains` [EXTRACTED]
-- [[Credential extraction blocked]] - `contains` [EXTRACTED]
-- [[URL not in allowlist]] - `contains` [EXTRACTED]
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[Access Denied]] - `contains` [EXTRACTED]
+- [[Token expired (SSO)]] - `contains` [EXTRACTED]
+- [[Unable to locate credentials]] - `contains` [EXTRACTED]
+- [[MCP Not Using Profile]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_securitypy_2
+#graphify/document #graphify/EXTRACTED #community/Community_171

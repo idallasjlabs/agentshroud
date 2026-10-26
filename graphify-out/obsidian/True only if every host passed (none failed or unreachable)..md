@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "rationale"
-community: "parse_trivy_output"
+community: "Community 514"
 location: "L144"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/parse_trivy_output
+  - community/Community_514
 ---
 
 # True only if every host passed (none failed or unreachable).
 
 ## Connections
-- [[dot-all_ok()]] - `rationale_for` [EXTRACTED]
+- [[.all_ok()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/parse_trivy_output
+#graphify/rationale #graphify/EXTRACTED #community/Community_514

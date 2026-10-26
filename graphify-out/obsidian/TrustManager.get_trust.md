@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "test_hermes_model_resolver.py (2)"
+community: "Community 221"
 location: "176"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy_2
+  - graphify/INFERRED
+  - community/Community_221
 ---
 
 # TrustManager.get_trust
@@ -15,4 +15,4 @@ tags:
 - [[A2AGovernanceProxy._check_peer]] - `shares_data_with` [INFERRED]
 - [[TrustManager.is_tool_allowed]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy_2
+#graphify/code #graphify/INFERRED #community/Community_221

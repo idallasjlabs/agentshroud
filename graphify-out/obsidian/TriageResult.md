@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "._run_and_read"
+community: "Community 8"
 location: "L815"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run_and_read
+  - community/Community_8
 ---
 
 # TriageResult
@@ -15,11 +15,11 @@ tags:
 - [[The verdict for one advisory.]] - `rationale_for` [EXTRACTED]
 - [[final_status()]] - `references` [EXTRACTED]
 - [[render_gap_report()]] - `references` [EXTRACTED]
-- [[rewrite_registry_text()]] - `references` [EXTRACTED]
+- [[rewrite_registry_text()_1]] - `references` [EXTRACTED]
 - [[summarize()]] - `references` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 - [[triage_agent()]] - `references` [EXTRACTED]
 - [[triage_agent_full()]] - `references` [EXTRACTED]
-- [[triage_entry()]] - `calls` [EXTRACTED]
+- [[triage_entry()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run_and_read
+#graphify/code #graphify/EXTRACTED #community/Community_8

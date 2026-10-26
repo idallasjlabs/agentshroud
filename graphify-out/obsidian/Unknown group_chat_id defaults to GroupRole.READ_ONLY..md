@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "test_soc_bots.py"
+community: "Community 1052"
 location: "L132"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/Community_1052
 ---
 
 # Unknown group_chat_id defaults to GroupRole.READ_ONLY.
 
 ## Connections
-- [[dot-test_unknown_group_defaults_to_readonly()]] - `rationale_for` [EXTRACTED]
+- [[.test_unknown_group_defaults_to_readonly()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/rationale #graphify/EXTRACTED #community/Community_1052

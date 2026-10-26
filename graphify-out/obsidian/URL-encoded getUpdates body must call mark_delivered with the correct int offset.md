@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "test_telegram_proxy_outbound.py"
+community: "Community 2009"
 location: "L4637"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy
+  - community/Community_2009
 ---
 
 # URL-encoded getUpdates body must call mark_delivered with the correct int offset
 
 ## Connections
-- [[dot-test_url_encoded_body_calls_mark_delivered()]] - `rationale_for` [EXTRACTED]
+- [[.test_url_encoded_body_calls_mark_delivered()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_2009

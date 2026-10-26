@@ -1,20 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
+source_file: ".omp/agents/i-mcpm-aws-profile.md"
 type: "document"
-community: "Skill: UI Expert (UI) (3)"
-location: "L142"
+community: "Community 183"
+location: "L248"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UI_Expert_UI_3
+  - community/Community_183
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[401 Unauthorized_1]] - `contains` [EXTRACTED]
-- [[CalendarContacts not found_1]] - `contains` [EXTRACTED]
-- [[Connection timeout_1]] - `contains` [EXTRACTED]
-- [[iCloud Services_1]] - `contains` [EXTRACTED]
+- [[Access Denied_4]] - `contains` [EXTRACTED]
+- [[Token expired (SSO)_4]] - `contains` [EXTRACTED]
+- [[Unable to locate credentials_4]] - `contains` [EXTRACTED]
+- [[MCP Not Using Profile_4]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI_3
+#graphify/document #graphify/EXTRACTED #community/Community_183

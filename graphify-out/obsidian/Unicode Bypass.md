@@ -1,13 +1,13 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "remote_log.h (WS-mirrored diagnostic log declaration)"
+community: "Community 1749"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/remote_logh_WS-mirrored_diagnostic_log_declaration
+  - community/Community_1749
 ---
 
 # Unicode Bypass
 
-#graphify/concept #graphify/EXTRACTED #community/remote_logh_WS-mirrored_diagnostic_log_declaration
+#graphify/concept #graphify/EXTRACTED #community/Community_1749

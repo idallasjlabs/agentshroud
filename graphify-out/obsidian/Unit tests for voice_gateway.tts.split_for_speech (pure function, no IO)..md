@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "WebProxyConfig (3)"
+community: "Community 847"
 location: "L440"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxyConfig_3
+  - community/Community_847
 ---
 
 # Unit tests for voice_gateway.tts.split_for_speech (pure function, no I/O).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSplitForSpeech]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_847

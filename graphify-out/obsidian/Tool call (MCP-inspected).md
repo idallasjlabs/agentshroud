@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-09-data-lineage.svg"
 type: "concept"
-community: "Docker Commands Reference"
+community: "Community 815"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Docker_Commands_Reference
+  - community/Community_815
 ---
 
 # Tool call (MCP-inspected)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[LLM API call (sanitized text only)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Docker_Commands_Reference
+#graphify/concept #graphify/EXTRACTED #community/Community_815

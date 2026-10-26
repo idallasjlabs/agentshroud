@@ -1,20 +1,22 @@
 ---
-source_file: "docs/setup/DEVICE_PAIRING.md"
+source_file: ".github/agents/i-mcpm-auth-reset.agent.md"
 type: "document"
-community: "AgentShroud v0.7.0 Enforcement Audit Results (2)"
-location: "L333"
+community: "Community 239"
+location: "L166"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Enforcement_Audit_Results_2
+  - community/Community_239
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
-- [[Problem pairing required but no pending requests]] - `contains` [EXTRACTED]
-- [[Problem Approved device still can't connect]] - `contains` [EXTRACTED]
-- [[Problem Too many pending requests]] - `contains` [EXTRACTED]
+- [[AWS Token expired (SSO)_3]] - `contains` [EXTRACTED]
+- [[AWS Unable to locate credentials_3]] - `contains` [EXTRACTED]
+- [[Atlassian OAuth flow failed_3]] - `contains` [EXTRACTED]
+- [[GitHub Bad credentials_3]] - `contains` [EXTRACTED]
+- [[GitHub Docker image not found_3]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results_2
+#graphify/document #graphify/EXTRACTED #community/Community_239

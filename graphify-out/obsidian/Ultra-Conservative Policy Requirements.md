@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "agentshroud-bot (2)"
+community: "Community 619"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-bot_2
+  - community/Community_619
 ---
 
 # Ultra-Conservative Policy Requirements
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🎯 Policy Compliance Check]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-bot_2
+#graphify/document #graphify/EXTRACTED #community/Community_619

@@ -1,20 +1,20 @@
 ---
-source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
+source_file: ".opencode/agents/icloud.md"
 type: "document"
-community: "test_anthropic_openai_translator.py"
-location: "L277"
+community: "Community 706"
+location: "L143"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy
+  - community/Community_706
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
-- [[killswitch.sh doesn't confirm]] - `contains` [EXTRACTED]
-- [[scan.sh reports missing OpenSCAP]] - `contains` [EXTRACTED]
-- [[verify-security.sh fails]] - `contains` [EXTRACTED]
+- [[401 Unauthorized_5]] - `contains` [EXTRACTED]
+- [[CalendarContacts not found_5]] - `contains` [EXTRACTED]
+- [[Connection timeout_5]] - `contains` [EXTRACTED]
+- [[iCloud Services_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy
+#graphify/document #graphify/EXTRACTED #community/Community_706

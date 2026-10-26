@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/gemini_openai_translator.py"
 type: "rationale"
-community: "BotConfig"
+community: "Community 361"
 location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/Community_361
 ---
 
 # Translate an OpenAI chat/completions request body to Gemini's     generateConten
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[openai_to_gemini_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/BotConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_361

@@ -1,23 +1,19 @@
 ---
-source_file: "docs/ssh-security-review.md"
+source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "_llm_init_agent_reference_paths()"
-location: "L5"
+community: "Community 453"
+location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_llm_init_agent_reference_paths
+  - community/Community_453
 ---
 
 # Threat Model
 
 ## Connections
-- [[1. Command Injection]] - `contains` [EXTRACTED]
-- [[2. Host Spoofing  Man-in-the-Middle]] - `contains` [EXTRACTED]
-- [[3. Credential Theft]] - `contains` [EXTRACTED]
-- [[4. Privilege Escalation]] - `contains` [EXTRACTED]
-- [[6. Audit Log Tampering  PII Leakage]] - `contains` [EXTRACTED]
-- [[D - Denial of Service]] - `contains` [EXTRACTED]
-- [[SSH Security Review]] - `contains` [EXTRACTED]
+- [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
+- [[What We Don't Protect Against]] - `contains` [EXTRACTED]
+- [[What We Protect Against]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_llm_init_agent_reference_paths
+#graphify/document #graphify/EXTRACTED #community/Community_453

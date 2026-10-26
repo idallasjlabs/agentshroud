@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "record_decision()"
+community: "Community 221"
 location: "233"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/record_decision
+  - community/Community_221
 ---
 
 # ToolACLEnforcer.can_use_tool
@@ -17,4 +17,4 @@ tags:
 - [[can_use_tool_from_origin]] - `calls` [EXTRACTED]
 - [[record_decision()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/record_decision
+#graphify/code #graphify/EXTRACTED #community/Community_221

@@ -1,44 +1,25 @@
 ---
-source_file: "gateway/proxy/mcp_inspector.py"
+source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "MCPToolCall"
-location: "L66"
+community: "Community 152"
+location: "L23"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPToolCall
+  - community/Community_152
 ---
 
 # ThreatLevel
 
 ## Connections
-- [[dot-highest_threat()]] - `references` [EXTRACTED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
-- [[TestAllowDenyList]] - `uses` [INFERRED]
-- [[TestAuditQueries]] - `uses` [INFERRED]
-- [[TestAuditTrail_2]] - `uses` [INFERRED]
-- [[TestAuditTrailBounded]] - `uses` [INFERRED]
-- [[TestChainIntegrityMultiple]] - `uses` [INFERRED]
-- [[TestConfigParsing]] - `uses` [INFERRED]
-- [[TestExecuteResultInspectionBinding]] - `uses` [INFERRED]
-- [[TestHashChainIntegration]] - `uses` [INFERRED]
-- [[TestInjectionDetection]] - `uses` [INFERRED]
-- [[TestInspectorEdgeCases]] - `uses` [INFERRED]
-- [[TestPIIDetection_1]] - `uses` [INFERRED]
-- [[TestPassthroughMode_1]] - `uses` [INFERRED]
-- [[TestPrivacyPolicyEvents]] - `uses` [INFERRED]
-- [[TestProcessingTime]] - `uses` [INFERRED]
-- [[TestProxyInterception]] - `uses` [INFERRED]
-- [[TestProxyPermissions]] - `uses` [INFERRED]
-- [[TestProxyRateLimiting]] - `uses` [INFERRED]
-- [[TestProxyResultProcessing]] - `uses` [INFERRED]
-- [[TestProxyStats]] - `uses` [INFERRED]
-- [[TestSensitiveOps]] - `uses` [INFERRED]
-- [[TestSuspiciousEncoding]] - `uses` [INFERRED]
-- [[TestThreatLevelCalc]] - `uses` [INFERRED]
-- [[Threat level classification.]] - `rationale_for` [EXTRACTED]
-- [[mcp_inspector.py]] - `contains` [EXTRACTED]
-- [[proxy__init__.py]] - `imports` [EXTRACTED]
-- [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
+- [[.check_url_reputation()]] - `references` [EXTRACTED]
+- [[IntEnum]] - `inherits` [EXTRACTED]
+- [[MockThreatLevel]] - `shares_data_with` [AMBIGUOUS]
+- [[TestCredentialProtection]] - `uses` [INFERRED]
+- [[TestScreenshotAnalysis]] - `uses` [INFERRED]
+- [[TestSocialEngineeringDetection]] - `uses` [INFERRED]
+- [[TestURLReputation]] - `uses` [INFERRED]
+- [[ThreatLevel_2]] - `semantically_similar_to` [INFERRED]
+- [[browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPToolCall
+#graphify/code #graphify/INFERRED #community/Community_152

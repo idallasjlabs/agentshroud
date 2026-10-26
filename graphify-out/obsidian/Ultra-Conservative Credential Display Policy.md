@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY-POLICY-FINAL.md"
 type: "rationale"
-community: "BotConfig (2)"
+community: "Community 1315"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/BotConfig_2
+  - community/Community_1315
 ---
 
 # Ultra-Conservative Credential Display Policy
@@ -16,4 +16,4 @@ tags:
 - [[SECURITY-POLICY-FINAL]] - `references` [EXTRACTED]
 - [[SECURITY_VALUE_PROPOSITION]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/BotConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_1315
