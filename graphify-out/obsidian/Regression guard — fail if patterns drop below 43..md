@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "rationale"
-community: "Google Services Setup - Calendar, Contacts, Keep"
+community: "Community 304"
 location: "L165"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Google_Services_Setup_-_Calendar_Contacts_Keep
+  - community/Community_304
 ---
 
 # Regression guard — fail if patterns drop below 43.
 
 ## Connections
-- [[dot-test_pattern_count()]] - `rationale_for` [EXTRACTED]
+- [[.test_pattern_count()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Google_Services_Setup_-_Calendar_Contacts_Keep
+#graphify/rationale #graphify/EXTRACTED #community/Community_304

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "_make_proxy()"
+community: "Community 6"
 location: "L215"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_6
 ---
 
 # Query ledger entries with pagination and filters          Args:             page
 
 ## Connections
-- [[dot-query()]] - `rationale_for` [EXTRACTED]
+- [[.query()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_6

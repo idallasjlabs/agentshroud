@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/falco-rules.md"
+source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "document"
-community: "falco-rules.yaml"
-location: "L64"
+community: "Community 94"
+location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/falco-rulesyaml
+  - community/Community_94
 ---
 
 # Related Notes
 
 ## Connections
-- [[falco-rules.yaml]] - `contains` [EXTRACTED]
+- [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/falco-rulesyaml
+#graphify/document #graphify/EXTRACTED #community/Community_94

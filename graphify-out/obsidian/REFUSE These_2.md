@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-gg/SKILL.md"
+source_file: ".cursor/agents/i-gg.md"
 type: "document"
-community: "LVGL Kawaii Face Component CMakeLists"
-location: "L61"
+community: "Community 1956"
+location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LVGL_Kawaii_Face_Component_CMakeLists
+  - community/Community_1956
 ---
 
 # REFUSE These
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Git Workflow Guardian (GIT-GUARD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LVGL_Kawaii_Face_Component_CMakeLists
+#graphify/document #graphify/EXTRACTED #community/Community_1956

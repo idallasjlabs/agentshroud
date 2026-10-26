@@ -1,34 +1,20 @@
 ---
-source_file: "gateway/tests/test_rbac.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Canvas Skill"
-location: "L471"
+community: "Community 6"
+location: "L64"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Canvas_Skill
+  - graphify/INFERRED
+  - community/Community_6
 ---
 
 # RBACConfig
 
 ## Connections
-- [[dot-_make_rbac()]] - `references` [EXTRACTED]
-- [[dot-setup_method()_30]] - `calls` [EXTRACTED]
-- [[dot-test_default_config_initialization()]] - `calls` [EXTRACTED]
-- [[dot-test_get_users_by_role()]] - `calls` [EXTRACTED]
-- [[dot-test_owner_and_collaborators_can_be_overridden_from_env()]] - `calls` [EXTRACTED]
-- [[dot-test_pause_does_not_remove_from_collaborator_role()]] - `calls` [EXTRACTED]
-- [[dot-test_removed_dynamic_collaborator_excluded_from_effective_set()]] - `calls` [EXTRACTED]
-- [[dot-test_removed_hardcoded_collaborator_excluded_from_effective_set()]] - `calls` [EXTRACTED]
-- [[dot-test_role_assignment()]] - `calls` [EXTRACTED]
-- [[dot-test_role_hierarchy_checks()]] - `calls` [EXTRACTED]
-- [[Action_3]] - `uses` [INFERRED]
-- [[GroupRegistry]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[RBACManager_2]] - `uses` [INFERRED]
-- [[Resource_2]] - `uses` [INFERRED]
-- [[Role_64]] - `uses` [INFERRED]
-- [[ToolTier_1]] - `uses` [INFERRED]
+- [[.__init__()_112]] - `references` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Canvas_Skill
+#graphify/code #graphify/INFERRED #community/Community_6

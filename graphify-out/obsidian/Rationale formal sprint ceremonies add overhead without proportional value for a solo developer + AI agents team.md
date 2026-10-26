@@ -1,11 +1,11 @@
 ---
 source_file: "docs/governance/SPRINT_CADENCE.md"
 type: "rationale"
-community: "AgentShroud User Guide"
+community: "Community 326"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_User_Guide
+  - community/Community_326
 ---
 
 # Rationale: formal sprint ceremonies add overhead without proportional value for a solo developer + AI agents team
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[GSD (Get Shit Done) cadence — adopted in place of formal ScrumSAFe sprints]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_User_Guide
+#graphify/rationale #graphify/EXTRACTED #community/Community_326

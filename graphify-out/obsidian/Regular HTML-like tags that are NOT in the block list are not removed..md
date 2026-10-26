@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "rationale"
-community: "test_filter_xml_blocks.py"
+community: "Community 147"
 location: "L178"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_filter_xml_blockspy
+  - community/Community_147
 ---
 
 # Regular HTML-like tags that are NOT in the block list are not removed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_does_not_filter_regular_html_tags()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_filter_xml_blockspy
+#graphify/rationale #graphify/EXTRACTED #community/Community_147

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/red-team-assessment-v1.2.0.md"
 type: "document"
-community: "Error Index.md (4)"
+community: "Community 1005"
 location: "L390"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd_4
+  - community/Community_1005
 ---
 
 # RT-MB4 — Hermes cron job injection via jobs.yaml
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[§5 — Acceptance Rationales (Signed Off)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_4
+#graphify/document #graphify/EXTRACTED #community/Community_1005

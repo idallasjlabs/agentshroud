@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/volumes.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
 type: "document"
-community: "AgentShroud v0.8.0 \"Watchtower\" — Comprehensive Wiring Audit"
-location: "L90"
+community: "Community 1016"
+location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Watchtower__Comprehensive_Wiring_Audit
+  - community/Community_1016
 ---
 
 # Related Notes
 
 ## Connections
-- [[Docker Volumes]] - `contains` [EXTRACTED]
+- [[PII Pipeline Errors_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Comprehensive_Wiring_Audit
+#graphify/document #graphify/EXTRACTED #community/Community_1016

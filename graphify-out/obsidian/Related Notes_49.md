@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openscap.md"
+source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "AuditExporter (2)"
-location: "L64"
+community: "Community 1015"
+location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditExporter_2
+  - community/Community_1015
 ---
 
 # Related Notes
 
 ## Connections
-- [[OpenSCAP_1]] - `contains` [EXTRACTED]
+- [[spaCy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditExporter_2
+#graphify/document #graphify/EXTRACTED #community/Community_1015

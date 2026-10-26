@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "rationale"
-community: "skill.json"
+community: "Community 691"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/skilljson
+  - community/Community_691
 ---
 
 # Read-Only Root FS Constraint — what breaks without proper mounts
@@ -16,4 +16,4 @@ tags:
 - [[Phase 3 Container Security Hardening Baseline]] - `conceptually_related_to` [INFERRED]
 - [[toggle-readonly.sh mode switcher]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/skilljson
+#graphify/rationale #graphify/INFERRED #community/Community_691

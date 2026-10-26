@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md"
+source_file: "docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark (3)"
-location: "L143"
+community: "Community 578"
+location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark_3
+  - community/Community_578
 ---
 
 # Related Notes
 
 ## Connections
-- [[troubleshooting_21]] - `contains` [EXTRACTED]
+- [[ANTHROPIC_BASE_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark_3
+#graphify/document #graphify/EXTRACTED #community/Community_578

@@ -1,22 +1,23 @@
 ---
-source_file: "gateway/tests/test_tool_acl.py"
+source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "MiddlewareManager (2)"
-location: "L28"
+community: "Community 6"
+location: "L26"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MiddlewareManager_2
+  - community/Community_6
 ---
 
 # RBACConfig
 
 ## Connections
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_64]] - `uses` [INFERRED]
-- [[TeamsConfig_1]] - `uses` [INFERRED]
-- [[ToolACLConfig]] - `uses` [INFERRED]
-- [[ToolACLEnforcer]] - `uses` [INFERRED]
+- [[PrivacyPolicy]] - `uses` [INFERRED]
+- [[PrivacyPolicyEnforcer]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[ServicePrivacy]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[_make_rbac()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager_2
+#graphify/code #graphify/INFERRED #community/Community_6

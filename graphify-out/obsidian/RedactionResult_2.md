@@ -1,43 +1,19 @@
 ---
-source_file: "gateway/ingest_api/models.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "openclaw/skills/i-cr/SKILL.md"
-location: "L207"
+community: "Community 532"
+location: "L39"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - graphify/EXTRACTED
+  - community/Community_532
 ---
 
 # RedactionResult
 
 ## Connections
-- [[dot-test_email_content_scanning()]] - `calls` [EXTRACTED]
-- [[dot-test_icloud_contact_scanning()]] - `calls` [EXTRACTED]
-- [[dot-test_process_tool_result_success()]] - `calls` [EXTRACTED]
-- [[dot-test_sanitize_dict_with_pii()]] - `calls` [EXTRACTED]
-- [[dot-test_sanitize_string_with_pii()]] - `calls` [EXTRACTED]
-- [[dot-test_tool_specific_configuration()]] - `calls` [EXTRACTED]
-- [[Any_41]] - `uses` [INFERRED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
-- [[PIISanitizer_1]] - `uses` [INFERRED]
-- [[PIISanitizer_3]] - `uses` [INFERRED]
-- [[RedactionResult]] - `uses` [INFERRED]
-- [[RedactionResult_1]] - `uses` [INFERRED]
-- [[Result of PII sanitization]] - `rationale_for` [EXTRACTED]
-- [[TestConfidenceFloor]] - `uses` [INFERRED]
-- [[TestConfigurationLoading]] - `uses` [INFERRED]
-- [[TestMiddlewareIntegration]] - `uses` [INFERRED]
-- [[TestRealWorldScenarios]] - `uses` [INFERRED]
-- [[TestToolResultPIIConfig]] - `uses` [INFERRED]
-- [[TestToolResultSanitizer]] - `uses` [INFERRED]
-- [[ToolResultPIIConfig]] - `uses` [INFERRED]
-- [[ToolResultSanitizer]] - `uses` [INFERRED]
-- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
-- [[sanitizer.py]] - `imports` [EXTRACTED]
-- [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
-- [[tool_result_sanitizer.py]] - `imports` [EXTRACTED]
+- [[.scan_response()_2]] - `references` [EXTRACTED]
+- [[Result of scanning and redacting content.]] - `rationale_for` [EXTRACTED]
+- [[prompt_protection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/Community_532

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "UserSessionManager (2) (2)"
+community: "Community 34"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager_2_2
+  - community/Community_34
 ---
 
 # Raised when forwarding to agent fails
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ForwardError]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_2_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_34

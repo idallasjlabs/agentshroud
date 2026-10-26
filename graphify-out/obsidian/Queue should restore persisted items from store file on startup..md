@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "MiddlewareManager (3)"
+community: "Community 41"
 location: "L366"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3
+  - community/Community_41
 ---
 
 # Queue should restore persisted items from store file on startup.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_store_restores_items_on_init()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_41

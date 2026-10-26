@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md"
 type: "document"
-community: "TeamsConfig (3)"
+community: "Community 357"
 location: "L105"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TeamsConfig_3
+  - community/Community_357
 ---
 
 # R2-M1: Missing `aiohttp` in `requirements.txt`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MEDIUM Findings]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TeamsConfig_3
+#graphify/document #graphify/EXTRACTED #community/Community_357

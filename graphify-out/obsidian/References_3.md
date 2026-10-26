@@ -1,17 +1,17 @@
 ---
-source_file: "docs/governance/AGENT_ROLES.md"
+source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (2)"
-location: "L81"
+community: "Community 330"
+location: "L329"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_2
+  - community/Community_330
 ---
 
 # References
 
 ## Connections
-- [[Multi-Agent Role Matrix]] - `contains` [EXTRACTED]
+- [[AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_2
+#graphify/document #graphify/EXTRACTED #community/Community_330

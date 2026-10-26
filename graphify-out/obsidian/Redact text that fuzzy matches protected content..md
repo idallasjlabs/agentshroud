@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "AgentShroud Module Inventory"
+community: "Community 532"
 location: "L274"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Module_Inventory
+  - community/Community_532
 ---
 
 # Redact text that fuzzy matches protected content.
 
 ## Connections
-- [[dot-_redact_fuzzy_match()]] - `rationale_for` [EXTRACTED]
+- [[._redact_fuzzy_match()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Module_Inventory
+#graphify/rationale #graphify/EXTRACTED #community/Community_532

@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "ToolChainAnalyzer.analyze_tool_call"
+community: "Community 1146"
 location: "L274"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzeranalyze_tool_call
+  - community/Community_1146
 ---
 
 # RULE D — TEST TABLE FORMAT FOR STATUS REPORTS
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[2) ⚠️ NO SECURITY THEATER (NON-NEGOTIABLE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ToolChainAnalyzeranalyze_tool_call
+#graphify/document #graphify/EXTRACTED #community/Community_1146

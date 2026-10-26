@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
+source_file: "docker/scripts/README.md"
 type: "document"
-community: "Browser-Fetch Skill for 1Password Share Links"
-location: "L381"
+community: "Community 469"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser-Fetch_Skill_for_1Password_Share_Links
+  - community/Community_469
 ---
 
 # Quick Reference
 
 ## Connections
-- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
+- [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser-Fetch_Skill_for_1Password_Share_Links
+#graphify/document #graphify/EXTRACTED #community/Community_469

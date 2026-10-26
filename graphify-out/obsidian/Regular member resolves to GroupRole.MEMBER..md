@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "test_soc_bots.py"
+community: "Community 1052"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/Community_1052
 ---
 
 # Regular member resolves to GroupRole.MEMBER.
 
 ## Connections
-- [[dot-test_member_resolves_to_member_role()]] - `rationale_for` [EXTRACTED]
+- [[.test_member_resolves_to_member_role()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/rationale #graphify/EXTRACTED #community/Community_1052

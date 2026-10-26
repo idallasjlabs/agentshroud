@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.0/ROADMAP-POST-v1.0.md"
 type: "document"
-community: "AgentShroud Sequence Diagrams (doc)"
+community: "Community 1133"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Sequence_Diagrams_doc
+  - community/Community_1133
 ---
 
 # ROADMAP-POST-v1.0.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Post-v1.0.0 Roadmap]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Sequence_Diagrams_doc
+#graphify/document #graphify/EXTRACTED #community/Community_1133

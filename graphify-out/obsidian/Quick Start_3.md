@@ -1,17 +1,17 @@
 ---
-source_file: "docker/README.md"
+source_file: "skills/openclaw/summarize/SKILL.md"
 type: "document"
-community: "TestMultilingualInjection"
-location: "L9"
+community: "Community 428"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMultilingualInjection
+  - community/Community_428
 ---
 
-# Quick Start
+# Quick start
 
 ## Connections
-- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
+- [[Summarize]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMultilingualInjection
+#graphify/document #graphify/EXTRACTED #community/Community_428

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Skill: Project Management (PM)"
+community: "Community 490"
 location: "L185"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM
+  - community/Community_490
 ---
 
 # Red Team Testing (Most Valuable!)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[How to Contribute]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM
+#graphify/document #graphify/EXTRACTED #community/Community_490

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "AgentShroud Security Value Proposition"
+community: "Community 232"
 location: "L332"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition
+  - community/Community_232
 ---
 
 # Redact admin-private data from tool results for non-owner agents.
 
 ## Connections
-- [[dot-_sanitize_admin_private_data()]] - `rationale_for` [EXTRACTED]
+- [[._sanitize_admin_private_data()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition
+#graphify/rationale #graphify/EXTRACTED #community/Community_232

@@ -1,17 +1,17 @@
 ---
-source_file: "CONTRIBUTING.md"
+source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "version_routes.py"
-location: "L98"
+community: "Community 1992"
+location: "L440"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/Community_1992
 ---
 
 # Questions?
 
 ## Connections
-- [[Contributing to AgentShroud™]] - `contains` [EXTRACTED]
+- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/version_routespy
+#graphify/document #graphify/EXTRACTED #community/Community_1992

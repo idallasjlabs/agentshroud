@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "Community 978"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Community_978
 ---
 
 # Regression (SCRUM-61): /api/alerts used to call event_bus.publish(),     a metho
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_api_alerts_endpoint_emits_bus_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_978

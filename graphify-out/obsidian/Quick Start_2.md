@@ -1,17 +1,17 @@
 ---
-source_file: "README.md"
+source_file: "skills/openclaw/openai-whisper-api/SKILL.md"
 type: "document"
-community: "AuditExporter"
-location: "L409"
+community: "Community 772"
+location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/Community_772
 ---
 
-# Quick Start
+# Quick start
 
 ## Connections
-- [[Documentation_1]] - `contains` [EXTRACTED]
+- [[OpenAI Whisper API (curl)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditExporter
+#graphify/document #graphify/EXTRACTED #community/Community_772

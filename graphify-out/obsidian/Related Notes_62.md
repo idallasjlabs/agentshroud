@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md"
 type: "document"
-community: "chat_console.py"
-location: "L78"
+community: "Community 1084"
+location: "L97"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/chat_consolepy
+  - community/Community_1084
 ---
 
 # Related Notes
 
 ## Connections
-- [[apply-patches.js_2]] - `contains` [EXTRACTED]
+- [[SSH Proxy Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/chat_consolepy
+#graphify/document #graphify/EXTRACTED #community/Community_1084

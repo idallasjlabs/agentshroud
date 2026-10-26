@@ -1,19 +1,17 @@
 ---
-source_file: "docs/setup/OPENCLAW_SETUP.md"
+source_file: "skills/openclaw/video-frames/SKILL.md"
 type: "document"
-community: "SkillGuard (2)"
-location: "L49"
+community: "Community 1117"
+location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SkillGuard_2
+  - community/Community_1117
 ---
 
-# Quick Start
+# Quick start
 
 ## Connections
-- [[1. Build and Start OpenClaw]] - `contains` [EXTRACTED]
-- [[2. Access OpenClaw Control UI]] - `contains` [EXTRACTED]
-- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
+- [[Video Frames (ffmpeg)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SkillGuard_2
+#graphify/document #graphify/EXTRACTED #community/Community_1117

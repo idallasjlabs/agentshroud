@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-supply-chain.md"
 type: "document"
-community: "dashboard_endpoints.py"
+community: "Community 570"
 location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy
+  - community/Community_570
 ---
 
 # Recommendations
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Supply Chain Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard_endpointspy
+#graphify/document #graphify/EXTRACTED #community/Community_570

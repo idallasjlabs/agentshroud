@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "AgentShroud Incident Response Plan (6)"
+community: "Community 1298"
 location: "L641"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan_6
+  - community/Community_1298
 ---
 
 # Related AgentShroud Docs
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Resources]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan_6
+#graphify/document #graphify/EXTRACTED #community/Community_1298

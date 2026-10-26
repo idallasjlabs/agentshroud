@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_event_bus.py"
 type: "rationale"
-community: "TestOutboundInfoFilter (2)"
+community: "Community 85"
 location: "L93"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_2
+  - community/Community_85
 ---
 
 # Recent events are returned in order
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_get_recent()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_85

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "RateLimitGuard"
+community: "Community 204"
 location: "L233"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/Community_204
 ---
 
 # Recovery Timeframes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Trust Degradation Rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/document #graphify/EXTRACTED #community/Community_204

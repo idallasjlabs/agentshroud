@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "rationale"
-community: "test_a2a_policy.py"
+community: "Community 52"
 location: "L59"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/Community_52
 ---
 
 # Register an agent with its container configuration.
 
 ## Connections
-- [[dot-register()]] - `rationale_for` [EXTRACTED]
+- [[.register()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/rationale #graphify/EXTRACTED #community/Community_52
