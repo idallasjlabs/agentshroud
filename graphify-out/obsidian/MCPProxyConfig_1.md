@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "Community 59"
 location: "L183"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/CrossBotTrustLedger
+  - community/Community_59
 ---
 
 # MCPProxyConfig
 
 ## Connections
-- [[dot-__init__()_86]] - `references` [EXTRACTED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
-- [[PermissionLevel_1]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[.__init__()_27]] - `references` [EXTRACTED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/CrossBotTrustLedger
+#graphify/code #graphify/INFERRED #community/Community_59

@@ -1,20 +1,17 @@
 ---
-source_file: ".agents/skills/i-hdev/SKILL.md"
+source_file: ".agents/agents/i-hdev.md"
 type: "document"
-community: "iCloud Services Skill"
-location: "L354"
+community: "Community 819"
+location: "L356"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services_Skill
+  - community/Community_819
 ---
 
 # Mode B — Comprehensive review sweep
 
 ## Connections
 - [[Skill Hermes Dev Workflow (HDEV)]] - `contains` [EXTRACTED]
-- [[Step 1 — One branch + worktree for the whole sweep]] - `contains` [EXTRACTED]
-- [[Step 2 — Work through directories one at a time]] - `contains` [EXTRACTED]
-- [[Step 3 — After the last directory (or a natural stopping point)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services_Skill
+#graphify/document #graphify/EXTRACTED #community/Community_819

@@ -1,17 +1,20 @@
 ---
-source_file: "docs/planning/v1.2/blue-team-assessment-v1.2.0.md"
-type: "document"
-community: "Error Index.md (3)"
-location: "L11"
+source_file: "cli/src/main.rs"
+type: "code"
+community: "Community 39"
+location: "L213"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Error_Indexmd_3
+  - community/Community_39
 ---
 
 # Method
 
 ## Connections
-- [[AgentShroud v1.2.0 — Blue Team Security Assessment]] - `contains` [EXTRACTED]
+- [[.request()_1]] - `references` [EXTRACTED]
+- [[.request()]] - `references` [EXTRACTED]
+- [[FakeTransport]] - `references` [EXTRACTED]
+- [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_3
+#graphify/code #graphify/EXTRACTED #community/Community_39

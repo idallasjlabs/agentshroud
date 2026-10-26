@@ -1,13 +1,13 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "Favicon 16x16 (AgentShroud logo mark)"
+community: "Community 1605"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Favicon_16x16_AgentShroud_logo_mark
+  - community/Community_1605
 ---
 
 # MCP Server: home-assistant
 
-#graphify/code #graphify/EXTRACTED #community/Favicon_16x16_AgentShroud_logo_mark
+#graphify/code #graphify/EXTRACTED #community/Community_1605

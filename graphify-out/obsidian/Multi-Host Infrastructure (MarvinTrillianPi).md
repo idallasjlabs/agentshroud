@@ -1,17 +1,17 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "concept"
-community: "TestNewPatternsV080"
+community: "Community 764"
 tags:
   - graphify/concept
-  - graphify/EXTRACTED
-  - community/TestNewPatternsV080
+  - graphify/INFERRED
+  - community/Community_764
 ---
 
 # Multi-Host Infrastructure (Marvin/Trillian/Pi)
 
 ## Connections
-- [[RUNBOOK_1]] - `references` [EXTRACTED]
+- [[RUNBOOK]] - `references` [EXTRACTED]
 - [[raspberry-pi]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/TestNewPatternsV080
+#graphify/concept #graphify/INFERRED #community/Community_764

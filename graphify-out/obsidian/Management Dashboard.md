@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/templates/management.html"
 type: "code"
-community: "Skill: Git Workflow Guardian (GIT-GUARD) (2)"
+community: "Community 952"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Git_Workflow_Guardian_GIT-GUARD_2
+  - community/Community_952
 ---
 
 # Management Dashboard
@@ -20,4 +20,4 @@ tags:
 - [[apistatus]] - `calls` [EXTRACTED]
 - [[apiupdatesbotopenclaw]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD_2
+#graphify/code #graphify/EXTRACTED #community/Community_952

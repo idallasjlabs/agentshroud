@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "rationale"
-community: "Docker Compose (infra diagram)"
+community: "Community 1072"
 location: "L118"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Docker_Compose_infra_diagram
+  - community/Community_1072
 ---
 
 # Map a runner exit code to a HostStatus.
 
 ## Connections
-- [[classify()_1]] - `rationale_for` [EXTRACTED]
+- [[classify()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Docker_Compose_infra_diagram
+#graphify/rationale #graphify/EXTRACTED #community/Community_1072

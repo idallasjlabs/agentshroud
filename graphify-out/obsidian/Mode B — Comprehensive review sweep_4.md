@@ -1,20 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
+source_file: ".agents/skills/i-odev/SKILL.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM) (2)"
+community: "Community 634"
 location: "L354"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM_2
+  - community/Community_634
 ---
 
 # Mode B — Comprehensive review sweep
 
 ## Connections
-- [[Skill Hermes Dev Workflow (HDEV)_2]] - `contains` [EXTRACTED]
-- [[Step 1 — One branch + worktree for the whole sweep_4]] - `contains` [EXTRACTED]
-- [[Step 2 — Work through directories one at a time_4]] - `contains` [EXTRACTED]
-- [[Step 3 — After the last directory (or a natural stopping point)_4]] - `contains` [EXTRACTED]
+- [[Skill OpenClaw Dev Workflow (ODEV)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM_2
+#graphify/document #graphify/EXTRACTED #community/Community_634

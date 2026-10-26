@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "scanner_integration.py"
+community: "Community 120"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/scanner_integrationpy
+  - community/Community_120
 ---
 
 # MockEgressChannel
 
 ## Connections
 - [[EgressChannel]] - `shares_data_with` [AMBIGUOUS]
-- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[ProxyAction]] - `uses` [INFERRED]
-- [[WebProxy]] - `uses` [INFERRED]
+- [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyResult]] - `uses` [INFERRED]
 - [[test_web_proxy_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/scanner_integrationpy
+#graphify/code #graphify/INFERRED #community/Community_120

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-007-zero-config-security.md"
+source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "Bear Notes"
-location: "L44"
+community: "Community 236"
+location: "L215"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bear_Notes
+  - community/Community_236
 ---
 
 # Mitigation
 
 ## Connections
-- [[Consequences_6]] - `contains` [EXTRACTED]
+- [[Consequences_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bear_Notes
+#graphify/document #graphify/EXTRACTED #community/Community_236

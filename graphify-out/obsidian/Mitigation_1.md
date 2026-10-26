@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-003-two-network-container-isolation.md"
+source_file: "docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md"
 type: "document"
-community: "Route map (by router)"
-location: "L46"
+community: "Community 894"
+location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Route_map_by_router
+  - community/Community_894
 ---
 
 # Mitigation
 
 ## Connections
-- [[Consequences_5]] - `contains` [EXTRACTED]
+- [[Consequences_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Route_map_by_router
+#graphify/document #graphify/EXTRACTED #community/Community_894

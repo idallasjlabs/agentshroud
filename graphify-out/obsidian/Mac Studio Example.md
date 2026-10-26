@@ -1,17 +1,18 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "EgressFilterConfig (3) (2)"
+community: "Community 350"
 location: "L675"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_3_2
+  - community/Community_350
 ---
 
 # Mac Studio Example
 
 ## Connections
 - [[Multi-Instance Setup]] - `contains` [EXTRACTED]
+- [[Multi-Instance Setup_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilterConfig_3_2
+#graphify/document #graphify/EXTRACTED #community/Community_350

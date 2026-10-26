@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/references/message-composition.md"
 type: "document"
-community: "Multi-Agent Role Matrix"
+community: "Community 475"
 location: "L136"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Multi-Agent_Role_Matrix
+  - community/Community_475
 ---
 
 # MML Tag Reference
@@ -16,4 +16,4 @@ tags:
 - [[`multipart`]] - `contains` [EXTRACTED]
 - [[`part`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix
+#graphify/document #graphify/EXTRACTED #community/Community_475

@@ -1,16 +1,13 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/monthly-chaos-engineering-drill.txt"
 type: "document"
-community: "Hermes Cron Jobs Reference & Recreation Guide"
+community: "Community 2454"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+  - graphify/EXTRACTED
+  - community/Community_2454
 ---
 
 # Monthly Chaos Engineering Drill (Hermes Prompt)
 
-## Connections
-- [[Seed Job Monthly Chaos Engineering Drill]] - `semantically_similar_to` [INFERRED]
-
-#graphify/document #graphify/INFERRED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_2454

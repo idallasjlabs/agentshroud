@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/slack_socket_client.py"
 type: "rationale"
-community: "Request (2)"
+community: "Community 176"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Request_2
+  - community/Community_176
 ---
 
 # Maintains a persistent Socket Mode WebSocket connection to Slack.      Call run(
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SlackSocketClient]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Request_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_176

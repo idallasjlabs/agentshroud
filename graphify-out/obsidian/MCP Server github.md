@@ -1,13 +1,13 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "AgentShroud Logo — Glow/Light Variant"
+community: "Community 1602"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Logo__Glow/Light_Variant
+  - community/Community_1602
 ---
 
 # MCP Server: github
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Logo__Glow/Light_Variant
+#graphify/code #graphify/EXTRACTED #community/Community_1602

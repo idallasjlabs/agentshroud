@@ -1,39 +1,39 @@
 ---
 source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "test_voice_latency_guard.py"
+community: "Community 70"
 location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/Community_70
 ---
 
 # MFAGuard
 
 ## Connections
-- [[dot-__init__()_175]] - `method` [EXTRACTED]
-- [[dot-_decode_secret()]] - `method` [EXTRACTED]
-- [[dot-_prune_used()]] - `method` [EXTRACTED]
-- [[dot-_totp_for_counter()]] - `method` [EXTRACTED]
-- [[dot-from_env()_3]] - `method` [EXTRACTED]
-- [[dot-is_required()]] - `method` [EXTRACTED]
-- [[dot-verify()_1]] - `method` [EXTRACTED]
-- [[Any_45]] - `uses` [INFERRED]
+- [[.__init__()_98]] - `method` [EXTRACTED]
+- [[._decode_secret()]] - `method` [EXTRACTED]
+- [[._prune_used()]] - `method` [EXTRACTED]
+- [[._totp_for_counter()]] - `method` [EXTRACTED]
+- [[.from_env()_3]] - `method` [EXTRACTED]
+- [[.is_required()]] - `method` [EXTRACTED]
+- [[.verify()_1]] - `method` [EXTRACTED]
+- [[Any]] - `uses` [INFERRED]
 - [[ApprovalQueue_1]] - `uses` [INFERRED]
-- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_2]] - `uses` [INFERRED]
-- [[ApprovalRequest_1]] - `uses` [INFERRED]
-- [[ApprovalStore_1]] - `uses` [INFERRED]
-- [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig]] - `uses` [INFERRED]
+- [[ApprovalQueueItem]] - `uses` [INFERRED]
+- [[ApprovalRequest]] - `uses` [INFERRED]
+- [[ApprovalStore]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
 - [[MFA for High-Risk Approvals — IEC 62443 FR1 (SCRUM-93)]] - `references` [EXTRACTED]
-- [[MFAGuard_1]] - `uses` [INFERRED]
+- [[MFAGuard]] - `uses` [INFERRED]
 - [[OAuthSecurityValidator]] - `semantically_similar_to` [INFERRED]
-- [[ToolRiskConfig_1]] - `uses` [INFERRED]
-- [[ToolRiskPolicy_1]] - `uses` [INFERRED]
+- [[ToolRiskConfig]] - `uses` [INFERRED]
+- [[ToolRiskPolicy]] - `uses` [INFERRED]
 - [[Verify a TOTP second factor for high-risk operations (fail-closed).      Args]] - `rationale_for` [EXTRACTED]
-- [[WebSocket_3]] - `uses` [INFERRED]
+- [[WebSocket]] - `uses` [INFERRED]
 - [[_queue()]] - `calls` [EXTRACTED]
 - [[enhanced_mfa_queue()]] - `calls` [EXTRACTED]
 - [[enhanced_queue.py]] - `imports` [EXTRACTED]
@@ -61,4 +61,4 @@ tags:
 - [[test_valid_totp_prev_window_allowed()]] - `calls` [EXTRACTED]
 - [[test_wrong_length_code_denies()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/code #graphify/EXTRACTED #community/Community_70

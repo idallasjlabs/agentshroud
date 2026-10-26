@@ -1,16 +1,16 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "ContextSegment"
+community: "Community 30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/Community_30
 ---
 
 # MCPProxy.check_approval_required
 
 ## Connections
-- [[EnhancedApprovalQueue_1]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/Community_30

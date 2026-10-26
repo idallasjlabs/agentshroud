@@ -1,24 +1,23 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mnemosyne/SKILL.md"
+source_file: ".agents/agents/mnemosyne.md"
 type: "document"
-community: "hermes/manifest.json"
-location: "L6"
+community: "Community 1978"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/manifestjson
+  - community/Community_1978
 ---
 
 # Mnemosyne — Retention Engineer
 
 ## Connections
-- [[Input Requirements_3]] - `contains` [EXTRACTED]
-- [[Output Format_3]] - `contains` [EXTRACTED]
-- [[Persona_3]] - `contains` [EXTRACTED]
-- [[Quality Checklist_3]] - `contains` [EXTRACTED]
-- [[Role_6]] - `contains` [EXTRACTED]
-- [[System Prompt_3]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-mnemosyneSKILL]] - `contains` [EXTRACTED]
+- [[Input Requirements_6]] - `contains` [EXTRACTED]
+- [[Output Format_8]] - `contains` [EXTRACTED]
+- [[Persona_4]] - `contains` [EXTRACTED]
+- [[Quality Checklist_5]] - `contains` [EXTRACTED]
+- [[Role_35]] - `contains` [EXTRACTED]
+- [[System Prompt_4]] - `contains` [EXTRACTED]
+- [[mnemosyne]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/manifestjson
+#graphify/document #graphify/EXTRACTED #community/Community_1978

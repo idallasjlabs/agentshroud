@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
 type: "concept"
-community: "Mode A — Single task (5)"
+community: "Community 644"
 location: "Step 5 / Mode B Step 2"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_5
+  - community/Community_644
 ---
 
 # Multi-LLM Review Loop (Codex+Gemini review, Claude fixer)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[hermes-openclaw-dev-workflow]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Mode_A__Single_task_5
+#graphify/concept #graphify/EXTRACTED #community/Community_644

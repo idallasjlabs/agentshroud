@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "EgressFilterConfig (3) (2)"
+community: "Community 350"
 location: "L327"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_3_2
+  - community/Community_350
 ---
 
 # Multi-Instance Setup
@@ -18,4 +18,4 @@ tags:
 - [[Port Auto-Detection]] - `contains` [EXTRACTED]
 - [[Step 5 Configure Ports]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilterConfig_3_2
+#graphify/document #graphify/EXTRACTED #community/Community_350

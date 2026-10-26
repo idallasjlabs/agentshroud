@@ -1,11 +1,11 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: "eightctl/SKILL.md"
+community: "Community 1373"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/eightctl/SKILLmd
+  - community/Community_1373
 ---
 
 # MCP tools available — GitHub (repos/PRs/issues), Atlassian (Jira/Confluence)
@@ -14,4 +14,4 @@ tags:
 - [[MCP Server atlassian-agentshroud]] - `conceptually_related_to` [INFERRED]
 - [[MCP Server github-agentshroud]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/eightctl/SKILLmd
+#graphify/rationale #graphify/INFERRED #community/Community_1373

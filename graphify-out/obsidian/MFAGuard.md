@@ -1,17 +1,24 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "iot_button_register_cb (2)"
-location: "L41"
+community: "Community 30"
+location: "L47"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/iot_button_register_cb_2
+  - graphify/INFERRED
+  - community/Community_30
 ---
 
 # MFAGuard
 
 ## Connections
-- [[dot-__init__()_34]] - `references` [EXTRACTED]
+- [[.__init__()_3]] - `references` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
+- [[ApprovalRequest_3]] - `uses` [INFERRED]
+- [[ApprovalStore_1]] - `uses` [INFERRED]
+- [[MFAGuard_2]] - `uses` [INFERRED]
+- [[ToolRiskConfig_1]] - `uses` [INFERRED]
+- [[ToolRiskPolicy_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/iot_button_register_cb_2
+#graphify/code #graphify/INFERRED #community/Community_30

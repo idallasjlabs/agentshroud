@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "SessionManager"
+community: "Community 121"
 location: "L409"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/Community_121
 ---
 
 # Move suspicious files to quarantine directory.
 
 ## Connections
-- [[dot-_quarantine_suspicious_files()]] - `rationale_for` [EXTRACTED]
+- [[._quarantine_suspicious_files()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SessionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_121

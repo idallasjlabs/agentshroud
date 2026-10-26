@@ -1,23 +1,23 @@
 ---
-source_file: "docker/config/hermes/skills/i-mnemosyne/SKILL.md"
+source_file: ".cursor/agents/mnemosyne.md"
 type: "document"
-community: "Workflow: Survey → Draft → Inject → Confirm (3)"
-location: "L6"
+community: "Community 1987"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workflow_Survey__Draft__Inject__Confirm_3
+  - community/Community_1987
 ---
 
 # Mnemosyne — Retention Engineer
 
 ## Connections
-- [[Input Requirements_12]] - `contains` [EXTRACTED]
-- [[Output Format_25]] - `contains` [EXTRACTED]
-- [[Persona_8]] - `contains` [EXTRACTED]
-- [[Quality Checklist_10]] - `contains` [EXTRACTED]
-- [[Role_77]] - `contains` [EXTRACTED]
-- [[System Prompt_8]] - `contains` [EXTRACTED]
-- [[hermesskillsi-mnemosyneSKILL]] - `contains` [EXTRACTED]
+- [[Input Requirements_26]] - `contains` [EXTRACTED]
+- [[Output Format_37]] - `contains` [EXTRACTED]
+- [[Persona_20]] - `contains` [EXTRACTED]
+- [[Quality Checklist_23]] - `contains` [EXTRACTED]
+- [[Role_108]] - `contains` [EXTRACTED]
+- [[System Prompt_20]] - `contains` [EXTRACTED]
+- [[mnemosyne_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm_3
+#graphify/document #graphify/EXTRACTED #community/Community_1987

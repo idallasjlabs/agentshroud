@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "Community 99"
 location: "L194"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/Community_99
 ---
 
 # Mirror activity into workspace contributor logs used by daily digests.
 
 ## Connections
-- [[dot-_append_contributor_log()]] - `rationale_for` [EXTRACTED]
+- [[._append_contributor_log()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_99

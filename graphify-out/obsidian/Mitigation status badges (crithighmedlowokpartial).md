@@ -1,16 +1,13 @@
 ---
 source_file: "docs/index.html"
 type: "concept"
-community: "AgentShroud Sunday Upgrade — 2026-09-06 (dev-only, read-only inventory → scoped fixes)"
+community: "Community 2468"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Sunday_Upgrade__2026-09-06_dev-only_read-only_inventory__scoped_fixes
+  - community/Community_2468
 ---
 
 # Mitigation status badges (crit/high/med/low/ok/partial)
 
-## Connections
-- [[AgentShroud public site + CVE page]] - `references` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Sunday_Upgrade__2026-09-06_dev-only_read-only_inventory__scoped_fixes
+#graphify/concept #graphify/EXTRACTED #community/Community_2468

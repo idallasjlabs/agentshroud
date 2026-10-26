@@ -1,18 +1,18 @@
 ---
 source_file: ".agents/skills/i-odev/SKILL.md"
 type: "document"
-community: "Skill: Audit Branch (AB) — Merge Regression Detection (2)"
+community: "Community 634"
 location: "L122"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Audit_Branch_AB__Merge_Regression_Detection_2
+  - community/Community_634
 ---
 
 # Mode A — Single task
 
 ## Connections
-- [[Skill OpenClaw Dev Workflow (ODEV)]] - `contains` [EXTRACTED]
+- [[Skill OpenClaw Dev Workflow (ODEV)_1]] - `contains` [EXTRACTED]
 - [[Step 1 — Sync and confirm clean state_3]] - `contains` [EXTRACTED]
 - [[Step 10 — Notify the owner_3]] - `contains` [EXTRACTED]
 - [[Step 11 — Merge (only on explicit owner instruction)_3]] - `contains` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[Step 9 — Push and open the PR_3]] - `contains` [EXTRACTED]
 - [[Step 9b — Update the Jira ticket with the PR link_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Detection_2
+#graphify/document #graphify/EXTRACTED #community/Community_634

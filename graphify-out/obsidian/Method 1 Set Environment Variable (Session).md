@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: ".agents/agents/i-mcpm-aws-profile.md"
 type: "document"
-community: "openclaw/workspace/jira_dev_ticket.py"
-location: "L122"
+community: "Community 171"
+location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/workspace/jira_dev_ticketpy
+  - community/Community_171
 ---
 
 # Method 1: Set Environment Variable (Session)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Switch AWS Profile for MCP]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/Community_171

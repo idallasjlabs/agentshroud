@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/06-operations.md"
 type: "concept"
-community: "Distributed OpenClaw Node Architecture — Raspberry Pi 4"
+community: "Community 1989"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
+  - community/Community_1989
 ---
 
 # Monitoring & Observability Map
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[06-operations]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
+#graphify/concept #graphify/EXTRACTED #community/Community_1989

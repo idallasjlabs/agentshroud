@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/apply-patches.js"
 type: "code"
-community: "Release Notes - AgentShroud v0.9.0"
+community: "Community 180"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Release_Notes_-_AgentShroud_v090
+  - community/Community_180
 ---
 
 # MODEL_MODE
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[apply-patches.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Release_Notes_-_AgentShroud_v090
+#graphify/code #graphify/EXTRACTED #community/Community_180

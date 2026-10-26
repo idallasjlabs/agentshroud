@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "rationale"
-community: "ContextGuard"
+community: "Community 0"
 location: "L301"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/Community_0
 ---
 
 # Mark an alert as acknowledged.
 
 ## Connections
-- [[dot-acknowledge_alert()]] - `rationale_for` [EXTRACTED]
+- [[.acknowledge_alert()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

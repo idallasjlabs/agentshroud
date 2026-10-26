@@ -1,12 +1,12 @@
 ---
-source_file: "skills/custom/icloud/SKILL.md"
+source_file: ".cursor/agents/icloud.md"
 type: "document"
-community: "AgentShroud Project Terminology"
-location: "L80"
+community: "Community 635"
+location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Project_Terminology
+  - community/Community_635
 ---
 
 # Mail Operations
@@ -17,4 +17,4 @@ tags:
 - [[Send Email_2]] - `contains` [EXTRACTED]
 - [[iCloud Services_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Project_Terminology
+#graphify/document #graphify/EXTRACTED #community/Community_635

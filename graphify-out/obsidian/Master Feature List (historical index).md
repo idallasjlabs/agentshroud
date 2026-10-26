@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "SSH Configuration Guide"
+community: "Community 395"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Configuration_Guide
+  - community/Community_395
 ---
 
 # Master Feature List (historical index)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Blue 1583f0]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Configuration_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_395

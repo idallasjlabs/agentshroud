@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/01-enforce-by-default.md"
 type: "rationale"
-community: "5. Test Results"
+community: "Community 1310"
 location: "Root Cause section"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/5_Test_Results
+  - community/Community_1310
 ---
 
 # Monitor-First Design Rationale: Observe → Tune → Enforce (operator must flip before production)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Red Team Finding 01 Security Modules Default to Monitor Mode — Zero Active Defense]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/5_Test_Results
+#graphify/rationale #graphify/EXTRACTED #community/Community_1310

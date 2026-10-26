@@ -1,17 +1,18 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
 type: "document"
-community: "MiddlewareManager (2) (2)"
+community: "Community 1556"
 location: "L108"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2_2
+  - community/Community_1556
 ---
 
 # Monitor Mode
 
 ## Connections
+- [[Security Pipeline Flow_1]] - `contains` [EXTRACTED]
 - [[`SecurityPipeline`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_1556

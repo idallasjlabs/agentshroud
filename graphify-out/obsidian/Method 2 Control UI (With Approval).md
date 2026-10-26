@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "document"
-community: "Skill: UX Expert (UX) (3)"
+community: "Community 270"
 location: "L151"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX_3
+  - community/Community_270
 ---
 
 # Method 2: Control UI (With Approval)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🔐 How to Access Credentials Securely]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX_3
+#graphify/document #graphify/EXTRACTED #community/Community_270

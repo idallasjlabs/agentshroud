@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/openai-image-gen/SKILL.md"
 type: "document"
-community: "EgressTelegramNotifier"
+community: "Community 382"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressTelegramNotifier
+  - community/Community_382
 ---
 
 # Model-Specific Parameters
@@ -17,4 +17,4 @@ tags:
 - [[Quality]] - `contains` [EXTRACTED]
 - [[Size]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressTelegramNotifier
+#graphify/document #graphify/EXTRACTED #community/Community_382

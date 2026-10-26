@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "rationale"
-community: "LLMProxy.proxy_messages (non-streaming)"
+community: "Community 102"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming
+  - community/Community_102
 ---
 
 # Map Wazuh alert level to severity string.      Args:         level: Wazuh alert
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[level_to_severity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming
+#graphify/rationale #graphify/EXTRACTED #community/Community_102
