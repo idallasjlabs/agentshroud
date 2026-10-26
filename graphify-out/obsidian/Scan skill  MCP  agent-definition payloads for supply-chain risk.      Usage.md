@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "rationale"
-community: "Community 133"
+community: "Community 924"
 location: "L297"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_133
+  - community/Community_924
 ---
 
 # Scan skill / MCP / agent-definition payloads for supply-chain risk.      Usage::
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SkillGuard]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_133
+#graphify/rationale #graphify/EXTRACTED #community/Community_924

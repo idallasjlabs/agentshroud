@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "Community 1127"
+community: "Community 37"
 location: "L315"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1127
+  - community/Community_37
 ---
 
 # Test broadcast handles failed client sends
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_broadcast_with_failed_client()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1127
+#graphify/rationale #graphify/EXTRACTED #community/Community_37

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "Community 8"
+community: "Community 97"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_8
+  - community/Community_97
 ---
 
 # ServicePolicy
@@ -18,4 +18,4 @@ tags:
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[privacy_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_8
+#graphify/code #graphify/EXTRACTED #community/Community_97

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "Community 2363"
+community: "Community 26"
 location: "L101"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2363
+  - community/Community_26
 ---
 
 # Test user session registration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_register_user_session()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2363
+#graphify/rationale #graphify/EXTRACTED #community/Community_26

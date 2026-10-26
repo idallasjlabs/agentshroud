@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "Community 2368"
+community: "Community 26"
 location: "L198"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2368
+  - community/Community_26
 ---
 
 # Test allowing access to own namespace.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_allow_own_namespace_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2368
+#graphify/rationale #graphify/EXTRACTED #community/Community_26

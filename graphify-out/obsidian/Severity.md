@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "Community 281"
+community: "Community 2318"
 location: "L76"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_281
+  - community/Community_2318
 ---
 
 # Severity
@@ -37,4 +37,4 @@ tags:
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_281
+#graphify/code #graphify/INFERRED #community/Community_2318

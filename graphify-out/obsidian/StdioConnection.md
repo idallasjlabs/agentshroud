@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 140"
+community: "Community 132"
 location: "L92"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_140
+  - community/Community_132
 ---
 
 # StdioConnection
@@ -51,4 +51,4 @@ tags:
 - [[mcp_proxy.py]] - `contains` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_140
+#graphify/code #graphify/INFERRED #community/Community_132

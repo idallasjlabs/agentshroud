@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "rationale"
-community: "Community 196"
+community: "Community 104"
 location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_196
+  - community/Community_104
 ---
 
 # Test that all core modules default to enforce mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_security_config_all_defaults_enforce()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_196
+#graphify/rationale #graphify/EXTRACTED #community/Community_104

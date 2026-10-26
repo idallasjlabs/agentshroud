@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "Community 919"
+community: "Community 51"
 location: "L649"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_919
+  - community/Community_51
 ---
 
 # TestComputeBotScorecard
@@ -33,4 +33,4 @@ tags:
 - [[compute_bot_scorecard()]] - `calls` [EXTRACTED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_919
+#graphify/code #graphify/EXTRACTED #community/Community_51

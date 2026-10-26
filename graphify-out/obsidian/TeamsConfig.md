@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Community 18"
+community: "Community 61"
 location: "L91"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_18
+  - community/Community_61
 ---
 
 # TeamsConfig
@@ -113,4 +113,4 @@ tags:
 - [[test_shared_memory_write_acl.py]] - `imports` [EXTRACTED]
 - [[test_tool_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_18
+#graphify/code #graphify/INFERRED #community/Community_61

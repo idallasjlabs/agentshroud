@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auth.py"
 type: "rationale"
-community: "Community 92"
+community: "Community 707"
 location: "L161"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_92
+  - community/Community_707
 ---
 
 # Test auth dependency with invalid auth scheme
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_auth_dependency_invalid_scheme()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_92
+#graphify/rationale #graphify/EXTRACTED #community/Community_707
