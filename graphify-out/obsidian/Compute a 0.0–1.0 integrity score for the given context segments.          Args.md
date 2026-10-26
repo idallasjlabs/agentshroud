@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/context_integrity.py"
 type: "rationale"
-community: "PromptGuard"
+community: "Community 22"
 location: "L78"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/Community_22
 ---
 
 # Compute a 0.0–1.0 integrity score for the given context segments.          Args:
 
 ## Connections
-- [[dot-score_context()]] - `rationale_for` [EXTRACTED]
+- [[.score_context()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PromptGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_22

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: "skills/openclaw/himalaya/references/configuration.md"
 type: "document"
-community: "Restart Procedure (2)"
-location: "L267"
+community: "Community 610"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Restart_Procedure_2
+  - community/Community_610
 ---
 
-# Configuration
+# configuration.md
 
 ## Connections
-- [[7. Pi-hole DNS Security Layer (Built-In)]] - `contains` [EXTRACTED]
+- [[Himalaya Configuration Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Restart_Procedure_2
+#graphify/document #graphify/EXTRACTED #community/Community_610

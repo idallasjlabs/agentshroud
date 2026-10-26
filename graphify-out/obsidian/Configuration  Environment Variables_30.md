@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
 type: "document"
-community: "AgentShroud Weekly Upgrade Report — 2026-08-30 (2)"
-location: "L49"
+community: "Community 733"
+location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Weekly_Upgrade_Report__2026-08-30_2
+  - community/Community_733
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[sidecar.py_2]] - `contains` [EXTRACTED]
+- [[trivy_report.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade_Report__2026-08-30_2
+#graphify/document #graphify/EXTRACTED #community/Community_733

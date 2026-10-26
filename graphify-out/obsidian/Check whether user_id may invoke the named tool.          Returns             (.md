@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: ".can_use_tool()"
+community: "Community 61"
 location: "L249"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/can_use_tool
+  - community/Community_61
 ---
 
 # Check whether user_id may invoke the named tool.          Returns:             (
 
 ## Connections
-- [[dot-_can_use_tool_impl()]] - `rationale_for` [EXTRACTED]
+- [[._can_use_tool_impl()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/can_use_tool
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

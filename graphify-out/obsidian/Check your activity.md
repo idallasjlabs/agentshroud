@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "AgentShroud Security Hardening Plan"
+community: "Community 416"
 location: "L415"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Hardening_Plan
+  - community/Community_416
 ---
 
 # Check your activity
 
 ## Connections
-- [[Common Workflows_1]] - `contains` [EXTRACTED]
+- [[Common Workflows_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Hardening_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_416

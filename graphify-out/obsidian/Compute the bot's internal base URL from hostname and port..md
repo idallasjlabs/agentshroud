@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/bot_config.py"
 type: "rationale"
-community: "GroupConfig"
+community: "Community 32"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupConfig
+  - community/Community_32
 ---
 
 # Compute the bot's internal base URL from hostname and port.
 
 ## Connections
-- [[dot-base_url()]] - `rationale_for` [EXTRACTED]
+- [[.base_url()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_32

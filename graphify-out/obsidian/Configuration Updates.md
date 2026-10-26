@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
+community: "Community 107"
 location: "L445"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/Community_107
 ---
 
 # Configuration Updates
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[6. System Updates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_107

@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/apple-reminders/SKILL.md"
 type: "rationale"
-community: "System Audit & Documentation (2)"
+community: "Community 638"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/System_Audit__Documentation_2
+  - community/Community_638
 ---
 
 # Clawdbot cron tool as reminder alternative
 
 ## Connections
-- [[apple-remindersSKILL]] - `conceptually_related_to` [EXTRACTED]
+- [[SKILL_206]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/System_Audit__Documentation_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_638

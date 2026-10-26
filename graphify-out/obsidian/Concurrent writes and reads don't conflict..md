@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "Community 7"
 location: "L240"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # Concurrent writes and reads don't conflict.
 
 ## Connections
-- [[dot-test_concurrent_write_and_read()]] - `rationale_for` [EXTRACTED]
+- [[.test_concurrent_write_and_read()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

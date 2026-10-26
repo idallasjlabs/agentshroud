@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "KillSwitchMonitor (3)"
+community: "Community 57"
 location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KillSwitchMonitor_3
+  - community/Community_57
 ---
 
 # Citation
 
 ## Connections
 - [[A verified source backing a competitor claim.      A Citation is only created by]] - `rationale_for` [EXTRACTED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
 - [[Citation]] - `uses` [INFERRED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[CompetitiveIntelReport]] - `uses` [INFERRED]
 - [[CompetitorEntry]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
-- [[FetchOutcome_1]] - `uses` [INFERRED]
+- [[FetchOutcome]] - `uses` [INFERRED]
 - [[Fetcher]] - `uses` [INFERRED]
 - [[citation_verifier.py]] - `imports` [EXTRACTED]
 - [[intel_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/KillSwitchMonitor_3
+#graphify/code #graphify/INFERRED #community/Community_57

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "rationale"
-community: "FileSandbox"
+community: "Community 31"
 location: "L328"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/Community_31
 ---
 
 # Check if path matches any blocked pattern.
 
 ## Connections
-- [[dot-_matches_blocked()]] - `rationale_for` [EXTRACTED]
+- [[._matches_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FileSandbox
+#graphify/rationale #graphify/EXTRACTED #community/Community_31

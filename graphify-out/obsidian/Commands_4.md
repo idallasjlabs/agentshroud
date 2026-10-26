@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/weather/SKILL.md"
 type: "document"
-community: "DEVELOPER.md — Development Context for AgentShroud"
+community: "Community 852"
 location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DEVELOPERmd__Development_Context_for_AgentShroud
+  - community/Community_852
 ---
 
 # Commands
@@ -18,4 +18,4 @@ tags:
 - [[Format Options]] - `contains` [EXTRACTED]
 - [[Weather Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DEVELOPERmd__Development_Context_for_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Community_852

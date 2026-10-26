@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm/SKILL.md"
+source_file: ".cursor/agents/i-mcpm.md"
 type: "document"
-community: "_t (3)"
-location: "L139"
+community: "Community 1936"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_t_3
+  - community/Community_1936
 ---
 
 # Common Errors
 
 ## Connections
-- [[MCP Troubleshooting_1]] - `contains` [EXTRACTED]
+- [[MCP Troubleshooting_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_t_3
+#graphify/document #graphify/EXTRACTED #community/Community_1936

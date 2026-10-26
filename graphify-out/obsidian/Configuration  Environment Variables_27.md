@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
 type: "document"
-community: "GovernanceAction"
-location: "L62"
+community: "Community 540"
+location: "L74"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GovernanceAction
+  - community/Community_540
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[config.py_1]] - `contains` [EXTRACTED]
+- [[resource_guard.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GovernanceAction
+#graphify/document #graphify/EXTRACTED #community/Community_540

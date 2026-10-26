@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
 type: "document"
-community: "web_config.py"
-location: "L65"
+community: "Community 569"
+location: "L74"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/web_configpy
+  - community/Community_569
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[web_config.py_2]] - `contains` [EXTRACTED]
+- [[subagent_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/web_configpy
+#graphify/document #graphify/EXTRACTED #community/Community_569

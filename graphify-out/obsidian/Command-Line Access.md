@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
+community: "Community 2203"
 location: "L192"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/Community_2203
 ---
 
 # Command-Line Access
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[3. Viewing Audit Logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_2203

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "Any"
+community: "Community 3"
 location: "L394"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Any
+  - community/Community_3
 ---
 
 # Clean up old denied requests beyond cooldown period.
 
 ## Connections
-- [[dot-_cleanup_old_denied_requests()]] - `rationale_for` [EXTRACTED]
+- [[._cleanup_old_denied_requests()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Any
+#graphify/rationale #graphify/EXTRACTED #community/Community_3

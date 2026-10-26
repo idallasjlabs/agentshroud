@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/tests/test_skill_guard.py"
+source_file: "gateway/tests/test_gmail_credential_retrieval.py"
 type: "code"
-community: "ConfigIntegrityMonitor"
-location: "L458"
+community: "Community 598"
+location: "L19"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ConfigIntegrityMonitor
+  - graphify/EXTRACTED
+  - community/Community_598
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_4]] - `uses` [INFERRED]
-- [[Severity]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
-- [[SkillScanError]] - `uses` [INFERRED]
-- [[_run_scan_cli()]] - `references` [EXTRACTED]
+- [[_completed()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ConfigIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/Community_598

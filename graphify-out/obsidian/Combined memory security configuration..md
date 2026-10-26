@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "rationale"
-community: "Any"
+community: "Community 16"
 location: "L98"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Any
+  - community/Community_16
 ---
 
 # Combined memory security configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MemorySecurityConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Any
+#graphify/rationale #graphify/EXTRACTED #community/Community_16

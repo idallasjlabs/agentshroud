@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/docker_engine.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
 type: "document"
-community: "agent_isolation.py"
-location: "L64"
+community: "Community 784"
+location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agent_isolationpy
+  - community/Community_784
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[docker_engine.py_2]] - `contains` [EXTRACTED]
+- [[config.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agent_isolationpy
+#graphify/document #graphify/EXTRACTED #community/Community_784

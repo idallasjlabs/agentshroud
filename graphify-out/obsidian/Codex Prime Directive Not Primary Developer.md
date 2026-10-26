@@ -1,11 +1,11 @@
 ---
 source_file: "AGENTS.md"
 type: "rationale"
-community: "voice_task (3)"
+community: "Community 1141"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/voice_task_3
+  - community/Community_1141
 ---
 
 # Codex Prime Directive: Not Primary Developer
@@ -14,4 +14,4 @@ tags:
 - [[AGENTS.md — Codex CLI Guidance]] - `references` [EXTRACTED]
 - [[Claude Code — Primary development agent]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/voice_task_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_1141

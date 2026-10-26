@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "rationale"
-community: "AgentTarget"
+community: "Community 112"
 location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/Community_112
 ---
 
 # Check if the OpenClaw backend is healthy.
 
 ## Connections
-- [[dot-health_check()_5]] - `rationale_for` [EXTRACTED]
+- [[.health_check()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/Community_112

@@ -1,19 +1,17 @@
 ---
-source_file: "docs/setup-slack.md"
+source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "test_collaborator_greeter.py (2)"
-location: "L156"
+community: "Community 560"
+location: "L388"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_collaborator_greeterpy_2
+  - community/Community_560
 ---
 
 # Collaborators
 
 ## Connections
-- [[Collaborator Session Isolation (blocked functionsskills)]] - `semantically_similar_to` [INFERRED]
-- [[Collaborators_1]] - `conceptually_related_to` [EXTRACTED]
-- [[Slack Channel Setup]] - `contains` [EXTRACTED]
+- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_collaborator_greeterpy_2
+#graphify/document #graphify/EXTRACTED #community/Community_560

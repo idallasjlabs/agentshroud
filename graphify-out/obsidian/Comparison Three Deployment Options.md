@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "Step-by-Step Installation"
+community: "Community 411"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Step-by-Step_Installation
+  - community/Community_411
 ---
 
 # Comparison: Three Deployment Options
@@ -17,4 +17,4 @@ tags:
 - [[Option 2 OpenClaw in Basic Docker Container]] - `contains` [EXTRACTED]
 - [[Option 3 AgentShroud (Current Architecture)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Installation
+#graphify/document #graphify/EXTRACTED #community/Community_411

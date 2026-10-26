@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
 type: "document"
-community: "AgentShroud Sunday Upgrade Report — 2026-09-20 (PROD run)"
-location: "L67"
+community: "Community 783"
+location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Sunday_Upgrade_Report__2026-09-20_PROD_run
+  - community/Community_783
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
+- [[compose_generator.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Sunday_Upgrade_Report__2026-09-20_PROD_run
+#graphify/document #graphify/EXTRACTED #community/Community_783

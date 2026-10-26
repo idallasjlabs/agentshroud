@@ -1,11 +1,11 @@
 ---
 source_file: "AGENTS.md"
 type: "concept"
-community: "voice_task (2)"
+community: "Community 1140"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/voice_task_2
+  - community/Community_1140
 ---
 
 # Codex Validation Runner Role
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AGENTS.md — Codex CLI Guidance]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/voice_task_2
+#graphify/concept #graphify/EXTRACTED #community/Community_1140

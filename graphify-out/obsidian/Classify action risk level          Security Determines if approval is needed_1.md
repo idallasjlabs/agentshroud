@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "ProxyDashboard"
+community: "Community 155"
 location: "L145"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/Community_155
 ---
 
 # Classify action risk level          Security: Determines if approval is needed
 
 ## Connections
-- [[dot-_classify_risk()_2]] - `rationale_for` [EXTRACTED]
+- [[._classify_risk()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/rationale #graphify/EXTRACTED #community/Community_155

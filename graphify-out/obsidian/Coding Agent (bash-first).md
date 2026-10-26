@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "document"
-community: "Prompt: Hermes Competitive Intelligence Email (AM/PM)"
+community: "Community 336"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM
+  - community/Community_336
 ---
 
 # Coding Agent (bash-first)
@@ -21,9 +21,9 @@ tags:
 - [[Pi Coding Agent]] - `contains` [EXTRACTED]
 - [[Progress Updates (Critical)]] - `contains` [EXTRACTED]
 - [[Quick Start One-Shot Tasks]] - `contains` [EXTRACTED]
+- [[SKILL_213]] - `contains` [EXTRACTED]
 - [[The Pattern workdir + background + pty]] - `contains` [EXTRACTED]
-- [[coding-agentSKILL]] - `contains` [EXTRACTED]
 - [[⚠️ PTY Mode Required!]] - `contains` [EXTRACTED]
 - [[⚠️ Rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM
+#graphify/document #graphify/EXTRACTED #community/Community_336

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
 type: "document"
-community: "v0.6.0 Baseline Results"
-location: "L78"
+community: "Community 539"
+location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/v060_Baseline_Results
+  - community/Community_539
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[mcp_config.py_2]] - `contains` [EXTRACTED]
+- [[key_vault.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/v060_Baseline_Results
+#graphify/document #graphify/EXTRACTED #community/Community_539

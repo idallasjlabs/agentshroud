@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/competitive-analysis.md"
 type: "document"
-community: "test_alert_dispatcher_retry.py"
+community: "Community 913"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_alert_dispatcher_retrypy
+  - community/Community_913
 ---
 
 # Competitive Intelligence Report — Standard Prompt
@@ -16,6 +16,6 @@ tags:
 - [[CRITICAL RULES — READ BEFORE DOING ANYTHING_1]] - `contains` [EXTRACTED]
 - [[OUTPUT REQUIREMENTS_1]] - `contains` [EXTRACTED]
 - [[REPORT STRUCTURE_1]] - `contains` [EXTRACTED]
-- [[openclawworkspacecompetitive-analysis]] - `contains` [EXTRACTED]
+- [[competitive-analysis_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_alert_dispatcher_retrypy
+#graphify/document #graphify/EXTRACTED #community/Community_913

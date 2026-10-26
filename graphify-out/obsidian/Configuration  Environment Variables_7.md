@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
 type: "document"
-community: "test_scanner_integration.py (2)"
-location: "L67"
+community: "Community 877"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy_2
+  - community/Community_877
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[apple_engine.py_2]] - `contains` [EXTRACTED]
+- [[sidecar.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_scanner_integrationpy_2
+#graphify/document #graphify/EXTRACTED #community/Community_877

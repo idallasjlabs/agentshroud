@@ -1,11 +1,11 @@
 ---
 source_file: "docs/agentshroud-knowledge.md"
 type: "rationale"
-community: "AgentShroud Brand Quick Reference"
+community: "Community 581"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/AgentShroud_Brand_Quick_Reference
+  - community/Community_581
 ---
 
 # Competitive Positioning — Proxy-Layer Inversion Differentiator
@@ -14,4 +14,4 @@ tags:
 - [[ADR-001-proxy-layer-inversion]] - `semantically_similar_to` [INFERRED]
 - [[Enterprise Governance Proxy System (invention)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/AgentShroud_Brand_Quick_Reference
+#graphify/rationale #graphify/INFERRED #community/Community_581

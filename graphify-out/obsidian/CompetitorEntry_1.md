@@ -1,33 +1,33 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "KillSwitchMonitor (3)"
+community: "Community 57"
 location: "L82"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KillSwitchMonitor_3
+  - community/Community_57
 ---
 
 # CompetitorEntry
 
 ## Connections
-- [[dot-test_full_valid_report()]] - `calls` [EXTRACTED]
-- [[dot-test_negative_security_score_rejected()]] - `calls` [EXTRACTED]
-- [[dot-test_report_roundtrips_via_json()]] - `calls` [EXTRACTED]
-- [[dot-test_security_score_above_max_rejected()]] - `calls` [EXTRACTED]
+- [[.test_full_valid_report()]] - `calls` [EXTRACTED]
+- [[.test_negative_security_score_rejected()]] - `calls` [EXTRACTED]
+- [[.test_report_roundtrips_via_json()]] - `calls` [EXTRACTED]
+- [[.test_security_score_above_max_rejected()]] - `calls` [EXTRACTED]
 - [[A single competitor record in a competitive intel report.]] - `rationale_for` [EXTRACTED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
 - [[Citation]] - `uses` [INFERRED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[CompetitiveIntelReport]] - `uses` [INFERRED]
-- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
+- [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
 - [[CompetitorEntry]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
-- [[FetchOutcome_1]] - `uses` [INFERRED]
+- [[FetchOutcome]] - `uses` [INFERRED]
 - [[Fetcher]] - `uses` [INFERRED]
-- [[IntelReportStore]] - `uses` [INFERRED]
-- [[Path_52]] - `uses` [INFERRED]
+- [[IntelReportStore_1]] - `uses` [INFERRED]
+- [[Path_31]] - `uses` [INFERRED]
 - [[TestCompetitiveIntelReportSchema]] - `uses` [INFERRED]
 - [[TestIntelReportHashIntegrity]] - `uses` [INFERRED]
 - [[TestIntelReportStore]] - `uses` [INFERRED]
@@ -35,4 +35,4 @@ tags:
 - [[intel_report.py]] - `contains` [EXTRACTED]
 - [[test_intel_pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/KillSwitchMonitor_3
+#graphify/code #graphify/INFERRED #community/Community_57

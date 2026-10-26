@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "CLI Reference"
+community: "Community 299"
 location: "L245"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CLI_Reference
+  - community/Community_299
 ---
 
 # Click
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CLI Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CLI_Reference
+#graphify/document #graphify/EXTRACTED #community/Community_299

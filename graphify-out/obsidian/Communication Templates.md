@@ -1,12 +1,12 @@
 ---
 source_file: "BRAND.md"
 type: "document"
-community: "test_hermes_model_resolver.py"
+community: "Community 615"
 location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy
+  - community/Community_615
 ---
 
 # Communication Templates
@@ -18,4 +18,4 @@ tags:
 - [[Internal Alert (Telegram)]] - `contains` [EXTRACTED]
 - [[Stakeholder Notification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_hermes_model_resolverpy
+#graphify/document #graphify/EXTRACTED #community/Community_615

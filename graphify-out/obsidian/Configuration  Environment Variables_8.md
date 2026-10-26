@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/podman_engine.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
 type: "document"
-community: "Security Implementation Verification"
-location: "L70"
+community: "Community 668"
+location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Implementation_Verification
+  - community/Community_668
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[podman_engine.py_2]] - `contains` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Implementation_Verification
+#graphify/document #graphify/EXTRACTED #community/Community_668

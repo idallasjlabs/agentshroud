@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "KillSwitchMonitor (3)"
+community: "Community 57"
 location: "L187"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KillSwitchMonitor_3
+  - community/Community_57
 ---
 
 # CompetitorEntry
 
 ## Connections
-- [[dot-verify_entry()]] - `references` [EXTRACTED]
+- [[.verify_entry()]] - `references` [EXTRACTED]
 - [[Citation_1]] - `uses` [INFERRED]
-- [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
+- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
 - [[CompetitorEntry_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/KillSwitchMonitor_3
+#graphify/code #graphify/INFERRED #community/Community_57

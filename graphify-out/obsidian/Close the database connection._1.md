@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "rationale"
-community: "AlertDispatcher (5)"
+community: "Community 254"
 location: "L164"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_5
+  - community/Community_254
 ---
 
 # Close the database connection.
 
 ## Connections
-- [[dot-close()_11]] - `rationale_for` [EXTRACTED]
+- [[.close()_9]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_5
+#graphify/rationale #graphify/EXTRACTED #community/Community_254

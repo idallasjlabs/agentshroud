@@ -1,20 +1,17 @@
 ---
-source_file: "cli/src/main.rs"
-type: "code"
-community: "GroupRoleResolver"
-location: "L32"
+source_file: "skills/openclaw/voice-call/SKILL.md"
+type: "document"
+community: "Community 428"
+location: "L19"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/Community_428
 ---
 
-# Cli
+# CLI
 
 ## Connections
-- [[Commands_2]] - `references` [EXTRACTED]
-- [[OutputFormat]] - `references` [EXTRACTED]
-- [[String]] - `references` [EXTRACTED]
-- [[main.rs]] - `contains` [EXTRACTED]
+- [[Voice Call]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/document #graphify/EXTRACTED #community/Community_428

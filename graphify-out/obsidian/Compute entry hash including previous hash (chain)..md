@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "rationale"
-community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
+community: "Community 254"
 location: "L116"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue_enhanced_queuepy
+  - community/Community_254
 ---
 
 # Compute entry hash including previous hash (chain).
 
 ## Connections
-- [[dot-compute_entry_hash()]] - `rationale_for` [EXTRACTED]
+- [[.compute_entry_hash()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy
+#graphify/rationale #graphify/EXTRACTED #community/Community_254

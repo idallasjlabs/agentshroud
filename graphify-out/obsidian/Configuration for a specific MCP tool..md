@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "rationale"
-community: "CrossBotTrustLedger"
+community: "Community 140"
 location: "L56"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/Community_140
 ---
 
 # Configuration for a specific MCP tool.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCPToolConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/rationale #graphify/EXTRACTED #community/Community_140

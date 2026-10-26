@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "code"
-community: "MiddlewareManager (6)"
-location: "L36"
+community: "Community 167"
+location: "L269"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_6
+  - community/Community_167
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[dot-_run()_2]] - `references` [EXTRACTED]
+- [[_run_wrapper_capture_bearer()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6
+#graphify/code #graphify/EXTRACTED #community/Community_167

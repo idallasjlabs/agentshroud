@@ -1,11 +1,11 @@
 ---
 source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "concept"
-community: "Future Enhancements"
+community: "Community 1159"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Future_Enhancements
+  - community/Community_1159
 ---
 
 # Class 9 — Downloadable Computer Software
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AGENTSHROUD standard character mark]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Future_Enhancements
+#graphify/concept #graphify/EXTRACTED #community/Community_1159

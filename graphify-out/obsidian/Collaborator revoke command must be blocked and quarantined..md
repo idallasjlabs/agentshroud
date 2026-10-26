@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2)"
+community: "Community 4"
 location: "L1276"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/Community_4
 ---
 
 # Collaborator /revoke command must be blocked and quarantined.
 
 ## Connections
-- [[dot-test_collaborator_revoke_command_is_blocked()]] - `rationale_for` [EXTRACTED]
+- [[.test_collaborator_revoke_command_is_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_4

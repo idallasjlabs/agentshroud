@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
 type: "document"
-community: "Google Calendar & Contacts - Quick Setup"
-location: "L86"
+community: "Community 775"
+location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Google_Calendar__Contacts_-_Quick_Setup
+  - community/Community_775
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[health_report.py_2]] - `contains` [EXTRACTED]
+- [[mcp_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Google_Calendar__Contacts_-_Quick_Setup
+#graphify/document #graphify/EXTRACTED #community/Community_775

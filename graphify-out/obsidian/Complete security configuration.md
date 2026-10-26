@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "PathIsolationManager"
+community: "Community 72"
 location: "L136"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/Community_72
 ---
 
 # Complete security configuration
 
 ## Connections
-- [[SecurityConfig_4]] - `rationale_for` [EXTRACTED]
+- [[SecurityConfig_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

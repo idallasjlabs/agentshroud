@@ -1,17 +1,22 @@
 ---
-source_file: "skills/openclaw/bear-notes/SKILL.md"
+source_file: "skills/openclaw/tmux/SKILL.md"
 type: "document"
-community: "Daedalus — Concept Illustrator (2)"
-location: "L42"
+community: "Community 576"
+location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator_2
+  - community/Community_576
 ---
 
 # Common Commands
 
 ## Connections
-- [[Bear Notes]] - `contains` [EXTRACTED]
+- [[Capture Output]] - `contains` [EXTRACTED]
+- [[List Sessions]] - `contains` [EXTRACTED]
+- [[Send Keys]] - `contains` [EXTRACTED]
+- [[Session Management]] - `contains` [EXTRACTED]
+- [[WindowPane Navigation]] - `contains` [EXTRACTED]
+- [[tmux Session Control]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator_2
+#graphify/document #graphify/EXTRACTED #community/Community_576

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "rationale"
-community: "TestMultipartOutboundPipeline"
+community: "Community 205"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestMultipartOutboundPipeline
+  - community/Community_205
 ---
 
 # Configuration for :class:`DataExfilVolumeGuard`.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DataExfilVolumeConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestMultipartOutboundPipeline
+#graphify/rationale #graphify/EXTRACTED #community/Community_205

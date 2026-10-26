@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
 type: "document"
-community: "MCPPermissionManager (3)"
-location: "L72"
+community: "Community 776"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_3
+  - community/Community_776
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[mcp_proxy.py_2]] - `contains` [EXTRACTED]
+- [[web_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCPPermissionManager_3
+#graphify/document #graphify/EXTRACTED #community/Community_776

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "document"
-community: "client_from_env"
+community: "Community 1015"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/client_from_env
+  - community/Community_1015
 ---
 
 # Confidence Threshold
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Presidio Analyzer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/client_from_env
+#graphify/document #graphify/EXTRACTED #community/Community_1015

@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "concept"
-community: "Diagram 12: Credential Flow"
+community: "Community 1721"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Diagram_12_Credential_Flow
+  - community/Community_1721
 ---
 
 # Community Detection / Clustering
 
-#graphify/concept #graphify/EXTRACTED #community/Diagram_12_Credential_Flow
+#graphify/concept #graphify/EXTRACTED #community/Community_1721

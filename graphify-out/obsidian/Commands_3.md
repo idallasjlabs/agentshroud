@@ -1,17 +1,17 @@
 ---
-source_file: "cli/src/main.rs"
-type: "code"
-community: "GroupRoleResolver"
-location: "L57"
+source_file: "skills/openclaw/model-usage/references/codexbar-cli.md"
+type: "document"
+community: "Community 273"
+location: "L8"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/Community_273
 ---
 
 # Commands
 
 ## Connections
-- [[main.rs]] - `contains` [EXTRACTED]
+- [[CodexBar CLI quick ref (usage + cost)]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/document #graphify/EXTRACTED #community/Community_273

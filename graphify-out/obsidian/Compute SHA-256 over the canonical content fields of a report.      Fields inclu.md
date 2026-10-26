@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "KillSwitchMonitor (3)"
+community: "Community 57"
 location: "L167"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_3
+  - community/Community_57
 ---
 
 # Compute SHA-256 over the canonical content fields of a report.      Fields inclu
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_compute_hash()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_57

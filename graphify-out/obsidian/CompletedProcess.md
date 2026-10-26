@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_switch_model_idempotent.py"
+source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "AgentShroud Phase Review — 2026-02-23"
-location: "L41"
+community: "Community 225"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_Review__2026-02-23
+  - community/Community_225
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[_run_switch()]] - `references` [EXTRACTED]
+- [[._run()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23
+#graphify/code #graphify/EXTRACTED #community/Community_225
