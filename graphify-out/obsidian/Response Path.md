@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "AgentShroud Blue Team Security Auditor (3)"
+community: "Community 1219"
 location: "L209"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Blue_Team_Security_Auditor_3
+  - community/Community_1219
 ---
 
 # Response Path
 
 ## Connections
-- [[Data Flow]] - `contains` [EXTRACTED]
+- [[Data Flow_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor_3
+#graphify/document #graphify/EXTRACTED #community/Community_1219

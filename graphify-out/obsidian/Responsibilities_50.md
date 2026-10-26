@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
 type: "document"
-community: "GovernanceAction"
-location: "L15"
+community: "Community 617"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GovernanceAction
+  - community/Community_617
 ---
 
 # Responsibilities
 
 ## Connections
-- [[config.py_1]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_2]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GovernanceAction
+#graphify/document #graphify/EXTRACTED #community/Community_617

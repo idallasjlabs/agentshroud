@@ -1,11 +1,11 @@
 ---
 source_file: "docs/job-schedule.html"
 type: "concept"
-community: "test_prompt_guard.py (2)"
+community: "Community 700"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_prompt_guardpy_2
+  - community/Community_700
 ---
 
 # Responsive Table-to-Card Collapse Pattern
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Job Schedule Dashboard]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_prompt_guardpy_2
+#graphify/concept #graphify/EXTRACTED #community/Community_700

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-data/README.md"
+source_file: ".agents/skills/i-sec/README.md"
 type: "document"
-community: "TestParserAndCommandResolution"
+community: "Community 1021"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestParserAndCommandResolution
+  - community/Community_1021
 ---
 
 # Related Skills
 
 ## Connections
-- [[Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
+- [[Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestParserAndCommandResolution
+#graphify/document #graphify/EXTRACTED #community/Community_1021

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tdd/README.md"
+source_file: "docker/config/hermes/skills/i-eightd/README.md"
 type: "document"
-community: "MultiHostResult"
+community: "Community 90"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MultiHostResult
+  - community/Community_90
 ---
 
 # Related Skills
 
 ## Connections
-- [[Test-Driven Development README]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MultiHostResult
+#graphify/document #graphify/EXTRACTED #community/Community_90

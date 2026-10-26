@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
 type: "document"
-community: "TestDomainValidationHelper (2)"
+community: "Community 566"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestDomainValidationHelper_2
+  - community/Community_566
 ---
 
 # Responsibilities
 
 ## Connections
-- [[trivy_report.py_2]] - `contains` [EXTRACTED]
+- [[health_report.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestDomainValidationHelper_2
+#graphify/document #graphify/EXTRACTED #community/Community_566

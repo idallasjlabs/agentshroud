@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "rationale"
-community: "GitHub Skill"
+community: "Community 709"
 location: "L194"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GitHub_Skill
+  - community/Community_709
 ---
 
 # Resolve source IP to a bot_id; lazily extends registry via DNS.          The sta
 
 ## Connections
-- [[dot-_agent_id_for_peer()]] - `rationale_for` [EXTRACTED]
+- [[._agent_id_for_peer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GitHub_Skill
+#graphify/rationale #graphify/EXTRACTED #community/Community_709

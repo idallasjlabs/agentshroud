@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-04-infrastructure-hosting.png"
 type: "image"
-community: "AgentShroud™ — Project Knowledge Base"
+community: "Community 493"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/AgentShroud__Project_Knowledge_Base
+  - community/Community_493
 ---
 
 # Rendered Infrastructure Hosting Diagram (PNG)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Infrastructure Diagram — Hosting & Servers]] - `implements` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/AgentShroud__Project_Knowledge_Base
+#graphify/image #graphify/EXTRACTED #community/Community_493

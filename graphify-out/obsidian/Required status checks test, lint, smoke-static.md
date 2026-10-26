@@ -1,11 +1,11 @@
 ---
 source_file: "docs/governance/BRANCH_PROTECTION.md"
 type: "concept"
-community: "AgentShroud User Guide"
+community: "Community 326"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/AgentShroud_User_Guide
+  - community/Community_326
 ---
 
 # Required status checks: test, lint, smoke-static
@@ -15,4 +15,4 @@ tags:
 - [[GitHub Branch Protection — main (docsgovernanceBRANCH_PROTECTION.md)]] - `conceptually_related_to` [EXTRACTED]
 - [[Test Strategy (docsgovernanceTEST_STRATEGY.md)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/AgentShroud_User_Guide
+#graphify/concept #graphify/INFERRED #community/Community_326

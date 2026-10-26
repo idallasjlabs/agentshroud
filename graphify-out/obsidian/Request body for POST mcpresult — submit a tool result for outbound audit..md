@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "sync-llm-settings.sh"
+community: "Community 6"
 location: "L796"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/sync-llm-settingssh
+  - community/Community_6
 ---
 
 # Request body for POST /mcp/result — submit a tool result for outbound audit.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCPResultRequest]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/sync-llm-settingssh
+#graphify/rationale #graphify/EXTRACTED #community/Community_6

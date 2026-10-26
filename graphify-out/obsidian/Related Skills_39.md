@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-qa/README.md"
+source_file: ".agents/skills/sec-defense/README.md"
 type: "document"
-community: "agentshroud-manage.sh"
+community: "Community 2095"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-managesh
+  - community/Community_2095
 ---
 
 # Related Skills
 
 ## Connections
-- [[Quality Assurance (QA)]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-managesh
+#graphify/document #graphify/EXTRACTED #community/Community_2095

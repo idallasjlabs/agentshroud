@@ -1,17 +1,23 @@
 ---
-source_file: "voice_gateway/server.py"
+source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "AgentShroud (system, C4 context) (2) (2)"
-location: "L377"
+community: "Community 148"
+location: "L61"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/AgentShroud_system_C4_context_2_2
+  - graphify/INFERRED
+  - community/Community_148
 ---
 
 # Response
 
 ## Connections
-- [[firmware_bin()]] - `references` [EXTRACTED]
+- [[._handle()_1]] - `references` [EXTRACTED]
+- [[A2APolicyConfig]] - `uses` [INFERRED]
+- [[A2APolicyEngine_1]] - `uses` [INFERRED]
+- [[A2AProxy]] - `uses` [INFERRED]
+- [[HermesA2AForwarder]] - `uses` [INFERRED]
+- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_system_C4_context_2_2
+#graphify/code #graphify/INFERRED #community/Community_148

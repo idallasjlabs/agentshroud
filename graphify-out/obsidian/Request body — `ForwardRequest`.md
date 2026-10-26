@@ -1,12 +1,12 @@
 ---
 source_file: "shortcuts/README.md"
 type: "document"
-community: "GitHub Copilot CLI Setup Guide"
+community: "Community 622"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide
+  - community/Community_622
 ---
 
 # Request body — `ForwardRequest`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[The `forward` contract (authoritative)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_622

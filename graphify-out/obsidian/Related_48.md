@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
 type: "document"
-community: "test_gemini_openai_translator.py"
-location: "L80"
+community: "Community 679"
+location: "L93"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_gemini_openai_translatorpy
+  - community/Community_679
 ---
 
 # Related
 
 ## Connections
-- [[auth.py]] - `contains` [EXTRACTED]
+- [[input_normalizer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_gemini_openai_translatorpy
+#graphify/document #graphify/EXTRACTED #community/Community_679

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "rationale"
-community: "_make_proxy"
+community: "Community 89"
 location: "L218"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_89
 ---
 
 # Remove expired delegations, persist result. Returns count removed.
 
 ## Connections
-- [[dot-cleanup_expired()_3]] - `rationale_for` [EXTRACTED]
+- [[.cleanup_expired()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_89

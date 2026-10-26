@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/README.md"
+source_file: ".agents/skills/i-pr/README.md"
 type: "document"
-community: "AgentShroud™ — Trademark Prior Use Record (4)"
+community: "Community 117"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__Trademark_Prior_Use_Record_4
+  - community/Community_117
 ---
 
 # Related Skills
 
 ## Connections
-- [[Atlas — Curriculum Architect]] - `contains` [EXTRACTED]
+- [[Pull Request Generator (PR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record_4
+#graphify/document #graphify/EXTRACTED #community/Community_117

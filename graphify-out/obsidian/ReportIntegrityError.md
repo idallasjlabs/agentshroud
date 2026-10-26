@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "KillSwitchMonitor (3)"
+community: "Community 57"
 location: "L51"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KillSwitchMonitor_3
+  - community/Community_57
 ---
 
 # ReportIntegrityError
 
 ## Connections
-- [[dot-load_latest()]] - `calls` [EXTRACTED]
-- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
-- [[Exception_2]] - `inherits` [EXTRACTED]
-- [[IntelReportStore]] - `uses` [INFERRED]
-- [[Path_52]] - `uses` [INFERRED]
+- [[.load_latest()]] - `calls` [EXTRACTED]
+- [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
+- [[Exception]] - `inherits` [EXTRACTED]
+- [[IntelReportStore_1]] - `uses` [INFERRED]
+- [[Path_31]] - `uses` [INFERRED]
 - [[Raised when a loaded report fails its hash integrity check.]] - `rationale_for` [EXTRACTED]
 - [[TestCompetitiveIntelReportSchema]] - `uses` [INFERRED]
 - [[TestIntelReportHashIntegrity]] - `uses` [INFERRED]
@@ -24,4 +24,4 @@ tags:
 - [[intel_report.py]] - `contains` [EXTRACTED]
 - [[test_intel_pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/KillSwitchMonitor_3
+#graphify/code #graphify/INFERRED #community/Community_57

@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md"
+source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
 type: "document"
-community: "Skill: Pull Request (PR) Generator"
-location: "L99"
+community: "Community 1556"
+location: "L117"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Pull_Request_PR_Generator
+  - community/Community_1556
 ---
 
 # Related Notes
 
 ## Connections
-- [[Egress Filter Errors_2]] - `contains` [EXTRACTED]
+- [[Security Pipeline Flow_1]] - `contains` [EXTRACTED]
+- [[`SecurityPipeline`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator
+#graphify/document #graphify/EXTRACTED #community/Community_1556

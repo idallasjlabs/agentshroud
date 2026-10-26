@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
 type: "document"
-community: "test_scanner_integration.py (2)"
+community: "Community 720"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy_2
+  - community/Community_720
 ---
 
 # Responsibilities
 
 ## Connections
-- [[apple_engine.py_2]] - `contains` [EXTRACTED]
+- [[url_analyzer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_scanner_integrationpy_2
+#graphify/document #graphify/EXTRACTED #community/Community_720

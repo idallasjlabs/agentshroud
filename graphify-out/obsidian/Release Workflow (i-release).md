@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-release/SKILL.md"
 type: "document"
-community: "graphify Skill"
+community: "Community 461"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_Skill
+  - community/Community_461
 ---
 
 # Release Workflow (i-release)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[graphify Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_Skill
+#graphify/document #graphify/EXTRACTED #community/Community_461

@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-oracle/README.md"
+source_file: ".agents/skills/i-mc/README.md"
 type: "document"
-community: "Test-Driven Development (TDD)"
+community: "Community 391"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_TDD
+  - community/Community_391
 ---
 
 # Related Skills
 
 ## Connections
-- [[Oracle — Feedback Analyst_1]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_TDD
+#graphify/document #graphify/EXTRACTED #community/Community_391

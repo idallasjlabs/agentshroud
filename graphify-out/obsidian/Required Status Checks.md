@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/BRANCH_PROTECTION.md"
 type: "document"
-community: "TestForwardToTelegramTimeouts"
+community: "Community 1171"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestForwardToTelegramTimeouts
+  - community/Community_1171
 ---
 
 # Required Status Checks
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Required Settings]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestForwardToTelegramTimeouts
+#graphify/document #graphify/EXTRACTED #community/Community_1171

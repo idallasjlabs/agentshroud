@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "rationale"
-community: "UserSessionManager (3) (2)"
+community: "Community 312"
 location: "L84"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager_3_2
+  - community/Community_312
 ---
 
 # Replace _app_state_has with a controllable membership set.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[flags()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_3_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_312

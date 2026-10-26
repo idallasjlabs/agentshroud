@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
 type: "document"
-community: "Publish SecureBrowser to ClawHub - Step-by-Step Guide"
-location: "L79"
+community: "Community 676"
+location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Publish_SecureBrowser_to_ClawHub_-_Step-by-Step_Guide
+  - community/Community_676
 ---
 
 # Related
 
 ## Connections
-- [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
+- [[egress_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Publish_SecureBrowser_to_ClawHub_-_Step-by-Step_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_676

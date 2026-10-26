@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pr/README.md"
+source_file: ".agents/skills/sad/README.md"
 type: "document"
-community: "7. Recommendations by Severity"
-location: "L14"
+community: "Community 2093"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/7_Recommendations_by_Severity
+  - community/Community_2093
 ---
 
 # Related Skills
 
 ## Connections
-- [[Pull Request Generator (PR)_1]] - `contains` [EXTRACTED]
+- [[System Audit Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/7_Recommendations_by_Severity
+#graphify/document #graphify/EXTRACTED #community/Community_2093

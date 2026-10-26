@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-01-c4-context.png"
 type: "image"
-community: "REPORT STRUCTURE"
+community: "Community 903"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/REPORT_STRUCTURE
+  - community/Community_903
 ---
 
 # Rendered C4 Context Diagram (PNG)
@@ -14,4 +14,4 @@ tags:
 - [[C4 Level 0 — System Context Diagram]] - `implements` [EXTRACTED]
 - [[C4 Level 1 — Container Diagram]] - `implements` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/REPORT_STRUCTURE
+#graphify/image #graphify/EXTRACTED #community/Community_903

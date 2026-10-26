@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/api.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "Hermes Dev Workflow (HDEV) Skill"
-location: "L20"
+community: "Community 809"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Dev_Workflow_HDEV_Skill
+  - community/Community_809
 ---
 
 # Responsibilities
 
 ## Connections
-- [[api.py_1]] - `contains` [EXTRACTED]
+- [[IDENTITY.md - Who I Am]] - `contains` [EXTRACTED]
+- [[auth.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Dev_Workflow_HDEV_Skill
+#graphify/document #graphify/EXTRACTED #community/Community_809

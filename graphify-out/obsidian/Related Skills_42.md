@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec/README.md"
+source_file: ".agents/skills/vulcan/README.md"
 type: "document"
-community: "openclaw_triage.sh"
+community: "Community 2102"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw_triagesh
+  - community/Community_2102
 ---
 
 # Related Skills
 
 ## Connections
-- [[Security Review (SEC)_2]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw_triagesh
+#graphify/document #graphify/EXTRACTED #community/Community_2102

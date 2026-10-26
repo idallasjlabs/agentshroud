@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
 type: "document"
-community: "AgentShroud: Enterprise Governance for Autonomous AI Agents (2)"
-location: "L77"
+community: "Community 668"
+location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents_2
+  - community/Community_668
 ---
 
 # Related
 
 ## Connections
-- [[version_routes.py_1]] - `contains` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents_2
+#graphify/document #graphify/EXTRACTED #community/Community_668

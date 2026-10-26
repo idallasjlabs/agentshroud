@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "test_collaborator_tracker.py (3)"
+community: "Community 146"
 location: "L822"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_3
+  - community/Community_146
 ---
 
 # Resolve a readable label for user id when available.          Priority: user sel
 
 ## Connections
-- [[dot-_resolve_display_name()]] - `rationale_for` [EXTRACTED]
+- [[._resolve_display_name()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_146

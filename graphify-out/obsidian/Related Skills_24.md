@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-athena/README.md"
+source_file: ".agents/skills/i-pm/README.md"
 type: "document"
-community: "active"
+community: "Community 1915"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/active
+  - community/Community_1915
 ---
 
 # Related Skills
 
 ## Connections
-- [[Athena — Knowledge Distiller]] - `contains` [EXTRACTED]
+- [[Project Management (PM)]] - `contains` [EXTRACTED]
+- [[Project Management (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/active
+#graphify/document #graphify/EXTRACTED #community/Community_1915

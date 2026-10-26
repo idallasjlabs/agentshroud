@@ -1,16 +1,24 @@
 ---
-source_file: ""
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "Implement per-user session isolation using Telegram user ID"
+community: "Community 20"
+location: "L2717"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Implement_per-user_session_isolation_using_Telegram_user_ID
+  - graphify/INFERRED
+  - community/Community_20
 ---
 
 # Request
 
 ## Connections
-- [[installer_page()]] - `references` [EXTRACTED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[soc_dashboard()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Implement_per-user_session_isolation_using_Telegram_user_ID
+#graphify/code #graphify/INFERRED #community/Community_20

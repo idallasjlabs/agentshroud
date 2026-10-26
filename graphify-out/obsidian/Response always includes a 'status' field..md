@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "rationale"
-community: "TestTelegramWebhook"
+community: "Community 512"
 location: "L62"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestTelegramWebhook
+  - community/Community_512
 ---
 
 # Response always includes a 'status' field.
 
 ## Connections
-- [[dot-test_response_has_status_field()]] - `rationale_for` [EXTRACTED]
+- [[.test_response_has_status_field()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestTelegramWebhook
+#graphify/rationale #graphify/EXTRACTED #community/Community_512

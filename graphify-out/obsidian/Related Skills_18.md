@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sad/README.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "TestOutboundInfoFilter (6)"
-location: "L12"
+community: "Community 583"
+location: "L222"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_6
+  - community/Community_583
 ---
 
 # Related Skills
 
 ## Connections
-- [[System Audit Documentation]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_6
+#graphify/document #graphify/EXTRACTED #community/Community_583

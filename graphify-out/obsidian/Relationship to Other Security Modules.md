@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "wazuh-ossec.conf"
+community: "Community 102"
 location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/wazuh-ossecconf
+  - community/Community_102
 ---
 
 # Relationship to Other Security Modules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/wazuh-ossecconf
+#graphify/document #graphify/EXTRACTED #community/Community_102

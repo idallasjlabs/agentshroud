@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "rationale"
-community: "proxy_status.py"
+community: "Community 851"
 location: "L158"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/proxy_statuspy
+  - community/Community_851
 ---
 
 # Release the loaded model (for testing / memory pressure).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[reset_model()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/proxy_statuspy
+#graphify/rationale #graphify/EXTRACTED #community/Community_851
