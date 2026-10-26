@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "Pre-Deployment Checklist"
+community: "Community 637"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist
+  - community/Community_637
 ---
 
 # Approval Queue (human-in-the-loop)
@@ -14,4 +14,4 @@ tags:
 - [[SOC Dashboard]] - `shares_data_with` [EXTRACTED]
 - [[SecurityPipeline (75 modules, 7 layers)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Pre-Deployment_Checklist
+#graphify/concept #graphify/EXTRACTED #community/Community_637

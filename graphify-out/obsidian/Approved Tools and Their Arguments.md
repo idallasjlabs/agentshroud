@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/AGENTS.md"
 type: "document"
-community: "notion"
+community: "Community 830"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/notion
+  - community/Community_830
 ---
 
 # Approved Tools and Their Arguments
@@ -19,4 +19,4 @@ tags:
 - [[send_message]] - `contains` [EXTRACTED]
 - [[web_search]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/notion
+#graphify/document #graphify/EXTRACTED #community/Community_830

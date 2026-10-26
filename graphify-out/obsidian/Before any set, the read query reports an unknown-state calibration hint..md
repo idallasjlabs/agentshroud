@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "main.rs"
+community: "Community 46"
 location: "L2686"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/Community_46
 ---
 
 # Before any set, the read query reports an unknown-state calibration hint.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_answer_volume_query_unknown_before_any_set()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/mainrs
+#graphify/rationale #graphify/EXTRACTED #community/Community_46

@@ -1,12 +1,12 @@
 ---
-source_file: "skills/custom/agentshroud-redteam/SKILL.md"
+source_file: ".agents/agents/sec-offense.md"
 type: "document"
-community: "Test-Driven Development README"
-location: "L334"
+community: "Community 1059"
+location: "L336"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_README
+  - community/Community_1059
 ---
 
 # Attack Techniques Reference
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Writing Exploit Tests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README
+#graphify/document #graphify/EXTRACTED #community/Community_1059

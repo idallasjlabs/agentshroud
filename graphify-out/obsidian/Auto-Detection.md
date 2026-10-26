@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "EgressFilterConfig (3) (2)"
+community: "Community 413"
 location: "L342"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_3_2
+  - community/Community_413
 ---
 
 # Auto-Detection
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 5 Configure Ports]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilterConfig_3_2
+#graphify/document #graphify/EXTRACTED #community/Community_413

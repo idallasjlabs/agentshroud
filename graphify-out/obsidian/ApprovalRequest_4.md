@@ -1,18 +1,17 @@
 ---
-source_file: "docs/data/data-dictionary.md"
-type: "document"
-community: "AgentShroud Operations Cheat Sheet"
-location: "L57"
+source_file: "gateway/ingest_api/routes/approval.py"
+type: "code"
+community: "Community 1248"
+location: "L49"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Operations_Cheat_Sheet
+  - community/Community_1248
 ---
 
 # ApprovalRequest
 
 ## Connections
-- [[Approval Workflows]] - `contains` [EXTRACTED]
-- [[Security Management Entities]] - `contains` [EXTRACTED]
+- [[submit_approval_request()]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet
+#graphify/code #graphify/EXTRACTED #community/Community_1248

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/per-agent-isolation.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Skill: Security Review (SEC) (2)"
-location: "L16"
+community: "Community 356"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Security_Review_SEC_2
+  - community/Community_356
 ---
 
 # Architecture
 
 ## Connections
-- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
+- [[How It Works_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC_2
+#graphify/document #graphify/EXTRACTED #community/Community_356

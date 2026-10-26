@@ -1,27 +1,26 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
+source_file: ".agents/skills/atlas/SKILL.md"
 type: "document"
-community: "WebProxyConfig (2)"
+community: "Community 1169"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/WebProxyConfig_2
+  - community/Community_1169
 ---
 
 # Atlas — Curriculum Architect
 
 ## Connections
-- [[Input Requirements_9]] - `contains` [EXTRACTED]
-- [[OKE Channel — CPA Exam Context]] - `contains` [EXTRACTED]
-- [[Output Format_20]] - `contains` [EXTRACTED]
-- [[Persona_7]] - `contains` [EXTRACTED]
-- [[Quality Checklist_7]] - `contains` [EXTRACTED]
-- [[Role_60]] - `contains` [EXTRACTED]
-- [[System Prompt_7]] - `contains` [EXTRACTED]
-- [[User Prompt Template_3]] - `contains` [EXTRACTED]
+- [[Input Requirements_12]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Context_1]] - `contains` [EXTRACTED]
+- [[Output Format_15]] - `contains` [EXTRACTED]
+- [[Persona_9]] - `contains` [EXTRACTED]
+- [[Quality Checklist_11]] - `contains` [EXTRACTED]
+- [[Role_41]] - `contains` [EXTRACTED]
+- [[SKILL_2]] - `contains` [EXTRACTED]
+- [[System Prompt_9]] - `contains` [EXTRACTED]
+- [[User Prompt Template_5]] - `contains` [EXTRACTED]
 - [[User Prompt Template — OKE Channel_1]] - `contains` [EXTRACTED]
-- [[openclawskillsi-atlasSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/WebProxyConfig_2
+#graphify/document #graphify/EXTRACTED #community/Community_1169

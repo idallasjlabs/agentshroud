@@ -1,18 +1,17 @@
 ---
-source_file: "README.md"
+source_file: "docs/architecture/per-agent-isolation.md"
 type: "document"
-community: "AuditExporter"
-location: "L100"
+community: "Community 749"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/Community_749
 ---
 
 # Architecture
 
 ## Connections
-- [[75 Security Modules]] - `shares_data_with` [EXTRACTED]
-- [[AgentShroud™ README]] - `contains` [EXTRACTED]
+- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditExporter
+#graphify/document #graphify/EXTRACTED #community/Community_749

@@ -1,20 +1,25 @@
 ---
-source_file: "gateway/approval_queue/group_router.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "test_a2a_proxy.py"
-location: "L63"
+community: "Community 30"
+location: "L215"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - graphify/INFERRED
+  - community/Community_30
 ---
 
 # ApprovalRequest
 
 ## Connections
-- [[dot-_build_group_reply_text()]] - `references` [EXTRACTED]
-- [[dot-_build_owner_dm_text()]] - `references` [EXTRACTED]
-- [[dot-route_approval()]] - `references` [EXTRACTED]
-- [[ApprovalRequest_2]] - `uses` [INFERRED]
+- [[.submit()]] - `references` [EXTRACTED]
+- [[.submit_tool_request()]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
+- [[ApprovalRequest_3]] - `uses` [INFERRED]
+- [[ApprovalStore_1]] - `uses` [INFERRED]
+- [[MFAGuard_2]] - `uses` [INFERRED]
+- [[ToolRiskConfig_1]] - `uses` [INFERRED]
+- [[ToolRiskPolicy_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/code #graphify/INFERRED #community/Community_30

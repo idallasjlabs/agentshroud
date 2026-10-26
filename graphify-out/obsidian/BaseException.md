@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/proxy/telegram_egress_notify.py"
+source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist (3)"
-location: "L38"
+community: "Community 1787"
+location: "L936"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist_3
+  - community/Community_1787
 ---
 
 # BaseException
 
 ## Connections
-- [[_err_text()]] - `references` [EXTRACTED]
-- [[_is_stale_callback_error()]] - `references` [EXTRACTED]
-- [[_is_stale_edit_error()]] - `references` [EXTRACTED]
+- [[._is_connect_error()]] - `references` [EXTRACTED]
+- [[._local_backend_unavailable_response()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist_3
+#graphify/code #graphify/EXTRACTED #community/Community_1787

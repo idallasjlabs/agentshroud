@@ -1,32 +1,32 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "Community 7"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # ApprovalQueue
 
 ## Connections
-- [[dot-__init__()_34]] - `method` [EXTRACTED]
-- [[dot-_append_audit_event()]] - `method` [EXTRACTED]
-- [[dot-_expire_stale()]] - `method` [EXTRACTED]
-- [[dot-_load_pending_store()]] - `method` [EXTRACTED]
-- [[dot-_persist_pending_store()]] - `method` [EXTRACTED]
-- [[dot-broadcast()_1]] - `method` [EXTRACTED]
-- [[dot-cleanup_decided()]] - `method` [EXTRACTED]
-- [[dot-connect()]] - `method` [EXTRACTED]
-- [[dot-decide()_1]] - `method` [EXTRACTED]
-- [[dot-disabled_client()]] - `calls` [EXTRACTED]
-- [[dot-disconnect()]] - `method` [EXTRACTED]
-- [[dot-get_item()_2]] - `method` [EXTRACTED]
-- [[dot-get_pending()_1]] - `method` [EXTRACTED]
-- [[dot-no_approval_client()]] - `calls` [EXTRACTED]
-- [[dot-submit()_1]] - `method` [EXTRACTED]
+- [[.__init__()_5]] - `method` [EXTRACTED]
+- [[._append_audit_event()]] - `method` [EXTRACTED]
+- [[._expire_stale()]] - `method` [EXTRACTED]
+- [[._load_pending_store()]] - `method` [EXTRACTED]
+- [[._persist_pending_store()]] - `method` [EXTRACTED]
+- [[.broadcast()_1]] - `method` [EXTRACTED]
+- [[.cleanup_decided()]] - `method` [EXTRACTED]
+- [[.connect()_1]] - `method` [EXTRACTED]
+- [[.decide()_1]] - `method` [EXTRACTED]
+- [[.disabled_client()]] - `calls` [EXTRACTED]
+- [[.disconnect()_1]] - `method` [EXTRACTED]
+- [[.get_item()_1]] - `method` [EXTRACTED]
+- [[.get_pending()_1]] - `method` [EXTRACTED]
+- [[.no_approval_client()]] - `calls` [EXTRACTED]
+- [[.submit()_1]] - `method` [EXTRACTED]
 - [[ApprovalQueue_1]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
 - [[In-memory approval queue with WebSocket notifications      Actions requiring app]] - `rationale_for` [EXTRACTED]
@@ -45,12 +45,12 @@ tags:
 - [[TestSSHWriteFileEndpoint]] - `uses` [INFERRED]
 - [[TestSSHWriteFileLedgerAudit]] - `uses` [INFERRED]
 - [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - `uses` [INFERRED]
-- [[_HangingWebSocket_1]] - `uses` [INFERRED]
+- [[_HangingWebSocket]] - `uses` [INFERRED]
 - [[_queue()]] - `calls` [EXTRACTED]
-- [[approval_queue()_1]] - `calls` [EXTRACTED]
 - [[approval_queue()]] - `calls` [EXTRACTED]
+- [[approval_queue()_1]] - `calls` [EXTRACTED]
+- [[client()_16]] - `calls` [EXTRACTED]
 - [[client()_17]] - `calls` [EXTRACTED]
-- [[client()_18]] - `calls` [EXTRACTED]
 - [[queue()]] - `calls` [EXTRACTED]
 - [[queue.py]] - `contains` [EXTRACTED]
 - [[test_approval_queue.py]] - `imports` [EXTRACTED]
@@ -64,4 +64,4 @@ tags:
 - [[test_store_persists_submit_and_decision()]] - `calls` [EXTRACTED]
 - [[test_store_restores_items_on_init()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/Community_7

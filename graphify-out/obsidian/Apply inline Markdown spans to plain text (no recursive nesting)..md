@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/render_md_email.py"
 type: "rationale"
-community: "Architecture"
+community: "Community 522"
 location: "L58"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Architecture
+  - community/Community_522
 ---
 
 # Apply inline Markdown spans to plain text (no recursive nesting).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_inline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Architecture
+#graphify/rationale #graphify/EXTRACTED #community/Community_522

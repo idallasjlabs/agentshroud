@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "rationale"
-community: "ApprovalStore"
+community: "Community 30"
 location: "L153"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalStore
+  - community/Community_30
 ---
 
 # AuditStore: same idempotency contract as ApprovalStore.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_audit_store_initialize_is_idempotent()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalStore
+#graphify/rationale #graphify/EXTRACTED #community/Community_30

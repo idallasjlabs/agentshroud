@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "rationale"
-community: "test_scorecard_scoring.py"
+community: "Community 683"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_scorecard_scoringpy
+  - community/Community_683
 ---
 
 # Blocklist stub that blocks every domain.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_BlockAll]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_scorecard_scoringpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_683

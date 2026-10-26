@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tools/multi_host_test.py"
+source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "code"
-community: "PermissionLevel (6)"
-location: "L264"
+community: "Community 194"
+location: "L333"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PermissionLevel_6
+  - community/Community_194
 ---
 
 # ArgumentParser
 
 ## Connections
-- [[build_parser()]] - `references` [EXTRACTED]
+- [[_build_arg_parser()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PermissionLevel_6
+#graphify/code #graphify/EXTRACTED #community/Community_194

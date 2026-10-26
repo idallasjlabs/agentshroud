@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "rationale"
-community: "TestPatternDetection"
+community: "Community 512"
 location: "L162"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPatternDetection
+  - community/Community_512
 ---
 
 # Approved response includes sanitized_body field.
 
 ## Connections
-- [[dot-test_allowed_recipient_response_has_sanitized_body()]] - `rationale_for` [EXTRACTED]
+- [[.test_allowed_recipient_response_has_sanitized_body()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPatternDetection
+#graphify/rationale #graphify/EXTRACTED #community/Community_512

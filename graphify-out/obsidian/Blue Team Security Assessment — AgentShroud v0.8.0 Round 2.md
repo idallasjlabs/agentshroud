@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md"
 type: "document"
-community: "TeamsConfig (3)"
+community: "Community 357"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TeamsConfig_3
+  - community/Community_357
 ---
 
 # Blue Team Security Assessment — AgentShroud v0.8.0 Round 2
@@ -16,8 +16,8 @@ tags:
 - [[AgentShroud v0.8.0 Peer Review Round 3 (FINAL)]] - `conceptually_related_to` [INFERRED]
 - [[CRITICAL Findings]] - `contains` [EXTRACTED]
 - [[Container Security Audit — AgentShroud v0.8.0]] - `conceptually_related_to` [INFERRED]
-- [[Executive Summary_6]] - `contains` [EXTRACTED]
-- [[Executive Summary_7]] - `contains` [EXTRACTED]
+- [[Executive Summary_3]] - `contains` [EXTRACTED]
+- [[Executive Summary_4]] - `contains` [EXTRACTED]
 - [[Fixes Applied_1]] - `contains` [EXTRACTED]
 - [[HIGH Findings]] - `contains` [EXTRACTED]
 - [[LOW Findings]] - `contains` [EXTRACTED]
@@ -25,10 +25,12 @@ tags:
 - [[OWNER_USER_IDS bypass mechanism]] - `references` [EXTRACTED]
 - [[RBAC (Role-Based Access Control)]] - `references` [EXTRACTED]
 - [[Recommendation_1]] - `contains` [EXTRACTED]
+- [[Recommendations]] - `contains` [EXTRACTED]
 - [[Round 3 New Findings]] - `contains` [EXTRACTED]
-- [[Summary_11]] - `contains` [EXTRACTED]
+- [[Summary_36]] - `contains` [EXTRACTED]
 - [[Verification of ALL Prior Findings]] - `contains` [EXTRACTED]
 - [[Verification of Round 1 Fixes]] - `contains` [EXTRACTED]
+- [[blue-team-assessment-v0.8.0-r2]] - `contains` [EXTRACTED]
 - [[blue-team-assessment-v0.8.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TeamsConfig_3
+#graphify/document #graphify/EXTRACTED #community/Community_357

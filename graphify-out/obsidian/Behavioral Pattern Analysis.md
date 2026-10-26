@@ -1,13 +1,13 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "ota.c (self-update over HTTPS)"
+community: "Community 1746"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/otac_self-update_over_HTTPS
+  - community/Community_1746
 ---
 
 # Behavioral Pattern Analysis
 
-#graphify/concept #graphify/EXTRACTED #community/otac_self-update_over_HTTPS
+#graphify/concept #graphify/EXTRACTED #community/Community_1746

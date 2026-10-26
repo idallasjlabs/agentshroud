@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-03.md"
 type: "document"
-community: "installer.py (2)"
+community: "Community 1115"
 location: "L113"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/installerpy_2
+  - community/Community_1115
 ---
 
 # Are we covering known attack vectors?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[3. Brutally Honest Self-Assessment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/installerpy_2
+#graphify/document #graphify/EXTRACTED #community/Community_1115

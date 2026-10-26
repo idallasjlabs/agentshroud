@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-19-incident-response.svg"
 type: "concept"
-community: "test-container-runtime.sh"
+community: "Community 1156"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test-container-runtimesh
+  - community/Community_1156
 ---
 
 # Assess severity
@@ -17,4 +17,4 @@ tags:
 - [[P3 — Medium (respond within 4 hours; review logs, apply config fix)]] - `calls` [EXTRACTED]
 - [[P4 — Low (resolve in next session; fix branch + PR)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test-container-runtimesh
+#graphify/concept #graphify/EXTRACTED #community/Community_1156

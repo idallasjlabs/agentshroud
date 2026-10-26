@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup/IMESSAGE_STATUS.md"
 type: "concept"
-community: "Skill: Technical Illustrator (TI) (2)"
+community: "Community 804"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_Technical_Illustrator_TI_2
+  - community/Community_804
 ---
 
 # BlueBubbles (native macOS iMessage relay)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[IMESSAGE_STATUS]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI_2
+#graphify/concept #graphify/EXTRACTED #community/Community_804

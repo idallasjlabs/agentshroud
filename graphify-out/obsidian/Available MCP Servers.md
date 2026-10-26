@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-mcpm/SKILL.md"
+source_file: ".agents/agents/i-mcpm.md"
 type: "document"
-community: "Sprint Cadence Decision"
-location: "L11"
+community: "Community 1929"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sprint_Cadence_Decision
+  - community/Community_1929
 ---
 
 # Available MCP Servers
@@ -17,4 +17,4 @@ tags:
 - [[3. AWS API MCP]] - `contains` [EXTRACTED]
 - [[Skill MCP Tools Usage (MCP-TOOLS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sprint_Cadence_Decision
+#graphify/document #graphify/EXTRACTED #community/Community_1929

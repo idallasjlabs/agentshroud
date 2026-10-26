@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm/SKILL.md"
 type: "concept"
-community: "AgentShroud Logo on Brand Blue Background"
+community: "Community 1618"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Logo_on_Brand_Blue_Background
+  - community/Community_1618
 ---
 
 # Atlassian MCP Server (Jira + Confluence, concept)
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Logo_on_Brand_Blue_Background
+#graphify/concept #graphify/EXTRACTED #community/Community_1618

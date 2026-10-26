@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/himalaya/references/message-composition.md"
+source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "Multi-Agent Role Matrix"
-location: "L72"
+community: "Community 874"
+location: "L215"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Multi-Agent_Role_Matrix
+  - community/Community_874
 ---
 
 # Attachments
 
 ## Connections
-- [[MML for Rich Emails]] - `contains` [EXTRACTED]
+- [[Himalaya Email CLI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix
+#graphify/document #graphify/EXTRACTED #community/Community_874

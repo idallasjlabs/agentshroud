@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
+source_file: ".github/agents/i-browser.agent.md"
 type: "document"
-community: ".github/mcp.json"
-location: "L320"
+community: "Community 449"
+location: "L188"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/github/mcpjson
+  - community/Community_449
 ---
 
 # Audit Logging
 
 ## Connections
-- [[Credential Security Policy]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/github/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Community_449

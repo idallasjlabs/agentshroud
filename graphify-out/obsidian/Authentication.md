@@ -1,17 +1,19 @@
 ---
-source_file: "docs/api/api-reference.md"
+source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester (2)"
-location: "L28"
+community: "Community 2190"
+location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester_2
+  - community/Community_2190
 ---
 
 # Authentication
 
 ## Connections
-- [[API Reference]] - `contains` [EXTRACTED]
+- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
+- [[Option 1 GitHub Login]] - `contains` [EXTRACTED]
+- [[Option 2 Personal Access Token]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester_2
+#graphify/document #graphify/EXTRACTED #community/Community_2190

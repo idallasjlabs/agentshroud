@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/ingest_api/routes/health.py"
+source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "test_fieldflare_route_strips_unsupported_fields_streaming"
-location: "L39"
+community: "Community 34"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_fieldflare_route_strips_unsupported_fields_streaming
+  - community/Community_34
 ---
 
 # AuthRequired
 
 ## Connections
-- [[health_check_detail()]] - `references` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[email_send()]] - `references` [EXTRACTED]
+- [[email_send_owner()]] - `references` [EXTRACTED]
+- [[forward_content()]] - `references` [EXTRACTED]
+- [[forward_content_stream()]] - `references` [EXTRACTED]
+- [[telegram_webhook()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_fieldflare_route_strips_unsupported_fields_streaming
+#graphify/code #graphify/EXTRACTED #community/Community_34

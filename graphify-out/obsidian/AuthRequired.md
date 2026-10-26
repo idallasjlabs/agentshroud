@@ -1,16 +1,31 @@
 ---
-source_file: ""
+source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "TrustConfig"
+community: "Community 6"
+location: "L424"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/Community_6
 ---
 
 # AuthRequired
 
 ## Connections
+- [[Action_1]] - `uses` [INFERRED]
+- [[ApprovalMode]] - `uses` [INFERRED]
+- [[ApprovalRequest_3]] - `uses` [INFERRED]
+- [[AuditExportConfig_1]] - `uses` [INFERRED]
+- [[AuditExporter]] - `uses` [INFERRED]
+- [[LedgerEntry_1]] - `uses` [INFERRED]
+- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
+- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[SSHExecRequest_1]] - `uses` [INFERRED]
+- [[SSHExecResponse]] - `uses` [INFERRED]
+- [[SSHWriteFileRequest_1]] - `uses` [INFERRED]
+- [[SSHWriteFileResponse]] - `uses` [INFERRED]
 - [[_scanner_summary()]] - `references` [EXTRACTED]
 - [[add_blocked_domain()]] - `references` [EXTRACTED]
 - [[container_security_profile()]] - `references` [EXTRACTED]
@@ -44,7 +59,7 @@ tags:
 - [[list_reports()]] - `references` [EXTRACTED]
 - [[list_security_modules()]] - `references` [EXTRACTED]
 - [[list_users_and_roles()]] - `references` [EXTRACTED]
-- [[llm_proxy_stats]] - `references` [EXTRACTED]
+- [[llm_proxy_stats()]] - `references` [EXTRACTED]
 - [[mcp_proxy_endpoint()]] - `references` [EXTRACTED]
 - [[mcp_result_endpoint()]] - `references` [EXTRACTED]
 - [[op_proxy()]] - `references` [EXTRACTED]
@@ -78,4 +93,4 @@ tags:
 - [[verify_killswitch()]] - `references` [EXTRACTED]
 - [[wazuh_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/Community_6

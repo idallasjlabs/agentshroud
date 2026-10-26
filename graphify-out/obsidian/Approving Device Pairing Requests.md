@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "AgentShroud v0.7.0 Enforcement Audit Results (2)"
+community: "Community 284"
 location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Enforcement_Audit_Results_2
+  - community/Community_284
 ---
 
 # Approving Device Pairing Requests
@@ -17,4 +17,4 @@ tags:
 - [[Quick Approval (Single Device)]] - `contains` [EXTRACTED]
 - [[Verify Approval]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results_2
+#graphify/document #graphify/EXTRACTED #community/Community_284

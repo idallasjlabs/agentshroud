@@ -1,21 +1,26 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/README.md"
+source_file: ".agents/agents/atlas.md"
 type: "document"
-community: "AgentShroud™ — Trademark Prior Use Record (4)"
-location: "L1"
+community: "Community 1138"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__Trademark_Prior_Use_Record_4
+  - community/Community_1138
 ---
 
 # Atlas — Curriculum Architect
 
 ## Connections
-- [[Purpose_39]] - `contains` [EXTRACTED]
-- [[Related Skills_25]] - `contains` [EXTRACTED]
-- [[Usage_28]] - `contains` [EXTRACTED]
-- [[openclawskillsi-atlasREADME]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[Input Requirements_2]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Context]] - `contains` [EXTRACTED]
+- [[Output Format_1]] - `contains` [EXTRACTED]
+- [[Persona_1]] - `contains` [EXTRACTED]
+- [[Quality Checklist_2]] - `contains` [EXTRACTED]
+- [[Role_5]] - `contains` [EXTRACTED]
+- [[System Prompt_1]] - `contains` [EXTRACTED]
+- [[User Prompt Template_1]] - `contains` [EXTRACTED]
+- [[User Prompt Template — OKE Channel]] - `contains` [EXTRACTED]
+- [[atlas]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record_4
+#graphify/document #graphify/EXTRACTED #community/Community_1138

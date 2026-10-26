@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "MiddlewareManager (4)"
+community: "Community 94"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/Community_94
 ---
 
 # Architecture Overview
@@ -16,8 +16,8 @@ tags:
 - [[Container Architecture_2]] - `contains` [EXTRACTED]
 - [[Full System Diagram]] - `contains` [EXTRACTED]
 - [[Gateway Internal Layer Order]] - `contains` [EXTRACTED]
-- [[Network Topology_3]] - `contains` [EXTRACTED]
-- [[Related Notes_69]] - `contains` [EXTRACTED]
-- [[Summary_26]] - `contains` [EXTRACTED]
+- [[Network Topology_1]] - `contains` [EXTRACTED]
+- [[Related Notes_2]] - `contains` [EXTRACTED]
+- [[Summary_44]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/document #graphify/EXTRACTED #community/Community_94

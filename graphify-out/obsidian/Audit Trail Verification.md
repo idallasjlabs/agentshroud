@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "LOW — Informational"
+community: "Community 350"
 location: "L965"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LOW__Informational
+  - community/Community_350
 ---
 
 # Audit Trail Verification
 
 ## Connections
-- [[Security Verification]] - `contains` [EXTRACTED]
+- [[Security Verification_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LOW__Informational
+#graphify/document #graphify/EXTRACTED #community/Community_350

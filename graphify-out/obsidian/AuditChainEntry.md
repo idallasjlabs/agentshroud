@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "SecurityPipeline (2)"
+community: "Community 203"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline_2
+  - community/Community_203
 ---
 
 # AuditChainEntry
 
 ## Connections
-- [[dot-append()_1]] - `references` [EXTRACTED]
-- [[dot-append_block()]] - `references` [EXTRACTED]
-- [[dot-append_owner_bypass()]] - `references` [EXTRACTED]
-- [[dot-entries()_1]] - `references` [EXTRACTED]
+- [[.append()]] - `references` [EXTRACTED]
+- [[.append_block()]] - `references` [EXTRACTED]
+- [[.append_owner_bypass()]] - `references` [EXTRACTED]
+- [[.entries()_1]] - `references` [EXTRACTED]
 - [[An entry in the SHA-256 hash chain audit ledger.]] - `rationale_for` [EXTRACTED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
-- [[FilterResult_1]] - `uses` [INFERRED]
+- [[FilterResult]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
-- [[pipeline.py_1]] - `contains` [EXTRACTED]
+- [[pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_2
+#graphify/code #graphify/EXTRACTED #community/Community_203

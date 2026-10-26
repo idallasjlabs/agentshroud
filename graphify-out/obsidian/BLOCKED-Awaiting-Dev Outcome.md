@@ -1,13 +1,13 @@
 ---
 source_file: "reports/upgrade-2026-08-30.md"
 type: "rationale"
-community: "CodexBar Model Cost Usage CLI Summarizer"
+community: "Community 1874"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CodexBar_Model_Cost_Usage_CLI_Summarizer
+  - community/Community_1874
 ---
 
 # BLOCKED-Awaiting-Dev Outcome
 
-#graphify/rationale #graphify/EXTRACTED #community/CodexBar_Model_Cost_Usage_CLI_Summarizer
+#graphify/rationale #graphify/EXTRACTED #community/Community_1874

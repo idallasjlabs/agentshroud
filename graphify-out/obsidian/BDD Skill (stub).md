@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-bdd/SKILL.md"
 type: "document"
-community: "Performance baseline — inbound latency <0.5ms arm64/macOS"
+community: "Community 1573"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Performance_baseline__inbound_latency_05ms_arm64/macOS
+  - community/Community_1573
 ---
 
 # BDD Skill (stub)
 
-#graphify/document #graphify/EXTRACTED #community/Performance_baseline__inbound_latency_05ms_arm64/macOS
+#graphify/document #graphify/EXTRACTED #community/Community_1573

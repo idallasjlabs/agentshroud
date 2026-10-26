@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "soc/router.py"
+community: "Community 11"
 location: "L197"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/Community_11
 ---
 
 # Apply time-based decay to score.
 
 ## Connections
-- [[dot-_apply_decay()]] - `rationale_for` [EXTRACTED]
+- [[._apply_decay()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_11
