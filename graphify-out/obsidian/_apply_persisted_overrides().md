@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "colima-health-check.sh"
+community: "Community 18"
 location: "L198"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/Community_18
 ---
 
 # _apply_persisted_overrides()
 
 ## Connections
-- [[dot-model_post_init()]] - `calls` [EXTRACTED]
+- [[.model_post_init()_1]] - `calls` [EXTRACTED]
 - [[GroupConfig]] - `calls` [EXTRACTED]
 - [[Merge group_overrides.json additions into the in-memory TeamsConfig.]] - `rationale_for` [EXTRACTED]
-- [[TeamsConfig_1]] - `references` [EXTRACTED]
+- [[TeamsConfig]] - `references` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/Community_18

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
+community: "Community 24"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/Community_24
 ---
 
 # _install_uvicorn_warning_filter()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Install warning filter once for uvicorn logger.]] - `rationale_for` [EXTRACTED]
 - [[_DropInvalidHTTPRequestFilter]] - `calls` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/Community_24

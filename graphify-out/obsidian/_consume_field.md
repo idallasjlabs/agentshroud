@@ -1,17 +1,16 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "._run_and_read (2)"
+community: "Community 8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run_and_read_2
+  - community/Community_8
 ---
 
 # _consume_field
 
 ## Connections
-- [[TestConsumeFieldEdge]] - `calls` [EXTRACTED]
-- [[rewrite_registry_text()]] - `calls` [EXTRACTED]
+- [[rewrite_registry_text()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run_and_read_2
+#graphify/code #graphify/EXTRACTED #community/Community_8

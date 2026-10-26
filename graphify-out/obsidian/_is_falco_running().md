@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "test_mfa_guard.py"
+community: "Community 29"
 location: "L654"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/Community_29
 ---
 
 # _is_falco_running()
 
 ## Connections
-- [[Path_31]] - `calls` [EXTRACTED]
+- [[Path_17]] - `calls` [EXTRACTED]
 - [[Return True if a non-zombie falco process is running inside this container.]] - `rationale_for` [EXTRACTED]
 - [[get_falco_summary()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/Community_29

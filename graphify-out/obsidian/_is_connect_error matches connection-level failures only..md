@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "rationale"
-community: "SecureBrowser (4)"
+community: "Community 1278"
 location: "L733"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecureBrowser_4
+  - community/Community_1278
 ---
 
 # _is_connect_error matches connection-level failures only.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_is_connect_error_classification()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser_4
+#graphify/rationale #graphify/EXTRACTED #community/Community_1278

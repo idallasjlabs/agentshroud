@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_audit_archive.py"
 type: "code"
-community: "🟢 INFO (nice to have) (2)"
+community: "Community 380"
 location: "L284"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_INFO_nice_to_have_2
+  - community/Community_380
 ---
 
 # _make_mixed_live_db()
 
 ## Connections
-- [[dot-test_idempotent_rerun_finds_nothing_left()]] - `calls` [EXTRACTED]
-- [[dot-test_no_matching_rows_is_a_clean_noop()]] - `calls` [EXTRACTED]
-- [[dot-test_processes_in_multiple_batches()]] - `calls` [EXTRACTED]
-- [[dot-test_purges_only_matching_event_type_and_severity()]] - `calls` [EXTRACTED]
+- [[.test_idempotent_rerun_finds_nothing_left()]] - `calls` [EXTRACTED]
+- [[.test_no_matching_rows_is_a_clean_noop()]] - `calls` [EXTRACTED]
+- [[.test_processes_in_multiple_batches()]] - `calls` [EXTRACTED]
+- [[.test_purges_only_matching_event_type_and_severity()]] - `calls` [EXTRACTED]
 - [[n_noisy events of (egress_filter, INFO); n_denies of (egress_filter, HIGH);]] - `rationale_for` [EXTRACTED]
 - [[test_audit_archive.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_INFO_nice_to_have_2
+#graphify/code #graphify/EXTRACTED #community/Community_380

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/canvas_proxy.py"
 type: "code"
-community: "Examples"
+community: "Community 595"
 location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Examples
+  - community/Community_595
 ---
 
 # _handle_websocket()
 
 ## Connections
-- [[Any_64]] - `references` [EXTRACTED]
+- [[Any_12]] - `references` [EXTRACTED]
 - [[Proxy a WebSocket connection after validating auth.      Auth is extracted from]] - `rationale_for` [EXTRACTED]
 - [[_check_basic_auth()]] - `calls` [EXTRACTED]
 - [[_check_token_auth()]] - `calls` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[canvas_proxy.py]] - `contains` [EXTRACTED]
 - [[canvas_proxy_app()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Examples
+#graphify/code #graphify/EXTRACTED #community/Community_595

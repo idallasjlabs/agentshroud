@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "test_soc_services_coverage.py"
+community: "Community 80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_services_coveragepy
+  - community/Community_80
 ---
 
 # _check_openscap
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[TestCheckOpenscap]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_services_coveragepy
+#graphify/code #graphify/EXTRACTED #community/Community_80

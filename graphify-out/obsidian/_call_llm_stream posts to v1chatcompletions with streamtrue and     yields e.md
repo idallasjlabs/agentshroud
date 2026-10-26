@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "i-gg SKILL — Git Workflow Guardian (GIT-GUARD)"
+community: "Community 1006"
 location: "L574"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/i-gg_SKILL__Git_Workflow_Guardian_GIT-GUARD
+  - community/Community_1006
 ---
 
 # _call_llm_stream posts to /v1/chat/completions with stream:true and     yields e
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_call_llm_stream_yields_sentences()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/i-gg_SKILL__Git_Workflow_Guardian_GIT-GUARD
+#graphify/rationale #graphify/EXTRACTED #community/Community_1006

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "sync-cve-registry.py"
+community: "Community 135"
 location: "L778"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/Community_135
 ---
 
 # _load_alerted_ghsa()
 
 ## Connections
-- [[Per-agent GHSA ids already alerted. Unreadable state means alert again, never…]] - `rationale_for` [EXTRACTED]
+- [[Per-agent GHSA ids already alerted. Unreadable state means alert again, never si]] - `rationale_for` [EXTRACTED]
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
 - [[run_upstream_cve_check()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/Community_135

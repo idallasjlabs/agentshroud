@@ -1,52 +1,34 @@
 ---
-source_file: "gateway/tests/test_slack_proxy.py"
+source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "AgentRegistry"
-location: "L16"
+community: "Community 75"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/Community_75
 ---
 
 # _make_proxy()
 
 ## Connections
-- [[dot-test_attachments_scanned()]] - `calls` [EXTRACTED]
-- [[dot-test_blocks_scanned_even_when_text_present()]] - `calls` [EXTRACTED]
-- [[dot-test_chat_postmessage_content_scanned()]] - `calls` [EXTRACTED]
-- [[dot-test_chat_update_content_scanned()]] - `calls` [EXTRACTED]
-- [[dot-test_connections_open_missing_url_passthrough()]] - `calls` [EXTRACTED]
-- [[dot-test_connections_open_rewrites_url()]] - `calls` [EXTRACTED]
-- [[dot-test_connections_open_skips_content_pipeline()]] - `calls` [EXTRACTED]
-- [[dot-test_connections_open_slack_error_passthrough()]] - `calls` [EXTRACTED]
-- [[dot-test_consume_relay_token_one_time()]] - `calls` [EXTRACTED]
-- [[dot-test_consume_relay_token_unknown()]] - `calls` [EXTRACTED]
-- [[dot-test_each_reconnect_issues_unique_token()]] - `calls` [EXTRACTED]
-- [[dot-test_file_upload_initial_comment_scanned()]] - `calls` [EXTRACTED]
-- [[dot-test_get_stats_returns_counters()]] - `calls` [EXTRACTED]
-- [[dot-test_is_owner_channel_empty_owner_uid_always_false()]] - `calls` [EXTRACTED]
-- [[dot-test_is_owner_channel_matches_owner_uid()]] - `calls` [EXTRACTED]
-- [[dot-test_is_owner_channel_no_match_for_other()]] - `calls` [EXTRACTED]
-- [[dot-test_no_bot_token_returns_error()]] - `calls` [EXTRACTED]
-- [[dot-test_non_message_method_not_scanned()]] - `calls` [EXTRACTED]
-- [[dot-test_non_owner_clean_message_passes()]] - `calls` [EXTRACTED]
-- [[dot-test_non_owner_high_risk_leakage_blocked_before_pipeline()]] - `calls` [EXTRACTED]
-- [[dot-test_non_owner_info_filter_redaction_blocks()]] - `calls` [EXTRACTED]
-- [[dot-test_non_owner_pipeline_exception_fail_closed()]] - `calls` [EXTRACTED]
-- [[dot-test_non_owner_tailscale_hostname_blocked()]] - `calls` [EXTRACTED]
-- [[dot-test_outbound_blocked_returns_error()]] - `calls` [EXTRACTED]
-- [[dot-test_owner_channel_uses_full_trust()]] - `calls` [EXTRACTED]
-- [[dot-test_owner_pipeline_exception_fail_open()]] - `calls` [EXTRACTED]
-- [[dot-test_post_ephemeral_scanned()]] - `calls` [EXTRACTED]
-- [[dot-test_sanitized_text_replaces_original()]] - `calls` [EXTRACTED]
-- [[dot-test_structured_field_sanitization_blocks_delivery()]] - `calls` [EXTRACTED]
-- [[dot-test_system_notification_skips_pipeline()]] - `calls` [EXTRACTED]
-- [[dot-test_text_sanitization_still_applied()]] - `calls` [EXTRACTED]
-- [[dot-test_urlencoded_body_parsed()]] - `calls` [EXTRACTED]
-- [[Create a SlackAPIProxy with test credentials and no real IO.]] - `rationale_for` [EXTRACTED]
-- [[SlackAPIProxy]] - `calls` [EXTRACTED]
-- [[SlackAPIProxy_2]] - `references` [EXTRACTED]
-- [[test_slack_proxy.py]] - `contains` [EXTRACTED]
+- [[._setup_proxy_with_capture()]] - `calls` [EXTRACTED]
+- [[.test_locked_includes_unlock_hint()]] - `calls` [EXTRACTED]
+- [[.test_locked_lists_suspended_user()]] - `calls` [EXTRACTED]
+- [[.test_locked_no_active_lockdowns()]] - `calls` [EXTRACTED]
+- [[.test_locked_shows_all_non_normal_users()]] - `calls` [EXTRACTED]
+- [[.test_owner_messages_pass_despite_collab_suspension()]] - `calls` [EXTRACTED]
+- [[.test_suspended_drop_notice_respects_cooldown()]] - `calls` [EXTRACTED]
+- [[.test_suspended_user_gets_drop_notice()]] - `calls` [EXTRACTED]
+- [[.test_unlock_clears_suspended_drop_cooldown()]] - `calls` [EXTRACTED]
+- [[.test_unlock_known_user_succeeds()]] - `calls` [EXTRACTED]
+- [[.test_unlock_unknown_user_reports_no_state()]] - `calls` [EXTRACTED]
+- [[.test_unlock_without_user_id_shows_usage()]] - `calls` [EXTRACTED]
+- [[FakeRBAC]] - `calls` [EXTRACTED]
+- [[PassthroughPipeline]] - `calls` [EXTRACTED]
+- [[Return a TelegramAPIProxy wired with fake deps (no real HTTP).]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `references` [EXTRACTED]
+- [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/Community_75

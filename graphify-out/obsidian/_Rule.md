@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "ConfigIntegrityMonitor"
+community: "Community 133"
 location: "L143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - community/Community_133
 ---
 
 # _Rule
 
 ## Connections
-- [[dot-__init__()_104]] - `references` [EXTRACTED]
+- [[.__init__()_118]] - `references` [EXTRACTED]
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/Community_133

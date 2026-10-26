@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/ingest_api/lifespan.py"
+source_file: "docker/bots/hermes/docker_proxy_relay.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L2232"
+community: "Community 591"
+location: "L58"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/agentshroud-blueteam/SKILLmd
+  - graphify/EXTRACTED
+  - community/Community_591
 ---
 
 # _handle()
 
 ## Connections
-- [[_pipe()_1]] - `calls` [EXTRACTED]
-- [[_run_hermes_api_forwarder()]] - `indirect_call` [INFERRED]
-- [[_run_hermes_dashboard_forwarder()]] - `indirect_call` [INFERRED]
+- [[StreamReader_1]] - `references` [EXTRACTED]
+- [[StreamWriter_1]] - `references` [EXTRACTED]
+- [[_pump()]] - `calls` [EXTRACTED]
+- [[docker_proxy_relay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/Community_591

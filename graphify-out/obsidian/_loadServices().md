@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "ResourceGuard (2)"
+community: "Community 82"
 location: "L687"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard_2
+  - community/Community_82
 ---
 
 # _loadServices()
 
 ## Connections
-- [[ServiceDescriptor_1]] - `shares_data_with` [INFERRED]
+- [[ServiceDescriptor]] - `shares_data_with` [INFERRED]
 - [[_botParam()]] - `calls` [EXTRACTED]
 - [[_get()]] - `calls` [EXTRACTED]
 - [[_renderServices()]] - `calls` [EXTRACTED]
 - [[_setText()]] - `calls` [EXTRACTED]
 - [[soc.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard_2
+#graphify/code #graphify/EXTRACTED #community/Community_82

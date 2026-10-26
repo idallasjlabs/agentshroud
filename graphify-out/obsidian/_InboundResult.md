@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "UserSessionManager (2) (2)"
+community: "Community 34"
 location: "L369"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2_2
+  - community/Community_34
 ---
 
 # _InboundResult
 
 ## Connections
 - [[Everything the post-routing forwarding steps (blocking or streaming)     need, o]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[_process_inbound()]] - `references` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_2
+#graphify/code #graphify/EXTRACTED #community/Community_34

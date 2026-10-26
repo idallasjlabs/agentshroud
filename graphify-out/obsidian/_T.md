@@ -1,25 +1,19 @@
 ---
-source_file: ""
+source_file: "scripts/discover_upstream_versions.py"
 type: "code"
-community: "GroupRoleResolver"
+community: "Community 48"
+location: "L201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/Community_48
 ---
 
 # _T
 
 ## Connections
-- [[dot-new()]] - `references` [EXTRACTED]
-- [[GatewayClient]] - `references` [EXTRACTED]
 - [[_call_with_deadline()]] - `references` [EXTRACTED]
 - [[_guarded_fetch()]] - `references` [EXTRACTED]
 - [[_retry()]] - `references` [EXTRACTED]
-- [[run_approvals_decide()]] - `references` [EXTRACTED]
-- [[run_approvals_list()]] - `references` [EXTRACTED]
-- [[run_cves()]] - `references` [EXTRACTED]
-- [[run_deploy_status()]] - `references` [EXTRACTED]
-- [[run_status()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/Community_48

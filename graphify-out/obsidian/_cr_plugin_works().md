@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/lib/container-runtime.sh"
 type: "code"
-community: "telegram_api_proxy (/telegram-api/{path})"
+community: "Community 295"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path
+  - community/Community_295
 ---
 
 # _cr_plugin_works()
@@ -15,4 +15,4 @@ tags:
 - [[container-runtime.sh]] - `defines` [EXTRACTED]
 - [[detect_container_runtime()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path
+#graphify/code #graphify/EXTRACTED #community/Community_295
