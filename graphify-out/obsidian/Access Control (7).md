@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "document"
-community: ".github/mcp.json"
+community: "Community 396"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/github/mcpjson
+  - community/Community_396
 ---
 
 # Access Control (7)
@@ -15,4 +15,4 @@ tags:
 - [[Credential Security Policy]] - `contains` [EXTRACTED]
 - [[Security Modules (58)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/github/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Community_396

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
 type: "concept"
-community: "AgentShroud State Diagrams"
+community: "Community 1144"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_State_Diagrams
+  - community/Community_1144
 ---
 
 # AWS Athena / Data Lake
@@ -14,4 +14,4 @@ tags:
 - [[i-eightd README — 8D Root Cause Analysis]] - `references` [EXTRACTED]
 - [[i-eightd SKILL — 8D Root Cause Analysis]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_State_Diagrams
+#graphify/concept #graphify/EXTRACTED #community/Community_1144

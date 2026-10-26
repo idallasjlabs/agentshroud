@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_hermes_dashboard_bridge.py"
 type: "rationale"
-community: "Athena — Knowledge Distiller (2)"
+community: "Community 808"
 location: "L76"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller_2
+  - community/Community_808
 ---
 
 # A WebSocket upgrade MUST keep Connection: Upgrade (not close) or the         han
 
 ## Connections
-- [[dot-test_websocket_upgrade_keeps_connection_header_untouched()]] - `rationale_for` [EXTRACTED]
+- [[.test_websocket_upgrade_keeps_connection_header_untouched()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Athena__Knowledge_Distiller_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_808

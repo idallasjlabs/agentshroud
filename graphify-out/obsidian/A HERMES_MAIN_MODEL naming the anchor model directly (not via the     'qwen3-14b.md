@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_model_resolver.py"
 type: "rationale"
-community: "is_overloaded"
+community: "Community 134"
 location: "L102"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/is_overloaded
+  - community/Community_134
 ---
 
 # A HERMES_MAIN_MODEL naming the anchor model directly (not via the     'qwen3-14b
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_local_mode_recognizes_nemotron_as_local()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/is_overloaded
+#graphify/rationale #graphify/EXTRACTED #community/Community_134

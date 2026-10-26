@@ -1,20 +1,20 @@
 ---
 source_file: ".llm_settings/docs/MCP_ADDITIONAL_SERVICES.md"
 type: "concept"
-community: "Skill: Test-Driven Development (TDD)"
+community: "Community 743"
 location: "Section 0"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_Test-Driven_Development_TDD
+  - community/Community_743
 ---
 
 # AWS API MCP server (official, recommended)
 
 ## Connections
-- [[AWS Athena MCP server_1]] - `conceptually_related_to` [EXTRACTED]
+- [[AWS Athena MCP server]] - `conceptually_related_to` [EXTRACTED]
 - [[Claude Code skill catalog (59 skills)]] - `references` [EXTRACTED]
 - [[Tool comparison matrix (config format  agents  skills  hooks)]] - `references` [EXTRACTED]
 - [[awslabs.aws-api-mcp-server configuration (--readonly)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD
+#graphify/concept #graphify/EXTRACTED #community/Community_743

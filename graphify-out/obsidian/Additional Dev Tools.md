@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "test_telegram_replay.py (3)"
+community: "Community 1187"
 location: "L169"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_telegram_replaypy_3
+  - community/Community_1187
 ---
 
 # Additional Dev Tools
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 2 Development Tools]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_telegram_replaypy_3
+#graphify/document #graphify/EXTRACTED #community/Community_1187

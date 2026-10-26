@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "._make_proxy()"
+community: "Community 31"
 location: "L202"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_31
 ---
 
 # Agent can write to subdirectories in workspace.
 
 ## Connections
-- [[dot-test_workspace_subdirectory_write_allowed()]] - `rationale_for` [EXTRACTED]
+- [[.test_workspace_subdirectory_write_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_31

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_slack_socket_client.py"
 type: "rationale"
-community: "Request (2)"
+community: "Community 176"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Request_2
+  - community/Community_176
 ---
 
 # A successful WSS connection resets the attempt counter to 0.
 
 ## Connections
-- [[dot-test_run_resets_backoff_after_successful_connect()]] - `rationale_for` [EXTRACTED]
+- [[.test_run_resets_backoff_after_successful_connect()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Request_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_176

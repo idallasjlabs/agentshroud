@@ -1,24 +1,24 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md"
 type: "document"
-community: "MCP AWS Profile Configuration README"
+community: "Community 578"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_AWS_Profile_Configuration_README
+  - community/Community_578
 ---
 
 # ANTHROPIC_BASE_URL
 
 ## Connections
 - [[ANTHROPIC_BASE_URL]] - `contains` [EXTRACTED]
-- [[Description_5]] - `contains` [EXTRACTED]
-- [[How It Works_3]] - `contains` [EXTRACTED]
-- [[Related Notes_44]] - `contains` [EXTRACTED]
-- [[SDK Patch_1]] - `contains` [EXTRACTED]
-- [[Set In_4]] - `contains` [EXTRACTED]
-- [[Value_4]] - `contains` [EXTRACTED]
+- [[Description_2]] - `contains` [EXTRACTED]
+- [[How It Works_2]] - `contains` [EXTRACTED]
+- [[Related Notes_30]] - `contains` [EXTRACTED]
+- [[SDK Patch]] - `contains` [EXTRACTED]
+- [[Set In]] - `contains` [EXTRACTED]
+- [[Value_1]] - `contains` [EXTRACTED]
 - [[Why It's Critical]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_README
+#graphify/document #graphify/EXTRACTED #community/Community_578

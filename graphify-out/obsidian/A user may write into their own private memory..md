@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "rationale"
-community: "SharedMemoryManager"
+community: "Community 1971"
 location: "L178"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SharedMemoryManager
+  - community/Community_1971
 ---
 
 # A user may write into their own private memory.
 
 ## Connections
-- [[dot-test_self_write_succeeds()]] - `rationale_for` [EXTRACTED]
+- [[.test_self_write_succeeds()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SharedMemoryManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_1971

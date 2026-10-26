@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "rationale"
-community: "A2AGovernanceProxy"
+community: "Community 88"
 location: "L109"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/Community_88
 ---
 
 # A single cross-bot incident recorded in the ledger.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IncidentRecord]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_88

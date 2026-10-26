@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
+source_file: ".agents/agents/eightd-root-cause-analysis.md"
 type: "document"
-community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE) (3)"
-location: "L14"
+community: "Community 765"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_3
+  - community/Community_765
 ---
 
 # 8D Root Cause Analysis — Data-Driven Control System Investigation
@@ -16,10 +16,9 @@ tags:
 - [[Architecture Context]] - `contains` [EXTRACTED]
 - [[Critical Rules]] - `contains` [EXTRACTED]
 - [[Input Requirements_4]] - `contains` [EXTRACTED]
-- [[Learning System (Continuous Improvement)]] - `contains` [EXTRACTED]
-- [[Overview_2]] - `contains` [EXTRACTED]
+- [[Learning System and XML Configuration Parsing]] - `contains` [EXTRACTED]
+- [[Overview]] - `contains` [EXTRACTED]
 - [[The 8D Investigation Process]] - `contains` [EXTRACTED]
-- [[XML Configuration File Parsing]] - `contains` [EXTRACTED]
-- [[hermesskillsi-eightdSKILL]] - `contains` [EXTRACTED]
+- [[eightd-root-cause-analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_3
+#graphify/document #graphify/EXTRACTED #community/Community_765

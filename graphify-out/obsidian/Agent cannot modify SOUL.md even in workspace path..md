@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "FileSandbox"
+community: "Community 31"
 location: "L110"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/Community_31
 ---
 
 # Agent cannot modify SOUL.md even in workspace path.
 
 ## Connections
-- [[dot-test_soul_md_in_workspace_blocked()]] - `rationale_for` [EXTRACTED]
+- [[.test_soul_md_in_workspace_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FileSandbox
+#graphify/rationale #graphify/EXTRACTED #community/Community_31

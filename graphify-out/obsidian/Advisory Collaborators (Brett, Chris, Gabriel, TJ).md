@@ -1,11 +1,11 @@
 ---
 source_file: "docs/TEAM.md"
 type: "concept"
-community: "test_collaborator_greeter.py (2)"
+community: "Community 915"
 tags:
   - graphify/concept
-  - graphify/EXTRACTED
-  - community/test_collaborator_greeterpy_2
+  - graphify/INFERRED
+  - community/Community_915
 ---
 
 # Advisory Collaborators (Brett, Chris, Gabriel, TJ)
@@ -14,4 +14,4 @@ tags:
 - [[Collaborator Session Isolation (blocked functionsskills)]] - `conceptually_related_to` [INFERRED]
 - [[Steve Hay — Collaborator (Telegram ID 8279589982)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_collaborator_greeterpy_2
+#graphify/concept #graphify/INFERRED #community/Community_915

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "Community 35"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/Community_35
 ---
 
 # A representative policy: two allowlisted servers, one denylisted server,     a p
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_base_config()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/Community_35

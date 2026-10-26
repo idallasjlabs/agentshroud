@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "rationale"
-community: "UserSessionManager (2)"
+community: "Community 271"
 location: "L396"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/Community_271
 ---
 
 # A freshly-constructed, un-set result must default to blocked, not     allowed —
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_proxy_result_defaults_are_safe()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_271

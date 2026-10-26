@@ -1,21 +1,21 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/README.md"
 type: "document"
-community: "TestOutboundInfoFilter"
+community: "Community 90"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/Community_90
 ---
 
 # AWS Cloud Management & FinOps
 
 ## Connections
-- [[Purpose_165]] - `contains` [EXTRACTED]
-- [[Related Skills_92]] - `contains` [EXTRACTED]
-- [[Usage_104]] - `contains` [EXTRACTED]
-- [[hermesskillsi-awsREADME]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[Purpose_40]] - `contains` [EXTRACTED]
+- [[README_45]] - `contains` [EXTRACTED]
+- [[README_47]] - `contains` [EXTRACTED]
+- [[Related Skills_58]] - `contains` [EXTRACTED]
+- [[Usage_61]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/Community_90

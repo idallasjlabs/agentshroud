@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
 type: "document"
-community: "Apple Reminders CLI (remindctl)"
+community: "Community 631"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Reminders_CLI_remindctl
+  - community/Community_631
 ---
 
 # ADR-001-transparent-proxy-vs-agent-modification.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ADR-001 Transparent Proxy vs Agent Modification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Reminders_CLI_remindctl
+#graphify/document #graphify/EXTRACTED #community/Community_631

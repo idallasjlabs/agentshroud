@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "rationale"
-community: "Local LLM Support — Implementation Review"
+community: "Community 794"
 location: "L118"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Local_LLM_Support__Implementation_Review
+  - community/Community_794
 ---
 
 # A legitimate group member's write lands.
 
 ## Connections
-- [[dot-test_member_write_succeeds()]] - `rationale_for` [EXTRACTED]
+- [[.test_member_write_succeeds()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Local_LLM_Support__Implementation_Review
+#graphify/rationale #graphify/EXTRACTED #community/Community_794

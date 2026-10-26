@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
+source_file: ".agents/agents/aws.md"
 type: "document"
-community: "The 8D Investigation Process (2)"
-location: "L6"
+community: "Community 209"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process_2
+  - community/Community_209
 ---
 
 # AWS Cloud Management & FinOps Agent
@@ -14,16 +14,15 @@ tags:
 ## Connections
 - [[Cross-Account & Future Proofing]] - `contains` [EXTRACTED]
 - [[Decision Framework]] - `contains` [EXTRACTED]
-- [[Deliverables_2]] - `contains` [EXTRACTED]
+- [[Deliverables]] - `contains` [EXTRACTED]
 - [[Expertise]] - `contains` [EXTRACTED]
-- [[FY26 Cost Reduction Context_1]] - `contains` [EXTRACTED]
-- [[Guardrails_4]] - `contains` [EXTRACTED]
+- [[FY26 Cost Reduction Context]] - `contains` [EXTRACTED]
+- [[Guardrails]] - `contains` [EXTRACTED]
 - [[Identity]] - `contains` [EXTRACTED]
-- [[Operating Rules (Non-Negotiable)_1]] - `contains` [EXTRACTED]
+- [[Operating Rules (Non-Negotiable)]] - `contains` [EXTRACTED]
 - [[Resource Inventory CSV Schema]] - `contains` [EXTRACTED]
 - [[Tagging Standard]] - `contains` [EXTRACTED]
 - [[Workflow]] - `contains` [EXTRACTED]
-- [[openclawskillsi-awsSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[aws]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process_2
+#graphify/document #graphify/EXTRACTED #community/Community_209

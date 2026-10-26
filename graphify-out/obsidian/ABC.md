@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "MiddlewareManager (6)"
+community: "Community 225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_6
+  - community/Community_225
 ---
 
 # ABC
 
 ## Connections
-- [[ContainerEngine]] - `inherits` [EXTRACTED]
+- [[ContainerEngine_2]] - `inherits` [EXTRACTED]
 - [[engine.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6
+#graphify/code #graphify/EXTRACTED #community/Community_225

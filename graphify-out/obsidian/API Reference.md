@@ -1,24 +1,24 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester (2)"
+community: "Community 520"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester_2
+  - community/Community_520
 ---
 
 # API Reference
 
 ## Connections
-- [[AgentShroud v1.3.0_1]] - `contains` [EXTRACTED]
-- [[Authentication]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
+- [[Authentication_1]] - `contains` [EXTRACTED]
 - [[Error responses]] - `contains` [EXTRACTED]
 - [[Example `GET managehealth`]] - `contains` [EXTRACTED]
 - [[Example `POST manageegress{request_id}approve`]] - `contains` [EXTRACTED]
 - [[Route map (by router)]] - `contains` [EXTRACTED]
-- [[Source of truth_1]] - `contains` [EXTRACTED]
+- [[Source of truth]] - `contains` [EXTRACTED]
 - [[api-reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester_2
+#graphify/document #graphify/EXTRACTED #community/Community_520

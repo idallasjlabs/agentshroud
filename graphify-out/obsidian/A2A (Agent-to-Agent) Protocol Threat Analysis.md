@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "§3 — Bot Pipeline Integrity Checks"
+community: "Community 1065"
 location: "L239"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/3__Bot_Pipeline_Integrity_Checks
+  - community/Community_1065
 ---
 
 # A2A (Agent-to-Agent) Protocol Threat Analysis
@@ -21,4 +21,4 @@ tags:
 - [[S — Spoofing Peer Identity Collapse Behind a Reverse Proxy]] - `contains` [EXTRACTED]
 - [[T — Tampering Cross-Tenant Task Ownership via `contextId` Collision]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/3__Bot_Pipeline_Integrity_Checks
+#graphify/document #graphify/EXTRACTED #community/Community_1065

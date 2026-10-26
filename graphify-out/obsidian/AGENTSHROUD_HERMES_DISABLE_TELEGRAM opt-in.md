@@ -1,17 +1,14 @@
 ---
 source_file: "docker/bots/hermes/run-standalone.sh"
 type: "rationale"
-community: "run-standalone.sh"
+community: "Community 2449"
 location: "docker/bots/hermes/run-standalone.sh:221"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/run-standalonesh
+  - community/Community_2449
 ---
 
 # AGENTSHROUD_HERMES_DISABLE_TELEGRAM opt-in
 
-## Connections
-- [[_secret_mount_args()]] - `implements` [EXTRACTED]
-
-#graphify/rationale #graphify/EXTRACTED #community/run-standalonesh
+#graphify/rationale #graphify/EXTRACTED #community/Community_2449
