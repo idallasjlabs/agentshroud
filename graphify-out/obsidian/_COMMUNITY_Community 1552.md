@@ -1,26 +1,24 @@
 ---
 type: community
-members: 13
+members: 11
 ---
 
 # Community 1552
 
-**Members:** 13 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[.generate_compose()]] - code - gateway/security/agent_isolation.py
-- [[.get()_3]] - code - gateway/security/agent_isolation.py
-- [[.list_agents()]] - code - gateway/security/agent_isolation.py
-- [[.verify_network_isolation()]] - code - gateway/security/agent_isolation.py
-- [[.verify_shared_nothing()]] - code - gateway/security/agent_isolation.py
-- [[.verify_volume_isolation()]] - code - gateway/security/agent_isolation.py
-- [[Full shared-nothing verification network + volume + security settings.]] - rationale - gateway/security/agent_isolation.py
-- [[Generate Docker Compose config for all registered agents.]] - rationale - gateway/security/agent_isolation.py
-- [[Get container config for an agent.]] - rationale - gateway/security/agent_isolation.py
-- [[IsolationCheck]] - code - gateway/security/agent_isolation.py
-- [[List all registered agent IDs.]] - rationale - gateway/security/agent_isolation.py
-- [[Verify that each agent has its own network namespace.]] - rationale - gateway/security/agent_isolation.py
-- [[Verify that each agent has its own volume (no shared filesystems).]] - rationale - gateway/security/agent_isolation.py
+- [[Prerequisites_9]] - document - docs/setup-telegram.md
+- [[Step 1 Create a Bot]] - document - docs/setup-telegram.md
+- [[Step 2 Write the Token to Secrets]] - document - docs/setup-telegram.md
+- [[Step 3 Find Your Telegram User ID]] - document - docs/setup-telegram.md
+- [[Step 4 Configure Environment]] - document - docs/setup-telegram.md
+- [[Step 6 Rebuild and Start]] - document - docs/setup-telegram.md
+- [[Step 7 Verify]] - document - docs/setup-telegram.md
+- [[Step 8 Configure Environment]] - document - docs/setup-slack.md
+- [[Telegram Channel Setup]] - document - docs/setup-telegram.md
+- [[Troubleshooting_45]] - document - docs/setup-telegram.md
+- [[setup-telegram]] - document - docs/setup-telegram.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,12 +28,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 52]]
-- 1 edge to [[_COMMUNITY_Community 0]]
+- 1 edge to [[_COMMUNITY_Community 324]]
+- 1 edge to [[_COMMUNITY_Community 2315]]
+- 1 edge to [[_COMMUNITY_Community 417]]
 
 ## Top bridge nodes
-- [[.get()_3]] - degree 7, connects to 1 community
-- [[.verify_shared_nothing()]] - degree 7, connects to 1 community
-- [[.list_agents()]] - degree 6, connects to 1 community
-- [[.verify_network_isolation()]] - degree 6, connects to 1 community
-- [[.verify_volume_isolation()]] - degree 6, connects to 1 community
+- [[Telegram Channel Setup]] - degree 12, connects to 2 communities
+- [[Step 8 Configure Environment]] - degree 2, connects to 1 community

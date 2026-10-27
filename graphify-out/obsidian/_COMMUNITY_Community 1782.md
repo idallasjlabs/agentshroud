@@ -30,7 +30,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_Community 1343]]
-- 2 edges to [[_COMMUNITY_Community 1269]]
+- 1 edge to [[_COMMUNITY_Community 2207]]
+- 1 edge to [[_COMMUNITY_Community 1269]]
 
 ## Top bridge nodes
 - [[.authorize_spawn()]] - degree 4, connects to 2 communities

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_telegram_user_id_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test that Telegram user IDs are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[.test_multiple_redactions()]] - code - gateway/tests/test_prompt_protection.py
+- [[Test text with multiple types of sensitive content.]] - rationale - gateway/tests/test_prompt_protection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 98]]
+- 1 edge to [[_COMMUNITY_Community 351]]
 
 ## Top bridge nodes
-- [[.test_telegram_user_id_filtering()]] - degree 2, connects to 1 community
+- [[.test_multiple_redactions()]] - degree 2, connects to 1 community

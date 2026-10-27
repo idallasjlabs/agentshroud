@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "rationale"
-community: "Community 65"
+community: "Community 61"
 location: "L138"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_65
+  - community/Community_61
 ---
 
 # Return True if user_id may access the workspace for ``group_chat_id``.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.can_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_65
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

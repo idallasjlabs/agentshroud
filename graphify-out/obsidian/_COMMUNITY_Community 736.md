@@ -1,11 +1,11 @@
 ---
 type: community
-members: 26
+members: 49
 ---
 
 # Community 736
 
-**Members:** 26 nodes
+**Members:** 49 nodes
 
 ## Members
 - [[.test_already_ingested_helper_swallows_read_error()]] - code - gateway/tests/test_daily_cve_report.py
@@ -17,7 +17,6 @@ members: 26
 - [[.test_skips_ingest_when_marked_done_after_wake()]] - code - gateway/tests/test_daily_cve_report.py
 - [[.test_skips_when_already_ingested_today()]] - code - gateway/tests/test_daily_cve_report.py
 - [[.test_successful_send_marks_sent_immediately_no_retry()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_undelivered_new_advisory_retries_not_marked_ingested()]] - code - gateway/tests/test_daily_cve_report.py
 - [[.test_undelivered_new_cves_retries_not_marked_checked()]] - code - gateway/tests/test_daily_cve_report.py
 - [[.test_zero_new_cves_marks_checked_immediately()]] - code - gateway/tests/test_daily_cve_report.py
 - [[A disk-write failure on the sentinel is swallowed; in-memory guard set.]] - rationale - gateway/tests/test_daily_cve_report.py
@@ -25,15 +24,39 @@ members: 26
 - [[A raised per-agent check error is ISOLATED — the ingest still completes.]] - rationale - gateway/tests/test_daily_cve_report.py
 - [[After sleeping, if the day is now marked done, the loop skips ingest.]] - rationale - gateway/tests/test_daily_cve_report.py
 - [[After the retry cap, the day IS marked done so the loop moves on.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[Any_37]] - code - gateway/security/daily_cve_report.py
+- [[Background loop checks for new upstream agent CVEs once per day at report_hour]] - rationale - gateway/security/daily_cve_report.py
+- [[Background loop pull the GHSA feed as source of truth once per day.      This i]] - rationale - gateway/security/daily_cve_report.py
+- [[Background loop sends one CVE report per day at ``report_hour`` UTC.      Runs]] - rationale - gateway/security/daily_cve_report.py
+- [[Check if a Trivy report was already sent today (disk-based, secondary to _sent_d]] - rationale - gateway/security/daily_cve_report.py
+- [[Check if the GHSA ingest already ran today (disk-based, secondary guard).]] - rationale - gateway/security/daily_cve_report.py
+- [[Check if the upstream CVE watch already ran today (disk-based).]] - rationale - gateway/security/daily_cve_report.py
+- [[Fetch one agent's upstream CVEs, alert via Telegram, honestly.      Runs a singl]] - rationale - gateway/security/daily_cve_report.py
 - [[First iteration ingests + records; second sees dedup and skips.]] - rationale - gateway/tests/test_daily_cve_report.py
 - [[If already ingested today, the loop bumps to tomorrow and never ingests.]] - rationale - gateway/tests/test_daily_cve_report.py
 - [[Nothing to deliver is a legitimate 'done', not a failure to retry.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[Per-agent GHSA ids already alerted. Unreadable state means alert again, never si]] - rationale - gateway/security/daily_cve_report.py
+- [[Run a Trivy scan, format the report, and send via Telegram.      Args         b]] - rationale - gateway/security/daily_cve_report.py
+- [[Run the upstream CVE check for EVERY registered agent, independently.      Itera]] - rationale - gateway/security/daily_cve_report.py
+- [[Send a message via Telegram Bot API. Returns True on success.      ``text`` is d]] - rationale - gateway/security/daily_cve_report.py
 - [[TestCveReportSchedulerRetry]] - code - gateway/tests/test_daily_cve_report.py
 - [[TestGhsaIngestScheduler]] - code - gateway/tests/test_daily_cve_report.py
-- [[TestGhsaIngestSchedulerRetry]] - code - gateway/tests/test_daily_cve_report.py
 - [[TestUpstreamCveCheckSchedulerRetry]] - code - gateway/tests/test_daily_cve_report.py
+- [[_already_checked_upstream_today()]] - code - gateway/security/daily_cve_report.py
 - [[_already_ingested_ghsa_today returns False on a malformed sentinel.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[_already_ingested_ghsa_today()]] - code - gateway/security/daily_cve_report.py
+- [[_already_sent_today()]] - code - gateway/security/daily_cve_report.py
+- [[_load_alerted_ghsa()]] - code - gateway/security/daily_cve_report.py
+- [[_save_alerted_ghsa()]] - code - gateway/security/daily_cve_report.py
+- [[_send_telegram()]] - code - gateway/security/daily_cve_report.py
+- [[cve_report_scheduler()]] - code - gateway/security/daily_cve_report.py
+- [[daily_cve_report.py]] - code - gateway/security/daily_cve_report.py
 - [[datetime_2]] - code - gateway/security/daily_cve_report.py
+- [[ghsa_ingest_scheduler()]] - code - gateway/security/daily_cve_report.py
+- [[run_and_send_cve_report()]] - code - gateway/security/daily_cve_report.py
+- [[run_upstream_cve_check()]] - code - gateway/security/daily_cve_report.py
+- [[run_upstream_cve_check_all_agents()]] - code - gateway/security/daily_cve_report.py
+- [[upstream_cve_check_scheduler()]] - code - gateway/security/daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,13 +66,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 127]]
-- 3 edges to [[_COMMUNITY_Community 135]]
-- 1 edge to [[_COMMUNITY_Community 42]]
+- 11 edges to [[_COMMUNITY_Community 127]]
+- 7 edges to [[_COMMUNITY_Community 762]]
+- 7 edges to [[_COMMUNITY_Community 131]]
+- 3 edges to [[_COMMUNITY_Community 104]]
+- 3 edges to [[_COMMUNITY_Community 74]]
+- 3 edges to [[_COMMUNITY_Community 42]]
+- 3 edges to [[_COMMUNITY_Community 1200]]
+- 3 edges to [[_COMMUNITY_Community 1202]]
+- 1 edge to [[_COMMUNITY_Community 35]]
+- 1 edge to [[_COMMUNITY_Community 10]]
 
 ## Top bridge nodes
-- [[datetime_2]] - degree 14, connects to 2 communities
-- [[TestGhsaIngestScheduler]] - degree 7, connects to 1 community
-- [[.test_runs_ingest_records_then_skips_next_iteration()]] - degree 4, connects to 1 community
-- [[TestCveReportSchedulerRetry]] - degree 4, connects to 1 community
-- [[TestUpstreamCveCheckSchedulerRetry]] - degree 3, connects to 1 community
+- [[daily_cve_report.py]] - degree 27, connects to 8 communities
+- [[run_and_send_cve_report()]] - degree 16, connects to 5 communities
+- [[run_upstream_cve_check()]] - degree 10, connects to 3 communities
+- [[Any_37]] - degree 6, connects to 3 communities
+- [[datetime_2]] - degree 14, connects to 1 community

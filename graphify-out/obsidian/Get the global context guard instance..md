@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "Community 115"
+community: "Community 919"
 location: "L569"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_115
+  - community/Community_919
 ---
 
 # Get the global context guard instance.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_context_guard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_115
+#graphify/rationale #graphify/EXTRACTED #community/Community_919

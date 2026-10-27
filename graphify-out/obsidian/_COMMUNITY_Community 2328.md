@@ -1,15 +1,16 @@
 ---
 type: community
-members: 2
+members: 3
 ---
 
 # Community 2328
 
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[oMLX's DeepSeek-R1-0528-Qwen3-8B must win over the generic     'deepseek-r1' -]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_failover_base_routes_omlx_deepseek_r1_qwen3_8b()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[._redact_match()]] - code - gateway/security/prompt_protection.py
+- [[Match]] - code - gateway/security/prompt_protection.py
+- [[Replace a regex match with a redaction placeholder.]] - rationale - gateway/security/prompt_protection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +20,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 208]]
+- 1 edge to [[_COMMUNITY_Community 532]]
 
 ## Top bridge nodes
-- [[test_local_failover_base_routes_omlx_deepseek_r1_qwen3_8b()]] - degree 2, connects to 1 community
+- [[._redact_match()]] - degree 3, connects to 1 community

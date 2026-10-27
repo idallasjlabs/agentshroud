@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "Community 121"
+community: "Community 0"
 location: "L82"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_121
+  - community/Community_0
 ---
 
 # TestEgressConfigDefaultEnforce
@@ -21,4 +21,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_round2_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_121
+#graphify/code #graphify/INFERRED #community/Community_0

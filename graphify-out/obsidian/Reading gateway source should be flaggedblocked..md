@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "Community 31"
+community: "Community 0"
 location: "L231"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_31
+  - community/Community_0
 ---
 
 # Reading gateway source should be flagged/blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_gateway_source_read_flagged()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_31
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

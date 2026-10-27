@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "Community 54"
+community: "Community 8"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/Community_8
 ---
 
 # contributors.py
@@ -21,4 +21,4 @@ tags:
 - [[load_paused_collaborator_ids()]] - `imports` [EXTRACTED]
 - [[models.py_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_54
+#graphify/code #graphify/EXTRACTED #community/Community_8

@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/MCP_README.md"
 type: "concept"
-community: "Community 924"
+community: "Community 742"
 location: "Section 3"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_924
+  - community/Community_742
 ---
 
 # awslabs.aws-api-mcp-server configuration (--readonly)
@@ -18,4 +18,4 @@ tags:
 - [[MCP server integration matrix per tool]] - `references` [EXTRACTED]
 - [[UVuvx package manager prerequisite]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_924
+#graphify/concept #graphify/EXTRACTED #community/Community_742

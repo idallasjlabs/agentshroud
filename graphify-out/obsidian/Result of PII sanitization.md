@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "Community 72"
+community: "Community 28"
 location: "L208"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_28
 ---
 
 # Result of PII sanitization
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RedactionResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_72
+#graphify/rationale #graphify/EXTRACTED #community/Community_28

@@ -31,7 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 281]]
+- 1 edge to [[_COMMUNITY_Community 133]]
 
 ## Top bridge nodes
 - [[gatewayskillsscan.py (scan CLI)]] - degree 2, connects to 1 community

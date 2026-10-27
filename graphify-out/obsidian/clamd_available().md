@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "Community 220"
+community: "Community 148"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_220
+  - community/Community_148
 ---
 
 # clamd_available()
@@ -16,4 +16,4 @@ tags:
 - [[clamav_scanner.py]] - `contains` [EXTRACTED]
 - [[preferred_scan_binary()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_220
+#graphify/code #graphify/EXTRACTED #community/Community_148

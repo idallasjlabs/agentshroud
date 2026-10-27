@@ -27,11 +27,12 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_Community 64]]
-- 4 edges to [[_COMMUNITY_Community 59]]
+- 3 edges to [[_COMMUNITY_Community 54]]
 - 2 edges to [[_COMMUNITY_Community 230]]
 - 1 edge to [[_COMMUNITY_Community 184]]
-- 1 edge to [[_COMMUNITY_Community 140]]
+- 1 edge to [[_COMMUNITY_Community 132]]
+- 1 edge to [[_COMMUNITY_Community 59]]
 - 1 edge to [[_COMMUNITY_Community 329]]
 
 ## Top bridge nodes
-- [[TestInjectionDetection]] - degree 22, connects to 6 communities
+- [[TestInjectionDetection]] - degree 22, connects to 7 communities

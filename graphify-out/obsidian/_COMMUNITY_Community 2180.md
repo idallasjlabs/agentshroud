@@ -1,17 +1,18 @@
 ---
 type: community
-members: 4
+members: 5
 ---
 
 # Community 2180
 
-**Members:** 4 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[Fallback minimal dashboard when template file is missing.]] - rationale - gateway/soc/router.py
-- [[Serve the unified SOC web dashboard.]] - rationale - gateway/soc/router.py
-- [[_minimal_dashboard_html()]] - code - gateway/soc/router.py
-- [[soc_dashboard()]] - code - gateway/soc/router.py
+- [[Apollo — Audio Systems Producer_7]] - document - docker/config/hermes/skills/i-apollo/README.md
+- [[Purpose_37]] - document - docker/config/hermes/skills/i-apollo/README.md
+- [[README_42]] - document - docker/config/hermes/skills/i-apollo/README.md
+- [[Related Skills_55]] - document - docker/config/hermes/skills/i-apollo/README.md
+- [[Usage_58]] - document - docker/config/hermes/skills/i-apollo/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 10]]
-- 1 edge to [[_COMMUNITY_Community 20]]
+- 1 edge to [[_COMMUNITY_Community 90]]
 
 ## Top bridge nodes
-- [[soc_dashboard()]] - degree 4, connects to 2 communities
-- [[_minimal_dashboard_html()]] - degree 3, connects to 1 community
+- [[Apollo — Audio Systems Producer_7]] - degree 5, connects to 1 community

@@ -1,11 +1,11 @@
 ---
 type: community
-members: 26
+members: 23
 ---
 
 # Community 333
 
-**Members:** 26 nodes
+**Members:** 23 nodes
 
 ## Members
 - [[After Config Change]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
@@ -19,8 +19,6 @@ members: 26
 - [[First Time Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
 - [[Full Stack Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
 - [[Gateway Only Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Health Checks_1]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Kill Switch Procedure]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
 - [[OOM Kill (Exit Code 137)]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
 - [[Port Already in Use_2]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
 - [[Read-Only Filesystem Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
@@ -30,7 +28,6 @@ members: 26
 - [[Restart Procedure_1]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
 - [[Restart Verification]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
 - [[Startup Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Troubleshooting Matrix]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
 - [[When to Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
 - [[Zero-Downtime Restart (Advanced)]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
 - [[`no-new-privileges` Security Denial]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
@@ -43,20 +40,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 30]]
 - 2 edges to [[_COMMUNITY_Community 334]]
-- 2 edges to [[_COMMUNITY_Community 389]]
-- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 1014]]
+- 1 edge to [[_COMMUNITY_Community 1015]]
 - 1 edge to [[_COMMUNITY_Community 740]]
 - 1 edge to [[_COMMUNITY_Community 482]]
-- 1 edge to [[_COMMUNITY_Community 417]]
-- 1 edge to [[_COMMUNITY_Community 801]]
 - 1 edge to [[_COMMUNITY_Community 656]]
-- 1 edge to [[_COMMUNITY_Community 741]]
+- 1 edge to [[_COMMUNITY_Community 417]]
 
 ## Top bridge nodes
-- [[Troubleshooting Matrix]] - degree 9, connects to 4 communities
-- [[Crash Recovery_1]] - degree 6, connects to 2 communities
-- [[Health Checks_1]] - degree 4, connects to 2 communities
+- [[Crash Recovery_1]] - degree 6, connects to 4 communities
+- [[Startup Errors_1]] - degree 4, connects to 2 communities
 - [[Container Errors]] - degree 4, connects to 1 community
-- [[Startup Errors_1]] - degree 4, connects to 1 community
+- [[First Time Setup]] - degree 3, connects to 1 community

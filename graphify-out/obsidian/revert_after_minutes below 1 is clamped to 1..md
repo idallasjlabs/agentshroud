@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "Community 103"
+community: "Community 1214"
 location: "L143"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_103
+  - community/Community_1214
 ---
 
 # revert_after_minutes below 1 is clamped to 1.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_revert_minutes_clamped_min()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_103
+#graphify/rationale #graphify/EXTRACTED #community/Community_1214

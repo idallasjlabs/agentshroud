@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Community 41"
+community: "Community 30"
 location: "L502"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_41
+  - community/Community_30
 ---
 
 # test_submit_does_not_deadlock_on_hung_websocket_client()
@@ -17,4 +17,4 @@ tags:
 - [[_HangingWebSocket]] - `calls` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_41
+#graphify/code #graphify/EXTRACTED #community/Community_30

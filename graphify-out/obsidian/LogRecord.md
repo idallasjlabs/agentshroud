@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Community 36"
+community: "Community 104"
 location: "L65"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_36
+  - community/Community_104
 ---
 
 # LogRecord
@@ -23,4 +23,4 @@ tags:
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_36
+#graphify/code #graphify/INFERRED #community/Community_104

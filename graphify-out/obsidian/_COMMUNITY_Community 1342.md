@@ -1,28 +1,25 @@
 ---
 type: community
-members: 15
+members: 12
 ---
 
 # Community 1342
 
-**Members:** 15 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[.test_basic_result()]] - code - gateway/tests/test_path_isolation.py
-- [[.test_blocked_result()]] - code - gateway/tests/test_path_isolation.py
-- [[.test_custom_config()_2]] - code - gateway/tests/test_path_isolation.py
-- [[.test_default_config()_5]] - code - gateway/tests/test_path_isolation.py
-- [[PathRewriteResult]] - code - gateway/security/path_isolation.py
-- [[Result of path rewriting operation.]] - rationale - gateway/security/path_isolation.py
-- [[Test PathRewriteResult dataclass.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test basic result creation.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test blocked result creation.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test custom configuration values._1]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test default configuration values._4]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test path isolation configuration.]] - rationale - gateway/tests/test_path_isolation.py
-- [[TestPathIsolationConfig]] - code - gateway/tests/test_path_isolation.py
-- [[TestPathRewriteResult]] - code - gateway/tests/test_path_isolation.py
-- [[test_path_isolation.py]] - code - gateway/tests/test_path_isolation.py
+- [[.test_agent_var_resolved_from_registry_dict()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_insert_adds_exactly_n_entries_and_still_parses()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_missing_variable_raises()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_non_list_value_raises()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_openclaw_advisory_does_not_touch_hermes_registry()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[An OpenClaw advisory diffed against the Hermes list yields it as 'new'.]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[Runs against the REAL gatewaysecurityagent_cve_registry.py.      Every registe]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestListLocator]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestLiveRegistryLayout]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestPerAgentIsolation]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[_exec_registry()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[test_sync_cve_registry_ghsa.py]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,12 +29,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 72]]
-- 2 edges to [[_COMMUNITY_Community 26]]
+- 12 edges to [[_COMMUNITY_Community 55]]
+- 2 edges to [[_COMMUNITY_Community 2073]]
+- 1 edge to [[_COMMUNITY_Community 2121]]
+- 1 edge to [[_COMMUNITY_Community 2133]]
+- 1 edge to [[_COMMUNITY_Community 2050]]
+- 1 edge to [[_COMMUNITY_Community 2134]]
 
 ## Top bridge nodes
-- [[PathRewriteResult]] - degree 9, connects to 2 communities
-- [[test_path_isolation.py]] - degree 6, connects to 2 communities
-- [[TestPathIsolationConfig]] - degree 7, connects to 1 community
-- [[TestPathRewriteResult]] - degree 7, connects to 1 community
-- [[.test_default_config()_5]] - degree 3, connects to 1 community
+- [[test_sync_cve_registry_ghsa.py]] - degree 13, connects to 6 communities
+- [[_exec_registry()]] - degree 4, connects to 2 communities
+- [[.test_openclaw_advisory_does_not_touch_hermes_registry()]] - degree 4, connects to 1 community
+- [[.test_insert_adds_exactly_n_entries_and_still_parses()]] - degree 3, connects to 1 community
+- [[TestLiveRegistryLayout]] - degree 3, connects to 1 community

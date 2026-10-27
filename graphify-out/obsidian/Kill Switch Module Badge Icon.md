@@ -1,11 +1,11 @@
 ---
 source_file: "branding/icons/modules/kill-switch-256x256.png"
 type: "image"
-community: "Community 9"
+community: "Community 65"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Community_9
+  - community/Community_65
 ---
 
 # Kill Switch Module Badge Icon
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - `conceptually_related_to` [INFERRED]
 - [[killswitch_monitor.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Community_9
+#graphify/image #graphify/INFERRED #community/Community_65

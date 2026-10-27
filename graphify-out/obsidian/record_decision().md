@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "Community 221"
+community: "Community 300"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_221
+  - community/Community_300
 ---
 
 # record_decision()
@@ -33,4 +33,4 @@ tags:
 - [[test_module_stats.py]] - `imports` [EXTRACTED]
 - [[tool_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_221
+#graphify/code #graphify/EXTRACTED #community/Community_300

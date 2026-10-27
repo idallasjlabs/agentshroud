@@ -1,19 +1,21 @@
 ---
 type: community
-members: 6
+members: 8
 ---
 
 # Community 2043
 
-**Members:** 6 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[._extract_owner_target()]] - code - gateway/proxy/telegram_proxy.py
-- [[._extract_owner_target_resolved()]] - code - gateway/proxy/telegram_proxy.py
-- [[._resolve_pending_username_target()]] - code - gateway/proxy/telegram_proxy.py
-- [[Parse owner command target as numeric id or known collaborator alias.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Resolve owner target from pending-request username aliases (e.g., approve ana).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Resolve target by id, static alias, or pending username alias.          Resoluti]] - rationale - gateway/proxy/telegram_proxy.py
+- [[.test_path_traversal_rejected_for_crafted_bot_id()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_path_traversal_rejected_for_crafted_user_id()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_user_session_paths_contain_bot_id()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[Session directory path must embed bot_id so filesystem confirms isolation.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Session manager must reject bot_id with path traversal characters.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Session manager must reject user_id with path traversal characters.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[TestSessionPathSeparation]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[Verifies per-bot session path layout is correctly separated.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +25,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 14]]
+- 3 edges to [[_COMMUNITY_Community 11]]
+- 1 edge to [[_COMMUNITY_Community 79]]
+- 1 edge to [[_COMMUNITY_Community 60]]
 
 ## Top bridge nodes
-- [[._extract_owner_target_resolved()]] - degree 5, connects to 1 community
-- [[._extract_owner_target()]] - degree 4, connects to 1 community
-- [[._resolve_pending_username_target()]] - degree 4, connects to 1 community
+- [[TestSessionPathSeparation]] - degree 9, connects to 3 communities

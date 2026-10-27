@@ -1,15 +1,14 @@
 ---
 type: community
-members: 51
+members: 29
 ---
 
 # Community 575
 
-**Members:** 51 nodes
+**Members:** 29 nodes
 
 ## Members
 - [[.__init__()_201]] - code - gateway/web/dashboard_endpoints.py
-- [[.__init__()_202]] - code - gateway/web/dashboard_endpoints.py
 - [[.append()_1]] - code - gateway/web/dashboard_endpoints.py
 - [[.emit()_1]] - code - gateway/web/dashboard_endpoints.py
 - [[.push()_4]] - code - gateway/web/dashboard_endpoints.py
@@ -22,43 +21,22 @@ members: 51
 - [[Any_74]] - code - gateway/web/dashboard_endpoints.py
 - [[BufferHandler]] - code - gateway/web/dashboard_endpoints.py
 - [[Live Dashboard Module Badge Icon]] - image - branding/icons/modules/live-dashboard-256x256.png
-- [[LogBuffer]] - code - gateway/web/dashboard_endpoints.py
 - [[LogRecord_2]] - code - gateway/web/dashboard_endpoints.py
 - [[Logging handler that pushes records into the LogBuffer.]] - rationale - gateway/web/dashboard_endpoints.py
 - [[Proxy statistics (requests allowedblockedflagged).]] - rationale - gateway/web/dashboard_endpoints.py
 - [[Recent securityaudit log entries.      Optional ``bot=`` query parameter restr]] - rationale - gateway/web/dashboard_endpoints.py
-- [[Ring buffer for recent logaudit entries.]] - rationale - gateway/web/dashboard_endpoints.py
 - [[SSH host connectivity status.]] - rationale - gateway/web/dashboard_endpoints.py
 - [[Simple in-memory alert store. Thread-safe enough for single-process use.]] - rationale - gateway/web/dashboard_endpoints.py
 - [[TCP connect to port 22 to check if host is reachable.]] - rationale - gateway/web/dashboard_endpoints.py
 - [[Test Dashboard Endpoints Suite]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[When pipeline exists, stats should reflect its data.]] - rationale - gateway/tests/test_dashboard_endpoints.py
 - [[_check_host()]] - code - gateway/web/dashboard_endpoints.py
 - [[_tcp_check()]] - code - gateway/web/dashboard_endpoints.py
 - [[alerts_summary()]] - code - gateway/web/dashboard_endpoints.py
-- [[auth_headers()_1]] - code - gateway/tests/test_dashboard_endpoints.py
 - [[dashboard_endpoints.py]] - code - gateway/web/dashboard_endpoints.py
 - [[logs_recent()]] - code - gateway/web/dashboard_endpoints.py
 - [[proxy_status()_1]] - code - gateway/web/dashboard_endpoints.py
 - [[ssh_hosts()_1]] - code - gateway/web/dashboard_endpoints.py
-- [[tail parameter is clamped to 1-100.]] - rationale - gateway/tests/test_dashboard_endpoints.py
 - [[test_alert_store_push_and_summary()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_alerts_summary_empty()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_alerts_summary_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_alerts_summary_with_alerts()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_dashboard_endpoints.py]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_log_buffer_ring()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_log_buffer_tail()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_logs_recent_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_logs_recent_returns_entries()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_logs_recent_tail_clamped()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_logs_recent_tail_param()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_proxy_status_includes_pipeline_stats()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_proxy_status_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_proxy_status_returns_stats()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_ssh_hosts_online()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_ssh_hosts_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_ssh_hosts_returns_hosts()]] - code - gateway/tests/test_dashboard_endpoints.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -68,15 +46,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 24]]
-- 1 edge to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 309]]
+- 5 edges to [[_COMMUNITY_Community 801]]
+- 3 edges to [[_COMMUNITY_Community 104]]
+- 1 edge to [[_COMMUNITY_Community 978]]
 - 1 edge to [[_COMMUNITY_Community 49]]
 - 1 edge to [[_COMMUNITY_Community 40]]
 - 1 edge to [[_COMMUNITY_Community 162]]
 
 ## Top bridge nodes
-- [[dashboard_endpoints.py]] - degree 16, connects to 4 communities
-- [[test_dashboard_endpoints.py]] - degree 20, connects to 1 community
+- [[dashboard_endpoints.py]] - degree 16, connects to 5 communities
+- [[AlertStore]] - degree 9, connects to 1 community
+- [[.append()_1]] - degree 5, connects to 1 community
 - [[BufferHandler]] - degree 4, connects to 1 community
-- [[Live Dashboard Module Badge Icon]] - degree 2, connects to 1 community
+- [[.tail()]] - degree 3, connects to 1 community

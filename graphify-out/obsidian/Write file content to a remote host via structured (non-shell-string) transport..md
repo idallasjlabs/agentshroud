@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "rationale"
-community: "Community 7"
+community: "Community 50"
 location: "L283"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/Community_50
 ---
 
 # Write file content to a remote host via structured (non-shell-string) transport.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.write_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_7
+#graphify/rationale #graphify/EXTRACTED #community/Community_50

@@ -1,11 +1,11 @@
 ---
 type: community
-members: 56
+members: 62
 ---
 
 # Community 97
 
-**Members:** 56 nodes
+**Members:** 62 nodes
 
 ## Members
 - [[.__init__()_107]] - code - gateway/security/privacy_policy.py
@@ -14,6 +14,7 @@ members: 56
 - [[.contains_private_data()]] - code - gateway/security/privacy_policy.py
 - [[.default()]] - code - gateway/security/privacy_policy.py
 - [[.filter_response()_1]] - code - gateway/security/privacy_policy.py
+- [[.from_dict()_9]] - code - gateway/security/privacy_policy.py
 - [[.from_dict()_10]] - code - gateway/security/privacy_policy.py
 - [[.is_service_allowed()]] - code - gateway/security/privacy_policy.py
 - [[.should_alert()]] - code - gateway/security/privacy_policy.py
@@ -46,7 +47,9 @@ members: 56
 - [[Evaluates access control and filters responses per privacy policy.]] - rationale - gateway/security/privacy_policy.py
 - [[Parse from a YAMLdict representation.          Example YAML             privac]] - rationale - gateway/security/privacy_policy.py
 - [[Privacy Policy Enforcement Tests]] - code - gateway/tests/test_privacy_policy.py
+- [[Privacy classification for a service.]] - rationale - gateway/security/privacy_policy.py
 - [[Privacy policy configuration.      Loaded from agentshroud.yaml `privacy` secti]] - rationale - gateway/security/privacy_policy.py
+- [[Privacy policy for a single service.]] - rationale - gateway/security/privacy_policy.py
 - [[PrivacyPolicy]] - code - gateway/security/privacy_policy.py
 - [[PrivacyPolicyEnforcer]] - code - gateway/security/privacy_policy.py
 - [[Return True if an access attempt to this service should be logged.]] - rationale - gateway/security/privacy_policy.py
@@ -54,6 +57,8 @@ members: 56
 - [[Return True if the owner should be alerted about this access attempt.]] - rationale - gateway/security/privacy_policy.py
 - [[Return True if user_id may access the named service.]] - rationale - gateway/security/privacy_policy.py
 - [[Return a default policy with all known private services locked down.]] - rationale - gateway/security/privacy_policy.py
+- [[ServicePolicy]] - code - gateway/security/privacy_policy.py
+- [[ServicePrivacy]] - code - gateway/security/privacy_policy.py
 - [[Strip admin-private content from a response before delivering to user.]] - rationale - gateway/security/privacy_policy.py
 - [[TestAuditAndAlert]] - code - gateway/tests/test_privacy_policy.py
 - [[TestPrivacyPolicyParsing]] - code - gateway/tests/test_privacy_policy.py
@@ -62,6 +67,7 @@ members: 56
 - [[_make_rbac()]] - code - gateway/tests/test_privacy_policy.py
 - [[default_policy()]] - code - gateway/tests/test_privacy_policy.py
 - [[enforcer()_2]] - code - gateway/tests/test_privacy_policy.py
+- [[privacy_policy.py]] - code - gateway/security/privacy_policy.py
 - [[rbac()_3]] - code - gateway/tests/test_privacy_policy.py
 - [[test_privacy_policy.py]] - code - gateway/tests/test_privacy_policy.py
 
@@ -73,15 +79,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 17 edges to [[_COMMUNITY_Community 6]]
-- 8 edges to [[_COMMUNITY_Community 8]]
-- 6 edges to [[_COMMUNITY_Community 18]]
-- 3 edges to [[_COMMUNITY_Community 24]]
-- 1 edge to [[_COMMUNITY_Community 489]]
+- 27 edges to [[_COMMUNITY_Community 61]]
+- 3 edges to [[_COMMUNITY_Community 8]]
+- 3 edges to [[_COMMUNITY_Community 104]]
+- 2 edges to [[_COMMUNITY_Community 489]]
 
 ## Top bridge nodes
-- [[PrivacyPolicyEnforcer]] - degree 27, connects to 3 communities
-- [[TestResponseFiltering]] - degree 15, connects to 3 communities
-- [[test_privacy_policy.py]] - degree 14, connects to 3 communities
-- [[TestServiceAccessControl]] - degree 14, connects to 3 communities
-- [[PrivacyPolicy]] - degree 13, connects to 3 communities
+- [[PrivacyPolicyEnforcer]] - degree 27, connects to 2 communities
+- [[PrivacyPolicy]] - degree 13, connects to 2 communities
+- [[ServicePrivacy]] - degree 12, connects to 2 communities
+- [[privacy_policy.py]] - degree 6, connects to 2 communities
+- [[TestResponseFiltering]] - degree 15, connects to 1 community

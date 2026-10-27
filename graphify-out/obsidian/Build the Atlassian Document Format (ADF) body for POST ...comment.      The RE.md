@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "rationale"
-community: "Community 238"
+community: "Community 194"
 location: "L105"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_238
+  - community/Community_194
 ---
 
 # Build the Atlassian Document Format (ADF) body for POST .../comment.      The RE
@@ -16,4 +16,4 @@ tags:
 - [[build_comment_payload()_1]] - `rationale_for` [EXTRACTED]
 - [[build_comment_payload()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_238
+#graphify/rationale #graphify/EXTRACTED #community/Community_194

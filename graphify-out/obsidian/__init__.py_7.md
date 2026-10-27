@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/__init__.py"
 type: "code"
-community: "Community 59"
+community: "Community 54"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_59
+  - community/Community_54
 ---
 
 # __init__.py
@@ -36,4 +36,4 @@ tags:
 - [[mcp_permissions.py]] - `re_exports` [EXTRACTED]
 - [[mcp_proxy.py]] - `re_exports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_59
+#graphify/code #graphify/EXTRACTED #community/Community_54

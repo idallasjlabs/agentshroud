@@ -1,19 +1,21 @@
 ---
 type: community
-members: 6
+members: 8
 ---
 
 # Community 2052
 
-**Members:** 6 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[.test_unknown_event_source_rejected()]] - code - gateway/tests/test_session_security.py
-- [[.test_unregistered_session_event_rejected()]] - code - gateway/tests/test_session_security.py
-- [[.test_valid_event_source_accepted()]] - code - gateway/tests/test_session_security.py
-- [[TestEventInjection]] - code - gateway/tests/test_session_security.py
-- [[manager()_3]] - code - gateway/tests/test_session_security.py
-- [[test_session_security.py]] - code - gateway/tests/test_session_security.py
+- [[._triage()]] - code - gateway/tests/test_xml_dtd_control.py
+- [[.test_libxml2_dtd_uaf_classifies_as_xxe_not_dos()]] - code - gateway/tests/test_xml_dtd_control.py
+- [[.test_unrelated_classes_unchanged()]] - code - gateway/tests/test_xml_dtd_control.py
+- [[.test_xxe_class_is_covered_by_the_gateway_control()]] - code - gateway/tests/test_xml_dtd_control.py
+- [[It calls itself DoS; the generic DOS profile is containment-only.          Left]] - rationale - gateway/tests/test_xml_dtd_control.py
+- [[TestTriageClassLevelCoverage]] - code - gateway/tests/test_xml_dtd_control.py
+- [[The durable statement is at the CLASS level, not per-CVE.      A register entry]] - rationale - gateway/tests/test_xml_dtd_control.py
+- [[The new rule runs first, so prove it does not swallow neighbours.]] - rationale - gateway/tests/test_xml_dtd_control.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,13 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 76]]
-- 5 edges to [[_COMMUNITY_Community 108]]
-- 1 edge to [[_COMMUNITY_Community 614]]
-- 1 edge to [[_COMMUNITY_Community 1945]]
-- 1 edge to [[_COMMUNITY_Community 2053]]
+- 3 edges to [[_COMMUNITY_Community 562]]
 
 ## Top bridge nodes
-- [[test_session_security.py]] - degree 10, connects to 5 communities
-- [[TestEventInjection]] - degree 10, connects to 2 communities
-- [[manager()_3]] - degree 2, connects to 1 community
+- [[TestTriageClassLevelCoverage]] - degree 8, connects to 1 community

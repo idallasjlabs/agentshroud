@@ -55,12 +55,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_Community 67]]
+- 9 edges to [[_COMMUNITY_Community 67]]
 - 6 edges to [[_COMMUNITY_Community 29]]
+- 2 edges to [[_COMMUNITY_Community 363]]
 
 ## Top bridge nodes
-- [[_score_vulnerability_management()]] - degree 17, connects to 2 communities
-- [[_score_malware_defense()]] - degree 15, connects to 2 communities
+- [[_score_vulnerability_management()]] - degree 17, connects to 3 communities
+- [[_score_malware_defense()]] - degree 15, connects to 3 communities
 - [[TestScoreVulnerabilityManagement]] - degree 6, connects to 1 community
 - [[TestScoreMalwareDefense]] - degree 5, connects to 1 community
 - [[.test_initial_when_not_run()]] - degree 3, connects to 1 community

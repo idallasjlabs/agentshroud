@@ -1,15 +1,18 @@
 ---
 type: community
-members: 2
+members: 5
 ---
 
 # Community 2322
 
-**Members:** 2 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[Anthropic-format tool_use response returns the same shape in local mode.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_mode_anthropic_tool_use_shape_passes_through()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[.__aenter__()_4]] - code - gateway/tests/test_llm_proxy.py
+- [[.__aexit__()_4]] - code - gateway/tests/test_llm_proxy.py
+- [[.__init__()_173]] - code - gateway/tests/test_llm_proxy.py
+- [[.stream()]] - code - gateway/tests/test_llm_proxy.py
+- [[_HeadFakeClient]] - code - gateway/tests/test_llm_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,8 +22,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 208]]
-- 1 edge to [[_COMMUNITY_Community 506]]
+- 2 edges to [[_COMMUNITY_Community 1278]]
+- 1 edge to [[_COMMUNITY_Community 53]]
 
 ## Top bridge nodes
-- [[test_local_mode_anthropic_tool_use_shape_passes_through()]] - degree 3, connects to 2 communities
+- [[_HeadFakeClient]] - degree 7, connects to 2 communities

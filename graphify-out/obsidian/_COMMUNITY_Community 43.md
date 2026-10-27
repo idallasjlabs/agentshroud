@@ -1,16 +1,18 @@
 ---
 type: community
-members: 107
+members: 110
 ---
 
 # Community 43
 
-**Members:** 107 nodes
+**Members:** 110 nodes
 
 ## Members
 - [[.__init__()_34]] - code - gateway/proxy/sidecar.py
+- [[.__init__()_45]] - code - gateway/proxy/webhook_receiver.py
 - [[.__init__()_153]] - code - gateway/tests/test_e2e_proxy.py
 - [[.__init__()_154]] - code - gateway/tests/test_e2e_proxy.py
+- [[._can_create_directory()]] - code - gateway/proxy/webhook_receiver.py
 - [[._extract_message()]] - code - gateway/proxy/webhook_receiver.py
 - [[._extract_user_id()_1]] - code - gateway/proxy/webhook_receiver.py
 - [[._extract_username()]] - code - gateway/proxy/webhook_receiver.py
@@ -30,6 +32,7 @@ members: 107
 - [[A pipeline-blocked outbound response must NOT be delivered.      Regression test]] - rationale - gateway/tests/test_e2e_proxy.py
 - [[Any_20]] - code - gateway/proxy/sidecar.py
 - [[Any_24]] - code - gateway/proxy/webhook_receiver.py
+- [[Check if we can create the given directory path.]] - rationale - gateway/proxy/webhook_receiver.py
 - [[Collaborator Tracker Tests]] - code - gateway/tests/test_collaborator_tracker.py
 - [[Configure egress filter to block a domain — verify denied.]] - rationale - gateway/tests/test_e2e_proxy.py
 - [[Extract display name from webhook payload.]] - rationale - gateway/proxy/webhook_receiver.py
@@ -41,6 +44,7 @@ members: 107
 - [[Low-trust agent requests elevated action — verify denied.]] - rationale - gateway/tests/test_e2e_proxy.py
 - [[Message with both PII and injection — blocked before PII scan.]] - rationale - gateway/tests/test_e2e_proxy.py
 - [[Mock OpenClaw response containing PII — verify stripped.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Path_4]] - code - gateway/proxy/webhook_receiver.py
 - [[Pipeline stub inbound passes through; outbound behavior injectable.]] - rationale - gateway/tests/test_e2e_proxy.py
 - [[Prepare payload with session context injection.]] - rationale - gateway/proxy/webhook_receiver.py
 - [[Process an incoming webhook through the security pipeline.]] - rationale - gateway/proxy/webhook_receiver.py
@@ -83,7 +87,6 @@ members: 107
 - [[_StubForwarder_2]] - code - gateway/tests/test_e2e_proxy.py
 - [[pii_config()]] - code - gateway/tests/test_e2e_proxy.py
 - [[pipeline()]] - code - gateway/tests/test_e2e_proxy.py
-- [[process_webhook passes agent_id as bot_id to record_activity.]] - rationale - gateway/tests/test_collaborator_tracker.py
 - [[prompt_guard()]] - code - gateway/tests/test_e2e_proxy.py
 - [[sanitizer()_1]] - code - gateway/tests/test_e2e_proxy.py
 - [[sidecar.py]] - code - gateway/proxy/sidecar.py
@@ -112,9 +115,9 @@ members: 107
 - [[test_webhook_blocks_injection()]] - code - gateway/tests/test_e2e_proxy.py
 - [[test_webhook_outbound_block_withheld()]] - code - gateway/tests/test_e2e_proxy.py
 - [[test_webhook_outbound_pipeline_crash_fails_closed()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_webhook_receiver_passes_agent_id_as_bot_id()]] - code - gateway/tests/test_collaborator_tracker.py
 - [[test_webhook_receiver_processes()]] - code - gateway/tests/test_e2e_proxy.py
 - [[test_webhook_strips_pii()]] - code - gateway/tests/test_e2e_proxy.py
+- [[webhook_receiver.py]] - code - gateway/proxy/webhook_receiver.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -124,27 +127,29 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 18 edges to [[_COMMUNITY_Community 84]]
+- 12 edges to [[_COMMUNITY_Community 24]]
 - 10 edges to [[_COMMUNITY_Community 112]]
-- 9 edges to [[_COMMUNITY_Community 24]]
-- 8 edges to [[_COMMUNITY_Community 114]]
+- 8 edges to [[_COMMUNITY_Community 7]]
+- 7 edges to [[_COMMUNITY_Community 17]]
 - 7 edges to [[_COMMUNITY_Community 11]]
-- 5 edges to [[_COMMUNITY_Community 100]]
-- 4 edges to [[_COMMUNITY_Community 68]]
-- 3 edges to [[_COMMUNITY_Community 60]]
+- 6 edges to [[_COMMUNITY_Community 1]]
+- 6 edges to [[_COMMUNITY_Community 100]]
+- 5 edges to [[_COMMUNITY_Community 61]]
+- 5 edges to [[_COMMUNITY_Community 79]]
+- 4 edges to [[_COMMUNITY_Community 22]]
+- 3 edges to [[_COMMUNITY_Community 2154]]
+- 3 edges to [[_COMMUNITY_Community 63]]
 - 3 edges to [[_COMMUNITY_Community 99]]
-- 3 edges to [[_COMMUNITY_Community 17]]
-- 3 edges to [[_COMMUNITY_Community 21]]
-- 2 edges to [[_COMMUNITY_Community 34]]
+- 3 edges to [[_COMMUNITY_Community 93]]
 - 2 edges to [[_COMMUNITY_Community 660]]
-- 2 edges to [[_COMMUNITY_Community 598]]
-- 2 edges to [[_COMMUNITY_Community 6]]
+- 1 edge to [[_COMMUNITY_Community 598]]
 - 1 edge to [[_COMMUNITY_Community 81]]
-- 1 edge to [[_COMMUNITY_Community 166]]
+- 1 edge to [[_COMMUNITY_Community 605]]
+- 1 edge to [[_COMMUNITY_Community 114]]
 
 ## Top bridge nodes
 - [[WebhookReceiver]] - degree 44, connects to 10 communities
-- [[test_e2e_proxy.py]] - degree 53, connects to 7 communities
-- [[_PassInboundPipeline]] - degree 23, connects to 7 communities
-- [[_StubForwarder_2]] - degree 22, connects to 7 communities
-- [[SidecarScanner]] - degree 13, connects to 2 communities
+- [[test_e2e_proxy.py]] - degree 53, connects to 8 communities
+- [[_PassInboundPipeline]] - degree 23, connects to 8 communities
+- [[_StubForwarder_2]] - degree 22, connects to 8 communities
+- [[Path_4]] - degree 5, connects to 3 communities

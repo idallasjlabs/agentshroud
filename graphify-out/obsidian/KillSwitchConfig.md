@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_config.py"
 type: "code"
-community: "Community 9"
+community: "Community 65"
 location: "L21"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_9
+  - community/Community_65
 ---
 
 # KillSwitchConfig
@@ -56,4 +56,4 @@ tags:
 - [[test_killswitch_monitor_behavior.py]] - `imports` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_9
+#graphify/code #graphify/INFERRED #community/Community_65

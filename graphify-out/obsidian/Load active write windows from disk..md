@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "Community 16"
+community: "Community 203"
 location: "L125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/Community_203
 ---
 
 # Load active write windows from disk.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._load_write_windows()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_16
+#graphify/rationale #graphify/EXTRACTED #community/Community_203

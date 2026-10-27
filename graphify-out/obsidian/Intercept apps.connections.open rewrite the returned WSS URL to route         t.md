@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "rationale"
-community: "Community 37"
+community: "Community 1070"
 location: "L367"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_37
+  - community/Community_1070
 ---
 
 # Intercept apps.connections.open: rewrite the returned WSS URL to route         t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._intercept_connections_open()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_37
+#graphify/rationale #graphify/EXTRACTED #community/Community_1070

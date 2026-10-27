@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "Community 137"
+community: "Community 794"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_137
+  - community/Community_794
 ---
 
 # test_intel_endpoint.py
@@ -27,4 +27,4 @@ tags:
 - [[require_auth()_1]] - `imports` [EXTRACTED]
 - [[webapi.py (POST apiintelreports)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_137
+#graphify/code #graphify/EXTRACTED #community/Community_794

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 626"
+community: "Community 2327"
 location: "L2512"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_626
+  - community/Community_2327
 ---
 
 # Startup notice dedupe should tolerate emoji variation drift.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_proxy_request_suppresses_startup_notice_emoji_variants()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_626
+#graphify/rationale #graphify/EXTRACTED #community/Community_2327

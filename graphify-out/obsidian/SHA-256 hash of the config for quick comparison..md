@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "rationale"
-community: "Community 0"
+community: "Community 146"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/Community_146
 ---
 
 # SHA-256 hash of the config for quick comparison.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.config_hash()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/Community_146

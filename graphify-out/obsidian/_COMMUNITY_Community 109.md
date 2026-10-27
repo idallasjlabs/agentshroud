@@ -77,7 +77,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Community 81]]
-- 1 edge to [[_COMMUNITY_Community 181]]
+- 1 edge to [[_COMMUNITY_Community 2030]]
 
 ## Top bridge nodes
 - [[PortManager]] - degree 34, connects to 1 community

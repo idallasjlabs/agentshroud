@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "Community 154"
+community: "Community 344"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_154
+  - community/Community_344
 ---
 
 # tool_result_injection.py
@@ -24,4 +24,4 @@ tags:
 - [[normalize_input()]] - `imports` [EXTRACTED]
 - [[strip_markdown_exfil()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_154
+#graphify/code #graphify/EXTRACTED #community/Community_344

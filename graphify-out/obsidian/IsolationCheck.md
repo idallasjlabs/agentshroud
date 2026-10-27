@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "Community 1552"
+community: "Community 52"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1552
+  - community/Community_52
 ---
 
 # IsolationCheck
@@ -17,4 +17,4 @@ tags:
 - [[.verify_volume_isolation()]] - `references` [EXTRACTED]
 - [[agent_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1552
+#graphify/code #graphify/EXTRACTED #community/Community_52

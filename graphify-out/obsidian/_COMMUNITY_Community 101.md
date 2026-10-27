@@ -80,7 +80,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 31 edges to [[_COMMUNITY_Community 46]]
-- 3 edges to [[_COMMUNITY_Community 1127]]
+- 3 edges to [[_COMMUNITY_Community 37]]
 
 ## Top bridge nodes
 - [[_mock_ws()]] - degree 25, connects to 2 communities

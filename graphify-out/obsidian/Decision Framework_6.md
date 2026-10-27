@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "document"
-community: "Community 2133"
+community: "Community 494"
 location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2133
+  - community/Community_494
 ---
 
 # Decision Framework
@@ -17,4 +17,4 @@ tags:
 - [[EBS Performance Analysis (Critical Pattern)_6]] - `contains` [EXTRACTED]
 - [[Rightsizing Logic_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2133
+#graphify/document #graphify/EXTRACTED #community/Community_494

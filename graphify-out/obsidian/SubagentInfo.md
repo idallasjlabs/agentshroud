@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "Community 105"
+community: "Community 72"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_105
+  - community/Community_72
 ---
 
 # SubagentInfo
@@ -16,4 +16,4 @@ tags:
 - [[.register_spawn()]] - `references` [EXTRACTED]
 - [[subagent_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_105
+#graphify/code #graphify/EXTRACTED #community/Community_72

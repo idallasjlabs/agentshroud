@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "Community 575"
+community: "Community 801"
 location: "L139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_575
+  - community/Community_801
 ---
 
 # LogBuffer
@@ -21,4 +21,4 @@ tags:
 - [[test_log_buffer_ring()]] - `calls` [EXTRACTED]
 - [[test_log_buffer_tail()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_575
+#graphify/code #graphify/EXTRACTED #community/Community_801

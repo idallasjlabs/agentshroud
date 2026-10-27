@@ -34,7 +34,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Community 0]]
-- 1 edge to [[_COMMUNITY_Community 185]]
+- 1 edge to [[_COMMUNITY_Community 102]]
 
 ## Top bridge nodes
 - [[TestStartupScannerKeying]] - degree 11, connects to 2 communities

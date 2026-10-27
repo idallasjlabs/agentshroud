@@ -31,7 +31,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 546]]
 - 1 edge to [[_COMMUNITY_Community 429]]
 - 1 edge to [[_COMMUNITY_Community 674]]
-- 1 edge to [[_COMMUNITY_Community 1139]]
+- 1 edge to [[_COMMUNITY_Community 253]]
 
 ## Top bridge nodes
 - [[OpenClaw Integration (Primary Target)]] - degree 4, connects to 2 communities

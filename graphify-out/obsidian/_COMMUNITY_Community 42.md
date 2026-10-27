@@ -109,12 +109,11 @@ SORT file.name ASC
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_Community 74]]
 - 4 edges to [[_COMMUNITY_Community 399]]
-- 2 edges to [[_COMMUNITY_Community 135]]
+- 3 edges to [[_COMMUNITY_Community 736]]
 - 1 edge to [[_COMMUNITY_Community 127]]
-- 1 edge to [[_COMMUNITY_Community 736]]
 - 1 edge to [[_COMMUNITY_Community 10]]
 - 1 edge to [[_COMMUNITY_Community 51]]
 
 ## Top bridge nodes
-- [[list_cve_agents()]] - degree 14, connects to 5 communities
 - [[get_agent_cve_summary()]] - degree 27, connects to 4 communities
+- [[list_cve_agents()]] - degree 14, connects to 4 communities

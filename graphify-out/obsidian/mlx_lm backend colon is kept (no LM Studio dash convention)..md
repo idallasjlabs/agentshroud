@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "Community 2319"
+community: "Community 208"
 location: "L159"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2319
+  - community/Community_208
 ---
 
 # mlx_lm backend: colon is kept (no LM Studio dash convention).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_normalize_local_model_mlxlm_keeps_colon()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2319
+#graphify/rationale #graphify/EXTRACTED #community/Community_208

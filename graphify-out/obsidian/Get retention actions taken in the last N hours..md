@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "Community 16"
+community: "Community 2317"
 location: "L375"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/Community_2317
 ---
 
 # Get retention actions taken in the last N hours.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_recent_actions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_16
+#graphify/rationale #graphify/EXTRACTED #community/Community_2317

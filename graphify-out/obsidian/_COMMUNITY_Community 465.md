@@ -1,11 +1,11 @@
 ---
 type: community
-members: 20
+members: 33
 ---
 
 # Community 465
 
-**Members:** 20 nodes
+**Members:** 33 nodes
 
 ## Members
 - [[Action Feed]] - document - dashboard/README.md
@@ -15,18 +15,31 @@ members: 20
 - [[DOCKER-VPN-NETWORKING]] - document - docker/DOCKER-VPN-NETWORKING.md
 - [[Data Ledger Viewer]] - document - dashboard/README.md
 - [[DataLedger Component (Forwarded Content Viewer)]] - concept - dashboard/README.md
+- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - document - docker/DOCKER-VPN-NETWORKING.md
 - [[Features_1]] - document - dashboard/README.md
+- [[How to Apply]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[If It Stops Working After a VPN Reconnect]] - document - docker/DOCKER-VPN-NETWORKING.md
 - [[Implementation Status_1]] - document - dashboard/README.md
 - [[KillSwitch Component (Emergency Halt)]] - concept - dashboard/README.md
 - [[Memory Browser]] - document - dashboard/README.md
 - [[MemoryViewer Component (MEMORY.md Browser)]] - concept - dashboard/README.md
+- [[Network Architecture (unchanged)]] - document - docker/DOCKER-VPN-NETWORKING.md
 - [[Network Inspector]] - document - dashboard/README.md
 - [[NetworkInspector Component (Outbound Request Monitor)]] - concept - dashboard/README.md
+- [[Primary gVisor networking mode]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Problem_1]] - document - docker/DOCKER-VPN-NETWORKING.md
 - [[Python IPv6 Fallback Red Herring (ENETUNREACH masking ETIMEDOUT)]] - concept - docker/DOCKER-VPN-NETWORKING.md
 - [[README_40]] - document - dashboard/README.md
+- [[Related Files]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Root Cause_1]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Secondary Python IPv6 fallback (misleading error)]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Secondary transparent HTTPS proxy]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Settings Changed]] - document - docker/DOCKER-VPN-NETWORKING.md
 - [[Tech Stack]] - document - dashboard/README.md
 - [[VPNKit Userspace Networking Mode (fix)]] - concept - docker/DOCKER-VPN-NETWORKING.md
+- [[Verification]] - document - docker/DOCKER-VPN-NETWORKING.md
 - [[VpnKitTransparentProxy Setting]] - concept - docker/DOCKER-VPN-NETWORKING.md
+- [[With VPN connected]] - document - docker/DOCKER-VPN-NETWORKING.md
 - [[gVisor Networking Mode (Docker Desktop, problematic)]] - concept - docker/DOCKER-VPN-NETWORKING.md
 
 ## Live Query (requires Dataview plugin)
@@ -37,10 +50,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 223]]
+- 1 edge to [[_COMMUNITY_Community 10]]
 - 1 edge to [[_COMMUNITY_Community 398]]
-- 1 edge to [[_COMMUNITY_Community 762]]
 
 ## Top bridge nodes
-- [[DOCKER-VPN-NETWORKING]] - degree 7, connects to 2 communities
+- [[DOCKER-VPN-NETWORKING]] - degree 7, connects to 1 community
 - [[Features_1]] - degree 6, connects to 1 community

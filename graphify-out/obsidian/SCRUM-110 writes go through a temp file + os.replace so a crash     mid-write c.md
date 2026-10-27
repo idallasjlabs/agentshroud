@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "Community 41"
+community: "Community 30"
 location: "L471"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_41
+  - community/Community_30
 ---
 
 # SCRUM-110: writes go through a temp file + os.replace so a crash     mid-write c
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_persist_pending_store_writes_atomically()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_41
+#graphify/rationale #graphify/EXTRACTED #community/Community_30

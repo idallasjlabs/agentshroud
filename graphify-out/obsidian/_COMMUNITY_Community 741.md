@@ -1,11 +1,11 @@
 ---
 type: community
-members: 13
+members: 14
 ---
 
 # Community 741
 
-**Members:** 13 nodes
+**Members:** 14 nodes
 
 ## Members
 - [[After Disconnect]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
@@ -14,6 +14,7 @@ members: 13
 - [[Kill Switch Actions]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
 - [[Kill Switch Monitoring]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
 - [[Kill Switch Procedure_1]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Kill Switch Procedure]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
 - [[Method 1 Dashboard (Recommended)]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
 - [[Method 2 API]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
 - [[Method 3 Script]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
@@ -30,7 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 333]]
+- 1 edge to [[_COMMUNITY_Community 334]]
 
 ## Top bridge nodes
-- [[Kill Switch Procedure_1]] - degree 10, connects to 1 community
+- [[Kill Switch Procedure]] - degree 2, connects to 1 community

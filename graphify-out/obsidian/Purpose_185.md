@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/clamav.md"
 type: "document"
-community: "Community 1139"
+community: "Community 253"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1139
+  - community/Community_253
 ---
 
 # Purpose
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ClamAV]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1139
+#graphify/document #graphify/EXTRACTED #community/Community_253

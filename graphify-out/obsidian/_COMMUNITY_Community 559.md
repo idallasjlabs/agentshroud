@@ -35,10 +35,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 764]]
+- 1 edge to [[_COMMUNITY_Community 816]]
+- 1 edge to [[_COMMUNITY_Community 726]]
 - 1 edge to [[_COMMUNITY_Community 725]]
 - 1 edge to [[_COMMUNITY_Community 350]]
 
 ## Top bridge nodes
-- [[deployment]] - degree 4, connects to 2 communities
+- [[deployment]] - degree 4, connects to 3 communities
 - [[Updating]] - degree 5, connects to 1 community

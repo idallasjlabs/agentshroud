@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "rationale"
-community: "Community 64"
+community: "Community 2071"
 location: "L245"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_64
+  - community/Community_2071
 ---
 
 # Sensitive ops are flagged but not blocked in default mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_sensitive_not_blocked_default()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_64
+#graphify/rationale #graphify/EXTRACTED #community/Community_2071

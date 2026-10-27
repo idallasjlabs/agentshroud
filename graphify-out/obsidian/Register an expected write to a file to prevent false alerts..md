@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "Community 16"
+community: "Community 203"
 location: "L149"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/Community_203
 ---
 
 # Register an expected write to a file to prevent false alerts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.register_expected_write()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_16
+#graphify/rationale #graphify/EXTRACTED #community/Community_203

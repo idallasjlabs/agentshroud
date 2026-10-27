@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "Community 105"
+community: "Community 72"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_105
+  - community/Community_72
 ---
 
 # test_subagent_monitor.py
@@ -28,4 +28,4 @@ tags:
 - [[strict_config()_2]] - `contains` [EXTRACTED]
 - [[strict_monitor()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_105
+#graphify/code #graphify/EXTRACTED #community/Community_72

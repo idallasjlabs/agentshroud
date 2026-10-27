@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "Community 55"
+community: "Community 1342"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_55
+  - community/Community_1342
 ---
 
 # test_sync_cve_registry_ghsa.py
@@ -26,4 +26,4 @@ tags:
 - [[_exec_registry()]] - `contains` [EXTRACTED]
 - [[_sync()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_55
+#graphify/code #graphify/EXTRACTED #community/Community_1342

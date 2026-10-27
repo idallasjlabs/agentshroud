@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "Community 238"
+community: "Community 647"
 location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_238
+  - community/Community_647
 ---
 
 # build_basic_auth_header()
@@ -17,4 +17,4 @@ tags:
 - [[jira_weekly_review.py]] - `contains` [EXTRACTED]
 - [[post_comment()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_238
+#graphify/code #graphify/EXTRACTED #community/Community_647

@@ -1,11 +1,11 @@
 ---
 type: community
-members: 35
+members: 37
 ---
 
 # Community 918
 
-**Members:** 35 nodes
+**Members:** 37 nodes
 
 ## Members
 - [[.test_auto_detect_priority()]] - code - gateway/tests/test_runtime_engines.py
@@ -20,6 +20,7 @@ members: 35
 - [[.test_invalid_runtime()]] - code - gateway/tests/test_runtime_engines.py
 - [[.test_no_runtime_available()]] - code - gateway/tests/test_runtime_engines.py
 - [[.test_security_comparison()]] - code - gateway/tests/test_runtime_engines.py
+- [[Aggregate security report.]] - rationale - gateway/web/api.py
 - [[Auto-detect which container runtimes are available on this system.]] - rationale - gateway/runtime/__init__.py
 - [[Check system prerequisites for installation.]] - rationale - gateway/web/installer.py
 - [[ContainerEngine]] - code - gateway/runtime/__init__.py
@@ -42,6 +43,7 @@ members: 35
 - [[get_status()]] - code - gateway/web/api.py
 - [[installer.py]] - code - gateway/web/installer.py
 - [[installer_page()]] - code - gateway/web/installer.py
+- [[security_report()]] - code - gateway/web/api.py
 - [[start_install()]] - code - gateway/web/installer.py
 
 ## Live Query (requires Dataview plugin)
@@ -52,16 +54,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 240]]
-- 7 edges to [[_COMMUNITY_Community 225]]
-- 7 edges to [[_COMMUNITY_Community 49]]
+- 8 edges to [[_COMMUNITY_Community 49]]
+- 7 edges to [[_COMMUNITY_Community 240]]
+- 5 edges to [[_COMMUNITY_Community 743]]
+- 4 edges to [[_COMMUNITY_Community 738]]
+- 3 edges to [[_COMMUNITY_Community 20]]
 - 3 edges to [[_COMMUNITY_Community 379]]
 - 3 edges to [[_COMMUNITY_Community 372]]
 - 3 edges to [[_COMMUNITY_Community 250]]
-- 2 edges to [[_COMMUNITY_Community 20]]
-- 1 edge to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 181]]
-- 1 edge to [[_COMMUNITY_Community 80]]
+- 1 edge to [[_COMMUNITY_Community 707]]
+- 1 edge to [[_COMMUNITY_Community 2030]]
+- 1 edge to [[_COMMUNITY_Community 225]]
 
 ## Top bridge nodes
 - [[get_engine()]] - degree 17, connects to 6 communities

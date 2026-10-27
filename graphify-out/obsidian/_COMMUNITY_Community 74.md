@@ -1,11 +1,11 @@
 ---
 type: community
-members: 72
+members: 79
 ---
 
 # Community 74
 
-**Members:** 72 nodes
+**Members:** 79 nodes
 
 ## Members
 - [[A Python string literal using black's quote preference.      CI runs black on ga]] - rationale - scripts/sync-cve-registry.py
@@ -15,6 +15,7 @@ members: 72
 - [[Append new_entries to AGENT_CVE_REGISTRY (OpenClaw).  Returns count appended.]] - rationale - scripts/sync-cve-registry.py
 - [[Append new_entries to _HERMES_CVE_REGISTRY.  Returns count appended.]] - rationale - scripts/sync-cve-registry.py
 - [[Append under_review new_entries to agent_id's OWN registry list.      Insert]] - rationale - scripts/sync-cve-registry.py
+- [[Apply inline Markdown spans to plain text (no recursive nesting).]] - rationale - docker/bots/hermes/render_md_email.py
 - [[CVE ids NVD lists for label that no registry entry carries as ``cve_id``.]] - rationale - scripts/sync-cve-registry.py
 - [[Diff advisories against an agent's OWN registry and build under_review entri]] - rationale - scripts/sync-cve-registry.py
 - [[Extract a numeric CVSS base score from an advisory, else None.      GitHub advis]] - rationale - scripts/sync-cve-registry.py
@@ -46,12 +47,14 @@ members: 72
 - [[_classify()]] - code - scripts/sync-cve-registry.py
 - [[_count_list_entries()]] - code - scripts/sync-cve-registry.py
 - [[_entry_to_py()]] - code - scripts/sync-cve-registry.py
+- [[_esc()]] - code - docker/bots/hermes/render_md_email.py
 - [[_extract_affected_max()]] - code - scripts/sync-cve-registry.py
 - [[_extract_fix_version()]] - code - scripts/sync-cve-registry.py
 - [[_get_cvss()]] - code - scripts/sync-cve-registry.py
 - [[_ghsa_cvss_score()]] - code - scripts/sync-cve-registry.py
 - [[_ghsa_entry_to_py()]] - code - scripts/sync-cve-registry.py
 - [[_ghsa_patched_version()]] - code - scripts/sync-cve-registry.py
+- [[_inline()]] - code - docker/bots/hermes/render_md_email.py
 - [[_insert_into_list()]] - code - scripts/sync-cve-registry.py
 - [[_list_literals()]] - code - scripts/sync-cve-registry.py
 - [[_make_title()]] - code - scripts/sync-cve-registry.py
@@ -63,6 +66,7 @@ members: 72
 - [[_py_str()]] - code - scripts/sync-cve-registry.py
 - [[_read_pinned_version()]] - code - scripts/sync-cve-registry.py
 - [[_registry_var_for()]] - code - scripts/sync-cve-registry.py
+- [[_render_table()]] - code - docker/bots/hermes/render_md_email.py
 - [[_run_nvd_sync()]] - code - scripts/sync-cve-registry.py
 - [[_ver_gt()]] - code - scripts/sync-cve-registry.py
 - [[_ver_gte()]] - code - scripts/sync-cve-registry.py
@@ -75,8 +79,11 @@ members: 72
 - [[fetch_nvd_cves()]] - code - scripts/sync-cve-registry.py
 - [[get_agent_cve_source()]] - code - gateway/security/agent_cve_registry.py
 - [[get_agent_ghsa_repo()]] - code - gateway/security/agent_cve_registry.py
+- [[main()_4]] - code - docker/bots/hermes/render_md_email.py
 - [[main()_27]] - code - scripts/sync-cve-registry.py
 - [[process_ghsa_advisories()]] - code - scripts/sync-cve-registry.py
+- [[render()]] - code - docker/bots/hermes/render_md_email.py
+- [[render_md_email.py]] - code - docker/bots/hermes/render_md_email.py
 - [[run_ghsa_sync()]] - code - scripts/sync-cve-registry.py
 - [[sync-cve-registry.py]] - code - scripts/sync-cve-registry.py
 - [[sync_agent_ghsa()]] - code - scripts/sync-cve-registry.py
@@ -90,17 +97,17 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_Community 42]]
-- 4 edges to [[_COMMUNITY_Community 135]]
 - 4 edges to [[_COMMUNITY_Community 118]]
+- 3 edges to [[_COMMUNITY_Community 736]]
+- 2 edges to [[_COMMUNITY_Community 127]]
 - 2 edges to [[_COMMUNITY_Community 8]]
 - 1 edge to [[_COMMUNITY_Community 522]]
-- 1 edge to [[_COMMUNITY_Community 127]]
-- 1 edge to [[_COMMUNITY_Community 181]]
+- 1 edge to [[_COMMUNITY_Community 2030]]
 - 1 edge to [[_COMMUNITY_Community 639]]
 
 ## Top bridge nodes
 - [[sync-cve-registry.py]] - degree 43, connects to 2 communities
 - [[process_ghsa_advisories()]] - degree 9, connects to 2 communities
+- [[get_agent_ghsa_repo()]] - degree 6, connects to 2 communities
 - [[agent_cve_registry.py]] - degree 5, connects to 2 communities
-- [[get_agent_cve_source()]] - degree 6, connects to 1 community
-- [[get_agent_ghsa_repo()]] - degree 6, connects to 1 community
+- [[render_md_email.py]] - degree 6, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard_endpoints.py"
 type: "code"
-community: "Community 575"
+community: "Community 801"
 location: "L203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_575
+  - community/Community_801
 ---
 
 # test_log_buffer_tail()
@@ -15,4 +15,4 @@ tags:
 - [[LogBuffer]] - `calls` [EXTRACTED]
 - [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_575
+#graphify/code #graphify/EXTRACTED #community/Community_801

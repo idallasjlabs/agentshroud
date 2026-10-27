@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "Community 0"
+community: "Community 72"
 location: "L465"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/Community_72
 ---
 
 # Any
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_attack_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_0
+#graphify/code #graphify/EXTRACTED #community/Community_72

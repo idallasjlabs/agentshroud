@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Community 2339"
+community: "Community 98"
 location: "L151"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2339
+  - community/Community_98
 ---
 
 # Test that security module references are filtered.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_security_architecture_filtering()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2339
+#graphify/rationale #graphify/EXTRACTED #community/Community_98

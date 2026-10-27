@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Community 24"
+community: "Community 104"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/Community_104
 ---
 
 # lifespan.py
@@ -143,4 +143,4 @@ tags:
 - [[web_config.py]] - `imports_from` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_24
+#graphify/code #graphify/EXTRACTED #community/Community_104

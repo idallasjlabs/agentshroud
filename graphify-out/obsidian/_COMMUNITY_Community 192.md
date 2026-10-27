@@ -1,11 +1,11 @@
 ---
 type: community
-members: 37
+members: 38
 ---
 
 # Community 192
 
-**Members:** 37 nodes
+**Members:** 38 nodes
 
 ## Members
 - [[AgentShroud Brand Guidelines]] - document - branding/README.md
@@ -39,6 +39,7 @@ members: 37
 - [[Primary Color]] - document - branding/README.md
 - [[Social Handles]] - document - BRAND.md
 - [[Social Handles_1]] - document - docker/config/openclaw/workspace/BRAND.md
+- [[Trademark]] - document - BRAND.md
 - [[Trademark_1]] - document - docker/config/openclaw/workspace/BRAND.md
 - [[Typography_1]] - document - branding/README.md
 - [[Usage Guidelines]] - document - branding/README.md
@@ -55,15 +56,17 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 10 edges to [[_COMMUNITY_Community 231]]
-- 3 edges to [[_COMMUNITY_Community 861]]
+- 3 edges to [[_COMMUNITY_Community 585]]
 - 2 edges to [[_COMMUNITY_Community 615]]
-- 2 edges to [[_COMMUNITY_Community 394]]
 - 2 edges to [[_COMMUNITY_Community 976]]
 - 1 edge to [[_COMMUNITY_Community 2041]]
+- 1 edge to [[_COMMUNITY_Community 195]]
+- 1 edge to [[_COMMUNITY_Community 1260]]
 - 1 edge to [[_COMMUNITY_Community 547]]
 - 1 edge to [[_COMMUNITY_Community 1365]]
 
 ## Top bridge nodes
-- [[AgentShroud™ Brand Guidelines]] - degree 31, connects to 6 communities
-- [[AgentShroud™ Brand Guidelines_1]] - degree 29, connects to 5 communities
+- [[AgentShroud™ Brand Guidelines]] - degree 31, connects to 5 communities
+- [[AgentShroud™ Brand Guidelines_1]] - degree 29, connects to 4 communities
+- [[Trademark]] - degree 4, connects to 2 communities
 - [[AgentShroud Brand Guidelines]] - degree 8, connects to 1 community

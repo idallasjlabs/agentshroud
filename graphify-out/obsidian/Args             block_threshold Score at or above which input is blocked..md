@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "rationale"
-community: "Community 792"
+community: "Community 52"
 location: "L590"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_792
+  - community/Community_52
 ---
 
 # Args:             block_threshold: Score at or above which input is blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.__init__()_109]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_792
+#graphify/rationale #graphify/EXTRACTED #community/Community_52

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_operational_path_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test that internal file paths are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[.test_collaborator_access_not_configured_user_id_leakage_is_redacted_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Collaborators should not receive telegram user-id enrollment leakage text.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 98]]
+- 1 edge to [[_COMMUNITY_Community 626]]
+- 1 edge to [[_COMMUNITY_Community 2]]
+- 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[.test_operational_path_filtering()]] - degree 2, connects to 1 community
+- [[.test_collaborator_access_not_configured_user_id_leakage_is_redacted_json()]] - degree 4, connects to 3 communities

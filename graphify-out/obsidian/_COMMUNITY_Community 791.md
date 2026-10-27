@@ -38,12 +38,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 122]]
-- 4 edges to [[_COMMUNITY_Community 381]]
-- 4 edges to [[_COMMUNITY_Community 455]]
+- 8 edges to [[_COMMUNITY_Community 122]]
+- 5 edges to [[_COMMUNITY_Community 455]]
 - 4 edges to [[_COMMUNITY_Community 198]]
+- 2 edges to [[_COMMUNITY_Community 381]]
 - 2 edges to [[_COMMUNITY_Community 1991]]
-- 1 edge to [[_COMMUNITY_Community 1352]]
 
 ## Top bridge nodes
 - [[MockValidator]] - degree 14, connects to 5 communities

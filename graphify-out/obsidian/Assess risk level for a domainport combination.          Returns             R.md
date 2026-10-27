@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Community 93"
+community: "Community 23"
 location: "L239"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_93
+  - community/Community_23
 ---
 
 # Assess risk level for a domain/port combination.          Returns:             R
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._assess_risk()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_93
+#graphify/rationale #graphify/EXTRACTED #community/Community_23

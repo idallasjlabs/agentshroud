@@ -44,7 +44,7 @@ SORT file.name ASC
 - 5 edges to [[_COMMUNITY_Community 996]]
 - 3 edges to [[_COMMUNITY_Community 1163]]
 - 3 edges to [[_COMMUNITY_Community 234]]
-- 2 edges to [[_COMMUNITY_Community 24]]
+- 2 edges to [[_COMMUNITY_Community 104]]
 
 ## Top bridge nodes
 - [[EgressTelegramNotifier]] - degree 25, connects to 4 communities

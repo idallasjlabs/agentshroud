@@ -56,10 +56,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 6]]
+- 2 edges to [[_COMMUNITY_Community 978]]
 - 2 edges to [[_COMMUNITY_Community 309]]
 - 1 edge to [[_COMMUNITY_Community 547]]
-- 1 edge to [[_COMMUNITY_Community 181]]
+- 1 edge to [[_COMMUNITY_Community 2030]]
 
 ## Top bridge nodes
 - [[CollaboratorGreeter]] - degree 22, connects to 2 communities

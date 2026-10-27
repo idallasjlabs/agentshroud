@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "rationale"
-community: "Community 18"
+community: "Community 135"
 location: "L228"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/Community_135
 ---
 
 # Per-user collab_mode override: persists to group_overrides.json and takes     pr
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestUserCollabModeOverride]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_18
+#graphify/rationale #graphify/EXTRACTED #community/Community_135

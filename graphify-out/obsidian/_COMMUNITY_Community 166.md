@@ -1,19 +1,47 @@
 ---
 type: community
-members: 6
+members: 34
 ---
 
 # Community 166
 
-**Members:** 6 nodes
+**Members:** 34 nodes
 
 ## Members
-- [[.test_extract_user_id_slack()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_extract_user_id_slack_missing_event()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_extract_user_id_telegram_unchanged()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_extract_username_slack()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_extract_username_slack_fallback_to_user_id()]] - code - gateway/tests/test_slack_proxy.py
-- [[TestWebhookReceiverSlackExtraction]] - code - gateway/tests/test_slack_proxy.py
+- [[EgressAllowlistResponse]] - code - gateway/web/management.py
+- [[EgressAllowlistUpdate]] - code - gateway/web/management.py
+- [[Falco runtime security alerts viewer.]] - rationale - gateway/web/management.py
+- [[Get current egress allowlist configuration.]] - rationale - gateway/web/management.py
+- [[Get overall credential health score and status summary.]] - rationale - gateway/web/management.py
+- [[Get status of all managed credentials including age and rotation schedule.]] - rationale - gateway/web/management.py
+- [[Request model for updating egress allowlist.]] - rationale - gateway/web/management.py
+- [[Response model for egress allowlist.]] - rationale - gateway/web/management.py
+- [[Security tools overview — links to all tool-specific dashboards.]] - rationale - gateway/web/management.py
+- [[Serve the SSH hosts page.]] - rationale - gateway/web/management.py
+- [[Serve the approval queue page.]] - rationale - gateway/web/management.py
+- [[Serve the audit log page.]] - rationale - gateway/web/management.py
+- [[Serve the collaborators page (dynamic — fetches live activity data).]] - rationale - gateway/web/management.py
+- [[Serve the emergency kill switch page.]] - rationale - gateway/web/management.py
+- [[Serve the main management dashboard.]] - rationale - gateway/web/management.py
+- [[Serve the security modules page (dynamic — fetches live data).]] - rationale - gateway/web/management.py
+- [[Trigger manual rotation for a specific credential (owner only).]] - rationale - gateway/web/management.py
+- [[Wazuh HIDS alerts and FIM events viewer.]] - rationale - gateway/web/management.py
+- [[approvals()]] - code - gateway/web/management.py
+- [[audit()_1]] - code - gateway/web/management.py
+- [[collaborators()]] - code - gateway/web/management.py
+- [[credentials_health()]] - code - gateway/web/management.py
+- [[credentials_status()]] - code - gateway/web/management.py
+- [[dashboard()]] - code - gateway/web/management.py
+- [[dashboard.html (Control Center Template)]] - code - gateway/web/templates/dashboard.html
+- [[falco_dashboard()]] - code - gateway/web/management.py
+- [[get_egress_allowlist()]] - code - gateway/web/management.py
+- [[killswitch()_1]] - code - gateway/web/management.py
+- [[management.py]] - code - gateway/web/management.py
+- [[modules()]] - code - gateway/web/management.py
+- [[rotate_credential()]] - code - gateway/web/management.py
+- [[security_overview()]] - code - gateway/web/management.py
+- [[ssh()]] - code - gateway/web/management.py
+- [[wazuh_dashboard()]] - code - gateway/web/management.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +51,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 37]]
-- 1 edge to [[_COMMUNITY_Community 43]]
-- 1 edge to [[_COMMUNITY_Community 100]]
+- 7 edges to [[_COMMUNITY_Community 17]]
+- 6 edges to [[_COMMUNITY_Community 198]]
+- 6 edges to [[_COMMUNITY_Community 122]]
+- 3 edges to [[_COMMUNITY_Community 49]]
+- 2 edges to [[_COMMUNITY_Community 20]]
+- 1 edge to [[_COMMUNITY_Community 978]]
+- 1 edge to [[_COMMUNITY_Community 40]]
 
 ## Top bridge nodes
-- [[TestWebhookReceiverSlackExtraction]] - degree 8, connects to 3 communities
+- [[management.py]] - degree 27, connects to 6 communities
+- [[EgressAllowlistUpdate]] - degree 6, connects to 4 communities
+- [[EgressAllowlistResponse]] - degree 6, connects to 3 communities
+- [[credentials_status()]] - degree 4, connects to 2 communities
+- [[rotate_credential()]] - degree 4, connects to 2 communities

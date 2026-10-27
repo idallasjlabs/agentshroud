@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Secondary model returning non-200 increments failed stat and returns None.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_secondary_failover_secondary_non_200_returns_none()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[.test_credential_redaction()]] - code - gateway/tests/test_prompt_protection.py
+- [[Test redaction of credential patterns.]] - rationale - gateway/tests/test_prompt_protection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,8 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 208]]
-- 1 edge to [[_COMMUNITY_Community 506]]
+- 1 edge to [[_COMMUNITY_Community 351]]
 
 ## Top bridge nodes
-- [[test_local_secondary_failover_secondary_non_200_returns_none()]] - degree 3, connects to 2 communities
+- [[.test_credential_redaction()]] - degree 2, connects to 1 community

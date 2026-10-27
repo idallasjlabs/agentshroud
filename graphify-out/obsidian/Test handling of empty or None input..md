@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Community 50"
+community: "Community 72"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_50
+  - community/Community_72
 ---
 
 # Test handling of empty or None input.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_empty_or_none_input()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_50
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

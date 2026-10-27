@@ -1,48 +1,43 @@
 ---
 type: community
-members: 263
+members: 235
 ---
 
 # Community 24
 
-**Members:** 263 nodes
+**Members:** 235 nodes
 
 ## Members
-- [[NOTE Gateway-side Slack Socket Mode listener removed.]] - rationale - gateway/ingest_api/lifespan.py
 - [[.__init__()_33]] - code - gateway/proxy/pipeline.py
 - [[.__init__()_86]] - code - gateway/security/instruction_envelope.py
 - [[.__init__()_89]] - code - gateway/security/key_vault.py
 - [[.__init__()_90]] - code - gateway/security/key_vault.py
 - [[.__init__()_91]] - code - gateway/security/key_vault.py
-- [[.__init__()_103]] - code - gateway/security/outbound_filter.py
 - [[.__len__()_1]] - code - gateway/proxy/pipeline.py
 - [[._agent_in_scope()]] - code - gateway/security/key_vault.py
 - [[._blocking_prompt_guard()]] - code - gateway/tests/test_pipeline_unit.py
 - [[._classify_response_risk()]] - code - gateway/security/outbound_filter.py
-- [[._compile_patterns()_1]] - code - gateway/security/outbound_filter.py
 - [[._compute_signature()]] - code - gateway/security/instruction_envelope.py
 - [[._is_allowed_for_trust()]] - code - gateway/security/outbound_filter.py
 - [[._log_audit()]] - code - gateway/security/key_vault.py
 - [[._make_vault_pipeline()]] - code - gateway/tests/test_pipeline_unit.py
 - [[._passthrough_pii()_1]] - code - gateway/tests/test_pipeline_unit.py
 - [[._pipeline_with_trust()]] - code - gateway/tests/test_pipeline_unit.py
-- [[._propagate()]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[._redacting_pii()]] - code - gateway/tests/test_pipeline_unit.py
 - [[.check_value_match()]] - code - gateway/security/key_vault.py
 - [[.delete_key()]] - code - gateway/security/key_vault.py
 - [[.filter_response()]] - code - gateway/security/outbound_filter.py
 - [[.get_audit_log()_5]] - code - gateway/security/key_vault.py
 - [[.get_key()]] - code - gateway/security/key_vault.py
-- [[.get_stats()_17]] - code - gateway/security/outbound_filter.py
+- [[.get_stats()_6]] - code - gateway/proxy/pipeline.py
 - [[.incident_count()]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[.inject_for_request()]] - code - gateway/security/key_vault.py
 - [[.last_hash()_1]] - code - gateway/proxy/pipeline.py
 - [[.list_keys()]] - code - gateway/security/key_vault.py
-- [[.peers_of()]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[.record_incident()]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[.redact()]] - code - gateway/security/key_vault.py
 - [[.rotate_key()]] - code - gateway/security/key_vault.py
 - [[.scan_outbound()]] - code - gateway/security/key_vault.py
+- [[.set_global_mode()]] - code - gateway/proxy/pipeline.py
 - [[.sign()]] - code - gateway/security/instruction_envelope.py
 - [[.store_key()]] - code - gateway/security/key_vault.py
 - [[.test_append_chain()]] - code - gateway/tests/test_pipeline_unit.py
@@ -107,7 +102,6 @@ members: 263
 - [[.test_owner_inbound_query_not_pii_redacted()]] - code - gateway/tests/test_pipeline_unit.py
 - [[.test_partial_key_redacted()]] - code - gateway/tests/test_key_vault.py
 - [[.test_persisted_event_records_true_previous_hash()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_real_world_agent_responses()]] - code - gateway/tests/test_outbound_filter.py
 - [[.test_repetition_attack_does_not_block()]] - code - gateway/tests/test_pipeline_unit.py
 - [[.test_rotate_key()]] - code - gateway/tests/test_key_vault.py
 - [[.test_rotate_nonexistent_raises()]] - code - gateway/tests/test_key_vault.py
@@ -137,24 +131,21 @@ members: 263
 - [[.test_warn_zone_forwards()]] - code - gateway/tests/test_pipeline_unit.py
 - [[.test_wildcard_scope_allows_all()]] - code - gateway/tests/test_key_vault.py
 - [[.test_window_capped_at_max_entries()_1]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_with_pii_sanitizer_compatibility()]] - code - gateway/tests/test_outbound_filter.py
 - [[.total_appended()_1]] - code - gateway/proxy/pipeline.py
 - [[.verify()]] - code - gateway/security/instruction_envelope.py
+- [[.verify_audit_chain()]] - code - gateway/proxy/pipeline.py
+- [[.verify_chain()_1]] - code - gateway/proxy/pipeline.py
 - [[.wrap_system_prompt()]] - code - gateway/security/instruction_envelope.py
 - [[.wrap_tool_result()]] - code - gateway/security/instruction_envelope.py
 - [[0.3 ≤ score  0.6 warns but never blocks.]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[A self-consistent window on a forged anchor must fail when the         chain nev]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[A signed instruction or tool result.]] - rationale - gateway/security/instruction_envelope.py
 - [[A single match found by the outbound filter.]] - rationale - gateway/security/outbound_filter.py
-- [[Any_52]] - code - gateway/security/outbound_filter.py
-- [[Attach BufferHandler to the root agentshroud logger.]] - rationale - gateway/web/dashboard_endpoints.py
 - [[AuditChain]] - code - gateway/proxy/pipeline.py
 - [[C46 Signed Instruction Envelopes (HMAC-SHA256 tamper detection for system promptstool results)]] - concept - gateway/tests/test_instruction_envelope.py
-- [[Categories of information that may need filtering.]] - rationale - gateway/security/outbound_filter.py
 - [[Check if a disclosure category is permitted for the user's trust level.]] - rationale - gateway/security/outbound_filter.py
 - [[Check if any stored key values appear in text. Returns matching key names.]] - rationale - gateway/security/key_vault.py
 - [[Classify the risk level of a response based on info disclosure density.]] - rationale - gateway/security/outbound_filter.py
-- [[Compile all filter patterns into regex objects.]] - rationale - gateway/security/outbound_filter.py
 - [[ContextGuard must run in SecurityPipeline.process_inbound() — A2.]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[ContextIntegrityScorer must run in process_inbound() — C21 wiring.]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[Convenience sign a system prompt as issuer='system'.]] - rationale - gateway/security/instruction_envelope.py
@@ -163,20 +154,12 @@ members: 263
 - [[EnvelopeSigner]] - code - gateway/security/instruction_envelope.py
 - [[EnvelopeSigner must attest outbound responses — C46 wiring.]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[Envelopes signed with one key should not verify with a different key.]] - rationale - gateway/tests/test_instruction_envelope.py
-- [[FR4 Data Confidentiality]] - concept - docs/compliance/iec-62443-matrix.md
 - [[FULL-trust owner response scan runs, detection audited, delivery NOT blocked.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[FastAPI_1]] - code - gateway/ingest_api/lifespan.py
-- [[FastAPI lifespan - startup and shutdown]] - rationale - gateway/ingest_api/lifespan.py
 - [[Filter agent response for sensitive information disclosure.          Args]] - rationale - gateway/security/outbound_filter.py
 - [[FilterMatch]] - code - gateway/security/outbound_filter.py
 - [[FilterResult]] - code - gateway/security/outbound_filter.py
-- [[Get filter statistics.]] - rationale - gateway/security/outbound_filter.py
-- [[InfoCategory]] - code - gateway/security/outbound_filter.py
-- [[Initialize the outbound information filter.          Args             config C]] - rationale - gateway/security/outbound_filter.py
 - [[InjectionAction]] - code - gateway/security/tool_result_injection.py
-- [[Install warning filter once for uvicorn logger.]] - rationale - gateway/ingest_api/lifespan.py
 - [[InstructionEnvelope]] - code - gateway/security/instruction_envelope.py
-- [[Integration tests with other security components.]] - rationale - gateway/tests/test_outbound_filter.py
 - [[KeyAuditEvent]] - code - gateway/security/key_vault.py
 - [[KeyEntry]] - code - gateway/security/key_vault.py
 - [[KeyInjector]] - code - gateway/security/key_vault.py
@@ -186,8 +169,8 @@ members: 263
 - [[KeyVault]] - code - gateway/security/key_vault.py
 - [[KeyVaultConfig]] - code - gateway/security/key_vault.py
 - [[LeakScanResult]] - code - gateway/security/key_vault.py
-- [[Log an incident and propagate trust decay to registered peers.          Args]] - rationale - gateway/security/cross_bot_trust_ledger.py
 - [[Main outbound information filtering engine.      Uses compiled regex patterns to]] - rationale - gateway/security/outbound_filter.py
+- [[Main security pipeline that all messages pass through.      Wires together Prom]] - rationale - gateway/proxy/pipeline.py
 - [[Minimal SecurityPipeline with a real PII sanitizer stub.]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[Modifying content after signing should fail verification.]] - rationale - gateway/tests/test_instruction_envelope.py
 - [[Modifying the signature directly should fail verification.]] - rationale - gateway/tests/test_instruction_envelope.py
@@ -200,25 +183,21 @@ members: 263
 - [[PII sanitiser mock that simulates two entity redactions.]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[Per-agent API key scoping, redaction, leak detection, and rotation]] - concept - gateway/tests/test_key_vault.py
 - [[Pipeline with ContextGuard + ContextIntegrityScorer mocks.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[PipelineAction]] - code - gateway/proxy/pipeline.py
-- [[Recursive BFS propagation up to max_propagation_depth hops.]] - rationale - gateway/security/cross_bot_trust_ledger.py
 - [[Regression filter_result was possibly-unbound in process_outbound when no     o]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Resolve each configured bot's OWN Telegram token, distinct from the default.]] - rationale - gateway/ingest_api/lifespan.py
 - [[Result of filtering agent response content.]] - rationale - gateway/security/outbound_filter.py
 - [[Return True if the envelope's signature is valid.]] - rationale - gateway/security/instruction_envelope.py
 - [[Return a signed envelope for content.]] - rationale - gateway/security/instruction_envelope.py
 - [[Return the number of incidents currently in the ledger.]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[Return the registered peers for bot_name (empty list if none).]] - rationale - gateway/security/cross_bot_trust_ledger.py
 - [[SHA-256 hash chain for tamper-evident audit logging.]] - rationale - gateway/proxy/pipeline.py
 - [[STANDARD-trust source also blocked — only FULL bypasses the block.]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[ScanResult_1]] - code - gateway/security/prompt_guard.py
+- [[SecurityPipeline]] - code - gateway/proxy/pipeline.py
 - [[SecurityPipeline._maybe_record_trust_violation — centralized hook that     fires]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[Set global observatory mode for all security modules.          Args]] - rationale - gateway/proxy/pipeline.py
 - [[Shared trust decay channel for multi-bot deployments.      Usage          ledg]] - rationale - gateway/security/cross_bot_trust_ledger.py
 - [[Signs and verifies InstructionEnvelopes.      Usage          signer = Envelope]] - rationale - gateway/security/instruction_envelope.py
 - [[Step 1.76 PromptGuard tool-result scan must respect user_trust_level.      CVE-2]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[Step 2 PII sanitisation must be skipped for the authenticated owner.      Non-ow]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Test that outbound filter works alongside PII sanitizer.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test with realistic agent response patterns.]] - rationale - gateway/tests/test_outbound_filter.py
 - [[TestAuditChain]] - code - gateway/tests/test_pipeline_unit.py
 - [[TestAuditChainBounded]] - code - gateway/tests/test_pipeline_unit.py
 - [[TestContextGuardInPipeline]] - code - gateway/tests/test_pipeline_unit.py
@@ -226,7 +205,6 @@ members: 263
 - [[TestEnvelopeSigner]] - code - gateway/tests/test_instruction_envelope.py
 - [[TestEnvelopeSignerInPipeline]] - code - gateway/tests/test_pipeline_unit.py
 - [[TestInboundPIIOwnerExemption]] - code - gateway/tests/test_pipeline_unit.py
-- [[TestIntegration]] - code - gateway/tests/test_outbound_filter.py
 - [[TestKeyInjection]] - code - gateway/tests/test_key_vault.py
 - [[TestKeyLeakDetection]] - code - gateway/tests/test_key_vault.py
 - [[TestKeyLeakDetection_1]] - code - gateway/tests/test_pipeline_unit.py
@@ -244,21 +222,16 @@ members: 263
 - [[ThreatAction]] - code - gateway/security/prompt_guard.py
 - [[Two signers sharing the same key can cross-verify envelopes.]] - rationale - gateway/tests/test_instruction_envelope.py
 - [[UNTRUSTED source tool-result injection scan blocks as before (CVE-2026-31045).]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[Verify the integrity of the retained hash-chain window.          When the bounde]] - rationale - gateway/proxy/pipeline.py
 - [[_FakeAttack]] - code - gateway/tests/test_pipeline_unit.py
 - [[_FakeIntegrityScore]] - code - gateway/tests/test_pipeline_unit.py
-- [[_build_per_bot_telegram_tokens()]] - code - gateway/ingest_api/lifespan.py
-- [[_install_uvicorn_warning_filter()]] - code - gateway/ingest_api/lifespan.py
 - [[_make_integrity_pipeline()]] - code - gateway/tests/test_pipeline_unit.py
 - [[_make_pipeline()_2]] - code - gateway/tests/test_pipeline_unit.py
 - [[_make_signer_pipeline()]] - code - gateway/tests/test_pipeline_unit.py
 - [[append_owner_bypass writes to the hash chain AND persists a HIGH         'owner_]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[audit_chain()]] - code - gateway/tests/test_web_proxy.py
 - [[config()]] - code - gateway/tests/test_key_vault.py
-- [[install_log_handler()]] - code - gateway/web/dashboard_endpoints.py
 - [[instruction_envelope.py]] - code - gateway/security/instruction_envelope.py
 - [[key_vault.py]] - code - gateway/security/key_vault.py
-- [[lifespan()_1]] - code - gateway/ingest_api/lifespan.py
-- [[lifespan.py]] - code - gateway/ingest_api/lifespan.py
 - [[outbound_filter.py]] - code - gateway/security/outbound_filter.py
 - [[pipeline.py]] - code - gateway/proxy/pipeline.py
 - [[sign() + verify() should return True for unmodified content.]] - rationale - gateway/tests/test_instruction_envelope.py
@@ -266,7 +239,6 @@ members: 263
 - [[skip_context_guard=True must prevent ContextGuard from running — used by Telegra]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[test_instruction_envelope.py]] - code - gateway/tests/test_instruction_envelope.py
 - [[test_key_vault.py]] - code - gateway/tests/test_key_vault.py
-- [[test_outbound_filter.py]] - code - gateway/tests/test_outbound_filter.py
 - [[test_pipeline_unit.py]] - code - gateway/tests/test_pipeline_unit.py
 - [[vault()]] - code - gateway/tests/test_key_vault.py
 - [[wrap_system_prompt() sets issuer='system' and passes verification.]] - rationale - gateway/tests/test_instruction_envelope.py
@@ -280,98 +252,70 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 74 edges to [[_COMMUNITY_Community 84]]
-- 41 edges to [[_COMMUNITY_Community 11]]
-- 39 edges to [[_COMMUNITY_Community 0]]
-- 23 edges to [[_COMMUNITY_Community 27]]
-- 22 edges to [[_COMMUNITY_Community 88]]
-- 14 edges to [[_COMMUNITY_Community 6]]
-- 14 edges to [[_COMMUNITY_Community 154]]
-- 13 edges to [[_COMMUNITY_Community 63]]
-- 13 edges to [[_COMMUNITY_Community 1127]]
-- 10 edges to [[_COMMUNITY_Community 203]]
-- 9 edges to [[_COMMUNITY_Community 8]]
-- 9 edges to [[_COMMUNITY_Community 7]]
-- 9 edges to [[_COMMUNITY_Community 43]]
-- 8 edges to [[_COMMUNITY_Community 16]]
-- 7 edges to [[_COMMUNITY_Community 104]]
-- 7 edges to [[_COMMUNITY_Community 52]]
-- 6 edges to [[_COMMUNITY_Community 181]]
-- 6 edges to [[_COMMUNITY_Community 792]]
-- 5 edges to [[_COMMUNITY_Community 30]]
-- 5 edges to [[_COMMUNITY_Community 35]]
-- 5 edges to [[_COMMUNITY_Community 72]]
-- 4 edges to [[_COMMUNITY_Community 196]]
-- 4 edges to [[_COMMUNITY_Community 978]]
-- 4 edges to [[_COMMUNITY_Community 34]]
-- 4 edges to [[_COMMUNITY_Community 590]]
-- 4 edges to [[_COMMUNITY_Community 59]]
-- 4 edges to [[_COMMUNITY_Community 220]]
-- 4 edges to [[_COMMUNITY_Community 205]]
-- 4 edges to [[_COMMUNITY_Community 9]]
-- 4 edges to [[_COMMUNITY_Community 162]]
+- 34 edges to [[_COMMUNITY_Community 63]]
+- 34 edges to [[_COMMUNITY_Community 11]]
+- 29 edges to [[_COMMUNITY_Community 45]]
+- 20 edges to [[_COMMUNITY_Community 88]]
+- 19 edges to [[_COMMUNITY_Community 0]]
+- 18 edges to [[_COMMUNITY_Community 27]]
+- 17 edges to [[_COMMUNITY_Community 104]]
+- 14 edges to [[_COMMUNITY_Community 37]]
+- 12 edges to [[_COMMUNITY_Community 43]]
+- 12 edges to [[_COMMUNITY_Community 22]]
+- 11 edges to [[_COMMUNITY_Community 7]]
+- 11 edges to [[_COMMUNITY_Community 119]]
+- 9 edges to [[_COMMUNITY_Community 154]]
+- 8 edges to [[_COMMUNITY_Community 112]]
+- 7 edges to [[_COMMUNITY_Community 84]]
+- 7 edges to [[_COMMUNITY_Community 130]]
+- 6 edges to [[_COMMUNITY_Community 8]]
+- 6 edges to [[_COMMUNITY_Community 103]]
+- 6 edges to [[_COMMUNITY_Community 2030]]
+- 6 edges to [[_COMMUNITY_Community 98]]
+- 5 edges to [[_COMMUNITY_Community 52]]
+- 4 edges to [[_COMMUNITY_Community 61]]
 - 4 edges to [[_COMMUNITY_Community 206]]
-- 4 edges to [[_COMMUNITY_Community 119]]
-- 3 edges to [[_COMMUNITY_Community 229]]
-- 3 edges to [[_COMMUNITY_Community 17]]
-- 3 edges to [[_COMMUNITY_Community 99]]
-- 3 edges to [[_COMMUNITY_Community 22]]
-- 3 edges to [[_COMMUNITY_Community 68]]
-- 3 edges to [[_COMMUNITY_Community 102]]
-- 3 edges to [[_COMMUNITY_Community 97]]
-- 3 edges to [[_COMMUNITY_Community 532]]
-- 3 edges to [[_COMMUNITY_Community 60]]
-- 3 edges to [[_COMMUNITY_Community 141]]
-- 3 edges to [[_COMMUNITY_Community 575]]
-- 3 edges to [[_COMMUNITY_Community 98]]
-- 2 edges to [[_COMMUNITY_Community 36]]
-- 2 edges to [[_COMMUNITY_Community 158]]
-- 2 edges to [[_COMMUNITY_Community 81]]
-- 2 edges to [[_COMMUNITY_Community 1278]]
-- 2 edges to [[_COMMUNITY_Community 64]]
-- 2 edges to [[_COMMUNITY_Community 383]]
+- 3 edges to [[_COMMUNITY_Community 2154]]
+- 3 edges to [[_COMMUNITY_Community 205]]
+- 3 edges to [[_COMMUNITY_Community 1002]]
+- 3 edges to [[_COMMUNITY_Community 123]]
+- 3 edges to [[_COMMUNITY_Community 2063]]
+- 2 edges to [[_COMMUNITY_Community 26]]
+- 2 edges to [[_COMMUNITY_Community 978]]
+- 2 edges to [[_COMMUNITY_Community 94]]
+- 2 edges to [[_COMMUNITY_Community 65]]
+- 2 edges to [[_COMMUNITY_Community 220]]
+- 2 edges to [[_COMMUNITY_Community 72]]
+- 2 edges to [[_COMMUNITY_Community 684]]
+- 2 edges to [[_COMMUNITY_Community 420]]
+- 2 edges to [[_COMMUNITY_Community 196]]
+- 2 edges to [[_COMMUNITY_Community 41]]
+- 2 edges to [[_COMMUNITY_Community 509]]
 - 2 edges to [[_COMMUNITY_Community 431]]
-- 2 edges to [[_COMMUNITY_Community 254]]
-- 2 edges to [[_COMMUNITY_Community 45]]
-- 2 edges to [[_COMMUNITY_Community 241]]
-- 2 edges to [[_COMMUNITY_Community 113]]
-- 2 edges to [[_COMMUNITY_Community 135]]
-- 2 edges to [[_COMMUNITY_Community 89]]
-- 2 edges to [[_COMMUNITY_Community 56]]
-- 2 edges to [[_COMMUNITY_Community 93]]
-- 2 edges to [[_COMMUNITY_Community 21]]
-- 2 edges to [[_COMMUNITY_Community 187]]
-- 2 edges to [[_COMMUNITY_Community 71]]
-- 2 edges to [[_COMMUNITY_Community 262]]
-- 2 edges to [[_COMMUNITY_Community 110]]
-- 2 edges to [[_COMMUNITY_Community 5]]
-- 2 edges to [[_COMMUNITY_Community 61]]
-- 1 edge to [[_COMMUNITY_Community 595]]
-- 1 edge to [[_COMMUNITY_Community 112]]
-- 1 edge to [[_COMMUNITY_Community 127]]
-- 1 edge to [[_COMMUNITY_Community 185]]
-- 1 edge to [[_COMMUNITY_Community 531]]
-- 1 edge to [[_COMMUNITY_Community 507]]
-- 1 edge to [[_COMMUNITY_Community 311]]
-- 1 edge to [[_COMMUNITY_Community 10]]
-- 1 edge to [[_COMMUNITY_Community 131]]
-- 1 edge to [[_COMMUNITY_Community 151]]
+- 1 edge to [[_COMMUNITY_Community 81]]
 - 1 edge to [[_COMMUNITY_Community 184]]
-- 1 edge to [[_COMMUNITY_Community 120]]
-- 1 edge to [[_COMMUNITY_Community 2344]]
-- 1 edge to [[_COMMUNITY_Community 2357]]
-- 1 edge to [[_COMMUNITY_Community 2352]]
-- 1 edge to [[_COMMUNITY_Community 2350]]
-- 1 edge to [[_COMMUNITY_Community 2349]]
+- 1 edge to [[_COMMUNITY_Community 64]]
+- 1 edge to [[_COMMUNITY_Community 9]]
+- 1 edge to [[_COMMUNITY_Community 1344]]
+- 1 edge to [[_COMMUNITY_Community 531]]
+- 1 edge to [[_COMMUNITY_Community 1971]]
+- 1 edge to [[_COMMUNITY_Community 40]]
+- 1 edge to [[_COMMUNITY_Community 1214]]
+- 1 edge to [[_COMMUNITY_Community 984]]
 - 1 edge to [[_COMMUNITY_Community 304]]
+- 1 edge to [[_COMMUNITY_Community 146]]
+- 1 edge to [[_COMMUNITY_Community 1119]]
+- 1 edge to [[_COMMUNITY_Community 93]]
+- 1 edge to [[_COMMUNITY_Community 477]]
 - 1 edge to [[_COMMUNITY_Community 888]]
-- 1 edge to [[_COMMUNITY_Community 420]]
-- 1 edge to [[_COMMUNITY_Community 393]]
-- 1 edge to [[_COMMUNITY_Community 466]]
+- 1 edge to [[_COMMUNITY_Community 792]]
+- 1 edge to [[_COMMUNITY_Community 947]]
+- 1 edge to [[_COMMUNITY_Community 532]]
+- 1 edge to [[_COMMUNITY_Community 344]]
 
 ## Top bridge nodes
-- [[lifespan.py]] - degree 130, connects to 66 communities
-- [[lifespan()_1]] - degree 82, connects to 48 communities
+- [[SecurityPipeline]] - degree 142, connects to 30 communities
+- [[AuditChain]] - degree 89, connects to 11 communities
 - [[ThreatAction]] - degree 33, connects to 11 communities
-- [[AuditChain]] - degree 89, connects to 10 communities
-- [[PipelineAction]] - degree 50, connects to 8 communities
+- [[pipeline.py]] - degree 15, connects to 7 communities
+- [[KeyVault]] - degree 55, connects to 6 communities

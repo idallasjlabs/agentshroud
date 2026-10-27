@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "Community 18"
+community: "Community 135"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/Community_135
 ---
 
 # TeamsConfig
@@ -20,4 +20,4 @@ tags:
 - [[TeamsConfig]] - `uses` [INFERRED]
 - [[teams()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_18
+#graphify/code #graphify/EXTRACTED #community/Community_135

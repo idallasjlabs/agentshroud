@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 6"
+community: "Community 978"
 location: "L921"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_978
 ---
 
 # create_report()
@@ -17,4 +17,4 @@ tags:
 - [[Store a report in the gateway-managed multi-bot report store.      Body {bot]] - `rationale_for` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/Community_978

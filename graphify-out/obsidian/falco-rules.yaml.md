@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/falco-rules.md"
 type: "document"
-community: "Community 102"
+community: "Community 531"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_102
+  - community/Community_531
 ---
 
 # falco-rules.yaml
@@ -21,4 +21,4 @@ tags:
 - [[Shell Spawning Exceptions]] - `contains` [EXTRACTED]
 - [[falco-rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_102
+#graphify/document #graphify/EXTRACTED #community/Community_531

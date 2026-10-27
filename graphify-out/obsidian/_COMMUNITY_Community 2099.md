@@ -1,18 +1,19 @@
 ---
 type: community
-members: 5
+members: 6
 ---
 
 # Community 2099
 
-**Members:** 5 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[.test_daily_fs_scan_skips_security_log_tree()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_no_skip_dirs_flag_when_omitted()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_skip_dirs_added_to_command()]] - code - gateway/tests/test_daily_cve_report.py
-- [[TestTrivySkipDirs]] - code - gateway/tests/test_daily_cve_report.py
-- [[The daily fs scan of  must exclude varlogsecurity (trivy's own         cache]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[GHSA-58qx-6m8p-wh2j — Slack group DMs skip sender allowlists]] - document - gateway/security/tool_acl.py
+- [[GHSA-7cp7-87pj-p32v — skill dispatch skips owner-only policy]] - document - gateway/security/tool_acl.py
+- [[GHSA-hpg5-cq3m-phqp — agent cron tool reaches operator command jobs]] - document - gateway/security/tool_acl.py
+- [[GHSA-rrxp-5mx8-mvhh — inbound voice calls inherit owner tool authorization]] - document - gateway/security/tool_acl.py
+- [[GHSA-wwcw-jfpp-gpxw — native tools ignore per-chat policy]] - document - gateway/security/tool_acl.py
+- [[Owner-elevation-over-unverified-origin refusal (owner directive 2026-09-15)]] - rationale - gateway/security/tool_acl.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 127]]
+- 1 edge to [[_COMMUNITY_Community 61]]
 
 ## Top bridge nodes
-- [[TestTrivySkipDirs]] - degree 4, connects to 1 community
+- [[Owner-elevation-over-unverified-origin refusal (owner directive 2026-09-15)]] - degree 6, connects to 1 community

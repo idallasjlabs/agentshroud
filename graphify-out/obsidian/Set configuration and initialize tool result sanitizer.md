@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "Community 72"
+community: "Community 28"
 location: "L1358"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_28
 ---
 
 # Set configuration and initialize tool result sanitizer
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.set_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_72
+#graphify/rationale #graphify/EXTRACTED #community/Community_28

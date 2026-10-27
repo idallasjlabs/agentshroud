@@ -61,9 +61,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 181]]
+- 3 edges to [[_COMMUNITY_Community 2030]]
 - 2 edges to [[_COMMUNITY_Community 8]]
-- 1 edge to [[_COMMUNITY_Community 152]]
+- 1 edge to [[_COMMUNITY_Community 108]]
 
 ## Top bridge nodes
 - [[.fill_field()_3]] - degree 9, connects to 1 community

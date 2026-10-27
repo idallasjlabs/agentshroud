@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_user_id_sanitization()]] - code - gateway/tests/test_path_isolation.py
-- [[Test user ID sanitization.]] - rationale - gateway/tests/test_path_isolation.py
+- [[.test_healthcheck_sessions_spawn_json_is_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Healthcheck tool-call JSON should be rewritten to friendly status text.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 26]]
+- 1 edge to [[_COMMUNITY_Community 626]]
+- 1 edge to [[_COMMUNITY_Community 2]]
+- 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[.test_user_id_sanitization()]] - degree 2, connects to 1 community
+- [[.test_healthcheck_sessions_spawn_json_is_rewritten()]] - degree 4, connects to 3 communities

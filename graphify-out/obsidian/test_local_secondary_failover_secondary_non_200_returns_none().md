@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "Community 2336"
+community: "Community 506"
 location: "L874"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2336
+  - community/Community_506
 ---
 
 # test_local_secondary_failover_secondary_non_200_returns_none()
@@ -16,4 +16,4 @@ tags:
 - [[_make_proxy()]] - `calls` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2336
+#graphify/code #graphify/EXTRACTED #community/Community_506

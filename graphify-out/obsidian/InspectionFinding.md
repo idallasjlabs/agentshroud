@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "Community 59"
+community: "Community 54"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_59
+  - community/Community_54
 ---
 
 # InspectionFinding
@@ -19,4 +19,4 @@ tags:
 - [[__init__.py_7]] - `imports` [EXTRACTED]
 - [[mcp_inspector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_59
+#graphify/code #graphify/EXTRACTED #community/Community_54

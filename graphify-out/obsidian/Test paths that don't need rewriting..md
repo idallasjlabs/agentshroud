@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "Community 2365"
+community: "Community 26"
 location: "L162"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2365
+  - community/Community_26
 ---
 
 # Test paths that don't need rewriting.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_path_rewriting_no_rewrite_needed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2365
+#graphify/rationale #graphify/EXTRACTED #community/Community_26

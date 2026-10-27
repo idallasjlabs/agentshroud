@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Community 18"
+community: "Community 61"
 location: "L198"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/Community_61
 ---
 
 # _apply_persisted_overrides()
@@ -18,4 +18,4 @@ tags:
 - [[TeamsConfig]] - `references` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_18
+#graphify/code #graphify/EXTRACTED #community/Community_61

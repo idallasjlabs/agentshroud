@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 84"
+community: "Community 99"
 location: "L4789"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_84
+  - community/Community_99
 ---
 
 # TestOwnerActivityNotice
@@ -21,4 +21,4 @@ tags:
 - [[_send_owner_activity_notice must render tracker entries or honest error.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_84
+#graphify/code #graphify/INFERRED #community/Community_99

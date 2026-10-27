@@ -1,12 +1,12 @@
 ---
 source_file: "branding/README.md"
 type: "document"
-community: "Community 861"
+community: "Community 585"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_861
+  - community/Community_585
 ---
 
 # README.md
@@ -20,4 +20,4 @@ tags:
 - [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
 - [[QUICK-REFERENCE]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_861
+#graphify/document #graphify/EXTRACTED #community/Community_585

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-hermes/README.md"
 type: "document"
-community: "Community 1210"
+community: "Community 90"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1210
+  - community/Community_90
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Hermes — Podcast Production Orchestrator_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1210
+#graphify/document #graphify/EXTRACTED #community/Community_90

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 738"
+community: "Community 99"
 location: "L4677"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_738
+  - community/Community_99
 ---
 
 # TestInternalBannerMatcher
@@ -26,4 +26,4 @@ tags:
 - [[_contains_internal_approval_banner must only fire on real egress banners.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_738
+#graphify/code #graphify/EXTRACTED #community/Community_99

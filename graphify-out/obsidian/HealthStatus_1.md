@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Community 54"
+community: "Community 8"
 location: "L204"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_54
+  - community/Community_8
 ---
 
 # HealthStatus
@@ -17,4 +17,4 @@ tags:
 - [[ServiceStatus]] - `uses` [INFERRED]
 - [[_engine_health_to_health()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_54
+#graphify/code #graphify/INFERRED #community/Community_8

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Returns a copy — never mutates the caller's headers dict in place.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_backend_headers_does_not_mutate_input()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[.test_content_sanitization()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[Test content sanitization removes threats.]] - rationale - gateway/tests/test_memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 208]]
+- 1 edge to [[_COMMUNITY_Community 16]]
 
 ## Top bridge nodes
-- [[test_local_backend_headers_does_not_mutate_input()]] - degree 2, connects to 1 community
+- [[.test_content_sanitization()]] - degree 2, connects to 1 community

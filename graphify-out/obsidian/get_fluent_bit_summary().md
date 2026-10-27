@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Community 67"
+community: "Community 29"
 location: "L836"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_67
+  - community/Community_29
 ---
 
 # get_fluent_bit_summary()
@@ -19,4 +19,4 @@ tags:
 - [[aggregate_results()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_67
+#graphify/code #graphify/EXTRACTED #community/Community_29

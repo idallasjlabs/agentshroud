@@ -1,16 +1,18 @@
 ---
 type: community
-members: 3
+members: 5
 ---
 
 # Community 2188
 
-**Members:** 3 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[Required Tags (All Resources)_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Tag Audit Process_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Tagging Standard_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Blue Team Security Auditor (SEC-DEFENSE)_1]] - document - docker/config/hermes/skills/i-sec-defense/README.md
+- [[Purpose_66]] - document - docker/config/hermes/skills/i-sec-defense/README.md
+- [[README_71]] - document - docker/config/hermes/skills/i-sec-defense/README.md
+- [[Related Skills_87]] - document - docker/config/hermes/skills/i-sec-defense/README.md
+- [[Usage_89]] - document - docker/config/hermes/skills/i-sec-defense/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 494]]
+- 1 edge to [[_COMMUNITY_Community 90]]
 
 ## Top bridge nodes
-- [[Tagging Standard_6]] - degree 3, connects to 1 community
+- [[Blue Team Security Auditor (SEC-DEFENSE)_1]] - degree 5, connects to 1 community

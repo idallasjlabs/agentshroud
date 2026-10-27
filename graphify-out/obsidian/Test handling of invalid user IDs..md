@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "Community 6"
+community: "Community 72"
 location: "L418"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_72
 ---
 
 # Test handling of invalid user IDs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_invalid_user_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

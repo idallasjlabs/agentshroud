@@ -1,61 +1,47 @@
 ---
 type: community
-members: 48
+members: 34
 ---
 
 # Community 148
 
-**Members:** 48 nodes
+**Members:** 34 nodes
 
 ## Members
-- [[.__init__()_18]] - code - gateway/proxy/a2a_proxy.py
-- [[.__init__()_134]] - code - gateway/tests/test_a2a_integration.py
-- [[._handle()_1]] - code - gateway/tests/test_a2a_integration.py
-- [[.close()_7]] - code - gateway/proxy/a2a_proxy.py
-- [[.forward()_3]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[A plain default-deny (unknownunlisted peer) is a routing decision, not     evid]] - rationale - gateway/tests/test_a2a_trust_scoring.py
-- [[A2APeerTestDouble]] - code - gateway/tests/test_a2a_integration.py
-- [[A2APolicyEngine_1]] - code - gateway/security/a2a_policy.py
-- [[A2AProxy]] - code - gateway/proxy/a2a_proxy.py
-- [[Decides allow  deny  require-approval for inbound A2A requests.      Usage]] - rationale - gateway/security/a2a_policy.py
-- [[Hermes A2A Plugin Upstream Gaps (83701, 8053480779, 78298, 77872, 81042)]] - concept - docs/security/threat-model.md
-- [[HermesA2AForwarder]] - code - gateway/proxy/a2a_proxy.py
-- [[Minimal JSON-RPC 2.0 responder standing in for a real A2A peer.      Explicitly]] - rationale - gateway/tests/test_a2a_integration.py
-- [[Negative control for the SSRF suite above — a genuinely public     callback URL]] - rationale - gateway/tests/test_a2a_integration.py
-- [[ParsedA2ARequest]] - code - gateway/proxy/a2a_proxy.py
-- [[Real HTTP forwarder to Hermes's internal A2A JSON-RPC listener.      Matches the]] - rationale - gateway/proxy/a2a_proxy.py
-- [[Request_7]] - code - gateway/tests/test_a2a_integration.py
-- [[Response]] - code - gateway/tests/test_a2a_integration.py
-- [[Terminates inbound A2A HTTP requests, enforces policy, forwards.      Usage]] - rationale - gateway/proxy/a2a_proxy.py
-- [[TrustManager_2]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[Unambiguous malicious intent — immediate demotion, not a slow decay.]] - rationale - gateway/tests/test_a2a_trust_scoring.py
-- [[Upstream A2A Gap 78298 — SSRF Push-Notification Callback URL Bypass]] - concept - gateway/tests/test_a2a_integration.py
-- [[Upstream A2A Gap 83701 — TaskContextId Collision Hijack]] - concept - gateway/tests/test_a2a_integration.py
-- [[Upstream Hermes Gap 80534 — Peer Identity Resolved From SocketX-Forwarded-For Instead Of Bearer Token]] - concept - gateway/tests/test_a2a_proxy.py
-- [[_StubForwarder_1]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[_jsonrpc()]] - code - gateway/tests/test_a2a_integration.py
-- [[_jsonrpc()_2]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[a2a_proxy.py]] - code - gateway/proxy/a2a_proxy.py
-- [[alice legitimately creates a task; bob (a distinct, also-allowlisted     peer) a]] - rationale - gateway/tests/test_a2a_integration.py
-- [[test_a2a_integration.py]] - code - gateway/tests/test_a2a_integration.py
-- [[test_a2a_ssrf_callback_is_a_severe_violation_by_default()]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[test_a2a_ssrf_callback_penalty_matches_malicious_intent_tier()]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[test_a2a_task_ownership_violation_has_a_configured_penalty_heavier_than_generic_policy()]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[test_a2a_trust_scoring.py]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[test_a2a_violation_types_exist()]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[test_adversarial_ssrf_callback_bypass_attempts_over_real_http()]] - code - gateway/tests/test_a2a_integration.py
-- [[test_adversarial_task_ownership_hijack_attempt_over_real_http()]] - code - gateway/tests/test_a2a_integration.py
-- [[test_double_peer()]] - code - gateway/tests/test_a2a_integration.py
-- [[test_full_round_trip_allowed_request_reaches_the_peer()]] - code - gateway/tests/test_a2a_integration.py
-- [[test_full_round_trip_denied_request_never_reaches_the_peer()]] - code - gateway/tests/test_a2a_integration.py
-- [[test_generic_denial_does_not_record_a2a_specific_violation_types()]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[test_legitimate_callback_url_is_forwarded_over_real_http()]] - code - gateway/tests/test_a2a_integration.py
-- [[test_proxy_without_trust_manager_does_not_raise()]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[test_ssrf_callback_rejection_triggers_severe_demotion()]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[test_task_ownership_violation_records_a2a_violation_type()]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[trust_manager is an optional dependency — a proxy built without one     (e.g. be]] - rationale - gateway/tests/test_a2a_trust_scoring.py
-- [[trust_manager()]] - code - gateway/tests/test_a2a_integration.py
-- [[trust_manager()_1]] - code - gateway/tests/test_a2a_trust_scoring.py
+- [[.test_clamav_binary_not_found()]] - code - gateway/tests/test_security_audit.py
+- [[.test_clamav_parse_clean()]] - code - gateway/tests/test_security_audit.py
+- [[.test_clamav_parse_infected()]] - code - gateway/tests/test_security_audit.py
+- [[.test_parse_clean_output()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_parse_empty_output()_1]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_parse_has_timestamp()_1]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_parse_infected_files_details()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_parse_infected_output()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_parse_scanner_name()_1]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_parse_signatures()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_run_not_found()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_summary_clean()_1]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_summary_error()_1]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_summary_infected()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_update_db_not_found()]] - code - gateway/tests/test_security_toolchain.py
+- [[Any_34]] - code - gateway/security/clamav_scanner.py
+- [[Generate a summary dict suitable for the health report.      Args         repor]] - rationale - gateway/security/clamav_scanner.py
+- [[Parse clamscan output into structured results.      Args         output Raw st]] - rationale - gateway/security/clamav_scanner.py
+- [[Run ClamAV scan and return parsed results.      Args         target Directory]] - rationale - gateway/security/clamav_scanner.py
+- [[Save a ClamAV report to the log directory.]] - rationale - gateway/security/clamav_scanner.py
+- [[TestClamAVParser]] - code - gateway/tests/test_security_toolchain.py
+- [[TestClamAVRun]] - code - gateway/tests/test_security_toolchain.py
+- [[TestClamAVSummary]] - code - gateway/tests/test_security_toolchain.py
+- [[True if clamd accepts connections on its socket.      Connects rather than testi]] - rationale - gateway/security/clamav_scanner.py
+- [[Update ClamAV virus database using freshclam.      Args         freshclam_bin]] - rationale - gateway/security/clamav_scanner.py
+- [[clamav_scanner.py]] - code - gateway/security/clamav_scanner.py
+- [[clamd_available()]] - code - gateway/security/clamav_scanner.py
+- [[clamdscan' when the resident clamd can take the scan, else 'clamscan'.]] - rationale - gateway/security/clamav_scanner.py
+- [[generate_summary()]] - code - gateway/security/clamav_scanner.py
+- [[parse_clamscan_output()]] - code - gateway/security/clamav_scanner.py
+- [[preferred_scan_binary()]] - code - gateway/security/clamav_scanner.py
+- [[run_clamscan()]] - code - gateway/security/clamav_scanner.py
+- [[save_report()]] - code - gateway/security/clamav_scanner.py
+- [[update_virus_db()]] - code - gateway/security/clamav_scanner.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -65,17 +51,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 27 edges to [[_COMMUNITY_Community 11]]
-- 23 edges to [[_COMMUNITY_Community 271]]
-- 16 edges to [[_COMMUNITY_Community 307]]
-- 12 edges to [[_COMMUNITY_Community 116]]
-- 11 edges to [[_COMMUNITY_Community 111]]
-- 5 edges to [[_COMMUNITY_Community 221]]
-- 1 edge to [[_COMMUNITY_Community 105]]
+- 9 edges to [[_COMMUNITY_Community 0]]
+- 7 edges to [[_COMMUNITY_Community 102]]
+- 5 edges to [[_COMMUNITY_Community 220]]
+- 2 edges to [[_COMMUNITY_Community 104]]
+- 2 edges to [[_COMMUNITY_Community 978]]
+- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 709]]
+- 1 edge to [[_COMMUNITY_Community 29]]
 
 ## Top bridge nodes
-- [[A2APolicyEngine_1]] - degree 58, connects to 6 communities
-- [[A2AProxy]] - degree 37, connects to 3 communities
-- [[a2a_proxy.py]] - degree 10, connects to 3 communities
-- [[test_a2a_trust_scoring.py]] - degree 19, connects to 2 communities
-- [[HermesA2AForwarder]] - degree 18, connects to 2 communities
+- [[clamav_scanner.py]] - degree 12, connects to 4 communities
+- [[run_clamscan()]] - degree 10, connects to 4 communities
+- [[parse_clamscan_output()]] - degree 18, connects to 3 communities
+- [[TestClamAVParser]] - degree 9, connects to 2 communities
+- [[preferred_scan_binary()]] - degree 5, connects to 2 communities

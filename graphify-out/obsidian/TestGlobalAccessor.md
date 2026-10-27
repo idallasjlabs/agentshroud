@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_limits.py"
 type: "code"
-community: "Community 5"
+community: "Community 2324"
 location: "L211"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_5
+  - community/Community_2324
 ---
 
 # TestGlobalAccessor
@@ -18,4 +18,4 @@ tags:
 - [[VRAMHeadroomError]] - `uses` [INFERRED]
 - [[test_resource_guard_limits.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_5
+#graphify/code #graphify/INFERRED #community/Community_2324

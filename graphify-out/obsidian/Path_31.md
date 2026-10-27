@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_pipeline.py"
 type: "code"
-community: "Community 57"
+community: "Community 788"
 location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_57
+  - community/Community_788
 ---
 
 # Path
@@ -24,4 +24,4 @@ tags:
 - [[IntelReportStore]] - `uses` [INFERRED]
 - [[ReportIntegrityError]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_57
+#graphify/code #graphify/EXTRACTED #community/Community_788

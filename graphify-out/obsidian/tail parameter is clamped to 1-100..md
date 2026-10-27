@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard_endpoints.py"
 type: "rationale"
-community: "Community 575"
+community: "Community 801"
 location: "L176"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_575
+  - community/Community_801
 ---
 
 # tail parameter is clamped to 1-100.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_logs_recent_tail_clamped()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_575
+#graphify/rationale #graphify/EXTRACTED #community/Community_801

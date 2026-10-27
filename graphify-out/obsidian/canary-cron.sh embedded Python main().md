@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/canary-cron.sh"
 type: "code"
-community: "Community 84"
+community: "Community 112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_84
+  - community/Community_112
 ---
 
 # canary-cron.sh embedded Python main()
@@ -17,4 +17,4 @@ tags:
 - [[SecurityPipeline]] - `calls` [EXTRACTED]
 - [[run_canary()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_84
+#graphify/code #graphify/EXTRACTED #community/Community_112

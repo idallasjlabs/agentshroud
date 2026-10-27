@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Community 6"
+community: "Community 61"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_6
+  - community/Community_61
 ---
 
 # Role
@@ -131,4 +131,4 @@ tags:
 - [[test_tool_acl.py]] - `imports` [EXTRACTED]
 - [[tool_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_6
+#graphify/code #graphify/INFERRED #community/Community_61

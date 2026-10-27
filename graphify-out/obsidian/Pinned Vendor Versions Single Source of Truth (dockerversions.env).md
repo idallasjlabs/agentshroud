@@ -1,11 +1,11 @@
 ---
 source_file: ".github/workflows/update-cve-page.yml"
 type: "rationale"
-community: "Community 394"
+community: "Community 1260"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_394
+  - community/Community_1260
 ---
 
 # Pinned Vendor Versions Single Source of Truth (docker/versions.env)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Daily CVE Sync + Page Update Workflow]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_394
+#graphify/rationale #graphify/EXTRACTED #community/Community_1260

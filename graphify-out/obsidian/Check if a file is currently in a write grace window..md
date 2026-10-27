@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "Community 16"
+community: "Community 1016"
 location: "L156"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/Community_1016
 ---
 
 # Check if a file is currently in a write grace window.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._is_in_write_window()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_16
+#graphify/rationale #graphify/EXTRACTED #community/Community_1016

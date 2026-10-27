@@ -1,11 +1,11 @@
 ---
 type: community
-members: 26
+members: 28
 ---
 
 # Community 260
 
-**Members:** 26 nodes
+**Members:** 28 nodes
 
 ## Members
 - [[.test_allowed_path_different_item()]] - code - gateway/tests/test_op_proxy.py
@@ -23,6 +23,7 @@ members: 26
 - [[.test_path_traversal_returns_403()]] - code - gateway/tests/test_op_proxy.py
 - [[.test_requires_auth()_4]] - code - gateway/tests/test_op_proxy.py
 - [[.test_valid_reference_returns_value()]] - code - gateway/tests/test_op_proxy.py
+- [[1Password credential proxy (P2 credential isolation).      Reads a secret from]] - rationale - gateway/ingest_api/main.py
 - [[Endpoint returns 401 without auth override._2]] - rationale - gateway/tests/test_op_proxy.py
 - [[Real functional check, not a boot-time smoke test every op reference     doc]] - rationale - gateway/tests/test_op_proxy.py
 - [[Return True if the op reference matches an allowed path pattern.]] - rationale - gateway/ingest_api/main.py
@@ -33,6 +34,7 @@ members: 26
 - [[The vault has no item literally titled Brave Search API Key —         the real]] - rationale - gateway/tests/test_op_proxy.py
 - [[_is_op_reference_allowed()]] - code - gateway/ingest_api/main.py
 - [[client()_12]] - code - gateway/tests/test_op_proxy.py
+- [[op_proxy()]] - code - gateway/ingest_api/main.py
 - [[test_op_proxy.py]] - code - gateway/tests/test_op_proxy.py
 
 ## Live Query (requires Dataview plugin)
@@ -43,8 +45,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 6]]
+- 3 edges to [[_COMMUNITY_Community 978]]
+- 1 edge to [[_COMMUNITY_Community 254]]
+- 1 edge to [[_COMMUNITY_Community 2154]]
 
 ## Top bridge nodes
+- [[op_proxy()]] - degree 5, connects to 2 communities
 - [[_is_op_reference_allowed()]] - degree 13, connects to 1 community
 - [[test_op_proxy.py]] - degree 6, connects to 1 community

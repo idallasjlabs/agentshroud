@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Community 93"
+community: "Community 23"
 location: "L692"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_93
+  - community/Community_23
 ---
 
 # Revoke an active rule associated with a decision log entry (CC-40).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.revoke_decision()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_93
+#graphify/rationale #graphify/EXTRACTED #community/Community_23

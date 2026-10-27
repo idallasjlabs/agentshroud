@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_collaborator_pairing_code_leakage_is_redacted_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Collaborators should never receive pairing codes or pairing approval commands.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_ssn_redacted_on_outbound()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[SSN in outbound messages must be redacted.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,4 +24,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[.test_collaborator_pairing_code_leakage_is_redacted_json()]] - degree 4, connects to 3 communities
+- [[.test_ssn_redacted_on_outbound()]] - degree 4, connects to 3 communities

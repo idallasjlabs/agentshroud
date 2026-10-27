@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/colima-docker-guide.md"
 type: "document"
-community: "Community 168"
+community: "Community 2037"
 location: "L367"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_168
+  - community/Community_2037
 ---
 
 # Clean rebuild (safe — preserves workspace, config, SSH)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[7. Build Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_168
+#graphify/document #graphify/EXTRACTED #community/Community_2037

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "document"
-community: "Community 1090"
+community: "Community 494"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1090
+  - community/Community_494
 ---
 
 # Operating Rules (Non-Negotiable)
@@ -20,4 +20,4 @@ tags:
 - [[Rule 5 Safe Tagging_6]] - `contains` [EXTRACTED]
 - [[Rule 6 Never Delete Automatically_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1090
+#graphify/document #graphify/EXTRACTED #community/Community_494

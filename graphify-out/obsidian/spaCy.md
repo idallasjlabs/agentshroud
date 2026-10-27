@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "Community 1015"
+community: "Community 2053"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1015
+  - community/Community_2053
 ---
 
 # spaCy
@@ -20,4 +20,4 @@ tags:
 - [[Where Used_5]] - `contains` [EXTRACTED]
 - [[spacy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1015
+#graphify/document #graphify/EXTRACTED #community/Community_2053

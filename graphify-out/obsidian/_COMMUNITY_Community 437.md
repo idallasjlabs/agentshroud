@@ -39,9 +39,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 1000]]
 - 1 edge to [[_COMMUNITY_Community 8]]
-- 1 edge to [[_COMMUNITY_Community 562]]
-- 1 edge to [[_COMMUNITY_Community 1000]]
 
 ## Top bridge nodes
-- [[TestSSRFDetection]] - degree 22, connects to 3 communities
+- [[TestSSRFDetection]] - degree 22, connects to 2 communities

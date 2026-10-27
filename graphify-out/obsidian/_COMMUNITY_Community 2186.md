@@ -1,16 +1,18 @@
 ---
 type: community
-members: 3
+members: 5
 ---
 
 # Community 2186
 
-**Members:** 3 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[open_in_tab]] - code - browser-extension/manifest.json
-- [[options_ui]] - code - browser-extension/manifest.json
-- [[page]] - code - browser-extension/manifest.json
+- [[Purpose_64]] - document - docker/config/hermes/skills/i-sad/README.md
+- [[README_69]] - document - docker/config/hermes/skills/i-sad/README.md
+- [[Related Skills_85]] - document - docker/config/hermes/skills/i-sad/README.md
+- [[System Audit Documentation_1]] - document - docker/config/hermes/skills/i-sad/README.md
+- [[Usage_87]] - document - docker/config/hermes/skills/i-sad/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 440]]
+- 1 edge to [[_COMMUNITY_Community 90]]
 
 ## Top bridge nodes
-- [[options_ui]] - degree 3, connects to 1 community
+- [[System Audit Documentation_1]] - degree 5, connects to 1 community

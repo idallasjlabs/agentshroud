@@ -1,11 +1,11 @@
 ---
 type: community
-members: 33
+members: 26
 ---
 
 # Community 379
 
-**Members:** 33 nodes
+**Members:** 26 nodes
 
 ## Members
 - [[.__init__()_46]] - code - gateway/runtime/apple_engine.py
@@ -20,26 +20,19 @@ members: 33
 - [[.network_create()]] - code - gateway/runtime/apple_engine.py
 - [[.network_rm()]] - code - gateway/runtime/apple_engine.py
 - [[.pause()]] - code - gateway/runtime/apple_engine.py
+- [[.ps()]] - code - gateway/runtime/apple_engine.py
 - [[.pull()]] - code - gateway/runtime/apple_engine.py
 - [[.push()]] - code - gateway/runtime/apple_engine.py
 - [[.rm()]] - code - gateway/runtime/apple_engine.py
 - [[.run()_1]] - code - gateway/runtime/apple_engine.py
-- [[.setup_method()_25]] - code - gateway/tests/test_runtime_engines.py
 - [[.stop()_5]] - code - gateway/runtime/apple_engine.py
-- [[.test_compose_not_supported()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_health_check()_1]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_inspect_non_json()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_network_graceful_fail()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_pause_fallback()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_ps_text_parse()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_run_ignores_seccomp()]] - code - gateway/tests/test_runtime_engines.py
 - [[.unpause()]] - code - gateway/runtime/apple_engine.py
 - [[.volume_create()]] - code - gateway/runtime/apple_engine.py
 - [[.volume_rm()]] - code - gateway/runtime/apple_engine.py
 - [[Any_25]] - code - gateway/runtime/apple_engine.py
 - [[AppleContainerEngine]] - code - gateway/runtime/apple_engine.py
 - [[Container engine backed by Apple's `container` CLI.]] - rationale - gateway/runtime/apple_engine.py
-- [[TestAppleContainerEngine]] - code - gateway/tests/test_runtime_engines.py
+- [[ContainerInfo]] - code - gateway/runtime/apple_engine.py
 - [[get_engine]] - code - gateway/runtime/__init__.py
 
 ## Live Query (requires Dataview plugin)
@@ -50,14 +43,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 225]]
-- 10 edges to [[_COMMUNITY_Community 240]]
+- 7 edges to [[_COMMUNITY_Community 738]]
+- 6 edges to [[_COMMUNITY_Community 240]]
 - 3 edges to [[_COMMUNITY_Community 918]]
-- 2 edges to [[_COMMUNITY_Community 372]]
-- 2 edges to [[_COMMUNITY_Community 250]]
+- 3 edges to [[_COMMUNITY_Community 225]]
+- 2 edges to [[_COMMUNITY_Community 2010]]
+- 1 edge to [[_COMMUNITY_Community 372]]
 - 1 edge to [[_COMMUNITY_Community 385]]
+- 1 edge to [[_COMMUNITY_Community 2072]]
+- 1 edge to [[_COMMUNITY_Community 743]]
+- 1 edge to [[_COMMUNITY_Community 1052]]
 
 ## Top bridge nodes
-- [[AppleContainerEngine]] - degree 45, connects to 6 communities
-- [[TestAppleContainerEngine]] - degree 14, connects to 4 communities
-- [[Any_25]] - degree 3, connects to 1 community
+- [[AppleContainerEngine]] - degree 45, connects to 10 communities
+- [[ContainerInfo]] - degree 3, connects to 2 communities
+- [[Any_25]] - degree 3, connects to 2 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Community 196"
+community: "Community 104"
 location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_196
+  - community/Community_104
 ---
 
 # check_monitor_mode_warnings()
@@ -22,4 +22,4 @@ tags:
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_enforce_defaults.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_196
+#graphify/code #graphify/EXTRACTED #community/Community_104

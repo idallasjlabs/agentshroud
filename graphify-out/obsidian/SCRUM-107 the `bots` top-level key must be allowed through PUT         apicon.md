@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "rationale"
-community: "Community 943"
+community: "Community 40"
 location: "L425"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_943
+  - community/Community_40
 ---
 
 # SCRUM-107: the `bots` top-level key must be allowed through PUT         /api/con
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_update_config_round_trips_bots_key()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_943
+#graphify/rationale #graphify/EXTRACTED #community/Community_40

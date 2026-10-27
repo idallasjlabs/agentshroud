@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 14"
+community: "Community 344"
 location: "L2172"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/Community_344
 ---
 
 # Detect collaborator prompts requesting system prompt/agent instruction leakage.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._looks_like_system_prompt_probe()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_14
+#graphify/rationale #graphify/EXTRACTED #community/Community_344

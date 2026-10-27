@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/scripts/cve_prefetch.py"
 type: "code"
-community: "Community 2017"
+community: "Community 639"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2017
+  - community/Community_639
 ---
 
 # known_ghsa_ids()
@@ -16,4 +16,4 @@ tags:
 - [[main()_7]] - `calls` [EXTRACTED]
 - [[prefetch-ghsa-registry.sh (known-GHSA-ID cache prefetch)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2017
+#graphify/code #graphify/EXTRACTED #community/Community_639

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Community 792"
+community: "Community 52"
 location: "L783"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_792
+  - community/Community_52
 ---
 
 # Ensure zeroing doesn't break normal encrypt/decrypt flow.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_encrypt_decrypt_still_works_after_zeroing()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_792
+#graphify/rationale #graphify/EXTRACTED #community/Community_52

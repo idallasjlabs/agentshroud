@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "rationale"
-community: "Community 9"
+community: "Community 65"
 location: "L41"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_9
+  - community/Community_65
 ---
 
 # Test kill switch monitor functionality.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKillSwitchMonitor]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_9
+#graphify/rationale #graphify/EXTRACTED #community/Community_65

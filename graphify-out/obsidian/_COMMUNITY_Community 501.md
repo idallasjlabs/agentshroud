@@ -1,11 +1,11 @@
 ---
 type: community
-members: 20
+members: 30
 ---
 
 # Community 501
 
-**Members:** 20 nodes
+**Members:** 30 nodes
 
 ## Members
 - [[1. Anthropic API Credits Exhausted]] - document - docs/project/REPORTED_ISSUES.md
@@ -19,6 +19,14 @@ members: 20
 - [[17. Hardcoded JWT Metadata]] - document - docs/project/REPORTED_ISSUES.md
 - [[2. iMessage Integration Permission Denied]] - document - docs/project/REPORTED_ISSUES.md
 - [[3. Unpinned Base Image in Dockerfile]] - document - docs/project/REPORTED_ISSUES.md
+- [[4. Function Call Exposure (XML Leak)]] - document - docs/project/REPORTED_ISSUES.md
+- [[5. ContextGuard False Positives (Collaborator Block)]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[5. `main.py` Async Bug in Email Module]] - document - docs/project/REPORTED_ISSUES.md
+- [[6. SSH Bypass in `is_auto_approved`]] - document - docs/project/REPORTED_ISSUES.md
+- [[6. iMessage Integration Permissions]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[7. CI Safety Issue Pytest Exit Codes Swallowed]] - document - docs/project/REPORTED_ISSUES.md
+- [[7. SMTP Port Blocks (Email Failures)]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[8. ForwardResponse Type Mismatch]] - document - docs/project/REPORTED_ISSUES.md
 - [[9. Streaming Responses Bypass Outbound Filtering]] - document - docs/project/REPORTED_ISSUES.md
 - [[AgentShroud Consolidated Issues Report]] - document - docs/project/REPORTED_ISSUES.md
 - [[AgentShroud™ Consolidated Issues Report]] - document - docs/project/REPORTED_ISSUES.md
@@ -27,6 +35,8 @@ members: 20
 - [[📝 General TODOs & Wishlist]] - document - docs/project/REPORTED_ISSUES.md
 - [[🔴 CRITICAL Operational Blockers]] - document - docs/project/REPORTED_ISSUES.md
 - [[🔵 LOW Improvements & Formatting]] - document - docs/project/REPORTED_ISSUES.md
+- [[🟠 HIGH Security & Core Logic Issues]] - document - docs/project/REPORTED_ISSUES.md
+- [[🟠 HIGH Security & Logic Issues]] - document - docs/project/TELEGRAM_ISSUES.md
 - [[🟡 MEDIUM Technical Debt & Bugs]] - document - docs/project/REPORTED_ISSUES.md
 
 ## Live Query (requires Dataview plugin)
@@ -37,9 +47,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 984]]
+- 1 edge to [[_COMMUNITY_Community 718]]
 - 1 edge to [[_COMMUNITY_Community 817]]
 
 ## Top bridge nodes
-- [[AgentShroud Consolidated Issues Report]] - degree 8, connects to 2 communities
-- [[AgentShroud™ Consolidated Issues Report]] - degree 7, connects to 1 community
+- [[🟠 HIGH Security & Logic Issues]] - degree 10, connects to 1 community
+- [[AgentShroud Consolidated Issues Report]] - degree 8, connects to 1 community

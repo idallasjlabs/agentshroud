@@ -1,11 +1,11 @@
 ---
 type: community
-members: 50
+members: 47
 ---
 
 # Community 361
 
-**Members:** 50 nodes
+**Members:** 47 nodes
 
 ## Members
 - [[Extract the system instruction as plain text (camelCase or snake_case key).]] - rationale - gateway/proxy/gemini_openai_translator.py
@@ -15,19 +15,17 @@ members: 50
 - [[Translate a Gemini generateContent request body to OpenAI chat format.      Retu]] - rationale - gateway/proxy/gemini_openai_translator.py
 - [[Translate a Gemini generateContent response to OpenAI chatcompletions     shape]] - rationale - gateway/proxy/gemini_openai_translator.py
 - [[Translate an Ollama OpenAI-compat response to Gemini candidates format.      The]] - rationale - gateway/proxy/gemini_openai_translator.py
+- [[Translate an OpenAI v1chatcompletions request body to Anthropic v1messages.]] - rationale - gateway/proxy/anthropic_openai_translator.py
 - [[Translate an OpenAI chatcompletions request body to Gemini's     generateConten]] - rationale - gateway/proxy/gemini_openai_translator.py
-- [[Translate an OpenAI-compat SSE byte stream to Anthropic SSE byte events.      Yi]] - rationale - gateway/proxy/anthropic_openai_sse_translator.py
 - [[_openai_content_to_parts()]] - code - gateway/proxy/gemini_openai_translator.py
 - [[_parts_to_text()]] - code - gateway/proxy/gemini_openai_translator.py
-- [[_random_msg_id()]] - code - gateway/proxy/anthropic_openai_sse_translator.py
-- [[_sse()]] - code - gateway/proxy/anthropic_openai_sse_translator.py
 - [[_system_instruction_text()]] - code - gateway/proxy/gemini_openai_translator.py
-- [[anthropic_openai_sse_translator.py]] - code - gateway/proxy/anthropic_openai_sse_translator.py
 - [[gemini_failover_unsupported_reason()]] - code - gateway/proxy/gemini_openai_translator.py
 - [[gemini_openai_translator.py]] - code - gateway/proxy/gemini_openai_translator.py
 - [[gemini_to_openai_request()]] - code - gateway/proxy/gemini_openai_translator.py
 - [[gemini_to_openai_response()]] - code - gateway/proxy/gemini_openai_translator.py
 - [[llm_proxy.py]] - code - gateway/proxy/llm_proxy.py
+- [[openai_to_anthropic_request()]] - code - gateway/proxy/anthropic_openai_translator.py
 - [[openai_to_gemini_request()]] - code - gateway/proxy/gemini_openai_translator.py
 - [[openai_to_gemini_response (existing failover direction) and     gemini_to_openai]] - rationale - gateway/tests/test_gemini_openai_translator.py
 - [[openai_to_gemini_response()]] - code - gateway/proxy/gemini_openai_translator.py
@@ -57,7 +55,6 @@ members: 50
 - [[test_unsupported_reason_none_for_plain_text()]] - code - gateway/tests/test_gemini_openai_translator.py
 - [[test_unsupported_reason_streaming_path()]] - code - gateway/tests/test_gemini_openai_translator.py
 - [[test_unsupported_reason_tools_in_body()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[translate_openai_sse_to_anthropic()]] - code - gateway/proxy/anthropic_openai_sse_translator.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -67,10 +64,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 360]]
-- 6 edges to [[_COMMUNITY_Community 1787]]
-- 3 edges to [[_COMMUNITY_Community 1278]]
-- 1 edge to [[_COMMUNITY_Community 39]]
+- 7 edges to [[_COMMUNITY_Community 1787]]
+- 6 edges to [[_COMMUNITY_Community 360]]
+- 4 edges to [[_COMMUNITY_Community 890]]
+- 2 edges to [[_COMMUNITY_Community 1278]]
 - 1 edge to [[_COMMUNITY_Community 53]]
 - 1 edge to [[_COMMUNITY_Community 142]]
 - 1 edge to [[_COMMUNITY_Community 965]]
@@ -78,8 +75,8 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 208]]
 
 ## Top bridge nodes
-- [[llm_proxy.py]] - degree 17, connects to 7 communities
+- [[llm_proxy.py]] - degree 17, connects to 8 communities
+- [[openai_to_anthropic_request()]] - degree 6, connects to 3 communities
 - [[gemini_to_openai_request()]] - degree 16, connects to 2 communities
 - [[openai_to_gemini_request()]] - degree 13, connects to 2 communities
 - [[openai_to_gemini_response()]] - degree 10, connects to 2 communities
-- [[gemini_failover_unsupported_reason()]] - degree 10, connects to 1 community

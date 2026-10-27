@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "Community 72"
+community: "Community 1558"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_1558
 ---
 
 # Compile regex patterns for detecting disclosure categories.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._compile_detection_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_72
+#graphify/rationale #graphify/EXTRACTED #community/Community_1558

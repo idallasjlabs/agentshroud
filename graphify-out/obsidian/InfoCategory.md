@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "Community 24"
+community: "Community 119"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/Community_119
 ---
 
 # InfoCategory
@@ -22,4 +22,4 @@ tags:
 - [[outbound_filter.py]] - `contains` [EXTRACTED]
 - [[test_outbound_filter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_24
+#graphify/code #graphify/EXTRACTED #community/Community_119

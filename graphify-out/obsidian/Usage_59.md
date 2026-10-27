@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-athena/README.md"
 type: "document"
-community: "Community 2070"
+community: "Community 90"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2070
+  - community/Community_90
 ---
 
 # Usage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Athena — Knowledge Distiller_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2070
+#graphify/document #graphify/EXTRACTED #community/Community_90

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_collaborator_pairing_code_leakage_is_redacted_form()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Form payloads containing pairing secrets must be blocked for collaborators.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_collaborator_internal_tool_output_suppressed_notice_is_normalized_form()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payload internal tool-output suppression string should normalize.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,4 +24,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[.test_collaborator_pairing_code_leakage_is_redacted_form()]] - degree 4, connects to 3 communities
+- [[.test_collaborator_internal_tool_output_suppressed_notice_is_normalized_form()]] - degree 4, connects to 3 communities

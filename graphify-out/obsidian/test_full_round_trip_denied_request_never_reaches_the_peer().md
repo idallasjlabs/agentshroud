@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "Community 148"
+community: "Community 271"
 location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_148
+  - community/Community_271
 ---
 
 # test_full_round_trip_denied_request_never_reaches_the_peer()
@@ -18,4 +18,4 @@ tags:
 - [[_jsonrpc()]] - `calls` [EXTRACTED]
 - [[test_a2a_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_148
+#graphify/code #graphify/EXTRACTED #community/Community_271

@@ -29,13 +29,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 67]]
+- 4 edges to [[_COMMUNITY_Community 67]]
 - 3 edges to [[_COMMUNITY_Community 29]]
-- 2 edges to [[_COMMUNITY_Community 311]]
+- 2 edges to [[_COMMUNITY_Community 363]]
 - 1 edge to [[_COMMUNITY_Community 10]]
+- 1 edge to [[_COMMUNITY_Community 311]]
 
 ## Top bridge nodes
-- [[get_sbom()]] - degree 9, connects to 3 communities
+- [[get_sbom()]] - degree 9, connects to 4 communities
 - [[_score_supply_chain()]] - degree 9, connects to 3 communities
 - [[TestGetSbom]] - degree 4, connects to 1 community
 - [[TestScoreSupplyChain]] - degree 4, connects to 1 community

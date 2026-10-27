@@ -1,11 +1,11 @@
 ---
 type: community
-members: 41
+members: 49
 ---
 
 # Community 174
 
-**Members:** 41 nodes
+**Members:** 49 nodes
 
 ## Members
 - [[API  Function Reference_6]] - document - docker/config/hermes/skills/i-tw/SKILL.md
@@ -20,9 +20,15 @@ members: 41
 - [[Expected ok_6]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[Expected INFO Re-queued 3 jobs_6]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[Formatting_6]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Hermes — Reference Verifier_6]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
 - [[If not → escalate to field team via ops-alerts_6]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Input Requirements_65]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[Output Format_89]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[Persona_51]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[Quality Checklist_58]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
 - [[Query the control DB_6]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[README — Entry Point for a Repo or Service_6]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Role_232]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
 - [[Role_252]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[Rules_55]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[Runbook — Operational Decision Tree_6]] - document - docker/config/hermes/skills/i-tw/SKILL.md
@@ -32,6 +38,7 @@ members: 41
 - [[SKILL_87]] - document - docker/config/hermes/skills/i-ci/SKILL.md
 - [[SKILL_89]] - document - docker/config/hermes/skills/i-cr/SKILL.md
 - [[SKILL_96]] - document - docker/config/hermes/skills/i-gitops/SKILL.md
+- [[SKILL_98]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
 - [[SKILL_123]] - document - docker/config/hermes/skills/i-sdlc/SKILL.md
 - [[SKILL_129]] - document - docker/config/hermes/skills/i-sre/SKILL.md
 - [[SKILL_132]] - document - docker/config/hermes/skills/i-tw/SKILL.md
@@ -43,6 +50,7 @@ members: 41
 - [[Skill gitops_6]] - document - docker/config/hermes/skills/i-gitops/SKILL.md
 - [[Skill sdlc_6]] - document - docker/config/hermes/skills/i-sdlc/SKILL.md
 - [[Skill sre_6]] - document - docker/config/hermes/skills/i-sre/SKILL.md
+- [[System Prompt_51]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
 - [[Validation Checklist_20]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[Voice & Tone_8]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[What Belongs Where_6]] - document - docker/config/hermes/skills/i-tw/SKILL.md
@@ -68,7 +76,6 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 643]]
 - 1 edge to [[_COMMUNITY_Community 906]]
 - 1 edge to [[_COMMUNITY_Community 960]]
-- 1 edge to [[_COMMUNITY_Community 1026]]
 - 1 edge to [[_COMMUNITY_Community 316]]
 - 1 edge to [[_COMMUNITY_Community 246]]
 - 1 edge to [[_COMMUNITY_Community 811]]
@@ -90,4 +97,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 963]]
 
 ## Top bridge nodes
-- [[SKILL_89]] - degree 47, connects to 30 communities
+- [[SKILL_89]] - degree 47, connects to 29 communities

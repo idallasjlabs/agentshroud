@@ -1,20 +1,22 @@
 ---
 type: community
-members: 7
+members: 9
 ---
 
 # Community 2010
 
-**Members:** 7 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[Current Status_12]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Description_5]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Gateway Proxy Port]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[HTTP_PROXY  HTTPS_PROXY]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Related Notes_33]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Value_3]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[When Enabled]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
+- [[.setup_method()_25]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_compose_not_supported()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_health_check()_1]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_inspect_non_json()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_network_graceful_fail()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_pause_fallback()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_ps_text_parse()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_run_ignores_seccomp()]] - code - gateway/tests/test_runtime_engines.py
+- [[TestAppleContainerEngine]] - code - gateway/tests/test_runtime_engines.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +26,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 17]]
+- 2 edges to [[_COMMUNITY_Community 379]]
+- 2 edges to [[_COMMUNITY_Community 240]]
+- 1 edge to [[_COMMUNITY_Community 372]]
+- 1 edge to [[_COMMUNITY_Community 738]]
+- 1 edge to [[_COMMUNITY_Community 250]]
 
 ## Top bridge nodes
-- [[HTTP_PROXY  HTTPS_PROXY]] - degree 7, connects to 1 community
+- [[TestAppleContainerEngine]] - degree 14, connects to 5 communities
+- [[.setup_method()_25]] - degree 2, connects to 1 community

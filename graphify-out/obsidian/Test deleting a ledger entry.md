@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "rationale"
-community: "Community 7"
+community: "Community 943"
 location: "L110"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/Community_943
 ---
 
 # Test deleting a ledger entry
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_delete_entry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_7
+#graphify/rationale #graphify/EXTRACTED #community/Community_943

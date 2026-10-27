@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 6"
+community: "Community 978"
 location: "L1615"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_978
 ---
 
 # full_security_report()
@@ -16,4 +16,4 @@ tags:
 - [[Scored security health report — grade, per-tool scores, recommendations.      Co]] - `rationale_for` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/Community_978

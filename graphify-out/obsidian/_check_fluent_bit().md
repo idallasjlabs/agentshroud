@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Community 54"
+community: "Community 20"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/Community_20
 ---
 
 # _check_fluent_bit()
@@ -16,4 +16,4 @@ tags:
 - [[_INTERNAL_SERVICE_ATTRS (internal gateway service table)]] - `references` [EXTRACTED]
 - [[services.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_54
+#graphify/code #graphify/EXTRACTED #community/Community_20

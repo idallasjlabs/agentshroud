@@ -1,12 +1,12 @@
 ---
 source_file: "SECURITY.md"
 type: "document"
-community: "Community 394"
+community: "Community 1260"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_394
+  - community/Community_1260
 ---
 
 # Supported Versions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud™ Security Policy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_394
+#graphify/document #graphify/EXTRACTED #community/Community_1260

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Community 135"
+community: "Community 736"
 location: "L997"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_135
+  - community/Community_736
 ---
 
 # _already_ingested_ghsa_today()
@@ -17,4 +17,4 @@ tags:
 - [[datetime_2]] - `references` [EXTRACTED]
 - [[ghsa_ingest_scheduler()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_135
+#graphify/code #graphify/EXTRACTED #community/Community_736

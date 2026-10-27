@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Community 1127"
+community: "Community 1"
 location: "L983"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1127
+  - community/Community_1
 ---
 
 # TestClose
@@ -21,4 +21,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1127
+#graphify/code #graphify/INFERRED #community/Community_1

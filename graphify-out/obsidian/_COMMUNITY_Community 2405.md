@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Healthcheck sandbox messages without SKILL.md marker should not trigger rewrite.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_agent_failed_timeout_error_is_sanitized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Agent timeout prefix variants should also map to retry guidance.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,4 +24,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[.test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten()]] - degree 4, connects to 3 communities
+- [[.test_agent_failed_timeout_error_is_sanitized()]] - degree 4, connects to 3 communities

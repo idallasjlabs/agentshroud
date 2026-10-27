@@ -36,10 +36,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 1269]]
 - 6 edges to [[_COMMUNITY_Community 1209]]
+- 4 edges to [[_COMMUNITY_Community 2207]]
+- 3 edges to [[_COMMUNITY_Community 1269]]
 - 2 edges to [[_COMMUNITY_Community 1343]]
-- 1 edge to [[_COMMUNITY_Community 2207]]
 
 ## Top bridge nodes
 - [[TestPatternDetection]] - degree 16, connects to 3 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_limits.py"
 type: "code"
-community: "Community 5"
+community: "Community 2324"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_5
+  - community/Community_2324
 ---
 
 # test_resource_guard_limits.py
@@ -25,4 +25,4 @@ tags:
 - [[guard()_3]] - `contains` [EXTRACTED]
 - [[resource_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_5
+#graphify/code #graphify/EXTRACTED #community/Community_2324

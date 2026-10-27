@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "Community 978"
+community: "Community 229"
 location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/Community_229
 ---
 
 # test_api_alerts_endpoint_emits_bus_event()
@@ -17,4 +17,4 @@ tags:
 - [[_req()_1]] - `calls` [INFERRED]
 - [[test_alert_telegram_relay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_978
+#graphify/code #graphify/EXTRACTED #community/Community_229

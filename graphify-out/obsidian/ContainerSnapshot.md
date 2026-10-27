@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "Community 0"
+community: "Community 146"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_0
+  - community/Community_146
 ---
 
 # ContainerSnapshot
@@ -77,4 +77,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_0
+#graphify/code #graphify/INFERRED #community/Community_146

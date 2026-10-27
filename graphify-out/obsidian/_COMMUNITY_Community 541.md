@@ -35,10 +35,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 7]]
-- 1 edge to [[_COMMUNITY_Community 84]]
+- 5 edges to [[_COMMUNITY_Community 7]]
 - 1 edge to [[_COMMUNITY_Community 30]]
 - 1 edge to [[_COMMUNITY_Community 232]]
 
 ## Top bridge nodes
-- [[TestMCPResultEndpoint]] - degree 17, connects to 4 communities
+- [[TestMCPResultEndpoint]] - degree 17, connects to 3 communities

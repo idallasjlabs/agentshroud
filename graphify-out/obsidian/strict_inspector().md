@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Community 230"
+community: "Community 64"
 location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_230
+  - community/Community_64
 ---
 
 # strict_inspector()
@@ -15,4 +15,4 @@ tags:
 - [[MCPInspector]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_230
+#graphify/code #graphify/EXTRACTED #community/Community_64

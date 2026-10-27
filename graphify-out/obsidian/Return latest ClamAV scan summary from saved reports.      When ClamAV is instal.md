@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Community 363"
+community: "Community 311"
 location: "L599"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_363
+  - community/Community_311
 ---
 
 # Return latest ClamAV scan summary from saved reports.      When ClamAV is instal
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_clamav_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_363
+#graphify/rationale #graphify/EXTRACTED #community/Community_311

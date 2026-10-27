@@ -52,10 +52,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 1260]]
-- 2 edges to [[_COMMUNITY_Community 394]]
+- 4 edges to [[_COMMUNITY_Community 1260]]
 - 2 edges to [[_COMMUNITY_Community 441]]
 - 1 edge to [[_COMMUNITY_Community 130]]
+- 1 edge to [[_COMMUNITY_Community 192]]
 
 ## Top bridge nodes
 - [[AgentShroud™ README]] - degree 19, connects to 4 communities

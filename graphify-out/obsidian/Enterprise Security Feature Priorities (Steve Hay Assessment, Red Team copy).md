@@ -1,11 +1,11 @@
 ---
 source_file: "skills/custom/agentshroud-redteam/references/steve-hay-assessment.md"
 type: "document"
-community: "Community 141"
+community: "Community 984"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_141
+  - community/Community_984
 ---
 
 # Enterprise Security Feature Priorities (Steve Hay Assessment, Red Team copy)
@@ -17,4 +17,4 @@ tags:
 - [[STPA-Sec Methodology]] - `references` [EXTRACTED]
 - [[Unsafe Control Actions (UCA-1 through UCA-17)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_141
+#graphify/document #graphify/EXTRACTED #community/Community_984

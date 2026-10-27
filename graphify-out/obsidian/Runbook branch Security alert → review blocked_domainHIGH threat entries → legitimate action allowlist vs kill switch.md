@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-18-runbook.png"
 type: "image"
-community: "Community 1262"
+community: "Community 226"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_1262
+  - community/Community_226
 ---
 
 # Runbook branch: Security alert → review blocked_domain/HIGH threat entries → legitimate action? allowlist vs kill switch
@@ -15,4 +15,4 @@ tags:
 - [[MCP Inspector (injection scan, PII scan, sensitive-op scan; ThreatLevel NONELOWMEDIUMHIGH)]] - `references` [EXTRACTED]
 - [[Troubleshooting Runbook Decision Tree]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_1262
+#graphify/image #graphify/EXTRACTED #community/Community_226

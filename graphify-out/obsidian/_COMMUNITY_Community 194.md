@@ -1,17 +1,18 @@
 ---
 type: community
-members: 40
+members: 41
 ---
 
 # Community 194
 
-**Members:** 40 nodes
+**Members:** 41 nodes
 
 ## Members
 - [[Add a comment to an existing Jira issue.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
 - [[ArgumentParser]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
 - [[Build (url, body, headers) for a POST to the gateway op-proxy.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
 - [[Build the ADF (Atlassian Document Format) body for POST ...comment.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Build the Atlassian Document Format (ADF) body for POST ...comment.      The RE]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
 - [[Build the REST v3 create-issue request body.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
 - [[Create a Jira issue. Returns the new issue key (e.g. 'SCRUM-124').]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
 - [[Fetch one secret field from the gateway op-proxy. Returns the value.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
@@ -57,12 +58,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 181]]
+- 6 edges to [[_COMMUNITY_Community 2030]]
 - 1 edge to [[_COMMUNITY_Community 238]]
+- 1 edge to [[_COMMUNITY_Community 181]]
 
 ## Top bridge nodes
+- [[Build the Atlassian Document Format (ADF) body for POST ...comment.      The RE]] - degree 3, connects to 2 communities
 - [[create_issue()]] - degree 7, connects to 1 community
 - [[add_comment()]] - degree 7, connects to 1 community
 - [[transition_issue()]] - degree 7, connects to 1 community
 - [[fetch_credentials()]] - degree 6, connects to 1 community
-- [[build_comment_payload()]] - degree 5, connects to 1 community

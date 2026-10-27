@@ -1,11 +1,11 @@
 ---
 type: community
-members: 45
+members: 40
 ---
 
 # Community 230
 
-**Members:** 45 nodes
+**Members:** 40 nodes
 
 ## Members
 - [[.__init__()_26]] - code - gateway/proxy/mcp_inspector.py
@@ -21,12 +21,8 @@ members: 45
 - [[.highest_threat()]] - code - gateway/proxy/mcp_inspector.py
 - [[.inspect_tool_call()]] - code - gateway/proxy/mcp_inspector.py
 - [[.inspect_tool_result()]] - code - gateway/proxy/mcp_inspector.py
-- [[.test_blocked_entries()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_failed_entries()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_filter_by_agent()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_filter_by_server()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_filter_by_tool()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_generate_report()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.send_request()]] - code - gateway/proxy/mcp_proxy.py
+- [[.start()_1]] - code - gateway/proxy/mcp_proxy.py
 - [[Any_17]] - code - gateway/proxy/mcp_inspector.py
 - [[Any_18]] - code - gateway/proxy/mcp_proxy.py
 - [[Decide whether to block based on findings and mode.]] - rationale - gateway/proxy/mcp_inspector.py
@@ -50,9 +46,8 @@ members: 45
 - [[Result of inspecting a tool call or response.]] - rationale - gateway/proxy/mcp_inspector.py
 - [[Return the highest threat level from all findings.]] - rationale - gateway/proxy/mcp_inspector.py
 - [[Scan a single string for all threat types.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[TestAuditQueries]] - code - gateway/tests/test_mcp_proxy.py
-- [[inspector()]] - code - gateway/tests/test_mcp_proxy.py
-- [[strict_inspector()]] - code - gateway/tests/test_mcp_proxy.py
+- [[Send a JSON-RPC request and read the response.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Start the MCP server process.]] - rationale - gateway/proxy/mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -62,22 +57,24 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 51 edges to [[_COMMUNITY_Community 64]]
-- 40 edges to [[_COMMUNITY_Community 59]]
-- 37 edges to [[_COMMUNITY_Community 140]]
-- 19 edges to [[_COMMUNITY_Community 132]]
-- 11 edges to [[_COMMUNITY_Community 184]]
-- 10 edges to [[_COMMUNITY_Community 329]]
-- 5 edges to [[_COMMUNITY_Community 232]]
+- 50 edges to [[_COMMUNITY_Community 132]]
+- 44 edges to [[_COMMUNITY_Community 64]]
+- 28 edges to [[_COMMUNITY_Community 54]]
+- 11 edges to [[_COMMUNITY_Community 329]]
+- 10 edges to [[_COMMUNITY_Community 184]]
+- 8 edges to [[_COMMUNITY_Community 59]]
+- 7 edges to [[_COMMUNITY_Community 232]]
+- 4 edges to [[_COMMUNITY_Community 941]]
 - 2 edges to [[_COMMUNITY_Community 8]]
-- 2 edges to [[_COMMUNITY_Community 941]]
+- 2 edges to [[_COMMUNITY_Community 140]]
 - 2 edges to [[_COMMUNITY_Community 1970]]
-- 2 edges to [[_COMMUNITY_Community 1070]]
+- 2 edges to [[_COMMUNITY_Community 2042]]
+- 2 edges to [[_COMMUNITY_Community 2071]]
 - 1 edge to [[_COMMUNITY_Community 30]]
 
 ## Top bridge nodes
-- [[MCPTransport]] - degree 63, connects to 11 communities
-- [[MCPInspector]] - degree 77, connects to 10 communities
+- [[MCPTransport]] - degree 63, connects to 12 communities
+- [[MCPInspector]] - degree 77, connects to 11 communities
 - [[InspectionResult]] - degree 22, connects to 5 communities
-- [[TestAuditQueries]] - degree 20, connects to 5 communities
-- [[Any_18]] - degree 13, connects to 5 communities
+- [[Any_18]] - degree 13, connects to 4 communities
+- [[MCPServerConfig_2]] - degree 10, connects to 4 communities

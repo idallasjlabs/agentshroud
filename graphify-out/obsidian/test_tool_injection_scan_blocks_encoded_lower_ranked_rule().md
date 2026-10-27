@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "Community 154"
+community: "Community 84"
 location: "L286"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_154
+  - community/Community_84
 ---
 
 # test_tool_injection_scan_blocks_encoded_lower_ranked_rule()
@@ -16,4 +16,4 @@ tags:
 - [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_154
+#graphify/code #graphify/EXTRACTED #community/Community_84

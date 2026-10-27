@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "rationale"
-community: "Community 36"
+community: "Community 104"
 location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_36
+  - community/Community_104
 ---
 
 # Suppress noisy uvicorn warning spam for malformed probe traffic.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_DropInvalidHTTPRequestFilter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_36
+#graphify/rationale #graphify/EXTRACTED #community/Community_104

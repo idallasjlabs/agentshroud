@@ -8,17 +8,17 @@ members: 11
 **Members:** 11 nodes
 
 ## Members
-- [[.test_emergency_disabled_trigger_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_in_progress_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_max_attempts_exceeded_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_not_due_without_force_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_retire_clears_old_reference_when_grace_expired()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_retire_noop_when_no_grace_period()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_store_failure_marks_failed()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_unknown_credential_returns_error()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestEmergencyAndRetire]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestRotateGuardBranches]] - code - gateway/tests/test_key_rotation_internals.py
-- [[_old_cred()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[Admin (admin)]] - document - docs/security/access-control-matrix.md
+- [[Administrative Roles]] - document - docs/security/access-control-matrix.md
+- [[Agent Trust Levels]] - document - docs/security/access-control-matrix.md
+- [[Operator (operator)]] - document - docs/security/access-control-matrix.md
+- [[RBAC Role Definitions]] - document - docs/security/access-control-matrix.md
+- [[Trust Level 0 (agent_l0)]] - document - docs/security/access-control-matrix.md
+- [[Trust Level 1 (agent_l1)]] - document - docs/security/access-control-matrix.md
+- [[Trust Level 2 (agent_l2)]] - document - docs/security/access-control-matrix.md
+- [[Trust Level 3 (agent_l3)]] - document - docs/security/access-control-matrix.md
+- [[Trust Level 4 (agent_l4)]] - document - docs/security/access-control-matrix.md
+- [[Viewer (viewer)]] - document - docs/security/access-control-matrix.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,13 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 381]]
-- 4 edges to [[_COMMUNITY_Community 455]]
-- 2 edges to [[_COMMUNITY_Community 198]]
-- 2 edges to [[_COMMUNITY_Community 122]]
+- 1 edge to [[_COMMUNITY_Community 204]]
 
 ## Top bridge nodes
-- [[TestRotateGuardBranches]] - degree 11, connects to 4 communities
-- [[TestEmergencyAndRetire]] - degree 9, connects to 4 communities
-- [[_old_cred()]] - degree 9, connects to 2 communities
-- [[.test_not_due_without_force_is_rejected()]] - degree 2, connects to 1 community
+- [[RBAC Role Definitions]] - degree 3, connects to 1 community

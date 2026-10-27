@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "code"
-community: "Community 148"
+community: "Community 307"
 location: "L93"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_148
+  - community/Community_307
 ---
 
 # TrustManager
@@ -23,4 +23,4 @@ tags:
 - [[test_task_ownership_violation_records_a2a_violation_type()]] - `references` [EXTRACTED]
 - [[trust_manager()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_148
+#graphify/code #graphify/INFERRED #community/Community_307

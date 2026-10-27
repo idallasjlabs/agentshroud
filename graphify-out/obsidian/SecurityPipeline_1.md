@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "Community 84"
+community: "Community 11"
 location: "L47"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_84
+  - community/Community_11
 ---
 
 # SecurityPipeline
@@ -27,4 +27,4 @@ tags:
 - [[_make_full_pipeline()]] - `references` [EXTRACTED]
 - [[test_pipeline_fails_closed_without_pii()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_84
+#graphify/code #graphify/INFERRED #community/Community_11

@@ -1,11 +1,11 @@
 ---
 type: community
-members: 77
+members: 53
 ---
 
 # Community 121
 
-**Members:** 77 nodes
+**Members:** 53 nodes
 
 ## Members
 - [[.__init__()_82]] - code - gateway/security/git_guard.py
@@ -26,25 +26,13 @@ members: 77
 - [[.test_clean_hook_passes()]] - code - gateway/tests/test_git_guard.py
 - [[.test_clean_repo_no_findings()]] - code - gateway/tests/test_git_guard.py
 - [[.test_curl_in_hook_flagged()]] - code - gateway/tests/test_git_guard.py
-- [[.test_default_mode_is_enforce()_5]] - code - gateway/tests/test_round2_hardening.py
 - [[.test_default_mode_is_enforce()_6]] - code - gateway/tests/test_round2_hardening.py
 - [[.test_finding_has_file_path()]] - code - gateway/tests/test_git_guard.py
-- [[.test_from_environment_defaults_to_enforce()]] - code - gateway/tests/test_round2_hardening.py
 - [[.test_git_guard_detects_credential_patterns()]] - code - gateway/tests/test_security_audit_advanced.py
 - [[.test_git_guard_no_path_leak()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[.test_keyvault_instantiated_and_seeded_in_lifespan()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_llm_stats_endpoint_is_defined()]] - code - gateway/tests/test_round2_hardening.py
 - [[.test_nc_flagged()]] - code - gateway/tests/test_git_guard.py
 - [[.test_no_git_dir_returns_empty()]] - code - gateway/tests/test_git_guard.py
-- [[.test_no_hardcoded_owner_id_in_lifespan()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_pipeline_scans_outbound_for_key_leaks()]] - code - gateway/tests/test_round2_hardening.py
 - [[.test_reverse_shell_flagged()]] - code - gateway/tests/test_git_guard.py
-- [[.test_sanitize_reason_preserves_simple_text()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_sanitize_reason_strips_file_paths()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_sanitize_reason_strips_module_paths()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_scan_repository_default_enforce()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_v1_endpoint_handles_non_json_upstream_bodies()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_v1_endpoint_is_defined()]] - code - gateway/tests/test_round2_hardening.py
 - [[.test_wget_flagged()]] - code - gateway/tests/test_git_guard.py
 - [[A security finding in git hooks or install scripts.]] - rationale - gateway/security/git_guard.py
 - [[Analyze a script file for malicious patterns.]] - rationale - gateway/security/git_guard.py
@@ -62,7 +50,6 @@ members: 77
 - [[Monitor for git clone and npm install operations.]] - rationale - gateway/security/git_guard.py
 - [[Move suspicious files to quarantine directory.]] - rationale - gateway/security/git_guard.py
 - [[Path_12]] - code - gateway/security/git_guard.py
-- [[Proxy endpoint must not crash if upstream returns non-JSON body.]] - rationale - gateway/tests/test_round2_hardening.py
 - [[Scan a git repository for malicious hooks and scripts.          Args]] - rationale - gateway/security/git_guard.py
 - [[Scan arbitrary text content for malicious gitsupply-chain patterns.          Th]] - rationale - gateway/security/git_guard.py
 - [[Scan git hooks directory for malicious content.]] - rationale - gateway/security/git_guard.py
@@ -70,21 +57,10 @@ members: 77
 - [[Scan pyproject.toml for suspicious build scripts.]] - rationale - gateway/security/git_guard.py
 - [[Scan setup.py for suspicious installation scripts.]] - rationale - gateway/security/git_guard.py
 - [[SecurityFinding]] - code - gateway/security/git_guard.py
-- [[TestDRYOwnerChatID]] - code - gateway/tests/test_round2_hardening.py
-- [[TestEgressConfigDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
-- [[TestFileSandboxDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
 - [[TestGitGuard]] - code - gateway/tests/test_git_guard.py
-- [[TestGitGuardDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
-- [[TestKeyVaultWired]] - code - gateway/tests/test_round2_hardening.py
-- [[TestLLMProxyEndpoints]] - code - gateway/tests/test_round2_hardening.py
-- [[TestNotifyUserBlockedSanitization]] - code - gateway/tests/test_round2_hardening.py
-- [[Tests for Round 2 hardening — 9 fixes.]] - rationale - gateway/tests/test_round2_hardening.py
-- [[The llm-proxystats endpoint must exist.]] - rationale - gateway/tests/test_round2_hardening.py
-- [[The v1{path} endpoint must exist (enabled in v0.9.0).]] - rationale - gateway/tests/test_round2_hardening.py
 - [[git_guard.py]] - code - gateway/security/git_guard.py
 - [[scan_repository()]] - code - gateway/security/git_guard.py
 - [[test_git_guard.py]] - code - gateway/tests/test_git_guard.py
-- [[test_round2_hardening.py]] - code - gateway/tests/test_round2_hardening.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -94,18 +70,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 45 edges to [[_COMMUNITY_Community 0]]
-- 19 edges to [[_COMMUNITY_Community 72]]
-- 10 edges to [[_COMMUNITY_Community 5]]
-- 8 edges to [[_COMMUNITY_Community 14]]
-- 8 edges to [[_COMMUNITY_Community 17]]
+- 33 edges to [[_COMMUNITY_Community 0]]
+- 16 edges to [[_COMMUNITY_Community 72]]
 - 2 edges to [[_COMMUNITY_Community 8]]
-- 1 edge to [[_COMMUNITY_Community 6]]
+- 2 edges to [[_COMMUNITY_Community 26]]
+- 1 edge to [[_COMMUNITY_Community 978]]
+- 1 edge to [[_COMMUNITY_Community 1]]
 - 1 edge to [[_COMMUNITY_Community 152]]
+- 1 edge to [[_COMMUNITY_Community 5]]
+- 1 edge to [[_COMMUNITY_Community 196]]
+- 1 edge to [[_COMMUNITY_Community 41]]
+- 1 edge to [[_COMMUNITY_Community 509]]
+- 1 edge to [[_COMMUNITY_Community 431]]
 
 ## Top bridge nodes
-- [[GitGuard]] - degree 85, connects to 5 communities
-- [[test_round2_hardening.py]] - degree 17, connects to 4 communities
-- [[TestLLMProxyEndpoints]] - degree 10, connects to 4 communities
-- [[TestNotifyUserBlockedSanitization]] - degree 10, connects to 4 communities
-- [[TestGitGuardDefaultEnforce]] - degree 9, connects to 4 communities
+- [[GitGuard]] - degree 85, connects to 11 communities
+- [[git_guard.py]] - degree 5, connects to 1 community
+- [[scan_repository()]] - degree 5, connects to 1 community
+- [[.test_git_guard_no_path_leak()]] - degree 3, connects to 1 community
+- [[.test_git_guard_detects_credential_patterns()]] - degree 3, connects to 1 community

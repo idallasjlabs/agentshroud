@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_egress.py"
 type: "code"
-community: "Community 54"
+community: "Community 8"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/Community_8
 ---
 
 # TestConfirmationModel
@@ -16,4 +16,4 @@ tags:
 - [[.test_permission_denied_error()]] - `method` [EXTRACTED]
 - [[test_soc_egress.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_54
+#graphify/code #graphify/EXTRACTED #community/Community_8

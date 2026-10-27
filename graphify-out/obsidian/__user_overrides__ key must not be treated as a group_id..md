@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "rationale"
-community: "Community 18"
+community: "Community 135"
 location: "L284"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/Community_135
 ---
 
 # __user_overrides__ key must not be treated as a group_id.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_apply_persisted_overrides_skips_user_overrides_key()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_18
+#graphify/rationale #graphify/EXTRACTED #community/Community_135

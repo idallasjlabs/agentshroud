@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Community 50"
+community: "Community 72"
 location: "L291"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_50
+  - community/Community_72
 ---
 
 # Test edge cases and malformed inputs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_edge_cases()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_50
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

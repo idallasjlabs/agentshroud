@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Community 2354"
+community: "Community 98"
 location: "L352"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2354
+  - community/Community_98
 ---
 
 # Test handling of overlapping patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_pattern_overlaps()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2354
+#graphify/rationale #graphify/EXTRACTED #community/Community_98

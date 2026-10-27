@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Community 6"
+community: "Community 223"
 location: "L468"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_223
 ---
 
 # TestGroupRegistry
@@ -34,4 +34,4 @@ tags:
 - [[ToolTier_1]] - `uses` [INFERRED]
 - [[test_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/Community_223

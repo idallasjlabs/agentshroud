@@ -1,26 +1,35 @@
 ---
 type: community
-members: 13
+members: 22
 ---
 
 # Community 788
 
-**Members:** 13 nodes
+**Members:** 22 nodes
 
 ## Members
-- [[1. Approval Queue (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[2. PII Sanitization (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[3. Audit Ledger (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[4. Persona System (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[5. Docker Isolation]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[6. Separate Bot Accounts (iCloud, Gmail)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[7. Ultra-Conservative Credential Policy]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[8. Seccomp Profiles (Currently Disabled)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[9. Read-Only Filesystem (Currently Disabled)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Where's The REAL Value]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[⚖️ Medium-Value Features (Nice to Have)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[❓ Low-Value Features (Questionable ROI)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[🎯 High-Value Features (Justify the Effort)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[._make_report()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.store()_1]] - code - gateway/tests/test_intel_pipeline.py
+- [[.store_dir()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_chain_hash_links_reports()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_integrity_check_fails_for_tampered_file()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_integrity_check_passes_for_saved_report()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_load_all_returns_all_reports()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_load_all_skips_malformed_files()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_load_latest_returns_none_when_empty()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_multiple_saves_latest_is_newest()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_save_and_load_latest()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_save_with_corrupt_previous_file_falls_back_to_genesis()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_store_creates_directory()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_verify_chain_empty_store_is_valid()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_verify_chain_fails_for_tampered_entry()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_verify_chain_passes_for_intact_store()]] - code - gateway/tests/test_intel_pipeline.py
+- [[If the previous report file is corrupt, save must not raise.]] - rationale - gateway/tests/test_intel_pipeline.py
+- [[IntelReportStore_1]] - code - gateway/tests/test_intel_pipeline.py
+- [[Path_31]] - code - gateway/tests/test_intel_pipeline.py
+- [[Raised when a loaded report fails its hash integrity check.]] - rationale - gateway/security/intel_report.py
+- [[ReportIntegrityError]] - code - gateway/security/intel_report.py
+- [[TestIntelReportStore]] - code - gateway/tests/test_intel_pipeline.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,7 +39,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 411]]
+- 19 edges to [[_COMMUNITY_Community 57]]
+- 1 edge to [[_COMMUNITY_Community 108]]
 
 ## Top bridge nodes
-- [[Where's The REAL Value]] - degree 4, connects to 1 community
+- [[ReportIntegrityError]] - degree 11, connects to 2 communities
+- [[TestIntelReportStore]] - degree 23, connects to 1 community
+- [[IntelReportStore_1]] - degree 18, connects to 1 community
+- [[._make_report()]] - degree 13, connects to 1 community
+- [[Path_31]] - degree 11, connects to 1 community

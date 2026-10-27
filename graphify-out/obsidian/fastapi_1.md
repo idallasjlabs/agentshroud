@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Community 24"
+community: "Community 104"
 location: "L108"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_24
+  - community/Community_104
 ---
 
 # FastAPI
@@ -24,4 +24,4 @@ tags:
 - [[lifespan()_1]] - `references` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_24
+#graphify/code #graphify/INFERRED #community/Community_104

@@ -1,18 +1,16 @@
 ---
 type: community
-members: 114
+members: 110
 ---
 
 # Community 29
 
-**Members:** 114 nodes
+**Members:** 110 nodes
 
 ## Members
 - [[._all_not_run_patches()]] - code - gateway/tests/test_scanner_integration.py
 - [[.test_all_domains_have_required_fields()]] - code - gateway/tests/test_scanner_integration.py
 - [[.test_at_least_one()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_baseline_at_least_two()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_baseline_three_without_daemon_config()]] - code - gateway/tests/test_scanner_integration.py
 - [[.test_compliance_new_keys_present()]] - code - gateway/tests/test_scanner_integration.py
 - [[.test_compute_weighted_subscore_full_score()]] - code - gateway/tests/test_scanner_integration.py
 - [[.test_compute_weighted_subscore_zero_for_empty_map()]] - code - gateway/tests/test_scanner_integration.py
@@ -41,7 +39,7 @@ members: 114
 - [[NIST CSF domain map references only valid domain IDs.]] - rationale - gateway/tests/test_scanner_integration.py
 - [[New compliance sub-scores (EU AI Act, ISO 42001, NIST CSF, DISA STIG) appear in]] - rationale - gateway/tests/test_scanner_integration.py
 - [[Path_17]] - code - gateway/security/scanner_integration.py
-- [[Read and return the Docker daemon config from daemon.json, or {} if unavailable.]] - rationale - gateway/security/scanner_integration.py
+- [[Return Fluent Bit log collector status.      Fluent Bit is a log shipper, not a]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if a non-zombie falco process is running inside this container.]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if app_state has a non-None attribute with the given name.]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if fluent-bit pidfile tmpfluent-bit.pid exists with a live PID.]] - rationale - gateway/security/scanner_integration.py
@@ -77,8 +75,6 @@ members: 114
 - [[Score domain 7 Network Segmentation (0-5).      3=Docker network architecture b]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 8 Secrets Management (0-5).      2=Docker secrets + key_vault base]] - rationale - gateway/security/scanner_integration.py
 - [[TestComputeScorecard]] - code - gateway/tests/test_scanner_integration.py
-- [[TestScoreNetworkSegmentation]] - code - gateway/tests/test_scanner_integration.py
-- [[TestScoreSecretsManagement]] - code - gateway/tests/test_scanner_integration.py
 - [[TestScoreSecureDevelopment]] - code - gateway/tests/test_scanner_integration.py
 - [[_app_state_has()]] - code - gateway/security/scanner_integration.py
 - [[_compute_weighted_subscore returns 0.0 for an empty domain map.]] - rationale - gateway/tests/test_scanner_integration.py
@@ -94,7 +90,6 @@ members: 114
 - [[_is_fresh()]] - code - gateway/security/scanner_integration.py
 - [[_is_wazuh_agent_running()]] - code - gateway/security/scanner_integration.py
 - [[_read_compose_text()]] - code - gateway/security/scanner_integration.py
-- [[_read_docker_daemon_config()]] - code - gateway/security/scanner_integration.py
 - [[_score_access_control_authorization()]] - code - gateway/security/scanner_integration.py
 - [[_score_agent_behavior_integrity()]] - code - gateway/security/scanner_integration.py
 - [[_score_agent_identity_nhi()]] - code - gateway/security/scanner_integration.py
@@ -121,6 +116,7 @@ members: 114
 - [[_score_tool_use_safety()]] - code - gateway/security/scanner_integration.py
 - [[_security_scan_sh_text()]] - code - gateway/security/scanner_integration.py
 - [[compute_scorecard()]] - code - gateway/security/scanner_integration.py
+- [[get_fluent_bit_summary()]] - code - gateway/security/scanner_integration.py
 - [[scanner_integration.py]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
@@ -131,23 +127,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 41 edges to [[_COMMUNITY_Community 67]]
+- 36 edges to [[_COMMUNITY_Community 67]]
+- 14 edges to [[_COMMUNITY_Community 363]]
 - 10 edges to [[_COMMUNITY_Community 102]]
-- 8 edges to [[_COMMUNITY_Community 363]]
 - 6 edges to [[_COMMUNITY_Community 207]]
-- 4 edges to [[_COMMUNITY_Community 311]]
+- 5 edges to [[_COMMUNITY_Community 311]]
 - 3 edges to [[_COMMUNITY_Community 842]]
-- 2 edges to [[_COMMUNITY_Community 185]]
-- 1 edge to [[_COMMUNITY_Community 220]]
-- 1 edge to [[_COMMUNITY_Community 919]]
+- 2 edges to [[_COMMUNITY_Community 531]]
+- 2 edges to [[_COMMUNITY_Community 51]]
+- 1 edge to [[_COMMUNITY_Community 148]]
 - 1 edge to [[_COMMUNITY_Community 131]]
 - 1 edge to [[_COMMUNITY_Community 686]]
 - 1 edge to [[_COMMUNITY_Community 10]]
-- 1 edge to [[_COMMUNITY_Community 51]]
 
 ## Top bridge nodes
 - [[scanner_integration.py]] - degree 67, connects to 11 communities
 - [[compute_scorecard()]] - degree 61, connects to 8 communities
-- [[Path_17]] - degree 34, connects to 3 communities
+- [[Path_17]] - degree 34, connects to 4 communities
+- [[_score_network_segmentation()]] - degree 9, connects to 2 communities
 - [[_is_fresh()]] - degree 8, connects to 2 communities
-- [[_app_state_has()]] - degree 23, connects to 1 community

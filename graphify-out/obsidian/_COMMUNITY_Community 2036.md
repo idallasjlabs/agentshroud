@@ -1,19 +1,21 @@
 ---
 type: community
-members: 6
+members: 8
 ---
 
 # Community 2036
 
-**Members:** 6 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[icon48.png — solid blue (2b6cff) placeholder icon, no logotext]] - image - browser-extension/icons/icon48.png
-- [[popup.html (toolbar popup UI)]] - code - browser-extension/popup.html
-- [[popup.js]] - code - browser-extension/popup.js
-- [[send()]] - code - browser-extension/popup.js
-- [[setStatus()]] - code - browser-extension/popup.js
-- [[statusEl]] - code - browser-extension/popup.js
+- [[HTTP 400 — Unknown MCP Server]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[HTTP 403 — MCP Tool Permission Denied]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[HTTP 429 — MCP Rate Limit Exceeded]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[HTTP 502 — MCP Server Unreachable]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[MCP Proxy Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[MCP Proxy Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[MCP Proxy Wrapper Issues (Bot Side)]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[Related Notes_59]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,8 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 464]]
+- 1 edge to [[_COMMUNITY_Community 1015]]
 
 ## Top bridge nodes
-- [[popup.js]] - degree 5, connects to 1 community
-- [[send()]] - degree 3, connects to 1 community
+- [[MCP Proxy Errors_1]] - degree 2, connects to 1 community

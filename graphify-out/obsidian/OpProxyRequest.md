@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 6"
+community: "Community 254"
 location: "L158"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_6
+  - community/Community_254
 ---
 
 # OpProxyRequest
@@ -31,4 +31,4 @@ tags:
 - [[main.py_2]] - `contains` [EXTRACTED]
 - [[op_proxy()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_6
+#graphify/code #graphify/INFERRED #community/Community_254

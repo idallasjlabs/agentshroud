@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "Community 1925"
+community: "Community 381"
 location: "L201"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1925
+  - community/Community_381
 ---
 
 # TestEmergencyAndRetire
@@ -22,4 +22,4 @@ tags:
 - [[RotationStatus]] - `uses` [INFERRED]
 - [[test_key_rotation_internals.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1925
+#graphify/code #graphify/INFERRED #community/Community_381

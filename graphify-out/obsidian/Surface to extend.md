@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/v1.2.0-master-plan.md"
 type: "document"
-community: "Community 387"
+community: "Community 2100"
 location: "L124"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_387
+  - community/Community_2100
 ---
 
 # Surface to extend
@@ -16,4 +16,4 @@ tags:
 - [[Workstream C Full Local-Model Parity (Both Bots)]] - `contains` [EXTRACTED]
 - [[Workstream D — Sync agentsskillsMCP from `~.llm_settings` into both bots]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_387
+#graphify/document #graphify/EXTRACTED #community/Community_2100

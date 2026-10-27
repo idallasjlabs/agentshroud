@@ -1,11 +1,11 @@
 ---
 type: community
-members: 16
+members: 12
 ---
 
 # Community 1248
 
-**Members:** 16 nodes
+**Members:** 12 nodes
 
 ## Members
 - [[ApprovalDecision_1]] - code - gateway/ingest_api/routes/approval.py
@@ -16,10 +16,6 @@ members: 16
 - [[List all pending approval requests      Authentication required.]] - rationale - gateway/ingest_api/routes/approval.py
 - [[Request_2]] - code - gateway/ingest_api/routes/approval.py
 - [[Submit an action for human approval      Called by agents when attempting sensit]] - rationale - gateway/ingest_api/routes/approval.py
-- [[WebSocket_3]] - code - gateway/ingest_api/routes/approval.py
-- [[WebSocket endpoint for real-time approval notifications      Protocol     1. Cl]] - rationale - gateway/ingest_api/routes/approval.py
-- [[approval.py]] - code - gateway/ingest_api/routes/approval.py
-- [[approval_websocket()]] - code - gateway/ingest_api/routes/approval.py
 - [[auth_dep()_1]] - code - gateway/ingest_api/routes/approval.py
 - [[decide_approval()]] - code - gateway/ingest_api/routes/approval.py
 - [[list_pending_approvals()]] - code - gateway/ingest_api/routes/approval.py
@@ -33,17 +29,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 85]]
-- 3 edges to [[_COMMUNITY_Community 92]]
-- 3 edges to [[_COMMUNITY_Community 6]]
-- 2 edges to [[_COMMUNITY_Community 30]]
-- 2 edges to [[_COMMUNITY_Community 62]]
-- 1 edge to [[_COMMUNITY_Community 978]]
-- 1 edge to [[_COMMUNITY_Community 7]]
+- 4 edges to [[_COMMUNITY_Community 978]]
+- 2 edges to [[_COMMUNITY_Community 85]]
+- 1 edge to [[_COMMUNITY_Community 707]]
 
 ## Top bridge nodes
-- [[approval.py]] - degree 16, connects to 7 communities
-- [[approval_websocket()]] - degree 5, connects to 2 communities
-- [[submit_approval_request()]] - degree 6, connects to 1 community
-- [[decide_approval()]] - degree 6, connects to 1 community
-- [[auth_dep()_1]] - degree 4, connects to 1 community
+- [[submit_approval_request()]] - degree 6, connects to 2 communities
+- [[decide_approval()]] - degree 6, connects to 2 communities
+- [[auth_dep()_1]] - degree 4, connects to 2 communities
+- [[list_pending_approvals()]] - degree 4, connects to 1 community

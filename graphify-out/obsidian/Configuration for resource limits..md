@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "Community 5"
+community: "Community 434"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_5
+  - community/Community_434
 ---
 
 # Configuration for resource limits.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ResourceLimits]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_5
+#graphify/rationale #graphify/EXTRACTED #community/Community_434

@@ -1,31 +1,26 @@
 ---
 type: community
-members: 18
+members: 13
 ---
 
 # Community 1128
 
-**Members:** 18 nodes
+**Members:** 13 nodes
 
 ## Members
-- [[.test_conversation_histories_are_bot_scoped()]] - code - gateway/tests/test_session_manager.py
-- [[.test_default_bot_id_is_openclaw()]] - code - gateway/tests/test_session_manager.py
-- [[.test_different_bots_get_different_memory_files()]] - code - gateway/tests/test_session_manager.py
-- [[.test_different_bots_get_different_workspace_dirs()]] - code - gateway/tests/test_session_manager.py
-- [[.test_invalid_bot_id_rejected()]] - code - gateway/tests/test_session_manager.py
-- [[.test_lazy_migration_copies_legacy_memory()]] - code - gateway/tests/test_session_manager.py
-- [[.test_legacy_session_promoted_on_load()]] - code - gateway/tests/test_session_manager.py
-- [[.test_long_bot_id_rejected()]] - code - gateway/tests/test_session_manager.py
-- [[.test_same_bot_same_user_returns_same_session()]] - code - gateway/tests/test_session_manager.py
-- [[.test_session_bot_id_stored_correctly()]] - code - gateway/tests/test_session_manager.py
-- [[.test_session_context_includes_bot_id()]] - code - gateway/tests/test_session_manager.py
-- [[.test_session_registry_uses_compound_key()]] - code - gateway/tests/test_session_manager.py
-- [[.test_workspace_paths_under_bot_namespace()]] - code - gateway/tests/test_session_manager.py
-- [[Existing plain user_id keys (no separator) are promoted to useropenclaw.]] - rationale - gateway/tests/test_session_manager.py
-- [[If legacy users{uid}MEMORY.md exists, first openclaw session copies it.]] - rationale - gateway/tests/test_session_manager.py
-- [[TestMultiBotIsolation]] - code - gateway/tests/test_session_manager.py
-- [[Verify that different bots get independent workspaces per user.]] - rationale - gateway/tests/test_session_manager.py
-- [[openclaw and hermes sessions for the same user must not share a directory.]] - rationale - gateway/tests/test_session_manager.py
+- [[Bot Not Responding to Telegram Messages]] - document - docs/runbooks/troubleshooting.md
+- [[Common Issues_1]] - document - docs/runbooks/troubleshooting.md
+- [[Container Keeps Restarting]] - document - docs/runbooks/troubleshooting.md
+- [[ContextGuard False Positive Collaborator Block]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[Dashboard Not Loading]] - document - docs/runbooks/troubleshooting.md
+- [[Diagnostic Commands]] - document - docs/runbooks/troubleshooting.md
+- [[Getting Help]] - document - docs/runbooks/troubleshooting.md
+- [[Kill Switch Won't Deactivate]] - document - docs/runbooks/troubleshooting.md
+- [[PII Sanitizer Blocking Legitimate Content]] - document - docs/runbooks/troubleshooting.md
+- [[SSH Command Approval Stuck]] - document - docs/runbooks/troubleshooting.md
+- [[Tailscale Serve Not Working]] - document - docs/runbooks/troubleshooting.md
+- [[Tests Failing]] - document - docs/runbooks/troubleshooting.md
+- [[Troubleshooting Runbook — AgentShroud]] - document - docs/runbooks/troubleshooting.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,10 +30,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 60]]
-- 2 edges to [[_COMMUNITY_Community 79]]
+- 2 edges to [[_COMMUNITY_Community 334]]
+- 1 edge to [[_COMMUNITY_Community 702]]
+- 1 edge to [[_COMMUNITY_Community 535]]
 
 ## Top bridge nodes
-- [[TestMultiBotIsolation]] - degree 17, connects to 2 communities
-- [[.test_legacy_session_promoted_on_load()]] - degree 3, connects to 1 community
-- [[.test_lazy_migration_copies_legacy_memory()]] - degree 3, connects to 1 community
+- [[Troubleshooting Runbook — AgentShroud]] - degree 5, connects to 2 communities
+- [[PII Sanitizer Blocking Legitimate Content]] - degree 3, connects to 1 community
+- [[ContextGuard False Positive Collaborator Block]] - degree 2, connects to 1 community

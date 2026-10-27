@@ -1,11 +1,11 @@
 ---
 source_file: "browser-extension/popup.html"
 type: "code"
-community: "Community 2036"
+community: "Community 464"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2036
+  - community/Community_464
 ---
 
 # popup.html (toolbar popup UI)
@@ -14,4 +14,4 @@ tags:
 - [[icon48.png — solid blue (2b6cff) placeholder icon, no logotext]] - `conceptually_related_to` [INFERRED]
 - [[popup.js]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2036
+#graphify/code #graphify/EXTRACTED #community/Community_464

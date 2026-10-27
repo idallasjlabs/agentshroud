@@ -40,18 +40,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 0]]
-- 4 edges to [[_COMMUNITY_Community 792]]
-- 4 edges to [[_COMMUNITY_Community 84]]
-- 3 edges to [[_COMMUNITY_Community 52]]
+- 7 edges to [[_COMMUNITY_Community 52]]
+- 4 edges to [[_COMMUNITY_Community 22]]
 - 3 edges to [[_COMMUNITY_Community 11]]
-- 1 edge to [[_COMMUNITY_Community 17]]
-- 1 edge to [[_COMMUNITY_Community 21]]
-- 1 edge to [[_COMMUNITY_Community 68]]
+- 2 edges to [[_COMMUNITY_Community 17]]
+- 1 edge to [[_COMMUNITY_Community 146]]
+- 1 edge to [[_COMMUNITY_Community 0]]
+- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 93]]
+- 1 edge to [[_COMMUNITY_Community 477]]
 - 1 edge to [[_COMMUNITY_Community 24]]
 
 ## Top bridge nodes
-- [[TestPromptGuard_1]] - degree 40, connects to 9 communities
+- [[TestPromptGuard_1]] - degree 40, connects to 10 communities
 - [[.test_custom_pattern()]] - degree 3, connects to 2 communities
 - [[.setup_method()_27]] - degree 2, connects to 1 community
 - [[.test_warn_threshold()]] - degree 2, connects to 1 community

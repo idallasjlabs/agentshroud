@@ -28,9 +28,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 177]]
 - 1 edge to [[_COMMUNITY_Community 117]]
 - 1 edge to [[_COMMUNITY_Community 90]]
+- 1 edge to [[_COMMUNITY_Community 544]]
+- 1 edge to [[_COMMUNITY_Community 177]]
 
 ## Top bridge nodes
-- [[Project Management (README)]] - degree 11, connects to 3 communities
+- [[Project Management (README)]] - degree 11, connects to 4 communities

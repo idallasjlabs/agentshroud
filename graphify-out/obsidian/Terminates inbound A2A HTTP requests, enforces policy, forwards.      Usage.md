@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "rationale"
-community: "Community 148"
+community: "Community 271"
 location: "L124"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_148
+  - community/Community_271
 ---
 
 # Terminates inbound A2A HTTP requests, enforces policy, forwards.      Usage::
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[A2AProxy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_148
+#graphify/rationale #graphify/EXTRACTED #community/Community_271

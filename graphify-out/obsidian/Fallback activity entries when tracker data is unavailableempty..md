@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "rationale"
-community: "Community 62"
+community: "Community 978"
 location: "L152"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/Community_978
 ---
 
 # Fallback activity entries when tracker data is unavailable/empty.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_build_activity_entries_from_contributor_logs()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_62
+#graphify/rationale #graphify/EXTRACTED #community/Community_978

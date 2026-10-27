@@ -1,16 +1,18 @@
 ---
 type: community
-members: 3
+members: 5
 ---
 
 # Community 2185
 
-**Members:** 3 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[browser_specific_settings]] - code - browser-extension/manifest.json
-- [[gecko]] - code - browser-extension/manifest.json
-- [[id]] - code - browser-extension/manifest.json
+- [[GSDE&G Development Master Checklist (MC)_1]] - document - docker/config/hermes/skills/i-mc/README.md
+- [[Purpose_52]] - document - docker/config/hermes/skills/i-mc/README.md
+- [[README_57]] - document - docker/config/hermes/skills/i-mc/README.md
+- [[Related Skills_70]] - document - docker/config/hermes/skills/i-mc/README.md
+- [[Usage_74]] - document - docker/config/hermes/skills/i-mc/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 440]]
+- 1 edge to [[_COMMUNITY_Community 90]]
 
 ## Top bridge nodes
-- [[browser_specific_settings]] - degree 2, connects to 1 community
+- [[GSDE&G Development Master Checklist (MC)_1]] - degree 5, connects to 1 community

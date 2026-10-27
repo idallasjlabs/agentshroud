@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "Community 1128"
+community: "Community 79"
 location: "L296"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1128
+  - community/Community_79
 ---
 
 # If legacy users/{uid}/MEMORY.md exists, first openclaw session copies it.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_lazy_migration_copies_legacy_memory()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1128
+#graphify/rationale #graphify/EXTRACTED #community/Community_79

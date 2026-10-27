@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "Community 6"
+community: "Community 254"
 location: "L215"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_254
 ---
 
 # Query ledger entries with pagination and filters          Args:             page
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.query()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/Community_254

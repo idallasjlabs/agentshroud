@@ -1,15 +1,17 @@
 ---
 type: community
-members: 2
+members: 4
 ---
 
 # Community 2327
 
-**Members:** 2 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[Turbo Fieldflare's exact model ID must win over the generic 'gemma' LM     Studi]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_failover_base_routes_fieldflare_gemma_before_generic_gemma()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[.test_proxy_request_suppresses_starting_notice_emoji_variants()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_proxy_request_suppresses_startup_notice_emoji_variants()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Starting notice dedupe should tolerate emoji variation drift.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Startup notice dedupe should tolerate emoji variation drift.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +21,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 208]]
+- 2 edges to [[_COMMUNITY_Community 626]]
+- 2 edges to [[_COMMUNITY_Community 2]]
+- 2 edges to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[test_local_failover_base_routes_fieldflare_gemma_before_generic_gemma()]] - degree 2, connects to 1 community
+- [[.test_proxy_request_suppresses_startup_notice_emoji_variants()]] - degree 5, connects to 3 communities
+- [[.test_proxy_request_suppresses_starting_notice_emoji_variants()]] - degree 4, connects to 3 communities

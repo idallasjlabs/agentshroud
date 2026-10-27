@@ -1,16 +1,19 @@
 ---
 type: community
-members: 17
+members: 23
 ---
 
 # Community 409
 
-**Members:** 17 nodes
+**Members:** 23 nodes
 
 ## Members
 - [[CVE Mitigations]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 - [[Configuration_15]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Early Return on Block]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Fail-Open ClamAV]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 - [[Guard Presence and Startup Behavior]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Important Behaviors]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 - [[Inbound (`process_inbound`)]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 - [[Key Classes_1]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 - [[Key Thresholds]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
@@ -18,8 +21,11 @@ members: 17
 - [[Outbound (`process_outbound`)]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 - [[Overview_28]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 - [[Owner Exemption]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Owner Exemption — Logging Guarantee]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 - [[Pipeline Stages]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 - [[Related_19]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Stats Counter]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[`AuditChain.append_block()` — Guaranteed Persistence Guarantee]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 - [[`AuditChain`]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 - [[`PipelineAction` (Enum)]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 - [[`PipelineResult` (Dataclass)]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
@@ -34,9 +40,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 2042]]
 - 1 edge to [[_COMMUNITY_Community 1556]]
 
 ## Top bridge nodes
-- [[pipeline.py — Security Pipeline]] - degree 8, connects to 1 community
 - [[Key Classes_1]] - degree 5, connects to 1 community

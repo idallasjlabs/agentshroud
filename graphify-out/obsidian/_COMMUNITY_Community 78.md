@@ -10,7 +10,6 @@ members: 75
 ## Members
 - [[.test_chat_console_script_uses_repo_relative_exec()]] - code - gateway/tests/test_config_validation.py
 - [[.test_compose_sets_nemotron_local_model_overrides()]] - code - gateway/tests/test_config_validation.py
-- [[.test_empty_content_rejected()]] - code - gateway/tests/test_config_validation.py
 - [[.test_gateway_yaml_ssh_hosts_cover_all_lab_hosts()]] - code - gateway/tests/test_config_validation.py
 - [[.test_hermes_dashboard_insecure_optin_is_loopback_bounded()]] - code - gateway/tests/test_config_validation.py
 - [[.test_hermes_dockerfile_installs_xxd()]] - code - gateway/tests/test_config_validation.py
@@ -20,9 +19,9 @@ members: 75
 - [[.test_hermes_startup_telegram_calls_use_system_header()]] - code - gateway/tests/test_config_validation.py
 - [[.test_init_config_skips_anthropic_auth_seed_for_local_model()]] - code - gateway/tests/test_config_validation.py
 - [[.test_invalid_router_url_rejected()]] - code - gateway/tests/test_config_validation.py
-- [[.test_invalid_source_rejected()]] - code - gateway/tests/test_config_validation.py
 - [[.test_invalid_target_url_rejected()]] - code - gateway/tests/test_config_validation.py
 - [[.test_lifespan_op_prewarm_guarded_against_pytest()]] - code - gateway/tests/test_config_validation.py
+- [[.test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()]] - code - gateway/tests/test_config_validation.py
 - [[.test_main_compose_sets_openclaw_bind_lan_default()]] - code - gateway/tests/test_config_validation.py
 - [[.test_openclaw_patch_defaults_to_qwen_local_model()]] - code - gateway/tests/test_config_validation.py
 - [[.test_openclaw_patch_script_emits_per_chat_group_agents()]] - code - gateway/tests/test_config_validation.py
@@ -59,6 +58,7 @@ members: 75
 - [[Hermes must receive OPENAI_API_KEY from the shared openai_api_key Docker secret.]] - rationale - gateway/tests/test_config_validation.py
 - [[Hermes startup notifications must use X-AgentShroud-System 1 (bypasses content]] - rationale - gateway/tests/test_config_validation.py
 - [[Init config should seed auth profiles for cloud providers and Ollama in local mo]] - rationale - gateway/tests/test_config_validation.py
+- [[Lifespan filter should suppress repeated malformed HTTP warning noise.]] - rationale - gateway/tests/test_config_validation.py
 - [[Main compose stack should expose a single model-mode switch with localcloud ref]] - rationale - gateway/tests/test_config_validation.py
 - [[Model switch helper should support local and major cloud providers.]] - rationale - gateway/tests/test_config_validation.py
 - [[Online notice must appear after readiness probes to avoid premature status signa]] - rationale - gateway/tests/test_config_validation.py
@@ -93,12 +93,13 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_Community 7]]
-- 4 edges to [[_COMMUNITY_Community 34]]
-- 2 edges to [[_COMMUNITY_Community 36]]
+- 4 edges to [[_COMMUNITY_Community 92]]
+- 1 edge to [[_COMMUNITY_Community 104]]
+- 1 edge to [[_COMMUNITY_Community 36]]
 
 ## Top bridge nodes
 - [[TestConfigValidation]] - degree 45, connects to 3 communities
+- [[.test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()]] - degree 3, connects to 1 community
 - [[.test_invalid_router_url_rejected()]] - degree 2, connects to 1 community
 - [[.test_router_url_must_be_localhost_or_openclaw()]] - degree 2, connects to 1 community
 - [[.test_valid_router_url_accepted()]] - degree 2, connects to 1 community
-- [[.test_invalid_target_url_rejected()]] - degree 2, connects to 1 community

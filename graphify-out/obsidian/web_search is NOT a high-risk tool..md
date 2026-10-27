@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "Community 1052"
+community: "Community 33"
 location: "L150"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1052
+  - community/Community_33
 ---
 
 # web_search is NOT a high-risk tool.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_is_high_risk_false_for_web_search()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1052
+#graphify/rationale #graphify/EXTRACTED #community/Community_33

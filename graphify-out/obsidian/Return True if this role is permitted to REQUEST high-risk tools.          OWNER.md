@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "rationale"
-community: "Community 8"
+community: "Community 61"
 location: "L69"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_8
+  - community/Community_61
 ---
 
 # Return True if this role is permitted to REQUEST high-risk tools.          OWNER
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.can_use_high_risk()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_8
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

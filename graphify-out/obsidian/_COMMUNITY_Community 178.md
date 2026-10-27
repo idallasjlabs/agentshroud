@@ -1,30 +1,52 @@
 ---
 type: community
-members: 18
+members: 40
 ---
 
 # Community 178
 
-**Members:** 18 nodes
+**Members:** 40 nodes
 
 ## Members
 - [[1. System Overview]] - document - docs/architecture/agentic-os.md
+- [[10. Infrastructure & Runtime]] - document - docs/architecture/agentic-os.md
 - [[12. MCP Integrations]] - document - docs/architecture/agentic-os.md
 - [[13. Compliance Alignment]] - document - docs/architecture/agentic-os.md
 - [[14. Gap Analysis & Recommendations]] - document - docs/architecture/agentic-os.md
+- [[2. Multi-Agent Hierarchy]] - document - docs/architecture/agentic-os.md
+- [[3. Agent Inventory]] - document - docs/architecture/agentic-os.md
 - [[5. Orchestration Flow]] - document - docs/architecture/agentic-os.md
+- [[6 CI Workflows, 14 Jobs]] - document - docs/architecture/agentic-os.md
+- [[7. CICD Quality Gates]] - document - docs/architecture/agentic-os.md
+- [[9. Human-in-the-Loop Controls]] - document - docs/architecture/agentic-os.md
 - [[AI-Native Development Framework]] - document - docs/architecture/agentic-os.md
+- [[Actions Requiring Approval]] - document - docs/architecture/agentic-os.md
 - [[AgentShroud Agentic OS]] - document - docs/architecture/agentic-os.md
+- [[Agents by Domain]] - document - docs/architecture/agentic-os.md
 - [[Appendix A File Structure Reference]] - document - docs/architecture/agentic-os.md
+- [[Approval Queue Architecture]] - document - docs/architecture/agentic-os.md
+- [[Authorization Matrix]] - document - docs/architecture/agentic-os.md
 - [[Build-Time Security Scan (IEC 62443 4-1 SDL)]] - document - docs/architecture/agentic-os.md
+- [[Configuration Locations]] - document - docs/architecture/agentic-os.md
+- [[Container Architecture_1]] - document - docs/architecture/agentic-os.md
+- [[Container Hardening Summary]] - document - docs/architecture/agentic-os.md
 - [[Development Workflow — End to End]] - document - docs/architecture/agentic-os.md
+- [[Distribution by Platform]] - document - docs/architecture/agentic-os.md
+- [[Egress Approval (Domain-Level)]] - document - docs/architecture/agentic-os.md
 - [[Hook Enforcement Layer]] - document - docs/architecture/agentic-os.md
 - [[Identified Gaps]] - document - docs/architecture/agentic-os.md
 - [[Key Numbers]] - document - docs/architecture/agentic-os.md
+- [[Multi-Runtime Support]] - document - docs/architecture/agentic-os.md
+- [[Pipeline Overview]] - document - docs/architecture/agentic-os.md
+- [[Podcast Pipeline — Greek Mythology Agents]] - document - docs/architecture/agentic-os.md
+- [[Pre-commit Hook Chain]] - document - docs/architecture/agentic-os.md
 - [[Productivity Recommendations]] - document - docs/architecture/agentic-os.md
+- [[Security-Sensitive Paths (Claude-Only)]] - document - docs/architecture/agentic-os.md
+- [[Semgrep SAST Rules]] - document - docs/architecture/agentic-os.md
 - [[Standards Referenced]] - document - docs/architecture/agentic-os.md
 - [[Table of Contents]] - document - docs/architecture/agentic-os.md
 - [[What's Working Well]] - document - docs/architecture/agentic-os.md
+- [[`asb` CLI — Deployment Tool]] - document - docs/architecture/agentic-os.md
 - [[agentic-os]] - document - docs/architecture/agentic-os.md
 
 ## Live Query (requires Dataview plugin)
@@ -36,14 +58,9 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_Community 1556]]
-- 1 edge to [[_COMMUNITY_Community 2062]]
 - 1 edge to [[_COMMUNITY_Community 637]]
-- 1 edge to [[_COMMUNITY_Community 2119]]
-- 1 edge to [[_COMMUNITY_Community 2120]]
 - 1 edge to [[_COMMUNITY_Community 1022]]
-- 1 edge to [[_COMMUNITY_Community 2063]]
 - 1 edge to [[_COMMUNITY_Community 639]]
-- 1 edge to [[_COMMUNITY_Community 2121]]
 
 ## Top bridge nodes
-- [[AgentShroud Agentic OS]] - degree 19, connects to 9 communities
+- [[AgentShroud Agentic OS]] - degree 19, connects to 4 communities

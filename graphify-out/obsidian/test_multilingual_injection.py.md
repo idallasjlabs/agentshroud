@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multilingual_injection.py"
 type: "code"
-community: "Community 162"
+community: "Community 22"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_162
+  - community/Community_22
 ---
 
 # test_multilingual_injection.py
@@ -16,4 +16,4 @@ tags:
 - [[TestMultilingualInjection]] - `contains` [EXTRACTED]
 - [[prompt_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_162
+#graphify/code #graphify/EXTRACTED #community/Community_22

@@ -36,7 +36,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 138]]
 - 1 edge to [[_COMMUNITY_Community 72]]
 - 1 edge to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 181]]
+- 1 edge to [[_COMMUNITY_Community 2030]]
 
 ## Top bridge nodes
 - [[TestFileDownload]] - degree 12, connects to 5 communities

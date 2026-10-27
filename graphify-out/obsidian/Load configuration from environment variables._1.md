@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_config.py"
 type: "rationale"
-community: "Community 489"
+community: "Community 65"
 location: "L59"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_489
+  - community/Community_65
 ---
 
 # Load configuration from environment variables.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.from_env()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_489
+#graphify/rationale #graphify/EXTRACTED #community/Community_65

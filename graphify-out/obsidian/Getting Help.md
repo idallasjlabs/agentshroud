@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Community 334"
+community: "Community 1128"
 location: "L519"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_334
+  - community/Community_1128
 ---
 
 # Getting Help
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Troubleshooting Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_334
+#graphify/document #graphify/EXTRACTED #community/Community_1128

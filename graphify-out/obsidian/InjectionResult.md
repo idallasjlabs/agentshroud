@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "Community 154"
+community: "Community 344"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_154
+  - community/Community_344
 ---
 
 # InjectionResult
@@ -16,4 +16,4 @@ tags:
 - [[Result from tool result injection scan.]] - `rationale_for` [EXTRACTED]
 - [[tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_154
+#graphify/code #graphify/EXTRACTED #community/Community_344

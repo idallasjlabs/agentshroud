@@ -55,9 +55,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 4 edges to [[_COMMUNITY_Community 104]]
 - 4 edges to [[_COMMUNITY_Community 24]]
-- 4 edges to [[_COMMUNITY_Community 84]]
-- 2 edges to [[_COMMUNITY_Community 1127]]
+- 2 edges to [[_COMMUNITY_Community 37]]
 
 ## Top bridge nodes
 - [[_make_pipeline()_3]] - degree 6, connects to 2 communities

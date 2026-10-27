@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_common_tools_not_filtered()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test that common English words are not filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[.test_fuzzy_matching()]] - code - gateway/tests/test_prompt_protection.py
+- [[Test fuzzy matching against protected content.]] - rationale - gateway/tests/test_prompt_protection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 98]]
+- 1 edge to [[_COMMUNITY_Community 351]]
 
 ## Top bridge nodes
-- [[.test_common_tools_not_filtered()]] - degree 2, connects to 1 community
+- [[.test_fuzzy_matching()]] - degree 2, connects to 1 community

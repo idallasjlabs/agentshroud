@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "Community 102"
+community: "Community 185"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_102
+  - community/Community_185
 ---
 
 # health_report.py
@@ -31,4 +31,4 @@ tags:
 - [[wazuh-ossec]] - `references` [INFERRED]
 - [[wazuh_client.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_102
+#graphify/code #graphify/EXTRACTED #community/Community_185

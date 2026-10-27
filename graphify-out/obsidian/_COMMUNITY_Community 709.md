@@ -33,7 +33,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 6 edges to [[_COMMUNITY_Community 81]]
 - 4 edges to [[_COMMUNITY_Community 27]]
-- 1 edge to [[_COMMUNITY_Community 220]]
+- 1 edge to [[_COMMUNITY_Community 148]]
 
 ## Top bridge nodes
 - [[._clamav_scan_bytes()]] - degree 4, connects to 2 communities

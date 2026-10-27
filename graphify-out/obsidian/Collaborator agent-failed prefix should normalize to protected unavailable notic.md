@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 2"
+community: "Community 845"
 location: "L589"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2
+  - community/Community_845
 ---
 
 # Collaborator agent-failed prefix should normalize to protected unavailable notic
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_agent_failed_prefix_is_normalized_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_845

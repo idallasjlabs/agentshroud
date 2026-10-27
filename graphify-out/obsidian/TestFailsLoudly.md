@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "Community 55"
+community: "Community 2121"
 location: "L434"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_55
+  - community/Community_2121
 ---
 
 # TestFailsLoudly
@@ -19,4 +19,4 @@ tags:
 - [[.test_nvd_layout_failure_exits_nonzero()]] - `method` [EXTRACTED]
 - [[test_sync_cve_registry_ghsa.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_55
+#graphify/code #graphify/EXTRACTED #community/Community_2121

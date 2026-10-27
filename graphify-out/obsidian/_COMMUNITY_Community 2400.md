@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_collaborator_access_not_configured_user_id_leakage_is_redacted_form()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Form payload user-id enrollment leakage should also be blocked.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_collaborator_security_monitoring_threshold_notice_is_normalized_form()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payload threshold disclosures should normalize to policy-block notice.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,4 +24,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[.test_collaborator_access_not_configured_user_id_leakage_is_redacted_form()]] - degree 4, connects to 3 communities
+- [[.test_collaborator_security_monitoring_threshold_notice_is_normalized_form()]] - degree 4, connects to 3 communities

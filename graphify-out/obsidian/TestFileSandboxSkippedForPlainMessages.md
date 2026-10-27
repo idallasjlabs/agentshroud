@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "Community 509"
+community: "Community 79"
 location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_509
+  - community/Community_79
 ---
 
 # TestFileSandboxSkippedForPlainMessages
@@ -22,4 +22,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_file_sandbox_message_gate.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_509
+#graphify/code #graphify/EXTRACTED #community/Community_79

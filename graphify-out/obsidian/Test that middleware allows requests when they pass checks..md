@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "Community 2005"
+community: "Community 53"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2005
+  - community/Community_53
 ---
 
 # Test that middleware allows requests when they pass checks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_forward_middleware_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2005
+#graphify/rationale #graphify/EXTRACTED #community/Community_53

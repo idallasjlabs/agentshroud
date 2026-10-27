@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "Community 60"
+community: "Community 1305"
 location: "L498"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_60
+  - community/Community_1305
 ---
 
 # PR#190 failover search engines must be allowlisted.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_failover_search_engines_in_allowlist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_60
+#graphify/rationale #graphify/EXTRACTED #community/Community_1305

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "Community 55"
+community: "Community 2050"
 location: "L358"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_55
+  - community/Community_2050
 ---
 
 # TestNvdReportOnly
@@ -21,4 +21,4 @@ tags:
 - [[The NVD path emits the pre-migration schema (id=CVE-…, no ghsa_idcve_id).]] - `rationale_for` [EXTRACTED]
 - [[test_sync_cve_registry_ghsa.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_55
+#graphify/code #graphify/EXTRACTED #community/Community_2050

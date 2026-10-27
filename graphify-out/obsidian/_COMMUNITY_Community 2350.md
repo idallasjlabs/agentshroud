@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_monitor_mode()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test that monitor mode logs but doesn't redact.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[.test_html_parse_mode_removed_for_redaction_placeholders()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Redaction placeholder tokens should be HTML-escaped, not strip         parse_mod]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,8 +19,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 24]]
-- 1 edge to [[_COMMUNITY_Community 98]]
+- 1 edge to [[_COMMUNITY_Community 626]]
+- 1 edge to [[_COMMUNITY_Community 2]]
+- 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[.test_monitor_mode()]] - degree 3, connects to 2 communities
+- [[.test_html_parse_mode_removed_for_redaction_placeholders()]] - degree 4, connects to 3 communities

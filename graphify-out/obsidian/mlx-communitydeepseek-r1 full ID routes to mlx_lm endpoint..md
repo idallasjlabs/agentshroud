@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "Community 2332"
+community: "Community 506"
 location: "L760"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2332
+  - community/Community_506
 ---
 
 # mlx-community/deepseek-r1 full ID routes to mlx_lm endpoint.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_mlx_community_deepseek_routes_to_mlxlm()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2332
+#graphify/rationale #graphify/EXTRACTED #community/Community_506

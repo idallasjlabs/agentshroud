@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Community 2347"
+community: "Community 98"
 location: "L259"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2347
+  - community/Community_98
 ---
 
 # Test filtering with multiple information categories.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_multiple_categories()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2347
+#graphify/rationale #graphify/EXTRACTED #community/Community_98

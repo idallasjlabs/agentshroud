@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "code"
-community: "Community 148"
+community: "Community 307"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_148
+  - community/Community_307
 ---
 
 # test_a2a_violation_types_exist()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_148
+#graphify/code #graphify/EXTRACTED #community/Community_307

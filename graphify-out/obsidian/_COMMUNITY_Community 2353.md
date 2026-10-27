@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_edge_cases()_1]] - code - gateway/tests/test_outbound_filter.py
-- [[Test edge cases and boundary conditions.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[.test_proxy_request_suppresses_delayed_starting_notice_emoji_variants()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Delayed-starting dedupe should tolerate emoji variation drift.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 98]]
+- 1 edge to [[_COMMUNITY_Community 626]]
+- 1 edge to [[_COMMUNITY_Community 2]]
+- 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[.test_edge_cases()_1]] - degree 2, connects to 1 community
+- [[.test_proxy_request_suppresses_delayed_starting_notice_emoji_variants()]] - degree 4, connects to 3 communities

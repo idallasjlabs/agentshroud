@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "Community 351"
+community: "Community 2336"
 location: "L157"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_351
+  - community/Community_2336
 ---
 
 # Test redaction of credential patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_credential_redaction()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_351
+#graphify/rationale #graphify/EXTRACTED #community/Community_2336

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "Community 17"
+community: "Community 26"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_17
+  - community/Community_26
 ---
 
 # EgressFilterConfig
@@ -17,4 +17,4 @@ tags:
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[run()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_17
+#graphify/code #graphify/EXTRACTED #community/Community_26

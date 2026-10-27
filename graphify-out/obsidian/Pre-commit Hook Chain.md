@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Community 2063"
+community: "Community 178"
 location: "L548"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2063
+  - community/Community_178
 ---
 
 # Pre-commit Hook Chain
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[7. CICD Quality Gates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2063
+#graphify/document #graphify/EXTRACTED #community/Community_178

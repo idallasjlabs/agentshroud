@@ -1,11 +1,11 @@
 ---
 type: community
-members: 94
+members: 93
 ---
 
 # Community 44
 
-**Members:** 94 nodes
+**Members:** 93 nodes
 
 ## Members
 - [[.__init__()_49]] - code - gateway/security/a2a_governance.py
@@ -79,7 +79,6 @@ members: 94
 - [[Register a known A2A peer agent.]] - rationale - gateway/security/a2a_governance.py
 - [[Registered A2A peer agent.]] - rationale - gateway/security/a2a_governance.py
 - [[Remove a peer from the registry.]] - rationale - gateway/security/a2a_governance.py
-- [[Retrieve governance events with optional filters.]] - rationale - gateway/security/a2a_governance.py
 - [[Sanitize PII from A2A message payload. Returns list of sanitizations applied.]] - rationale - gateway/security/a2a_governance.py
 - [[TestDisabledProxy]] - code - gateway/tests/test_a2a_governance.py
 - [[TestInboundProcessing]] - code - gateway/tests/test_a2a_governance.py
@@ -121,4 +120,4 @@ SORT file.name ASC
 - [[A2AGovernanceProxy]] - degree 43, connects to 1 community
 - [[A2AMessageType]] - degree 15, connects to 1 community
 - [[a2a_governance.py]] - degree 8, connects to 1 community
-- [[Retrieve governance events with optional filters.]] - degree 2, connects to 1 community
+- [[.get_events()_1]] - degree 4, connects to 1 community

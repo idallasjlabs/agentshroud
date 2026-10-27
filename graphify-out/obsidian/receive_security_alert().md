@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 6"
+community: "Community 85"
 location: "L1701"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_85
 ---
 
 # receive_security_alert()
@@ -19,4 +19,4 @@ tags:
 - [[make_event()]] - `calls` [EXTRACTED]
 - [[test_main_endpoints.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/Community_85

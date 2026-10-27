@@ -23,9 +23,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 5]]
 - 1 edge to [[_COMMUNITY_Community 1278]]
+- 1 edge to [[_COMMUNITY_Community 2324]]
+- 1 edge to [[_COMMUNITY_Community 434]]
+- 1 edge to [[_COMMUNITY_Community 5]]
 - 1 edge to [[_COMMUNITY_Community 208]]
 
 ## Top bridge nodes
-- [[_FakeStreamClient]] - degree 10, connects to 3 communities
+- [[_FakeStreamClient]] - degree 10, connects to 5 communities

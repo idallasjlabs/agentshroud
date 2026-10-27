@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
 type: "document"
-community: "Community 73"
+community: "Community 516"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_73
+  - community/Community_516
 ---
 
 # Combination with Other Settings
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OPENCLAW_SANDBOX_MODE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_73
+#graphify/document #graphify/EXTRACTED #community/Community_516

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_memory_provider_error_underscore_variant_is_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Underscore-delimited embedding_provider wording should still trigger rewrite.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_session_lock_error_is_sanitized_for_users()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Internal session lock errors should be rewritten to safe user guidance.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,4 +24,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[.test_memory_provider_error_underscore_variant_is_rewritten()]] - degree 4, connects to 3 communities
+- [[.test_session_lock_error_is_sanitized_for_users()]] - degree 4, connects to 3 communities

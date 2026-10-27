@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "rationale"
-community: "Community 56"
+community: "Community 116"
 location: "L260"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_56
+  - community/Community_116
 ---
 
 # Configuration for DifferentialPIIDetector.      Attributes:         tool_result_
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DifferentialPIIConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_56
+#graphify/rationale #graphify/EXTRACTED #community/Community_116

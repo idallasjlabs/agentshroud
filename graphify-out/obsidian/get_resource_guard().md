@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "Community 5"
+community: "Community 2324"
 location: "L459"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_5
+  - community/Community_2324
 ---
 
 # get_resource_guard()
@@ -18,4 +18,4 @@ tags:
 - [[resource_guard.py]] - `contains` [EXTRACTED]
 - [[test_resource_guard_limits.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_5
+#graphify/code #graphify/EXTRACTED #community/Community_2324

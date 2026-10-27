@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "Community 181"
+community: "Community 2030"
 location: "L348"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_181
+  - community/Community_2030
 ---
 
 # Get aggregate statistics          Returns:             Dictionary with total ent
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_stats()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_181
+#graphify/rationale #graphify/EXTRACTED #community/Community_2030

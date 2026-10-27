@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_admin_private_service_data_redacted()]] - code - gateway/tests/test_outbound_filter.py
-- [[Admin-private service references should be redacted.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[.test_urlencoded_draft_payload_tool_json_is_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form-encoded draft payloads must not leak raw tool-call JSON.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 98]]
+- 1 edge to [[_COMMUNITY_Community 626]]
+- 1 edge to [[_COMMUNITY_Community 2]]
+- 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[.test_admin_private_service_data_redacted()]] - degree 2, connects to 1 community
+- [[.test_urlencoded_draft_payload_tool_json_is_rewritten()]] - degree 4, connects to 3 communities

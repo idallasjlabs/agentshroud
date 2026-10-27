@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Community 93"
+community: "Community 23"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_93
+  - community/Community_23
 ---
 
 # EgressRule
@@ -23,4 +23,4 @@ tags:
 - [[Represents an egress allowdeny rule.]] - `rationale_for` [EXTRACTED]
 - [[egress_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_93
+#graphify/code #graphify/EXTRACTED #community/Community_23

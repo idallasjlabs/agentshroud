@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "Community 84"
+community: "Community 45"
 location: "L151"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_84
+  - community/Community_45
 ---
 
 # TestE2E03OutboundPIIRedaction
@@ -28,4 +28,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_84
+#graphify/code #graphify/INFERRED #community/Community_45

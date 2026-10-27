@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "rationale"
-community: "Community 84"
+community: "Community 22"
 location: "L23"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_84
+  - community/Community_22
 ---
 
 # Test PromptGuard initialization
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_prompt_guard_init()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_84
+#graphify/rationale #graphify/EXTRACTED #community/Community_22

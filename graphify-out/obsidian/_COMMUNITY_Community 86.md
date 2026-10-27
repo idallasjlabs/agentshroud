@@ -77,7 +77,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 29 edges to [[_COMMUNITY_Community 81]]
 - 18 edges to [[_COMMUNITY_Community 27]]
-- 3 edges to [[_COMMUNITY_Community 792]]
+- 3 edges to [[_COMMUNITY_Community 162]]
 
 ## Top bridge nodes
 - [[test_http_proxy.py]] - degree 39, connects to 3 communities

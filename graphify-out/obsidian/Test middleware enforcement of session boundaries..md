@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Community 114"
+community: "Community 605"
 location: "L347"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_114
+  - community/Community_605
 ---
 
 # Test middleware enforcement of session boundaries.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMiddlewareSessionEnforcement]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_114
+#graphify/rationale #graphify/EXTRACTED #community/Community_605

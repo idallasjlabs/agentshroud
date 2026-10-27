@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "rationale"
-community: "Community 1552"
+community: "Community 52"
 location: "L123"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1552
+  - community/Community_52
 ---
 
 # Verify that each agent has its own volume (no shared filesystems).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.verify_volume_isolation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1552
+#graphify/rationale #graphify/EXTRACTED #community/Community_52

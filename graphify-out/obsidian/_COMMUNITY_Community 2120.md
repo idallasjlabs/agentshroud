@@ -1,17 +1,19 @@
 ---
 type: community
-members: 4
+members: 6
 ---
 
 # Community 2120
 
-**Members:** 4 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[3. Agent Inventory]] - document - docs/architecture/agentic-os.md
-- [[Agents by Domain]] - document - docs/architecture/agentic-os.md
-- [[Distribution by Platform]] - document - docs/architecture/agentic-os.md
-- [[Podcast Pipeline — Greek Mythology Agents]] - document - docs/architecture/agentic-os.md
+- [[CLI Reference]] - document - skills/custom/securebrowser/README.md
+- [[Click]] - document - skills/custom/securebrowser/README.md
+- [[Extract]] - document - skills/custom/securebrowser/README.md
+- [[Fill Field]] - document - skills/custom/securebrowser/README.md
+- [[Navigate]] - document - skills/custom/securebrowser/README.md
+- [[Screenshot]] - document - skills/custom/securebrowser/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 178]]
+- 1 edge to [[_COMMUNITY_Community 299]]
 
 ## Top bridge nodes
-- [[3. Agent Inventory]] - degree 4, connects to 1 community
+- [[CLI Reference]] - degree 6, connects to 1 community

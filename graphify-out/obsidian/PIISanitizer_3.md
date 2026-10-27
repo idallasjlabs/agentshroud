@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "Community 84"
+community: "Community 11"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_84
+  - community/Community_11
 ---
 
 # PIISanitizer
@@ -26,4 +26,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[_make_pii_sanitizer()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_84
+#graphify/code #graphify/INFERRED #community/Community_11

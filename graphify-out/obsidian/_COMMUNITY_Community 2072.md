@@ -1,18 +1,20 @@
 ---
 type: community
-members: 5
+members: 7
 ---
 
 # Community 2072
 
-**Members:** 5 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[MCP Doctor (MCPM-DOCTOR)_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
-- [[Purpose_55]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
-- [[README_60]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
-- [[Related Skills_75]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
-- [[Usage_78]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
+- [[.client()_3]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_install()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_installer_page()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_prerequisites()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_runtimes()]] - code - gateway/tests/test_runtime_engines.py
+- [[Installer must not fake completion SCRUM-107.          The endpoint has no auto]] - rationale - gateway/tests/test_runtime_engines.py
+- [[TestInstallerAPI]] - code - gateway/tests/test_runtime_engines.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +24,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 90]]
+- 2 edges to [[_COMMUNITY_Community 240]]
+- 1 edge to [[_COMMUNITY_Community 379]]
+- 1 edge to [[_COMMUNITY_Community 372]]
+- 1 edge to [[_COMMUNITY_Community 738]]
+- 1 edge to [[_COMMUNITY_Community 250]]
 
 ## Top bridge nodes
-- [[MCP Doctor (MCPM-DOCTOR)_1]] - degree 5, connects to 1 community
+- [[TestInstallerAPI]] - degree 11, connects to 5 communities

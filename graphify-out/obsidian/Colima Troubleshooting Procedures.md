@@ -1,11 +1,11 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "concept"
-community: "Community 764"
+community: "Community 726"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_764
+  - community/Community_726
 ---
 
 # Colima Troubleshooting Procedures
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[RUNBOOK]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_764
+#graphify/concept #graphify/EXTRACTED #community/Community_726

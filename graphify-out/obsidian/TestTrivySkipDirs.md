@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Community 2099"
+community: "Community 127"
 location: "L1231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2099
+  - community/Community_127
 ---
 
 # TestTrivySkipDirs
@@ -17,4 +17,4 @@ tags:
 - [[.test_skip_dirs_added_to_command()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2099
+#graphify/code #graphify/EXTRACTED #community/Community_127

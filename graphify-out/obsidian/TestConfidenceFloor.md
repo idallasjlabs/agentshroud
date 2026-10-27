@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "Community 72"
+community: "Community 28"
 location: "L582"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_72
+  - community/Community_28
 ---
 
 # TestConfidenceFloor
@@ -26,4 +26,4 @@ tags:
 - [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[test_tool_result_pii.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_72
+#graphify/code #graphify/INFERRED #community/Community_28

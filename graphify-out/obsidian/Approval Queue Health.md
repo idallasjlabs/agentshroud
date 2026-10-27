@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Health Checks.md"
 type: "document"
-community: "Community 801"
+community: "Community 656"
 location: "L107"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_801
+  - community/Community_656
 ---
 
 # Approval Queue Health
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Health Checks_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_801
+#graphify/document #graphify/EXTRACTED #community/Community_656

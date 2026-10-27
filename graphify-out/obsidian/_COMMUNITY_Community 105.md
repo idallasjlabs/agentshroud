@@ -1,70 +1,54 @@
 ---
 type: community
-members: 57
+members: 41
 ---
 
 # Community 105
 
-**Members:** 57 nodes
+**Members:** 41 nodes
 
 ## Members
-- [[.__init__()_120]] - code - gateway/security/subagent_monitor.py
-- [[._log_event()_1]] - code - gateway/security/subagent_monitor.py
-- [[.check_tool_usage()]] - code - gateway/security/subagent_monitor.py
-- [[.deregister()_1]] - code - gateway/security/subagent_monitor.py
-- [[.get_active()]] - code - gateway/security/subagent_monitor.py
-- [[.get_audit_log()_6]] - code - gateway/security/subagent_monitor.py
-- [[.get_flagged_events()]] - code - gateway/security/subagent_monitor.py
-- [[.kill_agent()]] - code - gateway/security/subagent_monitor.py
-- [[.kill_all()]] - code - gateway/security/subagent_monitor.py
-- [[.register_spawn()]] - code - gateway/security/subagent_monitor.py
-- [[.test_audit_filterable_by_agent()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_audit_has_timestamps()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_default_mode_is_enforce()_7]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_deregister_frees_slot()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_deregister_logged()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_deregister_subagent()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_enforce_mode_blocks_over_limit()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_enforce_mode_blocks_trust_violation()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_generous_concurrent_default()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_kill_logs_event()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_kill_specific_agent()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_kill_switch_marks_all_for_termination()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_kill_switch_propagates_to_children()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_list_active_subagents()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_monitor_mode_allows_all_tools()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_monitor_mode_allows_over_limit()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_nested_subagent_inherits_chain()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_register_subagent()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_spawn_logged()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_subagent_cannot_exceed_parent()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_subagent_info_has_spawn_time()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_subagent_inherits_parent_trust()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_tool_usage_logged()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_tool_within_trust_allowed()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_trust_inheritance_default_on()]] - code - gateway/tests/test_subagent_monitor.py
-- [[.test_trust_violation_flagged()]] - code - gateway/tests/test_subagent_monitor.py
-- [[Default mode is enforce after v0.8.0 enforcement hardening._2]] - rationale - gateway/tests/test_subagent_monitor.py
-- [[If sub-agent tries tool above its trust, flag it.]] - rationale - gateway/tests/test_subagent_monitor.py
-- [[In monitor mode, even trust violations are allowed (just flagged).]] - rationale - gateway/tests/test_subagent_monitor.py
-- [[Monitor mode flags but allows.]] - rationale - gateway/tests/test_subagent_monitor.py
-- [[SubagentInfo]] - code - gateway/security/subagent_monitor.py
-- [[SubagentMonitor]] - code - gateway/security/subagent_monitor.py
-- [[TestAuditTrail_2]] - code - gateway/tests/test_subagent_monitor.py
-- [[TestConcurrentLimits]] - code - gateway/tests/test_subagent_monitor.py
-- [[TestKillSwitch]] - code - gateway/tests/test_subagent_monitor.py
-- [[TestPermissionMonitoring]] - code - gateway/tests/test_subagent_monitor.py
-- [[TestSubagentMonitorConfig]] - code - gateway/tests/test_subagent_monitor.py
-- [[TestSubagentTracking]] - code - gateway/tests/test_subagent_monitor.py
-- [[TestTrustInheritance]] - code - gateway/tests/test_subagent_monitor.py
-- [[ToolCheckResult]] - code - gateway/security/subagent_monitor.py
-- [[default_config()_4]] - code - gateway/tests/test_subagent_monitor.py
-- [[monitor()_1]] - code - gateway/tests/test_subagent_monitor.py
-- [[monitor_config()_2]] - code - gateway/tests/test_subagent_monitor.py
-- [[strict_config()_2]] - code - gateway/tests/test_subagent_monitor.py
-- [[strict_monitor()]] - code - gateway/tests/test_subagent_monitor.py
-- [[subagent_monitor.py]] - code - gateway/security/subagent_monitor.py
-- [[test_subagent_monitor.py]] - code - gateway/tests/test_subagent_monitor.py
+- [[._allowed_networks()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[._mock_app_state_with_registry()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[._mock_request()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_both_bots_registered_distinct_ids()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_client_disconnect_returns_499()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_empty_registry_fails_closed()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_hermes_token_resolves_to_hermes()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_miss_debounced_within_rebuild_interval()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_miss_rebuilds_and_recovers_when_secret_becomes_available()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_miss_still_rejected_after_rebuild_if_truly_unknown()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_no_token_collision()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_openclaw_token_resolves_to_openclaw()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_registry_rejects_case_variant()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_registry_rejects_empty_string()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_registry_rejects_partial_token()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_unknown_token_rejected()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_unknown_token_resolves_to_none()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_valid_hermes_token_accepted()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_valid_openclaw_token_accepted()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[A genuinely-unregistered token must not be falsely accepted by the         rebui]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[A request bearing the Hermes token resolves to 'hermes' bot_id.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[A request bearing the OpenClaw token resolves to 'openclaw' bot_id.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[A token missing from a stale cached registry is picked up on retry         once]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[An unregistered token must not be matched — fail-closed.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Build the Telegram bot-token → bot_id registry from configured secrets.]] - rationale - gateway/ingest_api/main.py
+- [[If no tokens are registered, any token must be rejected.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Integration tests for the telegram-api{path} route with multi-bot registry.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Proxy Telegram Bot API calls through security pipeline.]] - rationale - gateway/ingest_api/main.py
+- [[Registry maps two distinct tokens to two distinct bot_ids.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Repeated misses within the debounce window must not re-read secrets         on e]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[TestTelegramProxyRouteMultiBot]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[TestTelegramTokenRegistry]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[TestTelegramTokenRegistryRebuildOnMiss]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[The token registry is built lazily on the first telegram-api{path} request]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Token matching must be exact — case-sensitive.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Tokens are the registry keys — no two bots share a token.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Validate the token → bot_id registry logic extracted from the route handler.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[When body() raises ClientDisconnect the handler returns 499 without crashing.]] - rationale - gateway/tests/test_security_fixes.py
+- [[_build_telegram_token_registry()]] - code - gateway/ingest_api/main.py
+- [[telegram_api_proxy()]] - code - gateway/ingest_api/main.py
+- [[test_telegram_proxy_multibot.py]] - code - gateway/tests/test_telegram_proxy_multibot.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -74,18 +58,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 27 edges to [[_COMMUNITY_Community 0]]
-- 24 edges to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 8]]
-- 1 edge to [[_COMMUNITY_Community 148]]
-- 1 edge to [[_COMMUNITY_Community 185]]
-- 1 edge to [[_COMMUNITY_Community 5]]
-- 1 edge to [[_COMMUNITY_Community 76]]
-- 1 edge to [[_COMMUNITY_Community 181]]
+- 5 edges to [[_COMMUNITY_Community 32]]
+- 4 edges to [[_COMMUNITY_Community 14]]
+- 2 edges to [[_COMMUNITY_Community 978]]
+- 2 edges to [[_COMMUNITY_Community 10]]
+- 2 edges to [[_COMMUNITY_Community 7]]
+- 2 edges to [[_COMMUNITY_Community 37]]
+- 1 edge to [[_COMMUNITY_Community 254]]
+- 1 edge to [[_COMMUNITY_Community 474]]
 
 ## Top bridge nodes
-- [[subagent_monitor.py]] - degree 10, connects to 6 communities
-- [[SubagentMonitor]] - degree 46, connects to 3 communities
-- [[test_subagent_monitor.py]] - degree 15, connects to 2 communities
-- [[TestTrustInheritance]] - degree 9, connects to 2 communities
-- [[TestSubagentTracking]] - degree 8, connects to 2 communities
+- [[telegram_api_proxy()]] - degree 11, connects to 4 communities
+- [[test_telegram_proxy_multibot.py]] - degree 9, connects to 4 communities
+- [[TestTelegramTokenRegistry]] - degree 12, connects to 2 communities
+- [[TestTelegramProxyRouteMultiBot]] - degree 9, connects to 2 communities
+- [[TestTelegramTokenRegistryRebuildOnMiss]] - degree 9, connects to 2 communities

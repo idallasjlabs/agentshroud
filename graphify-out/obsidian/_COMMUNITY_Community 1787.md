@@ -1,11 +1,11 @@
 ---
 type: community
-members: 52
+members: 56
 ---
 
 # Community 1787
 
-**Members:** 52 nodes
+**Members:** 56 nodes
 
 ## Members
 - [[._apply_filters()]] - code - gateway/proxy/llm_proxy.py
@@ -16,6 +16,7 @@ members: 52
 - [[._filter_outbound()]] - code - gateway/proxy/llm_proxy.py
 - [[._filter_outbound_streaming()]] - code - gateway/proxy/llm_proxy.py
 - [[._filter_streaming_event()]] - code - gateway/proxy/llm_proxy.py
+- [[._flatten_fieldflare_schema()]] - code - gateway/proxy/llm_proxy.py
 - [[._forward_request()]] - code - gateway/proxy/llm_proxy.py
 - [[._get_local_model()]] - code - gateway/proxy/llm_proxy.py
 - [[._get_local_secondary_model()]] - code - gateway/proxy/llm_proxy.py
@@ -25,6 +26,7 @@ members: 52
 - [[._local_backend_unavailable_response()]] - code - gateway/proxy/llm_proxy.py
 - [[._local_failover_base()]] - code - gateway/proxy/llm_proxy.py
 - [[._local_secondary_failover_request()]] - code - gateway/proxy/llm_proxy.py
+- [[._merge_object_schemas()]] - code - gateway/proxy/llm_proxy.py
 - [[._normalize_local_model()]] - code - gateway/proxy/llm_proxy.py
 - [[._record_failover_event()]] - code - gateway/proxy/llm_proxy.py
 - [[._scan_inbound()]] - code - gateway/proxy/llm_proxy.py
@@ -55,11 +57,13 @@ members: 52
 - [[Resolve the local backend for failover dispatch via LOCAL_MODEL_ROUTES.]] - rationale - gateway/proxy/llm_proxy.py
 - [[Return True if the response indicates a local-model OOM or backend_unavailable.]] - rationale - gateway/proxy/llm_proxy.py
 - [[Return the bare secondary local model name, or None if not configured.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Rewrite a tool-parameter JSON schema into the subset Fieldflare's         Gemma]] - rationale - gateway/proxy/llm_proxy.py
 - [[Scan Anthropic tool_use blocks; replace denied tools with a text error block.]] - rationale - gateway/proxy/llm_proxy.py
 - [[Scan inbound user message text for PII and injection.]] - rationale - gateway/proxy/llm_proxy.py
 - [[Scan request data for PII and injection across different provider formats.]] - rationale - gateway/proxy/llm_proxy.py
 - [[Send a single Telegram notice per cooldown window when failover activates.]] - rationale - gateway/proxy/llm_proxy.py
 - [[True for connection-level failures (refused  unreachable  reset).          Unw]] - rationale - gateway/proxy/llm_proxy.py
+- [[Union several object schemas into one (see _flatten_fieldflare_schema).]] - rationale - gateway/proxy/llm_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -69,9 +73,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 27 edges to [[_COMMUNITY_Community 1278]]
-- 6 edges to [[_COMMUNITY_Community 361]]
-- 5 edges to [[_COMMUNITY_Community 360]]
+- 28 edges to [[_COMMUNITY_Community 1278]]
+- 7 edges to [[_COMMUNITY_Community 361]]
+- 3 edges to [[_COMMUNITY_Community 360]]
+- 1 edge to [[_COMMUNITY_Community 890]]
 - 1 edge to [[_COMMUNITY_Community 142]]
 - 1 edge to [[_COMMUNITY_Community 965]]
 - 1 edge to [[_COMMUNITY_Community 1058]]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "rationale"
-community: "Community 65"
+community: "Community 61"
 location: "L236"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_65
+  - community/Community_61
 ---
 
 # Read a group's shared memory, gated by member access (fail-closed).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.read_group_memory()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_65
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

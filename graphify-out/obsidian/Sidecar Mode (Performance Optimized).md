@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "Community 947"
+community: "Community 418"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_947
+  - community/Community_418
 ---
 
 # Sidecar Mode (Performance Optimized)
@@ -15,4 +15,4 @@ tags:
 - [[ADR-001 Transparent Proxy Decision]] - `conceptually_related_to` [INFERRED]
 - [[Deployment Modes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_947
+#graphify/document #graphify/EXTRACTED #community/Community_418

@@ -1,15 +1,18 @@
 ---
 type: community
-members: 2
+members: 5
 ---
 
 # Community 2315
 
-**Members:** 2 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[Single-branch unions unwrap, null-only unions are left alone, and a     union ne]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_degenerate_unions()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[Advisory Collaborators (Brett, Chris, Gabriel, TJ)]] - concept - docs/TEAM.md
+- [[Collaborator Session Isolation (blocked functionsskills)]] - concept - docs/claude-security-audit-prompt.md
+- [[Collaborators_1]] - document - docs/setup-slack.md
+- [[Collaborators_2]] - document - docs/setup-telegram.md
+- [[Steve Hay — Collaborator (Telegram ID 8279589982)]] - concept - docs/TEAM.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +22,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 208]]
+- 1 edge to [[_COMMUNITY_Community 324]]
+- 1 edge to [[_COMMUNITY_Community 1552]]
+- 1 edge to [[_COMMUNITY_Community 915]]
 
 ## Top bridge nodes
-- [[test_fieldflare_shim_degenerate_unions()]] - degree 2, connects to 1 community
+- [[Collaborators_1]] - degree 3, connects to 1 community
+- [[Collaborators_2]] - degree 2, connects to 1 community
+- [[Steve Hay — Collaborator (Telegram ID 8279589982)]] - degree 2, connects to 1 community

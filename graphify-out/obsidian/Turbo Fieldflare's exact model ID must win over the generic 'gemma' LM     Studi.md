@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "Community 2327"
+community: "Community 208"
 location: "L581"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2327
+  - community/Community_208
 ---
 
 # Turbo Fieldflare's exact model ID must win over the generic 'gemma' LM     Studi
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_local_failover_base_routes_fieldflare_gemma_before_generic_gemma()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2327
+#graphify/rationale #graphify/EXTRACTED #community/Community_208

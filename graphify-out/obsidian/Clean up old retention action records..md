@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "Community 16"
+community: "Community 1026"
 location: "L358"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/Community_1026
 ---
 
 # Clean up old retention action records.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._cleanup_old_actions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_16
+#graphify/rationale #graphify/EXTRACTED #community/Community_1026

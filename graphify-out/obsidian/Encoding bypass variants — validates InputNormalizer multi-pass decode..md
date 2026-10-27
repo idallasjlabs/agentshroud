@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "Community 14"
+community: "Community 344"
 location: "L333"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/Community_344
 ---
 
 # Encoding bypass variants — validates InputNormalizer multi-pass decode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEncodingBypass]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_14
+#graphify/rationale #graphify/EXTRACTED #community/Community_344

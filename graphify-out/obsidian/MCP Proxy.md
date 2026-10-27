@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Community 947"
+community: "Community 637"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_947
+  - community/Community_637
 ---
 
 # MCP Proxy
@@ -16,4 +16,4 @@ tags:
 - [[mcp-config.yml]] - `conceptually_related_to` [EXTRACTED]
 - [[mcp_proxy.py (MCP tool call gate)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_947
+#graphify/concept #graphify/EXTRACTED #community/Community_637

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 626"
+community: "Community 2355"
 location: "L2625"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_626
+  - community/Community_2355
 ---
 
 # Raw web_fetch JSON should queue interactive egress approval for the destination.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_raw_web_fetch_json_queues_egress_approval_when_available()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_626
+#graphify/rationale #graphify/EXTRACTED #community/Community_2355

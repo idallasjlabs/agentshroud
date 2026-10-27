@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Community 1127"
+community: "Community 37"
 location: "L242"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1127
+  - community/Community_37
 ---
 
 # Create a mock security pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.mock_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1127
+#graphify/rationale #graphify/EXTRACTED #community/Community_37

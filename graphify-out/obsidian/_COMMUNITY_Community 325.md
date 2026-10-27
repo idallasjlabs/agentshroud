@@ -1,47 +1,42 @@
 ---
 type: community
-members: 34
+members: 29
 ---
 
 # Community 325
 
-**Members:** 34 nodes
+**Members:** 29 nodes
 
 ## Members
-- [[._classify_heuristic()]] - code - gateway/security/heuristic_classifier.py
-- [[._classify_ml()]] - code - gateway/security/heuristic_classifier.py
-- [[._compute_unicode_anomaly()]] - code - gateway/security/heuristic_classifier.py
-- [[._score_signal()]] - code - gateway/security/heuristic_classifier.py
-- [[.classify()]] - code - gateway/security/heuristic_classifier.py
-- [[.is_injection()]] - code - gateway/security/heuristic_classifier.py
-- [[.is_uncertain()]] - code - gateway/security/heuristic_classifier.py
-- [[.test_backward_compat_alias()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_benign_text_low_score()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_classification_result_properties()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_clear_injection_high_score()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_cyrillic_homoglyph()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_empty_text()_1]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_encoding_evasion()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_exfiltration_attempt()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_long_benign_text()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_model_not_loaded_by_default()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_multi_signal_increases_confidence()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_roleplay_attack()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_separator_injection()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_unicode_anomaly()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[ClassificationResult]] - code - gateway/security/heuristic_classifier.py
-- [[Classify text for injection probability.          Args             text Input]] - rationale - gateway/security/heuristic_classifier.py
-- [[Detect unusual Unicode patterns that suggest evasion.]] - rationale - gateway/security/heuristic_classifier.py
-- [[Heuristic-based classification using multi-signal analysis.]] - rationale - gateway/security/heuristic_classifier.py
-- [[InjectionClassifier alias should still work.]] - rationale - gateway/tests/test_heuristic_classifier.py
-- [[Pattern]] - code - gateway/security/heuristic_classifier.py
-- [[Result of injection classification.]] - rationale - gateway/security/heuristic_classifier.py
-- [[Score a single signal pattern. Returns 0.0–1.0.]] - rationale - gateway/security/heuristic_classifier.py
-- [[Test the heuristic injection classifier.]] - rationale - gateway/tests/test_heuristic_classifier.py
-- [[TestHeuristicClassifier]] - code - gateway/tests/test_heuristic_classifier.py
-- [[EXPERIMENTAL ML model classification placeholder.]] - rationale - gateway/security/heuristic_classifier.py
-- [[heuristic_classifier.py (HeuristicClassifier)]] - code - gateway/security/heuristic_classifier.py
-- [[test_heuristic_classifier.py]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.__init__()_156]] - code - gateway/tests/test_forward_routing.py
+- [[._post()]] - code - gateway/tests/test_forward_routing.py
+- [[._run_forward()]] - code - gateway/tests/test_forward_routing.py
+- [[.process_inbound()_3]] - code - gateway/tests/test_forward_routing.py
+- [[.process_inbound()_5]] - code - gateway/tests/test_forward_routing.py
+- [[.process_outbound()_3]] - code - gateway/tests/test_forward_routing.py
+- [[.process_outbound()_5]] - code - gateway/tests/test_forward_routing.py
+- [[.test_agent_id_propagated_for_hermes()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_agent_id_propagated_for_openclaw()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_body_owner_id_with_matching_trusted_header_is_honored()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_body_owner_id_without_trusted_header_is_stripped()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_default_not_used_in_pipeline()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_forward_passes_user_id_in_metadata_to_process_inbound()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_non_owner_body_user_id_passes_through()]] - code - gateway/tests/test_forward_routing.py
+- [[A non-owner user_id is not a spoof risk and must pass through unchanged]] - rationale - gateway/tests/test_forward_routing.py
+- [[Build a minimal mock app_state that returns a target with the given bot name.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Legitimate voice-gateway path owner ID in body + matching trusted         heade]] - rationale - gateway/tests/test_forward_routing.py
+- [[Minimal pipeline mock that records which agent_id it was called with.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Owner ID claimed in the body with NO trusted header must not reach the         p]] - rationale - gateway/tests/test_forward_routing.py
+- [[Pipeline receives 'hermes' as agent_id when routed to hermes.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Pipeline receives 'openclaw' as agent_id when routed to openclaw.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Regression 'default' must never appear in agent_id when a named target is resol]] - rationale - gateway/tests/test_forward_routing.py
+- [[TestAgentIdPropagatedFromTarget]] - code - gateway/tests/test_forward_routing.py
+- [[TestOwnerSpoofingViaForwardBody]] - code - gateway/tests/test_forward_routing.py
+- [[Verify that the resolved target.name is used as agent_id in pipeline calls.]] - rationale - gateway/tests/test_forward_routing.py
+- [[WS-E SCRUM-7374 a body-supplied user_id must NOT grant owner identity     to t]] - rationale - gateway/tests/test_forward_routing.py
+- [[_PipelineCaptor]] - code - gateway/tests/test_forward_routing.py
+- [[_make_mock_app_state()]] - code - gateway/tests/test_forward_routing.py
+- [[process_inbound must receive metadata={'user_id' ...} from forward so that]] - rationale - gateway/tests/test_forward_routing.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,12 +46,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 187]]
-- 1 edge to [[_COMMUNITY_Community 162]]
+- 7 edges to [[_COMMUNITY_Community 34]]
+- 6 edges to [[_COMMUNITY_Community 368]]
+- 4 edges to [[_COMMUNITY_Community 92]]
+- 1 edge to [[_COMMUNITY_Community 37]]
 
 ## Top bridge nodes
-- [[TestHeuristicClassifier]] - degree 19, connects to 1 community
-- [[ClassificationResult]] - degree 10, connects to 1 community
-- [[._classify_heuristic()]] - degree 7, connects to 1 community
-- [[.classify()]] - degree 5, connects to 1 community
-- [[._classify_ml()]] - degree 5, connects to 1 community
+- [[_PipelineCaptor]] - degree 16, connects to 3 communities
+- [[_make_mock_app_state()]] - degree 9, connects to 3 communities
+- [[TestAgentIdPropagatedFromTarget]] - degree 9, connects to 3 communities
+- [[TestOwnerSpoofingViaForwardBody]] - degree 8, connects to 3 communities
+- [[.test_agent_id_propagated_for_openclaw()]] - degree 7, connects to 2 communities

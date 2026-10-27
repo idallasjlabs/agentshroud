@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "Community 2052"
+community: "Community 76"
 location: "L93"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_2052
+  - community/Community_76
 ---
 
 # TestEventInjection
@@ -23,4 +23,4 @@ tags:
 - [[SessionManager]] - `uses` [INFERRED]
 - [[test_session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_2052
+#graphify/code #graphify/INFERRED #community/Community_76

@@ -37,13 +37,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 84]]
-- 2 edges to [[_COMMUNITY_Community 9]]
-- 2 edges to [[_COMMUNITY_Community 103]]
-- 1 edge to [[_COMMUNITY_Community 196]]
+- 3 edges to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Community 104]]
+- 1 edge to [[_COMMUNITY_Community 65]]
+- 1 edge to [[_COMMUNITY_Community 9]]
+- 1 edge to [[_COMMUNITY_Community 103]]
+- 1 edge to [[_COMMUNITY_Community 40]]
 
 ## Top bridge nodes
-- [[TestObservatoryMode]] - degree 15, connects to 3 communities
+- [[TestObservatoryMode]] - degree 15, connects to 5 communities
 - [[.test_get_module_mode_respect_global_override()]] - degree 3, connects to 1 community
 - [[.test_security_pipeline_set_global_mode()]] - degree 3, connects to 1 community
 - [[.test_security_pipeline_set_global_mode_missing_components()]] - degree 3, connects to 1 community

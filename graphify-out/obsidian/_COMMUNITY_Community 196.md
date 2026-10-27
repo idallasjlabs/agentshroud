@@ -1,39 +1,45 @@
 ---
 type: community
-members: 26
+members: 32
 ---
 
 # Community 196
 
-**Members:** 26 nodes
+**Members:** 32 nodes
 
 ## Members
-- [[.test_get_module_mode_enforce_override()]] - code - gateway/tests/test_enforce_defaults.py
-- [[.test_get_module_mode_no_override()]] - code - gateway/tests/test_enforce_defaults.py
-- [[.test_get_module_mode_with_override()]] - code - gateway/tests/test_enforce_defaults.py
-- [[.test_global_monitor_override_downgrades_all()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_monitor_mode_warning_message_format()]] - code - gateway/tests/test_enforce_defaults.py
-- [[.test_monitor_mode_warnings_all_modules()]] - code - gateway/tests/test_enforce_defaults.py
-- [[.test_monitor_mode_warnings_no_warnings_in_enforce()]] - code - gateway/tests/test_enforce_defaults.py
-- [[.test_pii_sanitizer_default_action()]] - code - gateway/tests/test_enforce_defaults.py
-- [[.test_security_config_all_defaults_enforce()]] - code - gateway/tests/test_enforce_defaults.py
-- [[.test_security_module_config_defaults()]] - code - gateway/tests/test_enforce_defaults.py
-- [[AGENTSHROUD_MODE=monitor must downgrade ALL modules to monitor.]] - rationale - gateway/tests/test_all_modules_enforce.py
-- [[Log warnings for any core modules running in monitor mode.]] - rationale - gateway/ingest_api/config.py
-- [[Return module mode, respecting the global permissive override.]] - rationale - gateway/ingest_api/config.py
-- [[Test get_module_mode returns enforce when explicitly set.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test get_module_mode returns enforce when no override set.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test get_module_mode returns monitor when AGENTSHROUD_MODE=monitor.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test that PII sanitizer defaults to redact action.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test that SecurityModuleConfig defaults to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test that all core modules default to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test that core security modules default to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test that monitor mode warnings contain required information.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test that no warnings are logged when all modules are in enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test that warnings are logged for all core modules in monitor mode.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[TestEnforceDefaults]] - code - gateway/tests/test_enforce_defaults.py
-- [[check_monitor_mode_warnings()]] - code - gateway/ingest_api/config.py
-- [[get_module_mode()]] - code - gateway/ingest_api/config.py
+- [[.test_absolute_path_to_sensitive_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_app_read_allowed()]] - code - gateway/tests/test_security_audit.py
+- [[.test_basic_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_double_encoded_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_enforce_vs_monitor_contrast()]] - code - gateway/tests/test_security_audit.py
+- [[.test_monitor_mode_allows_everything()_1]] - code - gateway/tests/test_security_audit.py
+- [[.test_null_byte_injection_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_proc_meminfo_allowed()]] - code - gateway/tests/test_security_audit.py
+- [[.test_proc_self_environ_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_staging_detection()]] - code - gateway/tests/test_security_audit.py
+- [[.test_symlink_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_tmp_read_allowed()_1]] - code - gateway/tests/test_security_audit.py
+- [[.test_windows_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_write_outside_allowed_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_write_pii_detection()]] - code - gateway/tests/test_security_audit.py
+- [[.test_write_to_app_data_allowed()]] - code - gateway/tests/test_security_audit.py
+- [[.test_write_to_system_dir_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_write_to_tmp_allowed()]] - code - gateway/tests/test_security_audit.py
+- [[Access to procselfenviron exposes env vars — must be blocked.]] - rationale - gateway/tests/test_security_audit.py
+- [[Allowed read path should pass.]] - rationale - gateway/tests/test_security_audit.py
+- [[Detect data staging patterns.]] - rationale - gateway/tests/test_security_audit.py
+- [[Monitor mode flags but allows — verify difference from enforce.]] - rationale - gateway/tests/test_security_audit.py
+- [[Reading from app should be allowed.]] - rationale - gateway/tests/test_security_audit.py
+- [[Reading from tmp should be allowed.]] - rationale - gateway/tests/test_security_audit.py
+- [[Same path, different modes — enforce blocks, monitor allows.]] - rationale - gateway/tests/test_security_audit.py
+- [[Symlink-based escape attempt blocked.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test file system sandboxing in enforce mode — blocks unauthorized access.]] - rationale - gateway/tests/test_security_audit.py
+- [[TestFileSandbox]] - code - gateway/tests/test_security_audit.py
+- [[Writing PII should be flagged even to allowed paths.]] - rationale - gateway/tests/test_security_audit.py
+- [[Writing outside allowed paths must be blocked.]] - rationale - gateway/tests/test_security_audit.py
+- [[Writing to appdata should be allowed.]] - rationale - gateway/tests/test_security_audit.py
+- [[Writing to tmp should be allowed.]] - rationale - gateway/tests/test_security_audit.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,18 +49,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_Community 72]]
-- 5 edges to [[_COMMUNITY_Community 84]]
-- 4 edges to [[_COMMUNITY_Community 24]]
-- 2 edges to [[_COMMUNITY_Community 104]]
-- 2 edges to [[_COMMUNITY_Community 7]]
-- 1 edge to [[_COMMUNITY_Community 103]]
-- 1 edge to [[_COMMUNITY_Community 1002]]
-- 1 edge to [[_COMMUNITY_Community 68]]
+- 15 edges to [[_COMMUNITY_Community 0]]
+- 3 edges to [[_COMMUNITY_Community 41]]
+- 2 edges to [[_COMMUNITY_Community 72]]
+- 2 edges to [[_COMMUNITY_Community 431]]
+- 2 edges to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 52]]
+- 1 edge to [[_COMMUNITY_Community 108]]
+- 1 edge to [[_COMMUNITY_Community 146]]
+- 1 edge to [[_COMMUNITY_Community 93]]
+- 1 edge to [[_COMMUNITY_Community 477]]
+- 1 edge to [[_COMMUNITY_Community 121]]
+- 1 edge to [[_COMMUNITY_Community 71]]
+- 1 edge to [[_COMMUNITY_Community 22]]
+- 1 edge to [[_COMMUNITY_Community 434]]
+- 1 edge to [[_COMMUNITY_Community 5]]
+- 1 edge to [[_COMMUNITY_Community 11]]
 
 ## Top bridge nodes
-- [[get_module_mode()]] - degree 14, connects to 7 communities
-- [[TestEnforceDefaults]] - degree 16, connects to 3 communities
-- [[check_monitor_mode_warnings()]] - degree 9, connects to 3 communities
-- [[.test_global_monitor_override_downgrades_all()]] - degree 4, connects to 2 communities
-- [[.test_get_module_mode_no_override()]] - degree 4, connects to 1 community
+- [[TestFileSandbox]] - degree 55, connects to 17 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "Community 0"
+community: "Community 52"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/Community_52
 ---
 
 # agent_isolation.py
@@ -25,4 +25,4 @@ tags:
 - [[env_guard.py]] - `references` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_0
+#graphify/code #graphify/EXTRACTED #community/Community_52

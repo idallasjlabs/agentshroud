@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/MCP_README.md"
 type: "concept"
-community: "Community 924"
+community: "Community 742"
 location: "Prerequisites"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_924
+  - community/Community_742
 ---
 
 # UV/uvx package manager prerequisite
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[awslabs.aws-api-mcp-server configuration (--readonly)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_924
+#graphify/concept #graphify/EXTRACTED #community/Community_742

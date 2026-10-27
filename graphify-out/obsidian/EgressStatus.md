@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 54"
+community: "Community 8"
 location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/Community_8
 ---
 
 # EgressStatus
@@ -18,4 +18,4 @@ tags:
 - [[test_soc_egress.py]] - `imports` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_54
+#graphify/code #graphify/EXTRACTED #community/Community_8

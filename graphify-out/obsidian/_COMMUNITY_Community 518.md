@@ -38,7 +38,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Community 117]]
 - 1 edge to [[_COMMUNITY_Community 90]]
-- 1 edge to [[_COMMUNITY_Community 177]]
+- 1 edge to [[_COMMUNITY_Community 544]]
 
 ## Top bridge nodes
 - [[Test-Driven Development README]] - degree 11, connects to 3 communities

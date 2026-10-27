@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Community 2005"
+community: "Community 53"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2005
+  - community/Community_53
 ---
 
 # TestForwardEndpoint
@@ -20,4 +20,4 @@ tags:
 - [[Test forward endpoint with middleware integration.]] - `rationale_for` [EXTRACTED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2005
+#graphify/code #graphify/EXTRACTED #community/Community_53

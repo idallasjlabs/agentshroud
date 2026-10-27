@@ -1,11 +1,11 @@
 ---
 type: community
-members: 42
+members: 40
 ---
 
 # Community 400
 
-**Members:** 42 nodes
+**Members:** 40 nodes
 
 ## Members
 - [[AgentShroud Threat Model (L-1..L-4 Loss Categories)]] - concept - docs/papers/agentshroud-ieee-paper.md
@@ -28,13 +28,11 @@ members: 42
 - [[OpenClaw Agent Platform]] - concept - docs/papers/agentshroud-ieee-paper.md
 - [[Outbound Information Filter (R-01)]] - concept - docs/papers/agentshroud-ieee-paper.md
 - [[PII Sanitizer_2]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[PREREQUISITES]] - document - docs/reference/PREREQUISITES.md
 - [[Per-User Session Isolation (R-04, R-05)]] - concept - docs/papers/agentshroud-ieee-paper.md
 - [[Pi-hole DNS Filtering]] - concept - docs/papers/agentshroud-ieee-paper.md
 - [[Prompt Injection Defense (Ensemble of 20+ Patterns)]] - concept - docs/papers/agentshroud-ieee-paper.md
 - [[RELEASE-PLAN]] - document - docs/planning/RELEASE-PLAN.md
 - [[STPA-Sec Analysis of AgentShroud]] - rationale - docs/papers/agentshroud-ieee-paper.md
-- [[Secrets Backend Auto-Detection]] - concept - docs/reference/PREREQUISITES.md
 - [[SecurityPipeline (8-Guard Ordered Sequence)]] - concept - docs/papers/agentshroud-ieee-paper.md
 - [[Separation of Concerns  Isolated Bot Accounts]] - rationale - docs/reference/PREREQUISITES.md
 - [[Separation of Privilege (R-06, R-07)]] - concept - docs/papers/agentshroud-ieee-paper.md
@@ -62,10 +60,9 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 654]]
 - 1 edge to [[_COMMUNITY_Community 330]]
 - 1 edge to [[_COMMUNITY_Community 406]]
-- 1 edge to [[_COMMUNITY_Community 346]]
 - 1 edge to [[_COMMUNITY_Community 764]]
 
 ## Top bridge nodes
 - [[agentshroud-ieee-paper]] - degree 24, connects to 2 communities
-- [[PREREQUISITES]] - degree 4, connects to 2 communities
 - [[RELEASE-PLAN]] - degree 7, connects to 1 community
+- [[Separation of Concerns  Isolated Bot Accounts]] - degree 2, connects to 1 community

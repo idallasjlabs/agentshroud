@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "rationale"
-community: "Community 5"
+community: "Community 479"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_5
+  - community/Community_479
 ---
 
 # Test temp file count limiting.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_check_resource_temp_files_limit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_5
+#graphify/rationale #graphify/EXTRACTED #community/Community_479

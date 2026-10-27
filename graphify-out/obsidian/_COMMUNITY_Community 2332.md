@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[mlx-communitydeepseek-r1 full ID routes to mlx_lm endpoint.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_mlx_community_deepseek_routes_to_mlxlm()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[.test_lifecycle_maintenance()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[Test complete lifecycle maintenance run.]] - rationale - gateway/tests/test_memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,8 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 208]]
-- 1 edge to [[_COMMUNITY_Community 506]]
+- 1 edge to [[_COMMUNITY_Community 16]]
 
 ## Top bridge nodes
-- [[test_mlx_community_deepseek_routes_to_mlxlm()]] - degree 3, connects to 2 communities
+- [[.test_lifecycle_maintenance()]] - degree 2, connects to 1 community

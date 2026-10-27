@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "Community 55"
+community: "Community 2073"
 location: "L311"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_55
+  - community/Community_2073
 ---
 
 # TestNvdAppend
@@ -20,4 +20,4 @@ tags:
 - [[The NVD source appends to the OpenClaw  Hermes lists through the same locator.]] - `rationale_for` [EXTRACTED]
 - [[test_sync_cve_registry_ghsa.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_55
+#graphify/code #graphify/EXTRACTED #community/Community_2073

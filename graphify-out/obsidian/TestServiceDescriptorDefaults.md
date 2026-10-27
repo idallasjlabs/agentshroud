@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services.py"
 type: "code"
-community: "Community 54"
+community: "Community 8"
 location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/Community_8
 ---
 
 # TestServiceDescriptorDefaults
@@ -20,4 +20,4 @@ tags:
 - [[Validate ServiceDescriptor model defaults — no real container calls.]] - `rationale_for` [EXTRACTED]
 - [[test_soc_services.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_54
+#graphify/code #graphify/EXTRACTED #community/Community_8

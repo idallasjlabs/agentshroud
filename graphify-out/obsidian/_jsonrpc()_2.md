@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "code"
-community: "Community 148"
+community: "Community 307"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_148
+  - community/Community_307
 ---
 
 # _jsonrpc()
@@ -17,4 +17,4 @@ tags:
 - [[test_ssrf_callback_rejection_triggers_severe_demotion()]] - `calls` [EXTRACTED]
 - [[test_task_ownership_violation_records_a2a_violation_type()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_148
+#graphify/code #graphify/EXTRACTED #community/Community_307

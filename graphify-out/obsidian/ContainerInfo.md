@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "Community 225"
+community: "Community 379"
 location: "L121"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_225
+  - community/Community_379
 ---
 
 # ContainerInfo
@@ -16,4 +16,4 @@ tags:
 - [[ContainerEngine_2]] - `uses` [INFERRED]
 - [[ContainerInfo_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_225
+#graphify/code #graphify/INFERRED #community/Community_379

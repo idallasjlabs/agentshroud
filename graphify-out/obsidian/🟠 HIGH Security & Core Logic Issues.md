@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/REPORTED_ISSUES.md"
 type: "document"
-community: "Community 984"
+community: "Community 501"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_984
+  - community/Community_501
 ---
 
 # 🟠 HIGH: Security & Core Logic Issues
@@ -19,4 +19,4 @@ tags:
 - [[8. ForwardResponse Type Mismatch]] - `contains` [EXTRACTED]
 - [[AgentShroud™ Consolidated Issues Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_984
+#graphify/document #graphify/EXTRACTED #community/Community_501

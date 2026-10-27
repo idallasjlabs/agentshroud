@@ -27,8 +27,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 60]]
-- 2 edges to [[_COMMUNITY_Community 11]]
+- 3 edges to [[_COMMUNITY_Community 11]]
+- 1 edge to [[_COMMUNITY_Community 79]]
+- 1 edge to [[_COMMUNITY_Community 60]]
 
 ## Top bridge nodes
-- [[TestBotIdIsolationInSharedMemory]] - degree 10, connects to 2 communities
+- [[TestBotIdIsolationInSharedMemory]] - degree 10, connects to 3 communities

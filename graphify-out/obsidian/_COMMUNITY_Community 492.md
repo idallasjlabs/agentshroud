@@ -36,7 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 181]]
+- 2 edges to [[_COMMUNITY_Community 2030]]
 
 ## Top bridge nodes
 - [[load_payload()]] - degree 5, connects to 1 community

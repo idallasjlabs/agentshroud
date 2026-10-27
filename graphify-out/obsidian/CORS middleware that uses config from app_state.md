@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Community 6"
+community: "Community 254"
 location: "L253"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_254
 ---
 
 # CORS middleware that uses config from app_state
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[cors_middleware()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/Community_254

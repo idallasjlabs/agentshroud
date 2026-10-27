@@ -1,11 +1,11 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Community 947"
+community: "Community 637"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_947
+  - community/Community_637
 ---
 
 # MCP Server Integration Guide
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[MCP Proxy]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_947
+#graphify/document #graphify/INFERRED #community/Community_637

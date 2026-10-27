@@ -1,37 +1,44 @@
 ---
 type: community
-members: 24
+members: 31
 ---
 
 # Community 203
 
-**Members:** 24 nodes
+**Members:** 31 nodes
 
 ## Members
-- [[._maybe_record_trust_violation()]] - code - gateway/proxy/pipeline.py
-- [[._process_inbound_core()]] - code - gateway/proxy/pipeline.py
-- [[._process_outbound_core()]] - code - gateway/proxy/pipeline.py
-- [[.append()]] - code - gateway/proxy/pipeline.py
-- [[.append_block()]] - code - gateway/proxy/pipeline.py
-- [[.append_owner_bypass()]] - code - gateway/proxy/pipeline.py
-- [[.entries()_1]] - code - gateway/proxy/pipeline.py
-- [[.get_stats()_6]] - code - gateway/proxy/pipeline.py
-- [[.process_inbound()]] - code - gateway/proxy/pipeline.py
-- [[.process_outbound()]] - code - gateway/proxy/pipeline.py
-- [[.to_dict()_1]] - code - gateway/proxy/pipeline.py
-- [[.verify_audit_chain()]] - code - gateway/proxy/pipeline.py
-- [[.verify_chain()_1]] - code - gateway/proxy/pipeline.py
-- [[An entry in the SHA-256 hash chain audit ledger.]] - rationale - gateway/proxy/pipeline.py
-- [[Any_19]] - code - gateway/proxy/pipeline.py
-- [[Append to the chain with guaranteed SQLite persistence.          Used exclusivel]] - rationale - gateway/proxy/pipeline.py
-- [[AuditChainEntry]] - code - gateway/proxy/pipeline.py
-- [[Process an inbound message through the full security pipeline.]] - rationale - gateway/proxy/pipeline.py
-- [[Process an inbound message through the full security pipeline.          Thin wra]] - rationale - gateway/proxy/pipeline.py
-- [[Process an outbound response through the security pipeline.]] - rationale - gateway/proxy/pipeline.py
-- [[Process an outbound response through the security pipeline.          Thin wrappe]] - rationale - gateway/proxy/pipeline.py
-- [[Record a trust-score violation and propagate cross-bot decay.          Called on]] - rationale - gateway/proxy/pipeline.py
-- [[Record an owner guard-bypass in the tamper-evident chain (SCRUM-95).          Th]] - rationale - gateway/proxy/pipeline.py
-- [[Verify the integrity of the retained hash-chain window.          When the bounde]] - rationale - gateway/proxy/pipeline.py
+- [[.__init__()_95]] - code - gateway/security/memory_integrity.py
+- [[._load_integrity_database()]] - code - gateway/security/memory_integrity.py
+- [[._load_write_windows()]] - code - gateway/security/memory_integrity.py
+- [[._save_write_windows()]] - code - gateway/security/memory_integrity.py
+- [[.from_dict()_8]] - code - gateway/security/memory_integrity.py
+- [[.get_integrity_status()]] - code - gateway/security/memory_integrity.py
+- [[.get_recent_alerts()]] - code - gateway/security/memory_integrity.py
+- [[.register_expected_write()]] - code - gateway/security/memory_integrity.py
+- [[.setup_method()_9]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.to_dict()_11]] - code - gateway/security/memory_integrity.py
+- [[Any_48]] - code - gateway/security/memory_integrity.py
+- [[Configuration for memory file integrity monitoring.]] - rationale - gateway/security/memory_config.py
+- [[Convert to dictionary for JSON serialization.]] - rationale - gateway/security/memory_integrity.py
+- [[Create from dictionary for JSON deserialization.]] - rationale - gateway/security/memory_integrity.py
+- [[FileIntegrityRecord]] - code - gateway/security/memory_integrity.py
+- [[Get alerts from the last N hours.]] - rationale - gateway/security/memory_integrity.py
+- [[Get current integrity monitoring status.]] - rationale - gateway/security/memory_integrity.py
+- [[Load active write windows from disk.]] - rationale - gateway/security/memory_integrity.py
+- [[Load integrity database from disk.]] - rationale - gateway/security/memory_integrity.py
+- [[MemoryIntegrityConfig]] - code - gateway/security/memory_config.py
+- [[MemoryIntegrityConfig_1]] - code - gateway/security/memory_integrity.py
+- [[MemoryIntegrityMonitor]] - code - gateway/security/memory_integrity.py
+- [[ModificationSource]] - code - gateway/security/memory_integrity.py
+- [[Monitors integrity of critical memory files.]] - rationale - gateway/security/memory_integrity.py
+- [[Record of a file's integrity state.]] - rationale - gateway/security/memory_integrity.py
+- [[Register an expected write to a file to prevent false alerts.]] - rationale - gateway/security/memory_integrity.py
+- [[Save active write windows to disk.]] - rationale - gateway/security/memory_integrity.py
+- [[Set up test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Source of a file modification.]] - rationale - gateway/security/memory_integrity.py
+- [[memory_config.py]] - code - gateway/security/memory_config.py
+- [[memory_integrity.py]] - code - gateway/security/memory_integrity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,16 +48,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 24]]
-- 7 edges to [[_COMMUNITY_Community 84]]
-- 6 edges to [[_COMMUNITY_Community 63]]
-- 2 edges to [[_COMMUNITY_Community 88]]
-- 2 edges to [[_COMMUNITY_Community 11]]
-- 2 edges to [[_COMMUNITY_Community 6]]
+- 16 edges to [[_COMMUNITY_Community 16]]
+- 13 edges to [[_COMMUNITY_Community 1016]]
+- 11 edges to [[_COMMUNITY_Community 72]]
+- 5 edges to [[_COMMUNITY_Community 986]]
+- 4 edges to [[_COMMUNITY_Community 104]]
+- 2 edges to [[_COMMUNITY_Community 8]]
+- 1 edge to [[_COMMUNITY_Community 489]]
+- 1 edge to [[_COMMUNITY_Community 1]]
+- 1 edge to [[_COMMUNITY_Community 2333]]
 
 ## Top bridge nodes
-- [[Any_19]] - degree 14, connects to 4 communities
-- [[AuditChainEntry]] - degree 11, connects to 4 communities
-- [[._process_inbound_core()]] - degree 8, connects to 2 communities
-- [[._process_outbound_core()]] - degree 7, connects to 2 communities
-- [[.process_inbound()]] - degree 6, connects to 2 communities
+- [[MemoryIntegrityMonitor]] - degree 41, connects to 6 communities
+- [[MemoryIntegrityConfig]] - degree 18, connects to 5 communities
+- [[ModificationSource]] - degree 13, connects to 4 communities
+- [[memory_config.py]] - degree 3, connects to 2 communities
+- [[FileIntegrityRecord]] - degree 7, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "Community 1342"
+community: "Community 26"
 location: "L21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1342
+  - community/Community_26
 ---
 
 # Test path isolation configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPathIsolationConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1342
+#graphify/rationale #graphify/EXTRACTED #community/Community_26

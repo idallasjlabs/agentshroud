@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "rationale"
-community: "Community 24"
+community: "Community 104"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/Community_104
 ---
 
 # Install warning filter once for uvicorn logger.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_install_uvicorn_warning_filter()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_24
+#graphify/rationale #graphify/EXTRACTED #community/Community_104

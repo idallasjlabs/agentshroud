@@ -1,19 +1,20 @@
 ---
 type: community
-members: 6
+members: 7
 ---
 
 # Community 2053
 
-**Members:** 6 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[.test_expired_session_rejected()]] - code - gateway/tests/test_session_security.py
-- [[.test_unknown_session_rejected()]] - code - gateway/tests/test_session_security.py
-- [[.test_valid_session_accepted()]] - code - gateway/tests/test_session_security.py
-- [[.test_wrong_ip_rejected()]] - code - gateway/tests/test_session_security.py
-- [[.test_wrong_user_agent_rejected()]] - code - gateway/tests/test_session_security.py
-- [[TestSessionValidation]] - code - gateway/tests/test_session_security.py
+- [[Fallback Behavior]] - document - docs/vault/05 - Dependencies/spacy.md
+- [[First-Boot Performance]] - document - docs/vault/05 - Dependencies/spacy.md
+- [[Model]] - document - docs/vault/05 - Dependencies/spacy.md
+- [[Purpose_194]] - document - docs/vault/05 - Dependencies/spacy.md
+- [[Related Notes_49]] - document - docs/vault/05 - Dependencies/spacy.md
+- [[Where Used_5]] - document - docs/vault/05 - Dependencies/spacy.md
+- [[spaCy]] - document - docs/vault/05 - Dependencies/spacy.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,10 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 76]]
-- 3 edges to [[_COMMUNITY_Community 108]]
-- 1 edge to [[_COMMUNITY_Community 2052]]
+- 1 edge to [[_COMMUNITY_Community 1015]]
 
 ## Top bridge nodes
-- [[TestSessionValidation]] - degree 12, connects to 3 communities
-- [[.test_expired_session_rejected()]] - degree 2, connects to 1 community
+- [[spaCy]] - degree 7, connects to 1 community

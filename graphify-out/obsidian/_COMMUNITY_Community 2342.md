@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_code_block_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test that function_calls XML blocks are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[.test_healthcheck_skill_sandbox_error_with_cannot_is_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Cannot access' phrasing should be rewritten for healthcheck SKILL.md sandbox mes]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 98]]
+- 1 edge to [[_COMMUNITY_Community 626]]
+- 1 edge to [[_COMMUNITY_Community 2]]
+- 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[.test_code_block_filtering()]] - degree 2, connects to 1 community
+- [[.test_healthcheck_skill_sandbox_error_with_cannot_is_rewritten()]] - degree 4, connects to 3 communities

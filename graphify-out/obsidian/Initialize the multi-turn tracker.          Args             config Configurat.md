@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "Community 72"
+community: "Community 1558"
 location: "L95"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_1558
 ---
 
 # Initialize the multi-turn tracker.          Args:             config: Configurat
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.__init__()_100]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_72
+#graphify/rationale #graphify/EXTRACTED #community/Community_1558

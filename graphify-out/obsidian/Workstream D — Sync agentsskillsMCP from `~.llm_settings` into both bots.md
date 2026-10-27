@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/v1.2.0-master-plan.md"
 type: "document"
-community: "Community 387"
+community: "Community 2100"
 location: "L148"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_387
+  - community/Community_2100
 ---
 
 # Workstream D — Sync agents/skills/MCP from `~/.llm_settings` into both bots
@@ -24,4 +24,4 @@ tags:
 - [[Tests to add]] - `contains` [EXTRACTED]
 - [[Tests to add_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_387
+#graphify/document #graphify/EXTRACTED #community/Community_2100

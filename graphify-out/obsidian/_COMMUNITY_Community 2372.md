@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.config()_4]] - code - gateway/tests/test_path_isolation.py
-- [[Create test configuration._1]] - rationale - gateway/tests/test_path_isolation.py
+- [[.test_plain_no_reply_token_for_collaborator_gets_protected_notice()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Collaborator plain NO_REPLY should become protected unavailable notice.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,8 +19,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 26]]
+- 1 edge to [[_COMMUNITY_Community 626]]
+- 1 edge to [[_COMMUNITY_Community 2]]
+- 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[.config()_4]] - degree 3, connects to 2 communities
+- [[.test_plain_no_reply_token_for_collaborator_gets_protected_notice()]] - degree 4, connects to 3 communities

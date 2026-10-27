@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Community 41"
+community: "Community 30"
 location: "L470"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_41
+  - community/Community_30
 ---
 
 # test_persist_pending_store_writes_atomically()
@@ -17,4 +17,4 @@ tags:
 - [[SCRUM-110 writes go through a temp file + os.replace so a crash     mid-write c]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_41
+#graphify/code #graphify/EXTRACTED #community/Community_30

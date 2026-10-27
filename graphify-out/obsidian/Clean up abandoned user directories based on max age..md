@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "Community 72"
+community: "Community 26"
 location: "L244"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_26
 ---
 
 # Clean up abandoned user directories based on max age.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.cleanup_abandoned_directories()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_72
+#graphify/rationale #graphify/EXTRACTED #community/Community_26

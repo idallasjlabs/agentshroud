@@ -8,17 +8,17 @@ members: 11
 **Members:** 11 nodes
 
 ## Members
-- [[._setup_proxy_with_capture()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_collab_notified_at_alert_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_collab_notified_at_escalated_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_collab_notified_at_suspended_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_collab_notified_only_once_per_level()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_no_collab_notice_below_alert()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_owner_also_notified_on_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[Owner should receive an escalation notice on the 3rd block.]] - rationale - gateway/tests/test_progressive_lockdown.py
-- [[TestCollabLockdownNotifications]] - code - gateway/tests/test_progressive_lockdown.py
-- [[The 4th block stays at ALERT but must NOT fire a second notification.]] - rationale - gateway/tests/test_progressive_lockdown.py
-- [[Verify _quarantine_blocked_message sends threshold warnings to the collaborator.]] - rationale - gateway/tests/test_progressive_lockdown.py
+- [[._calculate_similarity()]] - code - gateway/security/prompt_protection.py
+- [[._redact_fuzzy_match()]] - code - gateway/security/prompt_protection.py
+- [[.scan_response()_2]] - code - gateway/security/prompt_protection.py
+- [[A piece of content that should be protected from disclosure.]] - rationale - gateway/security/prompt_protection.py
+- [[Calculate similarity between text and protected content.]] - rationale - gateway/security/prompt_protection.py
+- [[ProtectedContent]] - code - gateway/security/prompt_protection.py
+- [[Redact text that fuzzy matches protected content.]] - rationale - gateway/security/prompt_protection.py
+- [[RedactionResult_2]] - code - gateway/security/prompt_protection.py
+- [[Result of scanning and redacting content.]] - rationale - gateway/security/prompt_protection.py
+- [[Scan text for protected content and return redacted version.          Args]] - rationale - gateway/security/prompt_protection.py
+- [[prompt_protection.py]] - code - gateway/security/prompt_protection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,9 +28,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 75]]
-- 1 edge to [[_COMMUNITY_Community 14]]
+- 5 edges to [[_COMMUNITY_Community 532]]
+- 1 edge to [[_COMMUNITY_Community 984]]
 
 ## Top bridge nodes
-- [[TestCollabLockdownNotifications]] - degree 12, connects to 2 communities
-- [[._setup_proxy_with_capture()]] - degree 8, connects to 1 community
+- [[prompt_protection.py]] - degree 4, connects to 2 communities
+- [[ProtectedContent]] - degree 5, connects to 1 community
+- [[.scan_response()_2]] - degree 5, connects to 1 community
+- [[._calculate_similarity()]] - degree 4, connects to 1 community
+- [[._redact_fuzzy_match()]] - degree 4, connects to 1 community

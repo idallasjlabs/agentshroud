@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
 type: "document"
-community: "Community 2010"
+community: "Community 162"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2010
+  - community/Community_162
 ---
 
 # Value
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2010
+#graphify/document #graphify/EXTRACTED #community/Community_162

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Community 6"
+community: "Community 61"
 location: "L170"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_61
 ---
 
 # Check if user is the owner (any platform).
@@ -15,4 +15,4 @@ tags:
 - [[.is_operator_or_higher()]] - `rationale_for` [EXTRACTED]
 - [[.is_owner()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

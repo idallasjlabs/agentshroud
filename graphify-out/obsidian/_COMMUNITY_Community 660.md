@@ -35,7 +35,7 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_Community 37]]
 - 2 edges to [[_COMMUNITY_Community 43]]
 - 2 edges to [[_COMMUNITY_Community 100]]
-- 1 edge to [[_COMMUNITY_Community 181]]
+- 1 edge to [[_COMMUNITY_Community 2030]]
 
 ## Top bridge nodes
 - [[TestHandleEvent]] - degree 10, connects to 3 communities

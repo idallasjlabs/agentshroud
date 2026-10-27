@@ -1,27 +1,65 @@
 ---
 type: community
-members: 110
+members: 192
 ---
 
 # Community 99
 
-**Members:** 110 nodes
+**Members:** 192 nodes
 
 ## Members
 - [[.__init__()_62]] - code - gateway/security/collaborator_tracker.py
 - [[._append_contributor_log()]] - code - gateway/security/collaborator_tracker.py
 - [[._coerce_timestamp()]] - code - gateway/security/collaborator_tracker.py
-- [[._make_proxy()_5]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[._fake_get_updates_urlopen()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[._make_proxy_with_mock_buffer()]] - code - gateway/tests/test_telegram_proxy_outbound.py
 - [[._normalize_preview()]] - code - gateway/security/collaborator_tracker.py
 - [[._normalize_username()]] - code - gateway/security/collaborator_tracker.py
 - [[.get_activity()]] - code - gateway/security/collaborator_tracker.py
 - [[.get_activity_summary()]] - code - gateway/security/collaborator_tracker.py
 - [[.get_health()_1]] - code - gateway/security/collaborator_tracker.py
 - [[.record_activity()]] - code - gateway/security/collaborator_tracker.py
-- [[.test_400_retry_no_loop()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_400_retry_succeeds_when_text_strippable()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_collaboration_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_execute_verb_is_blocked()]] - code - gateway/tests/test_telegram_proxy_outbound.py
 - [[.test_failed_write_makes_unhealthy()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_false_on_empty_string()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_false_on_non_string()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_file_query_is_blocked()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_formatting_trick_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_greeting_bypasses_interrogative_requirement()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_greeting_good_morning_is_safe()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_greeting_hello_is_safe()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_greeting_hey_is_safe()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_greeting_hi_is_safe()]] - code - gateway/tests/test_telegram_proxy_outbound.py
 - [[.test_initial_state_healthy()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_accepts_hyphenated_inner_label()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_accepts_mixed_case_domain()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_accepts_numeric_inner_labels()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_accepts_standard_host()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_accepts_uppercase_input_via_normalization()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_enforces_tld_rules()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_handles_none_input()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_rejects_empty_or_whitespace()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_rejects_leading_or_trailing_dot()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_rejects_malformed_hosts()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_rejects_overlong_domain()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_rejects_overlong_label()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_rejects_punycode_and_non_ascii_labels()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_rejects_single_label_host()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_rejects_underscore_label()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_rejects_whitespace_inside_label()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_strips_surrounding_whitespace()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_json_body_still_calls_mark_delivered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_no_false_positive_on_domain_mention()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_no_false_positive_on_generic_llm_response()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_no_match_without_tokens()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_password_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_pii_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_protection_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_refuse_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_resolve_text_field_falls_back_to_first_string_when_all_empty()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_resolve_text_field_prefers_first_non_empty_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_restrict_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
 - [[.test_rewrite_known_runtime_errors_accepts_hyphen_delimiter()]] - code - gateway/tests/test_telegram_proxy_outbound.py
 - [[.test_rewrite_known_runtime_errors_accepts_underscore_delimiter()]] - code - gateway/tests/test_telegram_proxy_outbound.py
 - [[.test_rewrite_known_runtime_errors_handles_non_string_input()]] - code - gateway/tests/test_telegram_proxy_outbound.py
@@ -32,26 +70,40 @@ members: 110
 - [[.test_rewrite_known_runtime_errors_matches_no_response_generated_phrase()]] - code - gateway/tests/test_telegram_proxy_outbound.py
 - [[.test_rewrite_known_runtime_errors_requires_skill_marker_for_healthcheck_branch()]] - code - gateway/tests/test_telegram_proxy_outbound.py
 - [[.test_rewrite_known_runtime_errors_returns_none_for_unrelated_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_sanitiz_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_security_model_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_true_on_callback_token()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_true_on_deny_token()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_true_on_real_egress_banner_header()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_url_encoded_body_calls_mark_delivered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_what_can_you_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
 - [[10-digit real UID must still be written to JSONL and markdown.]] - rationale - gateway/tests/test_collaborator_tracker.py
 - [[Append one activity entry for any tracked collaborator or the owner.          Ar]] - rationale - gateway/security/collaborator_tracker.py
 - [[B1 one-shot 400-retry for unbalanced HTML parse errors.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 - [[Best-effort float timestamp coercion for resilient log reads.]] - rationale - gateway/security/collaborator_tracker.py
+- [[Classifier for conceptual collaborator questions.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 - [[CollaboratorActivityTracker]] - code - gateway/security/collaborator_tracker.py
 - [[CollaboratorActivityTracker_1]] - code - gateway/tests/test_lifespan_prune.py
 - [[CollaboratorActivityTracker.get_health() must return accurate counters.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Common LLM prose with 'risk', 'tool', 'id' must NOT trigger the matcher.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 - [[Create a fake contributor markdown file for the given uid.]] - rationale - gateway/tests/test_lifespan_prune.py
-- [[First sendMessage returns 400 'can't parse entities'; retry with plain text succ]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Generic 'domain' mention without the egress emoji must not trigger.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 - [[IDs  10000 should be treated as test fixtures by the pruner heuristic.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[Inline-keyboard callback tokens must always match (egress_allow_always_uuid).]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[JSON getUpdates body must still call mark_delivered (existing behaviour preserve]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 - [[Mirror activity into workspace contributor logs used by daily digests.]] - rationale - gateway/security/collaborator_tracker.py
+- [[Multipart captions must get the full pipeline scan, not just the XML filter.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 - [[Normalize previews to single-line safe text for JSONL + markdown mirrors.]] - rationale - gateway/security/collaborator_tracker.py
 - [[Normalize username for safe contributor-log tokenization.]] - rationale - gateway/security/collaborator_tracker.py
+- [[Outbound filter must redact egress banners but NOT call _send_owner_admin_notice]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 - [[Owner messages are now recorded with is_owner=True (not silently dropped).]] - rationale - gateway/tests/test_collaborator_tracker.py
 - [[Owner's Telegram first_name with pipe chars is replaced by owner_display_name.]] - rationale - gateway/tests/test_collaborator_tracker.py
 - [[Path_9]] - code - gateway/security/collaborator_tracker.py
 - [[Path_32]] - code - gateway/tests/test_lifespan_prune.py
-- [[Persistent 400 returns the error after exactly one retry (no infinite loop).]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 - [[Real Telegram UIDs (9-10 digits) must NOT be pruned.]] - rationale - gateway/tests/test_collaborator_tracker.py
 - [[Real-UID markdown files must never be deleted by the prune pass.]] - rationale - gateway/tests/test_lifespan_prune.py
+- [[Regression tests for Telegram HTML parse error caused by PII placeholders.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Regression tests for the JSONformmultipart scan unification.      Each test pi]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 - [[Return True when uid looks like a test fixture that should be silently dropped.]] - rationale - gateway/security/collaborator_tracker.py
 - [[Return a health snapshot suitable for statusdetail.]] - rationale - gateway/security/collaborator_tracker.py
 - [[Return activity entries sorted newest-first.          Args             since U]] - rationale - gateway/security/collaborator_tracker.py
@@ -59,20 +111,48 @@ members: 110
 - [[Run the same markdown-prune logic as lifespan.py and return pruned count.]] - rationale - gateway/tests/test_lifespan_prune.py
 - [[Short numeric UIDs ( 7 digits) must be silently dropped before any write.]] - rationale - gateway/tests/test_collaborator_tracker.py
 - [[Startup prune must remove fixture markdown files from every contributor dir.]] - rationale - gateway/tests/test_lifespan_prune.py
+- [[TestDomainValidationHelper]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestEgressBannerRedactionNoOwnerNotice]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestForwardToTelegramTimeouts]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestInternalBannerMatcher]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestLooksLikeSafeCollaboratorInfoQuery]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestMultipartOutboundPipeline]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestOutboundScanUnification]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestOutboundTextFieldResolution]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestOwnerActivityNotice]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestOwnerMirrorCoalescing]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestParseModeStrippedAfterPIIRedaction]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestPendingNoticeIncludesEgressSection]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestReplayBufferOffsetParsing]] - code - gateway/tests/test_telegram_proxy_outbound.py
 - [[TestRuntimeRewriteHelpers]] - code - gateway/tests/test_telegram_proxy_outbound.py
 - [[TestTelegram400Retry]] - code - gateway/tests/test_telegram_proxy_outbound.py
 - [[TestTrackerGetHealth]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestWebSearchLog]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Tests for TelegramAPIProxy outbound security pipeline integration.  Proves that]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Tests for _trigger_web_search_log and raw web_search JSON outbound handling.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Tests that _forward_to_telegram uses correct urlopen timeouts.      Regression g]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[The canonical 🌐 Egress Request header from TelegramEgressNotifier must match.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 - [[Tracks collaborator messages at the gateway level.      Records every inbound me]] - rationale - gateway/security/collaborator_tracker.py
 - [[UIDs matching test_user prefix must be silently dropped.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[URL-encoded getUpdates body must call mark_delivered with the correct int offset]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 - [[Unit tests for deterministic runtime error rewrite helper behavior.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Unit tests for domain validator used by egress approval flow.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Unit tests for outbound text field resolution helper behavior.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Verify URL-encoded and JSON getUpdates bodies both trigger mark_delivered correc]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[_contains_internal_approval_banner must only fire on real egress banners.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 - [[_is_fixture_uid()]] - code - gateway/security/collaborator_tracker.py
 - [[_make_md()]] - code - gateway/tests/test_lifespan_prune.py
+- [[_mirror_to_owner_if_collaborator must coalesce within the window.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 - [[_prune_fixture_markdown()]] - code - gateway/tests/test_lifespan_prune.py
+- [[_send_owner_activity_notice must render tracker entries or honest error.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[_send_owner_pending_notice must append Pending Egress Requests when queue non-em]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 - [[collaborator_tracker.py]] - code - gateway/security/collaborator_tracker.py
+- [[egress_deny_ callback token must match.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 - [[get_activity(bot_id=...) returns only entries matching that bot_id.]] - rationale - gateway/tests/test_collaborator_tracker.py
 - [[get_activity_summary returns a by_bot breakdown keyed by bot_id.]] - rationale - gateway/tests/test_collaborator_tracker.py
 - [[get_activity_summary returns empty by_bot when no log file exists.]] - rationale - gateway/tests/test_collaborator_tracker.py
 - [[log_file()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[process_webhook passes agent_id as bot_id to record_activity.]] - rationale - gateway/tests/test_collaborator_tracker.py
 - [[record_activity with bot_id='hermes' stores bot_id in the entry.]] - rationale - gateway/tests/test_collaborator_tracker.py
 - [[record_activity without bot_id stores bot_id=None in the entry.]] - rationale - gateway/tests/test_collaborator_tracker.py
 - [[test_collaborator_entry_has_is_owner_false()]] - code - gateway/tests/test_collaborator_tracker.py
@@ -113,10 +193,12 @@ members: 110
 - [[test_summary_empty_when_no_file()]] - code - gateway/tests/test_collaborator_tracker.py
 - [[test_summary_handles_non_numeric_timestamps()]] - code - gateway/tests/test_collaborator_tracker.py
 - [[test_summary_last_activity_is_latest_timestamp()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_telegram_proxy_outbound.py]] - code - gateway/tests/test_telegram_proxy_outbound.py
 - [[test_test_user_prefix_blocked()]] - code - gateway/tests/test_collaborator_tracker.py
 - [[test_unknown_user_is_skipped()]] - code - gateway/tests/test_collaborator_tracker.py
 - [[test_unknown_user_recorded_when_dynamic_tracking_enabled()]] - code - gateway/tests/test_collaborator_tracker.py
 - [[test_username_is_normalized_for_log_safety()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_webhook_receiver_passes_agent_id_as_bot_id()]] - code - gateway/tests/test_collaborator_tracker.py
 - [[tracker()]] - code - gateway/tests/test_collaborator_tracker.py
 
 ## Live Query (requires Dataview plugin)
@@ -127,24 +209,24 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 20 edges to [[_COMMUNITY_Community 84]]
-- 3 edges to [[_COMMUNITY_Community 24]]
-- 3 edges to [[_COMMUNITY_Community 14]]
+- 36 edges to [[_COMMUNITY_Community 7]]
+- 18 edges to [[_COMMUNITY_Community 14]]
+- 13 edges to [[_COMMUNITY_Community 626]]
+- 11 edges to [[_COMMUNITY_Community 436]]
+- 10 edges to [[_COMMUNITY_Community 845]]
+- 5 edges to [[_COMMUNITY_Community 889]]
+- 4 edges to [[_COMMUNITY_Community 104]]
 - 3 edges to [[_COMMUNITY_Community 43]]
-- 3 edges to [[_COMMUNITY_Community 845]]
-- 1 edge to [[_COMMUNITY_Community 480]]
-- 1 edge to [[_COMMUNITY_Community 516]]
-- 1 edge to [[_COMMUNITY_Community 128]]
-- 1 edge to [[_COMMUNITY_Community 738]]
-- 1 edge to [[_COMMUNITY_Community 479]]
-- 1 edge to [[_COMMUNITY_Community 353]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 2009]]
-- 1 edge to [[_COMMUNITY_Community 626]]
+- 3 edges to [[_COMMUNITY_Community 1074]]
+- 3 edges to [[_COMMUNITY_Community 2325]]
+- 2 edges to [[_COMMUNITY_Community 480]]
+- 2 edges to [[_COMMUNITY_Community 128]]
+- 2 edges to [[_COMMUNITY_Community 353]]
+- 2 edges to [[_COMMUNITY_Community 2]]
 
 ## Top bridge nodes
-- [[CollaboratorActivityTracker]] - degree 52, connects to 12 communities
-- [[TestRuntimeRewriteHelpers]] - degree 16, connects to 2 communities
-- [[TestTelegram400Retry]] - degree 9, connects to 2 communities
-- [[TestTrackerGetHealth]] - degree 8, connects to 2 communities
-- [[._make_proxy()_5]] - degree 5, connects to 2 communities
+- [[test_telegram_proxy_outbound.py]] - degree 30, connects to 10 communities
+- [[CollaboratorActivityTracker]] - degree 52, connects to 7 communities
+- [[TestOutboundScanUnification]] - degree 13, connects to 5 communities
+- [[TestWebSearchLog]] - degree 11, connects to 4 communities
+- [[TestOwnerActivityNotice]] - degree 8, connects to 4 communities

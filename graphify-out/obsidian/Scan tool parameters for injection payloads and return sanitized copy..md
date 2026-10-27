@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "Community 8"
+community: "Community 72"
 location: "L588"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_8
+  - community/Community_72
 ---
 
 # Scan tool parameters for injection payloads and return sanitized copy.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.sanitize_tool_params()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_8
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

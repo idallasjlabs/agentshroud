@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "Community 6"
+community: "Community 61"
 location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_61
 ---
 
 # Per-tool call rate limit configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolRateLimit]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

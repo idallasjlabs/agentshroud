@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "rationale"
-community: "Community 5"
+community: "Community 1945"
 location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_5
+  - community/Community_1945
 ---
 
 # Recreate the lifespan bridge closure verbatim from gateway/ingest_api/lifespan.p
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._build_bridge()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_5
+#graphify/rationale #graphify/EXTRACTED #community/Community_1945

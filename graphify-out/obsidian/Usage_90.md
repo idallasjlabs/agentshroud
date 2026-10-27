@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec-offense/README.md"
 type: "document"
-community: "Community 2073"
+community: "Community 90"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2073
+  - community/Community_90
 ---
 
 # Usage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Red Team Adversarial Tester (SEC-OFFENSE)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2073
+#graphify/document #graphify/EXTRACTED #community/Community_90

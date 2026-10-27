@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "Community 41"
+community: "Community 30"
 location: "L87"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_41
+  - community/Community_30
 ---
 
 # Test rejecting a pending request
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_decide_approval_reject()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_41
+#graphify/rationale #graphify/EXTRACTED #community/Community_30

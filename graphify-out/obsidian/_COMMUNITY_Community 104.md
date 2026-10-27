@@ -1,55 +1,113 @@
 ---
 type: community
-members: 54
+members: 112
 ---
 
 # Community 104
 
-**Members:** 54 nodes
+**Members:** 112 nodes
 
 ## Members
+- [[NOTE Gateway-side Slack Socket Mode listener removed.]] - rationale - gateway/ingest_api/lifespan.py
 - [[NOTE This branch ships hot-reload of the config FILE only. The web config]] - rationale - gateway/ingest_api/config.py
+- [[.__init__()_12]] - code - gateway/ingest_api/event_bus.py
+- [[.filter()]] - code - gateway/ingest_api/lifespan.py
 - [[.model_post_init()]] - code - gateway/ingest_api/config.py
+- [[.subscribe()]] - code - gateway/ingest_api/event_bus.py
+- [[.test_get_module_mode_enforce_override()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_get_module_mode_no_env_override()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_get_module_mode_no_override()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_get_module_mode_with_override()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_global_monitor_override_downgrades_all()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_monitor_mode_warning_message_format()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_monitor_mode_warnings_all_modules()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_monitor_mode_warnings_no_warnings_in_enforce()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_pii_sanitizer_default_action()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_security_config_all_defaults_enforce()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_security_config_dns_filter_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_egress_filter_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_egress_monitor_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_killswitch_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_mcp_proxy_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_pii_sanitizer_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_prompt_guard_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_subagent_monitor_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_module_config_default_mode()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_module_config_defaults()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.unsubscribe()]] - code - gateway/ingest_api/event_bus.py
+- [[3+ auth failures within 5 minutes escalates event severity to critical]] - concept - gateway/tests/test_event_bus.py
 - [[A missing file (mtime -1.0) must not trigger a reload (no reject storm).]] - rationale - gateway/tests/test_config_hot_reload.py
 - [[A structurally-valid YAML that violates the pydantic schema is rejected.]] - rationale - gateway/tests/test_config_hot_reload.py
+- [[AGENTSHROUD_MODE=monitor must downgrade ALL modules to monitor.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[Attach BufferHandler to the root agentshroud logger.]] - rationale - gateway/web/dashboard_endpoints.py
 - [[AuditExportConfig]] - code - gateway/ingest_api/config.py
 - [[Background mtime-poll watcher reload the config when the file changes.      Pol]] - rationale - gateway/ingest_api/config.py
 - [[CI has no real agentshroud.yaml (gitignored, per-deployment secret     config) —]] - rationale - gateway/tests/conftest.py
-- [[Channel ownership configuration (P3 Telegram + email oversight, P5 iMessage)]] - rationale - gateway/ingest_api/config.py
-- [[ChannelsConfig]] - code - gateway/ingest_api/config.py
+- [[Complete security configuration]] - rationale - gateway/ingest_api/config.py
 - [[Configuration for compliance audit export functionality.]] - rationale - gateway/ingest_api/config.py
 - [[Copy only the reloadable-field subset from ``new`` onto ``current`` in place.]] - rationale - gateway/ingest_api/config.py
-- [[Dependency Graph_1]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
-- [[Dependency Graph]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[EventBus]] - code - gateway/ingest_api/event_bus.py
 - [[Every GatewayConfig field is classified exactly once, disjointly.]] - rationale - gateway/tests/test_config_hot_reload.py
+- [[FastAPI_1]] - code - gateway/ingest_api/lifespan.py
+- [[FastAPI lifespan - startup and shutdown]] - rationale - gateway/ingest_api/lifespan.py
 - [[File mtime changes but no reloadable field differs — reload still succeeds.]] - rationale - gateway/tests/test_config_hot_reload.py
-- [[Gateway Module Dependencies]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
-- [[Gateway Startup Initialization Order]] - concept - docs/vault/09 - Diagrams/Dependency Graph.md
 - [[GatewayConfig_3]] - code - gateway/tests/test_config_hot_reload.py
-- [[Key Initialization Order (main.py lifespan)]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Install warning filter once for uvicorn logger.]] - rationale - gateway/ingest_api/lifespan.py
+- [[Log warnings for any core modules running in monitor mode.]] - rationale - gateway/ingest_api/config.py
+- [[LogRecord]] - code - gateway/ingest_api/lifespan.py
 - [[Path_1]] - code - gateway/ingest_api/config.py
 - [[Path_25]] - code - gateway/tests/test_config_hot_reload.py
-- [[Python Package Dependencies]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
 - [[README_127]] - document - gateway/README.md
 - [[Re-parse and validate ``config_path``; atomically swap in reloadable fields.]] - rationale - gateway/ingest_api/config.py
-- [[Related Notes_70]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Resolve each configured bot's OWN Telegram token, distinct from the default.]] - rationale - gateway/ingest_api/lifespan.py
 - [[Resolve the config file path using the same search order as load_config().]] - rationale - gateway/ingest_api/config.py
+- [[Return module mode, respecting the global permissive override.]] - rationale - gateway/ingest_api/config.py
 - [[Return the file mtime, or -1.0 if the file is missing (treated as no-op).]] - rationale - gateway/ingest_api/config.py
+- [[Security module configuration]] - rationale - gateway/ingest_api/config.py
+- [[SecurityConfig_3]] - code - gateway/ingest_api/config.py
+- [[SecurityModuleConfig]] - code - gateway/ingest_api/config.py
+- [[Simple in-process event bus with async support]] - rationale - gateway/ingest_api/event_bus.py
+- [[Subscribe to all events]] - rationale - gateway/ingest_api/event_bus.py
+- [[Suppress noisy uvicorn warning spam for malformed probe traffic.]] - rationale - gateway/ingest_api/lifespan.py
+- [[Test get_module_mode returns enforce when explicitly set.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test get_module_mode returns enforce when no override set.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test get_module_mode returns monitor when AGENTSHROUD_MODE=monitor.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that PII sanitizer defaults to redact action.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that SecurityModuleConfig defaults to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that all core modules default to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that core security modules default to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that monitor mode warnings contain required information.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that no warnings are logged when all modules are in enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that warnings are logged for all core modules in monitor mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[TestEnforceDefaults]] - code - gateway/tests/test_enforce_defaults.py
+- [[Unsubscribe from events]] - rationale - gateway/ingest_api/event_bus.py
+- [[_DropInvalidHTTPRequestFilter]] - code - gateway/ingest_api/lifespan.py
+- [[_build_per_bot_telegram_tokens()]] - code - gateway/ingest_api/lifespan.py
 - [[_default_mtime returns the file mtime, and -1.0 when the file is absent.]] - rationale - gateway/tests/test_config_hot_reload.py
 - [[_default_mtime()]] - code - gateway/ingest_api/config.py
 - [[_ensure_agentshroud_config_resolvable()]] - code - gateway/tests/conftest.py
+- [[_install_uvicorn_warning_filter()]] - code - gateway/ingest_api/lifespan.py
 - [[_load()]] - code - gateway/tests/test_config_hot_reload.py
 - [[_write()]] - code - gateway/tests/test_config_hot_reload.py
 - [[apply_reloadable_config()]] - code - gateway/ingest_api/config.py
+- [[check_monitor_mode_warnings()]] - code - gateway/ingest_api/config.py
 - [[config.py]] - code - gateway/ingest_api/config.py
 - [[config_watcher()]] - code - gateway/ingest_api/config.py
+- [[get_module_mode()]] - code - gateway/ingest_api/config.py
+- [[install_log_handler()]] - code - gateway/web/dashboard_endpoints.py
+- [[ledger.py]] - code - gateway/ingest_api/ledger.py
+- [[lifespan()_1]] - code - gateway/ingest_api/lifespan.py
+- [[lifespan.py]] - code - gateway/ingest_api/lifespan.py
 - [[reload_config()]] - code - gateway/ingest_api/config.py
 - [[resolve_config_path honors the explicit arg and AGENTSHROUD_CONFIG env.]] - rationale - gateway/tests/test_config_hot_reload.py
 - [[resolve_config_path()]] - code - gateway/ingest_api/config.py
+- [[router.py]] - code - gateway/ingest_api/router.py
 - [[sanitizer.py]] - code - gateway/ingest_api/sanitizer.py
+- [[state.py]] - code - gateway/ingest_api/state.py
 - [[test_apply_swaps_only_reloadable_fields()]] - code - gateway/tests/test_config_hot_reload.py
 - [[test_config_hot_reload.py]] - code - gateway/tests/test_config_hot_reload.py
 - [[test_default_mtime_reads_real_file_and_handles_missing()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_enforce_defaults.py]] - code - gateway/tests/test_enforce_defaults.py
 - [[test_field_partition_is_disjoint_and_covers_model()]] - code - gateway/tests/test_config_hot_reload.py
 - [[test_reload_applies_valid_change()]] - code - gateway/tests/test_config_hot_reload.py
 - [[test_reload_missing_file_keeps_last_good()]] - code - gateway/tests/test_config_hot_reload.py
@@ -71,32 +129,105 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 21 edges to [[_COMMUNITY_Community 7]]
-- 9 edges to [[_COMMUNITY_Community 35]]
-- 7 edges to [[_COMMUNITY_Community 24]]
-- 6 edges to [[_COMMUNITY_Community 32]]
-- 4 edges to [[_COMMUNITY_Community 72]]
-- 3 edges to [[_COMMUNITY_Community 30]]
-- 3 edges to [[_COMMUNITY_Community 84]]
+- 56 edges to [[_COMMUNITY_Community 7]]
+- 25 edges to [[_COMMUNITY_Community 72]]
+- 17 edges to [[_COMMUNITY_Community 24]]
+- 14 edges to [[_COMMUNITY_Community 35]]
+- 10 edges to [[_COMMUNITY_Community 30]]
+- 10 edges to [[_COMMUNITY_Community 11]]
+- 9 edges to [[_COMMUNITY_Community 229]]
+- 9 edges to [[_COMMUNITY_Community 978]]
+- 8 edges to [[_COMMUNITY_Community 32]]
+- 8 edges to [[_COMMUNITY_Community 61]]
+- 8 edges to [[_COMMUNITY_Community 254]]
+- 7 edges to [[_COMMUNITY_Community 85]]
+- 7 edges to [[_COMMUNITY_Community 52]]
+- 7 edges to [[_COMMUNITY_Community 22]]
+- 6 edges to [[_COMMUNITY_Community 79]]
+- 5 edges to [[_COMMUNITY_Community 1]]
+- 5 edges to [[_COMMUNITY_Community 54]]
+- 5 edges to [[_COMMUNITY_Community 17]]
+- 5 edges to [[_COMMUNITY_Community 223]]
+- 4 edges to [[_COMMUNITY_Community 590]]
+- 4 edges to [[_COMMUNITY_Community 162]]
+- 4 edges to [[_COMMUNITY_Community 27]]
+- 4 edges to [[_COMMUNITY_Community 0]]
+- 4 edges to [[_COMMUNITY_Community 99]]
+- 4 edges to [[_COMMUNITY_Community 205]]
+- 4 edges to [[_COMMUNITY_Community 203]]
+- 4 edges to [[_COMMUNITY_Community 16]]
+- 4 edges to [[_COMMUNITY_Community 206]]
+- 3 edges to [[_COMMUNITY_Community 20]]
+- 3 edges to [[_COMMUNITY_Community 707]]
 - 3 edges to [[_COMMUNITY_Community 34]]
-- 2 edges to [[_COMMUNITY_Community 20]]
+- 3 edges to [[_COMMUNITY_Community 81]]
+- 3 edges to [[_COMMUNITY_Community 64]]
+- 3 edges to [[_COMMUNITY_Community 736]]
+- 3 edges to [[_COMMUNITY_Community 97]]
+- 3 edges to [[_COMMUNITY_Community 110]]
+- 3 edges to [[_COMMUNITY_Community 50]]
+- 3 edges to [[_COMMUNITY_Community 575]]
 - 2 edges to [[_COMMUNITY_Community 70]]
-- 2 edges to [[_COMMUNITY_Community 92]]
-- 2 edges to [[_COMMUNITY_Community 196]]
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 141]]
-- 1 edge to [[_COMMUNITY_Community 223]]
-- 1 edge to [[_COMMUNITY_Community 18]]
+- 2 edges to [[_COMMUNITY_Community 158]]
+- 2 edges to [[_COMMUNITY_Community 1278]]
+- 2 edges to [[_COMMUNITY_Community 383]]
+- 2 edges to [[_COMMUNITY_Community 45]]
+- 2 edges to [[_COMMUNITY_Community 148]]
+- 2 edges to [[_COMMUNITY_Community 241]]
+- 2 edges to [[_COMMUNITY_Community 113]]
+- 2 edges to [[_COMMUNITY_Community 89]]
+- 2 edges to [[_COMMUNITY_Community 56]]
+- 2 edges to [[_COMMUNITY_Community 23]]
+- 2 edges to [[_COMMUNITY_Community 93]]
+- 2 edges to [[_COMMUNITY_Community 84]]
+- 2 edges to [[_COMMUNITY_Community 477]]
+- 2 edges to [[_COMMUNITY_Community 531]]
+- 2 edges to [[_COMMUNITY_Community 187]]
+- 2 edges to [[_COMMUNITY_Community 9]]
+- 2 edges to [[_COMMUNITY_Community 71]]
+- 2 edges to [[_COMMUNITY_Community 262]]
+- 2 edges to [[_COMMUNITY_Community 532]]
+- 2 edges to [[_COMMUNITY_Community 434]]
+- 2 edges to [[_COMMUNITY_Community 102]]
+- 2 edges to [[_COMMUNITY_Community 141]]
+- 2 edges to [[_COMMUNITY_Community 25]]
+- 2 edges to [[_COMMUNITY_Community 28]]
+- 2 edges to [[_COMMUNITY_Community 2154]]
+- 2 edges to [[_COMMUNITY_Community 396]]
+- 1 edge to [[_COMMUNITY_Community 984]]
+- 1 edge to [[_COMMUNITY_Community 10]]
 - 1 edge to [[_COMMUNITY_Community 655]]
 - 1 edge to [[_COMMUNITY_Community 49]]
-- 1 edge to [[_COMMUNITY_Community 396]]
-- 1 edge to [[_COMMUNITY_Community 398]]
+- 1 edge to [[_COMMUNITY_Community 103]]
+- 1 edge to [[_COMMUNITY_Community 1002]]
+- 1 edge to [[_COMMUNITY_Community 309]]
+- 1 edge to [[_COMMUNITY_Community 1014]]
+- 1 edge to [[_COMMUNITY_Community 595]]
+- 1 edge to [[_COMMUNITY_Community 1000]]
+- 1 edge to [[_COMMUNITY_Community 431]]
+- 1 edge to [[_COMMUNITY_Community 112]]
+- 1 edge to [[_COMMUNITY_Community 220]]
+- 1 edge to [[_COMMUNITY_Community 185]]
+- 1 edge to [[_COMMUNITY_Community 507]]
+- 1 edge to [[_COMMUNITY_Community 65]]
+- 1 edge to [[_COMMUNITY_Community 363]]
+- 1 edge to [[_COMMUNITY_Community 131]]
+- 1 edge to [[_COMMUNITY_Community 151]]
+- 1 edge to [[_COMMUNITY_Community 36]]
+- 1 edge to [[_COMMUNITY_Community 78]]
+- 1 edge to [[_COMMUNITY_Community 92]]
+- 1 edge to [[_COMMUNITY_Community 47]]
+- 1 edge to [[_COMMUNITY_Community 861]]
+- 1 edge to [[_COMMUNITY_Community 420]]
+- 1 edge to [[_COMMUNITY_Community 1315]]
+- 1 edge to [[_COMMUNITY_Community 12]]
+- 1 edge to [[_COMMUNITY_Community 2062]]
 - 1 edge to [[_COMMUNITY_Community 390]]
 - 1 edge to [[_COMMUNITY_Community 659]]
 
 ## Top bridge nodes
-- [[config.py]] - degree 42, connects to 16 communities
-- [[sanitizer.py]] - degree 13, connects to 7 communities
-- [[README_127]] - degree 10, connects to 7 communities
-- [[AuditExportConfig]] - degree 7, connects to 4 communities
-- [[ChannelsConfig]] - degree 6, connects to 4 communities
+- [[lifespan.py]] - degree 130, connects to 67 communities
+- [[lifespan()_1]] - degree 82, connects to 49 communities
+- [[state.py]] - degree 37, connects to 18 communities
+- [[config.py]] - degree 42, connects to 12 communities
+- [[_DropInvalidHTTPRequestFilter]] - degree 15, connects to 8 communities

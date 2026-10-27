@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "Community 30"
+community: "Community 1014"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_30
+  - community/Community_1014
 ---
 
 # store.py
@@ -20,4 +20,4 @@ tags:
 - [[models.py]] - `imports_from` [EXTRACTED]
 - [[test_mfa_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_30
+#graphify/code #graphify/EXTRACTED #community/Community_1014

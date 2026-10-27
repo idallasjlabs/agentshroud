@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Community 2352"
+community: "Community 98"
 location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2352
+  - community/Community_98
 ---
 
 # Test filter initializes with custom configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_initialization_with_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2352
+#graphify/rationale #graphify/EXTRACTED #community/Community_98

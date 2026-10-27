@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 2043"
+community: "Community 344"
 location: "L773"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2043
+  - community/Community_344
 ---
 
 # Resolve owner target from pending-request username aliases (e.g., /approve ana).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._resolve_pending_username_target()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2043
+#graphify/rationale #graphify/EXTRACTED #community/Community_344

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Community 6"
+community: "Community 72"
 location: "L173"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_6
+  - community/Community_72
 ---
 
 # ToolTier
@@ -34,4 +34,4 @@ tags:
 - [[ToolTier]] - `uses` [INFERRED]
 - [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_6
+#graphify/code #graphify/INFERRED #community/Community_72

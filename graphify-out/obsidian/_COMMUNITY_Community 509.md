@@ -1,41 +1,38 @@
 ---
 type: community
-members: 28
+members: 25
 ---
 
 # Community 509
 
-**Members:** 28 nodes
+**Members:** 25 nodes
 
 ## Members
-- [[.test_empty_tool_calls_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_empty_tool_results_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_non_owner_cross_path_plain_message_still_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_owner_message_mentioning_other_users_file_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_owner_plain_message_with_path_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_plain_chat_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_plain_message_mentioning_config_yaml_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_plain_message_mentioning_etc_passwd_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_plain_message_mentioning_memory_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_tool_call_with_unauthorized_path_still_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_tool_calls_key_detected()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_tool_results_key_detected()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_type_field_message_not_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_type_field_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[FileSandbox must NOT block plain chat messages that mention file-like words.]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
-- [[MiddlewareManager with real session_manager, all other deps mocked.      Uses __]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
-- [[Owner (8096968754) must not be blocked by content-pattern scanning.     They sho]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
-- [[TestFileSandboxSkippedForPlainMessages]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[TestIsToolCallRequest]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[TestOwnerBypassContentPatternChecks]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[Unit tests for the _is_tool_call_request helper (TDD RED phase).]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
-- [[_plain_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[_tool_call_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[_tool_result_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[manager()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[session_manager()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[temp_workspace()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[test_file_sandbox_message_gate.py]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[.test_base64_injection()]] - code - gateway/tests/test_security_audit.py
+- [[.test_clean_message_not_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_clean_technical_message()]] - code - gateway/tests/test_security_audit.py
+- [[.test_dan_jailbreak()]] - code - gateway/tests/test_security_audit.py
+- [[.test_empty_input()_2]] - code - gateway/tests/test_security_audit.py
+- [[.test_ignore_previous_instructions()]] - code - gateway/tests/test_security_audit.py
+- [[.test_indirect_injection_url()]] - code - gateway/tests/test_security_audit.py
+- [[.test_instruction_override()]] - code - gateway/tests/test_security_audit.py
+- [[.test_multilingual_injection()]] - code - gateway/tests/test_security_audit.py
+- [[.test_prompt_leaking_via_markdown()]] - code - gateway/tests/test_security_audit.py
+- [[.test_repeated_injection()]] - code - gateway/tests/test_security_audit.py
+- [[.test_role_reassignment()]] - code - gateway/tests/test_security_audit.py
+- [[.test_system_prompt_extraction()]] - code - gateway/tests/test_security_audit.py
+- [[.test_token_smuggling()]] - code - gateway/tests/test_security_audit.py
+- [[.test_xml_injection()]] - code - gateway/tests/test_security_audit.py
+- [[Base64 encoded instruction.]] - rationale - gateway/tests/test_security_audit.py
+- [[Injection in another language.]] - rationale - gateway/tests/test_security_audit.py
+- [[Markdown-based injection.]] - rationale - gateway/tests/test_security_audit.py
+- [[Normal messages should pass.]] - rationale - gateway/tests/test_security_audit.py
+- [[Same injection multiple times shouldn't bypass.]] - rationale - gateway/tests/test_security_audit.py
+- [[Technical discussion mentioning 'system' shouldn't trigger.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test prompt injection detection with adversarial payloads.]] - rationale - gateway/tests/test_security_audit.py
+- [[TestPromptGuard]] - code - gateway/tests/test_security_audit.py
+- [[Token boundary attack.]] - rationale - gateway/tests/test_security_audit.py
+- [[URL-based indirect injection.]] - rationale - gateway/tests/test_security_audit.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,12 +42,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 72]]
-- 5 edges to [[_COMMUNITY_Community 60]]
+- 13 edges to [[_COMMUNITY_Community 0]]
+- 3 edges to [[_COMMUNITY_Community 41]]
+- 2 edges to [[_COMMUNITY_Community 72]]
+- 2 edges to [[_COMMUNITY_Community 431]]
+- 2 edges to [[_COMMUNITY_Community 24]]
+- 2 edges to [[_COMMUNITY_Community 22]]
+- 1 edge to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 52]]
+- 1 edge to [[_COMMUNITY_Community 108]]
+- 1 edge to [[_COMMUNITY_Community 146]]
+- 1 edge to [[_COMMUNITY_Community 93]]
+- 1 edge to [[_COMMUNITY_Community 477]]
+- 1 edge to [[_COMMUNITY_Community 121]]
+- 1 edge to [[_COMMUNITY_Community 71]]
+- 1 edge to [[_COMMUNITY_Community 434]]
+- 1 edge to [[_COMMUNITY_Community 5]]
+- 1 edge to [[_COMMUNITY_Community 11]]
 
 ## Top bridge nodes
-- [[test_file_sandbox_message_gate.py]] - degree 12, connects to 2 communities
-- [[TestIsToolCallRequest]] - degree 12, connects to 2 communities
-- [[TestFileSandboxSkippedForPlainMessages]] - degree 9, connects to 2 communities
-- [[TestOwnerBypassContentPatternChecks]] - degree 8, connects to 2 communities
-- [[session_manager()]] - degree 2, connects to 1 community
+- [[TestPromptGuard]] - degree 51, connects to 17 communities
