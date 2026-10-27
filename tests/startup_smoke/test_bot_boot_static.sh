@@ -352,6 +352,36 @@ fi
 check "S22: pre-gateway doctor repair detects 2026.10.6 migrations, uses image binary" \
     "$_s22_ok" "$_s22_detail"
 
+# S23: wazuh-agent turns off agentd's own log rotation. The container is
+# read_only and /var/ossec/logs/wazuh is not writable, so the first midnight
+# rotation crashed agentd on dev AND prod (2026-10-27 00:00:10, "(1107): Could
+# not create directory 'logs/wazuh/2026' ... Read-only file system"). The
+# override must be (re)applied by the ENTRYPOINT, not baked into the image:
+# local_internal_options.conf lives in the persistent wazuh-agent-etc volume,
+# which an image change never reaches. Any earlier rotate_log line is dropped
+# first so restarts never stack duplicates or keep a conflicting value.
+_s23_df="$REPO/docker/wazuh-agent/Dockerfile"
+_s23_ep="$(grep '^ENTRYPOINT' "$_s23_df" || true)"
+_s23_ok=true; _s23_detail=""
+case "$_s23_ep" in
+    *"echo monitord.rotate_log=0"*) ;;
+    *) _s23_ok=false; _s23_detail+="ENTRYPOINT does not write monitord.rotate_log=0; " ;;
+esac
+case "$_s23_ep" in
+    *"/var/ossec/etc/local_internal_options.conf"*) ;;
+    *) _s23_ok=false; _s23_detail+="ENTRYPOINT does not target the etc volume's local_internal_options.conf; " ;;
+esac
+case "$_s23_ep" in
+    *"grep -v '^monitord.rotate_log='"*) ;;
+    *) _s23_ok=false; _s23_detail+="ENTRYPOINT does not drop existing rotate_log lines; " ;;
+esac
+case "$_s23_ep" in
+    *"rotate_log"*"exec /var/ossec/bin/wazuh-agentd"*) ;;
+    *) _s23_ok=false; _s23_detail+="override not applied before agentd starts; " ;;
+esac
+check "S23: wazuh-agent ENTRYPOINT disables agentd log rotation in the etc volume" \
+    "$_s23_ok" "$_s23_detail"
+
 # ── Summary ────────────────────────────────────────────────────────────────
 echo ""
 total=$(( pass + fail ))
