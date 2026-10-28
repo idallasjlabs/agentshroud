@@ -93,5 +93,21 @@ else
   fail "sunday_dev_handoff_gate not defined in scripts/lib/sunday-scan.sh"
 fi
 
+# 5. dontAsk shell shapes (probed 2026-10-28 under prod's settings: committed
+# project settings + user-level blockReadsOutsideWorkingDirectories). The
+# 2026-10-25 run died on its first command: `cd ~/...` and a read of the
+# handoff dir are both denied, and the committed additionalDirectories entry
+# did not make that dir readable — only `--add-dir` at launch did.
+WRAPPER="$REPO/scripts/sunday-upgrade.sh"
+# shellcheck disable=SC2016  # literal ${SUNDAY_HANDOFF_DIR is the text searched for
+if grep -qE '^EXTRA="\$EXTRA --add-dir "?\$\{SUNDAY_HANDOFF_DIR:-/Users/Shared/agentshroud-sunday\}' "$WRAPPER"; then
+  pass "wrapper passes the handoff dir with --add-dir"
+else
+  fail "wrapper does not pass the handoff dir with --add-dir"
+fi
+for needle in 'Shell commands under dontAsk' 'Never `cd`' 'denied outright'; do
+  if grep -qF -- "$needle" "$PROMPT"; then pass "shell rules mention: $needle"; else fail "shell rules missing: $needle"; fi
+done
+
 echo "Results: $fails failure(s)"
 [ "$fails" -eq 0 ]

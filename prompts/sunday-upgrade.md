@@ -43,7 +43,7 @@ Therefore:
 
 ## Ground rules
 
-- Work only inside the AgentShroud project directories under `~/Development` (locate them with `ls ~/Development | grep -i shroud` and by reading any `README`, `CLAUDE.md`, `compose*.yml`, `Makefile`, or `scripts/` you find). Prefer the project's own scripts/Make targets over ad-hoc commands whenever they exist.
+- Work only inside the AgentShroud repo. The session already starts in its root (launchd `WorkingDirectory`); learn the layout by reading its `README`, `CLAUDE.md`, `compose*.yml`, `Makefile` and `scripts/`. Prefer the project's own scripts/Make targets over ad-hoc commands whenever they exist.
 - Discover the environment layout from the repo, do not assume it: which compose files / profiles / env files / branches map to **dev** vs **prod**, and how the gateway, Hermes (`agentshroud-hermes-v2`), LibreChat, the docker-socket-proxy, `hermes-sandbox-*` containers, searxng, and any other services are wired. State the mapping you found in the report.
 - **Latest release** means the latest stable, tagged release — not `main`, not pre-releases, not `:latest` floating tags. Pin every upgrade to an explicit version (image tag/digest, git tag, package version). Never leave a component on an unpinned tag.
 - **Do not modify security policy.** Do not loosen gateway rules, allowlists, network policies, secrets handling, or sandbox restrictions to make an upgrade pass. If an upgrade requires a policy change, do not apply it: leave that component on its current version, flag it as BLOCKED in the report, and explain exactly what change the upstream release demands.
@@ -53,6 +53,12 @@ Therefore:
 - Keep a running log at `~/Development/<project>/reports/upgrade-YYYY-MM-DD.md` from the very start so a partial run still leaves a record. This IS the report file from step 7, not a separate scratch log — write each of its 8 sections to disk (Edit/Write, append or fill in) the moment that section's work is done, never held in memory to be composed in one final write. A session that gets stuck or is killed at any point must leave everything completed up to that point already on disk (2026-09-27: a run got stuck trying to save the final report and lost everything, including sections that had actually finished minutes earlier — this line exists to make that unrecoverable).
 - Time budget: if you are past 90 minutes and not finished, stop, ensure both stacks are healthy (roll back anything half-applied), and report what remains.
 - **Hard window: everything is up and usable by 08:00 ET** (owner directive 2026-10-18 — the system must be serving by 08:00 every day, Sundays included). Check `date` before every phase. After **07:00 ET** do not START the prod cutover (§4) — a prod rebuild takes about 40 minutes; mark it `BLOCKED (08:00 window)` and leave prod on its baseline. After **07:30 ET** start no new change on either host: revert any half-applied component, make sure the gateway, Hermes and OpenClaw are healthy and answering a real request, and finish the report. Everything not done moves to section 3b of the report with a weekday this week. Finishing on time with a PARTIAL result is a success; running past 08:00 is a failure even if every upgrade lands.
+
+- **Shell commands under dontAsk.** This session runs in `dontAsk` mode: a command outside the allowlist is denied outright, never prompted, and the 2026-10-25 run ended on its first command that way. Shapes probed on 2026-10-28 under prod's settings:
+  - **Never `cd`.** You are already in the repo root. `cd ~/Development/agentshroud && …` was denied; use repo-relative paths, or `git -C <dir>` / absolute paths.
+  - Reads stay inside the repo and the handoff dir `/Users/Shared/agentshroud-sunday` (passed with `--add-dir` at launch). `ls ~/Development`, `/private/var/tmp` and other outside paths are denied.
+  - Plain commands, pipes, `;` chains, a `TZ=America/New_York date` prefix, `docker …` and `gh …` ran.
+  - If a command is denied, rewrite it into an allowed shape (drop the `cd`, split the chain) and continue; record the denial in the report. Do not stop the run on a denial.
 
 ## Cross-account reality (marvin)
 
