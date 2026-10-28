@@ -92698,7 +92698,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_gateway_verify_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_gateway_verify_sh__entry",
       "type": "file",
       "file": "verify.sh script.md",
       "x": 12880,
@@ -94521,7 +94521,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_find_ports_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_find_ports_sh__entry",
       "type": "file",
       "file": "find-ports.sh script.md",
       "x": 30180,
@@ -96252,7 +96252,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_verify_proxy_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_verify_proxy_sh__entry",
       "type": "file",
       "file": "verify-proxy.sh script.md",
       "x": 38820,
@@ -98859,7 +98859,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_check_soak_status_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_check_soak_status_sh__entry",
       "type": "file",
       "file": "check-soak-status.sh script.md",
       "x": 52700,
@@ -98877,7 +98877,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_check_version_pins_parity_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_check_version_pins_parity_sh__entry",
       "type": "file",
       "file": "check-version-pins-parity.sh script.md",
       "x": 52500,
@@ -98922,7 +98922,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_sunday_upgrade_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_sunday_upgrade_sh__entry",
       "type": "file",
       "file": "sunday-upgrade.sh script.md",
       "x": 52900,
@@ -102683,7 +102683,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_sunday_upgrade_apply_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_sunday_upgrade_apply_sh__entry",
       "type": "file",
       "file": "sunday-upgrade-apply.sh script.md",
       "x": 74480,
@@ -107691,7 +107691,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_sunday_rollback_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_sunday_rollback_sh__entry",
       "type": "file",
       "file": "sunday-rollback.sh script.md",
       "x": 106940,
@@ -107709,7 +107709,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_sunday_upgrade_approve_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_sunday_upgrade_approve_sh__entry",
       "type": "file",
       "file": "sunday-upgrade-approve.sh script.md",
       "x": 106740,
@@ -137047,7 +137047,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_check_vendor_compat_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_check_vendor_compat_sh__entry",
       "type": "file",
       "file": "check-vendor-compat.sh script.md",
       "x": 76960,
@@ -137092,7 +137092,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_op_to_keychain_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_op_to_keychain_sh__entry",
       "type": "file",
       "file": "op-to-keychain.sh script.md",
       "x": 76760,
@@ -137119,7 +137119,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_post_deploy_check_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_post_deploy_check_sh__entry",
       "type": "file",
       "file": "post-deploy-check.sh script.md",
       "x": 76760,
@@ -137137,7 +137137,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_restore_backup_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_restore_backup_sh__entry",
       "type": "file",
       "file": "restore-backup.sh script.md",
       "x": 77160,
@@ -137182,7 +137182,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_update_agentshroud_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_update_agentshroud_sh__entry",
       "type": "file",
       "file": "update-agentshroud.sh script.md",
       "x": 76960,
@@ -158202,7 +158202,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_lib_container_runtime_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_lib_container_runtime_sh__entry",
       "type": "file",
       "file": "container-runtime.sh script.md",
       "x": 120420,
@@ -186955,7 +186955,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_tests_startup_smoke_test_openclaw_model_provider_consistency_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_tests_startup_smoke_test_openclaw_model_provider_consistency_sh__entry",
       "type": "file",
       "file": "test_openclaw_model_provider_consistency.sh script.md",
       "x": 32040,
@@ -186973,7 +186973,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_tests_startup_smoke_test_openclaw_readiness_retry_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_tests_startup_smoke_test_openclaw_readiness_retry_sh__entry",
       "type": "file",
       "file": "test_openclaw_readiness_retry.sh script.md",
       "x": 31840,
@@ -216081,7 +216081,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_bots_hermes_email_helper_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_bots_hermes_email_helper_sh__entry",
       "type": "file",
       "file": "email_helper.sh script.md",
       "x": 124780,
@@ -216117,7 +216117,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_smoke_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_smoke_sh__entry",
       "type": "file",
       "file": "smoke.sh script.md",
       "x": 124980,
@@ -216135,7 +216135,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_tests_startup_smoke_test_hermes_chown_coverage_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_tests_startup_smoke_test_hermes_chown_coverage_sh__entry",
       "type": "file",
       "file": "test_hermes_chown_coverage.sh script.md",
       "x": 124780,
@@ -216153,7 +216153,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_tests_startup_smoke_test_hermes_cron_html_email_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_tests_startup_smoke_test_hermes_cron_html_email_sh__entry",
       "type": "file",
       "file": "test_hermes_cron_html_email.sh script.md",
       "x": 125180,
@@ -216171,7 +216171,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_tests_startup_smoke_test_openclaw_photo_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_tests_startup_smoke_test_openclaw_photo_sh__entry",
       "type": "file",
       "file": "test_openclaw_photo.sh script.md",
       "x": 124980,
@@ -233521,7 +233521,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_update_bot_agents_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_update_bot_agents_sh__entry",
       "type": "file",
       "file": "update-bot-agents.sh script.md",
       "x": 118340,
@@ -241020,7 +241020,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_verify_security_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_verify_security_sh__entry",
       "type": "file",
       "file": "verify-security.sh script.md",
       "x": 111080,
@@ -244279,7 +244279,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_sync_llm_settings_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_sync_llm_settings_sh__entry",
       "type": "file",
       "file": "sync-llm-settings.sh script.md",
       "x": 31840,
@@ -244297,7 +244297,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_smoke_d_test_skills_sync_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_smoke_d_test_skills_sync_sh__entry",
       "type": "file",
       "file": "test-skills-sync.sh script.md",
       "x": 32240,
@@ -244315,7 +244315,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_validate_skills_manifest_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_validate_skills_manifest_sh__entry",
       "type": "file",
       "file": "validate-skills-manifest.sh script.md",
       "x": 32040,
@@ -252909,7 +252909,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_workspace_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_workspace_sh__entry",
       "type": "file",
       "file": "workspace.sh script.md",
       "x": 41320,
@@ -254250,7 +254250,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_skills_openclaw_openai_whisper_api_scripts_transcribe_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_skills_openclaw_openai_whisper_api_scripts_transcribe_sh__entry",
       "type": "file",
       "file": "transcribe.sh script.md",
       "x": 62460,
@@ -255092,7 +255092,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_backup_bot_memory_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_backup_bot_memory_sh__entry",
       "type": "file",
       "file": "backup-bot-memory.sh script.md",
       "x": 76960,
@@ -255137,7 +255137,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_disaster_recovery_backup_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_disaster_recovery_backup_sh__entry",
       "type": "file",
       "file": "disaster-recovery-backup.sh script.md",
       "x": 76760,
@@ -256549,7 +256549,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_multi_host_test_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_multi_host_test_sh__entry",
       "type": "file",
       "file": "multi-host-test.sh script.md",
       "x": 97640,
@@ -256911,7 +256911,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_update_conduit_push_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_update_conduit_push_sh__entry",
       "type": "file",
       "file": "update-conduit-push.sh script.md",
       "x": 101980,
@@ -261141,7 +261141,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_security_report_retention_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_security_report_retention_sh__entry",
       "type": "file",
       "file": "security-report-retention.sh script.md",
       "x": 43800,
@@ -261159,7 +261159,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_security_report_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_security_report_sh__entry",
       "type": "file",
       "file": "security-report.sh script.md",
       "x": 43600,
@@ -261177,7 +261177,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_security_scheduler_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_security_scheduler_sh__entry",
       "type": "file",
       "file": "security-scheduler.sh script.md",
       "x": 44000,
@@ -269377,7 +269377,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_lib_sunday_scan_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_lib_sunday_scan_sh__entry",
       "type": "file",
       "file": "sunday-scan.sh script.md",
       "x": 54560,
@@ -270697,7 +270697,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_tailscale_serve_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_tailscale_serve_sh__entry",
       "type": "file",
       "file": "tailscale-serve.sh script.md",
       "x": 72620,
@@ -275965,7 +275965,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_scan_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_scan_sh__entry",
       "type": "file",
       "file": "scan.sh script.md",
       "x": 43800,
@@ -278773,7 +278773,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_container_net_diag_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_container_net_diag_sh__entry",
       "type": "file",
       "file": "container-net-diag.sh script.md",
       "x": 91440,
@@ -278891,7 +278891,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_infra_check_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_infra_check_sh__entry",
       "type": "file",
       "file": "infra-check.sh script.md",
       "x": 93520,
@@ -278918,7 +278918,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_preflight_check_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_preflight_check_sh__entry",
       "type": "file",
       "file": "preflight-check.sh script.md",
       "x": 93520,
@@ -278936,7 +278936,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_tailscale_check_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_tailscale_check_sh__entry",
       "type": "file",
       "file": "tailscale-check.sh script.md",
       "x": 93920,
@@ -287021,7 +287021,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_killswitch_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_killswitch_sh__entry",
       "type": "file",
       "file": "killswitch.sh script.md",
       "x": 109220,
@@ -287039,7 +287039,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_op_auth_common_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_op_auth_common_sh__entry",
       "type": "file",
       "file": "op-auth-common.sh script.md",
       "x": 109020,
@@ -287057,7 +287057,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_op_wrapper_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_op_wrapper_sh__entry",
       "type": "file",
       "file": "op-wrapper.sh script.md",
       "x": 108820,
@@ -287130,7 +287130,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_switch_model_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_switch_model_sh__entry",
       "type": "file",
       "file": "switch_model.sh script.md",
       "x": 111080,
@@ -287919,7 +287919,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_start_agentshroud_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_start_agentshroud_sh__entry",
       "type": "file",
       "file": "start-agentshroud.sh script.md",
       "x": 124980,
@@ -289710,7 +289710,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_omlx_keepwarm_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_omlx_keepwarm_sh__entry",
       "type": "file",
       "file": "omlx-keepwarm.sh script.md",
       "x": 18760,
@@ -292694,7 +292694,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_agentshroud_ssh_exec_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_agentshroud_ssh_exec_sh__entry",
       "type": "file",
       "file": "agentshroud-ssh-exec.sh script.md",
       "x": 82820,
@@ -292712,7 +292712,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_config_openclaw_cron_scripts_daily_checkin_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_config_openclaw_cron_scripts_daily_checkin_sh__entry",
       "type": "file",
       "file": "daily-checkin.sh script.md",
       "x": 82620,
@@ -296535,7 +296535,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_docker_cleanup_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_docker_cleanup_sh__entry",
       "type": "file",
       "file": "docker-cleanup.sh script.md",
       "x": 41320,
@@ -296581,7 +296581,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_skills_openclaw_tmux_scripts_find_sessions_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_skills_openclaw_tmux_scripts_find_sessions_sh__entry",
       "type": "file",
       "file": "find-sessions.sh script.md",
       "x": 44000,
@@ -296626,7 +296626,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_skills_openclaw_tmux_scripts_wait_for_text_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_skills_openclaw_tmux_scripts_wait_for_text_sh__entry",
       "type": "file",
       "file": "wait-for-text.sh script.md",
       "x": 43800,
@@ -300717,7 +300717,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_bots_hermes_crashwatch_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_bots_hermes_crashwatch_sh__entry",
       "type": "file",
       "file": "crashwatch.sh script.md",
       "x": 17140,
@@ -301245,7 +301245,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_smoke_d_test_sunday_upgrade_scan_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_smoke_d_test_sunday_upgrade_scan_sh__entry",
       "type": "file",
       "file": "test-sunday-upgrade-scan.sh script.md",
       "x": 35200,
@@ -301700,7 +301700,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_canary_deploy_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_canary_deploy_sh__entry",
       "type": "file",
       "file": "canary-deploy.sh script.md",
       "x": 48360,
@@ -301809,7 +301809,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_skills_openclaw_video_frames_scripts_frame_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_skills_openclaw_video_frames_scripts_frame_sh__entry",
       "type": "file",
       "file": "frame.sh script.md",
       "x": 50620,
@@ -301891,7 +301891,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_peer_review_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_peer_review_sh__entry",
       "type": "file",
       "file": "peer-review.sh script.md",
       "x": 52500,
@@ -302254,7 +302254,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_security_scan_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_security_scan_sh__entry",
       "type": "file",
       "file": "security-scan.sh script_1.md",
       "x": 60200,
@@ -306569,7 +306569,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_sync_version_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_sync_version_sh__entry",
       "type": "file",
       "file": "sync-version.sh script.md",
       "x": 57680,
@@ -306953,7 +306953,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_smoke_d_test_container_runtime_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_smoke_d_test_container_runtime_sh__entry",
       "type": "file",
       "file": "test-container-runtime.sh script.md",
       "x": 74880,
@@ -308848,7 +308848,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_tests_startup_smoke_test_colima_and_sdk_patch_fallback_resolution_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_tests_startup_smoke_test_colima_and_sdk_patch_fallback_resolution_sh__entry",
       "type": "file",
       "file": "test_colima_and_sdk_patch_fallback_resolution.sh script.md",
       "x": 109020,
@@ -310124,7 +310124,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_tests_test_op_auth_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_tests_test_op_auth_sh__entry",
       "type": "file",
       "file": "test-op-auth.sh script.md",
       "x": 18960,
@@ -315318,7 +315318,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_agentshroud_manage_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_agentshroud_manage_sh__entry",
       "type": "file",
       "file": "agentshroud-manage.sh script.md",
       "x": 57480,
@@ -315400,7 +315400,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_launch_instance_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_launch_instance_sh__entry",
       "type": "file",
       "file": "launch-instance.sh script.md",
       "x": 60200,
@@ -315437,7 +315437,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_openclaw_triage_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_openclaw_triage_sh__entry",
       "type": "file",
       "file": "openclaw_triage.sh script.md",
       "x": 62460,
@@ -320842,7 +320842,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_pre_commit_hook_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_pre_commit_hook_sh__entry",
       "type": "file",
       "file": "pre-commit-hook.sh script.md",
       "x": 62260,
@@ -322935,7 +322935,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_agentshroud_ssh_write_file_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_agentshroud_ssh_write_file_sh__entry",
       "type": "file",
       "file": "agentshroud-ssh-write-file.sh script.md",
       "x": 120220,
@@ -323018,7 +323018,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_devices_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_devices_sh__entry",
       "type": "file",
       "file": "devices.sh script.md",
       "x": 124980,
@@ -323036,7 +323036,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_telegram_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_telegram_sh__entry",
       "type": "file",
       "file": "telegram.sh script.md",
       "x": 124780,
@@ -323082,7 +323082,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_health_check_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_health_check_sh__entry",
       "type": "file",
       "file": "health-check.sh script.md",
       "x": 126620,
@@ -323110,7 +323110,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_logs_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_logs_sh__entry",
       "type": "file",
       "file": "logs.sh script.md",
       "x": 128880,
@@ -323128,7 +323128,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_restart_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_restart_sh__entry",
       "type": "file",
       "file": "restart.sh script.md",
       "x": 128680,
@@ -323156,7 +323156,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_patch_anthropic_sdk_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_patch_anthropic_sdk_sh__entry",
       "type": "file",
       "file": "patch-anthropic-sdk.sh script.md",
       "x": 220,
@@ -323174,7 +323174,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_patch_telegram_sdk_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_patch_telegram_sdk_sh__entry",
       "type": "file",
       "file": "patch-telegram-sdk.sh script.md",
       "x": 20,
@@ -324579,7 +324579,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_skills_custom_browser_fetch_run_as_root_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_skills_custom_browser_fetch_run_as_root_sh__entry",
       "type": "file",
       "file": "run-as-root.sh script.md",
       "x": 79660,
@@ -324925,7 +324925,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_claude_statusline_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_claude_statusline_sh__entry",
       "type": "file",
       "file": "statusline.sh script.md",
       "x": 91640,
@@ -324999,7 +324999,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_gen_code_graph_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_gen_code_graph_sh__entry",
       "type": "file",
       "file": "gen-code-graph.sh script.md",
       "x": 95980,
@@ -325357,7 +325357,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_upgrade_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_upgrade_sh__entry",
       "type": "file",
       "file": "upgrade.sh script.md",
       "x": 111280,
@@ -326493,7 +326493,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_bots_hermes_heartbeat_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_bots_hermes_heartbeat_sh__entry",
       "type": "file",
       "file": "heartbeat.sh script.md",
       "x": 35400,
@@ -326941,7 +326941,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_deploy_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_deploy_sh__entry",
       "type": "file",
       "file": "deploy.sh script.md",
       "x": 52900,
@@ -326978,7 +326978,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_promote_firmware_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_promote_firmware_sh__entry",
       "type": "file",
       "file": "promote-firmware.sh script.md",
       "x": 54960,
@@ -327015,7 +327015,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_tests_startup_smoke_test_bot_boot_live_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_tests_startup_smoke_test_bot_boot_live_sh__entry",
       "type": "file",
       "file": "test_bot_boot_live.sh script.md",
       "x": 57680,
@@ -327070,7 +327070,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_tests_startup_smoke_test_hermes_mcp_reconciliation_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_tests_startup_smoke_test_hermes_mcp_reconciliation_sh__entry",
       "type": "file",
       "file": "test_hermes_mcp_reconciliation.sh script.md",
       "x": 60200,
@@ -330533,7 +330533,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_bots_hermes_start_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_bots_hermes_start_sh__entry",
       "type": "file",
       "file": "start.sh script.md",
       "x": 20,
@@ -330645,7 +330645,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_hermes_cron_sunday_upgrade_report_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_hermes_cron_sunday_upgrade_report_sh__entry",
       "type": "file",
       "file": "sunday-upgrade-report.sh script.md",
       "x": 13080,
@@ -331037,7 +331037,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_activate_lockdown_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_activate_lockdown_sh__entry",
       "type": "file",
       "file": "activate-lockdown.sh script.md",
       "x": 52700,
@@ -331065,7 +331065,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_canary_cron_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_canary_cron_sh__entry",
       "type": "file",
       "file": "canary-cron.sh script.md",
       "x": 54760,
@@ -331093,7 +331093,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_check_status_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_check_status_sh__entry",
       "type": "file",
       "file": "check-status.sh script.md",
       "x": 57480,
@@ -331121,7 +331121,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_codex_review_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_codex_review_sh__entry",
       "type": "file",
       "file": "codex-review.sh script.md",
       "x": 60200,
@@ -331149,7 +331149,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_colima_firewall_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_colima_firewall_sh__entry",
       "type": "file",
       "file": "colima-firewall.sh script.md",
       "x": 62260,
@@ -331177,7 +331177,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_deploy_gateway_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_deploy_gateway_sh__entry",
       "type": "file",
       "file": "deploy-gateway.sh script.md",
       "x": 66300,
@@ -331205,7 +331205,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_egress_iptables_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_egress_iptables_sh__entry",
       "type": "file",
       "file": "egress-iptables.sh script.md",
       "x": 69020,
@@ -331233,7 +331233,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_emergency_rollback_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_emergency_rollback_sh__entry",
       "type": "file",
       "file": "emergency-rollback.sh script.md",
       "x": 72620,
@@ -331261,7 +331261,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_entrypoint_agentshroud_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_entrypoint_agentshroud_sh__entry",
       "type": "file",
       "file": "entrypoint-agentshroud.sh script.md",
       "x": 74680,
@@ -331289,7 +331289,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_export_openapi_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_export_openapi_sh__entry",
       "type": "file",
       "file": "export-openapi.sh script.md",
       "x": 76960,
@@ -331317,7 +331317,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_hermes_cron_dedup_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_hermes_cron_dedup_sh__entry",
       "type": "file",
       "file": "hermes-cron-dedup.sh script.md",
       "x": 79460,
@@ -331345,7 +331345,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_patch_slack_sdk_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_patch_slack_sdk_sh__entry",
       "type": "file",
       "file": "patch-slack-sdk.sh script.md",
       "x": 82620,
@@ -331373,7 +331373,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_patch_ws_proxy_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_patch_ws_proxy_sh__entry",
       "type": "file",
       "file": "patch-ws-proxy.sh script.md",
       "x": 85560,
@@ -331401,7 +331401,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_config_openclaw_cron_scripts_prefetch_ghsa_registry_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_config_openclaw_cron_scripts_prefetch_ghsa_registry_sh__entry",
       "type": "file",
       "file": "prefetch-ghsa-registry.sh script.md",
       "x": 89160,
@@ -331429,7 +331429,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_run_tests_batched_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_run_tests_batched_sh__entry",
       "type": "file",
       "file": "run-tests-batched.sh script.md",
       "x": 91440,
@@ -331457,7 +331457,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_set_model_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_set_model_sh__entry",
       "type": "file",
       "file": "set-model.sh script.md",
       "x": 93720,
@@ -331485,7 +331485,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_test_system_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_test_system_sh__entry",
       "type": "file",
       "file": "test-system.sh script.md",
       "x": 95780,
@@ -332529,7 +332529,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_testing_lib_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_testing_lib_sh__entry",
       "type": "file",
       "file": "lib.sh script.md",
       "x": 115640,
@@ -332656,7 +332656,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_toggle_readonly_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_toggle_readonly_sh__entry",
       "type": "file",
       "file": "toggle-readonly.sh script.md",
       "x": 118140,
@@ -332684,7 +332684,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_verify_greeter_state_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_verify_greeter_state_sh__entry",
       "type": "file",
       "file": "verify-greeter-state.sh script.md",
       "x": 120420,
@@ -338899,7 +338899,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_colima_health_check_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_colima_health_check_sh__entry",
       "type": "file",
       "file": "colima-health-check.sh script.md",
       "x": 22140,
@@ -343822,7 +343822,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_bots_hermes_run_standalone_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_bots_hermes_run_standalone_sh__entry",
       "type": "file",
       "file": "run-standalone.sh script.md",
       "x": 54760,
@@ -350490,7 +350490,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_security_scan_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_security_scan_sh__entry",
       "type": "file",
       "file": "security-scan.sh script.md",
       "x": 109020,
@@ -353161,7 +353161,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_launchd_install_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_launchd_install_sh__entry",
       "type": "file",
       "file": "install.sh script.md",
       "x": 69220,
@@ -357539,7 +357539,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_bots_hermes_init_config_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_bots_hermes_init_config_sh__entry",
       "type": "file",
       "file": "init-config.sh script.md",
       "x": 91440,
@@ -357924,7 +357924,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_tests_startup_smoke_test_launchd_install_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_tests_startup_smoke_test_launchd_install_sh__entry",
       "type": "file",
       "file": "test_launchd_install.sh script.md",
       "x": 106740,
@@ -357979,7 +357979,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_tests_startup_smoke_test_sunday_upgrade_head_guard_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_tests_startup_smoke_test_sunday_upgrade_head_guard_sh__entry",
       "type": "file",
       "file": "test_sunday_upgrade_head_guard.sh script.md",
       "x": 109020,
@@ -362436,7 +362436,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_init_openclaw_config_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_init_openclaw_config_sh__entry",
       "type": "file",
       "file": "init-openclaw-config.sh script.md",
       "x": 66100,
@@ -362482,7 +362482,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_security_entrypoint_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_security_entrypoint_sh__entry",
       "type": "file",
       "file": "security-entrypoint.sh script.md",
       "x": 68820,
@@ -362510,7 +362510,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_testing_impact_map_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_testing_impact_map_sh__entry",
       "type": "file",
       "file": "impact-map.sh script.md",
       "x": 72620,
@@ -362574,7 +362574,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_tests_startup_smoke_test_sunday_prompt_unattended_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_tests_startup_smoke_test_sunday_prompt_unattended_sh__entry",
       "type": "file",
       "file": "test_sunday_prompt_unattended.sh script.md",
       "x": 74480,
@@ -363763,7 +363763,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_bot_access_audit_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_bot_access_audit_sh__entry",
       "type": "file",
       "file": "bot-access-audit.sh script.md",
       "x": 13080,
@@ -363809,7 +363809,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_tests_startup_smoke_test_bot_boot_static_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_tests_startup_smoke_test_bot_boot_static_sh__entry",
       "type": "file",
       "file": "test_bot_boot_static.sh script.md",
       "x": 17540,
@@ -363846,7 +363846,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_tests_startup_smoke_test_sunday_upgrade_session_guard_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_tests_startup_smoke_test_sunday_upgrade_session_guard_sh__entry",
       "type": "file",
       "file": "test_sunday_upgrade_session_guard.sh script.md",
       "x": 19160,
@@ -366708,7 +366708,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_docker_scripts_gateway_start_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_docker_scripts_gateway_start_sh__entry",
       "type": "file",
       "file": "gateway-start.sh script.md",
       "x": 17340,
@@ -366736,7 +366736,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_testing_eval_run_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_testing_eval_run_sh__entry",
       "type": "file",
       "file": "eval-run.sh script.md",
       "x": 18960,
@@ -366764,7 +366764,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_testing_release_check_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_testing_release_check_sh__entry",
       "type": "file",
       "file": "release-check.sh script.md",
       "x": 22340,
@@ -366792,7 +366792,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_testing_run_integration_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_testing_run_integration_sh__entry",
       "type": "file",
       "file": "run-integration.sh script.md",
       "x": 26380,
@@ -366820,7 +366820,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_testing_run_unit_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_testing_run_unit_sh__entry",
       "type": "file",
       "file": "run-unit.sh script.md",
       "x": 29980,
@@ -366848,7 +366848,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_testing_sbom_verify_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_testing_sbom_verify_sh__entry",
       "type": "file",
       "file": "sbom-verify.sh script.md",
       "x": 32040,
@@ -366876,7 +366876,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_testing_sec_scan_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_testing_sec_scan_sh__entry",
       "type": "file",
       "file": "sec-scan.sh script.md",
       "x": 35200,
@@ -366904,7 +366904,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_testing_smoke_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_testing_smoke_sh__entry",
       "type": "file",
       "file": "smoke.sh script_1.md",
       "x": 39020,
@@ -366932,7 +366932,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_testing_sql_fixtures_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_testing_sql_fixtures_sh__entry",
       "type": "file",
       "file": "sql-fixtures.sh script.md",
       "x": 41520,
@@ -366960,7 +366960,7 @@
       "height": 60
     },
     {
-      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph2_scripts_testing_telemetry_check_sh__entry",
+      "id": "n_private_tmp_claude_14664_users_ijefferson_admin_development_agentshroud_b04afb16_3c46_43a3_ab69_b9786da20cfe_scratchpad_wt_graph553_scripts_testing_telemetry_check_sh__entry",
       "type": "file",
       "file": "telemetry-check.sh script.md",
       "x": 43800,
