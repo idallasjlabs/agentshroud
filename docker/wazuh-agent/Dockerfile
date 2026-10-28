@@ -83,10 +83,20 @@ RUN find / -perm /6000 -type f -exec chmod a-s {} + 2>/dev/null || true
 # install/chmod would need FOWNER, which cap_drop ALL removes.
 RUN cp /var/ossec/etc/internal_options.conf /var/ossec/internal_options.conf.dist
 
+# agentd's own daily log rotation is off (monitord.rotate_log=0). The container
+# is read_only and /var/ossec/logs/wazuh is not writable, so the first midnight
+# rotation crashed agentd on dev and prod: 2026-10-27 00:00:10 "(1107): Could
+# not create directory 'logs/wazuh/2026' ... Read-only file system". There is
+# nothing to rotate anyway: ossec.log sits on the read-only root (0 bytes) and
+# agentd's log goes to stdout under -f. Applied here at every start, not baked
+# in, because local_internal_options.conf lives in the wazuh-agent-etc volume
+# that an image rebuild never reaches; any older rotate_log line is dropped
+# first so restarts never stack duplicates. /var/ossec/tmp is a tmpfs.
+#
 # Deliberately no USER directive — wazuh-agentd must start as root so its
 # own internal privilege drop (-u wazuh -g wazuh, both now uid/gid 1000) can
 # succeed; it renounces root itself within the first seconds of running.
-ENTRYPOINT ["/bin/sh", "-c", "cp -f /var/ossec/internal_options.conf.dist /var/ossec/etc/internal_options.conf && chown wazuh:wazuh /var/ossec/etc/internal_options.conf && exec /var/ossec/bin/wazuh-agentd \"$@\"", "--"]
+ENTRYPOINT ["/bin/sh", "-c", "cp -f /var/ossec/internal_options.conf.dist /var/ossec/etc/internal_options.conf && chown wazuh:wazuh /var/ossec/etc/internal_options.conf && L=/var/ossec/etc/local_internal_options.conf && { grep -v '^monitord.rotate_log=' \"$L\" 2>/dev/null; echo monitord.rotate_log=0; } > /var/ossec/tmp/lio.conf && cp -f /var/ossec/tmp/lio.conf \"$L\" && chown wazuh:wazuh \"$L\" && exec /var/ossec/bin/wazuh-agentd \"$@\"", "--"]
 CMD ["-f"]
 
 # Repo commit this image was built from (set by scripts/asb and
