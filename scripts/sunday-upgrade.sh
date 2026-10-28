@@ -397,6 +397,13 @@ fi
 # Do NOT make that the default: it grants everything, which is precisely the
 # posture this change exists to avoid shipping to other people.
 EXTRA="--permission-mode ${SUNDAY_UPGRADE_PERMISSION_MODE:-dontAsk}"
+# The handoff dir (dev-result JSON, apply lock) sits outside the repo. With the
+# user-level blockReadsOutsideWorkingDirectories, the committed
+# additionalDirectories entry did not make it readable — a dontAsk probe on
+# 2026-10-28 was denied `ls` on it until `--add-dir` was passed; the 2026-10-25
+# run died on exactly that read. --add-dir is variadic like --allowedTools; the
+# `--` before the mission terminates it.
+EXTRA="$EXTRA --add-dir ${SUNDAY_HANDOFF_DIR:-/Users/Shared/agentshroud-sunday}"
 if [ "${SUNDAY_UPGRADE_AUTON:-0}" = "1" ]; then
   EXTRA="$EXTRA --allowedTools Bash,Read,Edit,Write,Glob,Grep"
 fi
