@@ -169,6 +169,22 @@ _return_to_main() {
   fi
 }
 
+# _switch_to_main — the branch guard's recovery. The checkout is shared with
+# interactive sessions, and one left on a clean feature branch FATAL'd the
+# 03:00 and 05:00 fires on 2026-11-01. A clean tree (graphify-out/ and
+# untracked files aside) is switched to main; the branch stays local and is
+# NOT pushed — it is not the run's work. Uncommitted work is never switched
+# away from: returns non-zero and the guard FATALs as before.
+_switch_to_main() {
+  local branch leftover
+  branch="$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo '')"
+  [ "$branch" != "main" ] || return 0
+  leftover="$(git status --porcelain 2>/dev/null | grep -v 'graphify-out/' | grep -v '^??' || true)"
+  [ -z "$leftover" ] || return 1
+  git checkout -q main 2>/dev/null || return 1
+  echo "[sunday-upgrade] NOTE: checkout was on clean branch '${branch}' — switched to main (the branch is kept locally)."
+}
+
 cd "$REPO"
 mkdir -p reports
 # sunday_deadline_epoch / sunday_stop_apply / sunday_restore_stack.
@@ -186,7 +202,7 @@ _notify_on_exit() {
   note="$(sunday_notify_direct \
     "${SUNDAY_NOTIFY_TOKEN_FILE:-$REPO/docker/secrets/telegram_bot_token_production.txt}" \
     "${SUNDAY_NOTIFY_CHAT_ID:-8096968754}" \
-    "$(sunday_run_summary "$rc" "${STACK_STATE:-}" "${REPORT_STAGED:-0}" "${CUT_OFF:-0}")")" || true
+    "$(sunday_run_summary "$rc" "${STACK_STATE:-}" "${REPORT_STAGED:-0}" "${CUT_OFF:-0}" "${FINISH_STATUS:-}")")" || true
   echo "[sunday-upgrade] direct owner notice: ${note}"
 }
 trap _notify_on_exit EXIT
@@ -203,6 +219,20 @@ case "$(_session_guard "$SESSION" $((WATCH_TIMEOUT_MIN + 10)))" in
     echo "[sunday-upgrade] WARN: tmux session ${SESSION} outlived its ${WATCH_TIMEOUT_MIN}m budget with no watcher — killed it." >&2
     _return_to_main ;;
 esac
+
+# ── Prod waits for dev's merge signal (2026-11-01) ──────────────────────────
+# Prod's cutover gate needs dev-merge-commit-<date>.txt, which dev writes only
+# after its PR merged. Prod fires once (06:00), so checking at launch lost the
+# week whenever dev was still working. Wait here, BEFORE fetching main, so the
+# fetch below picks up dev's merge. Armed only by SUNDAY_WAIT_FOR_DEV_UNTIL
+# (prod's plist; dev never sets it) and never on --force. On timeout the
+# session still launches: its own gate reports BLOCKED and writes the report.
+if [ -n "${SUNDAY_WAIT_FOR_DEV_UNTIL:-}" ] && [ "$FORCE" -eq 0 ]; then
+  _dev_signal="${SUNDAY_HANDOFF_DIR:-/Users/Shared/agentshroud-sunday}/dev-merge-commit-${TODAY}.txt"
+  echo "[sunday-upgrade] $(date '+%H:%M:%S') waiting for dev's merge signal ${_dev_signal} until ${SUNDAY_WAIT_FOR_DEV_UNTIL}"
+  _dev_wait="$(sunday_wait_for_file "$_dev_signal" "$(sunday_deadline_epoch "$SUNDAY_WAIT_FOR_DEV_UNTIL")")"
+  echo "[sunday-upgrade] $(date '+%H:%M:%S') dev merge signal: ${_dev_wait}"
+fi
 
 # ── Branch/freshness preflight — the job must run against current main ──────
 # This script previously trusted whatever was checked out on the host, with no
@@ -298,9 +328,11 @@ if [ "$_fetch_ok" -ne 1 ]; then
 fi
 _current_branch="$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo '')"
 if [ "$_current_branch" != "main" ]; then
-  echo "[sunday-upgrade] FATAL: repo checkout is on branch '${_current_branch}', not main." >&2
-  echo "[sunday-upgrade] The unattended upgrade must run against main. Run: git -C '$REPO' checkout main" >&2
-  exit 4
+  if ! _switch_to_main; then
+    echo "[sunday-upgrade] FATAL: repo checkout is on branch '${_current_branch}', not main, with uncommitted changes." >&2
+    echo "[sunday-upgrade] The unattended upgrade must run against main. Commit or stash, then: git -C '$REPO' checkout main" >&2
+    exit 4
+  fi
 fi
 # A blanket FATAL-on-any-dirty-file here contradicts this job's own mission
 # (prompts/sunday-upgrade.md, "Preflight" ground rules): graphify-out/** NEVER
@@ -440,6 +472,14 @@ echo "[sunday-upgrade] $(date '+%H:%M:%S') launching remote-control session '$SE
 # had this defect when SUNDAY_UPGRADE_AUTON=1 set --allowedTools — none of
 # them ever actually submitted a mission; they sat open until the 180-minute
 # watch timeout believing they were unattended.
+# The session's last act is writing FINISHED_FILE (prompts/sunday-upgrade.md
+# §9): an interactive session never exits on its own, so before this every run
+# on record idled until the watcher killed it at the budget, logged TIMED OUT
+# and never wrote the sentinel. Cleared here so an earlier run's file can't
+# end this one.
+FINISHED_FILE="$REPO/reports/sunday/${TODAY}/session-finished"
+mkdir -p "$(dirname "$FINISHED_FILE")"
+rm -f "$FINISHED_FILE"
 tmux new-session -d -s "$SESSION" -c "$REPO" \
   "claude --remote-control --name '$SESSION' $EXTRA -- \"\$(cat '$PROMPT_FILE')\""
 tmux pipe-pane -t "$SESSION" -o "cat >> '$LOG'"
@@ -463,8 +503,15 @@ TIMED_OUT=0
 DEADLINE_EPOCH="$(sunday_deadline_epoch "${SUNDAY_UPGRADE_DEADLINE:-07:20}")"
 CUT_OFF=0
 [ -n "$DEADLINE_EPOCH" ] && echo "[sunday-upgrade] wall-clock cutoff armed for ${SUNDAY_UPGRADE_DEADLINE:-07:20}"
+FINISH_STATUS=""
 while tmux has-session -t "$SESSION" 2>/dev/null; do
   sleep 60
+  if [ -f "$FINISHED_FILE" ]; then
+    FINISH_STATUS="$(head -1 "$FINISHED_FILE" | tr -d '\r')"
+    echo "[sunday-upgrade] $(date '+%H:%M:%S') session reported finished: ${FINISH_STATUS:-<empty>} — closing it."
+    tmux kill-session -t "$SESSION" 2>/dev/null || true
+    break
+  fi
   elapsed=$((elapsed + 1))
   if [ "$elapsed" -ge "$WATCH_TIMEOUT_MIN" ]; then
     # Actually STOP it. This previously logged a warning, broke out of the
@@ -530,5 +577,14 @@ if [ "${TIMED_OUT:-0}" = "1" ]; then
   echo "[sunday-upgrade] $(date '+%H:%M:%S') run TIMED OUT after ${WATCH_TIMEOUT_MIN}m — no sentinel written, the next scheduled fire will retry." >&2
   exit 6
 fi
+# The session finished and said how. ABORTED (or no status word at all) is
+# the one outcome a later fire can still fix — a transient fetch, a flaky
+# build — so it stays retryable. ALL GREEN, PARTIAL, ROLLED BACK and BLOCKED
+# are reported results: re-running them the same day changes nothing.
+case "$FINISH_STATUS" in
+  ABORTED*|'')
+    echo "[sunday-upgrade] $(date '+%H:%M:%S') session ended with '${FINISH_STATUS:-no status}' — no sentinel written, the next scheduled fire will retry." >&2
+    exit 8 ;;
+esac
 touch "$DONE_MARKER"
 echo "[sunday-upgrade] $(date '+%H:%M:%S') run complete (sentinel: $DONE_MARKER)"

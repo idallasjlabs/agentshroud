@@ -425,6 +425,29 @@ sunday_deadline_epoch() {
   printf '%s\n' $((now + target - wall))
 }
 
+# sunday_wait_for_file <file> <deadline_epoch|''>
+#   Prints found | timeout | no-deadline. Prod's start signal is dev's
+#   dev-merge-commit-<date>.txt, written only once dev's PR has merged; prod
+#   fires once at 06:00, so a single look then lost the week whenever dev was
+#   still working (2026-11-01). Polls every SUNDAY_WAIT_POLL seconds (default
+#   60) until the file exists or the deadline passes. An empty deadline (the
+#   launch came after it) takes one look and never waits.
+sunday_wait_for_file() {
+  local f="$1" deadline="${2:-}" poll="${SUNDAY_WAIT_POLL:-60}"
+  if [ -z "$deadline" ]; then
+    if [ -f "$f" ]; then echo found; else echo no-deadline; fi
+    return 0
+  fi
+  while [ ! -f "$f" ]; do
+    if [ "$(date +%s)" -ge "$deadline" ]; then
+      echo timeout
+      return 0
+    fi
+    sleep "$poll"
+  done
+  echo found
+}
+
 # sunday_stop_apply <lock_dir>
 #   Killing the tmux session does not reliably take sunday-upgrade-apply.sh
 #   with it (it may be mid `docker compose`), and restoring the stack while an
@@ -524,12 +547,15 @@ sunday_notify_direct() {
   return 1
 }
 
-# sunday_run_summary <exit_code> <stack_state> <report_staged 0|1> <cut_off 0|1>
-#   One plain-text notice for the owner, naming what the exit code means.
+# sunday_run_summary <exit_code> <stack_state> <report_staged 0|1> <cut_off 0|1> [finish_status]
+#   One plain-text notice for the owner, naming what the exit code means and,
+#   when the session reported one, its own summary status (ALL GREEN, PARTIAL,
+#   BLOCKED ...) — "complete" alone read as success for a BLOCKED run.
 sunday_run_summary() {
-  local rc="$1" stack="${2:-}" staged="${3:-0}" cut="${4:-0}" what
+  local rc="$1" stack="${2:-}" staged="${3:-0}" cut="${4:-0}" status="${5:-}" what
   case "$rc" in
-    0) what="run complete" ;;
+    0) what="run complete${status:+: ${status}}" ;;
+    8) what="session finished ${status:-without a status} (exit 8): no sentinel, next fire retries" ;;
     1) what="FAILED (exit 1): the upgrade session died during boot" ;;
     3) what="FAILED (exit 3): git fetch origin main failed" ;;
     4) what="FAILED (exit 4): checkout not on main, or main diverged" ;;

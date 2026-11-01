@@ -63,7 +63,7 @@ Therefore:
 ## Cross-account reality (marvin)
 
 **Dev and prod are separate macOS accounts with separate Colima VMs.** This
-same prompt is launched by BOTH accounts' launchd jobs (dev at 03:00, prod at
+same prompt is launched by BOTH accounts' launchd jobs (dev at 01:00, prod at
 06:00) — it does not know in advance which one it is. **Determine your own
 identity before doing anything else:** run `whoami`. If it prints
 `agentshroud-bot`, you are the DEV run. If it prints `ijefferson.admin`, you
@@ -77,7 +77,7 @@ Each account can only start/stop/exec into its own Colima VM and stack —
 the DEV run CANNOT touch prod's stack, and the PROD run CANNOT touch dev's
 stack. "Dev goes first" is therefore enforced by a handoff contract:
 
-- The dev account runs its own copy of this job **earlier** (03:00 ET) and
+- The dev account runs its own copy of this job **earlier** (01:00 ET) and
   stages a machine-readable result at
   `/Users/Shared/agentshroud-sunday/dev-result-YYYY-MM-DD.json`
   (`{"date","status":"PASS|FAIL|NOTHING_UPGRADED|SCAN_INCOMPLETE","versions":{component:version,...},"notes"}`).
@@ -332,7 +332,7 @@ Proceed **only if** dev is healthy and the merged change set introduced no new o
 Every Sunday run is tracked in a Jira ticket (project **SCRUM**, cloudId
 `7a044ff7-e2cf-40e6-b6f0-e3e080898fbb`) via the Atlassian MCP tools:
 
-- **Dev run (03:00)**: at start, create the run ticket — summary
+- **Dev run (01:00)**: at start, create the run ticket — summary
   `Sunday Upgrade YYYY-MM-DD`, description = planned scope from the inventory
   phase. Include the ticket key in the dev-result JSON (`"jira":"SCRUM-nnn"`)
   so the prod run finds it.
@@ -393,3 +393,6 @@ As the actual last action of the run, `cat` the finished file to stdout (Hermes 
 Send one `PushNotification` per run, regardless of outcome — a silent run is as bad as a silent report. Include, in this order: the summary line (§7.1), the upgraded/held-back/failed counts, the PR link (or "no PR — aborted before any commit" / "merged — PR #n"), the report path, and the one-line backout command from §7.7. Keep it to what fits a lock-screen notification; the report has the detail.
 
 Never end the run with either stack in a non-healthy state.
+
+### 9. Close the session — the very last action, on every path
+The wrapper cannot tell a finished session from a working one: an interactive session never exits by itself, so until 2026-11-01 every run idled until it was killed at the 170-minute budget and was logged TIMED OUT. After the report is on disk and the push notification is sent, use the Write tool to create `reports/sunday/YYYY-MM-DD/session-finished` (today's date). Its first line is the summary status word from §7.1 (`ALL GREEN`, `PARTIAL …`, `ROLLED BACK`, `BLOCKED (<gate>)` or `ABORTED (<reason>)`); a second line may carry the report path. Do this on every path — a clean finish, a PARTIAL, a BLOCKED gate, an early stop after a denial, an abort. The wrapper closes the session within a minute of seeing the file. ABORTED leaves the day retryable for the next scheduled fire; every other status marks the day done. Write nothing after it.

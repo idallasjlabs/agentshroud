@@ -30,8 +30,10 @@ extract_fn() {
 
 GUARD_SRC="$(extract_fn _session_guard)" || exit 1
 RETURN_SRC="$(extract_fn _return_to_main)" || exit 1
+SWITCH_SRC="$(extract_fn _switch_to_main)" || exit 1
 eval "$GUARD_SRC"
 eval "$RETURN_SRC"
+eval "$SWITCH_SRC"
 
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
@@ -108,6 +110,42 @@ branch="$(git -C "$TMP/work" rev-parse --abbrev-ref HEAD)"
 if [ "$branch" = "chore/upgrade-2026-10-11" ] && grep -q 'dirty' "$TMP/work/f"; then
   echo "  OK : uncommitted work is never switched away from"
 else echo "  FAIL: dirty tree -> branch=$branch" >&2; fail=1; fi
+
+echo ""
+echo "── _switch_to_main ──"
+# 2026-11-01: the 03:00 and 05:00 fires FATAL'd because an interactive session
+# had left the shared checkout on a clean feature branch. A clean checkout is
+# switched to main (the branch stays, local and NOT pushed); dirty never is.
+(
+  cd "$TMP/work"
+  git checkout -q -f main
+  git checkout -q -b chore/dev-report-x
+  echo three > g; git add g; git commit -q -m three
+  echo untracked > u
+)
+(cd "$TMP/work" && _switch_to_main) >"$TMP/out" 2>&1 && rc=0 || rc=$?
+branch="$(git -C "$TMP/work" rev-parse --abbrev-ref HEAD)"
+if [ "$rc" = 0 ] && [ "$branch" = "main" ] && git -C "$TMP/work" rev-parse -q --verify refs/heads/chore/dev-report-x >/dev/null \
+   && ! git -C "$TMP/origin.git" rev-parse -q --verify refs/heads/chore/dev-report-x >/dev/null; then
+  echo "  OK : clean feature branch -> main; branch kept locally, not pushed"
+else echo "  FAIL: rc=$rc branch=$branch out=$(cat "$TMP/out")" >&2; fail=1; fi
+
+(
+  cd "$TMP/work"
+  git checkout -q chore/dev-report-x
+  echo dirty > g
+)
+(cd "$TMP/work" && _switch_to_main) >"$TMP/out" 2>&1 && rc=0 || rc=$?
+branch="$(git -C "$TMP/work" rev-parse --abbrev-ref HEAD)"
+if [ "$rc" != 0 ] && [ "$branch" = "chore/dev-report-x" ] && grep -q dirty "$TMP/work/g"; then
+  echo "  OK : dirty feature branch -> refused (non-zero), work untouched"
+else echo "  FAIL: dirty -> rc=$rc branch=$branch" >&2; fail=1; fi
+
+switch_line="$(grep -n 'if ! _switch_to_main' "$SCRIPT" | head -1 | cut -d: -f1)"
+fatal_line="$(grep -n 'FATAL: repo checkout is on branch' "$SCRIPT" | head -1 | cut -d: -f1)"
+if [ -n "$switch_line" ] && [ -n "$fatal_line" ] && [ "$switch_line" -lt "$fatal_line" ]; then
+  echo "  OK : the branch guard tries _switch_to_main before its FATAL"
+else echo "  FAIL: switch line=${switch_line:-none}, FATAL line=${fatal_line:-none}" >&2; fail=1; fi
 
 echo ""
 echo "── wrapper ordering ──"
