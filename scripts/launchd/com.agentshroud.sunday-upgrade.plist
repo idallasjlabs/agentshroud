@@ -19,11 +19,16 @@
          03:00 dev run could not finish and merge by 06:00) AND after the
          04:30-05:45 Daily Brief production window — a prod upgrade restarting
          Hermes inside that window would kill that morning's episode.
-         The prompt's dev-result gate blocks prod changes if dev hasn't PASSed. -->
+         The prompt's dev-result gate blocks prod changes if dev hasn't PASSed.
+
+         DAILY, not Sunday-only (2026-11-01): dev's PASS lands anywhere from
+         04:13 to the next morning, so a single Sunday 06:00 shot lost the week
+         whenever dev ran late. scripts/sunday-upgrade.sh does the full run on
+         Sunday; on every other day it launches a session ONLY when dev has
+         passed and merged and prod has not yet promoted that handoff
+         (sunday_catchup_pending), and otherwise exits in under a second. -->
     <key>StartCalendarInterval</key>
     <dict>
-        <key>Weekday</key>
-        <integer>0</integer>
         <key>Hour</key>
         <integer>6</integer>
         <key>Minute</key>
