@@ -81,8 +81,12 @@ stack. "Dev goes first" is therefore enforced by a handoff contract:
   stages a machine-readable result at
   `/Users/Shared/agentshroud-sunday/dev-result-YYYY-MM-DD.json`
   (`{"date","status":"PASS|FAIL|NOTHING_UPGRADED|SCAN_INCOMPLETE","versions":{component:version,...},"notes"}`).
-- **Before applying anything to prod**, read that file. If it is missing, is
-  not dated today, or `status` != `PASS`, apply NOTHING to prod: report every component as
+- **Before applying anything to prod**, read the NEWEST `dev-result-*.json` from
+  the last 6 days (since 2026-11-01 the gate is a window, not "today only": dev's
+  PASS lands anywhere from 04:13 to the next morning, and prod's launchd job also
+  fires on the days after Sunday to catch up). If there is none, its own `date`
+  does not match its filename, `status` != `PASS`, or any pin in its `versions`
+  block differs from this checkout's `docker/versions.env`, apply NOTHING to prod: report every component as
   BLOCKED-awaiting-dev and stop after the inventory/scan phases (those are
   read-only and always run).
 - Promote to prod **only the exact versions dev passed** — never a version
@@ -107,7 +111,7 @@ script did not give you:
 |------|---------|-------------|
 | 0 | all requested phases passed | continue |
 | 10 | preflight failed (disk, docker, compose, missing binary) | fix the named cause or stop; do not build |
-| 15 | prod: no dev PASS handoff dated today (the script enforces this itself) | report BLOCKED-awaiting-dev; do not work around it |
+| 15 | prod: no usable dev PASS handoff (newest in the last 6 days, pins equal to prod's — the script enforces this itself) | report BLOCKED-awaiting-dev; do not work around it |
 | 20 | CVE gate exceeded `--max-critical` | triage findings, do not override |
 | 21 | dev: every phase passed but no image was scanned or a scan errored; handoff is `SCAN_INCOMPLETE`, not PASS | report the scan failure; prod stays blocked |
 | 25 | nothing was upgraded although a newer upstream release exists | report it as a failed run, not a pass |
@@ -317,7 +321,7 @@ Honesty rules, unchanged and non-negotiable:
 ### 4. Promote to PROD
 Proceed **only if** dev is healthy and the merged change set introduced no new or worse finding compared with the baseline. Findings still OPEN are reported, not blocking, and a PARTIAL dev run promotes the components that passed (owner directive 2026-10-18: upgrade and patch as much as we can even if not 100%).
 0. **Prove dev and prod are about to build the same artifact.** "It passed in dev" means nothing if prod's checkout has drifted (stale pull, an unpushed local commit, a stray version override). Run `bash scripts/check-version-pins-parity.sh` in BOTH environments — dev's own checkout and prod's (via the `@agentshroud` coordination session, never by connecting to prod directly). Both must report `PASS` before proceeding. A `FAIL` means the checkouts have diverged; reconcile via the normal PR/merge flow before promoting, do not skip this and promote anyway.
-0b. **Gate the cutover automatically — prod's own gate, independent of dev's. No human tap** (owner decision 2026-10-18; do not call AskUserQuestion). Before touching any live prod container, ALL of these must hold, each quoted in the report: `sunday_dev_handoff_gate` passes (today's `dev-result-YYYY-MM-DD.json`, its own `date` is today, `status` is `PASS`); `/Users/Shared/agentshroud-sunday/dev-merge-commit-YYYY-MM-DD.txt` exists for today (no file = dev never merged = stop); prod's checkout is fast-forwarded to `origin/main` and contains that SHA (`git merge-base --is-ancestor <sha from that file> HEAD`); `check-version-pins-parity.sh` reports `PASS` in both environments (step 0); and the `versions` block in dev's handoff equals prod's `docker/versions.env` for every key it lists. If any one fails, stop here, leave prod on its current baseline, and mark the promotion `BLOCKED (<gate>)` in the report. After the cutover, the step 3 verification suite plus `bash scripts/post-deploy-check.sh` must pass; if either fails, roll back automatically per step 4 below and mark it `ROLLED BACK` — never stop to ask.
+0b. **Gate the cutover automatically — prod's own gate, independent of dev's. No human tap** (owner decision 2026-10-18; do not call AskUserQuestion). Before touching any live prod container, ALL of these must hold, each quoted in the report: `sunday_dev_handoff_gate` passes (the newest `dev-result-D.json` within 6 days, its own `date` is `D`, `status` is `PASS`, pins equal prod's); `/Users/Shared/agentshroud-sunday/dev-merge-commit-D.txt` exists for that same `D` (no file = dev never merged = stop); after a verified prod run `sunday-upgrade-apply.sh` writes `prod-promoted-D.json`, which is what stops the daily catch-up repeating it; prod's checkout is fast-forwarded to `origin/main` and contains that SHA (`git merge-base --is-ancestor <sha from that file> HEAD`); `check-version-pins-parity.sh` reports `PASS` in both environments (step 0); and the `versions` block in dev's handoff equals prod's `docker/versions.env` for every key it lists. If any one fails, stop here, leave prod on its current baseline, and mark the promotion `BLOCKED (<gate>)` in the report. After the cutover, the step 3 verification suite plus `bash scripts/post-deploy-check.sh` must pass; if either fails, roll back automatically per step 4 below and mark it `ROLLED BACK` — never stop to ask.
 1. Apply exactly the version set that passed on dev — no new versions, no components that failed on dev.
 2. Take a backup of any stateful services before upgrading them (LibreChat/Mongo data, Hermes state/config volumes) using the project's backup script or `docker run --rm -v <vol>:/data -v ~/Development/<project>/backups:/backup alpine tar czf /backup/<vol>-YYYY-MM-DD.tgz /data`. Verify the archive is non-empty.
 3. Bring prod up and run the same verification suite as step 3.3.
