@@ -112,8 +112,8 @@ $CRON_BEGIN
 PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 */5 * * * * $REPO_DIR/docker/scripts/colima-health-check.sh >> $HOME/Library/Logs/agentshroud-health.log 2>&1
 @reboot $REPO_DIR/docker/scripts/colima-health-check.sh >> $HOME/Library/Logs/agentshroud-health.log 2>&1
-0 3 * * 0 SUNDAY_UPGRADE_AUTON=1 /bin/bash $REPO_DIR/scripts/sunday-upgrade.sh >> $HOME/Library/Logs/sunday-upgrade.log 2>&1
-0 5,8,11,14 * * 0 SUNDAY_UPGRADE_AUTON=1 /bin/bash $REPO_DIR/scripts/sunday-upgrade.sh >> $HOME/Library/Logs/sunday-upgrade.log 2>&1
+0 1 * * 0 SUNDAY_UPGRADE_AUTON=1 /bin/bash $REPO_DIR/scripts/sunday-upgrade.sh >> $HOME/Library/Logs/sunday-upgrade.log 2>&1
+0 4,8,11,14 * * 0 SUNDAY_UPGRADE_AUTON=1 /bin/bash $REPO_DIR/scripts/sunday-upgrade.sh >> $HOME/Library/Logs/sunday-upgrade.log 2>&1
 $CRON_END
 EOF
 )"

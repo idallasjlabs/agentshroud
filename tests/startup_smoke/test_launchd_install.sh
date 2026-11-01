@@ -88,9 +88,9 @@ CT="$DH/.state/crontab"
 n_health="$(grep -c 'colima-health-check.sh' "$CT" || true)"
 n_sunday="$(grep -c 'scripts/sunday-upgrade.sh' "$CT" || true)"
 [ "$n_health" -eq 2 ] && ok "health check scheduled exactly twice (*/5 and @reboot)" || bad "health-check lines: $n_health"
-[ "$n_sunday" -eq 2 ] && ok "Sunday upgrade scheduled exactly twice (03:00 and the retries)" || bad "sunday lines: $n_sunday"
-grep -q '^0 3 \* \* 0 SUNDAY_UPGRADE_AUTON=1 ' "$CT" && grep -q '^0 5,8,11,14 \* \* 0 SUNDAY_UPGRADE_AUTON=1 ' "$CT" \
-  && ok "03:00 run and 05/08/11/14 retries keep SUNDAY_UPGRADE_AUTON=1" || bad "Sunday schedule wrong: $(grep sunday "$CT")"
+[ "$n_sunday" -eq 2 ] && ok "Sunday upgrade scheduled exactly twice (01:00 and the retries)" || bad "sunday lines: $n_sunday"
+grep -q '^0 1 \* \* 0 SUNDAY_UPGRADE_AUTON=1 ' "$CT" && grep -q '^0 4,8,11,14 \* \* 0 SUNDAY_UPGRADE_AUTON=1 ' "$CT" \
+  && ok "01:00 run and 04/08/11/14 retries keep SUNDAY_UPGRADE_AUTON=1" || bad "Sunday schedule wrong: $(grep sunday "$CT")"
 grep -q "$DH/Development/agentshroud/scripts/sunday-upgrade.sh" "$CT" \
   && ok "paths come from the installing account's HOME" || bad "paths not under $DH"
 grep -q 'unrelated job' "$CT" && ok "unrelated crontab lines are preserved" || bad "unrelated line dropped"

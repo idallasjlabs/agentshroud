@@ -14,8 +14,9 @@
     <key>WorkingDirectory</key>
     <string>/Users/ijefferson.admin/Development/agentshroud</string>
 
-    <!-- 06:00: AFTER dev's 03:00 run (owner 2026-08-30: start upgrades at
-         3-4am; dev first, resolve all findings, then prod) AND after the
+    <!-- 06:00: AFTER dev's 01:00 run (owner 2026-08-30: dev first, resolve
+         all findings, then prod; moved from 03:00 on 2026-11-01 because a
+         03:00 dev run could not finish and merge by 06:00) AND after the
          04:30-05:45 Daily Brief production window — a prod upgrade restarting
          Hermes inside that window would kill that morning's episode.
          The prompt's dev-result gate blocks prod changes if dev hasn't PASSed. -->
@@ -52,6 +53,13 @@
              unattended. Do not remove. -->
         <key>SUNDAY_UPGRADE_AUTON</key>
         <string>1</string>
+        <!-- Prod waits for dev's merge signal (dev-merge-commit-<date>.txt)
+             until 06:40 instead of checking it once at 06:00: dev's run
+             starts at 01:00 and may still be merging. 06:40 leaves the
+             session time to reach the 07:00 cutover limit. Dev never sets
+             this. -->
+        <key>SUNDAY_WAIT_FOR_DEV_UNTIL</key>
+        <string>06:40</string>
     </dict>
 </dict>
 </plist>

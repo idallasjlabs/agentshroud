@@ -588,6 +588,15 @@ s15c="$(summary 3 '' 0 0)"
 check "T15: a preflight failure still says what failed (exit 3: git fetch)" \
     "$(printf '%s' "$s15c" | grep -q 'exit 3' && printf '%s' "$s15c" | grep -q 'fetch' && echo true || echo false)" "got=$s15c"
 
+s15d="$(summary 0 STACK_OK 1 0 'BLOCKED (dev handoff)')"
+check "T15: a finished run names the session's own status, not a bare 'complete'" \
+    "$(printf '%s' "$s15d" | grep -q 'BLOCKED (dev handoff)' && echo true || echo false)" "got=$s15d"
+s15e="$(summary 8 STACK_OK 1 0 'ABORTED (fetch)')"
+check "T15: exit 8 (ABORTED finish) says it stays retryable" \
+    "$(printf '%s' "$s15e" | grep -q 'exit 8' && printf '%s' "$s15e" | grep -q 'ABORTED (fetch)' && printf '%s' "$s15e" | grep -q 'retries' && echo true || echo false)" "got=$s15e"
+check "T15: wrapper passes the finish status to the notice" \
+    "$(grep -q '"${FINISH_STATUS:-}")")"' "$WRAP_SH" && echo true || echo false)"
+
 check "T15: wrapper sends the notice from an EXIT trap (covers preflight exits too)" \
     "$(grep -qE '^trap _notify_on_exit EXIT' "$WRAP_SH" && echo true || echo false)"
 
@@ -839,6 +848,46 @@ check "T20: openclaw config validate failing fails verify" \
 check "T20: openclaw health reporting plugin errors fails verify" \
     "$([ "$rc20f" = 40 ] && grep -q 'openclaw health' "$T20/plugerr/out" && echo true || echo false)" \
     "rc=$rc20f out=$(tail -6 "$T20/plugerr/out")"
+
+# ── T21: prod waits for dev's merge signal instead of checking it once ──────
+# 2026-11-01: prod fires once at 06:00 and its gate needs
+# dev-merge-commit-<date>.txt, which dev writes only after its PR merges. A
+# one-shot check at 06:00 loses the week whenever dev is still working.
+T21="$TMPROOT/t21"; mkdir -p "$T21"
+# shellcheck disable=SC2016  # expands in the child shell, by design
+waitf() {
+    env -i PATH="/usr/bin:/bin" SUNDAY_WAIT_POLL=1 "$BASH_BIN" -c \
+        '. "$1"; shift; sunday_wait_for_file "$@"' _ "$LIB" "$@" 2>/dev/null
+}
+now21="$(date +%s)"
+touch "$T21/present"
+check "T21: signal already there -> found, no wait" \
+    "$([ "$(waitf "$T21/present" "$((now21 + 30))")" = found ] && echo true || echo false)"
+check "T21: deadline already past -> timeout, no wait" \
+    "$([ "$(waitf "$T21/absent" "$((now21 - 1))")" = timeout ] && echo true || echo false)"
+check "T21: no deadline armed (launch after it) -> one look, no wait" \
+    "$([ "$(waitf "$T21/absent" '')" = no-deadline ] && echo true || echo false)"
+( sleep 2; touch "$T21/late" ) &
+got21="$(waitf "$T21/late" "$((now21 + 30))")"
+wait
+check "T21: signal that lands while waiting -> found" \
+    "$([ "$got21" = found ] && echo true || echo false)" "got=$got21"
+pre21="$(awk '/_session_guard "\$SESSION"/{g=NR} /sunday_wait_for_file/{w=NR} /git fetch origin main/{if(!f)f=NR} END{print g, w, f}' "$WRAP_SH")"
+check "T21: wrapper waits after the session guard and before fetching main" \
+    "$(set -- $pre21; [ -n "${3:-}" ] && [ "$1" -lt "$2" ] && [ "$2" -lt "$3" ] && echo true || echo false)" "lines=$pre21"
+check "T21: the wait is armed only by SUNDAY_WAIT_FOR_DEV_UNTIL (prod's plist)" \
+    "$(grep -q 'SUNDAY_WAIT_FOR_DEV_UNTIL' "$WRAP_SH" && grep -q '<key>SUNDAY_WAIT_FOR_DEV_UNTIL</key>' "$REPO/scripts/launchd/com.agentshroud.sunday-upgrade.plist" && echo true || echo false)"
+
+# ── T22: a session that finished is closed, not left idle until timeout ─────
+# Every run on record ended "TIMED OUT after 170m": the interactive session
+# never exits on its own, so the watcher could only kill it at the budget and
+# never wrote the sentinel. The session now writes session-finished last.
+check "T22: wrapper clears a stale finished file before launching" \
+    "$(awk '/rm -f "\$FINISHED_FILE"/{r=NR} /^tmux new-session/{t=NR} END{exit !(r && t && r<t)}' "$WRAP_SH" && echo true || echo false)"
+check "T22: the wait loop ends the session when it reports finished" \
+    "$(printf '%s\n' "$wait_loop" | grep -q 'FINISHED_FILE' && echo true || echo false)"
+check "T22: only an ABORTED finish stays retryable" \
+    "$(grep -qF "ABORTED*|'')" "$WRAP_SH" && echo true || echo false)"
 
 # ── Summary ──────────────────────────────────────────────────────────────────
 echo ""

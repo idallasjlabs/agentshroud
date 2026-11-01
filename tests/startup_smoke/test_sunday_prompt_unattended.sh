@@ -109,5 +109,11 @@ for needle in 'Shell commands under dontAsk' 'Never `cd`' 'denied outright'; do
   if grep -qF -- "$needle" "$PROMPT"; then pass "shell rules mention: $needle"; else fail "shell rules missing: $needle"; fi
 done
 
+# 6. The session closes itself (2026-11-01: every run on record idled to the
+# 170-minute kill because nothing told the wrapper it had finished).
+for needle in 'reports/sunday/YYYY-MM-DD/session-finished' 'on every path' 'first line is the summary status word'; do
+  if grep -qF -- "$needle" "$PROMPT"; then pass "finish signal mentions: $needle"; else fail "finish signal missing: $needle"; fi
+done
+
 echo "Results: $fails failure(s)"
 [ "$fails" -eq 0 ]
