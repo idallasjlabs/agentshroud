@@ -46,8 +46,13 @@
 #   sunday_handoff_status <status> <scanned> <failed>
 #                                        - downgrade a PASS to SCAN_INCOMPLETE
 #                                          when no image scanned or any failed.
-#   sunday_dev_handoff_gate <dir> <today>
-#                                        - prod's gate: today's dev PASS only.
+#   sunday_dev_handoff_gate <dir> <today> [versions.env]
+#                                        - prod's gate: newest dev PASS within
+#                                          SUNDAY_HANDOFF_MAX_AGE_DAYS (6) whose
+#                                          pins equal prod's. See its comment.
+#   sunday_catchup_pending / sunday_mark_promoted / sunday_report_completed /
+#   sunday_move_aside_untracked_collisions / sunday_write_launcher_status
+#                                        - launcher helpers, see each comment.
 #
 # Callers are expected to already define log/warn/die (sunday-upgrade-apply.sh
 # does); fallbacks are provided below so this file is independently testable.
@@ -365,28 +370,186 @@ sunday_handoff_status() {
   printf 'PASS\n'
 }
 
-# sunday_dev_handoff_gate <handoff_dir> <today>
-#   Return 0 only when dev published a PASS for <today>: the file must be
-#   dev-result-<today>.json AND its own "date" field must say <today>, so a
-#   previous Sunday's PASS (or a copy of one under today's name) can never
-#   unlock a prod apply. Prints the reason on refusal.
+# ── Dev→prod handoff window (2026-11-01) ─────────────────────────────────────
+# The gate used to accept only dev-result-<TODAY>.json while prod's job fires
+# once, Sunday 06:00. Dev's PASS landed at 04:13–15:50 or the next morning (see
+# /Users/Shared/agentshroud-sunday mtimes), so the two never lined up and the
+# week was lost whenever dev ran late. The date check existed to stop a STALE
+# PASS unlocking prod; what actually makes a PASS safe to promote is that prod
+# would build exactly the versions dev tested. So: the newest dev result inside
+# a short window governs, its own "date" must match its filename, it must be
+# PASS, and (when a versions.env is given) every pin dev recorded must equal
+# prod's — a pin dev never tested still cannot ship.
+SUNDAY_HANDOFF_ACCEPTED=""
+
+# _sunday_date_minus <YYYY-MM-DD> <n>  — portable (BSD date, then GNU date).
+_sunday_date_minus() {
+  # BSD date stops parsing options at the first operand, so -v and the +format
+  # must precede the date string (the other order silently prints "now").
+  date -j -v-"$2"d -f %F "$1" +%F 2>/dev/null || date -d "$1 -$2 day" +%F 2>/dev/null
+}
+
+# _sunday_json_field <file> <key>  — first top-level-ish string value for key.
+_sunday_json_field() {
+  grep -oE "\"$2\": *\"[^\"]*\"" "$1" 2>/dev/null | head -1 | sed -E 's/.*"([^"]*)"$/\1/'
+}
+
+# sunday_handoff_versions_match <handoff.json> <versions.env>
+#   0 when every pin in the handoff's "versions" block equals <versions.env>.
+#   Prints the differing keys otherwise. A handoff with no versions block
+#   proves nothing, so it does not match.
+sunday_handoff_versions_match() {
+  python3 -I - "$1" "$2" <<'PY'
+import json, sys
+try:
+    h = json.load(open(sys.argv[1])).get("versions")
+except Exception as e:
+    print("cannot parse handoff: %s" % e); sys.exit(2)
+if not isinstance(h, dict) or not h:
+    print("handoff has no versions block"); sys.exit(2)
+cur = {}
+for line in open(sys.argv[2]):
+    line = line.strip()
+    if not line or line.startswith("#") or "=" not in line:
+        continue
+    k, v = line.split("=", 1)
+    cur[k] = v.strip().strip('"')
+bad = [k for k, v in h.items() if cur.get(k) != str(v)]
+if bad:
+    print("pins differ from what dev passed: " + ", ".join(
+        "%s (dev=%s prod=%s)" % (k, h[k], cur.get(k)) for k in bad))
+    sys.exit(1)
+PY
+}
+
+# sunday_dev_handoff_gate <handoff_dir> <today> [versions.env]
+#   Return 0 only when the NEWEST dev-result-<D>.json in [today-N, today]
+#   (N = SUNDAY_HANDOFF_MAX_AGE_DAYS, default 6) is a PASS whose own "date"
+#   equals <D>, and — when [versions.env] is given — whose recorded pins equal
+#   it. The newest file governs: a later FAIL after an earlier PASS refuses.
+#   Sets SUNDAY_HANDOFF_ACCEPTED=<D> on success. Prints the reason on refusal.
 sunday_dev_handoff_gate() {
-  local dir="$1" today="$2" f date status
-  f="${dir}/dev-result-${today}.json"
-  if [ ! -f "$f" ]; then
-    printf 'dev handoff: %s does not exist — dev has not passed today\n' "$f" >&2
-    return 1
-  fi
-  date="$(grep -oE '"date": *"[^"]*"' "$f" 2>/dev/null | head -1 | sed -E 's/.*"([^"]*)"$/\1/')"
-  status="$(grep -oE '"status": *"[^"]*"' "$f" 2>/dev/null | head -1 | sed -E 's/.*"([^"]*)"$/\1/')"
-  if [ "$date" != "$today" ]; then
-    printf 'dev handoff: %s is dated "%s", not %s — stale, refusing\n' "$f" "$date" "$today" >&2
-    return 1
-  fi
-  if [ "$status" != "PASS" ]; then
-    printf 'dev handoff: %s has status "%s", not PASS — refusing\n' "$f" "$status" >&2
-    return 1
-  fi
+  local dir="$1" today="$2" versions_env="${3:-}"
+  local max="${SUNDAY_HANDOFF_MAX_AGE_DAYS:-6}" n d f date status why
+  SUNDAY_HANDOFF_ACCEPTED=""
+  for ((n = 0; n <= max; n++)); do
+    d="$(_sunday_date_minus "$today" "$n")"
+    if [ -z "$d" ]; then
+      printf 'dev handoff: cannot compute the %s-day window from %s\n' "$max" "$today" >&2
+      return 1
+    fi
+    f="${dir}/dev-result-${d}.json"
+    [ -f "$f" ] || continue
+    date="$(_sunday_json_field "$f" date)"
+    status="$(_sunday_json_field "$f" status)"
+    if [ "$date" != "$d" ]; then
+      printf 'dev handoff: %s is dated "%s", not %s — stale or copied, refusing\n' "$f" "$date" "$d" >&2
+      return 1
+    fi
+    if [ "$status" != "PASS" ]; then
+      printf 'dev handoff: newest result %s has status "%s", not PASS — refusing\n' "$f" "$status" >&2
+      return 1
+    fi
+    if [ -n "$versions_env" ]; then
+      if ! why="$(sunday_handoff_versions_match "$f" "$versions_env")"; then
+        printf 'dev handoff: %s — %s — refusing (prod applies only what dev passed)\n' "$f" "$why" >&2
+        return 1
+      fi
+    fi
+    SUNDAY_HANDOFF_ACCEPTED="$d"
+    return 0
+  done
+  printf 'dev handoff: no dev-result-*.json from %s back %s day(s) — dev has not passed in the window\n' "$today" "$max" >&2
+  return 1
+}
+
+# sunday_catchup_pending <handoff_dir> <today>
+#   Prod's cheap daily check. Prints <D> and returns 0 when the newest dev
+#   result in the window is a PASS that dev also MERGED (dev-merge-commit-<D>.txt)
+#   and prod has not yet promoted (no prod-promoted-<D>.json). Anything else
+#   returns 1 silently: nothing to do today.
+sunday_catchup_pending() {
+  local dir="$1" today="$2" max="${SUNDAY_HANDOFF_MAX_AGE_DAYS:-6}" n d f
+  for ((n = 0; n <= max; n++)); do
+    d="$(_sunday_date_minus "$today" "$n")"
+    [ -n "$d" ] || return 1
+    f="${dir}/dev-result-${d}.json"
+    [ -f "$f" ] || continue
+    [ "$(_sunday_json_field "$f" date)" = "$d" ] || return 1
+    [ "$(_sunday_json_field "$f" status)" = "PASS" ] || return 1
+    [ -f "${dir}/dev-merge-commit-${d}.txt" ] || return 1
+    [ ! -f "${dir}/prod-promoted-${d}.json" ] || return 1
+    printf '%s\n' "$d"
+    return 0
+  done
+  return 1
+}
+
+# sunday_mark_promoted <handoff_dir> <dev_handoff_date> <today>
+#   Written by prod ONLY after verify passed on the pins that handoff recorded
+#   (state, not steps: CLAUDE.md §0.0). It is what stops the daily catch-up
+#   re-running a promotion that already happened.
+sunday_mark_promoted() {
+  local dir="$1" d="$2" today="$3"
+  printf '{\n  "dev_handoff": "%s",\n  "promoted_on": "%s",\n  "note": "Written by sunday-upgrade-apply.sh (prod) after verify passed on the pins in dev-result-%s.json."\n}\n' \
+    "$d" "$today" "$d" > "${dir}/prod-promoted-${d}.json" && chmod 664 "${dir}/prod-promoted-${d}.json" 2>/dev/null
+}
+
+# sunday_report_completed <report.md>
+#   0 when the report exists and its summary line does not START with ABORTED
+#   or BLOCKED. A run that wrote either did not complete, and marking its day
+#   done suppresses every retry (2026-10-25: an ABORTED prod run left
+#   .upgrade-2026-10-25.done behind). A report with no summary line at all is
+#   malformed, so it is also not complete.
+sunday_report_completed() {
+  [ -s "$1" ] || return 1
+  awk '
+    BEGIN { found = 0; bad = 0 }
+    tolower($0) ~ /^#+ .*summary/ {
+      found = 1; n = 0
+      line = $0; sub(/^[^:]*:/, "", line)              # "## Summary line: **ABORTED ..." form
+      if (line != $0) { gsub(/^[*` ]+/, "", line); if (line ~ /^(ABORTED|BLOCKED)/) bad = 1 }
+      grab = 1; next
+    }
+    grab && NF {
+      line = $0; gsub(/^[*` ]+/, "", line)
+      if (line ~ /^(ABORTED|BLOCKED)/) bad = 1
+      if (++n >= 1) grab = 0
+    }
+    END { exit (found && !bad) ? 0 : 1 }
+  ' "$1"
+}
+
+# sunday_move_aside_untracked_collisions <repo> <ref>
+#   Before `git merge --ff-only <ref>`: rename any UNTRACKED file that the merge
+#   would add, so git does not abort with "untracked working tree files would be
+#   overwritten". The content is kept as <file>.local-<timestamp>. 2026-11-01:
+#   prod's own aborted 10-25 report sat untracked at the exact path dev's #555
+#   adds, which would have killed the next launcher run at its fast-forward.
+sunday_move_aside_untracked_collisions() {
+  local repo="$1" ref="$2" f ts moved=0
+  ts="$(date +%Y%m%d-%H%M%S)"
+  while IFS= read -r f; do
+    [ -n "$f" ] && [ -e "$repo/$f" ] || continue
+    git -C "$repo" ls-files --error-unmatch -- "$f" >/dev/null 2>&1 && continue
+    mv "$repo/$f" "$repo/${f}.local-${ts}" && moved=$((moved + 1)) \
+      && printf '[sunday-upgrade] moved untracked %s aside (incoming from %s) -> %s.local-%s\n' "$f" "$ref" "$f" "$ts" >&2
+  done < <(git -C "$repo" diff --name-only --diff-filter=A HEAD "$ref" 2>/dev/null)
+  return 0
+}
+
+# sunday_write_launcher_status <handoff_dir> <today> <stage> <rc> [note]
+#   One small JSON per account per day in the shared dir, rewritten at launch
+#   and on every exit. "Dev wrote nothing" used to be indistinguishable from
+#   "dev never fired"; now the other account can read how far the launcher got.
+sunday_write_launcher_status() {
+  local dir="$1" today="$2" stage="$3" rc="$4" note="${5:-}" who f
+  who="$(whoami 2>/dev/null || echo unknown)"
+  f="${dir}/launcher-${who}-${today}.json"
+  [ -d "$dir" ] && [ -w "$dir" ] || return 0
+  printf '{\n  "account": "%s",\n  "date": "%s",\n  "updated": "%s",\n  "stage": "%s",\n  "exit_code": %s,\n  "note": "%s"\n}\n' \
+    "$who" "$today" "$(date '+%Y-%m-%dT%H:%M:%S%z')" "$stage" "$rc" "$(printf '%s' "$note" | tr -d '"\\' | cut -c1-300)" \
+    > "$f" 2>/dev/null && chmod 664 "$f" 2>/dev/null
   return 0
 }
 
@@ -536,6 +699,7 @@ sunday_run_summary() {
     5) what="DEFERRED (exit 5): host memory pressure critical, next fire retries" ;;
     6) what="TIMED OUT (exit 6): no sentinel, next fire retries" ;;
     7) what="STACK DEGRADED (exit 7): restart and rollback both failed, human required" ;;
+    8) what="INCOMPLETE (exit 8): session ended with a missing or ABORTED/BLOCKED report, next fire retries" ;;
     *) what="FAILED (exit ${rc})" ;;
   esac
   printf 'AgentShroud Sunday upgrade %s on %s/%s: %s' \

@@ -984,10 +984,14 @@ phase_apply() {
   # session prompt, so nothing mechanical stopped a prod apply from reading a
   # previous Sunday's dev-result (dev-result-2026-10-11.json sat in the shared
   # dir with status PASS). Exit 15 before anything is mutated.
-  if [ "$ENVIRONMENT" = "prod" ] && ! sunday_dev_handoff_gate "$HANDOFF_DIR" "$TODAY"; then
-    err "apply: BLOCKED — no dev PASS handoff for ${TODAY}; prod applies nothing dev has not passed today"
+  # Window + pin match since 2026-11-01: the newest dev PASS in the last 6 days
+  # governs, and only if every pin it recorded equals this checkout's
+  # versions.env — prod still builds exactly what dev tested, never a newer pin.
+  if [ "$ENVIRONMENT" = "prod" ] && ! sunday_dev_handoff_gate "$HANDOFF_DIR" "$TODAY" "$REPO/docker/versions.env"; then
+    err "apply: BLOCKED — no usable dev PASS handoff (newest in the last ${SUNDAY_HANDOFF_MAX_AGE_DAYS:-6} days, with matching pins); prod applies nothing dev has not passed"
     exit 15
   fi
+  PROMOTING_HANDOFF="${SUNDAY_HANDOFF_ACCEPTED:-}"
 
   # ── Clean-build gate ───────────────────────────────────────────────────────
   # `docker compose build` bakes the working tree into the image. If the build
@@ -1618,6 +1622,16 @@ if [ "$ENVIRONMENT" = "dev" ] && [ "$PHASE" = "all" ]; then
   fi
 fi
 write_handoff PASS
+# Prod: record that THIS dev handoff is now live and verified, so the daily
+# catch-up (sunday-upgrade.sh) stops re-running it. Only after a full run, i.e.
+# after verify passed — never on intent.
+if [ "$ENVIRONMENT" = "prod" ] && [ "$PHASE" = "all" ] && _mutating && [ -n "${PROMOTING_HANDOFF:-}" ]; then
+  if sunday_mark_promoted "$HANDOFF_DIR" "$PROMOTING_HANDOFF" "$TODAY"; then
+    log "promoted: dev handoff ${PROMOTING_HANDOFF} verified live on prod -> ${HANDOFF_DIR}/prod-promoted-${PROMOTING_HANDOFF}.json"
+  else
+    warn "promoted: could not write ${HANDOFF_DIR}/prod-promoted-${PROMOTING_HANDOFF}.json — the daily catch-up may re-run this promotion (harmless, but noisy)"
+  fi
+fi
 log "=== sunday-upgrade-apply COMPLETE: all requested phases passed ==="
 log "artifacts: $ARTIFACT_DIR"
 exit 0
