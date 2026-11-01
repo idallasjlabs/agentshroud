@@ -522,6 +522,16 @@ set +e
 env -i PATH="/usr/bin:/bin" "$BASH_BIN" -c '. "$1"; sunday_stop_apply "$2"' _ "$LIB" "$L13" >/dev/null 2>&1; rc13b=$?
 set -e
 check "T13b: stale lock (dead pid) -> no-op, exit 0" "$([ "$rc13b" -eq 0 ] && echo true || echo false)"
+# 2026-11-01: a run that never started an apply has no lock at all, and under
+# the wrapper's own `set -euo pipefail` the pid lookup's failing `head` killed
+# the wrapper right after the session — no restore check, no report staging,
+# no return to main, no sentinel. Run it the way the wrapper does.
+set +e
+env -i PATH="/usr/bin:/bin" "$BASH_BIN" -c 'set -euo pipefail; . "$1"; sunday_stop_apply "$2"; echo survived' \
+    _ "$LIB" "$TMPROOT/t13b/no-such-lock.d" >"$TMPROOT/t13b/nolock.out" 2>&1; rc13c=$?
+set -e
+check "T13b: no lock (apply never ran) under set -euo pipefail -> no-op, wrapper survives" \
+    "$([ "$rc13c" -eq 0 ] && grep -q survived "$TMPROOT/t13b/nolock.out" && echo true || echo false)" "rc=$rc13c"
 
 # ── T14: the wrapper and the deploy check are wired to the above ────────────
 WRAP_SH="$REPO/scripts/sunday-upgrade.sh"
