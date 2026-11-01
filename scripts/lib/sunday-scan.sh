@@ -456,7 +456,9 @@ sunday_wait_for_file() {
 #   KILL. A lock with no live pid is left for the next apply to reclaim.
 sunday_stop_apply() {
   local lock="$1" pid i
-  pid="$(head -1 "$lock/pid" 2>/dev/null | tr -cd '0-9')"
+  # `|| true` inside: with no lock (no apply ever ran) head fails, and under the
+  # wrapper's pipefail that killed the wrapper itself (2026-11-01).
+  pid="$({ head -1 "$lock/pid" 2>/dev/null || true; } | tr -cd '0-9')"
   [ -n "$pid" ] && kill -0 "$pid" 2>/dev/null || return 0
   warn "restore: apply run (pid $pid) still alive after the session ended — stopping it"
   kill -TERM "$pid" 2>/dev/null || true
