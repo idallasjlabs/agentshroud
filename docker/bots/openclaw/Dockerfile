@@ -106,7 +106,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
       amd64) TRIVY_ARCH="64bit" ;; \
       armhf) TRIVY_ARCH="ARM" ;; \
       *) TRIVY_ARCH="$DPKG_ARCH" ;; \
-    esac &&     curl -sSfL -o "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb"         "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" &&     curl -sSfL -o /tmp/trivy_checksums.txt         "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_checksums.txt" &&     cd /tmp && grep "trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" trivy_checksums.txt | sha256sum -c - &&     dpkg -i "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" &&     rm "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" /tmp/trivy_checksums.txt
+    esac &&     curl -sSfL --retry 5 --retry-delay 10 --retry-all-errors -o "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb"         "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" &&     curl -sSfL --retry 5 --retry-delay 10 --retry-all-errors -o /tmp/trivy_checksums.txt         "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_checksums.txt" &&     cd /tmp && grep "trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" trivy_checksums.txt | sha256sum -c - &&     dpkg -i "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" &&     rm "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" /tmp/trivy_checksums.txt
 
 # ClamAV DB directory — pre-download virus signatures at build time
 RUN mkdir -p /var/lib/clamav \
@@ -138,7 +138,7 @@ RUN printf '%s\n' \
 # WAZUH_VERSION grep. Verified 4.14.8 is latest stable 4.x via GitHub releases
 # (v4.14.8, 2026-09-25; v5.0.0 line is still beta).
 ARG WAZUH_VERSION=4.14.9
-RUN curl -sSfL https://packages.wazuh.com/key/GPG-KEY-WAZUH \
+RUN curl -sSfL --retry 5 --retry-delay 10 --retry-all-errors https://packages.wazuh.com/key/GPG-KEY-WAZUH \
         | gpg --dearmor -o /usr/share/keyrings/wazuh.gpg \
     && echo "deb [signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \
         > /etc/apt/sources.list.d/wazuh.list \

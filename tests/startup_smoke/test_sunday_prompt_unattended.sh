@@ -115,5 +115,41 @@ for needle in 'reports/sunday/YYYY-MM-DD/session-finished' 'on every path' 'firs
   if grep -qF -- "$needle" "$PROMPT"; then pass "finish signal mentions: $needle"; else fail "finish signal missing: $needle"; fi
 done
 
+# 7. The session knows how it was started (2026-11-01 and 11-08: every
+# `--force` run was told nothing, applied the 08:00 window to a run started
+# after 08:00, and blocked itself on its first phase).
+LIB="$REPO/scripts/lib/sunday-scan.sh"
+rc_ctx() { env -i PATH="/usr/bin:/bin" bash -c '. "$1"; shift; sunday_run_context "$@"' _ "$LIB" "$@" 2>/dev/null || true; }
+ctx="$(rc_ctx 1 'retry after 504' 10:15)"
+if printf '%s' "$ctx" | grep -qF 'trigger: on-demand' && printf '%s' "$ctx" | grep -qF 'clock window: none' \
+   && printf '%s' "$ctx" | grep -qF 'reason: retry after 504'; then
+  pass "on-demand run started after 08:00 -> clock window none"
+else
+  fail "on-demand run started after 08:00 not marked window none: $ctx"
+fi
+ctx="$(rc_ctx 1 'early advisory' 05:10)"
+if printf '%s' "$ctx" | grep -qF 'clock window: 08:00'; then
+  pass "on-demand run started before 08:00 keeps the window"
+else
+  fail "on-demand run started before 08:00 lost the window: $ctx"
+fi
+ctx="$(rc_ctx 0 'scheduled weekly run' 10:15)"
+if printf '%s' "$ctx" | grep -qF 'trigger: scheduled' && printf '%s' "$ctx" | grep -qF 'clock window: 08:00'; then
+  pass "scheduled run always keeps the window"
+else
+  fail "scheduled run lost the window: $ctx"
+fi
+# shellcheck disable=SC2016  # literal $MISSION_FILE is the text searched for
+if grep -qF 'sunday_run_context' "$WRAPPER" && grep -qF "cat '\$MISSION_FILE'" "$WRAPPER"; then
+  pass "wrapper launches the session with the run context appended"
+else
+  fail "wrapper does not pass the run context to the session"
+fi
+if grep -qF 'clock window: none' "$PROMPT"; then
+  pass "prompt's hard window names the on-demand exception"
+else
+  fail "prompt's hard window has no on-demand exception"
+fi
+
 echo "Results: $fails failure(s)"
 [ "$fails" -eq 0 ]

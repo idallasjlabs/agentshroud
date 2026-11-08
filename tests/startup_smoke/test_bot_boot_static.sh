@@ -382,6 +382,23 @@ esac
 check "S23: wazuh-agent ENTRYPOINT disables agentd log rotation in the etc volume" \
     "$_s23_ok" "$_s23_detail"
 
+# S24: every build-time download (`curl -sSfL`) retries. 2026-11-08: GitHub's
+# release-asset CDN returned 504 for the pinned cosign/trivy/syft assets, the
+# gateway build died at its first fetch, and each of three apply attempts cost
+# ~26 minutes of rebuilding before failing again. One failed request must not
+# end a build. --retry-all-errors is needed because curl's default retries
+# skip HTTP errors once -f has turned them into failures.
+_s24_ok=true; _s24_detail=""
+for _s24_df in gateway/Dockerfile docker/bots/openclaw/Dockerfile \
+               docker/Dockerfile.agentshroud docker/wazuh-agent/Dockerfile; do
+    _s24_bad="$(grep -n 'curl -sSfL' "$REPO/$_s24_df" | grep -v -- '--retry-all-errors' || true)"
+    if [ -n "$_s24_bad" ]; then
+        _s24_ok=false; _s24_detail+="${_s24_df}: $(printf '%s' "$_s24_bad" | cut -d: -f1 | tr '\n' ' '); "
+    fi
+done
+check "S24: Dockerfile release downloads retry transient HTTP errors" \
+    "$_s24_ok" "$_s24_detail"
+
 # ── Summary ────────────────────────────────────────────────────────────────
 echo ""
 total=$(( pass + fail ))

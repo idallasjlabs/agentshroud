@@ -238,9 +238,9 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
       armhf) COSIGN_ARCH="arm" ;; \
       *) COSIGN_ARCH="$DPKG_ARCH" ;; \
     esac && \
-    curl -sSfL -o "/tmp/cosign-linux-${COSIGN_ARCH}" \
+    curl -sSfL --retry 5 --retry-delay 10 --retry-all-errors -o "/tmp/cosign-linux-${COSIGN_ARCH}" \
         "https://github.com/sigstore/cosign/releases/download/v${COSIGN_BOOTSTRAP_VERSION}/cosign-linux-${COSIGN_ARCH}" && \
-    curl -sSfL -o /tmp/cosign_checksums.txt \
+    curl -sSfL --retry 5 --retry-delay 10 --retry-all-errors -o /tmp/cosign_checksums.txt \
         "https://github.com/sigstore/cosign/releases/download/v${COSIGN_BOOTSTRAP_VERSION}/cosign_checksums.txt" && \
     (cd /tmp && grep "cosign-linux-${COSIGN_ARCH}$" cosign_checksums.txt | sha256sum -c -) && \
     chmod +x "/tmp/cosign-linux-${COSIGN_ARCH}" && \
@@ -256,7 +256,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
       armhf) SYFT_ARCH="arm" ;; \
       *) SYFT_ARCH="$DPKG_ARCH" ;; \
     esac && \
-    curl -sSfL -o "/tmp/syft_${SYFT_VERSION}_linux_${SYFT_ARCH}.deb" \
+    curl -sSfL --retry 5 --retry-delay 10 --retry-all-errors -o "/tmp/syft_${SYFT_VERSION}_linux_${SYFT_ARCH}.deb" \
         "https://github.com/anchore/syft/releases/download/v${SYFT_VERSION}/syft_${SYFT_VERSION}_linux_${SYFT_ARCH}.deb" && \
     dpkg -i "/tmp/syft_${SYFT_VERSION}_linux_${SYFT_ARCH}.deb" && \
     rm "/tmp/syft_${SYFT_VERSION}_linux_${SYFT_ARCH}.deb"
@@ -271,11 +271,11 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
       armhf) TRIVY_ARCH="ARM" ;; \
       *) TRIVY_ARCH="$DPKG_ARCH" ;; \
     esac && \
-    curl -sSfL -o "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" \
+    curl -sSfL --retry 5 --retry-delay 10 --retry-all-errors -o "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" \
         "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" && \
-    curl -sSfL -o /tmp/trivy_checksums.txt \
+    curl -sSfL --retry 5 --retry-delay 10 --retry-all-errors -o /tmp/trivy_checksums.txt \
         "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_checksums.txt" && \
-    curl -sSfL -o /tmp/trivy_checksums.txt.sigstore.json \
+    curl -sSfL --retry 5 --retry-delay 10 --retry-all-errors -o /tmp/trivy_checksums.txt.sigstore.json \
         "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_checksums.txt.sigstore.json" && \
     cosign verify-blob \
         --certificate-oidc-issuer https://token.actions.githubusercontent.com \
@@ -319,11 +319,11 @@ RUN chmod +x /usr/local/bin/docker
 # plain-INI ([SERVICE]/[INPUT]/[FILTER]/[OUTPUT]) — stable across 3.x→5.x; sidecar intact.
 ARG FLUENT_BIT_VERSION=5.1.5
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
-    ( curl -sSfL -o "/tmp/fluent-bit_${FLUENT_BIT_VERSION}_${DPKG_ARCH}.deb" \
+    ( curl -sSfL --retry 5 --retry-delay 10 --retry-all-errors -o "/tmp/fluent-bit_${FLUENT_BIT_VERSION}_${DPKG_ARCH}.deb" \
         "https://packages.fluentbit.io/debian/bookworm/pool/main/f/fluent-bit/fluent-bit_${FLUENT_BIT_VERSION}_${DPKG_ARCH}.deb" && \
       dpkg -i "/tmp/fluent-bit_${FLUENT_BIT_VERSION}_${DPKG_ARCH}.deb" && \
       rm "/tmp/fluent-bit_${FLUENT_BIT_VERSION}_${DPKG_ARCH}.deb" ) || \
-    ( curl -sSfL https://packages.fluentbit.io/fluentbit.key \
+    ( curl -sSfL --retry 5 --retry-delay 10 --retry-all-errors https://packages.fluentbit.io/fluentbit.key \
           | gpg --dearmor -o /usr/share/keyrings/fluentbit.gpg && \
       echo "deb [signed-by=/usr/share/keyrings/fluentbit.gpg] https://packages.fluentbit.io/debian/bookworm bookworm main" \
           > /etc/apt/sources.list.d/fluentbit.list && \
@@ -344,7 +344,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
       amd64) FALCO_ARCH="x86_64" ;; \
       *) FALCO_ARCH="$DPKG_ARCH" ;; \
     esac && \
-    ( curl -sSfL -o /tmp/falco.tar.gz \
+    ( curl -sSfL --retry 5 --retry-delay 10 --retry-all-errors -o /tmp/falco.tar.gz \
         "https://download.falco.org/packages/bin/${FALCO_ARCH}/falco-${FALCO_VERSION}-${FALCO_ARCH}.tar.gz" && \
       tar -xzf /tmp/falco.tar.gz -C / --strip-components=1 && \
       rm /tmp/falco.tar.gz ) || \

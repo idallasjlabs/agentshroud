@@ -535,6 +535,29 @@ sunday_write_launcher_status() {
 
 SUNDAY_REPO="${SUNDAY_REPO:-$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)}"
 
+# sunday_run_context <force 0|1> <reason> <start HH:MM>
+#   Print the "Run context" section the wrapper appends to the session's
+#   mission. The prompt's 08:00 hard window exists so the scheduled run never
+#   leaves the owner without a working system in the morning; an owner-started
+#   `--force` run AFTER 08:00 is the opposite case — the owner asked for the
+#   work now — yet until 2026-11-08 the session was never told it was forced,
+#   applied "after 07:30 start no new change" and blocked itself on its first
+#   phase (2026-11-01 07:46, and the planned 11-08 retry). Only that case gets
+#   `clock window: none`; a forced run before 08:00 keeps the window.
+sunday_run_context() {
+  local force="$1" reason="$2" start="$3" trigger=scheduled window
+  window="clock window: 08:00 (the prompt's hard window applies)"
+  if [ "$force" = 1 ]; then
+    trigger=on-demand
+    case "$start" in
+      0[8-9]:[0-5][0-9]|1[0-9]:[0-5][0-9]|2[0-3]:[0-5][0-9])
+        window="clock window: none (owner-started on-demand run after 08:00)" ;;
+    esac
+  fi
+  printf '\n\n## Run context (appended by scripts/sunday-upgrade.sh)\n- trigger: %s\n- reason: %s\n- started: %s local\n- %s\n' \
+    "$trigger" "$reason" "$start" "$window"
+}
+
 # sunday_deadline_epoch <HH:MM|off>
 #   Print the epoch of today's HH:MM local, or nothing when the cutoff is off,
 #   malformed, or already past (an 11:00 retry is not cut off at 07:20 — it
