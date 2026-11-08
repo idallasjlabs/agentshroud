@@ -99,3 +99,53 @@ class TestRewriteRequestHeaders:
         assert lines[0] == b"GET /sessions HTTP/1.1"
         assert b"Accept: application/json" in lines
         assert b"X-Custom: value" in lines
+
+
+# ── docker_proxy_relay.py (same image, same proxy-workaround family) ─────────
+#
+# `docker exec`/`docker run` attach: after the HTTP upgrade the CLI half-closes
+# its write side (no stdin) and keeps reading the container's output. A relay
+# that tears the whole connection down on the first EOF drops that output, so
+# every Hermes sandboxed terminal command "succeeded" with empty output
+# (found 2026-11-08 on dev: exit_code 0, output "").
+
+_RELAY_PATH = _BRIDGE_PATH.with_name("docker_proxy_relay.py")
+
+
+@pytest.fixture(scope="module")
+def relay_module():
+    spec = importlib.util.spec_from_file_location("docker_proxy_relay", _RELAY_PATH)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+class TestDockerProxyRelayHalfClose:
+    def test_output_after_client_half_close_reaches_client(self, relay_module):
+        import asyncio
+
+        async def scenario():
+            async def upstream(reader, writer):
+                await reader.read()  # until the client's half-close arrives
+                writer.write(b"CONTAINER-OUTPUT")
+                await writer.drain()
+                writer.close()
+
+            up = await asyncio.start_server(upstream, "127.0.0.1", 0)
+            relay_module.TARGET_HOST = "127.0.0.1"
+            relay_module.TARGET_PORT = up.sockets[0].getsockname()[1]
+            relay = await asyncio.start_server(relay_module._handle, "127.0.0.1", 0)
+            try:
+                reader, writer = await asyncio.open_connection(
+                    "127.0.0.1", relay.sockets[0].getsockname()[1]
+                )
+                writer.write(b"POST /exec/x/start HTTP/1.1\r\n\r\n")
+                writer.write_eof()
+                data = await asyncio.wait_for(reader.read(), timeout=5)
+                writer.close()
+                return data
+            finally:
+                relay.close()
+                up.close()
+
+        assert asyncio.run(scenario()) == b"CONTAINER-OUTPUT"

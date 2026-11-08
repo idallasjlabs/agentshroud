@@ -42,6 +42,10 @@ TARGET_PORT = int(os.environ.get("HERMES_DOCKER_PROXY_PORT", "2375"))
 
 
 async def _pump(reader: asyncio.StreamReader, writer: asyncio.StreamWriter) -> None:
+    # EOF on one side is a half-close, not the end of the connection: after the
+    # exec/attach upgrade the Docker CLI shuts its write side (no stdin) and
+    # keeps reading container output. Forward the EOF and leave the other
+    # direction open; _handle closes both sockets once both pumps finish.
     try:
         while True:
             chunk = await reader.read(65536)
@@ -49,22 +53,30 @@ async def _pump(reader: asyncio.StreamReader, writer: asyncio.StreamWriter) -> N
                 break
             writer.write(chunk)
             await writer.drain()
-    except (ConnectionResetError, BrokenPipeError):
+        if writer.can_write_eof():
+            writer.write_eof()
+    except OSError:
         pass
-    finally:
-        writer.close()
 
 
-async def _handle(client_reader: asyncio.StreamReader, client_writer: asyncio.StreamWriter) -> None:
+async def _handle(
+    client_reader: asyncio.StreamReader, client_writer: asyncio.StreamWriter
+) -> None:
     try:
-        upstream_reader, upstream_writer = await asyncio.open_connection(TARGET_HOST, TARGET_PORT)
+        upstream_reader, upstream_writer = await asyncio.open_connection(
+            TARGET_HOST, TARGET_PORT
+        )
     except OSError:
         client_writer.close()
         return
-    await asyncio.gather(
-        _pump(client_reader, upstream_writer),
-        _pump(upstream_reader, client_writer),
-    )
+    try:
+        await asyncio.gather(
+            _pump(client_reader, upstream_writer),
+            _pump(upstream_reader, client_writer),
+        )
+    finally:
+        upstream_writer.close()
+        client_writer.close()
 
 
 async def main() -> None:

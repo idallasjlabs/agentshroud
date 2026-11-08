@@ -639,19 +639,24 @@ sunday_stop_apply() {
 sunday_stack_check() {
   bash "$SUNDAY_REPO/scripts/post-deploy-check.sh" --functional
 }
-# The default stack is `asb up full` on the checkout as it stands. Its own
-# post-deploy-check is skipped here because the ladder re-checks with
-# --functional right after. Dev must never start Hermes with prod's Telegram
-# token (409 conflict, eats owner messages).
-sunday_stack_start() {
+# Dev must never start Hermes with prod's Telegram token (409 conflict, eats
+# owner messages): 1 on the dev account (agentshroud-bot), 0 elsewhere. An
+# explicit caller value wins. Every path that deploys Hermes uses this.
+sunday_hermes_telegram_flag() {
   local tg=0
   [ "${USER:-}" = "agentshroud-bot" ] && tg=1
+  echo "${AGENTSHROUD_HERMES_DISABLE_TELEGRAM:-$tg}"
+}
+# The default stack is `asb up full` on the checkout as it stands. Its own
+# post-deploy-check is skipped here because the ladder re-checks with
+# --functional right after.
+sunday_stack_start() {
   AGENTSHROUD_SKIP_POST_DEPLOY_CHECK=1 \
-  AGENTSHROUD_HERMES_DISABLE_TELEGRAM="${AGENTSHROUD_HERMES_DISABLE_TELEGRAM:-$tg}" \
+  AGENTSHROUD_HERMES_DISABLE_TELEGRAM="$(sunday_hermes_telegram_flag)" \
     bash "$SUNDAY_REPO/scripts/asb" up full
 }
 sunday_stack_rollback() {
-  bash "$1"
+  AGENTSHROUD_HERMES_DISABLE_TELEGRAM="$(sunday_hermes_telegram_flag)" bash "$1"
 }
 
 # sunday_restore_stack <rollback_script>
