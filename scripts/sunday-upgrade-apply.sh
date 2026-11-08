@@ -141,6 +141,10 @@ die()  { local code="$1"; shift; err "$*"; exit "$code"; }
 # hardening above is deliberately hostile to that (see scripts/lib/sunday-scan.sh).
 # shellcheck source=scripts/lib/sunday-scan.sh
 . "$REPO/scripts/lib/sunday-scan.sh"
+# Every Hermes deploy below (`asb up hermes`, the rollback script) inherits
+# this; unset, run-standalone.sh defaults it to 0 and dev Hermes polls prod's
+# Telegram bot for the whole run (2026-11-08).
+export AGENTSHROUD_HERMES_DISABLE_TELEGRAM="$(sunday_hermes_telegram_flag)"
 
 # ── Container-runtime + compose-file resolution (mirrors scripts/asb) ────────
 # scripts/asb already solves "which compose binary, which override file, which
@@ -1181,7 +1185,7 @@ _selfcheck_fail() { _AGENT_SELFCHECK_FAILURES="${_AGENT_SELFCHECK_FAILURES}\n  -
 
 _agent_selfcheck() {
   _AGENT_SELFCHECK_FAILURES=""
-  local c out rc fails tmo="${SUNDAY_SELFCHECK_TIMEOUT:-120}"
+  local c out rc fails tmo="${SUNDAY_SELFCHECK_TIMEOUT:-300}"
 
   if c="$(_hermes_container)" \
      && [ "$(docker inspect --format '{{.State.Status}}' "$c" 2>/dev/null)" = running ]; then

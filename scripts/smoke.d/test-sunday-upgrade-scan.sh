@@ -1015,6 +1015,31 @@ check "T27: launcher writes the heartbeat and does the catch-up check" \
 check "T27: prod plist fires daily (no Weekday key) so the catch-up can run" \
     "$(! grep -q '<key>Weekday</key>' "$PLIST" && grep -q '<key>Hour</key>' "$PLIST" && echo true || echo false)"
 
+# ── T28: dev Hermes never gets prod's Telegram token (2026-11-08) ─────────
+# The apply phase deployed dev Hermes via `asb up hermes` with the flag unset,
+# run-standalone.sh defaulted it to 0, and dev Hermes polled prod's bot for the
+# whole run (409 conflicts, owner messages lost). One rule, used everywhere.
+tg_flag() {  # $1 = USER, $2 = preset value ('' = unset)
+    env -i PATH="/usr/bin:/bin" USER="$1" ${2:+AGENTSHROUD_HERMES_DISABLE_TELEGRAM="$2"} \
+        "$BASH_BIN" -c '. "$1"; sunday_hermes_telegram_flag' _ "$LIB" 2>/dev/null
+}
+check "T28: dev account (agentshroud-bot) -> Telegram disabled" \
+    "$([ "$(tg_flag agentshroud-bot '')" = 1 ] && echo true || echo false)" "got=$(tg_flag agentshroud-bot '')"
+check "T28: any other account (prod) -> Telegram enabled" \
+    "$([ "$(tg_flag agentshroud '')" = 0 ] && echo true || echo false)" "got=$(tg_flag agentshroud '')"
+check "T28: an explicit caller value is kept" \
+    "$([ "$(tg_flag agentshroud-bot 0)" = 0 ] && [ "$(tg_flag agentshroud 1)" = 1 ] && echo true || echo false)"
+check "T28: apply exports the flag before any Hermes deploy" \
+    "$(grep -q '^export AGENTSHROUD_HERMES_DISABLE_TELEGRAM="\$(sunday_hermes_telegram_flag)"' "$APPLY_SH" && echo true || echo false)"
+check "T28: stack start and rollback use the same rule" \
+    "$([ "$(grep -c 'AGENTSHROUD_HERMES_DISABLE_TELEGRAM="\$(sunday_hermes_telegram_flag)"' "$LIB")" -ge 2 ] && echo true || echo false)"
+
+# ── T29: hermes doctor self-check budget (2026-11-08) ────────────────────────
+# `hermes doctor` takes ~98s on 0.23.0; the 120s default failed attempt 4 of a
+# good upgrade. Default 300s; SUNDAY_SELFCHECK_TIMEOUT still overrides.
+check "T29: self-check timeout defaults to 300s" \
+    "$(grep -q 'tmo="\${SUNDAY_SELFCHECK_TIMEOUT:-300}"' "$APPLY_SH" && echo true || echo false)"
+
 # ── Summary ──────────────────────────────────────────────────────────────────
 echo ""
 total=$(( pass + fail ))
