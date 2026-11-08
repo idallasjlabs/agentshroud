@@ -480,8 +480,13 @@ echo "[sunday-upgrade] $(date '+%H:%M:%S') launching remote-control session '$SE
 FINISHED_FILE="$REPO/reports/sunday/${TODAY}/session-finished"
 mkdir -p "$(dirname "$FINISHED_FILE")"
 rm -f "$FINISHED_FILE"
+# The mission is the prompt plus how this run was started (trigger, reason,
+# start time): a forced run after 08:00 is not bound by the 08:00 window, and
+# the session cannot know that unless it is told (sunday_run_context).
+MISSION_FILE="$REPO/reports/sunday/${TODAY}/mission-${SESSION}.md"
+{ cat "$PROMPT_FILE"; sunday_run_context "$FORCE" "$RUN_REASON" "$(date +%H:%M)"; } > "$MISSION_FILE"
 tmux new-session -d -s "$SESSION" -c "$REPO" \
-  "claude --remote-control --name '$SESSION' $EXTRA -- \"\$(cat '$PROMPT_FILE')\""
+  "claude --remote-control --name '$SESSION' $EXTRA -- \"\$(cat '$MISSION_FILE')\""
 tmux pipe-pane -t "$SESSION" -o "cat >> '$LOG'"
 
 # give it time to boot and register with claude.ai

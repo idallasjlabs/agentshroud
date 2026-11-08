@@ -31,7 +31,7 @@ RUN mkdir -p /apt-dl/partial \
     && apt-get update \
     && apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends \
         curl ca-certificates gpg \
-    && curl -sSfL https://packages.wazuh.com/key/GPG-KEY-WAZUH \
+    && curl -sSfL --retry 5 --retry-delay 10 --retry-all-errors https://packages.wazuh.com/key/GPG-KEY-WAZUH \
         | gpg --dearmor -o /usr/share/keyrings/wazuh.gpg \
     && echo "deb [trusted=yes signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \
         > /etc/apt/sources.list.d/wazuh.list \
