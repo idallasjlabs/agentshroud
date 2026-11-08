@@ -81,6 +81,51 @@ if [ "$got" = "running" ] && [ ! -f "$TMP/kills" ]; then
 else echo "  FAIL: unreadable age -> '$got'" >&2; fail=1; fi
 
 echo ""
+echo "── _other_run_live ──"
+# 2026-11-08: an owner --force run (session agentshroud-upgrade-<date>-HHMMSS)
+# was building on dev when the 11:00 cron fire looked only for its own name,
+# found none, and would have switched the checkout to main mid-build and then
+# stopped the forced run's apply. Any live upgrade session, whatever its name,
+# means another run owns this checkout.
+OTHERS_SRC="$(extract_fn _other_run_live)" || { echo "  FAIL: _other_run_live missing" >&2; fail=1; OTHERS_SRC=""; }
+[ -n "$OTHERS_SRC" ] && eval "$OTHERS_SRC"
+cat > "$TMP/bin/tmux" <<EOF
+#!/usr/bin/env bash
+case "\$1" in
+  list-sessions) [ -f "$TMP/others" ] && cat "$TMP/others" ;;
+  *) exit 0 ;;
+esac
+EOF
+now_s="$(date +%s)"
+if [ -n "$OTHERS_SRC" ]; then
+  printf 'marvin %s\nagentshroud-upgrade-2026-11-08-080222 %s\n' "$now_s" "$(( now_s - 60 * 60 ))" > "$TMP/others"
+  got="$(_other_run_live agentshroud-upgrade-2026-11-08 180)"
+  if [ "$got" = "agentshroud-upgrade-2026-11-08-080222" ]; then
+    echo "  OK : a live forced run blocks the scheduled fire"
+  else echo "  FAIL: live forced run -> '$got', want its name" >&2; fail=1; fi
+  printf 'agentshroud-upgrade-2026-11-08 %s\n' "$now_s" > "$TMP/others"
+  got="$(_other_run_live agentshroud-upgrade-2026-11-08-110000 180)"
+  if [ "$got" = "agentshroud-upgrade-2026-11-08" ]; then
+    echo "  OK : a live scheduled run blocks a forced run"
+  else echo "  FAIL: live scheduled run -> '$got'" >&2; fail=1; fi
+  printf 'agentshroud-upgrade-2026-11-08-080222 %s\nmarvin %s\n' "$(( now_s - 200 * 60 ))" "$now_s" > "$TMP/others"
+  got="$(_other_run_live agentshroud-upgrade-2026-11-08 180)"
+  if [ -z "$got" ]; then
+    echo "  OK : only a session past its budget, or unrelated ones -> nothing live"
+  else echo "  FAIL: stale/unrelated sessions -> '$got', want empty" >&2; fail=1; fi
+  rm -f "$TMP/others"
+  got="$(_other_run_live agentshroud-upgrade-2026-11-08 180)"
+  if [ -z "$got" ]; then echo "  OK : no tmux sessions -> nothing live"
+  else echo "  FAIL: no sessions -> '$got'" >&2; fail=1; fi
+fi
+# shellcheck disable=SC2016  # literal $SESSION is the text being searched for
+other_line="$(grep -n '_other_run_live "\$SESSION"' "$SCRIPT" | head -1 | cut -d: -f1)"
+fetch_line="$(grep -n 'git fetch origin main' "$SCRIPT" | head -1 | cut -d: -f1)"
+if [ -n "$other_line" ] && [ -n "$fetch_line" ] && [ "$other_line" -lt "$fetch_line" ]; then
+  echo "  OK : the wrapper checks for any live run (line $other_line) before touching git (line $fetch_line)"
+else echo "  FAIL: _other_run_live line=${other_line:-none}, fetch line=${fetch_line:-none}" >&2; fail=1; fi
+
+echo ""
 echo "── _return_to_main ──"
 # A bare origin plus a clone left on the run's chore branch, as a timed-out
 # 2026-10-11 run left it.

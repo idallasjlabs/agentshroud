@@ -139,6 +139,23 @@ _session_guard() {
   if tmux has-session -t "$s" 2>/dev/null; then echo running; else echo reaped; fi
 }
 
+# _other_run_live <self> <max_min> — prints the name of another live upgrade
+# session younger than its budget, or nothing. _session_guard only knows its
+# own name, but a --force run is named agentshroud-upgrade-<date>-HHMMSS: on
+# 2026-11-08 the 11:00 cron fire would have found "no session", switched the
+# checkout to main under a forced run's build and then stopped its apply.
+# Sessions past the budget are left to _session_guard's reaping.
+_other_run_live() {
+  local self="$1" max_min="$2" now name created
+  now="$(date +%s)"
+  while read -r name created; do
+    case "$name" in agentshroud-upgrade-*) ;; *) continue ;; esac
+    [ "$name" = "$self" ] && continue
+    case "$created" in ''|*[!0-9]*) echo "$name"; return 0 ;; esac
+    if [ $(( (now - created) / 60 )) -lt "$max_min" ]; then echo "$name"; return 0; fi
+  done < <(tmux list-sessions -F '#{session_name} #{session_created}' 2>/dev/null || true)
+}
+
 # ── Return the checkout to main ─────────────────────────────────────────────
 # The run works on chore/upgrade-<date>. It used to LEAVE the checkout there,
 # which hard-blocks every later run at the branch guard (exit 4) — on
@@ -239,6 +256,13 @@ fi
 # Idempotency FIRST, before the branch guard: an overlapping fire must skip,
 # not FATAL on the live run's chore branch (2026-10-11 05:00). Guards against
 # a manual re-trigger the same day, or launchd re-firing after a delayed wake.
+_other="$(_other_run_live "$SESSION" $((WATCH_TIMEOUT_MIN + 10)))"
+if [ -n "$_other" ]; then
+  echo "[sunday-upgrade] another upgrade run (${_other}) is live and owns this checkout — skipping."
+  LAUNCHER_STAGE=noop; LAUNCHER_NOTE="skipped: ${_other} is live"
+  NOTIFY_ON_EXIT=0
+  exit 0
+fi
 case "$(_session_guard "$SESSION" $((WATCH_TIMEOUT_MIN + 10)))" in
   running)
     echo "[sunday-upgrade] tmux session ${SESSION} already running — skipping."
@@ -357,7 +381,7 @@ if [ "$_fetch_ok" -ne 1 ]; then
   exit 3
 fi
 _current_branch="$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo '')"
-LAUNCHER_STAGE=branch-guard
+LAUNCHER_STAGE="branch-guard"
 if [ "$_current_branch" != "main" ]; then
   if ! _switch_to_main; then
     LAUNCHER_NOTE="checkout is on branch '${_current_branch}', not main, with uncommitted changes"
@@ -635,7 +659,7 @@ if [ "${TIMED_OUT:-0}" = "1" ]; then
   echo "[sunday-upgrade] $(date '+%H:%M:%S') run TIMED OUT after ${WATCH_TIMEOUT_MIN}m — no sentinel written, the next scheduled fire will retry." >&2
   exit 6
 fi
-LAUNCHER_STAGE=done
+LAUNCHER_STAGE="done"
 # The session finished and said how. ABORTED (or no status word at all) is
 # the one outcome a later fire can still fix — a transient fetch, a flaky
 # build — so it stays retryable. ALL GREEN, PARTIAL, ROLLED BACK and BLOCKED
