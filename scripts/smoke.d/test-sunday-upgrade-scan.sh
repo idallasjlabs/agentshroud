@@ -899,6 +899,122 @@ check "T22: the wait loop ends the session when it reports finished" \
 check "T22: only an ABORTED finish stays retryable" \
     "$(grep -qF "ABORTED*|'')" "$WRAP_SH" && echo true || echo false)"
 
+# ── T23: the handoff window (2026-11-01) ────────────────────────────────────
+# Prod fires once at 06:00 while dev's PASS lands anywhere from 04:13 to the
+# next morning, so "dated today" could never line up. The newest PASS inside a
+# 6-day window governs, and prod must still only ever build what dev passed.
+# shellcheck disable=SC2016  # expands in the child shell, by design
+lib_call() {
+    env -i PATH="/usr/bin:/bin:/opt/homebrew/bin" "$BASH_BIN" -c '. "$1"; shift; "$@"; rc=$?; echo "ACCEPTED=${SUNDAY_HANDOFF_ACCEPTED:-}"; exit $rc' _ "$LIB" "$@"
+}
+H23="$TMPROOT/t23"; mkdir -p "$H23"
+T23_TODAY="2026-11-01"
+printf 'AGENTSHROUD_VERSION=1.7.0\n# comment\nOPENCLAW_VERSION=2026.10.6\nHERMES_IMAGE=nousresearch/hermes-agent@sha256:abc\n' > "$H23/versions.env"
+write_dev_result() { # <dir> <date> <status> <openclaw>
+    printf '{\n  "date": "%s",\n  "status": "%s",\n  "versions": {\n    "AGENTSHROUD_VERSION": "1.7.0",\n    "OPENCLAW_VERSION": "%s",\n    "HERMES_IMAGE": "nousresearch/hermes-agent@sha256:abc"\n  }\n}\n' "$2" "$3" "$4" > "$1/dev-result-$2.json"
+}
+write_dev_result "$H23" 2026-10-30 PASS 2026.10.6
+set +e
+out23a="$(lib_call sunday_dev_handoff_gate "$H23" "$T23_TODAY" "$H23/versions.env" 2>&1)"; rc23a=$?
+set -e
+check "T23: a 2-day-old PASS with identical pins unlocks prod" \
+    "$([ "$rc23a" -eq 0 ] && printf '%s' "$out23a" | grep -q 'ACCEPTED=2026-10-30' && echo true || echo false)" "rc=$rc23a out=$out23a"
+
+write_dev_result "$H23" 2026-10-30 PASS 2026.10.9
+set +e
+out23b="$(lib_call sunday_dev_handoff_gate "$H23" "$T23_TODAY" "$H23/versions.env" 2>&1)"; rc23b=$?
+set -e
+check "T23: a PASS whose pins differ from prod's is refused and names the key" \
+    "$([ "$rc23b" -ne 0 ] && printf '%s' "$out23b" | grep -q 'OPENCLAW_VERSION' && echo true || echo false)" "rc=$rc23b out=$out23b"
+
+write_dev_result "$H23" 2026-10-30 PASS 2026.10.6
+write_dev_result "$H23" 2026-11-01 FAIL 2026.10.6
+set +e
+lib_call sunday_dev_handoff_gate "$H23" "$T23_TODAY" "$H23/versions.env" >/dev/null 2>&1; rc23c=$?
+set -e
+check "T23: a newer FAIL overrides an older PASS" \
+    "$([ "$rc23c" -ne 0 ] && echo true || echo false)" "rc=$rc23c"
+rm -f "$H23/dev-result-2026-11-01.json"
+
+mv "$H23/dev-result-2026-10-30.json" "$H23/dev-result-2026-10-25.json"
+sed -i.bak 's/2026-10-30/2026-10-25/' "$H23/dev-result-2026-10-25.json"; rm -f "$H23/"*.bak
+set +e
+lib_call sunday_dev_handoff_gate "$H23" "$T23_TODAY" "$H23/versions.env" >/dev/null 2>&1; rc23d=$?
+set -e
+check "T23: a 7-day-old PASS is outside the window" \
+    "$([ "$rc23d" -ne 0 ] && echo true || echo false)" "rc=$rc23d"
+
+printf '{\n  "date": "2026-10-31",\n  "status": "PASS"\n}\n' > "$H23/dev-result-2026-10-31.json"
+set +e
+lib_call sunday_dev_handoff_gate "$H23" "$T23_TODAY" "$H23/versions.env" >/dev/null 2>&1; rc23e=$?
+set -e
+check "T23: a PASS with no versions block cannot prove what dev tested -> refused" \
+    "$([ "$rc23e" -ne 0 ] && echo true || echo false)" "rc=$rc23e"
+
+# ── T24: prod's daily catch-up check ────────────────────────────────────────
+H24="$TMPROOT/t24"; mkdir -p "$H24"
+write_dev_result "$H24" 2026-10-31 PASS 2026.10.6
+set +e
+out24a="$(lib_call sunday_catchup_pending "$H24" "$T23_TODAY" 2>&1)"; rc24a=$?
+set -e
+check "T24: dev PASS but never merged -> nothing for prod to promote" \
+    "$([ "$rc24a" -ne 0 ] && echo true || echo false)" "rc=$rc24a out=$out24a"
+echo deadbeef > "$H24/dev-merge-commit-2026-10-31.txt"
+set +e
+out24b="$(lib_call sunday_catchup_pending "$H24" "$T23_TODAY" 2>&1)"; rc24b=$?
+set -e
+check "T24: dev PASS + merge commit, prod not yet promoted -> pending, names the date" \
+    "$([ "$rc24b" -eq 0 ] && printf '%s' "$out24b" | grep -q '^2026-10-31' && echo true || echo false)" "rc=$rc24b out=$out24b"
+lib_call sunday_mark_promoted "$H24" 2026-10-31 "$T23_TODAY" >/dev/null 2>&1
+set +e
+lib_call sunday_catchup_pending "$H24" "$T23_TODAY" >/dev/null 2>&1; rc24c=$?
+set -e
+check "T24: after prod marks it promoted the catch-up is a no-op" \
+    "$([ "$rc24c" -ne 0 ] && [ -s "$H24/prod-promoted-2026-10-31.json" ] && echo true || echo false)" "rc=$rc24c"
+
+# ── T25: untracked files that a fast-forward would overwrite ────────────────
+G25="$TMPROOT/t25"; mkdir -p "$G25" && git -C "$G25" init -q -b main . 2>/dev/null
+git -C "$G25" -c user.email=t@t -c user.name=t commit -q --allow-empty -m base
+git -C "$G25" checkout -q -b incoming
+mkdir -p "$G25/reports"; echo dev > "$G25/reports/upgrade-X.md"; echo dev > "$G25/reports/.upgrade-X.done"
+git -C "$G25" add -A; git -C "$G25" -c user.email=t@t -c user.name=t commit -q -m incoming
+git -C "$G25" checkout -q main
+mkdir -p "$G25/reports"; echo prod-local > "$G25/reports/upgrade-X.md"; echo prod-local > "$G25/reports/.upgrade-X.done"
+set +e
+git -C "$G25" merge --ff-only incoming >/dev/null 2>&1; rc25a=$?
+set -e
+check "T25: without the move-aside, git refuses the fast-forward (the bug)" \
+    "$([ "$rc25a" -ne 0 ] && echo true || echo false)" "rc=$rc25a"
+env -i PATH="/usr/bin:/bin" "$BASH_BIN" -c '. "$1"; sunday_move_aside_untracked_collisions "$2" incoming' _ "$LIB" "$G25" >/dev/null 2>&1
+set +e
+git -C "$G25" merge --ff-only incoming >/dev/null 2>&1; rc25b=$?
+set -e
+check "T25: after the move-aside the fast-forward succeeds and the content is kept" \
+    "$([ "$rc25b" -eq 0 ] && [ "$(cat "$G25/reports/upgrade-X.md")" = dev ] && grep -qr prod-local "$G25/reports"/upgrade-X.md.local-* && grep -qr prod-local "$G25/reports"/.upgrade-X.done.local-* && echo true || echo false)" "rc=$rc25b ls=$(ls -A "$G25/reports" | tr '\n' ' ')"
+
+# ── T26: the launcher status heartbeat ──────────────────────────────────────
+H26="$TMPROOT/t26"; mkdir -p "$H26"
+env -i PATH="/usr/bin:/bin" "$BASH_BIN" -c '. "$1"; sunday_write_launcher_status "$2" 2026-11-01 branch-guard 4 "on branch \"x\" not main"' _ "$LIB" "$H26" >/dev/null 2>&1
+f26="$(ls "$H26"/launcher-*-2026-11-01.json 2>/dev/null | head -1)"
+check "T26: heartbeat records stage and exit code, and is valid JSON" \
+    "$([ -n "$f26" ] && python3 -I -c 'import json,sys; d=json.load(open(sys.argv[1])); assert d["stage"]=="branch-guard" and d["exit_code"]==4' "$f26" && echo true || echo false)" "file=$f26"
+
+# ── T27: the wiring (static, like T11) ──────────────────────────────────────
+LAUNCHER="${REPO}/scripts/sunday-upgrade.sh"
+PLIST="${REPO}/scripts/launchd/com.agentshroud.sunday-upgrade.plist"
+check "T27: apply passes prod's versions.env to the handoff gate" \
+    "$(grep -q 'sunday_dev_handoff_gate "\$HANDOFF_DIR" "\$TODAY" "\$REPO/docker/versions.env"' "$APPLY_SH" && echo true || echo false)"
+check "T27: apply marks the handoff promoted only after a prod run passes" \
+    "$(grep -q 'sunday_mark_promoted' "$APPLY_SH" && echo true || echo false)"
+check "T27: launcher re-execs itself after a fast-forward that changed it" \
+    "$(grep -q 'exec /bin/bash' "$LAUNCHER" && grep -q 'SUNDAY_REEXECED' "$LAUNCHER" && echo true || echo false)"
+check "T27: launcher moves colliding untracked files aside before the fast-forward" \
+    "$(grep -q 'sunday_move_aside_untracked_collisions' "$LAUNCHER" && echo true || echo false)"
+check "T27: launcher writes the heartbeat and does the catch-up check" \
+    "$(grep -q 'sunday_write_launcher_status' "$LAUNCHER" && grep -q 'sunday_catchup_pending' "$LAUNCHER" && echo true || echo false)"
+check "T27: prod plist fires daily (no Weekday key) so the catch-up can run" \
+    "$(! grep -q '<key>Weekday</key>' "$PLIST" && grep -q '<key>Hour</key>' "$PLIST" && echo true || echo false)"
+
 # ── Summary ──────────────────────────────────────────────────────────────────
 echo ""
 total=$(( pass + fail ))

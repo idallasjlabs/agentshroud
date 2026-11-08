@@ -82,6 +82,9 @@ fi
 # only bypasses the "already ran today" short-circuit.
 FORCE=0
 RUN_REASON="scheduled weekly run"
+# Kept for the re-exec after a fast-forward (below). The ${arr[@]+...} form is
+# required: bash 3.2 (macOS) treats an empty array as unset under `set -u`.
+ORIG_ARGS=("$@")
 while [ $# -gt 0 ]; do
   case "$1" in
     --force)  FORCE=1; shift ;;
@@ -196,8 +199,15 @@ mkdir -p reports
 # full write-up; this is how a failure reaches the owner when Hermes is down.
 # The two "nothing to do" skips set NOTIFY_ON_EXIT=0.
 NOTIFY_ON_EXIT=1
+HANDOFF_DIR="${SUNDAY_HANDOFF_DIR:-/Users/Shared/agentshroud-sunday}"
+# Where the launcher got to, written to the shared dir at launch and on EVERY
+# exit (2026-11-01: dev wrote nothing and nobody could tell "cron never fired"
+# from "fired and died at the branch guard"). The other account can read it.
+LAUNCHER_STAGE=start
+LAUNCHER_NOTE=""
 _notify_on_exit() {
   local rc=$? note
+  sunday_write_launcher_status "$HANDOFF_DIR" "$TODAY" "${LAUNCHER_STAGE:-unknown}" "$rc" "${LAUNCHER_NOTE:-}"
   [ "${NOTIFY_ON_EXIT:-0}" = 1 ] || return 0
   note="$(sunday_notify_direct \
     "${SUNDAY_NOTIFY_TOKEN_FILE:-$REPO/docker/secrets/telegram_bot_token_production.txt}" \
@@ -206,6 +216,25 @@ _notify_on_exit() {
   echo "[sunday-upgrade] direct owner notice: ${note}"
 }
 trap _notify_on_exit EXIT
+sunday_write_launcher_status "$HANDOFF_DIR" "$TODAY" start 0 "launched: ${RUN_REASON}"
+
+# ── Catch-up days (2026-11-01) ───────────────────────────────────────────────
+# Dev's PASS lands anywhere from 04:13 to the next morning, so a prod job that
+# can only act on Sunday 06:00 loses the week whenever dev runs late. The plist
+# now fires daily; outside Sunday this launcher does real work ONLY when dev has
+# passed AND merged and prod has not yet promoted it (state, not a schedule),
+# and otherwise exits quietly before touching Colima, git or the model.
+if [ "$FORCE" -ne 1 ] && [ "$(date +%u)" != 7 ]; then
+  if _pending="$(sunday_catchup_pending "$HANDOFF_DIR" "$TODAY")"; then
+    echo "[sunday-upgrade] catch-up: dev PASS ${_pending} is merged and prod has not promoted it — running."
+    RUN_REASON="catch-up promotion of dev PASS ${_pending}"
+  else
+    echo "[sunday-upgrade] not Sunday and no merged, unpromoted dev PASS in the last ${SUNDAY_HANDOFF_MAX_AGE_DAYS:-6} days — nothing to do."
+    NOTIFY_ON_EXIT=0
+    LAUNCHER_STAGE=noop
+    exit 0
+  fi
+fi
 
 # Idempotency FIRST, before the branch guard: an overlapping fire must skip,
 # not FATAL on the live run's chore branch (2026-10-11 05:00). Guards against
@@ -324,11 +353,14 @@ for _try in 1 2 3 4 5; do
 done
 if [ "$_fetch_ok" -ne 1 ]; then
   echo "[sunday-upgrade] FATAL: git fetch origin main failed after 5 attempts — check network/auth before the next scheduled run." >&2
+  LAUNCHER_STAGE=fetch; LAUNCHER_NOTE="git fetch origin main failed after 5 attempts"
   exit 3
 fi
 _current_branch="$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo '')"
+LAUNCHER_STAGE=branch-guard
 if [ "$_current_branch" != "main" ]; then
   if ! _switch_to_main; then
+    LAUNCHER_NOTE="checkout is on branch '${_current_branch}', not main, with uncommitted changes"
     echo "[sunday-upgrade] FATAL: repo checkout is on branch '${_current_branch}', not main, with uncommitted changes." >&2
     echo "[sunday-upgrade] The unattended upgrade must run against main. Commit or stash, then: git -C '$REPO' checkout main" >&2
     exit 4
@@ -370,9 +402,29 @@ if git merge-base --is-ancestor origin/main HEAD 2>/dev/null; then
   echo "[sunday-upgrade] ✓ main is at or ahead of origin/main ($(git rev-parse --short HEAD)) — nothing to fast-forward"
 elif git merge-base --is-ancestor HEAD origin/main 2>/dev/null; then
   _before_sha="$(git rev-parse --short HEAD)"
-  git merge --ff-only origin/main
+  LAUNCHER_STAGE=fast-forward
+  # An untracked file at a path the merge adds makes git abort the whole
+  # fast-forward (and under set -e, this launcher). Park such files first.
+  sunday_move_aside_untracked_collisions "$REPO" origin/main
+  if ! git merge --ff-only origin/main; then
+    LAUNCHER_NOTE="git merge --ff-only origin/main failed (local changes in the way?)"
+    echo "[sunday-upgrade] FATAL: could not fast-forward main — see git's message above." >&2
+    exit 4
+  fi
   echo "[sunday-upgrade] ✓ Fast-forwarded main ${_before_sha} → $(git rev-parse --short HEAD)"
+  # bash reads a script incrementally from disk. If that merge rewrote THIS file
+  # (or the lib it sourced), the rest of this run would execute a splice of old
+  # and new text — a hazard on exactly the weeks a launcher fix was merged.
+  # Start over from the new files; SUNDAY_REEXECED stops any loop. `exec` does
+  # not fire the EXIT trap, so there is no stray owner notice.
+  if [ -z "${SUNDAY_REEXECED:-}" ] \
+     && ! git diff --quiet "$_before_sha" HEAD -- scripts/sunday-upgrade.sh scripts/lib/sunday-scan.sh; then
+    echo "[sunday-upgrade] launcher or lib changed in that fast-forward — re-executing from the new files."
+    export SUNDAY_REEXECED=1
+    exec /bin/bash "$REPO/scripts/sunday-upgrade.sh" ${ORIG_ARGS[@]+"${ORIG_ARGS[@]}"}
+  fi
 else
+  LAUNCHER_NOTE="local main has diverged from origin/main"
   echo "[sunday-upgrade] FATAL: local main has diverged from origin/main — cannot fast-forward." >&2
   echo "[sunday-upgrade] Resolve manually: git -C '$REPO' log --oneline main..origin/main" >&2
   exit 4
@@ -440,6 +492,7 @@ if [ "${SUNDAY_UPGRADE_AUTON:-0}" = "1" ]; then
   EXTRA="$EXTRA --allowedTools Bash,Read,Edit,Write,Glob,Grep"
 fi
 
+LAUNCHER_STAGE=session
 echo "[sunday-upgrade] $(date '+%H:%M:%S') launching remote-control session '$SESSION'"
 # NO pipe on claude's stdout: piping (e.g. `| tee`) makes stdout a non-TTY,
 # claude falls back to --print mode, demands a prompt argument, and exits
@@ -577,12 +630,14 @@ if [ "${TIMED_OUT:-0}" = "1" ]; then
   echo "[sunday-upgrade] $(date '+%H:%M:%S') run TIMED OUT after ${WATCH_TIMEOUT_MIN}m — no sentinel written, the next scheduled fire will retry." >&2
   exit 6
 fi
+LAUNCHER_STAGE=done
 # The session finished and said how. ABORTED (or no status word at all) is
 # the one outcome a later fire can still fix — a transient fetch, a flaky
 # build — so it stays retryable. ALL GREEN, PARTIAL, ROLLED BACK and BLOCKED
 # are reported results: re-running them the same day changes nothing.
 case "$FINISH_STATUS" in
   ABORTED*|'')
+    LAUNCHER_NOTE="session ended with '${FINISH_STATUS:-no status}'"
     echo "[sunday-upgrade] $(date '+%H:%M:%S') session ended with '${FINISH_STATUS:-no status}' — no sentinel written, the next scheduled fire will retry." >&2
     exit 8 ;;
 esac
