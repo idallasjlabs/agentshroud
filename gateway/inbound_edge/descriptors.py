@@ -40,10 +40,13 @@ PUBLIC_KEY_PATH = CONFIG_DIR / "descriptors.pub.pem"
 
 MANIFEST_VERSION = 1
 
-# Printable text only: no C0 control characters and no DEL.
-_SINGLE_LINE = "^[^\\u0000-\\u001f\\u007f]+$"
+# Printable text only: no C0 control characters and no DEL. The end anchor is
+# (?![\\s\\S]) rather than $: Python's re (used by jsonschema) lets $ match before a
+# trailing newline, so "x\\n" passed — found by test_edge_fuzz. The lookahead means
+# end-of-string in both Python and ECMA-262 regex dialects.
+_SINGLE_LINE = "^[^\\u0000-\\u001f\\u007f]+(?![\\s\\S])"
 # Free text may carry newlines and tabs, but no other control characters.
-_MULTI_LINE = "^[^\\u0000-\\u0008\\u000b-\\u001f\\u007f]+$"
+_MULTI_LINE = "^[^\\u0000-\\u0008\\u000b-\\u001f\\u007f]+(?![\\s\\S])"
 # secrets.token_urlsafe(32) — the format approval tickets are minted in.
 _TICKET = {"type": "string", "pattern": "^[A-Za-z0-9_-]{43}$", "maxLength": 43}
 
