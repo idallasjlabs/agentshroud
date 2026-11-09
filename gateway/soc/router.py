@@ -731,6 +731,38 @@ async def rebuild_all_services(
 # ---------------------------------------------------------------------------
 
 
+async def _run_killswitch(
+    caller: SCLCaller, mode: str, command: str, details: Optional[Dict[str, Any]] = None
+) -> JSONResponse:
+    """Execute a kill switch mode via the shared engine-backed implementation.
+
+    SCRUM-199: these endpoints previously called non-existent
+    ``killswitch_monitor.trigger_*`` methods and always answered ok:true. They
+    now drive the container engine exactly as ``POST /api/killswitch/{mode}``
+    does, and any failure is returned as ok:false with a non-2xx status and
+    audited as FAILED.
+    """
+    from ..web.api import KillSwitchError, execute_killswitch
+
+    try:
+        await asyncio.to_thread(execute_killswitch, mode)
+    except KillSwitchError as exc:
+        logger.error("killswitch %s failed: %s", mode, exc)
+        _log_audit(
+            caller,
+            command,
+            target="all",
+            result=AuditResult.FAILED,
+            details={**(details or {}), "error": str(exc)},
+        )
+        return JSONResponse(
+            status_code=exc.status_code,
+            content={"ok": False, "action": mode, "error": str(exc)},
+        )
+    _log_audit(caller, command, target="all", result=AuditResult.SUCCESS, details=details)
+    return JSONResponse(content={"ok": True, "action": mode})
+
+
 @router.post("/killswitch/freeze")
 async def killswitch_freeze(
     body: ServiceActionRequest = ServiceActionRequest(),
@@ -743,15 +775,7 @@ async def killswitch_freeze(
             "all",
             "This will pause all bot containers. Resend with confirm: true.",
         )
-    app = _app_state()
-    try:
-        monitor = getattr(app, "killswitch_monitor", None)
-        if monitor and hasattr(monitor, "trigger_freeze"):
-            monitor.trigger_freeze()
-    except Exception as exc:
-        logger.warning("killswitch_freeze: %s", exc)
-    _log_audit(caller, "freeze services", target="all")
-    return JSONResponse(content={"ok": True, "action": "freeze"})
+    return await _run_killswitch(caller, "freeze", "freeze services")
 
 
 @router.post("/killswitch/shutdown")
@@ -764,15 +788,7 @@ async def killswitch_shutdown(
         return _confirmation_required(
             "shutdown services", "all", "This will perform compose down. Resend with confirm: true."
         )
-    app = _app_state()
-    try:
-        monitor = getattr(app, "killswitch_monitor", None)
-        if monitor and hasattr(monitor, "trigger_shutdown"):
-            monitor.trigger_shutdown()
-    except Exception as exc:
-        logger.warning("killswitch_shutdown: %s", exc)
-    _log_audit(caller, "shutdown services", target="all")
-    return JSONResponse(content={"ok": True, "action": "shutdown"})
+    return await _run_killswitch(caller, "shutdown", "shutdown services")
 
 
 class DisconnectRequest(BaseModel):
@@ -799,18 +815,12 @@ async def killswitch_disconnect(
         return _confirmation_required(
             "disconnect services",
             "all",
-            "DESTRUCTIVE: This will stop all containers and shred credentials. "
+            "DESTRUCTIVE: This will stop and remove all bot containers. "
             "Resend with confirm: true and force: true to proceed.",
         )
-    app = _app_state()
-    try:
-        monitor = getattr(app, "killswitch_monitor", None)
-        if monitor and hasattr(monitor, "trigger_disconnect"):
-            monitor.trigger_disconnect()
-    except Exception as exc:
-        logger.warning("killswitch_disconnect: %s", exc)
-    _log_audit(caller, "disconnect services", target="all", details={"force": body.force})
-    return JSONResponse(content={"ok": True, "action": "disconnect"})
+    return await _run_killswitch(
+        caller, "disconnect", "disconnect services", details={"force": body.force}
+    )
 
 
 # ---------------------------------------------------------------------------

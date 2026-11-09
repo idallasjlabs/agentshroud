@@ -766,27 +766,92 @@ async def test_services_rebuild(client):
 # ---------------------------------------------------------------------------
 
 
-async def test_killswitch_freeze(client, state):
+# SCRUM-199: these endpoints used to call trigger_* methods that do not exist
+# on KillSwitchMonitor and always answered ok:true. They must now drive the
+# container engine (shared with POST /api/killswitch/{mode}) and report failure.
+
+_TWO_BOTS = SimpleNamespace(
+    bots={
+        "openclaw": SimpleNamespace(resolved_container_name="agentshroud-openclaw"),
+        "hermes": SimpleNamespace(resolved_container_name="agentshroud-hermes-v2"),
+    }
+)
+
+
+@pytest.fixture
+def ks_engine(monkeypatch):
+    """Mock container engine + two configured bots for the shared kill switch."""
+    import gateway.web.api as web_api
+
+    eng = MagicMock()
+    eng.name = "docker"
+    monkeypatch.setattr(web_api, "_get_engine", lambda: eng)
+    monkeypatch.setattr(web_api, "load_config", lambda: _TWO_BOTS)
+    return eng
+
+
+async def test_killswitch_freeze_requires_confirm(client, ks_engine):
     resp = await client.post("/soc/v1/killswitch/freeze", json={"confirm": False})
     assert resp.status_code == 409
-    monitor = MagicMock()
-    state.killswitch_monitor = monitor
+    ks_engine.pause.assert_not_called()
+
+
+async def test_killswitch_freeze_pauses_every_bot(client, ks_engine):
     resp = await client.post("/soc/v1/killswitch/freeze", json={"confirm": True})
+    assert resp.status_code == 200
     assert resp.json() == {"ok": True, "action": "freeze"}
-    monitor.trigger_freeze.assert_called_once()
+    ks_engine.pause.assert_any_call("agentshroud-openclaw")
+    ks_engine.pause.assert_any_call("agentshroud-hermes-v2")
+    assert ks_engine.pause.call_count == 2
 
 
-async def test_killswitch_shutdown(client, state):
+async def test_killswitch_freeze_engine_failure_is_not_ok(client, ks_engine):
+    ks_engine.pause.side_effect = RuntimeError("no such container")
+    resp = await client.post("/soc/v1/killswitch/freeze", json={"confirm": True})
+    assert resp.status_code == 500
+    body = resp.json()
+    assert body["ok"] is False
+    assert body["action"] == "freeze"
+    assert "partially failed" in body["error"]
+
+
+async def test_killswitch_shutdown_requires_confirm(client, ks_engine):
     resp = await client.post("/soc/v1/killswitch/shutdown", json={"confirm": False})
     assert resp.status_code == 409
-    monitor = MagicMock()
-    state.killswitch_monitor = monitor
+    ks_engine.compose_down.assert_not_called()
+
+
+async def test_killswitch_shutdown_runs_compose_down(client, ks_engine):
     resp = await client.post("/soc/v1/killswitch/shutdown", json={"confirm": True})
+    assert resp.status_code == 200
     assert resp.json() == {"ok": True, "action": "shutdown"}
-    monitor.trigger_shutdown.assert_called_once()
+    ks_engine.compose_down.assert_called_once()
 
 
-async def test_killswitch_disconnect_owner_gate(client, holder, state):
+async def test_killswitch_shutdown_engine_failure_is_not_ok(client, ks_engine):
+    ks_engine.compose_down.side_effect = RuntimeError("daemon gone")
+    resp = await client.post("/soc/v1/killswitch/shutdown", json={"confirm": True})
+    assert resp.status_code == 500
+    body = resp.json()
+    assert body["ok"] is False
+    assert "daemon gone" in body["error"]
+
+
+async def test_killswitch_engine_unavailable_is_not_ok(client, monkeypatch):
+    import gateway.web.api as web_api
+
+    def _no_engine():
+        raise RuntimeError("no container runtime detected")
+
+    monkeypatch.setattr(web_api, "_get_engine", _no_engine)
+    resp = await client.post("/soc/v1/killswitch/shutdown", json={"confirm": True})
+    assert resp.status_code == 503
+    body = resp.json()
+    assert body["ok"] is False
+    assert "engine unavailable" in body["error"]
+
+
+async def test_killswitch_disconnect_owner_gate(client, holder, ks_engine):
     holder["caller"] = NON_OWNER
     resp = await client.post("/soc/v1/killswitch/disconnect", json={"confirm": True, "force": True})
     assert resp.status_code == 403
@@ -796,12 +861,35 @@ async def test_killswitch_disconnect_owner_gate(client, holder, state):
         "/soc/v1/killswitch/disconnect", json={"confirm": True, "force": False}
     )
     assert resp.status_code == 409
+    ks_engine.stop.assert_not_called()
+    ks_engine.rm.assert_not_called()
 
-    monitor = MagicMock()
-    state.killswitch_monitor = monitor
+
+async def test_killswitch_disconnect_stops_and_removes_every_bot(client, ks_engine):
     resp = await client.post("/soc/v1/killswitch/disconnect", json={"confirm": True, "force": True})
+    assert resp.status_code == 200
     assert resp.json() == {"ok": True, "action": "disconnect"}
-    monitor.trigger_disconnect.assert_called_once()
+    for name in ("agentshroud-openclaw", "agentshroud-hermes-v2"):
+        ks_engine.stop.assert_any_call(name)
+        ks_engine.rm.assert_any_call(name, force=True)
+
+
+async def test_killswitch_disconnect_engine_failure_is_not_ok(client, ks_engine):
+    ks_engine.stop.side_effect = RuntimeError("not running")
+    resp = await client.post("/soc/v1/killswitch/disconnect", json={"confirm": True, "force": True})
+    assert resp.status_code == 500
+    body = resp.json()
+    assert body["ok"] is False
+    assert "partially failed" in body["error"]
+
+
+async def test_killswitch_failure_is_audited_as_failed(client, ks_engine, monkeypatch):
+    calls = []
+    monkeypatch.setattr(soc_router, "_log_audit", lambda *a, **kw: calls.append((a, kw)))
+    ks_engine.compose_down.side_effect = RuntimeError("daemon gone")
+    await client.post("/soc/v1/killswitch/shutdown", json={"confirm": True})
+    assert calls, "kill switch attempt must be audited"
+    assert calls[-1][1]["result"] == soc_router.AuditResult.FAILED
 
 
 # ---------------------------------------------------------------------------
