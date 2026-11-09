@@ -85,6 +85,20 @@ CREATE TABLE IF NOT EXISTS kills (
     created_at REAL NOT NULL,
     PRIMARY KEY (scope, value)
 );
+CREATE TABLE IF NOT EXISTS edge_approvals (
+    request_id TEXT PRIMARY KEY,
+    idem_key TEXT NOT NULL,
+    principal TEXT NOT NULL,
+    tool TEXT NOT NULL,
+    args_sha256 TEXT NOT NULL,
+    expires_at REAL NOT NULL,
+    consumed_at REAL
+);
+CREATE INDEX IF NOT EXISTS edge_approvals_idem ON edge_approvals(idem_key);
+CREATE TABLE IF NOT EXISTS edge_approval_tickets (
+    ticket_hash TEXT PRIMARY KEY,
+    request_id TEXT NOT NULL
+);
 """
 
 
@@ -309,6 +323,56 @@ class EdgeStore:
                 {"scope": r[0], "value": r[1], "reason": r[2], "created_at": r[3]}
                 async for r in cur
             ]
+
+    # ── edge approvals (SCRUM-207) ───────────────────────────────────────
+    async def put_approval(
+        self,
+        request_id: str,
+        idem_key: str,
+        principal: str,
+        tool: str,
+        args_sha256: str,
+        expires_at: float,
+    ) -> None:
+        await self.db.execute(
+            "INSERT INTO edge_approvals(request_id, idem_key, principal, tool, args_sha256, "
+            "expires_at) VALUES (?,?,?,?,?,?)",
+            (request_id, idem_key, principal, tool, args_sha256, expires_at),
+        )
+
+    async def open_approval_for(self, idem_key: str) -> Optional[str]:
+        """The newest unconsumed, unexpired request_id for this idempotency key."""
+        row = await self._one(
+            "SELECT request_id FROM edge_approvals WHERE idem_key=? AND consumed_at IS NULL "
+            "AND expires_at>? ORDER BY expires_at DESC LIMIT 1",
+            (idem_key, self._clock()),
+        )
+        return None if row is None else row[0]
+
+    async def add_ticket(self, ticket: str, request_id: str) -> None:
+        await self.db.execute(
+            "INSERT INTO edge_approval_tickets VALUES (?,?)", (_h(ticket), request_id)
+        )
+
+    async def approval_for_ticket(self, ticket: str) -> Optional[Dict[str, Any]]:
+        row = await self._one(
+            "SELECT a.request_id, a.principal, a.tool, a.args_sha256, a.expires_at, "
+            "a.consumed_at FROM edge_approval_tickets t JOIN edge_approvals a "
+            "ON a.request_id = t.request_id WHERE t.ticket_hash=?",
+            (_h(ticket),),
+        )
+        if row is None:
+            return None
+        keys = ("request_id", "principal", "tool", "args_sha256", "expires_at", "consumed_at")
+        return dict(zip(keys, row))
+
+    async def consume_approval(self, request_id: str) -> bool:
+        """Atomically mark an approval used. True for exactly one caller."""
+        cur = await self.db.execute(
+            "UPDATE edge_approvals SET consumed_at=? WHERE request_id=? AND consumed_at IS NULL",
+            (self._clock(), request_id),
+        )
+        return cur.rowcount == 1
 
     async def purge_expired(self) -> None:
         now = self._clock()

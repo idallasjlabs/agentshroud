@@ -4387,6 +4387,26 @@ class TelegramAPIProxy:
                             )
                     except Exception as _ce:
                         logger.error("Egress callback error (non-fatal): %s", _ce)
+                elif cb_data.startswith("edge_appr:"):
+                    # Inbound MCP Edge write approval (SCRUM-207). Owner-only; the
+                    # handler itself also refuses non-owners.
+                    try:
+                        from gateway.ingest_api.state import app_state as _app_state
+
+                        cb_user_id = str((callback_query.get("from") or {}).get("id", ""))
+                        _edge = getattr(_app_state, "inbound_edge", None)
+                        _is_owner = bool(
+                            cb_user_id and self._rbac and self._rbac.is_owner(cb_user_id)
+                        )
+                        if _edge is None:
+                            _toast = "Inbound edge is not running on this instance"
+                        else:
+                            _toast = await _edge.approvals.handle_callback(
+                                cb_data, user_id=cb_user_id, is_owner=_is_owner
+                            )
+                        await self._answer_callback_query(callback_query.get("id", ""), _toast)
+                    except Exception as _ce:
+                        logger.error("Edge approval callback error (non-fatal): %s", _ce)
                 elif cb_data.startswith("collab_approve_") or cb_data.startswith("collab_deny_"):
                     # Inline button tap from the access request notification.
                     try:
