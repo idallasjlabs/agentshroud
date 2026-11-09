@@ -96,8 +96,14 @@ rules:
   - id: agentshroud-ssrf-httpx
     patterns:
       - pattern: httpx.$METHOD($URL, ...)
-      - pattern-not: httpx.$METHOD("https://...", ...)
-      - pattern-not: httpx.$METHOD("http://...", ...)
+      # Request functions only — httpx.Response(...), httpx.MockTransport(...),
+      # httpx.Timeout(...) etc. take no URL and are not egress.
+      - metavariable-regex:
+          metavariable: $METHOD
+          regex: ^(get|post|put|patch|delete|head|options|request|stream)$
+      # Fixed literal URLs are not dynamic. (The former "https://..." string
+      # ellipsis never excluded them; a regex literal does.)
+      - pattern-not: httpx.$METHOD("=~/^https?:\/\//", ...)
     message: |
       httpx request with a potentially dynamic URL. Ensure the URL is validated
       against the egress allowlist before making the request (SSRF risk).
