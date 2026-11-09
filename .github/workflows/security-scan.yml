@@ -57,6 +57,92 @@ jobs:
           cosign attest --yes --predicate sbom-gateway.json --type spdxjson \
             ghcr.io/${{ github.repository_owner }}/agentshroud-gateway:${{ github.sha }}
 
+  # Inbound MCP Edge image (SCRUM-215/217): the one internet-facing container.
+  # Unlike the gateway's informational fs scan, every gate here can fail:
+  #   1. the shipped tool-descriptor manifest must carry a valid owner signature
+  #      and match the code (an unsigned or drifted manifest fails the job);
+  #   2. the image must build and its entry module must import;
+  #   3. Trivy IMAGE scan, fixable CRITICAL/HIGH => exit 1;
+  #   4. on push to main: push to GHCR, cosign keyless-sign the pushed DIGEST,
+  #      then `cosign verify` that digest against this workflow's identity.
+  # IEC 62443: FR3 (System Integrity) SL3.
+  edge-image:
+    name: MCP Edge Image (build, Trivy gate, cosign)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+      packages: write
+    env:
+      EDGE_LOCAL_TAG: agentshroud-mcp-edge:ci
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.13"
+
+      # descriptors.py needs only `cryptography`; pinned to gateway/requirements.lock.
+      - name: Verify signed tool-descriptor manifest
+        run: |
+          pip install "cryptography==50.0.2"
+          python -c "from gateway.inbound_edge.descriptors import verify_shipped_descriptors; verify_shipped_descriptors()"
+
+      - name: Build edge image
+        run: docker build -t "$EDGE_LOCAL_TAG" -f docker/mcp-edge/Dockerfile --build-arg AGENTSHROUD_GIT_SHA=${{ github.sha }} .
+
+      - name: Edge entry module imports inside the image
+        run: docker run --rm --network none --entrypoint python "$EDGE_LOCAL_TAG" -c "import gateway.inbound_edge.edge_app"
+
+      - name: Trivy image scan (fixable CRITICAL/HIGH fail the job)
+        # Same immutable, verified commit as trivy-scan below (see the note there).
+        uses: aquasecurity/trivy-action@ed142fd0673e97e23eac54620cfb913e5ce36c25 # v0.36.0
+        with:
+          scan-type: image
+          image-ref: ${{ env.EDGE_LOCAL_TAG }}
+          format: table
+          severity: CRITICAL,HIGH
+          ignore-unfixed: true
+          exit-code: 1
+
+      - name: Install cosign
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: sigstore/cosign-installer@6f9f17788090df1f26f669e9d70d6ae9567deba6 # v4.1.2 (no floating v4 tag exists)
+
+      - name: Log in to GitHub Container Registry
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: docker/login-action@8aa5831fb8d48d8f76594c7ddde61ae58019f550 # v4.8.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Push edge image and resolve its digest
+        id: push
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          REF="ghcr.io/${{ github.repository_owner }}/agentshroud-mcp-edge:${{ github.sha }}"
+          docker tag "$EDGE_LOCAL_TAG" "$REF"
+          docker push "$REF"
+          DIGEST_REF="$(docker inspect --format '{{index .RepoDigests 0}}' "$REF")"
+          case "$DIGEST_REF" in
+            ghcr.io/*@sha256:*) ;;
+            *) echo "could not resolve pushed digest (got '$DIGEST_REF')" >&2; exit 1 ;;
+          esac
+          echo "digest_ref=$DIGEST_REF" >> "$GITHUB_OUTPUT"
+
+      - name: Sign edge image digest with cosign (keyless OIDC)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: cosign sign --yes "${{ steps.push.outputs.digest_ref }}"
+
+      - name: Verify edge image signature (identity = this workflow on main)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          cosign verify \
+            --certificate-identity "https://github.com/${{ github.repository }}/.github/workflows/security-scan.yml@${{ github.ref }}" \
+            --certificate-oidc-issuer "https://token.actions.githubusercontent.com" \
+            "${{ steps.push.outputs.digest_ref }}" > /dev/null
+
   trivy-scan:
     name: Trivy Filesystem Scan
     runs-on: ubuntu-latest
