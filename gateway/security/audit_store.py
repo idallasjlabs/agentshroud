@@ -10,6 +10,7 @@ Similar to ApprovalStore pattern but designed for high-volume audit logs
 with cryptographic integrity verification.
 """
 
+import asyncio
 import hashlib
 import json
 import logging
@@ -125,6 +126,8 @@ class AuditStore:
     def __init__(self, db_path: str | Path = "audit_events.db"):
         self.db_path = str(db_path)
         self._db: Optional[aiosqlite.Connection] = None
+        # Serializes the read-latest-hash + INSERT critical section in log_event.
+        self._append_lock = asyncio.Lock()
 
     async def initialize(self) -> None:
         """Open the database, create the schema, and run column migrations.
@@ -194,29 +197,42 @@ class AuditStore:
             bot_id=bot_id,
         )
 
-        # Get previous hash for chain
-        prev_hash = await self._get_latest_hash()
-        event.prev_hash = prev_hash
-        event.entry_hash = event.compute_entry_hash(prev_hash)
+        # Read-latest-hash + INSERT is the chain's critical section (SCRUM-204).
+        # The asyncio lock serializes appends on this connection; BEGIN IMMEDIATE
+        # takes SQLite's RESERVED write lock *before* the read, so another
+        # connection or process sharing the file cannot read the same tail and
+        # fork the chain.  Without both, concurrent appends all chained off the
+        # same prev_hash.
+        async with self._append_lock:
+            if self._db.in_transaction:
+                await self._db.commit()
+            await self._db.execute("BEGIN IMMEDIATE")
+            try:
+                prev_hash = await self._get_latest_hash()
+                event.prev_hash = prev_hash
+                event.entry_hash = event.compute_entry_hash(prev_hash)
 
-        # Insert into database
-        await self._db.execute(
-            """INSERT INTO audit_events
-               (event_id, event_type, severity, timestamp, source_module, details, prev_hash, entry_hash, bot_id)
-               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
-            (
-                event.event_id,
-                event.event_type,
-                event.severity,
-                event.timestamp,
-                event.source_module,
-                json.dumps(event.details),
-                event.prev_hash,
-                event.entry_hash,
-                event.bot_id,
-            ),
-        )
-        await self._db.commit()
+                await self._db.execute(
+                    """INSERT INTO audit_events
+                       (event_id, event_type, severity, timestamp, source_module, details,
+                        prev_hash, entry_hash, bot_id)
+                       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                    (
+                        event.event_id,
+                        event.event_type,
+                        event.severity,
+                        event.timestamp,
+                        event.source_module,
+                        json.dumps(event.details),
+                        event.prev_hash,
+                        event.entry_hash,
+                        event.bot_id,
+                    ),
+                )
+                await self._db.commit()
+            except BaseException:
+                await self._db.rollback()
+                raise
 
         logger.debug(f"Audit event logged: {event.event_id} ({event.event_type}) bot={bot_id}")
         return event
@@ -299,43 +315,84 @@ class AuditStore:
         return await self.query_events(limit=limit)
 
     async def verify_hash_chain(
-        self, start_id: Optional[str] = None, limit: int = 1000
+        self,
+        start_id: Optional[str] = None,
+        limit: int = 1000,
+        anchor_hash: Optional[str] = None,
     ) -> tuple[bool, str]:
         """Verify the integrity of the hash chain.
+
+        The first examined row's prev_hash must equal an *anchor* — it is never
+        trusted on its own (SCRUM-204):
+
+        - ``start_id=None``: the anchor is genesis (``None``), or ``anchor_hash``
+          when the live table's head has been archived.
+        - ``start_id=X``: the anchor is the entry_hash of the live row preceding
+          X.  If that row is no longer live (archived by audit_archive.py, which
+          keeps rows verbatim), pass the archived predecessor's entry_hash as
+          ``anchor_hash``.  With no predecessor and no anchor, X must be the
+          genesis row (prev_hash ``None``); otherwise verification fails closed.
 
         Args:
             start_id: Start verification from this event ID (None = from beginning)
             limit: Maximum number of events to verify
+            anchor_hash: entry_hash of the predecessor when it is not in the live table
 
         Returns:
             Tuple of (is_valid, message)
         """
         assert self._db is not None
 
-        query = """SELECT event_id, event_type, severity, timestamp, source_module,
+        select = """SELECT event_id, event_type, severity, timestamp, source_module,
                            details, prev_hash, entry_hash
-                    FROM audit_events
-                    ORDER BY id ASC"""
-        params = []
+                    FROM audit_events"""
+        params: list = []
+        expected_prev_hash: Optional[str] = anchor_hash
+        require_genesis_or_anchor = False
 
         if start_id:
-            query = query.replace(
-                "ORDER BY id ASC",
-                """WHERE id >= (SELECT id FROM audit_events WHERE event_id = ?)
-                                                            ORDER BY id ASC""",
+            cursor = await self._db.execute(
+                "SELECT id FROM audit_events WHERE event_id = ?", (start_id,)
             )
-            params.append(start_id)
+            start_row = await cursor.fetchone()
+            if start_row is None:
+                return False, f"start_id {start_id} not found in audit store"
+            cursor = await self._db.execute(
+                "SELECT entry_hash FROM audit_events WHERE id < ? ORDER BY id DESC LIMIT 1",
+                (start_row[0],),
+            )
+            pred = await cursor.fetchone()
+            if pred is not None:
+                if anchor_hash is not None and anchor_hash != pred[0]:
+                    return (
+                        False,
+                        f"Anchor mismatch before event {start_id}: supplied anchor_hash "
+                        f"{anchor_hash} != live predecessor entry_hash {pred[0]}",
+                    )
+                expected_prev_hash = pred[0]
+            elif anchor_hash is None:
+                require_genesis_or_anchor = True
+            select += " WHERE id >= ?"
+            params.append(start_row[0])
 
+        select += " ORDER BY id ASC"
         if limit:
-            query += f" LIMIT {limit}"
+            select += " LIMIT ?"
+            params.append(int(limit))
 
-        cursor = await self._db.execute(query, params)
+        cursor = await self._db.execute(select, params)
         rows = await cursor.fetchall()
 
         if not rows:
             return True, "No events to verify"
 
-        expected_prev_hash = None
+        if require_genesis_or_anchor and rows[0][6] is not None:
+            return (
+                False,
+                f"No anchor for event {rows[0][0]}: its predecessor is not in the live "
+                f"audit store (archived?) — pass the predecessor's entry_hash as anchor_hash",
+            )
+
         verified_count = 0
 
         for row in rows:
