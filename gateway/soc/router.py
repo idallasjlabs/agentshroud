@@ -1660,56 +1660,113 @@ async def get_privacy_policies(caller: SCLCaller = Depends(get_caller)) -> Dict:
 async def list_pending_approvals(caller: SCLCaller = Depends(get_caller)) -> List[Dict]:
     caller.require(Action.READ, Resource.APPROVALS)
     app = _app_state()
+    aq = getattr(app, "approval_queue", None)
+    if aq is None:
+        return []
+    # SCRUM-200: the live queue (EnhancedApprovalQueue) exposes async get_pending()
+    # returning ApprovalQueueItem models. A store failure is a 500, not an empty
+    # list — "nothing pending" must stay distinguishable from "could not read".
     try:
-        aq = getattr(app, "approval_queue", None)
-        if aq and hasattr(aq, "get_pending_items"):
-            items = aq.get_pending_items()
-            return [i if isinstance(i, dict) else vars(i) for i in items]
+        items = await aq.get_pending()
     except Exception as exc:
-        logger.debug("list_pending_approvals: %s", exc)
-    return []
+        logger.warning("list_pending_approvals: %s", exc)
+        raise HTTPException(
+            status_code=500,
+            detail={
+                "error": True,
+                "code": "INTERNAL_ERROR",
+                "message": "Failed to read approval queue",
+            },
+        )
+    return [i if isinstance(i, dict) else i.model_dump() for i in items]
 
 
 class ApprovalDecisionRequest(BaseModel):
     reason: str = ""
+    # IEC 62443 FR1: second factor for high-risk approvals, verified by the queue.
+    mfa_code: Optional[str] = None
+
+
+async def _decide_approval(
+    caller: SCLCaller,
+    approval_id: str,
+    body: Optional[ApprovalDecisionRequest],
+    approved: bool,
+) -> Dict:
+    """Route a SOC approve/deny to EnhancedApprovalQueue.decide() (SCRUM-200).
+
+    ok:true is returned only when decide() succeeded; every failure is an HTTP
+    error so a no-op can never read as a decision.
+    """
+    body = body or ApprovalDecisionRequest()
+    verb = "approve" if approved else "deny"
+    aq = getattr(_app_state(), "approval_queue", None)
+    if aq is None:
+        raise HTTPException(
+            status_code=503,
+            detail={
+                "error": True,
+                "code": "SERVICE_UNAVAILABLE",
+                "message": "Approval queue not initialized",
+            },
+        )
+    try:
+        await aq.decide(
+            approval_id,
+            approved=approved,
+            reason=body.reason,
+            decided_by=caller.user_id,
+            mfa_code=body.mfa_code,
+        )
+    except KeyError:
+        _log_audit(caller, f"{verb} request", target=approval_id, result=AuditResult.FAILED)
+        raise HTTPException(
+            status_code=404,
+            detail={
+                "error": True,
+                "code": "NOT_FOUND",
+                "message": f"Approval {approval_id} not found or already decided",
+            },
+        )
+    except PermissionError as exc:
+        _log_audit(caller, f"{verb} request", target=approval_id, result=AuditResult.DENIED)
+        raise HTTPException(
+            status_code=403,
+            detail={"error": True, "code": "MFA_REQUIRED", "message": str(exc)},
+        )
+    except Exception as exc:
+        logger.warning("%s_request %s: %s", verb, approval_id, exc)
+        _log_audit(caller, f"{verb} request", target=approval_id, result=AuditResult.FAILED)
+        raise HTTPException(
+            status_code=500,
+            detail={"error": True, "code": "INTERNAL_ERROR", "message": "Approval decision failed"},
+        )
+    _log_audit(caller, f"{verb} request", target=approval_id)
+    return {
+        "ok": True,
+        "approval_id": approval_id,
+        "action": "approved" if approved else "denied",
+    }
 
 
 @router.post("/approvals/{approval_id}/approve")
 async def approve_request(
     approval_id: str,
-    body: ApprovalDecisionRequest,
+    body: Optional[ApprovalDecisionRequest] = None,
     caller: SCLCaller = Depends(get_caller),
 ) -> Dict:
     caller.require(Action.APPROVE, Resource.APPROVALS)
-    app = _app_state()
-    try:
-        aq = getattr(app, "approval_queue", None)
-        if aq and hasattr(aq, "approve"):
-            await aq.approve(approval_id, approver=caller.user_id)
-            _log_audit(caller, "approve request", target=approval_id)
-            return {"ok": True, "approval_id": approval_id, "action": "approved"}
-    except Exception as exc:
-        logger.warning("approve_request: %s", exc)
-    return {"ok": False, "error": "Approval not found or already decided"}
+    return await _decide_approval(caller, approval_id, body, approved=True)
 
 
 @router.post("/approvals/{approval_id}/deny")
 async def deny_request(
     approval_id: str,
-    body: ApprovalDecisionRequest,
+    body: Optional[ApprovalDecisionRequest] = None,
     caller: SCLCaller = Depends(get_caller),
 ) -> Dict:
     caller.require(Action.APPROVE, Resource.APPROVALS)
-    app = _app_state()
-    try:
-        aq = getattr(app, "approval_queue", None)
-        if aq and hasattr(aq, "deny"):
-            await aq.deny(approval_id, denier=caller.user_id, reason=body.reason)
-            _log_audit(caller, "deny request", target=approval_id)
-            return {"ok": True, "approval_id": approval_id, "action": "denied"}
-    except Exception as exc:
-        logger.warning("deny_request: %s", exc)
-    return {"ok": False, "error": "Approval not found or already decided"}
+    return await _decide_approval(caller, approval_id, body, approved=False)
 
 
 # ---------------------------------------------------------------------------

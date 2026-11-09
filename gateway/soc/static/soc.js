@@ -1569,6 +1569,59 @@ window._emergencyBlock = function() {
 };
 
 // ---------------------------------------------------------------------------
+// Approvals tab (SCRUM-200) — EnhancedApprovalQueue via /approvals/*
+// ---------------------------------------------------------------------------
+
+async function _loadApprovals() {
+  const res = await _get('/approvals/pending');
+  const tbody = document.getElementById('approvals-tbody');
+  if (!tbody) return;
+  if (!res.ok) {
+    tbody.innerHTML = `<tr><td colspan="7" style="color:var(--danger);text-align:center;padding:1rem">Error: ${_esc(res.data?.detail?.message || res.status)}</td></tr>`;
+    return;
+  }
+  const items = Array.isArray(res.data) ? res.data : [];
+  _setText('approvals-count', items.length);
+  if (!items.length) {
+    tbody.innerHTML = '<tr><td colspan="7" style="color:var(--text-muted);text-align:center;padding:1rem">No pending approvals</td></tr>';
+    return;
+  }
+  // Every untrusted value goes through _esc(); ids reach handlers via data-id, never inline JS.
+  tbody.innerHTML = items.map(r =>
+    `<tr>
+      <td><code title="${_esc(r.request_id)}">${_esc((r.request_id || '').slice(0, 8))}</code></td>
+      <td>${_esc(r.action_type || '—')}</td>
+      <td>${_esc(r.agent_id || '—')}</td>
+      <td style="font-size:11px">${_ago(r.submitted_at)}</td>
+      <td style="font-size:11px">${_esc(r.expires_at || '—')}</td>
+      <td><pre style="font-size:11px;margin:0;max-width:420px;max-height:160px;overflow:auto;white-space:pre-wrap">${_esc(JSON.stringify(r.details ?? {}, null, 2))}</pre></td>
+      <td>
+        <div style="display:flex;gap:.25rem;flex-wrap:wrap">
+          <button class="btn btn-sm btn-success" data-id="${_esc(r.request_id)}" onclick="window._approvalDecide('approve', this.dataset.id)">Approve</button>
+          <button class="btn btn-sm btn-danger"  data-id="${_esc(r.request_id)}" onclick="window._approvalDecide('deny', this.dataset.id)">Deny</button>
+        </div>
+      </td>
+    </tr>`
+  ).join('');
+}
+
+window._reloadApprovals = _loadApprovals;
+
+window._approvalDecide = async function(action, id) {
+  const path = `/approvals/${encodeURIComponent(id)}/${action}`;
+  let res = await _post(path, { reason: '' });
+  // IEC 62443 FR1: high-risk approvals need a second factor — prompt and retry once.
+  if (!res.ok && res.data?.detail?.code === 'MFA_REQUIRED') {
+    const code = (window.prompt('MFA code required to approve this action:') || '').trim();
+    if (!code) { _toast('Approval cancelled — MFA code required', 'warning'); return; }
+    res = await _post(path, { reason: '', mfa_code: code });
+  }
+  const ok = res.ok && res.data?.ok === true;
+  _toast(ok ? `Request ${action === 'approve' ? 'approved' : 'denied'}` : `Error: ${res.data?.detail?.message || res.status}`, ok ? 'success' : 'danger');
+  _loadApprovals();
+};
+
+// ---------------------------------------------------------------------------
 // Logs tab
 // ---------------------------------------------------------------------------
 
@@ -2054,6 +2107,7 @@ window._triggerCveReport = async function() {
   _registerTab('services',     _loadServices);
   _registerTab('contributors', _loadContributors);
   _registerTab('egress',       _loadEgress);
+  _registerTab('approvals',    _loadApprovals);
   _registerTab('logs',         _loadLogs);  // CC-30: fetch REST logs on tab open
   _registerTab('config',       _loadConfig);
   _registerTab('agent-cves',   _loadAgentCves);

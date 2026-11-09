@@ -59,6 +59,7 @@
     <a class="nav-item" data-tab="services">Services</a>
     <a class="nav-item" data-tab="contributors">Contributors</a>
     <a class="nav-item" data-tab="egress">Egress</a>
+    <a class="nav-item" data-tab="approvals">Approvals</a>
     <div class="nav-section">Debug</div>
     <a class="nav-item" data-tab="logs">Logs</a>
     <a class="nav-item" data-tab="config">Config</a>
@@ -422,6 +423,30 @@
               <tr><th>Domain</th><th>Agent</th><th>Decision</th><th>Mode</th><th>Decided By</th><th>When</th><th>Actions</th></tr>
             </thead>
             <tbody id="egress-history-tbody">
+              <tr><td colspan="7" style="color:var(--text-muted);text-align:center;padding:1rem">loading...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Approvals (SCRUM-200) ────────────────────────────── -->
+    <div id="tab-approvals" class="tab-pane" style="display:none">
+      <h2>Approvals</h2>
+      <div class="toolbar">
+        <button class="btn btn-sm" onclick="window._reloadApprovals()">Refresh</button>
+      </div>
+      <div class="panel">
+        <div class="panel-header">
+          Pending Approvals
+          <span id="approvals-count" class="badge badge-warning">0</span>
+        </div>
+        <div class="panel-body" style="padding:0">
+          <table class="data-table">
+            <thead>
+              <tr><th>ID</th><th>Action</th><th>Agent</th><th>Submitted</th><th>Expires</th><th>Details</th><th>Actions</th></tr>
+            </thead>
+            <tbody id="approvals-tbody">
               <tr><td colspan="7" style="color:var(--text-muted);text-align:center;padding:1rem">loading...</td></tr>
             </tbody>
           </table>

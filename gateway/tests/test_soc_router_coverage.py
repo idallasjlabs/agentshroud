@@ -1501,39 +1501,164 @@ async def test_privacy_policies(client, state):
 # ---------------------------------------------------------------------------
 
 
-async def test_approvals_pending(client, state):
-    resp = await client.get("/soc/v1/approvals/pending")
-    assert resp.json() == []
-    state.approval_queue = SimpleNamespace(
-        get_pending_items=lambda: [{"id": "a1"}, SimpleNamespace(id="a2")]
+class _FakeDecideQueue:
+    """Mirrors EnhancedApprovalQueue's public surface (gateway/approval_queue/enhanced_queue.py).
+
+    Deliberately has NO approve()/deny() so a router that still calls them fails.
+    """
+
+    def __init__(self, pending=None, decide_exc=None):
+        self._pending = pending or []
+        self.decide = AsyncMock(
+            side_effect=decide_exc,
+            return_value=SimpleNamespace(request_id="a1", status="approved"),
+        )
+
+    async def get_pending(self):
+        return self._pending
+
+
+def _pending_item(request_id="a1"):
+    from gateway.ingest_api.models import ApprovalQueueItem
+
+    return ApprovalQueueItem(
+        request_id=request_id,
+        action_type="email_sending",
+        description="send mail",
+        details={"to": "<script>x</script>"},
+        agent_id="openclaw",
+        submitted_at="2026-11-09T00:00:00+00:00",
+        expires_at="2026-11-09T01:00:00+00:00",
+        status="pending",
     )
+
+
+async def test_approvals_pending_no_queue_is_empty(client):
     resp = await client.get("/soc/v1/approvals/pending")
-    assert resp.json() == [{"id": "a1"}, {"id": "a2"}]
+    assert resp.status_code == 200
+    assert resp.json() == []
 
 
-async def test_approvals_approve_and_deny(client, state):
-    aq = SimpleNamespace(approve=AsyncMock(), deny=AsyncMock())
+async def test_approvals_pending_uses_get_pending(client, state):
+    state.approval_queue = _FakeDecideQueue(pending=[_pending_item("a1")])
+    resp = await client.get("/soc/v1/approvals/pending")
+    assert resp.status_code == 200
+    data = resp.json()
+    assert len(data) == 1
+    assert data[0]["request_id"] == "a1"
+    assert data[0]["action_type"] == "email_sending"
+    assert data[0]["agent_id"] == "openclaw"
+    assert data[0]["details"] == {"to": "<script>x</script>"}
+    assert data[0]["expires_at"] == "2026-11-09T01:00:00+00:00"
+
+
+async def test_approvals_pending_queue_error_is_not_empty_success(client, state):
+    class _Broken:
+        async def get_pending(self):
+            raise RuntimeError("db locked")
+
+    state.approval_queue = _Broken()
+    resp = await client.get("/soc/v1/approvals/pending")
+    assert resp.status_code == 500
+    assert resp.json()["detail"]["code"] == "INTERNAL_ERROR"
+
+
+async def test_approvals_approve_calls_decide(client, state, monkeypatch):
+    audit = MagicMock()
+    monkeypatch.setattr(soc_router, "_log_audit", audit)
+    aq = _FakeDecideQueue()
     state.approval_queue = aq
-    resp = await client.post("/soc/v1/approvals/a1/approve", json={"reason": ""})
+    resp = await client.post(
+        "/soc/v1/approvals/a1/approve", json={"reason": "ok", "mfa_code": "123456"}
+    )
+    assert resp.status_code == 200
     assert resp.json() == {"ok": True, "approval_id": "a1", "action": "approved"}
-    assert aq.approve.await_args.kwargs["approver"] == "owner-1"
+    aq.decide.assert_awaited_once_with(
+        "a1", approved=True, reason="ok", decided_by="owner-1", mfa_code="123456"
+    )
+    assert audit.call_args.args[1] == "approve request"
+    assert audit.call_args.kwargs["target"] == "a1"
 
+
+async def test_approvals_deny_calls_decide(client, state, monkeypatch):
+    audit = MagicMock()
+    monkeypatch.setattr(soc_router, "_log_audit", audit)
+    aq = _FakeDecideQueue()
+    state.approval_queue = aq
     resp = await client.post("/soc/v1/approvals/a1/deny", json={"reason": "nope"})
+    assert resp.status_code == 200
     assert resp.json() == {"ok": True, "approval_id": "a1", "action": "denied"}
-    assert aq.deny.await_args.kwargs["reason"] == "nope"
+    aq.decide.assert_awaited_once_with(
+        "a1", approved=False, reason="nope", decided_by="owner-1", mfa_code=None
+    )
+    assert audit.call_args.args[1] == "deny request"
 
 
-async def test_approvals_missing_queue(client):
+async def test_approvals_body_optional(client, state):
+    aq = _FakeDecideQueue()
+    state.approval_queue = aq
+    resp = await client.post("/soc/v1/approvals/a1/deny")
+    assert resp.status_code == 200
+    assert aq.decide.await_args.kwargs["reason"] == ""
+
+
+@pytest.mark.parametrize("verb", ["approve", "deny"])
+async def test_approvals_unknown_id_is_404(client, state, verb):
+    state.approval_queue = _FakeDecideQueue(
+        decide_exc=KeyError("Approval request zz not found or already decided")
+    )
+    resp = await client.post(f"/soc/v1/approvals/zz/{verb}", json={"reason": ""})
+    assert resp.status_code == 404
+    assert resp.json()["detail"]["code"] == "NOT_FOUND"
+    assert resp.json().get("ok") is not True
+
+
+async def test_approvals_mfa_required_is_403(client, state, monkeypatch):
+    from gateway.soc.models import AuditResult
+
+    audit = MagicMock()
+    monkeypatch.setattr(soc_router, "_log_audit", audit)
+    state.approval_queue = _FakeDecideQueue(
+        decide_exc=PermissionError("MFA required to approve: missing code")
+    )
     resp = await client.post("/soc/v1/approvals/a1/approve", json={"reason": ""})
-    assert resp.json()["ok"] is False
-    resp = await client.post("/soc/v1/approvals/a1/deny", json={"reason": ""})
-    assert resp.json()["ok"] is False
+    assert resp.status_code == 403
+    detail = resp.json()["detail"]
+    assert detail["code"] == "MFA_REQUIRED"
+    assert "MFA required" in detail["message"]
+    # The refused second factor is audited as DENIED, never SUCCESS
+    assert audit.call_args.kwargs["result"] == AuditResult.DENIED
 
 
-async def test_approvals_approve_raises(client, state):
-    state.approval_queue = SimpleNamespace(approve=AsyncMock(side_effect=KeyError("a1")))
+@pytest.mark.parametrize("verb", ["approve", "deny"])
+async def test_approvals_missing_queue_is_503(client, verb):
+    resp = await client.post(f"/soc/v1/approvals/a1/{verb}", json={"reason": ""})
+    assert resp.status_code == 503
+    assert resp.json()["detail"]["code"] == "SERVICE_UNAVAILABLE"
+
+
+async def test_approvals_unexpected_error_is_500(client, state):
+    state.approval_queue = _FakeDecideQueue(decide_exc=RuntimeError("store down"))
     resp = await client.post("/soc/v1/approvals/a1/approve", json={"reason": ""})
-    assert resp.json()["ok"] is False
+    assert resp.status_code == 500
+    assert resp.json()["detail"]["code"] == "INTERNAL_ERROR"
+
+
+def test_command_center_has_approvals_tab():
+    from pathlib import Path
+
+    soc_dir = Path(soc_router.__file__).parent
+    html = (soc_dir / "templates" / "soc.html").read_text(encoding="utf-8")
+    js = (soc_dir / "static" / "soc.js").read_text(encoding="utf-8")
+    manage = html.index('<div class="nav-section">Manage</div>')
+    debug = html.index('<div class="nav-section">Debug</div>')
+    nav = html.index('<a class="nav-item" data-tab="approvals">Approvals</a>')
+    assert manage < nav < debug
+    assert '<div id="tab-approvals" class="tab-pane"' in html
+    assert 'id="approvals-tbody"' in html
+    assert "_registerTab('approvals'," in js
+    assert "/approvals/pending" in js
+    assert "MFA_REQUIRED" in js
 
 
 # ---------------------------------------------------------------------------
