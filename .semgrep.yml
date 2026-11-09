@@ -198,9 +198,25 @@ rules:
   - id: agentshroud-log-sensitive-key
     patterns:
       - pattern: $LOGGER.$LEVEL(..., $SECRET, ...)
+      # Logging calls only, with any argument that contains a sensitive word.
+      # semgrep anchors metavariable-regex at the start, hence the leading .*.
+      # Before 2026-11-09 the rule matched any method call whose argument was
+      # literally named token/key (dict.get, hmac.compare_digest, hashlib.sha256:
+      # 54 hits in gateway/, none a log statement) and missed real leaks such as
+      # logger.info("%s", api_token).
+      - metavariable-regex:
+          metavariable: $LEVEL
+          regex: ^(debug|info|warning|warn|error|exception|critical|fatal|log)$
+      # A value, not message text: literal and f-string arguments are excluded
+      # (an f-string interpolating a secret is a known gap of this rule).
+      - metavariable-pattern:
+          metavariable: $SECRET
+          patterns:
+            - pattern-not: '"..."'
+            - pattern-not: f"..."
       - metavariable-regex:
           metavariable: $SECRET
-          regex: (?i)(token|password|secret|key|credential)
+          regex: (?i).*(token|password|secret|key|credential)
     message: |
       Potentially logging sensitive data. Ensure tokens, passwords, and keys
       are redacted before logging.
