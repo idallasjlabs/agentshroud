@@ -50,9 +50,10 @@
 #                                        - prod's gate: newest dev PASS within
 #                                          SUNDAY_HANDOFF_MAX_AGE_DAYS (6) whose
 #                                          pins equal prod's. See its comment.
-#   sunday_live_pins <repo> <openclaw_rev> <hermes_rev>
-#                                        - the pins the running stack was built
-#                                          from (prod's honest "before").
+#   sunday_live_revs / sunday_live_pins / sunday_prod_outcome
+#                                        - prod's gate on what RUNS: pins the
+#                                          live images were built from, judged
+#                                          against the handoff after verify.
 #   sunday_default_trivy_cache          - Trivy DB cache on a Colima mount.
 #   sunday_catchup_pending / sunday_mark_promoted /
 #   sunday_move_aside_untracked_collisions / sunday_write_launcher_status
@@ -770,22 +771,68 @@ sunday_hermes_container() {
   printf '%s' "$name"
 }
 
+# sunday_live_revs <container...>
+#   Prints "<openclaw_rev> <hermes_rev>": the org.opencontainers.image.revision
+#   label of the first *openclaw* and first *hermes* container named. A missing
+#   container or label prints "-" in its place. Labels are NOT validated here.
+sunday_live_revs() {
+  local c oc="-" h="-" rev
+  for c in "$@"; do
+    rev="$(docker inspect -f '{{index .Config.Labels "org.opencontainers.image.revision"}}' "$c" 2>/dev/null | head -1 || true)"
+    [ -n "$rev" ] || rev="-"
+    case "$c" in
+      *openclaw*) [ "$oc" != "-" ] || oc="$rev" ;;
+      *hermes*)   [ "$h" != "-" ]  || h="$rev" ;;
+    esac
+  done
+  printf '%s %s\n' "$oc" "$h"
+}
+
+# _sunday_commit <repo> <rev> — the full commit for a label that is a plain
+#   7-40 hex sha. Anything else (HEAD, origin/main, HEAD~5, "<sha>-dirty",
+#   "unknown", "-") is refused: a revspec like HEAD would make "running" mean
+#   "checked out", and -dirty means versions.env at that commit is not what was
+#   built. --end-of-options keeps it from ever being read as an option.
+_sunday_commit() {
+  printf '%s' "$2" | grep -qE '^[0-9a-f]{7,40}$' || return 1
+  git -C "$1" rev-parse --verify --quiet --end-of-options "${2}^{commit}" 2>/dev/null
+}
+
 # sunday_live_pins <repo> <openclaw_rev> <hermes_rev>
-#   Prints, sorted, the OPENCLAW_VERSION line from docker/versions.env at the
-#   commit the running OpenClaw image was built from, and the HERMES_VERSION /
-#   HERMES_IMAGE lines at the running Hermes image's commit (each image's
-#   org.opencontainers.image.revision label). That is what prod RUNS, which is
-#   the honest "before" for a promotion: prod fast-forwards to main first, so
-#   main's merge-base is HEAD and comparing against it found nothing to upgrade
-#   (2026-11-09, dev's 11-08 PASS). Returns 1 when either revision is empty or
-#   unknown to git, or a pin is missing there, so the caller keeps its own logic.
+#   Prints, sorted, OPENCLAW_VERSION from docker/versions.env at the commit the
+#   running OpenClaw image was built from, and HERMES_VERSION / HERMES_IMAGE at
+#   the running Hermes image's commit: what prod RUNS. Prod fast-forwards to
+#   main before applying, so main's merge-base is HEAD and comparing the
+#   checkout with itself found nothing to upgrade (2026-11-09, dev's 11-08
+#   PASS). Returns 1 when either label is not a known plain commit or a pin is
+#   missing there.
 sunday_live_pins() {
-  local repo="$1" oc_rev="$2" h_rev="$3" oc h
-  [ -n "$oc_rev" ] && [ -n "$h_rev" ] || return 1
-  git -C "$repo" cat-file -e "${oc_rev}^{commit}" 2>/dev/null || return 1
-  git -C "$repo" cat-file -e "${h_rev}^{commit}" 2>/dev/null || return 1
-  oc="$(git -C "$repo" show "${oc_rev}:docker/versions.env" 2>/dev/null | grep -E '^OPENCLAW_VERSION=' || true)"
-  h="$(git -C "$repo" show "${h_rev}:docker/versions.env" 2>/dev/null | grep -E '^(HERMES_VERSION|HERMES_IMAGE)=' || true)"
+  local repo="$1" oc_sha h_sha oc h
+  oc_sha="$(_sunday_commit "$repo" "$2")" || return 1
+  h_sha="$(_sunday_commit "$repo" "$3")" || return 1
+  oc="$(git -C "$repo" show "${oc_sha}:docker/versions.env" 2>/dev/null | grep -E '^OPENCLAW_VERSION=' || true)"
+  h="$(git -C "$repo" show "${h_sha}:docker/versions.env" 2>/dev/null | grep -E '^(HERMES_VERSION|HERMES_IMAGE)=' || true)"
   [ -n "$oc" ] && [ -n "$h" ] || return 1
   printf '%s\n%s\n' "$oc" "$h" | sort
+}
+
+# sunday_prod_outcome <before_live> <after_live> <target>
+#   Prod's gate, decided on what RUNS after verify, never on what the run did.
+#   <target> is the handoff's pins (phase_apply already proved the checkout's
+#   versions.env equals them); "latest upstream" does not apply to prod, which
+#   only ever ships what dev passed. Prints one word:
+#     PROMOTED      after = target, and before was something else
+#     ALREADY_LIVE  after = target = before (an earlier run deployed it but died
+#                   before marking: mark it now instead of redeploying daily)
+#     PROMOTED_FROM_UNKNOWN  after = target, before could not be resolved
+#     NOT_LIVE      after != target: the run did not leave the handoff running
+#     UNPROVEN      after could not be resolved from the live labels
+#   Returns 0 for the first three, 1 otherwise.
+sunday_prod_outcome() {
+  local before="$1" after="$2" target="$3"
+  if [ -z "$after" ]; then echo UNPROVEN; return 1; fi
+  if [ -z "$target" ] || [ "$after" != "$target" ]; then echo NOT_LIVE; return 1; fi
+  if [ -z "$before" ]; then echo PROMOTED_FROM_UNKNOWN; return 0; fi
+  if [ "$before" = "$after" ]; then echo ALREADY_LIVE; return 0; fi
+  echo PROMOTED
 }

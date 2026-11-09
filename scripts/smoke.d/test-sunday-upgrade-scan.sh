@@ -1040,12 +1040,12 @@ check "T28: stack start and rollback use the same rule" \
 check "T29: self-check timeout defaults to 300s" \
     "$(grep -q 'tmo="\${SUNDAY_SELFCHECK_TIMEOUT:-300}"' "$APPLY_SH" && echo true || echo false)"
 
-# ── T30: prod's "before" pins are what is RUNNING (2026-11-09) ───────────────
-# Prod fast-forwards to main before applying, so the merge-base is HEAD and
-# "before" equalled "after": the 2026.10.6 -> 2026.11.1 promotion of dev's
-# 11-08 PASS would have exited 25 NOTHING_UPGRADED (2026.11.2 was out) and never
-# written prod-promoted. Each running image carries the commit it was built
-# from; versions.env at that commit is what prod actually runs.
+# ── T30: prod is judged on what RUNS (2026-11-09) ───────────────────────────
+# Prod fast-forwards to main before applying, so the merge-base "before" was
+# HEAD and equalled "after": the 2026.10.6 -> 2026.11.1 promotion of dev's
+# 11-08 PASS would have exited 25 (2026.11.2 was out) and never been marked
+# promoted. Each running image carries the commit it was built from;
+# versions.env at that commit is what prod runs, before AND after verify.
 G30="$TMPROOT/t30"; mkdir -p "$G30/docker" && git -C "$G30" init -q -b main . 2>/dev/null
 printf 'OPENCLAW_VERSION=2026.10.6\nHERMES_VERSION=0.22.5\nHERMES_IMAGE=nousresearch/hermes-agent@sha256:old\n' > "$G30/docker/versions.env"
 git -C "$G30" add -A; git -C "$G30" -c user.email=t@t -c user.name=t commit -q -m old
@@ -1053,29 +1053,59 @@ rev30_old="$(git -C "$G30" rev-parse HEAD)"
 printf 'OPENCLAW_VERSION=2026.11.1\nHERMES_VERSION=0.23.0\nHERMES_IMAGE=nousresearch/hermes-agent@sha256:new\n' > "$G30/docker/versions.env"
 git -C "$G30" -c user.email=t@t -c user.name=t commit -q -am new
 rev30_new="$(git -C "$G30" rev-parse HEAD)"
+target30="$(grep -E '^(OPENCLAW_VERSION|HERMES_VERSION|HERMES_IMAGE)=' "$G30/docker/versions.env" | sort)"
 # shellcheck disable=SC2016  # expands in the child shell, by design
-live30() { env -i PATH="/usr/bin:/bin:/opt/homebrew/bin" "$BASH_BIN" -c '. "$1"; shift; sunday_live_pins "$@"' _ "$LIB" "$@" 2>/dev/null; }
-after30="$(sort < <(grep -E '^(OPENCLAW_VERSION|HERMES_VERSION|HERMES_IMAGE)=' "$G30/docker/versions.env"))"
+lib30() { env -i PATH="/usr/bin:/bin:/opt/homebrew/bin" "$BASH_BIN" -c '. "$1"; shift; "$@"' _ "$LIB" "$@" 2>/dev/null; }
 set +e
-before30="$(live30 "$G30" "$rev30_old" "$(printf '%.10s' "$rev30_old")")"; rc30a=$?
+old30="$(lib30 sunday_live_pins "$G30" "$rev30_old" "$(printf '%.10s' "$rev30_old")")"; rc30a=$?
+mixed30="$(lib30 sunday_live_pins "$G30" "$rev30_new" "$rev30_old")"
+bad30=""
+for r in HEAD origin/main 'HEAD~1' "${rev30_old}-dirty" unknown - '' --help deadbeefdeadbeef; do
+  lib30 sunday_live_pins "$G30" "$r" "$rev30_old" >/dev/null && bad30="$bad30 [$r]"
+done
 set -e
-check "T30: live pins come from versions.env at each running image's revision (short sha too)" \
-    "$([ "$rc30a" -eq 0 ] && printf '%s\n' "$before30" | grep -qx 'OPENCLAW_VERSION=2026.10.6' && printf '%s\n' "$before30" | grep -qx 'HERMES_VERSION=0.22.5' && echo true || echo false)" "rc=$rc30a got=$before30"
-check "T30: 2026.10.6 running, 2026.11.1 checked out (2026.11.2 upstream) -> before != after, so the gate sees the upgrade" \
-    "$([ -n "$before30" ] && [ "$before30" != "$after30" ] && echo true || echo false)"
-mixed30="$(live30 "$G30" "$rev30_new" "$rev30_old")"
+check "T30: live pins = versions.env at each running image's revision (short sha too)" \
+    "$([ "$rc30a" -eq 0 ] && printf '%s\n' "$old30" | grep -qx 'OPENCLAW_VERSION=2026.10.6' && printf '%s\n' "$old30" | grep -qx 'HERMES_VERSION=0.22.5' && echo true || echo false)" "rc=$rc30a got=$old30"
 check "T30: OpenClaw and Hermes pins each come from their own container's revision" \
     "$(printf '%s\n' "$mixed30" | grep -qx 'OPENCLAW_VERSION=2026.11.1' && printf '%s\n' "$mixed30" | grep -qx 'HERMES_VERSION=0.22.5' && echo true || echo false)" "got=$mixed30"
-set +e
-live30 "$G30" deadbeefdeadbeef "$rev30_old" >/dev/null; rc30b=$?
-live30 "$G30" "" "$rev30_old" >/dev/null; rc30c=$?
-set -e
-check "T30: a revision git does not know (or no label) -> refuses, caller keeps the merge-base logic" \
-    "$([ "$rc30b" -ne 0 ] && [ "$rc30c" -ne 0 ] && echo true || echo false)" "rc=$rc30b/$rc30c"
-check "T30: apply takes prod's before-pins from the live containers" \
-    "$(grep -q 'sunday_live_pins "\$REPO"' "$APPLY_SH" && grep -q 'ENVIRONMENT" = "prod"' "$APPLY_SH" && echo true || echo false)"
-check "T30: a prod run that changed no live pin is never marked promoted" \
-    "$(grep -E 'ENVIRONMENT" = "prod" \] && \[ "\$PHASE" = "all" \].*UPGRADE_HAPPENED:-0\}" = 1' "$APPLY_SH" >/dev/null && echo true || echo false)"
+check "T30: labels that are not a plain known commit (HEAD, origin/main, HEAD~1, -dirty, unknown, -, empty, an option, unknown sha) are refused" \
+    "$([ -z "$bad30" ] && echo true || echo false)" "accepted:$bad30"
+
+# The labels are read through docker inspect: fake it with the 11-09 state.
+BIN30="$TMPROOT/t30bin"
+write_fake "$BIN30" docker 'for a; do c="$a"; done; case "$c" in *openclaw*) echo "${FAKE_OC_REV:-}";; *hermes*) echo "${FAKE_H_REV:-}";; *) exit 1;; esac'
+# shellcheck disable=SC2016
+revs30() { env -i PATH="${BIN30}:/usr/bin:/bin" FAKE_OC_REV="$1" FAKE_H_REV="$2" "$BASH_BIN" -c '. "$1"; sunday_live_revs agentshroud-gateway agentshroud-openclaw agentshroud-hermes-v2' _ "$LIB" 2>/dev/null; }
+check "T30: sunday_live_revs reads each container's revision label" \
+    "$([ "$(revs30 "$rev30_old" abc1234)" = "$rev30_old abc1234" ] && echo true || echo false)" "got=$(revs30 "$rev30_old" abc1234)"
+check "T30: a missing label reads as '-' (refused downstream), never as empty-and-shifted" \
+    "$([ "$(revs30 '' abc1234)" = "- abc1234" ] && echo true || echo false)" "got=$(revs30 '' abc1234)"
+
+# The outcome, end to end through the same functions apply calls.
+# shellcheck disable=SC2016
+outcome30() { # <oc_before> <h_before> <oc_after> <h_after>
+  env -i PATH="${BIN30}:/usr/bin:/bin:/opt/homebrew/bin" REPO30="$G30" T30="$target30" \
+    B1="$1" B2="$2" A1="$3" A2="$4" "$BASH_BIN" -c '. "$1"
+    read -r o h <<< "$(FAKE_OC_REV="$B1" FAKE_H_REV="$B2" sunday_live_revs x-openclaw x-hermes)"
+    before="$(sunday_live_pins "$REPO30" "$o" "$h" || true)"
+    read -r o h <<< "$(FAKE_OC_REV="$A1" FAKE_H_REV="$A2" sunday_live_revs x-openclaw x-hermes)"
+    after="$(sunday_live_pins "$REPO30" "$o" "$h" || true)"
+    sunday_prod_outcome "$before" "$after" "$T30"; echo "rc=$?"' _ "$LIB" 2>/dev/null
+}
+check "T30: 2026.10.6 running -> 2026.11.1 running after verify (2026.11.2 upstream irrelevant) -> PROMOTED" \
+    "$([ "$(outcome30 "$rev30_old" "$rev30_old" "$rev30_new" "$rev30_new" | tr '\n' ' ')" = "PROMOTED rc=0 " ] && echo true || echo false)" "got=$(outcome30 "$rev30_old" "$rev30_old" "$rev30_new" "$rev30_new" | tr '\n' ' ')"
+check "T30: already running the handoff (earlier run died before marking) -> ALREADY_LIVE, marked, no redeploy loop" \
+    "$([ "$(outcome30 "$rev30_new" "$rev30_new" "$rev30_new" "$rev30_new" | tr '\n' ' ')" = "ALREADY_LIVE rc=0 " ] && echo true || echo false)"
+check "T30: apply left the OLD containers running though verify passed -> NOT_LIVE, rc!=0" \
+    "$([ "$(outcome30 "$rev30_old" "$rev30_old" "$rev30_old" "$rev30_old" | tr '\n' ' ')" = "NOT_LIVE rc=1 " ] && echo true || echo false)"
+check "T30: only one of the two images was replaced -> NOT_LIVE" \
+    "$([ "$(outcome30 "$rev30_old" "$rev30_old" "$rev30_new" "$rev30_old" | tr '\n' ' ')" = "NOT_LIVE rc=1 " ] && echo true || echo false)"
+check "T30: -dirty label after verify -> UNPROVEN, never guessed from the checkout" \
+    "$([ "$(outcome30 "$rev30_old" "$rev30_old" "${rev30_new}-dirty" "$rev30_new" | tr '\n' ' ')" = "UNPROVEN rc=1 " ] && echo true || echo false)"
+check "T30: unknown 'before' but the handoff runs after -> PROMOTED_FROM_UNKNOWN (no merge-base fallback)" \
+    "$([ "$(outcome30 unknown "$rev30_old" "$rev30_new" "$rev30_new" | tr '\n' ' ')" = "PROMOTED_FROM_UNKNOWN rc=0 " ] && echo true || echo false)"
+check "T30: apply wires it: prod re-reads live labels after verify, exits 26 otherwise, marks only on a prod outcome" \
+    "$(grep -q 'PROD_OUTCOME="$(sunday_prod_outcome' "$APPLY_SH" && grep -q 'exit 26' "$APPLY_SH" && grep -q '\[ -n "\${PROD_OUTCOME:-}" \] && _mutating' "$APPLY_SH" && echo true || echo false)"
 
 # ── T31: Trivy's DB cache defaults to a Colima-mounted path ─────────────────
 # ~/.cache/trivy is not mounted into the Colima VM, so the container DB refresh
