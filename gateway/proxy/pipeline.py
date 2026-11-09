@@ -903,6 +903,22 @@ class SecurityPipeline:
             if sanitize_result.redactions:
                 self._stats["inbound_sanitized"] += 1
                 self._stats["pii_redactions_total"] += len(sanitize_result.redactions)
+            # enforcement_action == "block" (SCRUM-202). Identity check so MagicMock
+            # sanitizers in tests (truthy attributes) never trip it.
+            if getattr(sanitize_result, "blocked", False) is True:
+                result.action = PipelineAction.BLOCK
+                result.blocked = True
+                result.block_reason = (
+                    f"PII detected inbound (DLP block): {sorted(result.pii_redactions)}"
+                )
+                self._stats["inbound_blocked"] += 1
+                entry = await self.audit_chain.append_block(
+                    message, "inbound_pii_blocked", metadata
+                )
+                result.audit_entry_id = entry.id
+                result.audit_hash = entry.chain_hash
+                result.processing_time_ms = (time.time() - start) * 1000
+                return result
         elif self.pii_sanitizer and is_owner:
             logger.info(
                 "PII sanitize: owner inbound query exempt — not redacting (source=%s agent=%s)",
@@ -1085,6 +1101,21 @@ class SecurityPipeline:
             if sanitize_result.redactions:
                 self._stats["outbound_sanitized"] += 1
                 self._stats["pii_redactions_total"] += len(sanitize_result.redactions)
+            # enforcement_action == "block" (SCRUM-202).
+            if getattr(sanitize_result, "blocked", False) is True:
+                result.action = PipelineAction.BLOCK
+                result.blocked = True
+                result.block_reason = (
+                    f"PII detected outbound (DLP block): {sorted(result.pii_redactions)}"
+                )
+                self._stats["outbound_blocked"] += 1
+                entry = await self.audit_chain.append_block(
+                    response, "outbound_pii_blocked", metadata
+                )
+                result.audit_entry_id = entry.id
+                result.audit_hash = entry.chain_hash
+                result.processing_time_ms = (time.time() - start) * 1000
+                return result
 
         # Step 1.5: Outbound Information Filter (NEW)
         filter_result: Optional[FilterResult] = None

@@ -14,12 +14,18 @@ from __future__ import annotations
 import asyncio
 import logging
 import re
-from typing import Literal
+from typing import Literal, Optional
 
 from .config import PIIConfig
 from .models import RedactionDetail, RedactionResult
 
 logger = logging.getLogger("agentshroud.gateway.sanitizer")
+
+# CLAUDE.md §7.8: Presidio confidence floor. Per-call overrides may raise, never lower.
+MIN_CONFIDENCE_FLOOR = 0.9
+_VALID_ACTIONS = frozenset({"redact", "block"})
+# Returned in place of content when enforcement_action == "block"; carries no PII.
+PII_BLOCK_NOTICE = "[BLOCKED by AgentShroud DLP: content contained PII and was withheld]"
 
 
 class PIISanitizer:
@@ -168,18 +174,61 @@ class PIISanitizer:
             logger.warning(f"Presidio not installed: {e}. Using regex fallback for PII detection.")
             self.mode = "regex"
 
-    async def sanitize(self, content: str) -> RedactionResult:
-        """Detect and redact PII from content
+    def _resolve_threshold(self, min_confidence: Optional[float]) -> float:
+        """Return the effective confidence threshold for one call (raise-only).
+
+        The configured value is the floor (never below MIN_CONFIDENCE_FLOOR, the
+        CLAUDE.md §7.8 0.9 Presidio floor). A per-call override may only raise it.
+        """
+        floor = max(MIN_CONFIDENCE_FLOOR, self.config.min_confidence)
+        if min_confidence is None:
+            return self.config.min_confidence
+        if min_confidence > 1.0:
+            raise ValueError(f"min_confidence must be <= 1.0 (got {min_confidence})")
+        if min_confidence < floor:
+            raise ValueError(
+                f"min_confidence {min_confidence} is below the PII confidence floor "
+                f"{floor}; the floor can be raised per call but never lowered"
+            )
+        return min_confidence
+
+    async def sanitize(
+        self,
+        content: str,
+        *,
+        action: Optional[str] = None,
+        min_confidence: Optional[float] = None,
+    ) -> RedactionResult:
+        """Detect PII in content and apply the enforcement action
 
         Args:
             content: Text to sanitize
+            action: Optional per-call override of the configured enforcement
+                action ("redact" or "block").
+            min_confidence: Optional per-call Presidio confidence threshold. May
+                only raise the configured floor (0.9); a lower value raises
+                ValueError.
+
+        Behaviour:
+            - mode "monitor": findings are reported, content is never altered,
+              blocked is always False.
+            - mode "enforce" + action "redact": PII replaced by <ENTITY> tags
+              (unchanged legacy behaviour).
+            - mode "enforce" + action "block": if any entity at/above the
+              threshold is found, blocked=True and sanitized_content is a fixed
+              notice that contains no PII; entity types/redactions still listed.
 
         Returns:
             RedactionResult with sanitized content and redaction details
 
         Raises:
-            RuntimeError: If sanitization fails critically
+            ValueError: If action is not "redact"/"block", or min_confidence is
+                below the floor or above 1.0.
         """
+        if action is not None and action not in _VALID_ACTIONS:
+            raise ValueError(f"action must be one of {sorted(_VALID_ACTIONS)} (got {action!r})")
+        threshold = self._resolve_threshold(min_confidence)
+
         if not self.config.enabled:
             return RedactionResult(
                 sanitized_content=content,
@@ -190,26 +239,59 @@ class PIISanitizer:
         if self.mode == "presidio" and self.analyzer and self.anonymizer:
             # Hybrid: run Presidio first, then regex to catch gaps
             # (en_core_web_sm misses SSN/phone; regex catches them)
-            presidio_result = await self._sanitize_presidio(content)
+            presidio_result = await self._sanitize_presidio(content, threshold)
             regex_result = await self._sanitize_regex(presidio_result.sanitized_content)
             # Merge redactions from both passes
             all_redactions = presidio_result.redactions + regex_result.redactions
             all_types = list(
                 set(presidio_result.entity_types_found + regex_result.entity_types_found)
             )
-            return RedactionResult(
+            result = RedactionResult(
                 sanitized_content=regex_result.sanitized_content,
                 redactions=all_redactions,
                 entity_types_found=all_types,
             )
         else:
-            return await self._sanitize_regex(content)
+            result = await self._sanitize_regex(content)
 
-    async def _sanitize_presidio(self, content: str) -> RedactionResult:
+        return self._apply_enforcement(content, result, action or self.enforcement_action)
+
+    def _apply_enforcement(
+        self, original: str, result: RedactionResult, action: str
+    ) -> RedactionResult:
+        """Apply monitor/enforce + redact/block semantics to a redaction result."""
+        if not result.redactions:
+            return result
+        if self.enforcement_mode == "monitor":
+            # Monitor: "threats will be logged but NOT blocked" — report only.
+            logger.warning(
+                "PII sanitizer (monitor mode): %d finding(s) %s not enforced",
+                len(result.redactions),
+                sorted(result.entity_types_found),
+            )
+            return RedactionResult(
+                sanitized_content=original,
+                redactions=result.redactions,
+                entity_types_found=result.entity_types_found,
+                blocked=False,
+            )
+        if action == "block":
+            return RedactionResult(
+                sanitized_content=PII_BLOCK_NOTICE,
+                redactions=result.redactions,
+                entity_types_found=result.entity_types_found,
+                blocked=True,
+            )
+        return result
+
+    async def _sanitize_presidio(
+        self, content: str, threshold: Optional[float] = None
+    ) -> RedactionResult:
         """Sanitize using Microsoft Presidio
 
         Wraps synchronous Presidio calls in asyncio.to_thread to avoid blocking.
         """
+        min_score = self.config.min_confidence if threshold is None else threshold
 
         def _analyze_and_anonymize() -> RedactionResult:
             # Always include TELEGRAM_UID so it wins over PHONE_NUMBER for bare
@@ -222,7 +304,7 @@ class PIISanitizer:
             results = self.analyzer.analyze(text=content, entities=entities, language="en")
 
             # Filter by confidence
-            results = [r for r in results if r.score >= self.config.min_confidence]
+            results = [r for r in results if r.score >= min_score]
 
             if not results:
                 return RedactionResult(

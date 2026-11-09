@@ -944,3 +944,56 @@ class TestTrustViolationRecording:
 
         result = await pipeline.process_inbound("bad input", agent_id="openclaw")
         assert result.blocked is True  # request handling itself is unaffected
+
+
+class TestPIIBlockModeInPipeline:
+    """SCRUM-202: enforcement_action=block must actually block in the pipeline."""
+
+    @staticmethod
+    def _pipeline(action: str, mode: str = "enforce"):
+        from gateway.ingest_api.config import PIIConfig
+        from gateway.ingest_api.sanitizer import PIISanitizer
+
+        pii = PIISanitizer(PIIConfig(engine="regex"), mode=mode, action=action)
+        return SecurityPipeline(pii_sanitizer=pii)
+
+    @pytest.mark.asyncio
+    async def test_inbound_block(self):
+        pipeline = self._pipeline("block")
+        result = await pipeline.process_inbound("My SSN is 123-45-6789")
+        assert result.blocked is True
+        assert result.action == PipelineAction.BLOCK
+        assert "PII" in result.block_reason
+        assert "123-45-6789" not in result.sanitized_message
+        assert result.audit_entry_id
+        assert result.pii_redactions == ["US_SSN"]
+
+    @pytest.mark.asyncio
+    async def test_outbound_block(self):
+        pipeline = self._pipeline("block")
+        result = await pipeline.process_outbound("Your SSN is 123-45-6789")
+        assert result.blocked is True
+        assert result.action == PipelineAction.BLOCK
+        assert "123-45-6789" not in result.sanitized_message
+        assert result.audit_entry_id
+
+    @pytest.mark.asyncio
+    async def test_inbound_redact_unchanged(self):
+        pipeline = self._pipeline("redact")
+        result = await pipeline.process_inbound("My SSN is 123-45-6789")
+        assert result.blocked is False
+        assert result.sanitized_message == "My SSN is <US_SSN>"
+
+    @pytest.mark.asyncio
+    async def test_outbound_redact_unchanged(self):
+        pipeline = self._pipeline("redact")
+        result = await pipeline.process_outbound("Your SSN is 123-45-6789")
+        assert result.blocked is False
+        assert result.sanitized_message == "Your SSN is <US_SSN>"
+
+    @pytest.mark.asyncio
+    async def test_block_clean_message_forwards(self):
+        pipeline = self._pipeline("block")
+        result = await pipeline.process_inbound("hello world")
+        assert result.blocked is False
+        assert result.sanitized_message == "hello world"
