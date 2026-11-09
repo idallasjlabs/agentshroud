@@ -75,6 +75,17 @@
       },
       "ApprovalDecisionRequest": {
         "properties": {
+          "mfa_code": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Mfa Code"
+          },
           "reason": {
             "default": "",
             "title": "Reason",
@@ -6277,11 +6288,18 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ApprovalDecisionRequest"
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/ApprovalDecisionRequest"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Body"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -6379,11 +6397,18 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ApprovalDecisionRequest"
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/ApprovalDecisionRequest"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Body"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
