@@ -112,6 +112,10 @@ def _parse(path: Path, data: object, validator: jsonschema.Draft202012Validator)
         raise ProfileError(f"{vendor}: mode monitor requires monitor_ack: true")
 
     auth = data["auth"]
+    if auth["static_bearer"]:
+        # STUB: static bearer fallback (FR2) — NOT PRODUCTION READY. Refuse rather
+        # than accept a profile whose setting would silently do nothing.
+        raise ProfileError(f"{vendor}: static_bearer is not implemented in this release")
     for uri in auth["redirect_uris"]:
         if not uri.startswith("https://"):
             raise ProfileError(f"{vendor}: redirect URI must be https: {uri}")

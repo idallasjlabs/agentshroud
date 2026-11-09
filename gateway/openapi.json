@@ -3431,6 +3431,25 @@
         "summary": "Dashboard Ws Token"
       }
     },
+    "/edge/v1/rpc": {
+      "post": {
+        "operationId": "edge_rpc_edge_v1_rpc_post",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Edge Rpc",
+        "tags": [
+          "inbound-edge"
+        ]
+      }
+    },
     "/email/send": {
       "post": {
         "description": "Email send gateway (P3: channel ownership).\n\nThe bot submits email send requests here instead of calling Gmail directly.\nThe bot container has no internet access; this endpoint sends via SMTP_SSL\non the gateway. Controls:\n- PII scan on body (redacts before sending)\n- Recipient allowlist: known addresses are sent immediately\n- Unknown recipients: submitted to approval queue \u2192 202 (queued)\n\nAuthentication required.",

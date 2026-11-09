@@ -11,9 +11,11 @@ authorisation codes, refresh-token families, every issued access-token ``jti``,
 and the revocation/kill list. It lives in the gateway's data directory — never in
 the internet-facing edge container, which holds no state.
 
-Every bearer secret (enrollment code, authorisation code, refresh token, client
-secret) is stored only as a SHA-256 hash, so a copy of this database cannot be
-replayed. Grants are single use: authorisation codes are deleted when taken, and
+Every bearer secret (enrollment code, authorisation code, refresh token) is
+stored only as a SHA-256 hash, so a copy of this database cannot be replayed.
+OAuth client secrets must be compared in clear by the MCP SDK's client
+authenticator, so they are sealed with AES-256-GCM under a key the caller derives
+from the gateway-only signing key — never written in plaintext. Grants are single use: authorisation codes are deleted when taken, and
 re-presenting a rotated refresh token revokes its whole family (RFC 9700 §4.14).
 
 IEC 62443 alignment: FR1 (Identification and Authentication Control), FR2 (Use
@@ -29,6 +31,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 import aiosqlite
+from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 
 logger = logging.getLogger("agentshroud.inbound_edge.store")
 
@@ -38,7 +41,7 @@ _SCHEMA = """
 CREATE TABLE IF NOT EXISTS clients (
     client_id TEXT PRIMARY KEY,
     vendor TEXT NOT NULL,
-    secret_hash TEXT,
+    sealed_secret BLOB,
     info TEXT NOT NULL,
     created_at REAL NOT NULL
 );
@@ -109,10 +112,11 @@ def _h(secret: str) -> str:
 class EdgeStore:
     """Async SQLite store. One instance per gateway process."""
 
-    def __init__(self, db_path: Path | str, clock=time.time):
+    def __init__(self, db_path: Path | str, clock=time.time, seal_key: Optional[bytes] = None):
         self._path = str(db_path)
         self._clock = clock
         self._db: Optional[aiosqlite.Connection] = None
+        self._aead = AESGCM(seal_key) if seal_key else None
 
     async def init(self) -> None:
         self._db = await aiosqlite.connect(self._path, isolation_level=None)
@@ -138,17 +142,36 @@ class EdgeStore:
     async def add_client(
         self, client_id: str, vendor: str, info: Dict[str, Any], secret: Optional[str]
     ) -> None:
+        sealed = None
+        if secret:
+            if self._aead is None:
+                raise RuntimeError("EdgeStore has no seal key; refusing to store a client secret")
+            nonce = secrets.token_bytes(12)
+            sealed = nonce + self._aead.encrypt(nonce, secret.encode(), client_id.encode())
         await self.db.execute(
-            "INSERT INTO clients(client_id, vendor, secret_hash, info, created_at) "
+            "INSERT INTO clients(client_id, vendor, sealed_secret, info, created_at) "
             "VALUES (?,?,?,?,?)",
-            (client_id, vendor, _h(secret) if secret else None, json.dumps(info), self._clock()),
+            (client_id, vendor, sealed, json.dumps(info), self._clock()),
         )
 
     async def get_client(self, client_id: str) -> Optional[Dict[str, Any]]:
-        row = await self._one("SELECT vendor, info FROM clients WHERE client_id=?", (client_id,))
+        row = await self._one(
+            "SELECT vendor, info, sealed_secret FROM clients WHERE client_id=?", (client_id,)
+        )
         if row is None:
             return None
-        return {"client_id": client_id, "vendor": row[0], "info": json.loads(row[1])}
+        secret = None
+        if row[2] is not None:
+            if self._aead is None:
+                raise RuntimeError("EdgeStore has no seal key; cannot open client secret")
+            blob = bytes(row[2])
+            secret = self._aead.decrypt(blob[:12], blob[12:], client_id.encode()).decode()
+        return {
+            "client_id": client_id,
+            "vendor": row[0],
+            "info": json.loads(row[1]),
+            "secret": secret,
+        }
 
     async def list_clients(self) -> List[Dict[str, Any]]:
         async with self.db.execute(
@@ -282,6 +305,14 @@ class EdgeStore:
             "UPDATE refresh_tokens SET used=1 WHERE token_hash=? AND used=0", (_h(token),)
         )
         return found if cur.rowcount == 1 else None
+
+    async def revoke_refresh_family(self, token: str) -> None:
+        """RFC 7009 revocation of a refresh token kills its whole family."""
+        row = await self._one("SELECT family FROM refresh_tokens WHERE token_hash=?", (_h(token),))
+        if row is not None:
+            await self.db.execute(
+                "INSERT OR IGNORE INTO revoked_families VALUES (?,?)", (row[0], self._clock())
+            )
 
     # ── issued access tokens ─────────────────────────────────────────────
     async def record_jti(self, jti: str, client_id: str, vendor: str, expires_at: float) -> None:

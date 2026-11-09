@@ -91,6 +91,7 @@ class TestFailClosed:
             ({"auth__redirect_uris": ["http://vendor.example/cb"]}, "https"),
             ({"max_response_bytes": 10 * 1024 * 1024}, "max_response_bytes"),
             ({"source_cidrs": ["not-a-cidr"]}, "not-a-cidr"),
+            ({"auth__static_bearer": True}, "not implemented"),
         ],
     )
     def test_invalid_profile_refuses_to_load(self, tmp_path, changes, match):
