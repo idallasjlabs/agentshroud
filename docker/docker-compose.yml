@@ -51,6 +51,12 @@ services:
                                #   Security: no auth, no pipeline scan — tailnet-only (Tailscale ACL
                                #   is the access control). Re-evaluate if exposed beyond tailnet.
       - "127.0.0.1:8642:8642"  # Hermes OpenAI-compatible API TCP forwarder → agentshroud-hermes:8642
+      # Inbound MCP Edge (SCRUM-215/217): raw TCP forwarder → agentshroud-mcp-edge:8443.
+      #   The edge sits on agentshroud-dmz (internal: true, cannot publish ports), so
+      #   the gateway relays bytes (gateway/inbound_edge/routes.py start_edge_forwarder).
+      #   Only listening when AGENTSHROUD_INBOUND_EDGE=1. Public exposure is a separate,
+      #   explicit owner step: scripts/tailscale-serve.sh edge-funnel on --yes-expose-publicly
+      - "127.0.0.1:8443:8443"
     volumes:
       - ../agentshroud.yaml:/app/agentshroud.yaml:ro
       - agentshroud-ssh:/var/agentshroud-ssh:ro
@@ -95,6 +101,10 @@ services:
       - 1password_bot_secret_key
       - hermes_api_key
       - gateway_healthchecks_url
+      # Inbound MCP Edge: ES256 JWT signing key (EC P-256 PEM) — gateway ONLY,
+      # never mounted into the edge — and the edge→gateway service token.
+      - edge_signing_key
+      - edge_gateway_token
     environment:
       - PYTHONUNBUFFERED=1
       - LOG_LEVEL=INFO
@@ -195,6 +205,16 @@ services:
       - GATEWAY_CHAT_MODEL=${GATEWAY_CHAT_MODEL:-claude-haiku-4-5-20251001}
       # Router timezone for date/time injection in OpenAI-compat system messages
       - GATEWAY_TZ=${GATEWAY_TZ:-America/New_York}
+      # Inbound MCP Edge (SCRUM-212/215). Off by default: with "0" the gateway
+      # serves no /edge/v1 door (503 edge_disabled) and opens no :8443 forwarder.
+      # The public URL is the OAuth issuer and MUST equal the edge's EDGE_PUBLIC_URL
+      # (the edge refuses a gateway whose issuer differs). 10.254.113.0/24 (the
+      # DMZ) is deliberately NOT in PROXY_ALLOWED_NETWORKS above, so the edge can
+      # never use /v1, /forward or /telegram-api — only /edge/v1/rpc.
+      - AGENTSHROUD_INBOUND_EDGE=${AGENTSHROUD_INBOUND_EDGE:-0}
+      - AGENTSHROUD_EDGE_PUBLIC_URL=${AGENTSHROUD_EDGE_PUBLIC_URL:-https://marvin.tail240ea8.ts.net:8443}
+      - AGENTSHROUD_EDGE_UPSTREAM_HOST=agentshroud-mcp-edge
+      - AGENTSHROUD_EDGE_DELEGATE=${AGENTSHROUD_EDGE_DELEGATE:-0}
     group_add:
       - "991"   # docker socket GID — read-only service introspection for SOC
     security_opt:
@@ -255,10 +275,12 @@ services:
       - 1.1.1.1
       - 8.8.8.8
 
-    # Gateway on BOTH networks: internal (internet) + isolated (to bot)
+    # Gateway on BOTH networks: internal (internet) + isolated (to bot), plus the
+    # DMZ so the Inbound MCP Edge can reach /edge/v1/rpc and nothing else.
     networks:
       - agentshroud-internal
       - agentshroud-isolated
+      - agentshroud-dmz
 
   # ── Wazuh HIDS agent (standalone sidecar) ───────────────────────────────────
   # Wazuh manager — added 2026-09-18 so wazuh-agent has a real server to
@@ -970,6 +992,73 @@ services:
       start_period: 60s
       retries: 3
 
+  # ── Inbound MCP Edge (SCRUM-215, SCRUM-217) ──────────────────────────────────
+  # The one internet-facing container: MCP Streamable HTTP + OAuth 2.1 for hosted
+  # agents (Claude Duet, Poke, Gemini Spark, OpenAI Dots). A protocol terminator
+  # only — every decision is made by the gateway behind POST /edge/v1/rpc, so the
+  # edge holds no signing key, no policy and no state. Public path:
+  #   Funnel :8443 → host 127.0.0.1:8443 → gateway TCP forwarder → this :8443.
+  # Network: agentshroud-dmz ONLY (internal: true). Its sole peer there is the
+  # gateway, so it cannot reach Hermes, OpenClaw, docker-socket-proxy or the
+  # internet (gateway/tests/test_edge_network_isolation.py,
+  # scripts/smoke.d/test-edge-isolation.sh). With AGENTSHROUD_INBOUND_EDGE unset
+  # on the gateway it stays up but every call gets the gateway's 503.
+  # IEC 62443: FR5 (Restricted Data Flow) SL2, FR3 (System Integrity).
+  agentshroud-mcp-edge:
+    profiles: [edge, full]
+    build:
+      context: ..
+      dockerfile: docker/mcp-edge/Dockerfile
+      args:
+        AGENTSHROUD_GIT_SHA: ${AGENTSHROUD_GIT_SHA:-unknown}
+    image: agentshroud-mcp-edge:${AGENTSHROUD_VERSION:-latest}
+    container_name: agentshroud-mcp-edge
+    hostname: agentshroud-mcp-edge
+    restart: unless-stopped
+    depends_on:
+      gateway:
+        condition: service_healthy
+    networks:
+      - agentshroud-dmz
+    user: "10001:10001"
+    read_only: true
+    cap_drop:
+      - ALL
+    # Docker's default seccomp profile applies (not overridden, never unconfined).
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp:noexec,nosuid,nodev,size=16m
+    secrets:
+      - edge_gateway_token
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
+      - EDGE_PUBLIC_URL=${AGENTSHROUD_EDGE_PUBLIC_URL:-https://marvin.tail240ea8.ts.net:8443}
+      # Service name, not container_name: resolves on the DMZ in prod and dev alike.
+      - EDGE_GATEWAY_URL=http://gateway:8080
+      - EDGE_SERVICE_TOKEN_FILE=/run/secrets/edge_gateway_token
+      - EDGE_PORT=8443
+    mem_limit: 256m
+    memswap_limit: 256m
+    cpus: 0.5
+    pids_limit: 64
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8443/healthz', timeout=4).read()"
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+
 
 # ── Secrets ────────────────────────────────────────────────────────────────────
 # `asb up/rebuild/clean-rebuild` extracts secrets from the credential backend
@@ -1020,6 +1109,12 @@ secrets:
     file: ./secrets/gateway_healthchecks_url.txt
   openclaw_healthchecks_url:
     file: ./secrets/openclaw_healthchecks_url.txt
+  # Inbound MCP Edge. edge_signing_key is a multi-line EC P-256 PKCS#8 PEM;
+  # generate both with: docker/setup-secrets.sh edge-init
+  edge_signing_key:
+    file: ./secrets/edge_signing_key.txt
+  edge_gateway_token:
+    file: ./secrets/edge_gateway_token.txt
 
 # ── Networks (SCRUM-93 · IEC 62443 FR5 — Restricted Data Flow / network DMZ) ─────
 # THREE-TIER SEGMENTATION:
@@ -1029,9 +1124,9 @@ secrets:
 #                           through gateway:8181 (HTTP_PROXY) and inspected by the
 #                           76-module pipeline. This IS the DMZ that isolates the
 #                           bot containers from direct external network (FR5 SL2).
-#   agentshroud-dmz       → Optional reverse-proxy / edge-broker attachment point
-#                           (see below). Defined but not attached by default so it
-#                           can never alter the gateway's required membership.
+#   agentshroud-dmz       → Inbound MCP Edge segment (internal:true, NO internet).
+#                           Members: the gateway and agentshroud-mcp-edge, nobody
+#                           else (pinned by gateway/tests/test_edge_network_isolation.py).
 #
 # INVARIANT (do not break): the GATEWAY must remain on BOTH agentshroud-internal
 # AND agentshroud-isolated. It is the sole conduit between the internet-facing
@@ -1052,11 +1147,10 @@ networks:
         - subnet: 10.254.111.0/24
     driver_opts:
       com.docker.network.bridge.enable_icc: "true"
-  # DMZ tier (IEC 62443 FR5 SL2): dedicated, internet-free segment reserved for a
-  # future edge broker / reverse proxy that fronts the gateway. Declared here so
-  # the topology is explicit and version-controlled, but intentionally NOT wired
-  # to any service in this base file — attaching it is an opt-in override so it
-  # cannot regress the gateway's mandatory internal+isolated dual membership.
+  # DMZ tier (IEC 62443 FR5 SL2): dedicated, internet-free segment for the
+  # Inbound MCP Edge (SCRUM-217). Only the gateway and agentshroud-mcp-edge join
+  # it; the gateway keeps its mandatory internal+isolated membership as well.
+  # The subnet is NOT in the gateway's PROXY_ALLOWED_NETWORKS.
   agentshroud-dmz:
     driver: bridge
     internal: true

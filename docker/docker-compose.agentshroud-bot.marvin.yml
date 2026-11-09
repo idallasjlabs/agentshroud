@@ -4,8 +4,8 @@
 #
 # Usage: docker compose -f docker/docker-compose.yml -f docker/docker-compose.agentshroud-bot.marvin.yml -p agentshroud up -d
 #
-# Prod (ijefferson.admin):    gateway 8080,  bot 18789,  nets 10.254.110/111/112.0/24
-# This (agentshroud-bot):     gateway 9080,  bot 18790,  nets 172.20/172.21/172.22.0.0/16
+# Prod (ijefferson.admin):    gateway 8080,  bot 18789,  edge 8443,  nets 10.254.110/111/112/113.0/24
+# This (agentshroud-bot):     gateway 9080,  bot 18790,  edge 9443,  nets 172.20/172.21/172.22/172.23.0.0/24
 #
 # One-time host setup (required before first run):
 #   sudo chmod 755 /Users/agentshroud-bot
@@ -15,8 +15,18 @@ services:
     container_name: agentshroud-dev-gateway
     ports: !override
       - "127.0.0.1:9080:8080"
+      # Inbound MCP Edge forwarder; 9443 because prod publishes 127.0.0.1:8443
+      # on this same host (same Lima port-forward race as voice-gateway's 8766).
+      - "127.0.0.1:9443:8443"
     environment:
+      # 172.23.0.0/24 (dev agentshroud-dmz) deliberately absent — see base file.
       - PROXY_ALLOWED_NETWORKS=172.20.0.0/16,172.21.0.0/16,172.22.0.0/16
+      - AGENTSHROUD_EDGE_UPSTREAM_HOST=agentshroud-dev-mcp-edge
+      # Dev's OAuth issuer must differ from prod's (same tailnet node). Funnel
+      # serves only 443/8443/10000 and prod holds 443 and 8443, so dev's edge
+      # is published on :10000 (scripts/tailscale-serve.sh edge-funnel with
+      # EDGE_FUNNEL_PORT=10000 EDGE_LOCAL_PORT=9443). Must match the edge below.
+      - AGENTSHROUD_EDGE_PUBLIC_URL=${AGENTSHROUD_EDGE_PUBLIC_URL:-https://marvin.tail240ea8.ts.net:10000}
       - AGENTSHROUD_INSTANCE_LABEL=dev-marvin
       # This host renames the gateway container (container_name above), so the
       # daily CVE scan must be told where to look — otherwise it inspects
@@ -104,13 +114,19 @@ services:
       # and die with 1008 invalid-token (confirmed with prod 2026-08-29).
       - "127.0.0.1:8766:8765"
 
+  agentshroud-mcp-edge:
+    container_name: agentshroud-dev-mcp-edge
+    hostname: agentshroud-dev-mcp-edge
+    environment:
+      - EDGE_PUBLIC_URL=${AGENTSHROUD_EDGE_PUBLIC_URL:-https://marvin.tail240ea8.ts.net:10000}
+
 secrets:
   telegram_bot_token:
     file: ./secrets/telegram_bot_token_marvin.txt
   hermes_telegram_bot_token:
     file: ./secrets/hermes_telegram_bot_token_marvin.txt
 
-# All three networks offset from prod (10.254.110-112.0/24) to prevent pool overlap on the same host.
+# All four networks offset from prod (10.254.110-113.0/24) to prevent pool overlap on the same host.
 networks:
   agentshroud-internal:
     ipam:
@@ -124,3 +140,7 @@ networks:
     ipam:
       config: !override
         - subnet: 172.22.0.0/24
+  agentshroud-dmz:
+    ipam:
+      config: !override
+        - subnet: 172.23.0.0/24
