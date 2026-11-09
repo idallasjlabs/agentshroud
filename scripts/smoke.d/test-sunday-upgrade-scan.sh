@@ -1040,6 +1040,57 @@ check "T28: stack start and rollback use the same rule" \
 check "T29: self-check timeout defaults to 300s" \
     "$(grep -q 'tmo="\${SUNDAY_SELFCHECK_TIMEOUT:-300}"' "$APPLY_SH" && echo true || echo false)"
 
+# ── T30: prod's "before" pins are what is RUNNING (2026-11-09) ───────────────
+# Prod fast-forwards to main before applying, so the merge-base is HEAD and
+# "before" equalled "after": the 2026.10.6 -> 2026.11.1 promotion of dev's
+# 11-08 PASS would have exited 25 NOTHING_UPGRADED (2026.11.2 was out) and never
+# written prod-promoted. Each running image carries the commit it was built
+# from; versions.env at that commit is what prod actually runs.
+G30="$TMPROOT/t30"; mkdir -p "$G30/docker" && git -C "$G30" init -q -b main . 2>/dev/null
+printf 'OPENCLAW_VERSION=2026.10.6\nHERMES_VERSION=0.22.5\nHERMES_IMAGE=nousresearch/hermes-agent@sha256:old\n' > "$G30/docker/versions.env"
+git -C "$G30" add -A; git -C "$G30" -c user.email=t@t -c user.name=t commit -q -m old
+rev30_old="$(git -C "$G30" rev-parse HEAD)"
+printf 'OPENCLAW_VERSION=2026.11.1\nHERMES_VERSION=0.23.0\nHERMES_IMAGE=nousresearch/hermes-agent@sha256:new\n' > "$G30/docker/versions.env"
+git -C "$G30" -c user.email=t@t -c user.name=t commit -q -am new
+rev30_new="$(git -C "$G30" rev-parse HEAD)"
+# shellcheck disable=SC2016  # expands in the child shell, by design
+live30() { env -i PATH="/usr/bin:/bin:/opt/homebrew/bin" "$BASH_BIN" -c '. "$1"; shift; sunday_live_pins "$@"' _ "$LIB" "$@" 2>/dev/null; }
+after30="$(sort < <(grep -E '^(OPENCLAW_VERSION|HERMES_VERSION|HERMES_IMAGE)=' "$G30/docker/versions.env"))"
+set +e
+before30="$(live30 "$G30" "$rev30_old" "$(printf '%.10s' "$rev30_old")")"; rc30a=$?
+set -e
+check "T30: live pins come from versions.env at each running image's revision (short sha too)" \
+    "$([ "$rc30a" -eq 0 ] && printf '%s\n' "$before30" | grep -qx 'OPENCLAW_VERSION=2026.10.6' && printf '%s\n' "$before30" | grep -qx 'HERMES_VERSION=0.22.5' && echo true || echo false)" "rc=$rc30a got=$before30"
+check "T30: 2026.10.6 running, 2026.11.1 checked out (2026.11.2 upstream) -> before != after, so the gate sees the upgrade" \
+    "$([ -n "$before30" ] && [ "$before30" != "$after30" ] && echo true || echo false)"
+mixed30="$(live30 "$G30" "$rev30_new" "$rev30_old")"
+check "T30: OpenClaw and Hermes pins each come from their own container's revision" \
+    "$(printf '%s\n' "$mixed30" | grep -qx 'OPENCLAW_VERSION=2026.11.1' && printf '%s\n' "$mixed30" | grep -qx 'HERMES_VERSION=0.22.5' && echo true || echo false)" "got=$mixed30"
+set +e
+live30 "$G30" deadbeefdeadbeef "$rev30_old" >/dev/null; rc30b=$?
+live30 "$G30" "" "$rev30_old" >/dev/null; rc30c=$?
+set -e
+check "T30: a revision git does not know (or no label) -> refuses, caller keeps the merge-base logic" \
+    "$([ "$rc30b" -ne 0 ] && [ "$rc30c" -ne 0 ] && echo true || echo false)" "rc=$rc30b/$rc30c"
+check "T30: apply takes prod's before-pins from the live containers" \
+    "$(grep -q 'sunday_live_pins "\$REPO"' "$APPLY_SH" && grep -q 'ENVIRONMENT" = "prod"' "$APPLY_SH" && echo true || echo false)"
+check "T30: a prod run that changed no live pin is never marked promoted" \
+    "$(grep -E 'ENVIRONMENT" = "prod" \] && \[ "\$PHASE" = "all" \].*UPGRADE_HAPPENED:-0\}" = 1' "$APPLY_SH" >/dev/null && echo true || echo false)"
+
+# ── T31: Trivy's DB cache defaults to a Colima-mounted path ─────────────────
+# ~/.cache/trivy is not mounted into the Colima VM, so the container DB refresh
+# wrote into the VM and host trivy timed out pulling the DB itself (prod,
+# 2026-10-26 attempt 1). ~/.agentshroud is mounted.
+# shellcheck disable=SC2016
+tc31() { env -i PATH="/usr/bin:/bin" HOME="$1" "$BASH_BIN" -c '. "$1"; sunday_default_trivy_cache' _ "$LIB"; }
+H31="$TMPROOT/t31"; mkdir -p "$H31/a/.agentshroud" "$H31/b"
+check "T31: ~/.agentshroud exists -> cache under it" \
+    "$([ "$(tc31 "$H31/a")" = "$H31/a/.agentshroud/trivy-cache" ] && echo true || echo false)" "got=$(tc31 "$H31/a")"
+check "T31: no ~/.agentshroud -> ~/.cache/trivy" \
+    "$([ "$(tc31 "$H31/b")" = "$H31/b/.cache/trivy" ] && echo true || echo false)" "got=$(tc31 "$H31/b")"
+check "T31: the refresh uses that default and SUNDAY_TRIVY_CACHE still overrides" \
+    "$(grep -q 'cache="\${SUNDAY_TRIVY_CACHE:-\$(sunday_default_trivy_cache)}"' "$LIB" && echo true || echo false)"
+
 # ── Summary ──────────────────────────────────────────────────────────────────
 echo ""
 total=$(( pass + fail ))

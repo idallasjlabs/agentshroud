@@ -50,6 +50,10 @@
 #                                        - prod's gate: newest dev PASS within
 #                                          SUNDAY_HANDOFF_MAX_AGE_DAYS (6) whose
 #                                          pins equal prod's. See its comment.
+#   sunday_live_pins <repo> <openclaw_rev> <hermes_rev>
+#                                        - the pins the running stack was built
+#                                          from (prod's honest "before").
+#   sunday_default_trivy_cache          - Trivy DB cache on a Colima mount.
 #   sunday_catchup_pending / sunday_mark_promoted /
 #   sunday_move_aside_untracked_collisions / sunday_write_launcher_status
 #                                        - launcher helpers, see each comment.
@@ -108,8 +112,20 @@ age_h = (datetime.datetime.now(datetime.timezone.utc) - when).total_seconds() / 
 sys.exit(0 if age_h <= float(sys.argv[2]) else 1)
 PYEOF
 }
+# sunday_default_trivy_cache — where the Trivy DB lives when SUNDAY_TRIVY_CACHE
+#   is unset. The refresh runs trivy in a container with this path bind-mounted,
+#   and Colima mounts only ~/Development and ~/.agentshroud: on prod
+#   (2026-10-26 attempt 1) ~/.cache/trivy existed only inside the VM, the host
+#   trivy never saw the refreshed DB and timed out downloading it itself.
+sunday_default_trivy_cache() {
+  if [ -d "$HOME/.agentshroud" ]; then
+    printf '%s\n' "$HOME/.agentshroud/trivy-cache"
+  else
+    printf '%s\n' "$HOME/.cache/trivy"
+  fi
+}
 sunday_refresh_trivy_db() {
-  local cache="${SUNDAY_TRIVY_CACHE:-$HOME/.cache/trivy}" ver img flag errf
+  local cache="${SUNDAY_TRIVY_CACHE:-$(sunday_default_trivy_cache)}" ver img flag errf
   TRIVY_DB_ARGS=()
   command -v docker >/dev/null 2>&1 || return 1
   ver="$("${TRIVY_CMD[@]}" --version 2>/dev/null | sed -n 's/^Version: *//p' | head -1)"
@@ -752,4 +768,24 @@ sunday_hermes_container() {
   name="$(docker ps --filter 'label=com.agentshroud.role=hermes' --format '{{.Names}}' 2>/dev/null | head -1)"
   [ -n "$name" ] || name="$(docker ps --format '{{.Names}}' 2>/dev/null | grep -E '^agentshroud-(dev-)?hermes' | head -1)"
   printf '%s' "$name"
+}
+
+# sunday_live_pins <repo> <openclaw_rev> <hermes_rev>
+#   Prints, sorted, the OPENCLAW_VERSION line from docker/versions.env at the
+#   commit the running OpenClaw image was built from, and the HERMES_VERSION /
+#   HERMES_IMAGE lines at the running Hermes image's commit (each image's
+#   org.opencontainers.image.revision label). That is what prod RUNS, which is
+#   the honest "before" for a promotion: prod fast-forwards to main first, so
+#   main's merge-base is HEAD and comparing against it found nothing to upgrade
+#   (2026-11-09, dev's 11-08 PASS). Returns 1 when either revision is empty or
+#   unknown to git, or a pin is missing there, so the caller keeps its own logic.
+sunday_live_pins() {
+  local repo="$1" oc_rev="$2" h_rev="$3" oc h
+  [ -n "$oc_rev" ] && [ -n "$h_rev" ] || return 1
+  git -C "$repo" cat-file -e "${oc_rev}^{commit}" 2>/dev/null || return 1
+  git -C "$repo" cat-file -e "${h_rev}^{commit}" 2>/dev/null || return 1
+  oc="$(git -C "$repo" show "${oc_rev}:docker/versions.env" 2>/dev/null | grep -E '^OPENCLAW_VERSION=' || true)"
+  h="$(git -C "$repo" show "${h_rev}:docker/versions.env" 2>/dev/null | grep -E '^(HERMES_VERSION|HERMES_IMAGE)=' || true)"
+  [ -n "$oc" ] && [ -n "$h" ] || return 1
+  printf '%s\n%s\n' "$oc" "$h" | sort
 }

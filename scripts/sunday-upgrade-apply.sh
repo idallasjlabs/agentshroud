@@ -1592,6 +1592,27 @@ if [ -n "$_pins_base_rev" ] && [ "$_pins_base_rev" != "${HEAD_AT_START:-}" ]; th
     log "no-op gate: 'before' pins taken from merge-base $(printf '%.12s' "$_pins_base_rev") (main before this run's branch), not from the already-committed checkout"
   fi
 fi
+# Prod promotes what dev already merged: its launcher fast-forwards to main
+# first, so the merge-base above IS HEAD and "before" equalled "after". The
+# 2026-11-09 promotion of dev's 11-08 PASS (OpenClaw 2026.10.6 -> 2026.11.1,
+# with 2026.11.2 already out) would have exited 25 NOTHING_UPGRADED and never
+# written prod-promoted. On prod, "before" is what is RUNNING: versions.env at
+# the commit each live image was built from (its revision label).
+if [ "$ENVIRONMENT" = "prod" ]; then
+  _oc_live=""; _h_live=""
+  for _c in $CONTAINERS; do
+    case "$_c" in
+      *openclaw*) _oc_live="$(docker inspect -f '{{index .Config.Labels "org.opencontainers.image.revision"}}' "$_c" 2>/dev/null || true)" ;;
+      *hermes*)   _h_live="$(docker inspect -f '{{index .Config.Labels "org.opencontainers.image.revision"}}' "$_c" 2>/dev/null || true)" ;;
+    esac
+  done
+  if _pins_live="$(sunday_live_pins "$REPO" "$_oc_live" "$_h_live")"; then
+    PINS_BEFORE="$_pins_live"
+    log "no-op gate: 'before' pins taken from the RUNNING images (openclaw $(printf '%.12s' "$_oc_live"), hermes $(printf '%.12s' "$_h_live")): $(printf '%s' "$_pins_live" | tr '\n' ' ')"
+  else
+    warn "no-op gate: could not resolve the running images' pins (openclaw rev '${_oc_live}', hermes rev '${_h_live}') — keeping the checkout/merge-base 'before' pins"
+  fi
+fi
 
 _should_run preflight && phase_preflight
 _should_run discover  && phase_discover
@@ -1629,7 +1650,10 @@ write_handoff PASS
 # Prod: record that THIS dev handoff is now live and verified, so the daily
 # catch-up (sunday-upgrade.sh) stops re-running it. Only after a full run, i.e.
 # after verify passed — never on intent.
-if [ "$ENVIRONMENT" = "prod" ] && [ "$PHASE" = "all" ] && _mutating && [ -n "${PROMOTING_HANDOFF:-}" ]; then
+# Only a run that actually moved a live pin promoted anything; an honest no-op
+# on prod must not claim the handoff (the catch-up then retries, bounded by the
+# handoff window).
+if [ "$ENVIRONMENT" = "prod" ] && [ "$PHASE" = "all" ] && [ "${UPGRADE_HAPPENED:-0}" = 1 ] && _mutating && [ -n "${PROMOTING_HANDOFF:-}" ]; then
   if sunday_mark_promoted "$HANDOFF_DIR" "$PROMOTING_HANDOFF" "$TODAY"; then
     log "promoted: dev handoff ${PROMOTING_HANDOFF} verified live on prod -> ${HANDOFF_DIR}/prod-promoted-${PROMOTING_HANDOFF}.json"
   else
