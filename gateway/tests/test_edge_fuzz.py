@@ -235,3 +235,30 @@ async def test_gateway_rpc_parser_rejects_junk_without_500(body, monkeypatch):
         r = await c.post("/edge/v1/rpc", content=body, headers={"X-Edge-Service-Token": "t" * 40})
     # Junk is a 4xx; a well-formed call to a real method may succeed. Never a 500.
     assert r.status_code in (200, 400, 404, 413), (r.status_code, body[:80])
+
+
+async def test_edge_guard_allowlist_holds_even_if_inner_app_serves_everything():
+    """The route allowlist is enforced by EdgeGuard itself, not inherited from the SDK router."""
+    from gateway.inbound_edge.edge_app import EdgeGuard
+
+    async def permissive(scope, receive, send):
+        await send({"type": "http.response.start", "status": 200, "headers": []})
+        await send({"type": "http.response.body", "body": b"inner"})
+
+    guard = EdgeGuard(permissive)
+    async with httpx.AsyncClient(
+        transport=httpx.ASGITransport(app=guard), base_url="http://e"
+    ) as c:
+        for path in (
+            "/soc/v1/health",
+            "/edge/v1/rpc",
+            "/v1/chat/completions",
+            "/forward",
+            "/hermes-dashboard/",
+            "/",
+            "/mcp/../soc",
+            "/.well-known/other",
+        ):
+            assert (await c.get(path)).status_code == 404, path
+        for path in ("/mcp", "/healthz", "/.well-known/oauth-authorization-server"):
+            assert (await c.get(path)).status_code == 200, path
