@@ -9,6 +9,12 @@
 #   sudo ./scripts/tailscale-serve.sh start    # Enable the 5 core AgentShroud serves
 #   sudo ./scripts/tailscale-serve.sh stop     # Disable the 5 core AgentShroud serves
 #   sudo ./scripts/tailscale-serve.sh status   # Show current serve config
+#   ./scripts/tailscale-serve.sh edge-funnel [plan]   # Inbound MCP Edge: print what WOULD be
+#                                               # exposed publicly (default; no sudo, no
+#                                               # tailscale calls, changes nothing)
+#   sudo ./scripts/tailscale-serve.sh edge-funnel on --yes-expose-publicly
+#   sudo ./scripts/tailscale-serve.sh edge-funnel off     # Funnel off on the edge port only
+#   sudo ./scripts/tailscale-serve.sh edge-funnel status  # read-only
 #   sudo ./scripts/tailscale-serve.sh persist  # One-shot: fix the dual-tailscaled-daemon
 #                                               # conflict (standardize on the Homebrew
 #                                               # LaunchDaemon so it survives reboots),
@@ -65,10 +71,182 @@
 
 set -euo pipefail
 
+# ── Inbound MCP Edge Funnel (SCRUM-215/217) ──────────────────────────────────
+# PUBLIC INTERNET exposure of the agentshroud-mcp-edge container for hosted
+# agents (Claude Duet, Poke, Gemini Spark, OpenAI Dots). Kept apart from
+# start/stop: `start` never enables it and `stop` never disables it, and
+# `edge-funnel off` never touches :443 (voice/Hermes Funnels).
+# Path: Funnel :EDGE_FUNNEL_PORT → http://127.0.0.1:EDGE_LOCAL_PORT (the
+# gateway's published TCP forwarder) → agentshroud-mcp-edge:8443.
+# Prod: 8443 → 8443. Dev (agentshroud-bot): EDGE_FUNNEL_PORT=10000
+# EDGE_LOCAL_PORT=9443 — Funnel serves only 443/8443/10000 and prod owns 443
+# and 8443 on this node. The edge rejects every path not listed below with a
+# 404 (gateway/inbound_edge/edge_app.py _EXACT_PATHS); Funnel is additionally
+# limited to the same paths so nothing else is even routed.
+EDGE_FUNNEL_PORT="${EDGE_FUNNEL_PORT:-8443}"
+EDGE_LOCAL_PORT="${EDGE_LOCAL_PORT:-8443}"
+EDGE_PATHS=(/mcp /.well-known/ /authorize /token /register /revoke /oauth/consent /healthz)
+
+edge_validate_ports() {
+    case "$EDGE_FUNNEL_PORT" in
+        8443|10000) ;;
+        *) echo "ERROR: EDGE_FUNNEL_PORT must be 8443 or 10000 (got '${EDGE_FUNNEL_PORT}'); 443 is reserved for the existing voice/Hermes Funnels." >&2
+           exit 1 ;;
+    esac
+    case "$EDGE_LOCAL_PORT" in
+        ''|*[!0-9]*) echo "ERROR: EDGE_LOCAL_PORT must be a port number (got '${EDGE_LOCAL_PORT}')." >&2; exit 1 ;;
+    esac
+}
+
+edge_funnel_plan() {
+    echo "==> Inbound MCP Edge Funnel — PLAN ONLY (nothing is changed)"
+    echo ""
+    echo "  Funnel port ${EDGE_FUNNEL_PORT} → http://127.0.0.1:${EDGE_LOCAL_PORT} (gateway forwarder → agentshroud-mcp-edge:8443)"
+    echo "  Paths that would be exposed:"
+    local p
+    for p in "${EDGE_PATHS[@]}"; do
+        case "$p" in
+            */) echo "    https://<host>:${EDGE_FUNNEL_PORT}${p}*" ;;
+            *)  echo "    https://<host>:${EDGE_FUNNEL_PORT}${p}" ;;
+        esac
+    done
+    echo ""
+    echo "  !! WARNING: this is PUBLIC INTERNET exposure. Anyone on the internet can"
+    echo "  !! reach these paths; the edge's OAuth 2.1 + owner enrollment code and the"
+    echo "  !! gateway's policy pipeline are the only gates."
+    echo ""
+    echo "  Prerequisites (verify every one before 'on'):"
+    echo "    1. Gateway runs with AGENTSHROUD_INBOUND_EDGE=1 and an https"
+    echo "       AGENTSHROUD_EDGE_PUBLIC_URL equal to https://<host>:${EDGE_FUNNEL_PORT}"
+    echo "    2. config/inbound-edge/descriptors.manifest.json is signed"
+    echo "       (descriptors.manifest.sig + descriptors.pub.pem present and verifying)"
+    echo "    3. At least one vendor in config/inbound-edge/vendors/*.yaml has enabled: true"
+    echo "    4. Secrets edge_signing_key and edge_gateway_token are provisioned"
+    echo "       (docker/setup-secrets.sh edge-init)"
+    echo ""
+    echo "  To apply: sudo $0 edge-funnel on --yes-expose-publicly"
+}
+
+edge_require_root() {
+    if [ "$(id -u)" -ne 0 ]; then
+        echo "ERROR: this edge-funnel action changes tailscale state and must be run with sudo." >&2
+        exit 1
+    fi
+}
+
+# Prints the handler paths served on <port>, one per line, prefixed with
+# "funnel " when Funnel is allowed for that host:port. Read-only.
+edge_port_handlers() {
+    local port="$1"
+    { tailscale serve status --json 2>/dev/null || echo '{}'; } | python3 -c '
+import json, sys
+port = sys.argv[1]
+cfg = json.load(sys.stdin) or {}
+funnel = {k for k, v in (cfg.get("AllowFunnel") or {}).items() if v}
+for hostport, web in (cfg.get("Web") or {}).items():
+    if hostport.rsplit(":", 1)[-1] != port:
+        continue
+    tag = "funnel " if hostport in funnel else ""
+    for path in sorted((web or {}).get("Handlers") or {}):
+        print(tag + path)
+' "$port"  # python3 OK here: runs on host, not in conda env
+}
+
+edge_funnel_on() {
+    local confirmed=0 arg
+    for arg in "$@"; do
+        [ "$arg" = "--yes-expose-publicly" ] && confirmed=1
+    done
+    if [ "$confirmed" -ne 1 ]; then
+        echo "REFUSED: 'edge-funnel on' exposes the Inbound MCP Edge to the PUBLIC INTERNET." >&2
+        echo "Review the plan, then re-run with --yes-expose-publicly:" >&2
+        echo "" >&2
+        edge_funnel_plan >&2
+        exit 2
+    fi
+    edge_require_root
+    echo "==> Enabling PUBLIC Funnel :${EDGE_FUNNEL_PORT} for the Inbound MCP Edge..."
+    local before443 after443 served p missing=0
+    before443="$(edge_port_handlers 443)"
+    for p in "${EDGE_PATHS[@]}"; do
+        echo "  → Funnel :${EDGE_FUNNEL_PORT}${p} → http://127.0.0.1:${EDGE_LOCAL_PORT}${p}"
+        tailscale funnel --bg --https="${EDGE_FUNNEL_PORT}" --set-path="${p}" "http://127.0.0.1:${EDGE_LOCAL_PORT}${p}"
+    done
+
+    # Prove the outcome, not the steps: every path must now be a Funnel handler
+    # on the edge port, and :443 must be exactly as it was.
+    served="$(edge_port_handlers "${EDGE_FUNNEL_PORT}")"
+    for p in "${EDGE_PATHS[@]}"; do
+        if ! printf '%s\n' "$served" | grep -qxF "funnel ${p}"; then
+            echo "  ✗ not served via Funnel: :${EDGE_FUNNEL_PORT}${p}" >&2
+            missing=1
+        fi
+    done
+    after443="$(edge_port_handlers 443)"
+    if [ "$before443" != "$after443" ]; then
+        echo "  ✗ :443 handlers changed while enabling the edge Funnel — investigate now." >&2
+        missing=1
+    fi
+    if [ "$missing" -ne 0 ]; then
+        echo "FAILED: edge Funnel state does not match the plan." >&2
+        exit 1
+    fi
+    echo "==> Edge Funnel ON: ${#EDGE_PATHS[@]} paths public on :${EDGE_FUNNEL_PORT}; :443 unchanged."
+}
+
+edge_funnel_off() {
+    edge_require_root
+    echo "==> Disabling Funnel :${EDGE_FUNNEL_PORT} (Inbound MCP Edge); :443 is not touched..."
+    local before443 after443 remaining
+    before443="$(edge_port_handlers 443)"
+    tailscale funnel --https="${EDGE_FUNNEL_PORT}" off
+    remaining="$(edge_port_handlers "${EDGE_FUNNEL_PORT}" | grep '^funnel ' || true)"
+    after443="$(edge_port_handlers 443)"
+    if [ -n "$remaining" ]; then
+        echo "FAILED: still public on :${EDGE_FUNNEL_PORT}:" >&2
+        echo "$remaining" >&2
+        exit 1
+    fi
+    if [ "$before443" != "$after443" ]; then
+        echo "FAILED: :443 handlers changed while disabling the edge Funnel — investigate now." >&2
+        exit 1
+    fi
+    echo "==> Edge Funnel OFF: nothing public on :${EDGE_FUNNEL_PORT}; :443 unchanged."
+}
+
+edge_funnel_status() {
+    echo "==> Funnel status (read-only):"
+    tailscale funnel status 2>/dev/null || echo "  No active Funnel."
+    echo ""
+    echo "==> Handlers on edge port :${EDGE_FUNNEL_PORT}:"
+    edge_port_handlers "${EDGE_FUNNEL_PORT}" | sed 's/^/  /'
+}
+
+# edge-funnel is dispatched before the global sudo gate: `plan` (the default)
+# is pure output and must be runnable without privileges.
+if [ "${1:-}" = "edge-funnel" ]; then
+    shift
+    edge_validate_ports
+    action="${1:-plan}"
+    if [ $# -gt 0 ]; then shift; fi
+    case "$action" in
+        plan)   edge_funnel_plan ;;
+        on)     edge_funnel_on "$@" ;;
+        off)    edge_funnel_off ;;
+        status) edge_funnel_status ;;
+        *)
+            echo "Usage: $0 edge-funnel {plan|on --yes-expose-publicly|off|status}" >&2
+            exit 1
+            ;;
+    esac
+    exit 0
+fi
+
 # Require root/sudo for tailscale serve commands
 if [ "$(id -u)" -ne 0 ]; then
     echo "ERROR: This script must be run with sudo."
     echo "Usage: sudo $0 {start|stop|status|persist}"
+    echo "       $0 edge-funnel {plan|on --yes-expose-publicly|off|status}"
     exit 1
 fi
 
