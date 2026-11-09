@@ -128,6 +128,21 @@ class SCLClient:
     def run_scan(self, scanner: str) -> Dict:
         return self.post(f"/scan/{scanner}", {"confirm": True})
 
+    # Inbound MCP Edge (SCRUM-216)
+    def edge_status(self) -> Dict:
+        return self.get("/edge/status")
+
+    def edge_kill(self, scope: str, value: str, reason: str, confirm: bool = False) -> Dict:
+        return self.post(
+            "/edge/kill", {"scope": scope, "value": value, "reason": reason, "confirm": confirm}
+        )
+
+    def edge_unkill(self, scope: str, value: str, confirm: bool = False) -> Dict:
+        return self.post("/edge/unkill", {"scope": scope, "value": value, "confirm": confirm})
+
+    def edge_enroll(self, vendor: str, ttl_s: int = 600, confirm: bool = False) -> Dict:
+        return self.post("/edge/enroll", {"vendor": vendor, "ttl_s": ttl_s, "confirm": confirm})
+
 
 def client_from_env(base_url: Optional[str] = None, token: Optional[str] = None) -> SCLClient:
     """Build SCLClient from args or environment variables."""

@@ -55,6 +55,8 @@
     <a class="nav-item" data-tab="scanners">Scanners</a>
     <a class="nav-item" data-tab="scorecard">Scorecard</a>
     <a class="nav-item" data-tab="agent-cves">CVE Intelligence</a>
+    <a class="nav-item" data-tab="agents">Agents</a>
+    <a class="nav-item" data-tab="edge">Inbound Edge</a>
     <div class="nav-section">Manage</div>
     <a class="nav-item" data-tab="services">Services</a>
     <a class="nav-item" data-tab="contributors">Contributors</a>
@@ -448,6 +450,74 @@
             </thead>
             <tbody id="approvals-tbody">
               <tr><td colspan="7" style="color:var(--text-muted);text-align:center;padding:1rem">loading...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Agents (SCRUM-216) ───────────────────────────────── -->
+    <div id="tab-agents" class="tab-pane" style="display:none">
+      <h2>Agents</h2>
+      <div class="toolbar">
+        <select id="agents-mode" class="filter-select">
+          <option value="hosted">Hosted only</option>
+          <option value="hosted_local">Hosted + Local</option>
+          <option value="local">Local only</option>
+        </select>
+        <span id="agents-derived" style="font-size:11px;color:var(--text-muted)"></span>
+        <button class="btn btn-sm" onclick="window._reloadAgents()">Refresh</button>
+      </div>
+      <div class="panel">
+        <div class="panel-header">
+          Proxied &amp; Watched Agents
+          <span id="agents-count" class="badge badge-info">0</span>
+        </div>
+        <div class="panel-body" style="padding:0">
+          <table class="data-table">
+            <thead>
+              <tr><th>Agent</th><th>Class</th><th>Mechanism</th><th>Status</th><th>Mode</th><th>Calls</th><th>Denials</th><th>DLP / Canary</th><th>Lockdown</th><th>Detail</th></tr>
+            </thead>
+            <tbody id="agents-tbody">
+              <tr><td colspan="10" style="color:var(--text-muted);text-align:center;padding:1rem">loading...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Inbound Edge (SCRUM-216) ─────────────────────────── -->
+    <div id="tab-edge" class="tab-pane" style="display:none">
+      <h2>Inbound Edge</h2>
+      <div class="toolbar">
+        <span id="edge-header" style="font-size:12px;color:var(--text-muted)">loading...</span>
+        <button class="btn btn-sm" onclick="window._reloadEdge()">Refresh</button>
+      </div>
+      <div id="edge-enroll-result"></div>
+      <div id="edge-vendors" class="kpi-strip" style="margin-bottom:1.5rem"></div>
+      <div class="panel">
+        <div class="panel-header">
+          Recent Calls <span style="font-size:11px;color:var(--text-muted)">(live)</span>
+          <span id="edge-recent-count" class="badge badge-info">0</span>
+        </div>
+        <div class="panel-body" style="padding:0">
+          <table class="data-table">
+            <thead>
+              <tr><th>Time</th><th>Vendor</th><th>Client</th><th>Tool</th><th>Outcome</th><th>Reason</th><th>Latency</th><th>Actions</th></tr>
+            </thead>
+            <tbody id="edge-recent-tbody">
+              <tr><td colspan="8" style="color:var(--text-muted);text-align:center;padding:1rem">loading...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-header">Kills</div>
+        <div class="panel-body" style="padding:0">
+          <table class="data-table">
+            <thead><tr><th>Scope</th><th>Value</th><th>Reason</th><th>Since</th><th>Actions</th></tr></thead>
+            <tbody id="edge-kills-tbody">
+              <tr><td colspan="5" style="color:var(--text-muted);text-align:center;padding:1rem">loading...</td></tr>
             </tbody>
           </table>
         </div>

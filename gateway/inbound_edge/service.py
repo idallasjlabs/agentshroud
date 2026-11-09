@@ -40,7 +40,7 @@ from gateway.inbound_edge.descriptors import verify_shipped_descriptors
 from gateway.inbound_edge.edge_jwt import TokenService
 from gateway.inbound_edge.facades import HermesDelegate, LabSearch, PkeStatus
 from gateway.inbound_edge.oauth_service import EdgeOAuthService, derive_seal_key
-from gateway.inbound_edge.profiles import load_profiles
+from gateway.inbound_edge.profiles import VendorProfile, load_profiles
 from gateway.inbound_edge.store import EdgeStore
 from gateway.ingest_api.event_bus import make_event
 from gateway.security.instruction_envelope import EnvelopeSigner
@@ -61,6 +61,11 @@ class EdgeService:
     service_token: str
     issuer: str
     resource: str
+
+    @property
+    def profiles(self) -> Dict[str, VendorProfile]:
+        """The validated vendor profiles the pipeline enforces (read by the Command Center)."""
+        return self.pipeline.d.profiles
 
     def service_token_ok(self, presented: Optional[str]) -> bool:
         return bool(presented) and hmac.compare_digest(

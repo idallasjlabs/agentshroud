@@ -327,6 +327,10 @@ class EdgeStore:
         )
         return row is not None
 
+    async def has_jti(self, jti: str) -> bool:
+        """Whether ``jti`` was ever issued (and not yet purged) — guards a typo'd kill."""
+        return await self._one("SELECT 1 FROM issued_jtis WHERE jti=?", (jti,)) is not None
+
     # ── kill / revocation ────────────────────────────────────────────────
     async def kill(self, scope: str, value: str, reason: str) -> None:
         if scope not in KILL_SCOPES:

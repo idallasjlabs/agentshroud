@@ -18,11 +18,12 @@ import hashlib
 import json
 import logging
 import os
+import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Literal, Optional
 
 from fastapi import APIRouter, Depends, HTTPException, Query, Request, WebSocket, status
 from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
@@ -1989,6 +1990,424 @@ async def list_bots(caller: SCLCaller = Depends(get_caller)) -> List[Dict]:
         }
         for bid, b in bots.items()
     ]
+
+
+# ---------------------------------------------------------------------------
+# Agents registry + Inbound MCP Edge (SCRUM-216, SCRUM-210)
+# ---------------------------------------------------------------------------
+
+# Hosted agents with no Inbound MCP Edge path. Their rows state what governs them
+# (nothing yet) and are never reported as "ok".
+_HOST_EGRESS_WATCH_AGENTS = (
+    ("perplexity-personal-computer", "Perplexity Personal Computer"),
+    ("meta-muse", "Meta Muse"),
+    ("gemini-spark-desktop", "Gemini Spark (desktop app)"),
+    ("openai-dots-desktop", "OpenAI Dots (desktop app)"),
+)
+_NO_HOOK_AGENTS = (
+    ("grok-bot", "Grok"),
+    ("instinct", "Instinct"),
+    ("manus-cue", "Manus Cue"),
+)
+_LOCKDOWN_ORDER = ("normal", "alert", "escalated", "suspended")
+_HEALTH_TIMEOUT_S = 5.0
+
+
+def _edge_service():
+    return getattr(_app_state(), "inbound_edge", None)
+
+
+def _local_agent_health() -> Dict[str, str]:
+    """Container name → health, or its status when not running.
+
+    Empty when the container engine cannot be read; callers then say "unknown".
+    """
+    try:
+        from .services import ServiceManager
+
+        services = ServiceManager().list_services()
+    except Exception as exc:
+        logger.debug("agents: service health unavailable: %s", exc)
+        return {}
+    out: Dict[str, str] = {}
+    for s in services:
+        st, health = s.status.value, s.health.value
+        out[s.name] = health if st == "running" and health != "unknown" else st
+    return out
+
+
+def _worst_lockdown(vendor: str, client_ids: List[str]) -> str:
+    lockdown = getattr(_app_state(), "progressive_lockdown", None)
+    if lockdown is None:
+        return "unknown"
+    levels = [lockdown.level_of(f"edge:{vendor}:{cid}").value for cid in client_ids]
+    return max(levels, key=_LOCKDOWN_ORDER.index, default="normal")
+
+
+async def _edge_snapshot(edge) -> Dict[str, Any]:
+    """Per-vendor view of profiles, process counters, clients and kills."""
+    from ..inbound_edge.call_pipeline import VendorStats
+
+    kills = await edge.store.list_kills()
+    clients = await edge.store.list_clients()
+    killed_vendors = {k["value"] for k in kills if k["scope"] == "vendor"}
+    killed_clients = {k["value"] for k in kills if k["scope"] == "client"}
+    lockdown = getattr(_app_state(), "progressive_lockdown", None)
+    vendors: Dict[str, Dict[str, Any]] = {}
+    for vendor, profile in sorted(edge.profiles.items()):
+        # .get(), not [...]: stats is a defaultdict and reading must not create entries.
+        st = edge.pipeline.stats.get(vendor) or VendorStats()
+        ids = [c["client_id"] for c in clients if c["vendor"] == vendor]
+        vendors[vendor] = {
+            "display_name": profile.display_name,
+            "enabled": profile.enabled,
+            "mode": profile.mode,
+            "calls": st.calls,
+            "ok": st.ok,
+            "denials": dict(st.denials),
+            "dlp_hits": st.dlp_hits,
+            "canary_hits": st.canary_hits,
+            "pending_approvals": st.pending_approvals,
+            "last_call": st.last_call,
+            "lockdown": _worst_lockdown(vendor, ids),
+            "killed": vendor in killed_vendors,
+            "clients": [
+                {
+                    "client_id": cid,
+                    "lockdown": (
+                        lockdown.level_of(f"edge:{vendor}:{cid}").value if lockdown else "unknown"
+                    ),
+                    "killed": cid in killed_clients,
+                }
+                for cid in ids
+            ],
+        }
+    return {"vendors": vendors, "kills": kills, "clients": clients}
+
+
+def _hosted_status(v: Dict[str, Any]) -> str:
+    if v["killed"]:
+        return "killed"
+    if not v["enabled"]:
+        return "disabled"
+    if v["lockdown"] == "suspended":
+        return "suspended"
+    if not v["clients"]:
+        return "awaiting_enrollment"
+    return "active"
+
+
+async def _hosted_edge_rows(edge) -> List[Dict[str, Any]]:
+    if edge is None:
+        # Edge off: still list the shipped profiles so "hosted" never reads as empty-and-fine.
+        try:
+            from ..inbound_edge.profiles import load_profiles
+
+            profiles = load_profiles()
+        except Exception as exc:
+            logger.warning("agents: vendor profiles unreadable: %s", exc)
+            profiles = {}
+        return [
+            {
+                "id": vendor,
+                "name": prof.display_name,
+                "class": "hosted",
+                "mechanism": "inbound_mcp_edge",
+                "enabled": prof.enabled,
+                "mode": prof.mode,
+                "status": "edge_disabled",
+                "note": "Inbound MCP Edge is off (AGENTSHROUD_INBOUND_EDGE != 1)",
+            }
+            for vendor, prof in sorted(profiles.items())
+        ]
+    snap = await _edge_snapshot(edge)
+    return [
+        {
+            "id": vendor,
+            "name": v["display_name"],
+            "class": "hosted",
+            "mechanism": "inbound_mcp_edge",
+            "enabled": v["enabled"],
+            "mode": v["mode"],
+            "status": _hosted_status(v),
+            "clients": len(v["clients"]),
+            "last_call": v["last_call"],
+            "calls": v["calls"],
+            "denials": v["denials"],
+            "dlp_hits": v["dlp_hits"],
+            "canary_hits": v["canary_hits"],
+            "pending_approvals": v["pending_approvals"],
+            "lockdown": v["lockdown"],
+            "killed": v["killed"],
+        }
+        for vendor, v in snap["vendors"].items()
+    ]
+
+
+def _unhooked_hosted_rows() -> List[Dict[str, Any]]:
+    rows = [
+        {
+            "id": aid,
+            "name": name,
+            "class": "hosted",
+            "mechanism": "host_egress_watch",
+            "status": "not_configured",
+            "note": "Host egress watch (SCRUM-219) is not built yet; this agent is not governed",
+        }
+        for aid, name in _HOST_EGRESS_WATCH_AGENTS
+    ]
+    rows += [
+        {
+            "id": aid,
+            "name": name,
+            "class": "hosted",
+            "mechanism": "none",
+            "status": "no_technical_hook",
+            "note": "No MCP, API or egress hook exists for AgentShroud to govern this agent",
+        }
+        for aid, name in _NO_HOOK_AGENTS
+    ]
+    return rows
+
+
+@router.get("/agents")
+async def list_agents(
+    mode: str = Query(default="auto", pattern="^(auto|hosted|hosted_local|local)$"),
+    caller: SCLCaller = Depends(get_caller),
+) -> Dict:
+    """One registry of every agent AgentShroud proxies or watches (SCRUM-216).
+
+    ``derived_mode`` comes from configuration: hosted_local when local bots are
+    configured and the edge is on, local when the edge is off, hosted otherwise.
+    """
+    caller.require(Action.READ, Resource.SYSTEM)
+    app = _app_state()
+    bots = getattr(getattr(app, "config", None), "bots", None) or {}
+    edge = _edge_service()
+    if edge is None:
+        derived = "local"
+    else:
+        derived = "hosted_local" if bots else "hosted"
+    effective = derived if mode == "auto" else mode
+
+    agents: List[Dict[str, Any]] = []
+    if effective in ("local", "hosted_local"):
+        try:
+            health = await asyncio.wait_for(
+                asyncio.to_thread(_local_agent_health), timeout=_HEALTH_TIMEOUT_S
+            )
+        except asyncio.TimeoutError:
+            health = {}
+        for bid, b in bots.items():
+            state = health.get(getattr(b, "resolved_container_name", ""), "unknown")
+            agents.append(
+                {
+                    "id": bid,
+                    "name": b.name,
+                    "class": "local",
+                    "mechanism": "gateway_proxy",
+                    "status": state,
+                    "health": state,
+                    "route": getattr(b, "base_url", ""),
+                    "last_activity": None,
+                }
+            )
+    if effective in ("hosted", "hosted_local"):
+        agents += await _hosted_edge_rows(edge)
+        agents += _unhooked_hosted_rows()
+    return {
+        "mode": effective,
+        "derived_mode": derived,
+        "edge_enabled": edge is not None,
+        "agents": agents,
+    }
+
+
+@router.get("/edge/status")
+async def get_edge_status(caller: SCLCaller = Depends(get_caller)) -> Dict:
+    """Inbound MCP Edge state for the Command Center; ``enabled: false`` when off."""
+    caller.require(Action.READ, Resource.SYSTEM)
+    edge = _edge_service()
+    if edge is None:
+        return {
+            "enabled": False,
+            "issuer": None,
+            "vendors": {},
+            "recent": [],
+            "kills": [],
+            "clients": [],
+        }
+    snap = await _edge_snapshot(edge)
+    recent: List[Dict[str, Any]] = []
+    for vendor, st in list(edge.pipeline.stats.items()):
+        recent += [{"vendor": vendor, **r} for r in list(st.recent)]
+    recent.sort(key=lambda r: r.get("ts") or 0, reverse=True)
+    return {"enabled": True, "issuer": edge.issuer, **snap, "recent": recent[:50]}
+
+
+class EdgeKillRequest(BaseModel):
+    scope: Literal["vendor", "client", "jti"]
+    value: str = Field(min_length=1, max_length=256)
+    reason: str = Field(default="killed from Command Center", max_length=500)
+    confirm: bool = False
+
+
+class EdgeUnkillRequest(BaseModel):
+    scope: Literal["vendor", "client", "jti"]
+    value: str = Field(min_length=1, max_length=256)
+    confirm: bool = False
+
+
+class EdgeEnrollRequest(BaseModel):
+    vendor: str = Field(min_length=1, max_length=64)
+    ttl_s: int = Field(default=600, ge=60, le=900)
+    confirm: bool = False
+
+
+def _require_edge_owner(caller: SCLCaller) -> None:
+    caller.require(Action.MANAGE, Resource.SYSTEM)
+    if not caller.is_owner():
+        raise HTTPException(
+            status_code=403,
+            detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"},
+        )
+
+
+def _require_edge(edge) -> None:
+    if edge is None:
+        raise HTTPException(
+            status_code=503,
+            detail={
+                "error": True,
+                "code": "EDGE_DISABLED",
+                "message": "Inbound MCP Edge is not running (AGENTSHROUD_INBOUND_EDGE != 1)",
+            },
+        )
+
+
+def _not_found(message: str) -> HTTPException:
+    return HTTPException(
+        status_code=404, detail={"error": True, "code": "NOT_FOUND", "message": message}
+    )
+
+
+async def _kill_present(edge, scope: str, value: str) -> bool:
+    return any(k["scope"] == scope and k["value"] == value for k in await edge.store.list_kills())
+
+
+@router.post("/edge/kill")
+async def edge_kill(body: EdgeKillRequest, caller: SCLCaller = Depends(get_caller)):
+    """Revoke a vendor, client or token. The store is read on every edge call, so
+    the kill takes effect on the next request (IEC 62443 FR2)."""
+    _require_edge_owner(caller)
+    if not body.confirm:
+        return _confirmation_required(
+            "edge kill",
+            f"{body.scope}:{body.value}",
+            f"This revokes every edge call for {body.scope} '{body.value}'. "
+            "Resend with confirm: true.",
+        )
+    edge = _edge_service()
+    _require_edge(edge)
+    if body.scope == "vendor" and body.value not in edge.profiles:
+        raise _not_found(f"Unknown vendor {body.value}")
+    if body.scope == "client" and not any(
+        c["client_id"] == body.value for c in await edge.store.list_clients()
+    ):
+        raise _not_found(f"Unknown client {body.value}")
+    if body.scope == "jti" and not await edge.store.has_jti(body.value):
+        raise _not_found(f"Unknown token jti {body.value}")
+    await edge.store.kill(body.scope, body.value, body.reason)
+    killed = await _kill_present(edge, body.scope, body.value)
+    target = f"{body.scope}:{body.value}"
+    if not killed:
+        _log_audit(caller, "edge kill", target=target, result=AuditResult.FAILED)
+        raise HTTPException(
+            status_code=500,
+            detail={"error": True, "code": "INTERNAL_ERROR", "message": "Kill not recorded"},
+        )
+    _log_audit(caller, "edge kill", target=target, details={"reason": body.reason})
+    return {"ok": True, "scope": body.scope, "value": body.value, "killed": True}
+
+
+@router.post("/edge/unkill")
+async def edge_unkill(body: EdgeUnkillRequest, caller: SCLCaller = Depends(get_caller)):
+    """Lift a kill. Lifting a kill that does not exist is a 404, never a silent ok."""
+    _require_edge_owner(caller)
+    if not body.confirm:
+        return _confirmation_required(
+            "edge unkill",
+            f"{body.scope}:{body.value}",
+            f"This restores edge access for {body.scope} '{body.value}'. "
+            "Resend with confirm: true.",
+        )
+    edge = _edge_service()
+    _require_edge(edge)
+    target = f"{body.scope}:{body.value}"
+    if not await _kill_present(edge, body.scope, body.value):
+        raise _not_found(f"No kill recorded for {target}")
+    await edge.store.unkill(body.scope, body.value)
+    if await _kill_present(edge, body.scope, body.value):
+        _log_audit(caller, "edge unkill", target=target, result=AuditResult.FAILED)
+        raise HTTPException(
+            status_code=500,
+            detail={"error": True, "code": "INTERNAL_ERROR", "message": "Kill still present"},
+        )
+    _log_audit(caller, "edge unkill", target=target)
+    return {"ok": True, "scope": body.scope, "value": body.value, "killed": False}
+
+
+@router.post("/edge/enroll")
+async def edge_enroll(body: EdgeEnrollRequest, caller: SCLCaller = Depends(get_caller)):
+    """Open a one-time enrollment window for a vendor and return its code once.
+
+    The code is a bearer secret: it is never logged or audited, and the response
+    is marked no-store. /soc is tailnet-only, so the code never crosses the edge.
+    """
+    _require_edge_owner(caller)
+    if not body.confirm:
+        return _confirmation_required(
+            "edge enroll",
+            body.vendor,
+            f"This opens a {body.ttl_s}s enrollment window for {body.vendor}. "
+            "Resend with confirm: true.",
+        )
+    edge = _edge_service()
+    _require_edge(edge)
+    profile = edge.profiles.get(body.vendor)
+    if profile is None:
+        raise _not_found(f"Unknown vendor {body.vendor}")
+    if not profile.enabled:
+        raise HTTPException(
+            status_code=409,
+            detail={
+                "error": True,
+                "code": "VENDOR_DISABLED",
+                "message": f"Vendor {body.vendor} is disabled in its profile",
+            },
+        )
+    if await _kill_present(edge, "vendor", body.vendor):
+        raise HTTPException(
+            status_code=409,
+            detail={
+                "error": True,
+                "code": "VENDOR_KILLED",
+                "message": f"Vendor {body.vendor} is killed; unkill it before enrolling",
+            },
+        )
+    code = await edge.store.open_enrollment(body.vendor, ttl_s=body.ttl_s)
+    expires_at = datetime.fromtimestamp(time.time() + body.ttl_s, tz=timezone.utc)
+    _log_audit(caller, "edge enroll", target=body.vendor, details={"ttl_s": body.ttl_s})
+    return JSONResponse(
+        content={
+            "ok": True,
+            "vendor": body.vendor,
+            "code": code,
+            "ttl_s": body.ttl_s,
+            "expires_at": expires_at.isoformat(),
+        },
+        headers={"Cache-Control": "no-store"},
+    )
 
 
 @router.get("/config")

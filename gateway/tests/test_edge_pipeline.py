@@ -452,3 +452,14 @@ class TestAuditRecord:
         ):
             assert field in d, field
         assert d["request_id"] == "req-9" and d["outcome"] == "ok"
+
+
+class TestCommandCenterStats:
+    async def test_recent_call_carries_vendor_and_timestamp(self, edge):
+        # The SOC merges every vendor's recent calls newest-first (SCRUM-216).
+        pipe, deps, _, _, _, clock = edge
+        await pipe.call_tool(await _token(deps), "lab_search", {"query": "weather"}, "req-cc")
+        rec = pipe.stats["claude-duet"].recent[0]
+        assert rec["request_id"] == "req-cc" and rec["outcome"] == "ok"
+        assert rec["vendor"] == "claude-duet"
+        assert rec["ts"] == clock.t

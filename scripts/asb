@@ -567,6 +567,21 @@ _prune_superseded_images() {
 
 _asb_banner
 
+# ── edge: Inbound MCP Edge controls (SCRUM-216) ─────────────────────────────
+# Delegates to the Python SOC CLI inside the gateway container, which reaches
+# /soc/v1 on its own loopback. The token is read there from the gateway_password
+# secret via AGENTSHROUD_TOKEN_FILE — only the path crosses argv, never the secret.
+# Handled before the stack pre-flight below: it only talks to a running gateway.
+if [[ "${1:-}" == "edge" ]]; then
+  shift
+  _EXEC_TTY=""
+  { [ -t 0 ] && [ -t 1 ]; } || _EXEC_TTY="-T"
+  # shellcheck disable=SC2086  # $COMPOSE and $_EXEC_TTY are word-split by design
+  exec $COMPOSE exec $_EXEC_TTY \
+    -e AGENTSHROUD_TOKEN_FILE=/run/secrets/gateway_password \
+    gateway python -m gateway.cli.main edge "$@"
+fi
+
 # ── Config file pre-flight ───────────────────────────────────────────────────
 # agentshroud.yaml is .gitignore'd (per-host config). If the file is missing,
 # Docker creates an empty directory as a bind-mount placeholder, crashing the
@@ -748,8 +763,10 @@ case "${1:-}" in
     docker ps --filter "name=agentshroud" --format "table {{.Names}}\t{{.Ports}}\t{{.Status}}" 2>/dev/null || echo "No running instances found"
     ;;
   *)
-    echo "Usage: asb {build|up [full]|down|rebuild [full]|clean-rebuild [full]|prune|pull|status|logs [service]|test|canary [service]|rollback|instances}"
+    echo "Usage: asb {build|up [full]|down|rebuild [full]|clean-rebuild [full]|prune|pull|status|logs [service]|test|canary [service]|rollback|instances|edge ...}"
     echo "  Add 'full' to up/rebuild/clean-rebuild to start Hermes + HCI (--profile full)"
+    echo "  edge status | kill|unkill --vendor X|--client X|--jti X [--reason R] --confirm"
+    echo "       | enroll --vendor X [--ttl 600] --confirm   (Inbound MCP Edge, owner only)"
     exit 1
     ;;
 esac

@@ -484,7 +484,12 @@ class EdgeCallPipeline:
                     k: rec.get(k)
                     for k in ("request_id", "client_id", "tool", "outcome", "latency_ms")
                 }
-                | {"deny_reason": rec.get("deny_reason")}
+                | {
+                    "deny_reason": rec.get("deny_reason"),
+                    # vendor + ts let the Command Center merge vendors newest-first.
+                    "vendor": principal.vendor,
+                    "ts": self.d.clock(),
+                }
             )
         try:
             await self.d.emit(
