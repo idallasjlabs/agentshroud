@@ -126,7 +126,9 @@ fi
 # real image. Same phantom-tag defect already fixed in the daily CVE scan
 # itself (gateway/security/daily_cve_report.py, PR #442) — this script had
 # an independent copy of the same bug.
-DEFAULT_SCAN_IMAGES="agentshroud-gateway:${AGENTSHROUD_VERSION:-latest} agentshroud-openclaw:${AGENTSHROUD_VERSION:-latest} agentshroud/hermes:${AGENTSHROUD_VERSION:-latest}"
+# agentshroud-mcp-edge (SCRUM-215) is the internet-facing Inbound MCP Edge —
+# the one image an unauthenticated stranger can reach, so it is always scanned.
+DEFAULT_SCAN_IMAGES="agentshroud-gateway:${AGENTSHROUD_VERSION:-latest} agentshroud-openclaw:${AGENTSHROUD_VERSION:-latest} agentshroud/hermes:${AGENTSHROUD_VERSION:-latest} agentshroud-mcp-edge:${AGENTSHROUD_VERSION:-latest}"
 SCAN_IMAGES="${SUNDAY_SCAN_IMAGES:-$DEFAULT_SCAN_IMAGES}"
 
 # ── Logging ──────────────────────────────────────────────────────────────────
@@ -183,10 +185,12 @@ fi
 # docker/bots/hermes/run-standalone.sh). Only marvin is handled automatically;
 # any other bot host/account still needs SUNDAY_CONTAINERS passed explicitly.
 if [ "$USER" = "agentshroud-bot" ] && [ "$HOST_SHORT" = "marvin" ]; then
-  DEFAULT_CONTAINERS="agentshroud-dev-gateway agentshroud-dev-openclaw agentshroud-dev-hermes-v2 agentshroud-dev-voice-gateway agentshroud-dev-docker-socket-proxy"
+  DEFAULT_CONTAINERS="agentshroud-dev-gateway agentshroud-dev-openclaw agentshroud-dev-hermes-v2 agentshroud-dev-voice-gateway agentshroud-dev-docker-socket-proxy agentshroud-dev-mcp-edge"
 else
-  DEFAULT_CONTAINERS="agentshroud-gateway agentshroud-openclaw agentshroud-hermes-v2 agentshroud-voice-gateway agentshroud-docker-socket-proxy"
+  DEFAULT_CONTAINERS="agentshroud-gateway agentshroud-openclaw agentshroud-hermes-v2 agentshroud-voice-gateway agentshroud-docker-socket-proxy agentshroud-mcp-edge"
 fi
+# agentshroud-mcp-edge (profiles [edge, full]) is built and started by the
+# `--profile full` below like hermes/voice-gateway, and must be healthy too.
 CONTAINERS="${SUNDAY_CONTAINERS:-$DEFAULT_CONTAINERS}"
 
 # Default the scan-integrity gate from the environment unless explicitly set.
