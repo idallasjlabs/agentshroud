@@ -1,0 +1,32 @@
+# Inbound MCP Edge vendor profile — see docs/inbound-mcp-edge/vendors.md.
+# Ships DISABLED. Enable only on the owner's instruction (runbook: 04-runbook.md).
+vendor: claude-duet
+display_name: Claude Duet
+enabled: false
+mode: enforce
+auth:
+  oauth: true
+  dynamic_registration: true
+  redirect_uris:
+    - https://claude.ai/api/mcp/auth_callback
+    - https://claude.com/api/mcp/auth_callback
+  static_bearer: false
+# Anthropic's published outbound ranges for MCP tool calls (platform.claude.com/docs/en/api/ip-addresses).
+# Enforced only once the pilot shows Funnel passes the client address through.
+source_cidrs:
+  - 160.79.104.0/21
+  - 153.61.208.0/20
+tools:
+  lab_search: read
+  pke_status: read
+  delegate_to_hermes: write
+limits:
+  per_client_per_minute: 30
+  per_vendor_per_minute: 60
+  max_concurrency: 4
+  daily_calls: 500
+  daily_delegations: 20
+dlp:
+  mode: redact
+  min_confidence: 0.9
+max_response_bytes: 1048576
