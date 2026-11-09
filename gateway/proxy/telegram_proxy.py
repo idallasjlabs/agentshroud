@@ -403,6 +403,7 @@ class TelegramAPIProxy:
         replay_buffer=None,
         greeter=None,
         default_bot_id: str = "openclaw",
+        lockdown=None,
     ):
         self.pipeline = pipeline
         self.middleware_manager = middleware_manager
@@ -495,12 +496,19 @@ class TelegramAPIProxy:
 
         # Progressive lockdown: per-user cumulative block counter with escalating responses.
         # 3 blocks → owner alert; 5 blocks → double rate limit window; 10 → session suspended.
-        try:
-            from gateway.security.progressive_lockdown import ProgressiveLockdown
+        # SCRUM-203: production injects the ONE app-wide instance
+        # (app_state.progressive_lockdown, created in lifespan) so Falco and Telegram
+        # escalate the same principal state. A private instance is the fallback for
+        # standalone construction (tests, tools).
+        if lockdown is not None:
+            self._lockdown = lockdown
+        else:
+            try:
+                from gateway.security.progressive_lockdown import ProgressiveLockdown
 
-            self._lockdown = ProgressiveLockdown()
-        except Exception:
-            self._lockdown = None
+                self._lockdown = ProgressiveLockdown()
+            except Exception:
+                self._lockdown = None
 
         # Track which collaborator user IDs have already received the disclosure notice
         # this session. Persisted in-memory only — resets on gateway restart (acceptable).
@@ -598,6 +606,16 @@ class TelegramAPIProxy:
             pass
         except Exception as _dne:
             logger.debug("Could not load display names: %s", _dne)
+
+    def attach_lockdown(self, lockdown) -> None:
+        """Use the app-wide ProgressiveLockdown (SCRUM-203).
+
+        Called from lifespan startup with app_state.progressive_lockdown, because
+        this proxy is constructed at module import, before lifespan runs.
+        """
+        if lockdown is None:
+            raise ValueError("attach_lockdown requires a ProgressiveLockdown instance")
+        self._lockdown = lockdown
 
     def _is_immune(self, user_id: str) -> bool:
         """Return True if user_id has active (non-expired) immunity."""

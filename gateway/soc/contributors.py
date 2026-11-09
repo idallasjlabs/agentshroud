@@ -143,8 +143,10 @@ class ContributorManager:
         try:
             from ..ingest_api.state import app_state
 
-            lockdown = getattr(app_state, "_lockdown", None) or getattr(
-                getattr(app_state, "telegram_proxy", None), "_lockdown", None
+            lockdown = (
+                getattr(app_state, "progressive_lockdown", None)  # SCRUM-203 app-wide
+                or getattr(app_state, "_lockdown", None)
+                or getattr(getattr(app_state, "telegram_proxy", None), "_lockdown", None)
             )
             if lockdown:
                 status = lockdown.get_status(user_id)

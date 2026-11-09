@@ -111,6 +111,25 @@ async def lifespan(app: FastAPI):
     # === STARTUP ===
     # Make app_state accessible via request.app.state for route files
     app.state.app_state = app_state
+
+    # SCRUM-203: ONE app-wide ProgressiveLockdown, keyed by principal string.
+    # Created before any consumer (Telegram proxy, FalcoAlertWatcher) so they all
+    # escalate the same state. The Telegram proxy is built at main.py import time,
+    # before lifespan, so it is re-pointed at the shared instance here.
+    from ..security.progressive_lockdown import ProgressiveLockdown as _ProgressiveLockdown
+
+    app_state.progressive_lockdown = _ProgressiveLockdown()
+    try:
+        from .main import _telegram_proxy as _tg_proxy_for_lockdown
+
+        _tg_proxy_for_lockdown.attach_lockdown(app_state.progressive_lockdown)
+        logger.info("✓ ProgressiveLockdown shared by Telegram proxy and Falco watcher")
+    except Exception as _ld_exc:
+        logger.error(
+            "✗ ProgressiveLockdown: could not attach shared instance to Telegram proxy: %s",
+            _ld_exc,
+        )
+
     # Suppress known benign Presidio registry-language warnings (es/it/pl recognizers on en registry).
     logging.getLogger("presidio-analyzer").setLevel(logging.ERROR)
     _install_uvicorn_warning_filter()

@@ -44,6 +44,20 @@ class TestLockdownLevelWiring:
 
         assert rec.lockdown_level == "escalated"
 
+    def test_build_record_prefers_app_wide_progressive_lockdown(self):
+        """SCRUM-203: the app-wide instance on app_state.progressive_lockdown wins."""
+        shared = ProgressiveLockdown()
+        shared.escalate_to("u2", "suspended", "falco")
+
+        mgr = ContributorManager(rbac_config=_FakeRBAC({"u2": Role.COLLABORATOR}))
+        fake_state = SimpleNamespace(
+            progressive_lockdown=shared, _lockdown=ProgressiveLockdown(), telegram_proxy=None
+        )
+        with patch("gateway.ingest_api.state.app_state", fake_state):
+            rec = mgr.get_contributor("u2")
+
+        assert rec.lockdown_level == "suspended"
+
     def test_build_record_reports_suspended_level(self):
         lockdown = ProgressiveLockdown()
         for _ in range(10):
