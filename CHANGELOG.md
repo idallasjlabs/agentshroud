@@ -8,6 +8,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [Unreleased]
+
+### Added
+
+- **Inbound MCP Edge** (SCRUM-198): a governed MCP endpoint for hosted personal AI agents. It covers
+  OAuth 2.1 (PKCE, RFC 8414/9728/7591/8707/7009) with owner enrollment windows and one-time consent codes;
+  ES256 15-minute tokens with an issued-jti registry; vendor/client/jti kill; signed, drift-checked tool
+  descriptors; a gateway call pipeline reusing PromptGuard, CanaryTripwire, PIISanitizer, ProgressiveLockdown,
+  AuditStore and EnhancedApprovalQueue; args-bound single-use approval tickets with a raw-args Telegram card;
+  `wrap_untrusted` for third-party content; and the Command Center Agents and Inbound Edge tabs. Off by
+  default; all vendors disabled.
+
+### Fixed
+
+- SOC killswitch endpoints (UI and both CLIs) returned `ok: true` without killing anything (SCRUM-199).
+- SOC approve/deny called missing queue methods; the pending list was always empty (SCRUM-200).
+- The benchmark regression gate could not fail and measured no P99 (SCRUM-201).
+- The PII sanitizer ignored `enforcement_action=block` (SCRUM-202).
+- ProgressiveLockdown was private to the Telegram proxy, so Falco escalation was dead (SCRUM-203).
+- The audit hash chain could fork under concurrent appends, and mid-chain verify failed (SCRUM-204).
+- The credential scrubber missed hyphenated `sk-` keys (`sk-ant-…`, `sk-proj-…`).
+- The Semgrep rules `log-sensitive-key` and `ssrf-httpx` matched non-log and non-request calls while missing
+  real leaks.
+- `filelock` (9 CVEs) and `certifi` (2) raised to fixed versions.
+
 ## [1.6.0] (2026-08-28)
 
 ### Summary

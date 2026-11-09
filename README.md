@@ -44,6 +44,17 @@ AgentShroud is simultaneously a **production-grade tool**, a **learning laborato
 
 ---
 
+## What's New — Inbound MCP Edge (unreleased, SCRUM-198)
+
+Hosted personal AI agents (Claude Duet, Poke, Gemini Spark, OpenAI Dots) run in vendor clouds, outside any proxy AgentShroud can sit in. The **Inbound MCP Edge** gives them exactly one governed way into the home lab: an MCP endpoint (spec 2026-07-28, official SDK) behind OAuth 2.1, with every call going through the gateway's existing layers.
+
+- **One door, no state on it.** The internet-facing `agentshroud-mcp-edge` container sits on an internal DMZ network. It holds only a public key and talks only to `POST /edge/v1/rpc`.
+- **Owner-controlled linking.** A vendor can register only inside a ten-minute enrollment window that the owner opens from the tailnet, and the owner consents with a one-time code.
+- **Curated tools only.** `lab_search`, `pke_status` and `delegate_to_hermes` have closed, signed, drift-checked schemas. Writes need owner approval through tickets bound to the exact arguments, single use.
+- **Same defences as local agents.** PromptGuard (including decoded payloads), canaries, Presidio DLP at ≥0.9, the credential scrubber, the hash-chained audit, and an escalation ladder of throttle → writes disabled → client revoked → vendor disabled.
+- **Command Center.** A new **Agents** tab (Hosted only / Hosted + Local / Local only) and an **Inbound Edge** tab, both tailnet-only.
+- Off by default; every vendor ships disabled. See [`docs/inbound-mcp-edge/`](docs/inbound-mcp-edge/).
+
 ## What's New — v1.3.0 "Reliability" (July 2026)
 
 v1.3.0 hardens reliability and locks in an **honest** container-security posture — real fixes only, no suppression.
@@ -246,6 +257,7 @@ A 7-page responsive web dashboard providing full management capabilities:
 - **Agent Management** — Monitor connected agents, trust levels, resource usage
 - **Settings** — Gateway configuration, allowlists, notification preferences
 - **Kill Switch** — Emergency controls with one-click freeze/shutdown/disconnect
+- **Agents / Inbound Edge** — Proxied agents by mode (hosted, hosted + local, local), hosted-vendor calls, denials, DLP and canary hits, enrollment and per-vendor/per-token kill
 
 ### Terminal Control Center
 
