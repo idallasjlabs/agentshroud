@@ -229,11 +229,13 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r gateway/requirements.txt
-          pip install pytest-benchmark
       - name: Run benchmark regression
+        # SCRUM-201: no `|| true`. The harness writes .benchmarks/current.json
+        # itself (mean/P50/P99); the checker exits non-zero on a >20% regression
+        # or on any missing metric. Noise tolerance lives in the 20% threshold
+        # and the best-of-3 batch run, not in swallowing the exit code.
         run: |
-          python -m pytest gateway/tests/test_benchmark_regression.py -v \
-            --benchmark-json=.benchmarks/current.json || true
+          python -m pytest gateway/tests/test_benchmark_regression.py -v
           python scripts/check_benchmark_regression.py
 
   dast:

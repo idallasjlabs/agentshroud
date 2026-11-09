@@ -415,3 +415,6 @@ reports/sunday/
 # reboot or session handoff, not source. Never commit.
 package-lock.json
 yarn.lock
+
+# Benchmark run output (SCRUM-201); the baseline stays tracked
+.benchmarks/current.json

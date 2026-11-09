@@ -1,10 +1,29 @@
 #!/usr/bin/env python3
+# Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 """
-Benchmark regression checker.
-Compares current benchmark results against baseline and fails if any metric
-regressed by more than 20%.
+Benchmark regression checker (SCRUM-201).
+
+Reads the results JSON written by gateway/tests/test_benchmark_regression.py
+(default .benchmarks/current.json) and compares it against the baseline
+(default .benchmarks/baseline-v1.0.0.json). Exits non-zero when:
+
+  * the baseline or current file is missing, empty or unparseable;
+  * any expected metric is absent from the current results or non-numeric;
+  * a gated mean is absent from the baseline;
+  * any metric regressed by more than THRESHOLD against its baseline.
+
+Means are always gated. P50/P99 are gated only when the baseline carries a
+matching key (e.g. ``single_inbound_ms_p99``); otherwise they are reported
+with "no baseline" and do not fail. The v1.0.0 baseline records means only.
+A percentile baseline must be measured on the reference machine (the arm64
+macOS host named in the baseline's _meta) and added to the baseline file —
+never estimated.
+
+Exit codes: 0 = all gated metrics within threshold, 1 = regression,
+2 = missing/invalid data (the gate could not evaluate, which is not a pass).
 """
 
+import argparse
 import json
 import sys
 from pathlib import Path
@@ -13,80 +32,119 @@ THRESHOLD = 0.20  # 20% regression tolerance
 BASELINE_PATH = Path(".benchmarks/baseline-v1.0.0.json")
 CURRENT_PATH = Path(".benchmarks/current.json")
 
-METRIC_MAP = {
-    "test_single_inbound_latency": "single_inbound_ms",
-    "test_single_outbound_latency": "single_outbound_ms",
-    "test_100_inbound_requests": "100_inbound_ms",
-    "test_100_outbound_requests": "100_outbound_ms",
+EXIT_OK = 0
+EXIT_REGRESSION = 1
+EXIT_MISSING = 2
+
+# Current-results key -> baseline key. Always gated.
+MEAN_METRICS = {
+    "single_inbound_ms_mean": "single_inbound_ms",
+    "single_outbound_ms_mean": "single_outbound_ms",
+    "100_inbound_s": "100_inbound_s",
 }
 
+# Must be present in current results; gated only if the baseline has the same key.
+PERCENTILE_METRICS = (
+    "single_inbound_ms_p50",
+    "single_inbound_ms_p99",
+    "single_outbound_ms_p50",
+    "single_outbound_ms_p99",
+)
 
-def main():
-    if not BASELINE_PATH.exists():
-        print(f"WARNING: Baseline not found at {BASELINE_PATH} — skipping regression check")
-        sys.exit(0)
 
-    if not CURRENT_PATH.exists():
-        print(f"WARNING: Current benchmarks not found at {CURRENT_PATH} — skipping check")
-        sys.exit(0)
+def _is_number(value) -> bool:
+    return isinstance(value, (int, float)) and not isinstance(value, bool)
 
-    with open(BASELINE_PATH) as f:
-        baseline = json.load(f)
 
-    current_content = CURRENT_PATH.read_text().strip()
-    if not current_content:
-        print(f"WARNING: Current benchmarks file is empty at {CURRENT_PATH} — skipping check")
-        sys.exit(0)
-    current = json.loads(current_content)
+def _load_json(path: Path, label: str):
+    """Return the parsed dict, or None after printing why it could not be loaded."""
+    if not path.exists():
+        print(f"  MISSING {label} file: {path}")
+        return None
+    content = path.read_text().strip()
+    if not content:
+        print(f"  MISSING {label} file is empty: {path}")
+        return None
+    try:
+        data = json.loads(content)
+    except json.JSONDecodeError as exc:
+        print(f"  MISSING {label} file is not valid JSON: {path} ({exc})")
+        return None
+    if not isinstance(data, dict):
+        print(f"  MISSING {label} file is not a JSON object: {path}")
+        return None
+    return data
 
-    # Baseline is a flat dict — extract numeric metrics, skip _meta
-    baseline_metrics = {
-        k: v for k, v in baseline.items() if k != "_meta" and isinstance(v, (int, float))
-    }
-    current_benchmarks = {b["name"]: b for b in current.get("benchmarks", [])}
 
+def _compare(name: str, current: float, baseline: float, failures: list) -> None:
+    regression = (current - baseline) / baseline
+    sign = "+" if regression >= 0 else ""
+    detail = (
+        f"{name}: {current:.4f} vs baseline {baseline:.4f} ({sign}{regression * 100:.1f}%, "
+        f"threshold {THRESHOLD * 100:.0f}%)"
+    )
+    if regression > THRESHOLD:
+        failures.append(detail)
+        print(f"  FAIL {detail}")
+    else:
+        print(f"  OK   {detail}")
+
+
+def check(baseline_path: Path, current_path: Path) -> int:
+    baseline = _load_json(baseline_path, "baseline")
+    current = _load_json(current_path, "current")
+    if baseline is None or current is None:
+        print("\nBenchmark gate could not evaluate: required data missing.")
+        return EXIT_MISSING
+
+    missing = []
     failures = []
-    for test_name, baseline_key in METRIC_MAP.items():
-        if baseline_key not in baseline_metrics:
-            print(f"  SKIP {test_name}: not in baseline")
+
+    for current_key, baseline_key in MEAN_METRICS.items():
+        cur = current.get(current_key)
+        base = baseline.get(baseline_key)
+        if not _is_number(cur):
+            missing.append(f"current[{current_key}]={cur!r}")
+            print(f"  MISSING {current_key}: not a number in current results ({cur!r})")
             continue
-
-        baseline_val = baseline_metrics[baseline_key]
-
-        # Find matching benchmark in current results
-        matched = None
-        for name, bench in current_benchmarks.items():
-            if test_name in name:
-                matched = bench
-                break
-
-        if matched is None:
-            print(f"  SKIP {test_name}: not in current results")
+        if not _is_number(base) or base <= 0:
+            missing.append(f"baseline[{baseline_key}]={base!r}")
+            print(f"  MISSING {baseline_key}: no positive baseline value ({base!r})")
             continue
+        _compare(current_key, cur, base, failures)
 
-        # pytest-benchmark stores mean in seconds
-        current_ms = matched["stats"]["mean"] * 1000
-        regression = (current_ms - baseline_val) / baseline_val
-
-        if regression > THRESHOLD:
-            failures.append(
-                f"  FAIL {test_name}: {current_ms:.3f}ms vs baseline {baseline_val:.3f}ms "
-                f"(+{regression*100:.1f}% > {THRESHOLD*100:.0f}% threshold)"
-            )
-            print(failures[-1])
+    for metric in PERCENTILE_METRICS:
+        cur = current.get(metric)
+        if not _is_number(cur):
+            missing.append(f"current[{metric}]={cur!r}")
+            print(f"  MISSING {metric}: not a number in current results ({cur!r})")
+            continue
+        base = baseline.get(metric)
+        if _is_number(base) and base > 0:
+            _compare(metric, cur, base, failures)
         else:
-            delta_str = f"+{regression*100:.1f}%" if regression >= 0 else f"{regression*100:.1f}%"
             print(
-                f"  OK   {test_name}: {current_ms:.3f}ms vs baseline {baseline_val:.3f}ms ({delta_str})"
+                f"  INFO {metric}: {cur:.4f} (no baseline recorded — reported, not gated; "
+                "record it on the reference machine)"
             )
 
+    if missing:
+        print(f"\n{len(missing)} expected metric(s) missing: {', '.join(missing)}")
+        return EXIT_MISSING
     if failures:
         print(f"\n{len(failures)} benchmark(s) regressed beyond threshold. See details above.")
-        sys.exit(1)
-    else:
-        print("\nAll benchmarks within threshold. No regression detected.")
-        sys.exit(0)
+        return EXIT_REGRESSION
+    print("\nAll gated benchmarks within threshold. No regression detected.")
+    return EXIT_OK
+
+
+def main(argv=None) -> int:
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[1])
+    parser.add_argument("--baseline", type=Path, default=BASELINE_PATH)
+    parser.add_argument("--current", type=Path, default=CURRENT_PATH)
+    args = parser.parse_args(argv)
+    return check(args.baseline, args.current)
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
