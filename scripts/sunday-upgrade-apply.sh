@@ -212,10 +212,8 @@ log "compose: engine='$CE' project='$PROJECT' cmd='$COMPOSE_CMD'"
 # (docker-compose.yml build args), so a host's running images can be matched to
 # the commit they were built from. "-dirty" when the tree has uncommitted changes:
 # the label must never claim a clean commit the build did not use.
-AGENTSHROUD_GIT_SHA="$(git -C "$REPO" rev-parse HEAD 2>/dev/null || echo unknown)"
-if [ "$AGENTSHROUD_GIT_SHA" != unknown ] && ! git -C "$REPO" diff --quiet HEAD 2>/dev/null; then
-  AGENTSHROUD_GIT_SHA="${AGENTSHROUD_GIT_SHA}-dirty"
-fi
+# graphify-out/ and reports/ do not count: see sunday_build_revision.
+AGENTSHROUD_GIT_SHA="$(sunday_build_revision "$REPO")"
 export AGENTSHROUD_GIT_SHA
 
 # ── Arg parsing ──────────────────────────────────────────────────────────────

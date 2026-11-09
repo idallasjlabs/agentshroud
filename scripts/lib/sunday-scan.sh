@@ -778,14 +778,34 @@ sunday_hermes_container() {
 sunday_live_revs() {
   local c oc="-" h="-" rev
   for c in "$@"; do
-    rev="$(docker inspect -f '{{index .Config.Labels "org.opencontainers.image.revision"}}' "$c" 2>/dev/null | head -1 || true)"
-    [ -n "$rev" ] || rev="-"
+    # A stopped container is not what runs: its label proves nothing.
+    rev="$(docker inspect -f '{{.State.Running}} {{index .Config.Labels "org.opencontainers.image.revision"}}' "$c" 2>/dev/null | head -1 || true)"
+    case "$rev" in "true "?*) rev="${rev#true }" ;; *) rev="-" ;; esac
     case "$c" in
       *openclaw*) [ "$oc" != "-" ] || oc="$rev" ;;
       *hermes*)   [ "$h" != "-" ]  || h="$rev" ;;
     esac
   done
   printf '%s %s\n' "$oc" "$h"
+}
+
+# sunday_build_revision <repo>
+#   The commit to stamp into built images as org.opencontainers.image.revision:
+#   HEAD, or HEAD-dirty when a tracked file differs from it. graphify-out/ and
+#   reports/ are left out of that test, as _dirty_build_files leaves them out of
+#   the build gate: no Dockerfile copies either, and the graph refresh CLAUDE.md
+#   requires before every prod rebuild left them modified, which labelled clean
+#   builds -dirty and made prod's gate refuse them (dev review of #576).
+#   scripts/asb uses the same pathspec (T32 checks they agree).
+SUNDAY_LABEL_PATHSPEC=(. ':(exclude)graphify-out' ':(exclude)reports')
+sunday_build_revision() {
+  local sha
+  sha="$(git -C "$1" rev-parse HEAD 2>/dev/null)" || { echo unknown; return 0; }
+  if git -C "$1" diff --quiet HEAD -- "${SUNDAY_LABEL_PATHSPEC[@]}" 2>/dev/null; then
+    echo "$sha"
+  else
+    echo "${sha}-dirty"
+  fi
 }
 
 # _sunday_commit <repo> <rev> — the full commit for a label that is a plain

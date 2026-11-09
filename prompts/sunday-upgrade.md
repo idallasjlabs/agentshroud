@@ -116,7 +116,7 @@ script did not give you:
 | 20 | CVE gate exceeded `--max-critical` | triage findings, do not override |
 | 21 | dev: every phase passed but no image was scanned or a scan errored; handoff is `SCAN_INCOMPLETE`, not PASS | report the scan failure; prod stays blocked |
 | 25 | dev: nothing was upgraded although a newer upstream release exists (prod never exits 25; see 26) | report it as a failed run, not a pass |
-| 26 | prod: every phase passed but the handoff's pins are not what the live images were built from (`NOT_LIVE`/`UNPROVEN`); not marked promoted | report the promotion as failed with the `prod gate:` log line; do not mark it done |
+| 26 | prod: every phase passed but the handoff's pins are not what the live images were built from (`NOT_LIVE`/`UNPROVEN`); not marked promoted | report the promotion as failed with the `prod gate:` log line; do not mark it done. The new containers are still running (no rollback, build-cache prune skipped), so the stack may be mixed-version: report what `docker ps` and each agent's `--version` show |
 | 30 | build/compose failed (rollback attempted) | report the named service that failed |
 | 40 | verify failed — unhealthy/restart loop (rollback attempted) | report; do not retry blindly |
 | 50 | rollback itself failed | **STOP. Escalate. The stack may be degraded.** |
