@@ -199,3 +199,78 @@ def mcp_tool(name: str) -> dict:
         "description": desc["description"],
         "inputSchema": copy.deepcopy(desc["inputSchema"]),
     }
+
+
+# ── owner signing workflow ───────────────────────────────────────────────────
+#
+#   python -m gateway.inbound_edge.descriptors keygen | keyring set agentshroud-edge descriptors
+#   python -m gateway.inbound_edge.descriptors manifest
+#   keyring get agentshroud-edge descriptors | python -m gateway.inbound_edge.descriptors sign
+#
+# keygen prints the raw Ed25519 private key once, base64 on one line, for a
+# keychain/1Password to store; only the public key is written to disk. sign reads
+# the key from stdin (never argv), refuses a key that does not match the committed
+# public key, and verifies the result before writing the signature.
+
+
+def main(argv=None, stdin=None) -> int:
+    import argparse
+    import sys
+
+    from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PrivateKey
+
+    parser = argparse.ArgumentParser(prog="python -m gateway.inbound_edge.descriptors")
+    parser.add_argument("command", choices=["keygen", "manifest", "sign", "verify"])
+    parser.add_argument("--manifest", type=Path, default=MANIFEST_PATH)
+    parser.add_argument("--signature", type=Path, default=SIGNATURE_PATH)
+    parser.add_argument("--public-key", type=Path, default=PUBLIC_KEY_PATH)
+    args = parser.parse_args(argv)
+    stdin = stdin or sys.stdin
+
+    if args.command == "keygen":
+        key = Ed25519PrivateKey.generate()
+        args.public_key.write_bytes(
+            key.public_key().public_bytes(
+                serialization.Encoding.PEM, serialization.PublicFormat.SubjectPublicKeyInfo
+            )
+        )
+        raw = key.private_bytes(
+            serialization.Encoding.Raw,
+            serialization.PrivateFormat.Raw,
+            serialization.NoEncryption(),
+        )
+        print(base64.b64encode(raw).decode())
+        return 0
+    if args.command == "manifest":
+        args.manifest.write_text(json.dumps(build_manifest(), indent=2, sort_keys=True) + "\n")
+        return 0
+    if args.command == "sign":
+        try:
+            key = Ed25519PrivateKey.from_private_bytes(base64.b64decode(stdin.readline().strip()))
+        except (binascii.Error, ValueError):
+            print("sign: stdin did not contain a base64 Ed25519 private key", file=sys.stderr)
+            return 1
+        manifest = json.loads(args.manifest.read_text())
+        signature = base64.b64encode(key.sign(canonical_bytes(manifest))).decode()
+        try:
+            verify_descriptors(manifest, signature, args.public_key.read_bytes())
+        except DescriptorIntegrityError as exc:
+            print(f"sign: refusing to write signature: {exc}", file=sys.stderr)
+            return 1
+        args.signature.write_text(signature + "\n")
+        return 0
+    try:
+        verify_descriptors(
+            json.loads(args.manifest.read_text()),
+            args.signature.read_text().strip(),
+            args.public_key.read_bytes(),
+        )
+    except (OSError, DescriptorIntegrityError) as exc:
+        print(f"verify: FAILED: {exc}", file=sys.stderr)
+        return 1
+    print("verify: OK")
+    return 0
+
+
+if __name__ == "__main__":  # pragma: no cover
+    raise SystemExit(main())

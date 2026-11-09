@@ -147,3 +147,38 @@ class TestPublicView:
         view = d.mcp_tool("lab_search")
         assert set(view) == {"name", "description", "inputSchema"}
         assert view["name"] == "lab_search"
+
+
+class TestSigningCli:
+    """Owner workflow: keygen | <keychain>; <keychain> | sign — key never in argv or on disk."""
+
+    def test_keygen_then_sign_then_verify(self, tmp_path, capsys):
+        import io
+
+        manifest, sig, pub = tmp_path / "m.json", tmp_path / "m.sig", tmp_path / "p.pem"
+        paths = ["--manifest", str(manifest), "--signature", str(sig), "--public-key", str(pub)]
+        assert d.main(["keygen", *paths]) == 0
+        secret_line = capsys.readouterr().out.strip()
+        assert "\n" not in secret_line and len(base64.b64decode(secret_line)) == 32
+        assert b"PUBLIC KEY" in pub.read_bytes()
+        assert not list(tmp_path.glob("*priv*"))
+
+        assert d.main(["manifest", *paths]) == 0
+        assert d.main(["sign", *paths], stdin=io.StringIO(secret_line + "\n")) == 0
+        d.verify_descriptors(
+            json.loads(manifest.read_text()), sig.read_text().strip(), pub.read_bytes()
+        )
+
+    def test_sign_refuses_a_key_that_does_not_match_the_committed_public_key(
+        self, tmp_path, capsys
+    ):
+        import io
+
+        manifest, sig, pub = tmp_path / "m.json", tmp_path / "m.sig", tmp_path / "p.pem"
+        paths = ["--manifest", str(manifest), "--signature", str(sig), "--public-key", str(pub)]
+        d.main(["keygen", *paths])
+        capsys.readouterr()
+        d.main(["manifest", *paths])
+        other = base64.b64encode(b"\x01" * 32).decode()
+        assert d.main(["sign", *paths], stdin=io.StringIO(other + "\n")) == 1
+        assert not sig.exists()
