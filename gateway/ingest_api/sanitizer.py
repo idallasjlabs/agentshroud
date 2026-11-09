@@ -545,7 +545,9 @@ class PIISanitizer:
                 "json_password",
             ),
             # API keys
-            (r"\b(sk-[a-zA-Z0-9]{20,})", "openai_api_key"),
+            # sk- keys incl. hyphenated families (sk-ant-api03-…, sk-proj-…); the old
+            # [a-zA-Z0-9] class stopped at the first hyphen and missed them.
+            (r"\b(sk-[A-Za-z0-9_\-]{20,})", "openai_api_key"),
             (r"\bghp_[a-zA-Z0-9]{36}", "github_token"),
             (self._aws_key_pattern, "aws_access_key"),
             (r"\bops_[a-zA-Z0-9]{26}", "1password_token"),
