@@ -351,8 +351,7 @@ class TestAuditStoreBotId:
 
         # Create a legacy schema without bot_id
         async with aiosqlite.connect(db_path) as db:
-            await db.execute(
-                """CREATE TABLE audit_events (
+            await db.execute("""CREATE TABLE audit_events (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
                     event_id TEXT NOT NULL UNIQUE,
                     event_type TEXT NOT NULL,
@@ -362,8 +361,7 @@ class TestAuditStoreBotId:
                     details TEXT NOT NULL,
                     prev_hash TEXT,
                     entry_hash TEXT NOT NULL
-                )"""
-            )
+                )""")
             await db.commit()
 
         # Open via AuditStore — should auto-migrate
