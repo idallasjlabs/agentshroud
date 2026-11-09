@@ -50,6 +50,11 @@
 #                                        - prod's gate: newest dev PASS within
 #                                          SUNDAY_HANDOFF_MAX_AGE_DAYS (6) whose
 #                                          pins equal prod's. See its comment.
+#   sunday_live_revs / sunday_live_pins / sunday_prod_outcome
+#                                        - prod's gate on what RUNS: pins the
+#                                          live images were built from, judged
+#                                          against the handoff after verify.
+#   sunday_default_trivy_cache          - Trivy DB cache on a Colima mount.
 #   sunday_catchup_pending / sunday_mark_promoted /
 #   sunday_move_aside_untracked_collisions / sunday_write_launcher_status
 #                                        - launcher helpers, see each comment.
@@ -108,8 +113,20 @@ age_h = (datetime.datetime.now(datetime.timezone.utc) - when).total_seconds() / 
 sys.exit(0 if age_h <= float(sys.argv[2]) else 1)
 PYEOF
 }
+# sunday_default_trivy_cache — where the Trivy DB lives when SUNDAY_TRIVY_CACHE
+#   is unset. The refresh runs trivy in a container with this path bind-mounted,
+#   and Colima mounts only ~/Development and ~/.agentshroud: on prod
+#   (2026-10-26 attempt 1) ~/.cache/trivy existed only inside the VM, the host
+#   trivy never saw the refreshed DB and timed out downloading it itself.
+sunday_default_trivy_cache() {
+  if [ -d "$HOME/.agentshroud" ]; then
+    printf '%s\n' "$HOME/.agentshroud/trivy-cache"
+  else
+    printf '%s\n' "$HOME/.cache/trivy"
+  fi
+}
 sunday_refresh_trivy_db() {
-  local cache="${SUNDAY_TRIVY_CACHE:-$HOME/.cache/trivy}" ver img flag errf
+  local cache="${SUNDAY_TRIVY_CACHE:-$(sunday_default_trivy_cache)}" ver img flag errf
   TRIVY_DB_ARGS=()
   command -v docker >/dev/null 2>&1 || return 1
   ver="$("${TRIVY_CMD[@]}" --version 2>/dev/null | sed -n 's/^Version: *//p' | head -1)"
@@ -752,4 +769,90 @@ sunday_hermes_container() {
   name="$(docker ps --filter 'label=com.agentshroud.role=hermes' --format '{{.Names}}' 2>/dev/null | head -1)"
   [ -n "$name" ] || name="$(docker ps --format '{{.Names}}' 2>/dev/null | grep -E '^agentshroud-(dev-)?hermes' | head -1)"
   printf '%s' "$name"
+}
+
+# sunday_live_revs <container...>
+#   Prints "<openclaw_rev> <hermes_rev>": the org.opencontainers.image.revision
+#   label of the first *openclaw* and first *hermes* container named. A missing
+#   container or label prints "-" in its place. Labels are NOT validated here.
+sunday_live_revs() {
+  local c oc="-" h="-" rev
+  for c in "$@"; do
+    # A stopped container is not what runs: its label proves nothing.
+    rev="$(docker inspect -f '{{.State.Running}} {{index .Config.Labels "org.opencontainers.image.revision"}}' "$c" 2>/dev/null | head -1 || true)"
+    case "$rev" in "true "?*) rev="${rev#true }" ;; *) rev="-" ;; esac
+    case "$c" in
+      *openclaw*) [ "$oc" != "-" ] || oc="$rev" ;;
+      *hermes*)   [ "$h" != "-" ]  || h="$rev" ;;
+    esac
+  done
+  printf '%s %s\n' "$oc" "$h"
+}
+
+# sunday_build_revision <repo>
+#   The commit to stamp into built images as org.opencontainers.image.revision:
+#   HEAD, or HEAD-dirty when a tracked file differs from it. graphify-out/ and
+#   reports/ are left out of that test, as _dirty_build_files leaves them out of
+#   the build gate: no Dockerfile copies either, and the graph refresh CLAUDE.md
+#   requires before every prod rebuild left them modified, which labelled clean
+#   builds -dirty and made prod's gate refuse them (dev review of #576).
+#   scripts/asb uses the same pathspec (T32 checks they agree).
+SUNDAY_LABEL_PATHSPEC=(. ':(exclude)graphify-out' ':(exclude)reports')
+sunday_build_revision() {
+  local sha
+  sha="$(git -C "$1" rev-parse HEAD 2>/dev/null)" || { echo unknown; return 0; }
+  if git -C "$1" diff --quiet HEAD -- "${SUNDAY_LABEL_PATHSPEC[@]}" 2>/dev/null; then
+    echo "$sha"
+  else
+    echo "${sha}-dirty"
+  fi
+}
+
+# _sunday_commit <repo> <rev> — the full commit for a label that is a plain
+#   7-40 hex sha. Anything else (HEAD, origin/main, HEAD~5, "<sha>-dirty",
+#   "unknown", "-") is refused: a revspec like HEAD would make "running" mean
+#   "checked out", and -dirty means versions.env at that commit is not what was
+#   built. --end-of-options keeps it from ever being read as an option.
+_sunday_commit() {
+  printf '%s' "$2" | grep -qE '^[0-9a-f]{7,40}$' || return 1
+  git -C "$1" rev-parse --verify --quiet --end-of-options "${2}^{commit}" 2>/dev/null
+}
+
+# sunday_live_pins <repo> <openclaw_rev> <hermes_rev>
+#   Prints, sorted, OPENCLAW_VERSION from docker/versions.env at the commit the
+#   running OpenClaw image was built from, and HERMES_VERSION / HERMES_IMAGE at
+#   the running Hermes image's commit: what prod RUNS. Prod fast-forwards to
+#   main before applying, so main's merge-base is HEAD and comparing the
+#   checkout with itself found nothing to upgrade (2026-11-09, dev's 11-08
+#   PASS). Returns 1 when either label is not a known plain commit or a pin is
+#   missing there.
+sunday_live_pins() {
+  local repo="$1" oc_sha h_sha oc h
+  oc_sha="$(_sunday_commit "$repo" "$2")" || return 1
+  h_sha="$(_sunday_commit "$repo" "$3")" || return 1
+  oc="$(git -C "$repo" show "${oc_sha}:docker/versions.env" 2>/dev/null | grep -E '^OPENCLAW_VERSION=' || true)"
+  h="$(git -C "$repo" show "${h_sha}:docker/versions.env" 2>/dev/null | grep -E '^(HERMES_VERSION|HERMES_IMAGE)=' || true)"
+  [ -n "$oc" ] && [ -n "$h" ] || return 1
+  printf '%s\n%s\n' "$oc" "$h" | sort
+}
+
+# sunday_prod_outcome <before_live> <after_live> <target>
+#   Prod's gate, decided on what RUNS after verify, never on what the run did.
+#   <target> is the handoff's pins (phase_apply already proved the checkout's
+#   versions.env equals them); "latest upstream" does not apply to prod, which
+#   only ever ships what dev passed. Prints one word:
+#     PROMOTED      after = target, and before was something else
+#     ALREADY_LIVE  after = target = before (an earlier run deployed it but died
+#                   before marking: mark it now instead of redeploying daily)
+#     PROMOTED_FROM_UNKNOWN  after = target, before could not be resolved
+#     NOT_LIVE      after != target: the run did not leave the handoff running
+#     UNPROVEN      after could not be resolved from the live labels
+#   Returns 0 for the first three, 1 otherwise.
+sunday_prod_outcome() {
+  local before="$1" after="$2" target="$3"
+  if [ -z "$after" ]; then echo UNPROVEN; return 1; fi
+  if [ -z "$target" ] || [ "$after" != "$target" ]; then echo NOT_LIVE; return 1; fi
+  if [ -z "$before" ]; then echo PROMOTED_FROM_UNKNOWN; return 0; fi
+  if [ "$before" = "$after" ]; then echo ALREADY_LIVE; return 0; fi
+  echo PROMOTED
 }
