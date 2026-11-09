@@ -28,6 +28,8 @@ security_assessment/.assessment_env
 # SSH & GPG keys
 .ssh/
 *.pem
+# Public verification key for the signed Inbound Edge tool manifest (no secret).
+!config/inbound-edge/descriptors.pub.pem
 *.key
 !*.key.example
 *.p12
