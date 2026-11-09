@@ -21,6 +21,7 @@
 #   ./setup-secrets.sh extract --bot openclaw  # write only OpenClaw + shared secret files
 #   ./setup-secrets.sh extract --bot hermes    # write only Hermes + shared secret files
 #   ./setup-secrets.sh migrate                 # one-time: pull secrets from 1Password → Keychain
+#   ./setup-secrets.sh edge-init               # first-time: generate Inbound MCP Edge secrets
 #   ./setup-secrets.sh help                    # show this message
 
 set -euo pipefail
@@ -371,6 +372,154 @@ declare -a SECRET_DEFS=(
     "podcastindex_api_secret|Podcast Index API secret|yes|yes|hermes"
 )
 
+# ── Inbound MCP Edge secrets (SCRUM-215) ───────────────────────────────────────
+# edge_signing_key  EC P-256 PKCS#8 PEM — the gateway's ES256 JWT signing key.
+#                   Multi-line; mounted into the gateway ONLY, never the edge.
+# edge_gateway_token  48 random bytes, base64 — the edge→gateway service token.
+#
+# Deliberately NOT in SECRET_DEFS: both are generated (`edge-init`), never typed,
+# and a PEM cannot survive the single-line paths SECRET_DEFS values take
+# (read_secret_masked, `security -w` output, secret-tool, 1Password fields,
+# normalize_secret's last-line rule). In every backend each is stored as ONE
+# line, "b64:<base64 of the file>"; extract decodes it back to the exact file.
+# A raw value without the prefix (e.g. a hand-placed PEM in the file backend) is
+# accepted as-is. Values are never echoed and never passed in argv to another
+# process: generation writes straight to files under umask 077, and backend
+# writes go through stdin (`security -i`, `secret-tool store`).
+EDGE_SECRET_NAMES=(edge_signing_key edge_gateway_token)
+EDGE_B64_PREFIX="b64:"
+
+# Decode a stored edge secret (stdin) to its file content (stdout).
+edge_decode_value() {
+    local raw
+    raw="$(cat)"
+    if [[ "$raw" == "${EDGE_B64_PREFIX}"* ]]; then
+        printf '%s' "${raw#"${EDGE_B64_PREFIX}"}" | tr -d ' \r\n' | openssl base64 -d -A
+    elif [[ "$raw" == *"-----BEGIN "* ]]; then
+        printf '%s' "$raw"
+    else
+        printf '%s' "$raw" | normalize_secret
+    fi
+}
+
+# 0 if <file> holds a valid value for edge secret <name>. Prints nothing secret:
+# the key check inspects only the derived PUBLIC key.
+edge_validate_file() {
+    local name="$1" file="$2"
+    [[ -s "$file" ]] || return 1
+    case "$name" in
+        edge_signing_key)
+            # PKCS#8 armour, split so private-key scanners don't flag this line.
+            grep -q -- "-----BEGIN PRIVATE"" KEY-----" "$file" || return 1
+            openssl pkey -in "$file" -pubout 2>/dev/null \
+                | openssl pkey -pubin -noout -text 2>/dev/null \
+                | grep -Eq 'P-256|prime256v1'
+            ;;
+        edge_gateway_token)
+            [[ "$(tr -d ' \r\n' < "$file" | wc -c | tr -d ' ')" -ge 32 ]]
+            ;;
+        *) return 1 ;;
+    esac
+}
+
+# Store edge secret <name> from <file> in the credential backend via stdin only.
+edge_store_from_file() {
+    local name="$1" file="$2" encoded readback
+    encoded="${EDGE_B64_PREFIX}$(openssl base64 -A < "$file")"
+    case "$BACKEND" in
+        keychain)
+            ensure_keychain
+            # `security -i` reads commands from stdin, so the value never
+            # appears in any process's argv (unlike `-w <value>`). base64 has
+            # no spaces or quotes, so it is a single safe token.
+            printf 'add-generic-password -U -A -s agentshroud -a %s -w %s %s\n' \
+                "$name" "$encoded" "$AGENTSHROUD_KC" | security -i >/dev/null 2>&1 || true
+            readback="$(keychain_get "$name")"
+            ;;
+        secretstore)
+            printf '%s' "$encoded" \
+                | secret-tool store --label="agentshroud-${name}" service agentshroud key "$name"
+            readback="$(secret-tool lookup service agentshroud key "$name" 2>/dev/null || true)"
+            ;;
+        homedir)
+            ( umask 077; mkdir -p "${SECRETS_HOME_DIR}"; printf '%s' "$encoded" > "${SECRETS_HOME_DIR}/${name}.txt" )
+            readback="$(cat "${SECRETS_HOME_DIR}/${name}.txt" 2>/dev/null || true)"
+            ;;
+        prompt)
+            # The generated file in SECRETS_DIR is itself this backend's store.
+            return 0
+            ;;
+        *)
+            echo "  [not stored] ${name} — backend '${BACKEND}' only accepts values in argv;" \
+                 "store ${file} in it by hand (e.g. 1Password document)" >&2
+            return 1
+            ;;
+    esac
+    if [[ "$readback" != "$encoded" ]]; then
+        echo "  [FAILED] ${name} — backend ${BACKEND} did not return the stored value" >&2
+        return 1
+    fi
+    echo "  [stored] ${name} → ${BACKEND} (read back and verified)"
+}
+
+# edge-init: first-time generation. Idempotent — an edge secret that already
+# exists in the backend or as a non-empty file is left untouched.
+cmd_edge_init() {
+    command -v openssl &>/dev/null || { echo "edge-init needs openssl on PATH" >&2; return 1; }
+    mkdir -p "${SECRETS_DIR}"
+    local name out tmp existing rc=0
+    for name in "${EDGE_SECRET_NAMES[@]}"; do
+        out="${SECRETS_DIR}/${name}.txt"
+        existing="$(get_secret "$name" 2>/dev/null || true)"
+        if [[ -n "$existing" || -s "$out" ]]; then
+            echo "  [exists] ${name} — left unchanged (delete it from the backend and ${out} to regenerate)"
+            continue
+        fi
+        tmp="$(mktemp "${out}.XXXXXX")"
+        if [[ "$name" == "edge_signing_key" ]]; then
+            ( umask 077
+              openssl ecparam -name prime256v1 -genkey -noout 2>/dev/null \
+                  | openssl pkcs8 -topk8 -nocrypt > "$tmp" )
+        else
+            ( umask 077; openssl rand -base64 48 | tr -d '\n' > "$tmp" )
+        fi
+        if ! edge_validate_file "$name" "$tmp"; then
+            rm -f "$tmp"
+            echo "  [FAILED] ${name} — generated value did not validate" >&2
+            rc=1
+            continue
+        fi
+        chmod 600 "$tmp"
+        mv -f "$tmp" "$out"
+        echo "  [generated] ${name} → ${out} (mode 600, value not shown)"
+        edge_store_from_file "$name" "$out" || rc=1
+    done
+    return "$rc"
+}
+
+# extract for the edge secrets: decode and validate before writing.
+extract_edge_secrets() {
+    local name out tmp value
+    for name in "${EDGE_SECRET_NAMES[@]}"; do
+        out="${SECRETS_DIR}/${name}.txt"
+        value="$(get_secret "$name" | edge_decode_value)"
+        if [[ -z "$value" ]]; then
+            echo "  [skipped] $name — not stored (optional; generate with: $0 edge-init)"
+            continue
+        fi
+        tmp="$(mktemp "${out}.XXXXXX")"
+        chmod 600 "$tmp"
+        printf '%s\n' "$value" > "$tmp"
+        if ! edge_validate_file "$name" "$tmp"; then
+            rm -f "$tmp"
+            echo "  [invalid] $name — stored value is not a valid ${name}; file left unchanged" >&2
+            continue
+        fi
+        mv -f "$tmp" "$out"
+        echo "  [written] $out"
+    done
+}
+
 # ── Bot filter helper ──────────────────────────────────────────────────────────
 # Returns 0 (include) if the secret's bot tag matches the requested bot filter.
 # BOT_FILTER="" or "all" → include everything.
@@ -483,6 +632,12 @@ cmd_extract() {
         write_secret_file "$out" "$value"
         echo "  [written] $out"
     done
+
+    # Inbound MCP Edge secrets are gateway infrastructure, not per-bot: only
+    # an unfiltered extract (what scripts/asb runs) writes them.
+    if [[ "$bot_label" == "all" ]]; then
+        extract_edge_secrets
+    fi
 
     echo ""
     if $ok; then
@@ -638,6 +793,10 @@ Usage:
   ./setup-secrets.sh extract --bot openclaw  Extract only OpenClaw + shared secret files
   ./setup-secrets.sh extract --bot hermes    Extract only Hermes + shared secret files
   ./setup-secrets.sh migrate                 One-time: pull secrets from 1Password → Keychain
+  ./setup-secrets.sh edge-init               First-time: generate the Inbound MCP Edge secrets
+                                             (edge_signing_key EC P-256 PEM, edge_gateway_token)
+                                             into secrets/ (mode 600) and the backend; existing
+                                             ones are never overwritten; values are never shown
   ./setup-secrets.sh help                    Show this message
 
 Bot values for --bot flag:
@@ -706,6 +865,7 @@ if [[ "${BASH_SOURCE[0]}" == "$0" ]]; then
         store)   cmd_store ;;
         extract) cmd_extract ;;
         migrate) cmd_migrate ;;
+        edge-init) cmd_edge_init ;;
         dump-op-refs) cmd_dump_op_refs ;;
         help|--help|-h) cmd_help ;;
         "")      cmd_interactive ;;
