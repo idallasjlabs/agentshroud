@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Community 104"
+community: "Community 72"
 location: "L62"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_104
+  - community/Community_72
 ---
 
 # _DropInvalidHTTPRequestFilter
@@ -28,4 +28,4 @@ tags:
 - [[lifespan.py]] - `contains` [EXTRACTED]
 - [[test_config_validation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_104
+#graphify/code #graphify/INFERRED #community/Community_72

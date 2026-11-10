@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "rationale"
-community: "Community 22"
+community: "Community 1359"
 location: "L243"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_22
+  - community/Community_1359
 ---
 
 # Tests for indirect prompt injection detection in tool results.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestToolResultScan]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_22
+#graphify/rationale #graphify/EXTRACTED #community/Community_1359

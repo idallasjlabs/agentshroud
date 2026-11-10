@@ -1,24 +1,20 @@
 ---
 type: community
-members: 11
+members: 7
 ---
 
 # Community 1927
 
-**Members:** 11 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[._calculate_similarity()]] - code - gateway/security/prompt_protection.py
-- [[._redact_fuzzy_match()]] - code - gateway/security/prompt_protection.py
-- [[.scan_response()_2]] - code - gateway/security/prompt_protection.py
-- [[A piece of content that should be protected from disclosure.]] - rationale - gateway/security/prompt_protection.py
-- [[Calculate similarity between text and protected content.]] - rationale - gateway/security/prompt_protection.py
-- [[ProtectedContent]] - code - gateway/security/prompt_protection.py
-- [[Redact text that fuzzy matches protected content.]] - rationale - gateway/security/prompt_protection.py
-- [[RedactionResult_2]] - code - gateway/security/prompt_protection.py
-- [[Result of scanning and redacting content.]] - rationale - gateway/security/prompt_protection.py
-- [[Scan text for protected content and return redacted version.          Args]] - rationale - gateway/security/prompt_protection.py
-- [[prompt_protection.py]] - code - gateway/security/prompt_protection.py
+- [[.guard()]] - code - gateway/tests/test_context_guard.py
+- [[.test_empty_provenance_for_unknown_session()]] - code - gateway/tests/test_context_guard.py
+- [[.test_segment_hash_integrity()]] - code - gateway/tests/test_context_guard.py
+- [[.test_segment_provenance_ordering()]] - code - gateway/tests/test_context_guard.py
+- [[.test_segment_tagging_basic()]] - code - gateway/tests/test_context_guard.py
+- [[.test_separate_sessions_isolated()]] - code - gateway/tests/test_context_guard.py
+- [[TestSourceTagging]] - code - gateway/tests/test_context_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,12 +24,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 532]]
-- 1 edge to [[_COMMUNITY_Community 984]]
+- 2 edges to [[_COMMUNITY_Community 0]]
+- 1 edge to [[_COMMUNITY_Community 22]]
+- 1 edge to [[_COMMUNITY_Community 919]]
 
 ## Top bridge nodes
-- [[prompt_protection.py]] - degree 4, connects to 2 communities
-- [[ProtectedContent]] - degree 5, connects to 1 community
-- [[.scan_response()_2]] - degree 5, connects to 1 community
-- [[._calculate_similarity()]] - degree 4, connects to 1 community
-- [[._redact_fuzzy_match()]] - degree 4, connects to 1 community
+- [[TestSourceTagging]] - degree 9, connects to 3 communities
+- [[.guard()]] - degree 2, connects to 1 community

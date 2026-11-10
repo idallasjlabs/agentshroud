@@ -72,18 +72,16 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 8 edges to [[_COMMUNITY_Community 11]]
+- 5 edges to [[_COMMUNITY_Community 84]]
 - 4 edges to [[_COMMUNITY_Community 7]]
+- 4 edges to [[_COMMUNITY_Community 0]]
 - 4 edges to [[_COMMUNITY_Community 17]]
-- 3 edges to [[_COMMUNITY_Community 24]]
-- 2 edges to [[_COMMUNITY_Community 72]]
-- 2 edges to [[_COMMUNITY_Community 93]]
-- 2 edges to [[_COMMUNITY_Community 84]]
-- 2 edges to [[_COMMUNITY_Community 22]]
-- 1 edge to [[_COMMUNITY_Community 37]]
+- 2 edges to [[_COMMUNITY_Community 21]]
+- 1 edge to [[_COMMUNITY_Community 1127]]
 
 ## Top bridge nodes
-- [[test_redteam_probes.py]] - degree 39, connects to 8 communities
-- [[_make_full_pipeline()]] - degree 20, connects to 7 communities
+- [[test_redteam_probes.py]] - degree 39, connects to 6 communities
+- [[_make_full_pipeline()]] - degree 20, connects to 5 communities
 - [[_make_pii_sanitizer()]] - degree 6, connects to 2 communities
 - [[test_pipeline_fails_closed_without_pii()]] - degree 4, connects to 2 communities
 - [[_make_approval_queue()]] - degree 4, connects to 1 community

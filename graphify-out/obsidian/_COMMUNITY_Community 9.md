@@ -11,6 +11,7 @@ members: 78
 - [[.__init__()_25]] - code - gateway/proxy/mcp_audit.py
 - [[.__init__()_32]] - code - gateway/proxy/pipeline.py
 - [[.__init__()_53]] - code - gateway/security/alert_dispatcher.py
+- [[.__init__()_68]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[.__init__()_92]] - code - gateway/security/killswitch_monitor.py
 - [[._check_request_rate()]] - code - gateway/security/killswitch_monitor.py
 - [[._check_system_resources()]] - code - gateway/security/killswitch_monitor.py
@@ -80,7 +81,6 @@ members: 78
 - [[TestVerifyKillswitch]] - code - gateway/tests/test_killswitch_monitor_behavior.py
 - [[Verify that the kill switch mechanism works without actually killing.          A]] - rationale - gateway/security/killswitch_monitor.py
 - [[_fake_stats()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[config()_1]] - code - gateway/tests/test_killswitch_monitor_behavior.py
 - [[deque]] - code - gateway/security/killswitch_monitor.py
 - [[dispatcher()_1]] - code - gateway/tests/test_killswitch_monitor_behavior.py
 - [[killswitch_config.py (KillSwitchConfig)]] - code - gateway/security/killswitch_config.py
@@ -96,23 +96,21 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 23 edges to [[_COMMUNITY_Community 65]]
-- 10 edges to [[_COMMUNITY_Community 72]]
+- 13 edges to [[_COMMUNITY_Community 72]]
 - 6 edges to [[_COMMUNITY_Community 103]]
-- 2 edges to [[_COMMUNITY_Community 104]]
-- 2 edges to [[_COMMUNITY_Community 2030]]
-- 1 edge to [[_COMMUNITY_Community 1]]
+- 2 edges to [[_COMMUNITY_Community 88]]
+- 2 edges to [[_COMMUNITY_Community 181]]
 - 1 edge to [[_COMMUNITY_Community 184]]
 - 1 edge to [[_COMMUNITY_Community 24]]
 - 1 edge to [[_COMMUNITY_Community 0]]
-- 1 edge to [[_COMMUNITY_Community 115]]
-- 1 edge to [[_COMMUNITY_Community 88]]
+- 1 edge to [[_COMMUNITY_Community 344]]
 - 1 edge to [[_COMMUNITY_Community 40]]
 - 1 edge to [[_COMMUNITY_Community 1002]]
 - 1 edge to [[_COMMUNITY_Community 1214]]
 
 ## Top bridge nodes
-- [[KillSwitchMonitor]] - degree 80, connects to 8 communities
-- [[deque]] - degree 8, connects to 3 communities
+- [[KillSwitchMonitor]] - degree 80, connects to 6 communities
+- [[deque]] - degree 8, connects to 2 communities
 - [[Any_45]] - degree 21, connects to 1 community
 - [[test_killswitch_monitor_behavior.py]] - degree 11, connects to 1 community
 - [[TestAnomalyDetection_1]] - degree 9, connects to 1 community

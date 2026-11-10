@@ -1,11 +1,11 @@
 ---
 type: community
-members: 50
+members: 54
 ---
 
 # Community 133
 
-**Members:** 50 nodes
+**Members:** 54 nodes
 
 ## Members
 - [[.test_1password_env_dump_flags()]] - code - gateway/tests/test_skill_guard.py
@@ -40,8 +40,12 @@ members: 50
 - [[.test_tree_flags_on_medium()]] - code - gateway/tests/test_skill_guard.py
 - [[.test_urllib_urlopen_flags()]] - code - gateway/tests/test_skill_guard.py
 - [[.test_wget_pipe_sh_blocks()]] - code - gateway/tests/test_skill_guard.py
+- [[CompletedProcess_4]] - code - gateway/tests/test_skill_guard.py
+- [[IntEnum]] - code
+- [[Ordered severity ladder (``IntEnum`` so comparisons work).]] - rationale - gateway/security/skill_guard.py
 - [[Raised when SkillGuard is handed content it cannot scan.]] - rationale - gateway/security/skill_guard.py
 - [[ScanResult_4]] - code - gateway/tests/test_skill_guard.py
+- [[Severity]] - code - gateway/security/skill_guard.py
 - [[SkillGuard_1]] - code - gateway/tests/test_skill_guard.py
 - [[SkillScanError]] - code - gateway/security/skill_guard.py
 - [[TestAggregation]] - code - gateway/tests/test_skill_guard.py
@@ -67,18 +71,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 28 edges to [[_COMMUNITY_Community 924]]
-- 14 edges to [[_COMMUNITY_Community 1808]]
-- 13 edges to [[_COMMUNITY_Community 281]]
-- 13 edges to [[_COMMUNITY_Community 2318]]
+- 48 edges to [[_COMMUNITY_Community 924]]
+- 19 edges to [[_COMMUNITY_Community 281]]
+- 1 edge to [[_COMMUNITY_Community 152]]
+- 1 edge to [[_COMMUNITY_Community 88]]
+- 1 edge to [[_COMMUNITY_Community 56]]
+- 1 edge to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 11]]
 - 1 edge to [[_COMMUNITY_Community 89]]
 - 1 edge to [[_COMMUNITY_Community 710]]
-- 1 edge to [[_COMMUNITY_Community 794]]
+- 1 edge to [[_COMMUNITY_Community 137]]
 - 1 edge to [[_COMMUNITY_Community 40]]
 
 ## Top bridge nodes
-- [[test_skill_guard.py]] - degree 28, connects to 7 communities
-- [[SkillGuard_1]] - degree 36, connects to 3 communities
+- [[IntEnum]] - degree 7, connects to 6 communities
+- [[test_skill_guard.py]] - degree 28, connects to 5 communities
 - [[SkillScanError]] - degree 24, connects to 3 communities
-- [[TestAggregation]] - degree 12, connects to 3 communities
-- [[TestSecretAccess]] - degree 10, connects to 3 communities
+- [[Severity]] - degree 24, connects to 2 communities
+- [[CompletedProcess_4]] - degree 6, connects to 2 communities

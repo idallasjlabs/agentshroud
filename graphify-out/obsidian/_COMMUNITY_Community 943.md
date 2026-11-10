@@ -1,32 +1,29 @@
 ---
 type: community
-members: 19
+members: 16
 ---
 
 # Community 943
 
-**Members:** 19 nodes
+**Members:** 16 nodes
 
 ## Members
-- [[Test creating a ledger entry]] - rationale - gateway/tests/test_ledger.py
-- [[Test deleting a ledger entry]] - rationale - gateway/tests/test_ledger.py
-- [[Test deleting a non-existent entry]] - rationale - gateway/tests/test_ledger.py
-- [[Test ledger query with source filter]] - rationale - gateway/tests/test_ledger.py
-- [[Test paginated ledger query]] - rationale - gateway/tests/test_ledger.py
-- [[Test querying ledger with forwarded_to filter]] - rationale - gateway/tests/test_ledger.py
-- [[Test querying ledger with time range filters]] - rationale - gateway/tests/test_ledger.py
-- [[Test retrieving a ledger entry by ID]] - rationale - gateway/tests/test_ledger.py
-- [[Test stats calculation]] - rationale - gateway/tests/test_ledger.py
-- [[test_delete_entry()]] - code - gateway/tests/test_ledger.py
-- [[test_delete_nonexistent()]] - code - gateway/tests/test_ledger.py
-- [[test_get_entry()]] - code - gateway/tests/test_ledger.py
-- [[test_get_stats()_2]] - code - gateway/tests/test_ledger.py
-- [[test_ledger.py]] - code - gateway/tests/test_ledger.py
-- [[test_query_ledger()]] - code - gateway/tests/test_ledger.py
-- [[test_query_with_filter()]] - code - gateway/tests/test_ledger.py
-- [[test_query_with_forwarded_to_filter()]] - code - gateway/tests/test_ledger.py
-- [[test_query_with_time_filters()]] - code - gateway/tests/test_ledger.py
-- [[test_record_entry()]] - code - gateway/tests/test_ledger.py
+- [[.test_clean_report()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_clean_when_installed_not_running()_1]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_critical_on_critical_findings()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_not_run_when_no_alert_dir()_1]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_not_run_when_no_report()_1]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_returns_summary_for_empty_dir()_1]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_warning_on_failures()]] - code - gateway/tests/test_scanner_integration.py
+- [[Any_58]] - code - gateway/security/scanner_integration.py
+- [[Read and return the Docker daemon config from daemon.json, or {} if unavailable.]] - rationale - gateway/security/scanner_integration.py
+- [[Return latest OpenSCAP compliance summary from saved reports.]] - rationale - gateway/security/scanner_integration.py
+- [[Return latest Wazuh alert summary from the shared alert volume.      wazuh-agent]] - rationale - gateway/security/scanner_integration.py
+- [[TestGetOpenscapSummary]] - code - gateway/tests/test_scanner_integration.py
+- [[TestGetWazuhSummary]] - code - gateway/tests/test_scanner_integration.py
+- [[_read_docker_daemon_config()]] - code - gateway/security/scanner_integration.py
+- [[get_openscap_summary()]] - code - gateway/security/scanner_integration.py
+- [[get_wazuh_summary()]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,7 +33,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 7]]
+- 10 edges to [[_COMMUNITY_Community 29]]
+- 10 edges to [[_COMMUNITY_Community 67]]
+- 3 edges to [[_COMMUNITY_Community 363]]
+- 3 edges to [[_COMMUNITY_Community 1287]]
+- 3 edges to [[_COMMUNITY_Community 420]]
+- 3 edges to [[_COMMUNITY_Community 311]]
+- 2 edges to [[_COMMUNITY_Community 842]]
+- 2 edges to [[_COMMUNITY_Community 207]]
+- 2 edges to [[_COMMUNITY_Community 102]]
+- 1 edge to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 51]]
+- 1 edge to [[_COMMUNITY_Community 1969]]
 
 ## Top bridge nodes
-- [[test_ledger.py]] - degree 12, connects to 1 community
+- [[Any_58]] - degree 22, connects to 10 communities
+- [[get_wazuh_summary()]] - degree 14, connects to 6 communities
+- [[get_openscap_summary()]] - degree 11, connects to 5 communities
+- [[_read_docker_daemon_config()]] - degree 6, connects to 1 community
+- [[TestGetOpenscapSummary]] - degree 5, connects to 1 community

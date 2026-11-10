@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_event_bus.py"
 type: "rationale"
-community: "Community 85"
+community: "Community 62"
 location: "L81"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_85
+  - community/Community_62
 ---
 
 # Stats track event counts
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_get_stats()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_85
+#graphify/rationale #graphify/EXTRACTED #community/Community_62

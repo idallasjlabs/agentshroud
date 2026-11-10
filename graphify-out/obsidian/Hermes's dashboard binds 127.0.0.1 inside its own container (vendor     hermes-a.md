@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "Community 11"
+community: "Community 1305"
 location: "L339"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_11
+  - community/Community_1305
 ---
 
 # Hermes's dashboard binds 127.0.0.1 inside its own container (vendor     hermes-a
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestHermesDashboardBridgeReachability]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_11
+#graphify/rationale #graphify/EXTRACTED #community/Community_1305

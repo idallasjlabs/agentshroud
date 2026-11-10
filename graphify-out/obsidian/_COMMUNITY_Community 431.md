@@ -1,14 +1,13 @@
 ---
 type: community
-members: 85
+members: 76
 ---
 
 # Community 431
 
-**Members:** 85 nodes
+**Members:** 76 nodes
 
 ## Members
-- [[.__init__()_44]] - code - gateway/proxy/web_proxy.py
 - [[.__init__()_72]] - code - gateway/security/dns_filter.py
 - [[._cleanup_rate_window()]] - code - gateway/security/dns_filter.py
 - [[._detect_tunneling()]] - code - gateway/security/dns_filter.py
@@ -29,6 +28,7 @@ members: 85
 - [[.test_common_services_allowed()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_default_allows_all_domains()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_default_mode_is_enforce()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_dns_filter_config()]] - code - gateway/tests/test_security_audit.py
 - [[.test_dns_filter_default_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[.test_empty_string()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_enforce_mode_blocks_tunneling()]] - code - gateway/tests/test_dns_filter.py
@@ -50,10 +50,8 @@ members: 85
 - [[.test_public_ip_not_private()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_queries_logged()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_resolve_and_cache_empty_domain_graceful()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_session_rate_limit()]] - code - gateway/tests/test_security_audit.py
 - [[.test_stable_resolution_passes()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_strict_has_allowlist()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_subagent_monitor_loaded()]] - code - gateway/tests/test_security_audit.py
 - [[.test_subdomain_allowed()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_very_long_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
 - [[DNSFilter]] - code - gateway/security/dns_filter.py
@@ -61,7 +59,6 @@ members: 85
 - [[DNSQuery]] - code - gateway/security/dns_filter.py
 - [[DNSVerdict]] - code - gateway/security/dns_filter.py
 - [[Default mode is enforce after v0.8.0 enforcement hardening.]] - rationale - gateway/tests/test_dns_filter.py
-- [[EntropyCalculator]] - code - gateway/security/dns_filter.py
 - [[Even suspicious queries pass in monitor mode.]] - rationale - gateway/tests/test_dns_filter.py
 - [[Known private ranges should be detected.]] - rationale - gateway/tests/test_dns_filter.py
 - [[Public IPs should not be flagged as private.]] - rationale - gateway/tests/test_dns_filter.py
@@ -70,7 +67,6 @@ members: 85
 - [[Return True if a DNS rebinding attack is detected.          Re-resolves the doma]] - rationale - gateway/security/dns_filter.py
 - [[Return True if the IP address is in a private  loopback range.]] - rationale - gateway/security/dns_filter.py
 - [[Seeding the same IP twice should not flag rebinding.]] - rationale - gateway/tests/test_dns_filter.py
-- [[Test resource limits and DoS prevention.]] - rationale - gateway/tests/test_security_audit.py
 - [[TestAuditLogging]] - code - gateway/tests/test_dns_filter.py
 - [[TestDNSAllowlist]] - code - gateway/tests/test_dns_filter.py
 - [[TestDNSFilterConfig]] - code - gateway/tests/test_dns_filter.py
@@ -79,11 +75,7 @@ members: 85
 - [[TestEntropyCalculator]] - code - gateway/tests/test_dns_filter.py
 - [[TestNormalDNSResolution]] - code - gateway/tests/test_dns_filter.py
 - [[TestRateLimiting_1]] - code - gateway/tests/test_dns_filter.py
-- [[TestResourceProtection]] - code - gateway/tests/test_security_audit.py
 - [[TunnelingPattern]] - code - gateway/security/dns_filter.py
-- [[URLAnalyzer_1]] - code - gateway/proxy/web_proxy.py
-- [[WebContentScanner_1]] - code - gateway/proxy/web_proxy.py
-- [[WebProxyConfig_1]] - code - gateway/proxy/web_proxy.py
 - [[default_config()_1]] - code - gateway/tests/test_dns_filter.py
 - [[dns_filter()]] - code - gateway/tests/test_dns_filter.py
 - [[dns_filter.py]] - code - gateway/security/dns_filter.py
@@ -92,7 +84,6 @@ members: 85
 - [[strict_config()]] - code - gateway/tests/test_dns_filter.py
 - [[strict_filter()]] - code - gateway/tests/test_dns_filter.py
 - [[test_dns_filter.py]] - code - gateway/tests/test_dns_filter.py
-- [[web_proxy.py]] - code - gateway/proxy/web_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -102,40 +93,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 45 edges to [[_COMMUNITY_Community 0]]
-- 35 edges to [[_COMMUNITY_Community 72]]
-- 8 edges to [[_COMMUNITY_Community 27]]
-- 8 edges to [[_COMMUNITY_Community 41]]
-- 6 edges to [[_COMMUNITY_Community 1000]]
-- 6 edges to [[_COMMUNITY_Community 434]]
-- 5 edges to [[_COMMUNITY_Community 562]]
-- 4 edges to [[_COMMUNITY_Community 71]]
-- 3 edges to [[_COMMUNITY_Community 120]]
-- 2 edges to [[_COMMUNITY_Community 1]]
-- 2 edges to [[_COMMUNITY_Community 162]]
-- 2 edges to [[_COMMUNITY_Community 108]]
-- 2 edges to [[_COMMUNITY_Community 196]]
-- 2 edges to [[_COMMUNITY_Community 509]]
-- 2 edges to [[_COMMUNITY_Community 24]]
-- 2 edges to [[_COMMUNITY_Community 22]]
-- 1 edge to [[_COMMUNITY_Community 8]]
-- 1 edge to [[_COMMUNITY_Community 104]]
+- 33 edges to [[_COMMUNITY_Community 72]]
+- 25 edges to [[_COMMUNITY_Community 0]]
 - 1 edge to [[_COMMUNITY_Community 978]]
-- 1 edge to [[_COMMUNITY_Community 7]]
-- 1 edge to [[_COMMUNITY_Community 52]]
-- 1 edge to [[_COMMUNITY_Community 531]]
-- 1 edge to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 146]]
-- 1 edge to [[_COMMUNITY_Community 93]]
-- 1 edge to [[_COMMUNITY_Community 477]]
-- 1 edge to [[_COMMUNITY_Community 121]]
-- 1 edge to [[_COMMUNITY_Community 5]]
-- 1 edge to [[_COMMUNITY_Community 11]]
+- 1 edge to [[_COMMUNITY_Community 185]]
+- 1 edge to [[_COMMUNITY_Community 141]]
+- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 120]]
 - 1 edge to [[_COMMUNITY_Community 452]]
 
 ## Top bridge nodes
-- [[TestResourceProtection]] - degree 43, connects to 16 communities
-- [[web_proxy.py]] - degree 27, connects to 12 communities
-- [[DNSFilterConfig]] - degree 49, connects to 7 communities
-- [[EntropyCalculator]] - degree 34, connects to 4 communities
-- [[.__init__()_44]] - degree 12, connects to 4 communities
+- [[dns_filter.py]] - degree 10, connects to 5 communities
+- [[DNSFilterConfig]] - degree 49, connects to 3 communities
+- [[test_dns_filter.py]] - degree 18, connects to 2 communities
+- [[DNSFilter]] - degree 37, connects to 1 community
+- [[TestDNSTunnelingDetection]] - degree 10, connects to 1 community

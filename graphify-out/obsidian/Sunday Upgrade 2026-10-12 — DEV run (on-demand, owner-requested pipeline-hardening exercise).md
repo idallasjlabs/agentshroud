@@ -1,12 +1,12 @@
 ---
 source_file: "reports/upgrade-2026-10-12.md"
 type: "document"
-community: "Community 139"
+community: "Community 1357"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/Community_1357
 ---
 
 # Sunday Upgrade 2026-10-12 — DEV run (on-demand, owner-requested pipeline-hardening exercise)
@@ -22,4 +22,4 @@ tags:
 - [[8. Time spent_5]] - `contains` [EXTRACTED]
 - [[upgrade-2026-10-12]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_139
+#graphify/document #graphify/EXTRACTED #community/Community_1357

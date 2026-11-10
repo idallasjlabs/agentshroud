@@ -1,23 +1,20 @@
 ---
 type: community
-members: 10
+members: 7
 ---
 
 # Community 1942
 
-**Members:** 10 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[.test_empty_returns_none()_1]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_handles_four_component_tags()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_picks_newest_date_tag()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_real_hermes_tail_picks_latest_date()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_rejects_floating_tags()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[Hermes publishes date-based image tags (vYYYY.M.D).]] - rationale - gateway/tests/test_discover_upstream_versions.py
-- [[Newest ``vYYYY.M.D`` Docker tag, ignoring floating tags.      'latest' and 'main]] - rationale - scripts/discover_upstream_versions.py
-- [[TestPickLatestHermesTag]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[latest''main' float and would defeat the whole point of pinning.]] - rationale - gateway/tests/test_discover_upstream_versions.py
-- [[pick_latest_hermes_tag()]] - code - scripts/discover_upstream_versions.py
+- [[.test_blocked_entries()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_failed_entries()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_filter_by_agent()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_filter_by_server()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_filter_by_tool()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_generate_report()]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestAuditQueries]] - code - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,8 +24,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 48]]
+- 6 edges to [[_COMMUNITY_Community 64]]
+- 3 edges to [[_COMMUNITY_Community 54]]
+- 1 edge to [[_COMMUNITY_Community 184]]
+- 1 edge to [[_COMMUNITY_Community 2038]]
+- 1 edge to [[_COMMUNITY_Community 132]]
+- 1 edge to [[_COMMUNITY_Community 59]]
+- 1 edge to [[_COMMUNITY_Community 329]]
 
 ## Top bridge nodes
-- [[pick_latest_hermes_tag()]] - degree 8, connects to 1 community
-- [[TestPickLatestHermesTag]] - degree 7, connects to 1 community
+- [[TestAuditQueries]] - degree 20, connects to 7 communities

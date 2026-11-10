@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "Community 884"
+community: "Community 51"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_884
+  - community/Community_51
 ---
 
 # from_audit_chain_entry()
@@ -20,4 +20,4 @@ tags:
 - [[collect_recent_events()]] - `calls` [EXTRACTED]
 - [[event_adapter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_884
+#graphify/code #graphify/EXTRACTED #community/Community_51

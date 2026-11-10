@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "rationale"
-community: "Community 35"
+community: "Community 541"
 location: "L319"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/Community_541
 ---
 
 # proxy_allowed_domains is populated from the proxy.allowed_domains YAML section.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_proxy_allowed_domains_parsed_from_yaml()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_35
+#graphify/rationale #graphify/EXTRACTED #community/Community_541

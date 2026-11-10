@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "Community 1143"
+community: "Community 439"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1143
+  - community/Community_439
 ---
 
 # MFAGuard
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.__init__()_5]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1143
+#graphify/code #graphify/EXTRACTED #community/Community_439

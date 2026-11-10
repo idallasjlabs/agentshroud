@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Community 736"
+community: "Community 368"
 location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_736
+  - community/Community_368
 ---
 
 # Any
@@ -19,4 +19,4 @@ tags:
 - [[run_upstream_cve_check()]] - `references` [EXTRACTED]
 - [[run_upstream_cve_check_all_agents()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_736
+#graphify/code #graphify/EXTRACTED #community/Community_368

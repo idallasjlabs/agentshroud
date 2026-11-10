@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "rationale"
-community: "Community 22"
+community: "Community 1967"
 location: "L631"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_22
+  - community/Community_1967
 ---
 
 # Return True if prompt_text matches the stored HMAC fingerprint.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.verify_system_prompt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_22
+#graphify/rationale #graphify/EXTRACTED #community/Community_1967

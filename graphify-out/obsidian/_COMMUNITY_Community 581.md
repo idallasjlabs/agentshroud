@@ -1,11 +1,11 @@
 ---
 type: community
-members: 12
+members: 17
 ---
 
 # Community 581
 
-**Members:** 12 nodes
+**Members:** 17 nodes
 
 ## Members
 - [[ADR-001-proxy-layer-inversion]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
@@ -17,9 +17,14 @@ members: 12
 - [[Delegated Authority Model (time-bounded privilege delegation)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
 - [[Enterprise Governance Proxy System (invention)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
 - [[Human-in-the-Loop Approval Queue]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Isaiah's Persona Package (IDENTITY.mdSOUL.mdUSER.md)]] - concept - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Owner vs Bot Telegram Identity Separation]] - concept - docs/architecture/IDENTITY.md
 - [[PII Detection and Redaction Engine]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
 - [[Rationale]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
+- [[Slack Socket Mode Integration Architecture]] - concept - docs/setup-slack.md
+- [[Telegram Bot Setup (BotFather token + gateway config)]] - concept - docs/setup-telegram.md
 - [[Transparent Interception Architecture]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Trust-Differentiated Processing (RBAC tiers)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,7 +35,6 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Community 915]]
-- 1 edge to [[_COMMUNITY_Community 2208]]
 
 ## Top bridge nodes
-- [[Enterprise Governance Proxy System (invention)]] - degree 8, connects to 2 communities
+- [[Enterprise Governance Proxy System (invention)]] - degree 8, connects to 1 community

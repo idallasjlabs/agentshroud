@@ -28,7 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 74]]
+- 1 edge to [[_COMMUNITY_Community 1926]]
 
 ## Top bridge nodes
 - [[Hermes Competitive Intelligence Email (AMPM)_1]] - degree 6, connects to 1 community

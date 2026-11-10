@@ -43,10 +43,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 1]]
-- 2 edges to [[_COMMUNITY_Community 79]]
+- 4 edges to [[_COMMUNITY_Community 1]]
+- 1 edge to [[_COMMUNITY_Community 72]]
 - 1 edge to [[_COMMUNITY_Community 43]]
-- 1 edge to [[_COMMUNITY_Community 61]]
+- 1 edge to [[_COMMUNITY_Community 6]]
 
 ## Top bridge nodes
 - [[TestUserSessionManager]] - degree 17, connects to 4 communities

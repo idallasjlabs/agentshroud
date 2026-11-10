@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Community 102"
+community: "Community 943"
 location: "L746"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_102
+  - community/Community_943
 ---
 
 # Return latest Wazuh alert summary from the shared alert volume.      wazuh-agent
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_wazuh_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_102
+#graphify/rationale #graphify/EXTRACTED #community/Community_943

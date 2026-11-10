@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "Community 378"
+community: "Community 1286"
 location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_378
+  - community/Community_1286
 ---
 
 # _apply_agent_cb()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ui_face.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_378
+#graphify/code #graphify/EXTRACTED #community/Community_1286

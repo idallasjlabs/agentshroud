@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router_openai_translation.py"
 type: "code"
-community: "Community 7"
+community: "Community 80"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/Community_80
 ---
 
 # router()
@@ -16,4 +16,4 @@ tags:
 - [[RouterConfig]] - `calls` [EXTRACTED]
 - [[test_router_openai_translation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/Community_80

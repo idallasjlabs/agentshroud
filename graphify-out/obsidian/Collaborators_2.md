@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup-telegram.md"
 type: "document"
-community: "Community 2315"
+community: "Community 324"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2315
+  - community/Community_324
 ---
 
 # Collaborators
@@ -15,4 +15,4 @@ tags:
 - [[Collaborators_1]] - `conceptually_related_to` [EXTRACTED]
 - [[Telegram Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2315
+#graphify/document #graphify/EXTRACTED #community/Community_324

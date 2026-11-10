@@ -24,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1015]]
+- 1 edge to [[_COMMUNITY_Community 253]]
 
 ## Top bridge nodes
 - [[spaCy]] - degree 7, connects to 1 community

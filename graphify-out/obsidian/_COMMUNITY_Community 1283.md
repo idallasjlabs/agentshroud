@@ -1,18 +1,25 @@
 ---
 type: community
-members: 5
+members: 12
 ---
 
 # Community 1283
 
-**Members:** 5 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[.test_clean_when_installed_not_running()_2]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_not_run_when_not_installed()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_running_report_mtime_timestamp()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_running_without_report()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestClamavSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Cloud & FinOps_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Content & Communication_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Core Development_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Data Operations_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Investigation_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[MCP Tools_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Production Safety_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Reference_2]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[SecureClaw (Project-Specific)_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Skills by Category_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[System Utilities_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Workflow_9]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 312]]
-- 1 edge to [[_COMMUNITY_Community 219]]
+- 1 edge to [[_COMMUNITY_Community 294]]
 
 ## Top bridge nodes
-- [[TestClamavSummary]] - degree 5, connects to 1 community
-- [[.test_running_report_mtime_timestamp()]] - degree 2, connects to 1 community
+- [[Skills by Category_1]] - degree 12, connects to 1 community

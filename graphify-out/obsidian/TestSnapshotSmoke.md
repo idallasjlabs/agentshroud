@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "Community 2134"
+community: "Community 55"
 location: "L625"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2134
+  - community/Community_55
 ---
 
 # TestSnapshotSmoke
@@ -17,4 +17,4 @@ tags:
 - [[.test_openclaw_snapshot_registers_backlog_as_under_review()]] - `method` [EXTRACTED]
 - [[test_sync_cve_registry_ghsa.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2134
+#graphify/code #graphify/EXTRACTED #community/Community_55

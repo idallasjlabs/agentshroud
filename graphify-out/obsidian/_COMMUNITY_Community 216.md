@@ -1,54 +1,55 @@
 ---
 type: community
-members: 41
+members: 42
 ---
 
 # Community 216
 
-**Members:** 41 nodes
+**Members:** 42 nodes
 
 ## Members
-- [[._store_path()]] - code - gateway/tests/test_rbac.py
-- [[.setup_method()_20]] - code - gateway/tests/test_rbac.py
-- [[.setup_method()_21]] - code - gateway/tests/test_rbac.py
-- [[.test_default_config_initialization()]] - code - gateway/tests/test_rbac.py
-- [[.test_get_users_by_role()]] - code - gateway/tests/test_rbac.py
-- [[.test_load_collab_store_returns_empty_on_corrupt_json()]] - code - gateway/tests/test_rbac.py
-- [[.test_load_removed_and_paused_ids_empty_when_no_file()]] - code - gateway/tests/test_rbac.py
-- [[.test_owner_and_collaborators_can_be_overridden_from_env()]] - code - gateway/tests/test_rbac.py
-- [[.test_pause_and_unpause_collaborator()]] - code - gateway/tests/test_rbac.py
-- [[.test_pause_does_not_remove_from_collaborator_role()]] - code - gateway/tests/test_rbac.py
-- [[.test_pause_returns_false_on_inner_write_error()]] - code - gateway/tests/test_rbac.py
-- [[.test_pause_returns_false_on_io_error()]] - code - gateway/tests/test_rbac.py
-- [[.test_persist_and_load_collaborator()]] - code - gateway/tests/test_rbac.py
-- [[.test_persist_is_idempotent()]] - code - gateway/tests/test_rbac.py
-- [[.test_persist_returns_none_on_inner_write_error()]] - code - gateway/tests/test_rbac.py
-- [[.test_persist_returns_none_on_mkdir_error()]] - code - gateway/tests/test_rbac.py
-- [[.test_removed_and_paused_ids_coexist_independently()]] - code - gateway/tests/test_rbac.py
-- [[.test_removed_dynamic_collaborator_excluded_from_effective_set()]] - code - gateway/tests/test_rbac.py
-- [[.test_removed_hardcoded_collaborator_excluded_from_effective_set()]] - code - gateway/tests/test_rbac.py
-- [[.test_revoke_hardcoded_collaborator_records_removal_even_though_never_persisted()]] - code - gateway/tests/test_rbac.py
-- [[.test_revoke_removes_dynamic_collaborator_and_records_removal()]] - code - gateway/tests/test_rbac.py
-- [[.test_revoke_returns_false_on_inner_write_error()]] - code - gateway/tests/test_rbac.py
-- [[.test_revoke_returns_false_on_io_error()]] - code - gateway/tests/test_rbac.py
-- [[.test_role_assignment()]] - code - gateway/tests/test_rbac.py
-- [[.test_role_hierarchy_checks()]] - code - gateway/tests/test_rbac.py
-- [[.test_unpause_returns_false_on_inner_write_error()]] - code - gateway/tests/test_rbac.py
-- [[.test_unpause_returns_false_on_io_error()]] - code - gateway/tests/test_rbac.py
-- [[Bug 1 RBACConfig.__post_init__ must exclude persisted-removed IDs from the]] - rationale - gateway/tests/test_rbac.py
-- [[Bug 1 revoking a hardcoded default (never in approved_collaborators.json)]] - rationale - gateway/tests/test_rbac.py
-- [[Env overrides should drive runtime ownercollaborator identity.]] - rationale - gateway/tests/test_rbac.py
-- [[Pausing is access-gating only, not a roleremoval change (constraint check).]] - rationale - gateway/tests/test_rbac.py
-- [[RBACConfig_3]] - code - gateway/tests/test_rbac.py
-- [[Set up test environment._2]] - rationale - gateway/tests/test_rbac.py
-- [[Set up test environment._3]] - rationale - gateway/tests/test_rbac.py
-- [[Test default RBAC configuration initialization.]] - rationale - gateway/tests/test_rbac.py
-- [[Test dynamic role assignment.]] - rationale - gateway/tests/test_rbac.py
-- [[Test getting users by role.]] - rationale - gateway/tests/test_rbac.py
-- [[Test role hierarchy helper methods.]] - rationale - gateway/tests/test_rbac.py
-- [[TestCollaboratorPersistence]] - code - gateway/tests/test_rbac.py
-- [[Writes to one exclusion set must not clobber the other persisted keys.]] - rationale - gateway/tests/test_rbac.py
-- [[removed_collaborator_ids  paused_collaborator_ids share approved_collaborators.]] - rationale - gateway/tests/test_rbac.py
+- [[._active_send_token()]] - code - gateway/proxy/telegram_proxy.py
+- [[._answer_callback_query()]] - code - gateway/proxy/telegram_proxy.py
+- [[._collaborator_rate_limit_retry_after_seconds()]] - code - gateway/proxy/telegram_proxy.py
+- [[._edit_telegram_message()]] - code - gateway/proxy/telegram_proxy.py
+- [[._forward_to_telegram()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_collaborator_pending_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_local_healthcheck_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_local_help_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_local_model_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_local_notice_with_fallback()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_local_start_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_local_status_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_local_whoami_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_owner_activity_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_owner_collabs_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_owner_pending_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_rate_limit_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_stranger_rate_limit_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_telegram_with_keyboard()]] - code - gateway/proxy/telegram_proxy.py
+- [[._telegram_create_invite_link()]] - code - gateway/proxy/telegram_proxy.py
+- [[._telegram_kick_member()]] - code - gateway/proxy/telegram_proxy.py
+- [[Create a single-use invite link for a Telegram group. Returns URL or None.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Dismiss the Telegram inline button spinner with a brief toast.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Edit an existing Telegram message in-place (removes inline keyboard too).]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Estimate seconds until collaborator rate limit window opens again.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Forward request to real Telegram API and return parsed response.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Kick (ban + unban) a user from a Telegram group. Returns True on success.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Notify a collaborator they have exceeded the hourly rate limit.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Notify an unknownunapproved user they have exceeded the access request rate lim]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Per-request bot token for gateway-originated Telegram sends.          Returns th]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send a Telegram message with an inline keyboard.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send deterministic help command list without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send deterministic start notice without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send deterministic status summary without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send deterministic gateway health status without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send deterministic identityrole notice to simplify approval workflows.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send deterministic model status without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send deterministic owner pending-approval snapshot.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send deterministic pending-approval notice to unknownrevoked users.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send local command response with deterministic fallback text.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send owner a summary of recent collaborator activity (last hour).]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send owner-friendly collaborator roster with known labels.]] - rationale - gateway/proxy/telegram_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -58,15 +59,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_Community 6]]
-- 5 edges to [[_COMMUNITY_Community 72]]
-- 4 edges to [[_COMMUNITY_Community 61]]
-- 3 edges to [[_COMMUNITY_Community 1]]
-- 3 edges to [[_COMMUNITY_Community 223]]
+- 34 edges to [[_COMMUNITY_Community 14]]
 
 ## Top bridge nodes
-- [[TestCollaboratorPersistence]] - degree 30, connects to 5 communities
-- [[RBACConfig_3]] - degree 18, connects to 5 communities
-- [[.setup_method()_20]] - degree 4, connects to 2 communities
-- [[.setup_method()_21]] - degree 4, connects to 2 communities
-- [[.test_default_config_initialization()]] - degree 3, connects to 1 community
+- [[._active_send_token()]] - degree 13, connects to 1 community
+- [[._send_local_notice_with_fallback()]] - degree 13, connects to 1 community
+- [[._send_rate_limit_notice()]] - degree 5, connects to 1 community
+- [[._forward_to_telegram()]] - degree 5, connects to 1 community
+- [[._telegram_create_invite_link()]] - degree 4, connects to 1 community

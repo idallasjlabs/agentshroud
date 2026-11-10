@@ -13,6 +13,7 @@ tags:
 
 ## Connections
 - [[_return_to_main()]] - `calls` [EXTRACTED]
+- [[_switch_to_main()]] - `calls` [EXTRACTED]
 - [[sunday-upgrade.sh]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_118

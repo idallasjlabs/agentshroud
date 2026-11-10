@@ -1,11 +1,11 @@
 ---
 type: community
-members: 31
+members: 30
 ---
 
 # Community 228
 
-**Members:** 31 nodes
+**Members:** 30 nodes
 
 ## Members
 - [[delivery_resume_offset()]] - code - firmware/voice-terminal/main/playback_logic.h
@@ -33,7 +33,6 @@ members: 31
 - [[test_resume_offset_first_attempt_is_zero()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
 - [[test_resume_offset_rewinds_8kb()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
 - [[test_track_sent_ok_is_monotonic()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[tts_task()]] - code - firmware/voice-terminal/main/app_main.c
 - [[vt_agent_count()_1]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
 - [[vt_remote_log()_1]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
 - [[wakeword_set_tts_playing()]] - code - firmware/voice-terminal/main/wakeword.c
@@ -48,14 +47,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_Community 341]]
-- 4 edges to [[_COMMUNITY_Community 378]]
+- 9 edges to [[_COMMUNITY_Community 378]]
+- 5 edges to [[_COMMUNITY_Community 341]]
 - 3 edges to [[_COMMUNITY_Community 358]]
-- 1 edge to [[_COMMUNITY_Community 39]]
+- 1 edge to [[_COMMUNITY_Community 312]]
 
 ## Top bridge nodes
-- [[tts_task()]] - degree 9, connects to 2 communities
-- [[wakeword_tts_playing()]] - degree 8, connects to 2 communities
+- [[wakeword_tts_playing()]] - degree 8, connects to 3 communities
+- [[test_drain_keeps_face_off_idle_when_retriggered()]] - degree 7, connects to 2 communities
+- [[wakeword_set_tts_playing()]] - degree 4, connects to 2 communities
+- [[wakeword_tts_stop_clear()]] - degree 4, connects to 2 communities
 - [[test_playback_state.c]] - degree 18, connects to 1 community
-- [[playback_step()]] - degree 10, connects to 1 community
-- [[reset_all()]] - degree 8, connects to 1 community

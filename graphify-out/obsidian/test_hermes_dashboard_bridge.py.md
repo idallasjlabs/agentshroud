@@ -12,8 +12,10 @@ tags:
 # test_hermes_dashboard_bridge.py
 
 ## Connections
+- [[TestDockerProxyRelayHalfClose]] - `contains` [EXTRACTED]
 - [[TestRewriteRequestHeaders]] - `contains` [EXTRACTED]
 - [[bridge_module()]] - `contains` [EXTRACTED]
 - [[dashboard_bridge.py (Hermes)]] - `implements` [EXTRACTED]
+- [[relay_module()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_808

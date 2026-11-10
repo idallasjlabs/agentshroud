@@ -1,32 +1,42 @@
 ---
 type: community
-members: 19
+members: 29
 ---
 
 # Community 505
 
-**Members:** 19 nodes
+**Members:** 29 nodes
 
 ## Members
-- [[.test_clean_fresh_and_stale_reports()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_clean_no_report_three()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_critical_high_medium_branches()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_failures_score_two()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_fresh_clean_is_optimizing()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_malware_30h_old_scan_measured()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_malware_fresh_scan_optimizing()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_malware_running_but_nothing_scanned()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_not_run_no_binary()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_oscap_binary_present_not_run()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_runtime_noncritical_findings_scores_four()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_stale_report_caps_at_one()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_two_day_old_clean_is_measured()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[Path_38]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[Set a file's mtime to `hours` hours in the past.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
-- [[TestComplianceAuditing]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestRuntimeProtectionAndMalware]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestVulnerabilityManagement]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[_age()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.__init__()_122]] - code - gateway/security/tool_chain_analyzer.py
+- [[._calculate_risk_score()]] - code - gateway/security/tool_chain_analyzer.py
+- [[._cleanup_old_sessions()_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[._detect_chain_patterns()]] - code - gateway/security/tool_chain_analyzer.py
+- [[._load_default_patterns()]] - code - gateway/security/tool_chain_analyzer.py
+- [[._matches_source_pattern()]] - code - gateway/security/tool_chain_analyzer.py
+- [[._trigger_alert()_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[.analyze_tool_call()]] - code - gateway/security/tool_chain_analyzer.py
+- [[.get_global_stats()_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[.get_session_stats()_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[.sanitize_tool_params()]] - code - gateway/security/tool_chain_analyzer.py
+- [[.score_reversibility()]] - code - gateway/security/tool_chain_analyzer.py
+- [[Analyze a tool call for suspicious chain patterns.          Args             se]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Any_62]] - code - gateway/security/tool_chain_analyzer.py
+- [[Calculate risk score for a detected chain.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Check if a call matches the source pattern, including parameter analysis.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Detect if current call completes a suspicious pattern.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Get global analyzer statistics.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Get statistics for a session._1]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Initialize the tool chain analyzer.          Args             config Configura]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Load default suspicious chain patterns.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Remove old sessions to prevent memory bloat._1]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Represents a single tool call.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Return a reversibility score for the given tool call (1.0 = safe, 0.1 = irrevers]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Scan tool parameters for injection payloads and return sanitized copy.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[SessionChainContext]] - code - gateway/security/tool_chain_analyzer.py
+- [[Tool call chain context for a session.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[ToolCall]] - code - gateway/security/tool_chain_analyzer.py
+- [[Trigger alert callbacks for a detected chain.]] - rationale - gateway/security/tool_chain_analyzer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,13 +46,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 219]]
-- 4 edges to [[_COMMUNITY_Community 312]]
-- 1 edge to [[_COMMUNITY_Community 1287]]
+- 12 edges to [[_COMMUNITY_Community 72]]
+- 11 edges to [[_COMMUNITY_Community 8]]
 
 ## Top bridge nodes
-- [[_age()]] - degree 7, connects to 2 communities
-- [[TestComplianceAuditing]] - degree 6, connects to 1 community
-- [[TestVulnerabilityManagement]] - degree 5, connects to 1 community
-- [[TestRuntimeProtectionAndMalware]] - degree 5, connects to 1 community
-- [[.test_two_day_old_clean_is_measured()]] - degree 3, connects to 1 community
+- [[.analyze_tool_call()]] - degree 9, connects to 2 communities
+- [[._detect_chain_patterns()]] - degree 8, connects to 2 communities
+- [[.__init__()_122]] - degree 5, connects to 2 communities
+- [[._matches_source_pattern()]] - degree 5, connects to 2 communities
+- [[._calculate_risk_score()]] - degree 5, connects to 2 communities

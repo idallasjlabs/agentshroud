@@ -30,17 +30,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 52]]
+- 6 edges to [[_COMMUNITY_Community 0]]
+- 5 edges to [[_COMMUNITY_Community 52]]
 - 3 edges to [[_COMMUNITY_Community 11]]
 - 2 edges to [[_COMMUNITY_Community 17]]
-- 2 edges to [[_COMMUNITY_Community 22]]
-- 1 edge to [[_COMMUNITY_Community 146]]
-- 1 edge to [[_COMMUNITY_Community 0]]
-- 1 edge to [[_COMMUNITY_Community 162]]
-- 1 edge to [[_COMMUNITY_Community 93]]
-- 1 edge to [[_COMMUNITY_Community 477]]
+- 2 edges to [[_COMMUNITY_Community 21]]
 - 1 edge to [[_COMMUNITY_Community 24]]
 
 ## Top bridge nodes
-- [[TestPromptGuardEvasion]] - degree 26, connects to 10 communities
+- [[TestPromptGuardEvasion]] - degree 26, connects to 6 communities
 - [[.setup_method()_32]] - degree 2, connects to 1 community

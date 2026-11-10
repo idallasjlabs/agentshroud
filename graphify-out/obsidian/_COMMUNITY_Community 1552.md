@@ -1,24 +1,21 @@
 ---
 type: community
-members: 11
+members: 8
 ---
 
 # Community 1552
 
-**Members:** 11 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Prerequisites_9]] - document - docs/setup-telegram.md
-- [[Step 1 Create a Bot]] - document - docs/setup-telegram.md
-- [[Step 2 Write the Token to Secrets]] - document - docs/setup-telegram.md
-- [[Step 3 Find Your Telegram User ID]] - document - docs/setup-telegram.md
-- [[Step 4 Configure Environment]] - document - docs/setup-telegram.md
-- [[Step 6 Rebuild and Start]] - document - docs/setup-telegram.md
-- [[Step 7 Verify]] - document - docs/setup-telegram.md
-- [[Step 8 Configure Environment]] - document - docs/setup-slack.md
-- [[Telegram Channel Setup]] - document - docs/setup-telegram.md
-- [[Troubleshooting_45]] - document - docs/setup-telegram.md
-- [[setup-telegram]] - document - docs/setup-telegram.md
+- [[Container Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
+- [[Container Won't Stop (Stuck in Stopping)]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
+- [[Exit Code Reference]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
+- [[OOM Kill (Exit Code 137)]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
+- [[Port Already in Use_2]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
+- [[Read-Only Filesystem Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
+- [[Related Notes_56]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
+- [[`no-new-privileges` Security Denial]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,10 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 324]]
-- 1 edge to [[_COMMUNITY_Community 2315]]
-- 1 edge to [[_COMMUNITY_Community 417]]
+- 1 edge to [[_COMMUNITY_Community 1014]]
 
 ## Top bridge nodes
-- [[Telegram Channel Setup]] - degree 12, connects to 2 communities
-- [[Step 8 Configure Environment]] - degree 2, connects to 1 community
+- [[Container Errors_1]] - degree 8, connects to 1 community

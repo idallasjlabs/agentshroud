@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "rationale"
-community: "Community 736"
+community: "Community 368"
 location: "L779"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_736
+  - community/Community_368
 ---
 
 # Per-agent GHSA ids already alerted. Unreadable state means alert again, never si
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_load_alerted_ghsa()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_736
+#graphify/rationale #graphify/EXTRACTED #community/Community_368

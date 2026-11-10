@@ -51,8 +51,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 104]]
-- 1 edge to [[_COMMUNITY_Community 420]]
+- 2 edges to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 162]]
 
 ## Top bridge nodes
 - [[ConfigIntegrityMonitor]] - degree 26, connects to 2 communities

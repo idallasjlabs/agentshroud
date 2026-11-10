@@ -56,7 +56,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Community 185]]
-- 1 edge to [[_COMMUNITY_Community 420]]
+- 1 edge to [[_COMMUNITY_Community 162]]
 
 ## Top bridge nodes
 - [[FR7 Resource Availability]] - degree 3, connects to 2 communities

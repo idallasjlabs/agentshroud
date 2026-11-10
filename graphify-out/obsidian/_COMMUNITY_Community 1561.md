@@ -1,15 +1,21 @@
 ---
 type: community
-members: 2
+members: 8
 ---
 
 # Community 1561
 
-**Members:** 2 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[.test_proxy_request_allows_delayed_starting_then_online_sequence()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Delayed-starting and online notices are distinct and should both forward.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Backward compatibility the default openclaw run must still exit 0.]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[CompletedProcess_1]] - code - gateway/tests/test_agent_cve_registry.py
+- [[Coverage gaps must be loud and must fail an automated caller.]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[Every registry must be reachable, not just openclaw.]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[_run_triage()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_all_agents_flag_exists()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_all_agents_run_reports_untriaged_and_exits_nonzero()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_default_single_agent_run_still_succeeds()]] - code - gateway/tests/test_agent_cve_registry.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +25,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 626]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 845]]
+- 4 edges to [[_COMMUNITY_Community 42]]
 
 ## Top bridge nodes
-- [[.test_proxy_request_allows_delayed_starting_then_online_sequence()]] - degree 4, connects to 3 communities
+- [[_run_triage()]] - degree 5, connects to 1 community
+- [[test_all_agents_flag_exists()]] - degree 3, connects to 1 community
+- [[test_all_agents_run_reports_untriaged_and_exits_nonzero()]] - degree 3, connects to 1 community
+- [[test_default_single_agent_run_still_succeeds()]] - degree 3, connects to 1 community

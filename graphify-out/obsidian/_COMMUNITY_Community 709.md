@@ -32,12 +32,13 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 6 edges to [[_COMMUNITY_Community 81]]
-- 4 edges to [[_COMMUNITY_Community 27]]
+- 2 edges to [[_COMMUNITY_Community 27]]
+- 2 edges to [[_COMMUNITY_Community 120]]
 - 1 edge to [[_COMMUNITY_Community 148]]
 
 ## Top bridge nodes
+- [[StreamReader_2]] - degree 6, connects to 2 communities
+- [[StreamWriter_2]] - degree 6, connects to 2 communities
 - [[._clamav_scan_bytes()]] - degree 4, connects to 2 communities
 - [[._process_connect()]] - degree 8, connects to 1 community
 - [[._relay_and_scan()]] - degree 7, connects to 1 community
-- [[StreamReader_2]] - degree 6, connects to 1 community
-- [[StreamWriter_2]] - degree 6, connects to 1 community

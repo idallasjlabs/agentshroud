@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Community 477"
+community: "Community 0"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_477
+  - community/Community_0
 ---
 
 # Same plaintext should produce different blobs (random salt/nonce).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_different_encryptions_differ()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_477
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

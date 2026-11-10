@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Community 72"
+community: "Community 6"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_6
 ---
 
 # RBACManager
@@ -61,4 +61,4 @@ tags:
 - [[set_user_role()_1]] - `calls` [EXTRACTED]
 - [[test_rbac.py]] - `tests` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/Community_6

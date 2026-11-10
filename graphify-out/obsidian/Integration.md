@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/falco-rules.md"
 type: "document"
-community: "Community 531"
+community: "Community 185"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_531
+  - community/Community_185
 ---
 
 # Integration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[falco-rules.yaml]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_531
+#graphify/document #graphify/EXTRACTED #community/Community_185

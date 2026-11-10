@@ -1,11 +1,11 @@
 ---
 type: community
-members: 17
+members: 18
 ---
 
 # Community 1196
 
-**Members:** 17 nodes
+**Members:** 18 nodes
 
 ## Members
 - [[0. Preflight (both environments)]] - document - prompts/sunday-upgrade.md
@@ -18,6 +18,7 @@ members: 17
 - [[6. Jira tracking (standard procedure, owner directive 2026-08-30)]] - document - prompts/sunday-upgrade.md
 - [[7. Report]] - document - prompts/sunday-upgrade.md
 - [[8. Push notification]] - document - prompts/sunday-upgrade.md
+- [[9. Close the session — the very last action, on every path]] - document - prompts/sunday-upgrade.md
 - [[AgentShroud Weekly Upgrade — Sunday Maintenance Run]] - document - prompts/sunday-upgrade.md
 - [[Cross-account reality (marvin)]] - document - prompts/sunday-upgrade.md
 - [[Ground rules]] - document - prompts/sunday-upgrade.md

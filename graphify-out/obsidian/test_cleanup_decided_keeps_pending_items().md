@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Community 30"
+community: "Community 68"
 location: "L421"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_30
+  - community/Community_68
 ---
 
 # test_cleanup_decided_keeps_pending_items()
@@ -16,4 +16,4 @@ tags:
 - [[cleanup_decided() must not remove pending items regardless of age.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_30
+#graphify/code #graphify/EXTRACTED #community/Community_68

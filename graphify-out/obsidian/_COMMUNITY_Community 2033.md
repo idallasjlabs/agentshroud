@@ -1,20 +1,17 @@
 ---
 type: community
-members: 7
+members: 4
 ---
 
 # Community 2033
 
-**Members:** 7 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_allowed_tool()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_denied_in_monitor_still_allows()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_denied_tool_cronjob()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_denied_tool_delegate_task()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_denied_tool_memory()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_denied_tool_send_message()]] - code - gateway/tests/test_subagent_governance.py
-- [[TestToolAuthorization]] - code - gateway/tests/test_subagent_governance.py
+- [[.send_request()]] - code - gateway/proxy/mcp_proxy.py
+- [[.start()_1]] - code - gateway/proxy/mcp_proxy.py
+- [[Send a JSON-RPC request and read the response.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Start the MCP server process.]] - rationale - gateway/proxy/mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +21,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 1209]]
-- 2 edges to [[_COMMUNITY_Community 1269]]
-- 1 edge to [[_COMMUNITY_Community 1343]]
+- 2 edges to [[_COMMUNITY_Community 132]]
+- 1 edge to [[_COMMUNITY_Community 54]]
 
 ## Top bridge nodes
-- [[TestToolAuthorization]] - degree 12, connects to 3 communities
+- [[.send_request()]] - degree 4, connects to 2 communities
+- [[.start()_1]] - degree 3, connects to 1 community

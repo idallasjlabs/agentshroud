@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Community 762"
+community: "Community 127"
 location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_762
+  - community/Community_127
 ---
 
 # TestFormatCveReport
@@ -25,4 +25,4 @@ tags:
 - [[.test_zero_count_severity_omitted()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_762
+#graphify/code #graphify/EXTRACTED #community/Community_127

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "Community 203"
+community: "Community 16"
 location: "L326"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_203
+  - community/Community_16
 ---
 
 # Get alerts from the last N hours.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_recent_alerts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_203
+#graphify/rationale #graphify/EXTRACTED #community/Community_16

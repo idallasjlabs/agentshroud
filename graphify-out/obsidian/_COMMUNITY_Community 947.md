@@ -1,11 +1,11 @@
 ---
 type: community
-members: 19
+members: 18
 ---
 
 # Community 947
 
-**Members:** 19 nodes
+**Members:** 18 nodes
 
 ## Members
 - [[.setup_method()_28]] - code - gateway/tests/test_security_hardening.py
@@ -23,7 +23,6 @@ members: 19
 - [[.test_sqlite_persistence()]] - code - gateway/tests/test_security_hardening.py
 - [[.test_success_increases_score()]] - code - gateway/tests/test_security_hardening.py
 - [[.test_trust_escalation_attack()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_trust_level_progression()]] - code - gateway/tests/test_security_hardening.py
 - [[.test_violation_large_decrease()]] - code - gateway/tests/test_security_hardening.py
 - [[TestTrustManager]] - code - gateway/tests/test_security_hardening.py
 - [[Verify you can't jump from UNTRUSTED to FULL in one step.]] - rationale - gateway/tests/test_security_hardening.py
@@ -36,20 +35,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 11]]
-- 6 edges to [[_COMMUNITY_Community 52]]
+- 8 edges to [[_COMMUNITY_Community 11]]
+- 5 edges to [[_COMMUNITY_Community 0]]
+- 5 edges to [[_COMMUNITY_Community 52]]
 - 2 edges to [[_COMMUNITY_Community 17]]
-- 1 edge to [[_COMMUNITY_Community 146]]
-- 1 edge to [[_COMMUNITY_Community 0]]
-- 1 edge to [[_COMMUNITY_Community 162]]
-- 1 edge to [[_COMMUNITY_Community 93]]
-- 1 edge to [[_COMMUNITY_Community 477]]
+- 2 edges to [[_COMMUNITY_Community 21]]
 - 1 edge to [[_COMMUNITY_Community 24]]
-- 1 edge to [[_COMMUNITY_Community 22]]
 
 ## Top bridge nodes
-- [[TestTrustManager]] - degree 35, connects to 10 communities
+- [[TestTrustManager]] - degree 35, connects to 6 communities
 - [[.test_trust_escalation_attack()]] - degree 4, connects to 1 community
-- [[.test_trust_level_progression()]] - degree 3, connects to 1 community
 - [[.setup_method()_28]] - degree 2, connects to 1 community
 - [[.test_sqlite_persistence()]] - degree 2, connects to 1 community

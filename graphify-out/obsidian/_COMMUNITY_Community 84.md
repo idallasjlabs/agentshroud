@@ -1,52 +1,115 @@
 ---
 type: community
-members: 73
+members: 143
 ---
 
 # Community 84
 
-**Members:** 73 nodes
+**Members:** 143 nodes
 
 ## Members
 - [[.__init__()_77]] - code - gateway/security/encoding_detector.py
+- [[._maybe_record_trust_violation()]] - code - gateway/proxy/pipeline.py
 - [[.analyze()_1]] - code - gateway/security/encoding_detector.py
 - [[.decode_base64_segments()]] - code - gateway/security/encoding_detector.py
 - [[.decode_hex()]] - code - gateway/security/encoding_detector.py
 - [[.decode_rot13()]] - code - gateway/security/encoding_detector.py
 - [[.decode_url()]] - code - gateway/security/encoding_detector.py
+- [[.get_stats()_6]] - code - gateway/proxy/pipeline.py
+- [[.process_outbound()]] - code - gateway/proxy/pipeline.py
 - [[.replace_homoglyphs()]] - code - gateway/security/encoding_detector.py
+- [[.set_global_mode()]] - code - gateway/proxy/pipeline.py
 - [[.setup_method()_5]] - code - gateway/tests/test_encoding_detector.py
 - [[.strip_zero_width()]] - code - gateway/security/encoding_detector.py
+- [[.test_agents_process_independently()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_base64_content_decoded()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[.test_base64_detected()]] - code - gateway/tests/test_encoding_detector.py
+- [[.test_benign_message_passes()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_canary_token_triggers_block()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_classic_injection_blocked()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_clean_response_not_blocked()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_clean_response_passes_unchanged()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[.test_config_disable_base64()]] - code - gateway/tests/test_encoding_detector.py
+- [[.test_credit_card_stripped_from_response()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_cross_context_injection_blocked()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_email_redacted()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[.test_empty_input()_1]] - code - gateway/tests/test_encoding_detector.py
+- [[.test_encoding_detector_is_wired()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[.test_homoglyph_replaced()]] - code - gateway/tests/test_encoding_detector.py
+- [[.test_jailbreak_blocked()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_low_trust_cannot_delete_file()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[.test_nested_encoding()]] - code - gateway/tests/test_encoding_detector.py
+- [[.test_phone_redacted()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_pii_from_agent_a_not_in_agent_b_audit()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_pipeline_raises_with_only_prompt_guard()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_pipeline_raises_without_pii_sanitizer()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[.test_plain_text_no_detection()]] - code - gateway/tests/test_encoding_detector.py
 - [[.test_short_base64_not_flagged()]] - code - gateway/tests/test_encoding_detector.py
+- [[.test_ssn_redacted()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_trusted_agent_can_send_message()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[.test_url_encoding_detected()]] - code - gateway/tests/test_encoding_detector.py
 - [[.test_zero_width_stripped()]] - code - gateway/tests/test_encoding_detector.py
+- [[.verify_audit_chain()]] - code - gateway/proxy/pipeline.py
+- [[.verify_chain()_1]] - code - gateway/proxy/pipeline.py
 - [[A homoglyph-obfuscated injection is normalized-and-blocked inbound.      The pay]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[A nested base64(base64(injection)) payload is peeled and blocked.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[A plain unencoded benign message is untouched by the encoding step.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Attempting to create a pipeline with no PII sanitizer raises RuntimeError.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Blocking agent A does not affect agent B's processing.]] - rationale - gateway/tests/test_e2e_watchtower.py
 - [[Cleartext injection is not re-rotated into noise (indicator already present).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[Decode rot13-obfuscated injection payloads.          rot13 is self-inverse and a]] - rationale - gateway/security/encoding_detector.py
 - [[DecodedLayer]] - code - gateway/security/encoding_detector.py
 - [[Double-base64 encoded lower-ranked injection is caught (was top-5 only).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[E2E-01 PromptGuard blocks high-confidence injection payloads.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-02 Social security numbers and email are redacted before forwarding.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-03 PII in agent responses is stripped before delivery.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-04 ContextGuard detects session-level injection in multi-turn context.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-05 Canary tokens in responses trigger full block.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-06 Base64 and Unicode encoding bypasses are decoded and processed.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-07 Low-trust agent cannot perform high-risk actions.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-09 Two agents process independently with no cross-contamination.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-10 SecurityPipeline refuses to operate without PII sanitizer.]] - rationale - gateway/tests/test_e2e_watchtower.py
 - [[Empty inbound text is handled without error.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Encoding detector is active in the pipeline.]] - rationale - gateway/tests/test_e2e_watchtower.py
 - [[EncodingConfig]] - code - gateway/security/encoding_detector.py
 - [[EncodingDetector]] - code - gateway/security/encoding_detector.py
 - [[EncodingResult]] - code - gateway/security/encoding_detector.py
 - [[End-to-end scanner STRIPs a base64-encoded lower-ranked injection.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Even with PromptGuard, pipeline refuses to start without PII sanitizer.]] - rationale - gateway/tests/test_e2e_watchtower.py
 - [[Fully percent-encoded injection is decoded-and-blocked on inbound.      The dete]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[If an agent response contains a registered canary value, block it.]] - rationale - gateway/tests/test_e2e_watchtower.py
 - [[If the encoding detector raises, non-owner traffic is blocked (fail-closed).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Injecting a system-level override via a follow-up message is blocked.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Main security pipeline that all messages pass through.      Wires together Prom]] - rationale - gateway/proxy/pipeline.py
 - [[Ordinary base64 content with no injection indicators is forwarded.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[OutputCanary that always crashes.]] - rationale - gateway/tests/test_e2e_watchtower.py
 - [[Owner encoded-injection is audited and allowed, never blocked.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Owner messages should NOT be blocked when security module crashes (owner exempti]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[PII redacted for agent A does not leak into agent B's audit trail.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Pipeline must BLOCK (not pass through) when EnhancedToolResultSanitizer crashes]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Pipeline must BLOCK (not pass through) when OutputCanary crashes for non-owner.]] - rationale - gateway/tests/test_e2e_watchtower.py
 - [[Pipeline wired with the guards relevant to inbound encoding defence.      No Tru]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Process an outbound response through the security pipeline.          Thin wrappe]] - rationale - gateway/proxy/pipeline.py
+- [[Record a trust-score violation and propagate cross-bot decay.          Called on]] - rationale - gateway/proxy/pipeline.py
+- [[Response containing base64-encoded payload is decoded by the pipeline.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Sanitizer that always crashes — simulates module failure.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[SecurityPipeline]] - code - gateway/proxy/pipeline.py
 - [[SecurityPipeline_2]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Set global observatory mode for all security modules.          Args]] - rationale - gateway/proxy/pipeline.py
+- [[TestE2E01PromptGuardBlocking]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E02InboundPIIRedaction]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E03OutboundPIIRedaction]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E04ContextGuardBlocking]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E05CanaryTripwire]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E06EncodingBypassDetection]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E07TrustEnforcement]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E09SessionIsolation]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E10FailClosed]] - code - gateway/tests/test_e2e_watchtower.py
 - [[TestEncodingDetector]] - code - gateway/tests/test_encoding_detector.py
 - [[The check_rot13 config flag gates the rot13 layer.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[WS-E RT-2 Inbound Encoding Bypass Fix Rationale]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Verify the integrity of the retained hash-chain window.          When the bounde]] - rationale - gateway/proxy/pipeline.py
+- [[_BrokenOutputCanary]] - code - gateway/tests/test_e2e_watchtower.py
+- [[_BrokenSanitizer]] - code - gateway/tests/test_e2e_watchtower.py
 - [[_make_pipeline()_4]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[`_check_encoded_content` now matches rules beyond the old top-5 slice.      Fail]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[`_detect_encoded_injection` matches rules beyond the old top-6 slice.      `jail]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
@@ -54,10 +117,14 @@ members: 73
 - [[encoding_detector.py]] - code - gateway/security/encoding_detector.py
 - [[hex-encoded injection is decoded-and-blocked on the inbound path.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[hex-encoded lower-ranked injection is caught by the full ruleset.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[pii_config()_1]] - code - gateway/tests/test_e2e_watchtower.py
+- [[pipeline()_1]] - code - gateway/tests/test_e2e_watchtower.py
 - [[rot13 decode is NOT applied to benign prose (no injection indicators).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[rot13 layer is surfaced when the decoded text reveals injection language.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[rot13-looking prose with no injection indicators is left alone.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[rot13-obfuscated injection is decoded-and-blocked on the inbound path.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[sanitizer()_2]] - code - gateway/tests/test_e2e_watchtower.py
+- [[test_e2e_watchtower.py]] - code - gateway/tests/test_e2e_watchtower.py
 - [[test_encoding_detector.py]] - code - gateway/tests/test_encoding_detector.py
 - [[test_encoding_detector_decodes_rot13_injection()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[test_encoding_detector_rot13_can_be_disabled()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
@@ -75,6 +142,9 @@ members: 73
 - [[test_inbound_rot13_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[test_inbound_unicode_homoglyph_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[test_inbound_url_encoded_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_pipeline_fails_closed_on_enhanced_sanitizer_error()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[test_pipeline_fails_closed_on_output_canary_error()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[test_pipeline_owner_exempt_from_fail_closed()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[test_prompt_guard_double_encoded_uses_full_ruleset()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[test_prompt_guard_encoded_check_uses_full_ruleset()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[test_tool_injection_encoded_check_uses_full_ruleset()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
@@ -90,23 +160,45 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 47 edges to [[_COMMUNITY_Community 24]]
+- 45 edges to [[_COMMUNITY_Community 7]]
+- 32 edges to [[_COMMUNITY_Community 0]]
+- 30 edges to [[_COMMUNITY_Community 11]]
+- 25 edges to [[_COMMUNITY_Community 63]]
 - 13 edges to [[_COMMUNITY_Community 45]]
-- 7 edges to [[_COMMUNITY_Community 24]]
-- 7 edges to [[_COMMUNITY_Community 22]]
-- 7 edges to [[_COMMUNITY_Community 72]]
-- 6 edges to [[_COMMUNITY_Community 7]]
-- 2 edges to [[_COMMUNITY_Community 26]]
-- 2 edges to [[_COMMUNITY_Community 104]]
-- 2 edges to [[_COMMUNITY_Community 63]]
-- 2 edges to [[_COMMUNITY_Community 11]]
-- 2 edges to [[_COMMUNITY_Community 123]]
+- 12 edges to [[_COMMUNITY_Community 72]]
+- 8 edges to [[_COMMUNITY_Community 43]]
+- 7 edges to [[_COMMUNITY_Community 130]]
+- 6 edges to [[_COMMUNITY_Community 103]]
+- 5 edges to [[_COMMUNITY_Community 6]]
+- 5 edges to [[_COMMUNITY_Community 123]]
+- 4 edges to [[_COMMUNITY_Community 206]]
+- 3 edges to [[_COMMUNITY_Community 2154]]
+- 3 edges to [[_COMMUNITY_Community 112]]
+- 3 edges to [[_COMMUNITY_Community 205]]
+- 3 edges to [[_COMMUNITY_Community 1002]]
+- 2 edges to [[_COMMUNITY_Community 94]]
+- 2 edges to [[_COMMUNITY_Community 65]]
+- 2 edges to [[_COMMUNITY_Community 220]]
+- 2 edges to [[_COMMUNITY_Community 181]]
+- 1 edge to [[_COMMUNITY_Community 978]]
+- 1 edge to [[_COMMUNITY_Community 707]]
+- 1 edge to [[_COMMUNITY_Community 81]]
+- 1 edge to [[_COMMUNITY_Community 64]]
+- 1 edge to [[_COMMUNITY_Community 88]]
+- 1 edge to [[_COMMUNITY_Community 37]]
+- 1 edge to [[_COMMUNITY_Community 1426]]
+- 1 edge to [[_COMMUNITY_Community 531]]
+- 1 edge to [[_COMMUNITY_Community 1971]]
+- 1 edge to [[_COMMUNITY_Community 40]]
+- 1 edge to [[_COMMUNITY_Community 1214]]
 - 1 edge to [[_COMMUNITY_Community 56]]
-- 1 edge to [[_COMMUNITY_Community 984]]
-- 1 edge to [[_COMMUNITY_Community 420]]
+- 1 edge to [[_COMMUNITY_Community 141]]
+- 1 edge to [[_COMMUNITY_Community 162]]
 
 ## Top bridge nodes
-- [[EncodingDetector]] - degree 45, connects to 7 communities
-- [[test_ws_e_rt2_inbound_encoding.py]] - degree 31, connects to 5 communities
-- [[SecurityPipeline_2]] - degree 10, connects to 5 communities
-- [[_make_pipeline()_4]] - degree 20, connects to 4 communities
-- [[encoding_detector.py]] - degree 7, connects to 3 communities
+- [[SecurityPipeline]] - degree 142, connects to 29 communities
+- [[_BrokenSanitizer]] - degree 16, connects to 7 communities
+- [[_BrokenOutputCanary]] - degree 15, connects to 7 communities
+- [[test_e2e_watchtower.py]] - degree 30, connects to 6 communities
+- [[TestE2E01PromptGuardBlocking]] - degree 16, connects to 6 communities

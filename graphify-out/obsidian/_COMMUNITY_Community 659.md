@@ -32,7 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 104]]
+- 1 edge to [[_COMMUNITY_Community 707]]
 
 ## Top bridge nodes
 - [[Gateway Layer]] - degree 6, connects to 1 community

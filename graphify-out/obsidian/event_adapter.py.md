@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "Community 884"
+community: "Community 51"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_884
+  - community/Community_51
 ---
 
 # event_adapter.py
@@ -24,4 +24,4 @@ tags:
 - [[models.py_1]] - `imports_from` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_884
+#graphify/code #graphify/EXTRACTED #community/Community_51

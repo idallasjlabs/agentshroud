@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "rationale"
-community: "Community 42"
+community: "Community 1288"
 location: "L116"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_42
+  - community/Community_1288
 ---
 
 # cve_id must be either None or a real-looking CVE id — never junk.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_cve_id_field_only_holds_real_looking_cve_ids()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_42
+#graphify/rationale #graphify/EXTRACTED #community/Community_1288

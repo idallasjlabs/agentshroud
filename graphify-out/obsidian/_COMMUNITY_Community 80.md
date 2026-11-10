@@ -1,84 +1,92 @@
 ---
 type: community
-members: 71
+members: 79
 ---
 
 # Community 80
 
-**Members:** 71 nodes
+**Members:** 79 nodes
 
 ## Members
-- [[.__init__()_192]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.__init__()_193]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.close()_19]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.connect()_2]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.read()_2]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.settimeout()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_200_returns_parsed_json()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_404_returns_empty_dict()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_500_returns_none()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_bytes_payload_is_decoded()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_engine_error_falls_back_to_socket()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_engine_health_mapping()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_engine_status_mapping()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_esrch_falls_through_to_proc_scan()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_exception_returns_empty()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_exception_returns_none()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_falls_back_to_openclaw_only_on_config_load_failure()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_no_engine_no_socket()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_non_200_returns_empty()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_not_installed()_1]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_not_installed()_2]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_not_installed()_3]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_not_installed()_4]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_parses_multiplexed_frames()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_running_via_pid_file()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_running_via_pid_file()_1]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_running_via_proc_scan()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_running_via_proc_scan()_1]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_running_via_proc_scan()_2]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_running_via_socket()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_running_when_content_present()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_running_when_kill_raises_eperm()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_socket_fallback_empty_lines()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_standby_when_no_pid_and_no_process()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_standby_when_no_socket_and_no_process()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_stopped_when_content_missing()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_stopped_when_no_pid_and_no_process()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_tail_limit_applied()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_uses_resolved_container_name_from_real_config()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[Build one Docker multiplexed-log frame (stdout).]] - rationale - gateway/tests/test_soc_services_coverage.py
-- [[EPERM means the process exists but is owned by another user.]] - rationale - gateway/tests/test_soc_services_coverage.py
-- [[Intercept builtins.open for specific paths; delegate everything else.]] - rationale - gateway/tests/test_soc_services_coverage.py
-- [[PermissionError]] - code
-- [[Replace http.client.HTTPConnection so the in-function _UnixHTTP subclass     exe]] - rationale - gateway/tests/test_soc_services_coverage.py
-- [[Stale PID (ESRCH) is not EPERM — falls through to proc scan, then standby.]] - rationale - gateway/tests/test_soc_services_coverage.py
-- [[Stand-in for socket.socket — records calls, never opens a real fd.]] - rationale - gateway/tests/test_soc_services_coverage.py
-- [[TestCheckClamd]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestCheckFluentBit]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestCheckOpenscap]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestCheckWazuhAgent]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestGetLogs]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestInspectViaSocket]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestKnownServices]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestLogsViaSocket]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestStatusMappings]] - code - gateway/tests/test_soc_services_coverage.py
-- [[_FakeResponse]] - code - gateway/tests/test_soc_services_coverage.py
-- [[_FakeUnixSocket]] - code - gateway/tests/test_soc_services_coverage.py
-- [[_check_clamd]] - code - gateway/soc/services.py
-- [[_check_fluent_bit]] - code - gateway/soc/services.py
-- [[_check_openscap]] - code - gateway/soc/services.py
-- [[_check_wazuh_agent]] - code - gateway/soc/services.py
-- [[_frame()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[_inspect_via_socket]] - code - gateway/soc/services.py
-- [[_known_services]] - code - gateway/soc/services.py
-- [[_known_services() must resolve each bot's real container name — not a     hardco]] - rationale - gateway/tests/test_soc_services_coverage.py
-- [[_patch_exists()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[_patch_http_connection()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[_patch_open()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[gatewaysocservices.py (ServiceManager)]] - code - gateway/soc/services.py
-- [[os.path.exists override for specific paths only.]] - rationale - gateway/tests/test_soc_services_coverage.py
-- [[test_soc_services_coverage.py]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.execute()]] - code - gateway/ssh_proxy/proxy.py
+- [[.expand_key_path()]] - code - gateway/ingest_api/ssh_config.py
+- [[.expand_known_hosts()]] - code - gateway/ingest_api/ssh_config.py
+- [[.no_approval_client()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_invalid_router_url_rejected()]] - code - gateway/tests/test_config_validation.py
+- [[.test_invalid_target_url_rejected()]] - code - gateway/tests/test_config_validation.py
+- [[.test_non_auto_approved_executes_directly()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_router_url_must_be_localhost_or_openclaw()]] - code - gateway/tests/test_config_validation.py
+- [[.test_ssh_approval_sanitizes_command_pii()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_ssh_command_uses_strict_checking()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_ssh_disabled_config()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_ssh_exec_auto_approved()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_command_not_in_allowlist()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_cwd_accepted_and_forwarded()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_cwd_invalid_rejects_400()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_cwd_none_forwards_none()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_cwd_relative_path_rejects_400()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_denied_command()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_disabled_returns_503()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_injection_attempt()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_no_auth()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_requires_approval()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_unknown_host()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_history()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_hosts_list()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_strict_host_key_checking_in_source()]] - code - gateway/tests/test_security_fixes.py
+- [[.validate_default_url()]] - code - gateway/ingest_api/config.py
+- [[.validate_targets()]] - code - gateway/ingest_api/config.py
+- [[Approval queue details must be PII-sanitized before storage]] - rationale - gateway/tests/test_security_fixes.py
+- [[Both bots must be reachable via the same router without conflict.]] - rationale - gateway/tests/test_router.py
+- [[Configuration for a single SSH host]] - rationale - gateway/ingest_api/ssh_config.py
+- [[Execute a command on a remote host via SSH.]] - rationale - gateway/ssh_proxy/proxy.py
+- [[Multi-agent router configuration]] - rationale - gateway/ingest_api/config.py
+- [[MultiAgentRouter]] - code - gateway/ingest_api/router.py
+- [[Omitting cwd passes cwd=None to proxy.execute().]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[Result of an SSH command execution]] - rationale - gateway/ssh_proxy/proxy.py
+- [[RouterConfig]] - code - gateway/ingest_api/config.py
+- [[Routes content to appropriate agent containers      Routing priority     1. Exp]] - rationale - gateway/ingest_api/router.py
+- [[SSH exec requiring approval sanitizes PII in command before storing]] - rationale - gateway/tests/test_security_fixes.py
+- [[SSH execute builds command with StrictHostKeyChecking=yes]] - rationale - gateway/tests/test_security_fixes.py
+- [[SSHConfig]] - code - gateway/ingest_api/ssh_config.py
+- [[SSHConfig_2]] - code - gateway/tests/test_ssh_proxy.py
+- [[SSHHostConfig]] - code - gateway/ingest_api/ssh_config.py
+- [[SSHResult]] - code - gateway/ssh_proxy/proxy.py
+- [[Set up app state and provide TestClient.]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[Source code uses StrictHostKeyChecking=yes]] - rationale - gateway/tests/test_security_fixes.py
+- [[Test SSH disabled returns 503 (Finding 12)]] - rationale - gateway/tests/test_ssh_proxy.py
+- [[Test require_approval=false executes directly (Finding 5)]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[Test that SSH disabled returns 503 (Finding 12)]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[TestApprovalQueuePIISanitization]] - code - gateway/tests/test_security_fixes.py
+- [[TestSSHDisabled]] - code - gateway/tests/test_ssh_proxy.py
+- [[TestSSHDisabledEndpoint]] - code - gateway/tests/test_ssh_endpoints.py
+- [[TestSSHExec]] - code - gateway/tests/test_ssh_endpoints.py
+- [[TestSSHHistory]] - code - gateway/tests/test_ssh_endpoints.py
+- [[TestSSHHosts]] - code - gateway/tests/test_ssh_endpoints.py
+- [[TestSSHRequireApprovalFalse]] - code - gateway/tests/test_ssh_endpoints.py
+- [[TestSSHStrictHostKeyChecking]] - code - gateway/tests/test_security_fixes.py
+- [[Top-level MCP proxy configuration.]] - rationale - gateway/proxy/mcp_config.py
+- [[Top-level SSH proxy configuration]] - rationale - gateway/ingest_api/ssh_config.py
+- [[Validate that default_url uses httphttps and targets an internal Docker host.]] - rationale - gateway/ingest_api/config.py
+- [[Validate that each target URL uses httphttps and targets an internal Docker hos]] - rationale - gateway/ingest_api/config.py
+- [[Verify SSH proxy uses StrictHostKeyChecking=yes, not accept-new]] - rationale - gateway/tests/test_security_fixes.py
+- [[When require_approval=false, non-auto-approved commands execute directly.]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[auth_headers()_3]] - code - gateway/tests/test_ssh_endpoints.py
+- [[client()_16]] - code - gateway/tests/test_ssh_endpoints.py
+- [[cwd is validated and passed to proxy.execute().]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[cwd must be an absolute path.]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[cwd with shell metacharacters is rejected before execution.]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[proxy()_3]] - code - gateway/tests/test_ssh_proxy.py
+- [[route_to='hermes' must resolve to the Hermes AgentTarget.]] - rationale - gateway/tests/test_router.py
+- [[router()_2]] - code - gateway/tests/test_router_openai_translation.py
+- [[ssh_config()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[ssh_config()_1]] - code - gateway/tests/test_ssh_proxy.py
+- [[ssh_config.py]] - code - gateway/ingest_api/ssh_config.py
+- [[test_config_with_ssh()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[test_hermes_and_openclaw_coexist()]] - code - gateway/tests/test_router.py
+- [[test_resolves_hermes_target()]] - code - gateway/tests/test_router.py
+- [[test_ssh_endpoints.py]] - code - gateway/tests/test_ssh_endpoints.py
+- [[test_ssh_proxy.py]] - code - gateway/tests/test_ssh_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -88,18 +96,36 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 26 edges to [[_COMMUNITY_Community 20]]
-- 2 edges to [[_COMMUNITY_Community 8]]
-- 1 edge to [[_COMMUNITY_Community 30]]
-- 1 edge to [[_COMMUNITY_Community 439]]
-- 1 edge to [[_COMMUNITY_Community 61]]
-- 1 edge to [[_COMMUNITY_Community 4]]
-- 1 edge to [[_COMMUNITY_Community 126]]
-- 1 edge to [[_COMMUNITY_Community 2030]]
+- 57 edges to [[_COMMUNITY_Community 50]]
+- 44 edges to [[_COMMUNITY_Community 7]]
+- 20 edges to [[_COMMUNITY_Community 25]]
+- 18 edges to [[_COMMUNITY_Community 2051]]
+- 13 edges to [[_COMMUNITY_Community 861]]
+- 11 edges to [[_COMMUNITY_Community 707]]
+- 11 edges to [[_COMMUNITY_Community 30]]
+- 10 edges to [[_COMMUNITY_Community 104]]
+- 8 edges to [[_COMMUNITY_Community 439]]
+- 6 edges to [[_COMMUNITY_Community 36]]
+- 6 edges to [[_COMMUNITY_Community 34]]
+- 5 edges to [[_COMMUNITY_Community 541]]
+- 5 edges to [[_COMMUNITY_Community 78]]
+- 5 edges to [[_COMMUNITY_Community 325]]
+- 5 edges to [[_COMMUNITY_Community 72]]
+- 4 edges to [[_COMMUNITY_Community 105]]
+- 3 edges to [[_COMMUNITY_Community 10]]
+- 3 edges to [[_COMMUNITY_Community 35]]
+- 3 edges to [[_COMMUNITY_Community 92]]
+- 2 edges to [[_COMMUNITY_Community 1360]]
+- 1 edge to [[_COMMUNITY_Community 47]]
+- 1 edge to [[_COMMUNITY_Community 532]]
+- 1 edge to [[_COMMUNITY_Community 229]]
+- 1 edge to [[_COMMUNITY_Community 94]]
+- 1 edge to [[_COMMUNITY_Community 43]]
+- 1 edge to [[_COMMUNITY_Community 54]]
 
 ## Top bridge nodes
-- [[PermissionError]] - degree 6, connects to 3 communities
-- [[test_soc_services_coverage.py]] - degree 24, connects to 2 communities
-- [[_FakeResponse]] - degree 13, connects to 2 communities
-- [[TestKnownServices]] - degree 7, connects to 2 communities
-- [[.test_engine_error_falls_back_to_socket()]] - degree 4, connects to 2 communities
+- [[RouterConfig]] - degree 66, connects to 14 communities
+- [[SSHConfig]] - degree 61, connects to 11 communities
+- [[MultiAgentRouter]] - degree 47, connects to 11 communities
+- [[SSHHostConfig]] - degree 44, connects to 5 communities
+- [[TestSSHExec]] - degree 25, connects to 5 communities

@@ -1,16 +1,17 @@
 ---
 type: community
-members: 9
+members: 10
 ---
 
 # Community 1976
 
-**Members:** 9 nodes
+**Members:** 10 nodes
 
 ## Members
 - [[Approval Request Workflow (user-facing)]] - concept - docs/user-guide.md
 - [[Command Injection Threat — regex + no-shell exec mitigation]] - rationale - docs/ssh-security-review.md
 - [[Host SpoofingMITM Threat — TOFU model residual risk]] - rationale - docs/ssh-security-review.md
+- [[Open Findings (C3-C5, H4-H7, M1-M5)]] - concept - docs/claude-security-audit-prompt.md
 - [[Option 1 Direct SSH (current approach)]] - concept - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
 - [[Production Deployment Recommendations]] - concept - docs/ssh-security-review.md
 - [[SSH AllowDeny List Evaluation Order]] - concept - docs/ssh-configuration.md
@@ -29,4 +30,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 915]]
 
 ## Top bridge nodes
-- [[SSH Proxy Threat Model (6 threats)]] - degree 5, connects to 1 community
+- [[Open Findings (C3-C5, H4-H7, M1-M5)]] - degree 2, connects to 1 community

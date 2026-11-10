@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Community 79"
+community: "Community 1"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_79
+  - community/Community_1
 ---
 
 # Any
@@ -18,4 +18,4 @@ tags:
 - [[.reanchor_system_prompt()]] - `references` [EXTRACTED]
 - [[.to_dict()_12]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_79
+#graphify/code #graphify/EXTRACTED #community/Community_1

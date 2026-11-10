@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "Community 341"
+community: "Community 378"
 location: "L371"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_341
+  - community/Community_378
 ---
 
 # ui_face_set_state()
@@ -19,4 +19,4 @@ tags:
 - [[voice_task()]] - `calls` [INFERRED]
 - [[ws_vg_state_t_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_341
+#graphify/code #graphify/INFERRED #community/Community_378

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "Community 20"
+community: "Community 10"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_20
+  - community/Community_10
 ---
 
 # ContributorManager
@@ -70,4 +70,4 @@ tags:
 - [[router.py_1]] - `imports` [EXTRACTED]
 - [[test_soc_contributors.py]] - `tests` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_20
+#graphify/code #graphify/INFERRED #community/Community_10

@@ -2,7 +2,7 @@
 source_file: "prompts/sunday-upgrade.md"
 type: "document"
 community: "Community 1196"
-location: "L91"
+location: "L96"
 tags:
   - graphify/document
   - graphify/EXTRACTED

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "rationale"
-community: "Community 30"
+community: "Community 108"
 location: "L112"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_30
+  - community/Community_108
 ---
 
 # Simulates a full restart cycle: save, close, reopen, verify.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_store_survives_restart()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_30
+#graphify/rationale #graphify/EXTRACTED #community/Community_108

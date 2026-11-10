@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Community 79"
+community: "Community 1"
 location: "L121"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_79
+  - community/Community_1
 ---
 
 # UserSessionManager
@@ -159,4 +159,4 @@ tags:
 - [[usm()]] - `calls` [EXTRACTED]
 - [[webhook_receiver.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_79
+#graphify/code #graphify/INFERRED #community/Community_1

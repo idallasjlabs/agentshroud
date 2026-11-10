@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Community 29"
+community: "Community 420"
 location: "L2359"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_29
+  - community/Community_420
 ---
 
 # Determine composite compliance level using the weakest-link rule.      All 7 sub
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_determine_compliance_level()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_29
+#graphify/rationale #graphify/EXTRACTED #community/Community_420

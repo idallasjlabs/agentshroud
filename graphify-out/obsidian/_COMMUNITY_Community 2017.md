@@ -1,21 +1,19 @@
 ---
 type: community
-members: 8
+members: 6
 ---
 
 # Community 2017
 
-**Members:** 8 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[Alert Levels]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[Integration with Gateway]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[Key OSSEC Config Sections (Inferred)]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[Purpose_183]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[Related Notes_27]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[Relationship to Other Security Modules]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[What Wazuh Monitors in AgentShroud]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[wazuh-ossec.conf]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[Re-read ``~.llm_settings`` and sync skillsagentsMCP into both bot configs.]] - rationale - gateway/web/api.py
+- [[Re-read ``~.llm_settings``, scan for supply-chain risk, deploy to both bots.]] - rationale - gateway/web/api.py
+- [[Resolve the source (``~.llm_settings``) and bot-config destinations.      Extr]] - rationale - gateway/web/api.py
+- [[_skills_reload_impl()]] - code - gateway/web/api.py
+- [[_skills_reload_paths()]] - code - gateway/web/api.py
+- [[skills_reload()]] - code - gateway/web/api.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +23,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 531]]
+- 3 edges to [[_COMMUNITY_Community 49]]
+- 2 edges to [[_COMMUNITY_Community 83]]
+- 2 edges to [[_COMMUNITY_Community 125]]
+- 1 edge to [[_COMMUNITY_Community 924]]
 
 ## Top bridge nodes
-- [[wazuh-ossec.conf]] - degree 8, connects to 1 community
+- [[_skills_reload_impl()]] - degree 8, connects to 4 communities
+- [[_skills_reload_paths()]] - degree 4, connects to 2 communities
+- [[skills_reload()]] - degree 3, connects to 1 community

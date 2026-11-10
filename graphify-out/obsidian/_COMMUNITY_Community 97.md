@@ -79,14 +79,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 27 edges to [[_COMMUNITY_Community 61]]
+- 21 edges to [[_COMMUNITY_Community 6]]
+- 6 edges to [[_COMMUNITY_Community 196]]
 - 3 edges to [[_COMMUNITY_Community 8]]
-- 3 edges to [[_COMMUNITY_Community 104]]
+- 3 edges to [[_COMMUNITY_Community 72]]
 - 2 edges to [[_COMMUNITY_Community 489]]
 
 ## Top bridge nodes
 - [[PrivacyPolicyEnforcer]] - degree 27, connects to 2 communities
+- [[TestResponseFiltering]] - degree 15, connects to 2 communities
+- [[test_privacy_policy.py]] - degree 14, connects to 2 communities
+- [[TestServiceAccessControl]] - degree 14, connects to 2 communities
 - [[PrivacyPolicy]] - degree 13, connects to 2 communities
-- [[ServicePrivacy]] - degree 12, connects to 2 communities
-- [[privacy_policy.py]] - degree 6, connects to 2 communities
-- [[TestResponseFiltering]] - degree 15, connects to 1 community

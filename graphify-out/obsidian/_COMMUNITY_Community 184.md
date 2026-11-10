@@ -50,22 +50,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 26 edges to [[_COMMUNITY_Community 64]]
+- 28 edges to [[_COMMUNITY_Community 64]]
 - 22 edges to [[_COMMUNITY_Community 132]]
-- 10 edges to [[_COMMUNITY_Community 230]]
-- 9 edges to [[_COMMUNITY_Community 54]]
-- 6 edges to [[_COMMUNITY_Community 329]]
+- 17 edges to [[_COMMUNITY_Community 54]]
+- 5 edges to [[_COMMUNITY_Community 329]]
 - 2 edges to [[_COMMUNITY_Community 941]]
+- 2 edges to [[_COMMUNITY_Community 1970]]
 - 1 edge to [[_COMMUNITY_Community 9]]
-- 1 edge to [[_COMMUNITY_Community 232]]
 - 1 edge to [[_COMMUNITY_Community 24]]
 - 1 edge to [[_COMMUNITY_Community 140]]
-- 1 edge to [[_COMMUNITY_Community 1970]]
-- 1 edge to [[_COMMUNITY_Community 2042]]
+- 1 edge to [[_COMMUNITY_Community 1942]]
 - 1 edge to [[_COMMUNITY_Community 2071]]
+- 1 edge to [[_COMMUNITY_Community 2038]]
 - 1 edge to [[_COMMUNITY_Community 59]]
 
 ## Top bridge nodes
-- [[MCPAuditTrail]] - degree 90, connects to 13 communities
+- [[MCPAuditTrail]] - degree 90, connects to 11 communities
 - [[TestAuditTrailBounded]] - degree 20, connects to 6 communities
 - [[MCPAuditEntry]] - degree 11, connects to 1 community

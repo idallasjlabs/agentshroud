@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Community 736"
+community: "Community 368"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_736
+  - community/Community_368
 ---
 
 # daily_cve_report.py
@@ -40,4 +40,4 @@ tags:
 - [[trivy_report.py]] - `imports_from` [EXTRACTED]
 - [[upstream_cve_check_scheduler()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_736
+#graphify/code #graphify/EXTRACTED #community/Community_368

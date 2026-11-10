@@ -25,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 312]]
+- 2 edges to [[_COMMUNITY_Community 219]]
 
 ## Top bridge nodes
 - [[TestAggregateResults_1]] - degree 6, connects to 1 community

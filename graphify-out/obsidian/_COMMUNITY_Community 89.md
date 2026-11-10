@@ -1,11 +1,11 @@
 ---
 type: community
-members: 65
+members: 66
 ---
 
 # Community 89
 
-**Members:** 65 nodes
+**Members:** 66 nodes
 
 ## Members
 - [[.__init__()_70]] - code - gateway/security/delegation.py
@@ -52,6 +52,7 @@ members: 65
 - [[DelegationManager]] - code - gateway/security/delegation.py
 - [[DelegationManager_1]] - code - gateway/tests/test_delegation.py
 - [[DelegationPrivilege]] - code - gateway/security/delegation.py
+- [[FR2 Use Control]] - concept - docs/compliance/iec-62443-matrix.md
 - [[In-memory delegation manager (no disk IO).]] - rationale - gateway/tests/test_delegation.py
 - [[Manages owner-away privilege delegations.      Thread-safe via file locking for]] - rationale - gateway/security/delegation.py
 - [[Raised when a delegation operation is invalid.]] - rationale - gateway/security/delegation.py
@@ -82,20 +83,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 10]]
 - 3 edges to [[_COMMUNITY_Community 8]]
-- 2 edges to [[_COMMUNITY_Community 104]]
+- 3 edges to [[_COMMUNITY_Community 10]]
+- 2 edges to [[_COMMUNITY_Community 72]]
+- 2 edges to [[_COMMUNITY_Community 223]]
 - 2 edges to [[_COMMUNITY_Community 14]]
 - 1 edge to [[_COMMUNITY_Community 489]]
-- 1 edge to [[_COMMUNITY_Community 61]]
 - 1 edge to [[_COMMUNITY_Community 96]]
-- 1 edge to [[_COMMUNITY_Community 65]]
 - 1 edge to [[_COMMUNITY_Community 133]]
 - 1 edge to [[_COMMUNITY_Community 23]]
+- 1 edge to [[_COMMUNITY_Community 65]]
+- 1 edge to [[_COMMUNITY_Community 75]]
+- 1 edge to [[_COMMUNITY_Community 6]]
+- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 393]]
+- 1 edge to [[_COMMUNITY_Community 904]]
 
 ## Top bridge nodes
+- [[FR2 Use Control]] - degree 7, connects to 6 communities
 - [[DelegationPrivilege]] - degree 25, connects to 5 communities
 - [[DelegationManager]] - degree 26, connects to 2 communities
-- [[delegation.py]] - degree 6, connects to 2 communities
+- [[delegation.py]] - degree 6, connects to 1 community
 - [[.from_dict()_4]] - degree 3, connects to 1 community
-- [[ValueError]] - degree 2, connects to 1 community

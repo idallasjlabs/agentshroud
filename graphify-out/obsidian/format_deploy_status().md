@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "Community 39"
+community: "Community 312"
 location: "L462"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/Community_312
 ---
 
 # format_deploy_status()
@@ -21,4 +21,4 @@ tags:
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[run_deploy_status()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_39
+#graphify/code #graphify/EXTRACTED #community/Community_312

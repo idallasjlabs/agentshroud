@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "rationale"
-community: "Community 978"
+community: "Community 62"
 location: "L454"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/Community_62
 ---
 
 # Serve the dashboard HTML (requires auth via query param or cookie)      On first
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[serve_dashboard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_978
+#graphify/rationale #graphify/EXTRACTED #community/Community_62

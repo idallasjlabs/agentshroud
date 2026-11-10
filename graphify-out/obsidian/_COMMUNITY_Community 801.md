@@ -40,7 +40,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_Community 575]]
-- 1 edge to [[_COMMUNITY_Community 309]]
+- 1 edge to [[_COMMUNITY_Community 1248]]
 
 ## Top bridge nodes
 - [[test_dashboard_endpoints.py]] - degree 20, connects to 2 communities

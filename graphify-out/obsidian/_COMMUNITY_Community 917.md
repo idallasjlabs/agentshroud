@@ -1,33 +1,29 @@
 ---
 type: community
-members: 20
+members: 16
 ---
 
 # Community 917
 
-**Members:** 20 nodes
+**Members:** 16 nodes
 
 ## Members
-- [[.test_apply_writes_registry_and_gap()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[.test_confidence_is_bounded()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[.test_dry_run_writes_nothing()_1]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[.test_gap_report_reflects_full_registry_not_just_this_runs_delta()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[.test_low_confidence_partial_stays_under_review()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[.test_mitigation_narrative_nonempty_when_applied()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[.test_not_source_fixed_full_class_is_fully_mitigated_without_source_fix()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[.test_not_source_fixed_partial_class_is_partially_mitigated()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[.test_source_fixed_full_class_is_fully_mitigated()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[.test_source_fixed_partial_class_upgrades_to_fully()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[.test_uncovered_class_not_source_fixed_is_gap()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[.test_uncovered_class_source_fixed_uses_source_fix()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[.test_unknown_agent_errors()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[.test_unknown_class_not_source_fixed_stays_under_review()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[A version guaranteed newer than the real pinned RUNNING_VERSION, for     tests t]] - rationale - gateway/tests/test_triage_cve_mitigations.py
-- [[TestMain_1]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[TestTriageEntry]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[_entry()_1]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[_not_yet_fixed()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[test_triage_cve_mitigations.py]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[--- new instructions patterns should be stripped.]] - rationale - gateway/tests/test_prompt_guard.py
+- [[.guard()_4]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_preserves_legitimate_markdown()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_strips_fake_system_tags()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_strips_separator_overrides()]] - code - gateway/tests/test_prompt_guard.py
+- [[system style fake tags should be stripped.]] - rationale - gateway/tests/test_prompt_guard.py
+- [[CVE-2026-31045 — indirect prompt injection via tool results]] - concept - gateway/tests/test_prompt_guard.py
+- [[Create a PromptGuard instance for testing]] - rationale - gateway/tests/test_prompt_guard.py
+- [[Normal markdown headers ( Title) should not be stripped.]] - rationale - gateway/tests/test_prompt_guard.py
+- [[Test PromptGuard initialization]] - rationale - gateway/tests/test_prompt_guard.py
+- [[Test that normal messages pass through]] - rationale - gateway/tests/test_prompt_guard.py
+- [[TestReanchorDelimiters]] - code - gateway/tests/test_prompt_guard.py
+- [[prompt_guard()_1]] - code - gateway/tests/test_prompt_guard.py
+- [[test_benign_message()]] - code - gateway/tests/test_prompt_guard.py
+- [[test_prompt_guard.py]] - code - gateway/tests/test_prompt_guard.py
+- [[test_prompt_guard_init()]] - code - gateway/tests/test_prompt_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,15 +33,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 20 edges to [[_COMMUNITY_Community 69]]
-- 3 edges to [[_COMMUNITY_Community 562]]
-- 3 edges to [[_COMMUNITY_Community 2177]]
-- 1 edge to [[_COMMUNITY_Community 2329]]
-- 1 edge to [[_COMMUNITY_Community 2326]]
+- 5 edges to [[_COMMUNITY_Community 0]]
+- 2 edges to [[_COMMUNITY_Community 24]]
+- 2 edges to [[_COMMUNITY_Community 22]]
+- 1 edge to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 614]]
+- 1 edge to [[_COMMUNITY_Community 304]]
+- 1 edge to [[_COMMUNITY_Community 1358]]
+- 1 edge to [[_COMMUNITY_Community 1359]]
+- 1 edge to [[_COMMUNITY_Community 52]]
 
 ## Top bridge nodes
-- [[test_triage_cve_mitigations.py]] - degree 12, connects to 5 communities
-- [[_entry()_1]] - degree 15, connects to 2 communities
-- [[_not_yet_fixed()]] - degree 9, connects to 2 communities
-- [[TestTriageEntry]] - degree 12, connects to 1 community
-- [[TestMain_1]] - degree 6, connects to 1 community
+- [[test_prompt_guard.py]] - degree 14, connects to 9 communities
+- [[TestReanchorDelimiters]] - degree 8, connects to 3 communities
+- [[prompt_guard()_1]] - degree 3, connects to 1 community
+- [[test_prompt_guard_init()]] - degree 3, connects to 1 community
+- [[.guard()_4]] - degree 2, connects to 1 community

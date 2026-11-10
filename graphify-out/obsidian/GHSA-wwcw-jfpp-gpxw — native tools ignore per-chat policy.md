@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "document"
-community: "Community 2099"
+community: "Community 300"
 location: "479"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2099
+  - community/Community_300
 ---
 
 # GHSA-wwcw-jfpp-gpxw — native tools ignore per-chat policy
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Owner-elevation-over-unverified-origin refusal (owner directive 2026-09-15)]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2099
+#graphify/document #graphify/EXTRACTED #community/Community_300

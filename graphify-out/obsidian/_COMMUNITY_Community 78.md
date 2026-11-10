@@ -1,15 +1,16 @@
 ---
 type: community
-members: 75
+members: 72
 ---
 
 # Community 78
 
-**Members:** 75 nodes
+**Members:** 72 nodes
 
 ## Members
 - [[.test_chat_console_script_uses_repo_relative_exec()]] - code - gateway/tests/test_config_validation.py
 - [[.test_compose_sets_nemotron_local_model_overrides()]] - code - gateway/tests/test_config_validation.py
+- [[.test_empty_content_rejected()]] - code - gateway/tests/test_config_validation.py
 - [[.test_gateway_yaml_ssh_hosts_cover_all_lab_hosts()]] - code - gateway/tests/test_config_validation.py
 - [[.test_hermes_dashboard_insecure_optin_is_loopback_bounded()]] - code - gateway/tests/test_config_validation.py
 - [[.test_hermes_dockerfile_installs_xxd()]] - code - gateway/tests/test_config_validation.py
@@ -18,8 +19,6 @@ members: 75
 - [[.test_hermes_soul_has_no_refuse_directive()]] - code - gateway/tests/test_config_validation.py
 - [[.test_hermes_startup_telegram_calls_use_system_header()]] - code - gateway/tests/test_config_validation.py
 - [[.test_init_config_skips_anthropic_auth_seed_for_local_model()]] - code - gateway/tests/test_config_validation.py
-- [[.test_invalid_router_url_rejected()]] - code - gateway/tests/test_config_validation.py
-- [[.test_invalid_target_url_rejected()]] - code - gateway/tests/test_config_validation.py
 - [[.test_lifespan_op_prewarm_guarded_against_pytest()]] - code - gateway/tests/test_config_validation.py
 - [[.test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()]] - code - gateway/tests/test_config_validation.py
 - [[.test_main_compose_sets_openclaw_bind_lan_default()]] - code - gateway/tests/test_config_validation.py
@@ -35,7 +34,6 @@ members: 75
 - [[.test_openclaw_version_pin_is_consistent_across_bot_images()]] - code - gateway/tests/test_config_validation.py
 - [[.test_patch_slack_sdk_pong_patch_is_idempotent()]] - code - gateway/tests/test_config_validation.py
 - [[.test_proxy_allowed_network_default_includes_current_subnets()]] - code - gateway/tests/test_config_validation.py
-- [[.test_router_url_must_be_localhost_or_openclaw()]] - code - gateway/tests/test_config_validation.py
 - [[.test_start_control_center_script_uses_repo_relative_exec()]] - code - gateway/tests/test_config_validation.py
 - [[.test_startup_notifications_use_minimal_message_format()]] - code - gateway/tests/test_config_validation.py
 - [[.test_startup_notifications_wait_for_runtime_readiness()]] - code - gateway/tests/test_config_validation.py
@@ -45,7 +43,6 @@ members: 75
 - [[.test_startup_wrapper_defaults_openclaw_bind_to_loopback()]] - code - gateway/tests/test_config_validation.py
 - [[.test_switch_model_script_exists_with_supported_targets()]] - code - gateway/tests/test_config_validation.py
 - [[.test_switch_model_script_uses_current_target_syntax()]] - code - gateway/tests/test_config_validation.py
-- [[.test_valid_forward_request()]] - code - gateway/tests/test_config_validation.py
 - [[.test_valid_router_url_accepted()]] - code - gateway/tests/test_config_validation.py
 - [[Bot startup should not load Anthropic secrets when Ollama local model is configu]] - rationale - gateway/tests/test_config_validation.py
 - [[Chat console launcher should be robust to current working directory.]] - rationale - gateway/tests/test_config_validation.py
@@ -92,14 +89,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 7]]
+- 5 edges to [[_COMMUNITY_Community 80]]
 - 4 edges to [[_COMMUNITY_Community 92]]
-- 1 edge to [[_COMMUNITY_Community 104]]
+- 1 edge to [[_COMMUNITY_Community 72]]
 - 1 edge to [[_COMMUNITY_Community 36]]
 
 ## Top bridge nodes
 - [[TestConfigValidation]] - degree 45, connects to 3 communities
 - [[.test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()]] - degree 3, connects to 1 community
-- [[.test_invalid_router_url_rejected()]] - degree 2, connects to 1 community
-- [[.test_router_url_must_be_localhost_or_openclaw()]] - degree 2, connects to 1 community
 - [[.test_valid_router_url_accepted()]] - degree 2, connects to 1 community
+- [[.test_empty_content_rejected()]] - degree 2, connects to 1 community

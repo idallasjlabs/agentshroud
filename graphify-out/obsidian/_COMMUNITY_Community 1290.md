@@ -1,18 +1,24 @@
 ---
 type: community
-members: 5
+members: 11
 ---
 
 # Community 1290
 
-**Members:** 5 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[.test_bot_filter_matches_normalised_image()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_missing_dir_returns_empty()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_plain_name_and_mtime_timestamp()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_timestamp_suffix_strip_branch()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestTrivyImageSummaries]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[._setup_proxy_with_capture()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_collab_notified_at_alert_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_collab_notified_at_escalated_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_collab_notified_at_suspended_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_collab_notified_only_once_per_level()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_no_collab_notice_below_alert()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.test_owner_also_notified_on_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[Owner should receive an escalation notice on the 3rd block.]] - rationale - gateway/tests/test_progressive_lockdown.py
+- [[TestCollabLockdownNotifications]] - code - gateway/tests/test_progressive_lockdown.py
+- [[The 4th block stays at ALERT but must NOT fire a second notification.]] - rationale - gateway/tests/test_progressive_lockdown.py
+- [[Verify _quarantine_blocked_message sends threshold warnings to the collaborator.]] - rationale - gateway/tests/test_progressive_lockdown.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,11 +28,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 219]]
-- 1 edge to [[_COMMUNITY_Community 312]]
+- 4 edges to [[_COMMUNITY_Community 75]]
+- 1 edge to [[_COMMUNITY_Community 14]]
 
 ## Top bridge nodes
-- [[TestTrivyImageSummaries]] - degree 5, connects to 1 community
-- [[.test_plain_name_and_mtime_timestamp()]] - degree 2, connects to 1 community
-- [[.test_timestamp_suffix_strip_branch()]] - degree 2, connects to 1 community
-- [[.test_bot_filter_matches_normalised_image()]] - degree 2, connects to 1 community
+- [[TestCollabLockdownNotifications]] - degree 12, connects to 2 communities
+- [[._setup_proxy_with_capture()]] - degree 8, connects to 1 community

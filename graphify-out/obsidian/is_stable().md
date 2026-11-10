@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "code"
-community: "Community 48"
+community: "Community 506"
 location: "L103"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_48
+  - community/Community_506
 ---
 
 # is_stable()
@@ -20,4 +20,4 @@ tags:
 - [[discover_upstream_versions.py]] - `contains` [EXTRACTED]
 - [[pick_latest_stable()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_48
+#graphify/code #graphify/INFERRED #community/Community_506

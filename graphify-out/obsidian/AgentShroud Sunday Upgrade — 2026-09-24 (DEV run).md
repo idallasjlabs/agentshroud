@@ -1,12 +1,12 @@
 ---
 source_file: "reports/upgrade-2026-09-24.md"
 type: "document"
-community: "Community 227"
+community: "Community 1143"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_227
+  - community/Community_1143
 ---
 
 # AgentShroud Sunday Upgrade — 2026-09-24 (DEV run)
@@ -23,4 +23,4 @@ tags:
 - [[8. Time spent_4]] - `contains` [EXTRACTED]
 - [[upgrade-2026-09-24]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_227
+#graphify/document #graphify/EXTRACTED #community/Community_1143

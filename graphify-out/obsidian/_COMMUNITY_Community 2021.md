@@ -1,21 +1,18 @@
 ---
 type: community
-members: 8
+members: 5
 ---
 
 # Community 2021
 
-**Members:** 8 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[Description_9]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
-- [[Effect_1]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
-- [[Related Notes_37]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
-- [[SDK Patch_1]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
-- [[Set In_5]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
-- [[TELEGRAM_API_BASE_URL_1]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
-- [[TELEGRAM_API_BASE_URL]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
-- [[Value_5]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[2. Environment mapping_8]] - document - reports/upgrade-2026-10-25.md
+- [[3. Upgrade table (in progress)]] - document - reports/upgrade-2026-10-25.md
+- [[Progress log (appended as work completes)]] - document - reports/upgrade-2026-10-25.md
+- [[Sunday upgrade 2026-10-25 (DEV run, account agentshroud-bot)]] - document - reports/upgrade-2026-10-25.md
+- [[upgrade-2026-10-25]] - document - reports/upgrade-2026-10-25.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +20,3 @@ members: 8
 TABLE source_file, type FROM #community/Community_2021
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 10]]
-
-## Top bridge nodes
-- [[TELEGRAM_API_BASE_URL]] - degree 2, connects to 1 community

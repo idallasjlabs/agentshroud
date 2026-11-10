@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "Community 45"
+community: "Community 84"
 location: "L383"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_45
+  - community/Community_84
 ---
 
 # _BrokenOutputCanary
@@ -28,4 +28,4 @@ tags:
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 - [[test_pipeline_fails_closed_on_output_canary_error()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_45
+#graphify/code #graphify/INFERRED #community/Community_84

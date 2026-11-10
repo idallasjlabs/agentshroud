@@ -31,17 +31,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 52]]
 - 6 edges to [[_COMMUNITY_Community 17]]
+- 5 edges to [[_COMMUNITY_Community 0]]
+- 5 edges to [[_COMMUNITY_Community 52]]
+- 3 edges to [[_COMMUNITY_Community 21]]
 - 3 edges to [[_COMMUNITY_Community 11]]
-- 2 edges to [[_COMMUNITY_Community 93]]
-- 1 edge to [[_COMMUNITY_Community 146]]
-- 1 edge to [[_COMMUNITY_Community 0]]
-- 1 edge to [[_COMMUNITY_Community 162]]
-- 1 edge to [[_COMMUNITY_Community 477]]
 - 1 edge to [[_COMMUNITY_Community 24]]
-- 1 edge to [[_COMMUNITY_Community 22]]
 
 ## Top bridge nodes
-- [[TestEgressFilter]] - degree 34, connects to 10 communities
+- [[TestEgressFilter]] - degree 34, connects to 6 communities
 - [[.test_empty_ports_allows_all()]] - degree 3, connects to 2 communities

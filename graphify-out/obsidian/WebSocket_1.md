@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "Community 30"
+community: "Community 439"
 location: "L350"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_30
+  - community/Community_439
 ---
 
 # WebSocket
@@ -15,4 +15,4 @@ tags:
 - [[.connect()_1]] - `references` [EXTRACTED]
 - [[.disconnect()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_30
+#graphify/code #graphify/EXTRACTED #community/Community_439

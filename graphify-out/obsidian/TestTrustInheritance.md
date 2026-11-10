@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "Community 72"
+community: "Community 146"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_146
 ---
 
 # TestTrustInheritance
@@ -22,4 +22,4 @@ tags:
 - [[SubagentMonitorConfig]] - `uses` [INFERRED]
 - [[test_subagent_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/Community_146

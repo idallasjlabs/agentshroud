@@ -1,19 +1,15 @@
 ---
 type: community
-members: 6
+members: 2
 ---
 
 # Community 2049
 
-**Members:** 6 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[.__aenter__()_6]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[.__aexit__()_6]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[.__init__()_175]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[.stream()_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[Stands in for httpx.AsyncClient inside LLMProxy._stream().]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_FakeStreamClient]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[.test_nonce_replay_blocked()]] - code - gateway/tests/test_session_security.py
+- [[Replaying the same nonce is rejected.]] - rationale - gateway/tests/test_session_security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,11 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1278]]
-- 1 edge to [[_COMMUNITY_Community 2324]]
-- 1 edge to [[_COMMUNITY_Community 434]]
-- 1 edge to [[_COMMUNITY_Community 5]]
-- 1 edge to [[_COMMUNITY_Community 208]]
+- 1 edge to [[_COMMUNITY_Community 76]]
 
 ## Top bridge nodes
-- [[_FakeStreamClient]] - degree 10, connects to 5 communities
+- [[.test_nonce_replay_blocked()]] - degree 2, connects to 1 community

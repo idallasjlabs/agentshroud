@@ -1,16 +1,22 @@
 ---
 type: community
-members: 3
+members: 9
 ---
 
 # Community 1426
 
-**Members:** 3 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[.test_full_stack()_1]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_missing_auth_module_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestIdentityAuth]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.to_dict()_6]] - code - gateway/security/canary.py
+- [[Any_33]] - code - gateway/security/canary.py
+- [[CanaryCheck]] - code - gateway/security/canary.py
+- [[CanaryResult]] - code - gateway/security/canary.py
+- [[Individual canary check result.]] - rationale - gateway/security/canary.py
+- [[Result of running the canary system.]] - rationale - gateway/security/canary.py
+- [[Run the canary verification system.      Args         pipeline SecurityPipelin]] - rationale - gateway/security/canary.py
+- [[canary.py]] - code - gateway/security/canary.py
+- [[run_canary()]] - code - gateway/security/canary.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,9 +26,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 312]]
-- 1 edge to [[_COMMUNITY_Community 219]]
+- 9 edges to [[_COMMUNITY_Community 43]]
+- 2 edges to [[_COMMUNITY_Community 0]]
+- 2 edges to [[_COMMUNITY_Community 112]]
+- 1 edge to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 84]]
+- 1 edge to [[_COMMUNITY_Community 185]]
+- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 7]]
 
 ## Top bridge nodes
-- [[TestIdentityAuth]] - degree 3, connects to 1 community
-- [[.test_full_stack()_1]] - degree 2, connects to 1 community
+- [[run_canary()]] - degree 20, connects to 6 communities
+- [[canary.py]] - degree 5, connects to 2 communities

@@ -1,24 +1,20 @@
 ---
 type: community
-members: 11
+members: 7
 ---
 
 # Community 1926
 
-**Members:** 11 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[.test_backslash_encoded_rejected()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_dotdot_path_rejected()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_encoded_traversal_rejected()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_mixed_case_encoded_rejected()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_proxy_returns_400_on_traversal()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_proxy_returns_400_on_traversal_in_query()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_safe_path_passes()]] - code - gateway/tests/test_main_endpoints.py
-- [[TestHermesDashboardPathTraversal]] - code - gateway/tests/test_main_endpoints.py
-- [[hermes_dashboard_proxy must reject traversal sequences before forwarding.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[hermes_dashboard_proxy raises HTTPException(400) for traversal in path.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[hermes_dashboard_proxy raises HTTPException(400) for traversal in query string.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Apply inline Markdown spans to plain text (no recursive nesting).]] - rationale - docker/bots/hermes/render_md_email.py
+- [[_esc()]] - code - docker/bots/hermes/render_md_email.py
+- [[_inline()]] - code - docker/bots/hermes/render_md_email.py
+- [[_render_table()]] - code - docker/bots/hermes/render_md_email.py
+- [[main()_4]] - code - docker/bots/hermes/render_md_email.py
+- [[render()]] - code - docker/bots/hermes/render_md_email.py
+- [[render_md_email.py]] - code - docker/bots/hermes/render_md_email.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,11 +24,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 254]]
-- 2 edges to [[_COMMUNITY_Community 53]]
-- 1 edge to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 522]]
+- 1 edge to [[_COMMUNITY_Community 74]]
 
 ## Top bridge nodes
-- [[TestHermesDashboardPathTraversal]] - degree 11, connects to 2 communities
-- [[.test_proxy_returns_400_on_traversal()]] - degree 3, connects to 1 community
-- [[.test_proxy_returns_400_on_traversal_in_query()]] - degree 3, connects to 1 community
+- [[render_md_email.py]] - degree 6, connects to 1 community
+- [[render()]] - degree 5, connects to 1 community

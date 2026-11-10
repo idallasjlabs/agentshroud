@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 20"
+community: "Community 10"
 location: "L222"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_20
+  - community/Community_10
 ---
 
 # AuditLogEntry
@@ -44,4 +44,4 @@ tags:
 - [[models.py_1]] - `contains` [EXTRACTED]
 - [[router.py_1]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_20
+#graphify/code #graphify/INFERRED #community/Community_10

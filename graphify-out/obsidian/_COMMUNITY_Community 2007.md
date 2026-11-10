@@ -25,12 +25,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 626]]
-- 4 edges to [[_COMMUNITY_Community 2]]
-- 4 edges to [[_COMMUNITY_Community 845]]
+- 12 edges to [[_COMMUNITY_Community 2]]
 
 ## Top bridge nodes
-- [[.test_collaborator_empty_text_with_message_payload_is_normalized_json()]] - degree 5, connects to 3 communities
-- [[.test_collaborator_empty_text_with_content_payload_is_normalized_json()]] - degree 5, connects to 3 communities
-- [[.test_collaborator_empty_text_with_draft_payload_is_normalized_json()]] - degree 5, connects to 3 communities
-- [[.test_collaborator_empty_text_with_caption_payload_is_normalized_json()]] - degree 4, connects to 3 communities
+- [[.test_collaborator_empty_text_with_message_payload_is_normalized_json()]] - degree 5, connects to 1 community
+- [[.test_collaborator_empty_text_with_content_payload_is_normalized_json()]] - degree 5, connects to 1 community
+- [[.test_collaborator_empty_text_with_draft_payload_is_normalized_json()]] - degree 5, connects to 1 community
+- [[.test_collaborator_empty_text_with_caption_payload_is_normalized_json()]] - degree 4, connects to 1 community

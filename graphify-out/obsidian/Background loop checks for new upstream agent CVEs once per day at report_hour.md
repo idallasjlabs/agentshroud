@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "rationale"
-community: "Community 736"
+community: "Community 368"
 location: "L873"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_736
+  - community/Community_368
 ---
 
 # Background loop: checks for new upstream agent CVEs once per day at report_hour
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[upstream_cve_check_scheduler()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_736
+#graphify/rationale #graphify/EXTRACTED #community/Community_368

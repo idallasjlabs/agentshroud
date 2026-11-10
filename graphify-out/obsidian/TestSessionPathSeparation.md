@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "Community 2043"
+community: "Community 1305"
 location: "L537"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2043
+  - community/Community_1305
 ---
 
 # TestSessionPathSeparation
@@ -22,4 +22,4 @@ tags:
 - [[Verifies per-bot session path layout is correctly separated.]] - `rationale_for` [EXTRACTED]
 - [[test_security_regressions_v1_2.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2043
+#graphify/code #graphify/EXTRACTED #community/Community_1305

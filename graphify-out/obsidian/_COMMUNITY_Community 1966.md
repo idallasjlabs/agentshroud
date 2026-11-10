@@ -1,22 +1,19 @@
 ---
 type: community
-members: 9
+members: 6
 ---
 
 # Community 1966
 
-**Members:** 9 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[AgentShroud Sunday Upgrade — 2026-09-27, 0800 ET verification pass (DEV run, session 2)]] - document - reports/upgrade-2026-09-27-20260927-0800.md
-- [[Decision no rebuild performed]] - document - reports/upgrade-2026-09-27-20260927-0800.md
-- [[Independent verification performed (all read-only)]] - document - reports/upgrade-2026-09-27-20260927-0800.md
-- [[Manual follow-ups]] - document - reports/upgrade-2026-09-27-20260927-0800.md
-- [[Process correction made Jira ticket SCRUM-187]] - document - reports/upgrade-2026-09-27-20260927-0800.md
-- [[Still open (real, unresolved, carried from this morning — not new)]] - document - reports/upgrade-2026-09-27-20260927-0800.md
-- [[Summary line_6]] - document - reports/upgrade-2026-09-27-20260927-0800.md
-- [[Time spent_3]] - document - reports/upgrade-2026-09-27-20260927-0800.md
-- [[Why this report is short]] - document - reports/upgrade-2026-09-27-20260927-0800.md
+- [[._extract_owner_target()]] - code - gateway/proxy/telegram_proxy.py
+- [[._extract_owner_target_resolved()]] - code - gateway/proxy/telegram_proxy.py
+- [[._resolve_pending_username_target()]] - code - gateway/proxy/telegram_proxy.py
+- [[Parse owner command target as numeric id or known collaborator alias.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Resolve owner target from pending-request username aliases (e.g., approve ana).]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Resolve target by id, static alias, or pending username alias.          Resoluti]] - rationale - gateway/proxy/telegram_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +23,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 118]]
+- 6 edges to [[_COMMUNITY_Community 14]]
 
 ## Top bridge nodes
-- [[AgentShroud Sunday Upgrade — 2026-09-27, 0800 ET verification pass (DEV run, session 2)]] - degree 9, connects to 1 community
+- [[._extract_owner_target_resolved()]] - degree 5, connects to 1 community
+- [[._extract_owner_target()]] - degree 4, connects to 1 community
+- [[._resolve_pending_username_target()]] - degree 4, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Community 32"
+community: "Community 105"
 location: "L368"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Community_105
 ---
 
 # _entity_type_mapping()
@@ -18,4 +18,4 @@ tags:
 - [[test_config.py]] - `imports` [EXTRACTED]
 - [[test_entity_type_mapping()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_32
+#graphify/code #graphify/EXTRACTED #community/Community_105
