@@ -218,6 +218,9 @@ services:
       - AGENTSHROUD_EDGE_PUBLIC_URL=${AGENTSHROUD_EDGE_PUBLIC_URL:-https://marvin.tail240ea8.ts.net:8443}
       - AGENTSHROUD_EDGE_UPSTREAM_HOST=agentshroud-mcp-edge
       - AGENTSHROUD_EDGE_DELEGATE=${AGENTSHROUD_EDGE_DELEGATE:-0}
+      # Comma-separated https RSS URLs for the read-only pke_status tool; empty
+      # (the default) means the tool is not offered. Set per host, never here.
+      - AGENTSHROUD_EDGE_PKE_FEEDS=${AGENTSHROUD_EDGE_PKE_FEEDS:-}
     group_add:
       - "991"   # docker socket GID — read-only service introspection for SOC
     security_opt:

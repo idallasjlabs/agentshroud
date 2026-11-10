@@ -340,6 +340,13 @@ def test_gateway_mounts_edge_config_read_only(env):
     ), volumes
 
 
+@pytest.mark.parametrize("env", ["prod", "dev"])
+def test_gateway_receives_pke_feed_list(env):
+    """service.py reads AGENTSHROUD_EDGE_PKE_FEEDS; without the passthrough the
+    pke_status tool can never be offered, however the host sets the variable."""
+    assert "AGENTSHROUD_EDGE_PKE_FEEDS" in _environment(_svc(_compose(env), GATEWAY))
+
+
 # ── mutation proof: every check fails when its control is removed ───────────────
 
 

@@ -28,6 +28,8 @@ services:
       # EDGE_FUNNEL_PORT=10000 EDGE_LOCAL_PORT=9443). Must match the edge below.
       - AGENTSHROUD_EDGE_PUBLIC_URL=${AGENTSHROUD_EDGE_PUBLIC_URL:-https://marvin.tail240ea8.ts.net:10000}
       - AGENTSHROUD_INSTANCE_LABEL=dev-marvin
+      # pke_status: the owner's public PKE podcast feeds (GitHub Pages).
+      - AGENTSHROUD_EDGE_PKE_FEEDS=${AGENTSHROUD_EDGE_PKE_FEEDS:-https://idallasj.github.io/pke/daily/feed.xml,https://idallasj.github.io/pke/discover/feed.xml,https://idallasj.github.io/pke/feed.xml,https://idallasj.github.io/pke/pke/feed.xml,https://idallasj.github.io/pke/eke/feed.xml,https://idallasj.github.io/pke/itilv4/feed.xml,https://idallasj.github.io/pke/itilv4-dialogue/feed.xml,https://idallasj.github.io/pke/pke/100-essential-ai-terms-for-2026/feed.xml,https://idallasj.github.io/pke/pke/rise-of-autonomous-agents/feed.xml,https://idallasj.github.io/pke/pke/the-agentic-stack/feed.xml,https://idallasj.github.io/pke/eke/introducing-agentshroud/feed.xml}
       # This host renames the gateway container (container_name above), so the
       # daily CVE scan must be told where to look — otherwise it inspects
       # "agentshroud-gateway", misses, and scans a nonexistent :latest tag
