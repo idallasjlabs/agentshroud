@@ -21,8 +21,9 @@ IEC 62443 alignment: FR5 (Restricted Data Flow) — fixed, minimal conduits.
 
 import logging
 import xml.etree.ElementTree as ET  # nosec B405 - size-capped input; expat ≥2.4 limits expansion
+from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
-from typing import Any, Dict, List, Optional
+from typing import Any, Callable, Dict, List, Optional
 
 import httpx
 
@@ -77,10 +78,25 @@ class PkeStatus:
     target = "podcast-feeds"
     requires_local_agent = None
 
-    def __init__(self, feed_urls: List[str], egress_proxy: Optional[str], transport=None):
+    def __init__(
+        self,
+        feed_urls: List[str],
+        egress_proxy: Optional[str],
+        transport=None,
+        clock: Callable[[], datetime] = lambda: datetime.now(timezone.utc),
+    ):
         self._feeds = [u for u in feed_urls if u.startswith("https://")]
         self._proxy = egress_proxy
         self._transport = transport
+        self._clock = clock
+
+    def _age_hours(self, latest_iso: Optional[str]) -> Optional[float]:
+        # The freshness the descriptor promises: a feed whose newest episode is
+        # days old (e.g. a Pages deploy that timed out) shows here, not just a date.
+        if not latest_iso:
+            return None
+        delta = self._clock() - datetime.fromisoformat(latest_iso)
+        return round(delta.total_seconds() / 3600, 1)
 
     @staticmethod
     def _parse(body: bytes) -> Dict[str, Any]:
@@ -118,15 +134,20 @@ class PkeStatus:
                     if len(resp.content) > FEED_MAX_BYTES:
                         feeds.append({"ok": False, "error": "feed too large"})
                         continue
-                    feeds.append(self._parse(resp.content))
+                    parsed = self._parse(resp.content)
+                    if parsed["ok"]:
+                        parsed["age_hours"] = self._age_hours(parsed["latest_episode"])
+                    feeds.append(parsed)
                 except (httpx.HTTPError, ET.ParseError) as exc:
                     feeds.append({"ok": False, "error": type(exc).__name__})
         if args.get("detail", "summary") == "summary":
             latest = [f["latest_episode"] for f in feeds if f.get("latest_episode")]
+            newest = max(latest) if latest else None
             return {
                 "feeds": len(feeds),
                 "healthy": sum(1 for f in feeds if f.get("ok")),
-                "latest_episode": max(latest) if latest else None,
+                "latest_episode": newest,
+                "latest_age_hours": self._age_hours(newest),
             }
         return {"feeds": feeds}
 

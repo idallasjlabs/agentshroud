@@ -7,6 +7,7 @@ from __future__ import annotations
 """Inbound MCP Edge — tool facades (SCRUM-213, SCRUM-214; threat T6)."""
 
 import json
+from datetime import datetime, timezone
 from types import SimpleNamespace
 
 import httpx
@@ -53,6 +54,7 @@ async def test_pke_status_summary_and_per_feed():
         transport=httpx.MockTransport(handler),
     )
     summary = await facade.run({}, CALL)
+    summary.pop("latest_age_hours")  # freshness: see the test below
     assert summary == {"feeds": 1, "healthy": 1, "latest_episode": "2026-11-08T09:35:00+00:00"}
     detail = await facade.run({"detail": "per_feed"}, CALL)
     assert detail["feeds"][0]["episodes"] == 2
@@ -66,6 +68,33 @@ async def test_pke_status_reports_broken_feed_without_raising():
     )
     out = await facade.run({"detail": "per_feed"}, CALL)
     assert out["feeds"][0] == {"ok": False, "error": "ParseError"}
+
+
+async def test_pke_status_reports_freshness_the_descriptor_promises():
+    """The signed descriptor says "freshness per feed" — a stale feed (e.g. a
+    GitHub Pages deploy that timed out) must be visible, not just a date."""
+    now = datetime(2026, 11, 10, 9, 35, tzinfo=timezone.utc)
+    facade = PkeStatus(
+        ["https://idallasj.github.io/a.xml"],
+        None,
+        transport=httpx.MockTransport(lambda r: httpx.Response(200, content=RSS)),
+        clock=lambda: now,
+    )
+    detail = await facade.run({"detail": "per_feed"}, CALL)
+    assert detail["feeds"][0]["age_hours"] == 48.0
+    summary = await facade.run({}, CALL)
+    assert summary["latest_age_hours"] == 48.0
+
+
+async def test_pke_status_freshness_is_none_without_dated_episodes():
+    undated = b"<rss><channel><title>t</title><item/></channel></rss>"
+    facade = PkeStatus(
+        ["https://idallasj.github.io/a.xml"],
+        None,
+        transport=httpx.MockTransport(lambda r: httpx.Response(200, content=undated)),
+    )
+    assert (await facade.run({"detail": "per_feed"}, CALL))["feeds"][0]["age_hours"] is None
+    assert (await facade.run({}, CALL))["latest_age_hours"] is None
 
 
 async def test_delegate_wraps_task_as_untrusted_and_targets_restricted_profile():
