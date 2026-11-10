@@ -1,21 +1,16 @@
 ---
 type: community
-members: 8
+members: 3
 ---
 
 # Community 2043
 
-**Members:** 8 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[.test_path_traversal_rejected_for_crafted_bot_id()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[.test_path_traversal_rejected_for_crafted_user_id()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[.test_user_session_paths_contain_bot_id()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[Session directory path must embed bot_id so filesystem confirms isolation.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[Session manager must reject bot_id with path traversal characters.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[Session manager must reject user_id with path traversal characters.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[TestSessionPathSeparation]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[Verifies per-bot session path layout is correctly separated.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[.__init__()_129]] - code - gateway/soc/auth.py
+- [[RBACManager_2]] - code - gateway/soc/auth.py
+- [[Role_2]] - code - gateway/soc/auth.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +20,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 11]]
-- 1 edge to [[_COMMUNITY_Community 79]]
-- 1 edge to [[_COMMUNITY_Community 60]]
+- 1 edge to [[_COMMUNITY_Community 6]]
+- 1 edge to [[_COMMUNITY_Community 10]]
 
 ## Top bridge nodes
-- [[TestSessionPathSeparation]] - degree 9, connects to 3 communities
+- [[.__init__()_129]] - degree 3, connects to 1 community
+- [[RBACManager_2]] - degree 2, connects to 1 community

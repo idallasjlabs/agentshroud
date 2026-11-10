@@ -1,58 +1,96 @@
 ---
 type: community
-members: 45
+members: 83
 ---
 
 # Community 32
 
-**Members:** 45 nodes
+**Members:** 83 nodes
 
 ## Members
-- [[.base_url()]] - code - gateway/ingest_api/bot_config.py
-- [[.resolved_container_name()]] - code - gateway/ingest_api/bot_config.py
-- [[.test_bot_config_has_telegram_token_secret_field()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_bot_config_image_field_present()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_bot_config_telegram_token_secret_set()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[.test_openclaw_bot_config_backward_compat()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[BotConfig]] - code - gateway/ingest_api/bot_config.py
-- [[BotConfig.base_url computes http{hostname}{port}.]] - rationale - gateway/tests/test_config.py
-- [[Channel ownership configuration (P3 Telegram + email oversight, P5 iMessage)]] - rationale - gateway/ingest_api/config.py
-- [[ChannelsConfig]] - code - gateway/ingest_api/config.py
-- [[Compute the bot's internal base URL from hostname and port.]] - rationale - gateway/ingest_api/bot_config.py
-- [[Declaration for a single bot encapsulated by AgentShroud.      Required bot HTTP]] - rationale - gateway/ingest_api/bot_config.py
-- [[Explicit container_name wins over the 'agentshroud-{id}' convention —     regres]] - rationale - gateway/tests/test_config.py
-- [[Load the real agentshroud.yaml when present (deployment host), else the     comm]] - rationale - gateway/tests/test_config.py
-- [[Map agentshroud.yaml entity names to Presidiointernal entity names]] - rationale - gateway/ingest_api/config.py
-- [[No explicit container_name — derives 'agentshroud-{id}' (openclaw's case).]] - rationale - gateway/tests/test_config.py
-- [[OpenClaw BotConfig must still work without the new fields.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[Return real container names for all configured bots (e.g.     'agentshroud-open]] - rationale - gateway/web/api.py
-- [[RouterConfig must accept the Hermes Docker service hostname.]] - rationale - gateway/tests/test_config.py
-- [[RouterConfig should accept single-label Docker service hostnames.]] - rationale - gateway/tests/test_config.py
-- [[Test PII entity type mapping]] - rationale - gateway/tests/test_config.py
-- [[Test loading configuration from agentshroud.yaml (or the committed example).]] - rationale - gateway/tests/test_config.py
-- [[Test that configuration has sensible defaults]] - rationale - gateway/tests/test_config.py
-- [[Test that load_config() populates bots — from YAML or backward-compat default.]] - rationale - gateway/tests/test_config.py
-- [[TestTelegramBotConfigTokenSecretField]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[The real docker container name for this bot — see container_name field.]] - rationale - gateway/ingest_api/bot_config.py
-- [[Verify BotConfig.telegram_token_secret field is present and defaults correctly.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[When agentshroud.yaml declares hermes, load_config() populates it in bots.]] - rationale - gateway/tests/test_config.py
-- [[_bot_service_names()]] - code - gateway/web/api.py
-- [[_bot_service_names() must use each bot's real container name, not a     hardcode]] - rationale - gateway/tests/test_config.py
-- [[_entity_type_mapping()]] - code - gateway/ingest_api/config.py
-- [[_load_config()]] - code - gateway/tests/test_config.py
-- [[bot_config.py]] - code - gateway/ingest_api/bot_config.py
-- [[test_bot_config_base_url()]] - code - gateway/tests/test_config.py
-- [[test_bot_config_resolved_container_name_defaults_to_agentshroud_id()]] - code - gateway/tests/test_config.py
-- [[test_bot_config_resolved_container_name_uses_explicit_override()]] - code - gateway/tests/test_config.py
-- [[test_bot_service_names_uses_resolved_container_name()]] - code - gateway/tests/test_config.py
-- [[test_config.py]] - code - gateway/tests/test_config.py
-- [[test_config_defaults()]] - code - gateway/tests/test_config.py
-- [[test_entity_type_mapping()]] - code - gateway/tests/test_config.py
-- [[test_load_config()]] - code - gateway/tests/test_config.py
-- [[test_load_config_has_bots()]] - code - gateway/tests/test_config.py
-- [[test_load_config_registers_hermes()]] - code - gateway/tests/test_config.py
-- [[test_router_config_accepts_docker_service_hostname()]] - code - gateway/tests/test_config.py
-- [[test_router_config_accepts_hermes_hostname()]] - code - gateway/tests/test_config.py
+- [[.test_any_python_file_in_gateway_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_case_sensitivity()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_config_yaml_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_docker_compose_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_dockerfile_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_etc_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_gateway_config_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_gateway_source_read_flagged()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_gateway_source_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_modules_source_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_multiple_violations_tracked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_normal_operations_not_violations()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_path_traversal_blocked()_1]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_relative_path_resolution()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_security_module_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_sensitive_config_read_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_soul_md_in_workspace_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_soul_md_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_symlink_resolution()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_system_info_read_allowed()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_system_prompt_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_tmp_write_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_usr_bin_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_var_log_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_violation_recorded_in_audit()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_wildcard_pattern_matching()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_workspace_read_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_workspace_subdirectory_write_allowed()]] - code - gateway/tests/test_privilege_separation.py
+- [[.test_workspace_write_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
+- [[Agent can read basic system info.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent can read its own workspace.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent can still write to its own workspace.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent can write to tmp for temporary files.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent can write to its own workspace directory.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent can write to subdirectories in workspace.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify AgentShroud configuration files.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify AgentShroud's own source code.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify Docker Compose configuration.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify Dockerfile.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify SOUL.md behavioral instructions.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify SOUL.md even in workspace path.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify gateway configuration.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify security policies and behavioral instructions.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify system paths.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify system prompt files.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot read sensitive configuration.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to etc system configuration.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to usrbin system binaries.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to varlog system logs.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to gateway Python source files.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to gateway config directory.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to security framework files.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to security module source files.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Any .py file in gateway directory should be blocked.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Case variations should not bypass protection.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[FileSandbox in enforce mode with strict separation.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Middleware manager for request processing tests.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Multiple violations should all be tracked.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Normal workspace operations should not be flagged as violations.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Path traversal attempts should be blocked.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Reading gateway source should be flaggedblocked.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Relative paths should be resolved properly.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Sandbox with separation of privilege enforcement.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Security violations should be recorded in audit log.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Symlinks should be resolved - symlink to blocked path must be caught.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Test  wildcard patterns work correctly.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Test edge cases and potential bypass attempts.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Test file path pattern matching logic.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Test read access controls.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Test that security violations are properly logged and tracked.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[TestAgentShroudSourceCodeProtection]] - code - gateway/tests/test_privilege_separation.py
+- [[TestConfigurationProtection]] - code - gateway/tests/test_privilege_separation.py
+- [[TestEdgeCases]] - code - gateway/tests/test_privilege_separation.py
+- [[TestPatternMatching]] - code - gateway/tests/test_privilege_separation.py
+- [[TestReadAccess]] - code - gateway/tests/test_privilege_separation.py
+- [[TestSecurityPolicyProtection]] - code - gateway/tests/test_privilege_separation.py
+- [[TestSecurityViolationLogging]] - code - gateway/tests/test_privilege_separation.py
+- [[TestSystemPathProtection]] - code - gateway/tests/test_privilege_separation.py
+- [[TestWorkspaceAccessPreserved]] - code - gateway/tests/test_privilege_separation.py
+- [[enforce_config()]] - code - gateway/tests/test_privilege_separation.py
+- [[middleware_manager()]] - code - gateway/tests/test_privilege_separation.py
+- [[strict_sandbox()_1]] - code - gateway/tests/test_privilege_separation.py
+- [[test_privilege_separation.py]] - code - gateway/tests/test_privilege_separation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -62,19 +100,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 7]]
-- 8 edges to [[_COMMUNITY_Community 104]]
-- 6 edges to [[_COMMUNITY_Community 35]]
-- 5 edges to [[_COMMUNITY_Community 105]]
-- 4 edges to [[_COMMUNITY_Community 49]]
-- 3 edges to [[_COMMUNITY_Community 30]]
-- 2 edges to [[_COMMUNITY_Community 20]]
-- 1 edge to [[_COMMUNITY_Community 474]]
-- 1 edge to [[_COMMUNITY_Community 14]]
+- 22 edges to [[_COMMUNITY_Community 0]]
+- 11 edges to [[_COMMUNITY_Community 72]]
 
 ## Top bridge nodes
-- [[BotConfig]] - degree 33, connects to 7 communities
-- [[ChannelsConfig]] - degree 6, connects to 4 communities
-- [[test_config.py]] - degree 18, connects to 2 communities
-- [[TestTelegramBotConfigTokenSecretField]] - degree 8, connects to 2 communities
-- [[_bot_service_names()]] - degree 8, connects to 2 communities
+- [[test_privilege_separation.py]] - degree 15, connects to 2 communities
+- [[TestAgentShroudSourceCodeProtection]] - degree 9, connects to 2 communities
+- [[TestSecurityPolicyProtection]] - degree 9, connects to 2 communities
+- [[TestReadAccess]] - degree 9, connects to 2 communities
+- [[TestConfigurationProtection]] - degree 8, connects to 2 communities

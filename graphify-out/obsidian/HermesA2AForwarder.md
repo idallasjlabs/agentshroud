@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "Community 271"
+community: "Community 307"
 location: "L425"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_271
+  - community/Community_307
 ---
 
 # HermesA2AForwarder
@@ -31,4 +31,4 @@ tags:
 - [[test_full_round_trip_denied_request_never_reaches_the_peer()]] - `calls` [EXTRACTED]
 - [[test_legitimate_callback_url_is_forwarded_over_real_http()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_271
+#graphify/code #graphify/EXTRACTED #community/Community_307

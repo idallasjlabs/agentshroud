@@ -1,13 +1,14 @@
 ---
 type: community
-members: 19
+members: 22
 ---
 
 # Community 38
 
-**Members:** 19 nodes
+**Members:** 22 nodes
 
 ## Members
+- [[.acceptable()]] - code - gateway/security/subagent_governance.py
 - [[.score_output()]] - code - gateway/security/subagent_governance.py
 - [[.test_api_key_patterns()]] - code - gateway/tests/test_subagent_governance.py
 - [[.test_clean_text_no_patterns()]] - code - gateway/tests/test_subagent_governance.py
@@ -22,6 +23,8 @@ members: 19
 - [[Check text for PII patterns. Returns list of pattern names found.]] - rationale - gateway/security/subagent_governance.py
 - [[Check text for data exfiltration patterns.]] - rationale - gateway/security/subagent_governance.py
 - [[Check text for prompt injection patterns.]] - rationale - gateway/security/subagent_governance.py
+- [[OutputScore]] - code - gateway/security/subagent_governance.py
+- [[Result of scoring a subagent's output.]] - rationale - gateway/security/subagent_governance.py
 - [[Score a subagent's output for safety and quality.          In a full deployment,]] - rationale - gateway/security/subagent_governance.py
 - [[TestPatternDetection]] - code - gateway/tests/test_subagent_governance.py
 - [[_check_exfil_patterns()]] - code - gateway/security/subagent_governance.py
@@ -36,14 +39,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 1209]]
-- 4 edges to [[_COMMUNITY_Community 2207]]
-- 3 edges to [[_COMMUNITY_Community 1269]]
-- 2 edges to [[_COMMUNITY_Community 1343]]
+- 15 edges to [[_COMMUNITY_Community 1209]]
 
 ## Top bridge nodes
-- [[TestPatternDetection]] - degree 16, connects to 3 communities
-- [[.score_output()]] - degree 7, connects to 3 communities
-- [[_check_pii_patterns()]] - degree 9, connects to 2 communities
-- [[_check_exfil_patterns()]] - degree 8, connects to 2 communities
-- [[_check_injection_patterns()]] - degree 7, connects to 2 communities
+- [[TestPatternDetection]] - degree 16, connects to 1 community
+- [[_check_pii_patterns()]] - degree 9, connects to 1 community
+- [[_check_exfil_patterns()]] - degree 8, connects to 1 community
+- [[.score_output()]] - degree 7, connects to 1 community
+- [[_check_injection_patterns()]] - degree 7, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 1425"
+community: "Community 219"
 location: "L639"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1425
+  - community/Community_219
 ---
 
 # TestDaemonConfigReader
@@ -16,4 +16,4 @@ tags:
 - [[.test_reads_daemon_json()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1425
+#graphify/code #graphify/EXTRACTED #community/Community_219

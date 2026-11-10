@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup-slack.md"
 type: "document"
-community: "Community 2315"
+community: "Community 324"
 location: "L156"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2315
+  - community/Community_324
 ---
 
 # Collaborators
@@ -16,4 +16,4 @@ tags:
 - [[Collaborators_2]] - `conceptually_related_to` [EXTRACTED]
 - [[Slack Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2315
+#graphify/document #graphify/EXTRACTED #community/Community_324

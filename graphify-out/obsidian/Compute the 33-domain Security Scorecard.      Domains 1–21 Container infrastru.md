@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Community 29"
+community: "Community 420"
 location: "L2398"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_29
+  - community/Community_420
 ---
 
 # Compute the 33-domain Security Scorecard.      Domains 1–21: Container infrastru
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[compute_scorecard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_29
+#graphify/rationale #graphify/EXTRACTED #community/Community_420

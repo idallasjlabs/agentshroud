@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "Community 978"
+community: "Community 707"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/Community_707
 ---
 
 # approval.py
@@ -29,4 +29,4 @@ tags:
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[submit_approval_request()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_978
+#graphify/code #graphify/EXTRACTED #community/Community_707

@@ -1,17 +1,23 @@
 ---
 type: community
-members: 4
+members: 10
 ---
 
 # Community 1358
 
-**Members:** 4 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[.test_full_compose()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_no_compose_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_unreadable_first_path_falls_through()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestResourceAvailability]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.guard()_3]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_empty_prompt()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_explicit_key_used()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_register_and_verify()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_tamper_detected()]] - code - gateway/tests/test_prompt_guard.py
+- [[Empty prompt should still register and verify cleanly.]] - rationale - gateway/tests/test_prompt_guard.py
+- [[Explicit key parameter should override session key.]] - rationale - gateway/tests/test_prompt_guard.py
+- [[TestSystemPromptHMAC]] - code - gateway/tests/test_prompt_guard.py
+- [[Verifying a tampered prompt should return False.]] - rationale - gateway/tests/test_prompt_guard.py
+- [[register_system_prompt + verify_system_prompt should succeed.]] - rationale - gateway/tests/test_prompt_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,10 +27,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 219]]
-- 1 edge to [[_COMMUNITY_Community 312]]
+- 2 edges to [[_COMMUNITY_Community 0]]
+- 1 edge to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Community 22]]
+- 1 edge to [[_COMMUNITY_Community 917]]
 
 ## Top bridge nodes
-- [[TestResourceAvailability]] - degree 4, connects to 1 community
-- [[.test_full_compose()]] - degree 2, connects to 1 community
-- [[.test_unreadable_first_path_falls_through()]] - degree 2, connects to 1 community
+- [[TestSystemPromptHMAC]] - degree 9, connects to 4 communities
+- [[.guard()_3]] - degree 2, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Community 1128"
+community: "Community 334"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1128
+  - community/Community_334
 ---
 
 # Common Issues
@@ -22,4 +22,4 @@ tags:
 - [[Tests Failing]] - `contains` [EXTRACTED]
 - [[Troubleshooting Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1128
+#graphify/document #graphify/EXTRACTED #community/Community_334

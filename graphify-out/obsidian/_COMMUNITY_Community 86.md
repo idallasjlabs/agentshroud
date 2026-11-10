@@ -1,11 +1,11 @@
 ---
 type: community
-members: 58
+members: 60
 ---
 
 # Community 86
 
-**Members:** 58 nodes
+**Members:** 60 nodes
 
 ## Members
 - [[.__init__()_160]] - code - gateway/tests/test_http_proxy.py
@@ -17,6 +17,7 @@ members: 58
 - [[.write()]] - code - gateway/tests/test_http_proxy.py
 - [[.write()_1]] - code - gateway/tests/test_http_proxy.py
 - [[CONNECT to a private IP is blocked by SSRF protection.]] - rationale - gateway/tests/test_http_proxy.py
+- [[CONNECT tunnel must NOT allow api.telegram.org — forces traffic through reverse]] - rationale - gateway/tests/test_http_proxy.py
 - [[Create a StreamReader loaded with data and a mock StreamWriter.]] - rationale - gateway/tests/test_http_proxy.py
 - [[HTTPConnectProxy ships with a populated default allowlist.]] - rationale - gateway/tests/test_http_proxy.py
 - [[Minimal asyncio.StreamWriter mock that captures written bytes.]] - rationale - gateway/tests/test_http_proxy.py
@@ -63,6 +64,7 @@ members: 58
 - [[test_stats_structure()]] - code - gateway/tests/test_http_proxy.py
 - [[test_system_bypass_domain_logs_external_decision()]] - code - gateway/tests/test_http_proxy.py
 - [[test_system_bypass_without_egress_filter()]] - code - gateway/tests/test_http_proxy.py
+- [[test_telegram_api_blocked_in_connect_proxy()]] - code - gateway/tests/test_http_proxy.py
 - [[test_telegram_is_force_blocked_not_bypass()]] - code - gateway/tests/test_http_proxy.py
 - [[web_config.py (WebProxyConfig)]] - code - gateway/proxy/web_config.py
 - [[web_proxy.py (WebProxy)]] - code - gateway/proxy/web_proxy.py
@@ -76,12 +78,13 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 29 edges to [[_COMMUNITY_Community 81]]
-- 18 edges to [[_COMMUNITY_Community 27]]
-- 3 edges to [[_COMMUNITY_Community 162]]
+- 10 edges to [[_COMMUNITY_Community 27]]
+- 9 edges to [[_COMMUNITY_Community 120]]
+- 3 edges to [[_COMMUNITY_Community 21]]
 
 ## Top bridge nodes
-- [[test_http_proxy.py]] - degree 39, connects to 3 communities
-- [[_MockWriter]] - degree 21, connects to 3 communities
-- [[_DummyTargetWriter]] - degree 8, connects to 3 communities
-- [[test_connect_blocked_domain_returns_403()]] - degree 6, connects to 2 communities
-- [[test_blocked_domain_is_tracked_in_recent()]] - degree 6, connects to 2 communities
+- [[test_http_proxy.py]] - degree 39, connects to 4 communities
+- [[_MockWriter]] - degree 21, connects to 4 communities
+- [[_DummyTargetWriter]] - degree 8, connects to 4 communities
+- [[test_connect_blocked_domain_returns_403()]] - degree 6, connects to 3 communities
+- [[test_blocked_domain_is_tracked_in_recent()]] - degree 6, connects to 3 communities

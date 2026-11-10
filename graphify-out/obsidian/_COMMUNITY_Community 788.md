@@ -18,6 +18,8 @@ members: 22
 - [[.test_load_all_skips_malformed_files()]] - code - gateway/tests/test_intel_pipeline.py
 - [[.test_load_latest_returns_none_when_empty()]] - code - gateway/tests/test_intel_pipeline.py
 - [[.test_multiple_saves_latest_is_newest()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_report_with_whitespace_only_id_rejected()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_report_with_whitespace_only_source_rejected()]] - code - gateway/tests/test_intel_pipeline.py
 - [[.test_save_and_load_latest()]] - code - gateway/tests/test_intel_pipeline.py
 - [[.test_save_with_corrupt_previous_file_falls_back_to_genesis()]] - code - gateway/tests/test_intel_pipeline.py
 - [[.test_store_creates_directory()]] - code - gateway/tests/test_intel_pipeline.py
@@ -27,8 +29,6 @@ members: 22
 - [[If the previous report file is corrupt, save must not raise.]] - rationale - gateway/tests/test_intel_pipeline.py
 - [[IntelReportStore_1]] - code - gateway/tests/test_intel_pipeline.py
 - [[Path_31]] - code - gateway/tests/test_intel_pipeline.py
-- [[Raised when a loaded report fails its hash integrity check.]] - rationale - gateway/security/intel_report.py
-- [[ReportIntegrityError]] - code - gateway/security/intel_report.py
 - [[TestIntelReportStore]] - code - gateway/tests/test_intel_pipeline.py
 
 ## Live Query (requires Dataview plugin)
@@ -39,12 +39,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 19 edges to [[_COMMUNITY_Community 57]]
-- 1 edge to [[_COMMUNITY_Community 108]]
+- 16 edges to [[_COMMUNITY_Community 57]]
 
 ## Top bridge nodes
-- [[ReportIntegrityError]] - degree 11, connects to 2 communities
 - [[TestIntelReportStore]] - degree 23, connects to 1 community
 - [[IntelReportStore_1]] - degree 18, connects to 1 community
 - [[._make_report()]] - degree 13, connects to 1 community
 - [[Path_31]] - degree 11, connects to 1 community
+- [[.test_report_with_whitespace_only_id_rejected()]] - degree 2, connects to 1 community

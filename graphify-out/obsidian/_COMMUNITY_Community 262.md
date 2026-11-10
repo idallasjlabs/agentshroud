@@ -49,7 +49,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 104]]
+- 2 edges to [[_COMMUNITY_Community 72]]
 
 ## Top bridge nodes
 - [[OutputSchemaEnforcer]] - degree 14, connects to 1 community

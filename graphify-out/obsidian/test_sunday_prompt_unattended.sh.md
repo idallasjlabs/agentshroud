@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[fail()_6]] - `defines` [EXTRACTED]
 - [[pass()_4]] - `defines` [EXTRACTED]
+- [[rc_ctx()]] - `defines` [EXTRACTED]
 - [[test_sunday_prompt_unattended.sh script]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_2176

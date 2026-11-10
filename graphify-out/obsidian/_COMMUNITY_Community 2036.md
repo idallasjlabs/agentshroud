@@ -1,21 +1,17 @@
 ---
 type: community
-members: 8
+members: 4
 ---
 
 # Community 2036
 
-**Members:** 8 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[HTTP 400 — Unknown MCP Server]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
-- [[HTTP 403 — MCP Tool Permission Denied]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
-- [[HTTP 429 — MCP Rate Limit Exceeded]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
-- [[HTTP 502 — MCP Server Unreachable]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
-- [[MCP Proxy Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
-- [[MCP Proxy Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
-- [[MCP Proxy Wrapper Issues (Bot Side)]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
-- [[Related Notes_59]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[._enforce_group_workspace_access()]] - code - gateway/proxy/telegram_proxy.py
+- [[._group_workspace_manager()]] - code - gateway/proxy/telegram_proxy.py
+- [[Build a GroupWorkspaceManager from current teamsRBAC config.          Returns a]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Fail-closed member check for a group-context inbound message.          Returns T]] - rationale - gateway/proxy/telegram_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +21,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1015]]
+- 3 edges to [[_COMMUNITY_Community 14]]
+- 1 edge to [[_COMMUNITY_Community 61]]
 
 ## Top bridge nodes
-- [[MCP Proxy Errors_1]] - degree 2, connects to 1 community
+- [[._group_workspace_manager()]] - degree 4, connects to 2 communities
+- [[._enforce_group_workspace_access()]] - degree 4, connects to 1 community

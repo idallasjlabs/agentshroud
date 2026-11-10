@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Community 300"
+community: "Community 1560"
 location: "289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_300
+  - community/Community_1560
 ---
 
 # TrustManager.is_tool_allowed
@@ -15,4 +15,4 @@ tags:
 - [[ToolACLEnforcer._can_use_tool_impl]] - `calls` [EXTRACTED]
 - [[TrustManager.get_trust]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_300
+#graphify/code #graphify/EXTRACTED #community/Community_1560

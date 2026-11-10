@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_contributors.py"
 type: "rationale"
-community: "Community 20"
+community: "Community 890"
 location: "L33"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_20
+  - community/Community_890
 ---
 
 # Bug 2: contributors.py must call get_status(), not the nonexistent get_level().
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestLockdownLevelWiring]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_20
+#graphify/rationale #graphify/EXTRACTED #community/Community_890

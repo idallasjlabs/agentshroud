@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "rationale"
-community: "Community 30"
+community: "Community 108"
 location: "L365"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_30
+  - community/Community_108
 ---
 
 # Process an approval decision.          IEC 62443 FR1: approving a high-risk acti
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.decide()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_30
+#graphify/rationale #graphify/EXTRACTED #community/Community_108

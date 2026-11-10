@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup-telegram.md"
 type: "document"
-community: "Community 1552"
+community: "Community 324"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1552
+  - community/Community_324
 ---
 
 # Telegram Channel Setup
@@ -25,4 +25,4 @@ tags:
 - [[Troubleshooting_45]] - `contains` [EXTRACTED]
 - [[setup-telegram]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1552
+#graphify/document #graphify/EXTRACTED #community/Community_324

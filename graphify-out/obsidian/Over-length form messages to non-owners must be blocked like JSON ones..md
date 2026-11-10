@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 2424"
+community: "Community 2"
 location: "L284"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2424
+  - community/Community_2
 ---
 
 # Over-length form messages to non-owners must be blocked like JSON ones.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_form_outbound_overlength_blocked_for_non_owner()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2424
+#graphify/rationale #graphify/EXTRACTED #community/Community_2

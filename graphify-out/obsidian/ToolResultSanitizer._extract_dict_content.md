@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "Community 1166"
+community: "Community 7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1166
+  - community/Community_7
 ---
 
 # ToolResultSanitizer._extract_dict_content
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ToolResultSanitizer._extract_scannable_content]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1166
+#graphify/code #graphify/EXTRACTED #community/Community_7

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 99"
+community: "Community 2"
 location: "L4868"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_99
+  - community/Community_2
 ---
 
 # TestOwnerMirrorCoalescing
@@ -21,4 +21,4 @@ tags:
 - [[_mirror_to_owner_if_collaborator must coalesce within the window.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_99
+#graphify/code #graphify/INFERRED #community/Community_2

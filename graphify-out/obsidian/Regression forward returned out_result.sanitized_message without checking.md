@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "Community 368"
+community: "Community 325"
 location: "L335"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_368
+  - community/Community_325
 ---
 
 # Regression: /forward returned out_result.sanitized_message without checking
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOutboundBlockedNotDelivered]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_368
+#graphify/rationale #graphify/EXTRACTED #community/Community_325

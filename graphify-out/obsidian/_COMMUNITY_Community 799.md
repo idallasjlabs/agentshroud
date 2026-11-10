@@ -1,11 +1,11 @@
 ---
 type: community
-members: 12
+members: 13
 ---
 
 # Community 799
 
-**Members:** 12 nodes
+**Members:** 13 nodes
 
 ## Members
 - [[7. Deployment]] - document - docs/papers/agentshroud-whitepaper.md
@@ -20,6 +20,7 @@ members: 12
 - [[Related Notes_26]] - document - docs/vault/03 - Configuration/ssh-config.md
 - [[Relationship to agentshroud.yaml]] - document - docs/vault/03 - Configuration/ssh-config.md
 - [[SSH Config]] - document - docs/vault/03 - Configuration/ssh-config.md
+- [[ssh-config]] - document - docs/vault/03 - Configuration/ssh-config.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,6 +35,6 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 299]]
 
 ## Top bridge nodes
-- [[SSH Config]] - degree 7, connects to 1 community
 - [[7. Deployment]] - degree 6, connects to 1 community
 - [[Configuration_25]] - degree 4, connects to 1 community
+- [[ssh-config]] - degree 2, connects to 1 community

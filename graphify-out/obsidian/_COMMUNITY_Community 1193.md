@@ -1,19 +1,25 @@
 ---
 type: community
-members: 6
+members: 12
 ---
 
 # Community 1193
 
-**Members:** 6 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[.test_falco_no_proc_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_falco_running_detected()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_falco_zombie_only_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_wazuh_agent_absent()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_wazuh_agent_detected()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestProcScans]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Approval Queue Health]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Basic Status (No Auth)]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Bot Health Check]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Container Health Check]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Full Health Report (Auth Required)]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Gateway Health Endpoints]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Health Check Intervals (Docker)]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Health Checks_2]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Ledger Health]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Monitoring Script]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Related Notes_67]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Security Health Report]] - document - docs/vault/08 - Runbooks/Health Checks.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,12 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 219]]
-- 1 edge to [[_COMMUNITY_Community 312]]
+- 1 edge to [[_COMMUNITY_Community 1014]]
 
 ## Top bridge nodes
-- [[TestProcScans]] - degree 6, connects to 1 community
-- [[.test_falco_running_detected()]] - degree 2, connects to 1 community
-- [[.test_falco_zombie_only_returns_false()]] - degree 2, connects to 1 community
-- [[.test_wazuh_agent_detected()]] - degree 2, connects to 1 community
-- [[.test_wazuh_agent_absent()]] - degree 2, connects to 1 community
+- [[Health Checks_2]] - degree 10, connects to 1 community

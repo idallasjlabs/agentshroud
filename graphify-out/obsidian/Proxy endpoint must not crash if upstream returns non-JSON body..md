@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "rationale"
-community: "Community 0"
+community: "Community 121"
 location: "L159"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/Community_121
 ---
 
 # Proxy endpoint must not crash if upstream returns non-JSON body.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_v1_endpoint_handles_non_json_upstream_bodies()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/Community_121

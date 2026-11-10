@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "rationale"
-community: "Community 7"
+community: "Community 532"
 location: "L288"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/Community_532
 ---
 
 # Even if trust allows an action, egress filter blocks unauthorized destinations.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_egress_blocks_unauthorized_after_trust_check()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_7
+#graphify/rationale #graphify/EXTRACTED #community/Community_532

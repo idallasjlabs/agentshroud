@@ -1,39 +1,48 @@
 ---
 type: community
-members: 26
+members: 35
 ---
 
 # Community 434
 
-**Members:** 26 nodes
+**Members:** 35 nodes
 
 ## Members
-- [[.test_cpu_limit_check()]] - code - gateway/tests/test_security_audit.py
-- [[.test_disk_write_limit()]] - code - gateway/tests/test_security_audit.py
-- [[.test_memory_limit_check()]] - code - gateway/tests/test_security_audit.py
-- [[.test_resource_guard_init()]] - code - gateway/tests/test_security_audit.py
-- [[.test_setup_resource_guard_returns_real_guard_with_default_limits()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_setup_with_custom_limits_overrides_defaults()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_stop_cancels_monitor_task_and_idempotent()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_usage_stats()]] - code - gateway/tests/test_security_audit.py
-- [[128k token request at 4 bytestoken KV cache triggers rejection at 4096 MB headr]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[Configuration for resource limits.]] - rationale - gateway/security/resource_guard.py
-- [[ResourceGuard is instantiated at startup and reachable on app_state.]] - rationale - gateway/tests/test_resource_guard_wiring.py
-- [[ResourceLimits]] - code - gateway/security/resource_guard.py
-- [[Setup resource guard with custom limits.]] - rationale - gateway/security/resource_guard.py
-- [[Small context request passes VRAM headroom check.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[TestResourceGuardLifecycle]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[TestResourceGuardWiring]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[The lifespan must stop the background monitor task on shutdown.]] - rationale - gateway/tests/test_resource_guard_wiring.py
-- [[VRAM check is skipped when max_vram_headroom_mb=0 (disabled).]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[check_vram_headroom raises VRAMHeadroomError when estimated VRAM exceeds budget.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[setup_resource_guard()]] - code - gateway/security/resource_guard.py
-- [[test_resource_guard.py]] - code - gateway/tests/test_resource_guard.py
-- [[test_resource_guard_vram_estimate_128k_tokens_triggers_rejection()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_resource_guard_vram_headroom_check_allows_small_context()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_resource_guard_vram_headroom_check_disabled_when_threshold_zero()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_resource_guard_vram_headroom_check_raises_on_insufficient_vram()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_resource_guard_wiring.py]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[._classify_heuristic()]] - code - gateway/security/heuristic_classifier.py
+- [[._classify_ml()]] - code - gateway/security/heuristic_classifier.py
+- [[._compute_unicode_anomaly()]] - code - gateway/security/heuristic_classifier.py
+- [[._score_signal()]] - code - gateway/security/heuristic_classifier.py
+- [[.classify()]] - code - gateway/security/heuristic_classifier.py
+- [[.is_injection()]] - code - gateway/security/heuristic_classifier.py
+- [[.is_uncertain()]] - code - gateway/security/heuristic_classifier.py
+- [[.setup_method()_6]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_backward_compat_alias()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_benign_text_low_score()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_classification_result_properties()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_clear_injection_high_score()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_cyrillic_homoglyph()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_empty_text()_1]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_encoding_evasion()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_exfiltration_attempt()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_long_benign_text()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_model_not_loaded_by_default()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_multi_signal_increases_confidence()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_roleplay_attack()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_separator_injection()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_unicode_anomaly()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[ClassificationResult]] - code - gateway/security/heuristic_classifier.py
+- [[Classify text for injection probability.          Args             text Input]] - rationale - gateway/security/heuristic_classifier.py
+- [[Detect unusual Unicode patterns that suggest evasion.]] - rationale - gateway/security/heuristic_classifier.py
+- [[Heuristic-based classification using multi-signal analysis.]] - rationale - gateway/security/heuristic_classifier.py
+- [[InjectionClassifier alias should still work.]] - rationale - gateway/tests/test_heuristic_classifier.py
+- [[Pattern]] - code - gateway/security/heuristic_classifier.py
+- [[Result of injection classification.]] - rationale - gateway/security/heuristic_classifier.py
+- [[Score a single signal pattern. Returns 0.0–1.0.]] - rationale - gateway/security/heuristic_classifier.py
+- [[Test the heuristic injection classifier.]] - rationale - gateway/tests/test_heuristic_classifier.py
+- [[TestHeuristicClassifier]] - code - gateway/tests/test_heuristic_classifier.py
+- [[EXPERIMENTAL ML model classification placeholder.]] - rationale - gateway/security/heuristic_classifier.py
+- [[heuristic_classifier.py (HeuristicClassifier)]] - code - gateway/security/heuristic_classifier.py
+- [[test_heuristic_classifier.py]] - code - gateway/tests/test_heuristic_classifier.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,25 +52,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 16 edges to [[_COMMUNITY_Community 5]]
-- 10 edges to [[_COMMUNITY_Community 2324]]
-- 9 edges to [[_COMMUNITY_Community 0]]
-- 6 edges to [[_COMMUNITY_Community 431]]
-- 5 edges to [[_COMMUNITY_Community 208]]
-- 5 edges to [[_COMMUNITY_Community 479]]
-- 3 edges to [[_COMMUNITY_Community 1945]]
-- 2 edges to [[_COMMUNITY_Community 104]]
-- 2 edges to [[_COMMUNITY_Community 506]]
-- 1 edge to [[_COMMUNITY_Community 978]]
-- 1 edge to [[_COMMUNITY_Community 2049]]
-- 1 edge to [[_COMMUNITY_Community 2004]]
-- 1 edge to [[_COMMUNITY_Community 196]]
-- 1 edge to [[_COMMUNITY_Community 41]]
-- 1 edge to [[_COMMUNITY_Community 509]]
+- 8 edges to [[_COMMUNITY_Community 187]]
+- 1 edge to [[_COMMUNITY_Community 162]]
 
 ## Top bridge nodes
-- [[ResourceLimits]] - degree 51, connects to 14 communities
-- [[setup_resource_guard()]] - degree 9, connects to 3 communities
-- [[test_resource_guard_wiring.py]] - degree 7, connects to 2 communities
-- [[test_resource_guard_vram_headroom_check_raises_on_insufficient_vram()]] - degree 4, connects to 2 communities
-- [[test_resource_guard_vram_headroom_check_allows_small_context()]] - degree 4, connects to 2 communities
+- [[TestHeuristicClassifier]] - degree 19, connects to 1 community
+- [[ClassificationResult]] - degree 10, connects to 1 community
+- [[._classify_heuristic()]] - degree 7, connects to 1 community
+- [[.classify()]] - degree 5, connects to 1 community
+- [[._classify_ml()]] - degree 5, connects to 1 community

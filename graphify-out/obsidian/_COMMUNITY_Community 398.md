@@ -1,11 +1,11 @@
 ---
 type: community
-members: 23
+members: 24
 ---
 
 # Community 398
 
-**Members:** 23 nodes
+**Members:** 24 nodes
 
 ## Members
 - [[AgentShroud Security Scripts Reference]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
@@ -24,6 +24,7 @@ members: 23
 - [[SECURITY_SCRIPTS_REFERENCE]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[Script Permissions]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[Troubleshooting_43]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[VERIFICATION_RESULTS]] - document - docs/security/VERIFICATION_RESULTS.md
 - [[Weekly Compliance Scan (cron)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[killswitch.sh_1]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[killswitch.sh doesn't confirm]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
@@ -40,11 +41,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 1315]]
 - 1 edge to [[_COMMUNITY_Community 465]]
 - 1 edge to [[_COMMUNITY_Community 164]]
+- 1 edge to [[_COMMUNITY_Community 1016]]
 - 1 edge to [[_COMMUNITY_Community 655]]
+- 1 edge to [[_COMMUNITY_Community 1315]]
+- 1 edge to [[_COMMUNITY_Community 478]]
 
 ## Top bridge nodes
-- [[Kill Switch]] - degree 9, connects to 4 communities
-- [[verify-security.sh_1]] - degree 3, connects to 1 community
+- [[Kill Switch]] - degree 9, connects to 3 communities
+- [[VERIFICATION_RESULTS]] - degree 5, connects to 3 communities

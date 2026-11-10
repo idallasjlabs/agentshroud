@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "Community 2046"
+community: "Community 364"
 location: "L727"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2046
+  - community/Community_364
 ---
 
 # Python (for testing tools)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 2 Development Tools_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2046
+#graphify/document #graphify/EXTRACTED #community/Community_364

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "rationale"
-community: "Community 24"
+community: "Community 88"
 location: "L126"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/Community_88
 ---
 
 # Shared trust decay channel for multi-bot deployments.      Usage::          ledg
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CrossBotTrustLedger]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_24
+#graphify/rationale #graphify/EXTRACTED #community/Community_88

@@ -1,22 +1,19 @@
 ---
 type: community
-members: 9
+members: 6
 ---
 
 # Community 1969
 
-**Members:** 9 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[OOM (503 backend_unavailable from primary local) triggers secondary local failov]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[Secondary failover for Anthropic-format (v1messages) path translates and retur]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_is_local_oom returns False for successful responses.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_openai_ok()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[p99 timeout (TimeoutError on primary local) triggers secondary local model.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_is_local_oom_returns_false_for_200()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_oom_triggers_secondary_failover()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_p99_timeout_triggers_secondary_failover()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_secondary_failover_anthropic_path()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[.test_clean_when_installed_not_running()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_not_run_when_no_alert_dir()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_returns_summary_for_empty_dir()]] - code - gateway/tests/test_scanner_integration.py
+- [[Return latest Falco alert summary from the local alert directory.      CC-20 If]] - rationale - gateway/security/scanner_integration.py
+- [[TestGetFalcoSummary]] - code - gateway/tests/test_scanner_integration.py
+- [[get_falco_summary()]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,12 +23,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 208]]
-- 3 edges to [[_COMMUNITY_Community 506]]
+- 3 edges to [[_COMMUNITY_Community 29]]
+- 2 edges to [[_COMMUNITY_Community 102]]
+- 2 edges to [[_COMMUNITY_Community 67]]
+- 1 edge to [[_COMMUNITY_Community 943]]
+- 1 edge to [[_COMMUNITY_Community 1287]]
+- 1 edge to [[_COMMUNITY_Community 420]]
+- 1 edge to [[_COMMUNITY_Community 311]]
 
 ## Top bridge nodes
-- [[test_local_oom_triggers_secondary_failover()]] - degree 4, connects to 2 communities
-- [[test_local_p99_timeout_triggers_secondary_failover()]] - degree 4, connects to 2 communities
-- [[test_local_secondary_failover_anthropic_path()]] - degree 4, connects to 2 communities
-- [[_openai_ok()]] - degree 5, connects to 1 community
-- [[test_is_local_oom_returns_false_for_200()]] - degree 3, connects to 1 community
+- [[get_falco_summary()]] - degree 13, connects to 6 communities
+- [[TestGetFalcoSummary]] - degree 4, connects to 1 community
+- [[.test_not_run_when_no_alert_dir()]] - degree 3, connects to 1 community

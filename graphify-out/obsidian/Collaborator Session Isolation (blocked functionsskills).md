@@ -1,11 +1,11 @@
 ---
 source_file: "docs/claude-security-audit-prompt.md"
 type: "concept"
-community: "Community 2315"
+community: "Community 915"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_2315
+  - community/Community_915
 ---
 
 # Collaborator Session Isolation (blocked functions/skills)
@@ -14,4 +14,4 @@ tags:
 - [[Advisory Collaborators (Brett, Chris, Gabriel, TJ)]] - `conceptually_related_to` [INFERRED]
 - [[Collaborators_1]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_2315
+#graphify/concept #graphify/INFERRED #community/Community_915

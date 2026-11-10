@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "Community 1942"
+community: "Community 48"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1942
+  - community/Community_48
 ---
 
 # TestPickLatestHermesTag
@@ -20,4 +20,4 @@ tags:
 - [[Hermes publishes date-based image tags (vYYYY.M.D).]] - `rationale_for` [EXTRACTED]
 - [[test_discover_upstream_versions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1942
+#graphify/code #graphify/EXTRACTED #community/Community_48

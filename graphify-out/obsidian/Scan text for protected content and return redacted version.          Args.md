@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "Community 1927"
+community: "Community 141"
 location: "L176"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1927
+  - community/Community_141
 ---
 
 # Scan text for protected content and return redacted version.          Args:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.scan_response()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1927
+#graphify/rationale #graphify/EXTRACTED #community/Community_141

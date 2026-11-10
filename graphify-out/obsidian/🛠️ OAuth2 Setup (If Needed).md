@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Community 285"
+community: "Community 2030"
 location: "L312"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_285
+  - community/Community_2030
 ---
 
 # 🛠️ OAuth2 Setup (If Needed)
@@ -18,4 +18,4 @@ tags:
 - [[Step 3 Store Credentials]] - `contains` [EXTRACTED]
 - [[Step 4 Get Refresh Token]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_285
+#graphify/document #graphify/EXTRACTED #community/Community_2030

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Community 341"
+community: "Community 378"
 location: "L537"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_341
+  - community/Community_378
 ---
 
 # _send_status_beacon()
@@ -18,4 +18,4 @@ tags:
 - [[ws_client_handle_t]] - `references` [EXTRACTED]
 - [[ws_client_send_log()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_341
+#graphify/code #graphify/EXTRACTED #community/Community_378

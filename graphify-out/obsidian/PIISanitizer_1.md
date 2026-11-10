@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "Community 28"
+community: "Community 7"
 location: "L62"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_28
+  - community/Community_7
 ---
 
 # PIISanitizer
@@ -17,4 +17,4 @@ tags:
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[RedactionResult]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_28
+#graphify/code #graphify/INFERRED #community/Community_7

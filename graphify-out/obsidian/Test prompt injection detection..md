@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "Community 2330"
+community: "Community 16"
 location: "L226"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2330
+  - community/Community_16
 ---
 
 # Test prompt injection detection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_prompt_injection_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2330
+#graphify/rationale #graphify/EXTRACTED #community/Community_16

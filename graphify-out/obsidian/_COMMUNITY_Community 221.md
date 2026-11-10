@@ -45,9 +45,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 307]]
+- 7 edges to [[_COMMUNITY_Community 307]]
 - 6 edges to [[_COMMUNITY_Community 111]]
-- 3 edges to [[_COMMUNITY_Community 271]]
+- 4 edges to [[_COMMUNITY_Community 271]]
 - 2 edges to [[_COMMUNITY_Community 300]]
 - 1 edge to [[_COMMUNITY_Community 8]]
 - 1 edge to [[_COMMUNITY_Community 56]]
@@ -55,7 +55,7 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[a2a_policy.py]] - degree 16, connects to 5 communities
-- [[.evaluate()]] - degree 8, connects to 3 communities
+- [[.evaluate()]] - degree 8, connects to 4 communities
 - [[RovoBlast Attack (Atlassian Rovo AI)]] - degree 7, connects to 2 communities
 - [[.enforce()]] - degree 6, connects to 2 communities
 - [[Hermes A2A Plugin Upstream Gaps (83701, 8053480779, 78298, 77872, 81042)]] - degree 3, connects to 2 communities

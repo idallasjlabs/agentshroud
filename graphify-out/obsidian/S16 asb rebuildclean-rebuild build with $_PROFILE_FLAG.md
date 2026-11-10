@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_bot_boot_static.sh"
 type: "concept"
-community: "Community 295"
+community: "Community 126"
 location: "lines 253-260"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_295
+  - community/Community_126
 ---
 
 # S16 asb rebuild/clean-rebuild build with $_PROFILE_FLAG
@@ -16,4 +16,4 @@ tags:
 - [[asb rebuild fullhermes]] - `references` [EXTRACTED]
 - [[phase_apply build loop calls the guard every iteration]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_295
+#graphify/concept #graphify/EXTRACTED #community/Community_126

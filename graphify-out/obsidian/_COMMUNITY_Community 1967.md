@@ -1,22 +1,19 @@
 ---
 type: community
-members: 9
+members: 6
 ---
 
 # Community 1967
 
-**Members:** 9 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[AgentShroud Sunday Upgrade — 2026-09-27, 1400 ET verification pass (DEV run, session 3)]] - document - reports/upgrade-2026-09-27-20260927-1400.md
-- [[Decision no rebuild performed_1]] - document - reports/upgrade-2026-09-27-20260927-1400.md
-- [[Independent verification performed (all read-only)_1]] - document - reports/upgrade-2026-09-27-20260927-1400.md
-- [[Jira]] - document - reports/upgrade-2026-09-27-20260927-1400.md
-- [[Manual follow-ups (unchanged from 0800 report — still outstanding)]] - document - reports/upgrade-2026-09-27-20260927-1400.md
-- [[Still open (real, unresolved, carried from 0300 — not new, not investigated further this session)]] - document - reports/upgrade-2026-09-27-20260927-1400.md
-- [[Summary line_7]] - document - reports/upgrade-2026-09-27-20260927-1400.md
-- [[Time spent_4]] - document - reports/upgrade-2026-09-27-20260927-1400.md
-- [[Why this report is short_1]] - document - reports/upgrade-2026-09-27-20260927-1400.md
+- [[._get_hmac_key()]] - code - gateway/security/prompt_guard.py
+- [[.register_system_prompt()]] - code - gateway/security/prompt_guard.py
+- [[.verify_system_prompt()]] - code - gateway/security/prompt_guard.py
+- [[Compute and return an HMAC-SHA256 fingerprint for the system prompt.]] - rationale - gateway/security/prompt_guard.py
+- [[Return HMAC key env var preferred, session-scoped random fallback.]] - rationale - gateway/security/prompt_guard.py
+- [[Return True if prompt_text matches the stored HMAC fingerprint.]] - rationale - gateway/security/prompt_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +23,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 118]]
+- 3 edges to [[_COMMUNITY_Community 0]]
+- 2 edges to [[_COMMUNITY_Community 22]]
 
 ## Top bridge nodes
-- [[AgentShroud Sunday Upgrade — 2026-09-27, 1400 ET verification pass (DEV run, session 3)]] - degree 9, connects to 1 community
+- [[.register_system_prompt()]] - degree 4, connects to 2 communities
+- [[.verify_system_prompt()]] - degree 4, connects to 2 communities
+- [[._get_hmac_key()]] - degree 4, connects to 1 community

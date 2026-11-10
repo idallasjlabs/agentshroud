@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "rationale"
-community: "Community 72"
+community: "Community 146"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_146
 ---
 
 # Default mode is enforce after v0.8.0 enforcement hardening.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_default_mode_is_enforce()_7]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_72
+#graphify/rationale #graphify/EXTRACTED #community/Community_146

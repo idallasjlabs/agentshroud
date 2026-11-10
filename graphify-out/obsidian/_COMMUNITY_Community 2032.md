@@ -1,20 +1,17 @@
 ---
 type: community
-members: 7
+members: 4
 ---
 
 # Community 2032
 
-**Members:** 7 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_basic_spawn()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_depth_exceeded_allowed_in_monitor()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_depth_exceeded_denied()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_depth_penalty_reduces_trust()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_disabled_always_allows()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_strict_inheritance_caps_trust()]] - code - gateway/tests/test_subagent_governance.py
-- [[TestSpawnAuthorization]] - code - gateway/tests/test_subagent_governance.py
+- [[.shutdown()]] - code - gateway/proxy/mcp_proxy.py
+- [[.stop()_3]] - code - gateway/proxy/mcp_proxy.py
+- [[.stop_all()]] - code - gateway/proxy/mcp_proxy.py
+- [[Clean shutdown — close all connections.]] - rationale - gateway/proxy/mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +21,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 1209]]
-- 2 edges to [[_COMMUNITY_Community 1269]]
-- 1 edge to [[_COMMUNITY_Community 1343]]
+- 2 edges to [[_COMMUNITY_Community 132]]
+- 1 edge to [[_COMMUNITY_Community 64]]
 
 ## Top bridge nodes
-- [[TestSpawnAuthorization]] - degree 12, connects to 3 communities
+- [[.stop_all()]] - degree 3, connects to 1 community
+- [[.shutdown()]] - degree 3, connects to 1 community
+- [[.stop()_3]] - degree 2, connects to 1 community

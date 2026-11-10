@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "rationale"
-community: "Community 203"
+community: "Community 16"
 location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_203
+  - community/Community_16
 ---
 
 # Configuration for memory file integrity monitoring.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MemoryIntegrityConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_203
+#graphify/rationale #graphify/EXTRACTED #community/Community_16

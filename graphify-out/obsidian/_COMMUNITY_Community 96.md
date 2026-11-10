@@ -1,15 +1,19 @@
 ---
 type: community
-members: 53
+members: 61
 ---
 
 # Community 96
 
-**Members:** 53 nodes
+**Members:** 61 nodes
 
 ## Members
 - [[._apply_outbound_model_error_rewrites()]] - code - gateway/proxy/telegram_proxy.py
 - [[._build_ack_only_updates()]] - code - gateway/proxy/telegram_proxy.py
+- [[._check_collaborator_leakage()]] - code - gateway/proxy/telegram_proxy.py
+- [[._contains_critical_collaborator_leakage()]] - code - gateway/proxy/telegram_proxy.py
+- [[._contains_high_risk_collaborator_leakage()]] - code - gateway/proxy/telegram_proxy.py
+- [[._emit_quarantine_event()]] - code - gateway/proxy/telegram_proxy.py
 - [[._escape_pii_placeholders()]] - code - gateway/proxy/telegram_proxy.py
 - [[._extract_embedded_tool_call_json()]] - code - gateway/proxy/telegram_proxy.py
 - [[._filter_outbound()_1]] - code - gateway/proxy/telegram_proxy.py
@@ -36,8 +40,11 @@ members: 53
 - [[._trigger_web_search_log()]] - code - gateway/proxy/telegram_proxy.py
 - [[Activate per-chat cascade window to prevent streaming-fragment leak-through.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Any_21]] - code - gateway/proxy/telegram_proxy.py
+- [[Best-effort async event emission for quarantine actions.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Best-effort check to avoid treating local file names as egress domains.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Core outbound security scan shared by JSON, form, and multipart branches.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect leakage patterns blocked for local_onlyproject_scoped collaborators.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect patterns that must redact for ALL non-owner chats, including full_access.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Extract a non-file text field value from a multipartform-data body.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Extract the boundary token from a multipart Content-Type header.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Filter multipartform-data outbound bodies (sendPhotosendDocument).          Te]] - rationale - gateway/proxy/telegram_proxy.py
@@ -56,6 +63,7 @@ members: 53
 - [[Return (field_name, text_value) for Telegram-style outbound payloads.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Return True only when every Telegram-supported HTML open tag has a matching clos]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Return True when chat_id belongs to the configured owner.          Handles both]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return a safe-notice replacement when protected content would leak.          Cri]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Return minimal getUpdates payload entries containing only update_id.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Rewrite raw modelruntime error texts to actionable user-facing messages.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Strip optional markdown json fences around model output.]] - rationale - gateway/proxy/telegram_proxy.py
@@ -70,17 +78,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 42 edges to [[_COMMUNITY_Community 14]]
-- 11 edges to [[_COMMUNITY_Community 344]]
-- 3 edges to [[_COMMUNITY_Community 61]]
+- 55 edges to [[_COMMUNITY_Community 14]]
+- 2 edges to [[_COMMUNITY_Community 1563]]
+- 2 edges to [[_COMMUNITY_Community 344]]
 - 1 edge to [[_COMMUNITY_Community 138]]
+- 1 edge to [[_COMMUNITY_Community 62]]
+- 1 edge to [[_COMMUNITY_Community 223]]
 - 1 edge to [[_COMMUNITY_Community 89]]
 - 1 edge to [[_COMMUNITY_Community 23]]
+- 1 edge to [[_COMMUNITY_Community 61]]
 - 1 edge to [[_COMMUNITY_Community 75]]
+- 1 edge to [[_COMMUNITY_Community 6]]
 
 ## Top bridge nodes
 - [[Any_21]] - degree 17, connects to 7 communities
-- [[._filter_outbound()_1]] - degree 19, connects to 2 communities
+- [[._filter_outbound()_1]] - degree 19, connects to 3 communities
 - [[._filter_outbound_multipart()]] - degree 12, connects to 2 communities
 - [[._scan_outbound_text()]] - degree 8, connects to 2 communities
-- [[._trigger_web_fetch_approval()]] - degree 8, connects to 2 communities
+- [[._emit_quarantine_event()]] - degree 5, connects to 2 communities

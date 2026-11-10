@@ -27,13 +27,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 626]]
-- 5 edges to [[_COMMUNITY_Community 2]]
-- 5 edges to [[_COMMUNITY_Community 845]]
+- 15 edges to [[_COMMUNITY_Community 2]]
 
 ## Top bridge nodes
-- [[.test_healthcheck_skill_error_is_rewritten_for_json_message_field()]] - degree 5, connects to 3 communities
-- [[.test_healthcheck_skill_error_is_rewritten_for_json_content_field()]] - degree 5, connects to 3 communities
-- [[.test_healthcheck_skill_error_is_rewritten_for_form_content_field()]] - degree 5, connects to 3 communities
-- [[.test_healthcheck_skill_error_is_rewritten_for_form_message_field()]] - degree 5, connects to 3 communities
-- [[.test_healthcheck_skill_error_is_rewritten_for_json_caption_field()]] - degree 4, connects to 3 communities
+- [[.test_healthcheck_skill_error_is_rewritten_for_json_message_field()]] - degree 5, connects to 1 community
+- [[.test_healthcheck_skill_error_is_rewritten_for_json_content_field()]] - degree 5, connects to 1 community
+- [[.test_healthcheck_skill_error_is_rewritten_for_form_content_field()]] - degree 5, connects to 1 community
+- [[.test_healthcheck_skill_error_is_rewritten_for_form_message_field()]] - degree 5, connects to 1 community
+- [[.test_healthcheck_skill_error_is_rewritten_for_json_caption_field()]] - degree 4, connects to 1 community

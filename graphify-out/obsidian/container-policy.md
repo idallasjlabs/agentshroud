@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/container-policy.md"
 type: "document"
-community: "Community 655"
+community: "Community 1016"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_655
+  - community/Community_1016
 ---
 
 # container-policy.md
@@ -19,4 +19,4 @@ tags:
 - [[Secret Management Hierarchy (1Password → Docker Secrets → Env)]] - `references` [EXTRACTED]
 - [[security-supply-chain]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_655
+#graphify/document #graphify/EXTRACTED #community/Community_1016

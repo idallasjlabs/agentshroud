@@ -1,22 +1,24 @@
 ---
 type: community
-members: 24
+members: 27
 ---
 
 # Community 849
 
-**Members:** 24 nodes
+**Members:** 27 nodes
 
 ## Members
 - [[2026-10-17 afternoon drift audit of both hosts, and the drift PR]] - document - INCIDENT_2026-10-16_conduit-outage.md
 - [[Afternoon (1200–1215 EDT) prod's evidence arrived, two more fixes committed]] - document - INCIDENT_2026-10-16_conduit-outage.md
 - [[Afternoon (1400–1430 EDT) two more gateway findings from prod, fixed on dev]] - document - INCIDENT_2026-10-16_conduit-outage.md
+- [[CI Workflow]] - code - .github/workflows/ci.yml
 - [[Changes committed for Sunday (this commit)]] - document - INCIDENT_2026-10-16_conduit-outage.md
 - [[Complete commit list, 2026-10-10 through tonight (`main`, this repo)]] - document - INCIDENT_2026-10-16_conduit-outage.md
 - [[Dev Hermes was polling prod's Hermes Telegram bot (found 0712 EDT)]] - document - INCIDENT_2026-10-16_conduit-outage.md
 - [[Dev bring-up failures 0632-0657 EDT compose-version network hash + stale endpoints]] - document - INCIDENT_2026-10-16_conduit-outage.md
 - [[Dev-side changes made tonight (this repo, this session)]] - document - INCIDENT_2026-10-16_conduit-outage.md
 - [[Evening branch cleanup finished, resource cut, full rebuild of both hosts]] - document - INCIDENT_2026-10-16_conduit-outage.md
+- [[INCIDENT_2026-10-16_conduit-outage]] - document - INCIDENT_2026-10-16_conduit-outage.md
 - [[Incident ConduitHermes instability, 2026-10-16 (overnight)]] - document - INCIDENT_2026-10-16_conduit-outage.md
 - [[Known open issues as of 0550 EDT, 2026-10-16]] - document - INCIDENT_2026-10-16_conduit-outage.md
 - [[Late afternoon cleanup directive, start.sh banner fix]] - document - INCIDENT_2026-10-16_conduit-outage.md
@@ -26,6 +28,7 @@ members: 24
 - [[Prod secrets clobbered by a killed extract (prod 1425 EDT, fixed on dev)]] - document - INCIDENT_2026-10-16_conduit-outage.md
 - [[Root cause of dev-side instability, found 0653 EDT lazydocker connection leak]] - document - INCIDENT_2026-10-16_conduit-outage.md
 - [[Root cause of the broken chat since Sunday Nemotron + the Qwen-only `no_think` suffix (prod, 0710 EDT)]] - document - INCIDENT_2026-10-16_conduit-outage.md
+- [[Security Scan workflow (security-scan.yml)]] - code - .github/workflows/security-scan.yml
 - [[Still open for Sunday (not changed today)]] - document - INCIDENT_2026-10-16_conduit-outage.md
 - [[Trigger_6]] - document - INCIDENT_2026-10-16_conduit-outage.md
 - [[Verified working (dev side)]] - document - INCIDENT_2026-10-16_conduit-outage.md
@@ -41,7 +44,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 48]]
 - 1 edge to [[_COMMUNITY_Community 139]]
 
 ## Top bridge nodes
-- [[Incident ConduitHermes instability, 2026-10-16 (overnight)]] - degree 14, connects to 1 community
+- [[INCIDENT_2026-10-16_conduit-outage]] - degree 5, connects to 2 communities

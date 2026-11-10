@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "Community 94"
+community: "Community 1425"
 location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_94
+  - community/Community_1425
 ---
 
 # Container Architecture
@@ -16,4 +16,4 @@ tags:
 - [[Bot Container (`agentshroud-bot`)]] - `contains` [EXTRACTED]
 - [[Gateway Container (`agentshroud-gateway`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_94
+#graphify/document #graphify/EXTRACTED #community/Community_1425

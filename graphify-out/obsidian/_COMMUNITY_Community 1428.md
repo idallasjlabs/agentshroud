@@ -1,16 +1,21 @@
 ---
 type: community
-members: 3
+members: 8
 ---
 
 # Community 1428
 
-**Members:** 3 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[.test_full_stack_scores_five()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_secrets_path_is_file_iterdir_error()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestSecretsManagement]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Contents]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Coverage Requirements_8]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Purpose_180]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Related Notes_24]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Test Execution]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Test Locations]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Why `tmppytest_cache`]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[pytest.ini_1]] - document - docs/vault/03 - Configuration/pytest.ini.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,10 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 219]]
-- 1 edge to [[_COMMUNITY_Community 312]]
+- 1 edge to [[_COMMUNITY_Community 253]]
 
 ## Top bridge nodes
-- [[TestSecretsManagement]] - degree 3, connects to 1 community
-- [[.test_full_stack_scores_five()]] - degree 2, connects to 1 community
-- [[.test_secrets_path_is_file_iterdir_error()]] - degree 2, connects to 1 community
+- [[pytest.ini_1]] - degree 8, connects to 1 community

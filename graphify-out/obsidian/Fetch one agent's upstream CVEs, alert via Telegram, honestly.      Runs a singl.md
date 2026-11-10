@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "rationale"
-community: "Community 736"
+community: "Community 368"
 location: "L670"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_736
+  - community/Community_368
 ---
 
 # Fetch one agent's upstream CVEs, alert via Telegram, honestly.      Runs a singl
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run_upstream_cve_check()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_736
+#graphify/rationale #graphify/EXTRACTED #community/Community_368

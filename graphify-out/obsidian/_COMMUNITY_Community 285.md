@@ -1,11 +1,11 @@
 ---
 type: community
-members: 32
+members: 27
 ---
 
 # Community 285
 
-**Members:** 32 nodes
+**Members:** 27 nodes
 
 ## Members
 - [[Alternative Google People API]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
@@ -21,13 +21,9 @@ members: 32
 - [[Python Integration_1]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
 - [[Server Settings]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
 - [[Server Settings_1]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Step 1 Create Google Cloud Project_1]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
 - [[Step 1 Enable App Password (Gmail)]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Step 2 Create OAuth Credentials_1]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
 - [[Step 2 Enable CalDAVCardDAV Access]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Step 3 Store Credentials]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
 - [[Step 3 Test Calendar Access]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Step 4 Get Refresh Token]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
 - [[Step 4 Test Contacts Access]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
 - [[Workarounds]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
 - [[✅ Quick Start Command]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
@@ -39,7 +35,6 @@ members: 32
 - [[📧 Gmail Already Working]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
 - [[🔐 Setup Steps]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
 - [[🚀 Recommended Approach]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[🛠️ OAuth2 Setup (If Needed)]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,7 +44,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 571]]
+- 1 edge to [[_COMMUNITY_Community 502]]
+- 1 edge to [[_COMMUNITY_Community 2030]]
 
 ## Top bridge nodes
-- [[Google Services Setup - Calendar, Contacts, Keep]] - degree 11, connects to 1 community
+- [[Google Services Setup - Calendar, Contacts, Keep]] - degree 11, connects to 2 communities

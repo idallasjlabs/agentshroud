@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "rationale"
-community: "Community 75"
+community: "Community 1290"
 location: "L242"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/Community_1290
 ---
 
 # Owner should receive an escalation notice on the 3rd block.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_owner_also_notified_on_threshold()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_75
+#graphify/rationale #graphify/EXTRACTED #community/Community_1290

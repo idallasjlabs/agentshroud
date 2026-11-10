@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "rationale"
-community: "Community 48"
+community: "Community 2004"
 location: "L399"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_48
+  - community/Community_2004
 ---
 
 # 2026-10-23 on marvin: every Python HTTPS read to hub.docker.com hung     (Homebr
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFetchDockerhubTagsUsesCurl]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_48
+#graphify/rationale #graphify/EXTRACTED #community/Community_2004

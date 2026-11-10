@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "rationale"
-community: "Community 44"
+community: "Community 203"
 location: "L239"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_44
+  - community/Community_203
 ---
 
 # Validate and govern an outbound A2A message to a remote peer.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.process_outbound()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_44
+#graphify/rationale #graphify/EXTRACTED #community/Community_203

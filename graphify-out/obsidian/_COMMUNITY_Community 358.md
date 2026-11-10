@@ -37,14 +37,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 341]]
-- 5 edges to [[_COMMUNITY_Community 378]]
+- 11 edges to [[_COMMUNITY_Community 378]]
 - 3 edges to [[_COMMUNITY_Community 228]]
-- 1 edge to [[_COMMUNITY_Community 39]]
+- 1 edge to [[_COMMUNITY_Community 312]]
+- 1 edge to [[_COMMUNITY_Community 1286]]
 
 ## Top bridge nodes
-- [[_deliver_utterance()]] - degree 10, connects to 3 communities
 - [[ws_client.c]] - degree 15, connects to 2 communities
-- [[ws_client_create()]] - degree 7, connects to 2 communities
+- [[_deliver_utterance()]] - degree 10, connects to 2 communities
 - [[rlog_task()]] - degree 4, connects to 2 communities
+- [[ws_client_create()]] - degree 7, connects to 1 community
 - [[ws_client_send_log()]] - degree 5, connects to 1 community

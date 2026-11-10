@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "Community 72"
+community: "Community 505"
 location: "L184"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_505
 ---
 
 # Initialize the tool chain analyzer.          Args:             config: Configura
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.__init__()_122]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_72
+#graphify/rationale #graphify/EXTRACTED #community/Community_505

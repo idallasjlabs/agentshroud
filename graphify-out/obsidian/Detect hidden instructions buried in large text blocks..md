@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "Community 115"
+community: "Community 344"
 location: "L378"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_115
+  - community/Community_344
 ---
 
 # Detect hidden instructions buried in large text blocks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._detect_hidden_instructions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_115
+#graphify/rationale #graphify/EXTRACTED #community/Community_344

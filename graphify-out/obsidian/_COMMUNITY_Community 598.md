@@ -34,7 +34,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Community 2154]]
-- 1 edge to [[_COMMUNITY_Community 43]]
+- 1 edge to [[_COMMUNITY_Community 1]]
 
 ## Top bridge nodes
 - [[_get_gmail_app_password()]] - degree 10, connects to 2 communities

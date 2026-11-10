@@ -1,21 +1,19 @@
 ---
 type: community
-members: 8
+members: 6
 ---
 
 # Community 2004
 
-**Members:** 8 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[.__aenter__()_5]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[.__aexit__()_5]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[.__init__()_174]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[.aiter_bytes()_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[.aread()_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[Hermes's dashboard chat streams, so the streaming path must apply the shim too.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_FakeStreamResponse_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_route_strips_unsupported_fields_streaming()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[._fake_run()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[.test_curl_failure_raises_instead_of_returning_no_tags()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[.test_fetches_through_curl_with_a_bounded_time()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[.test_ipv4_retry_attempts_pass_dash_4_to_curl()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[2026-10-23 on marvin every Python HTTPS read to hub.docker.com hung     (Homebr]] - rationale - gateway/tests/test_discover_upstream_versions.py
+- [[TestFetchDockerhubTagsUsesCurl]] - code - gateway/tests/test_discover_upstream_versions.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,13 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 208]]
-- 1 edge to [[_COMMUNITY_Community 1278]]
-- 1 edge to [[_COMMUNITY_Community 2324]]
-- 1 edge to [[_COMMUNITY_Community 434]]
-- 1 edge to [[_COMMUNITY_Community 5]]
-- 1 edge to [[_COMMUNITY_Community 506]]
+- 1 edge to [[_COMMUNITY_Community 48]]
 
 ## Top bridge nodes
-- [[_FakeStreamResponse_1]] - degree 11, connects to 5 communities
-- [[test_fieldflare_route_strips_unsupported_fields_streaming()]] - degree 4, connects to 2 communities
+- [[TestFetchDockerhubTagsUsesCurl]] - degree 6, connects to 1 community

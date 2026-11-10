@@ -1,15 +1,16 @@
 ---
 type: community
-members: 4
+members: 5
 ---
 
 # Community 2176
 
-**Members:** 4 nodes
+**Members:** 5 nodes
 
 ## Members
 - [[fail()_6]] - code - tests/startup_smoke/test_sunday_prompt_unattended.sh
 - [[pass()_4]] - code - tests/startup_smoke/test_sunday_prompt_unattended.sh
+- [[rc_ctx()]] - code - tests/startup_smoke/test_sunday_prompt_unattended.sh
 - [[test_sunday_prompt_unattended.sh]] - code - tests/startup_smoke/test_sunday_prompt_unattended.sh
 - [[test_sunday_prompt_unattended.sh script]] - code - tests/startup_smoke/test_sunday_prompt_unattended.sh
 

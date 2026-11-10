@@ -1,14 +1,20 @@
 ---
 type: community
-members: 63
+members: 88
 ---
 
 # Community 98
 
-**Members:** 63 nodes
+**Members:** 88 nodes
 
 ## Members
+- [[.__init__()_103]] - code - gateway/security/outbound_filter.py
+- [[._classify_response_risk()]] - code - gateway/security/outbound_filter.py
+- [[._compile_patterns()_1]] - code - gateway/security/outbound_filter.py
+- [[._is_allowed_for_trust()]] - code - gateway/security/outbound_filter.py
 - [[._time_one_filter()]] - code - gateway/tests/test_outbound_filter.py
+- [[.filter_response()]] - code - gateway/security/outbound_filter.py
+- [[.get_stats()_17]] - code - gateway/security/outbound_filter.py
 - [[.setup_method()_17]] - code - gateway/tests/test_outbound_filter.py
 - [[.test_admin_private_service_data_redacted()]] - code - gateway/tests/test_outbound_filter.py
 - [[.test_agentshroud_name_not_redacted()]] - code - gateway/tests/test_outbound_filter.py
@@ -31,6 +37,7 @@ members: 63
 - [[.test_pattern_overlaps()]] - code - gateway/tests/test_outbound_filter.py
 - [[.test_performance()]] - code - gateway/tests/test_outbound_filter.py
 - [[.test_private_ip_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[.test_real_world_agent_responses()]] - code - gateway/tests/test_outbound_filter.py
 - [[.test_risk_classification()]] - code - gateway/tests/test_outbound_filter.py
 - [[.test_security_architecture_filtering()]] - code - gateway/tests/test_outbound_filter.py
 - [[.test_stats()_1]] - code - gateway/tests/test_outbound_filter.py
@@ -38,9 +45,22 @@ members: 63
 - [[.test_tailscale_hostname_filtering()]] - code - gateway/tests/test_outbound_filter.py
 - [[.test_telegram_user_id_filtering()]] - code - gateway/tests/test_outbound_filter.py
 - [[.test_trust_level_overrides()]] - code - gateway/tests/test_outbound_filter.py
+- [[.test_with_pii_sanitizer_compatibility()]] - code - gateway/tests/test_outbound_filter.py
 - [[.test_workspace_internal_path_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[A single match found by the outbound filter.]] - rationale - gateway/security/outbound_filter.py
 - [[Admin-private service references should be redacted.]] - rationale - gateway/tests/test_outbound_filter.py
 - [[AgentShroud brand name must pass through unredacted (Fix C).]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Any_52]] - code - gateway/security/outbound_filter.py
+- [[Categories of information that may need filtering.]] - rationale - gateway/security/outbound_filter.py
+- [[Check if a disclosure category is permitted for the user's trust level.]] - rationale - gateway/security/outbound_filter.py
+- [[Classify the risk level of a response based on info disclosure density.]] - rationale - gateway/security/outbound_filter.py
+- [[Compile all filter patterns into regex objects.]] - rationale - gateway/security/outbound_filter.py
+- [[Filter agent response for sensitive information disclosure.          Args]] - rationale - gateway/security/outbound_filter.py
+- [[FilterMatch]] - code - gateway/security/outbound_filter.py
+- [[Get filter statistics.]] - rationale - gateway/security/outbound_filter.py
+- [[InfoCategory]] - code - gateway/security/outbound_filter.py
+- [[Initialize the outbound information filter.          Args             config C]] - rationale - gateway/security/outbound_filter.py
+- [[Integration tests with other security components.]] - rationale - gateway/tests/test_outbound_filter.py
 - [[Known collaborator names should be redacted.]] - rationale - gateway/tests/test_outbound_filter.py
 - [[Set up test fixtures.]] - rationale - gateway/tests/test_outbound_filter.py
 - [[Split-fragment XML tags must still be redacted.]] - rationale - gateway/tests/test_outbound_filter.py
@@ -64,13 +84,18 @@ members: 63
 - [[Test that internal URLs are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
 - [[Test that internal file paths are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
 - [[Test that monitor mode logs but doesn't redact.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test that outbound filter works alongside PII sanitizer.]] - rationale - gateway/tests/test_outbound_filter.py
 - [[Test that private IP addresses are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
 - [[Test that security module references are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
 - [[Test that sensitive MCP tool names are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
 - [[Test that tailnet IDs are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
 - [[Test that trust level overrides work correctly.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test with realistic agent response patterns.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[TestIntegration]] - code - gateway/tests/test_outbound_filter.py
 - [[TestOutboundInfoFilter]] - code - gateway/tests/test_outbound_filter.py
 - [[Workspace runtime paths should be redacted.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[outbound_filter.py]] - code - gateway/security/outbound_filter.py
+- [[test_outbound_filter.py]] - code - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -80,12 +105,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 24]]
+- 17 edges to [[_COMMUNITY_Community 24]]
+- 2 edges to [[_COMMUNITY_Community 8]]
+- 2 edges to [[_COMMUNITY_Community 63]]
 - 2 edges to [[_COMMUNITY_Community 119]]
+- 1 edge to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 141]]
+- 1 edge to [[_COMMUNITY_Community 162]]
 
 ## Top bridge nodes
-- [[TestOutboundInfoFilter]] - degree 35, connects to 2 communities
-- [[.setup_method()_17]] - degree 3, connects to 1 community
-- [[.test_initialization_with_config()]] - degree 3, connects to 1 community
-- [[.test_trust_level_overrides()]] - degree 3, connects to 1 community
-- [[.test_monitor_mode()]] - degree 3, connects to 1 community
+- [[outbound_filter.py]] - degree 8, connects to 6 communities
+- [[InfoCategory]] - degree 9, connects to 2 communities
+- [[.filter_response()]] - degree 6, connects to 2 communities
+- [[test_outbound_filter.py]] - degree 5, connects to 2 communities
+- [[TestOutboundInfoFilter]] - degree 35, connects to 1 community

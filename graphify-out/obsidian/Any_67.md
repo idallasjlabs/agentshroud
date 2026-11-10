@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 20"
+community: "Community 10"
 location: "L58"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_20
+  - community/Community_10
 ---
 
 # Any
@@ -22,4 +22,4 @@ tags:
 - [[_log_audit()]] - `references` [EXTRACTED]
 - [[auth_ws_token()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_20
+#graphify/code #graphify/INFERRED #community/Community_10

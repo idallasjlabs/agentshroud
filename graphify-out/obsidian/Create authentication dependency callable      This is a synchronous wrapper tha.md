@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "rationale"
-community: "Community 707"
+community: "Community 49"
 location: "L155"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_707
+  - community/Community_49
 ---
 
 # Create authentication dependency callable      This is a synchronous wrapper tha
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[create_auth_dependency()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_707
+#graphify/rationale #graphify/EXTRACTED #community/Community_49

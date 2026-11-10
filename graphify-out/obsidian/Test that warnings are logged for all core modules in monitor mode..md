@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "rationale"
-community: "Community 104"
+community: "Community 72"
 location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_104
+  - community/Community_72
 ---
 
 # Test that warnings are logged for all core modules in monitor mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_monitor_mode_warnings_all_modules()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_104
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

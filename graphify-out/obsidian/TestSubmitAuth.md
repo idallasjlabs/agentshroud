@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "Community 794"
+community: "Community 137"
 location: "L172"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_794
+  - community/Community_137
 ---
 
 # TestSubmitAuth
@@ -17,4 +17,4 @@ tags:
 - [[FetchOutcome]] - `uses` [INFERRED]
 - [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_794
+#graphify/code #graphify/INFERRED #community/Community_137

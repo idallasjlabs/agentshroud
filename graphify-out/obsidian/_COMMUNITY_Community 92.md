@@ -9,16 +9,13 @@ members: 56
 
 ## Members
 - [[.content_not_empty()]] - code - gateway/ingest_api/models.py
-- [[.test_empty_content_rejected()]] - code - gateway/tests/test_config_validation.py
 - [[.test_invalid_source_rejected()]] - code - gateway/tests/test_config_validation.py
+- [[.test_valid_forward_request()]] - code - gateway/tests/test_config_validation.py
 - [[.validate_source()]] - code - gateway/ingest_api/models.py
 - [[An empty share-sheet payload is rejected before it reaches the pipeline.]] - rationale - gateway/tests/test_security.py
 - [[Every content_type an iOS Shortcut can emit is accepted with source=shortcut.]] - rationale - gateway/tests/test_security.py
 - [[ForwardRequest]] - code - gateway/ingest_api/models.py
 - [[Request to forward content through the gateway      Received from iOS Shortcuts,]] - rationale - gateway/ingest_api/models.py
-- [[Test ForwardRequest rejects empty content]] - rationale - gateway/tests/test_main_simple.py
-- [[Test ForwardRequest rejects invalid source]] - rationale - gateway/tests/test_main_simple.py
-- [[Test ForwardRequest with valid data]] - rationale - gateway/tests/test_main_simple.py
 - [[Test PII detection with special characters nearby]] - rationale - gateway/tests/test_security.py
 - [[Test all valid sources are accepted]] - rationale - gateway/tests/test_security.py
 - [[Test content with Unicode characters]] - rationale - gateway/tests/test_security.py
@@ -29,6 +26,9 @@ members: 56
 - [[Test handling of very large content (1MB+)]] - rationale - gateway/tests/test_security.py
 - [[Test overlapping or nested PII patterns]] - rationale - gateway/tests/test_security.py
 - [[Test rate limiting behavior]] - rationale - gateway/tests/test_security.py
+- [[Test routing to default target]] - rationale - gateway/tests/test_router.py
+- [[Test routing with explicit route_to]] - rationale - gateway/tests/test_router.py
+- [[Test routing with invalid explicit target falls back to default]] - rationale - gateway/tests/test_router.py
 - [[Test that SQL injection is prevented]] - rationale - gateway/tests/test_security.py
 - [[Test that XSS payloads are safely stored]] - rationale - gateway/tests/test_security.py
 - [[Test that common false positives are handled]] - rationale - gateway/tests/test_security.py
@@ -43,15 +43,15 @@ members: 56
 - [[test_empty_content_rejection()]] - code - gateway/tests/test_security.py
 - [[test_extremely_long_content()]] - code - gateway/tests/test_security.py
 - [[test_false_positive_patterns()]] - code - gateway/tests/test_security.py
-- [[test_forward_request_valid()]] - code - gateway/tests/test_main_simple.py
-- [[test_forward_request_validation_empty_content()]] - code - gateway/tests/test_main_simple.py
-- [[test_forward_request_validation_invalid_source()]] - code - gateway/tests/test_main_simple.py
 - [[test_invalid_source_rejection()]] - code - gateway/tests/test_security.py
 - [[test_malformed_json_metadata()]] - code - gateway/tests/test_security.py
 - [[test_multiple_same_type_pii()]] - code - gateway/tests/test_security.py
 - [[test_nested_pii_patterns()]] - code - gateway/tests/test_security.py
 - [[test_null_bytes_in_content()]] - code - gateway/tests/test_security.py
 - [[test_rate_limiter()]] - code - gateway/tests/test_security.py
+- [[test_resolve_target_default()]] - code - gateway/tests/test_router.py
+- [[test_resolve_target_explicit()]] - code - gateway/tests/test_router.py
+- [[test_resolve_target_invalid_explicit()]] - code - gateway/tests/test_router.py
 - [[test_security.py]] - code - gateway/tests/test_security.py
 - [[test_shortcut_content_types_accepted()]] - code - gateway/tests/test_security.py
 - [[test_shortcut_empty_content_rejected()]] - code - gateway/tests/test_security.py
@@ -73,25 +73,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 9 edges to [[_COMMUNITY_Community 325]]
 - 6 edges to [[_COMMUNITY_Community 36]]
+- 5 edges to [[_COMMUNITY_Community 861]]
 - 5 edges to [[_COMMUNITY_Community 47]]
-- 5 edges to [[_COMMUNITY_Community 368]]
-- 4 edges to [[_COMMUNITY_Community 861]]
-- 4 edges to [[_COMMUNITY_Community 7]]
 - 4 edges to [[_COMMUNITY_Community 78]]
-- 4 edges to [[_COMMUNITY_Community 325]]
 - 4 edges to [[_COMMUNITY_Community 143]]
 - 4 edges to [[_COMMUNITY_Community 34]]
-- 3 edges to [[_COMMUNITY_Community 707]]
+- 3 edges to [[_COMMUNITY_Community 49]]
+- 3 edges to [[_COMMUNITY_Community 80]]
 - 2 edges to [[_COMMUNITY_Community 138]]
+- 2 edges to [[_COMMUNITY_Community 707]]
 - 2 edges to [[_COMMUNITY_Community 2154]]
-- 1 edge to [[_COMMUNITY_Community 20]]
-- 1 edge to [[_COMMUNITY_Community 254]]
-- 1 edge to [[_COMMUNITY_Community 104]]
+- 1 edge to [[_COMMUNITY_Community 10]]
 
 ## Top bridge nodes
-- [[ForwardRequest]] - degree 57, connects to 13 communities
+- [[ForwardRequest]] - degree 57, connects to 11 communities
 - [[test_security.py]] - degree 25, connects to 2 communities
-- [[test_forward_request_validation_empty_content()]] - degree 3, connects to 1 community
-- [[test_forward_request_validation_invalid_source()]] - degree 3, connects to 1 community
-- [[test_forward_request_valid()]] - degree 3, connects to 1 community
+- [[test_resolve_target_default()]] - degree 3, connects to 1 community
+- [[test_resolve_target_explicit()]] - degree 3, connects to 1 community
+- [[test_resolve_target_invalid_explicit()]] - degree 3, connects to 1 community

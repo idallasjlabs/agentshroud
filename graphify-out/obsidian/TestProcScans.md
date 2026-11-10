@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 1193"
+community: "Community 219"
 location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1193
+  - community/Community_219
 ---
 
 # TestProcScans
@@ -19,4 +19,4 @@ tags:
 - [[.test_wazuh_agent_detected()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1193
+#graphify/code #graphify/EXTRACTED #community/Community_219

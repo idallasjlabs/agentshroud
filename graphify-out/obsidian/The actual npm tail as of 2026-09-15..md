@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "rationale"
-community: "Community 48"
+community: "Community 506"
 location: "L79"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_48
+  - community/Community_506
 ---
 
 # The actual npm tail as of 2026-09-15.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_real_openclaw_tail_picks_2026_9_4()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_48
+#graphify/rationale #graphify/EXTRACTED #community/Community_506

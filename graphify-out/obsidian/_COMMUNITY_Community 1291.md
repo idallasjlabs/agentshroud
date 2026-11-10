@@ -1,18 +1,24 @@
 ---
 type: community
-members: 5
+members: 11
 ---
 
 # Community 1291
 
-**Members:** 5 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[.test_installed_not_running()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_not_installed()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_running_no_alert_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_running_with_alert_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestWazuhSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_demotion_on_violations()]] - code - gateway/tests/test_trust_manager.py
+- [[.test_failure_decreases_score()_1]] - code - gateway/tests/test_trust_manager.py
+- [[.test_promotion_on_threshold()]] - code - gateway/tests/test_trust_manager.py
+- [[.test_score_floor_at_zero()]] - code - gateway/tests/test_trust_manager.py
+- [[.test_success_increases_score()_1]] - code - gateway/tests/test_trust_manager.py
+- [[.test_violation_severe_penalty()]] - code - gateway/tests/test_trust_manager.py
+- [[Agent should be demoted on violations.]] - rationale - gateway/tests/test_trust_manager.py
+- [[Agent should be promoted when score crosses threshold.]] - rationale - gateway/tests/test_trust_manager.py
+- [[Score should not go below 0.]] - rationale - gateway/tests/test_trust_manager.py
+- [[Test earning and losing trust.]] - rationale - gateway/tests/test_trust_manager.py
+- [[TestTrustProgression]] - code - gateway/tests/test_trust_manager.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 312]]
-- 1 edge to [[_COMMUNITY_Community 219]]
+- 4 edges to [[_COMMUNITY_Community 11]]
 
 ## Top bridge nodes
-- [[TestWazuhSummary]] - degree 5, connects to 1 community
-- [[.test_installed_not_running()]] - degree 2, connects to 1 community
+- [[TestTrustProgression]] - degree 11, connects to 1 community

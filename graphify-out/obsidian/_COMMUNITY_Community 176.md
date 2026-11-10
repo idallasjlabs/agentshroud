@@ -58,8 +58,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 37]]
-- 1 edge to [[_COMMUNITY_Community 2030]]
+- 3 edges to [[_COMMUNITY_Community 1127]]
+- 2 edges to [[_COMMUNITY_Community 37]]
+- 1 edge to [[_COMMUNITY_Community 181]]
 
 ## Top bridge nodes
 - [[SlackSocketClient]] - degree 13, connects to 1 community

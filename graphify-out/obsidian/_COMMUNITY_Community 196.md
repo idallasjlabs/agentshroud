@@ -1,45 +1,67 @@
 ---
 type: community
-members: 32
+members: 54
 ---
 
 # Community 196
 
-**Members:** 32 nodes
+**Members:** 54 nodes
 
 ## Members
-- [[.test_absolute_path_to_sensitive_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_app_read_allowed()]] - code - gateway/tests/test_security_audit.py
-- [[.test_basic_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_double_encoded_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_enforce_vs_monitor_contrast()]] - code - gateway/tests/test_security_audit.py
-- [[.test_monitor_mode_allows_everything()_1]] - code - gateway/tests/test_security_audit.py
-- [[.test_null_byte_injection_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_proc_meminfo_allowed()]] - code - gateway/tests/test_security_audit.py
-- [[.test_proc_self_environ_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_staging_detection()]] - code - gateway/tests/test_security_audit.py
-- [[.test_symlink_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_tmp_read_allowed()_1]] - code - gateway/tests/test_security_audit.py
-- [[.test_windows_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_write_outside_allowed_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_write_pii_detection()]] - code - gateway/tests/test_security_audit.py
-- [[.test_write_to_app_data_allowed()]] - code - gateway/tests/test_security_audit.py
-- [[.test_write_to_system_dir_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_write_to_tmp_allowed()]] - code - gateway/tests/test_security_audit.py
-- [[Access to procselfenviron exposes env vars — must be blocked.]] - rationale - gateway/tests/test_security_audit.py
-- [[Allowed read path should pass.]] - rationale - gateway/tests/test_security_audit.py
-- [[Detect data staging patterns.]] - rationale - gateway/tests/test_security_audit.py
-- [[Monitor mode flags but allows — verify difference from enforce.]] - rationale - gateway/tests/test_security_audit.py
-- [[Reading from app should be allowed.]] - rationale - gateway/tests/test_security_audit.py
-- [[Reading from tmp should be allowed.]] - rationale - gateway/tests/test_security_audit.py
-- [[Same path, different modes — enforce blocks, monitor allows.]] - rationale - gateway/tests/test_security_audit.py
-- [[Symlink-based escape attempt blocked.]] - rationale - gateway/tests/test_security_audit.py
-- [[Test file system sandboxing in enforce mode — blocks unauthorized access.]] - rationale - gateway/tests/test_security_audit.py
-- [[TestFileSandbox]] - code - gateway/tests/test_security_audit.py
-- [[Writing PII should be flagged even to allowed paths.]] - rationale - gateway/tests/test_security_audit.py
-- [[Writing outside allowed paths must be blocked.]] - rationale - gateway/tests/test_security_audit.py
-- [[Writing to appdata should be allowed.]] - rationale - gateway/tests/test_security_audit.py
-- [[Writing to tmp should be allowed.]] - rationale - gateway/tests/test_security_audit.py
+- [[.get_active_project_for_user()]] - code - gateway/security/group_config.py
+- [[.get_all_member_ids()]] - code - gateway/security/group_config.py
+- [[.get_group_admin_ids()]] - code - gateway/security/group_config.py
+- [[.get_group_safe_response_prefix()]] - code - gateway/security/group_config.py
+- [[.get_user_collab_mode()]] - code - gateway/security/group_config.py
+- [[.get_user_groups()]] - code - gateway/security/group_config.py
+- [[.get_user_projects()]] - code - gateway/security/group_config.py
+- [[.is_member()]] - code - gateway/security/group_config.py
+- [[.model_post_init()_1]] - code - gateway/security/group_config.py
+- [[.test_active_group_appears_first()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_append_to_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_append_to_user_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_clean_text_not_flagged()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_collaborator_gets_filtered_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_detects_api_key_pattern()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_detects_bearer_token()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_detects_private_section_header()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_get_group_memory_empty_initially()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_get_user_memory_returns_string()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_multiple_appends_accumulate()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_owner_gets_unfiltered_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_owner_sees_all_groups()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_strip_private_content_redacts_api_key()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_strip_private_section()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_topic_scoped_excludes_non_matching_project_scoped_group()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_topic_scoped_includes_local_only_group()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_topic_scoped_returns_matching_group()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_unknown_user_sees_only_private_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_user_does_not_see_other_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_user_memory_isolated_between_users()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_user_sees_own_private_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_user_sees_their_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[Merge group_overrides.json additions into the in-memory TeamsConfig.]] - rationale - gateway/security/group_config.py
+- [[Return all groups the user belongs to.]] - rationale - gateway/security/group_config.py
+- [[Return all projects accessible to the user via group membership.]] - rationale - gateway/security/group_config.py
+- [[Return deduplicated list of all user IDs across all groups.]] - rationale - gateway/security/group_config.py
+- [[Return mapping of group_id → admin_user_id for all groups that have an admin.]] - rationale - gateway/security/group_config.py
+- [[Return the effective collab_mode for a user.          Resolution order]] - rationale - gateway/security/group_config.py
+- [[Return the first project accessible to a user (primary project).]] - rationale - gateway/security/group_config.py
+- [[Return the safe_response_prefix for the first group that the user belongs to]] - rationale - gateway/security/group_config.py
+- [[TeamsConfig]] - code - gateway/security/group_config.py
+- [[TestGroupMemoryReadWrite]] - code - gateway/tests/test_shared_memory.py
+- [[TestMergedMemory]] - code - gateway/tests/test_shared_memory.py
+- [[TestPrivateContentDetection]] - code - gateway/tests/test_shared_memory.py
+- [[TestTopicScopedMemory]] - code - gateway/tests/test_shared_memory.py
+- [[TestUserPrivateMemory]] - code - gateway/tests/test_shared_memory.py
+- [[Top-level teams configuration parsed from agentshroud.yaml `teams` section.]] - rationale - gateway/security/group_config.py
+- [[_apply_persisted_overrides()]] - code - gateway/security/group_config.py
+- [[rbac()_4]] - code - gateway/tests/test_shared_memory.py
+- [[session_mgr()]] - code - gateway/tests/test_shared_memory.py
+- [[smm()_1]] - code - gateway/tests/test_shared_memory.py
+- [[teams()_4]] - code - gateway/tests/test_group_workspace_manager.py
+- [[test_shared_memory.py]] - code - gateway/tests/test_shared_memory.py
+- [[tmp_workspace()_2]] - code - gateway/tests/test_shared_memory.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,23 +71,31 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_Community 0]]
-- 3 edges to [[_COMMUNITY_Community 41]]
-- 2 edges to [[_COMMUNITY_Community 72]]
-- 2 edges to [[_COMMUNITY_Community 431]]
-- 2 edges to [[_COMMUNITY_Community 24]]
-- 1 edge to [[_COMMUNITY_Community 7]]
+- 20 edges to [[_COMMUNITY_Community 61]]
+- 13 edges to [[_COMMUNITY_Community 135]]
+- 12 edges to [[_COMMUNITY_Community 18]]
+- 12 edges to [[_COMMUNITY_Community 6]]
+- 12 edges to [[_COMMUNITY_Community 194]]
+- 7 edges to [[_COMMUNITY_Community 1]]
+- 6 edges to [[_COMMUNITY_Community 97]]
+- 6 edges to [[_COMMUNITY_Community 60]]
+- 4 edges to [[_COMMUNITY_Community 223]]
+- 4 edges to [[_COMMUNITY_Community 479]]
+- 4 edges to [[_COMMUNITY_Community 33]]
+- 1 edge to [[_COMMUNITY_Community 10]]
+- 1 edge to [[_COMMUNITY_Community 707]]
+- 1 edge to [[_COMMUNITY_Community 35]]
 - 1 edge to [[_COMMUNITY_Community 52]]
-- 1 edge to [[_COMMUNITY_Community 108]]
-- 1 edge to [[_COMMUNITY_Community 146]]
-- 1 edge to [[_COMMUNITY_Community 93]]
-- 1 edge to [[_COMMUNITY_Community 477]]
-- 1 edge to [[_COMMUNITY_Community 121]]
-- 1 edge to [[_COMMUNITY_Community 71]]
-- 1 edge to [[_COMMUNITY_Community 22]]
-- 1 edge to [[_COMMUNITY_Community 434]]
-- 1 edge to [[_COMMUNITY_Community 5]]
-- 1 edge to [[_COMMUNITY_Community 11]]
+- 1 edge to [[_COMMUNITY_Community 884]]
+- 1 edge to [[_COMMUNITY_Community 1284]]
+- 1 edge to [[_COMMUNITY_Community 1070]]
+- 1 edge to [[_COMMUNITY_Community 1289]]
+- 1 edge to [[_COMMUNITY_Community 986]]
+- 1 edge to [[_COMMUNITY_Community 1424]]
 
 ## Top bridge nodes
-- [[TestFileSandbox]] - degree 55, connects to 17 communities
+- [[TeamsConfig]] - degree 100, connects to 20 communities
+- [[test_shared_memory.py]] - degree 13, connects to 3 communities
+- [[TestPrivateContentDetection]] - degree 13, connects to 3 communities
+- [[TestMergedMemory]] - degree 11, connects to 3 communities
+- [[TestGroupMemoryReadWrite]] - degree 8, connects to 3 communities

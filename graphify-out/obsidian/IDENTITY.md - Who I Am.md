@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/agents/openclaw-identity.md"
 type: "document"
-community: "Community 809"
+community: "Community 766"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_809
+  - community/Community_766
 ---
 
 # IDENTITY.md - Who I Am
@@ -20,4 +20,4 @@ tags:
 - [[Responsibilities]] - `contains` [EXTRACTED]
 - [[openclaw-identity]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_809
+#graphify/document #graphify/EXTRACTED #community/Community_766

@@ -1,11 +1,11 @@
 ---
 type: community
-members: 87
+members: 85
 ---
 
 # Community 132
 
-**Members:** 87 nodes
+**Members:** 85 nodes
 
 ## Members
 - [[.__init__()_30]] - code - gateway/proxy/mcp_proxy.py
@@ -19,9 +19,7 @@ members: 87
 - [[.remove()]] - code - gateway/proxy/mcp_proxy.py
 - [[.send_request()_2]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[.stop()_2]] - code - gateway/proxy/mcp_proxy.py
-- [[.stop()_3]] - code - gateway/proxy/mcp_proxy.py
 - [[.stop()_12]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.stop_all()]] - code - gateway/proxy/mcp_proxy.py
 - [[.submit_tool_request()_4]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[.terminate()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[.test_approved_decision_allows()]] - code - gateway/tests/test_mcp_proxy_coverage.py
@@ -104,26 +102,28 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 73 edges to [[_COMMUNITY_Community 54]]
-- 52 edges to [[_COMMUNITY_Community 64]]
-- 50 edges to [[_COMMUNITY_Community 230]]
-- 32 edges to [[_COMMUNITY_Community 329]]
-- 30 edges to [[_COMMUNITY_Community 59]]
+- 83 edges to [[_COMMUNITY_Community 54]]
+- 72 edges to [[_COMMUNITY_Community 64]]
+- 31 edges to [[_COMMUNITY_Community 329]]
+- 26 edges to [[_COMMUNITY_Community 2038]]
 - 22 edges to [[_COMMUNITY_Community 184]]
+- 22 edges to [[_COMMUNITY_Community 59]]
 - 5 edges to [[_COMMUNITY_Community 140]]
-- 4 edges to [[_COMMUNITY_Community 37]]
-- 3 edges to [[_COMMUNITY_Community 232]]
+- 4 edges to [[_COMMUNITY_Community 1127]]
 - 3 edges to [[_COMMUNITY_Community 21]]
 - 2 edges to [[_COMMUNITY_Community 941]]
-- 1 edge to [[_COMMUNITY_Community 2038]]
-- 1 edge to [[_COMMUNITY_Community 1970]]
-- 1 edge to [[_COMMUNITY_Community 2042]]
+- 2 edges to [[_COMMUNITY_Community 1970]]
+- 2 edges to [[_COMMUNITY_Community 2033]]
+- 2 edges to [[_COMMUNITY_Community 965]]
+- 2 edges to [[_COMMUNITY_Community 2032]]
+- 1 edge to [[_COMMUNITY_Community 1942]]
 - 1 edge to [[_COMMUNITY_Community 2071]]
-- 1 edge to [[_COMMUNITY_Community 2030]]
+- 1 edge to [[_COMMUNITY_Community 232]]
+- 1 edge to [[_COMMUNITY_Community 181]]
 
 ## Top bridge nodes
 - [[MCPToolConfig]] - degree 59, connects to 11 communities
+- [[HttpSseConnection]] - degree 35, connects to 8 communities
 - [[test_mcp_proxy_coverage.py]] - degree 34, connects to 8 communities
-- [[HttpSseConnection]] - degree 35, connects to 7 communities
-- [[FakeApprovalQueue]] - degree 27, connects to 7 communities
-- [[FakeProcess]] - degree 23, connects to 7 communities
+- [[StdioConnection]] - degree 38, connects to 7 communities
+- [[ConnectionPool]] - degree 36, connects to 7 communities

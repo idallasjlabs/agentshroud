@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 845"
+community: "Community 2"
 location: "L2188"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_845
+  - community/Community_2
 ---
 
 # System startup notice should be deduplicated in a short cooldown window.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_proxy_request_suppresses_duplicate_system_startup_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_845
+#graphify/rationale #graphify/EXTRACTED #community/Community_2

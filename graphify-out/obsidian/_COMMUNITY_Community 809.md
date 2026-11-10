@@ -1,26 +1,32 @@
 ---
 type: community
-members: 13
+members: 19
 ---
 
 # Community 809
 
-**Members:** 13 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[Competitive Intelligence Protocol]] - document - docker/config/hermes/agents/openclaw-identity.md
-- [[Competitive Intelligence Protocol_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
-- [[IDENTITY.md - Who I Am]] - document - docker/config/hermes/agents/openclaw-identity.md
-- [[IDENTITY.md - Who I Am_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
-- [[My Owner]] - document - docker/config/hermes/agents/openclaw-identity.md
-- [[My Owner_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
-- [[My Responsibilities]] - document - docker/config/hermes/agents/openclaw-identity.md
-- [[My Responsibilities_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
-- [[My Role]] - document - docker/config/hermes/agents/openclaw-identity.md
-- [[My Role_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
-- [[Responsibilities]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[openclaw-identity]] - document - docker/config/hermes/agents/openclaw-identity.md
-- [[openclaw-identity_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
+- [[._filter_msg()]] - code - gateway/tests/test_log_sanitizer.py
+- [[.setup_method()_7]] - code - gateway/tests/test_log_sanitizer.py
+- [[.test_aws_key_redacted()]] - code - gateway/tests/test_log_sanitizer.py
+- [[.test_clean_message_unchanged()]] - code - gateway/tests/test_log_sanitizer.py
+- [[.test_credit_card_redacted()]] - code - gateway/tests/test_log_sanitizer.py
+- [[.test_filter_always_returns_true()]] - code - gateway/tests/test_log_sanitizer.py
+- [[.test_install_log_sanitizer_no_error()]] - code - gateway/tests/test_log_sanitizer.py
+- [[.test_openai_key_redacted()]] - code - gateway/tests/test_log_sanitizer.py
+- [[.test_password_assignment_redacted()]] - code - gateway/tests/test_log_sanitizer.py
+- [[.test_secret_assignment_redacted()]] - code - gateway/tests/test_log_sanitizer.py
+- [[.test_ssn_redacted()_1]] - code - gateway/tests/test_log_sanitizer.py
+- [[.test_telegram_bot_token_in_url_redacted()]] - code - gateway/tests/test_log_sanitizer.py
+- [[.test_telegram_bot_token_shorter_id_redacted()]] - code - gateway/tests/test_log_sanitizer.py
+- [[.test_token_assignment_redacted()]] - code - gateway/tests/test_log_sanitizer.py
+- [[.test_user_path_redacted()]] - code - gateway/tests/test_log_sanitizer.py
+- [[Install the log sanitizer on all existing loggers.]] - rationale - gateway/security/log_sanitizer.py
+- [[TestLogSanitizer]] - code - gateway/tests/test_log_sanitizer.py
+- [[install_log_sanitizer()]] - code - gateway/security/log_sanitizer.py
+- [[test_log_sanitizer.py]] - code - gateway/tests/test_log_sanitizer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,9 +36,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 339]]
-- 1 edge to [[_COMMUNITY_Community 766]]
+- 4 edges to [[_COMMUNITY_Community 0]]
+- 1 edge to [[_COMMUNITY_Community 684]]
 
 ## Top bridge nodes
-- [[Competitive Intelligence Protocol_1]] - degree 3, connects to 1 community
-- [[Responsibilities]] - degree 2, connects to 1 community
+- [[install_log_sanitizer()]] - degree 5, connects to 2 communities
+- [[TestLogSanitizer]] - degree 17, connects to 1 community
+- [[test_log_sanitizer.py]] - degree 3, connects to 1 community
+- [[.setup_method()_7]] - degree 2, connects to 1 community

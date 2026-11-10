@@ -23,11 +23,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 626]]
-- 3 edges to [[_COMMUNITY_Community 2]]
-- 3 edges to [[_COMMUNITY_Community 845]]
+- 9 edges to [[_COMMUNITY_Community 2]]
 
 ## Top bridge nodes
-- [[.test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_json_content_field()]] - degree 5, connects to 3 communities
-- [[.test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten_for_content_field()]] - degree 5, connects to 3 communities
-- [[.test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_json_caption_field()]] - degree 4, connects to 3 communities
+- [[.test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_json_content_field()]] - degree 5, connects to 1 community
+- [[.test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten_for_content_field()]] - degree 5, connects to 1 community
+- [[.test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_json_caption_field()]] - degree 4, connects to 1 community

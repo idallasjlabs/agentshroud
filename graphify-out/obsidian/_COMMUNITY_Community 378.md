@@ -1,22 +1,19 @@
 ---
 type: community
-members: 38
+members: 34
 ---
 
 # Community 378
 
-**Members:** 38 nodes
+**Members:** 34 nodes
 
 ## Members
-- [[_apply_agent_cb()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_apply_state_cb()]] - code - firmware/voice-terminal/main/ui_face.c
 - [[_build_ws_url()]] - code - firmware/voice-terminal/main/app_main.c
-- [[_find_canvas()]] - code - firmware/voice-terminal/main/ui_face.c
 - [[_lvgl_flush_wait_yield()]] - code - firmware/voice-terminal/main/app_main.c
 - [[_on_tts_pcm()]] - code - firmware/voice-terminal/main/app_main.c
+- [[_on_vg_state()]] - code - firmware/voice-terminal/main/app_main.c
 - [[_on_ws_ctrl()]] - code - firmware/voice-terminal/main/app_main.c
-- [[_report_and_place_canvas()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_state_to_emotion()]] - code - firmware/voice-terminal/main/ui_face.c
+- [[_send_status_beacon()]] - code - firmware/voice-terminal/main/app_main.c
 - [[app_main()]] - code - firmware/voice-terminal/main/app_main.c
 - [[app_main.c]] - code - firmware/voice-terminal/main/app_main.c
 - [[audio.c]] - code - firmware/voice-terminal/main/audio.c
@@ -28,24 +25,23 @@ members: 38
 - [[audio_set_volume()]] - code - firmware/voice-terminal/main/audio.c
 - [[audio_volume_tick()]] - code - firmware/voice-terminal/main/audio.c
 - [[esp_err_t]] - code - firmware/voice-terminal/main/audio.c
-- [[esp_err_t_2]] - code - firmware/voice-terminal/main/wakeword.c
 - [[esp_event_base_t]] - code - firmware/voice-terminal/main/app_main.c
-- [[face_emotion_t]] - code - firmware/voice-terminal/main/ui_face.c
 - [[lv_display_t]] - code - firmware/voice-terminal/main/app_main.c
-- [[lv_obj_t]] - code - firmware/voice-terminal/main/ui_face.c
-- [[remote_log.h]] - code - firmware/voice-terminal/main/remote_log.h
-- [[ui_face.c]] - code - firmware/voice-terminal/main/ui_face.c
-- [[ui_face_init()]] - code - firmware/voice-terminal/main/ui_face.c
+- [[tts_task()]] - code - firmware/voice-terminal/main/app_main.c
 - [[ui_face_set_agent()]] - code - firmware/voice-terminal/main/ui_face.c
+- [[ui_face_set_state()]] - code - firmware/voice-terminal/main/ui_face.c
 - [[ui_init()]] - code - firmware/voice-terminal/main/app_main.c
 - [[ui_state_t]] - code - firmware/voice-terminal/main/app_main.c
 - [[ui_update()]] - code - firmware/voice-terminal/main/app_main.c
+- [[voice_task()]] - code - firmware/voice-terminal/main/app_main.c
 - [[vt_agent_count()]] - code - firmware/voice-terminal/main/app_main.c
 - [[vt_remote_log()]] - code - firmware/voice-terminal/main/app_main.c
-- [[wakeword_init()]] - code - firmware/voice-terminal/main/wakeword.c
+- [[wakeword_triggered()]] - code - firmware/voice-terminal/main/wakeword.c
+- [[wakeword_tts_stop_requested()]] - code - firmware/voice-terminal/main/wakeword.c
 - [[wifi_event_handler()]] - code - firmware/voice-terminal/main/app_main.c
 - [[wifi_init()]] - code - firmware/voice-terminal/main/app_main.c
-- [[ws_vg_state_t_1]] - code - firmware/voice-terminal/main/ui_face.c
+- [[ws_client_handle_t]] - code - firmware/voice-terminal/main/app_main.c
+- [[ws_vg_state_t]] - code - firmware/voice-terminal/main/app_main.c
 
 ## Live Query (requires Dataview plugin)
 
@@ -55,16 +51,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_Community 341]]
-- 5 edges to [[_COMMUNITY_Community 358]]
-- 4 edges to [[_COMMUNITY_Community 228]]
-- 3 edges to [[_COMMUNITY_Community 39]]
+- 20 edges to [[_COMMUNITY_Community 341]]
+- 11 edges to [[_COMMUNITY_Community 358]]
+- 9 edges to [[_COMMUNITY_Community 228]]
+- 5 edges to [[_COMMUNITY_Community 1286]]
+- 2 edges to [[_COMMUNITY_Community 312]]
 - 1 edge to [[_COMMUNITY_Community 113]]
 - 1 edge to [[_COMMUNITY_Community 1039]]
 
 ## Top bridge nodes
 - [[app_main.c]] - degree 21, connects to 5 communities
-- [[app_main()]] - degree 13, connects to 3 communities
-- [[ui_face.c]] - degree 14, connects to 2 communities
-- [[vt_remote_log()]] - degree 5, connects to 2 communities
-- [[remote_log.h]] - degree 4, connects to 2 communities
+- [[app_main()]] - degree 13, connects to 4 communities
+- [[voice_task()]] - degree 25, connects to 3 communities
+- [[wakeword_triggered()]] - degree 15, connects to 2 communities
+- [[wakeword_tts_stop_requested()]] - degree 6, connects to 2 communities

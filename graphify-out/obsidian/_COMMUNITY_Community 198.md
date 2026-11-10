@@ -53,18 +53,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 11 edges to [[_COMMUNITY_Community 72]]
 - 11 edges to [[_COMMUNITY_Community 122]]
-- 10 edges to [[_COMMUNITY_Community 72]]
 - 10 edges to [[_COMMUNITY_Community 381]]
 - 6 edges to [[_COMMUNITY_Community 455]]
 - 6 edges to [[_COMMUNITY_Community 166]]
 - 4 edges to [[_COMMUNITY_Community 791]]
-- 1 edge to [[_COMMUNITY_Community 1]]
 - 1 edge to [[_COMMUNITY_Community 1991]]
 - 1 edge to [[_COMMUNITY_Community 2321]]
 
 ## Top bridge nodes
-- [[KeyRotationManager]] - degree 55, connects to 9 communities
+- [[KeyRotationManager]] - degree 55, connects to 8 communities
 - [[.register_credential()]] - degree 5, connects to 2 communities
 - [[Any_43]] - degree 13, connects to 1 community
 - [[.should_rotate()]] - degree 7, connects to 1 community

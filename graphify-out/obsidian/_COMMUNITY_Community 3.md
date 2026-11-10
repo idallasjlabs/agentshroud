@@ -125,12 +125,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 21 edges to [[_COMMUNITY_Community 72]]
-- 4 edges to [[_COMMUNITY_Community 26]]
-- 2 edges to [[_COMMUNITY_Community 1]]
-- 1 edge to [[_COMMUNITY_Community 984]]
+- 22 edges to [[_COMMUNITY_Community 72]]
+- 4 edges to [[_COMMUNITY_Community 6]]
+- 1 edge to [[_COMMUNITY_Community 141]]
+- 1 edge to [[_COMMUNITY_Community 0]]
 
 ## Top bridge nodes
 - [[ApprovalHardening]] - degree 38, connects to 3 communities
-- [[ApprovalHardeningConfig]] - degree 26, connects to 3 communities
+- [[ApprovalHardeningConfig]] - degree 26, connects to 2 communities
 - [[approval_hardening.py]] - degree 5, connects to 1 community

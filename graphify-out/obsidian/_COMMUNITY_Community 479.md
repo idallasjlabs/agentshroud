@@ -1,38 +1,43 @@
 ---
 type: community
-members: 25
+members: 30
 ---
 
 # Community 479
 
-**Members:** 25 nodes
+**Members:** 30 nodes
 
 ## Members
-- [[.setup_method()_22]] - code - gateway/tests/test_resource_guard.py
-- [[.teardown_method()_5]] - code - gateway/tests/test_resource_guard.py
-- [[.test_brief_spike_below_debounce_does_not_alert()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_check_resource_over_limit_blocked()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_check_resource_temp_files_limit()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_check_resource_under_limit_passes()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_invalid_resource_type()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_multiple_agents_isolated()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_request_count_limiting()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_resource_guard_config()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_stop_cancels_monitor_task()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_system_resource_monitoring_alerts_after_debounce()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_window_expiry_resets_usage()]] - code - gateway/tests/test_resource_guard.py
-- [[A single over-threshold sample followed by an under-threshold sample is suppress]] - rationale - gateway/tests/test_resource_guard.py
-- [[Sustained high CPU fires the alert after debounce samples are crossed.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test ResourceGuardConfig dataclass.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test handling of invalid resource types.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test request count per minute limiting.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test temp file count limiting.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test that different agents have isolated resource tracking.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test that resource usage over limits is blocked.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test that resource usage resets after time window.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test that resource usage under limits passes.]] - rationale - gateway/tests/test_resource_guard.py
-- [[TestResourceGuard]] - code - gateway/tests/test_resource_guard.py
-- [[stop() should cancel background monitor cleanly.]] - rationale - gateway/tests/test_resource_guard.py
+- [[.test_group_a_write_invisible_from_group_b()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_group_b_write_invisible_from_group_a()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_group_id_uses_group_prefix_namespace()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_group_memory_physically_isolated()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_group_write_invisible_from_user_dm()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_group_writes_are_independent_namespaces()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_merged_memory_separates_group_and_dm()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_user_dm_write_invisible_from_group()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_user_dm_write_invisible_from_other_group()]] - code - gateway/tests/test_group_isolation.py
+- [[Both groups store separate content with no cross-contamination.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Content appended to group-A memory must not appear in group-B memory.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Content appended to group-B must not appear in group-A memory.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Content written to a group must not appear in any user's private DM memory.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Content written to a user DM must not appear in any group memory.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Group workspace content must not leak into any user's DM workspace.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Test Group Config]] - code - gateway/tests/test_group_config.py
+- [[TestGroupMemoryInvisibleFromDM]] - code - gateway/tests/test_group_isolation.py
+- [[TestGroupMemoryNamespaceIsolation]] - code - gateway/tests/test_group_isolation.py
+- [[User DM content must not leak into a group the user is NOT a member of.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Writes in group-A must not be readable from group-B.]] - rationale - gateway/tests/test_group_isolation.py
+- [[agent_isolation.py (AgentRegistry)]] - code - gateway/security/agent_isolation.py
+- [[get_merged_memory_for_user returns group section and private section separately.]] - rationale - gateway/tests/test_group_isolation.py
+- [[group-A and group-B memory files must be in separate directories.]] - rationale - gateway/tests/test_group_isolation.py
+- [[group-{chat_id} sessions must live under the 'groups' subdirectory.]] - rationale - gateway/tests/test_group_isolation.py
+- [[rbac()]] - code - gateway/tests/test_group_isolation.py
+- [[session_manager()_1]] - code - gateway/tests/test_group_isolation.py
+- [[shared_memory()]] - code - gateway/tests/test_group_isolation.py
+- [[teams()_2]] - code - gateway/tests/test_group_isolation.py
+- [[test_group_isolation.py]] - code - gateway/tests/test_group_isolation.py
+- [[tmp_workspace()]] - code - gateway/tests/test_group_isolation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,11 +47,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 434]]
-- 3 edges to [[_COMMUNITY_Community 5]]
+- 7 edges to [[_COMMUNITY_Community 52]]
+- 5 edges to [[_COMMUNITY_Community 1]]
+- 4 edges to [[_COMMUNITY_Community 196]]
+- 4 edges to [[_COMMUNITY_Community 6]]
+- 4 edges to [[_COMMUNITY_Community 61]]
+- 1 edge to [[_COMMUNITY_Community 60]]
 
 ## Top bridge nodes
-- [[TestResourceGuard]] - degree 16, connects to 2 communities
-- [[.test_stop_cancels_monitor_task()]] - degree 4, connects to 2 communities
-- [[.setup_method()_22]] - degree 3, connects to 2 communities
-- [[.test_resource_guard_config()]] - degree 3, connects to 1 community
+- [[test_group_isolation.py]] - degree 18, connects to 6 communities
+- [[TestGroupMemoryNamespaceIsolation]] - degree 13, connects to 5 communities
+- [[TestGroupMemoryInvisibleFromDM]] - degree 12, connects to 5 communities
+- [[session_manager()_1]] - degree 2, connects to 1 community
+- [[teams()_2]] - degree 2, connects to 1 community

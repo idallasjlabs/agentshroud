@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "Community 1026"
+community: "Community 16"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1026
+  - community/Community_16
 ---
 
 # Action taken during retention policy enforcement.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RetentionAction]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1026
+#graphify/rationale #graphify/EXTRACTED #community/Community_16

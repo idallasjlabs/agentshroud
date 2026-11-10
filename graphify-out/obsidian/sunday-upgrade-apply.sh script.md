@@ -12,6 +12,7 @@ tags:
 # sunday-upgrade-apply.sh script
 
 ## Connections
+- [[_mutating()]] - `calls` [EXTRACTED]
 - [[_prune_build_cache()]] - `calls` [EXTRACTED]
 - [[_record_head()]] - `calls` [EXTRACTED]
 - [[_should_run()]] - `calls` [EXTRACTED]

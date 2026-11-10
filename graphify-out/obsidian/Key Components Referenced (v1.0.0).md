@@ -1,12 +1,12 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "Community 420"
+community: "Community 162"
 location: "L134"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_420
+  - community/Community_162
 ---
 
 # Key Components Referenced (v1.0.0)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Summary_26]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_420
+#graphify/document #graphify/EXTRACTED #community/Community_162

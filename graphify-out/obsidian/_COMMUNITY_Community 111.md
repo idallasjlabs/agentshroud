@@ -85,9 +85,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 26 edges to [[_COMMUNITY_Community 307]]
+- 24 edges to [[_COMMUNITY_Community 307]]
+- 8 edges to [[_COMMUNITY_Community 271]]
 - 6 edges to [[_COMMUNITY_Community 221]]
-- 6 edges to [[_COMMUNITY_Community 271]]
 
 ## Top bridge nodes
 - [[test_a2a_policy.py]] - degree 48, connects to 2 communities

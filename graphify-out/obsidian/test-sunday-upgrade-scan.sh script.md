@@ -14,12 +14,15 @@ tags:
 ## Connections
 - [[check()_4]] - `calls` [EXTRACTED]
 - [[dev_gate()]] - `calls` [EXTRACTED]
+- [[lib30()]] - `calls` [EXTRACTED]
+- [[lib_call()]] - `calls` [EXTRACTED]
 - [[make_apply_bin()]] - `calls` [EXTRACTED]
 - [[make_fake_repo()]] - `calls` [EXTRACTED]
 - [[run_apply()]] - `calls` [EXTRACTED]
 - [[run_gate()]] - `calls` [EXTRACTED]
 - [[t17_run()]] - `calls` [EXTRACTED]
 - [[test-sunday-upgrade-scan.sh]] - `contains` [EXTRACTED]
+- [[write_dev_result()]] - `calls` [EXTRACTED]
 - [[write_fake()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_1111

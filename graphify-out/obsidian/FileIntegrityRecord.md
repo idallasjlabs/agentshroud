@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "Community 203"
+community: "Community 16"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_203
+  - community/Community_16
 ---
 
 # FileIntegrityRecord
@@ -20,4 +20,4 @@ tags:
 - [[Record of a file's integrity state.]] - `rationale_for` [EXTRACTED]
 - [[memory_integrity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_203
+#graphify/code #graphify/EXTRACTED #community/Community_16

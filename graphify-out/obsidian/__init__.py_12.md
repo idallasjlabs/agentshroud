@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/__init__.py"
 type: "code"
-community: "Community 25"
+community: "Community 50"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_25
+  - community/Community_50
 ---
 
 # __init__.py
@@ -16,4 +16,4 @@ tags:
 - [[SSHResult]] - `imports` [EXTRACTED]
 - [[proxy.py]] - `re_exports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_25
+#graphify/code #graphify/EXTRACTED #community/Community_50

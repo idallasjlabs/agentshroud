@@ -1,12 +1,12 @@
 ---
 source_file: "reports/upgrade-2026-09-23.md"
 type: "document"
-community: "Community 118"
+community: "Community 984"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_118
+  - community/Community_984
 ---
 
 # AgentShroud Sunday Upgrade — 2026-09-23 (DEV run)
@@ -29,4 +29,4 @@ tags:
 - [[Summary line ABORTED (90-minute time budget reached; host memory exhaustion blocked the rebuild)]] - `contains` [EXTRACTED]
 - [[upgrade-2026-09-23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_118
+#graphify/document #graphify/EXTRACTED #community/Community_984

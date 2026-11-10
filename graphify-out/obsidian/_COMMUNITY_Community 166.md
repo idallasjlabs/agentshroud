@@ -54,13 +54,14 @@ SORT file.name ASC
 - 7 edges to [[_COMMUNITY_Community 17]]
 - 6 edges to [[_COMMUNITY_Community 198]]
 - 6 edges to [[_COMMUNITY_Community 122]]
-- 3 edges to [[_COMMUNITY_Community 49]]
-- 2 edges to [[_COMMUNITY_Community 20]]
+- 2 edges to [[_COMMUNITY_Community 10]]
+- 2 edges to [[_COMMUNITY_Community 125]]
 - 1 edge to [[_COMMUNITY_Community 978]]
+- 1 edge to [[_COMMUNITY_Community 49]]
 - 1 edge to [[_COMMUNITY_Community 40]]
 
 ## Top bridge nodes
-- [[management.py]] - degree 27, connects to 6 communities
+- [[management.py]] - degree 27, connects to 7 communities
 - [[EgressAllowlistUpdate]] - degree 6, connects to 4 communities
 - [[EgressAllowlistResponse]] - degree 6, connects to 3 communities
 - [[credentials_status()]] - degree 4, connects to 2 communities

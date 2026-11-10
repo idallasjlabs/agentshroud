@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "Community 1016"
+community: "Community 16"
 location: "L207"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1016
+  - community/Community_16
 ---
 
 # Scan a single file for integrity changes.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.scan_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1016
+#graphify/rationale #graphify/EXTRACTED #community/Community_16

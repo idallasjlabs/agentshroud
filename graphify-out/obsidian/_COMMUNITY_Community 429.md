@@ -1,11 +1,11 @@
 ---
 type: community
-members: 20
+members: 24
 ---
 
 # Community 429
 
-**Members:** 20 nodes
+**Members:** 24 nodes
 
 ## Members
 - [[1. The Problem Unsecured AI Agents]] - document - docs/papers/agentshroud-whitepaper.md
@@ -22,6 +22,10 @@ members: 20
 - [[6.1 Market Overview]] - document - docs/papers/agentshroud-whitepaper.md
 - [[6.2 Comparison Table]] - document - docs/papers/agentshroud-whitepaper.md
 - [[6.3 Key Differentiators]] - document - docs/papers/agentshroud-whitepaper.md
+- [[8. Performance & Testing]] - document - docs/papers/agentshroud-whitepaper.md
+- [[8.1 Test Coverage]] - document - docs/papers/agentshroud-whitepaper.md
+- [[8.2 Resource Footprint]] - document - docs/papers/agentshroud-whitepaper.md
+- [[8.3 Latency]] - document - docs/papers/agentshroud-whitepaper.md
 - [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - document - docs/papers/agentshroud-whitepaper.md
 - [[Architecture Overview]] - document - docs/api/integration-guide.md
 - [[Completed Phases]] - document - docs/papers/agentshroud-whitepaper.md
@@ -45,9 +49,10 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 602]]
 - 1 edge to [[_COMMUNITY_Community 981]]
 - 1 edge to [[_COMMUNITY_Community 799]]
-- 1 edge to [[_COMMUNITY_Community 1054]]
 - 1 edge to [[_COMMUNITY_Community 927]]
+- 1 edge to [[_COMMUNITY_Community 1054]]
 
 ## Top bridge nodes
-- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - degree 17, connects to 8 communities
+- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - degree 17, connects to 7 communities
 - [[Architecture Overview]] - degree 6, connects to 2 communities
+- [[8. Performance & Testing]] - degree 5, connects to 1 community
