@@ -324,6 +324,22 @@ def test_dev_override_renames_edge_and_retargets_forwarder():
     )
 
 
+@pytest.mark.parametrize("env", ["prod", "dev"])
+def test_gateway_mounts_edge_config_read_only(env):
+    """The signed manifest and vendor profiles must reach the gateway at the path
+    descriptors.CONFIG_DIR resolves to inside the image (/app/gateway → /app/config).
+    Missing, the edge fails closed at boot — found on the first dev deploy."""
+    volumes = _svc(_compose(env), GATEWAY).get("volumes", [])
+    mounts = {
+        str((BASE.parent / v.split(":")[0]).resolve()): v.split(":", 1)[1]
+        for v in volumes
+        if isinstance(v, str) and v.startswith("..")
+    }
+    assert mounts.get(str(REPO_ROOT / "config" / "inbound-edge")) == (
+        "/app/config/inbound-edge:ro"
+    ), volumes
+
+
 # ── mutation proof: every check fails when its control is removed ───────────────
 
 

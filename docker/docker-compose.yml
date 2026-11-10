@@ -59,6 +59,9 @@ services:
       - "127.0.0.1:8443:8443"
     volumes:
       - ../agentshroud.yaml:/app/agentshroud.yaml:ro
+      # Inbound MCP Edge: signed descriptor manifest + vendor profiles. Read-only;
+      # tampering is caught by the manifest signature, not by this mount.
+      - ../config/inbound-edge:/app/config/inbound-edge:ro
       - agentshroud-ssh:/var/agentshroud-ssh:ro
       - gateway-data:/app/data
       - ../web:/app/web:ro
