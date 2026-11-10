@@ -17184,6 +17184,21 @@ _OPENSCAP_CVE_REGISTRY: list[dict[str, Any]] = [
         "mitigation": "",
         "defense_layers": [],
     },
+    # ── GHSA sync 2026-11-10: 1 new openscap advisory(ies) auto-registered as under_review ──
+    {
+        "id": "ASH-OSCAP-002",
+        "ghsa_id": "GHSA-5h6x-q65w-wxvf",
+        "cve_id": "CVE-2026-122056",
+        "title": "Heap Off-By-One in ds_sds_mangle_filepath",
+        "cvss": 6.1,
+        "severity": "MEDIUM",
+        "disclosed": "2026-11-10",
+        "fixed_in": None,
+        "description": "### Summary\r \r Hey,\r \r `ds_sds_mangle_filepath` in `src/DS/sds.c` allocates `strlen(filepath) * 2` bytes for the mangled output but does not account for the null terminator. When every input character is `/` or `@`, each expands to two output bytes, filling the entire allocation. The null terminator then writes one byte past the heap buffer. An empty string input triggers `malloc(0)` followed by a",
+        "status": "under_review",
+        "mitigation": "",
+        "defense_layers": [],
+    },
 ]
 
 # ── Syft CVE Registry
