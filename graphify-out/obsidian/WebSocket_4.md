@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "Community 978"
+community: "Community 62"
 location: "L561"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/Community_62
 ---
 
 # WebSocket
@@ -15,4 +15,4 @@ tags:
 - [[activity_websocket()]] - `references` [EXTRACTED]
 - [[egress_websocket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_978
+#graphify/code #graphify/EXTRACTED #community/Community_62

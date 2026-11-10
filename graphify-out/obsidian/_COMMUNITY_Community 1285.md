@@ -1,18 +1,24 @@
 ---
 type: community
-members: 5
+members: 11
 ---
 
 # Community 1285
 
-**Members:** 5 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[.test_installed_not_running_is_clean_note()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_not_installed_not_running()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_running_with_alerts_sets_timestamp()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_running_without_alert_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestFalcoSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Common Issues_2]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Configuration Files_9]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Environment Variables (required)]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Health Checks]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Key Ports]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Kill Switch_1]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Logs_1]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Quick Reference — AgentShroud]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Related Notes]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Security Mode Toggle]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Start  Stop]] - document - docs/vault/00 - START HERE/Quick Reference.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 312]]
-- 1 edge to [[_COMMUNITY_Community 219]]
+- 1 edge to [[_COMMUNITY_Community 94]]
 
 ## Top bridge nodes
-- [[TestFalcoSummary]] - degree 5, connects to 1 community
-- [[.test_installed_not_running_is_clean_note()]] - degree 2, connects to 1 community
+- [[Quick Reference — AgentShroud]] - degree 11, connects to 1 community

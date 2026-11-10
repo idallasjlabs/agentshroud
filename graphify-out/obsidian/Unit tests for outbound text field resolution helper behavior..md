@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 99"
+community: "Community 2325"
 location: "L4011"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_99
+  - community/Community_2325
 ---
 
 # Unit tests for outbound text field resolution helper behavior.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOutboundTextFieldResolution]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_99
+#graphify/rationale #graphify/EXTRACTED #community/Community_2325

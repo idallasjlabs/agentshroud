@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "Community 2030"
+community: "Community 181"
 location: "L675"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2030
+  - community/Community_181
 ---
 
 # test_emergency_block_filter_raises_still_ok()
@@ -15,4 +15,4 @@ tags:
 - [[RuntimeError]] - `calls` [INFERRED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2030
+#graphify/code #graphify/EXTRACTED #community/Community_181

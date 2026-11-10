@@ -1,11 +1,11 @@
 ---
 source_file: ".github/workflows/security-scan.yml"
 type: "code"
-community: "Community 139"
+community: "Community 849"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/Community_849
 ---
 
 # Security Scan workflow (security-scan.yml)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[INCIDENT_2026-10-16_conduit-outage]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_139
+#graphify/code #graphify/EXTRACTED #community/Community_849

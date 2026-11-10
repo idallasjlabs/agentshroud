@@ -1,16 +1,13 @@
 ---
 type: community
-members: 69
+members: 65
 ---
 
 # Community 82
 
-**Members:** 69 nodes
+**Members:** 65 nodes
 
 ## Members
-- [[.to_dict()_13]] - code - gateway/security/soc_correlation.py
-- [[Any_61]] - code - gateway/security/soc_correlation.py
-- [[CorrelationSummary]] - code - gateway/security/soc_correlation.py
 - [[MATURITY_DESC]] - code - gateway/soc/static/soc.js
 - [[MATURITY_LEVELS]] - code - gateway/soc/static/soc.js
 - [[SCANNER_INFO]] - code - gateway/soc/static/soc.js
@@ -76,7 +73,6 @@ members: 69
 - [[_ts()]] - code - gateway/soc/static/soc.js
 - [[_uptime()]] - code - gateway/soc/static/soc.js
 - [[soc.js]] - code - gateway/soc/static/soc.js
-- [[soc_correlation.py]] - code - gateway/security/soc_correlation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -86,15 +82,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 8]]
-- 2 edges to [[_COMMUNITY_Community 978]]
-- 1 edge to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 884]]
+- 2 edges to [[_COMMUNITY_Community 8]]
+- 2 edges to [[_COMMUNITY_Community 169]]
+- 1 edge to [[_COMMUNITY_Community 62]]
+- 1 edge to [[_COMMUNITY_Community 51]]
+- 1 edge to [[_COMMUNITY_Community 20]]
 - 1 edge to [[_COMMUNITY_Community 10]]
 
 ## Top bridge nodes
-- [[CorrelationSummary]] - degree 5, connects to 2 communities
 - [[soc.js]] - degree 65, connects to 1 community
 - [[_loadEgress()]] - degree 7, connects to 1 community
 - [[_connectWS()]] - degree 6, connects to 1 community
 - [[_handleWSEvent()]] - degree 6, connects to 1 community
+- [[_loadServices()]] - degree 6, connects to 1 community

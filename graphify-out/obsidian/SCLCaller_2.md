@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "Community 61"
+community: "Community 6"
 location: "L42"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_61
+  - community/Community_6
 ---
 
 # SCLCaller
@@ -17,4 +17,4 @@ tags:
 - [[_make_m6_caller()]] - `references` [EXTRACTED]
 - [[_make_owner_caller()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_61
+#graphify/code #graphify/INFERRED #community/Community_6

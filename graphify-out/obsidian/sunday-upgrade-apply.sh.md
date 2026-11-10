@@ -12,6 +12,7 @@ tags:
 # sunday-upgrade-apply.sh
 
 ## Connections
+- [[AGENTSHROUD_HERMES_DISABLE_TELEGRAM]] - `defines` [EXTRACTED]
 - [[Base docker-compose stack]] - `references` [EXTRACTED]
 - [[Exclusive mkdir run lock + HEAD-pinned build guard (PR 475)]] - `rationale_for` [EXTRACTED]
 - [[Exit 50 build failed and rollback failed (stack may be degraded)]] - `references` [EXTRACTED]

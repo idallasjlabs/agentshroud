@@ -1,26 +1,39 @@
 ---
 type: community
-members: 14
+members: 27
 ---
 
 # Community 766
 
-**Members:** 14 nodes
+**Members:** 27 nodes
 
 ## Members
+- [[Competitive Intelligence Protocol]] - document - docker/config/hermes/agents/openclaw-identity.md
+- [[Competitive Intelligence Protocol_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
 - [[Config Keys Read]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
 - [[Environment Variables Used]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
 - [[Function Details]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
 - [[HTTP Responses]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[IDENTITY.md - Who I Am]] - document - docker/config/hermes/agents/openclaw-identity.md
+- [[IDENTITY.md - Who I Am_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
 - [[Imports From  Exports To]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
 - [[Key Classes  Functions]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
 - [[Known Issues  Notes]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[My Owner]] - document - docker/config/hermes/agents/openclaw-identity.md
+- [[My Owner_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
+- [[My Responsibilities]] - document - docker/config/hermes/agents/openclaw-identity.md
+- [[My Responsibilities_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
+- [[My Role]] - document - docker/config/hermes/agents/openclaw-identity.md
+- [[My Role_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
 - [[Purpose_111]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
 - [[RateLimiter.check(client_id)]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
 - [[Related_1]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[Responsibilities]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
 - [[auth.py_3]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
 - [[create_auth_dependency(config)]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
 - [[get_auth_dependency(config)]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[openclaw-identity]] - document - docker/config/hermes/agents/openclaw-identity.md
+- [[openclaw-identity_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
 - [[verify_token(token, expected_token)]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
 
 ## Live Query (requires Dataview plugin)
@@ -31,9 +44,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 339]]
 - 1 edge to [[_COMMUNITY_Community 725]]
-- 1 edge to [[_COMMUNITY_Community 707]]
-- 1 edge to [[_COMMUNITY_Community 809]]
+- 1 edge to [[_COMMUNITY_Community 49]]
 
 ## Top bridge nodes
-- [[auth.py_3]] - degree 12, connects to 3 communities
+- [[auth.py_3]] - degree 12, connects to 2 communities
+- [[Competitive Intelligence Protocol_1]] - degree 3, connects to 1 community

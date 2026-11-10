@@ -1,26 +1,27 @@
 ---
 type: community
-members: 13
+members: 14
 ---
 
 # Community 1128
 
-**Members:** 13 nodes
+**Members:** 14 nodes
 
 ## Members
-- [[Bot Not Responding to Telegram Messages]] - document - docs/runbooks/troubleshooting.md
-- [[Common Issues_1]] - document - docs/runbooks/troubleshooting.md
-- [[Container Keeps Restarting]] - document - docs/runbooks/troubleshooting.md
-- [[ContextGuard False Positive Collaborator Block]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Dashboard Not Loading]] - document - docs/runbooks/troubleshooting.md
-- [[Diagnostic Commands]] - document - docs/runbooks/troubleshooting.md
-- [[Getting Help]] - document - docs/runbooks/troubleshooting.md
-- [[Kill Switch Won't Deactivate]] - document - docs/runbooks/troubleshooting.md
-- [[PII Sanitizer Blocking Legitimate Content]] - document - docs/runbooks/troubleshooting.md
-- [[SSH Command Approval Stuck]] - document - docs/runbooks/troubleshooting.md
-- [[Tailscale Serve Not Working]] - document - docs/runbooks/troubleshooting.md
-- [[Tests Failing]] - document - docs/runbooks/troubleshooting.md
-- [[Troubleshooting Runbook — AgentShroud]] - document - docs/runbooks/troubleshooting.md
+- [[.test_false_on_empty_string()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_false_on_non_string()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_no_false_positive_on_domain_mention()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_no_false_positive_on_generic_llm_response()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_true_on_callback_token()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_true_on_deny_token()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_true_on_real_egress_banner_header()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Common LLM prose with 'risk', 'tool', 'id' must NOT trigger the matcher.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Generic 'domain' mention without the egress emoji must not trigger.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Inline-keyboard callback tokens must always match (egress_allow_always_uuid).]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestInternalBannerMatcher]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[The canonical 🌐 Egress Request header from TelegramEgressNotifier must match.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[_contains_internal_approval_banner must only fire on real egress banners.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[egress_deny_ callback token must match.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,11 +31,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 334]]
-- 1 edge to [[_COMMUNITY_Community 702]]
-- 1 edge to [[_COMMUNITY_Community 535]]
+- 2 edges to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 14]]
+- 1 edge to [[_COMMUNITY_Community 99]]
+- 1 edge to [[_COMMUNITY_Community 2325]]
 
 ## Top bridge nodes
-- [[Troubleshooting Runbook — AgentShroud]] - degree 5, connects to 2 communities
-- [[PII Sanitizer Blocking Legitimate Content]] - degree 3, connects to 1 community
-- [[ContextGuard False Positive Collaborator Block]] - degree 2, connects to 1 community
+- [[TestInternalBannerMatcher]] - degree 13, connects to 4 communities

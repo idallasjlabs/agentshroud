@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "Community 41"
+community: "Community 0"
 location: "L31"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_41
+  - community/Community_0
 ---
 
 # ConfusedDeputyError
@@ -34,4 +34,4 @@ tags:
 - [[oauth_security.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_41
+#graphify/code #graphify/INFERRED #community/Community_0

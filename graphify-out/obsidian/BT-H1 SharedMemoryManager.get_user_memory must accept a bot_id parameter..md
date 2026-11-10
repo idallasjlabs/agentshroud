@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "Community 1944"
+community: "Community 1305"
 location: "L122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1944
+  - community/Community_1305
 ---
 
 # BT-H1: SharedMemoryManager.get_user_memory must accept a bot_id parameter.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_shared_memory_manager_get_user_memory_accepts_bot_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1944
+#graphify/rationale #graphify/EXTRACTED #community/Community_1305

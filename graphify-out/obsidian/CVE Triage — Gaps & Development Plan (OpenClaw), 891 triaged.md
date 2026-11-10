@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-triage-gaps.md"
 type: "document"
-community: "Community 227"
+community: "Community 139"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_227
+  - community/Community_139
 ---
 
 # CVE Triage — Gaps & Development Plan (OpenClaw), 891 triaged
@@ -18,4 +18,4 @@ tags:
 - [[triage-cve-mitigations.py]] - `shares_data_with` [EXTRACTED]
 - [[upgrade-2026-09-22]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_227
+#graphify/document #graphify/EXTRACTED #community/Community_139

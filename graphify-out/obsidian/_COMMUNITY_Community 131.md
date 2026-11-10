@@ -70,16 +70,15 @@ SORT file.name ASC
 ## Connections to other communities
 - 9 edges to [[_COMMUNITY_Community 102]]
 - 7 edges to [[_COMMUNITY_Community 0]]
-- 7 edges to [[_COMMUNITY_Community 736]]
-- 1 edge to [[_COMMUNITY_Community 104]]
-- 1 edge to [[_COMMUNITY_Community 762]]
+- 5 edges to [[_COMMUNITY_Community 127]]
+- 4 edges to [[_COMMUNITY_Community 368]]
+- 1 edge to [[_COMMUNITY_Community 72]]
 - 1 edge to [[_COMMUNITY_Community 1200]]
 - 1 edge to [[_COMMUNITY_Community 29]]
-- 1 edge to [[_COMMUNITY_Community 127]]
 
 ## Top bridge nodes
+- [[run_trivy_scan()_1]] - degree 18, connects to 4 communities
 - [[generate_summary()_2]] - degree 10, connects to 4 communities
 - [[trivy_report.py]] - degree 8, connects to 4 communities
-- [[run_trivy_scan()_1]] - degree 18, connects to 3 communities
+- [[save_report()_1]] - degree 11, connects to 3 communities
 - [[TestTrivyParser]] - degree 12, connects to 2 communities
-- [[save_report()_1]] - degree 11, connects to 2 communities

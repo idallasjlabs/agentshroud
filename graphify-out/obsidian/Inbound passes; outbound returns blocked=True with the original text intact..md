@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "Community 368"
+community: "Community 325"
 location: "L306"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_368
+  - community/Community_325
 ---
 
 # Inbound passes; outbound returns blocked=True with the original text intact.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_BlockedOutboundPipeline]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_368
+#graphify/rationale #graphify/EXTRACTED #community/Community_325

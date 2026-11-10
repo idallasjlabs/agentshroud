@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Community 363"
+community: "Community 943"
 location: "L1087"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_363
+  - community/Community_943
 ---
 
 # Read and return the Docker daemon config from daemon.json, or {} if unavailable.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_read_docker_daemon_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_363
+#graphify/rationale #graphify/EXTRACTED #community/Community_943

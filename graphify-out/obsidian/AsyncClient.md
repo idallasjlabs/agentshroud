@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/collaborator_greeter.py"
 type: "code"
-community: "Community 309"
+community: "Community 1248"
 location: "L36"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_309
+  - community/Community_1248
 ---
 
 # AsyncClient
@@ -23,4 +23,4 @@ tags:
 - [[client()_14]] - `calls` [INFERRED]
 - [[client()_15]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_309
+#graphify/code #graphify/INFERRED #community/Community_1248

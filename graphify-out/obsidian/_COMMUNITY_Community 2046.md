@@ -1,19 +1,15 @@
 ---
 type: community
-members: 6
+members: 2
 ---
 
 # Community 2046
 
-**Members:** 6 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[Additional Dev Tools_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Docker & Docker Compose_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Git Configuration_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Node.js (for OpenClaw & AgentShroud)_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 2 Development Tools_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Python (for testing tools)_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[.test_nonce_first_use_passes()]] - code - gateway/tests/test_session_security.py
+- [[A freshly generated nonce validates on first use.]] - rationale - gateway/tests/test_session_security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 364]]
+- 1 edge to [[_COMMUNITY_Community 76]]
 
 ## Top bridge nodes
-- [[Phase 2 Development Tools_1]] - degree 6, connects to 1 community
+- [[.test_nonce_first_use_passes()]] - degree 2, connects to 1 community

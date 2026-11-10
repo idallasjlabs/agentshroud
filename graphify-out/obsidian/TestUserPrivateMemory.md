@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "Community 60"
+community: "Community 196"
 location: "L107"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_60
+  - community/Community_196
 ---
 
 # TestUserPrivateMemory
@@ -21,4 +21,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_shared_memory.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_60
+#graphify/code #graphify/INFERRED #community/Community_196

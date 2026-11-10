@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
 type: "concept"
-community: "Community 984"
+community: "Community 141"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_984
+  - community/Community_141
 ---
 
 # STPA-Sec Methodology
@@ -15,4 +15,4 @@ tags:
 - [[Red Team Assessment Plan (Steve Hay Plan, Red Team copy)]] - `references` [EXTRACTED]
 - [[SKILL_200]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_984
+#graphify/concept #graphify/EXTRACTED #community/Community_141

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 2318"
+community: "Community 133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2318
+  - community/Community_133
 ---
 
 # IntEnum
@@ -19,4 +19,4 @@ tags:
 - [[ThreatLevel_1]] - `inherits` [EXTRACTED]
 - [[TrustLevel_1]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2318
+#graphify/code #graphify/EXTRACTED #community/Community_133

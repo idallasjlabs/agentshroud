@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Community 196"
+community: "Community 0"
 location: "L543"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_196
+  - community/Community_0
 ---
 
 # Reading from /tmp should be allowed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_tmp_read_allowed()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_196
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

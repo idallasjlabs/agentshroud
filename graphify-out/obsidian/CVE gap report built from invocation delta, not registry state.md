@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-24.md"
 type: "concept"
-community: "Community 227"
+community: "Community 118"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_227
+  - community/Community_118
 ---
 
 # CVE gap report built from invocation delta, not registry state
@@ -16,4 +16,4 @@ tags:
 - [[triage_agent_full()]] - `references` [EXTRACTED]
 - [[upgrade-2026-09-24]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_227
+#graphify/concept #graphify/EXTRACTED #community/Community_118

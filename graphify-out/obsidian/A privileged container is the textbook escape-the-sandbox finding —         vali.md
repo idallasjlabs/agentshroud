@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator_gate.py"
 type: "rationale"
-community: "Community 71"
+community: "Community 72"
 location: "L85"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_71
+  - community/Community_72
 ---
 
 # A privileged container is the textbook escape-the-sandbox finding —         vali
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_privileged_service_is_critical()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_71
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

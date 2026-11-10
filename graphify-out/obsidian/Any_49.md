@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Community 2317"
+community: "Community 16"
 location: "L379"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_2317
+  - community/Community_16
 ---
 
 # Any
@@ -15,4 +15,4 @@ tags:
 - [[.get_lifecycle_status()]] - `references` [EXTRACTED]
 - [[MemoryLifecycleConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_2317
+#graphify/code #graphify/INFERRED #community/Community_16

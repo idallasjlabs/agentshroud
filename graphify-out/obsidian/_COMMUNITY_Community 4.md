@@ -403,7 +403,7 @@ SORT file.name ASC
 - 5 edges to [[_COMMUNITY_Community 2387]]
 - 4 edges to [[_COMMUNITY_Community 72]]
 - 4 edges to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 80]]
+- 1 edge to [[_COMMUNITY_Community 20]]
 
 ## Top bridge nodes
 - [[TelegramAPIProxy_2]] - degree 238, connects to 31 communities

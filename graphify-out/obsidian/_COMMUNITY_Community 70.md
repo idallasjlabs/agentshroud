@@ -18,6 +18,7 @@ members: 73
 - [[.verify()_1]] - code - gateway/security/mfa_guard.py
 - [[AgentShroud Security Dashboard (index.html)]] - code - gateway/dashboard/index.html
 - [[Approval Queue Module Badge Icon]] - image - branding/icons/modules/approval-queue-256x256.png
+- [[ApprovalQueue_1]] - code - gateway/tests/test_mfa_guard.py
 - [[Build an MFAGuard from environment variables  Docker secret file.          Reco]] - rationale - gateway/security/mfa_guard.py
 - [[Compute the RFC 6238 TOTP value for a specific time-step counter.]] - rationale - gateway/security/mfa_guard.py
 - [[Decode a base32 secret; return b on emptyinvalid input.]] - rationale - gateway/security/mfa_guard.py
@@ -59,7 +60,6 @@ members: 73
 - [[test_enhanced_tool_call_critical_blocked_without_mfa()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_enhanced_tool_call_high_allowed_with_mfa()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_enhanced_tool_call_high_blocked_without_mfa()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_enhanced_tool_call_medium_not_gated()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_expired_window_code_denies()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_from_env_bad_window_defaults_to_one()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_from_env_disabled_when_flag_unset()]] - code - gateway/tests/test_mfa_guard.py
@@ -90,19 +90,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 37 edges to [[_COMMUNITY_Community 30]]
-- 2 edges to [[_COMMUNITY_Community 104]]
+- 23 edges to [[_COMMUNITY_Community 30]]
+- 6 edges to [[_COMMUNITY_Community 108]]
+- 6 edges to [[_COMMUNITY_Community 68]]
+- 4 edges to [[_COMMUNITY_Community 439]]
+- 3 edges to [[_COMMUNITY_Community 707]]
 - 1 edge to [[_COMMUNITY_Community 489]]
-- 1 edge to [[_COMMUNITY_Community 254]]
 - 1 edge to [[_COMMUNITY_Community 1014]]
 - 1 edge to [[_COMMUNITY_Community 35]]
 - 1 edge to [[_COMMUNITY_Community 213]]
-- 1 edge to [[_COMMUNITY_Community 41]]
+- 1 edge to [[_COMMUNITY_Community 72]]
 - 1 edge to [[_COMMUNITY_Community 162]]
 
 ## Top bridge nodes
-- [[MFAGuard_2]] - degree 48, connects to 3 communities
-- [[queue.py]] - degree 14, connects to 3 communities
-- [[test_mfa_guard.py]] - degree 60, connects to 2 communities
-- [[_queue()]] - degree 11, connects to 1 community
-- [[_submit_high_risk()]] - degree 9, connects to 1 community
+- [[test_mfa_guard.py]] - degree 60, connects to 5 communities
+- [[queue.py]] - degree 14, connects to 5 communities
+- [[MFAGuard_2]] - degree 48, connects to 4 communities
+- [[ApprovalQueue_1]] - degree 10, connects to 4 communities
+- [[_queue()]] - degree 11, connects to 2 communities

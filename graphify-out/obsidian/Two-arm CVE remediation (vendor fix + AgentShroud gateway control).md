@@ -1,12 +1,12 @@
 ---
 source_file: "prompts/sunday-upgrade.md"
 type: "rationale"
-community: "Community 227"
+community: "Community 139"
 location: "L217-L264"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Community_227
+  - community/Community_139
 ---
 
 # Two-arm CVE remediation (vendor fix + AgentShroud gateway control)
@@ -17,4 +17,4 @@ tags:
 - [[Transitive-dependency security floors (pip-audit gate)]] - `conceptually_related_to` [INFERRED]
 - [[scriptstriage-cve-mitigations.py (Coverage FULLPARTIALNONE)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/INFERRED #community/Community_227
+#graphify/rationale #graphify/INFERRED #community/Community_139

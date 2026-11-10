@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Community 230"
+community: "Community 54"
 location: "L841"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_230
+  - community/Community_54
 ---
 
 # Get proxy statistics.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_stats()_5]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_230
+#graphify/rationale #graphify/EXTRACTED #community/Community_54

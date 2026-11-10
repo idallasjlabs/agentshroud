@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "Community 1016"
+community: "Community 16"
 location: "L331"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1016
+  - community/Community_16
 ---
 
 # Clear alerts older than N days.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.clear_old_alerts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1016
+#graphify/rationale #graphify/EXTRACTED #community/Community_16

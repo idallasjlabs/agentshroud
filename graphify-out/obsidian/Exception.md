@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 108"
+community: "Community 152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_108
+  - community/Community_152
 ---
 
 # Exception
@@ -28,4 +28,4 @@ tags:
 - [[VRAMHeadroomError]] - `inherits` [EXTRACTED]
 - [[test_broadcast_with_failed_client()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_108
+#graphify/code #graphify/EXTRACTED #community/Community_152

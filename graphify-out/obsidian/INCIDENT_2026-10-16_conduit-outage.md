@@ -1,12 +1,12 @@
 ---
 source_file: "INCIDENT_2026-10-16_conduit-outage.md"
 type: "document"
-community: "Community 139"
+community: "Community 849"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/Community_849
 ---
 
 # INCIDENT_2026-10-16_conduit-outage.md
@@ -18,4 +18,4 @@ tags:
 - [[discover_upstream_versions.py]] - `references` [EXTRACTED]
 - [[sunday-upgrade]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_139
+#graphify/document #graphify/EXTRACTED #community/Community_849

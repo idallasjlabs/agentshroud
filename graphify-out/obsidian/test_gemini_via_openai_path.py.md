@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gemini_via_openai_path.py"
 type: "code"
-community: "Community 890"
+community: "Community 1278"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_890
+  - community/Community_1278
 ---
 
 # test_gemini_via_openai_path.py
@@ -18,4 +18,4 @@ tags:
 - [[test_proxy_gemini_translation_failure_falls_through_gracefully()]] - `contains` [EXTRACTED]
 - [[test_proxy_rewrites_gemini_via_openai_path()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_890
+#graphify/code #graphify/EXTRACTED #community/Community_1278

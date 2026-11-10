@@ -26,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1015]]
+- 1 edge to [[_COMMUNITY_Community 1084]]
 
 ## Top bridge nodes
 - [[Egress Filter Errors_1]] - degree 6, connects to 1 community

@@ -1,15 +1,21 @@
 ---
 type: community
-members: 2
+members: 8
 ---
 
 # Community 1560
 
-**Members:** 2 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[.test_proxy_request_suppresses_duplicate_startup_notice_without_system_flag()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Startup notice dedupe should still apply when sender forgets system header.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[A2AGovernanceProxy._check_peer]] - code - gateway/security/a2a_governance.py
+- [[A2AGovernanceProxy._process]] - code - gateway/security/a2a_governance.py
+- [[A2AGovernanceProxy._sanitize_message]] - code - gateway/security/a2a_governance.py
+- [[A2AGovernanceProxy.process_inbound]] - code - gateway/security/a2a_governance.py
+- [[A2AGovernanceProxy.process_outbound]] - code - gateway/security/a2a_governance.py
+- [[ToolACLEnforcer._can_use_tool_impl]] - code - gateway/security/tool_acl.py
+- [[TrustManager.get_trust]] - code - gateway/security/trust_manager.py
+- [[TrustManager.is_tool_allowed]] - code - gateway/security/trust_manager.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 626]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 845]]
+- 1 edge to [[_COMMUNITY_Community 300]]
 
 ## Top bridge nodes
-- [[.test_proxy_request_suppresses_duplicate_startup_notice_without_system_flag()]] - degree 4, connects to 3 communities
+- [[ToolACLEnforcer._can_use_tool_impl]] - degree 2, connects to 1 community

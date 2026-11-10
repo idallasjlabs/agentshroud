@@ -1,17 +1,23 @@
 ---
 type: community
-members: 4
+members: 10
 ---
 
 # Community 1356
 
-**Members:** 4 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[.test_not_running()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_running_with_fresh_log()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_running_without_logs()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestFluentBitSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[4. Function Call Exposure (XML Leak)]] - document - docs/project/REPORTED_ISSUES.md
+- [[5. ContextGuard False Positives (Collaborator Block)]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[5. `main.py` Async Bug in Email Module]] - document - docs/project/REPORTED_ISSUES.md
+- [[6. SSH Bypass in `is_auto_approved`]] - document - docs/project/REPORTED_ISSUES.md
+- [[6. iMessage Integration Permissions]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[7. CI Safety Issue Pytest Exit Codes Swallowed]] - document - docs/project/REPORTED_ISSUES.md
+- [[7. SMTP Port Blocks (Email Failures)]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[8. ForwardResponse Type Mismatch]] - document - docs/project/REPORTED_ISSUES.md
+- [[🟠 HIGH Security & Core Logic Issues]] - document - docs/project/REPORTED_ISSUES.md
+- [[🟠 HIGH Security & Logic Issues]] - document - docs/project/TELEGRAM_ISSUES.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +27,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 312]]
-- 1 edge to [[_COMMUNITY_Community 219]]
+- 2 edges to [[_COMMUNITY_Community 501]]
+- 1 edge to [[_COMMUNITY_Community 718]]
 
 ## Top bridge nodes
-- [[TestFluentBitSummary]] - degree 4, connects to 1 community
-- [[.test_running_with_fresh_log()]] - degree 2, connects to 1 community
+- [[🟠 HIGH Security & Logic Issues]] - degree 10, connects to 2 communities
+- [[🟠 HIGH Security & Core Logic Issues]] - degree 6, connects to 1 community

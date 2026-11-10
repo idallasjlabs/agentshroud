@@ -1,18 +1,24 @@
 ---
 type: community
-members: 5
+members: 11
 ---
 
 # Community 1288
 
-**Members:** 5 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[.test_compact_timestamp_normalised_to_iso()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_critical_and_warning_statuses()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_garbage_timestamp_falls_back_to_mtime()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_not_run()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestOpenscapSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[A real CVE always came from a GHSA advisory, so cve_id implies ghsa_id.]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[CRITICAL GUARD no entry `id` may look like a real CVE id.      This is the load]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[Every `id` must be a zero-padded ASH-OCLAW-NNN  ASH-HERMES-NNN ref.]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[_all_entries()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[cve_id must be either None or a real-looking CVE id — never junk.]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[ghsa_id must be either None or a real-looking GHSA id.]] - rationale - gateway/tests/test_agent_cve_registry.py
+- [[test_cve_id_field_only_holds_real_looking_cve_ids()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_entry_with_cve_id_also_has_ghsa_id()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_every_entry_id_is_synthetic_ash_ref()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_ghsa_id_field_only_holds_real_looking_ghsa_ids()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_no_entry_id_looks_like_a_cve()]] - code - gateway/tests/test_agent_cve_registry.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,11 +28,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 219]]
-- 1 edge to [[_COMMUNITY_Community 312]]
+- 6 edges to [[_COMMUNITY_Community 42]]
 
 ## Top bridge nodes
-- [[TestOpenscapSummary]] - degree 5, connects to 1 community
-- [[.test_critical_and_warning_statuses()]] - degree 2, connects to 1 community
-- [[.test_compact_timestamp_normalised_to_iso()]] - degree 2, connects to 1 community
-- [[.test_garbage_timestamp_falls_back_to_mtime()]] - degree 2, connects to 1 community
+- [[_all_entries()]] - degree 6, connects to 1 community
+- [[test_no_entry_id_looks_like_a_cve()]] - degree 3, connects to 1 community
+- [[test_every_entry_id_is_synthetic_ash_ref()]] - degree 3, connects to 1 community
+- [[test_cve_id_field_only_holds_real_looking_cve_ids()]] - degree 3, connects to 1 community
+- [[test_ghsa_id_field_only_holds_real_looking_ghsa_ids()]] - degree 3, connects to 1 community

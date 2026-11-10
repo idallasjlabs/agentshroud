@@ -43,7 +43,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 571]]
+- 1 edge to [[_COMMUNITY_Community 502]]
 
 ## Top bridge nodes
 - [[Apple Services Setup Guide]] - degree 11, connects to 1 community

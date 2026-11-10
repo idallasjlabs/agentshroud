@@ -1,16 +1,21 @@
 ---
 type: community
-members: 3
+members: 8
 ---
 
 # Community 1427
 
-**Members:** 3 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[.test_gates_pass_with_full_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_gates_zero_affected_domains()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestMandatoryGates]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[AgentShroud — System Overview]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Components_2]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Key Design Decisions]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Related Notes_1]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Security Layers (in order)]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[What It Is]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Who Depends On It]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Why It Exists]] - document - docs/vault/00 - START HERE/System Overview.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,10 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 219]]
-- 1 edge to [[_COMMUNITY_Community 312]]
+- 1 edge to [[_COMMUNITY_Community 94]]
 
 ## Top bridge nodes
-- [[TestMandatoryGates]] - degree 3, connects to 1 community
-- [[.test_gates_zero_affected_domains()]] - degree 2, connects to 1 community
-- [[.test_gates_pass_with_full_evidence()]] - degree 2, connects to 1 community
+- [[AgentShroud — System Overview]] - degree 8, connects to 1 community

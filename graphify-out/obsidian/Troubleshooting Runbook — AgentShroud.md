@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Community 1128"
+community: "Community 334"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1128
+  - community/Community_334
 ---
 
 # Troubleshooting Runbook — AgentShroud
@@ -18,4 +18,4 @@ tags:
 - [[Known Log Messages]] - `contains` [EXTRACTED]
 - [[troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1128
+#graphify/document #graphify/EXTRACTED #community/Community_334

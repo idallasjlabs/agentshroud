@@ -49,7 +49,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Community 17]]
-- 1 edge to [[_COMMUNITY_Community 978]]
+- 1 edge to [[_COMMUNITY_Community 62]]
 
 ## Top bridge nodes
 - [[Counter]] - degree 4, connects to 2 communities

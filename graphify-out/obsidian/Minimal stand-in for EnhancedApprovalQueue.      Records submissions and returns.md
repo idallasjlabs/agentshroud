@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "rationale"
-community: "Community 35"
+community: "Community 329"
 location: "L273"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/Community_329
 ---
 
 # Minimal stand-in for EnhancedApprovalQueue.      Records submissions and returns
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeApprovalQueue]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_35
+#graphify/rationale #graphify/EXTRACTED #community/Community_329

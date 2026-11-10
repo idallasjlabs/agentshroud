@@ -1,20 +1,17 @@
 ---
 type: community
-members: 39
+members: 40
 ---
 
 # Community 169
 
-**Members:** 39 nodes
+**Members:** 40 nodes
 
 ## Members
 - [[.__init__()_132]] - code - gateway/soc/websocket.py
-- [[._event_fan_out()]] - code - gateway/soc/websocket.py
-- [[._keepalive_loop()]] - code - gateway/soc/websocket.py
 - [[._make_handler()]] - code - gateway/tests/test_soc_websocket.py
 - [[._matches()]] - code - gateway/tests/test_soc_websocket.py
-- [[._send_event()]] - code - gateway/soc/websocket.py
-- [[.run()_5]] - code - gateway/soc/websocket.py
+- [[.test_construction()_2]] - code - gateway/tests/test_soc_models.py
 - [[.test_details_excludes_reserved_keys()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[.test_egress_denied()]] - code - gateway/tests/test_soc_websocket.py
 - [[.test_event_type_key_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
@@ -35,18 +32,22 @@ members: 39
 - [[.test_unknown_severity_defaults_to_info()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[.test_wsevent_passthrough()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[Convert an EventBus item to WSEvent, return None if conversion fails.]] - rationale - gateway/soc/websocket.py
-- [[Main connection loop.]] - rationale - gateway/soc/websocket.py
-- [[Manages a single wssoc client connection.]] - rationale - gateway/soc/websocket.py
 - [[Replicate the filter logic from _event_fan_out.]] - rationale - gateway/tests/test_soc_websocket.py
-- [[SOCWebSocketHandler]] - code - gateway/soc/websocket.py
 - [[SOCWebSocketHandler_2]] - code - gateway/tests/test_soc_websocket.py
-- [[Subscribe to EventBus and forward matching events to the client.]] - rationale - gateway/soc/websocket.py
+- [[Severity_2]] - code - gateway/soc/models.py
 - [[Test event filtering via the subscriptions set (mirrors _event_fan_out logic).]] - rationale - gateway/tests/test_soc_websocket.py
 - [[TestCoerceToWSEvent]] - code - gateway/tests/test_soc_websocket.py
 - [[TestCoerceToWSEventExtra]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[TestSOCWebSocketHandlerImport]] - code - gateway/tests/test_soc_websocket.py
 - [[TestSubscriptionFilter]] - code - gateway/tests/test_soc_websocket.py
+- [[TestWSEvent]] - code - gateway/tests/test_soc_models.py
+- [[WSEvent]] - code - gateway/soc/models.py
+- [[WSEvent_1]] - code - gateway/soc/websocket.py
+- [[WSEventType]] - code - gateway/soc/models.py
+- [[WebSocket_6]] - code - gateway/soc/websocket.py
 - [[_coerce_to_ws_event()]] - code - gateway/soc/websocket.py
+- [[test_soc_websocket.py]] - code - gateway/tests/test_soc_websocket.py
+- [[websocket.py]] - code - gateway/soc/websocket.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -56,13 +57,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 29 edges to [[_COMMUNITY_Community 6]]
-- 16 edges to [[_COMMUNITY_Community 8]]
-- 2 edges to [[_COMMUNITY_Community 61]]
+- 33 edges to [[_COMMUNITY_Community 6]]
+- 12 edges to [[_COMMUNITY_Community 8]]
+- 5 edges to [[_COMMUNITY_Community 51]]
+- 2 edges to [[_COMMUNITY_Community 82]]
+- 1 edge to [[_COMMUNITY_Community 10]]
 
 ## Top bridge nodes
-- [[SOCWebSocketHandler]] - degree 40, connects to 2 communities
-- [[_coerce_to_ws_event()]] - degree 22, connects to 2 communities
-- [[TestCoerceToWSEventExtra]] - degree 15, connects to 2 communities
-- [[TestSubscriptionFilter]] - degree 9, connects to 1 community
-- [[TestCoerceToWSEvent]] - degree 7, connects to 1 community
+- [[WSEvent]] - degree 14, connects to 4 communities
+- [[Severity_2]] - degree 15, connects to 3 communities
+- [[WSEventType]] - degree 11, connects to 3 communities
+- [[websocket.py]] - degree 11, connects to 2 communities
+- [[_coerce_to_ws_event()]] - degree 22, connects to 1 community

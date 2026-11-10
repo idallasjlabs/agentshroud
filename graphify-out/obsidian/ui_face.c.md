@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "Community 378"
+community: "Community 1286"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_378
+  - community/Community_1286
 ---
 
 # ui_face.c
@@ -26,4 +26,4 @@ tags:
 - [[ui_face_set_agent()]] - `contains` [EXTRACTED]
 - [[ui_face_set_state()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_378
+#graphify/code #graphify/EXTRACTED #community/Community_1286

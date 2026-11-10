@@ -1,27 +1,44 @@
 ---
 type: community
-members: 174
+members: 168
 ---
 
 # Community 10
 
-**Members:** 174 nodes
+**Members:** 168 nodes
 
 ## Members
-- [[.__post_init__()_8]] - code - gateway/security/rbac_config.py
+- [[.__init__()_130]] - code - gateway/soc/contributors.py
+- [[.is_group_admin()_1]] - code - gateway/soc/auth.py
+- [[.is_owner()_2]] - code - gateway/soc/auth.py
 - [[Add or override a specific egress domain rule (CC-10).      Supports optional sc]] - rationale - gateway/soc/router.py
-- [[Append a collaborator UID to the persistent store (idempotent, file-locked).]] - rationale - gateway/security/rbac_config.py
+- [[AddCollaboratorRequest]] - code - gateway/soc/router.py
+- [[AddGroupMemberRequest]] - code - gateway/soc/router.py
+- [[Any_67]] - code - gateway/soc/router.py
+- [[ApprovalDecisionRequest]] - code - gateway/soc/router.py
+- [[AuditLogEntry]] - code - gateway/soc/models.py
+- [[AuditResult]] - code - gateway/soc/models.py
+- [[AuditResult_1]] - code - gateway/soc/router.py
+- [[BaseModel]] - code
+- [[Builds ContributorRecord instances from RBACConfig + TeamsConfig.]] - rationale - gateway/soc/contributors.py
 - [[Change the root log level at runtime without restart (CC-44).]] - rationale - gateway/soc/router.py
+- [[Check group admin status via TeamsConfig if available.]] - rationale - gateway/soc/auth.py
 - [[Clear shared memory for a group workspace (owner only).]] - rationale - gateway/soc/router.py
+- [[ContributorManager]] - code - gateway/soc/contributors.py
 - [[Create a new group at runtime (owner only).]] - rationale - gateway/soc/router.py
 - [[Create a time-bounded privilege delegation (owner only).]] - rationale - gateway/soc/router.py
+- [[CreateDelegationRequest]] - code - gateway/soc/router.py
+- [[CreateGroupRequest]] - code - gateway/soc/router.py
 - [[Delete a group at runtime (owner only).]] - rationale - gateway/soc/router.py
-- [[Ensure the persistence store's parent directory exists. Returns False on failure]] - rationale - gateway/security/rbac_config.py
+- [[DisconnectRequest]] - code - gateway/soc/router.py
+- [[EgressApproveRequest]] - code - gateway/soc/router.py
+- [[EgressRuleOverrideRequest]] - code - gateway/soc/router.py
+- [[EgressScopeRequest]] - code - gateway/soc/router.py
+- [[EmergencyBlockRequest]] - code - gateway/soc/router.py
 - [[Exchange gateway token for a session cookie.]] - rationale - gateway/soc/router.py
 - [[Fallback minimal dashboard when template file is missing.]] - rationale - gateway/soc/router.py
 - [[Get tool allowdeny lists for a user or group entity.]] - rationale - gateway/soc/router.py
 - [[In-place openclaw upgrade runs npm install -g inside the bot container.      No]] - rationale - gateway/soc/router.py
-- [[Initialize user roles based on configuration.]] - rationale - gateway/security/rbac_config.py
 - [[Issue a short-lived WebSocket token for wssoc.]] - rationale - gateway/soc/router.py
 - [[JSONResponse]] - code - gateway/soc/router.py
 - [[Launch security-scan.sh for the given scanner and discard the handle (fire-and-f]] - rationale - gateway/soc/router.py
@@ -29,34 +46,25 @@ members: 174
 - [[List security modules with availability, mode, and descriptions (CC-42, CC-43).]] - rationale - gateway/soc/router.py
 - [[List service privacy policies (read-only view).]] - rationale - gateway/soc/router.py
 - [[Live per-module enforcement heat-map (SCRUM-80).      Real allowblocksanitize]] - rationale - gateway/soc/router.py
+- [[LoginRequest]] - code - gateway/soc/router.py
 - [[Operator-ready risk summary with plain-English bullets and per-user risk map (V9]] - rationale - gateway/soc/router.py
 - [[Pause a collaborator's bot access without removing their record (file-locked).]] - rationale - gateway/security/rbac_config.py
 - [[Pause a contributor's bot access without removing their record.]] - rationale - gateway/soc/router.py
-- [[Persist a per-user collab mode override set via the SOC dashboard.      Stored u]] - rationale - gateway/security/group_config.py
-- [[Persist a runtime collab mode change for a group.]] - rationale - gateway/security/group_config.py
-- [[Persist a runtime group creation so it survives container restarts.]] - rationale - gateway/security/group_config.py
-- [[Persist a runtime group deletion so it survives container restarts.]] - rationale - gateway/security/group_config.py
-- [[Persist a runtime group membership addition.]] - rationale - gateway/security/group_config.py
-- [[Persist a runtime group membership removal.]] - rationale - gateway/security/group_config.py
 - [[Pull the latest Hermes Agent image and restart the container.      Unlike OpenCl]] - rationale - gateway/soc/router.py
 - [[Pull the latest image for a container and restart it.]] - rationale - gateway/soc/router.py
 - [[Query GitHub releases API. Returns {tag_name ..., html_url ...} or {error]] - rationale - gateway/soc/router.py
-- [[Read dynamically approved collaborator IDs from disk.]] - rationale - gateway/security/rbac_config.py
-- [[Read persisted collaborator-removal exclusions from disk (Bug 1 fix).      Appli]] - rationale - gateway/security/rbac_config.py
-- [[Read persisted paused-collaborator IDs from disk.      Owner-initiated manual pa]] - rationale - gateway/security/rbac_config.py
 - [[Read raw shared memory for a group workspace.]] - rationale - gateway/soc/router.py
-- [[Read the full collaborator persistence store (all keys) from disk.]] - rationale - gateway/security/rbac_config.py
 - [[Read the live per-module enforcement counters (SCRUM-80); tolerate absence.]] - rationale - gateway/soc/router.py
 - [[Recent scanner events from the in-process startupscheduled scan history.      C]] - rationale - gateway/soc/router.py
-- [[Remove a collaborator from effective access (file-locked).      Strips the UID f]] - rationale - gateway/security/rbac_config.py
 - [[Remove an egress rule for a domain (CC-10).]] - rationale - gateway/soc/router.py
 - [[Rename a group (CC-34).]] - rationale - gateway/soc/router.py
+- [[RenameGroupRequest]] - code - gateway/soc/router.py
+- [[Request_6]] - code - gateway/soc/router.py
 - [[Reset the config integrity baseline to the current file state.      Use after a]] - rationale - gateway/soc/router.py
-- [[Resume a paused collaborator's bot access (file-locked).      Removes the UID fr]] - rationale - gateway/security/rbac_config.py
+- [[Resolved identity of the SCL caller, including role and user_id.]] - rationale - gateway/soc/auth.py
 - [[Resume a paused contributor's bot access.]] - rationale - gateway/soc/router.py
 - [[Return all active egress rules preloaded permanent, user-created permanent, ses]] - rationale - gateway/soc/router.py
 - [[Return current LLM quota failover statistics.]] - rationale - gateway/soc/router.py
-- [[Return egress decision history (approvedenytimeout) (CC-40).]] - rationale - gateway/soc/router.py
 - [[Return full collaborator activity log. limit=0 returns all entries.      Returns]] - rationale - gateway/soc/router.py
 - [[Return the latest Software Bill of Materials (SBOM) in SPDX JSON format.      Ge]] - rationale - gateway/soc/router.py
 - [[Return the latest Trivy vulnerability scan results.      Trivy scans are run at]] - rationale - gateway/soc/router.py
@@ -65,31 +73,35 @@ members: 174
 - [[Run a Trivy CVE scan immediately and send the report via Telegram.      Requires]] - rationale - gateway/soc/router.py
 - [[Run a command inside the agentshroud-openclaw container via the Docker socket.]] - rationale - gateway/soc/router.py
 - [[Run a shell command on the Docker Compose host via SSH.      Requires AGENTSHROU]] - rationale - gateway/soc/router.py
+- [[SCLCaller]] - code - gateway/soc/auth.py
 - [[SCLCaller_1]] - code - gateway/soc/router.py
+- [[SCLConfirmationRequired]] - code - gateway/soc/models.py
+- [[SCLInterface]] - code - gateway/soc/models.py
+- [[SCLInterface_1]] - code - gateway/soc/router.py
+- [[ScanRequest_1]] - code - gateway/soc/router.py
 - [[Serve the unified SOC web dashboard.]] - rationale - gateway/soc/router.py
 - [[ServiceActionRequest]] - code - gateway/soc/router.py
 - [[Set per-user collab mode override (persists across restarts).]] - rationale - gateway/soc/router.py
+- [[SetLogLevelRequest]] - code - gateway/soc/router.py
+- [[SetModeRequest]] - code - gateway/soc/router.py
+- [[SetModuleModeRequest]] - code - gateway/soc/router.py
+- [[SetRoleRequest]] - code - gateway/soc/router.py
+- [[SetUserModeRequest]] - code - gateway/soc/router.py
 - [[Switch a security module between enforcemonitordisabled modes at runtime (CC-4]] - rationale - gateway/soc/router.py
-- [[Unified scanner aggregation Trivy, Falco, ClamAV, Wazuh, OpenSCAP.      Returns]] - rationale - gateway/soc/router.py
 - [[Update a user's display name (CC-35).]] - rationale - gateway/soc/router.py
-- [[Write the full collaborator persistence store (all keys) to disk.]] - rationale - gateway/security/rbac_config.py
+- [[UpdateDisplayNameRequest]] - code - gateway/soc/router.py
+- [[WebSocket_5]] - code - gateway/soc/router.py
 - [[_app_state()]] - code - gateway/soc/router.py
 - [[_confirmation_required()]] - code - gateway/soc/router.py
 - [[_docker_exec_bot()]] - code - gateway/soc/router.py
-- [[_ensure_collab_dir()]] - code - gateway/security/rbac_config.py
 - [[_fetch_latest_release()]] - code - gateway/soc/router.py
 - [[_file_hash()]] - code - gateway/soc/router.py
-- [[_ipv4_first_getaddrinfo()]] - code - gateway/proxy/telegram_proxy.py
 - [[_launch_scan_background()]] - code - gateway/soc/router.py
-- [[_load_collab_store()]] - code - gateway/security/rbac_config.py
-- [[_load_overrides()]] - code - gateway/security/group_config.py
 - [[_log_audit()]] - code - gateway/soc/router.py
 - [[_minimal_dashboard_html()]] - code - gateway/soc/router.py
 - [[_module_stats_snapshot()]] - code - gateway/soc/router.py
 - [[_risk_level_label()]] - code - gateway/soc/router.py
-- [[_save_overrides()]] - code - gateway/security/group_config.py
 - [[_ssh_compose()]] - code - gateway/soc/router.py
-- [[_write_collab_store()]] - code - gateway/security/rbac_config.py
 - [[acknowledge_config_integrity()]] - code - gateway/soc/router.py
 - [[add_collaborator()_1]] - code - gateway/soc/router.py
 - [[add_group_member()_1]] - code - gateway/soc/router.py
@@ -106,8 +118,6 @@ members: 174
 - [[emergency_block_egress()]] - code - gateway/soc/router.py
 - [[export_audit()]] - code - gateway/soc/router.py
 - [[get_collaborator_activity()]] - code - gateway/soc/router.py
-- [[get_egress_history()]] - code - gateway/soc/router.py
-- [[get_egress_log()]] - code - gateway/soc/router.py
 - [[get_egress_rules()]] - code - gateway/soc/router.py
 - [[get_group()]] - code - gateway/soc/router.py
 - [[get_group_memory()]] - code - gateway/soc/router.py
@@ -121,7 +131,6 @@ members: 174
 - [[get_sbom()_1]] - code - gateway/soc/router.py
 - [[get_scan_results()]] - code - gateway/soc/router.py
 - [[get_scanner_recent_events()]] - code - gateway/soc/router.py
-- [[get_scanner_results()]] - code - gateway/soc/router.py
 - [[get_security_alerts()]] - code - gateway/soc/router.py
 - [[get_service_logs()]] - code - gateway/soc/router.py
 - [[get_soc_correlation()]] - code - gateway/soc/router.py
@@ -129,35 +138,21 @@ members: 174
 - [[get_trivy_results()]] - code - gateway/soc/router.py
 - [[get_updates()]] - code - gateway/soc/router.py
 - [[get_user()]] - code - gateway/soc/router.py
-- [[group_config.py]] - code - gateway/security/group_config.py
 - [[killswitch_disconnect()]] - code - gateway/soc/router.py
 - [[killswitch_freeze()]] - code - gateway/soc/router.py
 - [[killswitch_shutdown()]] - code - gateway/soc/router.py
 - [[list_delegations()]] - code - gateway/soc/router.py
 - [[list_groups()]] - code - gateway/soc/router.py
 - [[list_pending_approvals()_1]] - code - gateway/soc/router.py
-- [[list_services()]] - code - gateway/soc/router.py
 - [[list_users()]] - code - gateway/soc/router.py
-- [[load_paused_collaborator_ids()]] - code - gateway/security/rbac_config.py
-- [[load_persisted_collaborators()]] - code - gateway/security/rbac_config.py
-- [[load_removed_collaborator_ids()]] - code - gateway/security/rbac_config.py
 - [[override_egress_rule()]] - code - gateway/soc/router.py
 - [[pause_collaborator()]] - code - gateway/security/rbac_config.py
 - [[pause_collaborator_endpoint()]] - code - gateway/soc/router.py
-- [[persist_approved_collaborator()]] - code - gateway/security/rbac_config.py
-- [[persist_group_collab_mode()]] - code - gateway/security/group_config.py
-- [[persist_group_create()]] - code - gateway/security/group_config.py
-- [[persist_group_delete()]] - code - gateway/security/group_config.py
-- [[persist_group_member_add()]] - code - gateway/security/group_config.py
-- [[persist_group_member_remove()]] - code - gateway/security/group_config.py
-- [[persist_user_collab_mode()]] - code - gateway/security/group_config.py
-- [[rbac_config.py]] - code - gateway/security/rbac_config.py
 - [[rebuild_all_services()]] - code - gateway/soc/router.py
 - [[remove_egress_rule()]] - code - gateway/soc/router.py
 - [[remove_group_member()]] - code - gateway/soc/router.py
 - [[rename_group()]] - code - gateway/soc/router.py
 - [[restart_service()_1]] - code - gateway/soc/router.py
-- [[revoke_approved_collaborator()]] - code - gateway/security/rbac_config.py
 - [[revoke_collaborator()]] - code - gateway/soc/router.py
 - [[revoke_delegation()]] - code - gateway/soc/router.py
 - [[revoke_egress_history()]] - code - gateway/soc/router.py
@@ -170,11 +165,10 @@ members: 174
 - [[set_user_collab_mode()]] - code - gateway/soc/router.py
 - [[set_user_role()_1]] - code - gateway/soc/router.py
 - [[soc_dashboard()]] - code - gateway/soc/router.py
+- [[soc_websocket()]] - code - gateway/soc/router.py
 - [[start_service()]] - code - gateway/soc/router.py
 - [[stop_service()_1]] - code - gateway/soc/router.py
-- [[telegram_proxy.py]] - code - gateway/proxy/telegram_proxy.py
 - [[trigger_cve_report()]] - code - gateway/soc/router.py
-- [[unpause_collaborator()]] - code - gateway/security/rbac_config.py
 - [[unpause_collaborator_endpoint()]] - code - gateway/soc/router.py
 - [[update_display_name()]] - code - gateway/soc/router.py
 - [[update_service()]] - code - gateway/soc/router.py
@@ -191,51 +185,61 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 86 edges to [[_COMMUNITY_Community 20]]
-- 31 edges to [[_COMMUNITY_Community 51]]
-- 16 edges to [[_COMMUNITY_Community 61]]
-- 14 edges to [[_COMMUNITY_Community 6]]
-- 13 edges to [[_COMMUNITY_Community 18]]
-- 10 edges to [[_COMMUNITY_Community 978]]
-- 7 edges to [[_COMMUNITY_Community 14]]
-- 5 edges to [[_COMMUNITY_Community 223]]
-- 4 edges to [[_COMMUNITY_Community 254]]
-- 4 edges to [[_COMMUNITY_Community 89]]
-- 4 edges to [[_COMMUNITY_Community 23]]
-- 4 edges to [[_COMMUNITY_Community 884]]
-- 3 edges to [[_COMMUNITY_Community 8]]
+- 39 edges to [[_COMMUNITY_Community 51]]
+- 36 edges to [[_COMMUNITY_Community 20]]
+- 30 edges to [[_COMMUNITY_Community 223]]
+- 30 edges to [[_COMMUNITY_Community 6]]
+- 22 edges to [[_COMMUNITY_Community 8]]
+- 12 edges to [[_COMMUNITY_Community 890]]
+- 11 edges to [[_COMMUNITY_Community 254]]
+- 7 edges to [[_COMMUNITY_Community 978]]
+- 6 edges to [[_COMMUNITY_Community 2154]]
+- 6 edges to [[_COMMUNITY_Community 62]]
+- 3 edges to [[_COMMUNITY_Community 30]]
+- 3 edges to [[_COMMUNITY_Community 707]]
 - 3 edges to [[_COMMUNITY_Community 35]]
-- 3 edges to [[_COMMUNITY_Community 143]]
+- 3 edges to [[_COMMUNITY_Community 7]]
+- 3 edges to [[_COMMUNITY_Community 80]]
 - 3 edges to [[_COMMUNITY_Community 135]]
+- 3 edges to [[_COMMUNITY_Community 57]]
+- 3 edges to [[_COMMUNITY_Community 125]]
+- 3 edges to [[_COMMUNITY_Community 40]]
+- 3 edges to [[_COMMUNITY_Community 89]]
+- 3 edges to [[_COMMUNITY_Community 23]]
+- 3 edges to [[_COMMUNITY_Community 842]]
+- 2 edges to [[_COMMUNITY_Community 95]]
 - 2 edges to [[_COMMUNITY_Community 105]]
-- 2 edges to [[_COMMUNITY_Community 2154]]
-- 2 edges to [[_COMMUNITY_Community 344]]
-- 2 edges to [[_COMMUNITY_Community 75]]
+- 2 edges to [[_COMMUNITY_Community 28]]
+- 2 edges to [[_COMMUNITY_Community 66]]
+- 2 edges to [[_COMMUNITY_Community 918]]
+- 2 edges to [[_COMMUNITY_Community 166]]
+- 2 edges to [[_COMMUNITY_Community 143]]
 - 2 edges to [[_COMMUNITY_Community 300]]
-- 2 edges to [[_COMMUNITY_Community 72]]
-- 2 edges to [[_COMMUNITY_Community 363]]
-- 2 edges to [[_COMMUNITY_Community 67]]
-- 2 edges to [[_COMMUNITY_Community 60]]
-- 1 edge to [[_COMMUNITY_Community 138]]
+- 2 edges to [[_COMMUNITY_Community 61]]
 - 1 edge to [[_COMMUNITY_Community 104]]
-- 1 edge to [[_COMMUNITY_Community 85]]
-- 1 edge to [[_COMMUNITY_Community 2119]]
-- 1 edge to [[_COMMUNITY_Community 62]]
-- 1 edge to [[_COMMUNITY_Community 162]]
-- 1 edge to [[_COMMUNITY_Community 928]]
-- 1 edge to [[_COMMUNITY_Community 2021]]
-- 1 edge to [[_COMMUNITY_Community 465]]
-- 1 edge to [[_COMMUNITY_Community 822]]
+- 1 edge to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 325]]
+- 1 edge to [[_COMMUNITY_Community 108]]
+- 1 edge to [[_COMMUNITY_Community 68]]
+- 1 edge to [[_COMMUNITY_Community 92]]
+- 1 edge to [[_COMMUNITY_Community 18]]
+- 1 edge to [[_COMMUNITY_Community 196]]
+- 1 edge to [[_COMMUNITY_Community 169]]
+- 1 edge to [[_COMMUNITY_Community 49]]
+- 1 edge to [[_COMMUNITY_Community 14]]
 - 1 edge to [[_COMMUNITY_Community 42]]
-- 1 edge to [[_COMMUNITY_Community 736]]
-- 1 edge to [[_COMMUNITY_Community 842]]
-- 1 edge to [[_COMMUNITY_Community 29]]
+- 1 edge to [[_COMMUNITY_Community 127]]
+- 1 edge to [[_COMMUNITY_Community 75]]
+- 1 edge to [[_COMMUNITY_Community 1287]]
+- 1 edge to [[_COMMUNITY_Community 420]]
+- 1 edge to [[_COMMUNITY_Community 2043]]
+- 1 edge to [[_COMMUNITY_Community 2031]]
 - 1 edge to [[_COMMUNITY_Community 82]]
 - 1 edge to [[_COMMUNITY_Community 19]]
 
 ## Top bridge nodes
-- [[router.py_1]] - degree 162, connects to 22 communities
-- [[telegram_proxy.py]] - degree 35, connects to 17 communities
-- [[JSONResponse]] - degree 39, connects to 8 communities
-- [[rbac_config.py]] - degree 25, connects to 6 communities
-- [[group_config.py]] - degree 16, connects to 3 communities
+- [[BaseModel]] - degree 86, connects to 30 communities
+- [[router.py_1]] - degree 162, connects to 20 communities
+- [[JSONResponse]] - degree 39, connects to 7 communities
+- [[ContributorManager]] - degree 57, connects to 5 communities
+- [[SCLCaller]] - degree 46, connects to 4 communities

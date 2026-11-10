@@ -1,15 +1,19 @@
 ---
 type: community
-members: 92
+members: 98
 ---
 
 # Community 17
 
-**Members:** 92 nodes
+**Members:** 98 nodes
 
 ## Members
 - [[.__init__()_75]] - code - gateway/security/egress_filter.py
+- [[._is_ipv6()]] - code - gateway/security/egress_filter.py
+- [[._is_private_ip()_2]] - code - gateway/security/egress_filter.py
+- [[._matches_allowlist_domain()]] - code - gateway/security/egress_filter.py
 - [[._matches_any_pattern()]] - code - gateway/security/egress_config.py
+- [[._matches_ip_list()]] - code - gateway/security/egress_filter.py
 - [[.flush_notifications()]] - code - gateway/security/egress_filter.py
 - [[.get_effective_allowlist()]] - code - gateway/security/egress_config.py
 - [[.get_log()]] - code - gateway/security/egress_filter.py
@@ -17,6 +21,7 @@ members: 92
 - [[.get_top_destinations()]] - code - gateway/security/egress_filter.py
 - [[.grant_timed_approval()]] - code - gateway/security/egress_filter.py
 - [[.is_denylisted()]] - code - gateway/security/egress_config.py
+- [[.set_agent_policy()]] - code - gateway/security/egress_filter.py
 - [[.set_approval_queue()]] - code - gateway/security/egress_filter.py
 - [[.set_event_bus()_2]] - code - gateway/security/egress_filter.py
 - [[.set_notifier()]] - code - gateway/security/egress_filter.py
@@ -31,7 +36,6 @@ members: 92
 - [[.test_domains_not_denylisted()]] - code - gateway/tests/test_egress_filter.py
 - [[.test_effective_allowlist_basic()]] - code - gateway/tests/test_egress_enforce.py
 - [[.test_effective_allowlist_with_denylist()]] - code - gateway/tests/test_egress_enforce.py
-- [[.test_egress_filter_allows_in_enforce_mode()]] - code - gateway/tests/test_egress_filter.py
 - [[.test_egress_filter_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[.test_egress_mode_override()]] - code - gateway/tests/test_egress_enforce.py
 - [[.test_enforce_mode_blocks_unknown_domains()]] - code - gateway/tests/test_egress_enforce.py
@@ -46,11 +50,14 @@ members: 92
 - [[.test_url_parsing()]] - code - gateway/tests/test_egress_enforce.py
 - [[.test_wildcard_allowlist_matching()]] - code - gateway/tests/test_egress_enforce.py
 - [[All four domains must be in EgressFilterConfig's default allowlist.]] - rationale - gateway/tests/test_egress_filter.py
+- [[Check if IP matches any IPCIDR in the list.]] - rationale - gateway/security/egress_filter.py
 - [[Check if a domain matches the denylist.]] - rationale - gateway/security/egress_config.py
+- [[Check if domain matches any domain in the allowlist (supports wildcards).]] - rationale - gateway/security/egress_filter.py
 - [[Check if domain matches any pattern in the list (supports wildcards).]] - rationale - gateway/security/egress_config.py
+- [[Check if host is a private, loopback, link-local, or reserved IP.          Cover]] - rationale - gateway/security/egress_filter.py
+- [[Check if host looks like an IPv6 address.]] - rationale - gateway/security/egress_filter.py
 - [[Configuration for egress filtering enforcement.]] - rationale - gateway/security/egress_config.py
 - [[EgressFilter_1]] - code - gateway/security/egress_filter.py
-- [[EgressFilter in enforce mode allows all four domains for openclaw.]] - rationale - gateway/tests/test_egress_filter.py
 - [[EgressFilterConfig]] - code - gateway/security/egress_config.py
 - [[Filter outbound connections based on allowlists with enforcemonitor modes.]] - rationale - gateway/security/egress_filter.py
 - [[Get egress attempt log, optionally filtered by agent.]] - rationale - gateway/security/egress_filter.py
@@ -62,6 +69,7 @@ members: 92
 - [[Record a time-limited interactive approval for a domain.          Called by the]] - rationale - gateway/security/egress_filter.py
 - [[Return top destination domains by volume.]] - rationale - gateway/security/egress_filter.py
 - [[Send pending egress notifications via Telegram. Called from request handler.]] - rationale - gateway/security/egress_filter.py
+- [[Set a per-agent egress policy.]] - rationale - gateway/security/egress_filter.py
 - [[Set interactive egress approval queue.]] - rationale - gateway/security/egress_filter.py
 - [[Set optional event bus for real-time egress telemetry.]] - rationale - gateway/security/egress_filter.py
 - [[Set the Telegram notifier for egress approval requests.]] - rationale - gateway/security/egress_filter.py
@@ -90,9 +98,7 @@ members: 92
 - [[TestEgressFilterConfig]] - code - gateway/tests/test_egress_enforce.py
 - [[TestEgressFilterEnforcement]] - code - gateway/tests/test_egress_enforce.py
 - [[TestEgressManagementAPI]] - code - gateway/tests/test_egress_enforce.py
-- [[TestOpenClawResearchDomainsAllowlisted]] - code - gateway/tests/test_egress_filter.py
 - [[Update egress allowlist configuration (owner only).]] - rationale - gateway/web/management.py
-- [[Verify that OpenClaw's web_searchresearch destinations are pre-approved.      T]] - rationale - gateway/tests/test_egress_filter.py
 - [[egress_config.py]] - code - gateway/security/egress_config.py
 - [[egress_filter()]] - code - gateway/tests/test_e2e_proxy.py
 - [[egress_filter()_1]] - code - gateway/tests/test_security_integration.py
@@ -109,40 +115,40 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 37 edges to [[_COMMUNITY_Community 21]]
-- 18 edges to [[_COMMUNITY_Community 93]]
-- 12 edges to [[_COMMUNITY_Community 162]]
-- 12 edges to [[_COMMUNITY_Community 68]]
-- 10 edges to [[_COMMUNITY_Community 52]]
-- 9 edges to [[_COMMUNITY_Community 0]]
+- 69 edges to [[_COMMUNITY_Community 21]]
+- 9 edges to [[_COMMUNITY_Community 72]]
+- 9 edges to [[_COMMUNITY_Community 121]]
+- 8 edges to [[_COMMUNITY_Community 52]]
 - 7 edges to [[_COMMUNITY_Community 166]]
 - 7 edges to [[_COMMUNITY_Community 43]]
+- 6 edges to [[_COMMUNITY_Community 162]]
 - 6 edges to [[_COMMUNITY_Community 1119]]
-- 6 edges to [[_COMMUNITY_Community 72]]
-- 5 edges to [[_COMMUNITY_Community 104]]
 - 5 edges to [[_COMMUNITY_Community 300]]
-- 4 edges to [[_COMMUNITY_Community 26]]
+- 4 edges to [[_COMMUNITY_Community 6]]
 - 4 edges to [[_COMMUNITY_Community 11]]
 - 4 edges to [[_COMMUNITY_Community 123]]
+- 4 edges to [[_COMMUNITY_Community 0]]
 - 3 edges to [[_COMMUNITY_Community 2178]]
-- 3 edges to [[_COMMUNITY_Community 7]]
+- 3 edges to [[_COMMUNITY_Community 93]]
+- 3 edges to [[_COMMUNITY_Community 532]]
 - 3 edges to [[_COMMUNITY_Community 94]]
-- 2 edges to [[_COMMUNITY_Community 146]]
-- 2 edges to [[_COMMUNITY_Community 477]]
 - 2 edges to [[_COMMUNITY_Community 888]]
 - 2 edges to [[_COMMUNITY_Community 792]]
+- 2 edges to [[_COMMUNITY_Community 477]]
 - 2 edges to [[_COMMUNITY_Community 947]]
+- 1 edge to [[_COMMUNITY_Community 707]]
 - 1 edge to [[_COMMUNITY_Community 1000]]
 - 1 edge to [[_COMMUNITY_Community 57]]
 - 1 edge to [[_COMMUNITY_Community 205]]
 - 1 edge to [[_COMMUNITY_Community 23]]
 - 1 edge to [[_COMMUNITY_Community 489]]
 - 1 edge to [[_COMMUNITY_Community 5]]
+- 1 edge to [[_COMMUNITY_Community 7]]
 - 1 edge to [[_COMMUNITY_Community 265]]
 
 ## Top bridge nodes
 - [[EgressFilter_1]] - degree 103, connects to 22 communities
-- [[EgressFilterConfig]] - degree 100, connects to 21 communities
+- [[EgressFilterConfig]] - degree 100, connects to 20 communities
 - [[egress_config.py]] - degree 10, connects to 6 communities
-- [[TestOpenClawResearchDomainsAllowlisted]] - degree 11, connects to 4 communities
 - [[get_egress_config()]] - degree 10, connects to 2 communities
+- [[.__init__()_75]] - degree 4, connects to 2 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "Community 79"
+community: "Community 1"
 location: "L313"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_79
+  - community/Community_1
 ---
 
 # Registry writes must be atomic (os.replace) and serialized (lock).      The sess
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAtomicRegistryWrites]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_79
+#graphify/rationale #graphify/EXTRACTED #community/Community_1

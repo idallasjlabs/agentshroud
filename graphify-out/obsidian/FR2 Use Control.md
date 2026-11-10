@@ -1,11 +1,11 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "concept"
-community: "Community 65"
+community: "Community 89"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_65
+  - community/Community_89
 ---
 
 # FR2: Use Control
@@ -19,4 +19,4 @@ tags:
 - [[progressive_lockdown.py]] - `references` [EXTRACTED]
 - [[rbac.py]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_65
+#graphify/concept #graphify/EXTRACTED #community/Community_89

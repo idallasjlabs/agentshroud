@@ -1,13 +1,14 @@
 ---
 type: community
-members: 67
+members: 95
 ---
 
 # Community 50
 
-**Members:** 67 nodes
+**Members:** 95 nodes
 
 ## Members
+- [[NOTE `timeout or host.max_session_seconds` treats 0 as falsy (same]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
 - [[..' escaping the allowed root is rejected — never reaches proxy.write_file().]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
 - [[.__init__()_133]] - code - gateway/ssh_proxy/proxy.py
 - [[.is_auto_approved()]] - code - gateway/ssh_proxy/proxy.py
@@ -36,16 +37,21 @@ members: 67
 - [[.test_write_file_denial_is_audited()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[.test_write_file_disallowed_host_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[.test_write_file_empty_path_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_invalid_base64_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[.test_write_file_no_auth()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[.test_write_file_non_numeric_stdout_falls_back_to_zero_bytes()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[.test_write_file_oserror_from_subprocess()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[.test_write_file_oversized_content_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[.test_write_file_path_traversal_dotdot_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[.test_write_file_remote_command_is_identical_across_calls()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_remote_failure_returns_200_with_success_false()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[.test_write_file_sends_path_and_content_via_stdin()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[.test_write_file_ssh_disabled_returns_503()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_success_and_denial_both_create_distinct_ledger_entries()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_success_creates_matching_ledger_entry()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[.test_write_file_timeout()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[.test_write_file_unknown_host_raises()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_valid_round_trip()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[.validate_command()]] - code - gateway/ssh_proxy/proxy.py
 - [[.validate_cwd()]] - code - gateway/ssh_proxy/proxy.py
 - [[.validate_write_file()]] - code - gateway/ssh_proxy/proxy.py
@@ -54,27 +60,49 @@ members: 67
 - [[A host not present in the SSH allowlist is rejected with 404.]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
 - [[A sibling directory that merely shares the root as a string prefix         (no ']] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
 - [[Absolute path outside the approved root is rejected.]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Both outcomes append to the SAME audit trail — a denial is not         silently]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
 - [[Check if a command is auto-approved (no human approval needed).          Auto-ap]] - rationale - gateway/ssh_proxy/proxy.py
 - [[Decoded content exceeding the ~500KB cap is rejected with 413, and         proxy]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
 - [[Denied write attempts are logged to the ledger for audit (no raw         content]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
 - [[Direct unit coverage of validate_write_file()'s own empty-path guard         (th]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Gap coverage confirm a real audit-ledger row is created for BOTH a     successf]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Gap coverage prove the 'content is DATA, not a shell string' design     goal ac]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
 - [[If the remote script exits 0 but its stdout isn't a parseable         integer, b]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Malformed base64 is rejected at the Pydantic model layer (422),         never si]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Mirrors sshexec a nonzero remote exit code is surfaced in the 200         res]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Result of a structured SSH file-write operation (SSHProxy.write_file())]] - rationale - gateway/ssh_proxy/proxy.py
+- [[SSH Proxy Module Badge Icon]] - image - branding/icons/modules/ssh-proxy-256x256.png
 - [[SSH command proxy with validation and audit support]] - rationale - gateway/ssh_proxy/proxy.py
 - [[SSHConfig_1]] - code - gateway/ssh_proxy/proxy.py
 - [[SSHProxy]] - code - gateway/ssh_proxy/proxy.py
+- [[SSHWriteResult]] - code - gateway/ssh_proxy/proxy.py
+- [[Set up app state and provide TestClient._1]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
 - [[TestSSHProxyValidateWriteFile]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[TestSSHProxyWriteFileTransport]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[TestSSHValidateCwd]] - code - gateway/tests/test_ssh_endpoints.py
+- [[TestSSHWriteFileEndpoint]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[TestSSHWriteFileLedgerAudit]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[The remote command string must not vary with request content —         proving i]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
 - [[Unit tests for SSHProxy.validate_cwd().]] - rationale - gateway/tests/test_ssh_endpoints.py
 - [[Unit tests for SSHProxy.validate_write_file().]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
 - [[Unit tests for SSHProxy.write_file() — verifies pathcontent travel as     DATA]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Valid request SSHProxy.write_file() is invoked with decoded pathcontent]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
 - [[Validate a command against allowdeny lists and injection patterns.          Ret]] - rationale - gateway/ssh_proxy/proxy.py
 - [[Validate a remote working-directory path.  Must be absolute and shell-safe.]] - rationale - gateway/ssh_proxy/proxy.py
 - [[Validate a structured sshwrite_file request (host, path, content).          Re]] - rationale - gateway/ssh_proxy/proxy.py
 - [[Write file content to a remote host via structured (non-shell-string) transport.]] - rationale - gateway/ssh_proxy/proxy.py
+- [[__init__.py_12]] - code - gateway/ssh_proxy/__init__.py
 - [[_b64()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[auth_headers()_4]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[client()_17]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[gatewayingest_apiledger.py (DataLedger)]] - code - gateway/ingest_api/ledger.py
+- [[gatewayingest_apissh_config.py (SSHConfig)]] - code - gateway/ingest_api/ssh_config.py
+- [[proxy.py]] - code - gateway/ssh_proxy/proxy.py
 - [[ssh binary missing  spawn failure surfaces as exit_code=-1 with         the OSE]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[ssh_config()_2]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[test_config_with_ssh()_1]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[test_ssh_write_file_endpoint.py]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -84,15 +112,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 77 edges to [[_COMMUNITY_Community 7]]
-- 12 edges to [[_COMMUNITY_Community 25]]
-- 6 edges to [[_COMMUNITY_Community 30]]
-- 3 edges to [[_COMMUNITY_Community 104]]
-- 1 edge to [[_COMMUNITY_Community 978]]
+- 57 edges to [[_COMMUNITY_Community 80]]
+- 32 edges to [[_COMMUNITY_Community 7]]
+- 8 edges to [[_COMMUNITY_Community 439]]
+- 8 edges to [[_COMMUNITY_Community 30]]
+- 8 edges to [[_COMMUNITY_Community 104]]
+- 8 edges to [[_COMMUNITY_Community 2051]]
+- 5 edges to [[_COMMUNITY_Community 25]]
+- 3 edges to [[_COMMUNITY_Community 72]]
+- 2 edges to [[_COMMUNITY_Community 978]]
+- 2 edges to [[_COMMUNITY_Community 707]]
+- 1 edge to [[_COMMUNITY_Community 1360]]
+- 1 edge to [[_COMMUNITY_Community 162]]
 
 ## Top bridge nodes
-- [[SSHProxy]] - degree 79, connects to 4 communities
-- [[TestSSHValidateCwd]] - degree 21, connects to 3 communities
-- [[TestSSHProxyValidateWriteFile]] - degree 29, connects to 2 communities
-- [[TestSSHProxyWriteFileTransport]] - degree 21, connects to 2 communities
-- [[_b64()]] - degree 33, connects to 1 community
+- [[SSHProxy]] - degree 79, connects to 7 communities
+- [[TestSSHProxyValidateWriteFile]] - degree 29, connects to 5 communities
+- [[test_ssh_write_file_endpoint.py]] - degree 27, connects to 5 communities
+- [[TestSSHWriteFileEndpoint]] - degree 26, connects to 5 communities
+- [[TestSSHValidateCwd]] - degree 21, connects to 5 communities

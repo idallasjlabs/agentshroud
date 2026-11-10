@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "rationale"
-community: "Community 169"
+community: "Community 6"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_169
+  - community/Community_6
 ---
 
 # Subscribe to EventBus and forward matching events to the client.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._event_fan_out()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_169
+#graphify/rationale #graphify/EXTRACTED #community/Community_6

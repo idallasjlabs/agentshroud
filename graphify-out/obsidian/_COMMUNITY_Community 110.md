@@ -1,11 +1,11 @@
 ---
 type: community
-members: 58
+members: 60
 ---
 
 # Community 110
 
-**Members:** 58 nodes
+**Members:** 60 nodes
 
 ## Members
 - [[.__init__()_113]] - code - gateway/security/report_store.py
@@ -55,6 +55,7 @@ members: 58
 - [[Persist a report awaiting an async sanitizer (presidio) if injected.          Sa]] - rationale - gateway/security/report_store.py
 - [[Prune oldest reports so the shared volume can't be filled.]] - rationale - gateway/security/report_store.py
 - [[ReportStore]] - code - gateway/security/report_store.py
+- [[Return recent Falco runtime security alerts with summary.]] - rationale - gateway/ingest_api/main.py
 - [[Route-level POSTGET apireports through the FastAPI app (SCRUM-79).]] - rationale - gateway/tests/test_report_store.py
 - [[SCRUM-79 adversarial-review follow-ups (2026-07-13).]] - rationale - gateway/tests/test_report_store.py
 - [[TestAsyncSave]] - code - gateway/tests/test_report_store.py
@@ -63,6 +64,7 @@ members: 58
 - [[TestReviewHardening]] - code - gateway/tests/test_report_store.py
 - [[TestSaveAndGet]] - code - gateway/tests/test_report_store.py
 - [[TestSecurity]] - code - gateway/tests/test_report_store.py
+- [[falco_alerts()]] - code - gateway/ingest_api/main.py
 - [[report_store.py]] - code - gateway/security/report_store.py
 - [[store()_2]] - code - gateway/tests/test_report_store.py
 - [[test_report_store.py]] - code - gateway/tests/test_report_store.py
@@ -75,13 +77,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 104]]
-- 3 edges to [[_COMMUNITY_Community 978]]
-- 1 edge to [[_COMMUNITY_Community 2030]]
-- 1 edge to [[_COMMUNITY_Community 49]]
+- 4 edges to [[_COMMUNITY_Community 978]]
+- 3 edges to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 181]]
+- 1 edge to [[_COMMUNITY_Community 57]]
 
 ## Top bridge nodes
 - [[._path()]] - degree 8, connects to 3 communities
 - [[ReportStore]] - degree 37, connects to 1 community
 - [[test_report_store.py]] - degree 10, connects to 1 community
+- [[falco_alerts()]] - degree 4, connects to 1 community
 - [[._sanitize_sync()]] - degree 2, connects to 1 community

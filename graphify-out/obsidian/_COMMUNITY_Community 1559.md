@@ -1,15 +1,21 @@
 ---
 type: community
-members: 2
+members: 8
 ---
 
 # Community 1559
 
-**Members:** 2 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[.test_proxy_request_duplicate_no_reply_messages_return_deterministic_reply()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Repeated NO_REPLY payloads should still return deterministic non-empty replies.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Excessive False Positives]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[PII Engine Not Initialized]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[PII Not Being Detected]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[PII Pipeline Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[Redaction Breaking JSONStructured Data]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[Related Notes_60]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[Tool Result PII Not Scanned]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[spaCy Model Issues]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 626]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 845]]
+- 1 edge to [[_COMMUNITY_Community 253]]
 
 ## Top bridge nodes
-- [[.test_proxy_request_duplicate_no_reply_messages_return_deterministic_reply()]] - degree 4, connects to 3 communities
+- [[PII Pipeline Errors_2]] - degree 8, connects to 1 community

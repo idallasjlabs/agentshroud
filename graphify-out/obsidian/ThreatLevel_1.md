@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "Community 108"
+community: "Community 152"
 location: "L23"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_108
+  - community/Community_152
 ---
 
 # ThreatLevel
@@ -22,4 +22,4 @@ tags:
 - [[ThreatLevel_2]] - `semantically_similar_to` [INFERRED]
 - [[browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_108
+#graphify/code #graphify/INFERRED #community/Community_152

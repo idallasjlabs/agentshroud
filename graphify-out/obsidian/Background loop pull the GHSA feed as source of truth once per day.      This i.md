@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "rationale"
-community: "Community 736"
+community: "Community 368"
 location: "L1015"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_736
+  - community/Community_368
 ---
 
 # Background loop: pull the GHSA feed as source of truth once per day.      This i
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ghsa_ingest_scheduler()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_736
+#graphify/rationale #graphify/EXTRACTED #community/Community_368

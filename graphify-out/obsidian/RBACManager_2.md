@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "Community 6"
+community: "Community 2043"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_2043
 ---
 
 # RBACManager
@@ -15,4 +15,4 @@ tags:
 - [[.__init__()_129]] - `references` [EXTRACTED]
 - [[_get_rbac_manager()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/Community_2043

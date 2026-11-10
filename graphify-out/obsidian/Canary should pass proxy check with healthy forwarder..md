@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "rationale"
-community: "Community 112"
+community: "Community 43"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_112
+  - community/Community_43
 ---
 
 # Canary should pass proxy check with healthy forwarder.
@@ -15,4 +15,4 @@ tags:
 - [[test_canary_with_healthy_forwarder()]] - `rationale_for` [EXTRACTED]
 - [[test_canary_with_unhealthy_forwarder()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_112
+#graphify/rationale #graphify/EXTRACTED #community/Community_43

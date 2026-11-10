@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "Community 71"
+community: "Community 72"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_71
+  - community/Community_72
 ---
 
 # NetworkConfiguration
@@ -21,4 +21,4 @@ tags:
 - [[Container network configuration.]] - `rationale_for` [EXTRACTED]
 - [[network_validator.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_71
+#graphify/code #graphify/EXTRACTED #community/Community_72

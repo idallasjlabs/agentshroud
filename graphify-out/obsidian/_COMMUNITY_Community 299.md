@@ -1,11 +1,11 @@
 ---
 type: community
-members: 25
+members: 30
 ---
 
 # Community 299
 
-**Members:** 25 nodes
+**Members:** 30 nodes
 
 ## Members
 - [[Approval required but none granted]] - document - skills/custom/securebrowser/README.md
@@ -16,6 +16,8 @@ members: 25
 - [[1. Verify Installation]] - document - skills/custom/securebrowser/README.md
 - [[2. Configure Allowlist]] - document - skills/custom/securebrowser/README.md
 - [[3. Test Navigation]] - document - skills/custom/securebrowser/README.md
+- [[Approval Workflow]] - document - skills/custom/securebrowser/README.md
+- [[Audit Trail]] - document - skills/custom/securebrowser/README.md
 - [[Integration_2]] - document - skills/custom/securebrowser/README.md
 - [[Key Features_2]] - document - skills/custom/securebrowser/README.md
 - [[License_2]] - document - skills/custom/securebrowser/README.md
@@ -24,13 +26,16 @@ members: 25
 - [[Publishing to ClawHub]] - document - skills/custom/securebrowser/README.md
 - [[Quick Start_3]] - document - skills/custom/securebrowser/README.md
 - [[README_131]] - document - skills/custom/securebrowser/README.md
+- [[Risk Classification]] - document - skills/custom/securebrowser/README.md
 - [[SecureBrowser Skill]] - document - skills/custom/securebrowser/README.md
 - [[Security Guarantees_9]] - document - skills/custom/securebrowser/README.md
+- [[Security Model_1]] - document - skills/custom/securebrowser/README.md
 - [[Step 1 Package Skill]] - document - skills/custom/securebrowser/README.md
 - [[Step 2 Test Locally]] - document - skills/custom/securebrowser/README.md
 - [[Step 3 Publish]] - document - skills/custom/securebrowser/README.md
 - [[Support]] - document - skills/custom/securebrowser/README.md
 - [[Troubleshooting_57]] - document - skills/custom/securebrowser/README.md
+- [[URL Access Control_1]] - document - skills/custom/securebrowser/README.md
 - [[With 1Password]] - document - skills/custom/securebrowser/README.md
 - [[With AgentShroud Gateway]] - document - skills/custom/securebrowser/README.md
 
@@ -44,8 +49,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Community 2120]]
 - 1 edge to [[_COMMUNITY_Community 799]]
-- 1 edge to [[_COMMUNITY_Community 2319]]
 - 1 edge to [[_COMMUNITY_Community 2320]]
 
 ## Top bridge nodes
-- [[SecureBrowser Skill]] - degree 15, connects to 4 communities
+- [[SecureBrowser Skill]] - degree 15, connects to 3 communities

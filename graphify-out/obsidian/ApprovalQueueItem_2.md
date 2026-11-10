@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "Community 30"
+community: "Community 108"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_30
+  - community/Community_108
 ---
 
 # ApprovalQueueItem
@@ -16,4 +16,4 @@ tags:
 - [[.load_pending()]] - `references` [EXTRACTED]
 - [[.save()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_30
+#graphify/code #graphify/EXTRACTED #community/Community_108

@@ -8,20 +8,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[._call_slack_api()]] - code - gateway/proxy/slack_proxy.py
-- [[._intercept_connections_open()]] - code - gateway/proxy/slack_proxy.py
-- [[._is_owner_channel()]] - code - gateway/proxy/slack_proxy.py
-- [[.invite_channel_member()]] - code - gateway/proxy/slack_proxy.py
-- [[.kick_channel_member()]] - code - gateway/proxy/slack_proxy.py
-- [[.provision_group_channel()]] - code - gateway/proxy/slack_proxy.py
-- [[.proxy_outbound()]] - code - gateway/proxy/slack_proxy.py
-- [[Create a Slack channel for a group. Returns channel_id or None on failure.]] - rationale - gateway/proxy/slack_proxy.py
-- [[Intercept apps.connections.open rewrite the returned WSS URL to route         t]] - rationale - gateway/proxy/slack_proxy.py
-- [[Invite a Slack user to a channel. Returns True on success.]] - rationale - gateway/proxy/slack_proxy.py
-- [[POST to httpsslack.comapimethod with the bot token.]] - rationale - gateway/proxy/slack_proxy.py
-- [[Proxy a bot Slack Web API call through the security pipeline.          For messa]] - rationale - gateway/proxy/slack_proxy.py
-- [[Remove a Slack user from a channel. Returns True on success.]] - rationale - gateway/proxy/slack_proxy.py
-- [[Return True if channel is a DM with the configured owner.          In Slack, DM]] - rationale - gateway/proxy/slack_proxy.py
+- [[.test_readonly_allowed_read_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_readonly_allowed_web_search_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_readonly_denied_email_sending_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_readonly_denied_external_api_calls_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_readonly_denied_file_deletion_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_readonly_denied_skill_installation_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[Read-only member IS allowed read tool in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only member IS allowed web_search (low-risk) in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only member denied email_sending even when called from group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only member denied external_api_calls in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only member denied file_deletion in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only member denied skill_installation in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only members must be denied high-risk tools in any group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[TestReadOnlyMemberGroupContext]] - code - gateway/tests/test_group_rbac.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,11 +31,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 37]]
+- 3 edges to [[_COMMUNITY_Community 33]]
+- 1 edge to [[_COMMUNITY_Community 196]]
+- 1 edge to [[_COMMUNITY_Community 6]]
+- 1 edge to [[_COMMUNITY_Community 194]]
+- 1 edge to [[_COMMUNITY_Community 11]]
 
 ## Top bridge nodes
-- [[._call_slack_api()]] - degree 7, connects to 1 community
-- [[.proxy_outbound()]] - degree 5, connects to 1 community
-- [[._intercept_connections_open()]] - degree 4, connects to 1 community
-- [[._is_owner_channel()]] - degree 3, connects to 1 community
-- [[.provision_group_channel()]] - degree 3, connects to 1 community
+- [[TestReadOnlyMemberGroupContext]] - degree 14, connects to 5 communities

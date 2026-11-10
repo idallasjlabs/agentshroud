@@ -1,11 +1,11 @@
 ---
 type: community
-members: 81
+members: 45
 ---
 
 # Community 59
 
-**Members:** 81 nodes
+**Members:** 45 nodes
 
 ## Members
 - [[.__init__()_27]] - code - gateway/proxy/mcp_permissions.py
@@ -21,28 +21,11 @@ members: 81
 - [[.set_trust_level()]] - code - gateway/proxy/mcp_permissions.py
 - [[.test_admin_allowed_at_trust_3()]] - code - gateway/tests/test_mcp_permissions.py
 - [[.test_admin_denied_at_trust_2()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_admin_ge_read()]] - code - gateway/tests/test_mcp_permissions.py
 - [[.test_admin_private_tool_allowed_for_owner()]] - code - gateway/tests/test_mcp_permissions.py
 - [[.test_admin_private_tool_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_all_pass()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_clamp_high()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_clamp_low()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_combined_blocks_private_data_parameter()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_default_trust_is_1()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_default_write()]] - code - gateway/tests/test_mcp_permissions.py
 - [[.test_exec_denied_at_trust_1()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_execute_lt_admin()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_explicit_config()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_full_access()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_level_values()]] - code - gateway/tests/test_mcp_permissions.py
 - [[.test_memory_dot_search_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
 - [[.test_memory_get_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_no_limit_always_allowed()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_pattern_delete()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_pattern_list()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_pattern_read()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_pattern_sensitive()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_permission_denied()]] - code - gateway/tests/test_mcp_permissions.py
 - [[.test_privacy_policy_overrides_patterns()]] - code - gateway/tests/test_mcp_permissions.py
 - [[.test_privacy_policy_status_when_missing_file()]] - code - gateway/tests/test_mcp_permissions.py
 - [[.test_private_data_parameter_allowed_for_owner()]] - code - gateway/tests/test_mcp_permissions.py
@@ -54,18 +37,7 @@ members: 81
 - [[.test_private_data_parameter_denied_for_session_store_path()]] - code - gateway/tests/test_mcp_permissions.py
 - [[.test_private_data_parameter_denied_for_workspace_contributor_logs()]] - code - gateway/tests/test_mcp_permissions.py
 - [[.test_private_redaction_event_summary()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_rate_limit_enforced()_1]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_rate_limit_per_agent()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_read_le_read()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_read_lt_write()]] - code - gateway/tests/test_mcp_permissions.py
 - [[.test_read_tool_at_trust_0()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_server_denied_stops_early()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_set_and_get()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_trust_0_read_only()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_trust_1_write()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_trust_2_execute()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_trust_3_admin()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_write_lt_execute()]] - code - gateway/tests/test_mcp_permissions.py
 - [[.test_write_tool_allowed_at_trust_1()]] - code - gateway/tests/test_mcp_permissions.py
 - [[.test_write_tool_denied_at_trust_0()]] - code - gateway/tests/test_mcp_permissions.py
 - [[Aggregate recent private-data redaction events.]] - rationale - gateway/proxy/mcp_permissions.py
@@ -80,15 +52,7 @@ members: 81
 - [[Return recent blocked private-tool attempts for auditing.]] - rationale - gateway/proxy/mcp_permissions.py
 - [[Return recent private-data redaction events.]] - rationale - gateway/proxy/mcp_permissions.py
 - [[Set trust level for an agent.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[TestCheckAll]] - code - gateway/tests/test_mcp_permissions.py
-- [[TestInferPermission]] - code - gateway/tests/test_mcp_permissions.py
-- [[TestPermissionLevel]] - code - gateway/tests/test_mcp_permissions.py
-- [[TestRateLimiting_2]] - code - gateway/tests/test_mcp_permissions.py
 - [[TestToolPermission]] - code - gateway/tests/test_mcp_permissions.py
-- [[TestTrustLevels]] - code - gateway/tests/test_mcp_permissions.py
-- [[TestTrustMapping]] - code - gateway/tests/test_mcp_permissions.py
-- [[mgr()_1]] - code - gateway/tests/test_mcp_permissions.py
-- [[test_mcp_permissions.py]] - code - gateway/tests/test_mcp_permissions.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -98,24 +62,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 41 edges to [[_COMMUNITY_Community 54]]
-- 30 edges to [[_COMMUNITY_Community 132]]
-- 20 edges to [[_COMMUNITY_Community 64]]
-- 8 edges to [[_COMMUNITY_Community 230]]
-- 5 edges to [[_COMMUNITY_Community 329]]
-- 2 edges to [[_COMMUNITY_Community 61]]
-- 2 edges to [[_COMMUNITY_Community 232]]
-- 2 edges to [[_COMMUNITY_Community 2038]]
+- 25 edges to [[_COMMUNITY_Community 54]]
+- 22 edges to [[_COMMUNITY_Community 132]]
+- 21 edges to [[_COMMUNITY_Community 64]]
+- 12 edges to [[_COMMUNITY_Community 2038]]
+- 4 edges to [[_COMMUNITY_Community 329]]
+- 2 edges to [[_COMMUNITY_Community 6]]
 - 2 edges to [[_COMMUNITY_Community 941]]
+- 2 edges to [[_COMMUNITY_Community 1970]]
 - 1 edge to [[_COMMUNITY_Community 140]]
+- 1 edge to [[_COMMUNITY_Community 1942]]
 - 1 edge to [[_COMMUNITY_Community 184]]
-- 1 edge to [[_COMMUNITY_Community 1970]]
-- 1 edge to [[_COMMUNITY_Community 2042]]
 - 1 edge to [[_COMMUNITY_Community 2071]]
 
 ## Top bridge nodes
-- [[MCPPermissionManager]] - degree 101, connects to 14 communities
-- [[test_mcp_permissions.py]] - degree 17, connects to 4 communities
-- [[TestToolPermission]] - degree 27, connects to 2 communities
-- [[TestPermissionLevel]] - degree 12, connects to 2 communities
-- [[TestInferPermission]] - degree 12, connects to 2 communities
+- [[MCPPermissionManager]] - degree 101, connects to 12 communities
+- [[TestToolPermission]] - degree 27, connects to 3 communities
+- [[.__init__()_27]] - degree 5, connects to 2 communities
+- [[.record_private_data_redaction()]] - degree 3, connects to 1 community

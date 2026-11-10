@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Community 37"
+community: "Community 1127"
 location: "L8630"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_37
+  - community/Community_1127
 ---
 
 # AsyncMock
@@ -248,4 +248,4 @@ tags:
 - [[test_ws_pipeline_error_logs_and_recovers_to_idle()]] - `calls` [INFERRED]
 - [[test_ws_stop_during_speaking_aborts_tts()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_37
+#graphify/code #graphify/INFERRED #community/Community_1127

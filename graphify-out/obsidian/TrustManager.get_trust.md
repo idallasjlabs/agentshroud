@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Community 300"
+community: "Community 1560"
 location: "176"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_300
+  - community/Community_1560
 ---
 
 # TrustManager.get_trust
@@ -15,4 +15,4 @@ tags:
 - [[A2AGovernanceProxy._check_peer]] - `shares_data_with` [INFERRED]
 - [[TrustManager.is_tool_allowed]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_300
+#graphify/code #graphify/INFERRED #community/Community_1560

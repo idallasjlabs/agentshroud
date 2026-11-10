@@ -1,17 +1,23 @@
 ---
 type: community
-members: 4
+members: 10
 ---
 
 # Community 1357
 
-**Members:** 4 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[.test_empty_files_skipped()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_invalid_then_valid()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_missing_dir_returns_none()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestLoadLatestJson_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[1. Summary line_6]] - document - reports/upgrade-2026-10-12.md
+- [[2. Environment mapping_6]] - document - reports/upgrade-2026-10-12.md
+- [[3. Upgrade table_4]] - document - reports/upgrade-2026-10-12.md
+- [[4. Security findings_6]] - document - reports/upgrade-2026-10-12.md
+- [[5. Verification evidence_7]] - document - reports/upgrade-2026-10-12.md
+- [[6. Breaking changes  needs human]] - document - reports/upgrade-2026-10-12.md
+- [[7. Rollback instructions_5]] - document - reports/upgrade-2026-10-12.md
+- [[8. Time spent_5]] - document - reports/upgrade-2026-10-12.md
+- [[Coverage gateway-side mitigation (owner directive — vendor patch is not the finish line)]] - document - reports/upgrade-2026-10-12.md
+- [[Sunday Upgrade 2026-10-12 — DEV run (on-demand, owner-requested pipeline-hardening exercise)]] - document - reports/upgrade-2026-10-12.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,10 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 219]]
-- 1 edge to [[_COMMUNITY_Community 312]]
+- 1 edge to [[_COMMUNITY_Community 139]]
 
 ## Top bridge nodes
-- [[TestLoadLatestJson_1]] - degree 4, connects to 1 community
-- [[.test_empty_files_skipped()]] - degree 2, connects to 1 community
-- [[.test_invalid_then_valid()]] - degree 2, connects to 1 community
+- [[Sunday Upgrade 2026-10-12 — DEV run (on-demand, owner-requested pipeline-hardening exercise)]] - degree 9, connects to 1 community

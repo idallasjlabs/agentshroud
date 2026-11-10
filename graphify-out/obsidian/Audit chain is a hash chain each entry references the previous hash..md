@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "Community 45"
+community: "Community 24"
 location: "L302"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_45
+  - community/Community_24
 ---
 
 # Audit chain is a hash chain: each entry references the previous hash.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_audit_chain_hash_chained()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_45
+#graphify/rationale #graphify/EXTRACTED #community/Community_24

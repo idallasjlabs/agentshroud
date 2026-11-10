@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Community 509"
+community: "Community 0"
 location: "L215"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_509
+  - community/Community_0
 ---
 
 # TestPromptGuard
@@ -64,4 +64,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_509
+#graphify/code #graphify/INFERRED #community/Community_0

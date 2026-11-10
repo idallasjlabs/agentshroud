@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "rationale"
-community: "Community 61"
+community: "Community 986"
 location: "L411"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_61
+  - community/Community_986
 ---
 
 # The control is agent-agnostic by construction: it takes an origin and         an
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_applies_to_any_agent_not_just_openclaw()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_61
+#graphify/rationale #graphify/EXTRACTED #community/Community_986

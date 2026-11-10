@@ -45,9 +45,9 @@ SORT file.name ASC
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Community 287]]
 - 1 edge to [[_COMMUNITY_Community 392]]
-- 1 edge to [[_COMMUNITY_Community 487]]
+- 1 edge to [[_COMMUNITY_Community 306]]
 - 1 edge to [[_COMMUNITY_Community 617]]
-- 1 edge to [[_COMMUNITY_Community 809]]
+- 1 edge to [[_COMMUNITY_Community 766]]
 
 ## Top bridge nodes
 - [[SOUL_2]] - degree 15, connects to 4 communities

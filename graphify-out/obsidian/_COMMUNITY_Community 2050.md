@@ -1,21 +1,15 @@
 ---
 type: community
-members: 8
+members: 2
 ---
 
 # Community 2050
 
-**Members:** 8 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[._page()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
-- [[._run()_2]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
-- [[.test_known_cves_matched_by_cve_id_not_id()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
-- [[.test_never_writes_and_says_so()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
-- [[.test_persistent_failure_exits_non_zero()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
-- [[.test_transient_read_timeout_is_retried()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
-- [[TestNvdReportOnly]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
-- [[The NVD path emits the pre-migration schema (id=CVE-…, no ghsa_idcve_id).]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_nonce_expired_rejected()]] - code - gateway/tests/test_session_security.py
+- [[A nonce with a timestamp outside the 5-min window is rejected.]] - rationale - gateway/tests/test_session_security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,12 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 55]]
-- 1 edge to [[_COMMUNITY_Community 1342]]
+- 1 edge to [[_COMMUNITY_Community 76]]
 
 ## Top bridge nodes
-- [[TestNvdReportOnly]] - degree 8, connects to 1 community
-- [[._run()_2]] - degree 4, connects to 1 community
-- [[.test_known_cves_matched_by_cve_id_not_id()]] - degree 3, connects to 1 community
-- [[.test_transient_read_timeout_is_retried()]] - degree 2, connects to 1 community
-- [[.test_persistent_failure_exits_non_zero()]] - degree 2, connects to 1 community
+- [[.test_nonce_expired_rejected()]] - degree 2, connects to 1 community

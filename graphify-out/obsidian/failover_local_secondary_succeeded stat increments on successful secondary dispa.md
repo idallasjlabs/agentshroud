@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "Community 506"
+community: "Community 208"
 location: "L922"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_506
+  - community/Community_208
 ---
 
 # failover_local_secondary_succeeded stat increments on successful secondary dispa
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_stats_local_secondary_failover_succeeded_incremented()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_506
+#graphify/rationale #graphify/EXTRACTED #community/Community_208

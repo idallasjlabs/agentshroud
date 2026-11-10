@@ -56,6 +56,9 @@
 #   25  NOTHING WAS UPGRADED although a newer upstream release exists.
 #       The run was mechanically green but achieved nothing — see the no-op
 #       gate below. This is a job malfunction, not a healthy stack.
+#   26  prod only: every phase passed but the handoff's pins are not what the
+#       live images were built from after verify (NOT_LIVE), or the live labels
+#       could not be resolved (UNPROVEN). Not marked promoted.
 #   30  apply failed (build/compose error) — rollback attempted
 #   40  verify failed (unhealthy/restart loop/errors) — rollback attempted
 #   50  rollback itself failed — STACK MAY BE DEGRADED, human required
@@ -213,10 +216,8 @@ log "compose: engine='$CE' project='$PROJECT' cmd='$COMPOSE_CMD'"
 # (docker-compose.yml build args), so a host's running images can be matched to
 # the commit they were built from. "-dirty" when the tree has uncommitted changes:
 # the label must never claim a clean commit the build did not use.
-AGENTSHROUD_GIT_SHA="$(git -C "$REPO" rev-parse HEAD 2>/dev/null || echo unknown)"
-if [ "$AGENTSHROUD_GIT_SHA" != unknown ] && ! git -C "$REPO" diff --quiet HEAD 2>/dev/null; then
-  AGENTSHROUD_GIT_SHA="${AGENTSHROUD_GIT_SHA}-dirty"
-fi
+# graphify-out/ and reports/ do not count: see sunday_build_revision.
+AGENTSHROUD_GIT_SHA="$(sunday_build_revision "$REPO")"
 export AGENTSHROUD_GIT_SHA
 
 # ── Arg parsing ──────────────────────────────────────────────────────────────
@@ -1596,6 +1597,24 @@ if [ -n "$_pins_base_rev" ] && [ "$_pins_base_rev" != "${HEAD_AT_START:-}" ]; th
     log "no-op gate: 'before' pins taken from merge-base $(printf '%.12s' "$_pins_base_rev") (main before this run's branch), not from the already-committed checkout"
   fi
 fi
+# Prod promotes what dev already merged, and its launcher fast-forwards to main
+# first, so the merge-base above IS HEAD and "before" equalled "after": dev's
+# 2026-11-08 PASS (OpenClaw 2026.10.6 -> 2026.11.1, 2026.11.2 already out)
+# would have exited 25 NOTHING_UPGRADED and never been marked promoted. On
+# prod, "before" is what RUNS (versions.env at each live image's revision), and
+# the outcome is judged after verify by sunday_prod_outcome, never by the
+# merge-base. An unresolvable label leaves "before" unknown; it is not guessed.
+PROD_PINS_BEFORE=""
+if [ "$ENVIRONMENT" = "prod" ]; then
+  # shellcheck disable=SC2086  # CONTAINERS is a space-separated list
+  read -r _oc_rev _h_rev <<< "$(sunday_live_revs $CONTAINERS)"
+  if PROD_PINS_BEFORE="$(sunday_live_pins "$REPO" "$_oc_rev" "$_h_rev")"; then
+    log "prod gate: running before this run: $(printf '%s' "$PROD_PINS_BEFORE" | tr '\n' ' ')"
+  else
+    PROD_PINS_BEFORE=""
+    warn "prod gate: the running images' revision labels are not plain known commits — 'before' is UNKNOWN (the outcome is still judged on what runs after verify)"
+  fi
+fi
 
 _should_run preflight && phase_preflight
 _should_run discover  && phase_discover
@@ -1606,7 +1625,28 @@ _should_run verify    && phase_verify
 
 # The no-op gate only judges a FULL run. A partial --phase invocation was never
 # trying to upgrade anything, so "no pin changed" says nothing about it.
-if [ "$PHASE" = "all" ]; then
+if [ "$PHASE" = "all" ] && [ "$ENVIRONMENT" = "prod" ]; then
+  # Prod: did the handoff end up RUNNING? Re-read the labels after verify.
+  # The handoff, not upstream, is prod's "latest", so a newer upstream release
+  # is not a failure here, and an already-live handoff is marked rather than
+  # redeployed by every daily catch-up.
+  if _mutating; then
+    # shellcheck disable=SC2086
+    read -r _oc_rev _h_rev <<< "$(sunday_live_revs $CONTAINERS)"
+    _pins_after="$(sunday_live_pins "$REPO" "$_oc_rev" "$_h_rev" || true)"
+    _pins_target="$(_capture_pins)"
+    prod_outcome_rc=0
+    PROD_OUTCOME="$(sunday_prod_outcome "$PROD_PINS_BEFORE" "$_pins_after" "$_pins_target")" || prod_outcome_rc=$?
+    log "prod gate: ${PROD_OUTCOME} — before: $(printf '%s' "${PROD_PINS_BEFORE:-unknown}" | tr '\n' ' ')| running now: $(printf '%s' "${_pins_after:-unresolved}" | tr '\n' ' ')| handoff: $(printf '%s' "$_pins_target" | tr '\n' ' ')"
+    if [ "$prod_outcome_rc" -ne 0 ]; then
+      err "prod gate: ${PROD_OUTCOME} — every phase passed but the handoff's pins are not what is running. Not marking it promoted."
+      exit 26
+    fi
+    [ "$PROD_OUTCOME" = ALREADY_LIVE ] && UPGRADE_HAPPENED=0 || UPGRADE_HAPPENED=1
+  else
+    log "prod gate: dry run — nothing was deployed, so there is no outcome to judge"
+  fi
+elif [ "$PHASE" = "all" ]; then
   noop_rc=0
   check_noop_gate || noop_rc=$?
   if [ "$noop_rc" -ne 0 ]; then
@@ -1633,7 +1673,9 @@ write_handoff PASS
 # Prod: record that THIS dev handoff is now live and verified, so the daily
 # catch-up (sunday-upgrade.sh) stops re-running it. Only after a full run, i.e.
 # after verify passed — never on intent.
-if [ "$ENVIRONMENT" = "prod" ] && [ "$PHASE" = "all" ] && _mutating && [ -n "${PROMOTING_HANDOFF:-}" ]; then
+# Only when the prod gate saw the handoff's pins RUNNING after verify
+# (PROMOTED, PROMOTED_FROM_UNKNOWN or ALREADY_LIVE); anything else exited 26.
+if [ "$ENVIRONMENT" = "prod" ] && [ "$PHASE" = "all" ] && [ -n "${PROD_OUTCOME:-}" ] && _mutating && [ -n "${PROMOTING_HANDOFF:-}" ]; then
   if sunday_mark_promoted "$HANDOFF_DIR" "$PROMOTING_HANDOFF" "$TODAY"; then
     log "promoted: dev handoff ${PROMOTING_HANDOFF} verified live on prod -> ${HANDOFF_DIR}/prod-promoted-${PROMOTING_HANDOFF}.json"
   else

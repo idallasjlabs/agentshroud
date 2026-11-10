@@ -1,44 +1,59 @@
 ---
 type: community
-members: 31
+members: 46
 ---
 
 # Community 203
 
-**Members:** 31 nodes
+**Members:** 46 nodes
 
 ## Members
-- [[.__init__()_95]] - code - gateway/security/memory_integrity.py
-- [[._load_integrity_database()]] - code - gateway/security/memory_integrity.py
-- [[._load_write_windows()]] - code - gateway/security/memory_integrity.py
-- [[._save_write_windows()]] - code - gateway/security/memory_integrity.py
-- [[.from_dict()_8]] - code - gateway/security/memory_integrity.py
-- [[.get_integrity_status()]] - code - gateway/security/memory_integrity.py
-- [[.get_recent_alerts()]] - code - gateway/security/memory_integrity.py
-- [[.register_expected_write()]] - code - gateway/security/memory_integrity.py
-- [[.setup_method()_9]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.to_dict()_11]] - code - gateway/security/memory_integrity.py
-- [[Any_48]] - code - gateway/security/memory_integrity.py
-- [[Configuration for memory file integrity monitoring.]] - rationale - gateway/security/memory_config.py
-- [[Convert to dictionary for JSON serialization.]] - rationale - gateway/security/memory_integrity.py
-- [[Create from dictionary for JSON deserialization.]] - rationale - gateway/security/memory_integrity.py
-- [[FileIntegrityRecord]] - code - gateway/security/memory_integrity.py
-- [[Get alerts from the last N hours.]] - rationale - gateway/security/memory_integrity.py
-- [[Get current integrity monitoring status.]] - rationale - gateway/security/memory_integrity.py
-- [[Load active write windows from disk.]] - rationale - gateway/security/memory_integrity.py
-- [[Load integrity database from disk.]] - rationale - gateway/security/memory_integrity.py
-- [[MemoryIntegrityConfig]] - code - gateway/security/memory_config.py
-- [[MemoryIntegrityConfig_1]] - code - gateway/security/memory_integrity.py
-- [[MemoryIntegrityMonitor]] - code - gateway/security/memory_integrity.py
-- [[ModificationSource]] - code - gateway/security/memory_integrity.py
-- [[Monitors integrity of critical memory files.]] - rationale - gateway/security/memory_integrity.py
-- [[Record of a file's integrity state.]] - rationale - gateway/security/memory_integrity.py
-- [[Register an expected write to a file to prevent false alerts.]] - rationale - gateway/security/memory_integrity.py
-- [[Save active write windows to disk.]] - rationale - gateway/security/memory_integrity.py
-- [[Set up test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Source of a file modification.]] - rationale - gateway/security/memory_integrity.py
-- [[memory_config.py]] - code - gateway/security/memory_config.py
-- [[memory_integrity.py]] - code - gateway/security/memory_integrity.py
+- [[._check_message_size()]] - code - gateway/security/a2a_governance.py
+- [[._check_peer()]] - code - gateway/security/a2a_governance.py
+- [[._check_rate_limit()]] - code - gateway/security/a2a_governance.py
+- [[._check_task_concurrency()]] - code - gateway/security/a2a_governance.py
+- [[._finalize()]] - code - gateway/security/a2a_governance.py
+- [[._process()]] - code - gateway/security/a2a_governance.py
+- [[._sanitize_message()]] - code - gateway/security/a2a_governance.py
+- [[.complete_task()]] - code - gateway/security/a2a_governance.py
+- [[.fingerprint()]] - code - gateway/security/a2a_governance.py
+- [[.get_events()_1]] - code - gateway/security/a2a_governance.py
+- [[.get_peer()]] - code - gateway/security/a2a_governance.py
+- [[.get_summary()]] - code - gateway/security/a2a_governance.py
+- [[.process_inbound()_1]] - code - gateway/security/a2a_governance.py
+- [[.process_outbound()_1]] - code - gateway/security/a2a_governance.py
+- [[.register_peer()]] - code - gateway/security/a2a_governance.py
+- [[.test_fingerprint_deterministic()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_fingerprint_differs_for_different_payloads()]] - code - gateway/tests/test_a2a_governance.py
+- [[.to_dict()_3]] - code - gateway/security/a2a_governance.py
+- [[.unregister_peer()]] - code - gateway/security/a2a_governance.py
+- [[.update_peer_trust()]] - code - gateway/security/a2a_governance.py
+- [[A2ADecision]] - code - gateway/security/a2a_governance.py
+- [[A2AGovernanceEvent]] - code - gateway/security/a2a_governance.py
+- [[A2AGovernanceProxy]] - code - gateway/security/a2a_governance.py
+- [[A2AMessage]] - code - gateway/security/a2a_governance.py
+- [[An A2A protocol message passing through the governance proxy.]] - rationale - gateway/security/a2a_governance.py
+- [[Apply final decision and log governance event.]] - rationale - gateway/security/a2a_governance.py
+- [[Audit event for A2A governance decisions.]] - rationale - gateway/security/a2a_governance.py
+- [[Check concurrent task limit for task_request messages.]] - rationale - gateway/security/a2a_governance.py
+- [[Check message payload size.]] - rationale - gateway/security/a2a_governance.py
+- [[Check per-peer rate limit.]] - rationale - gateway/security/a2a_governance.py
+- [[Content hash for deduplication and audit.]] - rationale - gateway/security/a2a_governance.py
+- [[Core message processing pipeline.]] - rationale - gateway/security/a2a_governance.py
+- [[Get governance proxy summary.]] - rationale - gateway/security/a2a_governance.py
+- [[Governance decision for an A2A message.]] - rationale - gateway/security/a2a_governance.py
+- [[Governance proxy for Agent-to-Agent communication.      Sits between local agent]] - rationale - gateway/security/a2a_governance.py
+- [[Look up a registered peer.]] - rationale - gateway/security/a2a_governance.py
+- [[Mark a delegated task as complete (decrements active task counter).]] - rationale - gateway/security/a2a_governance.py
+- [[Register a known A2A peer agent.]] - rationale - gateway/security/a2a_governance.py
+- [[Remove a peer from the registry.]] - rationale - gateway/security/a2a_governance.py
+- [[Sanitize PII from A2A message payload. Returns list of sanitizations applied.]] - rationale - gateway/security/a2a_governance.py
+- [[TestMessageFingerprint]] - code - gateway/tests/test_a2a_governance.py
+- [[Update a peer's trust score (called by TrustManager integration).]] - rationale - gateway/security/a2a_governance.py
+- [[Validate and govern an inbound A2A message from a remote peer.]] - rationale - gateway/security/a2a_governance.py
+- [[Validate and govern an outbound A2A message to a remote peer.]] - rationale - gateway/security/a2a_governance.py
+- [[Validate that the peer is registered and trusted.]] - rationale - gateway/security/a2a_governance.py
+- [[a2a_governance.py]] - code - gateway/security/a2a_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -48,19 +63,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 16 edges to [[_COMMUNITY_Community 16]]
-- 13 edges to [[_COMMUNITY_Community 1016]]
-- 11 edges to [[_COMMUNITY_Community 72]]
-- 5 edges to [[_COMMUNITY_Community 986]]
-- 4 edges to [[_COMMUNITY_Community 104]]
-- 2 edges to [[_COMMUNITY_Community 8]]
-- 1 edge to [[_COMMUNITY_Community 489]]
-- 1 edge to [[_COMMUNITY_Community 1]]
-- 1 edge to [[_COMMUNITY_Community 2333]]
+- 52 edges to [[_COMMUNITY_Community 44]]
+- 3 edges to [[_COMMUNITY_Community 8]]
+- 1 edge to [[_COMMUNITY_Community 261]]
+- 1 edge to [[_COMMUNITY_Community 11]]
+- 1 edge to [[_COMMUNITY_Community 1209]]
 
 ## Top bridge nodes
-- [[MemoryIntegrityMonitor]] - degree 41, connects to 6 communities
-- [[MemoryIntegrityConfig]] - degree 18, connects to 5 communities
-- [[ModificationSource]] - degree 13, connects to 4 communities
-- [[memory_config.py]] - degree 3, connects to 2 communities
-- [[FileIntegrityRecord]] - degree 7, connects to 1 community
+- [[A2ADecision]] - degree 26, connects to 3 communities
+- [[A2AGovernanceProxy]] - degree 43, connects to 2 communities
+- [[a2a_governance.py]] - degree 8, connects to 2 communities
+- [[A2AMessage]] - degree 27, connects to 1 community
+- [[TestMessageFingerprint]] - degree 9, connects to 1 community

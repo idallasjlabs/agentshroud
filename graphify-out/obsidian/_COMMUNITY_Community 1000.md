@@ -1,11 +1,11 @@
 ---
 type: community
-members: 62
+members: 65
 ---
 
 # Community 1000
 
-**Members:** 62 nodes
+**Members:** 65 nodes
 
 ## Members
 - [[.__init__()_41]] - code - gateway/proxy/url_analyzer.py
@@ -64,7 +64,10 @@ members: 62
 - [[TestPIIInURLs]] - code - gateway/tests/test_url_analyzer.py
 - [[URLAnalysisResult]] - code - gateway/proxy/url_analyzer.py
 - [[URLAnalyzer]] - code - gateway/proxy/url_analyzer.py
+- [[URLAnalyzer_1]] - code - gateway/proxy/web_proxy.py
 - [[URLFinding]] - code - gateway/proxy/url_analyzer.py
+- [[WebContentScanner_1]] - code - gateway/proxy/web_proxy.py
+- [[WebProxyConfig_1]] - code - gateway/proxy/web_proxy.py
 - [[_looks_like_base64()]] - code - gateway/proxy/url_analyzer.py
 - [[analyzer()]] - code - gateway/tests/test_url_analyzer.py
 - [[test_url_analyzer.py]] - code - gateway/tests/test_url_analyzer.py
@@ -80,17 +83,17 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 8 edges to [[_COMMUNITY_Community 8]]
-- 6 edges to [[_COMMUNITY_Community 431]]
-- 5 edges to [[_COMMUNITY_Community 27]]
-- 3 edges to [[_COMMUNITY_Community 120]]
+- 7 edges to [[_COMMUNITY_Community 72]]
+- 7 edges to [[_COMMUNITY_Community 27]]
+- 4 edges to [[_COMMUNITY_Community 120]]
+- 3 edges to [[_COMMUNITY_Community 562]]
 - 2 edges to [[_COMMUNITY_Community 437]]
-- 1 edge to [[_COMMUNITY_Community 104]]
 - 1 edge to [[_COMMUNITY_Community 162]]
 - 1 edge to [[_COMMUNITY_Community 17]]
 
 ## Top bridge nodes
 - [[URLAnalyzer]] - degree 27, connects to 5 communities
-- [[web_config.py]] - degree 6, connects to 4 communities
-- [[TestDataExfiltration]] - degree 11, connects to 2 communities
-- [[test_url_analyzer.py]] - degree 10, connects to 2 communities
-- [[url_analyzer.py]] - degree 8, connects to 2 communities
+- [[web_config.py]] - degree 6, connects to 3 communities
+- [[WebProxyConfig_1]] - degree 4, connects to 3 communities
+- [[URLAnalyzer_1]] - degree 4, connects to 3 communities
+- [[WebContentScanner_1]] - degree 4, connects to 3 communities

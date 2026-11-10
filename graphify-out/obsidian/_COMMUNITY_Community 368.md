@@ -1,40 +1,51 @@
 ---
 type: community
-members: 27
+members: 38
 ---
 
 # Community 368
 
-**Members:** 27 nodes
+**Members:** 38 nodes
 
 ## Members
-- [[.__init__()_157]] - code - gateway/tests/test_forward_routing.py
-- [[._post_forward()]] - code - gateway/tests/test_forward_routing.py
-- [[.process_inbound()_4]] - code - gateway/tests/test_forward_routing.py
-- [[.process_outbound()_4]] - code - gateway/tests/test_forward_routing.py
-- [[.test_blocked_outbound_replaced_with_policy_notice()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_empty_user_id_does_not_elevate_trust()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_no_user_id_does_not_elevate_trust()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_non_owner_user_id_does_not_elevate_trust()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_owner_id_without_trusted_header_does_not_elevate_trust()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_owner_user_id_elevates_trust_to_full()]] - code - gateway/tests/test_forward_routing.py
-- [[A collaborator's user_id must NOT trigger the owner elevation.]] - rationale - gateway/tests/test_forward_routing.py
-- [[An empty string user_id must not match the owner.]] - rationale - gateway/tests/test_forward_routing.py
-- [[Inbound passes; outbound returns blocked=True with the original text intact.]] - rationale - gateway/tests/test_forward_routing.py
-- [[Minimal app_state for owner-trust tests.]] - rationale - gateway/tests/test_forward_routing.py
-- [[Pipeline mock that records the user_trust_level passed to process_outbound.]] - rationale - gateway/tests/test_forward_routing.py
-- [[Regression forward returned out_result.sanitized_message without checking]] - rationale - gateway/tests/test_forward_routing.py
-- [[Requests with no user_id must not be elevated to FULL.]] - rationale - gateway/tests/test_forward_routing.py
-- [[SCRUM-46 verify forward.py elevates trust to FULL for the owner's user_id.]] - rationale - gateway/tests/test_forward_routing.py
-- [[TestOutboundBlockedNotDelivered]] - code - gateway/tests/test_forward_routing.py
-- [[TestOwnerTrustElevation]] - code - gateway/tests/test_forward_routing.py
-- [[WS-E SCRUM-7374 a spoofed owner user_id in the body WITHOUT the         truste]] - rationale - gateway/tests/test_forward_routing.py
-- [[When request.user_id matches _owner_user_id (with the trusted header),         p]] - rationale - gateway/tests/test_forward_routing.py
-- [[_BlockedOutboundPipeline]] - code - gateway/tests/test_forward_routing.py
-- [[_TrustCaptor]] - code - gateway/tests/test_forward_routing.py
-- [[_make_trust_app_state()]] - code - gateway/tests/test_forward_routing.py
-- [[forward-routing agent_id propagation into security pipeline]] - code - gateway/ingest_api/routes/forward.py
-- [[test_forward_routing.py]] - code - gateway/tests/test_forward_routing.py
+- [[._patch_urllib()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_raises_on_network_error()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_returns_empty_when_all_known()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_returns_new_advisory_not_in_registry()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_skips_advisory_whose_cve_is_already_tracked()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_skips_advisory_without_ghsa_id()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_skips_ghsa_already_in_registry()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_uses_github_token_in_header()]] - code - gateway/tests/test_daily_cve_report.py
+- [[Any_37]] - code - gateway/security/daily_cve_report.py
+- [[Background loop checks for new upstream agent CVEs once per day at report_hour]] - rationale - gateway/security/daily_cve_report.py
+- [[Background loop pull the GHSA feed as source of truth once per day.      This i]] - rationale - gateway/security/daily_cve_report.py
+- [[Build a minimal GitHub Security Advisory payload keyed on GHSA id.      ``ghsa_i]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[Check if the GHSA ingest already ran today (disk-based, secondary guard).]] - rationale - gateway/security/daily_cve_report.py
+- [[Check if the upstream CVE watch already ran today (disk-based).]] - rationale - gateway/security/daily_cve_report.py
+- [[Fetch one agent's GitHub Security Advisories and return advisories we don't trac]] - rationale - gateway/security/daily_cve_report.py
+- [[Fetch one agent's upstream CVEs, alert via Telegram, honestly.      Runs a singl]] - rationale - gateway/security/daily_cve_report.py
+- [[Per-agent GHSA ids already alerted. Unreadable state means alert again, never si]] - rationale - gateway/security/daily_cve_report.py
+- [[Return the CVE-pipeline config for bot_id (raises KeyError if unknown).      A]] - rationale - gateway/security/agent_cve_registry.py
+- [[Return the resolved GitHub advisory repo slug for bot_id.      Honors the per-]] - rationale - gateway/security/agent_cve_registry.py
+- [[Run the upstream CVE check for EVERY registered agent, independently.      Itera]] - rationale - gateway/security/daily_cve_report.py
+- [[Send a message via Telegram Bot API. Returns True on success.      ``text`` is d]] - rationale - gateway/security/daily_cve_report.py
+- [[Stub urllib.request.urlopen to return a list of advisories.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[TestCheckUpstreamCves]] - code - gateway/tests/test_daily_cve_report.py
+- [[_already_checked_upstream_today()]] - code - gateway/security/daily_cve_report.py
+- [[_already_ingested_ghsa_today()]] - code - gateway/security/daily_cve_report.py
+- [[_load_alerted_ghsa()]] - code - gateway/security/daily_cve_report.py
+- [[_make_github_advisory()]] - code - gateway/tests/test_daily_cve_report.py
+- [[_save_alerted_ghsa()]] - code - gateway/security/daily_cve_report.py
+- [[_send_telegram()]] - code - gateway/security/daily_cve_report.py
+- [[agent_cve_registry.py]] - code - gateway/security/agent_cve_registry.py
+- [[check_upstream_cves()]] - code - gateway/security/daily_cve_report.py
+- [[daily_cve_report.py]] - code - gateway/security/daily_cve_report.py
+- [[get_agent_cve_source()]] - code - gateway/security/agent_cve_registry.py
+- [[get_agent_ghsa_repo()]] - code - gateway/security/agent_cve_registry.py
+- [[ghsa_ingest_scheduler()]] - code - gateway/security/daily_cve_report.py
+- [[run_upstream_cve_check()]] - code - gateway/security/daily_cve_report.py
+- [[run_upstream_cve_check_all_agents()]] - code - gateway/security/daily_cve_report.py
+- [[upstream_cve_check_scheduler()]] - code - gateway/security/daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,15 +55,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 34]]
-- 6 edges to [[_COMMUNITY_Community 325]]
-- 5 edges to [[_COMMUNITY_Community 92]]
-- 2 edges to [[_COMMUNITY_Community 37]]
-- 1 edge to [[_COMMUNITY_Community 2154]]
+- 12 edges to [[_COMMUNITY_Community 127]]
+- 4 edges to [[_COMMUNITY_Community 74]]
+- 4 edges to [[_COMMUNITY_Community 131]]
+- 3 edges to [[_COMMUNITY_Community 399]]
+- 3 edges to [[_COMMUNITY_Community 736]]
+- 3 edges to [[_COMMUNITY_Community 1202]]
+- 2 edges to [[_COMMUNITY_Community 72]]
+- 2 edges to [[_COMMUNITY_Community 1200]]
+- 1 edge to [[_COMMUNITY_Community 35]]
+- 1 edge to [[_COMMUNITY_Community 42]]
 
 ## Top bridge nodes
-- [[test_forward_routing.py]] - degree 13, connects to 4 communities
-- [[_TrustCaptor]] - degree 13, connects to 3 communities
-- [[TestOwnerTrustElevation]] - degree 10, connects to 2 communities
-- [[_BlockedOutboundPipeline]] - degree 7, connects to 2 communities
-- [[_make_trust_app_state()]] - degree 6, connects to 2 communities
+- [[daily_cve_report.py]] - degree 27, connects to 7 communities
+- [[agent_cve_registry.py]] - degree 5, connects to 3 communities
+- [[Any_37]] - degree 6, connects to 2 communities
+- [[check_upstream_cves()]] - degree 13, connects to 1 community
+- [[run_upstream_cve_check()]] - degree 10, connects to 1 community

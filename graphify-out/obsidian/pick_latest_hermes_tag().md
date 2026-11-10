@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "code"
-community: "Community 1942"
+community: "Community 48"
 location: "L140"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1942
+  - community/Community_48
 ---
 
 # pick_latest_hermes_tag()
@@ -21,4 +21,4 @@ tags:
 - [[discover()]] - `calls` [EXTRACTED]
 - [[discover_upstream_versions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1942
+#graphify/code #graphify/INFERRED #community/Community_48

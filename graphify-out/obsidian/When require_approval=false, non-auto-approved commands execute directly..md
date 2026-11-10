@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "rationale"
-community: "Community 25"
+community: "Community 80"
 location: "L411"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_25
+  - community/Community_80
 ---
 
 # When require_approval=false, non-auto-approved commands execute directly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_non_auto_approved_executes_directly()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_25
+#graphify/rationale #graphify/EXTRACTED #community/Community_80

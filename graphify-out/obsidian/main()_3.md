@@ -2,7 +2,7 @@
 source_file: "docker/bots/hermes/docker_proxy_relay.py"
 type: "code"
 community: "Community 591"
-location: "L70"
+location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED

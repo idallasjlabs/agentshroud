@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "Community 2177"
+community: "Community 69"
 location: "L421"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2177
+  - community/Community_69
 ---
 
 # TestRewrite
@@ -20,4 +20,4 @@ tags:
 - [[WebContentScanner]] - `uses` [INFERRED]
 - [[test_triage_cve_mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2177
+#graphify/code #graphify/EXTRACTED #community/Community_69

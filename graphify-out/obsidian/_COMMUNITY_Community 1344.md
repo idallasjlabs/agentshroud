@@ -1,25 +1,23 @@
 ---
 type: community
-members: 12
+members: 10
 ---
 
 # Community 1344
 
-**Members:** 12 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[.test_10_x_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_127_0_0_1_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_169_254_blocked()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_192_168_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_decimal_ip_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_hex_ip_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_ipv4_mapped_ipv6_192_168_blocked()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_ipv4_mapped_ipv6_blocked()_2]] - code - gateway/tests/test_web_proxy.py
-- [[.test_ipv6_loopback_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_localhost_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_public_ip_allowed()_1]] - code - gateway/tests/test_web_proxy.py
-- [[TestSSRFBlocking]] - code - gateway/tests/test_web_proxy.py
+- [[_rollback()]] - code - scripts/update-agentshroud.sh
+- [[_svc_container()]] - code - scripts/post-deploy-check.sh
+- [[check()]] - code - scripts/post-deploy-check.sh
+- [[post-deploy-check.sh]] - code - scripts/post-deploy-check.sh
+- [[post-deploy-check.sh script]] - code - scripts/post-deploy-check.sh
+- [[restore-backup.sh]] - code - scripts/restore-backup.sh
+- [[restore-backup.sh script]] - code - scripts/restore-backup.sh
+- [[restore_tar_to_volume()]] - code - scripts/restore-backup.sh
+- [[update-agentshroud.sh]] - code - scripts/update-agentshroud.sh
+- [[update-agentshroud.sh script]] - code - scripts/update-agentshroud.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,9 +27,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 27]]
-- 1 edge to [[_COMMUNITY_Community 24]]
-- 1 edge to [[_COMMUNITY_Community 120]]
+- 2 edges to [[_COMMUNITY_Community 118]]
+- 1 edge to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 227]]
+- 1 edge to [[_COMMUNITY_Community 547]]
 
 ## Top bridge nodes
-- [[TestSSRFBlocking]] - degree 18, connects to 3 communities
+- [[post-deploy-check.sh]] - degree 7, connects to 3 communities
+- [[update-agentshroud.sh]] - degree 5, connects to 2 communities

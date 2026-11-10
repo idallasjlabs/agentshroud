@@ -1,24 +1,20 @@
 ---
 type: community
-members: 11
+members: 7
 ---
 
 # Community 1808
 
-**Members:** 11 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[.recommendation()]] - code - gateway/security/skill_guard.py
-- [[ALLOW below MEDIUM, FLAG at MEDIUMHIGH, BLOCK at CRITICAL.]] - rationale - gateway/security/skill_guard.py
-- [[Path_22]] - code - gateway/skills/scan.py
-- [[Read every manifest entry under source, failing CLOSED on unreadable files.]] - rationale - gateway/skills/scan.py
-- [[Recommendation]] - code - gateway/security/skill_guard.py
-- [[ScanResult_3]] - code - gateway/skills/scan.py
-- [[What the caller should do with the scanned skill.]] - rationale - gateway/security/skill_guard.py
-- [[_build_tree()]] - code - gateway/skills/scan.py
-- [[_print_findings()]] - code - gateway/skills/scan.py
-- [[main()_13]] - code - gateway/skills/scan.py
-- [[scan.py]] - code - gateway/skills/scan.py
+- [[.export_attack_report()]] - code - gateway/security/context_guard.py
+- [[.get_attack_summary()]] - code - gateway/security/context_guard.py
+- [[.get_session_risk_level()]] - code - gateway/security/context_guard.py
+- [[Any_35]] - code - gateway/security/context_guard.py
+- [[Export attack detection report.]] - rationale - gateway/security/context_guard.py
+- [[Get risk level for a session based on detected attacks.]] - rationale - gateway/security/context_guard.py
+- [[Get summary of detected attacks.]] - rationale - gateway/security/context_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,15 +24,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY_Community 133]]
-- 9 edges to [[_COMMUNITY_Community 924]]
-- 7 edges to [[_COMMUNITY_Community 281]]
-- 3 edges to [[_COMMUNITY_Community 83]]
-- 1 edge to [[_COMMUNITY_Community 2318]]
+- 3 edges to [[_COMMUNITY_Community 0]]
 
 ## Top bridge nodes
-- [[Recommendation]] - degree 27, connects to 4 communities
-- [[scan.py]] - degree 8, connects to 3 communities
-- [[Path_22]] - degree 6, connects to 2 communities
-- [[ScanResult_3]] - degree 5, connects to 2 communities
-- [[main()_13]] - degree 5, connects to 1 community
+- [[.get_attack_summary()]] - degree 5, connects to 1 community
+- [[.get_session_risk_level()]] - degree 3, connects to 1 community
+- [[.export_attack_report()]] - degree 3, connects to 1 community

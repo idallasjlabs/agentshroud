@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 99"
+community: "Community 2325"
 location: "L4740"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_99
+  - community/Community_2325
 ---
 
 # _send_owner_pending_notice must append Pending Egress Requests when queue non-em
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPendingNoticeIncludesEgressSection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_99
+#graphify/rationale #graphify/EXTRACTED #community/Community_2325

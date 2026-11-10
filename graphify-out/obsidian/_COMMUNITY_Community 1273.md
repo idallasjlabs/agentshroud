@@ -33,13 +33,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 626]]
-- 8 edges to [[_COMMUNITY_Community 2]]
-- 8 edges to [[_COMMUNITY_Community 845]]
+- 24 edges to [[_COMMUNITY_Community 2]]
 
 ## Top bridge nodes
-- [[.test_json_without_content_type_empty_text_with_caption_is_still_filtered()]] - degree 5, connects to 3 communities
-- [[.test_urlencoded_without_content_type_empty_text_with_message_is_still_filtered()]] - degree 5, connects to 3 communities
-- [[.test_json_without_content_type_empty_text_with_message_is_still_filtered()]] - degree 5, connects to 3 communities
-- [[.test_urlencoded_without_content_type_empty_text_with_content_is_still_filtered()]] - degree 5, connects to 3 communities
-- [[.test_json_without_content_type_empty_text_with_content_is_still_filtered()]] - degree 5, connects to 3 communities
+- [[.test_json_without_content_type_empty_text_with_caption_is_still_filtered()]] - degree 5, connects to 1 community
+- [[.test_urlencoded_without_content_type_empty_text_with_message_is_still_filtered()]] - degree 5, connects to 1 community
+- [[.test_json_without_content_type_empty_text_with_message_is_still_filtered()]] - degree 5, connects to 1 community
+- [[.test_urlencoded_without_content_type_empty_text_with_content_is_still_filtered()]] - degree 5, connects to 1 community
+- [[.test_json_without_content_type_empty_text_with_content_is_still_filtered()]] - degree 5, connects to 1 community

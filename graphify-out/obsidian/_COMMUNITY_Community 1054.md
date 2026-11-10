@@ -1,17 +1,13 @@
 ---
 type: community
-members: 10
+members: 6
 ---
 
 # Community 1054
 
-**Members:** 10 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[8. Performance & Testing]] - document - docs/papers/agentshroud-whitepaper.md
-- [[8.1 Test Coverage]] - document - docs/papers/agentshroud-whitepaper.md
-- [[8.2 Resource Footprint]] - document - docs/papers/agentshroud-whitepaper.md
-- [[8.3 Latency]] - document - docs/papers/agentshroud-whitepaper.md
 - [[Docker Test]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
 - [[GitHub Integration Test]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
 - [[Performance Test]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
@@ -31,6 +27,5 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 429]]
 
 ## Top bridge nodes
-- [[Phase 10 Validation Checklist]] - degree 6, connects to 1 community
-- [[8. Performance & Testing]] - degree 5, connects to 1 community
+- [[Phase 10 Validation Checklist]] - degree 6, connects to 2 communities
 - [[Phase 10 Validation Checklist_1]] - degree 5, connects to 1 community

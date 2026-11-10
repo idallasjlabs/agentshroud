@@ -1,17 +1,16 @@
 ---
 type: community
-members: 78
+members: 77
 ---
 
 # Community 64
 
-**Members:** 78 nodes
+**Members:** 77 nodes
 
 ## Members
+- [[.__init__()_26]] - code - gateway/proxy/mcp_inspector.py
 - [[.__post_init__()]] - code - gateway/proxy/mcp_proxy.py
-- [[.mcp_proxy_with_approval()]] - code - gateway/tests/test_enhanced_approval.py
 - [[.set_event_bus()]] - code - gateway/proxy/mcp_proxy.py
-- [[.shutdown()]] - code - gateway/proxy/mcp_proxy.py
 - [[.test_audit_entry_created()]] - code - gateway/tests/test_mcp_proxy.py
 - [[.test_chain_includes_blocked()]] - code - gateway/tests/test_mcp_proxy.py
 - [[.test_chain_valid_after_calls()]] - code - gateway/tests/test_mcp_proxy.py
@@ -32,9 +31,7 @@ members: 78
 - [[.test_injection_blocked()]] - code - gateway/tests/test_mcp_proxy.py
 - [[.test_inspection_result_threat_level()]] - code - gateway/tests/test_mcp_proxy.py
 - [[.test_large_base64_flagged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_low_risk_tool_allowed()]] - code - gateway/tests/test_enhanced_approval.py
 - [[.test_mixed_allowed_blocked_chain()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_owner_bypass()]] - code - gateway/tests/test_enhanced_approval.py
 - [[.test_passthrough_allows_everything()]] - code - gateway/tests/test_mcp_proxy.py
 - [[.test_passthrough_still_audits()]] - code - gateway/tests/test_mcp_proxy.py
 - [[.test_pii_redacted_in_params()]] - code - gateway/tests/test_mcp_proxy.py
@@ -51,17 +48,18 @@ members: 78
 - [[.test_stats_tracking()]] - code - gateway/tests/test_mcp_proxy.py
 - [[.test_unknown_server_default_allow()_1]] - code - gateway/tests/test_mcp_proxy.py
 - [[.test_workspace_contributor_parameter_violation_blocks_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
-- [[Clean shutdown — close all connections.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Create an MCP proxy with approval queue.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[End-to-end the engine wired into MCPProxy with a REAL approval queue     must n]] - rationale - gateway/tests/test_mcp_policy.py
 - [[FindingType]] - code - gateway/proxy/mcp_inspector.py
+- [[Inspects MCP tool calls and responses for security threats.]] - rationale - gateway/proxy/mcp_inspector.py
+- [[MCPInspector]] - code - gateway/proxy/mcp_inspector.py
 - [[MCPProxy]] - code - gateway/proxy/mcp_proxy.py
+- [[MCPProxy.process_tool_call]] - code - gateway/proxy/mcp_proxy.py
+- [[MCPProxy.process_tool_result]] - code - gateway/proxy/mcp_proxy.py
 - [[MCPToolCall]] - code - gateway/proxy/mcp_proxy.py
 - [[Main MCP proxy that intercepts tool calls and routes through security.      Tran]] - rationale - gateway/proxy/mcp_proxy.py
 - [[Mix of allowed, blocked, and result entries all in one chain.]] - rationale - gateway/tests/test_mcp_proxy.py
 - [[Regression result_inspection was possibly-unbound when the executed tool     re]] - rationale - gateway/tests/test_mcp_proxy.py
 - [[Represents an MCP tool_use request.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Test owner bypass for high-tier tools.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test that low-risk tools are allowed without approval.]] - rationale - gateway/tests/test_enhanced_approval.py
 - [[TestAllowDenyList]] - code - gateway/tests/test_mcp_proxy.py
 - [[TestChainIntegrityMultiple]] - code - gateway/tests/test_mcp_proxy.py
 - [[TestConfigParsing]] - code - gateway/tests/test_mcp_proxy.py
@@ -86,6 +84,7 @@ members: 78
 - [[proxy()_2]] - code - gateway/tests/test_mcp_proxy.py
 - [[strict_inspector()]] - code - gateway/tests/test_mcp_proxy.py
 - [[test_mcp_proxy.py]] - code - gateway/tests/test_mcp_proxy.py
+- [[test_mcp_proxy_real_queue_high_risk_never_executes_without_approval()]] - code - gateway/tests/test_mcp_policy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -95,28 +94,32 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 65 edges to [[_COMMUNITY_Community 54]]
-- 52 edges to [[_COMMUNITY_Community 132]]
-- 44 edges to [[_COMMUNITY_Community 230]]
-- 31 edges to [[_COMMUNITY_Community 329]]
-- 26 edges to [[_COMMUNITY_Community 184]]
-- 20 edges to [[_COMMUNITY_Community 59]]
-- 16 edges to [[_COMMUNITY_Community 35]]
-- 15 edges to [[_COMMUNITY_Community 30]]
-- 10 edges to [[_COMMUNITY_Community 941]]
-- 9 edges to [[_COMMUNITY_Community 232]]
-- 5 edges to [[_COMMUNITY_Community 1970]]
-- 5 edges to [[_COMMUNITY_Community 2042]]
-- 5 edges to [[_COMMUNITY_Community 2071]]
-- 3 edges to [[_COMMUNITY_Community 104]]
+- 84 edges to [[_COMMUNITY_Community 54]]
+- 72 edges to [[_COMMUNITY_Community 132]]
+- 32 edges to [[_COMMUNITY_Community 329]]
+- 28 edges to [[_COMMUNITY_Community 184]]
+- 21 edges to [[_COMMUNITY_Community 59]]
+- 16 edges to [[_COMMUNITY_Community 30]]
+- 15 edges to [[_COMMUNITY_Community 2038]]
+- 14 edges to [[_COMMUNITY_Community 35]]
+- 12 edges to [[_COMMUNITY_Community 941]]
+- 12 edges to [[_COMMUNITY_Community 1970]]
+- 9 edges to [[_COMMUNITY_Community 965]]
+- 6 edges to [[_COMMUNITY_Community 1942]]
+- 6 edges to [[_COMMUNITY_Community 2071]]
+- 6 edges to [[_COMMUNITY_Community 230]]
+- 3 edges to [[_COMMUNITY_Community 140]]
 - 2 edges to [[_COMMUNITY_Community 8]]
-- 2 edges to [[_COMMUNITY_Community 978]]
-- 2 edges to [[_COMMUNITY_Community 140]]
-- 1 edge to [[_COMMUNITY_Community 24]]
+- 2 edges to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 978]]
+- 1 edge to [[_COMMUNITY_Community 254]]
+- 1 edge to [[_COMMUNITY_Community 707]]
+- 1 edge to [[_COMMUNITY_Community 2032]]
+- 1 edge to [[_COMMUNITY_Community 84]]
 
 ## Top bridge nodes
-- [[MCPProxy]] - degree 89, connects to 16 communities
+- [[MCPProxy]] - degree 89, connects to 17 communities
 - [[MCPToolCall]] - degree 102, connects to 15 communities
+- [[MCPInspector]] - degree 77, connects to 10 communities
 - [[test_mcp_proxy.py]] - degree 46, connects to 10 communities
-- [[ThreatLevel]] - degree 28, connects to 9 communities
-- [[FindingType]] - degree 27, connects to 8 communities
+- [[ThreatLevel]] - degree 28, connects to 8 communities

@@ -1,48 +1,70 @@
 ---
 type: community
-members: 35
+members: 57
 ---
 
 # Community 146
 
-**Members:** 35 nodes
+**Members:** 57 nodes
 
 ## Members
-- [[.check_drift()]] - code - gateway/security/drift_detector.py
-- [[.config_hash()]] - code - gateway/security/drift_detector.py
-- [[.from_dict()_5]] - code - gateway/security/drift_detector.py
-- [[.get_baseline()]] - code - gateway/security/drift_detector.py
-- [[.set_baseline()]] - code - gateway/security/drift_detector.py
-- [[.setup_method()_30]] - code - gateway/tests/test_security_hardening.py
-- [[.teardown_method()_7]] - code - gateway/tests/test_security_hardening.py
-- [[.test_acknowledge_alert()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_alerts_persisted()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_config_hash_changes()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_config_hash_consistency()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_image_change()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_new_capability()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_new_env_var()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_new_mount()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_no_baseline_no_alerts()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_no_drift()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_privileged_escalation()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_read_only_disabled()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_removed_capability()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_seccomp_drift()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_set_and_get_baseline()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_simultaneous_baseline_and_config_change()]] - code - gateway/tests/test_security_hardening.py
-- [[.to_dict()_8]] - code - gateway/security/drift_detector.py
-- [[Compare current config against baseline, return any drift alerts.]] - rationale - gateway/security/drift_detector.py
-- [[ContainerSnapshot]] - code - gateway/security/drift_detector.py
-- [[Drift detector catches container config changes during operation.]] - rationale - gateway/tests/test_security_integration.py
-- [[DriftAlert]] - code - gateway/security/drift_detector.py
-- [[Retrieve baseline snapshot for a container.]] - rationale - gateway/security/drift_detector.py
-- [[SHA-256 hash of the config for quick comparison.]] - rationale - gateway/security/drift_detector.py
-- [[Store a known-good baseline configuration. Returns config hash.]] - rationale - gateway/security/drift_detector.py
-- [[TestDriftDetector]] - code - gateway/tests/test_security_hardening.py
-- [[Verify drift is detected even with rapid changes.]] - rationale - gateway/tests/test_security_hardening.py
-- [[drift_detector.py]] - code - gateway/security/drift_detector.py
-- [[test_drift_detection_in_pipeline()]] - code - gateway/tests/test_security_integration.py
+- [[.__init__()_120]] - code - gateway/security/subagent_monitor.py
+- [[._log_event()_1]] - code - gateway/security/subagent_monitor.py
+- [[.check_tool_usage()]] - code - gateway/security/subagent_monitor.py
+- [[.deregister()_1]] - code - gateway/security/subagent_monitor.py
+- [[.get_active()]] - code - gateway/security/subagent_monitor.py
+- [[.get_audit_log()_6]] - code - gateway/security/subagent_monitor.py
+- [[.get_flagged_events()]] - code - gateway/security/subagent_monitor.py
+- [[.kill_agent()]] - code - gateway/security/subagent_monitor.py
+- [[.kill_all()]] - code - gateway/security/subagent_monitor.py
+- [[.register_spawn()]] - code - gateway/security/subagent_monitor.py
+- [[.test_audit_filterable_by_agent()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_audit_has_timestamps()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_default_mode_is_enforce()_7]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_deregister_frees_slot()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_deregister_logged()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_deregister_subagent()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_enforce_mode_blocks_over_limit()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_enforce_mode_blocks_trust_violation()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_generous_concurrent_default()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_kill_logs_event()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_kill_specific_agent()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_kill_switch_marks_all_for_termination()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_kill_switch_propagates_to_children()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_list_active_subagents()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_monitor_mode_allows_all_tools()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_monitor_mode_allows_over_limit()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_nested_subagent_inherits_chain()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_register_subagent()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_spawn_logged()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_subagent_cannot_exceed_parent()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_subagent_info_has_spawn_time()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_subagent_inherits_parent_trust()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_tool_usage_logged()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_tool_within_trust_allowed()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_trust_inheritance_default_on()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_trust_violation_flagged()]] - code - gateway/tests/test_subagent_monitor.py
+- [[Default mode is enforce after v0.8.0 enforcement hardening._2]] - rationale - gateway/tests/test_subagent_monitor.py
+- [[If sub-agent tries tool above its trust, flag it.]] - rationale - gateway/tests/test_subagent_monitor.py
+- [[In monitor mode, even trust violations are allowed (just flagged).]] - rationale - gateway/tests/test_subagent_monitor.py
+- [[Monitor mode flags but allows.]] - rationale - gateway/tests/test_subagent_monitor.py
+- [[SubagentInfo]] - code - gateway/security/subagent_monitor.py
+- [[SubagentMonitor]] - code - gateway/security/subagent_monitor.py
+- [[TestAuditTrail_2]] - code - gateway/tests/test_subagent_monitor.py
+- [[TestConcurrentLimits]] - code - gateway/tests/test_subagent_monitor.py
+- [[TestKillSwitch]] - code - gateway/tests/test_subagent_monitor.py
+- [[TestPermissionMonitoring]] - code - gateway/tests/test_subagent_monitor.py
+- [[TestSubagentMonitorConfig]] - code - gateway/tests/test_subagent_monitor.py
+- [[TestSubagentTracking]] - code - gateway/tests/test_subagent_monitor.py
+- [[TestTrustInheritance]] - code - gateway/tests/test_subagent_monitor.py
+- [[ToolCheckResult]] - code - gateway/security/subagent_monitor.py
+- [[default_config()_4]] - code - gateway/tests/test_subagent_monitor.py
+- [[monitor()_1]] - code - gateway/tests/test_subagent_monitor.py
+- [[monitor_config()_2]] - code - gateway/tests/test_subagent_monitor.py
+- [[strict_config()_2]] - code - gateway/tests/test_subagent_monitor.py
+- [[strict_monitor()]] - code - gateway/tests/test_subagent_monitor.py
+- [[subagent_monitor.py]] - code - gateway/security/subagent_monitor.py
+- [[test_subagent_monitor.py]] - code - gateway/tests/test_subagent_monitor.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,31 +74,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 31 edges to [[_COMMUNITY_Community 0]]
-- 13 edges to [[_COMMUNITY_Community 52]]
-- 3 edges to [[_COMMUNITY_Community 11]]
-- 2 edges to [[_COMMUNITY_Community 162]]
-- 2 edges to [[_COMMUNITY_Community 93]]
-- 2 edges to [[_COMMUNITY_Community 477]]
-- 2 edges to [[_COMMUNITY_Community 7]]
-- 2 edges to [[_COMMUNITY_Community 17]]
-- 1 edge to [[_COMMUNITY_Community 489]]
-- 1 edge to [[_COMMUNITY_Community 978]]
-- 1 edge to [[_COMMUNITY_Community 531]]
-- 1 edge to [[_COMMUNITY_Community 196]]
-- 1 edge to [[_COMMUNITY_Community 41]]
-- 1 edge to [[_COMMUNITY_Community 509]]
-- 1 edge to [[_COMMUNITY_Community 431]]
-- 1 edge to [[_COMMUNITY_Community 1119]]
-- 1 edge to [[_COMMUNITY_Community 888]]
-- 1 edge to [[_COMMUNITY_Community 792]]
-- 1 edge to [[_COMMUNITY_Community 947]]
-- 1 edge to [[_COMMUNITY_Community 24]]
-- 1 edge to [[_COMMUNITY_Community 22]]
+- 27 edges to [[_COMMUNITY_Community 0]]
+- 24 edges to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 8]]
+- 1 edge to [[_COMMUNITY_Community 307]]
+- 1 edge to [[_COMMUNITY_Community 102]]
+- 1 edge to [[_COMMUNITY_Community 5]]
+- 1 edge to [[_COMMUNITY_Community 76]]
+- 1 edge to [[_COMMUNITY_Community 181]]
 
 ## Top bridge nodes
-- [[ContainerSnapshot]] - degree 64, connects to 14 communities
-- [[TestDriftDetector]] - degree 35, connects to 9 communities
-- [[drift_detector.py]] - degree 6, connects to 4 communities
-- [[.test_simultaneous_baseline_and_config_change()]] - degree 4, connects to 2 communities
-- [[test_drift_detection_in_pipeline()]] - degree 4, connects to 2 communities
+- [[subagent_monitor.py]] - degree 10, connects to 6 communities
+- [[SubagentMonitor]] - degree 46, connects to 3 communities
+- [[test_subagent_monitor.py]] - degree 15, connects to 2 communities
+- [[TestTrustInheritance]] - degree 9, connects to 2 communities
+- [[TestSubagentTracking]] - degree 8, connects to 2 communities

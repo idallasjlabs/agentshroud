@@ -1,24 +1,21 @@
 ---
 type: community
-members: 54
+members: 51
 ---
 
 # Community 116
 
-**Members:** 54 nodes
+**Members:** 51 nodes
 
 ## Members
 - [[.__init__()_137]] - code - gateway/tests/test_a2a_proxy.py
 - [[.__init__()_139]] - code - gateway/tests/test_a2a_proxy.py
-- [[.__post_init__()_4]] - code - gateway/security/differential_pii_detector.py
 - [[.forward()_2]] - code - gateway/tests/test_a2a_proxy.py
 - [[A SendMessage containing PII must have it redacted in what's forwarded     to He]] - rationale - gateway/tests/test_a2a_proxy.py
 - [[A filedata Part must not be silently dropped or mis-scanned as text —     it's]] - rationale - gateway/tests/test_a2a_proxy.py
 - [[A2APolicyEngine_3]] - code - gateway/tests/test_a2a_proxy.py
 - [[A2AProxy_1]] - code - gateway/tests/test_a2a_proxy.py
 - [[An unparseable request must be rejected through the same     process_inbound_req]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[Configuration for DifferentialPIIDetector.      Attributes         tool_result_]] - rationale - gateway/security/differential_pii_detector.py
-- [[DifferentialPIIConfig]] - code - gateway/security/differential_pii_detector.py
 - [[GET .well-knownagent-card.json must pass through with NO authpeer     require]] - rationale - gateway/tests/test_a2a_proxy.py
 - [[Pre-1.0 peers send lowercasepath-style method names — Hermes accepts     both f]] - rationale - gateway/tests/test_a2a_proxy.py
 - [[Records what it was asked to forward; returns a canned response.]] - rationale - gateway/tests/test_a2a_proxy.py
@@ -71,8 +68,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 22 edges to [[_COMMUNITY_Community 271]]
-- 22 edges to [[_COMMUNITY_Community 56]]
+- 21 edges to [[_COMMUNITY_Community 271]]
+- 14 edges to [[_COMMUNITY_Community 56]]
 - 11 edges to [[_COMMUNITY_Community 307]]
 
 ## Top bridge nodes

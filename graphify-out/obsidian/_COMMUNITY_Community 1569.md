@@ -1,15 +1,20 @@
 ---
 type: community
-members: 2
+members: 7
 ---
 
 # Community 1569
 
-**Members:** 2 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[.test_timeout_error_is_sanitized_for_json_message_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Timeout rewrites should apply when JSON payload uses message field.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Config Location]] - document - docs/vault/05 - Dependencies/openclaw.md
+- [[Key Intercepted Paths]] - document - docs/vault/05 - Dependencies/openclaw.md
+- [[OpenClaw]] - document - docs/vault/05 - Dependencies/openclaw.md
+- [[Purpose_188]] - document - docs/vault/05 - Dependencies/openclaw.md
+- [[Related Notes_43]] - document - docs/vault/05 - Dependencies/openclaw.md
+- [[Role in AgentShroud]] - document - docs/vault/05 - Dependencies/openclaw.md
+- [[Version Note]] - document - docs/vault/05 - Dependencies/openclaw.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 626]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 845]]
+- 1 edge to [[_COMMUNITY_Community 628]]
 
 ## Top bridge nodes
-- [[.test_timeout_error_is_sanitized_for_json_message_field()]] - degree 4, connects to 3 communities
+- [[OpenClaw]] - degree 7, connects to 1 community

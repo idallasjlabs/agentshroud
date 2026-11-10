@@ -1,36 +1,33 @@
 ---
 type: community
-members: 23
+members: 20
 ---
 
 # Community 762
 
-**Members:** 23 nodes
+**Members:** 20 nodes
 
 ## Members
-- [[.test_affected_packages_count_shown()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_contains_cve_ids()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_contains_header()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_contains_package_names()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_contains_severity_counts()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_error_report_shows_error_message()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_failed_send_does_not_write_stamp_or_mark_sent_date()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_fixed_version_shown()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_returns_summary_without_token()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_sends_telegram_on_success()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_status_clean_when_no_critical_high()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_status_critical_when_critical_present()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_total_vulnerability_count_shown()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_trivy_error_still_sends_error_report()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_zero_count_severity_omitted()]] - code - gateway/tests/test_daily_cve_report.py
-- [[Build a minimal parsed Trivy report.]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[Format a Trivy scan result into a Telegram-ready Markdown message.      Args]] - rationale - gateway/security/daily_cve_report.py
-- [[TestFormatCveReport]] - code - gateway/tests/test_daily_cve_report.py
-- [[TestRunAndSendCveReport]] - code - gateway/tests/test_daily_cve_report.py
-- [[TestRunAndSendCveReportFailedDeliveryNotMarkedSent]] - code - gateway/tests/test_daily_cve_report.py
-- [[_make_error_report()]] - code - gateway/tests/test_daily_cve_report.py
-- [[_make_report()]] - code - gateway/tests/test_daily_cve_report.py
-- [[format_cve_report()]] - code - gateway/security/daily_cve_report.py
+- [[.test_collaboration_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_execute_verb_is_blocked()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_file_query_is_blocked()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_formatting_trick_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_greeting_bypasses_interrogative_requirement()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_greeting_good_morning_is_safe()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_greeting_hello_is_safe()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_greeting_hey_is_safe()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_greeting_hi_is_safe()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_no_match_without_tokens()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_password_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_pii_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_protection_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_refuse_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_restrict_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_sanitiz_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_security_model_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_what_can_you_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Classifier for conceptual collaborator questions.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestLooksLikeSafeCollaboratorInfoQuery]] - code - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,13 +37,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 736]]
-- 6 edges to [[_COMMUNITY_Community 127]]
-- 1 edge to [[_COMMUNITY_Community 131]]
+- 2 edges to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 14]]
+- 1 edge to [[_COMMUNITY_Community 99]]
+- 1 edge to [[_COMMUNITY_Community 2325]]
 
 ## Top bridge nodes
-- [[format_cve_report()]] - degree 17, connects to 3 communities
-- [[_make_report()]] - degree 15, connects to 1 community
-- [[TestFormatCveReport]] - degree 12, connects to 1 community
-- [[TestRunAndSendCveReport]] - degree 4, connects to 1 community
-- [[_make_error_report()]] - degree 3, connects to 1 community
+- [[TestLooksLikeSafeCollaboratorInfoQuery]] - degree 24, connects to 4 communities

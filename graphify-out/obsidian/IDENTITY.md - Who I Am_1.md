@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/agents/openclaw-identity.md"
 type: "document"
-community: "Community 809"
+community: "Community 766"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_809
+  - community/Community_766
 ---
 
 # IDENTITY.md - Who I Am
@@ -18,4 +18,4 @@ tags:
 - [[My Role_1]] - `contains` [EXTRACTED]
 - [[openclaw-identity_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_809
+#graphify/document #graphify/EXTRACTED #community/Community_766

@@ -1,36 +1,32 @@
 ---
 type: community
-members: 23
+members: 19
 ---
 
 # Community 884
 
-**Members:** 23 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[.test_minimal_construction()]] - code - gateway/tests/test_soc_models.py
-- [[.test_optional_fields_default_none()]] - code - gateway/tests/test_soc_models.py
-- [[.test_severity_ordering()_1]] - code - gateway/tests/test_soc_models.py
-- [[Any_66]] - code - gateway/soc/event_adapter.py
-- [[Best-effort conversion of arbitrary event dict to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
-- [[Best-effort mapping of arbitrary severity strings to Severity enum.]] - rationale - gateway/soc/event_adapter.py
-- [[Collect recent SecurityEvents from AuditStore (async-safe read).]] - rationale - gateway/soc/event_adapter.py
-- [[Convert AuditEvent (from AuditStore) to SecurityEvent.      AuditEvent fields e]] - rationale - gateway/soc/event_adapter.py
-- [[Convert a PipelineResult to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
-- [[Convert an AnomalyAlert (from EgressMonitorSOCCorrelation) to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
-- [[Convert an EgressAttempt or egress dict to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
-- [[SecurityEvent]] - code - gateway/soc/event_adapter.py
-- [[SecurityEvent_1]] - code - gateway/soc/models.py
-- [[Severity_1]] - code - gateway/soc/event_adapter.py
-- [[TestSecurityEvent]] - code - gateway/tests/test_soc_models.py
-- [[_map_severity()]] - code - gateway/soc/event_adapter.py
-- [[collect_recent_events()]] - code - gateway/soc/event_adapter.py
-- [[event_adapter.py]] - code - gateway/soc/event_adapter.py
-- [[from_anomaly_alert()]] - code - gateway/soc/event_adapter.py
-- [[from_audit_chain_entry()]] - code - gateway/soc/event_adapter.py
-- [[from_dict()]] - code - gateway/soc/event_adapter.py
-- [[from_egress_attempt()]] - code - gateway/soc/event_adapter.py
-- [[from_pipeline_result()]] - code - gateway/soc/event_adapter.py
+- [[.test_is_high_risk_false_for_web_search()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_is_high_risk_true_for_email_sending()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_is_high_risk_true_for_external_api_calls()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_is_high_risk_true_for_file_deletion()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_is_high_risk_true_for_skill_installation()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_member_resolves_to_member_role()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_non_member_defaults_to_readonly()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_owner_resolves_to_owner_role()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_readonly_user_resolves_to_readonly_role()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_unknown_group_defaults_to_readonly()]] - code - gateway/tests/test_group_rbac.py
+- [[GroupRoleResolver correctly maps Telegram user IDs to per-group roles.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only user resolves to GroupRole.READ_ONLY.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Regular member resolves to GroupRole.MEMBER.]] - rationale - gateway/tests/test_group_rbac.py
+- [[TestGroupRoleResolver]] - code - gateway/tests/test_group_rbac.py
+- [[Unknown group_chat_id defaults to GroupRole.READ_ONLY.]] - rationale - gateway/tests/test_group_rbac.py
+- [[User not in role map defaults to GroupRole.READ_ONLY (deny-by-default).]] - rationale - gateway/tests/test_group_rbac.py
+- [[email_sending is recognized as a high-risk tool.]] - rationale - gateway/tests/test_group_rbac.py
+- [[owner_in_group resolves to GroupRole.OWNER.]] - rationale - gateway/tests/test_group_rbac.py
+- [[web_search is NOT a high-risk tool.]] - rationale - gateway/tests/test_group_rbac.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,16 +36,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 8]]
-- 5 edges to [[_COMMUNITY_Community 51]]
-- 4 edges to [[_COMMUNITY_Community 10]]
-- 3 edges to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 20]]
-- 1 edge to [[_COMMUNITY_Community 82]]
+- 3 edges to [[_COMMUNITY_Community 33]]
+- 1 edge to [[_COMMUNITY_Community 196]]
+- 1 edge to [[_COMMUNITY_Community 6]]
+- 1 edge to [[_COMMUNITY_Community 194]]
+- 1 edge to [[_COMMUNITY_Community 11]]
 
 ## Top bridge nodes
-- [[SecurityEvent_1]] - degree 20, connects to 5 communities
-- [[collect_recent_events()]] - degree 10, connects to 3 communities
-- [[event_adapter.py]] - degree 11, connects to 2 communities
-- [[Any_66]] - degree 9, connects to 1 community
-- [[SecurityEvent]] - degree 8, connects to 1 community
+- [[TestGroupRoleResolver]] - degree 18, connects to 5 communities

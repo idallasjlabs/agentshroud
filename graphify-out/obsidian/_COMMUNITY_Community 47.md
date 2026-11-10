@@ -1,11 +1,11 @@
 ---
 type: community
-members: 48
+members: 51
 ---
 
 # Community 47
 
-**Members:** 48 nodes
+**Members:** 51 nodes
 
 ## Members
 - [[.__init__()_158]] - code - gateway/tests/test_forward_stream.py
@@ -13,12 +13,14 @@ members: 48
 - [[.process_outbound()_6]] - code - gateway/tests/test_forward_stream.py
 - [[.process_outbound()_7]] - code - gateway/tests/test_forward_stream.py
 - [[2-sentence sliding window over `sentences` each window (previous +     current,]] - rationale - gateway/ingest_api/routes/forward.py
+- [[AgentTarget_2]] - code - gateway/ingest_api/routes/forward.py
 - [[Buffer streamed text deltas and yield each complete sentence as soon as     its]] - rationale - gateway/ingest_api/routes/forward.py
 - [[Build a mock app_state whose router streams `sentences_out` as raw     text delt]] - rationale - gateway/tests/test_forward_stream.py
 - [[ForwardError]] - code - gateway/ingest_api/router.py
 - [[Mock pipeline that blocks any window containing the word 'secret'.]] - rationale - gateway/tests/test_forward_stream.py
 - [[Mock pipeline whose process_outbound returns the window text unchanged     — ver]] - rationale - gateway/tests/test_forward_stream.py
 - [[Raised when forwarding to agent fails]] - rationale - gateway/ingest_api/router.py
+- [[Resolve the outbound trust level for `request`, shared by the blocking     and s]] - rationale - gateway/ingest_api/routes/forward.py
 - [[Sliding-window sentinel-joined security filter for streaming voice pipeline]] - concept - gateway/tests/test_forward_stream.py
 - [[_BlockingPipeline]] - code - gateway/tests/test_forward_stream.py
 - [[_PassthroughPipeline]] - code - gateway/tests/test_forward_stream.py
@@ -28,6 +30,7 @@ members: 48
 - [[_parse_sse_events()]] - code - gateway/tests/test_forward_stream.py
 - [[_post_stream()]] - code - gateway/tests/test_forward_stream.py
 - [[_request()]] - code - gateway/tests/test_forward_stream.py
+- [[_resolve_user_trust_level()]] - code - gateway/ingest_api/routes/forward.py
 - [[_sentences_from_deltas()]] - code - gateway/ingest_api/routes/forward.py
 - [[_target()]] - code - gateway/tests/test_forward_stream.py
 - [[test_filtered_stream_blocked_final_sentence_yields_nothing()]] - code - gateway/tests/test_forward_stream.py
@@ -65,18 +68,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_Community 2154]]
-- 10 edges to [[_COMMUNITY_Community 34]]
+- 9 edges to [[_COMMUNITY_Community 2154]]
+- 8 edges to [[_COMMUNITY_Community 325]]
 - 5 edges to [[_COMMUNITY_Community 92]]
-- 4 edges to [[_COMMUNITY_Community 37]]
+- 4 edges to [[_COMMUNITY_Community 1127]]
+- 2 edges to [[_COMMUNITY_Community 707]]
 - 2 edges to [[_COMMUNITY_Community 861]]
-- 1 edge to [[_COMMUNITY_Community 108]]
-- 1 edge to [[_COMMUNITY_Community 7]]
-- 1 edge to [[_COMMUNITY_Community 104]]
-- 1 edge to [[_COMMUNITY_Community 2030]]
+- 1 edge to [[_COMMUNITY_Community 152]]
+- 1 edge to [[_COMMUNITY_Community 80]]
+- 1 edge to [[_COMMUNITY_Community 34]]
+- 1 edge to [[_COMMUNITY_Community 6]]
+- 1 edge to [[_COMMUNITY_Community 181]]
 
 ## Top bridge nodes
-- [[ForwardError]] - degree 16, connects to 7 communities
+- [[ForwardError]] - degree 16, connects to 8 communities
 - [[test_forward_stream.py]] - degree 41, connects to 3 communities
 - [[_make_stream_app_state()]] - degree 14, connects to 2 communities
 - [[_PassthroughPipeline]] - degree 12, connects to 2 communities

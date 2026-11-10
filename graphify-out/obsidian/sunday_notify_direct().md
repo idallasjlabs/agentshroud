@@ -2,7 +2,7 @@
 source_file: "scripts/lib/sunday-scan.sh"
 type: "code"
 community: "Community 869"
-location: "L514"
+location: "L722"
 tags:
   - graphify/code
   - graphify/EXTRACTED

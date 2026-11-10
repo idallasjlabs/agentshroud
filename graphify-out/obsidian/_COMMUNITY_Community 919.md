@@ -1,29 +1,22 @@
 ---
 type: community
-members: 19
+members: 12
 ---
 
 # Community 919
 
-**Members:** 19 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[.guard()]] - code - gateway/tests/test_context_guard.py
-- [[.test_empty_provenance_for_unknown_session()]] - code - gateway/tests/test_context_guard.py
 - [[.test_few_repetitions_allowed()]] - code - gateway/tests/test_context_guard.py
 - [[.test_normal_message_allowed()]] - code - gateway/tests/test_context_guard.py
 - [[.test_normal_sized_message_allowed()]] - code - gateway/tests/test_context_guard.py
 - [[.test_oversized_message_blocked()]] - code - gateway/tests/test_context_guard.py
 - [[.test_repeated_pattern_flagged()]] - code - gateway/tests/test_context_guard.py
-- [[.test_segment_hash_integrity()]] - code - gateway/tests/test_context_guard.py
-- [[.test_segment_provenance_ordering()]] - code - gateway/tests/test_context_guard.py
-- [[.test_segment_tagging_basic()]] - code - gateway/tests/test_context_guard.py
-- [[.test_separate_sessions_isolated()]] - code - gateway/tests/test_context_guard.py
 - [[.test_short_repetitions_allowed()]] - code - gateway/tests/test_context_guard.py
 - [[Check if message should be allowed, with detailed findings.      Args         t]] - rationale - gateway/security/context_guard.py
 - [[Get the global context guard instance.]] - rationale - gateway/security/context_guard.py
 - [[TestCheckMessage]] - code - gateway/tests/test_context_guard.py
-- [[TestSourceTagging]] - code - gateway/tests/test_context_guard.py
 - [[check_message()]] - code - gateway/security/context_guard.py
 - [[get_context_guard()]] - code - gateway/security/context_guard.py
 - [[test_context_guard.py]] - code - gateway/tests/test_context_guard.py
@@ -36,14 +29,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 72]]
-- 3 edges to [[_COMMUNITY_Community 22]]
-- 2 edges to [[_COMMUNITY_Community 344]]
-- 1 edge to [[_COMMUNITY_Community 115]]
+- 3 edges to [[_COMMUNITY_Community 344]]
+- 3 edges to [[_COMMUNITY_Community 0]]
+- 2 edges to [[_COMMUNITY_Community 22]]
+- 1 edge to [[_COMMUNITY_Community 1927]]
 
 ## Top bridge nodes
-- [[check_message()]] - degree 11, connects to 2 communities
+- [[test_context_guard.py]] - degree 5, connects to 3 communities
 - [[TestCheckMessage]] - degree 9, connects to 2 communities
-- [[TestSourceTagging]] - degree 9, connects to 2 communities
-- [[test_context_guard.py]] - degree 5, connects to 2 communities
 - [[get_context_guard()]] - degree 4, connects to 2 communities
+- [[check_message()]] - degree 11, connects to 1 community

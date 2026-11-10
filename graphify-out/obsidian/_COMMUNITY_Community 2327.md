@@ -21,10 +21,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 626]]
-- 2 edges to [[_COMMUNITY_Community 2]]
-- 2 edges to [[_COMMUNITY_Community 845]]
+- 6 edges to [[_COMMUNITY_Community 2]]
 
 ## Top bridge nodes
-- [[.test_proxy_request_suppresses_startup_notice_emoji_variants()]] - degree 5, connects to 3 communities
-- [[.test_proxy_request_suppresses_starting_notice_emoji_variants()]] - degree 4, connects to 3 communities
+- [[.test_proxy_request_suppresses_startup_notice_emoji_variants()]] - degree 5, connects to 1 community
+- [[.test_proxy_request_suppresses_starting_notice_emoji_variants()]] - degree 4, connects to 1 community

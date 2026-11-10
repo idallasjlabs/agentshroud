@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "Community 61"
+community: "Community 1070"
 location: "L184"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_61
+  - community/Community_1070
 ---
 
 # Read-only member denied external_api_calls in group context.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_readonly_denied_external_api_calls_in_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_61
+#graphify/rationale #graphify/EXTRACTED #community/Community_1070

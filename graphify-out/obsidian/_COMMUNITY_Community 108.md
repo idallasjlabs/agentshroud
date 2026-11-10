@@ -1,53 +1,88 @@
 ---
 type: community
-members: 40
+members: 75
 ---
 
 # Community 108
 
-**Members:** 40 nodes
+**Members:** 75 nodes
 
 ## Members
-- [[.analyze_content()]] - code - gateway/security/browser_security.py
-- [[.analyze_screenshot()]] - code - gateway/security/browser_security.py
-- [[.can_enter_credentials()]] - code - gateway/security/browser_security.py
-- [[.check_url_reputation()]] - code - gateway/security/browser_security.py
-- [[.test_data_uri_blocked()]] - code - gateway/tests/test_browser_security.py
-- [[.test_excessive_subdomains()]] - code - gateway/tests/test_browser_security.py
-- [[.test_fake_captcha()]] - code - gateway/tests/test_browser_security.py
-- [[.test_fake_dialog_detected()]] - code - gateway/tests/test_browser_security.py
-- [[.test_fake_windows_alert()]] - code - gateway/tests/test_browser_security.py
-- [[.test_homograph_attack()]] - code - gateway/tests/test_browser_security.py
-- [[.test_hook_can_flag_threat()]] - code - gateway/tests/test_browser_security.py
-- [[.test_http_blocked()]] - code - gateway/tests/test_browser_security.py
-- [[.test_https_allowed()]] - code - gateway/tests/test_browser_security.py
-- [[.test_ip_address_url()]] - code - gateway/tests/test_browser_security.py
-- [[.test_ip_blocked_for_credentials()]] - code - gateway/tests/test_browser_security.py
-- [[.test_known_phishing_pattern()]] - code - gateway/tests/test_browser_security.py
-- [[.test_legitimate_url()]] - code - gateway/tests/test_browser_security.py
-- [[.test_localhost_allowed()]] - code - gateway/tests/test_browser_security.py
-- [[.test_multiple_threats_aggregated()]] - code - gateway/tests/test_browser_security.py
-- [[.test_no_hook_returns_none_threat()]] - code - gateway/tests/test_browser_security.py
-- [[.test_safe_content_passes()]] - code - gateway/tests/test_browser_security.py
-- [[.test_screenshot_hook_registered()]] - code - gateway/tests/test_browser_security.py
-- [[.test_suspicious_domain_blocked()]] - code - gateway/tests/test_browser_security.py
-- [[.test_suspicious_subdomain()]] - code - gateway/tests/test_browser_security.py
-- [[.test_tech_support_scam()]] - code - gateway/tests/test_browser_security.py
-- [[.test_urgent_action_required()]] - code - gateway/tests/test_browser_security.py
-- [[CredentialEntryBlocked]] - code - gateway/security/browser_security.py
-- [[Exception]] - code
-- [[PhishingURLDetected]] - code - gateway/security/browser_security.py
-- [[SocialEngineeringDetected]] - code - gateway/security/browser_security.py
-- [[TestCredentialProtection]] - code - gateway/tests/test_browser_security.py
-- [[TestScreenshotAnalysis]] - code - gateway/tests/test_browser_security.py
-- [[TestSocialEngineeringDetection]] - code - gateway/tests/test_browser_security.py
-- [[TestURLReputation]] - code - gateway/tests/test_browser_security.py
-- [[ThreatAssessment]] - code - gateway/security/browser_security.py
-- [[ThreatLevel_1]] - code - gateway/security/browser_security.py
-- [[Wu et al. 2026 (arXiv2601.07263) — Browser-based agent social engineering attacks]] - paper - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[browser_security.py]] - code - gateway/security/browser_security.py
-- [[guard()]] - code - gateway/tests/test_browser_security.py
-- [[test_browser_security.py]] - code - gateway/tests/test_browser_security.py
+- [[.__init__()_6]] - code - gateway/approval_queue/store.py
+- [[._notify_telegram()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[._timeout_request()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[.broadcast()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[.close()_4]] - code - gateway/approval_queue/store.py
+- [[.decide()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[.get_item()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[.get_pending()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[.initialize()_1]] - code - gateway/approval_queue/store.py
+- [[.load_all()]] - code - gateway/approval_queue/store.py
+- [[.load_pending()]] - code - gateway/approval_queue/store.py
+- [[.save()]] - code - gateway/approval_queue/store.py
+- [[.submit()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[.submit_tool_request()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[.test_100_concurrent_submissions()]] - code - gateway/tests/test_approval_stress.py
+- [[.test_store_expires_old_items()]] - code - gateway/tests/test_approval_stress.py
+- [[.test_store_persists_across_reopen()]] - code - gateway/tests/test_approval_stress.py
+- [[.test_store_save_and_load()]] - code - gateway/tests/test_approval_stress.py
+- [[.test_store_update_status()]] - code - gateway/tests/test_approval_stress.py
+- [[.update_status()]] - code - gateway/approval_queue/store.py
+- [[100 concurrent approval requests.]] - rationale - gateway/tests/test_approval_stress.py
+- [[A pending approval request in the queue]] - rationale - gateway/ingest_api/models.py
+- [[Add an action to the approval queue with policy-based timeout.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Any]] - code - gateway/approval_queue/enhanced_queue.py
+- [[ApprovalQueueItem]] - code - gateway/approval_queue/enhanced_queue.py
+- [[ApprovalQueueItem_2]] - code - gateway/approval_queue/store.py
+- [[ApprovalQueueItem_3]] - code - gateway/ingest_api/models.py
+- [[ApprovalQueueItem_4]] - code - gateway/tests/test_approval_store.py
+- [[ApprovalRequest]] - code - gateway/approval_queue/enhanced_queue.py
+- [[ApprovalStore_1]] - code - gateway/approval_queue/store.py
+- [[AuditStore same idempotency contract as ApprovalStore.]] - rationale - gateway/tests/test_approval_store.py
+- [[Auto-expire old requests.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Close the database connection.]] - rationale - gateway/approval_queue/store.py
+- [[Deciding an item persists the new status.]] - rationale - gateway/tests/test_approval_store.py
+- [[Expired items are marked expired during load_pending.]] - rationale - gateway/tests/test_approval_store.py
+- [[Fetch a single queue item by ID.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Get all pending approval items.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Handle timeout for a pending request.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Insert or replace an approval item.]] - rationale - gateway/approval_queue/store.py
+- [[Items saved by one store instance are visible to another.]] - rationale - gateway/tests/test_approval_store.py
+- [[Items saved to store can be reloaded.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Items survive store closereopen cycle.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Load all items (for auditdebugging).]] - rationale - gateway/approval_queue/store.py
+- [[Load all pending (non-expired, non-decided) items.          Items whose expires_]] - rationale - gateway/approval_queue/store.py
+- [[Open the database and create the schema. Idempotent a second call         must]] - rationale - gateway/approval_queue/store.py
+- [[Path]] - code - gateway/approval_queue/store.py
+- [[Path_24]] - code - gateway/tests/test_approval_store.py
+- [[Process an approval decision.          IEC 62443 FR1 approving a high-risk acti]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Queue persistence across restart.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c]] - rationale - gateway/tests/test_approval_store.py
+- [[SQLite-backed persistence for approval queue items.]] - rationale - gateway/approval_queue/store.py
+- [[Send Telegram notification for approval requests.          Sends a formatted mes]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Send a JSON message to all connected WebSocket clients.          SCRUM-154 boun]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Simulates a full restart cycle save, close, reopen, verify.]] - rationale - gateway/tests/test_approval_store.py
+- [[Status updates persist.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Store marks expired items on load.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Submit 100 requests concurrently — all should succeed.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Submit a tool call request for approval.          Args             tool_name T]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[TestApprovalStorePersistence]] - code - gateway/tests/test_approval_stress.py
+- [[TestApprovalTimeout]] - code - gateway/tests/test_approval_stress.py
+- [[TestAutoExpire]] - code - gateway/tests/test_approval_stress.py
+- [[TestConcurrentApprovalRequests]] - code - gateway/tests/test_approval_stress.py
+- [[Timeout handling for approval requests.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Update the status of an existing item.]] - rationale - gateway/approval_queue/store.py
+- [[_make_item()]] - code - gateway/tests/test_approval_store.py
+- [[store()]] - code - gateway/tests/test_approval_store.py
+- [[store()_1]] - code - gateway/tests/test_approval_stress.py
+- [[test_approval_store.py]] - code - gateway/tests/test_approval_store.py
+- [[test_approval_stress.py]] - code - gateway/tests/test_approval_stress.py
+- [[test_audit_store_initialize_is_idempotent()]] - code - gateway/tests/test_approval_store.py
+- [[test_decide_persists()]] - code - gateway/tests/test_approval_store.py
+- [[test_expired_items_on_reload()]] - code - gateway/tests/test_approval_store.py
+- [[test_initialize_is_idempotent()]] - code - gateway/tests/test_approval_store.py
+- [[test_persist_and_reload()]] - code - gateway/tests/test_approval_store.py
+- [[test_store_survives_restart()]] - code - gateway/tests/test_approval_store.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,31 +92,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_Community 72]]
-- 9 edges to [[_COMMUNITY_Community 0]]
-- 2 edges to [[_COMMUNITY_Community 8]]
-- 2 edges to [[_COMMUNITY_Community 152]]
-- 2 edges to [[_COMMUNITY_Community 41]]
-- 2 edges to [[_COMMUNITY_Community 76]]
-- 2 edges to [[_COMMUNITY_Community 431]]
-- 1 edge to [[_COMMUNITY_Community 149]]
-- 1 edge to [[_COMMUNITY_Community 155]]
-- 1 edge to [[_COMMUNITY_Community 156]]
-- 1 edge to [[_COMMUNITY_Community 47]]
-- 1 edge to [[_COMMUNITY_Community 861]]
-- 1 edge to [[_COMMUNITY_Community 788]]
-- 1 edge to [[_COMMUNITY_Community 2324]]
-- 1 edge to [[_COMMUNITY_Community 160]]
-- 1 edge to [[_COMMUNITY_Community 37]]
-- 1 edge to [[_COMMUNITY_Community 49]]
-- 1 edge to [[_COMMUNITY_Community 2318]]
-- 1 edge to [[_COMMUNITY_Community 120]]
-- 1 edge to [[_COMMUNITY_Community 196]]
-- 1 edge to [[_COMMUNITY_Community 509]]
+- 58 edges to [[_COMMUNITY_Community 30]]
+- 12 edges to [[_COMMUNITY_Community 68]]
+- 6 edges to [[_COMMUNITY_Community 70]]
+- 6 edges to [[_COMMUNITY_Community 439]]
+- 4 edges to [[_COMMUNITY_Community 35]]
+- 4 edges to [[_COMMUNITY_Community 254]]
+- 2 edges to [[_COMMUNITY_Community 1014]]
+- 2 edges to [[_COMMUNITY_Community 72]]
+- 2 edges to [[_COMMUNITY_Community 707]]
+- 1 edge to [[_COMMUNITY_Community 10]]
+- 1 edge to [[_COMMUNITY_Community 20]]
+- 1 edge to [[_COMMUNITY_Community 329]]
 
 ## Top bridge nodes
-- [[Exception]] - degree 16, connects to 13 communities
-- [[ThreatAssessment]] - degree 22, connects to 5 communities
-- [[browser_security.py]] - degree 12, connects to 5 communities
-- [[ThreatLevel_1]] - degree 9, connects to 3 communities
-- [[TestSocialEngineeringDetection]] - degree 12, connects to 1 community
+- [[ApprovalStore_1]] - degree 60, connects to 6 communities
+- [[ApprovalQueueItem_3]] - degree 30, connects to 5 communities
+- [[ApprovalQueueItem]] - degree 12, connects to 3 communities
+- [[test_approval_stress.py]] - degree 11, connects to 3 communities
+- [[TestApprovalStorePersistence]] - degree 11, connects to 3 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "Community 271"
+community: "Community 307"
 location: "L61"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_271
+  - community/Community_307
 ---
 
 # Response
@@ -20,4 +20,4 @@ tags:
 - [[ProgressiveTrustConfig]] - `uses` [INFERRED]
 - [[TrustManager_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_271
+#graphify/code #graphify/INFERRED #community/Community_307

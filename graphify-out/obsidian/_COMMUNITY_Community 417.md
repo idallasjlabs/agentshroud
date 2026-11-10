@@ -1,11 +1,11 @@
 ---
 type: community
-members: 13
+members: 12
 ---
 
 # Community 417
 
-**Members:** 13 nodes
+**Members:** 12 nodes
 
 ## Members
 - [[First Time Setup_1]] - document - docs/vault/08 - Runbooks/First Time Setup.md
@@ -15,7 +15,6 @@ members: 13
 - [[Step 2 Configure agentshroud.yaml]] - document - docs/vault/08 - Runbooks/First Time Setup.md
 - [[Step 3 Configure 1Password Items]] - document - docs/vault/08 - Runbooks/First Time Setup.md
 - [[Step 4 Build Container Images]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 5 Configure agentshroud.yaml]] - document - docs/setup-telegram.md
 - [[Step 5 Start Containers]] - document - docs/vault/08 - Runbooks/First Time Setup.md
 - [[Step 6 Verify Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
 - [[Step 7 Configure iOS Shortcuts (Optional)]] - document - docs/vault/08 - Runbooks/First Time Setup.md
@@ -30,9 +29,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1552]]
-- 1 edge to [[_COMMUNITY_Community 333]]
+- 1 edge to [[_COMMUNITY_Community 324]]
+- 1 edge to [[_COMMUNITY_Community 1014]]
 
 ## Top bridge nodes
-- [[First Time Setup_1]] - degree 13, connects to 1 community
-- [[Step 5 Configure agentshroud.yaml]] - degree 2, connects to 1 community
+- [[First Time Setup_1]] - degree 13, connects to 2 communities

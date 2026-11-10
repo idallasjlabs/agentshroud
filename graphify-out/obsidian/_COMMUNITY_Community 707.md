@@ -1,68 +1,81 @@
 ---
 type: community
-members: 55
+members: 68
 ---
 
 # Community 707
 
-**Members:** 55 nodes
+**Members:** 68 nodes
 
 ## Members
-- [[.check()]] - code - gateway/ingest_api/auth.py
+- [[NOTE This branch ships hot-reload of the config FILE only. The web config]] - rationale - gateway/ingest_api/config.py
+- [[.model_post_init()]] - code - gateway/ingest_api/config.py
 - [[.test_status_response_model()]] - code - gateway/tests/test_enhanced_status.py
 - [[.test_status_response_monitor_mode()]] - code - gateway/tests/test_enhanced_status.py
 - [[.test_status_response_optional_fields()]] - code - gateway/tests/test_enhanced_status.py
+- [[AppState]] - code - gateway/ingest_api/state.py
+- [[ApprovalDecision]] - code - gateway/ingest_api/models.py
+- [[ApprovalDecision_1]] - code - gateway/ingest_api/routes/approval.py
+- [[ApprovalRequest_4]] - code - gateway/ingest_api/routes/approval.py
+- [[Approve or reject a pending action      Authentication required.]] - rationale - gateway/ingest_api/routes/approval.py
+- [[AuditExportConfig]] - code - gateway/ingest_api/config.py
+- [[Auth dependency that uses the app state config.]] - rationale - gateway/ingest_api/routes/approval.py
 - [[Auth dependency that uses the app state config._3]] - rationale - gateway/ingest_api/routes/health.py
+- [[AuthRequired_1]] - code - gateway/ingest_api/routes/approval.py
 - [[AuthRequired_4]] - code - gateway/ingest_api/routes/health.py
-- [[Check if client is within rate limit          Args             client_id Usual]] - rationale - gateway/ingest_api/auth.py
-- [[Create authentication dependency callable      This is a synchronous wrapper tha]] - rationale - gateway/ingest_api/auth.py
+- [[Build a fake httpx.Response whose .json() returns body.]] - rationale - gateway/tests/test_router_openai_translation.py
+- [[Configuration for compliance audit export functionality.]] - rationale - gateway/ingest_api/config.py
+- [[Container for application-wide state]] - rationale - gateway/ingest_api/state.py
+- [[Database Files]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[Dependency Graph_1]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Dependency Graph]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
 - [[Detailed health check endpoint — authentication required.      Returns full syst]] - rationale - gateway/ingest_api/routes/health.py
-- [[Factory that returns authentication dependency for FastAPI      This allows us t]] - rationale - gateway/ingest_api/auth.py
-- [[GatewayConfig]] - code - gateway/ingest_api/auth.py
+- [[Gateway Module Dependencies]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Gateway Startup Initialization Order]] - concept - docs/vault/09 - Diagrams/Dependency Graph.md
 - [[Health check response with v0.8.0 security dashboard data]] - rationale - gateway/ingest_api/models.py
+- [[Key Initialization Order (main.py lifespan)]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[List all pending approval requests      Authentication required.]] - rationale - gateway/ingest_api/routes/approval.py
 - [[Minimal health check endpoint — no authentication required.      Returns only ba]] - rationale - gateway/ingest_api/routes/health.py
+- [[Purpose_184]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[Python Package Dependencies]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[README_127]] - document - gateway/README.md
+- [[Related Notes_39]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[Related Notes_70]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Request_2]] - code - gateway/ingest_api/routes/approval.py
 - [[Request_5]] - code - gateway/ingest_api/routes/health.py
 - [[StatusResponse]] - code - gateway/ingest_api/models.py
-- [[Test auth dependency with invalid auth scheme]] - rationale - gateway/tests/test_auth.py
-- [[Test auth dependency with invalid token]] - rationale - gateway/tests/test_auth.py
-- [[Test auth dependency with missing Authorization header]] - rationale - gateway/tests/test_auth.py
-- [[Test auth dependency with valid token]] - rationale - gateway/tests/test_auth.py
+- [[Submit an action for human approval      Called by agents when attempting sensit]] - rationale - gateway/ingest_api/routes/approval.py
 - [[Test enhanced status endpoint with observatory mode and egress info.]] - rationale - gateway/tests/test_enhanced_status.py
-- [[Test rate limiter allows requests under limit]] - rationale - gateway/tests/test_auth.py
-- [[Test rate limiter blocks requests over limit]] - rationale - gateway/tests/test_auth.py
-- [[Test rate limiter cleans up old requests]] - rationale - gateway/tests/test_auth.py
-- [[Test rate limiter tracks clients separately]] - rationale - gateway/tests/test_auth.py
 - [[Test status response in monitor mode.]] - rationale - gateway/tests/test_enhanced_status.py
 - [[Test that StatusResponse model accepts new fields.]] - rationale - gateway/tests/test_enhanced_status.py
 - [[Test that new fields are optional (backward compat).]] - rationale - gateway/tests/test_enhanced_status.py
-- [[Test that token verification uses constant-time comparison]] - rationale - gateway/tests/test_auth.py
-- [[Test token verification with invalid token]] - rationale - gateway/tests/test_auth.py
-- [[Test token verification with valid token]] - rationale - gateway/tests/test_auth.py
 - [[TestEnhancedStatus]] - code - gateway/tests/test_enhanced_status.py
-- [[Verify token using constant-time comparison      Uses hmac.compare_digest to pre]] - rationale - gateway/ingest_api/auth.py
-- [[auth.py]] - code - gateway/ingest_api/auth.py
-- [[auth.py_2]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[User's decision on a pending approval request]] - rationale - gateway/ingest_api/models.py
+- [[WAL Mode]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[Where Used]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[_mock_response()]] - code - gateway/tests/test_router_openai_translation.py
+- [[aiosqlite_1]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[aiosqlite]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[approval.py]] - code - gateway/ingest_api/routes/approval.py
+- [[auth_dep()_1]] - code - gateway/ingest_api/routes/approval.py
 - [[auth_dep()_4]] - code - gateway/ingest_api/routes/health.py
-- [[create_auth_dependency()]] - code - gateway/ingest_api/auth.py
-- [[get_auth_dependency()]] - code - gateway/ingest_api/auth.py
+- [[config.py]] - code - gateway/ingest_api/config.py
+- [[decide_approval()]] - code - gateway/ingest_api/routes/approval.py
+- [[event_bus.py]] - code - gateway/ingest_api/event_bus.py
 - [[health.py]] - code - gateway/ingest_api/routes/health.py
 - [[health_check()_1]] - code - gateway/ingest_api/routes/health.py
 - [[health_check_detail()]] - code - gateway/ingest_api/routes/health.py
-- [[rate_limiter (module-level instance)]] - code - gateway/ingest_api/auth.py
-- [[test_auth.py]] - code - gateway/tests/test_auth.py
-- [[test_auth_dependency_invalid_scheme()]] - code - gateway/tests/test_auth.py
-- [[test_auth_dependency_invalid_token()]] - code - gateway/tests/test_auth.py
-- [[test_auth_dependency_missing_header()]] - code - gateway/tests/test_auth.py
-- [[test_auth_dependency_valid_token()]] - code - gateway/tests/test_auth.py
+- [[ledger.py]] - code - gateway/ingest_api/ledger.py
+- [[list_pending_approvals()]] - code - gateway/ingest_api/routes/approval.py
+- [[models.py]] - code - gateway/ingest_api/models.py
+- [[router.py]] - code - gateway/ingest_api/router.py
+- [[sanitizer.py]] - code - gateway/ingest_api/sanitizer.py
+- [[state.py]] - code - gateway/ingest_api/state.py
+- [[submit_approval_request()]] - code - gateway/ingest_api/routes/approval.py
 - [[test_enhanced_status.py]] - code - gateway/tests/test_enhanced_status.py
-- [[test_rate_limiter_allows_requests()]] - code - gateway/tests/test_auth.py
-- [[test_rate_limiter_blocks_excess_requests()]] - code - gateway/tests/test_auth.py
-- [[test_rate_limiter_separate_clients()]] - code - gateway/tests/test_auth.py
-- [[test_rate_limiter_window_cleanup()]] - code - gateway/tests/test_auth.py
-- [[test_verify_token_constant_time()]] - code - gateway/tests/test_auth.py
-- [[test_verify_token_invalid()]] - code - gateway/tests/test_auth.py
-- [[test_verify_token_valid()]] - code - gateway/tests/test_auth.py
-- [[verify_token()]] - code - gateway/ingest_api/auth.py
+- [[test_router_openai_translation.py]] - code - gateway/tests/test_router_openai_translation.py
+- [[verify.sh]] - code - gateway/verify.sh
+- [[verify.sh script]] - code - gateway/verify.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -72,27 +85,59 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 138]]
-- 8 edges to [[_COMMUNITY_Community 978]]
-- 4 edges to [[_COMMUNITY_Community 7]]
-- 4 edges to [[_COMMUNITY_Community 2154]]
-- 3 edges to [[_COMMUNITY_Community 104]]
-- 3 edges to [[_COMMUNITY_Community 92]]
-- 2 edges to [[_COMMUNITY_Community 49]]
-- 2 edges to [[_COMMUNITY_Community 254]]
-- 1 edge to [[_COMMUNITY_Community 20]]
-- 1 edge to [[_COMMUNITY_Community 40]]
-- 1 edge to [[_COMMUNITY_Community 1248]]
+- 11 edges to [[_COMMUNITY_Community 7]]
+- 11 edges to [[_COMMUNITY_Community 80]]
+- 10 edges to [[_COMMUNITY_Community 72]]
+- 10 edges to [[_COMMUNITY_Community 325]]
+- 9 edges to [[_COMMUNITY_Community 49]]
+- 9 edges to [[_COMMUNITY_Community 254]]
+- 8 edges to [[_COMMUNITY_Community 104]]
+- 8 edges to [[_COMMUNITY_Community 62]]
+- 7 edges to [[_COMMUNITY_Community 2154]]
+- 5 edges to [[_COMMUNITY_Community 30]]
+- 5 edges to [[_COMMUNITY_Community 978]]
+- 4 edges to [[_COMMUNITY_Community 105]]
+- 4 edges to [[_COMMUNITY_Community 35]]
+- 4 edges to [[_COMMUNITY_Community 229]]
+- 4 edges to [[_COMMUNITY_Community 28]]
+- 4 edges to [[_COMMUNITY_Community 162]]
+- 3 edges to [[_COMMUNITY_Community 10]]
+- 3 edges to [[_COMMUNITY_Community 70]]
+- 2 edges to [[_COMMUNITY_Community 1014]]
+- 2 edges to [[_COMMUNITY_Community 541]]
+- 2 edges to [[_COMMUNITY_Community 108]]
+- 2 edges to [[_COMMUNITY_Community 68]]
+- 2 edges to [[_COMMUNITY_Community 92]]
+- 2 edges to [[_COMMUNITY_Community 143]]
+- 2 edges to [[_COMMUNITY_Community 47]]
+- 2 edges to [[_COMMUNITY_Community 396]]
+- 2 edges to [[_COMMUNITY_Community 1]]
+- 2 edges to [[_COMMUNITY_Community 11]]
+- 2 edges to [[_COMMUNITY_Community 50]]
+- 1 edge to [[_COMMUNITY_Community 141]]
+- 1 edge to [[_COMMUNITY_Community 223]]
+- 1 edge to [[_COMMUNITY_Community 196]]
+- 1 edge to [[_COMMUNITY_Community 1016]]
+- 1 edge to [[_COMMUNITY_Community 861]]
 - 1 edge to [[_COMMUNITY_Community 918]]
-- 1 edge to [[_COMMUNITY_Community 53]]
-- 1 edge to [[_COMMUNITY_Community 1975]]
-- 1 edge to [[_COMMUNITY_Community 1015]]
-- 1 edge to [[_COMMUNITY_Community 766]]
-- 1 edge to [[_COMMUNITY_Community 94]]
+- 1 edge to [[_COMMUNITY_Community 1658]]
+- 1 edge to [[_COMMUNITY_Community 655]]
+- 1 edge to [[_COMMUNITY_Community 81]]
+- 1 edge to [[_COMMUNITY_Community 54]]
+- 1 edge to [[_COMMUNITY_Community 64]]
+- 1 edge to [[_COMMUNITY_Community 63]]
+- 1 edge to [[_COMMUNITY_Community 84]]
+- 1 edge to [[_COMMUNITY_Community 17]]
+- 1 edge to [[_COMMUNITY_Community 0]]
+- 1 edge to [[_COMMUNITY_Community 12]]
+- 1 edge to [[_COMMUNITY_Community 2325]]
+- 1 edge to [[_COMMUNITY_Community 253]]
+- 1 edge to [[_COMMUNITY_Community 390]]
+- 1 edge to [[_COMMUNITY_Community 659]]
 
 ## Top bridge nodes
-- [[auth.py]] - degree 13, connects to 6 communities
-- [[auth.py_2]] - degree 10, connects to 6 communities
-- [[health.py]] - degree 11, connects to 5 communities
-- [[create_auth_dependency()]] - degree 20, connects to 3 communities
-- [[verify_token()]] - degree 13, connects to 3 communities
+- [[state.py]] - degree 37, connects to 23 communities
+- [[config.py]] - degree 42, connects to 14 communities
+- [[models.py]] - degree 28, connects to 10 communities
+- [[router.py]] - degree 14, connects to 8 communities
+- [[sanitizer.py]] - degree 13, connects to 6 communities
