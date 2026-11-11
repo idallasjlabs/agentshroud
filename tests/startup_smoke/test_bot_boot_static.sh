@@ -253,7 +253,8 @@ rm -rf "$_s15_prev" "$_s15_new"
 # S16: asb rebuild / clean-rebuild pass the profile flag to `compose build`.
 # Without `--profile voice`, compose builds only un-profiled services, so
 # `asb rebuild full` left voice-gateway on its old image (prod, 2026-10-16).
-_s16_count="$(grep -c '^\s*\$COMPOSE \$_PROFILE_FLAG build --no-cache$' "$asb_sh" || true)"
+# $_DEPLOY_PROFILE (scripts/lib/deployment-mode.sh) adds the edge profile the same way.
+_s16_count="$(grep -c '^\s*\$COMPOSE \$_PROFILE_FLAG \$_DEPLOY_PROFILE build --no-cache$' "$asb_sh" || true)"
 _s16_bare="$(grep -c '^\s*\$COMPOSE build --no-cache$' "$asb_sh" || true)"
 check "S16: asb rebuild/clean-rebuild build with \$_PROFILE_FLAG (voice-gateway included)" \
     "$([[ "$_s16_count" -ge 2 && "$_s16_bare" -le 1 ]] && echo true || echo false)" \

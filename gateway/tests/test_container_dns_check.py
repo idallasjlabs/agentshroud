@@ -124,7 +124,9 @@ GATEWAY_CONTAINER=gw
 
 
 def _run_pd(tmp_path, dns, dead=""):
-    body = _block(POST_DEPLOY, "# ── P8: Gateway's configured DNS servers", "# ── F1-F4")
+    body = _block(
+        POST_DEPLOY, "# ── P8: Gateway's configured DNS servers", "# ── P9: Inbound MCP Edge"
+    )
     return _run(tmp_path, _PD_PRELUDE, body, "", dns, dead)
 
 
