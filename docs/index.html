@@ -306,6 +306,48 @@
   </div>
 </div>
 
+<!-- ── Local + hosted agents (Inbound MCP Edge) ────────────── -->
+<section id="hosted-agents">
+  <div class="container">
+    <div class="section-label">New · in pilot</div>
+    <h2>Local agents, hosted agents, or both</h2>
+    <p class="section-sub">Hosted personal agents run in vendor clouds, where no proxy can sit. The Inbound MCP Edge gives them one governed door into your systems: built and tested in the dev stack, with Claude Duet as the first live pilot. No hosted agent has connected yet.</p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🖥️</div>
+        <h3>Local</h3>
+        <p>Agents on your machine (OpenClaw, Hermes) run behind the gateway, as they always have. The default.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">☁️</div>
+        <h3>Cloud</h3>
+        <p>Hosted personal agents (Claude Duet, Poke, Gemini Spark, Meta Muse, xAI Grok Bot, OpenAI Dots) reach only curated MCP tools, through OAuth 2.1 with owner-opened enrollment windows.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔀</div>
+        <h3>Hybrid</h3>
+        <p>Both, under one Command Center. One setting, <code>AGENTSHROUD_DEPLOYMENT</code>, chooses the mode, and the deploy check fails if what runs does not match it.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Same defences, enforced</h3>
+        <p>PromptGuard, canaries, Presidio DLP at ≥0.9, signed tool schemas, args-bound single-use approvals, a hash-chained audit and per-vendor or per-token kill.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📋</div>
+        <h3>Honest vendor catalog</h3>
+        <p>Each vendor says how it connects and whether custom MCP is documented or unconfirmed, with sources. Unconfirmed vendors ship read-only and cannot complete sign-in.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🚪</div>
+        <h3>Off until you open it</h3>
+        <p>Every vendor ships disabled. Public exposure is a separate step the owner takes, and it can be closed again with one command.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ── Features ─────────────────────────────────────────────── -->
 <section id="features">
   <div class="container">
@@ -413,7 +455,7 @@
         </tr>
         <tr>
           <td><span class="layer-tag">Inbound Edge</span></td>
-          <td class="module-list">EdgeGuard, EdgeOAuthService (OAuth 2.1 + enrollment), TokenService (ES256), Signed ToolDescriptors, EdgeCallPipeline, EdgeApprovals, wrap_untrusted — the governed door for hosted personal agents (Claude Duet, Poke, Gemini Spark, OpenAI Dots)</td>
+          <td class="module-list">EdgeGuard, EdgeOAuthService (OAuth 2.1 + enrollment), TokenService (ES256), Signed ToolDescriptors, EdgeCallPipeline, EdgeApprovals, wrap_untrusted — the governed door for hosted personal agents (Claude Duet, Poke, Gemini Spark, Meta Muse, xAI Grok Bot, OpenAI Dots) — in pilot</td>
         </tr>
       </tbody>
     </table>
