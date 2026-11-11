@@ -1,0 +1,17 @@
+{
+  "manifest_version": 1,
+  "tools": {
+    "delegate_to_hermes": {
+      "sha256": "02d028f6c9f96ae8286fb2861d4b09a252f86df97a70f769b518ee4cb2a2268f",
+      "version": "1.0.0"
+    },
+    "lab_search": {
+      "sha256": "41a868e64829cfe8229300a551387d89676f3b2d0ad5689141869abb63abafd2",
+      "version": "1.0.0"
+    },
+    "pke_status": {
+      "sha256": "13bad29b377c880ebe49cf8c855b2a5dcf40dcb07d28ea2b5aa6678346e635c6",
+      "version": "1.0.0"
+    }
+  }
+}

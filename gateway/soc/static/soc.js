@@ -161,7 +161,7 @@ async function _connectWS() {
   _ws = new WebSocket(`${wsBase}${SOC_BASE}/ws?token=${encodeURIComponent(wsToken)}`);
   _ws.addEventListener('open', () => {
     _setWSStatus('connected');
-    _ws.send(JSON.stringify({ subscribe: ['security_event', 'egress_event', 'service_event', 'log_event'] }));
+    _ws.send(JSON.stringify({ subscribe: ['security_event', 'egress_event', 'service_event', 'log_event', 'edge_event'] }));
   });
   _ws.addEventListener('message', e => {
     try {
@@ -195,6 +195,7 @@ function _handleWSEvent(ev) {
   if (_currentTab === 'overview') _renderOverviewFeed();
   if (_currentTab === 'security') _renderSecurityTable();
   if (_currentTab === 'logs')     _appendLogLine(ev);
+  if (ev.type === 'edge_event')   _edgeLiveEvent(ev);
 }
 
 // ---------------------------------------------------------------------------
@@ -1569,6 +1570,277 @@ window._emergencyBlock = function() {
 };
 
 // ---------------------------------------------------------------------------
+// Approvals tab (SCRUM-200) — EnhancedApprovalQueue via /approvals/*
+// ---------------------------------------------------------------------------
+
+async function _loadApprovals() {
+  const res = await _get('/approvals/pending');
+  const tbody = document.getElementById('approvals-tbody');
+  if (!tbody) return;
+  if (!res.ok) {
+    tbody.innerHTML = `<tr><td colspan="7" style="color:var(--danger);text-align:center;padding:1rem">Error: ${_esc(res.data?.detail?.message || res.status)}</td></tr>`;
+    return;
+  }
+  const items = Array.isArray(res.data) ? res.data : [];
+  _setText('approvals-count', items.length);
+  if (!items.length) {
+    tbody.innerHTML = '<tr><td colspan="7" style="color:var(--text-muted);text-align:center;padding:1rem">No pending approvals</td></tr>';
+    return;
+  }
+  // Every untrusted value goes through _esc(); ids reach handlers via data-id, never inline JS.
+  tbody.innerHTML = items.map(r =>
+    `<tr>
+      <td><code title="${_esc(r.request_id)}">${_esc((r.request_id || '').slice(0, 8))}</code></td>
+      <td>${_esc(r.action_type || '—')}</td>
+      <td>${_esc(r.agent_id || '—')}</td>
+      <td style="font-size:11px">${_ago(r.submitted_at)}</td>
+      <td style="font-size:11px">${_esc(r.expires_at || '—')}</td>
+      <td><pre style="font-size:11px;margin:0;max-width:420px;max-height:160px;overflow:auto;white-space:pre-wrap">${_esc(JSON.stringify(r.details ?? {}, null, 2))}</pre></td>
+      <td>
+        <div style="display:flex;gap:.25rem;flex-wrap:wrap">
+          <button class="btn btn-sm btn-success" data-id="${_esc(r.request_id)}" onclick="window._approvalDecide('approve', this.dataset.id)">Approve</button>
+          <button class="btn btn-sm btn-danger"  data-id="${_esc(r.request_id)}" onclick="window._approvalDecide('deny', this.dataset.id)">Deny</button>
+        </div>
+      </td>
+    </tr>`
+  ).join('');
+}
+
+window._reloadApprovals = _loadApprovals;
+
+window._approvalDecide = async function(action, id) {
+  const path = `/approvals/${encodeURIComponent(id)}/${action}`;
+  let res = await _post(path, { reason: '' });
+  // IEC 62443 FR1: high-risk approvals need a second factor — prompt and retry once.
+  if (!res.ok && res.data?.detail?.code === 'MFA_REQUIRED') {
+    const code = (window.prompt('MFA code required to approve this action:') || '').trim();
+    if (!code) { _toast('Approval cancelled — MFA code required', 'warning'); return; }
+    res = await _post(path, { reason: '', mfa_code: code });
+  }
+  const ok = res.ok && res.data?.ok === true;
+  _toast(ok ? `Request ${action === 'approve' ? 'approved' : 'denied'}` : `Error: ${res.data?.detail?.message || res.status}`, ok ? 'success' : 'danger');
+  _loadApprovals();
+};
+
+// ---------------------------------------------------------------------------
+// Agents tab (SCRUM-216) — one registry via /agents
+// ---------------------------------------------------------------------------
+
+// Status text is shown verbatim: not_configured / no_technical_hook are gaps, never "ok".
+const _AGENT_STATUS_BADGE = {
+  active: 'success', healthy: 'success', running: 'success',
+  awaiting_enrollment: 'info', disabled: 'muted', edge_disabled: 'muted', unknown: 'muted',
+  killed: 'critical', suspended: 'critical', unhealthy: 'danger', stopped: 'danger',
+  not_configured: 'warning', no_technical_hook: 'warning',
+};
+const _LOCKDOWN_BADGE = { normal: 'success', alert: 'warning', escalated: 'danger', suspended: 'critical' };
+let _agentsMode = null;  // null until the first load picks derived_mode
+
+function _statusBadge(map, value) {
+  return `<span class="badge badge-${map[value] || 'warning'}">${_esc(value || 'unknown')}</span>`;
+}
+
+function _denialsText(denials) {
+  const parts = Object.entries(denials || {}).map(([k, v]) => `${k}: ${v}`);
+  return parts.length ? parts.join(', ') : '0';
+}
+
+async function _loadAgents() {
+  const q = _agentsMode ? `?mode=${encodeURIComponent(_agentsMode)}` : '';
+  const res = await _get(`/agents${q}`);
+  const tbody = document.getElementById('agents-tbody');
+  if (!tbody) return;
+  if (!res.ok) {
+    tbody.innerHTML = `<tr><td colspan="10" style="color:var(--danger);text-align:center;padding:1rem">Error: ${_esc(res.data?.detail?.message || res.status)}</td></tr>`;
+    return;
+  }
+  const body = res.data || {};
+  if (_agentsMode === null) _agentsMode = body.derived_mode;
+  const sel = document.getElementById('agents-mode');
+  if (sel) sel.value = body.mode;
+  _setText('agents-derived', `Configured: ${body.derived_mode || '?'} · edge ${body.edge_enabled ? 'on' : 'off'}`);
+  const agents = Array.isArray(body.agents) ? body.agents : [];
+  _setText('agents-count', agents.length);
+  if (!agents.length) {
+    tbody.innerHTML = '<tr><td colspan="10" style="color:var(--text-muted);text-align:center;padding:1rem">No agents in this mode</td></tr>';
+    return;
+  }
+  tbody.innerHTML = agents.map(a => {
+    const edgeRow = a.mechanism === 'inbound_mcp_edge' && a.calls !== undefined;
+    const detail = a.class === 'local'
+      ? `route ${a.route || '—'}`
+      : (a.note || (edgeRow ? `${a.clients} client(s)${a.last_call ? ' · last call ' + _ago(new Date(a.last_call * 1000).toISOString()) : ''}${a.pending_approvals ? ' · ' + a.pending_approvals + ' pending approval(s)' : ''}` : ''));
+    return `<tr>
+      <td><strong>${_esc(a.name)}</strong><div style="font-size:10px;color:var(--text-muted)">${_esc(a.id)}</div></td>
+      <td>${_esc(a.class)}</td>
+      <td style="font-size:11px">${_esc(a.mechanism)}</td>
+      <td>${_statusBadge(_AGENT_STATUS_BADGE, a.status)}${a.killed && a.status !== 'killed' ? ' <span class="badge badge-critical">killed</span>' : ''}</td>
+      <td>${_esc(a.mode || '—')}</td>
+      <td>${edgeRow ? _esc(a.calls) : '—'}</td>
+      <td style="font-size:11px">${edgeRow ? _esc(_denialsText(a.denials)) : '—'}</td>
+      <td>${edgeRow ? `${_esc(a.dlp_hits)} / ${_esc(a.canary_hits)}` : '—'}</td>
+      <td>${edgeRow ? _statusBadge(_LOCKDOWN_BADGE, a.lockdown) : '—'}</td>
+      <td style="font-size:11px;max-width:320px">${_esc(detail)}</td>
+    </tr>`;
+  }).join('');
+}
+
+window._reloadAgents = _loadAgents;
+
+// ---------------------------------------------------------------------------
+// Inbound Edge tab (SCRUM-216) — /edge/status + live 'edge_event'
+// ---------------------------------------------------------------------------
+
+const MAX_EDGE_RECENT = 50;
+let _edgeRecent = [];
+
+function _edgeTime(r) {
+  // REST rows carry epoch seconds (ts); live WebSocket rows carry the event's ISO timestamp.
+  if (typeof r.ts === 'number') return _ts(new Date(r.ts * 1000).toISOString());
+  return _ts(r.ts);
+}
+
+function _edgeKillBtn(scope, value, label) {
+  return `<button class="btn btn-sm btn-danger" data-scope="${_esc(scope)}" data-value="${_esc(value)}" onclick="window._edgeKill(this.dataset.scope, this.dataset.value)">${_esc(label)}</button>`;
+}
+
+function _edgeUnkillBtn(scope, value) {
+  return `<button class="btn btn-sm" data-scope="${_esc(scope)}" data-value="${_esc(value)}" onclick="window._edgeUnkill(this.dataset.scope, this.dataset.value)">Unkill</button>`;
+}
+
+function _renderEdgeRecent() {
+  const tbody = document.getElementById('edge-recent-tbody');
+  if (!tbody) return;
+  _setText('edge-recent-count', _edgeRecent.length);
+  if (!_edgeRecent.length) {
+    tbody.innerHTML = '<tr><td colspan="8" style="color:var(--text-muted);text-align:center;padding:1rem">No edge calls since gateway start</td></tr>';
+    return;
+  }
+  tbody.innerHTML = _edgeRecent.map(r => {
+    const sev = r.outcome === 'ok' ? 'success' : r.outcome === 'awaiting_approval' ? 'info' : 'danger';
+    const actions = [
+      r.client_id ? _edgeKillBtn('client', r.client_id, 'Kill client') : '',
+      r.jti ? _edgeKillBtn('jti', r.jti, 'Kill token') : '',
+    ].join(' ');
+    return `<tr>
+      <td style="font-size:11px">${_edgeTime(r)}</td>
+      <td>${_esc(r.vendor || '—')}</td>
+      <td><code title="${_esc(r.client_id)}">${_esc((r.client_id || '—').slice(0, 12))}</code></td>
+      <td>${_esc(r.tool || '—')}</td>
+      <td><span class="badge badge-${sev}">${_esc(r.outcome || '?')}</span></td>
+      <td style="font-size:11px">${_esc(r.deny_reason || '')}</td>
+      <td style="font-size:11px">${r.latency_ms != null ? _esc(r.latency_ms) + ' ms' : '—'}</td>
+      <td><div style="display:flex;gap:.25rem;flex-wrap:wrap">${actions}</div></td>
+    </tr>`;
+  }).join('');
+}
+
+function _edgeLiveEvent(ev) {
+  const d = ev.details || {};
+  if (!d.tool) return;  // lifecycle events (e.g. "edge started") are not calls
+  _edgeRecent.unshift({ ...d, ts: ev.timestamp });
+  if (_edgeRecent.length > MAX_EDGE_RECENT) _edgeRecent.length = MAX_EDGE_RECENT;
+  if (_currentTab === 'edge') _renderEdgeRecent();
+}
+
+async function _loadEdge() {
+  const res = await _get('/edge/status');
+  const header = document.getElementById('edge-header');
+  const cards = document.getElementById('edge-vendors');
+  const kills = document.getElementById('edge-kills-tbody');
+  if (!header || !cards || !kills) return;
+  if (!res.ok) {
+    header.textContent = `Error: ${res.data?.detail?.message || res.status}`;
+    return;
+  }
+  const st = res.data || {};
+  if (!st.enabled) {
+    header.textContent = 'Inbound MCP Edge is disabled (AGENTSHROUD_INBOUND_EDGE != 1) — no hosted agent can reach this gateway through it.';
+    cards.innerHTML = '';
+    kills.innerHTML = '<tr><td colspan="5" style="color:var(--text-muted);text-align:center;padding:1rem">Edge disabled</td></tr>';
+    _edgeRecent = [];
+    _renderEdgeRecent();
+    return;
+  }
+  header.textContent = `Enabled · issuer ${st.issuer || '?'}`;
+  cards.innerHTML = Object.entries(st.vendors || {}).map(([vendor, v]) => {
+    const clients = (v.clients || []).map(c =>
+      `<div style="display:flex;gap:.25rem;align-items:center;margin-top:.25rem;font-size:11px">
+        <code title="${_esc(c.client_id)}">${_esc(c.client_id.slice(0, 12))}</code>
+        ${_statusBadge(_LOCKDOWN_BADGE, c.lockdown)}
+        ${c.killed ? _edgeUnkillBtn('client', c.client_id) : _edgeKillBtn('client', c.client_id, 'Kill')}
+      </div>`).join('');
+    return `<div class="kpi-card" style="min-width:240px">
+      <div class="kpi-label">${_esc(v.display_name || vendor)} ${v.killed ? '<span class="badge badge-critical">killed</span>' : ''}</div>
+      <div class="kpi-value">${_esc(v.calls)}</div>
+      <div class="kpi-sub">${v.enabled ? _esc(v.mode) : 'disabled'} · ok ${_esc(v.ok)} · lockdown ${_statusBadge(_LOCKDOWN_BADGE, v.lockdown)}</div>
+      <div style="font-size:11px;margin-top:.35rem">Denials: ${_esc(_denialsText(v.denials))}</div>
+      <div style="font-size:11px">DLP ${_esc(v.dlp_hits)} · Canary ${_esc(v.canary_hits)} · Pending approvals ${_esc(v.pending_approvals)}</div>
+      ${clients}
+      <div style="display:flex;gap:.25rem;flex-wrap:wrap;margin-top:.5rem">
+        ${v.killed ? _edgeUnkillBtn('vendor', vendor) : _edgeKillBtn('vendor', vendor, 'Kill vendor')}
+        ${v.enabled && !v.killed ? `<button class="btn btn-sm btn-primary" data-vendor="${_esc(vendor)}" onclick="window._edgeEnroll(this.dataset.vendor)">Enroll</button>` : ''}
+      </div>
+    </div>`;
+  }).join('');
+  const killList = Array.isArray(st.kills) ? st.kills : [];
+  kills.innerHTML = killList.length ? killList.map(k =>
+    `<tr>
+      <td>${_esc(k.scope)}</td>
+      <td><code>${_esc(k.value)}</code></td>
+      <td style="font-size:11px">${_esc(k.reason)}</td>
+      <td style="font-size:11px">${_ago(new Date(k.created_at * 1000).toISOString())}</td>
+      <td>${_edgeUnkillBtn(k.scope, k.value)}</td>
+    </tr>`).join('')
+    : '<tr><td colspan="5" style="color:var(--text-muted);text-align:center;padding:1rem">No kills</td></tr>';
+  _edgeRecent = (Array.isArray(st.recent) ? st.recent : []).slice(0, MAX_EDGE_RECENT);
+  _renderEdgeRecent();
+}
+
+window._reloadEdge = _loadEdge;
+
+function _edgeError(res) {
+  return res.data?.detail?.message || res.data?.message || res.status;
+}
+
+window._edgeKill = function(scope, value) {
+  _confirm('Kill edge access', `Revoke every Inbound Edge call for ${scope} "${value}"? Takes effect on the next request.`, async () => {
+    const reason = (window.prompt('Reason (recorded in the audit log):', 'killed from Command Center') || '').trim() || 'killed from Command Center';
+    const res = await _post('/edge/kill', { scope, value, reason, confirm: true });
+    const ok = res.ok && res.data?.killed === true;
+    _toast(ok ? `${scope} killed` : `Error: ${_edgeError(res)}`, ok ? 'success' : 'danger');
+    _loadEdge();
+  });
+};
+
+window._edgeUnkill = function(scope, value) {
+  _confirm('Restore edge access', `Lift the kill on ${scope} "${value}"?`, async () => {
+    const res = await _post('/edge/unkill', { scope, value, confirm: true });
+    const ok = res.ok && res.data?.killed === false;
+    _toast(ok ? `${scope} restored` : `Error: ${_edgeError(res)}`, ok ? 'success' : 'danger');
+    _loadEdge();
+  });
+};
+
+window._edgeEnroll = function(vendor) {
+  _confirm('Open enrollment', `Open a 10-minute one-time enrollment window for ${vendor}? The code is shown once.`, async () => {
+    const res = await _post('/edge/enroll', { vendor, ttl_s: 600, confirm: true });
+    const box = document.getElementById('edge-enroll-result');
+    if (!res.ok || !res.data?.code) {
+      _toast(`Error: ${_edgeError(res)}`, 'danger');
+      return;
+    }
+    // Shown once and never stored client-side; Dismiss removes it from the page.
+    box.innerHTML = `<div class="panel"><div class="panel-body">
+      One-time enrollment code for <strong>${_esc(res.data.vendor)}</strong>:
+      <code style="font-size:16px;margin:0 .5rem">${_esc(res.data.code)}</code>
+      expires ${_esc(res.data.expires_at)}
+      <button class="btn btn-sm" onclick="document.getElementById('edge-enroll-result').innerHTML=''">Dismiss</button>
+    </div></div>`;
+  }, false);
+};
+
+// ---------------------------------------------------------------------------
 // Logs tab
 // ---------------------------------------------------------------------------
 
@@ -2054,9 +2326,12 @@ window._triggerCveReport = async function() {
   _registerTab('services',     _loadServices);
   _registerTab('contributors', _loadContributors);
   _registerTab('egress',       _loadEgress);
+  _registerTab('approvals',    _loadApprovals);
   _registerTab('logs',         _loadLogs);  // CC-30: fetch REST logs on tab open
   _registerTab('config',       _loadConfig);
   _registerTab('agent-cves',   _loadAgentCves);
+  _registerTab('agents',       _loadAgents);
+  _registerTab('edge',         _loadEdge);
 
   // Wire nav items
   document.querySelectorAll('.nav-item[data-tab]').forEach(el => {
@@ -2070,6 +2345,10 @@ window._triggerCveReport = async function() {
   if (cveSevFilter) cveSevFilter.addEventListener('change', () => _renderAgentCveTable(window._agentCveData));
   const trivySevFilter = document.getElementById('trivy-sev-filter');
   if (trivySevFilter) trivySevFilter.addEventListener('change', () => _renderTrivyCveTable(window._trivyCveData));
+
+  // Agents mode selector — an explicit choice overrides the configured default
+  const agentsMode = document.getElementById('agents-mode');
+  if (agentsMode) agentsMode.addEventListener('change', () => { _agentsMode = agentsMode.value; _loadAgents(); });
 
   // Severity filter change handler
   const sevFilter = document.getElementById('sev-filter');

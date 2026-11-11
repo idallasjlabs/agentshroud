@@ -354,3 +354,18 @@ async def test_response_credential_blocking(sanitizer):
     sanitized2, blocked2 = await sanitizer.block_credentials(response, "console")
     assert not blocked2
     assert sanitized2 == response
+
+
+@pytest.mark.asyncio
+@pytest.mark.parametrize(
+    "key",
+    [
+        "sk-ant-api03-" + "EXAMPLEFAKE" * 8,  # Anthropic
+        "sk-proj-" + "EXAMPLE_FAKE-" * 5,  # OpenAI project key
+    ],
+)
+async def test_hyphenated_sk_keys_are_blocked(sanitizer, key):
+    """sk- key families with hyphens/underscores were missed by [a-zA-Z0-9]{20,}."""
+    sanitized, blocked = await sanitizer.block_credentials(f"key: {key}", "untrusted")
+    assert blocked
+    assert key not in sanitized

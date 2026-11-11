@@ -234,6 +234,25 @@ class TestSCLClientRequest:
             {"collab_mode": "full_access"},
         ),
         (lambda c: c.run_scan("trivy"), "POST", "/scan/trivy", {"confirm": True}),
+        (lambda c: c.edge_status(), "GET", "/edge/status", None),
+        (
+            lambda c: c.edge_kill("vendor", "poke", "abuse", confirm=True),
+            "POST",
+            "/edge/kill",
+            {"scope": "vendor", "value": "poke", "reason": "abuse", "confirm": True},
+        ),
+        (
+            lambda c: c.edge_unkill("client", "c1", confirm=True),
+            "POST",
+            "/edge/unkill",
+            {"scope": "client", "value": "c1", "confirm": True},
+        ),
+        (
+            lambda c: c.edge_enroll("poke", ttl_s=300, confirm=True),
+            "POST",
+            "/edge/enroll",
+            {"vendor": "poke", "ttl_s": 300, "confirm": True},
+        ),
     ],
 )
 def test_convenience_methods_hit_expected_endpoints(monkeypatch, call, method, path, body):
@@ -441,6 +460,37 @@ class TestGetCommands:
         )
         assert result.exit_code == 0
         assert main_mod.SCLClient.call_args.args == ("http://gw.test:8080", "fallback-pw")
+
+    def test_token_read_from_token_file(self, monkeypatch, tmp_path):
+        # scripts/asb passes a secret *path*, never the secret, so nothing lands in argv.
+        secret = tmp_path / "gateway_password"
+        secret.write_text("file-tok\n")
+        _stub_client(monkeypatch, get_risk={"score": 1})
+        result = CliRunner().invoke(
+            cli,
+            ["--url", "http://gw.test:8080", "get", "risk"],
+            env={
+                "AGENTSHROUD_TOKEN": None,
+                "AGENTSHROUD_GATEWAY_PASSWORD": None,
+                "AGENTSHROUD_TOKEN_FILE": str(secret),
+            },
+        )
+        assert result.exit_code == 0
+        assert main_mod.SCLClient.call_args.args == ("http://gw.test:8080", "file-tok")
+
+    def test_unreadable_token_file_is_an_error(self, monkeypatch, tmp_path):
+        _stub_client(monkeypatch, get_risk={"score": 1})
+        result = CliRunner().invoke(
+            cli,
+            ["--url", "http://gw.test:8080", "get", "risk"],
+            env={
+                "AGENTSHROUD_TOKEN": None,
+                "AGENTSHROUD_GATEWAY_PASSWORD": None,
+                "AGENTSHROUD_TOKEN_FILE": str(tmp_path / "missing"),
+            },
+        )
+        assert result.exit_code != 0
+        assert "AGENTSHROUD_TOKEN_FILE" in _all_output(result)
 
 
 class TestLifecycleCommands:
@@ -688,6 +738,172 @@ class TestTailWS:
         monkeypatch.setitem(sys.modules, "websockets", None)
         await _tail_ws("http://gw:8080", "tok", "events", "", None)
         assert "websockets package required" in capsys.readouterr().out
+
+
+# ---------------------------------------------------------------------------
+# edge commands (SCRUM-216 / SCRUM-210)
+# ---------------------------------------------------------------------------
+
+
+class TestEdgeCommands:
+    def test_status_json(self, monkeypatch):
+        stub = _stub_client(monkeypatch, edge_status={"enabled": False, "vendors": {}})
+        result = _invoke(["edge", "status"])
+        assert result.exit_code == 0
+        assert json.loads(result.output)["enabled"] is False
+        stub.edge_status.assert_called_once_with()
+
+    def test_status_table_lists_vendors_and_recent(self, monkeypatch):
+        _stub_client(
+            monkeypatch,
+            edge_status={
+                "enabled": True,
+                "issuer": "https://edge.test",
+                "vendors": {
+                    "poke": {
+                        "enabled": True,
+                        "mode": "enforce",
+                        "calls": 4,
+                        "denials": {"schema": 1, "rate_limited": 2},
+                        "dlp_hits": 1,
+                        "canary_hits": 0,
+                        "pending_approvals": 0,
+                        "lockdown": "alert",
+                        "killed": False,
+                        "clients": [],
+                    }
+                },
+                "recent": [{"vendor": "poke", "tool": "lab_search", "outcome": "ok"}],
+                "kills": [],
+            },
+        )
+        result = CliRunner().invoke(
+            cli,
+            ["--url", "http://gw.test:8080", "--token", "t", "--format", "table", "edge", "status"],
+        )
+        assert result.exit_code == 0
+        out = result.output
+        assert "https://edge.test" in out
+        assert "poke" in out and "alert" in out
+        assert "lab_search" in out
+
+    def test_status_disabled_table(self, monkeypatch):
+        _stub_client(monkeypatch, edge_status={"enabled": False, "vendors": {}, "recent": []})
+        result = CliRunner().invoke(
+            cli,
+            ["--url", "http://gw.test:8080", "--token", "t", "--format", "table", "edge", "status"],
+        )
+        assert result.exit_code == 0
+        assert "disabled" in result.output.lower()
+
+    @pytest.mark.parametrize(
+        "flag,scope", [("--vendor", "vendor"), ("--client", "client"), ("--jti", "jti")]
+    )
+    def test_kill_each_scope(self, monkeypatch, flag, scope):
+        stub = _stub_client(monkeypatch, edge_kill={"ok": True, "killed": True})
+        result = _invoke(["edge", "kill", flag, "x1", "--reason", "abuse", "--confirm"])
+        assert result.exit_code == 0
+        stub.edge_kill.assert_called_once_with(scope, "x1", "abuse", confirm=True)
+
+    def test_kill_needs_exactly_one_target(self, monkeypatch):
+        stub = _stub_client(monkeypatch)
+        result = _invoke(["edge", "kill", "--vendor", "a", "--client", "b", "--confirm"])
+        assert result.exit_code != 0
+        result = _invoke(["edge", "kill", "--confirm"])
+        assert result.exit_code != 0
+        stub.edge_kill.assert_not_called()
+
+    def test_kill_without_confirm_is_not_success(self, monkeypatch):
+        _stub_client(
+            monkeypatch,
+            edge_kill={"error": True, "code": "CONFIRMATION_REQUIRED", "message": "Resend"},
+        )
+        result = _invoke(["edge", "kill", "--vendor", "poke"])
+        assert result.exit_code == 3
+        assert "--confirm" in _all_output(result)
+
+    def test_server_error_exits_nonzero(self, monkeypatch):
+        _stub_client(
+            monkeypatch,
+            edge_unkill={"detail": {"error": True, "code": "NOT_FOUND", "message": "No kill"}},
+        )
+        result = _invoke(["edge", "unkill", "--vendor", "poke", "--confirm"])
+        assert result.exit_code == 1
+        assert "No kill" in _all_output(result)
+
+    def test_unkill(self, monkeypatch):
+        stub = _stub_client(monkeypatch, edge_unkill={"ok": True, "killed": False})
+        result = _invoke(["edge", "unkill", "--jti", "j1", "--confirm"])
+        assert result.exit_code == 0
+        stub.edge_unkill.assert_called_once_with("jti", "j1", confirm=True)
+
+    def test_enroll(self, monkeypatch):
+        stub = _stub_client(
+            monkeypatch,
+            edge_enroll={"ok": True, "code": "abc", "expires_at": "2026-11-09T00:10:00+00:00"},
+        )
+        result = _invoke(["edge", "enroll", "--vendor", "poke", "--ttl", "300", "--confirm"])
+        assert result.exit_code == 0
+        assert json.loads(result.output)["code"] == "abc"
+        stub.edge_enroll.assert_called_once_with("poke", ttl_s=300, confirm=True)
+
+    def test_enroll_ttl_bounded(self, monkeypatch):
+        stub = _stub_client(monkeypatch)
+        result = _invoke(["edge", "enroll", "--vendor", "poke", "--ttl", "901", "--confirm"])
+        assert result.exit_code != 0
+        stub.edge_enroll.assert_not_called()
+
+
+def test_asb_edge_delegates_to_cli_in_gateway_without_secret_in_argv(tmp_path):
+    """`asb edge ...` runs the SOC CLI inside the gateway container, passing only a
+    secret *path*, and skips the stack pre-flight (no docker volume/run calls)."""
+    import subprocess
+    from pathlib import Path
+
+    repo = Path(__file__).resolve().parents[2]
+    log = tmp_path / "argv.log"
+    bindir = tmp_path / "bin"
+    bindir.mkdir()
+    for name in ("compose-stub", "docker"):
+        stub = bindir / name
+        stub.write_text(f'#!/usr/bin/env bash\nprintf "%s\\n" "{name}" "$@" >> "{log}"\n')
+        stub.chmod(0o755)
+    env = {
+        "PATH": f"{bindir}:/usr/bin:/bin",
+        "HOME": str(tmp_path),
+        "USER": "edge-test",
+        "AGENTSHROUD_COMPOSE": str(bindir / "compose-stub"),
+    }
+    proc = subprocess.run(
+        ["bash", str(repo / "scripts" / "asb"), "edge", "kill", "--vendor", "poke", "--confirm"],
+        env=env,
+        stdin=subprocess.DEVNULL,
+        capture_output=True,
+        text=True,
+        timeout=30,
+        cwd=str(repo),
+    )
+    assert proc.returncode == 0, proc.stderr
+    argv = log.read_text().splitlines()
+    assert argv[0] == "compose-stub"  # nothing else (no docker pre-flight) ran first
+    assert "docker" not in argv
+    i = argv.index("exec")
+    assert argv[i:] == [
+        "exec",
+        "-T",
+        "-e",
+        "AGENTSHROUD_TOKEN_FILE=/run/secrets/gateway_password",  # pragma: allowlist secret
+        "gateway",
+        "python",
+        "-m",
+        "gateway.cli.main",
+        "edge",
+        "kill",
+        "--vendor",
+        "poke",
+        "--confirm",
+    ]
+    assert not any("PASSWORD=" in a and "FILE" not in a for a in argv)
 
 
 # ---------------------------------------------------------------------------

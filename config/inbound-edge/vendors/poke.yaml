@@ -1,0 +1,28 @@
+# Inbound MCP Edge vendor profile — see docs/inbound-mcp-edge/vendors.md.
+# Ships DISABLED. Enable only on the owner's instruction (runbook: 04-runbook.md).
+vendor: poke
+display_name: Poke
+enabled: false
+mode: enforce
+auth:
+  oauth: true
+  dynamic_registration: true
+  redirect_uris:
+    # Fill in from the first DCR registration during the pilot window (UNCONFIRMED).
+    []
+  static_bearer: false
+
+tools:
+  lab_search: read
+  pke_status: read
+  delegate_to_hermes: write
+limits:
+  per_client_per_minute: 30
+  per_vendor_per_minute: 60
+  max_concurrency: 4
+  daily_calls: 500
+  daily_delegations: 20
+dlp:
+  mode: redact
+  min_confidence: 0.9
+max_response_bytes: 1048576

@@ -264,6 +264,7 @@ class WSEventType(str, Enum):
     APPROVAL_EVENT = "approval_event"
     SERVICE_EVENT = "service_event"
     LOG_EVENT = "log_event"
+    EDGE_EVENT = "edge_event"  # Inbound MCP Edge calls (SCRUM-216)
     KEEPALIVE = "keepalive"
 
 

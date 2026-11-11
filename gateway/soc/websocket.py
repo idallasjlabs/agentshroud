@@ -15,12 +15,21 @@ from typing import Optional, Set
 
 from fastapi import WebSocket, WebSocketDisconnect
 
+from ..ingest_api.event_bus import GatewayEvent
 from .auth import _get_config_token, redeem_ws_token
-from .models import WSEvent, WSEventType
+from .models import Severity, WSEvent, WSEventType
 
 logger = logging.getLogger("agentshroud.soc.websocket")
 
 _KEEPALIVE_INTERVAL = 30  # seconds
+
+# GatewayEvent types forwarded to /soc/v1/ws (SCRUM-216: live Inbound Edge calls).
+_BUS_EVENT_TYPES = {"edge_event": WSEventType.EDGE_EVENT}
+_BUS_SEVERITY = {
+    "info": Severity.INFO,
+    "warning": Severity.MEDIUM,
+    "critical": Severity.CRITICAL,
+}
 
 
 class SOCWebSocketHandler:
@@ -124,6 +133,19 @@ def _coerce_to_ws_event(raw) -> Optional[WSEvent]:
     """Convert an EventBus item to WSEvent, return None if conversion fails."""
     if isinstance(raw, WSEvent):
         return raw
+    if isinstance(raw, GatewayEvent):
+        # EventBus GatewayEvents cross the bridge only for typed SOC streams; the
+        # rest of the bus (auth_failed, …) stays off the Command Center feed.
+        etype = _BUS_EVENT_TYPES.get(raw.type)
+        if etype is None:
+            return None
+        return WSEvent(
+            type=etype,
+            severity=_BUS_SEVERITY.get(raw.severity, Severity.INFO),
+            summary=raw.summary,
+            details=dict(raw.details),
+            timestamp=raw.timestamp,
+        )
     if isinstance(raw, dict):
         try:
             etype_raw = raw.get("type", raw.get("event_type", "security_event"))
@@ -141,8 +163,6 @@ def _coerce_to_ws_event(raw) -> Optional[WSEvent]:
                 "anomaly_detected": WSEventType.SECURITY_EVENT,
             }
             etype = type_map.get(str(etype_raw).lower(), WSEventType.SECURITY_EVENT)
-            from .models import Severity
-
             sev_raw = raw.get("severity", "info")
             sev_map = {
                 "critical": Severity.CRITICAL,

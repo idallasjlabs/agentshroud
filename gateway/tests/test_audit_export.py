@@ -376,3 +376,164 @@ class TestAuditStoreBotId:
         evt = await store.log_event("test", "INFO", {}, "mod", bot_id="hermes")
         d = evt.to_dict()
         assert d["bot_id"] == "hermes"
+
+
+# ---------------------------------------------------------------------------
+# SCRUM-204: serialized hash-chain appends + anchored verification
+# ---------------------------------------------------------------------------
+
+
+async def _chain_rows(db_path: str) -> list[tuple]:
+    import aiosqlite
+
+    async with aiosqlite.connect(db_path) as db:
+        cursor = await db.execute(
+            "SELECT event_id, prev_hash, entry_hash FROM audit_events ORDER BY id ASC"
+        )
+        return list(await cursor.fetchall())
+
+
+def _assert_linear_chain(rows: list[tuple]) -> None:
+    prevs = [r[1] for r in rows]
+    dupes = {p for p in prevs if prevs.count(p) > 1}
+    assert not dupes, "chain forked: " + ", ".join(
+        f"{prevs.count(p)} rows share prev_hash={p!r}" for p in dupes
+    )
+    assert rows[0][1] is None
+    for before, after in zip(rows, rows[1:]):
+        assert after[1] == before[2], f"{after[0]} does not link to {before[0]}"
+
+
+class TestAuditStoreConcurrentAppend:
+    """Concurrent log_event calls must not fork the SHA-256 chain (SCRUM-204)."""
+
+    @pytest.mark.asyncio
+    async def test_concurrent_log_event_single_store_keeps_linear_chain(self, tmp_path):
+        import asyncio
+
+        db_path = str(tmp_path / "audit.db")
+        store = AuditStore(db_path=db_path)
+        await store.initialize()
+        try:
+            await asyncio.gather(
+                *(store.log_event("concurrent", "INFO", {"n": i}, "test") for i in range(50))
+            )
+            valid, message = await store.verify_hash_chain()
+        finally:
+            await store.close()
+
+        rows = await _chain_rows(db_path)
+        assert len(rows) == 50
+        _assert_linear_chain(rows)
+        assert valid, message
+        assert "50 events" in message
+
+    @pytest.mark.asyncio
+    async def test_concurrent_log_event_two_connections_keeps_linear_chain(self, tmp_path):
+        """Two stores sharing one SQLite file (e.g. two workers) must not fork the chain."""
+        import asyncio
+
+        db_path = str(tmp_path / "audit.db")
+        a = AuditStore(db_path=db_path)
+        b = AuditStore(db_path=db_path)
+        await a.initialize()
+        await b.initialize()
+        try:
+            await asyncio.gather(
+                *(
+                    (a if i % 2 else b).log_event("concurrent", "INFO", {"n": i}, "test")
+                    for i in range(50)
+                )
+            )
+            valid, message = await a.verify_hash_chain()
+        finally:
+            await a.close()
+            await b.close()
+
+        rows = await _chain_rows(db_path)
+        assert len(rows) == 50
+        _assert_linear_chain(rows)
+        assert valid, message
+
+
+class TestAuditStoreAnchoredVerify:
+    """verify_hash_chain(start_id=X) anchors on X's predecessor (SCRUM-204)."""
+
+    @pytest_asyncio.fixture
+    async def store(self, tmp_path):
+        s = AuditStore(db_path=str(tmp_path / "audit.db"))
+        await s.initialize()
+        s._test_events = [
+            await s.log_event("ev", "INFO", {"n": i}, "test", event_id=f"evt-{i}")
+            for i in range(10)
+        ]
+        yield s
+        await s.close()
+
+    @pytest.mark.asyncio
+    async def test_verify_from_mid_chain_start_id_succeeds(self, store):
+        valid, message = await store.verify_hash_chain(start_id="evt-5")
+        assert valid, message
+        assert "5 events" in message
+
+    @pytest.mark.asyncio
+    async def test_verify_from_first_row_keeps_genesis_semantics(self, store):
+        valid, message = await store.verify_hash_chain(start_id="evt-0")
+        assert valid, message
+        assert "10 events" in message
+
+    @pytest.mark.asyncio
+    async def test_verify_from_mid_chain_detects_tampered_row(self, store):
+        await store._db.execute(
+            "UPDATE audit_events SET details = ? WHERE event_id = ?",
+            (json.dumps({"n": 999}), "evt-7"),
+        )
+        await store._db.commit()
+        valid, message = await store.verify_hash_chain(start_id="evt-5")
+        assert valid is False
+        assert "evt-7" in message
+
+    @pytest.mark.asyncio
+    async def test_verify_from_mid_chain_detects_relinked_first_row(self, store):
+        """Rewriting the first examined row's prev_hash must not be self-anchoring."""
+        bogus = "f" * 64
+        await store._db.execute(
+            "UPDATE audit_events SET prev_hash = ? WHERE event_id = ?", (bogus, "evt-5")
+        )
+        await store._db.commit()
+        valid, message = await store.verify_hash_chain(start_id="evt-5")
+        assert valid is False
+        assert "evt-5" in message
+
+    @pytest.mark.asyncio
+    async def test_verify_after_archival_uses_explicit_anchor(self, store):
+        """After the head is archived, the archived predecessor's entry_hash is the anchor."""
+        anchor = store._test_events[3].entry_hash
+        await store._db.execute(
+            "DELETE FROM audit_events WHERE event_id IN ('evt-0','evt-1','evt-2','evt-3')"
+        )
+        await store._db.commit()
+
+        valid, message = await store.verify_hash_chain(start_id="evt-4", anchor_hash=anchor)
+        assert valid, message
+        assert "6 events" in message
+
+        bad_valid, bad_message = await store.verify_hash_chain(
+            start_id="evt-4", anchor_hash="0" * 64
+        )
+        assert bad_valid is False
+        assert "evt-4" in bad_message
+
+    @pytest.mark.asyncio
+    async def test_verify_after_archival_without_anchor_fails_closed(self, store):
+        await store._db.execute("DELETE FROM audit_events WHERE event_id = 'evt-0'")
+        await store._db.commit()
+        valid, message = await store.verify_hash_chain(start_id="evt-1")
+        assert valid is False
+        assert "anchor" in message.lower()
+
+    @pytest.mark.asyncio
+    async def test_verify_unknown_start_id_fails_closed(self, store):
+        valid, message = await store.verify_hash_chain(start_id="does-not-exist")
+        assert valid is False
+        assert "does-not-exist" in message

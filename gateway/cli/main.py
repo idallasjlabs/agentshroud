@@ -17,6 +17,7 @@ from __future__ import annotations
 import json
 import os
 import sys
+from pathlib import Path
 from typing import Any, List, Optional
 
 try:
@@ -96,6 +97,17 @@ def cli(ctx, url: str, token: str, fmt: Optional[str]):
     ctx.ensure_object(dict)
     if not token:
         token = os.environ.get("AGENTSHROUD_GATEWAY_PASSWORD", "")
+    token_file = os.environ.get("AGENTSHROUD_TOKEN_FILE", "")
+    if not token and token_file:
+        # A secret path (e.g. /run/secrets/gateway_password) keeps the token out of argv.
+        # Operator-set; resolved and limited to a regular file (no FIFO/device reads).
+        secret_path = Path(token_file).resolve()
+        try:
+            if not secret_path.is_file():
+                raise FileNotFoundError(2, "not a regular file")
+            token = secret_path.read_text(encoding="utf-8").strip()
+        except OSError as exc:
+            raise click.UsageError(f"AGENTSHROUD_TOKEN_FILE unreadable: {exc.strerror}")
     ctx.obj["client"] = SCLClient(url, token)
     ctx.obj["fmt"] = fmt or _default_format()
 
@@ -335,6 +347,122 @@ def scan(ctx, scanner):
     """Trigger a security scan."""
     client: SCLClient = ctx.obj["client"]
     _output(client.run_scan(scanner), ctx.obj["fmt"])
+
+
+# ---------------------------------------------------------------------------
+# Inbound MCP Edge (SCRUM-216 / SCRUM-210)
+# ---------------------------------------------------------------------------
+
+# Exit codes: 0 done, 1 refused/failed by the gateway, 3 not run (confirmation needed).
+_EXIT_REFUSED = 1
+_EXIT_UNCONFIRMED = 3
+
+
+def _edge_result(ctx, result: Any) -> None:
+    """Print a write result; a refusal or an unconfirmed no-op never exits 0."""
+    if isinstance(result, dict) and result.get("code") == "CONFIRMATION_REQUIRED":
+        click.echo(f"Confirmation required: {result.get('message', '')}", err=True)
+        click.echo("Nothing was changed. Re-run with --confirm to proceed.", err=True)
+        ctx.exit(_EXIT_UNCONFIRMED)
+    detail = result.get("detail") if isinstance(result, dict) else None
+    if isinstance(result, dict) and (result.get("error") or detail is not None):
+        message = detail.get("message", detail) if isinstance(detail, dict) else detail
+        click.echo(f"Refused: {message or result.get('message', result)}", err=True)
+        ctx.exit(_EXIT_REFUSED)
+    _output(result, ctx.obj["fmt"])
+
+
+def _edge_target(vendor: Optional[str], client: Optional[str], jti: Optional[str]):
+    given = [(s, v) for s, v in (("vendor", vendor), ("client", client), ("jti", jti)) if v]
+    if len(given) != 1:
+        raise click.UsageError("Give exactly one of --vendor, --client or --jti.")
+    return given[0]
+
+
+def _edge_target_options(fn):
+    fn = click.option("--jti", default=None, help="Access-token jti")(fn)
+    fn = click.option("--client", "client_id", default=None, help="OAuth client_id")(fn)
+    fn = click.option("--vendor", default=None, help="Vendor profile, e.g. poke")(fn)
+    return fn
+
+
+@cli.group()
+def edge():
+    """Inbound MCP Edge: status, kill/unkill, enrollment."""
+    pass
+
+
+@edge.command("status")
+@click.pass_context
+def edge_status(ctx):
+    """Show edge state, per-vendor counters, kills and recent calls."""
+    client: SCLClient = ctx.obj["client"]
+    result = client.edge_status()
+    if ctx.obj["fmt"] != "table" or not isinstance(result, dict) or "vendors" not in result:
+        _output(result, ctx.obj["fmt"])
+        return
+    if not result.get("enabled"):
+        click.echo("Inbound MCP Edge: disabled (AGENTSHROUD_INBOUND_EDGE != 1)")
+        return
+    click.echo(f"Inbound MCP Edge: enabled  issuer: {result.get('issuer')}")
+    rows = [
+        {
+            "vendor": vendor,
+            "enabled": v.get("enabled"),
+            "mode": v.get("mode"),
+            "calls": v.get("calls"),
+            "denied": sum((v.get("denials") or {}).values()),
+            "dlp/canary": f"{v.get('dlp_hits', 0)}/{v.get('canary_hits', 0)}",
+            "lockdown": v.get("lockdown"),
+            "killed": v.get("killed"),
+        }
+        for vendor, v in result["vendors"].items()
+    ]
+    _output(rows, "table")
+    recent = result.get("recent") or []
+    if recent:
+        click.echo("")
+        _output(
+            [
+                {k: r.get(k) for k in ("vendor", "client_id", "tool", "outcome", "deny_reason")}
+                for r in recent[:20]
+            ],
+            "table",
+        )
+
+
+@edge.command("kill")
+@_edge_target_options
+@click.option("--reason", default="killed from CLI", show_default=True)
+@click.option("--confirm", is_flag=True, default=False)
+@click.pass_context
+def edge_kill(ctx, vendor, client_id, jti, reason, confirm):
+    """Revoke a vendor, client or token (takes effect on the next request)."""
+    scope, value = _edge_target(vendor, client_id, jti)
+    client: SCLClient = ctx.obj["client"]
+    _edge_result(ctx, client.edge_kill(scope, value, reason, confirm=confirm))
+
+
+@edge.command("unkill")
+@_edge_target_options
+@click.option("--confirm", is_flag=True, default=False)
+@click.pass_context
+def edge_unkill(ctx, vendor, client_id, jti, confirm):
+    """Lift a kill."""
+    scope, value = _edge_target(vendor, client_id, jti)
+    client: SCLClient = ctx.obj["client"]
+    _edge_result(ctx, client.edge_unkill(scope, value, confirm=confirm))
+
+
+@edge.command("enroll")
+@click.option("--vendor", required=True, help="Vendor profile, e.g. poke")
+@click.option("--ttl", "ttl_s", type=click.IntRange(60, 900), default=600, show_default=True)
+@click.option("--confirm", is_flag=True, default=False)
+@click.pass_context
+def edge_enroll(ctx, vendor, ttl_s, confirm):
+    """Open a one-time enrollment window; prints the code once."""
+    client: SCLClient = ctx.obj["client"]
+    _edge_result(ctx, client.edge_enroll(vendor, ttl_s=ttl_s, confirm=confirm))
 
 
 # ---------------------------------------------------------------------------

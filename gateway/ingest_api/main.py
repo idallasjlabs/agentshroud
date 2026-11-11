@@ -219,6 +219,11 @@ app.include_router(version_router, dependencies=[Depends(auth_dep)])
 # Mount Shared Command Layer (SCL) — unified /soc/v1/ API + /soc/ dashboard
 app.include_router(soc_router)
 
+# Inbound MCP Edge internal RPC (edge container only; own service-token auth)
+from gateway.inbound_edge.routes import router as inbound_edge_router  # noqa: E402
+
+app.include_router(inbound_edge_router)
+
 
 # Redirect bare /soc and /soc/ to canonical /soc/v1/ prefix
 @app.get("/soc", include_in_schema=False)

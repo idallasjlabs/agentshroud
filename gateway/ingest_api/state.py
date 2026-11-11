@@ -61,6 +61,9 @@ class AppState:
     report_store: Optional[object]
     # SSH proxy for /ssh/exec and /ssh/write_file (set by lifespan.py at startup)
     ssh_proxy: Optional[SSHProxy]
+    # SCRUM-203: the ONE app-wide ProgressiveLockdown (set by lifespan.py at startup);
+    # shared by the Telegram proxy and FalcoAlertWatcher.
+    progressive_lockdown: Optional[object]
 
 
 # Global application state instance

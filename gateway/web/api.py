@@ -107,6 +107,73 @@ def _bot_service_names() -> list[str]:
         return ["agentshroud-openclaw"]
 
 
+class KillSwitchError(RuntimeError):
+    """A kill switch action did not fully take effect.
+
+    ``status_code`` is 503 when no container engine could be obtained and
+    500 when the engine refused one or more operations.
+    """
+
+    def __init__(self, message: str, status_code: int = 500) -> None:
+        super().__init__(message)
+        self.status_code = status_code
+
+
+def execute_killswitch(mode: str) -> str:
+    """Perform a kill switch action against the container engine.
+
+    Shared by ``POST /api/killswitch/{mode}`` and the SOC
+    ``/soc/v1/killswitch/*`` endpoints so both surfaces (and both CLIs) act on
+    real containers. Returns the resulting status (``frozen``, ``shutdown``,
+    ``disconnected``); raises :class:`KillSwitchError` if anything was not
+    done, so callers can never report success for a no-op.
+    """
+    if mode not in VALID_KILLSWITCH_MODES:
+        raise KillSwitchError(
+            f"Mode must be one of: {sorted(VALID_KILLSWITCH_MODES)}", status_code=400
+        )
+    try:
+        engine = _get_engine()
+    except Exception as e:
+        logger.error("killswitch %s: container engine unavailable: %s", mode, e)
+        raise KillSwitchError(
+            f"Kill-switch {mode} failed: container engine unavailable: {e}", status_code=503
+        ) from e
+
+    if mode == "freeze":
+        failed = []
+        for name in _bot_service_names():
+            try:
+                engine.pause(name)
+            except Exception as _e:
+                logger.warning("killswitch freeze: could not pause %s: %s", name, _e)
+                failed.append(name)
+        if failed:
+            raise KillSwitchError(f"Kill-switch freeze partially failed: could not pause {failed}")
+        return "frozen"
+
+    if mode == "shutdown":
+        try:
+            engine.compose_down(RuntimeConfig.from_env().compose_file)
+        except Exception as e:
+            logger.error("Shutdown failed: %s", e)
+            raise KillSwitchError(f"Kill-switch shutdown failed: {e}") from e
+        return "shutdown"
+
+    # mode == "disconnect"
+    failed = []
+    for name in _bot_service_names():
+        try:
+            engine.stop(name)
+            engine.rm(name, force=True)
+        except Exception as _e:
+            logger.warning("killswitch disconnect: could not remove %s: %s", name, _e)
+            failed.append(name)
+    if failed:
+        raise KillSwitchError(f"Kill-switch disconnect partially failed: could not remove {failed}")
+    return "disconnected"
+
+
 def _valid_services() -> frozenset:
     """Compute valid service names from config + sidecars at call-time. Uses
     each bot's real resolved_container_name — not a hardcoded
@@ -357,51 +424,11 @@ async def killswitch(
             detail=f"Mode must be one of: {sorted(VALID_KILLSWITCH_MODES)}",
         )
 
-    engine = _get_engine()
-
-    if mode == "freeze":
-        failed = []
-        for name in _bot_service_names():
-            try:
-                engine.pause(name)
-            except Exception as _e:
-                logger.warning("killswitch freeze: could not pause %s: %s", name, _e)
-                failed.append(name)
-        if failed:
-            raise HTTPException(
-                status_code=500,
-                detail=f"Kill-switch freeze partially failed: could not pause {failed}",
-            )
-        return {"status": "frozen", "mode": mode}
-
-    elif mode == "shutdown":
-        try:
-            engine.compose_down(RuntimeConfig.from_env().compose_file)
-        except Exception as e:
-            logger.error("Shutdown failed: %s", e)
-            raise HTTPException(
-                status_code=500,
-                detail=f"Kill-switch shutdown failed: {e}",
-            )
-        return {"status": "shutdown", "mode": mode}
-
-    elif mode == "disconnect":
-        failed = []
-        for name in _bot_service_names():
-            try:
-                engine.stop(name)
-                engine.rm(name, force=True)
-            except Exception as _e:
-                logger.warning("killswitch disconnect: could not remove %s: %s", name, _e)
-                failed.append(name)
-        if failed:
-            raise HTTPException(
-                status_code=500,
-                detail=f"Kill-switch disconnect partially failed: could not remove {failed}",
-            )
-        return {"status": "disconnected", "mode": mode}
-
-    return {"status": "unknown"}
+    try:
+        result_status = execute_killswitch(mode)
+    except KillSwitchError as e:
+        raise HTTPException(status_code=e.status_code, detail=str(e))
+    return {"status": result_status, "mode": mode}
 
 
 # --- Configuration ----------------------------------------------------------

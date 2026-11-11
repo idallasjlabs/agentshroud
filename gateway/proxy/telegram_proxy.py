@@ -403,6 +403,7 @@ class TelegramAPIProxy:
         replay_buffer=None,
         greeter=None,
         default_bot_id: str = "openclaw",
+        lockdown=None,
     ):
         self.pipeline = pipeline
         self.middleware_manager = middleware_manager
@@ -495,12 +496,19 @@ class TelegramAPIProxy:
 
         # Progressive lockdown: per-user cumulative block counter with escalating responses.
         # 3 blocks → owner alert; 5 blocks → double rate limit window; 10 → session suspended.
-        try:
-            from gateway.security.progressive_lockdown import ProgressiveLockdown
+        # SCRUM-203: production injects the ONE app-wide instance
+        # (app_state.progressive_lockdown, created in lifespan) so Falco and Telegram
+        # escalate the same principal state. A private instance is the fallback for
+        # standalone construction (tests, tools).
+        if lockdown is not None:
+            self._lockdown = lockdown
+        else:
+            try:
+                from gateway.security.progressive_lockdown import ProgressiveLockdown
 
-            self._lockdown = ProgressiveLockdown()
-        except Exception:
-            self._lockdown = None
+                self._lockdown = ProgressiveLockdown()
+            except Exception:
+                self._lockdown = None
 
         # Track which collaborator user IDs have already received the disclosure notice
         # this session. Persisted in-memory only — resets on gateway restart (acceptable).
@@ -598,6 +606,16 @@ class TelegramAPIProxy:
             pass
         except Exception as _dne:
             logger.debug("Could not load display names: %s", _dne)
+
+    def attach_lockdown(self, lockdown) -> None:
+        """Use the app-wide ProgressiveLockdown (SCRUM-203).
+
+        Called from lifespan startup with app_state.progressive_lockdown, because
+        this proxy is constructed at module import, before lifespan runs.
+        """
+        if lockdown is None:
+            raise ValueError("attach_lockdown requires a ProgressiveLockdown instance")
+        self._lockdown = lockdown
 
     def _is_immune(self, user_id: str) -> bool:
         """Return True if user_id has active (non-expired) immunity."""
@@ -4369,6 +4387,26 @@ class TelegramAPIProxy:
                             )
                     except Exception as _ce:
                         logger.error("Egress callback error (non-fatal): %s", _ce)
+                elif cb_data.startswith("edge_appr:"):
+                    # Inbound MCP Edge write approval (SCRUM-207). Owner-only; the
+                    # handler itself also refuses non-owners.
+                    try:
+                        from gateway.ingest_api.state import app_state as _app_state
+
+                        cb_user_id = str((callback_query.get("from") or {}).get("id", ""))
+                        _edge = getattr(_app_state, "inbound_edge", None)
+                        _is_owner = bool(
+                            cb_user_id and self._rbac and self._rbac.is_owner(cb_user_id)
+                        )
+                        if _edge is None:
+                            _toast = "Inbound edge is not running on this instance"
+                        else:
+                            _toast = await _edge.approvals.handle_callback(
+                                cb_data, user_id=cb_user_id, is_owner=_is_owner
+                            )
+                        await self._answer_callback_query(callback_query.get("id", ""), _toast)
+                    except Exception as _ce:
+                        logger.error("Edge approval callback error (non-fatal): %s", _ce)
                 elif cb_data.startswith("collab_approve_") or cb_data.startswith("collab_deny_"):
                     # Inline button tap from the access request notification.
                     try:

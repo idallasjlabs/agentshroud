@@ -210,6 +210,10 @@ class RedactionResult(BaseModel):
     sanitized_content: str
     redactions: list[RedactionDetail]
     entity_types_found: list[str]
+    # True only when enforcement_action == "block" (mode enforce) and PII at/above
+    # the confidence threshold was found; sanitized_content is then a block notice
+    # that carries no PII. Defaults False so redact-mode callers are unchanged.
+    blocked: bool = False
 
 
 class AgentTarget(BaseModel):

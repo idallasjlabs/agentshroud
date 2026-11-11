@@ -28,6 +28,8 @@ security_assessment/.assessment_env
 # SSH & GPG keys
 .ssh/
 *.pem
+# Public verification key for the signed Inbound Edge tool manifest (no secret).
+!config/inbound-edge/descriptors.pub.pem
 *.key
 !*.key.example
 *.p12
@@ -415,3 +417,6 @@ reports/sunday/
 # reboot or session handoff, not source. Never commit.
 package-lock.json
 yarn.lock
+
+# Benchmark run output (SCRUM-201); the baseline stays tracked
+.benchmarks/current.json

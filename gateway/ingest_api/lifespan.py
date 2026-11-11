@@ -111,6 +111,25 @@ async def lifespan(app: FastAPI):
     # === STARTUP ===
     # Make app_state accessible via request.app.state for route files
     app.state.app_state = app_state
+
+    # SCRUM-203: ONE app-wide ProgressiveLockdown, keyed by principal string.
+    # Created before any consumer (Telegram proxy, FalcoAlertWatcher) so they all
+    # escalate the same state. The Telegram proxy is built at main.py import time,
+    # before lifespan, so it is re-pointed at the shared instance here.
+    from ..security.progressive_lockdown import ProgressiveLockdown as _ProgressiveLockdown
+
+    app_state.progressive_lockdown = _ProgressiveLockdown()
+    try:
+        from .main import _telegram_proxy as _tg_proxy_for_lockdown
+
+        _tg_proxy_for_lockdown.attach_lockdown(app_state.progressive_lockdown)
+        logger.info("✓ ProgressiveLockdown shared by Telegram proxy and Falco watcher")
+    except Exception as _ld_exc:
+        logger.error(
+            "✗ ProgressiveLockdown: could not attach shared instance to Telegram proxy: %s",
+            _ld_exc,
+        )
+
     # Suppress known benign Presidio registry-language warnings (es/it/pl recognizers on en registry).
     logging.getLogger("presidio-analyzer").setLevel(logging.ERROR)
     _install_uvicorn_warning_filter()
@@ -2380,6 +2399,25 @@ async def lifespan(app: FastAPI):
     else:
         app_state._hermes_api_task = None
 
+    # Inbound MCP Edge (SCRUM-198) — off unless AGENTSHROUD_INBOUND_EDGE=1. A bad
+    # descriptor manifest or vendor profile refuses the edge, not the gateway.
+    app_state.inbound_edge = None
+    app_state._edge_fwd_task = None
+    try:
+        from gateway.inbound_edge.routes import start_edge_forwarder
+        from gateway.inbound_edge.service import build_edge_service
+
+        app_state.inbound_edge = await build_edge_service(app_state)
+        if app_state.inbound_edge is not None:
+            app_state._edge_fwd_task = start_edge_forwarder(
+                int(os.environ.get("AGENTSHROUD_EDGE_FORWARD_PORT", "8443")),
+                os.environ.get("AGENTSHROUD_EDGE_UPSTREAM_HOST", "agentshroud-mcp-edge"),
+                int(os.environ.get("AGENTSHROUD_EDGE_UPSTREAM_PORT", "8443")),
+            )
+    except Exception as _edge_exc:
+        app_state.inbound_edge = None
+        logger.critical("✗ Inbound MCP Edge refused to start: %s", _edge_exc)
+
     install_log_handler()
     logger.info(f"AgentShroud Gateway ready at {app_state.config.bind}:{app_state.config.port}")
     logger.info("=" * 80)
@@ -2468,6 +2506,17 @@ async def lifespan(app: FastAPI):
             await hermes_dash_task
         except asyncio.CancelledError:
             pass
+
+    # Stop the Inbound MCP Edge
+    edge_fwd_task = getattr(app_state, "_edge_fwd_task", None)
+    if edge_fwd_task and not edge_fwd_task.done():
+        edge_fwd_task.cancel()
+        try:
+            await edge_fwd_task
+        except asyncio.CancelledError:
+            pass
+    if getattr(app_state, "inbound_edge", None) is not None:
+        await app_state.inbound_edge.close()
 
     # Stop Hermes API TCP forwarder
     hermes_api_task = getattr(app_state, "_hermes_api_task", None)

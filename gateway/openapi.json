@@ -75,6 +75,17 @@
       },
       "ApprovalDecisionRequest": {
         "properties": {
+          "mfa_code": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Mfa Code"
+          },
           "reason": {
             "default": "",
             "title": "Reason",
@@ -262,6 +273,99 @@
           }
         },
         "title": "DisconnectRequest",
+        "type": "object"
+      },
+      "EdgeEnrollRequest": {
+        "properties": {
+          "confirm": {
+            "default": false,
+            "title": "Confirm",
+            "type": "boolean"
+          },
+          "ttl_s": {
+            "default": 600,
+            "maximum": 900.0,
+            "minimum": 60.0,
+            "title": "Ttl S",
+            "type": "integer"
+          },
+          "vendor": {
+            "maxLength": 64,
+            "minLength": 1,
+            "title": "Vendor",
+            "type": "string"
+          }
+        },
+        "required": [
+          "vendor"
+        ],
+        "title": "EdgeEnrollRequest",
+        "type": "object"
+      },
+      "EdgeKillRequest": {
+        "properties": {
+          "confirm": {
+            "default": false,
+            "title": "Confirm",
+            "type": "boolean"
+          },
+          "reason": {
+            "default": "killed from Command Center",
+            "maxLength": 500,
+            "title": "Reason",
+            "type": "string"
+          },
+          "scope": {
+            "enum": [
+              "vendor",
+              "client",
+              "jti"
+            ],
+            "title": "Scope",
+            "type": "string"
+          },
+          "value": {
+            "maxLength": 256,
+            "minLength": 1,
+            "title": "Value",
+            "type": "string"
+          }
+        },
+        "required": [
+          "scope",
+          "value"
+        ],
+        "title": "EdgeKillRequest",
+        "type": "object"
+      },
+      "EdgeUnkillRequest": {
+        "properties": {
+          "confirm": {
+            "default": false,
+            "title": "Confirm",
+            "type": "boolean"
+          },
+          "scope": {
+            "enum": [
+              "vendor",
+              "client",
+              "jti"
+            ],
+            "title": "Scope",
+            "type": "string"
+          },
+          "value": {
+            "maxLength": 256,
+            "minLength": 1,
+            "title": "Value",
+            "type": "string"
+          }
+        },
+        "required": [
+          "scope",
+          "value"
+        ],
+        "title": "EdgeUnkillRequest",
         "type": "object"
       },
       "EgressAllowlistResponse": {
@@ -3420,6 +3524,25 @@
         "summary": "Dashboard Ws Token"
       }
     },
+    "/edge/v1/rpc": {
+      "post": {
+        "operationId": "edge_rpc_edge_v1_rpc_post",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Edge Rpc",
+        "tags": [
+          "inbound-edge"
+        ]
+      }
+    },
     "/email/send": {
       "post": {
         "description": "Email send gateway (P3: channel ownership).\n\nThe bot submits email send requests here instead of calling Gmail directly.\nThe bot container has no internet access; this endpoint sends via SMTP_SSL\non the gateway. Controls:\n- PII scan on body (redacts before sending)\n- Recipient allowlist: known addresses are sent immediately\n- Unknown recipients: submitted to approval queue \u2192 202 (queued)\n\nAuthentication required.",
@@ -6125,6 +6248,101 @@
         ]
       }
     },
+    "/soc/v1/agents": {
+      "get": {
+        "description": "One registry of every agent AgentShroud proxies or watches (SCRUM-216).\n\n``derived_mode`` comes from configuration: hosted_local when local bots are\nconfigured and the edge is on, local when the edge is off, hosted otherwise.",
+        "operationId": "list_agents_soc_v1_agents_get",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "mode",
+            "required": false,
+            "schema": {
+              "default": "auto",
+              "pattern": "^(auto|hosted|hosted_local|local)$",
+              "title": "Mode",
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "authorization",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-soc-token",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "X-Soc-Token"
+            }
+          },
+          {
+            "in": "cookie",
+            "name": "soc_session",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Soc Session"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response List Agents Soc V1 Agents Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "List Agents",
+        "tags": [
+          "soc"
+        ]
+      }
+    },
     "/soc/v1/approvals/pending": {
       "get": {
         "operationId": "list_pending_approvals_soc_v1_approvals_pending_get",
@@ -6277,11 +6495,18 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ApprovalDecisionRequest"
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/ApprovalDecisionRequest"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Body"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -6379,11 +6604,18 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ApprovalDecisionRequest"
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/ApprovalDecisionRequest"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Body"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -7462,6 +7694,360 @@
           }
         },
         "summary": "Revoke Delegation",
+        "tags": [
+          "soc"
+        ]
+      }
+    },
+    "/soc/v1/edge/enroll": {
+      "post": {
+        "description": "Open a one-time enrollment window for a vendor and return its code once.\n\nThe code is a bearer secret: it is never logged or audited, and the response\nis marked no-store. /soc is tailnet-only, so the code never crosses the edge.",
+        "operationId": "edge_enroll_soc_v1_edge_enroll_post",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "authorization",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-soc-token",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "X-Soc-Token"
+            }
+          },
+          {
+            "in": "cookie",
+            "name": "soc_session",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Soc Session"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EdgeEnrollRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Edge Enroll",
+        "tags": [
+          "soc"
+        ]
+      }
+    },
+    "/soc/v1/edge/kill": {
+      "post": {
+        "description": "Revoke a vendor, client or token. The store is read on every edge call, so\nthe kill takes effect on the next request (IEC 62443 FR2).",
+        "operationId": "edge_kill_soc_v1_edge_kill_post",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "authorization",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-soc-token",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "X-Soc-Token"
+            }
+          },
+          {
+            "in": "cookie",
+            "name": "soc_session",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Soc Session"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EdgeKillRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Edge Kill",
+        "tags": [
+          "soc"
+        ]
+      }
+    },
+    "/soc/v1/edge/status": {
+      "get": {
+        "description": "Inbound MCP Edge state for the Command Center; ``enabled: false`` when off.",
+        "operationId": "get_edge_status_soc_v1_edge_status_get",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "authorization",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-soc-token",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "X-Soc-Token"
+            }
+          },
+          {
+            "in": "cookie",
+            "name": "soc_session",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Soc Session"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Get Edge Status Soc V1 Edge Status Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Get Edge Status",
+        "tags": [
+          "soc"
+        ]
+      }
+    },
+    "/soc/v1/edge/unkill": {
+      "post": {
+        "description": "Lift a kill. Lifting a kill that does not exist is a 404, never a silent ok.",
+        "operationId": "edge_unkill_soc_v1_edge_unkill_post",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "authorization",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-soc-token",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "X-Soc-Token"
+            }
+          },
+          {
+            "in": "cookie",
+            "name": "soc_session",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Soc Session"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EdgeUnkillRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Edge Unkill",
         "tags": [
           "soc"
         ]
