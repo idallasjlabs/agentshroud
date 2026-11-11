@@ -235,22 +235,45 @@ class TestAgentsRegistry:
         watch = [a for a in body["agents"] if a["mechanism"] == "host_egress_watch"]
         assert {a["id"] for a in watch} == {
             "perplexity-personal-computer",
-            "meta-muse",
+            "meta-muse-local",
             "gemini-spark-desktop",
             "openai-dots-desktop",
         }
         assert all(a["status"] == "not_configured" for a in watch)
         assert all("SCRUM-219" in a["note"] for a in watch)
         none = [a for a in body["agents"] if a["mechanism"] == "none"]
-        assert {a["id"] for a in none} == {"grok-bot", "instinct", "manus-cue"}
+        # Grok Bot has an edge profile now, so it is no longer "no hook".
+        assert {a["id"] for a in none} == {"instinct", "manus-cue"}
         assert all(a["status"] == "no_technical_hook" for a in none)
         assert not any(a["status"] == "ok" for a in body["agents"])
 
     async def test_hosted_rows_listed_from_disk_when_edge_disabled(self, client, state):
         body = (await client.get("/soc/v1/agents?mode=hosted")).json()
         vendors = {a["id"]: a for a in body["agents"] if a["mechanism"] == "inbound_mcp_edge"}
-        assert set(vendors) == {"claude-duet", "poke", "gemini-spark", "openai-dots"}
+        assert set(vendors) == {
+            "claude-duet",
+            "poke",
+            "gemini-spark",
+            "openai-dots",
+            "meta-muse",
+            "xai-grok-bot",
+        }
         assert all(v["status"] == "edge_disabled" for v in vendors.values())
+        assert vendors["openai-dots"]["connection"] == "chat-bridge"
+        assert vendors["meta-muse"]["support"] == "unconfirmed"
+        assert vendors["claude-duet"]["docs"]
+
+    async def test_agent_ids_are_unique(self, client, state):
+        for mode in ("hosted", "hosted_local", "auto"):
+            ids = [
+                a["id"] for a in (await client.get(f"/soc/v1/agents?mode={mode}")).json()["agents"]
+            ]
+            assert len(ids) == len(set(ids)), (mode, ids)
+
+    async def test_edge_rows_carry_connection_and_support(self, client, state, edge):
+        row = _rows((await client.get("/soc/v1/agents?mode=hosted")).json(), "claude-duet")[0]
+        assert row["connection"] == "mcp" and row["support"] in ("documented", "unconfirmed")
+        assert "docs" in row
 
     async def test_local_health_from_service_manager(self, client, state, monkeypatch):
         state.config.bots = {"hermes": _bot("hermes", "Hermes", "h")}

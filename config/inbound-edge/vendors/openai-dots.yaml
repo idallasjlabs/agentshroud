@@ -2,6 +2,10 @@
 # Ships DISABLED. Enable only on the owner's instruction (runbook: 04-runbook.md).
 vendor: openai-dots
 display_name: OpenAI Dots
+connection: chat-bridge
+support: unconfirmed
+docs:
+  - https://learn.chatgpt.com/codex/dots/computers-and-apps
 enabled: false
 mode: enforce
 auth:
@@ -15,7 +19,6 @@ auth:
 tools:
   lab_search: read
   pke_status: read
-  delegate_to_hermes: write
 limits:
   per_client_per_minute: 30
   per_vendor_per_minute: 60

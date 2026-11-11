@@ -17,6 +17,8 @@ from gateway.inbound_edge import profiles as p
 BASE = {
     "vendor": "test-vendor",
     "display_name": "Test Vendor",
+    "connection": "mcp",
+    "support": "documented",
     "enabled": True,
     "mode": "enforce",
     "auth": {
@@ -70,6 +72,13 @@ class TestValidProfile:
         assert prof.tool_access("delegate_to_hermes") == "write"
         assert prof.tool_access("pke_status") is None
 
+    def test_connection_support_and_docs_are_exposed(self, tmp_path):
+        data = _variant(enabled=False, connection="chat-bridge", support="unconfirmed")
+        data["docs"] = ["https://vendor.example/docs"]
+        prof = p.load_profiles(_write(tmp_path, data))["test-vendor"]
+        assert prof.connection == "chat-bridge" and prof.support == "unconfirmed"
+        assert prof.docs == ("https://vendor.example/docs",)
+
     def test_file_name_must_match_vendor(self, tmp_path):
         with pytest.raises(p.ProfileError, match="file name"):
             p.load_profiles(_write(tmp_path, BASE, name="other"))
@@ -92,6 +101,14 @@ class TestFailClosed:
             ({"max_response_bytes": 10 * 1024 * 1024}, "max_response_bytes"),
             ({"source_cidrs": ["not-a-cidr"]}, "not-a-cidr"),
             ({"auth__static_bearer": True}, "not implemented"),
+            ({"connection": _DELETE}, "connection"),
+            ({"connection": "smtp"}, "smtp"),
+            ({"support": _DELETE}, "support"),
+            ({"support": "rumoured"}, "rumoured"),
+            ({"docs": ["http://vendor.example/docs"]}, "https"),
+            # The Slack/Teams chat bridge (SCRUM-220) is not built: an enabled
+            # chat-bridge vendor must refuse, not load and silently do nothing.
+            ({"connection": "chat-bridge"}, "chat-bridge.*not implemented"),
         ],
     )
     def test_invalid_profile_refuses_to_load(self, tmp_path, changes, match):
@@ -137,11 +154,40 @@ class TestDlpFloor:
 class TestShippedProfiles:
     def test_every_shipped_vendor_is_disabled_and_enforcing(self):
         profiles = p.load_profiles(p.VENDORS_DIR)
-        assert set(profiles) == {"claude-duet", "poke", "gemini-spark", "openai-dots"}
+        assert set(profiles) == {
+            "claude-duet",
+            "poke",
+            "gemini-spark",
+            "openai-dots",
+            "meta-muse",
+            "xai-grok-bot",
+        }
         for vendor, prof in profiles.items():
             assert prof.enabled is False, vendor
             assert prof.mode == "enforce", vendor
             assert prof.static_bearer is False, vendor
+            assert prof.docs, f"{vendor}: cite the vendor docs the profile is based on"
+
+    def test_unconfirmed_vendors_cannot_register_or_write(self):
+        """A vendor whose custom-MCP support is not confirmed ships with no redirect
+        URI (so OAuth cannot complete) and read-only tools."""
+        for vendor, prof in p.load_profiles(p.VENDORS_DIR).items():
+            if prof.support != "unconfirmed":
+                continue
+            assert prof.redirect_uris == (), vendor
+            assert set(prof.tools.values()) <= {"read"}, vendor
+
+    def test_connection_types_of_shipped_vendors(self):
+        profiles = p.load_profiles(p.VENDORS_DIR)
+        assert profiles["openai-dots"].connection == "chat-bridge"
+        for vendor in ("claude-duet", "poke", "gemini-spark", "meta-muse", "xai-grok-bot"):
+            assert profiles[vendor].connection == "mcp", vendor
+
+    def test_claude_profile_covers_every_claude_surface(self):
+        """Duet, chat and Cowork share one Claude account and client identity, so the
+        edge cannot tell them apart; the profile must not claim it can."""
+        prof = p.load_profiles(p.VENDORS_DIR)["claude-duet"]
+        assert prof.display_name == "Anthropic Claude (Duet, chat, Cowork)"
 
     def test_claude_duet_allows_both_claude_callbacks(self):
         prof = p.load_profiles(p.VENDORS_DIR)["claude-duet"]

@@ -1,7 +1,14 @@
 # Inbound MCP Edge vendor profile — see docs/inbound-mcp-edge/vendors.md.
 # Ships DISABLED. Enable only on the owner's instruction (runbook: 04-runbook.md).
 vendor: claude-duet
-display_name: Claude Duet
+# Duet, claude.ai chat and Cowork sign in with the same Claude account and client
+# identity, so the edge cannot tell them apart; this profile governs all three.
+display_name: Anthropic Claude (Duet, chat, Cowork)
+connection: mcp
+support: documented
+docs:
+  - https://claude.com/docs/connectors/building/authentication.md
+  - https://support.claude.com/en/articles/17631495-get-started-with-claude-duet
 enabled: false
 mode: enforce
 auth:
