@@ -2086,6 +2086,29 @@ async def _edge_snapshot(edge) -> Dict[str, Any]:
     return {"vendors": vendors, "kills": kills, "clients": clients}
 
 
+_DEPLOYMENT_MODES = ("local", "cloud", "hybrid")
+
+
+def _deployment_state(edge_on: bool) -> Dict[str, Any]:
+    """The declared AGENTSHROUD_DEPLOYMENT and whether the running edge matches it.
+
+    Declared by the host (scripts/lib/deployment-mode.sh); the Command Center shows
+    a mismatch instead of trusting either side.
+    """
+    mode = os.environ.get("AGENTSHROUD_DEPLOYMENT", "local") or "local"
+    if mode not in _DEPLOYMENT_MODES:
+        return {
+            "deployment": "invalid",
+            "deployment_drift": f"AGENTSHROUD_DEPLOYMENT={mode!r} is not local, cloud or hybrid",
+        }
+    drift = None
+    if mode != "local" and not edge_on:
+        drift = f"deployment={mode} but the Inbound MCP Edge is off"
+    elif mode == "local" and edge_on:
+        drift = "deployment=local but the Inbound MCP Edge is on"
+    return {"deployment": mode, "deployment_drift": drift}
+
+
 def _profile_catalog(profile) -> Dict[str, Any]:
     """How a vendor connects and whether its custom-MCP support is documented."""
     return {
@@ -2233,6 +2256,7 @@ async def list_agents(
         "mode": effective,
         "derived_mode": derived,
         "edge_enabled": edge is not None,
+        **_deployment_state(edge is not None),
         "agents": agents,
     }
 
@@ -2246,6 +2270,7 @@ async def get_edge_status(caller: SCLCaller = Depends(get_caller)) -> Dict:
         return {
             "enabled": False,
             "issuer": None,
+            **_deployment_state(False),
             "vendors": {},
             "recent": [],
             "kills": [],
@@ -2256,7 +2281,13 @@ async def get_edge_status(caller: SCLCaller = Depends(get_caller)) -> Dict:
     for vendor, st in list(edge.pipeline.stats.items()):
         recent += [{"vendor": vendor, **r} for r in list(st.recent)]
     recent.sort(key=lambda r: r.get("ts") or 0, reverse=True)
-    return {"enabled": True, "issuer": edge.issuer, **snap, "recent": recent[:50]}
+    return {
+        "enabled": True,
+        "issuer": edge.issuer,
+        **_deployment_state(True),
+        **snap,
+        "recent": recent[:50],
+    }
 
 
 class EdgeKillRequest(BaseModel):

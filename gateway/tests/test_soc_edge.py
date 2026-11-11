@@ -366,13 +366,60 @@ class TestLocalAgentHealthHelper:
 # ---------------------------------------------------------------------------
 
 
+class TestDeploymentMode:
+    """AGENTSHROUD_DEPLOYMENT (scripts/lib/deployment-mode.sh) shown next to what runs."""
+
+    @pytest.mark.parametrize(
+        "declared,edge_on,drift",
+        [
+            ("local", False, None),
+            ("hybrid", True, None),
+            ("cloud", True, None),
+            ("cloud", False, "deployment=cloud but the Inbound MCP Edge is off"),
+            ("hybrid", False, "deployment=hybrid but the Inbound MCP Edge is off"),
+            ("local", True, "deployment=local but the Inbound MCP Edge is on"),
+        ],
+    )
+    async def test_declared_mode_and_drift(
+        self, client, state, monkeypatch, declared, edge_on, drift, tmp_path
+    ):
+        monkeypatch.setenv("AGENTSHROUD_DEPLOYMENT", declared)
+        if edge_on:
+            state.inbound_edge = object()
+            monkeypatch.setattr(soc_router, "_hosted_edge_rows", _no_rows)
+        for path in ("/soc/v1/agents?mode=local", "/soc/v1/edge/status"):
+            if edge_on and path.endswith("status"):
+                continue  # a bare object is not a real edge service
+            body = (await client.get(path)).json()
+            assert body["deployment"] == declared, path
+            assert body["deployment_drift"] == drift, path
+
+    async def test_unset_reads_as_local(self, client, state, monkeypatch):
+        monkeypatch.delenv("AGENTSHROUD_DEPLOYMENT", raising=False)
+        body = (await client.get("/soc/v1/edge/status")).json()
+        assert body["deployment"] == "local" and body["deployment_drift"] is None
+
+    async def test_invalid_value_is_reported_not_guessed(self, client, state, monkeypatch):
+        monkeypatch.setenv("AGENTSHROUD_DEPLOYMENT", "both")
+        body = (await client.get("/soc/v1/agents?mode=local")).json()
+        assert body["deployment"] == "invalid"
+        assert "'both'" in body["deployment_drift"]
+
+
+async def _no_rows(edge):
+    return []
+
+
 class TestEdgeStatus:
-    async def test_disabled_state(self, client, state):
+    async def test_disabled_state(self, client, state, monkeypatch):
+        monkeypatch.delenv("AGENTSHROUD_DEPLOYMENT", raising=False)
         resp = await client.get("/soc/v1/edge/status")
         assert resp.status_code == 200
         assert resp.json() == {
             "enabled": False,
             "issuer": None,
+            "deployment": "local",
+            "deployment_drift": None,
             "vendors": {},
             "recent": [],
             "kills": [],
@@ -688,6 +735,28 @@ def test_command_center_has_agents_and_edge_tabs():
     for handler in ("_edgeKill", "_edgeUnkill", "_edgeEnroll"):
         for call in re.findall(rf"window\.{handler}\(([^)]*)\)", js):
             assert "${" not in call, call
+
+
+def test_command_center_shows_deployment_and_connection():
+    from pathlib import Path
+
+    soc_dir = Path(soc_router.__file__).parent
+    html = (soc_dir / "templates" / "soc.html").read_text(encoding="utf-8")
+    js = (soc_dir / "static" / "soc.js").read_text(encoding="utf-8")
+    agents_pane = html[html.index('<div id="tab-agents"') : html.index('<div id="tab-edge"')]
+    assert "<th>Connection</th>" in agents_pane
+    assert agents_pane.count("<th>") == 11 and 'colspan="11"' in agents_pane
+    agents_js = js[js.index("async function _loadAgents") : js.index("window._reloadAgents")]
+    assert 'colspan="10"' not in agents_js and "_connectionHtml(a)" in agents_js
+    assert "_deploymentHtml(body)" in agents_js
+    edge_js = js[js.index("async function _loadEdge") : js.index("window._reloadEdge")]
+    assert edge_js.count("_deploymentHtml(st)") == 2 and "_connectionHtml(v)" in edge_js
+    conn = js[js.index("function _connectionHtml") : js.index("function _denialsText")]
+    # Vendor doc links: https only, escaped, opened without opener access.
+    assert "startsWith('https://')" in conn and 'rel="noopener noreferrer"' in conn
+    assert 'href="${_esc(u)}"' in conn
+    # Drift text and issuer reach innerHTML only through _esc.
+    assert "_esc(body.deployment_drift)" in js and "_esc(st.issuer" in js
 
 
 def test_edge_service_exposes_enforced_profiles():
