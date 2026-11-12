@@ -15,6 +15,10 @@ the facade is fake, so network time to SearXNG is excluded.
 There is no recorded baseline yet; the test reports the numbers and asserts a
 generous ceiling that only catches pathological regressions. Record a baseline on
 the reference arm64/macOS machine before tightening it.
+
+The gate is on P50, not P99: on shared GitHub Linux runners (xdist + coverage)
+P99 swung 69-211 ms while P50 held at 2.8-3.4 ms on every runner. A tail gate
+there measures neighbour noise, not this code.
 """
 
 import statistics
@@ -23,7 +27,7 @@ import time
 from gateway.tests.test_edge_pipeline import _token, edge  # noqa: F401  (fixture reuse)
 
 ITERATIONS = 300
-P99_CEILING_MS = 50.0
+P50_CEILING_MS = 25.0
 
 
 def _pct(samples, p):
@@ -56,4 +60,4 @@ async def test_edge_read_call_latency(edge, capsys):  # noqa: F811
             f"\nedge read call: mean={statistics.fmean(samples):.3f}ms "
             f"p50={p50:.3f}ms p99={p99:.3f}ms n={ITERATIONS}"
         )
-    assert p99 < P99_CEILING_MS
+    assert p50 < P50_CEILING_MS
