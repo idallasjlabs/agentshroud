@@ -124,9 +124,12 @@ jobs:
           REF="ghcr.io/${{ github.repository_owner }}/agentshroud-mcp-edge:${{ github.sha }}"
           docker tag "$EDGE_LOCAL_TAG" "$REF"
           docker push "$REF"
-          DIGEST_REF="$(docker inspect --format '{{index .RepoDigests 0}}' "$REF")"
+          # RepoDigests also lists the local build tag's digest, in no fixed
+          # order, so pick the entry for the repository we just pushed to.
+          REPO="${REF%:*}"
+          DIGEST_REF="$(docker inspect --format '{{range .RepoDigests}}{{println .}}{{end}}' "$REF" | grep -m1 "^${REPO}@sha256:" || true)"
           case "$DIGEST_REF" in
-            ghcr.io/*@sha256:*) ;;
+            "${REPO}"@sha256:*) ;;
             *) echo "could not resolve pushed digest (got '$DIGEST_REF')" >&2; exit 1 ;;
           esac
           echo "digest_ref=$DIGEST_REF" >> "$GITHUB_OUTPUT"
