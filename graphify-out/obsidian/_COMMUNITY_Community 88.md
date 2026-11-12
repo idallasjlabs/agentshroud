@@ -1,13 +1,14 @@
 ---
 type: community
-members: 85
+members: 86
 ---
 
 # Community 88
 
-**Members:** 85 nodes
+**Members:** 86 nodes
 
 ## Members
+- [[.__init__()_83]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[.__post_init__()_3]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[._missing_()]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[._propagate()]] - code - gateway/security/cross_bot_trust_ledger.py
@@ -102,19 +103,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 35 edges to [[_COMMUNITY_Community 11]]
-- 14 edges to [[_COMMUNITY_Community 24]]
-- 5 edges to [[_COMMUNITY_Community 63]]
-- 2 edges to [[_COMMUNITY_Community 9]]
+- 39 edges to [[_COMMUNITY_Community 7]]
+- 15 edges to [[_COMMUNITY_Community 24]]
+- 2 edges to [[_COMMUNITY_Community 493]]
 - 1 edge to [[_COMMUNITY_Community 8]]
 - 1 edge to [[_COMMUNITY_Community 489]]
-- 1 edge to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 84]]
-- 1 edge to [[_COMMUNITY_Community 133]]
+- 1 edge to [[_COMMUNITY_Community 63]]
+- 1 edge to [[_COMMUNITY_Community 924]]
+- 1 edge to [[_COMMUNITY_Community 9]]
 
 ## Top bridge nodes
 - [[BotIncidentSeverity]] - degree 25, connects to 5 communities
-- [[CrossBotTrustLedger]] - degree 37, connects to 4 communities
-- [[TrustDecayPolicy]] - degree 17, connects to 2 communities
+- [[CrossBotTrustLedger]] - degree 38, connects to 2 communities
 - [[cross_bot_trust_ledger.py]] - degree 6, connects to 2 communities
 - [[CrossBotTrustLedger_1]] - degree 26, connects to 1 community
+- [[TrustManager_3]] - degree 25, connects to 1 community

@@ -2,7 +2,7 @@
 source_file: "gateway/soc/router.py"
 type: "code"
 community: "Community 10"
-location: "L1497"
+location: "L1508"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,6 +13,7 @@ tags:
 
 ## Connections
 - [[DelegationPrivilege]] - `calls` [EXTRACTED]
+- [[HTTPException]] - `calls` [EXTRACTED]
 - [[Revoke a privilege delegation. Omit privilege to revoke all for the user.]] - `rationale_for` [EXTRACTED]
 - [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]

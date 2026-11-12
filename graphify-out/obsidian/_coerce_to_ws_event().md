@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "Community 169"
-location: "L123"
+community: "Community 6"
+location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_169
+  - community/Community_6
 ---
 
 # _coerce_to_ws_event()
@@ -15,6 +15,7 @@ tags:
 - [[._event_fan_out()]] - `calls` [EXTRACTED]
 - [[._matches()]] - `calls` [EXTRACTED]
 - [[.test_details_excludes_reserved_keys()]] - `calls` [EXTRACTED]
+- [[.test_edge_gateway_event_is_forwarded()]] - `calls` [EXTRACTED]
 - [[.test_egress_denied()]] - `calls` [EXTRACTED]
 - [[.test_event_type_key_fallback()]] - `calls` [EXTRACTED]
 - [[.test_invalid_dict_returns_none()]] - `calls` [EXTRACTED]
@@ -26,13 +27,15 @@ tags:
 - [[.test_source_key_fallback()]] - `calls` [EXTRACTED]
 - [[.test_type_mapping()]] - `calls` [EXTRACTED]
 - [[.test_unknown_severity_defaults_to_info()]] - `calls` [EXTRACTED]
+- [[.test_unmapped_gateway_event_still_dropped()]] - `calls` [EXTRACTED]
 - [[.test_wsevent_passthrough()]] - `calls` [EXTRACTED]
 - [[Convert an EventBus item to WSEvent, return None if conversion fails.]] - `rationale_for` [EXTRACTED]
 - [[SOCWebSocketHandler]] - `calls` [EXTRACTED]
 - [[WSEvent]] - `calls` [EXTRACTED]
 - [[WSEvent_1]] - `references` [EXTRACTED]
+- [[test_soc_edge.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[test_soc_websocket.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_169
+#graphify/code #graphify/EXTRACTED #community/Community_6

@@ -31,12 +31,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 707]]
+- 1 edge to [[_COMMUNITY_Community 50]]
 - 1 edge to [[_COMMUNITY_Community 398]]
 - 1 edge to [[_COMMUNITY_Community 1315]]
 - 1 edge to [[_COMMUNITY_Community 454]]
 - 1 edge to [[_COMMUNITY_Community 655]]
-- 1 edge to [[_COMMUNITY_Community 502]]
+- 1 edge to [[_COMMUNITY_Community 364]]
 
 ## Top bridge nodes
 - [[container-policy]] - degree 6, connects to 5 communities

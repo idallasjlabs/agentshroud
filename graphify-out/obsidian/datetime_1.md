@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/audit_archive.py"
+source_file: "gateway/inbound_edge/facades.py"
 type: "code"
-community: "Community 380"
-location: "L46"
+community: "Community 24"
+location: "L81"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_380
+  - community/Community_24
 ---
 
 # datetime
 
 ## Connections
-- [[archive_old_events()]] - `references` [EXTRACTED]
-- [[audit_archive.py]] - `imports_from` [EXTRACTED]
+- [[.__init__()_19]] - `references` [EXTRACTED]
+- [[EnvelopeSigner_1]] - `uses` [INFERRED]
+- [[facades.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_380
+#graphify/code #graphify/EXTRACTED #community/Community_24

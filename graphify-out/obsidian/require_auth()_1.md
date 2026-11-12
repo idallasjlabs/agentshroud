@@ -15,6 +15,7 @@ tags:
 - [[.test_invalid_token_raises_401()]] - `calls` [EXTRACTED]
 - [[.test_valid_token_authenticates()]] - `calls` [EXTRACTED]
 - [[HTTPAuthorizationCredentials_1]] - `references` [EXTRACTED]
+- [[HTTPException]] - `calls` [INFERRED]
 - [[Require valid Bearer token for all management endpoints.]] - `rationale_for` [EXTRACTED]
 - [[api.py]] - `contains` [EXTRACTED]
 - [[dashboard_endpoints.py]] - `imports` [EXTRACTED]

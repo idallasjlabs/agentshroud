@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "Community 11"
+community: "Community 7"
 location: "L184"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_11
+  - community/Community_7
 ---
 
 # TestPersistence
@@ -19,4 +19,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_11
+#graphify/code #graphify/INFERRED #community/Community_7

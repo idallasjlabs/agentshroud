@@ -17,7 +17,7 @@ members: 51
 - [[Constant-time allowlist check for an OTA ``token=`` value.      Returns True wh]] - rationale - voice_gateway/server.py
 - [[FastAPI_3]] - code - voice_gateway/server.py
 - [[Parse a spoken usetellaskswitch to modelagent command.      Returns (k]] - rationale - voice_gateway/server.py
-- [[Request_9]] - code - voice_gateway/server.py
+- [[Request_10]] - code - voice_gateway/server.py
 - [[Request body must carry the configured model, max_tokens=150, and     streamtru]] - rationale - gateway/tests/test_voice_gateway.py
 - [[Response_1]] - code - voice_gateway/server.py
 - [[Return the requested volume (0-100, clamped) for a spoken     set the volume]] - rationale - voice_gateway/server.py
@@ -29,7 +29,7 @@ members: 51
 - [[True for a spoken READ of the current volume (what's the volume,     current]] - rationale - voice_gateway/server.py
 - [[WebSocket_8]] - code - voice_gateway/server.py
 - [[_State]] - code - voice_gateway/server.py
-- [[__init__.py_17]] - code - voice_gateway/__init__.py
+- [[__init__.py_18]] - code - voice_gateway/__init__.py
 - [[__main__.py]] - code - voice_gateway/__main__.py
 - [[_answer_volume_query()]] - code - voice_gateway/server.py
 - [[_call_llm_stream posts to v1chatcompletions with streamtrue and     yields e]] - rationale - gateway/tests/test_voice_gateway.py

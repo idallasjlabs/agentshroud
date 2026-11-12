@@ -1,13 +1,15 @@
 ---
 type: community
-members: 10
+members: 12
 ---
 
 # Community 647
 
-**Members:** 10 nodes
+**Members:** 12 nodes
 
 ## Members
+- [[Return the HTTP Basic auth header value base64(emailtoken)._1]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[build_basic_auth_header()_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
 - [[jira_dev_ticket add_comment()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
 - [[jira_dev_ticket build_basic_auth_header()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
 - [[jira_dev_ticket build_comment_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
@@ -27,11 +29,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 238]]
+- 3 edges to [[_COMMUNITY_Community 238]]
 - 2 edges to [[_COMMUNITY_Community 188]]
 - 1 edge to [[_COMMUNITY_Community 2074]]
 
 ## Top bridge nodes
 - [[jira_dev_ticket run()]] - degree 7, connects to 3 communities
-- [[jira_dev_ticket build_basic_auth_header()]] - degree 4, connects to 1 community
+- [[build_basic_auth_header()_1]] - degree 4, connects to 1 community
 - [[jira_dev_ticket.py (OpenClaw copy)]] - degree 2, connects to 1 community

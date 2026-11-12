@@ -1,20 +1,21 @@
 ---
 type: community
-members: 7
+members: 8
 ---
 
 # Community 2029
 
-**Members:** 7 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[11. Competitive Security Comparison Matrix]] - document - docs/papers/agentshroud-whitepaper.md
-- [[11.1 Complete 26-Module Security Matrix]] - document - docs/papers/agentshroud-whitepaper.md
-- [[11.2 Unique AgentShroud Modules (No Competitor Implementation)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[11.3 Competitor Analysis Details]] - document - docs/papers/agentshroud-whitepaper.md
-- [[11.4 Security Coverage Gap Analysis]] - document - docs/papers/agentshroud-whitepaper.md
-- [[11.5 Security Score Evolution]] - document - docs/papers/agentshroud-whitepaper.md
-- [[11.6 Industry Implications]] - document - docs/papers/agentshroud-whitepaper.md
+- [[._page()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[._run()_3]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_known_cves_matched_by_cve_id_not_id()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_never_writes_and_says_so()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_persistent_failure_exits_non_zero()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_transient_read_timeout_is_retried()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestNvdReportOnly]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[The NVD path emits the pre-migration schema (id=CVE-…, no ghsa_idcve_id).]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +25,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 429]]
+- 4 edges to [[_COMMUNITY_Community 55]]
+- 1 edge to [[_COMMUNITY_Community 1288]]
 
 ## Top bridge nodes
-- [[11. Competitive Security Comparison Matrix]] - degree 7, connects to 1 community
+- [[TestNvdReportOnly]] - degree 8, connects to 1 community
+- [[._run()_3]] - degree 4, connects to 1 community
+- [[.test_known_cves_matched_by_cve_id_not_id()]] - degree 3, connects to 1 community
+- [[.test_transient_read_timeout_is_retried()]] - degree 2, connects to 1 community
+- [[.test_persistent_failure_exits_non_zero()]] - degree 2, connects to 1 community

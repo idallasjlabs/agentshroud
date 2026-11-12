@@ -1,22 +1,14 @@
 ---
 type: community
-members: 40
+members: 28
 ---
 
 # Community 45
 
-**Members:** 40 nodes
+**Members:** 28 nodes
 
 ## Members
-- [[.__init__()_60]] - code - gateway/security/canary_tripwire.py
-- [[._check_encoded()]] - code - gateway/security/canary_tripwire.py
-- [[._check_plain()]] - code - gateway/security/canary_tripwire.py
-- [[._normalize()]] - code - gateway/security/canary_tripwire.py
-- [[._record()]] - code - gateway/security/canary_tripwire.py
-- [[.detection_count()]] - code - gateway/security/canary_tripwire.py
-- [[.register_canary()]] - code - gateway/security/canary_tripwire.py
-- [[.scan()_2]] - code - gateway/security/canary_tripwire.py
-- [[.scan_response()_1]] - code - gateway/security/canary_tripwire.py
+- [[.__init__()_75]] - code - gateway/security/canary_tripwire.py
 - [[.setup_method()_1]] - code - gateway/tests/test_canary_tripwire.py
 - [[.test_api_key_canary()]] - code - gateway/tests/test_canary_tripwire.py
 - [[.test_base64_canary()]] - code - gateway/tests/test_canary_tripwire.py
@@ -40,10 +32,6 @@ members: 40
 - [[.test_zero_width_bypass()]] - code - gateway/tests/test_canary_tripwire.py
 - [[Bridge result returned by scan_response() for pipeline compatibility.]] - rationale - gateway/security/canary_tripwire.py
 - [[CanaryConfig]] - code - gateway/security/canary_tripwire.py
-- [[CanaryResult_1]] - code - gateway/security/canary_tripwire.py
-- [[CanaryTripwire]] - code - gateway/security/canary_tripwire.py
-- [[Pipeline-compatible bridge scan response text and return TripwireResponse.]] - rationale - gateway/security/canary_tripwire.py
-- [[Register a new canary value at runtime for dynamic tripwire testing.]] - rationale - gateway/security/canary_tripwire.py
 - [[TestCanaryTripwire]] - code - gateway/tests/test_canary_tripwire.py
 - [[TripwireResponse]] - code - gateway/security/canary_tripwire.py
 - [[canary_tripwire.py]] - code - gateway/security/canary_tripwire.py
@@ -57,12 +45,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_Community 84]]
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 2 edges to [[_COMMUNITY_Community 72]]
+- 10 edges to [[_COMMUNITY_Community 25]]
 - 1 edge to [[_COMMUNITY_Community 141]]
-- 1 edge to [[_COMMUNITY_Community 24]]
 
 ## Top bridge nodes
-- [[CanaryTripwire]] - degree 34, connects to 4 communities
-- [[canary_tripwire.py]] - degree 5, connects to 1 community
+- [[canary_tripwire.py]] - degree 5, connects to 2 communities
+- [[TestCanaryTripwire]] - degree 25, connects to 1 community
+- [[TripwireResponse]] - degree 5, connects to 1 community
+- [[test_canary_tripwire.py]] - degree 4, connects to 1 community
+- [[.test_custom_config()_1]] - degree 3, connects to 1 community

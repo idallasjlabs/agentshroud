@@ -1,20 +1,18 @@
 ---
-source_file: "scripts/export-bot-conversations.py"
+source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "Community 777"
-location: "L43"
+community: "Community 102"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_777
+  - community/Community_102
 ---
 
 # datetime
 
 ## Connections
-- [[_parse_since()]] - `references` [EXTRACTED]
-- [[export-bot-conversations.py]] - `imports_from` [EXTRACTED]
-- [[export_hermes()]] - `references` [EXTRACTED]
-- [[export_openclaw()]] - `references` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
+- [[wazuh_client.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_777
+#graphify/code #graphify/EXTRACTED #community/Community_102

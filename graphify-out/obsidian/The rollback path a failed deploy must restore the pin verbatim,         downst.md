@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auto_remediate_cves.py"
 type: "rationale"
-community: "Community 261"
+community: "Community 194"
 location: "L195"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_261
+  - community/Community_194
 ---
 
 # The rollback path: a failed deploy must restore the pin verbatim,         downst
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_pin_revert_restores_the_exact_original_string()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_261
+#graphify/rationale #graphify/EXTRACTED #community/Community_194

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Community 80"
+community: "Community 50"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_80
+  - community/Community_50
 ---
 
 # RouterConfig
@@ -21,7 +21,7 @@ tags:
 - [[.validate_default_url()]] - `method` [EXTRACTED]
 - [[.validate_targets()]] - `method` [EXTRACTED]
 - [[AgentTarget_1]] - `uses` [INFERRED]
-- [[Any_9]] - `uses` [INFERRED]
+- [[Any_19]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[ForwardError]] - `uses` [INFERRED]
@@ -31,7 +31,7 @@ tags:
 - [[Multi-agent router configuration]] - `rationale_for` [EXTRACTED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[Path_26]] - `uses` [INFERRED]
+- [[Path_28]] - `uses` [INFERRED]
 - [[RouterConfig_1]] - `uses` [INFERRED]
 - [[RouterError]] - `uses` [INFERRED]
 - [[SSHConfig]] - `uses` [INFERRED]
@@ -79,4 +79,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_80
+#graphify/code #graphify/EXTRACTED #community/Community_50

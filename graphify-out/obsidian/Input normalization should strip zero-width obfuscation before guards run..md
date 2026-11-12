@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Community 605"
+community: "Community 114"
 location: "L466"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_605
+  - community/Community_114
 ---
 
 # Input normalization should strip zero-width obfuscation before guards run.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_middleware_normalizes_invisible_unicode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_605
+#graphify/rationale #graphify/EXTRACTED #community/Community_114

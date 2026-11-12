@@ -1,27 +1,23 @@
 ---
 type: community
-members: 14
+members: 10
 ---
 
 # Community 1412
 
-**Members:** 14 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[.test_forward_file_download_returns_raw_body_sentinel()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_oversized_document_update_is_dropped()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_proxy_request_api_path_still_json_parsed()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_proxy_request_file_download_error_returns_502()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_proxy_request_file_prefix_returns_binary_sentinel()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_within_limit_document_update_passes()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Inbound update with document.file_size  limit must be dropped (CVE-2026-32049).]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Inbound update with document.file_size within limit must pass (CVE-2026-32049).]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestFileDownload]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Tests for _forward_file_download() and proxy_request() binary path.      Regress]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[_forward_file_download returns dict with _raw_body, _content_type, _status_code.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[proxy_request returns 502 sentinel when file download raises.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[proxy_request with path_prefix='file' returns _raw_body sentinel (no JSON parse]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[proxy_request without file prefix still JSON-parses the response.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[items]] - code - config/inbound-edge/schema.json
+- [[items_1]] - code - config/inbound-edge/schema.json
+- [[maxItems]] - code - config/inbound-edge/schema.json
+- [[maxItems_1]] - code - config/inbound-edge/schema.json
+- [[maxLength_1]] - code - config/inbound-edge/schema.json
+- [[redirect_uris]] - code - config/inbound-edge/schema.json
+- [[source_cidrs]] - code - config/inbound-edge/schema.json
+- [[type_8]] - code - config/inbound-edge/schema.json
+- [[type_9]] - code - config/inbound-edge/schema.json
+- [[type_11]] - code - config/inbound-edge/schema.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,16 +27,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_Community 4]]
-- 3 edges to [[_COMMUNITY_Community 12]]
-- 1 edge to [[_COMMUNITY_Community 138]]
-- 1 edge to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 181]]
+- 1 edge to [[_COMMUNITY_Community 943]]
+- 1 edge to [[_COMMUNITY_Community 1327]]
 
 ## Top bridge nodes
-- [[TestFileDownload]] - degree 12, connects to 5 communities
-- [[.test_oversized_document_update_is_dropped()]] - degree 6, connects to 2 communities
-- [[.test_within_limit_document_update_passes()]] - degree 6, connects to 2 communities
-- [[.test_proxy_request_file_download_error_returns_502()]] - degree 4, connects to 2 communities
-- [[.test_forward_file_download_returns_raw_body_sentinel()]] - degree 3, connects to 1 community
+- [[redirect_uris]] - degree 4, connects to 1 community
+- [[source_cidrs]] - degree 4, connects to 1 community

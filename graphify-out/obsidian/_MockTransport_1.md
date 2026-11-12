@@ -12,8 +12,8 @@ tags:
 # _MockTransport
 
 ## Connections
-- [[.__call__()_8]] - `method` [EXTRACTED]
-- [[.__init__()_168]] - `method` [EXTRACTED]
+- [[.__call__()_11]] - `method` [EXTRACTED]
+- [[.__init__()_189]] - `method` [EXTRACTED]
 - [[Records POSTs; returns op-proxy secrets then a 201 for the comment.]] - `rationale_for` [EXTRACTED]
 - [[test_jira_weekly_review.py]] - `contains` [EXTRACTED]
 - [[test_run_posts_comment_with_basic_auth()]] - `calls` [EXTRACTED]

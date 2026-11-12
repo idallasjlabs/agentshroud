@@ -1,18 +1,21 @@
 ---
 type: community
-members: 5
+members: 8
 ---
 
 # Community 2030
 
-**Members:** 5 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Step 1 Create Google Cloud Project_1]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Step 2 Create OAuth Credentials_1]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Step 3 Store Credentials]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Step 4 Get Refresh Token]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[🛠️ OAuth2 Setup (If Needed)]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[.analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_clean_params_pass()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_multiple_params_scanned()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_param_path_traversal_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_param_sql_injection_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_param_template_injection_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_sanitization_returns_cleaned()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[TestParamSanitization]] - code - gateway/tests/test_tool_chain_analyzer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +25,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 285]]
+- 5 edges to [[_COMMUNITY_Community 541]]
+- 2 edges to [[_COMMUNITY_Community 344]]
+- 1 edge to [[_COMMUNITY_Community 505]]
 
 ## Top bridge nodes
-- [[🛠️ OAuth2 Setup (If Needed)]] - degree 5, connects to 1 community
+- [[TestParamSanitization]] - degree 14, connects to 3 communities
+- [[.analyzer()]] - degree 2, connects to 1 community

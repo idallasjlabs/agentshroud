@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Apollo — Audio Systems Producer_7]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[Purpose_37]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[README_42]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[Related Skills_55]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[Usage_58]] - document - docker/config/hermes/skills/i-apollo/README.md
+- [[Hermes — Podcast Production Orchestrator_1]] - document - docker/config/hermes/skills/i-hermes/README.md
+- [[Purpose_49]] - document - docker/config/hermes/skills/i-hermes/README.md
+- [[README_54]] - document - docker/config/hermes/skills/i-hermes/README.md
+- [[Related Skills_67]] - document - docker/config/hermes/skills/i-hermes/README.md
+- [[Usage_71]] - document - docker/config/hermes/skills/i-hermes/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,4 +25,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 90]]
 
 ## Top bridge nodes
-- [[Apollo — Audio Systems Producer_7]] - degree 5, connects to 1 community
+- [[Hermes — Podcast Production Orchestrator_1]] - degree 5, connects to 1 community

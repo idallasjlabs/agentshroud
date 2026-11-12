@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Community 978"
-location: "L2038"
+community: "Community 85"
+location: "L2043"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/Community_85
 ---
 
 # Remove an egress rule by domain.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[egress_remove_rule()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_978
+#graphify/rationale #graphify/EXTRACTED #community/Community_85

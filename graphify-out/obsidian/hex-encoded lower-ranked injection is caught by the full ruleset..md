@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "rationale"
-community: "Community 84"
+community: "Community 72"
 location: "L278"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_84
+  - community/Community_72
 ---
 
 # hex-encoded lower-ranked injection is caught by the full ruleset.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_tool_injection_hex_encoded_uses_full_ruleset()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_84
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

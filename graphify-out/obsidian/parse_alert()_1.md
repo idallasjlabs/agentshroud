@@ -12,7 +12,7 @@ tags:
 # parse_alert()
 
 ## Connections
-- [[Any_65]] - `references` [EXTRACTED]
+- [[Any_75]] - `references` [EXTRACTED]
 - [[Parse a single Wazuh alert.      Args         raw Raw Wazuh alert JSON.      R]] - `rationale_for` [EXTRACTED]
 - [[level_to_severity()]] - `calls` [EXTRACTED]
 - [[read_alerts()_1]] - `calls` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "Community 1808"
+community: "Community 0"
 location: "L466"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1808
+  - community/Community_0
 ---
 
 # Get summary of detected attacks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_attack_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1808
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

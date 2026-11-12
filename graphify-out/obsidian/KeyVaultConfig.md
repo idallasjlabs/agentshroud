@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "Community 0"
+community: "Community 684"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_0
+  - community/Community_684
 ---
 
 # KeyVaultConfig
 
 ## Connections
-- [[.__init__()_89]] - `references` [EXTRACTED]
+- [[.__init__()_104]] - `references` [EXTRACTED]
 - [[._make_vault_pipeline()]] - `calls` [EXTRACTED]
 - [[.test_detect_api_key_patterns()]] - `calls` [EXTRACTED]
 - [[.test_key_vault_init()]] - `calls` [EXTRACTED]
@@ -39,6 +39,7 @@ tags:
 - [[TestLoggingSecurity]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
+- [[TestPIIBlockModeInPipeline]] - `uses` [INFERRED]
 - [[TestPIIDetection_1]] - `uses` [INFERRED]
 - [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
@@ -55,4 +56,4 @@ tags:
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_0
+#graphify/code #graphify/INFERRED #community/Community_684

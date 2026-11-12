@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 793"
+community: "Community 557"
 location: "L878"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_793
+  - community/Community_557
 ---
 
 # TestAlertDispatcher
@@ -27,4 +27,4 @@ tags:
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_793
+#graphify/code #graphify/EXTRACTED #community/Community_557

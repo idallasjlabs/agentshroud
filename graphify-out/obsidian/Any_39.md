@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/env_guard.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Community 2070"
-location: "L289"
+community: "Community 111"
+location: "L210"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2070
+  - community/Community_111
 ---
 
 # Any
 
 ## Connections
-- [[.get_leakage_summary()]] - `references` [EXTRACTED]
-- [[.monitor_environment_access()]] - `references` [EXTRACTED]
+- [[.from_dict()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2070
+#graphify/code #graphify/EXTRACTED #community/Community_111

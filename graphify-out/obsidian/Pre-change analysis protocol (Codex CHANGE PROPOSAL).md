@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/AGENTS.md"
 type: "concept"
-community: "Community 742"
+community: "Community 1424"
 location: "Section 11"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_742
+  - community/Community_1424
 ---
 
 # Pre-change analysis protocol (Codex CHANGE PROPOSAL)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Pre-change analysis protocol (CHANGE PROPOSAL, Section 15)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_742
+#graphify/concept #graphify/INFERRED #community/Community_1424

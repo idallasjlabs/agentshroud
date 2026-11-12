@@ -8,7 +8,7 @@ members: 59
 **Members:** 59 nodes
 
 ## Members
-- [[.__init__()_199]] - code - gateway/tools/port_manager.py
+- [[.__init__()_225]] - code - gateway/tools/port_manager.py
 - [[.find_available_port()]] - code - gateway/tools/port_manager.py
 - [[.generate_compose_ports()]] - code - gateway/tools/port_manager.py
 - [[.has_conflicts()]] - code - gateway/tools/port_manager.py
@@ -76,8 +76,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 81]]
 - 1 edge to [[_COMMUNITY_Community 181]]
+- 1 edge to [[_COMMUNITY_Community 86]]
 
 ## Top bridge nodes
 - [[PortManager]] - degree 34, connects to 1 community

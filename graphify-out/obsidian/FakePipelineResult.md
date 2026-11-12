@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
 community: "Community 75"
-location: "L43"
+location: "L47"
 tags:
   - graphify/code
   - graphify/INFERRED
@@ -13,7 +13,8 @@ tags:
 
 ## Connections
 - [[.process_inbound()_7]] - `references` [EXTRACTED]
-- [[LockdownLevel]] - `uses` [INFERRED]
+- [[FalcoAlertWatcher]] - `uses` [INFERRED]
+- [[LockdownLevel_1]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]

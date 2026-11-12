@@ -19,12 +19,12 @@ members: 19
 - [[.test_script_is_executable_in_git()]] - code - gateway/tests/test_update_conduit_push.py
 - [[.test_upgrades_to_the_pin_and_reports_from_to()]] - code - gateway/tests/test_update_conduit_push.py
 - [[.test_versions_env_pins_conduit_push_to_a_full_sha()]] - code - gateway/tests/test_update_conduit_push.py
-- [[Path_42]] - code - gateway/tests/test_update_conduit_push.py
+- [[Path_45]] - code - gateway/tests/test_update_conduit_push.py
 - [[TestPinIsValidated]] - code - gateway/tests/test_update_conduit_push.py
 - [[TestProvesTheOutcome]] - code - gateway/tests/test_update_conduit_push.py
 - [[TestRepoPin]] - code - gateway/tests/test_update_conduit_push.py
 - [[TestUpgrade_1]] - code - gateway/tests/test_update_conduit_push.py
-- [[_run()_2]] - code - gateway/tests/test_update_conduit_push.py
+- [[_run()_3]] - code - gateway/tests/test_update_conduit_push.py
 - [[_versions_file()]] - code - gateway/tests/test_update_conduit_push.py
 - [[test_update_conduit_push.py]] - code - gateway/tests/test_update_conduit_push.py
 

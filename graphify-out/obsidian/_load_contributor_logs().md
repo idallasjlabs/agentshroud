@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Load contributor logs from multiple directories with de-dup by filename.]] - `rationale_for` [EXTRACTED]
-- [[Path_2]] - `references` [EXTRACTED]
+- [[Path_4]] - `references` [EXTRACTED]
 - [[dashboard.py]] - `contains` [EXTRACTED]
 - [[get_collaborators()]] - `calls` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]

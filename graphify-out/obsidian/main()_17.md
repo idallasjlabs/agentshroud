@@ -1,18 +1,23 @@
 ---
-source_file: "scripts/discover_upstream_versions.py"
+source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "Community 48"
-location: "L349"
+community: "Community 194"
+location: "L300"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_48
+  - community/Community_194
 ---
 
 # main()
 
 ## Connections
-- [[discover()]] - `calls` [EXTRACTED]
-- [[discover_upstream_versions.py]] - `contains` [EXTRACTED]
+- [[.to_dict()_17]] - `calls` [EXTRACTED]
+- [[_print_plan()]] - `calls` [EXTRACTED]
+- [[apply_remediation()]] - `calls` [EXTRACTED]
+- [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
+- [[load_registry()]] - `calls` [EXTRACTED]
+- [[plan_remediation()]] - `calls` [EXTRACTED]
+- [[read_pin()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_48
+#graphify/code #graphify/EXTRACTED #community/Community_194

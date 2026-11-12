@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "rationale"
-community: "Community 344"
+community: "Community 24"
 location: "L686"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_344
+  - community/Community_24
 ---
 
 # Detect unicode obfuscation tricks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._check_unicode_tricks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_344
+#graphify/rationale #graphify/EXTRACTED #community/Community_24

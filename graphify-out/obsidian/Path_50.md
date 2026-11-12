@@ -1,18 +1,20 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "scripts/export-bot-conversations.py"
 type: "code"
-community: "Community 265"
-location: "L472"
+community: "Community 777"
+location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_265
+  - community/Community_777
 ---
 
 # Path
 
 ## Connections
-- [[gather_advisories()]] - `calls` [EXTRACTED]
-- [[load_snapshot()]] - `references` [EXTRACTED]
+- [[_docker_read_file()]] - `references` [EXTRACTED]
+- [[export_hermes()]] - `references` [EXTRACTED]
+- [[export_openclaw()]] - `references` [EXTRACTED]
+- [[main()_20]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_265
+#graphify/code #graphify/EXTRACTED #community/Community_777

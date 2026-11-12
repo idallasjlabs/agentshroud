@@ -12,7 +12,7 @@ tags:
 # collect_recent_events()
 
 ## Connections
-- [[Any_66]] - `references` [EXTRACTED]
+- [[Any_76]] - `references` [EXTRACTED]
 - [[Collect recent SecurityEvents from AuditStore (async-safe read).]] - `rationale_for` [EXTRACTED]
 - [[SecurityEvent]] - `references` [EXTRACTED]
 - [[TestCollectRecentEvents]] - `calls` [EXTRACTED]

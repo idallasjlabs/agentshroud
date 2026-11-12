@@ -1,15 +1,17 @@
 ---
 type: community
-members: 47
+members: 53
 ---
 
 # Community 44
 
-**Members:** 47 nodes
+**Members:** 53 nodes
 
 ## Members
-- [[.__init__()_49]] - code - gateway/security/a2a_governance.py
+- [[.__init__()_64]] - code - gateway/security/a2a_governance.py
+- [[.get_peer()]] - code - gateway/security/a2a_governance.py
 - [[.is_trusted()]] - code - gateway/security/a2a_governance.py
+- [[.register_peer()]] - code - gateway/security/a2a_governance.py
 - [[.test_api_key_sanitized()]] - code - gateway/tests/test_a2a_governance.py
 - [[.test_clean_payload_not_sanitized()]] - code - gateway/tests/test_a2a_governance.py
 - [[.test_complete_task_frees_slot()]] - code - gateway/tests/test_a2a_governance.py
@@ -34,12 +36,16 @@ members: 47
 - [[.test_untrusted_peer_denied()]] - code - gateway/tests/test_a2a_governance.py
 - [[.test_update_trust()]] - code - gateway/tests/test_a2a_governance.py
 - [[.test_within_rate_limit()]] - code - gateway/tests/test_a2a_governance.py
+- [[.unregister_peer()]] - code - gateway/security/a2a_governance.py
 - [[A2A protocol message types (based on A2A v1.0 spec).]] - rationale - gateway/security/a2a_governance.py
 - [[A2AGovernanceConfig]] - code - gateway/security/a2a_governance.py
 - [[A2AMessageType]] - code - gateway/security/a2a_governance.py
 - [[A2APeer]] - code - gateway/security/a2a_governance.py
 - [[Configuration for the A2A governance proxy.]] - rationale - gateway/security/a2a_governance.py
+- [[Look up a registered peer.]] - rationale - gateway/security/a2a_governance.py
+- [[Register a known A2A peer agent.]] - rationale - gateway/security/a2a_governance.py
 - [[Registered A2A peer agent.]] - rationale - gateway/security/a2a_governance.py
+- [[Remove a peer from the registry.]] - rationale - gateway/security/a2a_governance.py
 - [[TestDisabledProxy]] - code - gateway/tests/test_a2a_governance.py
 - [[TestInboundProcessing]] - code - gateway/tests/test_a2a_governance.py
 - [[TestMessageSize]] - code - gateway/tests/test_a2a_governance.py
@@ -64,12 +70,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 52 edges to [[_COMMUNITY_Community 203]]
+- 51 edges to [[_COMMUNITY_Community 203]]
 - 2 edges to [[_COMMUNITY_Community 8]]
+- 1 edge to [[_COMMUNITY_Community 2343]]
 
 ## Top bridge nodes
+- [[A2APeer]] - degree 21, connects to 2 communities
 - [[A2AMessageType]] - degree 15, connects to 2 communities
 - [[A2AGovernanceConfig]] - degree 22, connects to 1 community
 - [[_msg()]] - degree 22, connects to 1 community
-- [[A2APeer]] - degree 21, connects to 1 community
 - [[test_a2a_governance.py]] - degree 21, connects to 1 community

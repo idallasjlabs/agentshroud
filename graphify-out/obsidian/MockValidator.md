@@ -12,7 +12,7 @@ tags:
 # MockValidator
 
 ## Connections
-- [[.__init__()_169]] - `method` [EXTRACTED]
+- [[.__init__()_190]] - `method` [EXTRACTED]
 - [[.setup_manager_with_credential()]] - `calls` [EXTRACTED]
 - [[.test_check_and_rotate_due_credentials()]] - `calls` [EXTRACTED]
 - [[.test_register_validator()]] - `calls` [EXTRACTED]

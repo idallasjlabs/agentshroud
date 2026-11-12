@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_report_store.py"
+source_file: "gateway/tests/test_edge_jwt.py"
 type: "code"
-community: "Community 110"
-location: "L12"
+community: "Community 96"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_110
+  - community/Community_96
 ---
 
 # store()
 
 ## Connections
-- [[ReportStore]] - `calls` [EXTRACTED]
-- [[test_report_store.py]] - `contains` [EXTRACTED]
+- [[EdgeStore_4]] - `calls` [EXTRACTED]
+- [[test_edge_jwt.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_110
+#graphify/code #graphify/EXTRACTED #community/Community_96

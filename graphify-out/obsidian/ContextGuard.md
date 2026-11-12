@@ -12,8 +12,8 @@ tags:
 # ContextGuard
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_65]] - `method` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_80]] - `method` [EXTRACTED]
 - [[._detect_hidden_instructions()]] - `method` [EXTRACTED]
 - [[._detect_instruction_injection()]] - `method` [EXTRACTED]
 - [[._detect_rapid_context_growth()]] - `method` [EXTRACTED]
@@ -37,7 +37,7 @@ tags:
 - [[.test_json_injection_in_context()]] - `calls` [INFERRED]
 - [[.test_oversized_json_payload()]] - `calls` [INFERRED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[ApprovalHardening]] - `semantically_similar_to` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[Guard against context window poisoning attacks.]] - `rationale_for` [EXTRACTED]
@@ -51,7 +51,7 @@ tags:
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestCheckMessage]] - `uses` [INFERRED]
-- [[TestConcurrency]] - `uses` [INFERRED]
+- [[TestConcurrency_1]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]

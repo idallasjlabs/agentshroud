@@ -12,11 +12,11 @@ tags:
 # UpdateReplayBuffer
 
 ## Connections
-- [[.__init__()_40]] - `method` [EXTRACTED]
+- [[.__init__()_55]] - `method` [EXTRACTED]
 - [[._conn_ok()]] - `method` [EXTRACTED]
 - [[._init_db()]] - `method` [EXTRACTED]
 - [[.cleanup_if_due()]] - `method` [EXTRACTED]
-- [[.close()_8]] - `method` [EXTRACTED]
+- [[.close()_10]] - `method` [EXTRACTED]
 - [[.mark_delivered()]] - `method` [EXTRACTED]
 - [[.pull_undelivered()]] - `method` [EXTRACTED]
 - [[.record_inbound()]] - `method` [EXTRACTED]

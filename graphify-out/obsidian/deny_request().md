@@ -2,7 +2,7 @@
 source_file: "gateway/soc/router.py"
 type: "code"
 community: "Community 10"
-location: "L1687"
+location: "L1764"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -15,6 +15,7 @@ tags:
 - [[ApprovalDecisionRequest]] - `references` [EXTRACTED]
 - [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
+- [[_decide_approval()]] - `calls` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `contains` [EXTRACTED]
 

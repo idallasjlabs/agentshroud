@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-env/SKILL.md"
 type: "concept"
-community: "Community 544"
+community: "Community 177"
 tags:
   - graphify/concept
   - graphify/AMBIGUOUS
-  - community/Community_544
+  - community/Community_177
 ---
 
 # Environment Management (env — unresolved reference)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Project Management (SKILL)]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/concept #graphify/AMBIGUOUS #community/Community_544
+#graphify/concept #graphify/AMBIGUOUS #community/Community_177

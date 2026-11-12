@@ -20,7 +20,7 @@ tags:
 - [[Configuration for the progressive trust system.]] - `rationale_for` [EXTRACTED]
 - [[ProgressiveTrustConfig_1]] - `uses` [INFERRED]
 - [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
-- [[Request_7]] - `uses` [INFERRED]
+- [[Request_8]] - `uses` [INFERRED]
 - [[Response]] - `uses` [INFERRED]
 - [[TestBackwardCompat]] - `uses` [INFERRED]
 - [[TestEnforcementMode]] - `uses` [INFERRED]

@@ -1,33 +1,36 @@
 ---
 type: community
-members: 20
+members: 23
 ---
 
 # Community 531
 
-**Members:** 20 nodes
+**Members:** 23 nodes
 
 ## Members
-- [[.__init__()_80]] - code - gateway/security/falco_monitor.py
-- [[._handle_critical()]] - code - gateway/security/falco_monitor.py
-- [[._process_new_alerts()]] - code - gateway/security/falco_monitor.py
-- [[.run()_4]] - code - gateway/security/falco_monitor.py
-- [[.stop()_10]] - code - gateway/security/falco_monitor.py
-- [[FalcoAlertWatcher]] - code - gateway/security/falco_monitor.py
-- [[Path_11]] - code - gateway/security/falco_monitor.py
-- [[Poll Falco alert files until stopped.]] - rationale - gateway/security/falco_monitor.py
-- [[Tail Falco alert files and trigger progressive lockdown on CRITICAL alerts.]] - rationale - gateway/security/falco_monitor.py
-- [[Test Falco Watcher Module]] - code - gateway/tests/test_falco_watcher.py
-- [[Watcher works without a lockdown module — only logs.]] - rationale - gateway/tests/test_falco_watcher.py
-- [[_make_alert()]] - code - gateway/tests/test_falco_watcher.py
-- [[test_critical_alert_triggers_lockdown()]] - code - gateway/tests/test_falco_watcher.py
-- [[test_deduplication_same_alert_twice()]] - code - gateway/tests/test_falco_watcher.py
-- [[test_falco_watcher.py]] - code - gateway/tests/test_falco_watcher.py
-- [[test_missing_alert_dir_noop()]] - code - gateway/tests/test_falco_watcher.py
-- [[test_multiple_critical_alerts()]] - code - gateway/tests/test_falco_watcher.py
-- [[test_no_progressive_lockdown_configured()]] - code - gateway/tests/test_falco_watcher.py
-- [[test_stop_halts_run_loop()]] - code - gateway/tests/test_falco_watcher.py
-- [[test_warning_alert_not_blocked()]] - code - gateway/tests/test_falco_watcher.py
+- [[.test_client_secret_is_sealed_at_rest()]] - code - gateway/tests/test_edge_oauth.py
+- [[.test_code_bound_to_client()]] - code - gateway/tests/test_edge_oauth.py
+- [[.test_code_is_single_use()]] - code - gateway/tests/test_edge_oauth.py
+- [[.test_consent_view_shows_vendor_not_client_supplied_text()]] - code - gateway/tests/test_edge_oauth.py
+- [[.test_dcr_off_in_profile()]] - code - gateway/tests/test_edge_oauth.py
+- [[.test_disabled_vendor_cannot_register()]] - code - gateway/tests/test_edge_oauth.py
+- [[.test_foreign_resource_rejected()]] - code - gateway/tests/test_edge_oauth.py
+- [[.test_full_flow_issues_working_tokens()]] - code - gateway/tests/test_edge_oauth.py
+- [[.test_killed_vendor_cannot_refresh()]] - code - gateway/tests/test_edge_oauth.py
+- [[.test_redirect_must_be_allowlisted()]] - code - gateway/tests/test_edge_oauth.py
+- [[.test_refresh_rotates_and_reuse_kills_family()]] - code - gateway/tests/test_edge_oauth.py
+- [[.test_requires_open_enrollment_window()]] - code - gateway/tests/test_edge_oauth.py
+- [[.test_revoke_access_token()]] - code - gateway/tests/test_edge_oauth.py
+- [[.test_revoke_refresh_token()]] - code - gateway/tests/test_edge_oauth.py
+- [[.test_vendor_without_redirects_cannot_register()]] - code - gateway/tests/test_edge_oauth.py
+- [[.test_wrong_enrollment_code_and_attempt_limit()]] - code - gateway/tests/test_edge_oauth.py
+- [[TestAuthorizeAndConsent]] - code - gateway/tests/test_edge_oauth.py
+- [[TestRefreshAndRevoke]] - code - gateway/tests/test_edge_oauth.py
+- [[TestRegistration]] - code - gateway/tests/test_edge_oauth.py
+- [[_client_info()]] - code - gateway/tests/test_edge_oauth.py
+- [[_linked()]] - code - gateway/tests/test_edge_oauth.py
+- [[_pkce()]] - code - gateway/tests/test_edge_oauth.py
+- [[_profile()]] - code - gateway/tests/test_edge_oauth.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,14 +40,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 102]]
-- 1 edge to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 84]]
-- 1 edge to [[_COMMUNITY_Community 1127]]
+- 17 edges to [[_COMMUNITY_Community 25]]
 
 ## Top bridge nodes
-- [[FalcoAlertWatcher]] - degree 18, connects to 3 communities
-- [[._process_new_alerts()]] - degree 4, connects to 1 community
-- [[test_critical_alert_triggers_lockdown()]] - degree 4, connects to 1 community
-- [[._handle_critical()]] - degree 3, connects to 1 community
-- [[Path_11]] - degree 2, connects to 1 community
+- [[_client_info()]] - degree 11, connects to 1 community
+- [[_linked()]] - degree 10, connects to 1 community
+- [[TestRegistration]] - degree 10, connects to 1 community
+- [[TestAuthorizeAndConsent]] - degree 10, connects to 1 community
+- [[TestRefreshAndRevoke]] - degree 8, connects to 1 community

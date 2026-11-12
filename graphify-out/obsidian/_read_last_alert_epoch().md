@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/crashwatch.sh"
 type: "code"
-community: "Community 1105"
+community: "Community 129"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1105
+  - community/Community_129
 ---
 
 # _read_last_alert_epoch()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[crashwatch.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1105
+#graphify/code #graphify/EXTRACTED #community/Community_129

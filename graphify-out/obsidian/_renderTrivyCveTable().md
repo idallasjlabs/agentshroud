@@ -2,7 +2,7 @@
 source_file: "gateway/soc/static/soc.js"
 type: "code"
 community: "Community 82"
-location: "L1983"
+location: "L2255"
 tags:
   - graphify/code
   - graphify/EXTRACTED

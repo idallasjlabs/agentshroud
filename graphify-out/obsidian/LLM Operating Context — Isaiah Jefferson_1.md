@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/CLAUDE.md"
 type: "concept"
-community: "Community 742"
+community: "Community 1424"
 location: "LLM Operating Context"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_742
+  - community/Community_1424
 ---
 
 # LLM Operating Context — Isaiah Jefferson
@@ -17,4 +17,4 @@ tags:
 - [[Pre-change analysis protocol (CHANGE PROPOSAL, Section 15)]] - `references` [EXTRACTED]
 - [[llm-init.sh — project-level multi-tool config deployment]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_742
+#graphify/concept #graphify/EXTRACTED #community/Community_1424

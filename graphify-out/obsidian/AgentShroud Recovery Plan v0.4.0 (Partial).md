@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md"
 type: "document"
-community: "Community 1985"
+community: "Community 144"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_1985
+  - community/Community_144
 ---
 
 # AgentShroud Recovery Plan v0.4.0 (Partial)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Session Issue Register — 2026-03-14]] - `conceptually_related_to` [INFERRED]
 - [[XMLFunction-Call Leak Filter]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Community_1985
+#graphify/document #graphify/INFERRED #community/Community_144

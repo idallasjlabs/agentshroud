@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
+source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "Community 379"
-location: "L149"
+community: "Community 184"
+location: "L93"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_379
+  - graphify/EXTRACTED
+  - community/Community_184
 ---
 
 # Any
 
 ## Connections
-- [[.inspect()]] - `references` [EXTRACTED]
-- [[ContainerEngine_2]] - `uses` [INFERRED]
-- [[ContainerInfo_2]] - `uses` [INFERRED]
+- [[.generate_report()]] - `references` [EXTRACTED]
+- [[.log_tool_call()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_379
+#graphify/code #graphify/EXTRACTED #community/Community_184

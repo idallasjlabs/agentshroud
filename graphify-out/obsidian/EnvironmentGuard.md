@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "Community 0"
+community: "Community 235"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_0
+  - community/Community_235
 ---
 
 # EnvironmentGuard
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_79]] - `method` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_94]] - `method` [EXTRACTED]
 - [[._contains_env_access_patterns()]] - `method` [EXTRACTED]
 - [[._looks_like_credential()]] - `method` [EXTRACTED]
 - [[._record_leakage()]] - `method` [EXTRACTED]
@@ -32,7 +32,7 @@ tags:
 - [[.test_natural_language_question_is_allowed()]] - `calls` [EXTRACTED]
 - [[.test_unparseable_text_is_allowed()_1]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[Guard against environment variable leakage and unauthorized access.]] - `rationale_for` [EXTRACTED]
 - [[LogSanitizer]] - `uses` [INFERRED]
@@ -44,7 +44,7 @@ tags:
 - [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestCheckCommandExecution]] - `uses` [INFERRED]
 - [[TestCheckFileAccess]] - `uses` [INFERRED]
-- [[TestConcurrency]] - `uses` [INFERRED]
+- [[TestConcurrency_1]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
@@ -87,4 +87,4 @@ tags:
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_0
+#graphify/code #graphify/INFERRED #community/Community_235

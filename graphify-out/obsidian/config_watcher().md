@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Community 104"
+community: "Community 50"
 location: "L783"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_104
+  - community/Community_50
 ---
 
 # config_watcher()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Background mtime-poll watcher reload the config when the file changes.      Pol]] - `rationale_for` [EXTRACTED]
 - [[GatewayConfig_1]] - `references` [EXTRACTED]
-- [[Path_1]] - `references` [EXTRACTED]
+- [[Path_3]] - `references` [EXTRACTED]
 - [[config.py]] - `contains` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[test_watcher_reloads_on_mtime_change()]] - `calls` [EXTRACTED]
 - [[test_watcher_stops_on_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_104
+#graphify/code #graphify/EXTRACTED #community/Community_50

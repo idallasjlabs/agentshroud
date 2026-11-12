@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_proxy_request_suppresses_delayed_starting_notice_emoji_variants()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Delayed-starting dedupe should tolerate emoji variation drift.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_prompt_injection_detection()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[Test prompt injection detection.]] - rationale - gateway/tests/test_memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 626]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 845]]
+- 1 edge to [[_COMMUNITY_Community 16]]
 
 ## Top bridge nodes
-- [[.test_proxy_request_suppresses_delayed_starting_notice_emoji_variants()]] - degree 4, connects to 3 communities
+- [[.test_prompt_injection_detection()]] - degree 2, connects to 1 community

@@ -12,8 +12,8 @@ tags:
 # RateLimiter
 
 ## Connections
-- [[.__init__()_10]] - `method` [EXTRACTED]
-- [[.__init__()_39]] - `calls` [EXTRACTED]
+- [[.__init__()_25]] - `method` [EXTRACTED]
+- [[.__init__()_54]] - `calls` [EXTRACTED]
 - [[.check()]] - `method` [EXTRACTED]
 - [[.test_collaborator_rate_limit_notice_falls_back_without_markdown()]] - `calls` [EXTRACTED]
 - [[.test_collaborator_rate_limit_notice_includes_retry_window()]] - `calls` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[.test_collaborator_rate_limit_resets_after_window()]] - `calls` [EXTRACTED]
 - [[.test_collaborator_rate_limit_retry_after_seconds_uses_window()]] - `calls` [EXTRACTED]
 - [[.test_collaborator_rate_limit_uses_user_id_when_chat_id_differs()]] - `calls` [EXTRACTED]
-- [[Any_21]] - `uses` [INFERRED]
+- [[Any_31]] - `uses` [INFERRED]
 - [[AsyncMock]] - `uses` [INFERRED]
 - [[BlockingPipeline]] - `uses` [INFERRED]
 - [[EncodingDetectingPipeline]] - `uses` [INFERRED]

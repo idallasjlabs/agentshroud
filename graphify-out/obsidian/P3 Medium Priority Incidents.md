@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Community 2202"
+community: "Community 107"
 location: "L376"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2202
+  - community/Community_107
 ---
 
 # P3 Medium Priority Incidents
@@ -16,4 +16,4 @@ tags:
 - [[Trust Level Anomaly]] - `contains` [EXTRACTED]
 - [[Unauthorized SSH Access Attempt]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2202
+#graphify/document #graphify/EXTRACTED #community/Community_107

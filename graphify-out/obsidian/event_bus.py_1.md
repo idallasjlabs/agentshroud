@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: "Community 229"
+community: "Community 65"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_229
+  - community/Community_65
 ---
 
 # event_bus.py.md
@@ -18,4 +18,4 @@ tags:
 - [[main.py_3]] - `references` [EXTRACTED]
 - [[make_event()]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_229
+#graphify/document #graphify/EXTRACTED #community/Community_65

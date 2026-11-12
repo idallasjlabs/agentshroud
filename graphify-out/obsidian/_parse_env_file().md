@@ -16,7 +16,7 @@ tags:
 - [[.config()_1]] - `calls` [EXTRACTED]
 - [[.config()_3]] - `calls` [EXTRACTED]
 - [[Parse a .env file into a dict (ignoring comments and blanks).]] - `rationale_for` [EXTRACTED]
-- [[Path_26]] - `references` [EXTRACTED]
+- [[Path_28]] - `references` [EXTRACTED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_36

@@ -8,18 +8,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[.test_member_allowed_read_write_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[.test_member_allowed_web_search_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[.test_member_denied_gmail_private_tool_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[.test_member_denied_high_risk_tools_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[.test_member_denied_ssh_private_tool_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[Regular member (non-owner group role) is denied high-risk tools that require app]] - rationale - gateway/tests/test_group_rbac.py
-- [[Regular member IS allowed readwrite in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Regular member IS allowed web_search in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Regular member denied gmail (private tool) even in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Regular member denied ssh (private tool) in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Regular members can use medium-risk tools but not privateadmin tools.]] - rationale - gateway/tests/test_group_rbac.py
-- [[TestMemberGroupContext]] - code - gateway/tests/test_group_rbac.py
+- [[._log_event()]] - code - gateway/security/subagent_governance.py
+- [[.get_governance_events()]] - code - gateway/security/subagent_governance.py
+- [[.test_deregister_cleans_up()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_deregister_returns_usage()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_summary()_1]] - code - gateway/tests/test_subagent_governance.py
+- [[Action to take when a governance limit is hit.]] - rationale - gateway/security/subagent_governance.py
+- [[GovernanceAction]] - code - gateway/security/subagent_governance.py
+- [[GovernanceEvent]] - code - gateway/security/subagent_governance.py
+- [[GovernanceEventType]] - code - gateway/security/subagent_governance.py
+- [[Retrieve governance audit events with optional filters.]] - rationale - gateway/security/subagent_governance.py
+- [[Retrieve governance events with optional filters.]] - rationale - gateway/security/a2a_governance.py
+- [[TestLifecycle_1]] - code - gateway/tests/test_subagent_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,11 +29,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 33]]
-- 1 edge to [[_COMMUNITY_Community 196]]
-- 1 edge to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 194]]
-- 1 edge to [[_COMMUNITY_Community 11]]
+- 7 edges to [[_COMMUNITY_Community 1209]]
+- 5 edges to [[_COMMUNITY_Community 1343]]
+- 4 edges to [[_COMMUNITY_Community 8]]
+- 3 edges to [[_COMMUNITY_Community 1985]]
+- 3 edges to [[_COMMUNITY_Community 38]]
+- 2 edges to [[_COMMUNITY_Community 2049]]
+- 2 edges to [[_COMMUNITY_Community 2050]]
+- 2 edges to [[_COMMUNITY_Community 2051]]
+- 1 edge to [[_COMMUNITY_Community 203]]
+- 1 edge to [[_COMMUNITY_Community 1782]]
 
 ## Top bridge nodes
-- [[TestMemberGroupContext]] - degree 13, connects to 5 communities
+- [[GovernanceAction]] - degree 12, connects to 7 communities
+- [[GovernanceEventType]] - degree 12, connects to 7 communities
+- [[._log_event()]] - degree 8, connects to 3 communities
+- [[TestLifecycle_1]] - degree 9, connects to 2 communities
+- [[.get_governance_events()]] - degree 5, connects to 1 community

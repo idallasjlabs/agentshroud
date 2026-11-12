@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "Community 59"
+community: "Community 2038"
 location: "L175"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_59
+  - community/Community_2038
 ---
 
 # MCPPermissionManager
 
 ## Connections
-- [[.__init__()_27]] - `method` [EXTRACTED]
+- [[.__init__()_42]] - `method` [EXTRACTED]
 - [[._load_privacy_policy()]] - `method` [EXTRACTED]
 - [[._recompile_private_data_patterns()]] - `method` [EXTRACTED]
 - [[._record_private_access_attempt()]] - `method` [EXTRACTED]
@@ -35,9 +35,9 @@ tags:
 - [[.test_egress_denied_blocks_url_tool_call()]] - `calls` [EXTRACTED]
 - [[.test_privacy_policy_overrides_patterns()]] - `calls` [EXTRACTED]
 - [[.test_privacy_policy_status_when_missing_file()]] - `calls` [EXTRACTED]
-- [[Any_18]] - `uses` [INFERRED]
+- [[Any_28]] - `uses` [INFERRED]
 - [[ConnectionPool]] - `uses` [INFERRED]
-- [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
 - [[Exception_4]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
@@ -104,7 +104,7 @@ tags:
 - [[TestToolPermission]] - `uses` [INFERRED]
 - [[TestTrustLevels]] - `uses` [INFERRED]
 - [[TestTrustMapping]] - `uses` [INFERRED]
-- [[__init__.py_7]] - `imports` [EXTRACTED]
+- [[__init__.py_8]] - `imports` [EXTRACTED]
 - [[make_proxy()_1]] - `calls` [EXTRACTED]
 - [[mcp_permissions.py]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports` [EXTRACTED]
@@ -114,4 +114,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_59
+#graphify/code #graphify/INFERRED #community/Community_2038

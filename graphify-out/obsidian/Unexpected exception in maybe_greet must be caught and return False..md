@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_greeter.py"
 type: "rationale"
-community: "Community 197"
+community: "Community 1105"
 location: "L241"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_197
+  - community/Community_1105
 ---
 
 # Unexpected exception in maybe_greet must be caught and return False.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_exception_in_maybe_greet_returns_false()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_197
+#graphify/rationale #graphify/EXTRACTED #community/Community_1105

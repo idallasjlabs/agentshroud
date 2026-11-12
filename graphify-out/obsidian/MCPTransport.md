@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "Community 54"
+community: "Community 230"
 location: "L18"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_54
+  - community/Community_230
 ---
 
 # MCPTransport
 
 ## Connections
 - [[.from_dict()]] - `calls` [EXTRACTED]
-- [[Any_18]] - `uses` [INFERRED]
+- [[Any_28]] - `uses` [INFERRED]
 - [[ConnectionPool]] - `uses` [INFERRED]
-- [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
 - [[Enum]] - `inherits` [EXTRACTED]
 - [[Exception_4]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
@@ -69,11 +69,11 @@ tags:
 - [[TestStdioConnection]] - `uses` [INFERRED]
 - [[TestSuspiciousEncoding]] - `uses` [INFERRED]
 - [[TestThreatLevelCalc]] - `uses` [INFERRED]
-- [[__init__.py_7]] - `imports` [EXTRACTED]
+- [[__init__.py_8]] - `imports` [EXTRACTED]
 - [[mcp_config.py]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[str]] - `inherits` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_54
+#graphify/code #graphify/INFERRED #community/Community_230

@@ -2,7 +2,7 @@
 source_file: "gateway/security/audit_store.py"
 type: "rationale"
 community: "Community 254"
-location: "L374"
+location: "L431"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

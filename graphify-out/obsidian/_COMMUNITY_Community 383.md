@@ -8,7 +8,7 @@ members: 24
 **Members:** 24 nodes
 
 ## Members
-- [[.__init__()_37]] - code - gateway/proxy/telegram_egress_notify.py
+- [[.__init__()_52]] - code - gateway/proxy/telegram_egress_notify.py
 - [[._api_url()]] - code - gateway/proxy/telegram_egress_notify.py
 - [[._async_send()]] - code - gateway/proxy/telegram_egress_notify.py
 - [[._send_request()]] - code - gateway/proxy/telegram_egress_notify.py
@@ -17,7 +17,7 @@ members: 24
 - [[.cleanup_expired()]] - code - gateway/proxy/telegram_egress_notify.py
 - [[.edit_decision_message()]] - code - gateway/proxy/telegram_egress_notify.py
 - [[.get_pending_count()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[.handle_callback()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[.handle_callback()_1]] - code - gateway/proxy/telegram_egress_notify.py
 - [[.notify_pending()]] - code - gateway/proxy/telegram_egress_notify.py
 - [[.send_text()]] - code - gateway/proxy/telegram_egress_notify.py
 - [[Async wrapper around sync Telegram API call.]] - rationale - gateway/proxy/telegram_egress_notify.py
@@ -44,7 +44,7 @@ SORT file.name ASC
 - 5 edges to [[_COMMUNITY_Community 996]]
 - 3 edges to [[_COMMUNITY_Community 1163]]
 - 3 edges to [[_COMMUNITY_Community 234]]
-- 2 edges to [[_COMMUNITY_Community 72]]
+- 2 edges to [[_COMMUNITY_Community 7]]
 
 ## Top bridge nodes
 - [[EgressTelegramNotifier]] - degree 25, connects to 4 communities

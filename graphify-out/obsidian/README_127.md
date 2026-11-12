@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/README.md"
 type: "document"
-community: "Community 707"
+community: "Community 7"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_707
+  - community/Community_7
 ---
 
 # README.md
@@ -23,4 +23,4 @@ tags:
 - [[router.py]] - `references` [EXTRACTED]
 - [[sanitizer.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_707
+#graphify/document #graphify/EXTRACTED #community/Community_7

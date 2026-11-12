@@ -12,7 +12,7 @@ tags:
 # OutputSchemaEnforcer
 
 ## Connections
-- [[.__init__()_105]] - `method` [EXTRACTED]
+- [[.__init__()_120]] - `method` [EXTRACTED]
 - [[._register_default_schema()]] - `method` [EXTRACTED]
 - [[.register_schema()]] - `method` [EXTRACTED]
 - [[.validate()_1]] - `method` [EXTRACTED]

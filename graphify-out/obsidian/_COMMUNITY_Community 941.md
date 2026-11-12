@@ -1,31 +1,23 @@
 ---
 type: community
-members: 18
+members: 10
 ---
 
 # Community 941
 
-**Members:** 18 nodes
+**Members:** 10 nodes
 
 ## Members
 - [[.test_blocked_entry_logged()]] - code - gateway/tests/test_mcp_proxy.py
 - [[.test_chain_entries_linked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_clean_result_passes_through()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_credit_card_detected()_1]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_credit_card_redacted()_1]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_email_detected_but_low_threat()]] - code - gateway/tests/test_mcp_proxy.py
 - [[.test_hash_chain_changes_on_append()]] - code - gateway/tests/test_mcp_proxy.py
 - [[.test_hash_chain_genesis()]] - code - gateway/tests/test_mcp_proxy.py
 - [[.test_hash_chain_valid()]] - code - gateway/tests/test_mcp_proxy.py
 - [[.test_log_tool_call()]] - code - gateway/tests/test_mcp_proxy.py
 - [[.test_log_tool_result()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_pii_in_tool_result_redacted()]] - code - gateway/tests/test_mcp_proxy.py
 - [[.test_pii_redacted_flag()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_ssn_detected_in_params()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_ssn_redacted_in_params()]] - code - gateway/tests/test_mcp_proxy.py
 - [[.test_tampered_chain_detected()]] - code - gateway/tests/test_mcp_proxy.py
 - [[TestAuditTrail]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestPIIDetection]] - code - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,14 +27,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_Community 64]]
-- 6 edges to [[_COMMUNITY_Community 54]]
-- 2 edges to [[_COMMUNITY_Community 184]]
+- 5 edges to [[_COMMUNITY_Community 64]]
+- 2 edges to [[_COMMUNITY_Community 230]]
 - 2 edges to [[_COMMUNITY_Community 2038]]
-- 2 edges to [[_COMMUNITY_Community 132]]
-- 2 edges to [[_COMMUNITY_Community 59]]
-- 2 edges to [[_COMMUNITY_Community 329]]
+- 2 edges to [[_COMMUNITY_Community 54]]
+- 1 edge to [[_COMMUNITY_Community 184]]
+- 1 edge to [[_COMMUNITY_Community 132]]
+- 1 edge to [[_COMMUNITY_Community 329]]
 
 ## Top bridge nodes
 - [[TestAuditTrail]] - degree 23, connects to 7 communities
-- [[TestPIIDetection]] - degree 21, connects to 7 communities

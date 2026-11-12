@@ -32,7 +32,7 @@ tags:
 - [[Fetcher]] - `uses` [INFERRED]
 - [[IntelReportStore_1]] - `uses` [INFERRED]
 - [[IntelReportStore]] - `calls` [EXTRACTED]
-- [[Path_31]] - `uses` [INFERRED]
+- [[Path_34]] - `uses` [INFERRED]
 - [[Schema for a Hermes-generated competitive intelligence report.      The ``conten]] - `rationale_for` [EXTRACTED]
 - [[TestCompetitiveIntelReportSchema]] - `uses` [INFERRED]
 - [[TestFetchOutcome]] - `uses` [INFERRED]

@@ -1,20 +1,18 @@
 ---
-source_file: "scripts/export-bot-conversations.py"
+source_file: "gateway/tests/test_wazuh_watchdog.py"
 type: "code"
-community: "Community 777"
-location: "L60"
+community: "Community 298"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_777
+  - community/Community_298
 ---
 
 # Path
 
 ## Connections
-- [[_docker_read_file()]] - `references` [EXTRACTED]
-- [[export_hermes()]] - `references` [EXTRACTED]
-- [[export_openclaw()]] - `references` [EXTRACTED]
-- [[main()_18]] - `calls` [EXTRACTED]
+- [[_run()_4]] - `references` [EXTRACTED]
+- [[_run_4b()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_777
+#graphify/code #graphify/EXTRACTED #community/Community_298

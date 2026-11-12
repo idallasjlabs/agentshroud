@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/egress_retry.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "Community 822"
-location: "L75"
+community: "Community 250"
+location: "L159"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_822
+  - graphify/INFERRED
+  - community/Community_250
 ---
 
 # Any
 
 ## Connections
-- [[retry_request()]] - `references` [EXTRACTED]
-- [[retry_request_sync()]] - `references` [EXTRACTED]
+- [[.inspect()_3]] - `references` [EXTRACTED]
+- [[ContainerEngine_2]] - `uses` [INFERRED]
+- [[ContainerInfo_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_822
+#graphify/code #graphify/INFERRED #community/Community_250

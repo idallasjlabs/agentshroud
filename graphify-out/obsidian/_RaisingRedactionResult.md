@@ -12,7 +12,7 @@ tags:
 # _RaisingRedactionResult
 
 ## Connections
-- [[.__init__()_184]] - `method` [EXTRACTED]
+- [[.__init__()_208]] - `method` [EXTRACTED]
 - [[.info_filter_redaction_count()]] - `method` [EXTRACTED]
 - [[.test_redaction_count_access_error_is_non_fatal()]] - `calls` [EXTRACTED]
 - [[Pipeline result whose redaction-count attribute raises on access.]] - `rationale_for` [EXTRACTED]

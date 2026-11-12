@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "Community 24"
+community: "Community 7"
 location: "L280"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_24
+  - community/Community_7
 ---
 
 # TestE2E08AuditChainIntegrity
@@ -29,4 +29,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_24
+#graphify/code #graphify/INFERRED #community/Community_7

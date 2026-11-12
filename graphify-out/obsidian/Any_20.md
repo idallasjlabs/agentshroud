@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "gateway/ingest_api/version_routes.py"
 type: "code"
-community: "Community 43"
-location: "L93"
+community: "Community 66"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/Community_66
 ---
 
 # Any
 
 ## Connections
-- [[.get_stats()_7]] - `references` [EXTRACTED]
+- [[downgrade_version()]] - `references` [EXTRACTED]
+- [[get_current_version()]] - `references` [EXTRACTED]
+- [[get_version_history()]] - `references` [EXTRACTED]
+- [[review_version()]] - `references` [EXTRACTED]
+- [[rollback_version()]] - `references` [EXTRACTED]
+- [[upgrade_version()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/Community_66

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "Community 271"
+community: "Community 307"
 location: "L148"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_271
+  - community/Community_307
 ---
 
 # A2APolicyEngine
 
 ## Connections
-- [[.__init__()_17]] - `references` [EXTRACTED]
+- [[.__init__()_32]] - `references` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]
 - [[A2APolicyEngine_1]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_271
+#graphify/code #graphify/INFERRED #community/Community_307

@@ -35,15 +35,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 11]]
-- 5 edges to [[_COMMUNITY_Community 0]]
-- 5 edges to [[_COMMUNITY_Community 52]]
+- 8 edges to [[_COMMUNITY_Community 7]]
+- 4 edges to [[_COMMUNITY_Community 52]]
+- 3 edges to [[_COMMUNITY_Community 162]]
 - 2 edges to [[_COMMUNITY_Community 17]]
-- 2 edges to [[_COMMUNITY_Community 21]]
+- 1 edge to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 93]]
+- 1 edge to [[_COMMUNITY_Community 1119]]
+- 1 edge to [[_COMMUNITY_Community 477]]
 - 1 edge to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Community 11]]
 
 ## Top bridge nodes
-- [[TestTrustManager]] - degree 35, connects to 6 communities
+- [[TestTrustManager]] - degree 35, connects to 10 communities
 - [[.test_trust_escalation_attack()]] - degree 4, connects to 1 community
 - [[.setup_method()_28]] - degree 2, connects to 1 community
 - [[.test_sqlite_persistence()]] - degree 2, connects to 1 community

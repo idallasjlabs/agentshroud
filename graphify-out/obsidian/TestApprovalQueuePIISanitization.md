@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "Community 80"
+community: "Community 50"
 location: "L210"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_80
+  - community/Community_50
 ---
 
 # TestApprovalQueuePIISanitization
@@ -19,4 +19,4 @@ tags:
 - [[SSHProxy]] - `uses` [INFERRED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_80
+#graphify/code #graphify/INFERRED #community/Community_50

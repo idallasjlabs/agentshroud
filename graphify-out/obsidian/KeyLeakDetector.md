@@ -12,7 +12,7 @@ tags:
 # KeyLeakDetector
 
 ## Connections
-- [[.__init__()_91]] - `method` [EXTRACTED]
+- [[.__init__()_106]] - `method` [EXTRACTED]
 - [[._make_vault_pipeline()]] - `calls` [EXTRACTED]
 - [[.scan_outbound()]] - `method` [EXTRACTED]
 - [[.test_detect_api_key_patterns()]] - `calls` [EXTRACTED]
@@ -34,6 +34,7 @@ tags:
 - [[TestKeyStorage]] - `uses` [INFERRED]
 - [[TestKeyVaultConfig]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
+- [[TestPIIBlockModeInPipeline]] - `uses` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]

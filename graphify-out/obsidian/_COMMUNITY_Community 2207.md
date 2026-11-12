@@ -1,21 +1,18 @@
 ---
 type: community
-members: 8
+members: 5
 ---
 
 # Community 2207
 
-**Members:** 8 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[.acceptable()]] - code - gateway/security/subagent_governance.py
-- [[Configuration for subagent output trust scoring.]] - rationale - gateway/security/subagent_governance.py
-- [[OutputScore]] - code - gateway/security/subagent_governance.py
-- [[OutputTrustConfig]] - code - gateway/security/subagent_governance.py
-- [[Privilege escalation prevention policy.]] - rationale - gateway/security/subagent_governance.py
-- [[PrivilegePolicy]] - code - gateway/security/subagent_governance.py
-- [[Result of scoring a subagent's output.]] - rationale - gateway/security/subagent_governance.py
-- [[subagent_governance.py]] - code - gateway/security/subagent_governance.py
+- [[.test_daily_fs_scan_skips_security_log_tree()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_no_skip_dirs_flag_when_omitted()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_skip_dirs_added_to_command()]] - code - gateway/tests/test_daily_cve_report.py
+- [[TestTrivySkipDirs]] - code - gateway/tests/test_daily_cve_report.py
+- [[The daily fs scan of  must exclude varlogsecurity (trivy's own         cache]] - rationale - gateway/tests/test_daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,14 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 38]]
-- 3 edges to [[_COMMUNITY_Community 1269]]
-- 2 edges to [[_COMMUNITY_Community 1209]]
-- 1 edge to [[_COMMUNITY_Community 8]]
-- 1 edge to [[_COMMUNITY_Community 11]]
-- 1 edge to [[_COMMUNITY_Community 1782]]
-- 1 edge to [[_COMMUNITY_Community 1343]]
+- 1 edge to [[_COMMUNITY_Community 127]]
 
 ## Top bridge nodes
-- [[subagent_governance.py]] - degree 15, connects to 7 communities
-- [[OutputScore]] - degree 4, connects to 1 community
+- [[TestTrivySkipDirs]] - degree 4, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Community 194"
+community: "Community 33"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_194
+  - community/Community_33
 ---
 
 # test_tool_acl.py
@@ -36,4 +36,4 @@ tags:
 - [[enforcer()_3]] - `contains` [EXTRACTED]
 - [[rbac()_6]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_194
+#graphify/code #graphify/EXTRACTED #community/Community_33

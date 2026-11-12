@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Community 98"
+community: "Community 2375"
 location: "L469"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_98
+  - community/Community_2375
 ---
 
 # Test against realistic attack scenarios.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_comprehensive_attack_scenarios()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_98
+#graphify/rationale #graphify/EXTRACTED #community/Community_2375

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Community 98"
+community: "Community 2367"
 location: "L244"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_98
+  - community/Community_2367
 ---
 
 # Workspace runtime paths should be redacted.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_workspace_internal_path_filtering()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_98
+#graphify/rationale #graphify/EXTRACTED #community/Community_2367

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "Community 532"
+community: "Community 7"
 location: "L346"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_532
+  - community/Community_7
 ---
 
 # test_response_credential_blocking()
@@ -15,4 +15,4 @@ tags:
 - [[Outbound responses have credentials blocked for untrusted sources.]] - `rationale_for` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_532
+#graphify/code #graphify/EXTRACTED #community/Community_7

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 2379"
+community: "Community 4"
 location: "L2187"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2379
+  - community/Community_4
 ---
 
 # Bare-domain policy questions should be informational, not treated as web executi
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_web_access_policy_question_with_bare_domain_is_safe()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2379
+#graphify/rationale #graphify/EXTRACTED #community/Community_4

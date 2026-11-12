@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
+source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "Community 50"
-location: "L92"
+community: "Community 7"
+location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_50
+  - community/Community_7
 ---
 
 # client()
@@ -17,7 +17,7 @@ tags:
 - [[MultiAgentRouter]] - `calls` [EXTRACTED]
 - [[PIISanitizer]] - `calls` [EXTRACTED]
 - [[SSHProxy]] - `calls` [EXTRACTED]
-- [[Set up app state and provide TestClient._1]] - `rationale_for` [EXTRACTED]
-- [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
+- [[Set up app state and provide TestClient.]] - `rationale_for` [EXTRACTED]
+- [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_50
+#graphify/code #graphify/EXTRACTED #community/Community_7

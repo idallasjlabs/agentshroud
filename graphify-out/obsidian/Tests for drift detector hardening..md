@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Community 52"
+community: "Community 162"
 location: "L920"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_52
+  - community/Community_162
 ---
 
 # Tests for drift detector hardening.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDriftDetectorHardened]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_52
+#graphify/rationale #graphify/EXTRACTED #community/Community_162

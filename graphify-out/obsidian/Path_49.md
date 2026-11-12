@@ -1,19 +1,18 @@
 ---
-source_file: "scripts/generate_branding_assets.py"
+source_file: "scripts/check_benchmark_regression.py"
 type: "code"
-community: "Community 446"
-location: "L55"
+community: "Community 186"
+location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_446
+  - community/Community_186
 ---
 
 # Path
 
 ## Connections
-- [[ensure()]] - `references` [EXTRACTED]
-- [[get_font()]] - `calls` [EXTRACTED]
-- [[save()_1]] - `references` [EXTRACTED]
+- [[_load_json()]] - `references` [EXTRACTED]
+- [[check()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_446
+#graphify/code #graphify/EXTRACTED #community/Community_186

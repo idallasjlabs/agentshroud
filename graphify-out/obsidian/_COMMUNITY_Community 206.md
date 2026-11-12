@@ -8,18 +8,18 @@ members: 38
 **Members:** 38 nodes
 
 ## Members
-- [[.__call__()_9]] - code - gateway/tests/test_rate_limit_guard.py
-- [[.__init__()_111]] - code - gateway/security/rate_limit_guard.py
-- [[.__init__()_182]] - code - gateway/tests/test_rate_limit_guard.py
+- [[.__call__()_13]] - code - gateway/tests/test_rate_limit_guard.py
+- [[.__init__()_126]] - code - gateway/security/rate_limit_guard.py
+- [[.__init__()_204]] - code - gateway/tests/test_rate_limit_guard.py
 - [[._burst_limit()]] - code - gateway/security/rate_limit_guard.py
 - [[._sustained_limit()]] - code - gateway/security/rate_limit_guard.py
-- [[.advance()]] - code - gateway/tests/test_rate_limit_guard.py
+- [[.advance()_1]] - code - gateway/tests/test_rate_limit_guard.py
 - [[.check()_6]] - code - gateway/security/rate_limit_guard.py
 - [[.get_stats()_19]] - code - gateway/security/rate_limit_guard.py
 - [[Adaptive per-agent  per-tool sliding-window rate limiter with burst detection.]] - rationale - gateway/security/rate_limit_guard.py
 - [[Build a SecurityPipeline with only the guards needed to exercise the     RateLim]] - rationale - gateway/tests/test_rate_limit_guard.py
 - [[Configuration for class`RateLimitGuard`.      All windows are per (agent_id, t]] - rationale - gateway/security/rate_limit_guard.py
-- [[FakeClock]] - code - gateway/tests/test_rate_limit_guard.py
+- [[FakeClock_1]] - code - gateway/tests/test_rate_limit_guard.py
 - [[No injected clock the guard falls back to time.monotonic and still works.]] - rationale - gateway/tests/test_rate_limit_guard.py
 - [[RateLimitConfig]] - code - gateway/security/rate_limit_guard.py
 - [[RateLimitDecision]] - code - gateway/security/rate_limit_guard.py
@@ -55,8 +55,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 72]]
-- 4 edges to [[_COMMUNITY_Community 84]]
+- 8 edges to [[_COMMUNITY_Community 7]]
 - 2 edges to [[_COMMUNITY_Community 1127]]
 
 ## Top bridge nodes

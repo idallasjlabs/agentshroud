@@ -12,6 +12,6 @@ tags:
 # Initialize all security modules.
 
 ## Connections
-- [[.__init__()_14]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_29]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_72

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Community 2201"
+community: "Community 107"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2201
+  - community/Community_107
 ---
 
 # Severity Assessment Matrix
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Incident Classification System]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2201
+#graphify/document #graphify/EXTRACTED #community/Community_107

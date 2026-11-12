@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "Community 2051"
+community: "Community 50"
 location: "L358"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2051
+  - community/Community_50
 ---
 
 # All API responses should include basic security headers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGlobalSecurityHeaders]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2051
+#graphify/rationale #graphify/EXTRACTED #community/Community_50

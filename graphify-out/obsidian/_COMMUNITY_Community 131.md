@@ -1,11 +1,11 @@
 ---
 type: community
-members: 51
+members: 50
 ---
 
 # Community 131
 
-**Members:** 51 nodes
+**Members:** 50 nodes
 
 ## Members
 - [[.test_custom_prefix()]] - code - gateway/tests/test_security_toolchain.py
@@ -37,13 +37,12 @@ members: 51
 - [[.test_summary_warning_high_only()]] - code - gateway/tests/test_security_toolchain.py
 - [[.test_trivy_binary_not_found()]] - code - gateway/tests/test_security_audit.py
 - [[A 0-byteempty stdout means the scan failed to produce output --         it must]] - rationale - gateway/tests/test_security_toolchain.py
-- [[Any_64]] - code - gateway/security/trivy_report.py
+- [[Any_74]] - code - gateway/security/trivy_report.py
 - [[Custom report_prefix is used verbatim.]] - rationale - gateway/tests/test_security_toolchain.py
 - [[Default report_prefix produces a 'trivy-' filename.]] - rationale - gateway/tests/test_security_toolchain.py
-- [[Generate a summary dict suitable for the health report.      Args         alert_1]] - rationale - gateway/security/wazuh_client.py
 - [[Generate a summary dict suitable for the health report.      Args         repor_1]] - rationale - gateway/security/trivy_report.py
 - [[Parse raw Trivy JSON output into a structured summary.      Args         raw R]] - rationale - gateway/security/trivy_report.py
-- [[Path_19]] - code - gateway/security/trivy_report.py
+- [[Path_21]] - code - gateway/security/trivy_report.py
 - [[Run a Trivy scan and return parsed results.      Args         target Scan targ]] - rationale - gateway/security/trivy_report.py
 - [[Save a Trivy report to the log directory.      Args         report Parsed repo]] - rationale - gateway/security/trivy_report.py
 - [[Saved file is valid JSON containing the report keys.]] - rationale - gateway/tests/test_security_toolchain.py
@@ -68,17 +67,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 102]]
-- 7 edges to [[_COMMUNITY_Community 0]]
+- 8 edges to [[_COMMUNITY_Community 185]]
 - 5 edges to [[_COMMUNITY_Community 127]]
+- 4 edges to [[_COMMUNITY_Community 557]]
 - 4 edges to [[_COMMUNITY_Community 368]]
-- 1 edge to [[_COMMUNITY_Community 72]]
+- 2 edges to [[_COMMUNITY_Community 41]]
+- 1 edge to [[_COMMUNITY_Community 7]]
 - 1 edge to [[_COMMUNITY_Community 1200]]
 - 1 edge to [[_COMMUNITY_Community 29]]
+- 1 edge to [[_COMMUNITY_Community 102]]
+- 1 edge to [[_COMMUNITY_Community 148]]
 
 ## Top bridge nodes
+- [[generate_summary()_2]] - degree 10, connects to 5 communities
 - [[run_trivy_scan()_1]] - degree 18, connects to 4 communities
-- [[generate_summary()_2]] - degree 10, connects to 4 communities
 - [[trivy_report.py]] - degree 8, connects to 4 communities
 - [[save_report()_1]] - degree 11, connects to 3 communities
 - [[TestTrivyParser]] - degree 12, connects to 2 communities

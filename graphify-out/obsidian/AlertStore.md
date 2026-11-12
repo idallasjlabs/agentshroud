@@ -12,7 +12,7 @@ tags:
 # AlertStore
 
 ## Connections
-- [[.__init__()_201]] - `method` [EXTRACTED]
+- [[.__init__()_228]] - `method` [EXTRACTED]
 - [[.push()_4]] - `method` [EXTRACTED]
 - [[.recent()]] - `method` [EXTRACTED]
 - [[.summary()_1]] - `method` [EXTRACTED]

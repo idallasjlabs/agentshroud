@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "Community 1209"
+community: "Community 2051"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1209
+  - community/Community_2051
 ---
 
 # TestToolAuthorization
@@ -25,4 +25,4 @@ tags:
 - [[SubagentGovernance]] - `uses` [INFERRED]
 - [[test_subagent_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1209
+#graphify/code #graphify/EXTRACTED #community/Community_2051

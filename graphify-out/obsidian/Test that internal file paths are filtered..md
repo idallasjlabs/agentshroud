@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Community 98"
+community: "Community 2364"
 location: "L195"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_98
+  - community/Community_2364
 ---
 
 # Test that internal file paths are filtered.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_operational_path_filtering()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_98
+#graphify/rationale #graphify/EXTRACTED #community/Community_2364

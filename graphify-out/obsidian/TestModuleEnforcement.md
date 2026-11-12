@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "code"
-community: "Community 7"
+community: "Community 1002"
 location: "L121"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_7
+  - community/Community_1002
 ---
 
 # TestModuleEnforcement
@@ -21,4 +21,4 @@ tags:
 - [[Test that individual modules respect the enforcemonitor mode.]] - `rationale_for` [EXTRACTED]
 - [[test_enforce_defaults.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_7
+#graphify/code #graphify/INFERRED #community/Community_1002

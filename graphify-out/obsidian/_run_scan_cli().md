@@ -17,7 +17,7 @@ tags:
 - [[.test_cli_fails_closed_on_unreadable_file()]] - `calls` [EXTRACTED]
 - [[.test_cli_missing_source_nonzero()]] - `calls` [EXTRACTED]
 - [[CompletedProcess_4]] - `references` [EXTRACTED]
-- [[Path_39]] - `references` [EXTRACTED]
+- [[Path_42]] - `references` [EXTRACTED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_281

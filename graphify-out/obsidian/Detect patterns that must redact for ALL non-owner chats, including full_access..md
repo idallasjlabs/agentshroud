@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 96"
-location: "L2573"
+community: "Community 14"
+location: "L2591"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_96
+  - community/Community_14
 ---
 
 # Detect patterns that must redact for ALL non-owner chats, including full_access.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._contains_critical_collaborator_leakage()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_96
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

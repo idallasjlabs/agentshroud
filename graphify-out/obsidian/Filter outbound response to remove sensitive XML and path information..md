@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "Community 72"
+community: "Community 1"
 location: "L1323"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_1
 ---
 
 # Filter outbound response to remove sensitive XML and path information.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.filter_outbound_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_72
+#graphify/rationale #graphify/EXTRACTED #community/Community_1

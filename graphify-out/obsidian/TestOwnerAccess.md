@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Community 194"
+community: "Community 33"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_194
+  - community/Community_33
 ---
 
 # TestOwnerAccess
@@ -23,4 +23,4 @@ tags:
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_194
+#graphify/code #graphify/INFERRED #community/Community_33

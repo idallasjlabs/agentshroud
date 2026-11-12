@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 1563"
-location: "L2671"
+community: "Community 14"
+location: "L2689"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1563
+  - community/Community_14
 ---
 
 # Detect legacy bracket-style block notices for collaborator normalization.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._contains_legacy_block_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1563
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

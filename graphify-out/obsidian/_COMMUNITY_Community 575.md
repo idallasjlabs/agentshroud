@@ -8,7 +8,7 @@ members: 29
 **Members:** 29 nodes
 
 ## Members
-- [[.__init__()_201]] - code - gateway/web/dashboard_endpoints.py
+- [[.__init__()_228]] - code - gateway/web/dashboard_endpoints.py
 - [[.append()_1]] - code - gateway/web/dashboard_endpoints.py
 - [[.emit()_1]] - code - gateway/web/dashboard_endpoints.py
 - [[.push()_4]] - code - gateway/web/dashboard_endpoints.py
@@ -18,7 +18,7 @@ members: 29
 - [[Alert]] - code - gateway/web/dashboard_endpoints.py
 - [[Alert counts by severity.]] - rationale - gateway/web/dashboard_endpoints.py
 - [[AlertStore]] - code - gateway/web/dashboard_endpoints.py
-- [[Any_74]] - code - gateway/web/dashboard_endpoints.py
+- [[Any_85]] - code - gateway/web/dashboard_endpoints.py
 - [[BufferHandler]] - code - gateway/web/dashboard_endpoints.py
 - [[Live Dashboard Module Badge Icon]] - image - branding/icons/modules/live-dashboard-256x256.png
 - [[LogRecord_2]] - code - gateway/web/dashboard_endpoints.py
@@ -47,11 +47,11 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_Community 801]]
-- 3 edges to [[_COMMUNITY_Community 72]]
+- 3 edges to [[_COMMUNITY_Community 7]]
 - 1 edge to [[_COMMUNITY_Community 978]]
-- 1 edge to [[_COMMUNITY_Community 49]]
+- 1 edge to [[_COMMUNITY_Community 2017]]
 - 1 edge to [[_COMMUNITY_Community 40]]
-- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 794]]
 
 ## Top bridge nodes
 - [[dashboard_endpoints.py]] - degree 16, connects to 5 communities

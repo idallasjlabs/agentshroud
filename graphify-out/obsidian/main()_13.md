@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/skills/scan.py"
+source_file: "gateway/inbound_edge/edge_app.py"
 type: "code"
-community: "Community 924"
-location: "L68"
+community: "Community 31"
+location: "L501"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_924
+  - community/Community_31
 ---
 
 # main()
 
 ## Connections
-- [[Path_22]] - `calls` [EXTRACTED]
-- [[SkillGuard]] - `calls` [EXTRACTED]
-- [[_build_tree()]] - `calls` [EXTRACTED]
-- [[_print_findings()]] - `calls` [EXTRACTED]
-- [[scan.py]] - `contains` [EXTRACTED]
+- [[create_app()]] - `calls` [EXTRACTED]
+- [[edge_app.py]] - `contains` [EXTRACTED]
+- [[settings_from_env()]] - `calls` [EXTRACTED]
+- [[verify_shipped_descriptors()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_924
+#graphify/code #graphify/EXTRACTED #community/Community_31

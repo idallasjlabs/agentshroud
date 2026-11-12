@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "Community 1278"
+community: "Community 53"
 location: "L796"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1278
+  - community/Community_53
 ---
 
 # _HeadFakeResponse
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.__aenter__()_3]] - `method` [EXTRACTED]
 - [[.__aexit__()_3]] - `method` [EXTRACTED]
-- [[.__init__()_172]] - `method` [EXTRACTED]
+- [[.__init__()_193]] - `method` [EXTRACTED]
 - [[.aiter_bytes()]] - `method` [EXTRACTED]
 - [[.aread()]] - `method` [EXTRACTED]
 - [[LLMProxy]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[_run_stream()]] - `calls` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1278
+#graphify/code #graphify/EXTRACTED #community/Community_53

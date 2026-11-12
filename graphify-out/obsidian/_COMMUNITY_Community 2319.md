@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Approval Workflow]] - document - skills/custom/securebrowser/README.md
-- [[Audit Trail]] - document - skills/custom/securebrowser/README.md
-- [[Risk Classification]] - document - skills/custom/securebrowser/README.md
-- [[Security Model_1]] - document - skills/custom/securebrowser/README.md
-- [[URL Access Control_1]] - document - skills/custom/securebrowser/README.md
+- [[.test_empty_dir_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_fresh_file_returns_true()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_old_file_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_stat_error_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestIsFresh]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +22,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 299]]
+- 2 edges to [[_COMMUNITY_Community 219]]
+- 1 edge to [[_COMMUNITY_Community 431]]
+- 1 edge to [[_COMMUNITY_Community 614]]
 
 ## Top bridge nodes
-- [[Security Model_1]] - degree 5, connects to 1 community
+- [[.test_old_file_returns_false()]] - degree 3, connects to 2 communities
+- [[TestIsFresh]] - degree 5, connects to 1 community
+- [[.test_fresh_file_returns_true()]] - degree 2, connects to 1 community

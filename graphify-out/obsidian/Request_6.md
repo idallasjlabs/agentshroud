@@ -1,24 +1,17 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "Community 10"
-location: "L2717"
+community: "Community 49"
+location: "L18"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_10
+  - graphify/EXTRACTED
+  - community/Community_49
 ---
 
 # Request
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult]] - `uses` [INFERRED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
-- [[soc_dashboard()]] - `references` [EXTRACTED]
+- [[auth_dep()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_10
+#graphify/code #graphify/EXTRACTED #community/Community_49

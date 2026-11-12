@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_intel_pipeline.py"
 type: "code"
-community: "Community 788"
+community: "Community 57"
 location: "L229"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_788
+  - community/Community_57
 ---
 
 # IntelReportStore
 
 ## Connections
-- [[.store()_1]] - `references` [EXTRACTED]
+- [[.store()_2]] - `references` [EXTRACTED]
 - [[.test_chain_hash_links_reports()]] - `references` [EXTRACTED]
 - [[.test_integrity_check_fails_for_tampered_file()]] - `references` [EXTRACTED]
 - [[.test_integrity_check_passes_for_saved_report()]] - `references` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[IntelReportStore]] - `uses` [INFERRED]
 - [[ReportIntegrityError]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_788
+#graphify/code #graphify/EXTRACTED #community/Community_57

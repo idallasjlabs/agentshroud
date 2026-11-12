@@ -1,24 +1,20 @@
 ---
-source_file: "gateway/ingest_api/config.py"
+source_file: "gateway/inbound_edge/profiles.py"
 type: "code"
-community: "Community 104"
-location: "L380"
+community: "Community 65"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_104
+  - community/Community_65
 ---
 
 # Path
 
 ## Connections
-- [[.model_post_init()]] - `calls` [EXTRACTED]
-- [[BotConfig]] - `uses` [INFERRED]
-- [[SSHConfig]] - `uses` [INFERRED]
-- [[_default_mtime()]] - `references` [EXTRACTED]
-- [[config_watcher()]] - `references` [EXTRACTED]
-- [[load_config()]] - `references` [EXTRACTED]
-- [[reload_config()]] - `references` [EXTRACTED]
-- [[resolve_config_path()]] - `references` [EXTRACTED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[_parse()]] - `references` [EXTRACTED]
+- [[load_profiles()]] - `references` [EXTRACTED]
+- [[test_command_center_has_agents_and_edge_tabs()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_104
+#graphify/code #graphify/EXTRACTED #community/Community_65

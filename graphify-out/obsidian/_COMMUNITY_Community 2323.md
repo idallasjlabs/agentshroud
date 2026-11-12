@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Create a PromptProtection instance for testing.]] - rationale - gateway/tests/test_prompt_protection.py
-- [[Sample protected content for testing.]] - rationale - gateway/tests/test_prompt_protection.py
-- [[prompt_protection()]] - code - gateway/tests/test_prompt_protection.py
-- [[sample_protected_content()]] - code - gateway/tests/test_prompt_protection.py
-- [[test_prompt_protection.py]] - code - gateway/tests/test_prompt_protection.py
+- [[.test_bot_filter_matches_normalised_image()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_missing_dir_returns_empty()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_plain_name_and_mtime_timestamp()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_timestamp_suffix_strip_branch()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestTrivyImageSummaries]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +22,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 532]]
-- 1 edge to [[_COMMUNITY_Community 351]]
+- 3 edges to [[_COMMUNITY_Community 219]]
+- 1 edge to [[_COMMUNITY_Community 431]]
 
 ## Top bridge nodes
-- [[test_prompt_protection.py]] - degree 4, connects to 2 communities
-- [[prompt_protection()]] - degree 3, connects to 1 community
+- [[TestTrivyImageSummaries]] - degree 5, connects to 1 community
+- [[.test_plain_name_and_mtime_timestamp()]] - degree 2, connects to 1 community
+- [[.test_timestamp_suffix_strip_branch()]] - degree 2, connects to 1 community
+- [[.test_bot_filter_matches_normalised_image()]] - degree 2, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 216"
-location: "L7038"
+community: "Community 14"
+location: "L7076"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_216
+  - community/Community_14
 ---
 
 # Estimate seconds until collaborator rate limit window opens again.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._collaborator_rate_limit_retry_after_seconds()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_216
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

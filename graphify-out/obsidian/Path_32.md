@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_lifespan_prune.py"
+source_file: "gateway/tests/test_edge_network_isolation.py"
 type: "code"
-community: "Community 99"
-location: "L43"
+community: "Community 104"
+location: "L71"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_99
+  - graphify/EXTRACTED
+  - community/Community_104
 ---
 
 # Path
 
 ## Connections
-- [[CollaboratorActivityTracker]] - `uses` [INFERRED]
-- [[_make_md()]] - `references` [EXTRACTED]
+- [[_load()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_99
+#graphify/code #graphify/EXTRACTED #community/Community_104

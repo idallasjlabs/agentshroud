@@ -40,7 +40,7 @@ members: 43
 - [[.test_telemetry_disabled()]] - code - gateway/tests/test_config_validation.py
 - [[.test_trust_manager_enabled()]] - code - gateway/tests/test_config_validation.py
 - [[Parse a .env file into a dict (ignoring comments and blanks).]] - rationale - gateway/tests/test_config_validation.py
-- [[Path_26]] - code - gateway/tests/test_config_validation.py
+- [[Path_28]] - code - gateway/tests/test_config_validation.py
 - [[TestAllExampleConfigsExist]] - code - gateway/tests/test_config_validation.py
 - [[TestMinimalConfig]] - code - gateway/tests/test_config_validation.py
 - [[TestParanoidConfig]] - code - gateway/tests/test_config_validation.py
@@ -60,9 +60,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 80]]
+- 6 edges to [[_COMMUNITY_Community 50]]
 - 6 edges to [[_COMMUNITY_Community 92]]
-- 1 edge to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 2200]]
 - 1 edge to [[_COMMUNITY_Community 78]]
 - 1 edge to [[_COMMUNITY_Community 597]]
 

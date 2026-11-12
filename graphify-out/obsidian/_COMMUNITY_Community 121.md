@@ -1,14 +1,14 @@
 ---
 type: community
-members: 81
+members: 73
 ---
 
 # Community 121
 
-**Members:** 81 nodes
+**Members:** 73 nodes
 
 ## Members
-- [[.__init__()_82]] - code - gateway/security/git_guard.py
+- [[.__init__()_97]] - code - gateway/security/git_guard.py
 - [[._analyze_file_content()]] - code - gateway/security/git_guard.py
 - [[._analyze_script_content()]] - code - gateway/security/git_guard.py
 - [[._analyze_script_file()]] - code - gateway/security/git_guard.py
@@ -30,12 +30,8 @@ members: 81
 - [[.test_default_mode_is_enforce()_6]] - code - gateway/tests/test_round2_hardening.py
 - [[.test_finding_has_file_path()]] - code - gateway/tests/test_git_guard.py
 - [[.test_from_environment_defaults_to_enforce()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_git_guard_detects_credential_patterns()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[.test_git_guard_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_git_guard_no_path_leak()]] - code - gateway/tests/test_security_audit_advanced.py
 - [[.test_keyvault_instantiated_and_seeded_in_lifespan()]] - code - gateway/tests/test_round2_hardening.py
 - [[.test_llm_stats_endpoint_is_defined()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_natural_language_question_is_allowed()]] - code - gateway/tests/test_round2_hardening.py
 - [[.test_nc_flagged()]] - code - gateway/tests/test_git_guard.py
 - [[.test_no_git_dir_returns_empty()]] - code - gateway/tests/test_git_guard.py
 - [[.test_no_hardcoded_owner_id_in_lifespan()]] - code - gateway/tests/test_round2_hardening.py
@@ -45,7 +41,6 @@ members: 81
 - [[.test_sanitize_reason_strips_file_paths()]] - code - gateway/tests/test_round2_hardening.py
 - [[.test_sanitize_reason_strips_module_paths()]] - code - gateway/tests/test_round2_hardening.py
 - [[.test_scan_repository_default_enforce()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_unparseable_text_is_allowed()_1]] - code - gateway/tests/test_round2_hardening.py
 - [[.test_v1_endpoint_handles_non_json_upstream_bodies()]] - code - gateway/tests/test_round2_hardening.py
 - [[.test_v1_endpoint_is_defined()]] - code - gateway/tests/test_round2_hardening.py
 - [[.test_wget_flagged()]] - code - gateway/tests/test_git_guard.py
@@ -53,18 +48,16 @@ members: 81
 - [[Analyze a script file for malicious patterns.]] - rationale - gateway/security/git_guard.py
 - [[Analyze file content for malicious patterns.]] - rationale - gateway/security/git_guard.py
 - [[Analyze script content string for malicious patterns.]] - rationale - gateway/security/git_guard.py
-- [[Any_41]] - code - gateway/security/git_guard.py
+- [[Any_51]] - code - gateway/security/git_guard.py
 - [[Args             mode 'monitor' (log findings) or 'enforce' (quarantine suspic]] - rationale - gateway/security/git_guard.py
 - [[Convenience function to scan a repository.]] - rationale - gateway/security/git_guard.py
 - [[Export findings to a detailed report.]] - rationale - gateway/security/git_guard.py
 - [[Get a summary of all findings.]] - rationale - gateway/security/git_guard.py
-- [[Git guard errors shouldn't expose full file paths.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Git guard should catch credential patterns.]] - rationale - gateway/tests/test_security_audit_advanced.py
 - [[GitGuard]] - code - gateway/security/git_guard.py
 - [[Monitor and analyze git hooks and package installation scripts.]] - rationale - gateway/security/git_guard.py
 - [[Monitor for git clone and npm install operations.]] - rationale - gateway/security/git_guard.py
 - [[Move suspicious files to quarantine directory.]] - rationale - gateway/security/git_guard.py
-- [[Path_12]] - code - gateway/security/git_guard.py
+- [[Path_14]] - code - gateway/security/git_guard.py
 - [[Proxy endpoint must not crash if upstream returns non-JSON body.]] - rationale - gateway/tests/test_round2_hardening.py
 - [[Scan a git repository for malicious hooks and scripts.          Args]] - rationale - gateway/security/git_guard.py
 - [[Scan arbitrary text content for malicious gitsupply-chain patterns.          Th]] - rationale - gateway/security/git_guard.py
@@ -75,7 +68,6 @@ members: 81
 - [[SecurityFinding]] - code - gateway/security/git_guard.py
 - [[TestDRYOwnerChatID]] - code - gateway/tests/test_round2_hardening.py
 - [[TestEgressConfigDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
-- [[TestEnvGuardFailOpen]] - code - gateway/tests/test_round2_hardening.py
 - [[TestFileSandboxDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
 - [[TestGitGuard]] - code - gateway/tests/test_git_guard.py
 - [[TestGitGuardDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
@@ -98,19 +90,29 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 47 edges to [[_COMMUNITY_Community 0]]
-- 17 edges to [[_COMMUNITY_Community 72]]
+- 27 edges to [[_COMMUNITY_Community 72]]
+- 12 edges to [[_COMMUNITY_Community 235]]
 - 11 edges to [[_COMMUNITY_Community 5]]
-- 9 edges to [[_COMMUNITY_Community 14]]
-- 9 edges to [[_COMMUNITY_Community 17]]
-- 2 edges to [[_COMMUNITY_Community 8]]
-- 2 edges to [[_COMMUNITY_Community 6]]
+- 11 edges to [[_COMMUNITY_Community 0]]
+- 8 edges to [[_COMMUNITY_Community 14]]
+- 8 edges to [[_COMMUNITY_Community 17]]
+- 3 edges to [[_COMMUNITY_Community 41]]
+- 3 edges to [[_COMMUNITY_Community 365]]
+- 1 edge to [[_COMMUNITY_Community 8]]
 - 1 edge to [[_COMMUNITY_Community 978]]
+- 1 edge to [[_COMMUNITY_Community 1]]
 - 1 edge to [[_COMMUNITY_Community 152]]
+- 1 edge to [[_COMMUNITY_Community 1002]]
+- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 148]]
+- 1 edge to [[_COMMUNITY_Community 477]]
+- 1 edge to [[_COMMUNITY_Community 196]]
+- 1 edge to [[_COMMUNITY_Community 128]]
+- 1 edge to [[_COMMUNITY_Community 479]]
 
 ## Top bridge nodes
-- [[GitGuard]] - degree 85, connects to 6 communities
-- [[test_round2_hardening.py]] - degree 17, connects to 4 communities
-- [[TestLLMProxyEndpoints]] - degree 10, connects to 4 communities
-- [[TestNotifyUserBlockedSanitization]] - degree 10, connects to 4 communities
-- [[TestGitGuardDefaultEnforce]] - degree 9, connects to 4 communities
+- [[GitGuard]] - degree 85, connects to 15 communities
+- [[test_round2_hardening.py]] - degree 17, connects to 5 communities
+- [[TestLLMProxyEndpoints]] - degree 10, connects to 5 communities
+- [[TestNotifyUserBlockedSanitization]] - degree 10, connects to 5 communities
+- [[TestGitGuardDefaultEnforce]] - degree 9, connects to 5 communities

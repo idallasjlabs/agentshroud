@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "Community 2172"
+community: "Community 107"
 location: "L95"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2172
+  - community/Community_107
 ---
 
 # Restart Procedure
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1. Starting and Stopping AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2172
+#graphify/document #graphify/EXTRACTED #community/Community_107

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Community 368"
+community: "Community 1139"
 location: "L250"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_368
+  - community/Community_1139
 ---
 
 # _make_github_advisory()
@@ -19,4 +19,4 @@ tags:
 - [[Build a minimal GitHub Security Advisory payload keyed on GHSA id.      ``ghsa_i]] - `rationale_for` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_368
+#graphify/code #graphify/EXTRACTED #community/Community_1139

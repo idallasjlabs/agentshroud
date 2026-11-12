@@ -17,7 +17,7 @@ tags:
 - [[.delegate()]] - `references` [EXTRACTED]
 - [[.is_delegated()]] - `references` [EXTRACTED]
 - [[.revoke()]] - `references` [EXTRACTED]
-- [[Any_21]] - `uses` [INFERRED]
+- [[Any_31]] - `uses` [INFERRED]
 - [[DelegationManager_1]] - `uses` [INFERRED]
 - [[Enum]] - `inherits` [EXTRACTED]
 - [[Subset of privileges that can be delegated by the owner.]] - `rationale_for` [EXTRACTED]

@@ -1,25 +1,23 @@
 ---
-source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
+source_file: "gateway/tests/test_edge_profiles.py"
 type: "code"
-community: "Community 35"
-location: "L73"
+community: "Community 605"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/Community_605
 ---
 
 # _write()
 
 ## Connections
-- [[.test_configured_servers_are_allowlisted_by_default()]] - `calls` [EXTRACTED]
-- [[.test_engine_allows_known_server_under_default()]] - `calls` [EXTRACTED]
-- [[.test_engine_denies_unknown_server_under_default()]] - `calls` [EXTRACTED]
-- [[.test_engine_requires_approval_for_destructive_tool_on_known_server()]] - `calls` [EXTRACTED]
-- [[.test_explicit_policy_section_is_not_overridden()]] - `calls` [EXTRACTED]
-- [[.test_missing_section_yields_deny_by_default_policy()]] - `calls` [EXTRACTED]
-- [[.test_no_mcp_section_still_deny_by_default()]] - `calls` [EXTRACTED]
-- [[Path_33]] - `references` [EXTRACTED]
-- [[test_mcp_policy_default_failclosed.py]] - `contains` [EXTRACTED]
+- [[.test_duplicate_vendor_refuses()]] - `calls` [EXTRACTED]
+- [[.test_file_name_must_match_vendor()]] - `calls` [EXTRACTED]
+- [[.test_invalid_profile_refuses_to_load()]] - `calls` [EXTRACTED]
+- [[.test_loads()]] - `calls` [EXTRACTED]
+- [[.test_monitor_needs_ack_and_warns_loudly()]] - `calls` [EXTRACTED]
+- [[.test_threshold_may_be_raised()]] - `calls` [EXTRACTED]
+- [[test_edge_profiles.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_35
+#graphify/code #graphify/EXTRACTED #community/Community_605

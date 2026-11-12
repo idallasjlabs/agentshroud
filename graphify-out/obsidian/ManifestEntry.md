@@ -16,7 +16,7 @@ tags:
 - [[.from_file()]] - `method` [EXTRACTED]
 - [[.to_dict()_15]] - `method` [EXTRACTED]
 - [[A single item in the skills manifest.]] - `rationale_for` [EXTRACTED]
-- [[Path_40]] - `uses` [INFERRED]
+- [[Path_43]] - `uses` [INFERRED]
 - [[TestClient_1]] - `uses` [INFERRED]
 - [[TestDeployDryRun]] - `uses` [INFERRED]
 - [[TestDeployManifest]] - `uses` [INFERRED]

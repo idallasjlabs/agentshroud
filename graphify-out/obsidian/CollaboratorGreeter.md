@@ -12,7 +12,7 @@ tags:
 # CollaboratorGreeter
 
 ## Connections
-- [[.__init__()_19]] - `method` [EXTRACTED]
+- [[.__init__()_34]] - `method` [EXTRACTED]
 - [[._get_client()]] - `method` [EXTRACTED]
 - [[._load_state()]] - `method` [EXTRACTED]
 - [[._load_taglines()]] - `method` [EXTRACTED]

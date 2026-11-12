@@ -1,12 +1,12 @@
 ---
 source_file: "reports/upgrade-2026-09-20-dev.md"
 type: "document"
-community: "Community 118"
+community: "Community 48"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_118
+  - community/Community_48
 ---
 
 # upgrade-2026-09-20-dev.md
@@ -21,4 +21,4 @@ tags:
 - [[sunday-upgrade-apply.sh]] - `references` [EXTRACTED]
 - [[upgrade-2026-09-21]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_118
+#graphify/document #graphify/EXTRACTED #community/Community_48

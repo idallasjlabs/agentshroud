@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_hermes_chown_coverage.sh"
+source_file: "tests/startup_smoke/test_bot_boot_live.sh"
 type: "code"
-community: "Community 547"
-location: "L11"
+community: "Community 1420"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_547
+  - community/Community_1420
 ---
 
 # check()
 
 ## Connections
-- [[test_hermes_chown_coverage.sh]] - `defines` [EXTRACTED]
-- [[test_hermes_chown_coverage.sh script]] - `calls` [EXTRACTED]
+- [[test_bot_boot_live.sh]] - `defines` [EXTRACTED]
+- [[test_bot_boot_live.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_547
+#graphify/code #graphify/EXTRACTED #community/Community_1420

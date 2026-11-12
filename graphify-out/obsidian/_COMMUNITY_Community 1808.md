@@ -1,20 +1,22 @@
 ---
 type: community
-members: 7
+members: 9
 ---
 
 # Community 1808
 
-**Members:** 7 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[.export_attack_report()]] - code - gateway/security/context_guard.py
-- [[.get_attack_summary()]] - code - gateway/security/context_guard.py
-- [[.get_session_risk_level()]] - code - gateway/security/context_guard.py
-- [[Any_35]] - code - gateway/security/context_guard.py
-- [[Export attack detection report.]] - rationale - gateway/security/context_guard.py
-- [[Get risk level for a session based on detected attacks.]] - rationale - gateway/security/context_guard.py
-- [[Get summary of detected attacks.]] - rationale - gateway/security/context_guard.py
+- [[_appendLogLine()]] - code - gateway/soc/static/soc.js
+- [[_edgeLiveEvent()]] - code - gateway/soc/static/soc.js
+- [[_edgeTime()]] - code - gateway/soc/static/soc.js
+- [[_handleWSEvent()]] - code - gateway/soc/static/soc.js
+- [[_loadEdge()]] - code - gateway/soc/static/soc.js
+- [[_renderEdgeRecent()]] - code - gateway/soc/static/soc.js
+- [[_renderOverviewFeed()]] - code - gateway/soc/static/soc.js
+- [[_renderSecurityTable()]] - code - gateway/soc/static/soc.js
+- [[_ts()]] - code - gateway/soc/static/soc.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +26,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 0]]
+- 9 edges to [[_COMMUNITY_Community 82]]
+- 4 edges to [[_COMMUNITY_Community 965]]
+- 1 edge to [[_COMMUNITY_Community 51]]
+- 1 edge to [[_COMMUNITY_Community 8]]
+- 1 edge to [[_COMMUNITY_Community 2046]]
 
 ## Top bridge nodes
-- [[.get_attack_summary()]] - degree 5, connects to 1 community
-- [[.get_session_risk_level()]] - degree 3, connects to 1 community
-- [[.export_attack_report()]] - degree 3, connects to 1 community
+- [[_handleWSEvent()]] - degree 7, connects to 3 communities
+- [[_renderSecurityTable()]] - degree 4, connects to 3 communities
+- [[_renderEdgeRecent()]] - degree 4, connects to 2 communities
+- [[_renderOverviewFeed()]] - degree 3, connects to 2 communities
+- [[_loadEdge()]] - degree 3, connects to 2 communities

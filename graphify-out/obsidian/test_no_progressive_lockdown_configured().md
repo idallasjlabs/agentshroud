@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_falco_watcher.py"
 type: "code"
-community: "Community 531"
+community: "Community 75"
 location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_531
+  - community/Community_75
 ---
 
 # test_no_progressive_lockdown_configured()
@@ -17,4 +17,4 @@ tags:
 - [[_make_alert()]] - `calls` [EXTRACTED]
 - [[test_falco_watcher.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_531
+#graphify/code #graphify/EXTRACTED #community/Community_75

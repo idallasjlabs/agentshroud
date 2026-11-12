@@ -1,25 +1,18 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "Community 121"
-location: "L219"
+community: "Community 1210"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_121
+  - community/Community_1210
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_82]] - `calls` [EXTRACTED]
-- [[._analyze_file_content()]] - `references` [EXTRACTED]
-- [[._analyze_script_file()]] - `references` [EXTRACTED]
-- [[._quarantine_suspicious_files()]] - `calls` [EXTRACTED]
-- [[._scan_git_hooks()]] - `references` [EXTRACTED]
-- [[._scan_package_json()]] - `references` [EXTRACTED]
-- [[._scan_pyproject_toml()]] - `references` [EXTRACTED]
-- [[._scan_setup_py()]] - `references` [EXTRACTED]
-- [[.scan_git_repository()]] - `calls` [EXTRACTED]
+- [[.__init__()_78]] - `references` [EXTRACTED]
+- [[._hash_file()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_121
+#graphify/code #graphify/EXTRACTED #community/Community_1210

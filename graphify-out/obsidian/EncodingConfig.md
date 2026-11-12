@@ -12,7 +12,7 @@ tags:
 # EncodingConfig
 
 ## Connections
-- [[.__init__()_77]] - `references` [EXTRACTED]
+- [[.__init__()_92]] - `references` [EXTRACTED]
 - [[.test_config_disable_base64()]] - `calls` [EXTRACTED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[TestEncodingDetector]] - `uses` [INFERRED]

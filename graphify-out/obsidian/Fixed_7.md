@@ -1,17 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 1386"
-location: "L411"
+community: "Community 773"
+location: "L393"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1386
+  - community/Community_773
 ---
 
 # Fixed
 
 ## Connections
-- [[1.2.3 — releasev1.2.3 (2026-06-29)]] - `contains` [EXTRACTED]
+- [[1.2.4 — releasev1.2.4 (2026-06-29)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1386
+#graphify/document #graphify/EXTRACTED #community/Community_773

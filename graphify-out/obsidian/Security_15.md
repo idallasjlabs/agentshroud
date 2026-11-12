@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 1380"
-location: "L661"
+community: "Community 1386"
+location: "L686"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1380
+  - community/Community_1386
 ---
 
 # Security
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1.1.0 — feat-v1.4.0-shroud-another-bot — Hermes (2026-05-29)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1380
+#graphify/document #graphify/EXTRACTED #community/Community_1386

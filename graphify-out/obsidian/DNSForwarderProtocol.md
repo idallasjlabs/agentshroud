@@ -12,7 +12,7 @@ tags:
 # DNSForwarderProtocol
 
 ## Connections
-- [[.__init__()_21]] - `method` [EXTRACTED]
+- [[.__init__()_36]] - `method` [EXTRACTED]
 - [[._handle_query()]] - `method` [EXTRACTED]
 - [[._make_protocol()]] - `calls` [EXTRACTED]
 - [[.connection_made()]] - `method` [EXTRACTED]

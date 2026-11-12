@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "rationale"
-community: "Community 124"
+community: "Community 2120"
 location: "L285"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_124
+  - community/Community_2120
 ---
 
 # Cover the no-op _default_send stub used when no transport is injected.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGroupApprovalRouterDefaultSend]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_124
+#graphify/rationale #graphify/EXTRACTED #community/Community_2120

@@ -1,26 +1,35 @@
 ---
-source_file: "gateway/tests/test_egress_filter.py"
+source_file: "gateway/tests/test_edge_pipeline.py"
 type: "code"
-community: "Community 21"
-location: "L91"
+community: "Community 25"
+location: "L420"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_21
+  - community/Community_25
 ---
 
 # TestMonitorMode
 
 ## Connections
-- [[.test_allowed_domain_still_allowed_in_monitor()]] - `method` [EXTRACTED]
-- [[.test_unlisted_domain_allowed_in_monitor()]] - `method` [EXTRACTED]
-- [[ApprovalResult]] - `uses` [INFERRED]
-- [[EgressAction]] - `uses` [INFERRED]
-- [[EgressAttempt]] - `uses` [INFERRED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
-- [[EgressFilter in monitor mode should allow but log unlisted destinations.]] - `rationale_for` [EXTRACTED]
-- [[EgressFilterConfig]] - `uses` [INFERRED]
-- [[EgressPolicy]] - `uses` [INFERRED]
-- [[test_egress_filter.py]] - `contains` [EXTRACTED]
+- [[.test_monitor_mode_logs_but_allows_injection()]] - `method` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalStore_1]] - `uses` [INFERRED]
+- [[AuditStore_1]] - `uses` [INFERRED]
+- [[CanaryTripwire]] - `uses` [INFERRED]
+- [[EdgeApprovals]] - `uses` [INFERRED]
+- [[EdgeCallPipeline]] - `uses` [INFERRED]
+- [[EdgeDeps]] - `uses` [INFERRED]
+- [[EncodingDetector]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
+- [[LockdownLevel_1]] - `uses` [INFERRED]
+- [[MFAGuard_2]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[ProgressiveLockdown]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
+- [[TokenService]] - `uses` [INFERRED]
+- [[ToolRiskConfig_1]] - `uses` [INFERRED]
+- [[test_edge_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_21
+#graphify/code #graphify/INFERRED #community/Community_25

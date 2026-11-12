@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Community 1"
+community: "Community 61"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1
+  - community/Community_61
 ---
 
 # ConversationMessage
@@ -17,4 +17,4 @@ tags:
 - [[A single message in a conversation.]] - `rationale_for` [EXTRACTED]
 - [[session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1
+#graphify/code #graphify/EXTRACTED #community/Community_61

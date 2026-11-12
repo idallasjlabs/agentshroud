@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_owner_bare_deny_with_no_pending_falls_through_to_agent()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner deny with no target and NO pending collaborator request         must not]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_stats()_1]] - code - gateway/tests/test_outbound_filter.py
+- [[Test filter statistics.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,8 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 4]]
-- 1 edge to [[_COMMUNITY_Community 12]]
+- 1 edge to [[_COMMUNITY_Community 98]]
 
 ## Top bridge nodes
-- [[.test_owner_bare_deny_with_no_pending_falls_through_to_agent()]] - degree 7, connects to 2 communities
+- [[.test_stats()_1]] - degree 2, connects to 1 community

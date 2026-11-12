@@ -12,7 +12,7 @@ tags:
 # scan_bytes()
 
 ## Connections
-- [[Any_34]] - `references` [EXTRACTED]
+- [[Any_44]] - `references` [EXTRACTED]
 - [[Stream bytes to clamdscan for inline malware scanning.      Uses ``clamdscan --s]] - `rationale_for` [EXTRACTED]
 - [[clamav_scanner.py]] - `contains` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]

@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "rationale"
 community: "Community 488"
-location: "L611"
+location: "L661"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

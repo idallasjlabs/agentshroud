@@ -16,7 +16,7 @@ tags:
 - [[.test_drift_detected_on_missing_file()]] - `calls` [EXTRACTED]
 - [[.test_no_drift_returns_empty_list()]] - `calls` [EXTRACTED]
 - [[.test_returns_all_drifted_items()]] - `calls` [EXTRACTED]
-- [[Path_21]] - `references` [EXTRACTED]
+- [[Path_23]] - `references` [EXTRACTED]
 - [[Return names of entries that are missing or hash-mismatched in dest.      Retu]] - `rationale_for` [EXTRACTED]
 - [[SkillsManifest]] - `references` [EXTRACTED]
 - [[manifest.py]] - `contains` [EXTRACTED]

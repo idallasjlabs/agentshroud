@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "Community 80"
+community: "Community 34"
 location: "L352"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_80
+  - community/Community_34
 ---
 
 # test_hermes_and_openclaw_coexist()
@@ -18,4 +18,4 @@ tags:
 - [[RouterConfig]] - `calls` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_80
+#graphify/code #graphify/EXTRACTED #community/Community_34

@@ -1,18 +1,17 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "gateway/tests/test_update_conduit_push.py"
 type: "code"
-community: "Community 261"
-location: "L89"
+community: "Community 1042"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_261
+  - community/Community_1042
 ---
 
 # Path
 
 ## Connections
-- [[read_pin()]] - `references` [EXTRACTED]
-- [[write_pin()]] - `references` [EXTRACTED]
+- [[_versions_file()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_261
+#graphify/code #graphify/EXTRACTED #community/Community_1042

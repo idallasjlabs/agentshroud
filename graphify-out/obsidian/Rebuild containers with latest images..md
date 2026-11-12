@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Community 49"
-location: "L489"
+community: "Community 2017"
+location: "L516"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/Community_2017
 ---
 
 # Rebuild containers with latest images.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[rebuild()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_49
+#graphify/rationale #graphify/EXTRACTED #community/Community_2017

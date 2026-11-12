@@ -1,24 +1,13 @@
 ---
 type: community
-members: 45
+members: 22
 ---
 
 # Community 59
 
-**Members:** 45 nodes
+**Members:** 22 nodes
 
 ## Members
-- [[.__init__()_27]] - code - gateway/proxy/mcp_permissions.py
-- [[._load_privacy_policy()]] - code - gateway/proxy/mcp_permissions.py
-- [[._recompile_private_data_patterns()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_privacy_policy_status()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_private_access_events()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_private_access_summary()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_private_data_patterns()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_private_redaction_events()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_private_redaction_summary()]] - code - gateway/proxy/mcp_permissions.py
-- [[.record_private_data_redaction()]] - code - gateway/proxy/mcp_permissions.py
-- [[.set_trust_level()]] - code - gateway/proxy/mcp_permissions.py
 - [[.test_admin_allowed_at_trust_3()]] - code - gateway/tests/test_mcp_permissions.py
 - [[.test_admin_denied_at_trust_2()]] - code - gateway/tests/test_mcp_permissions.py
 - [[.test_admin_private_tool_allowed_for_owner()]] - code - gateway/tests/test_mcp_permissions.py
@@ -40,18 +29,6 @@ members: 45
 - [[.test_read_tool_at_trust_0()]] - code - gateway/tests/test_mcp_permissions.py
 - [[.test_write_tool_allowed_at_trust_1()]] - code - gateway/tests/test_mcp_permissions.py
 - [[.test_write_tool_denied_at_trust_0()]] - code - gateway/tests/test_mcp_permissions.py
-- [[Aggregate recent private-data redaction events.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Aggregate recent private-tool violations for SOC reporting.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Compile private data patterns once for efficient repeated use.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Load optional admin-private tool patterns from policy file.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[MCPPermissionManager]] - code - gateway/proxy/mcp_permissions.py
-- [[Manages permissions for MCP tool calls.      Default-allow philosophy tools wor]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Record admin-private data redaction event for compliance audit.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Return configured admin-private data redaction patterns.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Return privacy policy file load status for dashboardaudit APIs.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Return recent blocked private-tool attempts for auditing.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Return recent private-data redaction events.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Set trust level for an agent.]] - rationale - gateway/proxy/mcp_permissions.py
 - [[TestToolPermission]] - code - gateway/tests/test_mcp_permissions.py
 
 ## Live Query (requires Dataview plugin)
@@ -62,21 +39,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 25 edges to [[_COMMUNITY_Community 54]]
-- 22 edges to [[_COMMUNITY_Community 132]]
-- 21 edges to [[_COMMUNITY_Community 64]]
-- 12 edges to [[_COMMUNITY_Community 2038]]
-- 4 edges to [[_COMMUNITY_Community 329]]
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 2 edges to [[_COMMUNITY_Community 941]]
-- 2 edges to [[_COMMUNITY_Community 1970]]
-- 1 edge to [[_COMMUNITY_Community 140]]
-- 1 edge to [[_COMMUNITY_Community 1942]]
-- 1 edge to [[_COMMUNITY_Community 184]]
-- 1 edge to [[_COMMUNITY_Community 2071]]
+- 5 edges to [[_COMMUNITY_Community 2038]]
+- 2 edges to [[_COMMUNITY_Community 54]]
+- 1 edge to [[_COMMUNITY_Community 132]]
 
 ## Top bridge nodes
-- [[MCPPermissionManager]] - degree 101, connects to 12 communities
 - [[TestToolPermission]] - degree 27, connects to 3 communities
-- [[.__init__()_27]] - degree 5, connects to 2 communities
-- [[.record_private_data_redaction()]] - degree 3, connects to 1 community
+- [[.test_privacy_policy_overrides_patterns()]] - degree 2, connects to 1 community
+- [[.test_privacy_policy_status_when_missing_file()]] - degree 2, connects to 1 community

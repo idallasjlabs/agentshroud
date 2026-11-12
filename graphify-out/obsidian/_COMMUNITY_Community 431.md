@@ -1,89 +1,41 @@
 ---
 type: community
-members: 76
+members: 28
 ---
 
 # Community 431
 
-**Members:** 76 nodes
+**Members:** 28 nodes
 
 ## Members
-- [[.__init__()_72]] - code - gateway/security/dns_filter.py
-- [[._cleanup_rate_window()]] - code - gateway/security/dns_filter.py
-- [[._detect_tunneling()]] - code - gateway/security/dns_filter.py
-- [[._domain_in_allowlist()]] - code - gateway/security/dns_filter.py
-- [[._is_private_ip()_1]] - code - gateway/security/dns_filter.py
-- [[.check()_4]] - code - gateway/security/dns_filter.py
-- [[.check_rebinding()]] - code - gateway/security/dns_filter.py
-- [[.dns_filter()]] - code - gateway/tests/test_dns_filter.py
-- [[.get_audit_log()_3]] - code - gateway/security/dns_filter.py
-- [[.get_flagged_queries()]] - code - gateway/security/dns_filter.py
-- [[.resolve_and_cache()]] - code - gateway/security/dns_filter.py
-- [[.shannon_entropy()]] - code - gateway/security/dns_filter.py
-- [[.test_allowlist_blocks_unlisted_in_enforce()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_allowlist_permits_listed_domain()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_allowlist_permits_subdomain()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_base64_in_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_burst_queries_flagged()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_common_services_allowed()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_default_allows_all_domains()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_default_mode_is_enforce()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_dns_filter_config()]] - code - gateway/tests/test_security_audit.py
-- [[.test_dns_filter_default_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_empty_string()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_enforce_mode_blocks_tunneling()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_flagged_queries_in_log()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_generous_defaults()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_hex_encoded_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_high_entropy_string()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_high_entropy_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_log_contains_timestamp()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_log_contains_verdict()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_long_but_legitimate_domain()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_low_entropy_string()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_monitor_mode_never_blocks()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_multiple_long_labels_flagged()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_no_allowlist_allows_all()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_normal_domain_allowed()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_normal_rate_not_flagged()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_private_ip_detection()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_public_ip_not_private()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_queries_logged()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_resolve_and_cache_empty_domain_graceful()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_stable_resolution_passes()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_strict_has_allowlist()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_subdomain_allowed()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_very_long_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
-- [[DNSFilter]] - code - gateway/security/dns_filter.py
-- [[DNSFilterConfig]] - code - gateway/security/dns_filter.py
-- [[DNSQuery]] - code - gateway/security/dns_filter.py
-- [[DNSVerdict]] - code - gateway/security/dns_filter.py
-- [[Default mode is enforce after v0.8.0 enforcement hardening.]] - rationale - gateway/tests/test_dns_filter.py
-- [[Even suspicious queries pass in monitor mode.]] - rationale - gateway/tests/test_dns_filter.py
-- [[Known private ranges should be detected.]] - rationale - gateway/tests/test_dns_filter.py
-- [[Public IPs should not be flagged as private.]] - rationale - gateway/tests/test_dns_filter.py
-- [[Resolve domain to an IP and cache it for 5 minutes.]] - rationale - gateway/security/dns_filter.py
-- [[Resolving a domain that fails should return empty string gracefully.]] - rationale - gateway/tests/test_dns_filter.py
-- [[Return True if a DNS rebinding attack is detected.          Re-resolves the doma]] - rationale - gateway/security/dns_filter.py
-- [[Return True if the IP address is in a private  loopback range.]] - rationale - gateway/security/dns_filter.py
-- [[Seeding the same IP twice should not flag rebinding.]] - rationale - gateway/tests/test_dns_filter.py
-- [[TestAuditLogging]] - code - gateway/tests/test_dns_filter.py
-- [[TestDNSAllowlist]] - code - gateway/tests/test_dns_filter.py
-- [[TestDNSFilterConfig]] - code - gateway/tests/test_dns_filter.py
-- [[TestDNSRebinding]] - code - gateway/tests/test_dns_filter.py
-- [[TestDNSTunnelingDetection]] - code - gateway/tests/test_dns_filter.py
-- [[TestEntropyCalculator]] - code - gateway/tests/test_dns_filter.py
-- [[TestNormalDNSResolution]] - code - gateway/tests/test_dns_filter.py
-- [[TestRateLimiting_1]] - code - gateway/tests/test_dns_filter.py
-- [[TunnelingPattern]] - code - gateway/security/dns_filter.py
-- [[default_config()_1]] - code - gateway/tests/test_dns_filter.py
-- [[dns_filter()]] - code - gateway/tests/test_dns_filter.py
-- [[dns_filter.py]] - code - gateway/security/dns_filter.py
-- [[monitor_config()]] - code - gateway/tests/test_dns_filter.py
-- [[monitor_filter()]] - code - gateway/tests/test_dns_filter.py
-- [[strict_config()]] - code - gateway/tests/test_dns_filter.py
-- [[strict_filter()]] - code - gateway/tests/test_dns_filter.py
-- [[test_dns_filter.py]] - code - gateway/tests/test_dns_filter.py
+- [[._build_modules()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_all_pillars_scores_five()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_all_scorers_optimizing_with_full_stack()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_all_scorers_zero_without_modules_or_state()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_bare_environment()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_baseline_only()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_baseline_only()_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_full_stack()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_full_stack()_2]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_full_stack_with_review_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_import_failure_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_missing_rbac_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_rich_environment()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_true_and_false_against_real_app_state()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Redirect every Path(...) constructed inside the module into a sandbox.      Abso]] - rationale - gateway/tests/test_scanner_integration_coverage.py
+- [[Replace _app_state_has with a controllable membership set.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
+- [[Replace shutil.which with a controllable name → path mapping.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
+- [[TestAccessControl_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestAgenticScorers]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestAppStateHas]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestComputeScorecard_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestDataConfidentiality]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestIncidentResponse]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestLoggingMonitoring]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[flags()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[fs()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[test_scanner_integration_coverage.py]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[tools()]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -93,18 +45,38 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 33 edges to [[_COMMUNITY_Community 72]]
-- 25 edges to [[_COMMUNITY_Community 0]]
-- 1 edge to [[_COMMUNITY_Community 978]]
+- 14 edges to [[_COMMUNITY_Community 219]]
+- 4 edges to [[_COMMUNITY_Community 614]]
+- 2 edges to [[_COMMUNITY_Community 998]]
+- 2 edges to [[_COMMUNITY_Community 1044]]
 - 1 edge to [[_COMMUNITY_Community 185]]
-- 1 edge to [[_COMMUNITY_Community 141]]
-- 1 edge to [[_COMMUNITY_Community 162]]
-- 1 edge to [[_COMMUNITY_Community 120]]
-- 1 edge to [[_COMMUNITY_Community 452]]
+- 1 edge to [[_COMMUNITY_Community 102]]
+- 1 edge to [[_COMMUNITY_Community 34]]
+- 1 edge to [[_COMMUNITY_Community 2344]]
+- 1 edge to [[_COMMUNITY_Community 2315]]
+- 1 edge to [[_COMMUNITY_Community 2316]]
+- 1 edge to [[_COMMUNITY_Community 1192]]
+- 1 edge to [[_COMMUNITY_Community 2345]]
+- 1 edge to [[_COMMUNITY_Community 2317]]
+- 1 edge to [[_COMMUNITY_Community 2336]]
+- 1 edge to [[_COMMUNITY_Community 2318]]
+- 1 edge to [[_COMMUNITY_Community 2346]]
+- 1 edge to [[_COMMUNITY_Community 2319]]
+- 1 edge to [[_COMMUNITY_Community 2337]]
+- 1 edge to [[_COMMUNITY_Community 2347]]
+- 1 edge to [[_COMMUNITY_Community 2321]]
+- 1 edge to [[_COMMUNITY_Community 2122]]
+- 1 edge to [[_COMMUNITY_Community 2338]]
+- 1 edge to [[_COMMUNITY_Community 2348]]
+- 1 edge to [[_COMMUNITY_Community 2339]]
+- 1 edge to [[_COMMUNITY_Community 2322]]
+- 1 edge to [[_COMMUNITY_Community 2323]]
+- 1 edge to [[_COMMUNITY_Community 2340]]
+- 1 edge to [[_COMMUNITY_Community 2324]]
 
 ## Top bridge nodes
-- [[dns_filter.py]] - degree 10, connects to 5 communities
-- [[DNSFilterConfig]] - degree 49, connects to 3 communities
-- [[test_dns_filter.py]] - degree 18, connects to 2 communities
-- [[DNSFilter]] - degree 37, connects to 1 community
-- [[TestDNSTunnelingDetection]] - degree 10, connects to 1 community
+- [[test_scanner_integration_coverage.py]] - degree 50, connects to 28 communities
+- [[._build_modules()]] - degree 3, connects to 1 community
+- [[.test_all_pillars_scores_five()]] - degree 2, connects to 1 community
+- [[.test_full_stack()]] - degree 2, connects to 1 community
+- [[.test_full_stack_with_review_evidence()]] - degree 2, connects to 1 community

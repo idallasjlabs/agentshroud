@@ -1,23 +1,18 @@
 ---
-source_file: "gateway/tests/test_switch_model_idempotent.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 145"
-location: "L28"
+community: "Community 614"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_145
+  - community/Community_614
 ---
 
 # Path
 
 ## Connections
-- [[._run_and_read()_1]] - `calls` [EXTRACTED]
-- [[._run_and_read()]] - `calls` [EXTRACTED]
-- [[._run_twice()]] - `calls` [EXTRACTED]
-- [[.test_verify_flag_accepted_without_error()]] - `calls` [EXTRACTED]
-- [[.test_verify_flag_with_model_ref()]] - `calls` [EXTRACTED]
-- [[_read_env()]] - `references` [EXTRACTED]
-- [[_run_switch()]] - `references` [EXTRACTED]
+- [[_age()]] - `references` [EXTRACTED]
+- [[_w()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_145
+#graphify/code #graphify/EXTRACTED #community/Community_614

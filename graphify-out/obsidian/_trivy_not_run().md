@@ -17,7 +17,7 @@ tags:
 - [[.test_initial_when_not_run()]] - `calls` [EXTRACTED]
 - [[.test_one_when_sbom_exists()]] - `calls` [EXTRACTED]
 - [[.test_zero_when_no_sbom_no_trivy()]] - `calls` [EXTRACTED]
-- [[Any_70]] - `references` [EXTRACTED]
+- [[Any_81]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_67

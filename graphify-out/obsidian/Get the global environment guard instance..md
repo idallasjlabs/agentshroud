@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "Community 684"
+community: "Community 362"
 location: "L428"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_684
+  - community/Community_362
 ---
 
 # Get the global environment guard instance.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_env_guard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_684
+#graphify/rationale #graphify/EXTRACTED #community/Community_362

@@ -8,12 +8,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[Alias for Hermes Anthropic SDK's apiv1 preflight path.      Some Anthropic S]] - rationale - gateway/ingest_api/main.py
-- [[Alias for hermes v0.16.0+'s OpenAI client.      Hermes upgraded to v0.16.0 on 20]] - rationale - gateway/ingest_api/main.py
-- [[Proxy Anthropic API calls through security pipeline.]] - rationale - gateway/ingest_api/main.py
-- [[llm_api_proxy()]] - code - gateway/ingest_api/main.py
-- [[llm_api_v1_prefix_alias()]] - code - gateway/ingest_api/main.py
-- [[llm_openai_chat_alias()]] - code - gateway/ingest_api/main.py
+- [[.test_dm_approval_no_group_side_effect()]] - code - gateway/tests/test_group_approval_routing.py
+- [[.test_dm_approval_routes_only_to_owner()]] - code - gateway/tests/test_group_approval_routing.py
+- [[DM approval must not send any message to a group chat ID.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[DM-context approvals must not trigger group notifications.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[TestDMApprovalOwnerOnly]] - code - gateway/tests/test_group_approval_routing.py
+- [[When group_chat_id is None, only the owner receives a notification.]] - rationale - gateway/tests/test_group_approval_routing.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,11 +23,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 978]]
-- 3 edges to [[_COMMUNITY_Community 254]]
-- 1 edge to [[_COMMUNITY_Community 10]]
+- 3 edges to [[_COMMUNITY_Community 30]]
+- 1 edge to [[_COMMUNITY_Community 124]]
+- 1 edge to [[_COMMUNITY_Community 1560]]
 
 ## Top bridge nodes
-- [[llm_api_proxy()]] - degree 6, connects to 3 communities
-- [[llm_openai_chat_alias()]] - degree 4, connects to 2 communities
-- [[llm_api_v1_prefix_alias()]] - degree 4, connects to 2 communities
+- [[TestDMApprovalOwnerOnly]] - degree 6, connects to 3 communities
+- [[.test_dm_approval_routes_only_to_owner()]] - degree 3, connects to 1 community
+- [[.test_dm_approval_no_group_side_effect()]] - degree 3, connects to 1 community

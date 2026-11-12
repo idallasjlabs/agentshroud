@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 2041"
+community: "Community 231"
 location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2041
+  - community/Community_231
 ---
 
 # Social Media
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Brand Applications]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2041
+#graphify/document #graphify/EXTRACTED #community/Community_231

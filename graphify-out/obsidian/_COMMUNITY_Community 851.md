@@ -29,9 +29,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 181]]
 - 1 edge to [[_COMMUNITY_Community 46]]
 - 1 edge to [[_COMMUNITY_Community 305]]
-- 1 edge to [[_COMMUNITY_Community 181]]
 - 1 edge to [[_COMMUNITY_Community 1006]]
 
 ## Top bridge nodes

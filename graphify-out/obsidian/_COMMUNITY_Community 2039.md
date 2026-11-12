@@ -1,19 +1,20 @@
 ---
 type: community
-members: 6
+members: 7
 ---
 
 # Community 2039
 
-**Members:** 6 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[Added_7]] - document - CHANGELOG.md
-- [[Fixed_11]] - document - CHANGELOG.md
-- [[Removed]] - document - CHANGELOG.md
-- [[Security_14]] - document - CHANGELOG.md
-- [[Summary_12]] - document - CHANGELOG.md
-- [[1.1.1 — fixguard-wiring-and-ops-hardening (2026-06-10)]] - document - CHANGELOG.md
+- [[03-threat-model]] - document - docs/inbound-mcp-edge/03-threat-model.md
+- [[1. Trust boundaries]] - document - docs/inbound-mcp-edge/03-threat-model.md
+- [[2. Threats, controls, tests and residual risk]] - document - docs/inbound-mcp-edge/03-threat-model.md
+- [[3. Taxonomy corrections versus the brief]] - document - docs/inbound-mcp-edge/03-threat-model.md
+- [[4. Mutation evidence (2026-11-09)]] - document - docs/inbound-mcp-edge/03-threat-model.md
+- [[5. Defects found while building]] - document - docs/inbound-mcp-edge/03-threat-model.md
+- [[Inbound MCP Edge — Threat Model]] - document - docs/inbound-mcp-edge/03-threat-model.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,12 +22,3 @@ members: 6
 TABLE source_file, type FROM #community/Community_2039
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 773]]
-- 1 edge to [[_COMMUNITY_Community 1255]]
-- 1 edge to [[_COMMUNITY_Community 106]]
-- 1 edge to [[_COMMUNITY_Community 1380]]
-
-## Top bridge nodes
-- [[1.1.1 — fixguard-wiring-and-ops-hardening (2026-06-10)]] - degree 10, connects to 4 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "rationale"
-community: "Community 105"
+community: "Community 50"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_105
+  - community/Community_50
 ---
 
 # Test that configuration has sensible defaults
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_config_defaults()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_105
+#graphify/rationale #graphify/EXTRACTED #community/Community_50

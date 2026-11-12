@@ -21,6 +21,7 @@ tags:
 - [[Example Configurations]] - `contains` [EXTRACTED]
 - [[Media]] - `contains` [EXTRACTED]
 - [[Quickstart]] - `contains` [EXTRACTED]
+- [[What's New — Inbound MCP Edge (unreleased, SCRUM-198)]] - `contains` [EXTRACTED]
 - [[What's New — v1.2.2 (June 2026)]] - `contains` [EXTRACTED]
 - [[What's New — v1.3.0 Reliability (July 2026)]] - `contains` [EXTRACTED]
 - [[Who It's For]] - `contains` [EXTRACTED]

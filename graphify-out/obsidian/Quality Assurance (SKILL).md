@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-qa/SKILL.md"
 type: "document"
-community: "Community 1352"
+community: "Community 177"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1352
+  - community/Community_177
 ---
 
 # Quality Assurance (SKILL)
@@ -24,4 +24,4 @@ tags:
 - [[Usage_28]] - `contains` [EXTRACTED]
 - [[Usage_86]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1352
+#graphify/document #graphify/EXTRACTED #community/Community_177

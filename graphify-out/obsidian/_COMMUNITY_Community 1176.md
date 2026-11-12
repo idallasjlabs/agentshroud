@@ -8,7 +8,7 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[check()_2]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[check()_3]] - code - scripts/smoke.d/test-container-runtime.sh
 - [[container-runtime.sh (detection shim)]] - code - scripts/lib/container-runtime.sh
 - [[make_fake_bin()]] - code - scripts/smoke.d/test-container-runtime.sh
 - [[run_detect()]] - code - scripts/smoke.d/test-container-runtime.sh

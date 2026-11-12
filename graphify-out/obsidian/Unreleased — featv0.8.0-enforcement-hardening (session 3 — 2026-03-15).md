@@ -2,7 +2,7 @@
 source_file: "CHANGELOG.md"
 type: "document"
 community: "Community 1934"
-location: "L836"
+location: "L861"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -16,7 +16,7 @@ tags:
 - [[Changed]] - `contains` [EXTRACTED]
 - [[Changelog — AgentShroud™]] - `contains` [EXTRACTED]
 - [[Fixed]] - `contains` [EXTRACTED]
-- [[Fixed_12]] - `contains` [EXTRACTED]
+- [[Fixed_13]] - `contains` [EXTRACTED]
 - [[Summary_1]] - `contains` [EXTRACTED]
 - [[Summary_16]] - `contains` [EXTRACTED]
 - [[Tests]] - `contains` [EXTRACTED]

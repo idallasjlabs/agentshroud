@@ -12,15 +12,15 @@ tags:
 # XMLLeakFilter
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_128]] - `method` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_143]] - `method` [EXTRACTED]
 - [[.filter_function_calls_only()]] - `method` [EXTRACTED]
 - [[.filter_response()_2]] - `method` [EXTRACTED]
 - [[.scan_command_injection()]] - `method` [EXTRACTED]
 - [[.setup_method()_38]] - `calls` [EXTRACTED]
 - [[.xml_filter()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[Filter to remove sensitive XML and path information from outbound responses.]] - `rationale_for` [EXTRACTED]
 - [[FilterResult_1]] - `references` [EXTRACTED]

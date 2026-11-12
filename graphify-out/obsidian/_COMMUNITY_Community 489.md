@@ -24,7 +24,7 @@ members: 21
 - [[Load configuration from environment variables._1]] - rationale - gateway/security/killswitch_config.py
 - [[Load from a config dictionary (e.g. from YAML).]] - rationale - gateway/runtime/config.py
 - [[PTB HTTPXRequest __slots__ Crash-Loop Fix Rationale]] - rationale - docker/bots/hermes/patch_telegram_do_request.py
-- [[Path_21]] - code - gateway/skills/manifest.py
+- [[Path_23]] - code - gateway/skills/manifest.py
 - [[_Instr]] - code - docker/bots/hermes/patch_telegram_do_request.py
 - [[_wrapped()]] - code - docker/bots/hermes/patch_telegram_do_request.py
 - [[cls]] - code
@@ -42,23 +42,23 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_Community 97]]
 - 2 edges to [[_COMMUNITY_Community 738]]
 - 1 edge to [[_COMMUNITY_Community 54]]
-- 1 edge to [[_COMMUNITY_Community 307]]
+- 1 edge to [[_COMMUNITY_Community 111]]
 - 1 edge to [[_COMMUNITY_Community 52]]
 - 1 edge to [[_COMMUNITY_Community 88]]
 - 1 edge to [[_COMMUNITY_Community 89]]
-- 1 edge to [[_COMMUNITY_Community 0]]
-- 1 edge to [[_COMMUNITY_Community 23]]
+- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 80]]
 - 1 edge to [[_COMMUNITY_Community 35]]
-- 1 edge to [[_COMMUNITY_Community 16]]
+- 1 edge to [[_COMMUNITY_Community 290]]
 - 1 edge to [[_COMMUNITY_Community 70]]
-- 1 edge to [[_COMMUNITY_Community 1]]
+- 1 edge to [[_COMMUNITY_Community 61]]
 - 1 edge to [[_COMMUNITY_Community 17]]
-- 1 edge to [[_COMMUNITY_Community 65]]
+- 1 edge to [[_COMMUNITY_Community 9]]
 - 1 edge to [[_COMMUNITY_Community 72]]
 
 ## Top bridge nodes
 - [[cls]] - degree 21, connects to 12 communities
 - [[.from_file()]] - degree 5, connects to 1 community
-- [[Path_21]] - degree 5, connects to 1 community
+- [[Path_23]] - degree 5, connects to 1 community
 - [[.from_source()]] - degree 5, connects to 1 community
 - [[.from_env()]] - degree 3, connects to 1 community

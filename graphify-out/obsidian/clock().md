@@ -12,7 +12,7 @@ tags:
 # clock()
 
 ## Connections
-- [[FakeClock]] - `calls` [EXTRACTED]
+- [[FakeClock_1]] - `calls` [EXTRACTED]
 - [[test_rate_limit_guard.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_206

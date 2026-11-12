@@ -1,11 +1,11 @@
 ---
 type: community
-members: 50
+members: 44
 ---
 
 # Community 1281
 
-**Members:** 50 nodes
+**Members:** 44 nodes
 
 ## Members
 - [[.test_agent_response_analysis()]] - code - gateway/tests/test_multi_turn_tracker.py
@@ -17,9 +17,6 @@ members: 50
 - [[.test_disabled_tracker()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[.test_edge_cases()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[.test_file_reference_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[.test_get_stats()_1]] - code - gateway/tests/test_path_isolation.py
-- [[.test_global_stats()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[.test_global_stats()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
 - [[.test_infrastructure_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[.test_initialization()_1]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[.test_pii_fragment_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
@@ -47,10 +44,7 @@ members: 50
 - [[Test detection of system information queries.]] - rationale - gateway/tests/test_multi_turn_tracker.py
 - [[Test detection of tool inventory queries.]] - rationale - gateway/tests/test_multi_turn_tracker.py
 - [[Test edge cases and error conditions.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Test getting global statistics.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Test getting global statistics._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
 - [[Test getting session statistics.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Test getting statistics.]] - rationale - gateway/tests/test_path_isolation.py
 - [[Test proper initialization of MultiTurnTracker.]] - rationale - gateway/tests/test_multi_turn_tracker.py
 - [[Test session reset functionality.]] - rationale - gateway/tests/test_multi_turn_tracker.py
 - [[Test that disabled tracker doesn't track or score.]] - rationale - gateway/tests/test_multi_turn_tracker.py
@@ -67,12 +61,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 8]]
+- 3 edges to [[_COMMUNITY_Community 8]]
 - 2 edges to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 26]]
+- 1 edge to [[_COMMUNITY_Community 2121]]
 
 ## Top bridge nodes
-- [[TestMultiTurnTracker_1]] - degree 27, connects to 2 communities
+- [[TestMultiTurnTracker_1]] - degree 27, connects to 3 communities
 - [[.test_disabled_tracker()]] - degree 3, connects to 1 community
-- [[.test_global_stats()_1]] - degree 3, connects to 1 community
-- [[.test_get_stats()_1]] - degree 2, connects to 1 community

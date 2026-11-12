@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/security/soc_correlation.py"
 type: "code"
-community: "Community 1044"
-location: "L516"
+community: "Community 2188"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1044
+  - community/Community_2188
 ---
 
 # Any
 
 ## Connections
-- [[_stub_summary()]] - `references` [EXTRACTED]
+- [[.to_dict()_13]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1044
+#graphify/code #graphify/EXTRACTED #community/Community_2188

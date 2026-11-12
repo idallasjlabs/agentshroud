@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_proxy_request_allows_distinct_system_notices()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Different system notices should both be forwarded.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_payload_count_meets_minimum()]] - code - gateway/tests/test_adversarial_injection.py
+- [[Ensure the payload library stays above 100 entries (CI regression gate).]] - rationale - gateway/tests/test_adversarial_injection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 626]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 845]]
+- 1 edge to [[_COMMUNITY_Community 187]]
 
 ## Top bridge nodes
-- [[.test_proxy_request_allows_distinct_system_notices()]] - degree 4, connects to 3 communities
+- [[.test_payload_count_meets_minimum()]] - degree 2, connects to 1 community

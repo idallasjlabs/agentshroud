@@ -12,13 +12,13 @@ tags:
 # gather_advisories()
 
 ## Connections
-- [[Any_77]] - `references` [EXTRACTED]
+- [[Any_88]] - `references` [EXTRACTED]
 - [[Namespace]] - `references` [EXTRACTED]
-- [[Path_50]] - `calls` [EXTRACTED]
+- [[Path_54]] - `calls` [EXTRACTED]
 - [[Return per-agent advisory lists from snapshot or live GitHub.]] - `rationale_for` [EXTRACTED]
 - [[fetch_advisories()]] - `calls` [EXTRACTED]
 - [[load_snapshot()]] - `calls` [EXTRACTED]
-- [[main()_25]] - `calls` [EXTRACTED]
+- [[main()_27]] - `calls` [EXTRACTED]
 - [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_265

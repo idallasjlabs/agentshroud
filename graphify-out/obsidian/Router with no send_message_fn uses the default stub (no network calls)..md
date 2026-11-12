@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "rationale"
-community: "Community 124"
+community: "Community 2120"
 location: "L297"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_124
+  - community/Community_2120
 ---
 
 # Router with no send_message_fn uses the default stub (no network calls).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_router_works_without_send_fn()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_124
+#graphify/rationale #graphify/EXTRACTED #community/Community_2120

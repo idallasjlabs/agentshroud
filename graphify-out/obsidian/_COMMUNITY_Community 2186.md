@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_64]] - document - docker/config/hermes/skills/i-sad/README.md
-- [[README_69]] - document - docker/config/hermes/skills/i-sad/README.md
-- [[Related Skills_85]] - document - docker/config/hermes/skills/i-sad/README.md
-- [[System Audit Documentation_1]] - document - docker/config/hermes/skills/i-sad/README.md
-- [[Usage_87]] - document - docker/config/hermes/skills/i-sad/README.md
+- [[.get_lifecycle_status()]] - code - gateway/security/memory_lifecycle.py
+- [[.get_recent_actions()]] - code - gateway/security/memory_lifecycle.py
+- [[Any_59]] - code - gateway/security/memory_lifecycle.py
+- [[Get current lifecycle management status.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Get retention actions taken in the last N hours.]] - rationale - gateway/security/memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +22,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 90]]
+- 4 edges to [[_COMMUNITY_Community 16]]
+- 1 edge to [[_COMMUNITY_Community 1066]]
 
 ## Top bridge nodes
-- [[System Audit Documentation_1]] - degree 5, connects to 1 community
+- [[.get_recent_actions()]] - degree 4, connects to 2 communities
+- [[.get_lifecycle_status()]] - degree 5, connects to 1 community
+- [[Any_59]] - degree 2, connects to 1 community

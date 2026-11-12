@@ -32,10 +32,10 @@ members: 77
 - [[.test_successful_upgrade()]] - code - gateway/tests/test_agentshroud_manager.py
 - [[.test_valid_version()]] - code - gateway/tests/test_agentshroud_manager.py
 - [[.test_with_env_var()]] - code - gateway/tests/test_agentshroud_manager.py
-- [[Any_10]] - code - gateway/ingest_api/version_routes.py
-- [[Any_73]] - code - gateway/tools/agentshroud_manager.py
+- [[Any_20]] - code - gateway/ingest_api/version_routes.py
+- [[Any_84]] - code - gateway/tools/agentshroud_manager.py
 - [[Check the currently installed OpenClaw version.]] - rationale - gateway/tools/agentshroud_manager.py
-- [[Connection_1]] - code - gateway/tools/agentshroud_manager.py
+- [[Connection_2]] - code - gateway/tools/agentshroud_manager.py
 - [[Create a temporary database for testing.]] - rationale - gateway/tests/test_agentshroud_manager.py
 - [[Downgrade OpenClaw to a previous version.      Requires security review (risk of]] - rationale - gateway/tools/agentshroud_manager.py
 - [[Downgrade to a previous version. Requires approval_id unless dry_run.]] - rationale - gateway/ingest_api/version_routes.py
@@ -94,11 +94,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 10]]
+- 5 edges to [[_COMMUNITY_Community 10]]
+- 2 edges to [[_COMMUNITY_Community 2017]]
 - 1 edge to [[_COMMUNITY_Community 978]]
 - 1 edge to [[_COMMUNITY_Community 227]]
-- 1 edge to [[_COMMUNITY_Community 40]]
-- 1 edge to [[_COMMUNITY_Community 49]]
 
 ## Top bridge nodes
 - [[version_routes.py]] - degree 19, connects to 1 community

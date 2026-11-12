@@ -33,18 +33,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 0]]
+- 6 edges to [[_COMMUNITY_Community 7]]
 - 2 edges to [[_COMMUNITY_Community 24]]
 - 2 edges to [[_COMMUNITY_Community 22]]
-- 1 edge to [[_COMMUNITY_Community 7]]
-- 1 edge to [[_COMMUNITY_Community 614]]
+- 1 edge to [[_COMMUNITY_Community 365]]
 - 1 edge to [[_COMMUNITY_Community 304]]
 - 1 edge to [[_COMMUNITY_Community 1358]]
 - 1 edge to [[_COMMUNITY_Community 1359]]
 - 1 edge to [[_COMMUNITY_Community 52]]
 
 ## Top bridge nodes
-- [[test_prompt_guard.py]] - degree 14, connects to 9 communities
+- [[test_prompt_guard.py]] - degree 14, connects to 8 communities
 - [[TestReanchorDelimiters]] - degree 8, connects to 3 communities
 - [[prompt_guard()_1]] - degree 3, connects to 1 community
 - [[test_prompt_guard_init()]] - degree 3, connects to 1 community

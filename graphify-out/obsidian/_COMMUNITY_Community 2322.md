@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[.__aenter__()_4]] - code - gateway/tests/test_llm_proxy.py
-- [[.__aexit__()_4]] - code - gateway/tests/test_llm_proxy.py
-- [[.__init__()_173]] - code - gateway/tests/test_llm_proxy.py
-- [[.stream()]] - code - gateway/tests/test_llm_proxy.py
-- [[_HeadFakeClient]] - code - gateway/tests/test_llm_proxy.py
+- [[.test_compose_text_empty_when_absent()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_compose_text_skips_unreadable_then_reads()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_security_scan_sh_empty_when_absent()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_security_scan_sh_read()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestTextReaders]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,8 +22,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 1278]]
-- 1 edge to [[_COMMUNITY_Community 53]]
+- 2 edges to [[_COMMUNITY_Community 219]]
+- 1 edge to [[_COMMUNITY_Community 431]]
 
 ## Top bridge nodes
-- [[_HeadFakeClient]] - degree 7, connects to 2 communities
+- [[TestTextReaders]] - degree 5, connects to 1 community
+- [[.test_compose_text_skips_unreadable_then_reads()]] - degree 2, connects to 1 community
+- [[.test_security_scan_sh_read()]] - degree 2, connects to 1 community

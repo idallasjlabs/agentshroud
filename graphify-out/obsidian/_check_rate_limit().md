@@ -12,6 +12,7 @@ tags:
 # _check_rate_limit()
 
 ## Connections
+- [[HTTPException]] - `calls` [INFERRED]
 - [[Raise 429 if the client has exceeded the rate limit.]] - `rationale_for` [EXTRACTED]
 - [[TestRateLimit]] - `calls` [EXTRACTED]
 - [[chat()]] - `calls` [EXTRACTED]

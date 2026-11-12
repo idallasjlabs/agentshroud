@@ -12,7 +12,7 @@ tags:
 # ToolACLEnforcer
 
 ## Connections
-- [[.__init__()_121]] - `method` [EXTRACTED]
+- [[.__init__()_136]] - `method` [EXTRACTED]
 - [[._can_use_tool_impl()]] - `method` [EXTRACTED]
 - [[._get_group_tool_allowlist()]] - `method` [EXTRACTED]
 - [[._get_role()]] - `method` [EXTRACTED]

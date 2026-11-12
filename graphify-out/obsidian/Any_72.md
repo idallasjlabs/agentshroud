@@ -1,23 +1,22 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Community 6"
-location: "L726"
+community: "Community 344"
+location: "L183"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_6
+  - graphify/EXTRACTED
+  - community/Community_344
 ---
 
 # Any
 
 ## Connections
-- [[._handler()]] - `references` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler]] - `uses` [INFERRED]
+- [[.__init__()_137]] - `references` [EXTRACTED]
+- [[.analyze_tool_call()]] - `references` [EXTRACTED]
+- [[.get_global_stats()_1]] - `references` [EXTRACTED]
+- [[.get_session_stats()_1]] - `references` [EXTRACTED]
+- [[.sanitize_tool_params()]] - `references` [EXTRACTED]
+- [[.score_reversibility()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/Community_344

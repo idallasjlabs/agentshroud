@@ -1,15 +1,15 @@
 ---
 type: community
-members: 83
+members: 84
 ---
 
 # Community 37
 
-**Members:** 83 nodes
+**Members:** 84 nodes
 
 ## Members
-- [[.__init__()_35]] - code - gateway/proxy/slack_proxy.py
-- [[.__init__()_184]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.__init__()_50]] - code - gateway/proxy/slack_proxy.py
+- [[.__init__()_208]] - code - gateway/tests/test_slack_proxy_coverage.py
 - [[._call_slack_api()]] - code - gateway/proxy/slack_proxy.py
 - [[._intercept_connections_open()]] - code - gateway/proxy/slack_proxy.py
 - [[._is_owner_channel()]] - code - gateway/proxy/slack_proxy.py
@@ -90,6 +90,7 @@ members: 83
 - [[_make_proxy()_3]] - code - gateway/tests/test_slack_proxy_coverage.py
 - [[chat.postMessage without channeltext → nothing recorded, no lookups.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
 - [[is_system=True chat.postMessage bypasses the tracker entirely.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[slack_proxy.py]] - code - gateway/proxy/slack_proxy.py
 - [[test_slack_proxy_coverage.py]] - code - gateway/tests/test_slack_proxy_coverage.py
 
 ## Live Query (requires Dataview plugin)
@@ -103,16 +104,16 @@ SORT file.name ASC
 - 30 edges to [[_COMMUNITY_Community 1127]]
 - 7 edges to [[_COMMUNITY_Community 100]]
 - 3 edges to [[_COMMUNITY_Community 181]]
+- 3 edges to [[_COMMUNITY_Community 14]]
+- 2 edges to [[_COMMUNITY_Community 978]]
 - 2 edges to [[_COMMUNITY_Community 660]]
-- 2 edges to [[_COMMUNITY_Community 14]]
 - 2 edges to [[_COMMUNITY_Community 176]]
-- 1 edge to [[_COMMUNITY_Community 978]]
-- 1 edge to [[_COMMUNITY_Community 84]]
 - 1 edge to [[_COMMUNITY_Community 18]]
+- 1 edge to [[_COMMUNITY_Community 7]]
 
 ## Top bridge nodes
-- [[SlackAPIProxy]] - degree 38, connects to 7 communities
+- [[SlackAPIProxy]] - degree 38, connects to 6 communities
+- [[slack_proxy.py]] - degree 4, connects to 3 communities
 - [[.test_tracker_exception_does_not_break_response()]] - degree 5, connects to 2 communities
 - [[.test_network_error_returns_synthetic_failure()]] - degree 5, connects to 2 communities
 - [[test_slack_proxy_coverage.py]] - degree 11, connects to 1 community
-- [[.test_redaction_count_access_error_is_non_fatal()]] - degree 5, connects to 1 community

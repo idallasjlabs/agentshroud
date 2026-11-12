@@ -2,7 +2,7 @@
 source_file: "gateway/cli/main.py"
 type: "code"
 community: "Community 87"
-location: "L39"
+location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -23,11 +23,13 @@ tags:
 - [[.test_output_yaml_falls_back_to_json_without_pyyaml()]] - `calls` [EXTRACTED]
 - [[Any_4]] - `references` [EXTRACTED]
 - [[Print data in the requested format.]] - `rationale_for` [EXTRACTED]
+- [[_edge_result()]] - `calls` [EXTRACTED]
 - [[_print_table()]] - `calls` [EXTRACTED]
 - [[add_collaborator()]] - `calls` [EXTRACTED]
 - [[add_group_member()]] - `calls` [EXTRACTED]
 - [[approve()]] - `calls` [EXTRACTED]
 - [[deny()]] - `calls` [EXTRACTED]
+- [[edge_status()]] - `calls` [EXTRACTED]
 - [[freeze()]] - `calls` [EXTRACTED]
 - [[get_correlation()]] - `calls` [EXTRACTED]
 - [[get_egress_pending()]] - `calls` [EXTRACTED]

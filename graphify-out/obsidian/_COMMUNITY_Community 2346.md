@@ -1,15 +1,16 @@
 ---
 type: community
-members: 2
+members: 3
 ---
 
 # Community 2346
 
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[.test_urlencoded_draft_payload_tool_json_is_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Form-encoded draft payloads must not leak raw tool-call JSON.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_full_stack()_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_missing_auth_module_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestIdentityAuth]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +20,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 626]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 845]]
+- 1 edge to [[_COMMUNITY_Community 431]]
+- 1 edge to [[_COMMUNITY_Community 219]]
 
 ## Top bridge nodes
-- [[.test_urlencoded_draft_payload_tool_json_is_rewritten()]] - degree 4, connects to 3 communities
+- [[TestIdentityAuth]] - degree 3, connects to 1 community
+- [[.test_full_stack()_1]] - degree 2, connects to 1 community

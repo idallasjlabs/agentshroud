@@ -8,7 +8,7 @@ members: 44
 **Members:** 44 nodes
 
 ## Members
-- [[.__init__()_204]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[.__init__()_231]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[._classify_risk()_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[._domain_matches()_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[._init_browser()_3]] - code - skills/custom/securebrowser/scripts/browse.py
@@ -19,7 +19,7 @@ members: 44
 - [[._take_screenshot()_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[._validate_url()_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[.click()_3]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[.close()_20]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[.close()_22]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[.detect_captcha()_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[.extract()_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[.fill_field()_3]] - code - skills/custom/securebrowser/scripts/browse.py
@@ -51,7 +51,7 @@ members: 44
 - [[Take screenshot and save to audit directory_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
 - [[Validate URL against allowlistblocklist          Security This is the primary_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
 - [[browse.py_3]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[main()_29]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[main()_31]] - code - skills/custom/securebrowser/scripts/browse.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -63,7 +63,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_Community 181]]
 - 2 edges to [[_COMMUNITY_Community 8]]
-- 1 edge to [[_COMMUNITY_Community 152]]
+- 1 edge to [[_COMMUNITY_Community 25]]
 
 ## Top bridge nodes
 - [[.fill_field()_3]] - degree 9, connects to 1 community

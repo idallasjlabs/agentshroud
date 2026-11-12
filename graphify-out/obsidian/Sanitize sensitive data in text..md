@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "rationale"
-community: "Community 2316"
+community: "Community 809"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2316
+  - community/Community_809
 ---
 
 # Sanitize sensitive data in text.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._sanitize_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2316
+#graphify/rationale #graphify/EXTRACTED #community/Community_809

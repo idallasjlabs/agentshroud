@@ -24,7 +24,7 @@ members: 23
 - [[RuntimeConfig]] - code - gateway/runtime/config.py
 - [[TestContainerInfo]] - code - gateway/tests/test_runtime_engines.py
 - [[TestRuntimeConfig]] - code - gateway/tests/test_runtime_engines.py
-- [[__init__.py_8]] - code - gateway/runtime/__init__.py
+- [[__init__.py_9]] - code - gateway/runtime/__init__.py
 - [[apple_engine.py]] - code - gateway/runtime/apple_engine.py
 - [[compose_generator.py]] - code - gateway/runtime/compose_generator.py
 - [[config.py_1]] - code - gateway/runtime/config.py
@@ -40,14 +40,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_Community 240]]
+- 12 edges to [[_COMMUNITY_Community 240]]
+- 8 edges to [[_COMMUNITY_Community 250]]
 - 7 edges to [[_COMMUNITY_Community 379]]
 - 7 edges to [[_COMMUNITY_Community 372]]
 - 7 edges to [[_COMMUNITY_Community 225]]
-- 7 edges to [[_COMMUNITY_Community 250]]
 - 5 edges to [[_COMMUNITY_Community 743]]
-- 4 edges to [[_COMMUNITY_Community 918]]
-- 2 edges to [[_COMMUNITY_Community 49]]
+- 2 edges to [[_COMMUNITY_Community 918]]
+- 2 edges to [[_COMMUNITY_Community 1352]]
+- 2 edges to [[_COMMUNITY_Community 2017]]
 - 2 edges to [[_COMMUNITY_Community 489]]
 - 2 edges to [[_COMMUNITY_Community 236]]
 - 1 edge to [[_COMMUNITY_Community 2010]]
@@ -56,8 +57,8 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 1052]]
 
 ## Top bridge nodes
-- [[ContainerInfo_2]] - degree 31, connects to 11 communities
-- [[__init__.py_8]] - degree 10, connects to 5 communities
+- [[ContainerInfo_2]] - degree 31, connects to 12 communities
+- [[__init__.py_9]] - degree 10, connects to 6 communities
 - [[TestRuntimeConfig]] - degree 12, connects to 4 communities
 - [[docker_engine.py]] - degree 9, connects to 4 communities
 - [[podman_engine.py]] - degree 9, connects to 4 communities

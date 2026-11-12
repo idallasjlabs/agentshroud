@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "Community 431"
+community: "Community 72"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_431
+  - community/Community_72
 ---
 
 # DNSFilterConfig
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_44]] - `calls` [EXTRACTED]
-- [[.__init__()_72]] - `references` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_59]] - `calls` [EXTRACTED]
+- [[.__init__()_87]] - `references` [EXTRACTED]
 - [[.dns_filter()]] - `calls` [EXTRACTED]
 - [[.test_dns_filter_config()]] - `calls` [EXTRACTED]
 - [[.test_dns_filter_default_enforce()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
@@ -62,4 +62,4 @@ tags:
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_431
+#graphify/code #graphify/INFERRED #community/Community_72

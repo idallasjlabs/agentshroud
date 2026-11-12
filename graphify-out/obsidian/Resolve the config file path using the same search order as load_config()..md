@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Community 72"
+community: "Community 50"
 location: "L381"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_50
 ---
 
 # Resolve the config file path using the same search order as load_config().
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[resolve_config_path()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_72
+#graphify/rationale #graphify/EXTRACTED #community/Community_50

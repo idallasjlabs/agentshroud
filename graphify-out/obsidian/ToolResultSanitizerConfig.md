@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "Community 72"
+community: "Community 516"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_516
 ---
 
 # ToolResultSanitizerConfig
 
 ## Connections
-- [[.__init__()_126]] - `references` [EXTRACTED]
+- [[.__init__()_141]] - `references` [EXTRACTED]
 - [[.setup_method()_37]] - `calls` [EXTRACTED]
 - [[.test_convenience_function()]] - `calls` [EXTRACTED]
 - [[.test_custom_config()_3]] - `calls` [EXTRACTED]
@@ -21,7 +21,7 @@ tags:
 - [[.test_realistic_web_scraping_result()]] - `calls` [EXTRACTED]
 - [[.test_warn_mode()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Configuration for tool result markdown sanitization.]] - `rationale_for` [EXTRACTED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
@@ -39,4 +39,4 @@ tags:
 - [[test_tool_result_sanitizer_enhanced.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer_enhanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/Community_516

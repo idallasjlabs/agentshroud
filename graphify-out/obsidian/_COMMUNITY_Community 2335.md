@@ -1,15 +1,17 @@
 ---
 type: community
-members: 2
+members: 4
 ---
 
 # Community 2335
 
-**Members:** 2 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_config_from_env()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[Test configuration from environment variables.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[.test_url_encoded_payload_normalized()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_zero_width_space_stripped()]] - code - gateway/tests/test_adversarial_injection.py
+- [[Encoding bypass variants — validates InputNormalizer multi-pass decode.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[TestEncodingBypass]] - code - gateway/tests/test_adversarial_injection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +21,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 16]]
+- 3 edges to [[_COMMUNITY_Community 14]]
+- 3 edges to [[_COMMUNITY_Community 187]]
+- 1 edge to [[_COMMUNITY_Community 271]]
+- 1 edge to [[_COMMUNITY_Community 7]]
 
 ## Top bridge nodes
-- [[.test_config_from_env()]] - degree 2, connects to 1 community
+- [[TestEncodingBypass]] - degree 9, connects to 4 communities
+- [[.test_url_encoded_payload_normalized()]] - degree 2, connects to 1 community
+- [[.test_zero_width_space_stripped()]] - degree 2, connects to 1 community

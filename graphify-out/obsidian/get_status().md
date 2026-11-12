@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 918"
-location: "L232"
+community: "Community 743"
+location: "L299"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_918
+  - community/Community_743
 ---
 
 # get_status()
@@ -20,4 +20,4 @@ tags:
 - [[get_security_comparison()]] - `calls` [EXTRACTED]
 - [[warn_missing_features()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_918
+#graphify/code #graphify/EXTRACTED #community/Community_743

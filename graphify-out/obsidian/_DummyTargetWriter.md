@@ -12,7 +12,7 @@ tags:
 # _DummyTargetWriter
 
 ## Connections
-- [[.close()_14]] - `method` [EXTRACTED]
+- [[.close()_16]] - `method` [EXTRACTED]
 - [[.drain()_1]] - `method` [EXTRACTED]
 - [[.write()_1]] - `method` [EXTRACTED]
 - [[EgressAction]] - `uses` [INFERRED]

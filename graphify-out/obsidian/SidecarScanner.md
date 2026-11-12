@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "Community 43"
+community: "Community 7"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/Community_7
 ---
 
 # SidecarScanner
 
 ## Connections
-- [[.__init__()_34]] - `method` [EXTRACTED]
+- [[.__init__()_49]] - `method` [EXTRACTED]
 - [[.get_stats()_7]] - `method` [EXTRACTED]
 - [[.scan()]] - `method` [EXTRACTED]
 - [[HTTPConnectProxy]] - `conceptually_related_to` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
 - [[test_sidecar_scanner()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/Community_7

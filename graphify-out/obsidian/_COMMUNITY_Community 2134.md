@@ -24,7 +24,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_Community 55]]
-- 1 edge to [[_COMMUNITY_Community 1342]]
+- 1 edge to [[_COMMUNITY_Community 1288]]
 
 ## Top bridge nodes
 - [[TestSnapshotSmoke]] - degree 4, connects to 1 community

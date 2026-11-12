@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Community 0"
+community: "Community 7"
 location: "L581"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_0
+  - community/Community_7
 ---
 
 # PromptGuard
 
 ## Connections
-- [[.__init__()_109]] - `method` [EXTRACTED]
+- [[.__init__()_124]] - `method` [EXTRACTED]
 - [[._check_encoded_content()]] - `method` [EXTRACTED]
 - [[._check_unicode_tricks()]] - `method` [EXTRACTED]
 - [[._get_hmac_key()]] - `method` [EXTRACTED]
@@ -39,12 +39,19 @@ tags:
 - [[.test_warn_threshold()]] - `calls` [EXTRACTED]
 - [[.test_write_baseline_json()]] - `calls` [EXTRACTED]
 - [[.verify_system_prompt()]] - `method` [EXTRACTED]
-- [[Any_36]] - `uses` [INFERRED]
+- [[Any_13]] - `uses` [INFERRED]
+- [[Any_46]] - `uses` [INFERRED]
+- [[Clock_1]] - `uses` [INFERRED]
 - [[ContextIntegrityScorer]] - `uses` [INFERRED]
 - [[Data Flow]] - `references` [EXTRACTED]
 - [[Detect and block prompt injection attempts.]] - `rationale_for` [EXTRACTED]
+- [[EdgeService]] - `uses` [INFERRED]
+- [[EdgeStore_3]] - `uses` [INFERRED]
+- [[Facade_1]] - `uses` [INFERRED]
+- [[FakeFacade]] - `uses` [INFERRED]
 - [[HeuristicClassifier_1]] - `uses` [INFERRED]
 - [[IntegrityScore]] - `uses` [INFERRED]
+- [[MemoryTokenStorage]] - `uses` [INFERRED]
 - [[PIISanitizer_3]] - `uses` [INFERRED]
 - [[PromptGuard_1]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
@@ -52,11 +59,13 @@ tags:
 - [[Startup Sequence]] - `references` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAuditChainPerformance]] - `uses` [INFERRED]
+- [[TestAuditRecord]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestBenchmarkBaseline]] - `uses` [INFERRED]
 - [[TestClassicOverride]] - `uses` [INFERRED]
-- [[TestConcurrency]] - `uses` [INFERRED]
+- [[TestCommandCenterStats]] - `uses` [INFERRED]
+- [[TestConcurrency_1]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestContextInjection]] - `uses` [INFERRED]
@@ -91,6 +100,7 @@ tags:
 - [[TestMCPSecurity]] - `uses` [INFERRED]
 - [[TestModuleConfigDefaults]] - `uses` [INFERRED]
 - [[TestModuleInstantiationInEnforceMode]] - `uses` [INFERRED]
+- [[TestMonitorMode]] - `uses` [INFERRED]
 - [[TestMultilingual]] - `uses` [INFERRED]
 - [[TestMultilingualInjection]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
@@ -113,12 +123,19 @@ tags:
 - [[TestSecurityPipelineChainLatency]] - `uses` [INFERRED]
 - [[TestSupplyChain_1]] - `uses` [INFERRED]
 - [[TestSystemPromptHMAC]] - `uses` [INFERRED]
+- [[TestT1ToolAbuse]] - `uses` [INFERRED]
+- [[TestT2Exfiltration]] - `uses` [INFERRED]
+- [[TestT3Writes]] - `uses` [INFERRED]
+- [[TestT4AuthN]] - `uses` [INFERRED]
+- [[TestT9Abuse]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
+- [[TestToolListing]] - `uses` [INFERRED]
 - [[TestToolResultScan]] - `uses` [INFERRED]
 - [[TestTrustManager]] - `uses` [INFERRED]
 - [[TestTrustManagerHardened]] - `uses` [INFERRED]
 - [[TestTrustManagerPerformance]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
+- [[VendorProfile_3]] - `uses` [INFERRED]
 - [[WS-E RT-2 Inbound Encoding Bypass Fix Rationale]] - `rationale_for` [EXTRACTED]
 - [[_BrokenOutputCanary]] - `uses` [INFERRED]
 - [[_BrokenSanitizer]] - `uses` [INFERRED]
@@ -126,9 +143,11 @@ tags:
 - [[_StubForwarder_2]] - `uses` [INFERRED]
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
 - [[_make_pipeline()_4]] - `calls` [EXTRACTED]
+- [[build_edge_service()]] - `calls` [EXTRACTED]
 - [[canary-cron.sh embedded Python main()]] - `calls` [EXTRACTED]
 - [[canary_pipeline()]] - `calls` [EXTRACTED]
 - [[context_integrity.py]] - `imports` [EXTRACTED]
+- [[edge()_1]] - `calls` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[guard()_1]] - `calls` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
@@ -143,6 +162,8 @@ tags:
 - [[run()_3]] - `calls` [EXTRACTED]
 - [[run_canary()_1]] - `references` [EXTRACTED]
 - [[run_chain()]] - `references` [EXTRACTED]
+- [[service.py]] - `imports` [EXTRACTED]
+- [[stack()]] - `calls` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `imports` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
@@ -150,6 +171,8 @@ tags:
 - [[test_context_integrity.py]] - `imports` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
+- [[test_edge_e2e_sdk.py]] - `imports` [EXTRACTED]
+- [[test_edge_pipeline.py]] - `imports` [EXTRACTED]
 - [[test_multilingual_injection.py]] - `imports` [EXTRACTED]
 - [[test_performance.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_all_modules_disabled()]] - `calls` [EXTRACTED]
@@ -163,4 +186,4 @@ tags:
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_0
+#graphify/code #graphify/INFERRED #community/Community_7

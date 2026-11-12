@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[.severity()]] - code - gateway/security/skill_guard.py
-- [[Highest severity across all findings (``NONE`` when clean).]] - rationale - gateway/security/skill_guard.py
-- [[IntEnum]] - code
-- [[Ordered severity ladder (``IntEnum`` so comparisons work).]] - rationale - gateway/security/skill_guard.py
-- [[Severity]] - code - gateway/security/skill_guard.py
+- [[.test_invalid_json()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_missing_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_no_files()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_valid()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestGetSbom_1]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,17 +22,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_Community 133]]
-- 7 edges to [[_COMMUNITY_Community 281]]
-- 2 edges to [[_COMMUNITY_Community 924]]
-- 1 edge to [[_COMMUNITY_Community 108]]
-- 1 edge to [[_COMMUNITY_Community 88]]
-- 1 edge to [[_COMMUNITY_Community 56]]
-- 1 edge to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 1808]]
-- 1 edge to [[_COMMUNITY_Community 11]]
+- 2 edges to [[_COMMUNITY_Community 219]]
+- 1 edge to [[_COMMUNITY_Community 431]]
 
 ## Top bridge nodes
-- [[IntEnum]] - degree 7, connects to 6 communities
-- [[Severity]] - degree 24, connects to 3 communities
-- [[.severity()]] - degree 3, connects to 1 community
+- [[TestGetSbom_1]] - degree 5, connects to 1 community
+- [[.test_invalid_json()]] - degree 2, connects to 1 community
+- [[.test_valid()]] - degree 2, connects to 1 community

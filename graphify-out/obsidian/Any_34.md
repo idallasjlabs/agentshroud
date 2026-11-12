@@ -1,22 +1,25 @@
 ---
-source_file: "gateway/security/clamav_scanner.py"
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "Community 148"
-location: "L59"
+community: "Community 114"
+location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_148
+  - community/Community_114
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()]] - `references` [EXTRACTED]
-- [[parse_clamscan_output()]] - `references` [EXTRACTED]
-- [[run_clamscan()]] - `references` [EXTRACTED]
-- [[save_report()]] - `references` [EXTRACTED]
-- [[scan_bytes()]] - `references` [EXTRACTED]
-- [[update_virus_db()]] - `references` [EXTRACTED]
+- [[._extract_message()]] - `references` [EXTRACTED]
+- [[._extract_user_id()_1]] - `references` [EXTRACTED]
+- [[._extract_username()]] - `references` [EXTRACTED]
+- [[._prepare_session_payload()]] - `references` [EXTRACTED]
+- [[._replace_message()]] - `references` [EXTRACTED]
+- [[.get_stats()_11]] - `references` [EXTRACTED]
+- [[.process_webhook()]] - `references` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_148
+#graphify/code #graphify/EXTRACTED #community/Community_114

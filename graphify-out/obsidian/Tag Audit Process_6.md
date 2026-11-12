@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "document"
-community: "Community 494"
+community: "Community 2341"
 location: "L100"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_494
+  - community/Community_2341
 ---
 
 # Tag Audit Process
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Tagging Standard_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_494
+#graphify/document #graphify/EXTRACTED #community/Community_2341

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "Community 924"
+community: "Community 133"
 location: "L107"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_924
+  - community/Community_133
 ---
 
 # ScanResult
@@ -21,8 +21,8 @@ tags:
 - [[.severity()]] - `method` [EXTRACTED]
 - [[Aggregated result of scanning a skill file or an entire skill tree.]] - `rationale_for` [EXTRACTED]
 - [[CompletedProcess_4]] - `uses` [INFERRED]
-- [[Path_22]] - `uses` [INFERRED]
-- [[Path_39]] - `uses` [INFERRED]
+- [[Path_24]] - `uses` [INFERRED]
+- [[Path_42]] - `uses` [INFERRED]
 - [[ScanResult_3]] - `uses` [INFERRED]
 - [[ScanResult_4]] - `uses` [INFERRED]
 - [[SkillGuard_1]] - `uses` [INFERRED]
@@ -45,4 +45,4 @@ tags:
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_924
+#graphify/code #graphify/INFERRED #community/Community_133

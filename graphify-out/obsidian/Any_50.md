@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Community 1558"
-location: "L94"
+community: "Community 185"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1558
+  - community/Community_185
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_100]] - `references` [EXTRACTED]
-- [[.get_global_stats()]] - `references` [EXTRACTED]
-- [[.get_session_stats()]] - `references` [EXTRACTED]
+- [[._handle_critical()]] - `references` [EXTRACTED]
+- [[categorize_alerts()]] - `references` [EXTRACTED]
+- [[generate_summary()_1]] - `references` [EXTRACTED]
+- [[parse_alert()]] - `references` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1558
+#graphify/code #graphify/EXTRACTED #community/Community_185

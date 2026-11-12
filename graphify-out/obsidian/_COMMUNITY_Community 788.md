@@ -1,35 +1,32 @@
 ---
 type: community
-members: 22
+members: 19
 ---
 
 # Community 788
 
-**Members:** 22 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[._make_report()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.store()_1]] - code - gateway/tests/test_intel_pipeline.py
-- [[.store_dir()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_chain_hash_links_reports()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_integrity_check_fails_for_tampered_file()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_integrity_check_passes_for_saved_report()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_load_all_returns_all_reports()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_load_all_skips_malformed_files()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_load_latest_returns_none_when_empty()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_multiple_saves_latest_is_newest()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_report_with_whitespace_only_id_rejected()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_report_with_whitespace_only_source_rejected()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_save_and_load_latest()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_save_with_corrupt_previous_file_falls_back_to_genesis()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_store_creates_directory()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_verify_chain_empty_store_is_valid()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_verify_chain_fails_for_tampered_entry()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_verify_chain_passes_for_intact_store()]] - code - gateway/tests/test_intel_pipeline.py
-- [[If the previous report file is corrupt, save must not raise.]] - rationale - gateway/tests/test_intel_pipeline.py
-- [[IntelReportStore_1]] - code - gateway/tests/test_intel_pipeline.py
-- [[Path_31]] - code - gateway/tests/test_intel_pipeline.py
-- [[TestIntelReportStore]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_is_valid_domain_name_accepts_hyphenated_inner_label()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_accepts_mixed_case_domain()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_accepts_numeric_inner_labels()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_accepts_standard_host()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_accepts_uppercase_input_via_normalization()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_enforces_tld_rules()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_handles_none_input()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_rejects_empty_or_whitespace()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_rejects_leading_or_trailing_dot()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_rejects_malformed_hosts()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_rejects_overlong_domain()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_rejects_overlong_label()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_rejects_punycode_and_non_ascii_labels()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_rejects_single_label_host()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_rejects_underscore_label()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_rejects_whitespace_inside_label()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_is_valid_domain_name_strips_surrounding_whitespace()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestDomainValidationHelper]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Unit tests for domain validator used by egress approval flow.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,11 +36,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 16 edges to [[_COMMUNITY_Community 57]]
+- 2 edges to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 14]]
+- 1 edge to [[_COMMUNITY_Community 99]]
+- 1 edge to [[_COMMUNITY_Community 2325]]
 
 ## Top bridge nodes
-- [[TestIntelReportStore]] - degree 23, connects to 1 community
-- [[IntelReportStore_1]] - degree 18, connects to 1 community
-- [[._make_report()]] - degree 13, connects to 1 community
-- [[Path_31]] - degree 11, connects to 1 community
-- [[.test_report_with_whitespace_only_id_rejected()]] - degree 2, connects to 1 community
+- [[TestDomainValidationHelper]] - degree 23, connects to 4 communities

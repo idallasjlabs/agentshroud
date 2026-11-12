@@ -1,24 +1,25 @@
 ---
 type: community
-members: 11
+members: 12
 ---
 
 # Community 1290
 
-**Members:** 11 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[._setup_proxy_with_capture()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_collab_notified_at_alert_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_collab_notified_at_escalated_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_collab_notified_at_suspended_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_collab_notified_only_once_per_level()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_no_collab_notice_below_alert()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_owner_also_notified_on_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[Owner should receive an escalation notice on the 3rd block.]] - rationale - gateway/tests/test_progressive_lockdown.py
-- [[TestCollabLockdownNotifications]] - code - gateway/tests/test_progressive_lockdown.py
-- [[The 4th block stays at ALERT but must NOT fire a second notification.]] - rationale - gateway/tests/test_progressive_lockdown.py
-- [[Verify _quarantine_blocked_message sends threshold warnings to the collaborator.]] - rationale - gateway/tests/test_progressive_lockdown.py
+- [[.test_10_x_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_127_0_0_1_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_169_254_blocked()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_192_168_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_decimal_ip_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_hex_ip_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_ipv4_mapped_ipv6_192_168_blocked()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_ipv4_mapped_ipv6_blocked()_2]] - code - gateway/tests/test_web_proxy.py
+- [[.test_ipv6_loopback_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_localhost_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_public_ip_allowed()_1]] - code - gateway/tests/test_web_proxy.py
+- [[TestSSRFBlocking]] - code - gateway/tests/test_web_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,9 +29,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 75]]
-- 1 edge to [[_COMMUNITY_Community 14]]
+- 4 edges to [[_COMMUNITY_Community 27]]
+- 2 edges to [[_COMMUNITY_Community 120]]
+- 1 edge to [[_COMMUNITY_Community 24]]
 
 ## Top bridge nodes
-- [[TestCollabLockdownNotifications]] - degree 12, connects to 2 communities
-- [[._setup_proxy_with_capture()]] - degree 8, connects to 1 community
+- [[TestSSRFBlocking]] - degree 18, connects to 3 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "Community 135"
+community: "Community 18"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_135
+  - community/Community_18
 ---
 
 # test_group_config.py
@@ -24,4 +24,4 @@ tags:
 - [[persist_user_collab_mode()]] - `imports` [EXTRACTED]
 - [[teams()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_135
+#graphify/code #graphify/EXTRACTED #community/Community_18

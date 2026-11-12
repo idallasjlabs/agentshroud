@@ -1,15 +1,17 @@
 ---
 type: community
-members: 2
+members: 4
 ---
 
 # Community 2336
 
-**Members:** 2 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_credential_redaction()]] - code - gateway/tests/test_prompt_protection.py
-- [[Test redaction of credential patterns.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[.test_not_running()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_running_with_fresh_log()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_running_without_logs()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestFluentBitSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +21,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 351]]
+- 1 edge to [[_COMMUNITY_Community 431]]
+- 1 edge to [[_COMMUNITY_Community 219]]
 
 ## Top bridge nodes
-- [[.test_credential_redaction()]] - degree 2, connects to 1 community
+- [[TestFluentBitSummary]] - degree 4, connects to 1 community
+- [[.test_running_with_fresh_log()]] - degree 2, connects to 1 community

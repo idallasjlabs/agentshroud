@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/update-agentshroud.sh"
 type: "code"
-community: "Community 1344"
+community: "Community 547"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1344
+  - community/Community_547
 ---
 
 # update-agentshroud.sh script
@@ -15,4 +15,4 @@ tags:
 - [[_rollback()]] - `calls` [EXTRACTED]
 - [[update-agentshroud.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1344
+#graphify/code #graphify/EXTRACTED #community/Community_547

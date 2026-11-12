@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "Community 72"
+community: "Community 108"
 location: "L85"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_72
+  - community/Community_108
 ---
 
 # EgressMonitor
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_44]] - `calls` [EXTRACTED]
-- [[.__init__()_76]] - `method` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_59]] - `calls` [EXTRACTED]
+- [[.__init__()_91]] - `method` [EXTRACTED]
 - [[.check_anomalies()]] - `method` [EXTRACTED]
 - [[.daily_summary()]] - `method` [EXTRACTED]
 - [[.get_events()_2]] - `method` [EXTRACTED]
 - [[.record()_1]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
@@ -41,4 +41,4 @@ tags:
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_72
+#graphify/code #graphify/INFERRED #community/Community_108

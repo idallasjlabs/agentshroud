@@ -23,7 +23,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 25]]
 - 1 edge to [[_COMMUNITY_Community 127]]
 
 ## Top bridge nodes
 - [[TestRunningImageResolution]] - degree 5, connects to 1 community
+- [[.test_running_image_parses_docker_inspect_stdout()]] - degree 2, connects to 1 community
+- [[.test_running_image_returns_none_on_inspect_failure()]] - degree 2, connects to 1 community

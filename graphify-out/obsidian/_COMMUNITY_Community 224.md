@@ -1,11 +1,11 @@
 ---
 type: community
-members: 37
+members: 36
 ---
 
 # Community 224
 
-**Members:** 37 nodes
+**Members:** 36 nodes
 
 ## Members
 - [[.setup_method()_15]] - code - gateway/tests/test_multilingual_injection.py
@@ -44,7 +44,6 @@ members: 37
 - [[Test that multilingual patterns have appropriate weights.]] - rationale - gateway/tests/test_multilingual_injection.py
 - [[Test that pattern matching is case insensitive where applicable.]] - rationale - gateway/tests/test_multilingual_injection.py
 - [[TestMultilingualInjection]] - code - gateway/tests/test_multilingual_injection.py
-- [[test_multilingual_injection.py]] - code - gateway/tests/test_multilingual_injection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -54,10 +53,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 0]]
-- 1 edge to [[_COMMUNITY_Community 162]]
+- 2 edges to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 24]]
 
 ## Top bridge nodes
-- [[test_multilingual_injection.py]] - degree 3, connects to 2 communities
-- [[TestMultilingualInjection]] - degree 20, connects to 1 community
+- [[TestMultilingualInjection]] - degree 20, connects to 2 communities
 - [[.setup_method()_15]] - degree 3, connects to 1 community

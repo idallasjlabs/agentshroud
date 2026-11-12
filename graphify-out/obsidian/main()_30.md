@@ -1,28 +1,26 @@
 ---
-source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
+source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "Community 492"
-location: "L235"
+community: "Community 8"
+location: "L1254"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_492
+  - community/Community_8
 ---
 
 # main()
 
 ## Connections
-- [[aggregate_costs()]] - `calls` [EXTRACTED]
-- [[build_json_all()]] - `calls` [EXTRACTED]
-- [[build_json_current()]] - `calls` [EXTRACTED]
-- [[eprint()]] - `calls` [EXTRACTED]
-- [[filter_by_days()]] - `calls` [EXTRACTED]
-- [[latest_day_cost()]] - `calls` [EXTRACTED]
-- [[load_payload()]] - `calls` [EXTRACTED]
-- [[model_usage.py]] - `contains` [EXTRACTED]
-- [[parse_daily_entries()]] - `calls` [EXTRACTED]
-- [[pick_current_model()]] - `calls` [EXTRACTED]
-- [[render_text_all()]] - `calls` [EXTRACTED]
-- [[render_text_current()]] - `calls` [EXTRACTED]
+- [[CLI entry point.      Args         argv Optional argv override (for tests).]] - `rationale_for` [EXTRACTED]
+- [[_rel()]] - `calls` [EXTRACTED]
+- [[gap_report_path()]] - `calls` [EXTRACTED]
+- [[render_gap_report()]] - `calls` [EXTRACTED]
+- [[rewrite_registry_text()_1]] - `calls` [EXTRACTED]
+- [[summarize()]] - `calls` [EXTRACTED]
+- [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
+- [[triage_agent()]] - `calls` [EXTRACTED]
+- [[triage_agent_full()]] - `calls` [EXTRACTED]
+- [[untriageable_reason()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_492
+#graphify/code #graphify/EXTRACTED #community/Community_8

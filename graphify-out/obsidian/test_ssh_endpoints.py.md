@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "Community 80"
+community: "Community 50"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_80
+  - community/Community_50
 ---
 
 # test_ssh_endpoints.py
@@ -32,8 +32,8 @@ tags:
 - [[TestSSHRequireApprovalFalse]] - `contains` [EXTRACTED]
 - [[TestSSHValidateCwd]] - `contains` [EXTRACTED]
 - [[auth_headers()_3]] - `contains` [EXTRACTED]
-- [[client()_16]] - `contains` [EXTRACTED]
+- [[client()_17]] - `contains` [EXTRACTED]
 - [[ssh_config()]] - `contains` [EXTRACTED]
 - [[test_config_with_ssh()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_80
+#graphify/code #graphify/EXTRACTED #community/Community_50

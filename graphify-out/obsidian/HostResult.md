@@ -19,7 +19,7 @@ tags:
 - [[.test_render_summary_all_pass_overall()]] - `calls` [EXTRACTED]
 - [[.test_render_summary_contains_hosts_and_overall()]] - `calls` [EXTRACTED]
 - [[.unreachable()]] - `references` [EXTRACTED]
-- [[Path_34]] - `uses` [INFERRED]
+- [[Path_37]] - `uses` [INFERRED]
 - [[Result of running the command on a single host.]] - `rationale_for` [EXTRACTED]
 - [[TestBuildSshArgv]] - `uses` [INFERRED]
 - [[TestClassify]] - `uses` [INFERRED]

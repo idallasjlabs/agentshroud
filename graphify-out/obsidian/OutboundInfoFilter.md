@@ -12,7 +12,7 @@ tags:
 # OutboundInfoFilter
 
 ## Connections
-- [[.__init__()_103]] - `method` [EXTRACTED]
+- [[.__init__()_118]] - `method` [EXTRACTED]
 - [[._classify_response_risk()]] - `method` [EXTRACTED]
 - [[._compile_patterns()_1]] - `method` [EXTRACTED]
 - [[._is_allowed_for_trust()]] - `method` [EXTRACTED]
@@ -41,6 +41,7 @@ tags:
 - [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
 - [[TestOutboundInfoFilter]] - `uses` [INFERRED]
+- [[TestPIIBlockModeInPipeline]] - `uses` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]

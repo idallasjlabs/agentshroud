@@ -1,17 +1,24 @@
 ---
 type: community
-members: 4
+members: 11
 ---
 
 # Community 1333
 
-**Members:** 4 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[3. Critical Findings & Risks]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[3.1 HIGH Priority Issues]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[3.2 MEDIUM Priority Issues]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[3.3 LOW Priority Issues]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[Build normalized scanner summary for SOCdashboard telemetry.]] - rationale - gateway/ingest_api/main.py
+- [[Persist last scanner result and emit live event-bus telemetry.]] - rationale - gateway/ingest_api/main.py
+- [[Return normalized scanner state + latest results for SOCdashboard views.]] - rationale - gateway/ingest_api/main.py
+- [[Run OpenSCAP XCCDF evaluation against the running container.]] - rationale - gateway/ingest_api/main.py
+- [[Run Trivy vulnerability scan.]] - rationale - gateway/ingest_api/main.py
+- [[Run all locally available security scanners and return consolidated results.]] - rationale - gateway/ingest_api/main.py
+- [[_record_scanner_result()]] - code - gateway/ingest_api/main.py
+- [[_scanner_summary()]] - code - gateway/ingest_api/main.py
+- [[run_all_scanners()]] - code - gateway/ingest_api/main.py
+- [[run_openscap_scan()]] - code - gateway/ingest_api/main.py
+- [[run_trivy_scan()]] - code - gateway/ingest_api/main.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,8 +28,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1268]]
-- 1 edge to [[_COMMUNITY_Community 144]]
+- 10 edges to [[_COMMUNITY_Community 978]]
+- 2 edges to [[_COMMUNITY_Community 10]]
+- 1 edge to [[_COMMUNITY_Community 85]]
 
 ## Top bridge nodes
-- [[3. Critical Findings & Risks]] - degree 5, connects to 2 communities
+- [[_record_scanner_result()]] - degree 8, connects to 2 communities
+- [[run_trivy_scan()]] - degree 6, connects to 2 communities
+- [[run_openscap_scan()]] - degree 5, connects to 2 communities
+- [[_scanner_summary()]] - degree 6, connects to 1 community
+- [[run_all_scanners()]] - degree 6, connects to 1 community

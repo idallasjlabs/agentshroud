@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[AuthRequired_2]] - `references` [EXTRACTED]
-- [[Path_2]] - `calls` [EXTRACTED]
-- [[Request_3]] - `references` [EXTRACTED]
+- [[Path_4]] - `calls` [EXTRACTED]
+- [[Request_4]] - `references` [EXTRACTED]
 - [[Return collaborator data from the shared bot workspace volume.      Reads COLLAB]] - `rationale_for` [EXTRACTED]
 - [[_build_activity_entries_from_contributor_logs()]] - `calls` [EXTRACTED]
 - [[_build_activity_summary_from_contributor_logs()]] - `calls` [EXTRACTED]

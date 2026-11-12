@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "Community 1209"
+community: "Community 1284"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1209
+  - community/Community_1284
 ---
 
 # Action to take when a governance limit is hit.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GovernanceAction]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1209
+#graphify/rationale #graphify/EXTRACTED #community/Community_1284

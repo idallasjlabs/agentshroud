@@ -2,7 +2,7 @@
 source_file: "gateway/soc/router.py"
 type: "code"
 community: "Community 10"
-location: "L58"
+location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,12 +12,14 @@ tags:
 # _log_audit()
 
 ## Connections
-- [[Any_67]] - `references` [EXTRACTED]
+- [[Any_77]] - `references` [EXTRACTED]
 - [[AuditLogEntry]] - `calls` [EXTRACTED]
 - [[AuditResult_1]] - `references` [EXTRACTED]
 - [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[SCLInterface_1]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
+- [[_decide_approval()]] - `calls` [EXTRACTED]
+- [[_run_killswitch()]] - `calls` [EXTRACTED]
 - [[add_collaborator()_1]] - `calls` [EXTRACTED]
 - [[add_group_member()_1]] - `calls` [EXTRACTED]
 - [[approve_egress()]] - `calls` [EXTRACTED]
@@ -28,6 +30,9 @@ tags:
 - [[delete_group()]] - `calls` [EXTRACTED]
 - [[deny_egress()]] - `calls` [EXTRACTED]
 - [[deny_request()]] - `calls` [EXTRACTED]
+- [[edge_enroll()_1]] - `calls` [EXTRACTED]
+- [[edge_kill()_1]] - `calls` [EXTRACTED]
+- [[edge_unkill()_1]] - `calls` [EXTRACTED]
 - [[emergency_block_egress()]] - `calls` [EXTRACTED]
 - [[killswitch_disconnect()]] - `calls` [EXTRACTED]
 - [[killswitch_freeze()]] - `calls` [EXTRACTED]

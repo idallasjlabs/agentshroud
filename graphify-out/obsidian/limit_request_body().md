@@ -2,7 +2,7 @@
 source_file: "gateway/ingest_api/main.py"
 type: "code"
 community: "Community 143"
-location: "L289"
+location: "L294"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,9 +12,9 @@ tags:
 # limit_request_body()
 
 ## Connections
-- [[JSONResponse]] - `calls` [EXTRACTED]
+- [[JSONResponse_1]] - `calls` [EXTRACTED]
 - [[Reject request bodies larger than 1MB before parsing.      Checks Content-Length]] - `rationale_for` [EXTRACTED]
-- [[Request_1]] - `references` [EXTRACTED]
+- [[Request_2]] - `references` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 - [[test_limit_request_body_chunked_body_over_limit_rejected()]] - `calls` [EXTRACTED]
 - [[test_limit_request_body_chunked_body_within_limit_passes_through()]] - `calls` [EXTRACTED]

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tools/agentshroud_manager.py"
+source_file: "gateway/security/health_report.py"
 type: "code"
-community: "Community 66"
-location: "L45"
+community: "Community 185"
+location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_66
+  - community/Community_185
 ---
 
 # Connection
 
 ## Connections
-- [[_get_db()]] - `references` [EXTRACTED]
+- [[init_db()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_66
+#graphify/code #graphify/EXTRACTED #community/Community_185

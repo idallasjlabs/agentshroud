@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "Community 707"
+community: "Community 7"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_707
+  - community/Community_7
 ---
 
 # event_bus.py
@@ -21,5 +21,6 @@ tags:
 - [[main.py_2]] - `imports_from` [EXTRACTED]
 - [[make_event()]] - `contains` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
+- [[websocket.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_707
+#graphify/code #graphify/EXTRACTED #community/Community_7

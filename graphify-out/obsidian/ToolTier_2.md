@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Action_1]] - `uses` [INFERRED]
-- [[Any_55]] - `uses` [INFERRED]
+- [[Any_65]] - `uses` [INFERRED]
 - [[Enum]] - `inherits` [EXTRACTED]
 - [[PermissionResult]] - `uses` [INFERRED]
 - [[RBACConfig]] - `uses` [INFERRED]

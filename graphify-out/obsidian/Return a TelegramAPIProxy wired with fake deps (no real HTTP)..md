@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "rationale"
 community: "Community 75"
-location: "L87"
+location: "L91"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

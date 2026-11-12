@@ -12,6 +12,6 @@ tags:
 # Args:             max_requests: Maximum requests allowed in the time window
 
 ## Connections
-- [[.__init__()_10]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_25]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_138

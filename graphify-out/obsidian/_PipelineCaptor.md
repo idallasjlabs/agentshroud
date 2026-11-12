@@ -12,7 +12,7 @@ tags:
 # _PipelineCaptor
 
 ## Connections
-- [[.__init__()_156]] - `method` [EXTRACTED]
+- [[.__init__()_177]] - `method` [EXTRACTED]
 - [[._run_forward()]] - `references` [EXTRACTED]
 - [[.process_inbound()_3]] - `method` [EXTRACTED]
 - [[.process_outbound()_3]] - `method` [EXTRACTED]

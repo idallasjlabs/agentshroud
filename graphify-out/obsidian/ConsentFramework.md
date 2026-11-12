@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "Community 152"
+community: "Community 72"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_152
+  - community/Community_72
 ---
 
 # ConsentFramework
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_64]] - `method` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_79]] - `method` [EXTRACTED]
 - [[.add_to_blacklist()]] - `method` [EXTRACTED]
 - [[.add_to_whitelist()]] - `method` [EXTRACTED]
 - [[.get_blacklist()]] - `method` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[.validate_config()]] - `method` [EXTRACTED]
 - [[.validate_configs()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Chen et al. 2026 — Agent configuration vulnerabilities  session hijacking (arXiv2602.14364)]] - `cites` [EXTRACTED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[GitGuard]] - `semantically_similar_to` [INFERRED]
@@ -44,4 +44,4 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_consent_framework.py]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_152
+#graphify/code #graphify/EXTRACTED #community/Community_72

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "Community 2051"
+community: "Community 50"
 location: "L384"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2051
+  - community/Community_50
 ---
 
 # GET /status should return current version
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_status_returns_current_version()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2051
+#graphify/rationale #graphify/EXTRACTED #community/Community_50

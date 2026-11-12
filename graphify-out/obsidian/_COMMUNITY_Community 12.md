@@ -124,43 +124,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 184 edges to [[_COMMUNITY_Community 4]]
-- 15 edges to [[_COMMUNITY_Community 138]]
-- 8 edges to [[_COMMUNITY_Community 1130]]
+- 208 edges to [[_COMMUNITY_Community 4]]
+- 23 edges to [[_COMMUNITY_Community 138]]
 - 5 edges to [[_COMMUNITY_Community 72]]
 - 5 edges to [[_COMMUNITY_Community 14]]
 - 4 edges to [[_COMMUNITY_Community 1127]]
 - 4 edges to [[_COMMUNITY_Community 1131]]
 - 4 edges to [[_COMMUNITY_Community 2006]]
 - 4 edges to [[_COMMUNITY_Community 1946]]
-- 3 edges to [[_COMMUNITY_Community 1412]]
-- 1 edge to [[_COMMUNITY_Community 707]]
+- 1 edge to [[_COMMUNITY_Community 7]]
 - 1 edge to [[_COMMUNITY_Community 13]]
-- 1 edge to [[_COMMUNITY_Community 2376]]
-- 1 edge to [[_COMMUNITY_Community 2382]]
-- 1 edge to [[_COMMUNITY_Community 2380]]
-- 1 edge to [[_COMMUNITY_Community 2384]]
-- 1 edge to [[_COMMUNITY_Community 2383]]
-- 1 edge to [[_COMMUNITY_Community 2385]]
-- 1 edge to [[_COMMUNITY_Community 2381]]
-- 1 edge to [[_COMMUNITY_Community 2386]]
-- 1 edge to [[_COMMUNITY_Community 2377]]
-- 1 edge to [[_COMMUNITY_Community 2379]]
-- 1 edge to [[_COMMUNITY_Community 2378]]
-- 1 edge to [[_COMMUNITY_Community 2391]]
-- 1 edge to [[_COMMUNITY_Community 2388]]
-- 1 edge to [[_COMMUNITY_Community 2393]]
-- 1 edge to [[_COMMUNITY_Community 2390]]
-- 1 edge to [[_COMMUNITY_Community 2392]]
-- 1 edge to [[_COMMUNITY_Community 2394]]
-- 1 edge to [[_COMMUNITY_Community 2374]]
-- 1 edge to [[_COMMUNITY_Community 2375]]
-- 1 edge to [[_COMMUNITY_Community 2389]]
-- 1 edge to [[_COMMUNITY_Community 2387]]
 
 ## Top bridge nodes
-- [[_wrap_response()]] - degree 233, connects to 28 communities
-- [[test_telegram_proxy_inbound.py]] - degree 29, connects to 12 communities
+- [[test_telegram_proxy_inbound.py]] - degree 29, connects to 10 communities
+- [[_wrap_response()]] - degree 233, connects to 5 communities
 - [[TestProgressiveLockdownUX]] - degree 28, connects to 4 communities
 - [[TestGroupMentionFilter]] - degree 12, connects to 4 communities
 - [[TestPerBotGroupMentionFilter]] - degree 12, connects to 4 communities

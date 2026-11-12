@@ -1,15 +1,17 @@
 ---
 type: community
-members: 2
+members: 4
 ---
 
 # Community 2332
 
-**Members:** 2 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_lifecycle_maintenance()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[Test complete lifecycle maintenance run.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[._domain_matches_pattern()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[._is_domain_allowed()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Check if a URL's domain is in the allowlist.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Check if domain matches pattern (supports wildcards).]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +21,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 16]]
+- 2 edges to [[_COMMUNITY_Community 516]]
 
 ## Top bridge nodes
-- [[.test_lifecycle_maintenance()]] - degree 2, connects to 1 community
+- [[._is_domain_allowed()]] - degree 3, connects to 1 community
+- [[._domain_matches_pattern()]] - degree 3, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Community 978"
-location: "L4494"
+community: "Community 10"
+location: "L4499"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/Community_10
 ---
 
 # Proxy native Ollama API calls through security pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ollama_api_proxy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_978
+#graphify/rationale #graphify/EXTRACTED #community/Community_10

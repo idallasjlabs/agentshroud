@@ -8,7 +8,7 @@ members: 32
 **Members:** 32 nodes
 
 ## Members
-- [[.__init__()_105]] - code - gateway/security/output_schema.py
+- [[.__init__()_120]] - code - gateway/security/output_schema.py
 - [[._register_default_schema()]] - code - gateway/security/output_schema.py
 - [[.register_schema()]] - code - gateway/security/output_schema.py
 - [[.test_custom_schema_enforced()]] - code - gateway/tests/test_output_schema.py
@@ -49,7 +49,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 72]]
+- 2 edges to [[_COMMUNITY_Community 7]]
 
 ## Top bridge nodes
 - [[OutputSchemaEnforcer]] - degree 14, connects to 1 community

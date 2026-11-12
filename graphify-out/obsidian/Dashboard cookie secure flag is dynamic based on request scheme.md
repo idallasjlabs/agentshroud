@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "Community 2051"
+community: "Community 50"
 location: "L300"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2051
+  - community/Community_50
 ---
 
 # Dashboard cookie secure flag is dynamic based on request scheme
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDashboardSecureCookie]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2051
+#graphify/rationale #graphify/EXTRACTED #community/Community_50

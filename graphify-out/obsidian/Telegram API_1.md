@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "concept"
-community: "Community 306"
+community: "Community 1219"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_306
+  - community/Community_1219
 ---
 
 # Telegram API
@@ -14,4 +14,4 @@ tags:
 - [[Approval Queue (human gate)]] - `calls` [EXTRACTED]
 - [[HTTP CONNECT Proxy (domain allowlist)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_306
+#graphify/concept #graphify/EXTRACTED #community/Community_1219

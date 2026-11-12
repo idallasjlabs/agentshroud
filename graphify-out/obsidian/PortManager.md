@@ -12,7 +12,7 @@ tags:
 # PortManager
 
 ## Connections
-- [[.__init__()_199]] - `method` [EXTRACTED]
+- [[.__init__()_225]] - `method` [EXTRACTED]
 - [[.find_available_port()]] - `method` [EXTRACTED]
 - [[.generate_compose_ports()]] - `method` [EXTRACTED]
 - [[.is_port_available()]] - `method` [EXTRACTED]

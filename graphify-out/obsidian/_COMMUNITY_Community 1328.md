@@ -1,17 +1,24 @@
 ---
 type: community
-members: 4
+members: 11
 ---
 
 # Community 1328
 
-**Members:** 4 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[5. API Key Rotation]] - document - docs/operations/runbook.md
-- [[Admin API Token]] - document - docs/operations/runbook.md
-- [[OpenClaw API Key]] - document - docs/operations/runbook.md
-- [[SSL Certificates]] - document - docs/operations/runbook.md
+- [[00-discovery]] - document - docs/inbound-mcp-edge/00-discovery.md
+- [[1. Repo layout, build and test]] - document - docs/inbound-mcp-edge/00-discovery.md
+- [[2. Baseline measurements (run now)]] - document - docs/inbound-mcp-edge/00-discovery.md
+- [[3. Defense layers and reusable interfaces]] - document - docs/inbound-mcp-edge/00-discovery.md
+- [[4. Mechanisms the edge depends on]] - document - docs/inbound-mcp-edge/00-discovery.md
+- [[5. Hermes, local agents and networking]] - document - docs/inbound-mcp-edge/00-discovery.md
+- [[6. Pre-existing findings (not caused by this work)]] - document - docs/inbound-mcp-edge/00-discovery.md
+- [[7. External specs verified (2026-11-09)]] - document - docs/inbound-mcp-edge/00-discovery.md
+- [[8. Gaps this feature needs filled]] - document - docs/inbound-mcp-edge/00-discovery.md
+- [[9. Risks to existing services]] - document - docs/inbound-mcp-edge/00-discovery.md
+- [[Inbound MCP Edge — Phase 0 Discovery]] - document - docs/inbound-mcp-edge/00-discovery.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +26,3 @@ members: 4
 TABLE source_file, type FROM #community/Community_1328
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 107]]
-
-## Top bridge nodes
-- [[5. API Key Rotation]] - degree 4, connects to 1 community

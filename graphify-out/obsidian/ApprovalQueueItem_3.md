@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Community 108"
+community: "Community 30"
 location: "L181"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_108
+  - community/Community_30
 ---
 
 # ApprovalQueueItem
@@ -25,8 +25,11 @@ tags:
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
+- [[FakeAuditStore_1]] - `uses` [INFERRED]
+- [[FakeCaller_1]] - `uses` [INFERRED]
+- [[FakeGroup]] - `uses` [INFERRED]
 - [[MFAGuard]] - `uses` [INFERRED]
-- [[Path_24]] - `uses` [INFERRED]
+- [[Path_26]] - `uses` [INFERRED]
 - [[TestApprovalStorePersistence]] - `uses` [INFERRED]
 - [[TestApprovalTimeout]] - `uses` [INFERRED]
 - [[TestAutoExpire]] - `uses` [INFERRED]
@@ -34,7 +37,10 @@ tags:
 - [[ToolRiskConfig]] - `uses` [INFERRED]
 - [[ToolRiskPolicy]] - `uses` [INFERRED]
 - [[WebSocket]] - `uses` [INFERRED]
+- [[_FakeDecideQueue]] - `uses` [INFERRED]
+- [[_Svc]] - `uses` [INFERRED]
 - [[_make_item()]] - `calls` [EXTRACTED]
+- [[_pending_item()]] - `calls` [EXTRACTED]
 - [[approval.py]] - `imports` [EXTRACTED]
 - [[enhanced_queue.py]] - `imports` [EXTRACTED]
 - [[models.py]] - `contains` [EXTRACTED]
@@ -42,5 +48,6 @@ tags:
 - [[store.py]] - `imports` [EXTRACTED]
 - [[test_approval_store.py]] - `imports` [EXTRACTED]
 - [[test_approval_stress.py]] - `imports` [EXTRACTED]
+- [[test_soc_router_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_108
+#graphify/code #graphify/INFERRED #community/Community_30

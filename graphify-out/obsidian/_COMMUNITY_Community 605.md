@@ -1,37 +1,33 @@
 ---
 type: community
-members: 24
+members: 20
 ---
 
 # Community 605
 
-**Members:** 24 nodes
+**Members:** 20 nodes
 
 ## Members
-- [[.middleware_manager()]] - code - gateway/tests/test_session_isolation.py
-- [[.temp_workspace()_2]] - code - gateway/tests/test_session_isolation.py
-- [[.temp_workspace()_3]] - code - gateway/tests/test_session_isolation.py
-- [[.test_middleware_cross_session_blocking()]] - code - gateway/tests/test_session_isolation.py
-- [[.test_middleware_file_path_isolation()]] - code - gateway/tests/test_session_isolation.py
-- [[.test_middleware_normalizes_invisible_unicode()]] - code - gateway/tests/test_session_isolation.py
-- [[.test_middleware_own_workspace_allowed()]] - code - gateway/tests/test_session_isolation.py
-- [[.test_middleware_owner_bypass()]] - code - gateway/tests/test_session_isolation.py
-- [[.test_middleware_session_context_injection()]] - code - gateway/tests/test_session_isolation.py
-- [[.test_middleware_user_identification()]] - code - gateway/tests/test_session_isolation.py
-- [[.test_multi_turn_block_reason_hides_score()]] - code - gateway/tests/test_session_isolation.py
-- [[Blocked multi-turn sessions should not disclose scoring details.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Create a temporary workspace.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Create a temporary workspace._1]] - rationale - gateway/tests/test_session_isolation.py
-- [[Create middleware manager with session isolation.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Input normalization should strip zero-width obfuscation before guards run.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test middleware enforcement of session boundaries.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that middleware blocks access to sensitive system files.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that middleware blocks cross-session access attempts.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that middleware injects session context.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that middleware requires user identification.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that owner can perform cross-session actions.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that users can access their own workspace.]] - rationale - gateway/tests/test_session_isolation.py
-- [[TestMiddlewareSessionEnforcement]] - code - gateway/tests/test_session_isolation.py
+- [[.test_claude_duet_allows_both_claude_callbacks()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_delegate_is_write_everywhere()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_duplicate_vendor_refuses()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_every_shipped_vendor_is_disabled_and_enforcing()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_file_name_must_match_vendor()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_floor_follows_global_pii_config()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_invalid_profile_refuses_to_load()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_loads()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_missing_directory_refuses()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_monitor_needs_ack_and_warns_loudly()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_threshold_may_be_raised()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_unparseable_yaml_refuses()]] - code - gateway/tests/test_edge_profiles.py
+- [[TestDlpFloor]] - code - gateway/tests/test_edge_profiles.py
+- [[TestFailClosed]] - code - gateway/tests/test_edge_profiles.py
+- [[TestMonitorMode_1]] - code - gateway/tests/test_edge_profiles.py
+- [[TestShippedProfiles]] - code - gateway/tests/test_edge_profiles.py
+- [[TestValidProfile]] - code - gateway/tests/test_edge_profiles.py
+- [[_variant()]] - code - gateway/tests/test_edge_profiles.py
+- [[_write()_1]] - code - gateway/tests/test_edge_profiles.py
+- [[test_edge_profiles.py]] - code - gateway/tests/test_edge_profiles.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,12 +37,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 1]]
-- 2 edges to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 43]]
-- 1 edge to [[_COMMUNITY_Community 6]]
+- 7 edges to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 65]]
 
 ## Top bridge nodes
-- [[TestMiddlewareSessionEnforcement]] - degree 16, connects to 4 communities
-- [[.middleware_manager()]] - degree 4, connects to 2 communities
-- [[.temp_workspace()_3]] - degree 3, connects to 1 community
+- [[test_edge_profiles.py]] - degree 9, connects to 2 communities
+- [[TestFailClosed]] - degree 6, connects to 1 community
+- [[TestShippedProfiles]] - degree 5, connects to 1 community
+- [[TestValidProfile]] - degree 4, connects to 1 community
+- [[TestDlpFloor]] - degree 4, connects to 1 community

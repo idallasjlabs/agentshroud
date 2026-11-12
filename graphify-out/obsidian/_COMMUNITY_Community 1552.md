@@ -1,21 +1,23 @@
 ---
 type: community
-members: 8
+members: 10
 ---
 
 # Community 1552
 
-**Members:** 8 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[Container Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[Container Won't Stop (Stuck in Stopping)]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[Exit Code Reference]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[OOM Kill (Exit Code 137)]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[Port Already in Use_2]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[Read-Only Filesystem Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[Related Notes_56]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[`no-new-privileges` Security Denial]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
+- [[.test_clean_when_installed_but_no_report()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_not_run_when_no_report_dir()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_returns_generate_summary_output()]] - code - gateway/tests/test_scanner_integration.py
+- [[Return True if the most recent report file was written within max_age_hours.]] - rationale - gateway/security/scanner_integration.py
+- [[Return latest Trivy scan summary from saved reports.      When Trivy is installe]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 29 AI Model & Supply Chain Integrity (0-5). MITRE ATLAS, OWASP LLM]] - rationale - gateway/security/scanner_integration.py
+- [[TestGetTrivySummary]] - code - gateway/tests/test_scanner_integration.py
+- [[_is_fresh()]] - code - gateway/security/scanner_integration.py
+- [[_score_ai_model_supply_chain()]] - code - gateway/security/scanner_integration.py
+- [[get_trivy_summary()]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +27,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1014]]
+- 5 edges to [[_COMMUNITY_Community 29]]
+- 4 edges to [[_COMMUNITY_Community 67]]
+- 2 edges to [[_COMMUNITY_Community 207]]
+- 2 edges to [[_COMMUNITY_Community 1287]]
+- 2 edges to [[_COMMUNITY_Community 420]]
+- 2 edges to [[_COMMUNITY_Community 10]]
+- 2 edges to [[_COMMUNITY_Community 311]]
+- 1 edge to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 363]]
+- 1 edge to [[_COMMUNITY_Community 102]]
+- 1 edge to [[_COMMUNITY_Community 842]]
 
 ## Top bridge nodes
-- [[Container Errors_1]] - degree 8, connects to 1 community
+- [[get_trivy_summary()]] - degree 16, connects to 9 communities
+- [[_is_fresh()]] - degree 8, connects to 3 communities
+- [[_score_ai_model_supply_chain()]] - degree 6, connects to 2 communities
+- [[TestGetTrivySummary]] - degree 4, connects to 1 community
+- [[.test_not_run_when_no_report_dir()]] - degree 3, connects to 1 community

@@ -53,18 +53,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 28 edges to [[_COMMUNITY_Community 29]]
-- 18 edges to [[_COMMUNITY_Community 67]]
-- 3 edges to [[_COMMUNITY_Community 943]]
-- 3 edges to [[_COMMUNITY_Community 842]]
+- 27 edges to [[_COMMUNITY_Community 29]]
+- 19 edges to [[_COMMUNITY_Community 67]]
+- 2 edges to [[_COMMUNITY_Community 1287]]
+- 2 edges to [[_COMMUNITY_Community 1552]]
 - 2 edges to [[_COMMUNITY_Community 207]]
+- 1 edge to [[_COMMUNITY_Community 1976]]
+- 1 edge to [[_COMMUNITY_Community 102]]
 - 1 edge to [[_COMMUNITY_Community 363]]
-- 1 edge to [[_COMMUNITY_Community 1969]]
+- 1 edge to [[_COMMUNITY_Community 842]]
 - 1 edge to [[_COMMUNITY_Community 10]]
 - 1 edge to [[_COMMUNITY_Community 51]]
 
 ## Top bridge nodes
-- [[compute_scorecard()]] - degree 61, connects to 9 communities
+- [[compute_scorecard()]] - degree 61, connects to 11 communities
 - [[_compute_weighted_subscore()]] - degree 6, connects to 2 communities
 - [[TestComputeScorecard]] - degree 21, connects to 1 community
 - [[._all_not_run_patches()]] - degree 18, connects to 1 community

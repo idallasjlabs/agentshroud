@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/config_integrity.py"
 type: "rationale"
-community: "Community 241"
+community: "Community 1210"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_241
+  - community/Community_1210
 ---
 
 # Compare current file hashes against baseline.          Returns a list of change
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_241
+#graphify/rationale #graphify/EXTRACTED #community/Community_1210

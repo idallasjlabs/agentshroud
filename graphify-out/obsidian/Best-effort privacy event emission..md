@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Community 965"
+community: "Community 232"
 location: "L314"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_965
+  - community/Community_232
 ---
 
 # Best-effort privacy event emission.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._emit_privacy_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_965
+#graphify/rationale #graphify/EXTRACTED #community/Community_232

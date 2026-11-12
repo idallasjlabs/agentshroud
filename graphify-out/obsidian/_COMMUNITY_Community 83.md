@@ -53,7 +53,7 @@ members: 68
 - [[In-memory representation of the skillsagentsMCP manifest.]] - rationale - gateway/skills/manifest.py
 - [[ManifestEntry]] - code - gateway/skills/manifest.py
 - [[One unit of work in a deploy plan (canonical entry - per-bot path).      ``acti]] - rationale - gateway/skills/manifest.py
-- [[Path_40]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[Path_43]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[PlannedAction]] - code - gateway/skills/manifest.py
 - [[Return names of entries that are missing or hash-mismatched in dest.      Retu]] - rationale - gateway/skills/manifest.py
 - [[SkillsManifest]] - code - gateway/skills/manifest.py
@@ -87,14 +87,12 @@ SORT file.name ASC
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_Community 489]]
 - 4 edges to [[_COMMUNITY_Community 924]]
-- 2 edges to [[_COMMUNITY_Community 49]]
-- 2 edges to [[_COMMUNITY_Community 2017]]
-- 1 edge to [[_COMMUNITY_Community 137]]
-- 1 edge to [[_COMMUNITY_Community 40]]
+- 4 edges to [[_COMMUNITY_Community 2017]]
+- 2 edges to [[_COMMUNITY_Community 40]]
 
 ## Top bridge nodes
-- [[SkillsManifest]] - degree 25, connects to 4 communities
-- [[deploy_manifest()]] - degree 25, connects to 3 communities
-- [[test_skills_manifest_sync.py]] - degree 18, connects to 2 communities
+- [[SkillsManifest]] - degree 25, connects to 3 communities
+- [[deploy_manifest()]] - degree 25, connects to 2 communities
+- [[test_skills_manifest_sync.py]] - degree 18, connects to 1 community
 - [[ManifestEntry]] - degree 15, connects to 1 community
 - [[plan_deploy()]] - degree 13, connects to 1 community

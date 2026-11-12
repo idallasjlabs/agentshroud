@@ -1,17 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 1916"
-location: "L253"
+community: "Community 1255"
+location: "L210"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1916
+  - community/Community_1255
 ---
 
 # Fixed
 
 ## Connections
-- [[1.5.0 A2A Governance (2026-08-14)]] - `contains` [EXTRACTED]
+- [[1.5.1 A2A Governance (2026-08-22)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1916
+#graphify/document #graphify/EXTRACTED #community/Community_1255

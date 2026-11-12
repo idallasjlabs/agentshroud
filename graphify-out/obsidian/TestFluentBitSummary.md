@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 219"
+community: "Community 2336"
 location: "L476"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_219
+  - community/Community_2336
 ---
 
 # TestFluentBitSummary
@@ -17,4 +17,4 @@ tags:
 - [[.test_running_without_logs()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_219
+#graphify/code #graphify/EXTRACTED #community/Community_2336

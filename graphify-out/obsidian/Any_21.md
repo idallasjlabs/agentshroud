@@ -1,33 +1,24 @@
 ---
-source_file: "gateway/proxy/telegram_proxy.py"
+source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "Community 96"
-location: "L2713"
+community: "Community 307"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_96
+  - community/Community_307
 ---
 
 # Any
 
 ## Connections
-- [[._apply_outbound_model_error_rewrites()]] - `references` [EXTRACTED]
-- [[._apply_outbound_status_notices()]] - `references` [EXTRACTED]
-- [[._build_ack_only_updates()]] - `references` [EXTRACTED]
-- [[._check_collaborator_leakage()]] - `references` [EXTRACTED]
-- [[._extract_embedded_tool_call_json()]] - `references` [EXTRACTED]
-- [[._handle_outbound_tool_calls()]] - `references` [EXTRACTED]
-- [[._parse_tool_call_json()]] - `references` [EXTRACTED]
-- [[._redact_owner_ids()]] - `references` [EXTRACTED]
-- [[._resolve_text_field()]] - `references` [EXTRACTED]
-- [[._trigger_web_fetch_approval()]] - `references` [EXTRACTED]
-- [[._trigger_web_search_log()]] - `references` [EXTRACTED]
-- [[ApprovalMode]] - `uses` [INFERRED]
-- [[DelegationPrivilege]] - `uses` [INFERRED]
-- [[GroupWorkspaceManager]] - `uses` [INFERRED]
-- [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[RateLimiter]] - `uses` [INFERRED]
+- [[.__init__()_32]] - `references` [EXTRACTED]
+- [[.extract_text_for_pii_scan()]] - `references` [EXTRACTED]
+- [[.parse_jsonrpc_request()]] - `references` [EXTRACTED]
+- [[.process_inbound_request()]] - `references` [EXTRACTED]
+- [[A2AMethod]] - `uses` [INFERRED]
+- [[A2APolicyEngine_1]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
+- [[_redact_message_text()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_96
+#graphify/code #graphify/EXTRACTED #community/Community_307

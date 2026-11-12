@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Community 57"
-location: "L1054"
+community: "Community 2017"
+location: "L1081"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_57
+  - community/Community_2017
 ---
 
 # Return an IntelReportStore pointed at the configured data directory.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_intel_store()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_57
+#graphify/rationale #graphify/EXTRACTED #community/Community_2017

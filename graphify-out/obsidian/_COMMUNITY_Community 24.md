@@ -1,30 +1,47 @@
 ---
 type: community
-members: 163
+members: 262
 ---
 
 # Community 24
 
-**Members:** 163 nodes
+**Members:** 262 nodes
 
 ## Members
-- [[.__init__()_33]] - code - gateway/proxy/pipeline.py
-- [[.__init__()_86]] - code - gateway/security/instruction_envelope.py
-- [[.__init__()_91]] - code - gateway/security/key_vault.py
+- [[.__init__()_19]] - code - gateway/inbound_edge/facades.py
+- [[.__init__()_20]] - code - gateway/inbound_edge/facades.py
+- [[.__init__()_48]] - code - gateway/proxy/pipeline.py
+- [[.__init__()_101]] - code - gateway/security/instruction_envelope.py
+- [[.__init__()_118]] - code - gateway/security/outbound_filter.py
 - [[.__len__()_1]] - code - gateway/proxy/pipeline.py
+- [[._age_hours()]] - code - gateway/inbound_edge/facades.py
 - [[._blocking_prompt_guard()]] - code - gateway/tests/test_pipeline_unit.py
+- [[._check_encoded_content()]] - code - gateway/security/prompt_guard.py
+- [[._check_unicode_tricks()]] - code - gateway/security/prompt_guard.py
+- [[._classify_response_risk()]] - code - gateway/security/outbound_filter.py
+- [[._compile_patterns()_1]] - code - gateway/security/outbound_filter.py
 - [[._compute_signature()]] - code - gateway/security/instruction_envelope.py
+- [[._is_allowed_for_trust()]] - code - gateway/security/outbound_filter.py
 - [[._make_vault_pipeline()]] - code - gateway/tests/test_pipeline_unit.py
+- [[._parse()]] - code - gateway/inbound_edge/facades.py
 - [[._passthrough_pii()_1]] - code - gateway/tests/test_pipeline_unit.py
+- [[._pipeline()]] - code - gateway/tests/test_pipeline_unit.py
 - [[._pipeline_with_trust()]] - code - gateway/tests/test_pipeline_unit.py
 - [[._redacting_pii()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.filter_response()]] - code - gateway/security/outbound_filter.py
+- [[.get_stats()_17]] - code - gateway/security/outbound_filter.py
 - [[.last_hash()_1]] - code - gateway/proxy/pipeline.py
+- [[.run()_1]] - code - gateway/inbound_edge/facades.py
+- [[.run()_2]] - code - gateway/inbound_edge/facades.py
+- [[.run()_3]] - code - gateway/inbound_edge/facades.py
+- [[.scan()_4]] - code - gateway/security/prompt_guard.py
+- [[.scan_tool_result()_2]] - code - gateway/security/prompt_guard.py
 - [[.sign()]] - code - gateway/security/instruction_envelope.py
 - [[.test_append_chain()]] - code - gateway/tests/test_pipeline_unit.py
 - [[.test_append_owner_bypass_persists_high_severity()]] - code - gateway/tests/test_pipeline_unit.py
 - [[.test_append_single()]] - code - gateway/tests/test_pipeline_unit.py
 - [[.test_audit_chain_hash_chained()]] - code - gateway/tests/test_e2e_watchtower.py
-- [[.test_blocked_message_has_audit_entry()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_block_clean_message_forwards()]] - code - gateway/tests/test_pipeline_unit.py
 - [[.test_blocked_request_decays_trust_score()]] - code - gateway/tests/test_pipeline_unit.py
 - [[.test_blocked_request_propagates_to_cross_bot_peer()]] - code - gateway/tests/test_pipeline_unit.py
 - [[.test_chain_continuity_preserved_across_wrap()]] - code - gateway/tests/test_pipeline_unit.py
@@ -43,12 +60,13 @@ members: 163
 - [[.test_envelope_metadata_in_audit_entry()]] - code - gateway/tests/test_pipeline_unit.py
 - [[.test_envelope_wraps_system_prompt()]] - code - gateway/tests/test_instruction_envelope.py
 - [[.test_envelope_wraps_tool_result()]] - code - gateway/tests/test_instruction_envelope.py
-- [[.test_forwarded_message_has_audit_entry()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[.test_full_trust_tool_result_injection_audited_not_blocked()]] - code - gateway/tests/test_pipeline_unit.py
 - [[.test_generic_key_pattern_audited_but_not_blocked()]] - code - gateway/tests/test_pipeline_unit.py
 - [[.test_genesis()]] - code - gateway/tests/test_pipeline_unit.py
 - [[.test_high_injection_blocks()]] - code - gateway/tests/test_pipeline_unit.py
 - [[.test_high_score_forwards_and_records()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_inbound_block()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_inbound_redact_unchanged()]] - code - gateway/tests/test_pipeline_unit.py
 - [[.test_key_leak_increments_sanitized_stat_and_audits()]] - code - gateway/tests/test_pipeline_unit.py
 - [[.test_lockdown_block_is_audited()]] - code - gateway/tests/test_pipeline_unit.py
 - [[.test_lockdown_score_allows_owner()]] - code - gateway/tests/test_pipeline_unit.py
@@ -61,7 +79,9 @@ members: 163
 - [[.test_no_signer_leaves_envelope_empty()]] - code - gateway/tests/test_pipeline_unit.py
 - [[.test_non_owner_block_does_not_emit_owner_bypass()]] - code - gateway/tests/test_pipeline_unit.py
 - [[.test_non_owner_inbound_query_still_redacted()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_outbound_block()]] - code - gateway/tests/test_pipeline_unit.py
 - [[.test_outbound_filter_still_escalates_fabricated_notice()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.test_outbound_redact_unchanged()]] - code - gateway/tests/test_pipeline_unit.py
 - [[.test_outbound_response_is_signed_and_verifiable()]] - code - gateway/tests/test_pipeline_unit.py
 - [[.test_owner_bypass_audited_at_every_guard()]] - code - gateway/tests/test_pipeline_unit.py
 - [[.test_owner_bypass_is_recorded_in_audit_chain()]] - code - gateway/tests/test_pipeline_unit.py
@@ -94,20 +114,41 @@ members: 163
 - [[.wrap_system_prompt()]] - code - gateway/security/instruction_envelope.py
 - [[.wrap_tool_result()]] - code - gateway/security/instruction_envelope.py
 - [[0.3 ≤ score  0.6 warns but never blocks.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[A homoglyph-obfuscated injection is normalized-and-blocked inbound.      The pay]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[A nested base64(base64(injection)) payload is peeled and blocked.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[A plain unencoded benign message is untouched by the encoding step.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[A self-consistent window on a forged anchor must fail when the         chain nev]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[A signed instruction or tool result.]] - rationale - gateway/security/instruction_envelope.py
+- [[A single match found by the outbound filter.]] - rationale - gateway/security/outbound_filter.py
+- [[Any_10]] - code - gateway/inbound_edge/facades.py
+- [[Any_62]] - code - gateway/security/outbound_filter.py
 - [[Audit chain is a hash chain each entry references the previous hash.]] - rationale - gateway/tests/test_e2e_watchtower.py
 - [[AuditChain]] - code - gateway/proxy/pipeline.py
 - [[C46 Signed Instruction Envelopes (HMAC-SHA256 tamper detection for system promptstool results)]] - concept - gateway/tests/test_instruction_envelope.py
+- [[Check for suspicious base64 content that decodes to injection attempts.]] - rationale - gateway/security/prompt_guard.py
+- [[Check if a disclosure category is permitted for the user's trust level.]] - rationale - gateway/security/outbound_filter.py
+- [[Classify the risk level of a response based on info disclosure density.]] - rationale - gateway/security/outbound_filter.py
+- [[Cleartext injection is not re-rotated into noise (indicator already present).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Compile all filter patterns into regex objects.]] - rationale - gateway/security/outbound_filter.py
 - [[ContextGuard must run in SecurityPipeline.process_inbound() — A2.]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[ContextIntegrityScorer must run in process_inbound() — C21 wiring.]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[Convenience sign a system prompt as issuer='system'.]] - rationale - gateway/security/instruction_envelope.py
 - [[Convenience sign a tool result as issuer='tooltool_name'.]] - rationale - gateway/security/instruction_envelope.py
-- [[E2E-08 Every pipeline event — block or forward — produces an audit entry.]] - rationale - gateway/tests/test_e2e_watchtower.py
-- [[EnvelopeSigner]] - code - gateway/security/instruction_envelope.py
+- [[Detect potential base64-encoded payloads in text.     Returns list of decoded st]] - rationale - gateway/security/input_normalizer.py
+- [[Detect unicode obfuscation tricks.]] - rationale - gateway/security/prompt_guard.py
+- [[Double-base64 encoded lower-ranked injection is caught (was top-5 only).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Empty inbound text is handled without error.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[EnvelopeSigner]] - code - gateway/inbound_edge/facades.py
+- [[EnvelopeSigner_1]] - code - gateway/security/instruction_envelope.py
 - [[EnvelopeSigner must attest outbound responses — C46 wiring.]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[Envelopes signed with one key should not verify with a different key.]] - rationale - gateway/tests/test_instruction_envelope.py
 - [[FULL-trust owner response scan runs, detection audited, delivery NOT blocked.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[Filter agent response for sensitive information disclosure.          Args]] - rationale - gateway/security/outbound_filter.py
+- [[FilterMatch]] - code - gateway/security/outbound_filter.py
+- [[Fully percent-encoded injection is decoded-and-blocked on inbound.      The dete]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Get filter statistics.]] - rationale - gateway/security/outbound_filter.py
+- [[If the encoding detector raises, non-owner traffic is blocked (fail-closed).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Initialize the outbound information filter.          Args             config C]] - rationale - gateway/security/outbound_filter.py
 - [[InjectionAction]] - code - gateway/security/tool_result_injection.py
 - [[InstructionEnvelope]] - code - gateway/security/instruction_envelope.py
 - [[KeyLeakDetector]] - code - gateway/security/key_vault.py
@@ -118,17 +159,26 @@ members: 163
 - [[Modifying the signature directly should fail verification.]] - rationale - gateway/tests/test_instruction_envelope.py
 - [[No trust_manager configured — the hook must no-op, not crash the         request]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[Non-owner query must still be PII-scrubbed (detector + threshold unchanged).]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[Ordinary base64 content with no injection indicators is forwarded.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[Outbound Information Filter Tests]] - code - gateway/tests/test_outbound_filter.py
 - [[OutboundInfoFilter]] - code - gateway/security/outbound_filter.py
+- [[Owner encoded-injection is audited and allowed, never blocked.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[Owner messages that would trip a guard are logged but never         blocked — re]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[Owner query must pass through PII sanitisation unchanged; sanitiser not called.]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[PII sanitiser mock that simulates two entity redactions.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[Pipeline wired with the guards relevant to inbound encoding defence.      No Tru]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[Pipeline with ContextGuard + ContextIntegrityScorer mocks.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[PkeStatus]] - code - gateway/inbound_edge/facades.py
 - [[Regression filter_result was possibly-unbound in process_outbound when no     o]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[Return True if the envelope's signature is valid.]] - rationale - gateway/security/instruction_envelope.py
+- [[Return ``(content, source)`` if ``wrapped`` is intact and correctly signed.]] - rationale - gateway/security/instruction_envelope.py
+- [[Return ``content`` wrapped and signed as untrusted third-party input.]] - rationale - gateway/security/instruction_envelope.py
 - [[Return a signed envelope for content.]] - rationale - gateway/security/instruction_envelope.py
+- [[SCRUM-202 enforcement_action=block must actually block in the pipeline.]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[SHA-256 hash chain for tamper-evident audit logging.]] - rationale - gateway/proxy/pipeline.py
 - [[STANDARD-trust source also blocked — only FULL bypasses the block.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[Scan input text for prompt injection patterns.          Args             text]] - rationale - gateway/security/prompt_guard.py
+- [[Scan tool result content for indirect prompt injection.          Tool results (w]] - rationale - gateway/security/prompt_guard.py
 - [[ScanResult_1]] - code - gateway/security/prompt_guard.py
 - [[SecurityPipeline._maybe_record_trust_violation — centralized hook that     fires]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[Signs and verifies InstructionEnvelopes.      Usage          signer = Envelope]] - rationale - gateway/security/instruction_envelope.py
@@ -138,17 +188,18 @@ members: 163
 - [[TestAuditChainBounded]] - code - gateway/tests/test_pipeline_unit.py
 - [[TestContextGuardInPipeline]] - code - gateway/tests/test_pipeline_unit.py
 - [[TestContextIntegrityInPipeline]] - code - gateway/tests/test_pipeline_unit.py
-- [[TestE2E08AuditChainIntegrity]] - code - gateway/tests/test_e2e_watchtower.py
 - [[TestEnvelopeSigner]] - code - gateway/tests/test_instruction_envelope.py
 - [[TestEnvelopeSignerInPipeline]] - code - gateway/tests/test_pipeline_unit.py
 - [[TestInboundPIIOwnerExemption]] - code - gateway/tests/test_pipeline_unit.py
 - [[TestKeyLeakDetection_1]] - code - gateway/tests/test_pipeline_unit.py
 - [[TestOutboundFilterResultBinding]] - code - gateway/tests/test_pipeline_unit.py
+- [[TestPIIBlockModeInPipeline]] - code - gateway/tests/test_pipeline_unit.py
 - [[TestPromptGuardToolResultTrustGate]] - code - gateway/tests/test_pipeline_unit.py
 - [[TestTrustViolationRecording]] - code - gateway/tests/test_pipeline_unit.py
 - [[Tests for the SHA-256 hash chain.]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[The fire-and-forget SQLite log must record the entry's actual         previous_h]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[The in-memory window must be bounded; full history lives in SQLite.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[The signed descriptor says freshness per feed — a stale feed (e.g. a     GitHu]] - rationale - gateway/tests/test_edge_facades.py
 - [[ThreatAction]] - code - gateway/security/prompt_guard.py
 - [[Two signers sharing the same key can cross-verify envelopes.]] - rationale - gateway/tests/test_instruction_envelope.py
 - [[UNTRUSTED source tool-result injection scan blocks as before (CVE-2026-31045).]] - rationale - gateway/tests/test_pipeline_unit.py
@@ -156,21 +207,69 @@ members: 163
 - [[Verify single-entry chain is valid.]] - rationale - gateway/tests/test_e2e_proxy.py
 - [[_FakeAttack]] - code - gateway/tests/test_pipeline_unit.py
 - [[_FakeIntegrityScore]] - code - gateway/tests/test_pipeline_unit.py
+- [[_defang()]] - code - gateway/security/instruction_envelope.py
+- [[_id()]] - code - gateway/tests/test_untrusted_envelope.py
 - [[_make_integrity_pipeline()]] - code - gateway/tests/test_pipeline_unit.py
 - [[_make_pipeline()_2]] - code - gateway/tests/test_pipeline_unit.py
+- [[_make_pipeline()_4]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[_make_signer_pipeline()]] - code - gateway/tests/test_pipeline_unit.py
+- [[`_check_encoded_content` now matches rules beyond the old top-5 slice.      Fail]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[append_owner_bypass writes to the hash chain AND persists a HIGH         'owner_]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[audit_chain()]] - code - gateway/tests/test_web_proxy.py
+- [[base64-wrapped DAN injection is decoded-and-blocked on the inbound path.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[datetime_1]] - code - gateway/inbound_edge/facades.py
+- [[detect_base64_payloads()]] - code - gateway/security/input_normalizer.py
+- [[facades.py]] - code - gateway/inbound_edge/facades.py
+- [[hex-encoded injection is decoded-and-blocked on the inbound path.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[input_normalizer.py]] - code - gateway/security/input_normalizer.py
 - [[instruction_envelope.py]] - code - gateway/security/instruction_envelope.py
+- [[prompt_guard.py]] - code - gateway/security/prompt_guard.py
+- [[rot13 decode is NOT applied to benign prose (no injection indicators).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[rot13 layer is surfaced when the decoded text reveals injection language.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[rot13-looking prose with no injection indicators is left alone.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[rot13-obfuscated injection is decoded-and-blocked on the inbound path.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[sign() + verify() should return True for unmodified content.]] - rationale - gateway/tests/test_instruction_envelope.py
 - [[signer()]] - code - gateway/tests/test_instruction_envelope.py
 - [[skip_context_guard=True must prevent ContextGuard from running — used by Telegra]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[test_audit_chain_empty_valid()]] - code - gateway/tests/test_e2e_proxy.py
 - [[test_audit_chain_single_entry()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_delegate_wraps_task_as_untrusted_and_targets_restricted_profile()]] - code - gateway/tests/test_edge_facades.py
+- [[test_edge_facades.py]] - code - gateway/tests/test_edge_facades.py
+- [[test_embedded_delimiters_are_neutralised()]] - code - gateway/tests/test_untrusted_envelope.py
+- [[test_encoding_detector_decodes_rot13_injection()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_encoding_detector_rot13_empty_text()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_encoding_detector_rot13_ignores_benign_prose()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_encoding_detector_rot13_skips_already_visible_injection()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_base64_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_benign_base64_not_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_benign_rot13_prose_not_decoded_or_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_encoding_detector_error_fails_closed()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_hex_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_nested_base64_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_owner_encoded_injection_allowed()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_plain_benign_message_not_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_rot13_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_unicode_homoglyph_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_url_encoded_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[test_instruction_envelope.py]] - code - gateway/tests/test_instruction_envelope.py
+- [[test_lab_search_queries_fixed_endpoint_and_trims()]] - code - gateway/tests/test_edge_facades.py
+- [[test_multilingual_injection.py]] - code - gateway/tests/test_multilingual_injection.py
 - [[test_pipeline_unit.py]] - code - gateway/tests/test_pipeline_unit.py
+- [[test_pke_status_freshness_is_none_without_dated_episodes()]] - code - gateway/tests/test_edge_facades.py
+- [[test_pke_status_reports_broken_feed_without_raising()]] - code - gateway/tests/test_edge_facades.py
+- [[test_pke_status_reports_freshness_the_descriptor_promises()]] - code - gateway/tests/test_edge_facades.py
+- [[test_pke_status_summary_and_per_feed()]] - code - gateway/tests/test_edge_facades.py
+- [[test_prompt_guard_double_encoded_uses_full_ruleset()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_prompt_guard_encoded_check_uses_full_ruleset()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_signature_verifies_and_detects_tampering()]] - code - gateway/tests/test_untrusted_envelope.py
+- [[test_source_is_sanitised()]] - code - gateway/tests/test_untrusted_envelope.py
+- [[test_untrusted_envelope.py]] - code - gateway/tests/test_untrusted_envelope.py
+- [[test_wrapped_content_is_delimited_and_labelled()]] - code - gateway/tests/test_untrusted_envelope.py
+- [[test_ws_e_rt2_inbound_encoding.py]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[unwrap_untrusted()]] - code - gateway/security/instruction_envelope.py
 - [[wrap_system_prompt() sets issuer='system' and passes verification.]] - rationale - gateway/tests/test_instruction_envelope.py
 - [[wrap_tool_result() sets issuer='toolname' and passes verification.]] - rationale - gateway/tests/test_instruction_envelope.py
+- [[wrap_untrusted()]] - code - gateway/security/instruction_envelope.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -180,47 +279,59 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 47 edges to [[_COMMUNITY_Community 84]]
-- 31 edges to [[_COMMUNITY_Community 11]]
-- 29 edges to [[_COMMUNITY_Community 684]]
-- 26 edges to [[_COMMUNITY_Community 63]]
-- 18 edges to [[_COMMUNITY_Community 0]]
-- 17 edges to [[_COMMUNITY_Community 98]]
+- 161 edges to [[_COMMUNITY_Community 7]]
+- 45 edges to [[_COMMUNITY_Community 684]]
+- 30 edges to [[_COMMUNITY_Community 25]]
 - 16 edges to [[_COMMUNITY_Community 27]]
-- 14 edges to [[_COMMUNITY_Community 88]]
+- 15 edges to [[_COMMUNITY_Community 88]]
 - 13 edges to [[_COMMUNITY_Community 1127]]
-- 7 edges to [[_COMMUNITY_Community 72]]
-- 6 edges to [[_COMMUNITY_Community 43]]
+- 11 edges to [[_COMMUNITY_Community 154]]
+- 7 edges to [[_COMMUNITY_Community 493]]
+- 6 edges to [[_COMMUNITY_Community 8]]
 - 6 edges to [[_COMMUNITY_Community 181]]
-- 6 edges to [[_COMMUNITY_Community 794]]
-- 4 edges to [[_COMMUNITY_Community 8]]
+- 6 edges to [[_COMMUNITY_Community 1565]]
+- 6 edges to [[_COMMUNITY_Community 72]]
 - 4 edges to [[_COMMUNITY_Community 52]]
-- 3 edges to [[_COMMUNITY_Community 344]]
-- 3 edges to [[_COMMUNITY_Community 154]]
-- 2 edges to [[_COMMUNITY_Community 7]]
+- 3 edges to [[_COMMUNITY_Community 73]]
+- 3 edges to [[_COMMUNITY_Community 14]]
 - 2 edges to [[_COMMUNITY_Community 6]]
-- 2 edges to [[_COMMUNITY_Community 120]]
+- 2 edges to [[_COMMUNITY_Community 84]]
 - 2 edges to [[_COMMUNITY_Community 119]]
-- 2 edges to [[_COMMUNITY_Community 162]]
+- 2 edges to [[_COMMUNITY_Community 98]]
 - 2 edges to [[_COMMUNITY_Community 917]]
+- 2 edges to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 978]]
 - 1 edge to [[_COMMUNITY_Community 184]]
+- 1 edge to [[_COMMUNITY_Community 63]]
 - 1 edge to [[_COMMUNITY_Community 9]]
-- 1 edge to [[_COMMUNITY_Community 1566]]
-- 1 edge to [[_COMMUNITY_Community 45]]
+- 1 edge to [[_COMMUNITY_Community 11]]
+- 1 edge to [[_COMMUNITY_Community 2062]]
+- 1 edge to [[_COMMUNITY_Community 1290]]
+- 1 edge to [[_COMMUNITY_Community 120]]
+- 1 edge to [[_COMMUNITY_Community 31]]
+- 1 edge to [[_COMMUNITY_Community 2365]]
+- 1 edge to [[_COMMUNITY_Community 2373]]
+- 1 edge to [[_COMMUNITY_Community 2371]]
+- 1 edge to [[_COMMUNITY_Community 2370]]
+- 1 edge to [[_COMMUNITY_Community 333]]
+- 1 edge to [[_COMMUNITY_Community 794]]
+- 1 edge to [[_COMMUNITY_Community 271]]
+- 1 edge to [[_COMMUNITY_Community 22]]
 - 1 edge to [[_COMMUNITY_Community 304]]
 - 1 edge to [[_COMMUNITY_Community 1358]]
 - 1 edge to [[_COMMUNITY_Community 1359]]
 - 1 edge to [[_COMMUNITY_Community 1119]]
 - 1 edge to [[_COMMUNITY_Community 93]]
+- 1 edge to [[_COMMUNITY_Community 477]]
 - 1 edge to [[_COMMUNITY_Community 888]]
 - 1 edge to [[_COMMUNITY_Community 792]]
-- 1 edge to [[_COMMUNITY_Community 477]]
 - 1 edge to [[_COMMUNITY_Community 947]]
-- 1 edge to [[_COMMUNITY_Community 141]]
+- 1 edge to [[_COMMUNITY_Community 793]]
+- 1 edge to [[_COMMUNITY_Community 224]]
 
 ## Top bridge nodes
-- [[ThreatAction]] - degree 33, connects to 14 communities
-- [[AuditChain]] - degree 89, connects to 11 communities
-- [[TestKeyLeakDetection_1]] - degree 24, connects to 7 communities
-- [[InjectionAction]] - degree 34, connects to 6 communities
-- [[test_pipeline_unit.py]] - degree 31, connects to 6 communities
+- [[ThreatAction]] - degree 34, connects to 14 communities
+- [[AuditChain]] - degree 90, connects to 11 communities
+- [[prompt_guard.py]] - degree 18, connects to 10 communities
+- [[OutboundInfoFilter]] - degree 39, connects to 9 communities
+- [[InjectionAction]] - degree 35, connects to 5 communities

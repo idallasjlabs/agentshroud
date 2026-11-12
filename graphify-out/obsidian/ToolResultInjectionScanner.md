@@ -12,14 +12,14 @@ tags:
 # ToolResultInjectionScanner
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_123]] - `method` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_138]] - `method` [EXTRACTED]
 - [[._detect_encoded_injection()]] - `method` [EXTRACTED]
 - [[._detect_unicode_obfuscation()]] - `method` [EXTRACTED]
 - [[.scan_tool_result()_3]] - `method` [EXTRACTED]
 - [[.setup_method()_36]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]

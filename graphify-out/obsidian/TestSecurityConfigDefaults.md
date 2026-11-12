@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "Community 72"
+community: "Community 1002"
 location: "L37"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_72
+  - community/Community_1002
 ---
 
 # TestSecurityConfigDefaults
@@ -43,4 +43,4 @@ tags:
 - [[Verify SecurityConfig and SecurityModuleConfig default to enforce.]] - `rationale_for` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_72
+#graphify/code #graphify/INFERRED #community/Community_1002

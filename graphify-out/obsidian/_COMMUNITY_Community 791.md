@@ -8,7 +8,7 @@ members: 21
 **Members:** 21 nodes
 
 ## Members
-- [[.__init__()_169]] - code - gateway/tests/test_key_rotation.py
+- [[.__init__()_190]] - code - gateway/tests/test_key_rotation.py
 - [[.setup_manager_with_credential()]] - code - gateway/tests/test_key_rotation.py
 - [[.test_check_and_rotate_due_credentials()]] - code - gateway/tests/test_key_rotation.py
 - [[.test_emergency_rotation()]] - code - gateway/tests/test_key_rotation.py
@@ -38,11 +38,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 122]]
-- 5 edges to [[_COMMUNITY_Community 455]]
+- 6 edges to [[_COMMUNITY_Community 122]]
+- 4 edges to [[_COMMUNITY_Community 381]]
+- 4 edges to [[_COMMUNITY_Community 455]]
 - 4 edges to [[_COMMUNITY_Community 198]]
-- 2 edges to [[_COMMUNITY_Community 381]]
 - 2 edges to [[_COMMUNITY_Community 1991]]
+- 1 edge to [[_COMMUNITY_Community 1177]]
 
 ## Top bridge nodes
 - [[MockValidator]] - degree 14, connects to 5 communities

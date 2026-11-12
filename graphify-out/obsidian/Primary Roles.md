@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Community 2200"
+community: "Community 107"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2200
+  - community/Community_107
 ---
 
 # Primary Roles
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Incident Response Team Structure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2200
+#graphify/document #graphify/EXTRACTED #community/Community_107

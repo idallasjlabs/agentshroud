@@ -12,7 +12,7 @@ tags:
 # SlackAPIProxy
 
 ## Connections
-- [[.__init__()_35]] - `method` [EXTRACTED]
+- [[.__init__()_50]] - `method` [EXTRACTED]
 - [[._call_slack_api()]] - `method` [EXTRACTED]
 - [[._intercept_connections_open()]] - `method` [EXTRACTED]
 - [[._is_owner_channel()]] - `method` [EXTRACTED]

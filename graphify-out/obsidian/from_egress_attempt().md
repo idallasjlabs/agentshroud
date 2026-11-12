@@ -12,7 +12,7 @@ tags:
 # from_egress_attempt()
 
 ## Connections
-- [[Any_66]] - `references` [EXTRACTED]
+- [[Any_76]] - `references` [EXTRACTED]
 - [[Convert an EgressAttempt or egress dict to SecurityEvent.]] - `rationale_for` [EXTRACTED]
 - [[SecurityEvent]] - `references` [EXTRACTED]
 - [[SecurityEvent_1]] - `calls` [EXTRACTED]

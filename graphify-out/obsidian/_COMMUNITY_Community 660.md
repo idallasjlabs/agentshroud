@@ -33,7 +33,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_Community 37]]
-- 2 edges to [[_COMMUNITY_Community 43]]
+- 2 edges to [[_COMMUNITY_Community 114]]
 - 2 edges to [[_COMMUNITY_Community 100]]
 - 1 edge to [[_COMMUNITY_Community 181]]
 

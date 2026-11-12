@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Community 104"
+community: "Community 50"
 location: "L296"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_104
+  - community/Community_50
 ---
 
 # GatewayConfig
@@ -27,7 +27,7 @@ tags:
 - [[GatewayConfig_3]] - `uses` [INFERRED]
 - [[GatewayConfig_4]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[Path_25]] - `uses` [INFERRED]
+- [[Path_27]] - `uses` [INFERRED]
 - [[RateLimiter]] - `uses` [INFERRED]
 - [[SSHConfig]] - `uses` [INFERRED]
 - [[TestConfidenceFloor]] - `uses` [INFERRED]
@@ -78,4 +78,4 @@ tags:
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_104
+#graphify/code #graphify/INFERRED #community/Community_50

@@ -1,15 +1,16 @@
 ---
 type: community
-members: 2
+members: 3
 ---
 
 # Community 2341
 
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[.test_collaborator_access_not_configured_user_id_leakage_is_redacted_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Collaborators should not receive telegram user-id enrollment leakage text.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Required Tags (All Resources)_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Tag Audit Process_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Tagging Standard_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +20,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 626]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 845]]
+- 1 edge to [[_COMMUNITY_Community 494]]
 
 ## Top bridge nodes
-- [[.test_collaborator_access_not_configured_user_id_leakage_is_redacted_json()]] - degree 4, connects to 3 communities
+- [[Tagging Standard_6]] - degree 3, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 49"
-location: "L810"
+community: "Community 2017"
+location: "L837"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/Community_2017
 ---
 
 # update_history()
@@ -15,4 +15,4 @@ tags:
 - [[Return update history from audit log.]] - `rationale_for` [EXTRACTED]
 - [[api.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_49
+#graphify/code #graphify/EXTRACTED #community/Community_2017

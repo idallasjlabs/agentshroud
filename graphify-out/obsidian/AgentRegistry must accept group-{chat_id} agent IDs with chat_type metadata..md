@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "Community 52"
+community: "Community 61"
 location: "L192"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_52
+  - community/Community_61
 ---
 
 # AgentRegistry must accept group-{chat_id} agent IDs with chat_type metadata.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAgentRegistryGroupIdentity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_52
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

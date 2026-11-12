@@ -12,7 +12,7 @@ tags:
 # A2AGovernanceProxy
 
 ## Connections
-- [[.__init__()_49]] - `method` [EXTRACTED]
+- [[.__init__()_64]] - `method` [EXTRACTED]
 - [[._check_message_size()]] - `method` [EXTRACTED]
 - [[._check_peer()]] - `method` [EXTRACTED]
 - [[._check_rate_limit()]] - `method` [EXTRACTED]

@@ -23,7 +23,7 @@ tags:
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[Result of a permission check.]] - `rationale_for` [EXTRACTED]
 - [[Result of permission check.]] - `rationale_for` [EXTRACTED]
-- [[__init__.py_7]] - `imports` [EXTRACTED]
+- [[__init__.py_8]] - `imports` [EXTRACTED]
 - [[mcp_permissions.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_54

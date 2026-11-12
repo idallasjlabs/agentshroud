@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Community 0"
+community: "Community 477"
 location: "L710"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/Community_477
 ---
 
 # Same plaintext encrypted twice should produce different ciphertext (random IV).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_different_plaintexts_different_ciphertexts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/Community_477

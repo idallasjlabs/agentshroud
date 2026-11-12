@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/health_report.py"
+source_file: "gateway/inbound_edge/store.py"
 type: "code"
-community: "Community 185"
-location: "L116"
+community: "Community 96"
+location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_185
+  - community/Community_96
 ---
 
 # Connection
 
 ## Connections
-- [[init_db()]] - `references` [EXTRACTED]
+- [[.db()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_185
+#graphify/code #graphify/EXTRACTED #community/Community_96

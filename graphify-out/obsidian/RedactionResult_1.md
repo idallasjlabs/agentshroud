@@ -2,16 +2,17 @@
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
 community: "Community 28"
-location: "L171"
+location: "L195"
 tags:
   - graphify/code
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/Community_28
 ---
 
 # RedactionResult
 
 ## Connections
+- [[._apply_enforcement()]] - `references` [EXTRACTED]
 - [[._sanitize_presidio()]] - `references` [EXTRACTED]
 - [[._sanitize_regex()]] - `references` [EXTRACTED]
 - [[.sanitize()]] - `references` [EXTRACTED]
@@ -19,4 +20,4 @@ tags:
 - [[RedactionDetail]] - `uses` [INFERRED]
 - [[RedactionResult]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_28
+#graphify/code #graphify/EXTRACTED #community/Community_28

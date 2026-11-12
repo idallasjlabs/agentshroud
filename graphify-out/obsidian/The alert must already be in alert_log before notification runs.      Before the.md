@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_alert_dispatcher_retry.py"
 type: "rationale"
-community: "Community 1066"
+community: "Community 557"
 location: "L108"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1066
+  - community/Community_557
 ---
 
 # The alert must already be in alert_log before notification runs.      Before the
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_dispatch_persists_alert_even_if_notification_fails()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1066
+#graphify/rationale #graphify/EXTRACTED #community/Community_557

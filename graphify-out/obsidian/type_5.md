@@ -1,17 +1,17 @@
 ---
-source_file: "opencode.json"
+source_file: "config/inbound-edge/schema.json"
 type: "code"
-community: "Community 159"
-location: "L40"
+community: "Community 1327"
+location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_159
+  - community/Community_1327
 ---
 
 # type
 
 ## Connections
-- [[xmind_5]] - `contains` [EXTRACTED]
+- [[auth]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_159
+#graphify/code #graphify/EXTRACTED #community/Community_1327

@@ -45,12 +45,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 72]]
-- 5 edges to [[_COMMUNITY_Community 1]]
+- 5 edges to [[_COMMUNITY_Community 61]]
+- 4 edges to [[_COMMUNITY_Community 72]]
+- 4 edges to [[_COMMUNITY_Community 1]]
 
 ## Top bridge nodes
-- [[test_file_sandbox_message_gate.py]] - degree 12, connects to 2 communities
-- [[TestIsToolCallRequest]] - degree 12, connects to 2 communities
-- [[TestFileSandboxSkippedForPlainMessages]] - degree 9, connects to 2 communities
-- [[TestOwnerBypassContentPatternChecks]] - degree 8, connects to 2 communities
+- [[test_file_sandbox_message_gate.py]] - degree 12, connects to 3 communities
+- [[TestIsToolCallRequest]] - degree 12, connects to 3 communities
+- [[TestFileSandboxSkippedForPlainMessages]] - degree 9, connects to 3 communities
+- [[TestOwnerBypassContentPatternChecks]] - degree 8, connects to 3 communities
 - [[session_manager()]] - degree 2, connects to 1 community

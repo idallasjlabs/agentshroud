@@ -12,7 +12,7 @@ tags:
 # match_entry()
 
 ## Connections
-- [[Any_77]] - `references` [EXTRACTED]
+- [[Any_88]] - `references` [EXTRACTED]
 - [[Counter]] - `references` [EXTRACTED]
 - [[Match a single registry entry to at most one advisory, honestly.      Returns]] - `rationale_for` [EXTRACTED]
 - [[MatchResult]] - `references` [EXTRACTED]

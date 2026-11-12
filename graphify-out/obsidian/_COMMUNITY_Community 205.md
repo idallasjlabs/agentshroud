@@ -8,7 +8,7 @@ members: 38
 **Members:** 38 nodes
 
 ## Members
-- [[.__init__()_69]] - code - gateway/security/data_exfil_volume_guard.py
+- [[.__init__()_84]] - code - gateway/security/data_exfil_volume_guard.py
 - [[._size()]] - code - gateway/security/data_exfil_volume_guard.py
 - [[.get_stats()_15]] - code - gateway/security/data_exfil_volume_guard.py
 - [[.observe()]] - code - gateway/security/data_exfil_volume_guard.py
@@ -55,12 +55,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 72]]
-- 3 edges to [[_COMMUNITY_Community 84]]
+- 7 edges to [[_COMMUNITY_Community 7]]
 - 3 edges to [[_COMMUNITY_Community 1127]]
-- 1 edge to [[_COMMUNITY_Community 162]]
-- 1 edge to [[_COMMUNITY_Community 17]]
 - 1 edge to [[_COMMUNITY_Community 181]]
+- 1 edge to [[_COMMUNITY_Community 73]]
+- 1 edge to [[_COMMUNITY_Community 1119]]
 
 ## Top bridge nodes
 - [[DataExfilVolumeGuard]] - degree 26, connects to 2 communities

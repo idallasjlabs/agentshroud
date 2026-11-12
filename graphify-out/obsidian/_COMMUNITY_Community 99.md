@@ -1,14 +1,14 @@
 ---
 type: community
-members: 93
+members: 94
 ---
 
 # Community 99
 
-**Members:** 93 nodes
+**Members:** 94 nodes
 
 ## Members
-- [[.__init__()_62]] - code - gateway/security/collaborator_tracker.py
+- [[.__init__()_77]] - code - gateway/security/collaborator_tracker.py
 - [[._append_contributor_log()]] - code - gateway/security/collaborator_tracker.py
 - [[._coerce_timestamp()]] - code - gateway/security/collaborator_tracker.py
 - [[._normalize_preview()]] - code - gateway/security/collaborator_tracker.py
@@ -22,6 +22,7 @@ members: 93
 - [[10-digit real UID must still be written to JSONL and markdown.]] - rationale - gateway/tests/test_collaborator_tracker.py
 - [[Append one activity entry for any tracked collaborator or the owner.          Ar]] - rationale - gateway/security/collaborator_tracker.py
 - [[Best-effort float timestamp coercion for resilient log reads.]] - rationale - gateway/security/collaborator_tracker.py
+- [[Collaborator Tracker Tests]] - code - gateway/tests/test_collaborator_tracker.py
 - [[CollaboratorActivityTracker]] - code - gateway/security/collaborator_tracker.py
 - [[CollaboratorActivityTracker_1]] - code - gateway/tests/test_lifespan_prune.py
 - [[CollaboratorActivityTracker.get_health() must return accurate counters.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
@@ -32,8 +33,8 @@ members: 93
 - [[Normalize username for safe contributor-log tokenization.]] - rationale - gateway/security/collaborator_tracker.py
 - [[Owner messages are now recorded with is_owner=True (not silently dropped).]] - rationale - gateway/tests/test_collaborator_tracker.py
 - [[Owner's Telegram first_name with pipe chars is replaced by owner_display_name.]] - rationale - gateway/tests/test_collaborator_tracker.py
-- [[Path_9]] - code - gateway/security/collaborator_tracker.py
-- [[Path_32]] - code - gateway/tests/test_lifespan_prune.py
+- [[Path_11]] - code - gateway/security/collaborator_tracker.py
+- [[Path_35]] - code - gateway/tests/test_lifespan_prune.py
 - [[Real Telegram UIDs (9-10 digits) must NOT be pruned.]] - rationale - gateway/tests/test_collaborator_tracker.py
 - [[Real-UID markdown files must never be deleted by the prune pass.]] - rationale - gateway/tests/test_lifespan_prune.py
 - [[Return True when uid looks like a test fixture that should be silently dropped.]] - rationale - gateway/security/collaborator_tracker.py
@@ -111,13 +112,12 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 9 edges to [[_COMMUNITY_Community 2325]]
+- 5 edges to [[_COMMUNITY_Community 7]]
 - 4 edges to [[_COMMUNITY_Community 2]]
-- 3 edges to [[_COMMUNITY_Community 72]]
-- 3 edges to [[_COMMUNITY_Community 43]]
-- 2 edges to [[_COMMUNITY_Community 7]]
+- 3 edges to [[_COMMUNITY_Community 114]]
 - 1 edge to [[_COMMUNITY_Community 14]]
 - 1 edge to [[_COMMUNITY_Community 480]]
-- 1 edge to [[_COMMUNITY_Community 128]]
+- 1 edge to [[_COMMUNITY_Community 788]]
 - 1 edge to [[_COMMUNITY_Community 1074]]
 - 1 edge to [[_COMMUNITY_Community 1128]]
 - 1 edge to [[_COMMUNITY_Community 762]]
@@ -125,11 +125,11 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 353]]
 - 1 edge to [[_COMMUNITY_Community 626]]
 - 1 edge to [[_COMMUNITY_Community 889]]
-- 1 edge to [[_COMMUNITY_Community 1565]]
+- 1 edge to [[_COMMUNITY_Community 1289]]
 - 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[CollaboratorActivityTracker]] - degree 52, connects to 15 communities
+- [[CollaboratorActivityTracker]] - degree 52, connects to 14 communities
 - [[TestTrackerGetHealth]] - degree 8, connects to 3 communities
 - [[test_collaborator_tracker.py]] - degree 40, connects to 1 community
 - [[_is_fixture_uid()]] - degree 9, connects to 1 community

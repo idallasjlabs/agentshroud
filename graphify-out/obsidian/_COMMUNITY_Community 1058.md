@@ -26,9 +26,9 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_Community 1278]]
-- 1 edge to [[_COMMUNITY_Community 360]]
+- 1 edge to [[_COMMUNITY_Community 361]]
 - 1 edge to [[_COMMUNITY_Community 1787]]
-- 1 edge to [[_COMMUNITY_Community 142]]
+- 1 edge to [[_COMMUNITY_Community 577]]
 
 ## Top bridge nodes
 - [[is_rate_limited_post_retry()]] - degree 8, connects to 3 communities

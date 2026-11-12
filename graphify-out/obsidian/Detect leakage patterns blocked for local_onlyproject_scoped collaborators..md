@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 96"
-location: "L2601"
+community: "Community 14"
+location: "L2619"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_96
+  - community/Community_14
 ---
 
 # Detect leakage patterns blocked for local_only/project_scoped collaborators.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._contains_high_risk_collaborator_leakage()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_96
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

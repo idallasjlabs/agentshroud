@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "Community 707"
+community: "Community 49"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_707
+  - community/Community_49
 ---
 
 # health_check()
@@ -15,4 +15,4 @@ tags:
 - [[Minimal health check endpoint — no authentication required.      Returns only ba]] - `rationale_for` [EXTRACTED]
 - [[health.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_707
+#graphify/code #graphify/EXTRACTED #community/Community_49

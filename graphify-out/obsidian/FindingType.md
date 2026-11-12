@@ -36,7 +36,7 @@ tags:
 - [[TestSuspiciousEncoding]] - `uses` [INFERRED]
 - [[TestThreatLevelCalc]] - `uses` [INFERRED]
 - [[Type of security finding.]] - `rationale_for` [EXTRACTED]
-- [[__init__.py_7]] - `imports` [EXTRACTED]
+- [[__init__.py_8]] - `imports` [EXTRACTED]
 - [[mcp_inspector.py]] - `contains` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 

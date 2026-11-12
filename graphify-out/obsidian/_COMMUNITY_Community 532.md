@@ -1,33 +1,35 @@
 ---
 type: community
-members: 20
+members: 22
 ---
 
 # Community 532
 
-**Members:** 20 nodes
+**Members:** 22 nodes
 
 ## Members
-- [[Agent with low trust cannot perform elevated actions.]] - rationale - gateway/tests/test_security_integration.py
-- [[Clean message flows through entire pipeline without issues.]] - rationale - gateway/tests/test_security_integration.py
-- [[Even if trust allows an action, egress filter blocks unauthorized destinations.]] - rationale - gateway/tests/test_security_integration.py
-- [[Message with PII gets sanitized and logged correctly.]] - rationale - gateway/tests/test_security_integration.py
-- [[Multiple messages through pipeline concurrently — thread safety.]] - rationale - gateway/tests/test_security_integration.py
-- [[Outbound responses have credentials blocked for untrusted sources.]] - rationale - gateway/tests/test_security_integration.py
-- [[Sensitive audit data can be encrypted at rest.]] - rationale - gateway/tests/test_security_integration.py
-- [[When both PII sanitizer and prompt guard detect issues.]] - rationale - gateway/tests/test_security_integration.py
-- [[encrypted_store()]] - code - gateway/tests/test_security_integration.py
-- [[prompt_guard()_2]] - code - gateway/tests/test_security_integration.py
-- [[test_egress_blocks_unauthorized_after_trust_check()]] - code - gateway/tests/test_security_integration.py
-- [[test_encrypted_store_in_pipeline()]] - code - gateway/tests/test_security_integration.py
-- [[test_full_pipeline_clean_message()]] - code - gateway/tests/test_security_integration.py
-- [[test_full_pipeline_pii_message()]] - code - gateway/tests/test_security_integration.py
-- [[test_pii_and_prompt_guard_both_trigger()]] - code - gateway/tests/test_security_integration.py
-- [[test_pipeline_concurrent_messages()]] - code - gateway/tests/test_security_integration.py
-- [[test_response_credential_blocking()]] - code - gateway/tests/test_security_integration.py
-- [[test_security_integration.py]] - code - gateway/tests/test_security_integration.py
-- [[test_trust_insufficient_action_blocked()]] - code - gateway/tests/test_security_integration.py
-- [[trust_manager()_4]] - code - gateway/tests/test_security_integration.py
+- [[._make_state_with_bot()]] - code - gateway/tests/test_soc_bots.py
+- [[.test_clean_image_score_100()]] - code - gateway/tests/test_soc_bots.py
+- [[.test_domains_has_vuln_and_egress()]] - code - gateway/tests/test_soc_bots.py
+- [[.test_egress_filter_exception_defaults_denials_zero()]] - code - gateway/tests/test_soc_bots.py
+- [[.test_formula_combined_penalty()]] - code - gateway/tests/test_soc_bots.py
+- [[.test_formula_critical_penalty()]] - code - gateway/tests/test_soc_bots.py
+- [[.test_formula_egress_denials_penalty()]] - code - gateway/tests/test_soc_bots.py
+- [[.test_formula_high_penalty()]] - code - gateway/tests/test_soc_bots.py
+- [[.test_formula_medium_penalty()]] - code - gateway/tests/test_soc_bots.py
+- [[.test_missing_bot_returns_empty_image()]] - code - gateway/tests/test_soc_bots.py
+- [[.test_no_scan_data_defaults_zeros()]] - code - gateway/tests/test_soc_bots.py
+- [[.test_result_structure_has_required_keys()]] - code - gateway/tests/test_soc_bots.py
+- [[.test_risk_level_red_below_50()]] - code - gateway/tests/test_soc_bots.py
+- [[.test_risk_level_yellow_50_to_79()]] - code - gateway/tests/test_soc_bots.py
+- [[.test_score_clamped_to_hundred()]] - code - gateway/tests/test_soc_bots.py
+- [[.test_score_clamped_to_zero()]] - code - gateway/tests/test_soc_bots.py
+- [[Bot not in config → image='', scan skipped, score based on egress only.]] - rationale - gateway/tests/test_soc_bots.py
+- [[Bot with no image scan data should default criticalhighmedium to 0.]] - rationale - gateway/tests/test_soc_bots.py
+- [[If egress_filter.get_stats raises, denials defaults to 0 (no crash).]] - rationale - gateway/tests/test_soc_bots.py
+- [[Per-bot scorecard scoped to a single bot's image scan and egress stats.      Sco]] - rationale - gateway/security/scanner_integration.py
+- [[TestComputeBotScorecard_1]] - code - gateway/tests/test_soc_bots.py
+- [[compute_bot_scorecard()]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,18 +39,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 7]]
-- 7 edges to [[_COMMUNITY_Community 0]]
-- 3 edges to [[_COMMUNITY_Community 17]]
-- 3 edges to [[_COMMUNITY_Community 11]]
-- 2 edges to [[_COMMUNITY_Community 439]]
-- 2 edges to [[_COMMUNITY_Community 21]]
-- 1 edge to [[_COMMUNITY_Community 80]]
-- 1 edge to [[_COMMUNITY_Community 30]]
-- 1 edge to [[_COMMUNITY_Community 104]]
+- 10 edges to [[_COMMUNITY_Community 51]]
+- 2 edges to [[_COMMUNITY_Community 6]]
+- 1 edge to [[_COMMUNITY_Community 181]]
+- 1 edge to [[_COMMUNITY_Community 29]]
+- 1 edge to [[_COMMUNITY_Community 1287]]
+- 1 edge to [[_COMMUNITY_Community 10]]
+- 1 edge to [[_COMMUNITY_Community 85]]
 
 ## Top bridge nodes
-- [[test_security_integration.py]] - degree 37, connects to 9 communities
-- [[prompt_guard()_2]] - degree 2, connects to 1 community
-- [[trust_manager()_4]] - degree 2, connects to 1 community
-- [[encrypted_store()]] - degree 2, connects to 1 community
+- [[compute_bot_scorecard()]] - degree 23, connects to 5 communities
+- [[TestComputeBotScorecard_1]] - degree 20, connects to 2 communities
+- [[.test_egress_filter_exception_defaults_denials_zero()]] - degree 6, connects to 2 communities
+- [[._make_state_with_bot()]] - degree 15, connects to 1 community
+- [[.test_no_scan_data_defaults_zeros()]] - degree 5, connects to 1 community

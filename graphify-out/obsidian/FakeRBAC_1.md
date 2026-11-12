@@ -12,12 +12,12 @@ tags:
 # FakeRBAC
 
 ## Connections
-- [[.__init__()_194]] - `method` [EXTRACTED]
+- [[.__init__()_220]] - `method` [EXTRACTED]
 - [[._make_proxy()_1]] - `calls` [EXTRACTED]
 - [[._make_proxy()_3]] - `calls` [EXTRACTED]
 - [[._make_proxy()_2]] - `calls` [EXTRACTED]
 - [[._make_proxy()]] - `calls` [EXTRACTED]
-- [[.is_owner()_5]] - `method` [EXTRACTED]
+- [[.is_owner()_6]] - `method` [EXTRACTED]
 - [[.test_allowed_collaborator_model_command_with_mention_is_handled_locally()]] - `calls` [EXTRACTED]
 - [[.test_blocked_command_is_quarantined()]] - `calls` [EXTRACTED]
 - [[.test_blocked_command_uppercase_is_quarantined()]] - `calls` [EXTRACTED]

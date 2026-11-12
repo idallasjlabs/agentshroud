@@ -1,17 +1,18 @@
 ---
 type: community
-members: 4
+members: 5
 ---
 
 # Community 2178
 
-**Members:** 4 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[.matches_allowlist()]] - code - gateway/security/egress_config.py
-- [[Public does domain match any pattern in the effective default allowlist]] - rationale - gateway/security/egress_config.py
-- [[Return True if domain matches any pattern (exact or ``.`` wildcard).      Sin]] - rationale - gateway/security/egress_config.py
-- [[domain_matches()]] - code - gateway/security/egress_config.py
+- [[AWS Glue MCP server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
+- [[CDAS — Central Data Acquisition Systems]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Data platform guardrails (schemapartition stability)]] - concept - .llm_settings/scripts/CLAUDE.md
+- [[FODL — Fluence Operational Data Lakehouse]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
+- [[FY26 Cost Reduction Plan (40% target)]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,10 +22,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 17]]
-- 1 edge to [[_COMMUNITY_Community 57]]
-- 1 edge to [[_COMMUNITY_Community 125]]
+- 1 edge to [[_COMMUNITY_Community 210]]
+- 1 edge to [[_COMMUNITY_Community 1424]]
+- 1 edge to [[_COMMUNITY_Community 742]]
 
 ## Top bridge nodes
-- [[domain_matches()]] - degree 6, connects to 3 communities
-- [[.matches_allowlist()]] - degree 3, connects to 1 community
+- [[FODL — Fluence Operational Data Lakehouse]] - degree 6, connects to 2 communities
+- [[FY26 Cost Reduction Plan (40% target)]] - degree 3, connects to 1 community

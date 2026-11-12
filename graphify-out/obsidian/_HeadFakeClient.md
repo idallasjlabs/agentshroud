@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.__aenter__()_4]] - `method` [EXTRACTED]
 - [[.__aexit__()_4]] - `method` [EXTRACTED]
-- [[.__init__()_173]] - `method` [EXTRACTED]
+- [[.__init__()_194]] - `method` [EXTRACTED]
 - [[.stream()]] - `method` [EXTRACTED]
 - [[LLMProxy]] - `uses` [INFERRED]
 - [[StreamHead]] - `uses` [INFERRED]

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "Community 16"
+community: "Community 290"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/Community_290
 ---
 
 # MemoryIntegrityMonitor
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_95]] - `method` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_110]] - `method` [EXTRACTED]
 - [[._compute_file_hash()]] - `method` [EXTRACTED]
 - [[._detect_modification_source()]] - `method` [EXTRACTED]
 - [[._is_in_write_window()]] - `method` [EXTRACTED]
@@ -31,7 +31,7 @@ tags:
 - [[.setup_method()_11]] - `calls` [EXTRACTED]
 - [[.test_integrity_database_persistence()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[FileIntegrityRecord]] - `references` [EXTRACTED]
 - [[LogSanitizer]] - `uses` [INFERRED]
@@ -54,4 +54,4 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_16
+#graphify/code #graphify/EXTRACTED #community/Community_290

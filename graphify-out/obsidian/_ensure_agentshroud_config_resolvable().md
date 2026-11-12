@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "Community 7"
+community: "Community 50"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/Community_50
 ---
 
 # _ensure_agentshroud_config_resolvable()
@@ -16,4 +16,4 @@ tags:
 - [[conftest.py]] - `contains` [EXTRACTED]
 - [[resolve_config_path()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/Community_50

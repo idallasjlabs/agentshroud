@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Community 120"
+community: "Community 27"
 location: "L482"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_120
+  - community/Community_27
 ---
 
 # TestEncodedPayloads
@@ -21,4 +21,4 @@ tags:
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_120
+#graphify/code #graphify/INFERRED #community/Community_27

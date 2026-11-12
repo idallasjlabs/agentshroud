@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Community 11"
+community: "Community 7"
 location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_11
+  - community/Community_7
 ---
 
 # TrustConfig
 
 ## Connections
-- [[.__init__()_127]] - `references` [EXTRACTED]
+- [[.__init__()_142]] - `references` [EXTRACTED]
 - [[.__post_init__()_9]] - `method` [EXTRACTED]
 - [[._pipeline_with_trust()]] - `calls` [EXTRACTED]
 - [[._shared_tm()]] - `calls` [EXTRACTED]
@@ -70,6 +70,7 @@ tags:
 - [[TestIncidentPropagation]] - `uses` [INFERRED]
 - [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
+- [[TestPIIBlockModeInPipeline]] - `uses` [INFERRED]
 - [[TestPersistence_2]] - `uses` [INFERRED]
 - [[TestProgressiveTrustConfigUnit]] - `uses` [INFERRED]
 - [[TestPromptGuard_1]] - `uses` [INFERRED]
@@ -114,4 +115,4 @@ tags:
 - [[trust_manager()_3]] - `calls` [EXTRACTED]
 - [[trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_11
+#graphify/code #graphify/INFERRED #community/Community_7

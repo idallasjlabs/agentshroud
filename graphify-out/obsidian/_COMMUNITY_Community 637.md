@@ -1,13 +1,16 @@
 ---
 type: community
-members: 21
+members: 24
 ---
 
 # Community 637
 
-**Members:** 21 nodes
+**Members:** 24 nodes
 
 ## Members
+- [[11 Cron Jobs]] - document - docs/architecture/agentic-os.md
+- [[11. Automated Operations]] - document - docs/architecture/agentic-os.md
+- [[Approval Queue (human-in-the-loop)]] - concept - docs/architecture/agentic-os.md
 - [[Blocked by default (private RFC1918 ranges)]] - image - docs/diagrams/images/diagram-05-network-topology.svg
 - [[DNS Filter]] - concept - docs/architecture/system-architecture.md
 - [[Egress Monitor]] - concept - docs/architecture/system-architecture.md
@@ -18,16 +21,16 @@ members: 21
 - [[Op-Proxy (Credential Gateway)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
 - [[OpenClaw Integration Guide (v0.9.0)]] - document - docs/api/integration-guide.md
 - [[Proxy Layer_1]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[SSH Proxy]] - concept - docs/architecture/system-architecture.md
+- [[SOC Dashboard]] - document - docs/architecture/agentic-os.md
 - [[SecurityFinding (data entity)]] - concept - docs/data/data-dictionary.md
 - [[URLAnalysisResult (data entity)]] - concept - docs/data/data-dictionary.md
 - [[Web Proxy]] - concept - docs/architecture/system-architecture.md
 - [[egress-config.yml]] - code - docs/data/schema-documentation.md
+- [[gatewaysocrouter.py (SOC Shared Command Layer)]] - code - docs/api/api-reference.md
 - [[gatewaywebapi.py (Web control center)]] - code - docs/api/api-reference.md
 - [[http_proxy.py (HTTP CONNECT 8181, domain allowlist)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
 - [[mcp-config.yml]] - code - docs/data/schema-documentation.md
 - [[mcp_proxy.py (MCP tool call gate)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[ssh_proxy (approved hosts only)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
 - [[web_proxy.py (domain allowlist engine)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
 
 ## Live Query (requires Dataview plugin)
@@ -38,12 +41,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 178]]
+- 1 edge to [[_COMMUNITY_Community 517]]
 - 1 edge to [[_COMMUNITY_Community 392]]
 - 1 edge to [[_COMMUNITY_Community 487]]
 - 1 edge to [[_COMMUNITY_Community 630]]
-- 1 edge to [[_COMMUNITY_Community 517]]
 
 ## Top bridge nodes
-- [[Gateway ManagementControl-Plane API (v1.3.0)]] - degree 6, connects to 2 communities
+- [[Gateway ManagementControl-Plane API (v1.3.0)]] - degree 6, connects to 1 community
+- [[Proxy Layer_1]] - degree 5, connects to 1 community
 - [[MCP Proxy]] - degree 4, connects to 1 community
-- [[SSH Proxy]] - degree 2, connects to 1 community
+- [[11. Automated Operations]] - degree 3, connects to 1 community
+- [[Approval Queue (human-in-the-loop)]] - degree 2, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-qa/README.md"
 type: "document"
-community: "Community 1352"
+community: "Community 177"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1352
+  - community/Community_177
 ---
 
 # README.md
@@ -15,4 +15,4 @@ tags:
 - [[Quality Assurance (QA)]] - `contains` [EXTRACTED]
 - [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1352
+#graphify/document #graphify/EXTRACTED #community/Community_177

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 219"
+community: "Community 431"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_219
+  - community/Community_431
 ---
 
 # test_scanner_integration_coverage.py
@@ -63,4 +63,4 @@ tags:
 - [[tools()]] - `contains` [EXTRACTED]
 - [[wazuh_client.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_219
+#graphify/code #graphify/EXTRACTED #community/Community_431

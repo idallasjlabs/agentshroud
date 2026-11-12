@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "rationale"
-community: "Community 105"
+community: "Community 50"
 location: "L147"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_105
+  - community/Community_50
 ---
 
 # When agentshroud.yaml declares hermes:, load_config() populates it in bots.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_load_config_registers_hermes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_105
+#graphify/rationale #graphify/EXTRACTED #community/Community_50

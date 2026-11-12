@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "Community 2051"
+community: "Community 50"
 location: "L362"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2051
+  - community/Community_50
 ---
 
 # GET /status should include security headers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_status_has_security_headers()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2051
+#graphify/rationale #graphify/EXTRACTED #community/Community_50

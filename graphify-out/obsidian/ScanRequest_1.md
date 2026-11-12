@@ -2,7 +2,7 @@
 source_file: "gateway/soc/router.py"
 type: "code"
 community: "Community 10"
-location: "L2040"
+location: "L2526"
 tags:
   - graphify/code
   - graphify/INFERRED

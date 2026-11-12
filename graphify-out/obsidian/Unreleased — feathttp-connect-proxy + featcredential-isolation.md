@@ -2,7 +2,7 @@
 source_file: "CHANGELOG.md"
 type: "document"
 community: "Community 2016"
-location: "L903"
+location: "L928"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -13,13 +13,13 @@ tags:
 
 ## Connections
 - [[Added]] - `contains` [EXTRACTED]
-- [[Added_10]] - `contains` [EXTRACTED]
 - [[Added_11]] - `contains` [EXTRACTED]
+- [[Added_12]] - `contains` [EXTRACTED]
 - [[Changed]] - `contains` [EXTRACTED]
 - [[Changed_6]] - `contains` [EXTRACTED]
 - [[Changelog — AgentShroud™]] - `contains` [EXTRACTED]
 - [[Fixed]] - `contains` [EXTRACTED]
-- [[Fixed_14]] - `contains` [EXTRACTED]
+- [[Fixed_15]] - `contains` [EXTRACTED]
 - [[Security_12]] - `contains` [EXTRACTED]
 - [[Security_16]] - `contains` [EXTRACTED]
 - [[Summary_1]] - `contains` [EXTRACTED]

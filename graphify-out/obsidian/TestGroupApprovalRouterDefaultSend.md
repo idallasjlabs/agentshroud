@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "code"
-community: "Community 124"
+community: "Community 2120"
 location: "L284"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_124
+  - community/Community_2120
 ---
 
 # TestGroupApprovalRouterDefaultSend
@@ -19,4 +19,4 @@ tags:
 - [[GroupApprovalRouter]] - `uses` [INFERRED]
 - [[test_group_approval_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_124
+#graphify/code #graphify/EXTRACTED #community/Community_2120

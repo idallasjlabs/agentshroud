@@ -16,6 +16,11 @@ tags:
 - [[cmd_start()]] - `calls` [EXTRACTED]
 - [[cmd_status()_1]] - `calls` [EXTRACTED]
 - [[cmd_stop()]] - `calls` [EXTRACTED]
+- [[edge_funnel_off()]] - `calls` [EXTRACTED]
+- [[edge_funnel_on()]] - `calls` [EXTRACTED]
+- [[edge_funnel_plan()]] - `calls` [EXTRACTED]
+- [[edge_funnel_status()]] - `calls` [EXTRACTED]
+- [[edge_validate_ports()]] - `calls` [EXTRACTED]
 - [[tailscale-serve.sh]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_875

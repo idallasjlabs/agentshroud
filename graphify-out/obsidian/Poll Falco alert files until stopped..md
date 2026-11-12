@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "rationale"
-community: "Community 531"
+community: "Community 75"
 location: "L207"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_531
+  - community/Community_75
 ---
 
 # Poll Falco alert files until stopped.
 
 ## Connections
-- [[.run()_4]] - `rationale_for` [EXTRACTED]
+- [[.run()_8]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_531
+#graphify/rationale #graphify/EXTRACTED #community/Community_75

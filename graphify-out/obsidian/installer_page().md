@@ -12,7 +12,7 @@ tags:
 # installer_page()
 
 ## Connections
-- [[Request_8]] - `references` [EXTRACTED]
+- [[Request_9]] - `references` [EXTRACTED]
 - [[Serve the installer wizard HTML.]] - `rationale_for` [EXTRACTED]
 - [[installer.py]] - `contains` [EXTRACTED]
 

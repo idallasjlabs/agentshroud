@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "Community 108"
+community: "Community 30"
 location: "L215"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_108
+  - community/Community_30
 ---
 
 # ApprovalRequest
@@ -22,4 +22,4 @@ tags:
 - [[ToolRiskConfig_1]] - `uses` [INFERRED]
 - [[ToolRiskPolicy_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_108
+#graphify/code #graphify/INFERRED #community/Community_30

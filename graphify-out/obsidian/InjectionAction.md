@@ -12,7 +12,7 @@ tags:
 # InjectionAction
 
 ## Connections
-- [[Any_19]] - `uses` [INFERRED]
+- [[Any_29]] - `uses` [INFERRED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[AuditChainEntry]] - `uses` [INFERRED]
 - [[Enum]] - `inherits` [EXTRACTED]
@@ -32,6 +32,7 @@ tags:
 - [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
 - [[TestMediumSeverity]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
+- [[TestPIIBlockModeInPipeline]] - `uses` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
 - [[TestSanitization]] - `uses` [INFERRED]
 - [[TestToolResultInjectionScanner]] - `uses` [INFERRED]

@@ -1,20 +1,19 @@
 ---
 type: community
-members: 7
+members: 6
 ---
 
 # Community 2073
 
-**Members:** 7 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[._nvd_entry()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
-- [[.registry()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
-- [[.test_dry_run_reports_count_and_writes_nothing()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
-- [[.test_empty_input_is_a_no_op()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
-- [[.test_openclaw_and_hermes_lists_each_get_their_own_entry()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
-- [[TestNvdAppend]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
-- [[The NVD source appends to the OpenClaw  Hermes lists through the same locator.]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[Approval required but none granted]] - document - skills/custom/securebrowser/README.md
+- [[Browser timeout_8]] - document - skills/custom/securebrowser/README.md
+- [[CAPTCHA detected_8]] - document - skills/custom/securebrowser/README.md
+- [[Credential extraction blocked]] - document - skills/custom/securebrowser/README.md
+- [[URL not in allowlist_8]] - document - skills/custom/securebrowser/README.md
+- [[Troubleshooting_57]] - document - skills/custom/securebrowser/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,12 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 55]]
-- 2 edges to [[_COMMUNITY_Community 1342]]
+- 1 edge to [[_COMMUNITY_Community 299]]
 
 ## Top bridge nodes
-- [[.test_openclaw_and_hermes_lists_each_get_their_own_entry()]] - degree 4, connects to 2 communities
-- [[TestNvdAppend]] - degree 7, connects to 1 community
-- [[.test_dry_run_reports_count_and_writes_nothing()]] - degree 3, connects to 1 community
-- [[.registry()]] - degree 2, connects to 1 community
-- [[.test_empty_input_is_a_no_op()]] - degree 2, connects to 1 community
+- [[Troubleshooting_57]] - degree 6, connects to 1 community

@@ -1,15 +1,16 @@
 ---
 type: community
-members: 2
+members: 3
 ---
 
 # Community 2342
 
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[.test_healthcheck_skill_sandbox_error_with_cannot_is_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Cannot access' phrasing should be rewritten for healthcheck SKILL.md sandbox mes]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[._redact_match()]] - code - gateway/security/prompt_protection.py
+- [[Match]] - code - gateway/security/prompt_protection.py
+- [[Replace a regex match with a redaction placeholder.]] - rationale - gateway/security/prompt_protection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +20,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 626]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 845]]
+- 1 edge to [[_COMMUNITY_Community 793]]
 
 ## Top bridge nodes
-- [[.test_healthcheck_skill_sandbox_error_with_cannot_is_rewritten()]] - degree 4, connects to 3 communities
+- [[._redact_match()]] - degree 3, connects to 1 community

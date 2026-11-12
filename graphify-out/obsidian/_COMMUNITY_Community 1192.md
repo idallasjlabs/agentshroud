@@ -23,8 +23,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 219]]
 - 1 edge to [[_COMMUNITY_Community 181]]
+- 1 edge to [[_COMMUNITY_Community 431]]
 
 ## Top bridge nodes
 - [[TestComputeBotScorecard]] - degree 6, connects to 1 community

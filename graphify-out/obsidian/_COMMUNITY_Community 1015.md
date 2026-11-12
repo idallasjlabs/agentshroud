@@ -25,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 253]]
+- 1 edge to [[_COMMUNITY_Community 1559]]
 
 ## Top bridge nodes
 - [[Presidio Analyzer]] - degree 8, connects to 1 community

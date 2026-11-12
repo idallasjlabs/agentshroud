@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Community 49"
-location: "L331"
+community: "Community 2017"
+location: "L398"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/Community_2017
 ---
 
 # Restart a specific service container.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[restart_service()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_49
+#graphify/rationale #graphify/EXTRACTED #community/Community_2017

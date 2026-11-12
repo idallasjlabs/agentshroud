@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "code"
-community: "Community 105"
+community: "Community 50"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_105
+  - community/Community_50
 ---
 
 # test_config.py
@@ -31,4 +31,4 @@ tags:
 - [[test_router_config_accepts_docker_service_hostname()]] - `contains` [EXTRACTED]
 - [[test_router_config_accepts_hermes_hostname()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_105
+#graphify/code #graphify/EXTRACTED #community/Community_50

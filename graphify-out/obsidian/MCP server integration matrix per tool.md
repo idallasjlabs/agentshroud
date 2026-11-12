@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/CONFIGURATION_SUMMARY.md"
 type: "concept"
-community: "Community 742"
+community: "Community 2201"
 location: "MCP Integration"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_742
+  - community/Community_2201
 ---
 
 # MCP server integration matrix per tool
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[awslabs.aws-api-mcp-server configuration (--readonly)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_742
+#graphify/concept #graphify/EXTRACTED #community/Community_2201

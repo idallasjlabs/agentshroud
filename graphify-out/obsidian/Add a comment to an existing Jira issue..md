@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "rationale"
-community: "Community 181"
+community: "Community 112"
 location: "L294"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_181
+  - community/Community_112
 ---
 
 # Add a comment to an existing Jira issue.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[add_comment()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_181
+#graphify/rationale #graphify/EXTRACTED #community/Community_112

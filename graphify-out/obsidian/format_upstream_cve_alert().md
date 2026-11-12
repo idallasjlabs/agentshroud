@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Community 1202"
+community: "Community 368"
 location: "L609"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1202
+  - community/Community_368
 ---
 
 # format_upstream_cve_alert()
@@ -24,10 +24,10 @@ tags:
 - [[.test_plural_header_for_multiple_cves()]] - `calls` [EXTRACTED]
 - [[.test_singular_header_for_one_cve()]] - `calls` [EXTRACTED]
 - [[.test_summary_under_telegram_limit_for_100_cves()]] - `calls` [EXTRACTED]
-- [[Any_37]] - `references` [EXTRACTED]
+- [[Any_47]] - `references` [EXTRACTED]
 - [[Format a Telegram alert for newly detected upstream CVEs.      The alert is titl]] - `rationale_for` [EXTRACTED]
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
 - [[run_upstream_cve_check()]] - `calls` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1202
+#graphify/code #graphify/EXTRACTED #community/Community_368

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Community 98"
+community: "Community 1565"
 location: "L604"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_98
+  - community/Community_1565
 ---
 
 # Test that outbound filter works alongside PII sanitizer.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_with_pii_sanitizer_compatibility()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_98
+#graphify/rationale #graphify/EXTRACTED #community/Community_1565

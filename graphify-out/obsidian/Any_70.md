@@ -1,32 +1,17 @@
 ---
-source_file: "gateway/tests/test_scanner_integration.py"
+source_file: "gateway/security/session_security.py"
 type: "code"
-community: "Community 67"
-location: "L54"
+community: "Community 76"
+location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_67
+  - community/Community_76
 ---
 
 # Any
 
 ## Connections
-- [[_clamav_clean()]] - `references` [EXTRACTED]
-- [[_clamav_infected()]] - `references` [EXTRACTED]
-- [[_clean_trivy_report()]] - `references` [EXTRACTED]
-- [[_critical_trivy_report()]] - `references` [EXTRACTED]
-- [[_falco_clean()]] - `references` [EXTRACTED]
-- [[_falco_critical()]] - `references` [EXTRACTED]
-- [[_falco_not_run()]] - `references` [EXTRACTED]
-- [[_openscap_clean()]] - `references` [EXTRACTED]
-- [[_openscap_not_run()]] - `references` [EXTRACTED]
-- [[_openscap_warn()]] - `references` [EXTRACTED]
-- [[_trivy_clean()]] - `references` [EXTRACTED]
-- [[_trivy_critical()]] - `references` [EXTRACTED]
-- [[_trivy_not_run()]] - `references` [EXTRACTED]
-- [[_wazuh_clean()]] - `references` [EXTRACTED]
-- [[_wazuh_not_run()]] - `references` [EXTRACTED]
-- [[_write_image_report()]] - `references` [EXTRACTED]
+- [[.validate_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_67
+#graphify/code #graphify/EXTRACTED #community/Community_76

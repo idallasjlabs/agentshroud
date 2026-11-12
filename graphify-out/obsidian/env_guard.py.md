@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "Community 684"
+community: "Community 362"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_684
+  - community/Community_362
 ---
 
 # env_guard.py
@@ -23,4 +23,4 @@ tags:
 - [[log_sanitizer.py]] - `semantically_similar_to` [INFERRED]
 - [[scrub_output()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_684
+#graphify/code #graphify/EXTRACTED #community/Community_362

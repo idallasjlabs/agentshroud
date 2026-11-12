@@ -1,63 +1,51 @@
 ---
 type: community
-members: 50
+members: 38
 ---
 
 # Community 135
 
-**Members:** 50 nodes
+**Members:** 38 nodes
 
 ## Members
-- [[.coerce_members()]] - code - gateway/security/group_config.py
-- [[.is_admin()]] - code - gateway/security/group_config.py
-- [[.is_group_admin()]] - code - gateway/security/group_config.py
-- [[.test_apply_persisted_overrides_skips_user_overrides_key()]] - code - gateway/tests/test_group_config.py
-- [[.test_empty_prefix_string_not_returned()]] - code - gateway/tests/test_group_config.py
-- [[.test_empty_teams_parses()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_all_member_ids()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_collab_mode_falls_back_to_group()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_groups_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_groups_multi_group()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_groups_non_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_projects_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_projects_non_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_group_config_safe_response_prefix_field()]] - code - gateway/tests/test_group_config.py
-- [[.test_group_config_safe_response_prefix_set()]] - code - gateway/tests/test_group_config.py
-- [[.test_is_group_admin_correct()]] - code - gateway/tests/test_group_config.py
-- [[.test_is_group_admin_unknown_group()]] - code - gateway/tests/test_group_config.py
-- [[.test_is_group_admin_wrong_user()]] - code - gateway/tests/test_group_config.py
-- [[.test_local_only_mode()]] - code - gateway/tests/test_group_config.py
-- [[.test_no_duplicate_projects()]] - code - gateway/tests/test_group_config.py
-- [[.test_no_prefix_by_default()]] - code - gateway/tests/test_group_config.py
-- [[.test_parses_groups()]] - code - gateway/tests/test_group_config.py
-- [[.test_parses_projects()]] - code - gateway/tests/test_group_config.py
-- [[.test_persist_user_collab_mode()]] - code - gateway/tests/test_group_config.py
-- [[.test_persist_user_collab_mode_update()]] - code - gateway/tests/test_group_config.py
-- [[.test_prefix_not_returned_for_non_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_prefix_returned_for_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_project_scoped_mode()]] - code - gateway/tests/test_group_config.py
-- [[.test_unknown_user_returns_local_only()]] - code - gateway/tests/test_group_config.py
-- [[.test_unknown_user_returns_none()]] - code - gateway/tests/test_group_config.py
-- [[.test_user_override_takes_precedence_over_group()]] - code - gateway/tests/test_group_config.py
-- [[.validate_mode()]] - code - gateway/security/group_config.py
-- [[A team group with members, admin, projects, and collab mode.]] - rationale - gateway/security/group_config.py
-- [[Calling persist_user_collab_mode twice updates the stored value.]] - rationale - gateway/tests/test_group_config.py
-- [[GroupConfig]] - code - gateway/security/group_config.py
-- [[Per-user collab_mode override persists to group_overrides.json and takes     pr]] - rationale - gateway/tests/test_group_config.py
-- [[Per-user override beats group-derived collab_mode.]] - rationale - gateway/tests/test_group_config.py
-- [[TeamsConfig_1]] - code - gateway/tests/test_group_config.py
-- [[TestAdminChecks]] - code - gateway/tests/test_group_config.py
-- [[TestCollabMode]] - code - gateway/tests/test_group_config.py
-- [[TestGroupSafeResponsePrefix]] - code - gateway/tests/test_group_config.py
-- [[TestMembershipQueries]] - code - gateway/tests/test_group_config.py
-- [[TestProjectQueries]] - code - gateway/tests/test_group_config.py
-- [[TestTeamsConfigParsing]] - code - gateway/tests/test_group_config.py
-- [[TestUserCollabModeOverride]] - code - gateway/tests/test_group_config.py
-- [[Without a per-user override, group-derived mode is returned.]] - rationale - gateway/tests/test_group_config.py
-- [[__user_overrides__ key must not be treated as a group_id.]] - rationale - gateway/tests/test_group_config.py
-- [[persist_user_collab_mode writes under __user_overrides__ key.]] - rationale - gateway/tests/test_group_config.py
-- [[teams()_1]] - code - gateway/tests/test_group_config.py
-- [[test_group_config.py]] - code - gateway/tests/test_group_config.py
+- [[.test_alert_callbacks()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_approval_system()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_basic_tool_call_tracking()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_chain_length_limits()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_config_file_to_outbound()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_credential_to_outbound_blocking()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_edge_cases()_3]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_exec_to_network_pattern()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_initialization()_4]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_normal_tool_sequences_allowed()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_pattern_configuration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_rapid_file_enumeration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_read_to_http_exfiltration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_read_to_message_exfiltration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_risk_score_calculation()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_session_cleanup()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_session_stats()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_time_window_expiry()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[Test alert callback functionality._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test approval system interface.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test basic tool call tracking functionality.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test cases for ToolChainAnalyzer class.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test cleanup of old sessions._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of config file access → outbound pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of exec → network communication pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of rapid file enumeration.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of read → HTTP exfiltration pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of read → message exfiltration pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test edge cases and error conditions._2]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test getting session statistics._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test proper initialization of ToolChainAnalyzer.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test risk score calculation for detected chains.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that chain length limits are respected.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that credential access → outbound tools are blocked.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that normal tool sequences pass through.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that patterns are properly configured.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that patterns don't match outside time windows.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[TestToolChainAnalyzer_1]] - code - gateway/tests/test_tool_chain_analyzer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -67,14 +55,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_Community 196]]
-- 10 edges to [[_COMMUNITY_Community 18]]
-- 4 edges to [[_COMMUNITY_Community 223]]
-- 3 edges to [[_COMMUNITY_Community 10]]
+- 5 edges to [[_COMMUNITY_Community 541]]
+- 3 edges to [[_COMMUNITY_Community 344]]
+- 1 edge to [[_COMMUNITY_Community 505]]
+- 1 edge to [[_COMMUNITY_Community 2121]]
 
 ## Top bridge nodes
-- [[GroupConfig]] - degree 32, connects to 4 communities
-- [[test_group_config.py]] - degree 11, connects to 2 communities
-- [[TestGroupSafeResponsePrefix]] - degree 10, connects to 1 community
-- [[TestUserCollabModeOverride]] - degree 9, connects to 1 community
-- [[TeamsConfig_1]] - degree 7, connects to 1 community
+- [[TestToolChainAnalyzer_1]] - degree 29, connects to 4 communities

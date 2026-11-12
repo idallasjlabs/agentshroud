@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "Community 80"
+community: "Community 50"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_80
+  - community/Community_50
 ---
 
 # Verify SSH proxy uses StrictHostKeyChecking=yes, not accept-new
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSSHStrictHostKeyChecking]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_80
+#graphify/rationale #graphify/EXTRACTED #community/Community_50

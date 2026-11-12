@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/asb"
 type: "rationale"
-community: "Community 126"
+community: "Community 295"
 location: "L625-L630"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_126
+  - community/Community_295
 ---
 
 # Compose profile gating (voice/hermes/full)
@@ -17,4 +17,4 @@ tags:
 - [[asb clean-rebuild fullhermes]] - `rationale_for` [EXTRACTED]
 - [[asb rebuild fullhermes]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_126
+#graphify/rationale #graphify/EXTRACTED #community/Community_295

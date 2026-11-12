@@ -10,8 +10,8 @@ members: 38
 ## Members
 - [[.__enter__()_2]] - code - gateway/tests/test_gateway_email_service.py
 - [[.__exit__()_2]] - code - gateway/tests/test_gateway_email_service.py
-- [[.__init__()_11]] - code - gateway/ingest_api/email_service.py
-- [[.__init__()_159]] - code - gateway/tests/test_gateway_email_service.py
+- [[.__init__()_26]] - code - gateway/ingest_api/email_service.py
+- [[.__init__()_180]] - code - gateway/tests/test_gateway_email_service.py
 - [[.build_message()]] - code - gateway/ingest_api/email_service.py
 - [[.login()]] - code - gateway/ingest_api/email_service.py
 - [[.login()_1]] - code - gateway/tests/test_gateway_email_service.py
@@ -55,9 +55,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 2154]]
+- 3 edges to [[_COMMUNITY_Community 2154]]
+- 1 edge to [[_COMMUNITY_Community 25]]
+- 1 edge to [[_COMMUNITY_Community 978]]
 
 ## Top bridge nodes
 - [[GatewayEmailService]] - degree 16, connects to 1 community
 - [[test_gateway_email_service.py]] - degree 8, connects to 1 community
 - [[email_service.py]] - degree 3, connects to 1 community
+- [[Protocol]] - degree 2, connects to 1 community

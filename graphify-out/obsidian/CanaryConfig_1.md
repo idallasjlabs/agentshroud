@@ -12,7 +12,7 @@ tags:
 # CanaryConfig
 
 ## Connections
-- [[.__init__()_104]] - `references` [EXTRACTED]
+- [[.__init__()_119]] - `references` [EXTRACTED]
 - [[.setup_method()_19]] - `calls` [EXTRACTED]
 - [[.test_incident_logging()]] - `calls` [EXTRACTED]
 - [[.test_partial_canary_match_handling()]] - `calls` [EXTRACTED]

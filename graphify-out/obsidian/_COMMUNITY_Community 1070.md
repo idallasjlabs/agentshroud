@@ -1,27 +1,28 @@
 ---
 type: community
-members: 14
+members: 15
 ---
 
 # Community 1070
 
-**Members:** 14 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[.test_readonly_allowed_read_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[.test_readonly_allowed_web_search_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[.test_readonly_denied_email_sending_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[.test_readonly_denied_external_api_calls_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[.test_readonly_denied_file_deletion_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[.test_readonly_denied_skill_installation_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[Read-only member IS allowed read tool in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Read-only member IS allowed web_search (low-risk) in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Read-only member denied email_sending even when called from group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Read-only member denied external_api_calls in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Read-only member denied file_deletion in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Read-only member denied skill_installation in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Read-only members must be denied high-risk tools in any group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[TestReadOnlyMemberGroupContext]] - code - gateway/tests/test_group_rbac.py
+- [[.test_empty_payload_returns_200()]] - code - gateway/tests/test_channel_ownership.py
+- [[.test_non_json_body_returns_200()]] - code - gateway/tests/test_channel_ownership.py
+- [[.test_passthrough_status_without_pipeline()]] - code - gateway/tests/test_channel_ownership.py
+- [[.test_requires_auth()]] - code - gateway/tests/test_channel_ownership.py
+- [[.test_requires_auth()_1]] - code - gateway/tests/test_channel_ownership.py
+- [[.test_response_has_status_field()]] - code - gateway/tests/test_channel_ownership.py
+- [[.test_valid_payload_returns_200()]] - code - gateway/tests/test_channel_ownership.py
+- [[Empty payload is handled gracefully (skipped, not error).]] - rationale - gateway/tests/test_channel_ownership.py
+- [[Endpoint returns 401 without auth override.]] - rationale - gateway/tests/test_channel_ownership.py
+- [[Endpoint returns 401 without auth override._1]] - rationale - gateway/tests/test_channel_ownership.py
+- [[Malformed body is handled defensively (empty dict fallback).]] - rationale - gateway/tests/test_channel_ownership.py
+- [[Response always includes a 'status' field.]] - rationale - gateway/tests/test_channel_ownership.py
+- [[Standard Telegram message payload is accepted.]] - rationale - gateway/tests/test_channel_ownership.py
+- [[TestTelegramWebhook]] - code - gateway/tests/test_channel_ownership.py
+- [[Without a pipeline configured, status is passthrough (not error).]] - rationale - gateway/tests/test_channel_ownership.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,11 +32,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 33]]
-- 1 edge to [[_COMMUNITY_Community 196]]
-- 1 edge to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 194]]
-- 1 edge to [[_COMMUNITY_Community 11]]
+- 1 edge to [[_COMMUNITY_Community 2154]]
+- 1 edge to [[_COMMUNITY_Community 512]]
 
 ## Top bridge nodes
-- [[TestReadOnlyMemberGroupContext]] - degree 14, connects to 5 communities
+- [[TestTelegramWebhook]] - degree 7, connects to 1 community
+- [[.test_requires_auth()_1]] - degree 3, connects to 1 community

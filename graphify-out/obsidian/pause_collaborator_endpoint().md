@@ -2,7 +2,7 @@
 source_file: "gateway/soc/router.py"
 type: "code"
 community: "Community 10"
-location: "L931"
+location: "L942"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,7 @@ tags:
 # pause_collaborator_endpoint()
 
 ## Connections
+- [[HTTPException]] - `calls` [EXTRACTED]
 - [[Pause a contributor's bot access without removing their record.]] - `rationale_for` [EXTRACTED]
 - [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]

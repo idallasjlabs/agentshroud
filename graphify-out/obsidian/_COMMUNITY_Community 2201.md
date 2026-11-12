@@ -1,16 +1,18 @@
 ---
 type: community
-members: 3
+members: 5
 ---
 
 # Community 2201
 
-**Members:** 3 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[Incident Classification System]] - document - docs/operations/incident-response.md
-- [[Priority Levels]] - document - docs/operations/incident-response.md
-- [[Severity Assessment Matrix]] - document - docs/operations/incident-response.md
+- [[Codex CLI (TERTIARY agent, TOML config)]] - concept - .llm_settings/docs/AI_TOOLS_CONFIGURATION_GUIDE.md
+- [[Codex CLI role contract (test augmentation  validation)]] - concept - .llm_settings/scripts/AGENTS.md
+- [[MCP server integration matrix per tool]] - concept - .llm_settings/docs/CONFIGURATION_SUMMARY.md
+- [[UVuvx package manager prerequisite]] - concept - .llm_settings/docs/MCP_README.md
+- [[awslabs.aws-api-mcp-server configuration (--readonly)]] - concept - .llm_settings/docs/MCP_README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,7 +22,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 107]]
+- 1 edge to [[_COMMUNITY_Community 742]]
+- 1 edge to [[_COMMUNITY_Community 1424]]
 
 ## Top bridge nodes
-- [[Incident Classification System]] - degree 3, connects to 1 community
+- [[awslabs.aws-api-mcp-server configuration (--readonly)]] - degree 5, connects to 2 communities

@@ -12,7 +12,7 @@ tags:
 # CredentialInjector
 
 ## Connections
-- [[.__init__()_14]] - `calls` [INFERRED]
+- [[.__init__()_29]] - `calls` [INFERRED]
 - [[._make_anthropic_injector()]] - `references` [EXTRACTED]
 - [[.injector()]] - `calls` [INFERRED]
 - [[.injector()_1]] - `calls` [INFERRED]

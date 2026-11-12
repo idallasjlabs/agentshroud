@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
 community: "Community 488"
-location: "L610"
+location: "L660"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.__aiter__()]] - `method` [EXTRACTED]
 - [[.__anext__()]] - `method` [EXTRACTED]
-- [[.__init__()_144]] - `method` [EXTRACTED]
+- [[.__init__()_159]] - `method` [EXTRACTED]
 - [[.send()_1]] - `method` [EXTRACTED]
 - [[Async-iterable WebSocket double.]] - `rationale_for` [EXTRACTED]
 - [[SCLClient]] - `uses` [INFERRED]

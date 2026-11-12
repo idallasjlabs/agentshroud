@@ -1,19 +1,20 @@
 ---
 type: community
-members: 6
+members: 7
 ---
 
 # Community 2041
 
-**Members:** 6 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[Brand Applications]] - document - branding/guidelines/brand-guidelines.md
-- [[Documentation_3]] - document - branding/guidelines/brand-guidelines.md
-- [[Presentations]] - document - branding/guidelines/brand-guidelines.md
-- [[Print Materials]] - document - branding/guidelines/brand-guidelines.md
-- [[Social Media_1]] - document - branding/guidelines/brand-guidelines.md
-- [[Website]] - document - branding/guidelines/brand-guidelines.md
+- [[Development Workflow_1]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 1 Add Feature (read_only false)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 2 Document Write Paths]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 3 Test Read-Only Compatibility]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 4 Add Missing Mounts]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 5 Verify OS Immutability]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 6 Revert to Development if Needed]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,8 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 192]]
-- 1 edge to [[_COMMUNITY_Community 231]]
+- 1 edge to [[_COMMUNITY_Community 157]]
 
 ## Top bridge nodes
-- [[Brand Applications]] - degree 7, connects to 2 communities
+- [[Development Workflow_1]] - degree 7, connects to 1 community

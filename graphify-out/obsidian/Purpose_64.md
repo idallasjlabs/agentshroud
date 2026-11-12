@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sad/README.md"
 type: "document"
-community: "Community 2186"
+community: "Community 90"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2186
+  - community/Community_90
 ---
 
 # Purpose
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[System Audit Documentation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2186
+#graphify/document #graphify/EXTRACTED #community/Community_90

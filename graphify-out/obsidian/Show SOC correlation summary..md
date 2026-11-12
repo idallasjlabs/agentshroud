@@ -2,7 +2,7 @@
 source_file: "gateway/cli/main.py"
 type: "rationale"
 community: "Community 87"
-location: "L143"
+location: "L155"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

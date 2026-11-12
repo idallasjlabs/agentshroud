@@ -1,47 +1,49 @@
 ---
 type: community
-members: 34
+members: 36
 ---
 
 # Community 166
 
-**Members:** 34 nodes
+**Members:** 36 nodes
 
 ## Members
-- [[EgressAllowlistResponse]] - code - gateway/web/management.py
-- [[EgressAllowlistUpdate]] - code - gateway/web/management.py
-- [[Falco runtime security alerts viewer.]] - rationale - gateway/web/management.py
-- [[Get current egress allowlist configuration.]] - rationale - gateway/web/management.py
-- [[Get overall credential health score and status summary.]] - rationale - gateway/web/management.py
-- [[Get status of all managed credentials including age and rotation schedule.]] - rationale - gateway/web/management.py
-- [[Request model for updating egress allowlist.]] - rationale - gateway/web/management.py
-- [[Response model for egress allowlist.]] - rationale - gateway/web/management.py
-- [[Security tools overview — links to all tool-specific dashboards.]] - rationale - gateway/web/management.py
-- [[Serve the SSH hosts page.]] - rationale - gateway/web/management.py
-- [[Serve the approval queue page.]] - rationale - gateway/web/management.py
-- [[Serve the audit log page.]] - rationale - gateway/web/management.py
-- [[Serve the collaborators page (dynamic — fetches live activity data).]] - rationale - gateway/web/management.py
-- [[Serve the emergency kill switch page.]] - rationale - gateway/web/management.py
-- [[Serve the main management dashboard.]] - rationale - gateway/web/management.py
-- [[Serve the security modules page (dynamic — fetches live data).]] - rationale - gateway/web/management.py
-- [[Trigger manual rotation for a specific credential (owner only).]] - rationale - gateway/web/management.py
-- [[Wazuh HIDS alerts and FIM events viewer.]] - rationale - gateway/web/management.py
-- [[approvals()]] - code - gateway/web/management.py
-- [[audit()_1]] - code - gateway/web/management.py
-- [[collaborators()]] - code - gateway/web/management.py
-- [[credentials_health()]] - code - gateway/web/management.py
-- [[credentials_status()]] - code - gateway/web/management.py
-- [[dashboard()]] - code - gateway/web/management.py
-- [[dashboard.html (Control Center Template)]] - code - gateway/web/templates/dashboard.html
-- [[falco_dashboard()]] - code - gateway/web/management.py
-- [[get_egress_allowlist()]] - code - gateway/web/management.py
-- [[killswitch()_1]] - code - gateway/web/management.py
-- [[management.py]] - code - gateway/web/management.py
-- [[modules()]] - code - gateway/web/management.py
-- [[rotate_credential()]] - code - gateway/web/management.py
-- [[security_overview()]] - code - gateway/web/management.py
-- [[ssh()]] - code - gateway/web/management.py
-- [[wazuh_dashboard()]] - code - gateway/web/management.py
+- [[.test_add_and_remove_blacklist()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_add_and_remove_whitelist()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_blacklisted_command_rejected()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_decision_approved()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_decision_denied()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_decision_has_timestamp()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_empty_command_rejected()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_env_with_path_manipulation()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_env_with_secrets_in_value_warned()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_known_dangerous_patterns_detected()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_multiple_configs_validated()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_safe_env_no_warnings()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_shell_injection_backtick_detected()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_shell_injection_curl_detected()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_shell_injection_dollar_paren()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_shell_injection_pipe_to_sh()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_shell_injection_rm_rf_detected()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_shell_injection_wget_detected()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_valid_config_passes()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_whitelisted_command_auto_approved()]] - code - gateway/tests/test_consent_framework.py
+- [[.validate_config()]] - code - gateway/security/consent_framework.py
+- [[.validate_configs()]] - code - gateway/security/consent_framework.py
+- [[Chen et al. 2026 (arXiv2602.14364) — MCP config shell injection  secret exfiltration]] - paper - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[ConfigValidationError]] - code - gateway/security/consent_framework.py
+- [[ConsentDecision]] - code - gateway/security/consent_framework.py
+- [[Maloyan & Namiot 2026 (arXiv2601.17548) — Malicious MCP server configuration attacks]] - paper - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[ServerConfig]] - code - gateway/security/consent_framework.py
+- [[ShellInjectionDetected]] - code - gateway/security/consent_framework.py
+- [[TestConsentDecision]] - code - gateway/tests/test_consent_framework.py
+- [[TestEnvironmentValidation]] - code - gateway/tests/test_consent_framework.py
+- [[TestServerConfigValidation]] - code - gateway/tests/test_consent_framework.py
+- [[TestWhitelistBlacklist]] - code - gateway/tests/test_consent_framework.py
+- [[Validate a server configuration before execution.]] - rationale - gateway/security/consent_framework.py
+- [[consent_framework.py]] - code - gateway/security/consent_framework.py
+- [[framework()]] - code - gateway/tests/test_consent_framework.py
+- [[test_consent_framework.py]] - code - gateway/tests/test_consent_framework.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,18 +53,24 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 17]]
-- 6 edges to [[_COMMUNITY_Community 198]]
-- 6 edges to [[_COMMUNITY_Community 122]]
-- 2 edges to [[_COMMUNITY_Community 10]]
-- 2 edges to [[_COMMUNITY_Community 125]]
-- 1 edge to [[_COMMUNITY_Community 978]]
-- 1 edge to [[_COMMUNITY_Community 49]]
-- 1 edge to [[_COMMUNITY_Community 40]]
+- 10 edges to [[_COMMUNITY_Community 0]]
+- 9 edges to [[_COMMUNITY_Community 72]]
+- 4 edges to [[_COMMUNITY_Community 41]]
+- 2 edges to [[_COMMUNITY_Community 365]]
+- 1 edge to [[_COMMUNITY_Community 25]]
+- 1 edge to [[_COMMUNITY_Community 152]]
+- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 148]]
+- 1 edge to [[_COMMUNITY_Community 477]]
+- 1 edge to [[_COMMUNITY_Community 196]]
+- 1 edge to [[_COMMUNITY_Community 235]]
+- 1 edge to [[_COMMUNITY_Community 128]]
+- 1 edge to [[_COMMUNITY_Community 479]]
+- 1 edge to [[_COMMUNITY_Community 5]]
 
 ## Top bridge nodes
-- [[management.py]] - degree 27, connects to 7 communities
-- [[EgressAllowlistUpdate]] - degree 6, connects to 4 communities
-- [[EgressAllowlistResponse]] - degree 6, connects to 3 communities
-- [[credentials_status()]] - degree 4, connects to 2 communities
-- [[rotate_credential()]] - degree 4, connects to 2 communities
+- [[ConsentDecision]] - degree 33, connects to 11 communities
+- [[consent_framework.py]] - degree 10, connects to 3 communities
+- [[TestServerConfigValidation]] - degree 13, connects to 1 community
+- [[TestEnvironmentValidation]] - degree 10, connects to 1 community
+- [[TestWhitelistBlacklist]] - degree 9, connects to 1 community

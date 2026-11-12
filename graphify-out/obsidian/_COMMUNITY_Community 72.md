@@ -1,363 +1,281 @@
 ---
 type: community
-members: 350
+members: 268
 ---
 
 # Community 72
 
-**Members:** 350 nodes
+**Members:** 268 nodes
 
 ## Members
-- [[NOTE Gateway-side Slack Socket Mode listener removed.]] - rationale - gateway/ingest_api/lifespan.py
-- [[.__init__()_14]] - code - gateway/ingest_api/middleware.py
-- [[.__init__()_44]] - code - gateway/proxy/web_proxy.py
-- [[.__init__()_59]] - code - gateway/security/browser_security.py
-- [[.__init__()_76]] - code - gateway/security/egress_monitor.py
-- [[.__init__()_101]] - code - gateway/security/network_validator.py
-- [[.__init__()_102]] - code - gateway/security/oauth_security.py
-- [[.__init__()_106]] - code - gateway/security/path_isolation.py
-- [[.__init__()_126]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[.__init__()_128]] - code - gateway/security/xml_leak_filter.py
+- [[.__init__()_29]] - code - gateway/ingest_api/middleware.py
+- [[.__init__()_66]] - code - gateway/security/agent_isolation.py
+- [[.__init__()_69]] - code - gateway/security/approval_hardening.py
+- [[.__init__()_74]] - code - gateway/security/browser_security.py
+- [[.__init__()_79]] - code - gateway/security/consent_framework.py
+- [[.__init__()_87]] - code - gateway/security/dns_filter.py
+- [[.__init__()_115]] - code - gateway/security/multi_turn_tracker.py
+- [[.__init__()_117]] - code - gateway/security/oauth_security.py
+- [[.__init__()_121]] - code - gateway/security/path_isolation.py
+- [[.__init__()_140]] - code - gateway/security/tool_result_sanitizer.py
+- [[.__init__()_143]] - code - gateway/security/xml_leak_filter.py
 - [[._analyze_request_for_rbac()]] - code - gateway/ingest_api/middleware.py
+- [[._apply_path_rewriting()]] - code - gateway/security/path_isolation.py
 - [[._check_cross_session_access()]] - code - gateway/ingest_api/middleware.py
+- [[._check_cross_user_access()]] - code - gateway/security/path_isolation.py
 - [[._check_rbac_permissions()]] - code - gateway/ingest_api/middleware.py
+- [[._cleanup_rate_window()]] - code - gateway/security/dns_filter.py
+- [[._cleanup_user_directory()]] - code - gateway/security/path_isolation.py
+- [[._compile_detection_patterns()]] - code - gateway/security/multi_turn_tracker.py
 - [[._create_detection_patterns()]] - code - gateway/security/output_canary.py
 - [[._create_invisible_canary()]] - code - gateway/security/output_canary.py
-- [[._critical_guard_failure()]] - code - gateway/ingest_api/middleware.py
-- [[._domain_matches_pattern()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[._domain_in_allowlist()]] - code - gateway/security/dns_filter.py
 - [[._enforce_session_isolation()]] - code - gateway/ingest_api/middleware.py
 - [[._ensure_base_directory()]] - code - gateway/security/path_isolation.py
-- [[._extract_code_blocks()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[._extract_file_paths()]] - code - gateway/ingest_api/middleware.py
+- [[._ensure_user_directory()]] - code - gateway/security/path_isolation.py
 - [[._extract_user_id()]] - code - gateway/ingest_api/middleware.py
-- [[._is_domain_allowed()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[._is_internal_link()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[._is_owner()]] - code - gateway/ingest_api/middleware.py
-- [[._is_path_allowed_for_user()]] - code - gateway/ingest_api/middleware.py
+- [[._get_user_temp_dir()]] - code - gateway/security/path_isolation.py
+- [[._is_base_directory_access()]] - code - gateway/security/path_isolation.py
+- [[._is_private_ip()_1]] - code - gateway/security/dns_filter.py
 - [[._is_tool_call_request()]] - code - gateway/ingest_api/middleware.py
-- [[._parse_service_network_config()]] - code - gateway/security/network_validator.py
 - [[._record_guard_init_failure()]] - code - gateway/ingest_api/middleware.py
-- [[._restore_code_blocks()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[._url_has_blocked_patterns()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[._validate_container_runtime_config()]] - code - gateway/security/network_validator.py
-- [[._validate_dns_configuration()]] - code - gateway/security/network_validator.py
-- [[._validate_network_definitions()]] - code - gateway/security/network_validator.py
-- [[._validate_network_modes()]] - code - gateway/security/network_validator.py
-- [[._validate_port_exposure()]] - code - gateway/security/network_validator.py
-- [[._validate_privileged_containers()]] - code - gateway/security/network_validator.py
-- [[._validate_service_network_isolation()]] - code - gateway/security/network_validator.py
+- [[._sanitize_user_id()]] - code - gateway/security/path_isolation.py
 - [[.add_alert_callback()]] - code - gateway/security/multi_turn_tracker.py
-- [[.add_alert_callback()_2]] - code - gateway/security/tool_chain_analyzer.py
-- [[.analyze_content()]] - code - gateway/security/browser_security.py
-- [[.analyze_screenshot()]] - code - gateway/security/browser_security.py
-- [[.approve_pending_call()]] - code - gateway/security/tool_chain_analyzer.py
-- [[.check_anomalies()]] - code - gateway/security/egress_monitor.py
-- [[.check_state_reuse()]] - code - gateway/security/oauth_security.py
+- [[.add_to_blacklist()]] - code - gateway/security/consent_framework.py
+- [[.add_to_whitelist()]] - code - gateway/security/consent_framework.py
+- [[.check()_4]] - code - gateway/security/dns_filter.py
+- [[.check_rebinding()]] - code - gateway/security/dns_filter.py
+- [[.cleanup_abandoned_directories()]] - code - gateway/security/path_isolation.py
 - [[.cleanup_expired_canaries()]] - code - gateway/security/output_canary.py
-- [[.close()_6]] - code - gateway/ingest_api/middleware.py
 - [[.create_consent_cookie()]] - code - gateway/security/oauth_security.py
-- [[.daily_summary()]] - code - gateway/security/egress_monitor.py
-- [[.detect_configuration_drift()]] - code - gateway/security/network_validator.py
-- [[.export_report()]] - code - gateway/security/network_validator.py
+- [[.dns_filter()]] - code - gateway/tests/test_dns_filter.py
+- [[.end_user_session()]] - code - gateway/security/path_isolation.py
 - [[.filter_function_calls_only()]] - code - gateway/security/xml_leak_filter.py
-- [[.filter_outbound_response()]] - code - gateway/ingest_api/middleware.py
 - [[.generate_canary()]] - code - gateway/security/output_canary.py
 - [[.get_active_users()]] - code - gateway/security/path_isolation.py
-- [[.get_alert_dispatcher()]] - code - gateway/ingest_api/middleware.py
-- [[.get_dns_filter()]] - code - gateway/ingest_api/middleware.py
-- [[.get_drift_detector()]] - code - gateway/ingest_api/middleware.py
-- [[.get_enhanced_tool_sanitizer()]] - code - gateway/ingest_api/middleware.py
-- [[.get_killswitch_monitor()]] - code - gateway/ingest_api/middleware.py
-- [[.get_log_sanitizer()]] - code - gateway/ingest_api/middleware.py
-- [[.get_multi_turn_tracker()]] - code - gateway/ingest_api/middleware.py
-- [[.get_network_validator()]] - code - gateway/ingest_api/middleware.py
-- [[.get_output_canary()]] - code - gateway/ingest_api/middleware.py
-- [[.get_rbac_manager()]] - code - gateway/ingest_api/middleware.py
-- [[.get_security_report()]] - code - gateway/security/network_validator.py
+- [[.get_audit_log()_3]] - code - gateway/security/dns_filter.py
+- [[.get_blacklist()]] - code - gateway/security/consent_framework.py
+- [[.get_flagged_queries()]] - code - gateway/security/dns_filter.py
+- [[.get_global_stats()]] - code - gateway/security/multi_turn_tracker.py
+- [[.get_session_stats()]] - code - gateway/security/multi_turn_tracker.py
 - [[.get_stats()_18]] - code - gateway/security/path_isolation.py
-- [[.get_tool_chain_analyzer()]] - code - gateway/ingest_api/middleware.py
+- [[.get_supported_tools()]] - code - gateway/security/tool_result_sanitizer.py
+- [[.get_user_temp_path()]] - code - gateway/security/path_isolation.py
+- [[.get_whitelist()]] - code - gateway/security/consent_framework.py
 - [[.process_request()]] - code - gateway/ingest_api/middleware.py
-- [[.process_tool_result()]] - code - gateway/ingest_api/middleware.py
-- [[.record()_1]] - code - gateway/security/egress_monitor.py
 - [[.record_state_used()]] - code - gateway/security/oauth_security.py
 - [[.register_known_shared_ids()]] - code - gateway/security/oauth_security.py
 - [[.register_screenshot_hook()]] - code - gateway/security/browser_security.py
+- [[.register_user_session()]] - code - gateway/security/path_isolation.py
+- [[.remove_from_blacklist()]] - code - gateway/security/consent_framework.py
+- [[.remove_from_whitelist()]] - code - gateway/security/consent_framework.py
 - [[.reset_session()_1]] - code - gateway/security/multi_turn_tracker.py
-- [[.sanitize()_1]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[.sanitize_images()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[.sanitize_links()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[.scan_tool_result()]] - code - gateway/ingest_api/middleware.py
-- [[.setup_method()_37]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_blocked_pattern_detection()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.resolve_and_cache()]] - code - gateway/security/dns_filter.py
+- [[.rewrite_path()]] - code - gateway/security/path_isolation.py
+- [[.test_allowlist_blocks_unlisted_in_enforce()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_allowlist_permits_listed_domain()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_allowlist_permits_subdomain()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_base64_in_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_basic_result()]] - code - gateway/tests/test_path_isolation.py
+- [[.test_blocked_result()]] - code - gateway/tests/test_path_isolation.py
 - [[.test_browser_security_guard_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_clean_compose_yields_zero_critical()]] - code - gateway/tests/test_network_validator_gate.py
-- [[.test_close_with_no_resource_guard()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_code_blocks_preserved()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_context_guard_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_convenience_function()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_custom_config()_3]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_default_config()_7]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_default_mode_is_enforce()_1]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_burst_queries_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_common_services_allowed()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_cooldown_disabled_when_feature_disabled()]] - code - gateway/tests/test_approval_hardening.py
+- [[.test_custom_config()_2]] - code - gateway/tests/test_path_isolation.py
+- [[.test_deception_detection_disabled()]] - code - gateway/tests/test_approval_hardening.py
+- [[.test_default_allows_all_domains()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_default_config()_5]] - code - gateway/tests/test_path_isolation.py
+- [[.test_default_mode_is_enforce()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_defaults()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_denied_with_reason()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_domain_matching_patterns()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_edge_cases()_4]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_egress_monitor_default_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_empty_alt_text_handling()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_empty_or_none_input()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_empty_summary()]] - code - gateway/tests/test_egress_monitor.py
-- [[.test_external_domain_stripping()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_full_init_success_and_getters()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_generous_baselines()]] - code - gateway/tests/test_egress_monitor.py
-- [[.test_get_module_mode_enforce_override()]] - code - gateway/tests/test_enforce_defaults.py
-- [[.test_get_module_mode_no_env_override()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_get_module_mode_no_override()]] - code - gateway/tests/test_enforce_defaults.py
-- [[.test_get_module_mode_with_override()]] - code - gateway/tests/test_enforce_defaults.py
-- [[.test_get_security_report_shape()]] - code - gateway/tests/test_network_validator_gate.py
-- [[.test_global_monitor_override_downgrades_all()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_init_all_modules_fail_falls_back_to_none()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_internal_link_detection()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_internal_links_preserved()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_is_domain_allowed()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_legitimate_links_preserved()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_logging()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_malicious_image_stripping()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_malicious_link_stripping()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_mixed_content_sanitization()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_monitor_mode_warning_message_format()]] - code - gateway/tests/test_enforce_defaults.py
-- [[.test_monitor_mode_warnings_all_modules()]] - code - gateway/tests/test_enforce_defaults.py
-- [[.test_monitor_mode_warnings_no_warnings_in_enforce()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_dns_filter_default_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_empty_string()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_enforce_mode_blocks_tunneling()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_file_sandbox_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_flagged_queries_in_log()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_generous_defaults()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_git_guard_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_hex_encoded_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_high_entropy_string()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_high_entropy_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_log_contains_timestamp()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_log_contains_verdict()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_long_but_legitimate_domain()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_low_entropy_string()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_monitor_mode_never_blocks()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_multi_turn_tracker_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_network_validator_init()]] - code - gateway/tests/test_security_audit.py
+- [[.test_multiple_long_labels_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_no_allowlist_allows_all()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_normal_domain_allowed()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_normal_rate_not_flagged()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_output_canary_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[.test_path_isolation_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_performance_with_large_content()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_privileged_service_is_critical()]] - code - gateway/tests/test_network_validator_gate.py
+- [[.test_private_ip_detection()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_prompt_guard_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_realistic_web_scraping_result()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_security_config_dns_filter_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_security_config_egress_filter_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_security_config_egress_monitor_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_security_config_killswitch_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_security_config_mcp_proxy_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_security_config_pii_sanitizer_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_security_config_prompt_guard_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_security_config_subagent_monitor_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_public_ip_not_private()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_queries_logged()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_resolve_and_cache_empty_domain_graceful()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_sanitize_disabled()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_stable_resolution_passes()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_strict_has_allowlist()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_subagent_monitor_default_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_summary_report()]] - code - gateway/tests/test_egress_monitor.py
-- [[.test_tool_chain_analyzer_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_validator_knows_the_two_real_networks()]] - code - gateway/tests/test_network_validator_gate.py
-- [[.test_warn_mode()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_subdomain_allowed()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_very_long_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[.to_dict()_4]] - code - gateway/security/agent_isolation.py
 - [[.validate_consent_cookie()]] - code - gateway/security/oauth_security.py
-- [[.validate_docker_compose_config()]] - code - gateway/security/network_validator.py
-- [[.validate_runtime_configuration()]] - code - gateway/security/network_validator.py
 - [[.verify_pkce()]] - code - gateway/security/oauth_security.py
-- [[A network security finding.]] - rationale - gateway/security/network_validator.py
-- [[A privileged container is the textbook escape-the-sandbox finding —         vali]] - rationale - gateway/tests/test_network_validator_gate.py
-- [[AGENTSHROUD_MODE=monitor must downgrade ALL modules to monitor.]] - rationale - gateway/tests/test_all_modules_enforce.py
 - [[Action]] - code - gateway/ingest_api/middleware.py
 - [[Add a callback function for alerts.]] - rationale - gateway/security/multi_turn_tracker.py
-- [[Add a callback function for chain detection alerts.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[AlertSeverity]] - code - gateway/security/egress_monitor.py
+- [[AgentRegistry]] - code - gateway/security/agent_isolation.py
 - [[Analyze request to determine RBAC action, resource, and tool tier.]] - rationale - gateway/ingest_api/middleware.py
-- [[AnomalyAlert]] - code - gateway/security/egress_monitor.py
-- [[Any_8]] - code - gateway/ingest_api/middleware.py
-- [[Any_51]] - code - gateway/security/network_validator.py
-- [[Approve a pending tool call that required approval.          Args             s]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Attach BufferHandler to the root agentshroud logger.]] - rationale - gateway/web/dashboard_endpoints.py
+- [[Anti-social-engineering hardening for approval queue.]] - rationale - gateway/security/approval_hardening.py
+- [[Any_18]] - code - gateway/ingest_api/middleware.py
+- [[Any_60]] - code - gateway/security/multi_turn_tracker.py
+- [[Apply path rewriting rules to isolate paths per user.]] - rationale - gateway/security/path_isolation.py
+- [[ApprovalHardening]] - code - gateway/security/approval_hardening.py
+- [[ApprovalHardeningConfig]] - code - gateway/security/approval_hardening.py
 - [[BrowserSecurityGuard]] - code - gateway/security/browser_security.py
 - [[Check RBAC permissions for the request.]] - rationale - gateway/ingest_api/middleware.py
 - [[Check for unauthorized cross-session access attempts.          Implementation]] - rationale - gateway/ingest_api/middleware.py
-- [[Check if URL contains any blocked patterns.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Check if a URL's domain is in the allowlist.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Check if a file path is allowed for a user to access.]] - rationale - gateway/ingest_api/middleware.py
-- [[Check if domain matches pattern (supports wildcards).]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Check if this is an internal link (relative, anchor, etc.).]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Check if user_id is the system owner via RBAC config (single source of truth).]] - rationale - gateway/ingest_api/middleware.py
+- [[Check if path is trying to access another user's isolated namespace.          Re]] - rationale - gateway/security/path_isolation.py
+- [[Check if path is trying to access the base AgentShroud directory.]] - rationale - gateway/security/path_isolation.py
+- [[Clean up a user's isolated directory.]] - rationale - gateway/security/path_isolation.py
+- [[Clean up abandoned user directories based on max age.]] - rationale - gateway/security/path_isolation.py
 - [[Clean up old canaries to prevent memory leaks.          Args             max_ag]] - rationale - gateway/security/output_canary.py
 - [[Combined memory security configuration.]] - rationale - gateway/security/memory_config.py
-- [[Complete security configuration]] - rationale - gateway/ingest_api/config.py
+- [[Compile regex patterns for detecting disclosure categories.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Configuration for alert thresholds.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Configuration for approval queue hardening.]] - rationale - gateway/security/approval_hardening.py
 - [[Configuration for path isolation system.]] - rationale - gateway/security/path_isolation.py
-- [[Configuration for tool result markdown sanitization.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Container network configuration.]] - rationale - gateway/security/network_validator.py
-- [[Convenience function to sanitize tool result content.      Args         content]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Convenience function to validate network security.]] - rationale - gateway/security/network_validator.py
+- [[ConsentFramework]] - code - gateway/security/consent_framework.py
 - [[Create an invisible version of the canary using various techniques.          Arg]] - rationale - gateway/security/output_canary.py
 - [[Create base agentshroud temp directory if it doesn't exist.]] - rationale - gateway/security/path_isolation.py
 - [[Create regex patterns to detect the canary in responses.          Args]] - rationale - gateway/security/output_canary.py
-- [[Default mode is enforce after v0.8.0 enforcement hardening._1]] - rationale - gateway/tests/test_egress_monitor.py
-- [[Detect drift between compose file and runtime configuration.]] - rationale - gateway/security/network_validator.py
-- [[EgressMonitor]] - code - gateway/security/egress_monitor.py
-- [[EgressMonitorConfig]] - code - gateway/security/egress_monitor.py
-- [[EgressSummary]] - code - gateway/security/egress_monitor.py
+- [[DNSFilter]] - code - gateway/security/dns_filter.py
+- [[DNSFilterConfig]] - code - gateway/security/dns_filter.py
+- [[DNSQuery]] - code - gateway/security/dns_filter.py
+- [[DNSVerdict]] - code - gateway/security/dns_filter.py
+- [[Default mode is enforce after v0.8.0 enforcement hardening.]] - rationale - gateway/tests/test_dns_filter.py
+- [[EgressFilterConfig_1]] - code - gateway/security/egress_filter.py
+- [[End a user session and optionally clean up their isolated directory.]] - rationale - gateway/security/path_isolation.py
+- [[End-to-end scanner STRIPs a base64-encoded lower-ranked injection.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[Enforce per-user, per-bot session isolation rules.          Each (user_id, bot_i]] - rationale - gateway/ingest_api/middleware.py
-- [[Enhanced markdown sanitizer with configurable domain allowlist.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Ensure user's isolated directory exists.]] - rationale - gateway/security/path_isolation.py
+- [[Even suspicious queries pass in monitor mode.]] - rationale - gateway/tests/test_dns_filter.py
 - [[Exception_2]] - code - gateway/ingest_api/middleware.py
-- [[Export network security report to file.]] - rationale - gateway/security/network_validator.py
-- [[Extract code blocks to preserve them during sanitization.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Extract potential file paths from message content.]] - rationale - gateway/ingest_api/middleware.py
 - [[Extract user ID from request data.]] - rationale - gateway/ingest_api/middleware.py
-- [[FastAPI_1]] - code - gateway/ingest_api/lifespan.py
-- [[FastAPI lifespan - startup and shutdown]] - rationale - gateway/ingest_api/lifespan.py
-- [[Filter outbound response to remove sensitive XML and path information.]] - rationale - gateway/ingest_api/middleware.py
+- [[FileSandboxConfig]] - code - gateway/security/file_sandbox.py
 - [[Filter to remove sensitive XML and path information from outbound responses.]] - rationale - gateway/security/xml_leak_filter.py
 - [[Generate and store a canary for this session.          Args             session]] - rationale - gateway/security/output_canary.py
-- [[Get comprehensive network security report.]] - rationale - gateway/security/network_validator.py
+- [[Get a path within the user's isolated temp directory.]] - rationale - gateway/security/path_isolation.py
+- [[Get global tracking statistics.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Get list of tools with specific PII configurations]] - rationale - gateway/security/tool_result_sanitizer.py
 - [[Get set of currently active users.]] - rationale - gateway/security/path_isolation.py
 - [[Get statistics about path isolation manager.]] - rationale - gateway/security/path_isolation.py
-- [[Get the RBAC manager for external access.]] - rationale - gateway/ingest_api/middleware.py
-- [[Get the log sanitizer for integration with logging system.]] - rationale - gateway/ingest_api/middleware.py
+- [[Get statistics for a session.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Get the isolated temp directory path for a user.]] - rationale - gateway/security/path_isolation.py
 - [[Initialize all security modules.]] - rationale - gateway/ingest_api/middleware.py
 - [[Initialize the filter with predefined patterns.]] - rationale - gateway/security/xml_leak_filter.py
-- [[Install warning filter once for uvicorn logger.]] - rationale - gateway/ingest_api/lifespan.py
-- [[Integration tests for the sanitizer.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Log warnings for any core modules running in monitor mode.]] - rationale - gateway/ingest_api/config.py
+- [[Initialize the multi-turn tracker.          Args             config Configurat]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Known private ranges should be detected.]] - rationale - gateway/tests/test_dns_filter.py
 - [[LogSanitizer]] - code - gateway/ingest_api/middleware.py
 - [[Main Output Canary System for detecting prompt leakage.      This system generat]] - rationale - gateway/security/output_canary.py
 - [[Main multi-turn disclosure tracking engine.      Maintains session state and sco]] - rationale - gateway/security/multi_turn_tracker.py
-- [[Main tool chain analysis engine.      Tracks sequences of tool calls and identif]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Maloyan & Namiot 2026 — MCP security analysis (arXiv2601.17548)]] - paper - gateway/security/consent_framework.py
 - [[Manages per-user path isolation for temporary files and directories.]] - rationale - gateway/security/path_isolation.py
-- [[Manages the P1 security middleware modules.]] - rationale - gateway/ingest_api/middleware.py
 - [[MemorySecurityConfig]] - code - gateway/security/memory_config.py
-- [[MiddlewareManager]] - code - gateway/ingest_api/middleware.py
 - [[MiddlewareResult]] - code - gateway/ingest_api/middleware.py
 - [[MultiTurnTracker]] - code - gateway/security/multi_turn_tracker.py
-- [[NetworkConfiguration]] - code - gateway/security/network_validator.py
-- [[NetworkSecurityFinding]] - code - gateway/security/network_validator.py
-- [[NetworkValidator]] - code - gateway/security/network_validator.py
 - [[OAuthSecurityValidator]] - code - gateway/security/oauth_security.py
+- [[Output Canary System Tests]] - code - gateway/tests/test_output_canary.py
 - [[OutputCanary]] - code - gateway/security/output_canary.py
-- [[Parse network configuration for a service.]] - rationale - gateway/security/network_validator.py
-- [[Path_35]] - code - gateway/tests/test_network_validator_gate.py
-- [[Path Isolation Manager Tests]] - code - gateway/tests/test_path_isolation.py
+- [[PII configuration with per-tool overrides]] - rationale - gateway/security/tool_result_sanitizer.py
 - [[PathIsolationConfig]] - code - gateway/security/path_isolation.py
 - [[PathIsolationManager]] - code - gateway/security/path_isolation.py
+- [[PathRewriteResult]] - code - gateway/security/path_isolation.py
 - [[Pattern_2]] - code - gateway/security/output_canary.py
-- [[Privilege Separation File Sandbox Tests]] - code - gateway/tests/test_privilege_separation.py
 - [[Process request through all middleware modules.]] - rationale - gateway/ingest_api/middleware.py
-- [[Process tool result through PII sanitization before it reaches agent          Ar]] - rationale - gateway/ingest_api/middleware.py
+- [[Public IPs should not be flagged as private.]] - rationale - gateway/tests/test_dns_filter.py
 - [[Quick filter that only removes function call XML (for performance).          Arg]] - rationale - gateway/security/xml_leak_filter.py
 - [[RBACManager]] - code - gateway/ingest_api/middleware.py
 - [[Record a guard __init__ exception so the request path can fail closed.]] - rationale - gateway/ingest_api/middleware.py
-- [[Remove or warn about markdown images pointing to non-allowlisted domains.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Remove or warn about markdown links pointing to non-allowlisted domains.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Register a new user session and create their isolated directory.]] - rationale - gateway/security/path_isolation.py
+- [[Registry mapping agent IDs to container configurations.]] - rationale - gateway/security/agent_isolation.py
 - [[Reset session score after owner review.          Args             session_id S]] - rationale - gateway/security/multi_turn_tracker.py
-- [[Resolve each configured bot's OWN Telegram token, distinct from the default.]] - rationale - gateway/ingest_api/lifespan.py
-- [[Resolve the config file path using the same search order as load_config().]] - rationale - gateway/ingest_api/config.py
+- [[Resolve domain to an IP and cache it for 5 minutes.]] - rationale - gateway/security/dns_filter.py
+- [[Resolving a domain that fails should return empty string gracefully.]] - rationale - gateway/tests/test_dns_filter.py
 - [[Resource]] - code - gateway/ingest_api/middleware.py
-- [[Restore code blocks after sanitization.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
 - [[Result from middleware processing.]] - rationale - gateway/ingest_api/middleware.py
+- [[Result of path rewriting operation.]] - rationale - gateway/security/path_isolation.py
+- [[Return True if a DNS rebinding attack is detected.          Re-resolves the doma]] - rationale - gateway/security/dns_filter.py
+- [[Return True if the IP address is in a private  loopback range.]] - rationale - gateway/security/dns_filter.py
 - [[Return True only when the request contains actual tool calls or tool results.]] - rationale - gateway/ingest_api/middleware.py
-- [[Return module mode, respecting the global permissive override.]] - rationale - gateway/ingest_api/config.py
-- [[Return the name of a failed critical guard, or None if all healthy.          Use]] - rationale - gateway/ingest_api/middleware.py
-- [[Sanitize tool result content by filtering markdown links and images.          Ar]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Scan tool result for injection attempts and return sanitized content.          A]] - rationale - gateway/ingest_api/middleware.py
+- [[Rewrite a path to isolate it to the user's namespace.          Args]] - rationale - gateway/security/path_isolation.py
+- [[Sanitize user ID to prevent path traversal attacks.]] - rationale - gateway/security/path_isolation.py
 - [[Scanner for detecting prompt injection in tool results.]] - rationale - gateway/security/tool_result_injection.py
-- [[SecurityConfig_3]] - code - gateway/ingest_api/config.py
-- [[Set up test fixtures._3]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Shutdown middleware background tasks cleanly.]] - rationale - gateway/ingest_api/middleware.py
-- [[Slow-drip  coordinated multi-channel exfiltration anomaly detection]] - concept - gateway/tests/test_egress_monitor.py
+- [[Seeding the same IP twice should not flag rebinding.]] - rationale - gateway/tests/test_dns_filter.py
+- [[Serialize registry to dict.]] - rationale - gateway/security/agent_isolation.py
 - [[SubagentMonitorConfig]] - code - gateway/security/subagent_monitor.py
-- [[Suppress noisy uvicorn warning spam for malformed probe traffic.]] - rationale - gateway/ingest_api/lifespan.py
-- [[Test ToolResultSanitizer functionality.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test ToolResultSanitizerConfig.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test custom configuration.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test default configuration values._5]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test detection of blocked patterns in URLs.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test detection of internalrelative links.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test domain allowlist checking.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test domain pattern matching including wildcards.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test edge cases and malformed inputs.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test get_module_mode returns enforce when explicitly set.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test get_module_mode returns enforce when no override set.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test get_module_mode returns monitor when AGENTSHROUD_MODE=monitor.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test handling of empty or None input.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test handling of images with empty alt text.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test performance with large content.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test sanitization of mixed legitimate and malicious content.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test sanitizing a realistic web scraping result.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test stripping of links to non-allowlisted domains.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test stripping of malicious markdown images.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test stripping of malicious markdown links.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test that appropriate logging occurs.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test that code blocks with URLs are preserved.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test that internalrelative links are preserved.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test that legitimate links are preserved.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test that monitor mode warnings contain required information.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test that no warnings are logged when all modules are in enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test that warnings are logged for all core modules in monitor mode.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test the convenience sanitize_tool_result function.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test warn mode that marks but preserves external content.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[TestClose]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestDailySummary]] - code - gateway/tests/test_egress_monitor.py
-- [[TestEgressMonitorConfig]] - code - gateway/tests/test_egress_monitor.py
-- [[TestExpectedNetworksAllowlist]] - code - gateway/tests/test_network_validator_gate.py
-- [[TestGateScope]] - code - gateway/tests/test_network_validator_gate.py
+- [[Test PathRewriteResult dataclass.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test basic result creation.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test blocked result creation.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test cooldown is disabled when feature is disabled.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test custom configuration values._1]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test default configuration values._4]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test path isolation configuration.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test sanitizer when disabled]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test that deception detection can be disabled.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[TestAuditLogging]] - code - gateway/tests/test_dns_filter.py
+- [[TestDNSAllowlist]] - code - gateway/tests/test_dns_filter.py
+- [[TestDNSFilterConfig]] - code - gateway/tests/test_dns_filter.py
+- [[TestDNSRebinding]] - code - gateway/tests/test_dns_filter.py
+- [[TestDNSTunnelingDetection]] - code - gateway/tests/test_dns_filter.py
+- [[TestEntropyCalculator]] - code - gateway/tests/test_dns_filter.py
 - [[TestGetModuleModeEnforceDefault]] - code - gateway/tests/test_all_modules_enforce.py
-- [[TestInit]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestIntegration_1]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[TestMiddlewareResult]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestModuleConfigDefaults]] - code - gateway/tests/test_all_modules_enforce.py
 - [[TestModuleInstantiationInEnforceMode]] - code - gateway/tests/test_all_modules_enforce.py
-- [[TestSecurityConfigDefaults]] - code - gateway/tests/test_all_modules_enforce.py
-- [[TestToolResultSanitizer_1]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[TestToolResultSanitizerConfig]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[TestValidatorAPI]] - code - gateway/tests/test_network_validator_gate.py
-- [[ToolChainAnalyzer]] - code - gateway/security/tool_chain_analyzer.py
-- [[ToolChainAnalyzer._load_custom_patterns]] - code - gateway/security/tool_chain_analyzer.py
-- [[ToolChainAnalyzer._load_default_patterns]] - code - gateway/security/tool_chain_analyzer.py
+- [[TestNormalDNSResolution]] - code - gateway/tests/test_dns_filter.py
+- [[TestPathIsolationConfig]] - code - gateway/tests/test_path_isolation.py
+- [[TestPathRewriteResult]] - code - gateway/tests/test_path_isolation.py
+- [[TestRateLimiting_1]] - code - gateway/tests/test_dns_filter.py
+- [[ThresholdConfig]] - code - gateway/security/multi_turn_tracker.py
+- [[Tool result PII sanitizer with per-tool configuration]] - rationale - gateway/security/tool_result_sanitizer.py
 - [[ToolResultInjectionScanner]] - code - gateway/security/tool_result_injection.py
-- [[ToolResultSanitizer_1]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[ToolResultSanitizerConfig]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[ToolResultPIIConfig]] - code - gateway/security/tool_result_sanitizer.py
+- [[ToolResultSanitizer]] - code - gateway/security/tool_result_sanitizer.py
 - [[ToolTier]] - code - gateway/ingest_api/middleware.py
-- [[Validate DNS configuration for security.]] - rationale - gateway/security/network_validator.py
-- [[Validate a single container's runtime network configuration.]] - rationale - gateway/security/network_validator.py
-- [[Validate container network isolation and security.]] - rationale - gateway/security/network_validator.py
-- [[Validate docker-compose network configuration.          Args             compos]] - rationale - gateway/security/network_validator.py
-- [[Validate network definitions in compose file.]] - rationale - gateway/security/network_validator.py
-- [[Validate network mode configurations.]] - rationale - gateway/security/network_validator.py
-- [[Validate port exposure configuration.]] - rationale - gateway/security/network_validator.py
-- [[Validate runtime network configuration using Docker API.]] - rationale - gateway/security/network_validator.py
-- [[Validate service network isolation.]] - rationale - gateway/security/network_validator.py
-- [[Validate that no containers are running in privileged mode.]] - rationale - gateway/security/network_validator.py
-- [[Verify SecurityConfig and SecurityModuleConfig default to enforce.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[ToolTier_1]] - code - gateway/security/rbac.py
 - [[Verify get_module_mode returns enforce when no override is set.]] - rationale - gateway/tests/test_all_modules_enforce.py
 - [[Verify individual module configs default to enforce mode.]] - rationale - gateway/tests/test_all_modules_enforce.py
 - [[Verify modules can instantiate and operate in enforce mode.]] - rationale - gateway/tests/test_all_modules_enforce.py
-- [[WS-E RT-2 Inbound Encoding Bypass Fix Rationale]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[Wu et al. 2026 — Browser-based attacks on AI agents (arXiv2601.07263)]] - paper - gateway/security/browser_security.py
 - [[XMLLeakFilter]] - code - gateway/security/xml_leak_filter.py
-- [[_DropInvalidHTTPRequestFilter]] - code - gateway/ingest_api/lifespan.py
-- [[_build_per_bot_telegram_tokens()]] - code - gateway/ingest_api/lifespan.py
-- [[_install_uvicorn_warning_filter()]] - code - gateway/ingest_api/lifespan.py
+- [[`_detect_encoded_injection` matches rules beyond the old top-6 slice.      `jail]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[any]] - code - gateway/security/path_isolation.py
 - [[callable]] - code - gateway/security/multi_turn_tracker.py
-- [[callable_1]] - code - gateway/security/tool_chain_analyzer.py
-- [[check_monitor_mode_warnings()]] - code - gateway/ingest_api/config.py
-- [[default_config()_2]] - code - gateway/tests/test_egress_monitor.py
-- [[egress_monitor.py]] - code - gateway/security/egress_monitor.py
-- [[get_module_mode()]] - code - gateway/ingest_api/config.py
-- [[install_log_handler()]] - code - gateway/web/dashboard_endpoints.py
-- [[lifespan()_1]] - code - gateway/ingest_api/lifespan.py
-- [[lifespan.py]] - code - gateway/ingest_api/lifespan.py
+- [[default_config()_1]] - code - gateway/tests/test_dns_filter.py
+- [[dns_filter()]] - code - gateway/tests/test_dns_filter.py
+- [[enforcement-audit-script.py]] - code - docs/planning/reviews/enforcement-audit-script.py
+- [[fail()_2]] - code - docs/planning/reviews/enforcement-audit-script.py
+- [[hex-encoded lower-ranked injection is caught by the full ruleset.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[middleware.py]] - code - gateway/ingest_api/middleware.py
-- [[middleware.py_1]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[monitor()]] - code - gateway/tests/test_egress_monitor.py
-- [[monitor_config()_1]] - code - gateway/tests/test_egress_monitor.py
-- [[network_validator.py]] - code - gateway/security/network_validator.py
+- [[monitor_config()]] - code - gateway/tests/test_dns_filter.py
+- [[monitor_filter()]] - code - gateway/tests/test_dns_filter.py
+- [[ok()]] - code - docs/planning/reviews/enforcement-audit-script.py
 - [[path_isolation.py]] - code - gateway/security/path_isolation.py
-- [[post-deploy-check.sh fails ONLY on critical. These tests pin that contract.]] - rationale - gateway/tests/test_network_validator_gate.py
-- [[resolve_config_path()]] - code - gateway/ingest_api/config.py
-- [[sanitize_tool_result()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[run()_3]] - code - docs/planning/reviews/enforcement-audit-script.py
+- [[strict_config()]] - code - gateway/tests/test_dns_filter.py
+- [[strict_filter()]] - code - gateway/tests/test_dns_filter.py
 - [[test_all_modules_enforce.py]] - code - gateway/tests/test_all_modules_enforce.py
-- [[test_egress_monitor.py]] - code - gateway/tests/test_egress_monitor.py
-- [[test_network_validator.py]] - code - gateway/tests/test_network_validator.py
-- [[test_network_validator_gate.py]] - code - gateway/tests/test_network_validator_gate.py
-- [[test_tool_result_sanitizer_enhanced.py]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[tmp_compose()]] - code - gateway/tests/test_network_validator_gate.py
-- [[tool_result_sanitizer_enhanced.py]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[validate_network_security()]] - code - gateway/security/network_validator.py
-- [[web_proxy.py]] - code - gateway/proxy/web_proxy.py
+- [[test_dns_filter.py]] - code - gateway/tests/test_dns_filter.py
+- [[test_path_isolation.py]] - code - gateway/tests/test_path_isolation.py
+- [[test_tool_injection_encoded_check_uses_full_ruleset()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_tool_injection_hex_encoded_uses_full_ruleset()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_tool_injection_scan_blocks_encoded_lower_ranked_rule()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[tool_result_sanitizer.py]] - code - gateway/security/tool_result_sanitizer.py
+- [[warn()_1]] - code - docs/planning/reviews/enforcement-audit-script.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -367,137 +285,92 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 173 edges to [[_COMMUNITY_Community 0]]
-- 79 edges to [[_COMMUNITY_Community 6]]
-- 76 edges to [[_COMMUNITY_Community 1]]
-- 42 edges to [[_COMMUNITY_Community 7]]
-- 37 edges to [[_COMMUNITY_Community 16]]
-- 35 edges to [[_COMMUNITY_Community 28]]
-- 33 edges to [[_COMMUNITY_Community 431]]
-- 25 edges to [[_COMMUNITY_Community 26]]
-- 24 edges to [[_COMMUNITY_Community 146]]
-- 23 edges to [[_COMMUNITY_Community 8]]
-- 22 edges to [[_COMMUNITY_Community 3]]
-- 21 edges to [[_COMMUNITY_Community 152]]
-- 17 edges to [[_COMMUNITY_Community 52]]
-- 17 edges to [[_COMMUNITY_Community 121]]
-- 14 edges to [[_COMMUNITY_Community 141]]
-- 14 edges to [[_COMMUNITY_Community 5]]
-- 13 edges to [[_COMMUNITY_Community 9]]
-- 12 edges to [[_COMMUNITY_Community 104]]
-- 12 edges to [[_COMMUNITY_Community 84]]
-- 12 edges to [[_COMMUNITY_Community 505]]
-- 11 edges to [[_COMMUNITY_Community 198]]
-- 11 edges to [[_COMMUNITY_Community 516]]
-- 11 edges to [[_COMMUNITY_Community 1127]]
-- 11 edges to [[_COMMUNITY_Community 32]]
-- 10 edges to [[_COMMUNITY_Community 229]]
-- 10 edges to [[_COMMUNITY_Community 707]]
-- 10 edges to [[_COMMUNITY_Community 254]]
-- 10 edges to [[_COMMUNITY_Community 11]]
+- 71 edges to [[_COMMUNITY_Community 1]]
+- 46 edges to [[_COMMUNITY_Community 32]]
+- 44 edges to [[_COMMUNITY_Community 0]]
+- 40 edges to [[_COMMUNITY_Community 6]]
+- 39 edges to [[_COMMUNITY_Community 7]]
+- 38 edges to [[_COMMUNITY_Community 28]]
+- 35 edges to [[_COMMUNITY_Community 52]]
+- 31 edges to [[_COMMUNITY_Community 3]]
+- 29 edges to [[_COMMUNITY_Community 108]]
+- 27 edges to [[_COMMUNITY_Community 121]]
+- 23 edges to [[_COMMUNITY_Community 146]]
+- 21 edges to [[_COMMUNITY_Community 61]]
+- 20 edges to [[_COMMUNITY_Community 1002]]
+- 20 edges to [[_COMMUNITY_Community 516]]
+- 20 edges to [[_COMMUNITY_Community 41]]
+- 18 edges to [[_COMMUNITY_Community 60]]
+- 16 edges to [[_COMMUNITY_Community 16]]
+- 16 edges to [[_COMMUNITY_Community 154]]
+- 15 edges to [[_COMMUNITY_Community 162]]
+- 15 edges to [[_COMMUNITY_Community 9]]
+- 15 edges to [[_COMMUNITY_Community 344]]
+- 14 edges to [[_COMMUNITY_Community 365]]
+- 13 edges to [[_COMMUNITY_Community 235]]
+- 13 edges to [[_COMMUNITY_Community 5]]
+- 12 edges to [[_COMMUNITY_Community 141]]
+- 12 edges to [[_COMMUNITY_Community 76]]
+- 11 edges to [[_COMMUNITY_Community 290]]
+- 10 edges to [[_COMMUNITY_Community 557]]
+- 10 edges to [[_COMMUNITY_Community 198]]
+- 10 edges to [[_COMMUNITY_Community 71]]
 - 10 edges to [[_COMMUNITY_Community 115]]
-- 9 edges to [[_COMMUNITY_Community 17]]
-- 9 edges to [[_COMMUNITY_Community 130]]
-- 8 edges to [[_COMMUNITY_Community 79]]
-- 8 edges to [[_COMMUNITY_Community 41]]
-- 7 edges to [[_COMMUNITY_Community 35]]
-- 7 edges to [[_COMMUNITY_Community 1000]]
-- 7 edges to [[_COMMUNITY_Community 24]]
-- 7 edges to [[_COMMUNITY_Community 65]]
-- 7 edges to [[_COMMUNITY_Community 794]]
-- 6 edges to [[_COMMUNITY_Community 120]]
-- 6 edges to [[_COMMUNITY_Community 233]]
-- 6 edges to [[_COMMUNITY_Community 154]]
-- 5 edges to [[_COMMUNITY_Community 80]]
-- 5 edges to [[_COMMUNITY_Community 27]]
-- 5 edges to [[_COMMUNITY_Community 684]]
-- 5 edges to [[_COMMUNITY_Community 978]]
-- 5 edges to [[_COMMUNITY_Community 1658]]
+- 10 edges to [[_COMMUNITY_Community 233]]
+- 9 edges to [[_COMMUNITY_Community 809]]
+- 9 edges to [[_COMMUNITY_Community 1127]]
+- 9 edges to [[_COMMUNITY_Community 152]]
+- 9 edges to [[_COMMUNITY_Community 166]]
+- 8 edges to [[_COMMUNITY_Community 1119]]
+- 7 edges to [[_COMMUNITY_Community 138]]
+- 7 edges to [[_COMMUNITY_Community 8]]
+- 6 edges to [[_COMMUNITY_Community 1658]]
+- 6 edges to [[_COMMUNITY_Community 24]]
+- 6 edges to [[_COMMUNITY_Community 26]]
+- 5 edges to [[_COMMUNITY_Community 4]]
 - 5 edges to [[_COMMUNITY_Community 12]]
-- 5 edges to [[_COMMUNITY_Community 71]]
-- 4 edges to [[_COMMUNITY_Community 590]]
-- 4 edges to [[_COMMUNITY_Community 162]]
-- 4 edges to [[_COMMUNITY_Community 54]]
-- 4 edges to [[_COMMUNITY_Community 205]]
-- 4 edges to [[_COMMUNITY_Community 206]]
-- 4 edges to [[_COMMUNITY_Community 4]]
-- 4 edges to [[_COMMUNITY_Community 53]]
-- 4 edges to [[_COMMUNITY_Community 138]]
-- 4 edges to [[_COMMUNITY_Community 1558]]
-- 4 edges to [[_COMMUNITY_Community 1342]]
-- 3 edges to [[_COMMUNITY_Community 30]]
-- 3 edges to [[_COMMUNITY_Community 99]]
-- 3 edges to [[_COMMUNITY_Community 97]]
-- 3 edges to [[_COMMUNITY_Community 110]]
-- 3 edges to [[_COMMUNITY_Community 50]]
-- 3 edges to [[_COMMUNITY_Community 575]]
-- 3 edges to [[_COMMUNITY_Community 1130]]
-- 3 edges to [[_COMMUNITY_Community 94]]
-- 3 edges to [[_COMMUNITY_Community 344]]
-- 2 edges to [[_COMMUNITY_Community 108]]
-- 2 edges to [[_COMMUNITY_Community 158]]
-- 2 edges to [[_COMMUNITY_Community 81]]
-- 2 edges to [[_COMMUNITY_Community 1278]]
-- 2 edges to [[_COMMUNITY_Community 64]]
-- 2 edges to [[_COMMUNITY_Community 383]]
-- 2 edges to [[_COMMUNITY_Community 45]]
-- 2 edges to [[_COMMUNITY_Community 148]]
-- 2 edges to [[_COMMUNITY_Community 241]]
-- 2 edges to [[_COMMUNITY_Community 22]]
-- 2 edges to [[_COMMUNITY_Community 113]]
-- 2 edges to [[_COMMUNITY_Community 368]]
-- 2 edges to [[_COMMUNITY_Community 89]]
-- 2 edges to [[_COMMUNITY_Community 56]]
-- 2 edges to [[_COMMUNITY_Community 23]]
-- 2 edges to [[_COMMUNITY_Community 21]]
-- 2 edges to [[_COMMUNITY_Community 102]]
-- 2 edges to [[_COMMUNITY_Community 187]]
-- 2 edges to [[_COMMUNITY_Community 262]]
-- 2 edges to [[_COMMUNITY_Community 62]]
+- 4 edges to [[_COMMUNITY_Community 25]]
+- 4 edges to [[_COMMUNITY_Community 50]]
+- 4 edges to [[_COMMUNITY_Community 79]]
+- 4 edges to [[_COMMUNITY_Community 562]]
+- 3 edges to [[_COMMUNITY_Community 793]]
+- 3 edges to [[_COMMUNITY_Community 978]]
+- 3 edges to [[_COMMUNITY_Community 477]]
+- 2 edges to [[_COMMUNITY_Community 254]]
+- 2 edges to [[_COMMUNITY_Community 17]]
 - 2 edges to [[_COMMUNITY_Community 14]]
-- 2 edges to [[_COMMUNITY_Community 605]]
+- 2 edges to [[_COMMUNITY_Community 53]]
+- 2 edges to [[_COMMUNITY_Community 1148]]
+- 2 edges to [[_COMMUNITY_Community 93]]
+- 2 edges to [[_COMMUNITY_Community 148]]
+- 2 edges to [[_COMMUNITY_Community 196]]
+- 2 edges to [[_COMMUNITY_Community 128]]
+- 2 edges to [[_COMMUNITY_Community 479]]
 - 2 edges to [[_COMMUNITY_Community 1281]]
-- 2 edges to [[_COMMUNITY_Community 181]]
-- 1 edge to [[_COMMUNITY_Community 10]]
-- 1 edge to [[_COMMUNITY_Community 105]]
-- 1 edge to [[_COMMUNITY_Community 103]]
-- 1 edge to [[_COMMUNITY_Community 1002]]
-- 1 edge to [[_COMMUNITY_Community 595]]
-- 1 edge to [[_COMMUNITY_Community 63]]
-- 1 edge to [[_COMMUNITY_Community 1426]]
-- 1 edge to [[_COMMUNITY_Community 220]]
-- 1 edge to [[_COMMUNITY_Community 88]]
-- 1 edge to [[_COMMUNITY_Community 127]]
-- 1 edge to [[_COMMUNITY_Community 531]]
-- 1 edge to [[_COMMUNITY_Community 185]]
-- 1 edge to [[_COMMUNITY_Community 507]]
-- 1 edge to [[_COMMUNITY_Community 98]]
-- 1 edge to [[_COMMUNITY_Community 842]]
-- 1 edge to [[_COMMUNITY_Community 943]]
-- 1 edge to [[_COMMUNITY_Community 131]]
-- 1 edge to [[_COMMUNITY_Community 151]]
-- 1 edge to [[_COMMUNITY_Community 36]]
-- 1 edge to [[_COMMUNITY_Community 78]]
+- 1 edge to [[_COMMUNITY_Community 122]]
+- 1 edge to [[_COMMUNITY_Community 1561]]
+- 1 edge to [[_COMMUNITY_Community 1344]]
 - 1 edge to [[_COMMUNITY_Community 13]]
-- 1 edge to [[_COMMUNITY_Community 1412]]
 - 1 edge to [[_COMMUNITY_Community 1131]]
 - 1 edge to [[_COMMUNITY_Community 2006]]
 - 1 edge to [[_COMMUNITY_Community 1946]]
-- 1 edge to [[_COMMUNITY_Community 1971]]
-- 1 edge to [[_COMMUNITY_Community 114]]
 - 1 edge to [[_COMMUNITY_Community 641]]
-- 1 edge to [[_COMMUNITY_Community 562]]
-- 1 edge to [[_COMMUNITY_Community 133]]
+- 1 edge to [[_COMMUNITY_Community 888]]
+- 1 edge to [[_COMMUNITY_Community 792]]
+- 1 edge to [[_COMMUNITY_Community 947]]
+- 1 edge to [[_COMMUNITY_Community 56]]
+- 1 edge to [[_COMMUNITY_Community 120]]
 - 1 edge to [[_COMMUNITY_Community 489]]
+- 1 edge to [[_COMMUNITY_Community 986]]
 - 1 edge to [[_COMMUNITY_Community 70]]
-- 1 edge to [[_COMMUNITY_Community 1344]]
-- 1 edge to [[_COMMUNITY_Community 31]]
 - 1 edge to [[_COMMUNITY_Community 221]]
-- 1 edge to [[_COMMUNITY_Community 592]]
+- 1 edge to [[_COMMUNITY_Community 289]]
+- 1 edge to [[_COMMUNITY_Community 835]]
+- 1 edge to [[_COMMUNITY_Community 452]]
 
 ## Top bridge nodes
-- [[lifespan.py]] - degree 130, connects to 70 communities
-- [[lifespan()_1]] - degree 82, connects to 47 communities
-- [[MiddlewareResult]] - degree 127, connects to 29 communities
-- [[MiddlewareManager]] - degree 185, connects to 27 communities
-- [[middleware.py]] - degree 54, connects to 19 communities
+- [[MiddlewareResult]] - degree 127, connects to 36 communities
+- [[middleware.py]] - degree 54, connects to 27 communities
+- [[Any_18]] - degree 55, connects to 24 communities
+- [[RBACManager]] - degree 49, connects to 24 communities
+- [[LogSanitizer]] - degree 49, connects to 24 communities

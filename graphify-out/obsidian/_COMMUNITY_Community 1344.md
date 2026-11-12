@@ -1,23 +1,24 @@
 ---
 type: community
-members: 10
+members: 11
 ---
 
 # Community 1344
 
-**Members:** 10 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[_rollback()]] - code - scripts/update-agentshroud.sh
-- [[_svc_container()]] - code - scripts/post-deploy-check.sh
-- [[check()]] - code - scripts/post-deploy-check.sh
-- [[post-deploy-check.sh]] - code - scripts/post-deploy-check.sh
-- [[post-deploy-check.sh script]] - code - scripts/post-deploy-check.sh
-- [[restore-backup.sh]] - code - scripts/restore-backup.sh
-- [[restore-backup.sh script]] - code - scripts/restore-backup.sh
-- [[restore_tar_to_volume()]] - code - scripts/restore-backup.sh
-- [[update-agentshroud.sh]] - code - scripts/update-agentshroud.sh
-- [[update-agentshroud.sh script]] - code - scripts/update-agentshroud.sh
+- [[.setup_method()_8]] - code - gateway/tests/test_main_endpoints.py
+- [[.teardown_method()]] - code - gateway/tests/test_main_endpoints.py
+- [[.test_clamav_default_target_passes_allowlist()]] - code - gateway/tests/test_main_endpoints.py
+- [[.test_clamav_invalid_target_returns_400()]] - code - gateway/tests/test_main_endpoints.py
+- [[.test_openscap_default_profile_passes_regex()]] - code - gateway/tests/test_main_endpoints.py
+- [[.test_openscap_invalid_profile_returns_400()]] - code - gateway/tests/test_main_endpoints.py
+- [[.test_openscap_semicolon_profile_returns_400()]] - code - gateway/tests/test_main_endpoints.py
+- [[.test_trivy_default_scan_type_passes_allowlist()]] - code - gateway/tests/test_main_endpoints.py
+- [[.test_trivy_invalid_scan_type_returns_400()]] - code - gateway/tests/test_main_endpoints.py
+- [[Allowlist validation on ClamAV target, Trivy scan type, OpenSCAP profile.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[TestScanParameterAllowlists]] - code - gateway/tests/test_main_endpoints.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,11 +28,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 118]]
 - 1 edge to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 227]]
-- 1 edge to [[_COMMUNITY_Community 547]]
+- 1 edge to [[_COMMUNITY_Community 53]]
+- 1 edge to [[_COMMUNITY_Community 1658]]
 
 ## Top bridge nodes
-- [[post-deploy-check.sh]] - degree 7, connects to 3 communities
-- [[update-agentshroud.sh]] - degree 5, connects to 2 communities
+- [[TestScanParameterAllowlists]] - degree 13, connects to 3 communities

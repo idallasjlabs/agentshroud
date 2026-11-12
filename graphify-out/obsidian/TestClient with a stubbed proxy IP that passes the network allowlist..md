@@ -12,6 +12,6 @@ tags:
 # TestClient with a stubbed proxy IP that passes the network allowlist.
 
 ## Connections
-- [[client()_18]] - `rationale_for` [EXTRACTED]
+- [[client()_19]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_1112

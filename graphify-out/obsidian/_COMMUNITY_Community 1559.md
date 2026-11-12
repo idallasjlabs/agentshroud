@@ -1,21 +1,42 @@
 ---
 type: community
-members: 8
+members: 29
 ---
 
 # Community 1559
 
-**Members:** 8 nodes
+**Members:** 29 nodes
 
 ## Members
+- [[Auth Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
+- [[Common Injection Signatures Detected]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Egress Filter Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
+- [[Error Index]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
 - [[Excessive False Positives]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[Fallback Behavior]] - document - docs/vault/05 - Dependencies/spacy.md
+- [[False Positive (Legitimate Content Blocked)]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[First-Boot Performance]] - document - docs/vault/05 - Dependencies/spacy.md
+- [[HTTP 400 — Prompt Injection Detected]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Model]] - document - docs/vault/05 - Dependencies/spacy.md
 - [[PII Engine Not Initialized]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
 - [[PII Not Being Detected]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
 - [[PII Pipeline Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[PII Pipeline Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[Prompt Injection Blocks_2]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Prompt Injection Blocks_1]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Prompt Injection in Monitor Mode]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Purpose_194]] - document - docs/vault/05 - Dependencies/spacy.md
 - [[Redaction Breaking JSONStructured Data]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[Related Notes_49]] - document - docs/vault/05 - Dependencies/spacy.md
 - [[Related Notes_60]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[Related Notes_61]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Tool Result Injections]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
 - [[Tool Result PII Not Scanned]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[Where Used_5]] - document - docs/vault/05 - Dependencies/spacy.md
+- [[presidio-analyzer]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
+- [[spaCy]] - document - docs/vault/05 - Dependencies/spacy.md
 - [[spaCy Model Issues]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[spacy]] - document - docs/vault/05 - Dependencies/spacy.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +46,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 253]]
+- 2 edges to [[_COMMUNITY_Community 253]]
+- 2 edges to [[_COMMUNITY_Community 333]]
+- 1 edge to [[_COMMUNITY_Community 49]]
+- 1 edge to [[_COMMUNITY_Community 1015]]
+- 1 edge to [[_COMMUNITY_Community 945]]
+- 1 edge to [[_COMMUNITY_Community 946]]
+- 1 edge to [[_COMMUNITY_Community 389]]
+- 1 edge to [[_COMMUNITY_Community 1084]]
+- 1 edge to [[_COMMUNITY_Community 1944]]
 
 ## Top bridge nodes
-- [[PII Pipeline Errors_2]] - degree 8, connects to 1 community
+- [[Error Index]] - degree 9, connects to 4 communities
+- [[presidio-analyzer]] - degree 4, connects to 2 communities
+- [[Auth Errors]] - degree 4, connects to 2 communities
+- [[spacy]] - degree 4, connects to 1 community
+- [[Egress Filter Errors]] - degree 3, connects to 1 community

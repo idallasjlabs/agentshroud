@@ -1,24 +1,25 @@
 ---
 type: community
-members: 11
+members: 12
 ---
 
 # Community 1288
 
-**Members:** 11 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[A real CVE always came from a GHSA advisory, so cve_id implies ghsa_id.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[CRITICAL GUARD no entry `id` may look like a real CVE id.      This is the load]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Every `id` must be a zero-padded ASH-OCLAW-NNN  ASH-HERMES-NNN ref.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[_all_entries()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[cve_id must be either None or a real-looking CVE id — never junk.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[ghsa_id must be either None or a real-looking GHSA id.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[test_cve_id_field_only_holds_real_looking_cve_ids()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_entry_with_cve_id_also_has_ghsa_id()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_every_entry_id_is_synthetic_ash_ref()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_ghsa_id_field_only_holds_real_looking_ghsa_ids()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_no_entry_id_looks_like_a_cve()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[.test_agent_var_resolved_from_registry_dict()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_insert_adds_exactly_n_entries_and_still_parses()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_missing_variable_raises()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_non_list_value_raises()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_openclaw_advisory_does_not_touch_hermes_registry()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[An OpenClaw advisory diffed against the Hermes list yields it as 'new'.]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[Runs against the REAL gatewaysecurityagent_cve_registry.py.      Every registe]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestListLocator]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestLiveRegistryLayout]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestPerAgentIsolation]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[_exec_registry()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[test_sync_cve_registry_ghsa.py]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,11 +29,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 42]]
+- 12 edges to [[_COMMUNITY_Community 55]]
+- 2 edges to [[_COMMUNITY_Community 2052]]
+- 1 edge to [[_COMMUNITY_Community 2123]]
+- 1 edge to [[_COMMUNITY_Community 2133]]
+- 1 edge to [[_COMMUNITY_Community 2029]]
+- 1 edge to [[_COMMUNITY_Community 2134]]
 
 ## Top bridge nodes
-- [[_all_entries()]] - degree 6, connects to 1 community
-- [[test_no_entry_id_looks_like_a_cve()]] - degree 3, connects to 1 community
-- [[test_every_entry_id_is_synthetic_ash_ref()]] - degree 3, connects to 1 community
-- [[test_cve_id_field_only_holds_real_looking_cve_ids()]] - degree 3, connects to 1 community
-- [[test_ghsa_id_field_only_holds_real_looking_ghsa_ids()]] - degree 3, connects to 1 community
+- [[test_sync_cve_registry_ghsa.py]] - degree 13, connects to 6 communities
+- [[_exec_registry()]] - degree 4, connects to 2 communities
+- [[.test_openclaw_advisory_does_not_touch_hermes_registry()]] - degree 4, connects to 1 community
+- [[.test_insert_adds_exactly_n_entries_and_still_parses()]] - degree 3, connects to 1 community
+- [[TestLiveRegistryLayout]] - degree 3, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 216"
-location: "L7650"
+community: "Community 14"
+location: "L7688"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_216
+  - community/Community_14
 ---
 
 # Send deterministic /status summary without model invocation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._send_local_status_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_216
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

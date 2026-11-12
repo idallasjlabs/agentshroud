@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "Community 0"
+community: "Community 72"
 location: "L93"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_0
+  - community/Community_72
 ---
 
 # FileSandboxConfig
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_81]] - `references` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_96]] - `references` [EXTRACTED]
 - [[.monitor_sandbox()]] - `calls` [EXTRACTED]
 - [[.sandbox()]] - `calls` [EXTRACTED]
 - [[.test_default_mode_is_enforce()_5]] - `calls` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[.test_file_sandbox_staging_detection()]] - `calls` [INFERRED]
 - [[.test_monitor_mode_allows_everything()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
@@ -32,7 +32,7 @@ tags:
 - [[TestAgentShroudSourceCodeProtection]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestAuth_1]] - `uses` [INFERRED]
-- [[TestConcurrency]] - `uses` [INFERRED]
+- [[TestConcurrency_1]] - `uses` [INFERRED]
 - [[TestConfigurationProtection]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
@@ -94,4 +94,4 @@ tags:
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_0
+#graphify/code #graphify/INFERRED #community/Community_72

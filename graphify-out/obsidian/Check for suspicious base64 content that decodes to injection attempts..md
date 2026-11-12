@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "rationale"
-community: "Community 344"
+community: "Community 24"
 location: "L653"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_344
+  - community/Community_24
 ---
 
 # Check for suspicious base64 content that decodes to injection attempts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._check_encoded_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_344
+#graphify/rationale #graphify/EXTRACTED #community/Community_24

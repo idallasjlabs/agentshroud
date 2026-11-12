@@ -30,7 +30,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Community 324]]
-- 1 edge to [[_COMMUNITY_Community 1014]]
+- 1 edge to [[_COMMUNITY_Community 333]]
 
 ## Top bridge nodes
 - [[First Time Setup_1]] - degree 13, connects to 2 communities

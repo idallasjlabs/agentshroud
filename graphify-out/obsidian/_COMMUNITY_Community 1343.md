@@ -1,13 +1,14 @@
 ---
 type: community
-members: 12
+members: 15
 ---
 
 # Community 1343
 
-**Members:** 12 nodes
+**Members:** 15 nodes
 
 ## Members
+- [[.__init__()_134]] - code - gateway/security/subagent_governance.py
 - [[._check_budget()]] - code - gateway/security/subagent_governance.py
 - [[.authorize_tool()]] - code - gateway/security/subagent_governance.py
 - [[.record_api_call()]] - code - gateway/security/subagent_governance.py
@@ -20,6 +21,8 @@ members: 12
 - [[Record an LLM API call.]] - rationale - gateway/security/subagent_governance.py
 - [[Record outbound data volume.]] - rationale - gateway/security/subagent_governance.py
 - [[Record token consumption. Returns (within_budget, message).]] - rationale - gateway/security/subagent_governance.py
+- [[SubagentGovernance]] - code - gateway/security/subagent_governance.py
+- [[Unified governance layer for subagent lifecycle.      Wraps SubagentMonitor with]] - rationale - gateway/security/subagent_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,11 +32,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 1209]]
+- 10 edges to [[_COMMUNITY_Community 1209]]
+- 5 edges to [[_COMMUNITY_Community 1284]]
+- 4 edges to [[_COMMUNITY_Community 1782]]
+- 2 edges to [[_COMMUNITY_Community 38]]
+- 1 edge to [[_COMMUNITY_Community 1985]]
+- 1 edge to [[_COMMUNITY_Community 2049]]
+- 1 edge to [[_COMMUNITY_Community 2050]]
+- 1 edge to [[_COMMUNITY_Community 2051]]
 
 ## Top bridge nodes
+- [[SubagentGovernance]] - degree 30, connects to 8 communities
 - [[._check_budget()]] - degree 8, connects to 1 community
 - [[.authorize_tool()]] - degree 4, connects to 1 community
-- [[.record_tokens()]] - degree 3, connects to 1 community
-- [[.record_api_call()]] - degree 3, connects to 1 community
-- [[.record_tool_call()]] - degree 3, connects to 1 community
+- [[.__init__()_134]] - degree 2, connects to 1 community

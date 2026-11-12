@@ -29,7 +29,7 @@ members: 33
 - [[.total_appended()]] - code - gateway/proxy/mcp_audit.py
 - [[.verify_chain()]] - code - gateway/proxy/mcp_audit.py
 - [[A single MCP tool call audit entry.]] - rationale - gateway/proxy/mcp_audit.py
-- [[Any_15]] - code - gateway/proxy/mcp_audit.py
+- [[Any_25]] - code - gateway/proxy/mcp_audit.py
 - [[Audit trail for MCP tool calls, integrated with SHA-256 hash chain.]] - rationale - gateway/proxy/mcp_audit.py
 - [[Compute hash chain values. Returns (content_hash, chain_hash).]] - rationale - gateway/proxy/mcp_audit.py
 - [[Generate an MCP audit report summary.]] - rationale - gateway/proxy/mcp_audit.py
@@ -50,21 +50,24 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 28 edges to [[_COMMUNITY_Community 64]]
-- 22 edges to [[_COMMUNITY_Community 132]]
-- 17 edges to [[_COMMUNITY_Community 54]]
+- 26 edges to [[_COMMUNITY_Community 64]]
+- 16 edges to [[_COMMUNITY_Community 132]]
+- 9 edges to [[_COMMUNITY_Community 230]]
+- 8 edges to [[_COMMUNITY_Community 54]]
+- 8 edges to [[_COMMUNITY_Community 140]]
 - 5 edges to [[_COMMUNITY_Community 329]]
-- 2 edges to [[_COMMUNITY_Community 941]]
-- 2 edges to [[_COMMUNITY_Community 1970]]
+- 2 edges to [[_COMMUNITY_Community 2038]]
 - 1 edge to [[_COMMUNITY_Community 9]]
+- 1 edge to [[_COMMUNITY_Community 232]]
 - 1 edge to [[_COMMUNITY_Community 24]]
-- 1 edge to [[_COMMUNITY_Community 140]]
 - 1 edge to [[_COMMUNITY_Community 1942]]
+- 1 edge to [[_COMMUNITY_Community 941]]
+- 1 edge to [[_COMMUNITY_Community 1970]]
+- 1 edge to [[_COMMUNITY_Community 2005]]
+- 1 edge to [[_COMMUNITY_Community 2011]]
 - 1 edge to [[_COMMUNITY_Community 2071]]
-- 1 edge to [[_COMMUNITY_Community 2038]]
-- 1 edge to [[_COMMUNITY_Community 59]]
 
 ## Top bridge nodes
-- [[MCPAuditTrail]] - degree 90, connects to 11 communities
+- [[MCPAuditTrail]] - degree 90, connects to 15 communities
 - [[TestAuditTrailBounded]] - degree 20, connects to 6 communities
 - [[MCPAuditEntry]] - degree 11, connects to 1 community

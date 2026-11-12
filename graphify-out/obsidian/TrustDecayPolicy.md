@@ -12,7 +12,7 @@ tags:
 # TrustDecayPolicy
 
 ## Connections
-- [[.__init__()_68]] - `references` [EXTRACTED]
+- [[.__init__()_83]] - `references` [EXTRACTED]
 - [[.__post_init__()_3]] - `method` [EXTRACTED]
 - [[.build_full_mesh()]] - `references` [EXTRACTED]
 - [[Configuration for how incidents decay peer trust scores.      Attributes]] - `rationale_for` [EXTRACTED]

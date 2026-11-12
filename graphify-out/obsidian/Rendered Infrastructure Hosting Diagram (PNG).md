@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-04-infrastructure-hosting.png"
 type: "image"
-community: "Community 493"
+community: "Community 466"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_493
+  - community/Community_466
 ---
 
 # Rendered Infrastructure Hosting Diagram (PNG)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Infrastructure Diagram — Hosting & Servers]] - `implements` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_493
+#graphify/image #graphify/EXTRACTED #community/Community_466

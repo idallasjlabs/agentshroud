@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "Community 577"
+community: "Community 1219"
 location: "L119"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_577
+  - community/Community_1219
 ---
 
 # Security Controls
@@ -25,4 +25,4 @@ tags:
 - [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
 - [[approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_577
+#graphify/document #graphify/EXTRACTED #community/Community_1219

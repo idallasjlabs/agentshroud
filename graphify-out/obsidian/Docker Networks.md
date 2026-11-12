@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/networks.md"
 type: "document"
-community: "Community 628"
+community: "Community 1569"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_628
+  - community/Community_1569
 ---
 
 # Docker Networks
@@ -19,4 +19,4 @@ tags:
 - [[agentshroud-isolated]] - `contains` [EXTRACTED]
 - [[networks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_628
+#graphify/document #graphify/EXTRACTED #community/Community_1569

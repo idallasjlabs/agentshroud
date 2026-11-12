@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 2378"
+community: "Community 4"
 location: "L2083"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2378
+  - community/Community_4
 ---
 
 # Conceptual policy questions that mention a URL should not be treated as fetch re
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_web_access_policy_question_with_url_does_not_queue_preflight()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2378
+#graphify/rationale #graphify/EXTRACTED #community/Community_4

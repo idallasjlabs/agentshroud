@@ -2,7 +2,7 @@
 source_file: "gateway/soc/router.py"
 type: "code"
 community: "Community 10"
-location: "L52"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,11 @@ tags:
 # _app_state()
 
 ## Connections
+- [[_decide_approval()]] - `calls` [EXTRACTED]
+- [[_edge_service()]] - `calls` [EXTRACTED]
+- [[_edge_snapshot()]] - `calls` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]
+- [[_worst_lockdown()]] - `calls` [EXTRACTED]
 - [[acknowledge_config_integrity()]] - `calls` [EXTRACTED]
 - [[add_group_member()_1]] - `calls` [EXTRACTED]
 - [[approve_egress()]] - `calls` [EXTRACTED]
@@ -51,6 +55,7 @@ tags:
 - [[killswitch_disconnect()]] - `calls` [EXTRACTED]
 - [[killswitch_freeze()]] - `calls` [EXTRACTED]
 - [[killswitch_shutdown()]] - `calls` [EXTRACTED]
+- [[list_agents()_1]] - `calls` [EXTRACTED]
 - [[list_bots()]] - `calls` [EXTRACTED]
 - [[list_delegations()]] - `calls` [EXTRACTED]
 - [[list_groups()]] - `calls` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "Community 2051"
+community: "Community 50"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2051
+  - community/Community_50
 ---
 
 # sync_client()
@@ -15,4 +15,4 @@ tags:
 - [[Sync TestClient for WebSocket tests_1]] - `rationale_for` [EXTRACTED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2051
+#graphify/code #graphify/EXTRACTED #community/Community_50

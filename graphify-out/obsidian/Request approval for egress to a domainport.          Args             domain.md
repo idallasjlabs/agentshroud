@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Community 23"
+community: "Community 80"
 location: "L359"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_23
+  - community/Community_80
 ---
 
 # Request approval for egress to a domain/port.          Args:             domain:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.request_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_23
+#graphify/rationale #graphify/EXTRACTED #community/Community_80

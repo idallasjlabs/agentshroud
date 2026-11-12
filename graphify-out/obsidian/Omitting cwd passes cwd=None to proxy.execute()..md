@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "rationale"
-community: "Community 80"
+community: "Community 50"
 location: "L216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_80
+  - community/Community_50
 ---
 
 # Omitting cwd passes cwd=None to proxy.execute().
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_ssh_exec_cwd_none_forwards_none()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_80
+#graphify/rationale #graphify/EXTRACTED #community/Community_50

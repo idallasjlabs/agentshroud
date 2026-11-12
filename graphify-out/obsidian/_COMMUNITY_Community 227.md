@@ -45,8 +45,8 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_Community 118]]
 - 2 edges to [[_COMMUNITY_Community 139]]
 - 1 edge to [[_COMMUNITY_Community 66]]
-- 1 edge to [[_COMMUNITY_Community 261]]
-- 1 edge to [[_COMMUNITY_Community 1344]]
+- 1 edge to [[_COMMUNITY_Community 194]]
+- 1 edge to [[_COMMUNITY_Community 547]]
 
 ## Top bridge nodes
 - [[check-vendor-compat.sh]] - degree 15, connects to 5 communities

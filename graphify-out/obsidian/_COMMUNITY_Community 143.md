@@ -1,39 +1,31 @@
 ---
 type: community
-members: 37
+members: 29
 ---
 
 # Community 143
 
-**Members:** 37 nodes
+**Members:** 29 nodes
 
 ## Members
-- [[Add security headers to all responses (defense-in-depth).      Also catches Pyth]] - rationale - gateway/ingest_api/main.py
-- [[Log all incoming requests      Never logs request bodies (may contain PII).]] - rationale - gateway/ingest_api/main.py
+- [[ApprovalDecision]] - code - gateway/ingest_api/models.py
 - [[Reject request bodies larger than 1MB before parsing.      Checks Content-Length]] - rationale - gateway/ingest_api/main.py
 - [[Test ApprovalDecision with valid data]] - rationale - gateway/tests/test_main_simple.py
 - [[Test ApprovalRequest with valid data]] - rationale - gateway/tests/test_main_simple.py
 - [[Test FastAPI lifespan initialization]] - rationale - gateway/tests/test_main_simple.py
-- [[Test ForwardRequest rejects empty content]] - rationale - gateway/tests/test_main_simple.py
-- [[Test ForwardRequest rejects invalid source]] - rationale - gateway/tests/test_main_simple.py
-- [[Test ForwardRequest with valid data]] - rationale - gateway/tests/test_main_simple.py
 - [[Test global exception handler]] - rationale - gateway/tests/test_main_simple.py
 - [[Test global exception handler with HTTPException]] - rationale - gateway/tests/test_main_simple.py
 - [[Test request logging middleware]] - rationale - gateway/tests/test_main_simple.py
+- [[User's decision on a pending approval request]] - rationale - gateway/ingest_api/models.py
 - [[limit_request_body re-injects a fully-read chunked body and calls downstream.]] - rationale - gateway/tests/test_main_simple.py
 - [[limit_request_body rejects chunked bodies over 1MB with 413.]] - rationale - gateway/tests/test_main_simple.py
 - [[limit_request_body returns a clean 400 when the client drops mid-upload.      Wi]] - rationale - gateway/tests/test_main_simple.py
 - [[limit_request_body()]] - code - gateway/ingest_api/main.py
-- [[log_requests()]] - code - gateway/ingest_api/main.py
 - [[security_headers_middleware adds expected security headers.]] - rationale - gateway/tests/test_main_simple.py
 - [[security_headers_middleware re-raises BaseExceptions that are not groups.]] - rationale - gateway/tests/test_main_simple.py
 - [[security_headers_middleware returns 500 when anyio BaseExceptionGroup is raised.]] - rationale - gateway/tests/test_main_simple.py
-- [[security_headers_middleware()]] - code - gateway/ingest_api/main.py
 - [[test_approval_decision_valid()]] - code - gateway/tests/test_main_simple.py
 - [[test_approval_request_valid()]] - code - gateway/tests/test_main_simple.py
-- [[test_forward_request_valid()]] - code - gateway/tests/test_main_simple.py
-- [[test_forward_request_validation_empty_content()]] - code - gateway/tests/test_main_simple.py
-- [[test_forward_request_validation_invalid_source()]] - code - gateway/tests/test_main_simple.py
 - [[test_global_exception_handler()]] - code - gateway/tests/test_main_simple.py
 - [[test_global_exception_handler_http_exception()]] - code - gateway/tests/test_main_simple.py
 - [[test_lifespan_initialization()]] - code - gateway/tests/test_main_simple.py
@@ -54,16 +46,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 254]]
+- 12 edges to [[_COMMUNITY_Community 978]]
 - 4 edges to [[_COMMUNITY_Community 92]]
-- 3 edges to [[_COMMUNITY_Community 978]]
-- 2 edges to [[_COMMUNITY_Community 10]]
-- 2 edges to [[_COMMUNITY_Community 68]]
-- 2 edges to [[_COMMUNITY_Community 707]]
+- 3 edges to [[_COMMUNITY_Community 10]]
+- 2 edges to [[_COMMUNITY_Community 30]]
+- 1 edge to [[_COMMUNITY_Community 49]]
 
 ## Top bridge nodes
-- [[test_main_simple.py]] - degree 22, connects to 4 communities
-- [[limit_request_body()]] - degree 8, connects to 3 communities
-- [[security_headers_middleware()]] - degree 8, connects to 3 communities
-- [[log_requests()]] - degree 5, connects to 2 communities
-- [[test_global_exception_handler()]] - degree 3, connects to 1 community
+- [[test_main_simple.py]] - degree 22, connects to 3 communities
+- [[ApprovalDecision]] - degree 6, connects to 3 communities
+- [[limit_request_body()]] - degree 8, connects to 2 communities
+- [[test_global_exception_handler_http_exception()]] - degree 4, connects to 2 communities
+- [[test_log_requests_middleware()]] - degree 3, connects to 1 community

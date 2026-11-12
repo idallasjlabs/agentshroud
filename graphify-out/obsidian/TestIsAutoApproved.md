@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "Community 25"
+community: "Community 50"
 location: "L106"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_25
+  - community/Community_50
 ---
 
 # TestIsAutoApproved
@@ -21,4 +21,4 @@ tags:
 - [[SSHResult]] - `uses` [INFERRED]
 - [[test_ssh_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_25
+#graphify/code #graphify/INFERRED #community/Community_50

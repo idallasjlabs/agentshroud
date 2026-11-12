@@ -1,15 +1,16 @@
 ---
 type: community
-members: 2
+members: 3
 ---
 
 # Community 2347
 
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[.test_urlencoded_plain_no_reply_is_still_filtered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Form payload plain NO_REPLY should map to deterministic wait guidance.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_gates_pass_with_full_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_gates_zero_affected_domains()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestMandatoryGates]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +20,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 626]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 845]]
+- 2 edges to [[_COMMUNITY_Community 219]]
+- 1 edge to [[_COMMUNITY_Community 431]]
 
 ## Top bridge nodes
-- [[.test_urlencoded_plain_no_reply_is_still_filtered()]] - degree 4, connects to 3 communities
+- [[TestMandatoryGates]] - degree 3, connects to 1 community
+- [[.test_gates_zero_affected_domains()]] - degree 2, connects to 1 community
+- [[.test_gates_pass_with_full_evidence()]] - degree 2, connects to 1 community

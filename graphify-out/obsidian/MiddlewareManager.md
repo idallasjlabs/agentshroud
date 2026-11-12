@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "Community 72"
+community: "Community 1"
 location: "L86"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_72
+  - community/Community_1
 ---
 
 # MiddlewareManager
 
 ## Connections
-- [[.__init__()_14]] - `method` [EXTRACTED]
+- [[.__init__()_29]] - `method` [EXTRACTED]
 - [[._analyze_request_for_rbac()]] - `method` [EXTRACTED]
 - [[._check_cross_session_access()]] - `method` [EXTRACTED]
 - [[._check_rbac_permissions()]] - `method` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[._is_path_allowed_for_user()]] - `method` [EXTRACTED]
 - [[._is_tool_call_request()]] - `method` [EXTRACTED]
 - [[._record_guard_init_failure()]] - `method` [EXTRACTED]
-- [[.close()_6]] - `method` [EXTRACTED]
+- [[.close()_8]] - `method` [EXTRACTED]
 - [[.filter_outbound_response()]] - `method` [EXTRACTED]
 - [[.get_alert_dispatcher()]] - `method` [EXTRACTED]
 - [[.get_dns_filter()]] - `method` [EXTRACTED]
@@ -98,7 +98,7 @@ tags:
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
-- [[Request_1]] - `uses` [INFERRED]
+- [[Request_2]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
 - [[SSHExecRequest]] - `uses` [INFERRED]
@@ -198,4 +198,4 @@ tags:
 - [[test_session_isolation.py]] - `imports` [EXTRACTED]
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_72
+#graphify/code #graphify/INFERRED #community/Community_1

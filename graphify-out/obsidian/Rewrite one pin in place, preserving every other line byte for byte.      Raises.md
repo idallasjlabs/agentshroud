@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/auto_remediate_cves.py"
 type: "rationale"
-community: "Community 261"
+community: "Community 194"
 location: "L106"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_261
+  - community/Community_194
 ---
 
 # Rewrite one pin in place, preserving every other line byte for byte.      Raises
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[write_pin()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_261
+#graphify/rationale #graphify/EXTRACTED #community/Community_194

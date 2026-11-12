@@ -1,49 +1,61 @@
 ---
 type: community
-members: 36
+members: 48
 ---
 
 # Community 104
 
-**Members:** 36 nodes
+**Members:** 48 nodes
 
 ## Members
-- [[.test_config_with_tool_result_pii()]] - code - gateway/tests/test_tool_result_pii.py
-- [[A missing file (mtime -1.0) must not trigger a reload (no reject storm).]] - rationale - gateway/tests/test_config_hot_reload.py
-- [[A structurally-valid YAML that violates the pydantic schema is rejected.]] - rationale - gateway/tests/test_config_hot_reload.py
-- [[Background mtime-poll watcher reload the config when the file changes.      Pol]] - rationale - gateway/ingest_api/config.py
-- [[Complete gateway configuration]] - rationale - gateway/ingest_api/config.py
-- [[Copy only the reloadable-field subset from ``new`` onto ``current`` in place.]] - rationale - gateway/ingest_api/config.py
-- [[Every GatewayConfig field is classified exactly once, disjointly.]] - rationale - gateway/tests/test_config_hot_reload.py
-- [[File mtime changes but no reloadable field differs — reload still succeeds.]] - rationale - gateway/tests/test_config_hot_reload.py
-- [[GatewayConfig_1]] - code - gateway/ingest_api/config.py
-- [[GatewayConfig_3]] - code - gateway/tests/test_config_hot_reload.py
-- [[Path_1]] - code - gateway/ingest_api/config.py
-- [[Path_25]] - code - gateway/tests/test_config_hot_reload.py
-- [[Re-parse and validate ``config_path``; atomically swap in reloadable fields.]] - rationale - gateway/ingest_api/config.py
-- [[Return the file mtime, or -1.0 if the file is missing (treated as no-op).]] - rationale - gateway/ingest_api/config.py
-- [[Test that configuration includes tool result PII settings]] - rationale - gateway/tests/test_tool_result_pii.py
-- [[_default_mtime returns the file mtime, and -1.0 when the file is absent.]] - rationale - gateway/tests/test_config_hot_reload.py
-- [[_default_mtime()]] - code - gateway/ingest_api/config.py
-- [[_load()]] - code - gateway/tests/test_config_hot_reload.py
-- [[_write()]] - code - gateway/tests/test_config_hot_reload.py
-- [[apply_reloadable_config()]] - code - gateway/ingest_api/config.py
-- [[config_watcher()]] - code - gateway/ingest_api/config.py
-- [[reload_config()]] - code - gateway/ingest_api/config.py
-- [[resolve_config_path honors the explicit arg and AGENTSHROUD_CONFIG env.]] - rationale - gateway/tests/test_config_hot_reload.py
-- [[test_apply_swaps_only_reloadable_fields()]] - code - gateway/tests/test_config_hot_reload.py
-- [[test_config_hot_reload.py]] - code - gateway/tests/test_config_hot_reload.py
-- [[test_default_mtime_reads_real_file_and_handles_missing()]] - code - gateway/tests/test_config_hot_reload.py
-- [[test_field_partition_is_disjoint_and_covers_model()]] - code - gateway/tests/test_config_hot_reload.py
-- [[test_reload_applies_valid_change()]] - code - gateway/tests/test_config_hot_reload.py
-- [[test_reload_missing_file_keeps_last_good()]] - code - gateway/tests/test_config_hot_reload.py
-- [[test_reload_no_reloadable_field_changed()]] - code - gateway/tests/test_config_hot_reload.py
-- [[test_reload_rejects_invalid_and_keeps_last_good()]] - code - gateway/tests/test_config_hot_reload.py
-- [[test_reload_rejects_schema_violation_and_keeps_last_good()]] - code - gateway/tests/test_config_hot_reload.py
-- [[test_resolve_config_path_explicit_and_env()]] - code - gateway/tests/test_config_hot_reload.py
-- [[test_watcher_ignores_missing_file()]] - code - gateway/tests/test_config_hot_reload.py
-- [[test_watcher_reloads_on_mtime_change()]] - code - gateway/tests/test_config_hot_reload.py
-- [[test_watcher_stops_on_event()]] - code - gateway/tests/test_config_hot_reload.py
+- [[A sequence tagged ``!override`` — replaces instead of merging.]] - rationale - gateway/tests/test_edge_network_isolation.py
+- [[Any_79]] - code - gateway/tests/test_edge_network_isolation.py
+- [[IPv4Network]] - code - gateway/tests/test_edge_network_isolation.py
+- [[Minimal compose merge mappings deep-merge, ``!override`` replaces,     ``enviro]] - rationale - gateway/tests/test_edge_network_isolation.py
+- [[Node]] - code - gateway/tests/test_edge_network_isolation.py
+- [[Normalise a compose port (short or long syntax) to host_ippublishedtarget.]] - rationale - gateway/tests/test_edge_network_isolation.py
+- [[Path_32]] - code - gateway/tests/test_edge_network_isolation.py
+- [[SafeLoader]] - code - gateway/tests/test_edge_network_isolation.py
+- [[The signed manifest and vendor profiles must reach the gateway at the path     d]] - rationale - gateway/tests/test_edge_network_isolation.py
+- [[_ComposeLoader]] - code - gateway/tests/test_edge_network_isolation.py
+- [[_Override]] - code - gateway/tests/test_edge_network_isolation.py
+- [[_add_env()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[_compose()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[_env_key()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[_environment()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[_load()_1]] - code - gateway/tests/test_edge_network_isolation.py
+- [[_merge()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[_networks()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[_published()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[_strip()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[_subnets()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[_svc()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[check_dmz_internal()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[check_dmz_members()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[check_dmz_subnet_unique()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[check_edge_cap_drop_all()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[check_edge_no_new_privileges_default_seccomp()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[check_edge_no_published_ports()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[check_edge_no_volumes()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[check_edge_non_root()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[check_edge_on_dmz_only()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[check_edge_read_only()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[check_edge_secrets()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[check_forwarder_targets_edge()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[check_gateway_edge_port_loopback_only()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[check_gateway_keeps_dual_membership()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[check_issuer_matches()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[check_proxy_allowlist_excludes_dmz()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[list]] - code
+- [[service.py reads AGENTSHROUD_EDGE_PKE_FEEDS; without the passthrough the     pke]] - rationale - gateway/tests/test_edge_network_isolation.py
+- [[test_check_fails_when_control_removed()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[test_dev_and_prod_dmz_subnets_differ()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[test_dev_override_renames_edge_and_retargets_forwarder()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[test_edge_network_isolation.py]] - code - gateway/tests/test_edge_network_isolation.py
+- [[test_every_check_has_a_mutation()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[test_gateway_mounts_edge_config_read_only()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[test_gateway_receives_pke_feed_list()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[test_isolation_control_holds()]] - code - gateway/tests/test_edge_network_isolation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,26 +63,3 @@ members: 36
 TABLE source_file, type FROM #community/Community_104
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 12 edges to [[_COMMUNITY_Community 72]]
-- 10 edges to [[_COMMUNITY_Community 80]]
-- 9 edges to [[_COMMUNITY_Community 28]]
-- 8 edges to [[_COMMUNITY_Community 707]]
-- 8 edges to [[_COMMUNITY_Community 50]]
-- 5 edges to [[_COMMUNITY_Community 7]]
-- 5 edges to [[_COMMUNITY_Community 35]]
-- 4 edges to [[_COMMUNITY_Community 49]]
-- 4 edges to [[_COMMUNITY_Community 105]]
-- 4 edges to [[_COMMUNITY_Community 541]]
-- 2 edges to [[_COMMUNITY_Community 34]]
-- 1 edge to [[_COMMUNITY_Community 10]]
-- 1 edge to [[_COMMUNITY_Community 138]]
-- 1 edge to [[_COMMUNITY_Community 532]]
-
-## Top bridge nodes
-- [[GatewayConfig_1]] - degree 65, connects to 14 communities
-- [[Path_1]] - degree 8, connects to 5 communities
-- [[test_config_hot_reload.py]] - degree 21, connects to 2 communities
-- [[reload_config()]] - degree 13, connects to 2 communities
-- [[config_watcher()]] - degree 11, connects to 2 communities

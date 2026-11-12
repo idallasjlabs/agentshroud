@@ -1,23 +1,18 @@
 ---
 type: community
-members: 90
+members: 84
 ---
 
 # Community 1278
 
-**Members:** 90 nodes
+**Members:** 84 nodes
 
 ## Members
-- [[.__aenter__()_3]] - code - gateway/tests/test_llm_proxy.py
-- [[.__aexit__()_3]] - code - gateway/tests/test_llm_proxy.py
-- [[.__init__()_24]] - code - gateway/proxy/llm_proxy.py
-- [[.__init__()_170]] - code - gateway/tests/test_llm_proxy.py
-- [[.__init__()_171]] - code - gateway/tests/test_llm_proxy.py
-- [[.__init__()_172]] - code - gateway/tests/test_llm_proxy.py
+- [[.__init__()_39]] - code - gateway/proxy/llm_proxy.py
+- [[.__init__()_191]] - code - gateway/tests/test_llm_proxy.py
+- [[.__init__()_192]] - code - gateway/tests/test_llm_proxy.py
 - [[._flatten_fieldflare_schema()]] - code - gateway/proxy/llm_proxy.py
 - [[._merge_object_schemas()]] - code - gateway/proxy/llm_proxy.py
-- [[.aiter_bytes()]] - code - gateway/tests/test_llm_proxy.py
-- [[.aread()]] - code - gateway/tests/test_llm_proxy.py
 - [[.block_credentials()_1]] - code - gateway/tests/test_llm_proxy.py
 - [[.can_use_tool()_1]] - code - gateway/tests/test_llm_proxy.py
 - [[.filter_xml_blocks()_1]] - code - gateway/tests/test_llm_proxy.py
@@ -54,7 +49,6 @@ members: 90
 - [[Union several object schemas into one (see _flatten_fieldflare_schema).]] - rationale - gateway/proxy/llm_proxy.py
 - [[_FakeSanitizer]] - code - gateway/tests/test_llm_proxy.py
 - [[_FakeToolACL]] - code - gateway/tests/test_llm_proxy.py
-- [[_HeadFakeResponse]] - code - gateway/tests/test_llm_proxy.py
 - [[_TrackingInjector]] - code - gateway/tests/test_llm_proxy.py
 - [[_is_connect_error matches connection-level failures only.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[_make_fake_urlopen()]] - code - gateway/tests/test_llm_proxy.py
@@ -108,20 +102,20 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 27 edges to [[_COMMUNITY_Community 1787]]
-- 8 edges to [[_COMMUNITY_Community 53]]
+- 10 edges to [[_COMMUNITY_Community 53]]
 - 7 edges to [[_COMMUNITY_Community 129]]
-- 5 edges to [[_COMMUNITY_Community 360]]
 - 4 edges to [[_COMMUNITY_Community 208]]
+- 3 edges to [[_COMMUNITY_Community 361]]
 - 3 edges to [[_COMMUNITY_Community 251]]
-- 2 edges to [[_COMMUNITY_Community 72]]
+- 3 edges to [[_COMMUNITY_Community 360]]
+- 2 edges to [[_COMMUNITY_Community 7]]
 - 2 edges to [[_COMMUNITY_Community 5]]
 - 2 edges to [[_COMMUNITY_Community 1058]]
-- 1 edge to [[_COMMUNITY_Community 361]]
 - 1 edge to [[_COMMUNITY_Community 1943]]
 - 1 edge to [[_COMMUNITY_Community 1127]]
 
 ## Top bridge nodes
-- [[LLMProxy]] - degree 89, connects to 10 communities
+- [[LLMProxy]] - degree 89, connects to 11 communities
 - [[test_llm_proxy.py]] - degree 43, connects to 2 communities
 - [[test_gemini_via_openai_path.py]] - degree 5, connects to 2 communities
 - [[_FakeSanitizer]] - degree 25, connects to 1 community

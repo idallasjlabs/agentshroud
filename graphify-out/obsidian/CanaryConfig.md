@@ -12,7 +12,7 @@ tags:
 # CanaryConfig
 
 ## Connections
-- [[.__init__()_60]] - `references` [EXTRACTED]
+- [[.__init__()_75]] - `references` [EXTRACTED]
 - [[.test_custom_config()_1]] - `calls` [EXTRACTED]
 - [[.test_no_canaries()]] - `calls` [EXTRACTED]
 - [[.test_scan_response_no_block_when_block_disabled()]] - `calls` [EXTRACTED]

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_container_dns_check.py"
+source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "Community 1316"
-location: "L45"
+community: "Community 50"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1316
+  - community/Community_50
 ---
 
 # Path
 
 ## Connections
-- [[_block()]] - `references` [EXTRACTED]
-- [[_run()_1]] - `references` [EXTRACTED]
+- [[GatewayConfig_1]] - `uses` [INFERRED]
+- [[_load()]] - `references` [EXTRACTED]
+- [[_write()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1316
+#graphify/code #graphify/EXTRACTED #community/Community_50

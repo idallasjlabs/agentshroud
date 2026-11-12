@@ -12,6 +12,6 @@ tags:
 # Test thread safety and race conditions in security modules.
 
 ## Connections
-- [[TestConcurrency]] - `rationale_for` [EXTRACTED]
+- [[TestConcurrency_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_0

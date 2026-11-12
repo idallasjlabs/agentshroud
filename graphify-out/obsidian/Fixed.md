@@ -2,7 +2,7 @@
 source_file: "CHANGELOG.md"
 type: "document"
 community: "Community 773"
-location: "L34"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -29,6 +29,7 @@ tags:
 - [[1.5.2 (2026-08-23)]] - `contains` [EXTRACTED]
 - [[1.5.3 (2026-08-23)]] - `contains` [EXTRACTED]
 - [[1.6.0 (2026-08-28)]] - `contains` [EXTRACTED]
+- [[Unreleased]] - `contains` [EXTRACTED]
 - [[Unreleased — feathttp-connect-proxy + featcredential-isolation]] - `contains` [EXTRACTED]
 - [[Unreleased — featv0.8.0-enforcement-hardening (session 3 — 2026-03-15)]] - `contains` [EXTRACTED]
 

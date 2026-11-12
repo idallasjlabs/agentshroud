@@ -1,11 +1,11 @@
 ---
 type: community
-members: 100
+members: 98
 ---
 
 # Community 46
 
-**Members:** 100 nodes
+**Members:** 98 nodes
 
 ## Members
 - [[usetellasktalk toswitch to... modelagent - ('model', gateway     mo]] - rationale - gateway/tests/test_voice_gateway.py
@@ -43,7 +43,6 @@ members: 100
 - [[When OUTPUT_SAMPLE_RATE (24000, Kokoro native) != TARGET_SAMPLE_RATE     (16000)]] - rationale - gateway/tests/test_voice_gateway.py
 - [[When _VG_AUTH_TOKEN is empty, any connection is accepted (dev  backward compat)]] - rationale - gateway/tests/test_voice_gateway.py
 - [[When secret file is absent, _GATEWAY_TOKEN falls back to GATEWAY_AUTH_TOKEN env]] - rationale - gateway/tests/test_voice_gateway.py
-- [[When the LLM raises in the 'direct' agent path       - the user message appende]] - rationale - gateway/tests/test_voice_gateway.py
 - [[When the STT→LLM→TTS pipeline raises, the inner exception handler must       1.]] - rationale - gateway/tests/test_voice_gateway.py
 - [[When the WS dirty-closes (code 1006) before the initial _send_state(IDLE) frame]] - rationale - gateway/tests/test_voice_gateway.py
 - [[_GATEWAY_TOKEN is read from the secret file when it exists.]] - rationale - gateway/tests/test_voice_gateway.py
@@ -100,7 +99,6 @@ members: 100
 - [[test_ws_connectionclosed_error_logs_info_no_traceback()]] - code - gateway/tests/test_voice_gateway.py
 - [[test_ws_connectionclosed_ok_logs_info_no_traceback()]] - code - gateway/tests/test_voice_gateway.py
 - [[test_ws_default_agent_is_direct()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_direct_agent_pipeline_error_pops_history_and_recovery_send_fails()]] - code - gateway/tests/test_voice_gateway.py
 - [[test_ws_dirty_close_before_initial_state_is_handled_cleanly()]] - code - gateway/tests/test_voice_gateway.py
 - [[test_ws_pipeline_error_logs_and_recovers_to_idle()]] - code - gateway/tests/test_voice_gateway.py
 - [[test_ws_rejects_missing_token()]] - code - gateway/tests/test_voice_gateway.py
@@ -120,17 +118,17 @@ SORT file.name ASC
 - 31 edges to [[_COMMUNITY_Community 101]]
 - 9 edges to [[_COMMUNITY_Community 77]]
 - 8 edges to [[_COMMUNITY_Community 1006]]
-- 6 edges to [[_COMMUNITY_Community 1127]]
 - 6 edges to [[_COMMUNITY_Community 846]]
 - 6 edges to [[_COMMUNITY_Community 688]]
+- 5 edges to [[_COMMUNITY_Community 1127]]
+- 1 edge to [[_COMMUNITY_Community 181]]
 - 1 edge to [[_COMMUNITY_Community 161]]
 - 1 edge to [[_COMMUNITY_Community 847]]
 - 1 edge to [[_COMMUNITY_Community 851]]
-- 1 edge to [[_COMMUNITY_Community 181]]
 
 ## Top bridge nodes
-- [[test_voice_gateway.py]] - degree 115, connects to 8 communities
-- [[test_ws_direct_agent_pipeline_error_pops_history_and_recovery_send_fails()]] - degree 4, connects to 2 communities
+- [[test_voice_gateway.py]] - degree 115, connects to 9 communities
 - [[_run_disconnect_test()]] - degree 5, connects to 1 community
 - [[test_ws_pipeline_error_logs_and_recovers_to_idle()]] - degree 3, connects to 1 community
 - [[test_ws_dirty_close_before_initial_state_is_handled_cleanly()]] - degree 3, connects to 1 community
+- [[test_listen_without_end_times_out()]] - degree 3, connects to 1 community

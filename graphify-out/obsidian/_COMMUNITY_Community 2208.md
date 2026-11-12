@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Isaiah's Persona Package (IDENTITY.mdSOUL.mdUSER.md)]] - concept - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Owner vs Bot Telegram Identity Separation]] - concept - docs/architecture/IDENTITY.md
-- [[Slack Socket Mode Integration Architecture]] - concept - docs/setup-slack.md
-- [[Telegram Bot Setup (BotFather token + gateway config)]] - concept - docs/setup-telegram.md
-- [[Trust-Differentiated Processing (RBAC tiers)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Create a PromptProtection instance for testing.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Sample protected content for testing.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[prompt_protection()]] - code - gateway/tests/test_prompt_protection.py
+- [[sample_protected_content()]] - code - gateway/tests/test_prompt_protection.py
+- [[test_prompt_protection.py]] - code - gateway/tests/test_prompt_protection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +22,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 581]]
+- 2 edges to [[_COMMUNITY_Community 793]]
+- 1 edge to [[_COMMUNITY_Community 351]]
 
 ## Top bridge nodes
-- [[Trust-Differentiated Processing (RBAC tiers)]] - degree 2, connects to 1 community
+- [[test_prompt_protection.py]] - degree 4, connects to 2 communities
+- [[prompt_protection()]] - degree 3, connects to 1 community

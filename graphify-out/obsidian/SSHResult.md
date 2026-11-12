@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "Community 80"
+community: "Community 50"
 location: "L26"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_80
+  - community/Community_50
 ---
 
 # SSHResult
@@ -33,9 +33,9 @@ tags:
 - [[TestSSHRequireApprovalFalse]] - `uses` [INFERRED]
 - [[TestSSHValidateCwd]] - `uses` [INFERRED]
 - [[TestValidateCommand]] - `uses` [INFERRED]
-- [[__init__.py_12]] - `imports` [EXTRACTED]
+- [[__init__.py_13]] - `imports` [EXTRACTED]
 - [[proxy.py]] - `contains` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_80
+#graphify/code #graphify/INFERRED #community/Community_50

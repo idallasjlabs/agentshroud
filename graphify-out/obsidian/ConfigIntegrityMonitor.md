@@ -12,7 +12,7 @@ tags:
 # ConfigIntegrityMonitor
 
 ## Connections
-- [[.__init__()_63]] - `method` [EXTRACTED]
+- [[.__init__()_78]] - `method` [EXTRACTED]
 - [[._hash_file()]] - `method` [EXTRACTED]
 - [[._load_baseline()]] - `method` [EXTRACTED]
 - [[._save_baseline()]] - `method` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "rationale"
-community: "Community 309"
+community: "Community 43"
 location: "L102"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_309
+  - community/Community_43
 ---
 
 # Forward without auth returns 401/403.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_forward_without_auth_rejected()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_309
+#graphify/rationale #graphify/EXTRACTED #community/Community_43

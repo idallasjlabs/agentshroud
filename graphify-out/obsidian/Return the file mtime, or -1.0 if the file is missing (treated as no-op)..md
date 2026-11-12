@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Community 104"
+community: "Community 50"
 location: "L776"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_104
+  - community/Community_50
 ---
 
 # Return the file mtime, or -1.0 if the file is missing (treated as no-op).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_default_mtime()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_104
+#graphify/rationale #graphify/EXTRACTED #community/Community_50

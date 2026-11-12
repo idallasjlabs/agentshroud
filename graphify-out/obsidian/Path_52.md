@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/triage-cve-mitigations.py"
+source_file: "scripts/export-telegram-history.py"
 type: "code"
-community: "Community 8"
-location: "L130"
+community: "Community 777"
+location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_8
+  - community/Community_777
 ---
 
 # Path
 
 ## Connections
-- [[_rel()]] - `references` [EXTRACTED]
-- [[gap_report_path()]] - `references` [EXTRACTED]
+- [[export()]] - `references` [EXTRACTED]
+- [[main()_22]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_8
+#graphify/code #graphify/EXTRACTED #community/Community_777

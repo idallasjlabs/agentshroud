@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Community 707"
+community: "Community 50"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_707
+  - community/Community_50
 ---
 
 # config.py
@@ -55,4 +55,4 @@ tags:
 - [[test_router_openai_translation.py]] - `references` [EXTRACTED]
 - [[verify.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_707
+#graphify/code #graphify/EXTRACTED #community/Community_50

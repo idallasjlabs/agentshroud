@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[command_5]] - `contains` [EXTRACTED]
-- [[enabled_5]] - `contains` [EXTRACTED]
+- [[enabled_6]] - `contains` [EXTRACTED]
 - [[environment]] - `contains` [EXTRACTED]
 - [[mcp]] - `contains` [EXTRACTED]
-- [[type_5]] - `contains` [EXTRACTED]
+- [[type_31]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_159

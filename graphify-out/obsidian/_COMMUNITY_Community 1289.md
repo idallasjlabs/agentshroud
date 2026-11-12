@@ -1,24 +1,25 @@
 ---
 type: community
-members: 11
+members: 12
 ---
 
 # Community 1289
 
-**Members:** 11 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[.proxy()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_cross_group_member_blocked()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_disabled_gate_returns_none_manager()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_manager_is_wired()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_member_allowed_in_group()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_member_contextvar_preserved()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_non_member_blocked_in_group()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_non_member_contextvar_isolated_to_none()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_owner_allowed_in_any_group()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[Simulate the chokepoint a non-member's active group id is cleared.]] - rationale - gateway/tests/test_group_workspace_manager.py
-- [[TestInboundChokepointWiring]] - code - gateway/tests/test_group_workspace_manager.py
+- [[.test_rewrite_known_runtime_errors_accepts_hyphen_delimiter()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_accepts_underscore_delimiter()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_handles_non_string_input()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_matches_cannot_to_access_variant()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_matches_healthcheck_skill_sandbox_error()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_matches_http_status_without_body()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_matches_memory_embedding_provider_error()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_matches_no_response_generated_phrase()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_requires_skill_marker_for_healthcheck_branch()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_returns_none_for_unrelated_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestRuntimeRewriteHelpers]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Unit tests for deterministic runtime error rewrite helper behavior.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,12 +29,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 61]]
-- 2 edges to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 196]]
-- 1 edge to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 1]]
+- 2 edges to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 14]]
+- 1 edge to [[_COMMUNITY_Community 99]]
+- 1 edge to [[_COMMUNITY_Community 2325]]
 
 ## Top bridge nodes
-- [[TestInboundChokepointWiring]] - degree 17, connects to 5 communities
-- [[.proxy()]] - degree 2, connects to 1 community
+- [[TestRuntimeRewriteHelpers]] - degree 16, connects to 4 communities

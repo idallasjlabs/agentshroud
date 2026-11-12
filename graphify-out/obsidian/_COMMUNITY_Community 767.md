@@ -30,7 +30,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 229]]
+- 1 edge to [[_COMMUNITY_Community 65]]
 
 ## Top bridge nodes
 - [[event_bus.py_2]] - degree 11, connects to 1 community

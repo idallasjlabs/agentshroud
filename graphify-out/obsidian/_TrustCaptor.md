@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "Community 325"
+community: "Community 437"
 location: "L394"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_325
+  - community/Community_437
 ---
 
 # _TrustCaptor
 
 ## Connections
-- [[.__init__()_157]] - `method` [EXTRACTED]
+- [[.__init__()_178]] - `method` [EXTRACTED]
 - [[.process_inbound()_5]] - `method` [EXTRACTED]
 - [[.process_outbound()_5]] - `method` [EXTRACTED]
 - [[.test_empty_user_id_does_not_elevate_trust()]] - `calls` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[_make_trust_app_state()]] - `references` [EXTRACTED]
 - [[test_forward_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_325
+#graphify/code #graphify/EXTRACTED #community/Community_437

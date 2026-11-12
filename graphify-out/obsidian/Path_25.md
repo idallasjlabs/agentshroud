@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_config_hot_reload.py"
+source_file: "gateway/tests/test_alert_dispatcher_retry.py"
 type: "code"
-community: "Community 104"
-location: "L58"
+community: "Community 557"
+location: "L27"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_104
+  - graphify/INFERRED
+  - community/Community_557
 ---
 
 # Path
 
 ## Connections
-- [[GatewayConfig_1]] - `uses` [INFERRED]
-- [[_load()]] - `references` [EXTRACTED]
-- [[_write()]] - `references` [EXTRACTED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
+- [[dispatcher()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_104
+#graphify/code #graphify/INFERRED #community/Community_557

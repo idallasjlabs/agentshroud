@@ -1,23 +1,24 @@
 ---
 type: community
-members: 10
+members: 11
 ---
 
 # Community 1342
 
-**Members:** 10 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[._scan_for_canary()]] - code - gateway/security/output_canary.py
-- [[.check_response()]] - code - gateway/security/output_canary.py
-- [[.get_status()_1]] - code - gateway/security/output_canary.py
-- [[Any_53]] - code - gateway/security/output_canary.py
-- [[CanaryResult_2]] - code - gateway/security/output_canary.py
-- [[Check if response contains the session's canary (prompt leakage detected).]] - rationale - gateway/security/output_canary.py
-- [[Result of checking a response for canary presence.]] - rationale - gateway/security/output_canary.py
-- [[Return canary status for dashboard.          Args             session_id Sessi]] - rationale - gateway/security/output_canary.py
-- [[Scan response text for a specific canary.          Args             session_id]] - rationale - gateway/security/output_canary.py
-- [[output_canary.py]] - code - gateway/security/output_canary.py
+- [[.test_emergency_disabled_trigger_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[.test_in_progress_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[.test_max_attempts_exceeded_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[.test_not_due_without_force_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[.test_retire_clears_old_reference_when_grace_expired()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[.test_retire_noop_when_no_grace_period()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[.test_store_failure_marks_failed()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[.test_unknown_credential_returns_error()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[TestEmergencyAndRetire]] - code - gateway/tests/test_key_rotation_internals.py
+- [[TestRotateGuardBranches]] - code - gateway/tests/test_key_rotation_internals.py
+- [[_old_cred()]] - code - gateway/tests/test_key_rotation_internals.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,11 +28,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 233]]
+- 8 edges to [[_COMMUNITY_Community 381]]
+- 4 edges to [[_COMMUNITY_Community 455]]
+- 2 edges to [[_COMMUNITY_Community 198]]
+- 2 edges to [[_COMMUNITY_Community 122]]
 
 ## Top bridge nodes
-- [[output_canary.py]] - degree 3, connects to 2 communities
-- [[._scan_for_canary()]] - degree 5, connects to 1 community
-- [[.check_response()]] - degree 4, connects to 1 community
-- [[.get_status()_1]] - degree 3, connects to 1 community
+- [[TestRotateGuardBranches]] - degree 11, connects to 4 communities
+- [[TestEmergencyAndRetire]] - degree 9, connects to 4 communities
+- [[_old_cred()]] - degree 9, connects to 2 communities
+- [[.test_not_due_without_force_is_rejected()]] - degree 2, connects to 1 community

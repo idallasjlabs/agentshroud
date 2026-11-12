@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "Community 43"
+community: "Community 7"
 location: "L328"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/Community_7
 ---
 
 # Insert messages, modify a hash — verify chain integrity check fails.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_tampered_audit_detected()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_43
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

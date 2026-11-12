@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md"
 type: "document"
-community: "Community 223"
+community: "Community 1926"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_223
+  - community/Community_1926
 ---
 
 # TELEGRAM_API_BASE_URL
@@ -20,4 +20,4 @@ tags:
 - [[TELEGRAM_API_BASE_URL]] - `contains` [EXTRACTED]
 - [[Value_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_223
+#graphify/document #graphify/EXTRACTED #community/Community_1926

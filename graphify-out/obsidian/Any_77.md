@@ -1,27 +1,30 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 265"
-location: "L122"
+community: "Community 10"
+location: "L59"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_265
+  - graphify/INFERRED
+  - community/Community_10
 ---
 
 # Any
 
 ## Connections
-- [[_advisory_patched_versions()]] - `references` [EXTRACTED]
-- [[_advisory_text_tokens()]] - `references` [EXTRACTED]
-- [[build_id_plan()]] - `references` [EXTRACTED]
-- [[compute_stats()]] - `references` [EXTRACTED]
-- [[fetch_advisories()]] - `references` [EXTRACTED]
-- [[gather_advisories()]] - `references` [EXTRACTED]
-- [[load_registry()_1]] - `references` [EXTRACTED]
-- [[load_snapshot()]] - `references` [EXTRACTED]
-- [[match_entry()]] - `references` [EXTRACTED]
-- [[render_manual_review()]] - `references` [EXTRACTED]
-- [[rewrite_registry_text()]] - `references` [EXTRACTED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[_edge_snapshot()]] - `references` [EXTRACTED]
+- [[_hosted_edge_rows()]] - `references` [EXTRACTED]
+- [[_hosted_status()]] - `references` [EXTRACTED]
+- [[_log_audit()]] - `references` [EXTRACTED]
+- [[_run_killswitch()]] - `references` [EXTRACTED]
+- [[_unhooked_hosted_rows()]] - `references` [EXTRACTED]
+- [[auth_ws_token()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_265
+#graphify/code #graphify/INFERRED #community/Community_10

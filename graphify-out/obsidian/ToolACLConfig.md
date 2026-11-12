@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Community 194"
+community: "Community 33"
 location: "L170"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_194
+  - community/Community_33
 ---
 
 # ToolACLConfig
 
 ## Connections
-- [[.__init__()_121]] - `references` [EXTRACTED]
+- [[.__init__()_136]] - `references` [EXTRACTED]
 - [[.effective_admin()]] - `method` [EXTRACTED]
 - [[.effective_collaborator_allowed()]] - `method` [EXTRACTED]
 - [[.effective_private()]] - `method` [EXTRACTED]
@@ -51,4 +51,4 @@ tags:
 - [[test_tool_acl.py]] - `references` [EXTRACTED]
 - [[tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_194
+#graphify/code #graphify/INFERRED #community/Community_33

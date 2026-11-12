@@ -2,7 +2,7 @@
 source_file: "gateway/security/audit_store.py"
 type: "rationale"
 community: "Community 254"
-location: "L164"
+location: "L167"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # Close the database connection.
 
 ## Connections
-- [[.close()_9]] - `rationale_for` [EXTRACTED]
+- [[.close()_11]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_254

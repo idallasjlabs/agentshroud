@@ -1,22 +1,19 @@
 ---
-source_file: "gateway/security/tool_chain_analyzer.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "Community 505"
-location: "L183"
+community: "Community 24"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_505
+  - community/Community_24
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_122]] - `references` [EXTRACTED]
-- [[.analyze_tool_call()]] - `references` [EXTRACTED]
-- [[.get_global_stats()_1]] - `references` [EXTRACTED]
-- [[.get_session_stats()_1]] - `references` [EXTRACTED]
-- [[.sanitize_tool_params()]] - `references` [EXTRACTED]
-- [[.score_reversibility()]] - `references` [EXTRACTED]
+- [[.__init__()_118]] - `references` [EXTRACTED]
+- [[._compile_patterns()_1]] - `references` [EXTRACTED]
+- [[.get_stats()_17]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_505
+#graphify/code #graphify/EXTRACTED #community/Community_24

@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_soc_contributors.py"
 type: "code"
 community: "Community 890"
-location: "L77"
+location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED

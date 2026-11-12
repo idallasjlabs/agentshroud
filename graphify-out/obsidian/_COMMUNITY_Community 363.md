@@ -1,16 +1,16 @@
 ---
 type: community
-members: 18
+members: 17
 ---
 
 # Community 363
 
-**Members:** 18 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[.test_clean_when_installed_but_no_report()_1]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_infected_report()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_not_run_when_no_report()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_clean_report()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_critical_on_critical_findings()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_not_run_when_no_report()_1]] - code - gateway/tests/test_scanner_integration.py
 - [[.test_prefix_filter()]] - code - gateway/tests/test_scanner_integration.py
 - [[.test_returns_most_recent_file()]] - code - gateway/tests/test_scanner_integration.py
 - [[.test_returns_none_for_empty_directory()]] - code - gateway/tests/test_scanner_integration.py
@@ -18,14 +18,13 @@ members: 18
 - [[.test_returns_none_on_invalid_json()]] - code - gateway/tests/test_scanner_integration.py
 - [[.test_returns_none_when_all_files_empty()]] - code - gateway/tests/test_scanner_integration.py
 - [[.test_skips_empty_files_returns_next_valid()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_warning_on_failures()]] - code - gateway/tests/test_scanner_integration.py
 - [[Load the most recent JSON report file from a directory.      Args         direc]] - rationale - gateway/security/scanner_integration.py
-- [[Return True if clamd Unix socket tmpclamd.ctl is connectable.]] - rationale - gateway/security/scanner_integration.py
-- [[Return latest ClamAV scan summary from saved reports.      When ClamAV is instal]] - rationale - gateway/security/scanner_integration.py
-- [[TestGetClamavSummary]] - code - gateway/tests/test_scanner_integration.py
+- [[Return latest OpenSCAP compliance summary from saved reports.]] - rationale - gateway/security/scanner_integration.py
+- [[TestGetOpenscapSummary]] - code - gateway/tests/test_scanner_integration.py
 - [[TestLoadLatestJson]] - code - gateway/tests/test_scanner_integration.py
-- [[_is_clamd_running()]] - code - gateway/security/scanner_integration.py
 - [[_load_latest_json()]] - code - gateway/security/scanner_integration.py
-- [[get_clamav_summary()]] - code - gateway/security/scanner_integration.py
+- [[get_openscap_summary()]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,18 +34,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 29]]
 - 4 edges to [[_COMMUNITY_Community 67]]
-- 3 edges to [[_COMMUNITY_Community 943]]
-- 2 edges to [[_COMMUNITY_Community 311]]
-- 1 edge to [[_COMMUNITY_Community 842]]
-- 1 edge to [[_COMMUNITY_Community 1287]]
+- 3 edges to [[_COMMUNITY_Community 29]]
+- 3 edges to [[_COMMUNITY_Community 1287]]
+- 1 edge to [[_COMMUNITY_Community 1976]]
+- 1 edge to [[_COMMUNITY_Community 1552]]
 - 1 edge to [[_COMMUNITY_Community 420]]
-- 1 edge to [[_COMMUNITY_Community 102]]
+- 1 edge to [[_COMMUNITY_Community 311]]
 
 ## Top bridge nodes
-- [[get_clamav_summary()]] - degree 13, connects to 6 communities
-- [[_load_latest_json()]] - degree 15, connects to 4 communities
+- [[_load_latest_json()]] - degree 15, connects to 5 communities
+- [[get_openscap_summary()]] - degree 11, connects to 4 communities
 - [[TestLoadLatestJson]] - degree 8, connects to 1 community
-- [[TestGetClamavSummary]] - degree 4, connects to 1 community
-- [[_is_clamd_running()]] - degree 3, connects to 1 community
+- [[TestGetOpenscapSummary]] - degree 5, connects to 1 community
+- [[.test_not_run_when_no_report()_1]] - degree 3, connects to 1 community

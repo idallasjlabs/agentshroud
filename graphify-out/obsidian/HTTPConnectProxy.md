@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "Community 81"
+community: "Community 86"
 location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_81
+  - community/Community_86
 ---
 
 # HTTPConnectProxy
 
 ## Connections
-- [[.__init__()_23]] - `method` [EXTRACTED]
+- [[.__init__()_38]] - `method` [EXTRACTED]
 - [[._agent_id_for_peer()]] - `method` [EXTRACTED]
 - [[._clamav_scan_bytes()]] - `method` [EXTRACTED]
 - [[._handle_client()]] - `method` [EXTRACTED]
@@ -106,4 +106,4 @@ tags:
 - [[test_tunnel_retries_then_succeeds()]] - `calls` [EXTRACTED]
 - [[test_tunnel_target_writer_close_failure_swallowed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_81
+#graphify/code #graphify/EXTRACTED #community/Community_86

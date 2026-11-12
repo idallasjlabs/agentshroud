@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "rationale"
-community: "Community 399"
-location: "L18877"
+community: "Community 42"
+location: "L18892"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_399
+  - community/Community_42
 ---
 
 # Return the list of registered agent bot IDs with CVE coverage.      Returns:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[list_cve_agents()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_399
+#graphify/rationale #graphify/EXTRACTED #community/Community_42

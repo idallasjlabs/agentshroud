@@ -1,20 +1,20 @@
 ---
 type: community
-members: 157
+members: 136
 ---
 
 # Community 20
 
-**Members:** 157 nodes
+**Members:** 136 nodes
 
 ## Members
-- [[.__init__()_131]] - code - gateway/soc/services.py
-- [[.__init__()_192]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.__init__()_193]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.__init__()_146]] - code - gateway/soc/services.py
+- [[.__init__()_218]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.__init__()_219]] - code - gateway/tests/test_soc_services_coverage.py
 - [[._describe_service()]] - code - gateway/soc/services.py
 - [[._get_engine()]] - code - gateway/soc/services.py
 - [[._logs_via_socket()]] - code - gateway/soc/services.py
-- [[.close()_19]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.close()_21]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.connect()_2]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.get_logs()_1]] - code - gateway/soc/services.py
 - [[.get_service()]] - code - gateway/soc/services.py
@@ -28,9 +28,7 @@ members: 157
 - [[.test_200_returns_parsed_json()]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.test_404_returns_empty_dict()]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.test_500_returns_none()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_all_actions_false_without_engine()]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.test_bytes_payload_is_decoded()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_defaults()_2]] - code - gateway/tests/test_soc_models.py
 - [[.test_empty_info_means_container_not_found()]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.test_engine_error_falls_back_to_socket()]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.test_engine_failure_falls_back_to_socket_data()]] - code - gateway/tests/test_soc_services_coverage.py
@@ -64,8 +62,6 @@ members: 157
 - [[.test_parses_multiplexed_frames()]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.test_resolution_failure_returns_none()]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.test_resolved_from_runtime_module()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_restart_success_and_failure()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_running_service()]] - code - gateway/tests/test_soc_services.py
 - [[.test_running_via_pid_file()]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.test_running_via_pid_file()_1]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.test_running_via_proc_scan()]] - code - gateway/tests/test_soc_services_coverage.py
@@ -75,26 +71,15 @@ members: 157
 - [[.test_running_when_content_present()]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.test_running_when_kill_raises_eperm()]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.test_socket_fallback_empty_lines()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_standby_service()]] - code - gateway/tests/test_soc_services.py
 - [[.test_standby_when_no_pid_and_no_process()]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.test_standby_when_no_socket_and_no_process()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_start_success_and_failure()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_stop_success_and_failure()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_stopped_service()]] - code - gateway/tests/test_soc_services.py
 - [[.test_stopped_when_content_missing()]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.test_stopped_when_no_pid_and_no_process()]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.test_tail_limit_applied()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_unhealthy_service()]] - code - gateway/tests/test_soc_services.py
 - [[.test_unparseable_started_at_yields_no_uptime()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_update_engine_without_pull_support()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_update_pull_failure_still_restarts()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_update_pull_then_restart()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_update_restart_failure_returns_false()]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.test_uses_resolved_container_name_from_real_config()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_with_resource_usage()]] - code - gateway/tests/test_soc_models.py
 - [[.test_zero_started_at_skips_uptime()]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.update_service()]] - code - gateway/soc/services.py
-- [[Any_68]] - code - gateway/soc/services.py
 - [[Build one Docker multiplexed-log frame (stdout).]] - rationale - gateway/tests/test_soc_services_coverage.py
 - [[EPERM means the process exists but is owned by another user.]] - rationale - gateway/tests/test_soc_services_coverage.py
 - [[Intercept builtins.open for specific paths; delegate everything else.]] - rationale - gateway/tests/test_soc_services_coverage.py
@@ -110,8 +95,6 @@ members: 157
 - [[Return ServiceDescriptor for each known container plus internal gateway services]] - rationale - gateway/soc/services.py
 - [[Return the container engine from app_state if not injected.]] - rationale - gateway/soc/services.py
 - [[Return the gateway's own container plus each configured bot's real     container]] - rationale - gateway/soc/services.py
-- [[STANDBY = binary installed but cannot run in this environment; should be healthy]] - rationale - gateway/tests/test_soc_services.py
-- [[ServiceDescriptor]] - code - gateway/soc/models.py
 - [[ServiceDescriptor_1]] - code - gateway/soc/services.py
 - [[ServiceManager]] - code - gateway/soc/services.py
 - [[Stale PID (ESRCH) is not EPERM — falls through to proc scan, then standby.]] - rationale - gateway/tests/test_soc_services_coverage.py
@@ -125,17 +108,13 @@ members: 157
 - [[TestGetLogs]] - code - gateway/tests/test_soc_services_coverage.py
 - [[TestInspectViaSocket]] - code - gateway/tests/test_soc_services_coverage.py
 - [[TestKnownServices]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestLifecycleActions]] - code - gateway/tests/test_soc_services_coverage.py
 - [[TestListServices]] - code - gateway/tests/test_soc_services_coverage.py
 - [[TestLogsViaSocket]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestServiceDescriptor]] - code - gateway/tests/test_soc_models.py
-- [[TestServiceDescriptorDefaults]] - code - gateway/tests/test_soc_services.py
 - [[TestServiceManagerGetLogs]] - code - gateway/tests/test_soc_services.py
 - [[TestServiceManagerImport]] - code - gateway/tests/test_soc_services.py
 - [[TestStatusMappings]] - code - gateway/tests/test_soc_services_coverage.py
 - [[Thin wrapper around the container engine that produces ServiceDescriptors.]] - rationale - gateway/soc/services.py
 - [[Unit tests for ServiceManager.get_logs — including module_filter behaviour.]] - rationale - gateway/tests/test_soc_services.py
-- [[Validate ServiceDescriptor model defaults — no real container calls.]] - rationale - gateway/tests/test_soc_services.py
 - [[Verify ServiceManager can be imported without a running container engine.]] - rationale - gateway/tests/test_soc_services.py
 - [[_FakeResponse]] - code - gateway/tests/test_soc_services_coverage.py
 - [[_FakeUnixSocket]] - code - gateway/tests/test_soc_services_coverage.py
@@ -163,7 +142,7 @@ members: 157
 - [[gatewaysocservices.py (ServiceManager)]] - code - gateway/soc/services.py
 - [[os.path.exists override for specific paths only.]] - rationale - gateway/tests/test_soc_services_coverage.py
 - [[services.py]] - code - gateway/soc/services.py
-- [[test_soc_services.py]] - code - gateway/tests/test_soc_services.py
+- [[test_approvals_mfa_required_is_403()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_soc_services_coverage.py]] - code - gateway/tests/test_soc_services_coverage.py
 
 ## Live Query (requires Dataview plugin)
@@ -174,22 +153,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 36 edges to [[_COMMUNITY_Community 10]]
-- 21 edges to [[_COMMUNITY_Community 8]]
-- 8 edges to [[_COMMUNITY_Community 181]]
-- 4 edges to [[_COMMUNITY_Community 51]]
-- 2 edges to [[_COMMUNITY_Community 35]]
-- 1 edge to [[_COMMUNITY_Community 108]]
+- 39 edges to [[_COMMUNITY_Community 10]]
+- 22 edges to [[_COMMUNITY_Community 8]]
+- 14 edges to [[_COMMUNITY_Community 181]]
+- 2 edges to [[_COMMUNITY_Community 50]]
+- 2 edges to [[_COMMUNITY_Community 51]]
+- 2 edges to [[_COMMUNITY_Community 19]]
+- 1 edge to [[_COMMUNITY_Community 30]]
 - 1 edge to [[_COMMUNITY_Community 439]]
-- 1 edge to [[_COMMUNITY_Community 918]]
+- 1 edge to [[_COMMUNITY_Community 25]]
+- 1 edge to [[_COMMUNITY_Community 1352]]
 - 1 edge to [[_COMMUNITY_Community 61]]
-- 1 edge to [[_COMMUNITY_Community 82]]
 - 1 edge to [[_COMMUNITY_Community 4]]
 - 1 edge to [[_COMMUNITY_Community 126]]
 
 ## Top bridge nodes
-- [[ServiceDescriptor]] - degree 20, connects to 4 communities
-- [[ServiceManager]] - degree 106, connects to 3 communities
-- [[PermissionError]] - degree 6, connects to 3 communities
+- [[ServiceManager]] - degree 111, connects to 4 communities
+- [[PermissionError]] - degree 8, connects to 4 communities
+- [[test_soc_services_coverage.py]] - degree 24, connects to 2 communities
 - [[services.py]] - degree 15, connects to 2 communities
-- [[test_soc_services_coverage.py]] - degree 24, connects to 1 community
+- [[._get_engine()]] - degree 11, connects to 2 communities

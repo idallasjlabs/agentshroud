@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/proxy/canvas_proxy.py"
+source_file: "gateway/inbound_edge/routes.py"
 type: "code"
-community: "Community 595"
-location: "L119"
+community: "Community 31"
+location: "L43"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_595
+  - graphify/INFERRED
+  - community/Community_31
 ---
 
 # Any
 
 ## Connections
-- [[_handle_http()]] - `references` [EXTRACTED]
-- [[_handle_websocket()]] - `references` [EXTRACTED]
-- [[canvas_proxy_app()]] - `references` [EXTRACTED]
+- [[OAuthFailure]] - `uses` [INFERRED]
+- [[_methods()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_595
+#graphify/code #graphify/INFERRED #community/Community_31

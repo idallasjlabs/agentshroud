@@ -1,16 +1,17 @@
 ---
 type: community
-members: 68
+members: 74
 ---
 
 # Community 111
 
-**Members:** 68 nodes
+**Members:** 74 nodes
 
 ## Members
-- [[.__init__()_135]] - code - gateway/tests/test_a2a_policy.py
-- [[.__init__()_136]] - code - gateway/tests/test_a2a_policy.py
+- [[.__init__()_150]] - code - gateway/tests/test_a2a_policy.py
+- [[.__init__()_151]] - code - gateway/tests/test_a2a_policy.py
 - [[.allowed()]] - code - gateway/security/a2a_policy.py
+- [[.from_dict()_2]] - code - gateway/security/a2a_policy.py
 - [[.submit_tool_request()_1]] - code - gateway/tests/test_a2a_policy.py
 - [[.submit_tool_request()_2]] - code - gateway/tests/test_a2a_policy.py
 - [[.wait_for_decision()_1]] - code - gateway/tests/test_a2a_policy.py
@@ -21,17 +22,22 @@ members: 68
 - [[A task_id AgentShroud never saw created (e.g. the very first GetTask     against]] - rationale - gateway/tests/test_a2a_policy.py
 - [[A2A peers are never equivalent to the human operator — unlike MCP,     owner_byp]] - rationale - gateway/tests/test_a2a_policy.py
 - [[A2AMethod_1]] - code - gateway/tests/test_a2a_policy.py
+- [[A2APolicyAction]] - code - gateway/security/a2a_policy.py
 - [[A2APolicyConfig_1]] - code - gateway/tests/test_a2a_policy.py
 - [[A2APolicyDecision]] - code - gateway/security/a2a_policy.py
 - [[A2APolicyEngine_2]] - code - gateway/tests/test_a2a_policy.py
 - [[An operator who explicitly opts into default_action=allow gets normal     risk-t]] - rationale - gateway/tests/test_a2a_policy.py
+- [[Any_39]] - code - gateway/security/a2a_policy.py
 - [[DNS rebinding a public-looking hostname that currently resolves to a     privat]] - rationale - gateway/tests/test_a2a_policy.py
 - [[Hardened SSRF guard for A2A push-notification callback URLs.      Independent mi]] - rationale - gateway/security/a2a_policy.py
 - [[Hostname resolution is mocked — this test asserts the validator's own     logic,]] - rationale - gateway/tests/test_a2a_policy.py
 - [[Ownership is checked before the risk-tier gate — a mismatched peer must     be d]] - rationale - gateway/tests/test_a2a_policy.py
+- [[Parse a policy config from a plain dict (e.g. loaded from YAML).]] - rationale - gateway/security/a2a_policy.py
 - [[Real JSON-RPC payloads deliver the method as a plain string — evaluate()     mus]] - rationale - gateway/tests/test_a2a_policy.py
 - [[The `engine` fixture has no approval_queue configured at all — a     high-risk m]] - rationale - gateway/tests/test_a2a_policy.py
 - [[The result of evaluating a single A2A request against the policy.]] - rationale - gateway/security/a2a_policy.py
+- [[The three terminal policy outcomes for an A2A request.]] - rationale - gateway/security/a2a_policy.py
+- [[The three terminal policy outcomes for an MCP tool call.]] - rationale - gateway/security/mcp_policy.py
 - [[True only for a terminal ALLOW. REQUIRE_APPROVAL is not allowed on         its o]] - rationale - gateway/security/a2a_policy.py
 - [[Two allowlisted peers, one denylisted peer, default-deny for everyone else.]] - rationale - gateway/tests/test_a2a_policy.py
 - [[_LegacyStubApprovalQueue]] - code - gateway/tests/test_a2a_policy.py
@@ -85,13 +91,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 24 edges to [[_COMMUNITY_Community 307]]
-- 8 edges to [[_COMMUNITY_Community 271]]
-- 6 edges to [[_COMMUNITY_Community 221]]
+- 29 edges to [[_COMMUNITY_Community 307]]
+- 7 edges to [[_COMMUNITY_Community 221]]
+- 2 edges to [[_COMMUNITY_Community 8]]
+- 1 edge to [[_COMMUNITY_Community 489]]
+- 1 edge to [[_COMMUNITY_Community 35]]
 
 ## Top bridge nodes
-- [[test_a2a_policy.py]] - degree 48, connects to 2 communities
-- [[A2APolicyEngine_2]] - degree 31, connects to 2 communities
+- [[A2APolicyAction]] - degree 14, connects to 3 communities
 - [[is_safe_a2a_callback_url()]] - degree 16, connects to 2 communities
 - [[A2APolicyDecision]] - degree 13, connects to 2 communities
-- [[_StubApprovalQueue]] - degree 13, connects to 2 communities
+- [[.from_dict()_2]] - degree 5, connects to 2 communities
+- [[test_a2a_policy.py]] - degree 48, connects to 1 community

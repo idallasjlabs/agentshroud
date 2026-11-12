@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "Community 72"
+community: "Community 71"
 location: "L415"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_71
 ---
 
 # Validate that no containers are running in privileged mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._validate_privileged_containers()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_72
+#graphify/rationale #graphify/EXTRACTED #community/Community_71

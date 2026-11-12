@@ -1,11 +1,11 @@
 ---
 type: community
-members: 30
+members: 38
 ---
 
 # Community 1268
 
-**Members:** 30 nodes
+**Members:** 38 nodes
 
 ## Members
 - [[1. Security Module Analysis]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
@@ -16,6 +16,10 @@ members: 30
 - [[2.1 Loss Categories]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
 - [[2.2 Heat Map Matrix]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
 - [[2.3 Coverage Analysis]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[3. Critical Findings & Risks]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[3.1 HIGH Priority Issues]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[3.2 MEDIUM Priority Issues]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[3.3 LOW Priority Issues]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
 - [[4. Configuration Security Assessment]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
 - [[4.1 Default Configuration Analysis]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
 - [[4.2 Global Mode Override Testing]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
@@ -35,6 +39,10 @@ members: 30
 - [[8.1 Attack Surface Hardening]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
 - [[8.2 Monitoring & Detection]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
 - [[8.3 Resilience Testing]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[9. Final Assessment]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[9.1 Security Maturity Level]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[9.2 Threat Model Coverage]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[9.3 GONO-GO Decision]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
 - [[AgentShroud v0.7.0 - Blue Team Security Audit Report]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
 - [[Executive Summary_1]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
 - [[blue-team-audit-v0.7.0]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
@@ -47,13 +55,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 144]]
-- 1 edge to [[_COMMUNITY_Community 1333]]
-- 1 edge to [[_COMMUNITY_Community 1336]]
+- 11 edges to [[_COMMUNITY_Community 144]]
 
 ## Top bridge nodes
-- [[AgentShroud v0.7.0 - Blue Team Security Audit Report]] - degree 12, connects to 2 communities
 - [[7. Recommendations by Severity]] - degree 6, connects to 1 community
 - [[2. Steve Hay Heat Map Assessment]] - degree 5, connects to 1 community
+- [[3. Critical Findings & Risks]] - degree 5, connects to 1 community
 - [[4. Configuration Security Assessment]] - degree 5, connects to 1 community
 - [[8. Red Team Readiness Assessment]] - degree 5, connects to 1 community

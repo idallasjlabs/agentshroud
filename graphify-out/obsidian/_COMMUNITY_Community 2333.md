@@ -1,15 +1,17 @@
 ---
 type: community
-members: 2
+members: 4
 ---
 
 # Community 2333
 
-**Members:** 2 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_default_config()_4]] - code - gateway/tests/test_memory_lifecycle.py
-- [[Test default configuration values._3]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[_botContainerName()]] - code - gateway/soc/static/soc.js
+- [[_loadLogs()]] - code - gateway/soc/static/soc.js
+- [[_replayLogsTab()]] - code - gateway/soc/static/soc.js
+- [[_showDeviceTokenAlert()]] - code - gateway/soc/static/soc.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,8 +21,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 203]]
-- 1 edge to [[_COMMUNITY_Community 16]]
+- 4 edges to [[_COMMUNITY_Community 82]]
+- 1 edge to [[_COMMUNITY_Community 965]]
 
 ## Top bridge nodes
-- [[.test_default_config()_4]] - degree 3, connects to 2 communities
+- [[_loadLogs()]] - degree 5, connects to 2 communities
+- [[_showDeviceTokenAlert()]] - degree 2, connects to 1 community
+- [[_replayLogsTab()]] - degree 2, connects to 1 community
+- [[_botContainerName()]] - degree 2, connects to 1 community

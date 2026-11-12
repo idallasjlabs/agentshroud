@@ -14,7 +14,7 @@ members: 24
 - [[OpenAI Image Gen]] - document - skills/openclaw/openai-image-gen/SKILL.md
 - [[Other Notable Differences]] - document - skills/openclaw/openai-image-gen/SKILL.md
 - [[Output_18]] - document - skills/openclaw/openai-image-gen/SKILL.md
-- [[Path_53]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
+- [[Path_57]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
 - [[Quality]] - document - skills/openclaw/openai-image-gen/SKILL.md
 - [[Return (default_size, default_quality) for the given model.]] - rationale - skills/openclaw/openai-image-gen/scripts/gen.py
 - [[Run]] - document - skills/openclaw/openai-image-gen/SKILL.md
@@ -26,8 +26,8 @@ members: 24
 - [[generate_image.py]] - code - skills/openclaw/nano-banana-pro/scripts/generate_image.py
 - [[get_api_key()]] - code - skills/openclaw/nano-banana-pro/scripts/generate_image.py
 - [[get_model_defaults()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
-- [[main()_31]] - code - skills/openclaw/nano-banana-pro/scripts/generate_image.py
-- [[main()_32]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
+- [[main()_33]] - code - skills/openclaw/nano-banana-pro/scripts/generate_image.py
+- [[main()_34]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
 - [[pick_prompts()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
 - [[request_images()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
 - [[slugify()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
@@ -44,5 +44,5 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_Community 181]]
 
 ## Top bridge nodes
-- [[main()_32]] - degree 9, connects to 1 community
+- [[main()_34]] - degree 9, connects to 1 community
 - [[request_images()]] - degree 3, connects to 1 community

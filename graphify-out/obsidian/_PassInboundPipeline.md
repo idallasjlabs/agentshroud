@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "Community 43"
+community: "Community 7"
 location: "L421"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_43
+  - community/Community_7
 ---
 
 # _PassInboundPipeline
 
 ## Connections
-- [[.__init__()_154]] - `method` [EXTRACTED]
+- [[.__init__()_169]] - `method` [EXTRACTED]
 - [[.process_inbound()_2]] - `method` [EXTRACTED]
 - [[.process_outbound()_2]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
@@ -36,4 +36,4 @@ tags:
 - [[test_webhook_outbound_block_withheld()]] - `calls` [EXTRACTED]
 - [[test_webhook_outbound_pipeline_crash_fails_closed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_43
+#graphify/code #graphify/INFERRED #community/Community_7

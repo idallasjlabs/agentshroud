@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "Community 1305"
+community: "Community 61"
 location: "L541"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1305
+  - community/Community_61
 ---
 
 # Session directory path must embed bot_id so filesystem confirms isolation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_user_session_paths_contain_bot_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1305
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

@@ -1,17 +1,17 @@
 ---
-source_file: "opencode.json"
+source_file: "config/inbound-edge/schema.json"
 type: "code"
-community: "Community 159"
-location: "L19"
+community: "Community 943"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_159
+  - community/Community_943
 ---
 
 # type
 
 ## Connections
-- [[github-agentshroud_5]] - `contains` [EXTRACTED]
+- [[display_name]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_159
+#graphify/code #graphify/EXTRACTED #community/Community_943

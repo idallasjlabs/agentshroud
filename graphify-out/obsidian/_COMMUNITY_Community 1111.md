@@ -8,7 +8,7 @@ members: 27
 **Members:** 27 nodes
 
 ## Members
-- [[check()_4]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[check()_7]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
 - [[deadline()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
 - [[dev_gate()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
 - [[handoff_status()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh

@@ -1,20 +1,21 @@
 ---
 type: community
-members: 7
+members: 8
 ---
 
 # Community 2011
 
-**Members:** 7 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Key Features Used]] - document - docs/vault/05 - Dependencies/httpx.md
-- [[Purpose_187]] - document - docs/vault/05 - Dependencies/httpx.md
-- [[Related Notes_42]] - document - docs/vault/05 - Dependencies/httpx.md
-- [[Security Note_1]] - document - docs/vault/05 - Dependencies/httpx.md
-- [[Where Used_2]] - document - docs/vault/05 - Dependencies/httpx.md
-- [[httpx_1]] - document - docs/vault/05 - Dependencies/httpx.md
-- [[httpx]] - document - docs/vault/05 - Dependencies/httpx.md
+- [[.test_clean_result_passes_through()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_credit_card_detected()_1]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_credit_card_redacted()_1]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_email_detected_but_low_threat()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_pii_in_tool_result_redacted()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_ssn_detected_in_params()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_ssn_redacted_in_params()]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestPIIDetection]] - code - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +25,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 253]]
+- 5 edges to [[_COMMUNITY_Community 64]]
+- 2 edges to [[_COMMUNITY_Community 230]]
+- 2 edges to [[_COMMUNITY_Community 2038]]
+- 2 edges to [[_COMMUNITY_Community 54]]
+- 1 edge to [[_COMMUNITY_Community 184]]
+- 1 edge to [[_COMMUNITY_Community 132]]
+- 1 edge to [[_COMMUNITY_Community 329]]
 
 ## Top bridge nodes
-- [[httpx]] - degree 2, connects to 1 community
+- [[TestPIIDetection]] - degree 21, connects to 7 communities

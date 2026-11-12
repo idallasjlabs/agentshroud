@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/prompt_protection.py"
+source_file: "gateway/security/killswitch_config.py"
 type: "code"
-community: "Community 141"
-location: "L56"
+community: "Community 9"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_141
+  - community/Community_9
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_110]] - `references` [EXTRACTED]
-- [[.get_protection_stats()]] - `references` [EXTRACTED]
+- [[.to_dict()_10]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_141
+#graphify/code #graphify/EXTRACTED #community/Community_9
