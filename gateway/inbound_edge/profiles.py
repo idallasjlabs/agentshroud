@@ -64,6 +64,12 @@ class VendorProfile:
     max_response_bytes: int
     source_networks: Tuple[ipaddress._BaseNetwork, ...] = field(default=())
     allowed_hours: Optional[Tuple[time, time, ZoneInfo]] = None
+    # How the hosted agent reaches AgentShroud: "mcp" (this edge) or "chat-bridge"
+    # (Slack/Teams, SCRUM-220). "support" records whether the vendor documents
+    # custom MCP; "docs" cites the pages the profile was written from.
+    connection: str = "mcp"
+    support: str = "documented"
+    docs: Tuple[str, ...] = ()
 
     def tool_access(self, tool: str) -> Optional[str]:
         """``"read"``/``"write"`` when the vendor may call ``tool``, else ``None``."""
@@ -119,6 +125,14 @@ def _parse(path: Path, data: object, validator: jsonschema.Draft202012Validator)
     for uri in auth["redirect_uris"]:
         if not uri.startswith("https://"):
             raise ProfileError(f"{vendor}: redirect URI must be https: {uri}")
+    for url in data.get("docs", []):
+        if not url.startswith("https://"):
+            raise ProfileError(f"{vendor}: docs link must be https: {url}")
+
+    if data["connection"] == "chat-bridge" and data["enabled"]:
+        # STUB: Slack/Teams chat bridge (SCRUM-220) — NOT PRODUCTION READY. Refuse
+        # an enabled bridge vendor rather than load one that governs nothing.
+        raise ProfileError(f"{vendor}: connection chat-bridge is not implemented in this release")
 
     networks = []
     for cidr in data.get("source_cidrs", []):
@@ -160,6 +174,9 @@ def _parse(path: Path, data: object, validator: jsonschema.Draft202012Validator)
         max_response_bytes=data["max_response_bytes"],
         source_networks=tuple(networks),
         allowed_hours=hours,
+        connection=data["connection"],
+        support=data["support"],
+        docs=tuple(data.get("docs", [])),
     )
     if profile.mode == "monitor":
         logger.warning(

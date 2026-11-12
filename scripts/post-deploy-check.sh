@@ -31,6 +31,13 @@ if [[ "${AGENTSHROUD_SKIP_POST_DEPLOY_CHECK:-0}" == "1" ]]; then
     exit 0
 fi
 
+# Deployment mode decides which containers MUST be running: a local agent that is
+# missing is a failure, not a skipped check (CLAUDE.md §0.0 — absence is not pass).
+_PDC_REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+# shellcheck source=scripts/lib/deployment-mode.sh
+. "$_PDC_REPO/scripts/lib/deployment-mode.sh"
+DEPLOYMENT="$(deployment_mode_resolve "$_PDC_REPO/docker/.env")" || exit 2
+
 # Ports + project: dev bot uses 9080, prod uses 8080
 if [[ "${USER:-}" == "agentshroud-bot" ]]; then
     GW_PORT="${AGENTSHROUD_GW_PORT:-9080}"
@@ -138,8 +145,15 @@ if [[ -n "$BOT_CONTAINER" ]]; then
 
     check "Bot logs: no 'Failed to start CLI'" \
         "$([[ "$bot_logs" != *"Failed to start CLI"* ]] && echo true || echo false)"
+elif deployment_runs_local_agents "$DEPLOYMENT"; then
+    check "OpenClaw container running (deployment=$DEPLOYMENT)" false \
+        "no container with com.docker.compose.service=openclaw"
 else
-    echo "  [post-deploy-check] SKIP: bot container not found (non-full-stack deploy?)"
+    echo "  [post-deploy-check] SKIP: no OpenClaw (deployment=cloud runs no local agents)"
+fi
+if ! deployment_runs_local_agents "$DEPLOYMENT"; then
+    check "No local agent containers (deployment=cloud)" \
+        "$([[ -z "$BOT_CONTAINER" ]] && echo true || echo false)" "found $BOT_CONTAINER"
 fi
 
 # ── P3: Hermes health checks (only when hermes container is running) ─────────
@@ -343,6 +357,26 @@ if [[ -n "$GATEWAY_CONTAINER" ]]; then
         "not answering:${_dead_dns} — fix AGENTSHROUD_DNS_PRIMARY/SECONDARY in docker/.env; this is not host DNS"
 fi
 
+# ── P9: Inbound MCP Edge healthy (cloud/hybrid deployments) ──────────────
+# The edge's compose healthcheck is a real probe of its MCP endpoint. Local-only
+# hosts may still run the edge by hand for testing; it is required only here.
+if deployment_runs_edge "$DEPLOYMENT"; then
+    EDGE_CONTAINER=$(docker ps --filter 'label=com.docker.compose.service=agentshroud-mcp-edge' --format '{{.Names}}' 2>/dev/null | head -1)
+    edge_health="missing"
+    if [[ -n "$EDGE_CONTAINER" ]]; then
+        deadline=$(( $(date +%s) + WAIT_SECS ))
+        while :; do
+            edge_health=$(docker inspect --format '{{if .State.Health}}{{.State.Health.Status}}{{else}}none{{end}}' "$EDGE_CONTAINER" 2>/dev/null || echo "gone")
+            [[ "$edge_health" == "healthy" ]] && break
+            [[ $(date +%s) -ge $deadline ]] && break
+            sleep 3
+        done
+    fi
+    check "Inbound MCP Edge healthy (deployment=$DEPLOYMENT)" \
+        "$([[ "$edge_health" == "healthy" ]] && echo true || echo false)" \
+        "container=${EDGE_CONTAINER:-none} health=$edge_health"
+fi
+
 # ── F1-F4: functional checks (--functional only) ─────────────────────────
 # The P-checks above prove the stack booted. These prove it works: the Sunday
 # restore after a cut-off or failed upgrade must not call a stack "up" because
@@ -362,8 +396,12 @@ if [[ "$FUNCTIONAL" == "1" ]]; then
     # status='connected', wazuh-manager's four daemons, ...), not pgrep.
     # One deadline shared by all six, not one each: the Sunday restore runs this
     # up to three times before 08:00, so its worst case has to stay bounded.
+    # Which services make up "the full stack" depends on the deployment mode.
+    _func_svcs="gateway wazuh-manager wazuh-agent docker-socket-proxy"
+    deployment_runs_local_agents "$DEPLOYMENT" && _func_svcs="$_func_svcs openclaw voice-gateway"
+    deployment_runs_edge "$DEPLOYMENT" && _func_svcs="$_func_svcs agentshroud-mcp-edge"
     deadline=$(( $(date +%s) + FUNC_WAIT_SECS ))
-    for _svc in gateway openclaw wazuh-manager wazuh-agent docker-socket-proxy voice-gateway; do
+    for _svc in $_func_svcs; do
         _c=$(_svc_container "$_svc")
         if [[ -z "$_c" ]]; then
             check "F1: $_svc running" false "no container with com.docker.compose.service=$_svc"
@@ -380,9 +418,11 @@ if [[ "$FUNCTIONAL" == "1" ]]; then
             "$([[ "$_health" == "healthy" || "$_health" == "none" ]] && echo true || echo false)" \
             "health=$_health within the ${FUNC_WAIT_SECS}s window"
     done
-    check "F1: hermes running" \
-        "$([[ -n "$HERMES_CONTAINER" ]] && echo true || echo false)" \
-        "no container labelled com.agentshroud.role=hermes"
+    if deployment_runs_local_agents "$DEPLOYMENT"; then
+        check "F1: hermes running" \
+            "$([[ -n "$HERMES_CONTAINER" ]] && echo true || echo false)" \
+            "no container labelled com.agentshroud.role=hermes"
+    fi
 
     # F2: each agent reaches the gateway over the internal network — the path
     # every model, Telegram and tool call of theirs goes through. Three tries:

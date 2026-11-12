@@ -44,16 +44,27 @@ AgentShroud is simultaneously a **production-grade tool**, a **learning laborato
 
 ---
 
-## What's New — Inbound MCP Edge (unreleased, SCRUM-198)
+## What's New — Local agents, hosted agents, or both: the Inbound MCP Edge (in pilot, SCRUM-198)
 
-Hosted personal AI agents (Claude Duet, Poke, Gemini Spark, OpenAI Dots) run in vendor clouds, outside any proxy AgentShroud can sit in. The **Inbound MCP Edge** gives them exactly one governed way into the home lab: an MCP endpoint (spec 2026-07-28, official SDK) behind OAuth 2.1, with every call going through the gateway's existing layers.
+> **Status: in pilot.** Built and tested in the dev stack; no hosted agent has connected through it yet. Claude Duet is the first live pilot.
+
+AgentShroud now governs two kinds of agent, alone or together. Pick one with `AGENTSHROUD_DEPLOYMENT`:
+
+| Mode | Governs |
+|---|---|
+| `local` (default) | agents running on your machine (OpenClaw, Hermes) — the stack AgentShroud has always run |
+| `cloud` | hosted personal agents only (Claude Duet, Poke, Gemini Spark, Meta Muse, xAI Grok Bot, OpenAI Dots) |
+| `hybrid` | both |
+
+Hosted personal agents run in vendor clouds, outside any proxy AgentShroud can sit in. The **Inbound MCP Edge** gives them exactly one governed way into your systems: an MCP endpoint (spec 2026-07-28, official SDK) behind OAuth 2.1, with every call going through the gateway's existing layers.
 
 - **One door, no state on it.** The internet-facing `agentshroud-mcp-edge` container sits on an internal DMZ network. It holds only a public key and talks only to `POST /edge/v1/rpc`.
 - **Owner-controlled linking.** A vendor can register only inside a ten-minute enrollment window that the owner opens from the tailnet, and the owner consents with a one-time code.
 - **Curated tools only.** `lab_search`, `pke_status` and `delegate_to_hermes` have closed, signed, drift-checked schemas. Writes need owner approval through tickets bound to the exact arguments, single use.
 - **Same defences as local agents.** PromptGuard (including decoded payloads), canaries, Presidio DLP at ≥0.9, the credential scrubber, the hash-chained audit, and an escalation ladder of throttle → writes disabled → client revoked → vendor disabled.
-- **Command Center.** A new **Agents** tab (Hosted only / Hosted + Local / Local only) and an **Inbound Edge** tab, both tailnet-only.
-- Off by default; every vendor ships disabled. See [`docs/inbound-mcp-edge/`](docs/inbound-mcp-edge/).
+- **Command Center.** An **Agents** tab (Hosted only / Hosted + Local / Local only) showing each agent's connection, whether the vendor documents custom MCP, and the deployment mode with a drift warning; and an **Inbound Edge** tab with live calls, enrollment and kills. Both tailnet-only.
+- **Honest vendor catalog.** Each vendor profile says how it connects (`mcp` or `chat-bridge`) and whether that is documented or **unconfirmed**, with sources. Unconfirmed vendors ship read-only with no OAuth callback.
+- Off by default; every vendor ships disabled; public exposure is a separate owner step. See [`docs/inbound-mcp-edge/`](docs/inbound-mcp-edge/) and the [Claude Duet pilot runbook](docs/inbound-mcp-edge/04-runbook.md#1a-claude-duet-pilot-prod-owners-claude-account).
 
 ## What's New — v1.3.0 "Reliability" (July 2026)
 

@@ -2,6 +2,10 @@
 # Ships DISABLED. Enable only on the owner's instruction (runbook: 04-runbook.md).
 vendor: gemini-spark
 display_name: Gemini Spark
+connection: mcp
+support: documented
+docs:
+  - https://support.google.com/gemini/answer/17209137
 enabled: false
 mode: enforce
 auth:

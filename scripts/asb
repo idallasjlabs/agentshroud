@@ -57,6 +57,8 @@ export AGENTSHROUD_GIT_SHA
 # shellcheck source=scripts/lib/container-runtime.sh
 . "$REPO_DIR/scripts/lib/container-runtime.sh"
 CE="$(detect_container_runtime)" || exit 1
+# shellcheck source=scripts/lib/deployment-mode.sh
+. "$REPO_DIR/scripts/lib/deployment-mode.sh"
 
 # Project name: "agentshroud" for prod, "agentshroud-bot" for bot account.
 # Exported so docker-compose.yml's ${PROJECT:-agentshroud} interpolation can
@@ -631,6 +633,29 @@ fi
 docker volume create hermes-config >/dev/null 2>&1 || true
 docker run --rm -v hermes-config:/data alpine mkdir -p /data/cron >/dev/null 2>&1 || true
 
+# ── Deployment mode: local agents, hosted (cloud) agents, or both ────────────
+# scripts/lib/deployment-mode.sh. Called by up/rebuild/clean-rebuild after their
+# `full`/`hermes` argument parsing. Cloud mode runs no local agents, so it drops
+# Hermes and voice-gateway (which only talks to local agents) even if `full` was
+# asked for. Edge modes also turn on the gateway's edge forwarder so it comes up
+# with the edge container; no mode enables a vendor or public exposure.
+_deployment_setup() {
+  AGENTSHROUD_DEPLOYMENT="$(deployment_mode_resolve "$REPO_DIR/docker/.env")" || exit 1
+  export AGENTSHROUD_DEPLOYMENT
+  _DEPLOY_PROFILE="$(deployment_profile_flags "$AGENTSHROUD_DEPLOYMENT")"
+  _DEPLOY_UP="$(deployment_up_flags "$AGENTSHROUD_DEPLOYMENT")"
+  if deployment_runs_edge "$AGENTSHROUD_DEPLOYMENT"; then
+    export AGENTSHROUD_INBOUND_EDGE=1
+  fi
+  if ! deployment_runs_local_agents "$AGENTSHROUD_DEPLOYMENT" \
+     && { [[ "$_WANT_HERMES" == "1" ]] || [[ -n "$_PROFILE_FLAG" ]]; }; then
+    echo "  [asb] deployment=cloud runs no local agents — skipping Hermes and voice-gateway"
+    _WANT_HERMES=0
+    _PROFILE_FLAG=""
+  fi
+  echo "  [asb] deployment=$AGENTSHROUD_DEPLOYMENT"
+}
+
 case "${1:-}" in
   build)
     _prune_docker
@@ -641,9 +666,10 @@ case "${1:-}" in
     _WANT_HERMES=0
     [[ "${2:-}" == "full" ]] && { _PROFILE_FLAG="--profile voice"; _WANT_HERMES=1; }
     [[ "${2:-}" == "hermes" ]] && _WANT_HERMES=1
+    _deployment_setup
     setup_ephemeral_secrets
     _ensure_sandbox_image
-    $COMPOSE $_PROFILE_FLAG up -d
+    $COMPOSE $_PROFILE_FLAG $_DEPLOY_PROFILE up -d $_DEPLOY_UP
     [[ "$_WANT_HERMES" == "1" ]] && _hermes_up
     bash "$REPO_DIR/scripts/post-deploy-check.sh" || true
     # Hermes/OpenClaw's own per-task sandbox containers (--network none) are
@@ -664,6 +690,7 @@ case "${1:-}" in
     _WANT_HERMES=0
     [[ "${2:-}" == "full" ]] && { _PROFILE_FLAG="--profile voice"; _WANT_HERMES=1; }
     [[ "${2:-}" == "hermes" ]] && _WANT_HERMES=1
+    _deployment_setup
     _hermes_down
     $COMPOSE --profile full down 2>/dev/null || true
     _prune_docker
@@ -672,10 +699,10 @@ case "${1:-}" in
     # builds only the un-profiled services, so `rebuild full` brought every
     # container up on fresh images EXCEPT voice-gateway, which silently kept
     # its old image (found on prod's 2026-10-16 rebuild from a7b8cee1e2).
-    $COMPOSE $_PROFILE_FLAG build --no-cache
+    $COMPOSE $_PROFILE_FLAG $_DEPLOY_PROFILE build --no-cache
     [[ "$_WANT_HERMES" == "1" ]] && $COMPOSE build hermes --no-cache
     _ensure_sandbox_image
-    $COMPOSE $_PROFILE_FLAG up -d
+    $COMPOSE $_PROFILE_FLAG $_DEPLOY_PROFILE up -d $_DEPLOY_UP
     [[ "$_WANT_HERMES" == "1" ]] && _hermes_up
     _reset_device_store
     # A failed check fails the rebuild: `|| true` here let asb exit 0 on a
@@ -692,6 +719,7 @@ case "${1:-}" in
     _WANT_HERMES=0
     [[ "${2:-}" == "full" ]] && { _PROFILE_FLAG="--profile voice"; _WANT_HERMES=1; }
     [[ "${2:-}" == "hermes" ]] && _WANT_HERMES=1
+    _deployment_setup
     echo "This will remove containers, prune stale volumes, and rebuild from scratch."
     echo "Persistent data (workspace, config, SSH keys, browsers) is PRESERVED."
     echo "hermes-config volume is NEVER deleted (preserves Hermes state across rebuilds)."
@@ -709,10 +737,10 @@ case "${1:-}" in
     # builds only the un-profiled services, so `rebuild full` brought every
     # container up on fresh images EXCEPT voice-gateway, which silently kept
     # its old image (found on prod's 2026-10-16 rebuild from a7b8cee1e2).
-    $COMPOSE $_PROFILE_FLAG build --no-cache
+    $COMPOSE $_PROFILE_FLAG $_DEPLOY_PROFILE build --no-cache
     [[ "$_WANT_HERMES" == "1" ]] && $COMPOSE build hermes --no-cache
     _ensure_sandbox_image
-    $COMPOSE $_PROFILE_FLAG up -d
+    $COMPOSE $_PROFILE_FLAG $_DEPLOY_PROFILE up -d $_DEPLOY_UP
     [[ "$_WANT_HERMES" == "1" ]] && _hermes_up
     _reset_device_store
     echo "Clean rebuild complete."

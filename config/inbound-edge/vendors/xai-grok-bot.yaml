@@ -1,0 +1,34 @@
+# Inbound MCP Edge vendor profile — see docs/inbound-mcp-edge/vendors.md.
+# Ships DISABLED. Enable only on the owner's instruction (runbook: 04-runbook.md).
+vendor: xai-grok-bot
+display_name: xAI Grok Bot
+connection: mcp
+# xAI's docs say a Bot "can interact with any MCP or API"; adding a remote HTTPS MCP
+# server with OAuth is described only by third-party guides (checked 2026-11-11).
+support: unconfirmed
+docs:
+  - https://docs.x.ai/grok-bot/overview
+  - https://composio.dev/content/guide-to-frok-bot
+enabled: false
+mode: enforce
+auth:
+  oauth: true
+  dynamic_registration: true
+  redirect_uris:
+    # Empty until Grok Bot is seen registering during a pilot window: OAuth cannot complete.
+    []
+  static_bearer: false
+
+tools:
+  lab_search: read
+  pke_status: read
+limits:
+  per_client_per_minute: 30
+  per_vendor_per_minute: 60
+  max_concurrency: 4
+  daily_calls: 500
+  daily_delegations: 0
+dlp:
+  mode: redact
+  min_confidence: 0.9
+max_response_bytes: 1048576

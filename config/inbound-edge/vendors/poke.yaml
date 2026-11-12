@@ -2,6 +2,10 @@
 # Ships DISABLED. Enable only on the owner's instruction (runbook: 04-runbook.md).
 vendor: poke
 display_name: Poke
+connection: mcp
+support: documented
+docs:
+  - https://poke.com/docs/mcp-servers
 enabled: false
 mode: enforce
 auth:

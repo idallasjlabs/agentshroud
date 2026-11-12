@@ -215,6 +215,8 @@ services:
       # DMZ) is deliberately NOT in PROXY_ALLOWED_NETWORKS above, so the edge can
       # never use /v1, /forward or /telegram-api — only /edge/v1/rpc.
       - AGENTSHROUD_INBOUND_EDGE=${AGENTSHROUD_INBOUND_EDGE:-0}
+      # local | cloud | hybrid (scripts/lib/deployment-mode.sh); shown in the Command Center.
+      - AGENTSHROUD_DEPLOYMENT=${AGENTSHROUD_DEPLOYMENT:-local}
       - AGENTSHROUD_EDGE_PUBLIC_URL=${AGENTSHROUD_EDGE_PUBLIC_URL:-https://marvin.tail240ea8.ts.net:8443}
       - AGENTSHROUD_EDGE_UPSTREAM_HOST=agentshroud-mcp-edge
       - AGENTSHROUD_EDGE_DELEGATE=${AGENTSHROUD_EDGE_DELEGATE:-0}

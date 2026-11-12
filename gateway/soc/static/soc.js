@@ -1640,6 +1640,32 @@ function _statusBadge(map, value) {
   return `<span class="badge badge-${map[value] || 'warning'}">${_esc(value || 'unknown')}</span>`;
 }
 
+// Deployment mode (AGENTSHROUD_DEPLOYMENT): declared by the host, checked against what runs.
+const _DEPLOYMENT_LABEL = {
+  local: 'local agents', cloud: 'hosted (cloud) agents', hybrid: 'local + hosted agents',
+};
+
+function _deploymentHtml(body) {
+  const mode = body.deployment || 'local';
+  const label = `Deployment: ${_esc(mode)}${_DEPLOYMENT_LABEL[mode] ? ' (' + _esc(_DEPLOYMENT_LABEL[mode]) + ')' : ''}`;
+  return body.deployment_drift
+    ? `${label} <span class="badge badge-warning">${_esc(body.deployment_drift)}</span>`
+    : label;
+}
+
+// How a hosted agent reaches AgentShroud, and whether the vendor documents it.
+function _connectionHtml(a) {
+  if (!a.connection) return '—';
+  const support = a.support === 'documented'
+    ? '<span class="badge badge-info">documented</span>'
+    : '<span class="badge badge-warning">unconfirmed</span>';
+  const docs = (Array.isArray(a.docs) ? a.docs : [])
+    .filter(u => typeof u === 'string' && u.startsWith('https://'))
+    .map((u, i) => `<a href="${_esc(u)}" target="_blank" rel="noopener noreferrer">source ${i + 1}</a>`)
+    .join(' · ');
+  return `${_esc(a.connection)} ${support}${docs ? `<div style="font-size:10px">${docs}</div>` : ''}`;
+}
+
 function _denialsText(denials) {
   const parts = Object.entries(denials || {}).map(([k, v]) => `${k}: ${v}`);
   return parts.length ? parts.join(', ') : '0';
@@ -1651,18 +1677,21 @@ async function _loadAgents() {
   const tbody = document.getElementById('agents-tbody');
   if (!tbody) return;
   if (!res.ok) {
-    tbody.innerHTML = `<tr><td colspan="10" style="color:var(--danger);text-align:center;padding:1rem">Error: ${_esc(res.data?.detail?.message || res.status)}</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="11" style="color:var(--danger);text-align:center;padding:1rem">Error: ${_esc(res.data?.detail?.message || res.status)}</td></tr>`;
     return;
   }
   const body = res.data || {};
   if (_agentsMode === null) _agentsMode = body.derived_mode;
   const sel = document.getElementById('agents-mode');
   if (sel) sel.value = body.mode;
-  _setText('agents-derived', `Configured: ${body.derived_mode || '?'} · edge ${body.edge_enabled ? 'on' : 'off'}`);
+  const derived = document.getElementById('agents-derived');
+  if (derived) {
+    derived.innerHTML = `${_deploymentHtml(body)} · running: ${_esc(body.derived_mode || '?')} · edge ${body.edge_enabled ? 'on' : 'off'}`;
+  }
   const agents = Array.isArray(body.agents) ? body.agents : [];
   _setText('agents-count', agents.length);
   if (!agents.length) {
-    tbody.innerHTML = '<tr><td colspan="10" style="color:var(--text-muted);text-align:center;padding:1rem">No agents in this mode</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="11" style="color:var(--text-muted);text-align:center;padding:1rem">No agents in this mode</td></tr>';
     return;
   }
   tbody.innerHTML = agents.map(a => {
@@ -1674,6 +1703,7 @@ async function _loadAgents() {
       <td><strong>${_esc(a.name)}</strong><div style="font-size:10px;color:var(--text-muted)">${_esc(a.id)}</div></td>
       <td>${_esc(a.class)}</td>
       <td style="font-size:11px">${_esc(a.mechanism)}</td>
+      <td style="font-size:11px">${_connectionHtml(a)}</td>
       <td>${_statusBadge(_AGENT_STATUS_BADGE, a.status)}${a.killed && a.status !== 'killed' ? ' <span class="badge badge-critical">killed</span>' : ''}</td>
       <td>${_esc(a.mode || '—')}</td>
       <td>${edgeRow ? _esc(a.calls) : '—'}</td>
@@ -1755,14 +1785,14 @@ async function _loadEdge() {
   }
   const st = res.data || {};
   if (!st.enabled) {
-    header.textContent = 'Inbound MCP Edge is disabled (AGENTSHROUD_INBOUND_EDGE != 1) — no hosted agent can reach this gateway through it.';
+    header.innerHTML = `Inbound MCP Edge is disabled (AGENTSHROUD_INBOUND_EDGE != 1) — no hosted agent can reach this gateway through it. · ${_deploymentHtml(st)}`;
     cards.innerHTML = '';
     kills.innerHTML = '<tr><td colspan="5" style="color:var(--text-muted);text-align:center;padding:1rem">Edge disabled</td></tr>';
     _edgeRecent = [];
     _renderEdgeRecent();
     return;
   }
-  header.textContent = `Enabled · issuer ${st.issuer || '?'}`;
+  header.innerHTML = `Enabled · issuer ${_esc(st.issuer || '?')} · ${_deploymentHtml(st)}`;
   cards.innerHTML = Object.entries(st.vendors || {}).map(([vendor, v]) => {
     const clients = (v.clients || []).map(c =>
       `<div style="display:flex;gap:.25rem;align-items:center;margin-top:.25rem;font-size:11px">
@@ -1774,6 +1804,7 @@ async function _loadEdge() {
       <div class="kpi-label">${_esc(v.display_name || vendor)} ${v.killed ? '<span class="badge badge-critical">killed</span>' : ''}</div>
       <div class="kpi-value">${_esc(v.calls)}</div>
       <div class="kpi-sub">${v.enabled ? _esc(v.mode) : 'disabled'} · ok ${_esc(v.ok)} · lockdown ${_statusBadge(_LOCKDOWN_BADGE, v.lockdown)}</div>
+      <div style="font-size:11px;margin-top:.35rem">${_connectionHtml(v)}</div>
       <div style="font-size:11px;margin-top:.35rem">Denials: ${_esc(_denialsText(v.denials))}</div>
       <div style="font-size:11px">DLP ${_esc(v.dlp_hits)} · Canary ${_esc(v.canary_hits)} · Pending approvals ${_esc(v.pending_approvals)}</div>
       ${clients}

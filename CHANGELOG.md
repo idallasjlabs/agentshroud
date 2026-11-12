@@ -18,7 +18,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   descriptors; a gateway call pipeline reusing PromptGuard, CanaryTripwire, PIISanitizer, ProgressiveLockdown,
   AuditStore and EnhancedApprovalQueue; args-bound single-use approval tickets with a raw-args Telegram card;
   `wrap_untrusted` for third-party content; and the Command Center Agents and Inbound Edge tabs. Off by
-  default; all vendors disabled.
+  default; all vendors disabled. Status: in pilot (Claude Duet first).
+- **Deployment modes**: `AGENTSHROUD_DEPLOYMENT=local|cloud|hybrid` (default `local`) chooses local agents,
+  hosted agents through the edge, or both. `asb up/rebuild/clean-rebuild` start the matching containers
+  (`scripts/lib/deployment-mode.sh`); `post-deploy-check` adds P9 (edge healthy) in cloud/hybrid.
+- **Vendor catalog**: profiles for Meta Muse and xAI Grok Bot (disabled, read-only, custom MCP unconfirmed);
+  every profile declares `connection` (`mcp`/`chat-bridge`), `support` (`documented`/`unconfirmed`) and
+  cited `docs`. The Claude profile is now "Anthropic Claude (Duet, chat, Cowork)".
+- **Command Center**: Connection column on Agents; declared deployment mode and drift on Agents and
+  Inbound Edge.
+- **Claude Duet pilot runbook** (`docs/inbound-mcp-edge/04-runbook.md` §1a).
+
+### Changed
+
+- `post-deploy-check` now FAILS when OpenClaw is missing in `local`/`hybrid` mode (it used to skip the bot
+  checks silently), and when a local agent runs in `cloud` mode.
+- OpenAI Dots profile: `connection: chat-bridge`, read-only. An enabled chat-bridge vendor refuses to load
+  until the Slack/Teams bridge (SCRUM-220) exists.
 
 ### Fixed
 
