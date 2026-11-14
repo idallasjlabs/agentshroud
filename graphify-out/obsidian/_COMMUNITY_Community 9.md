@@ -1,18 +1,16 @@
 ---
 type: community
-members: 78
+members: 169
 ---
 
 # Community 9
 
-**Members:** 78 nodes
+**Members:** 169 nodes
 
 ## Members
-- [[.__init__()_25]] - code - gateway/proxy/mcp_audit.py
-- [[.__init__()_32]] - code - gateway/proxy/pipeline.py
-- [[.__init__()_53]] - code - gateway/security/alert_dispatcher.py
-- [[.__init__()_68]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[.__init__()_92]] - code - gateway/security/killswitch_monitor.py
+- [[.__init__()_40]] - code - gateway/proxy/mcp_audit.py
+- [[.__init__()_47]] - code - gateway/proxy/pipeline.py
+- [[.__init__()_107]] - code - gateway/security/killswitch_monitor.py
 - [[._check_request_rate()]] - code - gateway/security/killswitch_monitor.py
 - [[._check_system_resources()]] - code - gateway/security/killswitch_monitor.py
 - [[._check_token_usage()]] - code - gateway/security/killswitch_monitor.py
@@ -22,6 +20,7 @@ members: 78
 - [[._get_system_stats()]] - code - gateway/security/killswitch_monitor.py
 - [[._log_heartbeat_result()]] - code - gateway/security/killswitch_monitor.py
 - [[._log_verification_result()]] - code - gateway/security/killswitch_monitor.py
+- [[._make_monitor()]] - code - gateway/tests/test_observatory_mode.py
 - [[._send_anomaly_alert()]] - code - gateway/security/killswitch_monitor.py
 - [[._send_heartbeat_alert()]] - code - gateway/security/killswitch_monitor.py
 - [[._send_verification_alert()]] - code - gateway/security/killswitch_monitor.py
@@ -34,58 +33,150 @@ members: 78
 - [[.get_status()]] - code - gateway/security/killswitch_monitor.py
 - [[.heartbeat_check()]] - code - gateway/security/killswitch_monitor.py
 - [[.test_all_pass_when_script_valid()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_anomaly_detection_excessive_tool_calls()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.test_anomaly_detection_normal()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.test_auto_revert_timer_logic()]] - code - gateway/tests/test_observatory_mode.py
 - [[.test_clean_old_metrics_drops_stale_entries()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_critical_logged_when_setting_non_enforce()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_default_config()_3]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.test_default_mode_is_enforce()_3]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_default_revert_minutes_is_30()]] - code - gateway/tests/test_observatory_mode.py
 - [[.test_docker_unavailable_is_fail()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
 - [[.test_dry_run_exercises_enabled_modes()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_dry_run_true_does_not_kill()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_duration_is_non_negative()]] - code - gateway/tests/test_observatory_mode.py
 - [[.test_excessive_requests_flagged()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
 - [[.test_excessive_tokens_flagged()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
 - [[.test_excessive_tool_calls_flagged_and_alerted()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
 - [[.test_fail_when_script_missing_triggers_alert()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
 - [[.test_failure_increments_and_alerts_at_threshold()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_get_module_mode_pinned_modules()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_get_observatory_mode_endpoint()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_get_status()]] - code - gateway/tests/test_killswitch_monitor.py
 - [[.test_get_status_reports_verification_due()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
 - [[.test_get_system_stats_handles_psutil_error()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
 - [[.test_healthy_resets_miss_counter()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_heartbeat_check()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.test_init()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.test_invalid_mode_returns_400()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_killswitch_dry_run_disabled()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_module_mode_resolution()]] - code - gateway/tests/test_observatory_mode.py
 - [[.test_no_anomaly_when_within_limits()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_no_critical_when_setting_enforce()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_observatory_mode_state_initialization()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_observatory_mode_validation()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_overall_status_is_valid_value()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_pinned_modules_validation()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_response_includes_previous_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_response_includes_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_response_includes_timestamp()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_result_has_required_fields()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_returns_monitor_when_set()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_returns_observatory_when_set()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_revert_minutes_clamped_max()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_revert_minutes_clamped_min()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_script_exists_test_is_present()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_security_pipeline_set_global_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_security_pipeline_set_global_mode_missing_components()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_set_enforce_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_set_monitor_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_set_observatory_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_set_observatory_mode_endpoint()]] - code - gateway/tests/test_observatory_mode.py
 - [[.test_slow_when_response_exceeds_timeout()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
 - [[.test_system_resource_cpu_anomaly()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
 - [[.test_system_resource_memory_anomaly()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_verification_log_written()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_verify_killswitch_script_not_exists()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.to_dict()_10]] - code - gateway/security/killswitch_config.py
 - [[.verify_killswitch()]] - code - gateway/security/killswitch_monitor.py
-- [[Any_45]] - code - gateway/security/killswitch_monitor.py
+- [[Any_54]] - code - gateway/security/killswitch_config.py
+- [[Any_55]] - code - gateway/security/killswitch_monitor.py
+- [[Automated verification that verify_killswitch() returns required fields.]] - rationale - gateway/tests/test_observatory_mode.py
 - [[Check if request rate is abnormal.]] - rationale - gateway/security/killswitch_monitor.py
 - [[Check if system resource usage is abnormal.]] - rationale - gateway/security/killswitch_monitor.py
 - [[Check if the agent is responding within expected parameters.          Returns]] - rationale - gateway/security/killswitch_monitor.py
 - [[Check if token usage is abnormal.]] - rationale - gateway/security/killswitch_monitor.py
 - [[Check if tool call rate is abnormal.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Configuration for kill switch monitoring and verification.]] - rationale - gateway/security/killswitch_config.py
+- [[Convert configuration to dictionary for serialization.]] - rationale - gateway/security/killswitch_config.py
 - [[Count events in the last N seconds.]] - rationale - gateway/security/killswitch_monitor.py
 - [[Detect unusual patterns that might indicate rogue behavior.          Args]] - rationale - gateway/security/killswitch_monitor.py
+- [[FR2 Use Control]] - concept - docs/compliance/iec-62443-matrix.md
+- [[FastAPI_2]] - code - gateway/tests/test_observatory_mode.py
 - [[Get current kill switch monitor status.          Returns             Dict conta]] - rationale - gateway/security/killswitch_monitor.py
 - [[Get current system statistics.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Integration tests for Observatory Mode API endpoints.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Kill Switch Module Badge Icon]] - image - branding/icons/modules/kill-switch-256x256.png
+- [[Kill switch dry_run must be False — real termination on anomaly.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[KillSwitchConfig]] - code - gateway/security/killswitch_config.py
 - [[KillSwitchConfig_1]] - code - gateway/security/killswitch_monitor.py
 - [[KillSwitchMonitor]] - code - gateway/security/killswitch_monitor.py
 - [[Log heartbeat result to file.]] - rationale - gateway/security/killswitch_monitor.py
 - [[Log verification result to file.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Minimal FastAPI app that mounts the management router with auth bypassed.]] - rationale - gateway/tests/test_observatory_mode.py
 - [[Monitor and verify kill switch functionality.      Provides automated verificati]] - rationale - gateway/security/killswitch_monitor.py
-- [[Path_5]] - code - gateway/security/alert_dispatcher.py
+- [[Path_39]] - code - gateway/tests/test_observatory_mode.py
 - [[Remove metrics older than cutoff_time.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Reset AGENTSHROUD_MODE and cancel any revert task between tests.]] - rationale - gateway/tests/test_observatory_mode.py
 - [[Send alert for anomaly detection.]] - rationale - gateway/security/killswitch_monitor.py
 - [[Send alert for heartbeat failure.]] - rationale - gateway/security/killswitch_monitor.py
 - [[Send alert for verification failure.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Test GET managemode endpoint returns correct structure.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test Observatory Mode configuration and endpoints.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test POST managemode endpoint requestresponse.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test SecurityPipeline.set_global_mode method.]] - rationale - gateway/tests/test_observatory_mode.py
 - [[Test a specific kill switch mode.          Args             mode The kill swit]] - rationale - gateway/security/killswitch_monitor.py
+- [[Test anomaly detection with excessive tool calls.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test anomaly detection with normal metrics.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test auto-revert timer functionality.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test basic heartbeat functionality.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test default configuration values._2]] - rationale - gateway/tests/test_killswitch_monitor.py
 - [[Test if Docker is available.]] - rationale - gateway/security/killswitch_monitor.py
 - [[Test if the kill switch script exists.]] - rationale - gateway/security/killswitch_monitor.py
 - [[Test if the kill switch script has correct permissions.]] - rationale - gateway/security/killswitch_monitor.py
 - [[Test if the kill switch script has valid syntax.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Test kill switch configuration.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test kill switch monitor functionality.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test module mode resolution with pinned modules.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test monitor initialization.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test set_global_mode handles missing components gracefully.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test status retrieval.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test that observatory mode state is properly initialized.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test that pinned modules always return enforce even in monitor mode.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test validation of observatory mode parameters.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test validation of pinned module names.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test verification when kill switch script does not exist.]] - rationale - gateway/tests/test_killswitch_monitor.py
 - [[TestAnomalyDetection_1]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[TestCriticalLogging]] - code - gateway/tests/test_observatory_mode.py
+- [[TestGetMode]] - code - gateway/tests/test_observatory_mode.py
 - [[TestHeartbeat]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[TestKillSwitchConfig_1]] - code - gateway/tests/test_killswitch_monitor.py
+- [[TestKillSwitchMonitor]] - code - gateway/tests/test_killswitch_monitor.py
+- [[TestKillSwitchVerification]] - code - gateway/tests/test_observatory_mode.py
+- [[TestObservatoryMode]] - code - gateway/tests/test_observatory_mode.py
+- [[TestObservatoryModeAPI]] - code - gateway/tests/test_observatory_mode.py
+- [[TestSetMode]] - code - gateway/tests/test_observatory_mode.py
 - [[TestStatusAndStats]] - code - gateway/tests/test_killswitch_monitor_behavior.py
 - [[TestVerifyKillswitch]] - code - gateway/tests/test_killswitch_monitor_behavior.py
 - [[Verify that the kill switch mechanism works without actually killing.          A]] - rationale - gateway/security/killswitch_monitor.py
 - [[_fake_stats()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[_make_app()]] - code - gateway/tests/test_observatory_mode.py
+- [[client()_11]] - code - gateway/tests/test_observatory_mode.py
+- [[config()_1]] - code - gateway/tests/test_killswitch_monitor_behavior.py
 - [[deque]] - code - gateway/security/killswitch_monitor.py
 - [[dispatcher()_1]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[dry_run=True must never trigger actual kill switch execution.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[killswitch_config.py]] - code - gateway/security/killswitch_config.py
 - [[killswitch_config.py (KillSwitchConfig)]] - code - gateway/security/killswitch_config.py
+- [[killswitch_monitor.py]] - code - gateway/security/killswitch_monitor.py
 - [[killswitch_monitor.py (KillSwitchMonitor)]] - code - gateway/security/killswitch_monitor.py
+- [[reset_env_and_task()]] - code - gateway/tests/test_observatory_mode.py
+- [[revert_after_minutes above 480 is clamped to 480.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[revert_after_minutes below 1 is clamped to 1.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[test_killswitch_monitor.py]] - code - gateway/tests/test_killswitch_monitor.py
 - [[test_killswitch_monitor_behavior.py]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[test_observatory_mode.py]] - code - gateway/tests/test_observatory_mode.py
+- [[verify_killswitch() must write a log entry for auditability.]] - rationale - gateway/tests/test_observatory_mode.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -95,22 +186,31 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 23 edges to [[_COMMUNITY_Community 65]]
-- 13 edges to [[_COMMUNITY_Community 72]]
-- 6 edges to [[_COMMUNITY_Community 103]]
-- 2 edges to [[_COMMUNITY_Community 88]]
+- 17 edges to [[_COMMUNITY_Community 103]]
+- 15 edges to [[_COMMUNITY_Community 72]]
+- 14 edges to [[_COMMUNITY_Community 7]]
+- 3 edges to [[_COMMUNITY_Community 1002]]
 - 2 edges to [[_COMMUNITY_Community 181]]
+- 1 edge to [[_COMMUNITY_Community 1]]
 - 1 edge to [[_COMMUNITY_Community 184]]
 - 1 edge to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Community 557]]
 - 1 edge to [[_COMMUNITY_Community 0]]
-- 1 edge to [[_COMMUNITY_Community 344]]
+- 1 edge to [[_COMMUNITY_Community 88]]
+- 1 edge to [[_COMMUNITY_Community 89]]
+- 1 edge to [[_COMMUNITY_Community 489]]
+- 1 edge to [[_COMMUNITY_Community 141]]
+- 1 edge to [[_COMMUNITY_Community 75]]
+- 1 edge to [[_COMMUNITY_Community 6]]
 - 1 edge to [[_COMMUNITY_Community 40]]
-- 1 edge to [[_COMMUNITY_Community 1002]]
-- 1 edge to [[_COMMUNITY_Community 1214]]
+- 1 edge to [[_COMMUNITY_Community 904]]
+- 1 edge to [[_COMMUNITY_Community 794]]
+- 1 edge to [[_COMMUNITY_Community 393]]
+- 1 edge to [[_COMMUNITY_Community 589]]
 
 ## Top bridge nodes
-- [[KillSwitchMonitor]] - degree 80, connects to 6 communities
-- [[deque]] - degree 8, connects to 2 communities
-- [[Any_45]] - degree 21, connects to 1 community
-- [[test_killswitch_monitor_behavior.py]] - degree 11, connects to 1 community
-- [[TestAnomalyDetection_1]] - degree 9, connects to 1 community
+- [[FR2 Use Control]] - degree 7, connects to 6 communities
+- [[KillSwitchMonitor]] - degree 80, connects to 4 communities
+- [[KillSwitchConfig]] - degree 43, connects to 4 communities
+- [[test_observatory_mode.py]] - degree 19, connects to 4 communities
+- [[TestObservatoryMode]] - degree 15, connects to 3 communities

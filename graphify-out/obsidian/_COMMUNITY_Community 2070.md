@@ -1,20 +1,19 @@
 ---
 type: community
-members: 7
+members: 6
 ---
 
 # Community 2070
 
-**Members:** 7 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[.export_leakage_report()]] - code - gateway/security/env_guard.py
-- [[.get_leakage_summary()]] - code - gateway/security/env_guard.py
-- [[.monitor_environment_access()]] - code - gateway/security/env_guard.py
-- [[Any_39]] - code - gateway/security/env_guard.py
-- [[Export leakage findings to a report file.]] - rationale - gateway/security/env_guard.py
-- [[Get summary of all detected leakages.]] - rationale - gateway/security/env_guard.py
-- [[Monitor an agent's environment access attempts.          Args             agent]] - rationale - gateway/security/env_guard.py
+- [[FY26 Cost Reduction Context_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[In-Scope Departments (Cost Reduction)_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Infrastructure You Must Know_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Out-of-Scope Departments (Inventory & Tag Only)_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Savings Levers (Ranked by Impact)_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Target 40% Full-Year Reduction on Global Services Resources_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 0]]
+- 1 edge to [[_COMMUNITY_Community 494]]
 
 ## Top bridge nodes
-- [[.get_leakage_summary()]] - degree 4, connects to 1 community
-- [[.monitor_environment_access()]] - degree 3, connects to 1 community
-- [[.export_leakage_report()]] - degree 3, connects to 1 community
+- [[FY26 Cost Reduction Context_6]] - degree 6, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/Claude-Code-TDD-Playbook.md"
 type: "concept"
-community: "Community 742"
+community: "Community 1424"
 location: "Section 3"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_742
+  - community/Community_1424
 ---
 
 # Plan Mode as default permission mode
@@ -15,4 +15,4 @@ tags:
 - [[Claude Code (PRIMARY developer configuration)]] - `references` [EXTRACTED]
 - [[Pre-change analysis protocol (CHANGE PROPOSAL, Section 15)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_742
+#graphify/concept #graphify/EXTRACTED #community/Community_1424

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "document"
-community: "Community 707"
+community: "Community 2032"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_707
+  - community/Community_2032
 ---
 
 # Dependency Graph.md
@@ -16,4 +16,4 @@ tags:
 - [[Gateway Startup Initialization Order]] - `conceptually_related_to` [EXTRACTED]
 - [[README_127]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/document #graphify/EXTRACTED #community/Community_707
+#graphify/document #graphify/EXTRACTED #community/Community_2032

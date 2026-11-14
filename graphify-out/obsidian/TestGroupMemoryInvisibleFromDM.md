@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "Community 479"
+community: "Community 61"
 location: "L147"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_479
+  - community/Community_61
 ---
 
 # TestGroupMemoryInvisibleFromDM
@@ -25,4 +25,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_479
+#graphify/code #graphify/INFERRED #community/Community_61

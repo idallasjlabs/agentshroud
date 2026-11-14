@@ -1,16 +1,17 @@
 ---
 type: community
-members: 3
+members: 4
 ---
 
 # Community 2329
 
-**Members:** 3 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_multiline_parenthesised_value_consumed()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[.test_unterminated_field_returns_end()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[TestConsumeFieldEdge]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[Deliverables_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Reports (`.reports`)_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Script Templates_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Scripts (`.scripts`)_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,11 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 69]]
-- 1 edge to [[_COMMUNITY_Community 562]]
-- 1 edge to [[_COMMUNITY_Community 917]]
+- 1 edge to [[_COMMUNITY_Community 494]]
 
 ## Top bridge nodes
-- [[TestConsumeFieldEdge]] - degree 4, connects to 2 communities
-- [[.test_unterminated_field_returns_end()]] - degree 2, connects to 1 community
-- [[.test_multiline_parenthesised_value_consumed()]] - degree 2, connects to 1 community
+- [[Deliverables_6]] - degree 4, connects to 1 community

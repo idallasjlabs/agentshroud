@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[.test_get_rootkit_events()]] - `calls` [EXTRACTED]
-- [[Any_65]] - `references` [EXTRACTED]
+- [[Any_75]] - `references` [EXTRACTED]
 - [[Filter alerts to rootkit detection events only.      Args         alerts List]] - `rationale_for` [EXTRACTED]
 - [[generate_summary()_3]] - `calls` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]

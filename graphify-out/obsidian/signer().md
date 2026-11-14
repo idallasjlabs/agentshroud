@@ -12,7 +12,7 @@ tags:
 # signer()
 
 ## Connections
-- [[EnvelopeSigner]] - `calls` [EXTRACTED]
+- [[EnvelopeSigner_1]] - `calls` [EXTRACTED]
 - [[test_instruction_envelope.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_24

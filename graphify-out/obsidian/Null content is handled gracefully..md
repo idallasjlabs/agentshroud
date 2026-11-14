@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "rationale"
-community: "Community 541"
+community: "Community 50"
 location: "L128"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_541
+  - community/Community_50
 ---
 
 # Null content is handled gracefully.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_result_with_null_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_541
+#graphify/rationale #graphify/EXTRACTED #community/Community_50

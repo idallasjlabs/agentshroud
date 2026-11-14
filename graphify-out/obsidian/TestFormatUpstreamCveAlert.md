@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Community 1202"
+community: "Community 368"
 location: "L364"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1202
+  - community/Community_368
 ---
 
 # TestFormatUpstreamCveAlert
@@ -27,4 +27,4 @@ tags:
 - [[.test_summary_under_telegram_limit_for_100_cves()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1202
+#graphify/code #graphify/EXTRACTED #community/Community_368

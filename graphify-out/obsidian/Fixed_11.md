@@ -1,17 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 2039"
-location: "L596"
+community: "Community 1202"
+location: "L582"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2039
+  - community/Community_1202
 ---
 
 # Fixed
 
 ## Connections
-- [[1.1.1 — fixguard-wiring-and-ops-hardening (2026-06-10)]] - `contains` [EXTRACTED]
+- [[1.2.0 — featesp32-s3-hermes-voice (2026-06-24)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2039
+#graphify/document #graphify/EXTRACTED #community/Community_1202

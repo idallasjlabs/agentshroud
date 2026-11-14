@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "Community 102"
-location: "L67"
+community: "Community 42"
+location: "L18900"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_102
+  - community/Community_42
 ---
 
 # Any
 
 ## Connections
-- [[._handle_critical()]] - `references` [EXTRACTED]
-- [[categorize_alerts()]] - `references` [EXTRACTED]
-- [[generate_summary()_1]] - `references` [EXTRACTED]
-- [[parse_alert()]] - `references` [EXTRACTED]
-- [[read_alerts()]] - `references` [EXTRACTED]
+- [[get_agent_cve_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_102
+#graphify/code #graphify/EXTRACTED #community/Community_42

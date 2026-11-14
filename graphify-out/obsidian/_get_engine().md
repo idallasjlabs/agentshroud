@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 49"
-location: "L1215"
+community: "Community 2017"
+location: "L1242"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/Community_2017
 ---
 
 # _get_engine()
@@ -15,6 +15,7 @@ tags:
 - [[Get the active container engine.]] - `rationale_for` [EXTRACTED]
 - [[api.py]] - `contains` [EXTRACTED]
 - [[check_bot_updates()]] - `calls` [EXTRACTED]
+- [[execute_killswitch()]] - `calls` [EXTRACTED]
 - [[get_engine()]] - `calls` [EXTRACTED]
 - [[get_logs()_1]] - `calls` [EXTRACTED]
 - [[killswitch()]] - `calls` [EXTRACTED]
@@ -28,4 +29,4 @@ tags:
 - [[upgrade_bot()_1]] - `calls` [EXTRACTED]
 - [[ws_logs()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_49
+#graphify/code #graphify/EXTRACTED #community/Community_2017

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 49"
+community: "Community 2017"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/Community_2017
 ---
 
 # api.py
@@ -19,6 +19,7 @@ tags:
 - [[IntelDraftRequest]] - `contains` [EXTRACTED]
 - [[IntelReportStore]] - `imports` [EXTRACTED]
 - [[KillSwitchAction]] - `contains` [EXTRACTED]
+- [[KillSwitchError]] - `contains` [EXTRACTED]
 - [[ModeRequest]] - `contains` [EXTRACTED]
 - [[RuntimeConfig]] - `imports` [EXTRACTED]
 - [[ServiceAction]] - `contains` [EXTRACTED]
@@ -47,6 +48,7 @@ tags:
 - [[dashboard_endpoints.py]] - `imports_from` [EXTRACTED]
 - [[deploy_manifest()]] - `imports` [EXTRACTED]
 - [[detect_runtime()]] - `imports` [EXTRACTED]
+- [[execute_killswitch()]] - `contains` [EXTRACTED]
 - [[export_config()]] - `contains` [EXTRACTED]
 - [[falco_monitor.py]] - `conceptually_related_to` [INFERRED]
 - [[get_competitive_intel()]] - `contains` [EXTRACTED]
@@ -88,4 +90,4 @@ tags:
 - [[ws_logs()]] - `contains` [EXTRACTED]
 - [[ws_updates()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_49
+#graphify/code #graphify/EXTRACTED #community/Community_2017

@@ -1,15 +1,17 @@
 ---
 type: community
-members: 2
+members: 4
 ---
 
 # Community 2339
 
-**Members:** 2 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_protection_stats()]] - code - gateway/tests/test_prompt_protection.py
-- [[Test getting protection statistics.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[.test_clamd_running_true_with_connectable_socket()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_fluent_bit_running_false_without_pidfile()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_fluent_bit_running_true_with_live_pid()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestSocketAndPidProbes]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +21,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 351]]
+- 1 edge to [[_COMMUNITY_Community 431]]
+- 1 edge to [[_COMMUNITY_Community 219]]
 
 ## Top bridge nodes
-- [[.test_protection_stats()]] - degree 2, connects to 1 community
+- [[TestSocketAndPidProbes]] - degree 4, connects to 1 community
+- [[.test_fluent_bit_running_true_with_live_pid()]] - degree 2, connects to 1 community

@@ -2,7 +2,7 @@
 source_file: "gateway/security/audit_store.py"
 type: "code"
 community: "Community 254"
-location: "L54"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # AuditEvent
 
 ## Connections
-- [[.__init__()_57]] - `method` [EXTRACTED]
+- [[.__init__()_72]] - `method` [EXTRACTED]
 - [[._generate_event_id()]] - `method` [EXTRACTED]
 - [[.compute_content_hash()]] - `method` [EXTRACTED]
 - [[.compute_entry_hash()]] - `method` [EXTRACTED]
@@ -32,7 +32,9 @@ tags:
 - [[TestAuditEvent]] - `uses` [INFERRED]
 - [[TestAuditExporter]] - `uses` [INFERRED]
 - [[TestAuditStore]] - `uses` [INFERRED]
+- [[TestAuditStoreAnchoredVerify]] - `uses` [INFERRED]
 - [[TestAuditStoreBotId]] - `uses` [INFERRED]
+- [[TestAuditStoreConcurrentAppend]] - `uses` [INFERRED]
 - [[TextIO]] - `uses` [INFERRED]
 - [[audit_export.py]] - `imports` [EXTRACTED]
 - [[audit_store.py]] - `contains` [EXTRACTED]

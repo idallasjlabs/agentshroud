@@ -12,7 +12,7 @@ tags:
 # _PassthroughPipeline
 
 ## Connections
-- [[.__init__()_158]] - `method` [EXTRACTED]
+- [[.__init__()_179]] - `method` [EXTRACTED]
 - [[.process_inbound()_6]] - `method` [EXTRACTED]
 - [[.process_outbound()_6]] - `method` [EXTRACTED]
 - [[AgentTarget]] - `uses` [INFERRED]

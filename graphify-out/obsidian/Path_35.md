@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_network_validator_gate.py"
+source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "Community 72"
-location: "L33"
+community: "Community 99"
+location: "L43"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_72
+  - community/Community_99
 ---
 
 # Path
 
 ## Connections
-- [[NetworkValidator]] - `uses` [INFERRED]
-- [[tmp_compose()]] - `references` [EXTRACTED]
+- [[CollaboratorActivityTracker]] - `uses` [INFERRED]
+- [[_make_md()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_72
+#graphify/code #graphify/INFERRED #community/Community_99

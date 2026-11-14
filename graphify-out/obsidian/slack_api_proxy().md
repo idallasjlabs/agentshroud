@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 978"
-location: "L4716"
+community: "Community 10"
+location: "L4721"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/Community_10
 ---
 
 # slack_api_proxy()
 
 ## Connections
-- [[JSONResponse]] - `calls` [EXTRACTED]
+- [[HTTPException]] - `calls` [EXTRACTED]
+- [[JSONResponse_1]] - `calls` [EXTRACTED]
 - [[Proxy bot Slack Web API calls through SecurityPipeline.      Restricted to the i]] - `rationale_for` [EXTRACTED]
-- [[Request_1]] - `references` [EXTRACTED]
+- [[Request_2]] - `references` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_978
+#graphify/code #graphify/EXTRACTED #community/Community_10

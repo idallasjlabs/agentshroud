@@ -61,8 +61,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Community 185]]
-- 1 edge to [[_COMMUNITY_Community 49]]
-- 1 edge to [[_COMMUNITY_Community 112]]
+- 1 edge to [[_COMMUNITY_Community 2017]]
+- 1 edge to [[_COMMUNITY_Community 43]]
 
 ## Top bridge nodes
 - [[proxy_status.py]] - degree 4, connects to 2 communities

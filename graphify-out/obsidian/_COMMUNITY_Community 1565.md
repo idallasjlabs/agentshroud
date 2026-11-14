@@ -1,21 +1,22 @@
 ---
 type: community
-members: 8
+members: 9
 ---
 
 # Community 1565
 
-**Members:** 8 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[._fake_get_updates_urlopen()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[._make_proxy_with_mock_buffer()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_json_body_still_calls_mark_delivered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_url_encoded_body_calls_mark_delivered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[JSON getUpdates body must still call mark_delivered (existing behaviour preserve]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[TestReplayBufferOffsetParsing]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[URL-encoded getUpdates body must call mark_delivered with the correct int offset]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Verify URL-encoded and JSON getUpdates bodies both trigger mark_delivered correc]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_real_world_agent_responses()]] - code - gateway/tests/test_outbound_filter.py
+- [[.test_with_pii_sanitizer_compatibility()]] - code - gateway/tests/test_outbound_filter.py
+- [[Categories of information that may need filtering.]] - rationale - gateway/security/outbound_filter.py
+- [[InfoCategory]] - code - gateway/security/outbound_filter.py
+- [[Integration tests with other security components.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test that outbound filter works alongside PII sanitizer.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test with realistic agent response patterns.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[TestIntegration]] - code - gateway/tests/test_outbound_filter.py
+- [[test_outbound_filter.py]] - code - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,12 +26,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 7]]
-- 2 edges to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 99]]
-- 1 edge to [[_COMMUNITY_Community 2325]]
+- 6 edges to [[_COMMUNITY_Community 24]]
+- 2 edges to [[_COMMUNITY_Community 119]]
+- 2 edges to [[_COMMUNITY_Community 98]]
+- 1 edge to [[_COMMUNITY_Community 8]]
+- 1 edge to [[_COMMUNITY_Community 7]]
 
 ## Top bridge nodes
-- [[TestReplayBufferOffsetParsing]] - degree 10, connects to 4 communities
-- [[._make_proxy_with_mock_buffer()]] - degree 5, connects to 1 community
+- [[InfoCategory]] - degree 9, connects to 5 communities
+- [[test_outbound_filter.py]] - degree 5, connects to 3 communities
+- [[TestIntegration]] - degree 6, connects to 1 community
+- [[.test_with_pii_sanitizer_compatibility()]] - degree 3, connects to 1 community
+- [[.test_real_world_agent_responses()]] - degree 3, connects to 1 community

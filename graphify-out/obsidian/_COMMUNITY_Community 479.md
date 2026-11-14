@@ -1,43 +1,39 @@
 ---
 type: community
-members: 30
+members: 26
 ---
 
 # Community 479
 
-**Members:** 30 nodes
+**Members:** 26 nodes
 
 ## Members
-- [[.test_group_a_write_invisible_from_group_b()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_group_b_write_invisible_from_group_a()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_group_id_uses_group_prefix_namespace()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_group_memory_physically_isolated()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_group_write_invisible_from_user_dm()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_group_writes_are_independent_namespaces()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_merged_memory_separates_group_and_dm()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_user_dm_write_invisible_from_group()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_user_dm_write_invisible_from_other_group()]] - code - gateway/tests/test_group_isolation.py
-- [[Both groups store separate content with no cross-contamination.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Content appended to group-A memory must not appear in group-B memory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Content appended to group-B must not appear in group-A memory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Content written to a group must not appear in any user's private DM memory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Content written to a user DM must not appear in any group memory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Group workspace content must not leak into any user's DM workspace.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Test Group Config]] - code - gateway/tests/test_group_config.py
-- [[TestGroupMemoryInvisibleFromDM]] - code - gateway/tests/test_group_isolation.py
-- [[TestGroupMemoryNamespaceIsolation]] - code - gateway/tests/test_group_isolation.py
-- [[User DM content must not leak into a group the user is NOT a member of.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Writes in group-A must not be readable from group-B.]] - rationale - gateway/tests/test_group_isolation.py
-- [[agent_isolation.py (AgentRegistry)]] - code - gateway/security/agent_isolation.py
-- [[get_merged_memory_for_user returns group section and private section separately.]] - rationale - gateway/tests/test_group_isolation.py
-- [[group-A and group-B memory files must be in separate directories.]] - rationale - gateway/tests/test_group_isolation.py
-- [[group-{chat_id} sessions must live under the 'groups' subdirectory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[rbac()]] - code - gateway/tests/test_group_isolation.py
-- [[session_manager()_1]] - code - gateway/tests/test_group_isolation.py
-- [[shared_memory()]] - code - gateway/tests/test_group_isolation.py
-- [[teams()_2]] - code - gateway/tests/test_group_isolation.py
-- [[test_group_isolation.py]] - code - gateway/tests/test_group_isolation.py
-- [[tmp_workspace()]] - code - gateway/tests/test_group_isolation.py
+- [[.guard()_5]] - code - gateway/tests/test_security_audit.py
+- [[.test_base64_injection()]] - code - gateway/tests/test_security_audit.py
+- [[.test_clean_message_not_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_clean_technical_message()]] - code - gateway/tests/test_security_audit.py
+- [[.test_dan_jailbreak()]] - code - gateway/tests/test_security_audit.py
+- [[.test_empty_input()_2]] - code - gateway/tests/test_security_audit.py
+- [[.test_ignore_previous_instructions()]] - code - gateway/tests/test_security_audit.py
+- [[.test_indirect_injection_url()]] - code - gateway/tests/test_security_audit.py
+- [[.test_instruction_override()]] - code - gateway/tests/test_security_audit.py
+- [[.test_multilingual_injection()]] - code - gateway/tests/test_security_audit.py
+- [[.test_prompt_leaking_via_markdown()]] - code - gateway/tests/test_security_audit.py
+- [[.test_repeated_injection()]] - code - gateway/tests/test_security_audit.py
+- [[.test_role_reassignment()]] - code - gateway/tests/test_security_audit.py
+- [[.test_system_prompt_extraction()]] - code - gateway/tests/test_security_audit.py
+- [[.test_token_smuggling()]] - code - gateway/tests/test_security_audit.py
+- [[.test_xml_injection()]] - code - gateway/tests/test_security_audit.py
+- [[Base64 encoded instruction.]] - rationale - gateway/tests/test_security_audit.py
+- [[Injection in another language.]] - rationale - gateway/tests/test_security_audit.py
+- [[Markdown-based injection.]] - rationale - gateway/tests/test_security_audit.py
+- [[Normal messages should pass.]] - rationale - gateway/tests/test_security_audit.py
+- [[Same injection multiple times shouldn't bypass.]] - rationale - gateway/tests/test_security_audit.py
+- [[Technical discussion mentioning 'system' shouldn't trigger.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test prompt injection detection with adversarial payloads.]] - rationale - gateway/tests/test_security_audit.py
+- [[TestPromptGuard]] - code - gateway/tests/test_security_audit.py
+- [[Token boundary attack.]] - rationale - gateway/tests/test_security_audit.py
+- [[URL-based indirect injection.]] - rationale - gateway/tests/test_security_audit.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,16 +43,26 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 52]]
-- 5 edges to [[_COMMUNITY_Community 1]]
-- 4 edges to [[_COMMUNITY_Community 196]]
-- 4 edges to [[_COMMUNITY_Community 6]]
-- 4 edges to [[_COMMUNITY_Community 61]]
-- 1 edge to [[_COMMUNITY_Community 60]]
+- 5 edges to [[_COMMUNITY_Community 41]]
+- 4 edges to [[_COMMUNITY_Community 7]]
+- 4 edges to [[_COMMUNITY_Community 0]]
+- 3 edges to [[_COMMUNITY_Community 162]]
+- 2 edges to [[_COMMUNITY_Community 72]]
+- 2 edges to [[_COMMUNITY_Community 684]]
+- 2 edges to [[_COMMUNITY_Community 5]]
+- 2 edges to [[_COMMUNITY_Community 146]]
+- 1 edge to [[_COMMUNITY_Community 557]]
+- 1 edge to [[_COMMUNITY_Community 166]]
+- 1 edge to [[_COMMUNITY_Community 93]]
+- 1 edge to [[_COMMUNITY_Community 108]]
+- 1 edge to [[_COMMUNITY_Community 477]]
+- 1 edge to [[_COMMUNITY_Community 235]]
+- 1 edge to [[_COMMUNITY_Community 32]]
+- 1 edge to [[_COMMUNITY_Community 121]]
+- 1 edge to [[_COMMUNITY_Community 809]]
+- 1 edge to [[_COMMUNITY_Community 365]]
+- 1 edge to [[_COMMUNITY_Community 71]]
 
 ## Top bridge nodes
-- [[test_group_isolation.py]] - degree 18, connects to 6 communities
-- [[TestGroupMemoryNamespaceIsolation]] - degree 13, connects to 5 communities
-- [[TestGroupMemoryInvisibleFromDM]] - degree 12, connects to 5 communities
-- [[session_manager()_1]] - degree 2, connects to 1 community
-- [[teams()_2]] - degree 2, connects to 1 community
+- [[TestPromptGuard]] - degree 51, connects to 19 communities
+- [[.guard()_5]] - degree 2, connects to 1 community

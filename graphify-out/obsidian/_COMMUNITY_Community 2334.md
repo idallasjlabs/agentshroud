@@ -1,15 +1,17 @@
 ---
 type: community
-members: 2
+members: 4
 ---
 
 # Community 2334
 
-**Members:** 2 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.teardown_method()_3]] - code - gateway/tests/test_memory_lifecycle.py
-- [[Clean up integration test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[_loadEgress()]] - code - gateway/soc/static/soc.js
+- [[_renderEgressHistory()]] - code - gateway/soc/static/soc.js
+- [[_renderEgressRules()]] - code - gateway/soc/static/soc.js
+- [[_renderPendingEgress()]] - code - gateway/soc/static/soc.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +21,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 16]]
+- 4 edges to [[_COMMUNITY_Community 82]]
+- 2 edges to [[_COMMUNITY_Community 965]]
+- 1 edge to [[_COMMUNITY_Community 8]]
 
 ## Top bridge nodes
-- [[.teardown_method()_3]] - degree 2, connects to 1 community
+- [[_loadEgress()]] - degree 7, connects to 3 communities
+- [[_renderEgressHistory()]] - degree 2, connects to 1 community
+- [[_renderPendingEgress()]] - degree 2, connects to 1 community
+- [[_renderEgressRules()]] - degree 2, connects to 1 community

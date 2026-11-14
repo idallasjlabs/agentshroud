@@ -8,22 +8,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[.test_clean_report()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_clean_when_installed_not_running()_1]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_critical_on_critical_findings()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_not_run_when_no_alert_dir()_1]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_not_run_when_no_report()_1]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_returns_summary_for_empty_dir()_1]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_warning_on_failures()]] - code - gateway/tests/test_scanner_integration.py
-- [[Any_58]] - code - gateway/security/scanner_integration.py
-- [[Read and return the Docker daemon config from daemon.json, or {} if unavailable.]] - rationale - gateway/security/scanner_integration.py
-- [[Return latest OpenSCAP compliance summary from saved reports.]] - rationale - gateway/security/scanner_integration.py
-- [[Return latest Wazuh alert summary from the shared alert volume.      wazuh-agent]] - rationale - gateway/security/scanner_integration.py
-- [[TestGetOpenscapSummary]] - code - gateway/tests/test_scanner_integration.py
-- [[TestGetWazuhSummary]] - code - gateway/tests/test_scanner_integration.py
-- [[_read_docker_daemon_config()]] - code - gateway/security/scanner_integration.py
-- [[get_openscap_summary()]] - code - gateway/security/scanner_integration.py
-- [[get_wazuh_summary()]] - code - gateway/security/scanner_integration.py
+- [[display_name]] - code - config/inbound-edge/schema.json
+- [[enabled]] - code - config/inbound-edge/schema.json
+- [[maxLength]] - code - config/inbound-edge/schema.json
+- [[max_response_bytes]] - code - config/inbound-edge/schema.json
+- [[maximum_6]] - code - config/inbound-edge/schema.json
+- [[minLength]] - code - config/inbound-edge/schema.json
+- [[minimum_5]] - code - config/inbound-edge/schema.json
+- [[monitor_ack]] - code - config/inbound-edge/schema.json
+- [[pattern]] - code - config/inbound-edge/schema.json
+- [[properties]] - code - config/inbound-edge/schema.json
+- [[type_1]] - code - config/inbound-edge/schema.json
+- [[type_2]] - code - config/inbound-edge/schema.json
+- [[type_3]] - code - config/inbound-edge/schema.json
+- [[type_4]] - code - config/inbound-edge/schema.json
+- [[type_21]] - code - config/inbound-edge/schema.json
+- [[vendor]] - code - config/inbound-edge/schema.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,22 +33,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 29]]
-- 10 edges to [[_COMMUNITY_Community 67]]
-- 3 edges to [[_COMMUNITY_Community 363]]
-- 3 edges to [[_COMMUNITY_Community 1287]]
-- 3 edges to [[_COMMUNITY_Community 420]]
-- 3 edges to [[_COMMUNITY_Community 311]]
-- 2 edges to [[_COMMUNITY_Community 842]]
-- 2 edges to [[_COMMUNITY_Community 207]]
-- 2 edges to [[_COMMUNITY_Community 102]]
-- 1 edge to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 51]]
-- 1 edge to [[_COMMUNITY_Community 1969]]
+- 2 edges to [[_COMMUNITY_Community 1360]]
+- 1 edge to [[_COMMUNITY_Community 2036]]
+- 1 edge to [[_COMMUNITY_Community 1130]]
+- 1 edge to [[_COMMUNITY_Community 1327]]
+- 1 edge to [[_COMMUNITY_Community 2330]]
+- 1 edge to [[_COMMUNITY_Community 1412]]
+- 1 edge to [[_COMMUNITY_Community 2199]]
 
 ## Top bridge nodes
-- [[Any_58]] - degree 22, connects to 10 communities
-- [[get_wazuh_summary()]] - degree 14, connects to 6 communities
-- [[get_openscap_summary()]] - degree 11, connects to 5 communities
-- [[_read_docker_daemon_config()]] - degree 6, connects to 1 community
-- [[TestGetOpenscapSummary]] - degree 5, connects to 1 community
+- [[properties]] - degree 13, connects to 7 communities

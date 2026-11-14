@@ -1,11 +1,11 @@
 ---
 type: community
-members: 35
+members: 36
 ---
 
 # Community 195
 
-**Members:** 35 nodes
+**Members:** 36 nodes
 
 ## Members
 - [[1. Clone]] - document - README.md
@@ -33,6 +33,7 @@ members: 35
 - [[Technical Documentation]] - document - README.md
 - [[Terminal Control Center]] - document - README.md
 - [[Web Control Center]] - document - README.md
+- [[What's New — Inbound MCP Edge (unreleased, SCRUM-198)]] - document - README.md
 - [[What's New — v1.2.2 (June 2026)]] - document - README.md
 - [[What's New — v1.3.0 Reliability (July 2026)]] - document - README.md
 - [[Who It's For]] - document - README.md
@@ -52,13 +53,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 1260]]
+- 3 edges to [[_COMMUNITY_Community 330]]
 - 2 edges to [[_COMMUNITY_Community 441]]
 - 1 edge to [[_COMMUNITY_Community 130]]
 - 1 edge to [[_COMMUNITY_Community 192]]
+- 1 edge to [[_COMMUNITY_Community 1260]]
 
 ## Top bridge nodes
-- [[AgentShroud™ README]] - degree 19, connects to 4 communities
-- [[README_37]] - degree 13, connects to 1 community
+- [[AgentShroud™ README]] - degree 19, connects to 5 communities
+- [[README_37]] - degree 14, connects to 1 community
 - [[Architecture]] - degree 3, connects to 1 community
 - [[asb Wrapper Script]] - degree 2, connects to 1 community

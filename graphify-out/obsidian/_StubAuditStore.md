@@ -12,7 +12,7 @@ tags:
 # _StubAuditStore
 
 ## Connections
-- [[.__init__()_139]] - `method` [EXTRACTED]
+- [[.__init__()_154]] - `method` [EXTRACTED]
 - [[.log_event()_1]] - `method` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]
 - [[A2APolicyConfig]] - `uses` [INFERRED]

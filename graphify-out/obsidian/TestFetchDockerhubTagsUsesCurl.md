@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "Community 2004"
+community: "Community 48"
 location: "L398"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2004
+  - community/Community_48
 ---
 
 # TestFetchDockerhubTagsUsesCurl
@@ -19,4 +19,4 @@ tags:
 - [[2026-10-23 on marvin every Python HTTPS read to hub.docker.com hung     (Homebr]] - `rationale_for` [EXTRACTED]
 - [[test_discover_upstream_versions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2004
+#graphify/code #graphify/EXTRACTED #community/Community_48

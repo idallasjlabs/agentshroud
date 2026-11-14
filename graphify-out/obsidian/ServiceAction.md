@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 49"
-location: "L137"
+community: "Community 2017"
+location: "L204"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_49
+  - community/Community_2017
 ---
 
 # ServiceAction
@@ -18,4 +18,4 @@ tags:
 - [[IntelReportStore]] - `uses` [INFERRED]
 - [[api.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_49
+#graphify/code #graphify/INFERRED #community/Community_2017

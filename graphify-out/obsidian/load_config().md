@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Community 35"
+community: "Community 50"
 location: "L406"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/Community_50
 ---
 
 # load_config()
@@ -31,7 +31,7 @@ tags:
 - [[LedgerConfig]] - `calls` [EXTRACTED]
 - [[Load and validate configuration from agentshroud.yaml      Search order     1.]] - `rationale_for` [EXTRACTED]
 - [[PIIConfig]] - `calls` [EXTRACTED]
-- [[Path_1]] - `references` [EXTRACTED]
+- [[Path_3]] - `references` [EXTRACTED]
 - [[RouterConfig]] - `calls` [EXTRACTED]
 - [[SSHConfig]] - `calls` [EXTRACTED]
 - [[SecurityConfig_3]] - `calls` [EXTRACTED]
@@ -64,4 +64,4 @@ tags:
 - [[upgrade_agentshroud()]] - `calls` [EXTRACTED]
 - [[upgrade_hermes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_35
+#graphify/code #graphify/EXTRACTED #community/Community_50

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "Community 0"
+community: "Community 557"
 location: "L35"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_0
+  - community/Community_557
 ---
 
 # AlertDispatcher
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_53]] - `method` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_68]] - `method` [EXTRACTED]
 - [[._format_alert_message()]] - `method` [EXTRACTED]
 - [[._is_duplicate()]] - `method` [EXTRACTED]
 - [[._is_rate_limited()]] - `method` [EXTRACTED]
@@ -29,7 +29,7 @@ tags:
 - [[.test_alert_dispatcher_init()]] - `calls` [EXTRACTED]
 - [[.test_alert_dispatcher_write()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[CronStateMonitor]] - `calls` [INFERRED]
 - [[Dispatches security alerts with dedup and rate limiting.]] - `rationale_for` [EXTRACTED]
 - [[Exception_2]] - `uses` [INFERRED]
@@ -37,7 +37,7 @@ tags:
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[Path_23]] - `uses` [INFERRED]
+- [[Path_25]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[TestAlertDispatcher]] - `uses` [INFERRED]
@@ -46,7 +46,7 @@ tags:
 - [[TestClamAVParser]] - `uses` [INFERRED]
 - [[TestClamAVRun]] - `uses` [INFERRED]
 - [[TestClamAVSummary]] - `uses` [INFERRED]
-- [[TestConcurrency]] - `uses` [INFERRED]
+- [[TestConcurrency_1]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
@@ -90,4 +90,4 @@ tags:
 - [[test_security_audit.py]] - `references` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_0
+#graphify/code #graphify/INFERRED #community/Community_557

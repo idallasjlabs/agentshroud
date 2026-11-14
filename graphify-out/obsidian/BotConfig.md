@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/bot_config.py"
 type: "code"
-community: "Community 105"
+community: "Community 50"
 location: "L19"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_105
+  - community/Community_50
 ---
 
 # BotConfig
@@ -26,7 +26,7 @@ tags:
 - [[GatewayConfig_1]] - `uses` [INFERRED]
 - [[LedgerConfig]] - `uses` [INFERRED]
 - [[PIIConfig]] - `uses` [INFERRED]
-- [[Path_1]] - `uses` [INFERRED]
+- [[Path_3]] - `uses` [INFERRED]
 - [[RouterConfig]] - `uses` [INFERRED]
 - [[SecurityConfig_3]] - `uses` [INFERRED]
 - [[SecurityModuleConfig]] - `uses` [INFERRED]
@@ -46,4 +46,4 @@ tags:
 - [[test_config.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_multibot.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_105
+#graphify/code #graphify/INFERRED #community/Community_50

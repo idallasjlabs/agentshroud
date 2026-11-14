@@ -1,24 +1,37 @@
 ---
 type: community
-members: 11
+members: 24
 ---
 
 # Community 493
 
-**Members:** 11 nodes
+**Members:** 24 nodes
 
 ## Members
-- [[02-infrastructure]] - document - docs/diagrams/02-infrastructure.md
-- [[4. Infrastructure Diagram — Hosting & Servers]] - document - docs/diagrams/02-infrastructure.md
-- [[5. Network Topology Diagram]] - document - docs/diagrams/02-infrastructure.md
-- [[6. Deployment Diagram — What Runs Where]] - document - docs/diagrams/02-infrastructure.md
-- [[AgentShroud — Infrastructure & Network Diagrams]] - document - docs/diagrams/02-infrastructure.md
-- [[Deployment Diagram — What Runs Where]] - concept - docs/diagrams/02-infrastructure.md
-- [[Infrastructure Diagram — Hosting & Servers]] - concept - docs/diagrams/02-infrastructure.md
-- [[Network Topology Diagram]] - concept - docs/diagrams/02-infrastructure.md
-- [[Rendered CICD Deployment Diagram (PNG)]] - image - docs/diagrams/images/diagram-06-cicd-deployment.png
-- [[Rendered Infrastructure Hosting Diagram (PNG)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.png
-- [[Rendered Network Topology Diagram (PNG)]] - image - docs/diagrams/images/diagram-05-network-topology.png
+- [[._maybe_record_trust_violation()]] - code - gateway/proxy/pipeline.py
+- [[._process_inbound_core()]] - code - gateway/proxy/pipeline.py
+- [[._process_outbound_core()]] - code - gateway/proxy/pipeline.py
+- [[.append()]] - code - gateway/proxy/pipeline.py
+- [[.append_block()]] - code - gateway/proxy/pipeline.py
+- [[.append_owner_bypass()]] - code - gateway/proxy/pipeline.py
+- [[.entries()_1]] - code - gateway/proxy/pipeline.py
+- [[.get_stats()_6]] - code - gateway/proxy/pipeline.py
+- [[.process_inbound()]] - code - gateway/proxy/pipeline.py
+- [[.process_outbound()]] - code - gateway/proxy/pipeline.py
+- [[.to_dict()_1]] - code - gateway/proxy/pipeline.py
+- [[.verify_audit_chain()]] - code - gateway/proxy/pipeline.py
+- [[.verify_chain()_1]] - code - gateway/proxy/pipeline.py
+- [[An entry in the SHA-256 hash chain audit ledger.]] - rationale - gateway/proxy/pipeline.py
+- [[Any_29]] - code - gateway/proxy/pipeline.py
+- [[Append to the chain with guaranteed SQLite persistence.          Used exclusivel]] - rationale - gateway/proxy/pipeline.py
+- [[AuditChainEntry]] - code - gateway/proxy/pipeline.py
+- [[Process an inbound message through the full security pipeline.]] - rationale - gateway/proxy/pipeline.py
+- [[Process an inbound message through the full security pipeline.          Thin wra]] - rationale - gateway/proxy/pipeline.py
+- [[Process an outbound response through the security pipeline.]] - rationale - gateway/proxy/pipeline.py
+- [[Process an outbound response through the security pipeline.          Thin wrappe]] - rationale - gateway/proxy/pipeline.py
+- [[Record a trust-score violation and propagate cross-bot decay.          Called on]] - rationale - gateway/proxy/pipeline.py
+- [[Record an owner guard-bypass in the tamper-evident chain (SCRUM-95).          Th]] - rationale - gateway/proxy/pipeline.py
+- [[Verify the integrity of the retained hash-chain window.          When the bounde]] - rationale - gateway/proxy/pipeline.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,8 +41,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 466]]
+- 10 edges to [[_COMMUNITY_Community 7]]
+- 7 edges to [[_COMMUNITY_Community 24]]
+- 6 edges to [[_COMMUNITY_Community 63]]
+- 2 edges to [[_COMMUNITY_Community 88]]
+- 2 edges to [[_COMMUNITY_Community 11]]
+- 2 edges to [[_COMMUNITY_Community 6]]
 
 ## Top bridge nodes
-- [[02-infrastructure]] - degree 5, connects to 1 community
-- [[Deployment Diagram — What Runs Where]] - degree 3, connects to 1 community
+- [[Any_29]] - degree 14, connects to 5 communities
+- [[AuditChainEntry]] - degree 11, connects to 5 communities
+- [[._process_inbound_core()]] - degree 8, connects to 2 communities
+- [[._process_outbound_core()]] - degree 7, connects to 2 communities
+- [[.process_inbound()]] - degree 6, connects to 2 communities

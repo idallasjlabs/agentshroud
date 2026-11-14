@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "Community 57"
+community: "Community 125"
 location: "L212"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_57
+  - community/Community_125
 ---
 
 # CompetitiveIntelReport
@@ -17,4 +17,4 @@ tags:
 - [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
 - [[CompetitorEntry_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_57
+#graphify/code #graphify/INFERRED #community/Community_125

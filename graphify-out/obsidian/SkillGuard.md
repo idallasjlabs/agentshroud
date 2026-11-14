@@ -12,14 +12,14 @@ tags:
 # SkillGuard
 
 ## Connections
-- [[.__init__()_118]] - `method` [EXTRACTED]
+- [[.__init__()_133]] - `method` [EXTRACTED]
 - [[._line_at()]] - `method` [EXTRACTED]
 - [[._scan_opaque_blobs()]] - `method` [EXTRACTED]
 - [[.scan_file()_1]] - `method` [EXTRACTED]
 - [[.scan_skill_tree()]] - `method` [EXTRACTED]
 - [[CompletedProcess_4]] - `uses` [INFERRED]
-- [[Path_22]] - `uses` [INFERRED]
-- [[Path_39]] - `uses` [INFERRED]
+- [[Path_24]] - `uses` [INFERRED]
+- [[Path_42]] - `uses` [INFERRED]
 - [[Scan skill  MCP  agent-definition payloads for supply-chain risk.      Usage]] - `rationale_for` [EXTRACTED]
 - [[ScanResult_3]] - `uses` [INFERRED]
 - [[ScanResult_4]] - `uses` [INFERRED]
@@ -42,7 +42,7 @@ tags:
 - [[TestSyncScriptPreflight]] - `uses` [INFERRED]
 - [[_skills_reload_impl()]] - `calls` [EXTRACTED]
 - [[api.py]] - `imports` [EXTRACTED]
-- [[main()_13]] - `calls` [EXTRACTED]
+- [[main()_15]] - `calls` [EXTRACTED]
 - [[scan.py]] - `imports` [EXTRACTED]
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports` [EXTRACTED]

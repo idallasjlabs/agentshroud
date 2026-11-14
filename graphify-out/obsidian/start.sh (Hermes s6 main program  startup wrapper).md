@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/start.sh"
 type: "code"
-community: "Community 290"
+community: "Community 190"
 location: "L1-L463"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_290
+  - community/Community_190
 ---
 
 # start.sh (Hermes s6 main program / startup wrapper)
@@ -24,4 +24,4 @@ tags:
 - [[_telegram_send_photo]] - `defines` [EXTRACTED]
 - [[init-config.sh (Hermes first-boot config materialisation)]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_290
+#graphify/code #graphify/EXTRACTED #community/Community_190

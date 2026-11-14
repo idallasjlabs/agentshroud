@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Community 6"
+community: "Community 60"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_60
 ---
 
 # RBACManager
 
 ## Connections
-- [[.__init__()_112]] - `method` [EXTRACTED]
+- [[.__init__()_127]] - `method` [EXTRACTED]
 - [[._build_permission_matrix()]] - `method` [EXTRACTED]
 - [[._build_tool_permissions()]] - `method` [EXTRACTED]
 - [[.audit_privilege_change()]] - `method` [EXTRACTED]
@@ -32,7 +32,7 @@ tags:
 - [[.test_permission_check_with_context()]] - `calls` [EXTRACTED]
 - [[.test_rbac_manager_without_config()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
@@ -61,4 +61,4 @@ tags:
 - [[set_user_role()_1]] - `calls` [EXTRACTED]
 - [[test_rbac.py]] - `tests` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/Community_60

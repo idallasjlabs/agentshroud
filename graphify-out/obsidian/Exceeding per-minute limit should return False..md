@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "rationale"
-community: "Community 1424"
+community: "Community 33"
 location: "L277"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1424
+  - community/Community_33
 ---
 
 # Exceeding per-minute limit should return False.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_per_minute_limit_exceeded_blocks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1424
+#graphify/rationale #graphify/EXTRACTED #community/Community_33

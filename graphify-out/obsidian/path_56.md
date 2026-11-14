@@ -1,17 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_wire_llm_settings.js"
+source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "TestWebAPI"
-location: "L35"
+community: "Community 8"
+location: "L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestWebAPI
+  - community/Community_8
 ---
 
-# path
+# Path
 
 ## Connections
-- [[test_wire_llm_settings.js]] - `contains` [EXTRACTED]
+- [[_rel()]] - `references` [EXTRACTED]
+- [[gap_report_path()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestWebAPI
+#graphify/code #graphify/EXTRACTED #community/Community_8

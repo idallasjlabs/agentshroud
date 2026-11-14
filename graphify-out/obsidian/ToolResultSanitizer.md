@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "Community 28"
+community: "Community 72"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_28
+  - community/Community_72
 ---
 
 # ToolResultSanitizer
 
 ## Connections
-- [[.__init__()_125]] - `method` [EXTRACTED]
+- [[.__init__()_140]] - `method` [EXTRACTED]
 - [[._extract_dict_content()]] - `method` [EXTRACTED]
 - [[._extract_scannable_content()]] - `method` [EXTRACTED]
 - [[._get_sanitizer_for_tool()]] - `method` [EXTRACTED]
@@ -28,7 +28,7 @@ tags:
 - [[.test_sanitize_disabled()]] - `calls` [EXTRACTED]
 - [[0.9 PII Confidence Floor (CLAUDE.md §7.8)]] - `conceptually_related_to` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector]] - `semantically_similar_to` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
@@ -53,4 +53,4 @@ tags:
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_28
+#graphify/code #graphify/INFERRED #community/Community_72

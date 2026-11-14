@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/06-operations.md"
 type: "document"
-community: "Community 1989"
+community: "Community 466"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1989
+  - community/Community_466
 ---
 
 # 06-operations.md
@@ -18,4 +18,4 @@ tags:
 - [[README_120]] - `references` [EXTRACTED]
 - [[Runbook  Decision Tree — On-Call Logic]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1989
+#graphify/document #graphify/EXTRACTED #community/Community_466

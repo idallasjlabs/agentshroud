@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "Community 1209"
+community: "Community 1985"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1209
+  - community/Community_1985
 ---
 
 # subagent_governance.py
@@ -28,4 +28,4 @@ tags:
 - [[_check_pii_patterns()]] - `contains` [EXTRACTED]
 - [[progressive_trust_config.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1209
+#graphify/code #graphify/EXTRACTED #community/Community_1985

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "Community 1360"
+community: "Community 50"
 location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1360
+  - community/Community_50
 ---
 
 # TestDashboardCookieAuth
@@ -23,4 +23,4 @@ tags:
 - [[SSHProxy]] - `uses` [INFERRED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1360
+#graphify/code #graphify/EXTRACTED #community/Community_50

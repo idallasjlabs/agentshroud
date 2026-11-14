@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 1130"
+community: "Community 138"
 location: "L205"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1130
+  - community/Community_138
 ---
 
 # Normal messages must pass through the pipeline unmodified.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_clean_message_passes_through()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1130
+#graphify/rationale #graphify/EXTRACTED #community/Community_138

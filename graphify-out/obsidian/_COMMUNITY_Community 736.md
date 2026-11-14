@@ -33,7 +33,7 @@ members: 26
 - [[TestGhsaIngestSchedulerRetry]] - code - gateway/tests/test_daily_cve_report.py
 - [[TestUpstreamCveCheckSchedulerRetry]] - code - gateway/tests/test_daily_cve_report.py
 - [[_already_ingested_ghsa_today returns False on a malformed sentinel.]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[datetime_2]] - code - gateway/security/daily_cve_report.py
+- [[datetime_3]] - code - gateway/security/daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,10 +45,10 @@ SORT file.name ASC
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_Community 127]]
 - 3 edges to [[_COMMUNITY_Community 368]]
-- 1 edge to [[_COMMUNITY_Community 399]]
+- 1 edge to [[_COMMUNITY_Community 42]]
 
 ## Top bridge nodes
-- [[datetime_2]] - degree 14, connects to 2 communities
+- [[datetime_3]] - degree 14, connects to 2 communities
 - [[TestGhsaIngestScheduler]] - degree 7, connects to 1 community
 - [[.test_runs_ingest_records_then_skips_next_iteration()]] - degree 4, connects to 1 community
 - [[TestCveReportSchedulerRetry]] - degree 4, connects to 1 community

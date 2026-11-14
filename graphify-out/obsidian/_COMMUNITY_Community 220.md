@@ -13,7 +13,7 @@ members: 40
 - [[Clean base64 payload → FORWARD.]] - rationale - gateway/tests/test_clamav_pipeline.py
 - [[Malware-infected base64 payload → BLOCK with signature in block_reason.]] - rationale - gateway/tests/test_clamav_pipeline.py
 - [[No clamav_scanner configured → step skipped, no error.]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[Path_8]] - code - gateway/security/clamav_scanner.py
+- [[Path_10]] - code - gateway/security/clamav_scanner.py
 - [[Short base64 (64 groups of 4) skips ClamAV scan.]] - rationale - gateway/tests/test_clamav_pipeline.py
 - [[Stream bytes to clamdscan for inline malware scanning.      Uses ``clamdscan --s]] - rationale - gateway/security/clamav_scanner.py
 - [[Test replacement for asyncio.wait_for — awaits coroutine directly.]] - rationale - gateway/tests/test_clamav_pipeline.py
@@ -59,13 +59,11 @@ SORT file.name ASC
 ## Connections to other communities
 - 7 edges to [[_COMMUNITY_Community 1127]]
 - 5 edges to [[_COMMUNITY_Community 148]]
-- 2 edges to [[_COMMUNITY_Community 84]]
-- 1 edge to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 63]]
+- 4 edges to [[_COMMUNITY_Community 7]]
 
 ## Top bridge nodes
-- [[test_clamav_pipeline.py]] - degree 31, connects to 3 communities
+- [[test_clamav_pipeline.py]] - degree 31, connects to 2 communities
 - [[scan_bytes()]] - degree 11, connects to 2 communities
 - [[_make_pipeline()]] - degree 8, connects to 1 community
-- [[Path_8]] - degree 5, connects to 1 community
+- [[Path_10]] - degree 5, connects to 1 community
 - [[test_pipeline_clamav_clean_payload()]] - degree 5, connects to 1 community

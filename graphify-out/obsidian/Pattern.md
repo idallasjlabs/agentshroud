@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "Community 434"
+community: "Community 271"
 location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_434
+  - community/Community_271
 ---
 
 # Pattern
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._score_signal()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_434
+#graphify/code #graphify/EXTRACTED #community/Community_271

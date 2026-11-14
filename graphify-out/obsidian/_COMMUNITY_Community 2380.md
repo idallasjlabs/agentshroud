@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_collaborator_identity_enumeration_query_gets_privacy_safe_info()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Identity enumeration prompts should return privacy-safe guidance.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_protected_content_loading()]] - code - gateway/tests/test_prompt_protection.py
+- [[Test loading protected content from files.]] - rationale - gateway/tests/test_prompt_protection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,8 +19,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 4]]
-- 1 edge to [[_COMMUNITY_Community 12]]
+- 1 edge to [[_COMMUNITY_Community 793]]
+- 1 edge to [[_COMMUNITY_Community 351]]
 
 ## Top bridge nodes
-- [[.test_collaborator_identity_enumeration_query_gets_privacy_safe_info()]] - degree 7, connects to 2 communities
+- [[.test_protected_content_loading()]] - degree 3, connects to 2 communities

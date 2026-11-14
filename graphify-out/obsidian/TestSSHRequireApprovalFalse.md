@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "Community 80"
+community: "Community 50"
 location: "L354"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_80
+  - community/Community_50
 ---
 
 # TestSSHRequireApprovalFalse
@@ -30,4 +30,4 @@ tags:
 - [[Test require_approval=false executes directly (Finding 5)]] - `rationale_for` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_80
+#graphify/code #graphify/INFERRED #community/Community_50

@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "Community 3"
+community: "Community 72"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_3
+  - community/Community_72
 ---
 
 # ApprovalHardeningConfig
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_54]] - `references` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_69]] - `references` [EXTRACTED]
 - [[.config()]] - `calls` [EXTRACTED]
 - [[.test_cooldown_disabled_when_feature_disabled()]] - `calls` [EXTRACTED]
 - [[.test_custom_config()]] - `calls` [EXTRACTED]
 - [[.test_deception_detection_disabled()]] - `calls` [EXTRACTED]
 - [[.test_default_config()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Configuration for approval queue hardening.]] - `rationale_for` [EXTRACTED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
@@ -39,4 +39,4 @@ tags:
 - [[run()_3]] - `calls` [EXTRACTED]
 - [[test_approval_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_3
+#graphify/code #graphify/EXTRACTED #community/Community_72

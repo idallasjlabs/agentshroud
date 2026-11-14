@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "Community 137"
+community: "Community 125"
 location: "L46"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_137
+  - community/Community_125
 ---
 
 # FetchOutcome
 
 ## Connections
-- [[.__call__()_6]] - `calls` [EXTRACTED]
+- [[.__call__()_9]] - `calls` [EXTRACTED]
 - [[.ok()_1]] - `method` [EXTRACTED]
 - [[Citation_1]] - `uses` [INFERRED]
 - [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
@@ -34,4 +34,4 @@ tags:
 - [[test_citation_verifier.py]] - `imports` [EXTRACTED]
 - [[test_intel_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_137
+#graphify/code #graphify/INFERRED #community/Community_125

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "Community 1281"
+community: "Community 2121"
 location: "L298"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1281
+  - community/Community_2121
 ---
 
 # Test getting statistics.
@@ -16,4 +16,4 @@ tags:
 - [[.test_global_stats()]] - `rationale_for` [EXTRACTED]
 - [[.test_global_stats()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1281
+#graphify/rationale #graphify/EXTRACTED #community/Community_2121

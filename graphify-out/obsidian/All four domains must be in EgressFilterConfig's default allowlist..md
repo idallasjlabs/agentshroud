@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "Community 17"
+community: "Community 2004"
 location: "L673"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_17
+  - community/Community_2004
 ---
 
 # All four domains must be in EgressFilterConfig's default allowlist.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_domains_in_default_allowlist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_17
+#graphify/rationale #graphify/EXTRACTED #community/Community_2004

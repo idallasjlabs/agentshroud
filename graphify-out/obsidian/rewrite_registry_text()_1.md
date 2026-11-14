@@ -18,7 +18,7 @@ tags:
 - [[_consume_field()]] - `calls` [EXTRACTED]
 - [[_py_list_literal()]] - `calls` [EXTRACTED]
 - [[final_status()]] - `calls` [EXTRACTED]
-- [[main()_28]] - `calls` [EXTRACTED]
+- [[main()_30]] - `calls` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_8

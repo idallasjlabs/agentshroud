@@ -1,16 +1,18 @@
 ---
 type: community
-members: 3
+members: 5
 ---
 
 # Community 2199
 
-**Members:** 3 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[Contact Information]] - document - docs/operations/incident-response.md
-- [[Emergency Contacts_2]] - document - docs/operations/incident-response.md
-- [[External Contacts]] - document - docs/operations/incident-response.md
+- [[additionalProperties_2]] - code - config/inbound-edge/schema.json
+- [[enum_1]] - code - config/inbound-edge/schema.json
+- [[maxProperties]] - code - config/inbound-edge/schema.json
+- [[tools]] - code - config/inbound-edge/schema.json
+- [[type_12]] - code - config/inbound-edge/schema.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 107]]
+- 1 edge to [[_COMMUNITY_Community 943]]
 
 ## Top bridge nodes
-- [[Contact Information]] - degree 3, connects to 1 community
+- [[tools]] - degree 4, connects to 1 community

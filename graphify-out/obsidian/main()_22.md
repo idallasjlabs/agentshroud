@@ -1,20 +1,20 @@
 ---
-source_file: "scripts/generate-job-schedule.py"
+source_file: "scripts/export-telegram-history.py"
 type: "code"
-community: "Community 989"
-location: "L259"
+community: "Community 777"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_989
+  - community/Community_777
 ---
 
 # main()
 
 ## Connections
-- [[generate-job-schedule.py]] - `contains` [EXTRACTED]
-- [[load_hermes_jobs()]] - `calls` [EXTRACTED]
-- [[load_openclaw_jobs()]] - `calls` [EXTRACTED]
-- [[render_html()]] - `calls` [EXTRACTED]
+- [[Path_52]] - `calls` [EXTRACTED]
+- [[_parse_since()_2]] - `calls` [EXTRACTED]
+- [[export()]] - `calls` [EXTRACTED]
+- [[export-telegram-history.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_989
+#graphify/code #graphify/EXTRACTED #community/Community_777

@@ -15,7 +15,7 @@ tags:
 - [[.test_after_operations()]] - `calls` [EXTRACTED]
 - [[.test_dry_run()]] - `calls` [EXTRACTED]
 - [[.test_empty_history()]] - `calls` [EXTRACTED]
-- [[Any_73]] - `references` [EXTRACTED]
+- [[Any_84]] - `references` [EXTRACTED]
 - [[List all version history entries.]] - `rationale_for` [EXTRACTED]
 - [[_get_db()]] - `calls` [EXTRACTED]
 - [[agentshroud_manager.py]] - `contains` [EXTRACTED]

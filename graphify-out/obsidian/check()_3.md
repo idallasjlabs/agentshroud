@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/smoke.d/test-skills-sync.sh"
+source_file: "scripts/smoke.d/test-container-runtime.sh"
 type: "code"
-community: "Community 710"
-location: "L38"
+community: "Community 1176"
+location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_710
+  - community/Community_1176
 ---
 
 # check()
 
 ## Connections
-- [[test-skills-sync.sh]] - `defines` [EXTRACTED]
-- [[test-skills-sync.sh script]] - `calls` [EXTRACTED]
+- [[test-container-runtime.sh]] - `defines` [EXTRACTED]
+- [[test-container-runtime.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_710
+#graphify/code #graphify/EXTRACTED #community/Community_1176

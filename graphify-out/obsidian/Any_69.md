@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/tests/test_resource_guard_wiring.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Community 5"
+community: "Community 61"
 location: "L62"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_5
+  - graphify/EXTRACTED
+  - community/Community_61
 ---
 
 # Any
 
 ## Connections
-- [[._build_bridge()]] - `references` [EXTRACTED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[ResourceLimits]] - `uses` [INFERRED]
+- [[.add_conversation_message()]] - `references` [EXTRACTED]
+- [[.from_dict()_11]] - `references` [EXTRACTED]
+- [[.get_session_context()]] - `references` [EXTRACTED]
+- [[.reanchor_system_prompt()]] - `references` [EXTRACTED]
+- [[.to_dict()_12]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_5
+#graphify/code #graphify/EXTRACTED #community/Community_61

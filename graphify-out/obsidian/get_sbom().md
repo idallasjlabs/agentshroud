@@ -15,7 +15,7 @@ tags:
 - [[.test_returns_latest_sbom()]] - `calls` [EXTRACTED]
 - [[.test_returns_none_for_empty_dir()]] - `calls` [EXTRACTED]
 - [[.test_returns_none_when_no_dir()]] - `calls` [EXTRACTED]
-- [[Any_58]] - `references` [EXTRACTED]
+- [[Any_68]] - `references` [EXTRACTED]
 - [[Return the latest SBOM (Software Bill of Materials) as parsed JSON.]] - `rationale_for` [EXTRACTED]
 - [[_score_supply_chain()]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `imports` [EXTRACTED]

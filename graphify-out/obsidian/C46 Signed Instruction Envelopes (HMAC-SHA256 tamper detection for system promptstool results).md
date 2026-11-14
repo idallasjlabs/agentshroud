@@ -11,6 +11,6 @@ tags:
 # C46 Signed Instruction Envelopes (HMAC-SHA256 tamper detection for system prompts/tool results)
 
 ## Connections
-- [[EnvelopeSigner]] - `rationale_for` [EXTRACTED]
+- [[EnvelopeSigner_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/Community_24

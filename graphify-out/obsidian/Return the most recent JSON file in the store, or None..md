@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "Community 57"
+community: "Community 2017"
 location: "L314"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_57
+  - community/Community_2017
 ---
 
 # Return the most recent JSON file in the store, or None.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._load_latest_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_57
+#graphify/rationale #graphify/EXTRACTED #community/Community_2017

@@ -1,20 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 106"
-location: "L1059"
+community: "Community 773"
+location: "L1071"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_106
+  - community/Community_773
 ---
 
 # Added
 
 ## Connections
-- [[Phase 6 Tailscale & Documentation]] - `contains` [EXTRACTED]
-- [[Phase 7 Security Hardening]] - `contains` [EXTRACTED]
-- [[Phase 8 Polish & Publish]] - `contains` [EXTRACTED]
-- [[0.4.0 - 2026-02-19]] - `contains` [EXTRACTED]
+- [[0.5.0 - 2026-02-21]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_106
+#graphify/document #graphify/EXTRACTED #community/Community_773

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "Community 364"
+community: "Community 2099"
 location: "L620"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_364
+  - community/Community_2099
 ---
 
 # Phase 2: Development Tools
@@ -19,4 +19,4 @@ tags:
 - [[Node.js (for OpenClaw & AgentShroud)_1]] - `contains` [EXTRACTED]
 - [[Python (for testing tools)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_364
+#graphify/document #graphify/EXTRACTED #community/Community_2099

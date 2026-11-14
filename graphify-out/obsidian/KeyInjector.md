@@ -12,7 +12,7 @@ tags:
 # KeyInjector
 
 ## Connections
-- [[.__init__()_90]] - `method` [EXTRACTED]
+- [[.__init__()_105]] - `method` [EXTRACTED]
 - [[.inject_for_request()]] - `method` [EXTRACTED]
 - [[.test_inject_auth_header()]] - `calls` [EXTRACTED]
 - [[.test_inject_fails_for_unscoped()]] - `calls` [EXTRACTED]

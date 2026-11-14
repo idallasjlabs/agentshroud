@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[AgentShroud Recovery Plan v0.4.0 (Partial)]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[AgentShroud Session Issue Register — 2026-03-14]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[Issue Register]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[Linked Artifacts]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[Recommended Next Closure Sequence]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[Summary_34]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[XMLFunction-Call Leak Filter]] - concept - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[session-issue-register-2026-03-14]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
+- [[.acceptable()]] - code - gateway/security/subagent_governance.py
+- [[Configuration for subagent output trust scoring.]] - rationale - gateway/security/subagent_governance.py
+- [[OutputScore]] - code - gateway/security/subagent_governance.py
+- [[OutputTrustConfig]] - code - gateway/security/subagent_governance.py
+- [[Privilege escalation prevention policy.]] - rationale - gateway/security/subagent_governance.py
+- [[PrivilegePolicy]] - code - gateway/security/subagent_governance.py
+- [[Result of scoring a subagent's output.]] - rationale - gateway/security/subagent_governance.py
+- [[subagent_governance.py]] - code - gateway/security/subagent_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,8 +25,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 144]]
+- 4 edges to [[_COMMUNITY_Community 38]]
+- 3 edges to [[_COMMUNITY_Community 1284]]
+- 2 edges to [[_COMMUNITY_Community 1209]]
+- 1 edge to [[_COMMUNITY_Community 8]]
+- 1 edge to [[_COMMUNITY_Community 11]]
+- 1 edge to [[_COMMUNITY_Community 1782]]
+- 1 edge to [[_COMMUNITY_Community 1343]]
 
 ## Top bridge nodes
-- [[AgentShroud Session Issue Register — 2026-03-14]] - degree 8, connects to 1 community
-- [[XMLFunction-Call Leak Filter]] - degree 4, connects to 1 community
+- [[subagent_governance.py]] - degree 15, connects to 7 communities
+- [[OutputScore]] - degree 4, connects to 1 community

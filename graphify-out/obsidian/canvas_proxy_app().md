@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[ASGI application auth-gated transparent reverse proxy for Canvas.      Handles]] - `rationale_for` [EXTRACTED]
-- [[Any_12]] - `references` [EXTRACTED]
+- [[Any_22]] - `references` [EXTRACTED]
 - [[HTTPConnectProxy]] - `conceptually_related_to` [INFERRED]
 - [[_handle_http()]] - `calls` [EXTRACTED]
 - [[_handle_websocket()]] - `calls` [EXTRACTED]

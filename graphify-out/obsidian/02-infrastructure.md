@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/02-infrastructure.md"
 type: "document"
-community: "Community 493"
+community: "Community 466"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_493
+  - community/Community_466
 ---
 
 # 02-infrastructure.md
@@ -18,4 +18,4 @@ tags:
 - [[Network Topology Diagram]] - `conceptually_related_to` [EXTRACTED]
 - [[README_120]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_493
+#graphify/document #graphify/EXTRACTED #community/Community_466

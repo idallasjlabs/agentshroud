@@ -1,32 +1,44 @@
 ---
 type: community
-members: 19
+members: 31
 ---
 
 # Community 290
 
-**Members:** 19 nodes
+**Members:** 31 nodes
 
 ## Members
-- [[Crash backoff escalation (rolling 10-minute start window)]] - rationale - docker/bots/hermes/start.sh
-- [[Env-split cron reconciliation (AGENTSHROUD_PROD_CRON_KEEP)]] - rationale - docker/bots/hermes/init-config.sh
-- [[First-boot gateway-default s6 service auto-start]] - rationale - docker/bots/hermes/init-config.sh
-- [[MCP servers reconciliation from mcpservers.json into config.yaml]] - rationale - docker/bots/hermes/init-config.sh
-- [[Missing-secret visibility banner (expected secrets loop)]] - rationale - docker/bots/hermes/start.sh
-- [[Post-migration model lock + sandboxed terminal + cron fleet default]] - rationale - docker/bots/hermes/start.sh
-- [[S11 init-openclaw-config.sh seeds jira_dev_ticket.py into live OpenClaw workspace]] - concept - tests/startup_smoke/test_bot_boot_static.sh
-- [[S12 Hermes init-config.sh seeds jira_dev_ticket.py into live Hermes workspace]] - concept - tests/startup_smoke/test_bot_boot_static.sh
-- [[S13 Hermes start.sh expected-secrets banner accepts env vars in place of mounted files]] - concept - tests/startup_smoke/test_bot_boot_static.sh
-- [[Tirith trust seeding (lookalike_tld + internal gateway HTTP rule)]] - rationale - docker/bots/hermes/init-config.sh
-- [[_email_owner]] - code - docker/bots/hermes/start.sh
-- [[_hermes_cron_ids_names]] - code - docker/bots/hermes/init-config.sh
-- [[_release_telegram_lock]] - code - docker/bots/hermes/start.sh
-- [[_telegram_bot_token]] - code - docker/bots/hermes/start.sh
-- [[_telegram_get_me_ready]] - code - docker/bots/hermes/start.sh
-- [[_telegram_send_photo]] - code - docker/bots/hermes/start.sh
-- [[_write_soul]] - code - docker/bots/hermes/init-config.sh
-- [[init-config.sh (Hermes first-boot config materialisation)]] - code - docker/bots/hermes/init-config.sh
-- [[start.sh (Hermes s6 main program  startup wrapper)]] - code - docker/bots/hermes/start.sh
+- [[.__init__()_110]] - code - gateway/security/memory_integrity.py
+- [[._load_integrity_database()]] - code - gateway/security/memory_integrity.py
+- [[._load_write_windows()]] - code - gateway/security/memory_integrity.py
+- [[._save_write_windows()]] - code - gateway/security/memory_integrity.py
+- [[.from_dict()_8]] - code - gateway/security/memory_integrity.py
+- [[.get_integrity_status()]] - code - gateway/security/memory_integrity.py
+- [[.get_recent_alerts()]] - code - gateway/security/memory_integrity.py
+- [[.register_expected_write()]] - code - gateway/security/memory_integrity.py
+- [[.setup_method()_9]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.to_dict()_11]] - code - gateway/security/memory_integrity.py
+- [[Any_58]] - code - gateway/security/memory_integrity.py
+- [[Configuration for memory file integrity monitoring.]] - rationale - gateway/security/memory_config.py
+- [[Convert to dictionary for JSON serialization.]] - rationale - gateway/security/memory_integrity.py
+- [[Create from dictionary for JSON deserialization.]] - rationale - gateway/security/memory_integrity.py
+- [[FileIntegrityRecord]] - code - gateway/security/memory_integrity.py
+- [[Get alerts from the last N hours.]] - rationale - gateway/security/memory_integrity.py
+- [[Get current integrity monitoring status.]] - rationale - gateway/security/memory_integrity.py
+- [[Load active write windows from disk.]] - rationale - gateway/security/memory_integrity.py
+- [[Load integrity database from disk.]] - rationale - gateway/security/memory_integrity.py
+- [[MemoryIntegrityConfig]] - code - gateway/security/memory_config.py
+- [[MemoryIntegrityConfig_1]] - code - gateway/security/memory_integrity.py
+- [[MemoryIntegrityMonitor]] - code - gateway/security/memory_integrity.py
+- [[ModificationSource]] - code - gateway/security/memory_integrity.py
+- [[Monitors integrity of critical memory files.]] - rationale - gateway/security/memory_integrity.py
+- [[Record of a file's integrity state.]] - rationale - gateway/security/memory_integrity.py
+- [[Register an expected write to a file to prevent false alerts.]] - rationale - gateway/security/memory_integrity.py
+- [[Save active write windows to disk.]] - rationale - gateway/security/memory_integrity.py
+- [[Set up test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Source of a file modification.]] - rationale - gateway/security/memory_integrity.py
+- [[memory_config.py]] - code - gateway/security/memory_config.py
+- [[memory_integrity.py]] - code - gateway/security/memory_integrity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,10 +48,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 190]]
-- 2 edges to [[_COMMUNITY_Community 129]]
+- 16 edges to [[_COMMUNITY_Community 16]]
+- 13 edges to [[_COMMUNITY_Community 1014]]
+- 11 edges to [[_COMMUNITY_Community 72]]
+- 5 edges to [[_COMMUNITY_Community 986]]
+- 4 edges to [[_COMMUNITY_Community 7]]
+- 2 edges to [[_COMMUNITY_Community 8]]
+- 1 edge to [[_COMMUNITY_Community 489]]
+- 1 edge to [[_COMMUNITY_Community 1]]
+- 1 edge to [[_COMMUNITY_Community 2356]]
 
 ## Top bridge nodes
-- [[start.sh (Hermes s6 main program  startup wrapper)]] - degree 11, connects to 1 community
-- [[init-config.sh (Hermes first-boot config materialisation)]] - degree 10, connects to 1 community
-- [[_telegram_bot_token]] - degree 5, connects to 1 community
+- [[MemoryIntegrityMonitor]] - degree 41, connects to 6 communities
+- [[MemoryIntegrityConfig]] - degree 18, connects to 5 communities
+- [[ModificationSource]] - degree 13, connects to 4 communities
+- [[memory_config.py]] - degree 3, connects to 2 communities
+- [[FileIntegrityRecord]] - degree 7, connects to 1 community

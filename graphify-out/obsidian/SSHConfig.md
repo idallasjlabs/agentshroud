@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ssh_config.py"
 type: "code"
-community: "Community 80"
+community: "Community 50"
 location: "L42"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_80
+  - community/Community_50
 ---
 
 # SSHConfig
@@ -23,7 +23,7 @@ tags:
 - [[GatewayConfig_1]] - `uses` [INFERRED]
 - [[LedgerConfig]] - `uses` [INFERRED]
 - [[PIIConfig]] - `uses` [INFERRED]
-- [[Path_1]] - `uses` [INFERRED]
+- [[Path_3]] - `uses` [INFERRED]
 - [[RouterConfig]] - `uses` [INFERRED]
 - [[SSHConfig_1]] - `uses` [INFERRED]
 - [[SSHConfig_2]] - `uses` [INFERRED]
@@ -74,4 +74,4 @@ tags:
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_80
+#graphify/code #graphify/INFERRED #community/Community_50

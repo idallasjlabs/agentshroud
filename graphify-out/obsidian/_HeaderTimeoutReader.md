@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Community 81"
+community: "Community 1191"
 location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_81
+  - community/Community_1191
 ---
 
 # _HeaderTimeoutReader
 
 ## Connections
-- [[.__init__()_162]] - `method` [EXTRACTED]
+- [[.__init__()_183]] - `method` [EXTRACTED]
 - [[.readline()_1]] - `method` [EXTRACTED]
 - [[First readline returns the request line; the next stalls.]] - `rationale_for` [EXTRACTED]
 - [[HTTPConnectProxy]] - `uses` [INFERRED]
@@ -21,4 +21,4 @@ tags:
 - [[test_header_read_timeout_returns_408()]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_81
+#graphify/code #graphify/EXTRACTED #community/Community_1191

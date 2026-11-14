@@ -12,7 +12,7 @@ tags:
 # ResourceLimits
 
 ## Connections
-- [[.__init__()_114]] - `references` [EXTRACTED]
+- [[.__init__()_129]] - `references` [EXTRACTED]
 - [[.setup_method()_22]] - `calls` [EXTRACTED]
 - [[.test_cpu_limit_check()]] - `calls` [EXTRACTED]
 - [[.test_disk_write_limit()]] - `calls` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[.test_setup_with_custom_limits_overrides_defaults()]] - `calls` [EXTRACTED]
 - [[.test_stop_cancels_monitor_task()]] - `calls` [EXTRACTED]
 - [[.test_usage_stats()]] - `calls` [EXTRACTED]
-- [[Any_69]] - `uses` [INFERRED]
+- [[Any_80]] - `uses` [INFERRED]
 - [[Configuration for resource limits.]] - `rationale_for` [EXTRACTED]
 - [[LLMProxy_2]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]

@@ -1,13 +1,14 @@
 ---
 type: community
-members: 36
+members: 47
 ---
 
 # Community 198
 
-**Members:** 36 nodes
+**Members:** 47 nodes
 
 ## Members
+- [[.__init__()_103]] - code - gateway/security/key_rotation.py
 - [[._generate_new_credential()]] - code - gateway/security/key_rotation.py
 - [[._read_credential_from_1password()]] - code - gateway/security/key_rotation.py
 - [[._retire_old_credential_after_grace_period()]] - code - gateway/security/key_rotation.py
@@ -20,30 +21,40 @@ members: 36
 - [[.get_credential_status()]] - code - gateway/security/key_rotation.py
 - [[.get_health_score()]] - code - gateway/security/key_rotation.py
 - [[.register_credential()]] - code - gateway/security/key_rotation.py
+- [[.register_validator()]] - code - gateway/security/key_rotation.py
 - [[.rotate_credential()]] - code - gateway/security/key_rotation.py
 - [[.should_rotate()]] - code - gateway/security/key_rotation.py
 - [[.should_warn()]] - code - gateway/security/key_rotation.py
 - [[.validate()]] - code - gateway/security/key_rotation.py
-- [[Any_43]] - code - gateway/security/key_rotation.py
+- [[Any_53]] - code - gateway/security/key_rotation.py
 - [[Calculate overall credential health score.]] - rationale - gateway/security/key_rotation.py
 - [[Check all credentials and rotate those that are due.]] - rationale - gateway/security/key_rotation.py
 - [[Clean up any credentials past their grace period.]] - rationale - gateway/security/key_rotation.py
 - [[CredentialRotationPolicy]] - code - gateway/security/key_rotation.py
 - [[Get detailed status for a credential.]] - rationale - gateway/security/key_rotation.py
+- [[Get overall credential health score and status summary.]] - rationale - gateway/web/management.py
 - [[Get status for all managed credentials.]] - rationale - gateway/security/key_rotation.py
+- [[Get status of all managed credentials including age and rotation schedule.]] - rationale - gateway/web/management.py
+- [[Initialize the key rotation manager.]] - rationale - gateway/security/key_rotation.py
+- [[KeyRotationConfig]] - code - gateway/security/key_rotation.py
 - [[KeyRotationManager]] - code - gateway/security/key_rotation.py
 - [[Manages automated rotation of credentials with zero downtime.]] - rationale - gateway/security/key_rotation.py
 - [[Perform emergency rotation of a credential.]] - rationale - gateway/security/key_rotation.py
 - [[Register a credential for rotation management.]] - rationale - gateway/security/key_rotation.py
+- [[Register a validator for a credential type.]] - rationale - gateway/security/key_rotation.py
 - [[Retire old credential after grace period ends.]] - rationale - gateway/security/key_rotation.py
 - [[Rotate a single credential with zero downtime.          Workflow generate new →]] - rationale - gateway/security/key_rotation.py
 - [[Safely read a credential from 1Password using op CLI.]] - rationale - gateway/security/key_rotation.py
 - [[Store a new credential in 1Password.]] - rationale - gateway/security/key_rotation.py
+- [[Trigger manual rotation for a specific credential (owner only).]] - rationale - gateway/web/management.py
 - [[Validate a credential using registered validator.]] - rationale - gateway/security/key_rotation.py
 - [[Validate a credential.          Returns             tuple (is_valid, message)]] - rationale - gateway/security/key_rotation.py
 - [[Whether credential age warrants a warning.]] - rationale - gateway/security/key_rotation.py
 - [[Whether credential needs rotation based on age.]] - rationale - gateway/security/key_rotation.py
 - [[EXPERIMENTAL Generate a new credential value.          WARNING This method ge]] - rationale - gateway/security/key_rotation.py
+- [[credentials_health()]] - code - gateway/web/management.py
+- [[credentials_status()]] - code - gateway/web/management.py
+- [[rotate_credential()]] - code - gateway/web/management.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -53,18 +64,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_Community 72]]
-- 11 edges to [[_COMMUNITY_Community 122]]
-- 10 edges to [[_COMMUNITY_Community 381]]
-- 6 edges to [[_COMMUNITY_Community 455]]
-- 6 edges to [[_COMMUNITY_Community 166]]
+- 15 edges to [[_COMMUNITY_Community 122]]
+- 10 edges to [[_COMMUNITY_Community 72]]
+- 9 edges to [[_COMMUNITY_Community 381]]
+- 6 edges to [[_COMMUNITY_Community 17]]
+- 4 edges to [[_COMMUNITY_Community 455]]
 - 4 edges to [[_COMMUNITY_Community 791]]
+- 2 edges to [[_COMMUNITY_Community 1342]]
+- 2 edges to [[_COMMUNITY_Community 1177]]
+- 1 edge to [[_COMMUNITY_Community 1]]
 - 1 edge to [[_COMMUNITY_Community 1991]]
-- 1 edge to [[_COMMUNITY_Community 2321]]
+- 1 edge to [[_COMMUNITY_Community 10]]
 
 ## Top bridge nodes
-- [[KeyRotationManager]] - degree 55, connects to 8 communities
+- [[KeyRotationManager]] - degree 55, connects to 10 communities
+- [[rotate_credential()]] - degree 5, connects to 3 communities
 - [[.register_credential()]] - degree 5, connects to 2 communities
-- [[Any_43]] - degree 13, connects to 1 community
-- [[.should_rotate()]] - degree 7, connects to 1 community
-- [[.should_warn()]] - degree 6, connects to 1 community
+- [[credentials_status()]] - degree 4, connects to 2 communities
+- [[credentials_health()]] - degree 4, connects to 2 communities

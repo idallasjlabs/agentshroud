@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "rationale"
-community: "Community 986"
+community: "Community 33"
 location: "L383"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_986
+  - community/Community_33
 ---
 
 # A non-owner gains nothing and loses nothing from origin checking.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_non_owner_over_unverified_origin_is_unchanged()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_986
+#graphify/rationale #graphify/EXTRACTED #community/Community_33

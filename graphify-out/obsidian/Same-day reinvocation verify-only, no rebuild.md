@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-27-20260927-0800.md"
 type: "rationale"
-community: "Community 118"
+community: "Community 1924"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_118
+  - community/Community_1924
 ---
 
 # Same-day reinvocation: verify-only, no rebuild
@@ -16,4 +16,4 @@ tags:
 - [[upgrade-2026-09-27-20260927-0800]] - `references` [EXTRACTED]
 - [[upgrade-2026-09-27-20260927-1400]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_118
+#graphify/rationale #graphify/EXTRACTED #community/Community_1924

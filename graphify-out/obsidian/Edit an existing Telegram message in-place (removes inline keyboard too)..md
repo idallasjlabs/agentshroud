@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 216"
-location: "L7199"
+community: "Community 14"
+location: "L7237"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_216
+  - community/Community_14
 ---
 
 # Edit an existing Telegram message in-place (removes inline keyboard too).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._edit_telegram_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_216
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

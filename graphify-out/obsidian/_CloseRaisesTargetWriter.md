@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Community 81"
+community: "Community 1191"
 location: "L101"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_81
+  - community/Community_1191
 ---
 
 # _CloseRaisesTargetWriter
 
 ## Connections
-- [[.close()_18]] - `method` [EXTRACTED]
+- [[.close()_20]] - `method` [EXTRACTED]
 - [[HTTPConnectProxy]] - `uses` [INFERRED]
 - [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[_DummyTargetWriter_1]] - `inherits` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_81
+#graphify/code #graphify/INFERRED #community/Community_1191

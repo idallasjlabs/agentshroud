@@ -21,7 +21,7 @@ tags:
 - [[.test_returns_empty_list_when_dir_missing()]] - `calls` [EXTRACTED]
 - [[.test_returns_empty_when_no_image_reports()]] - `calls` [EXTRACTED]
 - [[.test_returns_one_entry_per_report_file()]] - `calls` [EXTRACTED]
-- [[Any_58]] - `references` [EXTRACTED]
+- [[Any_68]] - `references` [EXTRACTED]
 - [[Return per-image Trivy scan summaries from saved image reports.      Reads repor]] - `rationale_for` [EXTRACTED]
 - [[generate_summary()_3]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]

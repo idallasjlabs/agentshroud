@@ -1,26 +1,31 @@
 ---
 type: community
-members: 13
+members: 18
 ---
 
 # Community 793
 
-**Members:** 13 nodes
+**Members:** 18 nodes
 
 ## Members
-- [[._make_dispatcher()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_cleanup_seen()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_critical_alert_notified()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_dedup()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_get_digest()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_get_stats()_2]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_high_alert_notified()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_log_to_jsonl()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_low_alert_buffered()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_medium_alert_buffered()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_notify_failure()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_rate_limiting()]] - code - gateway/tests/test_security_toolchain.py
-- [[TestAlertDispatcher]] - code - gateway/tests/test_security_toolchain.py
+- [[.__init__()_125]] - code - gateway/security/prompt_protection.py
+- [[._compile_detection_patterns()_1]] - code - gateway/security/prompt_protection.py
+- [[._load_protected_content()]] - code - gateway/security/prompt_protection.py
+- [[.add_protected_content()]] - code - gateway/security/prompt_protection.py
+- [[.get_protection_stats()]] - code - gateway/security/prompt_protection.py
+- [[.register_bot_hostnames()]] - code - gateway/security/prompt_protection.py
+- [[.test_disabled_protection()]] - code - gateway/tests/test_prompt_protection.py
+- [[Add bot container hostnames to the infrastructure detection patterns.          C]] - rationale - gateway/security/prompt_protection.py
+- [[Add content to the protected registry.          Args             name Identifi]] - rationale - gateway/security/prompt_protection.py
+- [[Any_64]] - code - gateway/security/prompt_protection.py
+- [[Compile regex patterns for detecting disclosure attempts.]] - rationale - gateway/security/prompt_protection.py
+- [[Get statistics about the protection system.]] - rationale - gateway/security/prompt_protection.py
+- [[Initialize prompt protection system.          Args             config Configur]] - rationale - gateway/security/prompt_protection.py
+- [[Load protected content from configured sources.]] - rationale - gateway/security/prompt_protection.py
+- [[Main system prompt protection engine.      Maintains fingerprints of sensitive c]] - rationale - gateway/security/prompt_protection.py
+- [[PromptProtection]] - code - gateway/security/prompt_protection.py
+- [[System Prompt Protection Tests]] - code - gateway/tests/test_prompt_protection.py
+- [[Test that disabled protection passes through content unchanged.]] - rationale - gateway/tests/test_prompt_protection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,9 +35,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 0]]
-- 1 edge to [[_COMMUNITY_Community 102]]
+- 5 edges to [[_COMMUNITY_Community 1336]]
+- 3 edges to [[_COMMUNITY_Community 72]]
+- 2 edges to [[_COMMUNITY_Community 7]]
+- 2 edges to [[_COMMUNITY_Community 2208]]
+- 2 edges to [[_COMMUNITY_Community 351]]
+- 1 edge to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Community 2342]]
+- 1 edge to [[_COMMUNITY_Community 2380]]
 
 ## Top bridge nodes
-- [[TestAlertDispatcher]] - degree 14, connects to 2 communities
-- [[._make_dispatcher()]] - degree 13, connects to 1 community
+- [[PromptProtection]] - degree 23, connects to 8 communities
+- [[.add_protected_content()]] - degree 4, connects to 1 community
+- [[.test_disabled_protection()]] - degree 3, connects to 1 community
+- [[System Prompt Protection Tests]] - degree 2, connects to 1 community

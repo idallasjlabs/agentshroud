@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 1255"
-location: "L1005"
+community: "Community 1202"
+location: "L1030"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1255
+  - community/Community_1202
 ---
 
 # Summary
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[0.6.0 - 2026-02-23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1255
+#graphify/document #graphify/EXTRACTED #community/Community_1202

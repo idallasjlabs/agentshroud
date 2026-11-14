@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "rationale"
-community: "Community 55"
+community: "Community 2134"
 location: "L627"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_55
+  - community/Community_2134
 ---
 
 # The committed snapshot yields a real backlog, all honest under_review.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_openclaw_snapshot_registers_backlog_as_under_review()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_55
+#graphify/rationale #graphify/EXTRACTED #community/Community_2134

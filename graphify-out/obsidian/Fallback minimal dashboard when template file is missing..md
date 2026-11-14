@@ -2,7 +2,7 @@
 source_file: "gateway/soc/router.py"
 type: "rationale"
 community: "Community 10"
-location: "L2736"
+location: "L3222"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

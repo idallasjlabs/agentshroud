@@ -1,37 +1,30 @@
 ---
 type: community
-members: 24
+members: 17
 ---
 
 # Community 861
 
-**Members:** 24 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[.__init__()_15]] - code - gateway/ingest_api/router.py
-- [[._build_forward_payload()]] - code - gateway/ingest_api/router.py
-- [[.forward_to_agent()]] - code - gateway/ingest_api/router.py
-- [[.forward_to_agent_stream()]] - code - gateway/ingest_api/router.py
-- [[.health_check()]] - code - gateway/ingest_api/router.py
-- [[.list_targets()]] - code - gateway/ingest_api/router.py
-- [[.register_bots()]] - code - gateway/ingest_api/router.py
-- [[.resolve_target()]] - code - gateway/ingest_api/router.py
-- [[AgentShroud Secure Chat Interface (static HTMLJS)]] - code - gateway/ingest_api/static/chat.html
-- [[AgentTarget_1]] - code - gateway/ingest_api/router.py
-- [[Any_9]] - code - gateway/ingest_api/router.py
-- [[Build the outbound payload for `target`, shared by the blocking and         stre]] - rationale - gateway/ingest_api/router.py
-- [[Check health of one or all agent targets          Args             target Spec]] - rationale - gateway/ingest_api/router.py
-- [[Determine which agent should receive this content          Args             req]] - rationale - gateway/ingest_api/router.py
-- [[Forward sanitized content to agent via HTTP POST          Args             targ]] - rationale - gateway/ingest_api/router.py
-- [[ForwardRequest_1]] - code - gateway/ingest_api/router.py
-- [[Initialize router          Args             config Router configuration]] - rationale - gateway/ingest_api/router.py
-- [[Populate routing targets from the bots registry.          Iterates all BotConfig]] - rationale - gateway/ingest_api/router.py
-- [[Raised when no valid routing target found]] - rationale - gateway/ingest_api/router.py
-- [[Return all configured agent targets          Returns             List of AgentT]] - rationale - gateway/ingest_api/router.py
-- [[RouterConfig_1]] - code - gateway/ingest_api/router.py
-- [[RouterError]] - code - gateway/ingest_api/router.py
-- [[Stream sanitized content to an OpenAI-compatible agent, yielding text         de]] - rationale - gateway/ingest_api/router.py
-- [[sendMessage() JS — POST forward from browser chat UI]] - code - gateway/ingest_api/static/chat.html
+- [[04-runbook]] - document - docs/inbound-mcp-edge/04-runbook.md
+- [[1. First-time enablement (dev first, then prod on the owner's word)]] - document - docs/inbound-mcp-edge/04-runbook.md
+- [[1. Sign the tool descriptors (owner only, interactive terminal)]] - document - docs/inbound-mcp-edge/04-runbook.md
+- [[2. Create the edge secrets]] - document - docs/inbound-mcp-edge/04-runbook.md
+- [[2. Killswitch]] - document - docs/inbound-mcp-edge/04-runbook.md
+- [[3. Rotating keys]] - document - docs/inbound-mcp-edge/04-runbook.md
+- [[3. Turn the edge on]] - document - docs/inbound-mcp-edge/04-runbook.md
+- [[4. Enable one vendor]] - document - docs/inbound-mcp-edge/04-runbook.md
+- [[4. Reading the audit trail]] - document - docs/inbound-mcp-edge/04-runbook.md
+- [[5. Backout]] - document - docs/inbound-mcp-edge/04-runbook.md
+- [[5. Expose publicly]] - document - docs/inbound-mcp-edge/04-runbook.md
+- [[6. Link the vendor]] - document - docs/inbound-mcp-edge/04-runbook.md
+- [[6. Troubleshooting]] - document - docs/inbound-mcp-edge/04-runbook.md
+- [[Descriptor signing key]] - document - docs/inbound-mcp-edge/04-runbook.md
+- [[Inbound MCP Edge — Runbook]] - document - docs/inbound-mcp-edge/04-runbook.md
+- [[Service token (`edge_gateway_token`)]] - document - docs/inbound-mcp-edge/04-runbook.md
+- [[Token signing key (`edge_signing_key`)]] - document - docs/inbound-mcp-edge/04-runbook.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,18 +32,3 @@ members: 24
 TABLE source_file, type FROM #community/Community_861
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 13 edges to [[_COMMUNITY_Community 80]]
-- 5 edges to [[_COMMUNITY_Community 92]]
-- 5 edges to [[_COMMUNITY_Community 325]]
-- 2 edges to [[_COMMUNITY_Community 47]]
-- 1 edge to [[_COMMUNITY_Community 152]]
-- 1 edge to [[_COMMUNITY_Community 707]]
-
-## Top bridge nodes
-- [[RouterError]] - degree 7, connects to 5 communities
-- [[AgentTarget_1]] - degree 11, connects to 3 communities
-- [[Any_9]] - degree 7, connects to 3 communities
-- [[RouterConfig_1]] - degree 4, connects to 3 communities
-- [[ForwardRequest_1]] - degree 4, connects to 3 communities

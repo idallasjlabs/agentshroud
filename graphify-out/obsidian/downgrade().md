@@ -15,7 +15,7 @@ tags:
 - [[.test_blocked_on_invalid()]] - `calls` [EXTRACTED]
 - [[.test_dry_run()_1]] - `calls` [EXTRACTED]
 - [[.test_successful_downgrade()]] - `calls` [EXTRACTED]
-- [[Any_73]] - `references` [EXTRACTED]
+- [[Any_84]] - `references` [EXTRACTED]
 - [[Downgrade OpenClaw to a previous version.      Requires security review (risk of]] - `rationale_for` [EXTRACTED]
 - [[_get_db()]] - `calls` [EXTRACTED]
 - [[agentshroud_manager.py]] - `contains` [EXTRACTED]

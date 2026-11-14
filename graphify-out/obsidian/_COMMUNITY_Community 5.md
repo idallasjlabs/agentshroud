@@ -1,18 +1,18 @@
 ---
 type: community
-members: 152
+members: 160
 ---
 
 # Community 5
 
-**Members:** 152 nodes
+**Members:** 160 nodes
 
 ## Members
 - [[.__aenter__()_6]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[.__aexit__()_6]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[.__del__()]] - code - gateway/security/resource_guard.py
-- [[.__init__()_114]] - code - gateway/security/resource_guard.py
-- [[.__init__()_175]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[.__init__()_129]] - code - gateway/security/resource_guard.py
+- [[.__init__()_196]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[._alert_high_usage()]] - code - gateway/security/resource_guard.py
 - [[._build_bridge()]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[._check_system_resources()_1]] - code - gateway/security/resource_guard.py
@@ -21,14 +21,17 @@ members: 152
 - [[._monitor_resources()]] - code - gateway/security/resource_guard.py
 - [[._start_monitoring_task()]] - code - gateway/security/resource_guard.py
 - [[.add_alert_callback()_1]] - code - gateway/security/resource_guard.py
+- [[.block_credentials()_2]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[.check_cpu_limit()]] - code - gateway/security/resource_guard.py
 - [[.check_disk_write_limit()]] - code - gateway/security/resource_guard.py
 - [[.check_memory_limit()]] - code - gateway/security/resource_guard.py
 - [[.check_resource()]] - code - gateway/security/resource_guard.py
 - [[.check_vram_headroom()]] - code - gateway/security/resource_guard.py
 - [[.cleanup_temp_files()]] - code - gateway/security/resource_guard.py
+- [[.filter_xml_blocks()_2]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[.get_usage_stats()]] - code - gateway/security/resource_guard.py
 - [[.register_temp_file()]] - code - gateway/security/resource_guard.py
+- [[.sanitize()_4]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[.setup_method()_22]] - code - gateway/tests/test_resource_guard.py
 - [[.start_request_tracking()]] - code - gateway/security/resource_guard.py
 - [[.stop()_11]] - code - gateway/security/resource_guard.py
@@ -67,6 +70,7 @@ members: 152
 - [[.test_multiple_agents_isolated()]] - code - gateway/tests/test_resource_guard.py
 - [[.test_non_spike_alert_dispatched_with_medium_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[.test_passes_with_sufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_prompt_guard_large_input()]] - code - gateway/tests/test_security_audit.py
 - [[.test_register_blocks_over_limit()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[.test_register_under_limit()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[.test_rejects_insufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
@@ -80,14 +84,15 @@ members: 152
 - [[.test_start_request_tracking_survives_psutil_error()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[.test_stop_cancels_monitor_task()]] - code - gateway/tests/test_resource_guard.py
 - [[.test_stop_cancels_monitor_task_and_idempotent()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_subagent_monitor_loaded()]] - code - gateway/tests/test_security_audit.py
 - [[.test_system_resource_monitoring_alerts_after_debounce()]] - code - gateway/tests/test_resource_guard.py
 - [[.test_usage_stats()]] - code - gateway/tests/test_security_audit.py
 - [[.test_window_expiry_resets_usage()]] - code - gateway/tests/test_resource_guard.py
 - [[128k token request at 4 bytestoken KV cache triggers rejection at 4096 MB headr]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[A single over-threshold sample followed by an under-threshold sample is suppress]] - rationale - gateway/tests/test_resource_guard.py
 - [[Add a callback function to be called when resource alerts are triggered.]] - rationale - gateway/security/resource_guard.py
-- [[Any_57]] - code - gateway/security/resource_guard.py
-- [[Any_69]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[Any_67]] - code - gateway/security/resource_guard.py
+- [[Any_80]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[Background task to monitor resource usage and trigger alerts.]] - rationale - gateway/security/resource_guard.py
 - [[Best-effort cleanup for test contexts that don't call stop().]] - rationale - gateway/security/resource_guard.py
 - [[Check if agent has exceeded CPU time limit.]] - rationale - gateway/security/resource_guard.py
@@ -103,7 +108,7 @@ members: 152
 - [[Get current disk IO statistics.]] - rationale - gateway/security/resource_guard.py
 - [[Get current usage statistics.]] - rationale - gateway/security/resource_guard.py
 - [[Get the global resource guard instance, creating it lazily on first call.]] - rationale - gateway/security/resource_guard.py
-- [[LLMProxy_2]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[Large inputs shouldn't crash prompt guard.]] - rationale - gateway/tests/test_security_audit.py
 - [[Monitor and limit resource usage per agentrequest.]] - rationale - gateway/security/resource_guard.py
 - [[Pre-flight VRAM headroom check before dispatching a long-context local-model cal]] - rationale - gateway/security/resource_guard.py
 - [[Raised when a local-model call is rejected because estimated VRAM usage     woul]] - rationale - gateway/security/resource_guard.py
@@ -124,6 +129,7 @@ members: 152
 - [[Test ResourceGuardConfig dataclass.]] - rationale - gateway/tests/test_resource_guard.py
 - [[Test handling of invalid resource types.]] - rationale - gateway/tests/test_resource_guard.py
 - [[Test request count per minute limiting.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test resource limits and DoS prevention.]] - rationale - gateway/tests/test_security_audit.py
 - [[Test temp file count limiting.]] - rationale - gateway/tests/test_resource_guard.py
 - [[Test that different agents have isolated resource tracking.]] - rationale - gateway/tests/test_resource_guard.py
 - [[Test that resource usage over limits is blocked.]] - rationale - gateway/tests/test_resource_guard.py
@@ -137,6 +143,7 @@ members: 152
 - [[TestResourceGuardFailClosed]] - code - gateway/tests/test_round2_hardening.py
 - [[TestResourceGuardLifecycle]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[TestResourceGuardWiring]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[TestResourceProtection]] - code - gateway/tests/test_security_audit.py
 - [[TestTempFiles]] - code - gateway/tests/test_resource_guard_limits.py
 - [[TestUsageStatsAndTracking]] - code - gateway/tests/test_resource_guard_limits.py
 - [[TestVramHeadroom]] - code - gateway/tests/test_resource_guard_limits.py
@@ -146,6 +153,7 @@ members: 152
 - [[VRAM check is skipped when max_vram_headroom_mb=0 (disabled).]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[VRAMHeadroomError]] - code - gateway/security/resource_guard.py
 - [[Verify resource check methods return False (deny) on exception.]] - rationale - gateway/tests/test_round2_hardening.py
+- [[_FakeSanitizer_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[_FakeStreamClient]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[check_vram_headroom raises VRAMHeadroomError when estimated VRAM exceeds budget.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[get_resource_guard()]] - code - gateway/security/resource_guard.py
@@ -169,22 +177,41 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 33 edges to [[_COMMUNITY_Community 0]]
-- 16 edges to [[_COMMUNITY_Community 208]]
-- 14 edges to [[_COMMUNITY_Community 72]]
+- 17 edges to [[_COMMUNITY_Community 208]]
+- 13 edges to [[_COMMUNITY_Community 72]]
+- 11 edges to [[_COMMUNITY_Community 41]]
 - 11 edges to [[_COMMUNITY_Community 121]]
+- 7 edges to [[_COMMUNITY_Community 0]]
+- 6 edges to [[_COMMUNITY_Community 7]]
 - 5 edges to [[_COMMUNITY_Community 181]]
+- 5 edges to [[_COMMUNITY_Community 162]]
+- 5 edges to [[_COMMUNITY_Community 235]]
+- 3 edges to [[_COMMUNITY_Community 477]]
+- 3 edges to [[_COMMUNITY_Community 365]]
+- 3 edges to [[_COMMUNITY_Community 146]]
 - 2 edges to [[_COMMUNITY_Community 978]]
 - 2 edges to [[_COMMUNITY_Community 1278]]
-- 1 edge to [[_COMMUNITY_Community 152]]
+- 2 edges to [[_COMMUNITY_Community 108]]
+- 2 edges to [[_COMMUNITY_Community 684]]
+- 2 edges to [[_COMMUNITY_Community 148]]
+- 2 edges to [[_COMMUNITY_Community 196]]
+- 2 edges to [[_COMMUNITY_Community 128]]
+- 2 edges to [[_COMMUNITY_Community 479]]
+- 1 edge to [[_COMMUNITY_Community 25]]
+- 1 edge to [[_COMMUNITY_Community 1]]
 - 1 edge to [[_COMMUNITY_Community 14]]
+- 1 edge to [[_COMMUNITY_Community 557]]
+- 1 edge to [[_COMMUNITY_Community 166]]
 - 1 edge to [[_COMMUNITY_Community 17]]
+- 1 edge to [[_COMMUNITY_Community 93]]
+- 1 edge to [[_COMMUNITY_Community 32]]
 - 1 edge to [[_COMMUNITY_Community 185]]
-- 1 edge to [[_COMMUNITY_Community 146]]
+- 1 edge to [[_COMMUNITY_Community 809]]
+- 1 edge to [[_COMMUNITY_Community 71]]
 
 ## Top bridge nodes
-- [[ResourceGuard]] - degree 95, connects to 5 communities
-- [[TestResourceGuardFailClosed]] - degree 11, connects to 4 communities
-- [[ResourceLimits]] - degree 51, connects to 3 communities
+- [[TestResourceProtection]] - degree 43, connects to 18 communities
+- [[ResourceGuard]] - degree 95, connects to 15 communities
+- [[ResourceLimits]] - degree 51, connects to 12 communities
+- [[TestResourceGuardFailClosed]] - degree 11, connects to 5 communities
 - [[resource_guard.py]] - degree 10, connects to 3 communities
-- [[VRAMHeadroomError]] - degree 17, connects to 2 communities

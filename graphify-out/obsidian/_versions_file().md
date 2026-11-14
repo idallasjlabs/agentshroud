@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[.test_install_that_lands_the_wrong_version_fails_and_rolls_back()]] - `calls` [EXTRACTED]
 - [[.test_non_sha_pin_is_refused_before_touching_hermes()]] - `calls` [EXTRACTED]
-- [[Path_42]] - `references` [EXTRACTED]
-- [[_run()_2]] - `calls` [EXTRACTED]
+- [[Path_45]] - `references` [EXTRACTED]
+- [[_run()_3]] - `calls` [EXTRACTED]
 - [[test_update_conduit_push.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_1042

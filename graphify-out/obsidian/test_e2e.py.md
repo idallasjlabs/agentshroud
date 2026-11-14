@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "code"
-community: "Community 309"
+community: "Community 43"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_309
+  - community/Community_43
 ---
 
 # test_e2e.py
@@ -26,4 +26,4 @@ tags:
 - [[test_ssh_submit_queues_approval()]] - `contains` [EXTRACTED]
 - [[test_status_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_309
+#graphify/code #graphify/EXTRACTED #community/Community_43

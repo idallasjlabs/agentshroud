@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/config_integrity.py"
 type: "rationale"
-community: "Community 241"
+community: "Community 1210"
 location: "L58"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_241
+  - community/Community_1210
 ---
 
 # Return hex SHA256 of a file, or None if the file does not exist.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._hash_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_241
+#graphify/rationale #graphify/EXTRACTED #community/Community_1210

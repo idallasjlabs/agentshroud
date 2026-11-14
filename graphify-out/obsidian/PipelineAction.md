@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Community 63"
+community: "Community 7"
 location: "L44"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_63
+  - community/Community_7
 ---
 
 # PipelineAction
@@ -45,6 +45,7 @@ tags:
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
 - [[TestOutboundPipelineBlocked]] - `uses` [INFERRED]
 - [[TestOutboundPipelineWired]] - `uses` [INFERRED]
+- [[TestPIIBlockModeInPipeline]] - `uses` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
@@ -63,4 +64,4 @@ tags:
 - [[test_telegram_pipeline.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_63
+#graphify/code #graphify/INFERRED #community/Community_7

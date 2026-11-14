@@ -12,9 +12,9 @@ tags:
 # _evaluate_mandatory_gates()
 
 ## Connections
-- [[Any_58]] - `references` [EXTRACTED]
+- [[Any_68]] - `references` [EXTRACTED]
 - [[Apply mandatory gate overrides to domain scores.      Returns updated scores dic]] - `rationale_for` [EXTRACTED]
-- [[Path_17]] - `calls` [EXTRACTED]
+- [[Path_19]] - `calls` [EXTRACTED]
 - [[_app_state_has()]] - `calls` [EXTRACTED]
 - [[_security_scan_sh_text()]] - `calls` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Community 254"
+community: "Community 978"
 location: "L152"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_254
+  - community/Community_978
 ---
 
 # LedgerQueryResponse
 
 ## Connections
-- [[Any_7]] - `uses` [INFERRED]
+- [[Any_17]] - `uses` [INFERRED]
 - [[AuthRequired]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[DataLedger]] - `uses` [INFERRED]
@@ -24,7 +24,7 @@ tags:
 - [[MCPResultRequest]] - `uses` [INFERRED]
 - [[OpProxyRequest]] - `uses` [INFERRED]
 - [[Paginated ledger query results]] - `rationale_for` [EXTRACTED]
-- [[Request_1]] - `uses` [INFERRED]
+- [[Request_2]] - `uses` [INFERRED]
 - [[SSHExecRequest]] - `uses` [INFERRED]
 - [[SSHWriteFileRequest]] - `uses` [INFERRED]
 - [[WebSocket_2]] - `uses` [INFERRED]
@@ -32,4 +32,4 @@ tags:
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_254
+#graphify/code #graphify/INFERRED #community/Community_978

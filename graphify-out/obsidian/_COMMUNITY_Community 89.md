@@ -1,14 +1,14 @@
 ---
 type: community
-members: 66
+members: 64
 ---
 
 # Community 89
 
-**Members:** 66 nodes
+**Members:** 64 nodes
 
 ## Members
-- [[.__init__()_70]] - code - gateway/security/delegation.py
+- [[.__init__()_85]] - code - gateway/security/delegation.py
 - [[._load()]] - code - gateway/security/delegation.py
 - [[._require_owner()]] - code - gateway/security/delegation.py
 - [[._revoke_by_user_privilege()]] - code - gateway/security/delegation.py
@@ -52,7 +52,6 @@ members: 66
 - [[DelegationManager]] - code - gateway/security/delegation.py
 - [[DelegationManager_1]] - code - gateway/tests/test_delegation.py
 - [[DelegationPrivilege]] - code - gateway/security/delegation.py
-- [[FR2 Use Control]] - concept - docs/compliance/iec-62443-matrix.md
 - [[In-memory delegation manager (no disk IO).]] - rationale - gateway/tests/test_delegation.py
 - [[Manages owner-away privilege delegations.      Thread-safe via file locking for]] - rationale - gateway/security/delegation.py
 - [[Raised when a delegation operation is invalid.]] - rationale - gateway/security/delegation.py
@@ -70,7 +69,6 @@ members: 66
 - [[TestRedelegation]] - code - gateway/tests/test_delegation.py
 - [[TestRevoke]] - code - gateway/tests/test_delegation.py
 - [[TestSerialization]] - code - gateway/tests/test_delegation.py
-- [[ValueError]] - code
 - [[delegation.py]] - code - gateway/security/delegation.py
 - [[mgr()]] - code - gateway/tests/test_delegation.py
 - [[test_delegation.py]] - code - gateway/tests/test_delegation.py
@@ -83,25 +81,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 4 edges to [[_COMMUNITY_Community 14]]
 - 3 edges to [[_COMMUNITY_Community 8]]
 - 3 edges to [[_COMMUNITY_Community 10]]
-- 2 edges to [[_COMMUNITY_Community 72]]
-- 2 edges to [[_COMMUNITY_Community 223]]
-- 2 edges to [[_COMMUNITY_Community 14]]
+- 2 edges to [[_COMMUNITY_Community 7]]
 - 1 edge to [[_COMMUNITY_Community 489]]
-- 1 edge to [[_COMMUNITY_Community 96]]
-- 1 edge to [[_COMMUNITY_Community 133]]
-- 1 edge to [[_COMMUNITY_Community 23]]
 - 1 edge to [[_COMMUNITY_Community 65]]
-- 1 edge to [[_COMMUNITY_Community 75]]
-- 1 edge to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 162]]
-- 1 edge to [[_COMMUNITY_Community 393]]
-- 1 edge to [[_COMMUNITY_Community 904]]
+- 1 edge to [[_COMMUNITY_Community 18]]
+- 1 edge to [[_COMMUNITY_Community 9]]
+- 1 edge to [[_COMMUNITY_Community 80]]
 
 ## Top bridge nodes
-- [[FR2 Use Control]] - degree 7, connects to 6 communities
-- [[DelegationPrivilege]] - degree 25, connects to 5 communities
+- [[DelegationPrivilege]] - degree 25, connects to 4 communities
 - [[DelegationManager]] - degree 26, connects to 2 communities
-- [[delegation.py]] - degree 6, connects to 1 community
+- [[delegation.py]] - degree 6, connects to 2 communities
+- [[DelegationError]] - degree 14, connects to 1 community
 - [[.from_dict()_4]] - degree 3, connects to 1 community

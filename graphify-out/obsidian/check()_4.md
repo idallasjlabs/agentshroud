@@ -1,18 +1,19 @@
 ---
-source_file: "scripts/smoke.d/test-sunday-upgrade-scan.sh"
+source_file: "scripts/smoke.d/test-edge-isolation.sh"
 type: "code"
-community: "Community 1111"
-location: "L56"
+community: "Community 1971"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1111
+  - community/Community_1971
 ---
 
 # check()
 
 ## Connections
-- [[test-sunday-upgrade-scan.sh]] - `defines` [EXTRACTED]
-- [[test-sunday-upgrade-scan.sh script]] - `calls` [EXTRACTED]
+- [[_assert_blocked()]] - `calls` [EXTRACTED]
+- [[test-edge-isolation.sh]] - `defines` [EXTRACTED]
+- [[test-edge-isolation.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1111
+#graphify/code #graphify/EXTRACTED #community/Community_1971

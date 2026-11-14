@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "Community 21"
+community: "Community 93"
 location: "L47"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_21
+  - community/Community_93
 ---
 
 # EgressPolicy
 
 ## Connections
-- [[.__init__()_75]] - `references` [EXTRACTED]
+- [[.__init__()_90]] - `references` [EXTRACTED]
 - [[.get_policy()]] - `references` [EXTRACTED]
 - [[.matches_domain()]] - `method` [EXTRACTED]
 - [[.matches_ip()]] - `method` [EXTRACTED]
@@ -51,7 +51,7 @@ tags:
 - [[TestAuditStorePersistence]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestAuth_1]] - `uses` [INFERRED]
-- [[TestConcurrency]] - `uses` [INFERRED]
+- [[TestConcurrency_1]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
@@ -74,7 +74,7 @@ tags:
 - [[TestLogging]] - `uses` [INFERRED]
 - [[TestLoggingSecurity]] - `uses` [INFERRED]
 - [[TestMCPSecurity]] - `uses` [INFERRED]
-- [[TestMonitorMode]] - `uses` [INFERRED]
+- [[TestMonitorMode_2]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
 - [[TestOpenClawResearchDomainsAllowlisted]] - `uses` [INFERRED]
 - [[TestPIIDetection_1]] - `uses` [INFERRED]
@@ -113,4 +113,4 @@ tags:
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 - [[v0.9.0 cron-email fix SMTPIMAP ports 465587993 allowed for OpenClaw cron email]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_21
+#graphify/code #graphify/INFERRED #community/Community_93

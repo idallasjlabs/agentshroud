@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/skills/scan.py"
+source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "Community 924"
-location: "L42"
+community: "Community 102"
+location: "L66"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_924
+  - graphify/EXTRACTED
+  - community/Community_102
 ---
 
 # Path
 
 ## Connections
-- [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_2]] - `uses` [INFERRED]
-- [[SkillGuard]] - `uses` [INFERRED]
-- [[SkillsManifest]] - `uses` [INFERRED]
-- [[_build_tree()]] - `references` [EXTRACTED]
-- [[main()_13]] - `calls` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_924
+#graphify/code #graphify/EXTRACTED #community/Community_102

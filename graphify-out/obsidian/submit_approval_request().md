@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "Community 707"
+community: "Community 49"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_707
+  - community/Community_49
 ---
 
 # submit_approval_request()
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[ApprovalRequest_4]] - `references` [EXTRACTED]
 - [[AuthRequired_1]] - `references` [EXTRACTED]
-- [[Request_2]] - `references` [EXTRACTED]
+- [[Request_3]] - `references` [EXTRACTED]
 - [[Submit an action for human approval      Called by agents when attempting sensit]] - `rationale_for` [EXTRACTED]
 - [[approval.py]] - `contains` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_707
+#graphify/code #graphify/EXTRACTED #community/Community_49

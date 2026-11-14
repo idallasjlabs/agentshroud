@@ -9,10 +9,10 @@ members: 19
 
 ## Members
 - [[Added]] - document - CHANGELOG.md
-- [[Added_10]] - document - CHANGELOG.md
-- [[Added_15]] - document - CHANGELOG.md
+- [[Added_11]] - document - CHANGELOG.md
 - [[Added_16]] - document - CHANGELOG.md
 - [[Added_17]] - document - CHANGELOG.md
+- [[Added_18]] - document - CHANGELOG.md
 - [[Changed_7]] - document - CHANGELOG.md
 - [[P1 HTTP CONNECT Proxy (PR 24)]] - document - CHANGELOG.md
 - [[P2 Credential Isolation (PR 25)]] - document - CHANGELOG.md
@@ -36,19 +36,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 773]]
 - 5 edges to [[_COMMUNITY_Community 1380]]
-- 4 edges to [[_COMMUNITY_Community 1386]]
-- 2 edges to [[_COMMUNITY_Community 1255]]
+- 5 edges to [[_COMMUNITY_Community 1386]]
+- 3 edges to [[_COMMUNITY_Community 1255]]
+- 3 edges to [[_COMMUNITY_Community 1202]]
+- 2 edges to [[_COMMUNITY_Community 773]]
 - 2 edges to [[_COMMUNITY_Community 1934]]
 - 2 edges to [[_COMMUNITY_Community 2016]]
-- 1 edge to [[_COMMUNITY_Community 2039]]
 - 1 edge to [[_COMMUNITY_Community 1916]]
-- 1 edge to [[_COMMUNITY_Community 2123]]
+- 1 edge to [[_COMMUNITY_Community 2172]]
 
 ## Top bridge nodes
-- [[Added]] - degree 27, connects to 9 communities
+- [[Added]] - degree 28, connects to 9 communities
 - [[0.4.0 - 2026-02-19]] - degree 9, connects to 4 communities
-- [[Added_17]] - degree 4, connects to 1 community
-- [[Added_10]] - degree 3, connects to 1 community
-- [[Added_16]] - degree 3, connects to 1 community
+- [[Added_18]] - degree 4, connects to 1 community
+- [[Added_11]] - degree 3, connects to 1 community
+- [[Added_17]] - degree 3, connects to 1 community

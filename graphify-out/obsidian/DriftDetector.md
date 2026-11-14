@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "Community 0"
+community: "Community 162"
 location: "L59"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_0
+  - community/Community_162
 ---
 
 # DriftDetector
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_73]] - `method` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_88]] - `method` [EXTRACTED]
 - [[._init_db()_1]] - `method` [EXTRACTED]
 - [[.acknowledge_alert()]] - `method` [EXTRACTED]
 - [[.check_drift()]] - `method` [EXTRACTED]
-- [[.close()_10]] - `method` [EXTRACTED]
+- [[.close()_12]] - `method` [EXTRACTED]
 - [[.get_alerts()]] - `method` [EXTRACTED]
 - [[.get_baseline()]] - `method` [EXTRACTED]
 - [[.set_baseline()]] - `method` [EXTRACTED]
@@ -28,7 +28,7 @@ tags:
 - [[.test_drift_no_false_positive()]] - `calls` [EXTRACTED]
 - [[.test_simultaneous_baseline_and_config_change()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Detect configuration drift from known-good baselines.]] - `rationale_for` [EXTRACTED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[IsolationVerifier]] - `shares_data_with` [EXTRACTED]
@@ -41,7 +41,7 @@ tags:
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestAuth_1]] - `uses` [INFERRED]
-- [[TestConcurrency]] - `uses` [INFERRED]
+- [[TestConcurrency_1]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
@@ -81,4 +81,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_0
+#graphify/code #graphify/INFERRED #community/Community_162

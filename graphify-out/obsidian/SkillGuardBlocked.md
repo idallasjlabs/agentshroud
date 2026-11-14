@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 125"
-location: "L938"
+community: "Community 2017"
+location: "L965"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_125
+  - community/Community_2017
 ---
 
 # SkillGuardBlocked
 
 ## Connections
-- [[.__init__()_200]] - `method` [EXTRACTED]
+- [[.__init__()_227]] - `method` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
 - [[Exception]] - `inherits` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[_skills_reload_impl()]] - `calls` [EXTRACTED]
 - [[api.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_125
+#graphify/code #graphify/EXTRACTED #community/Community_2017

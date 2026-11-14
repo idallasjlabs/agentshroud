@@ -12,6 +12,6 @@ tags:
 # EgressFilter in monitor mode should allow but log unlisted destinations.
 
 ## Connections
-- [[TestMonitorMode]] - `rationale_for` [EXTRACTED]
+- [[TestMonitorMode_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_21

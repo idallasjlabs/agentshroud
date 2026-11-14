@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "Community 166"
+community: "Community 198"
 location: "L1001"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_166
+  - community/Community_198
 ---
 
 # rotate_credential()
 
 ## Connections
+- [[HTTPException]] - `calls` [INFERRED]
 - [[KeyRotationConfig_1]] - `calls` [EXTRACTED]
 - [[KeyRotationManager]] - `calls` [EXTRACTED]
 - [[Trigger manual rotation for a specific credential (owner only).]] - `rationale_for` [EXTRACTED]
 - [[management.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_166
+#graphify/code #graphify/EXTRACTED #community/Community_198

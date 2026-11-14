@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "Community 439"
+community: "Community 50"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_439
+  - community/Community_50
 ---
 
 # ApprovalQueue
@@ -28,7 +28,7 @@ tags:
 - [[.no_approval_client()]] - `calls` [EXTRACTED]
 - [[.submit()_1]] - `method` [EXTRACTED]
 - [[ApprovalQueue_1]] - `uses` [INFERRED]
-- [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue_3]] - `uses` [INFERRED]
 - [[In-memory approval queue with WebSocket notifications      Actions requiring app]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalStorePersistence]] - `uses` [INFERRED]
 - [[TestApprovalTimeout]] - `uses` [INFERRED]
@@ -49,8 +49,8 @@ tags:
 - [[_queue()]] - `calls` [EXTRACTED]
 - [[approval_queue()]] - `calls` [EXTRACTED]
 - [[approval_queue()_1]] - `calls` [EXTRACTED]
-- [[client()_16]] - `calls` [EXTRACTED]
 - [[client()_17]] - `calls` [EXTRACTED]
+- [[client()_18]] - `calls` [EXTRACTED]
 - [[queue()]] - `calls` [EXTRACTED]
 - [[queue.py]] - `contains` [EXTRACTED]
 - [[test_approval_queue.py]] - `imports` [EXTRACTED]
@@ -64,4 +64,4 @@ tags:
 - [[test_store_persists_submit_and_decision()]] - `calls` [EXTRACTED]
 - [[test_store_restores_items_on_init()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_439
+#graphify/code #graphify/EXTRACTED #community/Community_50

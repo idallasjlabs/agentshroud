@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 40"
-location: "L556"
+community: "Community 2017"
+location: "L583"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_40
+  - community/Community_2017
 ---
 
 # upgrade_bot()
@@ -20,4 +20,4 @@ tags:
 - [[upgrade()]] - `semantically_similar_to` [INFERRED]
 - [[upgrade_openclaw()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_40
+#graphify/code #graphify/EXTRACTED #community/Community_2017

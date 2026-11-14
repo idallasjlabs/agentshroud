@@ -1,14 +1,14 @@
 ---
 type: community
-members: 57
+members: 59
 ---
 
 # Community 146
 
-**Members:** 57 nodes
+**Members:** 59 nodes
 
 ## Members
-- [[.__init__()_120]] - code - gateway/security/subagent_monitor.py
+- [[.__init__()_135]] - code - gateway/security/subagent_monitor.py
 - [[._log_event()_1]] - code - gateway/security/subagent_monitor.py
 - [[.check_tool_usage()]] - code - gateway/security/subagent_monitor.py
 - [[.deregister()_1]] - code - gateway/security/subagent_monitor.py
@@ -48,6 +48,8 @@ members: 57
 - [[If sub-agent tries tool above its trust, flag it.]] - rationale - gateway/tests/test_subagent_monitor.py
 - [[In monitor mode, even trust violations are allowed (just flagged).]] - rationale - gateway/tests/test_subagent_monitor.py
 - [[Monitor mode flags but allows.]] - rationale - gateway/tests/test_subagent_monitor.py
+- [[SubagentEvent]] - code - gateway/security/subagent_monitor.py
+- [[SubagentEventType]] - code - gateway/security/subagent_monitor.py
 - [[SubagentInfo]] - code - gateway/security/subagent_monitor.py
 - [[SubagentMonitor]] - code - gateway/security/subagent_monitor.py
 - [[TestAuditTrail_2]] - code - gateway/tests/test_subagent_monitor.py
@@ -74,18 +76,28 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 27 edges to [[_COMMUNITY_Community 0]]
-- 24 edges to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 8]]
-- 1 edge to [[_COMMUNITY_Community 307]]
-- 1 edge to [[_COMMUNITY_Community 102]]
-- 1 edge to [[_COMMUNITY_Community 5]]
-- 1 edge to [[_COMMUNITY_Community 76]]
+- 23 edges to [[_COMMUNITY_Community 72]]
+- 11 edges to [[_COMMUNITY_Community 0]]
+- 6 edges to [[_COMMUNITY_Community 41]]
+- 3 edges to [[_COMMUNITY_Community 8]]
+- 3 edges to [[_COMMUNITY_Community 5]]
+- 3 edges to [[_COMMUNITY_Community 365]]
+- 2 edges to [[_COMMUNITY_Community 162]]
+- 2 edges to [[_COMMUNITY_Community 148]]
+- 2 edges to [[_COMMUNITY_Community 477]]
+- 2 edges to [[_COMMUNITY_Community 196]]
+- 2 edges to [[_COMMUNITY_Community 235]]
+- 2 edges to [[_COMMUNITY_Community 128]]
+- 2 edges to [[_COMMUNITY_Community 479]]
 - 1 edge to [[_COMMUNITY_Community 181]]
+- 1 edge to [[_COMMUNITY_Community 1]]
+- 1 edge to [[_COMMUNITY_Community 307]]
+- 1 edge to [[_COMMUNITY_Community 185]]
+- 1 edge to [[_COMMUNITY_Community 76]]
 
 ## Top bridge nodes
-- [[subagent_monitor.py]] - degree 10, connects to 6 communities
-- [[SubagentMonitor]] - degree 46, connects to 3 communities
-- [[test_subagent_monitor.py]] - degree 15, connects to 2 communities
-- [[TestTrustInheritance]] - degree 9, connects to 2 communities
-- [[TestSubagentTracking]] - degree 8, connects to 2 communities
+- [[SubagentMonitor]] - degree 46, connects to 14 communities
+- [[SubagentEvent]] - degree 17, connects to 11 communities
+- [[subagent_monitor.py]] - degree 10, connects to 5 communities
+- [[SubagentEventType]] - degree 22, connects to 3 communities
+- [[test_subagent_monitor.py]] - degree 15, connects to 1 community

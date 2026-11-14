@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "rationale"
-community: "Community 50"
+community: "Community 7"
 location: "L93"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_50
+  - community/Community_7
 ---
 
 # Set up app state and provide TestClient.
 
 ## Connections
-- [[client()_17]] - `rationale_for` [EXTRACTED]
+- [[client()_18]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_50
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

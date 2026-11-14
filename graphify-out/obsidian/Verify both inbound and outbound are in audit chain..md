@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "Community 43"
+community: "Community 7"
 location: "L589"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/Community_7
 ---
 
 # Verify both inbound and outbound are in audit chain.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_inbound_outbound_both_audited()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_43
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

@@ -1,18 +1,25 @@
 ---
-source_file: "skills/openclaw/nano-banana-pro/scripts/generate_image.py"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "Community 382"
-location: "L32"
+community: "Community 160"
+location: "L431"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_382
+  - community/Community_160
 ---
 
 # main()
 
 ## Connections
-- [[generate_image.py]] - `contains` [EXTRACTED]
-- [[get_api_key()]] - `calls` [EXTRACTED]
+- [[._take_screenshot()_3]] - `calls` [EXTRACTED]
+- [[.click()_3]] - `calls` [EXTRACTED]
+- [[.close()_22]] - `calls` [EXTRACTED]
+- [[.extract()_3]] - `calls` [EXTRACTED]
+- [[.fill_field()_3]] - `calls` [EXTRACTED]
+- [[.navigate()_3]] - `calls` [EXTRACTED]
+- [[CLI interface for SecureBrowser_3]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_3]] - `calls` [EXTRACTED]
+- [[browse.py_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_382
+#graphify/code #graphify/EXTRACTED #community/Community_160

@@ -1,45 +1,316 @@
 ---
 type: community
-members: 32
+members: 303
 ---
 
 # Community 25
 
-**Members:** 32 nodes
+**Members:** 303 nodes
 
 ## Members
-- [[.test_execute_nonzero_exit()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_execute_success()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_execute_timeout()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_execute_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_is_auto_approved_no()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_is_auto_approved_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_is_auto_approved_yes()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_auto_approve_exact_only()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_allowed()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_backslash_n_injection()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_carriage_return_injection()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_denied()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_dollar_brace_injection()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_dollar_var_injection()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_global_denied()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_injection_blocked_and()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_injection_blocked_backticks()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_injection_blocked_dollar_paren()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_injection_blocked_or()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_injection_blocked_pipe()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_injection_blocked_semicolon()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_newline_injection()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_not_in_allowlist()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_empty_command()]] - code - gateway/tests/test_ssh_proxy.py
-- [[Auto-approve must be exact match, not prefix (Finding 3)]] - rationale - gateway/tests/test_ssh_proxy.py
-- [[SSHProxy_1]] - code - gateway/tests/test_ssh_proxy.py
-- [[Test newline-based injection attempts (Finding 11)]] - rationale - gateway/tests/test_ssh_proxy.py
-- [[TestExecute]] - code - gateway/tests/test_ssh_proxy.py
-- [[TestInjectionNewline]] - code - gateway/tests/test_ssh_proxy.py
-- [[TestIsAutoApproved]] - code - gateway/tests/test_ssh_proxy.py
-- [[TestValidateCommand]] - code - gateway/tests/test_ssh_proxy.py
+- [[.__call__()_7]] - code - gateway/tests/test_edge_jwt.py
+- [[.__call__()_8]] - code - gateway/tests/test_edge_pipeline.py
+- [[.__init__()_10]] - code - gateway/inbound_edge/call_pipeline.py
+- [[.__init__()_11]] - code - gateway/inbound_edge/call_pipeline.py
+- [[.__init__()_12]] - code - gateway/inbound_edge/call_pipeline.py
+- [[.__init__()_17]] - code - gateway/inbound_edge/edge_jwt.py
+- [[.__init__()_18]] - code - gateway/inbound_edge/facades.py
+- [[.__init__()_21]] - code - gateway/inbound_edge/oauth_service.py
+- [[.__init__()_22]] - code - gateway/inbound_edge/oauth_service.py
+- [[.__init__()_170]] - code - gateway/tests/test_edge_e2e_sdk.py
+- [[.__init__()_171]] - code - gateway/tests/test_edge_e2e_sdk.py
+- [[.__init__()_172]] - code - gateway/tests/test_edge_jwt.py
+- [[.__init__()_173]] - code - gateway/tests/test_edge_pipeline.py
+- [[.__init__()_174]] - code - gateway/tests/test_edge_pipeline.py
+- [[._alert()]] - code - gateway/inbound_edge/call_pipeline.py
+- [[._authenticate()]] - code - gateway/inbound_edge/call_pipeline.py
+- [[._card()]] - code - gateway/tests/test_edge_approvals.py
+- [[._check_encoded()]] - code - gateway/security/canary_tripwire.py
+- [[._check_limits()]] - code - gateway/inbound_edge/call_pipeline.py
+- [[._check_plain()]] - code - gateway/security/canary_tripwire.py
+- [[._idem_key()]] - code - gateway/inbound_edge/approvals.py
+- [[._issue()]] - code - gateway/inbound_edge/oauth_service.py
+- [[._normalize()]] - code - gateway/security/canary_tripwire.py
+- [[._p0()]] - code - gateway/inbound_edge/call_pipeline.py
+- [[._profile()]] - code - gateway/inbound_edge/oauth_service.py
+- [[._proxy()]] - code - gateway/tests/test_edge_approvals.py
+- [[._record()]] - code - gateway/inbound_edge/call_pipeline.py
+- [[._record()_1]] - code - gateway/security/canary_tripwire.py
+- [[._run()_2]] - code - gateway/tests/test_edge_approvals.py
+- [[._say()]] - code - gateway/inbound_edge/oauth_service.py
+- [[._scrub()]] - code - gateway/inbound_edge/call_pipeline.py
+- [[._status()]] - code - gateway/inbound_edge/approvals.py
+- [[._strike()]] - code - gateway/inbound_edge/call_pipeline.py
+- [[._update()]] - code - gateway/tests/test_edge_approvals.py
+- [[._vendor_of()]] - code - gateway/inbound_edge/oauth_service.py
+- [[._visible_tools()]] - code - gateway/inbound_edge/call_pipeline.py
+- [[.analyze()_1]] - code - gateway/security/encoding_detector.py
+- [[.authorize()_1]] - code - gateway/inbound_edge/oauth_service.py
+- [[.call_tool()]] - code - gateway/inbound_edge/call_pipeline.py
+- [[.close()_5]] - code - gateway/inbound_edge/service.py
+- [[.consent_submit()]] - code - gateway/inbound_edge/oauth_service.py
+- [[.consent_view()]] - code - gateway/inbound_edge/oauth_service.py
+- [[.decode_base64_segments()]] - code - gateway/security/encoding_detector.py
+- [[.decode_hex()]] - code - gateway/security/encoding_detector.py
+- [[.decode_rot13()]] - code - gateway/security/encoding_detector.py
+- [[.decode_url()]] - code - gateway/security/encoding_detector.py
+- [[.detection_count()]] - code - gateway/security/canary_tripwire.py
+- [[.enforcing()]] - code - gateway/inbound_edge/profiles.py
+- [[.exchange_authorization_code()_1]] - code - gateway/inbound_edge/oauth_service.py
+- [[.exchange_refresh_token()_1]] - code - gateway/inbound_edge/oauth_service.py
+- [[.get_client()_1]] - code - gateway/inbound_edge/oauth_service.py
+- [[.get_client_info()]] - code - gateway/tests/test_edge_e2e_sdk.py
+- [[.get_tokens()]] - code - gateway/tests/test_edge_e2e_sdk.py
+- [[.handle_callback()]] - code - gateway/inbound_edge/approvals.py
+- [[.hit()]] - code - gateway/inbound_edge/call_pipeline.py
+- [[.list_tools()]] - code - gateway/inbound_edge/call_pipeline.py
+- [[.load_access_token()_1]] - code - gateway/inbound_edge/oauth_service.py
+- [[.load_authorization_code()_1]] - code - gateway/inbound_edge/oauth_service.py
+- [[.load_refresh_token()_1]] - code - gateway/inbound_edge/oauth_service.py
+- [[.mint_access()]] - code - gateway/inbound_edge/edge_jwt.py
+- [[.principal_id()]] - code - gateway/inbound_edge/edge_jwt.py
+- [[.profiles()]] - code - gateway/inbound_edge/service.py
+- [[.redeem()]] - code - gateway/inbound_edge/approvals.py
+- [[.register_canary()]] - code - gateway/security/canary_tripwire.py
+- [[.register_client()_1]] - code - gateway/inbound_edge/oauth_service.py
+- [[.replace_homoglyphs()]] - code - gateway/security/encoding_detector.py
+- [[.revoke_token()_1]] - code - gateway/inbound_edge/oauth_service.py
+- [[.run()]] - code - gateway/inbound_edge/call_pipeline.py
+- [[.run()_10]] - code - gateway/tests/test_edge_e2e_sdk.py
+- [[.run()_11]] - code - gateway/tests/test_edge_pipeline.py
+- [[.scan()_2]] - code - gateway/security/canary_tripwire.py
+- [[.scan_response()_1]] - code - gateway/security/canary_tripwire.py
+- [[.service_token_ok()]] - code - gateway/inbound_edge/service.py
+- [[.set_client_info()]] - code - gateway/tests/test_edge_e2e_sdk.py
+- [[.set_tokens()]] - code - gateway/tests/test_edge_e2e_sdk.py
+- [[.strip_zero_width()]] - code - gateway/security/encoding_detector.py
+- [[.test_after_use_a_new_request_needs_a_new_approval()]] - code - gateway/tests/test_edge_approvals.py
+- [[.test_api_key_scrubbed()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_approved_executes_exactly_once()]] - code - gateway/tests/test_edge_approvals.py
+- [[.test_approved_write_executes_once()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_auth_code_is_single_use()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_bad_kill_scope_rejected()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_bad_ticket_does_not_execute()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_benign_read_call_dispatches()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_canary_blocks_and_suspends()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_card_has_no_field_for_agent_prose()]] - code - gateway/tests/test_edge_approvals.py
+- [[.test_card_snapshot()]] - code - gateway/tests/test_edge_approvals.py
+- [[.test_changed_args_are_denied()]] - code - gateway/tests/test_edge_approvals.py
+- [[.test_concurrency_cap()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_concurrent_redeem_executes_once()]] - code - gateway/tests/test_edge_approvals.py
+- [[.test_daily_call_budget()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_daily_delegation_budget()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_disabled_vendor_gets_nothing()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_edge_can_check_signature_with_public_key_only()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_encoded_injection_blocked()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_enrollment_code_single_use_and_vendor_bound()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_enrollment_expires()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_es256_with_wrong_curve_key_rejected()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_escalation_ladder()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_expired()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_expired_auth_code()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_expired_is_denied()]] - code - gateway/tests/test_edge_approvals.py
+- [[.test_extra_argument_rejected()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_first_call_returns_pending_ticket_and_notifies()]] - code - gateway/tests/test_edge_approvals.py
+- [[.test_garbage_token()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_hs256_signed_with_public_key()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_injection_in_arguments_blocked()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_issued_in_the_future()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_jti_never_issued_is_rejected()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_kill_takes_effect_within_one_second()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_killed_client()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_killed_vendor_blocks_all_its_tokens()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_large_args_truncated_with_full_hash()]] - code - gateway/tests/test_edge_approvals.py
+- [[.test_lifetime_is_15_minutes()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_lifetime_longer_than_policy()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_lists_only_profile_tools()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_local_agent_tools_hidden_without_local_agent()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_markup_cannot_break_out_of_the_card()]] - code - gateway/tests/test_edge_approvals.py
+- [[.test_minted_token_verifies()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_missing_required_claims()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_monitor_mode_logs_but_allows_injection()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_non_owner_button_ignored()]] - code - gateway/tests/test_edge_approvals.py
+- [[.test_non_owner_tap_is_flagged_not_owner()]] - code - gateway/tests/test_edge_approvals.py
+- [[.test_one_approval_cannot_run_twice_via_two_tickets()]] - code - gateway/tests/test_edge_approvals.py
+- [[.test_open_window_names_vendor()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_other_client_cannot_use_ticket()]] - code - gateway/tests/test_edge_approvals.py
+- [[.test_other_tool_cannot_use_ticket()]] - code - gateway/tests/test_edge_approvals.py
+- [[.test_oversized_response_denied()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_owner_button_approves()]] - code - gateway/tests/test_edge_approvals.py
+- [[.test_owner_tap_reaches_edge_and_is_not_forwarded()]] - code - gateway/tests/test_edge_approvals.py
+- [[.test_per_client_rate_limit()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_per_vendor_rate_limit_spans_clients()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_pii_blocks_in_block_mode()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_pii_redacted_in_redact_mode()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_principal_is_never_the_owner()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_queue_timeout_is_deny()]] - code - gateway/tests/test_edge_approvals.py
+- [[.test_rate_window_slides()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_recent_call_carries_vendor_and_timestamp()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_record_has_fr9_fields()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_refresh_rotation_and_reuse_revokes_family()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_rejected_is_denied()]] - code - gateway/tests/test_edge_approvals.py
+- [[.test_repeat_request_reuses_the_pending_approval()]] - code - gateway/tests/test_edge_approvals.py
+- [[.test_revoked_jti()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_secrets_are_stored_hashed()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_signed_by_another_key()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_sub_must_match_vendor_and_client()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_tampered_payload()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_ticket_is_excluded_from_args_hash()]] - code - gateway/tests/test_edge_approvals.py
+- [[.test_tool_not_in_vendor_profile()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_unapproved_ticket_is_pending_not_executed()]] - code - gateway/tests/test_edge_approvals.py
+- [[.test_unkill_restores()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_unknown_request_and_garbage()]] - code - gateway/tests/test_edge_approvals.py
+- [[.test_unknown_ticket()]] - code - gateway/tests/test_edge_approvals.py
+- [[.test_unknown_tool_denied_and_audited()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_unsigned_alg_none()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_vendor_kill_switch()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_write_without_approval_never_executes()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_writes_disabled_at_escalated()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_wrong_audience()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_wrong_issuer()]] - code - gateway/tests/test_edge_jwt.py
+- [[.tool_access()]] - code - gateway/inbound_edge/profiles.py
+- [[.verify_access()]] - code - gateway/inbound_edge/edge_jwt.py
+- [[A correctly signed token the issuer has no record of (e.g. from another]] - rationale - gateway/tests/test_edge_jwt.py
+- [[AES-256 key for sealing client secrets, derived from the gateway-only signing ke]] - rationale - gateway/inbound_edge/oauth_service.py
+- [[Algorithm confusion HMAC 'signed' with the published public key.]] - rationale - gateway/tests/test_edge_jwt.py
+- [[Any_6]] - code - gateway/inbound_edge/call_pipeline.py
+- [[Any_9]] - code - gateway/inbound_edge/edge_jwt.py
+- [[Any_11]] - code - gateway/inbound_edge/oauth_service.py
+- [[Any_13]] - code - gateway/inbound_edge/service.py
+- [[ApprovalContext]] - code - gateway/inbound_edge/approvals.py
+- [[ApprovalDenied]] - code - gateway/inbound_edge/approvals.py
+- [[ApprovalPending]] - code - gateway/inbound_edge/approvals.py
+- [[Authorise exactly one execution, or raise. Never returns on a bad ticket.]] - rationale - gateway/inbound_edge/approvals.py
+- [[CallContext]] - code - gateway/inbound_edge/call_pipeline.py
+- [[CanaryResult_1]] - code - gateway/security/canary_tripwire.py
+- [[CanaryTripwire]] - code - gateway/security/canary_tripwire.py
+- [[Clock]] - code - gateway/tests/test_edge_jwt.py
+- [[Clock_1]] - code - gateway/tests/test_edge_pipeline.py
+- [[Decode rot13-obfuscated injection payloads.          rot13 is self-inverse and a]] - rationale - gateway/security/encoding_detector.py
+- [[DecodedLayer]] - code - gateway/security/encoding_detector.py
+- [[Edge calls must not inherit the pipeline's owner exemption.]] - rationale - gateway/tests/test_edge_pipeline.py
+- [[Edge-side pre-screen signature, alg, iss, aud, exp. No revocation check.]] - rationale - gateway/inbound_edge/edge_jwt.py
+- [[EdgeApprovals]] - code - gateway/inbound_edge/approvals.py
+- [[EdgeCallPipeline]] - code - gateway/inbound_edge/call_pipeline.py
+- [[EdgeDeps]] - code - gateway/inbound_edge/call_pipeline.py
+- [[EdgeOAuthService]] - code - gateway/inbound_edge/oauth_service.py
+- [[EdgePrincipal]] - code - gateway/inbound_edge/call_pipeline.py
+- [[EdgePrincipal_1]] - code - gateway/inbound_edge/edge_jwt.py
+- [[EdgeService]] - code - gateway/inbound_edge/service.py
+- [[EdgeStore_1]] - code - gateway/inbound_edge/edge_jwt.py
+- [[EdgeStore_2]] - code - gateway/inbound_edge/oauth_service.py
+- [[EdgeStore_3]] - code - gateway/inbound_edge/service.py
+- [[EncodingDetector]] - code - gateway/security/encoding_detector.py
+- [[EncodingResult]] - code - gateway/security/encoding_detector.py
+- [[Exception]] - code
+- [[Facade]] - code - gateway/inbound_edge/call_pipeline.py
+- [[Facade_1]] - code - gateway/tests/test_edge_e2e_sdk.py
+- [[FakeFacade]] - code - gateway/tests/test_edge_pipeline.py
+- [[Hash of the canonical arguments, excluding the ticket itself.]] - rationale - gateway/inbound_edge/approvals.py
+- [[HermesDelegate]] - code - gateway/inbound_edge/facades.py
+- [[In-memory counters for the Command Center (reset on restart).]] - rationale - gateway/inbound_edge/call_pipeline.py
+- [[LabSearch]] - code - gateway/inbound_edge/facades.py
+- [[LockdownLevel]] - code - gateway/inbound_edge/call_pipeline.py
+- [[LockdownLevel_1]] - code - gateway/security/progressive_lockdown.py
+- [[Maps onto an RFC 6749  7591 error code at the HTTP layer.]] - rationale - gateway/inbound_edge/oauth_service.py
+- [[MemoryTokenStorage]] - code - gateway/tests/test_edge_e2e_sdk.py
+- [[Mint and authoritatively verify edge access tokens (gateway only).]] - rationale - gateway/inbound_edge/edge_jwt.py
+- [[Namespaced identity used by every downstream module. Never an owner ID.]] - rationale - gateway/inbound_edge/edge_jwt.py
+- [[Notify]] - code - gateway/inbound_edge/oauth_service.py
+- [[OAuthFailure]] - code - gateway/inbound_edge/oauth_service.py
+- [[Pipeline-compatible bridge scan response text and return TripwireResponse.]] - rationale - gateway/security/canary_tripwire.py
+- [[Register a new canary value at runtime for dynamic tripwire testing.]] - rationale - gateway/security/canary_tripwire.py
+- [[Sign arbitrary claims with the real key (as if minted outside the issuer).]] - rationale - gateway/tests/test_edge_jwt.py
+- [[Sliding one-minute window counter keyed by principal or vendor.]] - rationale - gateway/inbound_edge/call_pipeline.py
+- [[Stable per-install canary values, created once and kept in the edge store.]] - rationale - gateway/inbound_edge/service.py
+- [[T5 the owner sees raw arguments and their hash — never agent-written prose.]] - rationale - gateway/tests/test_edge_approvals.py
+- [[Telegram inline-button handler. Returns the toast text to show.]] - rationale - gateway/inbound_edge/approvals.py
+- [[TestApprovalCard]] - code - gateway/tests/test_edge_approvals.py
+- [[TestAuditRecord]] - code - gateway/tests/test_edge_pipeline.py
+- [[TestCallback]] - code - gateway/tests/test_edge_approvals.py
+- [[TestCommandCenterStats]] - code - gateway/tests/test_edge_pipeline.py
+- [[TestEnrollment]] - code - gateway/tests/test_edge_jwt.py
+- [[TestIdempotency]] - code - gateway/tests/test_edge_approvals.py
+- [[TestMonitorMode]] - code - gateway/tests/test_edge_pipeline.py
+- [[TestNoApprovalNoExecution]] - code - gateway/tests/test_edge_approvals.py
+- [[TestRejected]] - code - gateway/tests/test_edge_jwt.py
+- [[TestRevocationAndKill]] - code - gateway/tests/test_edge_jwt.py
+- [[TestSingleUseGrants]] - code - gateway/tests/test_edge_jwt.py
+- [[TestT1ToolAbuse]] - code - gateway/tests/test_edge_pipeline.py
+- [[TestT2Exfiltration]] - code - gateway/tests/test_edge_pipeline.py
+- [[TestT3Writes]] - code - gateway/tests/test_edge_pipeline.py
+- [[TestT4AuthN]] - code - gateway/tests/test_edge_pipeline.py
+- [[TestT9Abuse]] - code - gateway/tests/test_edge_pipeline.py
+- [[TestTelegramDispatch]] - code - gateway/tests/test_edge_approvals.py
+- [[TestTicketBinding]] - code - gateway/tests/test_edge_approvals.py
+- [[TestToolListing]] - code - gateway/tests/test_edge_pipeline.py
+- [[TestValidToken]] - code - gateway/tests/test_edge_jwt.py
+- [[The MCP ``Tool`` view of a descriptor (internal fields stripped).]] - rationale - gateway/inbound_edge/descriptors.py
+- [[The owner has not decided yet. Not an error for the caller — try again later.]] - rationale - gateway/inbound_edge/approvals.py
+- [[The presented token must not be honoured. ``str(exc)`` is safe to audit.]] - rationale - gateway/inbound_edge/edge_jwt.py
+- [[The proxy routes edge_appr buttons to the edge with the owner check.]] - rationale - gateway/tests/test_edge_approvals.py
+- [[The ticket cannot authorise this call. ``str(exc)`` is safe to return.]] - rationale - gateway/inbound_edge/approvals.py
+- [[The validated vendor profiles the pipeline enforces (read by the Command Center)]] - rationale - gateway/inbound_edge/service.py
+- [[There is no summaryjustification input to render_card at all.]] - rationale - gateway/tests/test_edge_approvals.py
+- [[TokenRejected]] - code - gateway/inbound_edge/edge_jwt.py
+- [[TokenService]] - code - gateway/inbound_edge/edge_jwt.py
+- [[TokenService_1]] - code - gateway/inbound_edge/oauth_service.py
+- [[Tool risk tier configuration]] - rationale - gateway/ingest_api/config.py
+- [[ToolRiskConfig_1]] - code - gateway/ingest_api/config.py
+- [[VendorProfile]] - code - gateway/inbound_edge/call_pipeline.py
+- [[VendorProfile_1]] - code - gateway/inbound_edge/oauth_service.py
+- [[VendorProfile_2]] - code - gateway/inbound_edge/profiles.py
+- [[VendorProfile_3]] - code - gateway/inbound_edge/service.py
+- [[VendorStats]] - code - gateway/inbound_edge/call_pipeline.py
+- [[Whole secret file (PEM is multi-line; gateway.utils.secrets keeps only the last]] - rationale - gateway/inbound_edge/service.py
+- [[_Denied]] - code - gateway/inbound_edge/call_pipeline.py
+- [[_Window]] - code - gateway/inbound_edge/call_pipeline.py
+- [[_client()]] - code - gateway/tests/test_edge_e2e_sdk.py
+- [[_ctx()]] - code - gateway/tests/test_edge_approvals.py
+- [[_decode()]] - code - gateway/inbound_edge/edge_jwt.py
+- [[_forge()]] - code - gateway/tests/test_edge_jwt.py
+- [[_pct()]] - code - gateway/tests/test_edge_benchmark.py
+- [[_principal()]] - code - gateway/tests/test_edge_approvals.py
+- [[_profile()_1]] - code - gateway/tests/test_edge_pipeline.py
+- [[_rank()]] - code - gateway/inbound_edge/call_pipeline.py
+- [[_read_secret_blob()]] - code - gateway/inbound_edge/service.py
+- [[_result()]] - code - gateway/inbound_edge/call_pipeline.py
+- [[_string_leaves()]] - code - gateway/inbound_edge/call_pipeline.py
+- [[_telegram_send()_2]] - code - gateway/inbound_edge/service.py
+- [[_text()]] - code - gateway/tests/test_edge_pipeline.py
+- [[_token()]] - code - gateway/tests/test_edge_jwt.py
+- [[_token()_1]] - code - gateway/tests/test_edge_pipeline.py
+- [[``read````write`` when the vendor may call ``tool``, else ``None``.]] - rationale - gateway/inbound_edge/profiles.py
+- [[args_sha256()]] - code - gateway/inbound_edge/approvals.py
+- [[build_edge_service()]] - code - gateway/inbound_edge/service.py
+- [[call_pipeline.py]] - code - gateway/inbound_edge/call_pipeline.py
+- [[derive_seal_key()]] - code - gateway/inbound_edge/oauth_service.py
+- [[edge()_1]] - code - gateway/tests/test_edge_pipeline.py
+- [[edge_jwt.py]] - code - gateway/inbound_edge/edge_jwt.py
+- [[encoding_detector.py]] - code - gateway/security/encoding_detector.py
+- [[env()]] - code - gateway/tests/test_edge_approvals.py
+- [[generate_signing_key_pem()]] - code - gateway/inbound_edge/edge_jwt.py
+- [[mcp_tool()]] - code - gateway/inbound_edge/descriptors.py
+- [[oauth_service.py]] - code - gateway/inbound_edge/oauth_service.py
+- [[service.py]] - code - gateway/inbound_edge/service.py
+- [[stack()]] - code - gateway/tests/test_edge_e2e_sdk.py
+- [[store_canaries()]] - code - gateway/inbound_edge/service.py
+- [[svc()]] - code - gateway/tests/test_edge_jwt.py
+- [[svc()_1]] - code - gateway/tests/test_edge_oauth.py
+- [[test_edge_approvals.py]] - code - gateway/tests/test_edge_approvals.py
+- [[test_edge_benchmark.py]] - code - gateway/tests/test_edge_benchmark.py
+- [[test_edge_e2e_sdk.py]] - code - gateway/tests/test_edge_e2e_sdk.py
+- [[test_edge_guard()]] - code - gateway/tests/test_edge_e2e_sdk.py
+- [[test_edge_jwt.py]] - code - gateway/tests/test_edge_jwt.py
+- [[test_edge_oauth.py]] - code - gateway/tests/test_edge_oauth.py
+- [[test_edge_pipeline.py]] - code - gateway/tests/test_edge_pipeline.py
+- [[test_edge_read_call_latency()]] - code - gateway/tests/test_edge_benchmark.py
+- [[test_full_oauth_and_tool_calls_with_sdk_client()]] - code - gateway/tests/test_edge_e2e_sdk.py
+- [[test_gateway_rpc_requires_service_token()]] - code - gateway/tests/test_edge_e2e_sdk.py
+- [[test_registration_refused_without_enrollment_window()]] - code - gateway/tests/test_edge_e2e_sdk.py
+- [[test_shellish_input_never_executes()]] - code - gateway/tests/test_edge_fuzz.py
+- [[throttle → writes disabled → token revoked → vendor disabled, each audited.]] - rationale - gateway/tests/test_edge_pipeline.py
+- [[verify_signature_only()]] - code - gateway/inbound_edge/edge_jwt.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,13 +320,50 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 20 edges to [[_COMMUNITY_Community 80]]
-- 5 edges to [[_COMMUNITY_Community 50]]
-- 3 edges to [[_COMMUNITY_Community 1127]]
+- 106 edges to [[_COMMUNITY_Community 30]]
+- 104 edges to [[_COMMUNITY_Community 7]]
+- 43 edges to [[_COMMUNITY_Community 31]]
+- 43 edges to [[_COMMUNITY_Community 75]]
+- 33 edges to [[_COMMUNITY_Community 65]]
+- 30 edges to [[_COMMUNITY_Community 24]]
+- 29 edges to [[_COMMUNITY_Community 50]]
+- 29 edges to [[_COMMUNITY_Community 70]]
+- 17 edges to [[_COMMUNITY_Community 531]]
+- 17 edges to [[_COMMUNITY_Community 254]]
+- 15 edges to [[_COMMUNITY_Community 96]]
+- 10 edges to [[_COMMUNITY_Community 14]]
+- 10 edges to [[_COMMUNITY_Community 45]]
+- 7 edges to [[_COMMUNITY_Community 271]]
+- 7 edges to [[_COMMUNITY_Community 84]]
+- 5 edges to [[_COMMUNITY_Community 85]]
+- 5 edges to [[_COMMUNITY_Community 35]]
+- 4 edges to [[_COMMUNITY_Community 72]]
+- 3 edges to [[_COMMUNITY_Community 152]]
+- 3 edges to [[_COMMUNITY_Community 10]]
+- 2 edges to [[_COMMUNITY_Community 8]]
+- 2 edges to [[_COMMUNITY_Community 34]]
+- 2 edges to [[_COMMUNITY_Community 2048]]
+- 2 edges to [[_COMMUNITY_Community 123]]
+- 2 edges to [[_COMMUNITY_Community 1127]]
+- 1 edge to [[_COMMUNITY_Community 149]]
+- 1 edge to [[_COMMUNITY_Community 155]]
+- 1 edge to [[_COMMUNITY_Community 156]]
+- 1 edge to [[_COMMUNITY_Community 166]]
+- 1 edge to [[_COMMUNITY_Community 57]]
+- 1 edge to [[_COMMUNITY_Community 41]]
+- 1 edge to [[_COMMUNITY_Community 5]]
+- 1 edge to [[_COMMUNITY_Community 76]]
+- 1 edge to [[_COMMUNITY_Community 160]]
+- 1 edge to [[_COMMUNITY_Community 2017]]
+- 1 edge to [[_COMMUNITY_Community 201]]
+- 1 edge to [[_COMMUNITY_Community 20]]
+- 1 edge to [[_COMMUNITY_Community 232]]
+- 1 edge to [[_COMMUNITY_Community 56]]
+- 1 edge to [[_COMMUNITY_Community 141]]
 
 ## Top bridge nodes
-- [[SSHProxy_1]] - degree 30, connects to 2 communities
-- [[TestValidateCommand]] - degree 17, connects to 2 communities
-- [[TestInjectionNewline]] - degree 12, connects to 2 communities
-- [[TestExecute]] - degree 9, connects to 2 communities
-- [[TestIsAutoApproved]] - degree 8, connects to 2 communities
+- [[Exception]] - degree 22, connects to 14 communities
+- [[test_edge_e2e_sdk.py]] - degree 32, connects to 9 communities
+- [[test_edge_pipeline.py]] - degree 35, connects to 8 communities
+- [[stack()]] - degree 29, connects to 8 communities
+- [[build_edge_service()]] - degree 28, connects to 7 communities

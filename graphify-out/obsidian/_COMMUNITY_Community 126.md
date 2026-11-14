@@ -1,28 +1,23 @@
 ---
 type: community
-members: 63
+members: 56
 ---
 
 # Community 126
 
-**Members:** 63 nodes
+**Members:** 56 nodes
 
 ## Members
 - [[AGENTSHROUD_HERMES_DISABLE_TELEGRAM]] - code - scripts/sunday-upgrade-apply.sh
 - [[Build one service at a time]] - rationale - scripts/sunday-upgrade-apply.sh
-- [[COMPOSE (asb compose command string)]] - code - scripts/asb
 - [[COMPOSE_CMD]] - code - scripts/sunday-upgrade-apply.sh
-- [[Compose profile gating (voicehermesfull)]] - rationale - scripts/asb
 - [[HEAD_AT_START]] - code - scripts/sunday-upgrade-apply.sh
 - [[PATH_10]] - code - scripts/sunday-upgrade-apply.sh
-- [[PROJECT (compose project name)]] - code - scripts/asb
 - [[Prove the outcome, never the steps (CLAUDE.md 0.0)]] - rationale - scripts/sunday-upgrade-apply.sh
 - [[S15 asb _preserve_nonempty_secrets restores emptymissing values and keeps new non-empty ones]] - concept - tests/startup_smoke/test_bot_boot_static.sh
-- [[S16 asb rebuildclean-rebuild build with $_PROFILE_FLAG]] - concept - tests/startup_smoke/test_bot_boot_static.sh
 - [[Shared working-tree stability guard]] - rationale - scripts/sunday-upgrade-apply.sh
 - [[Sunday apply exit-code contract]] - rationale - scripts/sunday-upgrade-apply.sh
 - [[UPGRADE_LOCK]] - code - scripts/sunday-upgrade-apply.sh
-- [[_PROFILE_FLAG]] - code - scripts/asb
 - [[_agent_selfcheck()]] - code - scripts/sunday-upgrade-apply.sh
 - [[_assert_head_unchanged()]] - code - scripts/sunday-upgrade-apply.sh
 - [[_attempt_rollback()]] - code - scripts/sunday-upgrade-apply.sh
@@ -49,8 +44,6 @@ members: 63
 - [[_take_apply_lock()]] - code - scripts/sunday-upgrade-apply.sh
 - [[_ts()_1]] - code - scripts/sunday-upgrade-apply.sh
 - [[_wait_for_docker()]] - code - scripts/sunday-upgrade-apply.sh
-- [[asb clean-rebuild fullhermes]] - code - scripts/asb
-- [[asb rebuild fullhermes]] - code - scripts/asb
 - [[asb up fullhermes]] - code - scripts/asb
 - [[check_noop_gate()]] - code - scripts/sunday-upgrade-apply.sh
 - [[detects HEAD moving mid-run]] - code - tests/startup_smoke/test_sunday_upgrade_head_guard.sh
@@ -80,16 +73,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_Community 118]]
+- 11 edges to [[_COMMUNITY_Community 118]]
+- 6 edges to [[_COMMUNITY_Community 295]]
 - 5 edges to [[_COMMUNITY_Community 227]]
-- 2 edges to [[_COMMUNITY_Community 261]]
-- 2 edges to [[_COMMUNITY_Community 295]]
+- 2 edges to [[_COMMUNITY_Community 194]]
+- 2 edges to [[_COMMUNITY_Community 48]]
 - 2 edges to [[_COMMUNITY_Community 139]]
+- 2 edges to [[_COMMUNITY_Community 1924]]
 - 1 edge to [[_COMMUNITY_Community 20]]
 
 ## Top bridge nodes
-- [[sunday-upgrade-apply.sh]] - degree 56, connects to 5 communities
-- [[sunday-upgrade-apply main sequence]] - degree 19, connects to 1 community
+- [[sunday-upgrade-apply.sh]] - degree 56, connects to 7 communities
+- [[sunday-upgrade-apply main sequence]] - degree 19, connects to 2 communities
+- [[check_noop_gate()]] - degree 12, connects to 2 communities
 - [[phase_baseline()]] - degree 12, connects to 1 community
-- [[check_noop_gate()]] - degree 12, connects to 1 community
 - [[phase_preflight()]] - degree 10, connects to 1 community

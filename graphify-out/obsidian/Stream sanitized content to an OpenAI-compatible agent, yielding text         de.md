@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "Community 861"
+community: "Community 34"
 location: "L297"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_861
+  - community/Community_34
 ---
 
 # Stream sanitized content to an OpenAI-compatible agent, yielding text         de
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.forward_to_agent_stream()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_861
+#graphify/rationale #graphify/EXTRACTED #community/Community_34

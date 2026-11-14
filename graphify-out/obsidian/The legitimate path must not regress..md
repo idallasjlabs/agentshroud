@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "rationale"
-community: "Community 986"
+community: "Community 33"
 location: "L357"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_986
+  - community/Community_33
 ---
 
 # The legitimate path must not regress.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_owner_over_verified_origin_keeps_full_authority()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_986
+#graphify/rationale #graphify/EXTRACTED #community/Community_33

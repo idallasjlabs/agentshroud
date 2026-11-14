@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Community 104"
+community: "Community 50"
 location: "L749"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_104
+  - community/Community_50
 ---
 
 # Re-parse and validate ``config_path``; atomically swap in reloadable fields.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[reload_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_104
+#graphify/rationale #graphify/EXTRACTED #community/Community_50

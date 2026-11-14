@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.__enter__()_3]] - `method` [EXTRACTED]
 - [[.__exit__()_3]] - `method` [EXTRACTED]
-- [[.__init__()_166]] - `method` [EXTRACTED]
+- [[.__init__()_187]] - `method` [EXTRACTED]
 - [[.iter_bytes()_1]] - `method` [EXTRACTED]
 - [[.test_2xx_with_body_is_proven()]] - `calls` [EXTRACTED]
 - [[.test_empty_body_is_not_proven()]] - `calls` [EXTRACTED]

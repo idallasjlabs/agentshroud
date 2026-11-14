@@ -1,15 +1,13 @@
 ---
 type: community
-members: 15
+members: 12
 ---
 
 # Community 656
 
-**Members:** 15 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[AgentShroud Minimal Docker Compose]] - document - examples/docker-compose.minimal.yml
-- [[AgentShroud Production Docker Compose]] - document - examples/docker-compose.production.yml
 - [[Container management]] - document - examples/docker-commands.md
 - [[Container status]] - document - examples/docker-commands.md
 - [[Debugging read-only filesystem errors]] - document - examples/docker-commands.md
@@ -22,7 +20,6 @@ members: 15
 - [[Secrets inspection (read-only check)]] - document - examples/docker-commands.md
 - [[Volume management]] - document - examples/docker-commands.md
 - [[Writing files to containers]] - document - examples/docker-commands.md
-- [[docker-commands]] - document - examples/docker-commands.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,7 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1014]]
+- 1 edge to [[_COMMUNITY_Community 333]]
 
 ## Top bridge nodes
-- [[AgentShroud Production Docker Compose]] - degree 3, connects to 1 community
+- [[Docker Commands Reference]] - degree 12, connects to 1 community

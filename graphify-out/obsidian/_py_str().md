@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[A Python string literal using black's quote preference.      CI runs black on ga]] - `rationale_for` [EXTRACTED]
-- [[Any_79]] - `references` [EXTRACTED]
+- [[Any_90]] - `references` [EXTRACTED]
 - [[_entry_to_py()]] - `indirect_call` [INFERRED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 

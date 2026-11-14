@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_collaborator_web_access_policy_question_with_url_does_not_queue_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Conceptual policy questions that mention a URL should not be treated as fetch re]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_multiple_redactions()]] - code - gateway/tests/test_prompt_protection.py
+- [[Test text with multiple types of sensitive content.]] - rationale - gateway/tests/test_prompt_protection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,8 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 4]]
-- 1 edge to [[_COMMUNITY_Community 12]]
+- 1 edge to [[_COMMUNITY_Community 351]]
 
 ## Top bridge nodes
-- [[.test_collaborator_web_access_policy_question_with_url_does_not_queue_preflight()]] - degree 7, connects to 2 communities
+- [[.test_multiple_redactions()]] - degree 2, connects to 1 community

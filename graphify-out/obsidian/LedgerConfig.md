@@ -16,7 +16,7 @@ tags:
 - [[.ledger()]] - `calls` [EXTRACTED]
 - [[.ledger()_1]] - `calls` [EXTRACTED]
 - [[.no_approval_client()]] - `calls` [EXTRACTED]
-- [[Any_7]] - `uses` [INFERRED]
+- [[Any_17]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[Data ledger configuration]] - `rationale_for` [EXTRACTED]

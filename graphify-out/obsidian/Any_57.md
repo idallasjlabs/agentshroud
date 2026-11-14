@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/security/resource_guard.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "Community 5"
-location: "L102"
+community: "Community 35"
+location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_5
+  - community/Community_35
 ---
 
 # Any
 
 ## Connections
-- [[._alert_high_usage()]] - `references` [EXTRACTED]
-- [[._get_disk_io_stats()]] - `references` [EXTRACTED]
-- [[.add_alert_callback()_1]] - `references` [EXTRACTED]
-- [[.get_usage_stats()]] - `references` [EXTRACTED]
+- [[.enforce()_1]] - `references` [EXTRACTED]
+- [[.evaluate()_1]] - `references` [EXTRACTED]
+- [[.from_dict()_7]] - `references` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_5
+#graphify/code #graphify/EXTRACTED #community/Community_35

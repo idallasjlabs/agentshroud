@@ -1,11 +1,11 @@
 ---
 type: community
-members: 58
+members: 69
 ---
 
 # Community 87
 
-**Members:** 58 nodes
+**Members:** 69 nodes
 
 ## Members
 - [[.test_output_json()]] - code - gateway/tests/test_cli_coverage.py
@@ -26,26 +26,38 @@ members: 58
 - [[Deny an egress request by ID.]] - rationale - gateway/cli/main.py
 - [[Emergency freeze pause all bot containers.]] - rationale - gateway/cli/main.py
 - [[Get container logs for a service.]] - rationale - gateway/cli/main.py
+- [[Inbound MCP Edge status, killunkill, enrollment.]] - rationale - gateway/cli/main.py
 - [[List all contributors with roles and groups.]] - rationale - gateway/cli/main.py
 - [[List all service containers with status.]] - rationale - gateway/cli/main.py
+- [[Open a one-time enrollment window; prints the code once.]] - rationale - gateway/cli/main.py
+- [[Print a write result; a refusal or an unconfirmed no-op never exits 0.]] - rationale - gateway/cli/main.py
 - [[Print data in the requested format.]] - rationale - gateway/cli/main.py
 - [[Query recent security events.]] - rationale - gateway/cli/main.py
 - [[Restart a service container.]] - rationale - gateway/cli/main.py
+- [[Revoke a vendor, client or token (takes effect on the next request).]] - rationale - gateway/cli/main.py
 - [[Set collaboration mode for a group.]] - rationale - gateway/cli/main.py
 - [[Set configuration values.]] - rationale - gateway/cli/main.py
 - [[Show SOC correlation summary.]] - rationale - gateway/cli/main.py
 - [[Show current risk score and level.]] - rationale - gateway/cli/main.py
+- [[Show edge state, per-vendor counters, kills and recent calls.]] - rationale - gateway/cli/main.py
 - [[Show pending egress approval requests.]] - rationale - gateway/cli/main.py
 - [[Stop a service container.]] - rationale - gateway/cli/main.py
-- [[Stream real-time events or logs via WebSocket.]] - rationale - gateway/cli/main.py
 - [[TestOutputHelpers]] - code - gateway/tests/test_cli_coverage.py
 - [[Trigger a security scan.]] - rationale - gateway/cli/main.py
+- [[_edge_result()]] - code - gateway/cli/main.py
+- [[_edge_target()]] - code - gateway/cli/main.py
+- [[_edge_target_options()]] - code - gateway/cli/main.py
 - [[_output()]] - code - gateway/cli/main.py
 - [[_print_table()]] - code - gateway/cli/main.py
 - [[add_collaborator()]] - code - gateway/cli/main.py
 - [[add_group_member()]] - code - gateway/cli/main.py
 - [[approve()]] - code - gateway/cli/main.py
 - [[deny()]] - code - gateway/cli/main.py
+- [[edge()]] - code - gateway/cli/main.py
+- [[edge_enroll()]] - code - gateway/cli/main.py
+- [[edge_kill()]] - code - gateway/cli/main.py
+- [[edge_status()]] - code - gateway/cli/main.py
+- [[edge_unkill()]] - code - gateway/cli/main.py
 - [[freeze()]] - code - gateway/cli/main.py
 - [[get()]] - code - gateway/cli/main.py
 - [[get_correlation()]] - code - gateway/cli/main.py
@@ -65,7 +77,6 @@ members: 58
 - [[set_mode()]] - code - gateway/cli/main.py
 - [[stop()]] - code - gateway/cli/main.py
 - [[stop_service()]] - code - gateway/cli/main.py
-- [[tail()]] - code - gateway/cli/main.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -75,14 +86,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_Community 488]]
-- 4 edges to [[_COMMUNITY_Community 170]]
-- 1 edge to [[_COMMUNITY_Community 1023]]
+- 11 edges to [[_COMMUNITY_Community 1023]]
+- 4 edges to [[_COMMUNITY_Community 488]]
+- 3 edges to [[_COMMUNITY_Community 170]]
 - 1 edge to [[_COMMUNITY_Community 978]]
 
 ## Top bridge nodes
-- [[main.py_1]] - degree 33, connects to 4 communities
+- [[main.py_1]] - degree 41, connects to 4 communities
 - [[TestOutputHelpers]] - degree 14, connects to 2 communities
-- [[tail()]] - degree 5, connects to 2 communities
-- [[_output()]] - degree 31, connects to 1 community
-- [[get()]] - degree 9, connects to 1 community
+- [[get()]] - degree 11, connects to 2 communities
+- [[_output()]] - degree 33, connects to 1 community
+- [[_print_table()]] - degree 5, connects to 1 community

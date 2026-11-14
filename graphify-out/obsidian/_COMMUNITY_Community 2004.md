@@ -1,19 +1,21 @@
 ---
 type: community
-members: 6
+members: 8
 ---
 
 # Community 2004
 
-**Members:** 6 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[._fake_run()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_curl_failure_raises_instead_of_returning_no_tags()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_fetches_through_curl_with_a_bounded_time()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_ipv4_retry_attempts_pass_dash_4_to_curl()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[2026-10-23 on marvin every Python HTTPS read to hub.docker.com hung     (Homebr]] - rationale - gateway/tests/test_discover_upstream_versions.py
-- [[TestFetchDockerhubTagsUsesCurl]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[.test_domains_in_default_allowlist()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_domains_not_denylisted()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_egress_filter_allows_in_enforce_mode()]] - code - gateway/tests/test_egress_filter.py
+- [[All four domains must be in EgressFilterConfig's default allowlist.]] - rationale - gateway/tests/test_egress_filter.py
+- [[EgressFilter in enforce mode allows all four domains for openclaw.]] - rationale - gateway/tests/test_egress_filter.py
+- [[None of the four domains should match the default denylist.]] - rationale - gateway/tests/test_egress_filter.py
+- [[TestOpenClawResearchDomainsAllowlisted]] - code - gateway/tests/test_egress_filter.py
+- [[Verify that OpenClaw's web_searchresearch destinations are pre-approved.      T]] - rationale - gateway/tests/test_egress_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +25,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 48]]
+- 5 edges to [[_COMMUNITY_Community 17]]
+- 3 edges to [[_COMMUNITY_Community 21]]
+- 2 edges to [[_COMMUNITY_Community 1119]]
+- 1 edge to [[_COMMUNITY_Community 93]]
 
 ## Top bridge nodes
-- [[TestFetchDockerhubTagsUsesCurl]] - degree 6, connects to 1 community
+- [[TestOpenClawResearchDomainsAllowlisted]] - degree 11, connects to 4 communities
+- [[.test_egress_filter_allows_in_enforce_mode()]] - degree 4, connects to 2 communities
+- [[.test_domains_in_default_allowlist()]] - degree 3, connects to 1 community
+- [[.test_domains_not_denylisted()]] - degree 3, connects to 1 community

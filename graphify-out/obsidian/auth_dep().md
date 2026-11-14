@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 2154"
+community: "Community 978"
 location: "L191"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2154
+  - community/Community_978
 ---
 
 # auth_dep()
 
 ## Connections
 - [[Authentication dependency for protected endpoints]] - `rationale_for` [EXTRACTED]
-- [[Request_1]] - `references` [EXTRACTED]
+- [[HTTPException]] - `calls` [EXTRACTED]
+- [[Request_2]] - `references` [EXTRACTED]
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 - [[test_channel_ownership.py]] - `imports` [EXTRACTED]
@@ -23,4 +24,4 @@ tags:
 - [[test_main_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_op_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2154
+#graphify/code #graphify/EXTRACTED #community/Community_978

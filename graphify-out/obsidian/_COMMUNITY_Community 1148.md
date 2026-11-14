@@ -30,11 +30,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 52]]
-- 1 edge to [[_COMMUNITY_Community 684]]
+- 5 edges to [[_COMMUNITY_Community 52]]
+- 2 edges to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 162]]
 
 ## Top bridge nodes
-- [[.get()_3]] - degree 7, connects to 1 community
+- [[.get()_3]] - degree 7, connects to 2 communities
 - [[.verify_shared_nothing()]] - degree 7, connects to 1 community
 - [[.list_agents()]] - degree 6, connects to 1 community
 - [[.verify_network_isolation()]] - degree 6, connects to 1 community

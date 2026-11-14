@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "rationale"
-community: "Community 86"
+community: "Community 27"
 location: "L288"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_86
+  - community/Community_27
 ---
 
 # CONNECT tunnel must NOT allow api.telegram.org — forces traffic through reverse
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_telegram_api_blocked_in_connect_proxy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_86
+#graphify/rationale #graphify/EXTRACTED #community/Community_27

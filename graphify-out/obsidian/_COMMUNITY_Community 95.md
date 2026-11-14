@@ -80,13 +80,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 5 edges to [[_COMMUNITY_Community 10]]
 - 4 edges to [[_COMMUNITY_Community 1127]]
-- 2 edges to [[_COMMUNITY_Community 10]]
 - 1 edge to [[_COMMUNITY_Community 181]]
 
 ## Top bridge nodes
 - [[.test_internal_error_not_leaked()]] - degree 4, connects to 2 communities
+- [[chat()]] - degree 10, connects to 1 community
+- [[require_auth()]] - degree 7, connects to 1 community
+- [[_check_rate_limit()]] - degree 5, connects to 1 community
 - [[ChatRequest]] - degree 3, connects to 1 community
-- [[ChatResponse]] - degree 3, connects to 1 community
-- [[.test_openai_auth_error_returns_503()]] - degree 3, connects to 1 community
-- [[.test_chat_success_returns_parsed_response()]] - degree 3, connects to 1 community

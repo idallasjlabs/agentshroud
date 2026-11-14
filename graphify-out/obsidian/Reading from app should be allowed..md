@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Community 0"
+community: "Community 196"
 location: "L538"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/Community_196
 ---
 
 # Reading from /app should be allowed.
@@ -15,4 +15,4 @@ tags:
 - [[.test_app_read_allowed()]] - `rationale_for` [EXTRACTED]
 - [[.test_tmp_read_allowed()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/Community_196

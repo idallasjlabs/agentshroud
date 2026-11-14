@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "Community 108"
+community: "Community 30"
 location: "L40"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_108
+  - graphify/INFERRED
+  - community/Community_30
 ---
 
 # ApprovalStore
@@ -29,21 +29,40 @@ tags:
 - [[ApprovalQueueItem_4]] - `uses` [INFERRED]
 - [[ApprovalRequest]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
+- [[Clock_1]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
-- [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue_3]] - `uses` [INFERRED]
+- [[Facade_1]] - `uses` [INFERRED]
+- [[FakeFacade]] - `uses` [INFERRED]
 - [[MCPPolicyConfig_1]] - `uses` [INFERRED]
 - [[MCPPolicyEngine_1]] - `uses` [INFERRED]
 - [[MFAGuard]] - `uses` [INFERRED]
+- [[MemoryTokenStorage]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
-- [[Path_24]] - `uses` [INFERRED]
+- [[Path_26]] - `uses` [INFERRED]
 - [[SQLite-backed persistence for approval queue items.]] - `rationale_for` [EXTRACTED]
+- [[TestApprovalCard]] - `uses` [INFERRED]
 - [[TestApprovalStorePersistence]] - `uses` [INFERRED]
 - [[TestApprovalTimeout]] - `uses` [INFERRED]
 - [[TestApprovalWorkflow]] - `uses` [INFERRED]
+- [[TestAuditRecord]] - `uses` [INFERRED]
 - [[TestAutoExpire]] - `uses` [INFERRED]
+- [[TestCallback]] - `uses` [INFERRED]
+- [[TestCommandCenterStats]] - `uses` [INFERRED]
 - [[TestConcurrentApprovalRequests]] - `uses` [INFERRED]
+- [[TestIdempotency]] - `uses` [INFERRED]
 - [[TestMCPProxyIntegration]] - `uses` [INFERRED]
+- [[TestMonitorMode]] - `uses` [INFERRED]
+- [[TestNoApprovalNoExecution]] - `uses` [INFERRED]
 - [[TestPersistence]] - `uses` [INFERRED]
+- [[TestT1ToolAbuse]] - `uses` [INFERRED]
+- [[TestT2Exfiltration]] - `uses` [INFERRED]
+- [[TestT3Writes]] - `uses` [INFERRED]
+- [[TestT4AuthN]] - `uses` [INFERRED]
+- [[TestT9Abuse]] - `uses` [INFERRED]
+- [[TestTelegramDispatch]] - `uses` [INFERRED]
+- [[TestTicketBinding]] - `uses` [INFERRED]
+- [[TestToolListing]] - `uses` [INFERRED]
 - [[TestToolRiskClassification]] - `uses` [INFERRED]
 - [[ToolRiskConfig]] - `uses` [INFERRED]
 - [[ToolRiskPolicy]] - `uses` [INFERRED]
@@ -51,10 +70,13 @@ tags:
 - [[_FakeApprovalQueue]] - `uses` [INFERRED]
 - [[_HangingWebSocket_1]] - `uses` [INFERRED]
 - [[_real_queue()]] - `calls` [EXTRACTED]
+- [[edge()_1]] - `calls` [EXTRACTED]
 - [[enhanced_mfa_queue()]] - `calls` [EXTRACTED]
 - [[enhanced_queue.py]] - `imports` [EXTRACTED]
+- [[env()]] - `calls` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
+- [[stack()]] - `calls` [EXTRACTED]
 - [[store()]] - `calls` [EXTRACTED]
 - [[store()_1]] - `calls` [EXTRACTED]
 - [[store.py]] - `contains` [EXTRACTED]
@@ -63,6 +85,9 @@ tags:
 - [[test_approval_stress.py]] - `imports` [EXTRACTED]
 - [[test_broadcast_does_not_hang_forever_on_dead_client()_1]] - `calls` [EXTRACTED]
 - [[test_decide_persists()]] - `calls` [EXTRACTED]
+- [[test_edge_approvals.py]] - `imports` [EXTRACTED]
+- [[test_edge_e2e_sdk.py]] - `imports` [EXTRACTED]
+- [[test_edge_pipeline.py]] - `imports` [EXTRACTED]
 - [[test_enhanced_approval.py]] - `imports` [EXTRACTED]
 - [[test_expired_items_on_reload()]] - `calls` [EXTRACTED]
 - [[test_initialize_is_idempotent()]] - `calls` [EXTRACTED]
@@ -73,4 +98,4 @@ tags:
 - [[test_submit_does_not_deadlock_on_hung_websocket_client()_1]] - `calls` [EXTRACTED]
 - [[test_websocket_notifications()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_108
+#graphify/code #graphify/INFERRED #community/Community_30

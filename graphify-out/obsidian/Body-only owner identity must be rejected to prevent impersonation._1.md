@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "rationale"
-community: "Community 541"
+community: "Community 50"
 location: "L253"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_541
+  - community/Community_50
 ---
 
 # Body-only owner identity must be rejected to prevent impersonation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_owner_body_identity_rejected_without_header()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_541
+#graphify/rationale #graphify/EXTRACTED #community/Community_50

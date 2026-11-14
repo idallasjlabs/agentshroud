@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/tests/test_soc_edge.py"
 type: "code"
-community: "Community 19"
-location: "L123"
+community: "Community 65"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_19
+  - community/Community_65
 ---
 
 # holder()
 
 ## Connections
 - [[FakeCaller]] - `calls` [EXTRACTED]
-- [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
+- [[test_soc_edge.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_19
+#graphify/code #graphify/EXTRACTED #community/Community_65

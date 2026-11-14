@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Community 68"
+community: "Community 30"
 location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_68
+  - community/Community_30
 ---
 
 # ApprovalRequest
 
 ## Connections
+- [[.request()_2]] - `calls` [EXTRACTED]
 - [[.test_both_owner_dm_and_group_notified()]] - `calls` [EXTRACTED]
 - [[.test_concurrent_submit_and_decide()]] - `calls` [EXTRACTED]
 - [[.test_dm_approval_no_group_side_effect()]] - `calls` [EXTRACTED]
@@ -28,6 +29,10 @@ tags:
 - [[.test_timeout_auto_deny()]] - `calls` [EXTRACTED]
 - [[Any]] - `uses` [INFERRED]
 - [[Any_1]] - `uses` [INFERRED]
+- [[Any_5]] - `uses` [INFERRED]
+- [[ApprovalContext]] - `uses` [INFERRED]
+- [[ApprovalDenied]] - `uses` [INFERRED]
+- [[ApprovalPending]] - `uses` [INFERRED]
 - [[ApprovalQueue_1]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig]] - `uses` [INFERRED]
 - [[ApprovalQueueItem]] - `uses` [INFERRED]
@@ -36,15 +41,20 @@ tags:
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[AuthRequired]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
+- [[EdgeApprovals]] - `uses` [INFERRED]
+- [[EdgeStore]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
-- [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue_3]] - `uses` [INFERRED]
 - [[Exception_1]] - `uses` [INFERRED]
 - [[GroupApprovalRouter]] - `uses` [INFERRED]
 - [[MCPProxyRequest]] - `uses` [INFERRED]
 - [[MCPResultRequest]] - `uses` [INFERRED]
 - [[MFAGuard]] - `uses` [INFERRED]
+- [[Notifier]] - `uses` [INFERRED]
 - [[OpProxyRequest]] - `uses` [INFERRED]
-- [[Request_1]] - `uses` [INFERRED]
+- [[PendingApproval]] - `uses` [INFERRED]
+- [[Request_2]] - `uses` [INFERRED]
 - [[Request for human approval of a sensitive action      Submitted by an agent when]] - `rationale_for` [EXTRACTED]
 - [[SSHExecRequest]] - `uses` [INFERRED]
 - [[SSHWriteFileRequest]] - `uses` [INFERRED]
@@ -69,6 +79,7 @@ tags:
 - [[_submit_enhanced_high_risk()]] - `calls` [EXTRACTED]
 - [[_submit_high_risk()]] - `calls` [EXTRACTED]
 - [[approval.py]] - `imports` [EXTRACTED]
+- [[approvals.py]] - `imports` [EXTRACTED]
 - [[email_send()]] - `calls` [EXTRACTED]
 - [[enhanced_queue.py]] - `imports` [EXTRACTED]
 - [[forward.py]] - `imports` [EXTRACTED]
@@ -104,4 +115,4 @@ tags:
 - [[test_submit_approval_request()]] - `calls` [EXTRACTED]
 - [[test_submit_does_not_deadlock_on_hung_websocket_client()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_68
+#graphify/code #graphify/EXTRACTED #community/Community_30

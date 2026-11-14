@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
 community: "Community 488"
-location: "L645"
+location: "L695"
 tags:
   - graphify/code
   - graphify/EXTRACTED

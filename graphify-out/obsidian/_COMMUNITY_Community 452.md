@@ -10,9 +10,9 @@ members: 21
 ## Members
 - [[.__aenter__()_1]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[.__aexit__()_1]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.__init__()_149]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.__init__()_150]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.request()_2]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.__init__()_164]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.__init__()_165]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.request()_3]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[.test_compression_pointer()]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[.test_dns_blocklist_import_failure_sets_none()]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[.test_pointer_loop_bounded()]] - code - gateway/tests/test_dns_canvas_coverage.py
@@ -46,7 +46,7 @@ SORT file.name ASC
 - 3 edges to [[_COMMUNITY_Community 683]]
 - 2 edges to [[_COMMUNITY_Community 789]]
 - 1 edge to [[_COMMUNITY_Community 595]]
-- 1 edge to [[_COMMUNITY_Community 431]]
+- 1 edge to [[_COMMUNITY_Community 72]]
 
 ## Top bridge nodes
 - [[test_dns_canvas_coverage.py]] - degree 35, connects to 9 communities

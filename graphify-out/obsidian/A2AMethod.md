@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Community 271"
+community: "Community 307"
 location: "L77"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_271
+  - community/Community_307
 ---
 
 # A2AMethod
@@ -23,7 +23,7 @@ tags:
 - [[A2AProxy]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `uses` [INFERRED]
 - [[A2AProxyResult]] - `uses` [INFERRED]
-- [[Any_11]] - `uses` [INFERRED]
+- [[Any_21]] - `uses` [INFERRED]
 - [[Canonical (v1.0 PascalCase) A2A JSON-RPC methods this engine governs.]] - `rationale_for` [EXTRACTED]
 - [[Enum]] - `inherits` [EXTRACTED]
 - [[HermesA2AForwarder]] - `uses` [INFERRED]
@@ -42,4 +42,4 @@ tags:
 - [[test_a2a_policy_default_failclosed.py]] - `imports` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_271
+#graphify/code #graphify/INFERRED #community/Community_307

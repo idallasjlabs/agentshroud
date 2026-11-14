@@ -12,8 +12,8 @@ tags:
 # SubagentMonitor
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_120]] - `method` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_135]] - `method` [EXTRACTED]
 - [[._log_event()_1]] - `method` [EXTRACTED]
 - [[.check_tool_usage()]] - `method` [EXTRACTED]
 - [[.deregister()_1]] - `method` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[.register_spawn()]] - `method` [EXTRACTED]
 - [[A2APolicyEngine_1]] - `semantically_similar_to` [INFERRED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]

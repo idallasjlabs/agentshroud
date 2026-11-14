@@ -2,7 +2,7 @@
 source_file: "CHANGELOG.md"
 type: "document"
 community: "Community 1916"
-location: "L708"
+location: "L733"
 tags:
   - graphify/document
   - graphify/EXTRACTED

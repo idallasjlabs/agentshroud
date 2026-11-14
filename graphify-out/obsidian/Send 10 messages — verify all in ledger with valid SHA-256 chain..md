@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "Community 43"
+community: "Community 7"
 location: "L182"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/Community_7
 ---
 
 # Send 10 messages — verify all in ledger with valid SHA-256 chain.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_audit_chain_integrity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_43
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

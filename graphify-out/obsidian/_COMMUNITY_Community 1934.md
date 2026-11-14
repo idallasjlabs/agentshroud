@@ -8,9 +8,9 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[Added_5]] - document - CHANGELOG.md
-- [[Fixed_9]] - document - CHANGELOG.md
-- [[Fixed_12]] - document - CHANGELOG.md
+- [[Added_6]] - document - CHANGELOG.md
+- [[Fixed_10]] - document - CHANGELOG.md
+- [[Fixed_13]] - document - CHANGELOG.md
 - [[Summary_10]] - document - CHANGELOG.md
 - [[Summary_16]] - document - CHANGELOG.md
 - [[Tests]] - document - CHANGELOG.md
@@ -27,14 +27,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 773]]
 - 2 edges to [[_COMMUNITY_Community 1255]]
 - 2 edges to [[_COMMUNITY_Community 106]]
+- 2 edges to [[_COMMUNITY_Community 773]]
+- 2 edges to [[_COMMUNITY_Community 1202]]
 - 1 edge to [[_COMMUNITY_Community 1386]]
 - 1 edge to [[_COMMUNITY_Community 1984]]
 - 1 edge to [[_COMMUNITY_Community 2016]]
 
 ## Top bridge nodes
-- [[Unreleased — featv0.8.0-enforcement-hardening (session 3 — 2026-03-15)]] - degree 10, connects to 4 communities
-- [[1.2.1 — releasev1.2.1-quality-sweep (2026-06-27)]] - degree 8, connects to 3 communities
+- [[Unreleased — featv0.8.0-enforcement-hardening (session 3 — 2026-03-15)]] - degree 10, connects to 5 communities
+- [[1.2.1 — releasev1.2.1-quality-sweep (2026-06-27)]] - degree 8, connects to 4 communities
 - [[Tests]] - degree 4, connects to 2 communities

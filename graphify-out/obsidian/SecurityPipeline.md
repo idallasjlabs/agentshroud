@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Community 84"
+community: "Community 7"
 location: "L317"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_84
+  - community/Community_7
 ---
 
 # SecurityPipeline
 
 ## Connections
-- [[.__init__()_33]] - `method` [EXTRACTED]
+- [[.__init__()_48]] - `method` [EXTRACTED]
 - [[._make_vault_pipeline()]] - `calls` [EXTRACTED]
 - [[._maybe_record_trust_violation()]] - `method` [EXTRACTED]
+- [[._pipeline()]] - `calls` [EXTRACTED]
 - [[._pipeline_with_trust()]] - `calls` [EXTRACTED]
 - [[._process_inbound_core()]] - `method` [EXTRACTED]
 - [[._process_outbound_core()]] - `method` [EXTRACTED]
@@ -41,7 +42,7 @@ tags:
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
 - [[Data Flow]] - `references` [EXTRACTED]
 - [[EncodingDetector]] - `calls` [EXTRACTED]
-- [[FakeClock]] - `uses` [INFERRED]
+- [[FakeClock_1]] - `uses` [INFERRED]
 - [[FalcoAlertWatcher]] - `conceptually_related_to` [INFERRED]
 - [[FastAPI_2]] - `uses` [INFERRED]
 - [[FilterResult]] - `uses` [INFERRED]
@@ -52,7 +53,7 @@ tags:
 - [[Main security pipeline that all messages pass through.      Wires together Prom]] - `rationale_for` [EXTRACTED]
 - [[PIISanitizer]] - `conceptually_related_to` [AMBIGUOUS]
 - [[PIISanitizer_3]] - `uses` [INFERRED]
-- [[Path_36]] - `uses` [INFERRED]
+- [[Path_39]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
@@ -89,6 +90,7 @@ tags:
 - [[TestObservatoryMode]] - `uses` [INFERRED]
 - [[TestObservatoryModeAPI]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
+- [[TestPIIBlockModeInPipeline]] - `uses` [INFERRED]
 - [[TestPIISanitizerPerformance]] - `uses` [INFERRED]
 - [[TestPromptGuardPerformance]] - `uses` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
@@ -155,4 +157,4 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_84
+#graphify/code #graphify/EXTRACTED #community/Community_7

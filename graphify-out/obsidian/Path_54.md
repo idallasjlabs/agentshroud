@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_cron_jobs_prompts.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "AgentShroud Recovery Plan v0.4.0"
-location: "L40"
+community: "Community 265"
+location: "L472"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Recovery_Plan_v040
+  - community/Community_265
 ---
 
 # Path
 
 ## Connections
-- [[_load_jobs()]] - `references` [EXTRACTED]
+- [[gather_advisories()]] - `calls` [EXTRACTED]
+- [[load_snapshot()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Recovery_Plan_v040
+#graphify/code #graphify/EXTRACTED #community/Community_265

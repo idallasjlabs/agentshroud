@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/auto_remediate_cves.py"
 type: "rationale"
-community: "Community 261"
+community: "Community 194"
 location: "L236"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_261
+  - community/Community_194
 ---
 
 # Bump the pin, run the gated upgrade, revert the pin if it does not hold.      Re
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[apply_remediation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_261
+#graphify/rationale #graphify/EXTRACTED #community/Community_194

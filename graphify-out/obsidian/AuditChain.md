@@ -12,8 +12,8 @@ tags:
 # AuditChain
 
 ## Connections
-- [[.__init__()_32]] - `method` [EXTRACTED]
-- [[.__init__()_33]] - `calls` [EXTRACTED]
+- [[.__init__()_47]] - `method` [EXTRACTED]
+- [[.__init__()_48]] - `calls` [EXTRACTED]
 - [[.__len__()_1]] - `method` [EXTRACTED]
 - [[.append()]] - `method` [EXTRACTED]
 - [[.append_block()]] - `method` [EXTRACTED]
@@ -74,6 +74,7 @@ tags:
 - [[TestIsDomainAllowed]] - `uses` [INFERRED]
 - [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
+- [[TestPIIBlockModeInPipeline]] - `uses` [INFERRED]
 - [[TestPIIDetection_2]] - `uses` [INFERRED]
 - [[TestPassthroughMode_1]] - `uses` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]

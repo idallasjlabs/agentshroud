@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-14-logic-flow.png"
 type: "image"
-community: "Community 523"
+community: "Community 226"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_523
+  - community/Community_226
 ---
 
 # Agent routing (bindings config; e.g. Telegram ID 8096968754 → main agent)
@@ -14,4 +14,4 @@ tags:
 - [[Agent Decision Logic Flowchart]] - `conceptually_related_to` [EXTRACTED]
 - [[MCP Inspector (injection scan, PII scan, sensitive-op scan; ThreatLevel NONELOWMEDIUMHIGH)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_523
+#graphify/image #graphify/EXTRACTED #community/Community_226

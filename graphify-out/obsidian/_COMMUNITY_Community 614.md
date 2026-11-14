@@ -1,29 +1,32 @@
 ---
 type: community
-members: 16
+members: 19
 ---
 
 # Community 614
 
-**Members:** 16 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[.get_document_tag()]] - code - gateway/security/metadata_guard.py
-- [[.guard()_1]] - code - gateway/tests/test_metadata_guard.py
-- [[.tag_document()]] - code - gateway/security/metadata_guard.py
-- [[.test_document_tag_creation()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_document_tag_lookup_by_hash()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_document_tag_untrusted_source()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_get_document_tag_unknown_hash_returns_none()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_tag_document_different_content_different_hash()]] - code - gateway/tests/test_metadata_guard.py
-- [[Create and store a provenance tag for a document.]] - rationale - gateway/security/metadata_guard.py
-- [[DocumentTag]] - code - gateway/security/metadata_guard.py
-- [[Look up a document tag by its SHA-256 content hash.]] - rationale - gateway/security/metadata_guard.py
-- [[Numbered security control catalog (C8, C9, C18, C47, ...)]] - concept - gateway/tests/test_prompt_guard.py
-- [[Provenance record for a document ingested into the agent context.]] - rationale - gateway/security/metadata_guard.py
-- [[TestDocumentTagging]] - code - gateway/tests/test_metadata_guard.py
-- [[metadata_guard.py]] - code - gateway/security/metadata_guard.py
-- [[test_metadata_guard.py]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_clean_fresh_and_stale_reports()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_clean_no_report_three()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_critical_high_medium_branches()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_failures_score_two()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_fresh_clean_is_optimizing()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_malware_30h_old_scan_measured()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_malware_fresh_scan_optimizing()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_malware_running_but_nothing_scanned()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_not_run_no_binary()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_oscap_binary_present_not_run()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_runtime_noncritical_findings_scores_four()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_stale_report_caps_at_one()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_two_day_old_clean_is_measured()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Path_41]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Set a file's mtime to `hours` hours in the past.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
+- [[TestComplianceAuditing]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestRuntimeProtectionAndMalware]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestVulnerabilityManagement]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[_age()]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,14 +36,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 0]]
-- 2 edges to [[_COMMUNITY_Community 365]]
-- 1 edge to [[_COMMUNITY_Community 917]]
-- 1 edge to [[_COMMUNITY_Community 76]]
+- 8 edges to [[_COMMUNITY_Community 219]]
+- 4 edges to [[_COMMUNITY_Community 431]]
+- 1 edge to [[_COMMUNITY_Community 2319]]
 
 ## Top bridge nodes
-- [[test_metadata_guard.py]] - degree 5, connects to 2 communities
-- [[Numbered security control catalog (C8, C9, C18, C47, ...)]] - degree 3, connects to 2 communities
-- [[TestDocumentTagging]] - degree 9, connects to 1 community
-- [[DocumentTag]] - degree 7, connects to 1 community
-- [[.tag_document()]] - degree 3, connects to 1 community
+- [[_age()]] - degree 7, connects to 2 communities
+- [[TestComplianceAuditing]] - degree 6, connects to 1 community
+- [[TestVulnerabilityManagement]] - degree 5, connects to 1 community
+- [[TestRuntimeProtectionAndMalware]] - degree 5, connects to 1 community
+- [[.test_two_day_old_clean_is_measured()]] - degree 3, connects to 1 community

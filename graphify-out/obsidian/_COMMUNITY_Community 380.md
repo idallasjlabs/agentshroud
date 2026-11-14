@@ -27,7 +27,7 @@ members: 36
 - [[Archive+delete ALL rows matching (event_type, severity), regardless of age.]] - rationale - gateway/security/audit_archive.py
 - [[Build n chained events, oldest first, spaced spacing_days apart ending at `start]] - rationale - gateway/tests/test_audit_archive.py
 - [[Move audit_events older than cutoff_days into archive_path, then delete + VACUUM]] - rationale - gateway/security/audit_archive.py
-- [[Path_6]] - code - gateway/security/audit_archive.py
+- [[Path_8]] - code - gateway/security/audit_archive.py
 - [[TestArchiveOldEvents]] - code - gateway/tests/test_audit_archive.py
 - [[TestPurgeLowValueEvents]] - code - gateway/tests/test_audit_archive.py
 - [[The remaining live rows' own internal chain (row N's prev_hash ==         row N-]] - rationale - gateway/tests/test_audit_archive.py
@@ -38,7 +38,7 @@ members: 36
 - [[archive_old_events()]] - code - gateway/security/audit_archive.py
 - [[audit.db uses SQLite's default DELETE journal mode, which requires         an ex]] - rationale - gateway/tests/test_audit_archive.py
 - [[audit_archive.py]] - code - gateway/security/audit_archive.py
-- [[datetime_1]] - code - gateway/security/audit_archive.py
+- [[datetime_2]] - code - gateway/security/audit_archive.py
 - [[events list of (event_id, timestamp, prev_hash, entry_hash).]] - rationale - gateway/tests/test_audit_archive.py
 - [[n_noisy events of (egress_filter, INFO); n_denies of (egress_filter, HIGH);]] - rationale - gateway/tests/test_audit_archive.py
 - [[now()]] - code - gateway/tests/test_audit_archive.py

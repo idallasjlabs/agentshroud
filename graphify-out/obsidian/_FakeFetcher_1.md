@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "Community 137"
+community: "Community 884"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_137
+  - community/Community_884
 ---
 
 # _FakeFetcher
 
 ## Connections
-- [[.__call__()_6]] - `method` [EXTRACTED]
-- [[.__init__()_165]] - `method` [EXTRACTED]
+- [[.__call__()_9]] - `method` [EXTRACTED]
+- [[.__init__()_186]] - `method` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[FetchOutcome]] - `uses` [INFERRED]
 - [[_inject_fetcher()]] - `calls` [EXTRACTED]
 - [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_137
+#graphify/code #graphify/EXTRACTED #community/Community_884

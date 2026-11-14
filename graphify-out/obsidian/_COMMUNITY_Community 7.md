@@ -1,22 +1,31 @@
 ---
 type: community
-members: 198
+members: 426
 ---
 
 # Community 7
 
-**Members:** 198 nodes
+**Members:** 426 nodes
 
 ## Members
-- [[.__init__()_16]] - code - gateway/ingest_api/sanitizer.py
+- [[NOTE Gateway-side Slack Socket Mode listener removed.]] - rationale - gateway/ingest_api/lifespan.py
+- [[.__init__()_31]] - code - gateway/ingest_api/sanitizer.py
+- [[.__init__()_49]] - code - gateway/proxy/sidecar.py
+- [[.__init__()_168]] - code - gateway/tests/test_e2e_proxy.py
+- [[.__init__()_169]] - code - gateway/tests/test_e2e_proxy.py
+- [[.__post_init__()_9]] - code - gateway/security/trust_manager.py
 - [[._hash_content()]] - code - gateway/ingest_api/ledger.py
 - [[._init_presidio()]] - code - gateway/ingest_api/sanitizer.py
+- [[.anonymize()]] - code - gateway/tests/test_sanitizer.py
 - [[.block_credentials()]] - code - gateway/ingest_api/sanitizer.py
-- [[.close()_5]] - code - gateway/ingest_api/ledger.py
-- [[.disabled_client()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.close()_7]] - code - gateway/ingest_api/ledger.py
+- [[.close()_13]] - code - gateway/security/trust_manager.py
 - [[.enforce_retention()]] - code - gateway/ingest_api/ledger.py
 - [[.filter_xml_blocks()]] - code - gateway/ingest_api/sanitizer.py
+- [[.forward()_4]] - code - gateway/tests/test_e2e_proxy.py
+- [[.get_history()]] - code - gateway/security/trust_manager.py
 - [[.get_mode()]] - code - gateway/ingest_api/sanitizer.py
+- [[.get_stats()_7]] - code - gateway/proxy/sidecar.py
 - [[.get_supported_entities()]] - code - gateway/ingest_api/sanitizer.py
 - [[.guard()_2]] - code - gateway/tests/test_performance.py
 - [[.initialize()_2]] - code - gateway/ingest_api/ledger.py
@@ -24,9 +33,13 @@ members: 198
 - [[.ledger()_1]] - code - gateway/tests/test_performance.py
 - [[.pipeline()]] - code - gateway/tests/test_performance.py
 - [[.pipeline()_1]] - code - gateway/tests/test_performance.py
+- [[.process_inbound()_2]] - code - gateway/tests/test_e2e_proxy.py
+- [[.process_outbound()_2]] - code - gateway/tests/test_e2e_proxy.py
+- [[.reanchor_delimiters()]] - code - gateway/security/prompt_guard.py
 - [[.record()]] - code - gateway/ingest_api/ledger.py
 - [[.sanitizer()]] - code - gateway/tests/test_performance.py
-- [[.sanitizer()_1]] - code - gateway/tests/test_security_audit.py
+- [[.scan()]] - code - gateway/proxy/sidecar.py
+- [[.set_global_mode()]] - code - gateway/proxy/pipeline.py
 - [[.test_10000_lookups_under_1s()]] - code - gateway/tests/test_performance.py
 - [[.test_1000_entries_all_recorded()]] - code - gateway/tests/test_audit_chain.py
 - [[.test_1000_entries_under_5s()]] - code - gateway/tests/test_performance.py
@@ -35,54 +48,100 @@ members: 198
 - [[.test_100_inbound_messages_under_5s()]] - code - gateway/tests/test_performance.py
 - [[.test_100_outbound_messages_under_5s()]] - code - gateway/tests/test_performance.py
 - [[.test_50_concurrent_writes()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_agents_process_independently()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_base64_content_decoded()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_basic_can_read()]] - code - gateway/tests/test_trust_manager.py
+- [[.test_benign_message_passes()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_blocked_message_has_audit_entry()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_canary_token_triggers_block()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_classic_injection_blocked()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_clean_response_not_blocked()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_clean_response_passes_unchanged()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[.test_concurrent_write_and_read()]] - code - gateway/tests/test_audit_chain.py
 - [[.test_content_hashes_are_unique()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_credit_card_stripped_from_response()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_cross_context_injection_blocked()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_custom_points()]] - code - gateway/tests/test_trust_manager.py
+- [[.test_default_config()_8]] - code - gateway/tests/test_trust_manager.py
 - [[.test_delete_entry_removes_it()]] - code - gateway/tests/test_audit_chain.py
 - [[.test_delete_nonexistent_returns_false()]] - code - gateway/tests/test_audit_chain.py
 - [[.test_detection_accuracy_at_scale()]] - code - gateway/tests/test_performance.py
+- [[.test_email_redacted()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_encoding_detector_is_wired()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[.test_enforce_retention_deletes_expired()]] - code - gateway/tests/test_audit_chain.py
 - [[.test_entry_retrieval_by_id()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_event_type_validation()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_forwarded_message_has_audit_entry()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_get_trust_registered()]] - code - gateway/tests/test_trust_manager.py
+- [[.test_get_trust_unregistered()]] - code - gateway/tests/test_trust_manager.py
 - [[.test_hash_is_sha256()]] - code - gateway/tests/test_audit_chain.py
 - [[.test_hash_matches_content()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_history_empty_for_new_agent()]] - code - gateway/tests/test_trust_manager.py
+- [[.test_history_recorded()]] - code - gateway/tests/test_trust_manager.py
+- [[.test_jailbreak_blocked()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_low_trust_cannot_delete_file()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[.test_nonexistent_entry_returns_none()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_persistence_across_instances()]] - code - gateway/tests/test_trust_manager.py
+- [[.test_phone_redacted()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[.test_pii_detection_accuracy_at_scale()]] - code - gateway/tests/test_performance.py
+- [[.test_pii_from_agent_a_not_in_agent_b_audit()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[.test_pii_inbound_latency()]] - code - gateway/tests/test_performance.py
-- [[.test_pii_sanitizer_default_action()]] - code - gateway/tests/test_enforce_defaults.py
 - [[.test_pii_sanitizer_default_enforcement()]] - code - gateway/tests/test_enforce_defaults.py
 - [[.test_pii_sanitizer_mode_param()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_pipeline_raises_with_only_prompt_guard()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_pipeline_raises_without_pii_sanitizer()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[.test_query_after_1000_entries()]] - code - gateway/tests/test_performance.py
 - [[.test_query_filter_by_source()]] - code - gateway/tests/test_audit_chain.py
 - [[.test_query_pagination()]] - code - gateway/tests/test_audit_chain.py
-- [[.test_security_config_all_defaults_enforce()]] - code - gateway/tests/test_enforce_defaults.py
-- [[.test_security_module_config_default_mode()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_security_module_config_defaults()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_rate_limiting_prevents_rapid_escalation()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_register_idempotent()_1]] - code - gateway/tests/test_trust_manager.py
+- [[.test_register_new_agent()]] - code - gateway/tests/test_trust_manager.py
 - [[.test_single_inbound_under_200ms()]] - code - gateway/tests/test_performance.py
 - [[.test_single_message_pipeline_under_100ms()]] - code - gateway/tests/test_performance.py
 - [[.test_single_outbound_under_200ms()]] - code - gateway/tests/test_performance.py
+- [[.test_ssn_redacted()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[.test_stats_correct()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_thresholds_populated()]] - code - gateway/tests/test_trust_manager.py
+- [[.test_trust_level_ordering()]] - code - gateway/tests/test_trust_manager.py
+- [[.test_trust_level_progression()]] - code - gateway/tests/test_security_hardening.py
 - [[.test_trust_update_performance()]] - code - gateway/tests/test_performance.py
+- [[.test_trusted_agent_can_send_message()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_unregistered_denied()]] - code - gateway/tests/test_trust_manager.py
+- [[.test_untrusted_limited()]] - code - gateway/tests/test_trust_manager.py
 - [[.test_write_baseline_json()]] - code - gateway/tests/test_performance.py
+- [[.vouch_for_agent()]] - code - gateway/security/trust_manager.py
 - [[100 messages through process_inbound in under 5 seconds.]] - rationale - gateway/tests/test_performance.py
 - [[100 messages through process_outbound in under 5 seconds.]] - rationale - gateway/tests/test_performance.py
 - [[1000 trust updates (mix of successfailure).]] - rationale - gateway/tests/test_performance.py
 - [[10000 trust lookups in under 1 second.]] - rationale - gateway/tests/test_performance.py
 - [[50 concurrent write operations should all succeed.]] - rationale - gateway/tests/test_audit_chain.py
+- [[A pipeline-blocked outbound response must NOT be delivered.      Regression test]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Agent with low trust cannot perform elevated actions.]] - rationale - gateway/tests/test_security_integration.py
+- [[Any_30]] - code - gateway/proxy/sidecar.py
+- [[AppState]] - code - gateway/ingest_api/state.py
 - [[Async SQLite-backed data ledger      Records all content forwarded through the g]] - rationale - gateway/ingest_api/ledger.py
+- [[Attach BufferHandler to the root agentshroud logger.]] - rationale - gateway/web/dashboard_endpoints.py
+- [[Attempting to create a pipeline with no PII sanitizer raises RuntimeError.]] - rationale - gateway/tests/test_e2e_watchtower.py
 - [[Audit chain 1000 entries in  5s.]] - rationale - gateway/tests/test_performance.py
 - [[Block credential display via untrusted sources (e.g., Telegram)          Args]] - rationale - gateway/ingest_api/sanitizer.py
-- [[CI has no real agentshroud.yaml (gitignored, per-deployment secret     config) —]] - rationale - gateway/tests/conftest.py
+- [[Blocking agent A does not affect agent B's processing.]] - rationale - gateway/tests/test_e2e_watchtower.py
 - [[Can retrieve specific entry by ID for verification.]] - rationale - gateway/tests/test_audit_chain.py
 - [[Chain with many entries — verify integrity.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Clean message flows through entire pipeline without issues.]] - rationale - gateway/tests/test_security_integration.py
 - [[Close database connection]] - rationale - gateway/ingest_api/ledger.py
 - [[Collect and write benchmark baselines to .benchmarksbaseline-v1.0.0.json.]] - rationale - gateway/tests/test_performance.py
 - [[Concurrent writes and reads don't conflict.]] - rationale - gateway/tests/test_audit_chain.py
 - [[Concurrent writes to chain.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Config with all security modules enabled.]] - rationale - gateway/tests/test_security_integration.py
+- [[Config with strict thresholds.]] - rationale - gateway/tests/test_trust_manager.py
+- [[Configure egress filter to block a domain — verify denied.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Container for application-wide state]] - rationale - gateway/ingest_api/state.py
 - [[Content hash should be a valid SHA-256 hex digest.]] - rationale - gateway/tests/test_audit_chain.py
 - [[Create a FastAPI TestClient with test configuration      Note This doesn't init]] - rationale - gateway/tests/conftest.py
 - [[Create a PIISanitizer instance for testing]] - rationale - gateway/tests/conftest.py
 - [[Create a new ledger entry          Args             source Source identifier (]] - rationale - gateway/ingest_api/ledger.py
+- [[Create a temporary trust database.]] - rationale - gateway/tests/test_trust_manager.py
 - [[Create a test configuration      Uses regex fallback for PII (no spaCy model req]] - rationale - gateway/tests/conftest.py
+- [[Create a trust manager with temp DB.]] - rationale - gateway/tests/test_trust_manager.py
 - [[Create an initialized in-memory ledger for testing      Yields the ledger, then]] - rationale - gateway/tests/conftest.py
 - [[Create database, tables, and run initial cleanup          Must be called before]] - rationale - gateway/ingest_api/ledger.py
 - [[Data ledger configuration]] - rationale - gateway/ingest_api/config.py
@@ -90,34 +149,80 @@ members: 198
 - [[Delete entries older than retention_days          Returns             Number of]] - rationale - gateway/ingest_api/ledger.py
 - [[Deleted entry is gone (right to erasure).]] - rationale - gateway/tests/test_audit_chain.py
 - [[Deleting nonexistent entry returns False.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Detect and block prompt injection attempts.]] - rationale - gateway/security/prompt_guard.py
 - [[Different content should produce different hashes.]] - rationale - gateway/tests/test_audit_chain.py
+- [[E2E-01 PromptGuard blocks high-confidence injection payloads.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-02 Social security numbers and email are redacted before forwarding.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-03 PII in agent responses is stripped before delivery.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-04 ContextGuard detects session-level injection in multi-turn context.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-05 Canary tokens in responses trigger full block.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-06 Base64 and Unicode encoding bypasses are decoded and processed.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-07 Low-trust agent cannot perform high-risk actions.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-08 Every pipeline event — block or forward — produces an audit entry.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-09 Two agents process independently with no cross-contamination.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-10 SecurityPipeline refuses to operate without PII sanitizer.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Encoding detector is active in the pipeline.]] - rationale - gateway/tests/test_e2e_watchtower.py
 - [[End-to-end pipeline latency for a single message.]] - rationale - gateway/tests/test_performance.py
+- [[Even if trust allows an action, egress filter blocks unauthorized destinations.]] - rationale - gateway/tests/test_security_integration.py
+- [[Even with PromptGuard, pipeline refuses to start without PII sanitizer.]] - rationale - gateway/tests/test_e2e_watchtower.py
 - [[Export chain and re-verify.]] - rationale - gateway/tests/test_audit_chain.py
+- [[FastAPI_1]] - code - gateway/ingest_api/lifespan.py
+- [[FastAPI lifespan - startup and shutdown]] - rationale - gateway/ingest_api/lifespan.py
 - [[Filter entries by source.]] - rationale - gateway/tests/test_audit_chain.py
+- [[FilterResult]] - code - gateway/security/outbound_filter.py
+- [[Forwarder stub returning a canned bot response body.]] - rationale - gateway/tests/test_e2e_proxy.py
 - [[GatewayConfig_2]] - code - gateway/tests/conftest.py
+- [[Get trust history for an agent.]] - rationale - gateway/security/trust_manager.py
+- [[If an agent response contains a registered canary value, block it.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[If the outbound pipeline crashes, the bot response must be withheld.]] - rationale - gateway/tests/test_e2e_proxy.py
 - [[Initialize Microsoft Presidio engines          Falls back to regex if Presidios]] - rationale - gateway/ingest_api/sanitizer.py
 - [[Initialize sanitizer          Args             config PII configuration from a]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Injecting a system-level override via a follow-up message is blocked.]] - rationale - gateway/tests/test_e2e_watchtower.py
 - [[Injection attempts should be detected even under load.]] - rationale - gateway/tests/test_performance.py
+- [[Insert messages, modify a hash — verify chain integrity check fails.]] - rationale - gateway/tests/test_e2e_proxy.py
 - [[LedgerConfig]] - code - gateway/ingest_api/config.py
 - [[Looking up nonexistent entry returns None.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Low-trust agent requests elevated action — verify denied.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Main security pipeline that all messages pass through.      Wires together Prom]] - rationale - gateway/proxy/pipeline.py
+- [[Manage progressive trust for agents.]] - rationale - gateway/security/trust_manager.py
+- [[Message with PII gets sanitized and logged correctly.]] - rationale - gateway/tests/test_security_integration.py
+- [[Message with both PII and injection — blocked before PII scan.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Mock OpenClaw response containing PII — verify stripped.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Multiple messages through pipeline concurrently — thread safety.]] - rationale - gateway/tests/test_security_integration.py
+- [[Outbound responses have credentials blocked for untrusted sources.]] - rationale - gateway/tests/test_security_integration.py
+- [[OutputCanary that always crashes.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Owner messages should NOT be blocked when security module crashes (owner exempti]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Owner vouches for an agent, unlocking VERIFIEDFULL promotion.]] - rationale - gateway/security/trust_manager.py
 - [[PII detection and redaction configuration]] - rationale - gateway/ingest_api/config.py
 - [[PII detection and redaction engine      Attempts to use Microsoft Presidio with]] - rationale - gateway/ingest_api/sanitizer.py
+- [[PII redacted for agent A does not leak into agent B's audit trail.]] - rationale - gateway/tests/test_e2e_watchtower.py
 - [[PII sanitizer 1000 messages in  10s.]] - rationale - gateway/tests/test_performance.py
 - [[PII-laden messages through inbound pipeline — verify redaction + timing.]] - rationale - gateway/tests/test_performance.py
 - [[PIIConfig]] - code - gateway/ingest_api/config.py
-- [[PIIConfig_2]] - code - gateway/security/tool_result_sanitizer.py
 - [[PIISanitizer]] - code - gateway/ingest_api/sanitizer.py
-- [[PIISanitizer_1]] - code - gateway/security/tool_result_sanitizer.py
 - [[PIISanitizer_2]] - code - gateway/tests/conftest.py
+- [[PIISanitizer_3]] - code - gateway/tests/test_redteam_probes.py
 - [[Paginated queries return correct subsets.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Pipeline must BLOCK (not pass through) when EnhancedToolResultSanitizer crashes]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Pipeline must BLOCK (not pass through) when OutputCanary crashes for non-owner.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Pipeline must refuse to start without PII sanitizer (fail-closed).]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Pipeline stub inbound passes through; outbound behavior injectable.]] - rationale - gateway/tests/test_e2e_proxy.py
 - [[Pipeline with all modules disabled acts as passthrough.]] - rationale - gateway/tests/test_security_integration.py
 - [[Pipeline with only PII enabled, prompt guard disabled.]] - rationale - gateway/tests/test_security_integration.py
+- [[PipelineAction]] - code - gateway/proxy/pipeline.py
 - [[Process 1000 mixed messages in under 10 seconds.]] - rationale - gateway/tests/test_performance.py
 - [[Prompt guard 1000 messages in  5s.]] - rationale - gateway/tests/test_performance.py
+- [[PromptGuard]] - code - gateway/security/prompt_guard.py
 - [[Query performance after 1000 entries.]] - rationale - gateway/tests/test_performance.py
+- [[README_127]] - document - gateway/README.md
+- [[Rapid successes should be capped by rate limiting.]] - rationale - gateway/tests/test_security_hardening.py
 - [[Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c_1]] - rationale - gateway/tests/test_ledger.py
-- [[RedactionResult_3]] - code - gateway/security/tool_result_sanitizer.py
 - [[Remove Claude XML function call blocks from responses          Strips out intern]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Request to scan a message.]] - rationale - gateway/proxy/sidecar.py
+- [[Resolve each configured bot's OWN Telegram token, distinct from the default.]] - rationale - gateway/ingest_api/lifespan.py
+- [[Response containing base64-encoded payload is decoded by the pipeline.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Response from sidecar scan.]] - rationale - gateway/proxy/sidecar.py
+- [[Result of filtering agent response content.]] - rationale - gateway/security/outbound_filter.py
 - [[Retention enforcement removes expired entries.]] - rationale - gateway/tests/test_audit_chain.py
 - [[Retention enforcement.]] - rationale - gateway/tests/test_audit_chain.py
 - [[Return Authorization headers with test token]] - rationale - gateway/tests/conftest.py
@@ -125,17 +230,37 @@ members: 198
 - [[Return list of entity types currently enabled          Returns             List]] - rationale - gateway/ingest_api/sanitizer.py
 - [[Run standard benchmarks and write results to .benchmarksbaseline-v1.0.0.json.]] - rationale - gateway/tests/test_performance.py
 - [[SHA-256 hash of content string          Args             content Text to hash]] - rationale - gateway/ingest_api/ledger.py
+- [[Sanitizer that always crashes — simulates module failure.]] - rationale - gateway/tests/test_e2e_watchtower.py
 - [[Scan 1000 messages in under 5 seconds.]] - rationale - gateway/tests/test_performance.py
-- [[Security module configuration]] - rationale - gateway/ingest_api/config.py
-- [[SecurityModuleConfig]] - code - gateway/ingest_api/config.py
+- [[Scan a message through the security pipeline.]] - rationale - gateway/proxy/sidecar.py
+- [[ScanRequest]] - code - gateway/proxy/sidecar.py
+- [[ScanResponse]] - code - gateway/proxy/sidecar.py
+- [[SecurityPipeline]] - code - gateway/proxy/pipeline.py
+- [[SecurityPipeline_1]] - code - gateway/tests/test_redteam_probes.py
+- [[SecurityPipeline_2]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[SecurityPipeline (external, referenced)]] - code - gateway/proxy/pipeline.py
+- [[SecurityPipeline.process_inbound]] - code - gateway/proxy/pipeline.py
 - [[SecurityPipeline.process_inboundoutbound latency via the real pipeline class.]] - rationale - gateway/tests/test_performance.py
+- [[Send 10 messages — verify all in ledger with valid SHA-256 chain.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Send command requiring approval — verify queued, not forwarded.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Send message with SSN — verify it's redacted before forwarding.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Send prompt injection — verify blocked, not forwarded.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Sensitive audit data can be encrypted at rest.]] - rationale - gateway/tests/test_security_integration.py
+- [[Set global observatory mode for all security modules.          Args]] - rationale - gateway/proxy/pipeline.py
+- [[Set up app state and provide TestClient.]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[Set up app state and provide TestClient._1]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Sidecar security scanner — reduced security, traffic can bypass.      This is fo]] - rationale - gateway/proxy/sidecar.py
+- [[SidecarScanner]] - code - gateway/proxy/sidecar.py
 - [[Single message through SecurityPipeline.process_inbound  200ms.]] - rationale - gateway/tests/test_performance.py
 - [[Single message through SecurityPipeline.process_outbound  200ms.]] - rationale - gateway/tests/test_performance.py
 - [[Single message through full pipeline in under 100ms.]] - rationale - gateway/tests/test_performance.py
 - [[Stats reflect actual data.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Strip injected fake delimiters and return sanitized message.          Called whe]] - rationale - gateway/security/prompt_guard.py
 - [[Tamper detection at various chain positions.]] - rationale - gateway/tests/test_audit_chain.py
 - [[Test PIISanitizer accepts and stores mode parameter.]] - rationale - gateway/tests/test_enforce_defaults.py
 - [[Test PIISanitizer defaults to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test agent registration and initial trust.]] - rationale - gateway/tests/test_trust_manager.py
+- [[Test configuration options.]] - rationale - gateway/tests/test_trust_manager.py
 - [[Test creating a ledger entry]] - rationale - gateway/tests/test_ledger.py
 - [[Test deleting a ledger entry]] - rationale - gateway/tests/test_ledger.py
 - [[Test deleting a non-existent entry]] - rationale - gateway/tests/test_ledger.py
@@ -145,67 +270,170 @@ members: 198
 - [[Test querying ledger with time range filters]] - rationale - gateway/tests/test_ledger.py
 - [[Test retrieving a ledger entry by ID]] - rationale - gateway/tests/test_ledger.py
 - [[Test stats calculation]] - rationale - gateway/tests/test_ledger.py
-- [[Test that PII sanitizer defaults to redact action.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test that SecurityModuleConfig defaults to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test that all core modules default to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test that core security modules default to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test that individual modules respect the enforcemonitor mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that actions are gated by trust level.]] - rationale - gateway/tests/test_trust_manager.py
+- [[Test trust history tracking.]] - rationale - gateway/tests/test_trust_manager.py
+- [[Test trust level hierarchy and thresholds.]] - rationale - gateway/tests/test_trust_manager.py
+- [[Test trust survives restart.]] - rationale - gateway/tests/test_trust_manager.py
+- [[TestActionGating]] - code - gateway/tests/test_trust_manager.py
+- [[TestAgentRegistration]] - code - gateway/tests/test_trust_manager.py
 - [[TestAuditChainIntegrity]] - code - gateway/tests/test_audit_chain.py
 - [[TestAuditChainPerformance]] - code - gateway/tests/test_performance.py
 - [[TestBenchmarkBaseline]] - code - gateway/tests/test_performance.py
 - [[TestChainExportAndVerification]] - code - gateway/tests/test_audit_chain.py
 - [[TestConcurrentWrites]] - code - gateway/tests/test_audit_chain.py
-- [[TestEnforceDefaults]] - code - gateway/tests/test_enforce_defaults.py
+- [[TestConfig]] - code - gateway/tests/test_trust_manager.py
+- [[TestE2E01PromptGuardBlocking]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E02InboundPIIRedaction]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E03OutboundPIIRedaction]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E04ContextGuardBlocking]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E05CanaryTripwire]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E06EncodingBypassDetection]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E07TrustEnforcement]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E08AuditChainIntegrity]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E09SessionIsolation]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E10FailClosed]] - code - gateway/tests/test_e2e_watchtower.py
 - [[TestFullPipelineLatency]] - code - gateway/tests/test_performance.py
-- [[TestModuleEnforcement]] - code - gateway/tests/test_enforce_defaults.py
+- [[TestHistory]] - code - gateway/tests/test_trust_manager.py
 - [[TestPIISanitizerPerformance]] - code - gateway/tests/test_performance.py
+- [[TestPersistence_2]] - code - gateway/tests/test_trust_manager.py
 - [[TestPromptGuardPerformance]] - code - gateway/tests/test_performance.py
 - [[TestRetention]] - code - gateway/tests/test_audit_chain.py
 - [[TestSecurityPipelineChainLatency]] - code - gateway/tests/test_performance.py
 - [[TestTamperDetection]] - code - gateway/tests/test_audit_chain.py
+- [[TestTrustLevels_1]] - code - gateway/tests/test_trust_manager.py
+- [[TestTrustManagerHardened]] - code - gateway/tests/test_security_hardening.py
 - [[TestTrustManagerPerformance]] - code - gateway/tests/test_performance.py
+- [[Tests for trust manager hardening.]] - rationale - gateway/tests/test_security_hardening.py
 - [[ToolResultSanitizer._extract_dict_content]] - code - gateway/security/tool_result_sanitizer.py
 - [[ToolResultSanitizer._extract_scannable_content]] - code - gateway/security/tool_result_sanitizer.py
 - [[ToolResultSanitizer._get_sanitizer_for_tool]] - code - gateway/security/tool_result_sanitizer.py
 - [[ToolResultSanitizer._log_redaction_audit]] - code - gateway/security/tool_result_sanitizer.py
 - [[ToolResultSanitizer._reconstruct_result]] - code - gateway/security/tool_result_sanitizer.py
 - [[ToolResultSanitizer.sanitize_tool_result]] - code - gateway/security/tool_result_sanitizer.py
+- [[Trigger freeze mode — verify pipeline blocks all traffic.]] - rationale - gateway/tests/test_e2e_proxy.py
 - [[Trust check 10000 lookups in  1s.]] - rationale - gateway/tests/test_performance.py
+- [[Trust manager starting at untrusted.]] - rationale - gateway/tests/test_trust_manager.py
+- [[TrustConfig]] - code - gateway/security/trust_manager.py
+- [[TrustManager_1]] - code - gateway/security/trust_manager.py
+- [[Unknown event types should not inject SQL.]] - rationale - gateway/tests/test_security_hardening.py
+- [[Verify allowed domains pass egress check.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify both inbound and outbound are in audit chain.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify clean messages pass through without blocking.]] - rationale - gateway/tests/test_e2e_proxy.py
 - [[Verify detection accuracy doesn't degrade at scale.]] - rationale - gateway/tests/test_performance.py
+- [[Verify forwarder mock works correctly.]] - rationale - gateway/tests/test_e2e_proxy.py
 - [[Verify hash matches SHA-256 of the content.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Verify multiple injection patterns are detected.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify pipeline statistics are tracked correctly.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify processing time is tracked.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify sidecar scanner works.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify that direct connection to OpenClaw internal port fails.      In Docker pr]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[WS-E RT-2 Inbound Encoding Bypass Fix Rationale]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[When both PII sanitizer and prompt guard detect issues.]] - rationale - gateway/tests/test_security_integration.py
 - [[Write 1000 audit entries in under 5 seconds.]] - rationale - gateway/tests/test_performance.py
 - [[Write 1000 entries and verify they're all there.]] - rationale - gateway/tests/test_audit_chain.py
 - [[XML injection-block filtering (function_callsthinkingsystem-reminderinvokeparameter)]] - concept - gateway/tests/test_filter_xml_blocks.py
-- [[_ensure_agentshroud_config_resolvable()]] - code - gateway/tests/conftest.py
+- [[_BrokenOutputCanary]] - code - gateway/tests/test_e2e_watchtower.py
+- [[_BrokenSanitizer]] - code - gateway/tests/test_e2e_watchtower.py
+- [[_FakeAnonymizer]] - code - gateway/tests/test_sanitizer.py
+- [[_PassInboundPipeline]] - code - gateway/tests/test_e2e_proxy.py
+- [[_StubForwarder_2]] - code - gateway/tests/test_e2e_proxy.py
+- [[_build_per_bot_telegram_tokens()]] - code - gateway/ingest_api/lifespan.py
 - [[auth_headers()]] - code - gateway/tests/conftest.py
 - [[canary-cron.sh embedded Python main()]] - code - scripts/canary-cron.sh
 - [[canary_pipeline()]] - code - gateway/tests/test_canary.py
+- [[client()_17]] - code - gateway/tests/test_ssh_endpoints.py
+- [[client()_18]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[conftest.py]] - code - gateway/tests/conftest.py
-- [[full_pipeline_config()]] - code - gateway/tests/test_security_integration.py
+- [[enhanced_queue.py]] - code - gateway/approval_queue/enhanced_queue.py
+- [[event_bus.py]] - code - gateway/ingest_api/event_bus.py
+- [[group_router.py]] - code - gateway/approval_queue/group_router.py
+- [[install_log_handler()]] - code - gateway/web/dashboard_endpoints.py
 - [[ledger()]] - code - gateway/tests/test_audit_chain.py
 - [[ledger()_2]] - code - gateway/tests/test_security_integration.py
+- [[ledger.py]] - code - gateway/ingest_api/ledger.py
+- [[lifespan()_1]] - code - gateway/ingest_api/lifespan.py
+- [[lifespan.py]] - code - gateway/ingest_api/lifespan.py
+- [[manager()_4]] - code - gateway/tests/test_trust_manager.py
+- [[outbound_filter.py]] - code - gateway/security/outbound_filter.py
+- [[pii_config()]] - code - gateway/tests/test_e2e_proxy.py
+- [[pii_config()_1]] - code - gateway/tests/test_e2e_watchtower.py
+- [[pipeline()]] - code - gateway/tests/test_e2e_proxy.py
+- [[pipeline()_1]] - code - gateway/tests/test_e2e_watchtower.py
+- [[pipeline.py]] - code - gateway/proxy/pipeline.py
+- [[prompt_guard()]] - code - gateway/tests/test_e2e_proxy.py
+- [[prompt_guard()_2]] - code - gateway/tests/test_security_integration.py
 - [[sanitizer()]] - code - gateway/tests/conftest.py
+- [[sanitizer()_1]] - code - gateway/tests/test_e2e_proxy.py
+- [[sanitizer()_2]] - code - gateway/tests/test_e2e_watchtower.py
 - [[sanitizer()_3]] - code - gateway/tests/test_filter_xml_blocks.py
 - [[sanitizer()_4]] - code - gateway/tests/test_security_integration.py
+- [[sanitizer.py]] - code - gateway/ingest_api/sanitizer.py
+- [[sidecar.py]] - code - gateway/proxy/sidecar.py
+- [[sk- key families with hyphensunderscores were missed by a-zA-Z0-9{20,}.]] - rationale - gateway/tests/test_security_integration.py
+- [[state.py]] - code - gateway/ingest_api/state.py
+- [[strict_config()_3]] - code - gateway/tests/test_trust_manager.py
+- [[strict_manager()]] - code - gateway/tests/test_trust_manager.py
+- [[test_approval_queue_enforced()]] - code - gateway/tests/test_e2e_proxy.py
 - [[test_audit_chain.py]] - code - gateway/tests/test_audit_chain.py
+- [[test_audit_chain_integrity()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_clean_message_passes()]] - code - gateway/tests/test_e2e_proxy.py
 - [[test_client()]] - code - gateway/tests/conftest.py
 - [[test_config()]] - code - gateway/tests/conftest.py
 - [[test_delete_entry()]] - code - gateway/tests/test_ledger.py
 - [[test_delete_nonexistent()]] - code - gateway/tests/test_ledger.py
-- [[test_enforce_defaults.py]] - code - gateway/tests/test_enforce_defaults.py
+- [[test_direct_bypass_blocked()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_disabled_config_not_blocked()]] - code - gateway/tests/test_sanitizer.py
+- [[test_e2e_proxy.py]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_e2e_watchtower.py]] - code - gateway/tests/test_e2e_watchtower.py
+- [[test_egress_allowed_domain()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_egress_blocked()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_egress_blocks_unauthorized_after_trust_check()]] - code - gateway/tests/test_security_integration.py
+- [[test_encrypted_store_in_pipeline()]] - code - gateway/tests/test_security_integration.py
+- [[test_forwarder_mock()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_full_pipeline_clean_message()]] - code - gateway/tests/test_security_integration.py
+- [[test_full_pipeline_pii_message()]] - code - gateway/tests/test_security_integration.py
 - [[test_get_entry()]] - code - gateway/tests/test_ledger.py
 - [[test_get_stats()_2]] - code - gateway/tests/test_ledger.py
+- [[test_hyphenated_sk_keys_are_blocked()]] - code - gateway/tests/test_security_integration.py
+- [[test_inbound_outbound_both_audited()]] - code - gateway/tests/test_e2e_proxy.py
 - [[test_initialize_is_idempotent()_1]] - code - gateway/tests/test_ledger.py
+- [[test_kill_switch_freezes()]] - code - gateway/tests/test_e2e_proxy.py
 - [[test_ledger()]] - code - gateway/tests/conftest.py
 - [[test_ledger.py]] - code - gateway/tests/test_ledger.py
+- [[test_mixed_pii_and_injection()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_multiple_prompt_patterns()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_outbound_pii_stripped()]] - code - gateway/tests/test_e2e_proxy.py
 - [[test_performance.py]] - code - gateway/tests/test_performance.py
+- [[test_pii_and_prompt_guard_both_trigger()]] - code - gateway/tests/test_security_integration.py
+- [[test_pii_stripped_inbound()]] - code - gateway/tests/test_e2e_proxy.py
 - [[test_pipeline_all_modules_disabled()]] - code - gateway/tests/test_security_integration.py
+- [[test_pipeline_concurrent_messages()]] - code - gateway/tests/test_security_integration.py
+- [[test_pipeline_fails_closed_on_enhanced_sanitizer_error()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[test_pipeline_fails_closed_on_output_canary_error()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[test_pipeline_fails_closed_without_pii()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_pipeline_owner_exempt_from_fail_closed()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[test_pipeline_processing_time()]] - code - gateway/tests/test_e2e_proxy.py
 - [[test_pipeline_selective_modules()]] - code - gateway/tests/test_security_integration.py
+- [[test_pipeline_stats()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_prompt_injection_blocked()]] - code - gateway/tests/test_e2e_proxy.py
 - [[test_query_ledger()]] - code - gateway/tests/test_ledger.py
 - [[test_query_with_filter()]] - code - gateway/tests/test_ledger.py
 - [[test_query_with_forwarded_to_filter()]] - code - gateway/tests/test_ledger.py
 - [[test_query_with_time_filters()]] - code - gateway/tests/test_ledger.py
 - [[test_record_entry()]] - code - gateway/tests/test_ledger.py
+- [[test_response_credential_blocking()]] - code - gateway/tests/test_security_integration.py
+- [[test_security_integration.py]] - code - gateway/tests/test_security_integration.py
+- [[test_sidecar_scanner()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_tampered_audit_detected()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_trust_insufficient_action_blocked()]] - code - gateway/tests/test_security_integration.py
+- [[test_trust_level_enforced()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_trust_manager.py]] - code - gateway/tests/test_trust_manager.py
+- [[test_webhook_outbound_block_withheld()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_webhook_outbound_pipeline_crash_fails_closed()]] - code - gateway/tests/test_e2e_proxy.py
+- [[trust_db()]] - code - gateway/tests/test_trust_manager.py
+- [[trust_manager()_2]] - code - gateway/tests/test_e2e_proxy.py
+- [[trust_manager()_3]] - code - gateway/tests/test_e2e_watchtower.py
+- [[trust_manager()_4]] - code - gateway/tests/test_security_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -215,35 +443,90 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 45 edges to [[_COMMUNITY_Community 84]]
-- 44 edges to [[_COMMUNITY_Community 80]]
-- 42 edges to [[_COMMUNITY_Community 72]]
-- 42 edges to [[_COMMUNITY_Community 0]]
-- 38 edges to [[_COMMUNITY_Community 28]]
-- 32 edges to [[_COMMUNITY_Community 50]]
-- 25 edges to [[_COMMUNITY_Community 1]]
-- 19 edges to [[_COMMUNITY_Community 11]]
-- 16 edges to [[_COMMUNITY_Community 2325]]
-- 11 edges to [[_COMMUNITY_Community 707]]
-- 11 edges to [[_COMMUNITY_Community 43]]
-- 11 edges to [[_COMMUNITY_Community 254]]
-- 10 edges to [[_COMMUNITY_Community 541]]
+- 161 edges to [[_COMMUNITY_Community 24]]
+- 130 edges to [[_COMMUNITY_Community 50]]
+- 104 edges to [[_COMMUNITY_Community 25]]
+- 75 edges to [[_COMMUNITY_Community 11]]
+- 48 edges to [[_COMMUNITY_Community 0]]
+- 39 edges to [[_COMMUNITY_Community 72]]
+- 39 edges to [[_COMMUNITY_Community 88]]
+- 35 edges to [[_COMMUNITY_Community 1]]
+- 31 edges to [[_COMMUNITY_Community 28]]
+- 27 edges to [[_COMMUNITY_Community 43]]
+- 22 edges to [[_COMMUNITY_Community 978]]
+- 18 edges to [[_COMMUNITY_Community 162]]
+- 18 edges to [[_COMMUNITY_Community 52]]
+- 17 edges to [[_COMMUNITY_Community 2325]]
+- 15 edges to [[_COMMUNITY_Community 123]]
+- 14 edges to [[_COMMUNITY_Community 435]]
+- 14 edges to [[_COMMUNITY_Community 93]]
+- 14 edges to [[_COMMUNITY_Community 9]]
+- 14 edges to [[_COMMUNITY_Community 61]]
+- 13 edges to [[_COMMUNITY_Community 1002]]
+- 13 edges to [[_COMMUNITY_Community 1119]]
+- 13 edges to [[_COMMUNITY_Community 477]]
+- 12 edges to [[_COMMUNITY_Community 63]]
+- 11 edges to [[_COMMUNITY_Community 30]]
+- 11 edges to [[_COMMUNITY_Community 65]]
+- 11 edges to [[_COMMUNITY_Community 41]]
 - 10 edges to [[_COMMUNITY_Community 2]]
-- 9 edges to [[_COMMUNITY_Community 532]]
-- 6 edges to [[_COMMUNITY_Community 30]]
-- 5 edges to [[_COMMUNITY_Community 104]]
-- 4 edges to [[_COMMUNITY_Community 123]]
-- 4 edges to [[_COMMUNITY_Community 94]]
+- 10 edges to [[_COMMUNITY_Community 34]]
+- 10 edges to [[_COMMUNITY_Community 17]]
+- 10 edges to [[_COMMUNITY_Community 493]]
+- 9 edges to [[_COMMUNITY_Community 94]]
+- 9 edges to [[_COMMUNITY_Community 22]]
+- 9 edges to [[_COMMUNITY_Community 114]]
+- 9 edges to [[_COMMUNITY_Community 187]]
+- 8 edges to [[_COMMUNITY_Community 206]]
+- 8 edges to [[_COMMUNITY_Community 947]]
+- 7 edges to [[_COMMUNITY_Community 181]]
+- 7 edges to [[_COMMUNITY_Community 605]]
+- 7 edges to [[_COMMUNITY_Community 205]]
+- 7 edges to [[_COMMUNITY_Community 130]]
+- 7 edges to [[_COMMUNITY_Community 307]]
+- 6 edges to [[_COMMUNITY_Community 54]]
+- 6 edges to [[_COMMUNITY_Community 6]]
+- 6 edges to [[_COMMUNITY_Community 5]]
+- 6 edges to [[_COMMUNITY_Community 365]]
+- 6 edges to [[_COMMUNITY_Community 917]]
+- 6 edges to [[_COMMUNITY_Community 888]]
+- 5 edges to [[_COMMUNITY_Community 8]]
+- 5 edges to [[_COMMUNITY_Community 31]]
+- 5 edges to [[_COMMUNITY_Community 99]]
+- 5 edges to [[_COMMUNITY_Community 2154]]
+- 5 edges to [[_COMMUNITY_Community 60]]
+- 5 edges to [[_COMMUNITY_Community 2200]]
+- 5 edges to [[_COMMUNITY_Community 27]]
+- 5 edges to [[_COMMUNITY_Community 86]]
+- 5 edges to [[_COMMUNITY_Community 148]]
+- 4 edges to [[_COMMUNITY_Community 49]]
+- 4 edges to [[_COMMUNITY_Community 590]]
+- 4 edges to [[_COMMUNITY_Community 64]]
+- 4 edges to [[_COMMUNITY_Community 220]]
+- 4 edges to [[_COMMUNITY_Community 271]]
+- 4 edges to [[_COMMUNITY_Community 684]]
+- 4 edges to [[_COMMUNITY_Community 290]]
+- 4 edges to [[_COMMUNITY_Community 16]]
+- 4 edges to [[_COMMUNITY_Community 128]]
+- 4 edges to [[_COMMUNITY_Community 479]]
+- 4 edges to [[_COMMUNITY_Community 792]]
 - 3 edges to [[_COMMUNITY_Community 10]]
-- 3 edges to [[_COMMUNITY_Community 105]]
+- 3 edges to [[_COMMUNITY_Community 70]]
+- 3 edges to [[_COMMUNITY_Community 229]]
 - 3 edges to [[_COMMUNITY_Community 147]]
-- 3 edges to [[_COMMUNITY_Community 181]]
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 2 edges to [[_COMMUNITY_Community 35]]
-- 2 edges to [[_COMMUNITY_Community 112]]
-- 2 edges to [[_COMMUNITY_Community 24]]
+- 3 edges to [[_COMMUNITY_Community 75]]
+- 3 edges to [[_COMMUNITY_Community 35]]
+- 3 edges to [[_COMMUNITY_Community 97]]
+- 3 edges to [[_COMMUNITY_Community 110]]
+- 3 edges to [[_COMMUNITY_Community 575]]
+- 3 edges to [[_COMMUNITY_Community 196]]
+- 3 edges to [[_COMMUNITY_Community 235]]
+- 3 edges to [[_COMMUNITY_Community 1967]]
+- 3 edges to [[_COMMUNITY_Community 1291]]
+- 2 edges to [[_COMMUNITY_Community 141]]
+- 2 edges to [[_COMMUNITY_Community 1127]]
 - 2 edges to [[_COMMUNITY_Community 480]]
-- 2 edges to [[_COMMUNITY_Community 128]]
+- 2 edges to [[_COMMUNITY_Community 788]]
 - 2 edges to [[_COMMUNITY_Community 1074]]
 - 2 edges to [[_COMMUNITY_Community 1128]]
 - 2 edges to [[_COMMUNITY_Community 762]]
@@ -251,21 +534,57 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_Community 353]]
 - 2 edges to [[_COMMUNITY_Community 626]]
 - 2 edges to [[_COMMUNITY_Community 889]]
-- 2 edges to [[_COMMUNITY_Community 1565]]
-- 2 edges to [[_COMMUNITY_Community 99]]
+- 2 edges to [[_COMMUNITY_Community 1289]]
 - 2 edges to [[_COMMUNITY_Community 845]]
-- 2 edges to [[_COMMUNITY_Community 229]]
-- 1 edge to [[_COMMUNITY_Community 439]]
-- 1 edge to [[_COMMUNITY_Community 1127]]
-- 1 edge to [[_COMMUNITY_Community 2154]]
-- 1 edge to [[_COMMUNITY_Community 1426]]
-- 1 edge to [[_COMMUNITY_Community 17]]
-- 1 edge to [[_COMMUNITY_Community 917]]
-- 1 edge to [[_COMMUNITY_Community 435]]
+- 2 edges to [[_COMMUNITY_Community 62]]
+- 2 edges to [[_COMMUNITY_Community 158]]
+- 2 edges to [[_COMMUNITY_Community 1278]]
+- 2 edges to [[_COMMUNITY_Community 383]]
+- 2 edges to [[_COMMUNITY_Community 120]]
+- 2 edges to [[_COMMUNITY_Community 557]]
+- 2 edges to [[_COMMUNITY_Community 254]]
+- 2 edges to [[_COMMUNITY_Community 241]]
+- 2 edges to [[_COMMUNITY_Community 113]]
+- 2 edges to [[_COMMUNITY_Community 368]]
+- 2 edges to [[_COMMUNITY_Community 89]]
+- 2 edges to [[_COMMUNITY_Community 56]]
+- 2 edges to [[_COMMUNITY_Community 80]]
+- 2 edges to [[_COMMUNITY_Community 73]]
+- 2 edges to [[_COMMUNITY_Community 185]]
+- 2 edges to [[_COMMUNITY_Community 71]]
+- 2 edges to [[_COMMUNITY_Community 262]]
+- 2 edges to [[_COMMUNITY_Community 793]]
+- 2 edges to [[_COMMUNITY_Community 103]]
+- 2 edges to [[_COMMUNITY_Community 224]]
+- 2 edges to [[_COMMUNITY_Community 304]]
+- 2 edges to [[_COMMUNITY_Community 1358]]
+- 2 edges to [[_COMMUNITY_Community 1359]]
+- 1 edge to [[_COMMUNITY_Community 124]]
+- 1 edge to [[_COMMUNITY_Community 85]]
+- 1 edge to [[_COMMUNITY_Community 333]]
+- 1 edge to [[_COMMUNITY_Community 595]]
+- 1 edge to [[_COMMUNITY_Community 108]]
+- 1 edge to [[_COMMUNITY_Community 127]]
+- 1 edge to [[_COMMUNITY_Community 507]]
+- 1 edge to [[_COMMUNITY_Community 1552]]
+- 1 edge to [[_COMMUNITY_Community 1287]]
+- 1 edge to [[_COMMUNITY_Community 131]]
+- 1 edge to [[_COMMUNITY_Community 102]]
+- 1 edge to [[_COMMUNITY_Community 151]]
+- 1 edge to [[_COMMUNITY_Community 396]]
+- 1 edge to [[_COMMUNITY_Community 655]]
+- 1 edge to [[_COMMUNITY_Community 12]]
+- 1 edge to [[_COMMUNITY_Community 37]]
+- 1 edge to [[_COMMUNITY_Community 84]]
+- 1 edge to [[_COMMUNITY_Community 1565]]
+- 1 edge to [[_COMMUNITY_Community 2335]]
+- 1 edge to [[_COMMUNITY_Community 2032]]
+- 1 edge to [[_COMMUNITY_Community 390]]
+- 1 edge to [[_COMMUNITY_Community 659]]
 
 ## Top bridge nodes
-- [[PIIConfig]] - degree 175, connects to 34 communities
-- [[PIISanitizer]] - degree 156, connects to 31 communities
-- [[LedgerConfig]] - degree 62, connects to 10 communities
-- [[DataLedger]] - degree 67, connects to 9 communities
-- [[test_performance.py]] - degree 16, connects to 5 communities
+- [[lifespan.py]] - degree 133, connects to 74 communities
+- [[lifespan()_1]] - degree 84, connects to 54 communities
+- [[PIISanitizer]] - degree 203, connects to 38 communities
+- [[PromptGuard]] - degree 173, connects to 35 communities
+- [[PIIConfig]] - degree 229, connects to 31 communities

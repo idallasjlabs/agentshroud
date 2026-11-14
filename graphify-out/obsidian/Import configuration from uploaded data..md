@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Community 125"
-location: "L459"
+community: "Community 2017"
+location: "L486"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_125
+  - community/Community_2017
 ---
 
 # Import configuration from uploaded data.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[import_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_125
+#graphify/rationale #graphify/EXTRACTED #community/Community_2017

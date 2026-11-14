@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 125"
-location: "L882"
+community: "Community 2017"
+location: "L909"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_125
+  - community/Community_2017
 ---
 
 # WebSocket
@@ -18,4 +18,4 @@ tags:
 - [[ws_logs()]] - `references` [EXTRACTED]
 - [[ws_updates()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_125
+#graphify/code #graphify/INFERRED #community/Community_2017

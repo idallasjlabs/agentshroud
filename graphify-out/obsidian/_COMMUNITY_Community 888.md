@@ -1,11 +1,11 @@
 ---
 type: community
-members: 22
+members: 23
 ---
 
 # Community 888
 
-**Members:** 22 nodes
+**Members:** 23 nodes
 
 ## Members
 - [[.setup_method()_27]] - code - gateway/tests/test_security_hardening.py
@@ -13,6 +13,7 @@ members: 22
 - [[.test_benign_base64()]] - code - gateway/tests/test_security_hardening.py
 - [[.test_clean_input()]] - code - gateway/tests/test_security_hardening.py
 - [[.test_combined_attack_high_score()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_custom_pattern()]] - code - gateway/tests/test_security_hardening.py
 - [[.test_dan_jailbreak()_1]] - code - gateway/tests/test_security_hardening.py
 - [[.test_delimiter_injection()]] - code - gateway/tests/test_security_hardening.py
 - [[.test_empty_input()_3]] - code - gateway/tests/test_security_hardening.py
@@ -39,14 +40,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 0]]
-- 6 edges to [[_COMMUNITY_Community 52]]
-- 3 edges to [[_COMMUNITY_Community 11]]
+- 6 edges to [[_COMMUNITY_Community 7]]
+- 5 edges to [[_COMMUNITY_Community 52]]
+- 3 edges to [[_COMMUNITY_Community 162]]
 - 2 edges to [[_COMMUNITY_Community 17]]
-- 2 edges to [[_COMMUNITY_Community 21]]
+- 1 edge to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 93]]
+- 1 edge to [[_COMMUNITY_Community 1119]]
+- 1 edge to [[_COMMUNITY_Community 477]]
 - 1 edge to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Community 11]]
 
 ## Top bridge nodes
-- [[TestPromptGuard_1]] - degree 40, connects to 6 communities
+- [[TestPromptGuard_1]] - degree 40, connects to 10 communities
+- [[.test_custom_pattern()]] - degree 3, connects to 2 communities
 - [[.setup_method()_27]] - degree 2, connects to 1 community
 - [[.test_warn_threshold()]] - degree 2, connects to 1 community

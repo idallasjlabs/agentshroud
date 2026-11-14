@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "Community 1070"
+community: "Community 33"
 location: "L160"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1070
+  - community/Community_33
 ---
 
 # Read-only members must be denied high-risk tools in any group context.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestReadOnlyMemberGroupContext]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1070
+#graphify/rationale #graphify/EXTRACTED #community/Community_33

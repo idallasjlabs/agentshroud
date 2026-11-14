@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 49"
+community: "Community 2017"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/Community_2017
 ---
 
 # _bot_service_names()
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[Return real container names for all configured bots (e.g.     'agentshroud-open]] - `rationale_for` [EXTRACTED]
 - [[api.py]] - `contains` [EXTRACTED]
+- [[execute_killswitch()]] - `calls` [EXTRACTED]
 - [[get_logs()_1]] - `calls` [EXTRACTED]
 - [[killswitch()]] - `calls` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
@@ -21,4 +22,4 @@ tags:
 - [[test_config.py]] - `imports` [EXTRACTED]
 - [[ws_logs()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_49
+#graphify/code #graphify/EXTRACTED #community/Community_2017

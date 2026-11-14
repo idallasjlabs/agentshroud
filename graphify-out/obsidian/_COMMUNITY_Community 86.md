@@ -1,29 +1,36 @@
 ---
 type: community
-members: 60
+members: 67
 ---
 
 # Community 86
 
-**Members:** 60 nodes
+**Members:** 67 nodes
 
 ## Members
-- [[.__init__()_160]] - code - gateway/tests/test_http_proxy.py
-- [[.close()_13]] - code - gateway/tests/test_http_proxy.py
-- [[.close()_14]] - code - gateway/tests/test_http_proxy.py
+- [[.__init__()_181]] - code - gateway/tests/test_http_proxy.py
+- [[.close()_15]] - code - gateway/tests/test_http_proxy.py
+- [[.close()_16]] - code - gateway/tests/test_http_proxy.py
 - [[.drain()]] - code - gateway/tests/test_http_proxy.py
 - [[.drain()_1]] - code - gateway/tests/test_http_proxy.py
 - [[.get_extra_info()]] - code - gateway/tests/test_http_proxy.py
+- [[.get_stats()_3]] - code - gateway/proxy/http_proxy.py
+- [[.start()]] - code - gateway/proxy/http_proxy.py
+- [[.stop()_1]] - code - gateway/proxy/http_proxy.py
 - [[.write()]] - code - gateway/tests/test_http_proxy.py
 - [[.write()_1]] - code - gateway/tests/test_http_proxy.py
+- [[Asyncio HTTP CONNECT proxy server.      Intercepts CONNECT tunnel requests, vali]] - rationale - gateway/proxy/http_proxy.py
 - [[CONNECT to a private IP is blocked by SSRF protection.]] - rationale - gateway/tests/test_http_proxy.py
-- [[CONNECT tunnel must NOT allow api.telegram.org — forces traffic through reverse]] - rationale - gateway/tests/test_http_proxy.py
 - [[Create a StreamReader loaded with data and a mock StreamWriter.]] - rationale - gateway/tests/test_http_proxy.py
+- [[HTTPConnectProxy]] - code - gateway/proxy/http_proxy.py
 - [[HTTPConnectProxy ships with a populated default allowlist.]] - rationale - gateway/tests/test_http_proxy.py
 - [[Minimal asyncio.StreamWriter mock that captures written bytes.]] - rationale - gateway/tests/test_http_proxy.py
 - [[None peer falls back to generic label without error.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Return proxy traffic statistics.]] - rationale - gateway/proxy/http_proxy.py
 - [[Second call for same IP uses cache; rDNS is only called once, fDNS never.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Start the CONNECT proxy server.]] - rationale - gateway/proxy/http_proxy.py
 - [[Startup registry hit returns correct bot_id immediately.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Stop the CONNECT proxy server.]] - rationale - gateway/proxy/http_proxy.py
 - [[System bypass domains should be logged to the SOC decision history.]] - rationale - gateway/tests/test_http_proxy.py
 - [[System bypass domains should not error when egress_filter is None.]] - rationale - gateway/tests/test_http_proxy.py
 - [[Unknown IP resolved via reverse-DNS to a known bot hostname → correct bot_id cac]] - rationale - gateway/tests/test_http_proxy.py
@@ -58,13 +65,13 @@ members: 60
 - [[test_initial_stats_are_zero()]] - code - gateway/tests/test_http_proxy.py
 - [[test_malformed_request_line_returns_400()]] - code - gateway/tests/test_http_proxy.py
 - [[test_non_connect_method_returns_405()]] - code - gateway/tests/test_http_proxy.py
+- [[test_proxy_created_with_custom_web_proxy()]] - code - gateway/tests/test_http_proxy.py
 - [[test_proxy_created_with_default_web_proxy()]] - code - gateway/tests/test_http_proxy.py
 - [[test_proxy_created_with_egress_filter()]] - code - gateway/tests/test_http_proxy.py
 - [[test_ssrf_attempt_returns_403()]] - code - gateway/tests/test_http_proxy.py
 - [[test_stats_structure()]] - code - gateway/tests/test_http_proxy.py
 - [[test_system_bypass_domain_logs_external_decision()]] - code - gateway/tests/test_http_proxy.py
 - [[test_system_bypass_without_egress_filter()]] - code - gateway/tests/test_http_proxy.py
-- [[test_telegram_api_blocked_in_connect_proxy()]] - code - gateway/tests/test_http_proxy.py
 - [[test_telegram_is_force_blocked_not_bypass()]] - code - gateway/tests/test_http_proxy.py
 - [[web_config.py (WebProxyConfig)]] - code - gateway/proxy/web_config.py
 - [[web_proxy.py (WebProxy)]] - code - gateway/proxy/web_proxy.py
@@ -77,14 +84,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 29 edges to [[_COMMUNITY_Community 81]]
-- 10 edges to [[_COMMUNITY_Community 27]]
-- 9 edges to [[_COMMUNITY_Community 120]]
-- 3 edges to [[_COMMUNITY_Community 21]]
+- 40 edges to [[_COMMUNITY_Community 81]]
+- 13 edges to [[_COMMUNITY_Community 27]]
+- 10 edges to [[_COMMUNITY_Community 120]]
+- 6 edges to [[_COMMUNITY_Community 709]]
+- 5 edges to [[_COMMUNITY_Community 7]]
+- 4 edges to [[_COMMUNITY_Community 1191]]
+- 3 edges to [[_COMMUNITY_Community 17]]
+- 1 edge to [[_COMMUNITY_Community 595]]
+- 1 edge to [[_COMMUNITY_Community 43]]
+- 1 edge to [[_COMMUNITY_Community 511]]
+- 1 edge to [[_COMMUNITY_Community 109]]
 
 ## Top bridge nodes
+- [[HTTPConnectProxy]] - degree 93, connects to 10 communities
 - [[test_http_proxy.py]] - degree 39, connects to 4 communities
-- [[_MockWriter]] - degree 21, connects to 4 communities
-- [[_DummyTargetWriter]] - degree 8, connects to 4 communities
-- [[test_connect_blocked_domain_returns_403()]] - degree 6, connects to 3 communities
-- [[test_blocked_domain_is_tracked_in_recent()]] - degree 6, connects to 3 communities
+- [[_MockWriter]] - degree 21, connects to 3 communities
+- [[_DummyTargetWriter]] - degree 8, connects to 3 communities
+- [[test_connect_blocked_domain_returns_403()]] - degree 6, connects to 2 communities

@@ -2,7 +2,7 @@
 source_file: "gateway/web/api.py"
 type: "code"
 community: "Community 103"
-location: "L179"
+location: "L246"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -15,6 +15,7 @@ tags:
 - [[.test_auto_revert_restores_enforce()]] - `calls` [EXTRACTED]
 - [[.test_revert_task_created_on_put()]] - `calls` [EXTRACTED]
 - [[.test_second_put_cancels_previous_task()]] - `calls` [EXTRACTED]
+- [[HTTPException]] - `calls` [INFERRED]
 - [[ModeRequest]] - `references` [EXTRACTED]
 - [[Set AGENTSHROUD_MODE at runtime with automatic revert to 'enforce'.]] - `rationale_for` [EXTRACTED]
 - [[api.py]] - `contains` [EXTRACTED]

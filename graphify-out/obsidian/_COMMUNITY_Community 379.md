@@ -8,7 +8,7 @@ members: 26
 **Members:** 26 nodes
 
 ## Members
-- [[.__init__()_46]] - code - gateway/runtime/apple_engine.py
+- [[.__init__()_61]] - code - gateway/runtime/apple_engine.py
 - [[._cmd()]] - code - gateway/runtime/apple_engine.py
 - [[.build()]] - code - gateway/runtime/apple_engine.py
 - [[.compose_down()]] - code - gateway/runtime/apple_engine.py
@@ -24,12 +24,12 @@ members: 26
 - [[.pull()]] - code - gateway/runtime/apple_engine.py
 - [[.push()]] - code - gateway/runtime/apple_engine.py
 - [[.rm()]] - code - gateway/runtime/apple_engine.py
-- [[.run()_1]] - code - gateway/runtime/apple_engine.py
+- [[.run()_5]] - code - gateway/runtime/apple_engine.py
 - [[.stop()_5]] - code - gateway/runtime/apple_engine.py
 - [[.unpause()]] - code - gateway/runtime/apple_engine.py
 - [[.volume_create()]] - code - gateway/runtime/apple_engine.py
 - [[.volume_rm()]] - code - gateway/runtime/apple_engine.py
-- [[Any_25]] - code - gateway/runtime/apple_engine.py
+- [[Any_35]] - code - gateway/runtime/apple_engine.py
 - [[AppleContainerEngine]] - code - gateway/runtime/apple_engine.py
 - [[Container engine backed by Apple's `container` CLI.]] - rationale - gateway/runtime/apple_engine.py
 - [[ContainerInfo]] - code - gateway/runtime/apple_engine.py
@@ -44,17 +44,19 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 7 edges to [[_COMMUNITY_Community 738]]
-- 6 edges to [[_COMMUNITY_Community 240]]
-- 3 edges to [[_COMMUNITY_Community 918]]
+- 5 edges to [[_COMMUNITY_Community 240]]
 - 3 edges to [[_COMMUNITY_Community 225]]
+- 2 edges to [[_COMMUNITY_Community 1352]]
 - 2 edges to [[_COMMUNITY_Community 2010]]
 - 1 edge to [[_COMMUNITY_Community 372]]
+- 1 edge to [[_COMMUNITY_Community 918]]
 - 1 edge to [[_COMMUNITY_Community 385]]
 - 1 edge to [[_COMMUNITY_Community 2072]]
+- 1 edge to [[_COMMUNITY_Community 250]]
 - 1 edge to [[_COMMUNITY_Community 743]]
 - 1 edge to [[_COMMUNITY_Community 1052]]
 
 ## Top bridge nodes
-- [[AppleContainerEngine]] - degree 45, connects to 10 communities
+- [[AppleContainerEngine]] - degree 45, connects to 12 communities
 - [[ContainerInfo]] - degree 3, connects to 2 communities
-- [[Any_25]] - degree 3, connects to 2 communities
+- [[Any_35]] - degree 3, connects to 2 communities

@@ -1,15 +1,15 @@
 ---
 type: community
-members: 87
+members: 90
 ---
 
 # Community 56
 
-**Members:** 87 nodes
+**Members:** 90 nodes
 
 ## Members
-- [[.__init__()_71]] - code - gateway/security/differential_pii_detector.py
-- [[.__init__()_148]] - code - gateway/tests/test_differential_pii_detector.py
+- [[.__init__()_86]] - code - gateway/security/differential_pii_detector.py
+- [[.__init__()_163]] - code - gateway/tests/test_differential_pii_detector.py
 - [[.__post_init__()_4]] - code - gateway/security/differential_pii_detector.py
 - [[._deduplicate()]] - code - gateway/security/differential_pii_detector.py
 - [[._detect_pii()]] - code - gateway/security/differential_pii_detector.py
@@ -49,6 +49,7 @@ members: 87
 - [[.test_us_ssn_caught_in_tool_result()]] - code - gateway/tests/test_differential_pii_detector.py
 - [[.test_weak_hit_present_in_tool_result_only()]] - code - gateway/tests/test_differential_pii_detector.py
 - [[.test_zero_width_space_injection_caught()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[A SendMessage containing PII must have it redacted in what's forwarded     to He]] - rationale - gateway/tests/test_a2a_proxy.py
 - [[A single PII detection result.]] - rationale - gateway/security/differential_pii_detector.py
 - [[A weak-confidence hit (0.75) must appear in tool results but not prompts.]] - rationale - gateway/tests/test_differential_pii_detector.py
 - [[Asymmetric PII detector lower floor for tool results, 0.9 for prompts.      Thi]] - rationale - gateway/security/differential_pii_detector.py
@@ -95,6 +96,8 @@ members: 87
 - [[detector()]] - code - gateway/tests/test_differential_pii_detector.py
 - [[differential_pii_detector.py]] - code - gateway/security/differential_pii_detector.py
 - [[test_differential_pii_detector.py]] - code - gateway/tests/test_differential_pii_detector.py
+- [[test_process_inbound_request_binary_part_is_forwarded_unscanned_and_flagged()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_process_inbound_request_pii_in_message_is_redacted_before_forwarding()]] - code - gateway/tests/test_a2a_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -104,18 +107,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY_Community 116]]
-- 2 edges to [[_COMMUNITY_Community 72]]
-- 2 edges to [[_COMMUNITY_Community 271]]
+- 20 edges to [[_COMMUNITY_Community 116]]
+- 2 edges to [[_COMMUNITY_Community 7]]
+- 2 edges to [[_COMMUNITY_Community 307]]
 - 1 edge to [[_COMMUNITY_Community 8]]
-- 1 edge to [[_COMMUNITY_Community 133]]
-- 1 edge to [[_COMMUNITY_Community 162]]
-- 1 edge to [[_COMMUNITY_Community 84]]
+- 1 edge to [[_COMMUNITY_Community 924]]
+- 1 edge to [[_COMMUNITY_Community 794]]
+- 1 edge to [[_COMMUNITY_Community 25]]
 - 1 edge to [[_COMMUNITY_Community 221]]
-- 1 edge to [[_COMMUNITY_Community 28]]
+- 1 edge to [[_COMMUNITY_Community 72]]
 
 ## Top bridge nodes
 - [[DifferentialPIIDetector]] - degree 38, connects to 5 communities
 - [[differential_pii_detector.py]] - degree 9, connects to 3 communities
 - [[DifferentialPIIConfig]] - degree 25, connects to 2 communities
 - [[PIIHitSeverity]] - degree 17, connects to 1 community
+- [[test_process_inbound_request_pii_in_message_is_redacted_before_forwarding()]] - degree 8, connects to 1 community

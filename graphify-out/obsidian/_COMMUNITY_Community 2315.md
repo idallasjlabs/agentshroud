@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Advisory Collaborators (Brett, Chris, Gabriel, TJ)]] - concept - docs/TEAM.md
-- [[Collaborator Session Isolation (blocked functionsskills)]] - concept - docs/claude-security-audit-prompt.md
-- [[Collaborators_1]] - document - docs/setup-slack.md
-- [[Collaborators_2]] - document - docs/setup-telegram.md
-- [[Steve Hay — Collaborator (Telegram ID 8279589982)]] - concept - docs/TEAM.md
+- [[.test_clean_when_installed_not_running()_2]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_not_run_when_not_installed()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_running_report_mtime_timestamp()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_running_without_report()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestClamavSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,11 +22,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 324]]
-- 1 edge to [[_COMMUNITY_Community 1552]]
-- 1 edge to [[_COMMUNITY_Community 915]]
+- 1 edge to [[_COMMUNITY_Community 431]]
+- 1 edge to [[_COMMUNITY_Community 219]]
 
 ## Top bridge nodes
-- [[Collaborators_1]] - degree 3, connects to 1 community
-- [[Collaborators_2]] - degree 2, connects to 1 community
-- [[Steve Hay — Collaborator (Telegram ID 8279589982)]] - degree 2, connects to 1 community
+- [[TestClamavSummary]] - degree 5, connects to 1 community
+- [[.test_running_report_mtime_timestamp()]] - degree 2, connects to 1 community

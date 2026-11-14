@@ -8,7 +8,7 @@ members: 32
 **Members:** 32 nodes
 
 ## Members
-- [[.__init__()_66]] - code - gateway/security/context_integrity.py
+- [[.__init__()_81]] - code - gateway/security/context_integrity.py
 - [[.get_segment_provenance()]] - code - gateway/security/context_guard.py
 - [[.score_context()]] - code - gateway/security/context_integrity.py
 - [[.test_below_alert_threshold_logs_warning()]] - code - gateway/tests/test_context_integrity.py
@@ -18,7 +18,7 @@ members: 32
 - [[.test_pristine_context_scores_high()]] - code - gateway/tests/test_context_integrity.py
 - [[.test_tampered_system_prompt_lowers_score()]] - code - gateway/tests/test_context_integrity.py
 - [[A well-formed context with valid HMAC should score close to 1.0.]] - rationale - gateway/tests/test_context_integrity.py
-- [[Any_36]] - code - gateway/security/context_integrity.py
+- [[Any_46]] - code - gateway/security/context_integrity.py
 - [[Compute a 0.0–1.0 integrity score for the given context segments.          Args]] - rationale - gateway/security/context_integrity.py
 - [[ContextIntegrityScorer]] - code - gateway/security/context_integrity.py
 - [[ContextSegment]] - code - gateway/security/context_guard.py
@@ -49,15 +49,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 0]]
-- 2 edges to [[_COMMUNITY_Community 72]]
+- 9 edges to [[_COMMUNITY_Community 7]]
+- 3 edges to [[_COMMUNITY_Community 919]]
 - 2 edges to [[_COMMUNITY_Community 2042]]
-- 2 edges to [[_COMMUNITY_Community 919]]
 - 2 edges to [[_COMMUNITY_Community 1967]]
 - 2 edges to [[_COMMUNITY_Community 917]]
-- 1 edge to [[_COMMUNITY_Community 344]]
 - 1 edge to [[_COMMUNITY_Community 1927]]
-- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 0]]
+- 1 edge to [[_COMMUNITY_Community 24]]
 - 1 edge to [[_COMMUNITY_Community 304]]
 - 1 edge to [[_COMMUNITY_Community 1358]]
 - 1 edge to [[_COMMUNITY_Community 1359]]
@@ -65,7 +64,7 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[SystemPromptFingerprint]] - degree 13, connects to 6 communities
-- [[ContextSegment]] - degree 15, connects to 4 communities
-- [[ContextIntegrityScorer]] - degree 13, connects to 2 communities
+- [[ContextSegment]] - degree 15, connects to 3 communities
 - [[TestContextIntegrityScorer]] - degree 12, connects to 2 communities
+- [[ContextIntegrityScorer]] - degree 13, connects to 1 community
 - [[IntegrityScore]] - degree 9, connects to 1 community

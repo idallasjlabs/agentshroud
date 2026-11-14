@@ -1,74 +1,63 @@
 ---
 type: community
-members: 61
+members: 50
 ---
 
 # Community 96
 
-**Members:** 61 nodes
+**Members:** 50 nodes
 
 ## Members
-- [[._apply_outbound_model_error_rewrites()]] - code - gateway/proxy/telegram_proxy.py
-- [[._build_ack_only_updates()]] - code - gateway/proxy/telegram_proxy.py
-- [[._check_collaborator_leakage()]] - code - gateway/proxy/telegram_proxy.py
-- [[._contains_critical_collaborator_leakage()]] - code - gateway/proxy/telegram_proxy.py
-- [[._contains_high_risk_collaborator_leakage()]] - code - gateway/proxy/telegram_proxy.py
-- [[._emit_quarantine_event()]] - code - gateway/proxy/telegram_proxy.py
-- [[._escape_pii_placeholders()]] - code - gateway/proxy/telegram_proxy.py
-- [[._extract_embedded_tool_call_json()]] - code - gateway/proxy/telegram_proxy.py
-- [[._filter_outbound()_1]] - code - gateway/proxy/telegram_proxy.py
-- [[._filter_outbound_multipart()]] - code - gateway/proxy/telegram_proxy.py
-- [[._handle_outbound_tool_calls()]] - code - gateway/proxy/telegram_proxy.py
-- [[._html_tags_balanced()]] - code - gateway/proxy/telegram_proxy.py
-- [[._is_owner_chat()]] - code - gateway/proxy/telegram_proxy.py
-- [[._is_valid_domain_name()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_filename_reference()]] - code - gateway/proxy/telegram_proxy.py
-- [[._multipart_boundary()]] - code - gateway/proxy/telegram_proxy.py
-- [[._multipart_get_field()]] - code - gateway/proxy/telegram_proxy.py
-- [[._multipart_replace_field()]] - code - gateway/proxy/telegram_proxy.py
-- [[._parse_tool_call_json()]] - code - gateway/proxy/telegram_proxy.py
-- [[._quarantine_outbound_block()]] - code - gateway/proxy/telegram_proxy.py
-- [[._redact_owner_ids()]] - code - gateway/proxy/telegram_proxy.py
-- [[._resolve_text_field()]] - code - gateway/proxy/telegram_proxy.py
-- [[._rewrite_known_runtime_errors()]] - code - gateway/proxy/telegram_proxy.py
-- [[._scan_outbound_text()]] - code - gateway/proxy/telegram_proxy.py
-- [[._set_outbound_block_cascade()]] - code - gateway/proxy/telegram_proxy.py
-- [[._strip_collaborator_html_markup()]] - code - gateway/proxy/telegram_proxy.py
-- [[._strip_json_fence()]] - code - gateway/proxy/telegram_proxy.py
-- [[._suppress_duplicate_system_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._trigger_web_fetch_approval()]] - code - gateway/proxy/telegram_proxy.py
-- [[._trigger_web_search_log()]] - code - gateway/proxy/telegram_proxy.py
-- [[Activate per-chat cascade window to prevent streaming-fragment leak-through.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Any_21]] - code - gateway/proxy/telegram_proxy.py
-- [[Best-effort async event emission for quarantine actions.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Best-effort check to avoid treating local file names as egress domains.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Core outbound security scan shared by JSON, form, and multipart branches.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect leakage patterns blocked for local_onlyproject_scoped collaborators.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect patterns that must redact for ALL non-owner chats, including full_access.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Extract a non-file text field value from a multipartform-data body.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Extract the boundary token from a multipart Content-Type header.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Filter multipartform-data outbound bodies (sendPhotosendDocument).          Te]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Filter outbound bot messages (sendMessage, etc.).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Find first embedded tool-call JSON object inside arbitrary text.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[HTML-escape PII redaction placeholders so they render as literal         text in]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Intercept leaked raw tool-call JSON in outbound text.          Shared by the JSO]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Log a web_search egress event with user attribution when raw JSON leaks.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Map recurring runtimeprovider failures to deterministic operator guidance.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Parse leaked model tool-call JSON blobs (e.g. {'name' 'NO_REPLY', ...}).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Persist blocked outbound messages for admin review.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Queue an interactive egress approval when raw web_fetch JSON leaks.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Redact the owner's Telegram user ID from collaborator-bound text.          Strip]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Remove Telegram HTML formatting tags from collaborator outbound text.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Replace a non-file text field value in a multipartform-data body.          Only]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return (field_name, text_value) for Telegram-style outbound payloads.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True only when every Telegram-supported HTML open tag has a matching clos]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True when chat_id belongs to the configured owner.          Handles both]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return a safe-notice replacement when protected content would leak.          Cri]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return minimal getUpdates payload entries containing only update_id.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Rewrite raw modelruntime error texts to actionable user-facing messages.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Strip optional markdown json fences around model output.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Suppress repeated startupshutdown system notices in short windows.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Validate normalized domain labels to avoid malformed allowlist entries.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[.__init__()_23]] - code - gateway/inbound_edge/store.py
+- [[._one()]] - code - gateway/inbound_edge/store.py
+- [[.add_client()]] - code - gateway/inbound_edge/store.py
+- [[.add_ticket()]] - code - gateway/inbound_edge/store.py
+- [[.approval_for_ticket()]] - code - gateway/inbound_edge/store.py
+- [[.close()_6]] - code - gateway/inbound_edge/store.py
+- [[.consume_approval()]] - code - gateway/inbound_edge/store.py
+- [[.consume_enrollment()]] - code - gateway/inbound_edge/store.py
+- [[.db()]] - code - gateway/inbound_edge/store.py
+- [[.enrollment_window_vendor()]] - code - gateway/inbound_edge/store.py
+- [[.get_client()_2]] - code - gateway/inbound_edge/store.py
+- [[.has_jti()]] - code - gateway/inbound_edge/store.py
+- [[.jti_issued()]] - code - gateway/inbound_edge/store.py
+- [[.kill()]] - code - gateway/inbound_edge/store.py
+- [[.killed_reason()]] - code - gateway/inbound_edge/store.py
+- [[.list_clients()]] - code - gateway/inbound_edge/store.py
+- [[.list_kills()]] - code - gateway/inbound_edge/store.py
+- [[.open_approval_for()]] - code - gateway/inbound_edge/store.py
+- [[.open_enrollment()]] - code - gateway/inbound_edge/store.py
+- [[.peek_code()]] - code - gateway/inbound_edge/store.py
+- [[.peek_pending()]] - code - gateway/inbound_edge/store.py
+- [[.peek_refresh()]] - code - gateway/inbound_edge/store.py
+- [[.purge_expired()]] - code - gateway/inbound_edge/store.py
+- [[.put_approval()]] - code - gateway/inbound_edge/store.py
+- [[.put_code()]] - code - gateway/inbound_edge/store.py
+- [[.put_pending()]] - code - gateway/inbound_edge/store.py
+- [[.put_refresh()]] - code - gateway/inbound_edge/store.py
+- [[.record_jti()]] - code - gateway/inbound_edge/store.py
+- [[.revoke_refresh_family()]] - code - gateway/inbound_edge/store.py
+- [[.rotate_refresh()]] - code - gateway/inbound_edge/store.py
+- [[.take_code()]] - code - gateway/inbound_edge/store.py
+- [[.take_pending()]] - code - gateway/inbound_edge/store.py
+- [[.unkill()]] - code - gateway/inbound_edge/store.py
+- [[Any_14]] - code - gateway/inbound_edge/store.py
+- [[Async SQLite store. One instance per gateway process.]] - rationale - gateway/inbound_edge/store.py
+- [[Atomically mark an approval used. True for exactly one caller.]] - rationale - gateway/inbound_edge/store.py
+- [[Connection]] - code - gateway/inbound_edge/store.py
+- [[Consume a refresh token. Reuse of a consumed token revokes its family.]] - rationale - gateway/inbound_edge/store.py
+- [[EdgeStore_4]] - code - gateway/inbound_edge/store.py
+- [[Mint a one-time code the owner types on the consent page. Returned once.]] - rationale - gateway/inbound_edge/store.py
+- [[Path_2]] - code - gateway/inbound_edge/store.py
+- [[RFC 7009 revocation of a refresh token kills its whole family.]] - rationale - gateway/inbound_edge/store.py
+- [[Return and delete an unexpired code. A second call returns None.]] - rationale - gateway/inbound_edge/store.py
+- [[The newest unconsumed, unexpired request_id for this idempotency key.]] - rationale - gateway/inbound_edge/store.py
+- [[The vendor with an open (unused, unexpired) enrollment, if exactly one.]] - rationale - gateway/inbound_edge/store.py
+- [[True exactly once for an unexpired code bound to ``vendor``; else None.]] - rationale - gateway/inbound_edge/store.py
+- [[Whether ``jti`` was ever issued (and not yet purged) — guards a typo'd kill.]] - rationale - gateway/inbound_edge/store.py
+- [[_h()]] - code - gateway/inbound_edge/store.py
+- [[store()_2]] - code - gateway/tests/test_edge_jwt.py
+- [[store.py_1]] - code - gateway/inbound_edge/store.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -78,21 +67,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 55 edges to [[_COMMUNITY_Community 14]]
-- 2 edges to [[_COMMUNITY_Community 1563]]
-- 2 edges to [[_COMMUNITY_Community 344]]
-- 1 edge to [[_COMMUNITY_Community 138]]
-- 1 edge to [[_COMMUNITY_Community 62]]
-- 1 edge to [[_COMMUNITY_Community 223]]
-- 1 edge to [[_COMMUNITY_Community 89]]
-- 1 edge to [[_COMMUNITY_Community 23]]
-- 1 edge to [[_COMMUNITY_Community 61]]
-- 1 edge to [[_COMMUNITY_Community 75]]
-- 1 edge to [[_COMMUNITY_Community 6]]
+- 15 edges to [[_COMMUNITY_Community 25]]
+- 2 edges to [[_COMMUNITY_Community 65]]
+- 1 edge to [[_COMMUNITY_Community 30]]
 
 ## Top bridge nodes
-- [[Any_21]] - degree 17, connects to 7 communities
-- [[._filter_outbound()_1]] - degree 19, connects to 3 communities
-- [[._filter_outbound_multipart()]] - degree 12, connects to 2 communities
-- [[._scan_outbound_text()]] - degree 8, connects to 2 communities
-- [[._emit_quarantine_event()]] - degree 5, connects to 2 communities
+- [[EdgeStore_4]] - degree 53, connects to 3 communities
+- [[store()_2]] - degree 2, connects to 1 community

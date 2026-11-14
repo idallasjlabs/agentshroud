@@ -1,18 +1,29 @@
 ---
 type: community
-members: 50
+members: 73
 ---
 
 # Community 2038
 
-**Members:** 50 nodes
+**Members:** 73 nodes
 
 ## Members
 - [[.__ge__()]] - code - gateway/proxy/mcp_config.py
 - [[.__gt__()]] - code - gateway/proxy/mcp_config.py
+- [[.__init__()_42]] - code - gateway/proxy/mcp_permissions.py
 - [[.__le__()]] - code - gateway/proxy/mcp_config.py
 - [[.__lt__()]] - code - gateway/proxy/mcp_config.py
+- [[._load_privacy_policy()]] - code - gateway/proxy/mcp_permissions.py
+- [[._recompile_private_data_patterns()]] - code - gateway/proxy/mcp_permissions.py
+- [[.get_privacy_policy_status()]] - code - gateway/proxy/mcp_permissions.py
+- [[.get_private_access_events()]] - code - gateway/proxy/mcp_permissions.py
+- [[.get_private_access_summary()]] - code - gateway/proxy/mcp_permissions.py
+- [[.get_private_data_patterns()]] - code - gateway/proxy/mcp_permissions.py
+- [[.get_private_redaction_events()]] - code - gateway/proxy/mcp_permissions.py
+- [[.get_private_redaction_summary()]] - code - gateway/proxy/mcp_permissions.py
 - [[.level_value()]] - code - gateway/proxy/mcp_config.py
+- [[.record_private_data_redaction()]] - code - gateway/proxy/mcp_permissions.py
+- [[.set_trust_level()]] - code - gateway/proxy/mcp_permissions.py
 - [[.test_admin_ge_read()]] - code - gateway/tests/test_mcp_permissions.py
 - [[.test_all_pass()]] - code - gateway/tests/test_mcp_permissions.py
 - [[.test_allowed_agent()]] - code - gateway/tests/test_mcp_permissions.py
@@ -48,7 +59,19 @@ members: 50
 - [[.test_trust_too_low_for_server()]] - code - gateway/tests/test_mcp_permissions.py
 - [[.test_unknown_server_default_allow()]] - code - gateway/tests/test_mcp_permissions.py
 - [[.test_write_lt_execute()]] - code - gateway/tests/test_mcp_permissions.py
+- [[Aggregate recent private-data redaction events.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Aggregate recent private-tool violations for SOC reporting.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Compile private data patterns once for efficient repeated use.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Load optional admin-private tool patterns from policy file.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[MCPPermissionManager]] - code - gateway/proxy/mcp_permissions.py
+- [[Manages permissions for MCP tool calls.      Default-allow philosophy tools wor]] - rationale - gateway/proxy/mcp_permissions.py
 - [[PermissionLevel]] - code - gateway/proxy/mcp_config.py
+- [[Record admin-private data redaction event for compliance audit.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Return configured admin-private data redaction patterns.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Return privacy policy file load status for dashboardaudit APIs.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Return recent blocked private-tool attempts for auditing.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Return recent private-data redaction events.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Set trust level for an agent.]] - rationale - gateway/proxy/mcp_permissions.py
 - [[TestCheckAll]] - code - gateway/tests/test_mcp_permissions.py
 - [[TestInferPermission]] - code - gateway/tests/test_mcp_permissions.py
 - [[TestPermissionLevel]] - code - gateway/tests/test_mcp_permissions.py
@@ -67,23 +90,27 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 28 edges to [[_COMMUNITY_Community 54]]
-- 26 edges to [[_COMMUNITY_Community 132]]
-- 15 edges to [[_COMMUNITY_Community 64]]
-- 12 edges to [[_COMMUNITY_Community 59]]
-- 3 edges to [[_COMMUNITY_Community 329]]
+- 43 edges to [[_COMMUNITY_Community 54]]
+- 37 edges to [[_COMMUNITY_Community 132]]
+- 35 edges to [[_COMMUNITY_Community 64]]
+- 13 edges to [[_COMMUNITY_Community 140]]
+- 7 edges to [[_COMMUNITY_Community 329]]
+- 7 edges to [[_COMMUNITY_Community 230]]
+- 5 edges to [[_COMMUNITY_Community 59]]
 - 2 edges to [[_COMMUNITY_Community 8]]
+- 2 edges to [[_COMMUNITY_Community 1942]]
 - 2 edges to [[_COMMUNITY_Community 941]]
+- 2 edges to [[_COMMUNITY_Community 184]]
 - 2 edges to [[_COMMUNITY_Community 1970]]
-- 1 edge to [[_COMMUNITY_Community 140]]
-- 1 edge to [[_COMMUNITY_Community 1942]]
-- 1 edge to [[_COMMUNITY_Community 184]]
-- 1 edge to [[_COMMUNITY_Community 2071]]
-- 1 edge to [[_COMMUNITY_Community 232]]
+- 2 edges to [[_COMMUNITY_Community 2005]]
+- 2 edges to [[_COMMUNITY_Community 2011]]
+- 2 edges to [[_COMMUNITY_Community 2071]]
+- 2 edges to [[_COMMUNITY_Community 6]]
+- 2 edges to [[_COMMUNITY_Community 232]]
 
 ## Top bridge nodes
-- [[PermissionLevel]] - degree 71, connects to 12 communities
+- [[MCPPermissionManager]] - degree 101, connects to 16 communities
+- [[PermissionLevel]] - degree 71, connects to 14 communities
 - [[test_mcp_permissions.py]] - degree 17, connects to 4 communities
-- [[TestServerAccess]] - degree 13, connects to 3 communities
-- [[TestPermissionLevel]] - degree 12, connects to 3 communities
-- [[TestInferPermission]] - degree 12, connects to 3 communities
+- [[TestServerAccess]] - degree 13, connects to 2 communities
+- [[TestPermissionLevel]] - degree 12, connects to 2 communities

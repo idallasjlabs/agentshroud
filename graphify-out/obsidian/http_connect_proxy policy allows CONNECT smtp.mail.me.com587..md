@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "Community 21"
+community: "Community 93"
 location: "L619"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_21
+  - community/Community_93
 ---
 
 # http_connect_proxy policy allows CONNECT smtp.mail.me.com:587.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_connect_proxy_policy_allows_smtp_mail_me_587()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_21
+#graphify/rationale #graphify/EXTRACTED #community/Community_93

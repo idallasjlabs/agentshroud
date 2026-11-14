@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Community 254"
-location: "L305"
+community: "Community 978"
+location: "L309"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_254
+  - community/Community_978
 ---
 
 # SSHWriteFileResponse
@@ -18,7 +18,7 @@ tags:
 - [[MCPProxyRequest]] - `uses` [INFERRED]
 - [[MCPResultRequest]] - `uses` [INFERRED]
 - [[OpProxyRequest]] - `uses` [INFERRED]
-- [[Request_1]] - `uses` [INFERRED]
+- [[Request_2]] - `uses` [INFERRED]
 - [[Response from POST sshwrite_file.      success reflects whether the remote wri]] - `rationale_for` [EXTRACTED]
 - [[SSHExecRequest]] - `uses` [INFERRED]
 - [[SSHWriteFileRequest]] - `uses` [INFERRED]
@@ -27,4 +27,4 @@ tags:
 - [[models.py]] - `contains` [EXTRACTED]
 - [[ssh_write_file()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_254
+#graphify/code #graphify/INFERRED #community/Community_978

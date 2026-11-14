@@ -1,12 +1,12 @@
 ---
 source_file: "reports/upgrade-2026-09-27-20260927-0800.md"
 type: "document"
-community: "Community 1924"
+community: "Community 1563"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1924
+  - community/Community_1563
 ---
 
 # AgentShroud Sunday Upgrade — 2026-09-27, 08:00 ET verification pass (DEV run, session #2)
@@ -22,4 +22,4 @@ tags:
 - [[Why this report is short]] - `contains` [EXTRACTED]
 - [[upgrade-2026-09-27-20260927-0800]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1924
+#graphify/document #graphify/EXTRACTED #community/Community_1563

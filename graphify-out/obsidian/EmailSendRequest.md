@@ -2,7 +2,7 @@
 source_file: "gateway/ingest_api/models.py"
 type: "code"
 community: "Community 2154"
-location: "L329"
+location: "L333"
 tags:
   - graphify/code
   - graphify/EXTRACTED

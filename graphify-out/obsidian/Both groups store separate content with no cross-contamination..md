@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "Community 479"
+community: "Community 61"
 location: "L113"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_479
+  - community/Community_61
 ---
 
 # Both groups store separate content with no cross-contamination.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_group_writes_are_independent_namespaces()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_479
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

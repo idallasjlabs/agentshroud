@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "Community 16"
-location: "L379"
+community: "Community 235"
+location: "L289"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_16
+  - graphify/EXTRACTED
+  - community/Community_235
 ---
 
 # Any
 
 ## Connections
-- [[.get_lifecycle_status()]] - `references` [EXTRACTED]
-- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
+- [[.get_leakage_summary()]] - `references` [EXTRACTED]
+- [[.monitor_environment_access()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_16
+#graphify/code #graphify/EXTRACTED #community/Community_235

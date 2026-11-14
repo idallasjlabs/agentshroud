@@ -1,21 +1,23 @@
 ---
 type: community
-members: 56
+members: 61
 ---
 
 # Community 92
 
-**Members:** 56 nodes
+**Members:** 61 nodes
 
 ## Members
 - [[.content_not_empty()]] - code - gateway/ingest_api/models.py
 - [[.test_invalid_source_rejected()]] - code - gateway/tests/test_config_validation.py
-- [[.test_valid_forward_request()]] - code - gateway/tests/test_config_validation.py
 - [[.validate_source()]] - code - gateway/ingest_api/models.py
 - [[An empty share-sheet payload is rejected before it reaches the pipeline.]] - rationale - gateway/tests/test_security.py
 - [[Every content_type an iOS Shortcut can emit is accepted with source=shortcut.]] - rationale - gateway/tests/test_security.py
 - [[ForwardRequest]] - code - gateway/ingest_api/models.py
 - [[Request to forward content through the gateway      Received from iOS Shortcuts,]] - rationale - gateway/ingest_api/models.py
+- [[Test ForwardRequest rejects empty content]] - rationale - gateway/tests/test_main_simple.py
+- [[Test ForwardRequest rejects invalid source]] - rationale - gateway/tests/test_main_simple.py
+- [[Test ForwardRequest with valid data]] - rationale - gateway/tests/test_main_simple.py
 - [[Test PII detection with special characters nearby]] - rationale - gateway/tests/test_security.py
 - [[Test all valid sources are accepted]] - rationale - gateway/tests/test_security.py
 - [[Test content with Unicode characters]] - rationale - gateway/tests/test_security.py
@@ -43,6 +45,9 @@ members: 56
 - [[test_empty_content_rejection()]] - code - gateway/tests/test_security.py
 - [[test_extremely_long_content()]] - code - gateway/tests/test_security.py
 - [[test_false_positive_patterns()]] - code - gateway/tests/test_security.py
+- [[test_forward_request_valid()]] - code - gateway/tests/test_main_simple.py
+- [[test_forward_request_validation_empty_content()]] - code - gateway/tests/test_main_simple.py
+- [[test_forward_request_validation_invalid_source()]] - code - gateway/tests/test_main_simple.py
 - [[test_invalid_source_rejection()]] - code - gateway/tests/test_security.py
 - [[test_malformed_json_metadata()]] - code - gateway/tests/test_security.py
 - [[test_multiple_same_type_pii()]] - code - gateway/tests/test_security.py
@@ -73,23 +78,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 325]]
+- 14 edges to [[_COMMUNITY_Community 34]]
 - 6 edges to [[_COMMUNITY_Community 36]]
-- 5 edges to [[_COMMUNITY_Community 861]]
-- 5 edges to [[_COMMUNITY_Community 47]]
+- 5 edges to [[_COMMUNITY_Community 437]]
 - 4 edges to [[_COMMUNITY_Community 78]]
+- 4 edges to [[_COMMUNITY_Community 325]]
+- 4 edges to [[_COMMUNITY_Community 47]]
 - 4 edges to [[_COMMUNITY_Community 143]]
-- 4 edges to [[_COMMUNITY_Community 34]]
 - 3 edges to [[_COMMUNITY_Community 49]]
-- 3 edges to [[_COMMUNITY_Community 80]]
 - 2 edges to [[_COMMUNITY_Community 138]]
-- 2 edges to [[_COMMUNITY_Community 707]]
 - 2 edges to [[_COMMUNITY_Community 2154]]
 - 1 edge to [[_COMMUNITY_Community 10]]
+- 1 edge to [[_COMMUNITY_Community 978]]
 
 ## Top bridge nodes
-- [[ForwardRequest]] - degree 57, connects to 11 communities
+- [[ForwardRequest]] - degree 57, connects to 10 communities
 - [[test_security.py]] - degree 25, connects to 2 communities
-- [[test_resolve_target_default()]] - degree 3, connects to 1 community
-- [[test_resolve_target_explicit()]] - degree 3, connects to 1 community
-- [[test_resolve_target_invalid_explicit()]] - degree 3, connects to 1 community
+- [[test_forward_request_validation_empty_content()]] - degree 3, connects to 1 community
+- [[test_forward_request_validation_invalid_source()]] - degree 3, connects to 1 community
+- [[test_forward_request_valid()]] - degree 3, connects to 1 community

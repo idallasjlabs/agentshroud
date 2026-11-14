@@ -1,42 +1,56 @@
 ---
 type: community
-members: 134
+members: 157
 ---
 
 # Community 19
 
-**Members:** 134 nodes
+**Members:** 157 nodes
 
 ## Members
-- [[.__init__()_188]] - code - gateway/tests/test_soc_router_coverage.py
-- [[.__init__()_189]] - code - gateway/tests/test_soc_router_coverage.py
-- [[.__init__()_190]] - code - gateway/tests/test_soc_router_coverage.py
-- [[.__init__()_191]] - code - gateway/tests/test_soc_router_coverage.py
+- [[.__init__()_213]] - code - gateway/tests/test_soc_router_coverage.py
+- [[.__init__()_214]] - code - gateway/tests/test_soc_router_coverage.py
+- [[.__init__()_215]] - code - gateway/tests/test_soc_router_coverage.py
+- [[.__init__()_216]] - code - gateway/tests/test_soc_router_coverage.py
+- [[.__init__()_217]] - code - gateway/tests/test_soc_router_coverage.py
+- [[.get_pending()_2]] - code - gateway/tests/test_soc_router_coverage.py
 - [[.get_recent_entries()_1]] - code - gateway/tests/test_soc_router_coverage.py
 - [[.is_group_admin()_2]] - code - gateway/tests/test_soc_router_coverage.py
-- [[.is_owner()_4]] - code - gateway/tests/test_soc_router_coverage.py
+- [[.is_owner()_5]] - code - gateway/tests/test_soc_router_coverage.py
 - [[.model_dump()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[.model_dump()_1]] - code - gateway/tests/test_soc_router_coverage.py
-- [[.require()_1]] - code - gateway/tests/test_soc_router_coverage.py
+- [[.require()_2]] - code - gateway/tests/test_soc_router_coverage.py
 - [[Bug 1 fix 'ok' must reflect whether the removal actually took effect,     not b]] - rationale - gateway/tests/test_soc_router_coverage.py
 - [[FakeAuditStore_1]] - code - gateway/tests/test_soc_router_coverage.py
-- [[FakeCaller]] - code - gateway/tests/test_soc_router_coverage.py
+- [[FakeCaller_1]] - code - gateway/tests/test_soc_router_coverage.py
 - [[FakeGroup]] - code - gateway/tests/test_soc_router_coverage.py
+- [[Mirrors EnhancedApprovalQueue's public surface (gatewayapproval_queueenhanced_]] - rationale - gateway/tests/test_soc_router_coverage.py
+- [[Mock container engine + two configured bots for the shared kill switch.]] - rationale - gateway/tests/test_soc_router_coverage.py
 - [[SOC agent-cves surfaces auto-registered under_review advisories honestly.]] - rationale - gateway/tests/test_soc_router_coverage.py
 - [[Stands in for SCLCaller RBAC require() is a no-op, owner is switchable.]] - rationale - gateway/tests/test_soc_router_coverage.py
+- [[_FakeDecideQueue]] - code - gateway/tests/test_soc_router_coverage.py
 - [[_Svc]] - code - gateway/tests/test_soc_router_coverage.py
 - [[_fake_contributor_manager()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[_make_service_manager()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[_pending_item()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[gatewaysocauth.py (get_caller)]] - code - gateway/soc/auth.py
-- [[holder()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[state()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[holder()_1]] - code - gateway/tests/test_soc_router_coverage.py
+- [[ks_engine()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[state()_1]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_add_collaborator()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_add_group_member_paths()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_agent_cves_known_and_unknown()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_agent_cves_registry_error()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_agent_cves_reports_under_review()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_approvals_missing_queue()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_approvals_pending()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_approvals_approve_calls_decide()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_approvals_body_optional()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_approvals_deny_calls_decide()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_approvals_missing_queue_is_503()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_approvals_pending_no_queue_is_empty()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_approvals_pending_queue_error_is_not_empty_success()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_approvals_pending_uses_get_pending()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_approvals_unexpected_error_is_500()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_approvals_unknown_id_is_404()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_audit_export_unavailable()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_audit_verify_chain_raises()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_audit_verify_chain_unavailable()]] - code - gateway/tests/test_soc_router_coverage.py
@@ -49,6 +63,7 @@ members: 134
 - [[test_collaborator_activity_filters()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_collaborator_activity_no_tracker()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_collaborator_activity_pairing()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_command_center_has_approvals_tab()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_config_integrity_acknowledge()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_correlation_fallback_builder()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_correlation_unavailable_on_error()]] - code - gateway/tests/test_soc_router_coverage.py
@@ -84,9 +99,17 @@ members: 134
 - [[test_group_memory_clear_error()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_group_memory_read()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_health_healthy_and_degraded()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_killswitch_disconnect_engine_failure_is_not_ok()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_killswitch_disconnect_owner_gate()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_killswitch_freeze()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_killswitch_shutdown()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_killswitch_disconnect_stops_and_removes_every_bot()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_killswitch_engine_unavailable_is_not_ok()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_killswitch_failure_is_audited_as_failed()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_killswitch_freeze_engine_failure_is_not_ok()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_killswitch_freeze_pauses_every_bot()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_killswitch_freeze_requires_confirm()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_killswitch_shutdown_engine_failure_is_not_ok()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_killswitch_shutdown_requires_confirm()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_killswitch_shutdown_runs_compose_down()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_list_bots_default_and_configured()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_list_delegations()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_list_groups_empty_and_populated()]] - code - gateway/tests/test_soc_router_coverage.py
@@ -151,16 +174,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 26 edges to [[_COMMUNITY_Community 1127]]
+- 25 edges to [[_COMMUNITY_Community 1127]]
+- 7 edges to [[_COMMUNITY_Community 30]]
+- 6 edges to [[_COMMUNITY_Community 978]]
 - 6 edges to [[_COMMUNITY_Community 6]]
-- 5 edges to [[_COMMUNITY_Community 23]]
-- 1 edge to [[_COMMUNITY_Community 10]]
+- 3 edges to [[_COMMUNITY_Community 10]]
+- 2 edges to [[_COMMUNITY_Community 20]]
 - 1 edge to [[_COMMUNITY_Community 1248]]
 - 1 edge to [[_COMMUNITY_Community 181]]
 
 ## Top bridge nodes
-- [[test_soc_router_coverage.py]] - degree 151, connects to 6 communities
-- [[FakeGroup]] - degree 13, connects to 2 communities
-- [[FakeCaller]] - degree 12, connects to 2 communities
-- [[FakeAuditStore_1]] - degree 7, connects to 2 communities
-- [[_Svc]] - degree 7, connects to 2 communities
+- [[test_soc_router_coverage.py]] - degree 171, connects to 8 communities
+- [[_FakeDecideQueue]] - degree 14, connects to 4 communities
+- [[FakeGroup]] - degree 14, connects to 3 communities
+- [[FakeCaller_1]] - degree 13, connects to 3 communities
+- [[FakeAuditStore_1]] - degree 8, connects to 3 communities

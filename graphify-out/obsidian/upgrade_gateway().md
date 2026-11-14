@@ -2,7 +2,7 @@
 source_file: "gateway/soc/router.py"
 type: "code"
 community: "Community 10"
-location: "L2427"
+location: "L2913"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,8 @@ tags:
 # upgrade_gateway()
 
 ## Connections
-- [[JSONResponse]] - `references` [EXTRACTED]
+- [[HTTPException]] - `calls` [EXTRACTED]
+- [[JSONResponse_1]] - `references` [EXTRACTED]
 - [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[ServiceActionRequest]] - `references` [EXTRACTED]
 - [[_confirmation_required()]] - `calls` [EXTRACTED]

@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_soc_contributors.py"
 type: "rationale"
 community: "Community 890"
-location: "L137"
+location: "L151"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

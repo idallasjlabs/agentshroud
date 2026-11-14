@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "Community 82"
+community: "Community 965"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_82
+  - community/Community_965
 ---
 
 # _get()
@@ -14,8 +14,11 @@ tags:
 ## Connections
 - [[_api()]] - `calls` [EXTRACTED]
 - [[_loadAgentCves()]] - `calls` [EXTRACTED]
+- [[_loadAgents()]] - `calls` [EXTRACTED]
+- [[_loadApprovals()]] - `calls` [EXTRACTED]
 - [[_loadConfig()]] - `calls` [EXTRACTED]
 - [[_loadContributors()]] - `calls` [EXTRACTED]
+- [[_loadEdge()]] - `calls` [EXTRACTED]
 - [[_loadEgress()]] - `calls` [EXTRACTED]
 - [[_loadLogs()]] - `calls` [EXTRACTED]
 - [[_loadOverview()]] - `calls` [EXTRACTED]
@@ -25,4 +28,4 @@ tags:
 - [[_loadServices()]] - `calls` [EXTRACTED]
 - [[soc.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_82
+#graphify/code #graphify/EXTRACTED #community/Community_965

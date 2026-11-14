@@ -13,9 +13,9 @@ members: 38
 - [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD]] - rationale - scripts/export-bot-conversations.py
 - [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD_1]] - rationale - scripts/export-email-reports.py
 - [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD_2]] - rationale - scripts/export-telegram-history.py
-- [[Path_46]] - code - scripts/export-bot-conversations.py
-- [[Path_47]] - code - scripts/export-email-reports.py
-- [[Path_48]] - code - scripts/export-telegram-history.py
+- [[Path_50]] - code - scripts/export-bot-conversations.py
+- [[Path_51]] - code - scripts/export-email-reports.py
+- [[Path_52]] - code - scripts/export-telegram-history.py
 - [[Read a file out of a container via `exec cat` rather than `docker cp` —     on t]] - rationale - scripts/export-bot-conversations.py
 - [[Why exec cat replaced docker cp for reading container files]] - rationale - scripts/export-bot-conversations.py
 - [[Why report .md source files stand in for a missing sent-mail ledger]] - rationale - scripts/export-email-reports.py
@@ -31,9 +31,9 @@ members: 38
 - [[agentshroud-openclaw bot container]] - concept - scripts/backup-bot-memory.sh
 - [[backup-bot-memory.sh]] - code - scripts/backup-bot-memory.sh
 - [[backup-bot-memory.sh script]] - code - scripts/backup-bot-memory.sh
-- [[datetime_6]] - code - scripts/export-bot-conversations.py
-- [[datetime_7]] - code - scripts/export-email-reports.py
-- [[datetime_8]] - code - scripts/export-telegram-history.py
+- [[datetime_7]] - code - scripts/export-bot-conversations.py
+- [[datetime_8]] - code - scripts/export-email-reports.py
+- [[datetime_9]] - code - scripts/export-telegram-history.py
 - [[disaster-recovery-backup.sh]] - code - scripts/disaster-recovery-backup.sh
 - [[disaster-recovery-backup.sh script]] - code - scripts/disaster-recovery-backup.sh
 - [[export()]] - code - scripts/export-telegram-history.py
@@ -43,9 +43,9 @@ members: 38
 - [[export_bot()]] - code - scripts/export-email-reports.py
 - [[export_hermes()]] - code - scripts/export-bot-conversations.py
 - [[export_openclaw()]] - code - scripts/export-bot-conversations.py
-- [[main()_18]] - code - scripts/export-bot-conversations.py
-- [[main()_19]] - code - scripts/export-email-reports.py
-- [[main()_20]] - code - scripts/export-telegram-history.py
+- [[main()_20]] - code - scripts/export-bot-conversations.py
+- [[main()_21]] - code - scripts/export-email-reports.py
+- [[main()_22]] - code - scripts/export-telegram-history.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -56,7 +56,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Community 185]]
-- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 904]]
 
 ## Top bridge nodes
 - [[FR7 Resource Availability]] - degree 3, connects to 2 communities

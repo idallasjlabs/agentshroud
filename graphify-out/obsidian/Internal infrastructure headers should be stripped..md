@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Community 0"
+community: "Community 365"
 location: "L440"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/Community_365
 ---
 
 # Internal infrastructure headers should be stripped.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_metadata_guard_strips_internal_headers()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/Community_365

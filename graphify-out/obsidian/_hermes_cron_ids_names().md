@@ -2,7 +2,7 @@
 source_file: "docker/bots/hermes/init-config.sh"
 type: "code"
 community: "Community 2082"
-location: "L741"
+location: "L905"
 tags:
   - graphify/code
   - graphify/EXTRACTED

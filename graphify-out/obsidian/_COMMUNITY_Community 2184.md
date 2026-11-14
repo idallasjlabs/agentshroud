@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Atlas — Curriculum Architect_7]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Purpose_39]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[README_44]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Related Skills_57]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Usage_60]] - document - docker/config/hermes/skills/i-atlas/README.md
+- [[MCP Doctor (MCPM-DOCTOR)_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
+- [[Purpose_55]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
+- [[README_60]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
+- [[Related Skills_75]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
+- [[Usage_78]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,4 +25,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 90]]
 
 ## Top bridge nodes
-- [[Atlas — Curriculum Architect_7]] - degree 5, connects to 1 community
+- [[MCP Doctor (MCPM-DOCTOR)_1]] - degree 5, connects to 1 community

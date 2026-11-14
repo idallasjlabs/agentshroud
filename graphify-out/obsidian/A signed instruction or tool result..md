@@ -2,7 +2,7 @@
 source_file: "gateway/security/instruction_envelope.py"
 type: "rationale"
 community: "Community 24"
-location: "L31"
+location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

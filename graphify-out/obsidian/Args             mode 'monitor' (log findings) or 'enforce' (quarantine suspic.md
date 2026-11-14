@@ -12,6 +12,6 @@ tags:
 # Args:             mode: 'monitor' (log findings) or 'enforce' (quarantine suspic
 
 ## Connections
-- [[.__init__()_82]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_97]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_121

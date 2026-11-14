@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "Community 108"
+community: "Community 30"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_108
+  - community/Community_30
 ---
 
 # test_approval_store.py
@@ -24,4 +24,4 @@ tags:
 - [[test_persist_and_reload()]] - `contains` [EXTRACTED]
 - [[test_store_survives_restart()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_108
+#graphify/code #graphify/EXTRACTED #community/Community_30

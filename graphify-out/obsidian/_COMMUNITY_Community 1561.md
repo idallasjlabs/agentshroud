@@ -1,21 +1,22 @@
 ---
 type: community
-members: 8
+members: 9
 ---
 
 # Community 1561
 
-**Members:** 8 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[Backward compatibility the default openclaw run must still exit 0.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[CompletedProcess_1]] - code - gateway/tests/test_agent_cve_registry.py
-- [[Coverage gaps must be loud and must fail an automated caller.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Every registry must be reachable, not just openclaw.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[_run_triage()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_all_agents_flag_exists()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_all_agents_run_reports_untriaged_and_exits_nonzero()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_default_single_agent_run_still_succeeds()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[.__init__()_111]] - code - gateway/security/memory_lifecycle.py
+- [[.sanitize_content()]] - code - gateway/security/memory_lifecycle.py
+- [[.scan_content_for_threats()]] - code - gateway/security/memory_lifecycle.py
+- [[.validate_memory_write()]] - code - gateway/security/memory_lifecycle.py
+- [[MemoryLifecycleConfig_1]] - code - gateway/security/memory_lifecycle.py
+- [[Path_18]] - code - gateway/security/memory_lifecycle.py
+- [[Sanitize content by removingredacting threats.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Scan memory file content for security threats.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Validate content before writing to memory file.]] - rationale - gateway/security/memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,10 +26,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 42]]
+- 9 edges to [[_COMMUNITY_Community 16]]
+- 1 edge to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 1066]]
 
 ## Top bridge nodes
-- [[_run_triage()]] - degree 5, connects to 1 community
-- [[test_all_agents_flag_exists()]] - degree 3, connects to 1 community
-- [[test_all_agents_run_reports_untriaged_and_exits_nonzero()]] - degree 3, connects to 1 community
-- [[test_default_single_agent_run_still_succeeds()]] - degree 3, connects to 1 community
+- [[Path_18]] - degree 5, connects to 3 communities
+- [[.scan_content_for_threats()]] - degree 5, connects to 1 community
+- [[.validate_memory_write()]] - degree 5, connects to 1 community
+- [[.sanitize_content()]] - degree 4, connects to 1 community
+- [[.__init__()_111]] - degree 3, connects to 1 community

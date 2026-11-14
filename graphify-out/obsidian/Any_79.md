@@ -1,24 +1,25 @@
 ---
-source_file: "scripts/sync-cve-registry.py"
+source_file: "gateway/tests/test_edge_network_isolation.py"
 type: "code"
-community: "Community 74"
-location: "L433"
+community: "Community 104"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_74
+  - community/Community_104
 ---
 
 # Any
 
 ## Connections
-- [[_ghsa_cvss_score()]] - `references` [EXTRACTED]
-- [[_ghsa_entry_to_py()]] - `references` [EXTRACTED]
-- [[_ghsa_patched_version()]] - `references` [EXTRACTED]
-- [[_next_ash_number()]] - `references` [EXTRACTED]
-- [[_py_str()]] - `references` [EXTRACTED]
-- [[append_ghsa_entries()]] - `references` [EXTRACTED]
-- [[fetch_ghsa_advisories()]] - `references` [EXTRACTED]
-- [[process_ghsa_advisories()]] - `references` [EXTRACTED]
+- [[_Override]] - `references` [EXTRACTED]
+- [[_compose()]] - `references` [EXTRACTED]
+- [[_environment()]] - `references` [EXTRACTED]
+- [[_load()_1]] - `references` [EXTRACTED]
+- [[_merge()]] - `references` [EXTRACTED]
+- [[_networks()]] - `references` [EXTRACTED]
+- [[_published()]] - `references` [EXTRACTED]
+- [[_strip()]] - `references` [EXTRACTED]
+- [[_subnets()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_74
+#graphify/code #graphify/EXTRACTED #community/Community_104

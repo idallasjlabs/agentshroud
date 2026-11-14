@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/inbound_edge/descriptors.py"
 type: "code"
-community: "Community 254"
-location: "L347"
+community: "Community 31"
+location: "L123"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_254
+  - graphify/EXTRACTED
+  - community/Community_31
 ---
 
 # Any
 
 ## Connections
-- [[.get_stats()_1]] - `references` [EXTRACTED]
-- [[LedgerConfig]] - `uses` [INFERRED]
-- [[LedgerEntry_1]] - `uses` [INFERRED]
-- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
+- [[build_manifest()]] - `references` [EXTRACTED]
+- [[canonical_bytes()]] - `references` [EXTRACTED]
+- [[descriptor_hash()]] - `references` [EXTRACTED]
+- [[verify_descriptors()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_254
+#graphify/code #graphify/EXTRACTED #community/Community_31

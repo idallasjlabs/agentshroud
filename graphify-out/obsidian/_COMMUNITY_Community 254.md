@@ -1,18 +1,17 @@
 ---
 type: community
-members: 152
+members: 126
 ---
 
 # Community 254
 
-**Members:** 152 nodes
+**Members:** 126 nodes
 
 ## Members
-- [[.__init__()_13]] - code - gateway/ingest_api/ledger.py
-- [[.__init__()_55]] - code - gateway/security/audit_export.py
-- [[.__init__()_56]] - code - gateway/security/audit_export.py
-- [[.__init__()_57]] - code - gateway/security/audit_store.py
-- [[.__init__()_58]] - code - gateway/security/audit_store.py
+- [[.__init__()_70]] - code - gateway/security/audit_export.py
+- [[.__init__()_71]] - code - gateway/security/audit_export.py
+- [[.__init__()_72]] - code - gateway/security/audit_store.py
+- [[.__init__()_73]] - code - gateway/security/audit_store.py
 - [[._default_jsonld_context()]] - code - gateway/security/audit_export.py
 - [[._export_cef()]] - code - gateway/security/audit_export.py
 - [[._export_json()]] - code - gateway/security/audit_export.py
@@ -22,21 +21,20 @@ members: 152
 - [[._parse_cef_for_verification()]] - code - gateway/security/audit_export.py
 - [[.audit_store()]] - code - gateway/tests/test_audit_export.py
 - [[.audit_store()_1]] - code - gateway/tests/test_audit_export.py
-- [[.close()_9]] - code - gateway/security/audit_store.py
+- [[.close()_11]] - code - gateway/security/audit_store.py
 - [[.compute_content_hash()]] - code - gateway/security/audit_store.py
 - [[.compute_entry_hash()]] - code - gateway/security/audit_store.py
 - [[.export_config()]] - code - gateway/tests/test_audit_export.py
 - [[.export_events()]] - code - gateway/security/audit_export.py
-- [[.get_entry()]] - code - gateway/ingest_api/ledger.py
 - [[.get_recent_entries()]] - code - gateway/security/audit_store.py
-- [[.get_stats()_1]] - code - gateway/ingest_api/ledger.py
 - [[.get_stats()_14]] - code - gateway/security/audit_store.py
 - [[.initialize()_3]] - code - gateway/security/audit_store.py
 - [[.log_event()]] - code - gateway/security/audit_store.py
-- [[.path_not_empty()]] - code - gateway/ingest_api/models.py
-- [[.query()]] - code - gateway/ingest_api/ledger.py
 - [[.query_events()]] - code - gateway/security/audit_store.py
 - [[.store()]] - code - gateway/tests/test_audit_export.py
+- [[.store()_1]] - code - gateway/tests/test_audit_export.py
+- [[.test_concurrent_log_event_single_store_keeps_linear_chain()]] - code - gateway/tests/test_audit_export.py
+- [[.test_concurrent_log_event_two_connections_keeps_linear_chain()]] - code - gateway/tests/test_audit_export.py
 - [[.test_content_hash()]] - code - gateway/tests/test_audit_export.py
 - [[.test_entry_hash_chain()]] - code - gateway/tests/test_audit_export.py
 - [[.test_event_creation()]] - code - gateway/tests/test_audit_export.py
@@ -55,78 +53,53 @@ members: 152
 - [[.test_query_events_bot_filter_combined_with_severity()]] - code - gateway/tests/test_audit_export.py
 - [[.test_stats()]] - code - gateway/tests/test_audit_export.py
 - [[.test_tamper_detection()]] - code - gateway/tests/test_audit_export.py
+- [[.test_verify_after_archival_uses_explicit_anchor()]] - code - gateway/tests/test_audit_export.py
+- [[.test_verify_after_archival_without_anchor_fails_closed()]] - code - gateway/tests/test_audit_export.py
 - [[.test_verify_export_integrity()]] - code - gateway/tests/test_audit_export.py
+- [[.test_verify_from_first_row_keeps_genesis_semantics()]] - code - gateway/tests/test_audit_export.py
+- [[.test_verify_from_mid_chain_detects_relinked_first_row()]] - code - gateway/tests/test_audit_export.py
+- [[.test_verify_from_mid_chain_detects_tampered_row()]] - code - gateway/tests/test_audit_export.py
+- [[.test_verify_from_mid_chain_start_id_succeeds()]] - code - gateway/tests/test_audit_export.py
+- [[.test_verify_unknown_start_id_fails_closed()]] - code - gateway/tests/test_audit_export.py
 - [[.to_dict()_5]] - code - gateway/security/audit_store.py
-- [[.validate_base64()]] - code - gateway/ingest_api/models.py
 - [[.verify_export_integrity()]] - code - gateway/security/audit_export.py
 - [[.verify_hash_chain()]] - code - gateway/security/audit_store.py
-- [[Any_7]] - code - gateway/ingest_api/ledger.py
+- [[After the head is archived, the archived predecessor's entry_hash is the anchor.]] - rationale - gateway/tests/test_audit_export.py
 - [[AuditEvent]] - code - gateway/security/audit_export.py
 - [[AuditEvent_1]] - code - gateway/security/audit_store.py
 - [[AuditExportConfig_1]] - code - gateway/security/audit_export.py
 - [[AuditExporter]] - code - gateway/security/audit_export.py
 - [[AuditStore]] - code - gateway/security/audit_export.py
 - [[AuditStore_1]] - code - gateway/security/audit_store.py
-- [[Catch-all error handler      Never leaks stack traces or internal details to cli]] - rationale - gateway/ingest_api/main.py
 - [[Close the database connection._1]] - rationale - gateway/security/audit_store.py
 - [[Compute SHA-256 hash of event content (excluding hashes).]] - rationale - gateway/security/audit_store.py
 - [[Compute entry hash including previous hash (chain).]] - rationale - gateway/security/audit_store.py
+- [[Concurrent log_event calls must not fork the SHA-256 chain (SCRUM-204).]] - rationale - gateway/tests/test_audit_export.py
 - [[Configuration for audit export functionality.]] - rationale - gateway/security/audit_export.py
 - [[Convert to dictionary representation.]] - rationale - gateway/security/audit_store.py
 - [[Create audit store with test data.]] - rationale - gateway/tests/test_audit_export.py
 - [[Create in-memory audit store for testing.]] - rationale - gateway/tests/test_audit_export.py
 - [[Create test export configuration.]] - rationale - gateway/tests/test_audit_export.py
 - [[Default JSON-LD context for security ontology.]] - rationale - gateway/security/audit_export.py
-- [[Exception_1]] - code - gateway/ingest_api/main.py
 - [[Export audit events in the specified format.          Args             start_ti]] - rationale - gateway/security/audit_export.py
 - [[Export events in Common Event Format (CEF).          CEF Format CEFVersionDev]] - rationale - gateway/security/audit_export.py
 - [[Export events in JSON-LD format with security ontology.]] - rationale - gateway/security/audit_export.py
 - [[Export events in standard JSON format.]] - rationale - gateway/security/audit_export.py
 - [[Export tamper-evident audit events in SOCSIEM formats.]] - rationale - gateway/ingest_api/main.py
 - [[Exports audit events in various compliance formats.]] - rationale - gateway/security/audit_export.py
-- [[Fetch a single ledger entry by ID          Args             entry_id Entry UUI]] - rationale - gateway/ingest_api/ledger.py
 - [[Generate a unique event ID based on timestamp + random.]] - rationale - gateway/security/audit_store.py
-- [[Get aggregate statistics          Returns             Dictionary with total ent]] - rationale - gateway/ingest_api/ledger.py
 - [[Get audit store statistics.]] - rationale - gateway/security/audit_store.py
 - [[Get the entry_hash of the most recent event for chain continuation.]] - rationale - gateway/security/audit_store.py
-- [[LedgerConfig_1]] - code - gateway/ingest_api/ledger.py
-- [[LedgerEntry]] - code - gateway/ingest_api/ledger.py
-- [[LedgerEntry_1]] - code - gateway/ingest_api/models.py
-- [[LedgerQueryResponse]] - code - gateway/ingest_api/ledger.py
-- [[LedgerQueryResponse_1]] - code - gateway/ingest_api/models.py
 - [[Log a new audit event with hash chain integrity.          Args             bot_]] - rationale - gateway/security/audit_store.py
-- [[MCP tool call interception endpoint.      Receives an MCP tool call, runs it thr]] - rationale - gateway/ingest_api/main.py
-- [[MCP tool result outbound audit endpoint.      Receives a tool result from the bo]] - rationale - gateway/ingest_api/main.py
-- [[MCPProxyRequest]] - code - gateway/ingest_api/main.py
-- [[MCPResultRequest]] - code - gateway/ingest_api/main.py
-- [[OpProxyRequest]] - code - gateway/ingest_api/main.py
 - [[Open the database, create the schema, and run column migrations.          Initia]] - rationale - gateway/security/audit_store.py
 - [[Opening a pre-migration DB (no bot_id column) should auto-migrate.]] - rationale - gateway/tests/test_audit_export.py
-- [[Paginated ledger query results]] - rationale - gateway/ingest_api/models.py
 - [[Parse CEF lines and extract entryHashpreviousHash for chain verification.]] - rationale - gateway/security/audit_export.py
-- [[Path_7]] - code - gateway/security/audit_store.py
+- [[Path_9]] - code - gateway/security/audit_store.py
 - [[Query audit events with optional filters.          Args             bot_id Whe]] - rationale - gateway/security/audit_store.py
-- [[Query ledger entries with pagination and filters          Args             page]] - rationale - gateway/ingest_api/ledger.py
 - [[Represents a single audit event.      The ``bot_id`` field identifies which bot]] - rationale - gateway/security/audit_store.py
-- [[Request_1]] - code - gateway/ingest_api/main.py
-- [[Request body for POST credentialsop-proxy.]] - rationale - gateway/ingest_api/main.py
-- [[Request body for POST mcpproxy — intercept a single MCP tool call.]] - rationale - gateway/ingest_api/main.py
-- [[Request body for POST mcpresult — submit a tool result for outbound audit.]] - rationale - gateway/ingest_api/main.py
-- [[Request to execute an SSH command]] - rationale - gateway/ingest_api/models.py
-- [[Request to write file content to an allowlisted SSH host.      Unlike SSHExecReq]] - rationale - gateway/ingest_api/models.py
-- [[Resolve trusted effective identity and prevent owner spoofing via body.]] - rationale - gateway/ingest_api/main.py
-- [[Response from POST sshwrite_file.      success reflects whether the remote wri]] - rationale - gateway/ingest_api/models.py
-- [[Response from SSH command execution]] - rationale - gateway/ingest_api/models.py
 - [[Return the most recent audit entries (alias for query_events with limit).]] - rationale - gateway/security/audit_store.py
+- [[Rewriting the first examined row's prev_hash must not be self-anchoring.]] - rationale - gateway/tests/test_audit_export.py
 - [[SQLite-backed audit event store with tamper-evident hash chain.]] - rationale - gateway/security/audit_store.py
-- [[SSHExecRequest]] - code - gateway/ingest_api/main.py
-- [[SSHExecRequest_1]] - code - gateway/ingest_api/models.py
-- [[SSHExecResponse]] - code - gateway/ingest_api/models.py
-- [[SSHWriteFileRequest]] - code - gateway/ingest_api/main.py
-- [[SSHWriteFileRequest_1]] - code - gateway/ingest_api/models.py
-- [[SSHWriteFileResponse]] - code - gateway/ingest_api/models.py
-- [[Single entry from the data ledger]] - rationale - gateway/ingest_api/models.py
-- [[Store configuration          Actual database connection created in initialize().]] - rationale - gateway/ingest_api/ledger.py
 - [[Test AuditEvent functionality.]] - rationale - gateway/tests/test_audit_export.py
 - [[Test AuditExporter functionality.]] - rationale - gateway/tests/test_audit_export.py
 - [[Test AuditStore functionality.]] - rationale - gateway/tests/test_audit_export.py
@@ -146,20 +119,21 @@ members: 152
 - [[TestAuditEvent]] - code - gateway/tests/test_audit_export.py
 - [[TestAuditExporter]] - code - gateway/tests/test_audit_export.py
 - [[TestAuditStore]] - code - gateway/tests/test_audit_export.py
+- [[TestAuditStoreAnchoredVerify]] - code - gateway/tests/test_audit_export.py
 - [[TestAuditStoreBotId]] - code - gateway/tests/test_audit_export.py
+- [[TestAuditStoreConcurrentAppend]] - code - gateway/tests/test_audit_export.py
 - [[TextIO]] - code - gateway/security/audit_export.py
+- [[Two stores sharing one SQLite file (e.g. two workers) must not fork the chain.]] - rationale - gateway/tests/test_audit_export.py
 - [[Verify per-bot filtering in AuditStore (v1.1.0 multi-bot support).]] - rationale - gateway/tests/test_audit_export.py
 - [[Verify the integrity of an exported audit log.          Args             export]] - rationale - gateway/security/audit_export.py
-- [[Verify the integrity of the hash chain.          Args             start_id Sta]] - rationale - gateway/security/audit_store.py
-- [[WebSocket_2]] - code - gateway/ingest_api/main.py
-- [[_resolve_effective_agent_id()]] - code - gateway/ingest_api/main.py
+- [[Verify the integrity of the hash chain.          The first examined row's prev_h]] - rationale - gateway/security/audit_store.py
+- [[_assert_linear_chain()]] - code - gateway/tests/test_audit_export.py
+- [[_chain_rows()]] - code - gateway/tests/test_audit_export.py
 - [[audit_export.py]] - code - gateway/security/audit_export.py
 - [[audit_store.py]] - code - gateway/security/audit_store.py
-- [[global_exception_handler()]] - code - gateway/ingest_api/main.py
-- [[mcp_proxy_endpoint()]] - code - gateway/ingest_api/main.py
-- [[mcp_result_endpoint()]] - code - gateway/ingest_api/main.py
 - [[soc_export()]] - code - gateway/ingest_api/main.py
 - [[test_audit_export.py]] - code - gateway/tests/test_audit_export.py
+- [[verify_hash_chain(start_id=X) anchors on X's predecessor (SCRUM-204).]] - rationale - gateway/tests/test_audit_export.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -169,30 +143,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 46 edges to [[_COMMUNITY_Community 978]]
-- 27 edges to [[_COMMUNITY_Community 6]]
-- 11 edges to [[_COMMUNITY_Community 10]]
-- 11 edges to [[_COMMUNITY_Community 7]]
-- 10 edges to [[_COMMUNITY_Community 72]]
-- 9 edges to [[_COMMUNITY_Community 707]]
-- 9 edges to [[_COMMUNITY_Community 68]]
-- 8 edges to [[_COMMUNITY_Community 23]]
-- 6 edges to [[_COMMUNITY_Community 143]]
-- 4 edges to [[_COMMUNITY_Community 108]]
-- 3 edges to [[_COMMUNITY_Community 181]]
-- 3 edges to [[_COMMUNITY_Community 1658]]
-- 2 edges to [[_COMMUNITY_Community 162]]
-- 1 edge to [[_COMMUNITY_Community 2154]]
-- 1 edge to [[_COMMUNITY_Community 105]]
-- 1 edge to [[_COMMUNITY_Community 1127]]
-- 1 edge to [[_COMMUNITY_Community 64]]
-- 1 edge to [[_COMMUNITY_Community 329]]
+- 22 edges to [[_COMMUNITY_Community 978]]
+- 17 edges to [[_COMMUNITY_Community 25]]
+- 4 edges to [[_COMMUNITY_Community 30]]
+- 2 edges to [[_COMMUNITY_Community 72]]
+- 2 edges to [[_COMMUNITY_Community 7]]
 - 1 edge to [[_COMMUNITY_Community 380]]
 - 1 edge to [[_COMMUNITY_Community 141]]
+- 1 edge to [[_COMMUNITY_Community 333]]
+- 1 edge to [[_COMMUNITY_Community 794]]
+- 1 edge to [[_COMMUNITY_Community 904]]
 
 ## Top bridge nodes
-- [[Request_1]] - degree 36, connects to 9 communities
-- [[OpProxyRequest]] - degree 18, connects to 6 communities
-- [[MCPProxyRequest]] - degree 18, connects to 6 communities
-- [[MCPResultRequest]] - degree 18, connects to 6 communities
-- [[WebSocket_2]] - degree 16, connects to 6 communities
+- [[AuditStore_1]] - degree 58, connects to 5 communities
+- [[audit_store.py]] - degree 6, connects to 3 communities
+- [[AuditExporter]] - degree 35, connects to 1 community
+- [[AuditExportConfig_1]] - degree 26, connects to 1 community
+- [[audit_export.py]] - degree 6, connects to 1 community

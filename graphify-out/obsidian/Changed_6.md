@@ -2,7 +2,7 @@
 source_file: "CHANGELOG.md"
 type: "document"
 community: "Community 2016"
-location: "L935"
+location: "L960"
 tags:
   - graphify/document
   - graphify/EXTRACTED

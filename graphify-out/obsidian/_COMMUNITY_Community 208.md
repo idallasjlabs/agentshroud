@@ -1,21 +1,18 @@
 ---
 type: community
-members: 129
+members: 126
 ---
 
 # Community 208
 
-**Members:** 129 nodes
+**Members:** 126 nodes
 
 ## Members
 - [[.__aenter__()_5]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[.__aexit__()_5]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[.__init__()_174]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[.__init__()_195]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[.aiter_bytes()_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[.aread()_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[.block_credentials()_2]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[.filter_xml_blocks()_2]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[.sanitize()_4]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[A Gemma model that is NOT Turbo Fieldflare's exact ID still falls     through to]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[Anthropic-format tool_use response returns the same shape in local mode.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[Cloud mode Anthropic tool_use responses are unmodified (baseline parity).]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
@@ -28,6 +25,7 @@ members: 129
 - [[If no secondary is configured and primary hits OOM, 503 is returned.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[If the model already uses dashes (LM Studio native ID), normalizing again is a n]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[In cloud mode, Hermes Claude model routes to Anthropic endpoint.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[LLMProxy_2]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[Non-coder Qwen3 models (e.g. the 14B base) keep the generic LM Studio     route]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[OOM (503 backend_unavailable from primary local) triggers secondary local failov]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[Only the known stalemismatched alias is rewritten; anything else forwards as-is]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
@@ -42,7 +40,6 @@ members: 129
 - [[Unknown path (not v1messages, not is_openai) returns None.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[VRAMHeadroomError must be a distinct exception, not a subclass of ResourceWarnin]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[When AGENTSHROUD_LOCAL_FAILOVER_ON_OOM=0, OOM passes through without retry.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_FakeSanitizer_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[_FakeStreamResponse_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[_anthropic_ok()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[_anthropic_tool_use_ok()]] - code - gateway/tests/test_llm_proxy_local_parity.py
@@ -146,13 +143,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 16 edges to [[_COMMUNITY_Community 5]]
+- 17 edges to [[_COMMUNITY_Community 5]]
 - 4 edges to [[_COMMUNITY_Community 1278]]
-- 1 edge to [[_COMMUNITY_Community 360]]
+- 1 edge to [[_COMMUNITY_Community 361]]
 
 ## Top bridge nodes
 - [[test_llm_proxy_local_parity.py]] - degree 81, connects to 3 communities
 - [[_make_proxy()]] - degree 28, connects to 2 communities
 - [[_FakeStreamResponse_1]] - degree 11, connects to 2 communities
-- [[_FakeSanitizer_1]] - degree 9, connects to 2 communities
+- [[LLMProxy_2]] - degree 5, connects to 2 communities
 - [[test_vram_headroom_error_is_not_resource_warning()]] - degree 3, connects to 1 community

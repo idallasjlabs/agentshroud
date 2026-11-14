@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Auth Errors.md"
 type: "document"
-community: "Community 1084"
+community: "Community 1559"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_1084
+  - community/Community_1559
 ---
 
 # Auth Errors.md
@@ -17,4 +17,4 @@ tags:
 - [[Error Index]] - `references` [EXTRACTED]
 - [[auth.py_2]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_1084
+#graphify/document #graphify/INFERRED #community/Community_1559

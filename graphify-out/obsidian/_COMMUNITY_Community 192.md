@@ -55,18 +55,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 231]]
+- 11 edges to [[_COMMUNITY_Community 231]]
 - 3 edges to [[_COMMUNITY_Community 585]]
 - 2 edges to [[_COMMUNITY_Community 615]]
 - 2 edges to [[_COMMUNITY_Community 976]]
-- 1 edge to [[_COMMUNITY_Community 2041]]
 - 1 edge to [[_COMMUNITY_Community 195]]
 - 1 edge to [[_COMMUNITY_Community 1260]]
 - 1 edge to [[_COMMUNITY_Community 547]]
 - 1 edge to [[_COMMUNITY_Community 1365]]
 
 ## Top bridge nodes
-- [[AgentShroud™ Brand Guidelines]] - degree 31, connects to 5 communities
+- [[AgentShroud™ Brand Guidelines]] - degree 31, connects to 4 communities
 - [[AgentShroud™ Brand Guidelines_1]] - degree 29, connects to 4 communities
 - [[Trademark]] - degree 4, connects to 2 communities
 - [[AgentShroud Brand Guidelines]] - degree 8, connects to 1 community

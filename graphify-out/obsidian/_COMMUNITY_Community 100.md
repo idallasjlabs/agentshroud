@@ -87,9 +87,9 @@ SORT file.name ASC
 ## Connections to other communities
 - 26 edges to [[_COMMUNITY_Community 1127]]
 - 7 edges to [[_COMMUNITY_Community 37]]
-- 6 edges to [[_COMMUNITY_Community 43]]
-- 2 edges to [[_COMMUNITY_Community 660]]
+- 6 edges to [[_COMMUNITY_Community 114]]
 - 2 edges to [[_COMMUNITY_Community 181]]
+- 2 edges to [[_COMMUNITY_Community 660]]
 
 ## Top bridge nodes
 - [[test_slack_proxy.py]] - degree 10, connects to 3 communities

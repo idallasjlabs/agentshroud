@@ -1,17 +1,19 @@
 ---
 type: community
-members: 4
+members: 6
 ---
 
 # Community 2122
 
-**Members:** 4 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[Changed_3]] - document - CHANGELOG.md
-- [[Fixed_8]] - document - CHANGELOG.md
-- [[Summary_9]] - document - CHANGELOG.md
-- [[1.2.2 — releasev1.2.2 (2026-06-28)]] - document - CHANGELOG.md
+- [[.test_falco_no_proc_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_falco_running_detected()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_falco_zombie_only_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_wazuh_agent_absent()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_wazuh_agent_detected()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestProcScans]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +23,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 773]]
-- 1 edge to [[_COMMUNITY_Community 1255]]
-- 1 edge to [[_COMMUNITY_Community 1386]]
+- 4 edges to [[_COMMUNITY_Community 219]]
+- 1 edge to [[_COMMUNITY_Community 431]]
 
 ## Top bridge nodes
-- [[1.2.2 — releasev1.2.2 (2026-06-28)]] - degree 7, connects to 3 communities
+- [[TestProcScans]] - degree 6, connects to 1 community
+- [[.test_falco_running_detected()]] - degree 2, connects to 1 community
+- [[.test_falco_zombie_only_returns_false()]] - degree 2, connects to 1 community
+- [[.test_wazuh_agent_detected()]] - degree 2, connects to 1 community
+- [[.test_wazuh_agent_absent()]] - degree 2, connects to 1 community

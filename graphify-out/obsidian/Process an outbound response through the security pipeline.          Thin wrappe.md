@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "rationale"
-community: "Community 84"
-location: "L1041"
+community: "Community 493"
+location: "L1057"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_84
+  - community/Community_493
 ---
 
 # Process an outbound response through the security pipeline.          Thin wrappe
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.process_outbound()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_84
+#graphify/rationale #graphify/EXTRACTED #community/Community_493

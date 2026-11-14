@@ -1,17 +1,32 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: "gateway/inbound_edge/service.py"
 type: "code"
-community: "Community 43"
-location: "L160"
+community: "Community 25"
+location: "L98"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_43
+  - graphify/INFERRED
+  - community/Community_25
 ---
 
 # Any
 
 ## Connections
-- [[.get_stats()_2]] - `references` [EXTRACTED]
+- [[CanaryTripwire]] - `uses` [INFERRED]
+- [[EdgeApprovals]] - `uses` [INFERRED]
+- [[EdgeCallPipeline]] - `uses` [INFERRED]
+- [[EdgeDeps]] - `uses` [INFERRED]
+- [[EdgeOAuthService]] - `uses` [INFERRED]
+- [[EncodingDetector]] - `uses` [INFERRED]
+- [[EnvelopeSigner_1]] - `uses` [INFERRED]
+- [[HermesDelegate]] - `uses` [INFERRED]
+- [[HeuristicClassifier]] - `uses` [INFERRED]
+- [[LabSearch]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[PkeStatus]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
+- [[TokenService]] - `uses` [INFERRED]
+- [[VendorProfile_2]] - `uses` [INFERRED]
+- [[build_edge_service()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/INFERRED #community/Community_25

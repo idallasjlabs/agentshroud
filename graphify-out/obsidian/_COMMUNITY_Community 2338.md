@@ -1,15 +1,17 @@
 ---
 type: community
-members: 2
+members: 4
 ---
 
 # Community 2338
 
-**Members:** 2 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_multiple_redactions()]] - code - gateway/tests/test_prompt_protection.py
-- [[Test text with multiple types of sensitive content.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[.test_full_compose()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_no_compose_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_unreadable_first_path_falls_through()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestResourceAvailability]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +21,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 351]]
+- 2 edges to [[_COMMUNITY_Community 219]]
+- 1 edge to [[_COMMUNITY_Community 431]]
 
 ## Top bridge nodes
-- [[.test_multiple_redactions()]] - degree 2, connects to 1 community
+- [[TestResourceAvailability]] - degree 4, connects to 1 community
+- [[.test_full_compose()]] - degree 2, connects to 1 community
+- [[.test_unreadable_first_path_falls_through()]] - degree 2, connects to 1 community

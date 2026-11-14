@@ -12,9 +12,9 @@ tags:
 # OAuthSecurityValidator
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_44]] - `calls` [EXTRACTED]
-- [[.__init__()_102]] - `method` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_59]] - `calls` [EXTRACTED]
+- [[.__init__()_117]] - `method` [EXTRACTED]
 - [[.check_state_reuse()]] - `method` [EXTRACTED]
 - [[.create_consent_cookie()]] - `method` [EXTRACTED]
 - [[.record_state_used()]] - `method` [EXTRACTED]
@@ -26,7 +26,7 @@ tags:
 - [[.validate_request()]] - `method` [EXTRACTED]
 - [[.verify_pkce()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MFAGuard_2]] - `semantically_similar_to` [INFERRED]

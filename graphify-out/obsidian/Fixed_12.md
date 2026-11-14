@@ -1,17 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 1934"
-location: "L842"
+community: "Community 1380"
+location: "L621"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1934
+  - community/Community_1380
 ---
 
 # Fixed
 
 ## Connections
-- [[Unreleased — featv0.8.0-enforcement-hardening (session 3 — 2026-03-15)]] - `contains` [EXTRACTED]
+- [[1.1.1 — fixguard-wiring-and-ops-hardening (2026-06-10)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1934
+#graphify/document #graphify/EXTRACTED #community/Community_1380

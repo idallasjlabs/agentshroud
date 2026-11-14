@@ -19,6 +19,7 @@ tags:
 - [[.test_wrong_bearer_raises_401()]] - `calls` [EXTRACTED]
 - [[.test_x_soc_token_header_valid()]] - `calls` [EXTRACTED]
 - [[FastAPI dependency resolve Bearercookie token → user_id → role.]] - `rationale_for` [EXTRACTED]
+- [[HTTPException]] - `calls` [INFERRED]
 - [[SCLCaller]] - `references` [EXTRACTED]
 - [[TestResolveCaller]] - `calls` [EXTRACTED]
 - [[_get_config_token()]] - `calls` [EXTRACTED]

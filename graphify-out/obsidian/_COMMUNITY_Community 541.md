@@ -1,44 +1,35 @@
 ---
 type: community
-members: 31
+members: 22
 ---
 
 # Community 541
 
-**Members:** 31 nodes
+**Members:** 22 nodes
 
 ## Members
-- [[.test_body_agent_id_used_without_header()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_clean_result_accepted()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_header_user_id_overrides_body_agent_id()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_invalid_header_identity_rejected()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_mcp_proxy_data_defaults_to_empty_when_absent()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_mcp_proxy_data_parsed_from_yaml()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_owner_body_identity_rejected_without_header()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_proxy_allowed_domains_defaults_to_empty_when_absent()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_proxy_allowed_domains_parsed_from_yaml()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_result_missing_server_name_rejected()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_result_requires_auth()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_result_returns_processing_time()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_result_with_null_content()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_result_with_pii_is_audited_not_blocked()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[A result containing PII is audited and redacted — never blocked (results are nev]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[A result with no threats should be accepted and audited (200).]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[Body-only owner identity must be rejected to prevent impersonation._1]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[GatewayConfig_4]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[Null content is handled gracefully.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[Request missing required server_name is rejected with 422.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[Response includes processing_time_ms.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[TestMCPProxyConfigLoading]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[TestMCPResultEndpoint]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[Unauthenticated request is rejected.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[auth_headers()_2]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[mcp_proxy_data is an empty dict when section is absent from YAML.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[mcp_proxy_data is populated from the mcp_proxy YAML section.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[proxy_allowed_domains is empty list when proxy section is absent from YAML.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[proxy_allowed_domains is populated from the proxy.allowed_domains YAML section.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[test_config()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[test_mcp_result_endpoint.py]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[.analyzer()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.analyzer()_2]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_delete_file_mostly_irreversible()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_legitimate_file_path_passes()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_read_file_fully_reversible()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_reversibility_below_threshold_has_reasoning()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_shell_bleed_bypass_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_unknown_tool_defaults_low()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[Actions to take on suspicious chains.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[ChainAction]] - code - gateway/security/tool_chain_analyzer.py
+- [[Create a mock alert callback for testing._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[How reversible an action is (1.0 = fully reversible, 0.0 = irreversible).]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[ParamScanResult]] - code - gateway/security/tool_chain_analyzer.py
+- [[Result of scanning tool parameters for injection patterns.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[ReversibilityScore]] - code - gateway/security/tool_chain_analyzer.py
+- [[Risk levels for tool call chains.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[RiskLevel_4]] - code - gateway/security/tool_chain_analyzer.py
+- [[TestReversibilityScoring]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[TestShellBleedPatterns]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[Verify expanded _PARAM_INJECTION_PATTERNS catch piped-interpreter and     heredo]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[mock_alert_callback()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[test_tool_chain_analyzer.py]] - code - gateway/tests/test_tool_chain_analyzer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -48,18 +39,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 7]]
-- 5 edges to [[_COMMUNITY_Community 80]]
-- 5 edges to [[_COMMUNITY_Community 30]]
-- 5 edges to [[_COMMUNITY_Community 35]]
-- 5 edges to [[_COMMUNITY_Community 54]]
-- 4 edges to [[_COMMUNITY_Community 104]]
-- 2 edges to [[_COMMUNITY_Community 707]]
-- 1 edge to [[_COMMUNITY_Community 1248]]
+- 10 edges to [[_COMMUNITY_Community 344]]
+- 7 edges to [[_COMMUNITY_Community 505]]
+- 5 edges to [[_COMMUNITY_Community 2030]]
+- 5 edges to [[_COMMUNITY_Community 135]]
+- 4 edges to [[_COMMUNITY_Community 8]]
 
 ## Top bridge nodes
-- [[test_mcp_result_endpoint.py]] - degree 15, connects to 8 communities
-- [[TestMCPResultEndpoint]] - degree 17, connects to 5 communities
-- [[TestMCPProxyConfigLoading]] - degree 11, connects to 5 communities
-- [[GatewayConfig_4]] - degree 7, connects to 5 communities
-- [[test_config()_1]] - degree 6, connects to 3 communities
+- [[RiskLevel_4]] - degree 10, connects to 5 communities
+- [[ChainAction]] - degree 10, connects to 5 communities
+- [[test_tool_chain_analyzer.py]] - degree 12, connects to 4 communities
+- [[ParamScanResult]] - degree 8, connects to 4 communities
+- [[ReversibilityScore]] - degree 8, connects to 4 communities

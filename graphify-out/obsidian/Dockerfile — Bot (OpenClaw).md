@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
 type: "document"
-community: "Community 855"
+community: "Community 944"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_855
+  - community/Community_944
 ---
 
 # Dockerfile — Bot (OpenClaw)
@@ -25,4 +25,4 @@ tags:
 - [[Security Patches Applied at Build Time]] - `contains` [EXTRACTED]
 - [[TODO (from source)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_855
+#graphify/document #graphify/EXTRACTED #community/Community_944

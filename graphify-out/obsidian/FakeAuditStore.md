@@ -12,7 +12,7 @@ tags:
 # FakeAuditStore
 
 ## Connections
-- [[.__init__()_155]] - `method` [EXTRACTED]
+- [[.__init__()_176]] - `method` [EXTRACTED]
 - [[.log_event()_2]] - `method` [EXTRACTED]
 - [[.test_allow_is_not_persisted_to_audit_store()]] - `calls` [EXTRACTED]
 - [[.test_deny_is_persisted_to_audit_store()]] - `calls` [EXTRACTED]

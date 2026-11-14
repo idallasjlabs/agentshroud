@@ -1,20 +1,21 @@
 ---
 type: community
-members: 7
+members: 8
 ---
 
 # Community 1926
 
-**Members:** 7 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Apply inline Markdown spans to plain text (no recursive nesting).]] - rationale - docker/bots/hermes/render_md_email.py
-- [[_esc()]] - code - docker/bots/hermes/render_md_email.py
-- [[_inline()]] - code - docker/bots/hermes/render_md_email.py
-- [[_render_table()]] - code - docker/bots/hermes/render_md_email.py
-- [[main()_4]] - code - docker/bots/hermes/render_md_email.py
-- [[render()]] - code - docker/bots/hermes/render_md_email.py
-- [[render_md_email.py]] - code - docker/bots/hermes/render_md_email.py
+- [[Description_9]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[Effect_1]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[Related Notes_37]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[SDK Patch_1]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[Set In_5]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[TELEGRAM_API_BASE_URL_1]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[TELEGRAM_API_BASE_URL]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[Value_5]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 522]]
-- 1 edge to [[_COMMUNITY_Community 74]]
+- 1 edge to [[_COMMUNITY_Community 18]]
 
 ## Top bridge nodes
-- [[render_md_email.py]] - degree 6, connects to 1 community
-- [[render()]] - degree 5, connects to 1 community
+- [[TELEGRAM_API_BASE_URL]] - degree 2, connects to 1 community

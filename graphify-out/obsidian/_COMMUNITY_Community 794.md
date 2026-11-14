@@ -1,33 +1,30 @@
 ---
 type: community
-members: 20
+members: 17
 ---
 
 # Community 794
 
-**Members:** 20 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[.test_base64_clean_content_not_flagged()]] - code - gateway/tests/test_tool_result_injection.py
-- [[.test_base64_encoded_injection()_2]] - code - gateway/tests/test_tool_result_injection.py
-- [[.test_clean_tool_output_passes()]] - code - gateway/tests/test_tool_result_injection.py
-- [[.test_empty_content()]] - code - gateway/tests/test_tool_result_injection.py
-- [[.test_high_severity_strips_content()]] - code - gateway/tests/test_tool_result_injection.py
-- [[.test_jailbreak_attempt()]] - code - gateway/tests/test_tool_result_injection.py
-- [[.test_medium_severity_warns()]] - code - gateway/tests/test_tool_result_injection.py
-- [[.test_none_content()]] - code - gateway/tests/test_tool_result_injection.py
-- [[.test_prompt_extraction()_1]] - code - gateway/tests/test_tool_result_injection.py
-- [[.test_rtl_override_detected()]] - code - gateway/tests/test_tool_result_injection.py
-- [[.test_zero_width_chars_dont_bypass_detection()]] - code - gateway/tests/test_tool_result_injection.py
-- [[Benign base64 content should not trigger encoded injection.]] - rationale - gateway/tests/test_tool_result_injection.py
-- [[TestCleanContent]] - code - gateway/tests/test_tool_result_injection.py
-- [[TestEncodedInjection]] - code - gateway/tests/test_tool_result_injection.py
-- [[TestMediumSeverity]] - code - gateway/tests/test_tool_result_injection.py
-- [[TestSanitization]] - code - gateway/tests/test_tool_result_injection.py
-- [[TestUnicodeObfuscation]] - code - gateway/tests/test_tool_result_injection.py
-- [[Zero-width chars are stripped by normalize_input, so injection is still caught.]] - rationale - gateway/tests/test_tool_result_injection.py
-- [[scanner()]] - code - gateway/tests/test_tool_result_injection.py
-- [[test_tool_result_injection.py]] - code - gateway/tests/test_tool_result_injection.py
+- [[Agent Isolation Module Badge Icon]] - image - branding/icons/modules/agent-isolation-256x256.png
+- [[AgentShroud App Icon (64x64)]] - image - branding/icons/app/icon-64x64.png
+- [[AgentShroud BadgeAvatar Logo Variant (120x120)]] - image - branding/logos/variants/badge-120x120.png
+- [[AgentShroud Brand Collateral Mockup]] - image - branding/logos/png/logo-mockup.png
+- [[AgentShroud Logo (SVG Wrapper, Embedded Raster)]] - image - branding/logos/svg/logo.svg
+- [[AgentShroud Logo - GlowTransparent Variant]] - image - branding/logos/png/logo-transparent.png
+- [[AgentShroud Primary Logo Lockup]] - image - branding/logos/png/logo.png
+- [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - image - branding/icons/app/icon-macos-rounded-1024x1024.png
+- [[Approval Queue Module Badge Icon]] - image - branding/icons/modules/approval-queue-256x256.png
+- [[Audit Ledger Module Badge Icon]] - image - branding/icons/modules/audit-ledger-256x256.png
+- [[Credential Isolation Module Badge Icon]] - image - branding/icons/modules/credential-iso-256x256.png
+- [[Egress Filter Module Badge Icon]] - image - branding/icons/modules/egress-filter-256x256.png
+- [[HTTP Proxy Module Badge Icon]] - image - branding/icons/modules/http-proxy-256x256.png
+- [[PII Sanitizer Module Badge Icon]] - image - branding/icons/modules/pii-sanitizer-256x256.png
+- [[Prompt Guard Module Badge Icon]] - image - branding/icons/modules/prompt-guard-256x256.png
+- [[SSH Proxy Module Badge Icon]] - image - branding/icons/modules/ssh-proxy-256x256.png
+- [[Trust Manager Module Badge Icon]] - image - branding/icons/modules/trust-manager-256x256.png
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,13 +34,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 154]]
-- 7 edges to [[_COMMUNITY_Community 72]]
-- 6 edges to [[_COMMUNITY_Community 24]]
+- 2 edges to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 70]]
+- 1 edge to [[_COMMUNITY_Community 27]]
+- 1 edge to [[_COMMUNITY_Community 254]]
+- 1 edge to [[_COMMUNITY_Community 56]]
+- 1 edge to [[_COMMUNITY_Community 73]]
+- 1 edge to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Community 50]]
+- 1 edge to [[_COMMUNITY_Community 477]]
+- 1 edge to [[_COMMUNITY_Community 9]]
+- 1 edge to [[_COMMUNITY_Community 575]]
 
 ## Top bridge nodes
-- [[test_tool_result_injection.py]] - degree 10, connects to 3 communities
-- [[TestCleanContent]] - degree 7, connects to 3 communities
-- [[TestMediumSeverity]] - degree 6, connects to 3 communities
-- [[TestEncodedInjection]] - degree 6, connects to 3 communities
-- [[TestUnicodeObfuscation]] - degree 6, connects to 3 communities
+- [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - degree 16, connects to 4 communities
+- [[Audit Ledger Module Badge Icon]] - degree 2, connects to 1 community
+- [[HTTP Proxy Module Badge Icon]] - degree 2, connects to 1 community
+- [[PII Sanitizer Module Badge Icon]] - degree 2, connects to 1 community
+- [[SSH Proxy Module Badge Icon]] - degree 2, connects to 1 community

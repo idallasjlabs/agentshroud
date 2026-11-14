@@ -28,7 +28,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 11]]
+- 3 edges to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 11]]
 
 ## Top bridge nodes
-- [[TestTrustProgression]] - degree 11, connects to 1 community
+- [[TestTrustProgression]] - degree 11, connects to 2 communities

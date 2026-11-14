@@ -12,6 +12,6 @@ tags:
 # CLI entry point.      Args:         argv: Optional argv override (for tests).
 
 ## Connections
-- [[main()_28]] - `rationale_for` [EXTRACTED]
+- [[main()_30]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_8

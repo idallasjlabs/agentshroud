@@ -1,11 +1,11 @@
 ---
 type: community
-members: 57
+members: 52
 ---
 
 # Community 127
 
-**Members:** 57 nodes
+**Members:** 52 nodes
 
 ## Members
 - [[.test_affected_packages_count_shown()]] - code - gateway/tests/test_daily_cve_report.py
@@ -13,12 +13,10 @@ members: 57
 - [[.test_contains_header()]] - code - gateway/tests/test_daily_cve_report.py
 - [[.test_contains_package_names()]] - code - gateway/tests/test_daily_cve_report.py
 - [[.test_contains_severity_counts()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_daily_fs_scan_skips_security_log_tree()]] - code - gateway/tests/test_daily_cve_report.py
 - [[.test_error_report_shows_error_message()]] - code - gateway/tests/test_daily_cve_report.py
 - [[.test_failed_send_does_not_write_stamp_or_mark_sent_date()]] - code - gateway/tests/test_daily_cve_report.py
 - [[.test_fixed_version_shown()]] - code - gateway/tests/test_daily_cve_report.py
 - [[.test_no_alert_when_registry_current()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_no_skip_dirs_flag_when_omitted()]] - code - gateway/tests/test_daily_cve_report.py
 - [[.test_no_telegram_send_when_no_token()]] - code - gateway/tests/test_daily_cve_report.py
 - [[.test_returns_error_on_github_api_failure()]] - code - gateway/tests/test_daily_cve_report.py
 - [[.test_returns_false_when_checked_yesterday()]] - code - gateway/tests/test_daily_cve_report.py
@@ -34,7 +32,6 @@ members: 57
 - [[.test_sends_alert_when_new_cves_found()]] - code - gateway/tests/test_daily_cve_report.py
 - [[.test_sends_telegram_on_success()]] - code - gateway/tests/test_daily_cve_report.py
 - [[.test_short_text_passes_through_unchanged()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_skip_dirs_added_to_command()]] - code - gateway/tests/test_daily_cve_report.py
 - [[.test_status_clean_when_no_critical_high()]] - code - gateway/tests/test_daily_cve_report.py
 - [[.test_status_critical_when_critical_present()]] - code - gateway/tests/test_daily_cve_report.py
 - [[.test_total_vulnerability_count_shown()]] - code - gateway/tests/test_daily_cve_report.py
@@ -55,8 +52,6 @@ members: 57
 - [[TestRunAndSendCveReportFailedDeliveryNotMarkedSent]] - code - gateway/tests/test_daily_cve_report.py
 - [[TestRunUpstreamCveCheck]] - code - gateway/tests/test_daily_cve_report.py
 - [[TestSendTelegramTruncation]] - code - gateway/tests/test_daily_cve_report.py
-- [[TestTrivySkipDirs]] - code - gateway/tests/test_daily_cve_report.py
-- [[The daily fs scan of  must exclude varlogsecurity (trivy's own         cache]] - rationale - gateway/tests/test_daily_cve_report.py
 - [[_already_sent_today()]] - code - gateway/security/daily_cve_report.py
 - [[_isolated_alert_state()]] - code - gateway/tests/test_daily_cve_report.py
 - [[_make_error_report()]] - code - gateway/tests/test_daily_cve_report.py
@@ -74,21 +69,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_Community 368]]
+- 10 edges to [[_COMMUNITY_Community 368]]
 - 5 edges to [[_COMMUNITY_Community 131]]
 - 5 edges to [[_COMMUNITY_Community 736]]
 - 3 edges to [[_COMMUNITY_Community 1200]]
-- 2 edges to [[_COMMUNITY_Community 1202]]
-- 1 edge to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 399]]
+- 3 edges to [[_COMMUNITY_Community 1139]]
+- 1 edge to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 74]]
+- 1 edge to [[_COMMUNITY_Community 42]]
 - 1 edge to [[_COMMUNITY_Community 10]]
 - 1 edge to [[_COMMUNITY_Community 1001]]
 - 1 edge to [[_COMMUNITY_Community 1554]]
 - 1 edge to [[_COMMUNITY_Community 2048]]
-- 1 edge to [[_COMMUNITY_Community 480]]
+- 1 edge to [[_COMMUNITY_Community 2207]]
+- 1 edge to [[_COMMUNITY_Community 2003]]
 
 ## Top bridge nodes
-- [[test_daily_cve_report.py]] - degree 34, connects to 10 communities
+- [[test_daily_cve_report.py]] - degree 34, connects to 12 communities
 - [[run_and_send_cve_report()]] - degree 16, connects to 4 communities
 - [[format_cve_report()]] - degree 17, connects to 2 communities
 - [[_already_sent_today()]] - degree 6, connects to 2 communities

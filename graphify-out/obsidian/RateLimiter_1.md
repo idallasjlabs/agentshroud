@@ -12,8 +12,8 @@ tags:
 # RateLimiter
 
 ## Connections
-- [[.__init__()_43]] - `method` [EXTRACTED]
-- [[.__init__()_44]] - `calls` [EXTRACTED]
+- [[.__init__()_58]] - `method` [EXTRACTED]
+- [[.__init__()_59]] - `calls` [EXTRACTED]
 - [[.check()_1]] - `method` [EXTRACTED]
 - [[.reset()]] - `method` [EXTRACTED]
 - [[.test_rate_limiter_reset()]] - `calls` [EXTRACTED]

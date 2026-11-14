@@ -8,9 +8,9 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[Added_11]] - document - CHANGELOG.md
+- [[Added_12]] - document - CHANGELOG.md
 - [[Changed_6]] - document - CHANGELOG.md
-- [[Fixed_14]] - document - CHANGELOG.md
+- [[Fixed_15]] - document - CHANGELOG.md
 - [[Security_16]] - document - CHANGELOG.md
 - [[Summary_18]] - document - CHANGELOG.md
 - [[Tests_4]] - document - CHANGELOG.md
@@ -24,12 +24,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 773]]
 - 2 edges to [[_COMMUNITY_Community 106]]
 - 1 edge to [[_COMMUNITY_Community 1255]]
+- 1 edge to [[_COMMUNITY_Community 773]]
+- 1 edge to [[_COMMUNITY_Community 1202]]
 - 1 edge to [[_COMMUNITY_Community 1386]]
 - 1 edge to [[_COMMUNITY_Community 1380]]
 - 1 edge to [[_COMMUNITY_Community 1934]]
 
 ## Top bridge nodes
-- [[Unreleased — feathttp-connect-proxy + featcredential-isolation]] - degree 14, connects to 6 communities
+- [[Unreleased — feathttp-connect-proxy + featcredential-isolation]] - degree 14, connects to 7 communities

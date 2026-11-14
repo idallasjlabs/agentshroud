@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "Community 1558"
+community: "Community 72"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1558
+  - community/Community_72
 ---
 
 # ThresholdConfig
 
 ## Connections
-- [[.__init__()_100]] - `calls` [EXTRACTED]
+- [[.__init__()_115]] - `calls` [EXTRACTED]
 - [[Configuration for alert thresholds.]] - `rationale_for` [EXTRACTED]
 - [[multi_turn_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1558
+#graphify/code #graphify/EXTRACTED #community/Community_72

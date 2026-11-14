@@ -24,12 +24,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 64]]
-- 3 edges to [[_COMMUNITY_Community 54]]
+- 5 edges to [[_COMMUNITY_Community 64]]
+- 2 edges to [[_COMMUNITY_Community 230]]
+- 2 edges to [[_COMMUNITY_Community 2038]]
+- 2 edges to [[_COMMUNITY_Community 54]]
 - 1 edge to [[_COMMUNITY_Community 184]]
-- 1 edge to [[_COMMUNITY_Community 2038]]
 - 1 edge to [[_COMMUNITY_Community 132]]
-- 1 edge to [[_COMMUNITY_Community 59]]
 - 1 edge to [[_COMMUNITY_Community 329]]
 
 ## Top bridge nodes

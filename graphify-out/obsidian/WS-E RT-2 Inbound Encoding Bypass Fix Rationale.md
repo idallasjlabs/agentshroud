@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "rationale"
-community: "Community 72"
+community: "Community 7"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_7
 ---
 
 # WS-E RT-2 Inbound Encoding Bypass Fix Rationale
@@ -16,4 +16,4 @@ tags:
 - [[SecurityPipeline]] - `rationale_for` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_72
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

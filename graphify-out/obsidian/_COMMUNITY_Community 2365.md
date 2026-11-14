@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_raw_web_fetch_json_overlong_fqdn_does_not_queue_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Domains over 253 chars should be rejected before queueing approvals.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.setup_method()_17]] - code - gateway/tests/test_outbound_filter.py
+- [[Set up test fixtures.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 626]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 845]]
+- 1 edge to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Community 98]]
 
 ## Top bridge nodes
-- [[.test_raw_web_fetch_json_overlong_fqdn_does_not_queue_approval()]] - degree 4, connects to 3 communities
+- [[.setup_method()_17]] - degree 3, connects to 2 communities

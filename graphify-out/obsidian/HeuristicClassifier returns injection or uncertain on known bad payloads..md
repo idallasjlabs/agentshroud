@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "Community 187"
+community: "Community 271"
 location: "L456"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_187
+  - community/Community_271
 ---
 
 # HeuristicClassifier returns injection or uncertain on known bad payloads.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestHeuristicClassifierDirectly]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_187
+#graphify/rationale #graphify/EXTRACTED #community/Community_271

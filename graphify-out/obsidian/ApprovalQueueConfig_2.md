@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Community 30"
+community: "Community 50"
 location: "L103"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_30
+  - community/Community_50
 ---
 
 # ApprovalQueueConfig
@@ -26,24 +26,35 @@ tags:
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
+- [[Clock_1]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
-- [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue_3]] - `uses` [INFERRED]
+- [[Facade_1]] - `uses` [INFERRED]
+- [[FakeFacade]] - `uses` [INFERRED]
 - [[GatewayConfig_2]] - `uses` [INFERRED]
 - [[GatewayConfig_4]] - `uses` [INFERRED]
 - [[MCPPolicyConfig_1]] - `uses` [INFERRED]
 - [[MCPPolicyEngine_1]] - `uses` [INFERRED]
 - [[MFAGuard]] - `uses` [INFERRED]
+- [[MemoryTokenStorage]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[SSHConfig]] - `uses` [INFERRED]
+- [[TestApprovalCard]] - `uses` [INFERRED]
 - [[TestApprovalStorePersistence]] - `uses` [INFERRED]
 - [[TestApprovalTimeout]] - `uses` [INFERRED]
 - [[TestApprovalWorkflow]] - `uses` [INFERRED]
+- [[TestAuditRecord]] - `uses` [INFERRED]
 - [[TestAutoExpire]] - `uses` [INFERRED]
+- [[TestCallback]] - `uses` [INFERRED]
+- [[TestCommandCenterStats]] - `uses` [INFERRED]
 - [[TestConcurrentApprovalRequests]] - `uses` [INFERRED]
+- [[TestIdempotency]] - `uses` [INFERRED]
 - [[TestMCPProxyConfigLoading]] - `uses` [INFERRED]
 - [[TestMCPProxyIntegration]] - `uses` [INFERRED]
 - [[TestMCPResultEndpoint]] - `uses` [INFERRED]
+- [[TestMonitorMode]] - `uses` [INFERRED]
+- [[TestNoApprovalNoExecution]] - `uses` [INFERRED]
 - [[TestPersistence]] - `uses` [INFERRED]
 - [[TestSSHDisabledEndpoint]] - `uses` [INFERRED]
 - [[TestSSHExec]] - `uses` [INFERRED]
@@ -56,6 +67,14 @@ tags:
 - [[TestSSHWriteFileEndpoint]] - `uses` [INFERRED]
 - [[TestSSHWriteFileLedgerAudit]] - `uses` [INFERRED]
 - [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - `uses` [INFERRED]
+- [[TestT1ToolAbuse]] - `uses` [INFERRED]
+- [[TestT2Exfiltration]] - `uses` [INFERRED]
+- [[TestT3Writes]] - `uses` [INFERRED]
+- [[TestT4AuthN]] - `uses` [INFERRED]
+- [[TestT9Abuse]] - `uses` [INFERRED]
+- [[TestTelegramDispatch]] - `uses` [INFERRED]
+- [[TestTicketBinding]] - `uses` [INFERRED]
+- [[TestToolListing]] - `uses` [INFERRED]
 - [[TestToolRiskClassification]] - `uses` [INFERRED]
 - [[ToolRiskConfig]] - `uses` [INFERRED]
 - [[ToolRiskPolicy]] - `uses` [INFERRED]
@@ -68,14 +87,17 @@ tags:
 - [[approval_queue()_1]] - `calls` [EXTRACTED]
 - [[config.py]] - `contains` [EXTRACTED]
 - [[conftest.py]] - `imports` [EXTRACTED]
+- [[edge()_1]] - `calls` [EXTRACTED]
 - [[enhanced_mfa_queue()]] - `calls` [EXTRACTED]
 - [[enhanced_queue()]] - `calls` [EXTRACTED]
 - [[enhanced_queue.py]] - `imports` [EXTRACTED]
+- [[env()]] - `calls` [EXTRACTED]
 - [[full_pipeline_config()]] - `calls` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 - [[queue()]] - `calls` [EXTRACTED]
 - [[queue.py]] - `imports` [EXTRACTED]
 - [[queue_config()]] - `calls` [EXTRACTED]
+- [[stack()]] - `calls` [EXTRACTED]
 - [[test_approval_queue.py]] - `imports` [EXTRACTED]
 - [[test_approval_stress.py]] - `imports` [EXTRACTED]
 - [[test_broadcast_does_not_hang_forever_on_dead_client()_1]] - `calls` [EXTRACTED]
@@ -83,6 +105,9 @@ tags:
 - [[test_config()_1]] - `calls` [EXTRACTED]
 - [[test_config_with_ssh()]] - `calls` [EXTRACTED]
 - [[test_config_with_ssh()_1]] - `calls` [EXTRACTED]
+- [[test_edge_approvals.py]] - `imports` [EXTRACTED]
+- [[test_edge_e2e_sdk.py]] - `imports` [EXTRACTED]
+- [[test_edge_pipeline.py]] - `imports` [EXTRACTED]
 - [[test_enhanced_approval.py]] - `imports` [EXTRACTED]
 - [[test_mcp_policy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_result_endpoint.py]] - `imports` [EXTRACTED]
@@ -93,4 +118,4 @@ tags:
 - [[test_submit_does_not_deadlock_on_hung_websocket_client()_1]] - `calls` [EXTRACTED]
 - [[test_websocket_notifications()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_30
+#graphify/code #graphify/INFERRED #community/Community_50

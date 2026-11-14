@@ -1,19 +1,21 @@
 ---
 type: community
-members: 6
+members: 8
 ---
 
 # Community 2003
 
-**Members:** 6 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[A single shared output path makes multi-agent coverage impossible.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[An agent with no version source must be refused, never verdicted.      Emitting]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Import the triage script by path.      It must be registered in sys.modules befo]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[_load_triage_module()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_gap_reports_are_per_agent()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_untriageable_agents_are_refused_not_guessed()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[.test_dedup_is_per_agent()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_failed_send_is_retried()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_patched_versions_carried_into_result()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_second_check_does_not_resend()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_unreadable_state_file_means_alert_again()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_unwritable_state_file_is_logged_not_raised()]] - code - gateway/tests/test_daily_cve_report.py
+- [[TestUpstreamAlertDedup]] - code - gateway/tests/test_daily_cve_report.py
+- [[The 0605 check and the 0700 GHSA ingest share one diff; an advisory     still]] - rationale - gateway/tests/test_daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +25,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 42]]
+- 1 edge to [[_COMMUNITY_Community 127]]
+- 1 edge to [[_COMMUNITY_Community 480]]
 
 ## Top bridge nodes
-- [[_load_triage_module()]] - degree 4, connects to 1 community
-- [[test_gap_reports_are_per_agent()]] - degree 3, connects to 1 community
-- [[test_untriageable_agents_are_refused_not_guessed()]] - degree 3, connects to 1 community
+- [[TestUpstreamAlertDedup]] - degree 8, connects to 1 community
+- [[.test_patched_versions_carried_into_result()]] - degree 2, connects to 1 community

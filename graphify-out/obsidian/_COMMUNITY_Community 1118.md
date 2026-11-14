@@ -12,7 +12,7 @@ members: 7
 - [[PATH_9]] - code - scripts/peer-review.sh
 - [[call_gemini()]] - code - scripts/gemini-review.py
 - [[gemini-review.py]] - code - scripts/gemini-review.py
-- [[main()_21]] - code - scripts/gemini-review.py
+- [[main()_23]] - code - scripts/gemini-review.py
 - [[peer-review.sh]] - code - scripts/peer-review.sh
 - [[peer-review.sh script]] - code - scripts/peer-review.sh
 

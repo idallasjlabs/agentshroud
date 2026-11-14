@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Community 1"
+community: "Community 61"
 location: "L41"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1
+  - community/Community_61
 ---
 
 # UserSession
@@ -30,4 +30,4 @@ tags:
 - [[session_manager.py]] - `contains` [EXTRACTED]
 - [[test_session_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1
+#graphify/code #graphify/INFERRED #community/Community_61

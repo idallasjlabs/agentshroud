@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "rationale"
-community: "Community 986"
+community: "Community 33"
 location: "L364"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_986
+  - community/Community_33
 ---
 
 # The core of the CVE class: a side channel claiming to be the owner.          ter
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_owner_claim_over_unverified_origin_is_refused_elevation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_986
+#graphify/rationale #graphify/EXTRACTED #community/Community_33

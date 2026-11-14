@@ -12,7 +12,7 @@ tags:
 # _FakeRBAC
 
 ## Connections
-- [[.__init__()_180]] - `method` [EXTRACTED]
+- [[.__init__()_201]] - `method` [EXTRACTED]
 - [[.check_permission()_1]] - `method` [EXTRACTED]
 - [[.check_tool_permission()_2]] - `method` [EXTRACTED]
 - [[.get_user_role()_2]] - `method` [EXTRACTED]

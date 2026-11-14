@@ -2,7 +2,7 @@
 source_file: "gateway/soc/router.py"
 type: "code"
 community: "Community 10"
-location: "L858"
+location: "L869"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,7 @@ tags:
 # update_display_name()
 
 ## Connections
+- [[HTTPException]] - `calls` [EXTRACTED]
 - [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[Update a user's display name (CC-35).]] - `rationale_for` [EXTRACTED]
 - [[UpdateDisplayNameRequest]] - `references` [EXTRACTED]

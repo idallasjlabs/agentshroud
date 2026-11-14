@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "Community 1"
+community: "Community 61"
 location: "L345"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1
+  - community/Community_61
 ---
 
 # A successful save leaves only the final registry file, no *.tmp.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_no_temp_files_left_behind()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

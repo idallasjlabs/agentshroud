@@ -1,16 +1,18 @@
 ---
 type: community
-members: 3
+members: 5
 ---
 
 # Community 2202
 
-**Members:** 3 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[P3 Medium Priority Incidents]] - document - docs/operations/incident-response.md
-- [[Trust Level Anomaly]] - document - docs/operations/incident-response.md
-- [[Unauthorized SSH Access Attempt]] - document - docs/operations/incident-response.md
+- [[1Password Integration (Optional)]] - document - docs/operations/deployment-procedure.md
+- [[Network Requirements]] - document - docs/operations/deployment-procedure.md
+- [[Prerequisites_3]] - document - docs/operations/deployment-procedure.md
+- [[Software Dependencies]] - document - docs/operations/deployment-procedure.md
+- [[System Requirements]] - document - docs/operations/deployment-procedure.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,4 +25,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 107]]
 
 ## Top bridge nodes
-- [[P3 Medium Priority Incidents]] - degree 3, connects to 1 community
+- [[Prerequisites_3]] - degree 5, connects to 1 community

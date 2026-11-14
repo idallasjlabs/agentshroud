@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 2325"
+community: "Community 1289"
 location: "L3786"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2325
+  - community/Community_1289
 ---
 
 # TestRuntimeRewriteHelpers
@@ -29,4 +29,4 @@ tags:
 - [[Unit tests for deterministic runtime error rewrite helper behavior.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2325
+#graphify/code #graphify/EXTRACTED #community/Community_1289

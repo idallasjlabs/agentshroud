@@ -12,7 +12,7 @@ tags:
 # WebContentScanner
 
 ## Connections
-- [[.__init__()_42]] - `method` [EXTRACTED]
+- [[.__init__()_57]] - `method` [EXTRACTED]
 - [[._scan_encoded_payloads()]] - `method` [EXTRACTED]
 - [[._scan_hidden_content()]] - `method` [EXTRACTED]
 - [[._scan_pii()]] - `method` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[.scan()_1]] - `method` [EXTRACTED]
 - [[.setUp()_1]] - `calls` [EXTRACTED]
 - [[.test_finding_severity_is_critical()]] - `calls` [EXTRACTED]
-- [[Any_23]] - `uses` [INFERRED]
+- [[Any_33]] - `uses` [INFERRED]
 - [[ProxyAction]] - `uses` [INFERRED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
 - [[Scan web content for prompt injection, PII, and hidden payloads.      All findin]] - `rationale_for` [EXTRACTED]

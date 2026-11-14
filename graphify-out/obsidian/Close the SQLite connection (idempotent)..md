@@ -12,6 +12,6 @@ tags:
 # Close the SQLite connection (idempotent).
 
 ## Connections
-- [[.close()_8]] - `rationale_for` [EXTRACTED]
+- [[.close()_10]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_165

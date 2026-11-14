@@ -43,7 +43,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 10 edges to [[_COMMUNITY_Community 72]]
 - 4 edges to [[_COMMUNITY_Community 8]]
-- 1 edge to [[_COMMUNITY_Community 344]]
+- 1 edge to [[_COMMUNITY_Community 0]]
 
 ## Top bridge nodes
 - [[SessionContext_1]] - degree 11, connects to 2 communities

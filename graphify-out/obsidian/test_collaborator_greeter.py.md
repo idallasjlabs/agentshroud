@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_greeter.py"
 type: "code"
-community: "Community 197"
+community: "Community 1105"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_197
+  - community/Community_1105
 ---
 
 # test_collaborator_greeter.py
@@ -35,4 +35,4 @@ tags:
 - [[test_send_failure_does_not_persist_state()]] - `contains` [EXTRACTED]
 - [[test_state_file_corruption_recovers()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_197
+#graphify/code #graphify/EXTRACTED #community/Community_1105

@@ -1,30 +1,23 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "Community 63"
-location: "L88"
+community: "Community 34"
+location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_63
+  - community/Community_34
 ---
 
 # Any
 
 ## Connections
-- [[._process_inbound_core()]] - `references` [EXTRACTED]
-- [[._process_outbound_core()]] - `references` [EXTRACTED]
-- [[.append()]] - `references` [EXTRACTED]
-- [[.append_block()]] - `references` [EXTRACTED]
-- [[.append_owner_bypass()]] - `references` [EXTRACTED]
-- [[.get_stats()_6]] - `references` [EXTRACTED]
-- [[.process_inbound()]] - `references` [EXTRACTED]
-- [[.process_outbound()]] - `references` [EXTRACTED]
-- [[.to_dict()_1]] - `references` [EXTRACTED]
-- [[BotIncidentSeverity]] - `uses` [INFERRED]
-- [[FilterResult]] - `uses` [INFERRED]
-- [[InjectionAction]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[ViolationType]] - `uses` [INFERRED]
+- [[._build_forward_payload()]] - `references` [EXTRACTED]
+- [[.forward_to_agent()]] - `references` [EXTRACTED]
+- [[.forward_to_agent_stream()]] - `references` [EXTRACTED]
+- [[.health_check()]] - `references` [EXTRACTED]
+- [[AgentTarget]] - `uses` [INFERRED]
+- [[ForwardRequest]] - `uses` [INFERRED]
+- [[RouterConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_63
+#graphify/code #graphify/EXTRACTED #community/Community_34

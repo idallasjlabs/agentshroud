@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 96"
-location: "L3959"
+community: "Community 14"
+location: "L3977"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_96
+  - community/Community_14
 ---
 
 # Redact the owner's Telegram user ID from collaborator-bound text.          Strip
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._redact_owner_ids()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_96
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

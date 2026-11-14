@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "code"
-community: "Community 16"
+community: "Community 290"
 location: "L21"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_16
+  - community/Community_290
 ---
 
 # MemoryIntegrityConfig
@@ -14,13 +14,13 @@ tags:
 ## Connections
 - [[.setup_method()_9]] - `calls` [EXTRACTED]
 - [[.test_default_config()_4]] - `calls` [EXTRACTED]
-- [[Any_48]] - `uses` [INFERRED]
+- [[Any_58]] - `uses` [INFERRED]
 - [[Configuration for memory file integrity monitoring.]] - `rationale_for` [EXTRACTED]
 - [[FileIntegrityRecord]] - `uses` [INFERRED]
 - [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
 - [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
 - [[ModificationSource]] - `uses` [INFERRED]
-- [[Path_15]] - `uses` [INFERRED]
+- [[Path_17]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]
 - [[TestMemoryLifecycleManager]] - `uses` [INFERRED]
@@ -31,4 +31,4 @@ tags:
 - [[memory_integrity.py]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_16
+#graphify/code #graphify/INFERRED #community/Community_290

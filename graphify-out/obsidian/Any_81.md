@@ -1,25 +1,32 @@
 ---
-source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
+source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Community 492"
-location: "L23"
+community: "Community 67"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_492
+  - community/Community_67
 ---
 
 # Any
 
 ## Connections
-- [[aggregate_costs()]] - `references` [EXTRACTED]
-- [[build_json_all()]] - `references` [EXTRACTED]
-- [[build_json_current()]] - `references` [EXTRACTED]
-- [[filter_by_days()]] - `references` [EXTRACTED]
-- [[latest_day_cost()]] - `references` [EXTRACTED]
-- [[load_payload()]] - `references` [EXTRACTED]
-- [[parse_daily_entries()]] - `references` [EXTRACTED]
-- [[pick_current_model()]] - `references` [EXTRACTED]
-- [[run_codexbar_cost()]] - `references` [EXTRACTED]
+- [[_clamav_clean()]] - `references` [EXTRACTED]
+- [[_clamav_infected()]] - `references` [EXTRACTED]
+- [[_clean_trivy_report()]] - `references` [EXTRACTED]
+- [[_critical_trivy_report()]] - `references` [EXTRACTED]
+- [[_falco_clean()]] - `references` [EXTRACTED]
+- [[_falco_critical()]] - `references` [EXTRACTED]
+- [[_falco_not_run()]] - `references` [EXTRACTED]
+- [[_openscap_clean()]] - `references` [EXTRACTED]
+- [[_openscap_not_run()]] - `references` [EXTRACTED]
+- [[_openscap_warn()]] - `references` [EXTRACTED]
+- [[_trivy_clean()]] - `references` [EXTRACTED]
+- [[_trivy_critical()]] - `references` [EXTRACTED]
+- [[_trivy_not_run()]] - `references` [EXTRACTED]
+- [[_wazuh_clean()]] - `references` [EXTRACTED]
+- [[_wazuh_not_run()]] - `references` [EXTRACTED]
+- [[_write_image_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_492
+#graphify/code #graphify/EXTRACTED #community/Community_67

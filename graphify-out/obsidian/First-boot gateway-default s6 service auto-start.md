@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/init-config.sh"
 type: "rationale"
-community: "Community 290"
+community: "Community 190"
 location: "L22-L44"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_290
+  - community/Community_190
 ---
 
 # First-boot gateway-default s6 service auto-start
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[init-config.sh (Hermes first-boot config materialisation)]] - `implements` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_290
+#graphify/rationale #graphify/EXTRACTED #community/Community_190

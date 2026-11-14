@@ -19,7 +19,7 @@ tags:
 - [[.test_sign_and_verify_roundtrip()]] - `method` [EXTRACTED]
 - [[.test_tampered_content_fails()]] - `method` [EXTRACTED]
 - [[.test_tampered_signature_fails()]] - `method` [EXTRACTED]
-- [[EnvelopeSigner]] - `uses` [INFERRED]
+- [[EnvelopeSigner_1]] - `uses` [INFERRED]
 - [[InstructionEnvelope]] - `uses` [INFERRED]
 - [[test_instruction_envelope.py]] - `contains` [EXTRACTED]
 

@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/export-telegram-history.py"
+source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "Community 777"
-location: "L101"
+community: "Community 194"
+location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_777
+  - community/Community_194
 ---
 
 # Path
 
 ## Connections
-- [[export()]] - `references` [EXTRACTED]
-- [[main()_20]] - `calls` [EXTRACTED]
+- [[read_pin()]] - `references` [EXTRACTED]
+- [[write_pin()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_777
+#graphify/code #graphify/EXTRACTED #community/Community_194

@@ -1,30 +1,25 @@
 ---
 type: community
-members: 17
+members: 12
 ---
 
 # Community 1202
 
-**Members:** 17 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[._cve()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_alert_does_not_claim_registration()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_alert_says_when_no_fix_is_published()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_alert_shows_fixed_in_version()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_alert_titled_for_agent_label()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_contains_cve_id()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_contains_severity_icon()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_contains_total_count()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_handles_missing_optional_fields()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_no_more_indicator_when_under_item_limit()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_plural_header_for_multiple_cves()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_singular_header_for_one_cve()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_summary_under_telegram_limit_for_100_cves()]] - code - gateway/tests/test_daily_cve_report.py
-- [[Format a Telegram alert for newly detected upstream CVEs.      The alert is titl]] - rationale - gateway/security/daily_cve_report.py
-- [[TestFormatUpstreamCveAlert]] - code - gateway/tests/test_daily_cve_report.py
-- [[The gateway never writes the registry, so the alert must not say it did.]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[format_upstream_cve_alert()]] - code - gateway/security/daily_cve_report.py
+- [[Added_7]] - document - CHANGELOG.md
+- [[Added_14]] - document - CHANGELOG.md
+- [[Fixed_2]] - document - CHANGELOG.md
+- [[Fixed_11]] - document - CHANGELOG.md
+- [[Fixed_17]] - document - CHANGELOG.md
+- [[Summary_1]] - document - CHANGELOG.md
+- [[Summary_2]] - document - CHANGELOG.md
+- [[Summary_11]] - document - CHANGELOG.md
+- [[Summary_20]] - document - CHANGELOG.md
+- [[0.6.0 - 2026-02-23]] - document - CHANGELOG.md
+- [[1.2.0 — featesp32-s3-hermes-voice (2026-06-24)]] - document - CHANGELOG.md
+- [[1.5.3 (2026-08-23)]] - document - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,9 +29,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 368]]
-- 2 edges to [[_COMMUNITY_Community 127]]
+- 7 edges to [[_COMMUNITY_Community 773]]
+- 5 edges to [[_COMMUNITY_Community 1255]]
+- 3 edges to [[_COMMUNITY_Community 106]]
+- 3 edges to [[_COMMUNITY_Community 1380]]
+- 3 edges to [[_COMMUNITY_Community 1386]]
+- 2 edges to [[_COMMUNITY_Community 1916]]
+- 2 edges to [[_COMMUNITY_Community 1934]]
+- 1 edge to [[_COMMUNITY_Community 1984]]
+- 1 edge to [[_COMMUNITY_Community 2172]]
+- 1 edge to [[_COMMUNITY_Community 2016]]
 
 ## Top bridge nodes
-- [[format_upstream_cve_alert()]] - degree 17, connects to 2 communities
-- [[TestFormatUpstreamCveAlert]] - degree 14, connects to 1 community
+- [[Summary_1]] - degree 23, connects to 10 communities
+- [[1.2.0 — featesp32-s3-hermes-voice (2026-06-24)]] - degree 7, connects to 3 communities
+- [[0.6.0 - 2026-02-23]] - degree 7, connects to 3 communities
+- [[1.5.3 (2026-08-23)]] - degree 5, connects to 2 communities

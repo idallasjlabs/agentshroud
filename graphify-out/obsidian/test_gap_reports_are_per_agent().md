@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "Community 2003"
+community: "Community 42"
 location: "L615"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2003
+  - community/Community_42
 ---
 
 # test_gap_reports_are_per_agent()
@@ -16,4 +16,4 @@ tags:
 - [[_load_triage_module()]] - `calls` [EXTRACTED]
 - [[test_agent_cve_registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2003
+#graphify/code #graphify/EXTRACTED #community/Community_42

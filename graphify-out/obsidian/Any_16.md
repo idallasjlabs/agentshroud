@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/proxy/mcp_config.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "Community 54"
-location: "L98"
+community: "Community 65"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/Community_65
 ---
 
 # Any
 
 ## Connections
-- [[.from_dict()]] - `references` [EXTRACTED]
+- [[.get_recent()]] - `references` [EXTRACTED]
+- [[.get_stats()]] - `references` [EXTRACTED]
+- [[.to_dict()]] - `references` [EXTRACTED]
+- [[make_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_54
+#graphify/code #graphify/EXTRACTED #community/Community_65

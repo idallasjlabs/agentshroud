@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/agent_cve_registry.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "Community 42"
-location: "L18885"
+community: "Community 7"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_42
+  - community/Community_7
 ---
 
 # Any
 
 ## Connections
-- [[get_agent_cve_summary()]] - `references` [EXTRACTED]
+- [[.get_stats()_7]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_42
+#graphify/code #graphify/EXTRACTED #community/Community_7

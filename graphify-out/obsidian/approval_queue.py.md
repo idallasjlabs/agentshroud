@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "Community 306"
+community: "Community 1219"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_306
+  - community/Community_1219
 ---
 
 # approval_queue.py.md
@@ -20,4 +20,4 @@ tags:
 - [[SOUL_2]] - `references` [EXTRACTED]
 - [[Security Controls]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_306
+#graphify/document #graphify/EXTRACTED #community/Community_1219

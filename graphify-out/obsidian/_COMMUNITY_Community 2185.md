@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[GSDE&G Development Master Checklist (MC)_1]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Purpose_52]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[README_57]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Related Skills_70]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Usage_74]] - document - docker/config/hermes/skills/i-mc/README.md
+- [[Purpose_67]] - document - docker/config/hermes/skills/i-sec-offense/README.md
+- [[README_72]] - document - docker/config/hermes/skills/i-sec-offense/README.md
+- [[Red Team Adversarial Tester (SEC-OFFENSE)_1]] - document - docker/config/hermes/skills/i-sec-offense/README.md
+- [[Related Skills_88]] - document - docker/config/hermes/skills/i-sec-offense/README.md
+- [[Usage_90]] - document - docker/config/hermes/skills/i-sec-offense/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,4 +25,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 90]]
 
 ## Top bridge nodes
-- [[GSDE&G Development Master Checklist (MC)_1]] - degree 5, connects to 1 community
+- [[Red Team Adversarial Tester (SEC-OFFENSE)_1]] - degree 5, connects to 1 community

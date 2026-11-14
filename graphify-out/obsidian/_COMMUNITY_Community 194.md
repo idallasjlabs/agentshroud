@@ -1,69 +1,45 @@
 ---
 type: community
-members: 56
+members: 32
 ---
 
 # Community 194
 
-**Members:** 56 nodes
+**Members:** 32 nodes
 
 ## Members
-- [[.__init__()_121]] - code - gateway/security/tool_acl.py
-- [[.effective_admin()]] - code - gateway/security/tool_acl.py
-- [[.effective_collaborator_allowed()]] - code - gateway/security/tool_acl.py
-- [[.effective_private()]] - code - gateway/security/tool_acl.py
-- [[.test_admin_blocked_from_private_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_admin_can_use_admin_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_admin_can_use_collaborator_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_admin_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_admin_denied_tools_contains_private()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_collaborator_allowed_tools_does_not_include_private()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_collaborator_blocked_from_admin_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_collaborator_blocked_from_private_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_collaborator_can_use_allowed_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_collaborator_can_use_unknown_tool_when_not_denied()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_collaborator_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_collaborator_denied_tools_includes_admin_and_private()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_collaborator_denied_unknown_by_default()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_group_allowlist_grants_extra_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_no_rbac_allows_read()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_no_rbac_defaults_to_viewer()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_owner_allowed_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_owner_can_use_admin_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_owner_can_use_any_unknown_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_owner_can_use_private_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_owner_denied_tools_is_empty()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_private_and_admin_do_not_overlap()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_private_and_admin_do_not_overlap_with_collab_allowed()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_private_tool_still_blocked_even_when_deny_unknown_false()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_project_allowed_tools_grant_access()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_terminal_in_private_tools()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_terminal_tool_in_private_tools()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_terminal_tool_not_in_collab_allowed()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_viewer_blocked_from_admin_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_viewer_blocked_from_private_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_viewer_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[ADMIN_TOOLS]] - code - gateway/security/tool_acl.py
-- [[COLLABORATOR_ALLOWED_TOOLS]] - code - gateway/security/tool_acl.py
-- [[PRIVATE_TOOLS]] - code - gateway/security/tool_acl.py
-- [[Policy configuration for tool ACL enforcement.      Loaded from agentshroud.yaml]] - rationale - gateway/security/tool_acl.py
-- [[RBACConfig_4]] - code - gateway/tests/test_tool_acl.py
-- [[TeamsConfig_2]] - code - gateway/tests/test_tool_acl.py
-- [[TestAdminAccess]] - code - gateway/tests/test_tool_acl.py
-- [[TestCVE2026_9367TerminalToolDenied]] - code - gateway/tests/test_tool_acl.py
-- [[TestClassificationSets]] - code - gateway/tests/test_tool_acl.py
-- [[TestCollaboratorAccess]] - code - gateway/tests/test_tool_acl.py
-- [[TestDenyUnknownFalse]] - code - gateway/tests/test_tool_acl.py
-- [[TestGroupToolAllowlist]] - code - gateway/tests/test_tool_acl.py
-- [[TestNoRBACConfig]] - code - gateway/tests/test_tool_acl.py
-- [[TestOwnerAccess]] - code - gateway/tests/test_tool_acl.py
-- [[TestViewerAccess]] - code - gateway/tests/test_tool_acl.py
-- [[ToolACLConfig]] - code - gateway/security/tool_acl.py
-- [[_make_rbac()_1]] - code - gateway/tests/test_tool_acl.py
-- [[enforcer()_3]] - code - gateway/tests/test_tool_acl.py
-- [[rbac()_6]] - code - gateway/tests/test_tool_acl.py
-- [[terminal_tool must be in PRIVATE_TOOLS and blocked for non-owner principals.]] - rationale - gateway/tests/test_tool_acl.py
-- [[test_tool_acl.py]] - code - gateway/tests/test_tool_acl.py
+- [[.test_pin_revert_restores_the_exact_original_string()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[.test_read_pin_missing_key_returns_none()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[.test_read_pin_returns_the_pinned_value()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[.test_write_pin_is_idempotent()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[.test_write_pin_refuses_an_absent_key()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[.test_write_pin_replaces_only_the_target_line()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[.test_write_pin_round_trips_through_read_pin()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[.to_dict()_17]] - code - scripts/auto_remediate_cves.py
+- [[Any_86]] - code - scripts/auto_remediate_cves.py
+- [[Bump the pin, run the gated upgrade, revert the pin if it does not hold.      Re]] - rationale - scripts/auto_remediate_cves.py
+- [[Import the committed OpenClaw registry.]] - rationale - scripts/auto_remediate_cves.py
+- [[Parse a dotted numeric version to a comparable tuple.      A trailing ``-N`` on]] - rationale - scripts/auto_remediate_cves.py
+- [[Path_48]] - code - scripts/auto_remediate_cves.py
+- [[Read one ``KEY=value`` pin from a versions.env-style file.]] - rationale - scripts/auto_remediate_cves.py
+- [[Reading and rewriting dockerversions.env.]] - rationale - gateway/tests/test_auto_remediate_cves.py
+- [[RemediationPlan]] - code - scripts/auto_remediate_cves.py
+- [[Rewrite one pin in place, preserving every other line byte for byte.      Raises]] - rationale - scripts/auto_remediate_cves.py
+- [[Serialise for the unattended run's audit trail.]] - rationale - scripts/auto_remediate_cves.py
+- [[Silently appending a new key could create a pin nothing consumes.]] - rationale - gateway/tests/test_auto_remediate_cves.py
+- [[TestVersionPinIO]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[The rollback path a failed deploy must restore the pin verbatim,         downst]] - rationale - gateway/tests/test_auto_remediate_cves.py
+- [[What a version bump would and would not remediate.      Every ``under_review`` a]] - rationale - scripts/auto_remediate_cves.py
+- [[_print_plan()]] - code - scripts/auto_remediate_cves.py
+- [[_run()_5]] - code - scripts/auto_remediate_cves.py
+- [[apply_remediation()]] - code - scripts/auto_remediate_cves.py
+- [[auto_remediate_cves.py]] - code - scripts/auto_remediate_cves.py
+- [[load_registry()]] - code - scripts/auto_remediate_cves.py
+- [[main()_17]] - code - scripts/auto_remediate_cves.py
+- [[parse_version()]] - code - scripts/auto_remediate_cves.py
+- [[read_pin()]] - code - scripts/auto_remediate_cves.py
+- [[test_pin_revert_restores_the_exact_original_string]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[write_pin()]] - code - scripts/auto_remediate_cves.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -73,20 +49,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 27 edges to [[_COMMUNITY_Community 6]]
-- 24 edges to [[_COMMUNITY_Community 11]]
-- 12 edges to [[_COMMUNITY_Community 196]]
-- 7 edges to [[_COMMUNITY_Community 33]]
-- 2 edges to [[_COMMUNITY_Community 986]]
-- 2 edges to [[_COMMUNITY_Community 1424]]
-- 1 edge to [[_COMMUNITY_Community 884]]
-- 1 edge to [[_COMMUNITY_Community 1284]]
-- 1 edge to [[_COMMUNITY_Community 1070]]
-- 1 edge to [[_COMMUNITY_Community 300]]
+- 9 edges to [[_COMMUNITY_Community 261]]
+- 2 edges to [[_COMMUNITY_Community 126]]
+- 1 edge to [[_COMMUNITY_Community 118]]
+- 1 edge to [[_COMMUNITY_Community 139]]
+- 1 edge to [[_COMMUNITY_Community 227]]
+- 1 edge to [[_COMMUNITY_Community 48]]
+- 1 edge to [[_COMMUNITY_Community 8]]
 
 ## Top bridge nodes
-- [[ToolACLConfig]] - degree 38, connects to 8 communities
-- [[test_tool_acl.py]] - degree 23, connects to 6 communities
-- [[TestCVE2026_9367TerminalToolDenied]] - degree 14, connects to 3 communities
-- [[TestCollaboratorAccess]] - degree 12, connects to 3 communities
-- [[TestOwnerAccess]] - degree 10, connects to 3 communities
+- [[auto_remediate_cves.py]] - degree 15, connects to 6 communities
+- [[apply_remediation()]] - degree 9, connects to 2 communities
+- [[read_pin()]] - degree 11, connects to 1 community
+- [[TestVersionPinIO]] - degree 10, connects to 1 community
+- [[RemediationPlan]] - degree 9, connects to 1 community

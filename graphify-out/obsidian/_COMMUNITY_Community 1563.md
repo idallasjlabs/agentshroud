@@ -1,21 +1,22 @@
 ---
 type: community
-members: 8
+members: 9
 ---
 
 # Community 1563
 
-**Members:** 8 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[._apply_outbound_status_notices()]] - code - gateway/proxy/telegram_proxy.py
-- [[._contains_internal_approval_banner()]] - code - gateway/proxy/telegram_proxy.py
-- [[._contains_legacy_block_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._is_no_reply_token()]] - code - gateway/proxy/telegram_proxy.py
-- [[Detect internal approvalegress banner text that must remain owner-only.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect legacy bracket-style block notices for collaborator normalization.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect plain NO_REPLY sentinel with light punctuation wrapping.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Map internal statuspolicy texts to user-safe replacement notices.          Pure]] - rationale - gateway/proxy/telegram_proxy.py
+- [[AgentShroud Sunday Upgrade — 2026-09-27, 0800 ET verification pass (DEV run, session 2)]] - document - reports/upgrade-2026-09-27-20260927-0800.md
+- [[Decision no rebuild performed]] - document - reports/upgrade-2026-09-27-20260927-0800.md
+- [[Independent verification performed (all read-only)]] - document - reports/upgrade-2026-09-27-20260927-0800.md
+- [[Manual follow-ups]] - document - reports/upgrade-2026-09-27-20260927-0800.md
+- [[Process correction made Jira ticket SCRUM-187]] - document - reports/upgrade-2026-09-27-20260927-0800.md
+- [[Still open (real, unresolved, carried from this morning — not new)]] - document - reports/upgrade-2026-09-27-20260927-0800.md
+- [[Summary line_6]] - document - reports/upgrade-2026-09-27-20260927-0800.md
+- [[Time spent_3]] - document - reports/upgrade-2026-09-27-20260927-0800.md
+- [[Why this report is short]] - document - reports/upgrade-2026-09-27-20260927-0800.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,11 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 14]]
-- 2 edges to [[_COMMUNITY_Community 96]]
+- 1 edge to [[_COMMUNITY_Community 1924]]
 
 ## Top bridge nodes
-- [[._apply_outbound_status_notices()]] - degree 9, connects to 2 communities
-- [[._is_no_reply_token()]] - degree 4, connects to 1 community
-- [[._contains_internal_approval_banner()]] - degree 4, connects to 1 community
-- [[._contains_legacy_block_notice()]] - degree 4, connects to 1 community
+- [[AgentShroud Sunday Upgrade — 2026-09-27, 0800 ET verification pass (DEV run, session 2)]] - degree 9, connects to 1 community

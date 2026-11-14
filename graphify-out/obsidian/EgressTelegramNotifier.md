@@ -12,7 +12,7 @@ tags:
 # EgressTelegramNotifier
 
 ## Connections
-- [[.__init__()_37]] - `method` [EXTRACTED]
+- [[.__init__()_52]] - `method` [EXTRACTED]
 - [[._api_url()]] - `method` [EXTRACTED]
 - [[._async_send()]] - `method` [EXTRACTED]
 - [[._send_request()]] - `method` [EXTRACTED]
@@ -21,7 +21,7 @@ tags:
 - [[.cleanup_expired()]] - `method` [EXTRACTED]
 - [[.edit_decision_message()]] - `method` [EXTRACTED]
 - [[.get_pending_count()]] - `method` [EXTRACTED]
-- [[.handle_callback()]] - `method` [EXTRACTED]
+- [[.handle_callback()_1]] - `method` [EXTRACTED]
 - [[.notifier()]] - `calls` [EXTRACTED]
 - [[.notify_pending()]] - `method` [EXTRACTED]
 - [[.send_text()]] - `method` [EXTRACTED]

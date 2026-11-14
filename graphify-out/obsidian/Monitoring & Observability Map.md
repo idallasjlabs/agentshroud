@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/06-operations.md"
 type: "concept"
-community: "Community 1989"
+community: "Community 466"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1989
+  - community/Community_466
 ---
 
 # Monitoring & Observability Map
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[06-operations]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1989
+#graphify/concept #graphify/EXTRACTED #community/Community_466

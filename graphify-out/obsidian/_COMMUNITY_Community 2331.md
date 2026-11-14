@@ -1,15 +1,17 @@
 ---
 type: community
-members: 2
+members: 4
 ---
 
 # Community 2331
 
-**Members:** 2 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_content_sanitization()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[Test content sanitization removes threats.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[maximum_1]] - code - config/inbound-edge/schema.json
+- [[minimum_1]] - code - config/inbound-edge/schema.json
+- [[per_vendor_per_minute]] - code - config/inbound-edge/schema.json
+- [[type_15]] - code - config/inbound-edge/schema.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 16]]
+- 1 edge to [[_COMMUNITY_Community 855]]
 
 ## Top bridge nodes
-- [[.test_content_sanitization()]] - degree 2, connects to 1 community
+- [[per_vendor_per_minute]] - degree 4, connects to 1 community

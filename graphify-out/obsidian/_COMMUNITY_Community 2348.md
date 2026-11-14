@@ -1,15 +1,16 @@
 ---
 type: community
-members: 2
+members: 3
 ---
 
 # Community 2348
 
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[.test_form_outbound_pipeline_sanitized_text_applied()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Pipeline-sanitized text must replace the original in form payloads.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_full_stack_scores_five()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_secrets_path_is_file_iterdir_error()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestSecretsManagement]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +20,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 626]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 845]]
+- 2 edges to [[_COMMUNITY_Community 219]]
+- 1 edge to [[_COMMUNITY_Community 431]]
 
 ## Top bridge nodes
-- [[.test_form_outbound_pipeline_sanitized_text_applied()]] - degree 4, connects to 3 communities
+- [[TestSecretsManagement]] - degree 3, connects to 1 community
+- [[.test_full_stack_scores_five()]] - degree 2, connects to 1 community
+- [[.test_secrets_path_is_file_iterdir_error()]] - degree 2, connects to 1 community

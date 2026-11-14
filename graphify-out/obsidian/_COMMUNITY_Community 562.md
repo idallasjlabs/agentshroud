@@ -1,14 +1,15 @@
 ---
 type: community
-members: 55
+members: 60
 ---
 
 # Community 562
 
-**Members:** 55 nodes
+**Members:** 60 nodes
 
 ## Members
-- [[.__init__()_42]] - code - gateway/proxy/web_content_scanner.py
+- [[.__init__()_57]] - code - gateway/proxy/web_content_scanner.py
+- [[.__init__()_59]] - code - gateway/proxy/web_proxy.py
 - [[._scan_encoded_payloads()]] - code - gateway/proxy/web_content_scanner.py
 - [[._scan_hidden_content()]] - code - gateway/proxy/web_content_scanner.py
 - [[._scan_pii()]] - code - gateway/proxy/web_content_scanner.py
@@ -61,8 +62,12 @@ members: 55
 - [[The distinction this whole control rests on.]] - rationale - gateway/tests/test_xml_dtd_control.py
 - [[The durable statement is at the CLASS level, not per-CVE.      A register entry]] - rationale - gateway/tests/test_xml_dtd_control.py
 - [[The new rule runs first, so prove it does not swallow neighbours.]] - rationale - gateway/tests/test_xml_dtd_control.py
+- [[URLAnalyzer_1]] - code - gateway/proxy/web_proxy.py
 - [[WebContentScanner]] - code - gateway/proxy/web_content_scanner.py
+- [[WebContentScanner_1]] - code - gateway/proxy/web_proxy.py
+- [[WebProxyConfig_1]] - code - gateway/proxy/web_proxy.py
 - [[test_xml_dtd_control.py]] - code - gateway/tests/test_xml_dtd_control.py
+- [[web_content_scanner.py]] - code - gateway/proxy/web_content_scanner.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -73,15 +78,17 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 9 edges to [[_COMMUNITY_Community 69]]
-- 7 edges to [[_COMMUNITY_Community 8]]
-- 4 edges to [[_COMMUNITY_Community 120]]
+- 6 edges to [[_COMMUNITY_Community 8]]
+- 5 edges to [[_COMMUNITY_Community 27]]
+- 5 edges to [[_COMMUNITY_Community 120]]
+- 4 edges to [[_COMMUNITY_Community 108]]
+- 4 edges to [[_COMMUNITY_Community 72]]
 - 3 edges to [[_COMMUNITY_Community 1000]]
-- 1 edge to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 27]]
+- 1 edge to [[_COMMUNITY_Community 71]]
 
 ## Top bridge nodes
-- [[WebContentScanner]] - degree 34, connects to 6 communities
-- [[TestDangerousXMLDetection]] - degree 14, connects to 1 community
-- [[ScanResult]] - degree 11, connects to 1 community
-- [[ContentFinding]] - degree 8, connects to 1 community
-- [[TestTriageClassLevelCoverage]] - degree 8, connects to 1 community
+- [[.__init__()_59]] - degree 12, connects to 5 communities
+- [[WebContentScanner]] - degree 34, connects to 4 communities
+- [[web_content_scanner.py]] - degree 6, connects to 2 communities
+- [[WebProxyConfig_1]] - degree 4, connects to 2 communities
+- [[URLAnalyzer_1]] - degree 4, connects to 2 communities

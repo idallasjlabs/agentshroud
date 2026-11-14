@@ -16,7 +16,7 @@ tags:
 - [[.test_passes_zero_based_attempt_index()]] - `calls` [INFERRED]
 - [[.test_returns_result_after_transient_failures()]] - `calls` [INFERRED]
 - [[.test_single_attempt_never_sleeps()]] - `calls` [INFERRED]
-- [[Any_76]] - `references` [EXTRACTED]
+- [[Any_87]] - `references` [EXTRACTED]
 - [[Call ``fn(attempt)`` up to ``attempts`` times; re-raise the last error if all fa]] - `rationale_for` [EXTRACTED]
 - [[_T]] - `references` [EXTRACTED]
 - [[discover()]] - `calls` [EXTRACTED]

@@ -12,7 +12,7 @@ tags:
 # test_instruction_envelope.py
 
 ## Connections
-- [[EnvelopeSigner]] - `imports` [EXTRACTED]
+- [[EnvelopeSigner_1]] - `imports` [EXTRACTED]
 - [[InstructionEnvelope]] - `imports` [EXTRACTED]
 - [[TestEnvelopeSigner]] - `contains` [EXTRACTED]
 - [[signer()]] - `contains` [EXTRACTED]

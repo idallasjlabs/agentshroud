@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "Community 0"
+community: "Community 365"
 location: "L36"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_0
+  - community/Community_365
 ---
 
 # MetadataGuard
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_97]] - `method` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_112]] - `method` [EXTRACTED]
 - [[.check_for_exif()]] - `method` [EXTRACTED]
 - [[.check_oversized_headers()]] - `method` [EXTRACTED]
 - [[.get_document_tag()]] - `method` [EXTRACTED]
@@ -28,7 +28,7 @@ tags:
 - [[.test_metadata_path_traversal_stripped()]] - `calls` [EXTRACTED]
 - [[.test_metadata_sanitize_filename()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[Guards against metadata channel attacks and information disclosure.]] - `rationale_for` [EXTRACTED]
 - [[LogSanitizer]] - `uses` [INFERRED]
@@ -38,7 +38,7 @@ tags:
 - [[Resource]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestAuth_1]] - `uses` [INFERRED]
-- [[TestConcurrency]] - `uses` [INFERRED]
+- [[TestConcurrency_1]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
@@ -67,4 +67,4 @@ tags:
 - [[test_metadata_guard.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_0
+#graphify/code #graphify/INFERRED #community/Community_365

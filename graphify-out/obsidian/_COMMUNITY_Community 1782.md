@@ -29,11 +29,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 1209]]
+- 4 edges to [[_COMMUNITY_Community 1343]]
+- 1 edge to [[_COMMUNITY_Community 1985]]
+- 1 edge to [[_COMMUNITY_Community 1284]]
 
 ## Top bridge nodes
+- [[.authorize_spawn()]] - degree 4, connects to 2 communities
 - [[ResourceUsage_1]] - degree 7, connects to 1 community
-- [[.authorize_spawn()]] - degree 4, connects to 1 community
 - [[.deregister()]] - degree 4, connects to 1 community
 - [[.get_usage()]] - degree 3, connects to 1 community
 - [[.get_summary()_1]] - degree 3, connects to 1 community

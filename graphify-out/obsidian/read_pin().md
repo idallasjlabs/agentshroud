@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "Community 261"
+community: "Community 194"
 location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_261
+  - community/Community_194
 ---
 
 # read_pin()
@@ -17,11 +17,11 @@ tags:
 - [[.test_read_pin_returns_the_pinned_value()]] - `calls` [INFERRED]
 - [[.test_real_registry_plan_is_internally_consistent()]] - `calls` [INFERRED]
 - [[.test_write_pin_round_trips_through_read_pin()]] - `calls` [INFERRED]
-- [[Path_45]] - `references` [EXTRACTED]
+- [[Path_48]] - `references` [EXTRACTED]
 - [[Read one ``KEY=value`` pin from a versions.env-style file.]] - `rationale_for` [EXTRACTED]
 - [[apply_remediation()]] - `calls` [EXTRACTED]
 - [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
-- [[main()_15]] - `calls` [EXTRACTED]
+- [[main()_17]] - `calls` [EXTRACTED]
 - [[test_pin_revert_restores_the_exact_original_string]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_261
+#graphify/code #graphify/EXTRACTED #community/Community_194

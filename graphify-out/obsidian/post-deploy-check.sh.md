@@ -1,23 +1,23 @@
 ---
 source_file: "scripts/post-deploy-check.sh"
 type: "code"
-community: "Community 1344"
+community: "Community 547"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1344
+  - community/Community_547
 ---
 
 # post-deploy-check.sh
 
 ## Connections
 - [[_svc_container()]] - `defines` [EXTRACTED]
-- [[check()]] - `defines` [EXTRACTED]
+- [[check()_1]] - `defines` [EXTRACTED]
 - [[check-soak-status.sh]] - `references` [EXTRACTED]
 - [[post-deploy-check.sh script]] - `contains` [EXTRACTED]
 - [[run_test()]] - `semantically_similar_to` [INFERRED]
 - [[update-agentshroud.sh]] - `references` [EXTRACTED]
 - [[validate_network_security()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1344
+#graphify/code #graphify/EXTRACTED #community/Community_547

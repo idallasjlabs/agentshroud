@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "rationale"
-community: "Community 541"
+community: "Community 50"
 location: "L115"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_541
+  - community/Community_50
 ---
 
 # Unauthenticated request is rejected.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_result_requires_auth()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_541
+#graphify/rationale #graphify/EXTRACTED #community/Community_50

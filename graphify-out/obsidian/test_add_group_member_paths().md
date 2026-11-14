@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
 community: "Community 19"
-location: "L1153"
+location: "L1241"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # test_add_group_member_paths()
 
 ## Connections
-- [[FakeCaller]] - `calls` [EXTRACTED]
+- [[FakeCaller_1]] - `calls` [EXTRACTED]
 - [[FakeGroup]] - `calls` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 

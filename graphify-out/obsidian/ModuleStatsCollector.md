@@ -12,7 +12,7 @@ tags:
 # ModuleStatsCollector
 
 ## Connections
-- [[.__init__()_99]] - `method` [EXTRACTED]
+- [[.__init__()_114]] - `method` [EXTRACTED]
 - [[.record()_2]] - `method` [EXTRACTED]
 - [[.reset()_1]] - `method` [EXTRACTED]
 - [[.snapshot()]] - `method` [EXTRACTED]

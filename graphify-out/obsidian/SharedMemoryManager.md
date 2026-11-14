@@ -12,7 +12,7 @@ tags:
 # SharedMemoryManager
 
 ## Connections
-- [[.__init__()_117]] - `method` [EXTRACTED]
+- [[.__init__()_132]] - `method` [EXTRACTED]
 - [[._is_authorized_group_writer()]] - `method` [EXTRACTED]
 - [[._strip_private_content()]] - `method` [EXTRACTED]
 - [[.append_to_group_memory()]] - `method` [EXTRACTED]

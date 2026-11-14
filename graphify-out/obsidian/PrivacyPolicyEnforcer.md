@@ -12,7 +12,7 @@ tags:
 # PrivacyPolicyEnforcer
 
 ## Connections
-- [[.__init__()_107]] - `method` [EXTRACTED]
+- [[.__init__()_122]] - `method` [EXTRACTED]
 - [[._get_role_value()]] - `method` [EXTRACTED]
 - [[._user_in_allowed_groups()]] - `method` [EXTRACTED]
 - [[.contains_private_data()]] - `method` [EXTRACTED]

@@ -1,11 +1,11 @@
 ---
 source_file: "branding/icons/modules/audit-ledger-256x256.png"
 type: "image"
-community: "Community 162"
+community: "Community 794"
 tags:
   - graphify/image
   - graphify/AMBIGUOUS
-  - community/Community_162
+  - community/Community_794
 ---
 
 # Audit Ledger Module Badge Icon
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - `conceptually_related_to` [INFERRED]
 - [[audit_store.py]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/image #graphify/AMBIGUOUS #community/Community_162
+#graphify/image #graphify/AMBIGUOUS #community/Community_794

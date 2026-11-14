@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Community 72"
+community: "Community 7"
 location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_7
 ---
 
 # lifespan()
@@ -38,7 +38,7 @@ tags:
 - [[EncodingDetector]] - `calls` [EXTRACTED]
 - [[EncryptedStore]] - `calls` [EXTRACTED]
 - [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
-- [[EnvelopeSigner]] - `calls` [EXTRACTED]
+- [[EnvelopeSigner_1]] - `calls` [EXTRACTED]
 - [[EventBus]] - `calls` [EXTRACTED]
 - [[FastAPI_1]] - `references` [EXTRACTED]
 - [[FastAPI lifespan - startup and shutdown]] - `rationale_for` [EXTRACTED]
@@ -83,6 +83,7 @@ tags:
 - [[XMLLeakFilter]] - `calls` [EXTRACTED]
 - [[_build_per_bot_telegram_tokens()]] - `calls` [EXTRACTED]
 - [[_install_uvicorn_warning_filter()]] - `calls` [EXTRACTED]
+- [[build_edge_service()]] - `calls` [EXTRACTED]
 - [[check_monitor_mode_warnings()]] - `calls` [EXTRACTED]
 - [[config_watcher()]] - `calls` [EXTRACTED]
 - [[get_module_mode()]] - `calls` [EXTRACTED]
@@ -94,5 +95,6 @@ tags:
 - [[resolve_enforcement_mode()]] - `calls` [EXTRACTED]
 - [[setup_resource_guard()]] - `calls` [EXTRACTED]
 - [[start_dns_forwarder()]] - `calls` [EXTRACTED]
+- [[start_edge_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/Community_7

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "Community 0"
+community: "Community 477"
 location: "L58"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_0
+  - community/Community_477
 ---
 
 # EncryptedStore
 
 ## Connections
-- [[.__init__()_78]] - `method` [EXTRACTED]
+- [[.__init__()_93]] - `method` [EXTRACTED]
 - [[._derive_key()]] - `method` [EXTRACTED]
 - [[._resolve_secret()]] - `method` [EXTRACTED]
 - [[.decrypt()]] - `method` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[.get_blob_key_id()]] - `method` [EXTRACTED]
 - [[.rotate()]] - `calls` [EXTRACTED]
 - [[.setup_method()_26]] - `calls` [EXTRACTED]
-- [[.store()_2]] - `calls` [EXTRACTED]
+- [[.store()_3]] - `calls` [EXTRACTED]
 - [[.test_custom_key_id()]] - `calls` [EXTRACTED]
 - [[.test_encrypt_decrypt_still_works_after_zeroing()]] - `calls` [EXTRACTED]
 - [[.test_encrypted_store_constant_time()]] - `calls` [INFERRED]
@@ -40,7 +40,7 @@ tags:
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestAuth_1]] - `uses` [INFERRED]
-- [[TestConcurrency]] - `uses` [INFERRED]
+- [[TestConcurrency_1]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
@@ -78,4 +78,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_0
+#graphify/code #graphify/INFERRED #community/Community_477

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
 type: "document"
-community: "Community 1014"
+community: "Community 333"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1014
+  - community/Community_333
 ---
 
 # Startup Errors.md
@@ -17,4 +17,4 @@ tags:
 - [[Startup Errors_2]] - `contains` [EXTRACTED]
 - [[Troubleshooting Matrix]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1014
+#graphify/document #graphify/EXTRACTED #community/Community_333

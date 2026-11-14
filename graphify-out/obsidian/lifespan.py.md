@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Community 72"
+community: "Community 7"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_7
 ---
 
 # lifespan.py
@@ -39,7 +39,7 @@ tags:
 - [[EncodingDetector]] - `imports` [EXTRACTED]
 - [[EncryptedStore]] - `imports` [EXTRACTED]
 - [[EnhancedApprovalQueue]] - `imports` [EXTRACTED]
-- [[EnvelopeSigner]] - `imports` [EXTRACTED]
+- [[EnvelopeSigner_1]] - `imports` [EXTRACTED]
 - [[EventBus]] - `imports` [EXTRACTED]
 - [[FalcoAlertWatcher]] - `imports` [EXTRACTED]
 - [[FastAPI_1]] - `imports_from` [EXTRACTED]
@@ -68,6 +68,7 @@ tags:
 - [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[PrivacyPolicy]] - `imports` [EXTRACTED]
 - [[PrivacyPolicyEnforcer]] - `imports` [EXTRACTED]
+- [[ProgressiveLockdown]] - `imports` [EXTRACTED]
 - [[ProgressiveTrustConfig]] - `imports` [EXTRACTED]
 - [[PromptGuard]] - `imports` [EXTRACTED]
 - [[PromptProtection]] - `imports` [EXTRACTED]
@@ -91,6 +92,7 @@ tags:
 - [[_is_fixture_uid()]] - `imports` [EXTRACTED]
 - [[agent_isolation.py]] - `imports_from` [EXTRACTED]
 - [[build_correlation_summary()]] - `imports` [EXTRACTED]
+- [[build_edge_service()]] - `imports` [EXTRACTED]
 - [[canvas_proxy_app()]] - `imports` [EXTRACTED]
 - [[check_monitor_mode_warnings()]] - `imports` [EXTRACTED]
 - [[clamav_scanner.py]] - `imports_from` [EXTRACTED]
@@ -133,6 +135,7 @@ tags:
 - [[scan_bytes()]] - `imports` [EXTRACTED]
 - [[setup_resource_guard()]] - `imports` [EXTRACTED]
 - [[start_dns_forwarder()]] - `imports` [EXTRACTED]
+- [[start_edge_forwarder()]] - `imports` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[test_telegram_executor.py]] - `imports_from` [EXTRACTED]
 - [[trivy_report.py]] - `imports_from` [EXTRACTED]
@@ -143,4 +146,4 @@ tags:
 - [[web_config.py]] - `imports_from` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/Community_7

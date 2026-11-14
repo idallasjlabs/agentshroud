@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "Community 225"
-location: "L123"
+community: "Community 230"
+location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_225
+  - community/Community_230
 ---
 
 # Any
 
 ## Connections
-- [[.inspect()_2]] - `references` [EXTRACTED]
+- [[._redact_pii()]] - `references` [EXTRACTED]
+- [[._scan_value()]] - `references` [EXTRACTED]
+- [[.inspect_tool_call()]] - `references` [EXTRACTED]
+- [[.inspect_tool_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_225
+#graphify/code #graphify/EXTRACTED #community/Community_230

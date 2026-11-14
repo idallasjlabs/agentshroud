@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "Community 325"
+community: "Community 437"
 location: "L395"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_325
+  - community/Community_437
 ---
 
 # Pipeline mock that records the user_trust_level passed to process_outbound.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_TrustCaptor]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_325
+#graphify/rationale #graphify/EXTRACTED #community/Community_437

@@ -1,45 +1,23 @@
 ---
-source_file: "gateway/tests/test_security_audit_advanced.py"
+source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "Community 0"
-location: "L189"
+community: "Community 75"
+location: "L555"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_0
+  - community/Community_75
 ---
 
 # TestConcurrency
 
 ## Connections
-- [[.test_alert_dispatcher_concurrent_dispatch()]] - `method` [EXTRACTED]
-- [[.test_context_guard_session_isolation_under_load()]] - `method` [EXTRACTED]
-- [[.test_drift_detector_concurrent_writes()]] - `method` [EXTRACTED]
-- [[.test_prompt_guard_concurrent_scans()]] - `method` [EXTRACTED]
-- [[.test_trust_manager_rapid_updates()]] - `method` [EXTRACTED]
-- [[AlertDispatcher]] - `uses` [INFERRED]
-- [[ConsentDecision]] - `uses` [INFERRED]
-- [[ContainerSnapshot]] - `uses` [INFERRED]
-- [[ContextGuard]] - `uses` [INFERRED]
-- [[DriftDetector]] - `uses` [INFERRED]
-- [[EgressChannel]] - `uses` [INFERRED]
-- [[EgressEvent]] - `uses` [INFERRED]
-- [[EgressPolicy]] - `uses` [INFERRED]
-- [[EncryptedStore]] - `uses` [INFERRED]
-- [[EntropyCalculator]] - `uses` [INFERRED]
-- [[EnvironmentGuard]] - `uses` [INFERRED]
-- [[FileSandbox]] - `uses` [INFERRED]
-- [[FileSandboxConfig]] - `uses` [INFERRED]
-- [[GitGuard]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
-- [[MetadataGuard]] - `uses` [INFERRED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
-- [[Session]] - `uses` [INFERRED]
-- [[SubagentEventType]] - `uses` [INFERRED]
-- [[Test thread safety and race conditions in security modules.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager_1]] - `uses` [INFERRED]
-- [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
+- [[.test_async_gather_record_block_counts_exactly()]] - `method` [EXTRACTED]
+- [[.test_threaded_record_block_counts_exactly()]] - `method` [EXTRACTED]
+- [[FalcoAlertWatcher]] - `uses` [INFERRED]
+- [[LockdownLevel_1]] - `uses` [INFERRED]
+- [[ProgressiveLockdown]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
+- [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_0
+#graphify/code #graphify/INFERRED #community/Community_75

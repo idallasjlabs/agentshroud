@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Community 1"
-location: "L62"
+community: "Community 2186"
+location: "L379"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_1
+  - graphify/INFERRED
+  - community/Community_2186
 ---
 
 # Any
 
 ## Connections
-- [[.add_conversation_message()]] - `references` [EXTRACTED]
-- [[.from_dict()_11]] - `references` [EXTRACTED]
-- [[.get_session_context()]] - `references` [EXTRACTED]
-- [[.reanchor_system_prompt()]] - `references` [EXTRACTED]
-- [[.to_dict()_12]] - `references` [EXTRACTED]
+- [[.get_lifecycle_status()]] - `references` [EXTRACTED]
+- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1
+#graphify/code #graphify/INFERRED #community/Community_2186

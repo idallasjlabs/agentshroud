@@ -12,7 +12,7 @@ tags:
 # _FakeBus
 
 ## Connections
-- [[.__init__()_187]] - `method` [EXTRACTED]
+- [[.__init__()_212]] - `method` [EXTRACTED]
 - [[.subscribe()_1]] - `method` [EXTRACTED]
 - [[.test_fan_out_filters_and_forwards()]] - `calls` [EXTRACTED]
 - [[.test_fan_out_survives_coerce_exception()]] - `calls` [EXTRACTED]

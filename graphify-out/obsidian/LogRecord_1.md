@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "Community 2316"
+community: "Community 809"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2316
+  - community/Community_809
 ---
 
 # LogRecord
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.filter()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2316
+#graphify/code #graphify/EXTRACTED #community/Community_809

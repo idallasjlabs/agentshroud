@@ -22,7 +22,7 @@ tags:
 - [[.test_render_summary_empty()]] - `calls` [EXTRACTED]
 - [[.unreachable()]] - `method` [EXTRACTED]
 - [[Aggregated outcome across all hosts.]] - `rationale_for` [EXTRACTED]
-- [[Path_34]] - `uses` [INFERRED]
+- [[Path_37]] - `uses` [INFERRED]
 - [[TestBuildSshArgv]] - `uses` [INFERRED]
 - [[TestClassify]] - `uses` [INFERRED]
 - [[TestHostResult]] - `uses` [INFERRED]

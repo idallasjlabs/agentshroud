@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-13-network-security-egress.png"
 type: "image"
-community: "Community 1262"
+community: "Community 421"
 tags:
   - graphify/image
   - graphify/AMBIGUOUS
-  - community/Community_1262
+  - community/Community_421
 ---
 
 # Network Security / Egress Control Flowchart
@@ -14,4 +14,4 @@ tags:
 - [[HTTP CONNECT egress proxy (gateway8181; domain allowlist via agentshroud.yaml proxy.allowed_domains; blocks RFC1918 + unlisted domains; logs connections)]] - `conceptually_related_to` [EXTRACTED]
 - [[README_122]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/image #graphify/AMBIGUOUS #community/Community_1262
+#graphify/image #graphify/AMBIGUOUS #community/Community_421

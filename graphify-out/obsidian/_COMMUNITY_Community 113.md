@@ -8,11 +8,11 @@ members: 56
 **Members:** 56 nodes
 
 ## Members
-- [[.__call__()_4]] - code - gateway/tests/test_cron_state_monitor.py
 - [[.__call__()_5]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.__init__()_67]] - code - gateway/security/cron_state_monitor.py
-- [[.__init__()_146]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.__init__()_147]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.__call__()_6]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.__init__()_82]] - code - gateway/security/cron_state_monitor.py
+- [[.__init__()_161]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.__init__()_162]] - code - gateway/tests/test_cron_state_monitor.py
 - [[._dispatch_aggregate()]] - code - gateway/security/cron_state_monitor.py
 - [[._episode_id()]] - code - gateway/security/cron_state_monitor.py
 - [[._evaluate()]] - code - gateway/security/cron_state_monitor.py
@@ -73,10 +73,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 72]]
+- 2 edges to [[_COMMUNITY_Community 7]]
 - 1 edge to [[_COMMUNITY_Community 378]]
 - 1 edge to [[_COMMUNITY_Community 341]]
-- 1 edge to [[_COMMUNITY_Community 0]]
+- 1 edge to [[_COMMUNITY_Community 557]]
 
 ## Top bridge nodes
 - [[CronStateMonitor]] - degree 36, connects to 2 communities

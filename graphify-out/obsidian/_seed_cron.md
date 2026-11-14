@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/init-config.sh"
 type: "code"
-community: "Community 190"
+community: "Community 129"
 location: "L303-L343"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_190
+  - community/Community_129
 ---
 
 # _seed_cron
@@ -20,4 +20,4 @@ tags:
 - [[init-config.sh (Hermes first-boot config materialisation)]] - `defines` [EXTRACTED]
 - [[test_hermes_cron_seed.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_190
+#graphify/code #graphify/EXTRACTED #community/Community_129

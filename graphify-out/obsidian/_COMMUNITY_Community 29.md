@@ -1,20 +1,16 @@
 ---
 type: community
-members: 75
+members: 66
 ---
 
 # Community 29
 
-**Members:** 75 nodes
+**Members:** 66 nodes
 
 ## Members
-- [[.test_at_least_one()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_baseline_at_least_two()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_baseline_three_without_daemon_config()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_three_when_semgrep_and_precommit_present()]] - code - gateway/tests/test_scanner_integration.py
 - [[Apply mandatory gate overrides to domain scores.      Returns updated scores dic]] - rationale - gateway/security/scanner_integration.py
-- [[Path_17]] - code - gateway/security/scanner_integration.py
-- [[Return Fluent Bit log collector status.      Fluent Bit is a log shipper, not a]] - rationale - gateway/security/scanner_integration.py
+- [[Path_19]] - code - gateway/security/scanner_integration.py
+- [[Read and return the Docker daemon config from daemon.json, or {} if unavailable.]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if a non-zombie falco process is running inside this container.]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if app_state has a non-None attribute with the given name.]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if fluent-bit pidfile tmpfluent-bit.pid exists with a live PID.]] - rationale - gateway/security/scanner_integration.py
@@ -23,7 +19,6 @@ members: 75
 - [[Return True if wazuh-agentd is running as a local process inside this container.]] - rationale - gateway/security/scanner_integration.py
 - [[Return docker-compose.yml text for containerized-deployment evidence checks.]] - rationale - gateway/security/scanner_integration.py
 - [[Return scriptssecurity-scan.sh text, or empty string.]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 11 Secure Development (0-5).      1=Trivy in build, 2=semgrep conf]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 13 Identity & Authentication (0-5). IEC 62443 FR1.      1=API toke]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 14 Access Control & Authorization (0-5). IEC 62443 FR2.      1=rol]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 15 Data Confidentiality & Encryption (0-5). IEC 62443 FR4.      1=]] - rationale - gateway/security/scanner_integration.py
@@ -46,9 +41,6 @@ members: 75
 - [[Score domain 33 Data Exfiltration Prevention (0-5). OWASP ASI-06, MITRE ATLAS,]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 7 Network Segmentation (0-5).      3=Docker network architecture b]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 8 Secrets Management (0-5).      2=Docker secrets + key_vault base]] - rationale - gateway/security/scanner_integration.py
-- [[TestScoreNetworkSegmentation]] - code - gateway/tests/test_scanner_integration.py
-- [[TestScoreSecretsManagement]] - code - gateway/tests/test_scanner_integration.py
-- [[TestScoreSecureDevelopment]] - code - gateway/tests/test_scanner_integration.py
 - [[_app_state_has()]] - code - gateway/security/scanner_integration.py
 - [[_evaluate_mandatory_gates()]] - code - gateway/security/scanner_integration.py
 - [[_is_container_running()]] - code - gateway/security/scanner_integration.py
@@ -57,6 +49,7 @@ members: 75
 - [[_is_fluent_bit_running()]] - code - gateway/security/scanner_integration.py
 - [[_is_wazuh_agent_running()]] - code - gateway/security/scanner_integration.py
 - [[_read_compose_text()]] - code - gateway/security/scanner_integration.py
+- [[_read_docker_daemon_config()]] - code - gateway/security/scanner_integration.py
 - [[_score_access_control_authorization()]] - code - gateway/security/scanner_integration.py
 - [[_score_agent_behavior_integrity()]] - code - gateway/security/scanner_integration.py
 - [[_score_agent_identity_nhi()]] - code - gateway/security/scanner_integration.py
@@ -78,10 +71,8 @@ members: 75
 - [[_score_resource_availability()]] - code - gateway/security/scanner_integration.py
 - [[_score_rogue_agent_containment()]] - code - gateway/security/scanner_integration.py
 - [[_score_secrets_management()]] - code - gateway/security/scanner_integration.py
-- [[_score_secure_development()]] - code - gateway/security/scanner_integration.py
 - [[_score_tool_use_safety()]] - code - gateway/security/scanner_integration.py
 - [[_security_scan_sh_text()]] - code - gateway/security/scanner_integration.py
-- [[get_fluent_bit_summary()]] - code - gateway/security/scanner_integration.py
 - [[scanner_integration.py]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
@@ -92,24 +83,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 28 edges to [[_COMMUNITY_Community 420]]
+- 27 edges to [[_COMMUNITY_Community 420]]
 - 16 edges to [[_COMMUNITY_Community 67]]
-- 10 edges to [[_COMMUNITY_Community 943]]
-- 5 edges to [[_COMMUNITY_Community 363]]
-- 5 edges to [[_COMMUNITY_Community 842]]
-- 4 edges to [[_COMMUNITY_Community 102]]
-- 4 edges to [[_COMMUNITY_Community 207]]
-- 3 edges to [[_COMMUNITY_Community 1969]]
-- 2 edges to [[_COMMUNITY_Community 1287]]
+- 9 edges to [[_COMMUNITY_Community 1287]]
+- 5 edges to [[_COMMUNITY_Community 102]]
+- 5 edges to [[_COMMUNITY_Community 1552]]
+- 3 edges to [[_COMMUNITY_Community 1976]]
+- 3 edges to [[_COMMUNITY_Community 363]]
+- 2 edges to [[_COMMUNITY_Community 185]]
+- 2 edges to [[_COMMUNITY_Community 842]]
+- 2 edges to [[_COMMUNITY_Community 207]]
 - 1 edge to [[_COMMUNITY_Community 148]]
-- 1 edge to [[_COMMUNITY_Community 51]]
+- 1 edge to [[_COMMUNITY_Community 532]]
 - 1 edge to [[_COMMUNITY_Community 311]]
 - 1 edge to [[_COMMUNITY_Community 131]]
 - 1 edge to [[_COMMUNITY_Community 686]]
 
 ## Top bridge nodes
-- [[scanner_integration.py]] - degree 67, connects to 14 communities
-- [[Path_17]] - degree 34, connects to 6 communities
-- [[_score_network_segmentation()]] - degree 9, connects to 3 communities
+- [[scanner_integration.py]] - degree 67, connects to 15 communities
+- [[Path_19]] - degree 34, connects to 6 communities
+- [[_score_network_segmentation()]] - degree 9, connects to 2 communities
 - [[_score_secrets_management()]] - degree 7, connects to 2 communities
-- [[_score_secure_development()]] - degree 7, connects to 2 communities
+- [[_evaluate_mandatory_gates()]] - degree 7, connects to 2 communities

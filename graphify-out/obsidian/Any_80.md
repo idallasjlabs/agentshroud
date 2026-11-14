@@ -1,18 +1,19 @@
 ---
-source_file: "scripts/triage-cve-mitigations.py"
+source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "Community 8"
-location: "L835"
+community: "Community 5"
+location: "L62"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_8
+  - graphify/INFERRED
+  - community/Community_5
 ---
 
 # Any
 
 ## Connections
-- [[summarize()]] - `references` [EXTRACTED]
-- [[triage_entry()]] - `references` [EXTRACTED]
+- [[._build_bridge()]] - `references` [EXTRACTED]
+- [[ResourceGuard]] - `uses` [INFERRED]
+- [[ResourceLimits]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_8
+#graphify/code #graphify/INFERRED #community/Community_5

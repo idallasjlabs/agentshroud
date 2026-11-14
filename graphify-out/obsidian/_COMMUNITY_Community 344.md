@@ -1,54 +1,44 @@
 ---
 type: community
-members: 41
+members: 31
 ---
 
 # Community 344
 
-**Members:** 41 nodes
+**Members:** 31 nodes
 
 ## Members
-- [[.__init__()_123]] - code - gateway/security/tool_result_injection.py
-- [[._check_encoded_content()]] - code - gateway/security/prompt_guard.py
-- [[._check_unicode_tricks()]] - code - gateway/security/prompt_guard.py
-- [[._detect_hidden_instructions()]] - code - gateway/security/context_guard.py
-- [[._detect_instruction_injection()]] - code - gateway/security/context_guard.py
-- [[._detect_rapid_context_growth()]] - code - gateway/security/context_guard.py
-- [[._detect_repetition_attacks()]] - code - gateway/security/context_guard.py
-- [[.analyze_message()]] - code - gateway/security/context_guard.py
-- [[.scan()_4]] - code - gateway/security/prompt_guard.py
-- [[.scan_tool_result()_2]] - code - gateway/security/prompt_guard.py
-- [[.scan_tool_result()_3]] - code - gateway/security/tool_result_injection.py
-- [[.should_block_message()]] - code - gateway/security/context_guard.py
-- [[Analyze a message for context poisoning attempts.          Args             ses]] - rationale - gateway/security/context_guard.py
-- [[CVE-2026-22708 — AI Agent Container Escape via Prompt Injection]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[CVE-2026-30741 — RCE via Request-Side Prompt Injection]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[Check for suspicious base64 content that decodes to injection attempts.]] - rationale - gateway/security/prompt_guard.py
-- [[Context tracking for a session.]] - rationale - gateway/security/context_guard.py
-- [[ContextAttack]] - code - gateway/security/context_guard.py
-- [[Detect hidden instructions buried in large text blocks.]] - rationale - gateway/security/context_guard.py
-- [[Detect instruction injection attempts.]] - rationale - gateway/security/context_guard.py
-- [[Detect potential base64-encoded payloads in text.     Returns list of decoded st]] - rationale - gateway/security/input_normalizer.py
-- [[Detect rapid context window filling.]] - rationale - gateway/security/context_guard.py
-- [[Detect repetition-based context stuffing attacks.]] - rationale - gateway/security/context_guard.py
-- [[Detect unicode obfuscation tricks.]] - rationale - gateway/security/prompt_guard.py
-- [[Detected context window attack attempt.]] - rationale - gateway/security/context_guard.py
-- [[Determine if a message should be blocked.          Returns             Tuple of]] - rationale - gateway/security/context_guard.py
-- [[Initialize the scanner with optional custom rules.          Args             cu]] - rationale - gateway/security/tool_result_injection.py
-- [[InjectionResult]] - code - gateway/security/tool_result_injection.py
-- [[InjectionRule]] - code - gateway/security/tool_result_injection.py
-- [[Result from tool result injection scan.]] - rationale - gateway/security/tool_result_injection.py
-- [[Rule for detecting injection patterns in tool results.]] - rationale - gateway/security/tool_result_injection.py
-- [[Scan input text for prompt injection patterns.          Args             text]] - rationale - gateway/security/prompt_guard.py
-- [[Scan tool result content for indirect prompt injection.          Tool results (w]] - rationale - gateway/security/prompt_guard.py
-- [[Scan tool result content for injection attempts.          Args             tool]] - rationale - gateway/security/tool_result_injection.py
-- [[SessionContext]] - code - gateway/security/context_guard.py
-- [[Strip potentially malicious markdown from tool results.      Removes     - Mark]] - rationale - gateway/security/input_normalizer.py
-- [[context_guard.py]] - code - gateway/security/context_guard.py
-- [[detect_base64_payloads()]] - code - gateway/security/input_normalizer.py
-- [[input_normalizer.py]] - code - gateway/security/input_normalizer.py
-- [[strip_markdown_exfil()]] - code - gateway/security/input_normalizer.py
-- [[tool_result_injection.py]] - code - gateway/security/tool_result_injection.py
+- [[.__init__()_137]] - code - gateway/security/tool_chain_analyzer.py
+- [[._load_custom_patterns()]] - code - gateway/security/tool_chain_analyzer.py
+- [[._load_default_patterns()]] - code - gateway/security/tool_chain_analyzer.py
+- [[.add_alert_callback()_2]] - code - gateway/security/tool_chain_analyzer.py
+- [[.approve_pending_call()]] - code - gateway/security/tool_chain_analyzer.py
+- [[.get_global_stats()_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[.get_session_stats()_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[.sanitize_tool_params()]] - code - gateway/security/tool_chain_analyzer.py
+- [[.score_reversibility()]] - code - gateway/security/tool_chain_analyzer.py
+- [[.test_custom_patterns()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_disabled_analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_tool_chain_analyzer_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[Add a callback function for chain detection alerts.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Any_72]] - code - gateway/security/tool_chain_analyzer.py
+- [[Approve a pending tool call that required approval.          Args             s]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Create a ToolChainAnalyzer instance for testing.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Get global analyzer statistics.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Get statistics for a session._1]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Initialize the tool chain analyzer.          Args             config Configura]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Load custom patterns from configuration.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Load default suspicious chain patterns.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Main tool chain analysis engine.      Tracks sequences of tool calls and identif]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Return a reversibility score for the given tool call (1.0 = safe, 0.1 = irrevers]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Scan tool parameters for injection payloads and return sanitized copy.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Test loading custom patterns from configuration.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that disabled analyzer allows all calls.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[ToolChainAnalyzer]] - code - gateway/security/tool_chain_analyzer.py
+- [[ToolChainAnalyzer._load_custom_patterns]] - code - gateway/security/tool_chain_analyzer.py
+- [[ToolChainAnalyzer._load_default_patterns]] - code - gateway/security/tool_chain_analyzer.py
+- [[callable_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[tool_chain_analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -58,24 +48,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_Community 0]]
-- 6 edges to [[_COMMUNITY_Community 14]]
-- 3 edges to [[_COMMUNITY_Community 919]]
-- 3 edges to [[_COMMUNITY_Community 24]]
-- 3 edges to [[_COMMUNITY_Community 141]]
-- 3 edges to [[_COMMUNITY_Community 154]]
-- 3 edges to [[_COMMUNITY_Community 72]]
-- 2 edges to [[_COMMUNITY_Community 96]]
-- 2 edges to [[_COMMUNITY_Community 162]]
-- 1 edge to [[_COMMUNITY_Community 8]]
-- 1 edge to [[_COMMUNITY_Community 223]]
-- 1 edge to [[_COMMUNITY_Community 22]]
-- 1 edge to [[_COMMUNITY_Community 9]]
-- 1 edge to [[_COMMUNITY_Community 115]]
+- 15 edges to [[_COMMUNITY_Community 72]]
+- 11 edges to [[_COMMUNITY_Community 505]]
+- 10 edges to [[_COMMUNITY_Community 541]]
+- 3 edges to [[_COMMUNITY_Community 135]]
+- 2 edges to [[_COMMUNITY_Community 2030]]
+- 1 edge to [[_COMMUNITY_Community 1]]
+- 1 edge to [[_COMMUNITY_Community 2188]]
+- 1 edge to [[_COMMUNITY_Community 1002]]
 
 ## Top bridge nodes
-- [[tool_result_injection.py]] - degree 11, connects to 6 communities
-- [[.analyze_message()]] - degree 12, connects to 4 communities
-- [[context_guard.py]] - degree 9, connects to 4 communities
-- [[.scan()_4]] - degree 8, connects to 3 communities
-- [[.scan_tool_result()_3]] - degree 7, connects to 3 communities
+- [[ToolChainAnalyzer]] - degree 49, connects to 8 communities
+- [[._load_custom_patterns()]] - degree 6, connects to 2 communities
+- [[Any_72]] - degree 6, connects to 1 community
+- [[._load_default_patterns()]] - degree 4, connects to 1 community
+- [[.sanitize_tool_params()]] - degree 4, connects to 1 community

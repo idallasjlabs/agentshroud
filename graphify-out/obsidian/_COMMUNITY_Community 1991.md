@@ -25,12 +25,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 122]]
-- 3 edges to [[_COMMUNITY_Community 455]]
-- 2 edges to [[_COMMUNITY_Community 381]]
+- 4 edges to [[_COMMUNITY_Community 122]]
+- 3 edges to [[_COMMUNITY_Community 381]]
+- 2 edges to [[_COMMUNITY_Community 455]]
 - 2 edges to [[_COMMUNITY_Community 791]]
 - 1 edge to [[_COMMUNITY_Community 198]]
+- 1 edge to [[_COMMUNITY_Community 1177]]
 - 1 edge to [[_COMMUNITY_Community 40]]
 
 ## Top bridge nodes
-- [[test_key_rotation.py]] - degree 18, connects to 6 communities
+- [[test_key_rotation.py]] - degree 18, connects to 7 communities

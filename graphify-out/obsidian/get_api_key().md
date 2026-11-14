@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Get API key from argument first, then environment.]] - `rationale_for` [EXTRACTED]
 - [[generate_image.py]] - `contains` [EXTRACTED]
-- [[main()_31]] - `calls` [EXTRACTED]
+- [[main()_33]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_382

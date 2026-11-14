@@ -1,24 +1,30 @@
 ---
 type: community
-members: 11
+members: 17
 ---
 
 # Community 855
 
-**Members:** 11 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[Build Process]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Config Defaults (Baked In)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Directory Structure_1]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Dockerfile — Bot (OpenClaw)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Dockerfile.bot]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Image Labels (OCI)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Pre-installed Tools]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Related Notes_17]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Scripts Copied to `usrlocalbin`]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Security Patches Applied at Build Time]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[TODO (from source)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[daily_calls]] - code - config/inbound-edge/schema.json
+- [[daily_delegations]] - code - config/inbound-edge/schema.json
+- [[max_concurrency]] - code - config/inbound-edge/schema.json
+- [[maximum]] - code - config/inbound-edge/schema.json
+- [[maximum_2]] - code - config/inbound-edge/schema.json
+- [[maximum_3]] - code - config/inbound-edge/schema.json
+- [[maximum_4]] - code - config/inbound-edge/schema.json
+- [[minimum]] - code - config/inbound-edge/schema.json
+- [[minimum_2]] - code - config/inbound-edge/schema.json
+- [[minimum_3]] - code - config/inbound-edge/schema.json
+- [[minimum_4]] - code - config/inbound-edge/schema.json
+- [[per_client_per_minute]] - code - config/inbound-edge/schema.json
+- [[properties_2]] - code - config/inbound-edge/schema.json
+- [[type_14]] - code - config/inbound-edge/schema.json
+- [[type_16]] - code - config/inbound-edge/schema.json
+- [[type_17]] - code - config/inbound-edge/schema.json
+- [[type_18]] - code - config/inbound-edge/schema.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,8 +34,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 944]]
-- 1 edge to [[_COMMUNITY_Community 739]]
+- 1 edge to [[_COMMUNITY_Community 2330]]
+- 1 edge to [[_COMMUNITY_Community 2331]]
 
 ## Top bridge nodes
-- [[Dockerfile — Bot (OpenClaw)]] - degree 12, connects to 2 communities
+- [[properties_2]] - degree 6, connects to 2 communities

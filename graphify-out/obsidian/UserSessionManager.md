@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Community 1"
+community: "Community 61"
 location: "L121"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1
+  - community/Community_61
 ---
 
 # UserSessionManager
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_45]] - `calls` [EXTRACTED]
-- [[.__init__()_115]] - `method` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_60]] - `calls` [EXTRACTED]
+- [[.__init__()_130]] - `method` [EXTRACTED]
 - [[._load_sessions()]] - `method` [EXTRACTED]
 - [[._save_sessions()]] - `method` [EXTRACTED]
 - [[._session_key()]] - `method` [EXTRACTED]
@@ -44,8 +44,8 @@ tags:
 - [[.test_session_persistence()]] - `calls` [EXTRACTED]
 - [[.update_user_trust_level()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
-- [[Any_24]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
+- [[Any_34]] - `uses` [INFERRED]
 - [[AppState]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[FastAPI_1]] - `uses` [INFERRED]
@@ -54,7 +54,7 @@ tags:
 - [[Manages per-user, per-bot session isolation.      Sessions are keyed by (user_id]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[Path_4]] - `uses` [INFERRED]
+- [[Path_6]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
@@ -159,4 +159,4 @@ tags:
 - [[usm()]] - `calls` [EXTRACTED]
 - [[webhook_receiver.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1
+#graphify/code #graphify/INFERRED #community/Community_61

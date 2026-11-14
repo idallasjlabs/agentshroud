@@ -12,7 +12,7 @@ tags:
 # GroupWorkspaceManager
 
 ## Connections
-- [[.__init__()_84]] - `method` [EXTRACTED]
+- [[.__init__()_99]] - `method` [EXTRACTED]
 - [[._group_workspace_manager()]] - `calls` [EXTRACTED]
 - [[._is_owner()_1]] - `method` [EXTRACTED]
 - [[._require_memory()]] - `method` [EXTRACTED]
@@ -32,7 +32,7 @@ tags:
 - [[.test_no_teams_config_fails_closed()]] - `calls` [EXTRACTED]
 - [[.test_rbac_without_is_owner_callable()]] - `calls` [EXTRACTED]
 - [[.test_two_members_of_same_group_share_one_workspace_id()]] - `calls` [EXTRACTED]
-- [[Any_21]] - `uses` [INFERRED]
+- [[Any_31]] - `uses` [INFERRED]
 - [[GroupRoleResolver]] - `semantically_similar_to` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[Resolve and access-control shared group workspaces.      Args         teams_con]] - `rationale_for` [EXTRACTED]

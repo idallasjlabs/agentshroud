@@ -12,10 +12,11 @@ tags:
 # _FakeRBAC
 
 ## Connections
-- [[.__init__()_185]] - `method` [EXTRACTED]
+- [[.__init__()_209]] - `method` [EXTRACTED]
 - [[.get_user_role()_3]] - `method` [EXTRACTED]
 - [[.test_build_record_defaults_to_normal_when_no_lockdown_state()]] - `calls` [EXTRACTED]
 - [[.test_build_record_does_not_crash_if_lockdown_missing()]] - `calls` [EXTRACTED]
+- [[.test_build_record_prefers_app_wide_progressive_lockdown()]] - `calls` [EXTRACTED]
 - [[.test_build_record_reports_real_lockdown_level()]] - `calls` [EXTRACTED]
 - [[.test_build_record_reports_suspended_level()]] - `calls` [EXTRACTED]
 - [[.test_list_contributors_populates_paused_per_user()]] - `calls` [EXTRACTED]

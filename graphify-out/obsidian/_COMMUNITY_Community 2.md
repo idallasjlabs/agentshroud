@@ -341,8 +341,8 @@ SORT file.name ASC
 ## Connections to other communities
 - 24 edges to [[_COMMUNITY_Community 1273]]
 - 18 edges to [[_COMMUNITY_Community 436]]
+- 16 edges to [[_COMMUNITY_Community 2325]]
 - 15 edges to [[_COMMUNITY_Community 1947]]
-- 14 edges to [[_COMMUNITY_Community 2325]]
 - 14 edges to [[_COMMUNITY_Community 626]]
 - 12 edges to [[_COMMUNITY_Community 2007]]
 - 12 edges to [[_COMMUNITY_Community 2008]]
@@ -355,13 +355,12 @@ SORT file.name ASC
 - 4 edges to [[_COMMUNITY_Community 14]]
 - 4 edges to [[_COMMUNITY_Community 99]]
 - 4 edges to [[_COMMUNITY_Community 1074]]
-- 2 edges to [[_COMMUNITY_Community 1565]]
 - 1 edge to [[_COMMUNITY_Community 63]]
-- 1 edge to [[_COMMUNITY_Community 1130]]
+- 1 edge to [[_COMMUNITY_Community 138]]
 
 ## Top bridge nodes
-- [[TelegramAPIProxy_3]] - degree 220, connects to 17 communities
-- [[_make_sanitizer()]] - degree 218, connects to 15 communities
+- [[TelegramAPIProxy_3]] - degree 220, connects to 16 communities
+- [[_make_sanitizer()]] - degree 218, connects to 14 communities
 - [[TestOutboundPipelineIntegration]] - degree 189, connects to 12 communities
 - [[TestDefaultBotId]] - degree 9, connects to 4 communities
 - [[TestOwnerMirrorCoalescing]] - degree 8, connects to 4 communities

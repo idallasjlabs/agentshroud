@@ -12,7 +12,7 @@ tags:
 # compute_backoff()
 
 ## Connections
-- [[.run()]] - `calls` [EXTRACTED]
+- [[.run()_4]] - `calls` [EXTRACTED]
 - [[.test_capped_at_cap_for_large_attempts()]] - `calls` [EXTRACTED]
 - [[.test_first_attempt_uses_base()]] - `calls` [EXTRACTED]
 - [[.test_grows_exponentially_with_attempt()]] - `calls` [EXTRACTED]

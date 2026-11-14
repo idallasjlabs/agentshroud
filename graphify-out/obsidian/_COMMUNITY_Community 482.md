@@ -36,7 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1014]]
+- 1 edge to [[_COMMUNITY_Community 333]]
 
 ## Top bridge nodes
 - [[Crash Recovery_2]] - degree 9, connects to 1 community

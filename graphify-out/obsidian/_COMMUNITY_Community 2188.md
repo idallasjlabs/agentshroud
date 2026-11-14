@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Blue Team Security Auditor (SEC-DEFENSE)_1]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Purpose_66]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[README_71]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Related Skills_87]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Usage_89]] - document - docker/config/hermes/skills/i-sec-defense/README.md
+- [[.to_dict()_13]] - code - gateway/security/soc_correlation.py
+- [[Any_71]] - code - gateway/security/soc_correlation.py
+- [[CorrelationSummary]] - code - gateway/security/soc_correlation.py
+- [[_renderCorrelation()]] - code - gateway/soc/static/soc.js
+- [[soc_correlation.py]] - code - gateway/security/soc_correlation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +22,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 90]]
+- 2 edges to [[_COMMUNITY_Community 10]]
+- 1 edge to [[_COMMUNITY_Community 344]]
+- 1 edge to [[_COMMUNITY_Community 82]]
+- 1 edge to [[_COMMUNITY_Community 965]]
 
 ## Top bridge nodes
-- [[Blue Team Security Auditor (SEC-DEFENSE)_1]] - degree 5, connects to 1 community
+- [[CorrelationSummary]] - degree 5, connects to 2 communities
+- [[_renderCorrelation()]] - degree 3, connects to 2 communities
+- [[soc_correlation.py]] - degree 2, connects to 1 community

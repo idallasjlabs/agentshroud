@@ -1,17 +1,20 @@
 ---
 type: community
-members: 4
+members: 7
 ---
 
 # Community 2033
 
-**Members:** 4 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[.send_request()]] - code - gateway/proxy/mcp_proxy.py
-- [[.start()_1]] - code - gateway/proxy/mcp_proxy.py
-- [[Send a JSON-RPC request and read the response.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Start the MCP server process.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Operating Rules (Non-Negotiable)_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Rule 1 All Regions, Every Time_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Rule 2 Default Read-Only_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Rule 3 Script Everything_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Rule 4 Evidence-First Recommendations_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Rule 5 Safe Tagging_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Rule 6 Never Delete Automatically_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 132]]
-- 1 edge to [[_COMMUNITY_Community 54]]
+- 1 edge to [[_COMMUNITY_Community 494]]
 
 ## Top bridge nodes
-- [[.send_request()]] - degree 4, connects to 2 communities
-- [[.start()_1]] - degree 3, connects to 1 community
+- [[Operating Rules (Non-Negotiable)_6]] - degree 7, connects to 1 community

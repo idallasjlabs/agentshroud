@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_owner_pending_command_shows_pending_active_and_revoked()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner pending should return deterministic snapshot of pendingcollaboratorrevo]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_comprehensive_attack_scenarios()]] - code - gateway/tests/test_outbound_filter.py
+- [[Test against realistic attack scenarios.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,8 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 4]]
-- 1 edge to [[_COMMUNITY_Community 12]]
+- 1 edge to [[_COMMUNITY_Community 98]]
 
 ## Top bridge nodes
-- [[.test_owner_pending_command_shows_pending_active_and_revoked()]] - degree 7, connects to 2 communities
+- [[.test_comprehensive_attack_scenarios()]] - degree 2, connects to 1 community

@@ -1,19 +1,21 @@
 ---
 type: community
-members: 6
+members: 8
 ---
 
 # Community 1966
 
-**Members:** 6 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[._extract_owner_target()]] - code - gateway/proxy/telegram_proxy.py
-- [[._extract_owner_target_resolved()]] - code - gateway/proxy/telegram_proxy.py
-- [[._resolve_pending_username_target()]] - code - gateway/proxy/telegram_proxy.py
-- [[Parse owner command target as numeric id or known collaborator alias.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Resolve owner target from pending-request username aliases (e.g., approve ana).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Resolve target by id, static alias, or pending username alias.          Resoluti]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Hermes — Reference Verifier_6]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[Input Requirements_65]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[Output Format_89]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[Persona_51]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[Quality Checklist_58]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[Role_232]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[SKILL_98]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[System Prompt_51]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 14]]
+- 1 edge to [[_COMMUNITY_Community 174]]
 
 ## Top bridge nodes
-- [[._extract_owner_target_resolved()]] - degree 5, connects to 1 community
-- [[._extract_owner_target()]] - degree 4, connects to 1 community
-- [[._resolve_pending_username_target()]] - degree 4, connects to 1 community
+- [[Hermes — Reference Verifier_6]] - degree 8, connects to 1 community

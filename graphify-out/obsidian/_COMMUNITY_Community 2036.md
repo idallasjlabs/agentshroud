@@ -1,17 +1,20 @@
 ---
 type: community
-members: 4
+members: 7
 ---
 
 # Community 2036
 
-**Members:** 4 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[._enforce_group_workspace_access()]] - code - gateway/proxy/telegram_proxy.py
-- [[._group_workspace_manager()]] - code - gateway/proxy/telegram_proxy.py
-- [[Build a GroupWorkspaceManager from current teamsRBAC config.          Returns a]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Fail-closed member check for a group-context inbound message.          Returns T]] - rationale - gateway/proxy/telegram_proxy.py
+- [[$id]] - code - config/inbound-edge/schema.json
+- [[$schema]] - code - config/inbound-edge/schema.json
+- [[additionalProperties]] - code - config/inbound-edge/schema.json
+- [[required]] - code - config/inbound-edge/schema.json
+- [[schema.json]] - code - config/inbound-edge/schema.json
+- [[title]] - code - config/inbound-edge/schema.json
+- [[type]] - code - config/inbound-edge/schema.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 61]]
+- 1 edge to [[_COMMUNITY_Community 943]]
 
 ## Top bridge nodes
-- [[._group_workspace_manager()]] - degree 4, connects to 2 communities
-- [[._enforce_group_workspace_access()]] - degree 4, connects to 1 community
+- [[schema.json]] - degree 7, connects to 1 community

@@ -12,7 +12,7 @@ tags:
 # A2APolicyEngine
 
 ## Connections
-- [[.__init__()_50]] - `method` [EXTRACTED]
+- [[.__init__()_65]] - `method` [EXTRACTED]
 - [[._decide()]] - `method` [EXTRACTED]
 - [[._tier_for()]] - `method` [EXTRACTED]
 - [[.enforce()]] - `method` [EXTRACTED]
@@ -31,12 +31,12 @@ tags:
 - [[A2AProxy]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `uses` [INFERRED]
 - [[A2AProxyResult]] - `uses` [INFERRED]
-- [[Any_11]] - `uses` [INFERRED]
+- [[Any_21]] - `uses` [INFERRED]
 - [[Decides allow  deny  require-approval for inbound A2A requests.      Usage]] - `rationale_for` [EXTRACTED]
 - [[Hermes A2A Plugin Upstream Gaps (83701, 8053480779, 78298, 77872, 81042)]] - `implements` [EXTRACTED]
 - [[HermesA2AForwarder]] - `uses` [INFERRED]
 - [[ParsedA2ARequest]] - `uses` [INFERRED]
-- [[Request_7]] - `uses` [INFERRED]
+- [[Request_8]] - `uses` [INFERRED]
 - [[Response]] - `uses` [INFERRED]
 - [[SubagentMonitor]] - `semantically_similar_to` [INFERRED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `uses` [INFERRED]

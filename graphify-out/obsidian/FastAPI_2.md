@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Community 103"
+community: "Community 9"
 location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_103
+  - community/Community_9
 ---
 
 # FastAPI
@@ -19,4 +19,4 @@ tags:
 - [[_make_app()]] - `references` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_103
+#graphify/code #graphify/INFERRED #community/Community_9

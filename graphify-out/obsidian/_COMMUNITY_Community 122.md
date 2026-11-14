@@ -1,14 +1,13 @@
 ---
 type: community
-members: 34
+members: 29
 ---
 
 # Community 122
 
-**Members:** 34 nodes
+**Members:** 29 nodes
 
 ## Members
-- [[.__init__()_88]] - code - gateway/security/key_rotation.py
 - [[.add_custom_policy()]] - code - gateway/security/key_rotation_config.py
 - [[.get_op_reference()]] - code - gateway/security/key_rotation_config.py
 - [[.get_policy()_1]] - code - gateway/security/key_rotation_config.py
@@ -24,12 +23,8 @@ members: 34
 - [[Configuration for key rotation policies and schedules.]] - rationale - gateway/security/key_rotation_config.py
 - [[CredentialRotationPolicy_1]] - code - gateway/security/key_rotation_config.py
 - [[Get rotation policy for a credential type, falling back to api_key default.]] - rationale - gateway/security/key_rotation_config.py
-- [[Initialize the key rotation manager.]] - rationale - gateway/security/key_rotation.py
-- [[KeyRotationConfig]] - code - gateway/security/key_rotation.py
 - [[KeyRotationConfig_1]] - code - gateway/security/key_rotation_config.py
 - [[Rotation policy for a specific credential type.]] - rationale - gateway/security/key_rotation_config.py
-- [[RotationStatus]] - code - gateway/security/key_rotation.py
-- [[Status of a credential rotation.]] - rationale - gateway/security/key_rotation.py
 - [[Test adding custom policy for new credential type.]] - rationale - gateway/tests/test_key_rotation.py
 - [[Test credential rotation policy configuration.]] - rationale - gateway/tests/test_key_rotation.py
 - [[Test default config includes policies for common credential types.]] - rationale - gateway/tests/test_key_rotation.py
@@ -39,7 +34,7 @@ members: 34
 - [[Test op reference building.]] - rationale - gateway/tests/test_key_rotation.py
 - [[TestCredentialRotationPolicy]] - code - gateway/tests/test_key_rotation.py
 - [[TestKeyRotationConfig]] - code - gateway/tests/test_key_rotation.py
-- [[datetime_4]] - code - gateway/security/key_rotation.py
+- [[datetime_5]] - code - gateway/security/key_rotation.py
 - [[key_rotation.py]] - code - gateway/security/key_rotation.py
 - [[key_rotation_config.py]] - code - gateway/security/key_rotation_config.py
 
@@ -51,21 +46,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 20 edges to [[_COMMUNITY_Community 381]]
-- 14 edges to [[_COMMUNITY_Community 455]]
-- 11 edges to [[_COMMUNITY_Community 198]]
-- 8 edges to [[_COMMUNITY_Community 791]]
-- 6 edges to [[_COMMUNITY_Community 166]]
-- 5 edges to [[_COMMUNITY_Community 1991]]
-- 2 edges to [[_COMMUNITY_Community 8]]
-- 2 edges to [[_COMMUNITY_Community 2321]]
-- 1 edge to [[_COMMUNITY_Community 6]]
+- 17 edges to [[_COMMUNITY_Community 381]]
+- 15 edges to [[_COMMUNITY_Community 198]]
+- 9 edges to [[_COMMUNITY_Community 455]]
+- 6 edges to [[_COMMUNITY_Community 791]]
+- 4 edges to [[_COMMUNITY_Community 1991]]
+- 3 edges to [[_COMMUNITY_Community 1177]]
+- 3 edges to [[_COMMUNITY_Community 17]]
+- 2 edges to [[_COMMUNITY_Community 1342]]
+- 1 edge to [[_COMMUNITY_Community 8]]
+- 1 edge to [[_COMMUNITY_Community 72]]
 - 1 edge to [[_COMMUNITY_Community 141]]
-- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 73]]
 
 ## Top bridge nodes
-- [[KeyRotationConfig_1]] - degree 44, connects to 7 communities
+- [[KeyRotationConfig_1]] - degree 44, connects to 8 communities
 - [[key_rotation.py]] - degree 12, connects to 7 communities
-- [[RotationStatus]] - degree 20, connects to 6 communities
-- [[CredentialRotationPolicy_1]] - degree 24, connects to 5 communities
+- [[CredentialRotationPolicy_1]] - degree 24, connects to 6 communities
 - [[TestKeyRotationConfig]] - degree 12, connects to 4 communities
+- [[TestCredentialRotationPolicy]] - degree 9, connects to 4 communities

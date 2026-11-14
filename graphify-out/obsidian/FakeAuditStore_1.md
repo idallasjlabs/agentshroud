@@ -12,9 +12,10 @@ tags:
 # FakeAuditStore
 
 ## Connections
-- [[.__init__()_189]] - `method` [EXTRACTED]
+- [[.__init__()_214]] - `method` [EXTRACTED]
 - [[.get_recent_entries()_1]] - `method` [EXTRACTED]
 - [[ApprovalMode]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
 - [[test_egress_log_filters_egress_events()]] - `calls` [EXTRACTED]
 - [[test_security_events_with_filters()]] - `calls` [EXTRACTED]

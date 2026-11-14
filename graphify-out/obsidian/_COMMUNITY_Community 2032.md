@@ -1,17 +1,20 @@
 ---
 type: community
-members: 4
+members: 7
 ---
 
 # Community 2032
 
-**Members:** 4 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[.shutdown()]] - code - gateway/proxy/mcp_proxy.py
-- [[.stop()_3]] - code - gateway/proxy/mcp_proxy.py
-- [[.stop_all()]] - code - gateway/proxy/mcp_proxy.py
-- [[Clean shutdown — close all connections.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Dependency Graph_1]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Dependency Graph]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Gateway Module Dependencies]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Gateway Startup Initialization Order]] - concept - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Key Initialization Order (main.py lifespan)]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Python Package Dependencies]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Related Notes_70]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,10 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 132]]
-- 1 edge to [[_COMMUNITY_Community 64]]
+- 1 edge to [[_COMMUNITY_Community 7]]
 
 ## Top bridge nodes
-- [[.stop_all()]] - degree 3, connects to 1 community
-- [[.shutdown()]] - degree 3, connects to 1 community
-- [[.stop()_3]] - degree 2, connects to 1 community
+- [[Dependency Graph]] - degree 3, connects to 1 community

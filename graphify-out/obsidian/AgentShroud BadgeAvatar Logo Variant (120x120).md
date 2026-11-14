@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logos/variants/badge-120x120.png"
 type: "image"
-community: "Community 162"
+community: "Community 794"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Community_162
+  - community/Community_794
 ---
 
 # AgentShroud Badge/Avatar Logo Variant (120x120)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Brand Collateral Mockup]] - `semantically_similar_to` [INFERRED]
 - [[AgentShroud Primary Logo Lockup]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Community_162
+#graphify/image #graphify/INFERRED #community/Community_794

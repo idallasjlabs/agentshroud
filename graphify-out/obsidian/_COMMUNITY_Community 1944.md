@@ -1,19 +1,21 @@
 ---
 type: community
-members: 6
+members: 8
 ---
 
 # Community 1944
 
-**Members:** 6 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[AgentShroud — Vault Home]] - document - docs/vault/00 - START HERE/Home.md
-- [[Configuration & Infrastructure]] - document - docs/vault/00 - START HERE/Home.md
-- [[Diagrams]] - document - docs/vault/00 - START HERE/Home.md
-- [[Module Index]] - document - docs/vault/00 - START HERE/Home.md
-- [[Navigate This Vault]] - document - docs/vault/00 - START HERE/Home.md
-- [[Operations_1]] - document - docs/vault/00 - START HERE/Home.md
+- [[Globally Denied Command]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[HTTP 403 — SSH Host Not Allowed]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[Related Notes_62]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[SSH Connection Timeout]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[SSH Key Not Found]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[SSH Proxy Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[SSH Proxy Errors]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[Session Duration Exceeded]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 94]]
+- 1 edge to [[_COMMUNITY_Community 1559]]
 
 ## Top bridge nodes
-- [[AgentShroud — Vault Home]] - degree 6, connects to 1 community
+- [[SSH Proxy Errors]] - degree 2, connects to 1 community

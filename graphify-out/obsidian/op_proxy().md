@@ -2,7 +2,7 @@
 source_file: "gateway/ingest_api/main.py"
 type: "code"
 community: "Community 978"
-location: "L543"
+location: "L548"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[1Password credential proxy (P2 credential isolation).      Reads a secret from]] - `rationale_for` [EXTRACTED]
 - [[AuthRequired]] - `references` [EXTRACTED]
+- [[HTTPException]] - `calls` [EXTRACTED]
 - [[OpProxyRequest]] - `references` [EXTRACTED]
 - [[_is_op_reference_allowed()]] - `calls` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]

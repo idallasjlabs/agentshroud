@@ -35,7 +35,7 @@ members: 52
 - [[.proxy_messages()]] - code - gateway/proxy/llm_proxy.py
 - [[.proxy_messages_streaming()]] - code - gateway/proxy/llm_proxy.py
 - [[Add 'null' as an accepted type for every non-required tool parameter, in place.]] - rationale - gateway/proxy/llm_proxy.py
-- [[Any_14]] - code - gateway/proxy/llm_proxy.py
+- [[Any_24]] - code - gateway/proxy/llm_proxy.py
 - [[Append 'no_think' to the last user message, in place, if not already present.]] - rationale - gateway/proxy/llm_proxy.py
 - [[Apply XML and credential filters to text.]] - rationale - gateway/proxy/llm_proxy.py
 - [[Apply outbound text filters to known streaming response formats.          Also e]] - rationale - gateway/proxy/llm_proxy.py
@@ -72,11 +72,12 @@ SORT file.name ASC
 - 27 edges to [[_COMMUNITY_Community 1278]]
 - 6 edges to [[_COMMUNITY_Community 361]]
 - 5 edges to [[_COMMUNITY_Community 360]]
-- 2 edges to [[_COMMUNITY_Community 142]]
+- 1 edge to [[_COMMUNITY_Community 142]]
+- 1 edge to [[_COMMUNITY_Community 577]]
 - 1 edge to [[_COMMUNITY_Community 1058]]
 
 ## Top bridge nodes
-- [[.proxy_messages()]] - degree 29, connects to 5 communities
+- [[.proxy_messages()]] - degree 29, connects to 6 communities
 - [[._failover_request()]] - degree 13, connects to 3 communities
 - [[._local_secondary_failover_request()]] - degree 9, connects to 2 communities
 - [[.proxy_messages_streaming()]] - degree 9, connects to 1 community

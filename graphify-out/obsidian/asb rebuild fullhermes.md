@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "Community 126"
+community: "Community 295"
 location: "L616-L636"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_126
+  - community/Community_295
 ---
 
 # asb rebuild [full|hermes]
@@ -16,4 +16,4 @@ tags:
 - [[S16 asb rebuildclean-rebuild build with $_PROFILE_FLAG]] - `references` [EXTRACTED]
 - [[_PROFILE_FLAG]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_126
+#graphify/code #graphify/EXTRACTED #community/Community_295

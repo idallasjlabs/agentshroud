@@ -1,15 +1,17 @@
 ---
 type: community
-members: 2
+members: 4
 ---
 
 # Community 2330
 
-**Members:** 2 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_prompt_injection_detection()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[Test prompt injection detection.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[additionalProperties_3]] - code - config/inbound-edge/schema.json
+- [[limits]] - code - config/inbound-edge/schema.json
+- [[required_2]] - code - config/inbound-edge/schema.json
+- [[type_13]] - code - config/inbound-edge/schema.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +21,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 16]]
+- 1 edge to [[_COMMUNITY_Community 943]]
+- 1 edge to [[_COMMUNITY_Community 855]]
 
 ## Top bridge nodes
-- [[.test_prompt_injection_detection()]] - degree 2, connects to 1 community
+- [[limits]] - degree 5, connects to 2 communities

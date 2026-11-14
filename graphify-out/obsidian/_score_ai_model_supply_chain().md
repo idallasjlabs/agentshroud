@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Community 842"
+community: "Community 1552"
 location: "L1934"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_842
+  - community/Community_1552
 ---
 
 # _score_ai_model_supply_chain()
 
 ## Connections
-- [[Path_17]] - `calls` [EXTRACTED]
+- [[Path_19]] - `calls` [EXTRACTED]
 - [[Score domain 29 AI Model & Supply Chain Integrity (0-5). MITRE ATLAS, OWASP LLM]] - `rationale_for` [EXTRACTED]
 - [[_is_fresh()]] - `calls` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 - [[get_trivy_summary()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_842
+#graphify/code #graphify/EXTRACTED #community/Community_1552

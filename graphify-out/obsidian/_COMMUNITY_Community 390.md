@@ -1,26 +1,38 @@
 ---
 type: community
-members: 13
+members: 25
 ---
 
 # Community 390
 
-**Members:** 13 nodes
+**Members:** 25 nodes
 
 ## Members
+- [[6. Security Pipeline]] - document - docs/architecture/agentic-os.md
+- [[7-Layer Defense Architecture]] - document - docs/architecture/agentic-os.md
 - [[Bot Network Isolation Design]] - rationale - docs/vault/09 - Diagrams/Network Topology.md
 - [[Complete System Diagram]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
 - [[Container Network Diagram]] - document - docs/vault/09 - Diagrams/Network Topology.md
 - [[Full System Flowchart_1]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
 - [[Full System Flowchart]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
 - [[Hostname Resolution]] - document - docs/vault/09 - Diagrams/Network Topology.md
+- [[Layer Reference]] - document - docs/vault/09 - Diagrams/Security Pipeline Flow.md
 - [[Legend]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
+- [[Module Count by Layer]] - document - docs/architecture/agentic-os.md
+- [[Monitor Mode]] - document - docs/vault/09 - Diagrams/Security Pipeline Flow.md
 - [[Network Security Notes]] - document - docs/vault/09 - Diagrams/Network Topology.md
 - [[Network Topology_3]] - document - docs/vault/09 - Diagrams/Network Topology.md
 - [[Network Topology_2]] - document - docs/vault/09 - Diagrams/Network Topology.md
+- [[Overview_29]] - document - docs/vault/09 - Diagrams/Security Pipeline Flow.md
+- [[Proxy Layer]] - document - docs/architecture/agentic-os.md
 - [[Related Notes_71]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
 - [[Related Notes_72]] - document - docs/vault/09 - Diagrams/Network Topology.md
+- [[Related Notes_73]] - document - docs/vault/09 - Diagrams/Security Pipeline Flow.md
+- [[Security Pipeline Flow_1]] - document - docs/vault/09 - Diagrams/Security Pipeline Flow.md
+- [[Security Pipeline Flow]] - document - docs/vault/09 - Diagrams/Security Pipeline Flow.md
+- [[Security Pipeline Layer Order]] - concept - docs/vault/09 - Diagrams/Security Pipeline Flow.md
 - [[Traffic Routing]] - document - docs/vault/09 - Diagrams/Network Topology.md
+- [[`SecurityPipeline`]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,8 +42,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1556]]
-- 1 edge to [[_COMMUNITY_Community 707]]
+- 2 edges to [[_COMMUNITY_Community 178]]
+- 1 edge to [[_COMMUNITY_Community 1219]]
+- 1 edge to [[_COMMUNITY_Community 409]]
+- 1 edge to [[_COMMUNITY_Community 7]]
 
 ## Top bridge nodes
-- [[Full System Flowchart]] - degree 4, connects to 2 communities
+- [[`SecurityPipeline`]] - degree 11, connects to 3 communities
+- [[6. Security Pipeline]] - degree 4, connects to 1 community
+- [[Full System Flowchart]] - degree 4, connects to 1 community

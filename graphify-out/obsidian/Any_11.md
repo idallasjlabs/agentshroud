@@ -1,24 +1,29 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/inbound_edge/oauth_service.py"
 type: "code"
-community: "Community 271"
-location: "L148"
+community: "Community 25"
+location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_271
+  - community/Community_25
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_17]] - `references` [EXTRACTED]
-- [[.extract_text_for_pii_scan()]] - `references` [EXTRACTED]
-- [[.parse_jsonrpc_request()]] - `references` [EXTRACTED]
-- [[.process_inbound_request()]] - `references` [EXTRACTED]
-- [[A2AMethod]] - `uses` [INFERRED]
-- [[A2APolicyEngine_1]] - `uses` [INFERRED]
-- [[ViolationType]] - `uses` [INFERRED]
-- [[_redact_message_text()]] - `references` [EXTRACTED]
+- [[._issue()]] - `references` [EXTRACTED]
+- [[.authorize()_1]] - `references` [EXTRACTED]
+- [[.consent_view()]] - `references` [EXTRACTED]
+- [[.exchange_authorization_code()_1]] - `references` [EXTRACTED]
+- [[.exchange_refresh_token()_1]] - `references` [EXTRACTED]
+- [[.get_client()_1]] - `references` [EXTRACTED]
+- [[.load_access_token()_1]] - `references` [EXTRACTED]
+- [[.load_authorization_code()_1]] - `references` [EXTRACTED]
+- [[.load_refresh_token()_1]] - `references` [EXTRACTED]
+- [[.register_client()_1]] - `references` [EXTRACTED]
+- [[TokenRejected]] - `uses` [INFERRED]
+- [[TokenService]] - `uses` [INFERRED]
+- [[VendorProfile_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_271
+#graphify/code #graphify/EXTRACTED #community/Community_25

@@ -1,15 +1,17 @@
 ---
 type: community
-members: 2
+members: 4
 ---
 
 # Community 2337
 
-**Members:** 2 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_fuzzy_matching()]] - code - gateway/tests/test_prompt_protection.py
-- [[Test fuzzy matching against protected content.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[.test_empty_files_skipped()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_invalid_then_valid()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_missing_dir_returns_none()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestLoadLatestJson_1]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +21,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 351]]
+- 2 edges to [[_COMMUNITY_Community 219]]
+- 1 edge to [[_COMMUNITY_Community 431]]
 
 ## Top bridge nodes
-- [[.test_fuzzy_matching()]] - degree 2, connects to 1 community
+- [[TestLoadLatestJson_1]] - degree 4, connects to 1 community
+- [[.test_empty_files_skipped()]] - degree 2, connects to 1 community
+- [[.test_invalid_then_valid()]] - degree 2, connects to 1 community

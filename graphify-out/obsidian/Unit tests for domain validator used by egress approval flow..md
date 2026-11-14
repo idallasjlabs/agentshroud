@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 2325"
+community: "Community 788"
 location: "L3944"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2325
+  - community/Community_788
 ---
 
 # Unit tests for domain validator used by egress approval flow.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDomainValidationHelper]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2325
+#graphify/rationale #graphify/EXTRACTED #community/Community_788

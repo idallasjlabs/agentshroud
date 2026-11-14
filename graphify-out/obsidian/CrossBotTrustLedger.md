@@ -12,7 +12,7 @@ tags:
 # CrossBotTrustLedger
 
 ## Connections
-- [[.__init__()_68]] - `method` [EXTRACTED]
+- [[.__init__()_83]] - `method` [EXTRACTED]
 - [[._propagate()]] - `method` [EXTRACTED]
 - [[.build_full_mesh()]] - `method` [EXTRACTED]
 - [[.get_incidents()]] - `method` [EXTRACTED]
@@ -37,6 +37,7 @@ tags:
 - [[TestIncidentPropagation]] - `uses` [INFERRED]
 - [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
+- [[TestPIIBlockModeInPipeline]] - `uses` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
 - [[TestTrustDecayPolicyValidation]] - `uses` [INFERRED]
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]

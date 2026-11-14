@@ -12,6 +12,6 @@ tags:
 # Main reconnect loop. Runs until stop() is called.
 
 ## Connections
-- [[.run()]] - `rationale_for` [EXTRACTED]
+- [[.run()_4]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_176

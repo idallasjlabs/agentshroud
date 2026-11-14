@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Community 6"
+community: "Community 60"
 location: "L572"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_60
 ---
 
 # TestCollaboratorPersistence
@@ -43,4 +43,4 @@ tags:
 - [[removed_collaborator_ids  paused_collaborator_ids share approved_collaborators.]] - `rationale_for` [EXTRACTED]
 - [[test_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/Community_60

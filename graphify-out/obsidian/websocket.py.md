@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "Community 169"
+community: "Community 8"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_169
+  - community/Community_8
 ---
 
 # websocket.py
 
 ## Connections
+- [[GatewayEvent]] - `imports` [EXTRACTED]
 - [[RBACConfig_1]] - `imports` [EXTRACTED]
 - [[SOCWebSocketHandler]] - `contains` [EXTRACTED]
 - [[Severity_2]] - `imports` [EXTRACTED]
@@ -20,8 +21,9 @@ tags:
 - [[_coerce_to_ws_event()]] - `contains` [EXTRACTED]
 - [[_get_config_token()]] - `imports` [EXTRACTED]
 - [[auth.py_1]] - `imports_from` [EXTRACTED]
+- [[event_bus.py]] - `imports_from` [EXTRACTED]
 - [[models.py_1]] - `imports_from` [EXTRACTED]
 - [[redeem_ws_token()]] - `imports` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_169
+#graphify/code #graphify/EXTRACTED #community/Community_8

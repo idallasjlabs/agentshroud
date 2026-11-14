@@ -8,10 +8,10 @@ members: 41
 **Members:** 41 nodes
 
 ## Members
-- [[.__init__()_36]] - code - gateway/proxy/slack_socket_client.py
+- [[.__init__()_51]] - code - gateway/proxy/slack_socket_client.py
 - [[._connect_and_handle()]] - code - gateway/proxy/slack_socket_client.py
 - [[._get_wss_url()]] - code - gateway/proxy/slack_socket_client.py
-- [[.run()]] - code - gateway/proxy/slack_socket_client.py
+- [[.run()_4]] - code - gateway/proxy/slack_socket_client.py
 - [[.stop()_4]] - code - gateway/proxy/slack_socket_client.py
 - [[.test_capped_at_cap_for_large_attempts()]] - code - gateway/tests/test_slack_socket_client.py
 - [[.test_events_api_envelope_dispatches_handle_event()]] - code - gateway/tests/test_slack_socket_client.py

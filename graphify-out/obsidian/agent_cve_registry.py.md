@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "Community 368"
+community: "Community 74"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_368
+  - community/Community_74
 ---
 
 # agent_cve_registry.py
@@ -18,4 +18,4 @@ tags:
 - [[list_cve_agents()]] - `contains` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_368
+#graphify/code #graphify/EXTRACTED #community/Community_74

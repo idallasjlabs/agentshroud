@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[command_8]] - `contains` [EXTRACTED]
-- [[enabled_8]] - `contains` [EXTRACTED]
+- [[enabled_9]] - `contains` [EXTRACTED]
 - [[mcp]] - `contains` [EXTRACTED]
-- [[type_8]] - `contains` [EXTRACTED]
+- [[type_34]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_159

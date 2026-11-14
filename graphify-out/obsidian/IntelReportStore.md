@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "Community 57"
+community: "Community 2017"
 location: "L194"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_57
+  - community/Community_2017
 ---
 
 # IntelReportStore
 
 ## Connections
-- [[.__init__()_87]] - `method` [EXTRACTED]
+- [[.__init__()_102]] - `method` [EXTRACTED]
 - [[._load_latest_file()]] - `method` [EXTRACTED]
 - [[.load_all()_1]] - `method` [EXTRACTED]
 - [[.load_latest()]] - `method` [EXTRACTED]
@@ -28,9 +28,10 @@ tags:
 - [[IntelDraftRequest]] - `uses` [INFERRED]
 - [[IntelReportStore_1]] - `uses` [INFERRED]
 - [[KillSwitchAction]] - `uses` [INFERRED]
+- [[KillSwitchError]] - `uses` [INFERRED]
 - [[ModeRequest]] - `uses` [INFERRED]
-- [[Path_31]] - `uses` [INFERRED]
-- [[Path_44]] - `uses` [INFERRED]
+- [[Path_34]] - `uses` [INFERRED]
+- [[Path_47]] - `uses` [INFERRED]
 - [[Persistent store for competitive intelligence reports.      Each report is saved]] - `rationale_for` [EXTRACTED]
 - [[ServiceAction]] - `uses` [INFERRED]
 - [[SkillGuardBlocked]] - `uses` [INFERRED]
@@ -52,4 +53,4 @@ tags:
 - [[test_citation_verifier.py]] - `imports` [EXTRACTED]
 - [[test_intel_pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_57
+#graphify/code #graphify/INFERRED #community/Community_2017

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Community 11"
+community: "Community 7"
 location: "L94"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_11
+  - community/Community_7
 ---
 
 # TrustManager
 
 ## Connections
-- [[.__init__()_127]] - `method` [EXTRACTED]
+- [[.__init__()_142]] - `method` [EXTRACTED]
 - [[._apply_decay()]] - `method` [EXTRACTED]
 - [[._force_demotion()]] - `method` [EXTRACTED]
 - [[._init_db()_2]] - `method` [EXTRACTED]
@@ -20,7 +20,7 @@ tags:
 - [[._promotion_allowed()]] - `method` [EXTRACTED]
 - [[._score_to_level()]] - `method` [EXTRACTED]
 - [[._update_score()]] - `method` [EXTRACTED]
-- [[.close()_11]] - `method` [EXTRACTED]
+- [[.close()_13]] - `method` [EXTRACTED]
 - [[.get_history()]] - `method` [EXTRACTED]
 - [[.get_trust()]] - `method` [EXTRACTED]
 - [[.is_action_allowed()]] - `method` [EXTRACTED]
@@ -54,7 +54,7 @@ tags:
 - [[PIISanitizer_3]] - `uses` [INFERRED]
 - [[ProgressiveTrustConfig]] - `uses` [INFERRED]
 - [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
-- [[Request_7]] - `uses` [INFERRED]
+- [[Request_8]] - `uses` [INFERRED]
 - [[Response]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[TestActionGating]] - `uses` [INFERRED]
@@ -70,7 +70,7 @@ tags:
 - [[TestBotIdIsolationInSharedMemory]] - `uses` [INFERRED]
 - [[TestBotIncidentSeverity]] - `uses` [INFERRED]
 - [[TestBuildFullMesh]] - `uses` [INFERRED]
-- [[TestConcurrency]] - `uses` [INFERRED]
+- [[TestConcurrency_1]] - `uses` [INFERRED]
 - [[TestConfig]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
@@ -120,6 +120,7 @@ tags:
 - [[TestMCPSecurity]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
+- [[TestPIIBlockModeInPipeline]] - `uses` [INFERRED]
 - [[TestPIIDetection_1]] - `uses` [INFERRED]
 - [[TestPIISanitizerPerformance]] - `uses` [INFERRED]
 - [[TestPersistence_2]] - `uses` [INFERRED]
@@ -197,4 +198,4 @@ tags:
 - [[trust_manager()_5]] - `calls` [EXTRACTED]
 - [[trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_11
+#graphify/code #graphify/INFERRED #community/Community_7

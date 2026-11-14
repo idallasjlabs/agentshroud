@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Community 102"
+community: "Community 185"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_102
+  - community/Community_185
 ---
 
 # falco_monitor.py
@@ -16,7 +16,7 @@ tags:
 - [[api.py]] - `conceptually_related_to` [INFERRED]
 - [[categorize_alerts()]] - `contains` [EXTRACTED]
 - [[configure_rules()]] - `contains` [EXTRACTED]
-- [[datetime_3]] - `imports_from` [EXTRACTED]
+- [[datetime_4]] - `imports_from` [EXTRACTED]
 - [[falco-rules]] - `references` [INFERRED]
 - [[generate_summary()_1]] - `contains` [EXTRACTED]
 - [[is_agentshroud_rule()]] - `contains` [EXTRACTED]
@@ -30,4 +30,4 @@ tags:
 - [[wazuh-ossec]] - `conceptually_related_to` [INFERRED]
 - [[wazuh_client.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_102
+#graphify/code #graphify/EXTRACTED #community/Community_185

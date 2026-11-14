@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/enforcement-audit-script.py"
 type: "code"
-community: "Community 6"
+community: "Community 72"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_72
 ---
 
 # run()
@@ -25,7 +25,7 @@ tags:
 - [[GitGuard]] - `calls` [EXTRACTED]
 - [[MiddlewareManager]] - `calls` [EXTRACTED]
 - [[PIISanitizer]] - `calls` [EXTRACTED]
-- [[Path_16]] - `calls` [EXTRACTED]
+- [[Path_18]] - `calls` [EXTRACTED]
 - [[PathIsolationConfig]] - `calls` [EXTRACTED]
 - [[PathIsolationManager]] - `calls` [EXTRACTED]
 - [[PromptGuard]] - `calls` [EXTRACTED]
@@ -42,4 +42,4 @@ tags:
 - [[ok()]] - `calls` [EXTRACTED]
 - [[warn()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/Community_72

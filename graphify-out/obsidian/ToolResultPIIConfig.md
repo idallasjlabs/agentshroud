@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "Community 28"
+community: "Community 72"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_28
+  - community/Community_72
 ---
 
 # ToolResultPIIConfig
 
 ## Connections
-- [[.__init__()_124]] - `method` [EXTRACTED]
-- [[.__init__()_125]] - `references` [EXTRACTED]
+- [[.__init__()_139]] - `method` [EXTRACTED]
+- [[.__init__()_140]] - `references` [EXTRACTED]
 - [[.get_config_for_tool()]] - `method` [EXTRACTED]
 - [[.set_config()]] - `calls` [EXTRACTED]
 - [[.test_default_config()_6]] - `calls` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[.test_tool_specific_config()]] - `calls` [EXTRACTED]
 - [[.tool_config()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
@@ -46,4 +46,4 @@ tags:
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_28
+#graphify/code #graphify/INFERRED #community/Community_72

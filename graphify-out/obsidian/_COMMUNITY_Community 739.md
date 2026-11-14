@@ -33,11 +33,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 944]]
 - 1 edge to [[_COMMUNITY_Community 798]]
 - 1 edge to [[_COMMUNITY_Community 725]]
-- 1 edge to [[_COMMUNITY_Community 855]]
-- 1 edge to [[_COMMUNITY_Community 944]]
 
 ## Top bridge nodes
 - [[4. Environment Variables]] - degree 8, connects to 2 communities
-- [[All Environment Variables (reference)]] - degree 3, connects to 2 communities
+- [[All Environment Variables (reference)]] - degree 3, connects to 1 community

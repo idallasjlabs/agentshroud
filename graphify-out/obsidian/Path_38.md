@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/tests/test_network_validator_gate.py"
 type: "code"
-community: "Community 219"
-location: "L41"
+community: "Community 71"
+location: "L33"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_219
+  - graphify/INFERRED
+  - community/Community_71
 ---
 
 # Path
 
 ## Connections
-- [[_age()]] - `references` [EXTRACTED]
-- [[_w()]] - `references` [EXTRACTED]
+- [[NetworkValidator]] - `uses` [INFERRED]
+- [[tmp_compose()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_219
+#graphify/code #graphify/INFERRED #community/Community_71

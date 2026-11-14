@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: "Community 439"
+community: "Community 50"
 location: "L361"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_439
+  - community/Community_50
 ---
 
 # Remove a WebSocket connection from connected set          Args:             webs
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.disconnect()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_439
+#graphify/rationale #graphify/EXTRACTED #community/Community_50

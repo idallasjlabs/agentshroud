@@ -1,16 +1,18 @@
 ---
 type: community
-members: 3
+members: 5
 ---
 
 # Community 2203
 
-**Members:** 3 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[3. Viewing Audit Logs]] - document - docs/operations/runbook.md
-- [[Command-Line Access]] - document - docs/operations/runbook.md
-- [[Web Interface Access]] - document - docs/operations/runbook.md
+- [[check()_13]] - code - tests/startup_smoke/test_hermes_edge_delegate_profile.sh
+- [[run_block()]] - code - tests/startup_smoke/test_hermes_edge_delegate_profile.sh
+- [[test_hermes_edge_delegate_profile.sh]] - code - tests/startup_smoke/test_hermes_edge_delegate_profile.sh
+- [[test_hermes_edge_delegate_profile.sh script]] - code - tests/startup_smoke/test_hermes_edge_delegate_profile.sh
+- [[yaml_get()]] - code - tests/startup_smoke/test_hermes_edge_delegate_profile.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -18,9 +20,3 @@ members: 3
 TABLE source_file, type FROM #community/Community_2203
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 107]]
-
-## Top bridge nodes
-- [[3. Viewing Audit Logs]] - degree 3, connects to 1 community

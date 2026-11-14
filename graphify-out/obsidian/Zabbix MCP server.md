@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/MCP_ADDITIONAL_SERVICES.md"
 type: "concept"
-community: "Community 742"
+community: "Community 1424"
 location: "Section 5"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_742
+  - community/Community_1424
 ---
 
 # Zabbix MCP server
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Normalized domain glossary (BESS, DAS, FODL, PKEOKE, FOD)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_742
+#graphify/concept #graphify/INFERRED #community/Community_1424

@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "Community 16"
-location: "L75"
+community: "Community 2017"
+location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/Community_2017
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_96]] - `references` [EXTRACTED]
-- [[.archive_file()]] - `references` [EXTRACTED]
-- [[.validate_memory_write()]] - `references` [EXTRACTED]
-- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[.__init__()_102]] - `references` [EXTRACTED]
+- [[._load_latest_file()]] - `references` [EXTRACTED]
+- [[.save()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_16
+#graphify/code #graphify/EXTRACTED #community/Community_2017

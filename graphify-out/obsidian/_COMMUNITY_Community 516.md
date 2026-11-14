@@ -1,35 +1,36 @@
 ---
 type: community
-members: 22
+members: 23
 ---
 
 # Community 516
 
-**Members:** 22 nodes
+**Members:** 23 nodes
 
 ## Members
-- [[.__init__()_116]] - code - gateway/security/session_security.py
-- [[._fingerprint()]] - code - gateway/security/session_security.py
-- [[.cleanup_expired()_3]] - code - gateway/security/session_security.py
-- [[.create_session()]] - code - gateway/security/session_security.py
-- [[.destroy_session()]] - code - gateway/security/session_security.py
-- [[.generate_instruction_nonce()]] - code - gateway/security/session_security.py
-- [[.manager()_2]] - code - gateway/tests/test_session_security.py
-- [[.register_event_source()]] - code - gateway/security/session_security.py
-- [[.rotate_session()]] - code - gateway/security/session_security.py
-- [[.test_cleanup_expired()]] - code - gateway/tests/test_session_security.py
-- [[.test_different_ips_not_rate_limited()]] - code - gateway/tests/test_session_security.py
-- [[.test_rate_limit_exceeded()_1]] - code - gateway/tests/test_session_security.py
-- [[.test_rate_limit_resets_after_window()]] - code - gateway/tests/test_session_security.py
-- [[.validate_nonce()]] - code - gateway/security/session_security.py
-- [[.validate_session()]] - code - gateway/security/session_security.py
-- [[Chen et al. 2026 — Agent configuration vulnerabilities  session hijacking (arXiv2602.14364)]] - paper - gateway/security/consent_framework.py
-- [[Generate a single-use, time-bound nonce for an instruction.          Format ``]] - rationale - gateway/security/session_security.py
-- [[Return True if the nonce is valid (not replayed, within 5-min window).]] - rationale - gateway/security/session_security.py
-- [[SessionManager]] - code - gateway/security/session_security.py
-- [[TestRateLimiting_3]] - code - gateway/tests/test_session_security.py
-- [[Wang et al. 2026 — Event injection attacks (arXiv2602.08412)]] - paper - gateway/security/session_security.py
-- [[manager()_3]] - code - gateway/tests/test_session_security.py
+- [[.__init__()_141]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[._url_has_blocked_patterns()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[.setup_method()_37]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_convenience_function()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_performance_with_large_content()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_realistic_web_scraping_result()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_warn_mode()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Check if URL contains any blocked patterns.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Configuration for tool result markdown sanitization.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Convenience function to sanitize tool result content.      Args         content]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Enhanced markdown sanitizer with configurable domain allowlist.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Integration tests for the sanitizer.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Set up test fixtures._3]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test performance with large content.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test sanitizing a realistic web scraping result.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test the convenience sanitize_tool_result function.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test warn mode that marks but preserves external content.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[TestIntegration_1]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[ToolResultSanitizer_1]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[ToolResultSanitizerConfig]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[sanitize_tool_result()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[test_tool_result_sanitizer_enhanced.py]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[tool_result_sanitizer_enhanced.py]] - code - gateway/security/tool_result_sanitizer_enhanced.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,15 +40,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 21 edges to [[_COMMUNITY_Community 76]]
-- 11 edges to [[_COMMUNITY_Community 72]]
-- 2 edges to [[_COMMUNITY_Community 152]]
-- 2 edges to [[_COMMUNITY_Community 0]]
-- 2 edges to [[_COMMUNITY_Community 2005]]
+- 20 edges to [[_COMMUNITY_Community 72]]
+- 6 edges to [[_COMMUNITY_Community 216]]
+- 6 edges to [[_COMMUNITY_Community 1556]]
+- 5 edges to [[_COMMUNITY_Community 2171]]
+- 2 edges to [[_COMMUNITY_Community 1]]
+- 2 edges to [[_COMMUNITY_Community 2332]]
+- 1 edge to [[_COMMUNITY_Community 2349]]
 
 ## Top bridge nodes
-- [[SessionManager]] - degree 40, connects to 4 communities
-- [[.create_session()]] - degree 5, connects to 2 communities
-- [[TestRateLimiting_3]] - degree 10, connects to 1 community
-- [[.validate_session()]] - degree 6, connects to 1 community
-- [[.rotate_session()]] - degree 3, connects to 1 community
+- [[ToolResultSanitizer_1]] - degree 34, connects to 7 communities
+- [[ToolResultSanitizerConfig]] - degree 26, connects to 4 communities
+- [[test_tool_result_sanitizer_enhanced.py]] - degree 6, connects to 2 communities
+- [[sanitize_tool_result()]] - degree 7, connects to 1 community
+- [[.setup_method()_37]] - degree 4, connects to 1 community

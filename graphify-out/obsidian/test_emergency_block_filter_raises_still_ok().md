@@ -5,7 +5,7 @@ community: "Community 181"
 location: "L675"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
+  - graphify/INFERRED
   - community/Community_181
 ---
 
@@ -15,4 +15,4 @@ tags:
 - [[RuntimeError]] - `calls` [INFERRED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_181
+#graphify/code #graphify/INFERRED #community/Community_181

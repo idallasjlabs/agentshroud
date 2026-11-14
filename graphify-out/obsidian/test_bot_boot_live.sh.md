@@ -12,7 +12,7 @@ tags:
 # test_bot_boot_live.sh
 
 ## Connections
-- [[check()_5]] - `defines` [EXTRACTED]
+- [[check()_8]] - `defines` [EXTRACTED]
 - [[test_bot_boot_live.sh script]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_1420

@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/proxy/dns_forwarder.py"
+source_file: "gateway/inbound_edge/descriptors.py"
 type: "code"
-community: "Community 590"
-location: "L309"
+community: "Community 31"
+location: "L216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_590
+  - community/Community_31
 ---
 
 # main()
 
 ## Connections
-- [[dns_forwarder.py]] - `contains` [EXTRACTED]
-- [[start_dns_forwarder()]] - `calls` [EXTRACTED]
+- [[build_manifest()]] - `calls` [EXTRACTED]
+- [[canonical_bytes()]] - `calls` [EXTRACTED]
+- [[descriptors.py]] - `contains` [EXTRACTED]
+- [[verify_descriptors()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_590
+#graphify/code #graphify/EXTRACTED #community/Community_31

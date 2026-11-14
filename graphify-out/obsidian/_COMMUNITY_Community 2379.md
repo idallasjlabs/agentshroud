@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_collaborator_web_access_policy_question_with_bare_domain_is_safe()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Bare-domain policy questions should be informational, not treated as web executi]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_protection_stats()]] - code - gateway/tests/test_prompt_protection.py
+- [[Test getting protection statistics.]] - rationale - gateway/tests/test_prompt_protection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,8 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 4]]
-- 1 edge to [[_COMMUNITY_Community 12]]
+- 1 edge to [[_COMMUNITY_Community 351]]
 
 ## Top bridge nodes
-- [[.test_collaborator_web_access_policy_question_with_bare_domain_is_safe()]] - degree 7, connects to 2 communities
+- [[.test_protection_stats()]] - degree 2, connects to 1 community

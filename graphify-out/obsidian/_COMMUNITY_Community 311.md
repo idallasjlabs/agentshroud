@@ -20,7 +20,7 @@ members: 22
 - [[A JSON-corrupt file is silently skipped, others are still returned.]] - rationale - gateway/tests/test_scanner_integration.py
 - [[Directory exists but contains only fs scan files — returns .]] - rationale - gateway/tests/test_scanner_integration.py
 - [[Files named trivy-.json (fs scans) are not included.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[Path_37]] - code - gateway/tests/test_scanner_integration.py
+- [[Path_40]] - code - gateway/tests/test_scanner_integration.py
 - [[Return per-image Trivy scan summaries from saved image reports.      Reads repor]] - rationale - gateway/security/scanner_integration.py
 - [[TestGetTrivyImageSummaries]] - code - gateway/tests/test_scanner_integration.py
 - [[Unknown bot_id with no config match falls through and returns all entries.]] - rationale - gateway/tests/test_scanner_integration.py
@@ -40,15 +40,16 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 8 edges to [[_COMMUNITY_Community 67]]
-- 3 edges to [[_COMMUNITY_Community 943]]
-- 3 edges to [[_COMMUNITY_Community 842]]
-- 2 edges to [[_COMMUNITY_Community 363]]
+- 2 edges to [[_COMMUNITY_Community 1287]]
+- 2 edges to [[_COMMUNITY_Community 102]]
+- 2 edges to [[_COMMUNITY_Community 1552]]
+- 2 edges to [[_COMMUNITY_Community 1976]]
 - 1 edge to [[_COMMUNITY_Community 29]]
-- 1 edge to [[_COMMUNITY_Community 102]]
-- 1 edge to [[_COMMUNITY_Community 1969]]
+- 1 edge to [[_COMMUNITY_Community 363]]
+- 1 edge to [[_COMMUNITY_Community 842]]
 
 ## Top bridge nodes
-- [[Path_37]] - degree 18, connects to 4 communities
+- [[Path_40]] - degree 18, connects to 6 communities
 - [[get_trivy_image_summaries()]] - degree 14, connects to 4 communities
 - [[_write_image_report()]] - degree 11, connects to 1 community
 - [[_clean_trivy_report()]] - degree 10, connects to 1 community

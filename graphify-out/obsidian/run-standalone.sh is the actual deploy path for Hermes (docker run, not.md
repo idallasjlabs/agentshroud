@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "Community 1305"
+community: "Community 61"
 location: "L418"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1305
+  - community/Community_61
 ---
 
 # run-standalone.sh is the actual deploy path for Hermes (docker run, not
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_run_standalone_sets_matching_bridge_port()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1305
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

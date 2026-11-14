@@ -1,11 +1,11 @@
 ---
 type: community
-members: 42
+members: 45
 ---
 
 # Community 170
 
-**Members:** 42 nodes
+**Members:** 45 nodes
 
 ## Members
 - [[.__init__()_7]] - code - gateway/cli/client.py
@@ -16,6 +16,10 @@ members: 42
 - [[.block_egress()]] - code - gateway/cli/client.py
 - [[.delete()]] - code - gateway/cli/client.py
 - [[.deny_egress()]] - code - gateway/cli/client.py
+- [[.edge_enroll()]] - code - gateway/cli/client.py
+- [[.edge_kill()]] - code - gateway/cli/client.py
+- [[.edge_status()]] - code - gateway/cli/client.py
+- [[.edge_unkill()]] - code - gateway/cli/client.py
 - [[.freeze()]] - code - gateway/cli/client.py
 - [[.get()_2]] - code - gateway/cli/client.py
 - [[.get_correlation()]] - code - gateway/cli/client.py
@@ -49,7 +53,6 @@ members: 42
 - [[TestSCLClientRequest]] - code - gateway/tests/test_cli_coverage.py
 - [[_patch_urlopen()]] - code - gateway/tests/test_cli_coverage.py
 - [[agentshroud-soc CLI Group]] - code - gateway/cli/main.py
-- [[test_convenience_methods_hit_expected_endpoints()]] - code - gateway/tests/test_cli_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -59,15 +62,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 488]]
-- 4 edges to [[_COMMUNITY_Community 1023]]
-- 4 edges to [[_COMMUNITY_Community 87]]
-- 4 edges to [[_COMMUNITY_Community 252]]
-- 1 edge to [[_COMMUNITY_Community 1191]]
+- 11 edges to [[_COMMUNITY_Community 1023]]
+- 5 edges to [[_COMMUNITY_Community 252]]
+- 4 edges to [[_COMMUNITY_Community 488]]
+- 3 edges to [[_COMMUNITY_Community 87]]
 
 ## Top bridge nodes
-- [[SCLClient]] - degree 55, connects to 5 communities
-- [[.get()_2]] - degree 13, connects to 1 community
+- [[SCLClient]] - degree 60, connects to 4 communities
+- [[.get()_2]] - degree 14, connects to 1 community
 - [[_patch_urlopen()]] - degree 11, connects to 1 community
 - [[TestSCLClientRequest]] - degree 10, connects to 1 community
-- [[test_convenience_methods_hit_expected_endpoints()]] - degree 3, connects to 1 community
