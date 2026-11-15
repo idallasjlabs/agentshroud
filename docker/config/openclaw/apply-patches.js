@@ -302,7 +302,10 @@ if ((MAIN_PROVIDER_KEY === 'ollama' || MAIN_PROVIDER_KEY === 'openai-local') && 
   const mainModelName = MAIN_MODEL.split('/').slice(1).join('/');
   const desiredMainProvider = {
     ...desiredProvider,
-    api: MAIN_PROVIDER_KEY === 'ollama' ? 'ollama' : 'openai',
+    // 2026-11-15: 'openai' is not in OpenClaw 2026.11's models.providers.*.api enum
+    // (openai-completions|openai-responses|...). Writing it left openclaw.json invalid
+    // whenever `doctor --fix` could not normalize it, which crash-looped the container.
+    api: MAIN_PROVIDER_KEY === 'ollama' ? 'ollama' : 'openai-completions',
     models: providerModels.some((m) => m.id === mainModelName)
       ? providerModels
       : [{ ...providerModels[0], id: mainModelName, name: mainModelName }, ...providerModels],
