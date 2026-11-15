@@ -300,7 +300,7 @@ const ROSTER_ENV = { OPENCLAW_MAIN_MODEL: 'openai-local/test-model' };
   const p = providers['openai-local'] || {};
   assert('A12a: main model provider registered', !!providers['openai-local'], JSON.stringify(Object.keys(providers)));
   assert('A12b: main model id declared under it', (p.models || []).some((m) => m.id === 'test-model'));
-  assert('A12c: openai-local uses the OpenAI-compatible api', p.api === 'openai');
+  assert('A12c: openai-local uses the OpenAI-compatible api (schema-valid enum value)', p.api === 'openai-completions');
   assert('A12d: mode-derived provider still registered', !!providers.ollama);
 }
 

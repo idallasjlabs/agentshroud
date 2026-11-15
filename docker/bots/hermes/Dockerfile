@@ -226,9 +226,17 @@ RUN npm install -g npm@12.0.2
 # below (vite/devtools' own compatibility is the vendor's concern, not ours).
 # No-op against the currently pinned v0.20.1 (no such conflict there), so
 # safe to leave in place regardless of which HERMES_IMAGE is pinned.
-RUN npm install --prefix /opt/hermes browserslist@4.28.7 \
-    && npm install --prefix /opt/hermes/node_modules/sanitize-html nanoid@3.3.19 \
-    && npm install --prefix /opt/hermes/node_modules/vite nanoid@3.3.19 --legacy-peer-deps
+# 2026-11-15: REMOVED for hermes-agent 0.23.1. The vendor image no longer ships
+# /opt/hermes/node_modules/{browserslist,sanitize-html,vite} (only typescript),
+# and /opt/hermes/.npmrc now sets engine-strict=true with engines.npm refusing
+# every npm install in that tree (vendor guard so npm cannot resolve past
+# pnpm's overrides and release-age gate) — so the three installs above fail
+# the build (EBADENGINE) and have nothing left to patch. Evidence: trivy scan of
+# the vendor image sha256:276d4468... reports 0 findings for browserslist,
+# nanoid, sanitize-html and vite; upstream pnpm-workspace.yaml overrides
+# nanoid@^3 to 3.3.20 (>= the 3.3.19 fix). Do NOT bypass the vendor guard with
+# --engine-strict=false. If a later release re-introduces these packages with
+# a CVE, fix it through the vendor's pnpm tooling, not npm.
 
 # Crash-loop fix (2026-07-17): the Telegram adapter's getUpdates health instrumentation
 # does `request.do_request = _do_request` to wrap polling requests, but the vendored
