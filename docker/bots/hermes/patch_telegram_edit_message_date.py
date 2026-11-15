@@ -33,10 +33,12 @@ import sys
 
 PATH = "/opt/hermes/plugins/platforms/telegram/adapter.py"
 
+# 2026-11-15: anchored on the stable tail of _edit_text (the parse_mode
+# assignment + the guarded await), not its def/docstring/kwargs lines, which
+# upstream rewords every release (v0.23.1 added **self._link_preview_kwargs()
+# and a new docstring and broke the whole-function anchor). The anchor must
+# match exactly once so the patch can only land inside _edit_text.
 anchor = (
-    "    async def _edit_text(self, chat_id: str, message_id: str, text: str, parse_mode: Any = None) -> None:\n"
-    '        """``editMessageText`` with normalized ids; ``parse_mode=None`` sends plain text."""\n'
-    '        kwargs: Dict[str, Any] = {"chat_id": normalize_telegram_chat_id(chat_id), "message_id": int(message_id), "text": text}\n'
     "        if parse_mode is not None:\n"
     '            kwargs["parse_mode"] = parse_mode\n'
     "        await _await_with_thread_deadline(\n"
@@ -44,9 +46,6 @@ anchor = (
 )
 
 replacement = (
-    "    async def _edit_text(self, chat_id: str, message_id: str, text: str, parse_mode: Any = None) -> None:\n"
-    '        """``editMessageText`` with normalized ids; ``parse_mode=None`` sends plain text."""\n'
-    '        kwargs: Dict[str, Any] = {"chat_id": normalize_telegram_chat_id(chat_id), "message_id": int(message_id), "text": text}\n'
     "        if parse_mode is not None:\n"
     '            kwargs["parse_mode"] = parse_mode\n'
     "        try:\n"
@@ -71,15 +70,11 @@ replacement = (
 )
 
 src = open(PATH, encoding="utf-8").read()
-# Hermes >= v0.22 annotates kwargs as builtin `dict[...]` instead of typing `Dict[...]`;
-# accept either spelling and keep whichever the vendor file uses.
-if anchor not in src and anchor.replace("Dict[str, Any]", "dict[str, Any]") in src:
-    anchor = anchor.replace("Dict[str, Any]", "dict[str, Any]")
-    replacement = replacement.replace("Dict[str, Any]", "dict[str, Any]")
-if anchor not in src:
+if src.count(anchor) != 1:
     sys.exit(
-        "PATCH ANCHOR NOT FOUND (_edit_text) -- upstream digest drift. "
-        "Re-verify docker/bots/hermes/patch_telegram_edit_message_date.py "
+        f"PATCH ANCHOR NOT FOUND OR AMBIGUOUS (_edit_text; matches={src.count(anchor)}) -- "
+        "upstream digest drift. Re-verify "
+        "docker/bots/hermes/patch_telegram_edit_message_date.py "
         f"against {PATH}."
     )
 

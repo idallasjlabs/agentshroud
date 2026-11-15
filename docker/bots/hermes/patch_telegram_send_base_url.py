@@ -53,6 +53,42 @@ def _read(path):
         return None
 
 
+# --- Upstream-native support (v0.23.1+) ---
+# 2026-11-15: v0.23.1 moved the standalone sender into
+# plugins/platforms/telegram/standalone.py and made it honour
+# telegram.extra.base_url/base_file_url itself: standalone_send() hands the
+# platform's `extra` to _send_telegram(), which builds the Bot via
+# _telegram_bot(token, extra) with base_url/base_file_url, and every delivery
+# path (cron + send_message tool) dispatches through that plugin sender. The
+# patches below are then obsolete. Never assume: exit 0 only when EVERY marker
+# is present, otherwise fall through to the legacy anchors (which fail loudly).
+_NATIVE = "/opt/hermes/plugins/platforms/telegram/standalone.py"
+_native_src = _read(_NATIVE)
+_native_markers = (
+    "def _telegram_bot(token, extra=None):",
+    'base_url = extra.get("base_url")',
+    '"base_file_url": extra.get("base_file_url") or base_url',
+    "return Bot(token=token, request=request, get_updates_request=updates_request, **urls)",
+    'extra = getattr(pconfig, "extra", None) or {}',
+    "extra=extra, notify=notify)",
+)
+if _native_src is not None and all(m in _native_src for m in _native_markers):
+    _tool_src = _read("/opt/hermes/tools/send_message_tool.py") or ""
+    if "sender(pconfig, chat_id, message" not in _tool_src:
+        sys.exit(
+            "NATIVE base_url SUPPORT FOUND in standalone.py but send_message_tool.py "
+            "no longer dispatches Telegram through the plugin standalone sender with "
+            "pconfig; cron delivery may bypass base_url. Re-verify "
+            "docker/bots/hermes/patch_telegram_send_base_url.py."
+        )
+    compile(_native_src, _NATIVE, "exec")
+    print(
+        "[hermes-build] telegram base_url routing is native upstream (v0.23.1+ "
+        f"{_NATIVE}: extra.base_url/base_file_url -> Bot); legacy patch not needed"
+    )
+    sys.exit(0)
+
+
 # --- Patch 1: _send_telegram signature + Bot construction ---
 # v0.20.1: defined in tools/send_message_tool.py, inline try/except proxy-
 #          fallback Bot() construction.
