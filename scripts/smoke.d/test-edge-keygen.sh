@@ -23,6 +23,7 @@
 #   T6. extract decodes a "b64:" value back to the byte-identical PEM.
 #   T7. extract refuses an invalid stored key and leaves the file unchanged.
 #   T8. a raw (unprefixed) PEM in the backend is accepted as-is.
+#   T14. a hung `op` (unanswered app approval) cannot stall op_get.
 #
 # Run: bash scripts/smoke.d/test-edge-keygen.sh
 # Exit 0 = pass. Exit 1 = fail.
@@ -181,6 +182,35 @@ check "T12: asb runs edge-ensure before seeding edge secrets" \
 pre="$(awk '/^phase_preflight\(\) \{/,/^}/' "$REPO/scripts/sunday-upgrade-apply.sh")"
 check "T13: sunday-upgrade-apply preflight runs edge-ensure" \
     "$(grep -q 'setup-secrets.sh" edge-ensure' <<< "$pre" && echo true || echo false)"
+
+# ── T14: a hung `op` cannot stall an unattended run ──────────────────────────
+# 2026-11-16 prod: under launchd/tmux `op account list` waited 18 min per
+# secret on a 1Password app approval nobody could give. Every op call must be
+# bounded and a timeout must read as "1Password unavailable".
+FAKEBIN="$TMPROOT/fakebin"; mkdir -p "$FAKEBIN"
+printf '#!/bin/sh\nexec sleep 300\n' > "$FAKEBIN/op"; chmod +x "$FAKEBIN/op"
+t0="$(date +%s)"
+OUT14="$( (
+    PATH="$FAKEBIN:$PATH" AGENTSHROUD_OP_TIMEOUT=2
+    export PATH AGENTSHROUD_OP_TIMEOUT
+    # shellcheck disable=SC1090
+    . "$SETUP"
+    op_get edge_gateway_token
+) 2>&1 || true)"
+t14=$(( $(date +%s) - t0 ))
+check "T14: op_get returns within the op timeout when op hangs" \
+    "$([[ "$t14" -le 8 ]] && echo true || echo false)" "took ${t14}s"
+check "T14: a timed-out op yields no value" "$([[ -z "$OUT14" ]] && echo true || echo false)" "$OUT14"
+
+# account list answers but the read itself hangs: still bounded.
+printf '#!/bin/sh\n[ "$1" = account ] && exit 0\nexec sleep 300\n' > "$FAKEBIN/op"
+t0="$(date +%s)"
+( PATH="$FAKEBIN:$PATH" AGENTSHROUD_OP_TIMEOUT=2; export PATH AGENTSHROUD_OP_TIMEOUT
+  # shellcheck disable=SC1090
+  . "$SETUP"; op_get edge_gateway_token ) >/dev/null 2>&1 || true
+t14b=$(( $(date +%s) - t0 ))
+check "T14: every op read is bounded, not just the probe" \
+    "$([[ "$t14b" -le 14 ]] && echo true || echo false)" "took ${t14b}s"
 
 echo ""
 echo "  Tests: $((pass + fail))  Passed: ${pass}  Failed: ${fail}"
