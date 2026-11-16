@@ -467,6 +467,22 @@ phase_preflight() {
     || die 10 "compose config is invalid: $COMPOSE_CMD config"
   log "preflight: compose config valid ($COMPOSE_CMD)"
 
+  # The gateway lists edge_signing_key/edge_gateway_token in every deployment
+  # mode; a missing file fails `compose up` AND the rollback (2026-11-15 prod,
+  # exit 50). Fix it here, before anything changes. edge-ensure never prompts,
+  # never writes a backend and never prints a value. Dry runs only check.
+  local edge_dir
+  edge_dir="$(dirname "$COMPOSE_FILE")/secrets"
+  if _mutating; then
+    AGENTSHROUD_SECRETS_DIR="$edge_dir" "$REPO/docker/setup-secrets.sh" edge-ensure \
+      || die 10 "preflight: edge secrets missing and edge-ensure could not create them (docker/setup-secrets.sh edge-ensure)"
+    log "preflight: edge secrets present"
+  else
+    for s in edge_signing_key edge_gateway_token; do
+      [ -s "$edge_dir/$s.txt" ] || warn "preflight: [dry-run] $edge_dir/$s.txt missing — a real run creates it (edge-ensure)"
+    done
+  fi
+
   # Disk: a rebuild of three images plus pulls needs real headroom. Refuse to
   # start an upgrade we cannot finish rather than filling the disk mid-build.
   #

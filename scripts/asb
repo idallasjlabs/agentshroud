@@ -177,6 +177,11 @@ setup_ephemeral_secrets() {
   # writes them to docker/secrets/ AND the backend. Seed from the canonical
   # files (cat, never echoed) so a backend miss cannot zero a working key —
   # Step 3's extract overwrites these with the backend's value when it has one.
+  # compose lists both secrets for the gateway in every deployment mode, so a
+  # missing canonical file fails `up` outright (2026-11-15 prod abort, exit 50):
+  # edge-ensure restores or generates them first, without prompting.
+  "$REPO_DIR/docker/setup-secrets.sh" edge-ensure \
+    || echo "  WARN: edge-ensure failed — compose will refuse to start the gateway" >&2
   for _edge_secret in edge_signing_key edge_gateway_token; do
     if [ -s "$REPO_DIR/docker/secrets/${_edge_secret}.txt" ]; then
       cat "$REPO_DIR/docker/secrets/${_edge_secret}.txt" > "$tmpdir/${_edge_secret}.txt"
