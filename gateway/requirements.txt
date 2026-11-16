@@ -34,7 +34,7 @@ starlette>=1.7.0
 # filelock (via tldextract): CVE-2026-112907..112939 — fixed in 4.2.1
 filelock>=4.2.1
 # certifi (via httpx/requests): 2 advisories — fixed in 2026.10.18
-certifi>=2026.10.18
+certifi>=2026.10.23
 
 # HTTP client (Pi-hole DNS management)
 aiohttp>=3.14.5,<4.0.0
