@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Community 6"
+community: "Community 65"
 location: "L220"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_65
 ---
 
 # TestResolveCaller
@@ -28,4 +28,4 @@ tags:
 - [[_resolve_caller()]] - `calls` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/Community_65

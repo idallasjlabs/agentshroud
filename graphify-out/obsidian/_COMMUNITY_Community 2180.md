@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Apollo — Audio Systems Producer_7]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[Purpose_37]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[README_42]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[Related Skills_55]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[Usage_58]] - document - docker/config/hermes/skills/i-apollo/README.md
+- [[AWS Glue MCP server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
+- [[CDAS — Central Data Acquisition Systems]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Data platform guardrails (schemapartition stability)]] - concept - .llm_settings/scripts/CLAUDE.md
+- [[FODL — Fluence Operational Data Lakehouse]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
+- [[FY26 Cost Reduction Plan (40% target)]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +22,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 90]]
+- 1 edge to [[_COMMUNITY_Community 210]]
+- 1 edge to [[_COMMUNITY_Community 1942]]
+- 1 edge to [[_COMMUNITY_Community 742]]
 
 ## Top bridge nodes
-- [[Apollo — Audio Systems Producer_7]] - degree 5, connects to 1 community
+- [[FODL — Fluence Operational Data Lakehouse]] - degree 6, connects to 2 communities
+- [[FY26 Cost Reduction Plan (40% target)]] - degree 3, connects to 1 community

@@ -36,11 +36,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 33]]
-- 1 edge to [[_COMMUNITY_Community 196]]
-- 1 edge to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 194]]
-- 1 edge to [[_COMMUNITY_Community 11]]
+- 6 edges to [[_COMMUNITY_Community 194]]
+- 1 edge to [[_COMMUNITY_Community 33]]
 
 ## Top bridge nodes
-- [[TestGroupRoleResolver]] - degree 18, connects to 5 communities
+- [[TestGroupRoleResolver]] - degree 18, connects to 2 communities

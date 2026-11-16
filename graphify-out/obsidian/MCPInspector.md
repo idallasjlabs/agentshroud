@@ -12,7 +12,7 @@ tags:
 # MCPInspector
 
 ## Connections
-- [[.__init__()_26]] - `method` [EXTRACTED]
+- [[.__init__()_41]] - `method` [EXTRACTED]
 - [[._redact_pii()]] - `method` [EXTRACTED]
 - [[._scan_text()]] - `method` [EXTRACTED]
 - [[._scan_value()]] - `method` [EXTRACTED]
@@ -21,9 +21,9 @@ tags:
 - [[.inspect_tool_result()]] - `method` [EXTRACTED]
 - [[.test_egress_allows_non_url_tool_call()]] - `calls` [EXTRACTED]
 - [[.test_egress_denied_blocks_url_tool_call()]] - `calls` [EXTRACTED]
-- [[Any_18]] - `uses` [INFERRED]
+- [[Any_28]] - `uses` [INFERRED]
 - [[ConnectionPool]] - `uses` [INFERRED]
-- [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
 - [[Exception_4]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
@@ -80,7 +80,7 @@ tags:
 - [[TestStdioConnection]] - `uses` [INFERRED]
 - [[TestSuspiciousEncoding]] - `uses` [INFERRED]
 - [[TestThreatLevelCalc]] - `uses` [INFERRED]
-- [[__init__.py_7]] - `imports` [EXTRACTED]
+- [[__init__.py_8]] - `imports` [EXTRACTED]
 - [[inspector()]] - `calls` [EXTRACTED]
 - [[make_proxy()_1]] - `calls` [EXTRACTED]
 - [[mcp_inspector.py]] - `contains` [EXTRACTED]

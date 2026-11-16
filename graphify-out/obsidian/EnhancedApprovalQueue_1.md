@@ -1,24 +1,21 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/inbound_edge/approvals.py"
 type: "code"
-community: "Community 54"
-location: "L230"
+community: "Community 30"
+location: "L129"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_54
+  - community/Community_30
 ---
 
 # EnhancedApprovalQueue
 
 ## Connections
-- [[.__init__()_31]] - `references` [EXTRACTED]
-- [[InspectionResult]] - `uses` [INFERRED]
-- [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPServerConfig]] - `uses` [INFERRED]
-- [[MCPTransport]] - `uses` [INFERRED]
+- [[.__init__()_9]] - `references` [EXTRACTED]
+- [[ApprovalRequest_3]] - `uses` [INFERRED]
+- [[EdgePrincipal_1]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
+- [[ToolRiskPolicy_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_54
+#graphify/code #graphify/INFERRED #community/Community_30

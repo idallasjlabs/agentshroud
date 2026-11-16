@@ -1,16 +1,17 @@
 ---
 type: community
-members: 3
+members: 4
 ---
 
 # Community 2328
 
-**Members:** 3 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[._redact_match()]] - code - gateway/security/prompt_protection.py
-- [[Match]] - code - gateway/security/prompt_protection.py
-- [[Replace a regex match with a redaction placeholder.]] - rationale - gateway/security/prompt_protection.py
+- [[Deliverables_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Reports (`.reports`)_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Script Templates_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Scripts (`.scripts`)_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,7 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 532]]
+- 1 edge to [[_COMMUNITY_Community 494]]
 
 ## Top bridge nodes
-- [[._redact_match()]] - degree 3, connects to 1 community
+- [[Deliverables_6]] - degree 4, connects to 1 community

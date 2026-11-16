@@ -12,8 +12,8 @@ tags:
 # MCPServerConfig
 
 ## Connections
-- [[.__init__()_28]] - `references` [EXTRACTED]
-- [[.__init__()_29]] - `references` [EXTRACTED]
+- [[.__init__()_43]] - `references` [EXTRACTED]
+- [[.__init__()_44]] - `references` [EXTRACTED]
 - [[.get_or_create()]] - `references` [EXTRACTED]
 - [[InspectionResult]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]

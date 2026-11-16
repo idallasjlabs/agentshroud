@@ -12,7 +12,7 @@ tags:
 # TrustLevel
 
 ## Connections
-- [[.__init__()_127]] - `references` [EXTRACTED]
+- [[.__init__()_142]] - `references` [EXTRACTED]
 - [[._force_demotion()]] - `references` [EXTRACTED]
 - [[._promotion_allowed()]] - `references` [EXTRACTED]
 - [[._score_to_level()]] - `references` [EXTRACTED]

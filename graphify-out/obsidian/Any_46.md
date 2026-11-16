@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
+source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "Community 684"
-location: "L157"
+community: "Community 22"
+location: "L64"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_684
+  - graphify/INFERRED
+  - community/Community_22
 ---
 
 # Any
 
 ## Connections
-- [[get_sanitizer_stats()]] - `references` [EXTRACTED]
+- [[.__init__()_81]] - `references` [EXTRACTED]
+- [[ContextSegment]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
+- [[SystemPromptFingerprint]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_684
+#graphify/code #graphify/INFERRED #community/Community_22

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 148"
+community: "Community 220"
 location: "L475"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_148
+  - community/Community_220
 ---
 
 # TestClamAVParser
@@ -22,4 +22,4 @@ tags:
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_148
+#graphify/code #graphify/EXTRACTED #community/Community_220

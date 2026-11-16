@@ -12,7 +12,7 @@ tags:
 # TestCryptography
 
 ## Connections
-- [[.store()_2]] - `method` [EXTRACTED]
+- [[.store()_3]] - `method` [EXTRACTED]
 - [[.test_ciphertext_not_plaintext()]] - `method` [EXTRACTED]
 - [[.test_different_plaintexts_different_ciphertexts()]] - `method` [EXTRACTED]
 - [[.test_encrypt_decrypt_roundtrip()]] - `method` [EXTRACTED]

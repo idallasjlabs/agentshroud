@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[GSDE&G Development Master Checklist (MC)_1]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Purpose_52]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[README_57]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Related Skills_70]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Usage_74]] - document - docker/config/hermes/skills/i-mc/README.md
+- [[.get_lifecycle_status()]] - code - gateway/security/memory_lifecycle.py
+- [[.get_recent_actions()]] - code - gateway/security/memory_lifecycle.py
+- [[Any_59]] - code - gateway/security/memory_lifecycle.py
+- [[Get current lifecycle management status.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Get retention actions taken in the last N hours.]] - rationale - gateway/security/memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +22,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 90]]
+- 4 edges to [[_COMMUNITY_Community 16]]
+- 1 edge to [[_COMMUNITY_Community 1289]]
 
 ## Top bridge nodes
-- [[GSDE&G Development Master Checklist (MC)_1]] - degree 5, connects to 1 community
+- [[.get_recent_actions()]] - degree 4, connects to 2 communities
+- [[.get_lifecycle_status()]] - degree 5, connects to 1 community
+- [[Any_59]] - degree 2, connects to 1 community

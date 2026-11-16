@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/state.py"
 type: "code"
-community: "Community 707"
+community: "Community 7"
 location: "L23"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_707
+  - community/Community_7
 ---
 
 # AppState
@@ -21,4 +21,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[state.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_707
+#graphify/code #graphify/INFERRED #community/Community_7

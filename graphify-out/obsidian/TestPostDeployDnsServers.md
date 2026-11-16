@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_container_dns_check.py"
 type: "code"
 community: "Community 1316"
-location: "L131"
+location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED

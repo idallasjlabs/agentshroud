@@ -1,22 +1,25 @@
 ---
 type: community
-members: 9
+members: 12
 ---
 
 # Community 1426
 
-**Members:** 9 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[.to_dict()_6]] - code - gateway/security/canary.py
-- [[Any_33]] - code - gateway/security/canary.py
-- [[CanaryCheck]] - code - gateway/security/canary.py
-- [[CanaryResult]] - code - gateway/security/canary.py
-- [[Individual canary check result.]] - rationale - gateway/security/canary.py
-- [[Result of running the canary system.]] - rationale - gateway/security/canary.py
-- [[Run the canary verification system.      Args         pipeline SecurityPipelin]] - rationale - gateway/security/canary.py
-- [[canary.py]] - code - gateway/security/canary.py
-- [[run_canary()]] - code - gateway/security/canary.py
+- [[.test_rewrite_known_runtime_errors_accepts_hyphen_delimiter()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_accepts_underscore_delimiter()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_handles_non_string_input()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_matches_cannot_to_access_variant()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_matches_healthcheck_skill_sandbox_error()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_matches_http_status_without_body()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_matches_memory_embedding_provider_error()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_matches_no_response_generated_phrase()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_requires_skill_marker_for_healthcheck_branch()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_returns_none_for_unrelated_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestRuntimeRewriteHelpers]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Unit tests for deterministic runtime error rewrite helper behavior.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,15 +29,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 43]]
-- 2 edges to [[_COMMUNITY_Community 0]]
-- 2 edges to [[_COMMUNITY_Community 112]]
-- 1 edge to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 84]]
-- 1 edge to [[_COMMUNITY_Community 185]]
-- 1 edge to [[_COMMUNITY_Community 162]]
-- 1 edge to [[_COMMUNITY_Community 7]]
+- 3 edges to [[_COMMUNITY_Community 84]]
+- 1 edge to [[_COMMUNITY_Community 14]]
+- 1 edge to [[_COMMUNITY_Community 329]]
 
 ## Top bridge nodes
-- [[run_canary()]] - degree 20, connects to 6 communities
-- [[canary.py]] - degree 5, connects to 2 communities
+- [[TestRuntimeRewriteHelpers]] - degree 16, connects to 3 communities

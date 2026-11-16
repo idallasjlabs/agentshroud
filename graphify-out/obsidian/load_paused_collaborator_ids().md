@@ -12,7 +12,7 @@ tags:
 # load_paused_collaborator_ids()
 
 ## Connections
-- [[.__init__()_39]] - `calls` [EXTRACTED]
+- [[.__init__()_54]] - `calls` [EXTRACTED]
 - [[._load_paused_ids()]] - `calls` [EXTRACTED]
 - [[ContributorManager]] - `calls` [EXTRACTED]
 - [[Read persisted paused-collaborator IDs from disk.      Owner-initiated manual pa]] - `rationale_for` [EXTRACTED]

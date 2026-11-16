@@ -25,12 +25,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 7]]
-- 2 edges to [[_COMMUNITY_Community 2]]
+- 3 edges to [[_COMMUNITY_Community 84]]
 - 1 edge to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 99]]
-- 1 edge to [[_COMMUNITY_Community 2325]]
+- 1 edge to [[_COMMUNITY_Community 329]]
+- 1 edge to [[_COMMUNITY_Community 845]]
+- 1 edge to [[_COMMUNITY_Community 626]]
 
 ## Top bridge nodes
-- [[TestReplayBufferOffsetParsing]] - degree 10, connects to 4 communities
-- [[._make_proxy_with_mock_buffer()]] - degree 5, connects to 1 community
+- [[TestReplayBufferOffsetParsing]] - degree 10, connects to 3 communities
+- [[._make_proxy_with_mock_buffer()]] - degree 5, connects to 2 communities

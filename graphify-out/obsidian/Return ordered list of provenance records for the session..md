@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "Community 22"
+community: "Community 72"
 location: "L530"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_22
+  - community/Community_72
 ---
 
 # Return ordered list of provenance records for the session.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_segment_provenance()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_22
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

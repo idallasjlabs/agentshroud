@@ -18,7 +18,7 @@ tags:
 - [[.test_detect_none()]] - `calls` [EXTRACTED]
 - [[.test_detect_podman()]] - `calls` [EXTRACTED]
 - [[Auto-detect which container runtimes are available on this system.]] - `rationale_for` [EXTRACTED]
-- [[__init__.py_8]] - `contains` [EXTRACTED]
+- [[__init__.py_9]] - `contains` [EXTRACTED]
 - [[api.py]] - `imports` [EXTRACTED]
 - [[check_prerequisites()]] - `calls` [EXTRACTED]
 - [[get_engine()]] - `calls` [EXTRACTED]

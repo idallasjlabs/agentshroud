@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "Community 72"
+community: "Community 26"
 location: "L27"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_72
+  - community/Community_26
 ---
 
 # PathIsolationConfig
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_106]] - `references` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_121]] - `references` [EXTRACTED]
 - [[.config()_4]] - `calls` [EXTRACTED]
 - [[.test_custom_config()_2]] - `calls` [EXTRACTED]
 - [[.test_default_config()_5]] - `calls` [EXTRACTED]
 - [[.test_path_isolation_instantiates()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Configuration for path isolation system.]] - `rationale_for` [EXTRACTED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
@@ -43,4 +43,4 @@ tags:
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_path_isolation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_72
+#graphify/code #graphify/INFERRED #community/Community_26

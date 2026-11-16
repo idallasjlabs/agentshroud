@@ -2,7 +2,7 @@
 source_file: "gateway/soc/router.py"
 type: "code"
 community: "Community 10"
-location: "L1446"
+location: "L1457"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -15,6 +15,7 @@ tags:
 - [[Create a time-bounded privilege delegation (owner only).]] - `rationale_for` [EXTRACTED]
 - [[CreateDelegationRequest]] - `references` [EXTRACTED]
 - [[DelegationPrivilege]] - `calls` [EXTRACTED]
+- [[HTTPException]] - `calls` [EXTRACTED]
 - [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]

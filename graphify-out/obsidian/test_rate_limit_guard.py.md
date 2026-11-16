@@ -12,7 +12,7 @@ tags:
 # test_rate_limit_guard.py
 
 ## Connections
-- [[FakeClock]] - `contains` [EXTRACTED]
+- [[FakeClock_1]] - `contains` [EXTRACTED]
 - [[RateLimitConfig]] - `imports` [EXTRACTED]
 - [[RateLimitGuard]] - `imports` [EXTRACTED]
 - [[SecurityPipeline]] - `imports` [EXTRACTED]

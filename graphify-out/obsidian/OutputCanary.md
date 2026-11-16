@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "Community 72"
+community: "Community 233"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_233
 ---
 
 # OutputCanary
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_104]] - `method` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_119]] - `method` [EXTRACTED]
 - [[._create_detection_patterns()]] - `method` [EXTRACTED]
 - [[._create_invisible_canary()]] - `method` [EXTRACTED]
 - [[._scan_for_canary()]] - `method` [EXTRACTED]
@@ -26,7 +26,7 @@ tags:
 - [[.test_output_canary_instantiates()]] - `calls` [EXTRACTED]
 - [[.test_partial_canary_match_handling()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[Main Output Canary System for detecting prompt leakage.      This system generat]] - `rationale_for` [EXTRACTED]
@@ -47,4 +47,4 @@ tags:
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_output_canary.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/Community_233

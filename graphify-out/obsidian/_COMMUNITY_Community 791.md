@@ -1,34 +1,33 @@
 ---
 type: community
-members: 21
+members: 20
 ---
 
 # Community 791
 
-**Members:** 21 nodes
+**Members:** 20 nodes
 
 ## Members
-- [[.__init__()_169]] - code - gateway/tests/test_key_rotation.py
-- [[.setup_manager_with_credential()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_check_and_rotate_due_credentials()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_emergency_rotation()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_grace_period_cleanup()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_register_validator()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_rotation_with_validation_failure()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_successful_rotation_workflow()]] - code - gateway/tests/test_key_rotation.py
-- [[.validate()_2]] - code - gateway/tests/test_key_rotation.py
-- [[Mock validation that can be controlled.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Mock validator for testing.]] - rationale - gateway/tests/test_key_rotation.py
-- [[MockValidator]] - code - gateway/tests/test_key_rotation.py
-- [[Set up manager with a credential that needs rotation.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test bulk rotation check and execution.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test complete successful rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test emergency rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test grace period and old credential cleanup.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test rotation workflow with validation failure and rollback.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test the complete rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test validator registration.]] - rationale - gateway/tests/test_key_rotation.py
-- [[TestKeyRotationWorkflow]] - code - gateway/tests/test_key_rotation.py
+- [[Anthropic v1messages response → OpenAI v1chatcompletions envelope.]] - rationale - gateway/proxy/anthropic_openai_translator.py
+- [[Hermes v0.16.0 OpenAI-Client Compatibility Incident (3-day cron outage)]] - rationale - gateway/tests/test_chat_completions_alias.py
+- [[If openai_to_gemini_request raises, the request must still be     forwarded (unm]] - rationale - gateway/tests/test_gemini_via_openai_path.py
+- [[Regression don't break the existing v1messages path.]] - rationale - gateway/tests/test_chat_completions_alias.py
+- [[The combined path v1chatcompletions with model=claude- must     end up POST]] - rationale - gateway/tests/test_claude_via_openai_path.py
+- [[The combined path v1chatcompletions with model=gemini- must end     up POST]] - rationale - gateway/tests/test_gemini_via_openai_path.py
+- [[anthropic_to_openai_response()]] - code - gateway/proxy/anthropic_openai_translator.py
+- [[client()_3]] - code - gateway/tests/test_chat_completions_alias.py
+- [[test_anthropic_to_openai_response_envelope()]] - code - gateway/tests/test_claude_via_openai_path.py
+- [[test_chat_completions_alias.py]] - code - gateway/tests/test_chat_completions_alias.py
+- [[test_chat_completions_alias_passes_correct_path_to_proxy()]] - code - gateway/tests/test_chat_completions_alias.py
+- [[test_chat_completions_alias_routes_to_v1_path()]] - code - gateway/tests/test_chat_completions_alias.py
+- [[test_claude_via_openai_path.py]] - code - gateway/tests/test_claude_via_openai_path.py
+- [[test_gemini_via_openai_path.py]] - code - gateway/tests/test_gemini_via_openai_path.py
+- [[test_get_chat_completions_alias_also_routes()]] - code - gateway/tests/test_chat_completions_alias.py
+- [[test_openai_to_anthropic_request_strips_system_role()]] - code - gateway/tests/test_claude_via_openai_path.py
+- [[test_proxy_gemini_translation_failure_falls_through_gracefully()]] - code - gateway/tests/test_gemini_via_openai_path.py
+- [[test_proxy_rewrites_claude_via_openai_path()]] - code - gateway/tests/test_claude_via_openai_path.py
+- [[test_proxy_rewrites_gemini_via_openai_path()]] - code - gateway/tests/test_gemini_via_openai_path.py
+- [[test_root_v1_messages_still_works_unchanged()]] - code - gateway/tests/test_chat_completions_alias.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,15 +37,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 122]]
-- 5 edges to [[_COMMUNITY_Community 455]]
-- 4 edges to [[_COMMUNITY_Community 198]]
-- 2 edges to [[_COMMUNITY_Community 381]]
-- 2 edges to [[_COMMUNITY_Community 1991]]
+- 5 edges to [[_COMMUNITY_Community 1278]]
+- 4 edges to [[_COMMUNITY_Community 361]]
+- 2 edges to [[_COMMUNITY_Community 360]]
+- 1 edge to [[_COMMUNITY_Community 1787]]
+- 1 edge to [[_COMMUNITY_Community 37]]
 
 ## Top bridge nodes
-- [[MockValidator]] - degree 14, connects to 5 communities
-- [[TestKeyRotationWorkflow]] - degree 14, connects to 5 communities
-- [[.setup_manager_with_credential()]] - degree 6, connects to 3 communities
-- [[.test_check_and_rotate_due_credentials()]] - degree 6, connects to 3 communities
-- [[.test_register_validator()]] - degree 3, connects to 1 community
+- [[anthropic_to_openai_response()]] - degree 7, connects to 3 communities
+- [[test_claude_via_openai_path.py]] - degree 9, connects to 2 communities
+- [[test_gemini_via_openai_path.py]] - degree 5, connects to 2 communities
+- [[test_proxy_rewrites_claude_via_openai_path()]] - degree 3, connects to 1 community
+- [[test_proxy_rewrites_gemini_via_openai_path()]] - degree 3, connects to 1 community

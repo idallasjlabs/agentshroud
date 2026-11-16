@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/input_normalizer.py"
 type: "code"
-community: "Community 344"
+community: "Community 1284"
 location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_344
+  - community/Community_1284
 ---
 
 # strip_markdown_exfil()
@@ -20,4 +20,4 @@ tags:
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 - [[tool_result_injection.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_344
+#graphify/code #graphify/EXTRACTED #community/Community_1284

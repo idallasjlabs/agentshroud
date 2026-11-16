@@ -1,17 +1,17 @@
 ---
-source_file: "opencode.json"
+source_file: "config/inbound-edge/schema.json"
 type: "code"
-community: "Community 159"
-location: "L26"
+community: "Community 1552"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_159
+  - community/Community_1552
 ---
 
 # type
 
 ## Connections
-- [[atlassian-agentshroud_5]] - `contains` [EXTRACTED]
+- [[docs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_159
+#graphify/code #graphify/EXTRACTED #community/Community_1552

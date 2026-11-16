@@ -8,7 +8,7 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[check()_1]] - code - scripts/preflight-check.sh
+- [[check()_2]] - code - scripts/preflight-check.sh
 - [[fail()_4]] - code - scripts/tailscale-check.sh
 - [[infra-check.sh]] - code - scripts/infra-check.sh
 - [[infra-check.sh script]] - code - scripts/infra-check.sh
@@ -27,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 112]]
+- 1 edge to [[_COMMUNITY_Community 43]]
 
 ## Top bridge nodes
 - [[preflight-check.sh]] - degree 4, connects to 1 community

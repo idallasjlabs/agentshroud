@@ -1,16 +1,17 @@
 ---
 type: community
-members: 3
+members: 4
 ---
 
 # Community 2329
 
-**Members:** 3 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_multiline_parenthesised_value_consumed()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[.test_unterminated_field_returns_end()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[TestConsumeFieldEdge]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[max_concurrency]] - code - config/inbound-edge/schema.json
+- [[maximum_2]] - code - config/inbound-edge/schema.json
+- [[minimum_2]] - code - config/inbound-edge/schema.json
+- [[type_17]] - code - config/inbound-edge/schema.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,11 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 69]]
-- 1 edge to [[_COMMUNITY_Community 562]]
-- 1 edge to [[_COMMUNITY_Community 917]]
+- 1 edge to [[_COMMUNITY_Community 1062]]
 
 ## Top bridge nodes
-- [[TestConsumeFieldEdge]] - degree 4, connects to 2 communities
-- [[.test_unterminated_field_returns_end()]] - degree 2, connects to 1 community
-- [[.test_multiline_parenthesised_value_consumed()]] - degree 2, connects to 1 community
+- [[max_concurrency]] - degree 4, connects to 1 community

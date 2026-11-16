@@ -1,15 +1,20 @@
 ---
 type: community
-members: 2
+members: 7
 ---
 
 # Community 2050
 
-**Members:** 2 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[.test_nonce_expired_rejected()]] - code - gateway/tests/test_session_security.py
-- [[A nonce with a timestamp outside the 5-min window is rejected.]] - rationale - gateway/tests/test_session_security.py
+- [[.test_owner_recipient_body_preserved()]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[.test_send_owner_endpoint_also_bypasses_pii()]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[.test_unknown_recipient_body_still_scrubbed()]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[emailsend-owner delegates to email_send and also skips PII for the owner.]] - rationale - gateway/tests/test_email_owner_bypasses_pii.py
+- [[Owner-allowlisted recipient receives body verbatim; pii_redacted=False.]] - rationale - gateway/tests/test_email_owner_bypasses_pii.py
+- [[TestOwnerEmailBypassesPii]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[Unknown recipient's body is PII-scrubbed before approval queue submission.]] - rationale - gateway/tests/test_email_owner_bypasses_pii.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +24,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 76]]
+- 3 edges to [[_COMMUNITY_Community 37]]
+- 1 edge to [[_COMMUNITY_Community 2154]]
 
 ## Top bridge nodes
-- [[.test_nonce_expired_rejected()]] - degree 2, connects to 1 community
+- [[TestOwnerEmailBypassesPii]] - degree 4, connects to 1 community
+- [[.test_owner_recipient_body_preserved()]] - degree 3, connects to 1 community
+- [[.test_send_owner_endpoint_also_bypasses_pii()]] - degree 3, connects to 1 community
+- [[.test_unknown_recipient_body_still_scrubbed()]] - degree 3, connects to 1 community

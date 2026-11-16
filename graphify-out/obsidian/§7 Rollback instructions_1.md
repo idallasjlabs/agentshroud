@@ -1,12 +1,12 @@
 ---
 source_file: "reports/upgrade-2026-09-27.md"
 type: "document"
-community: "Community 1924"
+community: "Community 1561"
 location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1924
+  - community/Community_1561
 ---
 
 # §7 Rollback instructions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Sunday Upgrade — 2026-09-27 (DEV run)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1924
+#graphify/document #graphify/EXTRACTED #community/Community_1561

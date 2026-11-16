@@ -12,6 +12,10 @@ tags:
 # check_benchmark_regression.py
 
 ## Connections
-- [[main()_16]] - `contains` [EXTRACTED]
+- [[_compare()]] - `contains` [EXTRACTED]
+- [[_is_number()]] - `contains` [EXTRACTED]
+- [[_load_json()]] - `contains` [EXTRACTED]
+- [[check()]] - `contains` [EXTRACTED]
+- [[main()_18]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_186

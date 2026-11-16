@@ -2,7 +2,7 @@
 source_file: "gateway/soc/websocket.py"
 type: "code"
 community: "Community 169"
-location: "L34"
+location: "L43"
 tags:
   - graphify/code
   - graphify/INFERRED

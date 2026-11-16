@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "Community 794"
+community: "Community 154"
 location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_794
+  - community/Community_154
 ---
 
 # TestCleanContent
@@ -20,4 +20,4 @@ tags:
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[test_tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_794
+#graphify/code #graphify/EXTRACTED #community/Community_154

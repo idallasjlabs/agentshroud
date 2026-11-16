@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "Community 10"
-location: "L2718"
+community: "Community 2333"
+location: "L3249"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_10
+  - community/Community_2333
 ---
 
 # Serve the unified SOC web dashboard.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[soc_dashboard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_10
+#graphify/rationale #graphify/EXTRACTED #community/Community_2333

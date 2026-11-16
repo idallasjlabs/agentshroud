@@ -1,38 +1,44 @@
 ---
 type: community
-members: 25
+members: 31
 ---
 
 # Community 477
 
-**Members:** 25 nodes
+**Members:** 31 nodes
 
 ## Members
-- [[._derive_key()]] - code - gateway/security/encrypted_store.py
-- [[.decrypt()]] - code - gateway/security/encrypted_store.py
-- [[.decrypt_b64()]] - code - gateway/security/encrypted_store.py
-- [[.decrypt_json()]] - code - gateway/security/encrypted_store.py
-- [[.decrypt_str()]] - code - gateway/security/encrypted_store.py
-- [[.encrypt()]] - code - gateway/security/encrypted_store.py
-- [[.encrypt_b64()]] - code - gateway/security/encrypted_store.py
-- [[.rotate()]] - code - gateway/security/encrypted_store.py
-- [[.test_encrypt_decrypt_still_works_after_zeroing()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_key_rotation_with_zeroing()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_secure_zero_bytearray()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_secure_zero_empty()]] - code - gateway/tests/test_security_hardening.py
-- [[Best-effort zeroing of key material using ctypes.memset.      Works on bytearray]] - rationale - gateway/security/encrypted_store.py
-- [[Decrypt a base64-encoded blob.]] - rationale - gateway/security/encrypted_store.py
-- [[Decrypt an AES-256-GCM encrypted blob.          Args             blob The encr]] - rationale - gateway/security/encrypted_store.py
-- [[Decrypt and return as UTF-8 string.]] - rationale - gateway/security/encrypted_store.py
-- [[Decrypt and return as parsed JSON dict.]] - rationale - gateway/security/encrypted_store.py
-- [[Derive a 256-bit key from master secret using PBKDF2-HMAC-SHA256.]] - rationale - gateway/security/encrypted_store.py
-- [[Encrypt and return as base64-encoded string.]] - rationale - gateway/security/encrypted_store.py
-- [[Encrypt data using AES-256-GCM.          Args             data String, bytes,]] - rationale - gateway/security/encrypted_store.py
-- [[Ensure zeroing doesn't break normal encryptdecrypt flow.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Re-encrypt blobs with a new master secret.          Args             blobs Lis]] - rationale - gateway/security/encrypted_store.py
-- [[TestSecureZero]] - code - gateway/tests/test_security_hardening.py
-- [[Tests for key material zeroing (C2 fix).]] - rationale - gateway/tests/test_security_hardening.py
-- [[_secure_zero()]] - code - gateway/security/encrypted_store.py
+- [[.__init__()_110]] - code - gateway/security/memory_integrity.py
+- [[._load_integrity_database()]] - code - gateway/security/memory_integrity.py
+- [[._load_write_windows()]] - code - gateway/security/memory_integrity.py
+- [[._save_write_windows()]] - code - gateway/security/memory_integrity.py
+- [[.from_dict()_8]] - code - gateway/security/memory_integrity.py
+- [[.get_integrity_status()]] - code - gateway/security/memory_integrity.py
+- [[.get_recent_alerts()]] - code - gateway/security/memory_integrity.py
+- [[.register_expected_write()]] - code - gateway/security/memory_integrity.py
+- [[.setup_method()_9]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.to_dict()_11]] - code - gateway/security/memory_integrity.py
+- [[Any_58]] - code - gateway/security/memory_integrity.py
+- [[Configuration for memory file integrity monitoring.]] - rationale - gateway/security/memory_config.py
+- [[Convert to dictionary for JSON serialization.]] - rationale - gateway/security/memory_integrity.py
+- [[Create from dictionary for JSON deserialization.]] - rationale - gateway/security/memory_integrity.py
+- [[FileIntegrityRecord]] - code - gateway/security/memory_integrity.py
+- [[Get alerts from the last N hours.]] - rationale - gateway/security/memory_integrity.py
+- [[Get current integrity monitoring status.]] - rationale - gateway/security/memory_integrity.py
+- [[Load active write windows from disk.]] - rationale - gateway/security/memory_integrity.py
+- [[Load integrity database from disk.]] - rationale - gateway/security/memory_integrity.py
+- [[MemoryIntegrityConfig]] - code - gateway/security/memory_config.py
+- [[MemoryIntegrityConfig_1]] - code - gateway/security/memory_integrity.py
+- [[MemoryIntegrityMonitor]] - code - gateway/security/memory_integrity.py
+- [[ModificationSource]] - code - gateway/security/memory_integrity.py
+- [[Monitors integrity of critical memory files.]] - rationale - gateway/security/memory_integrity.py
+- [[Record of a file's integrity state.]] - rationale - gateway/security/memory_integrity.py
+- [[Register an expected write to a file to prevent false alerts.]] - rationale - gateway/security/memory_integrity.py
+- [[Save active write windows to disk.]] - rationale - gateway/security/memory_integrity.py
+- [[Set up test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Source of a file modification.]] - rationale - gateway/security/memory_integrity.py
+- [[memory_config.py]] - code - gateway/security/memory_config.py
+- [[memory_integrity.py]] - code - gateway/security/memory_integrity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,17 +48,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_Community 0]]
-- 6 edges to [[_COMMUNITY_Community 52]]
-- 3 edges to [[_COMMUNITY_Community 11]]
-- 2 edges to [[_COMMUNITY_Community 17]]
-- 2 edges to [[_COMMUNITY_Community 21]]
-- 1 edge to [[_COMMUNITY_Community 162]]
-- 1 edge to [[_COMMUNITY_Community 24]]
+- 16 edges to [[_COMMUNITY_Community 16]]
+- 13 edges to [[_COMMUNITY_Community 1287]]
+- 11 edges to [[_COMMUNITY_Community 72]]
+- 5 edges to [[_COMMUNITY_Community 1148]]
+- 4 edges to [[_COMMUNITY_Community 151]]
+- 2 edges to [[_COMMUNITY_Community 8]]
+- 1 edge to [[_COMMUNITY_Community 489]]
+- 1 edge to [[_COMMUNITY_Community 1]]
+- 1 edge to [[_COMMUNITY_Community 2354]]
 
 ## Top bridge nodes
-- [[TestSecureZero]] - degree 23, connects to 6 communities
-- [[_secure_zero()]] - degree 9, connects to 2 communities
-- [[.decrypt()]] - degree 8, connects to 1 community
-- [[.encrypt()]] - degree 6, connects to 1 community
-- [[._derive_key()]] - degree 5, connects to 1 community
+- [[MemoryIntegrityMonitor]] - degree 41, connects to 6 communities
+- [[MemoryIntegrityConfig]] - degree 18, connects to 5 communities
+- [[ModificationSource]] - degree 13, connects to 4 communities
+- [[memory_config.py]] - degree 3, connects to 2 communities
+- [[FileIntegrityRecord]] - degree 7, connects to 1 community

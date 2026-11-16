@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[.test_read_generic_exception_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_read_nonzero_returncode_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_read_success_strips_whitespace()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_read_timeout_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestReadFrom1Password]] - code - gateway/tests/test_key_rotation_internals.py
+- [[.test_compose_text_empty_when_absent()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_compose_text_skips_unreadable_then_reads()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_security_scan_sh_empty_when_absent()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_security_scan_sh_read()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestTextReaders]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,10 +22,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 122]]
-- 2 edges to [[_COMMUNITY_Community 381]]
-- 1 edge to [[_COMMUNITY_Community 455]]
-- 1 edge to [[_COMMUNITY_Community 198]]
+- 2 edges to [[_COMMUNITY_Community 219]]
+- 1 edge to [[_COMMUNITY_Community 516]]
 
 ## Top bridge nodes
-- [[TestReadFrom1Password]] - degree 10, connects to 4 communities
+- [[TestTextReaders]] - degree 5, connects to 1 community
+- [[.test_compose_text_skips_unreadable_then_reads()]] - degree 2, connects to 1 community
+- [[.test_security_scan_sh_read()]] - degree 2, connects to 1 community

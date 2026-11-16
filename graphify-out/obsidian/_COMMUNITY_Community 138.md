@@ -8,7 +8,7 @@ members: 51
 **Members:** 51 nodes
 
 ## Members
-- [[.__init__()_10]] - code - gateway/ingest_api/auth.py
+- [[.__init__()_25]] - code - gateway/ingest_api/auth.py
 - [[.test_bot_command_with_username_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_bot_command_without_username_not_matched()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_caption_entities_supported()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -70,24 +70,23 @@ SORT file.name ASC
 ## Connections to other communities
 - 37 edges to [[_COMMUNITY_Community 4]]
 - 15 edges to [[_COMMUNITY_Community 12]]
-- 8 edges to [[_COMMUNITY_Community 49]]
-- 5 edges to [[_COMMUNITY_Community 14]]
+- 8 edges to [[_COMMUNITY_Community 707]]
+- 6 edges to [[_COMMUNITY_Community 14]]
 - 4 edges to [[_COMMUNITY_Community 72]]
 - 3 edges to [[_COMMUNITY_Community 1130]]
-- 2 edges to [[_COMMUNITY_Community 223]]
+- 2 edges to [[_COMMUNITY_Community 96]]
 - 2 edges to [[_COMMUNITY_Community 92]]
 - 2 edges to [[_COMMUNITY_Community 13]]
-- 1 edge to [[_COMMUNITY_Community 96]]
-- 1 edge to [[_COMMUNITY_Community 104]]
-- 1 edge to [[_COMMUNITY_Community 75]]
-- 1 edge to [[_COMMUNITY_Community 1127]]
+- 1 edge to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 18]]
+- 1 edge to [[_COMMUNITY_Community 37]]
 - 1 edge to [[_COMMUNITY_Community 1412]]
 - 1 edge to [[_COMMUNITY_Community 1131]]
 - 1 edge to [[_COMMUNITY_Community 2006]]
 - 1 edge to [[_COMMUNITY_Community 1946]]
 
 ## Top bridge nodes
-- [[RateLimiter]] - degree 47, connects to 16 communities
+- [[RateLimiter]] - degree 47, connects to 15 communities
 - [[TestCommandTokenNormalization]] - degree 15, connects to 3 communities
 - [[TestBotIsMentioned]] - degree 13, connects to 3 communities
 - [[TestIsGroupMessage]] - degree 10, connects to 3 communities

@@ -12,7 +12,7 @@ tags:
 # WebProxy
 
 ## Connections
-- [[.__init__()_44]] - `method` [EXTRACTED]
+- [[.__init__()_59]] - `method` [EXTRACTED]
 - [[._audit()_1]] - `method` [EXTRACTED]
 - [[.allowlist_proxy()]] - `calls` [EXTRACTED]
 - [[.check_request()]] - `method` [EXTRACTED]

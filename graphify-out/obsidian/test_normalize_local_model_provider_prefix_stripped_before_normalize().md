@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "Community 208"
+community: "Community 112"
 location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_208
+  - community/Community_112
 ---
 
 # test_normalize_local_model_provider_prefix_stripped_before_normalize()
@@ -16,4 +16,4 @@ tags:
 - [[ollama prefix is stripped during proxy_messages dispatch and normalization foll]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_208
+#graphify/code #graphify/EXTRACTED #community/Community_112

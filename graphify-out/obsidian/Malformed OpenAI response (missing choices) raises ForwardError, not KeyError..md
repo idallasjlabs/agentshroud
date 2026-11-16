@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router_openai_translation.py"
 type: "rationale"
-community: "Community 325"
+community: "Community 34"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_325
+  - community/Community_34
 ---
 
 # Malformed OpenAI response (missing choices) raises ForwardError, not KeyError.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_openai_malformed_response_raises_forward_error()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_325
+#graphify/rationale #graphify/EXTRACTED #community/Community_34

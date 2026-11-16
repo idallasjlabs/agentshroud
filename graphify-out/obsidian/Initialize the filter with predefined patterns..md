@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "rationale"
-community: "Community 72"
+community: "Community 431"
 location: "L51"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_431
 ---
 
 # Initialize the filter with predefined patterns.
 
 ## Connections
-- [[.__init__()_128]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_143]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_72
+#graphify/rationale #graphify/EXTRACTED #community/Community_431

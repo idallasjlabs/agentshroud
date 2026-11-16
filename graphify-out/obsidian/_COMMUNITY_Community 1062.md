@@ -1,22 +1,30 @@
 ---
 type: community
-members: 9
+members: 17
 ---
 
 # Community 1062
 
-**Members:** 9 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[4. Risks & Gaps]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[5. Risks & Gaps]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Critical]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[Critical Risks]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Deferred Items That Matter]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Design Decisions That Could Backfire]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Design Decisions to Reconsider]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[High]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[Medium]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[additionalProperties_3]] - code - config/inbound-edge/schema.json
+- [[daily_calls]] - code - config/inbound-edge/schema.json
+- [[daily_delegations]] - code - config/inbound-edge/schema.json
+- [[limits]] - code - config/inbound-edge/schema.json
+- [[maximum]] - code - config/inbound-edge/schema.json
+- [[maximum_3]] - code - config/inbound-edge/schema.json
+- [[maximum_4]] - code - config/inbound-edge/schema.json
+- [[minimum]] - code - config/inbound-edge/schema.json
+- [[minimum_3]] - code - config/inbound-edge/schema.json
+- [[minimum_4]] - code - config/inbound-edge/schema.json
+- [[per_client_per_minute]] - code - config/inbound-edge/schema.json
+- [[properties_2]] - code - config/inbound-edge/schema.json
+- [[required_2]] - code - config/inbound-edge/schema.json
+- [[type_14]] - code - config/inbound-edge/schema.json
+- [[type_15]] - code - config/inbound-edge/schema.json
+- [[type_18]] - code - config/inbound-edge/schema.json
+- [[type_19]] - code - config/inbound-edge/schema.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,9 +34,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 153]]
-- 1 edge to [[_COMMUNITY_Community 1115]]
+- 1 edge to [[_COMMUNITY_Community 1139]]
+- 1 edge to [[_COMMUNITY_Community 2329]]
+- 1 edge to [[_COMMUNITY_Community 2331]]
 
 ## Top bridge nodes
-- [[4. Risks & Gaps]] - degree 8, connects to 1 community
-- [[5. Risks & Gaps]] - degree 4, connects to 1 community
+- [[properties_2]] - degree 6, connects to 2 communities
+- [[limits]] - degree 5, connects to 1 community

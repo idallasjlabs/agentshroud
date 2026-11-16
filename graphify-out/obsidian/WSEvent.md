@@ -2,7 +2,7 @@
 source_file: "gateway/soc/models.py"
 type: "code"
 community: "Community 169"
-location: "L270"
+location: "L271"
 tags:
   - graphify/code
   - graphify/EXTRACTED

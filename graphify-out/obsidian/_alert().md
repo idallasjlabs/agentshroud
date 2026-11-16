@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_alert_dispatcher_retry.py"
 type: "code"
-community: "Community 1066"
+community: "Community 557"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1066
+  - community/Community_557
 ---
 
 # _alert()
@@ -19,4 +19,4 @@ tags:
 - [[test_succeeds_after_one_transient_failure()]] - `calls` [EXTRACTED]
 - [[test_succeeds_on_first_attempt()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1066
+#graphify/code #graphify/EXTRACTED #community/Community_557

@@ -12,7 +12,7 @@ tags:
 # IsolationVerifier
 
 ## Connections
-- [[.__init__()_52]] - `method` [EXTRACTED]
+- [[.__init__()_67]] - `method` [EXTRACTED]
 - [[.generate_compose()]] - `method` [EXTRACTED]
 - [[.test_capabilities_not_dropped_flagged()]] - `calls` [EXTRACTED]
 - [[.test_compose_contains_all_agents()]] - `calls` [EXTRACTED]

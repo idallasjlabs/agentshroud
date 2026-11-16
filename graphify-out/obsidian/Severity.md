@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[.severity()]] - `references` [EXTRACTED]
-- [[CompletedProcess_4]] - `uses` [INFERRED]
+- [[CompletedProcess_5]] - `uses` [INFERRED]
 - [[IntEnum]] - `inherits` [EXTRACTED]
 - [[Ordered severity ladder (``IntEnum`` so comparisons work).]] - `rationale_for` [EXTRACTED]
-- [[Path_39]] - `uses` [INFERRED]
+- [[Path_42]] - `uses` [INFERRED]
 - [[ScanResult_4]] - `uses` [INFERRED]
 - [[SkillGuard_1]] - `uses` [INFERRED]
 - [[TestAggregation]] - `uses` [INFERRED]

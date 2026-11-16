@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_collaborator_multiturn_block_text_is_normalized_to_protected_notice()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Collaborator multi-turn disclosure block prose should be normalized.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_proxy_request_allows_starting_then_online_sequence()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Starting and online notices are distinct and should both forward.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 626]]
-- 1 edge to [[_COMMUNITY_Community 2]]
 - 1 edge to [[_COMMUNITY_Community 845]]
+- 1 edge to [[_COMMUNITY_Community 2]]
+- 1 edge to [[_COMMUNITY_Community 626]]
 
 ## Top bridge nodes
-- [[.test_collaborator_multiturn_block_text_is_normalized_to_protected_notice()]] - degree 4, connects to 3 communities
+- [[.test_proxy_request_allows_starting_then_online_sequence()]] - degree 4, connects to 3 communities

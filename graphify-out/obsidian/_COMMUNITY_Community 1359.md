@@ -1,23 +1,25 @@
 ---
 type: community
-members: 10
+members: 12
 ---
 
 # Community 1359
 
-**Members:** 10 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[.pg()_1]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_benign_tool_result_passes()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_direct_injection_in_tool_result_blocked()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_empty_tool_result_passes()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_lower_threshold_than_direct_scan()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_role_override_in_tool_result_blocked()]] - code - gateway/tests/test_prompt_guard.py
-- [[Explicit ignore-instructions payload embedded in a tool result.]] - rationale - gateway/tests/test_prompt_guard.py
-- [[TestToolResultScan]] - code - gateway/tests/test_prompt_guard.py
-- [[Tests for indirect prompt injection detection in tool results.]] - rationale - gateway/tests/test_prompt_guard.py
-- [[Tool result scan blocks at score ≥ 0.6 vs direct scan threshold of 0.8.]] - rationale - gateway/tests/test_prompt_guard.py
+- [[02-design]] - document - docs/inbound-mcp-edge/02-design.md
+- [[1. Targets]] - document - docs/inbound-mcp-edge/02-design.md
+- [[2. Architecture]] - document - docs/inbound-mcp-edge/02-design.md
+- [[3. Pipeline order (gateway, every `toolscall`)]] - document - docs/inbound-mcp-edge/02-design.md
+- [[4. Sequences]] - document - docs/inbound-mcp-edge/02-design.md
+- [[5. OAuth and enrollment]] - document - docs/inbound-mcp-edge/02-design.md
+- [[6. Command Center (tailnet only)]] - document - docs/inbound-mcp-edge/02-design.md
+- [[7. Known limits]] - document - docs/inbound-mcp-edge/02-design.md
+- [[Delegation to Hermes]] - document - docs/inbound-mcp-edge/02-design.md
+- [[Inbound MCP Edge — Design]] - document - docs/inbound-mcp-edge/02-design.md
+- [[Read call]] - document - docs/inbound-mcp-edge/02-design.md
+- [[Write with approval]] - document - docs/inbound-mcp-edge/02-design.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,13 +27,3 @@ members: 10
 TABLE source_file, type FROM #community/Community_1359
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 0]]
-- 1 edge to [[_COMMUNITY_Community 24]]
-- 1 edge to [[_COMMUNITY_Community 22]]
-- 1 edge to [[_COMMUNITY_Community 917]]
-
-## Top bridge nodes
-- [[TestToolResultScan]] - degree 11, connects to 4 communities
-- [[.pg()_1]] - degree 2, connects to 1 community

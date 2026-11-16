@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_gmail_credential_retrieval.py"
+source_file: "gateway/tests/test_deployment_mode.py"
 type: "code"
-community: "Community 598"
-location: "L19"
+community: "Community 986"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_598
+  - community/Community_986
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[_completed()]] - `references` [EXTRACTED]
+- [[_bash()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_598
+#graphify/code #graphify/EXTRACTED #community/Community_986

@@ -12,7 +12,7 @@ tags:
 # DNSBlocklist
 
 ## Connections
-- [[.__init__()_20]] - `method` [EXTRACTED]
+- [[.__init__()_35]] - `method` [EXTRACTED]
 - [[._periodic_update_loop()]] - `method` [EXTRACTED]
 - [[.download_blocklist()]] - `method` [EXTRACTED]
 - [[.is_blocked()]] - `method` [EXTRACTED]

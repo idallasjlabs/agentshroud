@@ -1,20 +1,23 @@
 ---
 type: community
-members: 7
+members: 10
 ---
 
 # Community 1927
 
-**Members:** 7 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[.guard()]] - code - gateway/tests/test_context_guard.py
-- [[.test_empty_provenance_for_unknown_session()]] - code - gateway/tests/test_context_guard.py
-- [[.test_segment_hash_integrity()]] - code - gateway/tests/test_context_guard.py
-- [[.test_segment_provenance_ordering()]] - code - gateway/tests/test_context_guard.py
-- [[.test_segment_tagging_basic()]] - code - gateway/tests/test_context_guard.py
-- [[.test_separate_sessions_isolated()]] - code - gateway/tests/test_context_guard.py
-- [[TestSourceTagging]] - code - gateway/tests/test_context_guard.py
+- [[additionalProperties_4]] - code - config/inbound-edge/schema.json
+- [[dlp]] - code - config/inbound-edge/schema.json
+- [[enum_2]] - code - config/inbound-edge/schema.json
+- [[maximum_5]] - code - config/inbound-edge/schema.json
+- [[min_confidence]] - code - config/inbound-edge/schema.json
+- [[mode]] - code - config/inbound-edge/schema.json
+- [[properties_3]] - code - config/inbound-edge/schema.json
+- [[required_3]] - code - config/inbound-edge/schema.json
+- [[type_20]] - code - config/inbound-edge/schema.json
+- [[type_21]] - code - config/inbound-edge/schema.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,10 +27,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 0]]
-- 1 edge to [[_COMMUNITY_Community 22]]
-- 1 edge to [[_COMMUNITY_Community 919]]
+- 2 edges to [[_COMMUNITY_Community 1139]]
 
 ## Top bridge nodes
-- [[TestSourceTagging]] - degree 9, connects to 3 communities
-- [[.guard()]] - degree 2, connects to 1 community
+- [[dlp]] - degree 5, connects to 1 community
+- [[mode]] - degree 3, connects to 1 community

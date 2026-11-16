@@ -12,7 +12,7 @@ tags:
 # A2AGovernanceConfig
 
 ## Connections
-- [[.__init__()_49]] - `references` [EXTRACTED]
+- [[.__init__()_64]] - `references` [EXTRACTED]
 - [[.test_complete_task_frees_slot()]] - `calls` [EXTRACTED]
 - [[.test_disabled_allows_all()]] - `calls` [EXTRACTED]
 - [[.test_oversized_denied()]] - `calls` [EXTRACTED]

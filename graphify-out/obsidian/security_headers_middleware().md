@@ -2,7 +2,7 @@
 source_file: "gateway/ingest_api/main.py"
 type: "code"
 community: "Community 143"
-location: "L366"
+location: "L371"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[Add security headers to all responses (defense-in-depth).      Also catches Pyth]] - `rationale_for` [EXTRACTED]
-- [[JSONResponse]] - `calls` [EXTRACTED]
-- [[Request_1]] - `references` [EXTRACTED]
+- [[JSONResponse_1]] - `calls` [EXTRACTED]
+- [[Request_2]] - `references` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 - [[test_main_simple.py]] - `imports` [EXTRACTED]
 - [[test_security_headers_middleware_catches_exception_group()]] - `calls` [EXTRACTED]

@@ -8,8 +8,8 @@ members: 68
 **Members:** 68 nodes
 
 ## Members
-- [[.__init__()_135]] - code - gateway/tests/test_a2a_policy.py
-- [[.__init__()_136]] - code - gateway/tests/test_a2a_policy.py
+- [[.__init__()_150]] - code - gateway/tests/test_a2a_policy.py
+- [[.__init__()_151]] - code - gateway/tests/test_a2a_policy.py
 - [[.allowed()]] - code - gateway/security/a2a_policy.py
 - [[.submit_tool_request()_1]] - code - gateway/tests/test_a2a_policy.py
 - [[.submit_tool_request()_2]] - code - gateway/tests/test_a2a_policy.py
@@ -85,13 +85,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 24 edges to [[_COMMUNITY_Community 307]]
-- 8 edges to [[_COMMUNITY_Community 271]]
-- 6 edges to [[_COMMUNITY_Community 221]]
+- 18 edges to [[_COMMUNITY_Community 307]]
+- 14 edges to [[_COMMUNITY_Community 221]]
+- 6 edges to [[_COMMUNITY_Community 947]]
 
 ## Top bridge nodes
-- [[test_a2a_policy.py]] - degree 48, connects to 2 communities
-- [[A2APolicyEngine_2]] - degree 31, connects to 2 communities
-- [[is_safe_a2a_callback_url()]] - degree 16, connects to 2 communities
-- [[A2APolicyDecision]] - degree 13, connects to 2 communities
-- [[_StubApprovalQueue]] - degree 13, connects to 2 communities
+- [[test_a2a_policy.py]] - degree 48, connects to 3 communities
+- [[A2APolicyEngine_2]] - degree 31, connects to 3 communities
+- [[_StubApprovalQueue]] - degree 13, connects to 3 communities
+- [[_LegacyStubApprovalQueue]] - degree 11, connects to 3 communities
+- [[A2AMethod_1]] - degree 8, connects to 3 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "Community 2178"
+community: "Community 125"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2178
+  - community/Community_125
 ---
 
 # domain_matches()
@@ -19,4 +19,4 @@ tags:
 - [[citation_verifier.py]] - `imports` [EXTRACTED]
 - [[egress_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2178
+#graphify/code #graphify/EXTRACTED #community/Community_125

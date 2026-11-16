@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_urlencoded_plain_no_reply_with_punctuation_is_still_filtered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Form payload NO_REPLY punctuation variant should still normalize.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_collaborator_agent_failed_prefix_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Collaborator agent-failed prefix should normalize to protected unavailable notic]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 626]]
-- 1 edge to [[_COMMUNITY_Community 2]]
 - 1 edge to [[_COMMUNITY_Community 845]]
+- 1 edge to [[_COMMUNITY_Community 2]]
+- 1 edge to [[_COMMUNITY_Community 626]]
 
 ## Top bridge nodes
-- [[.test_urlencoded_plain_no_reply_with_punctuation_is_still_filtered()]] - degree 4, connects to 3 communities
+- [[.test_collaborator_agent_failed_prefix_is_normalized_json()]] - degree 4, connects to 3 communities

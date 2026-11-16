@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/soc_correlation.py"
+source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "Community 62"
-location: "L44"
+community: "Community 71"
+location: "L124"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/Community_71
 ---
 
 # Any
 
 ## Connections
-- [[.to_dict()_13]] - `references` [EXTRACTED]
+- [[._parse_service_network_config()]] - `references` [EXTRACTED]
+- [[._validate_network_definitions()]] - `references` [EXTRACTED]
+- [[.get_security_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_62
+#graphify/code #graphify/EXTRACTED #community/Community_71

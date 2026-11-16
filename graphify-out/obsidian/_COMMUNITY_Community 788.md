@@ -1,35 +1,34 @@
 ---
 type: community
-members: 22
+members: 21
 ---
 
 # Community 788
 
-**Members:** 22 nodes
+**Members:** 21 nodes
 
 ## Members
-- [[._make_report()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.store()_1]] - code - gateway/tests/test_intel_pipeline.py
-- [[.store_dir()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_chain_hash_links_reports()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_integrity_check_fails_for_tampered_file()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_integrity_check_passes_for_saved_report()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_load_all_returns_all_reports()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_load_all_skips_malformed_files()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_load_latest_returns_none_when_empty()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_multiple_saves_latest_is_newest()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_report_with_whitespace_only_id_rejected()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_report_with_whitespace_only_source_rejected()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_save_and_load_latest()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_save_with_corrupt_previous_file_falls_back_to_genesis()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_store_creates_directory()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_verify_chain_empty_store_is_valid()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_verify_chain_fails_for_tampered_entry()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_verify_chain_passes_for_intact_store()]] - code - gateway/tests/test_intel_pipeline.py
-- [[If the previous report file is corrupt, save must not raise.]] - rationale - gateway/tests/test_intel_pipeline.py
-- [[IntelReportStore_1]] - code - gateway/tests/test_intel_pipeline.py
-- [[Path_31]] - code - gateway/tests/test_intel_pipeline.py
-- [[TestIntelReportStore]] - code - gateway/tests/test_intel_pipeline.py
+- [[Anthropic returns the Claude.ai OAuth quota copy with HTTP 400     (wrapped as i]] - rationale - gateway/tests/test_llm_quota_detector.py
+- [[Generic 400 validation errors must NOT trigger failover.]] - rationale - gateway/tests/test_llm_quota_detector.py
+- [[Return (True, token) if the response indicates a billingquota wall.      The st]] - rationale - gateway/proxy/llm_quota_detector.py
+- [[_is_anthropic_quota()]] - code - gateway/proxy/llm_quota_detector.py
+- [[_is_google_quota()]] - code - gateway/proxy/llm_quota_detector.py
+- [[_is_openai_quota()]] - code - gateway/proxy/llm_quota_detector.py
+- [[is_quota_exhausted()]] - code - gateway/proxy/llm_quota_detector.py
+- [[llm_quota_detector.py]] - code - gateway/proxy/llm_quota_detector.py
+- [[test_200_never_triggers()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_400_without_quota_substring_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_500_never_triggers()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_anthropic_400_oauth_extra_usage()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_anthropic_credit_balance_substring()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_anthropic_extra_usage()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_anthropic_rate_limit_type_quota_message()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_anthropic_settings_url()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_google_resource_exhausted()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_openai_insufficient_quota()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_llm_quota_detector.py]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_no_false_positive_on_anthropic_request_rate_limit()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_non_json_body_anthropic_429_no_substring_match()]] - code - gateway/tests/test_llm_quota_detector.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,11 +38,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 16 edges to [[_COMMUNITY_Community 57]]
+- 4 edges to [[_COMMUNITY_Community 142]]
+- 1 edge to [[_COMMUNITY_Community 361]]
+- 1 edge to [[_COMMUNITY_Community 1787]]
+- 1 edge to [[_COMMUNITY_Community 1058]]
 
 ## Top bridge nodes
-- [[TestIntelReportStore]] - degree 23, connects to 1 community
-- [[IntelReportStore_1]] - degree 18, connects to 1 community
-- [[._make_report()]] - degree 13, connects to 1 community
-- [[Path_31]] - degree 11, connects to 1 community
-- [[.test_report_with_whitespace_only_id_rejected()]] - degree 2, connects to 1 community
+- [[is_quota_exhausted()]] - degree 20, connects to 2 communities
+- [[llm_quota_detector.py]] - degree 7, connects to 2 communities
+- [[test_llm_quota_detector.py]] - degree 17, connects to 1 community

@@ -8,11 +8,11 @@ members: 355
 **Members:** 355 nodes
 
 ## Members
-- [[.__init__()_194]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.__init__()_220]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[._make_proxy()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[._make_proxy()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[._make_proxy()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.is_owner()_5]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.is_owner()_6]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_allowed_collaborator_model_command_with_mention_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_block_notice_sent_without_markdown_parse_mode()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_blocked_command_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py

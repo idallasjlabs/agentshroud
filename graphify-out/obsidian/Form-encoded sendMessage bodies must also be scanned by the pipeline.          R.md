@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 2"
+community: "Community 2369"
 location: "L164"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2
+  - community/Community_2369
 ---
 
 # Form-encoded sendMessage bodies must also be scanned by the pipeline.          R
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_form_outbound_pipeline_called_when_available()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_2369

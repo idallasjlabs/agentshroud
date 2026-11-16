@@ -1,19 +1,20 @@
 ---
 type: community
-members: 6
+members: 7
 ---
 
 # Community 2017
 
-**Members:** 6 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[Re-read ``~.llm_settings`` and sync skillsagentsMCP into both bot configs.]] - rationale - gateway/web/api.py
-- [[Re-read ``~.llm_settings``, scan for supply-chain risk, deploy to both bots.]] - rationale - gateway/web/api.py
-- [[Resolve the source (``~.llm_settings``) and bot-config destinations.      Extr]] - rationale - gateway/web/api.py
-- [[_skills_reload_impl()]] - code - gateway/web/api.py
-- [[_skills_reload_paths()]] - code - gateway/web/api.py
-- [[skills_reload()]] - code - gateway/web/api.py
+- [[Common Injection Signatures Detected]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[False Positive (Legitimate Content Blocked)]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[HTTP 400 — Prompt Injection Detected]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Prompt Injection Blocks_2]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Prompt Injection in Monitor Mode]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Related Notes_61]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Tool Result Injections]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,12 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 49]]
-- 2 edges to [[_COMMUNITY_Community 83]]
-- 2 edges to [[_COMMUNITY_Community 125]]
-- 1 edge to [[_COMMUNITY_Community 924]]
+- 1 edge to [[_COMMUNITY_Community 1084]]
 
 ## Top bridge nodes
-- [[_skills_reload_impl()]] - degree 8, connects to 4 communities
-- [[_skills_reload_paths()]] - degree 4, connects to 2 communities
-- [[skills_reload()]] - degree 3, connects to 1 community
+- [[Prompt Injection Blocks_2]] - degree 7, connects to 1 community

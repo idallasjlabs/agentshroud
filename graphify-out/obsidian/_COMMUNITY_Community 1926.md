@@ -1,20 +1,23 @@
 ---
 type: community
-members: 7
+members: 10
 ---
 
 # Community 1926
 
-**Members:** 7 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[Apply inline Markdown spans to plain text (no recursive nesting).]] - rationale - docker/bots/hermes/render_md_email.py
-- [[_esc()]] - code - docker/bots/hermes/render_md_email.py
-- [[_inline()]] - code - docker/bots/hermes/render_md_email.py
-- [[_render_table()]] - code - docker/bots/hermes/render_md_email.py
-- [[main()_4]] - code - docker/bots/hermes/render_md_email.py
-- [[render()]] - code - docker/bots/hermes/render_md_email.py
-- [[render_md_email.py]] - code - docker/bots/hermes/render_md_email.py
+- [[._build_bridge()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_bridge_registered_via_add_alert_callback_fires_through()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_missing_timestamp_falls_back_to_zero()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_non_spike_alert_dispatched_with_medium_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_spike_alert_dispatched_with_high_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[Any_80]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[End-to-end register the bridge on a real ResourceGuard, trigger         its ale]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[Recreate the lifespan bridge closure verbatim from gatewayingest_apilifespan.p]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[TestResourceGuardAlertBridge]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[The lifespan bridges ResourceGuard's native callback payload to AlertDispatcher.]] - rationale - gateway/tests/test_resource_guard_wiring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +27,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 522]]
-- 1 edge to [[_COMMUNITY_Community 74]]
+- 3 edges to [[_COMMUNITY_Community 532]]
+- 3 edges to [[_COMMUNITY_Community 5]]
 
 ## Top bridge nodes
-- [[render_md_email.py]] - degree 6, connects to 1 community
-- [[render()]] - degree 5, connects to 1 community
+- [[TestResourceGuardAlertBridge]] - degree 9, connects to 2 communities
+- [[Any_80]] - degree 3, connects to 2 communities
+- [[.test_bridge_registered_via_add_alert_callback_fires_through()]] - degree 4, connects to 1 community

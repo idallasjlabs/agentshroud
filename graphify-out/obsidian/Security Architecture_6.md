@@ -1,12 +1,12 @@
 ---
 source_file: "SECURITY.md"
 type: "document"
-community: "Community 394"
+community: "Community 1260"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_394
+  - community/Community_1260
 ---
 
 # Security Architecture
@@ -21,4 +21,4 @@ tags:
 - [[Layer 6 — File & Memory Integrity]] - `contains` [EXTRACTED]
 - [[Layer 7 — Infrastructure & Supply Chain]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_394
+#graphify/document #graphify/EXTRACTED #community/Community_1260

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "Community 431"
+community: "Community 72"
 location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_431
+  - community/Community_72
 ---
 
 # DNSFilter
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_44]] - `calls` [EXTRACTED]
-- [[.__init__()_72]] - `method` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_59]] - `calls` [EXTRACTED]
+- [[.__init__()_87]] - `method` [EXTRACTED]
 - [[._cleanup_rate_window()]] - `method` [EXTRACTED]
 - [[._detect_tunneling()]] - `method` [EXTRACTED]
 - [[._domain_in_allowlist()]] - `method` [EXTRACTED]
@@ -26,7 +26,7 @@ tags:
 - [[.get_flagged_queries()]] - `method` [EXTRACTED]
 - [[.resolve_and_cache()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
@@ -50,4 +50,4 @@ tags:
 - [[test_dns_filter.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_431
+#graphify/code #graphify/EXTRACTED #community/Community_72

@@ -1,48 +1,50 @@
 ---
 type: community
-members: 35
+members: 37
 ---
 
 # Community 235
 
-**Members:** 35 nodes
+**Members:** 37 nodes
 
 ## Members
-- [[.test_allows_file_named_environ_elsewhere()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_allows_plain_command()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_allows_unrelated_file()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_base64_padding_is_credential()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_blocks_cat_proc_environ_pattern()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_blocks_env_command()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_blocks_exact_proc_self_environ()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_blocks_indirect_var_expansion()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_blocks_printenv()_1]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_blocks_wildcard_proc_pid_environ()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_clean_output_unchanged_and_no_leakage()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_clear_resets_leakages()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_critical_leakage_yields_critical_risk()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_empty_command_is_allowed()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_export_writes_valid_json_report()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_long_alphanumeric_is_credential()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_many_medium_yields_medium_risk()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_multiple_high_yields_high_risk()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_named_var_with_short_value_uses_redacted_marker()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_no_activity_is_low_risk()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_plain_word_is_not_credential()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_scrubs_credential_looking_value_for_unknown_var()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_scrubs_named_credential_env_var()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_scrubs_openai_key_pattern()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_short_value_is_not_credential()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_summary_aggregates_by_severity_and_method()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_unparseable_text_is_allowed()]] - code - gateway/tests/test_env_guard_class.py
-- [[TestCheckCommandExecution]] - code - gateway/tests/test_env_guard_class.py
-- [[TestCheckFileAccess]] - code - gateway/tests/test_env_guard_class.py
-- [[TestLooksLikeCredential]] - code - gateway/tests/test_env_guard_class.py
-- [[TestMonitorEnvironmentAccess]] - code - gateway/tests/test_env_guard_class.py
-- [[TestScrubCommandOutput]] - code - gateway/tests/test_env_guard_class.py
-- [[TestSummaryAndExport]] - code - gateway/tests/test_env_guard_class.py
-- [[guard()_2]] - code - gateway/tests/test_env_guard_class.py
-- [[test_env_guard_class.py]] - code - gateway/tests/test_env_guard_class.py
+- [[._store_path()]] - code - gateway/tests/test_rbac.py
+- [[.test_default_config_initialization()]] - code - gateway/tests/test_rbac.py
+- [[.test_get_users_by_role()]] - code - gateway/tests/test_rbac.py
+- [[.test_load_collab_store_returns_empty_on_corrupt_json()]] - code - gateway/tests/test_rbac.py
+- [[.test_load_removed_and_paused_ids_empty_when_no_file()]] - code - gateway/tests/test_rbac.py
+- [[.test_owner_and_collaborators_can_be_overridden_from_env()]] - code - gateway/tests/test_rbac.py
+- [[.test_pause_and_unpause_collaborator()]] - code - gateway/tests/test_rbac.py
+- [[.test_pause_does_not_remove_from_collaborator_role()]] - code - gateway/tests/test_rbac.py
+- [[.test_pause_returns_false_on_inner_write_error()]] - code - gateway/tests/test_rbac.py
+- [[.test_pause_returns_false_on_io_error()]] - code - gateway/tests/test_rbac.py
+- [[.test_persist_and_load_collaborator()]] - code - gateway/tests/test_rbac.py
+- [[.test_persist_is_idempotent()]] - code - gateway/tests/test_rbac.py
+- [[.test_persist_returns_none_on_inner_write_error()]] - code - gateway/tests/test_rbac.py
+- [[.test_persist_returns_none_on_mkdir_error()]] - code - gateway/tests/test_rbac.py
+- [[.test_removed_and_paused_ids_coexist_independently()]] - code - gateway/tests/test_rbac.py
+- [[.test_removed_dynamic_collaborator_excluded_from_effective_set()]] - code - gateway/tests/test_rbac.py
+- [[.test_removed_hardcoded_collaborator_excluded_from_effective_set()]] - code - gateway/tests/test_rbac.py
+- [[.test_revoke_hardcoded_collaborator_records_removal_even_though_never_persisted()]] - code - gateway/tests/test_rbac.py
+- [[.test_revoke_removes_dynamic_collaborator_and_records_removal()]] - code - gateway/tests/test_rbac.py
+- [[.test_revoke_returns_false_on_inner_write_error()]] - code - gateway/tests/test_rbac.py
+- [[.test_revoke_returns_false_on_io_error()]] - code - gateway/tests/test_rbac.py
+- [[.test_role_assignment()]] - code - gateway/tests/test_rbac.py
+- [[.test_role_hierarchy_checks()]] - code - gateway/tests/test_rbac.py
+- [[.test_unpause_returns_false_on_inner_write_error()]] - code - gateway/tests/test_rbac.py
+- [[.test_unpause_returns_false_on_io_error()]] - code - gateway/tests/test_rbac.py
+- [[Bug 1 RBACConfig.__post_init__ must exclude persisted-removed IDs from the]] - rationale - gateway/tests/test_rbac.py
+- [[Bug 1 revoking a hardcoded default (never in approved_collaborators.json)]] - rationale - gateway/tests/test_rbac.py
+- [[Env overrides should drive runtime ownercollaborator identity.]] - rationale - gateway/tests/test_rbac.py
+- [[Pausing is access-gating only, not a roleremoval change (constraint check).]] - rationale - gateway/tests/test_rbac.py
+- [[RBACConfig_3]] - code - gateway/tests/test_rbac.py
+- [[Test default RBAC configuration initialization.]] - rationale - gateway/tests/test_rbac.py
+- [[Test dynamic role assignment.]] - rationale - gateway/tests/test_rbac.py
+- [[Test getting users by role.]] - rationale - gateway/tests/test_rbac.py
+- [[Test role hierarchy helper methods.]] - rationale - gateway/tests/test_rbac.py
+- [[TestCollaboratorPersistence]] - code - gateway/tests/test_rbac.py
+- [[Writes to one exclusion set must not clobber the other persisted keys.]] - rationale - gateway/tests/test_rbac.py
+- [[removed_collaborator_ids  paused_collaborator_ids share approved_collaborators.]] - rationale - gateway/tests/test_rbac.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,11 +54,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 0]]
+- 15 edges to [[_COMMUNITY_Community 6]]
+- 4 edges to [[_COMMUNITY_Community 194]]
+- 3 edges to [[_COMMUNITY_Community 1066]]
+- 2 edges to [[_COMMUNITY_Community 1]]
 
 ## Top bridge nodes
-- [[TestCheckCommandExecution]] - degree 9, connects to 1 community
-- [[test_env_guard_class.py]] - degree 8, connects to 1 community
-- [[TestScrubCommandOutput]] - degree 7, connects to 1 community
-- [[TestCheckFileAccess]] - degree 6, connects to 1 community
-- [[TestLooksLikeCredential]] - degree 6, connects to 1 community
+- [[TestCollaboratorPersistence]] - degree 30, connects to 4 communities
+- [[RBACConfig_3]] - degree 18, connects to 4 communities
+- [[.test_default_config_initialization()]] - degree 3, connects to 1 community
+- [[.test_role_hierarchy_checks()]] - degree 3, connects to 1 community
+- [[.test_role_assignment()]] - degree 3, connects to 1 community

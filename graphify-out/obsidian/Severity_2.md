@@ -12,7 +12,7 @@ tags:
 # Severity
 
 ## Connections
-- [[Any_66]] - `uses` [INFERRED]
+- [[Any_76]] - `uses` [INFERRED]
 - [[Enum]] - `inherits` [EXTRACTED]
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[SecurityEvent]] - `uses` [INFERRED]

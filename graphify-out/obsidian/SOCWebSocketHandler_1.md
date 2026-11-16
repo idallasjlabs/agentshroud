@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Community 6"
+community: "Community 169"
 location: "L726"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_169
 ---
 
 # SOCWebSocketHandler
@@ -27,4 +27,4 @@ tags:
 - [[Role_1]] - `uses` [INFERRED]
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/Community_169

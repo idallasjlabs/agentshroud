@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "Community 208"
+community: "Community 112"
 location: "L597"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_208
+  - community/Community_112
 ---
 
 # _get_local_model strips the provider prefix for a Fieldflare ref, same     as it
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_get_local_model_reads_fieldflare_ref()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_208
+#graphify/rationale #graphify/EXTRACTED #community/Community_112

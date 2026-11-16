@@ -12,7 +12,7 @@ tags:
 # EgressApprovalQueue
 
 ## Connections
-- [[.__init__()_74]] - `method` [EXTRACTED]
+- [[.__init__()_89]] - `method` [EXTRACTED]
 - [[._append_decision()]] - `method` [EXTRACTED]
 - [[._assess_risk()]] - `method` [EXTRACTED]
 - [[._check_existing_rule()]] - `method` [EXTRACTED]

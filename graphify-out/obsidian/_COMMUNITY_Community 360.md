@@ -1,14 +1,13 @@
 ---
 type: community
-members: 62
+members: 44
 ---
 
 # Community 360
 
-**Members:** 62 nodes
+**Members:** 44 nodes
 
 ## Members
-- [[Anthropic v1messages response → OpenAI v1chatcompletions envelope.]] - rationale - gateway/proxy/anthropic_openai_translator.py
 - [[Convert an Anthropic message content field to OpenAI format.]] - rationale - gateway/proxy/anthropic_openai_translator.py
 - [[Failover reply with choices (e.g. rate-limit stub) must not return content]] - rationale - gateway/tests/test_anthropic_openai_translator.py
 - [[Failover reply with empty-string content must not return content.]] - rationale - gateway/tests/test_anthropic_openai_translator.py
@@ -16,13 +15,9 @@ members: 62
 - [[Failover to a qwen-family model must disable thinking mode Qwen3's     think]] - rationale - gateway/tests/test_anthropic_openai_translator.py
 - [[Feed raw SSE bytes into the translator and collect Anthropic events.]] - rationale - gateway/tests/test_anthropic_openai_translator.py
 - [[Flatten Anthropic system prompt (string or content-block list) to plain text.]] - rationale - gateway/proxy/anthropic_openai_translator.py
-- [[Hermes v0.16.0 OpenAI-Client Compatibility Incident (3-day cron outage)]] - rationale - gateway/tests/test_chat_completions_alias.py
-- [[Regression don't break the existing v1messages path.]] - rationale - gateway/tests/test_chat_completions_alias.py
-- [[The combined path v1chatcompletions with model=claude- must     end up POST]] - rationale - gateway/tests/test_claude_via_openai_path.py
 - [[Tool-call-only SSE stream must produce tool_use at index 0 (no text gap).]] - rationale - gateway/tests/test_anthropic_openai_translator.py
 - [[Translate an Anthropic Messages request body to OpenAI chat completions format.]] - rationale - gateway/proxy/anthropic_openai_translator.py
 - [[Translate an Ollama OpenAI-compat response to Anthropic Messages API format.]] - rationale - gateway/proxy/anthropic_openai_translator.py
-- [[Translate an OpenAI v1chatcompletions request body to Anthropic v1messages.]] - rationale - gateway/proxy/anthropic_openai_translator.py
 - [[Translate an OpenAI-compat SSE byte stream to Anthropic SSE byte events.      Yi]] - rationale - gateway/proxy/anthropic_openai_sse_translator.py
 - [[_anthropic_content_to_openai()]] - code - gateway/proxy/anthropic_openai_translator.py
 - [[_anthropic_system_to_openai()]] - code - gateway/proxy/anthropic_openai_translator.py
@@ -33,21 +28,8 @@ members: 62
 - [[anthropic_openai_sse_translator.py]] - code - gateway/proxy/anthropic_openai_sse_translator.py
 - [[anthropic_openai_translator.py]] - code - gateway/proxy/anthropic_openai_translator.py
 - [[anthropic_to_openai_request()]] - code - gateway/proxy/anthropic_openai_translator.py
-- [[anthropic_to_openai_response()]] - code - gateway/proxy/anthropic_openai_translator.py
-- [[client()_3]] - code - gateway/tests/test_chat_completions_alias.py
-- [[llm_proxy.py]] - code - gateway/proxy/llm_proxy.py
-- [[openai_to_anthropic_request()]] - code - gateway/proxy/anthropic_openai_translator.py
 - [[openai_to_anthropic_response()]] - code - gateway/proxy/anthropic_openai_translator.py
 - [[test_anthropic_openai_translator.py]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_anthropic_to_openai_response_envelope()]] - code - gateway/tests/test_claude_via_openai_path.py
-- [[test_chat_completions_alias.py]] - code - gateway/tests/test_chat_completions_alias.py
-- [[test_chat_completions_alias_passes_correct_path_to_proxy()]] - code - gateway/tests/test_chat_completions_alias.py
-- [[test_chat_completions_alias_routes_to_v1_path()]] - code - gateway/tests/test_chat_completions_alias.py
-- [[test_claude_via_openai_path.py]] - code - gateway/tests/test_claude_via_openai_path.py
-- [[test_get_chat_completions_alias_also_routes()]] - code - gateway/tests/test_chat_completions_alias.py
-- [[test_openai_to_anthropic_request_strips_system_role()]] - code - gateway/tests/test_claude_via_openai_path.py
-- [[test_proxy_rewrites_claude_via_openai_path()]] - code - gateway/tests/test_claude_via_openai_path.py
-- [[test_root_v1_messages_still_works_unchanged()]] - code - gateway/tests/test_chat_completions_alias.py
 - [[test_sse_translator_basic_text_stream()]] - code - gateway/tests/test_anthropic_openai_translator.py
 - [[test_sse_translator_empty_stream_emits_full_sequence()]] - code - gateway/tests/test_anthropic_openai_translator.py
 - [[test_sse_translator_model_preserved_in_message_start()]] - code - gateway/tests/test_anthropic_openai_translator.py
@@ -79,19 +61,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 361]]
-- 5 edges to [[_COMMUNITY_Community 1787]]
-- 5 edges to [[_COMMUNITY_Community 1278]]
+- 6 edges to [[_COMMUNITY_Community 361]]
+- 3 edges to [[_COMMUNITY_Community 1787]]
 - 2 edges to [[_COMMUNITY_Community 312]]
-- 2 edges to [[_COMMUNITY_Community 142]]
-- 1 edge to [[_COMMUNITY_Community 53]]
-- 1 edge to [[_COMMUNITY_Community 1058]]
-- 1 edge to [[_COMMUNITY_Community 208]]
-- 1 edge to [[_COMMUNITY_Community 1127]]
+- 2 edges to [[_COMMUNITY_Community 791]]
 
 ## Top bridge nodes
-- [[llm_proxy.py]] - degree 17, connects to 6 communities
+- [[anthropic_openai_translator.py]] - degree 8, connects to 3 communities
 - [[anthropic_to_openai_request()]] - degree 19, connects to 2 communities
 - [[openai_to_anthropic_response()]] - degree 14, connects to 2 communities
-- [[test_claude_via_openai_path.py]] - degree 9, connects to 1 community
-- [[anthropic_openai_translator.py]] - degree 8, connects to 1 community
+- [[translate_openai_sse_to_anthropic()]] - degree 7, connects to 1 community
+- [[anthropic_openai_sse_translator.py]] - degree 4, connects to 1 community

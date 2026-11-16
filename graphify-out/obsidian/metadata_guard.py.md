@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "Community 614"
+community: "Community 0"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_614
+  - community/Community_0
 ---
 
 # metadata_guard.py
@@ -15,4 +15,4 @@ tags:
 - [[DocumentTag]] - `contains` [EXTRACTED]
 - [[MetadataGuard]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_614
+#graphify/code #graphify/EXTRACTED #community/Community_0

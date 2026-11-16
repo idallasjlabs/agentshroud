@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md"
 type: "document"
-community: "Community 502"
+community: "Community 571"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_502
+  - community/Community_571
 ---
 
 # GOOGLE-CALENDAR-QUICK-SETUP.md
@@ -15,4 +15,4 @@ tags:
 - [[GOOGLE-SERVICES-SETUP]] - `semantically_similar_to` [INFERRED]
 - [[Google Calendar & Contacts - Quick Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_502
+#graphify/document #graphify/EXTRACTED #community/Community_571

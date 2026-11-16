@@ -8,7 +8,7 @@ members: 42
 **Members:** 42 nodes
 
 ## Members
-- [[.__init__()_99]] - code - gateway/security/module_stats.py
+- [[.__init__()_114]] - code - gateway/security/module_stats.py
 - [[.record()_2]] - code - gateway/security/module_stats.py
 - [[.reset()_1]] - code - gateway/security/module_stats.py
 - [[.setup_method()_13]] - code - gateway/tests/test_module_stats.py
@@ -59,23 +59,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 11]]
-- 5 edges to [[_COMMUNITY_Community 17]]
-- 4 edges to [[_COMMUNITY_Community 21]]
+- 9 edges to [[_COMMUNITY_Community 17]]
+- 9 edges to [[_COMMUNITY_Community 194]]
 - 3 edges to [[_COMMUNITY_Community 8]]
-- 2 edges to [[_COMMUNITY_Community 271]]
 - 2 edges to [[_COMMUNITY_Community 221]]
 - 2 edges to [[_COMMUNITY_Community 35]]
 - 2 edges to [[_COMMUNITY_Community 10]]
-- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 307]]
+- 1 edge to [[_COMMUNITY_Community 271]]
+- 1 edge to [[_COMMUNITY_Community 73]]
 - 1 edge to [[_COMMUNITY_Community 213]]
-- 1 edge to [[_COMMUNITY_Community 33]]
-- 1 edge to [[_COMMUNITY_Community 194]]
 - 1 edge to [[_COMMUNITY_Community 1560]]
 
 ## Top bridge nodes
 - [[record_decision()]] - degree 20, connects to 8 communities
-- [[test_module_stats.py]] - degree 18, connects to 3 communities
-- [[TestEnforcementWiring]] - degree 11, connects to 3 communities
-- [[TestEgressWiringEndToEnd]] - degree 10, connects to 3 communities
-- [[can_use_tool_from_origin]] - degree 5, connects to 2 communities
+- [[test_module_stats.py]] - degree 18, connects to 2 communities
+- [[TestEnforcementWiring]] - degree 11, connects to 2 communities
+- [[TestEgressWiringEndToEnd]] - degree 10, connects to 2 communities
+- [[get_collector()]] - degree 11, connects to 1 community

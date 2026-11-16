@@ -12,7 +12,7 @@ tags:
 # opencode.json
 
 ## Connections
-- [[$schema]] - `contains` [EXTRACTED]
+- [[$schema_1]] - `contains` [EXTRACTED]
 - [[mcp]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_159

@@ -2,7 +2,7 @@
 source_file: "gateway/web/api.py"
 type: "code"
 community: "Community 49"
-location: "L318"
+location: "L385"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,7 @@ tags:
 # stop_service()
 
 ## Connections
+- [[HTTPException]] - `calls` [INFERRED]
 - [[Stop a specific service container.]] - `rationale_for` [EXTRACTED]
 - [[_get_engine()]] - `calls` [EXTRACTED]
 - [[_validate_service_name()]] - `calls` [EXTRACTED]

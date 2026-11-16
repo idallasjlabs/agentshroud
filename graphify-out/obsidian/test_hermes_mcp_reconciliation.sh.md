@@ -12,7 +12,7 @@ tags:
 # test_hermes_mcp_reconciliation.sh
 
 ## Connections
-- [[check()_10]] - `defines` [EXTRACTED]
+- [[check()_14]] - `defines` [EXTRACTED]
 - [[count_key()]] - `defines` [EXTRACTED]
 - [[reconcile_noyaml()]] - `defines` [EXTRACTED]
 - [[test_hermes_mcp_reconciliation.sh script]] - `contains` [EXTRACTED]

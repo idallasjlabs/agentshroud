@@ -12,8 +12,8 @@ tags:
 # ConnectionPool
 
 ## Connections
-- [[.__init__()_30]] - `method` [EXTRACTED]
-- [[.__init__()_31]] - `calls` [EXTRACTED]
+- [[.__init__()_45]] - `method` [EXTRACTED]
+- [[.__init__()_46]] - `calls` [EXTRACTED]
 - [[.get_or_create()]] - `method` [EXTRACTED]
 - [[.remove()]] - `method` [EXTRACTED]
 - [[.stop_all()]] - `method` [EXTRACTED]

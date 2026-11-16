@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 626"
+community: "Community 845"
 location: "L5254"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_626
+  - community/Community_845
 ---
 
 # Owner-ID-redacted form text must still reach the pipeline scan.          Regress
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_form_owner_id_redaction_continues_to_pipeline_scan()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_626
+#graphify/rationale #graphify/EXTRACTED #community/Community_845

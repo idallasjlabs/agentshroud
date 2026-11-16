@@ -1,19 +1,21 @@
 ---
 type: community
-members: 6
+members: 8
 ---
 
 # Community 2004
 
-**Members:** 6 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[._fake_run()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_curl_failure_raises_instead_of_returning_no_tags()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_fetches_through_curl_with_a_bounded_time()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_ipv4_retry_attempts_pass_dash_4_to_curl()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[2026-10-23 on marvin every Python HTTPS read to hub.docker.com hung     (Homebr]] - rationale - gateway/tests/test_discover_upstream_versions.py
-- [[TestFetchDockerhubTagsUsesCurl]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[.test_dedup_is_per_agent()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_failed_send_is_retried()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_patched_versions_carried_into_result()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_second_check_does_not_resend()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_unreadable_state_file_means_alert_again()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_unwritable_state_file_is_logged_not_raised()]] - code - gateway/tests/test_daily_cve_report.py
+- [[TestUpstreamAlertDedup]] - code - gateway/tests/test_daily_cve_report.py
+- [[The 0605 check and the 0700 GHSA ingest share one diff; an advisory     still]] - rationale - gateway/tests/test_daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +25,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 48]]
+- 1 edge to [[_COMMUNITY_Community 127]]
+- 1 edge to [[_COMMUNITY_Community 480]]
 
 ## Top bridge nodes
-- [[TestFetchDockerhubTagsUsesCurl]] - degree 6, connects to 1 community
+- [[TestUpstreamAlertDedup]] - degree 8, connects to 1 community
+- [[.test_patched_versions_carried_into_result()]] - degree 2, connects to 1 community

@@ -16,7 +16,7 @@ members: 38
 - [[.test_skips_advisory_without_ghsa_id()]] - code - gateway/tests/test_daily_cve_report.py
 - [[.test_skips_ghsa_already_in_registry()]] - code - gateway/tests/test_daily_cve_report.py
 - [[.test_uses_github_token_in_header()]] - code - gateway/tests/test_daily_cve_report.py
-- [[Any_37]] - code - gateway/security/daily_cve_report.py
+- [[Any_47]] - code - gateway/security/daily_cve_report.py
 - [[Background loop checks for new upstream agent CVEs once per day at report_hour]] - rationale - gateway/security/daily_cve_report.py
 - [[Background loop pull the GHSA feed as source of truth once per day.      This i]] - rationale - gateway/security/daily_cve_report.py
 - [[Build a minimal GitHub Security Advisory payload keyed on GHSA id.      ``ghsa_i]] - rationale - gateway/tests/test_daily_cve_report.py
@@ -61,14 +61,14 @@ SORT file.name ASC
 - 3 edges to [[_COMMUNITY_Community 399]]
 - 3 edges to [[_COMMUNITY_Community 736]]
 - 3 edges to [[_COMMUNITY_Community 1202]]
-- 2 edges to [[_COMMUNITY_Community 72]]
+- 2 edges to [[_COMMUNITY_Community 151]]
 - 2 edges to [[_COMMUNITY_Community 1200]]
-- 1 edge to [[_COMMUNITY_Community 35]]
+- 1 edge to [[_COMMUNITY_Community 7]]
 - 1 edge to [[_COMMUNITY_Community 42]]
 
 ## Top bridge nodes
 - [[daily_cve_report.py]] - degree 27, connects to 7 communities
 - [[agent_cve_registry.py]] - degree 5, connects to 3 communities
-- [[Any_37]] - degree 6, connects to 2 communities
+- [[Any_47]] - degree 6, connects to 2 communities
 - [[check_upstream_cves()]] - degree 13, connects to 1 community
 - [[run_upstream_cve_check()]] - degree 10, connects to 1 community

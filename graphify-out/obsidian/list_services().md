@@ -2,7 +2,7 @@
 source_file: "gateway/soc/router.py"
 type: "code"
 community: "Community 51"
-location: "L569"
+location: "L570"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -17,6 +17,7 @@ tags:
 - [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[ServiceManager]] - `calls` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
+- [[_local_agent_health()]] - `calls` [EXTRACTED]
 - [[get_health()_1]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `contains` [EXTRACTED]
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]

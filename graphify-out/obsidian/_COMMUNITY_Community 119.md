@@ -45,9 +45,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 98]]
-- 2 edges to [[_COMMUNITY_Community 24]]
+- 4 edges to [[_COMMUNITY_Community 98]]
 
 ## Top bridge nodes
-- [[TestFabricatedSecurityNotice]] - degree 19, connects to 2 communities
+- [[TestFabricatedSecurityNotice]] - degree 19, connects to 1 community
 - [[.setup_method()_18]] - degree 2, connects to 1 community

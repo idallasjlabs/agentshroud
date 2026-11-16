@@ -12,7 +12,7 @@ tags:
 # test_apt_repo_signatures_are_verified()
 
 ## Connections
-- [[Path_8]] - `calls` [EXTRACTED]
+- [[Path_10]] - `calls` [EXTRACTED]
 - [[test_clamav_pipeline.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_220

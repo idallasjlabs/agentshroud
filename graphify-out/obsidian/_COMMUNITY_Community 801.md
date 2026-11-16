@@ -8,7 +8,7 @@ members: 22
 **Members:** 22 nodes
 
 ## Members
-- [[.__init__()_202]] - code - gateway/web/dashboard_endpoints.py
+- [[.__init__()_229]] - code - gateway/web/dashboard_endpoints.py
 - [[LogBuffer]] - code - gateway/web/dashboard_endpoints.py
 - [[Ring buffer for recent logaudit entries.]] - rationale - gateway/web/dashboard_endpoints.py
 - [[When pipeline exists, stats should reflect its data.]] - rationale - gateway/tests/test_dashboard_endpoints.py

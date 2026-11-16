@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Create a PromptProtection instance for testing.]] - rationale - gateway/tests/test_prompt_protection.py
-- [[Sample protected content for testing.]] - rationale - gateway/tests/test_prompt_protection.py
-- [[prompt_protection()]] - code - gateway/tests/test_prompt_protection.py
-- [[sample_protected_content()]] - code - gateway/tests/test_prompt_protection.py
-- [[test_prompt_protection.py]] - code - gateway/tests/test_prompt_protection.py
+- [[.test_installed_not_running()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_not_installed()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_running_no_alert_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_running_with_alert_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestWazuhSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +22,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 532]]
-- 1 edge to [[_COMMUNITY_Community 351]]
+- 1 edge to [[_COMMUNITY_Community 516]]
+- 1 edge to [[_COMMUNITY_Community 219]]
 
 ## Top bridge nodes
-- [[test_prompt_protection.py]] - degree 4, connects to 2 communities
-- [[prompt_protection()]] - degree 3, connects to 1 community
+- [[TestWazuhSummary]] - degree 5, connects to 1 community
+- [[.test_installed_not_running()]] - degree 2, connects to 1 community

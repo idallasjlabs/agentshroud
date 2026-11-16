@@ -8,13 +8,13 @@ members: 93
 **Members:** 93 nodes
 
 ## Members
-- [[.__init__()_161]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[.__init__()_162]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[.__init__()_163]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[.__init__()_164]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[.close()_15]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[.__init__()_182]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[.__init__()_183]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[.__init__()_184]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[.__init__()_185]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[.close()_17]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[.close()_18]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[.close()_19]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[.close()_20]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[.drain()_2]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[.drain()_3]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[.get_extra_info()_1]] - code - gateway/tests/test_http_proxy_coverage.py
@@ -110,22 +110,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 29 edges to [[_COMMUNITY_Community 86]]
+- 30 edges to [[_COMMUNITY_Community 86]]
 - 14 edges to [[_COMMUNITY_Community 27]]
 - 12 edges to [[_COMMUNITY_Community 120]]
 - 6 edges to [[_COMMUNITY_Community 709]]
-- 2 edges to [[_COMMUNITY_Community 72]]
-- 2 edges to [[_COMMUNITY_Community 43]]
-- 2 edges to [[_COMMUNITY_Community 181]]
-- 1 edge to [[_COMMUNITY_Community 707]]
+- 2 edges to [[_COMMUNITY_Community 68]]
+- 2 edges to [[_COMMUNITY_Community 151]]
+- 2 edges to [[_COMMUNITY_Community 84]]
+- 1 edge to [[_COMMUNITY_Community 7]]
 - 1 edge to [[_COMMUNITY_Community 595]]
-- 1 edge to [[_COMMUNITY_Community 162]]
-- 1 edge to [[_COMMUNITY_Community 84]]
+- 1 edge to [[_COMMUNITY_Community 43]]
 - 1 edge to [[_COMMUNITY_Community 511]]
 - 1 edge to [[_COMMUNITY_Community 109]]
 
 ## Top bridge nodes
-- [[HTTPConnectProxy]] - degree 93, connects to 12 communities
+- [[HTTPConnectProxy]] - degree 93, connects to 11 communities
 - [[test_http_proxy_coverage.py]] - degree 53, connects to 3 communities
 - [[_CloseRaisesWriter]] - degree 9, connects to 3 communities
 - [[_MockWriter_1]] - degree 36, connects to 2 communities

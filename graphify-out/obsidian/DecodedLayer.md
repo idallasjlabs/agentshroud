@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "Community 84"
+community: "Community 32"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_84
+  - community/Community_32
 ---
 
 # DecodedLayer
@@ -16,4 +16,4 @@ tags:
 - [[.decode_rot13()]] - `calls` [EXTRACTED]
 - [[encoding_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_84
+#graphify/code #graphify/EXTRACTED #community/Community_32

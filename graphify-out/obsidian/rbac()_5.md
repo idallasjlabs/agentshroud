@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "Community 60"
+community: "Community 194"
 location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_60
+  - community/Community_194
 ---
 
 # rbac()
@@ -16,4 +16,4 @@ tags:
 - [[TeamsConfig]] - `calls` [EXTRACTED]
 - [[test_shared_memory_write_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_60
+#graphify/code #graphify/EXTRACTED #community/Community_194

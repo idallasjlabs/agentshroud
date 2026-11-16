@@ -15,7 +15,8 @@ tags:
 - [[ApprovalDecision_1]] - `references` [EXTRACTED]
 - [[Approve or reject a pending action      Authentication required.]] - `rationale_for` [EXTRACTED]
 - [[AuthRequired_1]] - `references` [EXTRACTED]
-- [[Request_2]] - `references` [EXTRACTED]
+- [[HTTPException]] - `calls` [INFERRED]
+- [[Request_3]] - `references` [EXTRACTED]
 - [[approval.py]] - `contains` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 14"
-location: "L8098"
+community: "Community 96"
+location: "L8136"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/Community_96
 ---
 
 # Send a user-friendly notification when a message is blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._notify_user_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_14
+#graphify/rationale #graphify/EXTRACTED #community/Community_96

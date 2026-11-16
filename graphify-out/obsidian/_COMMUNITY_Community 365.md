@@ -42,9 +42,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 614]]
-- 2 edges to [[_COMMUNITY_Community 0]]
+- 4 edges to [[_COMMUNITY_Community 0]]
 
 ## Top bridge nodes
-- [[TestMetadataGuard]] - degree 16, connects to 2 communities
+- [[TestMetadataGuard]] - degree 16, connects to 1 community
 - [[.setup_method()_12]] - degree 2, connects to 1 community

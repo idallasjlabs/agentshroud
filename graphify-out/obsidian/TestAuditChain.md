@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "Community 24"
+community: "Community 1566"
 location: "L18"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_24
+  - community/Community_1566
 ---
 
 # TestAuditChain
@@ -24,13 +24,15 @@ tags:
 - [[.test_verify_valid()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[CrossBotTrustLedger]] - `uses` [INFERRED]
-- [[EnvelopeSigner]] - `uses` [INFERRED]
+- [[EnvelopeSigner_1]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[InstructionEnvelope]] - `uses` [INFERRED]
 - [[KeyLeakDetector]] - `uses` [INFERRED]
 - [[KeyVault]] - `uses` [INFERRED]
 - [[KeyVaultConfig]] - `uses` [INFERRED]
 - [[OutboundInfoFilter]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
 - [[ScanResult_1]] - `uses` [INFERRED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
@@ -40,4 +42,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_24
+#graphify/code #graphify/INFERRED #community/Community_1566

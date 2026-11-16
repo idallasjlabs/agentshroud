@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "rationale"
-community: "Community 229"
+community: "Community 151"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_229
+  - community/Community_151
 ---
 
 # Unsubscribe from events
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.unsubscribe()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_229
+#graphify/rationale #graphify/EXTRACTED #community/Community_151

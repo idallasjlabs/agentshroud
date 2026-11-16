@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "Community 0"
+community: "Community 146"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_0
+  - community/Community_146
 ---
 
 # SubagentEventType
@@ -15,7 +15,7 @@ tags:
 - [[._log_event()_1]] - `references` [EXTRACTED]
 - [[Enum]] - `inherits` [EXTRACTED]
 - [[TestAuditTrail_2]] - `uses` [INFERRED]
-- [[TestConcurrency]] - `uses` [INFERRED]
+- [[TestConcurrency_1]] - `uses` [INFERRED]
 - [[TestConcurrentLimits]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
 - [[TestDoSPrevention]] - `uses` [INFERRED]
@@ -35,4 +35,4 @@ tags:
 - [[subagent_monitor.py]] - `contains` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_0
+#graphify/code #graphify/INFERRED #community/Community_146

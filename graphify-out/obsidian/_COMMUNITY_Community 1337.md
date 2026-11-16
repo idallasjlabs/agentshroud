@@ -1,17 +1,27 @@
 ---
 type: community
-members: 4
+members: 14
 ---
 
 # Community 1337
 
-**Members:** 4 nodes
+**Members:** 14 nodes
 
 ## Members
-- [[2. Security Value Audit]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[⚠️ Partial Value  Needs Hardening]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[✅ Genuine Security Value]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[🚫 Security Theater]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[additionalProperties_5]] - code - config/inbound-edge/schema.json
+- [[allowed_hours]] - code - config/inbound-edge/schema.json
+- [[end]] - code - config/inbound-edge/schema.json
+- [[maxLength_2]] - code - config/inbound-edge/schema.json
+- [[pattern_1]] - code - config/inbound-edge/schema.json
+- [[pattern_2]] - code - config/inbound-edge/schema.json
+- [[properties_4]] - code - config/inbound-edge/schema.json
+- [[required_4]] - code - config/inbound-edge/schema.json
+- [[start]] - code - config/inbound-edge/schema.json
+- [[type_23]] - code - config/inbound-edge/schema.json
+- [[type_24]] - code - config/inbound-edge/schema.json
+- [[type_25]] - code - config/inbound-edge/schema.json
+- [[type_26]] - code - config/inbound-edge/schema.json
+- [[tz]] - code - config/inbound-edge/schema.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 153]]
+- 1 edge to [[_COMMUNITY_Community 1139]]
 
 ## Top bridge nodes
-- [[2. Security Value Audit]] - degree 4, connects to 1 community
+- [[allowed_hours]] - degree 5, connects to 1 community

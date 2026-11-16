@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "Community 50"
+community: "Community 7"
 location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_50
+  - community/Community_7
 ---
 
 # SSHProxy
 
 ## Connections
-- [[.__init__()_133]] - `method` [EXTRACTED]
+- [[.__init__()_148]] - `method` [EXTRACTED]
 - [[.execute()]] - `method` [EXTRACTED]
 - [[.is_auto_approved()]] - `method` [EXTRACTED]
 - [[.no_approval_client()]] - `calls` [EXTRACTED]
@@ -79,9 +79,9 @@ tags:
 - [[TestValidateCommand]] - `uses` [INFERRED]
 - [[TestVersionConsistency]] - `uses` [INFERRED]
 - [[TestWebSocketHandshakeAuth]] - `uses` [INFERRED]
-- [[__init__.py_12]] - `imports` [EXTRACTED]
-- [[client()_16]] - `calls` [EXTRACTED]
+- [[__init__.py_13]] - `imports` [EXTRACTED]
 - [[client()_17]] - `calls` [EXTRACTED]
+- [[client()_18]] - `calls` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
@@ -92,4 +92,4 @@ tags:
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_50
+#graphify/code #graphify/EXTRACTED #community/Community_7

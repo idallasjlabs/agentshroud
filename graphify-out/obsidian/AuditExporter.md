@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "Community 254"
+community: "Community 978"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_254
+  - community/Community_978
 ---
 
 # AuditExporter
 
 ## Connections
-- [[.__init__()_56]] - `method` [EXTRACTED]
+- [[.__init__()_71]] - `method` [EXTRACTED]
 - [[._export_cef()]] - `method` [EXTRACTED]
 - [[._export_json()]] - `method` [EXTRACTED]
 - [[._export_jsonld()]] - `method` [EXTRACTED]
@@ -33,17 +33,19 @@ tags:
 - [[MCPProxyRequest]] - `uses` [INFERRED]
 - [[MCPResultRequest]] - `uses` [INFERRED]
 - [[OpProxyRequest]] - `uses` [INFERRED]
-- [[Request_1]] - `uses` [INFERRED]
+- [[Request_2]] - `uses` [INFERRED]
 - [[SSHExecRequest]] - `uses` [INFERRED]
 - [[SSHWriteFileRequest]] - `uses` [INFERRED]
 - [[TestAuditEvent]] - `uses` [INFERRED]
 - [[TestAuditExporter]] - `uses` [INFERRED]
 - [[TestAuditStore]] - `uses` [INFERRED]
+- [[TestAuditStoreAnchoredVerify]] - `uses` [INFERRED]
 - [[TestAuditStoreBotId]] - `uses` [INFERRED]
+- [[TestAuditStoreConcurrentAppend]] - `uses` [INFERRED]
 - [[WebSocket_2]] - `uses` [INFERRED]
 - [[audit_export.py]] - `contains` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[soc_export()]] - `calls` [EXTRACTED]
 - [[test_audit_export.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_254
+#graphify/code #graphify/EXTRACTED #community/Community_978

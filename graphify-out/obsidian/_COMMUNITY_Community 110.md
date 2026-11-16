@@ -1,14 +1,14 @@
 ---
 type: community
-members: 60
+members: 58
 ---
 
 # Community 110
 
-**Members:** 60 nodes
+**Members:** 58 nodes
 
 ## Members
-- [[.__init__()_113]] - code - gateway/security/report_store.py
+- [[.__init__()_128]] - code - gateway/security/report_store.py
 - [[._check_size()]] - code - gateway/security/report_store.py
 - [[._enforce_count_cap()]] - code - gateway/security/report_store.py
 - [[._path()]] - code - gateway/security/report_store.py
@@ -48,14 +48,13 @@ members: 60
 - [[.test_title_and_tags_sanitized_sync()]] - code - gateway/tests/test_report_store.py
 - [[.test_traversal_id_rejected_not_500()]] - code - gateway/tests/test_report_store.py
 - [[.test_unknown_report_404()]] - code - gateway/tests/test_report_store.py
-- [[Any_56]] - code - gateway/security/report_store.py
+- [[Any_66]] - code - gateway/security/report_store.py
 - [[Filesystem-backed shared report store on the gateway-data volume.]] - rationale - gateway/security/report_store.py
 - [[Metadata (no content) for all reports, newest first.          O(n) file reads pe]] - rationale - gateway/security/report_store.py
 - [[Persist a report (sync sanitizer path); return its id.          Sanitizes ALL fr]] - rationale - gateway/security/report_store.py
 - [[Persist a report awaiting an async sanitizer (presidio) if injected.          Sa]] - rationale - gateway/security/report_store.py
 - [[Prune oldest reports so the shared volume can't be filled.]] - rationale - gateway/security/report_store.py
 - [[ReportStore]] - code - gateway/security/report_store.py
-- [[Return recent Falco runtime security alerts with summary.]] - rationale - gateway/ingest_api/main.py
 - [[Route-level POSTGET apireports through the FastAPI app (SCRUM-79).]] - rationale - gateway/tests/test_report_store.py
 - [[SCRUM-79 adversarial-review follow-ups (2026-07-13).]] - rationale - gateway/tests/test_report_store.py
 - [[TestAsyncSave]] - code - gateway/tests/test_report_store.py
@@ -64,9 +63,8 @@ members: 60
 - [[TestReviewHardening]] - code - gateway/tests/test_report_store.py
 - [[TestSaveAndGet]] - code - gateway/tests/test_report_store.py
 - [[TestSecurity]] - code - gateway/tests/test_report_store.py
-- [[falco_alerts()]] - code - gateway/ingest_api/main.py
 - [[report_store.py]] - code - gateway/security/report_store.py
-- [[store()_2]] - code - gateway/tests/test_report_store.py
+- [[store()_3]] - code - gateway/tests/test_report_store.py
 - [[test_report_store.py]] - code - gateway/tests/test_report_store.py
 
 ## Live Query (requires Dataview plugin)
@@ -77,14 +75,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 978]]
-- 3 edges to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 181]]
-- 1 edge to [[_COMMUNITY_Community 57]]
+- 3 edges to [[_COMMUNITY_Community 151]]
+- 3 edges to [[_COMMUNITY_Community 978]]
+- 1 edge to [[_COMMUNITY_Community 68]]
+- 1 edge to [[_COMMUNITY_Community 49]]
 
 ## Top bridge nodes
 - [[._path()]] - degree 8, connects to 3 communities
 - [[ReportStore]] - degree 37, connects to 1 community
 - [[test_report_store.py]] - degree 10, connects to 1 community
-- [[falco_alerts()]] - degree 4, connects to 1 community
 - [[._sanitize_sync()]] - degree 2, connects to 1 community

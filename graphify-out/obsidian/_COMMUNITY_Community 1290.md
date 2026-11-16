@@ -1,24 +1,27 @@
 ---
 type: community
-members: 11
+members: 14
 ---
 
 # Community 1290
 
-**Members:** 11 nodes
+**Members:** 14 nodes
 
 ## Members
-- [[._setup_proxy_with_capture()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_collab_notified_at_alert_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_collab_notified_at_escalated_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_collab_notified_at_suspended_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_collab_notified_only_once_per_level()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_no_collab_notice_below_alert()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_owner_also_notified_on_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[Owner should receive an escalation notice on the 3rd block.]] - rationale - gateway/tests/test_progressive_lockdown.py
-- [[TestCollabLockdownNotifications]] - code - gateway/tests/test_progressive_lockdown.py
-- [[The 4th block stays at ALERT but must NOT fire a second notification.]] - rationale - gateway/tests/test_progressive_lockdown.py
-- [[Verify _quarantine_blocked_message sends threshold warnings to the collaborator.]] - rationale - gateway/tests/test_progressive_lockdown.py
+- [[._export_cef()]] - code - gateway/security/audit_export.py
+- [[._export_json()]] - code - gateway/security/audit_export.py
+- [[._export_jsonld()]] - code - gateway/security/audit_export.py
+- [[._parse_cef_for_verification()]] - code - gateway/security/audit_export.py
+- [[.export_events()]] - code - gateway/security/audit_export.py
+- [[.verify_export_integrity()]] - code - gateway/security/audit_export.py
+- [[AuditEvent]] - code - gateway/security/audit_export.py
+- [[Export audit events in the specified format.          Args             start_ti]] - rationale - gateway/security/audit_export.py
+- [[Export events in Common Event Format (CEF).          CEF Format CEFVersionDev]] - rationale - gateway/security/audit_export.py
+- [[Export events in JSON-LD format with security ontology.]] - rationale - gateway/security/audit_export.py
+- [[Export events in standard JSON format.]] - rationale - gateway/security/audit_export.py
+- [[Parse CEF lines and extract entryHashpreviousHash for chain verification.]] - rationale - gateway/security/audit_export.py
+- [[TextIO]] - code - gateway/security/audit_export.py
+- [[Verify the integrity of an exported audit log.          Args             export]] - rationale - gateway/security/audit_export.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,9 +31,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 75]]
-- 1 edge to [[_COMMUNITY_Community 14]]
+- 6 edges to [[_COMMUNITY_Community 978]]
+- 2 edges to [[_COMMUNITY_Community 254]]
+- 2 edges to [[_COMMUNITY_Community 32]]
 
 ## Top bridge nodes
-- [[TestCollabLockdownNotifications]] - degree 12, connects to 2 communities
-- [[._setup_proxy_with_capture()]] - degree 8, connects to 1 community
+- [[AuditEvent]] - degree 6, connects to 2 communities
+- [[TextIO]] - degree 3, connects to 2 communities
+- [[.export_events()]] - degree 6, connects to 1 community
+- [[._export_cef()]] - degree 4, connects to 1 community
+- [[._export_jsonld()]] - degree 4, connects to 1 community

@@ -12,6 +12,7 @@ tags:
 # test_global_exception_handler_http_exception()
 
 ## Connections
+- [[HTTPException]] - `calls` [INFERRED]
 - [[Test global exception handler with HTTPException]] - `rationale_for` [EXTRACTED]
 - [[global_exception_handler()]] - `calls` [EXTRACTED]
 - [[test_main_simple.py]] - `contains` [EXTRACTED]

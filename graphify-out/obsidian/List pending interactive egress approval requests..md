@@ -2,7 +2,7 @@
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
 community: "Community 978"
-location: "L1861"
+location: "L1866"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

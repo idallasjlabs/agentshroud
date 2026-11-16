@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_form_outbound_pipeline_sanitized_text_applied()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Pipeline-sanitized text must replace the original in form payloads.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[._is_internal_link()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Check if this is an internal link (relative, anchor, etc.).]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 626]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 845]]
+- 1 edge to [[_COMMUNITY_Community 647]]
 
 ## Top bridge nodes
-- [[.test_form_outbound_pipeline_sanitized_text_applied()]] - degree 4, connects to 3 communities
+- [[._is_internal_link()]] - degree 2, connects to 1 community

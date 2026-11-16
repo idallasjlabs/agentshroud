@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "rationale"
-community: "Community 51"
+community: "Community 614"
 location: "L116"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_51
+  - community/Community_614
 ---
 
 # Convert an EgressAttempt or egress dict to SecurityEvent.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[from_egress_attempt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_51
+#graphify/rationale #graphify/EXTRACTED #community/Community_614

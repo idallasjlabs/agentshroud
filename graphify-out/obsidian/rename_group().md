@@ -2,7 +2,7 @@
 source_file: "gateway/soc/router.py"
 type: "code"
 community: "Community 10"
-location: "L1354"
+location: "L1365"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,7 @@ tags:
 # rename_group()
 
 ## Connections
+- [[HTTPException]] - `calls` [EXTRACTED]
 - [[Rename a group (CC-34).]] - `rationale_for` [EXTRACTED]
 - [[RenameGroupRequest]] - `references` [EXTRACTED]
 - [[SCLCaller_1]] - `references` [EXTRACTED]

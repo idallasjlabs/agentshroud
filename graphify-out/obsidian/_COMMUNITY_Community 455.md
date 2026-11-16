@@ -1,44 +1,45 @@
 ---
 type: community
-members: 31
+members: 32
 ---
 
 # Community 455
 
-**Members:** 31 nodes
+**Members:** 32 nodes
 
 ## Members
-- [[.age_days()]] - code - gateway/security/key_rotation.py
-- [[.is_in_grace_period()]] - code - gateway/security/key_rotation.py
-- [[.manager()]] - code - gateway/tests/test_key_rotation.py
-- [[.sample_credential()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_age_calculation()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_get_credential_status()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_get_health_score_all_healthy()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_get_health_score_mixed_states()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_grace_period_tracking()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_not_due_without_force_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_register_credential()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_should_rotate()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_should_warn()]] - code - gateway/tests/test_key_rotation.py
-- [[Age of credential in days.]] - rationale - gateway/security/key_rotation.py
-- [[Create a manager with test configuration.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Create a sample credential for testing.]] - rationale - gateway/tests/test_key_rotation.py
-- [[CredentialInfo]] - code - gateway/security/key_rotation.py
-- [[Information about a managed credential.]] - rationale - gateway/security/key_rotation.py
-- [[Test credential age calculation.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test credential information tracking.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test credential registration.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test credential status reporting.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test grace period status tracking.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test health score calculation with all healthy credentials.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test health score with mixed credential states.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test key rotation manager functionality.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test rotation requirement calculation.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test warning threshold calculation.]] - rationale - gateway/tests/test_key_rotation.py
-- [[TestCredentialInfo]] - code - gateway/tests/test_key_rotation.py
-- [[TestKeyRotationManager]] - code - gateway/tests/test_key_rotation.py
-- [[Whether credential is currently in grace period.]] - rationale - gateway/security/key_rotation.py
+- [[.test_blocked_pattern_detection()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_code_blocks_preserved()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_domain_matching_patterns()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_edge_cases()_4]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_empty_alt_text_handling()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_empty_or_none_input()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_external_domain_stripping()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_internal_link_detection()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_internal_links_preserved()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_is_domain_allowed()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_legitimate_links_preserved()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_logging()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_malicious_image_stripping()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_malicious_link_stripping()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_mixed_content_sanitization()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test ToolResultSanitizer functionality.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test detection of blocked patterns in URLs.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test detection of internalrelative links.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test domain allowlist checking.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test domain pattern matching including wildcards.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test edge cases and malformed inputs.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test handling of empty or None input.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test handling of images with empty alt text.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test sanitization of mixed legitimate and malicious content.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test stripping of links to non-allowlisted domains.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test stripping of malicious markdown images.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test stripping of malicious markdown links.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test that appropriate logging occurs.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test that code blocks with URLs are preserved.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test that internalrelative links are preserved.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test that legitimate links are preserved.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[TestToolResultSanitizer_1]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -48,16 +49,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY_Community 122]]
-- 11 edges to [[_COMMUNITY_Community 381]]
-- 6 edges to [[_COMMUNITY_Community 198]]
-- 5 edges to [[_COMMUNITY_Community 791]]
-- 3 edges to [[_COMMUNITY_Community 1991]]
-- 1 edge to [[_COMMUNITY_Community 2321]]
+- 6 edges to [[_COMMUNITY_Community 647]]
+- 1 edge to [[_COMMUNITY_Community 2134]]
 
 ## Top bridge nodes
-- [[CredentialInfo]] - degree 35, connects to 6 communities
-- [[TestKeyRotationManager]] - degree 15, connects to 5 communities
-- [[TestCredentialInfo]] - degree 12, connects to 4 communities
-- [[.manager()]] - degree 4, connects to 2 communities
-- [[.test_should_warn()]] - degree 4, connects to 1 community
+- [[TestToolResultSanitizer_1]] - degree 23, connects to 2 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/attack-teardowns-rovoblast-cross-turn.md"
 type: "document"
-community: "Community 221"
+community: "Community 1563"
 location: "line 16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_221
+  - community/Community_1563
 ---
 
 # Varonis: "RovoBlast: How One Click Triggered Atlassian's AI Assistant to Leak Data"
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RovoBlast Attack (Atlassian Rovo AI)]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_221
+#graphify/document #graphify/EXTRACTED #community/Community_1563

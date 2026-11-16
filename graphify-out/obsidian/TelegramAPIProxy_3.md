@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 2"
+community: "Community 626"
 location: "L4533"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2
+  - community/Community_626
 ---
 
 # TelegramAPIProxy
@@ -233,4 +233,4 @@ tags:
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2
+#graphify/code #graphify/EXTRACTED #community/Community_626

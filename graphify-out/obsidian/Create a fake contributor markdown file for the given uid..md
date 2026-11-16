@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_lifespan_prune.py"
 type: "rationale"
-community: "Community 99"
+community: "Community 1070"
 location: "L44"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_99
+  - community/Community_1070
 ---
 
 # Create a fake contributor markdown file for the given uid.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_md()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_99
+#graphify/rationale #graphify/EXTRACTED #community/Community_1070

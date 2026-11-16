@@ -1,17 +1,17 @@
 ---
-source_file: "voice_gateway/tts.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 688"
-location: "L39"
+community: "Community 1044"
+location: "L516"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_688
+  - community/Community_1044
 ---
 
 # Any
 
 ## Connections
-- [[_get_pipeline()]] - `references` [EXTRACTED]
+- [[_stub_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_688
+#graphify/code #graphify/EXTRACTED #community/Community_1044

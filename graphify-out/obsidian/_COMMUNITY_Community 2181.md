@@ -21,8 +21,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 2]]
+- 2 edges to [[_COMMUNITY_Community 845]]
+- 2 edges to [[_COMMUNITY_Community 2]]
+- 2 edges to [[_COMMUNITY_Community 626]]
 
 ## Top bridge nodes
-- [[.test_urlencoded_without_content_type_caption_is_still_filtered()]] - degree 5, connects to 1 community
-- [[.test_urlencoded_without_content_type_draft_is_still_filtered()]] - degree 4, connects to 1 community
+- [[.test_urlencoded_without_content_type_caption_is_still_filtered()]] - degree 5, connects to 3 communities
+- [[.test_urlencoded_without_content_type_draft_is_still_filtered()]] - degree 4, connects to 3 communities

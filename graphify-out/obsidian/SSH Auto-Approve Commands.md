@@ -1,11 +1,11 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "concept"
-community: "Community 1976"
+community: "Community 915"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1976
+  - community/Community_915
 ---
 
 # SSH Auto-Approve Commands
@@ -14,4 +14,4 @@ tags:
 - [[Approval Request Workflow (user-facing)]] - `semantically_similar_to` [INFERRED]
 - [[SSH Proxy Config Schema (agentshroud.yaml ssh section)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1976
+#graphify/concept #graphify/EXTRACTED #community/Community_915

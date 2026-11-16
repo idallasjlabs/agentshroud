@@ -33,10 +33,10 @@ SORT file.name ASC
 ## Connections to other communities
 - 11 edges to [[_COMMUNITY_Community 4]]
 - 3 edges to [[_COMMUNITY_Community 12]]
+- 1 edge to [[_COMMUNITY_Community 68]]
 - 1 edge to [[_COMMUNITY_Community 138]]
 - 1 edge to [[_COMMUNITY_Community 72]]
 - 1 edge to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 181]]
 
 ## Top bridge nodes
 - [[TestFileDownload]] - degree 12, connects to 5 communities

@@ -1,18 +1,17 @@
 ---
 type: community
-members: 5
+members: 4
 ---
 
 # Community 2326
 
-**Members:** 5 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_all_mapped_layers_exist_in_registry()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[.test_proactive_only_layers_have_real_gateway_implementation()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[Every layer the engine can emit must already be used by a mitigated         entr]] - rationale - gateway/tests/test_triage_cve_mitigations.py
-- [[Every name in _PROACTIVE_ONLY_LAYERS must be independently proven         wired]] - rationale - gateway/tests/test_triage_cve_mitigations.py
-- [[TestDefenseLayerVocabulary]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[Cost Optimization Priority_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Decision Framework_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[EBS Performance Analysis (Critical Pattern)_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Rightsizing Logic_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,10 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 562]]
-- 1 edge to [[_COMMUNITY_Community 917]]
-- 1 edge to [[_COMMUNITY_Community 69]]
+- 1 edge to [[_COMMUNITY_Community 494]]
 
 ## Top bridge nodes
-- [[TestDefenseLayerVocabulary]] - degree 4, connects to 2 communities
-- [[.test_all_mapped_layers_exist_in_registry()]] - degree 3, connects to 1 community
+- [[Decision Framework_6]] - degree 4, connects to 1 community

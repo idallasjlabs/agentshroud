@@ -2,7 +2,7 @@
 source_file: "gateway/cli/main.py"
 type: "code"
 community: "Community 87"
-location: "L229"
+location: "L241"
 tags:
   - graphify/code
   - graphify/EXTRACTED

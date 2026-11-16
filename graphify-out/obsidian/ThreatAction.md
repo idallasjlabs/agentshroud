@@ -28,6 +28,7 @@ tags:
 - [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
 - [[TestNewPatternsV080]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
+- [[TestPIIBlockModeInPipeline]] - `uses` [INFERRED]
 - [[TestPromptGuard_1]] - `uses` [INFERRED]
 - [[TestPromptGuardEvasion]] - `uses` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]

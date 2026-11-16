@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "concept"
-community: "Community 306"
+community: "Community 487"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_306
+  - community/Community_487
 ---
 
 # Approval Queue (human gate)
@@ -15,4 +15,4 @@ tags:
 - [[Telegram API_1]] - `calls` [EXTRACTED]
 - [[approval_queue.py]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_306
+#graphify/concept #graphify/EXTRACTED #community/Community_487

@@ -17,7 +17,7 @@ tags:
 - [[.test_one_critical()]] - `calls` [EXTRACTED]
 - [[.test_perfect_score()]] - `calls` [EXTRACTED]
 - [[.test_score_floor()]] - `calls` [EXTRACTED]
-- [[Any_42]] - `references` [EXTRACTED]
+- [[Any_52]] - `references` [EXTRACTED]
 - [[Calculate score for a single tool (0-100).      Args         summary Tool summ]] - `rationale_for` [EXTRACTED]
 - [[calculate_overall_score()]] - `calls` [EXTRACTED]
 - [[generate_report()]] - `calls` [EXTRACTED]

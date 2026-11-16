@@ -1,94 +1,79 @@
 ---
 type: community
-members: 81
+members: 66
 ---
 
 # Community 68
 
-**Members:** 81 nodes
+**Members:** 66 nodes
 
 ## Members
-- [[.send_json()]] - code - gateway/tests/test_approval_queue.py
-- [[.test_both_owner_dm_and_group_notified()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_concurrent_submit_and_decide()]] - code - gateway/tests/test_approval_stress.py
-- [[.test_dm_approval_no_group_side_effect()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_dm_approval_routes_only_to_owner()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_double_decide_raises()]] - code - gateway/tests/test_approval_stress.py
-- [[.test_expired_request_cannot_be_decided()]] - code - gateway/tests/test_approval_stress.py
-- [[.test_get_pending_expires_stale()]] - code - gateway/tests/test_approval_stress.py
-- [[.test_group_chat_receives_thread_reply()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_owner_dm_contains_action_type()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_owner_dm_references_group_chat_id()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_owner_receives_dm_for_group_approval()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_timeout_auto_deny()]] - code - gateway/tests/test_enhanced_approval.py
-- [[A WebSocket stand-in whose send_json never returns — models a dead     client (c]] - rationale - gateway/tests/test_approval_queue.py
-- [[A single group-context approval triggers both owner DM AND group reply.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[ApprovalRequest_3]] - code - gateway/ingest_api/models.py
-- [[Create approval queue configuration for testing]] - rationale - gateway/tests/test_approval_queue.py
-- [[DM approval must not send any message to a group chat ID.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[DM-context approvals must not trigger group notifications.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[Deciding on already-decided request raises ValueError.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Expired request raises ValueError on decide.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Owner DM message text must reference the originating group chat_id.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[Owner DM must describe the action_type that requires approval.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[Owner must receive a DM when an approval originates from a group chat.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[Queue store file should persist items and status transitions.]] - rationale - gateway/tests/test_approval_queue.py
-- [[Request for human approval of a sensitive action      Submitted by an agent when]] - rationale - gateway/ingest_api/models.py
-- [[SCRUM-110 cleanup_decided() must persist the removal, not just mutate     the i]] - rationale - gateway/tests/test_approval_queue.py
-- [[SCRUM-110 writes go through a temp file + os.replace so a crash     mid-write c]] - rationale - gateway/tests/test_approval_queue.py
-- [[SCRUM-154 a dead WebSocket client must never wedge the approval lock.      subm]] - rationale - gateway/tests/test_approval_queue.py
-- [[Submit and decide requests concurrently.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Test WebSocket client connection]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test WebSocket client disconnection]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test approving a pending request]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test deciding on already-decided request raises ValueError]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test deciding on an expired request raises ValueError]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test deciding on nonexistent request raises KeyError]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test getting a specific item by ID]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test getting all pending requests]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test getting nonexistent item returns None]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test rejecting a pending request]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test submitting an approval request]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test that concurrent decision attempts are handled correctly]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test that get_pending excludes decided requests]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test that requests expire after timeout]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test timeout with auto-deny.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[TestDMApprovalOwnerOnly]] - code - gateway/tests/test_group_approval_routing.py
-- [[TestGroupApprovalOwnerDM]] - code - gateway/tests/test_group_approval_routing.py
-- [[The originating group chat must receive a thread-reply notification.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[When group_chat_id is None, only the owner receives a notification.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[_HangingWebSocket]] - code - gateway/tests/test_approval_queue.py
-- [[broadcast() bounds each client's send with a timeout — defense in     depth so a]] - rationale - gateway/tests/test_approval_queue.py
-- [[cleanup_decided() must not remove pending items regardless of age.]] - rationale - gateway/tests/test_approval_queue.py
-- [[cleanup_decided() should not remove decided items newer than threshold.]] - rationale - gateway/tests/test_approval_queue.py
-- [[cleanup_decided() should remove approvedrejected items older than threshold.]] - rationale - gateway/tests/test_approval_queue.py
-- [[get_pending should expire stale items.]] - rationale - gateway/tests/test_approval_stress.py
-- [[owner_chat_id receives a DM notification for every group-context approval.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[queue_config()]] - code - gateway/tests/test_approval_queue.py
-- [[test_approval_queue.py]] - code - gateway/tests/test_approval_queue.py
-- [[test_broadcast_does_not_hang_forever_on_dead_client()]] - code - gateway/tests/test_approval_queue.py
-- [[test_cleanup_decided_keeps_pending_items()]] - code - gateway/tests/test_approval_queue.py
-- [[test_cleanup_decided_keeps_recent_decided_items()]] - code - gateway/tests/test_approval_queue.py
-- [[test_cleanup_decided_persists_removal_to_disk()]] - code - gateway/tests/test_approval_queue.py
-- [[test_cleanup_decided_removes_old_decided_items()]] - code - gateway/tests/test_approval_queue.py
-- [[test_concurrent_decisions()]] - code - gateway/tests/test_approval_queue.py
-- [[test_decide_already_decided()]] - code - gateway/tests/test_approval_queue.py
-- [[test_decide_approval_approve()]] - code - gateway/tests/test_approval_queue.py
-- [[test_decide_approval_reject()]] - code - gateway/tests/test_approval_queue.py
-- [[test_decide_expired_request()]] - code - gateway/tests/test_approval_queue.py
-- [[test_decide_nonexistent_request()]] - code - gateway/tests/test_approval_queue.py
-- [[test_enhanced_tool_call_medium_not_gated()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_get_item()]] - code - gateway/tests/test_approval_queue.py
-- [[test_get_item_nonexistent()]] - code - gateway/tests/test_approval_queue.py
-- [[test_get_pending()]] - code - gateway/tests/test_approval_queue.py
-- [[test_get_pending_excludes_decided()]] - code - gateway/tests/test_approval_queue.py
-- [[test_persist_pending_store_writes_atomically()]] - code - gateway/tests/test_approval_queue.py
-- [[test_request_expiration()]] - code - gateway/tests/test_approval_queue.py
-- [[test_store_persists_submit_and_decision()]] - code - gateway/tests/test_approval_queue.py
-- [[test_submit_approval_request()]] - code - gateway/tests/test_approval_queue.py
-- [[test_submit_does_not_deadlock_on_hung_websocket_client()]] - code - gateway/tests/test_approval_queue.py
-- [[test_websocket_connect()]] - code - gateway/tests/test_approval_queue.py
-- [[test_websocket_disconnect()]] - code - gateway/tests/test_approval_queue.py
+- [[.__init__()_48]] - code - gateway/proxy/pipeline.py
+- [[.check_response()_1]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.close()_18]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[.delete_entry()]] - code - gateway/ingest_api/ledger.py
+- [[.get_entry()]] - code - gateway/ingest_api/ledger.py
+- [[.get_stats()_1]] - code - gateway/ingest_api/ledger.py
+- [[.sanitize()_2]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_all_actions_false_without_engine()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_check_bot_updates_npm_failure_and_exec_failure()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_check_bot_updates_npm_missing_binary()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_check_bot_updates_update_available()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_check_updates_git_failure_returns_error()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_check_updates_reports_behind()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_disconnect_reports_failure_on_engine_errors()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_freeze_reports_failure_when_pause_fails()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_get_logs_combined_handles_partial_failure()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_get_logs_for_service()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_get_logs_service_not_found_returns_404()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_get_logs_unknown_service_rejected()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_invalid_service_name_rejected()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_rebuild_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_report_with_healthy_runtime()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_report_with_unhealthy_runtime_falls_back_to_docker()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_restart_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_restart_service_success()_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_restart_success_and_failure()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_rollback_agentshroud_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_rollback_agentshroud_success()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_rollback_bot()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_shutdown_brings_stack_down()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_shutdown_failure_reports_error()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_start_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_start_service_success()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_start_success_and_failure()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_status_runtime_failure_degrades_gracefully()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_stop_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_stop_service_success()_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_stop_success_and_failure()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_update_engine_without_pull_support()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_update_history_git_failure_returns_empty()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_update_history_returns_commits()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_update_pull_failure_still_restarts()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_update_pull_then_restart()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_update_request_defaults()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_update_restart_failure_returns_false()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_upgrade_bot_failure_reports_error_step()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_upgrade_bot_success()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_upgrade_pull_failure_triggers_rollback()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_upgrade_skip_tests_skips_test_step()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_upgrade_success_with_tests_and_security_review()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_upgrade_test_failure_triggers_rollback()]] - code - gateway/tests/test_web_api_coverage.py
+- [[Build a subprocess.run double that simulates the upgrade git flow.]] - rationale - gateway/tests/test_web_api_coverage.py
+- [[Fetch a single ledger entry by ID          Args             entry_id Entry UUI]] - rationale - gateway/ingest_api/ledger.py
+- [[Forget this' - permanently delete a ledger entry          Implements right to er]] - rationale - gateway/ingest_api/ledger.py
+- [[Get aggregate statistics          Returns             Dictionary with total ent]] - rationale - gateway/ingest_api/ledger.py
+- [[RuntimeError]] - code
+- [[TestAgentshroudUpdates]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestBotUpdates]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestLifecycleActions]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestLogs]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestServiceControl]] - code - gateway/tests/test_web_api_coverage.py
+- [[When the LLM raises in the 'direct' agent path       - the user message appende]] - rationale - gateway/tests/test_voice_gateway.py
+- [[_engine()]] - code - gateway/tests/test_web_api_coverage.py
+- [[_gitless_run()]] - code - gateway/tests/test_web_api_coverage.py
+- [[test_emergency_block_filter_raises_still_ok()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_ws_direct_agent_pipeline_error_pops_history_and_recovery_send_fails()]] - code - gateway/tests/test_voice_gateway.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -98,22 +83,70 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 19 edges to [[_COMMUNITY_Community 30]]
-- 13 edges to [[_COMMUNITY_Community 124]]
-- 12 edges to [[_COMMUNITY_Community 108]]
-- 9 edges to [[_COMMUNITY_Community 254]]
-- 7 edges to [[_COMMUNITY_Community 439]]
-- 6 edges to [[_COMMUNITY_Community 70]]
+- 37 edges to [[_COMMUNITY_Community 40]]
+- 17 edges to [[_COMMUNITY_Community 1]]
+- 14 edges to [[_COMMUNITY_Community 20]]
+- 8 edges to [[_COMMUNITY_Community 37]]
+- 6 edges to [[_COMMUNITY_Community 148]]
+- 6 edges to [[_COMMUNITY_Community 181]]
+- 5 edges to [[_COMMUNITY_Community 7]]
+- 3 edges to [[_COMMUNITY_Community 149]]
+- 3 edges to [[_COMMUNITY_Community 155]]
+- 3 edges to [[_COMMUNITY_Community 156]]
 - 3 edges to [[_COMMUNITY_Community 978]]
-- 2 edges to [[_COMMUNITY_Community 707]]
-- 2 edges to [[_COMMUNITY_Community 2154]]
-- 2 edges to [[_COMMUNITY_Community 143]]
-- 2 edges to [[_COMMUNITY_Community 1127]]
-- 1 edge to [[_COMMUNITY_Community 10]]
+- 3 edges to [[_COMMUNITY_Community 48]]
+- 3 edges to [[_COMMUNITY_Community 160]]
+- 3 edges to [[_COMMUNITY_Community 5]]
+- 3 edges to [[_COMMUNITY_Community 49]]
+- 3 edges to [[_COMMUNITY_Community 84]]
+- 2 edges to [[_COMMUNITY_Community 238]]
+- 2 edges to [[_COMMUNITY_Community 382]]
+- 2 edges to [[_COMMUNITY_Community 492]]
+- 2 edges to [[_COMMUNITY_Community 81]]
+- 2 edges to [[_COMMUNITY_Community 9]]
+- 2 edges to [[_COMMUNITY_Community 1352]]
+- 2 edges to [[_COMMUNITY_Community 24]]
+- 2 edges to [[_COMMUNITY_Community 115]]
+- 2 edges to [[_COMMUNITY_Community 100]]
+- 2 edges to [[_COMMUNITY_Community 63]]
+- 1 edge to [[_COMMUNITY_Community 95]]
+- 1 edge to [[_COMMUNITY_Community 41]]
+- 1 edge to [[_COMMUNITY_Community 271]]
+- 1 edge to [[_COMMUNITY_Community 965]]
+- 1 edge to [[_COMMUNITY_Community 176]]
+- 1 edge to [[_COMMUNITY_Community 1808]]
+- 1 edge to [[_COMMUNITY_Community 74]]
+- 1 edge to [[_COMMUNITY_Community 61]]
+- 1 edge to [[_COMMUNITY_Community 110]]
+- 1 edge to [[_COMMUNITY_Community 146]]
+- 1 edge to [[_COMMUNITY_Community 229]]
+- 1 edge to [[_COMMUNITY_Community 197]]
+- 1 edge to [[_COMMUNITY_Community 205]]
+- 1 edge to [[_COMMUNITY_Community 590]]
+- 1 edge to [[_COMMUNITY_Community 996]]
+- 1 edge to [[_COMMUNITY_Community 47]]
+- 1 edge to [[_COMMUNITY_Community 137]]
+- 1 edge to [[_COMMUNITY_Community 132]]
+- 1 edge to [[_COMMUNITY_Community 531]]
+- 1 edge to [[_COMMUNITY_Community 1192]]
+- 1 edge to [[_COMMUNITY_Community 381]]
+- 1 edge to [[_COMMUNITY_Community 660]]
+- 1 edge to [[_COMMUNITY_Community 51]]
+- 1 edge to [[_COMMUNITY_Community 1191]]
+- 1 edge to [[_COMMUNITY_Community 169]]
+- 1 edge to [[_COMMUNITY_Community 65]]
+- 1 edge to [[_COMMUNITY_Community 1412]]
+- 1 edge to [[_COMMUNITY_Community 109]]
+- 1 edge to [[_COMMUNITY_Community 851]]
+- 1 edge to [[_COMMUNITY_Community 688]]
+- 1 edge to [[_COMMUNITY_Community 1566]]
+- 1 edge to [[_COMMUNITY_Community 194]]
+- 1 edge to [[_COMMUNITY_Community 19]]
+- 1 edge to [[_COMMUNITY_Community 46]]
 
 ## Top bridge nodes
-- [[ApprovalRequest_3]] - degree 91, connects to 10 communities
-- [[test_approval_queue.py]] - degree 30, connects to 3 communities
-- [[_HangingWebSocket]] - degree 8, connects to 2 communities
-- [[TestGroupApprovalOwnerDM]] - degree 9, connects to 1 community
-- [[TestDMApprovalOwnerOnly]] - degree 6, connects to 1 community
+- [[RuntimeError]] - degree 141, connects to 55 communities
+- [[.__init__()_48]] - degree 4, connects to 3 communities
+- [[.get_entry()]] - degree 4, connects to 2 communities
+- [[.get_stats()_1]] - degree 4, connects to 2 communities
+- [[test_ws_direct_agent_pipeline_error_pops_history_and_recovery_send_fails()]] - degree 4, connects to 2 communities

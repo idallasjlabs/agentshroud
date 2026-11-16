@@ -43,10 +43,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 7]]
+- 3 edges to [[_COMMUNITY_Community 84]]
 - 1 edge to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 99]]
-- 1 edge to [[_COMMUNITY_Community 2325]]
+- 1 edge to [[_COMMUNITY_Community 329]]
 
 ## Top bridge nodes
-- [[TestOutboundClassifierHelpers]] - degree 27, connects to 4 communities
+- [[TestOutboundClassifierHelpers]] - degree 27, connects to 3 communities

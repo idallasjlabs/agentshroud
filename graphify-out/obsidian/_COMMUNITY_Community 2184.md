@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Atlas — Curriculum Architect_7]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Purpose_39]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[README_44]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Related Skills_57]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Usage_60]] - document - docker/config/hermes/skills/i-atlas/README.md
+- [[Purpose_67]] - document - docker/config/hermes/skills/i-sec-offense/README.md
+- [[README_72]] - document - docker/config/hermes/skills/i-sec-offense/README.md
+- [[Red Team Adversarial Tester (SEC-OFFENSE)_1]] - document - docker/config/hermes/skills/i-sec-offense/README.md
+- [[Related Skills_88]] - document - docker/config/hermes/skills/i-sec-offense/README.md
+- [[Usage_90]] - document - docker/config/hermes/skills/i-sec-offense/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,4 +25,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 90]]
 
 ## Top bridge nodes
-- [[Atlas — Curriculum Architect_7]] - degree 5, connects to 1 community
+- [[Red Team Adversarial Tester (SEC-OFFENSE)_1]] - degree 5, connects to 1 community

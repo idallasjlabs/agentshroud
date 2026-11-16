@@ -12,7 +12,7 @@ tags:
 # _StubForwarder
 
 ## Connections
-- [[.__init__()_137]] - `method` [EXTRACTED]
+- [[.__init__()_152]] - `method` [EXTRACTED]
 - [[.forward()_2]] - `method` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]
 - [[A2APolicyConfig]] - `uses` [INFERRED]

@@ -1,23 +1,21 @@
 ---
 type: community
-members: 10
+members: 8
 ---
 
 # Community 1971
 
-**Members:** 10 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[.test_architecture_diagram_present()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_claims_75_security_modules()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_mentions_mit_license()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_python_version_claim()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_quickstart_section_present()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_security_modules_listed()]] - code - gateway/tests/test_docs_accuracy.py
-- [[README claims Python 3.9+.]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[TestReadmeAccuracy]] - code - gateway/tests/test_docs_accuracy.py
-- [[This representative sample of modules mentioned in README should exist as code.]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[Verify README.md claims match actual implementation.]] - rationale - gateway/tests/test_docs_accuracy.py
+- [[Description_9]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[Effect_1]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[Related Notes_37]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[SDK Patch_1]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[Set In_5]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[TELEGRAM_API_BASE_URL_1]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[TELEGRAM_API_BASE_URL]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[Value_5]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,9 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 130]]
-- 1 edge to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 84]]
+- 1 edge to [[_COMMUNITY_Community 18]]
 
 ## Top bridge nodes
-- [[TestReadmeAccuracy]] - degree 11, connects to 3 communities
+- [[TELEGRAM_API_BASE_URL]] - degree 2, connects to 1 community

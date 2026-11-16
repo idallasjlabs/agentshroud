@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/proxy/mcp_inspector.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "Community 230"
-location: "L140"
+community: "Community 978"
+location: "L347"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_230
+  - graphify/INFERRED
+  - community/Community_978
 ---
 
 # Any
 
 ## Connections
-- [[._redact_pii()]] - `references` [EXTRACTED]
-- [[._scan_value()]] - `references` [EXTRACTED]
-- [[.inspect_tool_call()]] - `references` [EXTRACTED]
-- [[.inspect_tool_result()]] - `references` [EXTRACTED]
+- [[.get_stats()_1]] - `references` [EXTRACTED]
+- [[LedgerConfig]] - `uses` [INFERRED]
+- [[LedgerEntry_1]] - `uses` [INFERRED]
+- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_230
+#graphify/code #graphify/INFERRED #community/Community_978

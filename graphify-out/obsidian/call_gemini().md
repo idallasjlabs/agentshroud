@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Call Gemini API and return the review text and exit code.      Returns]] - `rationale_for` [EXTRACTED]
 - [[gemini-review.py]] - `contains` [EXTRACTED]
-- [[main()_21]] - `calls` [EXTRACTED]
+- [[main()_23]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_1118

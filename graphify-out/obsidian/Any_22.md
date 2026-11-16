@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/telegram_replay.py"
+source_file: "gateway/proxy/canvas_proxy.py"
 type: "code"
-community: "Community 165"
-location: "L82"
+community: "Community 595"
+location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_165
+  - community/Community_595
 ---
 
 # Any
 
 ## Connections
-- [[.pull_undelivered()]] - `references` [EXTRACTED]
-- [[.record_inbound()]] - `references` [EXTRACTED]
+- [[_handle_http()]] - `references` [EXTRACTED]
+- [[_handle_websocket()]] - `references` [EXTRACTED]
+- [[canvas_proxy_app()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_165
+#graphify/code #graphify/EXTRACTED #community/Community_595

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Community 24"
+community: "Community 1566"
 location: "L131"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_24
+  - community/Community_1566
 ---
 
 # AuditChain
 
 ## Connections
-- [[.__init__()_32]] - `method` [EXTRACTED]
-- [[.__init__()_33]] - `calls` [EXTRACTED]
+- [[.__init__()_47]] - `method` [EXTRACTED]
+- [[.__init__()_48]] - `calls` [EXTRACTED]
 - [[.__len__()_1]] - `method` [EXTRACTED]
 - [[.append()]] - `method` [EXTRACTED]
 - [[.append_block()]] - `method` [EXTRACTED]
@@ -74,6 +74,7 @@ tags:
 - [[TestIsDomainAllowed]] - `uses` [INFERRED]
 - [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
+- [[TestPIIBlockModeInPipeline]] - `uses` [INFERRED]
 - [[TestPIIDetection_2]] - `uses` [INFERRED]
 - [[TestPassthroughMode_1]] - `uses` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
@@ -102,4 +103,4 @@ tags:
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_24
+#graphify/code #graphify/INFERRED #community/Community_1566

@@ -12,7 +12,7 @@ tags:
 # FakeApprovalQueue
 
 ## Connections
-- [[.__init__()_179]] - `method` [EXTRACTED]
+- [[.__init__()_200]] - `method` [EXTRACTED]
 - [[.get_item()_2]] - `method` [EXTRACTED]
 - [[.submit_tool_request()_4]] - `method` [EXTRACTED]
 - [[.test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - `calls` [INFERRED]

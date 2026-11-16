@@ -2,7 +2,7 @@
 source_file: "gateway/soc/router.py"
 type: "code"
 community: "Community 10"
-location: "L86"
+location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,8 +12,11 @@ tags:
 # _confirmation_required()
 
 ## Connections
-- [[JSONResponse]] - `calls` [EXTRACTED]
+- [[JSONResponse_1]] - `calls` [EXTRACTED]
 - [[SCLConfirmationRequired]] - `calls` [EXTRACTED]
+- [[edge_enroll()_1]] - `calls` [EXTRACTED]
+- [[edge_kill()_1]] - `calls` [EXTRACTED]
+- [[edge_unkill()_1]] - `calls` [EXTRACTED]
 - [[emergency_block_egress()]] - `calls` [EXTRACTED]
 - [[killswitch_disconnect()]] - `calls` [EXTRACTED]
 - [[killswitch_freeze()]] - `calls` [EXTRACTED]

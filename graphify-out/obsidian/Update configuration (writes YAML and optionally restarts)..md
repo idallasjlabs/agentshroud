@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Community 125"
-location: "L426"
+community: "Community 49"
+location: "L453"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_125
+  - community/Community_49
 ---
 
 # Update configuration (writes YAML and optionally restarts).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[update_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_125
+#graphify/rationale #graphify/EXTRACTED #community/Community_49

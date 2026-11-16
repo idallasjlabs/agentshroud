@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[.test_build_record_defaults_to_normal_when_no_lockdown_state()]] - `method` [EXTRACTED]
 - [[.test_build_record_does_not_crash_if_lockdown_missing()]] - `method` [EXTRACTED]
+- [[.test_build_record_prefers_app_wide_progressive_lockdown()]] - `method` [EXTRACTED]
 - [[.test_build_record_reports_real_lockdown_level()]] - `method` [EXTRACTED]
 - [[.test_build_record_reports_suspended_level()]] - `method` [EXTRACTED]
 - [[Bug 2 contributors.py must call get_status(), not the nonexistent get_level().]] - `rationale_for` [EXTRACTED]

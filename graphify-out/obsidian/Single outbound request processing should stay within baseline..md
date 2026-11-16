@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_benchmark_regression.py"
 type: "rationale"
 community: "Community 511"
-location: "L71"
+location: "L132"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

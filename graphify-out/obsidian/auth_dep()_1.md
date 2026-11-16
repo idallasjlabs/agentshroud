@@ -13,7 +13,8 @@ tags:
 
 ## Connections
 - [[Auth dependency that uses the app state config.]] - `rationale_for` [EXTRACTED]
-- [[Request_2]] - `references` [EXTRACTED]
+- [[HTTPException]] - `calls` [INFERRED]
+- [[Request_3]] - `references` [EXTRACTED]
 - [[approval.py]] - `contains` [EXTRACTED]
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]
 

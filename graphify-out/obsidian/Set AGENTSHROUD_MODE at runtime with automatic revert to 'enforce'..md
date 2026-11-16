@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Community 103"
-location: "L180"
+community: "Community 40"
+location: "L247"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_103
+  - community/Community_40
 ---
 
 # Set AGENTSHROUD_MODE at runtime with automatic revert to 'enforce'.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[set_mode()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_103
+#graphify/rationale #graphify/EXTRACTED #community/Community_40

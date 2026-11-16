@@ -15,7 +15,7 @@ tags:
 - [[.get_segment_provenance()]] - `references` [EXTRACTED]
 - [[.record_segment()]] - `references` [EXTRACTED]
 - [[.tag_segment()]] - `references` [EXTRACTED]
-- [[Any_36]] - `uses` [INFERRED]
+- [[Any_46]] - `uses` [INFERRED]
 - [[ContextIntegrityScorer]] - `uses` [INFERRED]
 - [[IntegrityScore]] - `uses` [INFERRED]
 - [[Tagged provenance record for a context segment.]] - `rationale_for` [EXTRACTED]

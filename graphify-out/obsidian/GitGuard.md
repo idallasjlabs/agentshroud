@@ -12,8 +12,8 @@ tags:
 # GitGuard
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_82]] - `method` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_97]] - `method` [EXTRACTED]
 - [[._analyze_file_content()]] - `method` [EXTRACTED]
 - [[._analyze_script_content()]] - `method` [EXTRACTED]
 - [[._analyze_script_file()]] - `method` [EXTRACTED]
@@ -41,7 +41,7 @@ tags:
 - [[.test_reverse_shell_flagged()]] - `calls` [EXTRACTED]
 - [[.test_wget_flagged()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[ConsentFramework]] - `semantically_similar_to` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
@@ -52,7 +52,7 @@ tags:
 - [[Resource]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestAuth_1]] - `uses` [INFERRED]
-- [[TestConcurrency]] - `uses` [INFERRED]
+- [[TestConcurrency_1]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]

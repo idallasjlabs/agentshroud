@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "Community 24"
+community: "Community 1352"
 location: "L411"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/Community_1352
 ---
 
 # ContextIntegrityScorer must run in process_inbound() — C21 wiring.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestContextIntegrityInPipeline]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_24
+#graphify/rationale #graphify/EXTRACTED #community/Community_1352

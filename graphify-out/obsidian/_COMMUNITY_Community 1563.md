@@ -1,21 +1,23 @@
 ---
 type: community
-members: 8
+members: 10
 ---
 
 # Community 1563
 
-**Members:** 8 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[._apply_outbound_status_notices()]] - code - gateway/proxy/telegram_proxy.py
-- [[._contains_internal_approval_banner()]] - code - gateway/proxy/telegram_proxy.py
-- [[._contains_legacy_block_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._is_no_reply_token()]] - code - gateway/proxy/telegram_proxy.py
-- [[Detect internal approvalegress banner text that must remain owner-only.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect legacy bracket-style block notices for collaborator normalization.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect plain NO_REPLY sentinel with light punctuation wrapping.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Map internal statuspolicy texts to user-safe replacement notices.          Pure]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Cross-Turn Correlation Capability]] - concept - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[EgressFilter.check()]] - code - gateway/security/egress_filter.py
+- [[OpenAI Agent Message-Board Coordination Attack]] - concept - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[PromptArmor Atlassian Rovo Content-Borne Injection Disclosure]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[RovoBlast Attack (Atlassian Rovo AI)]] - concept - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[UK AISI Rogue Agent Actions Findings]] - concept - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[Varonis RovoBlast How One Click Triggered Atlassian's AI Assistant to Leak Data]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[context_guard.py Provenance Tagging (ContextSegment)]] - code - gateway/security/context_guard.py
+- [[egress_filter.py_is_private_ip SSRF Encoding-Bypass Bug]] - rationale - gateway/security/egress_filter.py
+- [[multi_turn_tracker.py  SubagentMonitor]] - code - gateway/security/multi_turn_tracker.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,11 +27,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 14]]
-- 2 edges to [[_COMMUNITY_Community 96]]
+- 1 edge to [[_COMMUNITY_Community 221]]
+- 1 edge to [[_COMMUNITY_Community 56]]
+- 1 edge to [[_COMMUNITY_Community 154]]
 
 ## Top bridge nodes
-- [[._apply_outbound_status_notices()]] - degree 9, connects to 2 communities
-- [[._is_no_reply_token()]] - degree 4, connects to 1 community
-- [[._contains_internal_approval_banner()]] - degree 4, connects to 1 community
-- [[._contains_legacy_block_notice()]] - degree 4, connects to 1 community
+- [[RovoBlast Attack (Atlassian Rovo AI)]] - degree 7, connects to 2 communities
+- [[egress_filter.py_is_private_ip SSRF Encoding-Bypass Bug]] - degree 2, connects to 1 community

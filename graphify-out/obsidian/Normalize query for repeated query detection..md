@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "Community 115"
+community: "Community 1281"
 location: "L301"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_115
+  - community/Community_1281
 ---
 
 # Normalize query for repeated query detection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._normalize_query()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_115
+#graphify/rationale #graphify/EXTRACTED #community/Community_1281

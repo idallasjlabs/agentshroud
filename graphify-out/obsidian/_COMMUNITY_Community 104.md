@@ -1,30 +1,23 @@
 ---
 type: community
-members: 36
+members: 29
 ---
 
 # Community 104
 
-**Members:** 36 nodes
+**Members:** 29 nodes
 
 ## Members
-- [[.test_config_with_tool_result_pii()]] - code - gateway/tests/test_tool_result_pii.py
 - [[A missing file (mtime -1.0) must not trigger a reload (no reject storm).]] - rationale - gateway/tests/test_config_hot_reload.py
 - [[A structurally-valid YAML that violates the pydantic schema is rejected.]] - rationale - gateway/tests/test_config_hot_reload.py
 - [[Background mtime-poll watcher reload the config when the file changes.      Pol]] - rationale - gateway/ingest_api/config.py
-- [[Complete gateway configuration]] - rationale - gateway/ingest_api/config.py
 - [[Copy only the reloadable-field subset from ``new`` onto ``current`` in place.]] - rationale - gateway/ingest_api/config.py
 - [[Every GatewayConfig field is classified exactly once, disjointly.]] - rationale - gateway/tests/test_config_hot_reload.py
 - [[File mtime changes but no reloadable field differs — reload still succeeds.]] - rationale - gateway/tests/test_config_hot_reload.py
-- [[GatewayConfig_1]] - code - gateway/ingest_api/config.py
 - [[GatewayConfig_3]] - code - gateway/tests/test_config_hot_reload.py
-- [[Path_1]] - code - gateway/ingest_api/config.py
-- [[Path_25]] - code - gateway/tests/test_config_hot_reload.py
+- [[Path_27]] - code - gateway/tests/test_config_hot_reload.py
 - [[Re-parse and validate ``config_path``; atomically swap in reloadable fields.]] - rationale - gateway/ingest_api/config.py
-- [[Return the file mtime, or -1.0 if the file is missing (treated as no-op).]] - rationale - gateway/ingest_api/config.py
-- [[Test that configuration includes tool result PII settings]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[_default_mtime returns the file mtime, and -1.0 when the file is absent.]] - rationale - gateway/tests/test_config_hot_reload.py
-- [[_default_mtime()]] - code - gateway/ingest_api/config.py
 - [[_load()]] - code - gateway/tests/test_config_hot_reload.py
 - [[_write()]] - code - gateway/tests/test_config_hot_reload.py
 - [[apply_reloadable_config()]] - code - gateway/ingest_api/config.py
@@ -53,24 +46,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_Community 72]]
-- 10 edges to [[_COMMUNITY_Community 80]]
-- 9 edges to [[_COMMUNITY_Community 28]]
-- 8 edges to [[_COMMUNITY_Community 707]]
-- 8 edges to [[_COMMUNITY_Community 50]]
-- 5 edges to [[_COMMUNITY_Community 7]]
-- 5 edges to [[_COMMUNITY_Community 35]]
-- 4 edges to [[_COMMUNITY_Community 49]]
-- 4 edges to [[_COMMUNITY_Community 105]]
-- 4 edges to [[_COMMUNITY_Community 541]]
-- 2 edges to [[_COMMUNITY_Community 34]]
-- 1 edge to [[_COMMUNITY_Community 10]]
-- 1 edge to [[_COMMUNITY_Community 138]]
-- 1 edge to [[_COMMUNITY_Community 532]]
+- 18 edges to [[_COMMUNITY_Community 7]]
+- 2 edges to [[_COMMUNITY_Community 151]]
 
 ## Top bridge nodes
-- [[GatewayConfig_1]] - degree 65, connects to 14 communities
-- [[Path_1]] - degree 8, connects to 5 communities
-- [[test_config_hot_reload.py]] - degree 21, connects to 2 communities
-- [[reload_config()]] - degree 13, connects to 2 communities
 - [[config_watcher()]] - degree 11, connects to 2 communities
+- [[test_config_hot_reload.py]] - degree 21, connects to 1 community
+- [[reload_config()]] - degree 13, connects to 1 community
+- [[_load()]] - degree 13, connects to 1 community
+- [[apply_reloadable_config()]] - degree 6, connects to 1 community

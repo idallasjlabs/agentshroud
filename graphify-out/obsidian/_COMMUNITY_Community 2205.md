@@ -8,7 +8,7 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[check()_6]] - code - tests/startup_smoke/test_bot_boot_static.sh
+- [[check()_9]] - code - tests/startup_smoke/test_bot_boot_static.sh
 - [[test_bot_boot_static.sh]] - code - tests/startup_smoke/test_bot_boot_static.sh
 - [[test_bot_boot_static.sh script]] - code - tests/startup_smoke/test_bot_boot_static.sh
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "Community 431"
+community: "Community 72"
 location: "L161"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_431
+  - community/Community_72
 ---
 
 # TestRateLimiting
@@ -19,4 +19,4 @@ tags:
 - [[EntropyCalculator]] - `uses` [INFERRED]
 - [[test_dns_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_431
+#graphify/code #graphify/INFERRED #community/Community_72

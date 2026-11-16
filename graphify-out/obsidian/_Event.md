@@ -12,7 +12,7 @@ tags:
 # _Event
 
 ## Connections
-- [[.__init__()_138]] - `method` [EXTRACTED]
+- [[.__init__()_153]] - `method` [EXTRACTED]
 - [[.log_event()_1]] - `calls` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]
 - [[A2APolicyConfig]] - `uses` [INFERRED]

@@ -2,7 +2,7 @@
 source_file: "gateway/proxy/pipeline.py"
 type: "rationale"
 community: "Community 84"
-location: "L1669"
+location: "L1700"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

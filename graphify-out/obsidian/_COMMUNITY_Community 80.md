@@ -1,92 +1,67 @@
 ---
 type: community
-members: 79
+members: 54
 ---
 
 # Community 80
 
-**Members:** 79 nodes
+**Members:** 54 nodes
 
 ## Members
-- [[.execute()]] - code - gateway/ssh_proxy/proxy.py
-- [[.expand_key_path()]] - code - gateway/ingest_api/ssh_config.py
-- [[.expand_known_hosts()]] - code - gateway/ingest_api/ssh_config.py
-- [[.no_approval_client()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_invalid_router_url_rejected()]] - code - gateway/tests/test_config_validation.py
-- [[.test_invalid_target_url_rejected()]] - code - gateway/tests/test_config_validation.py
-- [[.test_non_auto_approved_executes_directly()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_router_url_must_be_localhost_or_openclaw()]] - code - gateway/tests/test_config_validation.py
-- [[.test_ssh_approval_sanitizes_command_pii()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ssh_command_uses_strict_checking()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ssh_disabled_config()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_ssh_exec_auto_approved()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_command_not_in_allowlist()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_cwd_accepted_and_forwarded()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_cwd_invalid_rejects_400()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_cwd_none_forwards_none()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_cwd_relative_path_rejects_400()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_denied_command()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_disabled_returns_503()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_injection_attempt()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_no_auth()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_requires_approval()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_unknown_host()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_history()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_hosts_list()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_strict_host_key_checking_in_source()]] - code - gateway/tests/test_security_fixes.py
-- [[.validate_default_url()]] - code - gateway/ingest_api/config.py
-- [[.validate_targets()]] - code - gateway/ingest_api/config.py
-- [[Approval queue details must be PII-sanitized before storage]] - rationale - gateway/tests/test_security_fixes.py
-- [[Both bots must be reachable via the same router without conflict.]] - rationale - gateway/tests/test_router.py
-- [[Configuration for a single SSH host]] - rationale - gateway/ingest_api/ssh_config.py
-- [[Execute a command on a remote host via SSH.]] - rationale - gateway/ssh_proxy/proxy.py
-- [[Multi-agent router configuration]] - rationale - gateway/ingest_api/config.py
-- [[MultiAgentRouter]] - code - gateway/ingest_api/router.py
-- [[Omitting cwd passes cwd=None to proxy.execute().]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[Result of an SSH command execution]] - rationale - gateway/ssh_proxy/proxy.py
-- [[RouterConfig]] - code - gateway/ingest_api/config.py
-- [[Routes content to appropriate agent containers      Routing priority     1. Exp]] - rationale - gateway/ingest_api/router.py
-- [[SSH exec requiring approval sanitizes PII in command before storing]] - rationale - gateway/tests/test_security_fixes.py
-- [[SSH execute builds command with StrictHostKeyChecking=yes]] - rationale - gateway/tests/test_security_fixes.py
-- [[SSHConfig]] - code - gateway/ingest_api/ssh_config.py
-- [[SSHConfig_2]] - code - gateway/tests/test_ssh_proxy.py
-- [[SSHHostConfig]] - code - gateway/ingest_api/ssh_config.py
-- [[SSHResult]] - code - gateway/ssh_proxy/proxy.py
-- [[Set up app state and provide TestClient.]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[Source code uses StrictHostKeyChecking=yes]] - rationale - gateway/tests/test_security_fixes.py
-- [[Test SSH disabled returns 503 (Finding 12)]] - rationale - gateway/tests/test_ssh_proxy.py
-- [[Test require_approval=false executes directly (Finding 5)]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[Test that SSH disabled returns 503 (Finding 12)]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[TestApprovalQueuePIISanitization]] - code - gateway/tests/test_security_fixes.py
-- [[TestSSHDisabled]] - code - gateway/tests/test_ssh_proxy.py
-- [[TestSSHDisabledEndpoint]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestSSHExec]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestSSHHistory]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestSSHHosts]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestSSHRequireApprovalFalse]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestSSHStrictHostKeyChecking]] - code - gateway/tests/test_security_fixes.py
-- [[Top-level MCP proxy configuration.]] - rationale - gateway/proxy/mcp_config.py
-- [[Top-level SSH proxy configuration]] - rationale - gateway/ingest_api/ssh_config.py
-- [[Validate that default_url uses httphttps and targets an internal Docker host.]] - rationale - gateway/ingest_api/config.py
-- [[Validate that each target URL uses httphttps and targets an internal Docker hos]] - rationale - gateway/ingest_api/config.py
-- [[Verify SSH proxy uses StrictHostKeyChecking=yes, not accept-new]] - rationale - gateway/tests/test_security_fixes.py
-- [[When require_approval=false, non-auto-approved commands execute directly.]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[auth_headers()_3]] - code - gateway/tests/test_ssh_endpoints.py
-- [[client()_16]] - code - gateway/tests/test_ssh_endpoints.py
-- [[cwd is validated and passed to proxy.execute().]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[cwd must be an absolute path.]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[cwd with shell metacharacters is rejected before execution.]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[proxy()_3]] - code - gateway/tests/test_ssh_proxy.py
-- [[route_to='hermes' must resolve to the Hermes AgentTarget.]] - rationale - gateway/tests/test_router.py
-- [[router()_2]] - code - gateway/tests/test_router_openai_translation.py
-- [[ssh_config()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[ssh_config()_1]] - code - gateway/tests/test_ssh_proxy.py
-- [[ssh_config.py]] - code - gateway/ingest_api/ssh_config.py
-- [[test_config_with_ssh()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[test_hermes_and_openclaw_coexist()]] - code - gateway/tests/test_router.py
-- [[test_resolves_hermes_target()]] - code - gateway/tests/test_router.py
-- [[test_ssh_endpoints.py]] - code - gateway/tests/test_ssh_endpoints.py
-- [[test_ssh_proxy.py]] - code - gateway/tests/test_ssh_proxy.py
+- [[.__init__()_20]] - code - gateway/inbound_edge/facades.py
+- [[.__init__()_101]] - code - gateway/security/instruction_envelope.py
+- [[._compute_signature()]] - code - gateway/security/instruction_envelope.py
+- [[.sign()]] - code - gateway/security/instruction_envelope.py
+- [[.test_different_keys_fail_verification()]] - code - gateway/tests/test_instruction_envelope.py
+- [[.test_different_signers_same_key_verify()]] - code - gateway/tests/test_instruction_envelope.py
+- [[.test_envelope_wraps_system_prompt()]] - code - gateway/tests/test_instruction_envelope.py
+- [[.test_envelope_wraps_tool_result()]] - code - gateway/tests/test_instruction_envelope.py
+- [[.test_sign_and_verify_roundtrip()]] - code - gateway/tests/test_instruction_envelope.py
+- [[.test_tampered_content_fails()]] - code - gateway/tests/test_instruction_envelope.py
+- [[.test_tampered_signature_fails()]] - code - gateway/tests/test_instruction_envelope.py
+- [[.verify()]] - code - gateway/security/instruction_envelope.py
+- [[.wrap_system_prompt()]] - code - gateway/security/instruction_envelope.py
+- [[.wrap_tool_result()]] - code - gateway/security/instruction_envelope.py
+- [[A signed instruction or tool result.]] - rationale - gateway/security/instruction_envelope.py
+- [[C46 Signed Instruction Envelopes (HMAC-SHA256 tamper detection for system promptstool results)]] - concept - gateway/tests/test_instruction_envelope.py
+- [[Convenience sign a system prompt as issuer='system'.]] - rationale - gateway/security/instruction_envelope.py
+- [[Convenience sign a tool result as issuer='tooltool_name'.]] - rationale - gateway/security/instruction_envelope.py
+- [[EnvelopeSigner]] - code - gateway/inbound_edge/facades.py
+- [[EnvelopeSigner_1]] - code - gateway/security/instruction_envelope.py
+- [[Envelopes signed with one key should not verify with a different key.]] - rationale - gateway/tests/test_instruction_envelope.py
+- [[InstructionEnvelope]] - code - gateway/security/instruction_envelope.py
+- [[Modifying content after signing should fail verification.]] - rationale - gateway/tests/test_instruction_envelope.py
+- [[Modifying the signature directly should fail verification.]] - rationale - gateway/tests/test_instruction_envelope.py
+- [[Return True if the envelope's signature is valid.]] - rationale - gateway/security/instruction_envelope.py
+- [[Return ``(content, source)`` if ``wrapped`` is intact and correctly signed.]] - rationale - gateway/security/instruction_envelope.py
+- [[Return ``content`` wrapped and signed as untrusted third-party input.]] - rationale - gateway/security/instruction_envelope.py
+- [[Return a signed envelope for content.]] - rationale - gateway/security/instruction_envelope.py
+- [[Signs and verifies InstructionEnvelopes.      Usage          signer = Envelope]] - rationale - gateway/security/instruction_envelope.py
+- [[TestEnvelopeSigner]] - code - gateway/tests/test_instruction_envelope.py
+- [[The signed descriptor says freshness per feed — a stale feed (e.g. a     GitHu]] - rationale - gateway/tests/test_edge_facades.py
+- [[Two signers sharing the same key can cross-verify envelopes.]] - rationale - gateway/tests/test_instruction_envelope.py
+- [[_defang()]] - code - gateway/security/instruction_envelope.py
+- [[_id()]] - code - gateway/tests/test_untrusted_envelope.py
+- [[instruction_envelope.py]] - code - gateway/security/instruction_envelope.py
+- [[sign() + verify() should return True for unmodified content.]] - rationale - gateway/tests/test_instruction_envelope.py
+- [[signer()]] - code - gateway/tests/test_instruction_envelope.py
+- [[test_delegate_wraps_task_as_untrusted_and_targets_restricted_profile()]] - code - gateway/tests/test_edge_facades.py
+- [[test_edge_facades.py]] - code - gateway/tests/test_edge_facades.py
+- [[test_embedded_delimiters_are_neutralised()]] - code - gateway/tests/test_untrusted_envelope.py
+- [[test_instruction_envelope.py]] - code - gateway/tests/test_instruction_envelope.py
+- [[test_lab_search_queries_fixed_endpoint_and_trims()]] - code - gateway/tests/test_edge_facades.py
+- [[test_pke_status_freshness_is_none_without_dated_episodes()]] - code - gateway/tests/test_edge_facades.py
+- [[test_pke_status_reports_broken_feed_without_raising()]] - code - gateway/tests/test_edge_facades.py
+- [[test_pke_status_reports_freshness_the_descriptor_promises()]] - code - gateway/tests/test_edge_facades.py
+- [[test_pke_status_summary_and_per_feed()]] - code - gateway/tests/test_edge_facades.py
+- [[test_signature_verifies_and_detects_tampering()]] - code - gateway/tests/test_untrusted_envelope.py
+- [[test_source_is_sanitised()]] - code - gateway/tests/test_untrusted_envelope.py
+- [[test_untrusted_envelope.py]] - code - gateway/tests/test_untrusted_envelope.py
+- [[test_wrapped_content_is_delimited_and_labelled()]] - code - gateway/tests/test_untrusted_envelope.py
+- [[unwrap_untrusted()]] - code - gateway/security/instruction_envelope.py
+- [[wrap_system_prompt() sets issuer='system' and passes verification.]] - rationale - gateway/tests/test_instruction_envelope.py
+- [[wrap_tool_result() sets issuer='toolname' and passes verification.]] - rationale - gateway/tests/test_instruction_envelope.py
+- [[wrap_untrusted()]] - code - gateway/security/instruction_envelope.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -96,36 +71,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 57 edges to [[_COMMUNITY_Community 50]]
-- 44 edges to [[_COMMUNITY_Community 7]]
-- 20 edges to [[_COMMUNITY_Community 25]]
-- 18 edges to [[_COMMUNITY_Community 2051]]
-- 13 edges to [[_COMMUNITY_Community 861]]
-- 11 edges to [[_COMMUNITY_Community 707]]
-- 11 edges to [[_COMMUNITY_Community 30]]
-- 10 edges to [[_COMMUNITY_Community 104]]
-- 8 edges to [[_COMMUNITY_Community 439]]
-- 6 edges to [[_COMMUNITY_Community 36]]
-- 6 edges to [[_COMMUNITY_Community 34]]
-- 5 edges to [[_COMMUNITY_Community 541]]
-- 5 edges to [[_COMMUNITY_Community 78]]
-- 5 edges to [[_COMMUNITY_Community 325]]
-- 5 edges to [[_COMMUNITY_Community 72]]
-- 4 edges to [[_COMMUNITY_Community 105]]
-- 3 edges to [[_COMMUNITY_Community 10]]
-- 3 edges to [[_COMMUNITY_Community 35]]
-- 3 edges to [[_COMMUNITY_Community 92]]
-- 2 edges to [[_COMMUNITY_Community 1360]]
-- 1 edge to [[_COMMUNITY_Community 47]]
-- 1 edge to [[_COMMUNITY_Community 532]]
-- 1 edge to [[_COMMUNITY_Community 229]]
-- 1 edge to [[_COMMUNITY_Community 94]]
-- 1 edge to [[_COMMUNITY_Community 43]]
-- 1 edge to [[_COMMUNITY_Community 54]]
+- 25 edges to [[_COMMUNITY_Community 32]]
+- 20 edges to [[_COMMUNITY_Community 24]]
+- 6 edges to [[_COMMUNITY_Community 531]]
+- 2 edges to [[_COMMUNITY_Community 151]]
+- 2 edges to [[_COMMUNITY_Community 1566]]
+- 2 edges to [[_COMMUNITY_Community 1352]]
+- 1 edge to [[_COMMUNITY_Community 41]]
 
 ## Top bridge nodes
-- [[RouterConfig]] - degree 66, connects to 14 communities
-- [[SSHConfig]] - degree 61, connects to 11 communities
-- [[MultiAgentRouter]] - degree 47, connects to 11 communities
-- [[SSHHostConfig]] - degree 44, connects to 5 communities
-- [[TestSSHExec]] - degree 25, connects to 5 communities
+- [[EnvelopeSigner_1]] - degree 55, connects to 7 communities
+- [[InstructionEnvelope]] - degree 24, connects to 4 communities
+- [[wrap_untrusted()]] - degree 12, connects to 1 community
+- [[test_edge_facades.py]] - degree 11, connects to 1 community
+- [[test_delegate_wraps_task_as_untrusted_and_targets_restricted_profile()]] - degree 4, connects to 1 community

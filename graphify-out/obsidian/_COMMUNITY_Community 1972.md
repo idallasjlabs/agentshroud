@@ -1,22 +1,21 @@
 ---
 type: community
-members: 9
+members: 8
 ---
 
 # Community 1972
 
-**Members:** 9 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[AgentShroud v0.8.0 — Blue Team Security Assessment (Final)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[BT-H1 Cross-Bot Shared Memory Isolation Finding]] - concept - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[Blue Team Assessment v1.2.0 (First Dual-Bot Assessment)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[Fixes Applied]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[Prior Assessment (v0.8.0) — Status]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[Summary_35]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[Test Results_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[blue-team-assessment-v0.8.0-final]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[blue-team-assessment-v0.8.0]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[Hermes — Reference Verifier_6]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[Input Requirements_65]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[Output Format_89]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[Persona_51]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[Quality Checklist_58]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[Role_232]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[SKILL_98]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[System Prompt_51]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,12 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 354]]
-- 1 edge to [[_COMMUNITY_Community 357]]
-- 1 edge to [[_COMMUNITY_Community 414]]
-- 1 edge to [[_COMMUNITY_Community 2209]]
+- 1 edge to [[_COMMUNITY_Community 174]]
 
 ## Top bridge nodes
-- [[blue-team-assessment-v0.8.0]] - degree 4, connects to 2 communities
-- [[AgentShroud v0.8.0 — Blue Team Security Assessment (Final)]] - degree 6, connects to 1 community
-- [[Blue Team Assessment v1.2.0 (First Dual-Bot Assessment)]] - degree 3, connects to 1 community
+- [[Hermes — Reference Verifier_6]] - degree 8, connects to 1 community

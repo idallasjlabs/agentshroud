@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 2"
+community: "Community 2361"
 location: "L1368"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2
+  - community/Community_2361
 ---
 
 # Runtime memory provider errors should rewrite when payload uses draft field.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_memory_provider_error_is_rewritten_for_json_draft_field()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_2361

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "Community 3"
+community: "Community 103"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_3
+  - community/Community_103
 ---
 
 # TestApprovalHardening
@@ -45,4 +45,4 @@ tags:
 - [[Test approval hardening functionality.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_3
+#graphify/code #graphify/EXTRACTED #community/Community_103

@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/proxy/dns_blocklist.py"
+source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
 type: "code"
-community: "_t (2)"
-location: "L64"
+community: "Community 382"
+location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t_2
+  - community/Community_382
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_176]] - `references` [EXTRACTED]
+- [[default_out_dir()]] - `references` [EXTRACTED]
+- [[main()_34]] - `calls` [EXTRACTED]
+- [[write_gallery()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t_2
+#graphify/code #graphify/EXTRACTED #community/Community_382

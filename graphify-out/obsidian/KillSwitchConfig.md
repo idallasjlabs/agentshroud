@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_config.py"
 type: "code"
-community: "Community 65"
+community: "Community 9"
 location: "L21"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_65
+  - community/Community_9
 ---
 
 # KillSwitchConfig
@@ -23,12 +23,12 @@ tags:
 - [[.test_killswitch_dry_run_disabled()]] - `calls` [EXTRACTED]
 - [[.test_verify_killswitch_script_not_exists()]] - `calls` [EXTRACTED]
 - [[.to_dict()_10]] - `method` [EXTRACTED]
-- [[Any_45]] - `uses` [INFERRED]
+- [[Any_55]] - `uses` [INFERRED]
 - [[Configuration for kill switch monitoring and verification.]] - `rationale_for` [EXTRACTED]
 - [[FastAPI_2]] - `uses` [INFERRED]
 - [[KillSwitchConfig_1]] - `uses` [INFERRED]
 - [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[Path_36]] - `uses` [INFERRED]
+- [[Path_39]] - `uses` [INFERRED]
 - [[TestAnomalyDetection_1]] - `uses` [INFERRED]
 - [[TestAutoRevert]] - `uses` [INFERRED]
 - [[TestCriticalLogging]] - `uses` [INFERRED]
@@ -56,4 +56,4 @@ tags:
 - [[test_killswitch_monitor_behavior.py]] - `imports` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_65
+#graphify/code #graphify/INFERRED #community/Community_9

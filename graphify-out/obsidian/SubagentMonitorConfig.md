@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "Community 72"
+community: "Community 146"
 location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_72
+  - community/Community_146
 ---
 
 # SubagentMonitorConfig
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_120]] - `references` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_135]] - `references` [EXTRACTED]
 - [[.test_subagent_monitor_default_enforce()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
@@ -43,4 +43,4 @@ tags:
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_72
+#graphify/code #graphify/INFERRED #community/Community_146

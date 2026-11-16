@@ -12,7 +12,7 @@ tags:
 # _FakeRecognizerResult
 
 ## Connections
-- [[.__init__()_148]] - `method` [EXTRACTED]
+- [[.__init__()_163]] - `method` [EXTRACTED]
 - [[.test_presidio_result_becomes_pii_hit()]] - `calls` [EXTRACTED]
 - [[DifferentialPIIConfig]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector]] - `uses` [INFERRED]

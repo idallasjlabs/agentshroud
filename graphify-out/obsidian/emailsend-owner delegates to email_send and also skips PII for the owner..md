@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
 type: "rationale"
-community: "Community 1127"
+community: "Community 2050"
 location: "L84"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1127
+  - community/Community_2050
 ---
 
 # /email/send-owner delegates to email_send and also skips PII for the owner.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_send_owner_endpoint_also_bypasses_pii()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1127
+#graphify/rationale #graphify/EXTRACTED #community/Community_2050

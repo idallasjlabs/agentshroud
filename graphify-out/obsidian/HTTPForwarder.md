@@ -12,7 +12,7 @@ tags:
 # HTTPForwarder
 
 ## Connections
-- [[.__init__()_22]] - `method` [EXTRACTED]
+- [[.__init__()_37]] - `method` [EXTRACTED]
 - [[.forward()_1]] - `method` [EXTRACTED]
 - [[.get_stats()_2]] - `method` [EXTRACTED]
 - [[.health_check()_1]] - `method` [EXTRACTED]

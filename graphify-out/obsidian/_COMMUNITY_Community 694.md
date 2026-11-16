@@ -20,7 +20,7 @@ members: 14
 - [[requiresApproval]] - code - skills/custom/browser-fetch/skill.json
 - [[security]] - code - skills/custom/browser-fetch/skill.json
 - [[skill.json]] - code - skills/custom/browser-fetch/skill.json
-- [[tools]] - code - skills/custom/browser-fetch/skill.json
+- [[tools_1]] - code - skills/custom/browser-fetch/skill.json
 - [[version_8]] - code - skills/custom/browser-fetch/skill.json
 
 ## Live Query (requires Dataview plugin)

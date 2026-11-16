@@ -20,7 +20,7 @@ members: 18
 - [[SKILL_238]] - document - skills/openclaw/skill-creator/SKILL.md
 - [[TestCase]] - code
 - [[TestPackageSkillSecurity]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
-- [[main()_34]] - code - skills/openclaw/skill-creator/scripts/package_skill.py
+- [[main()_36]] - code - skills/openclaw/skill-creator/scripts/package_skill.py
 - [[package_skill()]] - code - skills/openclaw/skill-creator/scripts/package_skill.py
 - [[package_skill.py]] - code - skills/openclaw/skill-creator/scripts/package_skill.py
 - [[quick_validate.py]] - code - skills/openclaw/skill-creator/scripts/quick_validate.py

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "Community 505"
+community: "Community 8"
 location: "L503"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_505
+  - community/Community_8
 ---
 
 # Remove old sessions to prevent memory bloat.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._cleanup_old_sessions()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_505
+#graphify/rationale #graphify/EXTRACTED #community/Community_8

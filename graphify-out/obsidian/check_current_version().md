@@ -15,7 +15,7 @@ tags:
 - [[.test_after_upgrade()]] - `calls` [EXTRACTED]
 - [[.test_no_history_unknown()]] - `calls` [EXTRACTED]
 - [[.test_with_env_var()]] - `calls` [EXTRACTED]
-- [[Any_73]] - `references` [EXTRACTED]
+- [[Any_84]] - `references` [EXTRACTED]
 - [[Check the currently installed OpenClaw version.]] - `rationale_for` [EXTRACTED]
 - [[_get_db()]] - `calls` [EXTRACTED]
 - [[agentshroud_manager.py]] - `contains` [EXTRACTED]

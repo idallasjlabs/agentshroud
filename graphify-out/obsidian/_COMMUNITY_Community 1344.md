@@ -1,23 +1,27 @@
 ---
 type: community
-members: 10
+members: 14
 ---
 
 # Community 1344
 
-**Members:** 10 nodes
+**Members:** 14 nodes
 
 ## Members
-- [[_rollback()]] - code - scripts/update-agentshroud.sh
-- [[_svc_container()]] - code - scripts/post-deploy-check.sh
-- [[check()]] - code - scripts/post-deploy-check.sh
-- [[post-deploy-check.sh]] - code - scripts/post-deploy-check.sh
-- [[post-deploy-check.sh script]] - code - scripts/post-deploy-check.sh
-- [[restore-backup.sh]] - code - scripts/restore-backup.sh
-- [[restore-backup.sh script]] - code - scripts/restore-backup.sh
-- [[restore_tar_to_volume()]] - code - scripts/restore-backup.sh
-- [[update-agentshroud.sh]] - code - scripts/update-agentshroud.sh
-- [[update-agentshroud.sh script]] - code - scripts/update-agentshroud.sh
+- [[._forward_file_download()]] - code - gateway/proxy/telegram_proxy.py
+- [[._is_suppressed_outbound_payload()]] - code - gateway/proxy/telegram_proxy.py
+- [[._proxy_request_impl()]] - code - gateway/proxy/telegram_proxy.py
+- [[._resolve_text_field()]] - code - gateway/proxy/telegram_proxy.py
+- [[._suppress_duplicate_system_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._username_for_bot()]] - code - gateway/proxy/telegram_proxy.py
+- [[.proxy_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[Forward a Telegram file download and return a raw-binary sentinel dict.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Proxy a single Telegram API request.          For getUpdates responses scan eac]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return (field_name, text_value) for Telegram-style outbound payloads.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return the @username (without @) for the given bot_id.          Looks up ``_bot_]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Suppress repeated startupshutdown system notices in short windows.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Thin wrapper sets per-request bot identity in contextvars so local replies]] - rationale - gateway/proxy/telegram_proxy.py
+- [[True when filtered payload should be dropped instead of forwarded.]] - rationale - gateway/proxy/telegram_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,11 +31,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 118]]
-- 1 edge to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 227]]
-- 1 edge to [[_COMMUNITY_Community 547]]
+- 10 edges to [[_COMMUNITY_Community 14]]
+- 4 edges to [[_COMMUNITY_Community 96]]
+- 2 edges to [[_COMMUNITY_Community 216]]
+- 1 edge to [[_COMMUNITY_Community 187]]
+- 1 edge to [[_COMMUNITY_Community 18]]
 
 ## Top bridge nodes
-- [[post-deploy-check.sh]] - degree 7, connects to 3 communities
-- [[update-agentshroud.sh]] - degree 5, connects to 2 communities
+- [[._proxy_request_impl()]] - degree 15, connects to 4 communities
+- [[._resolve_text_field()]] - degree 7, connects to 3 communities
+- [[._username_for_bot()]] - degree 4, connects to 1 community
+- [[._suppress_duplicate_system_notice()]] - degree 4, connects to 1 community
+- [[.proxy_request()]] - degree 3, connects to 1 community

@@ -1,17 +1,32 @@
 ---
 type: community
-members: 50
+members: 105
 ---
 
 # Community 1281
 
-**Members:** 50 nodes
+**Members:** 105 nodes
 
 ## Members
+- [[.__init__()_115]] - code - gateway/security/multi_turn_tracker.py
+- [[._add_disclosure_event()]] - code - gateway/security/multi_turn_tracker.py
+- [[._analyze_agent_response()]] - code - gateway/security/multi_turn_tracker.py
+- [[._analyze_user_message()]] - code - gateway/security/multi_turn_tracker.py
+- [[._check_thresholds()]] - code - gateway/security/multi_turn_tracker.py
+- [[._cleanup_old_sessions()]] - code - gateway/security/multi_turn_tracker.py
+- [[._compile_detection_patterns()]] - code - gateway/security/multi_turn_tracker.py
+- [[._normalize_query()]] - code - gateway/security/multi_turn_tracker.py
+- [[._score_message_patterns()]] - code - gateway/security/multi_turn_tracker.py
+- [[._score_response_patterns()]] - code - gateway/security/multi_turn_tracker.py
+- [[._trigger_alert()]] - code - gateway/security/multi_turn_tracker.py
+- [[.get_global_stats()]] - code - gateway/security/multi_turn_tracker.py
+- [[.get_session_stats()]] - code - gateway/security/multi_turn_tracker.py
+- [[.score_response_consistency()]] - code - gateway/security/multi_turn_tracker.py
 - [[.test_agent_response_analysis()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[.test_alert_callbacks()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[.test_basic_message_tracking()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[.test_blocked_session_behavior()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_consistent_response_scores_high()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[.test_credential_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[.test_cumulative_scoring()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[.test_disabled_tracker()]] - code - gateway/tests/test_multi_turn_tracker.py
@@ -22,6 +37,8 @@ members: 50
 - [[.test_global_stats()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
 - [[.test_infrastructure_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[.test_initialization()_1]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_language_mismatch_or_anomalies()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_off_topic_response_scores_low()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[.test_pii_fragment_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[.test_repeated_query_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[.test_sequential_extraction_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
@@ -32,6 +49,36 @@ members: 50
 - [[.test_system_info_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[.test_threshold_warnings()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[.test_tool_name_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_unsolicited_tool_call_flagged()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.track_message()]] - code - gateway/security/multi_turn_tracker.py
+- [[.tracker()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[A single disclosure event in a session.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Add a disclosure event to the session.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Alert severity levels.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[AlertLevel]] - code - gateway/security/multi_turn_tracker.py
+- [[Analyze agent response for potential information leaks.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Analyze user message for disclosure patterns.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Any_60]] - code - gateway/security/multi_turn_tracker.py
+- [[Categories of information that contribute to disclosure scoring.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Check session score against thresholds and take action.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Compile regex patterns for detecting disclosure categories.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Compute a heuristic consistency score between query and response.          Retur]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Configuration for alert thresholds.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[ConsistencyScore]] - code - gateway/security/multi_turn_tracker.py
+- [[Context tracking for a single session.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Create a MultiTurnTracker instance for testing.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Create a mock alert callback for testing.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[DisclosureCategory]] - code - gateway/security/multi_turn_tracker.py
+- [[DisclosureEvent]] - code - gateway/security/multi_turn_tracker.py
+- [[Get global tracking statistics.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Get statistics for a session.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Heuristic consistency score between a query and its response.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Initialize the multi-turn tracker.          Args             config Configurat]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Normalize query for repeated query detection.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Remove old sessions to prevent memory bloat.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Score agent response for potential leaks.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Score message based on disclosure patterns.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[SessionContext_1]] - code - gateway/security/multi_turn_tracker.py
 - [[Test alert callback functionality.]] - rationale - gateway/tests/test_multi_turn_tracker.py
 - [[Test analysis of agent responses for potential leaks.]] - rationale - gateway/tests/test_multi_turn_tracker.py
 - [[Test basic message tracking functionality.]] - rationale - gateway/tests/test_multi_turn_tracker.py
@@ -58,6 +105,14 @@ members: 50
 - [[Test that sessions get blocked at high scores.]] - rationale - gateway/tests/test_multi_turn_tracker.py
 - [[Test threshold-based warning system.]] - rationale - gateway/tests/test_multi_turn_tracker.py
 - [[TestMultiTurnTracker_1]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[TestResponseConsistency]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[ThresholdConfig]] - code - gateway/security/multi_turn_tracker.py
+- [[Track a message and response pair for disclosure analysis.          Args]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Trigger alert callbacks.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[mock_alert_callback()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[multi_turn_tracker()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[multi_turn_tracker.py]] - code - gateway/security/multi_turn_tracker.py
+- [[test_multi_turn_tracker.py]] - code - gateway/tests/test_multi_turn_tracker.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -67,12 +122,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 8]]
-- 2 edges to [[_COMMUNITY_Community 72]]
+- 22 edges to [[_COMMUNITY_Community 72]]
+- 6 edges to [[_COMMUNITY_Community 8]]
+- 1 edge to [[_COMMUNITY_Community 344]]
+- 1 edge to [[_COMMUNITY_Community 1214]]
+- 1 edge to [[_COMMUNITY_Community 22]]
 - 1 edge to [[_COMMUNITY_Community 26]]
 
 ## Top bridge nodes
-- [[TestMultiTurnTracker_1]] - degree 27, connects to 2 communities
-- [[.test_disabled_tracker()]] - degree 3, connects to 1 community
-- [[.test_global_stats()_1]] - degree 3, connects to 1 community
-- [[.test_get_stats()_1]] - degree 2, connects to 1 community
+- [[multi_turn_tracker.py]] - degree 11, connects to 4 communities
+- [[TestMultiTurnTracker_1]] - degree 27, connects to 1 community
+- [[SessionContext_1]] - degree 11, connects to 1 community
+- [[TestResponseConsistency]] - degree 9, connects to 1 community
+- [[DisclosureCategory]] - degree 8, connects to 1 community

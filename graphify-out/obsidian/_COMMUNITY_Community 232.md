@@ -1,11 +1,11 @@
 ---
 type: community
-members: 21
+members: 20
 ---
 
 # Community 232
 
-**Members:** 21 nodes
+**Members:** 20 nodes
 
 ## Members
 - [[.test_body_agent_id_used_when_header_missing()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
@@ -27,7 +27,6 @@ members: 21
 - [[TestMCPProxyEndpoint_1]] - code - gateway/tests/test_mcp_proxy_endpoint.py
 - [[Tool call with injection pattern in parameters should return 403.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
 - [[Tool call with no parameters should be accepted.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
-- [[test_mcp_proxy_endpoint.py]] - code - gateway/tests/test_mcp_proxy_endpoint.py
 - [[x-agentshroud-user-id header must override spoofable body agent_id.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
 
 ## Live Query (requires Dataview plugin)
@@ -39,10 +38,6 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_Community 54]]
-- 1 edge to [[_COMMUNITY_Community 2038]]
-- 1 edge to [[_COMMUNITY_Community 132]]
-- 1 edge to [[_COMMUNITY_Community 1248]]
 
 ## Top bridge nodes
-- [[test_mcp_proxy_endpoint.py]] - degree 5, connects to 4 communities
 - [[TestMCPProxyEndpoint_1]] - degree 12, connects to 1 community

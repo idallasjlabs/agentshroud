@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/input_normalizer.py"
 type: "code"
-community: "Community 14"
+community: "Community 187"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/Community_187
 ---
 
 # normalize_input()
@@ -67,6 +67,7 @@ tags:
 - [[._looks_like_unsafe_scheme_request()]] - `calls` [EXTRACTED]
 - [[._looks_like_web_access_request()]] - `calls` [EXTRACTED]
 - [[._normalize_command_token()]] - `calls` [EXTRACTED]
+- [[._p0()]] - `calls` [EXTRACTED]
 - [[._resolve_pending_username_target()]] - `calls` [EXTRACTED]
 - [[._resolve_text_field()]] - `calls` [EXTRACTED]
 - [[._strip_json_fence()]] - `calls` [EXTRACTED]
@@ -85,6 +86,7 @@ tags:
 - [[Normalize input text to defeat encoding-based evasion.      Applied before all s]] - `rationale_for` [EXTRACTED]
 - [[TestEncodingBypass]] - `references` [EXTRACTED]
 - [[_normalizer_transforms()]] - `calls` [EXTRACTED]
+- [[call_pipeline.py]] - `imports` [EXTRACTED]
 - [[context_guard.py]] - `imports` [EXTRACTED]
 - [[input_normalizer.py]] - `contains` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
@@ -93,4 +95,4 @@ tags:
 - [[test_adversarial_injection.py]] - `imports` [EXTRACTED]
 - [[tool_result_injection.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_14
+#graphify/code #graphify/EXTRACTED #community/Community_187

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_ollama_auth_required_error_is_sanitized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Ollama auth errors should map to concise operator guidance.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_plain_no_reply_token_in_markdown_fence_is_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[NO_REPLY wrapped in markdown fence should still normalize.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 626]]
-- 1 edge to [[_COMMUNITY_Community 2]]
 - 1 edge to [[_COMMUNITY_Community 845]]
+- 1 edge to [[_COMMUNITY_Community 2]]
+- 1 edge to [[_COMMUNITY_Community 626]]
 
 ## Top bridge nodes
-- [[.test_ollama_auth_required_error_is_sanitized()]] - degree 4, connects to 3 communities
+- [[.test_plain_no_reply_token_in_markdown_fence_is_rewritten()]] - degree 4, connects to 3 communities

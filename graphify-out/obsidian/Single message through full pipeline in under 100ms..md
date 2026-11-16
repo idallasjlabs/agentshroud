@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "Community 7"
+community: "Community 84"
 location: "L224"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/Community_84
 ---
 
 # Single message through full pipeline in under 100ms.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_single_message_pipeline_under_100ms()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_7
+#graphify/rationale #graphify/EXTRACTED #community/Community_84

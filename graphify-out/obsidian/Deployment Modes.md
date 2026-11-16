@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "Community 487"
+community: "Community 418"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_487
+  - community/Community_418
 ---
 
 # Deployment Modes
@@ -16,4 +16,4 @@ tags:
 - [[Proxy Mode (Recommended)]] - `contains` [EXTRACTED]
 - [[Sidecar Mode (Performance Optimized)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_487
+#graphify/document #graphify/EXTRACTED #community/Community_418

@@ -1,0 +1,19 @@
+---
+source_file: "src/interfaces/text_control_center.py"
+type: "code"
+community: "Community 282"
+location: "L427"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_282
+---
+
+# main()
+
+## Connections
+- [[.run()_12]] - `calls` [EXTRACTED]
+- [[ControlCenter]] - `calls` [EXTRACTED]
+- [[text_control_center.py]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_282

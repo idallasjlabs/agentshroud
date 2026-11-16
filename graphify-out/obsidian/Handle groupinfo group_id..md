@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 14"
-location: "L7865"
+community: "Community 18"
+location: "L7903"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/Community_18
 ---
 
 # Handle /groupinfo <group_id>.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._handle_groupinfo_command()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_14
+#graphify/rationale #graphify/EXTRACTED #community/Community_18

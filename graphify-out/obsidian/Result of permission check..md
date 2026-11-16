@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "Community 54"
+community: "Community 6"
 location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/Community_6
 ---
 
 # Result of permission check.
@@ -15,4 +15,4 @@ tags:
 - [[PermissionCheck]] - `rationale_for` [EXTRACTED]
 - [[PermissionResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_54
+#graphify/rationale #graphify/EXTRACTED #community/Community_6

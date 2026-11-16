@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "Community 33"
+community: "Community 194"
 location: "L315"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_33
+  - community/Community_194
 ---
 
 # Owner group-context check must match standard can_use_tool result.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_owner_unrestricted_matches_dm_behavior()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_33
+#graphify/rationale #graphify/EXTRACTED #community/Community_194

@@ -23,9 +23,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 14]]
+- 4 edges to [[_COMMUNITY_Community 14]]
+- 2 edges to [[_COMMUNITY_Community 187]]
 
 ## Top bridge nodes
+- [[._extract_owner_target()]] - degree 4, connects to 2 communities
+- [[._resolve_pending_username_target()]] - degree 4, connects to 2 communities
 - [[._extract_owner_target_resolved()]] - degree 5, connects to 1 community
-- [[._extract_owner_target()]] - degree 4, connects to 1 community
-- [[._resolve_pending_username_target()]] - degree 4, connects to 1 community

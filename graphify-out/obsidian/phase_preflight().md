@@ -2,7 +2,7 @@
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
 community: "Community 126"
-location: "L449"
+location: "L453"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[Sunday Upgrade Report 2026-09-06 (prod, disk-exhaustion incident)]] - `references` [EXTRACTED]
 - [[_docker_free_gb()]] - `calls` [EXTRACTED]
+- [[_mutating()]] - `calls` [EXTRACTED]
 - [[_wait_for_docker()]] - `calls` [EXTRACTED]
 - [[die()_2]] - `calls` [EXTRACTED]
 - [[err()_1]] - `calls` [EXTRACTED]

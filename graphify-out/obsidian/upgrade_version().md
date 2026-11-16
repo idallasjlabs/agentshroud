@@ -12,7 +12,8 @@ tags:
 # upgrade_version()
 
 ## Connections
-- [[Any_10]] - `references` [EXTRACTED]
+- [[Any_20]] - `references` [EXTRACTED]
+- [[HTTPException]] - `calls` [INFERRED]
 - [[Upgrade to a target version. Requires approval_id unless dry_run.]] - `rationale_for` [EXTRACTED]
 - [[VersionRequest]] - `references` [EXTRACTED]
 - [[upgrade()]] - `calls` [EXTRACTED]

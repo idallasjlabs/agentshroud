@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "rationale"
-community: "Community 2178"
+community: "Community 17"
 location: "L354"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2178
+  - community/Community_17
 ---
 
 # Public: does *domain* match any pattern in the effective default allowlist?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.matches_allowlist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2178
+#graphify/rationale #graphify/EXTRACTED #community/Community_17

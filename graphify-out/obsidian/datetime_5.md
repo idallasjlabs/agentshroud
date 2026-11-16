@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "Community 102"
-location: "L66"
+community: "Community 122"
+location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_102
+  - community/Community_122
 ---
 
 # datetime
 
 ## Connections
-- [[read_alerts()_1]] - `references` [EXTRACTED]
-- [[wazuh_client.py]] - `imports_from` [EXTRACTED]
+- [[.register_credential()]] - `references` [EXTRACTED]
+- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
+- [[KeyRotationConfig_1]] - `uses` [INFERRED]
+- [[key_rotation.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_102
+#graphify/code #graphify/EXTRACTED #community/Community_122

@@ -1,18 +1,20 @@
 ---
-source_file: "scripts/gemini-review.py"
+source_file: "scripts/export-email-reports.py"
 type: "code"
-community: "Community 1118"
-location: "L83"
+community: "Community 777"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1118
+  - community/Community_777
 ---
 
 # main()
 
 ## Connections
-- [[call_gemini()]] - `calls` [EXTRACTED]
-- [[gemini-review.py]] - `contains` [EXTRACTED]
+- [[Path_51]] - `calls` [EXTRACTED]
+- [[_parse_since()_1]] - `calls` [EXTRACTED]
+- [[export-email-reports.py]] - `contains` [EXTRACTED]
+- [[export_bot()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1118
+#graphify/code #graphify/EXTRACTED #community/Community_777

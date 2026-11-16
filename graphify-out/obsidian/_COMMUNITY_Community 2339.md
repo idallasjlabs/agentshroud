@@ -1,15 +1,17 @@
 ---
 type: community
-members: 2
+members: 4
 ---
 
 # Community 2339
 
-**Members:** 2 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_protection_stats()]] - code - gateway/tests/test_prompt_protection.py
-- [[Test getting protection statistics.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[.test_clean_when_installed_without_report()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_not_run_without_binary_or_report()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_timestamp_falls_back_to_file_mtime()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestTrivySummary]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +21,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 351]]
+- 1 edge to [[_COMMUNITY_Community 516]]
+- 1 edge to [[_COMMUNITY_Community 219]]
 
 ## Top bridge nodes
-- [[.test_protection_stats()]] - degree 2, connects to 1 community
+- [[TestTrivySummary]] - degree 4, connects to 1 community
+- [[.test_timestamp_falls_back_to_file_mtime()]] - degree 2, connects to 1 community

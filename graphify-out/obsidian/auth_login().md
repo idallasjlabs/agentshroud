@@ -2,7 +2,7 @@
 source_file: "gateway/soc/router.py"
 type: "code"
 community: "Community 10"
-location: "L103"
+location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Exchange gateway token for a session cookie.]] - `rationale_for` [EXTRACTED]
-- [[JSONResponse]] - `references` [EXTRACTED]
+- [[JSONResponse_1]] - `references` [EXTRACTED]
 - [[LoginRequest]] - `references` [EXTRACTED]
 - [[RBACConfig_1]] - `calls` [EXTRACTED]
 - [[issue_session_token()]] - `calls` [EXTRACTED]

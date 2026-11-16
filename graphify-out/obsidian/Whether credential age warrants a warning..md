@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "Community 198"
+community: "Community 122"
 location: "L98"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_198
+  - community/Community_122
 ---
 
 # Whether credential age warrants a warning.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.should_warn()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_198
+#graphify/rationale #graphify/EXTRACTED #community/Community_122

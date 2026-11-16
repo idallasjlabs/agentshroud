@@ -12,6 +12,7 @@ tags:
 # websocket.py
 
 ## Connections
+- [[GatewayEvent]] - `imports` [EXTRACTED]
 - [[RBACConfig_1]] - `imports` [EXTRACTED]
 - [[SOCWebSocketHandler]] - `contains` [EXTRACTED]
 - [[Severity_2]] - `imports` [EXTRACTED]
@@ -20,6 +21,7 @@ tags:
 - [[_coerce_to_ws_event()]] - `contains` [EXTRACTED]
 - [[_get_config_token()]] - `imports` [EXTRACTED]
 - [[auth.py_1]] - `imports_from` [EXTRACTED]
+- [[event_bus.py]] - `imports_from` [EXTRACTED]
 - [[models.py_1]] - `imports_from` [EXTRACTED]
 - [[redeem_ws_token()]] - `imports` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `contains` [EXTRACTED]

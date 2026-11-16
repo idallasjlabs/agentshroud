@@ -8,14 +8,14 @@ members: 51
 **Members:** 51 nodes
 
 ## Members
-- [[.__call__()_6]] - code - gateway/tests/test_intel_endpoint.py
+- [[.__call__()_9]] - code - gateway/tests/test_intel_endpoint.py
 - [[.__enter__()]] - code - gateway/tests/test_citation_verifier.py
 - [[.__enter__()_3]] - code - gateway/tests/test_intel_endpoint.py
 - [[.__exit__()]] - code - gateway/tests/test_citation_verifier.py
 - [[.__exit__()_3]] - code - gateway/tests/test_intel_endpoint.py
-- [[.__init__()_142]] - code - gateway/tests/test_citation_verifier.py
-- [[.__init__()_165]] - code - gateway/tests/test_intel_endpoint.py
-- [[.__init__()_166]] - code - gateway/tests/test_intel_endpoint.py
+- [[.__init__()_157]] - code - gateway/tests/test_citation_verifier.py
+- [[.__init__()_186]] - code - gateway/tests/test_intel_endpoint.py
+- [[.__init__()_187]] - code - gateway/tests/test_intel_endpoint.py
 - [[._patch_stream()]] - code - gateway/tests/test_citation_verifier.py
 - [[.iter_bytes()]] - code - gateway/tests/test_citation_verifier.py
 - [[.iter_bytes()_1]] - code - gateway/tests/test_intel_endpoint.py
@@ -68,18 +68,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 22 edges to [[_COMMUNITY_Community 125]]
-- 10 edges to [[_COMMUNITY_Community 57]]
+- 21 edges to [[_COMMUNITY_Community 125]]
+- 8 edges to [[_COMMUNITY_Community 57]]
+- 4 edges to [[_COMMUNITY_Community 49]]
 - 2 edges to [[_COMMUNITY_Community 40]]
-- 1 edge to [[_COMMUNITY_Community 49]]
-- 1 edge to [[_COMMUNITY_Community 181]]
-- 1 edge to [[_COMMUNITY_Community 0]]
+- 1 edge to [[_COMMUNITY_Community 68]]
+- 1 edge to [[_COMMUNITY_Community 809]]
 - 1 edge to [[_COMMUNITY_Community 133]]
 - 1 edge to [[_COMMUNITY_Community 83]]
 
 ## Top bridge nodes
 - [[webapi.py (POST apiintelreports)]] - degree 5, connects to 4 communities
 - [[make_httpx_fetcher()]] - degree 18, connects to 3 communities
+- [[_FakeStreamResponse]] - degree 16, connects to 3 communities
+- [[TestMakeHttpxFetcher]] - degree 13, connects to 3 communities
 - [[FetchOutcome]] - degree 21, connects to 2 communities
-- [[_FakeStreamResponse]] - degree 16, connects to 2 communities
-- [[test_intel_endpoint.py]] - degree 14, connects to 2 communities

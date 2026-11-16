@@ -12,13 +12,13 @@ tags:
 # PermissionResult
 
 ## Connections
-- [[.__init__()_186]] - `calls` [EXTRACTED]
+- [[.__init__()_211]] - `calls` [EXTRACTED]
 - [[.check_group_permission()]] - `references` [EXTRACTED]
 - [[.check_permission()]] - `references` [EXTRACTED]
 - [[.check_tool_permission()_1]] - `references` [EXTRACTED]
 - [[.list_users_and_roles()]] - `references` [EXTRACTED]
 - [[.set_user_role()]] - `references` [EXTRACTED]
-- [[Any_72]] - `uses` [INFERRED]
+- [[Any_83]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[Result of permission check.]] - `rationale_for` [EXTRACTED]
 - [[Role_1]] - `uses` [INFERRED]

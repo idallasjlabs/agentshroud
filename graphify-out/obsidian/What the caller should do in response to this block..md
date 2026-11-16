@@ -2,7 +2,7 @@
 source_file: "gateway/security/progressive_lockdown.py"
 type: "rationale"
 community: "Community 75"
-location: "L49"
+location: "L78"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

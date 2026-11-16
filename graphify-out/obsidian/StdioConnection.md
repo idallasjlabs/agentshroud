@@ -12,7 +12,7 @@ tags:
 # StdioConnection
 
 ## Connections
-- [[.__init__()_28]] - `method` [EXTRACTED]
+- [[.__init__()_43]] - `method` [EXTRACTED]
 - [[.get_or_create()]] - `references` [EXTRACTED]
 - [[.is_running()]] - `method` [EXTRACTED]
 - [[.send_request()]] - `method` [EXTRACTED]

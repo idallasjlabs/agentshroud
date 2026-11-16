@@ -8,17 +8,17 @@ members: 11
 **Members:** 11 nodes
 
 ## Members
-- [[.__init__()_100]] - code - gateway/security/multi_turn_tracker.py
-- [[._compile_detection_patterns()]] - code - gateway/security/multi_turn_tracker.py
-- [[.get_global_stats()]] - code - gateway/security/multi_turn_tracker.py
-- [[.get_session_stats()]] - code - gateway/security/multi_turn_tracker.py
-- [[Any_50]] - code - gateway/security/multi_turn_tracker.py
-- [[Compile regex patterns for detecting disclosure categories.]] - rationale - gateway/security/multi_turn_tracker.py
-- [[Configuration for alert thresholds.]] - rationale - gateway/security/multi_turn_tracker.py
-- [[Get global tracking statistics.]] - rationale - gateway/security/multi_turn_tracker.py
-- [[Get statistics for a session.]] - rationale - gateway/security/multi_turn_tracker.py
-- [[Initialize the multi-turn tracker.          Args             config Configurat]] - rationale - gateway/security/multi_turn_tracker.py
-- [[ThresholdConfig]] - code - gateway/security/multi_turn_tracker.py
+- [[00-discovery]] - document - docs/inbound-mcp-edge/00-discovery.md
+- [[1. Repo layout, build and test]] - document - docs/inbound-mcp-edge/00-discovery.md
+- [[2. Baseline measurements (run now)]] - document - docs/inbound-mcp-edge/00-discovery.md
+- [[3. Defense layers and reusable interfaces]] - document - docs/inbound-mcp-edge/00-discovery.md
+- [[4. Mechanisms the edge depends on]] - document - docs/inbound-mcp-edge/00-discovery.md
+- [[5. Hermes, local agents and networking]] - document - docs/inbound-mcp-edge/00-discovery.md
+- [[6. Pre-existing findings (not caused by this work)]] - document - docs/inbound-mcp-edge/00-discovery.md
+- [[7. External specs verified (2026-11-09)]] - document - docs/inbound-mcp-edge/00-discovery.md
+- [[8. Gaps this feature needs filled]] - document - docs/inbound-mcp-edge/00-discovery.md
+- [[9. Risks to existing services]] - document - docs/inbound-mcp-edge/00-discovery.md
+- [[Inbound MCP Edge — Phase 0 Discovery]] - document - docs/inbound-mcp-edge/00-discovery.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,14 +26,3 @@ members: 11
 TABLE source_file, type FROM #community/Community_1558
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 8]]
-
-## Top bridge nodes
-- [[.__init__()_100]] - degree 5, connects to 1 community
-- [[ThresholdConfig]] - degree 3, connects to 1 community
-- [[._compile_detection_patterns()]] - degree 3, connects to 1 community
-- [[.get_session_stats()]] - degree 3, connects to 1 community
-- [[.get_global_stats()]] - degree 3, connects to 1 community

@@ -2,7 +2,7 @@
 source_file: "gateway/soc/router.py"
 type: "code"
 community: "Community 51"
-location: "L315"
+location: "L316"
 tags:
   - graphify/code
   - graphify/EXTRACTED

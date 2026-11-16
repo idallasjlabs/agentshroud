@@ -1,44 +1,39 @@
 ---
 type: community
-members: 31
+members: 26
 ---
 
 # Community 541
 
-**Members:** 31 nodes
+**Members:** 26 nodes
 
 ## Members
-- [[.test_body_agent_id_used_without_header()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_clean_result_accepted()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_header_user_id_overrides_body_agent_id()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_invalid_header_identity_rejected()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_mcp_proxy_data_defaults_to_empty_when_absent()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_mcp_proxy_data_parsed_from_yaml()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_owner_body_identity_rejected_without_header()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_proxy_allowed_domains_defaults_to_empty_when_absent()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_proxy_allowed_domains_parsed_from_yaml()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_result_missing_server_name_rejected()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_result_requires_auth()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_result_returns_processing_time()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_result_with_null_content()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_result_with_pii_is_audited_not_blocked()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[A result containing PII is audited and redacted — never blocked (results are nev]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[A result with no threats should be accepted and audited (200).]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[Body-only owner identity must be rejected to prevent impersonation._1]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[GatewayConfig_4]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[Null content is handled gracefully.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[Request missing required server_name is rejected with 422.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[Response includes processing_time_ms.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[TestMCPProxyConfigLoading]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[TestMCPResultEndpoint]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[Unauthenticated request is rejected.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[auth_headers()_2]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[mcp_proxy_data is an empty dict when section is absent from YAML.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[mcp_proxy_data is populated from the mcp_proxy YAML section.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[proxy_allowed_domains is empty list when proxy section is absent from YAML.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[proxy_allowed_domains is populated from the proxy.allowed_domains YAML section.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[test_config()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[test_mcp_result_endpoint.py]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[.test_claude_duet_allows_both_claude_callbacks()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_claude_profile_covers_every_claude_surface()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_connection_support_and_docs_are_exposed()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_connection_types_of_shipped_vendors()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_delegate_is_write_everywhere()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_duplicate_vendor_refuses()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_every_shipped_vendor_is_disabled_and_enforcing()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_file_name_must_match_vendor()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_floor_follows_global_pii_config()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_invalid_profile_refuses_to_load()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_loads()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_missing_directory_refuses()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_monitor_needs_ack_and_warns_loudly()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_threshold_may_be_raised()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_unconfirmed_vendors_cannot_register_or_write()]] - code - gateway/tests/test_edge_profiles.py
+- [[.test_unparseable_yaml_refuses()]] - code - gateway/tests/test_edge_profiles.py
+- [[A vendor whose custom-MCP support is not confirmed ships with no redirect]] - rationale - gateway/tests/test_edge_profiles.py
+- [[Duet, chat and Cowork share one Claude account and client identity, so the]] - rationale - gateway/tests/test_edge_profiles.py
+- [[TestDlpFloor]] - code - gateway/tests/test_edge_profiles.py
+- [[TestFailClosed]] - code - gateway/tests/test_edge_profiles.py
+- [[TestMonitorMode_1]] - code - gateway/tests/test_edge_profiles.py
+- [[TestShippedProfiles]] - code - gateway/tests/test_edge_profiles.py
+- [[TestValidProfile]] - code - gateway/tests/test_edge_profiles.py
+- [[_variant()]] - code - gateway/tests/test_edge_profiles.py
+- [[_write()_1]] - code - gateway/tests/test_edge_profiles.py
+- [[test_edge_profiles.py]] - code - gateway/tests/test_edge_profiles.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -48,18 +43,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 7]]
-- 5 edges to [[_COMMUNITY_Community 80]]
-- 5 edges to [[_COMMUNITY_Community 30]]
-- 5 edges to [[_COMMUNITY_Community 35]]
-- 5 edges to [[_COMMUNITY_Community 54]]
-- 4 edges to [[_COMMUNITY_Community 104]]
-- 2 edges to [[_COMMUNITY_Community 707]]
-- 1 edge to [[_COMMUNITY_Community 1248]]
+- 7 edges to [[_COMMUNITY_Community 84]]
+- 1 edge to [[_COMMUNITY_Community 32]]
 
 ## Top bridge nodes
-- [[test_mcp_result_endpoint.py]] - degree 15, connects to 8 communities
-- [[TestMCPResultEndpoint]] - degree 17, connects to 5 communities
-- [[TestMCPProxyConfigLoading]] - degree 11, connects to 5 communities
-- [[GatewayConfig_4]] - degree 7, connects to 5 communities
-- [[test_config()_1]] - degree 6, connects to 3 communities
+- [[test_edge_profiles.py]] - degree 9, connects to 2 communities
+- [[TestShippedProfiles]] - degree 8, connects to 1 community
+- [[TestFailClosed]] - degree 6, connects to 1 community
+- [[TestValidProfile]] - degree 5, connects to 1 community
+- [[TestDlpFloor]] - degree 4, connects to 1 community

@@ -2,7 +2,7 @@
 source_file: "docker/bots/hermes/run-standalone.sh"
 type: "code"
 community: "Community 1919"
-location: "L383"
+location: "L385"
 tags:
   - graphify/code
   - graphify/EXTRACTED

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 2"
+community: "Community 845"
 location: "L1576"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2
+  - community/Community_845
 ---
 
 # Sandbox SKILL.md messages must include healthcheck context before rewrite.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_skill_sandbox_message_without_healthcheck_is_not_rewritten()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_845

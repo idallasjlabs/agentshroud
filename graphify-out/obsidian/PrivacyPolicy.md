@@ -12,7 +12,7 @@ tags:
 # PrivacyPolicy
 
 ## Connections
-- [[.__init__()_107]] - `references` [EXTRACTED]
+- [[.__init__()_122]] - `references` [EXTRACTED]
 - [[.default()]] - `method` [EXTRACTED]
 - [[.from_dict()_10]] - `method` [EXTRACTED]
 - [[Privacy policy configuration.      Loaded from agentshroud.yaml `privacy` secti]] - `rationale_for` [EXTRACTED]

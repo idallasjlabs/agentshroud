@@ -12,8 +12,8 @@ tags:
 # MemoryLifecycleManager
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_96]] - `method` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_111]] - `method` [EXTRACTED]
 - [[._cleanup_old_actions()]] - `method` [EXTRACTED]
 - [[._cleanup_old_threats()]] - `method` [EXTRACTED]
 - [[.archive_file()]] - `method` [EXTRACTED]
@@ -29,7 +29,7 @@ tags:
 - [[.setup_method()_11]] - `calls` [EXTRACTED]
 - [[.validate_memory_write()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[ContentThreat]] - `references` [EXTRACTED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]

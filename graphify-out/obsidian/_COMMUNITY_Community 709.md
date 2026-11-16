@@ -34,7 +34,7 @@ SORT file.name ASC
 - 6 edges to [[_COMMUNITY_Community 81]]
 - 2 edges to [[_COMMUNITY_Community 27]]
 - 2 edges to [[_COMMUNITY_Community 120]]
-- 1 edge to [[_COMMUNITY_Community 148]]
+- 1 edge to [[_COMMUNITY_Community 220]]
 
 ## Top bridge nodes
 - [[StreamReader_2]] - degree 6, connects to 2 communities

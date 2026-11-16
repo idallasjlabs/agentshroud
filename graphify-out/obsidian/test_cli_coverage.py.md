@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "Community 488"
+community: "Community 1023"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_488
+  - community/Community_1023
 ---
 
 # test_cli_coverage.py
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[SCLClient]] - `imports` [EXTRACTED]
 - [[TestClientFromEnv]] - `contains` [EXTRACTED]
+- [[TestEdgeCommands]] - `contains` [EXTRACTED]
 - [[TestEgressAndAdminCommands]] - `contains` [EXTRACTED]
 - [[TestGetCommands]] - `contains` [EXTRACTED]
 - [[TestLifecycleCommands]] - `contains` [EXTRACTED]
@@ -36,7 +37,8 @@ tags:
 - [[_tail_ws()]] - `imports` [EXTRACTED]
 - [[cli()]] - `imports` [EXTRACTED]
 - [[client_from_env()]] - `imports` [EXTRACTED]
+- [[test_asb_edge_delegates_to_cli_in_gateway_without_secret_in_argv()]] - `contains` [EXTRACTED]
 - [[test_convenience_methods_hit_expected_endpoints()]] - `contains` [EXTRACTED]
 - [[test_main_entrypoint_runs_cli_group()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_488
+#graphify/code #graphify/EXTRACTED #community/Community_1023

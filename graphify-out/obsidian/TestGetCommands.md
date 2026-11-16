@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
 community: "Community 252"
-location: "L373"
+location: "L392"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -19,6 +19,8 @@ tags:
 - [[.test_get_services()]] - `method` [EXTRACTED]
 - [[.test_simple_get_subcommands()]] - `method` [EXTRACTED]
 - [[.test_token_falls_back_to_gateway_password_env()]] - `method` [EXTRACTED]
+- [[.test_token_read_from_token_file()]] - `method` [EXTRACTED]
+- [[.test_unreadable_token_file_is_an_error()]] - `method` [EXTRACTED]
 - [[SCLClient]] - `uses` [INFERRED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 

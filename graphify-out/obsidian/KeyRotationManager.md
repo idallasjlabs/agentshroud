@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "Community 198"
+community: "Community 122"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_198
+  - community/Community_122
 ---
 
 # KeyRotationManager
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_88]] - `method` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_103]] - `method` [EXTRACTED]
 - [[._generate_new_credential()]] - `method` [EXTRACTED]
 - [[._read_credential_from_1password()]] - `method` [EXTRACTED]
 - [[._retire_old_credential_after_grace_period()]] - `method` [EXTRACTED]
@@ -32,7 +32,7 @@ tags:
 - [[.setup_manager_with_credential()]] - `calls` [EXTRACTED]
 - [[.test_check_and_rotate_due_credentials()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
 - [[EgressAllowlistResponse]] - `uses` [INFERRED]
 - [[EgressAllowlistUpdate]] - `uses` [INFERRED]
@@ -68,4 +68,4 @@ tags:
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]
 - [[test_key_rotation_internals.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_198
+#graphify/code #graphify/EXTRACTED #community/Community_122

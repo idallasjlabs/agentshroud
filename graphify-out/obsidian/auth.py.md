@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "Community 49"
+community: "Community 707"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/Community_707
 ---
 
 # auth.py
@@ -26,4 +26,4 @@ tags:
 - [[main.py_2]] - `imports_from` [EXTRACTED]
 - [[verify_token()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_49
+#graphify/code #graphify/EXTRACTED #community/Community_707

@@ -12,9 +12,9 @@ tags:
 # KeyVault
 
 ## Connections
-- [[.__init__()_90]] - `references` [EXTRACTED]
-- [[.__init__()_91]] - `references` [EXTRACTED]
-- [[.__init__()_89]] - `method` [EXTRACTED]
+- [[.__init__()_105]] - `references` [EXTRACTED]
+- [[.__init__()_106]] - `references` [EXTRACTED]
+- [[.__init__()_104]] - `method` [EXTRACTED]
 - [[._agent_in_scope()]] - `method` [EXTRACTED]
 - [[._log_audit()]] - `method` [EXTRACTED]
 - [[._make_vault_pipeline()]] - `calls` [EXTRACTED]
@@ -52,6 +52,7 @@ tags:
 - [[TestLoggingSecurity]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
+- [[TestPIIBlockModeInPipeline]] - `uses` [INFERRED]
 - [[TestPIIDetection_1]] - `uses` [INFERRED]
 - [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]

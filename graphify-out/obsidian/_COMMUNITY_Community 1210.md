@@ -1,25 +1,28 @@
 ---
 type: community
-members: 12
+members: 15
 ---
 
 # Community 1210
 
-**Members:** 12 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[Emergency Hotfix_3]] - document - .agents/skills/i-mc/SKILL.md
-- [[GSDE&G Development Master Checklist_1]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 1 · Plan & Branch  → `ggSKILL.md`_1]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 2 · TDD  → `tddSKILL.md`_1]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 3 · QA  → `qaSKILL.md`_1]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 4 · Code Review  → `crSKILL.md`_1]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 5 · Pull Request  → `prSKILL.md`_1]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 6 · CI  → `cicdSKILL.md`_1]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 7 · Deploy  → `psSKILL.md`_1]] - document - .agents/skills/i-mc/SKILL.md
-- [[Quick Commands_1]] - document - .agents/skills/i-mc/SKILL.md
-- [[SKILL_31]] - document - .agents/skills/i-mc/SKILL.md
-- [[Skill Index_1]] - document - .agents/skills/i-mc/SKILL.md
+- [[Combination with Other Settings]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
+- [[Description_7]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
+- [[Description_8]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
+- [[Effect]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
+- [[OPENCLAW_SANDBOX_MODE_1]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
+- [[OPENCLAW_SANDBOX_MODE]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
+- [[Production Setting]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
+- [[Related Notes_35]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
+- [[Related Notes_36]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
+- [[Set In_3]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
+- [[Set In_4]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
+- [[Value_4]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
+- [[Values_4]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +32,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 117]]
+- 2 edges to [[_COMMUNITY_Community 52]]
+- 1 edge to [[_COMMUNITY_Community 73]]
 
 ## Top bridge nodes
-- [[GSDE&G Development Master Checklist_1]] - degree 12, connects to 1 community
+- [[OPENCLAW_SANDBOX_MODE]] - degree 4, connects to 2 communities
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - degree 3, connects to 1 community

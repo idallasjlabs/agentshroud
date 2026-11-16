@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "code"
-community: "Community 309"
+community: "Community 1248"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_309
+  - community/Community_1248
 ---
 
 # client()
@@ -16,4 +16,4 @@ tags:
 - [[Fully initialized async client with lifespan.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_309
+#graphify/code #graphify/EXTRACTED #community/Community_1248

@@ -1,16 +1,20 @@
 ---
 type: community
-members: 50
+members: 57
 ---
 
 # Community 135
 
-**Members:** 50 nodes
+**Members:** 57 nodes
 
 ## Members
 - [[.coerce_members()]] - code - gateway/security/group_config.py
+- [[.get_group_safe_response_prefix()]] - code - gateway/security/group_config.py
+- [[.get_user_collab_mode()]] - code - gateway/security/group_config.py
+- [[.get_user_groups()]] - code - gateway/security/group_config.py
 - [[.is_admin()]] - code - gateway/security/group_config.py
 - [[.is_group_admin()]] - code - gateway/security/group_config.py
+- [[.is_member()]] - code - gateway/security/group_config.py
 - [[.test_apply_persisted_overrides_skips_user_overrides_key()]] - code - gateway/tests/test_group_config.py
 - [[.test_empty_prefix_string_not_returned()]] - code - gateway/tests/test_group_config.py
 - [[.test_empty_teams_parses()]] - code - gateway/tests/test_group_config.py
@@ -45,6 +49,9 @@ members: 50
 - [[GroupConfig]] - code - gateway/security/group_config.py
 - [[Per-user collab_mode override persists to group_overrides.json and takes     pr]] - rationale - gateway/tests/test_group_config.py
 - [[Per-user override beats group-derived collab_mode.]] - rationale - gateway/tests/test_group_config.py
+- [[Return all groups the user belongs to.]] - rationale - gateway/security/group_config.py
+- [[Return the effective collab_mode for a user.          Resolution order]] - rationale - gateway/security/group_config.py
+- [[Return the safe_response_prefix for the first group that the user belongs to]] - rationale - gateway/security/group_config.py
 - [[TeamsConfig_1]] - code - gateway/tests/test_group_config.py
 - [[TestAdminChecks]] - code - gateway/tests/test_group_config.py
 - [[TestCollabMode]] - code - gateway/tests/test_group_config.py
@@ -67,14 +74,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_Community 196]]
-- 10 edges to [[_COMMUNITY_Community 18]]
-- 4 edges to [[_COMMUNITY_Community 223]]
+- 14 edges to [[_COMMUNITY_Community 194]]
+- 11 edges to [[_COMMUNITY_Community 18]]
+- 4 edges to [[_COMMUNITY_Community 1288]]
 - 3 edges to [[_COMMUNITY_Community 10]]
 
 ## Top bridge nodes
 - [[GroupConfig]] - degree 32, connects to 4 communities
 - [[test_group_config.py]] - degree 11, connects to 2 communities
+- [[.get_user_groups()]] - degree 6, connects to 2 communities
 - [[TestGroupSafeResponsePrefix]] - degree 10, connects to 1 community
 - [[TestUserCollabModeOverride]] - degree 9, connects to 1 community
-- [[TeamsConfig_1]] - degree 7, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "Community 6"
+community: "Community 65"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_65
 ---
 
 # _get_rbac_manager()
@@ -20,4 +20,4 @@ tags:
 - [[auth.py_1]] - `contains` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/Community_65

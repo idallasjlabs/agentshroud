@@ -1,16 +1,18 @@
 ---
 type: community
-members: 3
+members: 5
 ---
 
 # Community 2209
 
-**Members:** 3 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[25-Domain Prompt Injection Defense Framework]] - concept - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Enforce-by-Default Security Philosophy (ADR-009)]] - rationale - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[v0.8.0 25-Domain Prompt Injection Defense Assessment]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[.__aenter__()_4]] - code - gateway/tests/test_llm_proxy.py
+- [[.__aexit__()_4]] - code - gateway/tests/test_llm_proxy.py
+- [[.__init__()_194]] - code - gateway/tests/test_llm_proxy.py
+- [[.stream()]] - code - gateway/tests/test_llm_proxy.py
+- [[_HeadFakeClient]] - code - gateway/tests/test_llm_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,9 +22,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1948]]
-- 1 edge to [[_COMMUNITY_Community 1972]]
-- 1 edge to [[_COMMUNITY_Community 386]]
+- 2 edges to [[_COMMUNITY_Community 1278]]
+- 1 edge to [[_COMMUNITY_Community 53]]
 
 ## Top bridge nodes
-- [[v0.8.0 25-Domain Prompt Injection Defense Assessment]] - degree 5, connects to 3 communities
+- [[_HeadFakeClient]] - degree 7, connects to 2 communities

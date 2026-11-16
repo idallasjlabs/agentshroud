@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/tests/test_alert_dispatcher_retry.py"
+source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "Community 0"
-location: "L27"
+community: "Community 489"
+location: "L62"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_0
+  - graphify/EXTRACTED
+  - community/Community_489
 ---
 
 # Path
 
 ## Connections
-- [[AlertDispatcher]] - `uses` [INFERRED]
-- [[dispatcher()]] - `references` [EXTRACTED]
+- [[.from_file()]] - `references` [EXTRACTED]
+- [[.from_source()]] - `references` [EXTRACTED]
+- [[deploy_manifest()]] - `references` [EXTRACTED]
+- [[plan_deploy()]] - `references` [EXTRACTED]
+- [[validate_manifest()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_0
+#graphify/code #graphify/EXTRACTED #community/Community_489

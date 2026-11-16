@@ -1,21 +1,48 @@
 ---
 type: community
-members: 8
+members: 35
 ---
 
 # Community 394
 
-**Members:** 8 nodes
+**Members:** 35 nodes
 
 ## Members
-- [[Layer 1 — Core Pipeline (P0)]] - document - SECURITY.md
-- [[Layer 2 — Middleware (P1)]] - document - SECURITY.md
-- [[Layer 3 — Output Protection]] - document - SECURITY.md
-- [[Layer 4 — Tool & Agent Control]] - document - SECURITY.md
-- [[Layer 5 — Network & Egress]] - document - SECURITY.md
-- [[Layer 6 — File & Memory Integrity]] - document - SECURITY.md
-- [[Layer 7 — Infrastructure & Supply Chain]] - document - SECURITY.md
-- [[Security Architecture_6]] - document - SECURITY.md
+- [[.monitor_sandbox()]] - code - gateway/tests/test_security_audit.py
+- [[.sandbox()]] - code - gateway/tests/test_security_audit.py
+- [[.test_absolute_path_to_sensitive_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_app_read_allowed()]] - code - gateway/tests/test_security_audit.py
+- [[.test_basic_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_double_encoded_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_enforce_vs_monitor_contrast()]] - code - gateway/tests/test_security_audit.py
+- [[.test_monitor_mode_allows_everything()_1]] - code - gateway/tests/test_security_audit.py
+- [[.test_null_byte_injection_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_proc_meminfo_allowed()]] - code - gateway/tests/test_security_audit.py
+- [[.test_proc_self_environ_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_staging_detection()]] - code - gateway/tests/test_security_audit.py
+- [[.test_symlink_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_tmp_read_allowed()_1]] - code - gateway/tests/test_security_audit.py
+- [[.test_windows_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_write_outside_allowed_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_write_pii_detection()]] - code - gateway/tests/test_security_audit.py
+- [[.test_write_to_app_data_allowed()]] - code - gateway/tests/test_security_audit.py
+- [[.test_write_to_system_dir_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_write_to_tmp_allowed()]] - code - gateway/tests/test_security_audit.py
+- [[Access to procselfenviron exposes env vars — must be blocked.]] - rationale - gateway/tests/test_security_audit.py
+- [[Allowed read path should pass.]] - rationale - gateway/tests/test_security_audit.py
+- [[Detect data staging patterns.]] - rationale - gateway/tests/test_security_audit.py
+- [[Monitor mode flags but allows — verify difference from enforce.]] - rationale - gateway/tests/test_security_audit.py
+- [[Monitor-mode sandbox for comparison testing.]] - rationale - gateway/tests/test_security_audit.py
+- [[Reading from app should be allowed.]] - rationale - gateway/tests/test_security_audit.py
+- [[Reading from tmp should be allowed.]] - rationale - gateway/tests/test_security_audit.py
+- [[Same path, different modes — enforce blocks, monitor allows.]] - rationale - gateway/tests/test_security_audit.py
+- [[Symlink-based escape attempt blocked.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test file system sandboxing in enforce mode — blocks unauthorized access.]] - rationale - gateway/tests/test_security_audit.py
+- [[TestFileSandbox]] - code - gateway/tests/test_security_audit.py
+- [[Writing PII should be flagged even to allowed paths.]] - rationale - gateway/tests/test_security_audit.py
+- [[Writing outside allowed paths must be blocked.]] - rationale - gateway/tests/test_security_audit.py
+- [[Writing to appdata should be allowed.]] - rationale - gateway/tests/test_security_audit.py
+- [[Writing to tmp should be allowed.]] - rationale - gateway/tests/test_security_audit.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +52,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1260]]
+- 8 edges to [[_COMMUNITY_Community 0]]
+- 7 edges to [[_COMMUNITY_Community 72]]
+- 4 edges to [[_COMMUNITY_Community 52]]
+- 3 edges to [[_COMMUNITY_Community 84]]
+- 3 edges to [[_COMMUNITY_Community 31]]
+- 2 edges to [[_COMMUNITY_Community 121]]
+- 1 edge to [[_COMMUNITY_Community 557]]
+- 1 edge to [[_COMMUNITY_Community 196]]
+- 1 edge to [[_COMMUNITY_Community 152]]
+- 1 edge to [[_COMMUNITY_Community 21]]
+- 1 edge to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Community 684]]
+- 1 edge to [[_COMMUNITY_Community 809]]
+- 1 edge to [[_COMMUNITY_Community 71]]
+- 1 edge to [[_COMMUNITY_Community 532]]
+- 1 edge to [[_COMMUNITY_Community 5]]
+- 1 edge to [[_COMMUNITY_Community 146]]
 
 ## Top bridge nodes
-- [[Security Architecture_6]] - degree 8, connects to 1 community
+- [[TestFileSandbox]] - degree 55, connects to 17 communities
+- [[.monitor_sandbox()]] - degree 4, connects to 2 communities
+- [[.sandbox()]] - degree 3, connects to 2 communities

@@ -1,17 +1,18 @@
 ---
 type: community
-members: 4
+members: 5
 ---
 
 # Community 2183
 
-**Members:** 4 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[H1 Telegram Proxy middleware_manager Never Initialized]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[H2 FileSandbox _extract_file_paths Regex Too Broad]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[H3 Gateway Password Still in auth.token]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[HIGH — Should Fix]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[MCP Doctor (MCPM-DOCTOR)_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
+- [[Purpose_55]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
+- [[README_60]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
+- [[Related Skills_75]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
+- [[Usage_78]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 414]]
+- 1 edge to [[_COMMUNITY_Community 90]]
 
 ## Top bridge nodes
-- [[HIGH — Should Fix]] - degree 4, connects to 1 community
+- [[MCP Doctor (MCPM-DOCTOR)_1]] - degree 5, connects to 1 community

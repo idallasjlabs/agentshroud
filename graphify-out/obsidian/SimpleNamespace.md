@@ -12,7 +12,7 @@ tags:
 # SimpleNamespace
 
 ## Connections
-- [[.__init__()_186]] - `calls` [EXTRACTED]
+- [[.__init__()_211]] - `calls` [EXTRACTED]
 - [[.test_allowed()]] - `calls` [EXTRACTED]
 - [[.test_blocked()]] - `calls` [EXTRACTED]
 - [[.test_is_group_admin_with_teams_config()]] - `calls` [EXTRACTED]

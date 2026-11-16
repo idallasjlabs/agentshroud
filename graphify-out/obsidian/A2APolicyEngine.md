@@ -12,7 +12,7 @@ tags:
 # A2APolicyEngine
 
 ## Connections
-- [[.__init__()_17]] - `references` [EXTRACTED]
+- [[.__init__()_32]] - `references` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]
 - [[A2APolicyEngine_1]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]

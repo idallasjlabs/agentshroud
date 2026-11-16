@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "Community 1975"
+community: "Community 707"
 location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1975
+  - community/Community_707
 ---
 
 # Related Notes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[python-jose_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1975
+#graphify/document #graphify/EXTRACTED #community/Community_707

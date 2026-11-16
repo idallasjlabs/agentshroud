@@ -13,6 +13,7 @@ tags:
 
 ## Connections
 - [[HTTPAuthorizationCredentials]] - `references` [EXTRACTED]
+- [[HTTPException]] - `calls` [INFERRED]
 - [[Require valid Bearer token for chat endpoints.      When CHATBOT_AUTH_TOKEN is n]] - `rationale_for` [EXTRACTED]
 - [[TestAuth]] - `calls` [EXTRACTED]
 - [[_get_auth_token()]] - `calls` [EXTRACTED]

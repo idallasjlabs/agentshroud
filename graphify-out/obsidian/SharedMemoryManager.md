@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: "Community 61"
+community: "Community 1305"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_61
+  - community/Community_1305
 ---
 
 # SharedMemoryManager
 
 ## Connections
-- [[.__init__()_117]] - `method` [EXTRACTED]
+- [[.__init__()_132]] - `method` [EXTRACTED]
 - [[._is_authorized_group_writer()]] - `method` [EXTRACTED]
 - [[._strip_private_content()]] - `method` [EXTRACTED]
 - [[.append_to_group_memory()]] - `method` [EXTRACTED]
@@ -69,4 +69,4 @@ tags:
 - [[test_shared_memory.py]] - `imports` [EXTRACTED]
 - [[test_shared_memory_write_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_61
+#graphify/code #graphify/INFERRED #community/Community_1305

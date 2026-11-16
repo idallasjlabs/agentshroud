@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "Community 20"
+community: "Community 68"
 location: "L591"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_20
+  - community/Community_68
 ---
 
 # TestLifecycleActions
@@ -24,4 +24,4 @@ tags:
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_20
+#graphify/code #graphify/EXTRACTED #community/Community_68

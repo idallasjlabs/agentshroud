@@ -2,7 +2,7 @@
 source_file: "gateway/ingest_api/main.py"
 type: "code"
 community: "Community 978"
-location: "L1113"
+location: "L1118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,6 +13,7 @@ tags:
 
 ## Connections
 - [[AuthRequired]] - `references` [EXTRACTED]
+- [[HTTPException]] - `calls` [EXTRACTED]
 - [[SSHWriteFileRequest]] - `references` [EXTRACTED]
 - [[SSHWriteFileResponse]] - `calls` [EXTRACTED]
 - [[Write file content to an allowlisted SSH host via structured transport.      Unl]] - `rationale_for` [EXTRACTED]

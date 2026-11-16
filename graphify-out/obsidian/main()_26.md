@@ -1,19 +1,17 @@
 ---
-source_file: "scripts/soak_status.py"
+source_file: "scripts/list_registry_ghsa_ids.py"
 type: "code"
-community: "Community 310"
-location: "L76"
+community: "Community 934"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_310
+  - community/Community_934
 ---
 
 # main()
 
 ## Connections
-- [[check-soak-status.sh]] - `references` [EXTRACTED]
-- [[classify()_1]] - `calls` [EXTRACTED]
-- [[soak_status.py]] - `contains` [EXTRACTED]
+- [[list_registry_ghsa_ids.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_310
+#graphify/code #graphify/EXTRACTED #community/Community_934

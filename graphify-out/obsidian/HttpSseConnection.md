@@ -12,7 +12,7 @@ tags:
 # HttpSseConnection
 
 ## Connections
-- [[.__init__()_29]] - `method` [EXTRACTED]
+- [[.__init__()_44]] - `method` [EXTRACTED]
 - [[.get_or_create()]] - `references` [EXTRACTED]
 - [[.send_request()_1]] - `method` [EXTRACTED]
 - [[.stop()_3]] - `method` [EXTRACTED]

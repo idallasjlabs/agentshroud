@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "Community 208"
+community: "Community 112"
 location: "L551"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_208
+  - community/Community_112
 ---
 
 # test_get_local_secondary_model_reads_env()
@@ -16,4 +16,4 @@ tags:
 - [[_make_proxy()]] - `calls` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_208
+#graphify/code #graphify/EXTRACTED #community/Community_112

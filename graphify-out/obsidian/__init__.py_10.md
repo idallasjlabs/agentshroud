@@ -1,14 +1,20 @@
 ---
-source_file: "gateway/skills/__init__.py"
+source_file: "gateway/security/__init__.py"
 type: "code"
-community: "Community 1891"
+community: "Community 1205"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1891
+  - community/Community_1205
 ---
 
 # __init__.py
 
-#graphify/code #graphify/EXTRACTED #community/Community_1891
+## Connections
+- [[ClamAV (malware detection)]] - `references` [EXTRACTED]
+- [[Falco (runtime security monitoring)]] - `references` [EXTRACTED]
+- [[Trivy (container vulnerability scanning)]] - `references` [EXTRACTED]
+- [[Wazuh (file integrity monitoring)]] - `references` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1205

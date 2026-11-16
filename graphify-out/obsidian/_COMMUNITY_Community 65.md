@@ -1,54 +1,87 @@
 ---
 type: community
-members: 41
+members: 74
 ---
 
 # Community 65
 
-**Members:** 41 nodes
+**Members:** 74 nodes
 
 ## Members
-- [[._make_monitor()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_anomaly_detection_excessive_tool_calls()]] - code - gateway/tests/test_killswitch_monitor.py
-- [[.test_anomaly_detection_normal()]] - code - gateway/tests/test_killswitch_monitor.py
-- [[.test_default_config()_3]] - code - gateway/tests/test_killswitch_monitor.py
-- [[.test_dry_run_true_does_not_kill()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_duration_is_non_negative()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_get_status()]] - code - gateway/tests/test_killswitch_monitor.py
-- [[.test_heartbeat_check()]] - code - gateway/tests/test_killswitch_monitor.py
-- [[.test_init()]] - code - gateway/tests/test_killswitch_monitor.py
-- [[.test_killswitch_dry_run_disabled()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_overall_status_is_valid_value()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_result_has_required_fields()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_script_exists_test_is_present()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_verification_log_written()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_verify_killswitch_script_not_exists()]] - code - gateway/tests/test_killswitch_monitor.py
-- [[.to_dict()_10]] - code - gateway/security/killswitch_config.py
-- [[Any_44]] - code - gateway/security/killswitch_config.py
-- [[Automated verification that verify_killswitch() returns required fields.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Configuration for kill switch monitoring and verification.]] - rationale - gateway/security/killswitch_config.py
-- [[Convert configuration to dictionary for serialization.]] - rationale - gateway/security/killswitch_config.py
-- [[Kill switch dry_run must be False — real termination on anomaly.]] - rationale - gateway/tests/test_all_modules_enforce.py
-- [[KillSwitchConfig]] - code - gateway/security/killswitch_config.py
-- [[Path_36]] - code - gateway/tests/test_observatory_mode.py
-- [[Test anomaly detection with excessive tool calls.]] - rationale - gateway/tests/test_killswitch_monitor.py
-- [[Test anomaly detection with normal metrics.]] - rationale - gateway/tests/test_killswitch_monitor.py
-- [[Test basic heartbeat functionality.]] - rationale - gateway/tests/test_killswitch_monitor.py
-- [[Test default configuration values._2]] - rationale - gateway/tests/test_killswitch_monitor.py
-- [[Test kill switch configuration.]] - rationale - gateway/tests/test_killswitch_monitor.py
-- [[Test kill switch monitor functionality.]] - rationale - gateway/tests/test_killswitch_monitor.py
-- [[Test monitor initialization.]] - rationale - gateway/tests/test_killswitch_monitor.py
-- [[Test status retrieval.]] - rationale - gateway/tests/test_killswitch_monitor.py
-- [[Test verification when kill switch script does not exist.]] - rationale - gateway/tests/test_killswitch_monitor.py
-- [[TestKillSwitchConfig_1]] - code - gateway/tests/test_killswitch_monitor.py
-- [[TestKillSwitchMonitor]] - code - gateway/tests/test_killswitch_monitor.py
-- [[TestKillSwitchVerification]] - code - gateway/tests/test_observatory_mode.py
-- [[config()_1]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[dry_run=True must never trigger actual kill switch execution.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[killswitch_config.py]] - code - gateway/security/killswitch_config.py
-- [[killswitch_monitor.py]] - code - gateway/security/killswitch_monitor.py
-- [[test_killswitch_monitor.py]] - code - gateway/tests/test_killswitch_monitor.py
-- [[verify_killswitch() must write a log entry for auditability.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[.check_permission()_2]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.setup_method()_34]] - code - gateway/tests/test_soc_auth.py
+- [[.setup_method()_35]] - code - gateway/tests/test_soc_auth.py
+- [[.test_bearer_header_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_bearer_header_valid()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_cookie_raw_bearer_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_different_keys_produce_different_tokens()]] - code - gateway/tests/test_soc_auth.py
+- [[.test_different_owners_produce_different_tokens()]] - code - gateway/tests/test_soc_auth.py
+- [[.test_empty_first_file_falls_to_second()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_empty_token_or_config()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_empty_token_rejected()]] - code - gateway/tests/test_soc_auth.py
+- [[.test_expired_token_rejected()]] - code - gateway/tests/test_soc_auth.py
+- [[.test_explicit_env_wins()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_get_rbac_manager_builds_real_manager()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_handler_exception_is_swallowed()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_invalid_token_closes_4003()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_invalid_token_rejected()]] - code - gateway/tests/test_soc_auth.py
+- [[.test_issue_and_redeem()]] - code - gateway/tests/test_soc_auth.py
+- [[.test_issue_returns_hex_string()]] - code - gateway/tests/test_soc_auth.py
+- [[.test_issue_session_token_prunes_expired()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_issue_ws_token_prunes_expired()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_legacy_env_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_match()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_mismatch()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_missing_first_file_falls_to_second()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_multiple_tokens_independent()]] - code - gateway/tests/test_soc_auth.py
+- [[.test_no_credentials_raises_401()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_no_sources_returns_empty()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_raw_gateway_password_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_redeem_expired_ws_token_returns_none()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_session_cookie_valid()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_single_use()]] - code - gateway/tests/test_soc_auth.py
+- [[.test_token_file_env()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_unauthorized_closes_4003()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_valid_ws_token_accepts()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_verify_after_clear_returns_none()]] - code - gateway/tests/test_soc_auth.py
+- [[.test_verify_expired_token_returns_none()]] - code - gateway/tests/test_soc_auth.py
+- [[.test_verify_unknown_token_returns_none()]] - code - gateway/tests/test_soc_auth.py
+- [[.test_verify_valid_token()]] - code - gateway/tests/test_soc_auth.py
+- [[.test_wrong_bearer_raises_401()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_x_soc_token_header_valid()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[Clear token store before each test.]] - rationale - gateway/tests/test_soc_auth.py
+- [[Constant-time comparison against the gateway shared secret.]] - rationale - gateway/soc/auth.py
+- [[Consume a WS token and return the user_id, or None if invalidexpired.]] - rationale - gateway/soc/auth.py
+- [[Derive an HMAC session token and register it in the session store.]] - rationale - gateway/soc/auth.py
+- [[FastAPI WebSocket route handler for wssoc.]] - rationale - gateway/soc/websocket.py
+- [[FastAPI dependency resolve Bearercookie token → user_id → role.]] - rationale - gateway/soc/auth.py
+- [[Issue a short-lived, single-use WebSocket token for a user.]] - rationale - gateway/soc/auth.py
+- [[Make runsecrets reads deterministic (raise OSError) on any host.]] - rationale - gateway/tests/test_soc_realtime_coverage.py
+- [[Read the gateway auth token from envsecret.      Resolution order (matches inge]] - rationale - gateway/soc/auth.py
+- [[Remove all gateway-password env vars and clear token stores.]] - rationale - gateway/tests/test_soc_realtime_coverage.py
+- [[Return user_id if token is a valid unexpired session token, else None.]] - rationale - gateway/soc/auth.py
+- [[TestGetConfigToken]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestResolveCaller]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestSessionTokens]] - code - gateway/tests/test_soc_auth.py
+- [[TestTokenStorePruning]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestVerifyBearer]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestWSSOCEndpoint]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestWSTokens]] - code - gateway/tests/test_soc_auth.py
+- [[_block_run_secrets()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[_get_config_token()]] - code - gateway/soc/auth.py
+- [[_get_rbac_manager()]] - code - gateway/soc/auth.py
+- [[_make_ws()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[_resolve_caller()]] - code - gateway/soc/auth.py
+- [[_verify_bearer()]] - code - gateway/soc/auth.py
+- [[_verify_session_token()]] - code - gateway/soc/auth.py
+- [[auth.py_1]] - code - gateway/soc/auth.py
+- [[clean_auth_env()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[issue_session_token()]] - code - gateway/soc/auth.py
+- [[issue_ws_token()]] - code - gateway/soc/auth.py
+- [[redeem_ws_token()]] - code - gateway/soc/auth.py
+- [[test_soc_auth.py]] - code - gateway/tests/test_soc_auth.py
+- [[test_soc_realtime_coverage.py]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[ws_soc_endpoint()]] - code - gateway/soc/websocket.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -58,21 +91,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 23 edges to [[_COMMUNITY_Community 9]]
-- 7 edges to [[_COMMUNITY_Community 72]]
-- 7 edges to [[_COMMUNITY_Community 103]]
-- 3 edges to [[_COMMUNITY_Community 40]]
-- 2 edges to [[_COMMUNITY_Community 84]]
-- 1 edge to [[_COMMUNITY_Community 489]]
-- 1 edge to [[_COMMUNITY_Community 1002]]
-- 1 edge to [[_COMMUNITY_Community 1214]]
-- 1 edge to [[_COMMUNITY_Community 141]]
-- 1 edge to [[_COMMUNITY_Community 162]]
-- 1 edge to [[_COMMUNITY_Community 89]]
+- 33 edges to [[_COMMUNITY_Community 6]]
+- 22 edges to [[_COMMUNITY_Community 169]]
+- 17 edges to [[_COMMUNITY_Community 194]]
+- 14 edges to [[_COMMUNITY_Community 10]]
+- 3 edges to [[_COMMUNITY_Community 1191]]
+- 2 edges to [[_COMMUNITY_Community 614]]
+- 2 edges to [[_COMMUNITY_Community 37]]
+- 1 edge to [[_COMMUNITY_Community 68]]
+- 1 edge to [[_COMMUNITY_Community 223]]
+- 1 edge to [[_COMMUNITY_Community 2043]]
 
 ## Top bridge nodes
-- [[KillSwitchConfig]] - degree 43, connects to 7 communities
-- [[killswitch_monitor.py]] - degree 7, connects to 5 communities
-- [[TestKillSwitchVerification]] - degree 13, connects to 4 communities
-- [[Path_36]] - degree 5, connects to 3 communities
-- [[TestKillSwitchMonitor]] - degree 10, connects to 1 community
+- [[test_soc_realtime_coverage.py]] - degree 47, connects to 6 communities
+- [[auth.py_1]] - degree 19, connects to 5 communities
+- [[TestResolveCaller]] - degree 15, connects to 4 communities
+- [[ws_soc_endpoint()]] - degree 18, connects to 3 communities
+- [[TestWSSOCEndpoint]] - degree 14, connects to 3 communities

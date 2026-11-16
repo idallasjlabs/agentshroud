@@ -1,21 +1,31 @@
 ---
 type: community
-members: 8
+members: 18
 ---
 
 # Community 1015
 
-**Members:** 8 nodes
+**Members:** 18 nodes
 
 ## Members
-- [[Architecture_12]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
-- [[Confidence Threshold]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
-- [[Configured Entities]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
-- [[NLP Backend]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
-- [[Presidio Analyzer]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
-- [[Purpose_191]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
-- [[Related Notes_46]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
-- [[Where Used_3]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
+- [[.test_conversation_histories_are_bot_scoped()]] - code - gateway/tests/test_session_manager.py
+- [[.test_default_bot_id_is_openclaw()]] - code - gateway/tests/test_session_manager.py
+- [[.test_different_bots_get_different_memory_files()]] - code - gateway/tests/test_session_manager.py
+- [[.test_different_bots_get_different_workspace_dirs()]] - code - gateway/tests/test_session_manager.py
+- [[.test_invalid_bot_id_rejected()]] - code - gateway/tests/test_session_manager.py
+- [[.test_lazy_migration_copies_legacy_memory()]] - code - gateway/tests/test_session_manager.py
+- [[.test_legacy_session_promoted_on_load()]] - code - gateway/tests/test_session_manager.py
+- [[.test_long_bot_id_rejected()]] - code - gateway/tests/test_session_manager.py
+- [[.test_same_bot_same_user_returns_same_session()]] - code - gateway/tests/test_session_manager.py
+- [[.test_session_bot_id_stored_correctly()]] - code - gateway/tests/test_session_manager.py
+- [[.test_session_context_includes_bot_id()]] - code - gateway/tests/test_session_manager.py
+- [[.test_session_registry_uses_compound_key()]] - code - gateway/tests/test_session_manager.py
+- [[.test_workspace_paths_under_bot_namespace()]] - code - gateway/tests/test_session_manager.py
+- [[Existing plain user_id keys (no separator) are promoted to useropenclaw.]] - rationale - gateway/tests/test_session_manager.py
+- [[If legacy users{uid}MEMORY.md exists, first openclaw session copies it.]] - rationale - gateway/tests/test_session_manager.py
+- [[TestMultiBotIsolation]] - code - gateway/tests/test_session_manager.py
+- [[Verify that different bots get independent workspaces per user.]] - rationale - gateway/tests/test_session_manager.py
+- [[openclaw and hermes sessions for the same user must not share a directory.]] - rationale - gateway/tests/test_session_manager.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +35,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 253]]
+- 3 edges to [[_COMMUNITY_Community 1305]]
+- 2 edges to [[_COMMUNITY_Community 60]]
 
 ## Top bridge nodes
-- [[Presidio Analyzer]] - degree 8, connects to 1 community
+- [[TestMultiBotIsolation]] - degree 17, connects to 2 communities
+- [[.test_legacy_session_promoted_on_load()]] - degree 3, connects to 1 community
+- [[.test_lazy_migration_copies_legacy_memory()]] - degree 3, connects to 1 community

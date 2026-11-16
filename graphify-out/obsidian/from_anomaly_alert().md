@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "Community 51"
+community: "Community 614"
 location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_51
+  - community/Community_614
 ---
 
 # from_anomaly_alert()
 
 ## Connections
-- [[Any_66]] - `references` [EXTRACTED]
+- [[Any_76]] - `references` [EXTRACTED]
 - [[Convert an AnomalyAlert (from EgressMonitorSOCCorrelation) to SecurityEvent.]] - `rationale_for` [EXTRACTED]
 - [[SecurityEvent]] - `references` [EXTRACTED]
 - [[SecurityEvent_1]] - `calls` [EXTRACTED]
 - [[_map_severity()]] - `calls` [EXTRACTED]
 - [[event_adapter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_51
+#graphify/code #graphify/EXTRACTED #community/Community_614

@@ -12,8 +12,8 @@ tags:
 # ToolResultPIIConfig
 
 ## Connections
-- [[.__init__()_124]] - `method` [EXTRACTED]
-- [[.__init__()_125]] - `references` [EXTRACTED]
+- [[.__init__()_139]] - `method` [EXTRACTED]
+- [[.__init__()_140]] - `references` [EXTRACTED]
 - [[.get_config_for_tool()]] - `method` [EXTRACTED]
 - [[.set_config()]] - `calls` [EXTRACTED]
 - [[.test_default_config()_6]] - `calls` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[.test_tool_specific_config()]] - `calls` [EXTRACTED]
 - [[.tool_config()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]

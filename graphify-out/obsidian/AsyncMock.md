@@ -1,27 +1,30 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Community 1127"
+community: "Community 37"
 location: "L8630"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1127
+  - community/Community_37
 ---
 
 # AsyncMock
 
 ## Connections
-- [[.__call__()_10]] - `method` [EXTRACTED]
-- [[.__init__()_177]] - `calls` [INFERRED]
-- [[.__init__()_195]] - `method` [EXTRACTED]
+- [[.__call__()_14]] - `method` [EXTRACTED]
+- [[.__init__()_198]] - `calls` [INFERRED]
+- [[.__init__()_217]] - `calls` [INFERRED]
+- [[.__init__()_221]] - `method` [EXTRACTED]
 - [[._handler()]] - `calls` [INFERRED]
 - [[._mock_request()]] - `calls` [INFERRED]
 - [[._mock_websocket()]] - `calls` [INFERRED]
 - [[._passthrough_pii()]] - `calls` [INFERRED]
 - [[._passthrough_pii()_1]] - `calls` [INFERRED]
 - [[._pipeline_with_trust()]] - `calls` [INFERRED]
+- [[._proxy()]] - `calls` [INFERRED]
 - [[._redacting_pii()]] - `calls` [INFERRED]
+- [[._run()_2]] - `calls` [INFERRED]
 - [[.mock_auth()]] - `calls` [INFERRED]
 - [[.mock_forwarder()]] - `calls` [INFERRED]
 - [[.mock_pipeline()]] - `calls` [INFERRED]
@@ -193,9 +196,7 @@ tags:
 - [[_mock_ws()]] - `calls` [INFERRED]
 - [[_run_disconnect_test()]] - `calls` [INFERRED]
 - [[client()_3]] - `calls` [INFERRED]
-- [[client()_18]] - `calls` [INFERRED]
-- [[test_approvals_approve_and_deny()]] - `calls` [INFERRED]
-- [[test_approvals_approve_raises()]] - `calls` [INFERRED]
+- [[client()_19]] - `calls` [INFERRED]
 - [[test_audit_export_cef()]] - `calls` [INFERRED]
 - [[test_audit_export_exporter_raises()]] - `calls` [INFERRED]
 - [[test_audit_export_json_dict_payload()]] - `calls` [INFERRED]
@@ -248,4 +249,4 @@ tags:
 - [[test_ws_pipeline_error_logs_and_recovers_to_idle()]] - `calls` [INFERRED]
 - [[test_ws_stop_during_speaking_aborts_tts()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_1127
+#graphify/code #graphify/INFERRED #community/Community_37

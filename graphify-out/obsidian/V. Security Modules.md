@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "Community 1260"
+community: "Community 330"
 location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1260
+  - community/Community_330
 ---
 
 # V. Security Modules
@@ -21,4 +21,4 @@ tags:
 - [[V-E. DNS-Layer Enforcement]] - `contains` [EXTRACTED]
 - [[V-F. Tamper-Evident Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1260
+#graphify/document #graphify/EXTRACTED #community/Community_330

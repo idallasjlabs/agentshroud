@@ -1,25 +1,32 @@
 ---
 type: community
-members: 12
+members: 19
 ---
 
 # Community 919
 
-**Members:** 12 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[.test_few_repetitions_allowed()]] - code - gateway/tests/test_context_guard.py
-- [[.test_normal_message_allowed()]] - code - gateway/tests/test_context_guard.py
-- [[.test_normal_sized_message_allowed()]] - code - gateway/tests/test_context_guard.py
-- [[.test_oversized_message_blocked()]] - code - gateway/tests/test_context_guard.py
-- [[.test_repeated_pattern_flagged()]] - code - gateway/tests/test_context_guard.py
-- [[.test_short_repetitions_allowed()]] - code - gateway/tests/test_context_guard.py
-- [[Check if message should be allowed, with detailed findings.      Args         t]] - rationale - gateway/security/context_guard.py
-- [[Get the global context guard instance.]] - rationale - gateway/security/context_guard.py
-- [[TestCheckMessage]] - code - gateway/tests/test_context_guard.py
-- [[check_message()]] - code - gateway/security/context_guard.py
-- [[get_context_guard()]] - code - gateway/security/context_guard.py
-- [[test_context_guard.py]] - code - gateway/tests/test_context_guard.py
+- [[The shipped baseline must carry every mean key the checker gates on.]] - rationale - gateway/tests/test_check_benchmark_regression.py
+- [[_current()]] - code - gateway/tests/test_check_benchmark_regression.py
+- [[_load_checker()]] - code - gateway/tests/test_check_benchmark_regression.py
+- [[_run()_1]] - code - gateway/tests/test_check_benchmark_regression.py
+- [[test_baseline_missing_mean_key_exits_nonzero()]] - code - gateway/tests/test_check_benchmark_regression.py
+- [[test_batch_metric_regression_exits_nonzero()]] - code - gateway/tests/test_check_benchmark_regression.py
+- [[test_check_benchmark_regression.py]] - code - gateway/tests/test_check_benchmark_regression.py
+- [[test_empty_current_file_exits_nonzero()]] - code - gateway/tests/test_check_benchmark_regression.py
+- [[test_missing_baseline_file_exits_nonzero()]] - code - gateway/tests/test_check_benchmark_regression.py
+- [[test_missing_current_file_exits_nonzero()]] - code - gateway/tests/test_check_benchmark_regression.py
+- [[test_missing_expected_metric_exits_nonzero()]] - code - gateway/tests/test_check_benchmark_regression.py
+- [[test_missing_percentile_metric_exits_nonzero()]] - code - gateway/tests/test_check_benchmark_regression.py
+- [[test_non_numeric_metric_exits_nonzero()]] - code - gateway/tests/test_check_benchmark_regression.py
+- [[test_percentile_regression_against_recorded_baseline_exits_nonzero()]] - code - gateway/tests/test_check_benchmark_regression.py
+- [[test_percentiles_without_baseline_are_reported_not_failed()]] - code - gateway/tests/test_check_benchmark_regression.py
+- [[test_real_baseline_has_every_gated_mean_key()]] - code - gateway/tests/test_check_benchmark_regression.py
+- [[test_regression_beyond_threshold_exits_nonzero()]] - code - gateway/tests/test_check_benchmark_regression.py
+- [[test_regression_just_under_threshold_exits_zero()]] - code - gateway/tests/test_check_benchmark_regression.py
+- [[test_within_threshold_exits_zero()]] - code - gateway/tests/test_check_benchmark_regression.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,15 +34,3 @@ members: 12
 TABLE source_file, type FROM #community/Community_919
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 344]]
-- 3 edges to [[_COMMUNITY_Community 0]]
-- 2 edges to [[_COMMUNITY_Community 22]]
-- 1 edge to [[_COMMUNITY_Community 1927]]
-
-## Top bridge nodes
-- [[test_context_guard.py]] - degree 5, connects to 3 communities
-- [[TestCheckMessage]] - degree 9, connects to 2 communities
-- [[get_context_guard()]] - degree 4, connects to 2 communities
-- [[check_message()]] - degree 11, connects to 1 community

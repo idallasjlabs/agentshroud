@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator_gate.py"
 type: "code"
-community: "Community 72"
+community: "Community 71"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_71
 ---
 
 # tmp_compose()
@@ -15,7 +15,7 @@ tags:
 - [[.test_clean_compose_yields_zero_critical()]] - `calls` [EXTRACTED]
 - [[.test_get_security_report_shape()]] - `calls` [EXTRACTED]
 - [[.test_privileged_service_is_critical()]] - `calls` [EXTRACTED]
-- [[Path_35]] - `references` [EXTRACTED]
+- [[Path_38]] - `references` [EXTRACTED]
 - [[test_network_validator_gate.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/Community_71

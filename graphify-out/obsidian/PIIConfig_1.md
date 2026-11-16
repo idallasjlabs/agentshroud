@@ -2,7 +2,7 @@
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
 community: "Community 0"
-location: "L32"
+location: "L38"
 tags:
   - graphify/code
   - graphify/INFERRED
@@ -12,13 +12,13 @@ tags:
 # PIIConfig
 
 ## Connections
-- [[.__init__()_16]] - `references` [EXTRACTED]
+- [[.__init__()_31]] - `references` [EXTRACTED]
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[RedactionDetail]] - `uses` [INFERRED]
 - [[RedactionResult]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestAuth_1]] - `uses` [INFERRED]
-- [[TestConcurrency]] - `uses` [INFERRED]
+- [[TestConcurrency_1]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]

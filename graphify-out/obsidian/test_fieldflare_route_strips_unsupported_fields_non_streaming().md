@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "Community 208"
+community: "Community 112"
 location: "L1349"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_208
+  - community/Community_112
 ---
 
 # test_fieldflare_route_strips_unsupported_fields_non_streaming()
@@ -16,4 +16,4 @@ tags:
 - [[proxy_messages applies the shim only on the Fieldflare route, before forwarding.]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_208
+#graphify/code #graphify/EXTRACTED #community/Community_112

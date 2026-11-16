@@ -10,9 +10,9 @@ members: 17
 ## Members
 - [[AgentShroud Tagline]] - concept - BRAND.md
 - [[AgentShroud Taglines List]] - document - branding/taglines.json
-- [[check()_8]] - code - tests/startup_smoke/test_hermes_chown_coverage.sh
-- [[check()_9]] - code - tests/startup_smoke/test_hermes_cron_html_email.sh
-- [[check()_11]] - code - tests/startup_smoke/test_openclaw_photo.sh
+- [[check()_11]] - code - tests/startup_smoke/test_hermes_chown_coverage.sh
+- [[check()_12]] - code - tests/startup_smoke/test_hermes_cron_html_email.sh
+- [[check()_15]] - code - tests/startup_smoke/test_openclaw_photo.sh
 - [[email_helper.sh]] - code - docker/bots/hermes/email_helper.sh
 - [[email_helper.sh script]] - code - docker/bots/hermes/email_helper.sh
 - [[jobs.yaml (Hermes cron)]] - document - docker/config/hermes/cron/jobs.yaml
@@ -35,7 +35,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Community 197]]
-- 1 edge to [[_COMMUNITY_Community 1344]]
+- 1 edge to [[_COMMUNITY_Community 227]]
 - 1 edge to [[_COMMUNITY_Community 944]]
 - 1 edge to [[_COMMUNITY_Community 192]]
 

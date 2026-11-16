@@ -8,7 +8,7 @@ members: 34
 **Members:** 34 nodes
 
 ## Members
-- [[.__init__()_63]] - code - gateway/security/config_integrity.py
+- [[.__init__()_78]] - code - gateway/security/config_integrity.py
 - [[._hash_file()]] - code - gateway/security/config_integrity.py
 - [[._load_baseline()]] - code - gateway/security/config_integrity.py
 - [[._save_baseline()]] - code - gateway/security/config_integrity.py
@@ -21,7 +21,7 @@ members: 34
 - [[ConfigIntegrityMonitor]] - code - gateway/security/config_integrity.py
 - [[Format Telegram alert text for detected config changes.]] - rationale - gateway/security/config_integrity.py
 - [[Load the last known baseline from disk. Returns empty dict if not found.]] - rationale - gateway/security/config_integrity.py
-- [[Path_10]] - code - gateway/security/config_integrity.py
+- [[Path_12]] - code - gateway/security/config_integrity.py
 - [[Persist the current hashes as the new baseline.]] - rationale - gateway/security/config_integrity.py
 - [[Return (bot_config_dir, baseline_path) rooted in an isolated tmp dir.]] - rationale - gateway/tests/test_config_integrity_monitor.py
 - [[Return hex SHA256 of a file, or None if the file does not exist.]] - rationale - gateway/security/config_integrity.py
@@ -51,8 +51,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 162]]
+- 2 edges to [[_COMMUNITY_Community 151]]
+- 1 edge to [[_COMMUNITY_Community 22]]
 
 ## Top bridge nodes
 - [[ConfigIntegrityMonitor]] - degree 26, connects to 2 communities

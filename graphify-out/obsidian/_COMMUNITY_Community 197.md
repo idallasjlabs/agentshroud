@@ -1,18 +1,22 @@
 ---
 type: community
-members: 35
+members: 39
 ---
 
 # Community 197
 
-**Members:** 35 nodes
+**Members:** 39 nodes
 
 ## Members
-- [[.__init__()_19]] - code - gateway/proxy/collaborator_greeter.py
+- [[.__init__()_34]] - code - gateway/proxy/collaborator_greeter.py
+- [[._get_client()]] - code - gateway/proxy/collaborator_greeter.py
 - [[._load_state()]] - code - gateway/proxy/collaborator_greeter.py
 - [[._load_taglines()]] - code - gateway/proxy/collaborator_greeter.py
+- [[._persist_state()]] - code - gateway/proxy/collaborator_greeter.py
+- [[.maybe_greet()]] - code - gateway/proxy/collaborator_greeter.py
 - [[CollaboratorGreeter]] - code - gateway/proxy/collaborator_greeter.py
 - [[CollaboratorGreeter creates its own httpx client lazily.]] - rationale - gateway/tests/test_collaborator_greeter.py
+- [[Greet user if cooldown has expired. Returns True when greeting was sent.]] - rationale - gateway/proxy/collaborator_greeter.py
 - [[Sends a branded greeting photo to each (bot, user) pair once per 24 h.]] - rationale - gateway/proxy/collaborator_greeter.py
 - [[Unexpected exception in maybe_greet must be caught and return False.]] - rationale - gateway/tests/test_collaborator_greeter.py
 - [[When state JSON is corrupt AND writing the empty recovery file fails, no excepti]] - rationale - gateway/tests/test_collaborator_greeter.py
@@ -52,13 +56,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 1248]]
 - 2 edges to [[_COMMUNITY_Community 978]]
+- 2 edges to [[_COMMUNITY_Community 1248]]
+- 1 edge to [[_COMMUNITY_Community 68]]
 - 1 edge to [[_COMMUNITY_Community 547]]
-- 1 edge to [[_COMMUNITY_Community 181]]
 
 ## Top bridge nodes
-- [[CollaboratorGreeter]] - degree 22, connects to 3 communities
-- [[.__init__()_19]] - degree 4, connects to 1 community
+- [[CollaboratorGreeter]] - degree 22, connects to 2 communities
+- [[.__init__()_34]] - degree 4, connects to 1 community
 - [[test_exception_in_maybe_greet_returns_false()]] - degree 4, connects to 1 community
+- [[._get_client()]] - degree 3, connects to 1 community
 - [[collaborator_greeter.py]] - degree 2, connects to 1 community

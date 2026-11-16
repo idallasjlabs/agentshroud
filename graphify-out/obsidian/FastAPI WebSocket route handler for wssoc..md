@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "rationale"
-community: "Community 6"
-location: "L173"
+community: "Community 65"
+location: "L193"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_65
 ---
 
 # FastAPI WebSocket route handler for /ws/soc.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ws_soc_endpoint()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/Community_65

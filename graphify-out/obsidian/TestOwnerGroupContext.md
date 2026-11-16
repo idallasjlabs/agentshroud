@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "Community 33"
+community: "Community 194"
 location: "L298"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_33
+  - community/Community_194
 ---
 
 # TestOwnerGroupContext
@@ -23,4 +23,4 @@ tags:
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_group_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_33
+#graphify/code #graphify/INFERRED #community/Community_194

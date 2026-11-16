@@ -1,19 +1,20 @@
 ---
 type: community
-members: 6
+members: 7
 ---
 
 # Community 2056
 
-**Members:** 6 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[M4 Pi-hole Auth Token Passed in URL Query String]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[M5 LLM Proxy Endpoint `v1{path}` Has No Authentication]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[M6 Telegram API Proxy Passes Raw Bot Token Without Validation]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[M7 Dockerfile Uses `curl  sh` for Trivy Installation]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[M8 Unpinned Base Images and `@latest` Tags]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[MEDIUM — Fix Soon]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[._nvd_entry()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.registry()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_dry_run_reports_count_and_writes_nothing()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_empty_input_is_a_no_op()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_openclaw_and_hermes_lists_each_get_their_own_entry()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestNvdAppend]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[The NVD source appends to the OpenClaw  Hermes lists through the same locator.]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +24,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 354]]
+- 4 edges to [[_COMMUNITY_Community 55]]
+- 2 edges to [[_COMMUNITY_Community 1424]]
 
 ## Top bridge nodes
-- [[MEDIUM — Fix Soon]] - degree 6, connects to 1 community
+- [[.test_openclaw_and_hermes_lists_each_get_their_own_entry()]] - degree 4, connects to 2 communities
+- [[TestNvdAppend]] - degree 7, connects to 1 community
+- [[.test_dry_run_reports_count_and_writes_nothing()]] - degree 3, connects to 1 community
+- [[.registry()]] - degree 2, connects to 1 community
+- [[.test_empty_input_is_a_no_op()]] - degree 2, connects to 1 community

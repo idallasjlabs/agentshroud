@@ -1,47 +1,53 @@
 ---
 type: community
-members: 34
+members: 40
 ---
 
 # Community 148
 
-**Members:** 34 nodes
+**Members:** 40 nodes
 
 ## Members
-- [[.test_clamav_binary_not_found()]] - code - gateway/tests/test_security_audit.py
-- [[.test_clamav_parse_clean()]] - code - gateway/tests/test_security_audit.py
-- [[.test_clamav_parse_infected()]] - code - gateway/tests/test_security_audit.py
-- [[.test_parse_clean_output()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_empty_output()_1]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_has_timestamp()_1]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_infected_files_details()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_infected_output()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_scanner_name()_1]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_signatures()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_run_not_found()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_summary_clean()_1]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_summary_error()_1]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_summary_infected()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_update_db_not_found()]] - code - gateway/tests/test_security_toolchain.py
-- [[Any_34]] - code - gateway/security/clamav_scanner.py
-- [[Generate a summary dict suitable for the health report.      Args         repor]] - rationale - gateway/security/clamav_scanner.py
-- [[Parse clamscan output into structured results.      Args         output Raw st]] - rationale - gateway/security/clamav_scanner.py
-- [[Run ClamAV scan and return parsed results.      Args         target Directory]] - rationale - gateway/security/clamav_scanner.py
-- [[Save a ClamAV report to the log directory.]] - rationale - gateway/security/clamav_scanner.py
-- [[TestClamAVParser]] - code - gateway/tests/test_security_toolchain.py
-- [[TestClamAVRun]] - code - gateway/tests/test_security_toolchain.py
-- [[TestClamAVSummary]] - code - gateway/tests/test_security_toolchain.py
-- [[True if clamd accepts connections on its socket.      Connects rather than testi]] - rationale - gateway/security/clamav_scanner.py
-- [[Update ClamAV virus database using freshclam.      Args         freshclam_bin]] - rationale - gateway/security/clamav_scanner.py
-- [[clamav_scanner.py]] - code - gateway/security/clamav_scanner.py
-- [[clamd_available()]] - code - gateway/security/clamav_scanner.py
-- [[clamdscan' when the resident clamd can take the scan, else 'clamscan'.]] - rationale - gateway/security/clamav_scanner.py
-- [[generate_summary()]] - code - gateway/security/clamav_scanner.py
-- [[parse_clamscan_output()]] - code - gateway/security/clamav_scanner.py
-- [[preferred_scan_binary()]] - code - gateway/security/clamav_scanner.py
-- [[run_clamscan()]] - code - gateway/security/clamav_scanner.py
-- [[save_report()]] - code - gateway/security/clamav_scanner.py
-- [[update_virus_db()]] - code - gateway/security/clamav_scanner.py
+- [[Add a comment to an existing Jira issue.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[ArgumentParser]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Build (url, body, headers) for a POST to the gateway op-proxy.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Build the ADF (Atlassian Document Format) body for POST ...comment.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Build the REST v3 create-issue request body.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Create a Jira issue. Returns the new issue key (e.g. 'SCRUM-124').]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Fetch one secret field from the gateway op-proxy. Returns the value.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Issue one HTTP request and return (status_code, response_text).      HTTPError i]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Match a transition by its own name or its destination status name.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Move an issue to the named status (matched against available transitions).]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Parse argv, resolve credentials, dispatch the subcommand. Returns exit code.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[REST v3 URL for creating an issue.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[REST v3 add-comment URL for an arbitrary issue key.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[REST v3 transitions URL (GET to list, POST to apply) for an issue.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Resolve (token, email, cloud_id) via the gateway op-proxy plus a public     tena]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Resolve a site domain to its Atlassian cloud ID via the public,     unauthentica]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Return the HTTP Basic auth header value base64(emailtoken).]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Unauthenticated site-to-cloud-ID discovery URL.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[_adf_doc()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[_auth_headers()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[_build_arg_parser()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[_cloud_base_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[_http_request()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[add_comment()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_basic_auth_header()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_comment_payload()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_comment_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_create_issue_payload()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_issue_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_op_proxy_request()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_tenant_info_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_transitions_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[create_issue()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[fetch_credentials()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[fetch_op_secret()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[find_transition_id()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket.py]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[resolve_cloud_id()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[run()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[transition_issue()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,18 +57,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 0]]
-- 7 edges to [[_COMMUNITY_Community 102]]
-- 5 edges to [[_COMMUNITY_Community 220]]
-- 2 edges to [[_COMMUNITY_Community 72]]
-- 2 edges to [[_COMMUNITY_Community 978]]
-- 1 edge to [[_COMMUNITY_Community 162]]
-- 1 edge to [[_COMMUNITY_Community 709]]
-- 1 edge to [[_COMMUNITY_Community 29]]
+- 6 edges to [[_COMMUNITY_Community 68]]
+- 1 edge to [[_COMMUNITY_Community 181]]
 
 ## Top bridge nodes
-- [[clamav_scanner.py]] - degree 12, connects to 4 communities
-- [[run_clamscan()]] - degree 10, connects to 4 communities
-- [[parse_clamscan_output()]] - degree 18, connects to 3 communities
-- [[TestClamAVParser]] - degree 9, connects to 2 communities
-- [[preferred_scan_binary()]] - degree 5, connects to 2 communities
+- [[create_issue()]] - degree 7, connects to 1 community
+- [[add_comment()]] - degree 7, connects to 1 community
+- [[transition_issue()]] - degree 7, connects to 1 community
+- [[fetch_credentials()]] - degree 6, connects to 1 community
+- [[build_comment_payload()]] - degree 5, connects to 1 community

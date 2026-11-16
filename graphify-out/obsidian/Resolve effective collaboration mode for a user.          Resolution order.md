@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 14"
-location: "L7803"
+community: "Community 96"
+location: "L7841"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/Community_96
 ---
 
 # Resolve effective collaboration mode for a user.          Resolution order:
 
 ## Connections
-- [[._get_user_projects()]] - `rationale_for` [EXTRACTED]
 - [[._resolve_collaborator_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_14
+#graphify/rationale #graphify/EXTRACTED #community/Community_96

@@ -2,7 +2,7 @@
 source_file: "gateway/ingest_api/main.py"
 type: "code"
 community: "Community 978"
-location: "L1525"
+location: "L1530"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,6 +13,7 @@ tags:
 
 ## Connections
 - [[AuthRequired]] - `references` [EXTRACTED]
+- [[HTTPException]] - `calls` [EXTRACTED]
 - [[Run Trivy vulnerability scan.]] - `rationale_for` [EXTRACTED]
 - [[_record_scanner_result()]] - `calls` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]

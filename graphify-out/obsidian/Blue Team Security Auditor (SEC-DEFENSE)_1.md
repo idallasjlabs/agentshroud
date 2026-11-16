@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec-defense/README.md"
 type: "document"
-community: "Community 2188"
+community: "Community 90"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2188
+  - community/Community_90
 ---
 
 # Blue Team Security Auditor (SEC-DEFENSE)
@@ -18,4 +18,4 @@ tags:
 - [[Related Skills_87]] - `contains` [EXTRACTED]
 - [[Usage_89]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2188
+#graphify/document #graphify/EXTRACTED #community/Community_90

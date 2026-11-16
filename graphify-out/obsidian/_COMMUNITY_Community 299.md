@@ -1,11 +1,11 @@
 ---
 type: community
-members: 30
+members: 35
 ---
 
 # Community 299
 
-**Members:** 30 nodes
+**Members:** 35 nodes
 
 ## Members
 - [[Approval required but none granted]] - document - skills/custom/securebrowser/README.md
@@ -18,6 +18,10 @@ members: 30
 - [[3. Test Navigation]] - document - skills/custom/securebrowser/README.md
 - [[Approval Workflow]] - document - skills/custom/securebrowser/README.md
 - [[Audit Trail]] - document - skills/custom/securebrowser/README.md
+- [[Example 1 Simple Navigation]] - document - skills/custom/securebrowser/README.md
+- [[Example 2 Fill Form (Non-Sensitive)]] - document - skills/custom/securebrowser/README.md
+- [[Example 3 Fill Password (Sensitive)]] - document - skills/custom/securebrowser/README.md
+- [[Example 4 Handle CAPTCHA]] - document - skills/custom/securebrowser/README.md
 - [[Integration_2]] - document - skills/custom/securebrowser/README.md
 - [[Key Features_2]] - document - skills/custom/securebrowser/README.md
 - [[License_2]] - document - skills/custom/securebrowser/README.md
@@ -36,6 +40,7 @@ members: 30
 - [[Support]] - document - skills/custom/securebrowser/README.md
 - [[Troubleshooting_57]] - document - skills/custom/securebrowser/README.md
 - [[URL Access Control_1]] - document - skills/custom/securebrowser/README.md
+- [[Usage Examples_2]] - document - skills/custom/securebrowser/README.md
 - [[With 1Password]] - document - skills/custom/securebrowser/README.md
 - [[With AgentShroud Gateway]] - document - skills/custom/securebrowser/README.md
 
@@ -49,7 +54,6 @@ SORT file.name ASC
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Community 2120]]
 - 1 edge to [[_COMMUNITY_Community 799]]
-- 1 edge to [[_COMMUNITY_Community 2320]]
 
 ## Top bridge nodes
-- [[SecureBrowser Skill]] - degree 15, connects to 3 communities
+- [[SecureBrowser Skill]] - degree 15, connects to 2 communities

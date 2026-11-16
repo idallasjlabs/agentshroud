@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[ChatRequest]] - `references` [EXTRACTED]
 - [[ChatResponse]] - `calls` [EXTRACTED]
+- [[HTTPException]] - `calls` [INFERRED]
 - [[Process chat message with Isaiah's personality.]] - `rationale_for` [EXTRACTED]
 - [[Request]] - `references` [EXTRACTED]
 - [[TestAsyncClient]] - `calls` [EXTRACTED]

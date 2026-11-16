@@ -1,15 +1,16 @@
 ---
 type: community
-members: 2
+members: 3
 ---
 
 # Community 2341
 
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[.test_collaborator_access_not_configured_user_id_leakage_is_redacted_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Collaborators should not receive telegram user-id enrollment leakage text.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.get_summary()]] - code - gateway/security/a2a_governance.py
+- [[.to_dict()_3]] - code - gateway/security/a2a_governance.py
+- [[Get governance proxy summary.]] - rationale - gateway/security/a2a_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +20,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 626]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 845]]
+- 1 edge to [[_COMMUNITY_Community 44]]
+- 1 edge to [[_COMMUNITY_Community 203]]
 
 ## Top bridge nodes
-- [[.test_collaborator_access_not_configured_user_id_leakage_is_redacted_json()]] - degree 4, connects to 3 communities
+- [[.get_summary()]] - degree 3, connects to 1 community
+- [[.to_dict()_3]] - degree 2, connects to 1 community

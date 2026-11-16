@@ -16,7 +16,7 @@ tags:
 - [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
 - [[Exception]] - `inherits` [EXTRACTED]
 - [[IntelReportStore_1]] - `uses` [INFERRED]
-- [[Path_31]] - `uses` [INFERRED]
+- [[Path_34]] - `uses` [INFERRED]
 - [[Raised when a loaded report fails its hash integrity check.]] - `rationale_for` [EXTRACTED]
 - [[TestCompetitiveIntelReportSchema]] - `uses` [INFERRED]
 - [[TestIntelReportHashIntegrity]] - `uses` [INFERRED]

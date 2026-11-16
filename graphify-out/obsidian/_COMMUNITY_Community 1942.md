@@ -1,20 +1,23 @@
 ---
 type: community
-members: 7
+members: 10
 ---
 
 # Community 1942
 
-**Members:** 7 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[.test_blocked_entries()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_failed_entries()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_filter_by_agent()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_filter_by_server()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_filter_by_tool()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_generate_report()]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestAuditQueries]] - code - gateway/tests/test_mcp_proxy.py
+- [[Claude Code (PRIMARY developer configuration)]] - concept - .llm_settings/docs/AI_TOOLS_CONFIGURATION_GUIDE.md
+- [[Governance & risk doctrine (ITIL v4, ISO 200009001, NIST CSF)]] - concept - .llm_settings/scripts/CLAUDE.md
+- [[LLM Operating Context — Isaiah Jefferson_1]] - concept - .llm_settings/scripts/CLAUDE.md
+- [[Normalized domain glossary (BESS, DAS, FODL, PKEOKE, FOD)]] - concept - .llm_settings/scripts/CLAUDE.md
+- [[Plan Mode as default permission mode]] - concept - .llm_settings/docs/Claude-Code-TDD-Playbook.md
+- [[Pre-change analysis protocol (CHANGE PROPOSAL, Section 15)]] - concept - .llm_settings/scripts/CLAUDE.md
+- [[Pre-change analysis protocol (Codex CHANGE PROPOSAL)]] - concept - .llm_settings/scripts/AGENTS.md
+- [[Warn-first hook strategy (PreToolUsePostToolUse)]] - rationale - .llm_settings/docs/Claude-Code-TDD-Playbook.md
+- [[Zabbix MCP server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
+- [[llm-init.sh — project-level multi-tool config deployment]] - concept - .llm_settings/scripts/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,13 +27,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 64]]
-- 3 edges to [[_COMMUNITY_Community 54]]
-- 1 edge to [[_COMMUNITY_Community 184]]
-- 1 edge to [[_COMMUNITY_Community 2038]]
-- 1 edge to [[_COMMUNITY_Community 132]]
-- 1 edge to [[_COMMUNITY_Community 59]]
-- 1 edge to [[_COMMUNITY_Community 329]]
+- 1 edge to [[_COMMUNITY_Community 2180]]
+- 1 edge to [[_COMMUNITY_Community 742]]
+- 1 edge to [[_COMMUNITY_Community 2188]]
 
 ## Top bridge nodes
-- [[TestAuditQueries]] - degree 20, connects to 7 communities
+- [[Claude Code (PRIMARY developer configuration)]] - degree 4, connects to 2 communities
+- [[Normalized domain glossary (BESS, DAS, FODL, PKEOKE, FOD)]] - degree 3, connects to 1 community

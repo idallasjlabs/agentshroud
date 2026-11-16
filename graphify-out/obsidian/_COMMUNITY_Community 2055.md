@@ -1,19 +1,20 @@
 ---
 type: community
-members: 6
+members: 7
 ---
 
 # Community 2055
 
-**Members:** 6 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[L4 CSP Allows `unsafe-inline` for Scripts and Styles]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[L5 WebSocket Token in Query String]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[L6 Auto-Refresh via JavaScript on Root Page]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[L7 Dead Code After Return in webhook_receiver.py]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[L8 `python-jose` Dependency Has Known CVEs]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[LOW — Informational]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[.test_allowed_tool()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_denied_in_monitor_still_allows()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_denied_tool_cronjob()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_denied_tool_delegate_task()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_denied_tool_memory()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_denied_tool_send_message()]] - code - gateway/tests/test_subagent_governance.py
+- [[TestToolAuthorization]] - code - gateway/tests/test_subagent_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +24,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 354]]
+- 3 edges to [[_COMMUNITY_Community 1209]]
+- 2 edges to [[_COMMUNITY_Community 1360]]
+- 1 edge to [[_COMMUNITY_Community 1343]]
 
 ## Top bridge nodes
-- [[LOW — Informational]] - degree 6, connects to 1 community
+- [[TestToolAuthorization]] - degree 12, connects to 3 communities

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_memory_provider_error_with_explicit_memory_command_keeps_memory_guidance()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Explicit memory-search command context should keep memory-specific remediation t]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_long_outbound_message_quarantined()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Blocked outbound messages should be stored in outbound quarantine.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 626]]
-- 1 edge to [[_COMMUNITY_Community 2]]
 - 1 edge to [[_COMMUNITY_Community 845]]
+- 1 edge to [[_COMMUNITY_Community 2]]
+- 1 edge to [[_COMMUNITY_Community 626]]
 
 ## Top bridge nodes
-- [[.test_memory_provider_error_with_explicit_memory_command_keeps_memory_guidance()]] - degree 4, connects to 3 communities
+- [[.test_long_outbound_message_quarantined()]] - degree 4, connects to 3 communities

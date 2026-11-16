@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "Community 24"
-location: "L30"
+community: "Community 80"
+location: "L31"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_24
+  - community/Community_80
 ---
 
 # InstructionEnvelope
@@ -27,6 +27,7 @@ tags:
 - [[TestInboundPIIOwnerExemption]] - `uses` [INFERRED]
 - [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
+- [[TestPIIBlockModeInPipeline]] - `uses` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
@@ -34,5 +35,6 @@ tags:
 - [[instruction_envelope.py]] - `contains` [EXTRACTED]
 - [[test_instruction_envelope.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
+- [[unwrap_untrusted()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_24
+#graphify/code #graphify/INFERRED #community/Community_80

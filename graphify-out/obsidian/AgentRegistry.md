@@ -12,9 +12,9 @@ tags:
 # AgentRegistry
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_51]] - `method` [EXTRACTED]
-- [[.__init__()_52]] - `references` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_66]] - `method` [EXTRACTED]
+- [[.__init__()_67]] - `references` [EXTRACTED]
 - [[.from_dict()_3]] - `method` [EXTRACTED]
 - [[.get()_3]] - `method` [EXTRACTED]
 - [[.list_agents()]] - `method` [EXTRACTED]
@@ -47,7 +47,7 @@ tags:
 - [[.to_dict()_4]] - `method` [EXTRACTED]
 - [[.unregister()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[ContainerConfig_1]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]

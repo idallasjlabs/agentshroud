@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "Community 21"
+community: "Community 17"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_21
+  - community/Community_17
 ---
 
 # EgressAction
 
 ## Connections
-- [[._record()_1]] - `references` [EXTRACTED]
+- [[._record()_2]] - `references` [EXTRACTED]
 - [[EgressFilter_2]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[Enum]] - `inherits` [EXTRACTED]
@@ -35,7 +35,7 @@ tags:
 - [[TestIPRules]] - `uses` [INFERRED]
 - [[TestInteractiveApproval]] - `uses` [INFERRED]
 - [[TestLogging]] - `uses` [INFERRED]
-- [[TestMonitorMode]] - `uses` [INFERRED]
+- [[TestMonitorMode_2]] - `uses` [INFERRED]
 - [[TestOpenClawResearchDomainsAllowlisted]] - `uses` [INFERRED]
 - [[TestPerAgentPolicy]] - `uses` [INFERRED]
 - [[TestPromptGuard_1]] - `uses` [INFERRED]
@@ -58,4 +58,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_21
+#graphify/code #graphify/INFERRED #community/Community_17

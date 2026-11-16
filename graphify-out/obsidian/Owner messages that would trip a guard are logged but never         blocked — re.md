@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "Community 24"
+community: "Community 531"
 location: "L897"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/Community_531
 ---
 
 # Owner messages that would trip a guard are logged but never         blocked — re
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_owner_exempted_block_does_not_decay_trust()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_24
+#graphify/rationale #graphify/EXTRACTED #community/Community_531

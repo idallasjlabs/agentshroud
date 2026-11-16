@@ -12,7 +12,7 @@ tags:
 # MCPAuditTrail
 
 ## Connections
-- [[.__init__()_25]] - `method` [EXTRACTED]
+- [[.__init__()_40]] - `method` [EXTRACTED]
 - [[.__len__()]] - `method` [EXTRACTED]
 - [[._compute_chain_hash()]] - `method` [EXTRACTED]
 - [[.entries()]] - `method` [EXTRACTED]
@@ -35,11 +35,11 @@ tags:
 - [[.test_window_capped_at_max_entries()]] - `calls` [EXTRACTED]
 - [[.total_appended()]] - `method` [EXTRACTED]
 - [[.verify_chain()]] - `method` [EXTRACTED]
-- [[Any_18]] - `uses` [INFERRED]
+- [[Any_28]] - `uses` [INFERRED]
 - [[Audit trail for MCP tool calls, integrated with SHA-256 hash chain.]] - `rationale_for` [EXTRACTED]
 - [[AuditChain]] - `semantically_similar_to` [INFERRED]
 - [[ConnectionPool]] - `uses` [INFERRED]
-- [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
 - [[Exception_4]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
@@ -94,7 +94,7 @@ tags:
 - [[TestStdioConnection]] - `uses` [INFERRED]
 - [[TestSuspiciousEncoding]] - `uses` [INFERRED]
 - [[TestThreatLevelCalc]] - `uses` [INFERRED]
-- [[__init__.py_7]] - `imports` [EXTRACTED]
+- [[__init__.py_8]] - `imports` [EXTRACTED]
 - [[audit()]] - `calls` [EXTRACTED]
 - [[make_proxy()_1]] - `calls` [EXTRACTED]
 - [[mcp_audit.py]] - `contains` [EXTRACTED]

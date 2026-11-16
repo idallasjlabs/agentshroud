@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Community 102"
-location: "L66"
+community: "Community 6"
+location: "L187"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_102
+  - graphify/INFERRED
+  - community/Community_6
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()_3]] - `references` [EXTRACTED]
-- [[get_fim_events()]] - `references` [EXTRACTED]
-- [[get_rootkit_events()]] - `references` [EXTRACTED]
-- [[parse_alert()_1]] - `references` [EXTRACTED]
-- [[read_alerts()_1]] - `references` [EXTRACTED]
+- [[.check_permission()]] - `references` [EXTRACTED]
+- [[.get_user_permissions_summary()]] - `references` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_102
+#graphify/code #graphify/INFERRED #community/Community_6

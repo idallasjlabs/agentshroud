@@ -12,7 +12,7 @@ tags:
 # ReportStore
 
 ## Connections
-- [[.__init__()_113]] - `method` [EXTRACTED]
+- [[.__init__()_128]] - `method` [EXTRACTED]
 - [[._check_size()]] - `method` [EXTRACTED]
 - [[._enforce_count_cap()]] - `method` [EXTRACTED]
 - [[._path()]] - `method` [EXTRACTED]
@@ -47,7 +47,7 @@ tags:
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[report_store.py]] - `contains` [EXTRACTED]
-- [[store()_2]] - `calls` [EXTRACTED]
+- [[store()_3]] - `calls` [EXTRACTED]
 - [[test_report_store.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_110

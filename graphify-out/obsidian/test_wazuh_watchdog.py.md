@@ -16,7 +16,7 @@ tags:
 - [[TestWatchdogBehaviour]] - `contains` [EXTRACTED]
 - [[TestWatchdogWiring]] - `contains` [EXTRACTED]
 - [[_all()]] - `contains` [EXTRACTED]
-- [[_run()_3]] - `contains` [EXTRACTED]
+- [[_run()_4]] - `contains` [EXTRACTED]
 - [[_run_4b()]] - `contains` [EXTRACTED]
 - [[_step_4b()]] - `contains` [EXTRACTED]
 

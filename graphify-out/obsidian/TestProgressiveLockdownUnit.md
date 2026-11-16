@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
 community: "Community 75"
-location: "L97"
+location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -23,7 +23,8 @@ tags:
 - [[.test_reset_removes_suspended_state()]] - `method` [EXTRACTED]
 - [[.test_reset_true_for_known_user()]] - `method` [EXTRACTED]
 - [[.test_suspended_level_at_10_blocks()]] - `method` [EXTRACTED]
-- [[LockdownLevel]] - `uses` [INFERRED]
+- [[FalcoAlertWatcher]] - `uses` [INFERRED]
+- [[LockdownLevel_1]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]

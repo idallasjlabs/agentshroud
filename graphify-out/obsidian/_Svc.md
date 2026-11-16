@@ -12,9 +12,10 @@ tags:
 # _Svc
 
 ## Connections
-- [[.__init__()_190]] - `method` [EXTRACTED]
+- [[.__init__()_215]] - `method` [EXTRACTED]
 - [[.model_dump()]] - `method` [EXTRACTED]
 - [[ApprovalMode]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
 - [[test_health_healthy_and_degraded()]] - `calls` [EXTRACTED]
 - [[test_list_services_and_bot_filter()]] - `calls` [EXTRACTED]

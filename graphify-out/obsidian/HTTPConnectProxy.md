@@ -12,7 +12,7 @@ tags:
 # HTTPConnectProxy
 
 ## Connections
-- [[.__init__()_23]] - `method` [EXTRACTED]
+- [[.__init__()_38]] - `method` [EXTRACTED]
 - [[._agent_id_for_peer()]] - `method` [EXTRACTED]
 - [[._clamav_scan_bytes()]] - `method` [EXTRACTED]
 - [[._handle_client()]] - `method` [EXTRACTED]

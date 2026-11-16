@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "Community 24"
+community: "Community 531"
 location: "L938"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/Community_531
 ---
 
 # No trust_manager configured — the hook must no-op, not crash the         request
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_missing_trust_manager_does_not_raise()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_24
+#graphify/rationale #graphify/EXTRACTED #community/Community_531

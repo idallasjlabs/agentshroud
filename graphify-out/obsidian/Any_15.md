@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/proxy/mcp_audit.py"
+source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "Community 184"
-location: "L93"
+community: "Community 229"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_184
+  - community/Community_229
 ---
 
 # Any
 
 ## Connections
-- [[.generate_report()]] - `references` [EXTRACTED]
-- [[.log_tool_call()]] - `references` [EXTRACTED]
+- [[.__call__()_1]] - `references` [EXTRACTED]
+- [[.__init__()_24]] - `references` [EXTRACTED]
+- [[._clean_tool()]] - `references` [EXTRACTED]
+- [[._coerce()]] - `references` [EXTRACTED]
+- [[._handle()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_184
+#graphify/code #graphify/EXTRACTED #community/Community_229

@@ -12,8 +12,8 @@ tags:
 # _FakeFetcher
 
 ## Connections
-- [[.__call__()_6]] - `method` [EXTRACTED]
-- [[.__init__()_165]] - `method` [EXTRACTED]
+- [[.__call__()_9]] - `method` [EXTRACTED]
+- [[.__init__()_186]] - `method` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[FetchOutcome]] - `uses` [INFERRED]
 - [[_inject_fetcher()]] - `calls` [EXTRACTED]

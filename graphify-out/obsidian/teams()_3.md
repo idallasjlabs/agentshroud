@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "Community 33"
+community: "Community 194"
 location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_33
+  - community/Community_194
 ---
 
 # teams()
@@ -15,4 +15,4 @@ tags:
 - [[TeamsConfig]] - `calls` [EXTRACTED]
 - [[test_group_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_33
+#graphify/code #graphify/EXTRACTED #community/Community_194

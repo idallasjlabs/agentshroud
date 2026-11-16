@@ -12,8 +12,8 @@ tags:
 # _DummyTargetWriter
 
 ## Connections
-- [[.__init__()_163]] - `method` [EXTRACTED]
-- [[.close()_17]] - `method` [EXTRACTED]
+- [[.__init__()_184]] - `method` [EXTRACTED]
+- [[.close()_19]] - `method` [EXTRACTED]
 - [[.drain()_3]] - `method` [EXTRACTED]
 - [[.write()_3]] - `method` [EXTRACTED]
 - [[HTTPConnectProxy]] - `uses` [INFERRED]

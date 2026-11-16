@@ -1,15 +1,16 @@
 ---
 type: community
-members: 2
+members: 3
 ---
 
 # Community 2340
 
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[.test_protected_content_loading()]] - code - gateway/tests/test_prompt_protection.py
-- [[Test loading protected content from files.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Required Tags (All Resources)_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Tag Audit Process_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Tagging Standard_6]] - document - docker/config/hermes/skills/i-aws/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,8 +20,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 532]]
-- 1 edge to [[_COMMUNITY_Community 351]]
+- 1 edge to [[_COMMUNITY_Community 494]]
 
 ## Top bridge nodes
-- [[.test_protected_content_loading()]] - degree 3, connects to 2 communities
+- [[Tagging Standard_6]] - degree 3, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "Community 108"
+community: "Community 30"
 location: "L240"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_108
+  - community/Community_30
 ---
 
 # TestAutoExpire
@@ -21,4 +21,4 @@ tags:
 - [[Auto-expire old requests.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_stress.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_108
+#graphify/code #graphify/INFERRED #community/Community_30

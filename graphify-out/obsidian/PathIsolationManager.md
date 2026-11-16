@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "Community 72"
+community: "Community 26"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_26
 ---
 
 # PathIsolationManager
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_106]] - `method` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_121]] - `method` [EXTRACTED]
 - [[._apply_path_rewriting()]] - `method` [EXTRACTED]
 - [[._check_cross_user_access()]] - `method` [EXTRACTED]
 - [[._cleanup_user_directory()]] - `method` [EXTRACTED]
@@ -32,7 +32,7 @@ tags:
 - [[.rewrite_path()]] - `method` [EXTRACTED]
 - [[.test_path_isolation_instantiates()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[Manages per-user path isolation for temporary files and directories.]] - `rationale_for` [EXTRACTED]
@@ -57,4 +57,4 @@ tags:
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_path_isolation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/Community_26

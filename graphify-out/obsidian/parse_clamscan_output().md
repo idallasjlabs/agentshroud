@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "Community 148"
+community: "Community 220"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_148
+  - community/Community_220
 ---
 
 # parse_clamscan_output()
@@ -23,7 +23,7 @@ tags:
 - [[.test_parse_signatures()]] - `calls` [EXTRACTED]
 - [[.test_summary_clean()_1]] - `calls` [EXTRACTED]
 - [[.test_summary_infected()]] - `calls` [EXTRACTED]
-- [[Any_34]] - `references` [EXTRACTED]
+- [[Any_44]] - `references` [EXTRACTED]
 - [[Parse clamscan output into structured results.      Args         output Raw st]] - `rationale_for` [EXTRACTED]
 - [[clamav_scanner.py]] - `contains` [EXTRACTED]
 - [[run_clamscan()]] - `calls` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_148
+#graphify/code #graphify/EXTRACTED #community/Community_220

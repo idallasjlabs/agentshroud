@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "Community 488"
-location: "L698"
+community: "Community 1023"
+location: "L914"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_488
+  - community/Community_1023
 ---
 
 # test_main_entrypoint_runs_cli_group()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_488
+#graphify/code #graphify/EXTRACTED #community/Community_1023

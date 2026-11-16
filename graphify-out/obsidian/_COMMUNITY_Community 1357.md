@@ -1,23 +1,26 @@
 ---
 type: community
-members: 10
+members: 13
 ---
 
 # Community 1357
 
-**Members:** 10 nodes
+**Members:** 13 nodes
 
 ## Members
-- [[1. Summary line_6]] - document - reports/upgrade-2026-10-12.md
-- [[2. Environment mapping_6]] - document - reports/upgrade-2026-10-12.md
-- [[3. Upgrade table_4]] - document - reports/upgrade-2026-10-12.md
-- [[4. Security findings_6]] - document - reports/upgrade-2026-10-12.md
-- [[5. Verification evidence_7]] - document - reports/upgrade-2026-10-12.md
-- [[6. Breaking changes  needs human]] - document - reports/upgrade-2026-10-12.md
-- [[7. Rollback instructions_5]] - document - reports/upgrade-2026-10-12.md
-- [[8. Time spent_5]] - document - reports/upgrade-2026-10-12.md
-- [[Coverage gateway-side mitigation (owner directive — vendor patch is not the finish line)]] - document - reports/upgrade-2026-10-12.md
-- [[Sunday Upgrade 2026-10-12 — DEV run (on-demand, owner-requested pipeline-hardening exercise)]] - document - reports/upgrade-2026-10-12.md
+- [[Competitive Intelligence Protocol]] - document - docker/config/hermes/agents/openclaw-identity.md
+- [[Competitive Intelligence Protocol_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
+- [[IDENTITY.md - Who I Am]] - document - docker/config/hermes/agents/openclaw-identity.md
+- [[IDENTITY.md - Who I Am_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
+- [[My Owner]] - document - docker/config/hermes/agents/openclaw-identity.md
+- [[My Owner_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
+- [[My Responsibilities]] - document - docker/config/hermes/agents/openclaw-identity.md
+- [[My Responsibilities_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
+- [[My Role]] - document - docker/config/hermes/agents/openclaw-identity.md
+- [[My Role_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
+- [[Responsibilities]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[openclaw-identity]] - document - docker/config/hermes/agents/openclaw-identity.md
+- [[openclaw-identity_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +30,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 139]]
+- 1 edge to [[_COMMUNITY_Community 339]]
+- 1 edge to [[_COMMUNITY_Community 766]]
 
 ## Top bridge nodes
-- [[Sunday Upgrade 2026-10-12 — DEV run (on-demand, owner-requested pipeline-hardening exercise)]] - degree 9, connects to 1 community
+- [[Competitive Intelligence Protocol_1]] - degree 3, connects to 1 community
+- [[Responsibilities]] - degree 2, connects to 1 community

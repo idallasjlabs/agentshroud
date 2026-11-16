@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Background mtime-poll watcher reload the config when the file changes.      Pol]] - `rationale_for` [EXTRACTED]
 - [[GatewayConfig_1]] - `references` [EXTRACTED]
-- [[Path_1]] - `references` [EXTRACTED]
+- [[Path_3]] - `references` [EXTRACTED]
 - [[config.py]] - `contains` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]

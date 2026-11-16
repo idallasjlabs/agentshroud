@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_session_lock_error_is_sanitized_for_users()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Internal session lock errors should be rewritten to safe user guidance.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_proxy_request_suppresses_duplicate_starting_notice()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Starting notices should be deduplicated in cooldown window.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 626]]
-- 1 edge to [[_COMMUNITY_Community 2]]
 - 1 edge to [[_COMMUNITY_Community 845]]
+- 1 edge to [[_COMMUNITY_Community 2]]
+- 1 edge to [[_COMMUNITY_Community 626]]
 
 ## Top bridge nodes
-- [[.test_session_lock_error_is_sanitized_for_users()]] - degree 4, connects to 3 communities
+- [[.test_proxy_request_suppresses_duplicate_starting_notice()]] - degree 4, connects to 3 communities

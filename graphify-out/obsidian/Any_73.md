@@ -1,22 +1,24 @@
 ---
-source_file: "gateway/tools/agentshroud_manager.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "Community 66"
-location: "L68"
+community: "Community 28"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_66
+  - community/Community_28
 ---
 
 # Any
 
 ## Connections
-- [[check_current_version()]] - `references` [EXTRACTED]
-- [[downgrade()]] - `references` [EXTRACTED]
-- [[list_versions()]] - `references` [EXTRACTED]
-- [[rollback()]] - `references` [EXTRACTED]
-- [[security_review()]] - `references` [EXTRACTED]
-- [[upgrade()]] - `references` [EXTRACTED]
+- [[.__init__()_139]] - `references` [EXTRACTED]
+- [[._extract_dict_content()]] - `references` [EXTRACTED]
+- [[._extract_scannable_content()]] - `references` [EXTRACTED]
+- [[._reconstruct_result()]] - `references` [EXTRACTED]
+- [[.sanitize_tool_result()]] - `references` [EXTRACTED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[RedactionResult]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_66
+#graphify/code #graphify/EXTRACTED #community/Community_28

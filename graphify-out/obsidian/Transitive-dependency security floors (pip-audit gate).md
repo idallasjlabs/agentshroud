@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/requirements.txt"
 type: "rationale"
-community: "Community 139"
+community: "Community 118"
 location: "L17-L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/Community_118
 ---
 
 # Transitive-dependency security floors (pip-audit gate)
@@ -15,4 +15,4 @@ tags:
 - [[Two-arm CVE remediation (vendor fix + AgentShroud gateway control)]] - `conceptually_related_to` [INFERRED]
 - [[gatewayrequirements.txt]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_139
+#graphify/rationale #graphify/EXTRACTED #community/Community_118

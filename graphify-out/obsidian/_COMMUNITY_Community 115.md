@@ -1,37 +1,54 @@
 ---
 type: community
-members: 24
+members: 41
 ---
 
 # Community 115
 
-**Members:** 24 nodes
+**Members:** 41 nodes
 
 ## Members
-- [[._add_disclosure_event()]] - code - gateway/security/multi_turn_tracker.py
-- [[._analyze_agent_response()]] - code - gateway/security/multi_turn_tracker.py
-- [[._analyze_user_message()]] - code - gateway/security/multi_turn_tracker.py
-- [[._check_thresholds()]] - code - gateway/security/multi_turn_tracker.py
-- [[._cleanup_old_sessions()]] - code - gateway/security/multi_turn_tracker.py
-- [[._normalize_query()]] - code - gateway/security/multi_turn_tracker.py
-- [[._score_message_patterns()]] - code - gateway/security/multi_turn_tracker.py
-- [[._score_response_patterns()]] - code - gateway/security/multi_turn_tracker.py
-- [[._trigger_alert()]] - code - gateway/security/multi_turn_tracker.py
-- [[.track_message()]] - code - gateway/security/multi_turn_tracker.py
-- [[A single disclosure event in a session.]] - rationale - gateway/security/multi_turn_tracker.py
-- [[Add a disclosure event to the session.]] - rationale - gateway/security/multi_turn_tracker.py
-- [[Analyze agent response for potential information leaks.]] - rationale - gateway/security/multi_turn_tracker.py
-- [[Analyze user message for disclosure patterns.]] - rationale - gateway/security/multi_turn_tracker.py
-- [[Check session score against thresholds and take action.]] - rationale - gateway/security/multi_turn_tracker.py
-- [[Context tracking for a single session.]] - rationale - gateway/security/multi_turn_tracker.py
-- [[DisclosureEvent]] - code - gateway/security/multi_turn_tracker.py
-- [[Normalize query for repeated query detection.]] - rationale - gateway/security/multi_turn_tracker.py
-- [[Remove old sessions to prevent memory bloat.]] - rationale - gateway/security/multi_turn_tracker.py
-- [[Score agent response for potential leaks.]] - rationale - gateway/security/multi_turn_tracker.py
-- [[Score message based on disclosure patterns.]] - rationale - gateway/security/multi_turn_tracker.py
-- [[SessionContext_1]] - code - gateway/security/multi_turn_tracker.py
-- [[Track a message and response pair for disclosure analysis.          Args]] - rationale - gateway/security/multi_turn_tracker.py
-- [[Trigger alert callbacks.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[.check_vram_headroom()]] - code - gateway/security/resource_guard.py
+- [[.test_cleanup_keeps_fresh_agents()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_cleanup_removes_stale_agents()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_cleanup_tolerates_missing_file()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_cleanup_unlinks_existing_and_clears_registry()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_cpu_limit_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_cpu_limit_fails_closed_on_psutil_error()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_cpu_limit_ok_when_under()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_disabled_when_threshold_zero()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_disk_write_limit_allows_when_no_baseline()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_disk_write_limit_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_disk_write_limit_under_threshold()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_get_resource_guard_is_lazy_singleton()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_get_usage_stats_for_agent()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_get_usage_stats_system_wide()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_memory_limit_fails_closed_on_error()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_memory_limit_ok_and_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_passes_with_sufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_register_blocks_over_limit()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_register_under_limit()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_rejects_insufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_start_request_tracking_records_baseline()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_start_request_tracking_survives_psutil_error()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[Current resource usage metrics.]] - rationale - gateway/security/resource_guard.py
+- [[Get the global resource guard instance, creating it lazily on first call.]] - rationale - gateway/security/resource_guard.py
+- [[Pre-flight VRAM headroom check before dispatching a long-context local-model cal]] - rationale - gateway/security/resource_guard.py
+- [[Raised when a local-model call is rejected because estimated VRAM usage     woul]] - rationale - gateway/security/resource_guard.py
+- [[ResourceUsage]] - code - gateway/security/resource_guard.py
+- [[TestCpuMemoryDiskLimits]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestExpiredUsageCleanup]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestGlobalAccessor]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestTempFiles]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestUsageStatsAndTracking]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestVramHeadroom]] - code - gateway/tests/test_resource_guard_limits.py
+- [[VRAMHeadroomError]] - code - gateway/security/resource_guard.py
+- [[VRAMHeadroomError must be a distinct exception, not a subclass of ResourceWarnin]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[get_resource_guard()]] - code - gateway/security/resource_guard.py
+- [[guard()_3]] - code - gateway/tests/test_resource_guard_limits.py
+- [[resource_guard.py]] - code - gateway/security/resource_guard.py
+- [[test_resource_guard_limits.py]] - code - gateway/tests/test_resource_guard_limits.py
+- [[test_vram_headroom_error_is_not_resource_warning()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,13 +58,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 72]]
-- 4 edges to [[_COMMUNITY_Community 8]]
-- 1 edge to [[_COMMUNITY_Community 344]]
+- 12 edges to [[_COMMUNITY_Community 5]]
+- 10 edges to [[_COMMUNITY_Community 532]]
+- 2 edges to [[_COMMUNITY_Community 68]]
+- 2 edges to [[_COMMUNITY_Community 112]]
+- 2 edges to [[_COMMUNITY_Community 208]]
+- 1 edge to [[_COMMUNITY_Community 2048]]
+- 1 edge to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 185]]
+- 1 edge to [[_COMMUNITY_Community 146]]
+- 1 edge to [[_COMMUNITY_Community 2099]]
+- 1 edge to [[_COMMUNITY_Community 2005]]
 
 ## Top bridge nodes
-- [[SessionContext_1]] - degree 11, connects to 2 communities
-- [[._add_disclosure_event()]] - degree 8, connects to 2 communities
-- [[._trigger_alert()]] - degree 5, connects to 2 communities
-- [[.track_message()]] - degree 7, connects to 1 community
-- [[._analyze_user_message()]] - degree 7, connects to 1 community
+- [[VRAMHeadroomError]] - degree 17, connects to 5 communities
+- [[resource_guard.py]] - degree 10, connects to 5 communities
+- [[test_resource_guard_limits.py]] - degree 12, connects to 2 communities
+- [[TestCpuMemoryDiskLimits]] - degree 12, connects to 2 communities
+- [[TestTempFiles]] - degree 8, connects to 2 communities

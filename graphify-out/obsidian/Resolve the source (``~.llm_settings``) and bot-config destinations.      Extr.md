@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Community 2017"
-location: "L947"
+community: "Community 49"
+location: "L974"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2017
+  - community/Community_49
 ---
 
 # Resolve the source (``~/.llm_settings/``) and bot-config destinations.      Extr
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_skills_reload_paths()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2017
+#graphify/rationale #graphify/EXTRACTED #community/Community_49

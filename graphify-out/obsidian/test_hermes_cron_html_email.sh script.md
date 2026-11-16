@@ -12,7 +12,7 @@ tags:
 # test_hermes_cron_html_email.sh script
 
 ## Connections
-- [[check()_9]] - `calls` [EXTRACTED]
+- [[check()_12]] - `calls` [EXTRACTED]
 - [[test_hermes_cron_html_email.sh]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_547

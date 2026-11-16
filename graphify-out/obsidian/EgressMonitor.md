@@ -12,15 +12,15 @@ tags:
 # EgressMonitor
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_44]] - `calls` [EXTRACTED]
-- [[.__init__()_76]] - `method` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_59]] - `calls` [EXTRACTED]
+- [[.__init__()_91]] - `method` [EXTRACTED]
 - [[.check_anomalies()]] - `method` [EXTRACTED]
 - [[.daily_summary()]] - `method` [EXTRACTED]
 - [[.get_events()_2]] - `method` [EXTRACTED]
 - [[.record()_1]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]

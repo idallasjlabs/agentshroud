@@ -1,25 +1,30 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "Community 62"
+community: "Community 85"
 location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/Community_85
 ---
 
 # make_event()
 
 ## Connections
+- [[._alert()]] - `calls` [EXTRACTED]
 - [[._emit_privacy_event()]] - `calls` [EXTRACTED]
 - [[._emit_quarantine_event()]] - `calls` [EXTRACTED]
-- [[._record()_1]] - `calls` [EXTRACTED]
+- [[._record()]] - `calls` [EXTRACTED]
+- [[._record()_2]] - `calls` [EXTRACTED]
 - [[.approve()]] - `calls` [EXTRACTED]
 - [[.check_async()]] - `calls` [EXTRACTED]
 - [[.deny()]] - `calls` [EXTRACTED]
 - [[.request_approval()]] - `calls` [EXTRACTED]
-- [[Any_6]] - `references` [EXTRACTED]
+- [[.test_edge_gateway_event_is_forwarded()]] - `calls` [EXTRACTED]
+- [[.test_fan_out_honours_edge_subscription()]] - `calls` [EXTRACTED]
+- [[.test_unmapped_gateway_event_still_dropped()]] - `calls` [EXTRACTED]
+- [[Any_16]] - `references` [EXTRACTED]
 - [[GatewayEvent]] - `references` [EXTRACTED]
 - [[Helper to create a GatewayEvent with current timestamp]] - `rationale_for` [EXTRACTED]
 - [[_alert_event()]] - `calls` [EXTRACTED]
@@ -27,6 +32,8 @@ tags:
 - [[activity_websocket()]] - `calls` [EXTRACTED]
 - [[approval.py]] - `imports` [EXTRACTED]
 - [[approval_websocket()]] - `calls` [EXTRACTED]
+- [[build_edge_service()]] - `calls` [EXTRACTED]
+- [[call_pipeline.py]] - `imports` [EXTRACTED]
 - [[dashboard.py]] - `imports` [EXTRACTED]
 - [[decide_approval()]] - `calls` [EXTRACTED]
 - [[discard_blocked_message()]] - `calls` [EXTRACTED]
@@ -45,6 +52,7 @@ tags:
 - [[receive_security_alert()]] - `calls` [EXTRACTED]
 - [[release_blocked_message()]] - `calls` [EXTRACTED]
 - [[release_blocked_outbound()]] - `calls` [EXTRACTED]
+- [[service.py]] - `imports` [EXTRACTED]
 - [[ssh_exec()]] - `calls` [EXTRACTED]
 - [[ssh_write_file()]] - `calls` [EXTRACTED]
 - [[submit_approval_request()]] - `calls` [EXTRACTED]
@@ -62,6 +70,7 @@ tags:
 - [[test_manage_soc_events_endpoint()]] - `calls` [EXTRACTED]
 - [[test_manage_soc_report_endpoint()]] - `calls` [EXTRACTED]
 - [[test_non_alert_events_ignored()]] - `calls` [EXTRACTED]
+- [[test_soc_edge.py]] - `imports` [EXTRACTED]
 - [[test_soc_egress_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_subscribe_receive_events()]] - `calls` [EXTRACTED]
 - [[test_unsubscribe_stops_events()]] - `calls` [EXTRACTED]
@@ -70,4 +79,4 @@ tags:
 - [[test_ws_egress_receives_privacy_event()]] - `calls` [EXTRACTED]
 - [[test_ws_egress_receives_scanner_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_62
+#graphify/code #graphify/EXTRACTED #community/Community_85

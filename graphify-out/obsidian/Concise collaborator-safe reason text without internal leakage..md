@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 14"
-location: "L2202"
+community: "Community 96"
+location: "L2220"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/Community_96
 ---
 
 # Concise collaborator-safe reason text without internal leakage.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._collaborator_safe_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_14
+#graphify/rationale #graphify/EXTRACTED #community/Community_96

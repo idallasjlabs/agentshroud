@@ -8,7 +8,7 @@ members: 51
 **Members:** 51 nodes
 
 ## Members
-- [[.__init__()_158]] - code - gateway/tests/test_forward_stream.py
+- [[.__init__()_179]] - code - gateway/tests/test_forward_stream.py
 - [[.process_inbound()_6]] - code - gateway/tests/test_forward_stream.py
 - [[.process_outbound()_6]] - code - gateway/tests/test_forward_stream.py
 - [[.process_outbound()_7]] - code - gateway/tests/test_forward_stream.py
@@ -68,21 +68,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 2154]]
-- 8 edges to [[_COMMUNITY_Community 325]]
+- 9 edges to [[_COMMUNITY_Community 34]]
+- 8 edges to [[_COMMUNITY_Community 2154]]
 - 5 edges to [[_COMMUNITY_Community 92]]
-- 4 edges to [[_COMMUNITY_Community 1127]]
-- 2 edges to [[_COMMUNITY_Community 707]]
+- 4 edges to [[_COMMUNITY_Community 37]]
+- 3 edges to [[_COMMUNITY_Community 7]]
 - 2 edges to [[_COMMUNITY_Community 861]]
-- 1 edge to [[_COMMUNITY_Community 152]]
-- 1 edge to [[_COMMUNITY_Community 80]]
-- 1 edge to [[_COMMUNITY_Community 34]]
-- 1 edge to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 181]]
+- 1 edge to [[_COMMUNITY_Community 2048]]
+- 1 edge to [[_COMMUNITY_Community 68]]
+- 1 edge to [[_COMMUNITY_Community 707]]
+- 1 edge to [[_COMMUNITY_Community 194]]
 
 ## Top bridge nodes
-- [[ForwardError]] - degree 16, connects to 8 communities
-- [[test_forward_stream.py]] - degree 41, connects to 3 communities
+- [[ForwardError]] - degree 16, connects to 6 communities
+- [[test_forward_stream.py]] - degree 41, connects to 4 communities
 - [[_make_stream_app_state()]] - degree 14, connects to 2 communities
 - [[_PassthroughPipeline]] - degree 12, connects to 2 communities
 - [[_BlockingPipeline]] - degree 8, connects to 2 communities

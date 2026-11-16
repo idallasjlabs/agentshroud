@@ -12,12 +12,12 @@ tags:
 # EgressMonitorConfig
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_44]] - `calls` [EXTRACTED]
-- [[.__init__()_76]] - `references` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_59]] - `calls` [EXTRACTED]
+- [[.__init__()_91]] - `references` [EXTRACTED]
 - [[.test_egress_monitor_default_enforce()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]

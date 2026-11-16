@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "Community 488"
-location: "L35"
+community: "Community 1023"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_488
+  - community/Community_1023
 ---
 
 # _default_format()
@@ -19,4 +19,4 @@ tags:
 - [[main.py_1]] - `contains` [EXTRACTED]
 - [[test_cli_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_488
+#graphify/code #graphify/EXTRACTED #community/Community_1023

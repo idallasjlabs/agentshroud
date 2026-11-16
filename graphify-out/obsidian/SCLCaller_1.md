@@ -2,7 +2,7 @@
 source_file: "gateway/soc/router.py"
 type: "code"
 community: "Community 10"
-location: "L58"
+location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -19,7 +19,10 @@ tags:
 - [[SCLConfirmationRequired]] - `uses` [INFERRED]
 - [[SCLInterface]] - `uses` [INFERRED]
 - [[ServiceManager]] - `uses` [INFERRED]
+- [[_decide_approval()]] - `references` [EXTRACTED]
 - [[_log_audit()]] - `references` [EXTRACTED]
+- [[_require_edge_owner()]] - `references` [EXTRACTED]
+- [[_run_killswitch()]] - `references` [EXTRACTED]
 - [[acknowledge_config_integrity()]] - `references` [EXTRACTED]
 - [[add_collaborator()_1]] - `references` [EXTRACTED]
 - [[add_group_member()_1]] - `references` [EXTRACTED]
@@ -32,11 +35,15 @@ tags:
 - [[delete_group()]] - `references` [EXTRACTED]
 - [[deny_egress()]] - `references` [EXTRACTED]
 - [[deny_request()]] - `references` [EXTRACTED]
+- [[edge_enroll()_1]] - `references` [EXTRACTED]
+- [[edge_kill()_1]] - `references` [EXTRACTED]
+- [[edge_unkill()_1]] - `references` [EXTRACTED]
 - [[emergency_block_egress()]] - `references` [EXTRACTED]
 - [[export_audit()]] - `references` [EXTRACTED]
 - [[get_agent_cves()]] - `references` [EXTRACTED]
 - [[get_collaborator_activity()]] - `references` [EXTRACTED]
 - [[get_config()]] - `references` [EXTRACTED]
+- [[get_edge_status()]] - `references` [EXTRACTED]
 - [[get_egress_history()]] - `references` [EXTRACTED]
 - [[get_egress_log()]] - `references` [EXTRACTED]
 - [[get_egress_pending()_1]] - `references` [EXTRACTED]
@@ -66,6 +73,7 @@ tags:
 - [[killswitch_disconnect()]] - `references` [EXTRACTED]
 - [[killswitch_freeze()]] - `references` [EXTRACTED]
 - [[killswitch_shutdown()]] - `references` [EXTRACTED]
+- [[list_agents()_1]] - `references` [EXTRACTED]
 - [[list_bots()]] - `references` [EXTRACTED]
 - [[list_delegations()]] - `references` [EXTRACTED]
 - [[list_groups()]] - `references` [EXTRACTED]

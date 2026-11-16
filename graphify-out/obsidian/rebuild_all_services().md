@@ -2,7 +2,7 @@
 source_file: "gateway/soc/router.py"
 type: "code"
 community: "Community 10"
-location: "L708"
+location: "L709"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # rebuild_all_services()
 
 ## Connections
-- [[JSONResponse]] - `references` [EXTRACTED]
+- [[JSONResponse_1]] - `references` [EXTRACTED]
 - [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[ServiceActionRequest]] - `references` [EXTRACTED]
 - [[_confirmation_required()]] - `calls` [EXTRACTED]

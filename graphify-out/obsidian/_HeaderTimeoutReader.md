@@ -12,7 +12,7 @@ tags:
 # _HeaderTimeoutReader
 
 ## Connections
-- [[.__init__()_162]] - `method` [EXTRACTED]
+- [[.__init__()_183]] - `method` [EXTRACTED]
 - [[.readline()_1]] - `method` [EXTRACTED]
 - [[First readline returns the request line; the next stalls.]] - `rationale_for` [EXTRACTED]
 - [[HTTPConnectProxy]] - `uses` [INFERRED]

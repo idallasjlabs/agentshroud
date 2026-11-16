@@ -12,7 +12,7 @@ tags:
 # HeuristicClassifier
 
 ## Connections
-- [[.__init__()_85]] - `method` [EXTRACTED]
+- [[.__init__()_100]] - `method` [EXTRACTED]
 - [[._classify_heuristic()]] - `method` [EXTRACTED]
 - [[._classify_ml()]] - `method` [EXTRACTED]
 - [[._compute_unicode_anomaly()]] - `method` [EXTRACTED]
@@ -20,6 +20,9 @@ tags:
 - [[._try_load_model()]] - `method` [EXTRACTED]
 - [[.classify()]] - `method` [EXTRACTED]
 - [[.setup_method()_6]] - `calls` [EXTRACTED]
+- [[Any_13]] - `uses` [INFERRED]
+- [[EdgeService]] - `uses` [INFERRED]
+- [[EdgeStore_3]] - `uses` [INFERRED]
 - [[Heuristic injection classifier using multi-signal analysis.      Scoring approac]] - `rationale_for` [EXTRACTED]
 - [[HeuristicClassifier_1]] - `uses` [INFERRED]
 - [[PromptGuard_1]] - `uses` [INFERRED]
@@ -33,9 +36,12 @@ tags:
 - [[TestPersonaHijack]] - `uses` [INFERRED]
 - [[TestPromptExtraction]] - `uses` [INFERRED]
 - [[TestPromptGuardDirectly]] - `uses` [INFERRED]
+- [[VendorProfile_3]] - `uses` [INFERRED]
+- [[build_edge_service()]] - `calls` [EXTRACTED]
 - [[heuristic_classifier.py]] - `contains` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
+- [[service.py]] - `imports` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `imports` [EXTRACTED]
 - [[test_heuristic_classifier.py]] - `imports` [EXTRACTED]
 
