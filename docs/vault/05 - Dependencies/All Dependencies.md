@@ -66,7 +66,6 @@ status: documented
 |---------|---------|---------|
 | `pytest` | ≥8.0.0,<9.0 | Test runner |
 | `pytest-asyncio` | ≥0.24.0,<1.0 | Async test support |
-| `eval-type-backport` | ≥0.2.0 | Python <3.10 compatibility |
 
 ---
 
