@@ -67,13 +67,6 @@ class Platform(str, Enum):
     SYSTEM = "system"
 
 
-class AlarmStatus(str, Enum):
-    TRIGGERED = "triggered"
-    ACKNOWLEDGED = "acknowledged"
-    RESOLVED = "resolved"
-    ARCHIVED = "archived"
-
-
 class AuditResult(str, Enum):
     SUCCESS = "success"
     DENIED = "denied"
@@ -196,22 +189,6 @@ class ContributorRecord(BaseModel):
 # ---------------------------------------------------------------------------
 # Alarm
 # ---------------------------------------------------------------------------
-
-
-class Alarm(BaseModel):
-    alarm_id: str = Field(default_factory=_new_uuid)
-    title: str
-    severity: Severity = Severity.MEDIUM
-    source_module: str = ""
-    triggered_at: str = Field(default_factory=_now_iso)
-    acknowledged_at: Optional[str] = None
-    acknowledged_by: Optional[str] = None
-    resolved_at: Optional[str] = None
-    resolved_by: Optional[str] = None
-    status: AlarmStatus = AlarmStatus.TRIGGERED
-    details: Dict[str, Any] = Field(default_factory=dict)
-    related_events: List[str] = Field(default_factory=list)
-    auto_action: Optional[str] = None
 
 
 # ---------------------------------------------------------------------------

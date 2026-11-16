@@ -28,14 +28,6 @@ class ThreatLevel(IntEnum):
     CRITICAL = 4
 
 
-class SocialEngineeringDetected(Exception):
-    pass
-
-
-class PhishingURLDetected(Exception):
-    pass
-
-
 class CredentialEntryBlocked(Exception):
     pass
 

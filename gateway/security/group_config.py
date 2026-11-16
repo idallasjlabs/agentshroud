@@ -147,15 +147,6 @@ class TeamsConfig(BaseModel):
                     result.append(uid)
         return result
 
-    def get_group_admin_ids(self) -> Dict[str, str]:
-        """Return mapping of group_id → admin_user_id for all groups that have an admin."""
-        return {gid: g.admin for gid, g in self.groups.items() if g.admin}
-
-    def get_active_project_for_user(self, user_id: str) -> Optional[ProjectConfig]:
-        """Return the first project accessible to a user (primary project)."""
-        projects = self.get_user_projects(user_id)
-        return projects[0] if projects else None
-
     def get_group_safe_response_prefix(self, user_id: str) -> Optional[str]:
         """Return the safe_response_prefix for the first group that the user belongs to
         which has one set.  Returns None if no group defines a prefix (V9-4 hook)."""

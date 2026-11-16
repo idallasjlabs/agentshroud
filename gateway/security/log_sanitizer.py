@@ -11,7 +11,7 @@ from __future__ import annotations
 
 import logging
 import re
-from typing import Any, Dict, Pattern
+from typing import Dict, Pattern
 
 
 class LogSanitizer(logging.Filter):
@@ -152,12 +152,3 @@ def install_log_sanitizer():
         return logger
 
     logging.getLogger = sanitized_getLogger
-
-
-def get_sanitizer_stats() -> Dict[str, Any]:
-    """Get statistics about sanitization patterns."""
-    return {
-        "patterns_count": len(LogSanitizer()._compile_patterns()),
-        "pattern_types": list(LogSanitizer()._compile_patterns().keys()),
-        "installed": True,
-    }

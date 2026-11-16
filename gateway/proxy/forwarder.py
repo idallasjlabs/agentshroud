@@ -149,14 +149,6 @@ class HTTPForwarder:
         self._last_health_check = time.time()
         return self._healthy
 
-    @property
-    def is_healthy(self) -> bool:
-        return self._healthy
-
-    @property
-    def last_forward_time(self) -> float:
-        return self._last_forward_time
-
     def get_stats(self) -> dict[str, Any]:
         return {
             "healthy": self._healthy,

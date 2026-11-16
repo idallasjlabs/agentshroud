@@ -150,7 +150,7 @@ class DelegationManager:
 
         # Revoke any existing active delegation for the same user+privilege
         # before creating a new one (idempotent re-delegation).
-        self._revoke_by_user_privilege(to_user_id, privilege, caller_is_owner=True)
+        self._revoke_by_user_privilege(to_user_id, privilege)
 
         d = Delegation(
             id=str(uuid.uuid4()),
@@ -178,7 +178,7 @@ class DelegationManager:
         Returns True if a matching active delegation was found and removed.
         """
         self._require_owner(owner_id)
-        return self._revoke_by_user_privilege(to_user_id, privilege, caller_is_owner=True)
+        return self._revoke_by_user_privilege(to_user_id, privilege)
 
     def revoke_all_for_user(self, owner_id: str, to_user_id: str) -> int:
         """Revoke all delegations for a specific user. Returns count removed."""
@@ -237,9 +237,7 @@ class DelegationManager:
         if self._owner_user_id and user_id != self._owner_user_id:
             raise DelegationError(f"Only the owner can manage delegations, got user_id={user_id!r}")
 
-    def _revoke_by_user_privilege(
-        self, to_user_id: str, privilege: DelegationPrivilege, *, caller_is_owner: bool
-    ) -> bool:
+    def _revoke_by_user_privilege(self, to_user_id: str, privilege: DelegationPrivilege) -> bool:
         priv_val = privilege.value if isinstance(privilege, DelegationPrivilege) else privilege
         matches = [
             did

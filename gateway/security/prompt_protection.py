@@ -245,10 +245,6 @@ class PromptProtection:
             risk_score=risk_score,
         )
 
-    def _redact_match(self, text: str, match: re.Match, replacement: str) -> str:
-        """Replace a regex match with a redaction placeholder."""
-        return text[: match.start()] + replacement + text[match.end() :]
-
     def _calculate_similarity(self, text: str, protected: ProtectedContent) -> float:
         """Calculate similarity between text and protected content."""
         # Check for exact pattern matches first

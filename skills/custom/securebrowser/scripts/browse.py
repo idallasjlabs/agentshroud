@@ -376,28 +376,6 @@ class SecureBrowser:
 
         return {"success": True, "selector": selector, "value": value}
 
-    async def detect_captcha(self) -> bool:
-        """Detect if CAPTCHA is present on page"""
-        if self.page is None:
-            return False
-
-        # Common CAPTCHA indicators
-        captcha_selectors = [
-            "iframe[src*='recaptcha']",
-            "iframe[src*='hcaptcha']",
-            "div[class*='captcha']",
-            "#captcha",
-            ".g-recaptcha"
-        ]
-
-        for selector in captcha_selectors:
-            element = await self.page.query_selector(selector)
-            if element:
-                self._log_security_event("CAPTCHA_DETECTED", f"Selector: {selector}")
-                return True
-
-        return False
-
     async def close(self):
         """Clean up browser resources"""
         if self.page:

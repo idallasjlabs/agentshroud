@@ -59,13 +59,6 @@ class ScanResult:
     def flagged(self) -> bool:
         return len(self.findings) > 0
 
-    @property
-    def finding_summary(self) -> dict[str, int]:
-        counts: dict[str, int] = {}
-        for f in self.findings:
-            counts[f.category] = counts.get(f.category, 0) + 1
-        return counts
-
 
 # --- Prompt injection patterns for web content ---
 _INJECTION_PATTERNS: list[tuple[str, re.Pattern, float, str]] = [

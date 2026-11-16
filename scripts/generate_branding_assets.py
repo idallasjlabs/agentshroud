@@ -67,20 +67,6 @@ def save(img: Image.Image, path: Path, *, optimize=True):
     print(f"  ✓  {path.relative_to(REPO_ROOT)}")
 
 
-def load_logo(size: int | tuple[int, int] | None = None, bg: str = "transparent") -> Image.Image:
-    """Load source logo, optionally resize and composite onto bg."""
-    if bg == "transparent":
-        src = Image.open(SOURCE_LOGO).convert("RGBA")
-    else:
-        src = Image.open(SOURCE_DARK).convert("RGBA")
-
-    if size is None:
-        return src
-    if isinstance(size, int):
-        size = (size, size)
-    return src.resize(size, Image.LANCZOS)
-
-
 def icon_on_canvas(canvas_size: tuple[int,int], icon_frac: float = 0.8,
                    bg_color=DARK_BG, src=None) -> Image.Image:
     """Paste transparent logo centred on a solid-colour canvas."""

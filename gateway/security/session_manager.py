@@ -460,29 +460,6 @@ USER SESSION TRUST LEVEL: {session.trust_level}
         self._save_sessions()
         logger.info(f"Updated trust level for user {user_id} bot {bot_id} to {trust_level}")
 
-    def cleanup_old_sessions(self, days_inactive: int = 90):
-        """Clean up sessions that haven't been active for the specified number of days."""
-        import time
-
-        cutoff_timestamp = time.time() - (days_inactive * 24 * 60 * 60)
-
-        sessions_to_remove = []
-        for cache_key, session in self.sessions.items():
-            if session.last_active:
-                try:
-                    last_active = datetime.fromisoformat(session.last_active.replace("Z", "+00:00"))
-                    if last_active.timestamp() < cutoff_timestamp:
-                        sessions_to_remove.append(cache_key)
-                except Exception as e:
-                    logger.error(f"Error parsing last_active for session {cache_key}: {e}")
-
-        for cache_key in sessions_to_remove:
-            logger.info(f"Cleaning up inactive session {cache_key}")
-            del self.sessions[cache_key]
-
-        if sessions_to_remove:
-            self._save_sessions()
-
     # ------------------------------------------------------------------
     # Group session management (V9-4C)
     # ------------------------------------------------------------------
@@ -515,56 +492,6 @@ USER SESSION TRUST LEVEL: {session.trust_level}
             memory_file=memory_file,
             created_at=datetime.now(timezone.utc).isoformat(),
         )
-
-    def can_user_access_group(self, user_id: str, group_id: str, rbac_config=None) -> bool:
-        """Return True if user_id is a member of group_id.
-
-        Checks rbac_config.get_user_groups_by_id() when available;
-        falls back to False (deny-by-default).
-        """
-        if rbac_config is None:
-            return False
-        members = rbac_config.get_user_groups_by_id(group_id)
-        return user_id in members or (
-            hasattr(rbac_config, "owner_user_id") and user_id == rbac_config.owner_user_id
-        )
-
-    def get_merged_context(self, user_id: str, rbac_config=None) -> str:
-        """Return user MEMORY.md + all accessible group MEMORY.md contents for prompt injection.
-
-        Cross-group access is denied; only groups the user belongs to are included.
-        """
-        parts: List[str] = []
-
-        # User's own memory
-        try:
-            session = self.get_or_create_session(user_id)
-            if session.memory_file.exists():
-                parts.append(
-                    f"[YOUR MEMORY]\n{session.memory_file.read_text(encoding='utf-8', errors='replace')}"
-                )
-        except Exception as exc:
-            logger.warning("Could not read user memory for %s: %s", user_id, exc)
-
-        # Group memories — only groups this user belongs to
-        if (
-            rbac_config is not None
-            and hasattr(rbac_config, "teams_config")
-            and rbac_config.teams_config
-        ):
-            for group_id, group in rbac_config.teams_config.groups.items():
-                if user_id in group.members or user_id == getattr(
-                    rbac_config, "owner_user_id", None
-                ):
-                    try:
-                        gs = self.get_or_create_group_session(group_id)
-                        if gs.memory_file.exists():
-                            content = gs.memory_file.read_text(encoding="utf-8", errors="replace")
-                            parts.append(f"[GROUP MEMORY — {group.name}]\n{content}")
-                    except Exception as exc:
-                        logger.warning("Could not read group memory for %s: %s", group_id, exc)
-
-        return "\n\n---\n\n".join(parts) if parts else ""
 
     # ── C16: System Prompt Re-anchoring ─────────────────────────────────────
 

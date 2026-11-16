@@ -3,13 +3,12 @@
 # Patent Pending — U.S. Provisional Application No. 64/018,744
 """Tests for the generalized Jira dev-ticket helper (create / comment / transition).
 
-The script lives in both bot image workspaces (docker/config/hermes/workspace/
-jira_dev_ticket.py and docker/config/openclaw/workspace/jira_dev_ticket.py — the
-two files must stay byte-identical) and is self-contained (stdlib only) so it
-runs inside those images. We load the canonical (Hermes) copy here by file path
-and unit-test its pure functions plus the orchestration with a mocked HTTP
-transport — NO real network / Jira calls. A separate test asserts the OpenClaw
-copy is byte-identical so the two bots never drift.
+The script lives in the Hermes image workspace
+(docker/config/hermes/workspace/jira_dev_ticket.py) and is self-contained
+(stdlib only) so it runs inside that image. OpenClaw has no Python runtime, so
+its former copy was removed (2026-11-16 cleanup). We load the script by file
+path and unit-test its pure functions plus the orchestration with a mocked HTTP
+transport — NO real network / Jira calls.
 """
 
 from __future__ import annotations
@@ -23,9 +22,6 @@ import pytest
 
 _REPO_ROOT = pathlib.Path(__file__).resolve().parents[2]
 _HERMES_SCRIPT = _REPO_ROOT / "docker" / "config" / "hermes" / "workspace" / "jira_dev_ticket.py"
-_OPENCLAW_SCRIPT = (
-    _REPO_ROOT / "docker" / "config" / "openclaw" / "workspace" / "jira_dev_ticket.py"
-)
 
 
 def _load_module():
@@ -37,10 +33,6 @@ def _load_module():
 
 
 jdt = _load_module()
-
-
-def test_openclaw_copy_is_byte_identical_to_hermes_copy():
-    assert _HERMES_SCRIPT.read_bytes() == _OPENCLAW_SCRIPT.read_bytes()
 
 
 # ---------------------------------------------------------------------------

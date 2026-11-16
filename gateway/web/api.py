@@ -201,10 +201,6 @@ def _validate_service_name(name: str) -> str:
 # --- Models ----------------------------------------------------------------
 
 
-class ServiceAction(BaseModel):
-    timeout: int = 30
-
-
 class KillSwitchAction(BaseModel):
 
     confirm: bool = False

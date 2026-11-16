@@ -121,25 +121,6 @@ class ControlCenter:
         """Clear screen and position cursor at home"""
         print(f"{ANSI.CLEAR_SCREEN}{ANSI.HOME}", end="", flush=True)
 
-    def draw_box(self, title, width=62, height=20):
-        """Draw a box with title"""
-        lines = []
-
-        # Top border with title
-        title_padded = f" {title} "
-        padding = (width - len(title_padded) - 2) // 2
-        top_line = f"╔{'═' * padding}{title_padded}{'═' * (width - padding - len(title_padded) - 2)}╗"
-        lines.append(f"{ANSI.BOLD}{ANSI.CYAN}{top_line}{ANSI.RESET}")
-
-        # Content area
-        for i in range(height - 2):
-            lines.append(f"{ANSI.BOLD}{ANSI.CYAN}║{ANSI.RESET}{' ' * (width - 2)}{ANSI.BOLD}{ANSI.CYAN}║{ANSI.RESET}")
-
-        # Bottom border
-        lines.append(f"{ANSI.BOLD}{ANSI.CYAN}╚{'═' * (width - 2)}╝{ANSI.RESET}")
-
-        return lines
-
     def draw_dashboard(self):
         """Draw main dashboard screen"""
         self.clear_screen()

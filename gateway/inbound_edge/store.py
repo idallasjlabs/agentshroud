@@ -408,16 +408,3 @@ class EdgeStore:
             (self._clock(), request_id),
         )
         return cur.rowcount == 1
-
-    async def purge_expired(self) -> None:
-        now = self._clock()
-        for table, col in (
-            ("enrollments", "expires_at"),
-            ("pending_authorizations", "expires_at"),
-            ("auth_codes", "expires_at"),
-            ("issued_jtis", "expires_at"),
-            ("refresh_tokens", "expires_at"),
-        ):
-            await self.db.execute(
-                f"DELETE FROM {table} WHERE {col}<?", (now - 86400,)
-            )  # nosec B608
