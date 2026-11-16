@@ -146,6 +146,42 @@ run_sourced prompt 'SECRETS_DIR="$TMPROOT/extract"; extract_edge_secrets' >/dev/
 check "T8: raw PEM extracted intact" \
     "$([[ "$(cat "$TMPROOT/extract/edge_signing_key.txt" 2>/dev/null)" == "$(cat "$KEY")" ]] && echo true || echo false)"
 
+# ── T9-T11: edge-ensure (non-interactive, run before every compose) ──────────
+# 2026-11-15: prod had no edge secret files, so `compose up` and then the
+# rollback failed (exit 50). edge-ensure must leave valid files behind in
+# every case without prompting and without writing to any backend.
+rm -rf "$TMPROOT/store" "$TMPROOT/ensure"; mkdir -p "$TMPROOT/store"
+OUT9="$(run_sourced keychain 'SECRETS_DIR="$TMPROOT/ensure"; edge_store_from_file() { echo STORED; }; cmd_edge_ensure' 2>&1)"
+EK="$TMPROOT/ensure/edge_signing_key.txt"; ET="$TMPROOT/ensure/edge_gateway_token.txt"
+check "T9: nothing anywhere → both files generated" \
+    "$([[ -s "$EK" && -s "$ET" ]] && echo true || echo false)" "$OUT9"
+check "T9: generated files are valid and mode 600" \
+    "$(run_sourced prompt "edge_validate_file edge_signing_key '$EK' && edge_validate_file edge_gateway_token '$ET'" && [[ "$(_mode "$EK")" == 600 && "$(_mode "$ET")" == 600 ]] && echo true || echo false)"
+check "T9: no backend write" "$(grep -q STORED <<< "$OUT9" && echo false || echo true)" "$OUT9"
+leaked=false
+[[ "$OUT9" == *"$(tr -d '\n' < "$ET")"* || "$OUT9" == *"$(sed -n 2p "$EK")"* || "$OUT9" == *"PRIVATE KEY"* ]] && leaked=true
+check "T9: no secret value in output" "$([[ "$leaked" == false ]] && echo true || echo false)"
+
+ek_sum="$(openssl dgst -sha256 < "$EK")"; et_sum="$(openssl dgst -sha256 < "$ET")"
+OUT10="$(run_sourced keychain 'SECRETS_DIR="$TMPROOT/ensure"; cmd_edge_ensure' 2>&1)"
+check "T10: valid files are left unchanged" \
+    "$([[ "$ek_sum" == "$(openssl dgst -sha256 < "$EK")" && "$et_sum" == "$(openssl dgst -sha256 < "$ET")" ]] && echo true || echo false)" "$OUT10"
+
+rm -f "$EK"
+printf 'b64:%s' "$(openssl base64 -A < "$KEY")" > "$TMPROOT/store/edge_signing_key"
+run_sourced keychain 'SECRETS_DIR="$TMPROOT/ensure"; cmd_edge_ensure' >/dev/null 2>&1
+check "T11: missing file is restored from the backend, not regenerated" \
+    "$([[ "$(cat "$EK" 2>/dev/null)" == "$(cat "$KEY")" ]] && echo true || echo false)"
+
+# ── T12-T13: every compose path runs edge-ensure first ───────────────────────
+asb_ensure="$(grep -n 'setup-secrets.sh" edge-ensure' "$REPO/scripts/asb" | head -1 | cut -d: -f1)"
+asb_seed="$(grep -n 'for _edge_secret in edge_signing_key' "$REPO/scripts/asb" | head -1 | cut -d: -f1)"
+check "T12: asb runs edge-ensure before seeding edge secrets" \
+    "$([[ -n "$asb_ensure" && -n "$asb_seed" && "$asb_ensure" -lt "$asb_seed" ]] && echo true || echo false)" "ensure=${asb_ensure} seed=${asb_seed}"
+pre="$(awk '/^phase_preflight\(\) \{/,/^}/' "$REPO/scripts/sunday-upgrade-apply.sh")"
+check "T13: sunday-upgrade-apply preflight runs edge-ensure" \
+    "$(grep -q 'setup-secrets.sh" edge-ensure' <<< "$pre" && echo true || echo false)"
+
 echo ""
 echo "  Tests: $((pass + fail))  Passed: ${pass}  Failed: ${fail}"
 [[ "$fail" -eq 0 ]]

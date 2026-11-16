@@ -22,6 +22,7 @@
 #   ./setup-secrets.sh extract --bot hermes    # write only Hermes + shared secret files
 #   ./setup-secrets.sh migrate                 # one-time: pull secrets from 1Password → Keychain
 #   ./setup-secrets.sh edge-init               # first-time: generate Inbound MCP Edge secrets
+#   ./setup-secrets.sh edge-ensure             # pre-compose: restore or generate missing edge secret files (no prompts)
 #   ./setup-secrets.sh help                    # show this message
 
 set -euo pipefail
@@ -520,6 +521,55 @@ extract_edge_secrets() {
     done
 }
 
+# edge-ensure: make sure both edge secret FILES exist and are valid before any
+# `docker compose` run. The gateway lists both secrets in every deployment mode,
+# so a missing file fails `compose up` (and then the rollback) even when the edge
+# is off — the 2026-11-15 prod abort (exit 50). Non-interactive and safe to run
+# unattended: a valid file is left alone; otherwise the backend's value is used
+# when it has a valid one; otherwise a fresh value is generated into the file
+# only. It never writes to a backend (keychain writes can prompt); run edge-init
+# to persist a generated value. Values are never printed.
+cmd_edge_ensure() {
+    command -v openssl &>/dev/null || { echo "edge-ensure needs openssl on PATH" >&2; return 1; }
+    mkdir -p "${SECRETS_DIR}"
+    local name out tmp value rc=0
+    for name in "${EDGE_SECRET_NAMES[@]}"; do
+        out="${SECRETS_DIR}/${name}.txt"
+        if edge_validate_file "$name" "$out"; then
+            echo "  [ok] ${name}"
+            continue
+        fi
+        tmp="$(mktemp "${out}.XXXXXX")"
+        chmod 600 "$tmp"
+        value="$(get_secret "$name" 2>/dev/null | edge_decode_value 2>/dev/null || true)"
+        if [[ -n "$value" ]]; then
+            printf '%s\n' "$value" > "$tmp"
+            if edge_validate_file "$name" "$tmp"; then
+                mv -f "$tmp" "$out"
+                echo "  [restored] ${name} → ${out} (from ${BACKEND}, value not shown)"
+                continue
+            fi
+            echo "  [invalid] ${name} — backend value is not a valid ${name}; generating a new one" >&2
+        fi
+        if [[ "$name" == "edge_signing_key" ]]; then
+            ( umask 077
+              openssl ecparam -name prime256v1 -genkey -noout 2>/dev/null \
+                  | openssl pkcs8 -topk8 -nocrypt > "$tmp" )
+        else
+            ( umask 077; openssl rand -base64 48 | tr -d '\n' > "$tmp" )
+        fi
+        if ! edge_validate_file "$name" "$tmp"; then
+            rm -f "$tmp"
+            echo "  [FAILED] ${name} — generated value did not validate" >&2
+            rc=1
+            continue
+        fi
+        mv -f "$tmp" "$out"
+        echo "  [generated] ${name} → ${out} (file only, value not shown; run edge-init to store it)"
+    done
+    return "$rc"
+}
+
 # ── Bot filter helper ──────────────────────────────────────────────────────────
 # Returns 0 (include) if the secret's bot tag matches the requested bot filter.
 # BOT_FILTER="" or "all" → include everything.
@@ -794,6 +844,7 @@ Usage:
   ./setup-secrets.sh extract --bot hermes    Extract only Hermes + shared secret files
   ./setup-secrets.sh migrate                 One-time: pull secrets from 1Password → Keychain
   ./setup-secrets.sh edge-init               First-time: generate the Inbound MCP Edge secrets
+  ./setup-secrets.sh edge-ensure             Pre-compose: restore or generate missing edge secret files (no prompts)
                                              (edge_signing_key EC P-256 PEM, edge_gateway_token)
                                              into secrets/ (mode 600) and the backend; existing
                                              ones are never overwritten; values are never shown
@@ -866,6 +917,7 @@ if [[ "${BASH_SOURCE[0]}" == "$0" ]]; then
         extract) cmd_extract ;;
         migrate) cmd_migrate ;;
         edge-init) cmd_edge_init ;;
+        edge-ensure) cmd_edge_ensure ;;
         dump-op-refs) cmd_dump_op_refs ;;
         help|--help|-h) cmd_help ;;
         "")      cmd_interactive ;;
