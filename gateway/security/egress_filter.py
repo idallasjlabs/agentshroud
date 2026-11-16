@@ -22,7 +22,7 @@ from enum import Enum
 from typing import Optional
 from urllib.parse import urlparse
 
-from .egress_config import EgressFilterConfig, get_egress_config
+from .egress_config import EgressFilterConfig, domain_matches, get_egress_config
 
 logger = logging.getLogger(__name__)
 
@@ -58,21 +58,7 @@ class EgressPolicy:
         Wildcards only match one subdomain level to prevent overly broad rules.
         e.g., *.github.com matches foo.github.com but NOT foo.bar.github.com.
         """
-        domain = domain.lower().rstrip(".")
-        for allowed in self.allowed_domains:
-            allowed = allowed.lower().rstrip(".")
-            if allowed.startswith("*."):
-                base = allowed[2:]  # "github.com"
-                if domain == base:
-                    return True
-                # Only match one level deep: "sub.github.com" yes, "a.b.github.com" no
-                if domain.endswith("." + base):
-                    prefix = domain[: -(len(base) + 1)]
-                    if "." not in prefix:  # Only one subdomain level
-                        return True
-            elif domain == allowed:
-                return True
-        return False
+        return domain_matches(domain, self.allowed_domains)
 
     def matches_ip(self, ip: str) -> bool:
         """Check if IP matches any allowed IP/CIDR."""
@@ -418,21 +404,7 @@ class EgressFilter:
 
     def _matches_allowlist_domain(self, domain: str, allowlist: set[str]) -> bool:
         """Check if domain matches any domain in the allowlist (supports wildcards)."""
-        domain = domain.lower().rstrip(".")
-        for allowed in allowlist:
-            allowed = allowed.lower().rstrip(".")
-            if allowed.startswith("*."):
-                base = allowed[2:]  # "github.com"
-                if domain == base:
-                    return True
-                # Only match one level deep: "sub.github.com" yes, "a.b.github.com" no
-                if domain.endswith("." + base):
-                    prefix = domain[: -(len(base) + 1)]
-                    if "." not in prefix:  # Only one subdomain level
-                        return True
-            elif domain == allowed:
-                return True
-        return False
+        return domain_matches(domain, allowlist)
 
     def _matches_ip_list(self, ip_str: str, ip_list: list[str]) -> bool:
         """Check if IP matches any IP/CIDR in the list."""
