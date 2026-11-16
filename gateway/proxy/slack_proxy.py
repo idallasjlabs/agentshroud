@@ -25,10 +25,6 @@ from typing import Optional
 
 from gateway.utils.secrets import read_secret as _read_secret_static
 
-from .collaborator_responses import (  # noqa: F401 — re-exported for Slack use
-    COLLAB_OUTSIDE_SCOPE,
-)
-
 logger = logging.getLogger("agentshroud.proxy.slack")
 
 SLACK_API_BASE = "https://slack.com/api"

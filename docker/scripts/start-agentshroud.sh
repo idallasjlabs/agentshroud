@@ -658,19 +658,6 @@ _telegram_send() {
 # outbound Slack API calls are intercepted by the gateway for content scanning.
 _GATEWAY_SLACK_BASE="${SLACK_API_BASE_URL:-http://gateway:8080/slack-api}"
 
-_slack_channel_id() {
-    # Prefer env override, then Docker secret, then empty (disabled)
-    if [ -n "${AGENTSHROUD_SLACK_CHANNEL_ID:-}" ]; then
-        printf '%s' "$AGENTSHROUD_SLACK_CHANNEL_ID"
-        return 0
-    fi
-    if [ -f "/run/secrets/slack_bot_token" ]; then
-        # Channel ID must be configured via env — no way to derive it from the token
-        return 1
-    fi
-    return 1
-}
-
 _slack_send() {
     local text="$1"
     local channel

@@ -67,7 +67,6 @@ httpx>=0.28.1,<1.0.0
 pytest>=9.2.0,<10.0.0
 pytest-asyncio>=1.5.0,<2.0.0
 hypothesis>=6.170.0,<7.0.0
-eval-type-backport>=0.2.0; python_version < "3.10"
 
 # System monitoring
 psutil>=6.0.0,<7.0.0
