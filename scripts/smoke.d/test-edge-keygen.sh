@@ -24,6 +24,7 @@
 #   T7. extract refuses an invalid stored key and leaves the file unchanged.
 #   T8. a raw (unprefixed) PEM in the backend is accepted as-is.
 #   T14. a hung `op` (unanswered app approval) cannot stall op_get.
+#   T15. after one op timeout the rest of the run skips op.
 #
 # Run: bash scripts/smoke.d/test-edge-keygen.sh
 # Exit 0 = pass. Exit 1 = fail.
@@ -211,6 +212,24 @@ t0="$(date +%s)"
 t14b=$(( $(date +%s) - t0 ))
 check "T14: every op read is bounded, not just the probe" \
     "$([[ "$t14b" -le 14 ]] && echo true || echo false)" "took ${t14b}s"
+
+# ── T15: one op timeout per run, not one per secret ──────────────────────────
+# 2026-11-16 prod: `asb up hermes` → extract walks every secret, and each
+# Keychain miss reached op_get again. After the first timeout, op is down for
+# the rest of the run.
+printf '#!/bin/sh\nexec sleep 300\n' > "$FAKEBIN/op"
+mkdir -p "$TMPROOT/opstate"
+t0="$(date +%s)"
+( PATH="$FAKEBIN:$PATH" AGENTSHROUD_OP_TIMEOUT=2; export PATH AGENTSHROUD_OP_TIMEOUT
+  # shellcheck disable=SC1090
+  . "$SETUP"; OP_STATE_DIR="$TMPROOT/opstate"
+  for s in a b c d; do v="$(op_get "$s")"; [[ -z "$v" ]] || exit 1; done ) >/dev/null 2>&1 || true
+t15=$(( $(date +%s) - t0 ))
+check "T15: after one op timeout, later op_get calls skip op" \
+    "$([[ "$t15" -le 5 ]] && echo true || echo false)" "4 secrets took ${t15}s"
+disp="$(awk '/^if \[\[ "\$\{BASH_SOURCE\[0\]\}" == "\$0" \]\]; then/,0' "$SETUP")"
+check "T15: executed runs get a private, cleaned-up op state dir" \
+    "$(grep -q 'OP_STATE_DIR="$(mktemp -d' <<< "$disp" && grep -q "trap 'rm -rf \"\$OP_STATE_DIR\"' EXIT" <<< "$disp" && echo true || echo false)"
 
 echo ""
 echo "  Tests: $((pass + fail))  Passed: ${pass}  Failed: ${fail}"

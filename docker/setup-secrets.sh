@@ -173,7 +173,14 @@ op_bounded() {
 op_get() {
     local name="$1"
     command -v op &>/dev/null || return 0
-    op_bounded account list &>/dev/null || return 0
+    # op_get runs in a $(...) subshell per secret, so "op is down" is kept in
+    # OP_STATE_DIR (set by dispatch) to pay the timeout once per run, not once
+    # per secret (2026-11-16 prod: extract hung 07:26-09:08).
+    [[ -n "${OP_STATE_DIR:-}" && -e "$OP_STATE_DIR/unavailable" ]] && return 0
+    if ! op_bounded account list &>/dev/null; then
+        [[ -n "${OP_STATE_DIR:-}" ]] && : > "$OP_STATE_DIR/unavailable"
+        return 0
+    fi
 
     local val ref
     # Dedicated-item refs first — these are exact, so prefer them over the
@@ -898,6 +905,8 @@ EOF
 # ── Dispatch ───────────────────────────────────────────────────────────────────
 # Guard allows tests to `source` this script to access helpers without triggering dispatch.
 if [[ "${BASH_SOURCE[0]}" == "$0" ]]; then
+    OP_STATE_DIR="$(mktemp -d)"
+    trap 'rm -rf "$OP_STATE_DIR"' EXIT
     SUBCOMMAND="${1:-}"
     shift || true  # consume subcommand; remaining args parsed below
 
