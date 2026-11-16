@@ -1,25 +1,28 @@
 ---
 type: community
-members: 12
+members: 15
 ---
 
 # Community 1214
 
-**Members:** 12 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[.test_default_revert_minutes_is_30()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_invalid_mode_returns_400()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_response_includes_previous_mode()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_response_includes_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_revert_minutes_clamped_max()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_revert_minutes_clamped_min()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_set_enforce_mode()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_set_monitor_mode()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_set_observatory_mode()]] - code - gateway/tests/test_observatory_mode.py
-- [[TestSetMode]] - code - gateway/tests/test_observatory_mode.py
-- [[revert_after_minutes above 480 is clamped to 480.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[revert_after_minutes below 1 is clamped to 1.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[AgentShroud Module Inventory (Blue Team)]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
+- [[AgentShroud Module Inventory (Red Team)]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
+- [[AgentShroud Skills Library]] - document - skills/README.md
+- [[Custom Skills]] - document - skills/README.md
+- [[Directory Structure_2]] - document - skills/README.md
+- [[Enterprise Security Feature Priorities (Steve Hay Assessment, Red Team copy)]] - document - skills/custom/agentshroud-redteam/references/steve-hay-assessment.md
+- [[Module Coverage Heat Map Legend (EMAC—)]] - concept - skills/custom/agentshroud-blueteam/SKILL.md
+- [[OpenClaw Built-in Skills]] - document - skills/README.md
+- [[README_130]] - document - skills/README.md
+- [[Red Team Assessment Plan (Steve Hay Plan, Red Team copy)]] - document - skills/custom/agentshroud-redteam/references/steve-hay-plan.md
+- [[SKILL_200]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[STPA-Sec Loss Categories (L-1 Data Disclosure, L-2 Unauthorized Actions, L-3 Agent Integrity, L-4 Audit Integrity)]] - concept - skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md
+- [[STPA-Sec Methodology]] - concept - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Unsafe Control Actions (UCA-1 through UCA-17)]] - concept - skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md
+- [[Usage_143]] - document - skills/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,11 +32,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 84]]
-- 1 edge to [[_COMMUNITY_Community 65]]
+- 2 edges to [[_COMMUNITY_Community 6]]
+- 1 edge to [[_COMMUNITY_Community 30]]
+- 1 edge to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 3]]
+- 1 edge to [[_COMMUNITY_Community 254]]
+- 1 edge to [[_COMMUNITY_Community 45]]
+- 1 edge to [[_COMMUNITY_Community 32]]
+- 1 edge to [[_COMMUNITY_Community 31]]
+- 1 edge to [[_COMMUNITY_Community 122]]
 - 1 edge to [[_COMMUNITY_Community 9]]
-- 1 edge to [[_COMMUNITY_Community 103]]
-- 1 edge to [[_COMMUNITY_Community 40]]
+- 1 edge to [[_COMMUNITY_Community 1281]]
+- 1 edge to [[_COMMUNITY_Community 98]]
+- 1 edge to [[_COMMUNITY_Community 26]]
+- 1 edge to [[_COMMUNITY_Community 141]]
+- 1 edge to [[_COMMUNITY_Community 8]]
+- 1 edge to [[_COMMUNITY_Community 1284]]
+- 1 edge to [[_COMMUNITY_Community 28]]
+- 1 edge to [[_COMMUNITY_Community 692]]
 
 ## Top bridge nodes
-- [[TestSetMode]] - degree 14, connects to 5 communities
+- [[SKILL_200]] - degree 27, connects to 19 communities

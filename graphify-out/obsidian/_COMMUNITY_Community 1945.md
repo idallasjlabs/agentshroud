@@ -1,19 +1,22 @@
 ---
 type: community
-members: 6
+members: 9
 ---
 
 # Community 1945
 
-**Members:** 6 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[ClamAV]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[First Boot]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[Gateway Usage]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[Installation_2]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[Purpose_185]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[Related Notes_40]] - document - docs/vault/05 - Dependencies/clamav.md
+- [[.__init__()_111]] - code - gateway/security/memory_lifecycle.py
+- [[.sanitize_content()]] - code - gateway/security/memory_lifecycle.py
+- [[.scan_content_for_threats()]] - code - gateway/security/memory_lifecycle.py
+- [[.validate_memory_write()]] - code - gateway/security/memory_lifecycle.py
+- [[MemoryLifecycleConfig_1]] - code - gateway/security/memory_lifecycle.py
+- [[Path_18]] - code - gateway/security/memory_lifecycle.py
+- [[Sanitize content by removingredacting threats.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Scan memory file content for security threats.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Validate content before writing to memory file.]] - rationale - gateway/security/memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +26,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 253]]
+- 9 edges to [[_COMMUNITY_Community 16]]
+- 1 edge to [[_COMMUNITY_Community 84]]
+- 1 edge to [[_COMMUNITY_Community 1289]]
 
 ## Top bridge nodes
-- [[ClamAV]] - degree 6, connects to 1 community
+- [[Path_18]] - degree 5, connects to 3 communities
+- [[.scan_content_for_threats()]] - degree 5, connects to 1 community
+- [[.validate_memory_write()]] - degree 5, connects to 1 community
+- [[.sanitize_content()]] - degree 4, connects to 1 community
+- [[.__init__()_111]] - degree 3, connects to 1 community

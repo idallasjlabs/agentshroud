@@ -12,7 +12,7 @@ tags:
 # _sync()
 
 ## Connections
-- [[._run()_2]] - `calls` [EXTRACTED]
+- [[._run()_3]] - `calls` [EXTRACTED]
 - [[.registry()]] - `calls` [EXTRACTED]
 - [[.test_403_without_token_still_raises()]] - `calls` [EXTRACTED]
 - [[.test_agent_var_resolved_from_registry_dict()]] - `calls` [EXTRACTED]

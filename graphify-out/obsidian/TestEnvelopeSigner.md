@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "code"
-community: "Community 24"
+community: "Community 80"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/Community_80
 ---
 
 # TestEnvelopeSigner
@@ -19,8 +19,8 @@ tags:
 - [[.test_sign_and_verify_roundtrip()]] - `method` [EXTRACTED]
 - [[.test_tampered_content_fails()]] - `method` [EXTRACTED]
 - [[.test_tampered_signature_fails()]] - `method` [EXTRACTED]
-- [[EnvelopeSigner]] - `uses` [INFERRED]
+- [[EnvelopeSigner_1]] - `uses` [INFERRED]
 - [[InstructionEnvelope]] - `uses` [INFERRED]
 - [[test_instruction_envelope.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_24
+#graphify/code #graphify/EXTRACTED #community/Community_80

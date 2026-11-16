@@ -1,24 +1,28 @@
 ---
 type: community
-members: 11
+members: 15
 ---
 
 # Community 1289
 
-**Members:** 11 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[.proxy()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_cross_group_member_blocked()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_disabled_gate_returns_none_manager()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_manager_is_wired()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_member_allowed_in_group()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_member_contextvar_preserved()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_non_member_blocked_in_group()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_non_member_contextvar_isolated_to_none()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_owner_allowed_in_any_group()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[Simulate the chokepoint a non-member's active group id is cleared.]] - rationale - gateway/tests/test_group_workspace_manager.py
-- [[TestInboundChokepointWiring]] - code - gateway/tests/test_group_workspace_manager.py
+- [[.__post_init__()_7]] - code - gateway/security/memory_lifecycle.py
+- [[._cleanup_old_actions()]] - code - gateway/security/memory_lifecycle.py
+- [[._cleanup_old_threats()]] - code - gateway/security/memory_lifecycle.py
+- [[.archive_file()]] - code - gateway/security/memory_lifecycle.py
+- [[.enforce_daily_notes_retention()]] - code - gateway/security/memory_lifecycle.py
+- [[.enforce_memory_md_size_limit()]] - code - gateway/security/memory_lifecycle.py
+- [[.run_lifecycle_maintenance()]] - code - gateway/security/memory_lifecycle.py
+- [[Action taken during retention policy enforcement.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Archive a file to the archive directory.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Clean up old retention action records.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Clean up old threat records.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Enforce retention policy for daily notes.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Enforce size limit for MEMORY.md file.]] - rationale - gateway/security/memory_lifecycle.py
+- [[RetentionAction]] - code - gateway/security/memory_lifecycle.py
+- [[Run all lifecycle maintenance tasks.]] - rationale - gateway/security/memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,12 +32,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 61]]
-- 2 edges to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 196]]
-- 1 edge to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 1]]
+- 9 edges to [[_COMMUNITY_Community 16]]
+- 1 edge to [[_COMMUNITY_Community 2185]]
+- 1 edge to [[_COMMUNITY_Community 1945]]
 
 ## Top bridge nodes
-- [[TestInboundChokepointWiring]] - degree 17, connects to 5 communities
-- [[.proxy()]] - degree 2, connects to 1 community
+- [[RetentionAction]] - degree 8, connects to 2 communities
+- [[.archive_file()]] - degree 6, connects to 2 communities
+- [[.run_lifecycle_maintenance()]] - degree 6, connects to 1 community
+- [[.enforce_memory_md_size_limit()]] - degree 5, connects to 1 community
+- [[.enforce_daily_notes_retention()]] - degree 4, connects to 1 community

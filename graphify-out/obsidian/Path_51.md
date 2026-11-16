@@ -1,19 +1,19 @@
 ---
-source_file: "scripts/sync-cve-registry.py"
+source_file: "scripts/export-email-reports.py"
 type: "code"
-community: "Community 74"
-location: "L794"
+community: "Community 777"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_74
+  - community/Community_777
 ---
 
 # Path
 
 ## Connections
-- [[main()_27]] - `calls` [EXTRACTED]
-- [[run_ghsa_sync()]] - `references` [EXTRACTED]
-- [[sync_agent_ghsa()]] - `references` [EXTRACTED]
+- [[_report_date()]] - `calls` [EXTRACTED]
+- [[export_bot()]] - `references` [EXTRACTED]
+- [[main()_21]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_74
+#graphify/code #graphify/EXTRACTED #community/Community_777

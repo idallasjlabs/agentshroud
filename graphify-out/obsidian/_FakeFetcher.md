@@ -12,8 +12,8 @@ tags:
 # _FakeFetcher
 
 ## Connections
-- [[.__call__()_2]] - `method` [EXTRACTED]
-- [[.__init__()_141]] - `method` [EXTRACTED]
+- [[.__call__()_3]] - `method` [EXTRACTED]
+- [[.__init__()_156]] - `method` [EXTRACTED]
 - [[._verifier()]] - `calls` [EXTRACTED]
 - [[._verifier()_1]] - `calls` [EXTRACTED]
 - [[.test_host_confusion_urls_rejected_and_never_fetched()]] - `calls` [EXTRACTED]

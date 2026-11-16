@@ -31,11 +31,11 @@ members: 47
 - [[.test_verify_flag_with_model_ref()]] - code - gateway/tests/test_switch_model_idempotent.py
 - [[After cloud switch, HERMES_MAIN_MODEL is written for Hermes too.]] - rationale - gateway/tests/test_switch_model_idempotent.py
 - [[After local switch, HERMES_MAIN_MODEL is written to .env.]] - rationale - gateway/tests/test_switch_model_idempotent.py
-- [[CompletedProcess_5]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[CompletedProcess_6]] - code - gateway/tests/test_switch_model_idempotent.py
 - [[Expected keys are present in docker.env after a switch.]] - rationale - gateway/tests/test_switch_model_idempotent.py
 - [[HERMES_MAIN_MODEL and OPENCLAW_MAIN_MODEL must reference the same model.]] - rationale - gateway/tests/test_switch_model_idempotent.py
 - [[Parse a docker.env file into a dict.]] - rationale - gateway/tests/test_switch_model_idempotent.py
-- [[Path_41]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[Path_44]] - code - gateway/tests/test_switch_model_idempotent.py
 - [[Returns (env_after_first_run, env_after_second_run).]] - rationale - gateway/tests/test_switch_model_idempotent.py
 - [[Run switch_model.sh with mocked external commands.]] - rationale - gateway/tests/test_switch_model_idempotent.py
 - [[TestSwitchModelBothBots]] - code - gateway/tests/test_switch_model_idempotent.py

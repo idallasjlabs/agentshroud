@@ -8,7 +8,7 @@ members: 126
 **Members:** 126 nodes
 
 ## Members
-- [[.__init__()_74]] - code - gateway/security/egress_approval.py
+- [[.__init__()_89]] - code - gateway/security/egress_approval.py
 - [[._append_decision()]] - code - gateway/security/egress_approval.py
 - [[._assess_risk()]] - code - gateway/security/egress_approval.py
 - [[._check_existing_rule()]] - code - gateway/security/egress_approval.py
@@ -143,25 +143,24 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 254]]
+- 10 edges to [[_COMMUNITY_Community 978]]
 - 6 edges to [[_COMMUNITY_Community 21]]
-- 5 edges to [[_COMMUNITY_Community 19]]
-- 4 edges to [[_COMMUNITY_Community 62]]
+- 6 edges to [[_COMMUNITY_Community 19]]
+- 4 edges to [[_COMMUNITY_Community 85]]
 - 3 edges to [[_COMMUNITY_Community 8]]
 - 3 edges to [[_COMMUNITY_Community 10]]
-- 2 edges to [[_COMMUNITY_Community 72]]
-- 2 edges to [[_COMMUNITY_Community 978]]
-- 2 edges to [[_COMMUNITY_Community 223]]
+- 2 edges to [[_COMMUNITY_Community 151]]
+- 2 edges to [[_COMMUNITY_Community 96]]
 - 2 edges to [[_COMMUNITY_Community 14]]
 - 1 edge to [[_COMMUNITY_Community 489]]
-- 1 edge to [[_COMMUNITY_Community 96]]
+- 1 edge to [[_COMMUNITY_Community 18]]
 - 1 edge to [[_COMMUNITY_Community 89]]
 - 1 edge to [[_COMMUNITY_Community 162]]
-- 1 edge to [[_COMMUNITY_Community 17]]
-- 1 edge to [[_COMMUNITY_Community 1127]]
+- 1 edge to [[_COMMUNITY_Community 166]]
+- 1 edge to [[_COMMUNITY_Community 37]]
 
 ## Top bridge nodes
-- [[ApprovalMode]] - degree 30, connects to 8 communities
+- [[ApprovalMode]] - degree 31, connects to 7 communities
 - [[egress_approval.py]] - degree 11, connects to 5 communities
 - [[EgressApprovalQueue]] - degree 35, connects to 3 communities
 - [[.request_approval()]] - degree 7, connects to 2 communities

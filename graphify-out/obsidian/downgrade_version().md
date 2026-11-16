@@ -12,8 +12,9 @@ tags:
 # downgrade_version()
 
 ## Connections
-- [[Any_10]] - `references` [EXTRACTED]
+- [[Any_20]] - `references` [EXTRACTED]
 - [[Downgrade to a previous version. Requires approval_id unless dry_run.]] - `rationale_for` [EXTRACTED]
+- [[HTTPException]] - `calls` [INFERRED]
 - [[VersionRequest]] - `references` [EXTRACTED]
 - [[downgrade()]] - `calls` [EXTRACTED]
 - [[version_routes.py]] - `contains` [EXTRACTED]

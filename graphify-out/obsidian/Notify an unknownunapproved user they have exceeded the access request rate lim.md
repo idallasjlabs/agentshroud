@@ -2,7 +2,7 @@
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
 community: "Community 216"
-location: "L7054"
+location: "L7092"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

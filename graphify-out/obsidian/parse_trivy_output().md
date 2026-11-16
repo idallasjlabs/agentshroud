@@ -30,7 +30,7 @@ tags:
 - [[.test_summary_critical()]] - `calls` [EXTRACTED]
 - [[.test_summary_top_cves_ids()]] - `calls` [EXTRACTED]
 - [[.test_summary_warning_high_only()]] - `calls` [EXTRACTED]
-- [[Any_64]] - `references` [EXTRACTED]
+- [[Any_74]] - `references` [EXTRACTED]
 - [[Parse raw Trivy JSON output into a structured summary.      Args         raw R]] - `rationale_for` [EXTRACTED]
 - [[run_trivy_scan()_1]] - `calls` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]

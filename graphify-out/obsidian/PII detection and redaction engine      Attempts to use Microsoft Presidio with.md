@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "Community 7"
-location: "L26"
+community: "Community 84"
+location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/Community_84
 ---
 
 # PII detection and redaction engine      Attempts to use Microsoft Presidio with
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PIISanitizer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_7
+#graphify/rationale #graphify/EXTRACTED #community/Community_84

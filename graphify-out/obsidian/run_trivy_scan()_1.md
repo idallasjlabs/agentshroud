@@ -21,7 +21,7 @@ tags:
 - [[.test_run_timeout()]] - `calls` [EXTRACTED]
 - [[.test_run_whitespace_only_stdout_is_error()]] - `calls` [EXTRACTED]
 - [[.test_trivy_binary_not_found()]] - `calls` [EXTRACTED]
-- [[Any_64]] - `references` [EXTRACTED]
+- [[Any_74]] - `references` [EXTRACTED]
 - [[Run a Trivy scan and return parsed results.      Args         target Scan targ]] - `rationale_for` [EXTRACTED]
 - [[daily_cve_report.py]] - `imports` [EXTRACTED]
 - [[generate_summary()_2]] - `shares_data_with` [EXTRACTED]

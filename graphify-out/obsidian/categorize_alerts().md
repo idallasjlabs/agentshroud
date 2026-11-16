@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.test_categorize_empty()]] - `calls` [EXTRACTED]
 - [[.test_categorize_mixed()]] - `calls` [EXTRACTED]
-- [[Any_40]] - `references` [EXTRACTED]
+- [[Any_50]] - `references` [EXTRACTED]
 - [[Categorize alerts by severity.      Args         alerts List of parsed alerts.]] - `rationale_for` [EXTRACTED]
 - [[falco_monitor.py]] - `contains` [EXTRACTED]
 - [[generate_summary()_1]] - `calls` [EXTRACTED]

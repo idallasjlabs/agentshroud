@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Blue Team Security Auditor (SEC-DEFENSE)_1]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Purpose_66]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[README_71]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Related Skills_87]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Usage_89]] - document - docker/config/hermes/skills/i-sec-defense/README.md
+- [[Codex CLI (TERTIARY agent, TOML config)]] - concept - .llm_settings/docs/AI_TOOLS_CONFIGURATION_GUIDE.md
+- [[Codex CLI role contract (test augmentation  validation)]] - concept - .llm_settings/scripts/AGENTS.md
+- [[MCP server integration matrix per tool]] - concept - .llm_settings/docs/CONFIGURATION_SUMMARY.md
+- [[UVuvx package manager prerequisite]] - concept - .llm_settings/docs/MCP_README.md
+- [[awslabs.aws-api-mcp-server configuration (--readonly)]] - concept - .llm_settings/docs/MCP_README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +22,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 90]]
+- 1 edge to [[_COMMUNITY_Community 742]]
+- 1 edge to [[_COMMUNITY_Community 1942]]
 
 ## Top bridge nodes
-- [[Blue Team Security Auditor (SEC-DEFENSE)_1]] - degree 5, connects to 1 community
+- [[awslabs.aws-api-mcp-server configuration (--readonly)]] - degree 5, connects to 2 communities

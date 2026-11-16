@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "rationale"
 community: "Community 19"
-location: "L2091"
+location: "L2304"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

@@ -12,7 +12,7 @@ tags:
 # LLMProxy
 
 ## Connections
-- [[.__init__()_24]] - `method` [EXTRACTED]
+- [[.__init__()_39]] - `method` [EXTRACTED]
 - [[._apply_filters()]] - `method` [EXTRACTED]
 - [[._build_timeout_fallback_response()]] - `method` [EXTRACTED]
 - [[._emit_failover_notice()]] - `method` [EXTRACTED]

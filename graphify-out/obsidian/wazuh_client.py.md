@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "Community 102"
+community: "Community 943"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_102
+  - community/Community_943
 ---
 
 # wazuh_client.py
 
 ## Connections
 - [[api.py]] - `conceptually_related_to` [INFERRED]
-- [[datetime_5]] - `imports_from` [EXTRACTED]
+- [[datetime_6]] - `imports_from` [EXTRACTED]
 - [[falco_monitor.py]] - `references` [EXTRACTED]
 - [[generate_summary()_3]] - `contains` [EXTRACTED]
 - [[get_fim_events()]] - `contains` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[test_security_audit.py]] - `imports_from` [EXTRACTED]
 - [[wazuh-ossec]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_102
+#graphify/code #graphify/EXTRACTED #community/Community_943

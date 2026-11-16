@@ -2,7 +2,7 @@
 source_file: "gateway/soc/websocket.py"
 type: "code"
 community: "Community 169"
-location: "L29"
+location: "L38"
 tags:
   - graphify/code
   - graphify/INFERRED
@@ -12,7 +12,7 @@ tags:
 # WebSocket
 
 ## Connections
-- [[.__init__()_132]] - `references` [EXTRACTED]
+- [[.__init__()_147]] - `references` [EXTRACTED]
 - [[Severity_2]] - `uses` [INFERRED]
 - [[WSEvent]] - `uses` [INFERRED]
 - [[WSEventType]] - `uses` [INFERRED]

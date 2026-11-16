@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "rationale"
-community: "Community 0"
+community: "Community 557"
 location: "L235"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/Community_557
 ---
 
 # Remove expired entries from seen IDs cache.          Returns:             Number
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.cleanup_seen()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/Community_557

@@ -1,24 +1,65 @@
 ---
 type: community
-members: 11
+members: 52
 ---
 
 # Community 93
 
-**Members:** 11 nodes
+**Members:** 52 nodes
 
 ## Members
-- [[.setup_method()_33]] - code - gateway/tests/test_security_hardening.py
-- [[.test_block_ipv4_mapped_ipv6_loopback()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_block_ipv4_mapped_ipv6_private()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_block_ipv4_private()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_block_ipv6_link_local()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_block_ipv6_loopback()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_block_ipv6_ula()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_block_link_local()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_block_localhost_variants()]] - code - gateway/tests/test_security_hardening.py
-- [[TestEgressSSRF]] - code - gateway/tests/test_security_hardening.py
-- [[Tests for SSRF protection in egress filter.]] - rationale - gateway/tests/test_security_hardening.py
+- [[.__init__()_56]] - code - gateway/proxy/url_analyzer.py
+- [[.__init__()_57]] - code - gateway/proxy/web_content_scanner.py
+- [[._check_base64()]] - code - gateway/proxy/url_analyzer.py
+- [[._is_private_ip()]] - code - gateway/proxy/url_analyzer.py
+- [[._is_ssrf()]] - code - gateway/proxy/url_analyzer.py
+- [[._resolve_host()]] - code - gateway/proxy/url_analyzer.py
+- [[._scan_encoded_payloads()]] - code - gateway/proxy/web_content_scanner.py
+- [[._scan_hidden_content()]] - code - gateway/proxy/web_content_scanner.py
+- [[._scan_pii()]] - code - gateway/proxy/web_content_scanner.py
+- [[._scan_prompt_injection()]] - code - gateway/proxy/web_content_scanner.py
+- [[._scan_xml_dtd()]] - code - gateway/proxy/web_content_scanner.py
+- [[._scan_zero_width()]] - code - gateway/proxy/web_content_scanner.py
+- [[.analyze()]] - code - gateway/proxy/url_analyzer.py
+- [[.analyze_and_pin()]] - code - gateway/proxy/url_analyzer.py
+- [[.finding_summary()]] - code - gateway/proxy/web_content_scanner.py
+- [[.flagged()]] - code - gateway/proxy/url_analyzer.py
+- [[.flagged()_1]] - code - gateway/proxy/web_content_scanner.py
+- [[.get_stats()_10]] - code - gateway/proxy/web_proxy.py
+- [[.scan()_1]] - code - gateway/proxy/web_content_scanner.py
+- [[.to_dict()_2]] - code - gateway/proxy/web_proxy.py
+- [[A single finding from URL analysis.]] - rationale - gateway/proxy/url_analyzer.py
+- [[A single finding from content scanning.]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Analyze URL and pin resolved IP to mitigate DNS rebinding TOCTOU.          When]] - rationale - gateway/proxy/url_analyzer.py
+- [[Analyze URLs for SSRF, data exfiltration, and suspicious patterns.]] - rationale - gateway/proxy/url_analyzer.py
+- [[Analyze a URL for security issues.          Returns URLAnalysisResult with verdi]] - rationale - gateway/proxy/url_analyzer.py
+- [[Any_33]] - code - gateway/proxy/web_proxy.py
+- [[Args             resolve_dns If True, resolve hostnames to IPs and check those]] - rationale - gateway/proxy/url_analyzer.py
+- [[Check for base64-encoded data in URL path and query values.]] - rationale - gateway/proxy/url_analyzer.py
+- [[Check if an IP address is privatereservedloopback.]] - rationale - gateway/proxy/url_analyzer.py
+- [[Check if hostname is a privatereserved address (SSRF attempt).]] - rationale - gateway/proxy/url_analyzer.py
+- [[ContentFinding]] - code - gateway/proxy/web_content_scanner.py
+- [[Detect DTDentity constructs that drive XML parser memory-safety bugs.]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Detect zero-width character sequences (steganographic attacks).]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Get proxy statistics._1]] - rationale - gateway/proxy/web_proxy.py
+- [[Resolve hostname to IP. Returns None on failure.          NOTE DNS rebinding at]] - rationale - gateway/proxy/url_analyzer.py
+- [[Result of analyzing a URL.]] - rationale - gateway/proxy/url_analyzer.py
+- [[Result of scanning web content.]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Scan HTML for hidden instructions in comments, invisible elements, meta tags.]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Scan content for security issues.          Args             content The web co]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Scan for base64-encoded or otherwise obfuscated payloads.]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Scan for prompt injection patterns.]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Scan response content for PII.]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Scan web content for prompt injection, PII, and hidden payloads.      All findin]] - rationale - gateway/proxy/web_content_scanner.py
+- [[ScanResult]] - code - gateway/proxy/web_content_scanner.py
+- [[URLAnalysisResult]] - code - gateway/proxy/url_analyzer.py
+- [[URLAnalyzer]] - code - gateway/proxy/url_analyzer.py
+- [[URLAnalyzer_1]] - code - gateway/proxy/web_proxy.py
+- [[URLFinding]] - code - gateway/proxy/url_analyzer.py
+- [[WebContentScanner]] - code - gateway/proxy/web_content_scanner.py
+- [[WebContentScanner_1]] - code - gateway/proxy/web_proxy.py
+- [[WebProxyConfig_1]] - code - gateway/proxy/web_proxy.py
+- [[web_content_scanner.py]] - code - gateway/proxy/web_content_scanner.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,13 +69,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 0]]
-- 5 edges to [[_COMMUNITY_Community 52]]
-- 3 edges to [[_COMMUNITY_Community 17]]
-- 3 edges to [[_COMMUNITY_Community 21]]
-- 3 edges to [[_COMMUNITY_Community 11]]
-- 1 edge to [[_COMMUNITY_Community 24]]
+- 11 edges to [[_COMMUNITY_Community 120]]
+- 9 edges to [[_COMMUNITY_Community 69]]
+- 8 edges to [[_COMMUNITY_Community 1000]]
+- 7 edges to [[_COMMUNITY_Community 27]]
+- 7 edges to [[_COMMUNITY_Community 562]]
+- 6 edges to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 8]]
+- 1 edge to [[_COMMUNITY_Community 17]]
+- 1 edge to [[_COMMUNITY_Community 437]]
 
 ## Top bridge nodes
-- [[TestEgressSSRF]] - degree 28, connects to 6 communities
-- [[.setup_method()_33]] - degree 3, connects to 2 communities
+- [[URLAnalyzer]] - degree 27, connects to 6 communities
+- [[WebContentScanner]] - degree 34, connects to 4 communities
+- [[web_content_scanner.py]] - degree 6, connects to 3 communities
+- [[Any_33]] - degree 6, connects to 2 communities
+- [[WebProxyConfig_1]] - degree 4, connects to 2 communities

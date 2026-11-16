@@ -14,7 +14,7 @@ members: 13
 - [[._should_block()]] - code - gateway/proxy/mcp_inspector.py
 - [[.inspect_tool_call()]] - code - gateway/proxy/mcp_inspector.py
 - [[.inspect_tool_result()]] - code - gateway/proxy/mcp_inspector.py
-- [[Any_17]] - code - gateway/proxy/mcp_inspector.py
+- [[Any_27]] - code - gateway/proxy/mcp_inspector.py
 - [[Decide whether to block based on findings and mode.]] - rationale - gateway/proxy/mcp_inspector.py
 - [[Inspect a tool result for PII and encoding issues.]] - rationale - gateway/proxy/mcp_inspector.py
 - [[Inspect an outgoing tool call for security threats.]] - rationale - gateway/proxy/mcp_inspector.py

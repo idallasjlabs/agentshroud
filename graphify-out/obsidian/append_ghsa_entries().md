@@ -12,7 +12,7 @@ tags:
 # append_ghsa_entries()
 
 ## Connections
-- [[Any_79]] - `references` [EXTRACTED]
+- [[Any_90]] - `references` [EXTRACTED]
 - [[Append under_review new_entries to agent_id's OWN registry list.      Insert]] - `rationale_for` [EXTRACTED]
 - [[_append_verified()]] - `calls` [EXTRACTED]
 - [[_registry_var_for()]] - `calls` [EXTRACTED]

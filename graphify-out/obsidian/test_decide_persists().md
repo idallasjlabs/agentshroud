@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "Community 108"
+community: "Community 30"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_108
+  - community/Community_30
 ---
 
 # test_decide_persists()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[ApprovalStore_1]] - `calls` [EXTRACTED]
 - [[Deciding an item persists the new status.]] - `rationale_for` [EXTRACTED]
-- [[Path_24]] - `references` [EXTRACTED]
+- [[Path_26]] - `references` [EXTRACTED]
 - [[_make_item()]] - `calls` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_108
+#graphify/code #graphify/EXTRACTED #community/Community_30

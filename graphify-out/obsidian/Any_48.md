@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/security/egress_retry.py"
 type: "code"
-community: "Community 16"
-location: "L49"
+community: "Community 822"
+location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/Community_822
 ---
 
 # Any
 
 ## Connections
-- [[.from_dict()_8]] - `references` [EXTRACTED]
-- [[.get_integrity_status()]] - `references` [EXTRACTED]
-- [[.get_recent_alerts()]] - `references` [EXTRACTED]
-- [[.to_dict()_11]] - `references` [EXTRACTED]
-- [[MemoryIntegrityConfig]] - `uses` [INFERRED]
+- [[retry_request()]] - `references` [EXTRACTED]
+- [[retry_request_sync()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_16
+#graphify/code #graphify/EXTRACTED #community/Community_822

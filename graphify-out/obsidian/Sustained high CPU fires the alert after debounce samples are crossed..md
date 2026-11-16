@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "rationale"
-community: "Community 5"
+community: "Community 605"
 location: "L106"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_5
+  - community/Community_605
 ---
 
 # Sustained high CPU fires the alert after debounce samples are crossed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_system_resource_monitoring_alerts_after_debounce()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_5
+#graphify/rationale #graphify/EXTRACTED #community/Community_605

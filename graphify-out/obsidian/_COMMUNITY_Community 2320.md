@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Example 1 Simple Navigation]] - document - skills/custom/securebrowser/README.md
-- [[Example 2 Fill Form (Non-Sensitive)]] - document - skills/custom/securebrowser/README.md
-- [[Example 3 Fill Password (Sensitive)]] - document - skills/custom/securebrowser/README.md
-- [[Example 4 Handle CAPTCHA]] - document - skills/custom/securebrowser/README.md
-- [[Usage Examples_2]] - document - skills/custom/securebrowser/README.md
+- [[.test_compact_timestamp_normalised_to_iso()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_critical_and_warning_statuses()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_garbage_timestamp_falls_back_to_mtime()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_not_run()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestOpenscapSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +22,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 299]]
+- 3 edges to [[_COMMUNITY_Community 219]]
+- 1 edge to [[_COMMUNITY_Community 516]]
 
 ## Top bridge nodes
-- [[Usage Examples_2]] - degree 5, connects to 1 community
+- [[TestOpenscapSummary]] - degree 5, connects to 1 community
+- [[.test_critical_and_warning_statuses()]] - degree 2, connects to 1 community
+- [[.test_compact_timestamp_normalised_to_iso()]] - degree 2, connects to 1 community
+- [[.test_garbage_timestamp_falls_back_to_mtime()]] - degree 2, connects to 1 community

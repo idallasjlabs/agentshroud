@@ -1,19 +1,20 @@
 ---
 type: community
-members: 6
+members: 7
 ---
 
 # Community 2041
 
-**Members:** 6 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[Brand Applications]] - document - branding/guidelines/brand-guidelines.md
-- [[Documentation_3]] - document - branding/guidelines/brand-guidelines.md
-- [[Presentations]] - document - branding/guidelines/brand-guidelines.md
-- [[Print Materials]] - document - branding/guidelines/brand-guidelines.md
-- [[Social Media_1]] - document - branding/guidelines/brand-guidelines.md
-- [[Website]] - document - branding/guidelines/brand-guidelines.md
+- [[deployment-mode.sh]] - code - scripts/lib/deployment-mode.sh
+- [[deployment-mode.sh script]] - code - scripts/lib/deployment-mode.sh
+- [[deployment_mode_resolve()]] - code - scripts/lib/deployment-mode.sh
+- [[deployment_profile_flags()]] - code - scripts/lib/deployment-mode.sh
+- [[deployment_runs_edge()]] - code - scripts/lib/deployment-mode.sh
+- [[deployment_runs_local_agents()]] - code - scripts/lib/deployment-mode.sh
+- [[deployment_up_flags()]] - code - scripts/lib/deployment-mode.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,10 +22,3 @@ members: 6
 TABLE source_file, type FROM #community/Community_2041
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 192]]
-- 1 edge to [[_COMMUNITY_Community 231]]
-
-## Top bridge nodes
-- [[Brand Applications]] - degree 7, connects to 2 communities

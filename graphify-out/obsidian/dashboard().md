@@ -12,7 +12,7 @@ tags:
 # dashboard()
 
 ## Connections
-- [[Path_44]] - `calls` [EXTRACTED]
+- [[Path_47]] - `calls` [EXTRACTED]
 - [[Serve the main management dashboard.]] - `rationale_for` [EXTRACTED]
 - [[dashboard.html (Control Center Template)]] - `references` [EXTRACTED]
 - [[management.py]] - `contains` [EXTRACTED]

@@ -1,25 +1,30 @@
 ---
 type: community
-members: 85
+members: 97
 ---
 
 # Community 132
 
-**Members:** 85 nodes
+**Members:** 97 nodes
 
 ## Members
-- [[.__init__()_30]] - code - gateway/proxy/mcp_proxy.py
-- [[.__init__()_178]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.__init__()_179]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.__init__()_45]] - code - gateway/proxy/mcp_proxy.py
+- [[.__init__()_199]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.__init__()_200]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[._fake_aiohttp()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[.get_item()_2]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[.get_or_create()]] - code - gateway/proxy/mcp_proxy.py
 - [[.is_running()]] - code - gateway/proxy/mcp_proxy.py
-- [[.kill()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.kill()_1]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[.remove()]] - code - gateway/proxy/mcp_proxy.py
+- [[.send_request()]] - code - gateway/proxy/mcp_proxy.py
 - [[.send_request()_2]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.shutdown()]] - code - gateway/proxy/mcp_proxy.py
+- [[.start()_1]] - code - gateway/proxy/mcp_proxy.py
 - [[.stop()_2]] - code - gateway/proxy/mcp_proxy.py
+- [[.stop()_3]] - code - gateway/proxy/mcp_proxy.py
 - [[.stop()_12]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.stop_all()]] - code - gateway/proxy/mcp_proxy.py
 - [[.submit_tool_request()_4]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[.terminate()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[.test_approved_decision_allows()]] - code - gateway/tests/test_mcp_proxy_coverage.py
@@ -57,10 +62,13 @@ members: 85
 - [[.test_successful_execution_with_result_inspection()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[.test_sync_egress_filter_deny_blocks()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[.test_timeout_error()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_tool_call_generates_id_and_timestamp()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[.test_tool_not_requiring_approval_allowed()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_tool_result_timestamp_default()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[.test_unknown_server_returns_error_result()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[.wait()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[.wait_for_decision()_4]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[Clean shutdown — close all connections.]] - rationale - gateway/proxy/mcp_proxy.py
 - [[Configuration for a specific MCP tool.]] - rationale - gateway/proxy/mcp_config.py
 - [[ConnectionPool]] - code - gateway/proxy/mcp_proxy.py
 - [[Exception_4]] - code - gateway/tests/test_mcp_proxy_coverage.py
@@ -71,16 +79,20 @@ members: 85
 - [[HttpSseConnection]] - code - gateway/proxy/mcp_proxy.py
 - [[MCPProxy_1]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[MCPProxyConfig_3]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[MCPToolCall_1]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[MCPToolConfig]] - code - gateway/proxy/mcp_config.py
 - [[Manages a stdio connection to an MCP server process.]] - rationale - gateway/proxy/mcp_proxy.py
 - [[Manages an HTTPSSE connection to an MCP server.]] - rationale - gateway/proxy/mcp_proxy.py
 - [[Pool of connections to MCP servers.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Send a JSON-RPC request and read the response.]] - rationale - gateway/proxy/mcp_proxy.py
 - [[Stand-in connection injected into the proxy's pool.]] - rationale - gateway/tests/test_mcp_proxy_coverage.py
 - [[Stand-in for asyncio.subprocess.Process — no real child process.]] - rationale - gateway/tests/test_mcp_proxy_coverage.py
+- [[Start the MCP server process.]] - rationale - gateway/proxy/mcp_proxy.py
 - [[StdioConnection]] - code - gateway/proxy/mcp_proxy.py
 - [[Stop the MCP server process.]] - rationale - gateway/proxy/mcp_proxy.py
 - [[TestApprovalQueue]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[TestConnectionPool]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestDataclasses]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[TestEgressFilterPaths]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[TestEmitPrivacyEvent]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[TestExecuteToolCall]] - code - gateway/tests/test_mcp_proxy_coverage.py
@@ -102,28 +114,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 83 edges to [[_COMMUNITY_Community 54]]
-- 72 edges to [[_COMMUNITY_Community 64]]
-- 31 edges to [[_COMMUNITY_Community 329]]
-- 26 edges to [[_COMMUNITY_Community 2038]]
-- 22 edges to [[_COMMUNITY_Community 184]]
-- 22 edges to [[_COMMUNITY_Community 59]]
-- 5 edges to [[_COMMUNITY_Community 140]]
-- 4 edges to [[_COMMUNITY_Community 1127]]
+- 121 edges to [[_COMMUNITY_Community 54]]
+- 82 edges to [[_COMMUNITY_Community 64]]
+- 31 edges to [[_COMMUNITY_Community 965]]
+- 24 edges to [[_COMMUNITY_Community 184]]
+- 22 edges to [[_COMMUNITY_Community 2038]]
+- 4 edges to [[_COMMUNITY_Community 37]]
 - 3 edges to [[_COMMUNITY_Community 21]]
-- 2 edges to [[_COMMUNITY_Community 941]]
-- 2 edges to [[_COMMUNITY_Community 1970]]
-- 2 edges to [[_COMMUNITY_Community 2033]]
-- 2 edges to [[_COMMUNITY_Community 965]]
-- 2 edges to [[_COMMUNITY_Community 2032]]
-- 1 edge to [[_COMMUNITY_Community 1942]]
-- 1 edge to [[_COMMUNITY_Community 2071]]
-- 1 edge to [[_COMMUNITY_Community 232]]
-- 1 edge to [[_COMMUNITY_Community 181]]
+- 1 edge to [[_COMMUNITY_Community 68]]
+- 1 edge to [[_COMMUNITY_Community 59]]
+- 1 edge to [[_COMMUNITY_Community 941]]
+- 1 edge to [[_COMMUNITY_Community 1970]]
 
 ## Top bridge nodes
-- [[MCPToolConfig]] - degree 59, connects to 11 communities
-- [[HttpSseConnection]] - degree 35, connects to 8 communities
-- [[test_mcp_proxy_coverage.py]] - degree 34, connects to 8 communities
-- [[StdioConnection]] - degree 38, connects to 7 communities
-- [[ConnectionPool]] - degree 36, connects to 7 communities
+- [[MCPToolConfig]] - degree 59, connects to 8 communities
+- [[FakeApprovalQueue]] - degree 27, connects to 6 communities
+- [[FakeProcess]] - degree 23, connects to 6 communities
+- [[test_mcp_proxy_coverage.py]] - degree 34, connects to 5 communities
+- [[FakeConn]] - degree 30, connects to 5 communities

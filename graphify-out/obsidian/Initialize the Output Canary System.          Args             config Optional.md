@@ -12,6 +12,6 @@ tags:
 # Initialize the Output Canary System.          Args:             config: Optional
 
 ## Connections
-- [[.__init__()_104]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_119]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_233

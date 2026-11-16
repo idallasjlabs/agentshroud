@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "Community 72"
+community: "Community 71"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_71
 ---
 
 # NetworkValidator
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_44]] - `calls` [EXTRACTED]
-- [[.__init__()_101]] - `method` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_59]] - `calls` [EXTRACTED]
+- [[.__init__()_116]] - `method` [EXTRACTED]
 - [[._parse_service_network_config()]] - `method` [EXTRACTED]
 - [[._validate_container_runtime_config()]] - `method` [EXTRACTED]
 - [[._validate_dns_configuration()]] - `method` [EXTRACTED]
@@ -32,13 +32,13 @@ tags:
 - [[.validate_docker_compose_config()]] - `method` [EXTRACTED]
 - [[.validate_runtime_configuration()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[DriftDetector]] - `semantically_similar_to` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[Path_35]] - `uses` [INFERRED]
+- [[Path_38]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
@@ -69,4 +69,4 @@ tags:
 - [[validate_network_security()]] - `references` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/Community_71

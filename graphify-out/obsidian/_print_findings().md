@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[ScanResult_3]] - `references` [EXTRACTED]
-- [[main()_13]] - `calls` [EXTRACTED]
+- [[main()_15]] - `calls` [EXTRACTED]
 - [[scan.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_924

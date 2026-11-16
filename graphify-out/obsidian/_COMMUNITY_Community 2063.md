@@ -1,20 +1,19 @@
 ---
 type: community
-members: 7
+members: 6
 ---
 
 # Community 2063
 
-**Members:** 7 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[.build_full_mesh()]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[.register_peer()_1]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[.register_trust_manager()]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[Attach a TrustManager instance to a bot name.]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[Build a ledger where every bot in bot_ids is a mutual peer of         every ot]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[Register bot_b as a peer of bot_a.          Args             bot_a Source bot]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[TrustManager]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[.__init__()_5]] - code - gateway/approval_queue/queue.py
+- [[._load_pending_store()]] - code - gateway/approval_queue/queue.py
+- [[ApprovalQueueConfig_1]] - code - gateway/approval_queue/queue.py
+- [[Initialize approval queue          Args             config Approval queue conf]] - rationale - gateway/approval_queue/queue.py
+- [[Load queue items from store file when present.]] - rationale - gateway/approval_queue/queue.py
+- [[MFAGuard_1]] - code - gateway/approval_queue/queue.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,13 +23,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 24]]
-- 1 edge to [[_COMMUNITY_Community 489]]
-- 1 edge to [[_COMMUNITY_Community 88]]
-- 1 edge to [[_COMMUNITY_Community 11]]
+- 2 edges to [[_COMMUNITY_Community 7]]
 
 ## Top bridge nodes
-- [[.build_full_mesh()]] - degree 6, connects to 3 communities
-- [[.register_trust_manager()]] - degree 4, connects to 1 community
-- [[.register_peer()_1]] - degree 3, connects to 1 community
-- [[TrustManager]] - degree 2, connects to 1 community
+- [[.__init__()_5]] - degree 5, connects to 1 community
+- [[._load_pending_store()]] - degree 3, connects to 1 community

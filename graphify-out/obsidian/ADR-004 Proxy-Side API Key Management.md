@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md"
 type: "concept"
-community: "Community 487"
+community: "Community 418"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_487
+  - community/Community_418
 ---
 
 # ADR-004: Proxy-Side API Key Management
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Gateway (FastAPI)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_487
+#graphify/concept #graphify/INFERRED #community/Community_418

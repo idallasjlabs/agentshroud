@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_raw_web_fetch_json_punycode_domain_does_not_queue_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[PunycodeIDN domains should be rejected from approval queue.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_healthcheck_skill_error_without_sandbox_hint_is_not_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Healthcheck SKILL messages without sandbox context should not trigger sandbox re]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 626]]
-- 1 edge to [[_COMMUNITY_Community 2]]
 - 1 edge to [[_COMMUNITY_Community 845]]
+- 1 edge to [[_COMMUNITY_Community 2]]
+- 1 edge to [[_COMMUNITY_Community 626]]
 
 ## Top bridge nodes
-- [[.test_raw_web_fetch_json_punycode_domain_does_not_queue_approval()]] - degree 4, connects to 3 communities
+- [[.test_healthcheck_skill_error_without_sandbox_hint_is_not_rewritten()]] - degree 4, connects to 3 communities

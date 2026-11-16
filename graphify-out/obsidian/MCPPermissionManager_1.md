@@ -12,7 +12,7 @@ tags:
 # MCPPermissionManager
 
 ## Connections
-- [[.__init__()_31]] - `references` [EXTRACTED]
+- [[.__init__()_46]] - `references` [EXTRACTED]
 - [[InspectionResult]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]
 - [[MCPInspector]] - `uses` [INFERRED]

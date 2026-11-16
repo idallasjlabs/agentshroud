@@ -1,26 +1,19 @@
 ---
-source_file: "scripts/triage-cve-mitigations.py"
+source_file: "scripts/soak_status.py"
 type: "code"
-community: "Community 8"
-location: "L1254"
+community: "Community 310"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_8
+  - community/Community_310
 ---
 
 # main()
 
 ## Connections
-- [[CLI entry point.      Args         argv Optional argv override (for tests).]] - `rationale_for` [EXTRACTED]
-- [[_rel()]] - `calls` [EXTRACTED]
-- [[gap_report_path()]] - `calls` [EXTRACTED]
-- [[render_gap_report()]] - `calls` [EXTRACTED]
-- [[rewrite_registry_text()_1]] - `calls` [EXTRACTED]
-- [[summarize()]] - `calls` [EXTRACTED]
-- [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
-- [[triage_agent()]] - `calls` [EXTRACTED]
-- [[triage_agent_full()]] - `calls` [EXTRACTED]
-- [[untriageable_reason()]] - `calls` [EXTRACTED]
+- [[check-soak-status.sh]] - `references` [EXTRACTED]
+- [[classify()_1]] - `calls` [EXTRACTED]
+- [[soak_status.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_8
+#graphify/code #graphify/EXTRACTED #community/Community_310

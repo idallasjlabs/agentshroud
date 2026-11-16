@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auto_remediate_cves.py"
 type: "code"
-community: "Community 261"
+community: "Community 420"
 location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_261
+  - community/Community_420
 ---
 
 # TestVersionPinIO
@@ -23,4 +23,4 @@ tags:
 - [[RemediationPlan]] - `uses` [INFERRED]
 - [[test_auto_remediate_cves.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_261
+#graphify/code #graphify/EXTRACTED #community/Community_420

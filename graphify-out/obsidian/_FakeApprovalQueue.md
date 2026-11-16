@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "Community 329"
+community: "Community 35"
 location: "L272"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_329
+  - community/Community_35
 ---
 
 # _FakeApprovalQueue
 
 ## Connections
-- [[.__init__()_176]] - `method` [EXTRACTED]
+- [[.__init__()_197]] - `method` [EXTRACTED]
 - [[.submit_tool_request()_3]] - `method` [EXTRACTED]
 - [[.wait_for_decision()_3]] - `method` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
@@ -33,4 +33,4 @@ tags:
 - [[test_enforce_high_risk_queue_no_wait_denies_closed()]] - `calls` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_329
+#graphify/code #graphify/INFERRED #community/Community_35

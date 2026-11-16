@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "Community 7"
-location: "L410"
+community: "Community 84"
+location: "L492"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/Community_84
 ---
 
 # Return current enforcement mode          Returns:             "enforce" or "moni
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_7
+#graphify/rationale #graphify/EXTRACTED #community/Community_84

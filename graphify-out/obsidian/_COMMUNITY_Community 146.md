@@ -1,20 +1,18 @@
 ---
 type: community
-members: 57
+members: 58
 ---
 
 # Community 146
 
-**Members:** 57 nodes
+**Members:** 58 nodes
 
 ## Members
-- [[.__init__()_120]] - code - gateway/security/subagent_monitor.py
+- [[.__init__()_135]] - code - gateway/security/subagent_monitor.py
 - [[._log_event()_1]] - code - gateway/security/subagent_monitor.py
 - [[.check_tool_usage()]] - code - gateway/security/subagent_monitor.py
 - [[.deregister()_1]] - code - gateway/security/subagent_monitor.py
 - [[.get_active()]] - code - gateway/security/subagent_monitor.py
-- [[.get_audit_log()_6]] - code - gateway/security/subagent_monitor.py
-- [[.get_flagged_events()]] - code - gateway/security/subagent_monitor.py
 - [[.kill_agent()]] - code - gateway/security/subagent_monitor.py
 - [[.kill_all()]] - code - gateway/security/subagent_monitor.py
 - [[.register_spawn()]] - code - gateway/security/subagent_monitor.py
@@ -40,6 +38,7 @@ members: 57
 - [[.test_subagent_cannot_exceed_parent()]] - code - gateway/tests/test_subagent_monitor.py
 - [[.test_subagent_info_has_spawn_time()]] - code - gateway/tests/test_subagent_monitor.py
 - [[.test_subagent_inherits_parent_trust()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_subagent_monitor_default_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[.test_tool_usage_logged()]] - code - gateway/tests/test_subagent_monitor.py
 - [[.test_tool_within_trust_allowed()]] - code - gateway/tests/test_subagent_monitor.py
 - [[.test_trust_inheritance_default_on()]] - code - gateway/tests/test_subagent_monitor.py
@@ -48,8 +47,10 @@ members: 57
 - [[If sub-agent tries tool above its trust, flag it.]] - rationale - gateway/tests/test_subagent_monitor.py
 - [[In monitor mode, even trust violations are allowed (just flagged).]] - rationale - gateway/tests/test_subagent_monitor.py
 - [[Monitor mode flags but allows.]] - rationale - gateway/tests/test_subagent_monitor.py
+- [[SubagentEventType]] - code - gateway/security/subagent_monitor.py
 - [[SubagentInfo]] - code - gateway/security/subagent_monitor.py
 - [[SubagentMonitor]] - code - gateway/security/subagent_monitor.py
+- [[SubagentMonitorConfig]] - code - gateway/security/subagent_monitor.py
 - [[TestAuditTrail_2]] - code - gateway/tests/test_subagent_monitor.py
 - [[TestConcurrentLimits]] - code - gateway/tests/test_subagent_monitor.py
 - [[TestKillSwitch]] - code - gateway/tests/test_subagent_monitor.py
@@ -74,18 +75,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 27 edges to [[_COMMUNITY_Community 0]]
-- 24 edges to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 8]]
+- 25 edges to [[_COMMUNITY_Community 72]]
+- 14 edges to [[_COMMUNITY_Community 0]]
+- 6 edges to [[_COMMUNITY_Community 809]]
+- 3 edges to [[_COMMUNITY_Community 8]]
+- 3 edges to [[_COMMUNITY_Community 121]]
+- 2 edges to [[_COMMUNITY_Community 1]]
+- 2 edges to [[_COMMUNITY_Community 557]]
+- 1 edge to [[_COMMUNITY_Community 68]]
 - 1 edge to [[_COMMUNITY_Community 307]]
 - 1 edge to [[_COMMUNITY_Community 102]]
-- 1 edge to [[_COMMUNITY_Community 5]]
+- 1 edge to [[_COMMUNITY_Community 115]]
 - 1 edge to [[_COMMUNITY_Community 76]]
-- 1 edge to [[_COMMUNITY_Community 181]]
+- 1 edge to [[_COMMUNITY_Community 151]]
+- 1 edge to [[_COMMUNITY_Community 394]]
+- 1 edge to [[_COMMUNITY_Community 140]]
 
 ## Top bridge nodes
-- [[subagent_monitor.py]] - degree 10, connects to 6 communities
-- [[SubagentMonitor]] - degree 46, connects to 3 communities
-- [[test_subagent_monitor.py]] - degree 15, connects to 2 communities
-- [[TestTrustInheritance]] - degree 9, connects to 2 communities
-- [[TestSubagentTracking]] - degree 8, connects to 2 communities
+- [[SubagentMonitor]] - degree 46, connects to 8 communities
+- [[SubagentEventType]] - degree 22, connects to 5 communities
+- [[subagent_monitor.py]] - degree 10, connects to 5 communities
+- [[SubagentMonitorConfig]] - degree 30, connects to 3 communities
+- [[._log_event()_1]] - degree 8, connects to 1 community

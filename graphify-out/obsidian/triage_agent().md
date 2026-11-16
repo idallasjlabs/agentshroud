@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Triage every ``under_review`` entry for agent_id (per-agent isolated).      Re]] - `rationale_for` [EXTRACTED]
 - [[TriageResult]] - `references` [EXTRACTED]
-- [[main()_28]] - `calls` [EXTRACTED]
+- [[main()_30]] - `calls` [EXTRACTED]
 - [[process_ghsa_advisories()]] - `references` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 - [[triage_entry()]] - `calls` [EXTRACTED]

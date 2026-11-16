@@ -2,7 +2,7 @@
 source_file: "gateway/soc/websocket.py"
 type: "rationale"
 community: "Community 169"
-location: "L124"
+location: "L133"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

@@ -12,7 +12,7 @@ tags:
 # FetchOutcome
 
 ## Connections
-- [[.__call__()_2]] - `references` [EXTRACTED]
+- [[.__call__()_3]] - `references` [EXTRACTED]
 - [[.test_not_ok_on_non_2xx()]] - `calls` [EXTRACTED]
 - [[.test_not_ok_without_content()]] - `calls` [EXTRACTED]
 - [[.test_ok_requires_2xx_and_content()]] - `calls` [EXTRACTED]

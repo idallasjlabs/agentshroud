@@ -21,7 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 10]]
+- 2 edges to [[_COMMUNITY_Community 10]]
 
 ## Top bridge nodes
-- [[.require()]] - degree 4, connects to 1 community
+- [[.require()]] - degree 5, connects to 1 community

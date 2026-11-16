@@ -12,7 +12,7 @@ tags:
 # InfoCategory
 
 ## Connections
-- [[.__init__()_103]] - `calls` [EXTRACTED]
+- [[.__init__()_118]] - `calls` [EXTRACTED]
 - [[._is_allowed_for_trust()]] - `references` [EXTRACTED]
 - [[Categories of information that may need filtering.]] - `rationale_for` [EXTRACTED]
 - [[Enum]] - `inherits` [EXTRACTED]

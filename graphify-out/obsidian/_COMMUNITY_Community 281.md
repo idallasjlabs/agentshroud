@@ -27,7 +27,7 @@ members: 28
 - [[.test_sync_allows_clean_tree()]] - code - gateway/tests/test_skill_guard.py
 - [[.test_sync_dry_run_does_not_write_but_still_scans()]] - code - gateway/tests/test_skill_guard.py
 - [[Exercise ``gateway.skills.scan.main`` directly for exit-code coverage.]] - rationale - gateway/tests/test_skill_guard.py
-- [[Path_39]] - code - gateway/tests/test_skill_guard.py
+- [[Path_42]] - code - gateway/tests/test_skill_guard.py
 - [[TestClient]] - code - gateway/tests/test_skill_guard.py
 - [[TestReloadIntegration]] - code - gateway/tests/test_skill_guard.py
 - [[TestScanEntrypoint]] - code - gateway/tests/test_skill_guard.py
@@ -45,11 +45,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 19 edges to [[_COMMUNITY_Community 133]]
-- 18 edges to [[_COMMUNITY_Community 924]]
+- 25 edges to [[_COMMUNITY_Community 133]]
+- 12 edges to [[_COMMUNITY_Community 924]]
 
 ## Top bridge nodes
-- [[Path_39]] - degree 24, connects to 2 communities
+- [[Path_42]] - degree 24, connects to 2 communities
 - [[TestScanEntrypointInProcess]] - degree 13, connects to 2 communities
 - [[TestSyncScriptPreflight]] - degree 11, connects to 2 communities
 - [[TestReloadIntegration]] - degree 10, connects to 2 communities

@@ -2,7 +2,7 @@
 source_file: "gateway/ingest_api/main.py"
 type: "code"
 community: "Community 978"
-location: "L4311"
+location: "L4316"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,9 +12,10 @@ tags:
 # llm_api_proxy()
 
 ## Connections
-- [[JSONResponse]] - `calls` [EXTRACTED]
+- [[HTTPException]] - `calls` [EXTRACTED]
+- [[JSONResponse_1]] - `calls` [EXTRACTED]
 - [[Proxy Anthropic API calls through security pipeline.]] - `rationale_for` [EXTRACTED]
-- [[Request_1]] - `references` [EXTRACTED]
+- [[Request_2]] - `references` [EXTRACTED]
 - [[llm_api_v1_prefix_alias()]] - `calls` [EXTRACTED]
 - [[llm_openai_chat_alias()]] - `calls` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]

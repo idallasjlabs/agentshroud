@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "rationale"
-community: "Community 108"
+community: "Community 30"
 location: "L148"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_108
+  - community/Community_30
 ---
 
 # Submit a tool call request for approval.          Args:             tool_name: T
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.submit_tool_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_108
+#graphify/rationale #graphify/EXTRACTED #community/Community_30

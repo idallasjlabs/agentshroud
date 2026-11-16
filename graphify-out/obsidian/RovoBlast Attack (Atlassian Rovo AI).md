@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/attack-teardowns-rovoblast-cross-turn.md"
 type: "concept"
-community: "Community 221"
+community: "Community 1563"
 location: "lines 9-36"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_221
+  - community/Community_1563
 ---
 
 # RovoBlast Attack (Atlassian Rovo AI)
@@ -20,4 +20,4 @@ tags:
 - [[Varonis RovoBlast How One Click Triggered Atlassian's AI Assistant to Leak Data]] - `cites` [EXTRACTED]
 - [[context_guard.py Provenance Tagging (ContextSegment)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_221
+#graphify/concept #graphify/EXTRACTED #community/Community_1563

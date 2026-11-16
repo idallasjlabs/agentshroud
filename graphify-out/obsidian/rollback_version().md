@@ -12,7 +12,8 @@ tags:
 # rollback_version()
 
 ## Connections
-- [[Any_10]] - `references` [EXTRACTED]
+- [[Any_20]] - `references` [EXTRACTED]
+- [[HTTPException]] - `calls` [INFERRED]
 - [[Rollback to the previous version. Requires approval_id.]] - `rationale_for` [EXTRACTED]
 - [[RollbackRequest]] - `references` [EXTRACTED]
 - [[rollback()]] - `calls` [EXTRACTED]

@@ -1,17 +1,20 @@
 ---
 type: community
-members: 4
+members: 7
 ---
 
 # Community 2042
 
-**Members:** 4 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[.record_segment()]] - code - gateway/security/context_guard.py
-- [[.tag_segment()]] - code - gateway/security/context_guard.py
-- [[Create a provenance record for a context segment.]] - rationale - gateway/security/context_guard.py
-- [[Tag a segment and append it to the session's provenance log.]] - rationale - gateway/security/context_guard.py
+- [[VII-A. Enforce-by-Default (R-02, R-03)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VII-B. Outbound Information Filter (R-01)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VII-C. Per-User Session Isolation (R-04, R-05)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VII-D. Separation of Privilege (R-06, R-07)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VII-E. Human-in-the-Loop (R-08, R-09)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VII-F. Credential Isolation (R-10, R-11, R-12)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VII. v0.8.0 Remediation]] - document - docs/papers/agentshroud-ieee-paper.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 22]]
-- 2 edges to [[_COMMUNITY_Community 0]]
+- 1 edge to [[_COMMUNITY_Community 330]]
 
 ## Top bridge nodes
-- [[.tag_segment()]] - degree 4, connects to 2 communities
-- [[.record_segment()]] - degree 4, connects to 2 communities
+- [[VII. v0.8.0 Remediation]] - degree 7, connects to 1 community

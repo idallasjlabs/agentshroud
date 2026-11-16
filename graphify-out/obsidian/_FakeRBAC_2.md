@@ -12,7 +12,7 @@ tags:
 # _FakeRBAC
 
 ## Connections
-- [[.__init__()_186]] - `method` [EXTRACTED]
+- [[.__init__()_211]] - `method` [EXTRACTED]
 - [[.check_permission()_2]] - `method` [EXTRACTED]
 - [[.test_get_caller_passthrough()]] - `calls` [EXTRACTED]
 - [[.test_is_group_admin_with_teams_config()]] - `calls` [EXTRACTED]

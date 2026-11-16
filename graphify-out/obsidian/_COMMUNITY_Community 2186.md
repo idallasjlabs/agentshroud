@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_64]] - document - docker/config/hermes/skills/i-sad/README.md
-- [[README_69]] - document - docker/config/hermes/skills/i-sad/README.md
-- [[Related Skills_85]] - document - docker/config/hermes/skills/i-sad/README.md
-- [[System Audit Documentation_1]] - document - docker/config/hermes/skills/i-sad/README.md
-- [[Usage_87]] - document - docker/config/hermes/skills/i-sad/README.md
+- [[additionalProperties_2]] - code - config/inbound-edge/schema.json
+- [[enum_3]] - code - config/inbound-edge/schema.json
+- [[maxProperties]] - code - config/inbound-edge/schema.json
+- [[tools]] - code - config/inbound-edge/schema.json
+- [[type_13]] - code - config/inbound-edge/schema.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 90]]
+- 1 edge to [[_COMMUNITY_Community 1139]]
 
 ## Top bridge nodes
-- [[System Audit Documentation_1]] - degree 5, connects to 1 community
+- [[tools]] - degree 4, connects to 1 community

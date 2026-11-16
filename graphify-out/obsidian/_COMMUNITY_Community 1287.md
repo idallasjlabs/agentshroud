@@ -1,24 +1,28 @@
 ---
 type: community
-members: 11
+members: 15
 ---
 
 # Community 1287
 
-**Members:** 11 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[._patch_all_not_run()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_overall_clean_when_all_clean()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_overall_critical_when_any_critical()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_overall_not_configured_when_all_not_run()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_overall_warning_when_high_only()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_scanners_dict_has_all_tools()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_timestamp_present()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_totals_sum_across_scanners()]] - code - gateway/tests/test_scanner_integration.py
-- [[Aggregate results from all security scanners into a unified dict.      Returns]] - rationale - gateway/security/scanner_integration.py
-- [[TestAggregateResults]] - code - gateway/tests/test_scanner_integration.py
-- [[aggregate_results()]] - code - gateway/security/scanner_integration.py
+- [[._compute_file_hash()]] - code - gateway/security/memory_integrity.py
+- [[._detect_modification_source()]] - code - gateway/security/memory_integrity.py
+- [[._is_in_write_window()]] - code - gateway/security/memory_integrity.py
+- [[._save_integrity_database()]] - code - gateway/security/memory_integrity.py
+- [[.clear_old_alerts()]] - code - gateway/security/memory_integrity.py
+- [[.scan_all_monitored_files()]] - code - gateway/security/memory_integrity.py
+- [[.scan_file()]] - code - gateway/security/memory_integrity.py
+- [[Attempt to detect the source of a file modification.          Detection strategy]] - rationale - gateway/security/memory_integrity.py
+- [[Check if a file is currently in a write grace window.]] - rationale - gateway/security/memory_integrity.py
+- [[Clear alerts older than N days.]] - rationale - gateway/security/memory_integrity.py
+- [[Compute SHA-256 hash of a file.]] - rationale - gateway/security/memory_integrity.py
+- [[Path_17]] - code - gateway/security/memory_integrity.py
+- [[Save integrity database to disk.]] - rationale - gateway/security/memory_integrity.py
+- [[Scan a single file for integrity changes.]] - rationale - gateway/security/memory_integrity.py
+- [[Scan all configured monitored files and directories.]] - rationale - gateway/security/memory_integrity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,19 +32,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_Community 67]]
-- 3 edges to [[_COMMUNITY_Community 943]]
-- 2 edges to [[_COMMUNITY_Community 29]]
-- 1 edge to [[_COMMUNITY_Community 842]]
-- 1 edge to [[_COMMUNITY_Community 363]]
-- 1 edge to [[_COMMUNITY_Community 1969]]
-- 1 edge to [[_COMMUNITY_Community 10]]
-- 1 edge to [[_COMMUNITY_Community 51]]
-- 1 edge to [[_COMMUNITY_Community 207]]
+- 13 edges to [[_COMMUNITY_Community 477]]
 
 ## Top bridge nodes
-- [[aggregate_results()]] - degree 19, connects to 8 communities
-- [[._patch_all_not_run()]] - degree 10, connects to 1 community
-- [[TestAggregateResults]] - degree 9, connects to 1 community
-- [[.test_overall_clean_when_all_clean()]] - degree 7, connects to 1 community
-- [[.test_overall_critical_when_any_critical()]] - degree 4, connects to 1 community
+- [[.scan_file()]] - degree 9, connects to 1 community
+- [[._save_integrity_database()]] - degree 6, connects to 1 community
+- [[._detect_modification_source()]] - degree 6, connects to 1 community
+- [[Path_17]] - degree 5, connects to 1 community
+- [[._is_in_write_window()]] - degree 5, connects to 1 community

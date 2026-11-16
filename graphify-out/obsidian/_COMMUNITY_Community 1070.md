@@ -1,27 +1,29 @@
 ---
 type: community
-members: 14
+members: 16
 ---
 
 # Community 1070
 
-**Members:** 14 nodes
+**Members:** 16 nodes
 
 ## Members
-- [[.test_readonly_allowed_read_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[.test_readonly_allowed_web_search_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[.test_readonly_denied_email_sending_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[.test_readonly_denied_external_api_calls_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[.test_readonly_denied_file_deletion_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[.test_readonly_denied_skill_installation_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[Read-only member IS allowed read tool in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Read-only member IS allowed web_search (low-risk) in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Read-only member denied email_sending even when called from group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Read-only member denied external_api_calls in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Read-only member denied file_deletion in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Read-only member denied skill_installation in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Read-only members must be denied high-risk tools in any group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[TestReadOnlyMemberGroupContext]] - code - gateway/tests/test_group_rbac.py
+- [[CollaboratorActivityTracker_1]] - code - gateway/tests/test_lifespan_prune.py
+- [[Create a fake contributor markdown file for the given uid.]] - rationale - gateway/tests/test_lifespan_prune.py
+- [[Path_35]] - code - gateway/tests/test_lifespan_prune.py
+- [[Real-UID markdown files must never be deleted by the prune pass.]] - rationale - gateway/tests/test_lifespan_prune.py
+- [[Return True when uid looks like a test fixture that should be silently dropped.]] - rationale - gateway/security/collaborator_tracker.py
+- [[Run the same markdown-prune logic as lifespan.py and return pruned count.]] - rationale - gateway/tests/test_lifespan_prune.py
+- [[Startup prune must remove fixture markdown files from every contributor dir.]] - rationale - gateway/tests/test_lifespan_prune.py
+- [[_is_fixture_uid()]] - code - gateway/security/collaborator_tracker.py
+- [[_make_md()]] - code - gateway/tests/test_lifespan_prune.py
+- [[_prune_fixture_markdown()]] - code - gateway/tests/test_lifespan_prune.py
+- [[test_is_fixture_uid_blocks_short_numeric()]] - code - gateway/tests/test_lifespan_prune.py
+- [[test_is_fixture_uid_blocks_test_user_prefix()]] - code - gateway/tests/test_lifespan_prune.py
+- [[test_is_fixture_uid_passes_real_uids()]] - code - gateway/tests/test_lifespan_prune.py
+- [[test_lifespan_prune.py]] - code - gateway/tests/test_lifespan_prune.py
+- [[test_prune_keeps_real_uid_markdown()]] - code - gateway/tests/test_lifespan_prune.py
+- [[test_prune_walks_all_contributor_dirs()]] - code - gateway/tests/test_lifespan_prune.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,11 +33,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 33]]
-- 1 edge to [[_COMMUNITY_Community 196]]
-- 1 edge to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 194]]
-- 1 edge to [[_COMMUNITY_Community 11]]
+- 7 edges to [[_COMMUNITY_Community 329]]
+- 1 edge to [[_COMMUNITY_Community 151]]
 
 ## Top bridge nodes
-- [[TestReadOnlyMemberGroupContext]] - degree 14, connects to 5 communities
+- [[_is_fixture_uid()]] - degree 9, connects to 2 communities
+- [[test_lifespan_prune.py]] - degree 9, connects to 1 community
+- [[test_prune_walks_all_contributor_dirs()]] - degree 6, connects to 1 community
+- [[test_prune_keeps_real_uid_markdown()]] - degree 6, connects to 1 community
+- [[CollaboratorActivityTracker_1]] - degree 4, connects to 1 community

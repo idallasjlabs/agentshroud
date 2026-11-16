@@ -2,7 +2,7 @@
 source_file: "CHANGELOG.md"
 type: "document"
 community: "Community 773"
-location: "L147"
+location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # Added
 
 ## Connections
-- [[1.5.2 (2026-08-23)]] - `contains` [EXTRACTED]
+- [[1.6.0 (2026-08-28)]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_773

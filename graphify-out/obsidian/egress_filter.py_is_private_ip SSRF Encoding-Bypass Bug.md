@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "Community 221"
+community: "Community 1563"
 location: "lines 459-480"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_221
+  - community/Community_1563
 ---
 
 # egress_filter.py::_is_private_ip SSRF Encoding-Bypass Bug
@@ -15,4 +15,4 @@ tags:
 - [[EgressFilter.check()]] - `shares_data_with` [INFERRED]
 - [[a2a_policy.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_221
+#graphify/rationale #graphify/EXTRACTED #community/Community_1563

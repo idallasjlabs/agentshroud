@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_benchmark_regression.py"
 type: "code"
 community: "Community 511"
-location: "L41"
+location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED

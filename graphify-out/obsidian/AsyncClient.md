@@ -12,7 +12,7 @@ tags:
 # AsyncClient
 
 ## Connections
-- [[.__init__()_19]] - `references` [EXTRACTED]
+- [[.__init__()_34]] - `references` [EXTRACTED]
 - [[._get_client()]] - `references` [EXTRACTED]
 - [[client()_4]] - `calls` [INFERRED]
 - [[client()_5]] - `calls` [INFERRED]
@@ -22,5 +22,6 @@ tags:
 - [[client()_13]] - `calls` [INFERRED]
 - [[client()_14]] - `calls` [INFERRED]
 - [[client()_15]] - `calls` [INFERRED]
+- [[client()_16]] - `calls` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/Community_1248

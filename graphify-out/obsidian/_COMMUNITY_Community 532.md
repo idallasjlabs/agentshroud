@@ -1,33 +1,39 @@
 ---
 type: community
-members: 20
+members: 26
 ---
 
 # Community 532
 
-**Members:** 20 nodes
+**Members:** 26 nodes
 
 ## Members
-- [[Agent with low trust cannot perform elevated actions.]] - rationale - gateway/tests/test_security_integration.py
-- [[Clean message flows through entire pipeline without issues.]] - rationale - gateway/tests/test_security_integration.py
-- [[Even if trust allows an action, egress filter blocks unauthorized destinations.]] - rationale - gateway/tests/test_security_integration.py
-- [[Message with PII gets sanitized and logged correctly.]] - rationale - gateway/tests/test_security_integration.py
-- [[Multiple messages through pipeline concurrently — thread safety.]] - rationale - gateway/tests/test_security_integration.py
-- [[Outbound responses have credentials blocked for untrusted sources.]] - rationale - gateway/tests/test_security_integration.py
-- [[Sensitive audit data can be encrypted at rest.]] - rationale - gateway/tests/test_security_integration.py
-- [[When both PII sanitizer and prompt guard detect issues.]] - rationale - gateway/tests/test_security_integration.py
-- [[encrypted_store()]] - code - gateway/tests/test_security_integration.py
-- [[prompt_guard()_2]] - code - gateway/tests/test_security_integration.py
-- [[test_egress_blocks_unauthorized_after_trust_check()]] - code - gateway/tests/test_security_integration.py
-- [[test_encrypted_store_in_pipeline()]] - code - gateway/tests/test_security_integration.py
-- [[test_full_pipeline_clean_message()]] - code - gateway/tests/test_security_integration.py
-- [[test_full_pipeline_pii_message()]] - code - gateway/tests/test_security_integration.py
-- [[test_pii_and_prompt_guard_both_trigger()]] - code - gateway/tests/test_security_integration.py
-- [[test_pipeline_concurrent_messages()]] - code - gateway/tests/test_security_integration.py
-- [[test_response_credential_blocking()]] - code - gateway/tests/test_security_integration.py
-- [[test_security_integration.py]] - code - gateway/tests/test_security_integration.py
-- [[test_trust_insufficient_action_blocked()]] - code - gateway/tests/test_security_integration.py
-- [[trust_manager()_4]] - code - gateway/tests/test_security_integration.py
+- [[.test_cpu_limit_check()]] - code - gateway/tests/test_security_audit.py
+- [[.test_disk_write_limit()]] - code - gateway/tests/test_security_audit.py
+- [[.test_memory_limit_check()]] - code - gateway/tests/test_security_audit.py
+- [[.test_resource_guard_init()]] - code - gateway/tests/test_security_audit.py
+- [[.test_setup_resource_guard_returns_real_guard_with_default_limits()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_setup_with_custom_limits_overrides_defaults()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_stop_cancels_monitor_task_and_idempotent()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_usage_stats()]] - code - gateway/tests/test_security_audit.py
+- [[128k token request at 4 bytestoken KV cache triggers rejection at 4096 MB headr]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Configuration for resource limits.]] - rationale - gateway/security/resource_guard.py
+- [[ResourceGuard is instantiated at startup and reachable on app_state.]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[ResourceLimits]] - code - gateway/security/resource_guard.py
+- [[Setup resource guard with custom limits.]] - rationale - gateway/security/resource_guard.py
+- [[Small context request passes VRAM headroom check.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[TestResourceGuardLifecycle]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[TestResourceGuardWiring]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[The lifespan must stop the background monitor task on shutdown.]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[VRAM check is skipped when max_vram_headroom_mb=0 (disabled).]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[check_vram_headroom raises VRAMHeadroomError when estimated VRAM exceeds budget.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[setup_resource_guard()]] - code - gateway/security/resource_guard.py
+- [[test_resource_guard.py]] - code - gateway/tests/test_resource_guard.py
+- [[test_resource_guard_vram_estimate_128k_tokens_triggers_rejection()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_resource_guard_vram_headroom_check_allows_small_context()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_resource_guard_vram_headroom_check_disabled_when_threshold_zero()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_resource_guard_vram_headroom_check_raises_on_insufficient_vram()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_resource_guard_wiring.py]] - code - gateway/tests/test_resource_guard_wiring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,18 +43,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 7]]
-- 7 edges to [[_COMMUNITY_Community 0]]
-- 3 edges to [[_COMMUNITY_Community 17]]
-- 3 edges to [[_COMMUNITY_Community 11]]
-- 2 edges to [[_COMMUNITY_Community 439]]
-- 2 edges to [[_COMMUNITY_Community 21]]
-- 1 edge to [[_COMMUNITY_Community 80]]
-- 1 edge to [[_COMMUNITY_Community 30]]
-- 1 edge to [[_COMMUNITY_Community 104]]
+- 16 edges to [[_COMMUNITY_Community 5]]
+- 14 edges to [[_COMMUNITY_Community 0]]
+- 10 edges to [[_COMMUNITY_Community 115]]
+- 5 edges to [[_COMMUNITY_Community 208]]
+- 5 edges to [[_COMMUNITY_Community 605]]
+- 3 edges to [[_COMMUNITY_Community 1926]]
+- 2 edges to [[_COMMUNITY_Community 151]]
+- 2 edges to [[_COMMUNITY_Community 112]]
+- 1 edge to [[_COMMUNITY_Community 978]]
+- 1 edge to [[_COMMUNITY_Community 2099]]
+- 1 edge to [[_COMMUNITY_Community 2005]]
+- 1 edge to [[_COMMUNITY_Community 557]]
+- 1 edge to [[_COMMUNITY_Community 394]]
+- 1 edge to [[_COMMUNITY_Community 121]]
+- 1 edge to [[_COMMUNITY_Community 140]]
 
 ## Top bridge nodes
-- [[test_security_integration.py]] - degree 37, connects to 9 communities
-- [[prompt_guard()_2]] - degree 2, connects to 1 community
-- [[trust_manager()_4]] - degree 2, connects to 1 community
-- [[encrypted_store()]] - degree 2, connects to 1 community
+- [[ResourceLimits]] - degree 51, connects to 14 communities
+- [[setup_resource_guard()]] - degree 9, connects to 3 communities
+- [[test_resource_guard_wiring.py]] - degree 7, connects to 2 communities
+- [[test_resource_guard_vram_headroom_check_raises_on_insufficient_vram()]] - degree 4, connects to 2 communities
+- [[test_resource_guard_vram_headroom_check_allows_small_context()]] - degree 4, connects to 2 communities

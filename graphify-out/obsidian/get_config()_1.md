@@ -2,7 +2,7 @@
 source_file: "gateway/web/api.py"
 type: "code"
 community: "Community 49"
-location: "L411"
+location: "L438"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Get current configuration.]] - `rationale_for` [EXTRACTED]
-- [[Path_44]] - `calls` [EXTRACTED]
+- [[Path_47]] - `calls` [EXTRACTED]
 - [[api.py]] - `contains` [EXTRACTED]
 - [[export_config()]] - `calls` [EXTRACTED]
 

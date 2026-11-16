@@ -24,10 +24,10 @@ tags:
 - [[.test_waits_out_a_concurrent_writer_lock_instead_of_failing()]] - `calls` [EXTRACTED]
 - [[AuditStore_1]] - `references` [EXTRACTED]
 - [[Move audit_events older than cutoff_days into archive_path, then delete + VACUUM]] - `rationale_for` [EXTRACTED]
-- [[Path_6]] - `references` [EXTRACTED]
+- [[Path_8]] - `references` [EXTRACTED]
 - [[_cli()]] - `calls` [EXTRACTED]
 - [[audit_archive.py]] - `contains` [EXTRACTED]
-- [[datetime_1]] - `references` [EXTRACTED]
+- [[datetime_2]] - `references` [EXTRACTED]
 - [[test_audit_archive.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_380

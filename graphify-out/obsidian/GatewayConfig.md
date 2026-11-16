@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "Community 49"
+community: "Community 707"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/Community_707
 ---
 
 # GatewayConfig
@@ -16,4 +16,4 @@ tags:
 - [[create_auth_dependency()]] - `references` [EXTRACTED]
 - [[get_auth_dependency()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_49
+#graphify/code #graphify/EXTRACTED #community/Community_707

@@ -2,7 +2,7 @@
 source_file: "gateway/soc/router.py"
 type: "code"
 community: "Community 10"
-location: "L1094"
+location: "L1105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,7 @@ tags:
 # set_user_role()
 
 ## Connections
+- [[HTTPException]] - `calls` [EXTRACTED]
 - [[RBACConfig_1]] - `calls` [EXTRACTED]
 - [[RBACManager_1]] - `calls` [EXTRACTED]
 - [[Role_1]] - `calls` [EXTRACTED]

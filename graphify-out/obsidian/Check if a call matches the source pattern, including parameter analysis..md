@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "Community 505"
+community: "Community 8"
 location: "L439"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_505
+  - community/Community_8
 ---
 
 # Check if a call matches the source pattern, including parameter analysis.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._matches_source_pattern()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_505
+#graphify/rationale #graphify/EXTRACTED #community/Community_8

@@ -8,7 +8,7 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[.__init__()_38]] - code - gateway/proxy/telegram_gateway_relay.py
+- [[.__init__()_53]] - code - gateway/proxy/telegram_gateway_relay.py
 - [[.send_message()]] - code - gateway/proxy/telegram_gateway_relay.py
 - [[.send_status_update()]] - code - gateway/proxy/telegram_gateway_relay.py
 - [[Relay Telegram messages through the gateway control plane.      This enables con]] - rationale - gateway/proxy/telegram_gateway_relay.py
@@ -27,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 223]]
+- 1 edge to [[_COMMUNITY_Community 18]]
 
 ## Top bridge nodes
 - [[telegram_gateway_relay.py]] - degree 3, connects to 1 community

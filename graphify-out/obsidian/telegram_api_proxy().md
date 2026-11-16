@@ -2,7 +2,7 @@
 source_file: "gateway/ingest_api/main.py"
 type: "code"
 community: "Community 105"
-location: "L4589"
+location: "L4594"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -16,9 +16,10 @@ tags:
 - [[.test_miss_debounced_within_rebuild_interval()]] - `calls` [EXTRACTED]
 - [[.test_miss_rebuilds_and_recovers_when_secret_becomes_available()]] - `calls` [EXTRACTED]
 - [[.test_miss_still_rejected_after_rebuild_if_truly_unknown()]] - `calls` [EXTRACTED]
-- [[JSONResponse]] - `calls` [EXTRACTED]
+- [[HTTPException]] - `calls` [EXTRACTED]
+- [[JSONResponse_1]] - `calls` [EXTRACTED]
 - [[Proxy Telegram Bot API calls through security pipeline.]] - `rationale_for` [EXTRACTED]
-- [[Request_1]] - `references` [EXTRACTED]
+- [[Request_2]] - `references` [EXTRACTED]
 - [[_build_telegram_token_registry()]] - `calls` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 - [[test_security_fixes.py]] - `imports` [EXTRACTED]

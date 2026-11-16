@@ -2,7 +2,7 @@
 source_file: "docker/config/openclaw/apply-patches.js"
 type: "code"
 community: "Community 2068"
-location: "L468"
+location: "L471"
 tags:
   - graphify/code
   - graphify/EXTRACTED

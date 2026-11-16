@@ -1,14 +1,14 @@
 ---
 type: community
-members: 62
+members: 63
 ---
 
 # Community 97
 
-**Members:** 62 nodes
+**Members:** 63 nodes
 
 ## Members
-- [[.__init__()_107]] - code - gateway/security/privacy_policy.py
+- [[.__init__()_122]] - code - gateway/security/privacy_policy.py
 - [[._get_role_value()]] - code - gateway/security/privacy_policy.py
 - [[._user_in_allowed_groups()]] - code - gateway/security/privacy_policy.py
 - [[.contains_private_data()]] - code - gateway/security/privacy_policy.py
@@ -52,6 +52,7 @@ members: 62
 - [[Privacy policy for a single service.]] - rationale - gateway/security/privacy_policy.py
 - [[PrivacyPolicy]] - code - gateway/security/privacy_policy.py
 - [[PrivacyPolicyEnforcer]] - code - gateway/security/privacy_policy.py
+- [[RBACConfig_2]] - code - gateway/tests/test_privacy_policy.py
 - [[Return True if an access attempt to this service should be logged.]] - rationale - gateway/security/privacy_policy.py
 - [[Return True if text appears to contain admin-private data.]] - rationale - gateway/security/privacy_policy.py
 - [[Return True if the owner should be alerted about this access attempt.]] - rationale - gateway/security/privacy_policy.py
@@ -79,15 +80,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 21 edges to [[_COMMUNITY_Community 6]]
-- 6 edges to [[_COMMUNITY_Community 196]]
+- 26 edges to [[_COMMUNITY_Community 194]]
 - 3 edges to [[_COMMUNITY_Community 8]]
-- 3 edges to [[_COMMUNITY_Community 72]]
+- 3 edges to [[_COMMUNITY_Community 151]]
 - 2 edges to [[_COMMUNITY_Community 489]]
 
 ## Top bridge nodes
 - [[PrivacyPolicyEnforcer]] - degree 27, connects to 2 communities
-- [[TestResponseFiltering]] - degree 15, connects to 2 communities
-- [[test_privacy_policy.py]] - degree 14, connects to 2 communities
-- [[TestServiceAccessControl]] - degree 14, connects to 2 communities
 - [[PrivacyPolicy]] - degree 13, connects to 2 communities
+- [[ServicePrivacy]] - degree 12, connects to 2 communities
+- [[privacy_policy.py]] - degree 6, connects to 2 communities
+- [[TestResponseFiltering]] - degree 15, connects to 1 community

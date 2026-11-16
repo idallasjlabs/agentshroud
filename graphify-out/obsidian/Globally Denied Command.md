@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md"
 type: "document"
-community: "Community 1084"
+community: "Community 2029"
 location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1084
+  - community/Community_2029
 ---
 
 # Globally Denied Command
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSH Proxy Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1084
+#graphify/document #graphify/EXTRACTED #community/Community_2029

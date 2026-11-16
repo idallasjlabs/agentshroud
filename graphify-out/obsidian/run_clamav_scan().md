@@ -2,7 +2,7 @@
 source_file: "gateway/ingest_api/main.py"
 type: "code"
 community: "Community 978"
-location: "L1492"
+location: "L1497"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,6 +13,7 @@ tags:
 
 ## Connections
 - [[AuthRequired]] - `references` [EXTRACTED]
+- [[HTTPException]] - `calls` [EXTRACTED]
 - [[Run ClamAV antivirus scan. Tries clamdscan (daemon) first, falls back to clamsca]] - `rationale_for` [EXTRACTED]
 - [[_record_scanner_result()]] - `calls` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]

@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/context_guard.py"
+source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "Community 1808"
-location: "L465"
+community: "Community 379"
+location: "L149"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_1808
+  - graphify/INFERRED
+  - community/Community_379
 ---
 
 # Any
 
 ## Connections
-- [[.get_attack_summary()]] - `references` [EXTRACTED]
+- [[.inspect()]] - `references` [EXTRACTED]
+- [[ContainerEngine_2]] - `uses` [INFERRED]
+- [[ContainerInfo_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1808
+#graphify/code #graphify/INFERRED #community/Community_379

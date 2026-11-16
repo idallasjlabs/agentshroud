@@ -1,13 +1,23 @@
 ---
 type: community
-members: 51
+members: 74
 ---
 
 # Community 18
 
-**Members:** 51 nodes
+**Members:** 74 nodes
 
 ## Members
+- [[._handle_addtogroup_command()]] - code - gateway/proxy/telegram_proxy.py
+- [[._handle_groupinfo_command()]] - code - gateway/proxy/telegram_proxy.py
+- [[._handle_groups_command()]] - code - gateway/proxy/telegram_proxy.py
+- [[._handle_projects_command()]] - code - gateway/proxy/telegram_proxy.py
+- [[._handle_rmfromgroup_command()]] - code - gateway/proxy/telegram_proxy.py
+- [[._handle_setmode_command()]] - code - gateway/proxy/telegram_proxy.py
+- [[._mirror_to_owner_if_collaborator()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_owner_admin_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[.get_active_project_for_user()]] - code - gateway/security/group_config.py
+- [[.get_user_projects()]] - code - gateway/security/group_config.py
 - [[.matches_topic()]] - code - gateway/security/group_config.py
 - [[.normalise_topics()]] - code - gateway/security/group_config.py
 - [[.test_addtogroup_success()]] - code - gateway/tests/test_collaborator_responses.py
@@ -35,8 +45,18 @@ members: 51
 - [[Format a user's accessible projects for display.]] - rationale - gateway/proxy/collaborator_responses.py
 - [[Format a user's group memberships for display.]] - rationale - gateway/proxy/collaborator_responses.py
 - [[Format detailed info for a single group.]] - rationale - gateway/proxy/collaborator_responses.py
+- [[Handle addtogroup user_id group_id (owner only).]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Handle groupinfo group_id.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Handle groups — list groups this user belongs to.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Handle projects — list accessible projects.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Handle rmfromgroup user_id group_id (owner or group admin).]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Handle setmode group_iduser_id local_onlyproject_scopedfull_access (owne]] - rationale - gateway/proxy/telegram_proxy.py
 - [[ProjectConfig]] - code - gateway/security/group_config.py
 - [[Return True if any focus_topic appears in the text (case-insensitive).]] - rationale - gateway/security/group_config.py
+- [[Return all projects accessible to the user via group membership.]] - rationale - gateway/security/group_config.py
+- [[Return the first project accessible to a user (primary project).]] - rationale - gateway/security/group_config.py
+- [[Send a rate-limited activity mirror to the owner chat for collaborator messages.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send deterministic owner admin notice without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[TestBuildProjectContextInjection]] - code - gateway/tests/test_collaborator_responses.py
 - [[TestConstantMessages]] - code - gateway/tests/test_collaborator_responses.py
 - [[TestErrorFormatters]] - code - gateway/tests/test_collaborator_responses.py
@@ -44,6 +64,7 @@ members: 51
 - [[TestFormatGroupsList]] - code - gateway/tests/test_collaborator_responses.py
 - [[TestFormatProjectsList]] - code - gateway/tests/test_collaborator_responses.py
 - [[TestMutationFormatters]] - code - gateway/tests/test_collaborator_responses.py
+- [[_ipv4_first_getaddrinfo()]] - code - gateway/proxy/telegram_proxy.py
 - [[build_project_context_injection()]] - code - gateway/proxy/collaborator_responses.py
 - [[collaborator_responses.py]] - code - gateway/proxy/collaborator_responses.py
 - [[format_addtogroup_success()]] - code - gateway/proxy/collaborator_responses.py
@@ -55,9 +76,11 @@ members: 51
 - [[format_projects_list()]] - code - gateway/proxy/collaborator_responses.py
 - [[format_rmfromgroup_success()]] - code - gateway/proxy/collaborator_responses.py
 - [[format_setmode_success()]] - code - gateway/proxy/collaborator_responses.py
+- [[format_unknown_group()]] - code - gateway/proxy/collaborator_responses.py
 - [[project()]] - code - gateway/tests/test_collaborator_responses.py
 - [[slack_proxy.py]] - code - gateway/proxy/slack_proxy.py
 - [[teams()]] - code - gateway/tests/test_collaborator_responses.py
+- [[telegram_proxy.py]] - code - gateway/proxy/telegram_proxy.py
 - [[test_collaborator_responses.py]] - code - gateway/tests/test_collaborator_responses.py
 
 ## Live Query (requires Dataview plugin)
@@ -68,17 +91,35 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_Community 196]]
-- 11 edges to [[_COMMUNITY_Community 14]]
-- 10 edges to [[_COMMUNITY_Community 135]]
-- 9 edges to [[_COMMUNITY_Community 223]]
+- 19 edges to [[_COMMUNITY_Community 14]]
+- 13 edges to [[_COMMUNITY_Community 194]]
+- 11 edges to [[_COMMUNITY_Community 135]]
+- 8 edges to [[_COMMUNITY_Community 1288]]
+- 5 edges to [[_COMMUNITY_Community 223]]
+- 2 edges to [[_COMMUNITY_Community 978]]
 - 1 edge to [[_COMMUNITY_Community 10]]
-- 1 edge to [[_COMMUNITY_Community 978]]
-- 1 edge to [[_COMMUNITY_Community 37]]
+- 1 edge to [[_COMMUNITY_Community 138]]
+- 1 edge to [[_COMMUNITY_Community 85]]
+- 1 edge to [[_COMMUNITY_Community 27]]
+- 1 edge to [[_COMMUNITY_Community 381]]
+- 1 edge to [[_COMMUNITY_Community 928]]
+- 1 edge to [[_COMMUNITY_Community 1971]]
+- 1 edge to [[_COMMUNITY_Community 465]]
+- 1 edge to [[_COMMUNITY_Community 96]]
+- 1 edge to [[_COMMUNITY_Community 89]]
+- 1 edge to [[_COMMUNITY_Community 23]]
+- 1 edge to [[_COMMUNITY_Community 61]]
+- 1 edge to [[_COMMUNITY_Community 187]]
+- 1 edge to [[_COMMUNITY_Community 1284]]
+- 1 edge to [[_COMMUNITY_Community 75]]
+- 1 edge to [[_COMMUNITY_Community 822]]
+- 1 edge to [[_COMMUNITY_Community 105]]
+- 1 edge to [[_COMMUNITY_Community 216]]
+- 1 edge to [[_COMMUNITY_Community 1344]]
 
 ## Top bridge nodes
-- [[collaborator_responses.py]] - degree 16, connects to 4 communities
-- [[test_collaborator_responses.py]] - degree 23, connects to 3 communities
-- [[ProjectConfig]] - degree 18, connects to 3 communities
+- [[telegram_proxy.py]] - degree 35, connects to 20 communities
+- [[collaborator_responses.py]] - degree 16, connects to 3 communities
 - [[slack_proxy.py]] - degree 4, connects to 3 communities
-- [[format_groups_list()]] - degree 8, connects to 2 communities
+- [[test_collaborator_responses.py]] - degree 23, connects to 2 communities
+- [[ProjectConfig]] - degree 18, connects to 2 communities

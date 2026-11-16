@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "Community 51"
+community: "Community 614"
 location: "L23"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_51
+  - community/Community_614
 ---
 
 # Severity
@@ -16,4 +16,4 @@ tags:
 - [[Severity_2]] - `uses` [INFERRED]
 - [[_map_severity()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_51
+#graphify/code #graphify/INFERRED #community/Community_614

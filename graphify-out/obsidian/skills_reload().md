@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 2017"
-location: "L1031"
+community: "Community 49"
+location: "L1058"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2017
+  - community/Community_49
 ---
 
 # skills_reload()
 
 ## Connections
+- [[HTTPException]] - `calls` [INFERRED]
 - [[Re-read ``~.llm_settings`` and sync skillsagentsMCP into both bot configs.]] - `rationale_for` [EXTRACTED]
 - [[_skills_reload_impl()]] - `calls` [EXTRACTED]
 - [[api.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2017
+#graphify/code #graphify/EXTRACTED #community/Community_49

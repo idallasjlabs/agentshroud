@@ -180,6 +180,7 @@ tags:
 - [[test_alert_telegram_relay.py]] - `imports_from` [EXTRACTED]
 - [[test_docs_accuracy.py]] - `imports_from` [EXTRACTED]
 - [[test_main_endpoints.py]] - `imports_from` [EXTRACTED]
+- [[test_progressive_lockdown.py]] - `imports_from` [EXTRACTED]
 - [[test_report_store.py]] - `imports_from` [EXTRACTED]
 - [[trust_manager.py]] - `imports_from` [EXTRACTED]
 - [[verify_killswitch()]] - `contains` [EXTRACTED]

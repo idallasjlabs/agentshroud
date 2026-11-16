@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Isaiah's Persona Package (IDENTITY.mdSOUL.mdUSER.md)]] - concept - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Owner vs Bot Telegram Identity Separation]] - concept - docs/architecture/IDENTITY.md
-- [[Slack Socket Mode Integration Architecture]] - concept - docs/setup-slack.md
-- [[Telegram Bot Setup (BotFather token + gateway config)]] - concept - docs/setup-telegram.md
-- [[Trust-Differentiated Processing (RBAC tiers)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[.test_daily_fs_scan_skips_security_log_tree()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_no_skip_dirs_flag_when_omitted()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_skip_dirs_added_to_command()]] - code - gateway/tests/test_daily_cve_report.py
+- [[TestTrivySkipDirs]] - code - gateway/tests/test_daily_cve_report.py
+- [[The daily fs scan of  must exclude varlogsecurity (trivy's own         cache]] - rationale - gateway/tests/test_daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 581]]
+- 1 edge to [[_COMMUNITY_Community 127]]
 
 ## Top bridge nodes
-- [[Trust-Differentiated Processing (RBAC tiers)]] - degree 2, connects to 1 community
+- [[TestTrivySkipDirs]] - degree 4, connects to 1 community

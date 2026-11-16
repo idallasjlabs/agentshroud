@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_FIX.md"
 type: "document"
-community: "Community 502"
+community: "Community 364"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_502
+  - community/Community_364
 ---
 
 # IMESSAGE_FIX.md
@@ -16,4 +16,4 @@ tags:
 - [[BOT_DEVELOPMENT_TEAM_RPI_SETUP]] - `conceptually_related_to` [INFERRED]
 - [[iMessage Integration Fix - Using imsg + imessage-exporter]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Community_502
+#graphify/document #graphify/INFERRED #community/Community_364

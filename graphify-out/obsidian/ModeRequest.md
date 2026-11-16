@@ -2,7 +2,7 @@
 source_file: "gateway/web/api.py"
 type: "code"
 community: "Community 40"
-location: "L155"
+location: "L222"
 tags:
   - graphify/code
   - graphify/INFERRED
@@ -27,7 +27,7 @@ tags:
 - [[DraftEntry]] - `uses` [INFERRED]
 - [[FastAPI_2]] - `uses` [INFERRED]
 - [[IntelReportStore]] - `uses` [INFERRED]
-- [[Path_36]] - `uses` [INFERRED]
+- [[Path_39]] - `uses` [INFERRED]
 - [[SimpleNamespace_1]] - `uses` [INFERRED]
 - [[TestAgentshroudUpdates]] - `uses` [INFERRED]
 - [[TestAutoRevert]] - `uses` [INFERRED]

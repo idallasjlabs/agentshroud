@@ -1,26 +1,33 @@
 ---
 type: community
-members: 13
+members: 20
 ---
 
 # Community 792
 
-**Members:** 13 nodes
+**Members:** 20 nodes
 
 ## Members
-- [[.setup_method()_32]] - code - gateway/tests/test_security_hardening.py
-- [[.test_double_base64_injection()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_fullwidth_detection()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_homoglyph_detection()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_mixed_case_still_caught()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_rtl_override_detection()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_zero_width_evasion()]] - code - gateway/tests/test_security_hardening.py
-- [[Double-encoded base64 injection should be caught.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Fullwidth chars NFKC-normalized — injection defeated.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Mix of Latin and Cyrillic should trigger homoglyph detection.]] - rationale - gateway/tests/test_security_hardening.py
-- [[TestPromptGuardEvasion]] - code - gateway/tests/test_security_hardening.py
-- [[Tests for prompt guard evasion techniques.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Zero-width chars between letters should not bypass detection.]] - rationale - gateway/tests/test_security_hardening.py
+- [[.test_approval_queue_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[.test_container_hardening()]] - code - gateway/tests/test_config_validation.py
+- [[.test_drift_detector_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[.test_egress_filter_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[.test_encrypted_store_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[.test_extensive_approval_actions()]] - code - gateway/tests/test_config_validation.py
+- [[.test_has_auth_token_placeholder()]] - code - gateway/tests/test_config_validation.py
+- [[.test_has_memory_limit()]] - code - gateway/tests/test_config_validation.py
+- [[.test_has_seccomp_profile()]] - code - gateway/tests/test_config_validation.py
+- [[.test_kill_switch_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[.test_long_retention()]] - code - gateway/tests/test_config_validation.py
+- [[.test_pii_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[.test_pii_engine_presidio()]] - code - gateway/tests/test_config_validation.py
+- [[.test_prompt_guard_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[.test_rootless()]] - code - gateway/tests/test_config_validation.py
+- [[.test_ssh_requires_approval()]] - code - gateway/tests/test_config_validation.py
+- [[.test_telemetry_disabled()]] - code - gateway/tests/test_config_validation.py
+- [[.test_trust_manager_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[TestParanoidConfig]] - code - gateway/tests/test_config_validation.py
+- [[paranoid.env should enable ALL security features.]] - rationale - gateway/tests/test_config_validation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,13 +37,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 0]]
-- 5 edges to [[_COMMUNITY_Community 52]]
-- 3 edges to [[_COMMUNITY_Community 11]]
-- 2 edges to [[_COMMUNITY_Community 17]]
-- 2 edges to [[_COMMUNITY_Community 21]]
-- 1 edge to [[_COMMUNITY_Community 24]]
+- 2 edges to [[_COMMUNITY_Community 36]]
+- 1 edge to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 92]]
 
 ## Top bridge nodes
-- [[TestPromptGuardEvasion]] - degree 26, connects to 6 communities
-- [[.setup_method()_32]] - degree 2, connects to 1 community
+- [[TestParanoidConfig]] - degree 23, connects to 3 communities

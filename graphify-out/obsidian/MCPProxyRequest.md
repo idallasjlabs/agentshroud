@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 254"
-location: "L669"
+community: "Community 978"
+location: "L674"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_254
+  - community/Community_978
 ---
 
 # MCPProxyRequest
@@ -31,4 +31,4 @@ tags:
 - [[main.py_2]] - `contains` [EXTRACTED]
 - [[mcp_proxy_endpoint()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_254
+#graphify/code #graphify/INFERRED #community/Community_978

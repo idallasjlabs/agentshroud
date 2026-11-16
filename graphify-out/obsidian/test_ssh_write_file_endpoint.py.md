@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "code"
-community: "Community 50"
+community: "Community 7"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_50
+  - community/Community_7
 ---
 
 # test_ssh_write_file_endpoint.py
@@ -33,11 +33,11 @@ tags:
 - [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - `contains` [EXTRACTED]
 - [[_b64()]] - `contains` [EXTRACTED]
 - [[auth_headers()_4]] - `contains` [EXTRACTED]
-- [[client()_17]] - `contains` [EXTRACTED]
+- [[client()_18]] - `contains` [EXTRACTED]
 - [[gatewayingest_apiledger.py (DataLedger)]] - `references` [EXTRACTED]
 - [[gatewayingest_apissh_config.py (SSHConfig)]] - `references` [EXTRACTED]
 - [[proxy.py]] - `references` [EXTRACTED]
 - [[ssh_config()_2]] - `contains` [EXTRACTED]
 - [[test_config_with_ssh()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_50
+#graphify/code #graphify/EXTRACTED #community/Community_7

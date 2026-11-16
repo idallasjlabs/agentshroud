@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "Community 562"
+community: "Community 93"
 location: "L203"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_562
+  - community/Community_93
 ---
 
 # WebContentScanner
 
 ## Connections
-- [[.__init__()_42]] - `method` [EXTRACTED]
+- [[.__init__()_57]] - `method` [EXTRACTED]
 - [[._scan_encoded_payloads()]] - `method` [EXTRACTED]
 - [[._scan_hidden_content()]] - `method` [EXTRACTED]
 - [[._scan_pii()]] - `method` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[.scan()_1]] - `method` [EXTRACTED]
 - [[.setUp()_1]] - `calls` [EXTRACTED]
 - [[.test_finding_severity_is_critical()]] - `calls` [EXTRACTED]
-- [[Any_23]] - `uses` [INFERRED]
+- [[Any_33]] - `uses` [INFERRED]
 - [[ProxyAction]] - `uses` [INFERRED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
 - [[Scan web content for prompt injection, PII, and hidden payloads.      All findin]] - `rationale_for` [EXTRACTED]
@@ -47,4 +47,4 @@ tags:
 - [[web_content_scanner.py]] - `contains` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_562
+#graphify/code #graphify/INFERRED #community/Community_93

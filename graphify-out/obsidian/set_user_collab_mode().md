@@ -2,7 +2,7 @@
 source_file: "gateway/soc/router.py"
 type: "code"
 community: "Community 10"
-location: "L1130"
+location: "L1141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,7 @@ tags:
 # set_user_collab_mode()
 
 ## Connections
+- [[HTTPException]] - `calls` [EXTRACTED]
 - [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[Set per-user collab mode override (persists across restarts).]] - `rationale_for` [EXTRACTED]
 - [[SetUserModeRequest]] - `references` [EXTRACTED]

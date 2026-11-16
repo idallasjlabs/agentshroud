@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[GatewayConfig_1]] - `references` [EXTRACTED]
-- [[Path_1]] - `references` [EXTRACTED]
+- [[Path_3]] - `references` [EXTRACTED]
 - [[Re-parse and validate ``config_path``; atomically swap in reloadable fields.]] - `rationale_for` [EXTRACTED]
 - [[apply_reloadable_config()]] - `calls` [EXTRACTED]
 - [[config.py]] - `contains` [EXTRACTED]

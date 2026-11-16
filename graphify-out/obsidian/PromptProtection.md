@@ -12,7 +12,7 @@ tags:
 # PromptProtection
 
 ## Connections
-- [[.__init__()_110]] - `method` [EXTRACTED]
+- [[.__init__()_125]] - `method` [EXTRACTED]
 - [[._calculate_similarity()]] - `method` [EXTRACTED]
 - [[._compile_detection_patterns()_1]] - `method` [EXTRACTED]
 - [[._load_protected_content()]] - `method` [EXTRACTED]

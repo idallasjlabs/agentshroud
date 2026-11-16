@@ -2,7 +2,7 @@
 source_file: "gateway/web/api.py"
 type: "code"
 community: "Community 49"
-location: "L848"
+location: "L875"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,7 @@ tags:
 # get_logs()
 
 ## Connections
+- [[HTTPException]] - `calls` [INFERRED]
 - [[Retrieve container logs with optional filtering.]] - `rationale_for` [EXTRACTED]
 - [[_bot_service_names()]] - `calls` [EXTRACTED]
 - [[_get_engine()]] - `calls` [EXTRACTED]

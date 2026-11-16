@@ -1,23 +1,25 @@
 ---
 type: community
-members: 10
+members: 12
 ---
 
 # Community 1424
 
-**Members:** 10 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[.enforcer()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_per_minute_limit_exceeded_blocks()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_per_user_isolation()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_under_threshold_passes()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_unlisted_tool_always_passes()]] - code - gateway/tests/test_tool_acl.py
-- [[Calls within limits should pass.]] - rationale - gateway/tests/test_tool_acl.py
-- [[Exceeding per-minute limit should return False.]] - rationale - gateway/tests/test_tool_acl.py
-- [[Rate limits are tracked independently per user.]] - rationale - gateway/tests/test_tool_acl.py
-- [[TestToolRateLimiting]] - code - gateway/tests/test_tool_acl.py
-- [[Tools not in the rate-limit map should always pass.]] - rationale - gateway/tests/test_tool_acl.py
+- [[.test_agent_var_resolved_from_registry_dict()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_insert_adds_exactly_n_entries_and_still_parses()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_missing_variable_raises()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_non_list_value_raises()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_openclaw_advisory_does_not_touch_hermes_registry()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[An OpenClaw advisory diffed against the Hermes list yields it as 'new'.]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[Runs against the REAL gatewaysecurityagent_cve_registry.py.      Every registe]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestListLocator]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestLiveRegistryLayout]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestPerAgentIsolation]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[_exec_registry()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[test_sync_cve_registry_ghsa.py]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,11 +29,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 2 edges to [[_COMMUNITY_Community 194]]
-- 2 edges to [[_COMMUNITY_Community 11]]
-- 1 edge to [[_COMMUNITY_Community 196]]
+- 12 edges to [[_COMMUNITY_Community 55]]
+- 2 edges to [[_COMMUNITY_Community 2056]]
+- 1 edge to [[_COMMUNITY_Community 2121]]
+- 1 edge to [[_COMMUNITY_Community 2122]]
+- 1 edge to [[_COMMUNITY_Community 2011]]
+- 1 edge to [[_COMMUNITY_Community 2133]]
 
 ## Top bridge nodes
-- [[TestToolRateLimiting]] - degree 11, connects to 4 communities
-- [[.enforcer()]] - degree 2, connects to 1 community
+- [[test_sync_cve_registry_ghsa.py]] - degree 13, connects to 6 communities
+- [[_exec_registry()]] - degree 4, connects to 2 communities
+- [[.test_openclaw_advisory_does_not_touch_hermes_registry()]] - degree 4, connects to 1 community
+- [[.test_insert_adds_exactly_n_entries_and_still_parses()]] - degree 3, connects to 1 community
+- [[TestLiveRegistryLayout]] - degree 3, connects to 1 community

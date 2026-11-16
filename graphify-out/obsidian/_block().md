@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.test_never_restarts_anything()]] - `calls` [EXTRACTED]
 - [[.test_probe_matches_the_health_check()]] - `calls` [EXTRACTED]
-- [[Path_27]] - `references` [EXTRACTED]
+- [[Path_29]] - `references` [EXTRACTED]
 - [[_run_hc()]] - `calls` [EXTRACTED]
 - [[_run_pd()]] - `calls` [EXTRACTED]
 - [[test_container_dns_check.py]] - `contains` [EXTRACTED]

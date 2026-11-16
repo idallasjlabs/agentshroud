@@ -12,7 +12,7 @@ tags:
 # EgressPolicy
 
 ## Connections
-- [[.__init__()_75]] - `references` [EXTRACTED]
+- [[.__init__()_90]] - `references` [EXTRACTED]
 - [[.get_policy()]] - `references` [EXTRACTED]
 - [[.matches_domain()]] - `method` [EXTRACTED]
 - [[.matches_ip()]] - `method` [EXTRACTED]
@@ -51,7 +51,7 @@ tags:
 - [[TestAuditStorePersistence]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestAuth_1]] - `uses` [INFERRED]
-- [[TestConcurrency]] - `uses` [INFERRED]
+- [[TestConcurrency_1]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
@@ -74,7 +74,7 @@ tags:
 - [[TestLogging]] - `uses` [INFERRED]
 - [[TestLoggingSecurity]] - `uses` [INFERRED]
 - [[TestMCPSecurity]] - `uses` [INFERRED]
-- [[TestMonitorMode]] - `uses` [INFERRED]
+- [[TestMonitorMode_2]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
 - [[TestOpenClawResearchDomainsAllowlisted]] - `uses` [INFERRED]
 - [[TestPIIDetection_1]] - `uses` [INFERRED]

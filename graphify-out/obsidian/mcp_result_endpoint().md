@@ -1,23 +1,24 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 254"
-location: "L806"
+community: "Community 978"
+location: "L811"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_254
+  - community/Community_978
 ---
 
 # mcp_result_endpoint()
 
 ## Connections
 - [[AuthRequired]] - `references` [EXTRACTED]
+- [[HTTPException]] - `calls` [EXTRACTED]
 - [[MCP tool result outbound audit endpoint.      Receives a tool result from the bo]] - `rationale_for` [EXTRACTED]
 - [[MCPResultRequest]] - `references` [EXTRACTED]
 - [[MCPToolResult]] - `calls` [EXTRACTED]
-- [[Request_1]] - `references` [EXTRACTED]
+- [[Request_2]] - `references` [EXTRACTED]
 - [[_resolve_effective_agent_id()]] - `calls` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_254
+#graphify/code #graphify/EXTRACTED #community/Community_978

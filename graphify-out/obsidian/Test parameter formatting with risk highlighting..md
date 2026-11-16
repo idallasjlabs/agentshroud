@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "Community 3"
+community: "Community 103"
 location: "L334"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_3
+  - community/Community_103
 ---
 
 # Test parameter formatting with risk highlighting.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_format_parameters_with_highlighting()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_103

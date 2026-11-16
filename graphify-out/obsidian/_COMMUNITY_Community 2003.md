@@ -1,19 +1,21 @@
 ---
 type: community
-members: 6
+members: 8
 ---
 
 # Community 2003
 
-**Members:** 6 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[A single shared output path makes multi-agent coverage impossible.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[An agent with no version source must be refused, never verdicted.      Emitting]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Import the triage script by path.      It must be registered in sys.modules befo]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[_load_triage_module()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_gap_reports_are_per_agent()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_untriageable_agents_are_refused_not_guessed()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[.acceptable()]] - code - gateway/security/subagent_governance.py
+- [[Configuration for subagent output trust scoring.]] - rationale - gateway/security/subagent_governance.py
+- [[OutputScore]] - code - gateway/security/subagent_governance.py
+- [[OutputTrustConfig]] - code - gateway/security/subagent_governance.py
+- [[Privilege escalation prevention policy.]] - rationale - gateway/security/subagent_governance.py
+- [[PrivilegePolicy]] - code - gateway/security/subagent_governance.py
+- [[Result of scoring a subagent's output.]] - rationale - gateway/security/subagent_governance.py
+- [[subagent_governance.py]] - code - gateway/security/subagent_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +25,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 42]]
+- 4 edges to [[_COMMUNITY_Community 38]]
+- 3 edges to [[_COMMUNITY_Community 1360]]
+- 2 edges to [[_COMMUNITY_Community 1209]]
+- 1 edge to [[_COMMUNITY_Community 8]]
+- 1 edge to [[_COMMUNITY_Community 11]]
+- 1 edge to [[_COMMUNITY_Community 1782]]
+- 1 edge to [[_COMMUNITY_Community 1343]]
 
 ## Top bridge nodes
-- [[_load_triage_module()]] - degree 4, connects to 1 community
-- [[test_gap_reports_are_per_agent()]] - degree 3, connects to 1 community
-- [[test_untriageable_agents_are_refused_not_guessed()]] - degree 3, connects to 1 community
+- [[subagent_governance.py]] - degree 15, connects to 7 communities
+- [[OutputScore]] - degree 4, connects to 1 community

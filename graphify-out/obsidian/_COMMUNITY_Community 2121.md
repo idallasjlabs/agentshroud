@@ -24,7 +24,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_Community 55]]
-- 1 edge to [[_COMMUNITY_Community 1342]]
+- 1 edge to [[_COMMUNITY_Community 1424]]
 
 ## Top bridge nodes
 - [[TestFailsLoudly]] - degree 6, connects to 2 communities

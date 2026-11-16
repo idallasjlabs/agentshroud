@@ -12,7 +12,7 @@ tags:
 # _FakeResponse
 
 ## Connections
-- [[.__init__()_192]] - `method` [EXTRACTED]
+- [[.__init__()_218]] - `method` [EXTRACTED]
 - [[.read()_2]] - `method` [EXTRACTED]
 - [[.test_200_returns_parsed_json()]] - `calls` [EXTRACTED]
 - [[.test_404_returns_empty_dict()]] - `calls` [EXTRACTED]

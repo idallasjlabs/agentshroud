@@ -1,17 +1,18 @@
 ---
 type: community
-members: 4
+members: 5
 ---
 
 # Community 2182
 
-**Members:** 4 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[C1 Hardcoded Owner User ID in middleware.py94]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[C2 Hardcoded Owner User ID in webhook_receiver.py45]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[C3 Bot Tokens Partially Exposed in Chat History]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[CRITICAL — Must Fix Before Release_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[Hermes — Podcast Production Orchestrator_1]] - document - docker/config/hermes/skills/i-hermes/README.md
+- [[Purpose_49]] - document - docker/config/hermes/skills/i-hermes/README.md
+- [[README_54]] - document - docker/config/hermes/skills/i-hermes/README.md
+- [[Related Skills_67]] - document - docker/config/hermes/skills/i-hermes/README.md
+- [[Usage_71]] - document - docker/config/hermes/skills/i-hermes/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 414]]
+- 1 edge to [[_COMMUNITY_Community 90]]
 
 ## Top bridge nodes
-- [[CRITICAL — Must Fix Before Release_1]] - degree 4, connects to 1 community
+- [[Hermes — Podcast Production Orchestrator_1]] - degree 5, connects to 1 community

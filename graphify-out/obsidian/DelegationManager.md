@@ -12,7 +12,7 @@ tags:
 # DelegationManager
 
 ## Connections
-- [[.__init__()_70]] - `method` [EXTRACTED]
+- [[.__init__()_85]] - `method` [EXTRACTED]
 - [[._load()]] - `method` [EXTRACTED]
 - [[._require_owner()]] - `method` [EXTRACTED]
 - [[._revoke_by_user_privilege()]] - `method` [EXTRACTED]

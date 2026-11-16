@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Community 1658"
+community: "Community 53"
 location: "L538"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1658
+  - community/Community_53
 ---
 
 # TestHermesDashboardWsProxy
@@ -23,4 +23,4 @@ tags:
 - [[hermes_dashboard_ws_proxy WebSocket counterpart of hermes_dashboard_proxy.]] - `rationale_for` [EXTRACTED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1658
+#graphify/code #graphify/EXTRACTED #community/Community_53

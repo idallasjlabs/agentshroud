@@ -1,0 +1,29 @@
+---
+source_file: "gateway/tests/test_soc_router_coverage.py"
+type: "code"
+community: "Community 19"
+location: "L38"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_19
+---
+
+# FakeCaller
+
+## Connections
+- [[.__init__()_213]] - `method` [EXTRACTED]
+- [[.is_group_admin()_2]] - `method` [EXTRACTED]
+- [[.is_owner()_5]] - `method` [EXTRACTED]
+- [[.require()_2]] - `method` [EXTRACTED]
+- [[ApprovalMode]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[Stands in for SCLCaller RBAC require() is a no-op, owner is switchable.]] - `rationale_for` [EXTRACTED]
+- [[holder()_1]] - `calls` [EXTRACTED]
+- [[test_add_group_member_paths()]] - `calls` [EXTRACTED]
+- [[test_set_user_role_non_owner_denied()]] - `calls` [EXTRACTED]
+- [[test_set_user_role_owner_success()]] - `calls` [EXTRACTED]
+- [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_19

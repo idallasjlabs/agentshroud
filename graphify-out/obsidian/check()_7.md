@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh"
+source_file: "scripts/smoke.d/test-sunday-upgrade-scan.sh"
 type: "code"
-community: "Community 1190"
-location: "L34"
+community: "Community 1111"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1190
+  - community/Community_1111
 ---
 
 # check()
 
 ## Connections
-- [[test_colima_and_sdk_patch_fallback_resolution.sh]] - `defines` [EXTRACTED]
-- [[test_colima_and_sdk_patch_fallback_resolution.sh script]] - `calls` [EXTRACTED]
+- [[test-sunday-upgrade-scan.sh]] - `defines` [EXTRACTED]
+- [[test-sunday-upgrade-scan.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1190
+#graphify/code #graphify/EXTRACTED #community/Community_1111

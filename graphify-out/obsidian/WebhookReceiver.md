@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "Community 43"
+community: "Community 114"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/Community_114
 ---
 
 # WebhookReceiver
 
 ## Connections
-- [[.__init__()_45]] - `method` [EXTRACTED]
+- [[.__init__()_60]] - `method` [EXTRACTED]
 - [[._can_create_directory()]] - `method` [EXTRACTED]
 - [[._extract_message()]] - `method` [EXTRACTED]
 - [[._extract_user_id()_1]] - `method` [EXTRACTED]
@@ -57,4 +57,4 @@ tags:
 - [[test_webhook_strips_pii()]] - `calls` [EXTRACTED]
 - [[webhook_receiver.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/Community_114

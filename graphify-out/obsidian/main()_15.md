@@ -1,23 +1,21 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "gateway/skills/scan.py"
 type: "code"
-community: "Community 261"
-location: "L300"
+community: "Community 924"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_261
+  - community/Community_924
 ---
 
 # main()
 
 ## Connections
-- [[.to_dict()_17]] - `calls` [EXTRACTED]
-- [[_print_plan()]] - `calls` [EXTRACTED]
-- [[apply_remediation()]] - `calls` [EXTRACTED]
-- [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
-- [[load_registry()]] - `calls` [EXTRACTED]
-- [[plan_remediation()]] - `calls` [EXTRACTED]
-- [[read_pin()]] - `calls` [EXTRACTED]
+- [[Path_24]] - `calls` [EXTRACTED]
+- [[SkillGuard]] - `calls` [EXTRACTED]
+- [[_build_tree()]] - `calls` [EXTRACTED]
+- [[_print_findings()]] - `calls` [EXTRACTED]
+- [[scan.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_261
+#graphify/code #graphify/EXTRACTED #community/Community_924

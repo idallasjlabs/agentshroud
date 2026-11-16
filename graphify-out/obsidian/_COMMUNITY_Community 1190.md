@@ -21,7 +21,7 @@ members: 17
 - [[_up_says()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
 - [[_ver_verdict()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
 - [[_wait_result()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
-- [[check()_7]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
+- [[check()_10]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
 - [[hc_run()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
 - [[test_colima_and_sdk_patch_fallback_resolution.sh]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
 - [[test_colima_and_sdk_patch_fallback_resolution.sh script]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh

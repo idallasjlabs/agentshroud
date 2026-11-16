@@ -12,7 +12,7 @@ tags:
 # test-skills-sync.sh script
 
 ## Connections
-- [[check()_3]] - `calls` [EXTRACTED]
+- [[check()_6]] - `calls` [EXTRACTED]
 - [[test-skills-sync.sh]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_710

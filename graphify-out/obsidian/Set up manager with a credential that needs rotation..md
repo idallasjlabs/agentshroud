@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "Community 791"
+community: "Community 122"
 location: "L273"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_791
+  - community/Community_122
 ---
 
 # Set up manager with a credential that needs rotation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.setup_manager_with_credential()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_791
+#graphify/rationale #graphify/EXTRACTED #community/Community_122

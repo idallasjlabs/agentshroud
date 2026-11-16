@@ -13,13 +13,13 @@ tags:
 
 ## Connections
 - [[.setup_method()_10]] - `calls` [EXTRACTED]
-- [[Any_49]] - `uses` [INFERRED]
+- [[Any_59]] - `uses` [INFERRED]
 - [[Configuration for memory lifecycle management.]] - `rationale_for` [EXTRACTED]
 - [[ContentThreat]] - `uses` [INFERRED]
 - [[ContentThreatType]] - `uses` [INFERRED]
 - [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
 - [[MemoryLifecycleManager]] - `uses` [INFERRED]
-- [[Path_16]] - `uses` [INFERRED]
+- [[Path_18]] - `uses` [INFERRED]
 - [[RetentionAction]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]

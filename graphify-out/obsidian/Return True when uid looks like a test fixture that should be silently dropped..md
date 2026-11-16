@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "rationale"
-community: "Community 99"
+community: "Community 1070"
 location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_99
+  - community/Community_1070
 ---
 
 # Return True when uid looks like a test fixture that should be silently dropped.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_is_fixture_uid()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_99
+#graphify/rationale #graphify/EXTRACTED #community/Community_1070

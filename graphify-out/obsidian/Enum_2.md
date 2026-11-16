@@ -1,18 +1,17 @@
 ---
-source_file: ""
+source_file: "config/inbound-edge/schema.json"
 type: "code"
-community: "._run_and_read"
+community: "Community 1927"
+location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run_and_read
+  - community/Community_1927
 ---
 
-# Enum
+# enum
 
 ## Connections
-- [[Coverage]] - `inherits` [EXTRACTED]
-- [[VulnClass]] - `inherits` [EXTRACTED]
-- [[triage-cve-mitigations.py]] - `imports_from` [EXTRACTED]
+- [[mode]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run_and_read
+#graphify/code #graphify/EXTRACTED #community/Community_1927

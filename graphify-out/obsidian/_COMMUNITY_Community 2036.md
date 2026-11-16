@@ -1,17 +1,20 @@
 ---
 type: community
-members: 4
+members: 7
 ---
 
 # Community 2036
 
-**Members:** 4 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[._enforce_group_workspace_access()]] - code - gateway/proxy/telegram_proxy.py
-- [[._group_workspace_manager()]] - code - gateway/proxy/telegram_proxy.py
-- [[Build a GroupWorkspaceManager from current teamsRBAC config.          Returns a]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Fail-closed member check for a group-context inbound message.          Returns T]] - rationale - gateway/proxy/telegram_proxy.py
+- [[03-threat-model]] - document - docs/inbound-mcp-edge/03-threat-model.md
+- [[1. Trust boundaries]] - document - docs/inbound-mcp-edge/03-threat-model.md
+- [[2. Threats, controls, tests and residual risk]] - document - docs/inbound-mcp-edge/03-threat-model.md
+- [[3. Taxonomy corrections versus the brief]] - document - docs/inbound-mcp-edge/03-threat-model.md
+- [[4. Mutation evidence (2026-11-09)]] - document - docs/inbound-mcp-edge/03-threat-model.md
+- [[5. Defects found while building]] - document - docs/inbound-mcp-edge/03-threat-model.md
+- [[Inbound MCP Edge — Threat Model]] - document - docs/inbound-mcp-edge/03-threat-model.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,11 +22,3 @@ members: 4
 TABLE source_file, type FROM #community/Community_2036
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 61]]
-
-## Top bridge nodes
-- [[._group_workspace_manager()]] - degree 4, connects to 2 communities
-- [[._enforce_group_workspace_access()]] - degree 4, connects to 1 community

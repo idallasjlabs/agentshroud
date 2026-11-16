@@ -12,7 +12,7 @@ tags:
 # _StubApprovalQueue
 
 ## Connections
-- [[.__init__()_135]] - `method` [EXTRACTED]
+- [[.__init__()_150]] - `method` [EXTRACTED]
 - [[.submit_tool_request()_1]] - `method` [EXTRACTED]
 - [[.wait_for_decision()_1]] - `method` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]

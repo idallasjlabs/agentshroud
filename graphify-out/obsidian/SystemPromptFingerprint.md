@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.register_system_prompt()]] - `references` [EXTRACTED]
 - [[.verify_system_prompt()]] - `references` [EXTRACTED]
-- [[Any_36]] - `uses` [INFERRED]
+- [[Any_46]] - `uses` [INFERRED]
 - [[ContextIntegrityScorer]] - `uses` [INFERRED]
 - [[HMAC-SHA256 fingerprint for a registered system prompt.]] - `rationale_for` [EXTRACTED]
 - [[IntegrityScore]] - `uses` [INFERRED]

@@ -8,8 +8,8 @@ members: 40
 **Members:** 40 nodes
 
 ## Members
-- [[.__call__()_7]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[.__init__()_167]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[.__call__()_10]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[.__init__()_188]] - code - gateway/tests/test_jira_dev_ticket.py
 - [[Records requests; serves op-proxy secrets then a scripted Jira response.]] - rationale - gateway/tests/test_jira_dev_ticket.py
 - [[_MockTransport]] - code - gateway/tests/test_jira_dev_ticket.py
 - [[_load_module()]] - code - gateway/tests/test_jira_dev_ticket.py
@@ -57,7 +57,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 647]]
+- 2 edges to [[_COMMUNITY_Community 238]]
 
 ## Top bridge nodes
 - [[test_jira_dev_ticket.py]] - degree 38, connects to 1 community

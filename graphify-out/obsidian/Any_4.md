@@ -2,10 +2,10 @@
 source_file: "gateway/cli/main.py"
 type: "code"
 community: "Community 87"
-location: "L39"
+location: "L40"
 tags:
   - graphify/code
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/Community_87
 ---
 
@@ -13,6 +13,7 @@ tags:
 
 ## Connections
 - [[SCLClient]] - `uses` [INFERRED]
+- [[_edge_result()]] - `references` [EXTRACTED]
 - [[_output()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_87
+#graphify/code #graphify/EXTRACTED #community/Community_87

@@ -12,7 +12,7 @@ members: 5
 - [[Falco (runtime security monitoring)]] - concept - gateway/security/__init__.py
 - [[Trivy (container vulnerability scanning)]] - concept - gateway/security/__init__.py
 - [[Wazuh (file integrity monitoring)]] - concept - gateway/security/__init__.py
-- [[__init__.py_9]] - code - gateway/security/__init__.py
+- [[__init__.py_10]] - code - gateway/security/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

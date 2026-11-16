@@ -26,10 +26,10 @@ members: 59
 - [[.test_score_floor()]] - code - gateway/tests/test_security_toolchain.py
 - [[.test_trend_empty_db()]] - code - gateway/tests/test_security_toolchain.py
 - [[Alert Levels]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[Any_42]] - code - gateway/security/health_report.py
+- [[Any_52]] - code - gateway/security/health_report.py
 - [[Calculate score for a single tool (0-100).      Args         summary Tool summ]] - rationale - gateway/security/health_report.py
 - [[Calculate weighted overall security score.      Args         summaries Dict ma]] - rationale - gateway/security/health_report.py
-- [[Connection]] - code - gateway/security/health_report.py
+- [[Connection_1]] - code - gateway/security/health_report.py
 - [[Convert score to letter grade.      Args         score Numeric score (0-100).]] - rationale - gateway/security/health_report.py
 - [[Format a health report as a human-readable string.      Args         report Fu]] - rationale - gateway/security/health_report.py
 - [[Generate a full health report.      Args         summaries Dict mapping tool n]] - rationale - gateway/security/health_report.py
@@ -39,7 +39,7 @@ members: 59
 - [[Integration with Gateway]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
 - [[Key OSSEC Config Sections (Inferred)]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
 - [[Network Enforcement]] - document - docs/vault/03 - Configuration/falco-rules.md
-- [[Path_13]] - code - gateway/security/health_report.py
+- [[Path_15]] - code - gateway/security/health_report.py
 - [[Priority Levels_1]] - document - docs/vault/03 - Configuration/falco-rules.md
 - [[Purpose_178]] - document - docs/vault/03 - Configuration/falco-rules.md
 - [[Purpose_183]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
@@ -76,20 +76,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_Community 102]]
-- 6 edges to [[_COMMUNITY_Community 0]]
+- 12 edges to [[_COMMUNITY_Community 102]]
+- 4 edges to [[_COMMUNITY_Community 557]]
+- 3 edges to [[_COMMUNITY_Community 943]]
 - 1 edge to [[_COMMUNITY_Community 163]]
-- 1 edge to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 151]]
 - 1 edge to [[_COMMUNITY_Community 253]]
-- 1 edge to [[_COMMUNITY_Community 1426]]
-- 1 edge to [[_COMMUNITY_Community 431]]
-- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 43]]
+- 1 edge to [[_COMMUNITY_Community 52]]
+- 1 edge to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 73]]
 - 1 edge to [[_COMMUNITY_Community 777]]
-- 1 edge to [[_COMMUNITY_Community 5]]
+- 1 edge to [[_COMMUNITY_Community 115]]
+- 1 edge to [[_COMMUNITY_Community 0]]
 
 ## Top bridge nodes
-- [[health_report.py]] - degree 18, connects to 6 communities
-- [[alert_dispatcher.py]] - degree 9, connects to 5 communities
+- [[health_report.py]] - degree 18, connects to 7 communities
+- [[alert_dispatcher.py]] - degree 9, connects to 6 communities
 - [[TestHealthScoring]] - degree 12, connects to 2 communities
 - [[TestHealthReport]] - degree 6, connects to 2 communities
-- [[TestHealthOverallScore]] - degree 5, connects to 2 communities
+- [[wazuh-ossec]] - degree 6, connects to 2 communities

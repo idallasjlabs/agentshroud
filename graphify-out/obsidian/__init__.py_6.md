@@ -1,14 +1,14 @@
 ---
-source_file: "gateway/ingest_api/routes/__init__.py"
+source_file: "gateway/ingest_api/__init__.py"
 type: "code"
-community: "Community 1878"
+community: "Community 1840"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1878
+  - community/Community_1840
 ---
 
 # __init__.py
 
-#graphify/code #graphify/EXTRACTED #community/Community_1878
+#graphify/code #graphify/EXTRACTED #community/Community_1840

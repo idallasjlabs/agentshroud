@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "Community 99"
+community: "Community 329"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_99
+  - community/Community_329
 ---
 
 # CollaboratorActivityTracker
 
 ## Connections
-- [[.__init__()_62]] - `method` [EXTRACTED]
+- [[.__init__()_77]] - `method` [EXTRACTED]
 - [[._append_contributor_log()]] - `method` [EXTRACTED]
 - [[._coerce_timestamp()]] - `method` [EXTRACTED]
 - [[._normalize_preview()]] - `method` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[.test_initial_state_healthy()]] - `calls` [EXTRACTED]
 - [[Collaborator Tracker Tests]] - `references` [EXTRACTED]
 - [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
-- [[Path_32]] - `uses` [INFERRED]
+- [[Path_35]] - `uses` [INFERRED]
 - [[TelegramAPIProxy_3]] - `uses` [INFERRED]
 - [[TestBuildCollaboratorSafeInfoResponse]] - `uses` [INFERRED]
 - [[TestDefaultBotId]] - `uses` [INFERRED]
@@ -65,4 +65,4 @@ tags:
 - [[test_unknown_user_recorded_when_dynamic_tracking_enabled()]] - `calls` [EXTRACTED]
 - [[tracker()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_99
+#graphify/code #graphify/EXTRACTED #community/Community_329

@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[.__aenter__()_4]] - code - gateway/tests/test_llm_proxy.py
-- [[.__aexit__()_4]] - code - gateway/tests/test_llm_proxy.py
-- [[.__init__()_173]] - code - gateway/tests/test_llm_proxy.py
-- [[.stream()]] - code - gateway/tests/test_llm_proxy.py
-- [[_HeadFakeClient]] - code - gateway/tests/test_llm_proxy.py
+- [[.test_bot_filter_matches_normalised_image()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_missing_dir_returns_empty()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_plain_name_and_mtime_timestamp()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_timestamp_suffix_strip_branch()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestTrivyImageSummaries]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,8 +22,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 1278]]
-- 1 edge to [[_COMMUNITY_Community 53]]
+- 3 edges to [[_COMMUNITY_Community 219]]
+- 1 edge to [[_COMMUNITY_Community 516]]
 
 ## Top bridge nodes
-- [[_HeadFakeClient]] - degree 7, connects to 2 communities
+- [[TestTrivyImageSummaries]] - degree 5, connects to 1 community
+- [[.test_plain_name_and_mtime_timestamp()]] - degree 2, connects to 1 community
+- [[.test_timestamp_suffix_strip_branch()]] - degree 2, connects to 1 community
+- [[.test_bot_filter_matches_normalised_image()]] - degree 2, connects to 1 community

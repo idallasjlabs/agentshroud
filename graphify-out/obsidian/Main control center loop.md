@@ -12,6 +12,6 @@ tags:
 # Main control center loop
 
 ## Connections
-- [[.run()_6]] - `rationale_for` [EXTRACTED]
+- [[.run()_12]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_282

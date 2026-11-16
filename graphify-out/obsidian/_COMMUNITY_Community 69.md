@@ -76,7 +76,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 562]]
+- 9 edges to [[_COMMUNITY_Community 93]]
 
 ## Top bridge nodes
 - [[test_triage_cve_mitigations.py]] - degree 12, connects to 1 community

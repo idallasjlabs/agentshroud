@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Community 64"
+community: "Community 54"
 location: "L1155"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_64
+  - community/Community_54
 ---
 
 # TestAllowDenyList
@@ -29,4 +29,4 @@ tags:
 - [[ThreatLevel]] - `uses` [INFERRED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_64
+#graphify/code #graphify/INFERRED #community/Community_54

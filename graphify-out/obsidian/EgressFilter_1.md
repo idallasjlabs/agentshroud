@@ -12,13 +12,13 @@ tags:
 # EgressFilter
 
 ## Connections
-- [[.__init__()_75]] - `method` [EXTRACTED]
+- [[.__init__()_90]] - `method` [EXTRACTED]
 - [[._check_impl()]] - `method` [EXTRACTED]
 - [[._is_ipv6()]] - `method` [EXTRACTED]
 - [[._is_private_ip()_2]] - `method` [EXTRACTED]
 - [[._matches_allowlist_domain()]] - `method` [EXTRACTED]
 - [[._matches_ip_list()]] - `method` [EXTRACTED]
-- [[._record()_1]] - `method` [EXTRACTED]
+- [[._record()_2]] - `method` [EXTRACTED]
 - [[.check()_5]] - `method` [EXTRACTED]
 - [[.check_async()]] - `method` [EXTRACTED]
 - [[.flush_notifications()]] - `method` [EXTRACTED]
@@ -80,7 +80,7 @@ tags:
 - [[TestLogging]] - `uses` [INFERRED]
 - [[TestModuleConfigDefaults]] - `uses` [INFERRED]
 - [[TestModuleInstantiationInEnforceMode]] - `uses` [INFERRED]
-- [[TestMonitorMode]] - `uses` [INFERRED]
+- [[TestMonitorMode_2]] - `uses` [INFERRED]
 - [[TestOpenClawResearchDomainsAllowlisted]] - `uses` [INFERRED]
 - [[TestPerAgentPolicy]] - `uses` [INFERRED]
 - [[TestPromptGuard_1]] - `uses` [INFERRED]

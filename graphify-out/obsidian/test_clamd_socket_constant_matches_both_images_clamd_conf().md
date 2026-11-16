@@ -12,7 +12,7 @@ tags:
 # test_clamd_socket_constant_matches_both_images_clamd_conf()
 
 ## Connections
-- [[Path_8]] - `calls` [EXTRACTED]
+- [[Path_10]] - `calls` [EXTRACTED]
 - [[test_clamav_pipeline.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_220

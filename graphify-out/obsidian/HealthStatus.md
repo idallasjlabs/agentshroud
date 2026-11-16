@@ -12,7 +12,7 @@ tags:
 # HealthStatus
 
 ## Connections
-- [[Any_68]] - `uses` [INFERRED]
+- [[Any_78]] - `uses` [INFERRED]
 - [[Enum]] - `inherits` [EXTRACTED]
 - [[HealthStatus_1]] - `uses` [INFERRED]
 - [[ServiceDescriptor_1]] - `uses` [INFERRED]

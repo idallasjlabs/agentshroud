@@ -1,19 +1,20 @@
 ---
 type: community
-members: 6
+members: 7
 ---
 
 # Community 2045
 
-**Members:** 6 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[W1 Duplicate `import time` in `dashboard.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[W2 Redundant function-level `import threading` in `lifespan.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[W3 Redundant function-level `import fnmatch` in `main.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[W4 Tailscale image not pinned to SHA256 digest]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[W5 Hardcoded owner ID fallback `'1234567890'` in `lifespan.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[🟡 WARNINGS (should fix)]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[10. Security Supply Chain Analysis]] - document - docs/papers/agentshroud-whitepaper.md
+- [[10.1 Core Runtime Dependencies]] - document - docs/papers/agentshroud-whitepaper.md
+- [[10.2 Security-Specific Dependencies]] - document - docs/papers/agentshroud-whitepaper.md
+- [[10.3 Container Security Tools]] - document - docs/papers/agentshroud-whitepaper.md
+- [[10.4 High-Risk Dependency Wazuh]] - document - docs/papers/agentshroud-whitepaper.md
+- [[10.5 Supply Chain Security Practices]] - document - docs/papers/agentshroud-whitepaper.md
+- [[10.6 Recommendations]] - document - docs/papers/agentshroud-whitepaper.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +24,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 153]]
+- 1 edge to [[_COMMUNITY_Community 331]]
+- 1 edge to [[_COMMUNITY_Community 429]]
 
 ## Top bridge nodes
-- [[🟡 WARNINGS (should fix)]] - degree 6, connects to 1 community
+- [[10. Security Supply Chain Analysis]] - degree 8, connects to 2 communities

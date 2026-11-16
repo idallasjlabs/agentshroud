@@ -1,23 +1,36 @@
 ---
 type: community
-members: 10
+members: 23
 ---
 
 # Community 647
 
-**Members:** 10 nodes
+**Members:** 23 nodes
 
 ## Members
-- [[jira_dev_ticket add_comment()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_basic_auth_header()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_comment_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_issue_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_transitions_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket create_issue()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket find_transition_id()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket run()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket transition_issue()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket.py (OpenClaw copy)]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[.__init__()_141]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[._url_has_blocked_patterns()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[.setup_method()_37]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_convenience_function()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_performance_with_large_content()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_realistic_web_scraping_result()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_warn_mode()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Check if URL contains any blocked patterns.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Configuration for tool result markdown sanitization.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Convenience function to sanitize tool result content.      Args         content]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Enhanced markdown sanitizer with configurable domain allowlist.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Integration tests for the sanitizer.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Set up test fixtures._3]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test performance with large content.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test sanitizing a realistic web scraping result.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test the convenience sanitize_tool_result function.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test warn mode that marks but preserves external content.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[TestIntegration_1]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[ToolResultSanitizer_1]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[ToolResultSanitizerConfig]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[sanitize_tool_result()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[test_tool_result_sanitizer_enhanced.py]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[tool_result_sanitizer_enhanced.py]] - code - gateway/security/tool_result_sanitizer_enhanced.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,11 +40,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 238]]
-- 2 edges to [[_COMMUNITY_Community 188]]
-- 1 edge to [[_COMMUNITY_Community 2074]]
+- 18 edges to [[_COMMUNITY_Community 72]]
+- 6 edges to [[_COMMUNITY_Community 455]]
+- 6 edges to [[_COMMUNITY_Community 1944]]
+- 5 edges to [[_COMMUNITY_Community 2134]]
+- 2 edges to [[_COMMUNITY_Community 1]]
+- 2 edges to [[_COMMUNITY_Community 2332]]
+- 1 edge to [[_COMMUNITY_Community 154]]
+- 1 edge to [[_COMMUNITY_Community 28]]
+- 1 edge to [[_COMMUNITY_Community 2348]]
 
 ## Top bridge nodes
-- [[jira_dev_ticket run()]] - degree 7, connects to 3 communities
-- [[jira_dev_ticket build_basic_auth_header()]] - degree 4, connects to 1 community
-- [[jira_dev_ticket.py (OpenClaw copy)]] - degree 2, connects to 1 community
+- [[ToolResultSanitizer_1]] - degree 34, connects to 9 communities
+- [[ToolResultSanitizerConfig]] - degree 26, connects to 4 communities
+- [[test_tool_result_sanitizer_enhanced.py]] - degree 6, connects to 2 communities
+- [[sanitize_tool_result()]] - degree 7, connects to 1 community
+- [[.setup_method()_37]] - degree 4, connects to 1 community

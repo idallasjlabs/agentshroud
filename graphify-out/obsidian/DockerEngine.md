@@ -12,7 +12,7 @@ tags:
 # DockerEngine
 
 ## Connections
-- [[.__init__()_47]] - `method` [EXTRACTED]
+- [[.__init__()_62]] - `method` [EXTRACTED]
 - [[._cmd()_1]] - `method` [EXTRACTED]
 - [[.build()_1]] - `method` [EXTRACTED]
 - [[.compose_down()_1]] - `method` [EXTRACTED]
@@ -28,7 +28,7 @@ tags:
 - [[.pull()_1]] - `method` [EXTRACTED]
 - [[.push()_1]] - `method` [EXTRACTED]
 - [[.rm()_1]] - `method` [EXTRACTED]
-- [[.run()_2]] - `method` [EXTRACTED]
+- [[.run()_6]] - `method` [EXTRACTED]
 - [[.setup_method()_23]] - `calls` [EXTRACTED]
 - [[.stop()_6]] - `method` [EXTRACTED]
 - [[.unpause()_1]] - `method` [EXTRACTED]
@@ -52,7 +52,7 @@ tags:
 - [[TestRuntimeConfig]] - `uses` [INFERRED]
 - [[TestSecurityFeatures]] - `uses` [INFERRED]
 - [[TestWebAPI]] - `uses` [INFERRED]
-- [[__init__.py_8]] - `imports` [EXTRACTED]
+- [[__init__.py_9]] - `imports` [EXTRACTED]
 - [[docker_engine.py]] - `contains` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 

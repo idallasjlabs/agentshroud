@@ -1,25 +1,18 @@
 ---
-source_file: "gateway/proxy/webhook_receiver.py"
+source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "Community 1"
-location: "L121"
+community: "Community 1787"
+location: "L1338"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1
+  - community/Community_1787
 ---
 
 # Any
 
 ## Connections
-- [[._extract_message()]] - `references` [EXTRACTED]
-- [[._extract_user_id()_1]] - `references` [EXTRACTED]
-- [[._extract_username()]] - `references` [EXTRACTED]
-- [[._prepare_session_payload()]] - `references` [EXTRACTED]
-- [[._replace_message()]] - `references` [EXTRACTED]
-- [[.get_stats()_11]] - `references` [EXTRACTED]
-- [[.process_webhook()]] - `references` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
+- [[._filter_streaming_event()]] - `references` [EXTRACTED]
+- [[.proxy_messages_streaming()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1
+#graphify/code #graphify/EXTRACTED #community/Community_1787

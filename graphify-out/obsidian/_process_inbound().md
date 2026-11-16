@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[ForwardRequest]] - `shares_data_with` [EXTRACTED]
 - [[ForwardRequest_2]] - `references` [EXTRACTED]
-- [[JSONResponse]] - `calls` [INFERRED]
+- [[HTTPException]] - `calls` [INFERRED]
 - [[MiddlewareManager.process_request()]] - `calls` [EXTRACTED]
 - [[RBACConfig_1]] - `calls` [EXTRACTED]
-- [[Request_4]] - `references` [EXTRACTED]
+- [[Request_5]] - `references` [EXTRACTED]
 - [[SecurityPipeline]] - `calls` [EXTRACTED]
 - [[Target resolution + P1 middleware + inbound security pipeline —     shared by th]] - `rationale_for` [EXTRACTED]
 - [[_InboundResult]] - `references` [EXTRACTED]

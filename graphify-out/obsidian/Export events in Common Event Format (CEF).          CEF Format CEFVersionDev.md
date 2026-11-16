@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "rationale"
-community: "Community 254"
+community: "Community 1290"
 location: "L143"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_254
+  - community/Community_1290
 ---
 
 # Export events in Common Event Format (CEF).          CEF Format: CEF:Version|Dev
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._export_cef()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_254
+#graphify/rationale #graphify/EXTRACTED #community/Community_1290

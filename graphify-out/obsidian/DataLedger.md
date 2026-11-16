@@ -12,9 +12,9 @@ tags:
 # DataLedger
 
 ## Connections
-- [[.__init__()_13]] - `method` [EXTRACTED]
+- [[.__init__()_28]] - `method` [EXTRACTED]
 - [[._hash_content()]] - `method` [EXTRACTED]
-- [[.close()_5]] - `method` [EXTRACTED]
+- [[.close()_7]] - `method` [EXTRACTED]
 - [[.delete_entry()]] - `method` [EXTRACTED]
 - [[.disabled_client()]] - `calls` [EXTRACTED]
 - [[.enforce_retention()]] - `method` [EXTRACTED]
@@ -61,8 +61,8 @@ tags:
 - [[TestTamperDetection]] - `uses` [INFERRED]
 - [[TestTrustManagerPerformance]] - `uses` [INFERRED]
 - [[_DropInvalidHTTPRequestFilter]] - `uses` [INFERRED]
-- [[client()_16]] - `calls` [EXTRACTED]
 - [[client()_17]] - `calls` [EXTRACTED]
+- [[client()_18]] - `calls` [EXTRACTED]
 - [[conftest.py]] - `imports` [EXTRACTED]
 - [[ledger()]] - `calls` [EXTRACTED]
 - [[ledger()_2]] - `calls` [EXTRACTED]

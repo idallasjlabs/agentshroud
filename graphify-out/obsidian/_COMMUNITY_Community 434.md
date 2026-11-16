@@ -53,7 +53,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 8 edges to [[_COMMUNITY_Community 187]]
-- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 22]]
 
 ## Top bridge nodes
 - [[TestHeuristicClassifier]] - degree 19, connects to 1 community

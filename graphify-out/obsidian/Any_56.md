@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/report_store.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "Community 110"
-location: "L182"
+community: "Community 809"
+location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_110
+  - community/Community_809
 ---
 
 # Any
 
 ## Connections
-- [[.get()_4]] - `references` [EXTRACTED]
-- [[.list()]] - `references` [EXTRACTED]
+- [[get_sanitizer_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_110
+#graphify/code #graphify/EXTRACTED #community/Community_809

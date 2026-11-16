@@ -1,11 +1,11 @@
 ---
 type: community
-members: 24
+members: 35
 ---
 
 # Community 227
 
-**Members:** 24 nodes
+**Members:** 35 nodes
 
 ## Members
 - [[ColimaDocker VM Storage Exhaustion]] - concept - reports/upgrade-2026-09-06-prod.md
@@ -21,7 +21,10 @@ members: 24
 - [[Sunday Upgrade Report 2026-09-14 (dev account)]] - document - reports/upgrade-2026-09-14.md
 - [[Sunday Upgrade Report Hermes-cron Delivery]] - code - scripts/hermes-cron/sunday-upgrade-report.sh
 - [[Wazuh-Agent Sidecar Split (SIDECAR-GAP-001 resolution)]] - concept - reports/upgrade-2026-09-06-prod.md
+- [[_rollback()]] - code - scripts/update-agentshroud.sh
 - [[_run_cleanup()]] - code - scripts/check-vendor-compat.sh
+- [[_svc_container()]] - code - scripts/post-deploy-check.sh
+- [[check()_1]] - code - scripts/post-deploy-check.sh
 - [[check-vendor-compat.sh]] - code - scripts/check-vendor-compat.sh
 - [[check-vendor-compat.sh script]] - code - scripts/check-vendor-compat.sh
 - [[check_hermes()]] - code - scripts/check-vendor-compat.sh
@@ -30,7 +33,15 @@ members: 24
 - [[op-to-keychain.sh]] - code - scripts/op-to-keychain.sh
 - [[op-to-keychain.sh script]] - code - scripts/op-to-keychain.sh
 - [[pass()_2]] - code - scripts/check-vendor-compat.sh
+- [[post-deploy-check.sh]] - code - scripts/post-deploy-check.sh
+- [[post-deploy-check.sh script]] - code - scripts/post-deploy-check.sh
+- [[restore-backup.sh]] - code - scripts/restore-backup.sh
+- [[restore-backup.sh script]] - code - scripts/restore-backup.sh
+- [[restore_tar_to_volume()]] - code - scripts/restore-backup.sh
 - [[sunday-upgrade.sh (remote-control launcher)]] - code - scripts/sunday-upgrade.sh
+- [[update-agentshroud.sh]] - code - scripts/update-agentshroud.sh
+- [[update-agentshroud.sh script]] - code - scripts/update-agentshroud.sh
+- [[upgrade-2026-09-24]] - document - reports/upgrade-2026-09-24.md
 - [[warn()_2]] - code - scripts/check-vendor-compat.sh
 
 ## Live Query (requires Dataview plugin)
@@ -42,15 +53,19 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_Community 126]]
-- 2 edges to [[_COMMUNITY_Community 118]]
+- 4 edges to [[_COMMUNITY_Community 118]]
 - 2 edges to [[_COMMUNITY_Community 139]]
+- 1 edge to [[_COMMUNITY_Community 71]]
 - 1 edge to [[_COMMUNITY_Community 66]]
-- 1 edge to [[_COMMUNITY_Community 261]]
-- 1 edge to [[_COMMUNITY_Community 1344]]
+- 1 edge to [[_COMMUNITY_Community 420]]
+- 1 edge to [[_COMMUNITY_Community 1924]]
+- 1 edge to [[_COMMUNITY_Community 547]]
+- 1 edge to [[_COMMUNITY_Community 8]]
+- 1 edge to [[_COMMUNITY_Community 1143]]
 
 ## Top bridge nodes
-- [[check-vendor-compat.sh]] - degree 15, connects to 5 communities
+- [[check-vendor-compat.sh]] - degree 15, connects to 3 communities
+- [[upgrade-2026-09-24]] - degree 9, connects to 3 communities
+- [[post-deploy-check.sh]] - degree 7, connects to 3 communities
 - [[check_openclaw()]] - degree 8, connects to 1 community
 - [[Sunday Upgrade Report 2026-09-06 (prod, disk-exhaustion incident)]] - degree 6, connects to 1 community
-- [[sunday-upgrade.sh (remote-control launcher)]] - degree 4, connects to 1 community
-- [[Sunday Upgrade Report 2026-09-14 (dev account)]] - degree 4, connects to 1 community

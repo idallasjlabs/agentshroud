@@ -1,35 +1,32 @@
 ---
 type: community
-members: 22
+members: 19
 ---
 
 # Community 888
 
-**Members:** 22 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[.setup_method()_27]] - code - gateway/tests/test_security_hardening.py
-- [[.test_base64_encoded_injection()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_benign_base64()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_clean_input()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_combined_attack_high_score()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_dan_jailbreak()_1]] - code - gateway/tests/test_security_hardening.py
-- [[.test_delimiter_injection()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_empty_input()_3]] - code - gateway/tests/test_security_hardening.py
-- [[.test_forget_everything()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_ignore_instructions()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_indirect_injection()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_new_instructions_override()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_none_input()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_prompt_extraction()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_prompt_leak_question()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_role_reassignment()_1]] - code - gateway/tests/test_security_hardening.py
-- [[.test_rtl_override()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_sanitized_output()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_unicode_zero_width()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_warn_threshold()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_xml_tag_injection()_1]] - code - gateway/tests/test_security_hardening.py
-- [[TestPromptGuard_1]] - code - gateway/tests/test_security_hardening.py
+- [[.test_clean_fresh_and_stale_reports()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_clean_no_report_three()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_critical_high_medium_branches()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_failures_score_two()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_fresh_clean_is_optimizing()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_malware_30h_old_scan_measured()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_malware_fresh_scan_optimizing()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_malware_running_but_nothing_scanned()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_not_run_no_binary()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_oscap_binary_present_not_run()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_runtime_noncritical_findings_scores_four()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_stale_report_caps_at_one()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_two_day_old_clean_is_measured()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Path_41]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Set a file's mtime to `hours` hours in the past.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
+- [[TestComplianceAuditing]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestRuntimeProtectionAndMalware]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestVulnerabilityManagement]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[_age()]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,14 +36,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 0]]
-- 6 edges to [[_COMMUNITY_Community 52]]
-- 3 edges to [[_COMMUNITY_Community 11]]
-- 2 edges to [[_COMMUNITY_Community 17]]
-- 2 edges to [[_COMMUNITY_Community 21]]
-- 1 edge to [[_COMMUNITY_Community 24]]
+- 8 edges to [[_COMMUNITY_Community 219]]
+- 4 edges to [[_COMMUNITY_Community 516]]
+- 1 edge to [[_COMMUNITY_Community 2319]]
 
 ## Top bridge nodes
-- [[TestPromptGuard_1]] - degree 40, connects to 6 communities
-- [[.setup_method()_27]] - degree 2, connects to 1 community
-- [[.test_warn_threshold()]] - degree 2, connects to 1 community
+- [[_age()]] - degree 7, connects to 2 communities
+- [[TestComplianceAuditing]] - degree 6, connects to 1 community
+- [[TestVulnerabilityManagement]] - degree 5, connects to 1 community
+- [[TestRuntimeProtectionAndMalware]] - degree 5, connects to 1 community
+- [[.test_two_day_old_clean_is_measured()]] - degree 3, connects to 1 community

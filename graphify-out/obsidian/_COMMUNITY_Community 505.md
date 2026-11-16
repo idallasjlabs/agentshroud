@@ -1,42 +1,41 @@
 ---
 type: community
-members: 29
+members: 28
 ---
 
 # Community 505
 
-**Members:** 29 nodes
+**Members:** 28 nodes
 
 ## Members
-- [[.__init__()_122]] - code - gateway/security/tool_chain_analyzer.py
-- [[._calculate_risk_score()]] - code - gateway/security/tool_chain_analyzer.py
-- [[._cleanup_old_sessions()_1]] - code - gateway/security/tool_chain_analyzer.py
-- [[._detect_chain_patterns()]] - code - gateway/security/tool_chain_analyzer.py
-- [[._load_default_patterns()]] - code - gateway/security/tool_chain_analyzer.py
-- [[._matches_source_pattern()]] - code - gateway/security/tool_chain_analyzer.py
-- [[._trigger_alert()_1]] - code - gateway/security/tool_chain_analyzer.py
-- [[.analyze_tool_call()]] - code - gateway/security/tool_chain_analyzer.py
-- [[.get_global_stats()_1]] - code - gateway/security/tool_chain_analyzer.py
-- [[.get_session_stats()_1]] - code - gateway/security/tool_chain_analyzer.py
-- [[.sanitize_tool_params()]] - code - gateway/security/tool_chain_analyzer.py
-- [[.score_reversibility()]] - code - gateway/security/tool_chain_analyzer.py
-- [[Analyze a tool call for suspicious chain patterns.          Args             se]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Any_62]] - code - gateway/security/tool_chain_analyzer.py
-- [[Calculate risk score for a detected chain.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Check if a call matches the source pattern, including parameter analysis.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Detect if current call completes a suspicious pattern.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Get global analyzer statistics.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Get statistics for a session._1]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Initialize the tool chain analyzer.          Args             config Configura]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Load default suspicious chain patterns.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Remove old sessions to prevent memory bloat._1]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Represents a single tool call.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Return a reversibility score for the given tool call (1.0 = safe, 0.1 = irrevers]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Scan tool parameters for injection payloads and return sanitized copy.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[SessionChainContext]] - code - gateway/security/tool_chain_analyzer.py
-- [[Tool call chain context for a session.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[ToolCall]] - code - gateway/security/tool_chain_analyzer.py
-- [[Trigger alert callbacks for a detected chain.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[.test_access_class_is_read_or_write()]] - code - gateway/tests/test_edge_descriptors.py
+- [[.test_added_tool_refuses()]] - code - gateway/tests/test_edge_descriptors.py
+- [[.test_committed_manifest_matches_code()]] - code - gateway/tests/test_edge_descriptors.py
+- [[.test_every_schema_is_closed()]] - code - gateway/tests/test_edge_descriptors.py
+- [[.test_every_string_property_is_bounded()]] - code - gateway/tests/test_edge_descriptors.py
+- [[.test_hash_is_stable_and_order_independent()]] - code - gateway/tests/test_edge_descriptors.py
+- [[.test_initial_tool_set()]] - code - gateway/tests/test_edge_descriptors.py
+- [[.test_keygen_then_sign_then_verify()]] - code - gateway/tests/test_edge_descriptors.py
+- [[.test_manifest_lists_every_tool()]] - code - gateway/tests/test_edge_descriptors.py
+- [[.test_mcp_tool_view_strips_internal_fields()]] - code - gateway/tests/test_edge_descriptors.py
+- [[.test_missing_or_garbage_signature_refuses()]] - code - gateway/tests/test_edge_descriptors.py
+- [[.test_modified_descriptor_refuses()]] - code - gateway/tests/test_edge_descriptors.py
+- [[.test_no_path_or_shell_shaped_properties()]] - code - gateway/tests/test_edge_descriptors.py
+- [[.test_non_ed25519_key_refuses()]] - code - gateway/tests/test_edge_descriptors.py
+- [[.test_sign_refuses_a_key_that_does_not_match_the_committed_public_key()]] - code - gateway/tests/test_edge_descriptors.py
+- [[.test_tampered_manifest_refuses()]] - code - gateway/tests/test_edge_descriptors.py
+- [[.test_valid_signature_verifies()]] - code - gateway/tests/test_edge_descriptors.py
+- [[.test_write_tools_accept_an_approval_ticket()]] - code - gateway/tests/test_edge_descriptors.py
+- [[.test_wrong_key_refuses()]] - code - gateway/tests/test_edge_descriptors.py
+- [[Owner workflow keygen  keychain; keychain  sign — key never in argv or on]] - rationale - gateway/tests/test_edge_descriptors.py
+- [[TestDescriptorShape]] - code - gateway/tests/test_edge_descriptors.py
+- [[TestManifest]] - code - gateway/tests/test_edge_descriptors.py
+- [[TestPublicView]] - code - gateway/tests/test_edge_descriptors.py
+- [[TestSigningCli]] - code - gateway/tests/test_edge_descriptors.py
+- [[The signed manifest in config must describe exactly the shipped descriptors.]] - rationale - gateway/tests/test_edge_descriptors.py
+- [[_keypair()]] - code - gateway/tests/test_edge_descriptors.py
+- [[_sign()]] - code - gateway/tests/test_edge_descriptors.py
+- [[test_edge_descriptors.py]] - code - gateway/tests/test_edge_descriptors.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,12 +45,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_Community 72]]
-- 11 edges to [[_COMMUNITY_Community 8]]
+- 1 edge to [[_COMMUNITY_Community 41]]
 
 ## Top bridge nodes
-- [[.analyze_tool_call()]] - degree 9, connects to 2 communities
-- [[._detect_chain_patterns()]] - degree 8, connects to 2 communities
-- [[.__init__()_122]] - degree 5, connects to 2 communities
-- [[._matches_source_pattern()]] - degree 5, connects to 2 communities
-- [[._calculate_risk_score()]] - degree 5, connects to 2 communities
+- [[test_edge_descriptors.py]] - degree 7, connects to 1 community

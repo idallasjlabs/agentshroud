@@ -2,7 +2,7 @@
 source_file: "gateway/soc/router.py"
 type: "code"
 community: "Community 10"
-location: "L1197"
+location: "L1208"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -15,6 +15,7 @@ tags:
 - [[Create a new group at runtime (owner only).]] - `rationale_for` [EXTRACTED]
 - [[CreateGroupRequest]] - `references` [EXTRACTED]
 - [[GroupConfig]] - `calls` [EXTRACTED]
+- [[HTTPException]] - `calls` [EXTRACTED]
 - [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]

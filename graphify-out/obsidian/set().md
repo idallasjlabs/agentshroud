@@ -2,7 +2,7 @@
 source_file: "gateway/cli/main.py"
 type: "code"
 community: "Community 87"
-location: "L298"
+location: "L310"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,7 @@ tags:
 # set()
 
 ## Connections
+- [[Add a user to a group.]] - `rationale_for` [EXTRACTED]
 - [[Set configuration values.]] - `rationale_for` [EXTRACTED]
 - [[main.py_1]] - `contains` [EXTRACTED]
 

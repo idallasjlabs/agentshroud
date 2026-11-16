@@ -1,23 +1,25 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "Community 265"
-location: "L524"
+community: "Community 446"
+location: "L550"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_265
+  - community/Community_446
 ---
 
 # main()
 
 ## Connections
-- [[build_id_plan()]] - `calls` [EXTRACTED]
-- [[compute_stats()]] - `calls` [EXTRACTED]
-- [[gather_advisories()]] - `calls` [EXTRACTED]
-- [[load_registry()_1]] - `calls` [EXTRACTED]
-- [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
-- [[render_manual_review()]] - `calls` [EXTRACTED]
-- [[rewrite_registry_text()]] - `calls` [EXTRACTED]
+- [[generate_branding_assets.py]] - `contains` [EXTRACTED]
+- [[generate_email()]] - `calls` [EXTRACTED]
+- [[generate_favicons()]] - `calls` [EXTRACTED]
+- [[generate_feature_icons()]] - `calls` [EXTRACTED]
+- [[generate_icon_sizes()]] - `calls` [EXTRACTED]
+- [[generate_presentation()]] - `calls` [EXTRACTED]
+- [[generate_social()]] - `calls` [EXTRACTED]
+- [[generate_svg_logos()]] - `calls` [EXTRACTED]
+- [[generate_variants()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_265
+#graphify/code #graphify/EXTRACTED #community/Community_446

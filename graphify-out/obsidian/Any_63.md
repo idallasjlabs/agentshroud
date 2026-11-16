@@ -1,24 +1,18 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "Community 28"
-location: "L28"
+community: "Community 233"
+location: "L231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_28
+  - community/Community_233
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_124]] - `references` [EXTRACTED]
-- [[._extract_dict_content()]] - `references` [EXTRACTED]
-- [[._extract_scannable_content()]] - `references` [EXTRACTED]
-- [[._reconstruct_result()]] - `references` [EXTRACTED]
-- [[.sanitize_tool_result()]] - `references` [EXTRACTED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[RedactionResult]] - `uses` [INFERRED]
+- [[._scan_for_canary()]] - `references` [EXTRACTED]
+- [[.get_status()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_28
+#graphify/code #graphify/EXTRACTED #community/Community_233

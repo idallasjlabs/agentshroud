@@ -11,6 +11,7 @@ tags:
 # Protocol
 
 ## Connections
+- [[Facade]] - `inherits` [EXTRACTED]
 - [[SmtpLike]] - `inherits` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_201

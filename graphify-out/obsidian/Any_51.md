@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/network_validator.py"
+source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "Community 72"
-location: "L124"
+community: "Community 121"
+location: "L439"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_121
 ---
 
 # Any
 
 ## Connections
-- [[._parse_service_network_config()]] - `references` [EXTRACTED]
-- [[._validate_network_definitions()]] - `references` [EXTRACTED]
-- [[.get_security_report()]] - `references` [EXTRACTED]
+- [[.get_findings_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/Community_121

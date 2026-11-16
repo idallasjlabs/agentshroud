@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "Community 516"
+community: "Community 76"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_516
+  - community/Community_76
 ---
 
 # SessionManager
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_116]] - `method` [EXTRACTED]
+- [[.__init__()_29]] - `calls` [EXTRACTED]
+- [[.__init__()_131]] - `method` [EXTRACTED]
 - [[._fingerprint()]] - `method` [EXTRACTED]
 - [[.cleanup_expired()_3]] - `method` [EXTRACTED]
 - [[.create_session()]] - `method` [EXTRACTED]
@@ -31,7 +31,7 @@ tags:
 - [[.validate_nonce()]] - `method` [EXTRACTED]
 - [[.validate_session()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Chen et al. 2026 — Agent configuration vulnerabilities  session hijacking (arXiv2602.14364)]] - `cites` [EXTRACTED]
 - [[ConsentFramework]] - `semantically_similar_to` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
@@ -53,4 +53,4 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_516
+#graphify/code #graphify/EXTRACTED #community/Community_76

@@ -12,7 +12,7 @@ tags:
 # test_openclaw_readiness_retry.sh script
 
 ## Connections
-- [[check()_12]] - `calls` [EXTRACTED]
+- [[check()_16]] - `calls` [EXTRACTED]
 - [[test_openclaw_readiness_retry.sh]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_410

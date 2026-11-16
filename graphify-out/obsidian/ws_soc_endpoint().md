@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "Community 6"
-location: "L172"
+community: "Community 65"
+location: "L192"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_65
 ---
 
 # ws_soc_endpoint()
 
 ## Connections
-- [[.run()_5]] - `calls` [EXTRACTED]
+- [[.run()_9]] - `calls` [EXTRACTED]
 - [[.test_bearer_header_fallback()]] - `calls` [EXTRACTED]
 - [[.test_handler_exception_is_swallowed()]] - `calls` [EXTRACTED]
 - [[.test_invalid_token_closes_4003()]] - `calls` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/Community_65

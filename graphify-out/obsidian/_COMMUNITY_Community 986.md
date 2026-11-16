@@ -1,28 +1,31 @@
 ---
 type: community
-members: 15
+members: 18
 ---
 
 # Community 986
 
-**Members:** 15 nodes
+**Members:** 18 nodes
 
 ## Members
-- [[.test_applies_to_any_agent_not_just_openclaw()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_denial_is_counted_for_soc_correlation()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_non_owner_over_unverified_origin_is_unchanged()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_owner_claim_over_unverified_origin_is_refused_elevation()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_owner_over_verified_origin_keeps_full_authority()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_unknown_origin_defaults_to_unverified()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_unverified_origin_still_allows_public_tools()]] - code - gateway/tests/test_tool_acl.py
-- [[A non-owner gains nothing and loses nothing from origin checking.]] - rationale - gateway/tests/test_tool_acl.py
-- [[AgentShroud-side mitigation for the 'channel skips the check' CVE class.      Up]] - rationale - gateway/tests/test_tool_acl.py
-- [[Fail closed an origin nobody vouched for is not trusted.          A caller that]] - rationale - gateway/tests/test_tool_acl.py
-- [[Refusing ELEVATION is not the same as blanket denial — an unverified         ori]] - rationale - gateway/tests/test_tool_acl.py
-- [[TestOriginAwareAuthorization]] - code - gateway/tests/test_tool_acl.py
-- [[The control is agent-agnostic by construction it takes an origin and         an]] - rationale - gateway/tests/test_tool_acl.py
-- [[The core of the CVE class a side channel claiming to be the owner.          ter]] - rationale - gateway/tests/test_tool_acl.py
-- [[The legitimate path must not regress.]] - rationale - gateway/tests/test_tool_acl.py
+- [[CompletedProcess_3]] - code - gateway/tests/test_deployment_mode.py
+- [[Run scriptsasb's real _deployment_setup and report the variables it leaves.]] - rationale - gateway/tests/test_deployment_mode.py
+- [[_asb_setup()]] - code - gateway/tests/test_deployment_mode.py
+- [[_bash()]] - code - gateway/tests/test_deployment_mode.py
+- [[test_asb_and_post_deploy_check_use_the_library()]] - code - gateway/tests/test_deployment_mode.py
+- [[test_asb_build_and_up_carry_the_deployment_flags()]] - code - gateway/tests/test_deployment_mode.py
+- [[test_asb_cloud_mode_drops_local_agents_even_for_full()]] - code - gateway/tests/test_deployment_mode.py
+- [[test_asb_hybrid_mode_adds_edge_to_full_stack()]] - code - gateway/tests/test_deployment_mode.py
+- [[test_asb_local_mode_keeps_full_stack_and_leaves_edge_alone()]] - code - gateway/tests/test_deployment_mode.py
+- [[test_compose_flags_per_mode()]] - code - gateway/tests/test_deployment_mode.py
+- [[test_default_is_local_so_existing_hosts_are_unchanged()]] - code - gateway/tests/test_deployment_mode.py
+- [[test_deployment_mode.py]] - code - gateway/tests/test_deployment_mode.py
+- [[test_environment_overrides_env_file()]] - code - gateway/tests/test_deployment_mode.py
+- [[test_environment_value_wins()]] - code - gateway/tests/test_deployment_mode.py
+- [[test_gateway_is_told_the_mode_for_the_command_center()]] - code - gateway/tests/test_deployment_mode.py
+- [[test_reads_env_file_without_sourcing_it()]] - code - gateway/tests/test_deployment_mode.py
+- [[test_unknown_mode_fails_closed()]] - code - gateway/tests/test_deployment_mode.py
+- [[test_what_each_mode_runs()]] - code - gateway/tests/test_deployment_mode.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,12 +33,3 @@ members: 15
 TABLE source_file, type FROM #community/Community_986
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 2 edges to [[_COMMUNITY_Community 194]]
-- 1 edge to [[_COMMUNITY_Community 196]]
-- 1 edge to [[_COMMUNITY_Community 11]]
-
-## Top bridge nodes
-- [[TestOriginAwareAuthorization]] - degree 14, connects to 4 communities

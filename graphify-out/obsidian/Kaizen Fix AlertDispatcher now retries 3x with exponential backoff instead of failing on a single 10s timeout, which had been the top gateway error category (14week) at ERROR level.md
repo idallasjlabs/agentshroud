@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_alert_dispatcher_retry.py"
 type: "rationale"
-community: "Community 0"
+community: "Community 557"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/Community_557
 ---
 
 # Kaizen Fix: AlertDispatcher now retries 3x with exponential backoff instead of failing on a single 10s timeout, which had been the top gateway error category (14/week) at ERROR level
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AlertDispatcher]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/Community_557

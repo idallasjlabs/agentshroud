@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "Community 24"
+community: "Community 98"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/Community_98
 ---
 
 # OutboundInfoFilter
 
 ## Connections
-- [[.__init__()_103]] - `method` [EXTRACTED]
+- [[.__init__()_118]] - `method` [EXTRACTED]
 - [[._classify_response_risk()]] - `method` [EXTRACTED]
 - [[._compile_patterns()_1]] - `method` [EXTRACTED]
 - [[._is_allowed_for_trust()]] - `method` [EXTRACTED]
@@ -41,6 +41,7 @@ tags:
 - [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
 - [[TestOutboundInfoFilter]] - `uses` [INFERRED]
+- [[TestPIIBlockModeInPipeline]] - `uses` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
@@ -51,4 +52,4 @@ tags:
 - [[test_outbound_filter.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_24
+#graphify/code #graphify/EXTRACTED #community/Community_98

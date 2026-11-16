@@ -8,36 +8,36 @@ members: 30
 **Members:** 30 nodes
 
 ## Members
-- [[.test_group_a_write_invisible_from_group_b()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_group_b_write_invisible_from_group_a()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_group_id_uses_group_prefix_namespace()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_group_memory_physically_isolated()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_group_write_invisible_from_user_dm()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_group_writes_are_independent_namespaces()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_merged_memory_separates_group_and_dm()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_user_dm_write_invisible_from_group()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_user_dm_write_invisible_from_other_group()]] - code - gateway/tests/test_group_isolation.py
-- [[Both groups store separate content with no cross-contamination.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Content appended to group-A memory must not appear in group-B memory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Content appended to group-B must not appear in group-A memory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Content written to a group must not appear in any user's private DM memory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Content written to a user DM must not appear in any group memory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Group workspace content must not leak into any user's DM workspace.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Test Group Config]] - code - gateway/tests/test_group_config.py
-- [[TestGroupMemoryInvisibleFromDM]] - code - gateway/tests/test_group_isolation.py
-- [[TestGroupMemoryNamespaceIsolation]] - code - gateway/tests/test_group_isolation.py
-- [[User DM content must not leak into a group the user is NOT a member of.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Writes in group-A must not be readable from group-B.]] - rationale - gateway/tests/test_group_isolation.py
-- [[agent_isolation.py (AgentRegistry)]] - code - gateway/security/agent_isolation.py
-- [[get_merged_memory_for_user returns group section and private section separately.]] - rationale - gateway/tests/test_group_isolation.py
-- [[group-A and group-B memory files must be in separate directories.]] - rationale - gateway/tests/test_group_isolation.py
-- [[group-{chat_id} sessions must live under the 'groups' subdirectory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[rbac()]] - code - gateway/tests/test_group_isolation.py
-- [[session_manager()_1]] - code - gateway/tests/test_group_isolation.py
-- [[shared_memory()]] - code - gateway/tests/test_group_isolation.py
-- [[teams()_2]] - code - gateway/tests/test_group_isolation.py
-- [[test_group_isolation.py]] - code - gateway/tests/test_group_isolation.py
-- [[tmp_workspace()]] - code - gateway/tests/test_group_isolation.py
+- [[.audit_store()]] - code - gateway/tests/test_audit_export.py
+- [[.audit_store()_1]] - code - gateway/tests/test_audit_export.py
+- [[.export_config()]] - code - gateway/tests/test_audit_export.py
+- [[.test_export_cef()]] - code - gateway/tests/test_audit_export.py
+- [[.test_export_filtering()]] - code - gateway/tests/test_audit_export.py
+- [[.test_export_json()]] - code - gateway/tests/test_audit_export.py
+- [[.test_export_json_ld()]] - code - gateway/tests/test_audit_export.py
+- [[.test_hash_chain_integrity()]] - code - gateway/tests/test_audit_export.py
+- [[.test_log_event()]] - code - gateway/tests/test_audit_export.py
+- [[.test_query_events()]] - code - gateway/tests/test_audit_export.py
+- [[.test_stats()]] - code - gateway/tests/test_audit_export.py
+- [[.test_tamper_detection()]] - code - gateway/tests/test_audit_export.py
+- [[.test_verify_export_integrity()]] - code - gateway/tests/test_audit_export.py
+- [[Create audit store with test data.]] - rationale - gateway/tests/test_audit_export.py
+- [[Create in-memory audit store for testing.]] - rationale - gateway/tests/test_audit_export.py
+- [[Create test export configuration.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test AuditExporter functionality.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test AuditStore functionality.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test CEF export format.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test JSON export format.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test JSON-LD export format.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test audit store statistics.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test export integrity verification.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test export with filters.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test hash chain maintains integrity.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test logging audit events.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test querying events with filters.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test tamper detection in exports.]] - rationale - gateway/tests/test_audit_export.py
+- [[TestAuditExporter]] - code - gateway/tests/test_audit_export.py
+- [[TestAuditStore]] - code - gateway/tests/test_audit_export.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,16 +47,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 52]]
-- 5 edges to [[_COMMUNITY_Community 1]]
-- 4 edges to [[_COMMUNITY_Community 196]]
-- 4 edges to [[_COMMUNITY_Community 6]]
-- 4 edges to [[_COMMUNITY_Community 61]]
-- 1 edge to [[_COMMUNITY_Community 60]]
+- 11 edges to [[_COMMUNITY_Community 978]]
+- 4 edges to [[_COMMUNITY_Community 254]]
+- 4 edges to [[_COMMUNITY_Community 32]]
 
 ## Top bridge nodes
-- [[test_group_isolation.py]] - degree 18, connects to 6 communities
-- [[TestGroupMemoryNamespaceIsolation]] - degree 13, connects to 5 communities
-- [[TestGroupMemoryInvisibleFromDM]] - degree 12, connects to 5 communities
-- [[session_manager()_1]] - degree 2, connects to 1 community
-- [[teams()_2]] - degree 2, connects to 1 community
+- [[TestAuditExporter]] - degree 15, connects to 3 communities
+- [[TestAuditStore]] - degree 12, connects to 3 communities
+- [[.audit_store()]] - degree 3, connects to 1 community
+- [[.audit_store()_1]] - degree 3, connects to 1 community
+- [[.export_config()]] - degree 3, connects to 1 community

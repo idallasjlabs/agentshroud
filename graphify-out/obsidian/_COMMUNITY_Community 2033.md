@@ -1,17 +1,20 @@
 ---
 type: community
-members: 4
+members: 7
 ---
 
 # Community 2033
 
-**Members:** 4 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[.send_request()]] - code - gateway/proxy/mcp_proxy.py
-- [[.start()_1]] - code - gateway/proxy/mcp_proxy.py
-- [[Send a JSON-RPC request and read the response.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Start the MCP server process.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[$id]] - code - config/inbound-edge/schema.json
+- [[$schema]] - code - config/inbound-edge/schema.json
+- [[additionalProperties]] - code - config/inbound-edge/schema.json
+- [[required]] - code - config/inbound-edge/schema.json
+- [[schema.json]] - code - config/inbound-edge/schema.json
+- [[title]] - code - config/inbound-edge/schema.json
+- [[type]] - code - config/inbound-edge/schema.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 132]]
-- 1 edge to [[_COMMUNITY_Community 54]]
+- 1 edge to [[_COMMUNITY_Community 1139]]
 
 ## Top bridge nodes
-- [[.send_request()]] - degree 4, connects to 2 communities
-- [[.start()_1]] - degree 3, connects to 1 community
+- [[schema.json]] - degree 7, connects to 1 community

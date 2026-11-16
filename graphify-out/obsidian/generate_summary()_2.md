@@ -12,7 +12,7 @@ tags:
 # generate_summary()
 
 ## Connections
-- [[Any_64]] - `references` [EXTRACTED]
+- [[Any_74]] - `references` [EXTRACTED]
 - [[Generate a summary dict suitable for the health report.      Args         alert_1]] - `rationale_for` [EXTRACTED]
 - [[Generate a summary dict suitable for the health report.      Args         repor_1]] - `rationale_for` [EXTRACTED]
 - [[daily_cve_report.py]] - `imports` [EXTRACTED]

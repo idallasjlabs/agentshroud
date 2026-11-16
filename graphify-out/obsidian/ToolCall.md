@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Community 505"
+community: "Community 8"
 location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_505
+  - community/Community_8
 ---
 
 # ToolCall
@@ -19,4 +19,4 @@ tags:
 - [[Represents a single tool call.]] - `rationale_for` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_505
+#graphify/code #graphify/EXTRACTED #community/Community_8

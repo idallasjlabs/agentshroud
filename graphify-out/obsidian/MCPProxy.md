@@ -12,7 +12,7 @@ tags:
 # MCPProxy
 
 ## Connections
-- [[.__init__()_31]] - `method` [EXTRACTED]
+- [[.__init__()_46]] - `method` [EXTRACTED]
 - [[._emit_privacy_event()]] - `method` [EXTRACTED]
 - [[._execute_tool_call()]] - `method` [EXTRACTED]
 - [[._extract_egress_targets()]] - `method` [EXTRACTED]
@@ -86,7 +86,7 @@ tags:
 - [[TestToolRiskClassification]] - `uses` [INFERRED]
 - [[_FakeApprovalQueue]] - `uses` [INFERRED]
 - [[_HangingWebSocket_1]] - `uses` [INFERRED]
-- [[__init__.py_7]] - `imports` [EXTRACTED]
+- [[__init__.py_8]] - `imports` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[make_proxy()_1]] - `calls` [EXTRACTED]

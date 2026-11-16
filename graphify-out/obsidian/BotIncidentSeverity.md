@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "Community 88"
+community: "Community 63"
 location: "L51"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_88
+  - community/Community_63
 ---
 
 # BotIncidentSeverity
@@ -15,7 +15,7 @@ tags:
 - [[._missing_()]] - `method` [EXTRACTED]
 - [[.record_incident()]] - `references` [EXTRACTED]
 - [[.test_from_string()]] - `calls` [EXTRACTED]
-- [[Any_19]] - `uses` [INFERRED]
+- [[Any_29]] - `uses` [INFERRED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[AuditChainEntry]] - `uses` [INFERRED]
 - [[CrossBotTrustLedger_1]] - `uses` [INFERRED]
@@ -38,4 +38,4 @@ tags:
 - [[pipeline.py]] - `imports` [EXTRACTED]
 - [[test_cross_bot_trust_ledger.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_88
+#graphify/code #graphify/INFERRED #community/Community_63

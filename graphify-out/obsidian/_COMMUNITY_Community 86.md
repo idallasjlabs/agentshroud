@@ -1,16 +1,16 @@
 ---
 type: community
-members: 60
+members: 61
 ---
 
 # Community 86
 
-**Members:** 60 nodes
+**Members:** 61 nodes
 
 ## Members
-- [[.__init__()_160]] - code - gateway/tests/test_http_proxy.py
-- [[.close()_13]] - code - gateway/tests/test_http_proxy.py
-- [[.close()_14]] - code - gateway/tests/test_http_proxy.py
+- [[.__init__()_181]] - code - gateway/tests/test_http_proxy.py
+- [[.close()_15]] - code - gateway/tests/test_http_proxy.py
+- [[.close()_16]] - code - gateway/tests/test_http_proxy.py
 - [[.drain()]] - code - gateway/tests/test_http_proxy.py
 - [[.drain()_1]] - code - gateway/tests/test_http_proxy.py
 - [[.get_extra_info()]] - code - gateway/tests/test_http_proxy.py
@@ -58,6 +58,7 @@ members: 60
 - [[test_initial_stats_are_zero()]] - code - gateway/tests/test_http_proxy.py
 - [[test_malformed_request_line_returns_400()]] - code - gateway/tests/test_http_proxy.py
 - [[test_non_connect_method_returns_405()]] - code - gateway/tests/test_http_proxy.py
+- [[test_proxy_created_with_custom_web_proxy()]] - code - gateway/tests/test_http_proxy.py
 - [[test_proxy_created_with_default_web_proxy()]] - code - gateway/tests/test_http_proxy.py
 - [[test_proxy_created_with_egress_filter()]] - code - gateway/tests/test_http_proxy.py
 - [[test_ssrf_attempt_returns_403()]] - code - gateway/tests/test_http_proxy.py
@@ -77,10 +78,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 29 edges to [[_COMMUNITY_Community 81]]
+- 30 edges to [[_COMMUNITY_Community 81]]
 - 10 edges to [[_COMMUNITY_Community 27]]
-- 9 edges to [[_COMMUNITY_Community 120]]
-- 3 edges to [[_COMMUNITY_Community 21]]
+- 10 edges to [[_COMMUNITY_Community 120]]
+- 3 edges to [[_COMMUNITY_Community 17]]
 
 ## Top bridge nodes
 - [[test_http_proxy.py]] - degree 39, connects to 4 communities

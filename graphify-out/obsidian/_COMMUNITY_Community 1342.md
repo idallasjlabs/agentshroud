@@ -1,23 +1,27 @@
 ---
 type: community
-members: 10
+members: 14
 ---
 
 # Community 1342
 
-**Members:** 10 nodes
+**Members:** 14 nodes
 
 ## Members
-- [[._scan_for_canary()]] - code - gateway/security/output_canary.py
-- [[.check_response()]] - code - gateway/security/output_canary.py
-- [[.get_status()_1]] - code - gateway/security/output_canary.py
-- [[Any_53]] - code - gateway/security/output_canary.py
-- [[CanaryResult_2]] - code - gateway/security/output_canary.py
-- [[Check if response contains the session's canary (prompt leakage detected).]] - rationale - gateway/security/output_canary.py
-- [[Result of checking a response for canary presence.]] - rationale - gateway/security/output_canary.py
-- [[Return canary status for dashboard.          Args             session_id Sessi]] - rationale - gateway/security/output_canary.py
-- [[Scan response text for a specific canary.          Args             session_id]] - rationale - gateway/security/output_canary.py
-- [[output_canary.py]] - code - gateway/security/output_canary.py
+- [[additionalProperties_1]] - code - config/inbound-edge/schema.json
+- [[auth]] - code - config/inbound-edge/schema.json
+- [[dynamic_registration]] - code - config/inbound-edge/schema.json
+- [[maxItems_1]] - code - config/inbound-edge/schema.json
+- [[oauth]] - code - config/inbound-edge/schema.json
+- [[properties_1]] - code - config/inbound-edge/schema.json
+- [[redirect_uris]] - code - config/inbound-edge/schema.json
+- [[required_1]] - code - config/inbound-edge/schema.json
+- [[static_bearer]] - code - config/inbound-edge/schema.json
+- [[type_7]] - code - config/inbound-edge/schema.json
+- [[type_8]] - code - config/inbound-edge/schema.json
+- [[type_9]] - code - config/inbound-edge/schema.json
+- [[type_10]] - code - config/inbound-edge/schema.json
+- [[type_11]] - code - config/inbound-edge/schema.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,11 +31,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 233]]
+- 1 edge to [[_COMMUNITY_Community 1139]]
+- 1 edge to [[_COMMUNITY_Community 1552]]
 
 ## Top bridge nodes
-- [[output_canary.py]] - degree 3, connects to 2 communities
-- [[._scan_for_canary()]] - degree 5, connects to 1 community
-- [[.check_response()]] - degree 4, connects to 1 community
-- [[.get_status()_1]] - degree 3, connects to 1 community
+- [[auth]] - degree 5, connects to 1 community
+- [[redirect_uris]] - degree 4, connects to 1 community

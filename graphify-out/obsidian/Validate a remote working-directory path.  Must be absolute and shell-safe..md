@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "rationale"
-community: "Community 50"
+community: "Community 7"
 location: "L196"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_50
+  - community/Community_7
 ---
 
 # Validate a remote working-directory path.  Must be absolute and shell-safe.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.validate_cwd()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_50
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

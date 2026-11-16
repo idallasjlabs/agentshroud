@@ -31,7 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 118]]
+- 1 edge to [[_COMMUNITY_Community 48]]
 
 ## Top bridge nodes
 - [[AgentShroud Weekly Upgrade — 2026-09-20 (DEV run, account agentshroud-bot)]] - degree 11, connects to 1 community

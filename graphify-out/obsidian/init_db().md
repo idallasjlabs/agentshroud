@@ -12,9 +12,9 @@ tags:
 # init_db()
 
 ## Connections
-- [[Connection]] - `references` [EXTRACTED]
+- [[Connection_1]] - `references` [EXTRACTED]
 - [[Initialize the SQLite database for history tracking.      Args         db_path]] - `rationale_for` [EXTRACTED]
-- [[Path_13]] - `references` [EXTRACTED]
+- [[Path_15]] - `references` [EXTRACTED]
 - [[get_trend()]] - `calls` [EXTRACTED]
 - [[health_report.py]] - `contains` [EXTRACTED]
 - [[save_to_history()]] - `calls` [EXTRACTED]

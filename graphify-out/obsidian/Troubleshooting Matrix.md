@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md"
 type: "document"
-community: "Community 1014"
+community: "Community 333"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1014
+  - community/Community_333
 ---
 
 # Troubleshooting Matrix.md
@@ -22,4 +22,4 @@ tags:
 - [[store.py]] - `references` [INFERRED]
 - [[troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1014
+#graphify/document #graphify/EXTRACTED #community/Community_333

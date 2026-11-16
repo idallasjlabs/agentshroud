@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Enum]] - `inherits` [EXTRACTED]
 - [[Outcome classification for a single host.]] - `rationale_for` [EXTRACTED]
-- [[Path_34]] - `uses` [INFERRED]
+- [[Path_37]] - `uses` [INFERRED]
 - [[TestBuildSshArgv]] - `uses` [INFERRED]
 - [[TestClassify]] - `uses` [INFERRED]
 - [[TestHostResult]] - `uses` [INFERRED]

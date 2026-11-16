@@ -1,18 +1,20 @@
 ---
 type: community
-members: 5
+members: 7
 ---
 
 # Community 2030
 
-**Members:** 5 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[Step 1 Create Google Cloud Project_1]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Step 2 Create OAuth Credentials_1]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Step 3 Store Credentials]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Step 4 Get Refresh Token]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[🛠️ OAuth2 Setup (If Needed)]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Dependency Graph_1]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Dependency Graph]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Gateway Module Dependencies]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Gateway Startup Initialization Order]] - concept - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Key Initialization Order (main.py lifespan)]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Python Package Dependencies]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Related Notes_70]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 285]]
+- 1 edge to [[_COMMUNITY_Community 707]]
 
 ## Top bridge nodes
-- [[🛠️ OAuth2 Setup (If Needed)]] - degree 5, connects to 1 community
+- [[Dependency Graph]] - degree 3, connects to 1 community

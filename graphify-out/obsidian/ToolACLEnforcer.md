@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Community 11"
+community: "Community 194"
 location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_11
+  - community/Community_194
 ---
 
 # ToolACLEnforcer
 
 ## Connections
-- [[.__init__()_121]] - `method` [EXTRACTED]
+- [[.__init__()_136]] - `method` [EXTRACTED]
 - [[._can_use_tool_impl()]] - `method` [EXTRACTED]
 - [[._get_group_tool_allowlist()]] - `method` [EXTRACTED]
 - [[._get_role()]] - `method` [EXTRACTED]
@@ -90,4 +90,4 @@ tags:
 - [[test_tool_acl.py]] - `references` [EXTRACTED]
 - [[tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_11
+#graphify/code #graphify/EXTRACTED #community/Community_194

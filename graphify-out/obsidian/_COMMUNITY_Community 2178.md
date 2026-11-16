@@ -1,17 +1,18 @@
 ---
 type: community
-members: 4
+members: 5
 ---
 
 # Community 2178
 
-**Members:** 4 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[.matches_allowlist()]] - code - gateway/security/egress_config.py
-- [[Public does domain match any pattern in the effective default allowlist]] - rationale - gateway/security/egress_config.py
-- [[Return True if domain matches any pattern (exact or ``.`` wildcard).      Sin]] - rationale - gateway/security/egress_config.py
-- [[domain_matches()]] - code - gateway/security/egress_config.py
+- [[Athena — Knowledge Distiller_7]] - document - docker/config/hermes/skills/i-athena/README.md
+- [[Purpose_38]] - document - docker/config/hermes/skills/i-athena/README.md
+- [[README_43]] - document - docker/config/hermes/skills/i-athena/README.md
+- [[Related Skills_56]] - document - docker/config/hermes/skills/i-athena/README.md
+- [[Usage_59]] - document - docker/config/hermes/skills/i-athena/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,10 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 17]]
-- 1 edge to [[_COMMUNITY_Community 57]]
-- 1 edge to [[_COMMUNITY_Community 125]]
+- 1 edge to [[_COMMUNITY_Community 90]]
 
 ## Top bridge nodes
-- [[domain_matches()]] - degree 6, connects to 3 communities
-- [[.matches_allowlist()]] - degree 3, connects to 1 community
+- [[Athena — Knowledge Distiller_7]] - degree 5, connects to 1 community

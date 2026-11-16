@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "Community 208"
+community: "Community 1969"
 location: "L337"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_208
+  - community/Community_1969
 ---
 
 # OOM (503 backend_unavailable from primary local) triggers secondary local failov
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_local_oom_triggers_secondary_failover()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_208
+#graphify/rationale #graphify/EXTRACTED #community/Community_1969

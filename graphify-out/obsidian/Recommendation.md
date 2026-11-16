@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[.recommendation()]] - `references` [EXTRACTED]
-- [[CompletedProcess_4]] - `uses` [INFERRED]
+- [[CompletedProcess_5]] - `uses` [INFERRED]
 - [[IntEnum]] - `inherits` [EXTRACTED]
-- [[Path_22]] - `uses` [INFERRED]
-- [[Path_39]] - `uses` [INFERRED]
+- [[Path_24]] - `uses` [INFERRED]
+- [[Path_42]] - `uses` [INFERRED]
 - [[ScanResult_3]] - `uses` [INFERRED]
 - [[ScanResult_4]] - `uses` [INFERRED]
 - [[SkillGuard_1]] - `uses` [INFERRED]

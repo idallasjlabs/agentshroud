@@ -12,7 +12,7 @@ tags:
 # test_openclaw_photo.sh script
 
 ## Connections
-- [[check()_11]] - `calls` [EXTRACTED]
+- [[check()_15]] - `calls` [EXTRACTED]
 - [[test_openclaw_photo.sh]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_547

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "Community 208"
+community: "Community 112"
 location: "L1350"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_208
+  - community/Community_112
 ---
 
 # proxy_messages applies the shim only on the Fieldflare route, before forwarding.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_fieldflare_route_strips_unsupported_fields_non_streaming()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_208
+#graphify/rationale #graphify/EXTRACTED #community/Community_112

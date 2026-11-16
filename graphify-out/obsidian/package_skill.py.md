@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[SKILL_238]] - `references` [EXTRACTED]
-- [[main()_34]] - `contains` [EXTRACTED]
+- [[main()_36]] - `contains` [EXTRACTED]
 - [[package_skill()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_564

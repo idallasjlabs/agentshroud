@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/security/daily_cve_report.py"
+source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "Community 368"
-location: "L89"
+community: "Community 225"
+location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_368
+  - community/Community_225
 ---
 
 # Any
 
 ## Connections
-- [[check_upstream_cves()]] - `references` [EXTRACTED]
-- [[format_cve_report()]] - `references` [EXTRACTED]
-- [[format_upstream_cve_alert()]] - `references` [EXTRACTED]
-- [[run_and_send_cve_report()]] - `references` [EXTRACTED]
-- [[run_upstream_cve_check()]] - `references` [EXTRACTED]
-- [[run_upstream_cve_check_all_agents()]] - `references` [EXTRACTED]
+- [[.inspect()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_368
+#graphify/code #graphify/EXTRACTED #community/Community_225

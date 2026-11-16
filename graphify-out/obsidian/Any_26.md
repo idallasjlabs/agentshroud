@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/runtime/docker_engine.py"
+source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "Community 372"
-location: "L139"
+community: "Community 54"
+location: "L98"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_372
+  - graphify/EXTRACTED
+  - community/Community_54
 ---
 
 # Any
 
 ## Connections
-- [[.inspect()_1]] - `references` [EXTRACTED]
-- [[ContainerEngine_2]] - `uses` [INFERRED]
-- [[ContainerInfo_2]] - `uses` [INFERRED]
+- [[.from_dict()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_372
+#graphify/code #graphify/EXTRACTED #community/Community_54

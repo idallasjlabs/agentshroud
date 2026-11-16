@@ -1,20 +1,19 @@
 ---
 type: community
-members: 7
+members: 6
 ---
 
 # Community 2071
 
-**Members:** 7 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[.test_network_request_flagged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_sensitive_blocked_strict_with_injection()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_sensitive_not_blocked_default()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_shell_command_flagged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[In strict mode, sensitive ops with injection ARE blocked.]] - rationale - gateway/tests/test_mcp_proxy.py
-- [[Sensitive ops are flagged but not blocked in default mode.]] - rationale - gateway/tests/test_mcp_proxy.py
-- [[TestSensitiveOps]] - code - gateway/tests/test_mcp_proxy.py
+- [[.to_dict()_13]] - code - gateway/security/soc_correlation.py
+- [[Any_71]] - code - gateway/security/soc_correlation.py
+- [[CorrelationSummary]] - code - gateway/security/soc_correlation.py
+- [[_renderCorrelation()]] - code - gateway/soc/static/soc.js
+- [[build_correlation_summary()]] - code - gateway/security/soc_correlation.py
+- [[soc_correlation.py]] - code - gateway/security/soc_correlation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,13 +23,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 64]]
-- 3 edges to [[_COMMUNITY_Community 54]]
-- 1 edge to [[_COMMUNITY_Community 184]]
-- 1 edge to [[_COMMUNITY_Community 2038]]
-- 1 edge to [[_COMMUNITY_Community 132]]
-- 1 edge to [[_COMMUNITY_Community 59]]
-- 1 edge to [[_COMMUNITY_Community 329]]
+- 4 edges to [[_COMMUNITY_Community 10]]
+- 3 edges to [[_COMMUNITY_Community 62]]
+- 2 edges to [[_COMMUNITY_Community 978]]
+- 1 edge to [[_COMMUNITY_Community 151]]
+- 1 edge to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 265]]
+- 1 edge to [[_COMMUNITY_Community 82]]
+- 1 edge to [[_COMMUNITY_Community 917]]
 
 ## Top bridge nodes
-- [[TestSensitiveOps]] - degree 18, connects to 7 communities
+- [[build_correlation_summary()]] - degree 13, connects to 5 communities
+- [[_renderCorrelation()]] - degree 3, connects to 2 communities
+- [[CorrelationSummary]] - degree 5, connects to 1 community

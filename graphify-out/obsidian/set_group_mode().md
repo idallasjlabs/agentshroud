@@ -2,7 +2,7 @@
 source_file: "gateway/soc/router.py"
 type: "code"
 community: "Community 10"
-location: "L1387"
+location: "L1398"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,7 @@ tags:
 # set_group_mode()
 
 ## Connections
+- [[HTTPException]] - `calls` [EXTRACTED]
 - [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[SetModeRequest]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]

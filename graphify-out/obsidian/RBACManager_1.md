@@ -12,7 +12,7 @@ tags:
 # RBACManager
 
 ## Connections
-- [[.__init__()_112]] - `method` [EXTRACTED]
+- [[.__init__()_127]] - `method` [EXTRACTED]
 - [[._build_permission_matrix()]] - `method` [EXTRACTED]
 - [[._build_tool_permissions()]] - `method` [EXTRACTED]
 - [[.audit_privilege_change()]] - `method` [EXTRACTED]
@@ -32,7 +32,7 @@ tags:
 - [[.test_permission_check_with_context()]] - `calls` [EXTRACTED]
 - [[.test_rbac_manager_without_config()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]

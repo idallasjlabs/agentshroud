@@ -2,7 +2,7 @@
 source_file: "gateway/security/agent_cve_registry.py"
 type: "rationale"
 community: "Community 399"
-location: "L18877"
+location: "L18892"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

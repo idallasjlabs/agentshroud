@@ -1,19 +1,20 @@
 ---
 type: community
-members: 19
+members: 22
 ---
 
 # Community 106
 
-**Members:** 19 nodes
+**Members:** 22 nodes
 
 ## Members
 - [[Added]] - document - CHANGELOG.md
-- [[Added_10]] - document - CHANGELOG.md
-- [[Added_15]] - document - CHANGELOG.md
+- [[Added_11]] - document - CHANGELOG.md
 - [[Added_16]] - document - CHANGELOG.md
 - [[Added_17]] - document - CHANGELOG.md
-- [[Changed_7]] - document - CHANGELOG.md
+- [[Added_18]] - document - CHANGELOG.md
+- [[Changed_8]] - document - CHANGELOG.md
+- [[Changed_9]] - document - CHANGELOG.md
 - [[P1 HTTP CONNECT Proxy (PR 24)]] - document - CHANGELOG.md
 - [[P2 Credential Isolation (PR 25)]] - document - CHANGELOG.md
 - [[Phase 1 Foundation]] - document - CHANGELOG.md
@@ -26,6 +27,8 @@ members: 19
 - [[Phase 8 Polish & Publish]] - document - CHANGELOG.md
 - [[Security_19]] - document - CHANGELOG.md
 - [[Summary_22]] - document - CHANGELOG.md
+- [[Summary_23]] - document - CHANGELOG.md
+- [[0.2.0 - 2026-02-17]] - document - CHANGELOG.md
 - [[0.4.0 - 2026-02-19]] - document - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
@@ -36,19 +39,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 773]]
 - 5 edges to [[_COMMUNITY_Community 1380]]
-- 4 edges to [[_COMMUNITY_Community 1386]]
+- 4 edges to [[_COMMUNITY_Community 773]]
+- 3 edges to [[_COMMUNITY_Community 1386]]
+- 3 edges to [[_COMMUNITY_Community 2123]]
 - 2 edges to [[_COMMUNITY_Community 1255]]
-- 2 edges to [[_COMMUNITY_Community 1934]]
+- 2 edges to [[_COMMUNITY_Community 1984]]
 - 2 edges to [[_COMMUNITY_Community 2016]]
 - 1 edge to [[_COMMUNITY_Community 2039]]
+- 1 edge to [[_COMMUNITY_Community 2324]]
+- 1 edge to [[_COMMUNITY_Community 2177]]
 - 1 edge to [[_COMMUNITY_Community 1916]]
-- 1 edge to [[_COMMUNITY_Community 2123]]
 
 ## Top bridge nodes
-- [[Added]] - degree 27, connects to 9 communities
+- [[Added]] - degree 28, connects to 10 communities
 - [[0.4.0 - 2026-02-19]] - degree 9, connects to 4 communities
-- [[Added_17]] - degree 4, connects to 1 community
-- [[Added_10]] - degree 3, connects to 1 community
-- [[Added_16]] - degree 3, connects to 1 community
+- [[0.2.0 - 2026-02-17]] - degree 7, connects to 3 communities
+- [[Added_18]] - degree 4, connects to 1 community
+- [[Added_11]] - degree 3, connects to 1 community

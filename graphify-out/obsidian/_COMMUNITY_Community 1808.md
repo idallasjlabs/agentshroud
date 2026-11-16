@@ -1,20 +1,23 @@
 ---
 type: community
-members: 7
+members: 10
 ---
 
 # Community 1808
 
-**Members:** 7 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[.export_attack_report()]] - code - gateway/security/context_guard.py
-- [[.get_attack_summary()]] - code - gateway/security/context_guard.py
-- [[.get_session_risk_level()]] - code - gateway/security/context_guard.py
-- [[Any_35]] - code - gateway/security/context_guard.py
-- [[Export attack detection report.]] - rationale - gateway/security/context_guard.py
-- [[Get risk level for a session based on detected attacks.]] - rationale - gateway/security/context_guard.py
-- [[Get summary of detected attacks.]] - rationale - gateway/security/context_guard.py
+- [[.test_auto_detect_priority()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_explicit_apple()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_explicit_docker()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_explicit_podman()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_invalid_runtime()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_no_runtime_available()]] - code - gateway/tests/test_runtime_engines.py
+- [[ContainerEngine]] - code - gateway/runtime/__init__.py
+- [[Return an appropriate container engine instance.      Args         preference]] - rationale - gateway/runtime/__init__.py
+- [[TestGetEngine]] - code - gateway/tests/test_runtime_engines.py
+- [[get_engine()]] - code - gateway/runtime/__init__.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +27,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 0]]
+- 3 edges to [[_COMMUNITY_Community 240]]
+- 2 edges to [[_COMMUNITY_Community 738]]
+- 2 edges to [[_COMMUNITY_Community 49]]
+- 2 edges to [[_COMMUNITY_Community 379]]
+- 2 edges to [[_COMMUNITY_Community 372]]
+- 2 edges to [[_COMMUNITY_Community 250]]
+- 1 edge to [[_COMMUNITY_Community 68]]
+- 1 edge to [[_COMMUNITY_Community 707]]
+- 1 edge to [[_COMMUNITY_Community 918]]
+- 1 edge to [[_COMMUNITY_Community 20]]
+- 1 edge to [[_COMMUNITY_Community 743]]
+- 1 edge to [[_COMMUNITY_Community 225]]
 
 ## Top bridge nodes
-- [[.get_attack_summary()]] - degree 5, connects to 1 community
-- [[.get_session_risk_level()]] - degree 3, connects to 1 community
-- [[.export_attack_report()]] - degree 3, connects to 1 community
+- [[get_engine()]] - degree 17, connects to 8 communities
+- [[TestGetEngine]] - degree 12, connects to 5 communities
+- [[ContainerEngine]] - degree 5, connects to 4 communities

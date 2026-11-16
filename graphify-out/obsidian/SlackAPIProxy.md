@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "Community 37"
+community: "Community 381"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_37
+  - community/Community_381
 ---
 
 # SlackAPIProxy
 
 ## Connections
-- [[.__init__()_35]] - `method` [EXTRACTED]
+- [[.__init__()_50]] - `method` [EXTRACTED]
 - [[._call_slack_api()]] - `method` [EXTRACTED]
 - [[._intercept_connections_open()]] - `method` [EXTRACTED]
 - [[._is_owner_channel()]] - `method` [EXTRACTED]
@@ -51,4 +51,4 @@ tags:
 - [[test_slack_proxy.py]] - `imports` [EXTRACTED]
 - [[test_slack_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_37
+#graphify/code #graphify/EXTRACTED #community/Community_381

@@ -1,17 +1,17 @@
 ---
-source_file: ""
+source_file: "config/inbound-edge/schema.json"
 type: "code"
-community: "test_main_endpoints.py"
+community: "Community 1139"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/Community_1139
 ---
 
-# Enum
+# enum
 
 ## Connections
-- [[FindingSeverity]] - `inherits` [EXTRACTED]
-- [[web_content_scanner.py]] - `imports_from` [EXTRACTED]
+- [[support]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/code #graphify/EXTRACTED #community/Community_1139

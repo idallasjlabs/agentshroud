@@ -49,13 +49,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 20 edges to [[_COMMUNITY_Community 80]]
-- 5 edges to [[_COMMUNITY_Community 50]]
-- 3 edges to [[_COMMUNITY_Community 1127]]
+- 25 edges to [[_COMMUNITY_Community 7]]
+- 3 edges to [[_COMMUNITY_Community 37]]
 
 ## Top bridge nodes
-- [[SSHProxy_1]] - degree 30, connects to 2 communities
-- [[TestValidateCommand]] - degree 17, connects to 2 communities
-- [[TestInjectionNewline]] - degree 12, connects to 2 communities
-- [[TestExecute]] - degree 9, connects to 2 communities
-- [[TestIsAutoApproved]] - degree 8, connects to 2 communities
+- [[SSHProxy_1]] - degree 30, connects to 1 community
+- [[TestValidateCommand]] - degree 17, connects to 1 community
+- [[TestInjectionNewline]] - degree 12, connects to 1 community
+- [[TestExecute]] - degree 9, connects to 1 community
+- [[TestIsAutoApproved]] - degree 8, connects to 1 community

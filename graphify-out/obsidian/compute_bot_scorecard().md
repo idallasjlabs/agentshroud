@@ -27,7 +27,7 @@ tags:
 - [[.test_risk_level_yellow_50_to_79()]] - `calls` [EXTRACTED]
 - [[.test_score_clamped_to_hundred()]] - `calls` [EXTRACTED]
 - [[.test_score_clamped_to_zero()]] - `calls` [EXTRACTED]
-- [[Any_58]] - `references` [EXTRACTED]
+- [[Any_68]] - `references` [EXTRACTED]
 - [[Per-bot scorecard scoped to a single bot's image scan and egress stats.      Sco]] - `rationale_for` [EXTRACTED]
 - [[TestComputeBotScorecard_1]] - `calls` [EXTRACTED]
 - [[get_security_scorecard()]] - `calls` [EXTRACTED]

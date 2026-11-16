@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "rationale"
-community: "Community 24"
-location: "L85"
+community: "Community 80"
+location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/Community_80
 ---
 
 # Convenience: sign a system prompt as issuer='system'.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.wrap_system_prompt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_24
+#graphify/rationale #graphify/EXTRACTED #community/Community_80

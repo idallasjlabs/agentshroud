@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[GatewayConfig_3]] - `references` [EXTRACTED]
-- [[Path_25]] - `references` [EXTRACTED]
+- [[Path_27]] - `references` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 - [[test_apply_swaps_only_reloadable_fields()]] - `calls` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `contains` [EXTRACTED]

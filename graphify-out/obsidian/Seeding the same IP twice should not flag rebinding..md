@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "rationale"
-community: "Community 431"
+community: "Community 72"
 location: "L218"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_431
+  - community/Community_72
 ---
 
 # Seeding the same IP twice should not flag rebinding.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_stable_resolution_passes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_431
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

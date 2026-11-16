@@ -1,19 +1,21 @@
 ---
 type: community
-members: 6
+members: 8
 ---
 
 # Community 2005
 
-**Members:** 6 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[.test_expired_session_rejected()]] - code - gateway/tests/test_session_security.py
-- [[.test_unknown_session_rejected()]] - code - gateway/tests/test_session_security.py
-- [[.test_valid_session_accepted()]] - code - gateway/tests/test_session_security.py
-- [[.test_wrong_ip_rejected()]] - code - gateway/tests/test_session_security.py
-- [[.test_wrong_user_agent_rejected()]] - code - gateway/tests/test_session_security.py
-- [[TestSessionValidation]] - code - gateway/tests/test_session_security.py
+- [[.__aenter__()_5]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[.__aexit__()_5]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[.__init__()_195]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[.aiter_bytes()_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[.aread()_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[Hermes's dashboard chat streams, so the streaming path must apply the shim too.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_FakeStreamResponse_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_fieldflare_route_strips_unsupported_fields_streaming()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +25,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 76]]
-- 2 edges to [[_COMMUNITY_Community 516]]
+- 2 edges to [[_COMMUNITY_Community 208]]
+- 1 edge to [[_COMMUNITY_Community 1278]]
+- 1 edge to [[_COMMUNITY_Community 115]]
+- 1 edge to [[_COMMUNITY_Community 532]]
+- 1 edge to [[_COMMUNITY_Community 5]]
+- 1 edge to [[_COMMUNITY_Community 112]]
 
 ## Top bridge nodes
-- [[TestSessionValidation]] - degree 12, connects to 2 communities
-- [[.test_expired_session_rejected()]] - degree 2, connects to 1 community
+- [[_FakeStreamResponse_1]] - degree 11, connects to 5 communities
+- [[test_fieldflare_route_strips_unsupported_fields_streaming()]] - degree 4, connects to 2 communities

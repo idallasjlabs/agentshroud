@@ -12,7 +12,7 @@ tags:
 # RBACConfig
 
 ## Connections
-- [[.__init__()_112]] - `references` [EXTRACTED]
+- [[.__init__()_127]] - `references` [EXTRACTED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
 - [[ToolTier_2]] - `uses` [INFERRED]

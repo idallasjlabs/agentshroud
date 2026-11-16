@@ -1,25 +1,20 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "Community 10"
-location: "L58"
+community: "Community 5"
+location: "L102"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_10
+  - graphify/EXTRACTED
+  - community/Community_5
 ---
 
 # Any
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult]] - `uses` [INFERRED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
-- [[_log_audit()]] - `references` [EXTRACTED]
-- [[auth_ws_token()]] - `references` [EXTRACTED]
+- [[._alert_high_usage()]] - `references` [EXTRACTED]
+- [[._get_disk_io_stats()]] - `references` [EXTRACTED]
+- [[.add_alert_callback()_1]] - `references` [EXTRACTED]
+- [[.get_usage_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_10
+#graphify/code #graphify/EXTRACTED #community/Community_5

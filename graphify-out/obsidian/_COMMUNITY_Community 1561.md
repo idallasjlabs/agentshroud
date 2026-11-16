@@ -1,21 +1,24 @@
 ---
 type: community
-members: 8
+members: 11
 ---
 
 # Community 1561
 
-**Members:** 8 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[Backward compatibility the default openclaw run must still exit 0.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[CompletedProcess_1]] - code - gateway/tests/test_agent_cve_registry.py
-- [[Coverage gaps must be loud and must fail an automated caller.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Every registry must be reachable, not just openclaw.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[_run_triage()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_all_agents_flag_exists()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_all_agents_run_reports_untriaged_and_exits_nonzero()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_default_single_agent_run_still_succeeds()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[AgentShroud Sunday Upgrade — 2026-09-27 (DEV run)]] - document - reports/upgrade-2026-09-27.md
+- [[Summary line_8]] - document - reports/upgrade-2026-09-27.md
+- [[§0 Preflight_1]] - document - reports/upgrade-2026-09-27.md
+- [[§1 Environment mapping_1]] - document - reports/upgrade-2026-09-27.md
+- [[§2 Inventory & versions checked_1]] - document - reports/upgrade-2026-09-27.md
+- [[§3 Bugs found and fixed this run (code changes, per owner directive — a needed fix is not grounds to skip)_1]] - document - reports/upgrade-2026-09-27.md
+- [[§4 Build  apply  verify (dev)_1]] - document - reports/upgrade-2026-09-27.md
+- [[§5 Security findings_1]] - document - reports/upgrade-2026-09-27.md
+- [[§6 Breaking changes  manual follow-ups_1]] - document - reports/upgrade-2026-09-27.md
+- [[§7 Rollback instructions_1]] - document - reports/upgrade-2026-09-27.md
+- [[§8 Time spent_1]] - document - reports/upgrade-2026-09-27.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,10 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 42]]
+- 1 edge to [[_COMMUNITY_Community 1924]]
 
 ## Top bridge nodes
-- [[_run_triage()]] - degree 5, connects to 1 community
-- [[test_all_agents_flag_exists()]] - degree 3, connects to 1 community
-- [[test_all_agents_run_reports_untriaged_and_exits_nonzero()]] - degree 3, connects to 1 community
-- [[test_default_single_agent_run_still_succeeds()]] - degree 3, connects to 1 community
+- [[AgentShroud Sunday Upgrade — 2026-09-27 (DEV run)]] - degree 11, connects to 1 community

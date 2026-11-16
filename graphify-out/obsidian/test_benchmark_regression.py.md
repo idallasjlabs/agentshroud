@@ -13,7 +13,12 @@ tags:
 
 ## Connections
 - [[TestBenchmarkRegression]] - `contains` [EXTRACTED]
+- [[TestPercentileMath]] - `contains` [EXTRACTED]
+- [[_write_results()]] - `contains` [EXTRACTED]
 - [[assert_within_threshold()]] - `contains` [EXTRACTED]
 - [[load_baseline()]] - `contains` [EXTRACTED]
+- [[percentile()]] - `contains` [EXTRACTED]
+- [[record()]] - `contains` [EXTRACTED]
+- [[summarize_ms()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_511

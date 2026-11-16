@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
 type: "document"
-community: "Community 162"
+community: "Community 1210"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_162
+  - community/Community_1210
 ---
 
 # OPENCLAW_DISABLE_HOST_FILESYSTEM
@@ -19,4 +19,4 @@ tags:
 - [[Set In_3]] - `contains` [EXTRACTED]
 - [[Value_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_162
+#graphify/document #graphify/EXTRACTED #community/Community_1210

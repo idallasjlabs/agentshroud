@@ -1,12 +1,12 @@
 ---
 source_file: "SECURITY.md"
 type: "document"
-community: "Community 394"
+community: "Community 1260"
 location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_394
+  - community/Community_1260
 ---
 
 # Layer 1 — Core Pipeline (P0)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Architecture_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_394
+#graphify/document #graphify/EXTRACTED #community/Community_1260

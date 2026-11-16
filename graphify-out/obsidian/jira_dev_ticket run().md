@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "code"
-community: "Community 647"
+community: "Community 238"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_647
+  - community/Community_238
 ---
 
 # jira_dev_ticket run()
@@ -19,4 +19,4 @@ tags:
 - [[run()_1]] - `semantically_similar_to` [INFERRED]
 - [[test_jira_dev_ticket.py]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_647
+#graphify/code #graphify/EXTRACTED #community/Community_238

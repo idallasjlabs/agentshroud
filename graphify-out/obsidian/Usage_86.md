@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-qa/README.md"
 type: "document"
-community: "Community 1352"
+community: "Community 177"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1352
+  - community/Community_177
 ---
 
 # Usage
@@ -15,4 +15,4 @@ tags:
 - [[Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
 - [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1352
+#graphify/document #graphify/EXTRACTED #community/Community_177

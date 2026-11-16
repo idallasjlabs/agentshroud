@@ -1,21 +1,25 @@
 ---
 type: community
-members: 8
+members: 12
 ---
 
 # Community 1427
 
-**Members:** 8 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[AgentShroud — System Overview]] - document - docs/vault/00 - START HERE/System Overview.md
-- [[Components_2]] - document - docs/vault/00 - START HERE/System Overview.md
-- [[Key Design Decisions]] - document - docs/vault/00 - START HERE/System Overview.md
-- [[Related Notes_1]] - document - docs/vault/00 - START HERE/System Overview.md
-- [[Security Layers (in order)]] - document - docs/vault/00 - START HERE/System Overview.md
-- [[What It Is]] - document - docs/vault/00 - START HERE/System Overview.md
-- [[Who Depends On It]] - document - docs/vault/00 - START HERE/System Overview.md
-- [[Why It Exists]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[.test_10_x_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_127_0_0_1_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_169_254_blocked()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_192_168_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_decimal_ip_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_hex_ip_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_ipv4_mapped_ipv6_192_168_blocked()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_ipv4_mapped_ipv6_blocked()_2]] - code - gateway/tests/test_web_proxy.py
+- [[.test_ipv6_loopback_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_localhost_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_public_ip_allowed()_1]] - code - gateway/tests/test_web_proxy.py
+- [[TestSSRFBlocking]] - code - gateway/tests/test_web_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +29,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 94]]
+- 4 edges to [[_COMMUNITY_Community 120]]
+- 2 edges to [[_COMMUNITY_Community 27]]
+- 1 edge to [[_COMMUNITY_Community 1566]]
 
 ## Top bridge nodes
-- [[AgentShroud — System Overview]] - degree 8, connects to 1 community
+- [[TestSSRFBlocking]] - degree 18, connects to 3 communities

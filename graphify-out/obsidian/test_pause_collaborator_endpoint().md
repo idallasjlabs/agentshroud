@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
 community: "Community 19"
-location: "L910"
+location: "L998"
 tags:
   - graphify/code
   - graphify/EXTRACTED

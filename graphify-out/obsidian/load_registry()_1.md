@@ -12,9 +12,9 @@ tags:
 # load_registry()
 
 ## Connections
-- [[Any_77]] - `references` [EXTRACTED]
+- [[Any_88]] - `references` [EXTRACTED]
 - [[Import the current OpenClaw + Hermes registry lists (in file order).]] - `rationale_for` [EXTRACTED]
-- [[main()_25]] - `calls` [EXTRACTED]
+- [[main()_27]] - `calls` [EXTRACTED]
 - [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_265

@@ -1,15 +1,16 @@
 ---
 type: community
-members: 2
+members: 3
 ---
 
 # Community 2344
 
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[.test_memory_error_without_error_keyword_is_not_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Embeddingprovider hints without explicit error marker should not trigger rewrit]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_invalid_json_returns_empty()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_reads_daemon_json()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestDaemonConfigReader]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +20,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 626]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 845]]
+- 2 edges to [[_COMMUNITY_Community 219]]
+- 1 edge to [[_COMMUNITY_Community 516]]
 
 ## Top bridge nodes
-- [[.test_memory_error_without_error_keyword_is_not_rewritten()]] - degree 4, connects to 3 communities
+- [[TestDaemonConfigReader]] - degree 3, connects to 1 community
+- [[.test_reads_daemon_json()]] - degree 2, connects to 1 community
+- [[.test_invalid_json_returns_empty()]] - degree 2, connects to 1 community

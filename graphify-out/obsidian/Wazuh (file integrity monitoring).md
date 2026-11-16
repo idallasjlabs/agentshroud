@@ -11,6 +11,6 @@ tags:
 # Wazuh (file integrity monitoring)
 
 ## Connections
-- [[__init__.py_9]] - `references` [EXTRACTED]
+- [[__init__.py_10]] - `references` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/Community_1205

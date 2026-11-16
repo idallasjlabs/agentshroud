@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Community 429"
+community: "Community 690"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_429
+  - community/Community_690
 ---
 
 # Architecture Overview
@@ -19,4 +19,4 @@ tags:
 - [[Local LLM Support — Implementation Review]] - `contains` [EXTRACTED]
 - [[OpenClaw Integration (Primary Target)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_429
+#graphify/document #graphify/EXTRACTED #community/Community_690

@@ -8,7 +8,7 @@ members: 30
 **Members:** 30 nodes
 
 ## Members
-- [[.__init__()_205]] - code - src/interfaces/text_control_center.py
+- [[.__init__()_232]] - code - src/interfaces/text_control_center.py
 - [[.clear_screen()]] - code - src/interfaces/text_control_center.py
 - [[.draw_approvals()]] - code - src/interfaces/text_control_center.py
 - [[.draw_box()]] - code - src/interfaces/text_control_center.py
@@ -20,7 +20,7 @@ members: 30
 - [[.get_auth()]] - code - src/interfaces/text_control_center.py
 - [[.get_key()_1]] - code - src/interfaces/text_control_center.py
 - [[.make_api_request()]] - code - src/interfaces/text_control_center.py
-- [[.run()_6]] - code - src/interfaces/text_control_center.py
+- [[.run()_12]] - code - src/interfaces/text_control_center.py
 - [[ANSI]] - code - src/interfaces/text_control_center.py
 - [[Clear screen and position cursor at home]] - rationale - src/interfaces/text_control_center.py
 - [[ControlCenter]] - code - src/interfaces/text_control_center.py
@@ -35,7 +35,7 @@ members: 30
 - [[Get gateway authentication]] - rationale - src/interfaces/text_control_center.py
 - [[Main control center loop]] - rationale - src/interfaces/text_control_center.py
 - [[Make authenticated API request to gateway]] - rationale - src/interfaces/text_control_center.py
-- [[main()_36]] - code - src/interfaces/text_control_center.py
+- [[main()_38]] - code - src/interfaces/text_control_center.py
 - [[start-control-center]] - code - scripts/start-control-center
 - [[text_control_center.py]] - code - src/interfaces/text_control_center.py
 

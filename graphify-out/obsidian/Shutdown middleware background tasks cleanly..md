@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "Community 72"
+community: "Community 1"
 location: "L1439"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_1
 ---
 
 # Shutdown middleware background tasks cleanly.
 
 ## Connections
-- [[.close()_6]] - `rationale_for` [EXTRACTED]
+- [[.close()_8]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_72
+#graphify/rationale #graphify/EXTRACTED #community/Community_1

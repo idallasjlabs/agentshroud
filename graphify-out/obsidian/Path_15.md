@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/security/health_report.py"
 type: "code"
-community: "Community 16"
-location: "L65"
+community: "Community 185"
+location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/Community_185
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_95]] - `references` [EXTRACTED]
-- [[._compute_file_hash()]] - `references` [EXTRACTED]
-- [[._detect_modification_source()]] - `references` [EXTRACTED]
-- [[.scan_file()]] - `references` [EXTRACTED]
-- [[MemoryIntegrityConfig]] - `uses` [INFERRED]
+- [[generate_report()]] - `references` [EXTRACTED]
+- [[get_trend()]] - `references` [EXTRACTED]
+- [[init_db()]] - `references` [EXTRACTED]
+- [[save_to_history()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_16
+#graphify/code #graphify/EXTRACTED #community/Community_185

@@ -14,7 +14,8 @@ tags:
 ## Connections
 - [[AuthRequired_3]] - `references` [EXTRACTED]
 - [[ForwardRequest_2]] - `references` [EXTRACTED]
-- [[Request_4]] - `references` [EXTRACTED]
+- [[HTTPException]] - `calls` [INFERRED]
+- [[Request_5]] - `references` [EXTRACTED]
 - [[SecurityPipeline]] - `calls` [EXTRACTED]
 - [[Streaming variant of forward for OpenAI-compat agents (Hermes).      Same inbou]] - `rationale_for` [EXTRACTED]
 - [[_process_inbound()]] - `calls` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "Community 11"
+community: "Community 1291"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_11
+  - community/Community_1291
 ---
 
 # test_trust_manager.py
@@ -27,4 +27,4 @@ tags:
 - [[strict_manager()]] - `contains` [EXTRACTED]
 - [[trust_db()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_11
+#graphify/code #graphify/EXTRACTED #community/Community_1291

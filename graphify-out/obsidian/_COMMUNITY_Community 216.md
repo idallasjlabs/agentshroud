@@ -1,11 +1,11 @@
 ---
 type: community
-members: 42
+members: 46
 ---
 
 # Community 216
 
-**Members:** 42 nodes
+**Members:** 46 nodes
 
 ## Members
 - [[._active_send_token()]] - code - gateway/proxy/telegram_proxy.py
@@ -13,6 +13,8 @@ members: 42
 - [[._collaborator_rate_limit_retry_after_seconds()]] - code - gateway/proxy/telegram_proxy.py
 - [[._edit_telegram_message()]] - code - gateway/proxy/telegram_proxy.py
 - [[._forward_to_telegram()]] - code - gateway/proxy/telegram_proxy.py
+- [[._queue_collaborator_access_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._resolve_display_name()]] - code - gateway/proxy/telegram_proxy.py
 - [[._send_collaborator_pending_notice()]] - code - gateway/proxy/telegram_proxy.py
 - [[._send_local_healthcheck_notice()]] - code - gateway/proxy/telegram_proxy.py
 - [[._send_local_help_notice()]] - code - gateway/proxy/telegram_proxy.py
@@ -38,6 +40,8 @@ members: 42
 - [[Notify a collaborator they have exceeded the hourly rate limit.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Notify an unknownunapproved user they have exceeded the access request rate lim]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Per-request bot token for gateway-originated Telegram sends.          Returns th]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Queue owner approval request for unknownrevoked users.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Resolve a readable label for user id when available.          Priority user sel]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Send a Telegram message with an inline keyboard.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Send deterministic help command list without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Send deterministic start notice without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
@@ -59,11 +63,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 34 edges to [[_COMMUNITY_Community 14]]
+- 33 edges to [[_COMMUNITY_Community 14]]
+- 2 edges to [[_COMMUNITY_Community 1344]]
+- 1 edge to [[_COMMUNITY_Community 18]]
 
 ## Top bridge nodes
+- [[._resolve_display_name()]] - degree 6, connects to 2 communities
+- [[._queue_collaborator_access_request()]] - degree 6, connects to 2 communities
+- [[._forward_to_telegram()]] - degree 5, connects to 2 communities
 - [[._active_send_token()]] - degree 13, connects to 1 community
 - [[._send_local_notice_with_fallback()]] - degree 13, connects to 1 community
-- [[._send_rate_limit_notice()]] - degree 5, connects to 1 community
-- [[._forward_to_telegram()]] - degree 5, connects to 1 community
-- [[._telegram_create_invite_link()]] - degree 4, connects to 1 community

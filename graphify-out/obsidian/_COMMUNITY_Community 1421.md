@@ -8,7 +8,7 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[check()_10]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
+- [[check()_14]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
 - [[count_key()]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
 - [[reconcile_noyaml()]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
 - [[test_hermes_mcp_reconciliation.sh]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh

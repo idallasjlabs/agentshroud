@@ -12,7 +12,7 @@ tags:
 # MCPProxyConfig
 
 ## Connections
-- [[.__init__()_27]] - `references` [EXTRACTED]
+- [[.__init__()_42]] - `references` [EXTRACTED]
 - [[MCPProxyConfig]] - `uses` [INFERRED]
 - [[MCPServerConfig]] - `uses` [INFERRED]
 - [[PermissionLevel]] - `uses` [INFERRED]

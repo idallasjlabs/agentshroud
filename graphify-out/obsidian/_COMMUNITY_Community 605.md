@@ -1,37 +1,38 @@
 ---
 type: community
-members: 24
+members: 25
 ---
 
 # Community 605
 
-**Members:** 24 nodes
+**Members:** 25 nodes
 
 ## Members
-- [[.middleware_manager()]] - code - gateway/tests/test_session_isolation.py
-- [[.temp_workspace()_2]] - code - gateway/tests/test_session_isolation.py
-- [[.temp_workspace()_3]] - code - gateway/tests/test_session_isolation.py
-- [[.test_middleware_cross_session_blocking()]] - code - gateway/tests/test_session_isolation.py
-- [[.test_middleware_file_path_isolation()]] - code - gateway/tests/test_session_isolation.py
-- [[.test_middleware_normalizes_invisible_unicode()]] - code - gateway/tests/test_session_isolation.py
-- [[.test_middleware_own_workspace_allowed()]] - code - gateway/tests/test_session_isolation.py
-- [[.test_middleware_owner_bypass()]] - code - gateway/tests/test_session_isolation.py
-- [[.test_middleware_session_context_injection()]] - code - gateway/tests/test_session_isolation.py
-- [[.test_middleware_user_identification()]] - code - gateway/tests/test_session_isolation.py
-- [[.test_multi_turn_block_reason_hides_score()]] - code - gateway/tests/test_session_isolation.py
-- [[Blocked multi-turn sessions should not disclose scoring details.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Create a temporary workspace.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Create a temporary workspace._1]] - rationale - gateway/tests/test_session_isolation.py
-- [[Create middleware manager with session isolation.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Input normalization should strip zero-width obfuscation before guards run.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test middleware enforcement of session boundaries.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that middleware blocks access to sensitive system files.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that middleware blocks cross-session access attempts.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that middleware injects session context.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that middleware requires user identification.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that owner can perform cross-session actions.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that users can access their own workspace.]] - rationale - gateway/tests/test_session_isolation.py
-- [[TestMiddlewareSessionEnforcement]] - code - gateway/tests/test_session_isolation.py
+- [[.setup_method()_22]] - code - gateway/tests/test_resource_guard.py
+- [[.teardown_method()_5]] - code - gateway/tests/test_resource_guard.py
+- [[.test_brief_spike_below_debounce_does_not_alert()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_check_resource_over_limit_blocked()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_check_resource_temp_files_limit()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_check_resource_under_limit_passes()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_invalid_resource_type()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_multiple_agents_isolated()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_request_count_limiting()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_resource_guard_config()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_stop_cancels_monitor_task()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_system_resource_monitoring_alerts_after_debounce()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_window_expiry_resets_usage()]] - code - gateway/tests/test_resource_guard.py
+- [[A single over-threshold sample followed by an under-threshold sample is suppress]] - rationale - gateway/tests/test_resource_guard.py
+- [[Sustained high CPU fires the alert after debounce samples are crossed.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test ResourceGuardConfig dataclass.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test handling of invalid resource types.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test request count per minute limiting.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test temp file count limiting.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test that different agents have isolated resource tracking.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test that resource usage over limits is blocked.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test that resource usage resets after time window.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test that resource usage under limits passes.]] - rationale - gateway/tests/test_resource_guard.py
+- [[TestResourceGuard]] - code - gateway/tests/test_resource_guard.py
+- [[stop() should cancel background monitor cleanly.]] - rationale - gateway/tests/test_resource_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,12 +42,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 1]]
-- 2 edges to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 43]]
-- 1 edge to [[_COMMUNITY_Community 6]]
+- 5 edges to [[_COMMUNITY_Community 532]]
+- 3 edges to [[_COMMUNITY_Community 5]]
 
 ## Top bridge nodes
-- [[TestMiddlewareSessionEnforcement]] - degree 16, connects to 4 communities
-- [[.middleware_manager()]] - degree 4, connects to 2 communities
-- [[.temp_workspace()_3]] - degree 3, connects to 1 community
+- [[TestResourceGuard]] - degree 16, connects to 2 communities
+- [[.test_stop_cancels_monitor_task()]] - degree 4, connects to 2 communities
+- [[.setup_method()_22]] - degree 3, connects to 2 communities
+- [[.test_resource_guard_config()]] - degree 3, connects to 1 community

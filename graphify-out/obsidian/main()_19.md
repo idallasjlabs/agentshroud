@@ -1,20 +1,18 @@
 ---
-source_file: "scripts/export-email-reports.py"
+source_file: "scripts/discover_upstream_versions.py"
 type: "code"
-community: "Community 777"
-location: "L136"
+community: "Community 48"
+location: "L349"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_777
+  - community/Community_48
 ---
 
 # main()
 
 ## Connections
-- [[Path_47]] - `calls` [EXTRACTED]
-- [[_parse_since()_1]] - `calls` [EXTRACTED]
-- [[export-email-reports.py]] - `contains` [EXTRACTED]
-- [[export_bot()]] - `calls` [EXTRACTED]
+- [[discover()]] - `calls` [EXTRACTED]
+- [[discover_upstream_versions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_777
+#graphify/code #graphify/EXTRACTED #community/Community_48

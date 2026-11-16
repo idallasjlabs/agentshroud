@@ -1,49 +1,45 @@
 ---
 type: community
-members: 36
+members: 32
 ---
 
 # Community 420
 
-**Members:** 36 nodes
+**Members:** 32 nodes
 
 ## Members
-- [[._all_not_run_patches()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_all_domains_have_required_fields()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_clean_tools_improve_score()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_compliance_new_keys_present()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_compute_weighted_subscore_full_score()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_compute_weighted_subscore_zero_for_empty_map()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_disa_stig_domain_map_valid()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_eu_ai_act_domain_map_valid()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_iso_42001_domain_map_valid()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_maturity_labels_valid()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_network_segmentation_baseline_three()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_nist_csf_domain_map_valid()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_overall_maturity_present()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_returns_thirty_three_domains()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_scorecard_domain_ids_are_sequential()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_secrets_management_baseline_two()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_standard_basis_present()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_timestamp_present()_1]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_totals_present()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_version_is_v090()]] - code - gateway/tests/test_scanner_integration.py
-- [[Compute the 33-domain Security Scorecard.      Domains 1–21 Container infrastru]] - rationale - gateway/security/scanner_integration.py
-- [[DISA STIG domain map references only valid domain IDs.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[Determine composite compliance level using the weakest-link rule.      All 7 sub]] - rationale - gateway/security/scanner_integration.py
-- [[Determine the highest achieved IEC 62443 Security Level.      SL 1 All IEC-mapp]] - rationale - gateway/security/scanner_integration.py
-- [[EU AI Act domain map references only valid domain IDs.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[ISO 42001 domain map references only valid domain IDs.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[NIST CSF domain map references only valid domain IDs.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[New compliance sub-scores (EU AI Act, ISO 42001, NIST CSF, DISA STIG) appear in]] - rationale - gateway/tests/test_scanner_integration.py
-- [[Return weighted sub-score as 0.0–100.0 percentage.]] - rationale - gateway/security/scanner_integration.py
-- [[TestComputeScorecard]] - code - gateway/tests/test_scanner_integration.py
-- [[_compute_weighted_subscore returns 0.0 for an empty domain map.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[_compute_weighted_subscore returns 100.0 when all domains score 5.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[_compute_weighted_subscore()]] - code - gateway/security/scanner_integration.py
-- [[_determine_compliance_level()]] - code - gateway/security/scanner_integration.py
-- [[_determine_iec_sl()]] - code - gateway/security/scanner_integration.py
-- [[compute_scorecard()]] - code - gateway/security/scanner_integration.py
+- [[.test_pin_revert_restores_the_exact_original_string()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[.test_read_pin_missing_key_returns_none()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[.test_read_pin_returns_the_pinned_value()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[.test_write_pin_is_idempotent()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[.test_write_pin_refuses_an_absent_key()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[.test_write_pin_replaces_only_the_target_line()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[.test_write_pin_round_trips_through_read_pin()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[.to_dict()_17]] - code - scripts/auto_remediate_cves.py
+- [[Any_86]] - code - scripts/auto_remediate_cves.py
+- [[Bump the pin, run the gated upgrade, revert the pin if it does not hold.      Re]] - rationale - scripts/auto_remediate_cves.py
+- [[Import the committed OpenClaw registry.]] - rationale - scripts/auto_remediate_cves.py
+- [[Parse a dotted numeric version to a comparable tuple.      A trailing ``-N`` on]] - rationale - scripts/auto_remediate_cves.py
+- [[Path_48]] - code - scripts/auto_remediate_cves.py
+- [[Read one ``KEY=value`` pin from a versions.env-style file.]] - rationale - scripts/auto_remediate_cves.py
+- [[Reading and rewriting dockerversions.env.]] - rationale - gateway/tests/test_auto_remediate_cves.py
+- [[RemediationPlan]] - code - scripts/auto_remediate_cves.py
+- [[Rewrite one pin in place, preserving every other line byte for byte.      Raises]] - rationale - scripts/auto_remediate_cves.py
+- [[Serialise for the unattended run's audit trail.]] - rationale - scripts/auto_remediate_cves.py
+- [[Silently appending a new key could create a pin nothing consumes.]] - rationale - gateway/tests/test_auto_remediate_cves.py
+- [[TestVersionPinIO]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[The rollback path a failed deploy must restore the pin verbatim,         downst]] - rationale - gateway/tests/test_auto_remediate_cves.py
+- [[What a version bump would and would not remediate.      Every ``under_review`` a]] - rationale - scripts/auto_remediate_cves.py
+- [[_print_plan()]] - code - scripts/auto_remediate_cves.py
+- [[_run()_5]] - code - scripts/auto_remediate_cves.py
+- [[apply_remediation()]] - code - scripts/auto_remediate_cves.py
+- [[auto_remediate_cves.py]] - code - scripts/auto_remediate_cves.py
+- [[load_registry()]] - code - scripts/auto_remediate_cves.py
+- [[main()_17]] - code - scripts/auto_remediate_cves.py
+- [[parse_version()]] - code - scripts/auto_remediate_cves.py
+- [[read_pin()]] - code - scripts/auto_remediate_cves.py
+- [[test_pin_revert_restores_the_exact_original_string]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[write_pin()]] - code - scripts/auto_remediate_cves.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -53,19 +49,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 28 edges to [[_COMMUNITY_Community 29]]
-- 18 edges to [[_COMMUNITY_Community 67]]
-- 3 edges to [[_COMMUNITY_Community 943]]
-- 3 edges to [[_COMMUNITY_Community 842]]
-- 2 edges to [[_COMMUNITY_Community 207]]
-- 1 edge to [[_COMMUNITY_Community 363]]
-- 1 edge to [[_COMMUNITY_Community 1969]]
-- 1 edge to [[_COMMUNITY_Community 10]]
-- 1 edge to [[_COMMUNITY_Community 51]]
+- 9 edges to [[_COMMUNITY_Community 261]]
+- 2 edges to [[_COMMUNITY_Community 126]]
+- 1 edge to [[_COMMUNITY_Community 118]]
+- 1 edge to [[_COMMUNITY_Community 139]]
+- 1 edge to [[_COMMUNITY_Community 227]]
+- 1 edge to [[_COMMUNITY_Community 48]]
+- 1 edge to [[_COMMUNITY_Community 8]]
 
 ## Top bridge nodes
-- [[compute_scorecard()]] - degree 61, connects to 9 communities
-- [[_compute_weighted_subscore()]] - degree 6, connects to 2 communities
-- [[TestComputeScorecard]] - degree 21, connects to 1 community
-- [[._all_not_run_patches()]] - degree 18, connects to 1 community
-- [[.test_clean_tools_improve_score()]] - degree 8, connects to 1 community
+- [[auto_remediate_cves.py]] - degree 15, connects to 6 communities
+- [[apply_remediation()]] - degree 9, connects to 2 communities
+- [[read_pin()]] - degree 11, connects to 1 community
+- [[TestVersionPinIO]] - degree 10, connects to 1 community
+- [[RemediationPlan]] - degree 9, connects to 1 community

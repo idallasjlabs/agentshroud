@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md"
 type: "document"
-community: "Community 1972"
+community: "Community 414"
 location: "L166"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1972
+  - community/Community_414
 ---
 
 # Test Results
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Fixes Applied]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1972
+#graphify/document #graphify/EXTRACTED #community/Community_414

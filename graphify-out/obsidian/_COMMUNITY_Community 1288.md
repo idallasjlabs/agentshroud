@@ -1,24 +1,28 @@
 ---
 type: community
-members: 11
+members: 15
 ---
 
 # Community 1288
 
-**Members:** 11 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[A real CVE always came from a GHSA advisory, so cve_id implies ghsa_id.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[CRITICAL GUARD no entry `id` may look like a real CVE id.      This is the load]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Every `id` must be a zero-padded ASH-OCLAW-NNN  ASH-HERMES-NNN ref.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[_all_entries()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[cve_id must be either None or a real-looking CVE id — never junk.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[ghsa_id must be either None or a real-looking GHSA id.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[test_cve_id_field_only_holds_real_looking_cve_ids()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_entry_with_cve_id_also_has_ghsa_id()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_every_entry_id_is_synthetic_ash_ref()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_ghsa_id_field_only_holds_real_looking_ghsa_ids()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_no_entry_id_looks_like_a_cve()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[Persist a per-user collab mode override set via the SOC dashboard.      Stored u]] - rationale - gateway/security/group_config.py
+- [[Persist a runtime collab mode change for a group.]] - rationale - gateway/security/group_config.py
+- [[Persist a runtime group creation so it survives container restarts.]] - rationale - gateway/security/group_config.py
+- [[Persist a runtime group deletion so it survives container restarts.]] - rationale - gateway/security/group_config.py
+- [[Persist a runtime group membership addition.]] - rationale - gateway/security/group_config.py
+- [[Persist a runtime group membership removal.]] - rationale - gateway/security/group_config.py
+- [[_load_overrides()]] - code - gateway/security/group_config.py
+- [[_save_overrides()]] - code - gateway/security/group_config.py
+- [[group_config.py]] - code - gateway/security/group_config.py
+- [[persist_group_collab_mode()]] - code - gateway/security/group_config.py
+- [[persist_group_create()]] - code - gateway/security/group_config.py
+- [[persist_group_delete()]] - code - gateway/security/group_config.py
+- [[persist_group_member_add()]] - code - gateway/security/group_config.py
+- [[persist_group_member_remove()]] - code - gateway/security/group_config.py
+- [[persist_user_collab_mode()]] - code - gateway/security/group_config.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,11 +32,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 42]]
+- 12 edges to [[_COMMUNITY_Community 10]]
+- 8 edges to [[_COMMUNITY_Community 18]]
+- 4 edges to [[_COMMUNITY_Community 135]]
+- 2 edges to [[_COMMUNITY_Community 194]]
+- 1 edge to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 61]]
+- 1 edge to [[_COMMUNITY_Community 223]]
 
 ## Top bridge nodes
-- [[_all_entries()]] - degree 6, connects to 1 community
-- [[test_no_entry_id_looks_like_a_cve()]] - degree 3, connects to 1 community
-- [[test_every_entry_id_is_synthetic_ash_ref()]] - degree 3, connects to 1 community
-- [[test_cve_id_field_only_holds_real_looking_cve_ids()]] - degree 3, connects to 1 community
-- [[test_ghsa_id_field_only_holds_real_looking_ghsa_ids()]] - degree 3, connects to 1 community
+- [[group_config.py]] - degree 16, connects to 6 communities
+- [[persist_group_member_remove()]] - degree 9, connects to 2 communities
+- [[persist_user_collab_mode()]] - degree 9, connects to 2 communities
+- [[persist_group_member_add()]] - degree 8, connects to 2 communities
+- [[persist_group_collab_mode()]] - degree 8, connects to 2 communities

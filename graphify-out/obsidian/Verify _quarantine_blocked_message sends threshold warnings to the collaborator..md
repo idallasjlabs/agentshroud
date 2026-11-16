@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "rationale"
-community: "Community 1290"
-location: "L184"
+community: "Community 75"
+location: "L188"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1290
+  - community/Community_75
 ---
 
 # Verify _quarantine_blocked_message sends threshold warnings to the collaborator.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCollabLockdownNotifications]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1290
+#graphify/rationale #graphify/EXTRACTED #community/Community_75

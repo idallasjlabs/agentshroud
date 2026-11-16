@@ -1,17 +1,19 @@
 ---
 type: community
-members: 4
+members: 6
 ---
 
 # Community 2122
 
-**Members:** 4 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[Changed_3]] - document - CHANGELOG.md
-- [[Fixed_8]] - document - CHANGELOG.md
-- [[Summary_9]] - document - CHANGELOG.md
-- [[1.2.2 — releasev1.2.2 (2026-06-28)]] - document - CHANGELOG.md
+- [[._json_resp()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_403_without_token_still_raises()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_other_http_errors_are_not_retried()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_token_refused_retries_public_endpoint_without_token()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestFetch]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[aquasecuritytrivy 403s the Actions token but serves the public feed.]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +23,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 773]]
-- 1 edge to [[_COMMUNITY_Community 1255]]
-- 1 edge to [[_COMMUNITY_Community 1386]]
+- 4 edges to [[_COMMUNITY_Community 55]]
+- 1 edge to [[_COMMUNITY_Community 1424]]
+- 1 edge to [[_COMMUNITY_Community 480]]
 
 ## Top bridge nodes
-- [[1.2.2 — releasev1.2.2 (2026-06-28)]] - degree 7, connects to 3 communities
+- [[TestFetch]] - degree 6, connects to 2 communities
+- [[.test_token_refused_retries_public_endpoint_without_token()]] - degree 3, connects to 1 community
+- [[._json_resp()]] - degree 2, connects to 1 community
+- [[.test_403_without_token_still_raises()]] - degree 2, connects to 1 community
+- [[.test_other_http_errors_are_not_retried()]] - degree 2, connects to 1 community

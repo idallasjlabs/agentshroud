@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "Community 7"
+community: "Community 84"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/Community_84
 ---
 
 # Process 1000 mixed messages in under 10 seconds.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_1000_messages_under_10s()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_7
+#graphify/rationale #graphify/EXTRACTED #community/Community_84

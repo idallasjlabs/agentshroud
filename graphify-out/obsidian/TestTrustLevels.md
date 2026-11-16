@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "Community 2038"
+community: "Community 54"
 location: "L121"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_2038
+  - community/Community_54
 ---
 
 # TestTrustLevels
@@ -23,4 +23,4 @@ tags:
 - [[PermissionLevel]] - `uses` [INFERRED]
 - [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_2038
+#graphify/code #graphify/INFERRED #community/Community_54

@@ -1,15 +1,17 @@
 ---
 type: community
-members: 2
+members: 4
 ---
 
 # Community 2335
 
-**Members:** 2 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_config_from_env()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[Test configuration from environment variables.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[.test_not_running()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_running_with_fresh_log()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_running_without_logs()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestFluentBitSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +21,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 16]]
+- 1 edge to [[_COMMUNITY_Community 516]]
+- 1 edge to [[_COMMUNITY_Community 219]]
 
 ## Top bridge nodes
-- [[.test_config_from_env()]] - degree 2, connects to 1 community
+- [[TestFluentBitSummary]] - degree 4, connects to 1 community
+- [[.test_running_with_fresh_log()]] - degree 2, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Community 325"
-location: "L215"
+community: "Community 34"
+location: "L219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_325
+  - community/Community_34
 ---
 
 # AgentTarget
@@ -17,7 +17,7 @@ tags:
 - [[.test_blocked_outbound_replaced_with_policy_notice()]] - `calls` [EXTRACTED]
 - [[.test_default_not_used_in_pipeline()]] - `calls` [EXTRACTED]
 - [[AgentTarget_1]] - `uses` [INFERRED]
-- [[Any_9]] - `uses` [INFERRED]
+- [[Any_19]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[Downstream agent target]] - `rationale_for` [EXTRACTED]
 - [[ForwardError]] - `uses` [INFERRED]
@@ -71,4 +71,4 @@ tags:
 - [[test_stream_skips_chunk_missing_choices_key_and_continues()]] - `calls` [EXTRACTED]
 - [[test_stream_yields_content_deltas_in_order()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_325
+#graphify/code #graphify/EXTRACTED #community/Community_34

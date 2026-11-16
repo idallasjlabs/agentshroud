@@ -1,23 +1,21 @@
 ---
 type: community
-members: 10
+members: 8
 ---
 
 # Community 1976
 
-**Members:** 10 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Approval Request Workflow (user-facing)]] - concept - docs/user-guide.md
-- [[Command Injection Threat — regex + no-shell exec mitigation]] - rationale - docs/ssh-security-review.md
-- [[Host SpoofingMITM Threat — TOFU model residual risk]] - rationale - docs/ssh-security-review.md
-- [[Open Findings (C3-C5, H4-H7, M1-M5)]] - concept - docs/claude-security-audit-prompt.md
-- [[Option 1 Direct SSH (current approach)]] - concept - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Production Deployment Recommendations]] - concept - docs/ssh-security-review.md
-- [[SSH AllowDeny List Evaluation Order]] - concept - docs/ssh-configuration.md
-- [[SSH Auto-Approve Commands]] - concept - docs/ssh-configuration.md
-- [[SSH Proxy Config Schema (agentshroud.yaml ssh section)]] - concept - docs/ssh-configuration.md
-- [[SSH Proxy Threat Model (6 threats)]] - concept - docs/ssh-security-review.md
+- [[_mode()]] - code - scripts/smoke.d/test-edge-keygen.sh
+- [[check()_5]] - code - scripts/smoke.d/test-edge-keygen.sh
+- [[ensure_keychain()]] - code - scripts/smoke.d/test-edge-keygen.sh
+- [[get_secret()]] - code - scripts/smoke.d/test-edge-keygen.sh
+- [[keychain_get()]] - code - scripts/smoke.d/test-edge-keygen.sh
+- [[run_sourced()]] - code - scripts/smoke.d/test-edge-keygen.sh
+- [[test-edge-keygen.sh]] - code - scripts/smoke.d/test-edge-keygen.sh
+- [[test-edge-keygen.sh script]] - code - scripts/smoke.d/test-edge-keygen.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +23,3 @@ members: 10
 TABLE source_file, type FROM #community/Community_1976
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 915]]
-
-## Top bridge nodes
-- [[Open Findings (C3-C5, H4-H7, M1-M5)]] - degree 2, connects to 1 community
