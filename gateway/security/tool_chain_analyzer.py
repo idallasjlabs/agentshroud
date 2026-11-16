@@ -577,11 +577,6 @@ class ToolChainAnalyzer:
         """Add a callback function for chain detection alerts."""
         self.alert_callbacks.append(callback)
 
-    def add_pattern(self, pattern: ChainPattern) -> None:
-        """Add a new chain pattern at runtime."""
-        self.patterns.append(pattern)
-        logger.info(f"Added new pattern: {pattern.name}")
-
     # ── C34: Parameter Sanitization ──────────────────────────────────────────
 
     def sanitize_tool_params(self, tool_name: str, params: Dict[str, Any]) -> ParamScanResult:

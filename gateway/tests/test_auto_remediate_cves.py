@@ -27,7 +27,6 @@ _REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(_REPO_ROOT / "scripts"))
 
 from auto_remediate_cves import (  # noqa: E402
-    RemediationPlan,
     plan_remediation,
     read_pin,
     write_pin,

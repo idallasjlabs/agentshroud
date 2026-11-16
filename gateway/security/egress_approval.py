@@ -622,18 +622,6 @@ class EgressApprovalQueue:
                 "session_rules": [self._rule_to_dict(r) for r in self._session_rules.values()],
             }
 
-    def get_rules_for_user(
-        self, user_id: Optional[str], group_ids: Optional[List[str]] = None, is_owner: bool = False
-    ) -> List["EgressRule"]:
-        """Return all rules whose scope matches the given user context (synchronous, lock-free read)."""
-        group_ids = group_ids or []
-        matching = []
-        for rule in list(self._permanent_rules.values()) + list(self._session_rules.values()):
-            scope = getattr(rule, "scope", EgressScope())
-            if scope.matches(user_id, group_ids, is_owner=is_owner):
-                matching.append(rule)
-        return matching
-
     def _append_decision(
         self, request: "EgressRequest", decision: str, mode: str, decided_by: str
     ) -> None:

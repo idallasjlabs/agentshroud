@@ -16,7 +16,7 @@ import time
 import uuid
 from collections import defaultdict, deque
 from dataclasses import dataclass
-from typing import Any, Dict, List, Tuple
+from typing import Dict, List
 
 from gateway.security.input_normalizer import normalize_input
 
@@ -444,66 +444,6 @@ class ContextGuard:
         else:
             return "low"
 
-    def should_block_message(self, session_id: str, message: str) -> Tuple[bool, List[str]]:
-        """
-        Determine if a message should be blocked.
-
-        Returns:
-            Tuple of (should_block, reasons)
-        """
-        attacks = self.analyze_message(session_id, message)
-        block_reasons = []
-
-        for attack in attacks:
-            if attack.severity == "critical":
-                block_reasons.append(f"Critical {attack.attack_type}: {attack.description}")
-            elif attack.severity == "high":
-                block_reasons.append(f"High-severity {attack.attack_type}: {attack.description}")
-
-        return len(block_reasons) > 0, block_reasons
-
-    def get_attack_summary(self) -> Dict[str, Any]:
-        """Get summary of detected attacks."""
-        return {
-            "total_attacks": len(self.detected_attacks),
-            "by_type": {
-                attack_type: len([a for a in self.detected_attacks if a.attack_type == attack_type])
-                for attack_type in set(a.attack_type for a in self.detected_attacks)
-            },
-            "by_severity": {
-                severity: len([a for a in self.detected_attacks if a.severity == severity])
-                for severity in set(a.severity for a in self.detected_attacks)
-            },
-            "session_metrics": self.session_metrics,
-            "active_sessions": len(self.sessions),
-            "high_risk_sessions": [
-                session_id
-                for session_id in self.sessions.keys()
-                if self.get_session_risk_level(session_id) in ["critical", "high"]
-            ],
-        }
-
-    def cleanup_old_sessions(self, max_age_hours: int = 24):
-        """Clean up old session data."""
-        current_time = time.time()
-        cutoff_time = current_time - (max_age_hours * 3600)
-
-        old_sessions = [
-            session_id
-            for session_id, session in self.sessions.items()
-            if session.last_activity < cutoff_time
-        ]
-
-        for session_id in old_sessions:
-            del self.sessions[session_id]
-
-        # Also clean old attacks
-        self.detected_attacks = [
-            attack for attack in self.detected_attacks if attack.timestamp > cutoff_time
-        ]
-
-        logger.info(f"Cleaned up {len(old_sessions)} old sessions")
-
     # ── C10: Source Tagging ───────────────────────────────────────────────────
 
     def tag_segment(
@@ -531,34 +471,6 @@ class ContextGuard:
         return list(self._segments.get(session_id, []))
 
     # ─────────────────────────────────────────────────────────────────────────
-
-    def export_attack_report(self, output_path: str):
-        """Export attack detection report."""
-        import json
-
-        report = {
-            "timestamp": time.time(),
-            "summary": self.get_attack_summary(),
-            "attacks": [
-                {
-                    "session_id": a.session_id,
-                    "attack_type": a.attack_type,
-                    "severity": a.severity,
-                    "description": a.description,
-                    "detection_patterns": a.detection_patterns,
-                    "timestamp": a.timestamp,
-                    "context_size_before": a.context_size_before,
-                    "context_size_after": a.context_size_after,
-                    "message_preview": a.message_content[:200],
-                }
-                for a in self.detected_attacks
-            ],
-        }
-
-        with open(output_path, "w") as f:
-            json.dump(report, f, indent=2)
-
-        logger.info(f"Context attack report exported to {output_path}")
 
 
 # Global instance

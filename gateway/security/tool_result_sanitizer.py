@@ -200,11 +200,3 @@ class ToolResultSanitizer:
             f"PII redacted from tool result: tool={tool_name} session={session_id or 'unknown'} "
             f"entities=[{', '.join(entity_types)}] count={redaction_count}"
         )
-
-    def get_supported_tools(self) -> list[str]:
-        """Get list of tools with specific PII configurations"""
-        return list(self.config.tool_overrides.keys())
-
-    def get_tool_config(self, tool_name: str) -> PIIConfig:
-        """Get the PII configuration for a specific tool"""
-        return self.config.get_config_for_tool(tool_name)

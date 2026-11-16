@@ -218,7 +218,3 @@ class HeuristicClassifier:
         result = self._classify_heuristic(text)
         result.method = "ml_fallback"
         return result
-
-
-# Backward-compatible alias so any future callers can import either name
-InjectionClassifier = HeuristicClassifier

@@ -350,15 +350,6 @@ class EgressFilterConfig:
         """Check if domain matches any pattern in the list (supports wildcards)."""
         return domain_matches(domain, patterns)
 
-    def matches_allowlist(self, domain: str) -> bool:
-        """Public: does *domain* match any pattern in the effective default allowlist?
-
-        Exposes the same exact / single-level-wildcard semantics used by egress
-        enforcement so other modules (e.g. the citation verifier) can check
-        allowlist membership without reaching into a private method.
-        """
-        return domain_matches(domain, self.default_allowlist)
-
 
 # Global config instance
 _global_config: EgressFilterConfig = EgressFilterConfig.from_environment()

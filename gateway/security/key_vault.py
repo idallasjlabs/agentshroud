@@ -37,12 +37,6 @@ class KeyEntry:
 
 
 @dataclass
-class KeyScope:
-    key_name: str
-    agent_ids: list[str]
-
-
-@dataclass
 class KeyAuditEvent:
     timestamp: float
     key_name: str

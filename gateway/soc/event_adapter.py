@@ -203,7 +203,6 @@ def from_dict(raw: Dict[str, Any]) -> SecurityEvent:
 async def collect_recent_events(
     audit_store: Any,
     limit: int = 100,
-    since_iso: Optional[str] = None,
     severity_filter: Optional[str] = None,
 ) -> List[SecurityEvent]:
     """Collect recent SecurityEvents from AuditStore (async-safe read)."""

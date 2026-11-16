@@ -668,7 +668,6 @@ def _is_falco_running() -> bool:
                         if "Z" in line.split(":", 1)[1]:
                             break  # zombie — skip
                         return True
-                        break
             except (OSError, PermissionError):
                 continue
     except Exception:

@@ -192,37 +192,6 @@ class DNSFilter:
         self._resolved_ip_cache[domain] = (ip, now)
         return ip
 
-    def check_rebinding(self, domain: str) -> bool:
-        """Return True if a DNS rebinding attack is detected.
-
-        Re-resolves the domain and compares to the cached IP.  Flags when
-        the new IP falls in a private/loopback range (RFC 1918 / ::1).
-        """
-        cached = self._resolved_ip_cache.get(domain)
-        if not cached or not cached[0]:
-            self.resolve_and_cache(domain)
-            return False
-
-        prev_ip = cached[0]
-        try:
-            infos = socket.getaddrinfo(domain, None)
-            new_ip = infos[0][4][0] if infos else ""
-        except Exception:
-            return False
-
-        if new_ip and new_ip != prev_ip and self._is_private_ip(new_ip):
-            logger.warning(
-                "DNS rebinding detected for %s: %s -> %s (private range)",
-                domain,
-                prev_ip,
-                new_ip,
-            )
-            return True
-
-        # Update cache with fresh resolution
-        self._resolved_ip_cache[domain] = (new_ip or prev_ip, time.time())
-        return False
-
     def _is_private_ip(self, ip: str) -> bool:
         """Return True if the IP address is in a private / loopback range."""
         private_patterns = [

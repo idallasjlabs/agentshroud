@@ -480,14 +480,6 @@ class PIISanitizer:
             entity_types_found=entity_types,
         )
 
-    def get_supported_entities(self) -> list[str]:
-        """Return list of entity types currently enabled
-
-        Returns:
-            List of entity type names
-        """
-        return self.config.entities
-
     def get_mode(self) -> str:
         """Return current enforcement mode
 

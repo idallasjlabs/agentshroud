@@ -9,9 +9,7 @@ Validate docker-compose network configuration and detect security issues.
 
 from __future__ import annotations
 
-import json
 import logging
-import time
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional
 
@@ -532,40 +530,6 @@ class NetworkValidator:
 
         return findings
 
-    def detect_configuration_drift(self, compose_file_path: str) -> List[NetworkSecurityFinding]:
-        """Detect drift between compose file and runtime configuration."""
-        findings = []
-
-        # This would compare the compose file configuration with actual runtime state
-        # and detect any differences that might indicate tampering or misconfiguration
-
-        try:
-            compose_findings = self.validate_docker_compose_config(compose_file_path)
-            runtime_findings = self.validate_runtime_configuration()
-
-            # Compare findings to detect drift
-            compose_issues = {(f.service_name, f.category) for f in compose_findings}
-            runtime_issues = {(f.service_name, f.category) for f in runtime_findings}
-
-            # Issues that appear in runtime but not in compose file analysis
-            drift_issues = runtime_issues - compose_issues
-            for service_name, category in drift_issues:
-                findings.append(
-                    NetworkSecurityFinding(
-                        category="configuration_drift",
-                        severity="medium",
-                        service_name=service_name,
-                        description=f"Runtime configuration differs from compose file: {category}",
-                        details={"drift_category": category},
-                        remediation="Investigate configuration changes and update compose file",
-                    )
-                )
-
-        except Exception as e:
-            logger.error(f"Error detecting configuration drift: {e}")
-
-        return findings
-
     def get_security_report(self) -> Dict[str, Any]:
         """Get comprehensive network security report."""
         return {
@@ -588,29 +552,6 @@ class NetworkValidator:
                 if f.severity == "critical"
             ],
         }
-
-    def export_report(self, output_path: str):
-        """Export network security report to file."""
-        report = {
-            "timestamp": time.time(),
-            "summary": self.get_security_report(),
-            "findings": [
-                {
-                    "category": f.category,
-                    "severity": f.severity,
-                    "service_name": f.service_name,
-                    "description": f.description,
-                    "details": f.details,
-                    "remediation": f.remediation,
-                }
-                for f in self.findings
-            ],
-        }
-
-        with open(output_path, "w") as file:
-            json.dump(report, file, indent=2)
-
-        logger.info(f"Network security report exported to {output_path}")
 
 
 def validate_network_security(compose_file_path: str) -> NetworkValidator:

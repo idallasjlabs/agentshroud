@@ -15,11 +15,10 @@ import os
 import re
 import stat
 import tempfile
-import time
 from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import List, Optional
 
 logger = logging.getLogger(__name__)
 
@@ -429,62 +428,6 @@ class GitGuard:
 
                     except Exception as e:
                         logger.error(f"Failed to quarantine {file_path}: {e}")
-
-    def monitor_git_operations(self):
-        """Monitor for git clone and npm install operations."""
-        # This would typically be implemented as a file system watcher
-        # or integrated into the command execution pipeline
-        pass
-
-    def get_findings_summary(self) -> Dict[str, Any]:
-        """Get a summary of all findings."""
-        summary = {
-            "total_findings": len(self.findings),
-            "by_threat_level": {},
-            "by_category": {},
-            "critical_files": [],
-        }
-
-        for finding in self.findings:
-            # Count by threat level
-            level = finding.threat_level.value
-            summary["by_threat_level"][level] = summary["by_threat_level"].get(level, 0) + 1
-
-            # Count by category
-            summary["by_category"][finding.category] = (
-                summary["by_category"].get(finding.category, 0) + 1
-            )
-
-            # Collect critical files
-            if finding.threat_level == ThreatLevel.CRITICAL:
-                summary["critical_files"].append(finding.file_path)
-
-        return summary
-
-    def export_findings_report(self, output_path: str):
-        """Export findings to a detailed report."""
-        report = {
-            "scan_timestamp": time.time(),
-            "mode": self.mode,
-            "summary": self.get_findings_summary(),
-            "findings": [
-                {
-                    "file_path": f.file_path,
-                    "threat_level": f.threat_level.value,
-                    "category": f.category,
-                    "description": f.description,
-                    "matched_pattern": f.matched_pattern,
-                    "line_number": f.line_number,
-                    "context": f.context,
-                }
-                for f in self.findings
-            ],
-        }
-
-        with open(output_path, "w") as f:
-            json.dump(report, f, indent=2)
-
-        logger.info(f"Git guard report exported to {output_path}")
 
 
 def scan_repository(repo_path: str, mode: str = "enforce") -> GitGuard:

@@ -327,18 +327,6 @@ class MemoryIntegrityMonitor:
         cutoff_time = time.time() - (hours * 3600)
         return [alert for alert in self.modification_alerts if alert["timestamp"] > cutoff_time]
 
-    def clear_old_alerts(self, days: int = 7):
-        """Clear alerts older than N days."""
-        cutoff_time = time.time() - (days * 24 * 3600)
-        original_count = len(self.modification_alerts)
-        self.modification_alerts = [
-            alert for alert in self.modification_alerts if alert["timestamp"] > cutoff_time
-        ]
-        cleared_count = original_count - len(self.modification_alerts)
-        if cleared_count > 0:
-            logger.info(f"Cleared {cleared_count} old integrity alerts")
-            self._save_integrity_database()
-
     def get_integrity_status(self) -> Dict[str, Any]:
         """Get current integrity monitoring status."""
         recent_alerts = self.get_recent_alerts()

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 SecureBrowser - Enterprise-grade secure browser automation
-Part of SecureClaw "One Claw Tied Behind Your Back" framework
+Part of AgentShroud "One Claw Tied Behind Your Back" framework
 
 Security Features:
 - URL allowlisting
@@ -100,7 +100,7 @@ class SecureBrowser:
                 browser={
                     "headless": True,
                     "timeout": 30000,
-                    "user_agent": "SecureClaw/1.0 (Enterprise Browser Automation)",
+                    "user_agent": "AgentShroud/1.0 (Enterprise Browser Automation)",
                     "block_third_party_cookies": True
                 }
             )
@@ -375,28 +375,6 @@ class SecureBrowser:
             value = await element.get_attribute(attribute)
 
         return {"success": True, "selector": selector, "value": value}
-
-    async def detect_captcha(self) -> bool:
-        """Detect if CAPTCHA is present on page"""
-        if self.page is None:
-            return False
-
-        # Common CAPTCHA indicators
-        captcha_selectors = [
-            "iframe[src*='recaptcha']",
-            "iframe[src*='hcaptcha']",
-            "div[class*='captcha']",
-            "#captcha",
-            ".g-recaptcha"
-        ]
-
-        for selector in captcha_selectors:
-            element = await self.page.query_selector(selector)
-            if element:
-                self._log_security_event("CAPTCHA_DETECTED", f"Selector: {selector}")
-                return True
-
-        return False
 
     async def close(self):
         """Clean up browser resources"""
