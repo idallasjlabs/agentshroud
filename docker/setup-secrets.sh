@@ -155,28 +155,50 @@ op_ref_for() {
     esac
 }
 
+# Run op with a hard time limit and no stdin. Under launchd/tmux the
+# 1Password app-integration approval has nobody to answer it and op blocks
+# indefinitely (2026-11-16 prod: 18 min per secret in the Sunday preflight).
+# A timeout fails like any other op error, i.e. "1Password unavailable".
+op_bounded() {
+    local secs="${AGENTSHROUD_OP_TIMEOUT:-10}"
+    if command -v timeout &>/dev/null; then
+        timeout "$secs" op "$@" </dev/null
+    elif command -v gtimeout &>/dev/null; then
+        gtimeout "$secs" op "$@" </dev/null
+    else
+        perl -e 'alarm shift; exec @ARGV or exit 127' "$secs" op "$@" </dev/null
+    fi
+}
+
 op_get() {
     local name="$1"
     command -v op &>/dev/null || return 0
-    command -v op &>/dev/null && op account list &>/dev/null 2>&1 || return 0
+    # op_get runs in a $(...) subshell per secret, so "op is down" is kept in
+    # OP_STATE_DIR (set by dispatch) to pay the timeout once per run, not once
+    # per secret (2026-11-16 prod: extract hung 07:26-09:08).
+    [[ -n "${OP_STATE_DIR:-}" && -e "$OP_STATE_DIR/unavailable" ]] && return 0
+    if ! op_bounded account list &>/dev/null; then
+        [[ -n "${OP_STATE_DIR:-}" ]] && : > "$OP_STATE_DIR/unavailable"
+        return 0
+    fi
 
     local val ref
     # Dedicated-item refs first — these are exact, so prefer them over the
     # fuzzy field-name guessing below.
     if ref="$(op_ref_for "$name")"; then
-        val=$(op read "$ref" 2>/dev/null || true)
+        val=$(op_bounded read "$ref" 2>/dev/null || true)
         [[ -n "$val" ]] && { echo "$val"; return; }
     fi
 
     local item="${AGENTSHROUD_OP_ITEM:-AgentShroud - $(hostname -s) [$(id -un)]}"
     # Try exact canonical name.
-    val=$(op item get "$item" --vault "$OP_VAULT" --fields "$name" 2>/dev/null || true)
+    val=$(op_bounded item get "$item" --vault "$OP_VAULT" --fields "$name" 2>/dev/null || true)
     [[ -n "$val" ]] && { echo "$val"; return; }
     # Try with + instead of _ (e.g. openai+api_key).
-    val=$(op item get "$item" --vault "$OP_VAULT" --fields "${name//_/+}" 2>/dev/null || true)
+    val=$(op_bounded item get "$item" --vault "$OP_VAULT" --fields "${name//_/+}" 2>/dev/null || true)
     [[ -n "$val" ]] && { echo "$val"; return; }
     # Try with space instead of _ (e.g. "gateway password", "ssh key").
-    val=$(op item get "$item" --vault "$OP_VAULT" --fields "${name//_/ }" 2>/dev/null || true)
+    val=$(op_bounded item get "$item" --vault "$OP_VAULT" --fields "${name//_/ }" 2>/dev/null || true)
     [[ -n "$val" ]] && echo "$val" || true
 }
 
@@ -883,6 +905,8 @@ EOF
 # ── Dispatch ───────────────────────────────────────────────────────────────────
 # Guard allows tests to `source` this script to access helpers without triggering dispatch.
 if [[ "${BASH_SOURCE[0]}" == "$0" ]]; then
+    OP_STATE_DIR="$(mktemp -d)"
+    trap 'rm -rf "$OP_STATE_DIR"' EXIT
     SUBCOMMAND="${1:-}"
     shift || true  # consume subcommand; remaining args parsed below
 
