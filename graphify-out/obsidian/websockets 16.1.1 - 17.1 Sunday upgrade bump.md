@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/requirements.txt"
 type: "rationale"
-community: "Community 139"
+community: "Community 1196"
 location: "L37-L46"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Community_139
+  - community/Community_1196
 ---
 
 # websockets 16.1.1 -> 17.1 Sunday upgrade bump
@@ -15,4 +15,4 @@ tags:
 - [[gatewayrequirements.txt]] - `rationale_for` [EXTRACTED]
 - [[sunday-upgrade]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Community_139
+#graphify/rationale #graphify/INFERRED #community/Community_1196

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_edge.py"
 type: "code"
-community: "Community 80"
+community: "Community 75"
 location: "L606"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_80
+  - community/Community_75
 ---
 
 # TestEdgeEnroll
@@ -30,4 +30,4 @@ tags:
 - [[VendorStats]] - `uses` [INFERRED]
 - [[test_soc_edge.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_80
+#graphify/code #graphify/INFERRED #community/Community_75

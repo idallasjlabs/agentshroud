@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_untrusted_envelope.py"
 type: "code"
-community: "Community 80"
+community: "Community 24"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_80
+  - community/Community_24
 ---
 
 # test_untrusted_envelope.py
@@ -21,4 +21,4 @@ tags:
 - [[unwrap_untrusted()]] - `imports` [EXTRACTED]
 - [[wrap_untrusted()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_80
+#graphify/code #graphify/EXTRACTED #community/Community_24

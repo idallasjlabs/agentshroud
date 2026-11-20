@@ -45,7 +45,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 41]]
+- 1 edge to [[_COMMUNITY_Community 1968]]
 
 ## Top bridge nodes
 - [[test_edge_descriptors.py]] - degree 7, connects to 1 community

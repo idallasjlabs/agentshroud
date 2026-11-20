@@ -1,11 +1,11 @@
 ---
 type: community
-members: 67
+members: 65
 ---
 
 # Community 420
 
-**Members:** 67 nodes
+**Members:** 65 nodes
 
 ## Members
 - [[.test_advisory_without_a_fixed_in_is_not_claimed_remediable()]] - code - gateway/tests/test_auto_remediate_cves.py
@@ -52,8 +52,6 @@ members: 67
 - [[The rollback path a failed deploy must restore the pin verbatim,         downst]] - rationale - gateway/tests/test_auto_remediate_cves.py
 - [[What a version bump would and would not remediate.      Every ``under_review`` a]] - rationale - scripts/auto_remediate_cves.py
 - [[Work out the minimum version bump that remediates the most advisories.      Only]] - rationale - scripts/auto_remediate_cves.py
-- [[_AGENT_CVE_REGISTRIES]] - code - gateway/security/agent_cve_registry.py
-- [[_HERMES_CVE_REGISTRY]] - code - gateway/security/agent_cve_registry.py
 - [[_OPENCLAW_CVE_REGISTRY]] - code - gateway/security/agent_cve_registry.py
 - [[_entry()]] - code - gateway/tests/test_auto_remediate_cves.py
 - [[_print_plan()]] - code - scripts/auto_remediate_cves.py
@@ -87,10 +85,10 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_Community 118]]
 - 2 edges to [[_COMMUNITY_Community 126]]
 - 2 edges to [[_COMMUNITY_Community 104]]
-- 1 edge to [[_COMMUNITY_Community 139]]
+- 1 edge to [[_COMMUNITY_Community 1196]]
 - 1 edge to [[_COMMUNITY_Community 227]]
 
 ## Top bridge nodes
 - [[auto_remediate_cves.py]] - degree 15, connects to 4 communities
 - [[apply_remediation()]] - degree 9, connects to 2 communities
-- [[_AGENT_CVE_REGISTRIES]] - degree 3, connects to 1 community
+- [[_OPENCLAW_CVE_REGISTRY]] - degree 4, connects to 1 community

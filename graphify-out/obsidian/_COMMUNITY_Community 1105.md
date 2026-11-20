@@ -30,7 +30,7 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_Community 119]]
 - 2 edges to [[_COMMUNITY_Community 98]]
 - 1 edge to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 431]]
+- 1 edge to [[_COMMUNITY_Community 96]]
 
 ## Top bridge nodes
 - [[InfoCategory]] - degree 9, connects to 5 communities

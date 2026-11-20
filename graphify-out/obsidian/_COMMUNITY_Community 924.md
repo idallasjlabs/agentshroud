@@ -49,8 +49,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 48 edges to [[_COMMUNITY_Community 133]]
-- 18 edges to [[_COMMUNITY_Community 281]]
+- 46 edges to [[_COMMUNITY_Community 133]]
+- 20 edges to [[_COMMUNITY_Community 281]]
 - 4 edges to [[_COMMUNITY_Community 83]]
 - 1 edge to [[_COMMUNITY_Community 6]]
 - 1 edge to [[_COMMUNITY_Community 49]]
@@ -58,7 +58,7 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[SkillGuard]] - degree 34, connects to 5 communities
+- [[skill_guard.py]] - degree 9, connects to 3 communities
 - [[ScanResult_2]] - degree 32, connects to 2 communities
 - [[Recommendation]] - degree 27, connects to 2 communities
-- [[skill_guard.py]] - degree 9, connects to 2 communities
 - [[scan.py]] - degree 8, connects to 2 communities

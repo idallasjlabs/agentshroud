@@ -1,11 +1,11 @@
 ---
 type: community
-members: 74
+members: 70
 ---
 
 # Community 431
 
-**Members:** 74 nodes
+**Members:** 70 nodes
 
 ## Members
 - [[.__init__()_140]] - code - gateway/security/xml_leak_filter.py
@@ -28,7 +28,6 @@ members: 74
 - [[.test_shell_injection_detected()]] - code - gateway/tests/test_xml_leak_filter.py
 - [[.test_sql_injection_detected()]] - code - gateway/tests/test_xml_leak_filter.py
 - [[.xml_filter()]] - code - gateway/tests/test_xml_leak_filter.py
-- [[A single match found by the outbound filter.]] - rationale - gateway/security/outbound_filter.py
 - [[AgentShroud Module Inventory (Blue Team)]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
 - [[AgentShroud Module Inventory (Red Team)]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
 - [[AgentShroud Skills Library]] - document - skills/README.md
@@ -49,10 +48,8 @@ members: 74
 - [[Detected context window attack attempt.]] - rationale - gateway/security/context_guard.py
 - [[Directory Structure_2]] - document - skills/README.md
 - [[Enterprise Security Feature Priorities (Steve Hay Assessment, Red Team copy)]] - document - skills/custom/agentshroud-redteam/references/steve-hay-assessment.md
-- [[FR4 Data Confidentiality]] - concept - docs/compliance/iec-62443-matrix.md
 - [[Filter outbound response content to remove sensitive information.          Args]] - rationale - gateway/security/xml_leak_filter.py
 - [[Filter to remove sensitive XML and path information from outbound responses.]] - rationale - gateway/security/xml_leak_filter.py
-- [[FilterMatch]] - code - gateway/security/outbound_filter.py
 - [[FilterResult_1]] - code - gateway/security/xml_leak_filter.py
 - [[Initialize the filter with predefined patterns.]] - rationale - gateway/security/xml_leak_filter.py
 - [[Module Coverage Heat Map Legend (EMAC—)]] - concept - skills/custom/agentshroud-blueteam/SKILL.md
@@ -79,7 +76,6 @@ members: 74
 - [[XMLLeakFilter]] - code - gateway/security/xml_leak_filter.py
 - [[context_guard.py]] - code - gateway/security/context_guard.py
 - [[cve-mitigation-matrix]] - document - docs/security/cve-mitigation-matrix.md
-- [[outbound_filter.py]] - code - gateway/security/outbound_filter.py
 - [[test_xml_leak_filter.py]] - code - gateway/tests/test_xml_leak_filter.py
 - [[xml_leak_filter.py]] - code - gateway/security/xml_leak_filter.py
 
@@ -92,43 +88,39 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 15 edges to [[_COMMUNITY_Community 0]]
-- 5 edges to [[_COMMUNITY_Community 151]]
-- 4 edges to [[_COMMUNITY_Community 6]]
 - 3 edges to [[_COMMUNITY_Community 3]]
-- 3 edges to [[_COMMUNITY_Community 1]]
+- 3 edges to [[_COMMUNITY_Community 151]]
+- 3 edges to [[_COMMUNITY_Community 31]]
 - 3 edges to [[_COMMUNITY_Community 344]]
-- 3 edges to [[_COMMUNITY_Community 162]]
-- 3 edges to [[_COMMUNITY_Community 24]]
+- 3 edges to [[_COMMUNITY_Community 6]]
 - 3 edges to [[_COMMUNITY_Community 154]]
-- 2 edges to [[_COMMUNITY_Community 84]]
 - 2 edges to [[_COMMUNITY_Community 14]]
-- 2 edges to [[_COMMUNITY_Community 9]]
 - 2 edges to [[_COMMUNITY_Community 1281]]
 - 2 edges to [[_COMMUNITY_Community 28]]
 - 1 edge to [[_COMMUNITY_Community 30]]
 - 1 edge to [[_COMMUNITY_Community 254]]
+- 1 edge to [[_COMMUNITY_Community 1052]]
 - 1 edge to [[_COMMUNITY_Community 216]]
+- 1 edge to [[_COMMUNITY_Community 9]]
 - 1 edge to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 96]]
-- 1 edge to [[_COMMUNITY_Community 31]]
+- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 84]]
+- 1 edge to [[_COMMUNITY_Community 1]]
 - 1 edge to [[_COMMUNITY_Community 122]]
-- 1 edge to [[_COMMUNITY_Community 684]]
-- 1 edge to [[_COMMUNITY_Community 63]]
-- 1 edge to [[_COMMUNITY_Community 1105]]
+- 1 edge to [[_COMMUNITY_Community 92]]
+- 1 edge to [[_COMMUNITY_Community 96]]
 - 1 edge to [[_COMMUNITY_Community 26]]
 - 1 edge to [[_COMMUNITY_Community 928]]
 - 1 edge to [[_COMMUNITY_Community 194]]
 - 1 edge to [[_COMMUNITY_Community 8]]
 - 1 edge to [[_COMMUNITY_Community 91]]
-- 1 edge to [[_COMMUNITY_Community 118]]
+- 1 edge to [[_COMMUNITY_Community 1924]]
 - 1 edge to [[_COMMUNITY_Community 215]]
 - 1 edge to [[_COMMUNITY_Community 692]]
-- 1 edge to [[_COMMUNITY_Community 393]]
-- 1 edge to [[_COMMUNITY_Community 466]]
 
 ## Top bridge nodes
-- [[SKILL_200]] - degree 27, connects to 17 communities
+- [[SKILL_200]] - degree 27, connects to 19 communities
 - [[cve-mitigation-matrix]] - degree 13, connects to 7 communities
-- [[FR4 Data Confidentiality]] - degree 8, connects to 6 communities
-- [[outbound_filter.py]] - degree 8, connects to 5 communities
 - [[XMLLeakFilter]] - degree 27, connects to 4 communities
+- [[.analyze_message()]] - degree 11, connects to 4 communities
+- [[context_guard.py]] - degree 9, connects to 4 communities

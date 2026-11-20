@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "Community 84"
+community: "Community 1052"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_84
+  - community/Community_1052
 ---
 
 # canary_tripwire.py
@@ -18,4 +18,4 @@ tags:
 - [[SKILL_200]] - `references` [EXTRACTED]
 - [[TripwireResponse]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_84
+#graphify/code #graphify/EXTRACTED #community/Community_1052

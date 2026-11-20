@@ -1,11 +1,11 @@
 ---
 type: community
-members: 127
+members: 84
 ---
 
 # Community 41
 
-**Members:** 127 nodes
+**Members:** 84 nodes
 
 ## Members
 - [[.__call__()]] - code - gateway/inbound_edge/edge_app.py
@@ -14,8 +14,6 @@ members: 127
 - [[.__init__()_14]] - code - gateway/inbound_edge/edge_app.py
 - [[.__init__()_15]] - code - gateway/inbound_edge/edge_app.py
 - [[.__init__()_16]] - code - gateway/inbound_edge/edge_app.py
-- [[.__init__()_167]] - code - gateway/tests/test_edge_e2e_sdk.py
-- [[.__init__()_168]] - code - gateway/tests/test_edge_e2e_sdk.py
 - [[.__init__()_172]] - code - gateway/tests/test_edge_service_routes.py
 - [[._oauth_code()]] - code - gateway/inbound_edge/edge_app.py
 - [[._send_plain()]] - code - gateway/inbound_edge/edge_app.py
@@ -28,35 +26,25 @@ members: 127
 - [[.exchange_identity_assertion()]] - code - gateway/inbound_edge/edge_app.py
 - [[.exchange_refresh_token()]] - code - gateway/inbound_edge/edge_app.py
 - [[.get_client()]] - code - gateway/inbound_edge/edge_app.py
-- [[.get_client_info()]] - code - gateway/tests/test_edge_e2e_sdk.py
-- [[.get_tokens()]] - code - gateway/tests/test_edge_e2e_sdk.py
 - [[.load_access_token()]] - code - gateway/inbound_edge/edge_app.py
 - [[.load_authorization_code()]] - code - gateway/inbound_edge/edge_app.py
 - [[.load_refresh_token()]] - code - gateway/inbound_edge/edge_app.py
 - [[.register_client()]] - code - gateway/inbound_edge/edge_app.py
 - [[.resource()]] - code - gateway/inbound_edge/edge_app.py
 - [[.revoke_token()]] - code - gateway/inbound_edge/edge_app.py
-- [[.run()_10]] - code - gateway/tests/test_edge_e2e_sdk.py
-- [[.set_client_info()]] - code - gateway/tests/test_edge_e2e_sdk.py
-- [[.set_tokens()]] - code - gateway/tests/test_edge_e2e_sdk.py
 - [[A correctly signed manifest in a temp dir, wired in place of the committed one.]] - rationale - gateway/tests/test_edge_service_routes.py
 - [[ASGI guard in front of the SDK route allowlist, size cap, no JSON-RPC batches.]] - rationale - gateway/inbound_edge/edge_app.py
 - [[AccessToken]] - code - gateway/inbound_edge/edge_app.py
-- [[Any_7]] - code - gateway/inbound_edge/descriptors.py
 - [[Any_8]] - code - gateway/inbound_edge/edge_app.py
 - [[AsyncBaseTransport]] - code - gateway/inbound_edge/edge_app.py
 - [[AuthorizationCode]] - code - gateway/inbound_edge/edge_app.py
 - [[AuthorizationParams]] - code - gateway/inbound_edge/edge_app.py
-- [[Canonical JSON sorted keys, no insignificant whitespace, UTF-8.]] - rationale - gateway/inbound_edge/descriptors.py
 - [[Cheap local pre-screen; the gateway re-verifies on every tools call.]] - rationale - gateway/inbound_edge/edge_app.py
-- [[DescriptorIntegrityError]] - code - gateway/inbound_edge/descriptors.py
-- [[Ed25519PublicKey]] - code - gateway/inbound_edge/descriptors.py
 - [[EdgeGuard]] - code - gateway/inbound_edge/edge_app.py
 - [[EdgeSettings]] - code - gateway/inbound_edge/edge_app.py
-- [[Facade_1]] - code - gateway/tests/test_edge_e2e_sdk.py
 - [[GatewayBackedProvider]] - code - gateway/inbound_edge/edge_app.py
 - [[GatewayClient_1]] - code - gateway/inbound_edge/edge_app.py
-- [[MemoryTokenStorage]] - code - gateway/tests/test_edge_e2e_sdk.py
+- [[GatewayError]] - code - gateway/inbound_edge/edge_app.py
 - [[OAuthClientInformationFull]] - code - gateway/inbound_edge/edge_app.py
 - [[OAuthToken]] - code - gateway/inbound_edge/edge_app.py
 - [[Raises]] - code - gateway/tests/test_edge_service_routes.py
@@ -64,77 +52,46 @@ members: 127
 - [[RefreshToken]] - code - gateway/inbound_edge/edge_app.py
 - [[Route]] - code - gateway/inbound_edge/edge_app.py
 - [[Server]] - code - gateway/inbound_edge/edge_app.py
-- [[Startup check against the manifest, signature and key committed under config.]] - rationale - gateway/inbound_edge/descriptors.py
 - [[The bearer token the SDK's auth middleware accepted for this request.      State]] - rationale - gateway/inbound_edge/edge_app.py
 - [[The edge's only client the gateway's edgev1rpc door.]] - rationale - gateway/inbound_edge/edge_app.py
-- [[The route allowlist is enforced by EdgeGuard itself, not inherited from the SDK]] - rationale - gateway/tests/test_edge_fuzz.py
-- [[The served descriptors do not match the signed manifest. Refuse to start.]] - rationale - gateway/inbound_edge/descriptors.py
-- [[Verify the manifest signature, then that ``descriptors`` match it exactly.]] - rationale - gateway/inbound_edge/descriptors.py
 - [[_app_state()_1]] - code - gateway/tests/test_edge_service_routes.py
 - [[_build_server()]] - code - gateway/inbound_edge/edge_app.py
-- [[_client()]] - code - gateway/tests/test_edge_e2e_sdk.py
 - [[_consent_routes()]] - code - gateway/inbound_edge/edge_app.py
 - [[_err()]] - code - gateway/tests/test_edge_service_routes.py
-- [[_keys()]] - code - gateway/tests/test_edge_fuzz.py
-- [[_load_public_key()]] - code - gateway/inbound_edge/descriptors.py
 - [[_post()_1]] - code - gateway/tests/test_edge_service_routes.py
 - [[_provider()]] - code - gateway/tests/test_edge_service_routes.py
 - [[_request_token()]] - code - gateway/inbound_edge/edge_app.py
 - [[_rpc_app()]] - code - gateway/tests/test_edge_service_routes.py
 - [[``OAuthAuthorizationServerProvider`` whose every decision is made by the gateway]] - rationale - gateway/inbound_edge/edge_app.py
-- [[build_manifest()]] - code - gateway/inbound_edge/descriptors.py
-- [[canonical_bytes()]] - code - gateway/inbound_edge/descriptors.py
 - [[create_app()]] - code - gateway/inbound_edge/edge_app.py
-- [[descriptor_hash()]] - code - gateway/inbound_edge/descriptors.py
-- [[descriptors.py]] - code - gateway/inbound_edge/descriptors.py
 - [[edge_app.py]] - code - gateway/inbound_edge/edge_app.py
-- [[main()_12]] - code - gateway/inbound_edge/descriptors.py
 - [[main()_13]] - code - gateway/inbound_edge/edge_app.py
-- [[no_exec()]] - code - gateway/tests/test_edge_fuzz.py
 - [[settings_from_env()]] - code - gateway/inbound_edge/edge_app.py
 - [[signed_descriptors()]] - code - gateway/tests/test_edge_service_routes.py
-- [[stack()]] - code - gateway/tests/test_edge_e2e_sdk.py
 - [[start_edge_forwarder()]] - code - gateway/inbound_edge/routes.py
 - [[test_builds_with_everything_enabled()]] - code - gateway/tests/test_edge_service_routes.py
 - [[test_cli_verify_ok_and_bad_stdin()]] - code - gateway/tests/test_edge_service_routes.py
 - [[test_consent_route_error_paths()]] - code - gateway/tests/test_edge_service_routes.py
-- [[test_control_characters_rejected_in_single_line_fields()]] - code - gateway/tests/test_edge_fuzz.py
-- [[test_control_characters_rejected_in_task()]] - code - gateway/tests/test_edge_fuzz.py
 - [[test_disabled_by_default()]] - code - gateway/tests/test_edge_service_routes.py
-- [[test_edge_e2e_sdk.py]] - code - gateway/tests/test_edge_e2e_sdk.py
-- [[test_edge_fuzz.py]] - code - gateway/tests/test_edge_fuzz.py
-- [[test_edge_guard()]] - code - gateway/tests/test_edge_e2e_sdk.py
-- [[test_edge_guard_allowlist_holds_even_if_inner_app_serves_everything()]] - code - gateway/tests/test_edge_fuzz.py
 - [[test_edge_guard_never_500s_or_passes_batches()]] - code - gateway/tests/test_edge_fuzz.py
 - [[test_edge_service_routes.py]] - code - gateway/tests/test_edge_service_routes.py
 - [[test_enabled_without_secrets_refuses()]] - code - gateway/tests/test_edge_service_routes.py
-- [[test_enums_and_types()]] - code - gateway/tests/test_edge_fuzz.py
 - [[test_forwarder_answers_502_when_edge_down()]] - code - gateway/tests/test_edge_service_routes.py
 - [[test_forwarder_relays_bytes_both_ways()]] - code - gateway/tests/test_edge_service_routes.py
-- [[test_full_oauth_and_tool_calls_with_sdk_client()]] - code - gateway/tests/test_edge_e2e_sdk.py
 - [[test_gateway_client_non_json_is_error()]] - code - gateway/tests/test_edge_service_routes.py
-- [[test_gateway_rpc_parser_rejects_junk_without_500()]] - code - gateway/tests/test_edge_fuzz.py
-- [[test_gateway_rpc_requires_service_token()]] - code - gateway/tests/test_edge_e2e_sdk.py
 - [[test_http_public_url_refused()]] - code - gateway/tests/test_edge_service_routes.py
 - [[test_issuer_mismatch_refuses_keys()]] - code - gateway/tests/test_edge_service_routes.py
-- [[test_lab_search_length_cap()]] - code - gateway/tests/test_edge_fuzz.py
 - [[test_loaders_return_none_and_revoke_passes_token()]] - code - gateway/tests/test_edge_service_routes.py
-- [[test_max_results_enum()]] - code - gateway/tests/test_edge_fuzz.py
 - [[test_no_audit_store_refuses()]] - code - gateway/tests/test_edge_service_routes.py
 - [[test_register_and_authorize_errors_map_to_oauth_codes()]] - code - gateway/tests/test_edge_service_routes.py
-- [[test_registration_refused_without_enrollment_window()]] - code - gateway/tests/test_edge_e2e_sdk.py
 - [[test_rpc_error_mapping()]] - code - gateway/tests/test_edge_service_routes.py
 - [[test_rpc_params_must_be_object()]] - code - gateway/tests/test_edge_service_routes.py
 - [[test_rpc_too_large_and_disabled()]] - code - gateway/tests/test_edge_service_routes.py
 - [[test_settings_from_env()]] - code - gateway/tests/test_edge_service_routes.py
 - [[test_telegram_send_posts_card()]] - code - gateway/tests/test_edge_service_routes.py
-- [[test_ticket_format()]] - code - gateway/tests/test_edge_fuzz.py
 - [[test_token_errors_and_foreign_resource()]] - code - gateway/tests/test_edge_service_routes.py
-- [[test_unknown_keys_always_rejected()]] - code - gateway/tests/test_edge_fuzz.py
 - [[test_unreadable_public_key_refuses()]] - code - gateway/tests/test_edge_service_routes.py
 - [[test_unsigned_descriptors_refuse()]] - code - gateway/tests/test_edge_service_routes.py
-- [[verify_descriptors()]] - code - gateway/inbound_edge/descriptors.py
-- [[verify_shipped_descriptors()]] - code - gateway/inbound_edge/descriptors.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -144,25 +101,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 42 edges to [[_COMMUNITY_Community 2048]]
-- 16 edges to [[_COMMUNITY_Community 84]]
-- 12 edges to [[_COMMUNITY_Community 30]]
-- 12 edges to [[_COMMUNITY_Community 80]]
-- 11 edges to [[_COMMUNITY_Community 7]]
+- 17 edges to [[_COMMUNITY_Community 2048]]
 - 9 edges to [[_COMMUNITY_Community 32]]
-- 7 edges to [[_COMMUNITY_Community 75]]
-- 6 edges to [[_COMMUNITY_Community 135]]
-- 4 edges to [[_COMMUNITY_Community 254]]
-- 4 edges to [[_COMMUNITY_Community 70]]
+- 4 edges to [[_COMMUNITY_Community 135]]
+- 4 edges to [[_COMMUNITY_Community 80]]
+- 3 edges to [[_COMMUNITY_Community 1968]]
+- 3 edges to [[_COMMUNITY_Community 7]]
+- 3 edges to [[_COMMUNITY_Community 75]]
 - 2 edges to [[_COMMUNITY_Community 151]]
-- 2 edges to [[_COMMUNITY_Community 50]]
-- 1 edge to [[_COMMUNITY_Community 505]]
-- 1 edge to [[_COMMUNITY_Community 68]]
-- 1 edge to [[_COMMUNITY_Community 1023]]
+- 1 edge to [[_COMMUNITY_Community 488]]
 
 ## Top bridge nodes
-- [[test_edge_e2e_sdk.py]] - degree 32, connects to 11 communities
-- [[stack()]] - degree 29, connects to 11 communities
-- [[MemoryTokenStorage]] - degree 26, connects to 9 communities
-- [[Facade_1]] - degree 23, connects to 9 communities
 - [[test_edge_service_routes.py]] - degree 43, connects to 6 communities
+- [[edge_app.py]] - degree 14, connects to 3 communities
+- [[Raises]] - degree 12, connects to 3 communities
+- [[EdgeSettings]] - degree 15, connects to 2 communities
+- [[EdgeGuard]] - degree 12, connects to 2 communities

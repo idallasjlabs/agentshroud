@@ -1,12 +1,12 @@
 ---
 source_file: "reports/upgrade-2026-10-04.md"
 type: "document"
-community: "Community 1968"
+community: "Community 118"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1968
+  - community/Community_118
 ---
 
 # Sunday Upgrade 2026-10-04 — DEV run (agentshroud-bot, 03:00 ET)
@@ -22,4 +22,4 @@ tags:
 - [[8. Time]] - `contains` [EXTRACTED]
 - [[upgrade-2026-10-04]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1968
+#graphify/document #graphify/EXTRACTED #community/Community_118

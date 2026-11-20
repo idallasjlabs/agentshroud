@@ -1,11 +1,11 @@
 ---
 type: community
-members: 22
+members: 20
 ---
 
 # Community 477
 
-**Members:** 22 nodes
+**Members:** 20 nodes
 
 ## Members
 - [[.__init__()_129]] - code - gateway/security/session_security.py
@@ -14,7 +14,6 @@ members: 22
 - [[.create_session()]] - code - gateway/security/session_security.py
 - [[.destroy_session()]] - code - gateway/security/session_security.py
 - [[.generate_instruction_nonce()]] - code - gateway/security/session_security.py
-- [[.manager()_2]] - code - gateway/tests/test_session_security.py
 - [[.register_event_source()]] - code - gateway/security/session_security.py
 - [[.rotate_session()]] - code - gateway/security/session_security.py
 - [[.test_cleanup_expired()]] - code - gateway/tests/test_session_security.py
@@ -29,7 +28,6 @@ members: 22
 - [[SessionManager]] - code - gateway/security/session_security.py
 - [[TestRateLimiting_2]] - code - gateway/tests/test_session_security.py
 - [[Wang et al. 2026 — Event injection attacks (arXiv2602.08412)]] - paper - gateway/security/session_security.py
-- [[manager()_3]] - code - gateway/tests/test_session_security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,14 +37,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 21 edges to [[_COMMUNITY_Community 76]]
+- 19 edges to [[_COMMUNITY_Community 76]]
 - 10 edges to [[_COMMUNITY_Community 0]]
-- 3 edges to [[_COMMUNITY_Community 1]]
+- 3 edges to [[_COMMUNITY_Community 31]]
 - 2 edges to [[_COMMUNITY_Community 152]]
+- 2 edges to [[_COMMUNITY_Community 2404]]
 - 2 edges to [[_COMMUNITY_Community 1790]]
 
 ## Top bridge nodes
-- [[SessionManager]] - degree 40, connects to 5 communities
+- [[SessionManager]] - degree 40, connects to 6 communities
 - [[.create_session()]] - degree 5, connects to 2 communities
 - [[TestRateLimiting_2]] - degree 10, connects to 1 community
 - [[.validate_session()]] - degree 6, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_e2e_sdk.py"
 type: "code"
-community: "Community 41"
+community: "Community 32"
 location: "L248"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_41
+  - community/Community_32
 ---
 
 # test_registration_refused_without_enrollment_window()
@@ -16,4 +16,4 @@ tags:
 - [[stack()]] - `calls` [EXTRACTED]
 - [[test_edge_e2e_sdk.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_41
+#graphify/code #graphify/EXTRACTED #community/Community_32

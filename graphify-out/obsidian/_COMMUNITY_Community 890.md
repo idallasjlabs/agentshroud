@@ -1,28 +1,22 @@
 ---
 type: community
-members: 123
+members: 113
 ---
 
 # Community 890
 
-**Members:** 123 nodes
+**Members:** 113 nodes
 
 ## Members
 - [[.__init__()_141]] - code - gateway/soc/auth.py
 - [[.__init__()_142]] - code - gateway/soc/contributors.py
 - [[.__init__()_206]] - code - gateway/tests/test_soc_contributors.py
-- [[._get_engine()]] - code - gateway/soc/services.py
-- [[._logs_via_socket()]] - code - gateway/soc/services.py
 - [[.check_permission()_2]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.get_logs()_1]] - code - gateway/soc/services.py
 - [[.get_user_role()_3]] - code - gateway/tests/test_soc_contributors.py
 - [[.is_group_admin()_1]] - code - gateway/soc/auth.py
 - [[.is_owner()_2]] - code - gateway/soc/auth.py
 - [[.mgr_with_engine()]] - code - gateway/tests/test_soc_services.py
 - [[.require()]] - code - gateway/soc/auth.py
-- [[.restart_service()_1]] - code - gateway/soc/services.py
-- [[.start_service()]] - code - gateway/soc/services.py
-- [[.stop_service()_1]] - code - gateway/soc/services.py
 - [[.test_build_record_defaults_to_normal_when_no_lockdown_state()]] - code - gateway/tests/test_soc_contributors.py
 - [[.test_build_record_does_not_crash_if_lockdown_missing()]] - code - gateway/tests/test_soc_contributors.py
 - [[.test_build_record_prefers_app_wide_progressive_lockdown()]] - code - gateway/tests/test_soc_contributors.py
@@ -62,7 +56,6 @@ members: 123
 - [[.test_resolved_from_runtime_module()]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.test_unparseable_started_at_yields_no_uptime()]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.test_zero_started_at_skips_uptime()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.update_service()]] - code - gateway/soc/services.py
 - [[Action_2]] - code - gateway/soc/auth.py
 - [[AddCollaboratorRequest]] - code - gateway/soc/router.py
 - [[AddGroupMemberRequest]] - code - gateway/soc/router.py
@@ -89,15 +82,12 @@ members: 123
 - [[LoginRequest]] - code - gateway/soc/router.py
 - [[Minimal RBAC stand-in with controllable check_permission results.]] - rationale - gateway/tests/test_soc_realtime_coverage.py
 - [[Public FastAPI dependency injected by SCL route handlers.]] - rationale - gateway/soc/auth.py
-- [[Pull the latest image then restart the container.]] - rationale - gateway/soc/services.py
 - [[RBACManager_2]] - code - gateway/soc/auth.py
 - [[Raise 403 if the caller lacks the required permission.]] - rationale - gateway/soc/auth.py
-- [[Read container logs via Docker Unix socket — fallback when engine unavailable.]] - rationale - gateway/soc/services.py
 - [[RenameGroupRequest]] - code - gateway/soc/router.py
 - [[Request_7]] - code - gateway/soc/router.py
 - [[Resolved identity of the SCL caller, including role and user_id.]] - rationale - gateway/soc/auth.py
 - [[Resource_2]] - code - gateway/soc/auth.py
-- [[Return the container engine from app_state if not injected.]] - rationale - gateway/soc/services.py
 - [[Role_2]] - code - gateway/soc/auth.py
 - [[SCLCaller]] - code - gateway/soc/auth.py
 - [[SCLConfirmationRequired]] - code - gateway/soc/models.py
@@ -141,11 +131,11 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 104 edges to [[_COMMUNITY_Community 10]]
-- 43 edges to [[_COMMUNITY_Community 38]]
+- 45 edges to [[_COMMUNITY_Community 38]]
 - 27 edges to [[_COMMUNITY_Community 6]]
-- 25 edges to [[_COMMUNITY_Community 20]]
-- 12 edges to [[_COMMUNITY_Community 68]]
-- 10 edges to [[_COMMUNITY_Community 75]]
+- 26 edges to [[_COMMUNITY_Community 20]]
+- 11 edges to [[_COMMUNITY_Community 68]]
+- 11 edges to [[_COMMUNITY_Community 75]]
 - 9 edges to [[_COMMUNITY_Community 254]]
 - 7 edges to [[_COMMUNITY_Community 194]]
 - 6 edges to [[_COMMUNITY_Community 7]]
@@ -153,7 +143,7 @@ SORT file.name ASC
 - 4 edges to [[_COMMUNITY_Community 2154]]
 - 4 edges to [[_COMMUNITY_Community 51]]
 - 3 edges to [[_COMMUNITY_Community 57]]
-- 3 edges to [[_COMMUNITY_Community 918]]
+- 3 edges to [[_COMMUNITY_Community 40]]
 - 2 edges to [[_COMMUNITY_Community 95]]
 - 2 edges to [[_COMMUNITY_Community 181]]
 - 2 edges to [[_COMMUNITY_Community 151]]
@@ -161,7 +151,7 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_Community 66]]
 - 2 edges to [[_COMMUNITY_Community 18]]
 - 2 edges to [[_COMMUNITY_Community 125]]
-- 2 edges to [[_COMMUNITY_Community 40]]
+- 2 edges to [[_COMMUNITY_Community 918]]
 - 2 edges to [[_COMMUNITY_Community 166]]
 - 2 edges to [[_COMMUNITY_Community 19]]
 - 1 edge to [[_COMMUNITY_Community 26]]
@@ -172,12 +162,10 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 25]]
 - 1 edge to [[_COMMUNITY_Community 614]]
 - 1 edge to [[_COMMUNITY_Community 49]]
-- 1 edge to [[_COMMUNITY_Community 92]]
 - 1 edge to [[_COMMUNITY_Community 223]]
-- 1 edge to [[_COMMUNITY_Community 80]]
 
 ## Top bridge nodes
-- [[BaseModel]] - degree 87, connects to 28 communities
+- [[BaseModel]] - degree 87, connects to 27 communities
 - [[ServiceManager]] - degree 111, connects to 5 communities
 - [[ContributorManager]] - degree 62, connects to 5 communities
 - [[AuditResult]] - degree 36, connects to 4 communities

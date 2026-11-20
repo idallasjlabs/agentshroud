@@ -52,19 +52,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_Community 240]]
+- 9 edges to [[_COMMUNITY_Community 240]]
 - 7 edges to [[_COMMUNITY_Community 49]]
 - 5 edges to [[_COMMUNITY_Community 225]]
-- 3 edges to [[_COMMUNITY_Community 890]]
+- 3 edges to [[_COMMUNITY_Community 203]]
 - 3 edges to [[_COMMUNITY_Community 372]]
 - 3 edges to [[_COMMUNITY_Community 250]]
+- 2 edges to [[_COMMUNITY_Community 890]]
 - 2 edges to [[_COMMUNITY_Community 743]]
 - 1 edge to [[_COMMUNITY_Community 68]]
 - 1 edge to [[_COMMUNITY_Community 707]]
+- 1 edge to [[_COMMUNITY_Community 38]]
 
 ## Top bridge nodes
 - [[get_engine()]] - degree 17, connects to 6 communities
+- [[TestGetEngine]] - degree 12, connects to 4 communities
+- [[TestDetectRuntime]] - degree 11, connects to 4 communities
 - [[ContainerEngine]] - degree 5, connects to 4 communities
 - [[detect_runtime()]] - degree 14, connects to 3 communities
-- [[TestGetEngine]] - degree 12, connects to 3 communities
-- [[TestDetectRuntime]] - degree 11, connects to 3 communities

@@ -1,11 +1,11 @@
 ---
 type: community
-members: 163
+members: 162
 ---
 
 # Community 10
 
-**Members:** 163 nodes
+**Members:** 162 nodes
 
 ## Members
 - [[Add or override a specific egress domain rule (CC-10).      Supports optional sc]] - rationale - gateway/soc/router.py
@@ -112,7 +112,6 @@ members: 163
 - [[export_audit()]] - code - gateway/soc/router.py
 - [[get_collaborator_activity()]] - code - gateway/soc/router.py
 - [[get_edge_status()]] - code - gateway/soc/router.py
-- [[get_egress_log()]] - code - gateway/soc/router.py
 - [[get_egress_rules()]] - code - gateway/soc/router.py
 - [[get_group()]] - code - gateway/soc/router.py
 - [[get_group_memory()]] - code - gateway/soc/router.py
@@ -182,7 +181,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 104 edges to [[_COMMUNITY_Community 890]]
 - 35 edges to [[_COMMUNITY_Community 978]]
-- 33 edges to [[_COMMUNITY_Community 51]]
+- 34 edges to [[_COMMUNITY_Community 51]]
 - 16 edges to [[_COMMUNITY_Community 6]]
 - 14 edges to [[_COMMUNITY_Community 18]]
 - 12 edges to [[_COMMUNITY_Community 49]]
@@ -191,32 +190,32 @@ SORT file.name ASC
 - 5 edges to [[_COMMUNITY_Community 2154]]
 - 4 edges to [[_COMMUNITY_Community 254]]
 - 4 edges to [[_COMMUNITY_Community 143]]
-- 4 edges to [[_COMMUNITY_Community 614]]
 - 3 edges to [[_COMMUNITY_Community 95]]
-- 3 edges to [[_COMMUNITY_Community 80]]
 - 3 edges to [[_COMMUNITY_Community 66]]
 - 3 edges to [[_COMMUNITY_Community 89]]
+- 3 edges to [[_COMMUNITY_Community 842]]
+- 3 edges to [[_COMMUNITY_Community 614]]
 - 2 edges to [[_COMMUNITY_Community 2048]]
+- 2 edges to [[_COMMUNITY_Community 80]]
 - 2 edges to [[_COMMUNITY_Community 7]]
 - 2 edges to [[_COMMUNITY_Community 1658]]
 - 2 edges to [[_COMMUNITY_Community 105]]
 - 2 edges to [[_COMMUNITY_Community 23]]
 - 2 edges to [[_COMMUNITY_Community 300]]
 - 2 edges to [[_COMMUNITY_Community 194]]
-- 2 edges to [[_COMMUNITY_Community 311]]
 - 2 edges to [[_COMMUNITY_Community 1305]]
 - 2 edges to [[_COMMUNITY_Community 2071]]
 - 1 edge to [[_COMMUNITY_Community 151]]
 - 1 edge to [[_COMMUNITY_Community 707]]
 - 1 edge to [[_COMMUNITY_Community 42]]
 - 1 edge to [[_COMMUNITY_Community 127]]
-- 1 edge to [[_COMMUNITY_Community 842]]
 - 1 edge to [[_COMMUNITY_Community 67]]
 - 1 edge to [[_COMMUNITY_Community 29]]
 - 1 edge to [[_COMMUNITY_Community 265]]
 - 1 edge to [[_COMMUNITY_Community 38]]
 - 1 edge to [[_COMMUNITY_Community 82]]
 - 1 edge to [[_COMMUNITY_Community 19]]
+- 1 edge to [[_COMMUNITY_Community 75]]
 - 1 edge to [[_COMMUNITY_Community 40]]
 - 1 edge to [[_COMMUNITY_Community 92]]
 - 1 edge to [[_COMMUNITY_Community 2072]]
@@ -224,7 +223,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 17]]
 
 ## Top bridge nodes
-- [[router.py_1]] - degree 189, connects to 26 communities
+- [[router.py_1]] - degree 189, connects to 25 communities
 - [[HTTPException]] - degree 106, connects to 19 communities
 - [[build_correlation_summary()]] - degree 13, connects to 5 communities
 - [[JSONResponse_1]] - degree 37, connects to 4 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_fuzz.py"
 type: "code"
-community: "Community 41"
+community: "Community 80"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_41
+  - community/Community_80
 ---
 
 # test_edge_fuzz.py
@@ -30,4 +30,4 @@ tags:
 - [[test_ticket_format()]] - `contains` [EXTRACTED]
 - [[test_unknown_keys_always_rejected()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_41
+#graphify/code #graphify/EXTRACTED #community/Community_80

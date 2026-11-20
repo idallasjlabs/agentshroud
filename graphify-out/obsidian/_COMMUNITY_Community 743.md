@@ -39,15 +39,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 240]]
+- 8 edges to [[_COMMUNITY_Community 240]]
 - 6 edges to [[_COMMUNITY_Community 225]]
 - 2 edges to [[_COMMUNITY_Community 49]]
 - 2 edges to [[_COMMUNITY_Community 918]]
+- 1 edge to [[_COMMUNITY_Community 203]]
 - 1 edge to [[_COMMUNITY_Community 372]]
 - 1 edge to [[_COMMUNITY_Community 250]]
 
 ## Top bridge nodes
-- [[TestSecurityFeatures]] - degree 16, connects to 4 communities
+- [[TestSecurityFeatures]] - degree 16, connects to 5 communities
 - [[warn_missing_features()]] - degree 9, connects to 4 communities
 - [[get_security_options()]] - degree 9, connects to 2 communities
 - [[get_features_for_runtime()]] - degree 8, connects to 2 communities

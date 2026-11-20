@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/descriptors.py"
 type: "rationale"
-community: "Community 41"
+community: "Community 1968"
 location: "L158"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_41
+  - community/Community_1968
 ---
 
 # Verify the manifest signature, then that ``descriptors`` match it exactly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[verify_descriptors()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_41
+#graphify/rationale #graphify/EXTRACTED #community/Community_1968

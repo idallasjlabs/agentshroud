@@ -302,9 +302,9 @@ SORT file.name ASC
 ## Connections to other communities
 - 20 edges to [[_COMMUNITY_Community 75]]
 - 16 edges to [[_COMMUNITY_Community 18]]
-- 13 edges to [[_COMMUNITY_Community 436]]
 - 12 edges to [[_COMMUNITY_Community 63]]
 - 12 edges to [[_COMMUNITY_Community 61]]
+- 12 edges to [[_COMMUNITY_Community 436]]
 - 10 edges to [[_COMMUNITY_Community 2048]]
 - 10 edges to [[_COMMUNITY_Community 0]]
 - 6 edges to [[_COMMUNITY_Community 138]]
@@ -325,7 +325,7 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_Community 431]]
 - 1 edge to [[_COMMUNITY_Community 62]]
 - 1 edge to [[_COMMUNITY_Community 978]]
-- 1 edge to [[_COMMUNITY_Community 1]]
+- 1 edge to [[_COMMUNITY_Community 31]]
 - 1 edge to [[_COMMUNITY_Community 165]]
 - 1 edge to [[_COMMUNITY_Community 23]]
 - 1 edge to [[_COMMUNITY_Community 5]]
@@ -342,11 +342,12 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 1128]]
 - 1 edge to [[_COMMUNITY_Community 762]]
 - 1 edge to [[_COMMUNITY_Community 353]]
+- 1 edge to [[_COMMUNITY_Community 2405]]
 - 1 edge to [[_COMMUNITY_Community 1426]]
 - 1 edge to [[_COMMUNITY_Community 22]]
 
 ## Top bridge nodes
-- [[TelegramAPIProxy]] - degree 264, connects to 37 communities
+- [[TelegramAPIProxy]] - degree 264, connects to 38 communities
 - [[normalize_input()]] - degree 82, connects to 9 communities
 - [[Any_31]] - degree 17, connects to 6 communities
 - [[._filter_inbound_updates()]] - degree 87, connects to 3 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_edge.py"
 type: "code"
-community: "Community 80"
+community: "Community 1070"
 location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_80
+  - community/Community_1070
 ---
 
 # TestAgentsRegistry
@@ -41,4 +41,4 @@ tags:
 - [[VendorStats]] - `uses` [INFERRED]
 - [[test_soc_edge.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_80
+#graphify/code #graphify/EXTRACTED #community/Community_1070

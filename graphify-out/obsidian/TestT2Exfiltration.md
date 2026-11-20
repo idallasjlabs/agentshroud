@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_pipeline.py"
 type: "code"
-community: "Community 203"
+community: "Community 84"
 location: "L230"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_203
+  - community/Community_84
 ---
 
 # TestT2Exfiltration
@@ -36,4 +36,4 @@ tags:
 - [[ToolRiskConfig_1]] - `uses` [INFERRED]
 - [[test_edge_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_203
+#graphify/code #graphify/INFERRED #community/Community_84

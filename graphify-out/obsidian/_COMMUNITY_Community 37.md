@@ -133,10 +133,11 @@ SORT file.name ASC
 - 9 edges to [[_COMMUNITY_Community 51]]
 - 9 edges to [[_COMMUNITY_Community 63]]
 - 7 edges to [[_COMMUNITY_Community 220]]
-- 6 edges to [[_COMMUNITY_Community 1]]
+- 6 edges to [[_COMMUNITY_Community 31]]
 - 5 edges to [[_COMMUNITY_Community 1658]]
 - 5 edges to [[_COMMUNITY_Community 28]]
 - 5 edges to [[_COMMUNITY_Community 46]]
+- 5 edges to [[_COMMUNITY_Community 40]]
 - 4 edges to [[_COMMUNITY_Community 95]]
 - 4 edges to [[_COMMUNITY_Community 158]]
 - 4 edges to [[_COMMUNITY_Community 683]]
@@ -151,7 +152,6 @@ SORT file.name ASC
 - 3 edges to [[_COMMUNITY_Community 176]]
 - 3 edges to [[_COMMUNITY_Community 25]]
 - 3 edges to [[_COMMUNITY_Community 101]]
-- 3 edges to [[_COMMUNITY_Community 92]]
 - 2 edges to [[_COMMUNITY_Community 7]]
 - 2 edges to [[_COMMUNITY_Community 105]]
 - 2 edges to [[_COMMUNITY_Community 14]]
@@ -162,18 +162,17 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_Community 34]]
 - 2 edges to [[_COMMUNITY_Community 206]]
 - 2 edges to [[_COMMUNITY_Community 114]]
-- 2 edges to [[_COMMUNITY_Community 40]]
 - 1 edge to [[_COMMUNITY_Community 138]]
 - 1 edge to [[_COMMUNITY_Community 360]]
 - 1 edge to [[_COMMUNITY_Community 23]]
 - 1 edge to [[_COMMUNITY_Community 75]]
 - 1 edge to [[_COMMUNITY_Community 1278]]
 - 1 edge to [[_COMMUNITY_Community 123]]
-- 1 edge to [[_COMMUNITY_Community 79]]
+- 1 edge to [[_COMMUNITY_Community 44]]
 - 1 edge to [[_COMMUNITY_Community 1112]]
 
 ## Top bridge nodes
-- [[AsyncMock]] - degree 236, connects to 43 communities
+- [[AsyncMock]] - degree 236, connects to 42 communities
 - [[TestProcessToolResult]] - degree 9, connects to 4 communities
 - [[TestClose]] - degree 8, connects to 4 communities
 - [[TestHealthCheckDetailBotsInventory]] - degree 5, connects to 3 communities

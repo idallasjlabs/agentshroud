@@ -206,15 +206,14 @@ SORT file.name ASC
 ## Connections to other communities
 - 50 edges to [[_COMMUNITY_Community 2048]]
 - 43 edges to [[_COMMUNITY_Community 7]]
+- 39 edges to [[_COMMUNITY_Community 84]]
 - 30 edges to [[_COMMUNITY_Community 70]]
-- 27 edges to [[_COMMUNITY_Community 84]]
 - 18 edges to [[_COMMUNITY_Community 115]]
 - 16 edges to [[_COMMUNITY_Community 35]]
 - 15 edges to [[_COMMUNITY_Community 64]]
 - 14 edges to [[_COMMUNITY_Community 124]]
 - 14 edges to [[_COMMUNITY_Community 254]]
-- 12 edges to [[_COMMUNITY_Community 41]]
-- 12 edges to [[_COMMUNITY_Community 203]]
+- 12 edges to [[_COMMUNITY_Community 32]]
 - 11 edges to [[_COMMUNITY_Community 151]]
 - 7 edges to [[_COMMUNITY_Community 19]]
 - 4 edges to [[_COMMUNITY_Community 890]]
@@ -233,7 +232,7 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[ApprovalRequest_3]] - degree 102, connects to 12 communities
-- [[EnhancedApprovalQueue]] - degree 94, connects to 11 communities
-- [[ToolRiskConfig_1]] - degree 63, connects to 10 communities
-- [[ApprovalStore_1]] - degree 85, connects to 8 communities
+- [[EnhancedApprovalQueue]] - degree 94, connects to 10 communities
+- [[ToolRiskConfig_1]] - degree 63, connects to 9 communities
+- [[ApprovalStore_1]] - degree 85, connects to 7 communities
 - [[ApprovalQueueItem_3]] - degree 37, connects to 6 communities

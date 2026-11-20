@@ -78,7 +78,7 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_Community 151]]
 - 1 edge to [[_COMMUNITY_Community 978]]
 - 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 431]]
+- 1 edge to [[_COMMUNITY_Community 96]]
 
 ## Top bridge nodes
 - [[pipeline.py]] - degree 15, connects to 7 communities

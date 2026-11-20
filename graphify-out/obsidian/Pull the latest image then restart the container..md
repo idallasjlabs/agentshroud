@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "rationale"
-community: "Community 890"
+community: "Community 38"
 location: "L377"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_890
+  - community/Community_38
 ---
 
 # Pull the latest image then restart the container.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.update_service()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_890
+#graphify/rationale #graphify/EXTRACTED #community/Community_38

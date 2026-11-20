@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "Community 92"
+community: "Community 2177"
 location: "L148"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_92
+  - community/Community_2177
 ---
 
 # revert_after_minutes above 480 is clamped to 480.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_revert_minutes_clamped_max()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_92
+#graphify/rationale #graphify/EXTRACTED #community/Community_2177

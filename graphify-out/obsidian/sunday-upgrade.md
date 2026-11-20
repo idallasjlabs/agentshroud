@@ -1,12 +1,12 @@
 ---
 source_file: "prompts/sunday-upgrade.md"
 type: "document"
-community: "Community 139"
+community: "Community 1196"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/Community_1196
 ---
 
 # sunday-upgrade.md
@@ -30,4 +30,4 @@ tags:
 - [[upgrade-2026-10-18]] - `implements` [INFERRED]
 - [[websockets 16.1.1 - 17.1 Sunday upgrade bump]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_139
+#graphify/document #graphify/EXTRACTED #community/Community_1196

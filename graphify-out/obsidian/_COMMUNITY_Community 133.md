@@ -1,11 +1,11 @@
 ---
 type: community
-members: 54
+members: 52
 ---
 
 # Community 133
 
-**Members:** 54 nodes
+**Members:** 52 nodes
 
 ## Members
 - [[.test_1password_env_dump_flags()]] - code - gateway/tests/test_skill_guard.py
@@ -43,11 +43,9 @@ members: 54
 - [[CompletedProcess_5]] - code - gateway/tests/test_skill_guard.py
 - [[IntEnum]] - code
 - [[Ordered severity ladder (``IntEnum`` so comparisons work).]] - rationale - gateway/security/skill_guard.py
-- [[Raised when SkillGuard is handed content it cannot scan.]] - rationale - gateway/security/skill_guard.py
 - [[ScanResult_4]] - code - gateway/tests/test_skill_guard.py
 - [[Severity]] - code - gateway/security/skill_guard.py
 - [[SkillGuard_1]] - code - gateway/tests/test_skill_guard.py
-- [[SkillScanError]] - code - gateway/security/skill_guard.py
 - [[TestAggregation]] - code - gateway/tests/test_skill_guard.py
 - [[TestCleanSkill]] - code - gateway/tests/test_skill_guard.py
 - [[TestExecOfDownload]] - code - gateway/tests/test_skill_guard.py
@@ -71,9 +69,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 48 edges to [[_COMMUNITY_Community 924]]
-- 19 edges to [[_COMMUNITY_Community 281]]
-- 1 edge to [[_COMMUNITY_Community 80]]
+- 46 edges to [[_COMMUNITY_Community 924]]
+- 27 edges to [[_COMMUNITY_Community 281]]
 - 1 edge to [[_COMMUNITY_Community 196]]
 - 1 edge to [[_COMMUNITY_Community 88]]
 - 1 edge to [[_COMMUNITY_Community 56]]
@@ -86,6 +83,6 @@ SORT file.name ASC
 ## Top bridge nodes
 - [[IntEnum]] - degree 7, connects to 6 communities
 - [[test_skill_guard.py]] - degree 28, connects to 5 communities
-- [[SkillScanError]] - degree 24, connects to 3 communities
+- [[SkillGuard_1]] - degree 36, connects to 2 communities
 - [[Severity]] - degree 24, connects to 2 communities
-- [[CompletedProcess_5]] - degree 6, connects to 2 communities
+- [[TestAggregation]] - degree 12, connects to 2 communities

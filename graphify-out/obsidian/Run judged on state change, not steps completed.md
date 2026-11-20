@@ -1,12 +1,12 @@
 ---
 source_file: "prompts/sunday-upgrade.md"
 type: "rationale"
-community: "Community 139"
+community: "Community 1196"
 location: "L9-L42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/Community_1196
 ---
 
 # Run judged on state change, not steps completed
@@ -17,4 +17,4 @@ tags:
 - [[scriptscheck-soak-status.sh (SOAKED gate)]] - `semantically_similar_to` [INFERRED]
 - [[sunday-upgrade]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_139
+#graphify/rationale #graphify/EXTRACTED #community/Community_1196

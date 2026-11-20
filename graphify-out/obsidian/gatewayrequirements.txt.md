@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/requirements.txt"
 type: "code"
-community: "Community 139"
+community: "Community 1196"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/Community_1196
 ---
 
 # gateway/requirements.txt
@@ -17,4 +17,4 @@ tags:
 - [[sunday-upgrade]] - `references` [INFERRED]
 - [[websockets 16.1.1 - 17.1 Sunday upgrade bump]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_139
+#graphify/code #graphify/EXTRACTED #community/Community_1196

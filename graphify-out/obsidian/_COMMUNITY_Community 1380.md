@@ -8,20 +8,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[Added_9]] - document - CHANGELOG.md
+- [[Added_5]] - document - CHANGELOG.md
 - [[Added_13]] - document - CHANGELOG.md
-- [[Changed_5]] - document - CHANGELOG.md
+- [[Changed_2]] - document - CHANGELOG.md
+- [[Fixed_6]] - document - CHANGELOG.md
 - [[Fixed_16]] - document - CHANGELOG.md
 - [[Security_12]] - document - CHANGELOG.md
-- [[Security_15]] - document - CHANGELOG.md
 - [[Security_17]] - document - CHANGELOG.md
 - [[Security_20]] - document - CHANGELOG.md
-- [[Summary_13]] - document - CHANGELOG.md
+- [[Summary_6]] - document - CHANGELOG.md
 - [[Summary_19]] - document - CHANGELOG.md
 - [[Summary_24]] - document - CHANGELOG.md
 - [[0.1.0 - 2026-02-16]] - document - CHANGELOG.md
 - [[0.7.0 - 2026-02-25]] - document - CHANGELOG.md
-- [[1.1.0 — feat-v1.4.0-shroud-another-bot — Hermes (2026-05-29)]] - document - CHANGELOG.md
+- [[1.3.0 Reliability (2026-07-21)]] - document - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,17 +31,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 6 edges to [[_COMMUNITY_Community 773]]
 - 5 edges to [[_COMMUNITY_Community 106]]
 - 3 edges to [[_COMMUNITY_Community 1255]]
-- 3 edges to [[_COMMUNITY_Community 773]]
-- 2 edges to [[_COMMUNITY_Community 1386]]
-- 2 edges to [[_COMMUNITY_Community 2123]]
-- 1 edge to [[_COMMUNITY_Community 2177]]
+- 3 edges to [[_COMMUNITY_Community 1386]]
 - 1 edge to [[_COMMUNITY_Community 2039]]
 - 1 edge to [[_COMMUNITY_Community 2016]]
 
 ## Top bridge nodes
-- [[Security_12]] - degree 9, connects to 6 communities
-- [[1.1.0 — feat-v1.4.0-shroud-another-bot — Hermes (2026-05-29)]] - degree 9, connects to 4 communities
-- [[0.7.0 - 2026-02-25]] - degree 9, connects to 4 communities
+- [[Security_12]] - degree 9, connects to 5 communities
+- [[1.3.0 Reliability (2026-07-21)]] - degree 10, connects to 4 communities
+- [[0.7.0 - 2026-02-25]] - degree 9, connects to 3 communities
 - [[0.1.0 - 2026-02-16]] - degree 7, connects to 3 communities

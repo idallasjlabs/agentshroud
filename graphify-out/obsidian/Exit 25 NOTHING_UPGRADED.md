@@ -1,12 +1,12 @@
 ---
 source_file: "prompts/sunday-upgrade.md"
 type: "concept"
-community: "Community 139"
+community: "Community 1196"
 location: "L35-L39"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/Community_1196
 ---
 
 # Exit 25 NOTHING_UPGRADED
@@ -15,4 +15,4 @@ tags:
 - [[Exit code contract (01015202125304050127)]] - `references` [EXTRACTED]
 - [[Run judged on state change, not steps completed]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_139
+#graphify/concept #graphify/EXTRACTED #community/Community_1196

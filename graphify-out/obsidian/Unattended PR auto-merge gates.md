@@ -1,12 +1,12 @@
 ---
 source_file: "prompts/sunday-upgrade.md"
 type: "concept"
-community: "Community 139"
+community: "Community 1196"
 location: "L303-L309"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/Community_1196
 ---
 
 # Unattended PR auto-merge gates
@@ -16,4 +16,4 @@ tags:
 - [[Partial progress ships (not all-or-nothing)]] - `rationale_for` [EXTRACTED]
 - [[scriptscheck-soak-status.sh (SOAKED gate)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_139
+#graphify/concept #graphify/EXTRACTED #community/Community_1196

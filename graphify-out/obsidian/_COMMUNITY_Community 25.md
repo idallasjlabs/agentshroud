@@ -1,11 +1,11 @@
 ---
 type: community
-members: 80
+members: 70
 ---
 
 # Community 25
 
-**Members:** 80 nodes
+**Members:** 70 nodes
 
 ## Members
 - [[.execute()]] - code - gateway/ssh_proxy/proxy.py
@@ -19,8 +19,6 @@ members: 80
 - [[.test_is_auto_approved_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
 - [[.test_is_auto_approved_yes()]] - code - gateway/tests/test_ssh_proxy.py
 - [[.test_non_auto_approved_executes_directly()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_approval_sanitizes_command_pii()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ssh_command_uses_strict_checking()]] - code - gateway/tests/test_security_fixes.py
 - [[.test_ssh_disabled_config()]] - code - gateway/tests/test_ssh_proxy.py
 - [[.test_ssh_exec_auto_approved()]] - code - gateway/tests/test_ssh_endpoints.py
 - [[.test_ssh_exec_command_not_in_allowlist()]] - code - gateway/tests/test_ssh_endpoints.py
@@ -34,7 +32,6 @@ members: 80
 - [[.test_ssh_exec_requires_approval()]] - code - gateway/tests/test_ssh_endpoints.py
 - [[.test_ssh_exec_unknown_host()]] - code - gateway/tests/test_ssh_endpoints.py
 - [[.test_ssh_history()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_strict_host_key_checking_in_source()]] - code - gateway/tests/test_security_fixes.py
 - [[.test_validate_auto_approve_exact_only()]] - code - gateway/tests/test_ssh_proxy.py
 - [[.test_validate_command_allowed()]] - code - gateway/tests/test_ssh_proxy.py
 - [[.test_validate_command_backslash_n_injection()]] - code - gateway/tests/test_ssh_proxy.py
@@ -53,31 +50,24 @@ members: 80
 - [[.test_validate_command_not_in_allowlist()]] - code - gateway/tests/test_ssh_proxy.py
 - [[.test_validate_command_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
 - [[.test_validate_empty_command()]] - code - gateway/tests/test_ssh_proxy.py
-- [[Approval queue details must be PII-sanitized before storage]] - rationale - gateway/tests/test_security_fixes.py
 - [[Auto-approve must be exact match, not prefix (Finding 3)]] - rationale - gateway/tests/test_ssh_proxy.py
 - [[Configuration for a single SSH host]] - rationale - gateway/ingest_api/ssh_config.py
 - [[Execute a command on a remote host via SSH.]] - rationale - gateway/ssh_proxy/proxy.py
 - [[Omitting cwd passes cwd=None to proxy.execute().]] - rationale - gateway/tests/test_ssh_endpoints.py
 - [[Result of an SSH command execution]] - rationale - gateway/ssh_proxy/proxy.py
 - [[SSH Proxy Module Badge Icon]] - image - branding/icons/modules/ssh-proxy-256x256.png
-- [[SSH exec requiring approval sanitizes PII in command before storing]] - rationale - gateway/tests/test_security_fixes.py
-- [[SSH execute builds command with StrictHostKeyChecking=yes]] - rationale - gateway/tests/test_security_fixes.py
 - [[SSHConfig_2]] - code - gateway/tests/test_ssh_proxy.py
 - [[SSHHostConfig]] - code - gateway/ingest_api/ssh_config.py
 - [[SSHProxy_1]] - code - gateway/tests/test_ssh_proxy.py
 - [[SSHResult]] - code - gateway/ssh_proxy/proxy.py
-- [[Source code uses StrictHostKeyChecking=yes]] - rationale - gateway/tests/test_security_fixes.py
 - [[Test SSH disabled returns 503 (Finding 12)]] - rationale - gateway/tests/test_ssh_proxy.py
 - [[Test newline-based injection attempts (Finding 11)]] - rationale - gateway/tests/test_ssh_proxy.py
-- [[TestApprovalQueuePIISanitization]] - code - gateway/tests/test_security_fixes.py
 - [[TestExecute]] - code - gateway/tests/test_ssh_proxy.py
 - [[TestInjectionNewline]] - code - gateway/tests/test_ssh_proxy.py
 - [[TestIsAutoApproved]] - code - gateway/tests/test_ssh_proxy.py
 - [[TestSSHDisabled]] - code - gateway/tests/test_ssh_proxy.py
 - [[TestSSHExec]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestSSHStrictHostKeyChecking]] - code - gateway/tests/test_security_fixes.py
 - [[TestValidateCommand]] - code - gateway/tests/test_ssh_proxy.py
-- [[Verify SSH proxy uses StrictHostKeyChecking=yes, not accept-new]] - rationale - gateway/tests/test_security_fixes.py
 - [[When require_approval=false, non-auto-approved commands execute directly.]] - rationale - gateway/tests/test_ssh_endpoints.py
 - [[__init__.py_13]] - code - gateway/ssh_proxy/__init__.py
 - [[cwd is validated and passed to proxy.execute().]] - rationale - gateway/tests/test_ssh_endpoints.py
@@ -97,19 +87,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 46 edges to [[_COMMUNITY_Community 7]]
-- 21 edges to [[_COMMUNITY_Community 44]]
-- 11 edges to [[_COMMUNITY_Community 79]]
+- 42 edges to [[_COMMUNITY_Community 7]]
+- 28 edges to [[_COMMUNITY_Community 44]]
 - 3 edges to [[_COMMUNITY_Community 151]]
 - 3 edges to [[_COMMUNITY_Community 37]]
 - 1 edge to [[_COMMUNITY_Community 890]]
 - 1 edge to [[_COMMUNITY_Community 978]]
 - 1 edge to [[_COMMUNITY_Community 84]]
+- 1 edge to [[_COMMUNITY_Community 79]]
+- 1 edge to [[_COMMUNITY_Community 2324]]
 - 1 edge to [[_COMMUNITY_Community 626]]
 
 ## Top bridge nodes
-- [[SSHHostConfig]] - degree 44, connects to 4 communities
+- [[SSHHostConfig]] - degree 44, connects to 5 communities
 - [[proxy.py]] - degree 10, connects to 4 communities
 - [[TestSSHExec]] - degree 25, connects to 3 communities
-- [[TestSSHStrictHostKeyChecking]] - degree 7, connects to 3 communities
-- [[TestApprovalQueuePIISanitization]] - degree 6, connects to 3 communities
+- [[SSHProxy_1]] - degree 30, connects to 2 communities
+- [[SSHResult]] - degree 25, connects to 2 communities

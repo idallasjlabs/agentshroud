@@ -1,17 +1,16 @@
 ---
 type: community
-members: 67
+members: 66
 ---
 
 # Community 67
 
-**Members:** 67 nodes
+**Members:** 66 nodes
 
 ## Members
 - [[._patch_all_not_run()]] - code - gateway/tests/test_scanner_integration.py
 - [[.test_baseline_three_when_openscap_not_run()]] - code - gateway/tests/test_scanner_integration.py
 - [[.test_capped_at_five()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_clean_tools_improve_score()]] - code - gateway/tests/test_scanner_integration.py
 - [[.test_defined_when_all_passing_no_report_on_disk()]] - code - gateway/tests/test_scanner_integration.py
 - [[.test_defined_when_oscap_binary_present()]] - code - gateway/tests/test_scanner_integration.py
 - [[.test_five_when_openscap_clean()]] - code - gateway/tests/test_scanner_integration.py
@@ -39,7 +38,7 @@ members: 67
 - [[Aggregate results from all security scanners into a unified dict.      Returns]] - rationale - gateway/security/scanner_integration.py
 - [[Any_64]] - code - gateway/security/scanner_integration.py
 - [[Any_77]] - code - gateway/tests/test_scanner_integration.py
-- [[Return Fluent Bit log collector status.      Fluent Bit is a log shipper, not a]] - rationale - gateway/security/scanner_integration.py
+- [[Read and return the Docker daemon config from daemon.json, or {} if unavailable.]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 10 Compliance Auditing (0-5).      0=not run, 2=has failures, 3=ze]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 12 Incident Response (0-5).      1=SOC exists, 2=Falco running, 3=]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 1 Image Integrity (0-5).      1=SBOM exists, 2=Trivy ran, 3=zero c]] - rationale - gateway/security/scanner_integration.py
@@ -61,6 +60,7 @@ members: 67
 - [[_openscap_clean()]] - code - gateway/tests/test_scanner_integration.py
 - [[_openscap_not_run()]] - code - gateway/tests/test_scanner_integration.py
 - [[_openscap_warn()]] - code - gateway/tests/test_scanner_integration.py
+- [[_read_docker_daemon_config()]] - code - gateway/security/scanner_integration.py
 - [[_score_compliance_auditing()]] - code - gateway/security/scanner_integration.py
 - [[_score_container_hardening()]] - code - gateway/security/scanner_integration.py
 - [[_score_image_integrity()]] - code - gateway/security/scanner_integration.py
@@ -73,7 +73,6 @@ members: 67
 - [[_wazuh_clean()]] - code - gateway/tests/test_scanner_integration.py
 - [[_wazuh_not_run()]] - code - gateway/tests/test_scanner_integration.py
 - [[aggregate_results()]] - code - gateway/security/scanner_integration.py
-- [[get_fluent_bit_summary()]] - code - gateway/security/scanner_integration.py
 - [[test_scanner_integration.py]] - code - gateway/tests/test_scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
@@ -84,18 +83,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 41 edges to [[_COMMUNITY_Community 29]]
+- 45 edges to [[_COMMUNITY_Community 29]]
 - 13 edges to [[_COMMUNITY_Community 311]]
-- 11 edges to [[_COMMUNITY_Community 363]]
 - 11 edges to [[_COMMUNITY_Community 207]]
+- 9 edges to [[_COMMUNITY_Community 842]]
 - 8 edges to [[_COMMUNITY_Community 102]]
-- 5 edges to [[_COMMUNITY_Community 842]]
+- 7 edges to [[_COMMUNITY_Community 363]]
 - 2 edges to [[_COMMUNITY_Community 51]]
 - 1 edge to [[_COMMUNITY_Community 10]]
 
 ## Top bridge nodes
 - [[Any_64]] - degree 22, connects to 7 communities
+- [[aggregate_results()]] - degree 19, connects to 7 communities
 - [[test_scanner_integration.py]] - degree 61, connects to 6 communities
-- [[aggregate_results()]] - degree 19, connects to 6 communities
+- [[_trivy_clean()]] - degree 7, connects to 2 communities
 - [[_trivy_not_run()]] - degree 7, connects to 2 communities
-- [[Any_77]] - degree 16, connects to 1 community

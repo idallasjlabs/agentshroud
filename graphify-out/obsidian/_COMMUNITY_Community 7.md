@@ -23,6 +23,8 @@ members: 231
 - [[.test_1000_entries_under_5s()]] - code - gateway/tests/test_performance.py
 - [[.test_1000_messages_under_10s()]] - code - gateway/tests/test_performance.py
 - [[.test_1000_messages_under_5s()]] - code - gateway/tests/test_performance.py
+- [[.test_100_inbound_messages_under_5s()]] - code - gateway/tests/test_performance.py
+- [[.test_100_outbound_messages_under_5s()]] - code - gateway/tests/test_performance.py
 - [[.test_50_concurrent_writes()]] - code - gateway/tests/test_audit_chain.py
 - [[.test_body_agent_id_used_without_header()]] - code - gateway/tests/test_mcp_result_endpoint.py
 - [[.test_clean_result_accepted()]] - code - gateway/tests/test_mcp_result_endpoint.py
@@ -53,9 +55,7 @@ members: 231
 - [[.test_result_returns_processing_time()]] - code - gateway/tests/test_mcp_result_endpoint.py
 - [[.test_result_with_null_content()]] - code - gateway/tests/test_mcp_result_endpoint.py
 - [[.test_result_with_pii_is_audited_not_blocked()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_single_inbound_under_200ms()]] - code - gateway/tests/test_performance.py
 - [[.test_single_message_pipeline_under_100ms()]] - code - gateway/tests/test_performance.py
-- [[.test_single_outbound_under_200ms()]] - code - gateway/tests/test_performance.py
 - [[.test_ssh_exec_disabled_returns_503()]] - code - gateway/tests/test_ssh_endpoints.py
 - [[.test_ssh_hosts_list()]] - code - gateway/tests/test_ssh_endpoints.py
 - [[.test_stats_correct()]] - code - gateway/tests/test_audit_chain.py
@@ -63,6 +63,8 @@ members: 231
 - [[.test_write_file_success_creates_matching_ledger_entry()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[.validate_default_url()]] - code - gateway/ingest_api/config.py
 - [[.validate_targets()]] - code - gateway/ingest_api/config.py
+- [[100 messages through process_inbound in under 5 seconds.]] - rationale - gateway/tests/test_performance.py
+- [[100 messages through process_outbound in under 5 seconds.]] - rationale - gateway/tests/test_performance.py
 - [[50 concurrent write operations should all succeed.]] - rationale - gateway/tests/test_audit_chain.py
 - [[A WebSocket stand-in whose send_json never returns — models a dead     client (c]] - rationale - gateway/tests/test_approval_queue.py
 - [[A result containing PII is audited and redacted — never blocked (results are nev]] - rationale - gateway/tests/test_mcp_result_endpoint.py
@@ -144,8 +146,6 @@ members: 231
 - [[Sensitive audit data can be encrypted at rest.]] - rationale - gateway/tests/test_security_integration.py
 - [[Set up app state and provide TestClient.]] - rationale - gateway/tests/test_ssh_endpoints.py
 - [[Set up app state and provide TestClient._1]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Single message through SecurityPipeline.process_inbound  200ms.]] - rationale - gateway/tests/test_performance.py
-- [[Single message through SecurityPipeline.process_outbound  200ms.]] - rationale - gateway/tests/test_performance.py
 - [[Single message through full pipeline in under 100ms.]] - rationale - gateway/tests/test_performance.py
 - [[Stats reflect actual data.]] - rationale - gateway/tests/test_audit_chain.py
 - [[Tamper detection at various chain positions.]] - rationale - gateway/tests/test_audit_chain.py
@@ -248,29 +248,27 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 95 edges to [[_COMMUNITY_Community 84]]
-- 59 edges to [[_COMMUNITY_Community 44]]
+- 103 edges to [[_COMMUNITY_Community 84]]
+- 70 edges to [[_COMMUNITY_Community 44]]
 - 52 edges to [[_COMMUNITY_Community 151]]
-- 46 edges to [[_COMMUNITY_Community 25]]
 - 43 edges to [[_COMMUNITY_Community 30]]
+- 42 edges to [[_COMMUNITY_Community 25]]
 - 32 edges to [[_COMMUNITY_Community 28]]
 - 17 edges to [[_COMMUNITY_Community 181]]
 - 17 edges to [[_COMMUNITY_Community 24]]
 - 16 edges to [[_COMMUNITY_Community 34]]
 - 16 edges to [[_COMMUNITY_Community 78]]
 - 15 edges to [[_COMMUNITY_Community 11]]
-- 13 edges to [[_COMMUNITY_Community 436]]
 - 13 edges to [[_COMMUNITY_Community 35]]
+- 12 edges to [[_COMMUNITY_Community 436]]
 - 12 edges to [[_COMMUNITY_Community 861]]
 - 11 edges to [[_COMMUNITY_Community 115]]
 - 11 edges to [[_COMMUNITY_Community 0]]
-- 11 edges to [[_COMMUNITY_Community 41]]
 - 11 edges to [[_COMMUNITY_Community 325]]
 - 9 edges to [[_COMMUNITY_Community 439]]
 - 9 edges to [[_COMMUNITY_Community 68]]
-- 9 edges to [[_COMMUNITY_Community 79]]
 - 8 edges to [[_COMMUNITY_Community 2048]]
-- 8 edges to [[_COMMUNITY_Community 203]]
+- 8 edges to [[_COMMUNITY_Community 32]]
 - 8 edges to [[_COMMUNITY_Community 435]]
 - 8 edges to [[_COMMUNITY_Community 254]]
 - 7 edges to [[_COMMUNITY_Community 70]]
@@ -280,12 +278,13 @@ SORT file.name ASC
 - 6 edges to [[_COMMUNITY_Community 890]]
 - 6 edges to [[_COMMUNITY_Community 36]]
 - 6 edges to [[_COMMUNITY_Community 54]]
-- 5 edges to [[_COMMUNITY_Community 1]]
+- 5 edges to [[_COMMUNITY_Community 31]]
 - 5 edges to [[_COMMUNITY_Community 2]]
 - 5 edges to [[_COMMUNITY_Community 94]]
 - 4 edges to [[_COMMUNITY_Community 80]]
 - 4 edges to [[_COMMUNITY_Community 707]]
 - 4 edges to [[_COMMUNITY_Community 49]]
+- 3 edges to [[_COMMUNITY_Community 41]]
 - 3 edges to [[_COMMUNITY_Community 531]]
 - 3 edges to [[_COMMUNITY_Community 229]]
 - 3 edges to [[_COMMUNITY_Community 17]]
@@ -302,7 +301,7 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_Community 2043]]
 - 2 edges to [[_COMMUNITY_Community 22]]
 - 2 edges to [[_COMMUNITY_Community 96]]
-- 2 edges to [[_COMMUNITY_Community 2052]]
+- 2 edges to [[_COMMUNITY_Community 2410]]
 - 1 edge to [[_COMMUNITY_Community 138]]
 - 1 edge to [[_COMMUNITY_Community 1209]]
 - 1 edge to [[_COMMUNITY_Community 480]]
@@ -311,17 +310,20 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 1128]]
 - 1 edge to [[_COMMUNITY_Community 762]]
 - 1 edge to [[_COMMUNITY_Community 353]]
+- 1 edge to [[_COMMUNITY_Community 2405]]
 - 1 edge to [[_COMMUNITY_Community 1426]]
 - 1 edge to [[_COMMUNITY_Community 194]]
 - 1 edge to [[_COMMUNITY_Community 368]]
 - 1 edge to [[_COMMUNITY_Community 1200]]
+- 1 edge to [[_COMMUNITY_Community 79]]
+- 1 edge to [[_COMMUNITY_Community 2324]]
 - 1 edge to [[_COMMUNITY_Community 60]]
 - 1 edge to [[_COMMUNITY_Community 21]]
 - 1 edge to [[_COMMUNITY_Community 1248]]
 
 ## Top bridge nodes
-- [[PIIConfig]] - degree 229, connects to 34 communities
-- [[ApprovalQueueConfig_2]] - degree 105, connects to 13 communities
+- [[PIIConfig]] - degree 229, connects to 35 communities
 - [[load_config()]] - degree 51, connects to 13 communities
+- [[ApprovalQueueConfig_2]] - degree 105, connects to 12 communities
 - [[GatewayConfig_1]] - degree 65, connects to 10 communities
-- [[DataLedger]] - degree 67, connects to 9 communities
+- [[SSHConfig]] - degree 61, connects to 10 communities

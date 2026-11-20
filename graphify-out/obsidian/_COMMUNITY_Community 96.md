@@ -1,11 +1,11 @@
 ---
 type: community
-members: 53
+members: 57
 ---
 
 # Community 96
 
-**Members:** 53 nodes
+**Members:** 57 nodes
 
 ## Members
 - [[.__init__()_91]] - code - gateway/security/encrypted_store.py
@@ -40,6 +40,7 @@ members: 53
 - [[.test_secure_zero_bytearray()]] - code - gateway/tests/test_security_hardening.py
 - [[.test_secure_zero_empty()]] - code - gateway/tests/test_security_hardening.py
 - [[.test_wrong_key_fails()_1]] - code - gateway/tests/test_security_hardening.py
+- [[A single match found by the outbound filter.]] - rationale - gateway/security/outbound_filter.py
 - [[AES-256-GCM encrypted storage with key derivation and rotation support.]] - rationale - gateway/security/encrypted_store.py
 - [[Best-effort zeroing of key material using ctypes.memset.      Works on bytearray]] - rationale - gateway/security/encrypted_store.py
 - [[Decrypt a base64-encoded blob.]] - rationale - gateway/security/encrypted_store.py
@@ -54,6 +55,8 @@ members: 53
 - [[EncryptedStore]] - code - gateway/security/encrypted_store.py
 - [[Encryptiondecryption time should not leak plaintext length.]] - rationale - gateway/tests/test_security_audit_advanced.py
 - [[Extract the key_id from an encrypted blob without decrypting.]] - rationale - gateway/security/encrypted_store.py
+- [[FR4 Data Confidentiality]] - concept - docs/compliance/iec-62443-matrix.md
+- [[FilterMatch]] - code - gateway/security/outbound_filter.py
 - [[Initialize the encrypted store.          Args             master_secret The ma]] - rationale - gateway/security/encrypted_store.py
 - [[Re-encrypt blobs with a new master secret.          Args             blobs Lis]] - rationale - gateway/security/encrypted_store.py
 - [[Resolve master secret from args, file, or environment.]] - rationale - gateway/security/encrypted_store.py
@@ -61,6 +64,7 @@ members: 53
 - [[TestEncryptedStore]] - code - gateway/tests/test_security_hardening.py
 - [[_secure_zero()]] - code - gateway/security/encrypted_store.py
 - [[encrypted_store.py]] - code - gateway/security/encrypted_store.py
+- [[outbound_filter.py]] - code - gateway/security/outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -72,25 +76,32 @@ SORT file.name ASC
 ## Connections to other communities
 - 30 edges to [[_COMMUNITY_Community 0]]
 - 14 edges to [[_COMMUNITY_Community 22]]
+- 4 edges to [[_COMMUNITY_Community 151]]
 - 4 edges to [[_COMMUNITY_Community 52]]
 - 3 edges to [[_COMMUNITY_Community 17]]
+- 3 edges to [[_COMMUNITY_Community 24]]
 - 3 edges to [[_COMMUNITY_Community 11]]
-- 2 edges to [[_COMMUNITY_Community 151]]
+- 2 edges to [[_COMMUNITY_Community 684]]
 - 2 edges to [[_COMMUNITY_Community 7]]
+- 2 edges to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 6]]
 - 1 edge to [[_COMMUNITY_Community 43]]
 - 1 edge to [[_COMMUNITY_Community 21]]
-- 1 edge to [[_COMMUNITY_Community 431]]
-- 1 edge to [[_COMMUNITY_Community 684]]
 - 1 edge to [[_COMMUNITY_Community 45]]
 - 1 edge to [[_COMMUNITY_Community 5]]
 - 1 edge to [[_COMMUNITY_Community 941]]
 - 1 edge to [[_COMMUNITY_Community 577]]
+- 1 edge to [[_COMMUNITY_Community 431]]
+- 1 edge to [[_COMMUNITY_Community 63]]
+- 1 edge to [[_COMMUNITY_Community 1105]]
 - 1 edge to [[_COMMUNITY_Community 84]]
 - 1 edge to [[_COMMUNITY_Community 626]]
+- 1 edge to [[_COMMUNITY_Community 393]]
+- 1 edge to [[_COMMUNITY_Community 466]]
 
 ## Top bridge nodes
 - [[EncryptedStore]] - degree 65, connects to 10 communities
 - [[TestEncryptedStore]] - degree 35, connects to 7 communities
-- [[encrypted_store.py]] - degree 6, connects to 3 communities
-- [[_secure_zero()]] - degree 9, connects to 1 community
-- [[.test_encrypted_store_constant_time()]] - degree 3, connects to 1 community
+- [[outbound_filter.py]] - degree 8, connects to 6 communities
+- [[FR4 Data Confidentiality]] - degree 8, connects to 5 communities
+- [[encrypted_store.py]] - degree 6, connects to 2 communities

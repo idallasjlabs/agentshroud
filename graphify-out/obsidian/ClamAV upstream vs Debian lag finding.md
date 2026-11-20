@@ -1,12 +1,12 @@
 ---
 source_file: "prompts/sunday-upgrade.md"
 type: "concept"
-community: "Community 139"
+community: "Community 1196"
 location: "L178"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/Community_1196
 ---
 
 # ClamAV upstream vs Debian lag finding
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EVERYTHING MEANS EVERYTHING inventory scope]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_139
+#graphify/concept #graphify/EXTRACTED #community/Community_1196

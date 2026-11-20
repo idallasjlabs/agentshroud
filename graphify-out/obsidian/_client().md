@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_e2e_sdk.py"
 type: "code"
-community: "Community 41"
+community: "Community 32"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_41
+  - community/Community_32
 ---
 
 # _client()
@@ -17,4 +17,4 @@ tags:
 - [[test_full_oauth_and_tool_calls_with_sdk_client()]] - `calls` [EXTRACTED]
 - [[test_registration_refused_without_enrollment_window()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_41
+#graphify/code #graphify/EXTRACTED #community/Community_32

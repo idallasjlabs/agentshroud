@@ -1,12 +1,12 @@
 ---
 source_file: "prompts/sunday-upgrade.md"
 type: "concept"
-community: "Community 139"
+community: "Community 1196"
 location: "L57-L83"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/Community_1196
 ---
 
 # Dev-to-prod handoff contract (dev-result JSON + dev-merge-commit)
@@ -16,4 +16,4 @@ tags:
 - [[check-version-pins-parity.sh]] - `references` [EXTRACTED]
 - [[scriptssunday-upgrade-apply.sh (deterministic gates)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_139
+#graphify/concept #graphify/EXTRACTED #community/Community_1196

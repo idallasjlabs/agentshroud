@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 2123"
+community: "Community 773"
 location: "L1082"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2123
+  - community/Community_773
 ---
 
 # Security
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Fixed_18]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2123
+#graphify/document #graphify/EXTRACTED #community/Community_773

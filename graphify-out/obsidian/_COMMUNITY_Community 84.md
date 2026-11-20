@@ -1,16 +1,15 @@
 ---
 type: community
-members: 209
+members: 224
 ---
 
 # Community 84
 
-**Members:** 209 nodes
+**Members:** 224 nodes
 
 ## Members
 - [[.__call__()_8]] - code - gateway/tests/test_edge_pipeline.py
 - [[.__init__()_31]] - code - gateway/ingest_api/sanitizer.py
-- [[.__init__()_73]] - code - gateway/security/canary_tripwire.py
 - [[.__init__()_90]] - code - gateway/security/encoding_detector.py
 - [[.__init__()_170]] - code - gateway/tests/test_edge_pipeline.py
 - [[.__init__()_171]] - code - gateway/tests/test_edge_pipeline.py
@@ -47,60 +46,70 @@ members: 209
 - [[.scan()_2]] - code - gateway/security/canary_tripwire.py
 - [[.scan_response()_1]] - code - gateway/security/canary_tripwire.py
 - [[.set_global_mode()]] - code - gateway/proxy/pipeline.py
-- [[.setup_method()_1]] - code - gateway/tests/test_canary_tripwire.py
 - [[.setup_method()_5]] - code - gateway/tests/test_encoding_detector.py
 - [[.strip_zero_width()]] - code - gateway/security/encoding_detector.py
 - [[.test_agents_process_independently()]] - code - gateway/tests/test_e2e_watchtower.py
-- [[.test_api_key_canary()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_base64_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_api_key_scrubbed()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_approved_write_executes_once()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_bad_ticket_does_not_execute()]] - code - gateway/tests/test_edge_pipeline.py
 - [[.test_base64_content_decoded()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[.test_base64_detected()]] - code - gateway/tests/test_encoding_detector.py
 - [[.test_benign_message_passes()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_benign_read_call_dispatches()]] - code - gateway/tests/test_edge_pipeline.py
 - [[.test_blocked_message_has_audit_entry()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_canary_blocks_and_suspends()]] - code - gateway/tests/test_edge_pipeline.py
 - [[.test_canary_token_triggers_block()]] - code - gateway/tests/test_e2e_watchtower.py
-- [[.test_case_insensitive()]] - code - gateway/tests/test_canary_tripwire.py
 - [[.test_classic_injection_blocked()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[.test_clean_response_not_blocked()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[.test_clean_response_passes_unchanged()]] - code - gateway/tests/test_e2e_watchtower.py
-- [[.test_code_word_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_concurrency_cap()]] - code - gateway/tests/test_edge_pipeline.py
 - [[.test_config_disable_base64()]] - code - gateway/tests/test_encoding_detector.py
-- [[.test_counter_increments()]] - code - gateway/tests/test_canary_tripwire.py
 - [[.test_credit_card_stripped_from_response()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[.test_cross_context_injection_blocked()]] - code - gateway/tests/test_e2e_watchtower.py
-- [[.test_custom_config()_1]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_daily_call_budget()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_daily_delegation_budget()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_disabled_vendor_gets_nothing()]] - code - gateway/tests/test_edge_pipeline.py
 - [[.test_email_redacted()]] - code - gateway/tests/test_e2e_watchtower.py
-- [[.test_empty_input()]] - code - gateway/tests/test_canary_tripwire.py
 - [[.test_empty_input()_1]] - code - gateway/tests/test_encoding_detector.py
+- [[.test_encoded_injection_blocked()]] - code - gateway/tests/test_edge_pipeline.py
 - [[.test_encoding_detector_is_wired()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_escalation_ladder()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_extra_argument_rejected()]] - code - gateway/tests/test_edge_pipeline.py
 - [[.test_forwarded_message_has_audit_entry()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_garbage_token()]] - code - gateway/tests/test_edge_pipeline.py
 - [[.test_homoglyph_replaced()]] - code - gateway/tests/test_encoding_detector.py
+- [[.test_injection_in_arguments_blocked()]] - code - gateway/tests/test_edge_pipeline.py
 - [[.test_jailbreak_blocked()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_lists_only_profile_tools()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_local_agent_tools_hidden_without_local_agent()]] - code - gateway/tests/test_edge_pipeline.py
 - [[.test_low_trust_cannot_delete_file()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_monitor_mode_logs_but_allows_injection()]] - code - gateway/tests/test_edge_pipeline.py
 - [[.test_nested_encoding()]] - code - gateway/tests/test_encoding_detector.py
-- [[.test_no_canaries()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_normal_content_passes()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_oversized_response_denied()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_per_client_rate_limit()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_per_vendor_rate_limit_spans_clients()]] - code - gateway/tests/test_edge_pipeline.py
 - [[.test_phone_redacted()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_pii_blocks_in_block_mode()]] - code - gateway/tests/test_edge_pipeline.py
 - [[.test_pii_from_agent_a_not_in_agent_b_audit()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_pii_redacted_in_redact_mode()]] - code - gateway/tests/test_edge_pipeline.py
 - [[.test_pipeline_raises_with_only_prompt_guard()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[.test_pipeline_raises_without_pii_sanitizer()]] - code - gateway/tests/test_e2e_watchtower.py
-- [[.test_plain_canary_detected()]] - code - gateway/tests/test_canary_tripwire.py
 - [[.test_plain_text_no_detection()]] - code - gateway/tests/test_encoding_detector.py
+- [[.test_principal_is_never_the_owner()]] - code - gateway/tests/test_edge_pipeline.py
 - [[.test_prompt_guard_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[.test_prompt_guard_large_input()]] - code - gateway/tests/test_security_audit.py
-- [[.test_reversed_canary()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_rot13_canary()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_scan_response_blocks_on_canary()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_scan_response_no_block_when_block_disabled()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_scan_response_passes_clean_text()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_scan_response_records_scan_method()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_scan_response_returns_tripwire_response()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_rate_window_slides()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_recent_call_carries_vendor_and_timestamp()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_record_has_fr9_fields()]] - code - gateway/tests/test_edge_pipeline.py
 - [[.test_short_base64_not_flagged()]] - code - gateway/tests/test_encoding_detector.py
-- [[.test_spaced_canary()]] - code - gateway/tests/test_canary_tripwire.py
 - [[.test_ssn_redacted()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_tool_not_in_vendor_profile()]] - code - gateway/tests/test_edge_pipeline.py
 - [[.test_trusted_agent_can_send_message()]] - code - gateway/tests/test_e2e_watchtower.py
-- [[.test_url_encoded_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_unknown_tool_denied_and_audited()]] - code - gateway/tests/test_edge_pipeline.py
 - [[.test_url_encoding_detected()]] - code - gateway/tests/test_encoding_detector.py
-- [[.test_zero_width_bypass()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_vendor_kill_switch()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_write_without_approval_never_executes()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_writes_disabled_at_escalated()]] - code - gateway/tests/test_edge_pipeline.py
 - [[.test_zero_width_stripped()]] - code - gateway/tests/test_encoding_detector.py
 - [[.verify_audit_chain()]] - code - gateway/proxy/pipeline.py
 - [[.verify_chain()_1]] - code - gateway/proxy/pipeline.py
@@ -109,8 +118,6 @@ members: 209
 - [[Attempting to create a pipeline with no PII sanitizer raises RuntimeError.]] - rationale - gateway/tests/test_e2e_watchtower.py
 - [[Block credential display via untrusted sources (e.g., Telegram)          Args]] - rationale - gateway/ingest_api/sanitizer.py
 - [[Blocking agent A does not affect agent B's processing.]] - rationale - gateway/tests/test_e2e_watchtower.py
-- [[Bridge result returned by scan_response() for pipeline compatibility.]] - rationale - gateway/security/canary_tripwire.py
-- [[CanaryConfig]] - code - gateway/security/canary_tripwire.py
 - [[CanaryResult_1]] - code - gateway/security/canary_tripwire.py
 - [[CanaryTripwire]] - code - gateway/security/canary_tripwire.py
 - [[Clock_1]] - code - gateway/tests/test_edge_pipeline.py
@@ -129,6 +136,7 @@ members: 209
 - [[E2E-08 Every pipeline event — block or forward — produces an audit entry.]] - rationale - gateway/tests/test_e2e_watchtower.py
 - [[E2E-09 Two agents process independently with no cross-contamination.]] - rationale - gateway/tests/test_e2e_watchtower.py
 - [[E2E-10 SecurityPipeline refuses to operate without PII sanitizer.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Edge calls must not inherit the pipeline's owner exemption.]] - rationale - gateway/tests/test_edge_pipeline.py
 - [[Encoding detector is active in the pipeline.]] - rationale - gateway/tests/test_e2e_watchtower.py
 - [[EncodingConfig]] - code - gateway/security/encoding_detector.py
 - [[EncodingDetector]] - code - gateway/security/encoding_detector.py
@@ -171,7 +179,6 @@ members: 209
 - [[Set global observatory mode for all security modules.          Args]] - rationale - gateway/proxy/pipeline.py
 - [[Strip injected fake delimiters and return sanitized message.          Called whe]] - rationale - gateway/security/prompt_guard.py
 - [[TestAuditRecord]] - code - gateway/tests/test_edge_pipeline.py
-- [[TestCanaryTripwire]] - code - gateway/tests/test_canary_tripwire.py
 - [[TestCommandCenterStats]] - code - gateway/tests/test_edge_pipeline.py
 - [[TestE2E01PromptGuardBlocking]] - code - gateway/tests/test_e2e_watchtower.py
 - [[TestE2E02InboundPIIRedaction]] - code - gateway/tests/test_e2e_watchtower.py
@@ -185,7 +192,11 @@ members: 209
 - [[TestE2E10FailClosed]] - code - gateway/tests/test_e2e_watchtower.py
 - [[TestEncodingDetector]] - code - gateway/tests/test_encoding_detector.py
 - [[TestMonitorMode]] - code - gateway/tests/test_edge_pipeline.py
+- [[TestT1ToolAbuse]] - code - gateway/tests/test_edge_pipeline.py
+- [[TestT2Exfiltration]] - code - gateway/tests/test_edge_pipeline.py
+- [[TestT3Writes]] - code - gateway/tests/test_edge_pipeline.py
 - [[TestT4AuthN]] - code - gateway/tests/test_edge_pipeline.py
+- [[TestT9Abuse]] - code - gateway/tests/test_edge_pipeline.py
 - [[TestToolListing]] - code - gateway/tests/test_edge_pipeline.py
 - [[The check_rot13 config flag gates the rot13 layer.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[ToolResultSanitizer._extract_dict_content]] - code - gateway/security/tool_result_sanitizer.py
@@ -194,22 +205,25 @@ members: 209
 - [[ToolResultSanitizer._log_redaction_audit]] - code - gateway/security/tool_result_sanitizer.py
 - [[ToolResultSanitizer._reconstruct_result]] - code - gateway/security/tool_result_sanitizer.py
 - [[ToolResultSanitizer.sanitize_tool_result]] - code - gateway/security/tool_result_sanitizer.py
-- [[TripwireResponse]] - code - gateway/security/canary_tripwire.py
 - [[Verify the integrity of the retained hash-chain window.          When the bounde]] - rationale - gateway/proxy/pipeline.py
 - [[WS-E RT-2 Inbound Encoding Bypass Fix Rationale]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[XML injection-block filtering (function_callsthinkingsystem-reminderinvokeparameter)]] - concept - gateway/tests/test_filter_xml_blocks.py
 - [[_BrokenOutputCanary]] - code - gateway/tests/test_e2e_watchtower.py
 - [[_BrokenSanitizer]] - code - gateway/tests/test_e2e_watchtower.py
+- [[_pct()]] - code - gateway/tests/test_edge_benchmark.py
+- [[_profile()_1]] - code - gateway/tests/test_edge_pipeline.py
+- [[_text()]] - code - gateway/tests/test_edge_pipeline.py
+- [[_token()_1]] - code - gateway/tests/test_edge_pipeline.py
 - [[canary-cron.sh embedded Python main()]] - code - scripts/canary-cron.sh
 - [[canary_pipeline()]] - code - gateway/tests/test_canary.py
-- [[canary_tripwire.py]] - code - gateway/security/canary_tripwire.py
 - [[edge()_1]] - code - gateway/tests/test_edge_pipeline.py
 - [[encoding_detector.py]] - code - gateway/security/encoding_detector.py
 - [[pipeline()_1]] - code - gateway/tests/test_e2e_watchtower.py
 - [[sanitizer()_2]] - code - gateway/tests/test_e2e_watchtower.py
-- [[test_canary_tripwire.py]] - code - gateway/tests/test_canary_tripwire.py
 - [[test_e2e_watchtower.py]] - code - gateway/tests/test_e2e_watchtower.py
+- [[test_edge_benchmark.py]] - code - gateway/tests/test_edge_benchmark.py
 - [[test_edge_pipeline.py]] - code - gateway/tests/test_edge_pipeline.py
+- [[test_edge_read_call_latency()]] - code - gateway/tests/test_edge_benchmark.py
 - [[test_encoding_detector.py]] - code - gateway/tests/test_encoding_detector.py
 - [[test_encoding_detector_rot13_can_be_disabled()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[test_pipeline_all_modules_disabled()]] - code - gateway/tests/test_security_integration.py
@@ -217,6 +231,7 @@ members: 209
 - [[test_pipeline_fails_closed_on_output_canary_error()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[test_pipeline_fails_closed_without_pii()]] - code - gateway/tests/test_redteam_probes.py
 - [[test_pipeline_owner_exempt_from_fail_closed()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[throttle → writes disabled → token revoked → vendor disabled, each audited.]] - rationale - gateway/tests/test_edge_pipeline.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -226,28 +241,28 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 95 edges to [[_COMMUNITY_Community 7]]
+- 103 edges to [[_COMMUNITY_Community 7]]
 - 95 edges to [[_COMMUNITY_Community 24]]
 - 62 edges to [[_COMMUNITY_Community 0]]
-- 44 edges to [[_COMMUNITY_Community 2048]]
+- 60 edges to [[_COMMUNITY_Community 2048]]
+- 39 edges to [[_COMMUNITY_Community 30]]
 - 39 edges to [[_COMMUNITY_Community 11]]
-- 33 edges to [[_COMMUNITY_Community 203]]
 - 30 edges to [[_COMMUNITY_Community 43]]
-- 27 edges to [[_COMMUNITY_Community 30]]
+- 26 edges to [[_COMMUNITY_Community 75]]
 - 22 edges to [[_COMMUNITY_Community 22]]
 - 21 edges to [[_COMMUNITY_Community 151]]
 - 20 edges to [[_COMMUNITY_Community 63]]
-- 18 edges to [[_COMMUNITY_Community 75]]
 - 17 edges to [[_COMMUNITY_Community 80]]
-- 16 edges to [[_COMMUNITY_Community 41]]
-- 13 edges to [[_COMMUNITY_Community 436]]
+- 16 edges to [[_COMMUNITY_Community 32]]
+- 13 edges to [[_COMMUNITY_Community 254]]
+- 13 edges to [[_COMMUNITY_Community 70]]
 - 12 edges to [[_COMMUNITY_Community 28]]
+- 12 edges to [[_COMMUNITY_Community 436]]
 - 11 edges to [[_COMMUNITY_Community 123]]
 - 10 edges to [[_COMMUNITY_Community 3]]
-- 9 edges to [[_COMMUNITY_Community 254]]
-- 9 edges to [[_COMMUNITY_Community 70]]
+- 10 edges to [[_COMMUNITY_Community 1052]]
+- 9 edges to [[_COMMUNITY_Community 92]]
 - 9 edges to [[_COMMUNITY_Community 187]]
-- 8 edges to [[_COMMUNITY_Community 92]]
 - 8 edges to [[_COMMUNITY_Community 130]]
 - 7 edges to [[_COMMUNITY_Community 435]]
 - 7 edges to [[_COMMUNITY_Community 216]]
@@ -271,8 +286,6 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_Community 978]]
 - 2 edges to [[_COMMUNITY_Community 147]]
 - 2 edges to [[_COMMUNITY_Community 88]]
-- 2 edges to [[_COMMUNITY_Community 9]]
-- 2 edges to [[_COMMUNITY_Community 431]]
 - 2 edges to [[_COMMUNITY_Community 21]]
 - 2 edges to [[_COMMUNITY_Community 379]]
 - 2 edges to [[_COMMUNITY_Community 304]]
@@ -285,12 +298,15 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 1128]]
 - 1 edge to [[_COMMUNITY_Community 762]]
 - 1 edge to [[_COMMUNITY_Community 353]]
+- 1 edge to [[_COMMUNITY_Community 2405]]
 - 1 edge to [[_COMMUNITY_Community 1426]]
 - 1 edge to [[_COMMUNITY_Community 86]]
 - 1 edge to [[_COMMUNITY_Community 38]]
 - 1 edge to [[_COMMUNITY_Community 64]]
 - 1 edge to [[_COMMUNITY_Community 381]]
+- 1 edge to [[_COMMUNITY_Community 2177]]
 - 1 edge to [[_COMMUNITY_Community 56]]
+- 1 edge to [[_COMMUNITY_Community 431]]
 - 1 edge to [[_COMMUNITY_Community 162]]
 - 1 edge to [[_COMMUNITY_Community 2051]]
 - 1 edge to [[_COMMUNITY_Community 52]]
@@ -299,8 +315,8 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 577]]
 
 ## Top bridge nodes
-- [[PromptGuard]] - degree 173, connects to 30 communities
 - [[PIISanitizer]] - degree 202, connects to 29 communities
+- [[PromptGuard]] - degree 173, connects to 29 communities
 - [[SecurityPipeline]] - degree 144, connects to 24 communities
-- [[test_edge_pipeline.py]] - degree 35, connects to 10 communities
-- [[edge()_1]] - degree 23, connects to 9 communities
+- [[test_edge_pipeline.py]] - degree 35, connects to 9 communities
+- [[PipelineAction]] - degree 51, connects to 8 communities

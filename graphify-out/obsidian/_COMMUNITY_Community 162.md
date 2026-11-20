@@ -61,7 +61,6 @@ SORT file.name ASC
 ## Connections to other communities
 - 8 edges to [[_COMMUNITY_Community 17]]
 - 3 edges to [[_COMMUNITY_Community 151]]
-- 3 edges to [[_COMMUNITY_Community 431]]
 - 3 edges to [[_COMMUNITY_Community 22]]
 - 3 edges to [[_COMMUNITY_Community 329]]
 - 2 edges to [[_COMMUNITY_Community 120]]
@@ -69,6 +68,7 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_Community 23]]
 - 2 edges to [[_COMMUNITY_Community 73]]
 - 2 edges to [[_COMMUNITY_Community 21]]
+- 2 edges to [[_COMMUNITY_Community 96]]
 - 1 edge to [[_COMMUNITY_Community 6]]
 - 1 edge to [[_COMMUNITY_Community 62]]
 - 1 edge to [[_COMMUNITY_Community 0]]
@@ -80,6 +80,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 166]]
 - 1 edge to [[_COMMUNITY_Community 1210]]
 - 1 edge to [[_COMMUNITY_Community 626]]
+- 1 edge to [[_COMMUNITY_Community 431]]
 - 1 edge to [[_COMMUNITY_Community 221]]
 - 1 edge to [[_COMMUNITY_Community 684]]
 - 1 edge to [[_COMMUNITY_Community 154]]
@@ -89,7 +90,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 122]]
 - 1 edge to [[_COMMUNITY_Community 89]]
 - 1 edge to [[_COMMUNITY_Community 777]]
-- 1 edge to [[_COMMUNITY_Community 31]]
+- 1 edge to [[_COMMUNITY_Community 1]]
 - 1 edge to [[_COMMUNITY_Community 393]]
 - 1 edge to [[_COMMUNITY_Community 466]]
 

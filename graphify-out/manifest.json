@@ -11030,8 +11030,8 @@
     "semantic_hash": ""
   },
   "scripts/smoke.d/test-edge-keygen.sh": {
-    "mtime": 1795203968.7967443,
-    "ast_hash": "ba40f2293ac8279310ef28faca616843",
+    "mtime": 1795204289.6000726,
+    "ast_hash": "fc2a90cc19ae464f8747d837cb4faea7",
     "semantic_hash": ""
   },
   "tests/startup_smoke/test_hermes_edge_delegate_profile.sh": {

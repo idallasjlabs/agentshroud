@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "Community 80"
+community: "Community 24"
 location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_80
+  - community/Community_24
 ---
 
 # unwrap_untrusted()
@@ -22,4 +22,4 @@ tags:
 - [[test_signature_verifies_and_detects_tampering()]] - `calls` [EXTRACTED]
 - [[test_untrusted_envelope.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_80
+#graphify/code #graphify/EXTRACTED #community/Community_24

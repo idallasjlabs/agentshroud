@@ -1,11 +1,11 @@
 ---
 type: community
-members: 105
+members: 114
 ---
 
 # Community 40
 
-**Members:** 105 nodes
+**Members:** 114 nodes
 
 ## Members
 - [[.test_check_bot_updates_npm_failure_and_exec_failure()]] - code - gateway/tests/test_web_api_coverage.py
@@ -30,6 +30,7 @@ members: 105
 - [[.test_get_logs_for_service()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_get_logs_service_not_found_returns_404()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_get_logs_unknown_service_rejected()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_get_mode_default_enforce()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_invalid_mode_rejected()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_invalid_service_name_rejected()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_invalid_token_closes_4003()_1]] - code - gateway/tests/test_web_api_coverage.py
@@ -38,6 +39,7 @@ members: 105
 - [[.test_master_token_rejected_4003()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_missing_token_closes_4001()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_missing_token_closes_4001()_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_mode_request_defaults()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_rebuild_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_rebuild_success()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_report_with_healthy_runtime()]] - code - gateway/tests/test_web_api_coverage.py
@@ -51,6 +53,11 @@ members: 105
 - [[.test_rollback_agentshroud_success()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_rollback_bot()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_rollback_openclaw_alias()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_set_mode_cancels_previous_revert_task()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_set_mode_clamps_high_revert()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_set_mode_enforce_revert_task_is_noop()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_set_mode_invalid_returns_400()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_set_mode_monitor_auto_reverts()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_shutdown_brings_stack_down()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_shutdown_failure_reports_error()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_start_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
@@ -78,6 +85,7 @@ members: 105
 - [[Build a subprocess.run double that simulates the upgrade git flow.]] - rationale - gateway/tests/test_web_api_coverage.py
 - [[HTTPAuthorizationCredentials_1]] - code - gateway/web/api.py
 - [[KillSwitchAction]] - code - gateway/web/api.py
+- [[ModeRequest]] - code - gateway/web/api.py
 - [[Require valid Bearer token for all management endpoints.]] - rationale - gateway/web/api.py
 - [[Resolve the real Docker container name for a given bot_id — from     BotConfig.r]] - rationale - gateway/web/api.py
 - [[Restore AGENTSHROUD_MODE, revert task, and WS token registry per test.]] - rationale - gateway/tests/test_web_api_coverage.py
@@ -89,6 +97,7 @@ members: 105
 - [[TestKillSwitch_1]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestLogs]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestMgmtWsTokens]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestMode]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestOpenclawAliases]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestRebuild]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestRequireAuth]] - code - gateway/tests/test_web_api_coverage.py
@@ -122,19 +131,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 22 edges to [[_COMMUNITY_Community 92]]
 - 16 edges to [[_COMMUNITY_Community 68]]
-- 9 edges to [[_COMMUNITY_Community 49]]
-- 6 edges to [[_COMMUNITY_Community 125]]
-- 3 edges to [[_COMMUNITY_Community 57]]
-- 3 edges to [[_COMMUNITY_Community 1015]]
-- 2 edges to [[_COMMUNITY_Community 890]]
+- 16 edges to [[_COMMUNITY_Community 92]]
+- 10 edges to [[_COMMUNITY_Community 49]]
+- 8 edges to [[_COMMUNITY_Community 125]]
+- 5 edges to [[_COMMUNITY_Community 37]]
+- 4 edges to [[_COMMUNITY_Community 57]]
+- 4 edges to [[_COMMUNITY_Community 1015]]
+- 3 edges to [[_COMMUNITY_Community 890]]
 - 2 edges to [[_COMMUNITY_Community 7]]
 - 2 edges to [[_COMMUNITY_Community 137]]
-- 2 edges to [[_COMMUNITY_Community 37]]
 - 1 edge to [[_COMMUNITY_Community 707]]
 - 1 edge to [[_COMMUNITY_Community 10]]
 - 1 edge to [[_COMMUNITY_Community 1991]]
+- 1 edge to [[_COMMUNITY_Community 2177]]
+- 1 edge to [[_COMMUNITY_Community 1002]]
 - 1 edge to [[_COMMUNITY_Community 240]]
 - 1 edge to [[_COMMUNITY_Community 133]]
 - 1 edge to [[_COMMUNITY_Community 83]]
@@ -144,7 +155,7 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[require_auth()_1]] - degree 17, connects to 12 communities
-- [[UpdateRequest]] - degree 29, connects to 7 communities
-- [[KillSwitchAction]] - degree 27, connects to 6 communities
-- [[test_web_api_coverage.py]] - degree 30, connects to 3 communities
-- [[_resolve_bot_container()]] - degree 9, connects to 2 communities
+- [[ModeRequest]] - degree 47, connects to 8 communities
+- [[UpdateRequest]] - degree 29, connects to 6 communities
+- [[KillSwitchAction]] - degree 27, connects to 5 communities
+- [[test_web_api_coverage.py]] - degree 30, connects to 2 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_e2e_sdk.py"
 type: "code"
-community: "Community 41"
+community: "Community 32"
 location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_41
+  - community/Community_32
 ---
 
 # Facade
@@ -36,4 +36,4 @@ tags:
 - [[stack()]] - `calls` [EXTRACTED]
 - [[test_edge_e2e_sdk.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_41
+#graphify/code #graphify/INFERRED #community/Community_32

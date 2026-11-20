@@ -1,17 +1,19 @@
 ---
 type: community
-members: 72
+members: 75
 ---
 
 # Community 20
 
-**Members:** 72 nodes
+**Members:** 75 nodes
 
 ## Members
 - [[.__init__()_215]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.__init__()_216]] - code - gateway/tests/test_soc_services_coverage.py
+- [[._logs_via_socket()]] - code - gateway/soc/services.py
 - [[.close()_21]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.connect()_2]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.get_logs()_1]] - code - gateway/soc/services.py
 - [[.read()_2]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.settimeout()]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.test_200_returns_parsed_json()]] - code - gateway/tests/test_soc_services_coverage.py
@@ -51,6 +53,7 @@ members: 72
 - [[EPERM means the process exists but is owned by another user.]] - rationale - gateway/tests/test_soc_services_coverage.py
 - [[Intercept builtins.open for specific paths; delegate everything else.]] - rationale - gateway/tests/test_soc_services_coverage.py
 - [[PermissionError]] - code
+- [[Read container logs via Docker Unix socket — fallback when engine unavailable.]] - rationale - gateway/soc/services.py
 - [[Replace http.client.HTTPConnection so the in-function _UnixHTTP subclass     exe]] - rationale - gateway/tests/test_soc_services_coverage.py
 - [[Stale PID (ESRCH) is not EPERM — falls through to proc scan, then standby.]] - rationale - gateway/tests/test_soc_services_coverage.py
 - [[Stand-in for socket.socket — records calls, never opens a real fd.]] - rationale - gateway/tests/test_soc_services_coverage.py
@@ -89,9 +92,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 25 edges to [[_COMMUNITY_Community 890]]
+- 26 edges to [[_COMMUNITY_Community 890]]
+- 3 edges to [[_COMMUNITY_Community 38]]
 - 2 edges to [[_COMMUNITY_Community 68]]
-- 2 edges to [[_COMMUNITY_Community 38]]
 - 2 edges to [[_COMMUNITY_Community 19]]
 - 1 edge to [[_COMMUNITY_Community 30]]
 - 1 edge to [[_COMMUNITY_Community 439]]
@@ -105,4 +108,4 @@ SORT file.name ASC
 - [[test_soc_services_coverage.py]] - degree 24, connects to 3 communities
 - [[_FakeResponse]] - degree 13, connects to 2 communities
 - [[TestKnownServices]] - degree 7, connects to 2 communities
-- [[.test_engine_error_falls_back_to_socket()]] - degree 4, connects to 2 communities
+- [[.get_logs()_1]] - degree 4, connects to 2 communities

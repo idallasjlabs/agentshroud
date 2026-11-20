@@ -105,7 +105,7 @@ SORT file.name ASC
 - 5 edges to [[_COMMUNITY_Community 17]]
 - 4 edges to [[_COMMUNITY_Community 1305]]
 - 4 edges to [[_COMMUNITY_Community 96]]
-- 3 edges to [[_COMMUNITY_Community 1]]
+- 3 edges to [[_COMMUNITY_Community 31]]
 - 3 edges to [[_COMMUNITY_Community 941]]
 - 3 edges to [[_COMMUNITY_Community 577]]
 - 3 edges to [[_COMMUNITY_Community 11]]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "Community 1"
+community: "Community 31"
 location: "L73"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1
+  - community/Community_31
 ---
 
 # MiddlewareResult
@@ -140,4 +140,4 @@ tags:
 - [[test_middleware_coverage.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1
+#graphify/code #graphify/INFERRED #community/Community_31

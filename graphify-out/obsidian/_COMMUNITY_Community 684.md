@@ -104,12 +104,11 @@ SORT file.name ASC
 - 6 edges to [[_COMMUNITY_Community 151]]
 - 4 edges to [[_COMMUNITY_Community 362]]
 - 2 edges to [[_COMMUNITY_Community 140]]
+- 2 edges to [[_COMMUNITY_Community 96]]
 - 2 edges to [[_COMMUNITY_Community 45]]
 - 2 edges to [[_COMMUNITY_Community 5]]
 - 2 edges to [[_COMMUNITY_Community 809]]
 - 1 edge to [[_COMMUNITY_Community 162]]
-- 1 edge to [[_COMMUNITY_Community 96]]
-- 1 edge to [[_COMMUNITY_Community 431]]
 - 1 edge to [[_COMMUNITY_Community 76]]
 
 ## Top bridge nodes

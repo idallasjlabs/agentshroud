@@ -1,164 +1,74 @@
 ---
 type: community
-members: 151
+members: 61
 ---
 
 # Community 80
 
-**Members:** 151 nodes
+**Members:** 61 nodes
 
 ## Members
 - [[.__init__()_18]] - code - gateway/inbound_edge/facades.py
 - [[.__init__()_19]] - code - gateway/inbound_edge/facades.py
 - [[.__init__()_20]] - code - gateway/inbound_edge/facades.py
-- [[.__init__()_99]] - code - gateway/security/instruction_envelope.py
-- [[.__init__()_207]] - code - gateway/tests/test_soc_edge.py
 - [[._age_hours()]] - code - gateway/inbound_edge/facades.py
-- [[._compute_signature()]] - code - gateway/security/instruction_envelope.py
 - [[._parse()]] - code - gateway/inbound_edge/facades.py
 - [[.close()_5]] - code - gateway/inbound_edge/service.py
-- [[.is_owner()_4]] - code - gateway/tests/test_soc_edge.py
 - [[.profiles()]] - code - gateway/inbound_edge/service.py
-- [[.require()_1]] - code - gateway/tests/test_soc_edge.py
 - [[.run()_1]] - code - gateway/inbound_edge/facades.py
 - [[.run()_2]] - code - gateway/inbound_edge/facades.py
 - [[.run()_3]] - code - gateway/inbound_edge/facades.py
 - [[.service_token_ok()]] - code - gateway/inbound_edge/service.py
-- [[.sign()]] - code - gateway/security/instruction_envelope.py
-- [[.test_agent_ids_are_unique()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_bad_mode_rejected()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_bad_scope_422()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_confirm_required()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_confirm_required()_1]] - code - gateway/tests/test_soc_edge.py
-- [[.test_declared_mode_and_drift()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_derived_hosted_local()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_derived_hosted_when_no_local_bots()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_different_keys_fail_verification()]] - code - gateway/tests/test_instruction_envelope.py
-- [[.test_different_signers_same_key_verify()]] - code - gateway/tests/test_instruction_envelope.py
-- [[.test_disabled_edge_is_503()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_disabled_edge_is_503()_1]] - code - gateway/tests/test_soc_edge.py
-- [[.test_edge_disabled_local_only_derived()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_edge_rows_carry_connection_and_support()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_envelope_wraps_system_prompt()]] - code - gateway/tests/test_instruction_envelope.py
-- [[.test_envelope_wraps_tool_result()]] - code - gateway/tests/test_instruction_envelope.py
-- [[.test_explicit_mode_filters_rows()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_health_timeout_reads_unknown()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_hosted_rows_listed_from_disk_when_edge_disabled()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_invalid_value_is_reported_not_guessed()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_kill_client_must_exist()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_kill_jti_must_be_issued()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_kill_unknown_vendor_404()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_kill_vendor_writes_store_and_audits()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_kill_write_that_did_not_land_is_500()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_killed_vendor_cannot_enroll()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_local_health_from_service_manager()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_no_lockdown_module_reads_unknown()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_owner_only()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_rbac_denial_is_403()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_requires_manage_and_owner()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_requires_read_system()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_returns_working_code_once_and_never_logs_it()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_sign_and_verify_roundtrip()]] - code - gateway/tests/test_instruction_envelope.py
-- [[.test_suspended_client_marks_vendor_suspended()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_tampered_content_fails()]] - code - gateway/tests/test_instruction_envelope.py
-- [[.test_tampered_signature_fails()]] - code - gateway/tests/test_instruction_envelope.py
-- [[.test_ttl_capped_at_900()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_unhooked_hosted_agents_never_ok()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_unkill_owner_only()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_unkill_removes_and_noop_is_404()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_unkill_write_that_did_not_land_is_500()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_unreadable_profiles_with_edge_off_list_no_vendor_rows()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_unset_reads_as_local()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_vendor_must_exist_and_be_enabled()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_vendor_rows_carry_edge_counters()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_vendor_status_values_are_honest()]] - code - gateway/tests/test_soc_edge.py
-- [[.verify()]] - code - gateway/security/instruction_envelope.py
-- [[.wrap_system_prompt()]] - code - gateway/security/instruction_envelope.py
-- [[.wrap_tool_result()]] - code - gateway/security/instruction_envelope.py
 - [[A vendor profile is invalid. The edge must not start.]] - rationale - gateway/inbound_edge/profiles.py
-- [[AGENTSHROUD_DEPLOYMENT (scriptslibdeployment-mode.sh) shown next to what runs.]] - rationale - gateway/tests/test_soc_edge.py
 - [[Any_10]] - code - gateway/inbound_edge/facades.py
-- [[C46 Signed Instruction Envelopes (HMAC-SHA256 tamper detection for system promptstool results)]] - concept - gateway/tests/test_instruction_envelope.py
-- [[Convenience sign a system prompt as issuer='system'.]] - rationale - gateway/security/instruction_envelope.py
-- [[Convenience sign a tool result as issuer='tooltool_name'.]] - rationale - gateway/security/instruction_envelope.py
 - [[Draft202012Validator]] - code - gateway/inbound_edge/profiles.py
 - [[EdgeService]] - code - gateway/inbound_edge/service.py
 - [[EdgeStore_3]] - code - gateway/inbound_edge/service.py
 - [[EnvelopeSigner]] - code - gateway/inbound_edge/facades.py
-- [[EnvelopeSigner_1]] - code - gateway/security/instruction_envelope.py
-- [[Envelopes signed with one key should not verify with a different key.]] - rationale - gateway/tests/test_instruction_envelope.py
-- [[FakeCaller]] - code - gateway/tests/test_soc_edge.py
 - [[HermesDelegate]] - code - gateway/inbound_edge/facades.py
 - [[LabSearch]] - code - gateway/inbound_edge/facades.py
 - [[Load and validate every ``.yaml````.yml`` profile in ``directory``.      Rais]] - rationale - gateway/inbound_edge/profiles.py
-- [[Modifying content after signing should fail verification.]] - rationale - gateway/tests/test_instruction_envelope.py
-- [[Modifying the signature directly should fail verification.]] - rationale - gateway/tests/test_instruction_envelope.py
 - [[Path_1]] - code - gateway/inbound_edge/profiles.py
 - [[PkeStatus]] - code - gateway/inbound_edge/facades.py
 - [[ProfileError]] - code - gateway/inbound_edge/profiles.py
-- [[RBAC is recorded, not enforced; owner is switchable.]] - rationale - gateway/tests/test_soc_edge.py
-- [[Return True if the envelope's signature is valid.]] - rationale - gateway/security/instruction_envelope.py
-- [[Return ``(content, source)`` if ``wrapped`` is intact and correctly signed.]] - rationale - gateway/security/instruction_envelope.py
-- [[Return ``content`` wrapped and signed as untrusted third-party input.]] - rationale - gateway/security/instruction_envelope.py
-- [[Return a signed envelope for content.]] - rationale - gateway/security/instruction_envelope.py
-- [[Signs and verifies InstructionEnvelopes.      Usage          signer = Envelope]] - rationale - gateway/security/instruction_envelope.py
 - [[Stable per-install canary values, created once and kept in the edge store.]] - rationale - gateway/inbound_edge/service.py
-- [[TestAgentsRegistry]] - code - gateway/tests/test_soc_edge.py
-- [[TestDeploymentMode]] - code - gateway/tests/test_soc_edge.py
-- [[TestEdgeEnroll]] - code - gateway/tests/test_soc_edge.py
-- [[TestEdgeEventOverWebSocket]] - code - gateway/tests/test_soc_edge.py
-- [[TestEdgeKill]] - code - gateway/tests/test_soc_edge.py
-- [[TestEnvelopeSigner]] - code - gateway/tests/test_instruction_envelope.py
+- [[The route allowlist is enforced by EdgeGuard itself, not inherited from the SDK]] - rationale - gateway/tests/test_edge_fuzz.py
 - [[The signed descriptor says freshness per feed — a stale feed (e.g. a     GitHu]] - rationale - gateway/tests/test_edge_facades.py
 - [[The validated vendor profiles the pipeline enforces (read by the Command Center)]] - rationale - gateway/inbound_edge/service.py
-- [[Two signers sharing the same key can cross-verify envelopes.]] - rationale - gateway/tests/test_instruction_envelope.py
 - [[ValueError]] - code
 - [[Whole secret file (PEM is multi-line; gateway.utils.secrets keeps only the last]] - rationale - gateway/inbound_edge/service.py
-- [[_bot()_1]] - code - gateway/tests/test_soc_edge.py
-- [[_defang()]] - code - gateway/security/instruction_envelope.py
-- [[_id()]] - code - gateway/tests/test_untrusted_envelope.py
-- [[_no_rows()]] - code - gateway/tests/test_soc_edge.py
+- [[_keys()]] - code - gateway/tests/test_edge_fuzz.py
 - [[_parse()]] - code - gateway/inbound_edge/profiles.py
-- [[_profile()_2]] - code - gateway/tests/test_soc_edge.py
 - [[_read_secret_blob()]] - code - gateway/inbound_edge/service.py
-- [[_rows()]] - code - gateway/tests/test_soc_edge.py
 - [[_schema_validator()]] - code - gateway/inbound_edge/profiles.py
 - [[_telegram_send()_2]] - code - gateway/inbound_edge/service.py
 - [[build_edge_service()]] - code - gateway/inbound_edge/service.py
 - [[datetime_1]] - code - gateway/inbound_edge/facades.py
-- [[edge()_2]] - code - gateway/tests/test_soc_edge.py
 - [[facades.py]] - code - gateway/inbound_edge/facades.py
-- [[holder()]] - code - gateway/tests/test_soc_edge.py
-- [[instruction_envelope.py]] - code - gateway/security/instruction_envelope.py
 - [[load_profiles()]] - code - gateway/inbound_edge/profiles.py
+- [[no_exec()]] - code - gateway/tests/test_edge_fuzz.py
 - [[profiles.py]] - code - gateway/inbound_edge/profiles.py
 - [[service.py]] - code - gateway/inbound_edge/service.py
-- [[sign() + verify() should return True for unmodified content.]] - rationale - gateway/tests/test_instruction_envelope.py
-- [[signer()]] - code - gateway/tests/test_instruction_envelope.py
-- [[state()]] - code - gateway/tests/test_soc_edge.py
 - [[store_canaries()]] - code - gateway/inbound_edge/service.py
 - [[test_command_center_has_agents_and_edge_tabs()]] - code - gateway/tests/test_soc_edge.py
 - [[test_command_center_shows_deployment_and_connection()]] - code - gateway/tests/test_soc_edge.py
-- [[test_delegate_wraps_task_as_untrusted_and_targets_restricted_profile()]] - code - gateway/tests/test_edge_facades.py
+- [[test_control_characters_rejected_in_single_line_fields()]] - code - gateway/tests/test_edge_fuzz.py
+- [[test_control_characters_rejected_in_task()]] - code - gateway/tests/test_edge_fuzz.py
 - [[test_edge_facades.py]] - code - gateway/tests/test_edge_facades.py
-- [[test_edge_service_exposes_enforced_profiles()]] - code - gateway/tests/test_soc_edge.py
-- [[test_embedded_delimiters_are_neutralised()]] - code - gateway/tests/test_untrusted_envelope.py
-- [[test_instruction_envelope.py]] - code - gateway/tests/test_instruction_envelope.py
+- [[test_edge_fuzz.py]] - code - gateway/tests/test_edge_fuzz.py
+- [[test_edge_guard_allowlist_holds_even_if_inner_app_serves_everything()]] - code - gateway/tests/test_edge_fuzz.py
+- [[test_enums_and_types()]] - code - gateway/tests/test_edge_fuzz.py
+- [[test_gateway_rpc_parser_rejects_junk_without_500()]] - code - gateway/tests/test_edge_fuzz.py
+- [[test_lab_search_length_cap()]] - code - gateway/tests/test_edge_fuzz.py
 - [[test_lab_search_queries_fixed_endpoint_and_trims()]] - code - gateway/tests/test_edge_facades.py
+- [[test_max_results_enum()]] - code - gateway/tests/test_edge_fuzz.py
 - [[test_pke_status_freshness_is_none_without_dated_episodes()]] - code - gateway/tests/test_edge_facades.py
 - [[test_pke_status_reports_broken_feed_without_raising()]] - code - gateway/tests/test_edge_facades.py
 - [[test_pke_status_reports_freshness_the_descriptor_promises()]] - code - gateway/tests/test_edge_facades.py
 - [[test_pke_status_summary_and_per_feed()]] - code - gateway/tests/test_edge_facades.py
 - [[test_shellish_input_never_executes()]] - code - gateway/tests/test_edge_fuzz.py
-- [[test_signature_verifies_and_detects_tampering()]] - code - gateway/tests/test_untrusted_envelope.py
-- [[test_soc_edge.py]] - code - gateway/tests/test_soc_edge.py
-- [[test_source_is_sanitised()]] - code - gateway/tests/test_untrusted_envelope.py
-- [[test_untrusted_envelope.py]] - code - gateway/tests/test_untrusted_envelope.py
-- [[test_wrapped_content_is_delimited_and_labelled()]] - code - gateway/tests/test_untrusted_envelope.py
-- [[unwrap_untrusted()]] - code - gateway/security/instruction_envelope.py
-- [[wrap_system_prompt() sets issuer='system' and passes verification.]] - rationale - gateway/tests/test_instruction_envelope.py
-- [[wrap_tool_result() sets issuer='toolname' and passes verification.]] - rationale - gateway/tests/test_instruction_envelope.py
-- [[wrap_untrusted()]] - code - gateway/security/instruction_envelope.py
+- [[test_ticket_format()]] - code - gateway/tests/test_edge_fuzz.py
+- [[test_unknown_keys_always_rejected()]] - code - gateway/tests/test_edge_fuzz.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -168,30 +78,27 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 39 edges to [[_COMMUNITY_Community 2048]]
-- 25 edges to [[_COMMUNITY_Community 6]]
-- 23 edges to [[_COMMUNITY_Community 24]]
-- 19 edges to [[_COMMUNITY_Community 75]]
+- 30 edges to [[_COMMUNITY_Community 2048]]
+- 19 edges to [[_COMMUNITY_Community 24]]
 - 17 edges to [[_COMMUNITY_Community 84]]
-- 12 edges to [[_COMMUNITY_Community 41]]
-- 8 edges to [[_COMMUNITY_Community 229]]
-- 7 edges to [[_COMMUNITY_Community 32]]
-- 7 edges to [[_COMMUNITY_Community 194]]
+- 12 edges to [[_COMMUNITY_Community 32]]
+- 12 edges to [[_COMMUNITY_Community 75]]
+- 4 edges to [[_COMMUNITY_Community 41]]
 - 4 edges to [[_COMMUNITY_Community 7]]
-- 4 edges to [[_COMMUNITY_Community 50]]
 - 4 edges to [[_COMMUNITY_Community 379]]
-- 4 edges to [[_COMMUNITY_Community 151]]
-- 3 edges to [[_COMMUNITY_Community 10]]
-- 3 edges to [[_COMMUNITY_Community 62]]
+- 2 edges to [[_COMMUNITY_Community 1968]]
+- 2 edges to [[_COMMUNITY_Community 10]]
+- 2 edges to [[_COMMUNITY_Community 50]]
+- 2 edges to [[_COMMUNITY_Community 62]]
+- 2 edges to [[_COMMUNITY_Community 151]]
 - 1 edge to [[_COMMUNITY_Community 541]]
 - 1 edge to [[_COMMUNITY_Community 89]]
-- 1 edge to [[_COMMUNITY_Community 133]]
-- 1 edge to [[_COMMUNITY_Community 890]]
-- 1 edge to [[_COMMUNITY_Community 1248]]
+- 1 edge to [[_COMMUNITY_Community 281]]
+- 1 edge to [[_COMMUNITY_Community 1070]]
 
 ## Top bridge nodes
-- [[test_soc_edge.py]] - degree 34, connects to 9 communities
-- [[build_edge_service()]] - degree 28, connects to 8 communities
-- [[service.py]] - degree 26, connects to 7 communities
-- [[EdgeService]] - degree 34, connects to 6 communities
+- [[build_edge_service()]] - degree 28, connects to 9 communities
+- [[service.py]] - degree 26, connects to 9 communities
+- [[EdgeService]] - degree 34, connects to 7 communities
 - [[profiles.py]] - degree 11, connects to 6 communities
+- [[EdgeStore_3]] - degree 17, connects to 5 communities

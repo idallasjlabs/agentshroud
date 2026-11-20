@@ -1,18 +1,25 @@
 ---
 type: community
-members: 5
+members: 12
 ---
 
 # Community 2177
 
-**Members:** 5 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[Added_5]] - document - CHANGELOG.md
-- [[Changed_2]] - document - CHANGELOG.md
-- [[Fixed_6]] - document - CHANGELOG.md
-- [[Summary_6]] - document - CHANGELOG.md
-- [[1.3.0 Reliability (2026-07-21)]] - document - CHANGELOG.md
+- [[.test_default_revert_minutes_is_30()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_invalid_mode_returns_400()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_response_includes_previous_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_response_includes_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_revert_minutes_clamped_max()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_revert_minutes_clamped_min()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_set_enforce_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_set_monitor_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_set_observatory_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[TestSetMode]] - code - gateway/tests/test_observatory_mode.py
+- [[revert_after_minutes above 480 is clamped to 480.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[revert_after_minutes below 1 is clamped to 1.]] - rationale - gateway/tests/test_observatory_mode.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,12 +29,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1255]]
-- 1 edge to [[_COMMUNITY_Community 106]]
-- 1 edge to [[_COMMUNITY_Community 1386]]
-- 1 edge to [[_COMMUNITY_Community 2123]]
-- 1 edge to [[_COMMUNITY_Community 773]]
-- 1 edge to [[_COMMUNITY_Community 1380]]
+- 2 edges to [[_COMMUNITY_Community 92]]
+- 1 edge to [[_COMMUNITY_Community 84]]
+- 1 edge to [[_COMMUNITY_Community 9]]
+- 1 edge to [[_COMMUNITY_Community 40]]
 
 ## Top bridge nodes
-- [[1.3.0 Reliability (2026-07-21)]] - degree 10, connects to 6 communities
+- [[TestSetMode]] - degree 14, connects to 4 communities

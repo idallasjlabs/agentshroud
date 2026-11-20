@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "Community 79"
+community: "Community 44"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_79
+  - community/Community_44
 ---
 
 # TestWebSocketHandshakeAuth
@@ -25,4 +25,4 @@ tags:
 - [[WebSocket endpoints must validate token during handshake, not first message]] - `rationale_for` [EXTRACTED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_79
+#graphify/code #graphify/EXTRACTED #community/Community_44

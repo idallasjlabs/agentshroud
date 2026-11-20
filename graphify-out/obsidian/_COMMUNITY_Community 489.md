@@ -53,7 +53,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 70]]
 - 1 edge to [[_COMMUNITY_Community 60]]
 - 1 edge to [[_COMMUNITY_Community 17]]
-- 1 edge to [[_COMMUNITY_Community 9]]
+- 1 edge to [[_COMMUNITY_Community 92]]
 
 ## Top bridge nodes
 - [[cls]] - degree 21, connects to 12 communities

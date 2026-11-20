@@ -1,11 +1,11 @@
 ---
 type: community
-members: 77
+members: 84
 ---
 
 # Community 38
 
-**Members:** 77 nodes
+**Members:** 84 nodes
 
 ## Members
 - [[.__init__()_143]] - code - gateway/soc/services.py
@@ -13,11 +13,15 @@ members: 77
 - [[._describe_service()]] - code - gateway/soc/services.py
 - [[._ensure_rbac()]] - code - gateway/soc/contributors.py
 - [[._ensure_teams()]] - code - gateway/soc/contributors.py
+- [[._get_engine()]] - code - gateway/soc/services.py
 - [[._load_paused_ids()]] - code - gateway/soc/contributors.py
 - [[.get_contributor()]] - code - gateway/soc/contributors.py
 - [[.get_service()]] - code - gateway/soc/services.py
 - [[.list_contributors()]] - code - gateway/soc/contributors.py
 - [[.list_services()]] - code - gateway/soc/services.py
+- [[.restart_service()_1]] - code - gateway/soc/services.py
+- [[.start_service()]] - code - gateway/soc/services.py
+- [[.stop_service()_1]] - code - gateway/soc/services.py
 - [[.test_approved_status()]] - code - gateway/tests/test_soc_egress.py
 - [[.test_confirmation_required()]] - code - gateway/tests/test_soc_models.py
 - [[.test_construction()]] - code - gateway/tests/test_soc_models.py
@@ -33,6 +37,7 @@ members: 77
 - [[.test_stopped_service()]] - code - gateway/tests/test_soc_services.py
 - [[.test_unhealthy_service()]] - code - gateway/tests/test_soc_services.py
 - [[.test_with_resource_usage()]] - code - gateway/tests/test_soc_models.py
+- [[.update_service()]] - code - gateway/soc/services.py
 - [[Any_74]] - code - gateway/soc/services.py
 - [[ContributorRecord]] - code - gateway/soc/contributors.py
 - [[ContributorRecord_1]] - code - gateway/soc/models.py
@@ -41,6 +46,7 @@ members: 77
 - [[HealthStatus]] - code - gateway/soc/models.py
 - [[HealthStatus_1]] - code - gateway/soc/services.py
 - [[Platform]] - code - gateway/soc/models.py
+- [[Pull the latest image then restart the container.]] - rationale - gateway/soc/services.py
 - [[Query Docker daemon directly via Unix socket — no CLI needed.]] - rationale - gateway/soc/services.py
 - [[ResourceUsage_1]] - code - gateway/soc/models.py
 - [[Return 'running', 'stopped', or 'not_installed' for clamd (CC-01).]] - rationale - gateway/soc/services.py
@@ -48,6 +54,7 @@ members: 77
 - [[Return 'running', 'stopped', or 'not_installed' for openscap (CC-01).]] - rationale - gateway/soc/services.py
 - [[Return 'running', 'stopped', or 'not_installed' for wazuh-agentd (CC-01).]] - rationale - gateway/soc/services.py
 - [[Return ServiceDescriptor for each known container plus internal gateway services]] - rationale - gateway/soc/services.py
+- [[Return the container engine from app_state if not injected.]] - rationale - gateway/soc/services.py
 - [[Return the gateway's own container plus each configured bot's real     container]] - rationale - gateway/soc/services.py
 - [[RiskLevel_5]] - code - gateway/soc/models.py
 - [[SCLError]] - code - gateway/soc/models.py
@@ -94,11 +101,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 43 edges to [[_COMMUNITY_Community 890]]
+- 45 edges to [[_COMMUNITY_Community 890]]
 - 22 edges to [[_COMMUNITY_Community 6]]
 - 4 edges to [[_COMMUNITY_Community 614]]
 - 4 edges to [[_COMMUNITY_Community 51]]
 - 3 edges to [[_COMMUNITY_Community 194]]
+- 3 edges to [[_COMMUNITY_Community 20]]
 - 2 edges to [[_COMMUNITY_Community 7]]
 - 2 edges to [[_COMMUNITY_Community 104]]
 - 2 edges to [[_COMMUNITY_Community 0]]
@@ -106,7 +114,6 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_Community 1281]]
 - 2 edges to [[_COMMUNITY_Community 8]]
 - 2 edges to [[_COMMUNITY_Community 223]]
-- 2 edges to [[_COMMUNITY_Community 20]]
 - 1 edge to [[_COMMUNITY_Community 64]]
 - 1 edge to [[_COMMUNITY_Community 54]]
 - 1 edge to [[_COMMUNITY_Community 84]]
@@ -125,10 +132,12 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 24]]
 - 1 edge to [[_COMMUNITY_Community 154]]
 - 1 edge to [[_COMMUNITY_Community 1072]]
+- 1 edge to [[_COMMUNITY_Community 918]]
 - 1 edge to [[_COMMUNITY_Community 10]]
 - 1 edge to [[_COMMUNITY_Community 2334]]
 - 1 edge to [[_COMMUNITY_Community 917]]
 - 1 edge to [[_COMMUNITY_Community 82]]
+- 1 edge to [[_COMMUNITY_Community 68]]
 
 ## Top bridge nodes
 - [[str]] - degree 43, connects to 26 communities

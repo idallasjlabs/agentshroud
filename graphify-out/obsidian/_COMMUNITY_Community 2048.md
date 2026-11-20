@@ -1,11 +1,11 @@
 ---
 type: community
-members: 128
+members: 127
 ---
 
 # Community 2048
 
-**Members:** 128 nodes
+**Members:** 127 nodes
 
 ## Members
 - [[.__init__()_10]] - code - gateway/inbound_edge/call_pipeline.py
@@ -83,7 +83,6 @@ members: 128
 - [[EdgeStore_2]] - code - gateway/inbound_edge/oauth_service.py
 - [[Exception]] - code
 - [[Facade]] - code - gateway/inbound_edge/call_pipeline.py
-- [[GatewayError]] - code - gateway/inbound_edge/edge_app.py
 - [[Hash of the canonical arguments, excluding the ticket itself.]] - rationale - gateway/inbound_edge/approvals.py
 - [[In-memory counters for the Command Center (reset on restart).]] - rationale - gateway/inbound_edge/call_pipeline.py
 - [[LockdownLevel]] - code - gateway/inbound_edge/call_pipeline.py
@@ -145,23 +144,24 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 60 edges to [[_COMMUNITY_Community 84]]
 - 50 edges to [[_COMMUNITY_Community 30]]
-- 44 edges to [[_COMMUNITY_Community 84]]
-- 42 edges to [[_COMMUNITY_Community 41]]
-- 39 edges to [[_COMMUNITY_Community 80]]
-- 23 edges to [[_COMMUNITY_Community 32]]
+- 39 edges to [[_COMMUNITY_Community 32]]
+- 30 edges to [[_COMMUNITY_Community 80]]
 - 22 edges to [[_COMMUNITY_Community 135]]
-- 16 edges to [[_COMMUNITY_Community 203]]
-- 14 edges to [[_COMMUNITY_Community 75]]
+- 20 edges to [[_COMMUNITY_Community 75]]
+- 17 edges to [[_COMMUNITY_Community 41]]
 - 10 edges to [[_COMMUNITY_Community 14]]
 - 8 edges to [[_COMMUNITY_Community 7]]
 - 7 edges to [[_COMMUNITY_Community 70]]
+- 5 edges to [[_COMMUNITY_Community 1968]]
 - 5 edges to [[_COMMUNITY_Community 50]]
 - 3 edges to [[_COMMUNITY_Community 37]]
 - 3 edges to [[_COMMUNITY_Community 62]]
 - 2 edges to [[_COMMUNITY_Community 78]]
 - 2 edges to [[_COMMUNITY_Community 10]]
 - 2 edges to [[_COMMUNITY_Community 379]]
+- 2 edges to [[_COMMUNITY_Community 24]]
 - 1 edge to [[_COMMUNITY_Community 149]]
 - 1 edge to [[_COMMUNITY_Community 155]]
 - 1 edge to [[_COMMUNITY_Community 156]]
@@ -174,13 +174,14 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 160]]
 - 1 edge to [[_COMMUNITY_Community 49]]
 - 1 edge to [[_COMMUNITY_Community 201]]
+- 1 edge to [[_COMMUNITY_Community 1070]]
 - 1 edge to [[_COMMUNITY_Community 20]]
 - 1 edge to [[_COMMUNITY_Community 965]]
 - 1 edge to [[_COMMUNITY_Community 127]]
 
 ## Top bridge nodes
-- [[Exception]] - degree 20, connects to 14 communities
-- [[TokenService]] - degree 64, connects to 6 communities
-- [[EdgeApprovals]] - degree 54, connects to 5 communities
-- [[EdgeCallPipeline]] - degree 44, connects to 5 communities
-- [[EdgeDeps]] - degree 34, connects to 5 communities
+- [[Exception]] - degree 20, connects to 15 communities
+- [[call_pipeline.py]] - degree 24, connects to 5 communities
+- [[test_edge_approvals.py]] - degree 23, connects to 5 communities
+- [[VendorProfile_3]] - degree 16, connects to 5 communities
+- [[Any_13]] - degree 16, connects to 5 communities

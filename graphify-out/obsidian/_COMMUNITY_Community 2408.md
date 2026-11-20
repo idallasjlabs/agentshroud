@@ -1,15 +1,19 @@
 ---
 type: community
-members: 2
+members: 6
 ---
 
 # Community 2408
 
-**Members:** 2 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[.test_raw_web_fetch_json_url_with_trailing_quote_still_queues_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Trailing quote punctuation in leaked URL should still normalize and queue approv]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.__enter__()_1]] - code - gateway/tests/test_cli_coverage.py
+- [[.__exit__()_1]] - code - gateway/tests/test_cli_coverage.py
+- [[.__init__()_155]] - code - gateway/tests/test_cli_coverage.py
+- [[.read()]] - code - gateway/tests/test_cli_coverage.py
+- [[Context-manager stand-in for the object urlopen() yields.]] - rationale - gateway/tests/test_cli_coverage.py
+- [[_FakeHTTPResponse]] - code - gateway/tests/test_cli_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +23,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 845]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 626]]
+- 1 edge to [[_COMMUNITY_Community 170]]
+- 1 edge to [[_COMMUNITY_Community 488]]
 
 ## Top bridge nodes
-- [[.test_raw_web_fetch_json_url_with_trailing_quote_still_queues_approval()]] - degree 4, connects to 3 communities
+- [[_FakeHTTPResponse]] - degree 7, connects to 2 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "Community 80"
+community: "Community 24"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_80
+  - community/Community_24
 ---
 
 # instruction_envelope.py
@@ -18,4 +18,4 @@ tags:
 - [[unwrap_untrusted()]] - `contains` [EXTRACTED]
 - [[wrap_untrusted()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_80
+#graphify/code #graphify/EXTRACTED #community/Community_24

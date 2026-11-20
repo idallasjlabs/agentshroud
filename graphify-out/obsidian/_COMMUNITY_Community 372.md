@@ -43,13 +43,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_Community 240]]
+- 11 edges to [[_COMMUNITY_Community 240]]
 - 6 edges to [[_COMMUNITY_Community 225]]
 - 3 edges to [[_COMMUNITY_Community 918]]
+- 2 edges to [[_COMMUNITY_Community 203]]
 - 2 edges to [[_COMMUNITY_Community 385]]
 - 1 edge to [[_COMMUNITY_Community 250]]
 - 1 edge to [[_COMMUNITY_Community 743]]
-- 1 edge to [[_COMMUNITY_Community 1052]]
 
 ## Top bridge nodes
 - [[DockerEngine]] - degree 43, connects to 6 communities

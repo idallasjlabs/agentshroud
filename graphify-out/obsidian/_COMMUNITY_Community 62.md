@@ -137,14 +137,14 @@ SORT file.name ASC
 - 11 edges to [[_COMMUNITY_Community 229]]
 - 6 edges to [[_COMMUNITY_Community 707]]
 - 6 edges to [[_COMMUNITY_Community 10]]
-- 5 edges to [[_COMMUNITY_Community 79]]
+- 5 edges to [[_COMMUNITY_Community 44]]
 - 4 edges to [[_COMMUNITY_Community 151]]
 - 4 edges to [[_COMMUNITY_Community 23]]
 - 3 edges to [[_COMMUNITY_Community 2048]]
-- 3 edges to [[_COMMUNITY_Community 80]]
 - 3 edges to [[_COMMUNITY_Community 2154]]
 - 3 edges to [[_COMMUNITY_Community 6]]
 - 3 edges to [[_COMMUNITY_Community 85]]
+- 2 edges to [[_COMMUNITY_Community 80]]
 - 2 edges to [[_COMMUNITY_Community 254]]
 - 2 edges to [[_COMMUNITY_Community 329]]
 - 2 edges to [[_COMMUNITY_Community 30]]
@@ -155,11 +155,12 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 18]]
 - 1 edge to [[_COMMUNITY_Community 14]]
 - 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 75]]
 - 1 edge to [[_COMMUNITY_Community 143]]
 - 1 edge to [[_COMMUNITY_Community 1248]]
 
 ## Top bridge nodes
-- [[make_event()]] - degree 66, connects to 16 communities
+- [[make_event()]] - degree 66, connects to 17 communities
 - [[approval.py]] - degree 16, connects to 6 communities
 - [[dashboard.py]] - degree 23, connects to 5 communities
 - [[event_bus.py]] - degree 10, connects to 5 communities

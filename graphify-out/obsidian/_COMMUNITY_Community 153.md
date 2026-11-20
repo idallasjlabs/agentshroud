@@ -49,7 +49,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 780]]
+- 5 edges to [[_COMMUNITY_Community 780]]
 - 5 edges to [[_COMMUNITY_Community 1182]]
 - 5 edges to [[_COMMUNITY_Community 1183]]
 - 5 edges to [[_COMMUNITY_Community 1115]]
@@ -60,13 +60,14 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 2045]]
 - 1 edge to [[_COMMUNITY_Community 987]]
 - 1 edge to [[_COMMUNITY_Community 1090]]
+- 1 edge to [[_COMMUNITY_Community 2052]]
 - 1 edge to [[_COMMUNITY_Community 781]]
 - 1 edge to [[_COMMUNITY_Community 331]]
 - 1 edge to [[_COMMUNITY_Community 672]]
 - 1 edge to [[_COMMUNITY_Community 1561]]
 
 ## Top bridge nodes
-- [[AgentShroud Phase Review — 2026-02-23]] - degree 49, connects to 13 communities
+- [[AgentShroud Phase Review — 2026-02-23]] - degree 49, connects to 14 communities
 - [[AgentShroud Phase Review — 2026-03-05]] - degree 8, connects to 2 communities
 - [[3. Round 2 Findings]] - degree 5, connects to 2 communities
 - [[AgentShroud Phase Review — 2026-03-05 (Round 2)]] - degree 8, connects to 1 community

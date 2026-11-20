@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "Community 25"
+community: "Community 44"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_25
+  - community/Community_44
 ---
 
 # TestSSHStrictHostKeyChecking
@@ -20,4 +20,4 @@ tags:
 - [[Verify SSH proxy uses StrictHostKeyChecking=yes, not accept-new]] - `rationale_for` [EXTRACTED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_25
+#graphify/code #graphify/EXTRACTED #community/Community_44

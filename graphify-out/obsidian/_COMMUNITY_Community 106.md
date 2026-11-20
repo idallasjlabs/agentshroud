@@ -40,16 +40,15 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_Community 1380]]
+- 4 edges to [[_COMMUNITY_Community 1255]]
+- 4 edges to [[_COMMUNITY_Community 1386]]
 - 4 edges to [[_COMMUNITY_Community 773]]
-- 3 edges to [[_COMMUNITY_Community 1386]]
-- 3 edges to [[_COMMUNITY_Community 2123]]
-- 2 edges to [[_COMMUNITY_Community 1255]]
 - 2 edges to [[_COMMUNITY_Community 1984]]
 - 2 edges to [[_COMMUNITY_Community 2016]]
 - 1 edge to [[_COMMUNITY_Community 2039]]
-- 1 edge to [[_COMMUNITY_Community 2324]]
-- 1 edge to [[_COMMUNITY_Community 2177]]
 - 1 edge to [[_COMMUNITY_Community 1916]]
+- 1 edge to [[_COMMUNITY_Community 2123]]
+- 1 edge to [[_COMMUNITY_Community 2409]]
 
 ## Top bridge nodes
 - [[Added]] - degree 28, connects to 10 communities

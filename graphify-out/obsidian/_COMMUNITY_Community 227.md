@@ -49,17 +49,18 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_Community 126]]
-- 3 edges to [[_COMMUNITY_Community 118]]
 - 2 edges to [[_COMMUNITY_Community 139]]
 - 2 edges to [[_COMMUNITY_Community 104]]
+- 2 edges to [[_COMMUNITY_Community 118]]
 - 1 edge to [[_COMMUNITY_Community 66]]
 - 1 edge to [[_COMMUNITY_Community 420]]
 - 1 edge to [[_COMMUNITY_Community 547]]
+- 1 edge to [[_COMMUNITY_Community 1924]]
 - 1 edge to [[_COMMUNITY_Community 1143]]
 
 ## Top bridge nodes
+- [[upgrade-2026-09-24]] - degree 9, connects to 4 communities
 - [[check-vendor-compat.sh]] - degree 15, connects to 3 communities
-- [[upgrade-2026-09-24]] - degree 9, connects to 3 communities
 - [[check_openclaw()]] - degree 8, connects to 1 community
 - [[Sunday Upgrade Report 2026-09-06 (prod, disk-exhaustion incident)]] - degree 6, connects to 1 community
 - [[update-agentshroud.sh]] - degree 5, connects to 1 community

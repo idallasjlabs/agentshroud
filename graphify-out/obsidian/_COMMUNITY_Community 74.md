@@ -76,8 +76,9 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_Community 368]]
-- 4 edges to [[_COMMUNITY_Community 118]]
 - 3 edges to [[_COMMUNITY_Community 399]]
+- 2 edges to [[_COMMUNITY_Community 118]]
+- 2 edges to [[_COMMUNITY_Community 1924]]
 - 1 edge to [[_COMMUNITY_Community 522]]
 - 1 edge to [[_COMMUNITY_Community 68]]
 - 1 edge to [[_COMMUNITY_Community 42]]
@@ -86,8 +87,8 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 104]]
 
 ## Top bridge nodes
+- [[sync-cve-registry.py]] - degree 33, connects to 3 communities
 - [[agent_cve_registry.py]] - degree 5, connects to 3 communities
-- [[sync-cve-registry.py]] - degree 33, connects to 2 communities
 - [[process_ghsa_advisories()]] - degree 9, connects to 2 communities
 - [[get_agent_cve_source()]] - degree 6, connects to 1 community
 - [[get_agent_ghsa_repo()]] - degree 6, connects to 1 community

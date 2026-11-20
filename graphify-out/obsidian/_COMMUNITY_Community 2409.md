@@ -1,15 +1,18 @@
 ---
 type: community
-members: 2
+members: 5
 ---
 
 # Community 2409
 
-**Members:** 2 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[.test_long_outbound_message_quarantined()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Blocked outbound messages should be stored in outbound quarantine.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Added_2]] - document - CHANGELOG.md
+- [[Fixed_3]] - document - CHANGELOG.md
+- [[Known gaps (not yet closed)]] - document - CHANGELOG.md
+- [[Summary_3]] - document - CHANGELOG.md
+- [[1.5.2 (2026-08-23)]] - document - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +22,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 845]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 626]]
+- 2 edges to [[_COMMUNITY_Community 773]]
+- 1 edge to [[_COMMUNITY_Community 1255]]
+- 1 edge to [[_COMMUNITY_Community 106]]
 
 ## Top bridge nodes
-- [[.test_long_outbound_message_quarantined()]] - degree 4, connects to 3 communities
+- [[1.5.2 (2026-08-23)]] - degree 8, connects to 3 communities

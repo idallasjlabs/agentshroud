@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "Community 1023"
+community: "Community 2408"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1023
+  - community/Community_2408
 ---
 
 # _FakeHTTPResponse
@@ -20,4 +20,4 @@ tags:
 - [[SCLClient]] - `uses` [INFERRED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1023
+#graphify/code #graphify/EXTRACTED #community/Community_2408

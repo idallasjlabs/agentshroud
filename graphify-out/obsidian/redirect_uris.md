@@ -1,12 +1,12 @@
 ---
 source_file: "config/inbound-edge/schema.json"
 type: "code"
-community: "Community 1342"
+community: "Community 1552"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1342
+  - community/Community_1552
 ---
 
 # redirect_uris
@@ -17,4 +17,4 @@ tags:
 - [[properties_1]] - `contains` [EXTRACTED]
 - [[type_10]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1342
+#graphify/code #graphify/EXTRACTED #community/Community_1552

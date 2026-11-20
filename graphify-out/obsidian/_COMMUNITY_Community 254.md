@@ -174,11 +174,11 @@ SORT file.name ASC
 - 45 edges to [[_COMMUNITY_Community 978]]
 - 17 edges to [[_COMMUNITY_Community 6]]
 - 14 edges to [[_COMMUNITY_Community 30]]
+- 13 edges to [[_COMMUNITY_Community 84]]
 - 9 edges to [[_COMMUNITY_Community 890]]
-- 9 edges to [[_COMMUNITY_Community 84]]
 - 8 edges to [[_COMMUNITY_Community 151]]
 - 8 edges to [[_COMMUNITY_Community 7]]
-- 8 edges to [[_COMMUNITY_Community 1]]
+- 8 edges to [[_COMMUNITY_Community 31]]
 - 8 edges to [[_COMMUNITY_Community 194]]
 - 8 edges to [[_COMMUNITY_Community 23]]
 - 6 edges to [[_COMMUNITY_Community 143]]
@@ -186,8 +186,7 @@ SORT file.name ASC
 - 6 edges to [[_COMMUNITY_Community 19]]
 - 5 edges to [[_COMMUNITY_Community 2154]]
 - 4 edges to [[_COMMUNITY_Community 10]]
-- 4 edges to [[_COMMUNITY_Community 41]]
-- 4 edges to [[_COMMUNITY_Community 203]]
+- 4 edges to [[_COMMUNITY_Community 32]]
 - 3 edges to [[_COMMUNITY_Community 68]]
 - 3 edges to [[_COMMUNITY_Community 1658]]
 - 3 edges to [[_COMMUNITY_Community 78]]
@@ -211,6 +210,6 @@ SORT file.name ASC
 ## Top bridge nodes
 - [[models.py]] - degree 28, connects to 11 communities
 - [[Request_2]] - degree 36, connects to 10 communities
-- [[AuditStore_1]] - degree 58, connects to 8 communities
+- [[AuditStore_1]] - degree 58, connects to 7 communities
 - [[ApprovalMode]] - degree 31, connects to 7 communities
 - [[OpProxyRequest]] - degree 18, connects to 6 communities

@@ -50,9 +50,9 @@ SORT file.name ASC
 - 6 edges to [[_COMMUNITY_Community 225]]
 - 3 edges to [[_COMMUNITY_Community 918]]
 - 1 edge to [[_COMMUNITY_Community 372]]
+- 1 edge to [[_COMMUNITY_Community 203]]
 - 1 edge to [[_COMMUNITY_Community 385]]
 - 1 edge to [[_COMMUNITY_Community 743]]
-- 1 edge to [[_COMMUNITY_Community 1052]]
 
 ## Top bridge nodes
 - [[PodmanEngine]] - degree 45, connects to 7 communities

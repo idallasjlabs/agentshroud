@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_e2e_sdk.py"
 type: "code"
-community: "Community 41"
+community: "Community 32"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_41
+  - community/Community_32
 ---
 
 # test_edge_e2e_sdk.py
@@ -45,4 +45,4 @@ tags:
 - [[test_gateway_rpc_requires_service_token()]] - `contains` [EXTRACTED]
 - [[test_registration_refused_without_enrollment_window()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_41
+#graphify/code #graphify/EXTRACTED #community/Community_32

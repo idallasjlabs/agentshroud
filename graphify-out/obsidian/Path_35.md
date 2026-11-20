@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "Community 1070"
+community: "Community 436"
 location: "L43"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1070
+  - community/Community_436
 ---
 
 # Path
@@ -15,4 +15,4 @@ tags:
 - [[CollaboratorActivityTracker]] - `uses` [INFERRED]
 - [[_make_md()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1070
+#graphify/code #graphify/INFERRED #community/Community_436

@@ -1,11 +1,11 @@
 ---
 type: community
-members: 52
+members: 54
 ---
 
 # Community 104
 
-**Members:** 52 nodes
+**Members:** 54 nodes
 
 ## Members
 - [[ASH-OCLAW-113 auth_bypass partially_mitigated (running 2026.9.8, fixed_in None)]] - concept - docs/security/cve-triage-gaps.md
@@ -40,6 +40,8 @@ members: 52
 - [[Two-arm CVE remediation (vendor fix + AgentShroud gateway control)]] - rationale - prompts/sunday-upgrade.md
 - [[VulnClass]] - code - scripts/triage-cve-mitigations.py
 - [[Why agent_id cannot be triaged, or None if it can.]] - rationale - scripts/triage-cve-mitigations.py
+- [[_AGENT_CVE_REGISTRIES]] - code - gateway/security/agent_cve_registry.py
+- [[_HERMES_CVE_REGISTRY]] - code - gateway/security/agent_cve_registry.py
 - [[_consume_field]] - code - scripts/triage-cve-mitigations.py
 - [[_consume_field()]] - code - scripts/triage-cve-mitigations.py
 - [[_py_list_literal()]] - code - scripts/triage-cve-mitigations.py
@@ -75,11 +77,11 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_Community 420]]
 - 2 edges to [[_COMMUNITY_Community 227]]
 - 1 edge to [[_COMMUNITY_Community 74]]
-- 1 edge to [[_COMMUNITY_Community 139]]
+- 1 edge to [[_COMMUNITY_Community 1196]]
 
 ## Top bridge nodes
 - [[triage-cve-mitigations.py]] - degree 25, connects to 3 communities
 - [[VulnClass]] - degree 5, connects to 2 communities
 - [[CVE gap report built from invocation delta, not registry state]] - degree 4, connects to 2 communities
 - [[Coverage]] - degree 3, connects to 2 communities
-- [[triage_entry()]] - degree 9, connects to 1 community
+- [[triage_agent_full()]] - degree 7, connects to 1 community

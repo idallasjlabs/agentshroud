@@ -1,11 +1,11 @@
 ---
 type: community
-members: 114
+members: 115
 ---
 
 # Community 29
 
-**Members:** 114 nodes
+**Members:** 115 nodes
 
 ## Members
 - [[._all_not_run_patches()]] - code - gateway/tests/test_scanner_integration.py
@@ -13,6 +13,7 @@ members: 114
 - [[.test_at_least_one()]] - code - gateway/tests/test_scanner_integration.py
 - [[.test_baseline_at_least_two()]] - code - gateway/tests/test_scanner_integration.py
 - [[.test_baseline_three_without_daemon_config()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_clean_tools_improve_score()]] - code - gateway/tests/test_scanner_integration.py
 - [[.test_compliance_new_keys_present()]] - code - gateway/tests/test_scanner_integration.py
 - [[.test_compute_weighted_subscore_full_score()]] - code - gateway/tests/test_scanner_integration.py
 - [[.test_compute_weighted_subscore_zero_for_empty_map()]] - code - gateway/tests/test_scanner_integration.py
@@ -41,7 +42,7 @@ members: 114
 - [[NIST CSF domain map references only valid domain IDs.]] - rationale - gateway/tests/test_scanner_integration.py
 - [[New compliance sub-scores (EU AI Act, ISO 42001, NIST CSF, DISA STIG) appear in]] - rationale - gateway/tests/test_scanner_integration.py
 - [[Path_19]] - code - gateway/security/scanner_integration.py
-- [[Read and return the Docker daemon config from daemon.json, or {} if unavailable.]] - rationale - gateway/security/scanner_integration.py
+- [[Return Fluent Bit log collector status.      Fluent Bit is a log shipper, not a]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if a non-zombie falco process is running inside this container.]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if app_state has a non-None attribute with the given name.]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if fluent-bit pidfile tmpfluent-bit.pid exists with a live PID.]] - rationale - gateway/security/scanner_integration.py
@@ -94,7 +95,6 @@ members: 114
 - [[_is_fresh()]] - code - gateway/security/scanner_integration.py
 - [[_is_wazuh_agent_running()]] - code - gateway/security/scanner_integration.py
 - [[_read_compose_text()]] - code - gateway/security/scanner_integration.py
-- [[_read_docker_daemon_config()]] - code - gateway/security/scanner_integration.py
 - [[_score_access_control_authorization()]] - code - gateway/security/scanner_integration.py
 - [[_score_agent_behavior_integrity()]] - code - gateway/security/scanner_integration.py
 - [[_score_agent_identity_nhi()]] - code - gateway/security/scanner_integration.py
@@ -121,6 +121,7 @@ members: 114
 - [[_score_tool_use_safety()]] - code - gateway/security/scanner_integration.py
 - [[_security_scan_sh_text()]] - code - gateway/security/scanner_integration.py
 - [[compute_scorecard()]] - code - gateway/security/scanner_integration.py
+- [[get_fluent_bit_summary()]] - code - gateway/security/scanner_integration.py
 - [[scanner_integration.py]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
@@ -131,12 +132,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 41 edges to [[_COMMUNITY_Community 67]]
+- 45 edges to [[_COMMUNITY_Community 67]]
 - 12 edges to [[_COMMUNITY_Community 102]]
-- 8 edges to [[_COMMUNITY_Community 363]]
+- 6 edges to [[_COMMUNITY_Community 842]]
 - 6 edges to [[_COMMUNITY_Community 207]]
-- 4 edges to [[_COMMUNITY_Community 311]]
-- 3 edges to [[_COMMUNITY_Community 842]]
+- 5 edges to [[_COMMUNITY_Community 311]]
+- 4 edges to [[_COMMUNITY_Community 363]]
 - 2 edges to [[_COMMUNITY_Community 51]]
 - 1 edge to [[_COMMUNITY_Community 220]]
 - 1 edge to [[_COMMUNITY_Community 131]]
@@ -146,6 +147,6 @@ SORT file.name ASC
 ## Top bridge nodes
 - [[scanner_integration.py]] - degree 67, connects to 10 communities
 - [[compute_scorecard()]] - degree 61, connects to 8 communities
-- [[Path_19]] - degree 34, connects to 3 communities
+- [[Path_19]] - degree 34, connects to 4 communities
 - [[_is_fresh()]] - degree 8, connects to 2 communities
 - [[_app_state_has()]] - degree 23, connects to 1 community

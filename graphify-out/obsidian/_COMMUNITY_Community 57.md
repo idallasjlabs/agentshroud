@@ -77,14 +77,13 @@ SORT file.name ASC
 - 16 edges to [[_COMMUNITY_Community 394]]
 - 10 edges to [[_COMMUNITY_Community 137]]
 - 8 edges to [[_COMMUNITY_Community 49]]
+- 4 edges to [[_COMMUNITY_Community 40]]
 - 3 edges to [[_COMMUNITY_Community 890]]
-- 3 edges to [[_COMMUNITY_Community 40]]
 - 2 edges to [[_COMMUNITY_Community 162]]
 - 1 edge to [[_COMMUNITY_Community 2048]]
-- 1 edge to [[_COMMUNITY_Community 92]]
 
 ## Top bridge nodes
-- [[IntelReportStore]] - degree 39, connects to 6 communities
+- [[IntelReportStore]] - degree 39, connects to 5 communities
 - [[CompetitiveIntelReport_1]] - degree 36, connects to 4 communities
 - [[CompetitorEntry_1]] - degree 22, connects to 4 communities
 - [[Citation_1]] - degree 11, connects to 3 communities

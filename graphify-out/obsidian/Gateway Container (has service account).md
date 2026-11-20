@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-12-credential-flow.svg"
 type: "concept"
-community: "Community 1262"
+community: "Community 226"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1262
+  - community/Community_226
 ---
 
 # Gateway Container (has service account)
@@ -14,4 +14,4 @@ tags:
 - [[POST credentialsop-proxy endpoint]] - `calls` [EXTRACTED]
 - [[op_proxy_read_with_retry() (cascading retries 5s,10s,15s,30s,60s)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1262
+#graphify/concept #graphify/EXTRACTED #community/Community_226

@@ -1,18 +1,21 @@
 ---
 type: community
-members: 84
+members: 86
 ---
 
 # Community 1278
 
-**Members:** 84 nodes
+**Members:** 86 nodes
 
 ## Members
+- [[.__aenter__()_3]] - code - gateway/tests/test_llm_proxy.py
+- [[.__aexit__()_3]] - code - gateway/tests/test_llm_proxy.py
 - [[.__init__()_39]] - code - gateway/proxy/llm_proxy.py
 - [[.__init__()_188]] - code - gateway/tests/test_llm_proxy.py
 - [[.__init__()_189]] - code - gateway/tests/test_llm_proxy.py
-- [[._flatten_fieldflare_schema()]] - code - gateway/proxy/llm_proxy.py
-- [[._merge_object_schemas()]] - code - gateway/proxy/llm_proxy.py
+- [[.__init__()_190]] - code - gateway/tests/test_llm_proxy.py
+- [[.aiter_bytes()]] - code - gateway/tests/test_llm_proxy.py
+- [[.aread()]] - code - gateway/tests/test_llm_proxy.py
 - [[.block_credentials()_1]] - code - gateway/tests/test_llm_proxy.py
 - [[.can_use_tool()_1]] - code - gateway/tests/test_llm_proxy.py
 - [[.filter_xml_blocks()_1]] - code - gateway/tests/test_llm_proxy.py
@@ -42,13 +45,12 @@ members: 84
 - [[Regression 2026-09-16 openai-local is AgentShroud's own local-model     prov]] - rationale - gateway/tests/test_llm_proxy.py
 - [[Repeated connect failures log one WARNING per window, not per request.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[Return a monkeypatched urlopen that captures the Request headers.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Rewrite a tool-parameter JSON schema into the subset Fieldflare's         Gemma]] - rationale - gateway/proxy/llm_proxy.py
 - [[Same regression as test_proxy_messages_strips_openai_local_prefix_and_routes_to_]] - rationale - gateway/tests/test_llm_proxy.py
 - [[Streaming Anthropic request triggers inject_headers before httpx connects.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[The combined path v1chatcompletions with model=gemini- must end     up POST]] - rationale - gateway/tests/test_gemini_via_openai_path.py
-- [[Union several object schemas into one (see _flatten_fieldflare_schema).]] - rationale - gateway/proxy/llm_proxy.py
 - [[_FakeSanitizer]] - code - gateway/tests/test_llm_proxy.py
 - [[_FakeToolACL]] - code - gateway/tests/test_llm_proxy.py
+- [[_HeadFakeResponse]] - code - gateway/tests/test_llm_proxy.py
 - [[_TrackingInjector]] - code - gateway/tests/test_llm_proxy.py
 - [[_is_connect_error matches connection-level failures only.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[_make_fake_urlopen()]] - code - gateway/tests/test_llm_proxy.py
@@ -101,8 +103,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 27 edges to [[_COMMUNITY_Community 1787]]
-- 10 edges to [[_COMMUNITY_Community 53]]
+- 28 edges to [[_COMMUNITY_Community 1787]]
+- 8 edges to [[_COMMUNITY_Community 53]]
 - 7 edges to [[_COMMUNITY_Community 129]]
 - 4 edges to [[_COMMUNITY_Community 5]]
 - 3 edges to [[_COMMUNITY_Community 361]]

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-18-runbook.png"
 type: "image"
-community: "Community 1262"
+community: "Community 226"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_1262
+  - community/Community_226
 ---
 
 # Troubleshooting Runbook Decision Tree
@@ -17,4 +17,4 @@ tags:
 - [[Runbook branch Security alert → review blocked_domainHIGH threat entries → legitimate action allowlist vs kill switch]] - `conceptually_related_to` [EXTRACTED]
 - [[Severity matrix P1 Critical  P2 High  P3 Medium  P4 Low, with owners and response windows]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_1262
+#graphify/image #graphify/EXTRACTED #community/Community_226

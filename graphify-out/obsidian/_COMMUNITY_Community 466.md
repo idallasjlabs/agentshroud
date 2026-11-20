@@ -44,7 +44,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 421]]
 - 1 edge to [[_COMMUNITY_Community 904]]
 - 1 edge to [[_COMMUNITY_Community 1989]]
-- 1 edge to [[_COMMUNITY_Community 431]]
+- 1 edge to [[_COMMUNITY_Community 96]]
 - 1 edge to [[_COMMUNITY_Community 162]]
 
 ## Top bridge nodes

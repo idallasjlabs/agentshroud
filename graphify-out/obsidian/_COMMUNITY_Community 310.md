@@ -45,7 +45,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 118]]
+- 1 edge to [[_COMMUNITY_Community 1924]]
 
 ## Top bridge nodes
 - [[main()_28]] - degree 3, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "rationale"
-community: "Community 1070"
+community: "Community 436"
 location: "L136"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1070
+  - community/Community_436
 ---
 
 # Append one activity entry for any tracked collaborator or the owner.          Ar
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.record_activity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1070
+#graphify/rationale #graphify/EXTRACTED #community/Community_436

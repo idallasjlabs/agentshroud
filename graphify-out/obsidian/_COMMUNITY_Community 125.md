@@ -73,14 +73,13 @@ SORT file.name ASC
 - 28 edges to [[_COMMUNITY_Community 57]]
 - 22 edges to [[_COMMUNITY_Community 137]]
 - 17 edges to [[_COMMUNITY_Community 49]]
-- 6 edges to [[_COMMUNITY_Community 40]]
+- 8 edges to [[_COMMUNITY_Community 40]]
 - 2 edges to [[_COMMUNITY_Community 890]]
-- 2 edges to [[_COMMUNITY_Community 92]]
 - 1 edge to [[_COMMUNITY_Community 162]]
 
 ## Top bridge nodes
-- [[DraftEntry]] - degree 45, connects to 5 communities
-- [[CitationVerifier]] - degree 43, connects to 5 communities
+- [[DraftEntry]] - degree 45, connects to 4 communities
+- [[CitationVerifier]] - degree 43, connects to 4 communities
 - [[IntelDraftRequest]] - degree 7, connects to 3 communities
 - [[IntelDraftEntry]] - degree 6, connects to 3 communities
 - [[TestVerifyEntry]] - degree 19, connects to 2 communities

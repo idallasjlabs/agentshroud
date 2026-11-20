@@ -1,15 +1,19 @@
 ---
 type: community
-members: 2
+members: 6
 ---
 
 # Community 2406
 
-**Members:** 2 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[.test_nonce_expired_rejected()]] - code - gateway/tests/test_session_security.py
-- [[A nonce with a timestamp outside the 5-min window is rejected.]] - rationale - gateway/tests/test_session_security.py
+- [[Added_10]] - document - CHANGELOG.md
+- [[Changed_6]] - document - CHANGELOG.md
+- [[Fixed_14]] - document - CHANGELOG.md
+- [[Summary_17]] - document - CHANGELOG.md
+- [[Tests_3]] - document - CHANGELOG.md
+- [[Unreleased — featv0.8.0-enforcement-hardening (session 2 — 2026-03-14)]] - document - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 76]]
+- 1 edge to [[_COMMUNITY_Community 1255]]
 
 ## Top bridge nodes
-- [[.test_nonce_expired_rejected()]] - degree 2, connects to 1 community
+- [[Unreleased — featv0.8.0-enforcement-hardening (session 2 — 2026-03-14)]] - degree 6, connects to 1 community

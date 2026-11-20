@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/edge_app.py"
 type: "code"
-community: "Community 2048"
+community: "Community 41"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2048
+  - community/Community_41
 ---
 
 # GatewayError
@@ -21,4 +21,4 @@ tags:
 - [[edge_app.py]] - `contains` [EXTRACTED]
 - [[test_edge_service_routes.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2048
+#graphify/code #graphify/EXTRACTED #community/Community_41

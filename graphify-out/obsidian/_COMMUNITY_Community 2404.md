@@ -1,15 +1,23 @@
 ---
 type: community
-members: 2
+members: 10
 ---
 
 # Community 2404
 
-**Members:** 2 nodes
+**Members:** 10 nodes
 
 ## Members
+- [[.manager()_2]] - code - gateway/tests/test_session_security.py
+- [[.test_nonce_expired_rejected()]] - code - gateway/tests/test_session_security.py
 - [[.test_nonce_first_use_passes()]] - code - gateway/tests/test_session_security.py
+- [[.test_nonce_generation_unique()]] - code - gateway/tests/test_session_security.py
+- [[.test_nonce_replay_blocked()]] - code - gateway/tests/test_session_security.py
 - [[A freshly generated nonce validates on first use.]] - rationale - gateway/tests/test_session_security.py
+- [[A nonce with a timestamp outside the 5-min window is rejected.]] - rationale - gateway/tests/test_session_security.py
+- [[Each call generates a distinct nonce.]] - rationale - gateway/tests/test_session_security.py
+- [[Replaying the same nonce is rejected.]] - rationale - gateway/tests/test_session_security.py
+- [[TestInstructionNonce]] - code - gateway/tests/test_session_security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +27,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 76]]
+- 6 edges to [[_COMMUNITY_Community 76]]
+- 2 edges to [[_COMMUNITY_Community 477]]
 
 ## Top bridge nodes
-- [[.test_nonce_first_use_passes()]] - degree 2, connects to 1 community
+- [[TestInstructionNonce]] - degree 12, connects to 2 communities
+- [[.manager()_2]] - degree 2, connects to 1 community

@@ -1,11 +1,11 @@
 ---
 type: community
-members: 96
+members: 97
 ---
 
 # Community 51
 
-**Members:** 96 nodes
+**Members:** 97 nodes
 
 ## Members
 - [[._make_state_with_bot()]] - code - gateway/tests/test_soc_bots.py
@@ -97,6 +97,7 @@ members: 96
 - [[get_agent_cves()]] - code - gateway/soc/router.py
 - [[get_config()]] - code - gateway/soc/router.py
 - [[get_egress_history()]] - code - gateway/soc/router.py
+- [[get_egress_log()]] - code - gateway/soc/router.py
 - [[get_egress_pending()_1]] - code - gateway/soc/router.py
 - [[get_scanner_results()]] - code - gateway/soc/router.py
 - [[get_security_events()]] - code - gateway/soc/router.py
@@ -113,11 +114,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 33 edges to [[_COMMUNITY_Community 10]]
+- 34 edges to [[_COMMUNITY_Community 10]]
 - 16 edges to [[_COMMUNITY_Community 6]]
 - 15 edges to [[_COMMUNITY_Community 194]]
 - 9 edges to [[_COMMUNITY_Community 37]]
-- 5 edges to [[_COMMUNITY_Community 614]]
+- 6 edges to [[_COMMUNITY_Community 614]]
 - 4 edges to [[_COMMUNITY_Community 890]]
 - 4 edges to [[_COMMUNITY_Community 38]]
 - 2 edges to [[_COMMUNITY_Community 29]]
@@ -129,6 +130,6 @@ SORT file.name ASC
 ## Top bridge nodes
 - [[test_soc_bots.py]] - degree 38, connects to 6 communities
 - [[compute_bot_scorecard()]] - degree 23, connects to 4 communities
-- [[.test_filters_egress_log_by_bot_id()]] - degree 6, connects to 3 communities
 - [[TestComputeBotScorecard_1]] - degree 20, connects to 2 communities
 - [[TestBotSelectorFrontend]] - degree 12, connects to 2 communities
+- [[get_security_events()]] - degree 10, connects to 2 communities

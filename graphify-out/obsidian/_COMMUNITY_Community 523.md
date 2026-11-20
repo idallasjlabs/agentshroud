@@ -41,15 +41,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 226]]
-- 3 edges to [[_COMMUNITY_Community 1262]]
+- 9 edges to [[_COMMUNITY_Community 226]]
 - 2 edges to [[_COMMUNITY_Community 144]]
 - 1 edge to [[_COMMUNITY_Community 421]]
 - 1 edge to [[_COMMUNITY_Community 2040]]
 
 ## Top bridge nodes
-- [[Approval Queue (human-in-the-loop)_1]] - degree 10, connects to 3 communities
-- [[MCP Inspector (injection scan, PII scan, sensitive-op scan; ThreatLevel NONELOWMEDIUMHIGH)]] - degree 8, connects to 2 communities
+- [[Approval Queue (human-in-the-loop)_1]] - degree 10, connects to 2 communities
 - [[Telegram Message Sequence Diagram]] - degree 7, connects to 2 communities
+- [[MCP Inspector (injection scan, PII scan, sensitive-op scan; ThreatLevel NONELOWMEDIUMHIGH)]] - degree 8, connects to 1 community
 - [[ledger.db — audit ledger (Layer 3 persistence; hash-only, 90-day retention, auto-purge at expires_at)]] - degree 8, connects to 1 community
 - [[EphemeralTransient data (never persisted raw)]] - degree 5, connects to 1 community

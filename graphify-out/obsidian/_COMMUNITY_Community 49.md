@@ -95,7 +95,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 17 edges to [[_COMMUNITY_Community 125]]
 - 12 edges to [[_COMMUNITY_Community 10]]
-- 9 edges to [[_COMMUNITY_Community 40]]
+- 10 edges to [[_COMMUNITY_Community 40]]
 - 8 edges to [[_COMMUNITY_Community 57]]
 - 7 edges to [[_COMMUNITY_Community 918]]
 - 5 edges to [[_COMMUNITY_Community 181]]
@@ -108,7 +108,6 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_Community 743]]
 - 2 edges to [[_COMMUNITY_Community 102]]
 - 2 edges to [[_COMMUNITY_Community 83]]
-- 2 edges to [[_COMMUNITY_Community 92]]
 - 1 edge to [[_COMMUNITY_Community 2048]]
 - 1 edge to [[_COMMUNITY_Community 890]]
 - 1 edge to [[_COMMUNITY_Community 163]]
@@ -118,6 +117,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 943]]
 - 1 edge to [[_COMMUNITY_Community 924]]
 - 1 edge to [[_COMMUNITY_Community 66]]
+- 1 edge to [[_COMMUNITY_Community 92]]
 - 1 edge to [[_COMMUNITY_Community 575]]
 
 ## Top bridge nodes

@@ -1,15 +1,21 @@
 ---
 type: community
-members: 2
+members: 8
 ---
 
 # Community 2405
 
-**Members:** 2 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[.test_nonce_replay_blocked()]] - code - gateway/tests/test_session_security.py
-- [[Replaying the same nonce is rejected.]] - rationale - gateway/tests/test_session_security.py
+- [[._fake_get_updates_urlopen()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[._make_proxy_with_mock_buffer()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_json_body_still_calls_mark_delivered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_url_encoded_body_calls_mark_delivered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[JSON getUpdates body must still call mark_delivered (existing behaviour preserve]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestReplayBufferOffsetParsing]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[URL-encoded getUpdates body must call mark_delivered with the correct int offset]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Verify URL-encoded and JSON getUpdates bodies both trigger mark_delivered correc]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +25,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 76]]
+- 2 edges to [[_COMMUNITY_Community 436]]
+- 2 edges to [[_COMMUNITY_Community 2]]
+- 1 edge to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 84]]
+- 1 edge to [[_COMMUNITY_Community 14]]
 
 ## Top bridge nodes
-- [[.test_nonce_replay_blocked()]] - degree 2, connects to 1 community
+- [[TestReplayBufferOffsetParsing]] - degree 10, connects to 4 communities
+- [[._make_proxy_with_mock_buffer()]] - degree 5, connects to 1 community

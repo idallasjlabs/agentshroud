@@ -1,17 +1,21 @@
 ---
 type: community
-members: 4
+members: 8
 ---
 
 # Community 2324
 
-**Members:** 4 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Added_7]] - document - CHANGELOG.md
-- [[Fixed_11]] - document - CHANGELOG.md
-- [[Summary_11]] - document - CHANGELOG.md
-- [[1.2.0 — featesp32-s3-hermes-voice (2026-06-24)]] - document - CHANGELOG.md
+- [[.test_ws_token_with_bad_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_ws_token_with_valid_cookie()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_ws_token_without_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
+- [[Dashboard ws-token endpoint returns token only for cookie-authed sessions]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET dashboardws-token with bad cookie returns 403]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET dashboardws-token with valid cookie returns token]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET dashboardws-token without cookie returns 403]] - rationale - gateway/tests/test_security_fixes.py
+- [[TestDashboardWSToken]] - code - gateway/tests/test_security_fixes.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,10 +25,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1255]]
-- 1 edge to [[_COMMUNITY_Community 106]]
-- 1 edge to [[_COMMUNITY_Community 2123]]
-- 1 edge to [[_COMMUNITY_Community 773]]
+- 2 edges to [[_COMMUNITY_Community 44]]
+- 1 edge to [[_COMMUNITY_Community 25]]
+- 1 edge to [[_COMMUNITY_Community 7]]
 
 ## Top bridge nodes
-- [[1.2.0 — featesp32-s3-hermes-voice (2026-06-24)]] - degree 7, connects to 4 communities
+- [[TestDashboardWSToken]] - degree 8, connects to 3 communities

@@ -25,12 +25,11 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_Community 106]]
+- 2 edges to [[_COMMUNITY_Community 773]]
 - 1 edge to [[_COMMUNITY_Community 1255]]
 - 1 edge to [[_COMMUNITY_Community 1386]]
-- 1 edge to [[_COMMUNITY_Community 2123]]
-- 1 edge to [[_COMMUNITY_Community 773]]
 - 1 edge to [[_COMMUNITY_Community 1380]]
 - 1 edge to [[_COMMUNITY_Community 1984]]
 
 ## Top bridge nodes
-- [[Unreleased — feathttp-connect-proxy + featcredential-isolation]] - degree 14, connects to 7 communities
+- [[Unreleased — feathttp-connect-proxy + featcredential-isolation]] - degree 14, connects to 6 communities

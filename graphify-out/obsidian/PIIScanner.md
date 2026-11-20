@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "Community 31"
+community: "Community 1"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_31
+  - community/Community_1
 ---
 
 # PIIScanner
@@ -28,4 +28,4 @@ tags:
 - [[file_sandbox.py]] - `contains` [EXTRACTED]
 - [[test_file_sandbox.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_31
+#graphify/code #graphify/EXTRACTED #community/Community_1

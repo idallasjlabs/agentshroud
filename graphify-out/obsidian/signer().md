@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "code"
-community: "Community 80"
+community: "Community 24"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_80
+  - community/Community_24
 ---
 
 # signer()
@@ -15,4 +15,4 @@ tags:
 - [[EnvelopeSigner_1]] - `calls` [EXTRACTED]
 - [[test_instruction_envelope.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_80
+#graphify/code #graphify/EXTRACTED #community/Community_24

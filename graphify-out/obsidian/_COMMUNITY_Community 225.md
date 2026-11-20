@@ -71,7 +71,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 18 edges to [[_COMMUNITY_Community 240]]
+- 12 edges to [[_COMMUNITY_Community 240]]
+- 6 edges to [[_COMMUNITY_Community 203]]
 - 6 edges to [[_COMMUNITY_Community 372]]
 - 6 edges to [[_COMMUNITY_Community 250]]
 - 6 edges to [[_COMMUNITY_Community 743]]
@@ -81,8 +82,8 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_Community 236]]
 
 ## Top bridge nodes
-- [[ContainerEngine_2]] - degree 36, connects to 4 communities
+- [[ContainerEngine_2]] - degree 36, connects to 5 communities
+- [[TestRuntimeConfig]] - degree 12, connects to 4 communities
 - [[__init__.py_9]] - degree 10, connects to 4 communities
 - [[RuntimeConfig]] - degree 13, connects to 3 communities
 - [[security.py]] - degree 13, connects to 3 communities
-- [[TestRuntimeConfig]] - degree 12, connects to 3 communities

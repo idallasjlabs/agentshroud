@@ -88,11 +88,10 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 30 edges to [[_COMMUNITY_Community 30]]
-- 9 edges to [[_COMMUNITY_Community 84]]
+- 13 edges to [[_COMMUNITY_Community 84]]
 - 7 edges to [[_COMMUNITY_Community 7]]
 - 7 edges to [[_COMMUNITY_Community 2048]]
-- 4 edges to [[_COMMUNITY_Community 41]]
-- 4 edges to [[_COMMUNITY_Community 203]]
+- 4 edges to [[_COMMUNITY_Community 32]]
 - 3 edges to [[_COMMUNITY_Community 151]]
 - 1 edge to [[_COMMUNITY_Community 489]]
 - 1 edge to [[_COMMUNITY_Community 334]]
@@ -101,7 +100,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 45]]
 
 ## Top bridge nodes
-- [[MFAGuard_2]] - degree 73, connects to 8 communities
+- [[MFAGuard_2]] - degree 73, connects to 7 communities
 - [[test_mfa_guard.py]] - degree 60, connects to 4 communities
 - [[_queue()]] - degree 11, connects to 2 communities
 - [[EnhancedApprovalQueue_3]] - degree 11, connects to 2 communities

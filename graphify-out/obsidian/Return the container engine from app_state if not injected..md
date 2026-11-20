@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "rationale"
-community: "Community 890"
+community: "Community 38"
 location: "L222"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_890
+  - community/Community_38
 ---
 
 # Return the container engine from app_state if not injected.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._get_engine()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_890
+#graphify/rationale #graphify/EXTRACTED #community/Community_38
