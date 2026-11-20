@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.__aenter__()_1]] - `method` [EXTRACTED]
 - [[.__aexit__()_1]] - `method` [EXTRACTED]
-- [[.__init__()_165]] - `method` [EXTRACTED]
+- [[.__init__()_162]] - `method` [EXTRACTED]
 - [[.request()_3]] - `method` [EXTRACTED]
 - [[DNSBlocklist]] - `uses` [INFERRED]
 - [[DNSForwarderProtocol]] - `uses` [INFERRED]

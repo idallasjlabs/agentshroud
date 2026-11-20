@@ -32,11 +32,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 240]]
-- 1 edge to [[_COMMUNITY_Community 379]]
+- 4 edges to [[_COMMUNITY_Community 240]]
 - 1 edge to [[_COMMUNITY_Community 372]]
-- 1 edge to [[_COMMUNITY_Community 738]]
 - 1 edge to [[_COMMUNITY_Community 250]]
 
 ## Top bridge nodes
-- [[TestWebAPI]] - degree 20, connects to 5 communities
+- [[TestWebAPI]] - degree 20, connects to 3 communities

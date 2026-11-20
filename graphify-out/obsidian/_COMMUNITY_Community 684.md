@@ -1,18 +1,23 @@
 ---
 type: community
-members: 60
+members: 82
 ---
 
 # Community 684
 
-**Members:** 60 nodes
+**Members:** 82 nodes
 
 ## Members
+- [[.__init__()_102]] - code - gateway/security/key_vault.py
+- [[.__init__()_103]] - code - gateway/security/key_vault.py
 - [[.__init__()_104]] - code - gateway/security/key_vault.py
-- [[.__init__()_105]] - code - gateway/security/key_vault.py
-- [[.__init__()_106]] - code - gateway/security/key_vault.py
 - [[._agent_in_scope()]] - code - gateway/security/key_vault.py
+- [[._contains_env_access_patterns()]] - code - gateway/security/env_guard.py
 - [[._log_audit()]] - code - gateway/security/key_vault.py
+- [[._looks_like_credential()]] - code - gateway/security/env_guard.py
+- [[._record_leakage()]] - code - gateway/security/env_guard.py
+- [[.check_command_execution()]] - code - gateway/security/env_guard.py
+- [[.check_file_access()]] - code - gateway/security/env_guard.py
 - [[.check_value_match()]] - code - gateway/security/key_vault.py
 - [[.delete_key()]] - code - gateway/security/key_vault.py
 - [[.get_audit_log()_5]] - code - gateway/security/key_vault.py
@@ -22,6 +27,7 @@ members: 60
 - [[.redact()]] - code - gateway/security/key_vault.py
 - [[.rotate_key()]] - code - gateway/security/key_vault.py
 - [[.scan_outbound()]] - code - gateway/security/key_vault.py
+- [[.scrub_command_output()]] - code - gateway/security/env_guard.py
 - [[.store_key()]] - code - gateway/security/key_vault.py
 - [[.test_default_config()_2]] - code - gateway/tests/test_key_vault.py
 - [[.test_delete_key()]] - code - gateway/tests/test_key_vault.py
@@ -30,6 +36,7 @@ members: 60
 - [[.test_inject_auth_header()]] - code - gateway/tests/test_key_vault.py
 - [[.test_inject_fails_for_unscoped()]] - code - gateway/tests/test_key_vault.py
 - [[.test_inject_preserves_existing_headers()]] - code - gateway/tests/test_key_vault.py
+- [[.test_install_log_sanitizer_no_error()]] - code - gateway/tests/test_log_sanitizer.py
 - [[.test_key_not_found()]] - code - gateway/tests/test_key_vault.py
 - [[.test_key_redacted_from_string()]] - code - gateway/tests/test_key_vault.py
 - [[.test_key_vault_init()]] - code - gateway/tests/test_security_audit.py
@@ -48,15 +55,25 @@ members: 60
 - [[.test_store_and_retrieve()]] - code - gateway/tests/test_key_vault.py
 - [[.test_unscoped_agent_denied()]] - code - gateway/tests/test_key_vault.py
 - [[.test_wildcard_scope_allows_all()]] - code - gateway/tests/test_key_vault.py
+- [[Check if a value looks like a credential.]] - rationale - gateway/security/env_guard.py
 - [[Check if any stored key values appear in text. Returns matching key names.]] - rationale - gateway/security/key_vault.py
+- [[Check if command contains patterns that could access environment.]] - rationale - gateway/security/env_guard.py
+- [[Check if command execution should be blocked to prevent environment leakage.]] - rationale - gateway/security/env_guard.py
+- [[Check if file access should be blocked to prevent environment leakage.]] - rationale - gateway/security/env_guard.py
+- [[Detected environment variable leakage.]] - rationale - gateway/security/env_guard.py
+- [[EnvironmentLeakage]] - code - gateway/security/env_guard.py
+- [[Get the global environment guard instance.]] - rationale - gateway/security/env_guard.py
+- [[Install the log sanitizer on all existing loggers.]] - rationale - gateway/security/log_sanitizer.py
 - [[KeyAuditEvent]] - code - gateway/security/key_vault.py
 - [[KeyEntry]] - code - gateway/security/key_vault.py
 - [[KeyInjector]] - code - gateway/security/key_vault.py
 - [[KeyLeakDetector]] - code - gateway/security/key_vault.py
-- [[KeyScope]] - code - gateway/security/key_vault.py
 - [[KeyVault]] - code - gateway/security/key_vault.py
+- [[KeyVaultConfig]] - code - gateway/security/key_vault.py
 - [[LeakScanResult]] - code - gateway/security/key_vault.py
 - [[Per-agent API key scoping, redaction, leak detection, and rotation]] - concept - gateway/tests/test_key_vault.py
+- [[Record a detected environment leakage.]] - rationale - gateway/security/env_guard.py
+- [[Scrub environment variables and API keys from command output.          Args]] - rationale - gateway/security/env_guard.py
 - [[TestKeyInjection]] - code - gateway/tests/test_key_vault.py
 - [[TestKeyLeakDetection]] - code - gateway/tests/test_key_vault.py
 - [[TestKeyRedaction]] - code - gateway/tests/test_key_vault.py
@@ -65,8 +82,13 @@ members: 60
 - [[TestKeyStorage]] - code - gateway/tests/test_key_vault.py
 - [[TestKeyVaultConfig]] - code - gateway/tests/test_key_vault.py
 - [[config()]] - code - gateway/tests/test_key_vault.py
+- [[env_guard.py]] - code - gateway/security/env_guard.py
+- [[get_env_guard()]] - code - gateway/security/env_guard.py
+- [[install_log_sanitizer()]] - code - gateway/security/log_sanitizer.py
 - [[key_vault.py]] - code - gateway/security/key_vault.py
+- [[log_sanitizer.py]] - code - gateway/security/log_sanitizer.py
 - [[test_key_vault.py]] - code - gateway/tests/test_key_vault.py
+- [[test_log_sanitizer.py]] - code - gateway/tests/test_log_sanitizer.py
 - [[vault()]] - code - gateway/tests/test_key_vault.py
 
 ## Live Query (requires Dataview plugin)
@@ -77,23 +99,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 33 edges to [[_COMMUNITY_Community 24]]
-- 10 edges to [[_COMMUNITY_Community 0]]
-- 6 edges to [[_COMMUNITY_Community 531]]
-- 4 edges to [[_COMMUNITY_Community 151]]
-- 2 edges to [[_COMMUNITY_Community 121]]
-- 2 edges to [[_COMMUNITY_Community 1566]]
-- 2 edges to [[_COMMUNITY_Community 1352]]
-- 1 edge to [[_COMMUNITY_Community 72]]
+- 45 edges to [[_COMMUNITY_Community 24]]
+- 35 edges to [[_COMMUNITY_Community 0]]
+- 6 edges to [[_COMMUNITY_Community 151]]
+- 4 edges to [[_COMMUNITY_Community 362]]
+- 2 edges to [[_COMMUNITY_Community 140]]
+- 2 edges to [[_COMMUNITY_Community 45]]
+- 2 edges to [[_COMMUNITY_Community 5]]
+- 2 edges to [[_COMMUNITY_Community 809]]
 - 1 edge to [[_COMMUNITY_Community 162]]
-- 1 edge to [[_COMMUNITY_Community 809]]
-- 1 edge to [[_COMMUNITY_Community 557]]
-- 1 edge to [[_COMMUNITY_Community 394]]
-- 1 edge to [[_COMMUNITY_Community 140]]
+- 1 edge to [[_COMMUNITY_Community 96]]
+- 1 edge to [[_COMMUNITY_Community 431]]
+- 1 edge to [[_COMMUNITY_Community 76]]
 
 ## Top bridge nodes
-- [[KeyVault]] - degree 56, connects to 10 communities
-- [[KeyLeakDetector]] - degree 32, connects to 5 communities
-- [[key_vault.py]] - degree 12, connects to 5 communities
-- [[.test_key_vault_init()]] - degree 3, connects to 2 communities
-- [[test_key_vault.py]] - degree 13, connects to 1 community
+- [[KeyVault]] - degree 56, connects to 5 communities
+- [[KeyVaultConfig]] - degree 43, connects to 5 communities
+- [[env_guard.py]] - degree 10, connects to 4 communities
+- [[log_sanitizer.py]] - degree 6, connects to 3 communities
+- [[KeyLeakDetector]] - degree 32, connects to 2 communities

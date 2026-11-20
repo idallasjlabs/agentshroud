@@ -1,41 +1,84 @@
 ---
 type: community
-members: 28
+members: 71
 ---
 
 # Community 45
 
-**Members:** 28 nodes
+**Members:** 71 nodes
 
 ## Members
-- [[.__init__()_75]] - code - gateway/security/canary_tripwire.py
-- [[.setup_method()_1]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_api_key_canary()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_base64_canary()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_case_insensitive()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_code_word_canary()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_counter_increments()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_custom_config()_1]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_empty_input()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_no_canaries()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_normal_content_passes()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_plain_canary_detected()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_reversed_canary()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_rot13_canary()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_scan_response_blocks_on_canary()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_scan_response_no_block_when_block_disabled()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_scan_response_passes_clean_text()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_scan_response_records_scan_method()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_scan_response_returns_tripwire_response()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_spaced_canary()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_url_encoded_canary()]] - code - gateway/tests/test_canary_tripwire.py
-- [[.test_zero_width_bypass()]] - code - gateway/tests/test_canary_tripwire.py
-- [[Bridge result returned by scan_response() for pipeline compatibility.]] - rationale - gateway/security/canary_tripwire.py
-- [[CanaryConfig]] - code - gateway/security/canary_tripwire.py
-- [[TestCanaryTripwire]] - code - gateway/tests/test_canary_tripwire.py
-- [[TripwireResponse]] - code - gateway/security/canary_tripwire.py
-- [[canary_tripwire.py]] - code - gateway/security/canary_tripwire.py
-- [[test_canary_tripwire.py]] - code - gateway/tests/test_canary_tripwire.py
+- [[.__init__()_115]] - code - gateway/security/oauth_security.py
+- [[.check_state_reuse()]] - code - gateway/security/oauth_security.py
+- [[.create_consent_cookie()]] - code - gateway/security/oauth_security.py
+- [[.record_state_used()]] - code - gateway/security/oauth_security.py
+- [[.register_known_shared_ids()]] - code - gateway/security/oauth_security.py
+- [[.test_base64_injection()]] - code - gateway/tests/test_security_audit.py
+- [[.test_clean_message_not_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_clean_technical_message()]] - code - gateway/tests/test_security_audit.py
+- [[.test_cookie_custom_max_age_expires_sooner()]] - code - gateway/tests/test_oauth_security.py
+- [[.test_cookie_expired_rejected()]] - code - gateway/tests/test_oauth_security.py
+- [[.test_cookie_tamper_detected()]] - code - gateway/tests/test_oauth_security.py
+- [[.test_cookie_within_max_age_accepted()]] - code - gateway/tests/test_oauth_security.py
+- [[.test_cookie_wrong_client_fails()]] - code - gateway/tests/test_oauth_security.py
+- [[.test_cookie_wrong_scope_fails()]] - code - gateway/tests/test_oauth_security.py
+- [[.test_create_consent_cookie()]] - code - gateway/tests/test_oauth_security.py
+- [[.test_dan_jailbreak()]] - code - gateway/tests/test_security_audit.py
+- [[.test_different_uri_rejected()]] - code - gateway/tests/test_oauth_security.py
+- [[.test_empty_client_id_rejected()]] - code - gateway/tests/test_oauth_security.py
+- [[.test_empty_input()_2]] - code - gateway/tests/test_security_audit.py
+- [[.test_empty_state_rejected()]] - code - gateway/tests/test_oauth_security.py
+- [[.test_exact_match_accepted()]] - code - gateway/tests/test_oauth_security.py
+- [[.test_http_rejected()]] - code - gateway/tests/test_oauth_security.py
+- [[.test_ignore_previous_instructions()]] - code - gateway/tests/test_security_audit.py
+- [[.test_indirect_injection_url()]] - code - gateway/tests/test_security_audit.py
+- [[.test_instruction_override()]] - code - gateway/tests/test_security_audit.py
+- [[.test_multilingual_injection()]] - code - gateway/tests/test_security_audit.py
+- [[.test_path_traversal_rejected()]] - code - gateway/tests/test_oauth_security.py
+- [[.test_pkce_plain_rejected_when_s256_required()]] - code - gateway/tests/test_oauth_security.py
+- [[.test_pkce_required_missing_challenge()]] - code - gateway/tests/test_oauth_security.py
+- [[.test_pkce_s256_accepted()]] - code - gateway/tests/test_oauth_security.py
+- [[.test_pkce_verifier_validation()]] - code - gateway/tests/test_oauth_security.py
+- [[.test_prompt_leaking_via_markdown()]] - code - gateway/tests/test_security_audit.py
+- [[.test_repeated_injection()]] - code - gateway/tests/test_security_audit.py
+- [[.test_role_reassignment()]] - code - gateway/tests/test_security_audit.py
+- [[.test_short_state_rejected()]] - code - gateway/tests/test_oauth_security.py
+- [[.test_state_replay_detected()]] - code - gateway/tests/test_oauth_security.py
+- [[.test_static_shared_client_id_rejected()]] - code - gateway/tests/test_oauth_security.py
+- [[.test_system_prompt_extraction()]] - code - gateway/tests/test_security_audit.py
+- [[.test_token_smuggling()]] - code - gateway/tests/test_security_audit.py
+- [[.test_unique_client_id_accepted()]] - code - gateway/tests/test_oauth_security.py
+- [[.test_valid_state_accepted()]] - code - gateway/tests/test_oauth_security.py
+- [[.test_validate_consent_cookie()]] - code - gateway/tests/test_oauth_security.py
+- [[.test_xml_injection()]] - code - gateway/tests/test_security_audit.py
+- [[.validate_consent_cookie()]] - code - gateway/security/oauth_security.py
+- [[.validate_redirect_uri()]] - code - gateway/security/oauth_security.py
+- [[.validate_request()]] - code - gateway/security/oauth_security.py
+- [[.verify_pkce()]] - code - gateway/security/oauth_security.py
+- [[Base64 encoded instruction.]] - rationale - gateway/tests/test_security_audit.py
+- [[ConfusedDeputyError]] - code - gateway/security/oauth_security.py
+- [[Injection in another language.]] - rationale - gateway/tests/test_security_audit.py
+- [[Markdown-based injection.]] - rationale - gateway/tests/test_security_audit.py
+- [[Normal messages should pass.]] - rationale - gateway/tests/test_security_audit.py
+- [[OAuthError]] - code - gateway/security/oauth_security.py
+- [[OAuthRequest]] - code - gateway/security/oauth_security.py
+- [[OAuthSecurityValidator]] - code - gateway/security/oauth_security.py
+- [[PKCEViolation]] - code - gateway/security/oauth_security.py
+- [[RedirectMismatch]] - code - gateway/security/oauth_security.py
+- [[Same injection multiple times shouldn't bypass.]] - rationale - gateway/tests/test_security_audit.py
+- [[Technical discussion mentioning 'system' shouldn't trigger.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test prompt injection detection with adversarial payloads.]] - rationale - gateway/tests/test_security_audit.py
+- [[TestClientValidation]] - code - gateway/tests/test_oauth_security.py
+- [[TestConsentCookieBinding]] - code - gateway/tests/test_oauth_security.py
+- [[TestPKCE]] - code - gateway/tests/test_oauth_security.py
+- [[TestPromptGuard]] - code - gateway/tests/test_security_audit.py
+- [[TestRedirectURI]] - code - gateway/tests/test_oauth_security.py
+- [[TestStateValidation]] - code - gateway/tests/test_oauth_security.py
+- [[Token boundary attack.]] - rationale - gateway/tests/test_security_audit.py
+- [[URL-based indirect injection.]] - rationale - gateway/tests/test_security_audit.py
+- [[oauth_security.py]] - code - gateway/security/oauth_security.py
+- [[test_oauth_security.py]] - code - gateway/tests/test_oauth_security.py
+- [[validator()]] - code - gateway/tests/test_oauth_security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,12 +88,28 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 32]]
-- 1 edge to [[_COMMUNITY_Community 1214]]
+- 58 edges to [[_COMMUNITY_Community 0]]
+- 5 edges to [[_COMMUNITY_Community 5]]
+- 3 edges to [[_COMMUNITY_Community 1]]
+- 3 edges to [[_COMMUNITY_Community 84]]
+- 3 edges to [[_COMMUNITY_Community 140]]
+- 2 edges to [[_COMMUNITY_Community 72]]
+- 2 edges to [[_COMMUNITY_Community 684]]
+- 2 edges to [[_COMMUNITY_Community 76]]
+- 1 edge to [[_COMMUNITY_Community 2048]]
+- 1 edge to [[_COMMUNITY_Community 196]]
+- 1 edge to [[_COMMUNITY_Community 152]]
+- 1 edge to [[_COMMUNITY_Community 21]]
+- 1 edge to [[_COMMUNITY_Community 96]]
+- 1 edge to [[_COMMUNITY_Community 31]]
+- 1 edge to [[_COMMUNITY_Community 70]]
+- 1 edge to [[_COMMUNITY_Community 71]]
+- 1 edge to [[_COMMUNITY_Community 146]]
+- 1 edge to [[_COMMUNITY_Community 11]]
 
 ## Top bridge nodes
-- [[canary_tripwire.py]] - degree 5, connects to 2 communities
-- [[TestCanaryTripwire]] - degree 25, connects to 1 community
-- [[TripwireResponse]] - degree 5, connects to 1 community
-- [[test_canary_tripwire.py]] - degree 4, connects to 1 community
-- [[.test_custom_config()_1]] - degree 3, connects to 1 community
+- [[TestPromptGuard]] - degree 51, connects to 13 communities
+- [[OAuthSecurityValidator]] - degree 32, connects to 5 communities
+- [[oauth_security.py]] - degree 12, connects to 4 communities
+- [[ConfusedDeputyError]] - degree 21, connects to 2 communities
+- [[PKCEViolation]] - degree 21, connects to 2 communities

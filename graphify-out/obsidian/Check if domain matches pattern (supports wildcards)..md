@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Community 2332"
+community: "Community 455"
 location: "L126"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2332
+  - community/Community_455
 ---
 
 # Check if domain matches pattern (supports wildcards).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._domain_matches_pattern()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2332
+#graphify/rationale #graphify/EXTRACTED #community/Community_455

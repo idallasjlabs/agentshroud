@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.by_name()]] - `references` [EXTRACTED]
 - [[.from_file()]] - `method` [EXTRACTED]
-- [[.to_dict()_15]] - `method` [EXTRACTED]
+- [[.to_dict()_13]] - `method` [EXTRACTED]
 - [[A single item in the skills manifest.]] - `rationale_for` [EXTRACTED]
 - [[Path_43]] - `uses` [INFERRED]
 - [[TestClient_1]] - `uses` [INFERRED]

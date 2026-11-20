@@ -1,11 +1,11 @@
 ---
 type: community
-members: 67
+members: 59
 ---
 
 # Community 48
 
-**Members:** 67 nodes
+**Members:** 59 nodes
 
 ## Members
 - [[._fake_run()]] - code - gateway/tests/test_discover_upstream_versions.py
@@ -36,19 +36,15 @@ members: 67
 - [[.test_single_attempt_never_sleeps()]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[2026-10-23 on marvin every Python HTTPS read to hub.docker.com hung     (Homebr]] - rationale - gateway/tests/test_discover_upstream_versions.py
 - [[A fetch that never returns must not hang the unattended run.      2026-10-16 th]] - rationale - gateway/tests/test_discover_upstream_versions.py
-- [[All published versions of an npm package (via the npm CLI).]] - rationale - scripts/discover_upstream_versions.py
-- [[Any_87]] - code - scripts/discover_upstream_versions.py
+- [[Any_83]] - code - scripts/discover_upstream_versions.py
 - [[Call ``fn(attempt)`` up to ``attempts`` times; re-raise the last error if all fa]] - rationale - scripts/discover_upstream_versions.py
-- [[Devprod account split (agentshroud-bot vs ijefferson.admin)]] - concept - reports/upgrade-2026-09-20-dev.md
 - [[Every Docker Hub failure on marvin was on IPv6; curl -4 was 100% clean.]] - rationale - gateway/tests/test_discover_upstream_versions.py
 - [[Force AF_INET for name resolution inside the block.      Every Docker Hub failur]] - rationale - scripts/discover_upstream_versions.py
 - [[Hermes publishes date-based image tags (vYYYY.M.D).]] - rationale - gateway/tests/test_discover_upstream_versions.py
-- [[Host network filter blocking Homebrew PythonNode outbound]] - concept - reports/upgrade-2026-09-20-dev.md
 - [[Newest ``vYYYY.M.D`` Docker tag, ignoring floating tags.      'latest' and 'main]] - rationale - scripts/discover_upstream_versions.py
 - [[One attempt of ``fetch`` hard-bounded, IPv4-only after the first failure.]] - rationale - scripts/discover_upstream_versions.py
 - [[Resolve the latest stable release of each wrapped tool.      Each entry is indep]] - rationale - scripts/discover_upstream_versions.py
 - [[Run ``fn`` in a daemon thread; raise ``TimeoutError`` if it outlives ``seconds``]] - rationale - scripts/discover_upstream_versions.py
-- [[Tag records for a Docker Hub repository, newest first (via curl).      curl, not]] - rationale - scripts/discover_upstream_versions.py
 - [[TestCallWithDeadline]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[TestDiscoverRetries]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[TestFetchDockerhubTagsUsesCurl]] - code - gateway/tests/test_discover_upstream_versions.py
@@ -67,14 +63,10 @@ members: 67
 - [[_retry()]] - code - scripts/discover_upstream_versions.py
 - [[discover()]] - code - scripts/discover_upstream_versions.py
 - [[discover() applies the retry to both sources, independently.]] - rationale - gateway/tests/test_discover_upstream_versions.py
-- [[discover_upstream_versions.py]] - code - scripts/discover_upstream_versions.py
-- [[fetch_dockerhub_tags()]] - code - scripts/discover_upstream_versions.py
-- [[fetch_npm_versions()]] - code - scripts/discover_upstream_versions.py
 - [[latest''main' float and would defeat the whole point of pinning.]] - rationale - gateway/tests/test_discover_upstream_versions.py
 - [[main()_19]] - code - scripts/discover_upstream_versions.py
 - [[pick_latest_hermes_tag()]] - code - scripts/discover_upstream_versions.py
 - [[test_discover_upstream_versions.py]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[upgrade-2026-09-20-dev]] - document - reports/upgrade-2026-09-20-dev.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -84,19 +76,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 118]]
-- 6 edges to [[_COMMUNITY_Community 506]]
-- 4 edges to [[_COMMUNITY_Community 139]]
-- 3 edges to [[_COMMUNITY_Community 68]]
-- 2 edges to [[_COMMUNITY_Community 126]]
-- 1 edge to [[_COMMUNITY_Community 420]]
-- 1 edge to [[_COMMUNITY_Community 1924]]
-- 1 edge to [[_COMMUNITY_Community 74]]
-- 1 edge to [[_COMMUNITY_Community 1407]]
+- 9 edges to [[_COMMUNITY_Community 118]]
+- 3 edges to [[_COMMUNITY_Community 506]]
+- 1 edge to [[_COMMUNITY_Community 68]]
 
 ## Top bridge nodes
-- [[discover_upstream_versions.py]] - degree 21, connects to 4 communities
-- [[upgrade-2026-09-20-dev]] - degree 8, connects to 3 communities
-- [[fetch_dockerhub_tags()]] - degree 5, connects to 2 communities
-- [[Host network filter blocking Homebrew PythonNode outbound]] - degree 5, connects to 2 communities
-- [[fetch_npm_versions()]] - degree 4, connects to 2 communities
+- [[discover()]] - degree 14, connects to 2 communities
+- [[test_discover_upstream_versions.py]] - degree 10, connects to 1 community
+- [[_guarded_fetch()]] - degree 9, connects to 1 community
+- [[_retry()]] - degree 9, connects to 1 community
+- [[pick_latest_hermes_tag()]] - degree 8, connects to 1 community

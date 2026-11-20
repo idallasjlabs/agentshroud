@@ -12,7 +12,7 @@ tags:
 # _edge_snapshot()
 
 ## Connections
-- [[Any_77]] - `references` [EXTRACTED]
+- [[Any_73]] - `references` [EXTRACTED]
 - [[Per-vendor view of profiles, process counters, clients and kills.]] - `rationale_for` [EXTRACTED]
 - [[VendorStats]] - `calls` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]

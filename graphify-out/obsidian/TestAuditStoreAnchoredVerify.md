@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: "Community 254"
+community: "Community 845"
 location: "L459"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_254
+  - community/Community_845
 ---
 
 # TestAuditStoreAnchoredVerify
@@ -27,4 +27,4 @@ tags:
 - [[test_audit_export.py]] - `contains` [EXTRACTED]
 - [[verify_hash_chain(start_id=X) anchors on X's predecessor (SCRUM-204).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_254
+#graphify/code #graphify/EXTRACTED #community/Community_845

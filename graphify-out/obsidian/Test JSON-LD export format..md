@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "rationale"
-community: "Community 479"
+community: "Community 254"
 location: "L230"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_479
+  - community/Community_254
 ---
 
 # Test JSON-LD export format.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_export_json_ld()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_479
+#graphify/rationale #graphify/EXTRACTED #community/Community_254

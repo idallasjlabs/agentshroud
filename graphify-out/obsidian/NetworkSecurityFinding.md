@@ -2,7 +2,7 @@
 source_file: "gateway/security/network_validator.py"
 type: "code"
 community: "Community 71"
-location: "L26"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -19,7 +19,6 @@ tags:
 - [[._validate_port_exposure()]] - `references` [EXTRACTED]
 - [[._validate_privileged_containers()]] - `references` [EXTRACTED]
 - [[._validate_service_network_isolation()]] - `references` [EXTRACTED]
-- [[.detect_configuration_drift()]] - `references` [EXTRACTED]
 - [[.test_network_security_finding_structure()]] - `calls` [EXTRACTED]
 - [[.validate_docker_compose_config()]] - `references` [EXTRACTED]
 - [[.validate_runtime_configuration()]] - `references` [EXTRACTED]

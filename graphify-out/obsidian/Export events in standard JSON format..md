@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "rationale"
-community: "Community 1290"
+community: "Community 254"
 location: "L250"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1290
+  - community/Community_254
 ---
 
 # Export events in standard JSON format.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._export_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1290
+#graphify/rationale #graphify/EXTRACTED #community/Community_254

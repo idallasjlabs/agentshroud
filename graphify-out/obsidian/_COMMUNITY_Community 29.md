@@ -41,7 +41,7 @@ members: 114
 - [[NIST CSF domain map references only valid domain IDs.]] - rationale - gateway/tests/test_scanner_integration.py
 - [[New compliance sub-scores (EU AI Act, ISO 42001, NIST CSF, DISA STIG) appear in]] - rationale - gateway/tests/test_scanner_integration.py
 - [[Path_19]] - code - gateway/security/scanner_integration.py
-- [[Return Fluent Bit log collector status.      Fluent Bit is a log shipper, not a]] - rationale - gateway/security/scanner_integration.py
+- [[Read and return the Docker daemon config from daemon.json, or {} if unavailable.]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if a non-zombie falco process is running inside this container.]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if app_state has a non-None attribute with the given name.]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if fluent-bit pidfile tmpfluent-bit.pid exists with a live PID.]] - rationale - gateway/security/scanner_integration.py
@@ -94,6 +94,7 @@ members: 114
 - [[_is_fresh()]] - code - gateway/security/scanner_integration.py
 - [[_is_wazuh_agent_running()]] - code - gateway/security/scanner_integration.py
 - [[_read_compose_text()]] - code - gateway/security/scanner_integration.py
+- [[_read_docker_daemon_config()]] - code - gateway/security/scanner_integration.py
 - [[_score_access_control_authorization()]] - code - gateway/security/scanner_integration.py
 - [[_score_agent_behavior_integrity()]] - code - gateway/security/scanner_integration.py
 - [[_score_agent_identity_nhi()]] - code - gateway/security/scanner_integration.py
@@ -120,7 +121,6 @@ members: 114
 - [[_score_tool_use_safety()]] - code - gateway/security/scanner_integration.py
 - [[_security_scan_sh_text()]] - code - gateway/security/scanner_integration.py
 - [[compute_scorecard()]] - code - gateway/security/scanner_integration.py
-- [[get_fluent_bit_summary()]] - code - gateway/security/scanner_integration.py
 - [[scanner_integration.py]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
@@ -131,13 +131,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 43 edges to [[_COMMUNITY_Community 67]]
-- 10 edges to [[_COMMUNITY_Community 943]]
+- 41 edges to [[_COMMUNITY_Community 67]]
+- 12 edges to [[_COMMUNITY_Community 102]]
 - 8 edges to [[_COMMUNITY_Community 363]]
 - 6 edges to [[_COMMUNITY_Community 207]]
 - 4 edges to [[_COMMUNITY_Community 311]]
 - 3 edges to [[_COMMUNITY_Community 842]]
-- 2 edges to [[_COMMUNITY_Community 102]]
 - 2 edges to [[_COMMUNITY_Community 51]]
 - 1 edge to [[_COMMUNITY_Community 220]]
 - 1 edge to [[_COMMUNITY_Community 131]]
@@ -145,7 +144,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 10]]
 
 ## Top bridge nodes
-- [[scanner_integration.py]] - degree 67, connects to 11 communities
+- [[scanner_integration.py]] - degree 67, connects to 10 communities
 - [[compute_scorecard()]] - degree 61, connects to 8 communities
 - [[Path_19]] - degree 34, connects to 3 communities
 - [[_is_fresh()]] - degree 8, connects to 2 communities

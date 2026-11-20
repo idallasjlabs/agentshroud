@@ -37,9 +37,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 84]]
+- 2 edges to [[_COMMUNITY_Community 436]]
+- 1 edge to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 84]]
 - 1 edge to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 329]]
 
 ## Top bridge nodes
-- [[TestLooksLikeSafeCollaboratorInfoQuery]] - degree 24, connects to 3 communities
+- [[TestLooksLikeSafeCollaboratorInfoQuery]] - degree 24, connects to 4 communities

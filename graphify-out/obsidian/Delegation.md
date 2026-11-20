@@ -17,7 +17,7 @@ tags:
 - [[.get_active_delegations()]] - `references` [EXTRACTED]
 - [[.get_delegations_for_user()]] - `references` [EXTRACTED]
 - [[.is_active()]] - `method` [EXTRACTED]
-- [[.to_dict()_7]] - `method` [EXTRACTED]
+- [[.to_dict()_6]] - `method` [EXTRACTED]
 - [[A single time-bounded privilege delegation record.]] - `rationale_for` [EXTRACTED]
 - [[DelegationManager_1]] - `uses` [INFERRED]
 - [[TestAccessControl]] - `uses` [INFERRED]

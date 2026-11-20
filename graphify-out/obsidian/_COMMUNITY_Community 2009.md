@@ -1,22 +1,18 @@
 ---
 type: community
-members: 9
+members: 5
 ---
 
 # Community 2009
 
-**Members:** 9 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[1. Phone Number (Separate from Main)]] - document - docs/reference/PREREQUISITES.md
-- [[1Password (Optional — Teams  Shared Credentials)]] - document - docs/reference/PREREQUISITES.md
-- [[2. Gmail Account (Dedicated for Bot)]] - document - docs/reference/PREREQUISITES.md
-- [[3. Telegram Account (Bot Communication)]] - document - docs/reference/PREREQUISITES.md
-- [[4. Secrets Backend (Credential Management)]] - document - docs/reference/PREREQUISITES.md
-- [[5. OpenAI Account (LLM API)]] - document - docs/reference/PREREQUISITES.md
-- [[6. Anthropic Account (Claude API)]] - document - docs/reference/PREREQUISITES.md
-- [[macOS Keychain (Default)]] - document - docs/reference/PREREQUISITES.md
-- [[📱 Required Accounts & Services]] - document - docs/reference/PREREQUISITES.md
+- [[Example 1 Simple Navigation]] - document - skills/custom/securebrowser/README.md
+- [[Example 2 Fill Form (Non-Sensitive)]] - document - skills/custom/securebrowser/README.md
+- [[Example 3 Fill Password (Sensitive)]] - document - skills/custom/securebrowser/README.md
+- [[Example 4 Handle CAPTCHA]] - document - skills/custom/securebrowser/README.md
+- [[Usage Examples_2]] - document - skills/custom/securebrowser/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 346]]
+- 1 edge to [[_COMMUNITY_Community 299]]
 
 ## Top bridge nodes
-- [[📱 Required Accounts & Services]] - degree 7, connects to 1 community
+- [[Usage Examples_2]] - degree 5, connects to 1 community

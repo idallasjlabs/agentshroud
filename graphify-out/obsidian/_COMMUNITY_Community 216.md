@@ -1,59 +1,47 @@
 ---
 type: community
-members: 46
+members: 34
 ---
 
 # Community 216
 
-**Members:** 46 nodes
+**Members:** 34 nodes
 
 ## Members
-- [[._active_send_token()]] - code - gateway/proxy/telegram_proxy.py
-- [[._answer_callback_query()]] - code - gateway/proxy/telegram_proxy.py
-- [[._collaborator_rate_limit_retry_after_seconds()]] - code - gateway/proxy/telegram_proxy.py
-- [[._edit_telegram_message()]] - code - gateway/proxy/telegram_proxy.py
-- [[._forward_to_telegram()]] - code - gateway/proxy/telegram_proxy.py
-- [[._queue_collaborator_access_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._resolve_display_name()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_collaborator_pending_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_local_healthcheck_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_local_help_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_local_model_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_local_notice_with_fallback()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_local_start_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_local_status_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_local_whoami_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_owner_activity_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_owner_collabs_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_owner_pending_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_rate_limit_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_stranger_rate_limit_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_telegram_with_keyboard()]] - code - gateway/proxy/telegram_proxy.py
-- [[._telegram_create_invite_link()]] - code - gateway/proxy/telegram_proxy.py
-- [[._telegram_kick_member()]] - code - gateway/proxy/telegram_proxy.py
-- [[Create a single-use invite link for a Telegram group. Returns URL or None.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Dismiss the Telegram inline button spinner with a brief toast.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Edit an existing Telegram message in-place (removes inline keyboard too).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Estimate seconds until collaborator rate limit window opens again.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Forward request to real Telegram API and return parsed response.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Kick (ban + unban) a user from a Telegram group. Returns True on success.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Notify a collaborator they have exceeded the hourly rate limit.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Notify an unknownunapproved user they have exceeded the access request rate lim]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Per-request bot token for gateway-originated Telegram sends.          Returns th]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Queue owner approval request for unknownrevoked users.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Resolve a readable label for user id when available.          Priority user sel]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send a Telegram message with an inline keyboard.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic help command list without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic start notice without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic status summary without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic gateway health status without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic identityrole notice to simplify approval workflows.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic model status without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic owner pending-approval snapshot.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic pending-approval notice to unknownrevoked users.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send local command response with deterministic fallback text.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send owner a summary of recent collaborator activity (last hour).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send owner-friendly collaborator roster with known labels.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[.__init__()_79]] - code - gateway/security/context_integrity.py
+- [[.get_segment_provenance()]] - code - gateway/security/context_guard.py
+- [[.record_segment()]] - code - gateway/security/context_guard.py
+- [[.score_context()]] - code - gateway/security/context_integrity.py
+- [[.tag_segment()]] - code - gateway/security/context_guard.py
+- [[.test_below_alert_threshold_logs_warning()]] - code - gateway/tests/test_context_integrity.py
+- [[.test_duplicate_hashes_detected()]] - code - gateway/tests/test_context_integrity.py
+- [[.test_empty_context_scores_clean()]] - code - gateway/tests/test_context_integrity.py
+- [[.test_injected_untrusted_segment_lowers_score()]] - code - gateway/tests/test_context_integrity.py
+- [[.test_pristine_context_scores_high()]] - code - gateway/tests/test_context_integrity.py
+- [[.test_tampered_system_prompt_lowers_score()]] - code - gateway/tests/test_context_integrity.py
+- [[A well-formed context with valid HMAC should score close to 1.0.]] - rationale - gateway/tests/test_context_integrity.py
+- [[Any_45]] - code - gateway/security/context_integrity.py
+- [[Compute a 0.0–1.0 integrity score for the given context segments.          Args]] - rationale - gateway/security/context_integrity.py
+- [[ContextIntegrityScorer]] - code - gateway/security/context_integrity.py
+- [[ContextSegment]] - code - gateway/security/context_guard.py
+- [[Create a provenance record for a context segment.]] - rationale - gateway/security/context_guard.py
+- [[Duplicate content hashes reduce score.]] - rationale - gateway/tests/test_context_integrity.py
+- [[Empty segment list should not penalize the score.]] - rationale - gateway/tests/test_context_integrity.py
+- [[IntegrityScore]] - code - gateway/security/context_integrity.py
+- [[Mismatched HMAC should reduce score by at least 0.15.]] - rationale - gateway/tests/test_context_integrity.py
+- [[Return ordered list of provenance records for the session.]] - rationale - gateway/security/context_guard.py
+- [[Rolling context integrity score for a session.]] - rationale - gateway/security/context_integrity.py
+- [[Score below 0.6 should produce a warning log.]] - rationale - gateway/tests/test_context_integrity.py
+- [[Scores the integrity of a session's context.      Usage          scorer = Cont]] - rationale - gateway/security/context_integrity.py
+- [[Tag a segment and append it to the session's provenance log.]] - rationale - gateway/security/context_guard.py
+- [[Tagged provenance record for a context segment.]] - rationale - gateway/security/context_guard.py
+- [[TestContextIntegrityScorer]] - code - gateway/tests/test_context_integrity.py
+- [[Untrusted segment injected after system segment reduces score.]] - rationale - gateway/tests/test_context_integrity.py
+- [[_make_segment()]] - code - gateway/tests/test_context_integrity.py
+- [[context_integrity.py]] - code - gateway/security/context_integrity.py
+- [[guard()_1]] - code - gateway/tests/test_context_integrity.py
+- [[scorer()]] - code - gateway/tests/test_context_integrity.py
+- [[test_context_integrity.py]] - code - gateway/tests/test_context_integrity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -63,13 +51,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 33 edges to [[_COMMUNITY_Community 14]]
-- 2 edges to [[_COMMUNITY_Community 1344]]
-- 1 edge to [[_COMMUNITY_Community 18]]
+- 7 edges to [[_COMMUNITY_Community 84]]
+- 4 edges to [[_COMMUNITY_Community 22]]
+- 3 edges to [[_COMMUNITY_Community 0]]
+- 2 edges to [[_COMMUNITY_Community 151]]
+- 2 edges to [[_COMMUNITY_Community 344]]
+- 1 edge to [[_COMMUNITY_Community 431]]
+- 1 edge to [[_COMMUNITY_Community 1289]]
+- 1 edge to [[_COMMUNITY_Community 187]]
 
 ## Top bridge nodes
-- [[._resolve_display_name()]] - degree 6, connects to 2 communities
-- [[._queue_collaborator_access_request()]] - degree 6, connects to 2 communities
-- [[._forward_to_telegram()]] - degree 5, connects to 2 communities
-- [[._active_send_token()]] - degree 13, connects to 1 community
-- [[._send_local_notice_with_fallback()]] - degree 13, connects to 1 community
+- [[ContextSegment]] - degree 15, connects to 3 communities
+- [[ContextIntegrityScorer]] - degree 13, connects to 3 communities
+- [[TestContextIntegrityScorer]] - degree 12, connects to 2 communities
+- [[IntegrityScore]] - degree 9, connects to 2 communities
+- [[context_integrity.py]] - degree 5, connects to 2 communities

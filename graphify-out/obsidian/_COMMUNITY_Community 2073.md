@@ -1,19 +1,16 @@
 ---
 type: community
-members: 6
+members: 3
 ---
 
 # Community 2073
 
-**Members:** 6 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[._is_valid_domain_name()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_filename_reference()]] - code - gateway/proxy/telegram_proxy.py
-- [[._trigger_web_fetch_approval()]] - code - gateway/proxy/telegram_proxy.py
-- [[Best-effort check to avoid treating local file names as egress domains.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Queue an interactive egress approval when raw web_fetch JSON leaks.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Validate normalized domain labels to avoid malformed allowlist entries.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[25-Domain Prompt Injection Defense Framework]] - concept - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Enforce-by-Default Security Philosophy (ADR-009)]] - rationale - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[v0.8.0 25-Domain Prompt Injection Defense Assessment]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,11 +20,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 14]]
-- 2 edges to [[_COMMUNITY_Community 187]]
-- 2 edges to [[_COMMUNITY_Community 96]]
+- 1 edge to [[_COMMUNITY_Community 1948]]
+- 1 edge to [[_COMMUNITY_Community 1119]]
+- 1 edge to [[_COMMUNITY_Community 386]]
 
 ## Top bridge nodes
-- [[._trigger_web_fetch_approval()]] - degree 8, connects to 3 communities
-- [[._looks_like_filename_reference()]] - degree 4, connects to 2 communities
-- [[._is_valid_domain_name()]] - degree 3, connects to 1 community
+- [[v0.8.0 25-Domain Prompt Injection Defense Assessment]] - degree 5, connects to 3 communities

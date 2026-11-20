@@ -2,7 +2,7 @@
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
 community: "Community 141"
-location: "L295"
+location: "L291"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

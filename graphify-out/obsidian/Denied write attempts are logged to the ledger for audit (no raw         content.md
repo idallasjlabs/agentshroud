@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "rationale"
-community: "Community 7"
+community: "Community 44"
 location: "L320"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/Community_44
 ---
 
 # Denied write attempts are logged to the ledger for audit (no raw         content
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_write_file_denial_is_audited()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_7
+#graphify/rationale #graphify/EXTRACTED #community/Community_44

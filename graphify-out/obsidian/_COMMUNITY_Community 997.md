@@ -1,11 +1,11 @@
 ---
 type: community
-members: 20
+members: 19
 ---
 
 # Community 997
 
-**Members:** 20 nodes
+**Members:** 19 nodes
 
 ## Members
 - [[_container_age_seconds()]] - code - docker/scripts/start-agentshroud.sh
@@ -19,7 +19,6 @@ members: 20
 - [[_reap_idle_sandboxes()]] - code - docker/scripts/start-agentshroud.sh
 - [[_reconcile_security_critical_cron()]] - code - docker/scripts/start-agentshroud.sh
 - [[_rename_to_meaningful()]] - code - docker/scripts/start-agentshroud.sh
-- [[_slack_channel_id()]] - code - docker/scripts/start-agentshroud.sh
 - [[_slack_send()]] - code - docker/scripts/start-agentshroud.sh
 - [[_telegram_bot_token()_1]] - code - docker/scripts/start-agentshroud.sh
 - [[_telegram_get_me_ready()_1]] - code - docker/scripts/start-agentshroud.sh

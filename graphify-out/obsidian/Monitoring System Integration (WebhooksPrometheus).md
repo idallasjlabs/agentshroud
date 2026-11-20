@@ -1,11 +1,11 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Community 392"
+community: "Community 1944"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_392
+  - community/Community_1944
 ---
 
 # Monitoring System Integration (Webhooks/Prometheus)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Dashboard (WebSocket)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_392
+#graphify/document #graphify/INFERRED #community/Community_1944

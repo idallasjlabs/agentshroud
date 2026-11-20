@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "Community 28"
+community: "Community 84"
 location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_28
+  - community/Community_84
 ---
 
 # RedactionResult
@@ -20,4 +20,4 @@ tags:
 - [[RedactionDetail]] - `uses` [INFERRED]
 - [[RedactionResult]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_28
+#graphify/code #graphify/EXTRACTED #community/Community_84

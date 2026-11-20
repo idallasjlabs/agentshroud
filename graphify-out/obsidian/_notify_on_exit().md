@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade.sh"
 type: "code"
-community: "Community 1924"
+community: "Community 118"
 location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1924
+  - community/Community_118
 ---
 
 # _notify_on_exit()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sunday-upgrade.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1924
+#graphify/code #graphify/EXTRACTED #community/Community_118

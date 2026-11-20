@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "Community 72"
+community: "Community 0"
 location: "L93"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_72
+  - community/Community_0
 ---
 
 # FileSandboxConfig
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_96]] - `references` [EXTRACTED]
+- [[.__init__()_94]] - `references` [EXTRACTED]
 - [[.monitor_sandbox()]] - `calls` [EXTRACTED]
 - [[.sandbox()]] - `calls` [EXTRACTED]
 - [[.test_default_mode_is_enforce()_5]] - `calls` [EXTRACTED]
@@ -86,7 +86,7 @@ tags:
 - [[file_sandbox.py]] - `contains` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[run()_2]] - `calls` [EXTRACTED]
 - [[strict_config()_1]] - `calls` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_file_sandbox.py]] - `imports` [EXTRACTED]
@@ -94,4 +94,4 @@ tags:
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_72
+#graphify/code #graphify/INFERRED #community/Community_0

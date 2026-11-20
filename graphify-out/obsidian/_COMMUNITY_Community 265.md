@@ -1,16 +1,16 @@
 ---
 type: community
-members: 31
+members: 30
 ---
 
 # Community 265
 
-**Members:** 31 nodes
+**Members:** 30 nodes
 
 ## Members
-- [[.__init__()_230]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[.__init__()_226]] - code - scripts/migrate-cve-registry-ghsa.py
 - [[.confident()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[Any_88]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[Any_84]] - code - scripts/migrate-cve-registry-ghsa.py
 - [[Compute the per-entry rewrite plan and manual-review buckets.      Returns]] - rationale - scripts/migrate-cve-registry-ghsa.py
 - [[Counter]] - code - scripts/migrate-cve-registry-ghsa.py
 - [[Fetch every published GitHub Security Advisory for repo (cursor-paginated).]] - rationale - scripts/migrate-cve-registry-ghsa.py
@@ -24,7 +24,6 @@ members: 31
 - [[Render the manual-review markdown listing every unmatched entry.]] - rationale - scripts/migrate-cve-registry-ghsa.py
 - [[Return per-agent advisory lists from snapshot or live GitHub.]] - rationale - scripts/migrate-cve-registry-ghsa.py
 - [[Rewrite every ``id old`` line and set ghsa_idcve_id right after it.]] - rationale - scripts/migrate-cve-registry-ghsa.py
-- [[_advisory_patched_versions()]] - code - scripts/migrate-cve-registry-ghsa.py
 - [[_advisory_text_tokens()]] - code - scripts/migrate-cve-registry-ghsa.py
 - [[_py_literal()]] - code - scripts/migrate-cve-registry-ghsa.py
 - [[_tokens()]] - code - scripts/migrate-cve-registry-ghsa.py
@@ -48,8 +47,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 17]]
-- 1 edge to [[_COMMUNITY_Community 2071]]
+- 1 edge to [[_COMMUNITY_Community 329]]
+- 1 edge to [[_COMMUNITY_Community 10]]
 
 ## Top bridge nodes
 - [[Counter]] - degree 4, connects to 2 communities

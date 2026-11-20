@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/playwright.md"
 type: "document"
-community: "Community 1569"
+community: "Community 800"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1569
+  - community/Community_800
 ---
 
 # Playwright
@@ -19,4 +19,4 @@ tags:
 - [[Volume]] - `contains` [EXTRACTED]
 - [[playwright_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1569
+#graphify/document #graphify/EXTRACTED #community/Community_800

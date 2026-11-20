@@ -12,6 +12,6 @@ tags:
 # Convert session to dictionary for serialization.
 
 ## Connections
-- [[.to_dict()_12]] - `rationale_for` [EXTRACTED]
+- [[.to_dict()_11]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_60

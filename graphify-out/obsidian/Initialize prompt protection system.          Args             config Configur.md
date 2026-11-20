@@ -12,6 +12,6 @@ tags:
 # Initialize prompt protection system.          Args:             config: Configur
 
 ## Connections
-- [[.__init__()_125]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_123]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_141

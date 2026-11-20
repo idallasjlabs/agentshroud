@@ -13,7 +13,6 @@ tags:
 
 ## Connections
 - [[Add a comment to an existing Jira issue.]] - `rationale_for` [EXTRACTED]
-- [[RuntimeError]] - `calls` [INFERRED]
 - [[_auth_headers()]] - `calls` [EXTRACTED]
 - [[build_comment_payload()]] - `calls` [EXTRACTED]
 - [[build_comment_url()]] - `calls` [EXTRACTED]

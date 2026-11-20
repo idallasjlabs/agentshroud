@@ -33,7 +33,7 @@ members: 77
 - [[.test_valid_version()]] - code - gateway/tests/test_agentshroud_manager.py
 - [[.test_with_env_var()]] - code - gateway/tests/test_agentshroud_manager.py
 - [[Any_20]] - code - gateway/ingest_api/version_routes.py
-- [[Any_84]] - code - gateway/tools/agentshroud_manager.py
+- [[Any_80]] - code - gateway/tools/agentshroud_manager.py
 - [[Check the currently installed OpenClaw version.]] - rationale - gateway/tools/agentshroud_manager.py
 - [[Connection_2]] - code - gateway/tools/agentshroud_manager.py
 - [[Create a temporary database for testing.]] - rationale - gateway/tests/test_agentshroud_manager.py
@@ -94,10 +94,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 10]]
-- 2 edges to [[_COMMUNITY_Community 49]]
+- 3 edges to [[_COMMUNITY_Community 10]]
+- 2 edges to [[_COMMUNITY_Community 890]]
 - 1 edge to [[_COMMUNITY_Community 978]]
 - 1 edge to [[_COMMUNITY_Community 227]]
+- 1 edge to [[_COMMUNITY_Community 40]]
+- 1 edge to [[_COMMUNITY_Community 49]]
 
 ## Top bridge nodes
 - [[version_routes.py]] - degree 19, connects to 1 community

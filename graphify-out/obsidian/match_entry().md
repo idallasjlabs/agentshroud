@@ -2,7 +2,7 @@
 source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
 community: "Community 265"
-location: "L204"
+location: "L196"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # match_entry()
 
 ## Connections
-- [[Any_88]] - `references` [EXTRACTED]
+- [[Any_84]] - `references` [EXTRACTED]
 - [[Counter]] - `references` [EXTRACTED]
 - [[Match a single registry entry to at most one advisory, honestly.      Returns]] - `rationale_for` [EXTRACTED]
 - [[MatchResult]] - `references` [EXTRACTED]

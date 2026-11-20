@@ -45,7 +45,7 @@ SORT file.name ASC
 - 11 edges to [[_COMMUNITY_Community 67]]
 - 8 edges to [[_COMMUNITY_Community 29]]
 - 4 edges to [[_COMMUNITY_Community 311]]
-- 1 edge to [[_COMMUNITY_Community 943]]
+- 1 edge to [[_COMMUNITY_Community 102]]
 
 ## Top bridge nodes
 - [[_load_latest_json()]] - degree 15, connects to 3 communities

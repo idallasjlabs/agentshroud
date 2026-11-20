@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[._is_internal_link()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Check if this is an internal link (relative, anchor, etc.).]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Anthropic-format tool_use response returns the same shape in local mode.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_mode_anthropic_tool_use_shape_passes_through()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 647]]
+- 1 edge to [[_COMMUNITY_Community 208]]
+- 1 edge to [[_COMMUNITY_Community 112]]
 
 ## Top bridge nodes
-- [[._is_internal_link()]] - degree 2, connects to 1 community
+- [[test_local_mode_anthropic_tool_use_shape_passes_through()]] - degree 3, connects to 2 communities

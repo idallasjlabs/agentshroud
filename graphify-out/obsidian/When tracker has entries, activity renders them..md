@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 845"
+community: "Community 436"
 location: "L4794"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_845
+  - community/Community_436
 ---
 
 # When tracker has entries, /activity renders them.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_activity_command_renders_entries()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_845
+#graphify/rationale #graphify/EXTRACTED #community/Community_436

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Community 49"
-location: "L584"
+community: "Community 40"
+location: "L580"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/Community_40
 ---
 
 # Upgrade a named bot container.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[upgrade_bot()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_49
+#graphify/rationale #graphify/EXTRACTED #community/Community_40

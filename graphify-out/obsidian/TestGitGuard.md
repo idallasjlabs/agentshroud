@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_git_guard.py"
 type: "code"
-community: "Community 121"
+community: "Community 0"
 location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_121
+  - community/Community_0
 ---
 
 # TestGitGuard
@@ -24,4 +24,4 @@ tags:
 - [[GitGuard]] - `uses` [INFERRED]
 - [[test_git_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_121
+#graphify/code #graphify/EXTRACTED #community/Community_0

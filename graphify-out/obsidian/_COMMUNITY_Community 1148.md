@@ -1,29 +1,21 @@
 ---
 type: community
-members: 16
+members: 8
 ---
 
 # Community 1148
 
-**Members:** 16 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[.teardown_method()_1]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.teardown_method()_2]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.test_expected_write_window()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.test_file_monitoring_new_file()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.test_hash_computation()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.test_integrity_database_persistence()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[.test_tampering_detection()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[Clean up test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Clean up test environment._1]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test detection of unauthorized modifications.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test file hash computation.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test integrity database saves and loads correctly.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test memory integrity monitoring.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test monitoring a new file.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test write grace window prevents false alerts.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[TestMemoryIntegrityMonitor]] - code - gateway/tests/test_memory_lifecycle.py
+- [[AgentShroud — System Overview]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Components_2]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Key Design Decisions]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Related Notes_1]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Security Layers (in order)]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[What It Is]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Who Depends On It]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Why It Exists]] - document - docs/vault/00 - START HERE/System Overview.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,11 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 16]]
-- 5 edges to [[_COMMUNITY_Community 477]]
-- 1 edge to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 94]]
 
 ## Top bridge nodes
-- [[TestMemoryIntegrityMonitor]] - degree 17, connects to 3 communities
-- [[.test_integrity_database_persistence()]] - degree 3, connects to 1 community
-- [[.teardown_method()_2]] - degree 3, connects to 1 community
+- [[AgentShroud — System Overview]] - degree 8, connects to 1 community

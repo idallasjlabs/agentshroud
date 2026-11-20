@@ -1,21 +1,29 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "Community 102"
-location: "L67"
+community: "Community 198"
+location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_102
+  - community/Community_198
 ---
 
 # Any
 
 ## Connections
-- [[._handle_critical()]] - `references` [EXTRACTED]
-- [[categorize_alerts()]] - `references` [EXTRACTED]
-- [[generate_summary()_1]] - `references` [EXTRACTED]
-- [[parse_alert()]] - `references` [EXTRACTED]
-- [[read_alerts()]] - `references` [EXTRACTED]
+- [[._generate_new_credential()]] - `references` [EXTRACTED]
+- [[._validate_credential()]] - `references` [EXTRACTED]
+- [[.check_and_rotate_due_credentials()]] - `references` [EXTRACTED]
+- [[.cleanup_retired_credentials()]] - `references` [EXTRACTED]
+- [[.emergency_rotate_credential()]] - `references` [EXTRACTED]
+- [[.get_all_credentials_status()]] - `references` [EXTRACTED]
+- [[.get_credential_status()]] - `references` [EXTRACTED]
+- [[.get_health_score()]] - `references` [EXTRACTED]
+- [[.register_credential()]] - `references` [EXTRACTED]
+- [[.rotate_credential()]] - `references` [EXTRACTED]
+- [[.validate()]] - `references` [EXTRACTED]
+- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
+- [[KeyRotationConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_102
+#graphify/code #graphify/EXTRACTED #community/Community_198

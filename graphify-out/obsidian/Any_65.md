@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Community 6"
-location: "L187"
+community: "Community 60"
+location: "L62"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_6
+  - graphify/EXTRACTED
+  - community/Community_60
 ---
 
 # Any
 
 ## Connections
-- [[.check_permission()]] - `references` [EXTRACTED]
-- [[.get_user_permissions_summary()]] - `references` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[.add_conversation_message()]] - `references` [EXTRACTED]
+- [[.from_dict()_11]] - `references` [EXTRACTED]
+- [[.get_session_context()]] - `references` [EXTRACTED]
+- [[.reanchor_system_prompt()]] - `references` [EXTRACTED]
+- [[.to_dict()_11]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/Community_60

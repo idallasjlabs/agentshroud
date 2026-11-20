@@ -1,14 +1,14 @@
 ---
 type: community
-members: 92
+members: 120
 ---
 
 # Community 26
 
-**Members:** 92 nodes
+**Members:** 120 nodes
 
 ## Members
-- [[.__init__()_121]] - code - gateway/security/path_isolation.py
+- [[.__init__()_119]] - code - gateway/security/path_isolation.py
 - [[._apply_path_rewriting()]] - code - gateway/security/path_isolation.py
 - [[._check_cross_user_access()]] - code - gateway/security/path_isolation.py
 - [[._cleanup_user_directory()]] - code - gateway/security/path_isolation.py
@@ -34,24 +34,42 @@ members: 92
 - [[.test_block_cross_user_access()]] - code - gateway/tests/test_path_isolation.py
 - [[.test_blocked_result()]] - code - gateway/tests/test_path_isolation.py
 - [[.test_cleanup_abandoned_directories()]] - code - gateway/tests/test_path_isolation.py
+- [[.test_context_guard_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[.test_custom_config()_2]] - code - gateway/tests/test_path_isolation.py
 - [[.test_default_config()_5]] - code - gateway/tests/test_path_isolation.py
+- [[.test_dns_filter_default_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[.test_dont_cleanup_active_user_directories()]] - code - gateway/tests/test_path_isolation.py
+- [[.test_egress_monitor_default_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[.test_end_user_session()]] - code - gateway/tests/test_path_isolation.py
+- [[.test_file_sandbox_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[.test_get_active_users()]] - code - gateway/tests/test_path_isolation.py
 - [[.test_get_user_temp_path()]] - code - gateway/tests/test_path_isolation.py
+- [[.test_git_guard_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[.test_initialization()_2]] - code - gateway/tests/test_path_isolation.py
+- [[.test_multi_turn_tracker_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_output_canary_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[.test_path_isolation_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[.test_path_rewriting_nested_paths()]] - code - gateway/tests/test_path_isolation.py
 - [[.test_path_rewriting_no_rewrite_needed()]] - code - gateway/tests/test_path_isolation.py
 - [[.test_path_rewriting_temp_files()]] - code - gateway/tests/test_path_isolation.py
 - [[.test_register_user_session()]] - code - gateway/tests/test_path_isolation.py
+- [[.test_security_config_dns_filter_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_egress_filter_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_egress_monitor_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_killswitch_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_mcp_proxy_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_pii_sanitizer_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_prompt_guard_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_subagent_monitor_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_subagent_monitor_default_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_tool_chain_analyzer_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[.test_user_id_sanitization()]] - code - gateway/tests/test_path_isolation.py
 - [[Apply path rewriting rules to isolate paths per user.]] - rationale - gateway/security/path_isolation.py
 - [[Check if path is trying to access another user's isolated namespace.          Re]] - rationale - gateway/security/path_isolation.py
 - [[Check if path is trying to access the base AgentShroud directory.]] - rationale - gateway/security/path_isolation.py
 - [[Clean up a user's isolated directory.]] - rationale - gateway/security/path_isolation.py
 - [[Clean up abandoned user directories based on max age.]] - rationale - gateway/security/path_isolation.py
+- [[Complete security configuration]] - rationale - gateway/ingest_api/config.py
 - [[Configuration for path isolation system.]] - rationale - gateway/security/path_isolation.py
 - [[Create base agentshroud temp directory if it doesn't exist.]] - rationale - gateway/security/path_isolation.py
 - [[Create path isolation manager for testing.]] - rationale - gateway/tests/test_path_isolation.py
@@ -72,6 +90,7 @@ members: 92
 - [[Result of path rewriting operation.]] - rationale - gateway/security/path_isolation.py
 - [[Rewrite a path to isolate it to the user's namespace.          Args]] - rationale - gateway/security/path_isolation.py
 - [[Sanitize user ID to prevent path traversal attacks.]] - rationale - gateway/security/path_isolation.py
+- [[SecurityConfig_3]] - code - gateway/ingest_api/config.py
 - [[Test PathRewriteResult dataclass.]] - rationale - gateway/tests/test_path_isolation.py
 - [[Test allowing access to own namespace.]] - rationale - gateway/tests/test_path_isolation.py
 - [[Test basic result creation.]] - rationale - gateway/tests/test_path_isolation.py
@@ -94,11 +113,20 @@ members: 92
 - [[Test that already isolated paths are not double-rewritten.]] - rationale - gateway/tests/test_path_isolation.py
 - [[Test user ID sanitization.]] - rationale - gateway/tests/test_path_isolation.py
 - [[Test user session registration.]] - rationale - gateway/tests/test_path_isolation.py
+- [[TestGetModuleModeEnforceDefault]] - code - gateway/tests/test_all_modules_enforce.py
+- [[TestModuleConfigDefaults]] - code - gateway/tests/test_all_modules_enforce.py
+- [[TestModuleInstantiationInEnforceMode]] - code - gateway/tests/test_all_modules_enforce.py
 - [[TestPathIsolationConfig]] - code - gateway/tests/test_path_isolation.py
 - [[TestPathIsolationManager]] - code - gateway/tests/test_path_isolation.py
 - [[TestPathRewriteResult]] - code - gateway/tests/test_path_isolation.py
+- [[TestSecurityConfigDefaults]] - code - gateway/tests/test_all_modules_enforce.py
+- [[Verify SecurityConfig and SecurityModuleConfig default to enforce.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[Verify get_module_mode returns enforce when no override is set.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[Verify individual module configs default to enforce mode.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[Verify modules can instantiate and operate in enforce mode.]] - rationale - gateway/tests/test_all_modules_enforce.py
 - [[any]] - code - gateway/security/path_isolation.py
 - [[path_isolation.py]] - code - gateway/security/path_isolation.py
+- [[test_all_modules_enforce.py]] - code - gateway/tests/test_all_modules_enforce.py
 - [[test_path_isolation.py]] - code - gateway/tests/test_path_isolation.py
 
 ## Live Query (requires Dataview plugin)
@@ -109,17 +137,29 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 29 edges to [[_COMMUNITY_Community 72]]
-- 4 edges to [[_COMMUNITY_Community 84]]
-- 2 edges to [[_COMMUNITY_Community 1]]
-- 2 edges to [[_COMMUNITY_Community 31]]
-- 2 edges to [[_COMMUNITY_Community 151]]
-- 1 edge to [[_COMMUNITY_Community 1214]]
-- 1 edge to [[_COMMUNITY_Community 1281]]
+- 34 edges to [[_COMMUNITY_Community 0]]
+- 21 edges to [[_COMMUNITY_Community 151]]
+- 8 edges to [[_COMMUNITY_Community 31]]
+- 7 edges to [[_COMMUNITY_Community 7]]
+- 7 edges to [[_COMMUNITY_Community 1281]]
+- 6 edges to [[_COMMUNITY_Community 1]]
+- 6 edges to [[_COMMUNITY_Community 196]]
+- 6 edges to [[_COMMUNITY_Community 72]]
+- 6 edges to [[_COMMUNITY_Community 17]]
+- 6 edges to [[_COMMUNITY_Community 140]]
+- 6 edges to [[_COMMUNITY_Community 9]]
+- 6 edges to [[_COMMUNITY_Community 233]]
+- 6 edges to [[_COMMUNITY_Community 84]]
+- 6 edges to [[_COMMUNITY_Community 146]]
+- 6 edges to [[_COMMUNITY_Community 8]]
+- 4 edges to [[_COMMUNITY_Community 3]]
+- 1 edge to [[_COMMUNITY_Community 890]]
+- 1 edge to [[_COMMUNITY_Community 181]]
+- 1 edge to [[_COMMUNITY_Community 431]]
 
 ## Top bridge nodes
-- [[PathIsolationManager]] - degree 44, connects to 4 communities
-- [[PathIsolationConfig]] - degree 30, connects to 4 communities
-- [[path_isolation.py]] - degree 5, connects to 2 communities
-- [[TestPathIsolationManager]] - degree 24, connects to 1 community
-- [[.test_path_isolation_instantiates()]] - degree 3, connects to 1 community
+- [[TestModuleInstantiationInEnforceMode]] - degree 31, connects to 14 communities
+- [[TestSecurityConfigDefaults]] - degree 30, connects to 14 communities
+- [[TestModuleConfigDefaults]] - degree 25, connects to 14 communities
+- [[test_all_modules_enforce.py]] - degree 24, connects to 14 communities
+- [[TestGetModuleModeEnforceDefault]] - degree 23, connects to 14 communities

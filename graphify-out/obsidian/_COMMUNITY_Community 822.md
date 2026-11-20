@@ -1,25 +1,26 @@
 ---
 type: community
-members: 12
+members: 13
 ---
 
 # Community 822
 
-**Members:** 12 nodes
+**Members:** 13 nodes
 
 ## Members
-- [[Any_48]] - code - gateway/security/egress_retry.py
-- [[Calculate delay with exponential backoff and jitter.]] - rationale - gateway/security/egress_retry.py
-- [[Configuration for egress retry behavior.]] - rationale - gateway/security/egress_retry.py
-- [[Execute a request with exponential backoff retry on transient failures.      Arg]] - rationale - gateway/security/egress_retry.py
-- [[Result of a retried operation.]] - rationale - gateway/security/egress_retry.py
-- [[RetryConfig]] - code - gateway/security/egress_retry.py
-- [[RetryResult]] - code - gateway/security/egress_retry.py
-- [[Synchronous version of retry_request for non-async contexts.]] - rationale - gateway/security/egress_retry.py
-- [[calculate_delay()]] - code - gateway/security/egress_retry.py
-- [[egress_retry.py]] - code - gateway/security/egress_retry.py
-- [[retry_request()]] - code - gateway/security/egress_retry.py
-- [[retry_request_sync()]] - code - gateway/security/egress_retry.py
+- [[.__init__()_180]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[.__init__()_181]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[.close()_19]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[.close()_20]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[.drain()_3]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[.readline()_1]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[.write()_3]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[First readline returns the request line; the next stalls.]] - rationale - gateway/tests/test_http_proxy_coverage.py
+- [[_CloseRaisesTargetWriter]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[_DummyTargetWriter_1]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[_HeaderTimeoutReader]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[start() binds a real loopback server; a client gets a parsed response;     stop(]] - rationale - gateway/tests/test_http_proxy_coverage.py
+- [[test_start_serves_and_stop_closes_loopback()]] - code - gateway/tests/test_http_proxy_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +30,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 18]]
+- 6 edges to [[_COMMUNITY_Community 120]]
+- 6 edges to [[_COMMUNITY_Community 81]]
+- 4 edges to [[_COMMUNITY_Community 86]]
+- 1 edge to [[_COMMUNITY_Community 68]]
 
 ## Top bridge nodes
-- [[egress_retry.py]] - degree 6, connects to 1 community
+- [[_DummyTargetWriter_1]] - degree 9, connects to 3 communities
+- [[_HeaderTimeoutReader]] - degree 8, connects to 3 communities
+- [[_CloseRaisesTargetWriter]] - degree 6, connects to 3 communities
+- [[test_start_serves_and_stop_closes_loopback()]] - degree 8, connects to 2 communities
+- [[.close()_20]] - degree 3, connects to 1 community

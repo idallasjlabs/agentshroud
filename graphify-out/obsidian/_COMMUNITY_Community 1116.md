@@ -13,7 +13,7 @@ members: 7
 - [[deploy_ref()]] - code - scripts/canary-deploy.sh
 - [[die()]] - code - scripts/canary-deploy.sh
 - [[log()_6]] - code - scripts/canary-deploy.sh
-- [[run()_4]] - code - scripts/canary-deploy.sh
+- [[run()_3]] - code - scripts/canary-deploy.sh
 - [[run_in_repo()]] - code - scripts/canary-deploy.sh
 
 ## Live Query (requires Dataview plugin)

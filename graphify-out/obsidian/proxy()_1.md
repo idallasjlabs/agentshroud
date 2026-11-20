@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/tests/test_a2a_proxy.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Community 116"
-location: "L53"
+community: "Community 64"
+location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_116
+  - community/Community_64
 ---
 
 # proxy()
 
 ## Connections
-- [[A2AProxy_1]] - `references` [EXTRACTED]
-- [[_StubForwarder]] - `references` [EXTRACTED]
-- [[_base_policy_engine()]] - `calls` [EXTRACTED]
-- [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
+- [[MCPAuditTrail]] - `calls` [EXTRACTED]
+- [[MCPInspector]] - `calls` [EXTRACTED]
+- [[MCPPermissionManager]] - `calls` [EXTRACTED]
+- [[MCPProxy]] - `calls` [EXTRACTED]
+- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_116
+#graphify/code #graphify/EXTRACTED #community/Community_64

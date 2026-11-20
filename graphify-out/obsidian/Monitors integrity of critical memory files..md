@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "Community 477"
+community: "Community 16"
 location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_477
+  - community/Community_16
 ---
 
 # Monitors integrity of critical memory files.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MemoryIntegrityMonitor]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_477
+#graphify/rationale #graphify/EXTRACTED #community/Community_16

@@ -2,7 +2,7 @@
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
 community: "Community 23"
-location: "L783"
+location: "L771"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

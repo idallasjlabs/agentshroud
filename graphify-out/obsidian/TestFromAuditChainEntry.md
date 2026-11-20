@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Community 1191"
+community: "Community 6"
 location: "L311"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1191
+  - community/Community_6
 ---
 
 # TestFromAuditChainEntry
@@ -29,4 +29,4 @@ tags:
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1191
+#graphify/code #graphify/EXTRACTED #community/Community_6

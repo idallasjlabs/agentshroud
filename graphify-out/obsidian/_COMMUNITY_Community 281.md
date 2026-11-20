@@ -45,8 +45,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 25 edges to [[_COMMUNITY_Community 133]]
-- 12 edges to [[_COMMUNITY_Community 924]]
+- 19 edges to [[_COMMUNITY_Community 133]]
+- 18 edges to [[_COMMUNITY_Community 924]]
 
 ## Top bridge nodes
 - [[Path_42]] - degree 24, connects to 2 communities

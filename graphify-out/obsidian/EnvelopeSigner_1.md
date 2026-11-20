@@ -12,7 +12,7 @@ tags:
 # EnvelopeSigner
 
 ## Connections
-- [[.__init__()_101]] - `method` [EXTRACTED]
+- [[.__init__()_99]] - `method` [EXTRACTED]
 - [[._compute_signature()]] - `method` [EXTRACTED]
 - [[.sign()]] - `method` [EXTRACTED]
 - [[.test_different_keys_fail_verification()]] - `calls` [EXTRACTED]

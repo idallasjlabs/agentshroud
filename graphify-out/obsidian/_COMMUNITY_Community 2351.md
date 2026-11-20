@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_prompt_injection_detection()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[Test prompt injection detection.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[_get_local_secondary_model returns None if env var is unset.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_get_local_secondary_model_returns_none_when_unset()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 16]]
+- 1 edge to [[_COMMUNITY_Community 208]]
+- 1 edge to [[_COMMUNITY_Community 112]]
 
 ## Top bridge nodes
-- [[.test_prompt_injection_detection()]] - degree 2, connects to 1 community
+- [[test_get_local_secondary_model_returns_none_when_unset()]] - degree 3, connects to 2 communities

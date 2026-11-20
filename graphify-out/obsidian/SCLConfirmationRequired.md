@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 10"
-location: "L248"
+community: "Community 890"
+location: "L225"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_10
+  - community/Community_890
 ---
 
 # SCLConfirmationRequired
@@ -16,7 +16,7 @@ tags:
 - [[.test_destructive_requires_confirmation()]] - `calls` [EXTRACTED]
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_77]] - `uses` [INFERRED]
+- [[Any_73]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
 - [[AuditResult_1]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
@@ -52,4 +52,4 @@ tags:
 - [[test_soc_egress.py]] - `imports` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_10
+#graphify/code #graphify/INFERRED #community/Community_890

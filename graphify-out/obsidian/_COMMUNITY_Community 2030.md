@@ -24,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 707]]
+- 1 edge to [[_COMMUNITY_Community 151]]
 
 ## Top bridge nodes
 - [[Dependency Graph]] - degree 3, connects to 1 community

@@ -1,24 +1,19 @@
 ---
 type: community
-members: 11
+members: 6
 ---
 
 # Community 1561
 
-**Members:** 11 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[AgentShroud Sunday Upgrade — 2026-09-27 (DEV run)]] - document - reports/upgrade-2026-09-27.md
-- [[Summary line_8]] - document - reports/upgrade-2026-09-27.md
-- [[§0 Preflight_1]] - document - reports/upgrade-2026-09-27.md
-- [[§1 Environment mapping_1]] - document - reports/upgrade-2026-09-27.md
-- [[§2 Inventory & versions checked_1]] - document - reports/upgrade-2026-09-27.md
-- [[§3 Bugs found and fixed this run (code changes, per owner directive — a needed fix is not grounds to skip)_1]] - document - reports/upgrade-2026-09-27.md
-- [[§4 Build  apply  verify (dev)_1]] - document - reports/upgrade-2026-09-27.md
-- [[§5 Security findings_1]] - document - reports/upgrade-2026-09-27.md
-- [[§6 Breaking changes  manual follow-ups_1]] - document - reports/upgrade-2026-09-27.md
-- [[§7 Rollback instructions_1]] - document - reports/upgrade-2026-09-27.md
-- [[§8 Time spent_1]] - document - reports/upgrade-2026-09-27.md
+- [[W1 Duplicate `import time` in `dashboard.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[W2 Redundant function-level `import threading` in `lifespan.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[W3 Redundant function-level `import fnmatch` in `main.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[W4 Tailscale image not pinned to SHA256 digest]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[W5 Hardcoded owner ID fallback `'1234567890'` in `lifespan.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[🟡 WARNINGS (should fix)]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1924]]
+- 1 edge to [[_COMMUNITY_Community 153]]
 
 ## Top bridge nodes
-- [[AgentShroud Sunday Upgrade — 2026-09-27 (DEV run)]] - degree 11, connects to 1 community
+- [[🟡 WARNINGS (should fix)]] - degree 6, connects to 1 community

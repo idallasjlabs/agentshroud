@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "Community 17"
+community: "Community 22"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_17
+  - community/Community_22
 ---
 
 # EgressAction
@@ -58,4 +58,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_17
+#graphify/code #graphify/INFERRED #community/Community_22

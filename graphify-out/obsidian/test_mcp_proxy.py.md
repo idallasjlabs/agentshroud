@@ -56,7 +56,7 @@ tags:
 - [[mcp_permissions.py]] - `references` [EXTRACTED]
 - [[mcp_proxy.py]] - `references` [EXTRACTED]
 - [[passthrough_proxy()]] - `contains` [EXTRACTED]
-- [[proxy()_2]] - `contains` [EXTRACTED]
+- [[proxy()_1]] - `contains` [EXTRACTED]
 - [[strict_inspector()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_64

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "Community 8"
+community: "Community 38"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_8
+  - community/Community_38
 ---
 
 # test_soc_models.py
@@ -17,7 +17,7 @@ tags:
 - [[EgressStatus]] - `imports` [EXTRACTED]
 - [[HealthStatus]] - `imports` [EXTRACTED]
 - [[Platform]] - `imports` [EXTRACTED]
-- [[ResourceUsage_2]] - `imports` [EXTRACTED]
+- [[ResourceUsage_1]] - `imports` [EXTRACTED]
 - [[RiskLevel_5]] - `imports` [EXTRACTED]
 - [[SCLConfirmationRequired]] - `imports` [EXTRACTED]
 - [[SCLError]] - `imports` [EXTRACTED]
@@ -35,4 +35,4 @@ tags:
 - [[WSEvent]] - `imports` [EXTRACTED]
 - [[WSEventType]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_8
+#graphify/code #graphify/EXTRACTED #community/Community_38

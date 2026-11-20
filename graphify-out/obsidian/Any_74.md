@@ -1,20 +1,23 @@
 ---
-source_file: "gateway/security/trivy_report.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "Community 131"
-location: "L27"
+community: "Community 38"
+location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_131
+  - community/Community_38
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()_2]] - `references` [EXTRACTED]
-- [[parse_trivy_output()]] - `references` [EXTRACTED]
-- [[run_trivy_scan()_1]] - `references` [EXTRACTED]
-- [[save_report()_1]] - `references` [EXTRACTED]
+- [[.__init__()_143]] - `references` [EXTRACTED]
+- [[._describe_service()]] - `references` [EXTRACTED]
+- [[._get_engine()]] - `references` [EXTRACTED]
+- [[HealthStatus]] - `uses` [INFERRED]
+- [[ServiceDescriptor]] - `uses` [INFERRED]
+- [[ServiceStatus]] - `uses` [INFERRED]
+- [[_inspect_via_socket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_131
+#graphify/code #graphify/EXTRACTED #community/Community_38

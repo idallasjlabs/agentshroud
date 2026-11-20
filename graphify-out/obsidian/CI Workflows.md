@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/ci-workflows.md"
 type: "document"
-community: "Community 253"
+community: "Community 1360"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_253
+  - community/Community_1360
 ---
 
 # CI Workflows
@@ -19,4 +19,4 @@ tags:
 - [[Related Notes_20]] - `contains` [EXTRACTED]
 - [[ci-workflows]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_253
+#graphify/document #graphify/EXTRACTED #community/Community_1360

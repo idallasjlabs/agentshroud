@@ -1,14 +1,14 @@
 ---
 type: community
-members: 86
+members: 74
 ---
 
 # Community 31
 
-**Members:** 86 nodes
+**Members:** 74 nodes
 
 ## Members
-- [[.__init__()_96]] - code - gateway/security/file_sandbox.py
+- [[.__init__()_94]] - code - gateway/security/file_sandbox.py
 - [[._check()]] - code - gateway/security/file_sandbox.py
 - [[._detect_raw_traversal()]] - code - gateway/security/file_sandbox.py
 - [[._is_immutable_file()]] - code - gateway/security/file_sandbox.py
@@ -23,7 +23,6 @@ members: 86
 - [[.get_temp_files()]] - code - gateway/security/file_sandbox.py
 - [[.record_network_activity()]] - code - gateway/security/file_sandbox.py
 - [[.scan()_3]] - code - gateway/security/file_sandbox.py
-- [[.test_any_python_file_in_gateway_blocked()]] - code - gateway/tests/test_privilege_separation.py
 - [[.test_api_key_pattern_detected()]] - code - gateway/tests/test_file_sandbox.py
 - [[.test_audit_has_path()]] - code - gateway/tests/test_file_sandbox.py
 - [[.test_credential_file_flagged()]] - code - gateway/tests/test_file_sandbox.py
@@ -37,17 +36,13 @@ members: 86
 - [[.test_env_file_flagged()]] - code - gateway/tests/test_file_sandbox.py
 - [[.test_etc_passwd_flagged()]] - code - gateway/tests/test_file_sandbox.py
 - [[.test_etc_shadow_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_file_sandbox_mcp_write()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[.test_gateway_source_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
 - [[.test_large_write_then_network_flagged()]] - code - gateway/tests/test_file_sandbox.py
 - [[.test_large_write_without_network_not_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_modules_source_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
 - [[.test_monitor_mode_allows_everything()]] - code - gateway/tests/test_file_sandbox.py
 - [[.test_no_pii_clean()]] - code - gateway/tests/test_file_sandbox.py
 - [[.test_pii_in_write_flagged()]] - code - gateway/tests/test_file_sandbox.py
 - [[.test_project_files_allowed()]] - code - gateway/tests/test_file_sandbox.py
 - [[.test_read_logged()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_security_module_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
 - [[.test_small_writes_not_flagged()]] - code - gateway/tests/test_file_sandbox.py
 - [[.test_ssh_private_key_flagged()]] - code - gateway/tests/test_file_sandbox.py
 - [[.test_ssn_detected()]] - code - gateway/tests/test_file_sandbox.py
@@ -57,11 +52,6 @@ members: 86
 - [[.test_workspace_read_allowed()]] - code - gateway/tests/test_file_sandbox.py
 - [[.test_workspace_write_allowed()]] - code - gateway/tests/test_file_sandbox.py
 - [[.test_write_logged()]] - code - gateway/tests/test_file_sandbox.py
-- [[Agent cannot modify AgentShroud's own source code.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to gateway Python source files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to security framework files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to security module source files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Any .py file in gateway directory should be blocked.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Check if path is within any allowed pattern.]] - rationale - gateway/security/file_sandbox.py
 - [[Check if path matches any blocked pattern.]] - rationale - gateway/security/file_sandbox.py
 - [[Check if this is an immutable security file by name.]] - rationale - gateway/security/file_sandbox.py
@@ -73,7 +63,6 @@ members: 86
 - [[FileVerdict]] - code - gateway/security/file_sandbox.py
 - [[Get all flagged operations that indicate security violations.]] - rationale - gateway/security/file_sandbox.py
 - [[Large-write-then-network-activity stagingexfiltration pattern detection]] - concept - gateway/tests/test_file_sandbox.py
-- [[MCP file writes should go through sandbox.]] - rationale - gateway/tests/test_security_audit_advanced.py
 - [[PIIFinding]] - code - gateway/security/file_sandbox.py
 - [[PIIScanResult]] - code - gateway/security/file_sandbox.py
 - [[PIIScanner]] - code - gateway/security/file_sandbox.py
@@ -81,7 +70,6 @@ members: 86
 - [[Round 2 Security Hardening Tests]] - code - gateway/tests/test_round2_hardening.py
 - [[Rule agentshroud-path-traversal-open]] - concept - .semgrep.yml
 - [[StagingPattern]] - code - gateway/security/file_sandbox.py
-- [[TestAgentShroudSourceCodeProtection]] - code - gateway/tests/test_privilege_separation.py
 - [[TestFileAudit]] - code - gateway/tests/test_file_sandbox.py
 - [[TestFileSandboxConfig]] - code - gateway/tests/test_file_sandbox.py
 - [[TestNormalFileOperations]] - code - gateway/tests/test_file_sandbox.py
@@ -103,24 +91,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 29 edges to [[_COMMUNITY_Community 72]]
-- 13 edges to [[_COMMUNITY_Community 1]]
-- 11 edges to [[_COMMUNITY_Community 0]]
-- 6 edges to [[_COMMUNITY_Community 809]]
-- 4 edges to [[_COMMUNITY_Community 121]]
-- 3 edges to [[_COMMUNITY_Community 394]]
-- 2 edges to [[_COMMUNITY_Community 84]]
-- 2 edges to [[_COMMUNITY_Community 557]]
-- 2 edges to [[_COMMUNITY_Community 26]]
+- 45 edges to [[_COMMUNITY_Community 0]]
+- 14 edges to [[_COMMUNITY_Community 1]]
+- 8 edges to [[_COMMUNITY_Community 26]]
+- 2 edges to [[_COMMUNITY_Community 3]]
 - 1 edge to [[_COMMUNITY_Community 978]]
-- 1 edge to [[_COMMUNITY_Community 1214]]
-- 1 edge to [[_COMMUNITY_Community 151]]
-- 1 edge to [[_COMMUNITY_Community 140]]
-- 1 edge to [[_COMMUNITY_Community 73]]
+- 1 edge to [[_COMMUNITY_Community 431]]
+- 1 edge to [[_COMMUNITY_Community 45]]
+- 1 edge to [[_COMMUNITY_Community 5]]
+- 1 edge to [[_COMMUNITY_Community 162]]
 
 ## Top bridge nodes
-- [[FileSandbox]] - degree 86, connects to 11 communities
+- [[FileSandbox]] - degree 86, connects to 7 communities
 - [[file_sandbox.py]] - degree 10, connects to 2 communities
-- [[TestAgentShroudSourceCodeProtection]] - degree 9, connects to 2 communities
-- [[.test_file_sandbox_mcp_write()]] - degree 4, connects to 2 communities
 - [[Rule agentshroud-path-traversal-open]] - degree 3, connects to 2 communities
+- [[test_file_sandbox.py]] - degree 13, connects to 1 community
+- [[TestSensitivePathBlocking]] - degree 11, connects to 1 community

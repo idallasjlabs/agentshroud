@@ -1,19 +1,15 @@
 ---
 type: community
-members: 41
+members: 35
 ---
 
 # Community 330
 
-**Members:** 41 nodes
+**Members:** 35 nodes
 
 ## Members
-- [[75 Security Modules]] - document - README.md
 - [[Abstract]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[Agent Containment]] - document - README.md
 - [[AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[Content & Context Guards]] - document - README.md
-- [[Core Security Pipeline]] - document - README.md
 - [[I. Introduction]] - document - docs/papers/agentshroud-ieee-paper.md
 - [[II-A. AI Agent Security]] - document - docs/papers/agentshroud-ieee-paper.md
 - [[II-B. STPA-Sec]] - document - docs/papers/agentshroud-ieee-paper.md
@@ -30,24 +26,22 @@ members: 41
 - [[IX-B. STPA-Sec as Applied to AI Agent Systems]] - document - docs/papers/agentshroud-ieee-paper.md
 - [[IX-C. Industry Implications]] - document - docs/papers/agentshroud-ieee-paper.md
 - [[IX. Discussion]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[Infrastructure & Monitoring]] - document - README.md
-- [[Proxy & Network Layer]] - document - README.md
 - [[References_3]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[Supporting Infrastructure]] - document - README.md
-- [[TABLE I Security Module Inventory (52 Modules)]] - document - docs/papers/agentshroud-ieee-paper.md
 - [[TABLE II Unsafe Control Action Distribution]] - document - docs/papers/agentshroud-ieee-paper.md
 - [[TABLE III STPA-Sec Requirement Tiers]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-A. PII Sanitizer]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-B. Prompt Injection Defense]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-C. Credential Isolation]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-D. Encrypted Container Communication]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-E. DNS-Layer Enforcement]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-F. Tamper-Evident Audit]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V. Security Modules]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[TABLE IV Test Coverage by Defense Layer]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[TABLE V Phase 8.5 E2E Verification Scenarios]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[TABLE VI Post-Remediation Coverage Summary]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[TABLE VII Security Module Comparison]] - document - docs/papers/agentshroud-ieee-paper.md
 - [[VI-A. Methodology]] - document - docs/papers/agentshroud-ieee-paper.md
 - [[VI-B. Findings]] - document - docs/papers/agentshroud-ieee-paper.md
 - [[VI-C. Requirements]] - document - docs/papers/agentshroud-ieee-paper.md
 - [[VI. STPA-Sec Analysis]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VIII-A. Test Coverage]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VIII-B. Enforcement Verification]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VIII-C. Module Coverage Matrix]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VIII-D. Competitive Analysis]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VIII. Evaluation]] - document - docs/papers/agentshroud-ieee-paper.md
 - [[X. Conclusion and Future Work]] - document - docs/papers/agentshroud-ieee-paper.md
 
 ## Live Query (requires Dataview plugin)
@@ -58,12 +52,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 195]]
-- 1 edge to [[_COMMUNITY_Community 1260]]
+- 2 edges to [[_COMMUNITY_Community 195]]
 - 1 edge to [[_COMMUNITY_Community 400]]
 - 1 edge to [[_COMMUNITY_Community 2042]]
-- 1 edge to [[_COMMUNITY_Community 980]]
 
 ## Top bridge nodes
 - [[AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]] - degree 14, connects to 3 communities
-- [[75 Security Modules]] - degree 18, connects to 2 communities

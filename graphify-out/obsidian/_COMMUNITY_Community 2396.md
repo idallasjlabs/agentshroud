@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_proxy_request_allows_starting_then_online_sequence()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Starting and online notices are distinct and should both forward.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_context_aware_user_id_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[Test context-aware user ID filtering.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 845]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 626]]
+- 1 edge to [[_COMMUNITY_Community 98]]
 
 ## Top bridge nodes
-- [[.test_proxy_request_allows_starting_then_online_sequence()]] - degree 4, connects to 3 communities
+- [[.test_context_aware_user_id_filtering()]] - degree 2, connects to 1 community

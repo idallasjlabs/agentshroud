@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_jwt.py"
 type: "code"
-community: "Community 32"
+community: "Community 135"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Community_135
 ---
 
 # svc()
@@ -16,4 +16,4 @@ tags:
 - [[generate_signing_key_pem()]] - `calls` [EXTRACTED]
 - [[test_edge_jwt.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_32
+#graphify/code #graphify/EXTRACTED #community/Community_135

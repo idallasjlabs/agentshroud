@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "Community 18"
+community: "Community 194"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/Community_194
 ---
 
 # Return all projects accessible to the user via group membership.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_user_projects()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_18
+#graphify/rationale #graphify/EXTRACTED #community/Community_194

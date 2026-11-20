@@ -1,50 +1,56 @@
 ---
 type: community
-members: 37
+members: 43
 ---
 
 # Community 203
 
-**Members:** 37 nodes
+**Members:** 43 nodes
 
 ## Members
-- [[._check_message_size()]] - code - gateway/security/a2a_governance.py
-- [[._check_peer()]] - code - gateway/security/a2a_governance.py
-- [[._check_rate_limit()]] - code - gateway/security/a2a_governance.py
-- [[._check_task_concurrency()]] - code - gateway/security/a2a_governance.py
-- [[._finalize()]] - code - gateway/security/a2a_governance.py
-- [[._process()]] - code - gateway/security/a2a_governance.py
-- [[._sanitize_message()]] - code - gateway/security/a2a_governance.py
-- [[.complete_task()]] - code - gateway/security/a2a_governance.py
-- [[.fingerprint()]] - code - gateway/security/a2a_governance.py
-- [[.get_events()_1]] - code - gateway/security/a2a_governance.py
-- [[.process_inbound()_1]] - code - gateway/security/a2a_governance.py
-- [[.process_outbound()_1]] - code - gateway/security/a2a_governance.py
-- [[.test_fingerprint_deterministic()]] - code - gateway/tests/test_a2a_governance.py
-- [[.test_fingerprint_differs_for_different_payloads()]] - code - gateway/tests/test_a2a_governance.py
-- [[.update_peer_trust()]] - code - gateway/security/a2a_governance.py
-- [[A2ADecision]] - code - gateway/security/a2a_governance.py
-- [[A2AGovernanceEvent]] - code - gateway/security/a2a_governance.py
-- [[A2AGovernanceProxy]] - code - gateway/security/a2a_governance.py
-- [[A2AMessage]] - code - gateway/security/a2a_governance.py
-- [[An A2A protocol message passing through the governance proxy.]] - rationale - gateway/security/a2a_governance.py
-- [[Apply final decision and log governance event.]] - rationale - gateway/security/a2a_governance.py
-- [[Audit event for A2A governance decisions.]] - rationale - gateway/security/a2a_governance.py
-- [[Check concurrent task limit for task_request messages.]] - rationale - gateway/security/a2a_governance.py
-- [[Check message payload size.]] - rationale - gateway/security/a2a_governance.py
-- [[Check per-peer rate limit.]] - rationale - gateway/security/a2a_governance.py
-- [[Content hash for deduplication and audit.]] - rationale - gateway/security/a2a_governance.py
-- [[Core message processing pipeline.]] - rationale - gateway/security/a2a_governance.py
-- [[Governance decision for an A2A message.]] - rationale - gateway/security/a2a_governance.py
-- [[Governance proxy for Agent-to-Agent communication.      Sits between local agent]] - rationale - gateway/security/a2a_governance.py
-- [[Mark a delegated task as complete (decrements active task counter).]] - rationale - gateway/security/a2a_governance.py
-- [[Sanitize PII from A2A message payload. Returns list of sanitizations applied.]] - rationale - gateway/security/a2a_governance.py
-- [[TestMessageFingerprint]] - code - gateway/tests/test_a2a_governance.py
-- [[Update a peer's trust score (called by TrustManager integration).]] - rationale - gateway/security/a2a_governance.py
-- [[Validate and govern an inbound A2A message from a remote peer.]] - rationale - gateway/security/a2a_governance.py
-- [[Validate and govern an outbound A2A message to a remote peer.]] - rationale - gateway/security/a2a_governance.py
-- [[Validate that the peer is registered and trusted.]] - rationale - gateway/security/a2a_governance.py
-- [[a2a_governance.py]] - code - gateway/security/a2a_governance.py
+- [[.test_api_key_scrubbed()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_approved_write_executes_once()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_bad_ticket_does_not_execute()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_benign_read_call_dispatches()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_canary_blocks_and_suspends()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_concurrency_cap()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_daily_call_budget()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_daily_delegation_budget()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_disabled_vendor_gets_nothing()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_encoded_injection_blocked()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_escalation_ladder()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_extra_argument_rejected()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_garbage_token()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_injection_in_arguments_blocked()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_lists_only_profile_tools()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_local_agent_tools_hidden_without_local_agent()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_monitor_mode_logs_but_allows_injection()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_oversized_response_denied()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_per_client_rate_limit()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_per_vendor_rate_limit_spans_clients()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_pii_blocks_in_block_mode()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_pii_redacted_in_redact_mode()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_principal_is_never_the_owner()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_rate_window_slides()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_recent_call_carries_vendor_and_timestamp()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_record_has_fr9_fields()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_tool_not_in_vendor_profile()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_unknown_tool_denied_and_audited()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_vendor_kill_switch()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_write_without_approval_never_executes()]] - code - gateway/tests/test_edge_pipeline.py
+- [[.test_writes_disabled_at_escalated()]] - code - gateway/tests/test_edge_pipeline.py
+- [[Edge calls must not inherit the pipeline's owner exemption.]] - rationale - gateway/tests/test_edge_pipeline.py
+- [[TestT1ToolAbuse]] - code - gateway/tests/test_edge_pipeline.py
+- [[TestT2Exfiltration]] - code - gateway/tests/test_edge_pipeline.py
+- [[TestT3Writes]] - code - gateway/tests/test_edge_pipeline.py
+- [[TestT9Abuse]] - code - gateway/tests/test_edge_pipeline.py
+- [[_pct()]] - code - gateway/tests/test_edge_benchmark.py
+- [[_profile()_1]] - code - gateway/tests/test_edge_pipeline.py
+- [[_text()]] - code - gateway/tests/test_edge_pipeline.py
+- [[_token()_1]] - code - gateway/tests/test_edge_pipeline.py
+- [[test_edge_benchmark.py]] - code - gateway/tests/test_edge_benchmark.py
+- [[test_edge_read_call_latency()]] - code - gateway/tests/test_edge_benchmark.py
+- [[throttle → writes disabled → token revoked → vendor disabled, each audited.]] - rationale - gateway/tests/test_edge_pipeline.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -54,16 +60,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 51 edges to [[_COMMUNITY_Community 44]]
-- 3 edges to [[_COMMUNITY_Community 8]]
-- 1 edge to [[_COMMUNITY_Community 261]]
-- 1 edge to [[_COMMUNITY_Community 2341]]
-- 1 edge to [[_COMMUNITY_Community 194]]
-- 1 edge to [[_COMMUNITY_Community 1360]]
+- 33 edges to [[_COMMUNITY_Community 84]]
+- 16 edges to [[_COMMUNITY_Community 2048]]
+- 12 edges to [[_COMMUNITY_Community 30]]
+- 8 edges to [[_COMMUNITY_Community 7]]
+- 8 edges to [[_COMMUNITY_Community 75]]
+- 4 edges to [[_COMMUNITY_Community 254]]
+- 4 edges to [[_COMMUNITY_Community 70]]
 
 ## Top bridge nodes
-- [[A2AGovernanceProxy]] - degree 43, connects to 3 communities
-- [[A2ADecision]] - degree 26, connects to 3 communities
-- [[a2a_governance.py]] - degree 8, connects to 2 communities
-- [[A2AMessage]] - degree 27, connects to 1 community
-- [[TestMessageFingerprint]] - degree 9, connects to 1 community
+- [[TestT1ToolAbuse]] - degree 25, connects to 7 communities
+- [[TestT9Abuse]] - degree 25, connects to 7 communities
+- [[TestT2Exfiltration]] - degree 23, connects to 7 communities
+- [[TestT3Writes]] - degree 22, connects to 7 communities
+- [[_token()_1]] - degree 33, connects to 1 community

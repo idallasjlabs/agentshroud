@@ -1,25 +1,23 @@
 ---
 type: community
-members: 51
+members: 49
 ---
 
 # Community 47
 
-**Members:** 51 nodes
+**Members:** 49 nodes
 
 ## Members
-- [[.__init__()_179]] - code - gateway/tests/test_forward_stream.py
-- [[.process_inbound()_6]] - code - gateway/tests/test_forward_stream.py
+- [[.__init__()_176]] - code - gateway/tests/test_forward_stream.py
+- [[.process_inbound()_5]] - code - gateway/tests/test_forward_stream.py
+- [[.process_outbound()_5]] - code - gateway/tests/test_forward_stream.py
 - [[.process_outbound()_6]] - code - gateway/tests/test_forward_stream.py
-- [[.process_outbound()_7]] - code - gateway/tests/test_forward_stream.py
 - [[2-sentence sliding window over `sentences` each window (previous +     current,]] - rationale - gateway/ingest_api/routes/forward.py
 - [[AgentTarget_2]] - code - gateway/ingest_api/routes/forward.py
 - [[Buffer streamed text deltas and yield each complete sentence as soon as     its]] - rationale - gateway/ingest_api/routes/forward.py
 - [[Build a mock app_state whose router streams `sentences_out` as raw     text delt]] - rationale - gateway/tests/test_forward_stream.py
-- [[ForwardError]] - code - gateway/ingest_api/router.py
 - [[Mock pipeline that blocks any window containing the word 'secret'.]] - rationale - gateway/tests/test_forward_stream.py
 - [[Mock pipeline whose process_outbound returns the window text unchanged     — ver]] - rationale - gateway/tests/test_forward_stream.py
-- [[Raised when forwarding to agent fails]] - rationale - gateway/ingest_api/router.py
 - [[Resolve the outbound trust level for `request`, shared by the blocking     and s]] - rationale - gateway/ingest_api/routes/forward.py
 - [[Sliding-window sentinel-joined security filter for streaming voice pipeline]] - concept - gateway/tests/test_forward_stream.py
 - [[_BlockingPipeline]] - code - gateway/tests/test_forward_stream.py
@@ -68,20 +66,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 34]]
 - 8 edges to [[_COMMUNITY_Community 2154]]
-- 5 edges to [[_COMMUNITY_Community 92]]
+- 8 edges to [[_COMMUNITY_Community 78]]
+- 6 edges to [[_COMMUNITY_Community 325]]
 - 4 edges to [[_COMMUNITY_Community 37]]
-- 3 edges to [[_COMMUNITY_Community 7]]
-- 2 edges to [[_COMMUNITY_Community 861]]
-- 1 edge to [[_COMMUNITY_Community 2048]]
 - 1 edge to [[_COMMUNITY_Community 68]]
-- 1 edge to [[_COMMUNITY_Community 707]]
-- 1 edge to [[_COMMUNITY_Community 194]]
+- 1 edge to [[_COMMUNITY_Community 6]]
 
 ## Top bridge nodes
-- [[ForwardError]] - degree 16, connects to 6 communities
-- [[test_forward_stream.py]] - degree 41, connects to 4 communities
+- [[test_forward_stream.py]] - degree 41, connects to 3 communities
 - [[_make_stream_app_state()]] - degree 14, connects to 2 communities
 - [[_PassthroughPipeline]] - degree 12, connects to 2 communities
 - [[_BlockingPipeline]] - degree 8, connects to 2 communities
+- [[test_forward_stream_ledger_failure_still_emits_done_event()]] - degree 6, connects to 2 communities

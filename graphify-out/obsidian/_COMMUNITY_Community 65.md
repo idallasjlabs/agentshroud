@@ -1,87 +1,70 @@
 ---
 type: community
-members: 74
+members: 57
 ---
 
 # Community 65
 
-**Members:** 74 nodes
+**Members:** 57 nodes
 
 ## Members
-- [[.check_permission()_2]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.setup_method()_34]] - code - gateway/tests/test_soc_auth.py
-- [[.setup_method()_35]] - code - gateway/tests/test_soc_auth.py
-- [[.test_bearer_header_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_bearer_header_valid()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_cookie_raw_bearer_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_different_keys_produce_different_tokens()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_different_owners_produce_different_tokens()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_empty_first_file_falls_to_second()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_empty_token_or_config()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_empty_token_rejected()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_expired_token_rejected()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_explicit_env_wins()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_get_rbac_manager_builds_real_manager()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_handler_exception_is_swallowed()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_invalid_token_closes_4003()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_invalid_token_rejected()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_issue_and_redeem()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_issue_returns_hex_string()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_issue_session_token_prunes_expired()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_issue_ws_token_prunes_expired()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_legacy_env_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_match()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_mismatch()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_missing_first_file_falls_to_second()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_multiple_tokens_independent()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_no_credentials_raises_401()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_no_sources_returns_empty()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_raw_gateway_password_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_redeem_expired_ws_token_returns_none()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_session_cookie_valid()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_single_use()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_token_file_env()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_unauthorized_closes_4003()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_valid_ws_token_accepts()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_verify_after_clear_returns_none()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_verify_expired_token_returns_none()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_verify_unknown_token_returns_none()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_verify_valid_token()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_wrong_bearer_raises_401()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_x_soc_token_header_valid()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[Clear token store before each test.]] - rationale - gateway/tests/test_soc_auth.py
-- [[Constant-time comparison against the gateway shared secret.]] - rationale - gateway/soc/auth.py
-- [[Consume a WS token and return the user_id, or None if invalidexpired.]] - rationale - gateway/soc/auth.py
-- [[Derive an HMAC session token and register it in the session store.]] - rationale - gateway/soc/auth.py
-- [[FastAPI WebSocket route handler for wssoc.]] - rationale - gateway/soc/websocket.py
-- [[FastAPI dependency resolve Bearercookie token → user_id → role.]] - rationale - gateway/soc/auth.py
-- [[Issue a short-lived, single-use WebSocket token for a user.]] - rationale - gateway/soc/auth.py
-- [[Make runsecrets reads deterministic (raise OSError) on any host.]] - rationale - gateway/tests/test_soc_realtime_coverage.py
-- [[Read the gateway auth token from envsecret.      Resolution order (matches inge]] - rationale - gateway/soc/auth.py
-- [[Remove all gateway-password env vars and clear token stores.]] - rationale - gateway/tests/test_soc_realtime_coverage.py
-- [[Return user_id if token is a valid unexpired session token, else None.]] - rationale - gateway/soc/auth.py
-- [[TestGetConfigToken]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[TestResolveCaller]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[TestSessionTokens]] - code - gateway/tests/test_soc_auth.py
-- [[TestTokenStorePruning]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[TestVerifyBearer]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[TestWSSOCEndpoint]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[TestWSTokens]] - code - gateway/tests/test_soc_auth.py
-- [[_block_run_secrets()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[_get_config_token()]] - code - gateway/soc/auth.py
-- [[_get_rbac_manager()]] - code - gateway/soc/auth.py
-- [[_make_ws()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[_resolve_caller()]] - code - gateway/soc/auth.py
-- [[_verify_bearer()]] - code - gateway/soc/auth.py
-- [[_verify_session_token()]] - code - gateway/soc/auth.py
-- [[auth.py_1]] - code - gateway/soc/auth.py
-- [[clean_auth_env()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[issue_session_token()]] - code - gateway/soc/auth.py
-- [[issue_ws_token()]] - code - gateway/soc/auth.py
-- [[redeem_ws_token()]] - code - gateway/soc/auth.py
-- [[test_soc_auth.py]] - code - gateway/tests/test_soc_auth.py
-- [[test_soc_realtime_coverage.py]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[ws_soc_endpoint()]] - code - gateway/soc/websocket.py
+- [[.test_ai_security_research_domains_in_allowlist()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_bot_agent_ids_are_namespace_separated_from_user_ids()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_duckduckgo_in_permanent_allowlist()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_failover_search_engines_in_allowlist()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_get_user_memory_openclaw_and_hermes_are_separate_paths()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_hc_ping_in_permanent_allowlist()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_hermes_dashboard_forwarder_bind_address_is_documented()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_hermes_dashboard_stays_loopback_and_gateway_uses_the_bridge_port()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_hermes_memory_write_does_not_appear_in_openclaw_memory()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_hermes_registered_with_standard_trust()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_hermes_violation_does_not_affect_openclaw_trust()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_nousresearch_in_permanent_allowlist()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_openclaw_memory_write_does_not_appear_in_hermes_memory()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_openclaw_violation_does_not_affect_hermes_trust()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_path_traversal_rejected_for_crafted_bot_id()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_path_traversal_rejected_for_crafted_user_id()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_run_standalone_sets_matching_bridge_port()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_shared_memory_manager_get_user_memory_accepts_bot_id()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_user_session_paths_contain_bot_id()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[AI-security researchcompetitive-intel domains must be allowlisted.          The]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[BT-H1 SharedMemoryManager.get_user_memory must accept a bot_id parameter.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[BT-H3 The filesystem paths for openclaw and hermes sessions differ.          Re]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[BT-H4 (reverse) Writing to Hermes workspace does not bleed into OpenClaw.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[BT-H4 Writing to the openclaw workspace must not leak into the hermes workspace]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[BT-M1 The Hermes TCP dashboard forwarder (port 9119) binds on 0.0.0.0.      Thi]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[BT-M1 Verify the forwarder bind address — currently 0.0.0.0 (accepted risk).]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Finding BT-H1BT-H2BT-H3 SharedMemoryManager must not collapse bot workspaces.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Finding RT-N1RT-N2 TrustManager uses shared in-memory DB keyed by agent_id.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Hermes base image is from nousresearch.com — must be in egress allowlist.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Hermes ddgs-based web search requires duckduckgo.com.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Hermes heartbeat uses hc-ping.com for dead-man's switch.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Hermes's dashboard binds 127.0.0.1 inside its own container (vendor     hermes-a]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Isolated temporary workspace for session manager.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[PR190 failover search engines must be allowlisted.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[RT-N1 (reverse) Hermes violation must not demote OpenClaw.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[RT-N1 Recording a violation against openclaw MUST NOT change hermes trust.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[RT-N2 Bot agent IDs ('openclaw', 'hermes') are separate from user IDs.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[RT-N3 After seeding, hermes trust level is STANDARD (matching lifespan.py).]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[RT-N3 lifespan.py seeds 'hermes' with STANDARD trust.      Verifies the seeding]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Session directory path must embed bot_id so filesystem confirms isolation.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Session manager must reject bot_id with path traversal characters.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Session manager must reject user_id with path traversal characters.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[TestBotIdIsolationInSharedMemory]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[TestCrossBotTrustPivot]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[TestHermesDashboardBridgeReachability]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[TestHermesDashboardForwarderBinding]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[TestHermesEgressAllowlist]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[TestHermesTrustSeeding]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[TestSessionPathSeparation]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[Verifies per-bot session path layout is correctly separated.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Verify that Hermes-specific egress destinations are in the canonical allowlist.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[run-standalone.sh is the actual deploy path for Hermes (docker run, not]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[session_manager()_3]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[smm()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[test_security_regressions_v1_2.py]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[tmp_workspace()_1]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[trust_manager()_5]] - code - gateway/tests/test_security_regressions_v1_2.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -91,20 +74,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 33 edges to [[_COMMUNITY_Community 6]]
-- 22 edges to [[_COMMUNITY_Community 169]]
-- 17 edges to [[_COMMUNITY_Community 194]]
-- 14 edges to [[_COMMUNITY_Community 10]]
-- 3 edges to [[_COMMUNITY_Community 1191]]
-- 2 edges to [[_COMMUNITY_Community 614]]
-- 2 edges to [[_COMMUNITY_Community 37]]
-- 1 edge to [[_COMMUNITY_Community 68]]
-- 1 edge to [[_COMMUNITY_Community 223]]
-- 1 edge to [[_COMMUNITY_Community 2043]]
+- 17 edges to [[_COMMUNITY_Community 11]]
+- 9 edges to [[_COMMUNITY_Community 60]]
+- 9 edges to [[_COMMUNITY_Community 1305]]
 
 ## Top bridge nodes
-- [[test_soc_realtime_coverage.py]] - degree 47, connects to 6 communities
-- [[auth.py_1]] - degree 19, connects to 5 communities
-- [[TestResolveCaller]] - degree 15, connects to 4 communities
-- [[ws_soc_endpoint()]] - degree 18, connects to 3 communities
-- [[TestWSSOCEndpoint]] - degree 14, connects to 3 communities
+- [[test_security_regressions_v1_2.py]] - degree 15, connects to 3 communities
+- [[TestHermesEgressAllowlist]] - degree 11, connects to 3 communities
+- [[TestBotIdIsolationInSharedMemory]] - degree 10, connects to 3 communities
+- [[TestCrossBotTrustPivot]] - degree 9, connects to 3 communities
+- [[TestSessionPathSeparation]] - degree 9, connects to 3 communities

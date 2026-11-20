@@ -12,14 +12,12 @@ tags:
 # ToolResultSanitizer
 
 ## Connections
-- [[.__init__()_140]] - `method` [EXTRACTED]
+- [[.__init__()_137]] - `method` [EXTRACTED]
 - [[._extract_dict_content()]] - `method` [EXTRACTED]
 - [[._extract_scannable_content()]] - `method` [EXTRACTED]
 - [[._get_sanitizer_for_tool()]] - `method` [EXTRACTED]
 - [[._log_redaction_audit()]] - `method` [EXTRACTED]
 - [[._reconstruct_result()]] - `method` [EXTRACTED]
-- [[.get_supported_tools()]] - `method` [EXTRACTED]
-- [[.get_tool_config()]] - `method` [EXTRACTED]
 - [[.sanitize_tool_result()]] - `method` [EXTRACTED]
 - [[.sanitizer()_3]] - `calls` [EXTRACTED]
 - [[.test_email_content_scanning()]] - `calls` [EXTRACTED]

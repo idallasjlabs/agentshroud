@@ -1,229 +1,89 @@
 ---
 type: community
-members: 216
+members: 76
 ---
 
 # Community 72
 
-**Members:** 216 nodes
+**Members:** 76 nodes
 
 ## Members
-- [[.__init__()_29]] - code - gateway/ingest_api/middleware.py
-- [[.__init__()_59]] - code - gateway/proxy/web_proxy.py
-- [[.__init__()_74]] - code - gateway/security/browser_security.py
-- [[.__init__()_80]] - code - gateway/security/context_guard.py
-- [[.__init__()_87]] - code - gateway/security/dns_filter.py
-- [[.__init__()_91]] - code - gateway/security/egress_monitor.py
-- [[._analyze_request_for_rbac()]] - code - gateway/ingest_api/middleware.py
-- [[._check_cross_session_access()]] - code - gateway/ingest_api/middleware.py
-- [[._check_rbac_permissions()]] - code - gateway/ingest_api/middleware.py
+- [[.__init__()_58]] - code - gateway/proxy/web_proxy.py
+- [[.__init__()_85]] - code - gateway/security/dns_filter.py
 - [[._cleanup_rate_window()]] - code - gateway/security/dns_filter.py
 - [[._detect_tunneling()]] - code - gateway/security/dns_filter.py
 - [[._domain_in_allowlist()]] - code - gateway/security/dns_filter.py
-- [[._enforce_session_isolation()]] - code - gateway/ingest_api/middleware.py
-- [[._extract_user_id()]] - code - gateway/ingest_api/middleware.py
 - [[._is_private_ip()_1]] - code - gateway/security/dns_filter.py
-- [[._is_tool_call_request()]] - code - gateway/ingest_api/middleware.py
-- [[._record_guard_init_failure()]] - code - gateway/ingest_api/middleware.py
-- [[.add_alert_callback()]] - code - gateway/security/multi_turn_tracker.py
-- [[.add_alert_callback()_2]] - code - gateway/security/tool_chain_analyzer.py
-- [[.approve_pending_call()]] - code - gateway/security/tool_chain_analyzer.py
 - [[.check()_4]] - code - gateway/security/dns_filter.py
-- [[.check_anomalies()]] - code - gateway/security/egress_monitor.py
-- [[.check_rebinding()]] - code - gateway/security/dns_filter.py
-- [[.cleanup_old_sessions()]] - code - gateway/security/context_guard.py
-- [[.daily_summary()]] - code - gateway/security/egress_monitor.py
 - [[.dns_filter()]] - code - gateway/tests/test_dns_filter.py
-- [[.export_attack_report()]] - code - gateway/security/context_guard.py
-- [[.get_attack_summary()]] - code - gateway/security/context_guard.py
 - [[.get_audit_log()_3]] - code - gateway/security/dns_filter.py
-- [[.get_events()_2]] - code - gateway/security/egress_monitor.py
 - [[.get_flagged_queries()]] - code - gateway/security/dns_filter.py
-- [[.get_segment_provenance()]] - code - gateway/security/context_guard.py
-- [[.get_session_risk_level()]] - code - gateway/security/context_guard.py
-- [[.process_request()]] - code - gateway/ingest_api/middleware.py
-- [[.record()_1]] - code - gateway/security/egress_monitor.py
-- [[.record_segment()]] - code - gateway/security/context_guard.py
-- [[.register_screenshot_hook()]] - code - gateway/security/browser_security.py
-- [[.reset_session()_1]] - code - gateway/security/multi_turn_tracker.py
 - [[.resolve_and_cache()]] - code - gateway/security/dns_filter.py
 - [[.shannon_entropy()]] - code - gateway/security/dns_filter.py
-- [[.tag_segment()]] - code - gateway/security/context_guard.py
-- [[.test_absolute_and_relative_paths()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_alert_has_description()]] - code - gateway/tests/test_egress_monitor.py
-- [[.test_alert_has_severity()]] - code - gateway/tests/test_egress_monitor.py
-- [[.test_alert_monitor_mode_no_block()]] - code - gateway/tests/test_egress_monitor.py
 - [[.test_allowlist_blocks_unlisted_in_enforce()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_allowlist_permits_listed_domain()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_allowlist_permits_subdomain()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_base64_in_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_browser_security_guard_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[.test_burst_queries_flagged()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_common_services_allowed()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_context_guard_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[.test_default_allows_all_domains()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_default_mode_is_enforce()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_default_mode_is_enforce()_1]] - code - gateway/tests/test_egress_monitor.py
-- [[.test_default_mode_is_enforce()_5]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_defaults()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_denied_with_reason()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_dns_filter_default_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_editor_command_and_quotes()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_egress_monitor_default_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[.test_empty_string()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_empty_summary()]] - code - gateway/tests/test_egress_monitor.py
 - [[.test_enforce_mode_blocks_tunneling()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_file_sandbox_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[.test_flagged_queries_in_log()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_generous_baselines()]] - code - gateway/tests/test_egress_monitor.py
 - [[.test_generous_defaults()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_git_guard_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[.test_hex_encoded_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_high_entropy_string()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_high_entropy_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_high_volume_triggers_alert()]] - code - gateway/tests/test_egress_monitor.py
 - [[.test_log_contains_timestamp()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_log_contains_verdict()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_long_but_legitimate_domain()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_low_entropy_string()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_monitor_mode_never_blocks()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_multi_turn_tracker_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[.test_multiple_long_labels_flagged()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_no_allowlist_allows_all()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_no_paths()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_normal_domain_allowed()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_normal_multi_channel_not_flagged()]] - code - gateway/tests/test_egress_monitor.py
 - [[.test_normal_rate_not_flagged()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_normal_volume_no_alert()]] - code - gateway/tests/test_egress_monitor.py
-- [[.test_output_canary_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[.test_private_ip_detection()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_prompt_guard_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[.test_public_ip_not_private()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_queries_logged()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_record_dns_event()]] - code - gateway/tests/test_egress_monitor.py
-- [[.test_record_file_event()]] - code - gateway/tests/test_egress_monitor.py
-- [[.test_record_http_event()]] - code - gateway/tests/test_egress_monitor.py
-- [[.test_record_mcp_event()]] - code - gateway/tests/test_egress_monitor.py
 - [[.test_resolve_and_cache_empty_domain_graceful()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_slow_drip_across_channels()]] - code - gateway/tests/test_egress_monitor.py
 - [[.test_stable_resolution_passes()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_strict_has_allowlist()]] - code - gateway/tests/test_dns_filter.py
 - [[.test_subdomain_allowed()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_summary_report()]] - code - gateway/tests/test_egress_monitor.py
-- [[.test_tool_chain_analyzer_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_unusual_destination_flagged()]] - code - gateway/tests/test_egress_monitor.py
 - [[.test_very_long_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
-- [[Action]] - code - gateway/ingest_api/middleware.py
-- [[Add a callback function for alerts.]] - rationale - gateway/security/multi_turn_tracker.py
-- [[Add a callback function for chain detection alerts.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[AlertSeverity]] - code - gateway/security/egress_monitor.py
-- [[Alerts in monitor mode should never block.]] - rationale - gateway/tests/test_egress_monitor.py
-- [[Analyze request to determine RBAC action, resource, and tool tier.]] - rationale - gateway/ingest_api/middleware.py
-- [[AnomalyAlert]] - code - gateway/security/egress_monitor.py
-- [[Any_18]] - code - gateway/ingest_api/middleware.py
-- [[Any_45]] - code - gateway/security/context_guard.py
-- [[Approve a pending tool call that required approval.          Args             s]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[BrowserSecurityGuard]] - code - gateway/security/browser_security.py
-- [[Check RBAC permissions for the request.]] - rationale - gateway/ingest_api/middleware.py
-- [[Check for unauthorized cross-session access attempts.          Implementation]] - rationale - gateway/ingest_api/middleware.py
-- [[Clean up old session data.]] - rationale - gateway/security/context_guard.py
-- [[Combined memory security configuration.]] - rationale - gateway/security/memory_config.py
-- [[ContextGuard]] - code - gateway/security/context_guard.py
-- [[Create a provenance record for a context segment.]] - rationale - gateway/security/context_guard.py
 - [[DNSFilter]] - code - gateway/security/dns_filter.py
 - [[DNSFilterConfig]] - code - gateway/security/dns_filter.py
 - [[DNSQuery]] - code - gateway/security/dns_filter.py
 - [[DNSVerdict]] - code - gateway/security/dns_filter.py
 - [[Default mode is enforce after v0.8.0 enforcement hardening.]] - rationale - gateway/tests/test_dns_filter.py
-- [[Default mode is enforce after v0.8.0 enforcement hardening._1]] - rationale - gateway/tests/test_egress_monitor.py
-- [[EgressChannel]] - code - gateway/security/egress_monitor.py
-- [[EgressEvent]] - code - gateway/security/egress_monitor.py
-- [[EgressMonitor]] - code - gateway/security/egress_monitor.py
-- [[EgressMonitorConfig]] - code - gateway/security/egress_monitor.py
-- [[EgressSummary]] - code - gateway/security/egress_monitor.py
-- [[Enforce per-user, per-bot session isolation rules.          Each (user_id, bot_i]] - rationale - gateway/ingest_api/middleware.py
-- [[EntropyCalculator]] - code - gateway/security/dns_filter.py
 - [[Even suspicious queries pass in monitor mode.]] - rationale - gateway/tests/test_dns_filter.py
-- [[Exception_2]] - code - gateway/ingest_api/middleware.py
-- [[Export attack detection report.]] - rationale - gateway/security/context_guard.py
-- [[Extract user ID from request data.]] - rationale - gateway/ingest_api/middleware.py
-- [[FileSandboxConfig]] - code - gateway/security/file_sandbox.py
-- [[Get risk level for a session based on detected attacks.]] - rationale - gateway/security/context_guard.py
-- [[Get summary of detected attacks.]] - rationale - gateway/security/context_guard.py
-- [[Guard against context window poisoning attacks.]] - rationale - gateway/security/context_guard.py
-- [[Initialize all security modules.]] - rationale - gateway/ingest_api/middleware.py
 - [[Known private ranges should be detected.]] - rationale - gateway/tests/test_dns_filter.py
-- [[LogSanitizer]] - code - gateway/ingest_api/middleware.py
-- [[Main multi-turn disclosure tracking engine.      Maintains session state and sco]] - rationale - gateway/security/multi_turn_tracker.py
-- [[Main tool chain analysis engine.      Tracks sequences of tool calls and identif]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[MemorySecurityConfig]] - code - gateway/security/memory_config.py
-- [[MiddlewareResult]] - code - gateway/ingest_api/middleware.py
-- [[MultiTurnTracker]] - code - gateway/security/multi_turn_tracker.py
-- [[Normal usage across channels should not trigger drip detection.]] - rationale - gateway/tests/test_egress_monitor.py
-- [[Process request through all middleware modules.]] - rationale - gateway/ingest_api/middleware.py
 - [[Public IPs should not be flagged as private.]] - rationale - gateway/tests/test_dns_filter.py
-- [[RBACManager]] - code - gateway/ingest_api/middleware.py
-- [[Record a guard __init__ exception so the request path can fail closed.]] - rationale - gateway/ingest_api/middleware.py
-- [[Reset session score after owner review.          Args             session_id S]] - rationale - gateway/security/multi_turn_tracker.py
 - [[Resolve domain to an IP and cache it for 5 minutes.]] - rationale - gateway/security/dns_filter.py
 - [[Resolving a domain that fails should return empty string gracefully.]] - rationale - gateway/tests/test_dns_filter.py
-- [[Resource]] - code - gateway/ingest_api/middleware.py
-- [[Result from middleware processing.]] - rationale - gateway/ingest_api/middleware.py
-- [[Return True if a DNS rebinding attack is detected.          Re-resolves the doma]] - rationale - gateway/security/dns_filter.py
 - [[Return True if the IP address is in a private  loopback range.]] - rationale - gateway/security/dns_filter.py
-- [[Return True only when the request contains actual tool calls or tool results.]] - rationale - gateway/ingest_api/middleware.py
-- [[Return ordered list of provenance records for the session.]] - rationale - gateway/security/context_guard.py
 - [[Seeding the same IP twice should not flag rebinding.]] - rationale - gateway/tests/test_dns_filter.py
-- [[Slow-drip  coordinated multi-channel exfiltration anomaly detection]] - concept - gateway/tests/test_egress_monitor.py
-- [[Small amounts across multiple channels should be detected.]] - rationale - gateway/tests/test_egress_monitor.py
-- [[Tag a segment and append it to the session's provenance log.]] - rationale - gateway/security/context_guard.py
-- [[TestAlertGeneration]] - code - gateway/tests/test_egress_monitor.py
-- [[TestAnomalyDetection]] - code - gateway/tests/test_egress_monitor.py
 - [[TestAuditLogging]] - code - gateway/tests/test_dns_filter.py
 - [[TestDNSAllowlist]] - code - gateway/tests/test_dns_filter.py
 - [[TestDNSFilterConfig]] - code - gateway/tests/test_dns_filter.py
 - [[TestDNSRebinding]] - code - gateway/tests/test_dns_filter.py
 - [[TestDNSTunnelingDetection]] - code - gateway/tests/test_dns_filter.py
-- [[TestDailySummary]] - code - gateway/tests/test_egress_monitor.py
-- [[TestEgressMonitorConfig]] - code - gateway/tests/test_egress_monitor.py
 - [[TestEntropyCalculator]] - code - gateway/tests/test_dns_filter.py
-- [[TestEventRecording]] - code - gateway/tests/test_egress_monitor.py
-- [[TestExtractFilePaths]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestFileSandboxDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
-- [[TestGetModuleModeEnforceDefault]] - code - gateway/tests/test_all_modules_enforce.py
-- [[TestMiddlewareResult]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestModuleConfigDefaults]] - code - gateway/tests/test_all_modules_enforce.py
-- [[TestModuleInstantiationInEnforceMode]] - code - gateway/tests/test_all_modules_enforce.py
 - [[TestNormalDNSResolution]] - code - gateway/tests/test_dns_filter.py
-- [[TestRateLimiting_1]] - code - gateway/tests/test_dns_filter.py
-- [[TestSlowDripDetection]] - code - gateway/tests/test_egress_monitor.py
-- [[ToolChainAnalyzer]] - code - gateway/security/tool_chain_analyzer.py
-- [[ToolChainAnalyzer._load_custom_patterns]] - code - gateway/security/tool_chain_analyzer.py
-- [[ToolChainAnalyzer._load_default_patterns]] - code - gateway/security/tool_chain_analyzer.py
-- [[ToolTier]] - code - gateway/ingest_api/middleware.py
+- [[TestRateLimiting]] - code - gateway/tests/test_dns_filter.py
 - [[TunnelingPattern]] - code - gateway/security/dns_filter.py
-- [[Verify get_module_mode returns enforce when no override is set.]] - rationale - gateway/tests/test_all_modules_enforce.py
-- [[Verify individual module configs default to enforce mode.]] - rationale - gateway/tests/test_all_modules_enforce.py
-- [[Verify modules can instantiate and operate in enforce mode.]] - rationale - gateway/tests/test_all_modules_enforce.py
-- [[Wu et al. 2026 — Browser-based attacks on AI agents (arXiv2601.07263)]] - paper - gateway/security/browser_security.py
-- [[callable]] - code - gateway/security/multi_turn_tracker.py
-- [[callable_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[URLAnalyzer_1]] - code - gateway/proxy/web_proxy.py
+- [[WebContentScanner_1]] - code - gateway/proxy/web_proxy.py
+- [[WebProxyConfig_1]] - code - gateway/proxy/web_proxy.py
 - [[default_config()_1]] - code - gateway/tests/test_dns_filter.py
-- [[default_config()_2]] - code - gateway/tests/test_egress_monitor.py
 - [[dns_filter()]] - code - gateway/tests/test_dns_filter.py
 - [[dns_filter.py]] - code - gateway/security/dns_filter.py
-- [[egress_monitor.py]] - code - gateway/security/egress_monitor.py
-- [[middleware.py]] - code - gateway/ingest_api/middleware.py
-- [[monitor()]] - code - gateway/tests/test_egress_monitor.py
 - [[monitor_config()]] - code - gateway/tests/test_dns_filter.py
-- [[monitor_config()_1]] - code - gateway/tests/test_egress_monitor.py
 - [[monitor_filter()]] - code - gateway/tests/test_dns_filter.py
 - [[strict_config()]] - code - gateway/tests/test_dns_filter.py
 - [[strict_filter()]] - code - gateway/tests/test_dns_filter.py
-- [[test_all_modules_enforce.py]] - code - gateway/tests/test_all_modules_enforce.py
 - [[test_dns_filter.py]] - code - gateway/tests/test_dns_filter.py
-- [[test_egress_monitor.py]] - code - gateway/tests/test_egress_monitor.py
-- [[web_proxy.py]] - code - gateway/proxy/web_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -233,80 +93,26 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 76 edges to [[_COMMUNITY_Community 0]]
-- 68 edges to [[_COMMUNITY_Community 1]]
-- 52 edges to [[_COMMUNITY_Community 121]]
-- 44 edges to [[_COMMUNITY_Community 809]]
-- 40 edges to [[_COMMUNITY_Community 84]]
-- 36 edges to [[_COMMUNITY_Community 6]]
-- 30 edges to [[_COMMUNITY_Community 8]]
-- 29 edges to [[_COMMUNITY_Community 31]]
-- 29 edges to [[_COMMUNITY_Community 26]]
-- 25 edges to [[_COMMUNITY_Community 146]]
-- 22 edges to [[_COMMUNITY_Community 1281]]
-- 21 edges to [[_COMMUNITY_Community 557]]
-- 21 edges to [[_COMMUNITY_Community 3]]
-- 20 edges to [[_COMMUNITY_Community 52]]
-- 18 edges to [[_COMMUNITY_Community 647]]
-- 18 edges to [[_COMMUNITY_Community 28]]
-- 17 edges to [[_COMMUNITY_Community 151]]
-- 15 edges to [[_COMMUNITY_Community 9]]
-- 15 edges to [[_COMMUNITY_Community 16]]
-- 15 edges to [[_COMMUNITY_Community 233]]
-- 13 edges to [[_COMMUNITY_Community 71]]
-- 13 edges to [[_COMMUNITY_Community 53]]
-- 12 edges to [[_COMMUNITY_Community 5]]
-- 12 edges to [[_COMMUNITY_Community 1305]]
-- 12 edges to [[_COMMUNITY_Community 196]]
-- 11 edges to [[_COMMUNITY_Community 477]]
-- 11 edges to [[_COMMUNITY_Community 194]]
-- 11 edges to [[_COMMUNITY_Community 344]]
-- 10 edges to [[_COMMUNITY_Community 152]]
-- 10 edges to [[_COMMUNITY_Community 122]]
-- 10 edges to [[_COMMUNITY_Community 76]]
-- 10 edges to [[_COMMUNITY_Community 154]]
-- 10 edges to [[_COMMUNITY_Community 431]]
-- 10 edges to [[_COMMUNITY_Community 120]]
-- 7 edges to [[_COMMUNITY_Community 394]]
-- 6 edges to [[_COMMUNITY_Community 93]]
-- 6 edges to [[_COMMUNITY_Community 17]]
-- 5 edges to [[_COMMUNITY_Community 12]]
+- 40 edges to [[_COMMUNITY_Community 0]]
+- 6 edges to [[_COMMUNITY_Community 1]]
+- 6 edges to [[_COMMUNITY_Community 26]]
+- 5 edges to [[_COMMUNITY_Community 120]]
 - 5 edges to [[_COMMUNITY_Community 140]]
-- 4 edges to [[_COMMUNITY_Community 7]]
-- 4 edges to [[_COMMUNITY_Community 978]]
-- 4 edges to [[_COMMUNITY_Community 4]]
-- 4 edges to [[_COMMUNITY_Community 79]]
-- 4 edges to [[_COMMUNITY_Community 138]]
-- 4 edges to [[_COMMUNITY_Community 27]]
-- 3 edges to [[_COMMUNITY_Community 37]]
-- 3 edges to [[_COMMUNITY_Community 1130]]
-- 3 edges to [[_COMMUNITY_Community 22]]
-- 2 edges to [[_COMMUNITY_Community 187]]
-- 2 edges to [[_COMMUNITY_Community 1127]]
-- 2 edges to [[_COMMUNITY_Community 123]]
-- 1 edge to [[_COMMUNITY_Community 1214]]
-- 1 edge to [[_COMMUNITY_Community 1658]]
-- 1 edge to [[_COMMUNITY_Community 13]]
-- 1 edge to [[_COMMUNITY_Community 1412]]
-- 1 edge to [[_COMMUNITY_Community 1131]]
-- 1 edge to [[_COMMUNITY_Community 2006]]
-- 1 edge to [[_COMMUNITY_Community 1946]]
-- 1 edge to [[_COMMUNITY_Community 641]]
-- 1 edge to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 185]]
-- 1 edge to [[_COMMUNITY_Community 924]]
-- 1 edge to [[_COMMUNITY_Community 1284]]
-- 1 edge to [[_COMMUNITY_Community 73]]
-- 1 edge to [[_COMMUNITY_Community 684]]
-- 1 edge to [[_COMMUNITY_Community 115]]
-- 1 edge to [[_COMMUNITY_Community 489]]
-- 1 edge to [[_COMMUNITY_Community 1148]]
-- 1 edge to [[_COMMUNITY_Community 2071]]
+- 3 edges to [[_COMMUNITY_Community 1000]]
+- 3 edges to [[_COMMUNITY_Community 93]]
+- 2 edges to [[_COMMUNITY_Community 45]]
+- 1 edge to [[_COMMUNITY_Community 978]]
+- 1 edge to [[_COMMUNITY_Community 196]]
+- 1 edge to [[_COMMUNITY_Community 71]]
+- 1 edge to [[_COMMUNITY_Community 431]]
+- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 5]]
+- 1 edge to [[_COMMUNITY_Community 103]]
 - 1 edge to [[_COMMUNITY_Community 452]]
 
 ## Top bridge nodes
-- [[MiddlewareResult]] - degree 127, connects to 41 communities
-- [[middleware.py]] - degree 54, connects to 31 communities
-- [[Any_18]] - degree 55, connects to 27 communities
-- [[RBACManager]] - degree 49, connects to 27 communities
-- [[LogSanitizer]] - degree 49, connects to 27 communities
+- [[DNSFilterConfig]] - degree 49, connects to 7 communities
+- [[.__init__()_58]] - degree 12, connects to 5 communities
+- [[dns_filter.py]] - degree 10, connects to 4 communities
+- [[DNSFilter]] - degree 36, connects to 3 communities
+- [[WebProxyConfig_1]] - degree 4, connects to 3 communities

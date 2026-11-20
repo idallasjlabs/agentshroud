@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/facades.py"
 type: "code"
-community: "Community 32"
+community: "Community 80"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Community_80
 ---
 
 # PkeStatus
@@ -30,4 +30,4 @@ tags:
 - [[test_pke_status_reports_freshness_the_descriptor_promises()]] - `calls` [EXTRACTED]
 - [[test_pke_status_summary_and_per_feed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_32
+#graphify/code #graphify/EXTRACTED #community/Community_80

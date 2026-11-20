@@ -24,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1084]]
+- 1 edge to [[_COMMUNITY_Community 389]]
 
 ## Top bridge nodes
 - [[SSH Proxy Errors_1]] - degree 7, connects to 1 community

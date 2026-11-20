@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/remote_log.h"
 type: "code"
-community: "Community 1286"
+community: "Community 378"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1286
+  - community/Community_378
 ---
 
 # remote_log.h
@@ -17,4 +17,4 @@ tags:
 - [[wakeword.c]] - `imports` [EXTRACTED]
 - [[ws_client.c]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1286
+#graphify/code #graphify/EXTRACTED #community/Community_378

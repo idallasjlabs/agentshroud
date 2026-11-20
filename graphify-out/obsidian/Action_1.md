@@ -13,12 +13,11 @@ tags:
 
 ## Connections
 - [[._build_permission_matrix()]] - `references` [EXTRACTED]
-- [[.check_group_permission()]] - `references` [EXTRACTED]
 - [[.check_permission()]] - `references` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[Actions that can be performed in the system.]] - `rationale_for` [EXTRACTED]
 - [[Any_18]] - `uses` [INFERRED]
-- [[Any_83]] - `uses` [INFERRED]
+- [[Any_79]] - `uses` [INFERRED]
 - [[AuthRequired]] - `uses` [INFERRED]
 - [[Enum]] - `inherits` [EXTRACTED]
 - [[Exception_1]] - `uses` [INFERRED]

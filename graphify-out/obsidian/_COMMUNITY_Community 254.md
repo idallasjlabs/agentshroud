@@ -1,79 +1,167 @@
 ---
 type: community
-members: 66
+members: 154
 ---
 
 # Community 254
 
-**Members:** 66 nodes
+**Members:** 154 nodes
 
 ## Members
-- [[.__init__()_72]] - code - gateway/security/audit_store.py
+- [[.__init__()_28]] - code - gateway/ingest_api/ledger.py
+- [[.__init__()_68]] - code - gateway/security/audit_export.py
+- [[.__init__()_69]] - code - gateway/security/audit_export.py
+- [[.__init__()_70]] - code - gateway/security/audit_store.py
+- [[.__init__()_71]] - code - gateway/security/audit_store.py
+- [[._default_jsonld_context()]] - code - gateway/security/audit_export.py
+- [[._export_cef()]] - code - gateway/security/audit_export.py
+- [[._export_json()]] - code - gateway/security/audit_export.py
+- [[._export_jsonld()]] - code - gateway/security/audit_export.py
 - [[._generate_event_id()]] - code - gateway/security/audit_store.py
 - [[._get_latest_hash()]] - code - gateway/security/audit_store.py
+- [[._parse_cef_for_verification()]] - code - gateway/security/audit_export.py
+- [[.audit_store()]] - code - gateway/tests/test_audit_export.py
+- [[.audit_store()_1]] - code - gateway/tests/test_audit_export.py
+- [[.close()_11]] - code - gateway/security/audit_store.py
 - [[.compute_content_hash()]] - code - gateway/security/audit_store.py
 - [[.compute_entry_hash()]] - code - gateway/security/audit_store.py
+- [[.export_config()]] - code - gateway/tests/test_audit_export.py
+- [[.export_events()]] - code - gateway/security/audit_export.py
+- [[.get_recent_entries()]] - code - gateway/security/audit_store.py
+- [[.get_stats()_14]] - code - gateway/security/audit_store.py
+- [[.initialize()_3]] - code - gateway/security/audit_store.py
 - [[.log_event()]] - code - gateway/security/audit_store.py
+- [[.path_not_empty()]] - code - gateway/ingest_api/models.py
+- [[.query()]] - code - gateway/ingest_api/ledger.py
+- [[.query_events()]] - code - gateway/security/audit_store.py
 - [[.store()]] - code - gateway/tests/test_audit_export.py
-- [[.store()_1]] - code - gateway/tests/test_audit_export.py
 - [[.test_concurrent_log_event_single_store_keeps_linear_chain()]] - code - gateway/tests/test_audit_export.py
 - [[.test_concurrent_log_event_two_connections_keeps_linear_chain()]] - code - gateway/tests/test_audit_export.py
 - [[.test_content_hash()]] - code - gateway/tests/test_audit_export.py
 - [[.test_entry_hash_chain()]] - code - gateway/tests/test_audit_export.py
 - [[.test_event_creation()]] - code - gateway/tests/test_audit_export.py
 - [[.test_event_to_dict_includes_bot_id()]] - code - gateway/tests/test_audit_export.py
+- [[.test_export_cef()]] - code - gateway/tests/test_audit_export.py
+- [[.test_export_filtering()]] - code - gateway/tests/test_audit_export.py
+- [[.test_export_json()]] - code - gateway/tests/test_audit_export.py
+- [[.test_export_json_ld()]] - code - gateway/tests/test_audit_export.py
+- [[.test_hash_chain_integrity()]] - code - gateway/tests/test_audit_export.py
+- [[.test_log_event()]] - code - gateway/tests/test_audit_export.py
 - [[.test_log_event_default_bot_id_is_openclaw()]] - code - gateway/tests/test_audit_export.py
 - [[.test_log_event_stores_bot_id()]] - code - gateway/tests/test_audit_export.py
 - [[.test_migration_adds_bot_id_column()]] - code - gateway/tests/test_audit_export.py
+- [[.test_query_events()]] - code - gateway/tests/test_audit_export.py
 - [[.test_query_events_bot_filter()]] - code - gateway/tests/test_audit_export.py
 - [[.test_query_events_bot_filter_combined_with_severity()]] - code - gateway/tests/test_audit_export.py
-- [[.test_verify_after_archival_uses_explicit_anchor()]] - code - gateway/tests/test_audit_export.py
-- [[.test_verify_after_archival_without_anchor_fails_closed()]] - code - gateway/tests/test_audit_export.py
-- [[.test_verify_from_first_row_keeps_genesis_semantics()]] - code - gateway/tests/test_audit_export.py
-- [[.test_verify_from_mid_chain_detects_relinked_first_row()]] - code - gateway/tests/test_audit_export.py
-- [[.test_verify_from_mid_chain_detects_tampered_row()]] - code - gateway/tests/test_audit_export.py
-- [[.test_verify_from_mid_chain_start_id_succeeds()]] - code - gateway/tests/test_audit_export.py
-- [[.test_verify_unknown_start_id_fails_closed()]] - code - gateway/tests/test_audit_export.py
-- [[.to_dict()_5]] - code - gateway/security/audit_store.py
+- [[.test_stats()]] - code - gateway/tests/test_audit_export.py
+- [[.test_tamper_detection()]] - code - gateway/tests/test_audit_export.py
+- [[.test_verify_export_integrity()]] - code - gateway/tests/test_audit_export.py
+- [[.to_dict()_4]] - code - gateway/security/audit_store.py
+- [[.validate_base64()]] - code - gateway/ingest_api/models.py
+- [[.verify_export_integrity()]] - code - gateway/security/audit_export.py
 - [[.verify_hash_chain()]] - code - gateway/security/audit_store.py
-- [[After the head is archived, the archived predecessor's entry_hash is the anchor.]] - rationale - gateway/tests/test_audit_export.py
-- [[Audit Ledger Module Badge Icon]] - image - branding/icons/modules/audit-ledger-256x256.png
+- [[Any_17]] - code - gateway/ingest_api/ledger.py
+- [[Approval modes for rules.]] - rationale - gateway/security/egress_approval.py
+- [[ApprovalMode]] - code - gateway/security/egress_approval.py
+- [[AuditEvent]] - code - gateway/security/audit_export.py
 - [[AuditEvent_1]] - code - gateway/security/audit_store.py
+- [[AuditExportConfig_1]] - code - gateway/security/audit_export.py
+- [[AuditExporter]] - code - gateway/security/audit_export.py
 - [[AuditStore]] - code - gateway/security/audit_export.py
+- [[AuditStore_1]] - code - gateway/security/audit_store.py
+- [[Close the database connection._1]] - rationale - gateway/security/audit_store.py
 - [[Compute SHA-256 hash of event content (excluding hashes).]] - rationale - gateway/security/audit_store.py
 - [[Compute entry hash including previous hash (chain).]] - rationale - gateway/security/audit_store.py
 - [[Concurrent log_event calls must not fork the SHA-256 chain (SCRUM-204).]] - rationale - gateway/tests/test_audit_export.py
+- [[Configuration for audit export functionality.]] - rationale - gateway/security/audit_export.py
 - [[Convert to dictionary representation.]] - rationale - gateway/security/audit_store.py
-- [[Database Files]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[Create audit store with test data.]] - rationale - gateway/tests/test_audit_export.py
+- [[Create in-memory audit store for testing.]] - rationale - gateway/tests/test_audit_export.py
+- [[Create test export configuration.]] - rationale - gateway/tests/test_audit_export.py
+- [[Default JSON-LD context for security ontology.]] - rationale - gateway/security/audit_export.py
+- [[Exception_1]] - code - gateway/ingest_api/main.py
+- [[Export audit events in the specified format.          Args             start_ti]] - rationale - gateway/security/audit_export.py
+- [[Export events in Common Event Format (CEF).          CEF Format CEFVersionDev]] - rationale - gateway/security/audit_export.py
+- [[Export events in JSON-LD format with security ontology.]] - rationale - gateway/security/audit_export.py
+- [[Export events in standard JSON format.]] - rationale - gateway/security/audit_export.py
+- [[Export tamper-evident audit events in SOCSIEM formats.]] - rationale - gateway/ingest_api/main.py
+- [[Exports audit events in various compliance formats.]] - rationale - gateway/security/audit_export.py
 - [[Generate a unique event ID based on timestamp + random.]] - rationale - gateway/security/audit_store.py
+- [[Get audit store statistics.]] - rationale - gateway/security/audit_store.py
 - [[Get the entry_hash of the most recent event for chain continuation.]] - rationale - gateway/security/audit_store.py
+- [[LedgerConfig_1]] - code - gateway/ingest_api/ledger.py
+- [[LedgerEntry]] - code - gateway/ingest_api/ledger.py
+- [[LedgerEntry_1]] - code - gateway/ingest_api/models.py
+- [[LedgerQueryResponse]] - code - gateway/ingest_api/ledger.py
+- [[LedgerQueryResponse_1]] - code - gateway/ingest_api/models.py
 - [[Log a new audit event with hash chain integrity.          Args             bot_]] - rationale - gateway/security/audit_store.py
+- [[MCP tool result outbound audit endpoint.      Receives a tool result from the bo]] - rationale - gateway/ingest_api/main.py
+- [[MCPProxyRequest]] - code - gateway/ingest_api/main.py
+- [[MCPResultRequest]] - code - gateway/ingest_api/main.py
+- [[OpProxyRequest]] - code - gateway/ingest_api/main.py
+- [[Open the database, create the schema, and run column migrations.          Initia]] - rationale - gateway/security/audit_store.py
 - [[Opening a pre-migration DB (no bot_id column) should auto-migrate.]] - rationale - gateway/tests/test_audit_export.py
-- [[Purpose_184]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[Related Notes_39]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[Paginated ledger query results]] - rationale - gateway/ingest_api/models.py
+- [[Parse CEF lines and extract entryHashpreviousHash for chain verification.]] - rationale - gateway/security/audit_export.py
+- [[Path_9]] - code - gateway/security/audit_store.py
+- [[Query audit events with optional filters.          Args             bot_id Whe]] - rationale - gateway/security/audit_store.py
+- [[Query ledger entries with pagination and filters          Args             page]] - rationale - gateway/ingest_api/ledger.py
 - [[Represents a single audit event.      The ``bot_id`` field identifies which bot]] - rationale - gateway/security/audit_store.py
-- [[Rewriting the first examined row's prev_hash must not be self-anchoring.]] - rationale - gateway/tests/test_audit_export.py
+- [[Request_2]] - code - gateway/ingest_api/main.py
+- [[Request body for POST credentialsop-proxy.]] - rationale - gateway/ingest_api/main.py
+- [[Request body for POST mcpproxy — intercept a single MCP tool call.]] - rationale - gateway/ingest_api/main.py
+- [[Request body for POST mcpresult — submit a tool result for outbound audit.]] - rationale - gateway/ingest_api/main.py
+- [[Request to execute an SSH command]] - rationale - gateway/ingest_api/models.py
+- [[Request to write file content to an allowlisted SSH host.      Unlike SSHExecReq]] - rationale - gateway/ingest_api/models.py
+- [[Response from POST sshwrite_file.      success reflects whether the remote wri]] - rationale - gateway/ingest_api/models.py
+- [[Response from SSH command execution]] - rationale - gateway/ingest_api/models.py
+- [[Return the most recent audit entries (alias for query_events with limit).]] - rationale - gateway/security/audit_store.py
+- [[SQLite-backed audit event store with tamper-evident hash chain.]] - rationale - gateway/security/audit_store.py
+- [[SSHExecRequest]] - code - gateway/ingest_api/main.py
+- [[SSHExecRequest_1]] - code - gateway/ingest_api/models.py
+- [[SSHExecResponse]] - code - gateway/ingest_api/models.py
+- [[SSHWriteFileRequest]] - code - gateway/ingest_api/main.py
+- [[SSHWriteFileRequest_1]] - code - gateway/ingest_api/models.py
+- [[SSHWriteFileResponse]] - code - gateway/ingest_api/models.py
+- [[Single entry from the data ledger]] - rationale - gateway/ingest_api/models.py
+- [[Store configuration          Actual database connection created in initialize().]] - rationale - gateway/ingest_api/ledger.py
 - [[Test AuditEvent functionality.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test AuditExporter functionality.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test AuditStore functionality.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test CEF export format.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test JSON export format.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test JSON-LD export format.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test audit store statistics.]] - rationale - gateway/tests/test_audit_export.py
 - [[Test basic audit event creation.]] - rationale - gateway/tests/test_audit_export.py
 - [[Test content hash computation.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test export integrity verification.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test export with filters.]] - rationale - gateway/tests/test_audit_export.py
 - [[Test hash chain computation.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test hash chain maintains integrity.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test logging audit events.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test querying events with filters.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test tamper detection in exports.]] - rationale - gateway/tests/test_audit_export.py
 - [[TestAuditEvent]] - code - gateway/tests/test_audit_export.py
-- [[TestAuditStoreAnchoredVerify]] - code - gateway/tests/test_audit_export.py
+- [[TestAuditExporter]] - code - gateway/tests/test_audit_export.py
+- [[TestAuditStore]] - code - gateway/tests/test_audit_export.py
 - [[TestAuditStoreBotId]] - code - gateway/tests/test_audit_export.py
 - [[TestAuditStoreConcurrentAppend]] - code - gateway/tests/test_audit_export.py
+- [[TextIO]] - code - gateway/security/audit_export.py
 - [[Two stores sharing one SQLite file (e.g. two workers) must not fork the chain.]] - rationale - gateway/tests/test_audit_export.py
 - [[Verify per-bot filtering in AuditStore (v1.1.0 multi-bot support).]] - rationale - gateway/tests/test_audit_export.py
+- [[Verify the integrity of an exported audit log.          Args             export]] - rationale - gateway/security/audit_export.py
 - [[Verify the integrity of the hash chain.          The first examined row's prev_h]] - rationale - gateway/security/audit_store.py
-- [[WAL Mode]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[Where Used]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[WebSocket_2]] - code - gateway/ingest_api/main.py
+- [[Write file content to an allowlisted SSH host via structured transport.      Unl]] - rationale - gateway/ingest_api/main.py
 - [[_assert_linear_chain()]] - code - gateway/tests/test_audit_export.py
 - [[_chain_rows()]] - code - gateway/tests/test_audit_export.py
-- [[aiosqlite_1]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[aiosqlite]] - document - docs/vault/05 - Dependencies/aiosqlite.md
 - [[audit_export.py]] - code - gateway/security/audit_export.py
 - [[audit_store.py]] - code - gateway/security/audit_store.py
+- [[mcp_result_endpoint()]] - code - gateway/ingest_api/main.py
+- [[models.py]] - code - gateway/ingest_api/models.py
+- [[soc_export()]] - code - gateway/ingest_api/main.py
+- [[ssh_write_file()]] - code - gateway/ingest_api/main.py
 - [[test_audit_export.py]] - code - gateway/tests/test_audit_export.py
-- [[verify_hash_chain(start_id=X) anchors on X's predecessor (SCRUM-204).]] - rationale - gateway/tests/test_audit_export.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -83,19 +171,46 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 18 edges to [[_COMMUNITY_Community 32]]
-- 15 edges to [[_COMMUNITY_Community 978]]
-- 4 edges to [[_COMMUNITY_Community 479]]
-- 2 edges to [[_COMMUNITY_Community 1290]]
-- 2 edges to [[_COMMUNITY_Community 162]]
-- 1 edge to [[_COMMUNITY_Community 333]]
-- 1 edge to [[_COMMUNITY_Community 707]]
-- 1 edge to [[_COMMUNITY_Community 1214]]
-- 1 edge to [[_COMMUNITY_Community 253]]
+- 45 edges to [[_COMMUNITY_Community 978]]
+- 17 edges to [[_COMMUNITY_Community 6]]
+- 14 edges to [[_COMMUNITY_Community 30]]
+- 9 edges to [[_COMMUNITY_Community 890]]
+- 9 edges to [[_COMMUNITY_Community 84]]
+- 8 edges to [[_COMMUNITY_Community 151]]
+- 8 edges to [[_COMMUNITY_Community 7]]
+- 8 edges to [[_COMMUNITY_Community 1]]
+- 8 edges to [[_COMMUNITY_Community 194]]
+- 8 edges to [[_COMMUNITY_Community 23]]
+- 6 edges to [[_COMMUNITY_Community 143]]
+- 6 edges to [[_COMMUNITY_Community 845]]
+- 6 edges to [[_COMMUNITY_Community 19]]
+- 5 edges to [[_COMMUNITY_Community 2154]]
+- 4 edges to [[_COMMUNITY_Community 10]]
+- 4 edges to [[_COMMUNITY_Community 41]]
+- 4 edges to [[_COMMUNITY_Community 203]]
+- 3 edges to [[_COMMUNITY_Community 68]]
+- 3 edges to [[_COMMUNITY_Community 1658]]
+- 3 edges to [[_COMMUNITY_Community 78]]
+- 2 edges to [[_COMMUNITY_Community 3]]
+- 2 edges to [[_COMMUNITY_Community 334]]
+- 2 edges to [[_COMMUNITY_Community 62]]
+- 2 edges to [[_COMMUNITY_Community 28]]
+- 2 edges to [[_COMMUNITY_Community 707]]
+- 2 edges to [[_COMMUNITY_Community 18]]
+- 2 edges to [[_COMMUNITY_Community 14]]
+- 1 edge to [[_COMMUNITY_Community 2043]]
+- 1 edge to [[_COMMUNITY_Community 105]]
+- 1 edge to [[_COMMUNITY_Community 1127]]
+- 1 edge to [[_COMMUNITY_Community 64]]
+- 1 edge to [[_COMMUNITY_Community 325]]
+- 1 edge to [[_COMMUNITY_Community 380]]
+- 1 edge to [[_COMMUNITY_Community 431]]
+- 1 edge to [[_COMMUNITY_Community 626]]
+- 1 edge to [[_COMMUNITY_Community 162]]
 
 ## Top bridge nodes
-- [[AuditEvent_1]] - degree 27, connects to 4 communities
-- [[test_audit_export.py]] - degree 12, connects to 3 communities
-- [[audit_export.py]] - degree 6, connects to 3 communities
-- [[aiosqlite]] - degree 5, connects to 3 communities
-- [[TestAuditStoreAnchoredVerify]] - degree 14, connects to 2 communities
+- [[models.py]] - degree 28, connects to 11 communities
+- [[Request_2]] - degree 36, connects to 10 communities
+- [[AuditStore_1]] - degree 58, connects to 8 communities
+- [[ApprovalMode]] - degree 31, connects to 7 communities
+- [[OpProxyRequest]] - degree 18, connects to 6 communities

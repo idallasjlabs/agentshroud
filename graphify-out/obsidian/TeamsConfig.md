@@ -12,9 +12,7 @@ tags:
 # TeamsConfig
 
 ## Connections
-- [[.get_active_project_for_user()]] - `method` [EXTRACTED]
 - [[.get_all_member_ids()]] - `method` [EXTRACTED]
-- [[.get_group_admin_ids()]] - `method` [EXTRACTED]
 - [[.get_group_safe_response_prefix()]] - `method` [EXTRACTED]
 - [[.get_user_collab_mode()]] - `method` [EXTRACTED]
 - [[.get_user_groups()]] - `method` [EXTRACTED]

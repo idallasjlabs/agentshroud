@@ -2,7 +2,7 @@
 source_file: "gateway/security/dns_filter.py"
 type: "rationale"
 community: "Community 72"
-location: "L227"
+location: "L196"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

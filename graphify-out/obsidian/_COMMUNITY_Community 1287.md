@@ -1,28 +1,20 @@
 ---
 type: community
-members: 15
+members: 7
 ---
 
 # Community 1287
 
-**Members:** 15 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[._compute_file_hash()]] - code - gateway/security/memory_integrity.py
-- [[._detect_modification_source()]] - code - gateway/security/memory_integrity.py
-- [[._is_in_write_window()]] - code - gateway/security/memory_integrity.py
-- [[._save_integrity_database()]] - code - gateway/security/memory_integrity.py
-- [[.clear_old_alerts()]] - code - gateway/security/memory_integrity.py
-- [[.scan_all_monitored_files()]] - code - gateway/security/memory_integrity.py
-- [[.scan_file()]] - code - gateway/security/memory_integrity.py
-- [[Attempt to detect the source of a file modification.          Detection strategy]] - rationale - gateway/security/memory_integrity.py
-- [[Check if a file is currently in a write grace window.]] - rationale - gateway/security/memory_integrity.py
-- [[Clear alerts older than N days.]] - rationale - gateway/security/memory_integrity.py
-- [[Compute SHA-256 hash of a file.]] - rationale - gateway/security/memory_integrity.py
-- [[Path_17]] - code - gateway/security/memory_integrity.py
-- [[Save integrity database to disk.]] - rationale - gateway/security/memory_integrity.py
-- [[Scan a single file for integrity changes.]] - rationale - gateway/security/memory_integrity.py
-- [[Scan all configured monitored files and directories.]] - rationale - gateway/security/memory_integrity.py
+- [[.export_leakage_report()]] - code - gateway/security/env_guard.py
+- [[.get_leakage_summary()]] - code - gateway/security/env_guard.py
+- [[.monitor_environment_access()]] - code - gateway/security/env_guard.py
+- [[Any_47]] - code - gateway/security/env_guard.py
+- [[Export leakage findings to a report file.]] - rationale - gateway/security/env_guard.py
+- [[Get summary of all detected leakages.]] - rationale - gateway/security/env_guard.py
+- [[Monitor an agent's environment access attempts.          Args             agent]] - rationale - gateway/security/env_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,11 +24,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_Community 477]]
+- 3 edges to [[_COMMUNITY_Community 0]]
 
 ## Top bridge nodes
-- [[.scan_file()]] - degree 9, connects to 1 community
-- [[._save_integrity_database()]] - degree 6, connects to 1 community
-- [[._detect_modification_source()]] - degree 6, connects to 1 community
-- [[Path_17]] - degree 5, connects to 1 community
-- [[._is_in_write_window()]] - degree 5, connects to 1 community
+- [[.get_leakage_summary()]] - degree 4, connects to 1 community
+- [[.monitor_environment_access()]] - degree 3, connects to 1 community
+- [[.export_leakage_report()]] - degree 3, connects to 1 community

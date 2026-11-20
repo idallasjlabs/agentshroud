@@ -2,7 +2,7 @@
 source_file: "docker/config/openclaw/cron/scripts/cve_prefetch.py"
 type: "code"
 community: "Community 639"
-location: "L46"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED

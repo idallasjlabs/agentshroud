@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "code"
-community: "Community 6"
+community: "Community 431"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_431
 ---
 
 # xml_leak_filter.py
@@ -17,4 +17,4 @@ tags:
 - [[SKILL_200]] - `references` [EXTRACTED]
 - [[XMLLeakFilter]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/Community_431

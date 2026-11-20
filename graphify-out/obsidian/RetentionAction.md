@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Community 1289"
+community: "Community 16"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1289
+  - community/Community_16
 ---
 
 # RetentionAction
@@ -21,4 +21,4 @@ tags:
 - [[MemoryLifecycleManager]] - `references` [EXTRACTED]
 - [[memory_lifecycle.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1289
+#graphify/code #graphify/EXTRACTED #community/Community_16

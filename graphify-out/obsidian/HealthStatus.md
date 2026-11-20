@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 8"
+community: "Community 38"
 location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_8
+  - community/Community_38
 ---
 
 # HealthStatus
 
 ## Connections
-- [[Any_78]] - `uses` [INFERRED]
+- [[Any_74]] - `uses` [INFERRED]
 - [[Enum]] - `inherits` [EXTRACTED]
 - [[HealthStatus_1]] - `uses` [INFERRED]
 - [[ServiceDescriptor_1]] - `uses` [INFERRED]
@@ -25,4 +25,4 @@ tags:
 - [[test_soc_services.py]] - `imports` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_8
+#graphify/code #graphify/EXTRACTED #community/Community_38

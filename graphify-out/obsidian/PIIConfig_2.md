@@ -12,9 +12,8 @@ tags:
 # PIIConfig
 
 ## Connections
-- [[.__init__()_139]] - `references` [EXTRACTED]
+- [[.__init__()_136]] - `references` [EXTRACTED]
 - [[.get_config_for_tool()]] - `references` [EXTRACTED]
-- [[.get_tool_config()]] - `references` [EXTRACTED]
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[RedactionResult]] - `uses` [INFERRED]

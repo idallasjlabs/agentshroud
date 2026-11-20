@@ -2,7 +2,7 @@
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
 community: "Community 51"
-location: "L2617"
+location: "L2616"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -27,7 +27,7 @@ tags:
 - [[.test_risk_level_yellow_50_to_79()]] - `calls` [EXTRACTED]
 - [[.test_score_clamped_to_hundred()]] - `calls` [EXTRACTED]
 - [[.test_score_clamped_to_zero()]] - `calls` [EXTRACTED]
-- [[Any_68]] - `references` [EXTRACTED]
+- [[Any_64]] - `references` [EXTRACTED]
 - [[Per-bot scorecard scoped to a single bot's image scan and egress stats.      Sco]] - `rationale_for` [EXTRACTED]
 - [[TestComputeBotScorecard_1]] - `calls` [EXTRACTED]
 - [[get_security_scorecard()]] - `calls` [EXTRACTED]

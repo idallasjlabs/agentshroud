@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Community 1281"
-location: "L94"
+community: "Community 141"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1281
+  - community/Community_141
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_115]] - `references` [EXTRACTED]
-- [[.get_global_stats()]] - `references` [EXTRACTED]
-- [[.get_session_stats()]] - `references` [EXTRACTED]
+- [[.__init__()_123]] - `references` [EXTRACTED]
+- [[.get_protection_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1281
+#graphify/code #graphify/EXTRACTED #community/Community_141

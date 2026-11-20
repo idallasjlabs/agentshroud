@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router_streaming.py"
 type: "code"
-community: "Community 34"
+community: "Community 325"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_34
+  - community/Community_325
 ---
 
 # _sse_lines()
@@ -15,4 +15,4 @@ tags:
 - [[test_router_streaming.py]] - `contains` [EXTRACTED]
 - [[test_stream_yields_content_deltas_in_order()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_34
+#graphify/code #graphify/EXTRACTED #community/Community_325

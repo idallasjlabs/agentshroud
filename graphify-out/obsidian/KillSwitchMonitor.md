@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_107]] - `method` [EXTRACTED]
+- [[.__init__()_105]] - `method` [EXTRACTED]
 - [[._check_request_rate()]] - `method` [EXTRACTED]
 - [[._check_system_resources()]] - `method` [EXTRACTED]
 - [[._check_token_usage()]] - `method` [EXTRACTED]

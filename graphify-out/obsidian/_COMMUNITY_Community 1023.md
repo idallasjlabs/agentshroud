@@ -10,7 +10,7 @@ members: 26
 ## Members
 - [[.__enter__()_1]] - code - gateway/tests/test_cli_coverage.py
 - [[.__exit__()_1]] - code - gateway/tests/test_cli_coverage.py
-- [[.__init__()_158]] - code - gateway/tests/test_cli_coverage.py
+- [[.__init__()_155]] - code - gateway/tests/test_cli_coverage.py
 - [[.read()]] - code - gateway/tests/test_cli_coverage.py
 - [[.test_default_format_for_pipe()]] - code - gateway/tests/test_cli_coverage.py
 - [[.test_env_token_and_url_used()]] - code - gateway/tests/test_cli_coverage.py

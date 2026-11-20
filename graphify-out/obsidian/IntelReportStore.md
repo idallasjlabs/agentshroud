@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "Community 49"
+community: "Community 57"
 location: "L194"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_49
+  - community/Community_57
 ---
 
 # IntelReportStore
 
 ## Connections
-- [[.__init__()_102]] - `method` [EXTRACTED]
+- [[.__init__()_100]] - `method` [EXTRACTED]
 - [[._load_latest_file()]] - `method` [EXTRACTED]
 - [[.load_all()_1]] - `method` [EXTRACTED]
 - [[.load_latest()]] - `method` [EXTRACTED]
@@ -33,7 +33,6 @@ tags:
 - [[Path_34]] - `uses` [INFERRED]
 - [[Path_47]] - `uses` [INFERRED]
 - [[Persistent store for competitive intelligence reports.      Each report is saved]] - `rationale_for` [EXTRACTED]
-- [[ServiceAction]] - `uses` [INFERRED]
 - [[SkillGuardBlocked]] - `uses` [INFERRED]
 - [[TestCompetitiveIntelReportSchema]] - `uses` [INFERRED]
 - [[TestFetchOutcome]] - `uses` [INFERRED]
@@ -53,4 +52,4 @@ tags:
 - [[test_citation_verifier.py]] - `imports` [EXTRACTED]
 - [[test_intel_pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_49
+#graphify/code #graphify/INFERRED #community/Community_57

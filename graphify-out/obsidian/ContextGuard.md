@@ -1,33 +1,29 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "Community 72"
+community: "Community 0"
 location: "L67"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_72
+  - community/Community_0
 ---
 
 # ContextGuard
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_80]] - `method` [EXTRACTED]
+- [[.__init__()_78]] - `method` [EXTRACTED]
 - [[._detect_hidden_instructions()]] - `method` [EXTRACTED]
 - [[._detect_instruction_injection()]] - `method` [EXTRACTED]
 - [[._detect_rapid_context_growth()]] - `method` [EXTRACTED]
 - [[._detect_repetition_attacks()]] - `method` [EXTRACTED]
 - [[.analyze_message()]] - `method` [EXTRACTED]
-- [[.cleanup_old_sessions()]] - `method` [EXTRACTED]
-- [[.export_attack_report()]] - `method` [EXTRACTED]
-- [[.get_attack_summary()]] - `method` [EXTRACTED]
 - [[.get_segment_provenance()]] - `method` [EXTRACTED]
 - [[.get_session_risk_level()]] - `method` [EXTRACTED]
 - [[.guard()]] - `calls` [EXTRACTED]
 - [[.guard()_6]] - `calls` [EXTRACTED]
 - [[.record_segment()]] - `method` [EXTRACTED]
-- [[.should_block_message()]] - `method` [EXTRACTED]
 - [[.tag_segment()]] - `method` [EXTRACTED]
 - [[.test_context_guard_instantiates()]] - `calls` [EXTRACTED]
 - [[.test_context_guard_session_isolation_under_load()]] - `calls` [INFERRED]
@@ -96,11 +92,11 @@ tags:
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[pipeline()_1]] - `calls` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[run()_2]] - `calls` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_context_guard.py]] - `imports` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_72
+#graphify/code #graphify/INFERRED #community/Community_0

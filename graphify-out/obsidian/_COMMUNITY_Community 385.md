@@ -41,12 +41,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 240]]
+- 4 edges to [[_COMMUNITY_Community 240]]
 - 2 edges to [[_COMMUNITY_Community 372]]
-- 1 edge to [[_COMMUNITY_Community 379]]
-- 1 edge to [[_COMMUNITY_Community 738]]
 - 1 edge to [[_COMMUNITY_Community 250]]
 
 ## Top bridge nodes
-- [[TestDockerEngine]] - degree 29, connects to 5 communities
+- [[TestDockerEngine]] - degree 29, connects to 3 communities
 - [[.setup_method()_23]] - degree 2, connects to 1 community

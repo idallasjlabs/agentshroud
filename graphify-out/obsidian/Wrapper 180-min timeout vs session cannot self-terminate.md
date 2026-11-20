@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-26.md"
 type: "concept"
-community: "Community 1924"
+community: "Community 118"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1924
+  - community/Community_118
 ---
 
 # Wrapper 180-min timeout vs session cannot self-terminate
@@ -15,4 +15,4 @@ tags:
 - [[sunday-upgrade.sh]] - `references` [EXTRACTED]
 - [[upgrade-2026-09-26]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1924
+#graphify/concept #graphify/EXTRACTED #community/Community_118

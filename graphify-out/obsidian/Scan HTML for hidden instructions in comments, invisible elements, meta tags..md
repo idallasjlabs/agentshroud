@@ -2,7 +2,7 @@
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "rationale"
 community: "Community 93"
-location: "L295"
+location: "L288"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

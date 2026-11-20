@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "Community 121"
-location: "L220"
+community: "Community 312"
+location: "L219"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_121
+  - community/Community_312
 ---
 
 # Scan git hooks directory for malicious content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._scan_git_hooks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_121
+#graphify/rationale #graphify/EXTRACTED #community/Community_312

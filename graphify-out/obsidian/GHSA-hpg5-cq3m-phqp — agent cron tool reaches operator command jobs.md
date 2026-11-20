@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "document"
-community: "Community 300"
+community: "Community 1560"
 location: "481"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_300
+  - community/Community_1560
 ---
 
 # GHSA-hpg5-cq3m-phqp — agent cron tool reaches operator command jobs
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Owner-elevation-over-unverified-origin refusal (owner directive 2026-09-15)]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_300
+#graphify/document #graphify/EXTRACTED #community/Community_1560

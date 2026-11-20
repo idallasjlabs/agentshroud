@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "Community 978"
+community: "Community 254"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_978
+  - community/Community_254
 ---
 
 # AuditExportConfig
 
 ## Connections
-- [[.__init__()_70]] - `method` [EXTRACTED]
-- [[.__init__()_71]] - `references` [EXTRACTED]
+- [[.__init__()_68]] - `method` [EXTRACTED]
+- [[.__init__()_69]] - `references` [EXTRACTED]
 - [[._default_jsonld_context()]] - `method` [EXTRACTED]
 - [[.export_config()]] - `calls` [EXTRACTED]
 - [[AuditEvent_1]] - `uses` [INFERRED]
@@ -39,4 +39,4 @@ tags:
 - [[soc_export()]] - `calls` [EXTRACTED]
 - [[test_audit_export.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_978
+#graphify/code #graphify/INFERRED #community/Community_254

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "Community 2005"
+community: "Community 5"
 location: "L1412"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2005
+  - community/Community_5
 ---
 
 # _FakeStreamResponse
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.__aenter__()_5]] - `method` [EXTRACTED]
 - [[.__aexit__()_5]] - `method` [EXTRACTED]
-- [[.__init__()_195]] - `method` [EXTRACTED]
+- [[.__init__()_192]] - `method` [EXTRACTED]
 - [[.aiter_bytes()_1]] - `method` [EXTRACTED]
 - [[.aread()_1]] - `method` [EXTRACTED]
 - [[LLMProxy]] - `uses` [INFERRED]
@@ -24,4 +24,4 @@ tags:
 - [[test_fieldflare_route_strips_unsupported_fields_streaming()]] - `calls` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2005
+#graphify/code #graphify/EXTRACTED #community/Community_5

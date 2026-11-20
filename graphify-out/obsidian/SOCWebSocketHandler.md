@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "Community 169"
+community: "Community 6"
 location: "L35"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_169
+  - community/Community_6
 ---
 
 # SOCWebSocketHandler
 
 ## Connections
-- [[.__init__()_147]] - `method` [EXTRACTED]
+- [[.__init__()_144]] - `method` [EXTRACTED]
 - [[._event_fan_out()]] - `method` [EXTRACTED]
 - [[._keepalive_loop()]] - `method` [EXTRACTED]
 - [[._send_event()]] - `method` [EXTRACTED]
 - [[.run()_9]] - `method` [EXTRACTED]
 - [[.test_fan_out_honours_edge_subscription()]] - `calls` [EXTRACTED]
-- [[Any_83]] - `uses` [INFERRED]
+- [[Any_79]] - `uses` [INFERRED]
 - [[FakeCaller]] - `uses` [INFERRED]
 - [[Manages a single wssoc client connection.]] - `rationale_for` [EXTRACTED]
 - [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
@@ -63,4 +63,4 @@ tags:
 - [[websocket.py]] - `contains` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_169
+#graphify/code #graphify/INFERRED #community/Community_6

@@ -2,7 +2,7 @@
 source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "rationale"
 community: "Community 265"
-location: "L211"
+location: "L203"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

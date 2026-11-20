@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Community 52"
+community: "Community 22"
 location: "L819"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_52
+  - community/Community_22
 ---
 
 # Double-encoded base64 injection should be caught.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_double_base64_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_52
+#graphify/rationale #graphify/EXTRACTED #community/Community_22

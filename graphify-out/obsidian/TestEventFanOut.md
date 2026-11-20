@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Community 169"
+community: "Community 6"
 location: "L667"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_169
+  - community/Community_6
 ---
 
 # TestEventFanOut
@@ -23,4 +23,4 @@ tags:
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_169
+#graphify/code #graphify/INFERRED #community/Community_6

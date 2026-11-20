@@ -12,7 +12,6 @@ tags:
 # ProjectConfig
 
 ## Connections
-- [[.get_active_project_for_user()]] - `references` [EXTRACTED]
 - [[.get_user_projects()]] - `references` [EXTRACTED]
 - [[.matches_topic()]] - `method` [EXTRACTED]
 - [[.normalise_topics()]] - `method` [EXTRACTED]

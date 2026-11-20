@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Community 487"
+community: "Community 1066"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_487
+  - community/Community_1066
 ---
 
 # PII Sanitizer (Presidio + Regex)
@@ -15,4 +15,4 @@ tags:
 - [[Gateway (FastAPI)]] - `calls` [EXTRACTED]
 - [[sanitizer.py (PII redaction, Presidioregex)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_487
+#graphify/concept #graphify/EXTRACTED #community/Community_1066

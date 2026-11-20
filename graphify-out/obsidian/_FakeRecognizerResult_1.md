@@ -12,7 +12,7 @@ tags:
 # _FakeRecognizerResult
 
 ## Connections
-- [[.__init__()_205]] - `method` [EXTRACTED]
+- [[.__init__()_202]] - `method` [EXTRACTED]
 - [[.analyze()_2]] - `calls` [EXTRACTED]
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]

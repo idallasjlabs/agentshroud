@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_content_sanitization()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[Test content sanitization removes threats.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[_get_local_model strips the provider prefix for a Fieldflare ref, same     as it]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_get_local_model_reads_fieldflare_ref()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 16]]
+- 1 edge to [[_COMMUNITY_Community 208]]
+- 1 edge to [[_COMMUNITY_Community 112]]
 
 ## Top bridge nodes
-- [[.test_content_sanitization()]] - degree 2, connects to 1 community
+- [[test_get_local_model_reads_fieldflare_ref()]] - degree 3, connects to 2 communities

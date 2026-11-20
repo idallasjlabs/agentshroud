@@ -1,19 +1,17 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 8"
+community: "Community 38"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_8
+  - community/Community_38
 ---
 
 # models.py
 
 ## Connections
-- [[Alarm]] - `contains` [EXTRACTED]
-- [[AlarmStatus]] - `contains` [EXTRACTED]
 - [[AuditLogEntry]] - `contains` [EXTRACTED]
 - [[AuditResult]] - `contains` [EXTRACTED]
 - [[ContributorRecord_1]] - `contains` [EXTRACTED]
@@ -22,7 +20,7 @@ tags:
 - [[Enum]] - `imports_from` [EXTRACTED]
 - [[HealthStatus]] - `contains` [EXTRACTED]
 - [[Platform]] - `contains` [EXTRACTED]
-- [[ResourceUsage_2]] - `contains` [EXTRACTED]
+- [[ResourceUsage_1]] - `contains` [EXTRACTED]
 - [[RiskLevel_5]] - `contains` [EXTRACTED]
 - [[SCLConfirmationRequired]] - `contains` [EXTRACTED]
 - [[SCLError]] - `contains` [EXTRACTED]
@@ -42,4 +40,4 @@ tags:
 - [[services.py]] - `imports_from` [EXTRACTED]
 - [[websocket.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_8
+#graphify/code #graphify/EXTRACTED #community/Community_38

@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy.py"
+source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "Community 64"
-location: "L80"
+community: "Community 25"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_64
+  - community/Community_25
 ---
 
 # proxy()
 
 ## Connections
-- [[MCPAuditTrail]] - `calls` [EXTRACTED]
-- [[MCPInspector]] - `calls` [EXTRACTED]
-- [[MCPPermissionManager]] - `calls` [EXTRACTED]
-- [[MCPProxy]] - `calls` [EXTRACTED]
-- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
+- [[SSHConfig_2]] - `references` [EXTRACTED]
+- [[SSHProxy_1]] - `references` [EXTRACTED]
+- [[test_ssh_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_64
+#graphify/code #graphify/EXTRACTED #community/Community_25

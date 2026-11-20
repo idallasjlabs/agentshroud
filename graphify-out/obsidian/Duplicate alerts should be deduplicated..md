@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Community 557"
+community: "Community 0"
 location: "L861"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_557
+  - community/Community_0
 ---
 
 # Duplicate alerts should be deduplicated.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_alert_dedup()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_557
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

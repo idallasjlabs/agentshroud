@@ -1,31 +1,24 @@
 ---
 type: community
-members: 111
+members: 98
 ---
 
 # Community 28
 
-**Members:** 111 nodes
+**Members:** 98 nodes
 
 ## Members
-- [[.__init__()_139]] - code - gateway/security/tool_result_sanitizer.py
-- [[.__init__()_140]] - code - gateway/security/tool_result_sanitizer.py
-- [[._apply_enforcement()]] - code - gateway/ingest_api/sanitizer.py
+- [[.__init__()_136]] - code - gateway/security/tool_result_sanitizer.py
+- [[.__init__()_137]] - code - gateway/security/tool_result_sanitizer.py
 - [[._close_middleware_after()]] - code - gateway/tests/test_tool_result_pii.py
 - [[._extract_dict_content()]] - code - gateway/security/tool_result_sanitizer.py
 - [[._extract_scannable_content()]] - code - gateway/security/tool_result_sanitizer.py
 - [[._get_sanitizer_for_tool()]] - code - gateway/security/tool_result_sanitizer.py
 - [[._log_redaction_audit()]] - code - gateway/security/tool_result_sanitizer.py
 - [[._reconstruct_result()]] - code - gateway/security/tool_result_sanitizer.py
-- [[._resolve_threshold()]] - code - gateway/ingest_api/sanitizer.py
-- [[._sanitize_presidio()]] - code - gateway/ingest_api/sanitizer.py
-- [[._sanitize_regex()]] - code - gateway/ingest_api/sanitizer.py
 - [[.default_config()]] - code - gateway/tests/test_tool_result_pii.py
 - [[.get_config_for_tool()]] - code - gateway/security/tool_result_sanitizer.py
-- [[.get_supported_tools()]] - code - gateway/security/tool_result_sanitizer.py
-- [[.get_tool_config()]] - code - gateway/security/tool_result_sanitizer.py
 - [[.mock_config()]] - code - gateway/tests/test_tool_result_pii.py
-- [[.sanitize()]] - code - gateway/ingest_api/sanitizer.py
 - [[.sanitize_tool_result()]] - code - gateway/security/tool_result_sanitizer.py
 - [[.sanitizer()_3]] - code - gateway/tests/test_tool_result_pii.py
 - [[.set_config()]] - code - gateway/ingest_api/middleware.py
@@ -54,31 +47,25 @@ members: 111
 - [[.test_tool_specific_configuration()]] - code - gateway/tests/test_tool_result_pii.py
 - [[.tool_config()]] - code - gateway/tests/test_tool_result_pii.py
 - [[0.9 PII Confidence Floor (CLAUDE.md §7.8)]] - rationale - gateway/tests/test_tool_result_pii.py
-- [[Any_73]] - code - gateway/security/tool_result_sanitizer.py
-- [[Apply monitorenforce + redactblock semantics to a redaction result.]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Any_69]] - code - gateway/security/tool_result_sanitizer.py
 - [[CLAUDE.md §7.8 mandates a 0.9 minimum PII confidence — guard the floor.      The]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Default PII configuration for tests]] - rationale - gateway/tests/test_tool_result_pii.py
-- [[Detect PII in content and apply the enforcement action          Args]] - rationale - gateway/ingest_api/sanitizer.py
 - [[Extract text content from various tool result formats for PII scanning]] - rationale - gateway/security/tool_result_sanitizer.py
 - [[Get PII config for a specific tool, applying overrides if configured]] - rationale - gateway/security/tool_result_sanitizer.py
-- [[Get list of tools with specific PII configurations]] - rationale - gateway/security/tool_result_sanitizer.py
 - [[Get or create a PIISanitizer instance for the specified tool]] - rationale - gateway/security/tool_result_sanitizer.py
-- [[Get the PII configuration for a specific tool]] - rationale - gateway/security/tool_result_sanitizer.py
 - [[Individual redaction record]] - rationale - gateway/ingest_api/models.py
 - [[Log PII redaction for audit trail without logging actual PII]] - rationale - gateway/security/tool_result_sanitizer.py
 - [[Mock configuration for middleware tests]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[PII configuration with per-tool overrides]] - rationale - gateway/security/tool_result_sanitizer.py
 - [[PIIConfig_2]] - code - gateway/security/tool_result_sanitizer.py
+- [[PIISanitizer_1]] - code - gateway/security/tool_result_sanitizer.py
 - [[Reconstruct the tool result with sanitized content]] - rationale - gateway/security/tool_result_sanitizer.py
 - [[Recursively extract string content from dictionary]] - rationale - gateway/security/tool_result_sanitizer.py
 - [[RedactionDetail]] - code - gateway/ingest_api/models.py
 - [[RedactionResult]] - code - gateway/ingest_api/models.py
-- [[RedactionResult_1]] - code - gateway/ingest_api/sanitizer.py
+- [[RedactionResult_3]] - code - gateway/security/tool_result_sanitizer.py
 - [[Result of PII sanitization]] - rationale - gateway/ingest_api/models.py
-- [[Return the effective confidence threshold for one call (raise-only).          Th]] - rationale - gateway/ingest_api/sanitizer.py
 - [[Sanitize a tool result for PII before it reaches the agent          Args]] - rationale - gateway/security/tool_result_sanitizer.py
-- [[Sanitize using Microsoft Presidio          Wraps synchronous Presidio calls in a]] - rationale - gateway/ingest_api/sanitizer.py
-- [[Sanitize using regex patterns (fallback mode)          Detects         - US_SSN]] - rationale - gateway/ingest_api/sanitizer.py
 - [[Set configuration and initialize tool result sanitizer]] - rationale - gateway/ingest_api/middleware.py
 - [[Test configuration loading and validation]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test content extraction from dictionary results]] - rationale - gateway/tests/test_tool_result_pii.py
@@ -128,24 +115,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 38 edges to [[_COMMUNITY_Community 84]]
-- 18 edges to [[_COMMUNITY_Community 72]]
-- 16 edges to [[_COMMUNITY_Community 1]]
-- 11 edges to [[_COMMUNITY_Community 7]]
+- 32 edges to [[_COMMUNITY_Community 7]]
+- 20 edges to [[_COMMUNITY_Community 1]]
+- 16 edges to [[_COMMUNITY_Community 0]]
+- 12 edges to [[_COMMUNITY_Community 84]]
 - 5 edges to [[_COMMUNITY_Community 37]]
-- 2 edges to [[_COMMUNITY_Community 10]]
-- 2 edges to [[_COMMUNITY_Community 707]]
-- 2 edges to [[_COMMUNITY_Community 0]]
+- 2 edges to [[_COMMUNITY_Community 890]]
+- 2 edges to [[_COMMUNITY_Community 254]]
+- 2 edges to [[_COMMUNITY_Community 151]]
+- 2 edges to [[_COMMUNITY_Community 431]]
 - 1 edge to [[_COMMUNITY_Community 56]]
-- 1 edge to [[_COMMUNITY_Community 1214]]
 - 1 edge to [[_COMMUNITY_Community 289]]
-- 1 edge to [[_COMMUNITY_Community 6]]
 - 1 edge to [[_COMMUNITY_Community 835]]
-- 1 edge to [[_COMMUNITY_Community 647]]
+- 1 edge to [[_COMMUNITY_Community 455]]
 
 ## Top bridge nodes
-- [[ToolResultSanitizer]] - degree 40, connects to 6 communities
+- [[ToolResultSanitizer]] - degree 38, connects to 7 communities
 - [[RedactionResult]] - degree 27, connects to 5 communities
 - [[RedactionDetail]] - degree 20, connects to 5 communities
+- [[ToolResultPIIConfig]] - degree 33, connects to 4 communities
 - [[tool_result_sanitizer.py]] - degree 8, connects to 4 communities
-- [[ToolResultPIIConfig]] - degree 33, connects to 3 communities

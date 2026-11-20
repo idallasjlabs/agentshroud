@@ -2,7 +2,7 @@
 source_file: "gateway/security/key_vault.py"
 type: "code"
 community: "Community 684"
-location: "L165"
+location: "L159"
 tags:
   - graphify/code
   - graphify/INFERRED
@@ -12,7 +12,7 @@ tags:
 # KeyLeakDetector
 
 ## Connections
-- [[.__init__()_106]] - `method` [EXTRACTED]
+- [[.__init__()_104]] - `method` [EXTRACTED]
 - [[._make_vault_pipeline()]] - `calls` [EXTRACTED]
 - [[.scan_outbound()]] - `method` [EXTRACTED]
 - [[.test_detect_api_key_patterns()]] - `calls` [EXTRACTED]

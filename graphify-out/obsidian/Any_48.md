@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/security/egress_retry.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Community 822"
-location: "L75"
+community: "Community 102"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_822
+  - community/Community_102
 ---
 
 # Any
 
 ## Connections
-- [[retry_request()]] - `references` [EXTRACTED]
-- [[retry_request_sync()]] - `references` [EXTRACTED]
+- [[._handle_critical()]] - `references` [EXTRACTED]
+- [[categorize_alerts()]] - `references` [EXTRACTED]
+- [[generate_summary()_1]] - `references` [EXTRACTED]
+- [[parse_alert()]] - `references` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_822
+#graphify/code #graphify/EXTRACTED #community/Community_102

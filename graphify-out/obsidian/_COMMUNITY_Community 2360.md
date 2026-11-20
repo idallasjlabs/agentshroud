@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_healthcheck_skill_sandbox_error_is_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Healthcheck SKILL.md sandbox errors should be rewritten to local-healthcheck gui]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[_is_local_oom returns False for non-OOM raw 500 bodies.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_is_local_oom_raw_body_false_on_normal_500()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 845]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 626]]
+- 1 edge to [[_COMMUNITY_Community 208]]
 
 ## Top bridge nodes
-- [[.test_healthcheck_skill_sandbox_error_is_rewritten()]] - degree 4, connects to 3 communities
+- [[test_is_local_oom_raw_body_false_on_normal_500()]] - degree 2, connects to 1 community

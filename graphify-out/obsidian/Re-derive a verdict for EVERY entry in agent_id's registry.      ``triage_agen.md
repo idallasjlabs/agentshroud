@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "rationale"
-community: "Community 8"
+community: "Community 104"
 location: "L1104"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_8
+  - community/Community_104
 ---
 
 # Re-derive a verdict for EVERY entry in *agent_id*'s registry.      ``triage_agen
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[triage_agent_full()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_8
+#graphify/rationale #graphify/EXTRACTED #community/Community_104

@@ -2,7 +2,7 @@
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
 community: "Community 17"
-location: "L607"
+location: "L579"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

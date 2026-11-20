@@ -2,7 +2,7 @@
 source_file: "gateway/security/group_config.py"
 type: "rationale"
 community: "Community 194"
-location: "L199"
+location: "L190"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

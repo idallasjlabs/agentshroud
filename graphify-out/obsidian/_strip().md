@@ -12,7 +12,7 @@ tags:
 # _strip()
 
 ## Connections
-- [[Any_79]] - `references` [EXTRACTED]
+- [[Any_75]] - `references` [EXTRACTED]
 - [[_compose()]] - `calls` [EXTRACTED]
 - [[_merge()]] - `calls` [EXTRACTED]
 - [[test_edge_network_isolation.py]] - `contains` [EXTRACTED]

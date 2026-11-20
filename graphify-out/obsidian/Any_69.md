@@ -1,21 +1,24 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "Community 60"
-location: "L62"
+community: "Community 28"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_60
+  - community/Community_28
 ---
 
 # Any
 
 ## Connections
-- [[.add_conversation_message()]] - `references` [EXTRACTED]
-- [[.from_dict()_11]] - `references` [EXTRACTED]
-- [[.get_session_context()]] - `references` [EXTRACTED]
-- [[.reanchor_system_prompt()]] - `references` [EXTRACTED]
-- [[.to_dict()_12]] - `references` [EXTRACTED]
+- [[.__init__()_136]] - `references` [EXTRACTED]
+- [[._extract_dict_content()]] - `references` [EXTRACTED]
+- [[._extract_scannable_content()]] - `references` [EXTRACTED]
+- [[._reconstruct_result()]] - `references` [EXTRACTED]
+- [[.sanitize_tool_result()]] - `references` [EXTRACTED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[RedactionResult]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_60
+#graphify/code #graphify/EXTRACTED #community/Community_28

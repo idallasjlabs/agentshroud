@@ -2,7 +2,7 @@
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "rationale"
 community: "Community 155"
-location: "L427"
+location: "L405"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

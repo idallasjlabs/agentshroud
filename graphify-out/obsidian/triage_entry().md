@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "Community 8"
+community: "Community 104"
 location: "L835"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_8
+  - community/Community_104
 ---
 
 # triage_entry()
 
 ## Connections
-- [[Any_91]] - `references` [EXTRACTED]
+- [[Any_87]] - `references` [EXTRACTED]
 - [[Produce an honest mitigation verdict for a single advisory entry.      Combines]] - `rationale_for` [EXTRACTED]
 - [[TriageResult]] - `references` [EXTRACTED]
 - [[_AGENT_CVE_REGISTRIES]] - `references` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[triage_agent()]] - `calls` [EXTRACTED]
 - [[triage_agent_full()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_8
+#graphify/code #graphify/EXTRACTED #community/Community_104

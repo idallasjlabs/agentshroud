@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "Community 1044"
-location: "L516"
+community: "Community 420"
+location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1044
+  - community/Community_420
 ---
 
 # Any
 
 ## Connections
-- [[_stub_summary()]] - `references` [EXTRACTED]
+- [[.to_dict()_15]] - `references` [EXTRACTED]
+- [[load_registry()]] - `references` [EXTRACTED]
+- [[plan_remediation()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1044
+#graphify/code #graphify/EXTRACTED #community/Community_420

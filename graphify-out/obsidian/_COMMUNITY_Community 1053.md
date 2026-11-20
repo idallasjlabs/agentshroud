@@ -14,8 +14,8 @@ members: 8
 - [[Purpose_124]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
 - [[Related Notes_10]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
 - [[`resolve_ports(desired dictstr, int) → dictstr, int`]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
-- [[port_manager.py_2]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
 - [[port_manager.py_1]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
+- [[port_manager.py]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
 
 ## Live Query (requires Dataview plugin)
 

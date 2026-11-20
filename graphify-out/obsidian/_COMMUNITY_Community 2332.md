@@ -1,17 +1,15 @@
 ---
 type: community
-members: 4
+members: 2
 ---
 
 # Community 2332
 
-**Members:** 4 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[._domain_matches_pattern()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[._is_domain_allowed()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Check if a URL's domain is in the allowlist.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Check if domain matches pattern (supports wildcards).]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[If the model already uses dashes (LM Studio native ID), normalizing again is a n]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_normalize_local_model_already_dashed_is_idempotent()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,8 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 647]]
+- 1 edge to [[_COMMUNITY_Community 208]]
 
 ## Top bridge nodes
-- [[._is_domain_allowed()]] - degree 3, connects to 1 community
-- [[._domain_matches_pattern()]] - degree 3, connects to 1 community
+- [[test_normalize_local_model_already_dashed_is_idempotent()]] - degree 2, connects to 1 community

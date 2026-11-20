@@ -13,7 +13,6 @@ tags:
 
 ## Connections
 - [[icon_on_canvas()]] - `references` [EXTRACTED]
-- [[load_logo()]] - `references` [EXTRACTED]
 - [[save()_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_446

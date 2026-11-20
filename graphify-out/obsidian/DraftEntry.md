@@ -43,7 +43,6 @@ tags:
 - [[KillSwitchError]] - `uses` [INFERRED]
 - [[ModeRequest]] - `uses` [INFERRED]
 - [[Path_47]] - `uses` [INFERRED]
-- [[ServiceAction]] - `uses` [INFERRED]
 - [[SkillGuardBlocked]] - `uses` [INFERRED]
 - [[TestFetchOutcome]] - `uses` [INFERRED]
 - [[TestMakeHttpxFetcher]] - `uses` [INFERRED]

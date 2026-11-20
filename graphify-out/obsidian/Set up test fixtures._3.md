@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Community 647"
+community: "Community 455"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_647
+  - community/Community_455
 ---
 
 # Set up test fixtures.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.setup_method()_37]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_647
+#graphify/rationale #graphify/EXTRACTED #community/Community_455

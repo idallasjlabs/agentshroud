@@ -24,7 +24,7 @@ members: 28
 - [[A job that last succeeded before this boot proves nothing about         THIS dep]] - rationale - gateway/tests/test_soak_status.py
 - [[A skip for any OTHER reason (not the known-benign empty-heartbeat-         file]] - rationale - gateway/tests/test_soak_status.py
 - [[An actively-failing job since redeploy must block soak even if         other job]] - rationale - gateway/tests/test_soak_status.py
-- [[Any_89]] - code - scripts/soak_status.py
+- [[Any_85]] - code - scripts/soak_status.py
 - [[OpenClaw isHeartbeatContentEffectivelyEmpty benign skip]] - concept - scripts/soak_status.py
 - [[Return (soaked, message) for the given cron job list.      soaked=True only if a]] - rationale - scripts/soak_status.py
 - [[TestClassify_1]] - code - gateway/tests/test_soak_status.py
@@ -45,7 +45,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1924]]
+- 1 edge to [[_COMMUNITY_Community 118]]
 
 ## Top bridge nodes
 - [[main()_28]] - degree 3, connects to 1 community

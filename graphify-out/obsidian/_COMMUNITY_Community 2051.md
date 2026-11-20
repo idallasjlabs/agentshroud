@@ -1,20 +1,17 @@
 ---
 type: community
-members: 7
+members: 4
 ---
 
 # Community 2051
 
-**Members:** 7 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_api_key_detected()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_clean_output_high_score()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_exfil_pattern_detected()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_injection_detected()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_low_agent_trust_penalty()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_pii_detected_lowers_score()]] - code - gateway/tests/test_subagent_governance.py
-- [[TestOutputTrustScoring]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_url_encoded_payload_normalized()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_zero_width_space_stripped()]] - code - gateway/tests/test_adversarial_injection.py
+- [[Encoding bypass variants — validates InputNormalizer multi-pass decode.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[TestEncodingBypass]] - code - gateway/tests/test_adversarial_injection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +21,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 1209]]
-- 2 edges to [[_COMMUNITY_Community 1360]]
-- 1 edge to [[_COMMUNITY_Community 1343]]
+- 3 edges to [[_COMMUNITY_Community 14]]
+- 3 edges to [[_COMMUNITY_Community 187]]
+- 1 edge to [[_COMMUNITY_Community 379]]
+- 1 edge to [[_COMMUNITY_Community 84]]
 
 ## Top bridge nodes
-- [[TestOutputTrustScoring]] - degree 12, connects to 3 communities
+- [[TestEncodingBypass]] - degree 9, connects to 4 communities
+- [[.test_url_encoded_payload_normalized()]] - degree 2, connects to 1 community
+- [[.test_zero_width_space_stripped()]] - degree 2, connects to 1 community

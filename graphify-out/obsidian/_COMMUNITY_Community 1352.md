@@ -1,27 +1,20 @@
 ---
 type: community
-members: 14
+members: 7
 ---
 
 # Community 1352
 
-**Members:** 14 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[.test_high_score_forwards_and_records()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_lockdown_block_is_audited()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_lockdown_score_allows_owner()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_lockdown_score_blocks_non_owner()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_no_scorer_leaves_result_unscored()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_scorer_error_allows_owner()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_scorer_error_fails_closed_non_owner()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_scorer_invoked_with_session_segments()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_warn_zone_forwards()]] - code - gateway/tests/test_pipeline_unit.py
-- [[0.3 ≤ score  0.6 warns but never blocks.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[ContextIntegrityScorer must run in process_inbound() — C21 wiring.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Pipeline with ContextGuard + ContextIntegrityScorer mocks.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[TestContextIntegrityInPipeline]] - code - gateway/tests/test_pipeline_unit.py
-- [[_make_integrity_pipeline()]] - code - gateway/tests/test_pipeline_unit.py
+- [[Hermes API forwarder must include an HTTP-method peek to drop non-HTTP connectio]] - rationale - gateway/tests/test_telegram_executor.py
+- [[Non-HTTP bytes (e.g. TLS ClientHello) must be dropped without proxying.]] - rationale - gateway/tests/test_telegram_executor.py
+- [[lifespan startup must install ThreadPoolExecutor(max_workers=64).]] - rationale - gateway/tests/test_telegram_executor.py
+- [[test_hermes_forwarder_drops_non_http()]] - code - gateway/tests/test_telegram_executor.py
+- [[test_lifespan_hermes_forwarder_has_http_peek()]] - code - gateway/tests/test_telegram_executor.py
+- [[test_lifespan_installs_64_worker_executor()]] - code - gateway/tests/test_telegram_executor.py
+- [[test_telegram_executor.py]] - code - gateway/tests/test_telegram_executor.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,20 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 24]]
-- 6 edges to [[_COMMUNITY_Community 84]]
-- 2 edges to [[_COMMUNITY_Community 68]]
-- 2 edges to [[_COMMUNITY_Community 88]]
-- 2 edges to [[_COMMUNITY_Community 80]]
-- 2 edges to [[_COMMUNITY_Community 684]]
-- 1 edge to [[_COMMUNITY_Community 1566]]
-- 1 edge to [[_COMMUNITY_Community 98]]
-- 1 edge to [[_COMMUNITY_Community 531]]
-- 1 edge to [[_COMMUNITY_Community 37]]
+- 1 edge to [[_COMMUNITY_Community 151]]
 
 ## Top bridge nodes
-- [[TestContextIntegrityInPipeline]] - degree 28, connects to 7 communities
-- [[_make_integrity_pipeline()]] - degree 13, connects to 3 communities
-- [[.test_scorer_error_fails_closed_non_owner()]] - degree 3, connects to 1 community
-- [[.test_scorer_error_allows_owner()]] - degree 3, connects to 1 community
-- [[.test_no_scorer_leaves_result_unscored()]] - degree 2, connects to 1 community
+- [[test_telegram_executor.py]] - degree 4, connects to 1 community

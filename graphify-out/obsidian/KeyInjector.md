@@ -2,7 +2,7 @@
 source_file: "gateway/security/key_vault.py"
 type: "code"
 community: "Community 684"
-location: "L153"
+location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # KeyInjector
 
 ## Connections
-- [[.__init__()_105]] - `method` [EXTRACTED]
+- [[.__init__()_103]] - `method` [EXTRACTED]
 - [[.inject_for_request()]] - `method` [EXTRACTED]
 - [[.test_inject_auth_header()]] - `calls` [EXTRACTED]
 - [[.test_inject_fails_for_unscoped()]] - `calls` [EXTRACTED]

@@ -27,7 +27,7 @@ tags:
 - [[TestPIIDetection_2]] - `contains` [EXTRACTED]
 - [[TestPassthroughMode_1]] - `contains` [EXTRACTED]
 - [[TestPromptInjectionDetection]] - `contains` [EXTRACTED]
-- [[TestRateLimiting_4]] - `contains` [EXTRACTED]
+- [[TestRateLimiting_3]] - `contains` [EXTRACTED]
 - [[TestResponseSizeLimits]] - `contains` [EXTRACTED]
 - [[TestSSRFBlocking]] - `contains` [EXTRACTED]
 - [[TestStats_1]] - `contains` [EXTRACTED]
@@ -38,6 +38,6 @@ tags:
 - [[audit_chain()]] - `contains` [EXTRACTED]
 - [[config()_4]] - `contains` [EXTRACTED]
 - [[passthrough_proxy()_1]] - `contains` [EXTRACTED]
-- [[proxy()_4]] - `contains` [EXTRACTED]
+- [[proxy()_3]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_120

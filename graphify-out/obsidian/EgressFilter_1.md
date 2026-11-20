@@ -2,7 +2,7 @@
 source_file: "gateway/security/egress_filter.py"
 type: "code"
 community: "Community 17"
-location: "L102"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # EgressFilter
 
 ## Connections
-- [[.__init__()_90]] - `method` [EXTRACTED]
+- [[.__init__()_88]] - `method` [EXTRACTED]
 - [[._check_impl()]] - `method` [EXTRACTED]
 - [[._is_ipv6()]] - `method` [EXTRACTED]
 - [[._is_private_ip()_2]] - `method` [EXTRACTED]
@@ -105,7 +105,7 @@ tags:
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[main.py_3]] - `references` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[run()_2]] - `calls` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]

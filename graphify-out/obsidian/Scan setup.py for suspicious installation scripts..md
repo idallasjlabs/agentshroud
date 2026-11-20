@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "Community 121"
-location: "L299"
+community: "Community 312"
+location: "L298"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_121
+  - community/Community_312
 ---
 
 # Scan setup.py for suspicious installation scripts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._scan_setup_py()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_121
+#graphify/rationale #graphify/EXTRACTED #community/Community_312

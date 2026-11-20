@@ -2,7 +2,7 @@
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
 community: "Community 71"
-location: "L75"
+location: "L73"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

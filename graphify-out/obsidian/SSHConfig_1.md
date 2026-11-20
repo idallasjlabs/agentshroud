@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "Community 7"
+community: "Community 44"
 location: "L138"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_7
+  - community/Community_44
 ---
 
 # SSHConfig
 
 ## Connections
-- [[.__init__()_148]] - `references` [EXTRACTED]
+- [[.__init__()_145]] - `references` [EXTRACTED]
 - [[SSHConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_7
+#graphify/code #graphify/INFERRED #community/Community_44

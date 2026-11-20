@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Community 93"
+community: "Community 72"
 location: "L155"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_93
+  - community/Community_72
 ---
 
 # WebContentScanner
 
 ## Connections
-- [[.__init__()_59]] - `references` [EXTRACTED]
+- [[.__init__()_58]] - `references` [EXTRACTED]
 - [[URLAnalyzer]] - `uses` [INFERRED]
 - [[WebContentScanner]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_93
+#graphify/code #graphify/INFERRED #community/Community_72

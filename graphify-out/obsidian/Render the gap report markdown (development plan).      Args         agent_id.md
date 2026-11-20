@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "rationale"
-community: "Community 8"
+community: "Community 104"
 location: "L1173"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_8
+  - community/Community_104
 ---
 
 # Render the gap report markdown (development plan).      Args:         agent_id:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[render_gap_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_8
+#graphify/rationale #graphify/EXTRACTED #community/Community_104

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "rationale"
-community: "Community 271"
+community: "Community 307"
 location: "L84"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_271
+  - community/Community_307
 ---
 
 # Result of proxying a single inbound A2A request.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[A2AProxyResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_271
+#graphify/rationale #graphify/EXTRACTED #community/Community_307

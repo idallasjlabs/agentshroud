@@ -1,20 +1,17 @@
 ---
 type: community
-members: 7
+members: 4
 ---
 
 # Community 2045
 
-**Members:** 7 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[10. Security Supply Chain Analysis]] - document - docs/papers/agentshroud-whitepaper.md
-- [[10.1 Core Runtime Dependencies]] - document - docs/papers/agentshroud-whitepaper.md
-- [[10.2 Security-Specific Dependencies]] - document - docs/papers/agentshroud-whitepaper.md
-- [[10.3 Container Security Tools]] - document - docs/papers/agentshroud-whitepaper.md
-- [[10.4 High-Risk Dependency Wazuh]] - document - docs/papers/agentshroud-whitepaper.md
-- [[10.5 Supply Chain Security Practices]] - document - docs/papers/agentshroud-whitepaper.md
-- [[10.6 Recommendations]] - document - docs/papers/agentshroud-whitepaper.md
+- [[2. Security Value Audit]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[⚠️ Partial Value  Needs Hardening]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[✅ Genuine Security Value]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[🚫 Security Theater]] - document - docs/planning/reviews/phase-review-2026-02-23.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,8 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 331]]
-- 1 edge to [[_COMMUNITY_Community 429]]
+- 1 edge to [[_COMMUNITY_Community 153]]
 
 ## Top bridge nodes
-- [[10. Security Supply Chain Analysis]] - degree 8, connects to 2 communities
+- [[2. Security Value Audit]] - degree 4, connects to 1 community

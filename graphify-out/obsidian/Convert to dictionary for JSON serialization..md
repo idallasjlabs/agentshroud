@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "Community 477"
+community: "Community 16"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_477
+  - community/Community_16
 ---
 
 # Convert to dictionary for JSON serialization.
 
 ## Connections
-- [[.to_dict()_11]] - `rationale_for` [EXTRACTED]
+- [[.to_dict()_10]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_477
+#graphify/rationale #graphify/EXTRACTED #community/Community_16

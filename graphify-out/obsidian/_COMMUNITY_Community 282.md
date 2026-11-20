@@ -1,17 +1,16 @@
 ---
 type: community
-members: 30
+members: 28
 ---
 
 # Community 282
 
-**Members:** 30 nodes
+**Members:** 28 nodes
 
 ## Members
-- [[.__init__()_232]] - code - src/interfaces/text_control_center.py
+- [[.__init__()_228]] - code - src/interfaces/text_control_center.py
 - [[.clear_screen()]] - code - src/interfaces/text_control_center.py
 - [[.draw_approvals()]] - code - src/interfaces/text_control_center.py
-- [[.draw_box()]] - code - src/interfaces/text_control_center.py
 - [[.draw_dashboard()]] - code - src/interfaces/text_control_center.py
 - [[.draw_kill_switch()]] - code - src/interfaces/text_control_center.py
 - [[.draw_log()]] - code - src/interfaces/text_control_center.py
@@ -25,7 +24,6 @@ members: 30
 - [[Clear screen and position cursor at home]] - rationale - src/interfaces/text_control_center.py
 - [[ControlCenter]] - code - src/interfaces/text_control_center.py
 - [[Draw SSH hosts status screen]] - rationale - src/interfaces/text_control_center.py
-- [[Draw a box with title]] - rationale - src/interfaces/text_control_center.py
 - [[Draw approval queue screen]] - rationale - src/interfaces/text_control_center.py
 - [[Draw audit log screen]] - rationale - src/interfaces/text_control_center.py
 - [[Draw kill switch screen]] - rationale - src/interfaces/text_control_center.py

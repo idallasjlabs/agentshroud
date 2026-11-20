@@ -12,7 +12,7 @@ tags:
 # EgressApprovalQueue
 
 ## Connections
-- [[.__init__()_89]] - `method` [EXTRACTED]
+- [[.__init__()_87]] - `method` [EXTRACTED]
 - [[._append_decision()]] - `method` [EXTRACTED]
 - [[._assess_risk()]] - `method` [EXTRACTED]
 - [[._check_existing_rule()]] - `method` [EXTRACTED]
@@ -28,7 +28,6 @@ tags:
 - [[.get_decision_log()]] - `method` [EXTRACTED]
 - [[.get_emergency_status()]] - `method` [EXTRACTED]
 - [[.get_pending_requests()]] - `method` [EXTRACTED]
-- [[.get_rules_for_user()]] - `method` [EXTRACTED]
 - [[.log_external_decision()]] - `method` [EXTRACTED]
 - [[.mock_app_state()]] - `calls` [EXTRACTED]
 - [[.preload_permanent_rules()]] - `method` [EXTRACTED]

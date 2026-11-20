@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "Community 208"
+community: "Community 2333"
 location: "L189"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_208
+  - community/Community_2333
 ---
 
 # gemma-4-12b-it-4bit is NOT renamed — oMLX accepts it case-insensitively     (con
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_normalize_local_model_omlx_gemma_passes_through_unchanged()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_208
+#graphify/rationale #graphify/EXTRACTED #community/Community_2333

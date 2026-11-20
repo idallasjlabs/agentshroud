@@ -8,9 +8,9 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
+- [[.process_inbound()_7]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.process_inbound()_8]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.process_inbound()_9]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.process_inbound()_10]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_clean_message_passes_through()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_encoding_detected_on_getUpdates()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_inbound_text_normalized_before_pipeline()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -38,14 +38,13 @@ SORT file.name ASC
 - 21 edges to [[_COMMUNITY_Community 4]]
 - 8 edges to [[_COMMUNITY_Community 12]]
 - 3 edges to [[_COMMUNITY_Community 138]]
-- 3 edges to [[_COMMUNITY_Community 72]]
+- 3 edges to [[_COMMUNITY_Community 1]]
 - 3 edges to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 436]]
-- 1 edge to [[_COMMUNITY_Community 845]]
-- 1 edge to [[_COMMUNITY_Community 626]]
+- 2 edges to [[_COMMUNITY_Community 436]]
+- 1 edge to [[_COMMUNITY_Community 2]]
 
 ## Top bridge nodes
-- [[BlockingPipeline]] - degree 13, connects to 7 communities
+- [[BlockingPipeline]] - degree 13, connects to 6 communities
 - [[FakePipelineResult_1]] - degree 7, connects to 4 communities
 - [[EncodingDetectingPipeline]] - degree 7, connects to 4 communities
 - [[.test_prompt_injection_blocked_on_getUpdates()]] - degree 7, connects to 2 communities

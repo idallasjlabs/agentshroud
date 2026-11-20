@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_79]] - `method` [EXTRACTED]
+- [[.__init__()_77]] - `method` [EXTRACTED]
 - [[.add_to_blacklist()]] - `method` [EXTRACTED]
 - [[.add_to_whitelist()]] - `method` [EXTRACTED]
 - [[.get_blacklist()]] - `method` [EXTRACTED]

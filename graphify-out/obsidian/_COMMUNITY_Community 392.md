@@ -1,25 +1,20 @@
 ---
 type: community
-members: 24
+members: 19
 ---
 
 # Community 392
 
-**Members:** 24 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[Approval Queue (SQLite)]] - concept - docs/architecture/system-architecture.md
-- [[Approval Queue (gateway diagram)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
 - [[Configuration (TrustConfig)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Dashboard (WebSocket)]] - concept - docs/architecture/system-architecture.md
 - [[Database Schema_2]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[Default Action Trust Requirements]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[Environment Variables_16]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[Function Details_50]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[Key Classes  Functions_53]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Kill Switch (MonitorBlockIsolate)]] - concept - docs/architecture/system-architecture.md
 - [[Mode Enforce vs Monitor_11]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Monitoring System Integration (WebhooksPrometheus)]] - document - docs/api/integration-guide.md
 - [[Purpose_171]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[Related_57]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[Responsibilities_55]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
@@ -43,9 +38,10 @@ SORT file.name ASC
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Community 339]]
 - 1 edge to [[_COMMUNITY_Community 747]]
+- 1 edge to [[_COMMUNITY_Community 1944]]
 - 1 edge to [[_COMMUNITY_Community 637]]
 - 1 edge to [[_COMMUNITY_Community 487]]
 - 1 edge to [[_COMMUNITY_Community 517]]
 
 ## Top bridge nodes
-- [[TrustManager_5]] - degree 18, connects to 5 communities
+- [[TrustManager_5]] - degree 18, connects to 6 communities

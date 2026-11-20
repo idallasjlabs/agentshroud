@@ -1,23 +1,20 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "scripts/discover_upstream_versions.py"
 type: "code"
-community: "Community 6"
-location: "L726"
+community: "Community 48"
+location: "L176"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_6
+  - graphify/EXTRACTED
+  - community/Community_48
 ---
 
 # Any
 
 ## Connections
-- [[._handler()]] - `references` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler]] - `uses` [INFERRED]
+- [[_digest_for_tag()]] - `references` [EXTRACTED]
+- [[_retry()]] - `references` [EXTRACTED]
+- [[discover()]] - `references` [EXTRACTED]
+- [[fetch_dockerhub_tags()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/Community_48

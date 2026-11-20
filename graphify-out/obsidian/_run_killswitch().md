@@ -12,7 +12,7 @@ tags:
 # _run_killswitch()
 
 ## Connections
-- [[Any_77]] - `references` [EXTRACTED]
+- [[Any_73]] - `references` [EXTRACTED]
 - [[Execute a kill switch mode via the shared engine-backed implementation.      SCR]] - `rationale_for` [EXTRACTED]
 - [[JSONResponse_1]] - `references` [EXTRACTED]
 - [[SCLCaller_1]] - `references` [EXTRACTED]

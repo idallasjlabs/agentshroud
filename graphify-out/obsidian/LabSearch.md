@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/facades.py"
 type: "code"
-community: "Community 32"
+community: "Community 80"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Community_80
 ---
 
 # LabSearch
@@ -27,4 +27,4 @@ tags:
 - [[test_lab_search_queries_fixed_endpoint_and_trims()]] - `calls` [EXTRACTED]
 - [[test_shellish_input_never_executes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_32
+#graphify/code #graphify/EXTRACTED #community/Community_80

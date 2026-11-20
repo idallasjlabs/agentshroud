@@ -2,7 +2,7 @@
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
 community: "Community 344"
-location: "L569"
+location: "L481"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

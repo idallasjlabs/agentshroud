@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Community 943"
-location: "L696"
+community: "Community 102"
+location: "L695"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_943
+  - community/Community_102
 ---
 
 # get_falco_summary()
@@ -15,7 +15,7 @@ tags:
 - [[.test_clean_when_installed_not_running()]] - `calls` [EXTRACTED]
 - [[.test_not_run_when_no_alert_dir()]] - `calls` [EXTRACTED]
 - [[.test_returns_summary_for_empty_dir()]] - `calls` [EXTRACTED]
-- [[Any_68]] - `references` [EXTRACTED]
+- [[Any_64]] - `references` [EXTRACTED]
 - [[Path_19]] - `calls` [EXTRACTED]
 - [[Return latest Falco alert summary from the local alert directory.      CC-20 If]] - `rationale_for` [EXTRACTED]
 - [[_is_falco_running()]] - `calls` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_943
+#graphify/code #graphify/EXTRACTED #community/Community_102

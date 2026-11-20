@@ -1,35 +1,26 @@
 ---
 type: community
-members: 30
+members: 21
 ---
 
 # Community 1115
 
-**Members:** 30 nodes
+**Members:** 21 nodes
 
 ## Members
 - [[GO — Continue Development]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 - [[1. Accomplishments This Phase (Feb 25 – Mar 3)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 - [[2. Security Value Audit_2]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 - [[3. Brutally Honest Self-Assessment]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[4. Risks & Gaps]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[5. Risks & Gaps]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 - [[6. Go  No-Go Recommendation]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 - [[AgentShroud Phase Review — 2026-03-03]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 - [[Are we adding real value]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 - [[Are we covering known attack vectors]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 - [[Are we scanning for emerging threats]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 - [[Conditions for Continued Investment]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Critical]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[Critical Risks]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Deferred Items That Matter]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 - [[Delivered]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Design Decisions That Could Backfire]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Design Decisions to Reconsider]] - document - docs/planning/reviews/phase-review-2026-02-23.md
 - [[Have we implemented real security]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[High]] - document - docs/planning/reviews/phase-review-2026-02-23.md
 - [[Is the investment still justified]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Medium]] - document - docs/planning/reviews/phase-review-2026-02-23.md
 - [[Next Milestone That Validates the Investment]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 - [[PARTIAL PROTECTION (real logic, but gaps or dependencies)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 - [[REAL PROTECTION (functional enforcement, would stop actual attacks)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
@@ -47,13 +38,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 153]]
+- 5 edges to [[_COMMUNITY_Community 153]]
 - 1 edge to [[_COMMUNITY_Community 781]]
 - 1 edge to [[_COMMUNITY_Community 987]]
+- 1 edge to [[_COMMUNITY_Community 1090]]
 
 ## Top bridge nodes
+- [[AgentShroud Phase Review — 2026-03-03]] - degree 7, connects to 2 communities
 - [[phase-review-2026-03-03]] - degree 3, connects to 2 communities
-- [[4. Risks & Gaps]] - degree 8, connects to 1 community
 - [[3. Brutally Honest Self-Assessment]] - degree 8, connects to 1 community
-- [[AgentShroud Phase Review — 2026-03-03]] - degree 7, connects to 1 community
 - [[6. Go  No-Go Recommendation]] - degree 6, connects to 1 community
+- [[2. Security Value Audit_2]] - degree 5, connects to 1 community

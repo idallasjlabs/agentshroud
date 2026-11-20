@@ -1,14 +1,14 @@
 ---
 type: community
-members: 126
+members: 122
 ---
 
 # Community 23
 
-**Members:** 126 nodes
+**Members:** 122 nodes
 
 ## Members
-- [[.__init__()_89]] - code - gateway/security/egress_approval.py
+- [[.__init__()_87]] - code - gateway/security/egress_approval.py
 - [[._append_decision()]] - code - gateway/security/egress_approval.py
 - [[._assess_risk()]] - code - gateway/security/egress_approval.py
 - [[._check_existing_rule()]] - code - gateway/security/egress_approval.py
@@ -25,7 +25,6 @@ members: 126
 - [[.get_decision_log()]] - code - gateway/security/egress_approval.py
 - [[.get_emergency_status()]] - code - gateway/security/egress_approval.py
 - [[.get_pending_requests()]] - code - gateway/security/egress_approval.py
-- [[.get_rules_for_user()]] - code - gateway/security/egress_approval.py
 - [[.log_external_decision()]] - code - gateway/security/egress_approval.py
 - [[.matches()]] - code - gateway/security/egress_approval.py
 - [[.mock_app_state()]] - code - gateway/tests/test_egress_approval.py
@@ -62,11 +61,9 @@ members: 126
 - [[.test_rule_management()]] - code - gateway/tests/test_egress_approval.py
 - [[.test_session_rules_not_persisted()]] - code - gateway/tests/test_egress_approval.py
 - [[.test_timeout_behavior()]] - code - gateway/tests/test_egress_approval.py
-- [[.to_dict()_9]] - code - gateway/security/egress_approval.py
+- [[.to_dict()_8]] - code - gateway/security/egress_approval.py
 - [[Add or modify an egress rule.          Args             domain Target domain]] - rationale - gateway/security/egress_approval.py
 - [[Append an entry to the capped decision audit log (CC-40).]] - rationale - gateway/security/egress_approval.py
-- [[Approval modes for rules.]] - rationale - gateway/security/egress_approval.py
-- [[ApprovalMode]] - code - gateway/security/egress_approval.py
 - [[Approve a pending egress request.          Args             request_id ID of r]] - rationale - gateway/security/egress_approval.py
 - [[Assess risk level for a domainport combination.          Returns             R]] - rationale - gateway/security/egress_approval.py
 - [[Check if domain matches an existing rule.]] - rationale - gateway/security/egress_approval.py
@@ -98,7 +95,6 @@ members: 126
 - [[Represents an egress allowdeny rule.]] - rationale - gateway/security/egress_approval.py
 - [[Request approval for egress to a domainport.          Args             domain]] - rationale - gateway/security/egress_approval.py
 - [[Return True if this scope applies to the given user context.]] - rationale - gateway/security/egress_approval.py
-- [[Return all rules whose scope matches the given user context (synchronous, lock-f]] - rationale - gateway/security/egress_approval.py
 - [[Return recent approvaldenial decisions (CC-40).]] - rationale - gateway/security/egress_approval.py
 - [[Revoke an active rule associated with a decision log entry (CC-40).]] - rationale - gateway/security/egress_approval.py
 - [[Risk assessment levels for egress requests.]] - rationale - gateway/security/egress_approval.py
@@ -143,25 +139,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 978]]
+- 8 edges to [[_COMMUNITY_Community 254]]
 - 6 edges to [[_COMMUNITY_Community 21]]
-- 6 edges to [[_COMMUNITY_Community 19]]
-- 4 edges to [[_COMMUNITY_Community 85]]
-- 3 edges to [[_COMMUNITY_Community 8]]
-- 3 edges to [[_COMMUNITY_Community 10]]
+- 4 edges to [[_COMMUNITY_Community 62]]
+- 2 edges to [[_COMMUNITY_Community 6]]
 - 2 edges to [[_COMMUNITY_Community 151]]
-- 2 edges to [[_COMMUNITY_Community 96]]
-- 2 edges to [[_COMMUNITY_Community 14]]
+- 2 edges to [[_COMMUNITY_Community 162]]
+- 2 edges to [[_COMMUNITY_Community 10]]
 - 1 edge to [[_COMMUNITY_Community 489]]
-- 1 edge to [[_COMMUNITY_Community 18]]
+- 1 edge to [[_COMMUNITY_Community 14]]
 - 1 edge to [[_COMMUNITY_Community 89]]
-- 1 edge to [[_COMMUNITY_Community 162]]
-- 1 edge to [[_COMMUNITY_Community 166]]
 - 1 edge to [[_COMMUNITY_Community 37]]
 
 ## Top bridge nodes
-- [[ApprovalMode]] - degree 31, connects to 7 communities
 - [[egress_approval.py]] - degree 11, connects to 5 communities
-- [[EgressApprovalQueue]] - degree 35, connects to 3 communities
+- [[EgressApprovalQueue]] - degree 34, connects to 3 communities
+- [[TestEgressApprovalQueue]] - degree 29, connects to 2 communities
+- [[TestEgressApprovalAPI]] - degree 15, connects to 2 communities
 - [[.request_approval()]] - degree 7, connects to 2 communities
-- [[TestEgressApprovalQueue]] - degree 29, connects to 1 community

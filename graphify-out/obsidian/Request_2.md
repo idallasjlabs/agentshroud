@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 978"
+community: "Community 254"
 location: "L191"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/Community_254
 ---
 
 # Request
@@ -49,4 +49,4 @@ tags:
 - [[slack_api_proxy()]] - `references` [EXTRACTED]
 - [[telegram_api_proxy()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_978
+#graphify/code #graphify/EXTRACTED #community/Community_254

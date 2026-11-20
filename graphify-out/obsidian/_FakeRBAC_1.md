@@ -12,7 +12,7 @@ tags:
 # _FakeRBAC
 
 ## Connections
-- [[.__init__()_209]] - `method` [EXTRACTED]
+- [[.__init__()_206]] - `method` [EXTRACTED]
 - [[.get_user_role()_3]] - `method` [EXTRACTED]
 - [[.test_build_record_defaults_to_normal_when_no_lockdown_state()]] - `calls` [EXTRACTED]
 - [[.test_build_record_does_not_crash_if_lockdown_missing()]] - `calls` [EXTRACTED]

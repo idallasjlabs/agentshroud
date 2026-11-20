@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "Community 7"
+community: "Community 25"
 location: "L19"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_7
+  - community/Community_25
 ---
 
 # SSHConfig
@@ -17,7 +17,7 @@ tags:
 - [[SSHHostConfig]] - `uses` [INFERRED]
 - [[SSHProxy]] - `uses` [INFERRED]
 - [[SSHResult]] - `uses` [INFERRED]
-- [[proxy()_3]] - `references` [EXTRACTED]
+- [[proxy()_2]] - `references` [EXTRACTED]
 - [[ssh_config()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_7
+#graphify/code #graphify/INFERRED #community/Community_25

@@ -43,8 +43,8 @@ members: 68
 - [[.test_returns_all_drifted_items()]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[.test_serialise_contains_version_and_timestamp()]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[.test_serialise_roundtrip()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[.to_dict()_15]] - code - gateway/skills/manifest.py
-- [[.to_dict()_16]] - code - gateway/skills/manifest.py
+- [[.to_dict()_13]] - code - gateway/skills/manifest.py
+- [[.to_dict()_14]] - code - gateway/skills/manifest.py
 - [[.to_json()]] - code - gateway/skills/manifest.py
 - [[A single item in the skills manifest.]] - rationale - gateway/skills/manifest.py
 - [[An empty source directory must raise ValueError.]] - rationale - gateway/tests/test_skills_manifest_sync.py
@@ -87,13 +87,14 @@ SORT file.name ASC
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_Community 489]]
 - 4 edges to [[_COMMUNITY_Community 924]]
-- 4 edges to [[_COMMUNITY_Community 49]]
+- 2 edges to [[_COMMUNITY_Community 49]]
+- 2 edges to [[_COMMUNITY_Community 2072]]
 - 1 edge to [[_COMMUNITY_Community 137]]
 - 1 edge to [[_COMMUNITY_Community 40]]
 
 ## Top bridge nodes
-- [[SkillsManifest]] - degree 25, connects to 3 communities
-- [[deploy_manifest()]] - degree 25, connects to 2 communities
+- [[SkillsManifest]] - degree 25, connects to 4 communities
+- [[deploy_manifest()]] - degree 25, connects to 3 communities
 - [[test_skills_manifest_sync.py]] - degree 18, connects to 2 communities
 - [[ManifestEntry]] - degree 15, connects to 1 community
 - [[plan_deploy()]] - degree 13, connects to 1 community

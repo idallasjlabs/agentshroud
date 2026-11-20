@@ -1,20 +1,23 @@
 ---
 type: community
-members: 248
+members: 138
 ---
 
 # Community 1
 
-**Members:** 248 nodes
+**Members:** 138 nodes
 
 ## Members
-- [[.__init__()_201]] - code - gateway/tests/test_middleware_coverage.py
+- [[._analyze_request_for_rbac()]] - code - gateway/ingest_api/middleware.py
+- [[._check_cross_session_access()]] - code - gateway/ingest_api/middleware.py
+- [[._check_rbac_permissions()]] - code - gateway/ingest_api/middleware.py
 - [[._critical_guard_failure()]] - code - gateway/ingest_api/middleware.py
+- [[._enforce_session_isolation()]] - code - gateway/ingest_api/middleware.py
 - [[._extract_file_paths()]] - code - gateway/ingest_api/middleware.py
+- [[._extract_user_id()]] - code - gateway/ingest_api/middleware.py
 - [[._is_owner()]] - code - gateway/ingest_api/middleware.py
 - [[._is_path_allowed_for_user()]] - code - gateway/ingest_api/middleware.py
-- [[.check_permission()_1]] - code - gateway/tests/test_middleware_coverage.py
-- [[.check_tool_permission()_2]] - code - gateway/tests/test_middleware_coverage.py
+- [[._is_tool_call_request()]] - code - gateway/ingest_api/middleware.py
 - [[.close()_8]] - code - gateway/ingest_api/middleware.py
 - [[.filter_outbound_response()]] - code - gateway/ingest_api/middleware.py
 - [[.get_alert_dispatcher()]] - code - gateway/ingest_api/middleware.py
@@ -28,136 +31,42 @@ members: 248
 - [[.get_output_canary()]] - code - gateway/ingest_api/middleware.py
 - [[.get_rbac_manager()]] - code - gateway/ingest_api/middleware.py
 - [[.get_tool_chain_analyzer()]] - code - gateway/ingest_api/middleware.py
-- [[.get_user_role()_2]] - code - gateway/tests/test_middleware_coverage.py
+- [[.process_request()]] - code - gateway/ingest_api/middleware.py
 - [[.process_tool_result()]] - code - gateway/ingest_api/middleware.py
 - [[.scan_tool_result()]] - code - gateway/ingest_api/middleware.py
-- [[.test_all_module_attrs_exist_after_init()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_allowed_chain_passes()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_analyzer_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_blocked_non_owner_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_blocked_owner_exempted()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_blocked_rewrite_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_blocked_with_chain_match()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_blocked_without_chain_match()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_bots_resolution_error_swallowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_browser_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_any_python_file_in_gateway_blocked()]] - code - gateway/tests/test_privilege_separation.py
 - [[.test_case_sensitivity()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_clean_message_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_command_indicator_allowed_when_check_passes()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_command_indicator_blocked()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_config_yaml_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_context_guard_init_raise_recorded_and_logged()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_critical_attack_blocked()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_critical_finding_blocked()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_critical_tool_tier()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_cross_user_path_blocked()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_default_bot_and_sanitizer_configured()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_default_deny()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_delete_action()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_dict_message_handled()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_direct_field()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_direct_no_session_manager_blocked()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_defaults()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_denied_with_reason()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_docker_compose_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
 - [[.test_dockerfile_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_endpoint_reports_no_key_collisions_and_high_total()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_env_guard_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_etc_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_exception_fails_open()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_exception_fails_open()_1]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_exception_fails_secure()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_execute_action_medium_tier()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_existing_session_context_not_reinjected()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_expected_write_registered()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_fallback_without_rbac_manager()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_filter_applied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_filter_not_applied()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_full_init_success_and_getters()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_gateway_config_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
 - [[.test_gateway_source_read_flagged()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_git_guard_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_guard_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_headers_sanitized()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_high_threat_blocked()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_high_tool_tier()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_gateway_source_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
 - [[.test_init_all_modules_fail_falls_back_to_none()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_invisible_chars_normalized()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_isolation_error_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_isolation_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_isolation_fail_closed_without_session_manager()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_log_action_no_patterns_returns_original()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_log_action_with_patterns_returns_original()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_low_finding_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_low_severity_not_blocking()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_low_threat_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_manage_modules_endpoint_uses_the_same_registry()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_message_dict_is_stringified_and_normalized()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_metadata_exception_non_blocking()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_metadata_fallback()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_missing_returns_none()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_mm_fixture_without_failed_guards_attr_is_safe()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_modules_source_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
 - [[.test_multiple_violations_tracked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_no_bots_keeps_fallback_workspace()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_no_filter_passthrough()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_no_path_match_no_registration()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_no_scanner_passthrough()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_no_session_manager_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_no_user_id_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_non_critical_guard_failure_not_recorded()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_non_default_bot_fallback()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_non_owner_blocked()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_non_owner_blocked_when_critical_guard_failed()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_normal_operations_not_violations()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_not_configured_guard_does_not_fail_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_other_user_under_users_base_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_outer_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_own_workspace_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_own_workspace_path_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_owner_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_owner_bypass()_1]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_owner_bypass()_2]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_owner_bypass()_3]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_owner_bypasses_sandbox()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_owner_exempt_when_critical_guard_failed()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_path_traversal_blocked()_1]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_plain_message_skips_check()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_question_defaults_to_read_system()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_rbac_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_rbac_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_rbac_pass_logs_role_and_allows()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_rbac_requires_approval()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_read_action_low_tier()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_readme_p1_count_matches_middleware_manager()]] - code - gateway/tests/test_docs_accuracy.py
 - [[.test_relative_path_resolution()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_repetition_attack_not_blocking()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_sandbox_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_sanitizer_construction_error_sets_none()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_security_module_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
 - [[.test_sensitive_config_read_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_session_context_injected()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_session_context_priority()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_soul_md_in_workspace_blocked()]] - code - gateway/tests/test_privilege_separation.py
 - [[.test_soul_md_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_strip_action_returns_sanitized()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_symlink_resolution()]] - code - gateway/tests/test_privilege_separation.py
 - [[.test_system_info_read_allowed()]] - code - gateway/tests/test_privilege_separation.py
 - [[.test_system_prompt_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
 - [[.test_tmp_write_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_tool_permission_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_tool_permission_requires_approval()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_tracker_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_unblocked_rewrite_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_unknown_defaults_to_tool_use()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_users_heuristic_denied()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_usr_bin_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
 - [[.test_var_log_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
 - [[.test_violation_recorded_in_audit()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_warn_action_returns_sanitized()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_wildcard_pattern_matching()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_with_rbac_manager()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_workspace_read_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
 - [[.test_workspace_subdirectory_write_allowed()]] - code - gateway/tests/test_privilege_separation.py
 - [[.test_workspace_write_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_write_action_no_tier()]] - code - gateway/tests/test_middleware_coverage.py
-- [[A security-critical guard whose constructor RAISES during __init__ must     NOT]] - rationale - gateway/tests/test_middleware_coverage.py
 - [[Agent can read basic system info.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Agent can read its own workspace.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Agent can still write to its own workspace.]] - rationale - gateway/tests/test_privilege_separation.py
@@ -165,6 +74,7 @@ members: 248
 - [[Agent can write to its own workspace directory.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Agent can write to subdirectories in workspace.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Agent cannot modify AgentShroud configuration files.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify AgentShroud's own source code.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Agent cannot modify Docker Compose configuration.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Agent cannot modify Dockerfile.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Agent cannot modify SOUL.md behavioral instructions.]] - rationale - gateway/tests/test_privilege_separation.py
@@ -177,13 +87,21 @@ members: 248
 - [[Agent cannot write to etc system configuration.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Agent cannot write to usrbin system binaries.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Agent cannot write to varlog system logs.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to gateway Python source files.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Agent cannot write to gateway config directory.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to security framework files.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to security module source files.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Analyze request to determine RBAC action, resource, and tool tier.]] - rationale - gateway/ingest_api/middleware.py
+- [[Any_18]] - code - gateway/ingest_api/middleware.py
+- [[Any .py file in gateway directory should be blocked.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Case variations should not bypass protection.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Check RBAC permissions for the request.]] - rationale - gateway/ingest_api/middleware.py
+- [[Check for unauthorized cross-session access attempts.          Implementation]] - rationale - gateway/ingest_api/middleware.py
 - [[Check if a file path is allowed for a user to access.]] - rationale - gateway/ingest_api/middleware.py
 - [[Check if user_id is the system owner via RBAC config (single source of truth).]] - rationale - gateway/ingest_api/middleware.py
-- [[Deterministic stand-in for RBACManager.]] - rationale - gateway/tests/test_middleware_coverage.py
-- [[Execute the real endpoint against a fully-populated app_state and         verify]] - rationale - gateway/tests/test_docs_accuracy.py
+- [[Enforce per-user, per-bot session isolation rules.          Each (user_id, bot_i]] - rationale - gateway/ingest_api/middleware.py
 - [[Extract potential file paths from message content.]] - rationale - gateway/ingest_api/middleware.py
+- [[Extract user ID from request data.]] - rationale - gateway/ingest_api/middleware.py
 - [[FileSandbox in enforce mode with strict separation.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Filter outbound response to remove sensitive XML and path information.]] - rationale - gateway/ingest_api/middleware.py
 - [[Get the RBAC manager for external access.]] - rationale - gateway/ingest_api/middleware.py
@@ -191,13 +109,16 @@ members: 248
 - [[Manages the P1 security middleware modules.]] - rationale - gateway/ingest_api/middleware.py
 - [[Middleware manager for request processing tests.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[MiddlewareManager]] - code - gateway/ingest_api/middleware.py
-- [[MiddlewareManager built via __new__ — every module attr explicitly None     so e]] - rationale - gateway/tests/test_middleware_coverage.py
+- [[MiddlewareResult]] - code - gateway/ingest_api/middleware.py
 - [[Multiple violations should all be tracked.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Normal workspace operations should not be flagged as violations.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Path traversal attempts should be blocked.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Process request through all middleware modules.]] - rationale - gateway/ingest_api/middleware.py
 - [[Process tool result through PII sanitization before it reaches agent          Ar]] - rationale - gateway/ingest_api/middleware.py
 - [[Reading gateway source should be flaggedblocked.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Relative paths should be resolved properly.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Result from middleware processing.]] - rationale - gateway/ingest_api/middleware.py
+- [[Return True only when the request contains actual tool calls or tool results.]] - rationale - gateway/ingest_api/middleware.py
 - [[Return the name of a failed critical guard, or None if all healthy.          Use]] - rationale - gateway/ingest_api/middleware.py
 - [[Sandbox with separation of privilege enforcement.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Scan tool result for injection attempts and return sanitized content.          A]] - rationale - gateway/ingest_api/middleware.py
@@ -209,53 +130,22 @@ members: 248
 - [[Test file path pattern matching logic.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Test read access controls.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Test that security violations are properly logged and tracked.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[TestAnalyzeRequestForRBAC]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestBrowserSecurity]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestAgentShroudSourceCodeProtection]] - code - gateway/tests/test_privilege_separation.py
 - [[TestConfigurationProtection]] - code - gateway/tests/test_privilege_separation.py
-- [[TestContextGuard]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestCriticalGuardInitFailClosed]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestCrossSessionAccess]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestEdgeCases]] - code - gateway/tests/test_privilege_separation.py
-- [[TestEnvGuard]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestExtractUserId]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestFileSandboxStep]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestFilterOutboundResponse]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestGitGuard_1]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestInit]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestIsOwner]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestIsPathAllowedForUser]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestManageModulesEndpointAccuracy]] - code - gateway/tests/test_docs_accuracy.py
-- [[TestMemoryIntegrityRegistration]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestMetadataGuard_1]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestMultiTurnTracker]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestPathIsolationStep]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestMiddlewareResult]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestPatternMatching]] - code - gateway/tests/test_privilege_separation.py
-- [[TestProcessRequestIdentity]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestProcessRequestRBAC]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestReadAccess]] - code - gateway/tests/test_privilege_separation.py
-- [[TestScanToolResult]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestSecurityPolicyProtection]] - code - gateway/tests/test_privilege_separation.py
 - [[TestSecurityViolationLogging]] - code - gateway/tests/test_privilege_separation.py
-- [[TestSetConfig]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestSystemPathProtection]] - code - gateway/tests/test_privilege_separation.py
-- [[TestToolChainAnalyzer]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestWorkspaceAccessPreserved]] - code - gateway/tests/test_privilege_separation.py
-- [[The endpoint's P1 section must be generated from ALL_MODULE_ATTRS,         not a]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[Verify managemodules enumerates every module MiddlewareManager wires.      Mid]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[_FakeRBAC]] - code - gateway/tests/test_middleware_coverage.py
-- [[_bot()]] - code - gateway/tests/test_middleware_coverage.py
-- [[_req()_1]] - code - gateway/tests/test_middleware_coverage.py
-- [[_scan_result()]] - code - gateway/tests/test_middleware_coverage.py
-- [[_tool_req()]] - code - gateway/tests/test_middleware_coverage.py
 - [[enforce_config()]] - code - gateway/tests/test_privilege_separation.py
 - [[middleware.py_1]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
 - [[middleware_manager()]] - code - gateway/tests/test_privilege_separation.py
-- [[mm()]] - code - gateway/tests/test_middleware_coverage.py
 - [[strict_sandbox()_1]] - code - gateway/tests/test_privilege_separation.py
-- [[temp_workspace()_1]] - code - gateway/tests/test_middleware_coverage.py
-- [[test_middleware_coverage.py]] - code - gateway/tests/test_middleware_coverage.py
 - [[test_privilege_separation.py]] - code - gateway/tests/test_privilege_separation.py
-- [[usm()]] - code - gateway/tests/test_middleware_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -265,50 +155,66 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 68 edges to [[_COMMUNITY_Community 72]]
-- 29 edges to [[_COMMUNITY_Community 84]]
-- 27 edges to [[_COMMUNITY_Community 1305]]
-- 17 edges to [[_COMMUNITY_Community 68]]
-- 16 edges to [[_COMMUNITY_Community 28]]
-- 13 edges to [[_COMMUNITY_Community 31]]
-- 10 edges to [[_COMMUNITY_Community 978]]
-- 10 edges to [[_COMMUNITY_Community 6]]
-- 9 edges to [[_COMMUNITY_Community 130]]
+- 44 edges to [[_COMMUNITY_Community 0]]
+- 36 edges to [[_COMMUNITY_Community 34]]
+- 25 edges to [[_COMMUNITY_Community 6]]
+- 20 edges to [[_COMMUNITY_Community 28]]
+- 14 edges to [[_COMMUNITY_Community 31]]
+- 14 edges to [[_COMMUNITY_Community 60]]
+- 10 edges to [[_COMMUNITY_Community 130]]
+- 9 edges to [[_COMMUNITY_Community 68]]
+- 9 edges to [[_COMMUNITY_Community 16]]
+- 8 edges to [[_COMMUNITY_Community 3]]
+- 8 edges to [[_COMMUNITY_Community 254]]
+- 6 edges to [[_COMMUNITY_Community 72]]
+- 6 edges to [[_COMMUNITY_Community 140]]
+- 6 edges to [[_COMMUNITY_Community 26]]
+- 6 edges to [[_COMMUNITY_Community 146]]
+- 6 edges to [[_COMMUNITY_Community 455]]
+- 6 edges to [[_COMMUNITY_Community 1658]]
+- 6 edges to [[_COMMUNITY_Community 37]]
 - 6 edges to [[_COMMUNITY_Community 114]]
-- 5 edges to [[_COMMUNITY_Community 151]]
-- 4 edges to [[_COMMUNITY_Community 79]]
-- 4 edges to [[_COMMUNITY_Community 37]]
+- 5 edges to [[_COMMUNITY_Community 7]]
+- 5 edges to [[_COMMUNITY_Community 12]]
+- 4 edges to [[_COMMUNITY_Community 151]]
+- 4 edges to [[_COMMUNITY_Community 4]]
+- 4 edges to [[_COMMUNITY_Community 2050]]
+- 4 edges to [[_COMMUNITY_Community 605]]
+- 4 edges to [[_COMMUNITY_Community 138]]
+- 3 edges to [[_COMMUNITY_Community 52]]
+- 3 edges to [[_COMMUNITY_Community 196]]
+- 3 edges to [[_COMMUNITY_Community 152]]
+- 3 edges to [[_COMMUNITY_Community 198]]
+- 3 edges to [[_COMMUNITY_Community 9]]
+- 3 edges to [[_COMMUNITY_Community 1281]]
+- 3 edges to [[_COMMUNITY_Community 71]]
+- 3 edges to [[_COMMUNITY_Community 45]]
+- 3 edges to [[_COMMUNITY_Community 233]]
+- 3 edges to [[_COMMUNITY_Community 5]]
+- 3 edges to [[_COMMUNITY_Community 477]]
+- 3 edges to [[_COMMUNITY_Community 8]]
+- 3 edges to [[_COMMUNITY_Community 154]]
+- 3 edges to [[_COMMUNITY_Community 431]]
+- 3 edges to [[_COMMUNITY_Community 53]]
+- 3 edges to [[_COMMUNITY_Community 1130]]
 - 3 edges to [[_COMMUNITY_Community 94]]
-- 2 edges to [[_COMMUNITY_Community 235]]
-- 2 edges to [[_COMMUNITY_Community 52]]
-- 2 edges to [[_COMMUNITY_Community 3]]
-- 2 edges to [[_COMMUNITY_Community 121]]
-- 2 edges to [[_COMMUNITY_Community 0]]
-- 2 edges to [[_COMMUNITY_Community 26]]
-- 2 edges to [[_COMMUNITY_Community 194]]
-- 2 edges to [[_COMMUNITY_Community 146]]
-- 2 edges to [[_COMMUNITY_Community 647]]
-- 1 edge to [[_COMMUNITY_Community 557]]
-- 1 edge to [[_COMMUNITY_Community 152]]
-- 1 edge to [[_COMMUNITY_Community 122]]
-- 1 edge to [[_COMMUNITY_Community 9]]
-- 1 edge to [[_COMMUNITY_Community 809]]
-- 1 edge to [[_COMMUNITY_Community 477]]
-- 1 edge to [[_COMMUNITY_Community 16]]
-- 1 edge to [[_COMMUNITY_Community 71]]
-- 1 edge to [[_COMMUNITY_Community 233]]
-- 1 edge to [[_COMMUNITY_Community 5]]
-- 1 edge to [[_COMMUNITY_Community 76]]
-- 1 edge to [[_COMMUNITY_Community 154]]
-- 1 edge to [[_COMMUNITY_Community 431]]
-- 1 edge to [[_COMMUNITY_Community 1066]]
-- 1 edge to [[_COMMUNITY_Community 60]]
+- 2 edges to [[_COMMUNITY_Community 978]]
+- 2 edges to [[_COMMUNITY_Community 1127]]
+- 2 edges to [[_COMMUNITY_Community 1209]]
+- 2 edges to [[_COMMUNITY_Community 1343]]
 - 1 edge to [[_COMMUNITY_Community 229]]
+- 1 edge to [[_COMMUNITY_Community 13]]
+- 1 edge to [[_COMMUNITY_Community 1412]]
+- 1 edge to [[_COMMUNITY_Community 1131]]
+- 1 edge to [[_COMMUNITY_Community 2006]]
+- 1 edge to [[_COMMUNITY_Community 1946]]
+- 1 edge to [[_COMMUNITY_Community 235]]
+- 1 edge to [[_COMMUNITY_Community 14]]
 - 1 edge to [[_COMMUNITY_Community 592]]
 
 ## Top bridge nodes
-- [[MiddlewareManager]] - degree 185, connects to 36 communities
-- [[test_middleware_coverage.py]] - degree 40, connects to 5 communities
-- [[_FakeRBAC]] - degree 21, connects to 3 communities
-- [[TestProcessRequestIdentity]] - degree 13, connects to 3 communities
-- [[TestAnalyzeRequestForRBAC]] - degree 13, connects to 3 communities
+- [[MiddlewareResult]] - degree 127, connects to 46 communities
+- [[MiddlewareManager]] - degree 185, connects to 41 communities
+- [[Any_18]] - degree 55, connects to 27 communities
+- [[TestInit]] - degree 7, connects to 3 communities
+- [[TestMiddlewareResult]] - degree 7, connects to 3 communities

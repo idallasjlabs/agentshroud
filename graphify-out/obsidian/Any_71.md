@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/security/soc_correlation.py"
+source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "Community 2071"
-location: "L44"
+community: "Community 102"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2071
+  - community/Community_102
 ---
 
 # Any
 
 ## Connections
-- [[.to_dict()_13]] - `references` [EXTRACTED]
+- [[generate_summary()_3]] - `references` [EXTRACTED]
+- [[get_fim_events()]] - `references` [EXTRACTED]
+- [[get_rootkit_events()]] - `references` [EXTRACTED]
+- [[parse_alert()_1]] - `references` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2071
+#graphify/code #graphify/EXTRACTED #community/Community_102

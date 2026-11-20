@@ -1,24 +1,20 @@
 ---
 type: community
-members: 11
+members: 7
 ---
 
 # Community 1286
 
-**Members:** 11 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[_apply_agent_cb()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_apply_state_cb()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_find_canvas()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_report_and_place_canvas()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_state_to_emotion()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[face_emotion_t]] - code - firmware/voice-terminal/main/ui_face.c
-- [[lv_obj_t]] - code - firmware/voice-terminal/main/ui_face.c
-- [[remote_log.h]] - code - firmware/voice-terminal/main/remote_log.h
-- [[ui_face.c]] - code - firmware/voice-terminal/main/ui_face.c
-- [[ui_face_init()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[ws_vg_state_t_1]] - code - firmware/voice-terminal/main/ui_face.c
+- [[HTTP 400 — Unknown MCP Server]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[HTTP 403 — MCP Tool Permission Denied]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[HTTP 429 — MCP Rate Limit Exceeded]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[HTTP 502 — MCP Server Unreachable]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[MCP Proxy Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[MCP Proxy Wrapper Issues (Bot Side)]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[Related Notes_59]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,13 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 378]]
-- 3 edges to [[_COMMUNITY_Community 341]]
-- 1 edge to [[_COMMUNITY_Community 312]]
-- 1 edge to [[_COMMUNITY_Community 358]]
+- 1 edge to [[_COMMUNITY_Community 389]]
 
 ## Top bridge nodes
-- [[ui_face.c]] - degree 14, connects to 3 communities
-- [[remote_log.h]] - degree 4, connects to 3 communities
-- [[ui_face_init()]] - degree 3, connects to 1 community
-- [[ws_vg_state_t_1]] - degree 2, connects to 1 community
+- [[MCP Proxy Errors_2]] - degree 7, connects to 1 community

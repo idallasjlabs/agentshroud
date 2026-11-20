@@ -1,11 +1,11 @@
 ---
 type: community
-members: 21
+members: 30
 ---
 
 # Community 454
 
-**Members:** 21 nodes
+**Members:** 30 nodes
 
 ## Members
 - [[1. Container Hardening]] - document - docs/security/container-policy.md
@@ -14,6 +14,10 @@ members: 21
 - [[1.3 Read-Only Filesystem (Planned)]] - document - docs/security/container-policy.md
 - [[1.4 Non-Root Execution]] - document - docs/security/container-policy.md
 - [[1.5 Resource Limits]] - document - docs/security/container-policy.md
+- [[2. Network Isolation]] - document - docs/security/container-policy.md
+- [[2.1 Docker Networks]] - document - docs/security/container-policy.md
+- [[2.2 Exposed Ports]] - document - docs/security/container-policy.md
+- [[2.3 Tailscale Network]] - document - docs/security/container-policy.md
 - [[3. Secret Management]] - document - docs/security/container-policy.md
 - [[3.1 Hierarchy]] - document - docs/security/container-policy.md
 - [[3.2 Rules]] - document - docs/security/container-policy.md
@@ -23,12 +27,17 @@ members: 21
 - [[4.2 Dependencies]] - document - docs/security/container-policy.md
 - [[4.3 Image Build]] - document - docs/security/container-policy.md
 - [[4.4 Image Storage]] - document - docs/security/container-policy.md
+- [[5. Network Isolation]] - document - docs/security/security-architecture.md
 - [[5. Runtime Monitoring]] - document - docs/security/container-policy.md
 - [[5.1 Health Checks]] - document - docs/security/container-policy.md
 - [[5.2 Logging]] - document - docs/security/container-policy.md
 - [[5.3 Monitoring Checklist]] - document - docs/security/container-policy.md
+- [[6. DNS Filter]] - document - docs/security/security-architecture.md
 - [[6. Incident Response (Container-Specific)]] - document - docs/security/container-policy.md
+- [[7. TLS Termination and Inspection]] - document - docs/security/security-architecture.md
+- [[8. Network Rate Limiter]] - document - docs/security/security-architecture.md
 - [[Container Security Policy — AgentShroud]] - document - docs/security/container-policy.md
+- [[Layer 2 Network Security (4 Modules)]] - document - docs/security/security-architecture.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,8 +47,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 1219]]
 - 1 edge to [[_COMMUNITY_Community 1016]]
-- 1 edge to [[_COMMUNITY_Community 577]]
+- 1 edge to [[_COMMUNITY_Community 301]]
 
 ## Top bridge nodes
-- [[Container Security Policy — AgentShroud]] - degree 7, connects to 2 communities
+- [[Container Security Policy — AgentShroud]] - degree 7, connects to 1 community
+- [[2. Network Isolation]] - degree 6, connects to 1 community
+- [[Layer 2 Network Security (4 Modules)]] - degree 6, connects to 1 community

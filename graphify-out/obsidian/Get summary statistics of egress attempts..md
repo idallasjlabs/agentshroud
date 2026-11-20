@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "Community 17"
-location: "L645"
+community: "Community 329"
+location: "L617"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_17
+  - community/Community_329
 ---
 
 # Get summary statistics of egress attempts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_stats()_16]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_17
+#graphify/rationale #graphify/EXTRACTED #community/Community_329

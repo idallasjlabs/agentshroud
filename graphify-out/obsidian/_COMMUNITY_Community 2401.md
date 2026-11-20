@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_raw_web_fetch_json_approval_cooldown_is_scheme_port_scoped()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Cooldown dedupe must not suppress approvals when schemeport risk changes.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_hash_fingerprinting()]] - code - gateway/tests/test_prompt_protection.py
+- [[Test that content is properly fingerprinted with hashes.]] - rationale - gateway/tests/test_prompt_protection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 845]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 626]]
+- 1 edge to [[_COMMUNITY_Community 351]]
 
 ## Top bridge nodes
-- [[.test_raw_web_fetch_json_approval_cooldown_is_scheme_port_scoped()]] - degree 4, connects to 3 communities
+- [[.test_hash_fingerprinting()]] - degree 2, connects to 1 community

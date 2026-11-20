@@ -2,7 +2,7 @@
 source_file: "gateway/proxy/slack_proxy.py"
 type: "rationale"
 community: "Community 381"
-location: "L443"
+location: "L439"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

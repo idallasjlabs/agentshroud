@@ -43,10 +43,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 48]]
+- 3 edges to [[_COMMUNITY_Community 48]]
+- 3 edges to [[_COMMUNITY_Community 118]]
 
 ## Top bridge nodes
-- [[pick_latest_stable()]] - degree 13, connects to 1 community
+- [[pick_latest_stable()]] - degree 13, connects to 2 communities
 - [[TestPickLatestStable]] - degree 10, connects to 1 community
 - [[is_stable()]] - degree 7, connects to 1 community
 - [[TestIsStable]] - degree 6, connects to 1 community

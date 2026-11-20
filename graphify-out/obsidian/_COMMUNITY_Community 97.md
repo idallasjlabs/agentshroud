@@ -8,7 +8,7 @@ members: 63
 **Members:** 63 nodes
 
 ## Members
-- [[.__init__()_122]] - code - gateway/security/privacy_policy.py
+- [[.__init__()_120]] - code - gateway/security/privacy_policy.py
 - [[._get_role_value()]] - code - gateway/security/privacy_policy.py
 - [[._user_in_allowed_groups()]] - code - gateway/security/privacy_policy.py
 - [[.contains_private_data()]] - code - gateway/security/privacy_policy.py
@@ -80,14 +80,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 26 edges to [[_COMMUNITY_Community 194]]
-- 3 edges to [[_COMMUNITY_Community 8]]
+- 15 edges to [[_COMMUNITY_Community 6]]
+- 13 edges to [[_COMMUNITY_Community 194]]
 - 3 edges to [[_COMMUNITY_Community 151]]
 - 2 edges to [[_COMMUNITY_Community 489]]
+- 1 edge to [[_COMMUNITY_Community 38]]
 
 ## Top bridge nodes
 - [[PrivacyPolicyEnforcer]] - degree 27, connects to 2 communities
+- [[TestResponseFiltering]] - degree 15, connects to 2 communities
+- [[test_privacy_policy.py]] - degree 14, connects to 2 communities
+- [[TestServiceAccessControl]] - degree 14, connects to 2 communities
 - [[PrivacyPolicy]] - degree 13, connects to 2 communities
-- [[ServicePrivacy]] - degree 12, connects to 2 communities
-- [[privacy_policy.py]] - degree 6, connects to 2 communities
-- [[TestResponseFiltering]] - degree 15, connects to 1 community

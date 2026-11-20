@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "rationale"
-community: "Community 20"
+community: "Community 38"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_20
+  - community/Community_38
 ---
 
 # Return the gateway's own container plus each configured bot's real     container
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_known_services()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_20
+#graphify/rationale #graphify/EXTRACTED #community/Community_38

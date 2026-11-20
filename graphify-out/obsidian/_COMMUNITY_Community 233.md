@@ -8,7 +8,7 @@ members: 57
 **Members:** 57 nodes
 
 ## Members
-- [[.__init__()_119]] - code - gateway/security/output_canary.py
+- [[.__init__()_117]] - code - gateway/security/output_canary.py
 - [[._create_detection_patterns()]] - code - gateway/security/output_canary.py
 - [[._create_invisible_canary()]] - code - gateway/security/output_canary.py
 - [[._scan_for_canary()]] - code - gateway/security/output_canary.py
@@ -30,7 +30,7 @@ members: 57
 - [[.test_status_reporting()_1]] - code - gateway/tests/test_output_canary.py
 - [[.test_unicode_normalization_resistance()]] - code - gateway/tests/test_output_canary.py
 - [[.test_zero_width_character_detection()]] - code - gateway/tests/test_output_canary.py
-- [[Any_63]] - code - gateway/security/output_canary.py
+- [[Any_59]] - code - gateway/security/output_canary.py
 - [[CanaryConfig_1]] - code - gateway/security/output_canary.py
 - [[CanaryResult_2]] - code - gateway/security/output_canary.py
 - [[Check if response contains the session's canary (prompt leakage detected).]] - rationale - gateway/security/output_canary.py
@@ -74,10 +74,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 1]]
-- 1 edge to [[_COMMUNITY_Community 98]]
-- 1 edge to [[_COMMUNITY_Community 151]]
+- 8 edges to [[_COMMUNITY_Community 0]]
+- 6 edges to [[_COMMUNITY_Community 26]]
+- 3 edges to [[_COMMUNITY_Community 1]]
+- 1 edge to [[_COMMUNITY_Community 24]]
 - 1 edge to [[_COMMUNITY_Community 141]]
 
 ## Top bridge nodes

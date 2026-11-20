@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[.__getattr__()]] - `method` [EXTRACTED]
-- [[.__init__()_175]] - `method` [EXTRACTED]
+- [[.__init__()_172]] - `method` [EXTRACTED]
 - [[EdgeGuard]] - `uses` [INFERRED]
 - [[EdgeSettings]] - `uses` [INFERRED]
 - [[GatewayBackedProvider]] - `uses` [INFERRED]

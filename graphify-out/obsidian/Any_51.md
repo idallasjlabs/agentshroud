@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "gateway/security/killswitch_config.py"
 type: "code"
-community: "Community 121"
-location: "L439"
+community: "Community 9"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_121
+  - community/Community_9
 ---
 
 # Any
 
 ## Connections
-- [[.get_findings_summary()]] - `references` [EXTRACTED]
+- [[.to_dict()_9]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_121
+#graphify/code #graphify/EXTRACTED #community/Community_9

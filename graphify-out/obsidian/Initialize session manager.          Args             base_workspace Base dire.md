@@ -12,6 +12,6 @@ tags:
 # Initialize session manager.          Args:             base_workspace: Base dire
 
 ## Connections
-- [[.__init__()_130]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_128]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_60

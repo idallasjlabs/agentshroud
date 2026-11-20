@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "Community 8"
+community: "Community 104"
 location: "L815"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_8
+  - community/Community_104
 ---
 
 # TriageResult
@@ -22,4 +22,4 @@ tags:
 - [[triage_agent_full()]] - `references` [EXTRACTED]
 - [[triage_entry()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_8
+#graphify/code #graphify/EXTRACTED #community/Community_104

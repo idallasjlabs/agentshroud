@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "Community 121"
-location: "L219"
+community: "Community 312"
+location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_121
+  - community/Community_312
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_97]] - `calls` [EXTRACTED]
+- [[.__init__()_95]] - `calls` [EXTRACTED]
 - [[._analyze_file_content()]] - `references` [EXTRACTED]
 - [[._analyze_script_file()]] - `references` [EXTRACTED]
 - [[._quarantine_suspicious_files()]] - `calls` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[._scan_setup_py()]] - `references` [EXTRACTED]
 - [[.scan_git_repository()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_121
+#graphify/code #graphify/EXTRACTED #community/Community_312

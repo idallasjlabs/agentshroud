@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Community 52"
+community: "Community 22"
 location: "L45"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_52
+  - community/Community_22
 ---
 
 # PatternRule
 
 ## Connections
-- [[.__init__()_124]] - `references` [EXTRACTED]
+- [[.__init__()_122]] - `references` [EXTRACTED]
 - [[.test_custom_pattern()]] - `calls` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestDriftDetector]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[prompt_guard.py]] - `contains` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_52
+#graphify/code #graphify/INFERRED #community/Community_22

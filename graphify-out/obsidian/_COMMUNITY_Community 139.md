@@ -1,11 +1,11 @@
 ---
 type: community
-members: 54
+members: 52
 ---
 
 # Community 139
 
-**Members:** 54 nodes
+**Members:** 52 nodes
 
 ## Members
 - [[1. Summary line_6]] - document - reports/upgrade-2026-10-12.md
@@ -47,13 +47,11 @@ members: 54
 - [[Two-pass pip-audit (bump, re-audit, bump again)]] - rationale - reports/upgrade-2026-10-12.md
 - [[Unattended PR auto-merge gates]] - concept - prompts/sunday-upgrade.md
 - [[Upgrade report reportsupgrade-YYYY-MM-DD.md (8 sections, incremental writes)]] - document - prompts/sunday-upgrade.md
-- [[dockerversions.env version pins_1]] - code - prompts/sunday-upgrade.md
 - [[gatewayrequirements.txt]] - code - gateway/requirements.txt
 - [[python-jose removal (CVE-2024-3366333664)]] - rationale - gateway/requirements.txt
 - [[scriptscheck-soak-status.sh (SOAKED gate)]] - code - prompts/sunday-upgrade.md
 - [[scriptssunday-rollback.sh  rollback.sh]] - code - prompts/sunday-upgrade.md
 - [[scriptssunday-upgrade-apply.sh (deterministic gates)]] - code - prompts/sunday-upgrade.md
-- [[scriptsupdate-conduit-push.sh (Conduit plugin conduit_push)]] - code - prompts/sunday-upgrade.md
 - [[sunday-rollback.sh]] - code - scripts/sunday-rollback.sh
 - [[sunday-rollback.sh script]] - code - scripts/sunday-rollback.sh
 - [[sunday-upgrade-approve.sh]] - code - scripts/sunday-upgrade-approve.sh
@@ -71,19 +69,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 118]]
-- 4 edges to [[_COMMUNITY_Community 48]]
-- 2 edges to [[_COMMUNITY_Community 1924]]
+- 8 edges to [[_COMMUNITY_Community 118]]
 - 2 edges to [[_COMMUNITY_Community 227]]
 - 2 edges to [[_COMMUNITY_Community 126]]
 - 1 edge to [[_COMMUNITY_Community 420]]
 - 1 edge to [[_COMMUNITY_Community 849]]
 - 1 edge to [[_COMMUNITY_Community 1196]]
 - 1 edge to [[_COMMUNITY_Community 1265]]
+- 1 edge to [[_COMMUNITY_Community 104]]
 
 ## Top bridge nodes
-- [[sunday-upgrade]] - degree 17, connects to 4 communities
+- [[sunday-upgrade]] - degree 17, connects to 3 communities
 - [[upgrade-2026-10-18]] - degree 12, connects to 3 communities
 - [[Base docker-compose stack]] - degree 7, connects to 2 communities
 - [[INCIDENT_2026-10-16_conduit-outage]] - degree 5, connects to 2 communities
-- [[dockerversions.env version pins_1]] - degree 4, connects to 2 communities
+- [[upgrade-2026-10-12]] - degree 11, connects to 1 community

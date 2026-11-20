@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_59]] - `calls` [EXTRACTED]
-- [[.__init__()_87]] - `references` [EXTRACTED]
+- [[.__init__()_58]] - `calls` [EXTRACTED]
+- [[.__init__()_85]] - `references` [EXTRACTED]
 - [[.dns_filter()]] - `calls` [EXTRACTED]
 - [[.test_dns_filter_config()]] - `calls` [EXTRACTED]
 - [[.test_dns_filter_default_enforce()]] - `calls` [EXTRACTED]
@@ -46,7 +46,7 @@ tags:
 - [[TestNormalDNSResolution]] - `uses` [INFERRED]
 - [[TestPIIDetection_1]] - `uses` [INFERRED]
 - [[TestPromptGuard]] - `uses` [INFERRED]
-- [[TestRateLimiting_1]] - `uses` [INFERRED]
+- [[TestRateLimiting]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestSecurityConfigDefaults]] - `uses` [INFERRED]
 - [[TestSupplyChain_1]] - `uses` [INFERRED]

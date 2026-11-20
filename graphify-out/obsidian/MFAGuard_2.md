@@ -12,7 +12,7 @@ tags:
 # MFAGuard
 
 ## Connections
-- [[.__init__()_113]] - `method` [EXTRACTED]
+- [[.__init__()_111]] - `method` [EXTRACTED]
 - [[._decode_secret()]] - `method` [EXTRACTED]
 - [[._prune_used()]] - `method` [EXTRACTED]
 - [[._totp_for_counter()]] - `method` [EXTRACTED]

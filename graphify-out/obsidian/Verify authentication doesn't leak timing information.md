@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "rationale"
-community: "Community 92"
+community: "Community 707"
 location: "L278"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_92
+  - community/Community_707
 ---
 
 # Verify authentication doesn't leak timing information
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_timing_attack_resistance()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_92
+#graphify/rationale #graphify/EXTRACTED #community/Community_707

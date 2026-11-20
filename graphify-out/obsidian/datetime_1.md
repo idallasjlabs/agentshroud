@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/facades.py"
 type: "code"
-community: "Community 32"
+community: "Community 80"
 location: "L81"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Community_80
 ---
 
 # datetime
@@ -16,4 +16,4 @@ tags:
 - [[EnvelopeSigner_1]] - `uses` [INFERRED]
 - [[facades.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_32
+#graphify/code #graphify/EXTRACTED #community/Community_80

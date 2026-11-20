@@ -2,7 +2,7 @@
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
 community: "Community 363"
-location: "L778"
+location: "L777"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -16,7 +16,7 @@ tags:
 - [[.test_critical_on_critical_findings()]] - `calls` [EXTRACTED]
 - [[.test_not_run_when_no_report()_1]] - `calls` [EXTRACTED]
 - [[.test_warning_on_failures()]] - `calls` [EXTRACTED]
-- [[Any_68]] - `references` [EXTRACTED]
+- [[Any_64]] - `references` [EXTRACTED]
 - [[Return latest OpenSCAP compliance summary from saved reports.]] - `rationale_for` [EXTRACTED]
 - [[_load_latest_json()]] - `calls` [EXTRACTED]
 - [[aggregate_results()]] - `calls` [EXTRACTED]

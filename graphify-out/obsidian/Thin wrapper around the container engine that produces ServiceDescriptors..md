@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "rationale"
-community: "Community 20"
+community: "Community 890"
 location: "L216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_20
+  - community/Community_890
 ---
 
 # Thin wrapper around the container engine that produces ServiceDescriptors.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ServiceManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_20
+#graphify/rationale #graphify/EXTRACTED #community/Community_890

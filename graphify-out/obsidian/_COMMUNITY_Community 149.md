@@ -1,11 +1,11 @@
 ---
 type: community
-members: 44
+members: 42
 ---
 
 # Community 149
 
-**Members:** 44 nodes
+**Members:** 42 nodes
 
 ## Members
 - [[.__init__()]] - code - .agents/skills/browser/scripts/browse.py
@@ -20,7 +20,6 @@ members: 44
 - [[._validate_url()]] - code - .agents/skills/browser/scripts/browse.py
 - [[.click()]] - code - .agents/skills/browser/scripts/browse.py
 - [[.close()]] - code - .agents/skills/browser/scripts/browse.py
-- [[.detect_captcha()]] - code - .agents/skills/browser/scripts/browse.py
 - [[.extract()]] - code - .agents/skills/browser/scripts/browse.py
 - [[.fill_field()]] - code - .agents/skills/browser/scripts/browse.py
 - [[.get_audit_log()]] - code - .agents/skills/browser/scripts/browse.py
@@ -31,7 +30,6 @@ members: 44
 - [[Classify action risk level          Security Determines if approval is needed]] - rationale - .agents/skills/browser/scripts/browse.py
 - [[Clean up browser resources]] - rationale - .agents/skills/browser/scripts/browse.py
 - [[Click an element          Security Risk classification for destructive actions]] - rationale - .agents/skills/browser/scripts/browse.py
-- [[Detect if CAPTCHA is present on page]] - rationale - .agents/skills/browser/scripts/browse.py
 - [[Extract data from page          Security No credential extraction allowed]] - rationale - .agents/skills/browser/scripts/browse.py
 - [[Fill a single form field          Security Risk classification, approval for se]] - rationale - .agents/skills/browser/scripts/browse.py
 - [[Initialize browser with security settings]] - rationale - .agents/skills/browser/scripts/browse.py
@@ -62,7 +60,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_Community 68]]
-- 2 edges to [[_COMMUNITY_Community 8]]
+- 2 edges to [[_COMMUNITY_Community 6]]
 - 1 edge to [[_COMMUNITY_Community 2048]]
 
 ## Top bridge nodes

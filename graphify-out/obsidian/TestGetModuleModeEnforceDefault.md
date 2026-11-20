@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "Community 72"
+community: "Community 26"
 location: "L98"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_72
+  - community/Community_26
 ---
 
 # TestGetModuleModeEnforceDefault
@@ -36,4 +36,4 @@ tags:
 - [[Verify get_module_mode returns enforce when no override is set.]] - `rationale_for` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_72
+#graphify/code #graphify/INFERRED #community/Community_26

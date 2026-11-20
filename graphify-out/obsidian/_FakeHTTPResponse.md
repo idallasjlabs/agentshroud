@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.__enter__()_1]] - `method` [EXTRACTED]
 - [[.__exit__()_1]] - `method` [EXTRACTED]
-- [[.__init__()_158]] - `method` [EXTRACTED]
+- [[.__init__()_155]] - `method` [EXTRACTED]
 - [[.read()]] - `method` [EXTRACTED]
 - [[Context-manager stand-in for the object urlopen() yields.]] - `rationale_for` [EXTRACTED]
 - [[SCLClient]] - `uses` [INFERRED]

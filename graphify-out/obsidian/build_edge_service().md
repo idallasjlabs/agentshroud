@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/service.py"
 type: "code"
-community: "Community 32"
+community: "Community 80"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Community_80
 ---
 
 # build_edge_service()
@@ -41,4 +41,4 @@ tags:
 - [[store_canaries()]] - `calls` [EXTRACTED]
 - [[verify_shipped_descriptors()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_32
+#graphify/code #graphify/EXTRACTED #community/Community_80

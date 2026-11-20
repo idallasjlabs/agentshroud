@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "code"
-community: "Community 48"
+community: "Community 118"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_48
+  - community/Community_118
 ---
 
 # discover_upstream_versions.py
@@ -34,4 +34,4 @@ tags:
 - [[upgrade-2026-09-20-dev]] - `references` [EXTRACTED]
 - [[upgrade-2026-09-27-20260927-0800]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_48
+#graphify/code #graphify/EXTRACTED #community/Community_118

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "rationale"
-community: "Community 120"
+community: "Community 103"
 location: "L190"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_120
+  - community/Community_103
 ---
 
 # Check an outbound HTTP request before it's sent.          This is the pre-flight
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_120
+#graphify/rationale #graphify/EXTRACTED #community/Community_103

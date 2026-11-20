@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_json_without_content_type_is_still_filtered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Missing content-type must not bypass outbound JSON leak filtering.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_initialization_default()]] - code - gateway/tests/test_outbound_filter.py
+- [[Test filter initializes with default configuration.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 845]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 626]]
+- 1 edge to [[_COMMUNITY_Community 98]]
 
 ## Top bridge nodes
-- [[.test_json_without_content_type_is_still_filtered()]] - degree 4, connects to 3 communities
+- [[.test_initialization_default()]] - degree 2, connects to 1 community

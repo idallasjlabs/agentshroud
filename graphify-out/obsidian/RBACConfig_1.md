@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Community 194"
+community: "Community 6"
 location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_194
+  - community/Community_6
 ---
 
 # RBACConfig
@@ -15,8 +15,8 @@ tags:
 - [[.__init__()_29]] - `calls` [EXTRACTED]
 - [[.__init__()_42]] - `calls` [EXTRACTED]
 - [[.__init__()_48]] - `calls` [EXTRACTED]
-- [[.__init__()_54]] - `calls` [EXTRACTED]
-- [[.__init__()_60]] - `calls` [EXTRACTED]
+- [[.__init__()_53]] - `calls` [EXTRACTED]
+- [[.__init__()_59]] - `calls` [EXTRACTED]
 - [[.__post_init__()_5]] - `calls` [EXTRACTED]
 - [[.__post_init__()_8]] - `method` [EXTRACTED]
 - [[._ensure_rbac()]] - `calls` [EXTRACTED]
@@ -27,7 +27,6 @@ tags:
 - [[.get_users_by_role()]] - `method` [EXTRACTED]
 - [[.is_admin_or_higher()]] - `method` [EXTRACTED]
 - [[.is_collaborator_or_higher()]] - `method` [EXTRACTED]
-- [[.is_operator_or_higher()]] - `method` [EXTRACTED]
 - [[.is_owner()_1]] - `method` [EXTRACTED]
 - [[.process_request()]] - `calls` [EXTRACTED]
 - [[.set_user_role()_1]] - `method` [EXTRACTED]
@@ -40,9 +39,9 @@ tags:
 - [[Any_29]] - `uses` [INFERRED]
 - [[Any_31]] - `uses` [INFERRED]
 - [[Any_34]] - `uses` [INFERRED]
-- [[Any_57]] - `uses` [INFERRED]
-- [[Any_65]] - `uses` [INFERRED]
-- [[Any_83]] - `uses` [INFERRED]
+- [[Any_53]] - `uses` [INFERRED]
+- [[Any_61]] - `uses` [INFERRED]
+- [[Any_79]] - `uses` [INFERRED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[AuditChainEntry]] - `uses` [INFERRED]
 - [[AuthRequired_3]] - `uses` [INFERRED]
@@ -216,7 +215,7 @@ tags:
 - [[rbac.py]] - `imports` [EXTRACTED]
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 - [[router.py_1]] - `imports` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[run()_2]] - `calls` [EXTRACTED]
 - [[set_user_role()_1]] - `calls` [EXTRACTED]
 - [[shared_memory.py]] - `imports` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
@@ -237,4 +236,4 @@ tags:
 - [[websocket.py]] - `imports` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_194
+#graphify/code #graphify/INFERRED #community/Community_6

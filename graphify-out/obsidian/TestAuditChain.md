@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "Community 1566"
+community: "Community 24"
 location: "L18"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1566
+  - community/Community_24
 ---
 
 # TestAuditChain
@@ -42,4 +42,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1566
+#graphify/code #graphify/INFERRED #community/Community_24

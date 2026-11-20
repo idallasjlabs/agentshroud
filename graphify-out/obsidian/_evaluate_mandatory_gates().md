@@ -2,7 +2,7 @@
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
 community: "Community 29"
-location: "L2080"
+location: "L2079"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # _evaluate_mandatory_gates()
 
 ## Connections
-- [[Any_68]] - `references` [EXTRACTED]
+- [[Any_64]] - `references` [EXTRACTED]
 - [[Apply mandatory gate overrides to domain scores.      Returns updated scores dic]] - `rationale_for` [EXTRACTED]
 - [[Path_19]] - `calls` [EXTRACTED]
 - [[_app_state_has()]] - `calls` [EXTRACTED]

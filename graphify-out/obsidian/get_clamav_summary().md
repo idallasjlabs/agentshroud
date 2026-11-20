@@ -15,7 +15,7 @@ tags:
 - [[.test_clean_when_installed_but_no_report()_1]] - `calls` [EXTRACTED]
 - [[.test_infected_report()]] - `calls` [EXTRACTED]
 - [[.test_not_run_when_no_report()]] - `calls` [EXTRACTED]
-- [[Any_68]] - `references` [EXTRACTED]
+- [[Any_64]] - `references` [EXTRACTED]
 - [[Path_19]] - `calls` [EXTRACTED]
 - [[Return latest ClamAV scan summary from saved reports.      When ClamAV is instal]] - `rationale_for` [EXTRACTED]
 - [[_is_clamd_running()]] - `calls` [EXTRACTED]

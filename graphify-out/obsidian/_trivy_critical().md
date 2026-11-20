@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.test_initial_when_has_criticals()]] - `calls` [EXTRACTED]
 - [[.test_overall_critical_when_any_critical()]] - `calls` [EXTRACTED]
-- [[Any_81]] - `references` [EXTRACTED]
+- [[Any_77]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_67

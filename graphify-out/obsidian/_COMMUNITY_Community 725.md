@@ -31,11 +31,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 739]]
+- 2 edges to [[_COMMUNITY_Community 739]]
 - 1 edge to [[_COMMUNITY_Community 559]]
-- 1 edge to [[_COMMUNITY_Community 944]]
 - 1 edge to [[_COMMUNITY_Community 766]]
 
 ## Top bridge nodes
-- [[Environment Variables]] - degree 4, connects to 3 communities
+- [[Environment Variables]] - degree 4, connects to 2 communities
 - [[Deployment Runbook — AgentShroud]] - degree 7, connects to 1 community

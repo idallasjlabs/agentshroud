@@ -2,7 +2,7 @@
 source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "rationale"
 community: "Community 156"
-location: "L432"
+location: "L410"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

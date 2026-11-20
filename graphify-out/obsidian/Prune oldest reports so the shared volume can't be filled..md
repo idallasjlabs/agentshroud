@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/report_store.py"
 type: "rationale"
-community: "Community 110"
+community: "Community 943"
 location: "L164"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_110
+  - community/Community_943
 ---
 
 # Prune oldest reports so the shared volume can't be filled.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._enforce_count_cap()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_110
+#graphify/rationale #graphify/EXTRACTED #community/Community_943

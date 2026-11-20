@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "Community 477"
+community: "Community 16"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_477
+  - community/Community_16
 ---
 
 # MemoryIntegrityMonitor
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_110]] - `method` [EXTRACTED]
+- [[.__init__()_108]] - `method` [EXTRACTED]
 - [[._compute_file_hash()]] - `method` [EXTRACTED]
 - [[._detect_modification_source()]] - `method` [EXTRACTED]
 - [[._is_in_write_window()]] - `method` [EXTRACTED]
@@ -21,7 +21,6 @@ tags:
 - [[._load_write_windows()]] - `method` [EXTRACTED]
 - [[._save_integrity_database()]] - `method` [EXTRACTED]
 - [[._save_write_windows()]] - `method` [EXTRACTED]
-- [[.clear_old_alerts()]] - `method` [EXTRACTED]
 - [[.get_integrity_status()]] - `method` [EXTRACTED]
 - [[.get_recent_alerts()]] - `method` [EXTRACTED]
 - [[.register_expected_write()]] - `method` [EXTRACTED]
@@ -54,4 +53,4 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_477
+#graphify/code #graphify/EXTRACTED #community/Community_16

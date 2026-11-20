@@ -19,6 +19,5 @@ tags:
 - [[TrustLevel]] - `contains` [EXTRACTED]
 - [[ViolationType]] - `contains` [EXTRACTED]
 - [[resolve_enforcement_mode()]] - `contains` [EXTRACTED]
-- [[subagent_governance.py]] - `semantically_similar_to` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_11

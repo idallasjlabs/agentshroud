@@ -12,6 +12,6 @@ tags:
 # Initialize the tool chain analyzer.          Args:             config: Configura
 
 ## Connections
-- [[.__init__()_137]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_134]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_8

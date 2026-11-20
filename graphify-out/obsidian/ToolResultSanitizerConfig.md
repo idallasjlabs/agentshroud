@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "Community 647"
+community: "Community 455"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_647
+  - community/Community_455
 ---
 
 # ToolResultSanitizerConfig
 
 ## Connections
-- [[.__init__()_141]] - `references` [EXTRACTED]
+- [[.__init__()_138]] - `references` [EXTRACTED]
 - [[.setup_method()_37]] - `calls` [EXTRACTED]
 - [[.test_convenience_function()]] - `calls` [EXTRACTED]
 - [[.test_custom_config()_3]] - `calls` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[test_tool_result_sanitizer_enhanced.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer_enhanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_647
+#graphify/code #graphify/EXTRACTED #community/Community_455

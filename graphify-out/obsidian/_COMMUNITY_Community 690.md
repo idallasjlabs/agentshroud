@@ -1,18 +1,13 @@
 ---
 type: community
-members: 16
+members: 11
 ---
 
 # Community 690
 
-**Members:** 16 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[2. Architecture Overview]] - document - docs/papers/agentshroud-whitepaper.md
-- [[2.1 Design Principle Transparent Proxy]] - document - docs/papers/agentshroud-whitepaper.md
-- [[2.2 Why Transparent Proxy]] - document - docs/papers/agentshroud-whitepaper.md
-- [[2.3 Data Flow]] - document - docs/papers/agentshroud-whitepaper.md
-- [[Architecture Overview]] - document - docs/api/integration-guide.md
 - [[Configuration_8]] - document - docs/api/integration-guide.md
 - [[Installation in Gateway]] - document - docs/vault/05 - Dependencies/openscap.md
 - [[Integration Point]] - document - docs/vault/05 - Dependencies/openscap.md
@@ -33,15 +28,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 429]]
 - 1 edge to [[_COMMUNITY_Community 546]]
-- 1 edge to [[_COMMUNITY_Community 798]]
+- 1 edge to [[_COMMUNITY_Community 429]]
 - 1 edge to [[_COMMUNITY_Community 674]]
 - 1 edge to [[_COMMUNITY_Community 253]]
 
 ## Top bridge nodes
-- [[Architecture Overview]] - degree 6, connects to 2 communities
+- [[OpenClaw Integration (Primary Target)]] - degree 4, connects to 2 communities
 - [[OpenSCAP]] - degree 9, connects to 1 community
-- [[OpenClaw Integration (Primary Target)]] - degree 4, connects to 1 community
-- [[2. Architecture Overview]] - degree 4, connects to 1 community
 - [[Integration Testing]] - degree 3, connects to 1 community

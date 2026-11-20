@@ -1,11 +1,11 @@
 ---
 type: community
-members: 39
+members: 37
 ---
 
 # Community 105
 
-**Members:** 39 nodes
+**Members:** 37 nodes
 
 ## Members
 - [[._allowed_networks()]] - code - gateway/tests/test_telegram_proxy_multibot.py
@@ -31,7 +31,6 @@ members: 39
 - [[A request bearing the OpenClaw token resolves to 'openclaw' bot_id.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
 - [[A token missing from a stale cached registry is picked up on retry         once]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
 - [[An unregistered token must not be matched — fail-closed.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[Build the Telegram bot-token → bot_id registry from configured secrets.]] - rationale - gateway/ingest_api/main.py
 - [[If no tokens are registered, any token must be rejected.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
 - [[Integration tests for the telegram-api{path} route with multi-bot registry.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
 - [[Proxy Telegram Bot API calls through security pipeline.]] - rationale - gateway/ingest_api/main.py
@@ -44,7 +43,6 @@ members: 39
 - [[Token matching must be exact — case-sensitive.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
 - [[Tokens are the registry keys — no two bots share a token.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
 - [[Validate the token → bot_id registry logic extracted from the route handler.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[_build_telegram_token_registry()]] - code - gateway/ingest_api/main.py
 - [[telegram_api_proxy()]] - code - gateway/ingest_api/main.py
 - [[test_telegram_proxy_multibot.py]] - code - gateway/tests/test_telegram_proxy_multibot.py
 
@@ -56,16 +54,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 7]]
+- 5 edges to [[_COMMUNITY_Community 181]]
 - 4 edges to [[_COMMUNITY_Community 14]]
-- 3 edges to [[_COMMUNITY_Community 978]]
+- 2 edges to [[_COMMUNITY_Community 978]]
 - 2 edges to [[_COMMUNITY_Community 10]]
 - 2 edges to [[_COMMUNITY_Community 37]]
+- 1 edge to [[_COMMUNITY_Community 254]]
+- 1 edge to [[_COMMUNITY_Community 79]]
 - 1 edge to [[_COMMUNITY_Community 18]]
 - 1 edge to [[_COMMUNITY_Community 474]]
 
 ## Top bridge nodes
-- [[telegram_api_proxy()]] - degree 12, connects to 4 communities
+- [[telegram_api_proxy()]] - degree 12, connects to 5 communities
 - [[test_telegram_proxy_multibot.py]] - degree 9, connects to 4 communities
 - [[TestTelegramTokenRegistry]] - degree 12, connects to 2 communities
 - [[TestTelegramProxyRouteMultiBot]] - degree 9, connects to 2 communities

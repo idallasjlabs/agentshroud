@@ -12,7 +12,7 @@ tags:
 # MCPPolicyEngine
 
 ## Connections
-- [[.__init__()_109]] - `method` [EXTRACTED]
+- [[.__init__()_107]] - `method` [EXTRACTED]
 - [[._decide()_1]] - `method` [EXTRACTED]
 - [[._tier_for()_1]] - `method` [EXTRACTED]
 - [[.enforce()_1]] - `method` [EXTRACTED]

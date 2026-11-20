@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Community 53"
+community: "Community 1658"
 location: "L4924"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_53
+  - community/Community_1658
 ---
 
 # Relay the Hermes dashboard's WebSocket channels (/api/ws, /api/pub)     through
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[hermes_dashboard_ws_proxy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_53
+#graphify/rationale #graphify/EXTRACTED #community/Community_1658

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/TAILSCALE_COMMANDS.md"
 type: "document"
-community: "Community 816"
+community: "Community 764"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_816
+  - community/Community_764
 ---
 
 # Tailscale Remote Access Setup
@@ -20,4 +20,4 @@ tags:
 - [[TAILSCALE_COMMANDS]] - `contains` [EXTRACTED]
 - [[Verify Tailscale Serve Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_816
+#graphify/document #graphify/EXTRACTED #community/Community_764

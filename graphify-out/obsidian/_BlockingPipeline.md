@@ -12,7 +12,7 @@ tags:
 # _BlockingPipeline
 
 ## Connections
-- [[.process_outbound()_7]] - `method` [EXTRACTED]
+- [[.process_outbound()_6]] - `method` [EXTRACTED]
 - [[AgentTarget]] - `uses` [INFERRED]
 - [[ForwardError]] - `uses` [INFERRED]
 - [[ForwardRequest]] - `uses` [INFERRED]

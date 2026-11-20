@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/security/killswitch_config.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "Community 9"
-location: "L100"
+community: "Community 16"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_9
+  - community/Community_16
 ---
 
 # Any
 
 ## Connections
+- [[.from_dict()_8]] - `references` [EXTRACTED]
+- [[.get_integrity_status()]] - `references` [EXTRACTED]
+- [[.get_recent_alerts()]] - `references` [EXTRACTED]
 - [[.to_dict()_10]] - `references` [EXTRACTED]
+- [[MemoryIntegrityConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_9
+#graphify/code #graphify/EXTRACTED #community/Community_16

@@ -99,7 +99,7 @@ tags:
 - [[make_proxy()_1]] - `calls` [EXTRACTED]
 - [[mcp_audit.py]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports` [EXTRACTED]
-- [[proxy()_2]] - `calls` [EXTRACTED]
+- [[proxy()_1]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 

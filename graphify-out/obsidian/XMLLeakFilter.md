@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_143]] - `method` [EXTRACTED]
+- [[.__init__()_140]] - `method` [EXTRACTED]
 - [[.filter_function_calls_only()]] - `method` [EXTRACTED]
 - [[.filter_response()_2]] - `method` [EXTRACTED]
 - [[.scan_command_injection()]] - `method` [EXTRACTED]
@@ -36,7 +36,7 @@ tags:
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[run()_2]] - `calls` [EXTRACTED]
 - [[test_xml_leak_filter.py]] - `imports` [EXTRACTED]
 - [[xml_leak_filter.py]] - `contains` [EXTRACTED]
 

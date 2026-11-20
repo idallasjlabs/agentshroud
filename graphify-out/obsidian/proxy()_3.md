@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_ssh_proxy.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Community 7"
-location: "L47"
+community: "Community 120"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/Community_120
 ---
 
 # proxy()
 
 ## Connections
-- [[SSHConfig_2]] - `references` [EXTRACTED]
-- [[SSHProxy_1]] - `references` [EXTRACTED]
-- [[test_ssh_proxy.py]] - `contains` [EXTRACTED]
+- [[WebProxy_1]] - `calls` [EXTRACTED]
+- [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/Community_120

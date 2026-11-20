@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_jwt.py"
 type: "code"
-community: "Community 50"
+community: "Community 135"
 location: "L198"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_50
+  - community/Community_135
 ---
 
 # TestRevocationAndKill
@@ -22,4 +22,4 @@ tags:
 - [[TokenService]] - `uses` [INFERRED]
 - [[test_edge_jwt.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_50
+#graphify/code #graphify/EXTRACTED #community/Community_135

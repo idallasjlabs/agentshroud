@@ -1,12 +1,12 @@
 ---
 source_file: "prompts/sunday-upgrade.md"
 type: "code"
-community: "Community 139"
+community: "Community 118"
 location: "L40-L42"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_139
+  - community/Community_118
 ---
 
 # docker/versions.env version pins
@@ -17,4 +17,4 @@ tags:
 - [[scriptsupdate-conduit-push.sh (Conduit plugin conduit_push)]] - `shares_data_with` [EXTRACTED]
 - [[sunday-upgrade]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_139
+#graphify/code #graphify/INFERRED #community/Community_118

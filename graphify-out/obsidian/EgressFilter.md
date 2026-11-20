@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "Community 27"
+community: "Community 120"
 location: "L111"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_27
+  - community/Community_120
 ---
 
 # EgressFilter
@@ -16,4 +16,4 @@ tags:
 - [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_27
+#graphify/code #graphify/INFERRED #community/Community_120

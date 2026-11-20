@@ -1,63 +1,66 @@
 ---
 type: community
-members: 50
+members: 53
 ---
 
 # Community 103
 
-**Members:** 50 nodes
+**Members:** 53 nodes
 
 ## Members
-- [[.config()]] - code - gateway/tests/test_approval_hardening.py
-- [[.hardening()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_cleanup_old_denied_requests()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_cooldown_period_enforcement()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_deception_detection_authority_claims()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_deception_detection_benign_request()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_deception_detection_destructive_command_not_indicated()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_deception_detection_downplaying_language()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_deception_detection_misleading_description()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_different_requests_not_in_cooldown()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_format_hardened_message_basic()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_format_hardened_message_with_normalization()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_format_hardened_message_with_security_concerns()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_format_parameters_with_highlighting()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_get_stats()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_initialization()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_normalize_description_handles_empty()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_normalize_description_removes_misleading_phrases()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_parameter_fingerprinting_consistency()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_parameter_fingerprinting_different_params()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_parameter_obfuscation_detection_base64()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_parameter_obfuscation_detection_hex()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_parameter_obfuscation_detection_url()]] - code - gateway/tests/test_approval_hardening.py
-- [[.test_repeat_request_pattern_detection()]] - code - gateway/tests/test_approval_hardening.py
-- [[Create approval hardening instance for testing.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Create test configuration.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test approval hardening functionality.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test basic hardened message formatting.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test cleanup of old denied requests.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test cooldown period enforcement for denied requests.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test deception detection with legitimate request.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test description normalization removes misleading language.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test detection of URL-encoded parameters.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test detection of authoritylegitimacy claims.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test detection of base64-encoded parameters.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test detection of destructive commands not indicated in description.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test detection of downplaying language.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test detection of hex-encoded parameters.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test detection of misleading descriptions.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test detection of repeat request patterns.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test getting hardening statistics.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test hardened message formatting when description is normalized.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test hardened message formatting with security concerns.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test hardening initialization.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test normalization handles empty descriptions.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test parameter formatting with risk highlighting.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test that different parameters create different fingerprints.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test that different requests are not affected by cooldown.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test that parameter fingerprinting is consistent.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[TestApprovalHardening]] - code - gateway/tests/test_approval_hardening.py
+- [[.__init__()_219]] - code - gateway/tests/test_web_proxy_security.py
+- [[.__init__()_220]] - code - gateway/tests/test_web_proxy_security.py
+- [[.__init__()_221]] - code - gateway/tests/test_web_proxy_security.py
+- [[._audit()_1]] - code - gateway/proxy/web_proxy.py
+- [[.check()_1]] - code - gateway/proxy/web_proxy.py
+- [[.check_request()]] - code - gateway/proxy/web_proxy.py
+- [[.flagged()_2]] - code - gateway/proxy/web_proxy.py
+- [[.get_stats()_10]] - code - gateway/proxy/web_proxy.py
+- [[.scan_response()]] - code - gateway/proxy/web_proxy.py
+- [[.setUp()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_browser_security_blocks_high_risk_urls()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_browser_security_flags_medium_risk_urls()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_browser_security_skips_non_browser_user_agents()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_dns_filter_blocks_suspicious_domains()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_dns_filter_flags_but_allows_questionable_domains()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_egress_monitor_logs_responses()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_graceful_degradation_browser_security_error()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_graceful_degradation_dns_error()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_graceful_degradation_egress_error()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_multiple_security_modules_integration()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_oauth_security_error_handling()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_oauth_security_flags_auth_headers()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.to_dict()_2]] - code - gateway/proxy/web_proxy.py
+- [[Any_33]] - code - gateway/proxy/web_proxy.py
+- [[Check an outbound HTTP request before it's sent.          This is the pre-flight]] - rationale - gateway/proxy/web_proxy.py
+- [[Check if request is within rate limit. Returns True if allowed.]] - rationale - gateway/proxy/web_proxy.py
+- [[Get proxy statistics._1]] - rationale - gateway/proxy/web_proxy.py
+- [[MockDNSVerdict]] - code - gateway/tests/test_web_proxy_security.py
+- [[MockEgressChannel]] - code - gateway/tests/test_web_proxy_security.py
+- [[MockEgressEvent]] - code - gateway/tests/test_web_proxy_security.py
+- [[MockThreatLevel]] - code - gateway/tests/test_web_proxy_security.py
+- [[MockURLResult]] - code - gateway/tests/test_web_proxy_security.py
+- [[ProxyAction]] - code - gateway/proxy/web_proxy.py
+- [[Record an audit entry in the hash chain.]] - rationale - gateway/proxy/web_proxy.py
+- [[Result of proxying a web request.]] - rationale - gateway/proxy/web_proxy.py
+- [[Scan a response body for prompt injection, PII, and hidden content.          Thi]] - rationale - gateway/proxy/web_proxy.py
+- [[Set up test fixtures._4]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that DNS filter blocks suspicious domains.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that DNS filter errors cause fail-closed behavior.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that DNS filter flags questionable domains but allows them through.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that OAuth security errors don't block requests.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that OAuth security flags requests with authorization headers.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that browser security blocks high-risk URLs for browser user agents.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that browser security checks are skipped for non-browser user agents.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that browser security errors cause fail-closed behavior.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that browser security flags medium-risk URLs.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that egress monitor logs all outbound connections.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that egress monitoring errors don't break response processing.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that multiple security modules work together correctly.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that security modules are properly integrated into web proxy.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[TestWebProxySecurityIntegration]] - code - gateway/tests/test_web_proxy_security.py
+- [[WebProxyResult]] - code - gateway/proxy/web_proxy.py
+- [[test_web_proxy_security.py]] - code - gateway/tests/test_web_proxy_security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -67,11 +70,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_Community 3]]
+- 32 edges to [[_COMMUNITY_Community 120]]
+- 5 edges to [[_COMMUNITY_Community 140]]
+- 4 edges to [[_COMMUNITY_Community 6]]
+- 3 edges to [[_COMMUNITY_Community 1000]]
+- 3 edges to [[_COMMUNITY_Community 93]]
+- 1 edge to [[_COMMUNITY_Community 38]]
+- 1 edge to [[_COMMUNITY_Community 27]]
+- 1 edge to [[_COMMUNITY_Community 1427]]
+- 1 edge to [[_COMMUNITY_Community 196]]
+- 1 edge to [[_COMMUNITY_Community 72]]
 
 ## Top bridge nodes
-- [[TestApprovalHardening]] - degree 32, connects to 1 community
-- [[.config()]] - degree 3, connects to 1 community
-- [[.hardening()]] - degree 3, connects to 1 community
-- [[.test_format_hardened_message_basic()]] - degree 3, connects to 1 community
-- [[.test_format_hardened_message_with_normalization()]] - degree 3, connects to 1 community
+- [[ProxyAction]] - degree 31, connects to 8 communities
+- [[WebProxyResult]] - degree 16, connects to 4 communities
+- [[Any_33]] - degree 6, connects to 3 communities
+- [[MockThreatLevel]] - degree 6, connects to 3 communities
+- [[MockEgressChannel]] - degree 6, connects to 3 communities

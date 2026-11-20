@@ -2,7 +2,7 @@
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
 community: "Community 842"
-location: "L1001"
+location: "L1000"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

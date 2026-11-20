@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Community 52"
+community: "Community 0"
 location: "L193"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_52
+  - community/Community_0
 ---
 
 # Concurrent baseline updates — SQLite is single-threaded by default.         This
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_drift_detector_concurrent_writes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_52
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

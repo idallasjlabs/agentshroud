@@ -29,12 +29,13 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_Community 197]]
-- 2 edges to [[_COMMUNITY_Community 7]]
 - 1 edge to [[_COMMUNITY_Community 62]]
 - 1 edge to [[_COMMUNITY_Community 801]]
 - 1 edge to [[_COMMUNITY_Community 309]]
 - 1 edge to [[_COMMUNITY_Community 54]]
-- 1 edge to [[_COMMUNITY_Community 75]]
+- 1 edge to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 79]]
+- 1 edge to [[_COMMUNITY_Community 80]]
 - 1 edge to [[_COMMUNITY_Community 85]]
 - 1 edge to [[_COMMUNITY_Community 19]]
 

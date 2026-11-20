@@ -23,7 +23,7 @@ tags:
 - [[.test_default_config_has_common_policies()]] - `calls` [EXTRACTED]
 - [[.test_get_op_reference_builds_correctly()]] - `calls` [EXTRACTED]
 - [[.test_get_policy_returns_default_for_unknown_type()]] - `calls` [EXTRACTED]
-- [[Any_53]] - `uses` [INFERRED]
+- [[Any_50]] - `uses` [INFERRED]
 - [[Configuration for key rotation policies and schedules.]] - `rationale_for` [EXTRACTED]
 - [[CredentialInfo]] - `uses` [INFERRED]
 - [[CredentialRotationPolicy]] - `uses` [INFERRED]

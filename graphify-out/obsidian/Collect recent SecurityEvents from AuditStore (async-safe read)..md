@@ -2,7 +2,7 @@
 source_file: "gateway/soc/event_adapter.py"
 type: "rationale"
 community: "Community 614"
-location: "L209"
+location: "L208"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

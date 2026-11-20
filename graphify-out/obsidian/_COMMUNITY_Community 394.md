@@ -1,48 +1,35 @@
 ---
 type: community
-members: 35
+members: 22
 ---
 
 # Community 394
 
-**Members:** 35 nodes
+**Members:** 22 nodes
 
 ## Members
-- [[.monitor_sandbox()]] - code - gateway/tests/test_security_audit.py
-- [[.sandbox()]] - code - gateway/tests/test_security_audit.py
-- [[.test_absolute_path_to_sensitive_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_app_read_allowed()]] - code - gateway/tests/test_security_audit.py
-- [[.test_basic_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_double_encoded_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_enforce_vs_monitor_contrast()]] - code - gateway/tests/test_security_audit.py
-- [[.test_monitor_mode_allows_everything()_1]] - code - gateway/tests/test_security_audit.py
-- [[.test_null_byte_injection_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_proc_meminfo_allowed()]] - code - gateway/tests/test_security_audit.py
-- [[.test_proc_self_environ_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_staging_detection()]] - code - gateway/tests/test_security_audit.py
-- [[.test_symlink_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_tmp_read_allowed()_1]] - code - gateway/tests/test_security_audit.py
-- [[.test_windows_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_write_outside_allowed_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_write_pii_detection()]] - code - gateway/tests/test_security_audit.py
-- [[.test_write_to_app_data_allowed()]] - code - gateway/tests/test_security_audit.py
-- [[.test_write_to_system_dir_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_write_to_tmp_allowed()]] - code - gateway/tests/test_security_audit.py
-- [[Access to procselfenviron exposes env vars — must be blocked.]] - rationale - gateway/tests/test_security_audit.py
-- [[Allowed read path should pass.]] - rationale - gateway/tests/test_security_audit.py
-- [[Detect data staging patterns.]] - rationale - gateway/tests/test_security_audit.py
-- [[Monitor mode flags but allows — verify difference from enforce.]] - rationale - gateway/tests/test_security_audit.py
-- [[Monitor-mode sandbox for comparison testing.]] - rationale - gateway/tests/test_security_audit.py
-- [[Reading from app should be allowed.]] - rationale - gateway/tests/test_security_audit.py
-- [[Reading from tmp should be allowed.]] - rationale - gateway/tests/test_security_audit.py
-- [[Same path, different modes — enforce blocks, monitor allows.]] - rationale - gateway/tests/test_security_audit.py
-- [[Symlink-based escape attempt blocked.]] - rationale - gateway/tests/test_security_audit.py
-- [[Test file system sandboxing in enforce mode — blocks unauthorized access.]] - rationale - gateway/tests/test_security_audit.py
-- [[TestFileSandbox]] - code - gateway/tests/test_security_audit.py
-- [[Writing PII should be flagged even to allowed paths.]] - rationale - gateway/tests/test_security_audit.py
-- [[Writing outside allowed paths must be blocked.]] - rationale - gateway/tests/test_security_audit.py
-- [[Writing to appdata should be allowed.]] - rationale - gateway/tests/test_security_audit.py
-- [[Writing to tmp should be allowed.]] - rationale - gateway/tests/test_security_audit.py
+- [[._make_report()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.store()_2]] - code - gateway/tests/test_intel_pipeline.py
+- [[.store_dir()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_chain_hash_links_reports()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_integrity_check_fails_for_tampered_file()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_integrity_check_passes_for_saved_report()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_load_all_returns_all_reports()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_load_all_skips_malformed_files()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_load_latest_returns_none_when_empty()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_multiple_saves_latest_is_newest()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_report_with_whitespace_only_id_rejected()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_report_with_whitespace_only_source_rejected()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_save_and_load_latest()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_save_with_corrupt_previous_file_falls_back_to_genesis()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_store_creates_directory()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_verify_chain_empty_store_is_valid()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_verify_chain_fails_for_tampered_entry()]] - code - gateway/tests/test_intel_pipeline.py
+- [[.test_verify_chain_passes_for_intact_store()]] - code - gateway/tests/test_intel_pipeline.py
+- [[If the previous report file is corrupt, save must not raise.]] - rationale - gateway/tests/test_intel_pipeline.py
+- [[IntelReportStore_1]] - code - gateway/tests/test_intel_pipeline.py
+- [[Path_34]] - code - gateway/tests/test_intel_pipeline.py
+- [[TestIntelReportStore]] - code - gateway/tests/test_intel_pipeline.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,25 +39,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 0]]
-- 7 edges to [[_COMMUNITY_Community 72]]
-- 4 edges to [[_COMMUNITY_Community 52]]
-- 3 edges to [[_COMMUNITY_Community 84]]
-- 3 edges to [[_COMMUNITY_Community 31]]
-- 2 edges to [[_COMMUNITY_Community 121]]
-- 1 edge to [[_COMMUNITY_Community 557]]
-- 1 edge to [[_COMMUNITY_Community 196]]
-- 1 edge to [[_COMMUNITY_Community 152]]
-- 1 edge to [[_COMMUNITY_Community 21]]
-- 1 edge to [[_COMMUNITY_Community 24]]
-- 1 edge to [[_COMMUNITY_Community 684]]
-- 1 edge to [[_COMMUNITY_Community 809]]
-- 1 edge to [[_COMMUNITY_Community 71]]
-- 1 edge to [[_COMMUNITY_Community 532]]
-- 1 edge to [[_COMMUNITY_Community 5]]
-- 1 edge to [[_COMMUNITY_Community 146]]
+- 16 edges to [[_COMMUNITY_Community 57]]
 
 ## Top bridge nodes
-- [[TestFileSandbox]] - degree 55, connects to 17 communities
-- [[.monitor_sandbox()]] - degree 4, connects to 2 communities
-- [[.sandbox()]] - degree 3, connects to 2 communities
+- [[TestIntelReportStore]] - degree 23, connects to 1 community
+- [[IntelReportStore_1]] - degree 18, connects to 1 community
+- [[._make_report()]] - degree 13, connects to 1 community
+- [[Path_34]] - degree 11, connects to 1 community
+- [[.test_report_with_whitespace_only_id_rejected()]] - degree 2, connects to 1 community

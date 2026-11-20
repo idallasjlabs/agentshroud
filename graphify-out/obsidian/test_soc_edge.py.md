@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_edge.py"
 type: "code"
-community: "Community 75"
+community: "Community 80"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/Community_80
 ---
 
 # test_soc_edge.py
@@ -47,4 +47,4 @@ tags:
 - [[test_command_center_shows_deployment_and_connection()]] - `contains` [EXTRACTED]
 - [[test_edge_service_exposes_enforced_profiles()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_75
+#graphify/code #graphify/EXTRACTED #community/Community_80

@@ -47,10 +47,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 22]]
+- 3 edges to [[_COMMUNITY_Community 22]]
 - 2 edges to [[_COMMUNITY_Community 84]]
-- 1 edge to [[_COMMUNITY_Community 24]]
 
 ## Top bridge nodes
-- [[TestNewPatternsV080]] - degree 32, connects to 3 communities
+- [[TestNewPatternsV080]] - degree 32, connects to 2 communities
 - [[.pg()]] - degree 2, connects to 1 community

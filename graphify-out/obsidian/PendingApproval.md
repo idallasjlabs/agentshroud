@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/approvals.py"
 type: "code"
-community: "Community 30"
+community: "Community 2048"
 location: "L73"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_30
+  - community/Community_2048
 ---
 
 # PendingApproval
@@ -19,4 +19,4 @@ tags:
 - [[ToolRiskPolicy_1]] - `uses` [INFERRED]
 - [[approvals.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_30
+#graphify/code #graphify/INFERRED #community/Community_2048

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "rationale"
-community: "Community 1"
+community: "Community 130"
 location: "L156"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1
+  - community/Community_130
 ---
 
 # Verify /manage/modules enumerates every module MiddlewareManager wires.      Mid
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestManageModulesEndpointAccuracy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1
+#graphify/rationale #graphify/EXTRACTED #community/Community_130

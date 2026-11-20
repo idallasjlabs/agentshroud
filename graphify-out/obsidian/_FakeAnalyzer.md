@@ -12,7 +12,7 @@ tags:
 # _FakeAnalyzer
 
 ## Connections
-- [[.__init__()_206]] - `method` [EXTRACTED]
+- [[.__init__()_203]] - `method` [EXTRACTED]
 - [[.analyze()_2]] - `method` [EXTRACTED]
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]

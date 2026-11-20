@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 10"
+community: "Community 890"
 location: "L795"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_10
+  - community/Community_890
 ---
 
 # DisconnectRequest
@@ -23,4 +23,4 @@ tags:
 - [[killswitch_disconnect()]] - `references` [EXTRACTED]
 - [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_10
+#graphify/code #graphify/INFERRED #community/Community_890

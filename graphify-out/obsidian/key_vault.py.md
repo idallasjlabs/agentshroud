@@ -17,7 +17,6 @@ tags:
 - [[KeyEntry]] - `contains` [EXTRACTED]
 - [[KeyInjector]] - `contains` [EXTRACTED]
 - [[KeyLeakDetector]] - `contains` [EXTRACTED]
-- [[KeyScope]] - `contains` [EXTRACTED]
 - [[KeyVault]] - `contains` [EXTRACTED]
 - [[KeyVaultConfig]] - `contains` [EXTRACTED]
 - [[LeakScanResult]] - `contains` [EXTRACTED]

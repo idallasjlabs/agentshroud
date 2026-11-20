@@ -1,26 +1,23 @@
 ---
 type: community
-members: 13
+members: 10
 ---
 
 # Community 944
 
-**Members:** 13 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[Build Stages]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[Dockerfile — Gateway]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[Dockerfile.gateway vault note]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[Dockerfile.gateway]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[Environment Variables Set]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[Image Labels (OCI)_1]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[OpenSCAP dependency note]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[Pre-installed Tools_1]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[Related Notes_18]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[Runtime Command]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[Security Hardening_2]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[Stage 1 Builder (`python3.13-slim AS builder`)]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[Stage 2 Runtime (`python3.13-slim`)]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Path_25]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[The alert must already be in alert_log before notification runs.      Before the]] - rationale - gateway/tests/test_alert_dispatcher_retry.py
+- [[_alert()]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[dispatcher()]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[test_alert_dispatcher_retry.py]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[test_all_attempts_fail_logs_warning_not_error()]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[test_backoff_called_between_attempts()]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[test_dispatch_persists_alert_even_if_notification_fails()]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[test_succeeds_after_one_transient_failure()]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[test_succeeds_on_first_attempt()]] - code - gateway/tests/test_alert_dispatcher_retry.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,10 +27,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 547]]
-- 1 edge to [[_COMMUNITY_Community 725]]
-- 1 edge to [[_COMMUNITY_Community 855]]
-- 1 edge to [[_COMMUNITY_Community 739]]
+- 3 edges to [[_COMMUNITY_Community 0]]
 
 ## Top bridge nodes
-- [[Dockerfile — Gateway]] - degree 12, connects to 4 communities
+- [[test_alert_dispatcher_retry.py]] - degree 8, connects to 1 community
+- [[dispatcher()]] - degree 3, connects to 1 community
+- [[Path_25]] - degree 2, connects to 1 community

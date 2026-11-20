@@ -12,7 +12,7 @@ tags:
 # Exception
 
 ## Connections
-- [[.__init__()_199]] - `references` [EXTRACTED]
+- [[.__init__()_196]] - `references` [EXTRACTED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]

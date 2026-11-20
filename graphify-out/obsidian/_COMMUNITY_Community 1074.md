@@ -1,19 +1,22 @@
 ---
 type: community
-members: 6
+members: 9
 ---
 
 # Community 1074
 
-**Members:** 6 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[._fake_urlopen_factory()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_long_poll_timeout_remains_60s()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_non_long_poll_timeout_is_15s()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Return a urlopen mock that records the timeout kwarg and succeeds.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[getUpdates must use a 60s urlopen timeout so the long-poll is not aborted early.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[sendMessage and similar calls must use a 15s urlopen timeout.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Approval Request Workflow (user-facing)]] - concept - docs/user-guide.md
+- [[Command Injection Threat — regex + no-shell exec mitigation]] - rationale - docs/ssh-security-review.md
+- [[Host SpoofingMITM Threat — TOFU model residual risk]] - rationale - docs/ssh-security-review.md
+- [[Option 1 Direct SSH (current approach)]] - concept - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Production Deployment Recommendations]] - concept - docs/ssh-security-review.md
+- [[SSH AllowDeny List Evaluation Order]] - concept - docs/ssh-configuration.md
+- [[SSH Auto-Approve Commands]] - concept - docs/ssh-configuration.md
+- [[SSH Proxy Config Schema (agentshroud.yaml ssh section)]] - concept - docs/ssh-configuration.md
+- [[SSH Proxy Threat Model (6 threats)]] - concept - docs/ssh-security-review.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,11 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 84]]
-- 2 edges to [[_COMMUNITY_Community 845]]
-- 2 edges to [[_COMMUNITY_Community 626]]
+- 1 edge to [[_COMMUNITY_Community 915]]
 
 ## Top bridge nodes
-- [[.test_non_long_poll_timeout_is_15s()]] - degree 5, connects to 3 communities
-- [[.test_long_poll_timeout_remains_60s()]] - degree 5, connects to 3 communities
-- [[._fake_urlopen_factory()]] - degree 4, connects to 1 community
+- [[SSH Proxy Threat Model (6 threats)]] - degree 5, connects to 1 community

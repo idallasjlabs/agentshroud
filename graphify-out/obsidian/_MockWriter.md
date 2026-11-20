@@ -12,7 +12,7 @@ tags:
 # _MockWriter
 
 ## Connections
-- [[.__init__()_181]] - `method` [EXTRACTED]
+- [[.__init__()_178]] - `method` [EXTRACTED]
 - [[.close()_15]] - `method` [EXTRACTED]
 - [[.drain()]] - `method` [EXTRACTED]
 - [[.get_extra_info()]] - `method` [EXTRACTED]

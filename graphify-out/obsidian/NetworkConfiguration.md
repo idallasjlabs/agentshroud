@@ -2,7 +2,7 @@
 source_file: "gateway/security/network_validator.py"
 type: "code"
 community: "Community 71"
-location: "L38"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED

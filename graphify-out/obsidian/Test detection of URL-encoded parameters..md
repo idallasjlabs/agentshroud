@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "Community 103"
+community: "Community 3"
 location: "L191"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_103
+  - community/Community_3
 ---
 
 # Test detection of URL-encoded parameters.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_parameter_obfuscation_detection_url()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_103
+#graphify/rationale #graphify/EXTRACTED #community/Community_3

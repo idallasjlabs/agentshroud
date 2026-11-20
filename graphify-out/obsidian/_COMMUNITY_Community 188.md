@@ -1,15 +1,15 @@
 ---
 type: community
-members: 40
+members: 39
 ---
 
 # Community 188
 
-**Members:** 40 nodes
+**Members:** 39 nodes
 
 ## Members
 - [[.__call__()_10]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[.__init__()_188]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[.__init__()_185]] - code - gateway/tests/test_jira_dev_ticket.py
 - [[Records requests; serves op-proxy secrets then a scripted Jira response.]] - rationale - gateway/tests/test_jira_dev_ticket.py
 - [[_MockTransport]] - code - gateway/tests/test_jira_dev_ticket.py
 - [[_load_module()]] - code - gateway/tests/test_jira_dev_ticket.py
@@ -31,7 +31,6 @@ members: 40
 - [[test_jira_dev_ticket.py]] - code - gateway/tests/test_jira_dev_ticket.py
 - [[test_op_proxy_request_has_bearer_and_system_header()]] - code - gateway/tests/test_jira_dev_ticket.py
 - [[test_op_refs_target_the_atlassian_item()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_openclaw_copy_is_byte_identical_to_hermes_copy()]] - code - gateway/tests/test_jira_dev_ticket.py
 - [[test_resolve_cloud_id_parses_response()]] - code - gateway/tests/test_jira_dev_ticket.py
 - [[test_resolve_cloud_id_raises_on_non_200()]] - code - gateway/tests/test_jira_dev_ticket.py
 - [[test_resolve_cloud_id_raises_when_field_missing()]] - code - gateway/tests/test_jira_dev_ticket.py
@@ -57,7 +56,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 238]]
+- 1 edge to [[_COMMUNITY_Community 794]]
 
 ## Top bridge nodes
-- [[test_jira_dev_ticket.py]] - degree 38, connects to 1 community
+- [[test_jira_dev_ticket.py]] - degree 36, connects to 1 community

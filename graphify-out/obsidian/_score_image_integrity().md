@@ -2,7 +2,7 @@
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
 community: "Community 67"
-location: "L927"
+location: "L926"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -16,7 +16,7 @@ tags:
 - [[.test_four_when_sbom_and_clean_trivy()]] - `calls` [EXTRACTED]
 - [[.test_one_when_sbom_exists()]] - `calls` [EXTRACTED]
 - [[.test_zero_when_no_sbom_no_trivy()]] - `calls` [EXTRACTED]
-- [[Any_68]] - `references` [EXTRACTED]
+- [[Any_64]] - `references` [EXTRACTED]
 - [[Score domain 1 Image Integrity (0-5).      1=SBOM exists, 2=Trivy ran, 3=zero c]] - `rationale_for` [EXTRACTED]
 - [[_is_fresh()]] - `calls` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]

@@ -37,7 +37,7 @@ members: 51
 - [[.test_summary_warning_high_only()]] - code - gateway/tests/test_security_toolchain.py
 - [[.test_trivy_binary_not_found()]] - code - gateway/tests/test_security_audit.py
 - [[A 0-byteempty stdout means the scan failed to produce output --         it must]] - rationale - gateway/tests/test_security_toolchain.py
-- [[Any_74]] - code - gateway/security/trivy_report.py
+- [[Any_70]] - code - gateway/security/trivy_report.py
 - [[Custom report_prefix is used verbatim.]] - rationale - gateway/tests/test_security_toolchain.py
 - [[Default report_prefix produces a 'trivy-' filename.]] - rationale - gateway/tests/test_security_toolchain.py
 - [[Generate a summary dict suitable for the health report.      Args         alert_1]] - rationale - gateway/security/wazuh_client.py
@@ -68,15 +68,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 102]]
+- 9 edges to [[_COMMUNITY_Community 102]]
+- 7 edges to [[_COMMUNITY_Community 0]]
 - 5 edges to [[_COMMUNITY_Community 127]]
-- 4 edges to [[_COMMUNITY_Community 557]]
 - 4 edges to [[_COMMUNITY_Community 368]]
-- 3 edges to [[_COMMUNITY_Community 0]]
 - 1 edge to [[_COMMUNITY_Community 151]]
 - 1 edge to [[_COMMUNITY_Community 1200]]
 - 1 edge to [[_COMMUNITY_Community 29]]
-- 1 edge to [[_COMMUNITY_Community 943]]
 
 ## Top bridge nodes
 - [[run_trivy_scan()_1]] - degree 18, connects to 4 communities

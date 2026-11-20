@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Community 30"
+community: "Community 7"
 location: "L103"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_30
+  - community/Community_7
 ---
 
 # ApprovalQueueConfig
@@ -118,4 +118,4 @@ tags:
 - [[test_submit_does_not_deadlock_on_hung_websocket_client()_1]] - `calls` [EXTRACTED]
 - [[test_websocket_notifications()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_30
+#graphify/code #graphify/INFERRED #community/Community_7

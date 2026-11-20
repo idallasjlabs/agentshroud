@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "Community 32"
+community: "Community 84"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Community_84
 ---
 
 # EncodingConfig
 
 ## Connections
-- [[.__init__()_92]] - `references` [EXTRACTED]
+- [[.__init__()_90]] - `references` [EXTRACTED]
 - [[.test_config_disable_base64()]] - `calls` [EXTRACTED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[TestEncodingDetector]] - `uses` [INFERRED]
@@ -21,4 +21,4 @@ tags:
 - [[test_encoding_detector_rot13_can_be_disabled()]] - `calls` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_32
+#graphify/code #graphify/EXTRACTED #community/Community_84

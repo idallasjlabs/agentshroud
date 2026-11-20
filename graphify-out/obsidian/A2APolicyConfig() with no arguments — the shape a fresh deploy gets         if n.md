@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy_default_failclosed.py"
 type: "rationale"
-community: "Community 307"
+community: "Community 947"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_307
+  - community/Community_947
 ---
 
 # A2APolicyConfig() with no arguments — the shape a fresh deploy gets         if n
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_bare_config_denies_every_peer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_307
+#graphify/rationale #graphify/EXTRACTED #community/Community_947

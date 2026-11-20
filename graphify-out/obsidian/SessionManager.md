@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "Community 76"
+community: "Community 477"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_76
+  - community/Community_477
 ---
 
 # SessionManager
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_131]] - `method` [EXTRACTED]
+- [[.__init__()_129]] - `method` [EXTRACTED]
 - [[._fingerprint()]] - `method` [EXTRACTED]
 - [[.cleanup_expired()_3]] - `method` [EXTRACTED]
 - [[.create_session()]] - `method` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[.test_cleanup_expired()]] - `calls` [EXTRACTED]
 - [[.test_different_ips_not_rate_limited()]] - `calls` [EXTRACTED]
 - [[.test_expired_session_rejected()]] - `calls` [EXTRACTED]
-- [[.test_rate_limit_exceeded()_1]] - `calls` [EXTRACTED]
+- [[.test_rate_limit_exceeded()]] - `calls` [EXTRACTED]
 - [[.test_rate_limit_resets_after_window()]] - `calls` [EXTRACTED]
 - [[.validate_event()]] - `method` [EXTRACTED]
 - [[.validate_nonce()]] - `method` [EXTRACTED]
@@ -42,7 +42,7 @@ tags:
 - [[Resource]] - `uses` [INFERRED]
 - [[TestEventInjection]] - `uses` [INFERRED]
 - [[TestInstructionNonce]] - `uses` [INFERRED]
-- [[TestRateLimiting_3]] - `uses` [INFERRED]
+- [[TestRateLimiting_2]] - `uses` [INFERRED]
 - [[TestSessionCleanup]] - `uses` [INFERRED]
 - [[TestSessionCreation]] - `uses` [INFERRED]
 - [[TestSessionRotation]] - `uses` [INFERRED]
@@ -53,4 +53,4 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_76
+#graphify/code #graphify/EXTRACTED #community/Community_477

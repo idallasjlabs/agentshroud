@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.is_group_admin()_1]] - code - gateway/soc/auth.py
-- [[Check group admin status via TeamsConfig if available.]] - rationale - gateway/soc/auth.py
+- [[OpenAI-format tool_calls response returns the same shape in local mode.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_mode_openai_tool_call_shape_passes_through()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 10]]
+- 1 edge to [[_COMMUNITY_Community 208]]
+- 1 edge to [[_COMMUNITY_Community 112]]
 
 ## Top bridge nodes
-- [[.is_group_admin()_1]] - degree 2, connects to 1 community
+- [[test_local_mode_openai_tool_call_shape_passes_through()]] - degree 3, connects to 2 communities

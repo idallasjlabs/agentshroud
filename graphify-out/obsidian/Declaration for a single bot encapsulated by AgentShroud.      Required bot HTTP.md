@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/bot_config.py"
 type: "rationale"
-community: "Community 7"
+community: "Community 181"
 location: "L20"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/Community_181
 ---
 
 # Declaration for a single bot encapsulated by AgentShroud.      Required bot HTTP
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[BotConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_7
+#graphify/rationale #graphify/EXTRACTED #community/Community_181

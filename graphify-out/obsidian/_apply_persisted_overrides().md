@@ -2,7 +2,7 @@
 source_file: "gateway/security/group_config.py"
 type: "code"
 community: "Community 194"
-location: "L198"
+location: "L189"
 tags:
   - graphify/code
   - graphify/EXTRACTED

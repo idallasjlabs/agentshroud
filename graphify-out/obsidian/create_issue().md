@@ -13,7 +13,6 @@ tags:
 
 ## Connections
 - [[Create a Jira issue. Returns the new issue key (e.g. 'SCRUM-124').]] - `rationale_for` [EXTRACTED]
-- [[RuntimeError]] - `calls` [INFERRED]
 - [[_auth_headers()]] - `calls` [EXTRACTED]
 - [[build_create_issue_payload()]] - `calls` [EXTRACTED]
 - [[build_issue_url()]] - `calls` [EXTRACTED]

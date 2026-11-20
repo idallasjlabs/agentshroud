@@ -2,7 +2,7 @@
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
 community: "Community 160"
-location: "L426"
+location: "L404"
 tags:
   - graphify/code
   - graphify/EXTRACTED

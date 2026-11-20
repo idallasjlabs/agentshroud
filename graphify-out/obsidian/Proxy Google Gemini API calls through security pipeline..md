@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Community 10"
+community: "Community 978"
 location: "L4450"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_10
+  - community/Community_978
 ---
 
 # Proxy Google Gemini API calls through security pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[google_api_proxy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_10
+#graphify/rationale #graphify/EXTRACTED #community/Community_978

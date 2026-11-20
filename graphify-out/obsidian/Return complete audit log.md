@@ -2,7 +2,7 @@
 source_file: ".agents/skills/browser/scripts/browse.py"
 type: "rationale"
 community: "Community 149"
-location: "L422"
+location: "L400"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

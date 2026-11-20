@@ -9,7 +9,7 @@ members: 29
 
 ## Members
 - [[.__call__()_11]] - code - gateway/tests/test_jira_weekly_review.py
-- [[.__init__()_189]] - code - gateway/tests/test_jira_weekly_review.py
+- [[.__init__()_186]] - code - gateway/tests/test_jira_weekly_review.py
 - [[Records POSTs; returns op-proxy secrets then a 201 for the comment.]] - rationale - gateway/tests/test_jira_weekly_review.py
 - [[_MockTransport_1]] - code - gateway/tests/test_jira_weekly_review.py
 - [[_get_fn_stub()]] - code - gateway/tests/test_jira_weekly_review.py

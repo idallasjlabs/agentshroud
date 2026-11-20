@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/enforcement-audit-script.py"
 type: "code"
-community: "Community 84"
+community: "Community 3"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_84
+  - community/Community_3
 ---
 
 # enforcement-audit-script.py
@@ -44,7 +44,7 @@ tags:
 - [[key_rotation.py]] - `imports_from` [EXTRACTED]
 - [[memory_lifecycle.py]] - `imports_from` [EXTRACTED]
 - [[ok()]] - `contains` [EXTRACTED]
-- [[run()_3]] - `contains` [EXTRACTED]
+- [[run()_2]] - `contains` [EXTRACTED]
 - [[warn()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_84
+#graphify/code #graphify/EXTRACTED #community/Community_3

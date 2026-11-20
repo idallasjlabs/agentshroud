@@ -1,54 +1,60 @@
 ---
 type: community
-members: 103
+members: 113
 ---
 
 # Community 120
 
-**Members:** 103 nodes
+**Members:** 113 nodes
 
 ## Members
-- [[.__init__()_58]] - code - gateway/proxy/web_proxy.py
-- [[.__init__()_222]] - code - gateway/tests/test_web_proxy_security.py
-- [[.__init__()_223]] - code - gateway/tests/test_web_proxy_security.py
-- [[.__init__()_224]] - code - gateway/tests/test_web_proxy_security.py
-- [[._audit()_1]] - code - gateway/proxy/web_proxy.py
-- [[.check()_1]] - code - gateway/proxy/web_proxy.py
-- [[.check_request()]] - code - gateway/proxy/web_proxy.py
-- [[.flagged()_2]] - code - gateway/proxy/web_proxy.py
+- [[NOTE api.telegram.org is intentionally NOT listed here.  The bot is]] - rationale - gateway/proxy/http_proxy.py
+- [[.__init__()_38]] - code - gateway/proxy/http_proxy.py
+- [[.__init__()_57]] - code - gateway/proxy/web_proxy.py
+- [[.get_domain_settings()]] - code - gateway/proxy/web_config.py
+- [[.is_domain_allowed()]] - code - gateway/proxy/web_config.py
+- [[.is_domain_denied()]] - code - gateway/proxy/web_config.py
+- [[.readline()]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[.reset()]] - code - gateway/proxy/web_proxy.py
-- [[.scan_response()]] - code - gateway/proxy/web_proxy.py
-- [[.setUp()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_allowed_domain_passes()_1]] - code - gateway/tests/test_web_proxy.py
 - [[.test_audit_chain_valid()]] - code - gateway/tests/test_web_proxy.py
 - [[.test_aws_key_in_response_flagged()]] - code - gateway/tests/test_web_proxy.py
 - [[.test_base64_encoded_injection_in_html()]] - code - gateway/tests/test_web_proxy.py
 - [[.test_base64_in_query_flagged()_1]] - code - gateway/tests/test_web_proxy.py
 - [[.test_base64_in_url_path_flagged()]] - code - gateway/tests/test_web_proxy.py
 - [[.test_blocked_request_audited()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_browser_security_blocks_high_risk_urls()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_browser_security_flags_medium_risk_urls()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_browser_security_skips_non_browser_user_agents()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_case_insensitive()_2]] - code - gateway/tests/test_web_proxy.py
 - [[.test_clean_comment_not_flagged()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_clean_content_no_injection()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_custom_denylist()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_custom_domain_size_limit()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_data_exfil_instruction_detected()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_denied_domain_blocked()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_denied_domain_malware()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_denied_subdomain_blocked()]] - code - gateway/tests/test_web_proxy.py
 - [[.test_different_domains_independent()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_dns_filter_blocks_suspicious_domains()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_dns_filter_flags_but_allows_questionable_domains()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_egress_monitor_logs_responses()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_graceful_degradation_browser_security_error()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_graceful_degradation_dns_error()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_graceful_degradation_egress_error()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_domain_denied()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_domain_not_in_denylist_passes()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_empty_allowlist_blocks_everything()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_exact_match()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_get_domain_settings_custom()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_get_domain_settings_default()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_github_passes()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_ignore_instructions_detected()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_injection_adds_security_headers()]] - code - gateway/tests/test_web_proxy.py
 - [[.test_injection_in_hidden_div()]] - code - gateway/tests/test_web_proxy.py
 - [[.test_injection_in_html_comment()]] - code - gateway/tests/test_web_proxy.py
 - [[.test_injection_in_invisible_text()]] - code - gateway/tests/test_web_proxy.py
 - [[.test_injection_in_meta_tag()]] - code - gateway/tests/test_web_proxy.py
 - [[.test_injection_stats()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_large_response_flagged()]] - code - gateway/tests/test_web_proxy.py
 - [[.test_long_query_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_multiple_security_modules_integration()]] - code - gateway/tests/test_web_proxy_security.py
 - [[.test_no_audit_chain_no_crash()]] - code - gateway/tests/test_web_proxy.py
 - [[.test_normal_content_type_not_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_oauth_security_error_handling()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_oauth_security_flags_auth_headers()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_normal_response_not_flagged_for_size()]] - code - gateway/tests/test_web_proxy.py
 - [[.test_passthrough_adds_header()]] - code - gateway/tests/test_web_proxy.py
 - [[.test_passthrough_allows_everything()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_passthrough_mode_default_off()]] - code - gateway/tests/test_web_proxy.py
 - [[.test_passthrough_skips_content_scan()]] - code - gateway/tests/test_web_proxy.py
 - [[.test_pii_in_response_flagged()]] - code - gateway/tests/test_web_proxy.py
 - [[.test_pii_in_url_flagged()]] - code - gateway/tests/test_web_proxy.py
@@ -57,60 +63,64 @@ members: 103
 - [[.test_rate_limiter_reset()]] - code - gateway/tests/test_web_proxy.py
 - [[.test_request_audited()]] - code - gateway/tests/test_web_proxy.py
 - [[.test_response_audited()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_role_override_detected()]] - code - gateway/tests/test_web_proxy.py
 - [[.test_single_zwc_not_flagged()]] - code - gateway/tests/test_web_proxy.py
 - [[.test_ssn_in_url_flagged()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_stackoverflow_passes()]] - code - gateway/tests/test_web_proxy.py
 - [[.test_stats_tracked()]] - code - gateway/tests/test_web_proxy.py
 - [[.test_suspicious_content_type_flagged()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_system_delimiter_detected()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_tool_invocation_detected()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_wildcard_does_not_match_other_root()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_wildcard_domain_settings()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_wildcard_matches_root_domain()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_wildcard_matches_subdomain()]] - code - gateway/tests/test_web_proxy.py
 - [[.test_zero_width_chars_detected()]] - code - gateway/tests/test_web_proxy.py
-- [[Check an outbound HTTP request before it's sent.          This is the pre-flight]] - rationale - gateway/proxy/web_proxy.py
-- [[Check if request is within rate limit. Returns True if allowed.]] - rationale - gateway/proxy/web_proxy.py
+- [[CONNECT tunnel must NOT allow api.telegram.org — forces traffic through reverse]] - rationale - gateway/tests/test_http_proxy.py
+- [[Check if a domain is on the allowlist (used when mode == 'allowlist').]] - rationale - gateway/proxy/web_config.py
+- [[Check if a domain is on the denylist.]] - rationale - gateway/proxy/web_config.py
+- [[Configuration for the web traffic proxy.      Default-allow all URLs pass unles]] - rationale - gateway/proxy/web_config.py
+- [[DomainSettings]] - code - gateway/proxy/web_config.py
+- [[EgressFilter]] - code - gateway/proxy/http_proxy.py
+- [[Get settings for a specific domain, falling back to defaults.]] - rationale - gateway/proxy/web_config.py
 - [[HTTP web traffic proxy for OpenClaw.      Intercepts all outbound web requests,]] - rationale - gateway/proxy/web_proxy.py
-- [[MockDNSVerdict]] - code - gateway/tests/test_web_proxy_security.py
-- [[MockEgressChannel]] - code - gateway/tests/test_web_proxy_security.py
-- [[MockEgressEvent]] - code - gateway/tests/test_web_proxy_security.py
-- [[MockThreatLevel]] - code - gateway/tests/test_web_proxy_security.py
-- [[MockURLResult]] - code - gateway/tests/test_web_proxy_security.py
+- [[Per-domain configuration overrides.]] - rationale - gateway/proxy/web_config.py
 - [[Proxy works without an audit chain.]] - rationale - gateway/tests/test_web_proxy.py
-- [[ProxyAction]] - code - gateway/proxy/web_proxy.py
 - [[RateLimiter_1]] - code - gateway/proxy/web_proxy.py
-- [[Record an audit entry in the hash chain.]] - rationale - gateway/proxy/web_proxy.py
-- [[Result of proxying a web request.]] - rationale - gateway/proxy/web_proxy.py
-- [[Scan a response body for prompt injection, PII, and hidden content.          Thi]] - rationale - gateway/proxy/web_proxy.py
-- [[Set up test fixtures._4]] - rationale - gateway/tests/test_web_proxy_security.py
 - [[Simple in-memory per-domain rate limiter using sliding window.]] - rationale - gateway/proxy/web_proxy.py
 - [[Single zero-width chars are normal (e.g., word joiners).]] - rationale - gateway/tests/test_web_proxy.py
-- [[Test that DNS filter blocks suspicious domains.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that DNS filter errors cause fail-closed behavior.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that DNS filter flags questionable domains but allows them through.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that OAuth security errors don't block requests.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that OAuth security flags requests with authorization headers.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that browser security blocks high-risk URLs for browser user agents.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that browser security checks are skipped for non-browser user agents.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that browser security errors cause fail-closed behavior.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that browser security flags medium-risk URLs.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that egress monitor logs all outbound connections.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that egress monitoring errors don't break response processing.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that multiple security modules work together correctly.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that security modules are properly integrated into web proxy.]] - rationale - gateway/tests/test_web_proxy_security.py
 - [[TestAuditChain_1]] - code - gateway/tests/test_web_proxy.py
 - [[TestContentTypeFiltering]] - code - gateway/tests/test_web_proxy.py
 - [[TestDataExfiltration_1]] - code - gateway/tests/test_web_proxy.py
+- [[TestDomainDenylist]] - code - gateway/tests/test_web_proxy.py
 - [[TestEncodedPayloads]] - code - gateway/tests/test_web_proxy.py
 - [[TestHiddenContent]] - code - gateway/tests/test_web_proxy.py
+- [[TestIsDomainAllowed]] - code - gateway/tests/test_web_proxy.py
 - [[TestPIIDetection_2]] - code - gateway/tests/test_web_proxy.py
 - [[TestPassthroughMode_1]] - code - gateway/tests/test_web_proxy.py
-- [[TestRateLimiting_4]] - code - gateway/tests/test_web_proxy.py
+- [[TestPromptInjectionDetection]] - code - gateway/tests/test_web_proxy.py
+- [[TestRateLimiting_3]] - code - gateway/tests/test_web_proxy.py
+- [[TestResponseSizeLimits]] - code - gateway/tests/test_web_proxy.py
 - [[TestStats_1]] - code - gateway/tests/test_web_proxy.py
-- [[TestWebProxySecurityIntegration]] - code - gateway/tests/test_web_proxy_security.py
+- [[TestWebProxyConfig]] - code - gateway/tests/test_web_proxy.py
 - [[TestZeroWidthAttacks]] - code - gateway/tests/test_web_proxy.py
+- [[Unit tests for WebProxyConfig.is_domain_allowed().]] - rationale - gateway/tests/test_web_proxy.py
+- [[WebProxy]] - code - gateway/proxy/http_proxy.py
 - [[WebProxy_1]] - code - gateway/proxy/web_proxy.py
-- [[WebProxyResult]] - code - gateway/proxy/web_proxy.py
-- [[audit_chain()]] - code - gateway/tests/test_web_proxy.py
+- [[WebProxyConfig]] - code - gateway/proxy/web_config.py
+- [[_TimeoutReader]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[config()_4]] - code - gateway/tests/test_web_proxy.py
+- [[hc-ping.com must be egress-allowlisted or Hermes dead-man's-switch heartbeat fires permanently]] - rationale - gateway/tests/test_heartbeat_egress.py
+- [[http_proxy.py]] - code - gateway/proxy/http_proxy.py
 - [[passthrough_proxy()_1]] - code - gateway/tests/test_web_proxy.py
-- [[proxy()_4]] - code - gateway/tests/test_web_proxy.py
+- [[proxy()_3]] - code - gateway/tests/test_web_proxy.py
+- [[readline() always raises TimeoutError — simulates a stalled client.]] - rationale - gateway/tests/test_http_proxy_coverage.py
+- [[test_hc_ping_allowed()]] - code - gateway/tests/test_heartbeat_egress.py
+- [[test_hc_ping_subdomain_not_blocked()]] - code - gateway/tests/test_heartbeat_egress.py
+- [[test_heartbeat_egress.py]] - code - gateway/tests/test_heartbeat_egress.py
+- [[test_telegram_api_blocked_in_connect_proxy()]] - code - gateway/tests/test_http_proxy.py
 - [[test_web_proxy.py]] - code - gateway/tests/test_web_proxy.py
-- [[test_web_proxy_security.py]] - code - gateway/tests/test_web_proxy_security.py
+- [[web_config.py]] - code - gateway/proxy/web_config.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -120,22 +130,30 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 56 edges to [[_COMMUNITY_Community 27]]
-- 16 edges to [[_COMMUNITY_Community 1566]]
-- 12 edges to [[_COMMUNITY_Community 81]]
-- 11 edges to [[_COMMUNITY_Community 93]]
-- 10 edges to [[_COMMUNITY_Community 72]]
-- 10 edges to [[_COMMUNITY_Community 86]]
-- 5 edges to [[_COMMUNITY_Community 8]]
-- 4 edges to [[_COMMUNITY_Community 1427]]
-- 2 edges to [[_COMMUNITY_Community 151]]
-- 2 edges to [[_COMMUNITY_Community 709]]
-- 1 edge to [[_COMMUNITY_Community 196]]
-- 1 edge to [[_COMMUNITY_Community 1000]]
+- 32 edges to [[_COMMUNITY_Community 103]]
+- 24 edges to [[_COMMUNITY_Community 86]]
+- 17 edges to [[_COMMUNITY_Community 24]]
+- 16 edges to [[_COMMUNITY_Community 81]]
+- 8 edges to [[_COMMUNITY_Community 27]]
+- 7 edges to [[_COMMUNITY_Community 151]]
+- 6 edges to [[_COMMUNITY_Community 822]]
+- 5 edges to [[_COMMUNITY_Community 140]]
+- 5 edges to [[_COMMUNITY_Community 1427]]
+- 5 edges to [[_COMMUNITY_Community 72]]
+- 4 edges to [[_COMMUNITY_Community 709]]
+- 4 edges to [[_COMMUNITY_Community 1000]]
+- 2 edges to [[_COMMUNITY_Community 162]]
+- 2 edges to [[_COMMUNITY_Community 93]]
+- 1 edge to [[_COMMUNITY_Community 73]]
+- 1 edge to [[_COMMUNITY_Community 626]]
+- 1 edge to [[_COMMUNITY_Community 220]]
+- 1 edge to [[_COMMUNITY_Community 22]]
+- 1 edge to [[_COMMUNITY_Community 17]]
+- 1 edge to [[_COMMUNITY_Community 18]]
 
 ## Top bridge nodes
-- [[WebProxy_1]] - degree 73, connects to 9 communities
-- [[ProxyAction]] - degree 31, connects to 6 communities
-- [[RateLimiter_1]] - degree 28, connects to 5 communities
-- [[test_web_proxy.py]] - degree 27, connects to 3 communities
-- [[WebProxyResult]] - degree 16, connects to 3 communities
+- [[WebProxy_1]] - degree 73, connects to 12 communities
+- [[WebProxyConfig]] - degree 82, connects to 10 communities
+- [[http_proxy.py]] - degree 16, connects to 10 communities
+- [[RateLimiter_1]] - degree 28, connects to 7 communities
+- [[test_web_proxy.py]] - degree 27, connects to 4 communities

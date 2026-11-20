@@ -12,7 +12,7 @@ tags:
 # _FakeDecideQueue
 
 ## Connections
-- [[.__init__()_217]] - `method` [EXTRACTED]
+- [[.__init__()_214]] - `method` [EXTRACTED]
 - [[.get_pending()_2]] - `method` [EXTRACTED]
 - [[ApprovalMode]] - `uses` [INFERRED]
 - [[ApprovalQueueItem_3]] - `uses` [INFERRED]

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_edge.py"
 type: "code"
-community: "Community 75"
+community: "Community 80"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/Community_80
 ---
 
 # FakeCaller
 
 ## Connections
-- [[.__init__()_210]] - `method` [EXTRACTED]
+- [[.__init__()_207]] - `method` [EXTRACTED]
 - [[.is_owner()_4]] - `method` [EXTRACTED]
 - [[.require()_1]] - `method` [EXTRACTED]
 - [[.test_owner_only()]] - `calls` [EXTRACTED]
@@ -32,4 +32,4 @@ tags:
 - [[holder()]] - `calls` [EXTRACTED]
 - [[test_soc_edge.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_75
+#graphify/code #graphify/EXTRACTED #community/Community_80

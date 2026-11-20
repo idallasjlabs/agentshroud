@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "rationale"
-community: "Community 32"
+community: "Community 24"
 location: "L298"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Community_24
 ---
 
 # rot13 layer is surfaced when the decoded text reveals injection language.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_encoding_detector_decodes_rot13_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_32
+#graphify/rationale #graphify/EXTRACTED #community/Community_24

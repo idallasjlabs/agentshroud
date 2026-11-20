@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v1.2/blue-team-assessment-v1.2.0.md"
 type: "document"
-community: "Community 414"
+community: "Community 1119"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_414
+  - community/Community_1119
 ---
 
 # Blue Team Assessment v1.2.0 (First Dual-Bot Assessment)
@@ -15,4 +15,4 @@ tags:
 - [[blue-team-assessment-v0.8.0]] - `references` [EXTRACTED]
 - [[v0.8.0 25-Domain Prompt Injection Defense Assessment]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_414
+#graphify/document #graphify/EXTRACTED #community/Community_1119

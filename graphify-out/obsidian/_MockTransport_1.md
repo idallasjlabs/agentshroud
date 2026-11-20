@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[.__call__()_11]] - `method` [EXTRACTED]
-- [[.__init__()_189]] - `method` [EXTRACTED]
+- [[.__init__()_186]] - `method` [EXTRACTED]
 - [[Records POSTs; returns op-proxy secrets then a 201 for the comment.]] - `rationale_for` [EXTRACTED]
 - [[test_jira_weekly_review.py]] - `contains` [EXTRACTED]
 - [[test_run_posts_comment_with_basic_auth()]] - `calls` [EXTRACTED]

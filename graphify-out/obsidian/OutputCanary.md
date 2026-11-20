@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_119]] - `method` [EXTRACTED]
+- [[.__init__()_117]] - `method` [EXTRACTED]
 - [[._create_detection_patterns()]] - `method` [EXTRACTED]
 - [[._create_invisible_canary()]] - `method` [EXTRACTED]
 - [[._scan_for_canary()]] - `method` [EXTRACTED]

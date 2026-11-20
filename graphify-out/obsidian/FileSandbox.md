@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_96]] - `method` [EXTRACTED]
+- [[.__init__()_94]] - `method` [EXTRACTED]
 - [[._check()]] - `method` [EXTRACTED]
 - [[._detect_raw_traversal()]] - `method` [EXTRACTED]
 - [[._is_immutable_file()]] - `method` [EXTRACTED]
@@ -90,7 +90,7 @@ tags:
 - [[file_sandbox.py]] - `contains` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[run()_2]] - `calls` [EXTRACTED]
 - [[sandbox()]] - `calls` [EXTRACTED]
 - [[strict_sandbox()]] - `calls` [EXTRACTED]
 - [[strict_sandbox()_1]] - `calls` [EXTRACTED]

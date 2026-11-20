@@ -12,7 +12,7 @@ tags:
 # UpdateReplayBuffer
 
 ## Connections
-- [[.__init__()_55]] - `method` [EXTRACTED]
+- [[.__init__()_54]] - `method` [EXTRACTED]
 - [[._conn_ok()]] - `method` [EXTRACTED]
 - [[._init_db()]] - `method` [EXTRACTED]
 - [[.cleanup_if_due()]] - `method` [EXTRACTED]

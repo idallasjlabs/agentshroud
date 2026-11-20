@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "Community 114"
+community: "Community 43"
 location: "L398"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_114
+  - community/Community_43
 ---
 
 # Verify webhook receiver strips PII.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_webhook_strips_pii()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_114
+#graphify/rationale #graphify/EXTRACTED #community/Community_43

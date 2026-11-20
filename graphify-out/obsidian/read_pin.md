@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "Community 261"
+community: "Community 420"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_261
+  - community/Community_420
 ---
 
 # read_pin
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_auto_remediate_cves.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_261
+#graphify/code #graphify/EXTRACTED #community/Community_420

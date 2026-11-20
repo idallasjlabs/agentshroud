@@ -15,8 +15,6 @@ tags:
 - [[BrowserSecurityGuard]] - `contains` [EXTRACTED]
 - [[CredentialEntryBlocked]] - `contains` [EXTRACTED]
 - [[Enum]] - `imports_from` [EXTRACTED]
-- [[PhishingURLDetected]] - `contains` [EXTRACTED]
-- [[SocialEngineeringDetected]] - `contains` [EXTRACTED]
 - [[ThreatAssessment]] - `contains` [EXTRACTED]
 - [[ThreatLevel_1]] - `contains` [EXTRACTED]
 - [[Wu et al. 2026 (arXiv2601.07263) — Browser-based agent social engineering attacks]] - `cites` [EXTRACTED]

@@ -1,39 +1,44 @@
 ---
 type: community
-members: 27
+members: 32
 ---
 
 # Community 334
 
-**Members:** 27 nodes
+**Members:** 32 nodes
 
 ## Members
+- [[AgentShroud Minimal Docker Compose]] - document - examples/docker-compose.minimal.yml
+- [[AgentShroud Production Docker Compose]] - document - examples/docker-compose.production.yml
 - [[Approval Queue Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
-- [[Bot Not Responding to Telegram Messages]] - document - docs/runbooks/troubleshooting.md
-- [[Common Issues_1]] - document - docs/runbooks/troubleshooting.md
 - [[Connectivity Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
-- [[Container Keeps Restarting]] - document - docs/runbooks/troubleshooting.md
+- [[Container Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
 - [[Container Stability Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
-- [[ContextGuard False Positive Collaborator Block]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Dashboard Not Loading]] - document - docs/runbooks/troubleshooting.md
+- [[Crash Recovery_1]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Database Files]] - document - docs/vault/05 - Dependencies/aiosqlite.md
 - [[Debugging Commands]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
-- [[Diagnostic Commands]] - document - docs/runbooks/troubleshooting.md
 - [[Egress  Network Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
-- [[Getting Help]] - document - docs/runbooks/troubleshooting.md
-- [[Kill Switch Won't Deactivate]] - document - docs/runbooks/troubleshooting.md
+- [[First Time Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Health Checks_1]] - document - docs/vault/08 - Runbooks/Health Checks.md
 - [[Kill Switch Won't Deactivate Troubleshooting]] - concept - docs/runbooks/troubleshooting.md
 - [[PII  Sanitization Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
-- [[PII Sanitizer Blocking Legitimate Content]] - document - docs/runbooks/troubleshooting.md
 - [[Prompt Injection Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[Purpose_184]] - document - docs/vault/05 - Dependencies/aiosqlite.md
 - [[Quick Diagnosis Flow]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[Related Notes_39]] - document - docs/vault/05 - Dependencies/aiosqlite.md
 - [[Related Notes_64]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
-- [[SSH Command Approval Stuck]] - document - docs/runbooks/troubleshooting.md
+- [[Restart Procedure_1]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
 - [[Security Module Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[Startup Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
 - [[Startup Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
-- [[Tailscale Serve Not Working]] - document - docs/runbooks/troubleshooting.md
-- [[Tests Failing]] - document - docs/runbooks/troubleshooting.md
 - [[Troubleshooting Matrix_1]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
-- [[Troubleshooting Runbook — AgentShroud]] - document - docs/runbooks/troubleshooting.md
+- [[Troubleshooting Matrix]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[WAL Mode]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[Where Used]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[aiosqlite_1]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[aiosqlite]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[docker-commands]] - document - examples/docker-commands.md
+- [[store.py]] - code - gateway/approval_queue/store.py
 - [[troubleshooting]] - document - docs/runbooks/troubleshooting.md
 
 ## Live Query (requires Dataview plugin)
@@ -44,14 +49,29 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 333]]
+- 2 edges to [[_COMMUNITY_Community 30]]
+- 2 edges to [[_COMMUNITY_Community 254]]
 - 2 edges to [[_COMMUNITY_Community 535]]
-- 1 edge to [[_COMMUNITY_Community 702]]
-- 1 edge to [[_COMMUNITY_Community 816]]
+- 2 edges to [[_COMMUNITY_Community 389]]
+- 1 edge to [[_COMMUNITY_Community 70]]
+- 1 edge to [[_COMMUNITY_Community 151]]
+- 1 edge to [[_COMMUNITY_Community 22]]
+- 1 edge to [[_COMMUNITY_Community 764]]
 - 1 edge to [[_COMMUNITY_Community 726]]
+- 1 edge to [[_COMMUNITY_Community 702]]
+- 1 edge to [[_COMMUNITY_Community 253]]
+- 1 edge to [[_COMMUNITY_Community 1191]]
+- 1 edge to [[_COMMUNITY_Community 740]]
+- 1 edge to [[_COMMUNITY_Community 741]]
+- 1 edge to [[_COMMUNITY_Community 482]]
+- 1 edge to [[_COMMUNITY_Community 816]]
+- 1 edge to [[_COMMUNITY_Community 1193]]
+- 1 edge to [[_COMMUNITY_Community 333]]
+- 1 edge to [[_COMMUNITY_Community 656]]
 
 ## Top bridge nodes
 - [[troubleshooting]] - degree 18, connects to 4 communities
-- [[Troubleshooting Matrix_1]] - degree 12, connects to 1 community
-- [[Troubleshooting Runbook — AgentShroud]] - degree 5, connects to 1 community
-- [[ContextGuard False Positive Collaborator Block]] - degree 2, connects to 1 community
+- [[Troubleshooting Matrix]] - degree 9, connects to 3 communities
+- [[store.py]] - degree 7, connects to 3 communities
+- [[aiosqlite]] - degree 5, connects to 3 communities
+- [[Container Errors]] - degree 4, connects to 2 communities

@@ -12,7 +12,7 @@ tags:
 # _networks()
 
 ## Connections
-- [[Any_79]] - `references` [EXTRACTED]
+- [[Any_75]] - `references` [EXTRACTED]
 - [[check_dmz_members()]] - `calls` [EXTRACTED]
 - [[check_edge_on_dmz_only()]] - `calls` [EXTRACTED]
 - [[check_gateway_keeps_dual_membership()]] - `calls` [EXTRACTED]

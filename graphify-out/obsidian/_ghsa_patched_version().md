@@ -2,7 +2,7 @@
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
 community: "Community 74"
-location: "L645"
+location: "L431"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # _ghsa_patched_version()
 
 ## Connections
-- [[Any_90]] - `references` [EXTRACTED]
+- [[Any_86]] - `references` [EXTRACTED]
 - [[Return the first patched version string across the advisory's vulns, else ''.]] - `rationale_for` [EXTRACTED]
 - [[process_ghsa_advisories()]] - `calls` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]

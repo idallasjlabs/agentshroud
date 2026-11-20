@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Community 104"
-location: "L745"
+community: "Community 151"
+location: "L744"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_104
+  - community/Community_151
 ---
 
 # reload_config()
@@ -26,4 +26,4 @@ tags:
 - [[test_reload_rejects_invalid_and_keeps_last_good()]] - `calls` [EXTRACTED]
 - [[test_reload_rejects_schema_violation_and_keeps_last_good()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_104
+#graphify/code #graphify/EXTRACTED #community/Community_151

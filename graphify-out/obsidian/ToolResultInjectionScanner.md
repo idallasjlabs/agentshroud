@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_138]] - `method` [EXTRACTED]
+- [[.__init__()_135]] - `method` [EXTRACTED]
 - [[._detect_encoded_injection()]] - `method` [EXTRACTED]
 - [[._detect_unicode_obfuscation()]] - `method` [EXTRACTED]
 - [[.scan_tool_result()_3]] - `method` [EXTRACTED]
@@ -44,7 +44,7 @@ tags:
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[run()_2]] - `calls` [EXTRACTED]
 - [[scanner()]] - `calls` [EXTRACTED]
 - [[test_tool_injection_encoded_check_uses_full_ruleset()]] - `calls` [EXTRACTED]
 - [[test_tool_injection_hex_encoded_uses_full_ruleset()]] - `calls` [EXTRACTED]

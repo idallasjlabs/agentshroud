@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 978"
+community: "Community 10"
 location: "L4498"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/Community_10
 ---
 
 # ollama_api_proxy()
@@ -18,4 +18,4 @@ tags:
 - [[Request_2]] - `references` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_978
+#graphify/code #graphify/EXTRACTED #community/Community_10

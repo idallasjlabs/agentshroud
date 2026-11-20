@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_69]] - `method` [EXTRACTED]
+- [[.__init__()_67]] - `method` [EXTRACTED]
 - [[._check_description_parameter_mismatch()]] - `method` [EXTRACTED]
 - [[._check_misleading_language()]] - `method` [EXTRACTED]
 - [[._check_parameter_obfuscation()]] - `method` [EXTRACTED]
@@ -48,7 +48,7 @@ tags:
 - [[approval_hardening.py]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[run()_2]] - `calls` [EXTRACTED]
 - [[test_approval_hardening.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_3

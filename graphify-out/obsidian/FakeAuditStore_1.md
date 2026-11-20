@@ -12,7 +12,7 @@ tags:
 # FakeAuditStore
 
 ## Connections
-- [[.__init__()_214]] - `method` [EXTRACTED]
+- [[.__init__()_211]] - `method` [EXTRACTED]
 - [[.get_recent_entries()_1]] - `method` [EXTRACTED]
 - [[ApprovalMode]] - `uses` [INFERRED]
 - [[ApprovalQueueItem_3]] - `uses` [INFERRED]

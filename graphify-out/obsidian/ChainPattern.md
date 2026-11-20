@@ -16,7 +16,6 @@ tags:
 - [[._load_custom_patterns()]] - `calls` [EXTRACTED]
 - [[._load_default_patterns()]] - `calls` [EXTRACTED]
 - [[._matches_source_pattern()]] - `references` [EXTRACTED]
-- [[.add_pattern()]] - `references` [EXTRACTED]
 - [[Definition of a suspicious tool call pattern.]] - `rationale_for` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 

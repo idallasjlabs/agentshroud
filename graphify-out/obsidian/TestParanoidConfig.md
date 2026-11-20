@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Community 792"
+community: "Community 36"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_792
+  - community/Community_36
 ---
 
 # TestParanoidConfig
@@ -36,4 +36,4 @@ tags:
 - [[paranoid.env should enable ALL security features.]] - `rationale_for` [EXTRACTED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_792
+#graphify/code #graphify/EXTRACTED #community/Community_36

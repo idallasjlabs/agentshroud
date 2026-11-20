@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.test_default_policy_is_sane()]] - `method` [EXTRACTED]
 - [[.test_empty_ledger_has_no_incidents()]] - `method` [EXTRACTED]
-- [[.test_register_peer()_1]] - `method` [EXTRACTED]
+- [[.test_register_peer()]] - `method` [EXTRACTED]
 - [[.test_register_peer_is_bidirectional_by_default()]] - `method` [EXTRACTED]
 - [[.test_unregistered_bot_has_no_peers()]] - `method` [EXTRACTED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]

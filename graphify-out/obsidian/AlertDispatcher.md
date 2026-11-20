@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "Community 557"
+community: "Community 0"
 location: "L35"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_557
+  - community/Community_0
 ---
 
 # AlertDispatcher
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_68]] - `method` [EXTRACTED]
+- [[.__init__()_66]] - `method` [EXTRACTED]
 - [[._format_alert_message()]] - `method` [EXTRACTED]
 - [[._is_duplicate()]] - `method` [EXTRACTED]
 - [[._is_rate_limited()]] - `method` [EXTRACTED]
@@ -90,4 +90,4 @@ tags:
 - [[test_security_audit.py]] - `references` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_557
+#graphify/code #graphify/INFERRED #community/Community_0

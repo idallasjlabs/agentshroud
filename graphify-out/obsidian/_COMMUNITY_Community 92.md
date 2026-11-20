@@ -1,69 +1,68 @@
 ---
 type: community
-members: 56
+members: 55
 ---
 
 # Community 92
 
-**Members:** 56 nodes
+**Members:** 55 nodes
 
 ## Members
-- [[.content_not_empty()]] - code - gateway/ingest_api/models.py
-- [[.test_empty_content_rejected()]] - code - gateway/tests/test_config_validation.py
-- [[.test_invalid_source_rejected()]] - code - gateway/tests/test_config_validation.py
-- [[.validate_source()]] - code - gateway/ingest_api/models.py
-- [[An empty share-sheet payload is rejected before it reaches the pipeline.]] - rationale - gateway/tests/test_security.py
-- [[Every content_type an iOS Shortcut can emit is accepted with source=shortcut.]] - rationale - gateway/tests/test_security.py
-- [[ForwardRequest]] - code - gateway/ingest_api/models.py
-- [[Request to forward content through the gateway      Received from iOS Shortcuts,]] - rationale - gateway/ingest_api/models.py
-- [[Test ForwardRequest rejects empty content]] - rationale - gateway/tests/test_main_simple.py
-- [[Test ForwardRequest rejects invalid source]] - rationale - gateway/tests/test_main_simple.py
-- [[Test ForwardRequest with valid data]] - rationale - gateway/tests/test_main_simple.py
-- [[Test PII detection with special characters nearby]] - rationale - gateway/tests/test_security.py
-- [[Test all valid sources are accepted]] - rationale - gateway/tests/test_security.py
-- [[Test content with Unicode characters]] - rationale - gateway/tests/test_security.py
-- [[Test content with multiple instances of same PII type]] - rationale - gateway/tests/test_security.py
-- [[Test handling of extremely long content (10MB)]] - rationale - gateway/tests/test_security.py
-- [[Test handling of malformed metadata]] - rationale - gateway/tests/test_security.py
-- [[Test handling of null bytes (potential injection attack)]] - rationale - gateway/tests/test_security.py
-- [[Test handling of very large content (1MB+)]] - rationale - gateway/tests/test_security.py
-- [[Test overlapping or nested PII patterns]] - rationale - gateway/tests/test_security.py
-- [[Test rate limiting behavior]] - rationale - gateway/tests/test_security.py
-- [[Test that SQL injection is prevented]] - rationale - gateway/tests/test_security.py
-- [[Test that XSS payloads are safely stored]] - rationale - gateway/tests/test_security.py
-- [[Test that common false positives are handled]] - rationale - gateway/tests/test_security.py
-- [[Test that empty content is rejected]] - rationale - gateway/tests/test_security.py
-- [[Test that invalid source is rejected]] - rationale - gateway/tests/test_security.py
-- [[The iOSmacOS Shortcuts source value ('shortcut') is on the allowlist.]] - rationale - gateway/tests/test_security.py
-- [[Verify authentication doesn't leak timing information]] - rationale - gateway/tests/test_security.py
-- [[Verify token comparison is constant-time]] - rationale - gateway/tests/test_security.py
-- [[content_type is a closed Literal set; a shortcut cannot invent new types.]] - rationale - gateway/tests/test_security.py
-- [[gatewayingest_apiauth.py (RateLimiter, verify_token)]] - code - gateway/ingest_api/auth.py
-- [[test_constant_time_comparison()]] - code - gateway/tests/test_security.py
-- [[test_empty_content_rejection()]] - code - gateway/tests/test_security.py
-- [[test_extremely_long_content()]] - code - gateway/tests/test_security.py
-- [[test_false_positive_patterns()]] - code - gateway/tests/test_security.py
-- [[test_forward_request_valid()]] - code - gateway/tests/test_main_simple.py
-- [[test_forward_request_validation_empty_content()]] - code - gateway/tests/test_main_simple.py
-- [[test_forward_request_validation_invalid_source()]] - code - gateway/tests/test_main_simple.py
-- [[test_invalid_source_rejection()]] - code - gateway/tests/test_security.py
-- [[test_malformed_json_metadata()]] - code - gateway/tests/test_security.py
-- [[test_multiple_same_type_pii()]] - code - gateway/tests/test_security.py
-- [[test_nested_pii_patterns()]] - code - gateway/tests/test_security.py
-- [[test_null_bytes_in_content()]] - code - gateway/tests/test_security.py
-- [[test_rate_limiter()]] - code - gateway/tests/test_security.py
-- [[test_security.py]] - code - gateway/tests/test_security.py
-- [[test_shortcut_content_types_accepted()]] - code - gateway/tests/test_security.py
-- [[test_shortcut_empty_content_rejected()]] - code - gateway/tests/test_security.py
-- [[test_shortcut_rejects_unknown_content_type()]] - code - gateway/tests/test_security.py
-- [[test_shortcut_source_accepted()]] - code - gateway/tests/test_security.py
-- [[test_special_characters_in_pii()]] - code - gateway/tests/test_security.py
-- [[test_sql_injection_attempt()]] - code - gateway/tests/test_security.py
-- [[test_timing_attack_resistance()]] - code - gateway/tests/test_security.py
-- [[test_unicode_content()]] - code - gateway/tests/test_security.py
-- [[test_valid_sources()]] - code - gateway/tests/test_security.py
-- [[test_very_large_content()]] - code - gateway/tests/test_security.py
-- [[test_xss_attempt()]] - code - gateway/tests/test_security.py
+- [[.test_auto_revert_restores_enforce()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_critical_logged_when_setting_non_enforce()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_custom_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_default_mode_is_enforce()_3]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_default_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_default_revert_minutes_is_30()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_get_mode_default_enforce()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_get_observatory_mode_endpoint()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_invalid_mode_returns_400()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_mode_request_defaults()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_no_critical_when_setting_enforce()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_response_includes_previous_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_response_includes_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_response_includes_timestamp()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_returns_monitor_when_set()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_returns_observatory_when_set()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_revert_minutes_clamped_max()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_revert_minutes_clamped_min()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_revert_task_created_on_put()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_second_put_cancels_previous_task()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_set_enforce_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_set_mode_cancels_previous_revert_task()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_set_mode_clamps_high_revert()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_set_mode_enforce_revert_task_is_noop()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_set_mode_invalid_returns_400()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_set_mode_monitor_auto_reverts()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_set_monitor_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_set_observatory_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_set_observatory_mode_endpoint()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_valid_modes_constant()]] - code - gateway/tests/test_observatory_mode.py
+- [[A revert task is created (and is an asyncio.Task).]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Auto-revert task sets mode back to enforce after delay.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[FastAPI_2]] - code - gateway/tests/test_observatory_mode.py
+- [[Integration tests for Observatory Mode API endpoints.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Minimal FastAPI app that mounts the management router with auth bypassed.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[ModeRequest]] - code - gateway/web/api.py
+- [[Reset AGENTSHROUD_MODE and cancel any revert task between tests.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Second PUT cancels the first revert task.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Set AGENTSHROUD_MODE at runtime with automatic revert to 'enforce'.]] - rationale - gateway/web/api.py
+- [[Test GET managemode endpoint returns correct structure.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test POST managemode endpoint requestresponse.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[TestAutoRevert]] - code - gateway/tests/test_observatory_mode.py
+- [[TestCriticalLogging]] - code - gateway/tests/test_observatory_mode.py
+- [[TestGetMode]] - code - gateway/tests/test_observatory_mode.py
+- [[TestMode]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestModeRequestModel]] - code - gateway/tests/test_observatory_mode.py
+- [[TestObservatoryModeAPI]] - code - gateway/tests/test_observatory_mode.py
+- [[TestSetMode]] - code - gateway/tests/test_observatory_mode.py
+- [[_make_app()]] - code - gateway/tests/test_observatory_mode.py
+- [[client()_11]] - code - gateway/tests/test_observatory_mode.py
+- [[reset_env_and_task()]] - code - gateway/tests/test_observatory_mode.py
+- [[revert_after_minutes above 480 is clamped to 480.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[revert_after_minutes below 1 is clamped to 1.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[set_mode()_1]] - code - gateway/web/api.py
+- [[test_observatory_mode.py]] - code - gateway/tests/test_observatory_mode.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -73,23 +72,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 325]]
-- 6 edges to [[_COMMUNITY_Community 7]]
-- 5 edges to [[_COMMUNITY_Community 36]]
-- 5 edges to [[_COMMUNITY_Community 47]]
-- 5 edges to [[_COMMUNITY_Community 34]]
-- 4 edges to [[_COMMUNITY_Community 707]]
-- 4 edges to [[_COMMUNITY_Community 78]]
-- 4 edges to [[_COMMUNITY_Community 143]]
-- 3 edges to [[_COMMUNITY_Community 861]]
-- 2 edges to [[_COMMUNITY_Community 138]]
-- 2 edges to [[_COMMUNITY_Community 2154]]
+- 22 edges to [[_COMMUNITY_Community 40]]
+- 19 edges to [[_COMMUNITY_Community 9]]
+- 8 edges to [[_COMMUNITY_Community 84]]
+- 3 edges to [[_COMMUNITY_Community 37]]
+- 2 edges to [[_COMMUNITY_Community 125]]
+- 2 edges to [[_COMMUNITY_Community 1002]]
+- 2 edges to [[_COMMUNITY_Community 49]]
+- 1 edge to [[_COMMUNITY_Community 890]]
+- 1 edge to [[_COMMUNITY_Community 151]]
+- 1 edge to [[_COMMUNITY_Community 57]]
 - 1 edge to [[_COMMUNITY_Community 10]]
-- 1 edge to [[_COMMUNITY_Community 792]]
+- 1 edge to [[_COMMUNITY_Community 1015]]
 
 ## Top bridge nodes
-- [[ForwardRequest]] - degree 57, connects to 12 communities
-- [[test_security.py]] - degree 25, connects to 2 communities
-- [[test_forward_request_validation_empty_content()]] - degree 3, connects to 1 community
-- [[test_forward_request_validation_invalid_source()]] - degree 3, connects to 1 community
-- [[test_forward_request_valid()]] - degree 3, connects to 1 community
+- [[ModeRequest]] - degree 47, connects to 8 communities
+- [[test_observatory_mode.py]] - degree 19, connects to 5 communities
+- [[TestSetMode]] - degree 14, connects to 2 communities
+- [[TestGetMode]] - degree 9, connects to 2 communities
+- [[TestAutoRevert]] - degree 8, connects to 2 communities

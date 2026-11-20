@@ -8,7 +8,7 @@ members: 355
 **Members:** 355 nodes
 
 ## Members
-- [[.__init__()_220]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.__init__()_217]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[._make_proxy()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[._make_proxy()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[._make_proxy()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -401,7 +401,7 @@ SORT file.name ASC
 - 5 edges to [[_COMMUNITY_Community 2375]]
 - 5 edges to [[_COMMUNITY_Community 2389]]
 - 5 edges to [[_COMMUNITY_Community 2387]]
-- 4 edges to [[_COMMUNITY_Community 72]]
+- 4 edges to [[_COMMUNITY_Community 1]]
 - 4 edges to [[_COMMUNITY_Community 14]]
 - 1 edge to [[_COMMUNITY_Community 20]]
 

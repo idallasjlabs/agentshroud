@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "Community 84"
+community: "Community 43"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_84
+  - community/Community_43
 ---
 
 # sidecar.py
@@ -16,4 +16,4 @@ tags:
 - [[ScanResponse]] - `contains` [EXTRACTED]
 - [[SidecarScanner]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_84
+#graphify/code #graphify/EXTRACTED #community/Community_43

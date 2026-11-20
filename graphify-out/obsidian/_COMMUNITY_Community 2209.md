@@ -1,18 +1,15 @@
 ---
 type: community
-members: 5
+members: 2
 ---
 
 # Community 2209
 
-**Members:** 5 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[.__aenter__()_4]] - code - gateway/tests/test_llm_proxy.py
-- [[.__aexit__()_4]] - code - gateway/tests/test_llm_proxy.py
-- [[.__init__()_194]] - code - gateway/tests/test_llm_proxy.py
-- [[.stream()]] - code - gateway/tests/test_llm_proxy.py
-- [[_HeadFakeClient]] - code - gateway/tests/test_llm_proxy.py
+- [[mlx_lm backend colon is kept (no LM Studio dash convention).]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_normalize_local_model_mlxlm_keeps_colon()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,8 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 1278]]
-- 1 edge to [[_COMMUNITY_Community 53]]
+- 1 edge to [[_COMMUNITY_Community 208]]
 
 ## Top bridge nodes
-- [[_HeadFakeClient]] - degree 7, connects to 2 communities
+- [[test_normalize_local_model_mlxlm_keeps_colon()]] - degree 2, connects to 1 community

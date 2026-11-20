@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_pipeline.py"
 type: "code"
-community: "Community 32"
+community: "Community 203"
 location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Community_203
 ---
 
 # _text()
@@ -29,4 +29,4 @@ tags:
 - [[.test_writes_disabled_at_escalated()]] - `calls` [EXTRACTED]
 - [[test_edge_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_32
+#graphify/code #graphify/EXTRACTED #community/Community_203

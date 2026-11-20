@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Community 169"
+community: "Community 6"
 location: "L604"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_169
+  - community/Community_6
 ---
 
 # _FakeBus
 
 ## Connections
-- [[.__init__()_212]] - `method` [EXTRACTED]
+- [[.__init__()_209]] - `method` [EXTRACTED]
 - [[.subscribe()_1]] - `method` [EXTRACTED]
 - [[.test_fan_out_filters_and_forwards()]] - `calls` [EXTRACTED]
 - [[.test_fan_out_survives_coerce_exception()]] - `calls` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_169
+#graphify/code #graphify/INFERRED #community/Community_6

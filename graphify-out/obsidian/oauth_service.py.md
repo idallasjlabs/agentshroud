@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/oauth_service.py"
 type: "code"
-community: "Community 32"
+community: "Community 2048"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Community_2048
 ---
 
 # oauth_service.py
@@ -20,4 +20,4 @@ tags:
 - [[VendorProfile_2]] - `imports` [EXTRACTED]
 - [[derive_seal_key()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_32
+#graphify/code #graphify/EXTRACTED #community/Community_2048

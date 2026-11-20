@@ -1,15 +1,14 @@
 ---
 type: community
-members: 53
+members: 50
 ---
 
 # Community 63
 
-**Members:** 53 nodes
+**Members:** 50 nodes
 
 ## Members
 - [[._maybe_record_trust_violation()]] - code - gateway/proxy/pipeline.py
-- [[._missing_()]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[._process_inbound_core()]] - code - gateway/proxy/pipeline.py
 - [[._process_outbound_core()]] - code - gateway/proxy/pipeline.py
 - [[.append()]] - code - gateway/proxy/pipeline.py
@@ -32,10 +31,8 @@ members: 53
 - [[Any_29]] - code - gateway/proxy/pipeline.py
 - [[Append to the chain with guaranteed SQLite persistence.          Used exclusivel]] - rationale - gateway/proxy/pipeline.py
 - [[AuditChainEntry]] - code - gateway/proxy/pipeline.py
-- [[BotIncidentSeverity]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[Build a TelegramAPIProxy with mocked RBAC and rate limiter.      RBACConfig and]] - rationale - gateway/tests/test_telegram_pipeline.py
 - [[FilterResult]] - code - gateway/security/outbound_filter.py
-- [[Ordered severity levels for cross-bot incidents.      Values map to IEC 62443 SL]] - rationale - gateway/security/cross_bot_trust_ledger.py
 - [[PipelineResult]] - code - gateway/proxy/pipeline.py
 - [[PipelineResult_1]] - code - gateway/tests/test_telegram_pipeline.py
 - [[Process an inbound message through the full security pipeline.]] - rationale - gateway/proxy/pipeline.py
@@ -70,26 +67,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 23 edges to [[_COMMUNITY_Community 84]]
-- 14 edges to [[_COMMUNITY_Community 88]]
+- 20 edges to [[_COMMUNITY_Community 84]]
+- 12 edges to [[_COMMUNITY_Community 24]]
 - 12 edges to [[_COMMUNITY_Community 14]]
 - 9 edges to [[_COMMUNITY_Community 37]]
-- 7 edges to [[_COMMUNITY_Community 1566]]
-- 5 edges to [[_COMMUNITY_Community 24]]
+- 5 edges to [[_COMMUNITY_Community 6]]
+- 4 edges to [[_COMMUNITY_Community 88]]
 - 4 edges to [[_COMMUNITY_Community 11]]
-- 4 edges to [[_COMMUNITY_Community 194]]
 - 2 edges to [[_COMMUNITY_Community 68]]
-- 2 edges to [[_COMMUNITY_Community 98]]
-- 1 edge to [[_COMMUNITY_Community 8]]
-- 1 edge to [[_COMMUNITY_Community 151]]
+- 2 edges to [[_COMMUNITY_Community 151]]
 - 1 edge to [[_COMMUNITY_Community 978]]
-- 1 edge to [[_COMMUNITY_Community 7]]
 - 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 924]]
+- 1 edge to [[_COMMUNITY_Community 431]]
 
 ## Top bridge nodes
-- [[pipeline.py]] - degree 15, connects to 9 communities
-- [[PipelineResult]] - degree 26, connects to 5 communities
-- [[BotIncidentSeverity]] - degree 25, connects to 4 communities
-- [[Any_29]] - degree 14, connects to 4 communities
-- [[AuditChainEntry]] - degree 11, connects to 3 communities
+- [[pipeline.py]] - degree 15, connects to 7 communities
+- [[PipelineResult]] - degree 26, connects to 6 communities
+- [[Any_29]] - degree 14, connects to 5 communities
+- [[AuditChainEntry]] - degree 11, connects to 4 communities
+- [[FilterResult]] - degree 10, connects to 3 communities

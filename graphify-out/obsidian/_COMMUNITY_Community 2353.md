@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_lifecycle_maintenance()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[Test complete lifecycle maintenance run.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Qwen3-Coder-30B-A3B (registered opt-in coding model, served via oMLX)     must w]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_failover_base_routes_omlx_qwen3_coder_before_generic_qwen3()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 16]]
+- 1 edge to [[_COMMUNITY_Community 208]]
 
 ## Top bridge nodes
-- [[.test_lifecycle_maintenance()]] - degree 2, connects to 1 community
+- [[test_local_failover_base_routes_omlx_qwen3_coder_before_generic_qwen3()]] - degree 2, connects to 1 community

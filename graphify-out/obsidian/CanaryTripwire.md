@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "Community 32"
+community: "Community 84"
 location: "L44"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_32
+  - community/Community_84
 ---
 
 # CanaryTripwire
 
 ## Connections
-- [[.__init__()_75]] - `method` [EXTRACTED]
+- [[.__init__()_73]] - `method` [EXTRACTED]
 - [[._check_encoded()]] - `method` [EXTRACTED]
 - [[._check_plain()]] - `method` [EXTRACTED]
 - [[._normalize()]] - `method` [EXTRACTED]
@@ -62,7 +62,7 @@ tags:
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[pipeline()_1]] - `calls` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[run()_2]] - `calls` [EXTRACTED]
 - [[service.py]] - `imports` [EXTRACTED]
 - [[stack()]] - `calls` [EXTRACTED]
 - [[test_canary_tripwire.py]] - `imports` [EXTRACTED]
@@ -70,4 +70,4 @@ tags:
 - [[test_edge_e2e_sdk.py]] - `imports` [EXTRACTED]
 - [[test_edge_pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_32
+#graphify/code #graphify/INFERRED #community/Community_84

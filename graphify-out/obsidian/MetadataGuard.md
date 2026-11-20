@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_112]] - `method` [EXTRACTED]
+- [[.__init__()_110]] - `method` [EXTRACTED]
 - [[.check_for_exif()]] - `method` [EXTRACTED]
 - [[.check_oversized_headers()]] - `method` [EXTRACTED]
 - [[.get_document_tag()]] - `method` [EXTRACTED]

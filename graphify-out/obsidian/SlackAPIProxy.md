@@ -2,7 +2,7 @@
 source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
 community: "Community 381"
-location: "L58"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED

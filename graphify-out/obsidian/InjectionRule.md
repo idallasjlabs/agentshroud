@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "Community 1284"
+community: "Community 154"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1284
+  - community/Community_154
 ---
 
 # InjectionRule
 
 ## Connections
-- [[.__init__()_138]] - `references` [EXTRACTED]
+- [[.__init__()_135]] - `references` [EXTRACTED]
 - [[Rule for detecting injection patterns in tool results.]] - `rationale_for` [EXTRACTED]
 - [[tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1284
+#graphify/code #graphify/EXTRACTED #community/Community_154

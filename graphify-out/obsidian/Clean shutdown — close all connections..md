@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Community 132"
+community: "Community 64"
 location: "L856"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_132
+  - community/Community_64
 ---
 
 # Clean shutdown — close all connections.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.shutdown()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_132
+#graphify/rationale #graphify/EXTRACTED #community/Community_64

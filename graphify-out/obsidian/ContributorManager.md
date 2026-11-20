@@ -12,7 +12,7 @@ tags:
 # ContributorManager
 
 ## Connections
-- [[.__init__()_145]] - `method` [EXTRACTED]
+- [[.__init__()_142]] - `method` [EXTRACTED]
 - [[._build_record()]] - `method` [EXTRACTED]
 - [[._ensure_rbac()]] - `method` [EXTRACTED]
 - [[._ensure_teams()]] - `method` [EXTRACTED]
@@ -30,7 +30,7 @@ tags:
 - [[.test_paused_user_reports_paused_true()]] - `calls` [EXTRACTED]
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_77]] - `uses` [INFERRED]
+- [[Any_73]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
 - [[AuditResult_1]] - `uses` [INFERRED]
 - [[Builds ContributorRecord instances from RBACConfig + TeamsConfig.]] - `rationale_for` [EXTRACTED]

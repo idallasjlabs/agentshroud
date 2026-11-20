@@ -13,7 +13,6 @@ tags:
 
 ## Connections
 - [[Build the ADF (Atlassian Document Format) body for POST ...comment.]] - `rationale_for` [EXTRACTED]
-- [[Build the Atlassian Document Format (ADF) body for POST ...comment.      The RE]] - `rationale_for` [EXTRACTED]
 - [[_adf_doc()]] - `calls` [EXTRACTED]
 - [[add_comment()]] - `calls` [EXTRACTED]
 - [[jira_dev_ticket.py]] - `contains` [EXTRACTED]

@@ -1,20 +1,18 @@
 ---
 type: community
-members: 7
+members: 5
 ---
 
 # Community 2017
 
-**Members:** 7 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[Common Injection Signatures Detected]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
-- [[False Positive (Legitimate Content Blocked)]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
-- [[HTTP 400 — Prompt Injection Detected]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
-- [[Prompt Injection Blocks_2]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
-- [[Prompt Injection in Monitor Mode]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
-- [[Related Notes_61]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
-- [[Tool Result Injections]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[.test_read_generic_exception_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[.test_read_nonzero_returncode_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[.test_read_success_strips_whitespace()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[.test_read_timeout_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[TestReadFrom1Password]] - code - gateway/tests/test_key_rotation_internals.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +22,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1084]]
+- 2 edges to [[_COMMUNITY_Community 122]]
+- 2 edges to [[_COMMUNITY_Community 261]]
+- 1 edge to [[_COMMUNITY_Community 271]]
+- 1 edge to [[_COMMUNITY_Community 198]]
 
 ## Top bridge nodes
-- [[Prompt Injection Blocks_2]] - degree 7, connects to 1 community
+- [[TestReadFrom1Password]] - degree 10, connects to 4 communities

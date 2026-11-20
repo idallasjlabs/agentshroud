@@ -1,18 +1,15 @@
 ---
 type: community
-members: 5
+members: 2
 ---
 
 # Community 2185
 
-**Members:** 5 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[.get_lifecycle_status()]] - code - gateway/security/memory_lifecycle.py
-- [[.get_recent_actions()]] - code - gateway/security/memory_lifecycle.py
-- [[Any_59]] - code - gateway/security/memory_lifecycle.py
-- [[Get current lifecycle management status.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Get retention actions taken in the last N hours.]] - rationale - gateway/security/memory_lifecycle.py
+- [[For Ollama backend the colon is kept (Ollama expects it).]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_normalize_local_model_ollama_keeps_colon()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,10 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 16]]
-- 1 edge to [[_COMMUNITY_Community 1289]]
+- 1 edge to [[_COMMUNITY_Community 208]]
 
 ## Top bridge nodes
-- [[.get_recent_actions()]] - degree 4, connects to 2 communities
-- [[.get_lifecycle_status()]] - degree 5, connects to 1 community
-- [[Any_59]] - degree 2, connects to 1 community
+- [[test_normalize_local_model_ollama_keeps_colon()]] - degree 2, connects to 1 community

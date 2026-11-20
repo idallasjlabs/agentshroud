@@ -1,21 +1,19 @@
 ---
 type: community
-members: 8
+members: 6
 ---
 
 # Community 1565
 
-**Members:** 8 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[._fake_get_updates_urlopen()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[._make_proxy_with_mock_buffer()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_json_body_still_calls_mark_delivered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_url_encoded_body_calls_mark_delivered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[JSON getUpdates body must still call mark_delivered (existing behaviour preserve]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[TestReplayBufferOffsetParsing]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[URL-encoded getUpdates body must call mark_delivered with the correct int offset]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Verify URL-encoded and JSON getUpdates bodies both trigger mark_delivered correc]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[._check_size()]] - code - gateway/security/report_store.py
+- [[._sanitize_async()]] - code - gateway/security/report_store.py
+- [[.save()_2]] - code - gateway/security/report_store.py
+- [[.save_async()]] - code - gateway/security/report_store.py
+- [[Persist a report (sync sanitizer path); return its id.          Sanitizes ALL fr]] - rationale - gateway/security/report_store.py
+- [[Persist a report awaiting an async sanitizer (presidio) if injected.          Sa]] - rationale - gateway/security/report_store.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,12 +23,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 84]]
-- 1 edge to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 329]]
-- 1 edge to [[_COMMUNITY_Community 845]]
-- 1 edge to [[_COMMUNITY_Community 626]]
+- 4 edges to [[_COMMUNITY_Community 110]]
+- 2 edges to [[_COMMUNITY_Community 943]]
 
 ## Top bridge nodes
-- [[TestReplayBufferOffsetParsing]] - degree 10, connects to 3 communities
-- [[._make_proxy_with_mock_buffer()]] - degree 5, connects to 2 communities
+- [[.save_async()]] - degree 5, connects to 2 communities
+- [[.save()_2]] - degree 4, connects to 2 communities
+- [[._check_size()]] - degree 3, connects to 1 community
+- [[._sanitize_async()]] - degree 2, connects to 1 community

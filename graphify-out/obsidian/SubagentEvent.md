@@ -12,7 +12,7 @@ tags:
 # SubagentEvent
 
 ## Connections
-- [[._log_event()_1]] - `calls` [EXTRACTED]
+- [[._log_event()]] - `calls` [EXTRACTED]
 - [[.get_audit_log()_6]] - `references` [EXTRACTED]
 - [[.get_flagged_events()]] - `references` [EXTRACTED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]

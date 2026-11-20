@@ -9,8 +9,8 @@ members: 38
 
 ## Members
 - [[.__call__()_13]] - code - gateway/tests/test_rate_limit_guard.py
-- [[.__init__()_126]] - code - gateway/security/rate_limit_guard.py
-- [[.__init__()_204]] - code - gateway/tests/test_rate_limit_guard.py
+- [[.__init__()_124]] - code - gateway/security/rate_limit_guard.py
+- [[.__init__()_201]] - code - gateway/tests/test_rate_limit_guard.py
 - [[._burst_limit()]] - code - gateway/security/rate_limit_guard.py
 - [[._sustained_limit()]] - code - gateway/security/rate_limit_guard.py
 - [[.advance()_1]] - code - gateway/tests/test_rate_limit_guard.py

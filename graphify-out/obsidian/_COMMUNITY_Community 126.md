@@ -80,18 +80,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_Community 118]]
+- 15 edges to [[_COMMUNITY_Community 118]]
 - 5 edges to [[_COMMUNITY_Community 227]]
 - 2 edges to [[_COMMUNITY_Community 420]]
 - 2 edges to [[_COMMUNITY_Community 295]]
-- 2 edges to [[_COMMUNITY_Community 48]]
 - 2 edges to [[_COMMUNITY_Community 139]]
-- 2 edges to [[_COMMUNITY_Community 1924]]
 - 1 edge to [[_COMMUNITY_Community 20]]
 
 ## Top bridge nodes
-- [[sunday-upgrade-apply.sh]] - degree 56, connects to 7 communities
-- [[check_noop_gate()]] - degree 12, connects to 2 communities
+- [[sunday-upgrade-apply.sh]] - degree 56, connects to 5 communities
 - [[sunday-upgrade-apply main sequence]] - degree 19, connects to 1 community
 - [[phase_baseline()]] - degree 12, connects to 1 community
+- [[check_noop_gate()]] - degree 12, connects to 1 community
 - [[phase_preflight()]] - degree 11, connects to 1 community

@@ -15,7 +15,7 @@ tags:
 - [[.test_clean_when_installed_but_no_report()]] - `calls` [EXTRACTED]
 - [[.test_not_run_when_no_report_dir()]] - `calls` [EXTRACTED]
 - [[.test_returns_generate_summary_output()]] - `calls` [EXTRACTED]
-- [[Any_68]] - `references` [EXTRACTED]
+- [[Any_64]] - `references` [EXTRACTED]
 - [[Return latest Trivy scan summary from saved reports.      When Trivy is installe]] - `rationale_for` [EXTRACTED]
 - [[_load_latest_json()]] - `calls` [EXTRACTED]
 - [[_score_ai_model_supply_chain()]] - `calls` [EXTRACTED]

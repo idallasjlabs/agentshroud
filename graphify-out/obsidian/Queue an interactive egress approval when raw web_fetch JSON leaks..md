@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 2073"
+community: "Community 14"
 location: "L4034"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2073
+  - community/Community_14
 ---
 
 # Queue an interactive egress approval when raw web_fetch JSON leaks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._trigger_web_fetch_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2073
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

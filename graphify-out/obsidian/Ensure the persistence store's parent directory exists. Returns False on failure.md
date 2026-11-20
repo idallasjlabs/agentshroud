@@ -2,7 +2,7 @@
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
 community: "Community 223"
-location: "L395"
+location: "L390"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
@@ -13,5 +13,6 @@ tags:
 
 ## Connections
 - [[_ensure_collab_dir()]] - `rationale_for` [EXTRACTED]
+- [[_write_collab_store()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_223

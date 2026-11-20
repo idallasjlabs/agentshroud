@@ -2,7 +2,7 @@
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
 community: "Community 67"
-location: "L1245"
+location: "L1244"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -15,7 +15,7 @@ tags:
 - [[.test_one_when_no_tools()]] - `calls` [EXTRACTED]
 - [[.test_three_when_both_running()]] - `calls` [EXTRACTED]
 - [[.test_two_when_falco_running()]] - `calls` [EXTRACTED]
-- [[Any_68]] - `references` [EXTRACTED]
+- [[Any_64]] - `references` [EXTRACTED]
 - [[Path_19]] - `calls` [EXTRACTED]
 - [[Score domain 12 Incident Response (0-5).      1=SOC exists, 2=Falco running, 3=]] - `rationale_for` [EXTRACTED]
 - [[_app_state_has()]] - `calls` [EXTRACTED]

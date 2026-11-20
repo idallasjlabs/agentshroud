@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.by_name()]] - `method` [EXTRACTED]
 - [[.from_source()]] - `method` [EXTRACTED]
-- [[.to_dict()_16]] - `method` [EXTRACTED]
+- [[.to_dict()_14]] - `method` [EXTRACTED]
 - [[.to_json()]] - `method` [EXTRACTED]
 - [[In-memory representation of the skillsagentsMCP manifest.]] - `rationale_for` [EXTRACTED]
 - [[Path_24]] - `uses` [INFERRED]

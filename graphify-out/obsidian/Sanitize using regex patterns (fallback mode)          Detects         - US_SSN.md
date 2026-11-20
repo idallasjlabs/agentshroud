@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "Community 28"
+community: "Community 84"
 location: "L353"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_28
+  - community/Community_84
 ---
 
 # Sanitize using regex patterns (fallback mode)          Detects:         - US_SSN
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._sanitize_regex()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_28
+#graphify/rationale #graphify/EXTRACTED #community/Community_84

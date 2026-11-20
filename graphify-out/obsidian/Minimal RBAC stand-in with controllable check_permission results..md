@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "rationale"
-community: "Community 6"
+community: "Community 890"
 location: "L165"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_890
 ---
 
 # Minimal RBAC stand-in with controllable check_permission results.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeRBAC_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/Community_890

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "rationale"
-community: "Community 79"
+community: "Community 60"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_79
+  - community/Community_60
 ---
 
 # Unit tests for the _is_tool_call_request helper (TDD RED phase).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestIsToolCallRequest]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_79
+#graphify/rationale #graphify/EXTRACTED #community/Community_60

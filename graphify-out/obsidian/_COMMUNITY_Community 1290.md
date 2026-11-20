@@ -1,27 +1,20 @@
 ---
 type: community
-members: 14
+members: 7
 ---
 
 # Community 1290
 
-**Members:** 14 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[._export_cef()]] - code - gateway/security/audit_export.py
-- [[._export_json()]] - code - gateway/security/audit_export.py
-- [[._export_jsonld()]] - code - gateway/security/audit_export.py
-- [[._parse_cef_for_verification()]] - code - gateway/security/audit_export.py
-- [[.export_events()]] - code - gateway/security/audit_export.py
-- [[.verify_export_integrity()]] - code - gateway/security/audit_export.py
-- [[AuditEvent]] - code - gateway/security/audit_export.py
-- [[Export audit events in the specified format.          Args             start_ti]] - rationale - gateway/security/audit_export.py
-- [[Export events in Common Event Format (CEF).          CEF Format CEFVersionDev]] - rationale - gateway/security/audit_export.py
-- [[Export events in JSON-LD format with security ontology.]] - rationale - gateway/security/audit_export.py
-- [[Export events in standard JSON format.]] - rationale - gateway/security/audit_export.py
-- [[Parse CEF lines and extract entryHashpreviousHash for chain verification.]] - rationale - gateway/security/audit_export.py
-- [[TextIO]] - code - gateway/security/audit_export.py
-- [[Verify the integrity of an exported audit log.          Args             export]] - rationale - gateway/security/audit_export.py
+- [[.test_bare_host_in_destination_field()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_bare_host_in_non_destination_field_ignored()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_direct_urls_dedup_and_lists()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_invalid_url_without_netloc_ignored()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_list_inherits_parent_key()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_non_matching_text_in_destination_field()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestExtractEgressTargets]] - code - gateway/tests/test_mcp_proxy_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,13 +24,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 978]]
-- 2 edges to [[_COMMUNITY_Community 254]]
-- 2 edges to [[_COMMUNITY_Community 32]]
+- 5 edges to [[_COMMUNITY_Community 132]]
+- 4 edges to [[_COMMUNITY_Community 64]]
+- 4 edges to [[_COMMUNITY_Community 54]]
+- 1 edge to [[_COMMUNITY_Community 184]]
+- 1 edge to [[_COMMUNITY_Community 230]]
 
 ## Top bridge nodes
-- [[AuditEvent]] - degree 6, connects to 2 communities
-- [[TextIO]] - degree 3, connects to 2 communities
-- [[.export_events()]] - degree 6, connects to 1 community
-- [[._export_cef()]] - degree 4, connects to 1 community
-- [[._export_jsonld()]] - degree 4, connects to 1 community
+- [[TestExtractEgressTargets]] - degree 21, connects to 5 communities

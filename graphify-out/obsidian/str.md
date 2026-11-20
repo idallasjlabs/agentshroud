@@ -1,22 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 8"
+community: "Community 38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_8
+  - community/Community_38
 ---
 
 # str
 
 ## Connections
-- [[A2ADecision]] - `inherits` [EXTRACTED]
-- [[A2AMessageType]] - `inherits` [EXTRACTED]
 - [[A2AMethod]] - `inherits` [EXTRACTED]
 - [[A2APolicyAction]] - `inherits` [EXTRACTED]
 - [[Action_1]] - `inherits` [EXTRACTED]
-- [[AlarmStatus]] - `inherits` [EXTRACTED]
 - [[AlertLevel]] - `inherits` [EXTRACTED]
 - [[AuditResult]] - `inherits` [EXTRACTED]
 - [[ChainAction]] - `inherits` [EXTRACTED]
@@ -28,8 +25,6 @@ tags:
 - [[EgressChannel]] - `inherits` [EXTRACTED]
 - [[EgressStatus]] - `inherits` [EXTRACTED]
 - [[FindingSeverity]] - `inherits` [EXTRACTED]
-- [[GovernanceAction]] - `inherits` [EXTRACTED]
-- [[GovernanceEventType]] - `inherits` [EXTRACTED]
 - [[GroupRole]] - `inherits` [EXTRACTED]
 - [[HealthStatus]] - `inherits` [EXTRACTED]
 - [[HostStatus]] - `inherits` [EXTRACTED]
@@ -60,4 +55,4 @@ tags:
 - [[VulnClass]] - `inherits` [EXTRACTED]
 - [[WSEventType]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_8
+#graphify/code #graphify/EXTRACTED #community/Community_38

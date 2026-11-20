@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Community 20"
+community: "Community 890"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_20
+  - community/Community_890
 ---
 
 # ServiceManager
 
 ## Connections
-- [[.__init__()_146]] - `method` [EXTRACTED]
+- [[.__init__()_143]] - `method` [EXTRACTED]
 - [[._describe_service()]] - `method` [EXTRACTED]
 - [[._get_engine()]] - `method` [EXTRACTED]
 - [[._logs_via_socket()]] - `method` [EXTRACTED]
@@ -57,7 +57,7 @@ tags:
 - [[.update_service()]] - `method` [EXTRACTED]
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_77]] - `uses` [INFERRED]
+- [[Any_73]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
 - [[AuditResult_1]] - `uses` [INFERRED]
 - [[CreateDelegationRequest]] - `uses` [INFERRED]
@@ -124,4 +124,4 @@ tags:
 - [[update_service()]] - `calls` [EXTRACTED]
 - [[upgrade_hermes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_20
+#graphify/code #graphify/EXTRACTED #community/Community_890

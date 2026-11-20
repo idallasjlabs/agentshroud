@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
 type: "document"
-community: "Community 628"
+community: "Community 1569"
 location: "L129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_628
+  - community/Community_1569
 ---
 
 # Related Notes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[agentshroud-bot_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_628
+#graphify/document #graphify/EXTRACTED #community/Community_1569

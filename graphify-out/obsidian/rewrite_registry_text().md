@@ -2,7 +2,7 @@
 source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
 community: "Community 265"
-location: "L368"
+location: "L360"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # rewrite_registry_text()
 
 ## Connections
-- [[Any_88]] - `references` [EXTRACTED]
+- [[Any_84]] - `references` [EXTRACTED]
 - [[Rewrite every ``id old`` line and set ghsa_idcve_id right after it.]] - `rationale_for` [EXTRACTED]
 - [[_py_literal()]] - `calls` [EXTRACTED]
 - [[main()_27]] - `calls` [EXTRACTED]

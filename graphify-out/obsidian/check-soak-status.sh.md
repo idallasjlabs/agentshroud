@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/check-soak-status.sh"
 type: "code"
-community: "Community 1924"
+community: "Community 118"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1924
+  - community/Community_118
 ---
 
 # check-soak-status.sh
@@ -21,4 +21,4 @@ tags:
 - [[upgrade-2026-10-04]] - `references` [EXTRACTED]
 - [[upgrade-2026-10-18]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1924
+#graphify/code #graphify/EXTRACTED #community/Community_118

@@ -2,7 +2,7 @@
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
 community: "Community 8"
-location: "L610"
+location: "L605"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

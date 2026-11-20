@@ -25,12 +25,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 72]]
-- 2 edges to [[_COMMUNITY_Community 53]]
+- 2 edges to [[_COMMUNITY_Community 1]]
 - 2 edges to [[_COMMUNITY_Community 37]]
-- 1 edge to [[_COMMUNITY_Community 978]]
+- 1 edge to [[_COMMUNITY_Community 254]]
+- 1 edge to [[_COMMUNITY_Community 53]]
+- 1 edge to [[_COMMUNITY_Community 1658]]
 
 ## Top bridge nodes
-- [[TestForwardEndpoint]] - degree 7, connects to 2 communities
+- [[TestForwardEndpoint]] - degree 7, connects to 3 communities
 - [[.test_forward_middleware_blocking()]] - degree 4, connects to 2 communities
 - [[.test_forward_middleware_error_handling()]] - degree 4, connects to 2 communities

@@ -12,7 +12,7 @@ tags:
 # FakePipelineResult
 
 ## Connections
-- [[.process_inbound()_7]] - `references` [EXTRACTED]
+- [[.process_inbound()_6]] - `references` [EXTRACTED]
 - [[FalcoAlertWatcher]] - `uses` [INFERRED]
 - [[LockdownLevel_1]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]

@@ -1,30 +1,26 @@
 ---
 type: community
-members: 75
+members: 70
 ---
 
 # Community 70
 
-**Members:** 75 nodes
+**Members:** 70 nodes
 
 ## Members
-- [[NOTE Called within _lock context]] - rationale - gateway/approval_queue/queue.py
-- [[.__init__()_113]] - code - gateway/security/mfa_guard.py
+- [[.__init__()_111]] - code - gateway/security/mfa_guard.py
 - [[._decode_secret()]] - code - gateway/security/mfa_guard.py
 - [[._prune_used()]] - code - gateway/security/mfa_guard.py
 - [[._totp_for_counter()]] - code - gateway/security/mfa_guard.py
 - [[.from_env()_3]] - code - gateway/security/mfa_guard.py
 - [[.is_required()]] - code - gateway/security/mfa_guard.py
 - [[.verify()_1]] - code - gateway/security/mfa_guard.py
-- [[AgentShroud Security Dashboard (index.html)]] - code - gateway/dashboard/index.html
-- [[Approval Queue Module Badge Icon]] - image - branding/icons/modules/approval-queue-256x256.png
 - [[Build an MFAGuard from environment variables  Docker secret file.          Reco]] - rationale - gateway/security/mfa_guard.py
 - [[Compute the RFC 6238 TOTP value for a specific time-step counter.]] - rationale - gateway/security/mfa_guard.py
 - [[Decode a base32 secret; return b on emptyinvalid input.]] - rationale - gateway/security/mfa_guard.py
 - [[Drop replay records older than the accepted window (bounded memory).]] - rationale - gateway/security/mfa_guard.py
 - [[EnhancedApprovalQueue_3]] - code - gateway/tests/test_mfa_guard.py
 - [[MFAGuard_2]] - code - gateway/security/mfa_guard.py
-- [[MFAGuard.verify()]] - code - gateway/security/mfa_guard.py
 - [[MFAResult]] - code - gateway/security/mfa_guard.py
 - [[Outcome of an MFA verification.      Attributes         allowed True if the ac]] - rationale - gateway/security/mfa_guard.py
 - [[Return True if ``action_type`` requires a second factor right now.          Two]] - rationale - gateway/security/mfa_guard.py
@@ -40,7 +36,6 @@ members: 75
 - [[enhanced_mfa_queue()]] - code - gateway/tests/test_mfa_guard.py
 - [[mfa_guard.py]] - code - gateway/security/mfa_guard.py
 - [[now()_1]] - code - gateway/tests/test_mfa_guard.py
-- [[queue.py]] - code - gateway/approval_queue/queue.py
 - [[test_counter_below_zero_skipped()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_custom_high_risk_action_types()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_decide_mfa_disabled_approves_without_code()]] - code - gateway/tests/test_mfa_guard.py
@@ -92,21 +87,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 37 edges to [[_COMMUNITY_Community 30]]
-- 17 edges to [[_COMMUNITY_Community 32]]
+- 30 edges to [[_COMMUNITY_Community 30]]
+- 9 edges to [[_COMMUNITY_Community 84]]
+- 7 edges to [[_COMMUNITY_Community 7]]
 - 7 edges to [[_COMMUNITY_Community 2048]]
-- 5 edges to [[_COMMUNITY_Community 7]]
-- 2 edges to [[_COMMUNITY_Community 707]]
+- 4 edges to [[_COMMUNITY_Community 41]]
+- 4 edges to [[_COMMUNITY_Community 203]]
+- 3 edges to [[_COMMUNITY_Community 151]]
 - 1 edge to [[_COMMUNITY_Community 489]]
-- 1 edge to [[_COMMUNITY_Community 333]]
+- 1 edge to [[_COMMUNITY_Community 334]]
 - 1 edge to [[_COMMUNITY_Community 35]]
 - 1 edge to [[_COMMUNITY_Community 213]]
-- 1 edge to [[_COMMUNITY_Community 0]]
-- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 45]]
 
 ## Top bridge nodes
-- [[MFAGuard_2]] - degree 73, connects to 5 communities
-- [[test_mfa_guard.py]] - degree 60, connects to 3 communities
-- [[queue.py]] - degree 14, connects to 3 communities
+- [[MFAGuard_2]] - degree 73, connects to 8 communities
+- [[test_mfa_guard.py]] - degree 60, connects to 4 communities
 - [[_queue()]] - degree 11, connects to 2 communities
 - [[EnhancedApprovalQueue_3]] - degree 11, connects to 2 communities
+- [[mfa_guard.py]] - degree 6, connects to 2 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 10"
+community: "Community 890"
 location: "L1100"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_10
+  - community/Community_890
 ---
 
 # SetRoleRequest
@@ -23,4 +23,4 @@ tags:
 - [[router.py_1]] - `contains` [EXTRACTED]
 - [[set_user_role()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_10
+#graphify/code #graphify/INFERRED #community/Community_890

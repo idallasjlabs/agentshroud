@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "Community 1305"
+community: "Community 60"
 location: "L259"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1305
+  - community/Community_60
 ---
 
 # Validate and sanitize bot_id to prevent path traversal.          Allows alphanum
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._validate_bot_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1305
+#graphify/rationale #graphify/EXTRACTED #community/Community_60

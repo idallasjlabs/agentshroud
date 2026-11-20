@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup-telegram.md"
 type: "document"
-community: "Community 324"
+community: "Community 816"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_324
+  - community/Community_816
 ---
 
 # Step 5: Configure agentshroud.yaml
@@ -15,4 +15,4 @@ tags:
 - [[First Time Setup_1]] - `contains` [EXTRACTED]
 - [[Telegram Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_324
+#graphify/document #graphify/EXTRACTED #community/Community_816

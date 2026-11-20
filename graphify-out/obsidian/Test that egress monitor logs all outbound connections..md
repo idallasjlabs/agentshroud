@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "rationale"
-community: "Community 120"
+community: "Community 103"
 location: "L213"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_120
+  - community/Community_103
 ---
 
 # Test that egress monitor logs all outbound connections.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_egress_monitor_logs_responses()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_120
+#graphify/rationale #graphify/EXTRACTED #community/Community_103

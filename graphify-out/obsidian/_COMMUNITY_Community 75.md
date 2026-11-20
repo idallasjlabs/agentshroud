@@ -1,18 +1,17 @@
 ---
 type: community
-members: 182
+members: 139
 ---
 
 # Community 75
 
-**Members:** 182 nodes
+**Members:** 139 nodes
 
 ## Members
 - [[.__call__()_12]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.__init__()_123]] - code - gateway/security/progressive_lockdown.py
-- [[.__init__()_202]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.__init__()_203]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.__init__()_210]] - code - gateway/tests/test_soc_edge.py
+- [[.__init__()_121]] - code - gateway/security/progressive_lockdown.py
+- [[.__init__()_199]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.__init__()_200]] - code - gateway/tests/test_progressive_lockdown.py
 - [[._action()]] - code - gateway/security/progressive_lockdown.py
 - [[._claim_notify()]] - code - gateway/security/progressive_lockdown.py
 - [[._effective_level()]] - code - gateway/security/progressive_lockdown.py
@@ -26,12 +25,10 @@ members: 182
 - [[.escalate_to()]] - code - gateway/security/progressive_lockdown.py
 - [[.get_status()_2]] - code - gateway/security/progressive_lockdown.py
 - [[.is_owner()_3]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.is_owner()_4]] - code - gateway/tests/test_soc_edge.py
 - [[.is_suspended()]] - code - gateway/security/progressive_lockdown.py
 - [[.level_of()]] - code - gateway/security/progressive_lockdown.py
-- [[.process_inbound()_7]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.process_inbound()_6]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.record_block()]] - code - gateway/security/progressive_lockdown.py
-- [[.require()_1]] - code - gateway/tests/test_soc_edge.py
 - [[.reset()_2]] - code - gateway/security/progressive_lockdown.py
 - [[.stop()_10]] - code - gateway/security/falco_monitor.py
 - [[.test_accepts_string_level()]] - code - gateway/tests/test_progressive_lockdown.py
@@ -42,32 +39,19 @@ members: 182
 - [[.test_arbitrary_string_principals_are_isolated()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_async_gather_record_block_counts_exactly()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_attach_lockdown_replaces_instance()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_bad_scope_422()]] - code - gateway/tests/test_soc_edge.py
 - [[.test_blocks_inside_window_still_escalate()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_collab_notified_at_alert_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_collab_notified_at_escalated_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_collab_notified_at_suspended_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_collab_notified_only_once_per_level()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_confirm_required()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_confirm_required()_1]] - code - gateway/tests/test_soc_edge.py
 - [[.test_decay_off_by_default_blocks_never_age_out()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_declared_mode_and_drift()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_disabled_edge_is_503()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_disabled_edge_is_503()_1]] - code - gateway/tests/test_soc_edge.py
 - [[.test_disabled_state()]] - code - gateway/tests/test_soc_edge.py
 - [[.test_enabled_state()]] - code - gateway/tests/test_soc_edge.py
 - [[.test_engine_failure_is_empty_not_raise()]] - code - gateway/tests/test_soc_edge.py
 - [[.test_escalated_floor_holds_against_later_low_block_counts()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_escalated_level_at_5_blocks()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_falco_critical_escalates_instance_shared_with_telegram()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_invalid_value_is_reported_not_guessed()]] - code - gateway/tests/test_soc_edge.py
 - [[.test_jumps_directly_to_requested_level()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_kill_client_must_exist()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_kill_jti_must_be_issued()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_kill_unknown_vendor_404()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_kill_vendor_writes_store_and_audits()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_kill_write_that_did_not_land_is_500()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_killed_vendor_cannot_enroll()]] - code - gateway/tests/test_soc_edge.py
 - [[.test_level_of_reflects_decay_without_new_blocks()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_lifespan_sets_one_shared_instance_for_telegram_and_falco()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_locked_includes_unlock_hint()]] - code - gateway/tests/test_progressive_lockdown.py
@@ -82,40 +66,28 @@ members: 182
 - [[.test_old_blocks_age_out_when_window_set()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_owner_also_notified_on_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_owner_messages_pass_despite_collab_suspension()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_owner_only()]] - code - gateway/tests/test_soc_edge.py
 - [[.test_proxy_falls_back_to_private_instance_when_standalone()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_proxy_uses_injected_instance()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_rbac_denial_is_403()]] - code - gateway/tests/test_soc_edge.py
 - [[.test_realert_after_full_decay()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_rejects_non_positive_window()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_rejects_unknown_level()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_requires_manage_and_owner()]] - code - gateway/tests/test_soc_edge.py
 - [[.test_reset_clears_escalation()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_reset_false_for_unknown_user()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_reset_removes_suspended_state()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_reset_true_for_known_user()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_returns_working_code_once_and_never_logs_it()]] - code - gateway/tests/test_soc_edge.py
 - [[.test_same_level_does_not_renotify()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_suspended_drop_notice_respects_cooldown()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_suspended_level_at_10_blocks()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_suspended_user_gets_drop_notice()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_suspension_is_sticky_under_decay()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_threaded_record_block_counts_exactly()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_ttl_capped_at_900()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_unkill_owner_only()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_unkill_removes_and_noop_is_404()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_unkill_write_that_did_not_land_is_500()]] - code - gateway/tests/test_soc_edge.py
 - [[.test_unlock_clears_suspended_drop_cooldown()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_unlock_known_user_succeeds()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_unlock_unknown_user_reports_no_state()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.test_unlock_without_user_id_shows_usage()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_unset_reads_as_local()]] - code - gateway/tests/test_soc_edge.py
-- [[.test_vendor_must_exist_and_be_enabled()]] - code - gateway/tests/test_soc_edge.py
-- [[AGENTSHROUD_DEPLOYMENT (scriptslibdeployment-mode.sh) shown next to what runs.]] - rationale - gateway/tests/test_soc_edge.py
 - [[Apply decay (if enabled) and recompute the principal's level.]] - rationale - gateway/security/progressive_lockdown.py
 - [[Args             decay_window_seconds When set, only blocks recorded within th]] - rationale - gateway/security/progressive_lockdown.py
 - [[Drive a single owner command through the proxy and capture admin notices.]] - rationale - gateway/tests/test_progressive_lockdown.py
-- [[FakeCaller]] - code - gateway/tests/test_soc_edge.py
 - [[FakeClock]] - code - gateway/tests/test_progressive_lockdown.py
 - [[FakePipelineResult]] - code - gateway/tests/test_progressive_lockdown.py
 - [[FakeRBAC]] - code - gateway/tests/test_progressive_lockdown.py
@@ -127,10 +99,8 @@ members: 182
 - [[Owner messages must never be blocked by the suspension logic.]] - rationale - gateway/tests/test_progressive_lockdown.py
 - [[Owner should receive an escalation notice on the 3rd block.]] - rationale - gateway/tests/test_progressive_lockdown.py
 - [[PassthroughPipeline]] - code - gateway/tests/test_progressive_lockdown.py
-- [[Path_1]] - code - gateway/inbound_edge/profiles.py
 - [[Progressive Lockdown UX Tests]] - code - gateway/tests/test_progressive_lockdown.py
 - [[ProgressiveLockdown]] - code - gateway/security/progressive_lockdown.py
-- [[RBAC is recorded, not enforced; owner is switchable.]] - rationale - gateway/tests/test_soc_edge.py
 - [[Record one blocked request for a principal and return the resulting action.]] - rationale - gateway/security/progressive_lockdown.py
 - [[Return True if the principal's session is currently suspended.]] - rationale - gateway/security/progressive_lockdown.py
 - [[Return True the first time `level` is reached; mark it as notified.]] - rationale - gateway/security/progressive_lockdown.py
@@ -144,10 +114,6 @@ members: 182
 - [[TestCollabLockdownNotifications]] - code - gateway/tests/test_progressive_lockdown.py
 - [[TestConcurrency]] - code - gateway/tests/test_progressive_lockdown.py
 - [[TestDecay]] - code - gateway/tests/test_progressive_lockdown.py
-- [[TestDeploymentMode]] - code - gateway/tests/test_soc_edge.py
-- [[TestEdgeEnroll]] - code - gateway/tests/test_soc_edge.py
-- [[TestEdgeEventOverWebSocket]] - code - gateway/tests/test_soc_edge.py
-- [[TestEdgeKill]] - code - gateway/tests/test_soc_edge.py
 - [[TestEdgeStatus]] - code - gateway/tests/test_soc_edge.py
 - [[TestEscalateTo]] - code - gateway/tests/test_progressive_lockdown.py
 - [[TestLifespanWiring]] - code - gateway/tests/test_progressive_lockdown.py
@@ -170,24 +136,15 @@ members: 182
 - [[_make_proxy()_1]] - code - gateway/tests/test_progressive_lockdown.py
 - [[_make_update()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[_max_level()]] - code - gateway/security/progressive_lockdown.py
-- [[_no_rows()]] - code - gateway/tests/test_soc_edge.py
-- [[_profile()_2]] - code - gateway/tests/test_soc_edge.py
 - [[_wrap()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[edge()_2]] - code - gateway/tests/test_soc_edge.py
-- [[holder()]] - code - gateway/tests/test_soc_edge.py
 - [[progressive_lockdown.py]] - code - gateway/security/progressive_lockdown.py
-- [[state()]] - code - gateway/tests/test_soc_edge.py
-- [[test_command_center_has_agents_and_edge_tabs()]] - code - gateway/tests/test_soc_edge.py
-- [[test_command_center_shows_deployment_and_connection()]] - code - gateway/tests/test_soc_edge.py
 - [[test_critical_alert_triggers_lockdown()]] - code - gateway/tests/test_falco_watcher.py
 - [[test_deduplication_same_alert_twice()]] - code - gateway/tests/test_falco_watcher.py
-- [[test_edge_service_exposes_enforced_profiles()]] - code - gateway/tests/test_soc_edge.py
 - [[test_falco_watcher.py]] - code - gateway/tests/test_falco_watcher.py
 - [[test_missing_alert_dir_noop()]] - code - gateway/tests/test_falco_watcher.py
 - [[test_multiple_critical_alerts()]] - code - gateway/tests/test_falco_watcher.py
 - [[test_no_progressive_lockdown_configured()]] - code - gateway/tests/test_falco_watcher.py
 - [[test_progressive_lockdown.py]] - code - gateway/tests/test_progressive_lockdown.py
-- [[test_soc_edge.py]] - code - gateway/tests/test_soc_edge.py
 - [[test_stop_halts_run_loop()]] - code - gateway/tests/test_falco_watcher.py
 - [[test_warning_alert_not_blocked()]] - code - gateway/tests/test_falco_watcher.py
 
@@ -199,32 +156,28 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 43 edges to [[_COMMUNITY_Community 32]]
 - 20 edges to [[_COMMUNITY_Community 14]]
-- 18 edges to [[_COMMUNITY_Community 2048]]
-- 16 edges to [[_COMMUNITY_Community 6]]
-- 13 edges to [[_COMMUNITY_Community 169]]
-- 10 edges to [[_COMMUNITY_Community 151]]
+- 19 edges to [[_COMMUNITY_Community 80]]
+- 18 edges to [[_COMMUNITY_Community 84]]
+- 14 edges to [[_COMMUNITY_Community 2048]]
 - 10 edges to [[_COMMUNITY_Community 890]]
-- 8 edges to [[_COMMUNITY_Community 194]]
-- 6 edges to [[_COMMUNITY_Community 794]]
+- 8 edges to [[_COMMUNITY_Community 6]]
+- 8 edges to [[_COMMUNITY_Community 203]]
+- 7 edges to [[_COMMUNITY_Community 41]]
 - 5 edges to [[_COMMUNITY_Community 102]]
-- 3 edges to [[_COMMUNITY_Community 8]]
-- 3 edges to [[_COMMUNITY_Community 41]]
-- 2 edges to [[_COMMUNITY_Community 84]]
-- 2 edges to [[_COMMUNITY_Community 50]]
-- 2 edges to [[_COMMUNITY_Community 96]]
-- 2 edges to [[_COMMUNITY_Community 10]]
-- 1 edge to [[_COMMUNITY_Community 85]]
+- 2 edges to [[_COMMUNITY_Community 229]]
+- 2 edges to [[_COMMUNITY_Community 151]]
+- 2 edges to [[_COMMUNITY_Community 18]]
+- 2 edges to [[_COMMUNITY_Community 194]]
 - 1 edge to [[_COMMUNITY_Community 978]]
-- 1 edge to [[_COMMUNITY_Community 18]]
-- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 38]]
+- 1 edge to [[_COMMUNITY_Community 223]]
+- 1 edge to [[_COMMUNITY_Community 89]]
 - 1 edge to [[_COMMUNITY_Community 37]]
-- 1 edge to [[_COMMUNITY_Community 1248]]
 
 ## Top bridge nodes
-- [[test_soc_edge.py]] - degree 34, connects to 11 communities
-- [[ProgressiveLockdown]] - degree 112, connects to 8 communities
-- [[TestEdgeKill]] - degree 22, connects to 6 communities
-- [[FakeCaller]] - degree 19, connects to 6 communities
-- [[TestEdgeEnroll]] - degree 17, connects to 6 communities
+- [[ProgressiveLockdown]] - degree 112, connects to 9 communities
+- [[LockdownLevel_1]] - degree 61, connects to 6 communities
+- [[TestLocalAgentHealthHelper]] - degree 12, connects to 5 communities
+- [[TestEdgeStatus]] - degree 12, connects to 5 communities
+- [[FalcoAlertWatcher]] - degree 36, connects to 3 communities

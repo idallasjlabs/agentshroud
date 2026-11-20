@@ -1,14 +1,14 @@
 ---
 type: community
-members: 42
+members: 43
 ---
 
 # Community 33
 
-**Members:** 42 nodes
+**Members:** 43 nodes
 
 ## Members
-- [[.__init__()_98]] - code - gateway/security/group_rbac.py
+- [[.__init__()_96]] - code - gateway/security/group_rbac.py
 - [[.get_all_roles()]] - code - gateway/security/group_rbac.py
 - [[.get_role()]] - code - gateway/security/group_rbac.py
 - [[.is_high_risk_tool()]] - code - gateway/security/group_rbac.py
@@ -49,6 +49,7 @@ members: 42
 - [[TestGroupRoleProperties]] - code - gateway/tests/test_group_rbac.py
 - [[get_all_roles with an invalid role string falls back to READ_ONLY per entry.]] - rationale - gateway/tests/test_group_rbac.py
 - [[group_rbac.py]] - code - gateway/security/group_rbac.py
+- [[group_role_resolver()]] - code - gateway/tests/test_group_rbac.py
 - [[remove_role on a user not in map is a no-op (no exception).]] - rationale - gateway/tests/test_group_rbac.py
 
 ## Live Query (requires Dataview plugin)
@@ -59,15 +60,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 19 edges to [[_COMMUNITY_Community 194]]
-- 1 edge to [[_COMMUNITY_Community 8]]
+- 18 edges to [[_COMMUNITY_Community 194]]
+- 2 edges to [[_COMMUNITY_Community 6]]
 - 1 edge to [[_COMMUNITY_Community 61]]
 - 1 edge to [[_COMMUNITY_Community 35]]
 - 1 edge to [[_COMMUNITY_Community 884]]
 
 ## Top bridge nodes
 - [[GroupRoleResolver]] - degree 36, connects to 4 communities
+- [[TestGroupRoleProperties]] - degree 27, connects to 2 communities
 - [[group_rbac.py]] - degree 3, connects to 2 communities
-- [[TestGroupRoleProperties]] - degree 27, connects to 1 community
 - [[.get_role()]] - degree 5, connects to 1 community
 - [[.set_role()]] - degree 3, connects to 1 community

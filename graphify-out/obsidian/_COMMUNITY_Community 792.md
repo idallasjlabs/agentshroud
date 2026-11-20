@@ -1,33 +1,28 @@
 ---
 type: community
-members: 20
+members: 15
 ---
 
 # Community 792
 
-**Members:** 20 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[.test_approval_queue_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[.test_container_hardening()]] - code - gateway/tests/test_config_validation.py
-- [[.test_drift_detector_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[.test_egress_filter_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[.test_encrypted_store_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[.test_extensive_approval_actions()]] - code - gateway/tests/test_config_validation.py
-- [[.test_has_auth_token_placeholder()]] - code - gateway/tests/test_config_validation.py
-- [[.test_has_memory_limit()]] - code - gateway/tests/test_config_validation.py
-- [[.test_has_seccomp_profile()]] - code - gateway/tests/test_config_validation.py
-- [[.test_kill_switch_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[.test_long_retention()]] - code - gateway/tests/test_config_validation.py
-- [[.test_pii_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[.test_pii_engine_presidio()]] - code - gateway/tests/test_config_validation.py
-- [[.test_prompt_guard_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[.test_rootless()]] - code - gateway/tests/test_config_validation.py
-- [[.test_ssh_requires_approval()]] - code - gateway/tests/test_config_validation.py
-- [[.test_telemetry_disabled()]] - code - gateway/tests/test_config_validation.py
-- [[.test_trust_manager_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[TestParanoidConfig]] - code - gateway/tests/test_config_validation.py
-- [[paranoid.env should enable ALL security features.]] - rationale - gateway/tests/test_config_validation.py
+- [[.test_confidence_is_bounded()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_low_confidence_partial_stays_under_review()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_mitigation_narrative_nonempty_when_applied()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_not_source_fixed_full_class_is_fully_mitigated_without_source_fix()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_not_source_fixed_partial_class_is_partially_mitigated()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_source_fixed_full_class_is_fully_mitigated()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_source_fixed_partial_class_upgrades_to_fully()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_uncovered_class_not_source_fixed_is_gap()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_uncovered_class_source_fixed_uses_source_fix()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_unknown_class_not_source_fixed_stays_under_review()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[A version guaranteed newer than the real pinned RUNNING_VERSION, for     tests t]] - rationale - gateway/tests/test_triage_cve_mitigations.py
+- [[TestTriageEntry]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[_entry()_1]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[_not_yet_fixed()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[test_triage_cve_mitigations.py]] - code - gateway/tests/test_triage_cve_mitigations.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,9 +32,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 36]]
-- 1 edge to [[_COMMUNITY_Community 7]]
-- 1 edge to [[_COMMUNITY_Community 92]]
+- 17 edges to [[_COMMUNITY_Community 69]]
+- 3 edges to [[_COMMUNITY_Community 2038]]
+- 3 edges to [[_COMMUNITY_Community 1808]]
+- 2 edges to [[_COMMUNITY_Community 93]]
+- 1 edge to [[_COMMUNITY_Community 2037]]
 
 ## Top bridge nodes
-- [[TestParanoidConfig]] - degree 23, connects to 3 communities
+- [[test_triage_cve_mitigations.py]] - degree 12, connects to 5 communities
+- [[_entry()_1]] - degree 15, connects to 3 communities
+- [[_not_yet_fixed()]] - degree 9, connects to 2 communities
+- [[TestTriageEntry]] - degree 12, connects to 1 community
+- [[.test_not_source_fixed_full_class_is_fully_mitigated_without_source_fix()]] - degree 4, connects to 1 community

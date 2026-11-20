@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/service.py"
 type: "code"
-community: "Community 32"
+community: "Community 2048"
 location: "L98"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_32
+  - community/Community_2048
 ---
 
 # Any
@@ -29,4 +29,4 @@ tags:
 - [[VendorProfile_2]] - `uses` [INFERRED]
 - [[build_edge_service()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_32
+#graphify/code #graphify/INFERRED #community/Community_2048

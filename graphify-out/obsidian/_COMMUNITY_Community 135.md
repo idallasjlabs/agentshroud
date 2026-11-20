@@ -1,70 +1,63 @@
 ---
 type: community
-members: 57
+members: 50
 ---
 
 # Community 135
 
-**Members:** 57 nodes
+**Members:** 50 nodes
 
 ## Members
-- [[.coerce_members()]] - code - gateway/security/group_config.py
-- [[.get_group_safe_response_prefix()]] - code - gateway/security/group_config.py
-- [[.get_user_collab_mode()]] - code - gateway/security/group_config.py
-- [[.get_user_groups()]] - code - gateway/security/group_config.py
-- [[.is_admin()]] - code - gateway/security/group_config.py
-- [[.is_group_admin()]] - code - gateway/security/group_config.py
-- [[.is_member()]] - code - gateway/security/group_config.py
-- [[.test_apply_persisted_overrides_skips_user_overrides_key()]] - code - gateway/tests/test_group_config.py
-- [[.test_empty_prefix_string_not_returned()]] - code - gateway/tests/test_group_config.py
-- [[.test_empty_teams_parses()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_all_member_ids()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_collab_mode_falls_back_to_group()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_groups_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_groups_multi_group()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_groups_non_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_projects_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_projects_non_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_group_config_safe_response_prefix_field()]] - code - gateway/tests/test_group_config.py
-- [[.test_group_config_safe_response_prefix_set()]] - code - gateway/tests/test_group_config.py
-- [[.test_is_group_admin_correct()]] - code - gateway/tests/test_group_config.py
-- [[.test_is_group_admin_unknown_group()]] - code - gateway/tests/test_group_config.py
-- [[.test_is_group_admin_wrong_user()]] - code - gateway/tests/test_group_config.py
-- [[.test_local_only_mode()]] - code - gateway/tests/test_group_config.py
-- [[.test_no_duplicate_projects()]] - code - gateway/tests/test_group_config.py
-- [[.test_no_prefix_by_default()]] - code - gateway/tests/test_group_config.py
-- [[.test_parses_groups()]] - code - gateway/tests/test_group_config.py
-- [[.test_parses_projects()]] - code - gateway/tests/test_group_config.py
-- [[.test_persist_user_collab_mode()]] - code - gateway/tests/test_group_config.py
-- [[.test_persist_user_collab_mode_update()]] - code - gateway/tests/test_group_config.py
-- [[.test_prefix_not_returned_for_non_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_prefix_returned_for_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_project_scoped_mode()]] - code - gateway/tests/test_group_config.py
-- [[.test_unknown_user_returns_local_only()]] - code - gateway/tests/test_group_config.py
-- [[.test_unknown_user_returns_none()]] - code - gateway/tests/test_group_config.py
-- [[.test_user_override_takes_precedence_over_group()]] - code - gateway/tests/test_group_config.py
-- [[.validate_mode()]] - code - gateway/security/group_config.py
-- [[A team group with members, admin, projects, and collab mode.]] - rationale - gateway/security/group_config.py
-- [[Calling persist_user_collab_mode twice updates the stored value.]] - rationale - gateway/tests/test_group_config.py
-- [[GroupConfig]] - code - gateway/security/group_config.py
-- [[Per-user collab_mode override persists to group_overrides.json and takes     pr]] - rationale - gateway/tests/test_group_config.py
-- [[Per-user override beats group-derived collab_mode.]] - rationale - gateway/tests/test_group_config.py
-- [[Return all groups the user belongs to.]] - rationale - gateway/security/group_config.py
-- [[Return the effective collab_mode for a user.          Resolution order]] - rationale - gateway/security/group_config.py
-- [[Return the safe_response_prefix for the first group that the user belongs to]] - rationale - gateway/security/group_config.py
-- [[TeamsConfig_1]] - code - gateway/tests/test_group_config.py
-- [[TestAdminChecks]] - code - gateway/tests/test_group_config.py
-- [[TestCollabMode]] - code - gateway/tests/test_group_config.py
-- [[TestGroupSafeResponsePrefix]] - code - gateway/tests/test_group_config.py
-- [[TestMembershipQueries]] - code - gateway/tests/test_group_config.py
-- [[TestProjectQueries]] - code - gateway/tests/test_group_config.py
-- [[TestTeamsConfigParsing]] - code - gateway/tests/test_group_config.py
-- [[TestUserCollabModeOverride]] - code - gateway/tests/test_group_config.py
-- [[Without a per-user override, group-derived mode is returned.]] - rationale - gateway/tests/test_group_config.py
-- [[__user_overrides__ key must not be treated as a group_id.]] - rationale - gateway/tests/test_group_config.py
-- [[persist_user_collab_mode writes under __user_overrides__ key.]] - rationale - gateway/tests/test_group_config.py
-- [[teams()_1]] - code - gateway/tests/test_group_config.py
-- [[test_group_config.py]] - code - gateway/tests/test_group_config.py
+- [[.__call__()_7]] - code - gateway/tests/test_edge_jwt.py
+- [[.__init__()_169]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_auth_code_is_single_use()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_bad_kill_scope_rejected()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_edge_can_check_signature_with_public_key_only()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_enrollment_code_single_use_and_vendor_bound()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_enrollment_expires()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_es256_with_wrong_curve_key_rejected()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_expired()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_expired_auth_code()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_hs256_signed_with_public_key()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_issued_in_the_future()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_jti_never_issued_is_rejected()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_kill_takes_effect_within_one_second()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_killed_client()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_killed_vendor_blocks_all_its_tokens()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_lifetime_is_15_minutes()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_lifetime_longer_than_policy()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_minted_token_verifies()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_missing_required_claims()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_open_window_names_vendor()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_refresh_rotation_and_reuse_revokes_family()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_revoked_jti()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_secrets_are_stored_hashed()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_signed_by_another_key()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_sub_must_match_vendor_and_client()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_tampered_payload()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_unkill_restores()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_unsigned_alg_none()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_wrong_audience()]] - code - gateway/tests/test_edge_jwt.py
+- [[.test_wrong_issuer()]] - code - gateway/tests/test_edge_jwt.py
+- [[A correctly signed token the issuer has no record of (e.g. from another]] - rationale - gateway/tests/test_edge_jwt.py
+- [[Algorithm confusion HMAC 'signed' with the published public key.]] - rationale - gateway/tests/test_edge_jwt.py
+- [[Any_9]] - code - gateway/inbound_edge/edge_jwt.py
+- [[Clock]] - code - gateway/tests/test_edge_jwt.py
+- [[Edge-side pre-screen signature, alg, iss, aud, exp. No revocation check.]] - rationale - gateway/inbound_edge/edge_jwt.py
+- [[Sign arbitrary claims with the real key (as if minted outside the issuer).]] - rationale - gateway/tests/test_edge_jwt.py
+- [[TestEnrollment]] - code - gateway/tests/test_edge_jwt.py
+- [[TestRejected]] - code - gateway/tests/test_edge_jwt.py
+- [[TestRevocationAndKill]] - code - gateway/tests/test_edge_jwt.py
+- [[TestSingleUseGrants]] - code - gateway/tests/test_edge_jwt.py
+- [[TestValidToken]] - code - gateway/tests/test_edge_jwt.py
+- [[_forge()]] - code - gateway/tests/test_edge_jwt.py
+- [[_token()]] - code - gateway/tests/test_edge_jwt.py
+- [[generate_signing_key_pem()]] - code - gateway/inbound_edge/edge_jwt.py
+- [[secrets_dir()_1]] - code - gateway/tests/test_edge_service_routes.py
+- [[store()_2]] - code - gateway/tests/test_edge_jwt.py
+- [[svc()]] - code - gateway/tests/test_edge_jwt.py
+- [[test_edge_jwt.py]] - code - gateway/tests/test_edge_jwt.py
+- [[verify_signature_only()]] - code - gateway/inbound_edge/edge_jwt.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -74,14 +67,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY_Community 194]]
-- 11 edges to [[_COMMUNITY_Community 18]]
-- 4 edges to [[_COMMUNITY_Community 1288]]
-- 3 edges to [[_COMMUNITY_Community 10]]
+- 22 edges to [[_COMMUNITY_Community 2048]]
+- 6 edges to [[_COMMUNITY_Community 41]]
+- 2 edges to [[_COMMUNITY_Community 32]]
+- 2 edges to [[_COMMUNITY_Community 84]]
+- 2 edges to [[_COMMUNITY_Community 50]]
 
 ## Top bridge nodes
-- [[GroupConfig]] - degree 32, connects to 4 communities
-- [[test_group_config.py]] - degree 11, connects to 2 communities
-- [[.get_user_groups()]] - degree 6, connects to 2 communities
-- [[TestGroupSafeResponsePrefix]] - degree 10, connects to 1 community
-- [[TestUserCollabModeOverride]] - degree 9, connects to 1 community
+- [[generate_signing_key_pem()]] - degree 13, connects to 4 communities
+- [[test_edge_jwt.py]] - degree 15, connects to 2 communities
+- [[verify_signature_only()]] - degree 9, connects to 2 communities
+- [[TestRejected]] - degree 16, connects to 1 community
+- [[TestRevocationAndKill]] - degree 9, connects to 1 community

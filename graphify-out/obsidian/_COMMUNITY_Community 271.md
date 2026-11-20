@@ -1,38 +1,44 @@
 ---
 type: community
-members: 25
+members: 31
 ---
 
 # Community 271
 
-**Members:** 25 nodes
+**Members:** 31 nodes
 
 ## Members
-- [[.__init__()_32]] - code - gateway/proxy/a2a_proxy.py
-- [[.__init__()_153]] - code - gateway/tests/test_a2a_proxy.py
-- [[._audit()]] - code - gateway/proxy/a2a_proxy.py
-- [[._record_trust_violation()]] - code - gateway/proxy/a2a_proxy.py
-- [[.extract_text_for_pii_scan()]] - code - gateway/proxy/a2a_proxy.py
-- [[.forward()]] - code - gateway/proxy/a2a_proxy.py
-- [[.log_event()_1]] - code - gateway/tests/test_a2a_proxy.py
-- [[.process_agent_card_request()]] - code - gateway/proxy/a2a_proxy.py
-- [[.process_inbound_request()]] - code - gateway/proxy/a2a_proxy.py
-- [[.resolve_peer_id()]] - code - gateway/proxy/a2a_proxy.py
-- [[A freshly-constructed, un-set result must default to blocked, not     allowed —]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[A message with MULTIPLE text parts must not leave a second, unredacted     text]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[A2APolicyEngine]] - code - gateway/proxy/a2a_proxy.py
-- [[A2AProxyResult]] - code - gateway/proxy/a2a_proxy.py
-- [[Any_21]] - code - gateway/proxy/a2a_proxy.py
-- [[Flatten an A2A Message's `parts` array to plain text for PII         scanning.]] - rationale - gateway/proxy/a2a_proxy.py
-- [[GET .well-knownagent-card.json — never policy-gated (the A2A         spec requ]] - rationale - gateway/proxy/a2a_proxy.py
-- [[Record a typed violation against the peer's trust score for the         two A2A-]] - rationale - gateway/proxy/a2a_proxy.py
-- [[Resolve peer identity from the Authorization Bearer token.          Never falls]] - rationale - gateway/proxy/a2a_proxy.py
-- [[Result of proxying a single inbound A2A request.]] - rationale - gateway/proxy/a2a_proxy.py
-- [[Return a copy of raw_body with the first text Part's content replaced     by the]] - rationale - gateway/proxy/a2a_proxy.py
-- [[_Event]] - code - gateway/tests/test_a2a_proxy.py
-- [[_redact_message_text()]] - code - gateway/proxy/a2a_proxy.py
-- [[test_proxy_result_defaults_are_safe()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_redact_message_text_clears_all_text_parts_not_just_the_first()]] - code - gateway/tests/test_a2a_proxy.py
+- [[.age_days()]] - code - gateway/security/key_rotation.py
+- [[.is_in_grace_period()]] - code - gateway/security/key_rotation.py
+- [[.manager()]] - code - gateway/tests/test_key_rotation.py
+- [[.sample_credential()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_age_calculation()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_get_credential_status()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_get_health_score_all_healthy()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_get_health_score_mixed_states()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_grace_period_tracking()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_not_due_without_force_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[.test_register_credential()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_should_rotate()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_should_warn()]] - code - gateway/tests/test_key_rotation.py
+- [[Age of credential in days.]] - rationale - gateway/security/key_rotation.py
+- [[Create a manager with test configuration.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Create a sample credential for testing.]] - rationale - gateway/tests/test_key_rotation.py
+- [[CredentialInfo]] - code - gateway/security/key_rotation.py
+- [[Information about a managed credential.]] - rationale - gateway/security/key_rotation.py
+- [[Test credential age calculation.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test credential information tracking.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test credential registration.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test credential status reporting.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test grace period status tracking.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test health score calculation with all healthy credentials.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test health score with mixed credential states.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test key rotation manager functionality.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test rotation requirement calculation.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test warning threshold calculation.]] - rationale - gateway/tests/test_key_rotation.py
+- [[TestCredentialInfo]] - code - gateway/tests/test_key_rotation.py
+- [[TestKeyRotationManager]] - code - gateway/tests/test_key_rotation.py
+- [[Whether credential is currently in grace period.]] - rationale - gateway/security/key_rotation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,17 +48,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 18 edges to [[_COMMUNITY_Community 307]]
-- 10 edges to [[_COMMUNITY_Community 116]]
-- 4 edges to [[_COMMUNITY_Community 221]]
-- 3 edges to [[_COMMUNITY_Community 11]]
-- 2 edges to [[_COMMUNITY_Community 56]]
-- 1 edge to [[_COMMUNITY_Community 68]]
-- 1 edge to [[_COMMUNITY_Community 300]]
+- 14 edges to [[_COMMUNITY_Community 122]]
+- 11 edges to [[_COMMUNITY_Community 261]]
+- 6 edges to [[_COMMUNITY_Community 198]]
+- 5 edges to [[_COMMUNITY_Community 479]]
+- 3 edges to [[_COMMUNITY_Community 1991]]
+- 1 edge to [[_COMMUNITY_Community 2017]]
 
 ## Top bridge nodes
-- [[A2AProxyResult]] - degree 15, connects to 4 communities
-- [[_Event]] - degree 10, connects to 4 communities
-- [[Any_21]] - degree 8, connects to 3 communities
-- [[A2APolicyEngine]] - degree 4, connects to 3 communities
-- [[_redact_message_text()]] - degree 6, connects to 2 communities
+- [[CredentialInfo]] - degree 35, connects to 6 communities
+- [[TestKeyRotationManager]] - degree 15, connects to 5 communities
+- [[TestCredentialInfo]] - degree 12, connects to 4 communities
+- [[.manager()]] - degree 4, connects to 2 communities
+- [[.test_should_warn()]] - degree 4, connects to 1 community

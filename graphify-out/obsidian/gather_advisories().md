@@ -2,7 +2,7 @@
 source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
 community: "Community 265"
-location: "L480"
+location: "L472"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # gather_advisories()
 
 ## Connections
-- [[Any_88]] - `references` [EXTRACTED]
+- [[Any_84]] - `references` [EXTRACTED]
 - [[Namespace]] - `references` [EXTRACTED]
 - [[Path_54]] - `calls` [EXTRACTED]
 - [[Return per-agent advisory lists from snapshot or live GitHub.]] - `rationale_for` [EXTRACTED]

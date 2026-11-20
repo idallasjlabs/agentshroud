@@ -2,7 +2,7 @@
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
 community: "Community 67"
-location: "L1021"
+location: "L1020"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -15,7 +15,7 @@ tags:
 - [[.test_baseline_three_when_openscap_not_run()]] - `calls` [EXTRACTED]
 - [[.test_five_when_openscap_clean()]] - `calls` [EXTRACTED]
 - [[.test_four_when_openscap_running_with_failures()]] - `calls` [EXTRACTED]
-- [[Any_68]] - `references` [EXTRACTED]
+- [[Any_64]] - `references` [EXTRACTED]
 - [[Score domain 4 Container Hardening (0-5).      Baseline of 3 because docker-com]] - `rationale_for` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]

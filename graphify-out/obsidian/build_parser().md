@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.test_parser_defaults()]] - `calls` [EXTRACTED]
 - [[.test_parser_hosts_and_command()]] - `calls` [EXTRACTED]
-- [[ArgumentParser_2]] - `references` [EXTRACTED]
+- [[ArgumentParser_1]] - `references` [EXTRACTED]
 - [[main()_16]] - `calls` [EXTRACTED]
 - [[multi_host_test.py]] - `contains` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]

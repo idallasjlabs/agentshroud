@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_jira_dev_ticket.py"
 type: "code"
 community: "Community 188"
-location: "L171"
+location: "L163"
 tags:
   - graphify/code
   - graphify/EXTRACTED

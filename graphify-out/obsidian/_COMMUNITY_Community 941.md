@@ -1,23 +1,24 @@
 ---
 type: community
-members: 10
+members: 11
 ---
 
 # Community 941
 
-**Members:** 10 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[.test_blocked_entry_logged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_chain_entries_linked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_hash_chain_changes_on_append()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_hash_chain_genesis()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_hash_chain_valid()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_log_tool_call()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_log_tool_result()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_pii_redacted_flag()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_tampered_chain_detected()]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestAuditTrail]] - code - gateway/tests/test_mcp_proxy.py
+- [[.setup_method()_33]] - code - gateway/tests/test_security_hardening.py
+- [[.test_block_ipv4_mapped_ipv6_loopback()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_block_ipv4_mapped_ipv6_private()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_block_ipv4_private()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_block_ipv6_link_local()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_block_ipv6_loopback()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_block_ipv6_ula()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_block_link_local()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_block_localhost_variants()]] - code - gateway/tests/test_security_hardening.py
+- [[TestEgressSSRF]] - code - gateway/tests/test_security_hardening.py
+- [[Tests for SSRF protection in egress filter.]] - rationale - gateway/tests/test_security_hardening.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,12 +28,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 64]]
-- 4 edges to [[_COMMUNITY_Community 54]]
-- 1 edge to [[_COMMUNITY_Community 184]]
-- 1 edge to [[_COMMUNITY_Community 2038]]
-- 1 edge to [[_COMMUNITY_Community 132]]
-- 1 edge to [[_COMMUNITY_Community 965]]
+- 4 edges to [[_COMMUNITY_Community 22]]
+- 3 edges to [[_COMMUNITY_Community 0]]
+- 3 edges to [[_COMMUNITY_Community 52]]
+- 3 edges to [[_COMMUNITY_Community 17]]
+- 3 edges to [[_COMMUNITY_Community 11]]
+- 2 edges to [[_COMMUNITY_Community 21]]
+- 1 edge to [[_COMMUNITY_Community 96]]
+- 1 edge to [[_COMMUNITY_Community 84]]
 
 ## Top bridge nodes
-- [[TestAuditTrail]] - degree 23, connects to 6 communities
+- [[TestEgressSSRF]] - degree 28, connects to 8 communities
+- [[.setup_method()_33]] - degree 3, connects to 2 communities

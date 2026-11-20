@@ -1,16 +1,17 @@
 ---
 type: community
-members: 3
+members: 4
 ---
 
 # Community 2043
 
-**Members:** 3 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.__init__()_144]] - code - gateway/soc/auth.py
-- [[RBACManager_2]] - code - gateway/soc/auth.py
-- [[Role_2]] - code - gateway/soc/auth.py
+- [[._hash_content()]] - code - gateway/ingest_api/ledger.py
+- [[.record()]] - code - gateway/ingest_api/ledger.py
+- [[Create a new ledger entry          Args             source Source identifier (]] - rationale - gateway/ingest_api/ledger.py
+- [[SHA-256 hash of content string          Args             content Text to hash]] - rationale - gateway/ingest_api/ledger.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,9 +21,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 65]]
-- 1 edge to [[_COMMUNITY_Community 10]]
+- 2 edges to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 68]]
+- 1 edge to [[_COMMUNITY_Community 254]]
 
 ## Top bridge nodes
-- [[.__init__()_144]] - degree 3, connects to 1 community
-- [[RBACManager_2]] - degree 2, connects to 1 community
+- [[.record()]] - degree 5, connects to 3 communities
+- [[._hash_content()]] - degree 3, connects to 1 community
