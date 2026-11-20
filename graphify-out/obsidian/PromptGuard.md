@@ -12,7 +12,7 @@ tags:
 # PromptGuard
 
 ## Connections
-- [[.__init__()_124]] - `method` [EXTRACTED]
+- [[.__init__()_122]] - `method` [EXTRACTED]
 - [[._check_encoded_content()]] - `method` [EXTRACTED]
 - [[._check_unicode_tricks()]] - `method` [EXTRACTED]
 - [[._get_hmac_key()]] - `method` [EXTRACTED]
@@ -40,7 +40,7 @@ tags:
 - [[.test_write_baseline_json()]] - `calls` [EXTRACTED]
 - [[.verify_system_prompt()]] - `method` [EXTRACTED]
 - [[Any_13]] - `uses` [INFERRED]
-- [[Any_46]] - `uses` [INFERRED]
+- [[Any_45]] - `uses` [INFERRED]
 - [[Clock_1]] - `uses` [INFERRED]
 - [[ContextIntegrityScorer]] - `uses` [INFERRED]
 - [[Data Flow]] - `references` [EXTRACTED]
@@ -159,7 +159,7 @@ tags:
 - [[prompt_guard()_1]] - `calls` [EXTRACTED]
 - [[prompt_guard()_2]] - `calls` [EXTRACTED]
 - [[prompt_guard.py]] - `contains` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[run()_2]] - `calls` [EXTRACTED]
 - [[run_canary()_1]] - `references` [EXTRACTED]
 - [[run_chain()]] - `references` [EXTRACTED]
 - [[service.py]] - `imports` [EXTRACTED]

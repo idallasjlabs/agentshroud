@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Community 809"
+community: "Community 0"
 location: "L527"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_809
+  - community/Community_0
 ---
 
 # A single violation should meaningfully impact trust.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_violation_drops_trust_significantly()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_809
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

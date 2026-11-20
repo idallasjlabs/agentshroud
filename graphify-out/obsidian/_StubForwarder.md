@@ -12,7 +12,7 @@ tags:
 # _StubForwarder
 
 ## Connections
-- [[.__init__()_152]] - `method` [EXTRACTED]
+- [[.__init__()_149]] - `method` [EXTRACTED]
 - [[.forward()_2]] - `method` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]
 - [[A2APolicyConfig]] - `uses` [INFERRED]
@@ -23,7 +23,7 @@ tags:
 - [[DifferentialPIIDetector]] - `uses` [INFERRED]
 - [[Records what it was asked to forward; returns a canned response.]] - `rationale_for` [EXTRACTED]
 - [[forwarder()]] - `references` [EXTRACTED]
-- [[proxy()_1]] - `references` [EXTRACTED]
+- [[proxy()]] - `references` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 - [[test_agent_card_discovery_is_never_policy_gated()]] - `references` [EXTRACTED]
 - [[test_agent_card_discovery_is_still_audited()]] - `references` [EXTRACTED]

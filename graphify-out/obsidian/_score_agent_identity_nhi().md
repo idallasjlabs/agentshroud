@@ -2,7 +2,7 @@
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
 community: "Community 29"
-location: "L1868"
+location: "L1867"
 tags:
   - graphify/code
   - graphify/EXTRACTED

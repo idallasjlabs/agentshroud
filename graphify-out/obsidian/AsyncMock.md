@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[.__call__()_14]] - `method` [EXTRACTED]
-- [[.__init__()_198]] - `calls` [INFERRED]
-- [[.__init__()_217]] - `calls` [INFERRED]
-- [[.__init__()_221]] - `method` [EXTRACTED]
+- [[.__init__()_195]] - `calls` [INFERRED]
+- [[.__init__()_214]] - `calls` [INFERRED]
+- [[.__init__()_218]] - `method` [EXTRACTED]
 - [[._handler()]] - `calls` [INFERRED]
 - [[._mock_request()]] - `calls` [INFERRED]
 - [[._mock_websocket()]] - `calls` [INFERRED]

@@ -28,8 +28,9 @@ SORT file.name ASC
 - 5 edges to [[_COMMUNITY_Community 973]]
 - 4 edges to [[_COMMUNITY_Community 514]]
 - 3 edges to [[_COMMUNITY_Community 942]]
-- 2 edges to [[_COMMUNITY_Community 8]]
 - 2 edges to [[_COMMUNITY_Community 886]]
+- 1 edge to [[_COMMUNITY_Community 6]]
+- 1 edge to [[_COMMUNITY_Community 38]]
 - 1 edge to [[_COMMUNITY_Community 887]]
 - 1 edge to [[_COMMUNITY_Community 1073]]
 - 1 edge to [[_COMMUNITY_Community 1172]]
@@ -37,6 +38,6 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 785]]
 
 ## Top bridge nodes
-- [[HostStatus]] - degree 18, connects to 10 communities
+- [[HostStatus]] - degree 18, connects to 11 communities
 - [[classify()]] - degree 8, connects to 3 communities
 - [[TestClassify]] - degree 7, connects to 2 communities

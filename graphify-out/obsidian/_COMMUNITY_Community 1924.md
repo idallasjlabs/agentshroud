@@ -1,13 +1,14 @@
 ---
 type: community
-members: 38
+members: 50
 ---
 
 # Community 1924
 
-**Members:** 38 nodes
+**Members:** 50 nodes
 
 ## Members
+- [[AgentShroud Sunday Upgrade — 2026-09-27 (DEV run)]] - document - reports/upgrade-2026-09-27.md
 - [[AgentShroud Sunday Upgrade — 2026-09-27, 0800 ET verification pass (DEV run, session 2)]] - document - reports/upgrade-2026-09-27-20260927-0800.md
 - [[AgentShroud Sunday Upgrade — 2026-09-27, 1400 ET verification pass (DEV run, session 3)]] - document - reports/upgrade-2026-09-27-20260927-1400.md
 - [[Decision no rebuild performed]] - document - reports/upgrade-2026-09-27-20260927-0800.md
@@ -16,6 +17,7 @@ members: 38
 - [[Independent verification performed (all read-only)]] - document - reports/upgrade-2026-09-27-20260927-0800.md
 - [[Independent verification performed (all read-only)_1]] - document - reports/upgrade-2026-09-27-20260927-1400.md
 - [[Jira]] - document - reports/upgrade-2026-09-27-20260927-1400.md
+- [[Jira MCP writes blocked in unattended sessions (don't-ask mode  allowedTools)]] - concept - reports/upgrade-2026-09-22.md
 - [[Manual follow-ups]] - document - reports/upgrade-2026-09-27-20260927-0800.md
 - [[Manual follow-ups (unchanged from 0800 report — still outstanding)]] - document - reports/upgrade-2026-09-27-20260927-1400.md
 - [[PATH_11]] - code - scripts/sunday-upgrade.sh
@@ -27,6 +29,7 @@ members: 38
 - [[Still open (real, unresolved, carried from this morning — not new)]] - document - reports/upgrade-2026-09-27-20260927-0800.md
 - [[Summary line_6]] - document - reports/upgrade-2026-09-27-20260927-0800.md
 - [[Summary line_7]] - document - reports/upgrade-2026-09-27-20260927-1400.md
+- [[Summary line_8]] - document - reports/upgrade-2026-09-27.md
 - [[Time spent_3]] - document - reports/upgrade-2026-09-27-20260927-0800.md
 - [[Time spent_4]] - document - reports/upgrade-2026-09-27-20260927-1400.md
 - [[Why this report is short]] - document - reports/upgrade-2026-09-27-20260927-0800.md
@@ -46,6 +49,15 @@ members: 38
 - [[upgrade-2026-09-27-20260927-0800]] - document - reports/upgrade-2026-09-27-20260927-0800.md
 - [[upgrade-2026-09-27-20260927-1400]] - document - reports/upgrade-2026-09-27-20260927-1400.md
 - [[upgrade-2026-09-27]] - document - reports/upgrade-2026-09-27.md
+- [[§0 Preflight_1]] - document - reports/upgrade-2026-09-27.md
+- [[§1 Environment mapping_1]] - document - reports/upgrade-2026-09-27.md
+- [[§2 Inventory & versions checked_1]] - document - reports/upgrade-2026-09-27.md
+- [[§3 Bugs found and fixed this run (code changes, per owner directive — a needed fix is not grounds to skip)_1]] - document - reports/upgrade-2026-09-27.md
+- [[§4 Build  apply  verify (dev)_1]] - document - reports/upgrade-2026-09-27.md
+- [[§5 Security findings_1]] - document - reports/upgrade-2026-09-27.md
+- [[§6 Breaking changes  manual follow-ups_1]] - document - reports/upgrade-2026-09-27.md
+- [[§7 Rollback instructions_1]] - document - reports/upgrade-2026-09-27.md
+- [[§8 Time spent_1]] - document - reports/upgrade-2026-09-27.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -55,20 +67,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_Community 118]]
+- 13 edges to [[_COMMUNITY_Community 118]]
 - 2 edges to [[_COMMUNITY_Community 139]]
 - 2 edges to [[_COMMUNITY_Community 126]]
 - 2 edges to [[_COMMUNITY_Community 74]]
-- 1 edge to [[_COMMUNITY_Community 227]]
+- 1 edge to [[_COMMUNITY_Community 547]]
 - 1 edge to [[_COMMUNITY_Community 310]]
-- 1 edge to [[_COMMUNITY_Community 48]]
-- 1 edge to [[_COMMUNITY_Community 6]]
+- 1 edge to [[_COMMUNITY_Community 431]]
+- 1 edge to [[_COMMUNITY_Community 227]]
 - 1 edge to [[_COMMUNITY_Community 1551]]
-- 1 edge to [[_COMMUNITY_Community 1561]]
 
 ## Top bridge nodes
 - [[upgrade-2026-09-26]] - degree 9, connects to 4 communities
 - [[check-soak-status.sh]] - degree 8, connects to 4 communities
-- [[upgrade-2026-09-27]] - degree 11, connects to 3 communities
 - [[sunday-upgrade.sh]] - degree 15, connects to 2 communities
-- [[upgrade-2026-09-27-20260927-0800]] - degree 7, connects to 1 community
+- [[upgrade-2026-09-27]] - degree 11, connects to 2 communities
+- [[Jira MCP writes blocked in unattended sessions (don't-ask mode  allowedTools)]] - degree 6, connects to 2 communities

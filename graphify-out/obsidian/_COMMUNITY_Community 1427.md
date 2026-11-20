@@ -29,9 +29,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 120]]
-- 2 edges to [[_COMMUNITY_Community 27]]
-- 1 edge to [[_COMMUNITY_Community 1566]]
+- 5 edges to [[_COMMUNITY_Community 120]]
+- 1 edge to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Community 103]]
 
 ## Top bridge nodes
 - [[TestSSRFBlocking]] - degree 18, connects to 3 communities

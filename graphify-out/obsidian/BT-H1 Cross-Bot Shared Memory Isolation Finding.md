@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/blue-team-assessment-v1.2.0.md"
 type: "concept"
-community: "Community 414"
+community: "Community 1119"
 location: "§4.6"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_414
+  - community/Community_1119
 ---
 
 # BT-H1: Cross-Bot Shared Memory Isolation Finding
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Blue Team Assessment v1.2.0 (First Dual-Bot Assessment)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_414
+#graphify/concept #graphify/EXTRACTED #community/Community_1119

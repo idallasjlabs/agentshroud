@@ -12,7 +12,7 @@ tags:
 # _Rule
 
 ## Connections
-- [[.__init__()_133]] - `references` [EXTRACTED]
+- [[.__init__()_131]] - `references` [EXTRACTED]
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_924

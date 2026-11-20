@@ -24,7 +24,6 @@ tags:
 - [[_OutboundScan]] - `contains` [EXTRACTED]
 - [[_ipv4_first_getaddrinfo()]] - `contains` [EXTRACTED]
 - [[_persist_groups()]] - `imports` [EXTRACTED]
-- [[egress_retry.py]] - `semantically_similar_to` [AMBIGUOUS]
 - [[format_addtogroup_success()]] - `imports` [EXTRACTED]
 - [[format_group_info()]] - `imports` [EXTRACTED]
 - [[format_groups_list()]] - `imports` [EXTRACTED]
@@ -44,7 +43,6 @@ tags:
 - [[persist_group_member_add()]] - `imports` [EXTRACTED]
 - [[persist_group_member_remove()]] - `imports` [EXTRACTED]
 - [[strip_markdown_exfil()]] - `imports` [EXTRACTED]
-- [[telegram_gateway_relay.py]] - `semantically_similar_to` [AMBIGUOUS]
 - [[test_telegram_proxy_multibot.py]] - `imports_from` [EXTRACTED]
 - [[unpause_collaborator()]] - `imports` [EXTRACTED]
 

@@ -2,7 +2,7 @@
 source_file: "gateway/security/key_vault.py"
 type: "rationale"
 community: "Community 684"
-location: "L131"
+location: "L125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

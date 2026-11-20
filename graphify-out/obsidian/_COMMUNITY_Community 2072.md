@@ -1,20 +1,17 @@
 ---
 type: community
-members: 7
+members: 4
 ---
 
 # Community 2072
 
-**Members:** 7 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.client()_3]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_install()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_installer_page()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_prerequisites()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_runtimes()]] - code - gateway/tests/test_runtime_engines.py
-- [[Installer must not fake completion SCRUM-107.          The endpoint has no auto]] - rationale - gateway/tests/test_runtime_engines.py
-- [[TestInstallerAPI]] - code - gateway/tests/test_runtime_engines.py
+- [[Re-read ``~.llm_settings`` and sync skillsagentsMCP into both bot configs.]] - rationale - gateway/web/api.py
+- [[Re-read ``~.llm_settings``, scan for supply-chain risk, deploy to both bots.]] - rationale - gateway/web/api.py
+- [[_skills_reload_impl()]] - code - gateway/web/api.py
+- [[skills_reload()]] - code - gateway/web/api.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,11 +21,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 240]]
-- 1 edge to [[_COMMUNITY_Community 379]]
-- 1 edge to [[_COMMUNITY_Community 372]]
-- 1 edge to [[_COMMUNITY_Community 738]]
-- 1 edge to [[_COMMUNITY_Community 250]]
+- 4 edges to [[_COMMUNITY_Community 49]]
+- 2 edges to [[_COMMUNITY_Community 83]]
+- 1 edge to [[_COMMUNITY_Community 924]]
+- 1 edge to [[_COMMUNITY_Community 10]]
 
 ## Top bridge nodes
-- [[TestInstallerAPI]] - degree 11, connects to 5 communities
+- [[_skills_reload_impl()]] - degree 8, connects to 3 communities
+- [[skills_reload()]] - degree 4, connects to 2 communities

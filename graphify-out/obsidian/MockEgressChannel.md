@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "Community 120"
+community: "Community 103"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_120
+  - community/Community_103
 ---
 
 # MockEgressChannel
@@ -19,4 +19,4 @@ tags:
 - [[WebProxyResult]] - `uses` [INFERRED]
 - [[test_web_proxy_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_120
+#graphify/code #graphify/INFERRED #community/Community_103

@@ -8,7 +8,7 @@ members: 26
 **Members:** 26 nodes
 
 ## Members
-- [[.__init__()_62]] - code - gateway/runtime/docker_engine.py
+- [[.__init__()_61]] - code - gateway/runtime/docker_engine.py
 - [[._cmd()_1]] - code - gateway/runtime/docker_engine.py
 - [[.build()_1]] - code - gateway/runtime/docker_engine.py
 - [[.compose_down()_1]] - code - gateway/runtime/docker_engine.py
@@ -43,21 +43,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 738]]
-- 4 edges to [[_COMMUNITY_Community 240]]
-- 3 edges to [[_COMMUNITY_Community 225]]
-- 2 edges to [[_COMMUNITY_Community 1808]]
-- 2 edges to [[_COMMUNITY_Community 250]]
+- 11 edges to [[_COMMUNITY_Community 240]]
+- 6 edges to [[_COMMUNITY_Community 225]]
+- 3 edges to [[_COMMUNITY_Community 918]]
+- 2 edges to [[_COMMUNITY_Community 203]]
 - 2 edges to [[_COMMUNITY_Community 385]]
-- 1 edge to [[_COMMUNITY_Community 379]]
-- 1 edge to [[_COMMUNITY_Community 2010]]
-- 1 edge to [[_COMMUNITY_Community 918]]
-- 1 edge to [[_COMMUNITY_Community 2072]]
+- 1 edge to [[_COMMUNITY_Community 250]]
 - 1 edge to [[_COMMUNITY_Community 743]]
-- 1 edge to [[_COMMUNITY_Community 1052]]
 
 ## Top bridge nodes
-- [[DockerEngine]] - degree 43, connects to 11 communities
+- [[DockerEngine]] - degree 43, connects to 6 communities
 - [[ContainerEngine_1]] - degree 3, connects to 2 communities
 - [[ContainerInfo_1]] - degree 3, connects to 2 communities
 - [[Any_36]] - degree 3, connects to 2 communities

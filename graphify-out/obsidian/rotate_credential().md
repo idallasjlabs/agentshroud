@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "Community 122"
+community: "Community 166"
 location: "L1001"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_122
+  - community/Community_166
 ---
 
 # rotate_credential()
@@ -18,4 +18,4 @@ tags:
 - [[Trigger manual rotation for a specific credential (owner only).]] - `rationale_for` [EXTRACTED]
 - [[management.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_122
+#graphify/code #graphify/EXTRACTED #community/Community_166

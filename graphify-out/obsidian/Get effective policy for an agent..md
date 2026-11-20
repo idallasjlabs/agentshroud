@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "Community 17"
-location: "L160"
+community: "Community 329"
+location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_17
+  - community/Community_329
 ---
 
 # Get effective policy for an agent.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_policy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_17
+#graphify/rationale #graphify/EXTRACTED #community/Community_329

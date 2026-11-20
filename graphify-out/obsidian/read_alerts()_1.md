@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "Community 943"
+community: "Community 102"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_943
+  - community/Community_102
 ---
 
 # read_alerts()
 
 ## Connections
-- [[Any_75]] - `references` [EXTRACTED]
+- [[Any_71]] - `references` [EXTRACTED]
 - [[Path_22]] - `references` [EXTRACTED]
 - [[Read Wazuh alerts from the alert directory.      Args         alert_dir Direct]] - `rationale_for` [EXTRACTED]
 - [[datetime_6]] - `references` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[scanner_integration.py]] - `imports` [EXTRACTED]
 - [[wazuh_client.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_943
+#graphify/code #graphify/EXTRACTED #community/Community_102

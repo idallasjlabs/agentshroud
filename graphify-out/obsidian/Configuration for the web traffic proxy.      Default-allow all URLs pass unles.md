@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "rationale"
-community: "Community 27"
+community: "Community 120"
 location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_27
+  - community/Community_120
 ---
 
 # Configuration for the web traffic proxy.      Default-allow: all URLs pass unles
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[WebProxyConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_27
+#graphify/rationale #graphify/EXTRACTED #community/Community_120

@@ -1,22 +1,23 @@
 ---
 type: community
-members: 9
+members: 10
 ---
 
 # Community 980
 
-**Members:** 9 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[TABLE IV Test Coverage by Defense Layer]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[TABLE V Phase 8.5 E2E Verification Scenarios]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[TABLE VI Post-Remediation Coverage Summary]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[TABLE VII Security Module Comparison]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VIII-A. Test Coverage]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VIII-B. Enforcement Verification]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VIII-C. Module Coverage Matrix]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VIII-D. Competitive Analysis]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VIII. Evaluation]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[.test_group_write_invisible_from_user_dm()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_merged_memory_separates_group_and_dm()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_user_dm_write_invisible_from_group()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_user_dm_write_invisible_from_other_group()]] - code - gateway/tests/test_group_isolation.py
+- [[Content written to a group must not appear in any user's private DM memory.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Content written to a user DM must not appear in any group memory.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Group workspace content must not leak into any user's DM workspace.]] - rationale - gateway/tests/test_group_isolation.py
+- [[TestGroupMemoryInvisibleFromDM]] - code - gateway/tests/test_group_isolation.py
+- [[User DM content must not leak into a group the user is NOT a member of.]] - rationale - gateway/tests/test_group_isolation.py
+- [[get_merged_memory_for_user returns group section and private section separately.]] - rationale - gateway/tests/test_group_isolation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +27,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 330]]
+- 2 edges to [[_COMMUNITY_Community 52]]
+- 2 edges to [[_COMMUNITY_Community 1305]]
+- 1 edge to [[_COMMUNITY_Community 194]]
+- 1 edge to [[_COMMUNITY_Community 6]]
+- 1 edge to [[_COMMUNITY_Community 60]]
 
 ## Top bridge nodes
-- [[VIII. Evaluation]] - degree 9, connects to 1 community
+- [[TestGroupMemoryInvisibleFromDM]] - degree 12, connects to 5 communities

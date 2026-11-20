@@ -12,9 +12,9 @@ tags:
 # _TrustCaptor
 
 ## Connections
-- [[.__init__()_178]] - `method` [EXTRACTED]
-- [[.process_inbound()_5]] - `method` [EXTRACTED]
-- [[.process_outbound()_5]] - `method` [EXTRACTED]
+- [[.__init__()_175]] - `method` [EXTRACTED]
+- [[.process_inbound()_4]] - `method` [EXTRACTED]
+- [[.process_outbound()_4]] - `method` [EXTRACTED]
 - [[.test_empty_user_id_does_not_elevate_trust()]] - `calls` [EXTRACTED]
 - [[.test_no_user_id_does_not_elevate_trust()]] - `calls` [EXTRACTED]
 - [[.test_non_owner_user_id_does_not_elevate_trust()]] - `calls` [EXTRACTED]

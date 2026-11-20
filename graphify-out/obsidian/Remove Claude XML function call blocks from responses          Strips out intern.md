@@ -2,7 +2,7 @@
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
 community: "Community 84"
-location: "L602"
+location: "L594"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

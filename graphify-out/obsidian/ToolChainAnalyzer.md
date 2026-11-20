@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Community 72"
+community: "Community 8"
 location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_8
 ---
 
 # ToolChainAnalyzer
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_137]] - `method` [EXTRACTED]
+- [[.__init__()_134]] - `method` [EXTRACTED]
 - [[._calculate_risk_score()]] - `method` [EXTRACTED]
 - [[._cleanup_old_sessions()_1]] - `method` [EXTRACTED]
 - [[._detect_chain_patterns()]] - `method` [EXTRACTED]
@@ -22,7 +22,6 @@ tags:
 - [[._matches_source_pattern()]] - `method` [EXTRACTED]
 - [[._trigger_alert()_1]] - `method` [EXTRACTED]
 - [[.add_alert_callback()_2]] - `method` [EXTRACTED]
-- [[.add_pattern()]] - `method` [EXTRACTED]
 - [[.analyze_tool_call()]] - `method` [EXTRACTED]
 - [[.analyzer()]] - `calls` [EXTRACTED]
 - [[.analyzer()_1]] - `calls` [EXTRACTED]
@@ -62,4 +61,4 @@ tags:
 - [[tool_chain_analyzer()]] - `calls` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/Community_8

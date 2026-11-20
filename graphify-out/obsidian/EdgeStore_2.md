@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/oauth_service.py"
 type: "code"
-community: "Community 32"
+community: "Community 2048"
 location: "L67"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_32
+  - community/Community_2048
 ---
 
 # EdgeStore
@@ -17,4 +17,4 @@ tags:
 - [[TokenService]] - `uses` [INFERRED]
 - [[VendorProfile_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_32
+#graphify/code #graphify/INFERRED #community/Community_2048

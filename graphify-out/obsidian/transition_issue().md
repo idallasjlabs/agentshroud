@@ -13,7 +13,6 @@ tags:
 
 ## Connections
 - [[Move an issue to the named status (matched against available transitions).]] - `rationale_for` [EXTRACTED]
-- [[RuntimeError]] - `calls` [INFERRED]
 - [[_auth_headers()]] - `calls` [EXTRACTED]
 - [[build_transitions_url()]] - `calls` [EXTRACTED]
 - [[find_transition_id()]] - `calls` [EXTRACTED]

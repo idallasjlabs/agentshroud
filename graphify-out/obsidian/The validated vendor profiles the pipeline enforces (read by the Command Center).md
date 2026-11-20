@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/service.py"
 type: "rationale"
-community: "Community 32"
+community: "Community 80"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Community_80
 ---
 
 # The validated vendor profiles the pipeline enforces (read by the Command Center)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.profiles()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_32
+#graphify/rationale #graphify/EXTRACTED #community/Community_80

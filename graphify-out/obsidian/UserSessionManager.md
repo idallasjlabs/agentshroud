@@ -1,30 +1,27 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Community 1305"
+community: "Community 60"
 location: "L121"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1305
+  - community/Community_60
 ---
 
 # UserSessionManager
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_60]] - `calls` [EXTRACTED]
-- [[.__init__()_130]] - `method` [EXTRACTED]
+- [[.__init__()_59]] - `calls` [EXTRACTED]
+- [[.__init__()_128]] - `method` [EXTRACTED]
 - [[._load_sessions()]] - `method` [EXTRACTED]
 - [[._save_sessions()]] - `method` [EXTRACTED]
 - [[._session_key()]] - `method` [EXTRACTED]
 - [[._validate_bot_id()]] - `method` [EXTRACTED]
 - [[._validate_user_id()]] - `method` [EXTRACTED]
 - [[.add_conversation_message()]] - `method` [EXTRACTED]
-- [[.can_user_access_group()]] - `method` [EXTRACTED]
 - [[.can_user_access_session()]] - `method` [EXTRACTED]
-- [[.cleanup_old_sessions()_1]] - `method` [EXTRACTED]
-- [[.get_merged_context()]] - `method` [EXTRACTED]
 - [[.get_or_create_group_session()]] - `method` [EXTRACTED]
 - [[.get_or_create_session()]] - `method` [EXTRACTED]
 - [[.get_session_context()]] - `method` [EXTRACTED]
@@ -137,7 +134,7 @@ tags:
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[mgr()_2]] - `calls` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[run()_2]] - `calls` [EXTRACTED]
 - [[session_manager()]] - `calls` [EXTRACTED]
 - [[session_manager()_1]] - `calls` [EXTRACTED]
 - [[session_manager()_2]] - `calls` [EXTRACTED]
@@ -159,4 +156,4 @@ tags:
 - [[usm()]] - `calls` [EXTRACTED]
 - [[webhook_receiver.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1305
+#graphify/code #graphify/INFERRED #community/Community_60

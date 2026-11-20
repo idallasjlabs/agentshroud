@@ -12,6 +12,6 @@ tags:
 # Serialise for the unattended run's audit trail.
 
 ## Connections
-- [[.to_dict()_17]] - `rationale_for` [EXTRACTED]
+- [[.to_dict()_15]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_420

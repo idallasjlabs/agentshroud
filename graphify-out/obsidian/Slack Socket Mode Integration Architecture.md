@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup-slack.md"
 type: "concept"
-community: "Community 581"
+community: "Community 1966"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_581
+  - community/Community_1966
 ---
 
 # Slack Socket Mode Integration Architecture
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Telegram Bot Setup (BotFather token + gateway config)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_581
+#graphify/concept #graphify/EXTRACTED #community/Community_1966

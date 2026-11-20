@@ -1,19 +1,15 @@
 ---
 type: community
-members: 6
+members: 2
 ---
 
 # Community 2134
 
-**Members:** 6 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[.test_custom_config()_3]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_default_config()_7]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test ToolResultSanitizerConfig.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test custom configuration.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test default configuration values._5]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[TestToolResultSanitizerConfig]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[ollamaqwen314b → qwen3-14b for LM Studio backend.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_normalize_local_model_lmstudio_replaces_colon_with_dash()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,11 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 647]]
-- 1 edge to [[_COMMUNITY_Community 455]]
+- 1 edge to [[_COMMUNITY_Community 208]]
 
 ## Top bridge nodes
-- [[TestToolResultSanitizerConfig]] - degree 6, connects to 1 community
-- [[.test_default_config()_7]] - degree 3, connects to 1 community
-- [[.test_custom_config()_3]] - degree 3, connects to 1 community
-- [[Test ToolResultSanitizerConfig.]] - degree 2, connects to 1 community
+- [[test_normalize_local_model_lmstudio_replaces_colon_with_dash()]] - degree 2, connects to 1 community

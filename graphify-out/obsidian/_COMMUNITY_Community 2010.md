@@ -1,22 +1,18 @@
 ---
 type: community
-members: 9
+members: 5
 ---
 
 # Community 2010
 
-**Members:** 9 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[.setup_method()_25]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_compose_not_supported()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_health_check()_1]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_inspect_non_json()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_network_graceful_fail()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_pause_fallback()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_ps_text_parse()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_run_ignores_seccomp()]] - code - gateway/tests/test_runtime_engines.py
-- [[TestAppleContainerEngine]] - code - gateway/tests/test_runtime_engines.py
+- [[Step 1 Create Google Cloud Project_1]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Step 2 Create OAuth Credentials_1]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Step 3 Store Credentials]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Step 4 Get Refresh Token]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[🛠️ OAuth2 Setup (If Needed)]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,12 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 379]]
-- 2 edges to [[_COMMUNITY_Community 240]]
-- 1 edge to [[_COMMUNITY_Community 372]]
-- 1 edge to [[_COMMUNITY_Community 738]]
-- 1 edge to [[_COMMUNITY_Community 250]]
+- 1 edge to [[_COMMUNITY_Community 285]]
 
 ## Top bridge nodes
-- [[TestAppleContainerEngine]] - degree 14, connects to 5 communities
-- [[.setup_method()_25]] - degree 2, connects to 1 community
+- [[🛠️ OAuth2 Setup (If Needed)]] - degree 5, connects to 1 community

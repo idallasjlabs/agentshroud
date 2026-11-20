@@ -60,14 +60,13 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 7 edges to [[_COMMUNITY_Community 1278]]
+- 3 edges to [[_COMMUNITY_Community 290]]
 - 3 edges to [[_COMMUNITY_Community 53]]
 - 2 edges to [[_COMMUNITY_Community 190]]
-- 2 edges to [[_COMMUNITY_Community 290]]
-- 1 edge to [[_COMMUNITY_Community 1105]]
 
 ## Top bridge nodes
 - [[LLMProxy.proxy_messages_streaming]] - degree 19, connects to 2 communities
-- [[_telegram_send]] - degree 4, connects to 2 communities
 - [[test_streaming_connect_failure_keeps_in_stream_error_frame]] - degree 3, connects to 2 communities
 - [[LLMProxy.proxy_messages (non-streaming)]] - degree 26, connects to 1 community
 - [[LLMProxy._normalize_local_model]] - degree 6, connects to 1 community
+- [[LOCAL_MODEL_ROUTES]] - degree 4, connects to 1 community

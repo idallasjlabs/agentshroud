@@ -2,7 +2,7 @@
 source_file: "gateway/soc/models.py"
 type: "code"
 community: "Community 614"
-location: "L109"
+location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -17,7 +17,7 @@ tags:
 - [[.test_minimal_construction()]] - `calls` [EXTRACTED]
 - [[.test_no_bot_id_returns_all_events()]] - `calls` [EXTRACTED]
 - [[.test_optional_fields_default_none()]] - `calls` [EXTRACTED]
-- [[Any_76]] - `uses` [INFERRED]
+- [[Any_72]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[SecurityEvent]] - `uses` [INFERRED]
 - [[Severity_1]] - `uses` [INFERRED]

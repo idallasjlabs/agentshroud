@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/call_pipeline.py"
 type: "code"
-community: "Community 32"
+community: "Community 2048"
 location: "L161"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_32
+  - community/Community_2048
 ---
 
 # EdgeCallPipeline
@@ -57,4 +57,4 @@ tags:
 - [[test_edge_e2e_sdk.py]] - `imports` [EXTRACTED]
 - [[test_edge_pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_32
+#graphify/code #graphify/INFERRED #community/Community_2048

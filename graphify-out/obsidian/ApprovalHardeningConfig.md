@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_69]] - `references` [EXTRACTED]
+- [[.__init__()_67]] - `references` [EXTRACTED]
 - [[.config()]] - `calls` [EXTRACTED]
 - [[.test_cooldown_disabled_when_feature_disabled()]] - `calls` [EXTRACTED]
 - [[.test_custom_config()]] - `calls` [EXTRACTED]
@@ -36,7 +36,7 @@ tags:
 - [[approval_hardening.py]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[run()_2]] - `calls` [EXTRACTED]
 - [[test_approval_hardening.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_3

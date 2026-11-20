@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "Community 1288"
-location: "L319"
+community: "Community 18"
+location: "L310"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1288
+  - community/Community_18
 ---
 
 # Persist a runtime group creation so it survives container restarts.
 
 ## Connections
 - [[persist_group_create()]] - `rationale_for` [EXTRACTED]
-- [[persist_group_delete()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1288
+#graphify/rationale #graphify/EXTRACTED #community/Community_18

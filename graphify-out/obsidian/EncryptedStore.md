@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "Community 52"
+community: "Community 96"
 location: "L58"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_52
+  - community/Community_96
 ---
 
 # EncryptedStore
 
 ## Connections
-- [[.__init__()_93]] - `method` [EXTRACTED]
+- [[.__init__()_91]] - `method` [EXTRACTED]
 - [[._derive_key()]] - `method` [EXTRACTED]
 - [[._resolve_secret()]] - `method` [EXTRACTED]
 - [[.decrypt()]] - `method` [EXTRACTED]
@@ -78,4 +78,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_52
+#graphify/code #graphify/INFERRED #community/Community_96

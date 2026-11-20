@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_pipeline.py"
 type: "code"
-community: "Community 32"
+community: "Community 84"
 location: "L430"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_32
+  - community/Community_84
 ---
 
 # TestAuditRecord
@@ -32,4 +32,4 @@ tags:
 - [[ToolRiskConfig_1]] - `uses` [INFERRED]
 - [[test_edge_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_32
+#graphify/code #graphify/INFERRED #community/Community_84

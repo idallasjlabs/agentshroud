@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "Community 1305"
+community: "Community 855"
 location: "L134"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1305
+  - community/Community_855
 ---
 
 # group-{chat_id} sessions must live under the 'groups' subdirectory.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_group_id_uses_group_prefix_namespace()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1305
+#graphify/rationale #graphify/EXTRACTED #community/Community_855

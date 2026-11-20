@@ -29,12 +29,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 3 edges to [[_COMMUNITY_Community 773]]
 - 2 edges to [[_COMMUNITY_Community 1255]]
-- 2 edges to [[_COMMUNITY_Community 773]]
 - 1 edge to [[_COMMUNITY_Community 106]]
 - 1 edge to [[_COMMUNITY_Community 1386]]
-- 1 edge to [[_COMMUNITY_Community 2123]]
 
 ## Top bridge nodes
-- [[1.5.0 A2A Governance (2026-08-14)]] - degree 10, connects to 5 communities
+- [[1.5.0 A2A Governance (2026-08-14)]] - degree 10, connects to 4 communities
 - [[1.0.0 — featv1.0.0 — Fortress (2026-03-31)]] - degree 8, connects to 2 communities

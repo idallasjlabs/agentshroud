@@ -1,15 +1,19 @@
 ---
 type: community
-members: 2
+members: 6
 ---
 
 # Community 2406
 
-**Members:** 2 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[.test_raw_web_fetch_json_consecutive_dot_domain_does_not_queue_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Consecutive-dot domains should be rejected before approval queueing.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Added_10]] - document - CHANGELOG.md
+- [[Changed_6]] - document - CHANGELOG.md
+- [[Fixed_14]] - document - CHANGELOG.md
+- [[Summary_17]] - document - CHANGELOG.md
+- [[Tests_3]] - document - CHANGELOG.md
+- [[Unreleased — featv0.8.0-enforcement-hardening (session 2 — 2026-03-14)]] - document - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 845]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 626]]
+- 1 edge to [[_COMMUNITY_Community 1255]]
 
 ## Top bridge nodes
-- [[.test_raw_web_fetch_json_consecutive_dot_domain_does_not_queue_approval()]] - degree 4, connects to 3 communities
+- [[Unreleased — featv0.8.0-enforcement-hardening (session 2 — 2026-03-14)]] - degree 6, connects to 1 community

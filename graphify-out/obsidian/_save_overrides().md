@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Community 1288"
-location: "L250"
+community: "Community 18"
+location: "L241"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1288
+  - community/Community_18
 ---
 
 # _save_overrides()
@@ -20,4 +20,4 @@ tags:
 - [[persist_group_member_remove()]] - `calls` [EXTRACTED]
 - [[persist_user_collab_mode()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1288
+#graphify/code #graphify/EXTRACTED #community/Community_18

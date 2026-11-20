@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "Community 647"
+community: "Community 455"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_647
+  - community/Community_455
 ---
 
 # tool_result_sanitizer_enhanced.py
@@ -16,4 +16,4 @@ tags:
 - [[ToolResultSanitizerConfig]] - `contains` [EXTRACTED]
 - [[sanitize_tool_result()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_647
+#graphify/code #graphify/EXTRACTED #community/Community_455

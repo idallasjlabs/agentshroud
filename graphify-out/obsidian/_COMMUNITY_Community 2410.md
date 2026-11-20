@@ -1,15 +1,17 @@
 ---
 type: community
-members: 2
+members: 4
 ---
 
 # Community 2410
 
-**Members:** 2 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_raw_web_fetch_json_url_with_backslashes_does_not_queue_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Backslash-containing URLs should be rejected to avoid parser confusion.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_single_inbound_under_200ms()]] - code - gateway/tests/test_performance.py
+- [[.test_single_outbound_under_200ms()]] - code - gateway/tests/test_performance.py
+- [[Single message through SecurityPipeline.process_inbound  200ms.]] - rationale - gateway/tests/test_performance.py
+- [[Single message through SecurityPipeline.process_outbound  200ms.]] - rationale - gateway/tests/test_performance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +21,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 845]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 626]]
+- 2 edges to [[_COMMUNITY_Community 7]]
 
 ## Top bridge nodes
-- [[.test_raw_web_fetch_json_url_with_backslashes_does_not_queue_approval()]] - degree 4, connects to 3 communities
+- [[.test_single_outbound_under_200ms()]] - degree 3, connects to 1 community
+- [[.test_single_inbound_under_200ms()]] - degree 2, connects to 1 community

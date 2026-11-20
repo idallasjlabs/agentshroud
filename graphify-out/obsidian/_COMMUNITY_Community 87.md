@@ -1,11 +1,11 @@
 ---
 type: community
-members: 69
+members: 71
 ---
 
 # Community 87
 
-**Members:** 69 nodes
+**Members:** 71 nodes
 
 ## Members
 - [[.test_output_json()]] - code - gateway/tests/test_cli_coverage.py
@@ -42,6 +42,7 @@ members: 69
 - [[Show edge state, per-vendor counters, kills and recent calls.]] - rationale - gateway/cli/main.py
 - [[Show pending egress approval requests.]] - rationale - gateway/cli/main.py
 - [[Stop a service container.]] - rationale - gateway/cli/main.py
+- [[Stream real-time events or logs via WebSocket.]] - rationale - gateway/cli/main.py
 - [[TestOutputHelpers]] - code - gateway/tests/test_cli_coverage.py
 - [[Trigger a security scan.]] - rationale - gateway/cli/main.py
 - [[_edge_result()]] - code - gateway/cli/main.py
@@ -77,6 +78,7 @@ members: 69
 - [[set_mode()]] - code - gateway/cli/main.py
 - [[stop()]] - code - gateway/cli/main.py
 - [[stop_service()]] - code - gateway/cli/main.py
+- [[tail()]] - code - gateway/cli/main.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -86,14 +88,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_Community 1023]]
-- 4 edges to [[_COMMUNITY_Community 488]]
-- 3 edges to [[_COMMUNITY_Community 170]]
+- 7 edges to [[_COMMUNITY_Community 488]]
+- 7 edges to [[_COMMUNITY_Community 1023]]
+- 4 edges to [[_COMMUNITY_Community 170]]
 - 1 edge to [[_COMMUNITY_Community 978]]
 
 ## Top bridge nodes
 - [[main.py_1]] - degree 41, connects to 4 communities
-- [[TestOutputHelpers]] - degree 14, connects to 2 communities
+- [[TestOutputHelpers]] - degree 14, connects to 3 communities
 - [[get()]] - degree 11, connects to 2 communities
+- [[tail()]] - degree 5, connects to 2 communities
 - [[_output()]] - degree 33, connects to 1 community
-- [[_print_table()]] - degree 5, connects to 1 community

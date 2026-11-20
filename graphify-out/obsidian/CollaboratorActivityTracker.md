@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "Community 329"
+community: "Community 436"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_329
+  - community/Community_436
 ---
 
 # CollaboratorActivityTracker
 
 ## Connections
-- [[.__init__()_77]] - `method` [EXTRACTED]
+- [[.__init__()_75]] - `method` [EXTRACTED]
 - [[._append_contributor_log()]] - `method` [EXTRACTED]
 - [[._coerce_timestamp()]] - `method` [EXTRACTED]
 - [[._normalize_preview()]] - `method` [EXTRACTED]
@@ -65,4 +65,4 @@ tags:
 - [[test_unknown_user_recorded_when_dynamic_tracking_enabled()]] - `calls` [EXTRACTED]
 - [[tracker()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_329
+#graphify/code #graphify/EXTRACTED #community/Community_436

@@ -1,54 +1,58 @@
 ---
 type: community
-members: 41
+members: 45
 ---
 
 # Community 140
 
-**Members:** 41 nodes
+**Members:** 45 nodes
 
 ## Members
-- [[.sanitizer()_1]] - code - gateway/tests/test_security_audit.py
-- [[.test_credit_card_amex()]] - code - gateway/tests/test_security_audit.py
-- [[.test_credit_card_no_dashes()]] - code - gateway/tests/test_security_audit.py
-- [[.test_credit_card_visa()]] - code - gateway/tests/test_security_audit.py
-- [[.test_email_standard()]] - code - gateway/tests/test_security_audit.py
-- [[.test_email_with_plus()]] - code - gateway/tests/test_security_audit.py
-- [[.test_empty_and_none_input()]] - code - gateway/tests/test_security_audit.py
-- [[.test_multiple_pii_single_message()]] - code - gateway/tests/test_security_audit.py
-- [[.test_no_false_positive_on_dates()]] - code - gateway/tests/test_security_audit.py
-- [[.test_no_false_positive_on_zip()]] - code - gateway/tests/test_security_audit.py
-- [[.test_phone_international()]] - code - gateway/tests/test_security_audit.py
-- [[.test_phone_us_standard()]] - code - gateway/tests/test_security_audit.py
-- [[.test_pii_boundary_handling()]] - code - gateway/tests/test_security_audit.py
-- [[.test_pii_in_code_block()]] - code - gateway/tests/test_security_audit.py
-- [[.test_pii_in_json()]] - code - gateway/tests/test_security_audit.py
-- [[.test_pii_with_obfuscation_attempt()]] - code - gateway/tests/test_security_audit.py
-- [[.test_ssn_no_dashes()]] - code - gateway/tests/test_security_audit.py
-- [[.test_ssn_space_separated()]] - code - gateway/tests/test_security_audit.py
-- [[.test_ssn_standard_format()]] - code - gateway/tests/test_security_audit.py
-- [[.test_unicode_pii()]] - code - gateway/tests/test_security_audit.py
-- [[Amex card 378282246310005 (15 digits starting with 37).]] - rationale - gateway/tests/test_security_audit.py
-- [[Attempt to hide PII with zero-width chars.]] - rationale - gateway/tests/test_security_audit.py
-- [[Card without dashes 4111111111111111.]] - rationale - gateway/tests/test_security_audit.py
-- [[Dates should not be flagged as SSNphone.]] - rationale - gateway/tests/test_security_audit.py
-- [[Edge case empty string.]] - rationale - gateway/tests/test_security_audit.py
-- [[Email with plus addressing user+tag@gmail.com.]] - rationale - gateway/tests/test_security_audit.py
-- [[International phone +1-555-867-5309.]] - rationale - gateway/tests/test_security_audit.py
-- [[Multiple PII entities in one message.]] - rationale - gateway/tests/test_security_audit.py
-- [[PII at message start and end.]] - rationale - gateway/tests/test_security_audit.py
-- [[PII embedded in JSON.]] - rationale - gateway/tests/test_security_audit.py
-- [[PII in codemarkdown blocks.]] - rationale - gateway/tests/test_security_audit.py
-- [[PII with Unicode characters nearby.]] - rationale - gateway/tests/test_security_audit.py
-- [[SSN in standard XXX-XX-XXXX format.]] - rationale - gateway/tests/test_security_audit.py
-- [[SSN with spaces 123 45 6789.]] - rationale - gateway/tests/test_security_audit.py
-- [[SSN without dashes 123456789 — Presidio+spaCy only (regex needs dashes).]] - rationale - gateway/tests/test_security_audit.py
-- [[Standard email address.]] - rationale - gateway/tests/test_security_audit.py
-- [[Test PII sanitization — works with Presidio (Python ≤3.13) or regex fallback (3.]] - rationale - gateway/tests/test_security_audit.py
-- [[TestPIIDetection_1]] - code - gateway/tests/test_security_audit.py
-- [[US phone (555) 867-5309.]] - rationale - gateway/tests/test_security_audit.py
-- [[Visa card 4111-1111-1111-1111.]] - rationale - gateway/tests/test_security_audit.py
-- [[ZIP codes should not be flagged as SSNphoneCC.]] - rationale - gateway/tests/test_security_audit.py
+- [[.__init__()_89]] - code - gateway/security/egress_monitor.py
+- [[.check_anomalies()]] - code - gateway/security/egress_monitor.py
+- [[.daily_summary()]] - code - gateway/security/egress_monitor.py
+- [[.get_events()_1]] - code - gateway/security/egress_monitor.py
+- [[.record()_1]] - code - gateway/security/egress_monitor.py
+- [[.test_alert_has_description()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_alert_has_severity()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_alert_monitor_mode_no_block()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_default_mode_is_enforce()_1]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_empty_summary()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_generous_baselines()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_high_volume_triggers_alert()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_normal_multi_channel_not_flagged()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_normal_volume_no_alert()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_record_dns_event()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_record_file_event()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_record_http_event()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_record_mcp_event()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_slow_drip_across_channels()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_summary_report()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_unusual_destination_flagged()]] - code - gateway/tests/test_egress_monitor.py
+- [[AlertSeverity]] - code - gateway/security/egress_monitor.py
+- [[Alerts in monitor mode should never block.]] - rationale - gateway/tests/test_egress_monitor.py
+- [[AnomalyAlert]] - code - gateway/security/egress_monitor.py
+- [[Default mode is enforce after v0.8.0 enforcement hardening._1]] - rationale - gateway/tests/test_egress_monitor.py
+- [[EgressChannel]] - code - gateway/security/egress_monitor.py
+- [[EgressEvent]] - code - gateway/security/egress_monitor.py
+- [[EgressMonitor]] - code - gateway/security/egress_monitor.py
+- [[EgressMonitorConfig]] - code - gateway/security/egress_monitor.py
+- [[EgressSummary]] - code - gateway/security/egress_monitor.py
+- [[Normal usage across channels should not trigger drip detection.]] - rationale - gateway/tests/test_egress_monitor.py
+- [[Slow-drip  coordinated multi-channel exfiltration anomaly detection]] - concept - gateway/tests/test_egress_monitor.py
+- [[Small amounts across multiple channels should be detected.]] - rationale - gateway/tests/test_egress_monitor.py
+- [[TestAlertGeneration]] - code - gateway/tests/test_egress_monitor.py
+- [[TestAnomalyDetection]] - code - gateway/tests/test_egress_monitor.py
+- [[TestDailySummary]] - code - gateway/tests/test_egress_monitor.py
+- [[TestEgressMonitorConfig]] - code - gateway/tests/test_egress_monitor.py
+- [[TestEventRecording]] - code - gateway/tests/test_egress_monitor.py
+- [[TestSlowDripDetection]] - code - gateway/tests/test_egress_monitor.py
+- [[default_config()_2]] - code - gateway/tests/test_egress_monitor.py
+- [[egress_monitor.py]] - code - gateway/security/egress_monitor.py
+- [[monitor()]] - code - gateway/tests/test_egress_monitor.py
+- [[monitor_config()_1]] - code - gateway/tests/test_egress_monitor.py
+- [[test_egress_monitor.py]] - code - gateway/tests/test_egress_monitor.py
+- [[web_proxy.py]] - code - gateway/proxy/web_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -58,24 +62,27 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 0]]
+- 47 edges to [[_COMMUNITY_Community 0]]
+- 6 edges to [[_COMMUNITY_Community 31]]
+- 6 edges to [[_COMMUNITY_Community 26]]
+- 5 edges to [[_COMMUNITY_Community 120]]
+- 5 edges to [[_COMMUNITY_Community 103]]
 - 5 edges to [[_COMMUNITY_Community 72]]
-- 4 edges to [[_COMMUNITY_Community 84]]
-- 4 edges to [[_COMMUNITY_Community 52]]
-- 2 edges to [[_COMMUNITY_Community 121]]
-- 1 edge to [[_COMMUNITY_Community 557]]
-- 1 edge to [[_COMMUNITY_Community 196]]
-- 1 edge to [[_COMMUNITY_Community 152]]
-- 1 edge to [[_COMMUNITY_Community 21]]
-- 1 edge to [[_COMMUNITY_Community 31]]
-- 1 edge to [[_COMMUNITY_Community 24]]
-- 1 edge to [[_COMMUNITY_Community 684]]
-- 1 edge to [[_COMMUNITY_Community 809]]
-- 1 edge to [[_COMMUNITY_Community 71]]
-- 1 edge to [[_COMMUNITY_Community 532]]
-- 1 edge to [[_COMMUNITY_Community 5]]
-- 1 edge to [[_COMMUNITY_Community 146]]
+- 3 edges to [[_COMMUNITY_Community 6]]
+- 3 edges to [[_COMMUNITY_Community 45]]
+- 2 edges to [[_COMMUNITY_Community 1000]]
+- 2 edges to [[_COMMUNITY_Community 93]]
+- 2 edges to [[_COMMUNITY_Community 196]]
+- 2 edges to [[_COMMUNITY_Community 71]]
+- 2 edges to [[_COMMUNITY_Community 684]]
+- 2 edges to [[_COMMUNITY_Community 5]]
+- 1 edge to [[_COMMUNITY_Community 151]]
+- 1 edge to [[_COMMUNITY_Community 38]]
+- 1 edge to [[_COMMUNITY_Community 133]]
 
 ## Top bridge nodes
-- [[TestPIIDetection_1]] - degree 55, connects to 17 communities
-- [[.sanitizer()_1]] - degree 2, connects to 1 community
+- [[web_proxy.py]] - degree 27, connects to 10 communities
+- [[EgressEvent]] - degree 49, connects to 4 communities
+- [[EgressMonitorConfig]] - degree 30, connects to 4 communities
+- [[EgressChannel]] - degree 23, connects to 4 communities
+- [[EgressMonitor]] - degree 28, connects to 3 communities

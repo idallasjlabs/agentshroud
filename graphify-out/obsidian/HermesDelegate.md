@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/facades.py"
 type: "code"
-community: "Community 32"
+community: "Community 80"
 location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Community_80
 ---
 
 # HermesDelegate
@@ -27,4 +27,4 @@ tags:
 - [[test_edge_fuzz.py]] - `imports` [EXTRACTED]
 - [[test_shellish_input_never_executes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_32
+#graphify/code #graphify/EXTRACTED #community/Community_80

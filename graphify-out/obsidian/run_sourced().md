@@ -2,7 +2,7 @@
 source_file: "scripts/smoke.d/test-edge-keygen.sh"
 type: "code"
 community: "Community 1976"
-location: "L62"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED

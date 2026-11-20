@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.test_generate_report()_1]] - `calls` [EXTRACTED]
 - [[.test_history_persistence()]] - `calls` [EXTRACTED]
-- [[Any_52]] - `references` [EXTRACTED]
+- [[Any_49]] - `references` [EXTRACTED]
 - [[Generate a full health report.      Args         summaries Dict mapping tool n]] - `rationale_for` [EXTRACTED]
 - [[Path_15]] - `references` [EXTRACTED]
 - [[calculate_overall_score()]] - `calls` [EXTRACTED]

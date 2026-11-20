@@ -12,7 +12,7 @@ tags:
 # _deployment_state()
 
 ## Connections
-- [[Any_77]] - `references` [EXTRACTED]
+- [[Any_73]] - `references` [EXTRACTED]
 - [[The declared AGENTSHROUD_DEPLOYMENT and whether the running edge matches it.]] - `rationale_for` [EXTRACTED]
 - [[get_edge_status()]] - `calls` [EXTRACTED]
 - [[list_agents()_1]] - `calls` [EXTRACTED]

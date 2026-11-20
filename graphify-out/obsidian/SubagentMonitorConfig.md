@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_135]] - `references` [EXTRACTED]
+- [[.__init__()_132]] - `references` [EXTRACTED]
 - [[.test_subagent_monitor_default_enforce()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[Any_18]] - `uses` [INFERRED]

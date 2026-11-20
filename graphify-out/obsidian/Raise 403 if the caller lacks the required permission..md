@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "rationale"
-community: "Community 2031"
+community: "Community 890"
 location: "L147"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2031
+  - community/Community_890
 ---
 
 # Raise 403 if the caller lacks the required permission.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.require()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2031
+#graphify/rationale #graphify/EXTRACTED #community/Community_890

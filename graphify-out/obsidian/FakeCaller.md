@@ -12,7 +12,7 @@ tags:
 # FakeCaller
 
 ## Connections
-- [[.__init__()_210]] - `method` [EXTRACTED]
+- [[.__init__()_207]] - `method` [EXTRACTED]
 - [[.is_owner()_4]] - `method` [EXTRACTED]
 - [[.require()_1]] - `method` [EXTRACTED]
 - [[.test_owner_only()]] - `calls` [EXTRACTED]

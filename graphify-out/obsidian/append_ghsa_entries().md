@@ -2,7 +2,7 @@
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
 community: "Community 74"
-location: "L765"
+location: "L551"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # append_ghsa_entries()
 
 ## Connections
-- [[Any_90]] - `references` [EXTRACTED]
+- [[Any_86]] - `references` [EXTRACTED]
 - [[Append under_review new_entries to agent_id's OWN registry list.      Insert]] - `rationale_for` [EXTRACTED]
 - [[_append_verified()]] - `calls` [EXTRACTED]
 - [[_registry_var_for()]] - `calls` [EXTRACTED]

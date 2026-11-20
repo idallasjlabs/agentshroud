@@ -2,7 +2,7 @@
 source_file: "gateway/web/api.py"
 type: "code"
 community: "Community 49"
-location: "L965"
+location: "L961"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # SkillGuardBlocked
 
 ## Connections
-- [[.__init__()_227]] - `method` [EXTRACTED]
+- [[.__init__()_223]] - `method` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
 - [[Exception]] - `inherits` [EXTRACTED]

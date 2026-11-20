@@ -1,25 +1,20 @@
 ---
 type: community
-members: 34
+members: 42
 ---
 
 # Community 162
 
-**Members:** 34 nodes
+**Members:** 42 nodes
 
 ## Members
-- [[Agent Isolation Module Badge Icon]] - image - branding/icons/modules/agent-isolation-256x256.png
-- [[AgentShroud App Icon (64x64)]] - image - branding/icons/app/icon-64x64.png
-- [[AgentShroud BadgeAvatar Logo Variant (120x120)]] - image - branding/logos/variants/badge-120x120.png
-- [[AgentShroud Brand Collateral Mockup]] - image - branding/logos/png/logo-mockup.png
-- [[AgentShroud Logo (SVG Wrapper, Embedded Raster)]] - image - branding/logos/svg/logo.svg
-- [[AgentShroud Logo - GlowTransparent Variant]] - image - branding/logos/png/logo-transparent.png
-- [[AgentShroud Primary Logo Lockup]] - image - branding/logos/png/logo.png
-- [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - image - branding/icons/app/icon-macos-rounded-1024x1024.png
-- [[Credential Isolation Module Badge Icon]] - image - branding/icons/modules/credential-iso-256x256.png
+- [[._matches_allowlist_domain()]] - code - gateway/security/egress_filter.py
+- [[.matches_domain()]] - code - gateway/security/egress_filter.py
+- [[AgentShroud Semgrep SAST Configuration]] - document - .semgrep.yml
+- [[Check if domain matches any allowed domain (supports wildcards).          Wildca]] - rationale - gateway/security/egress_filter.py
+- [[Check if domain matches any domain in the allowlist (supports wildcards).]] - rationale - gateway/security/egress_filter.py
+- [[Checklist]] - document - .github/PULL_REQUEST_TEMPLATE.md
 - [[Current Assessment SL 2 (with SL 3 capabilities in FR 2, FR 3, FR 4, FR 6)]] - document - docs/compliance/iec-62443-matrix.md
-- [[Egress Filter Module Badge Icon]] - image - branding/icons/modules/egress-filter-256x256.png
-- [[Encrypted Store Module Badge Icon]] - image - branding/icons/modules/encrypted-store-256x256.png
 - [[FR 1 Identification and Authentication Control (IAC)]] - document - docs/compliance/iec-62443-matrix.md
 - [[FR 2 Use Control (UC)]] - document - docs/compliance/iec-62443-matrix.md
 - [[FR 3 System Integrity (SI)]] - document - docs/compliance/iec-62443-matrix.md
@@ -28,19 +23,32 @@ members: 34
 - [[FR 6 Timely Response to Events (TRE)]] - document - docs/compliance/iec-62443-matrix.md
 - [[FR 7 Resource Availability (RA)]] - document - docs/compliance/iec-62443-matrix.md
 - [[FR1 Identification and Authentication Control]] - concept - docs/compliance/iec-62443-matrix.md
-- [[FR2 Use Control]] - concept - docs/compliance/iec-62443-matrix.md
-- [[FR4 Data Confidentiality]] - concept - docs/compliance/iec-62443-matrix.md
+- [[FR3 System Integrity]] - concept - docs/compliance/iec-62443-matrix.md
 - [[FR5 Restricted Data Flow]] - concept - docs/compliance/iec-62443-matrix.md
 - [[FR6 Timely Response to Events]] - concept - docs/compliance/iec-62443-matrix.md
-- [[HTTP Proxy Module Badge Icon]] - image - branding/icons/modules/http-proxy-256x256.png
 - [[IEC 62443 Compliance Matrix — AgentShroud]] - document - docs/compliance/iec-62443-matrix.md
+- [[IEC 62443 Reference]] - document - .github/PULL_REQUEST_TEMPLATE.md
 - [[Key Components Referenced (v1.0.0)]] - document - docs/compliance/iec-62443-matrix.md
 - [[Overview_13]] - document - docs/compliance/iec-62443-matrix.md
-- [[PII Sanitizer Module Badge Icon]] - image - branding/icons/modules/pii-sanitizer-256x256.png
-- [[SSH Proxy Module Badge Icon]] - image - branding/icons/modules/ssh-proxy-256x256.png
+- [[PULL_REQUEST_TEMPLATE]] - document - .github/PULL_REQUEST_TEMPLATE.md
+- [[Return True if domain matches any pattern (exact or ``.`` wildcard).      Sin]] - rationale - gateway/security/egress_config.py
+- [[Rule agentshroud-assert-security-check]] - concept - .semgrep.yml
+- [[Rule agentshroud-hardcoded-password]] - concept - .semgrep.yml
+- [[Rule agentshroud-log-sensitive-key]] - concept - .semgrep.yml
+- [[Rule agentshroud-pickle-load]] - concept - .semgrep.yml
+- [[Rule agentshroud-sql-injection]] - concept - .semgrep.yml
+- [[Rule agentshroud-ssrf-httpx]] - concept - .semgrep.yml
+- [[Rule agentshroud-ssrf-requests]] - concept - .semgrep.yml
+- [[Rule agentshroud-subprocess-shell-true]] - concept - .semgrep.yml
+- [[Rule agentshroud-subprocess-unvalidated-input]] - concept - .semgrep.yml
+- [[Summary]] - document - .github/PULL_REQUEST_TEMPLATE.md
 - [[Summary_26]] - document - docs/compliance/iec-62443-matrix.md
-- [[Trust Manager Module Badge Icon]] - image - branding/icons/modules/trust-manager-256x256.png
-- [[encrypted_store.py]] - code - gateway/security/encrypted_store.py
+- [[Type of Change]] - document - .github/PULL_REQUEST_TEMPLATE.md
+- [[config_integrity.py]] - code - gateway/security/config_integrity.py
+- [[domain_matches()]] - code - gateway/security/egress_config.py
+- [[egress_config.py]] - code - gateway/security/egress_config.py
+- [[egress_filter.py]] - code - gateway/security/egress_filter.py
+- [[heuristic_classifier.py]] - code - gateway/security/heuristic_classifier.py
 - [[iec-62443-matrix]] - document - docs/compliance/iec-62443-matrix.md
 
 ## Live Query (requires Dataview plugin)
@@ -51,32 +59,44 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 52]]
-- 2 edges to [[_COMMUNITY_Community 7]]
-- 2 edges to [[_COMMUNITY_Community 254]]
+- 8 edges to [[_COMMUNITY_Community 17]]
+- 3 edges to [[_COMMUNITY_Community 151]]
+- 3 edges to [[_COMMUNITY_Community 22]]
+- 3 edges to [[_COMMUNITY_Community 329]]
+- 2 edges to [[_COMMUNITY_Community 120]]
+- 2 edges to [[_COMMUNITY_Community 57]]
+- 2 edges to [[_COMMUNITY_Community 23]]
 - 2 edges to [[_COMMUNITY_Community 73]]
-- 2 edges to [[_COMMUNITY_Community 9]]
-- 2 edges to [[_COMMUNITY_Community 22]]
-- 2 edges to [[_COMMUNITY_Community 393]]
-- 2 edges to [[_COMMUNITY_Community 466]]
-- 1 edge to [[_COMMUNITY_Community 27]]
-- 1 edge to [[_COMMUNITY_Community 43]]
-- 1 edge to [[_COMMUNITY_Community 89]]
-- 1 edge to [[_COMMUNITY_Community 56]]
-- 1 edge to [[_COMMUNITY_Community 23]]
-- 1 edge to [[_COMMUNITY_Community 121]]
-- 1 edge to [[_COMMUNITY_Community 684]]
-- 1 edge to [[_COMMUNITY_Community 98]]
-- 1 edge to [[_COMMUNITY_Community 75]]
+- 2 edges to [[_COMMUNITY_Community 21]]
+- 2 edges to [[_COMMUNITY_Community 96]]
 - 1 edge to [[_COMMUNITY_Community 6]]
+- 1 edge to [[_COMMUNITY_Community 62]]
+- 1 edge to [[_COMMUNITY_Community 0]]
+- 1 edge to [[_COMMUNITY_Community 254]]
+- 1 edge to [[_COMMUNITY_Community 125]]
+- 1 edge to [[_COMMUNITY_Community 241]]
+- 1 edge to [[_COMMUNITY_Community 205]]
+- 1 edge to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 166]]
+- 1 edge to [[_COMMUNITY_Community 1210]]
+- 1 edge to [[_COMMUNITY_Community 626]]
+- 1 edge to [[_COMMUNITY_Community 431]]
+- 1 edge to [[_COMMUNITY_Community 221]]
+- 1 edge to [[_COMMUNITY_Community 684]]
+- 1 edge to [[_COMMUNITY_Community 154]]
+- 1 edge to [[_COMMUNITY_Community 84]]
+- 1 edge to [[_COMMUNITY_Community 434]]
+- 1 edge to [[_COMMUNITY_Community 379]]
+- 1 edge to [[_COMMUNITY_Community 122]]
+- 1 edge to [[_COMMUNITY_Community 89]]
 - 1 edge to [[_COMMUNITY_Community 777]]
-- 1 edge to [[_COMMUNITY_Community 70]]
-- 1 edge to [[_COMMUNITY_Community 575]]
-- 1 edge to [[_COMMUNITY_Community 904]]
+- 1 edge to [[_COMMUNITY_Community 1]]
+- 1 edge to [[_COMMUNITY_Community 393]]
+- 1 edge to [[_COMMUNITY_Community 466]]
 
 ## Top bridge nodes
-- [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - degree 16, connects to 6 communities
-- [[FR2 Use Control]] - degree 7, connects to 6 communities
-- [[FR4 Data Confidentiality]] - degree 8, connects to 5 communities
-- [[encrypted_store.py]] - degree 6, connects to 3 communities
-- [[FR5 Restricted Data Flow]] - degree 4, connects to 3 communities
+- [[egress_filter.py]] - degree 28, connects to 18 communities
+- [[egress_config.py]] - degree 10, connects to 6 communities
+- [[domain_matches()]] - degree 8, connects to 3 communities
+- [[iec-62443-matrix]] - degree 8, connects to 3 communities
+- [[FR3 System Integrity]] - degree 7, connects to 3 communities

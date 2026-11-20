@@ -1,21 +1,25 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: "gateway/tests/test_edge_network_isolation.py"
 type: "code"
-community: "Community 943"
-location: "L66"
+community: "Community 108"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_943
+  - community/Community_108
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()_3]] - `references` [EXTRACTED]
-- [[get_fim_events()]] - `references` [EXTRACTED]
-- [[get_rootkit_events()]] - `references` [EXTRACTED]
-- [[parse_alert()_1]] - `references` [EXTRACTED]
-- [[read_alerts()_1]] - `references` [EXTRACTED]
+- [[_Override]] - `references` [EXTRACTED]
+- [[_compose()]] - `references` [EXTRACTED]
+- [[_environment()]] - `references` [EXTRACTED]
+- [[_load()_1]] - `references` [EXTRACTED]
+- [[_merge()]] - `references` [EXTRACTED]
+- [[_networks()]] - `references` [EXTRACTED]
+- [[_published()]] - `references` [EXTRACTED]
+- [[_strip()]] - `references` [EXTRACTED]
+- [[_subnets()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_943
+#graphify/code #graphify/EXTRACTED #community/Community_108

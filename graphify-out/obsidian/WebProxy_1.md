@@ -12,7 +12,7 @@ tags:
 # WebProxy
 
 ## Connections
-- [[.__init__()_59]] - `method` [EXTRACTED]
+- [[.__init__()_58]] - `method` [EXTRACTED]
 - [[._audit()_1]] - `method` [EXTRACTED]
 - [[.allowlist_proxy()]] - `calls` [EXTRACTED]
 - [[.check_request()]] - `method` [EXTRACTED]
@@ -47,7 +47,7 @@ tags:
 - [[TestPIIDetection_2]] - `uses` [INFERRED]
 - [[TestPassthroughMode_1]] - `uses` [INFERRED]
 - [[TestPromptInjectionDetection]] - `uses` [INFERRED]
-- [[TestRateLimiting_4]] - `uses` [INFERRED]
+- [[TestRateLimiting_3]] - `uses` [INFERRED]
 - [[TestResponseSizeLimits]] - `uses` [INFERRED]
 - [[TestSSRFBlocking]] - `uses` [INFERRED]
 - [[TestStats_1]] - `uses` [INFERRED]
@@ -72,7 +72,7 @@ tags:
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[passthrough_proxy()_1]] - `calls` [EXTRACTED]
-- [[proxy()_4]] - `calls` [EXTRACTED]
+- [[proxy()_3]] - `calls` [EXTRACTED]
 - [[test_blocked_domain_is_tracked_in_recent()]] - `calls` [EXTRACTED]
 - [[test_connect_blocked_domain_returns_403()]] - `calls` [EXTRACTED]
 - [[test_connect_denied_by_egress_filter_returns_403()]] - `calls` [EXTRACTED]

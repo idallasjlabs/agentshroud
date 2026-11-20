@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "Community 122"
+community: "Community 198"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_122
+  - community/Community_198
 ---
 
 # KeyRotationManager
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_103]] - `method` [EXTRACTED]
+- [[.__init__()_101]] - `method` [EXTRACTED]
 - [[._generate_new_credential()]] - `method` [EXTRACTED]
 - [[._read_credential_from_1password()]] - `method` [EXTRACTED]
 - [[._retire_old_credential_after_grace_period()]] - `method` [EXTRACTED]
@@ -68,4 +68,4 @@ tags:
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]
 - [[test_key_rotation_internals.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_122
+#graphify/code #graphify/EXTRACTED #community/Community_198

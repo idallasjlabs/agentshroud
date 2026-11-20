@@ -12,10 +12,9 @@ tags:
 # ControlCenter
 
 ## Connections
-- [[.__init__()_232]] - `method` [EXTRACTED]
+- [[.__init__()_228]] - `method` [EXTRACTED]
 - [[.clear_screen()]] - `method` [EXTRACTED]
 - [[.draw_approvals()]] - `method` [EXTRACTED]
-- [[.draw_box()]] - `method` [EXTRACTED]
 - [[.draw_dashboard()]] - `method` [EXTRACTED]
 - [[.draw_kill_switch()]] - `method` [EXTRACTED]
 - [[.draw_log()]] - `method` [EXTRACTED]

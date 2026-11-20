@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Community 978"
+community: "Community 254"
 location: "L309"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_978
+  - community/Community_254
 ---
 
 # SSHWriteFileResponse
@@ -27,4 +27,4 @@ tags:
 - [[models.py]] - `contains` [EXTRACTED]
 - [[ssh_write_file()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_978
+#graphify/code #graphify/INFERRED #community/Community_254

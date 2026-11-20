@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Community 647"
+community: "Community 455"
 location: "L91"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_647
+  - community/Community_455
 ---
 
 # Enhanced markdown sanitizer with configurable domain allowlist.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolResultSanitizer_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_647
+#graphify/rationale #graphify/EXTRACTED #community/Community_455

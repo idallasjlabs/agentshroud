@@ -1,11 +1,11 @@
 ---
 type: community
-members: 44
+members: 42
 ---
 
 # Community 155
 
-**Members:** 44 nodes
+**Members:** 42 nodes
 
 ## Members
 - [[.__init__()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
@@ -20,7 +20,6 @@ members: 44
 - [[._validate_url()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[.click()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[.close()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[.detect_captcha()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[.extract()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[.fill_field()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[.get_audit_log()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
@@ -31,7 +30,6 @@ members: 44
 - [[Classify action risk level          Security Determines if approval is needed_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Clean up browser resources_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Click an element          Security Risk classification for destructive actions_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Detect if CAPTCHA is present on page_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Extract data from page          Security No credential extraction allowed_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Fill a single form field          Security Risk classification, approval for se_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Initialize browser with security settings_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
@@ -62,7 +60,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_Community 68]]
-- 2 edges to [[_COMMUNITY_Community 8]]
+- 2 edges to [[_COMMUNITY_Community 6]]
 - 1 edge to [[_COMMUNITY_Community 2048]]
 
 ## Top bridge nodes

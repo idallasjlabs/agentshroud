@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Community 20"
+community: "Community 38"
 location: "L232"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_20
+  - community/Community_38
 ---
 
 # ServiceDescriptor
@@ -19,4 +19,4 @@ tags:
 - [[ServiceDescriptor]] - `uses` [INFERRED]
 - [[ServiceStatus]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_20
+#graphify/code #graphify/INFERRED #community/Community_38

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "Community 114"
-location: "L30"
+community: "Community 43"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_114
+  - community/Community_43
 ---
 
 # WebhookReceiver
 
 ## Connections
-- [[.__init__()_60]] - `method` [EXTRACTED]
+- [[.__init__()_59]] - `method` [EXTRACTED]
 - [[._can_create_directory()]] - `method` [EXTRACTED]
 - [[._extract_message()]] - `method` [EXTRACTED]
 - [[._extract_user_id()_1]] - `method` [EXTRACTED]
@@ -24,7 +24,6 @@ tags:
 - [[.test_webhook_conversation_logging()]] - `calls` [EXTRACTED]
 - [[.test_webhook_session_context_injection()]] - `calls` [EXTRACTED]
 - [[.test_webhook_user_id_extraction()]] - `calls` [EXTRACTED]
-- [[.validate_signature()]] - `method` [EXTRACTED]
 - [[Collaborator Tracker Tests]] - `references` [EXTRACTED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[Receives webhooks and routes them through the security pipeline.      In product]] - `rationale_for` [EXTRACTED]
@@ -57,4 +56,4 @@ tags:
 - [[test_webhook_strips_pii()]] - `calls` [EXTRACTED]
 - [[webhook_receiver.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_114
+#graphify/code #graphify/EXTRACTED #community/Community_43

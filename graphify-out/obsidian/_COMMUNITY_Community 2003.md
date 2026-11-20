@@ -1,21 +1,18 @@
 ---
 type: community
-members: 8
+members: 5
 ---
 
 # Community 2003
 
-**Members:** 8 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[.acceptable()]] - code - gateway/security/subagent_governance.py
-- [[Configuration for subagent output trust scoring.]] - rationale - gateway/security/subagent_governance.py
-- [[OutputScore]] - code - gateway/security/subagent_governance.py
-- [[OutputTrustConfig]] - code - gateway/security/subagent_governance.py
-- [[Privilege escalation prevention policy.]] - rationale - gateway/security/subagent_governance.py
-- [[PrivilegePolicy]] - code - gateway/security/subagent_governance.py
-- [[Result of scoring a subagent's output.]] - rationale - gateway/security/subagent_governance.py
-- [[subagent_governance.py]] - code - gateway/security/subagent_governance.py
+- [[._sanitize_text()]] - code - gateway/security/log_sanitizer.py
+- [[.filter()_1]] - code - gateway/security/log_sanitizer.py
+- [[Filter log record, sanitizing sensitive content.]] - rationale - gateway/security/log_sanitizer.py
+- [[LogRecord_1]] - code - gateway/security/log_sanitizer.py
+- [[Sanitize sensitive data in text.]] - rationale - gateway/security/log_sanitizer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,14 +22,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 38]]
-- 3 edges to [[_COMMUNITY_Community 1360]]
-- 2 edges to [[_COMMUNITY_Community 1209]]
-- 1 edge to [[_COMMUNITY_Community 8]]
-- 1 edge to [[_COMMUNITY_Community 11]]
-- 1 edge to [[_COMMUNITY_Community 1782]]
-- 1 edge to [[_COMMUNITY_Community 1343]]
+- 2 edges to [[_COMMUNITY_Community 0]]
 
 ## Top bridge nodes
-- [[subagent_governance.py]] - degree 15, connects to 7 communities
-- [[OutputScore]] - degree 4, connects to 1 community
+- [[.filter()_1]] - degree 4, connects to 1 community
+- [[._sanitize_text()]] - degree 3, connects to 1 community

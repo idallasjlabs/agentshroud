@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "Community 121"
-location: "L50"
+community: "Community 0"
+location: "L49"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_121
+  - community/Community_0
 ---
 
 # GitGuard
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_97]] - `method` [EXTRACTED]
+- [[.__init__()_95]] - `method` [EXTRACTED]
 - [[._analyze_file_content()]] - `method` [EXTRACTED]
 - [[._analyze_script_content()]] - `method` [EXTRACTED]
 - [[._analyze_script_file()]] - `method` [EXTRACTED]
@@ -22,9 +22,6 @@ tags:
 - [[._scan_package_json()]] - `method` [EXTRACTED]
 - [[._scan_pyproject_toml()]] - `method` [EXTRACTED]
 - [[._scan_setup_py()]] - `method` [EXTRACTED]
-- [[.export_findings_report()]] - `method` [EXTRACTED]
-- [[.get_findings_summary()]] - `method` [EXTRACTED]
-- [[.monitor_git_operations()]] - `method` [EXTRACTED]
 - [[.scan_content()]] - `method` [EXTRACTED]
 - [[.scan_git_repository()]] - `method` [EXTRACTED]
 - [[.test_clean_hook_passes()]] - `calls` [EXTRACTED]
@@ -91,11 +88,11 @@ tags:
 - [[git_guard.py]] - `contains` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[run()_2]] - `calls` [EXTRACTED]
 - [[scan_repository()]] - `references` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_git_guard.py]] - `imports` [EXTRACTED]
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_121
+#graphify/code #graphify/INFERRED #community/Community_0

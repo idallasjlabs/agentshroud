@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "Community 80"
+community: "Community 24"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_80
+  - community/Community_24
 ---
 
 # EnvelopeSigner
 
 ## Connections
-- [[.__init__()_101]] - `method` [EXTRACTED]
+- [[.__init__()_99]] - `method` [EXTRACTED]
 - [[._compute_signature()]] - `method` [EXTRACTED]
 - [[.sign()]] - `method` [EXTRACTED]
 - [[.test_different_keys_fail_verification()]] - `calls` [EXTRACTED]
@@ -68,4 +68,4 @@ tags:
 - [[unwrap_untrusted()]] - `references` [EXTRACTED]
 - [[wrap_untrusted()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_80
+#graphify/code #graphify/EXTRACTED #community/Community_24

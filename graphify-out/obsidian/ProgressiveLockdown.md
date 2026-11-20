@@ -12,8 +12,8 @@ tags:
 # ProgressiveLockdown
 
 ## Connections
-- [[.__init__()_54]] - `calls` [EXTRACTED]
-- [[.__init__()_123]] - `method` [EXTRACTED]
+- [[.__init__()_53]] - `calls` [EXTRACTED]
+- [[.__init__()_121]] - `method` [EXTRACTED]
 - [[._action()]] - `method` [EXTRACTED]
 - [[._claim_notify()]] - `method` [EXTRACTED]
 - [[._effective_level()]] - `method` [EXTRACTED]

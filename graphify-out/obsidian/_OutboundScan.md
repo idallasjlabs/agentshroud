@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "Community 96"
+community: "Community 18"
 location: "L372"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_96
+  - community/Community_18
 ---
 
 # _OutboundScan
@@ -22,4 +22,4 @@ tags:
 - [[Result of the shared outbound text security scan.      processed a scan path (c]] - `rationale_for` [EXTRACTED]
 - [[telegram_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_96
+#graphify/code #graphify/INFERRED #community/Community_18

@@ -13,7 +13,6 @@ tags:
 
 ## Connections
 - [[.setup_method()_6]] - `method` [EXTRACTED]
-- [[.test_backward_compat_alias()]] - `method` [EXTRACTED]
 - [[.test_benign_text_low_score()]] - `method` [EXTRACTED]
 - [[.test_classification_result_properties()]] - `method` [EXTRACTED]
 - [[.test_clear_injection_high_score()]] - `method` [EXTRACTED]

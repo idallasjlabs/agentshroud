@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "Community 121"
+community: "Community 0"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_121
+  - community/Community_0
 ---
 
 # test_round2_hardening.py
@@ -30,4 +30,4 @@ tags:
 - [[Tests for Round 2 hardening — 9 fixes.]] - `rationale_for` [EXTRACTED]
 - [[scan_repository()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_121
+#graphify/code #graphify/EXTRACTED #community/Community_0

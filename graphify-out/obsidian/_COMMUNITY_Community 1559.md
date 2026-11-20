@@ -25,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1084]]
+- 1 edge to [[_COMMUNITY_Community 253]]
 
 ## Top bridge nodes
 - [[PII Pipeline Errors_2]] - degree 8, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Community 20"
+community: "Community 38"
 location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_20
+  - community/Community_38
 ---
 
 # _check_openscap()
@@ -16,4 +16,4 @@ tags:
 - [[Return 'running', 'stopped', or 'not_installed' for openscap (CC-01).]] - `rationale_for` [EXTRACTED]
 - [[services.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_20
+#graphify/code #graphify/EXTRACTED #community/Community_38

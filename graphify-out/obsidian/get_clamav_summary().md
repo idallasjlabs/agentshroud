@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Community 363"
+community: "Community 311"
 location: "L598"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_363
+  - community/Community_311
 ---
 
 # get_clamav_summary()
@@ -15,7 +15,7 @@ tags:
 - [[.test_clean_when_installed_but_no_report()_1]] - `calls` [EXTRACTED]
 - [[.test_infected_report()]] - `calls` [EXTRACTED]
 - [[.test_not_run_when_no_report()]] - `calls` [EXTRACTED]
-- [[Any_68]] - `references` [EXTRACTED]
+- [[Any_64]] - `references` [EXTRACTED]
 - [[Path_19]] - `calls` [EXTRACTED]
 - [[Return latest ClamAV scan summary from saved reports.      When ClamAV is instal]] - `rationale_for` [EXTRACTED]
 - [[_is_clamd_running()]] - `calls` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_363
+#graphify/code #graphify/EXTRACTED #community/Community_311

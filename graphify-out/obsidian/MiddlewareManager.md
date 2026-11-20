@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "Community 1"
+community: "Community 31"
 location: "L86"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1
+  - community/Community_31
 ---
 
 # MiddlewareManager
@@ -189,7 +189,7 @@ tags:
 - [[middleware.py]] - `contains` [EXTRACTED]
 - [[middleware.py_1]] - `references` [EXTRACTED]
 - [[middleware_manager()]] - `calls` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[run()_2]] - `calls` [EXTRACTED]
 - [[test_docs_accuracy.py]] - `imports` [EXTRACTED]
 - [[test_file_sandbox_message_gate.py]] - `imports` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `imports` [EXTRACTED]
@@ -198,4 +198,4 @@ tags:
 - [[test_session_isolation.py]] - `imports` [EXTRACTED]
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1
+#graphify/code #graphify/INFERRED #community/Community_31

@@ -1,16 +1,16 @@
 ---
 type: community
-members: 47
+members: 53
 ---
 
 # Community 125
 
-**Members:** 47 nodes
+**Members:** 53 nodes
 
 ## Members
 - [[.__call__()_3]] - code - gateway/tests/test_citation_verifier.py
-- [[.__init__()_76]] - code - gateway/security/citation_verifier.py
-- [[.__init__()_156]] - code - gateway/tests/test_citation_verifier.py
+- [[.__init__()_74]] - code - gateway/security/citation_verifier.py
+- [[.__init__()_153]] - code - gateway/tests/test_citation_verifier.py
 - [[._verifier()]] - code - gateway/tests/test_citation_verifier.py
 - [[._verifier()_1]] - code - gateway/tests/test_citation_verifier.py
 - [[._verify_url()]] - code - gateway/security/citation_verifier.py
@@ -36,23 +36,29 @@ members: 47
 - [[.test_wildcard_allowlist_match_kept()]] - code - gateway/tests/test_citation_verifier.py
 - [[.verify_entry()]] - code - gateway/security/citation_verifier.py
 - [[.verify_report()]] - code - gateway/security/citation_verifier.py
+- [[A draft competitive-intel report submitted for citation verification.]] - rationale - gateway/web/api.py
 - [[An unverified competitor claim submitted for citation checking.]] - rationale - gateway/security/citation_verifier.py
+- [[Build a CitationVerifier wired to the production (httpx) fetcher.      Isolated]] - rationale - gateway/web/api.py
 - [[CitationVerifier]] - code - gateway/security/citation_verifier.py
 - [[Deterministic fetcher maps url - (status, sha_or_None). Records calls.]] - rationale - gateway/tests/test_citation_verifier.py
 - [[DraftEntry]] - code - gateway/security/citation_verifier.py
 - [[FetchOutcome_1]] - code - gateway/tests/test_citation_verifier.py
+- [[IntelDraftEntry]] - code - gateway/web/api.py
+- [[IntelDraftRequest]] - code - gateway/web/api.py
+- [[One unverified competitor claim + its candidate source URLs.]] - rationale - gateway/web/api.py
 - [[Re-fetch url and return a Citation iff it is allowlisted + live.          SSRF]] - rationale - gateway/security/citation_verifier.py
-- [[Return True if domain matches any pattern (exact or ``.`` wildcard).      Sin]] - rationale - gateway/security/egress_config.py
 - [[Return a CompetitorEntry with only its valid citations, or None.          None m]] - rationale - gateway/security/citation_verifier.py
 - [[TestFetchOutcome]] - code - gateway/tests/test_citation_verifier.py
 - [[TestVerifyEntry]] - code - gateway/tests/test_citation_verifier.py
 - [[TestVerifyReport]] - code - gateway/tests/test_citation_verifier.py
 - [[Verifies competitor claims against re-fetched, allowlisted sources.]] - rationale - gateway/security/citation_verifier.py
+- [[Verify and persist a draft competitive-intel report (SCRUM-75).      Each draft]] - rationale - gateway/web/api.py
 - [[Verify every draft claim; return a report of only verified claims.          Clai]] - rationale - gateway/security/citation_verifier.py
 - [[_FakeFetcher]] - code - gateway/tests/test_citation_verifier.py
+- [[_intel_verifier()]] - code - gateway/web/api.py
 - [[citation_verifier module]] - code - gateway/security/citation_verifier.py
-- [[domain_matches()]] - code - gateway/security/egress_config.py
 - [[intel_report module (CompetitiveIntelReport, IntelReportStore)]] - code - gateway/security/intel_report.py
+- [[submit_competitive_intel()]] - code - gateway/web/api.py
 - [[test_citation_verifier.py]] - code - gateway/tests/test_citation_verifier.py
 - [[test_default_allowlist_uses_permanent_egress_domains()]] - code - gateway/tests/test_citation_verifier.py
 
@@ -64,16 +70,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 28 edges to [[_COMMUNITY_Community 49]]
-- 21 edges to [[_COMMUNITY_Community 137]]
-- 20 edges to [[_COMMUNITY_Community 57]]
+- 28 edges to [[_COMMUNITY_Community 57]]
+- 22 edges to [[_COMMUNITY_Community 137]]
+- 17 edges to [[_COMMUNITY_Community 49]]
 - 8 edges to [[_COMMUNITY_Community 40]]
-- 2 edges to [[_COMMUNITY_Community 17]]
-- 1 edge to [[_COMMUNITY_Community 166]]
+- 2 edges to [[_COMMUNITY_Community 890]]
+- 1 edge to [[_COMMUNITY_Community 162]]
 
 ## Top bridge nodes
-- [[DraftEntry]] - degree 46, connects to 4 communities
-- [[CitationVerifier]] - degree 44, connects to 4 communities
-- [[TestVerifyEntry]] - degree 19, connects to 3 communities
-- [[test_citation_verifier.py]] - degree 15, connects to 3 communities
-- [[_FakeFetcher]] - degree 14, connects to 3 communities
+- [[DraftEntry]] - degree 45, connects to 4 communities
+- [[CitationVerifier]] - degree 43, connects to 4 communities
+- [[IntelDraftRequest]] - degree 7, connects to 3 communities
+- [[IntelDraftEntry]] - degree 6, connects to 3 communities
+- [[TestVerifyEntry]] - degree 19, connects to 2 communities

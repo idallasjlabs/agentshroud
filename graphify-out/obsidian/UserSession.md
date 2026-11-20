@@ -15,7 +15,7 @@ tags:
 - [[.from_dict()_11]] - `method` [EXTRACTED]
 - [[.get_or_create_session()]] - `references` [EXTRACTED]
 - [[.test_session_to_dict_and_back()]] - `calls` [EXTRACTED]
-- [[.to_dict()_12]] - `method` [EXTRACTED]
+- [[.to_dict()_11]] - `method` [EXTRACTED]
 - [[Represents an isolated session for a user within a specific bot workspace.]] - `rationale_for` [EXTRACTED]
 - [[TestAccessControl_2]] - `uses` [INFERRED]
 - [[TestAtomicRegistryWrites]] - `uses` [INFERRED]

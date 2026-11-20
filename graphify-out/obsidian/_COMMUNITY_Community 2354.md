@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_default_config()_4]] - code - gateway/tests/test_memory_lifecycle.py
-- [[Test default configuration values._3]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[oMLX requires a bearer token, unlike LM Studiomlx_lmFieldflare.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_backend_headers_injects_bearer_token_for_omlx()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,8 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 477]]
-- 1 edge to [[_COMMUNITY_Community 16]]
+- 1 edge to [[_COMMUNITY_Community 208]]
 
 ## Top bridge nodes
-- [[.test_default_config()_4]] - degree 3, connects to 2 communities
+- [[test_local_backend_headers_injects_bearer_token_for_omlx()]] - degree 2, connects to 1 community

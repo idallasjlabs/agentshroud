@@ -1,28 +1,20 @@
 ---
 type: community
-members: 15
+members: 7
 ---
 
 # Community 1289
 
-**Members:** 15 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[.__post_init__()_7]] - code - gateway/security/memory_lifecycle.py
-- [[._cleanup_old_actions()]] - code - gateway/security/memory_lifecycle.py
-- [[._cleanup_old_threats()]] - code - gateway/security/memory_lifecycle.py
-- [[.archive_file()]] - code - gateway/security/memory_lifecycle.py
-- [[.enforce_daily_notes_retention()]] - code - gateway/security/memory_lifecycle.py
-- [[.enforce_memory_md_size_limit()]] - code - gateway/security/memory_lifecycle.py
-- [[.run_lifecycle_maintenance()]] - code - gateway/security/memory_lifecycle.py
-- [[Action taken during retention policy enforcement.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Archive a file to the archive directory.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Clean up old retention action records.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Clean up old threat records.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Enforce retention policy for daily notes.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Enforce size limit for MEMORY.md file.]] - rationale - gateway/security/memory_lifecycle.py
-- [[RetentionAction]] - code - gateway/security/memory_lifecycle.py
-- [[Run all lifecycle maintenance tasks.]] - rationale - gateway/security/memory_lifecycle.py
+- [[.guard()]] - code - gateway/tests/test_context_guard.py
+- [[.test_empty_provenance_for_unknown_session()]] - code - gateway/tests/test_context_guard.py
+- [[.test_segment_hash_integrity()]] - code - gateway/tests/test_context_guard.py
+- [[.test_segment_provenance_ordering()]] - code - gateway/tests/test_context_guard.py
+- [[.test_segment_tagging_basic()]] - code - gateway/tests/test_context_guard.py
+- [[.test_separate_sessions_isolated()]] - code - gateway/tests/test_context_guard.py
+- [[TestSourceTagging]] - code - gateway/tests/test_context_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,13 +24,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 16]]
-- 1 edge to [[_COMMUNITY_Community 2185]]
-- 1 edge to [[_COMMUNITY_Community 1945]]
+- 2 edges to [[_COMMUNITY_Community 0]]
+- 1 edge to [[_COMMUNITY_Community 216]]
+- 1 edge to [[_COMMUNITY_Community 344]]
 
 ## Top bridge nodes
-- [[RetentionAction]] - degree 8, connects to 2 communities
-- [[.archive_file()]] - degree 6, connects to 2 communities
-- [[.run_lifecycle_maintenance()]] - degree 6, connects to 1 community
-- [[.enforce_memory_md_size_limit()]] - degree 5, connects to 1 community
-- [[.enforce_daily_notes_retention()]] - degree 4, connects to 1 community
+- [[TestSourceTagging]] - degree 9, connects to 3 communities
+- [[.guard()]] - degree 2, connects to 1 community

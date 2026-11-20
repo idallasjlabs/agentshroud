@@ -2,7 +2,7 @@
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
 community: "Community 74"
-location: "L433"
+location: "L258"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[A Python string literal using black's quote preference.      CI runs black on ga]] - `rationale_for` [EXTRACTED]
-- [[Any_90]] - `references` [EXTRACTED]
+- [[Any_86]] - `references` [EXTRACTED]
 - [[_entry_to_py()]] - `indirect_call` [INFERRED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 

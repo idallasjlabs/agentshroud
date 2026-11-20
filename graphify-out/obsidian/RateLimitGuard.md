@@ -12,7 +12,7 @@ tags:
 # RateLimitGuard
 
 ## Connections
-- [[.__init__()_126]] - `method` [EXTRACTED]
+- [[.__init__()_124]] - `method` [EXTRACTED]
 - [[._burst_limit()]] - `method` [EXTRACTED]
 - [[._sustained_limit()]] - `method` [EXTRACTED]
 - [[.check()_6]] - `method` [EXTRACTED]

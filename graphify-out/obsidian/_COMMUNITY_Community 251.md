@@ -52,7 +52,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_Community 1278]]
-- 1 edge to [[_COMMUNITY_Community 34]]
+- 1 edge to [[_COMMUNITY_Community 325]]
 
 ## Top bridge nodes
 - [[test_llm_proxy_failover.py]] - degree 25, connects to 2 communities

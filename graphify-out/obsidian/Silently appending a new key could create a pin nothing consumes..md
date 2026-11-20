@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_auto_remediate_cves.py"
 type: "rationale"
 community: "Community 420"
-location: "L182"
+location: "L181"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

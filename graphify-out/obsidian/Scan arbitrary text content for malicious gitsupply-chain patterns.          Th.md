@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "Community 121"
-location: "L166"
+community: "Community 312"
+location: "L165"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_121
+  - community/Community_312
 ---
 
 # Scan arbitrary text content for malicious git/supply-chain patterns.          Th
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.scan_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_121
+#graphify/rationale #graphify/EXTRACTED #community/Community_312

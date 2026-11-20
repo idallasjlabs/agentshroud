@@ -1,22 +1,19 @@
 ---
 type: community
-members: 68
+members: 71
 ---
 
 # Community 111
 
-**Members:** 68 nodes
+**Members:** 71 nodes
 
 ## Members
-- [[.__init__()_150]] - code - gateway/tests/test_a2a_policy.py
-- [[.__init__()_151]] - code - gateway/tests/test_a2a_policy.py
+- [[NOTE gatewaysecurityegress_filter.py_is_private_ip has the same class]] - rationale - gateway/security/a2a_policy.py
+- [[.__init__()_147]] - code - gateway/tests/test_a2a_policy.py
 - [[.allowed()]] - code - gateway/security/a2a_policy.py
 - [[.submit_tool_request()_1]] - code - gateway/tests/test_a2a_policy.py
-- [[.submit_tool_request()_2]] - code - gateway/tests/test_a2a_policy.py
 - [[.wait_for_decision()_1]] - code - gateway/tests/test_a2a_policy.py
-- [[.wait_for_decision()_2]] - code - gateway/tests/test_a2a_policy.py
 - [[A 10-digit decimal string (matches the decimal-IPv4 pattern) whose     value exc]] - rationale - gateway/tests/test_a2a_policy.py
-- [[A duck-typed queue predating the ``force_tier`` kwarg — enforce() must     fall]] - rationale - gateway/tests/test_a2a_policy.py
 - [[A queue reporting requires_wait=False for a call the engine deemed     high-risk]] - rationale - gateway/tests/test_a2a_policy.py
 - [[A task_id AgentShroud never saw created (e.g. the very first GetTask     against]] - rationale - gateway/tests/test_a2a_policy.py
 - [[A2A peers are never equivalent to the human operator — unlike MCP,     owner_byp]] - rationale - gateway/tests/test_a2a_policy.py
@@ -25,18 +22,24 @@ members: 68
 - [[A2APolicyDecision]] - code - gateway/security/a2a_policy.py
 - [[A2APolicyEngine_2]] - code - gateway/tests/test_a2a_policy.py
 - [[An operator who explicitly opts into default_action=allow gets normal     risk-t]] - rationale - gateway/tests/test_a2a_policy.py
+- [[Best-effort canonicalization of alternate IPv4 encodings that     ``ipaddress.ip]] - rationale - gateway/security/a2a_policy.py
 - [[DNS rebinding a public-looking hostname that currently resolves to a     privat]] - rationale - gateway/tests/test_a2a_policy.py
 - [[Hardened SSRF guard for A2A push-notification callback URLs.      Independent mi]] - rationale - gateway/security/a2a_policy.py
 - [[Hostname resolution is mocked — this test asserts the validator's own     logic,]] - rationale - gateway/tests/test_a2a_policy.py
+- [[IPv4Address]] - code - gateway/security/a2a_policy.py
 - [[Ownership is checked before the risk-tier gate — a mismatched peer must     be d]] - rationale - gateway/tests/test_a2a_policy.py
 - [[Real JSON-RPC payloads deliver the method as a plain string — evaluate()     mus]] - rationale - gateway/tests/test_a2a_policy.py
 - [[The `engine` fixture has no approval_queue configured at all — a     high-risk m]] - rationale - gateway/tests/test_a2a_policy.py
 - [[The result of evaluating a single A2A request against the policy.]] - rationale - gateway/security/a2a_policy.py
 - [[True only for a terminal ALLOW. REQUIRE_APPROVAL is not allowed on         its o]] - rationale - gateway/security/a2a_policy.py
 - [[Two allowlisted peers, one denylisted peer, default-deny for everyone else.]] - rationale - gateway/tests/test_a2a_policy.py
-- [[_LegacyStubApprovalQueue]] - code - gateway/tests/test_a2a_policy.py
+- [[_BaseAddress]] - code - gateway/security/a2a_policy.py
 - [[_StubApprovalQueue]] - code - gateway/tests/test_a2a_policy.py
+- [[_address_is_public()]] - code - gateway/security/a2a_policy.py
 - [[_base_config()]] - code - gateway/tests/test_a2a_policy.py
+- [[_canonicalize_ip_literal()]] - code - gateway/security/a2a_policy.py
+- [[_int_to_ipv4()]] - code - gateway/security/a2a_policy.py
+- [[a2a_policy.py]] - code - gateway/security/a2a_policy.py
 - [[engine()]] - code - gateway/tests/test_a2a_policy.py
 - [[is_safe_a2a_callback_url()]] - code - gateway/security/a2a_policy.py
 - [[test_a2a_policy.py]] - code - gateway/tests/test_a2a_policy.py
@@ -85,13 +88,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 18 edges to [[_COMMUNITY_Community 307]]
-- 14 edges to [[_COMMUNITY_Community 221]]
-- 6 edges to [[_COMMUNITY_Community 947]]
+- 21 edges to [[_COMMUNITY_Community 307]]
+- 15 edges to [[_COMMUNITY_Community 947]]
+- 5 edges to [[_COMMUNITY_Community 221]]
+- 1 edge to [[_COMMUNITY_Community 6]]
+- 1 edge to [[_COMMUNITY_Community 1563]]
 
 ## Top bridge nodes
-- [[test_a2a_policy.py]] - degree 48, connects to 3 communities
-- [[A2APolicyEngine_2]] - degree 31, connects to 3 communities
-- [[_StubApprovalQueue]] - degree 13, connects to 3 communities
-- [[_LegacyStubApprovalQueue]] - degree 11, connects to 3 communities
-- [[A2AMethod_1]] - degree 8, connects to 3 communities
+- [[a2a_policy.py]] - degree 16, connects to 5 communities
+- [[A2APolicyDecision]] - degree 13, connects to 3 communities
+- [[test_a2a_policy.py]] - degree 48, connects to 2 communities
+- [[A2APolicyEngine_2]] - degree 31, connects to 2 communities
+- [[_StubApprovalQueue]] - degree 13, connects to 2 communities

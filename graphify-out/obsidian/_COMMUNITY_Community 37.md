@@ -1,20 +1,20 @@
 ---
 type: community
-members: 99
+members: 106
 ---
 
 # Community 37
 
-**Members:** 99 nodes
+**Members:** 106 nodes
 
 ## Members
 - [[.__call__()_14]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.__init__()_198]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.__init__()_221]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[._passthrough_pii()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.mock_forwarder()]] - code - gateway/tests/test_session_isolation.py
-- [[.mock_pipeline()]] - code - gateway/tests/test_session_isolation.py
+- [[.__init__()_195]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.__init__()_205]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.__init__()_218]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.info_filter_redaction_count()]] - code - gateway/tests/test_slack_proxy_coverage.py
 - [[.test_already_in_channel_is_idempotent_true()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_bots_inventory_matches_the_real_container_name()]] - code - gateway/tests/test_main_endpoints.py
 - [[.test_cached_corr_without_colon_falls_back_to_channel()]] - code - gateway/tests/test_slack_proxy_coverage.py
 - [[.test_cached_inbound_corr_skips_history_lookup()]] - code - gateway/tests/test_slack_proxy_coverage.py
 - [[.test_cant_kick_self_is_idempotent_true()]] - code - gateway/tests/test_slack_proxy_coverage.py
@@ -38,6 +38,7 @@ members: 99
 - [[.test_other_error_returns_false()]] - code - gateway/tests/test_slack_proxy_coverage.py
 - [[.test_other_error_returns_false()_1]] - code - gateway/tests/test_slack_proxy_coverage.py
 - [[.test_recovery_exception_is_non_fatal()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_redaction_count_access_error_is_non_fatal()]] - code - gateway/tests/test_slack_proxy_coverage.py
 - [[.test_sanitized_with_redactions()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_sanitized_without_redactions()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_sanitizer_error_fails_open()]] - code - gateway/tests/test_middleware_coverage.py
@@ -59,32 +60,38 @@ members: 99
 - [[Connection failure → {'ok' False, 'error' exc} (no exception leaks).]] - rationale - gateway/tests/test_slack_proxy_coverage.py
 - [[Correlation ID with no '' separator → outbound attributed to channel id.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
 - [[Create a SlackAPIProxy with a fake token and no real secretfile IO.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
-- [[Create a mock forwarder.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Create a mock security pipeline.]] - rationale - gateway/tests/test_session_isolation.py
 - [[Exception during inbound recovery → swallowed; outbound still recorded.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
 - [[Happy path POSTs to slack.comapimethod with injected bot token.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
 - [[History lookup returns ok=False → no inbound record; outbound still         logg]] - rationale - gateway/tests/test_slack_proxy_coverage.py
 - [[Minimal async callable for monkeypatching.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Non-owner channel error reading info_filter_redaction_count is swallowed]] - rationale - gateway/tests/test_slack_proxy_coverage.py
 - [[Non-thread reply → conversations.history lookup; bot and subtype         message]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Pipeline result whose redaction-count attribute raises on access.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
 - [[SlackAPIProxy_2]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[Test broadcast handles failed client sends]] - rationale - gateway/tests/test_approval_queue.py
 - [[TestBodyParsing]] - code - gateway/tests/test_slack_proxy_coverage.py
 - [[TestCallSlackApi]] - code - gateway/tests/test_slack_proxy_coverage.py
 - [[TestClose]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestHealthCheckDetailBotsInventory]] - code - gateway/tests/test_main_endpoints.py
 - [[TestInviteChannelMember]] - code - gateway/tests/test_slack_proxy_coverage.py
 - [[TestKickChannelMember]] - code - gateway/tests/test_slack_proxy_coverage.py
 - [[TestOutboundTracking]] - code - gateway/tests/test_slack_proxy_coverage.py
 - [[TestProcessToolResult]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestProvisionGroupChannel]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestRedactionCountErrorSwallow]] - code - gateway/tests/test_slack_proxy_coverage.py
 - [[Thread reply with no cached corr → conversations.replies lookup recovers]] - rationale - gateway/tests/test_slack_proxy_coverage.py
 - [[Tracker errors are non-fatal — Slack response still returned to bot.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
 - [[Unparseable JSON body → warning logged, empty payload forwarded (no crash).]] - rationale - gateway/tests/test_slack_proxy_coverage.py
 - [[When body() raises ClientDisconnect the handler returns 499 without crashing.]] - rationale - gateway/tests/test_security_fixes.py
+- [[_RaisingRedactionResult]] - code - gateway/tests/test_slack_proxy_coverage.py
 - [[_make_proxy()_3]] - code - gateway/tests/test_slack_proxy_coverage.py
 - [[chat.postMessage without channeltext → nothing recorded, no lookups.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[health_check_detail's per-bot inventory must key the Docker lookup by     each b]] - rationale - gateway/tests/test_main_endpoints.py
 - [[is_system=True chat.postMessage bypasses the tracker entirely.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
 - [[test_audit_export_cef()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_audit_export_exporter_raises()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_audit_export_json_dict_payload()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_broadcast_with_failed_client()]] - code - gateway/tests/test_approval_queue.py
 - [[test_cve_report_queued()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_egress_approve_missing_or_raises()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_egress_approve_mode_mapping()]] - code - gateway/tests/test_soc_router_coverage.py
@@ -118,61 +125,55 @@ SORT file.name ASC
 ## Connections to other communities
 - 26 edges to [[_COMMUNITY_Community 100]]
 - 25 edges to [[_COMMUNITY_Community 19]]
-- 13 edges to [[_COMMUNITY_Community 381]]
-- 13 edges to [[_COMMUNITY_Community 53]]
+- 13 edges to [[_COMMUNITY_Community 24]]
+- 12 edges to [[_COMMUNITY_Community 6]]
+- 11 edges to [[_COMMUNITY_Community 381]]
+- 9 edges to [[_COMMUNITY_Community 68]]
+- 9 edges to [[_COMMUNITY_Community 2050]]
 - 9 edges to [[_COMMUNITY_Community 51]]
 - 9 edges to [[_COMMUNITY_Community 63]]
-- 8 edges to [[_COMMUNITY_Community 68]]
 - 7 edges to [[_COMMUNITY_Community 220]]
-- 6 edges to [[_COMMUNITY_Community 24]]
-- 6 edges to [[_COMMUNITY_Community 169]]
-- 5 edges to [[_COMMUNITY_Community 531]]
+- 6 edges to [[_COMMUNITY_Community 31]]
+- 5 edges to [[_COMMUNITY_Community 1658]]
 - 5 edges to [[_COMMUNITY_Community 28]]
 - 5 edges to [[_COMMUNITY_Community 46]]
 - 5 edges to [[_COMMUNITY_Community 40]]
 - 4 edges to [[_COMMUNITY_Community 95]]
-- 4 edges to [[_COMMUNITY_Community 1]]
 - 4 edges to [[_COMMUNITY_Community 158]]
 - 4 edges to [[_COMMUNITY_Community 683]]
 - 4 edges to [[_COMMUNITY_Community 47]]
 - 4 edges to [[_COMMUNITY_Community 132]]
 - 4 edges to [[_COMMUNITY_Community 12]]
-- 3 edges to [[_COMMUNITY_Community 72]]
+- 3 edges to [[_COMMUNITY_Community 2048]]
+- 3 edges to [[_COMMUNITY_Community 53]]
 - 3 edges to [[_COMMUNITY_Community 512]]
 - 3 edges to [[_COMMUNITY_Community 205]]
-- 3 edges to [[_COMMUNITY_Community 2050]]
+- 3 edges to [[_COMMUNITY_Community 325]]
 - 3 edges to [[_COMMUNITY_Community 176]]
-- 3 edges to [[_COMMUNITY_Community 1191]]
 - 3 edges to [[_COMMUNITY_Community 25]]
 - 3 edges to [[_COMMUNITY_Community 101]]
-- 2 edges to [[_COMMUNITY_Community 84]]
+- 2 edges to [[_COMMUNITY_Community 7]]
 - 2 edges to [[_COMMUNITY_Community 105]]
 - 2 edges to [[_COMMUNITY_Community 14]]
-- 2 edges to [[_COMMUNITY_Community 1305]]
-- 2 edges to [[_COMMUNITY_Community 30]]
-- 2 edges to [[_COMMUNITY_Community 2048]]
-- 2 edges to [[_COMMUNITY_Community 325]]
+- 2 edges to [[_COMMUNITY_Community 60]]
+- 2 edges to [[_COMMUNITY_Community 115]]
 - 2 edges to [[_COMMUNITY_Community 507]]
 - 2 edges to [[_COMMUNITY_Community 1127]]
+- 2 edges to [[_COMMUNITY_Community 34]]
 - 2 edges to [[_COMMUNITY_Community 206]]
 - 2 edges to [[_COMMUNITY_Community 114]]
-- 2 edges to [[_COMMUNITY_Community 65]]
 - 1 edge to [[_COMMUNITY_Community 138]]
-- 1 edge to [[_COMMUNITY_Community 791]]
+- 1 edge to [[_COMMUNITY_Community 360]]
 - 1 edge to [[_COMMUNITY_Community 23]]
 - 1 edge to [[_COMMUNITY_Community 75]]
-- 1 edge to [[_COMMUNITY_Community 34]]
 - 1 edge to [[_COMMUNITY_Community 1278]]
-- 1 edge to [[_COMMUNITY_Community 1352]]
-- 1 edge to [[_COMMUNITY_Community 98]]
 - 1 edge to [[_COMMUNITY_Community 123]]
-- 1 edge to [[_COMMUNITY_Community 7]]
-- 1 edge to [[_COMMUNITY_Community 6]]
+- 1 edge to [[_COMMUNITY_Community 44]]
 - 1 edge to [[_COMMUNITY_Community 1112]]
 
 ## Top bridge nodes
-- [[AsyncMock]] - degree 236, connects to 48 communities
+- [[AsyncMock]] - degree 236, connects to 42 communities
 - [[TestProcessToolResult]] - degree 9, connects to 4 communities
 - [[TestClose]] - degree 8, connects to 4 communities
+- [[TestHealthCheckDetailBotsInventory]] - degree 5, connects to 3 communities
 - [[test_slack_proxy_coverage.py]] - degree 11, connects to 2 communities
-- [[.test_client_disconnect_returns_499()]] - degree 4, connects to 2 communities

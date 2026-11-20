@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/security/network_validator.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Community 71"
-location: "L124"
+community: "Community 6"
+location: "L187"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_71
+  - graphify/INFERRED
+  - community/Community_6
 ---
 
 # Any
 
 ## Connections
-- [[._parse_service_network_config()]] - `references` [EXTRACTED]
-- [[._validate_network_definitions()]] - `references` [EXTRACTED]
-- [[.get_security_report()]] - `references` [EXTRACTED]
+- [[.check_permission()]] - `references` [EXTRACTED]
+- [[.get_user_permissions_summary()]] - `references` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_71
+#graphify/code #graphify/INFERRED #community/Community_6

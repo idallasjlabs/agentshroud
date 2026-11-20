@@ -2,7 +2,7 @@
 source_file: "gateway/web/api.py"
 type: "code"
 community: "Community 40"
-location: "L536"
+location: "L532"
 tags:
   - graphify/code
   - graphify/EXTRACTED

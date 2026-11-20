@@ -12,7 +12,7 @@ tags:
 # CanaryResult
 
 ## Connections
-- [[.to_dict()_6]] - `method` [EXTRACTED]
+- [[.to_dict()_5]] - `method` [EXTRACTED]
 - [[Result of running the canary system.]] - `rationale_for` [EXTRACTED]
 - [[canary.py]] - `contains` [EXTRACTED]
 - [[run_canary()]] - `references` [EXTRACTED]

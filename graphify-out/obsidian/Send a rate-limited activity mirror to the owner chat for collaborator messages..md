@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 18"
+community: "Community 14"
 location: "L7450"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/Community_14
 ---
 
 # Send a rate-limited activity mirror to the owner chat for collaborator messages.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._mirror_to_owner_if_collaborator()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_18
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

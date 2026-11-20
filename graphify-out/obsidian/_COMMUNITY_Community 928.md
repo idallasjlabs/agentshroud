@@ -1,23 +1,24 @@
 ---
 type: community
-members: 10
+members: 11
 ---
 
 # Community 928
 
-**Members:** 10 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[.__init__()_53]] - code - gateway/proxy/telegram_gateway_relay.py
-- [[.send_message()]] - code - gateway/proxy/telegram_gateway_relay.py
-- [[.send_status_update()]] - code - gateway/proxy/telegram_gateway_relay.py
-- [[Relay Telegram messages through the gateway control plane.      This enables con]] - rationale - gateway/proxy/telegram_gateway_relay.py
-- [[Result of a Telegram send operation via gateway.]] - rationale - gateway/proxy/telegram_gateway_relay.py
-- [[Send a Telegram message via the gateway relay.          Args             chat_i]] - rationale - gateway/proxy/telegram_gateway_relay.py
-- [[Send a formatted status update via Telegram.          Formats the message with a]] - rationale - gateway/proxy/telegram_gateway_relay.py
-- [[TelegramGatewayRelay]] - code - gateway/proxy/telegram_gateway_relay.py
-- [[TelegramSendResult]] - code - gateway/proxy/telegram_gateway_relay.py
-- [[telegram_gateway_relay.py]] - code - gateway/proxy/telegram_gateway_relay.py
+- [[._calculate_similarity()]] - code - gateway/security/prompt_protection.py
+- [[._redact_fuzzy_match()]] - code - gateway/security/prompt_protection.py
+- [[.scan_response()_2]] - code - gateway/security/prompt_protection.py
+- [[A piece of content that should be protected from disclosure.]] - rationale - gateway/security/prompt_protection.py
+- [[Calculate similarity between text and protected content.]] - rationale - gateway/security/prompt_protection.py
+- [[ProtectedContent]] - code - gateway/security/prompt_protection.py
+- [[Redact text that fuzzy matches protected content.]] - rationale - gateway/security/prompt_protection.py
+- [[RedactionResult_2]] - code - gateway/security/prompt_protection.py
+- [[Result of scanning and redacting content.]] - rationale - gateway/security/prompt_protection.py
+- [[Scan text for protected content and return redacted version.          Args]] - rationale - gateway/security/prompt_protection.py
+- [[prompt_protection.py]] - code - gateway/security/prompt_protection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +28,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 18]]
+- 5 edges to [[_COMMUNITY_Community 141]]
+- 1 edge to [[_COMMUNITY_Community 431]]
 
 ## Top bridge nodes
-- [[telegram_gateway_relay.py]] - degree 3, connects to 1 community
+- [[prompt_protection.py]] - degree 4, connects to 2 communities
+- [[ProtectedContent]] - degree 5, connects to 1 community
+- [[.scan_response()_2]] - degree 5, connects to 1 community
+- [[._calculate_similarity()]] - degree 4, connects to 1 community
+- [[._redact_fuzzy_match()]] - degree 4, connects to 1 community

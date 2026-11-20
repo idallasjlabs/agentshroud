@@ -1,41 +1,23 @@
 ---
 type: community
-members: 28
+members: 10
 ---
 
 # Community 79
 
-**Members:** 28 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[.test_empty_tool_calls_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_empty_tool_results_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_non_owner_cross_path_plain_message_still_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_owner_message_mentioning_other_users_file_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_owner_plain_message_with_path_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_plain_chat_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_plain_message_mentioning_config_yaml_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_plain_message_mentioning_etc_passwd_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_plain_message_mentioning_memory_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_tool_call_with_unauthorized_path_still_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_tool_calls_key_detected()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_tool_results_key_detected()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_type_field_message_not_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_type_field_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[FileSandbox must NOT block plain chat messages that mention file-like words.]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
-- [[MiddlewareManager with real session_manager, all other deps mocked.      Uses __]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
-- [[Owner (8096968754) must not be blocked by content-pattern scanning.     They sho]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
-- [[TestFileSandboxSkippedForPlainMessages]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[TestIsToolCallRequest]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[TestOwnerBypassContentPatternChecks]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[Unit tests for the _is_tool_call_request helper (TDD RED phase).]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
-- [[_plain_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[_tool_call_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[_tool_result_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[manager()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[session_manager()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[temp_workspace()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[test_file_sandbox_message_gate.py]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[.test_dashboard_bad_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_dashboard_bad_token_returns_403()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_dashboard_no_auth_returns_403()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_dashboard_token_sets_cookie_and_redirects()]] - code - gateway/tests/test_security_fixes.py
+- [[Dashboard should set httpOnly cookie and redirect to clean URL]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET dashboard with invalid cookie returns 403]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET dashboard with no auth returns 403]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET dashboardtoken=valid sets cookie and redirects to dashboard]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET dashboardtoken=wrong returns 403]] - rationale - gateway/tests/test_security_fixes.py
+- [[TestDashboardCookieAuth]] - code - gateway/tests/test_security_fixes.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,13 +27,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 1305]]
-- 4 edges to [[_COMMUNITY_Community 72]]
-- 4 edges to [[_COMMUNITY_Community 1]]
+- 2 edges to [[_COMMUNITY_Community 44]]
+- 1 edge to [[_COMMUNITY_Community 25]]
+- 1 edge to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 309]]
 
 ## Top bridge nodes
-- [[test_file_sandbox_message_gate.py]] - degree 12, connects to 3 communities
-- [[TestIsToolCallRequest]] - degree 12, connects to 3 communities
-- [[TestFileSandboxSkippedForPlainMessages]] - degree 9, connects to 3 communities
-- [[TestOwnerBypassContentPatternChecks]] - degree 8, connects to 3 communities
-- [[session_manager()]] - degree 2, connects to 1 community
+- [[TestDashboardCookieAuth]] - degree 10, connects to 4 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "Community 152"
+community: "Community 0"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_152
+  - community/Community_0
 ---
 
 # ConsentDecision
@@ -46,4 +46,4 @@ tags:
 - [[consent_framework.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_152
+#graphify/code #graphify/INFERRED #community/Community_0

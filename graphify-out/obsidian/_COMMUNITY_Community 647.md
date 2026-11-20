@@ -1,36 +1,28 @@
 ---
 type: community
-members: 23
+members: 15
 ---
 
 # Community 647
 
-**Members:** 23 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[.__init__()_141]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[._url_has_blocked_patterns()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[.setup_method()_37]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_convenience_function()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_performance_with_large_content()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_realistic_web_scraping_result()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_warn_mode()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Check if URL contains any blocked patterns.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Configuration for tool result markdown sanitization.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Convenience function to sanitize tool result content.      Args         content]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Enhanced markdown sanitizer with configurable domain allowlist.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Integration tests for the sanitizer.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Set up test fixtures._3]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test performance with large content.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test sanitizing a realistic web scraping result.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test the convenience sanitize_tool_result function.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test warn mode that marks but preserves external content.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[TestIntegration_1]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[ToolResultSanitizer_1]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[ToolResultSanitizerConfig]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[sanitize_tool_result()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[test_tool_result_sanitizer_enhanced.py]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[tool_result_sanitizer_enhanced.py]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[._triage()]] - code - gateway/tests/test_xml_dtd_control.py
+- [[.test_finding_severity_is_critical()]] - code - gateway/tests/test_xml_dtd_control.py
+- [[.test_libxml2_dtd_uaf_classifies_as_xxe_not_dos()]] - code - gateway/tests/test_xml_dtd_control.py
+- [[.test_unrelated_classes_unchanged()]] - code - gateway/tests/test_xml_dtd_control.py
+- [[.test_web_proxy_blocks_on_dangerous_xml()]] - code - gateway/tests/test_xml_dtd_control.py
+- [[.test_xxe_class_is_covered_by_the_gateway_control()]] - code - gateway/tests/test_xml_dtd_control.py
+- [[FindingSeverity]] - code - gateway/proxy/web_content_scanner.py
+- [[It calls itself DoS; the generic DOS profile is containment-only.          Left]] - rationale - gateway/tests/test_xml_dtd_control.py
+- [[Proves enforcement, not just detection.]] - rationale - gateway/tests/test_xml_dtd_control.py
+- [[TestDangerousXMLIsBlockedNotFlagged]] - code - gateway/tests/test_xml_dtd_control.py
+- [[TestTriageClassLevelCoverage]] - code - gateway/tests/test_xml_dtd_control.py
+- [[The distinction this whole control rests on.]] - rationale - gateway/tests/test_xml_dtd_control.py
+- [[The durable statement is at the CLASS level, not per-CVE.      A register entry]] - rationale - gateway/tests/test_xml_dtd_control.py
+- [[The new rule runs first, so prove it does not swallow neighbours.]] - rationale - gateway/tests/test_xml_dtd_control.py
+- [[test_xml_dtd_control.py]] - code - gateway/tests/test_xml_dtd_control.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,19 +32,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 18 edges to [[_COMMUNITY_Community 72]]
-- 6 edges to [[_COMMUNITY_Community 455]]
-- 6 edges to [[_COMMUNITY_Community 1944]]
-- 5 edges to [[_COMMUNITY_Community 2134]]
-- 2 edges to [[_COMMUNITY_Community 1]]
-- 2 edges to [[_COMMUNITY_Community 2332]]
-- 1 edge to [[_COMMUNITY_Community 154]]
-- 1 edge to [[_COMMUNITY_Community 28]]
-- 1 edge to [[_COMMUNITY_Community 2348]]
+- 5 edges to [[_COMMUNITY_Community 93]]
+- 2 edges to [[_COMMUNITY_Community 562]]
+- 1 edge to [[_COMMUNITY_Community 6]]
+- 1 edge to [[_COMMUNITY_Community 38]]
 
 ## Top bridge nodes
-- [[ToolResultSanitizer_1]] - degree 34, connects to 9 communities
-- [[ToolResultSanitizerConfig]] - degree 26, connects to 4 communities
-- [[test_tool_result_sanitizer_enhanced.py]] - degree 6, connects to 2 communities
-- [[sanitize_tool_result()]] - degree 7, connects to 1 community
-- [[.setup_method()_37]] - degree 4, connects to 1 community
+- [[FindingSeverity]] - degree 7, connects to 4 communities
+- [[test_xml_dtd_control.py]] - degree 5, connects to 2 communities
+- [[TestTriageClassLevelCoverage]] - degree 8, connects to 1 community
+- [[TestDangerousXMLIsBlockedNotFlagged]] - degree 6, connects to 1 community
+- [[.test_finding_severity_is_critical()]] - degree 2, connects to 1 community

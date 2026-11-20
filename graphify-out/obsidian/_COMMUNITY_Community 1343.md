@@ -1,28 +1,20 @@
 ---
 type: community
-members: 15
+members: 7
 ---
 
 # Community 1343
 
-**Members:** 15 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[.__init__()_134]] - code - gateway/security/subagent_governance.py
-- [[._check_budget()]] - code - gateway/security/subagent_governance.py
-- [[.authorize_tool()]] - code - gateway/security/subagent_governance.py
-- [[.record_api_call()]] - code - gateway/security/subagent_governance.py
-- [[.record_egress()]] - code - gateway/security/subagent_governance.py
-- [[.record_tokens()]] - code - gateway/security/subagent_governance.py
-- [[.record_tool_call()]] - code - gateway/security/subagent_governance.py
-- [[Check if a resource budget is exceeded.]] - rationale - gateway/security/subagent_governance.py
-- [[Check if a subagent is allowed to use a specific tool.]] - rationale - gateway/security/subagent_governance.py
-- [[Record a tool invocation.]] - rationale - gateway/security/subagent_governance.py
-- [[Record an LLM API call.]] - rationale - gateway/security/subagent_governance.py
-- [[Record outbound data volume.]] - rationale - gateway/security/subagent_governance.py
-- [[Record token consumption. Returns (within_budget, message).]] - rationale - gateway/security/subagent_governance.py
-- [[SubagentGovernance]] - code - gateway/security/subagent_governance.py
-- [[Unified governance layer for subagent lifecycle.      Wraps SubagentMonitor with]] - rationale - gateway/security/subagent_governance.py
+- [[.test_bots_resolution_error_swallowed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_default_bot_and_sanitizer_configured()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_no_bots_keeps_fallback_workspace()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_non_default_bot_fallback()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_sanitizer_construction_error_sets_none()]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestSetConfig]] - code - gateway/tests/test_middleware_coverage.py
+- [[_bot()]] - code - gateway/tests/test_middleware_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,17 +24,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 1209]]
-- 5 edges to [[_COMMUNITY_Community 1360]]
-- 4 edges to [[_COMMUNITY_Community 1782]]
-- 2 edges to [[_COMMUNITY_Community 38]]
-- 1 edge to [[_COMMUNITY_Community 2003]]
-- 1 edge to [[_COMMUNITY_Community 2051]]
-- 1 edge to [[_COMMUNITY_Community 2052]]
-- 1 edge to [[_COMMUNITY_Community 2055]]
+- 2 edges to [[_COMMUNITY_Community 7]]
+- 2 edges to [[_COMMUNITY_Community 31]]
+- 2 edges to [[_COMMUNITY_Community 34]]
+- 1 edge to [[_COMMUNITY_Community 68]]
+- 1 edge to [[_COMMUNITY_Community 60]]
 
 ## Top bridge nodes
-- [[SubagentGovernance]] - degree 30, connects to 8 communities
-- [[._check_budget()]] - degree 8, connects to 1 community
-- [[.authorize_tool()]] - degree 4, connects to 1 community
-- [[.__init__()_134]] - degree 2, connects to 1 community
+- [[TestSetConfig]] - degree 10, connects to 4 communities
+- [[_bot()]] - degree 3, connects to 1 community
+- [[.test_default_bot_and_sanitizer_configured()]] - degree 3, connects to 1 community
+- [[.test_sanitizer_construction_error_sets_none()]] - degree 2, connects to 1 community

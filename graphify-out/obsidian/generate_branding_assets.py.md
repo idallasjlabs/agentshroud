@@ -23,7 +23,6 @@ tags:
 - [[generate_variants()]] - `contains` [EXTRACTED]
 - [[get_font()]] - `contains` [EXTRACTED]
 - [[icon_on_canvas()]] - `contains` [EXTRACTED]
-- [[load_logo()]] - `contains` [EXTRACTED]
 - [[main()_25]] - `contains` [EXTRACTED]
 - [[save()_1]] - `contains` [EXTRACTED]
 

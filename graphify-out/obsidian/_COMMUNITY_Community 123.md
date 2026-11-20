@@ -1,17 +1,18 @@
 ---
 type: community
-members: 50
+members: 52
 ---
 
 # Community 123
 
-**Members:** 50 nodes
+**Members:** 52 nodes
 
 ## Members
 - [[Audit chain must detect tampering.]] - rationale - gateway/tests/test_redteam_probes.py
 - [[Build a SecurityPipeline with all guards wired up.]] - rationale - gateway/tests/test_redteam_probes.py
 - [[Combined prompt injection + role override must be caught.]] - rationale - gateway/tests/test_redteam_probes.py
 - [[ContextGuard must detect context window poisoning (massive payload).]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Create a real PII sanitizer in regex mode (no spaCy).]] - rationale - gateway/tests/test_redteam_probes.py
 - [[EncodingDetector must detect base64 in outbound responses.]] - rationale - gateway/tests/test_redteam_probes.py
 - [[EncodingDetector must detect base64-encoded payloads on inbound.]] - rationale - gateway/tests/test_redteam_probes.py
 - [[Every pipeline operation must produce an audit chain entry.]] - rationale - gateway/tests/test_redteam_probes.py
@@ -34,6 +35,7 @@ members: 50
 - [[Trust level must not allow exec from conversation alone.]] - rationale - gateway/tests/test_redteam_probes.py
 - [[_make_approval_queue()]] - code - gateway/tests/test_redteam_probes.py
 - [[_make_full_pipeline()]] - code - gateway/tests/test_redteam_probes.py
+- [[_make_pii_sanitizer()]] - code - gateway/tests/test_redteam_probes.py
 - [[pipeline()_2]] - code - gateway/tests/test_redteam_probes.py
 - [[test_admin_action_requires_approval()]] - code - gateway/tests/test_redteam_probes.py
 - [[test_audit_chain_records_all_events()]] - code - gateway/tests/test_redteam_probes.py
@@ -67,16 +69,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_Community 84]]
+- 11 edges to [[_COMMUNITY_Community 84]]
+- 5 edges to [[_COMMUNITY_Community 11]]
 - 4 edges to [[_COMMUNITY_Community 17]]
-- 2 edges to [[_COMMUNITY_Community 72]]
+- 2 edges to [[_COMMUNITY_Community 7]]
+- 2 edges to [[_COMMUNITY_Community 0]]
 - 2 edges to [[_COMMUNITY_Community 21]]
-- 2 edges to [[_COMMUNITY_Community 32]]
-- 2 edges to [[_COMMUNITY_Community 88]]
-- 1 edge to [[_COMMUNITY_Community 11]]
 - 1 edge to [[_COMMUNITY_Community 37]]
 
 ## Top bridge nodes
-- [[test_redteam_probes.py]] - degree 39, connects to 7 communities
-- [[_make_full_pipeline()]] - degree 20, connects to 6 communities
+- [[test_redteam_probes.py]] - degree 39, connects to 6 communities
+- [[_make_full_pipeline()]] - degree 20, connects to 5 communities
+- [[_make_pii_sanitizer()]] - degree 6, connects to 2 communities
 - [[_make_approval_queue()]] - degree 4, connects to 1 community

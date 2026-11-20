@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "Community 120"
+community: "Community 103"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_120
+  - community/Community_103
 ---
 
 # test_web_proxy_security.py
@@ -23,4 +23,4 @@ tags:
 - [[WebProxy_1]] - `imports` [EXTRACTED]
 - [[WebProxyResult]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_120
+#graphify/code #graphify/EXTRACTED #community/Community_103

@@ -55,14 +55,3 @@ members: 40
 TABLE source_file, type FROM #community/Community_148
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 68]]
-- 1 edge to [[_COMMUNITY_Community 181]]
-
-## Top bridge nodes
-- [[create_issue()]] - degree 7, connects to 1 community
-- [[add_comment()]] - degree 7, connects to 1 community
-- [[transition_issue()]] - degree 7, connects to 1 community
-- [[fetch_credentials()]] - degree 6, connects to 1 community
-- [[build_comment_payload()]] - degree 5, connects to 1 community

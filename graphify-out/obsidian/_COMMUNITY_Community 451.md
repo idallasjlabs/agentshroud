@@ -38,7 +38,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 816]]
+- 1 edge to [[_COMMUNITY_Community 726]]
 
 ## Top bridge nodes
 - [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - degree 7, connects to 1 community

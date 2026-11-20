@@ -2,7 +2,7 @@
 source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
 community: "Community 265"
-location: "L204"
+location: "L196"
 tags:
   - graphify/code
   - graphify/INFERRED

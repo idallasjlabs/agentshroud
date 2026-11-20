@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Community 307"
+community: "Community 947"
 location: "L175"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_307
+  - community/Community_947
 ---
 
 # A2APolicyConfig
 
 ## Connections
-- [[.__init__()_65]] - `references` [EXTRACTED]
+- [[.__init__()_63]] - `references` [EXTRACTED]
 - [[.__post_init__()_2]] - `method` [EXTRACTED]
 - [[.from_dict()_2]] - `method` [EXTRACTED]
 - [[.test_bare_config_denies_every_peer()]] - `calls` [EXTRACTED]
@@ -40,4 +40,4 @@ tags:
 - [[test_a2a_proxy.py]] - `imports` [EXTRACTED]
 - [[test_a2a_trust_scoring.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_307
+#graphify/code #graphify/INFERRED #community/Community_947

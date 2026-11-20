@@ -2,7 +2,7 @@
 source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
 community: "Community 265"
-location: "L308"
+location: "L300"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # build_id_plan()
 
 ## Connections
-- [[Any_88]] - `references` [EXTRACTED]
+- [[Any_84]] - `references` [EXTRACTED]
 - [[Compute the per-entry rewrite plan and manual-review buckets.      Returns]] - `rationale_for` [EXTRACTED]
 - [[Counter]] - `calls` [EXTRACTED]
 - [[_advisory_text_tokens()]] - `calls` [EXTRACTED]

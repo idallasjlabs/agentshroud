@@ -1,14 +1,14 @@
 ---
 type: community
-members: 44
+members: 42
 ---
 
 # Community 160
 
-**Members:** 44 nodes
+**Members:** 42 nodes
 
 ## Members
-- [[.__init__()_231]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[.__init__()_227]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[._classify_risk()_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[._domain_matches()_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[._init_browser()_3]] - code - skills/custom/securebrowser/scripts/browse.py
@@ -20,7 +20,6 @@ members: 44
 - [[._validate_url()_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[.click()_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[.close()_22]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[.detect_captcha()_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[.extract()_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[.fill_field()_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[.get_audit_log()_7]] - code - skills/custom/securebrowser/scripts/browse.py
@@ -31,7 +30,6 @@ members: 44
 - [[Classify action risk level          Security Determines if approval is needed_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
 - [[Clean up browser resources_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
 - [[Click an element          Security Risk classification for destructive actions_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
-- [[Detect if CAPTCHA is present on page_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
 - [[Extract data from page          Security No credential extraction allowed_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
 - [[Fill a single form field          Security Risk classification, approval for se_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
 - [[Initialize browser with security settings_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
@@ -62,7 +60,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_Community 68]]
-- 2 edges to [[_COMMUNITY_Community 8]]
+- 2 edges to [[_COMMUNITY_Community 6]]
 - 1 edge to [[_COMMUNITY_Community 2048]]
 
 ## Top bridge nodes

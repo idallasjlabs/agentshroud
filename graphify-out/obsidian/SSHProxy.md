@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "Community 7"
+community: "Community 44"
 location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/Community_44
 ---
 
 # SSHProxy
 
 ## Connections
-- [[.__init__()_148]] - `method` [EXTRACTED]
+- [[.__init__()_145]] - `method` [EXTRACTED]
 - [[.execute()]] - `method` [EXTRACTED]
 - [[.is_auto_approved()]] - `method` [EXTRACTED]
 - [[.no_approval_client()]] - `calls` [EXTRACTED]
@@ -92,4 +92,4 @@ tags:
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/Community_44

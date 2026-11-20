@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/profiles.py"
 type: "code"
-community: "Community 32"
+community: "Community 2048"
 location: "L47"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_32
+  - community/Community_2048
 ---
 
 # VendorProfile
@@ -44,4 +44,4 @@ tags:
 - [[profiles.py]] - `contains` [EXTRACTED]
 - [[service.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_32
+#graphify/code #graphify/INFERRED #community/Community_2048

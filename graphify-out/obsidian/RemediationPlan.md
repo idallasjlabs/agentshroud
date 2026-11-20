@@ -12,7 +12,7 @@ tags:
 # RemediationPlan
 
 ## Connections
-- [[.to_dict()_17]] - `method` [EXTRACTED]
+- [[.to_dict()_15]] - `method` [EXTRACTED]
 - [[TestPlanAgainstRealRegistry]] - `uses` [INFERRED]
 - [[TestPlanRemediation]] - `uses` [INFERRED]
 - [[TestVersionPinIO]] - `uses` [INFERRED]

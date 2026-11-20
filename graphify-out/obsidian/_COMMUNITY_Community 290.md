@@ -1,11 +1,11 @@
 ---
 type: community
-members: 19
+members: 26
 ---
 
 # Community 290
 
-**Members:** 19 nodes
+**Members:** 26 nodes
 
 ## Members
 - [[Crash backoff escalation (rolling 10-minute start window)]] - rationale - docker/bots/hermes/start.sh
@@ -18,13 +18,20 @@ members: 19
 - [[S12 Hermes init-config.sh seeds jira_dev_ticket.py into live Hermes workspace]] - concept - tests/startup_smoke/test_bot_boot_static.sh
 - [[S13 Hermes start.sh expected-secrets banner accepts env vars in place of mounted files]] - concept - tests/startup_smoke/test_bot_boot_static.sh
 - [[Tirith trust seeding (lookalike_tld + internal gateway HTTP rule)]] - rationale - docker/bots/hermes/init-config.sh
+- [[_count_recent_restarts()]] - code - docker/bots/hermes/crashwatch.sh
 - [[_email_owner]] - code - docker/bots/hermes/start.sh
 - [[_hermes_cron_ids_names]] - code - docker/bots/hermes/init-config.sh
+- [[_log()]] - code - docker/bots/hermes/crashwatch.sh
+- [[_read_last_alert_epoch()]] - code - docker/bots/hermes/crashwatch.sh
 - [[_release_telegram_lock]] - code - docker/bots/hermes/start.sh
+- [[_telegram_alert()]] - code - docker/bots/hermes/crashwatch.sh
 - [[_telegram_bot_token]] - code - docker/bots/hermes/start.sh
 - [[_telegram_get_me_ready]] - code - docker/bots/hermes/start.sh
 - [[_telegram_send_photo]] - code - docker/bots/hermes/start.sh
+- [[_write_last_alert_epoch()]] - code - docker/bots/hermes/crashwatch.sh
 - [[_write_soul]] - code - docker/bots/hermes/init-config.sh
+- [[crashwatch.sh]] - code - docker/bots/hermes/crashwatch.sh
+- [[crashwatch.sh script]] - code - docker/bots/hermes/crashwatch.sh
 - [[init-config.sh (Hermes first-boot config materialisation)]] - code - docker/bots/hermes/init-config.sh
 - [[start.sh (Hermes s6 main program  startup wrapper)]] - code - docker/bots/hermes/start.sh
 
@@ -36,10 +43,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 3 edges to [[_COMMUNITY_Community 129]]
 - 2 edges to [[_COMMUNITY_Community 190]]
-- 2 edges to [[_COMMUNITY_Community 129]]
 
 ## Top bridge nodes
 - [[start.sh (Hermes s6 main program  startup wrapper)]] - degree 11, connects to 1 community
 - [[init-config.sh (Hermes first-boot config materialisation)]] - degree 10, connects to 1 community
 - [[_telegram_bot_token]] - degree 5, connects to 1 community
+- [[_telegram_alert()]] - degree 3, connects to 1 community

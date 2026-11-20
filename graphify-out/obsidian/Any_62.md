@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/outbound_filter.py"
+source_file: "gateway/security/report_store.py"
 type: "code"
-community: "Community 98"
-location: "L73"
+community: "Community 943"
+location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_98
+  - community/Community_943
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_118]] - `references` [EXTRACTED]
-- [[._compile_patterns()_1]] - `references` [EXTRACTED]
-- [[.get_stats()_17]] - `references` [EXTRACTED]
+- [[.get()_4]] - `references` [EXTRACTED]
+- [[.list()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_98
+#graphify/code #graphify/EXTRACTED #community/Community_943

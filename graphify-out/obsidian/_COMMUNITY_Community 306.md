@@ -1,21 +1,18 @@
 ---
 type: community
-members: 15
+members: 12
 ---
 
 # Community 306
 
-**Members:** 15 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[Approval Queue]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
 - [[Auto-Restart]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
 - [[Crash Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Data Integrity After Crash]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
 - [[Detecting a Crash]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
 - [[Graceful Shutdown_1]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
 - [[Kill Switch (Emergency Stop)]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Ledger Database]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
 - [[Manual Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
 - [[Normal Stop]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
 - [[OOM Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
@@ -33,8 +30,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Community 94]]
-- 1 edge to [[_COMMUNITY_Community 487]]
+- 1 edge to [[_COMMUNITY_Community 1219]]
 
 ## Top bridge nodes
-- [[Shutdown & Recovery_1]] - degree 7, connects to 1 community
-- [[Data Integrity After Crash]] - degree 4, connects to 1 community
+- [[Shutdown & Recovery_1]] - degree 7, connects to 2 communities

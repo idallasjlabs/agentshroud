@@ -12,7 +12,7 @@ tags:
 # _hosted_status()
 
 ## Connections
-- [[Any_77]] - `references` [EXTRACTED]
+- [[Any_73]] - `references` [EXTRACTED]
 - [[_hosted_edge_rows()]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `contains` [EXTRACTED]
 

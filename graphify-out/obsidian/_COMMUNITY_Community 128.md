@@ -38,9 +38,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 84]]
+- 2 edges to [[_COMMUNITY_Community 436]]
+- 1 edge to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 84]]
 - 1 edge to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 329]]
 
 ## Top bridge nodes
-- [[TestEgressTargetExtraction]] - degree 25, connects to 3 communities
+- [[TestEgressTargetExtraction]] - degree 25, connects to 4 communities

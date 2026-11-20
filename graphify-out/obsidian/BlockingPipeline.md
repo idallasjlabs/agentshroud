@@ -12,7 +12,7 @@ tags:
 # BlockingPipeline
 
 ## Connections
-- [[.process_inbound()_8]] - `method` [EXTRACTED]
+- [[.process_inbound()_7]] - `method` [EXTRACTED]
 - [[.test_clean_message_passes_through()]] - `calls` [EXTRACTED]
 - [[.test_form_outbound_pipeline_block_non_owner()]] - `calls` [INFERRED]
 - [[.test_inbound_text_normalized_before_pipeline()]] - `calls` [EXTRACTED]

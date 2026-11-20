@@ -2,7 +2,7 @@
 source_file: "gateway/proxy/url_analyzer.py"
 type: "rationale"
 community: "Community 1000"
-location: "L355"
+location: "L326"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

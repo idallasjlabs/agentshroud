@@ -12,6 +12,6 @@ tags:
 # Initialize the key rotation manager.
 
 ## Connections
-- [[.__init__()_103]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_101]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_122

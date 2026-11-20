@@ -12,7 +12,7 @@ tags:
 # ToolACLEnforcer
 
 ## Connections
-- [[.__init__()_136]] - `method` [EXTRACTED]
+- [[.__init__()_133]] - `method` [EXTRACTED]
 - [[._can_use_tool_impl()]] - `method` [EXTRACTED]
 - [[._get_group_tool_allowlist()]] - `method` [EXTRACTED]
 - [[._get_role()]] - `method` [EXTRACTED]
@@ -37,7 +37,6 @@ tags:
 - [[.test_tool_acl_can_use_tool_records()]] - `calls` [EXTRACTED]
 - [[.test_trust_deny_wins_over_acl()]] - `calls` [EXTRACTED]
 - [[.test_unknown_tool_falls_through_to_acl()]] - `calls` [EXTRACTED]
-- [[A2AGovernanceProxy]] - `semantically_similar_to` [INFERRED]
 - [[ADMIN_TOOLS]] - `shares_data_with` [EXTRACTED]
 - [[COLLABORATOR_ALLOWED_TOOLS]] - `shares_data_with` [EXTRACTED]
 - [[Enforces tool-level access control based on user role and group membership.]] - `rationale_for` [EXTRACTED]

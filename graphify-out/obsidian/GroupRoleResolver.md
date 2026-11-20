@@ -12,7 +12,7 @@ tags:
 # GroupRoleResolver
 
 ## Connections
-- [[.__init__()_98]] - `method` [EXTRACTED]
+- [[.__init__()_96]] - `method` [EXTRACTED]
 - [[.get_all_roles()]] - `method` [EXTRACTED]
 - [[.get_role()]] - `method` [EXTRACTED]
 - [[.is_high_risk_tool()]] - `method` [EXTRACTED]

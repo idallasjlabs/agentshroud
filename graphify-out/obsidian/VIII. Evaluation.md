@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "Community 980"
+community: "Community 330"
 location: "L231"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_980
+  - community/Community_330
 ---
 
 # VIII. Evaluation
@@ -22,4 +22,4 @@ tags:
 - [[VIII-C. Module Coverage Matrix]] - `contains` [EXTRACTED]
 - [[VIII-D. Competitive Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_980
+#graphify/document #graphify/EXTRACTED #community/Community_330

@@ -1,13 +1,14 @@
 ---
 type: community
-members: 42
+members: 43
 ---
 
 # Community 223
 
-**Members:** 42 nodes
+**Members:** 43 nodes
 
 ## Members
+- [[.__init__()_53]] - code - gateway/proxy/telegram_proxy.py
 - [[.__post_init__()_8]] - code - gateway/security/rbac_config.py
 - [[.add_member()]] - code - gateway/security/rbac_config.py
 - [[.create_group()]] - code - gateway/security/rbac_config.py
@@ -59,23 +60,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 1066]]
+- 16 edges to [[_COMMUNITY_Community 6]]
 - 8 edges to [[_COMMUNITY_Community 10]]
-- 5 edges to [[_COMMUNITY_Community 18]]
-- 5 edges to [[_COMMUNITY_Community 194]]
+- 6 edges to [[_COMMUNITY_Community 18]]
 - 4 edges to [[_COMMUNITY_Community 14]]
-- 2 edges to [[_COMMUNITY_Community 8]]
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 2 edges to [[_COMMUNITY_Community 890]]
+- 3 edges to [[_COMMUNITY_Community 194]]
+- 2 edges to [[_COMMUNITY_Community 38]]
+- 1 edge to [[_COMMUNITY_Community 138]]
 - 1 edge to [[_COMMUNITY_Community 978]]
-- 1 edge to [[_COMMUNITY_Community 1288]]
+- 1 edge to [[_COMMUNITY_Community 75]]
 - 1 edge to [[_COMMUNITY_Community 61]]
 - 1 edge to [[_COMMUNITY_Community 35]]
-- 1 edge to [[_COMMUNITY_Community 65]]
+- 1 edge to [[_COMMUNITY_Community 890]]
 
 ## Top bridge nodes
-- [[rbac_config.py]] - degree 25, connects to 9 communities
-- [[load_paused_collaborator_ids()]] - degree 8, connects to 4 communities
+- [[rbac_config.py]] - degree 25, connects to 6 communities
+- [[.__init__()_53]] - degree 5, connects to 4 communities
 - [[persist_approved_collaborator()]] - degree 10, connects to 3 communities
 - [[pause_collaborator()]] - degree 9, connects to 3 communities
 - [[unpause_collaborator()]] - degree 9, connects to 3 communities

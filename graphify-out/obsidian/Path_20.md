@@ -12,7 +12,7 @@ tags:
 # Path
 
 ## Connections
-- [[.__init__()_130]] - `references` [EXTRACTED]
+- [[.__init__()_128]] - `references` [EXTRACTED]
 - [[.from_dict()_11]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_60

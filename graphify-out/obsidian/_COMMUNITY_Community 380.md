@@ -53,7 +53,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 32]]
+- 1 edge to [[_COMMUNITY_Community 254]]
 
 ## Top bridge nodes
 - [[archive_old_events()]] - degree 17, connects to 1 community

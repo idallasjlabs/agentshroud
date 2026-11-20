@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "rationale"
-community: "Community 135"
+community: "Community 18"
 location: "L243"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_135
+  - community/Community_18
 ---
 
 # Calling persist_user_collab_mode twice updates the stored value.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_persist_user_collab_mode_update()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_135
+#graphify/rationale #graphify/EXTRACTED #community/Community_18

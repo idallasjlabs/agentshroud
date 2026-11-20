@@ -1,26 +1,26 @@
 ---
-source_file: "gateway/tests/test_session_security.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Community 76"
-location: "L110"
+community: "Community 120"
+location: "L326"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_76
+  - community/Community_120
 ---
 
 # TestRateLimiting
 
 ## Connections
-- [[.test_different_ips_not_rate_limited()]] - `method` [EXTRACTED]
-- [[.test_rate_limit_exceeded()_1]] - `method` [EXTRACTED]
-- [[.test_rate_limit_resets_after_window()]] - `method` [EXTRACTED]
-- [[EventInjectionError]] - `uses` [INFERRED]
-- [[RateLimitExceeded]] - `uses` [INFERRED]
-- [[SessionBindingError]] - `uses` [INFERRED]
-- [[SessionError]] - `uses` [INFERRED]
-- [[SessionExpired]] - `uses` [INFERRED]
-- [[SessionManager]] - `uses` [INFERRED]
-- [[test_session_security.py]] - `contains` [EXTRACTED]
+- [[.test_different_domains_independent()]] - `method` [EXTRACTED]
+- [[.test_rate_limit_blocks_excess()]] - `method` [EXTRACTED]
+- [[.test_rate_limiter_reset()]] - `method` [EXTRACTED]
+- [[AuditChain]] - `uses` [INFERRED]
+- [[DomainSettings]] - `uses` [INFERRED]
+- [[ProxyAction]] - `uses` [INFERRED]
+- [[RateLimiter_1]] - `uses` [INFERRED]
+- [[WebProxy_1]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_76
+#graphify/code #graphify/INFERRED #community/Community_120

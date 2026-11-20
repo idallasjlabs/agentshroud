@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_jwt.py"
 type: "code"
-community: "Community 50"
+community: "Community 135"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_50
+  - community/Community_135
 ---
 
 # _forge()
@@ -21,4 +21,4 @@ tags:
 - [[Sign arbitrary claims with the real key (as if minted outside the issuer).]] - `rationale_for` [EXTRACTED]
 - [[test_edge_jwt.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_50
+#graphify/code #graphify/EXTRACTED #community/Community_135

@@ -91,14 +91,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 9 edges to [[_COMMUNITY_Community 0]]
 - 7 edges to [[_COMMUNITY_Community 102]]
 - 7 edges to [[_COMMUNITY_Community 37]]
-- 6 edges to [[_COMMUNITY_Community 0]]
 - 3 edges to [[_COMMUNITY_Community 151]]
 - 3 edges to [[_COMMUNITY_Community 84]]
-- 3 edges to [[_COMMUNITY_Community 557]]
 - 2 edges to [[_COMMUNITY_Community 978]]
-- 1 edge to [[_COMMUNITY_Community 27]]
+- 1 edge to [[_COMMUNITY_Community 120]]
 - 1 edge to [[_COMMUNITY_Community 709]]
 - 1 edge to [[_COMMUNITY_Community 29]]
 

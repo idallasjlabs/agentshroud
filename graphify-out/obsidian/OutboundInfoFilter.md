@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "Community 98"
+community: "Community 24"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_98
+  - community/Community_24
 ---
 
 # OutboundInfoFilter
 
 ## Connections
-- [[.__init__()_118]] - `method` [EXTRACTED]
+- [[.__init__()_116]] - `method` [EXTRACTED]
 - [[._classify_response_risk()]] - `method` [EXTRACTED]
 - [[._compile_patterns()_1]] - `method` [EXTRACTED]
 - [[._is_allowed_for_trust()]] - `method` [EXTRACTED]
@@ -52,4 +52,4 @@ tags:
 - [[test_outbound_filter.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_98
+#graphify/code #graphify/EXTRACTED #community/Community_24

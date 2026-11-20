@@ -12,8 +12,8 @@ tags:
 # ToolResultPIIConfig
 
 ## Connections
-- [[.__init__()_139]] - `method` [EXTRACTED]
-- [[.__init__()_140]] - `references` [EXTRACTED]
+- [[.__init__()_136]] - `method` [EXTRACTED]
+- [[.__init__()_137]] - `references` [EXTRACTED]
 - [[.get_config_for_tool()]] - `method` [EXTRACTED]
 - [[.set_config()]] - `calls` [EXTRACTED]
 - [[.test_default_config()_6]] - `calls` [EXTRACTED]

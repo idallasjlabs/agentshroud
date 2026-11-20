@@ -1,11 +1,11 @@
 ---
 type: community
-members: 114
+members: 115
 ---
 
 # Community 29
 
-**Members:** 114 nodes
+**Members:** 115 nodes
 
 ## Members
 - [[._all_not_run_patches()]] - code - gateway/tests/test_scanner_integration.py
@@ -13,6 +13,7 @@ members: 114
 - [[.test_at_least_one()]] - code - gateway/tests/test_scanner_integration.py
 - [[.test_baseline_at_least_two()]] - code - gateway/tests/test_scanner_integration.py
 - [[.test_baseline_three_without_daemon_config()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_clean_tools_improve_score()]] - code - gateway/tests/test_scanner_integration.py
 - [[.test_compliance_new_keys_present()]] - code - gateway/tests/test_scanner_integration.py
 - [[.test_compute_weighted_subscore_full_score()]] - code - gateway/tests/test_scanner_integration.py
 - [[.test_compute_weighted_subscore_zero_for_empty_map()]] - code - gateway/tests/test_scanner_integration.py
@@ -131,13 +132,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 43 edges to [[_COMMUNITY_Community 67]]
-- 10 edges to [[_COMMUNITY_Community 943]]
-- 8 edges to [[_COMMUNITY_Community 363]]
+- 45 edges to [[_COMMUNITY_Community 67]]
+- 12 edges to [[_COMMUNITY_Community 102]]
+- 6 edges to [[_COMMUNITY_Community 842]]
 - 6 edges to [[_COMMUNITY_Community 207]]
-- 4 edges to [[_COMMUNITY_Community 311]]
-- 3 edges to [[_COMMUNITY_Community 842]]
-- 2 edges to [[_COMMUNITY_Community 102]]
+- 5 edges to [[_COMMUNITY_Community 311]]
+- 4 edges to [[_COMMUNITY_Community 363]]
 - 2 edges to [[_COMMUNITY_Community 51]]
 - 1 edge to [[_COMMUNITY_Community 220]]
 - 1 edge to [[_COMMUNITY_Community 131]]
@@ -145,8 +145,8 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 10]]
 
 ## Top bridge nodes
-- [[scanner_integration.py]] - degree 67, connects to 11 communities
+- [[scanner_integration.py]] - degree 67, connects to 10 communities
 - [[compute_scorecard()]] - degree 61, connects to 8 communities
-- [[Path_19]] - degree 34, connects to 3 communities
+- [[Path_19]] - degree 34, connects to 4 communities
 - [[_is_fresh()]] - degree 8, connects to 2 communities
 - [[_app_state_has()]] - degree 23, connects to 1 community

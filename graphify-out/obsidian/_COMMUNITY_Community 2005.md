@@ -1,20 +1,14 @@
 ---
 type: community
-members: 8
+members: 2
 ---
 
 # Community 2005
 
-**Members:** 8 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[.__aenter__()_5]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[.__aexit__()_5]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[.__init__()_195]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[.aiter_bytes()_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[.aread()_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[Hermes's dashboard chat streams, so the streaming path must apply the shim too.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_FakeStreamResponse_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[test_fieldflare_route_strips_unsupported_fields_streaming()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 
 ## Live Query (requires Dataview plugin)
@@ -25,13 +19,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 208]]
-- 1 edge to [[_COMMUNITY_Community 1278]]
-- 1 edge to [[_COMMUNITY_Community 115]]
-- 1 edge to [[_COMMUNITY_Community 532]]
-- 1 edge to [[_COMMUNITY_Community 5]]
+- 1 edge to [[_COMMUNITY_Community 208]]
 - 1 edge to [[_COMMUNITY_Community 112]]
+- 1 edge to [[_COMMUNITY_Community 5]]
 
 ## Top bridge nodes
-- [[_FakeStreamResponse_1]] - degree 11, connects to 5 communities
-- [[test_fieldflare_route_strips_unsupported_fields_streaming()]] - degree 4, connects to 2 communities
+- [[test_fieldflare_route_strips_unsupported_fields_streaming()]] - degree 4, connects to 3 communities

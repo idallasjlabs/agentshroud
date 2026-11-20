@@ -34,7 +34,6 @@ tags:
 - [[.peek_code()]] - `method` [EXTRACTED]
 - [[.peek_pending()]] - `method` [EXTRACTED]
 - [[.peek_refresh()]] - `method` [EXTRACTED]
-- [[.purge_expired()]] - `method` [EXTRACTED]
 - [[.put_approval()]] - `method` [EXTRACTED]
 - [[.put_code()]] - `method` [EXTRACTED]
 - [[.put_pending()]] - `method` [EXTRACTED]

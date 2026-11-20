@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_auto_remediate_cves.py"
 type: "code"
 community: "Community 420"
-location: "L152"
+location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED

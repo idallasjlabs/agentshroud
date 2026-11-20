@@ -1,14 +1,14 @@
 ---
 type: community
-members: 46
+members: 44
 ---
 
 # Community 152
 
-**Members:** 46 nodes
+**Members:** 44 nodes
 
 ## Members
-- [[.__init__()_79]] - code - gateway/security/consent_framework.py
+- [[.__init__()_77]] - code - gateway/security/consent_framework.py
 - [[.add_to_blacklist()]] - code - gateway/security/consent_framework.py
 - [[.add_to_whitelist()]] - code - gateway/security/consent_framework.py
 - [[.get_blacklist()]] - code - gateway/security/consent_framework.py
@@ -38,9 +38,7 @@ members: 46
 - [[.validate_config()]] - code - gateway/security/consent_framework.py
 - [[.validate_configs()]] - code - gateway/security/consent_framework.py
 - [[Chen et al. 2026 (arXiv2602.14364) — MCP config shell injection  secret exfiltration]] - paper - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
-- [[Chen et al. 2026 — Agent configuration vulnerabilities  session hijacking (arXiv2602.14364)]] - paper - gateway/security/consent_framework.py
 - [[ConfigValidationError]] - code - gateway/security/consent_framework.py
-- [[ConsentDecision]] - code - gateway/security/consent_framework.py
 - [[ConsentFramework]] - code - gateway/security/consent_framework.py
 - [[Maloyan & Namiot 2026 (arXiv2601.17548) — Malicious MCP server configuration attacks]] - paper - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
 - [[Maloyan & Namiot 2026 — MCP security analysis (arXiv2601.17548)]] - paper - gateway/security/consent_framework.py
@@ -63,21 +61,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_Community 0]]
-- 10 edges to [[_COMMUNITY_Community 72]]
-- 6 edges to [[_COMMUNITY_Community 809]]
-- 4 edges to [[_COMMUNITY_Community 121]]
-- 2 edges to [[_COMMUNITY_Community 557]]
-- 2 edges to [[_COMMUNITY_Community 76]]
+- 19 edges to [[_COMMUNITY_Community 0]]
+- 3 edges to [[_COMMUNITY_Community 31]]
+- 2 edges to [[_COMMUNITY_Community 477]]
 - 1 edge to [[_COMMUNITY_Community 2048]]
-- 1 edge to [[_COMMUNITY_Community 1]]
 - 1 edge to [[_COMMUNITY_Community 196]]
-- 1 edge to [[_COMMUNITY_Community 394]]
-- 1 edge to [[_COMMUNITY_Community 140]]
+- 1 edge to [[_COMMUNITY_Community 45]]
 
 ## Top bridge nodes
-- [[ConsentDecision]] - degree 33, connects to 6 communities
-- [[ConsentFramework]] - degree 31, connects to 4 communities
-- [[consent_framework.py]] - degree 10, connects to 2 communities
-- [[ConfigValidationError]] - degree 3, connects to 1 community
-- [[Chen et al. 2026 — Agent configuration vulnerabilities  session hijacking (arXiv2602.14364)]] - degree 2, connects to 1 community
+- [[ConsentFramework]] - degree 31, connects to 3 communities
+- [[consent_framework.py]] - degree 10, connects to 3 communities
+- [[TestServerConfigValidation]] - degree 13, connects to 1 community
+- [[TestEnvironmentValidation]] - degree 10, connects to 1 community
+- [[TestWhitelistBlacklist]] - degree 9, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "Community 1305"
+community: "Community 855"
 location: "L106"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1305
+  - community/Community_855
 ---
 
 # Content appended to group-B must not appear in group-A memory.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_group_b_write_invisible_from_group_a()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1305
+#graphify/rationale #graphify/EXTRACTED #community/Community_855

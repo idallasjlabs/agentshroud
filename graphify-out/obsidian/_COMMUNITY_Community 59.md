@@ -39,11 +39,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 54]]
-- 1 edge to [[_COMMUNITY_Community 2038]]
+- 7 edges to [[_COMMUNITY_Community 54]]
 - 1 edge to [[_COMMUNITY_Community 132]]
 
 ## Top bridge nodes
-- [[TestToolPermission]] - degree 27, connects to 3 communities
+- [[TestToolPermission]] - degree 27, connects to 2 communities
 - [[.test_privacy_policy_overrides_patterns()]] - degree 2, connects to 1 community
 - [[.test_privacy_policy_status_when_missing_file()]] - degree 2, connects to 1 community

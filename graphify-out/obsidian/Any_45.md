@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/security/context_guard.py"
+source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "Community 72"
-location: "L465"
+community: "Community 216"
+location: "L64"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_72
+  - graphify/INFERRED
+  - community/Community_216
 ---
 
 # Any
 
 ## Connections
-- [[.get_attack_summary()]] - `references` [EXTRACTED]
+- [[.__init__()_79]] - `references` [EXTRACTED]
+- [[ContextSegment]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
+- [[SystemPromptFingerprint]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/INFERRED #community/Community_216

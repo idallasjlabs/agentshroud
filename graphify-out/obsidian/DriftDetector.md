@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "Community 52"
+community: "Community 0"
 location: "L59"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_52
+  - community/Community_0
 ---
 
 # DriftDetector
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_88]] - `method` [EXTRACTED]
+- [[.__init__()_86]] - `method` [EXTRACTED]
 - [[._init_db()_1]] - `method` [EXTRACTED]
 - [[.acknowledge_alert()]] - `method` [EXTRACTED]
 - [[.check_drift()]] - `method` [EXTRACTED]
@@ -81,4 +81,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_52
+#graphify/code #graphify/INFERRED #community/Community_0

@@ -12,7 +12,7 @@ tags:
 # EgressPolicy
 
 ## Connections
-- [[.__init__()_90]] - `references` [EXTRACTED]
+- [[.__init__()_88]] - `references` [EXTRACTED]
 - [[.get_policy()]] - `references` [EXTRACTED]
 - [[.matches_domain()]] - `method` [EXTRACTED]
 - [[.matches_ip()]] - `method` [EXTRACTED]

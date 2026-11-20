@@ -1,26 +1,23 @@
 ---
 type: community
-members: 97
+members: 91
 ---
 
 # Community 132
 
-**Members:** 97 nodes
+**Members:** 91 nodes
 
 ## Members
 - [[.__init__()_45]] - code - gateway/proxy/mcp_proxy.py
-- [[.__init__()_199]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.__init__()_200]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.__init__()_196]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.__init__()_197]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[._fake_aiohttp()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[.get_item()_2]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[.get_or_create()]] - code - gateway/proxy/mcp_proxy.py
 - [[.is_running()]] - code - gateway/proxy/mcp_proxy.py
 - [[.kill()_1]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[.remove()]] - code - gateway/proxy/mcp_proxy.py
-- [[.send_request()]] - code - gateway/proxy/mcp_proxy.py
 - [[.send_request()_2]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.shutdown()]] - code - gateway/proxy/mcp_proxy.py
-- [[.start()_1]] - code - gateway/proxy/mcp_proxy.py
 - [[.stop()_2]] - code - gateway/proxy/mcp_proxy.py
 - [[.stop()_3]] - code - gateway/proxy/mcp_proxy.py
 - [[.stop()_12]] - code - gateway/tests/test_mcp_proxy_coverage.py
@@ -68,7 +65,6 @@ members: 97
 - [[.test_unknown_server_returns_error_result()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[.wait()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[.wait_for_decision()_4]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[Clean shutdown — close all connections.]] - rationale - gateway/proxy/mcp_proxy.py
 - [[Configuration for a specific MCP tool.]] - rationale - gateway/proxy/mcp_config.py
 - [[ConnectionPool]] - code - gateway/proxy/mcp_proxy.py
 - [[Exception_4]] - code - gateway/tests/test_mcp_proxy_coverage.py
@@ -84,10 +80,8 @@ members: 97
 - [[Manages a stdio connection to an MCP server process.]] - rationale - gateway/proxy/mcp_proxy.py
 - [[Manages an HTTPSSE connection to an MCP server.]] - rationale - gateway/proxy/mcp_proxy.py
 - [[Pool of connections to MCP servers.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Send a JSON-RPC request and read the response.]] - rationale - gateway/proxy/mcp_proxy.py
 - [[Stand-in connection injected into the proxy's pool.]] - rationale - gateway/tests/test_mcp_proxy_coverage.py
 - [[Stand-in for asyncio.subprocess.Process — no real child process.]] - rationale - gateway/tests/test_mcp_proxy_coverage.py
-- [[Start the MCP server process.]] - rationale - gateway/proxy/mcp_proxy.py
 - [[StdioConnection]] - code - gateway/proxy/mcp_proxy.py
 - [[Stop the MCP server process.]] - rationale - gateway/proxy/mcp_proxy.py
 - [[TestApprovalQueue]] - code - gateway/tests/test_mcp_proxy_coverage.py
@@ -114,21 +108,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 121 edges to [[_COMMUNITY_Community 54]]
-- 82 edges to [[_COMMUNITY_Community 64]]
-- 31 edges to [[_COMMUNITY_Community 965]]
+- 112 edges to [[_COMMUNITY_Community 54]]
+- 108 edges to [[_COMMUNITY_Community 64]]
+- 30 edges to [[_COMMUNITY_Community 230]]
 - 24 edges to [[_COMMUNITY_Community 184]]
-- 22 edges to [[_COMMUNITY_Community 2038]]
+- 5 edges to [[_COMMUNITY_Community 1290]]
+- 4 edges to [[_COMMUNITY_Community 965]]
 - 4 edges to [[_COMMUNITY_Community 37]]
 - 3 edges to [[_COMMUNITY_Community 21]]
 - 1 edge to [[_COMMUNITY_Community 68]]
 - 1 edge to [[_COMMUNITY_Community 59]]
-- 1 edge to [[_COMMUNITY_Community 941]]
-- 1 edge to [[_COMMUNITY_Community 1970]]
 
 ## Top bridge nodes
-- [[MCPToolConfig]] - degree 59, connects to 8 communities
-- [[FakeApprovalQueue]] - degree 27, connects to 6 communities
-- [[FakeProcess]] - degree 23, connects to 6 communities
+- [[StdioConnection]] - degree 38, connects to 6 communities
+- [[HttpSseConnection]] - degree 35, connects to 6 communities
+- [[MCPToolConfig]] - degree 59, connects to 5 communities
+- [[ConnectionPool]] - degree 36, connects to 5 communities
 - [[test_mcp_proxy_coverage.py]] - degree 34, connects to 5 communities
-- [[FakeConn]] - degree 30, connects to 5 communities

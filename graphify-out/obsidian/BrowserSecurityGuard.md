@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "Community 72"
-location: "L103"
+community: "Community 196"
+location: "L95"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_72
+  - community/Community_196
 ---
 
 # BrowserSecurityGuard
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_59]] - `calls` [EXTRACTED]
-- [[.__init__()_74]] - `method` [EXTRACTED]
+- [[.__init__()_58]] - `calls` [EXTRACTED]
+- [[.__init__()_72]] - `method` [EXTRACTED]
 - [[.analyze_content()]] - `method` [EXTRACTED]
 - [[.analyze_screenshot()]] - `method` [EXTRACTED]
 - [[.can_enter_credentials()]] - `method` [EXTRACTED]
@@ -46,4 +46,4 @@ tags:
 - [[test_browser_security.py]] - `calls` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_72
+#graphify/code #graphify/INFERRED #community/Community_196

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "rationale"
-community: "Community 221"
+community: "Community 111"
 location: "L265"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_221
+  - community/Community_111
 ---
 
 # Best-effort canonicalization of alternate IPv4 encodings that     ``ipaddress.ip
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_canonicalize_ip_literal()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_221
+#graphify/rationale #graphify/EXTRACTED #community/Community_111

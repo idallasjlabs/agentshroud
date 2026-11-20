@@ -2,7 +2,7 @@
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
 community: "Community 1000"
-location: "L354"
+location: "L325"
 tags:
   - graphify/code
   - graphify/EXTRACTED

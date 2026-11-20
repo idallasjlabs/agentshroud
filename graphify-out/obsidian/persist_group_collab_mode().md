@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Community 1288"
-location: "L292"
+community: "Community 18"
+location: "L283"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1288
+  - community/Community_18
 ---
 
 # persist_group_collab_mode()
@@ -21,4 +21,4 @@ tags:
 - [[set_group_mode()]] - `calls` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1288
+#graphify/code #graphify/EXTRACTED #community/Community_18

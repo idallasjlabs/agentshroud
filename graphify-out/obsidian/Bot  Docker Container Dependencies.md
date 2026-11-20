@@ -2,7 +2,7 @@
 source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
 type: "document"
 community: "Community 579"
-location: "L73"
+location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED

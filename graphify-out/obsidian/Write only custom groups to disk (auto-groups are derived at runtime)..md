@@ -2,7 +2,7 @@
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
 community: "Community 223"
-location: "L337"
+location: "L332"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

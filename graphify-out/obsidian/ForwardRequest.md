@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Community 92"
+community: "Community 78"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_92
+  - community/Community_78
 ---
 
 # ForwardRequest
@@ -70,4 +70,4 @@ tags:
 - [[test_shortcut_source_accepted()]] - `calls` [EXTRACTED]
 - [[test_valid_sources()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_92
+#graphify/code #graphify/EXTRACTED #community/Community_78

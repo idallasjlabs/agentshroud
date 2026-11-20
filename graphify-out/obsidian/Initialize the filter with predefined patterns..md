@@ -12,6 +12,6 @@ tags:
 # Initialize the filter with predefined patterns.
 
 ## Connections
-- [[.__init__()_143]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_140]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_431

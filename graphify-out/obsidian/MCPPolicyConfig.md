@@ -12,7 +12,7 @@ tags:
 # MCPPolicyConfig
 
 ## Connections
-- [[.__init__()_109]] - `references` [EXTRACTED]
+- [[.__init__()_107]] - `references` [EXTRACTED]
 - [[.__post_init__()_5]] - `method` [EXTRACTED]
 - [[.from_dict()_7]] - `method` [EXTRACTED]
 - [[Declarative MCP security policy.      Loaded from the ``mcp_policy`` section of]] - `rationale_for` [EXTRACTED]

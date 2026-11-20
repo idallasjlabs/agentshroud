@@ -2,7 +2,7 @@
 source_file: "gateway/security/context_guard.py"
 type: "code"
 community: "Community 344"
-location: "L568"
+location: "L480"
 tags:
   - graphify/code
   - graphify/EXTRACTED

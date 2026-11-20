@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Community 84"
+community: "Community 11"
 location: "L94"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_84
+  - community/Community_11
 ---
 
 # TrustManager
 
 ## Connections
-- [[.__init__()_142]] - `method` [EXTRACTED]
+- [[.__init__()_139]] - `method` [EXTRACTED]
 - [[._apply_decay()]] - `method` [EXTRACTED]
 - [[._force_demotion()]] - `method` [EXTRACTED]
 - [[._init_db()_2]] - `method` [EXTRACTED]
@@ -173,7 +173,7 @@ tags:
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[manager()_4]] - `calls` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[run()_2]] - `calls` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[strict_manager()]] - `calls` [EXTRACTED]
 - [[test_a2a_integration.py]] - `imports` [EXTRACTED]
@@ -198,4 +198,4 @@ tags:
 - [[trust_manager()_5]] - `calls` [EXTRACTED]
 - [[trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_84
+#graphify/code #graphify/INFERRED #community/Community_11

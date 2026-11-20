@@ -1,24 +1,32 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 28"
-location: "L28"
+community: "Community 10"
+location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_28
+  - community/Community_10
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_139]] - `references` [EXTRACTED]
-- [[._extract_dict_content()]] - `references` [EXTRACTED]
-- [[._extract_scannable_content()]] - `references` [EXTRACTED]
-- [[._reconstruct_result()]] - `references` [EXTRACTED]
-- [[.sanitize_tool_result()]] - `references` [EXTRACTED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[RedactionResult]] - `uses` [INFERRED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[_deployment_state()]] - `references` [EXTRACTED]
+- [[_edge_snapshot()]] - `references` [EXTRACTED]
+- [[_hosted_edge_rows()]] - `references` [EXTRACTED]
+- [[_hosted_status()]] - `references` [EXTRACTED]
+- [[_log_audit()]] - `references` [EXTRACTED]
+- [[_profile_catalog()]] - `references` [EXTRACTED]
+- [[_run_killswitch()]] - `references` [EXTRACTED]
+- [[_unhooked_hosted_rows()]] - `references` [EXTRACTED]
+- [[auth_ws_token()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_28
+#graphify/code #graphify/EXTRACTED #community/Community_10

@@ -1,12 +1,12 @@
 ---
 source_file: "prompts/sunday-upgrade.md"
 type: "document"
-community: "Community 139"
+community: "Community 1196"
 location: "L352-L384"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/Community_1196
 ---
 
 # Upgrade report reports/upgrade-YYYY-MM-DD.md (8 sections, incremental writes)
@@ -15,4 +15,4 @@ tags:
 - [[scriptssunday-rollback.sh  rollback.sh]] - `references` [EXTRACTED]
 - [[sunday-upgrade]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_139
+#graphify/document #graphify/EXTRACTED #community/Community_1196

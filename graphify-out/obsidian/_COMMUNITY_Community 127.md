@@ -69,12 +69,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_Community 368]]
+- 11 edges to [[_COMMUNITY_Community 368]]
 - 5 edges to [[_COMMUNITY_Community 131]]
 - 5 edges to [[_COMMUNITY_Community 736]]
 - 3 edges to [[_COMMUNITY_Community 1200]]
 - 2 edges to [[_COMMUNITY_Community 1202]]
 - 1 edge to [[_COMMUNITY_Community 151]]
+- 1 edge to [[_COMMUNITY_Community 74]]
 - 1 edge to [[_COMMUNITY_Community 399]]
 - 1 edge to [[_COMMUNITY_Community 10]]
 - 1 edge to [[_COMMUNITY_Community 1001]]
@@ -84,7 +85,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 2004]]
 
 ## Top bridge nodes
-- [[test_daily_cve_report.py]] - degree 34, connects to 11 communities
+- [[test_daily_cve_report.py]] - degree 34, connects to 12 communities
 - [[run_and_send_cve_report()]] - degree 16, connects to 4 communities
 - [[format_cve_report()]] - degree 17, connects to 2 communities
 - [[_already_sent_today()]] - degree 6, connects to 2 communities

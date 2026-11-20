@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "rationale"
-community: "Community 31"
+community: "Community 1"
 location: "L356"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_31
+  - community/Community_1
 ---
 
 # Enhanced pattern matching for file paths.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._match_pattern()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_31
+#graphify/rationale #graphify/EXTRACTED #community/Community_1

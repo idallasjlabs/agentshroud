@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/edge_jwt.py"
 type: "code"
-community: "Community 50"
+community: "Community 2048"
 location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_50
+  - community/Community_2048
 ---
 
 # _decode()
@@ -18,4 +18,4 @@ tags:
 - [[edge_jwt.py]] - `contains` [EXTRACTED]
 - [[verify_signature_only()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_50
+#graphify/code #graphify/EXTRACTED #community/Community_2048

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "Community 707"
+community: "Community 62"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_707
+  - community/Community_62
 ---
 
 # auth_dep()
@@ -18,4 +18,4 @@ tags:
 - [[approval.py]] - `contains` [EXTRACTED]
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_707
+#graphify/code #graphify/EXTRACTED #community/Community_62

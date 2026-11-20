@@ -12,7 +12,7 @@ tags:
 # SkillGuard
 
 ## Connections
-- [[.__init__()_133]] - `method` [EXTRACTED]
+- [[.__init__()_131]] - `method` [EXTRACTED]
 - [[._line_at()]] - `method` [EXTRACTED]
 - [[._scan_opaque_blobs()]] - `method` [EXTRACTED]
 - [[.scan_file()_1]] - `method` [EXTRACTED]

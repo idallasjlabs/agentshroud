@@ -1,30 +1,21 @@
 ---
 type: community
-members: 17
+members: 8
 ---
 
 # Community 1209
 
-**Members:** 17 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[.test_api_calls_exceed()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_no_tracking_returns_ok()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_tokens_exceed_budget()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_tokens_within_budget()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_tool_calls_budget_blocks_authorize_tool()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_warning_at_80_percent()]] - code - gateway/tests/test_subagent_governance.py
-- [[Default governance instance in enforce mode.]] - rationale - gateway/tests/test_subagent_governance.py
-- [[Governance in monitor mode (log but don't block).]] - rationale - gateway/tests/test_subagent_governance.py
-- [[GovernanceConfig]] - code - gateway/security/subagent_governance.py
-- [[Per-subagent resource limits.]] - rationale - gateway/security/subagent_governance.py
-- [[ResourceBudget]] - code - gateway/security/subagent_governance.py
-- [[TestResourceBudgets]] - code - gateway/tests/test_subagent_governance.py
-- [[Top-level governance configuration.]] - rationale - gateway/security/subagent_governance.py
-- [[disabled_gov()]] - code - gateway/tests/test_subagent_governance.py
-- [[gov()]] - code - gateway/tests/test_subagent_governance.py
-- [[monitor_gov()]] - code - gateway/tests/test_subagent_governance.py
-- [[test_subagent_governance.py]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_exception_fails_open()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_log_action_no_patterns_returns_original()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_log_action_with_patterns_returns_original()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_no_scanner_passthrough()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_strip_action_returns_sanitized()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_warn_action_returns_sanitized()]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestScanToolResult]] - code - gateway/tests/test_middleware_coverage.py
+- [[_scan_result()]] - code - gateway/tests/test_middleware_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,17 +25,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 1343]]
-- 7 edges to [[_COMMUNITY_Community 1360]]
-- 6 edges to [[_COMMUNITY_Community 38]]
-- 3 edges to [[_COMMUNITY_Community 2051]]
-- 3 edges to [[_COMMUNITY_Community 2052]]
-- 3 edges to [[_COMMUNITY_Community 2055]]
-- 2 edges to [[_COMMUNITY_Community 2003]]
+- 2 edges to [[_COMMUNITY_Community 31]]
+- 2 edges to [[_COMMUNITY_Community 34]]
+- 1 edge to [[_COMMUNITY_Community 68]]
+- 1 edge to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 60]]
 
 ## Top bridge nodes
-- [[GovernanceConfig]] - degree 17, connects to 7 communities
-- [[test_subagent_governance.py]] - degree 17, connects to 6 communities
-- [[ResourceBudget]] - degree 13, connects to 6 communities
-- [[TestResourceBudgets]] - degree 12, connects to 2 communities
-- [[gov()]] - degree 4, connects to 1 community
+- [[TestScanToolResult]] - degree 11, connects to 4 communities
+- [[_scan_result()]] - degree 5, connects to 1 community
+- [[.test_exception_fails_open()]] - degree 2, connects to 1 community

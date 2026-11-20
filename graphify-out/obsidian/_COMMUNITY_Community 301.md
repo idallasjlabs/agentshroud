@@ -47,7 +47,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Community 164]]
-- 1 edge to [[_COMMUNITY_Community 577]]
+- 1 edge to [[_COMMUNITY_Community 454]]
 
 ## Top bridge nodes
 - [[Security Module Inventory]] - degree 8, connects to 2 communities

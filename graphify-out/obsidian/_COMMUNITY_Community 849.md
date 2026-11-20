@@ -41,7 +41,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 139]]
+- 1 edge to [[_COMMUNITY_Community 1196]]
 
 ## Top bridge nodes
 - [[Incident ConduitHermes instability, 2026-10-16 (overnight)]] - degree 14, connects to 1 community

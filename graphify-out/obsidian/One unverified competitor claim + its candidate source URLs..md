@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Community 49"
-location: "L1133"
+community: "Community 125"
+location: "L1129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/Community_125
 ---
 
 # One unverified competitor claim + its candidate source URLs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IntelDraftEntry]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_49
+#graphify/rationale #graphify/EXTRACTED #community/Community_125

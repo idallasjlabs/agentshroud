@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[canary-deploy.sh]] - `defines` [EXTRACTED]
 - [[canary-deploy.sh script]] - `calls` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 - [[run_in_repo()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_1116

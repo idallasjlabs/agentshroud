@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/edge_jwt.py"
 type: "code"
-community: "Community 32"
+community: "Community 135"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Community_135
 ---
 
 # generate_signing_key_pem()
@@ -26,4 +26,4 @@ tags:
 - [[test_edge_pipeline.py]] - `imports` [EXTRACTED]
 - [[test_edge_service_routes.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_32
+#graphify/code #graphify/EXTRACTED #community/Community_135

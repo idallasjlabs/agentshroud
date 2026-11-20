@@ -2,7 +2,7 @@
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
 community: "Community 74"
-location: "L646"
+location: "L432"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

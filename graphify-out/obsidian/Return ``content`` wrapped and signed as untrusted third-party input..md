@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "rationale"
-community: "Community 80"
+community: "Community 24"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_80
+  - community/Community_24
 ---
 
 # Return ``content`` wrapped and signed as untrusted third-party input.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[wrap_untrusted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_80
+#graphify/rationale #graphify/EXTRACTED #community/Community_24

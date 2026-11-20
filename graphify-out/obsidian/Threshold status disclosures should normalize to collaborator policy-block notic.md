@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 845"
+community: "Community 2"
 location: "L707"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_845
+  - community/Community_2
 ---
 
 # Threshold status disclosures should normalize to collaborator policy-block notic
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_security_monitoring_threshold_notice_is_normalized_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_845
+#graphify/rationale #graphify/EXTRACTED #community/Community_2

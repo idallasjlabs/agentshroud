@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Community 378"
+community: "Community 341"
 location: "L409"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_378
+  - community/Community_341
 ---
 
 # ws_vg_state_t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_on_vg_state()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_378
+#graphify/code #graphify/EXTRACTED #community/Community_341

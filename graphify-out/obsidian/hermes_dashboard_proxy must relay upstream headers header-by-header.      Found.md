@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "Community 53"
+community: "Community 1658"
 location: "L432"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_53
+  - community/Community_1658
 ---
 
 # hermes_dashboard_proxy must relay upstream headers header-by-header.      Found
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestHermesDashboardProxyHeaders]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_53
+#graphify/rationale #graphify/EXTRACTED #community/Community_1658

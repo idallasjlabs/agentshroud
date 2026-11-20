@@ -2,7 +2,7 @@
 source_file: "scripts/generate_branding_assets.py"
 type: "rationale"
 community: "Community 446"
-location: "L86"
+location: "L72"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 49"
-location: "L1132"
+community: "Community 125"
+location: "L1128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/Community_125
 ---
 
 # IntelDraftEntry
@@ -19,4 +19,4 @@ tags:
 - [[One unverified competitor claim + its candidate source URLs.]] - `rationale_for` [EXTRACTED]
 - [[api.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_49
+#graphify/code #graphify/EXTRACTED #community/Community_125

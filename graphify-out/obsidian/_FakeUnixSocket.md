@@ -12,7 +12,7 @@ tags:
 # _FakeUnixSocket
 
 ## Connections
-- [[.__init__()_219]] - `method` [EXTRACTED]
+- [[.__init__()_216]] - `method` [EXTRACTED]
 - [[.close()_21]] - `method` [EXTRACTED]
 - [[.connect()_2]] - `method` [EXTRACTED]
 - [[.settimeout()]] - `method` [EXTRACTED]

@@ -12,7 +12,7 @@ tags:
 # AuditEvent
 
 ## Connections
-- [[.__init__()_72]] - `method` [EXTRACTED]
+- [[.__init__()_70]] - `method` [EXTRACTED]
 - [[._generate_event_id()]] - `method` [EXTRACTED]
 - [[.compute_content_hash()]] - `method` [EXTRACTED]
 - [[.compute_entry_hash()]] - `method` [EXTRACTED]
@@ -21,7 +21,7 @@ tags:
 - [[.test_content_hash()]] - `calls` [EXTRACTED]
 - [[.test_entry_hash_chain()]] - `calls` [EXTRACTED]
 - [[.test_event_creation()]] - `calls` [EXTRACTED]
-- [[.to_dict()_5]] - `method` [EXTRACTED]
+- [[.to_dict()_4]] - `method` [EXTRACTED]
 - [[.verify_hash_chain()]] - `calls` [EXTRACTED]
 - [[AuditEvent]] - `uses` [INFERRED]
 - [[AuditExportConfig_1]] - `uses` [INFERRED]

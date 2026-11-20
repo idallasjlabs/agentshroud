@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "Community 978"
+community: "Community 254"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/Community_254
 ---
 
 # AuditExporter
 
 ## Connections
-- [[.__init__()_71]] - `method` [EXTRACTED]
+- [[.__init__()_69]] - `method` [EXTRACTED]
 - [[._export_cef()]] - `method` [EXTRACTED]
 - [[._export_json()]] - `method` [EXTRACTED]
 - [[._export_jsonld()]] - `method` [EXTRACTED]
@@ -48,4 +48,4 @@ tags:
 - [[soc_export()]] - `calls` [EXTRACTED]
 - [[test_audit_export.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_978
+#graphify/code #graphify/EXTRACTED #community/Community_254

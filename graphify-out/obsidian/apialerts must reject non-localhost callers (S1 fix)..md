@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "Community 53"
+community: "Community 1658"
 location: "L721"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_53
+  - community/Community_1658
 ---
 
 # /api/alerts must reject non-localhost callers (S1 fix).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAlertsLocalhostEnforcement]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_53
+#graphify/rationale #graphify/EXTRACTED #community/Community_1658

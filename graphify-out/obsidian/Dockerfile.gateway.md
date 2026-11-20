@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "document"
-community: "Community 944"
+community: "Community 739"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_944
+  - community/Community_739
 ---
 
 # Dockerfile.gateway.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_944
+#graphify/document #graphify/EXTRACTED #community/Community_739

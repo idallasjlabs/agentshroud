@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/client.py"
 type: "code"
-community: "Community 1023"
+community: "Community 488"
 location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1023
+  - community/Community_488
 ---
 
 # client_from_env()
@@ -22,4 +22,4 @@ tags:
 - [[client.py]] - `contains` [EXTRACTED]
 - [[test_cli_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1023
+#graphify/code #graphify/EXTRACTED #community/Community_488

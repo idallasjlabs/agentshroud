@@ -1,32 +1,32 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Community 10"
-location: "L59"
+community: "Community 67"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_10
+  - community/Community_67
 ---
 
 # Any
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult]] - `uses` [INFERRED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
-- [[_deployment_state()]] - `references` [EXTRACTED]
-- [[_edge_snapshot()]] - `references` [EXTRACTED]
-- [[_hosted_edge_rows()]] - `references` [EXTRACTED]
-- [[_hosted_status()]] - `references` [EXTRACTED]
-- [[_log_audit()]] - `references` [EXTRACTED]
-- [[_profile_catalog()]] - `references` [EXTRACTED]
-- [[_run_killswitch()]] - `references` [EXTRACTED]
-- [[_unhooked_hosted_rows()]] - `references` [EXTRACTED]
-- [[auth_ws_token()]] - `references` [EXTRACTED]
+- [[_clamav_clean()]] - `references` [EXTRACTED]
+- [[_clamav_infected()]] - `references` [EXTRACTED]
+- [[_clean_trivy_report()]] - `references` [EXTRACTED]
+- [[_critical_trivy_report()]] - `references` [EXTRACTED]
+- [[_falco_clean()]] - `references` [EXTRACTED]
+- [[_falco_critical()]] - `references` [EXTRACTED]
+- [[_falco_not_run()]] - `references` [EXTRACTED]
+- [[_openscap_clean()]] - `references` [EXTRACTED]
+- [[_openscap_not_run()]] - `references` [EXTRACTED]
+- [[_openscap_warn()]] - `references` [EXTRACTED]
+- [[_trivy_clean()]] - `references` [EXTRACTED]
+- [[_trivy_critical()]] - `references` [EXTRACTED]
+- [[_trivy_not_run()]] - `references` [EXTRACTED]
+- [[_wazuh_clean()]] - `references` [EXTRACTED]
+- [[_wazuh_not_run()]] - `references` [EXTRACTED]
+- [[_write_image_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_10
+#graphify/code #graphify/EXTRACTED #community/Community_67

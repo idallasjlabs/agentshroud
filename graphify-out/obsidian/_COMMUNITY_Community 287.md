@@ -33,10 +33,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 91]]
+- 4 edges to [[_COMMUNITY_Community 91]]
 - 1 edge to [[_COMMUNITY_Community 339]]
-- 1 edge to [[_COMMUNITY_Community 366]]
 - 1 edge to [[_COMMUNITY_Community 1219]]
 
 ## Top bridge nodes
-- [[EgressFilter_3]] - degree 16, connects to 4 communities
+- [[EgressFilter_3]] - degree 16, connects to 3 communities

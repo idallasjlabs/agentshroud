@@ -1,35 +1,26 @@
 ---
 type: community
-members: 22
+members: 13
 ---
 
 # Community 816
 
-**Members:** 22 nodes
+**Members:** 13 nodes
 
 ## Members
-- [[ARM64 Seccomp Profile Requirement]] - rationale - docs/operations/raspberry-pi.md
-- [[Access OpenClaw Dashboard Remotely]] - document - docs/reference/TAILSCALE_COMMANDS.md
-- [[Configuration Reference]] - document - docs/setup/setup-guide.md
-- [[Current Status_6]] - document - docs/reference/TAILSCALE_COMMANDS.md
-- [[Example Configurations_1]] - document - docs/setup/setup-guide.md
-- [[Next Steps_4]] - document - docs/reference/TAILSCALE_COMMANDS.md
-- [[Option 1 OpenClaw Control UI on Port 18790]] - document - docs/reference/TAILSCALE_COMMANDS.md
-- [[Option 2 Gateway Dashboard on Port 8080]] - document - docs/reference/TAILSCALE_COMMANDS.md
-- [[Option 3 Both Services]] - document - docs/reference/TAILSCALE_COMMANDS.md
-- [[Seccomp Profile Conflict (x86_64)]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Secrets Setup Script (dockersecretssetup-secrets.sh)]] - concept - docs/operations/raspberry-pi.md
-- [[Security Tailscale ACLs]] - document - docs/reference/TAILSCALE_COMMANDS.md
-- [[Stop Tailscale Serve]] - document - docs/reference/TAILSCALE_COMMANDS.md
-- [[TAILSCALE_COMMANDS]] - document - docs/reference/TAILSCALE_COMMANDS.md
-- [[Tailscale Remote Access (Pi)]] - concept - docs/operations/raspberry-pi.md
-- [[Tailscale Remote Access Setup]] - document - docs/reference/TAILSCALE_COMMANDS.md
-- [[Verify Tailscale Serve Status]] - document - docs/reference/TAILSCALE_COMMANDS.md
-- [[agentshroud.yaml - Main Configuration]] - document - docs/setup/setup-guide.md
-- [[agentshroud.yaml Configuration File]] - concept - docs/operations/raspberry-pi.md
-- [[egress-config.yml - Egress Filtering]] - document - docs/setup/setup-guide.md
-- [[mcp-config.yml - MCP Server Registry]] - document - docs/setup/setup-guide.md
-- [[raspberry-pi]] - document - docs/operations/raspberry-pi.md
+- [[First Time Setup_1]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Prerequisites_13]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Related Notes_66]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 1 Create Secret Files]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 2 Configure agentshroud.yaml]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 3 Configure 1Password Items]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 4 Build Container Images]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 5 Configure agentshroud.yaml]] - document - docs/setup-telegram.md
+- [[Step 5 Start Containers]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 6 Verify Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 7 Configure iOS Shortcuts (Optional)]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 8 Verify Security Posture]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Troubleshooting First Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,17 +30,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 654]]
-- 1 edge to [[_COMMUNITY_Community 726]]
-- 1 edge to [[_COMMUNITY_Community 451]]
-- 1 edge to [[_COMMUNITY_Community 559]]
-- 1 edge to [[_COMMUNITY_Community 702]]
-- 1 edge to [[_COMMUNITY_Community 764]]
+- 1 edge to [[_COMMUNITY_Community 889]]
 - 1 edge to [[_COMMUNITY_Community 334]]
-- 1 edge to [[_COMMUNITY_Community 350]]
 
 ## Top bridge nodes
-- [[raspberry-pi]] - degree 8, connects to 4 communities
-- [[TAILSCALE_COMMANDS]] - degree 4, connects to 2 communities
-- [[Configuration Reference]] - degree 6, connects to 1 community
-- [[Seccomp Profile Conflict (x86_64)]] - degree 2, connects to 1 community
+- [[First Time Setup_1]] - degree 13, connects to 1 community
+- [[Step 5 Configure agentshroud.yaml]] - degree 2, connects to 1 community

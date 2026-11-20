@@ -47,11 +47,10 @@ SORT file.name ASC
 ## Connections to other communities
 - 14 edges to [[_COMMUNITY_Community 219]]
 - 4 edges to [[_COMMUNITY_Community 888]]
+- 2 edges to [[_COMMUNITY_Community 102]]
 - 2 edges to [[_COMMUNITY_Community 998]]
 - 2 edges to [[_COMMUNITY_Community 1044]]
-- 1 edge to [[_COMMUNITY_Community 102]]
-- 1 edge to [[_COMMUNITY_Community 943]]
-- 1 edge to [[_COMMUNITY_Community 34]]
+- 1 edge to [[_COMMUNITY_Community 325]]
 - 1 edge to [[_COMMUNITY_Community 2343]]
 - 1 edge to [[_COMMUNITY_Community 2315]]
 - 1 edge to [[_COMMUNITY_Community 2316]]
@@ -75,7 +74,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 2323]]
 
 ## Top bridge nodes
-- [[test_scanner_integration_coverage.py]] - degree 50, connects to 28 communities
+- [[test_scanner_integration_coverage.py]] - degree 50, connects to 27 communities
 - [[._build_modules()]] - degree 3, connects to 1 community
 - [[.test_all_pillars_scores_five()]] - degree 2, connects to 1 community
 - [[.test_full_stack()]] - degree 2, connects to 1 community

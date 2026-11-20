@@ -8,8 +8,8 @@ members: 87
 **Members:** 87 nodes
 
 ## Members
-- [[.__init__()_86]] - code - gateway/security/differential_pii_detector.py
-- [[.__init__()_163]] - code - gateway/tests/test_differential_pii_detector.py
+- [[.__init__()_84]] - code - gateway/security/differential_pii_detector.py
+- [[.__init__()_160]] - code - gateway/tests/test_differential_pii_detector.py
 - [[.__post_init__()_4]] - code - gateway/security/differential_pii_detector.py
 - [[._deduplicate()]] - code - gateway/security/differential_pii_detector.py
 - [[._detect_pii()]] - code - gateway/security/differential_pii_detector.py
@@ -106,11 +106,11 @@ SORT file.name ASC
 ## Connections to other communities
 - 14 edges to [[_COMMUNITY_Community 116]]
 - 2 edges to [[_COMMUNITY_Community 151]]
-- 2 edges to [[_COMMUNITY_Community 271]]
-- 1 edge to [[_COMMUNITY_Community 8]]
-- 1 edge to [[_COMMUNITY_Community 924]]
-- 1 edge to [[_COMMUNITY_Community 162]]
-- 1 edge to [[_COMMUNITY_Community 32]]
+- 2 edges to [[_COMMUNITY_Community 307]]
+- 1 edge to [[_COMMUNITY_Community 6]]
+- 1 edge to [[_COMMUNITY_Community 133]]
+- 1 edge to [[_COMMUNITY_Community 626]]
+- 1 edge to [[_COMMUNITY_Community 84]]
 - 1 edge to [[_COMMUNITY_Community 1563]]
 - 1 edge to [[_COMMUNITY_Community 28]]
 

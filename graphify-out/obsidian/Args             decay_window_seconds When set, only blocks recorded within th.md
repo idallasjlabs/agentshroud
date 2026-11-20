@@ -12,6 +12,6 @@ tags:
 # Args:             decay_window_seconds: When set, only blocks recorded within th
 
 ## Connections
-- [[.__init__()_123]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_121]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_75

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "Community 890"
+community: "Community 38"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_890
+  - community/Community_38
 ---
 
 # ContributorRecord
@@ -19,4 +19,4 @@ tags:
 - [[Platform]] - `uses` [INFERRED]
 - [[UserRole_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_890
+#graphify/code #graphify/EXTRACTED #community/Community_38

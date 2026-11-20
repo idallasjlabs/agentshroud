@@ -1,14 +1,14 @@
 ---
 type: community
-members: 73
+members: 79
 ---
 
 # Community 61
 
-**Members:** 73 nodes
+**Members:** 79 nodes
 
 ## Members
-- [[.__init__()_99]] - code - gateway/security/group_workspace.py
+- [[.__init__()_97]] - code - gateway/security/group_workspace.py
 - [[._is_owner()_1]] - code - gateway/security/group_workspace.py
 - [[._require_memory()]] - code - gateway/security/group_workspace.py
 - [[.append_dm_memory()]] - code - gateway/security/group_workspace.py
@@ -59,11 +59,14 @@ members: 73
 - [[Append to a user's private DM memory (isolated from every group).]] - rationale - gateway/security/group_workspace.py
 - [[Canonical workspace id for a direct-message context ``dm-{user_id}``.]] - rationale - gateway/security/group_workspace.py
 - [[Canonical workspace id for a group chat_id ``group-{chat_id}``.]] - rationale - gateway/security/group_workspace.py
+- [[GroupAccessDenied]] - code - gateway/security/group_workspace.py
 - [[GroupWorkspaceManager]] - code - gateway/security/group_workspace.py
+- [[Raised when a user is not permitted to access a group workspace.      Subclasses]] - rationale - gateway/security/group_workspace.py
 - [[Read a group's shared memory, gated by member access (fail-closed).]] - rationale - gateway/security/group_workspace.py
 - [[Read a user's private DM memory (isolated from every group).]] - rationale - gateway/security/group_workspace.py
 - [[Resolve and access-control shared group workspaces.      Args         teams_con]] - rationale - gateway/security/group_workspace.py
 - [[Resolve the workspacecontext for an inbound message, fail-closed.          Retu]] - rationale - gateway/security/group_workspace.py
+- [[Resolved workspacecontext identity for a single inbound message.      Attribute]] - rationale - gateway/security/group_workspace.py
 - [[Return True if user_id is the system owner (oversight override).]] - rationale - gateway/security/group_workspace.py
 - [[Return True if user_id may access the workspace for ``group_chat_id``.]] - rationale - gateway/security/group_workspace.py
 - [[Simulate the chokepoint a non-member's active group id is cleared.]] - rationale - gateway/tests/test_group_workspace_manager.py
@@ -74,11 +77,14 @@ members: 73
 - [[TestInboundChokepointWiring]] - code - gateway/tests/test_group_workspace_manager.py
 - [[TestMembersShareGroupWorkspace]] - code - gateway/tests/test_group_workspace_manager.py
 - [[TestNonMemberDenied]] - code - gateway/tests/test_group_workspace_manager.py
+- [[WorkspaceContext]] - code - gateway/security/group_workspace.py
+- [[group_workspace.py]] - code - gateway/security/group_workspace.py
 - [[group_workspace.py (GroupWorkspaceManager)]] - code - gateway/security/group_workspace.py
 - [[manager()_1]] - code - gateway/tests/test_group_workspace_manager.py
 - [[rbac()_2]] - code - gateway/tests/test_group_workspace_manager.py
 - [[session_manager()_2]] - code - gateway/tests/test_group_workspace_manager.py
 - [[shared_memory()_1]] - code - gateway/tests/test_group_workspace_manager.py
+- [[shared_memory.py]] - code - gateway/security/shared_memory.py
 - [[teams()_4]] - code - gateway/tests/test_group_workspace_manager.py
 - [[test_group_workspace_manager.py]] - code - gateway/tests/test_group_workspace_manager.py
 
@@ -90,20 +96,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 32 edges to [[_COMMUNITY_Community 194]]
-- 21 edges to [[_COMMUNITY_Community 1305]]
-- 11 edges to [[_COMMUNITY_Community 14]]
-- 2 edges to [[_COMMUNITY_Community 96]]
+- 15 edges to [[_COMMUNITY_Community 1305]]
+- 14 edges to [[_COMMUNITY_Community 194]]
+- 14 edges to [[_COMMUNITY_Community 6]]
+- 12 edges to [[_COMMUNITY_Community 14]]
+- 11 edges to [[_COMMUNITY_Community 60]]
+- 3 edges to [[_COMMUNITY_Community 18]]
 - 1 edge to [[_COMMUNITY_Community 68]]
-- 1 edge to [[_COMMUNITY_Community 18]]
-- 1 edge to [[_COMMUNITY_Community 1288]]
 - 1 edge to [[_COMMUNITY_Community 33]]
+- 1 edge to [[_COMMUNITY_Community 20]]
 - 1 edge to [[_COMMUNITY_Community 223]]
-- 1 edge to [[_COMMUNITY_Community 60]]
 
 ## Top bridge nodes
-- [[GroupWorkspaceManager]] - degree 42, connects to 8 communities
-- [[test_group_workspace_manager.py]] - degree 22, connects to 4 communities
-- [[TestInboundChokepointWiring]] - degree 17, connects to 3 communities
-- [[TestNonMemberDenied]] - degree 14, connects to 3 communities
-- [[TestMembersShareGroupWorkspace]] - degree 13, connects to 3 communities
+- [[GroupWorkspaceManager]] - degree 42, connects to 7 communities
+- [[test_group_workspace_manager.py]] - degree 22, connects to 5 communities
+- [[TestInboundChokepointWiring]] - degree 17, connects to 5 communities
+- [[TestNonMemberDenied]] - degree 14, connects to 5 communities
+- [[TestMembersShareGroupWorkspace]] - degree 13, connects to 5 communities

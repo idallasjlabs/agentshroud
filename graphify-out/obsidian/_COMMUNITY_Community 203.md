@@ -1,50 +1,48 @@
 ---
 type: community
-members: 37
+members: 35
 ---
 
 # Community 203
 
-**Members:** 37 nodes
+**Members:** 35 nodes
 
 ## Members
-- [[._check_message_size()]] - code - gateway/security/a2a_governance.py
-- [[._check_peer()]] - code - gateway/security/a2a_governance.py
-- [[._check_rate_limit()]] - code - gateway/security/a2a_governance.py
-- [[._check_task_concurrency()]] - code - gateway/security/a2a_governance.py
-- [[._finalize()]] - code - gateway/security/a2a_governance.py
-- [[._process()]] - code - gateway/security/a2a_governance.py
-- [[._sanitize_message()]] - code - gateway/security/a2a_governance.py
-- [[.complete_task()]] - code - gateway/security/a2a_governance.py
-- [[.fingerprint()]] - code - gateway/security/a2a_governance.py
-- [[.get_events()_1]] - code - gateway/security/a2a_governance.py
-- [[.process_inbound()_1]] - code - gateway/security/a2a_governance.py
-- [[.process_outbound()_1]] - code - gateway/security/a2a_governance.py
-- [[.test_fingerprint_deterministic()]] - code - gateway/tests/test_a2a_governance.py
-- [[.test_fingerprint_differs_for_different_payloads()]] - code - gateway/tests/test_a2a_governance.py
-- [[.update_peer_trust()]] - code - gateway/security/a2a_governance.py
-- [[A2ADecision]] - code - gateway/security/a2a_governance.py
-- [[A2AGovernanceEvent]] - code - gateway/security/a2a_governance.py
-- [[A2AGovernanceProxy]] - code - gateway/security/a2a_governance.py
-- [[A2AMessage]] - code - gateway/security/a2a_governance.py
-- [[An A2A protocol message passing through the governance proxy.]] - rationale - gateway/security/a2a_governance.py
-- [[Apply final decision and log governance event.]] - rationale - gateway/security/a2a_governance.py
-- [[Audit event for A2A governance decisions.]] - rationale - gateway/security/a2a_governance.py
-- [[Check concurrent task limit for task_request messages.]] - rationale - gateway/security/a2a_governance.py
-- [[Check message payload size.]] - rationale - gateway/security/a2a_governance.py
-- [[Check per-peer rate limit.]] - rationale - gateway/security/a2a_governance.py
-- [[Content hash for deduplication and audit.]] - rationale - gateway/security/a2a_governance.py
-- [[Core message processing pipeline.]] - rationale - gateway/security/a2a_governance.py
-- [[Governance decision for an A2A message.]] - rationale - gateway/security/a2a_governance.py
-- [[Governance proxy for Agent-to-Agent communication.      Sits between local agent]] - rationale - gateway/security/a2a_governance.py
-- [[Mark a delegated task as complete (decrements active task counter).]] - rationale - gateway/security/a2a_governance.py
-- [[Sanitize PII from A2A message payload. Returns list of sanitizations applied.]] - rationale - gateway/security/a2a_governance.py
-- [[TestMessageFingerprint]] - code - gateway/tests/test_a2a_governance.py
-- [[Update a peer's trust score (called by TrustManager integration).]] - rationale - gateway/security/a2a_governance.py
-- [[Validate and govern an inbound A2A message from a remote peer.]] - rationale - gateway/security/a2a_governance.py
-- [[Validate and govern an outbound A2A message to a remote peer.]] - rationale - gateway/security/a2a_governance.py
-- [[Validate that the peer is registered and trusted.]] - rationale - gateway/security/a2a_governance.py
-- [[a2a_governance.py]] - code - gateway/security/a2a_governance.py
+- [[.__init__()_60]] - code - gateway/runtime/apple_engine.py
+- [[._cmd()]] - code - gateway/runtime/apple_engine.py
+- [[.build()]] - code - gateway/runtime/apple_engine.py
+- [[.compose_down()]] - code - gateway/runtime/apple_engine.py
+- [[.compose_up()]] - code - gateway/runtime/apple_engine.py
+- [[.exec()]] - code - gateway/runtime/apple_engine.py
+- [[.health_check()_2]] - code - gateway/runtime/apple_engine.py
+- [[.inspect()]] - code - gateway/runtime/apple_engine.py
+- [[.logs()]] - code - gateway/runtime/apple_engine.py
+- [[.network_create()]] - code - gateway/runtime/apple_engine.py
+- [[.network_rm()]] - code - gateway/runtime/apple_engine.py
+- [[.pause()]] - code - gateway/runtime/apple_engine.py
+- [[.ps()]] - code - gateway/runtime/apple_engine.py
+- [[.pull()]] - code - gateway/runtime/apple_engine.py
+- [[.push()]] - code - gateway/runtime/apple_engine.py
+- [[.rm()]] - code - gateway/runtime/apple_engine.py
+- [[.run()_5]] - code - gateway/runtime/apple_engine.py
+- [[.setup_method()_25]] - code - gateway/tests/test_runtime_engines.py
+- [[.stop()_5]] - code - gateway/runtime/apple_engine.py
+- [[.test_compose_not_supported()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_health_check()_1]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_inspect_non_json()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_network_graceful_fail()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_pause_fallback()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_ps_text_parse()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_run_ignores_seccomp()]] - code - gateway/tests/test_runtime_engines.py
+- [[.unpause()]] - code - gateway/runtime/apple_engine.py
+- [[.volume_create()]] - code - gateway/runtime/apple_engine.py
+- [[.volume_rm()]] - code - gateway/runtime/apple_engine.py
+- [[Any_35]] - code - gateway/runtime/apple_engine.py
+- [[AppleContainerEngine]] - code - gateway/runtime/apple_engine.py
+- [[Container engine backed by Apple's `container` CLI.]] - rationale - gateway/runtime/apple_engine.py
+- [[ContainerInfo]] - code - gateway/runtime/apple_engine.py
+- [[TestAppleContainerEngine]] - code - gateway/tests/test_runtime_engines.py
+- [[get_engine]] - code - gateway/runtime/__init__.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -54,16 +52,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 51 edges to [[_COMMUNITY_Community 44]]
-- 3 edges to [[_COMMUNITY_Community 8]]
-- 1 edge to [[_COMMUNITY_Community 261]]
-- 1 edge to [[_COMMUNITY_Community 2341]]
-- 1 edge to [[_COMMUNITY_Community 194]]
-- 1 edge to [[_COMMUNITY_Community 1360]]
+- 15 edges to [[_COMMUNITY_Community 240]]
+- 6 edges to [[_COMMUNITY_Community 225]]
+- 3 edges to [[_COMMUNITY_Community 918]]
+- 2 edges to [[_COMMUNITY_Community 372]]
+- 1 edge to [[_COMMUNITY_Community 385]]
+- 1 edge to [[_COMMUNITY_Community 743]]
+- 1 edge to [[_COMMUNITY_Community 250]]
 
 ## Top bridge nodes
-- [[A2AGovernanceProxy]] - degree 43, connects to 3 communities
-- [[A2ADecision]] - degree 26, connects to 3 communities
-- [[a2a_governance.py]] - degree 8, connects to 2 communities
-- [[A2AMessage]] - degree 27, connects to 1 community
-- [[TestMessageFingerprint]] - degree 9, connects to 1 community
+- [[AppleContainerEngine]] - degree 45, connects to 6 communities
+- [[TestAppleContainerEngine]] - degree 14, connects to 3 communities
+- [[ContainerInfo]] - degree 3, connects to 2 communities
+- [[Any_35]] - degree 3, connects to 2 communities

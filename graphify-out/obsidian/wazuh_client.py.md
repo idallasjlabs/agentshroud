@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "Community 943"
+community: "Community 102"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_943
+  - community/Community_102
 ---
 
 # wazuh_client.py
@@ -28,4 +28,4 @@ tags:
 - [[test_security_audit.py]] - `imports_from` [EXTRACTED]
 - [[wazuh-ossec]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_943
+#graphify/code #graphify/EXTRACTED #community/Community_102

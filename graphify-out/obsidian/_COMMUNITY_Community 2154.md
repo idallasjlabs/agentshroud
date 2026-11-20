@@ -1,17 +1,18 @@
 ---
 type: community
-members: 40
+members: 43
 ---
 
 # Community 2154
 
-**Members:** 40 nodes
+**Members:** 43 nodes
 
 ## Members
 - [[.body_not_empty()]] - code - gateway/ingest_api/models.py
 - [[.subject_not_empty()]] - code - gateway/ingest_api/models.py
 - [[Auth dependency that uses the app state config._2]] - rationale - gateway/ingest_api/routes/forward.py
 - [[AuthRequired_3]] - code - gateway/ingest_api/routes/forward.py
+- [[Authentication dependency for protected endpoints]] - rationale - gateway/ingest_api/main.py
 - [[Email send gateway (P3 channel ownership).      The bot submits email send requ]] - rationale - gateway/ingest_api/routes/forward.py
 - [[EmailSendRequest]] - code - gateway/ingest_api/models.py
 - [[EmailSendRequest_1]] - code - gateway/ingest_api/routes/forward.py
@@ -35,6 +36,7 @@ members: 40
 - [[_InboundResult]] - code - gateway/ingest_api/routes/forward.py
 - [[_is_email_recipient_allowed()]] - code - gateway/ingest_api/routes/forward.py
 - [[_process_inbound()]] - code - gateway/ingest_api/routes/forward.py
+- [[auth_dep()]] - code - gateway/ingest_api/main.py
 - [[auth_dep()_3]] - code - gateway/ingest_api/routes/forward.py
 - [[bypass_auth()]] - code - gateway/tests/test_channel_ownership.py
 - [[bypass_auth()_1]] - code - gateway/tests/test_email_owner_bypasses_pii.py
@@ -48,6 +50,7 @@ members: 40
 - [[telegram_webhook()]] - code - gateway/ingest_api/routes/forward.py
 - [[test_channel_ownership.py]] - code - gateway/tests/test_channel_ownership.py
 - [[test_email_owner_bypasses_pii.py]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[webhook_receiver.py]] - code - gateway/proxy/webhook_receiver.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,28 +60,32 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 707]]
-- 8 edges to [[_COMMUNITY_Community 10]]
+- 9 edges to [[_COMMUNITY_Community 6]]
 - 8 edges to [[_COMMUNITY_Community 47]]
-- 8 edges to [[_COMMUNITY_Community 194]]
+- 5 edges to [[_COMMUNITY_Community 254]]
+- 5 edges to [[_COMMUNITY_Community 10]]
+- 4 edges to [[_COMMUNITY_Community 890]]
+- 4 edges to [[_COMMUNITY_Community 707]]
+- 4 edges to [[_COMMUNITY_Community 201]]
+- 4 edges to [[_COMMUNITY_Community 78]]
 - 4 edges to [[_COMMUNITY_Community 84]]
-- 3 edges to [[_COMMUNITY_Community 201]]
-- 3 edges to [[_COMMUNITY_Community 85]]
-- 3 edges to [[_COMMUNITY_Community 114]]
-- 2 edges to [[_COMMUNITY_Community 92]]
+- 3 edges to [[_COMMUNITY_Community 62]]
+- 3 edges to [[_COMMUNITY_Community 43]]
+- 2 edges to [[_COMMUNITY_Community 978]]
 - 2 edges to [[_COMMUNITY_Community 30]]
-- 2 edges to [[_COMMUNITY_Community 7]]
+- 2 edges to [[_COMMUNITY_Community 325]]
 - 2 edges to [[_COMMUNITY_Community 734]]
 - 2 edges to [[_COMMUNITY_Community 512]]
-- 1 edge to [[_COMMUNITY_Community 978]]
-- 1 edge to [[_COMMUNITY_Community 34]]
+- 1 edge to [[_COMMUNITY_Community 1658]]
+- 1 edge to [[_COMMUNITY_Community 260]]
+- 1 edge to [[_COMMUNITY_Community 151]]
 - 1 edge to [[_COMMUNITY_Community 598]]
-- 1 edge to [[_COMMUNITY_Community 325]]
+- 1 edge to [[_COMMUNITY_Community 60]]
 - 1 edge to [[_COMMUNITY_Community 2050]]
 
 ## Top bridge nodes
 - [[forward.py]] - degree 38, connects to 14 communities
+- [[auth_dep()]] - degree 11, connects to 8 communities
 - [[_process_inbound()]] - degree 12, connects to 4 communities
 - [[email_send()]] - degree 13, connects to 3 communities
 - [[forward_content()]] - degree 9, connects to 3 communities
-- [[forward_content_stream()]] - degree 9, connects to 3 communities

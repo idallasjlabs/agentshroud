@@ -1,23 +1,19 @@
 ---
 type: community
-members: 10
+members: 6
 ---
 
 # Community 1926
 
-**Members:** 10 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[._build_bridge()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_bridge_registered_via_add_alert_callback_fires_through()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_missing_timestamp_falls_back_to_zero()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_non_spike_alert_dispatched_with_medium_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_spike_alert_dispatched_with_high_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[Any_80]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[End-to-end register the bridge on a real ResourceGuard, trigger         its ale]] - rationale - gateway/tests/test_resource_guard_wiring.py
-- [[Recreate the lifespan bridge closure verbatim from gatewayingest_apilifespan.p]] - rationale - gateway/tests/test_resource_guard_wiring.py
-- [[TestResourceGuardAlertBridge]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[The lifespan bridges ResourceGuard's native callback payload to AlertDispatcher.]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[M4 Pi-hole Auth Token Passed in URL Query String]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[M5 LLM Proxy Endpoint `v1{path}` Has No Authentication]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[M6 Telegram API Proxy Passes Raw Bot Token Without Validation]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[M7 Dockerfile Uses `curl  sh` for Trivy Installation]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[M8 Unpinned Base Images and `@latest` Tags]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[MEDIUM — Fix Soon]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,10 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 532]]
-- 3 edges to [[_COMMUNITY_Community 5]]
+- 1 edge to [[_COMMUNITY_Community 354]]
 
 ## Top bridge nodes
-- [[TestResourceGuardAlertBridge]] - degree 9, connects to 2 communities
-- [[Any_80]] - degree 3, connects to 2 communities
-- [[.test_bridge_registered_via_add_alert_callback_fires_through()]] - degree 4, connects to 1 community
+- [[MEDIUM — Fix Soon]] - degree 6, connects to 1 community

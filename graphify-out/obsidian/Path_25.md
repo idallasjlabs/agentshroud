@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_alert_dispatcher_retry.py"
 type: "code"
-community: "Community 557"
+community: "Community 944"
 location: "L27"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_557
+  - community/Community_944
 ---
 
 # Path
@@ -15,4 +15,4 @@ tags:
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[dispatcher()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_557
+#graphify/code #graphify/INFERRED #community/Community_944

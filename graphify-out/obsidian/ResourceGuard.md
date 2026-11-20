@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.__del__()]] - `method` [EXTRACTED]
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_129]] - `method` [EXTRACTED]
+- [[.__init__()_127]] - `method` [EXTRACTED]
 - [[._alert_high_usage()]] - `method` [EXTRACTED]
 - [[._check_system_resources()_1]] - `method` [EXTRACTED]
 - [[._cleanup_expired_usage()]] - `method` [EXTRACTED]
@@ -47,7 +47,7 @@ tags:
 - [[.test_usage_stats()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[Any_18]] - `uses` [INFERRED]
-- [[Any_80]] - `uses` [INFERRED]
+- [[Any_76]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LLMProxy_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]

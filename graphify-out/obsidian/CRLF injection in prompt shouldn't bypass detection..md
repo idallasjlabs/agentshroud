@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Community 809"
+community: "Community 0"
 location: "L111"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_809
+  - community/Community_0
 ---
 
 # CRLF injection in prompt shouldn't bypass detection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_crlf_in_prompt_guard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_809
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

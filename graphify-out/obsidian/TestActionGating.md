@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "Community 1291"
+community: "Community 11"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1291
+  - community/Community_11
 ---
 
 # TestActionGating
@@ -21,4 +21,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1291
+#graphify/code #graphify/EXTRACTED #community/Community_11

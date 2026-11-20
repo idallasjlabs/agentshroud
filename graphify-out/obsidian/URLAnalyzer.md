@@ -1,24 +1,23 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "Community 93"
+community: "Community 1000"
 location: "L99"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_93
+  - community/Community_1000
 ---
 
 # URLAnalyzer
 
 ## Connections
-- [[.__init__()_56]] - `method` [EXTRACTED]
+- [[.__init__()_55]] - `method` [EXTRACTED]
 - [[._check_base64()]] - `method` [EXTRACTED]
 - [[._is_private_ip()]] - `method` [EXTRACTED]
 - [[._is_ssrf()]] - `method` [EXTRACTED]
 - [[._resolve_host()]] - `method` [EXTRACTED]
 - [[.analyze()]] - `method` [EXTRACTED]
-- [[.analyze_and_pin()]] - `method` [EXTRACTED]
 - [[Analyze URLs for SSRF, data exfiltration, and suspicious patterns.]] - `rationale_for` [EXTRACTED]
 - [[Any_33]] - `uses` [INFERRED]
 - [[EgressFilter_1]] - `semantically_similar_to` [INFERRED]
@@ -40,4 +39,4 @@ tags:
 - [[url_analyzer.py]] - `contains` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_93
+#graphify/code #graphify/INFERRED #community/Community_1000

@@ -1,18 +1,20 @@
 ---
 type: community
-members: 52
+members: 55
 ---
 
 # Community 116
 
-**Members:** 52 nodes
+**Members:** 55 nodes
 
 ## Members
-- [[.__init__()_152]] - code - gateway/tests/test_a2a_proxy.py
-- [[.__init__()_154]] - code - gateway/tests/test_a2a_proxy.py
+- [[.__init__()_149]] - code - gateway/tests/test_a2a_proxy.py
+- [[.__init__()_151]] - code - gateway/tests/test_a2a_proxy.py
 - [[.forward()_2]] - code - gateway/tests/test_a2a_proxy.py
 - [[A SendMessage containing PII must have it redacted in what's forwarded     to He]] - rationale - gateway/tests/test_a2a_proxy.py
 - [[A filedata Part must not be silently dropped or mis-scanned as text —     it's]] - rationale - gateway/tests/test_a2a_proxy.py
+- [[A freshly-constructed, un-set result must default to blocked, not     allowed —]] - rationale - gateway/tests/test_a2a_proxy.py
+- [[A message with MULTIPLE text parts must not leave a second, unredacted     text]] - rationale - gateway/tests/test_a2a_proxy.py
 - [[A2APolicyEngine_3]] - code - gateway/tests/test_a2a_proxy.py
 - [[A2AProxy_1]] - code - gateway/tests/test_a2a_proxy.py
 - [[An unparseable request must be rejected through the same     process_inbound_req]] - rationale - gateway/tests/test_a2a_proxy.py
@@ -20,13 +22,12 @@ members: 52
 - [[Pre-1.0 peers send lowercasepath-style method names — Hermes accepts     both f]] - rationale - gateway/tests/test_a2a_proxy.py
 - [[Records what it was asked to forward; returns a canned response.]] - rationale - gateway/tests/test_a2a_proxy.py
 - [[Token comparison must not leak timing information — same guarantee as     Hermes]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[Upstream Hermes Gap 80534 — Peer Identity Resolved From SocketX-Forwarded-For Instead Of Bearer Token]] - concept - gateway/tests/test_a2a_proxy.py
 - [[_StubAuditStore]] - code - gateway/tests/test_a2a_proxy.py
 - [[_StubForwarder]] - code - gateway/tests/test_a2a_proxy.py
 - [[_base_policy_engine()]] - code - gateway/tests/test_a2a_proxy.py
 - [[_jsonrpc()_1]] - code - gateway/tests/test_a2a_proxy.py
 - [[forwarder()]] - code - gateway/tests/test_a2a_proxy.py
-- [[proxy()_1]] - code - gateway/tests/test_a2a_proxy.py
+- [[proxy()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_a2a_proxy.py]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_agent_card_discovery_is_never_policy_gated()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_agent_card_discovery_is_still_audited()]] - code - gateway/tests/test_a2a_proxy.py
@@ -54,6 +55,8 @@ members: 52
 - [[test_process_inbound_request_pii_in_message_is_redacted_before_forwarding()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_process_inbound_request_task_ownership_violation_blocked()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_process_inbound_request_unknown_token_is_blocked()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_proxy_result_defaults_are_safe()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_redact_message_text_clears_all_text_parts_not_just_the_first()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_resolve_peer_id_from_known_bearer_token()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_resolve_peer_id_malformed_header_returns_none()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_resolve_peer_id_missing_header_returns_none()]] - code - gateway/tests/test_a2a_proxy.py
@@ -69,14 +72,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 17 edges to [[_COMMUNITY_Community 307]]
+- 27 edges to [[_COMMUNITY_Community 307]]
 - 14 edges to [[_COMMUNITY_Community 56]]
-- 10 edges to [[_COMMUNITY_Community 271]]
-- 5 edges to [[_COMMUNITY_Community 221]]
+- 5 edges to [[_COMMUNITY_Community 947]]
 
 ## Top bridge nodes
-- [[test_a2a_proxy.py]] - degree 50, connects to 4 communities
-- [[A2AProxy_1]] - degree 27, connects to 4 communities
-- [[_StubForwarder]] - degree 26, connects to 4 communities
-- [[_StubAuditStore]] - degree 12, connects to 4 communities
-- [[A2APolicyEngine_3]] - degree 10, connects to 4 communities
+- [[test_a2a_proxy.py]] - degree 50, connects to 3 communities
+- [[A2AProxy_1]] - degree 27, connects to 3 communities
+- [[_StubForwarder]] - degree 26, connects to 3 communities
+- [[_StubAuditStore]] - degree 12, connects to 3 communities
+- [[A2APolicyEngine_3]] - degree 10, connects to 3 communities

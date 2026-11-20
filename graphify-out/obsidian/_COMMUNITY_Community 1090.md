@@ -1,27 +1,22 @@
 ---
 type: community
-members: 14
+members: 9
 ---
 
 # Community 1090
 
-**Members:** 14 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[1. Dependency Updates]] - document - docs/runbooks/daily-operations.md
-- [[1. Service Health]] - document - docs/runbooks/daily-operations.md
-- [[2. Backup Verification]] - document - docs/runbooks/daily-operations.md
-- [[2. Tailscale Connectivity]] - document - docs/runbooks/daily-operations.md
-- [[3. Audit Ledger Review]] - document - docs/runbooks/daily-operations.md
-- [[3. Tailscale ACL Review]] - document - docs/runbooks/daily-operations.md
-- [[4. Log Review]] - document - docs/runbooks/daily-operations.md
-- [[4. Test Suite]] - document - docs/runbooks/daily-operations.md
-- [[5. Resource Usage]] - document - docs/runbooks/daily-operations.md
-- [[Daily Operations Runbook — AgentShroud]] - document - docs/runbooks/daily-operations.md
-- [[Dashboard Monitoring]] - document - docs/runbooks/daily-operations.md
-- [[Monthly Checklist (30 minutes)]] - document - docs/runbooks/daily-operations.md
-- [[Morning Checklist (5 minutes)]] - document - docs/runbooks/daily-operations.md
-- [[Weekly Checklist (15 minutes)]] - document - docs/runbooks/daily-operations.md
+- [[4. Risks & Gaps]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[5. Risks & Gaps]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Critical]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[Critical Risks]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Deferred Items That Matter]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Design Decisions That Could Backfire]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Design Decisions to Reconsider]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[High]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[Medium]] - document - docs/planning/reviews/phase-review-2026-02-23.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,7 +26,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 654]]
+- 1 edge to [[_COMMUNITY_Community 153]]
+- 1 edge to [[_COMMUNITY_Community 1115]]
 
 ## Top bridge nodes
-- [[Daily Operations Runbook — AgentShroud]] - degree 5, connects to 1 community
+- [[4. Risks & Gaps]] - degree 8, connects to 1 community
+- [[5. Risks & Gaps]] - degree 4, connects to 1 community

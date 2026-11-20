@@ -1,19 +1,22 @@
 ---
-source_file: "gateway/tests/test_resource_guard_wiring.py"
+source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "Community 1926"
-location: "L62"
+community: "Community 66"
+location: "L68"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_1926
+  - graphify/EXTRACTED
+  - community/Community_66
 ---
 
 # Any
 
 ## Connections
-- [[._build_bridge()]] - `references` [EXTRACTED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[ResourceLimits]] - `uses` [INFERRED]
+- [[check_current_version()]] - `references` [EXTRACTED]
+- [[downgrade()]] - `references` [EXTRACTED]
+- [[list_versions()]] - `references` [EXTRACTED]
+- [[rollback()]] - `references` [EXTRACTED]
+- [[security_review()]] - `references` [EXTRACTED]
+- [[upgrade()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1926
+#graphify/code #graphify/EXTRACTED #community/Community_66

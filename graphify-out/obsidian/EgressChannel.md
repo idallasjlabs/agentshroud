@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "Community 72"
+community: "Community 140"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_72
+  - community/Community_140
 ---
 
 # EgressChannel
 
 ## Connections
-- [[.get_events()_2]] - `references` [EXTRACTED]
+- [[.get_events()_1]] - `references` [EXTRACTED]
 - [[Enum]] - `inherits` [EXTRACTED]
 - [[MockEgressChannel]] - `shares_data_with` [AMBIGUOUS]
 - [[TestAlertGeneration]] - `uses` [INFERRED]
@@ -36,4 +36,4 @@ tags:
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_72
+#graphify/code #graphify/INFERRED #community/Community_140

@@ -1,17 +1,21 @@
 ---
 type: community
-members: 4
+members: 8
 ---
 
 # Community 1991
 
-**Members:** 4 nodes
+**Members:** 8 nodes
 
 ## Members
+- [[Test Gmail Credential Retrieval]] - code - gateway/tests/test_gmail_credential_retrieval.py
 - [[Test the managecredentialshealth endpoint.]] - rationale - gateway/tests/test_key_rotation.py
 - [[Test the managecredentialsstatus endpoint.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test the POST managecredentialsrotate{credential_id} endpoint.]] - rationale - gateway/tests/test_key_rotation.py
 - [[test_credentials_health_endpoint()]] - code - gateway/tests/test_key_rotation.py
 - [[test_credentials_status_endpoint()]] - code - gateway/tests/test_key_rotation.py
+- [[test_key_rotation.py]] - code - gateway/tests/test_key_rotation.py
+- [[test_rotate_credential_endpoint()]] - code - gateway/tests/test_key_rotation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,8 +25,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 122]]
+- 5 edges to [[_COMMUNITY_Community 122]]
+- 3 edges to [[_COMMUNITY_Community 271]]
+- 2 edges to [[_COMMUNITY_Community 261]]
+- 2 edges to [[_COMMUNITY_Community 479]]
+- 1 edge to [[_COMMUNITY_Community 198]]
+- 1 edge to [[_COMMUNITY_Community 40]]
 
 ## Top bridge nodes
-- [[test_credentials_health_endpoint()]] - degree 3, connects to 1 community
-- [[test_credentials_status_endpoint()]] - degree 2, connects to 1 community
+- [[test_key_rotation.py]] - degree 18, connects to 6 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "Community 121"
-location: "L385"
+community: "Community 312"
+location: "L384"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_121
+  - community/Community_312
 ---
 
 # Analyze script content string for malicious patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._analyze_script_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_121
+#graphify/rationale #graphify/EXTRACTED #community/Community_312

@@ -1,43 +1,34 @@
 ---
 type: community
-members: 30
+members: 21
 ---
 
 # Community 479
 
-**Members:** 30 nodes
+**Members:** 21 nodes
 
 ## Members
-- [[.audit_store()]] - code - gateway/tests/test_audit_export.py
-- [[.audit_store()_1]] - code - gateway/tests/test_audit_export.py
-- [[.export_config()]] - code - gateway/tests/test_audit_export.py
-- [[.test_export_cef()]] - code - gateway/tests/test_audit_export.py
-- [[.test_export_filtering()]] - code - gateway/tests/test_audit_export.py
-- [[.test_export_json()]] - code - gateway/tests/test_audit_export.py
-- [[.test_export_json_ld()]] - code - gateway/tests/test_audit_export.py
-- [[.test_hash_chain_integrity()]] - code - gateway/tests/test_audit_export.py
-- [[.test_log_event()]] - code - gateway/tests/test_audit_export.py
-- [[.test_query_events()]] - code - gateway/tests/test_audit_export.py
-- [[.test_stats()]] - code - gateway/tests/test_audit_export.py
-- [[.test_tamper_detection()]] - code - gateway/tests/test_audit_export.py
-- [[.test_verify_export_integrity()]] - code - gateway/tests/test_audit_export.py
-- [[Create audit store with test data.]] - rationale - gateway/tests/test_audit_export.py
-- [[Create in-memory audit store for testing.]] - rationale - gateway/tests/test_audit_export.py
-- [[Create test export configuration.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test AuditExporter functionality.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test AuditStore functionality.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test CEF export format.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test JSON export format.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test JSON-LD export format.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test audit store statistics.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test export integrity verification.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test export with filters.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test hash chain maintains integrity.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test logging audit events.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test querying events with filters.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test tamper detection in exports.]] - rationale - gateway/tests/test_audit_export.py
-- [[TestAuditExporter]] - code - gateway/tests/test_audit_export.py
-- [[TestAuditStore]] - code - gateway/tests/test_audit_export.py
+- [[.__init__()_187]] - code - gateway/tests/test_key_rotation.py
+- [[.setup_manager_with_credential()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_check_and_rotate_due_credentials()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_emergency_rotation()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_grace_period_cleanup()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_register_validator()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_rotation_with_validation_failure()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_successful_rotation_workflow()]] - code - gateway/tests/test_key_rotation.py
+- [[.validate()_2]] - code - gateway/tests/test_key_rotation.py
+- [[Mock validation that can be controlled.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Mock validator for testing.]] - rationale - gateway/tests/test_key_rotation.py
+- [[MockValidator]] - code - gateway/tests/test_key_rotation.py
+- [[Set up manager with a credential that needs rotation.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test bulk rotation check and execution.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test complete successful rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test emergency rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test grace period and old credential cleanup.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test rotation workflow with validation failure and rollback.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test the complete rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test validator registration.]] - rationale - gateway/tests/test_key_rotation.py
+- [[TestKeyRotationWorkflow]] - code - gateway/tests/test_key_rotation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,13 +38,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_Community 978]]
-- 4 edges to [[_COMMUNITY_Community 254]]
-- 4 edges to [[_COMMUNITY_Community 32]]
+- 8 edges to [[_COMMUNITY_Community 122]]
+- 5 edges to [[_COMMUNITY_Community 271]]
+- 4 edges to [[_COMMUNITY_Community 198]]
+- 2 edges to [[_COMMUNITY_Community 261]]
+- 2 edges to [[_COMMUNITY_Community 1991]]
 
 ## Top bridge nodes
-- [[TestAuditExporter]] - degree 15, connects to 3 communities
-- [[TestAuditStore]] - degree 12, connects to 3 communities
-- [[.audit_store()]] - degree 3, connects to 1 community
-- [[.audit_store()_1]] - degree 3, connects to 1 community
-- [[.export_config()]] - degree 3, connects to 1 community
+- [[MockValidator]] - degree 14, connects to 5 communities
+- [[TestKeyRotationWorkflow]] - degree 14, connects to 5 communities
+- [[.setup_manager_with_credential()]] - degree 6, connects to 3 communities
+- [[.test_check_and_rotate_due_credentials()]] - degree 6, connects to 3 communities
+- [[.test_register_validator()]] - degree 3, connects to 1 community

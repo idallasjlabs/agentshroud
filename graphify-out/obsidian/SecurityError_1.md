@@ -2,7 +2,7 @@
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
 community: "Community 155"
-location: "L426"
+location: "L404"
 tags:
   - graphify/code
   - graphify/EXTRACTED

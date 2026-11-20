@@ -1,26 +1,23 @@
 ---
 type: community
-members: 14
+members: 11
 ---
 
 # Community 1342
 
-**Members:** 14 nodes
+**Members:** 11 nodes
 
 ## Members
 - [[additionalProperties_1]] - code - config/inbound-edge/schema.json
 - [[auth]] - code - config/inbound-edge/schema.json
 - [[dynamic_registration]] - code - config/inbound-edge/schema.json
-- [[maxItems_1]] - code - config/inbound-edge/schema.json
 - [[oauth]] - code - config/inbound-edge/schema.json
 - [[properties_1]] - code - config/inbound-edge/schema.json
-- [[redirect_uris]] - code - config/inbound-edge/schema.json
 - [[required_1]] - code - config/inbound-edge/schema.json
 - [[static_bearer]] - code - config/inbound-edge/schema.json
 - [[type_7]] - code - config/inbound-edge/schema.json
 - [[type_8]] - code - config/inbound-edge/schema.json
 - [[type_9]] - code - config/inbound-edge/schema.json
-- [[type_10]] - code - config/inbound-edge/schema.json
 - [[type_11]] - code - config/inbound-edge/schema.json
 
 ## Live Query (requires Dataview plugin)
@@ -36,4 +33,4 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[auth]] - degree 5, connects to 1 community
-- [[redirect_uris]] - degree 4, connects to 1 community
+- [[properties_1]] - degree 5, connects to 1 community

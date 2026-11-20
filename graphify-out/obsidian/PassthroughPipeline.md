@@ -12,7 +12,7 @@ tags:
 # PassthroughPipeline
 
 ## Connections
-- [[.process_inbound()_7]] - `method` [EXTRACTED]
+- [[.process_inbound()_6]] - `method` [EXTRACTED]
 - [[.test_attach_lockdown_replaces_instance()]] - `calls` [EXTRACTED]
 - [[.test_falco_critical_escalates_instance_shared_with_telegram()]] - `calls` [EXTRACTED]
 - [[.test_proxy_falls_back_to_private_instance_when_standalone()]] - `calls` [EXTRACTED]

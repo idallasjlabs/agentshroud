@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "Community 809"
+community: "Community 0"
 location: "L17"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_809
+  - community/Community_0
 ---
 
 # LogSanitizer
 
 ## Connections
-- [[.__init__()_108]] - `method` [EXTRACTED]
+- [[.__init__()_106]] - `method` [EXTRACTED]
 - [[._compile_patterns()]] - `method` [EXTRACTED]
 - [[._sanitize_text()]] - `method` [EXTRACTED]
 - [[.filter()_1]] - `method` [EXTRACTED]
@@ -51,7 +51,6 @@ tags:
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
-- [[get_sanitizer_stats()]] - `calls` [EXTRACTED]
 - [[install_log_sanitizer()]] - `calls` [EXTRACTED]
 - [[log_sanitizer.py]] - `contains` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
@@ -59,4 +58,4 @@ tags:
 - [[test_log_sanitizer.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_809
+#graphify/code #graphify/INFERRED #community/Community_0

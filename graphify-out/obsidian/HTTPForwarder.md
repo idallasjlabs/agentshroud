@@ -16,8 +16,6 @@ tags:
 - [[.forward()_1]] - `method` [EXTRACTED]
 - [[.get_stats()_2]] - `method` [EXTRACTED]
 - [[.health_check()_1]] - `method` [EXTRACTED]
-- [[.is_healthy()]] - `method` [EXTRACTED]
-- [[.last_forward_time()]] - `method` [EXTRACTED]
 - [[.set_response_handler()]] - `method` [EXTRACTED]
 - [[Forwards sanitized requests to the OpenClaw backend.      In production, uses ai]] - `rationale_for` [EXTRACTED]
 - [[HTTPConnectProxy]] - `conceptually_related_to` [INFERRED]

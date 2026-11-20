@@ -1,39 +1,36 @@
 ---
 type: community
-members: 26
+members: 23
 ---
 
 # Community 379
 
-**Members:** 26 nodes
+**Members:** 23 nodes
 
 ## Members
-- [[.__init__()_61]] - code - gateway/runtime/apple_engine.py
-- [[._cmd()]] - code - gateway/runtime/apple_engine.py
-- [[.build()]] - code - gateway/runtime/apple_engine.py
-- [[.compose_down()]] - code - gateway/runtime/apple_engine.py
-- [[.compose_up()]] - code - gateway/runtime/apple_engine.py
-- [[.exec()]] - code - gateway/runtime/apple_engine.py
-- [[.health_check()_2]] - code - gateway/runtime/apple_engine.py
-- [[.inspect()]] - code - gateway/runtime/apple_engine.py
-- [[.logs()]] - code - gateway/runtime/apple_engine.py
-- [[.network_create()]] - code - gateway/runtime/apple_engine.py
-- [[.network_rm()]] - code - gateway/runtime/apple_engine.py
-- [[.pause()]] - code - gateway/runtime/apple_engine.py
-- [[.ps()]] - code - gateway/runtime/apple_engine.py
-- [[.pull()]] - code - gateway/runtime/apple_engine.py
-- [[.push()]] - code - gateway/runtime/apple_engine.py
-- [[.rm()]] - code - gateway/runtime/apple_engine.py
-- [[.run()_5]] - code - gateway/runtime/apple_engine.py
-- [[.stop()_5]] - code - gateway/runtime/apple_engine.py
-- [[.unpause()]] - code - gateway/runtime/apple_engine.py
-- [[.volume_create()]] - code - gateway/runtime/apple_engine.py
-- [[.volume_rm()]] - code - gateway/runtime/apple_engine.py
-- [[Any_35]] - code - gateway/runtime/apple_engine.py
-- [[AppleContainerEngine]] - code - gateway/runtime/apple_engine.py
-- [[Container engine backed by Apple's `container` CLI.]] - rationale - gateway/runtime/apple_engine.py
-- [[ContainerInfo]] - code - gateway/runtime/apple_engine.py
-- [[get_engine]] - code - gateway/runtime/__init__.py
+- [[.__init__()_98]] - code - gateway/security/heuristic_classifier.py
+- [[._classify_heuristic()]] - code - gateway/security/heuristic_classifier.py
+- [[._classify_ml()]] - code - gateway/security/heuristic_classifier.py
+- [[._compute_unicode_anomaly()]] - code - gateway/security/heuristic_classifier.py
+- [[._score_signal()]] - code - gateway/security/heuristic_classifier.py
+- [[._try_load_model()]] - code - gateway/security/heuristic_classifier.py
+- [[.classify()]] - code - gateway/security/heuristic_classifier.py
+- [[.setup_method()_6]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_classifier_flags_payloads()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_high_confidence_payloads()]] - code - gateway/tests/test_adversarial_injection.py
+- [[Classify text for injection probability.          Args             text Input]] - rationale - gateway/security/heuristic_classifier.py
+- [[Detect unusual Unicode patterns that suggest evasion.]] - rationale - gateway/security/heuristic_classifier.py
+- [[Heuristic injection classifier using multi-signal analysis.      Scoring approac]] - rationale - gateway/security/heuristic_classifier.py
+- [[Heuristic-based classification using multi-signal analysis.]] - rationale - gateway/security/heuristic_classifier.py
+- [[HeuristicClassifier]] - code - gateway/security/heuristic_classifier.py
+- [[HeuristicClassifier returns injection or uncertain on known bad payloads.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Pattern]] - code - gateway/security/heuristic_classifier.py
+- [[PromptGuard scans high-confidence classic payloads with non-zero score.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Score a single signal pattern. Returns 0.0–1.0.]] - rationale - gateway/security/heuristic_classifier.py
+- [[TestHeuristicClassifierDirectly]] - code - gateway/tests/test_adversarial_injection.py
+- [[TestPromptGuardDirectly]] - code - gateway/tests/test_adversarial_injection.py
+- [[EXPERIMENTAL Attempt to load a fine-tuned ML model. Returns True on success.]] - rationale - gateway/security/heuristic_classifier.py
+- [[EXPERIMENTAL ML model classification placeholder.]] - rationale - gateway/security/heuristic_classifier.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,20 +40,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 738]]
-- 5 edges to [[_COMMUNITY_Community 240]]
-- 3 edges to [[_COMMUNITY_Community 225]]
-- 2 edges to [[_COMMUNITY_Community 1808]]
-- 2 edges to [[_COMMUNITY_Community 2010]]
-- 1 edge to [[_COMMUNITY_Community 372]]
-- 1 edge to [[_COMMUNITY_Community 918]]
-- 1 edge to [[_COMMUNITY_Community 385]]
-- 1 edge to [[_COMMUNITY_Community 2072]]
-- 1 edge to [[_COMMUNITY_Community 250]]
-- 1 edge to [[_COMMUNITY_Community 743]]
-- 1 edge to [[_COMMUNITY_Community 1052]]
+- 13 edges to [[_COMMUNITY_Community 187]]
+- 6 edges to [[_COMMUNITY_Community 434]]
+- 4 edges to [[_COMMUNITY_Community 80]]
+- 2 edges to [[_COMMUNITY_Community 2048]]
+- 2 edges to [[_COMMUNITY_Community 151]]
+- 2 edges to [[_COMMUNITY_Community 84]]
+- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 2051]]
 
 ## Top bridge nodes
-- [[AppleContainerEngine]] - degree 45, connects to 12 communities
-- [[ContainerInfo]] - degree 3, connects to 2 communities
-- [[Any_35]] - degree 3, connects to 2 communities
+- [[HeuristicClassifier]] - degree 32, connects to 7 communities
+- [[TestPromptGuardDirectly]] - degree 5, connects to 2 communities
+- [[TestHeuristicClassifierDirectly]] - degree 5, connects to 2 communities
+- [[._classify_heuristic()]] - degree 7, connects to 1 community
+- [[.classify()]] - degree 5, connects to 1 community

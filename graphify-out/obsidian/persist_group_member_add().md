@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Community 1288"
-location: "L264"
+community: "Community 18"
+location: "L255"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1288
+  - community/Community_18
 ---
 
 # persist_group_member_add()
@@ -21,4 +21,4 @@ tags:
 - [[router.py_1]] - `imports` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1288
+#graphify/code #graphify/EXTRACTED #community/Community_18

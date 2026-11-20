@@ -1,20 +1,17 @@
 ---
 type: community
-members: 7
+members: 4
 ---
 
 # Community 2055
 
-**Members:** 7 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_allowed_tool()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_denied_in_monitor_still_allows()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_denied_tool_cronjob()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_denied_tool_delegate_task()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_denied_tool_memory()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_denied_tool_send_message()]] - code - gateway/tests/test_subagent_governance.py
-- [[TestToolAuthorization]] - code - gateway/tests/test_subagent_governance.py
+- [[C1 Hardcoded Owner User ID in middleware.py94]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[C2 Hardcoded Owner User ID in webhook_receiver.py45]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[C3 Bot Tokens Partially Exposed in Chat History]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[CRITICAL — Must Fix Before Release_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 1209]]
-- 2 edges to [[_COMMUNITY_Community 1360]]
-- 1 edge to [[_COMMUNITY_Community 1343]]
+- 1 edge to [[_COMMUNITY_Community 414]]
 
 ## Top bridge nodes
-- [[TestToolAuthorization]] - degree 12, connects to 3 communities
+- [[CRITICAL — Must Fix Before Release_1]] - degree 4, connects to 1 community

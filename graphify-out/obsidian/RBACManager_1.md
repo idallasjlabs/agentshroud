@@ -12,12 +12,11 @@ tags:
 # RBACManager
 
 ## Connections
-- [[.__init__()_127]] - `method` [EXTRACTED]
+- [[.__init__()_125]] - `method` [EXTRACTED]
 - [[._build_permission_matrix()]] - `method` [EXTRACTED]
 - [[._build_tool_permissions()]] - `method` [EXTRACTED]
 - [[.audit_privilege_change()]] - `method` [EXTRACTED]
 - [[.can_user_manage_user()]] - `method` [EXTRACTED]
-- [[.check_group_permission()]] - `method` [EXTRACTED]
 - [[.check_permission()]] - `method` [EXTRACTED]
 - [[.check_tool_permission()_1]] - `method` [EXTRACTED]
 - [[.get_role_hierarchy()]] - `method` [EXTRACTED]
@@ -57,7 +56,7 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[rbac.py]] - `contains` [EXTRACTED]
 - [[router.py_1]] - `imports` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[run()_2]] - `calls` [EXTRACTED]
 - [[set_user_role()_1]] - `calls` [EXTRACTED]
 - [[test_rbac.py]] - `tests` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "Community 185"
+community: "Community 532"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_185
+  - community/Community_532
 ---
 
 # wazuh-ossec.md
@@ -19,4 +19,4 @@ tags:
 - [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 - [[wazuh_client.py]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_185
+#graphify/document #graphify/INFERRED #community/Community_532

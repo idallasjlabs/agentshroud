@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "Community 1566"
+community: "Community 43"
 location: "L558"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1566
+  - community/Community_43
 ---
 
 # Verify empty audit chain is valid.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_audit_chain_empty_valid()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1566
+#graphify/rationale #graphify/EXTRACTED #community/Community_43

@@ -11,7 +11,7 @@ members: 23
 - [[.test_minimal_construction()]] - code - gateway/tests/test_soc_models.py
 - [[.test_optional_fields_default_none()]] - code - gateway/tests/test_soc_models.py
 - [[.test_severity_ordering()_1]] - code - gateway/tests/test_soc_models.py
-- [[Any_76]] - code - gateway/soc/event_adapter.py
+- [[Any_72]] - code - gateway/soc/event_adapter.py
 - [[Best-effort conversion of arbitrary event dict to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
 - [[Best-effort mapping of arbitrary severity strings to Severity enum.]] - rationale - gateway/soc/event_adapter.py
 - [[Collect recent SecurityEvents from AuditStore (async-safe read).]] - rationale - gateway/soc/event_adapter.py
@@ -40,17 +40,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 7 edges to [[_COMMUNITY_Community 6]]
 - 6 edges to [[_COMMUNITY_Community 51]]
-- 4 edges to [[_COMMUNITY_Community 10]]
-- 4 edges to [[_COMMUNITY_Community 8]]
-- 4 edges to [[_COMMUNITY_Community 169]]
-- 2 edges to [[_COMMUNITY_Community 65]]
-- 1 edge to [[_COMMUNITY_Community 1191]]
+- 4 edges to [[_COMMUNITY_Community 38]]
+- 3 edges to [[_COMMUNITY_Community 10]]
+- 1 edge to [[_COMMUNITY_Community 890]]
 - 1 edge to [[_COMMUNITY_Community 2049]]
 
 ## Top bridge nodes
 - [[SecurityEvent_1]] - degree 20, connects to 5 communities
-- [[event_adapter.py]] - degree 11, connects to 3 communities
 - [[collect_recent_events()]] - degree 10, connects to 3 communities
-- [[Any_76]] - degree 9, connects to 1 community
+- [[event_adapter.py]] - degree 11, connects to 2 communities
+- [[Any_72]] - degree 9, connects to 1 community
 - [[SecurityEvent]] - degree 8, connects to 1 community

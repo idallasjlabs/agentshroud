@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[._make_proxy()]] - `calls` [EXTRACTED]
-- [[.process_inbound()_10]] - `method` [EXTRACTED]
+- [[.process_inbound()_9]] - `method` [EXTRACTED]
 - [[.test_allowed_collaborator_model_command_with_mention_is_handled_locally()]] - `calls` [EXTRACTED]
 - [[.test_blocked_command_is_quarantined()]] - `calls` [EXTRACTED]
 - [[.test_blocked_command_uppercase_is_quarantined()]] - `calls` [EXTRACTED]

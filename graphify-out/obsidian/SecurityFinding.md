@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "Community 121"
-location: "L38"
+community: "Community 312"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_121
+  - community/Community_312
 ---
 
 # SecurityFinding
@@ -25,4 +25,4 @@ tags:
 - [[A security finding in git hooks or install scripts.]] - `rationale_for` [EXTRACTED]
 - [[git_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_121
+#graphify/code #graphify/EXTRACTED #community/Community_312

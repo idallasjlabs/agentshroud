@@ -12,7 +12,7 @@ tags:
 # GroupWorkspaceManager
 
 ## Connections
-- [[.__init__()_99]] - `method` [EXTRACTED]
+- [[.__init__()_97]] - `method` [EXTRACTED]
 - [[._group_workspace_manager()]] - `calls` [EXTRACTED]
 - [[._is_owner()_1]] - `method` [EXTRACTED]
 - [[._require_memory()]] - `method` [EXTRACTED]

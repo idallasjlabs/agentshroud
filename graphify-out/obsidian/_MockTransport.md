@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_jira_dev_ticket.py"
 type: "code"
 community: "Community 188"
-location: "L253"
+location: "L245"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[.__call__()_10]] - `method` [EXTRACTED]
-- [[.__init__()_188]] - `method` [EXTRACTED]
+- [[.__init__()_185]] - `method` [EXTRACTED]
 - [[Records requests; serves op-proxy secrets then a scripted Jira response.]] - `rationale_for` [EXTRACTED]
 - [[test_jira_dev_ticket.py]] - `contains` [EXTRACTED]
 - [[test_run_comment_posts_to_correct_issue()]] - `calls` [EXTRACTED]

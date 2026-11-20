@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Community 1066"
-location: "L213"
+community: "Community 6"
+location: "L208"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1066
+  - community/Community_6
 ---
 
 # Manages user groups including auto-groups and custom groups.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GroupRegistry]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1066
+#graphify/rationale #graphify/EXTRACTED #community/Community_6

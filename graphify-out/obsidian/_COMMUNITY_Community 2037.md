@@ -1,21 +1,18 @@
 ---
 type: community
-members: 8
+members: 5
 ---
 
 # Community 2037
 
-**Members:** 8 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[7. Build Troubleshooting]] - document - docs/runbooks/colima-docker-guide.md
-- [[Clean rebuild (safe — preserves workspace, config, SSH)]] - document - docs/runbooks/colima-docker-guide.md
-- [[Diagnose first real disk full vs. phantom no space]] - document - docs/runbooks/colima-docker-guide.md
-- [[Full wipe (destructive — removes all state)]] - document - docs/runbooks/colima-docker-guide.md
-- [[Symptom `E You don't have enough free space in apt-dl` — Docker data partition has plenty of free space]] - document - docs/runbooks/colima-docker-guide.md
-- [[Symptom `E You don't have enough free space in apt-dl` — Docker data partition is 80% full]] - document - docs/runbooks/colima-docker-guide.md
-- [[Symptom `W GPG error ... At least one invalid signature was encountered`]] - document - docs/runbooks/colima-docker-guide.md
-- [[Symptom `exit code 100` on apt-get install]] - document - docs/runbooks/colima-docker-guide.md
+- [[.test_all_mapped_layers_exist_in_registry()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_proactive_only_layers_have_real_gateway_implementation()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[Every layer the engine can emit must already be used by a mitigated         entr]] - rationale - gateway/tests/test_triage_cve_mitigations.py
+- [[Every name in _PROACTIVE_ONLY_LAYERS must be independently proven         wired]] - rationale - gateway/tests/test_triage_cve_mitigations.py
+- [[TestDefenseLayerVocabulary]] - code - gateway/tests/test_triage_cve_mitigations.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +22,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 168]]
+- 1 edge to [[_COMMUNITY_Community 93]]
+- 1 edge to [[_COMMUNITY_Community 792]]
+- 1 edge to [[_COMMUNITY_Community 69]]
 
 ## Top bridge nodes
-- [[7. Build Troubleshooting]] - degree 8, connects to 1 community
+- [[TestDefenseLayerVocabulary]] - degree 4, connects to 2 communities
+- [[.test_all_mapped_layers_exist_in_registry()]] - degree 3, connects to 1 community

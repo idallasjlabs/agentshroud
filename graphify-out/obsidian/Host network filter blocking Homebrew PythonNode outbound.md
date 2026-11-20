@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-20-dev.md"
 type: "concept"
-community: "Community 48"
+community: "Community 118"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_48
+  - community/Community_118
 ---
 
 # Host network filter blocking Homebrew Python/Node outbound
@@ -17,4 +17,4 @@ tags:
 - [[upgrade-2026-09-20-dev]] - `references` [EXTRACTED]
 - [[upgrade-2026-09-21]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_48
+#graphify/concept #graphify/EXTRACTED #community/Community_118

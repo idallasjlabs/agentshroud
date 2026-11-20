@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 2073"
+community: "Community 14"
 location: "L2856"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2073
+  - community/Community_14
 ---
 
 # Validate normalized domain labels to avoid malformed allowlist entries.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._is_valid_domain_name()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2073
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

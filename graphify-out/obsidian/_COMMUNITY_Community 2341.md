@@ -1,16 +1,15 @@
 ---
 type: community
-members: 3
+members: 2
 ---
 
 # Community 2341
 
-**Members:** 3 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[.get_summary()]] - code - gateway/security/a2a_governance.py
-- [[.to_dict()_3]] - code - gateway/security/a2a_governance.py
-- [[Get governance proxy summary.]] - rationale - gateway/security/a2a_governance.py
+- [[Only the known stalemismatched alias is rewritten; anything else forwards as-is]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_normalize_local_model_omlx_unknown_model_passes_through_unchanged()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,9 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 44]]
-- 1 edge to [[_COMMUNITY_Community 203]]
+- 1 edge to [[_COMMUNITY_Community 208]]
 
 ## Top bridge nodes
-- [[.get_summary()]] - degree 3, connects to 1 community
-- [[.to_dict()_3]] - degree 2, connects to 1 community
+- [[test_normalize_local_model_omlx_unknown_model_passes_through_unchanged()]] - degree 2, connects to 1 community

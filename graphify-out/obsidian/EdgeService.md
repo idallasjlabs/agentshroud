@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/service.py"
 type: "code"
-community: "Community 32"
+community: "Community 80"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_32
+  - community/Community_80
 ---
 
 # EdgeService
@@ -47,4 +47,4 @@ tags:
 - [[test_edge_service_exposes_enforced_profiles()]] - `calls` [EXTRACTED]
 - [[test_soc_edge.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_32
+#graphify/code #graphify/INFERRED #community/Community_80

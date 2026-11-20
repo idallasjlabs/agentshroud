@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_raw_web_fetch_json_domain_with_invalid_chars_does_not_queue_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Domains containing invalid hostname characters must be rejected.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[GET and return (status_code, response_text). HTTPError is treated as a     norma]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[_http_get()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 845]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 626]]
+- 1 edge to [[_COMMUNITY_Community 238]]
 
 ## Top bridge nodes
-- [[.test_raw_web_fetch_json_domain_with_invalid_chars_does_not_queue_approval()]] - degree 4, connects to 3 communities
+- [[_http_get()]] - degree 2, connects to 1 community

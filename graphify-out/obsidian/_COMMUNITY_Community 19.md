@@ -8,11 +8,11 @@ members: 157
 **Members:** 157 nodes
 
 ## Members
+- [[.__init__()_210]] - code - gateway/tests/test_soc_router_coverage.py
+- [[.__init__()_211]] - code - gateway/tests/test_soc_router_coverage.py
+- [[.__init__()_212]] - code - gateway/tests/test_soc_router_coverage.py
 - [[.__init__()_213]] - code - gateway/tests/test_soc_router_coverage.py
 - [[.__init__()_214]] - code - gateway/tests/test_soc_router_coverage.py
-- [[.__init__()_215]] - code - gateway/tests/test_soc_router_coverage.py
-- [[.__init__()_216]] - code - gateway/tests/test_soc_router_coverage.py
-- [[.__init__()_217]] - code - gateway/tests/test_soc_router_coverage.py
 - [[.get_pending()_2]] - code - gateway/tests/test_soc_router_coverage.py
 - [[.get_recent_entries()_1]] - code - gateway/tests/test_soc_router_coverage.py
 - [[.is_group_admin()_2]] - code - gateway/tests/test_soc_router_coverage.py
@@ -176,15 +176,16 @@ SORT file.name ASC
 ## Connections to other communities
 - 25 edges to [[_COMMUNITY_Community 37]]
 - 7 edges to [[_COMMUNITY_Community 30]]
-- 6 edges to [[_COMMUNITY_Community 23]]
+- 6 edges to [[_COMMUNITY_Community 254]]
 - 6 edges to [[_COMMUNITY_Community 194]]
-- 3 edges to [[_COMMUNITY_Community 10]]
+- 2 edges to [[_COMMUNITY_Community 890]]
 - 2 edges to [[_COMMUNITY_Community 20]]
+- 1 edge to [[_COMMUNITY_Community 10]]
 - 1 edge to [[_COMMUNITY_Community 1248]]
 - 1 edge to [[_COMMUNITY_Community 68]]
 
 ## Top bridge nodes
-- [[test_soc_router_coverage.py]] - degree 171, connects to 8 communities
+- [[test_soc_router_coverage.py]] - degree 171, connects to 9 communities
 - [[_FakeDecideQueue]] - degree 14, connects to 4 communities
 - [[FakeGroup]] - degree 14, connects to 3 communities
 - [[FakeCaller_1]] - degree 13, connects to 3 communities

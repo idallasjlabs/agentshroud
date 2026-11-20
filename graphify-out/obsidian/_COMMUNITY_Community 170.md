@@ -62,13 +62,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_Community 1023]]
+- 12 edges to [[_COMMUNITY_Community 488]]
 - 5 edges to [[_COMMUNITY_Community 252]]
-- 4 edges to [[_COMMUNITY_Community 488]]
-- 3 edges to [[_COMMUNITY_Community 87]]
+- 4 edges to [[_COMMUNITY_Community 87]]
+- 1 edge to [[_COMMUNITY_Community 1023]]
+- 1 edge to [[_COMMUNITY_Community 2408]]
 
 ## Top bridge nodes
-- [[SCLClient]] - degree 60, connects to 4 communities
+- [[SCLClient]] - degree 60, connects to 5 communities
 - [[.get()_2]] - degree 14, connects to 1 community
 - [[_patch_urlopen()]] - degree 11, connects to 1 community
 - [[TestSCLClientRequest]] - degree 10, connects to 1 community

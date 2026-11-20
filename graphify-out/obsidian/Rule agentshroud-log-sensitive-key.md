@@ -1,11 +1,11 @@
 ---
 source_file: ".semgrep.yml"
 type: "concept"
-community: "Community 73"
+community: "Community 162"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_73
+  - community/Community_162
 ---
 
 # Rule: agentshroud-log-sensitive-key
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Semgrep SAST Configuration]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_73
+#graphify/concept #graphify/EXTRACTED #community/Community_162

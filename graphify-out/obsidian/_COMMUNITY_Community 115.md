@@ -1,54 +1,64 @@
 ---
 type: community
-members: 41
+members: 51
 ---
 
 # Community 115
 
-**Members:** 41 nodes
+**Members:** 51 nodes
 
 ## Members
-- [[.check_vram_headroom()]] - code - gateway/security/resource_guard.py
-- [[.test_cleanup_keeps_fresh_agents()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_cleanup_removes_stale_agents()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_cleanup_tolerates_missing_file()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_cleanup_unlinks_existing_and_clears_registry()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_cpu_limit_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_cpu_limit_fails_closed_on_psutil_error()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_cpu_limit_ok_when_under()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_disabled_when_threshold_zero()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_disk_write_limit_allows_when_no_baseline()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_disk_write_limit_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_disk_write_limit_under_threshold()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_get_resource_guard_is_lazy_singleton()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_get_usage_stats_for_agent()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_get_usage_stats_system_wide()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_memory_limit_fails_closed_on_error()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_memory_limit_ok_and_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_passes_with_sufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_register_blocks_over_limit()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_register_under_limit()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_rejects_insufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_start_request_tracking_records_baseline()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_start_request_tracking_survives_psutil_error()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[Current resource usage metrics.]] - rationale - gateway/security/resource_guard.py
-- [[Get the global resource guard instance, creating it lazily on first call.]] - rationale - gateway/security/resource_guard.py
-- [[Pre-flight VRAM headroom check before dispatching a long-context local-model cal]] - rationale - gateway/security/resource_guard.py
-- [[Raised when a local-model call is rejected because estimated VRAM usage     woul]] - rationale - gateway/security/resource_guard.py
-- [[ResourceUsage]] - code - gateway/security/resource_guard.py
-- [[TestCpuMemoryDiskLimits]] - code - gateway/tests/test_resource_guard_limits.py
-- [[TestExpiredUsageCleanup]] - code - gateway/tests/test_resource_guard_limits.py
-- [[TestGlobalAccessor]] - code - gateway/tests/test_resource_guard_limits.py
-- [[TestTempFiles]] - code - gateway/tests/test_resource_guard_limits.py
-- [[TestUsageStatsAndTracking]] - code - gateway/tests/test_resource_guard_limits.py
-- [[TestVramHeadroom]] - code - gateway/tests/test_resource_guard_limits.py
-- [[VRAMHeadroomError]] - code - gateway/security/resource_guard.py
-- [[VRAMHeadroomError must be a distinct exception, not a subclass of ResourceWarnin]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[get_resource_guard()]] - code - gateway/security/resource_guard.py
-- [[guard()_3]] - code - gateway/tests/test_resource_guard_limits.py
-- [[resource_guard.py]] - code - gateway/security/resource_guard.py
-- [[test_resource_guard_limits.py]] - code - gateway/tests/test_resource_guard_limits.py
-- [[test_vram_headroom_error_is_not_resource_warning()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[Create approval queue configuration for testing]] - rationale - gateway/tests/test_approval_queue.py
+- [[Create approval queue instance for testing]] - rationale - gateway/tests/test_approval_queue.py
+- [[Queue should restore persisted items from store file on startup.]] - rationale - gateway/tests/test_approval_queue.py
+- [[Queue store file should persist items and status transitions.]] - rationale - gateway/tests/test_approval_queue.py
+- [[SCRUM-110 cleanup_decided() must persist the removal, not just mutate     the i]] - rationale - gateway/tests/test_approval_queue.py
+- [[SCRUM-110 writes go through a temp file + os.replace so a crash     mid-write c]] - rationale - gateway/tests/test_approval_queue.py
+- [[SCRUM-154 a dead WebSocket client must never wedge the approval lock.      subm]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test WebSocket client connection]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test WebSocket client disconnection]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test approving a pending request]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test deciding on already-decided request raises ValueError]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test deciding on an expired request raises ValueError]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test deciding on nonexistent request raises KeyError]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test getting a specific item by ID]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test getting all pending requests]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test getting nonexistent item returns None]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test rejecting a pending request]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test submitting an approval request]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test that concurrent decision attempts are handled correctly]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test that get_pending excludes decided requests]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test that requests expire after timeout]] - rationale - gateway/tests/test_approval_queue.py
+- [[approval_queue()]] - code - gateway/tests/test_approval_queue.py
+- [[broadcast() bounds each client's send with a timeout — defense in     depth so a]] - rationale - gateway/tests/test_approval_queue.py
+- [[cleanup_decided() must not remove pending items regardless of age.]] - rationale - gateway/tests/test_approval_queue.py
+- [[cleanup_decided() should not remove decided items newer than threshold.]] - rationale - gateway/tests/test_approval_queue.py
+- [[cleanup_decided() should remove approvedrejected items older than threshold.]] - rationale - gateway/tests/test_approval_queue.py
+- [[queue_config()]] - code - gateway/tests/test_approval_queue.py
+- [[test_approval_queue.py]] - code - gateway/tests/test_approval_queue.py
+- [[test_broadcast_does_not_hang_forever_on_dead_client()]] - code - gateway/tests/test_approval_queue.py
+- [[test_cleanup_decided_keeps_pending_items()]] - code - gateway/tests/test_approval_queue.py
+- [[test_cleanup_decided_keeps_recent_decided_items()]] - code - gateway/tests/test_approval_queue.py
+- [[test_cleanup_decided_persists_removal_to_disk()]] - code - gateway/tests/test_approval_queue.py
+- [[test_cleanup_decided_removes_old_decided_items()]] - code - gateway/tests/test_approval_queue.py
+- [[test_concurrent_decisions()]] - code - gateway/tests/test_approval_queue.py
+- [[test_decide_already_decided()]] - code - gateway/tests/test_approval_queue.py
+- [[test_decide_approval_approve()]] - code - gateway/tests/test_approval_queue.py
+- [[test_decide_approval_reject()]] - code - gateway/tests/test_approval_queue.py
+- [[test_decide_expired_request()]] - code - gateway/tests/test_approval_queue.py
+- [[test_decide_nonexistent_request()]] - code - gateway/tests/test_approval_queue.py
+- [[test_get_item()]] - code - gateway/tests/test_approval_queue.py
+- [[test_get_item_nonexistent()]] - code - gateway/tests/test_approval_queue.py
+- [[test_get_pending()]] - code - gateway/tests/test_approval_queue.py
+- [[test_get_pending_excludes_decided()]] - code - gateway/tests/test_approval_queue.py
+- [[test_persist_pending_store_writes_atomically()]] - code - gateway/tests/test_approval_queue.py
+- [[test_request_expiration()]] - code - gateway/tests/test_approval_queue.py
+- [[test_store_persists_submit_and_decision()]] - code - gateway/tests/test_approval_queue.py
+- [[test_store_restores_items_on_init()]] - code - gateway/tests/test_approval_queue.py
+- [[test_submit_approval_request()]] - code - gateway/tests/test_approval_queue.py
+- [[test_submit_does_not_deadlock_on_hung_websocket_client()]] - code - gateway/tests/test_approval_queue.py
+- [[test_websocket_connect()]] - code - gateway/tests/test_approval_queue.py
+- [[test_websocket_disconnect()]] - code - gateway/tests/test_approval_queue.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -58,21 +68,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_Community 5]]
-- 10 edges to [[_COMMUNITY_Community 532]]
-- 2 edges to [[_COMMUNITY_Community 68]]
-- 2 edges to [[_COMMUNITY_Community 112]]
-- 2 edges to [[_COMMUNITY_Community 208]]
-- 1 edge to [[_COMMUNITY_Community 2048]]
-- 1 edge to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 185]]
-- 1 edge to [[_COMMUNITY_Community 146]]
-- 1 edge to [[_COMMUNITY_Community 2099]]
-- 1 edge to [[_COMMUNITY_Community 2005]]
+- 18 edges to [[_COMMUNITY_Community 30]]
+- 11 edges to [[_COMMUNITY_Community 7]]
+- 2 edges to [[_COMMUNITY_Community 37]]
 
 ## Top bridge nodes
-- [[VRAMHeadroomError]] - degree 17, connects to 5 communities
-- [[resource_guard.py]] - degree 10, connects to 5 communities
-- [[test_resource_guard_limits.py]] - degree 12, connects to 2 communities
-- [[TestCpuMemoryDiskLimits]] - degree 12, connects to 2 communities
-- [[TestTempFiles]] - degree 8, connects to 2 communities
+- [[test_approval_queue.py]] - degree 30, connects to 3 communities
+- [[test_store_persists_submit_and_decision()]] - degree 4, connects to 2 communities
+- [[test_cleanup_decided_persists_removal_to_disk()]] - degree 4, connects to 2 communities
+- [[test_persist_pending_store_writes_atomically()]] - degree 4, connects to 2 communities
+- [[test_submit_does_not_deadlock_on_hung_websocket_client()]] - degree 4, connects to 2 communities

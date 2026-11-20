@@ -12,7 +12,7 @@ tags:
 # FakeRBAC
 
 ## Connections
-- [[.__init__()_202]] - `method` [EXTRACTED]
+- [[.__init__()_199]] - `method` [EXTRACTED]
 - [[.is_owner()_3]] - `method` [EXTRACTED]
 - [[FalcoAlertWatcher]] - `uses` [INFERRED]
 - [[LockdownLevel_1]] - `uses` [INFERRED]

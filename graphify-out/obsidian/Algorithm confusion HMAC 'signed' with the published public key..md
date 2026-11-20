@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_jwt.py"
 type: "rationale"
-community: "Community 50"
+community: "Community 135"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_50
+  - community/Community_135
 ---
 
 # Algorithm confusion: HMAC 'signed' with the published public key.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_hs256_signed_with_public_key()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_50
+#graphify/rationale #graphify/EXTRACTED #community/Community_135

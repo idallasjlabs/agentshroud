@@ -1,17 +1,18 @@
 ---
 type: community
-members: 4
+members: 5
 ---
 
 # Community 2031
 
-**Members:** 4 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[.require()]] - code - gateway/soc/auth.py
-- [[Action_2]] - code - gateway/soc/auth.py
-- [[Raise 403 if the caller lacks the required permission.]] - rationale - gateway/soc/auth.py
-- [[Resource_2]] - code - gateway/soc/auth.py
+- [[Create a PromptProtection instance for testing.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Sample protected content for testing.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[prompt_protection()]] - code - gateway/tests/test_prompt_protection.py
+- [[sample_protected_content()]] - code - gateway/tests/test_prompt_protection.py
+- [[test_prompt_protection.py]] - code - gateway/tests/test_prompt_protection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +22,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 10]]
+- 2 edges to [[_COMMUNITY_Community 141]]
+- 1 edge to [[_COMMUNITY_Community 351]]
 
 ## Top bridge nodes
-- [[.require()]] - degree 5, connects to 1 community
+- [[test_prompt_protection.py]] - degree 4, connects to 2 communities
+- [[prompt_protection()]] - degree 3, connects to 1 community

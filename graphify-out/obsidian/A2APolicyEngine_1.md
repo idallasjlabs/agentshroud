@@ -12,7 +12,7 @@ tags:
 # A2APolicyEngine
 
 ## Connections
-- [[.__init__()_65]] - `method` [EXTRACTED]
+- [[.__init__()_63]] - `method` [EXTRACTED]
 - [[._decide()]] - `method` [EXTRACTED]
 - [[._tier_for()]] - `method` [EXTRACTED]
 - [[.enforce()]] - `method` [EXTRACTED]

@@ -12,7 +12,7 @@ tags:
 # alerts_summary()
 
 ## Connections
-- [[.summary()_1]] - `calls` [EXTRACTED]
+- [[.summary()]] - `calls` [EXTRACTED]
 - [[Alert counts by severity.]] - `rationale_for` [EXTRACTED]
 - [[dashboard_endpoints.py]] - `contains` [EXTRACTED]
 

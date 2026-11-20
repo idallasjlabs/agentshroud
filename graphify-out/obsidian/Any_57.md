@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "Community 35"
-location: "L200"
+community: "Community 71"
+location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/Community_71
 ---
 
 # Any
 
 ## Connections
-- [[.enforce()_1]] - `references` [EXTRACTED]
-- [[.evaluate()_1]] - `references` [EXTRACTED]
-- [[.from_dict()_7]] - `references` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[._parse_service_network_config()]] - `references` [EXTRACTED]
+- [[._validate_network_definitions()]] - `references` [EXTRACTED]
+- [[.get_security_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_35
+#graphify/code #graphify/EXTRACTED #community/Community_71

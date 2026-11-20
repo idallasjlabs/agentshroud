@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "rationale"
-community: "Community 8"
+community: "Community 104"
 location: "L799"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_8
+  - community/Community_104
 ---
 
 # True when ``fixed_in`` version is <= the running image (already patched).      A
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[is_source_fixed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_8
+#graphify/rationale #graphify/EXTRACTED #community/Community_104

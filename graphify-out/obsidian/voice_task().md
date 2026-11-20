@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Community 378"
+community: "Community 341"
 location: "L716"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_378
+  - community/Community_341
 ---
 
 # voice_task()
@@ -38,4 +38,4 @@ tags:
 - [[ws_client_send_keepalive()]] - `calls` [INFERRED]
 - [[ws_client_send_stop()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_378
+#graphify/code #graphify/INFERRED #community/Community_341

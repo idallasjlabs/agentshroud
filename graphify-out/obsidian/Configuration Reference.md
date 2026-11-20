@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 816"
+community: "Community 726"
 location: "L500"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_816
+  - community/Community_726
 ---
 
 # Configuration Reference
@@ -19,4 +19,4 @@ tags:
 - [[egress-config.yml - Egress Filtering]] - `contains` [EXTRACTED]
 - [[mcp-config.yml - MCP Server Registry]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_816
+#graphify/document #graphify/EXTRACTED #community/Community_726

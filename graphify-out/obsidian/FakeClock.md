@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[.__call__()_12]] - `method` [EXTRACTED]
-- [[.__init__()_203]] - `method` [EXTRACTED]
+- [[.__init__()_200]] - `method` [EXTRACTED]
 - [[.advance()]] - `method` [EXTRACTED]
 - [[.test_blocks_inside_window_still_escalate()]] - `calls` [EXTRACTED]
 - [[.test_decay_off_by_default_blocks_never_age_out()]] - `calls` [EXTRACTED]

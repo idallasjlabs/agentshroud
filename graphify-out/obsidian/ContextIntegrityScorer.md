@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "Community 22"
+community: "Community 216"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_22
+  - community/Community_216
 ---
 
 # ContextIntegrityScorer
 
 ## Connections
-- [[.__init__()_81]] - `method` [EXTRACTED]
+- [[.__init__()_79]] - `method` [EXTRACTED]
 - [[.score_context()]] - `method` [EXTRACTED]
 - [[ContextSegment]] - `uses` [INFERRED]
 - [[IntegrityScore]] - `shares_data_with` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[scorer()]] - `calls` [EXTRACTED]
 - [[test_context_integrity.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_22
+#graphify/code #graphify/EXTRACTED #community/Community_216

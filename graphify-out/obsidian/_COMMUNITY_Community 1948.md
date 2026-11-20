@@ -27,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 386]]
+- 1 edge to [[_COMMUNITY_Community 2073]]
 
 ## Top bridge nodes
 - [[Security Assessment v0.8.0]] - degree 2, connects to 1 community

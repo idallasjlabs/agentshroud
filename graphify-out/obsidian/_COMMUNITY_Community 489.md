@@ -39,24 +39,24 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_Community 83]]
-- 2 edges to [[_COMMUNITY_Community 52]]
+- 2 edges to [[_COMMUNITY_Community 16]]
 - 2 edges to [[_COMMUNITY_Community 97]]
-- 2 edges to [[_COMMUNITY_Community 738]]
+- 2 edges to [[_COMMUNITY_Community 225]]
 - 1 edge to [[_COMMUNITY_Community 54]]
 - 1 edge to [[_COMMUNITY_Community 947]]
+- 1 edge to [[_COMMUNITY_Community 52]]
 - 1 edge to [[_COMMUNITY_Community 88]]
 - 1 edge to [[_COMMUNITY_Community 89]]
+- 1 edge to [[_COMMUNITY_Community 0]]
 - 1 edge to [[_COMMUNITY_Community 23]]
 - 1 edge to [[_COMMUNITY_Community 35]]
-- 1 edge to [[_COMMUNITY_Community 477]]
 - 1 edge to [[_COMMUNITY_Community 70]]
 - 1 edge to [[_COMMUNITY_Community 60]]
 - 1 edge to [[_COMMUNITY_Community 17]]
-- 1 edge to [[_COMMUNITY_Community 9]]
-- 1 edge to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 92]]
 
 ## Top bridge nodes
-- [[cls]] - degree 21, connects to 11 communities
+- [[cls]] - degree 21, connects to 12 communities
 - [[.from_file()]] - degree 5, connects to 1 community
 - [[Path_23]] - degree 5, connects to 1 community
 - [[.from_source()]] - degree 5, connects to 1 community

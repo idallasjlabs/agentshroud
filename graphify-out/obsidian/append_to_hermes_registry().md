@@ -2,7 +2,7 @@
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
 community: "Community 74"
-location: "L502"
+location: "L327"
 tags:
   - graphify/code
   - graphify/EXTRACTED

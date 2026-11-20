@@ -1,27 +1,22 @@
 ---
 type: community
-members: 14
+members: 9
 ---
 
 # Community 1119
 
-**Members:** 14 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[.test_allowed_domain()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_allowed_ip()_1]] - code - gateway/tests/test_security_hardening.py
-- [[.test_allowed_specific_ip()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_denied_domain()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_denied_ip()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_denied_port()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_empty_ports_allows_all()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_log()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_stats()_2]] - code - gateway/tests/test_security_hardening.py
-- [[.test_url_parsing()_1]] - code - gateway/tests/test_security_hardening.py
-- [[.test_url_port_extraction()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_wildcard_base_domain()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_wildcard_domain()]] - code - gateway/tests/test_security_hardening.py
-- [[TestEgressFilter]] - code - gateway/tests/test_security_hardening.py
+- [[AgentShroud v0.8.0 — Blue Team Security Assessment (Final)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[BT-H1 Cross-Bot Shared Memory Isolation Finding]] - concept - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[Blue Team Assessment v1.2.0 (First Dual-Bot Assessment)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[Fixes Applied]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[Prior Assessment (v0.8.0) — Status]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[Summary_35]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[Test Results_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[blue-team-assessment-v0.8.0-final]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[blue-team-assessment-v0.8.0]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,14 +26,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 52]]
-- 7 edges to [[_COMMUNITY_Community 17]]
-- 2 edges to [[_COMMUNITY_Community 21]]
-- 2 edges to [[_COMMUNITY_Community 84]]
-- 1 edge to [[_COMMUNITY_Community 24]]
-- 1 edge to [[_COMMUNITY_Community 11]]
-- 1 edge to [[_COMMUNITY_Community 88]]
+- 1 edge to [[_COMMUNITY_Community 354]]
+- 1 edge to [[_COMMUNITY_Community 357]]
+- 1 edge to [[_COMMUNITY_Community 414]]
+- 1 edge to [[_COMMUNITY_Community 2073]]
 
 ## Top bridge nodes
-- [[TestEgressFilter]] - degree 34, connects to 7 communities
-- [[.test_empty_ports_allows_all()]] - degree 3, connects to 2 communities
+- [[blue-team-assessment-v0.8.0]] - degree 4, connects to 2 communities
+- [[AgentShroud v0.8.0 — Blue Team Security Assessment (Final)]] - degree 6, connects to 1 community
+- [[Blue Team Assessment v1.2.0 (First Dual-Bot Assessment)]] - degree 3, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_report_store.py"
 type: "code"
-community: "Community 110"
+community: "Community 1344"
 location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_110
+  - community/Community_1344
 ---
 
 # TestSecurity
@@ -21,4 +21,4 @@ tags:
 - [[ReportStore]] - `uses` [INFERRED]
 - [[test_report_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_110
+#graphify/code #graphify/EXTRACTED #community/Community_1344

@@ -43,8 +43,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 84]]
-- 1 edge to [[_COMMUNITY_Community 32]]
+- 7 edges to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 80]]
 
 ## Top bridge nodes
 - [[test_edge_profiles.py]] - degree 9, connects to 2 communities

@@ -1,18 +1,24 @@
 ---
 type: community
-members: 12
+members: 20
 ---
 
 # Community 800
 
-**Members:** 12 nodes
+**Members:** 20 nodes
 
 ## Members
 - [[Backup]] - document - docs/vault/06 - Containers & Services/volumes.md
 - [[Cleanup Warning]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[Container Integration]] - document - docs/vault/05 - Dependencies/playwright.md
 - [[Docker Volumes]] - document - docs/vault/06 - Containers & Services/volumes.md
 - [[Inspecting Volumes]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[Playwright]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Purpose_190]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Related Notes_45]] - document - docs/vault/05 - Dependencies/playwright.md
 - [[Related Notes_54]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[Security Controls_2]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Volume]] - document - docs/vault/05 - Dependencies/playwright.md
 - [[Volume Details]] - document - docs/vault/06 - Containers & Services/volumes.md
 - [[Volume Inventory]] - document - docs/vault/06 - Containers & Services/volumes.md
 - [[agentshroud-browsers]] - document - docs/vault/06 - Containers & Services/volumes.md
@@ -20,6 +26,8 @@ members: 12
 - [[agentshroud-ssh]] - document - docs/vault/06 - Containers & Services/volumes.md
 - [[agentshroud-workspace]] - document - docs/vault/06 - Containers & Services/volumes.md
 - [[gateway-data]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[playwright_1]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[volumes]] - document - docs/vault/06 - Containers & Services/volumes.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +37,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 94]]
+- 1 edge to [[_COMMUNITY_Community 253]]
 - 1 edge to [[_COMMUNITY_Community 1569]]
 
 ## Top bridge nodes
-- [[Docker Volumes]] - degree 7, connects to 1 community
+- [[volumes]] - degree 4, connects to 2 communities
+- [[playwright_1]] - degree 3, connects to 1 community

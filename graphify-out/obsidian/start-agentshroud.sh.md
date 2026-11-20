@@ -23,7 +23,6 @@ tags:
 - [[_reap_idle_sandboxes()]] - `defines` [EXTRACTED]
 - [[_reconcile_security_critical_cron()]] - `defines` [EXTRACTED]
 - [[_rename_to_meaningful()]] - `defines` [EXTRACTED]
-- [[_slack_channel_id()]] - `defines` [EXTRACTED]
 - [[_slack_send()]] - `defines` [EXTRACTED]
 - [[_telegram_bot_token()_1]] - `defines` [EXTRACTED]
 - [[_telegram_get_me_ready()_1]] - `defines` [EXTRACTED]

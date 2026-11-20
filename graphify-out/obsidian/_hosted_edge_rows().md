@@ -12,7 +12,7 @@ tags:
 # _hosted_edge_rows()
 
 ## Connections
-- [[Any_77]] - `references` [EXTRACTED]
+- [[Any_73]] - `references` [EXTRACTED]
 - [[_edge_snapshot()]] - `calls` [EXTRACTED]
 - [[_hosted_status()]] - `calls` [EXTRACTED]
 - [[_profile_catalog()]] - `calls` [EXTRACTED]

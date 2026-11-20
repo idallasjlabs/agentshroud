@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "Community 0"
+community: "Community 45"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/Community_45
 ---
 
 # OAuthSecurityValidator
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_59]] - `calls` [EXTRACTED]
-- [[.__init__()_117]] - `method` [EXTRACTED]
+- [[.__init__()_58]] - `calls` [EXTRACTED]
+- [[.__init__()_115]] - `method` [EXTRACTED]
 - [[.check_state_reuse()]] - `method` [EXTRACTED]
 - [[.create_consent_cookie()]] - `method` [EXTRACTED]
 - [[.record_state_used()]] - `method` [EXTRACTED]
@@ -45,4 +45,4 @@ tags:
 - [[validator()]] - `calls` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_0
+#graphify/code #graphify/EXTRACTED #community/Community_45

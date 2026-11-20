@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "Community 1305"
+community: "Community 855"
 location: "L126"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1305
+  - community/Community_855
 ---
 
 # group-A and group-B memory files must be in separate directories.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_group_memory_physically_isolated()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1305
+#graphify/rationale #graphify/EXTRACTED #community/Community_855

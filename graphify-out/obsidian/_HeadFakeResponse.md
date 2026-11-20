@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.__aenter__()_3]] - `method` [EXTRACTED]
 - [[.__aexit__()_3]] - `method` [EXTRACTED]
-- [[.__init__()_193]] - `method` [EXTRACTED]
+- [[.__init__()_190]] - `method` [EXTRACTED]
 - [[.aiter_bytes()]] - `method` [EXTRACTED]
 - [[.aread()]] - `method` [EXTRACTED]
 - [[LLMProxy]] - `uses` [INFERRED]

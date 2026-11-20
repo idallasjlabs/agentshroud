@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "rationale"
-community: "Community 8"
+community: "Community 104"
 location: "L188"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_8
+  - community/Community_104
 ---
 
 # Read the raw pinned ``OPENCLAW_VERSION`` string from docker/versions.env.      R
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_read_running_version_str()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_8
+#graphify/rationale #graphify/EXTRACTED #community/Community_104

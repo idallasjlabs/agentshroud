@@ -27,7 +27,7 @@ SORT file.name ASC
 - 7 edges to [[_COMMUNITY_Community 82]]
 - 3 edges to [[_COMMUNITY_Community 917]]
 - 1 edge to [[_COMMUNITY_Community 614]]
-- 1 edge to [[_COMMUNITY_Community 169]]
+- 1 edge to [[_COMMUNITY_Community 6]]
 - 1 edge to [[_COMMUNITY_Community 2046]]
 - 1 edge to [[_COMMUNITY_Community 1967]]
 

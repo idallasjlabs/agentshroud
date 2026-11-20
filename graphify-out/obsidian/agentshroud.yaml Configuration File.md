@@ -1,11 +1,11 @@
 ---
 source_file: "docs/operations/raspberry-pi.md"
 type: "concept"
-community: "Community 816"
+community: "Community 726"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_816
+  - community/Community_726
 ---
 
 # agentshroud.yaml Configuration File
@@ -14,4 +14,4 @@ tags:
 - [[Configuration Reference]] - `contains` [EXTRACTED]
 - [[raspberry-pi]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_816
+#graphify/concept #graphify/EXTRACTED #community/Community_726

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "Community 64"
+community: "Community 230"
 location: "L130"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_64
+  - community/Community_230
 ---
 
 # MCPInspector
@@ -85,9 +85,9 @@ tags:
 - [[make_proxy()_1]] - `calls` [EXTRACTED]
 - [[mcp_inspector.py]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports` [EXTRACTED]
-- [[proxy()_2]] - `calls` [EXTRACTED]
+- [[proxy()_1]] - `calls` [EXTRACTED]
 - [[strict_inspector()]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_64
+#graphify/code #graphify/INFERRED #community/Community_230

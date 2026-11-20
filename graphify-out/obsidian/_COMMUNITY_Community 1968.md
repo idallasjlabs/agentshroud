@@ -1,22 +1,28 @@
 ---
 type: community
-members: 9
+members: 15
 ---
 
 # Community 1968
 
-**Members:** 9 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[1. Summary line_4]] - document - reports/upgrade-2026-10-04.md
-- [[2. Environment mapping_4]] - document - reports/upgrade-2026-10-04.md
-- [[3. Upgrade table (discovery 2026-10-04 030x EDT, `scriptsdiscover_upstream_versions.py --json`)]] - document - reports/upgrade-2026-10-04.md
-- [[4. Security findings (in progress)]] - document - reports/upgrade-2026-10-04.md
-- [[5. Verification evidence_5]] - document - reports/upgrade-2026-10-04.md
-- [[6. Breaking changes  manual follow-ups_5]] - document - reports/upgrade-2026-10-04.md
-- [[7. Rollback]] - document - reports/upgrade-2026-10-04.md
-- [[8. Time]] - document - reports/upgrade-2026-10-04.md
-- [[Sunday Upgrade 2026-10-04 — DEV run (agentshroud-bot, 0300 ET)]] - document - reports/upgrade-2026-10-04.md
+- [[Any_7]] - code - gateway/inbound_edge/descriptors.py
+- [[Canonical JSON sorted keys, no insignificant whitespace, UTF-8.]] - rationale - gateway/inbound_edge/descriptors.py
+- [[DescriptorIntegrityError]] - code - gateway/inbound_edge/descriptors.py
+- [[Ed25519PublicKey]] - code - gateway/inbound_edge/descriptors.py
+- [[Startup check against the manifest, signature and key committed under config.]] - rationale - gateway/inbound_edge/descriptors.py
+- [[The served descriptors do not match the signed manifest. Refuse to start.]] - rationale - gateway/inbound_edge/descriptors.py
+- [[Verify the manifest signature, then that ``descriptors`` match it exactly.]] - rationale - gateway/inbound_edge/descriptors.py
+- [[_load_public_key()]] - code - gateway/inbound_edge/descriptors.py
+- [[build_manifest()]] - code - gateway/inbound_edge/descriptors.py
+- [[canonical_bytes()]] - code - gateway/inbound_edge/descriptors.py
+- [[descriptor_hash()]] - code - gateway/inbound_edge/descriptors.py
+- [[descriptors.py]] - code - gateway/inbound_edge/descriptors.py
+- [[main()_12]] - code - gateway/inbound_edge/descriptors.py
+- [[verify_descriptors()]] - code - gateway/inbound_edge/descriptors.py
+- [[verify_shipped_descriptors()]] - code - gateway/inbound_edge/descriptors.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +32,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 118]]
+- 5 edges to [[_COMMUNITY_Community 2048]]
+- 3 edges to [[_COMMUNITY_Community 41]]
+- 2 edges to [[_COMMUNITY_Community 80]]
+- 1 edge to [[_COMMUNITY_Community 505]]
+- 1 edge to [[_COMMUNITY_Community 68]]
 
 ## Top bridge nodes
-- [[Sunday Upgrade 2026-10-04 — DEV run (agentshroud-bot, 0300 ET)]] - degree 9, connects to 1 community
+- [[descriptors.py]] - degree 11, connects to 3 communities
+- [[verify_shipped_descriptors()]] - degree 8, connects to 2 communities
+- [[canonical_bytes()]] - degree 10, connects to 1 community
+- [[DescriptorIntegrityError]] - degree 6, connects to 1 community

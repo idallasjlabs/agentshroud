@@ -1,11 +1,11 @@
 ---
 type: community
-members: 59
+members: 40
 ---
 
 # Community 185
 
-**Members:** 59 nodes
+**Members:** 40 nodes
 
 ## Members
 - [[.test_all_clean()_1]] - code - gateway/tests/test_security_toolchain.py
@@ -25,8 +25,7 @@ members: 59
 - [[.test_perfect_score()]] - code - gateway/tests/test_security_toolchain.py
 - [[.test_score_floor()]] - code - gateway/tests/test_security_toolchain.py
 - [[.test_trend_empty_db()]] - code - gateway/tests/test_security_toolchain.py
-- [[Alert Levels]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[Any_52]] - code - gateway/security/health_report.py
+- [[Any_49]] - code - gateway/security/health_report.py
 - [[Calculate score for a single tool (0-100).      Args         summary Tool summ]] - rationale - gateway/security/health_report.py
 - [[Calculate weighted overall security score.      Args         summaries Dict ma]] - rationale - gateway/security/health_report.py
 - [[Connection_1]] - code - gateway/security/health_report.py
@@ -35,29 +34,13 @@ members: 59
 - [[Generate a full health report.      Args         summaries Dict mapping tool n]] - rationale - gateway/security/health_report.py
 - [[Get score trend for the last N days.      Args         days Number of days to]] - rationale - gateway/security/health_report.py
 - [[Initialize the SQLite database for history tracking.      Args         db_path]] - rationale - gateway/security/health_report.py
-- [[Integration]] - document - docs/vault/03 - Configuration/falco-rules.md
-- [[Integration with Gateway]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[Key OSSEC Config Sections (Inferred)]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[Network Enforcement]] - document - docs/vault/03 - Configuration/falco-rules.md
 - [[Path_15]] - code - gateway/security/health_report.py
-- [[Priority Levels_1]] - document - docs/vault/03 - Configuration/falco-rules.md
-- [[Purpose_178]] - document - docs/vault/03 - Configuration/falco-rules.md
-- [[Purpose_183]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[Related Notes_22]] - document - docs/vault/03 - Configuration/falco-rules.md
-- [[Related Notes_27]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[Relationship to Other Security Modules]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[Rules Defined]] - document - docs/vault/03 - Configuration/falco-rules.md
 - [[Save a health report to history.      Args         score Overall score.]] - rationale - gateway/security/health_report.py
-- [[Shell Spawning Exceptions]] - document - docs/vault/03 - Configuration/falco-rules.md
 - [[TestHealthOverallScore]] - code - gateway/tests/test_security_toolchain.py
 - [[TestHealthReport]] - code - gateway/tests/test_security_toolchain.py
 - [[TestHealthScoring]] - code - gateway/tests/test_security_toolchain.py
-- [[What Wazuh Monitors in AgentShroud]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[alert_dispatcher.py]] - code - gateway/security/alert_dispatcher.py
 - [[calculate_overall_score()]] - code - gateway/security/health_report.py
 - [[calculate_tool_score()]] - code - gateway/security/health_report.py
-- [[falco-rules]] - document - docs/vault/03 - Configuration/falco-rules.md
-- [[falco-rules.yaml]] - document - docs/vault/03 - Configuration/falco-rules.md
 - [[format_report()]] - code - gateway/security/health_report.py
 - [[generate_report()]] - code - gateway/security/health_report.py
 - [[get_trend()]] - code - gateway/security/health_report.py
@@ -65,8 +48,6 @@ members: 59
 - [[init_db()]] - code - gateway/security/health_report.py
 - [[save_to_history()]] - code - gateway/security/health_report.py
 - [[score_to_grade()]] - code - gateway/security/health_report.py
-- [[wazuh-ossec.conf]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[wazuh-ossec]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -77,22 +58,16 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 12 edges to [[_COMMUNITY_Community 102]]
-- 4 edges to [[_COMMUNITY_Community 557]]
-- 3 edges to [[_COMMUNITY_Community 943]]
+- 5 edges to [[_COMMUNITY_Community 0]]
 - 1 edge to [[_COMMUNITY_Community 163]]
 - 1 edge to [[_COMMUNITY_Community 151]]
-- 1 edge to [[_COMMUNITY_Community 253]]
-- 1 edge to [[_COMMUNITY_Community 43]]
-- 1 edge to [[_COMMUNITY_Community 52]]
-- 1 edge to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 73]]
+- 1 edge to [[_COMMUNITY_Community 532]]
 - 1 edge to [[_COMMUNITY_Community 777]]
-- 1 edge to [[_COMMUNITY_Community 115]]
-- 1 edge to [[_COMMUNITY_Community 0]]
+- 1 edge to [[_COMMUNITY_Community 5]]
 
 ## Top bridge nodes
 - [[health_report.py]] - degree 18, connects to 7 communities
-- [[alert_dispatcher.py]] - degree 9, connects to 6 communities
 - [[TestHealthScoring]] - degree 12, connects to 2 communities
 - [[TestHealthReport]] - degree 6, connects to 2 communities
-- [[wazuh-ossec]] - degree 6, connects to 2 communities
+- [[TestHealthOverallScore]] - degree 5, connects to 2 communities
+- [[generate_report()]] - degree 12, connects to 1 community

@@ -1,13 +1,20 @@
 ---
 type: community
-members: 39
+members: 60
 ---
 
 # Community 1000
 
-**Members:** 39 nodes
+**Members:** 60 nodes
 
 ## Members
+- [[.__init__()_55]] - code - gateway/proxy/url_analyzer.py
+- [[._check_base64()]] - code - gateway/proxy/url_analyzer.py
+- [[._is_private_ip()]] - code - gateway/proxy/url_analyzer.py
+- [[._is_ssrf()]] - code - gateway/proxy/url_analyzer.py
+- [[._resolve_host()]] - code - gateway/proxy/url_analyzer.py
+- [[.analyze()]] - code - gateway/proxy/url_analyzer.py
+- [[.flagged()]] - code - gateway/proxy/url_analyzer.py
 - [[.test_actual_base64()]] - code - gateway/tests/test_url_analyzer.py
 - [[.test_all_lowercase_not_base64()]] - code - gateway/tests/test_url_analyzer.py
 - [[.test_api_endpoint_allowed()]] - code - gateway/tests/test_url_analyzer.py
@@ -32,11 +39,20 @@ members: 39
 - [[.test_ssn_in_url_flagged()]] - code - gateway/tests/test_url_analyzer.py
 - [[.test_stackoverflow_allowed()]] - code - gateway/tests/test_url_analyzer.py
 - [[.test_weird_scheme()]] - code - gateway/tests/test_url_analyzer.py
+- [[A single finding from URL analysis.]] - rationale - gateway/proxy/url_analyzer.py
+- [[Analyze URLs for SSRF, data exfiltration, and suspicious patterns.]] - rationale - gateway/proxy/url_analyzer.py
+- [[Analyze a URL for security issues.          Returns URLAnalysisResult with verdi]] - rationale - gateway/proxy/url_analyzer.py
+- [[Args             resolve_dns If True, resolve hostnames to IPs and check those]] - rationale - gateway/proxy/url_analyzer.py
+- [[Check for base64-encoded data in URL path and query values.]] - rationale - gateway/proxy/url_analyzer.py
+- [[Check if an IP address is privatereservedloopback.]] - rationale - gateway/proxy/url_analyzer.py
+- [[Check if hostname is a privatereserved address (SSRF attempt).]] - rationale - gateway/proxy/url_analyzer.py
 - [[Data exfiltration patterns in URLs — flagged, not blocked.]] - rationale - gateway/tests/test_url_analyzer.py
 - [[Edge cases and malformed URLs.]] - rationale - gateway/tests/test_url_analyzer.py
 - [[Ensure normal browsing URLs pass through.]] - rationale - gateway/tests/test_url_analyzer.py
 - [[Heuristic does this string look like base64-encoded data]] - rationale - gateway/proxy/url_analyzer.py
 - [[PII detection in URLs — flagged, not blocked.]] - rationale - gateway/tests/test_url_analyzer.py
+- [[Resolve hostname to IP. Returns None on failure.          NOTE DNS rebinding at]] - rationale - gateway/proxy/url_analyzer.py
+- [[Result of analyzing a URL.]] - rationale - gateway/proxy/url_analyzer.py
 - [[Short base64 strings are normal (e.g., API tokens in URLs).]] - rationale - gateway/tests/test_url_analyzer.py
 - [[Test the _looks_like_base64 helper.]] - rationale - gateway/tests/test_url_analyzer.py
 - [[TestBase64Heuristic]] - code - gateway/tests/test_url_analyzer.py
@@ -44,9 +60,14 @@ members: 39
 - [[TestLegitimateURLsAllowed]] - code - gateway/tests/test_url_analyzer.py
 - [[TestMalformedURLs]] - code - gateway/tests/test_url_analyzer.py
 - [[TestPIIInURLs]] - code - gateway/tests/test_url_analyzer.py
+- [[URLAnalysisResult]] - code - gateway/proxy/url_analyzer.py
+- [[URLAnalyzer]] - code - gateway/proxy/url_analyzer.py
+- [[URLFinding]] - code - gateway/proxy/url_analyzer.py
+- [[URLVerdict]] - code - gateway/proxy/url_analyzer.py
 - [[_looks_like_base64()]] - code - gateway/proxy/url_analyzer.py
 - [[analyzer()]] - code - gateway/tests/test_url_analyzer.py
 - [[test_url_analyzer.py]] - code - gateway/tests/test_url_analyzer.py
+- [[url_analyzer.py]] - code - gateway/proxy/url_analyzer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -56,15 +77,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 93]]
-- 6 edges to [[_COMMUNITY_Community 8]]
-- 1 edge to [[_COMMUNITY_Community 27]]
-- 1 edge to [[_COMMUNITY_Community 437]]
-- 1 edge to [[_COMMUNITY_Community 120]]
+- 4 edges to [[_COMMUNITY_Community 120]]
+- 3 edges to [[_COMMUNITY_Community 437]]
+- 3 edges to [[_COMMUNITY_Community 103]]
+- 3 edges to [[_COMMUNITY_Community 72]]
+- 2 edges to [[_COMMUNITY_Community 6]]
+- 2 edges to [[_COMMUNITY_Community 140]]
+- 1 edge to [[_COMMUNITY_Community 38]]
+- 1 edge to [[_COMMUNITY_Community 17]]
 
 ## Top bridge nodes
-- [[TestDataExfiltration]] - degree 11, connects to 3 communities
-- [[test_url_analyzer.py]] - degree 10, connects to 3 communities
-- [[TestLegitimateURLsAllowed]] - degree 11, connects to 2 communities
-- [[_looks_like_base64()]] - degree 8, connects to 2 communities
-- [[TestPIIInURLs]] - degree 8, connects to 2 communities
+- [[URLAnalyzer]] - degree 26, connects to 6 communities
+- [[URLVerdict]] - degree 10, connects to 3 communities
+- [[url_analyzer.py]] - degree 8, connects to 3 communities
+- [[TestDataExfiltration]] - degree 11, connects to 1 community
+- [[test_url_analyzer.py]] - degree 10, connects to 1 community

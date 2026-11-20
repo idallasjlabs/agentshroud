@@ -1,11 +1,11 @@
 ---
 type: community
-members: 33
+members: 34
 ---
 
 # Community 184
 
-**Members:** 33 nodes
+**Members:** 34 nodes
 
 ## Members
 - [[.__len__()]] - code - gateway/proxy/mcp_audit.py
@@ -41,6 +41,7 @@ members: 33
 - [[Record the start time of a tool call for duration tracking.]] - rationale - gateway/proxy/mcp_audit.py
 - [[TestAuditTrailBounded]] - code - gateway/tests/test_mcp_proxy.py
 - [[Verify integrity of the retained MCP audit hash-chain window.          Anchors a]] - rationale - gateway/proxy/mcp_audit.py
+- [[audit()]] - code - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,17 +51,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 31 edges to [[_COMMUNITY_Community 64]]
+- 36 edges to [[_COMMUNITY_Community 64]]
 - 24 edges to [[_COMMUNITY_Community 132]]
-- 19 edges to [[_COMMUNITY_Community 54]]
-- 4 edges to [[_COMMUNITY_Community 965]]
+- 11 edges to [[_COMMUNITY_Community 54]]
+- 8 edges to [[_COMMUNITY_Community 230]]
+- 1 edge to [[_COMMUNITY_Community 965]]
 - 1 edge to [[_COMMUNITY_Community 9]]
-- 1 edge to [[_COMMUNITY_Community 1566]]
-- 1 edge to [[_COMMUNITY_Community 941]]
-- 1 edge to [[_COMMUNITY_Community 1970]]
-- 1 edge to [[_COMMUNITY_Community 2038]]
+- 1 edge to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Community 1290]]
 
 ## Top bridge nodes
 - [[MCPAuditTrail]] - degree 90, connects to 8 communities
-- [[TestAuditTrailBounded]] - degree 20, connects to 5 communities
+- [[TestAuditTrailBounded]] - degree 20, connects to 4 communities
 - [[MCPAuditEntry]] - degree 11, connects to 1 community
+- [[audit()]] - degree 2, connects to 1 community

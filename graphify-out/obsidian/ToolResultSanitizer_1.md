@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "Community 647"
+community: "Community 455"
 location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_647
+  - community/Community_455
 ---
 
 # ToolResultSanitizer
 
 ## Connections
-- [[.__init__()_141]] - `method` [EXTRACTED]
+- [[.__init__()_138]] - `method` [EXTRACTED]
 - [[._domain_matches_pattern()]] - `method` [EXTRACTED]
 - [[._extract_code_blocks()]] - `method` [EXTRACTED]
 - [[._is_domain_allowed()]] - `method` [EXTRACTED]
@@ -47,4 +47,4 @@ tags:
 - [[test_tool_result_sanitizer_enhanced.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer_enhanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_647
+#graphify/code #graphify/EXTRACTED #community/Community_455

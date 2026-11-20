@@ -2,7 +2,7 @@
 source_file: ".agents/skills/browser/scripts/browse.py"
 type: "code"
 community: "Community 149"
-location: "L431"
+location: "L409"
 tags:
   - graphify/code
   - graphify/EXTRACTED

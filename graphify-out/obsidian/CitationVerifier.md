@@ -12,7 +12,7 @@ tags:
 # CitationVerifier
 
 ## Connections
-- [[.__init__()_76]] - `method` [EXTRACTED]
+- [[.__init__()_74]] - `method` [EXTRACTED]
 - [[._verifier()]] - `calls` [EXTRACTED]
 - [[._verifier()_1]] - `calls` [EXTRACTED]
 - [[._verify_url()]] - `method` [EXTRACTED]
@@ -32,7 +32,6 @@ tags:
 - [[KillSwitchError]] - `uses` [INFERRED]
 - [[ModeRequest]] - `uses` [INFERRED]
 - [[Path_47]] - `uses` [INFERRED]
-- [[ServiceAction]] - `uses` [INFERRED]
 - [[SkillGuardBlocked]] - `uses` [INFERRED]
 - [[TestFetchOutcome]] - `uses` [INFERRED]
 - [[TestHttpxFetcher]] - `uses` [INFERRED]

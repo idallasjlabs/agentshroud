@@ -1,21 +1,24 @@
 ---
 type: community
-members: 18
+members: 21
 ---
 
 # Community 535
 
-**Members:** 18 nodes
+**Members:** 21 nodes
 
 ## Members
 - [[ClamAV `SelfCheck Database status OK.`]] - document - docs/runbooks/troubleshooting.md
 - [[ClamAV `Socket for clamd not found yet, retrying (N1800)...`]] - document - docs/runbooks/troubleshooting.md
 - [[ClamAV `WARNING Can't query current.cvd.clamav.net`  `ERROR Database update process failed`]] - document - docs/runbooks/troubleshooting.md
+- [[Diagnostic Commands]] - document - docs/runbooks/troubleshooting.md
 - [[Gateway `CONNECT tunnel established wss-primary.slack.com443`]] - document - docs/runbooks/troubleshooting.md
 - [[Gateway `GET status - 200 (0.000s)` every 30 seconds]] - document - docs/runbooks/troubleshooting.md
 - [[Gateway `POST telegram-apibotgetUpdates - 200 (30–32s)`]] - document - docs/runbooks/troubleshooting.md
 - [[Gateway duplicate access log lines for every request]] - document - docs/runbooks/troubleshooting.md
+- [[Getting Help]] - document - docs/runbooks/troubleshooting.md
 - [[Known Log Messages]] - document - docs/runbooks/troubleshooting.md
+- [[Troubleshooting Runbook — AgentShroud]] - document - docs/runbooks/troubleshooting.md
 - [[`POST apialerts - 404 (Nms)` (resolved in v0.9.0)]] - document - docs/runbooks/troubleshooting.md
 - [[`ERROR socket-modeSocketModeClientN Failed to retrieve a new WSS URL`]] - document - docs/runbooks/troubleshooting.md
 - [[`WARN bolt-app http request failed connect ECONNREFUSED 10.254.110.28181`]] - document - docs/runbooks/troubleshooting.md
@@ -36,6 +39,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_Community 334]]
+- 1 edge to [[_COMMUNITY_Community 702]]
 
 ## Top bridge nodes
+- [[Troubleshooting Runbook — AgentShroud]] - degree 5, connects to 2 communities
 - [[Known Log Messages]] - degree 19, connects to 1 community

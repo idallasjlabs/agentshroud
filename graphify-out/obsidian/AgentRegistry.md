@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_66]] - `method` [EXTRACTED]
-- [[.__init__()_67]] - `references` [EXTRACTED]
+- [[.__init__()_64]] - `method` [EXTRACTED]
+- [[.__init__()_65]] - `references` [EXTRACTED]
 - [[.from_dict()_3]] - `method` [EXTRACTED]
 - [[.get()_3]] - `method` [EXTRACTED]
 - [[.list_agents()]] - `method` [EXTRACTED]
@@ -44,7 +44,7 @@ tags:
 - [[.test_unregister_missing_returns_none()]] - `calls` [EXTRACTED]
 - [[.test_unregister_removes_agent()]] - `calls` [EXTRACTED]
 - [[.test_writable_root_flagged()]] - `calls` [EXTRACTED]
-- [[.to_dict()_4]] - `method` [EXTRACTED]
+- [[.to_dict()_3]] - `method` [EXTRACTED]
 - [[.unregister()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[Any_18]] - `uses` [INFERRED]

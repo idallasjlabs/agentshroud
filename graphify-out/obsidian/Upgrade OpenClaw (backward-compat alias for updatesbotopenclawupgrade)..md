@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Community 49"
-location: "L633"
+community: "Community 40"
+location: "L629"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/Community_40
 ---
 
 # Upgrade OpenClaw (backward-compat alias for /updates/bot/openclaw/upgrade).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[upgrade_openclaw()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_49
+#graphify/rationale #graphify/EXTRACTED #community/Community_40

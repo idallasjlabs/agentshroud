@@ -16,7 +16,7 @@ tags:
 - [[.test_default_prefix()]] - `calls` [EXTRACTED]
 - [[.test_log_dir_created_if_missing()]] - `calls` [EXTRACTED]
 - [[.test_report_content_persisted()]] - `calls` [EXTRACTED]
-- [[Any_74]] - `references` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
 - [[Path_21]] - `references` [EXTRACTED]
 - [[Save a Trivy report to the log directory.      Args         report Parsed repo]] - `rationale_for` [EXTRACTED]
 - [[daily_cve_report.py]] - `imports` [EXTRACTED]

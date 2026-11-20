@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "Community 1352"
+community: "Community 24"
 location: "L410"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1352
+  - community/Community_24
 ---
 
 # TestContextIntegrityInPipeline
@@ -41,4 +41,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1352
+#graphify/code #graphify/INFERRED #community/Community_24

@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "Community 477"
-location: "L49"
+community: "Community 24"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_477
+  - community/Community_24
 ---
 
 # Any
 
 ## Connections
-- [[.from_dict()_8]] - `references` [EXTRACTED]
-- [[.get_integrity_status()]] - `references` [EXTRACTED]
-- [[.get_recent_alerts()]] - `references` [EXTRACTED]
-- [[.to_dict()_11]] - `references` [EXTRACTED]
-- [[MemoryIntegrityConfig]] - `uses` [INFERRED]
+- [[.__init__()_116]] - `references` [EXTRACTED]
+- [[._compile_patterns()_1]] - `references` [EXTRACTED]
+- [[.get_stats()_17]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_477
+#graphify/code #graphify/EXTRACTED #community/Community_24

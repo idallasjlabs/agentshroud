@@ -1,11 +1,11 @@
 ---
 type: community
-members: 94
+members: 97
 ---
 
 # Community 51
 
-**Members:** 94 nodes
+**Members:** 97 nodes
 
 ## Members
 - [[._make_state_with_bot()]] - code - gateway/tests/test_soc_bots.py
@@ -62,11 +62,13 @@ members: 94
 - [[Bot with no image scan data should default criticalhighmedium to 0.]] - rationale - gateway/tests/test_soc_bots.py
 - [[Build an SCLCaller with OWNER role — no FastAPI dependency resolution.]] - rationale - gateway/tests/test_soc_bots.py
 - [[Container Security Scorecard — 12-domain maturity assessment.      Standards bas]] - rationale - gateway/soc/router.py
+- [[Container name → health, or its status when not running.      Empty when the con]] - rationale - gateway/soc/router.py
 - [[If egress_filter.get_stats raises, denials defaults to 0 (no crash).]] - rationale - gateway/tests/test_soc_bots.py
 - [[Per-bot scorecard scoped to a single bot's image scan and egress stats.      Sco]] - rationale - gateway/security/scanner_integration.py
 - [[Return egress decision history (approvedenytimeout) (CC-40).]] - rationale - gateway/soc/router.py
 - [[Return the list of registered bots. Falls back to backward-compat OpenClaw defau]] - rationale - gateway/soc/router.py
 - [[Return the tracked advisory registry for the wrapped AI agent.      When bot_id]] - rationale - gateway/soc/router.py
+- [[SCLCaller_2]] - code - gateway/tests/test_soc_bots.py
 - [[TestAgentCvesBotId]] - code - gateway/tests/test_soc_bots.py
 - [[TestBotSelectorFrontend]] - code - gateway/tests/test_soc_bots.py
 - [[TestCollaboratorActivityBotFilter]] - code - gateway/tests/test_soc_bots.py
@@ -84,6 +86,7 @@ members: 94
 - [[Unit tests for the M6 bot selector backend — socv1bots + bot_id filtering.]] - rationale - gateway/tests/test_soc_bots.py
 - [[When app_state.config is None, return empty dict (backward-compat).]] - rationale - gateway/tests/test_soc_bots.py
 - [[When bot_id is given, services whose image matches the bot's image are returned.]] - rationale - gateway/tests/test_soc_bots.py
+- [[_local_agent_health()]] - code - gateway/soc/router.py
 - [[_make_app_state()]] - code - gateway/tests/test_soc_bots.py
 - [[_make_bot_config()]] - code - gateway/tests/test_soc_bots.py
 - [[_make_m6_app_state()]] - code - gateway/tests/test_soc_bots.py
@@ -111,22 +114,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 35 edges to [[_COMMUNITY_Community 10]]
-- 30 edges to [[_COMMUNITY_Community 194]]
+- 34 edges to [[_COMMUNITY_Community 10]]
+- 16 edges to [[_COMMUNITY_Community 6]]
+- 15 edges to [[_COMMUNITY_Community 194]]
 - 9 edges to [[_COMMUNITY_Community 37]]
 - 6 edges to [[_COMMUNITY_Community 614]]
-- 5 edges to [[_COMMUNITY_Community 20]]
+- 4 edges to [[_COMMUNITY_Community 890]]
+- 4 edges to [[_COMMUNITY_Community 38]]
 - 2 edges to [[_COMMUNITY_Community 29]]
 - 2 edges to [[_COMMUNITY_Community 67]]
 - 1 edge to [[_COMMUNITY_Community 68]]
 - 1 edge to [[_COMMUNITY_Community 42]]
 - 1 edge to [[_COMMUNITY_Community 85]]
-- 1 edge to [[_COMMUNITY_Community 169]]
-- 1 edge to [[_COMMUNITY_Community 8]]
 
 ## Top bridge nodes
 - [[test_soc_bots.py]] - degree 38, connects to 6 communities
 - [[compute_bot_scorecard()]] - degree 23, connects to 4 communities
-- [[_make_owner_caller()]] - degree 29, connects to 2 communities
+- [[TestComputeBotScorecard_1]] - degree 20, connects to 2 communities
+- [[TestBotSelectorFrontend]] - degree 12, connects to 2 communities
 - [[get_security_events()]] - degree 10, connects to 2 communities
-- [[get_security_scorecard()]] - degree 10, connects to 2 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_report_store.py"
 type: "rationale"
-community: "Community 110"
+community: "Community 1214"
 location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_110
+  - community/Community_1214
 ---
 
 # Route-level: POST/GET /api/reports through the FastAPI app (SCRUM-79).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestReportAPI]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_110
+#graphify/rationale #graphify/EXTRACTED #community/Community_1214

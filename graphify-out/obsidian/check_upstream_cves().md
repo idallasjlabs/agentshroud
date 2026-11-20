@@ -19,7 +19,7 @@ tags:
 - [[.test_skips_advisory_without_ghsa_id()]] - `calls` [EXTRACTED]
 - [[.test_skips_ghsa_already_in_registry()]] - `calls` [EXTRACTED]
 - [[.test_uses_github_token_in_header()]] - `calls` [EXTRACTED]
-- [[Any_47]] - `references` [EXTRACTED]
+- [[Any_46]] - `references` [EXTRACTED]
 - [[Fetch one agent's GitHub Security Advisories and return advisories we don't trac]] - `rationale_for` [EXTRACTED]
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
 - [[get_agent_ghsa_repo()]] - `calls` [EXTRACTED]

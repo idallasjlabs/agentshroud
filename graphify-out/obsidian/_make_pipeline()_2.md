@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "Community 531"
+community: "Community 24"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_531
+  - community/Community_24
 ---
 
 # _make_pipeline()
@@ -30,4 +30,4 @@ tags:
 - [[SecurityPipeline]] - `calls` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_531
+#graphify/code #graphify/EXTRACTED #community/Community_24

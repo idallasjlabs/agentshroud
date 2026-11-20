@@ -12,9 +12,9 @@ tags:
 # FakePipelineResult
 
 ## Connections
+- [[.process_inbound()_7]] - `references` [EXTRACTED]
 - [[.process_inbound()_8]] - `references` [EXTRACTED]
 - [[.process_inbound()_9]] - `references` [EXTRACTED]
-- [[.process_inbound()_10]] - `references` [EXTRACTED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RateLimiter]] - `uses` [INFERRED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]

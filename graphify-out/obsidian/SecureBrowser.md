@@ -24,7 +24,6 @@ tags:
 - [[._validate_url()]] - `method` [EXTRACTED]
 - [[.click()]] - `method` [EXTRACTED]
 - [[.close()]] - `method` [EXTRACTED]
-- [[.detect_captcha()]] - `method` [EXTRACTED]
 - [[.extract()]] - `method` [EXTRACTED]
 - [[.fill_field()]] - `method` [EXTRACTED]
 - [[.get_audit_log()]] - `method` [EXTRACTED]

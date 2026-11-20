@@ -2,7 +2,7 @@
 source_file: "src/interfaces/text_control_center.py"
 type: "rationale"
 community: "Community 282"
-location: "L249"
+location: "L230"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

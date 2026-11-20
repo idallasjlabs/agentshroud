@@ -1,20 +1,18 @@
 ---
-source_file: "scripts/discover_upstream_versions.py"
+source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "Community 48"
-location: "L176"
+community: "Community 104"
+location: "L835"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_48
+  - community/Community_104
 ---
 
 # Any
 
 ## Connections
-- [[_digest_for_tag()]] - `references` [EXTRACTED]
-- [[_retry()]] - `references` [EXTRACTED]
-- [[discover()]] - `references` [EXTRACTED]
-- [[fetch_dockerhub_tags()]] - `references` [EXTRACTED]
+- [[summarize()]] - `references` [EXTRACTED]
+- [[triage_entry()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_48
+#graphify/code #graphify/EXTRACTED #community/Community_104

@@ -23,7 +23,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_Community 82]]
 - 2 edges to [[_COMMUNITY_Community 917]]
-- 1 edge to [[_COMMUNITY_Community 8]]
+- 1 edge to [[_COMMUNITY_Community 38]]
 
 ## Top bridge nodes
 - [[_loadEgress()]] - degree 7, connects to 3 communities

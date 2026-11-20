@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[.__call__()_2]] - `method` [EXTRACTED]
-- [[.__init__()_155]] - `method` [EXTRACTED]
+- [[.__init__()_152]] - `method` [EXTRACTED]
 - [[AlertTelegramRelay]] - `uses` [INFERRED]
 - [[EventBus]] - `uses` [INFERRED]
 - [[test_alert_telegram_relay.py]] - `contains` [EXTRACTED]

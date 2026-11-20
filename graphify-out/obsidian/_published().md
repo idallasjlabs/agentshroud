@@ -12,7 +12,7 @@ tags:
 # _published()
 
 ## Connections
-- [[Any_79]] - `references` [EXTRACTED]
+- [[Any_75]] - `references` [EXTRACTED]
 - [[Normalise a compose port (short or long syntax) to host_ippublishedtarget.]] - `rationale_for` [EXTRACTED]
 - [[check_gateway_edge_port_loopback_only()]] - `calls` [EXTRACTED]
 - [[test_edge_network_isolation.py]] - `contains` [EXTRACTED]

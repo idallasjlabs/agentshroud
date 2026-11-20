@@ -8,7 +8,7 @@ members: 34
 **Members:** 34 nodes
 
 ## Members
-- [[.__init__()_78]] - code - gateway/security/config_integrity.py
+- [[.__init__()_76]] - code - gateway/security/config_integrity.py
 - [[._hash_file()]] - code - gateway/security/config_integrity.py
 - [[._load_baseline()]] - code - gateway/security/config_integrity.py
 - [[._save_baseline()]] - code - gateway/security/config_integrity.py
@@ -52,7 +52,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_Community 151]]
-- 1 edge to [[_COMMUNITY_Community 22]]
+- 1 edge to [[_COMMUNITY_Community 162]]
 
 ## Top bridge nodes
 - [[ConfigIntegrityMonitor]] - degree 26, connects to 2 communities

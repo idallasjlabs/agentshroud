@@ -1,17 +1,15 @@
 ---
 type: community
-members: 4
+members: 2
 ---
 
 # Community 2333
 
-**Members:** 4 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[Fallback minimal dashboard when template file is missing.]] - rationale - gateway/soc/router.py
-- [[Serve the unified SOC web dashboard.]] - rationale - gateway/soc/router.py
-- [[_minimal_dashboard_html()]] - code - gateway/soc/router.py
-- [[soc_dashboard()]] - code - gateway/soc/router.py
+- [[gemma-4-12b-it-4bit is NOT renamed — oMLX accepts it case-insensitively     (con]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_normalize_local_model_omlx_gemma_passes_through_unchanged()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,8 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 10]]
+- 1 edge to [[_COMMUNITY_Community 208]]
 
 ## Top bridge nodes
-- [[soc_dashboard()]] - degree 4, connects to 1 community
-- [[_minimal_dashboard_html()]] - degree 3, connects to 1 community
+- [[test_normalize_local_model_omlx_gemma_passes_through_unchanged()]] - degree 2, connects to 1 community

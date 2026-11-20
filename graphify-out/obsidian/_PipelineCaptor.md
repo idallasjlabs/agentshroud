@@ -12,10 +12,10 @@ tags:
 # _PipelineCaptor
 
 ## Connections
-- [[.__init__()_177]] - `method` [EXTRACTED]
+- [[.__init__()_174]] - `method` [EXTRACTED]
 - [[._run_forward()]] - `references` [EXTRACTED]
-- [[.process_inbound()_3]] - `method` [EXTRACTED]
-- [[.process_outbound()_3]] - `method` [EXTRACTED]
+- [[.process_inbound()_2]] - `method` [EXTRACTED]
+- [[.process_outbound()_2]] - `method` [EXTRACTED]
 - [[.test_agent_id_propagated_for_hermes()]] - `calls` [EXTRACTED]
 - [[.test_agent_id_propagated_for_openclaw()]] - `calls` [EXTRACTED]
 - [[.test_body_owner_id_with_matching_trusted_header_is_honored()]] - `calls` [EXTRACTED]

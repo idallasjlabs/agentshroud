@@ -16,7 +16,6 @@ tags:
 - [[.from_environment()]] - `method` [EXTRACTED]
 - [[.get_effective_allowlist()]] - `method` [EXTRACTED]
 - [[.is_denylisted()]] - `method` [EXTRACTED]
-- [[.matches_allowlist()]] - `method` [EXTRACTED]
 - [[.setup_method()_29]] - `calls` [EXTRACTED]
 - [[.test_allow_is_not_persisted_to_audit_store()]] - `calls` [EXTRACTED]
 - [[.test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - `calls` [EXTRACTED]

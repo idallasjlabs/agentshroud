@@ -1,18 +1,18 @@
 ---
 type: community
-members: 182
+members: 179
 ---
 
 # Community 75
 
-**Members:** 182 nodes
+**Members:** 179 nodes
 
 ## Members
 - [[.__call__()_12]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.__init__()_123]] - code - gateway/security/progressive_lockdown.py
-- [[.__init__()_202]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.__init__()_203]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.__init__()_210]] - code - gateway/tests/test_soc_edge.py
+- [[.__init__()_121]] - code - gateway/security/progressive_lockdown.py
+- [[.__init__()_199]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.__init__()_200]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.__init__()_207]] - code - gateway/tests/test_soc_edge.py
 - [[._action()]] - code - gateway/security/progressive_lockdown.py
 - [[._claim_notify()]] - code - gateway/security/progressive_lockdown.py
 - [[._effective_level()]] - code - gateway/security/progressive_lockdown.py
@@ -29,7 +29,7 @@ members: 182
 - [[.is_owner()_4]] - code - gateway/tests/test_soc_edge.py
 - [[.is_suspended()]] - code - gateway/security/progressive_lockdown.py
 - [[.level_of()]] - code - gateway/security/progressive_lockdown.py
-- [[.process_inbound()_7]] - code - gateway/tests/test_progressive_lockdown.py
+- [[.process_inbound()_6]] - code - gateway/tests/test_progressive_lockdown.py
 - [[.record_block()]] - code - gateway/security/progressive_lockdown.py
 - [[.require()_1]] - code - gateway/tests/test_soc_edge.py
 - [[.reset()_2]] - code - gateway/security/progressive_lockdown.py
@@ -127,7 +127,6 @@ members: 182
 - [[Owner messages must never be blocked by the suspension logic.]] - rationale - gateway/tests/test_progressive_lockdown.py
 - [[Owner should receive an escalation notice on the 3rd block.]] - rationale - gateway/tests/test_progressive_lockdown.py
 - [[PassthroughPipeline]] - code - gateway/tests/test_progressive_lockdown.py
-- [[Path_1]] - code - gateway/inbound_edge/profiles.py
 - [[Progressive Lockdown UX Tests]] - code - gateway/tests/test_progressive_lockdown.py
 - [[ProgressiveLockdown]] - code - gateway/security/progressive_lockdown.py
 - [[RBAC is recorded, not enforced; owner is switchable.]] - rationale - gateway/tests/test_soc_edge.py
@@ -177,8 +176,6 @@ members: 182
 - [[holder()]] - code - gateway/tests/test_soc_edge.py
 - [[progressive_lockdown.py]] - code - gateway/security/progressive_lockdown.py
 - [[state()]] - code - gateway/tests/test_soc_edge.py
-- [[test_command_center_has_agents_and_edge_tabs()]] - code - gateway/tests/test_soc_edge.py
-- [[test_command_center_shows_deployment_and_connection()]] - code - gateway/tests/test_soc_edge.py
 - [[test_critical_alert_triggers_lockdown()]] - code - gateway/tests/test_falco_watcher.py
 - [[test_deduplication_same_alert_twice()]] - code - gateway/tests/test_falco_watcher.py
 - [[test_edge_service_exposes_enforced_profiles()]] - code - gateway/tests/test_soc_edge.py
@@ -199,32 +196,33 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 43 edges to [[_COMMUNITY_Community 32]]
+- 30 edges to [[_COMMUNITY_Community 6]]
+- 26 edges to [[_COMMUNITY_Community 84]]
+- 20 edges to [[_COMMUNITY_Community 2048]]
 - 20 edges to [[_COMMUNITY_Community 14]]
-- 18 edges to [[_COMMUNITY_Community 2048]]
-- 16 edges to [[_COMMUNITY_Community 6]]
-- 13 edges to [[_COMMUNITY_Community 169]]
-- 10 edges to [[_COMMUNITY_Community 151]]
-- 10 edges to [[_COMMUNITY_Community 890]]
+- 12 edges to [[_COMMUNITY_Community 80]]
+- 11 edges to [[_COMMUNITY_Community 890]]
+- 9 edges to [[_COMMUNITY_Community 229]]
 - 8 edges to [[_COMMUNITY_Community 194]]
-- 6 edges to [[_COMMUNITY_Community 794]]
+- 6 edges to [[_COMMUNITY_Community 1070]]
 - 5 edges to [[_COMMUNITY_Community 102]]
-- 3 edges to [[_COMMUNITY_Community 8]]
+- 4 edges to [[_COMMUNITY_Community 32]]
 - 3 edges to [[_COMMUNITY_Community 41]]
-- 2 edges to [[_COMMUNITY_Community 84]]
 - 2 edges to [[_COMMUNITY_Community 50]]
-- 2 edges to [[_COMMUNITY_Community 96]]
-- 2 edges to [[_COMMUNITY_Community 10]]
-- 1 edge to [[_COMMUNITY_Community 85]]
+- 2 edges to [[_COMMUNITY_Community 151]]
+- 2 edges to [[_COMMUNITY_Community 18]]
+- 1 edge to [[_COMMUNITY_Community 62]]
 - 1 edge to [[_COMMUNITY_Community 978]]
-- 1 edge to [[_COMMUNITY_Community 18]]
-- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 38]]
+- 1 edge to [[_COMMUNITY_Community 223]]
+- 1 edge to [[_COMMUNITY_Community 89]]
+- 1 edge to [[_COMMUNITY_Community 10]]
 - 1 edge to [[_COMMUNITY_Community 37]]
 - 1 edge to [[_COMMUNITY_Community 1248]]
 
 ## Top bridge nodes
-- [[test_soc_edge.py]] - degree 34, connects to 11 communities
-- [[ProgressiveLockdown]] - degree 112, connects to 8 communities
-- [[TestEdgeKill]] - degree 22, connects to 6 communities
-- [[FakeCaller]] - degree 19, connects to 6 communities
-- [[TestEdgeEnroll]] - degree 17, connects to 6 communities
+- [[test_soc_edge.py]] - degree 34, connects to 10 communities
+- [[ProgressiveLockdown]] - degree 112, connects to 9 communities
+- [[LockdownLevel_1]] - degree 61, connects to 5 communities
+- [[TestEdgeKill]] - degree 22, connects to 5 communities
+- [[FakeCaller]] - degree 19, connects to 5 communities

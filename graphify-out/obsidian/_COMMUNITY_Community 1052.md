@@ -1,28 +1,41 @@
 ---
 type: community
-members: 15
+members: 28
 ---
 
 # Community 1052
 
-**Members:** 15 nodes
+**Members:** 28 nodes
 
 ## Members
-- [[.client()_2]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_check_agentshroud_updates()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_check_openclaw_updates()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_export_config()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_get_config()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_get_logs()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_killswitch_freeze()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_killswitch_invalid_mode()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_killswitch_no_confirm()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_security_report()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_status()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_stop_service()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_update_history()]] - code - gateway/tests/test_runtime_engines.py
-- [[Test the management API endpoints with mocked runtime.]] - rationale - gateway/tests/test_runtime_engines.py
-- [[TestWebAPI]] - code - gateway/tests/test_runtime_engines.py
+- [[.__init__()_73]] - code - gateway/security/canary_tripwire.py
+- [[.setup_method()_1]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_api_key_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_base64_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_case_insensitive()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_code_word_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_counter_increments()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_custom_config()_1]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_empty_input()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_no_canaries()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_normal_content_passes()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_plain_canary_detected()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_reversed_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_rot13_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_scan_response_blocks_on_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_scan_response_no_block_when_block_disabled()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_scan_response_passes_clean_text()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_scan_response_records_scan_method()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_scan_response_returns_tripwire_response()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_spaced_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_url_encoded_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_zero_width_bypass()]] - code - gateway/tests/test_canary_tripwire.py
+- [[Bridge result returned by scan_response() for pipeline compatibility.]] - rationale - gateway/security/canary_tripwire.py
+- [[CanaryConfig]] - code - gateway/security/canary_tripwire.py
+- [[TestCanaryTripwire]] - code - gateway/tests/test_canary_tripwire.py
+- [[TripwireResponse]] - code - gateway/security/canary_tripwire.py
+- [[canary_tripwire.py]] - code - gateway/security/canary_tripwire.py
+- [[test_canary_tripwire.py]] - code - gateway/tests/test_canary_tripwire.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,11 +45,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 240]]
-- 1 edge to [[_COMMUNITY_Community 379]]
-- 1 edge to [[_COMMUNITY_Community 372]]
-- 1 edge to [[_COMMUNITY_Community 738]]
-- 1 edge to [[_COMMUNITY_Community 250]]
+- 10 edges to [[_COMMUNITY_Community 84]]
+- 1 edge to [[_COMMUNITY_Community 431]]
 
 ## Top bridge nodes
-- [[TestWebAPI]] - degree 20, connects to 5 communities
+- [[canary_tripwire.py]] - degree 5, connects to 2 communities
+- [[TestCanaryTripwire]] - degree 25, connects to 1 community
+- [[TripwireResponse]] - degree 5, connects to 1 community
+- [[test_canary_tripwire.py]] - degree 4, connects to 1 community
+- [[.test_custom_config()_1]] - degree 3, connects to 1 community

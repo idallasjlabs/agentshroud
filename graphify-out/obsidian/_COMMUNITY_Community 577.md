@@ -1,32 +1,31 @@
 ---
 type: community
-members: 19
+members: 18
 ---
 
 # Community 577
 
-**Members:** 19 nodes
+**Members:** 18 nodes
 
 ## Members
-- [[1. Container Isolation]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[10. Approval Queue]] - document - docs/vault/01 - Architecture/Data Flow.md
-- [[2. Capability Dropping]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[2. Network Isolation]] - document - docs/security/container-policy.md
-- [[2.1 Docker Networks]] - document - docs/security/container-policy.md
-- [[2.2 Exposed Ports]] - document - docs/security/container-policy.md
-- [[2.3 Tailscale Network]] - document - docs/security/container-policy.md
-- [[3. Resource Limits]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[4. Network Isolation]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[5. Audit Ledger]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[5. Network Isolation]] - document - docs/security/security-architecture.md
-- [[6. Approval Queue]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[6. DNS Filter]] - document - docs/security/security-architecture.md
-- [[7. Secrets Management]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[7. TLS Termination and Inspection]] - document - docs/security/security-architecture.md
-- [[8. Bot Identity Separation]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[8. Network Rate Limiter]] - document - docs/security/security-architecture.md
-- [[Layer 2 Network Security (4 Modules)]] - document - docs/security/security-architecture.md
-- [[Security Controls]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[.setup_method()_28]] - code - gateway/tests/test_security_hardening.py
+- [[.teardown_method()_6]] - code - gateway/tests/test_security_hardening.py
+- [[.test_action_allowed_basic()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_action_denied_high_trust()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_action_unknown_agent()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_failure_decreases_score()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_get_trust()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_get_trust_unknown()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_history()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_register_agent()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_register_idempotent()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_score_never_negative()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_sqlite_persistence()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_success_increases_score()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_trust_escalation_attack()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_violation_large_decrease()]] - code - gateway/tests/test_security_hardening.py
+- [[TestTrustManager]] - code - gateway/tests/test_security_hardening.py
+- [[Verify you can't jump from UNTRUSTED to FULL in one step.]] - rationale - gateway/tests/test_security_hardening.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,14 +35,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 164]]
-- 1 edge to [[_COMMUNITY_Community 487]]
-- 1 edge to [[_COMMUNITY_Community 454]]
-- 1 edge to [[_COMMUNITY_Community 301]]
-- 1 edge to [[_COMMUNITY_Community 1219]]
+- 8 edges to [[_COMMUNITY_Community 11]]
+- 4 edges to [[_COMMUNITY_Community 22]]
+- 3 edges to [[_COMMUNITY_Community 0]]
+- 3 edges to [[_COMMUNITY_Community 52]]
+- 2 edges to [[_COMMUNITY_Community 17]]
+- 1 edge to [[_COMMUNITY_Community 21]]
+- 1 edge to [[_COMMUNITY_Community 96]]
+- 1 edge to [[_COMMUNITY_Community 84]]
 
 ## Top bridge nodes
-- [[Security Controls]] - degree 12, connects to 2 communities
-- [[2. Network Isolation]] - degree 6, connects to 1 community
-- [[Layer 2 Network Security (4 Modules)]] - degree 6, connects to 1 community
-- [[10. Approval Queue]] - degree 2, connects to 1 community
+- [[TestTrustManager]] - degree 35, connects to 8 communities
+- [[.test_trust_escalation_attack()]] - degree 4, connects to 1 community
+- [[.setup_method()_28]] - degree 2, connects to 1 community
+- [[.test_sqlite_persistence()]] - degree 2, connects to 1 community

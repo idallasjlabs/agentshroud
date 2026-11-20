@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: "Community 479"
+community: "Community 254"
 location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_479
+  - community/Community_254
 ---
 
 # TestAuditStore
@@ -25,4 +25,4 @@ tags:
 - [[TestAuditExporter]] - `references` [INFERRED]
 - [[test_audit_export.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_479
+#graphify/code #graphify/EXTRACTED #community/Community_254

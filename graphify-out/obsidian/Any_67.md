@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/resource_guard.py"
+source_file: "gateway/security/soc_correlation.py"
 type: "code"
-community: "Community 5"
-location: "L102"
+community: "Community 2071"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_5
+  - community/Community_2071
 ---
 
 # Any
 
 ## Connections
-- [[._alert_high_usage()]] - `references` [EXTRACTED]
-- [[._get_disk_io_stats()]] - `references` [EXTRACTED]
-- [[.add_alert_callback()_1]] - `references` [EXTRACTED]
-- [[.get_usage_stats()]] - `references` [EXTRACTED]
+- [[.to_dict()_12]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_5
+#graphify/code #graphify/EXTRACTED #community/Community_2071

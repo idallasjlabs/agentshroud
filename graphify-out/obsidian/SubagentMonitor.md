@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_135]] - `method` [EXTRACTED]
-- [[._log_event()_1]] - `method` [EXTRACTED]
+- [[.__init__()_132]] - `method` [EXTRACTED]
+- [[._log_event()]] - `method` [EXTRACTED]
 - [[.check_tool_usage()]] - `method` [EXTRACTED]
-- [[.deregister()_1]] - `method` [EXTRACTED]
+- [[.deregister()]] - `method` [EXTRACTED]
 - [[.get_active()]] - `method` [EXTRACTED]
 - [[.get_audit_log()_6]] - `method` [EXTRACTED]
 - [[.get_flagged_events()]] - `method` [EXTRACTED]

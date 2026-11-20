@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
 type: "document"
-community: "Community 2017"
+community: "Community 389"
 location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2017
+  - community/Community_389
 ---
 
 # Common Injection Signatures Detected
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Prompt Injection Blocks_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2017
+#graphify/document #graphify/EXTRACTED #community/Community_389

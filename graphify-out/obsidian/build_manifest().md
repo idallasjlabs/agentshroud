@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/descriptors.py"
 type: "code"
-community: "Community 41"
+community: "Community 1968"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_41
+  - community/Community_1968
 ---
 
 # build_manifest()
@@ -17,4 +17,4 @@ tags:
 - [[descriptors.py]] - `contains` [EXTRACTED]
 - [[main()_12]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_41
+#graphify/code #graphify/EXTRACTED #community/Community_1968

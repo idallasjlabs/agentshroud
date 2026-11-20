@@ -12,7 +12,7 @@ tags:
 # KillSwitchConfig
 
 ## Connections
-- [[.__init__()_107]] - `references` [EXTRACTED]
+- [[.__init__()_105]] - `references` [EXTRACTED]
 - [[KillSwitchConfig]] - `uses` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/Community_9

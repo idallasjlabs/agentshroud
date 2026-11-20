@@ -2,7 +2,7 @@
 source_file: "gateway/security/rbac_config.py"
 type: "code"
 community: "Community 223"
-location: "L314"
+location: "L309"
 tags:
   - graphify/code
   - graphify/EXTRACTED

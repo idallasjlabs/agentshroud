@@ -12,14 +12,14 @@ tags:
 # CrossBotTrustLedger
 
 ## Connections
-- [[.__init__()_83]] - `method` [EXTRACTED]
+- [[.__init__()_81]] - `method` [EXTRACTED]
 - [[._propagate()]] - `method` [EXTRACTED]
 - [[.build_full_mesh()]] - `method` [EXTRACTED]
 - [[.get_incidents()]] - `method` [EXTRACTED]
 - [[.incident_count()]] - `method` [EXTRACTED]
 - [[.peers_of()]] - `method` [EXTRACTED]
 - [[.record_incident()]] - `method` [EXTRACTED]
-- [[.register_peer()_1]] - `method` [EXTRACTED]
+- [[.register_peer()]] - `method` [EXTRACTED]
 - [[.register_trust_manager()]] - `method` [EXTRACTED]
 - [[CrossBotTrustLedger_1]] - `uses` [INFERRED]
 - [[Shared trust decay channel for multi-bot deployments.      Usage          ledg]] - `rationale_for` [EXTRACTED]

@@ -1,20 +1,26 @@
 ---
 type: community
-members: 7
+members: 13
 ---
 
 # Community 2052
 
-**Members:** 7 nodes
+**Members:** 13 nodes
 
 ## Members
-- [[.test_basic_spawn()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_depth_exceeded_allowed_in_monitor()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_depth_exceeded_denied()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_depth_penalty_reduces_trust()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_disabled_always_allows()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_strict_inheritance_caps_trust()]] - code - gateway/tests/test_subagent_governance.py
-- [[TestSpawnAuthorization]] - code - gateway/tests/test_subagent_governance.py
+- [[1. Accomplishments This Phase_2]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🌐 NetworkValidator Graceful Degradation]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[💾 Resource Management]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[📁 AlertDispatcher Storage Fix]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[📊 Management API Enhancement]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[📡 Reliable Shutdown Notifications]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🔄 Op-proxy Communication Hardening]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🔐 EncryptedStore Security Hardening]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🔒 Complete Security Module Integration]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🔧 Auto-Configuration Pipeline]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🖥️ Control Interface Authentication]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🚀 Async Startup Optimization]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🧠 Enhanced PII Detection Pipeline]] - document - docs/planning/reviews/phase-review-2026-02-24.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +30,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 1209]]
-- 2 edges to [[_COMMUNITY_Community 1360]]
-- 1 edge to [[_COMMUNITY_Community 1343]]
+- 1 edge to [[_COMMUNITY_Community 153]]
+- 1 edge to [[_COMMUNITY_Community 780]]
 
 ## Top bridge nodes
-- [[TestSpawnAuthorization]] - degree 12, connects to 3 communities
+- [[1. Accomplishments This Phase_2]] - degree 14, connects to 2 communities

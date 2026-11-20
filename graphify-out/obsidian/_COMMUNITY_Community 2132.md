@@ -21,8 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 39]]
-- 1 edge to [[_COMMUNITY_Community 312]]
+- 2 edges to [[_COMMUNITY_Community 39]]
 
 ## Top bridge nodes
 - [[CollabMode]] - degree 3, connects to 1 community

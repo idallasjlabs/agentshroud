@@ -2,7 +2,7 @@
 source_file: "gateway/security/rbac_config.py"
 type: "code"
 community: "Community 223"
-location: "L389"
+location: "L384"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,7 @@ tags:
 # _write_collab_store()
 
 ## Connections
+- [[Ensure the persistence store's parent directory exists. Returns False on failure]] - `rationale_for` [EXTRACTED]
 - [[Write the full collaborator persistence store (all keys) to disk.]] - `rationale_for` [EXTRACTED]
 - [[pause_collaborator()]] - `calls` [EXTRACTED]
 - [[persist_approved_collaborator()]] - `calls` [EXTRACTED]

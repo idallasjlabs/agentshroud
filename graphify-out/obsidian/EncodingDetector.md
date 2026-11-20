@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "Community 32"
+community: "Community 84"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Community_84
 ---
 
 # EncodingDetector
 
 ## Connections
-- [[.__init__()_92]] - `method` [EXTRACTED]
+- [[.__init__()_90]] - `method` [EXTRACTED]
 - [[.analyze()_1]] - `method` [EXTRACTED]
 - [[.decode_base64_segments()]] - `method` [EXTRACTED]
 - [[.decode_hex()]] - `method` [EXTRACTED]
@@ -66,7 +66,7 @@ tags:
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[pipeline()_1]] - `calls` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[run()_2]] - `calls` [EXTRACTED]
 - [[service.py]] - `imports` [EXTRACTED]
 - [[stack()]] - `calls` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
@@ -81,4 +81,4 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_32
+#graphify/code #graphify/EXTRACTED #community/Community_84

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "Community 122"
+community: "Community 261"
 location: "L107"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_122
+  - community/Community_261
 ---
 
 # CredentialValidator
@@ -34,4 +34,4 @@ tags:
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]
 - [[test_key_rotation_internals.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_122
+#graphify/code #graphify/INFERRED #community/Community_261

@@ -8,8 +8,8 @@ members: 101
 **Members:** 101 nodes
 
 ## Members
-- [[.__init__()_109]] - code - gateway/security/mcp_policy.py
-- [[.__init__()_197]] - code - gateway/tests/test_mcp_policy.py
+- [[.__init__()_107]] - code - gateway/security/mcp_policy.py
+- [[.__init__()_194]] - code - gateway/tests/test_mcp_policy.py
 - [[.__post_init__()_5]] - code - gateway/security/mcp_policy.py
 - [[._decide()_1]] - code - gateway/security/mcp_policy.py
 - [[._tier_for()_1]] - code - gateway/security/mcp_policy.py
@@ -39,7 +39,7 @@ members: 101
 - [[A stock config (no mcp_policy) must produce a non-empty, deny-by-default policy]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
 - [[An empty config denies everything — never a blanket allow.]] - rationale - gateway/tests/test_mcp_policy.py
 - [[An operator-authored mcp_policy section must be honoured verbatim.]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[Any_57]] - code - gateway/security/mcp_policy.py
+- [[Any_53]] - code - gateway/security/mcp_policy.py
 - [[Decides allow  deny  require-approval for MCP tool calls.      Usage]] - rationale - gateway/security/mcp_policy.py
 - [[Declarative MCP security policy.      Loaded from the ``mcp_policy`` section of]] - rationale - gateway/security/mcp_policy.py
 - [[End-to-end the engine wired into MCPProxy with a REAL approval queue     must n]] - rationale - gateway/tests/test_mcp_policy.py
@@ -118,15 +118,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 21 edges to [[_COMMUNITY_Community 30]]
-- 16 edges to [[_COMMUNITY_Community 64]]
-- 13 edges to [[_COMMUNITY_Community 194]]
-- 9 edges to [[_COMMUNITY_Community 7]]
-- 6 edges to [[_COMMUNITY_Community 965]]
-- 3 edges to [[_COMMUNITY_Community 8]]
-- 3 edges to [[_COMMUNITY_Community 151]]
-- 2 edges to [[_COMMUNITY_Community 300]]
+- 22 edges to [[_COMMUNITY_Community 64]]
+- 16 edges to [[_COMMUNITY_Community 30]]
+- 15 edges to [[_COMMUNITY_Community 6]]
+- 13 edges to [[_COMMUNITY_Community 7]]
+- 4 edges to [[_COMMUNITY_Community 151]]
+- 2 edges to [[_COMMUNITY_Community 221]]
 - 1 edge to [[_COMMUNITY_Community 489]]
+- 1 edge to [[_COMMUNITY_Community 38]]
 - 1 edge to [[_COMMUNITY_Community 947]]
 - 1 edge to [[_COMMUNITY_Community 33]]
 - 1 edge to [[_COMMUNITY_Community 70]]

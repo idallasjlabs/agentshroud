@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[.__init__()_25]] - `method` [EXTRACTED]
-- [[.__init__()_54]] - `calls` [EXTRACTED]
+- [[.__init__()_53]] - `calls` [EXTRACTED]
 - [[.check()]] - `method` [EXTRACTED]
 - [[.test_collaborator_rate_limit_notice_falls_back_without_markdown()]] - `calls` [EXTRACTED]
 - [[.test_collaborator_rate_limit_notice_includes_retry_window()]] - `calls` [EXTRACTED]

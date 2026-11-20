@@ -22,7 +22,6 @@ tags:
 - [[KillSwitchError]] - `contains` [EXTRACTED]
 - [[ModeRequest]] - `contains` [EXTRACTED]
 - [[RuntimeConfig]] - `imports` [EXTRACTED]
-- [[ServiceAction]] - `contains` [EXTRACTED]
 - [[SkillGuard]] - `imports` [EXTRACTED]
 - [[SkillGuardBlocked]] - `contains` [EXTRACTED]
 - [[SkillsManifest]] - `imports` [EXTRACTED]

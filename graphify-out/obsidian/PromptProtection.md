@@ -12,12 +12,11 @@ tags:
 # PromptProtection
 
 ## Connections
-- [[.__init__()_125]] - `method` [EXTRACTED]
+- [[.__init__()_123]] - `method` [EXTRACTED]
 - [[._calculate_similarity()]] - `method` [EXTRACTED]
 - [[._compile_detection_patterns()_1]] - `method` [EXTRACTED]
 - [[._load_protected_content()]] - `method` [EXTRACTED]
 - [[._redact_fuzzy_match()]] - `method` [EXTRACTED]
-- [[._redact_match()]] - `method` [EXTRACTED]
 - [[.add_protected_content()]] - `method` [EXTRACTED]
 - [[.get_protection_stats()]] - `method` [EXTRACTED]
 - [[.register_bot_hostnames()]] - `method` [EXTRACTED]
@@ -33,7 +32,7 @@ tags:
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[prompt_protection()]] - `calls` [EXTRACTED]
 - [[prompt_protection.py]] - `contains` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[run()_2]] - `calls` [EXTRACTED]
 - [[test_prompt_protection.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_141

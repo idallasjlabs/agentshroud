@@ -2,7 +2,7 @@
 source_file: "gateway/security/key_vault.py"
 type: "code"
 community: "Community 684"
-location: "L71"
+location: "L65"
 tags:
   - graphify/code
   - graphify/INFERRED
@@ -12,9 +12,9 @@ tags:
 # KeyVault
 
 ## Connections
-- [[.__init__()_105]] - `references` [EXTRACTED]
-- [[.__init__()_106]] - `references` [EXTRACTED]
-- [[.__init__()_104]] - `method` [EXTRACTED]
+- [[.__init__()_103]] - `references` [EXTRACTED]
+- [[.__init__()_104]] - `references` [EXTRACTED]
+- [[.__init__()_102]] - `method` [EXTRACTED]
 - [[._agent_in_scope()]] - `method` [EXTRACTED]
 - [[._log_audit()]] - `method` [EXTRACTED]
 - [[._make_vault_pipeline()]] - `calls` [EXTRACTED]

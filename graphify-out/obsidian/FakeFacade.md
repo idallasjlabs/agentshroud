@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_edge_pipeline.py"
 type: "code"
-community: "Community 32"
+community: "Community 84"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_32
+  - community/Community_84
 ---
 
 # FakeFacade
 
 ## Connections
-- [[.__init__()_173]] - `method` [EXTRACTED]
+- [[.__init__()_170]] - `method` [EXTRACTED]
 - [[.run()_11]] - `method` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[ApprovalStore_1]] - `uses` [INFERRED]
@@ -34,4 +34,4 @@ tags:
 - [[edge()_1]] - `calls` [EXTRACTED]
 - [[test_edge_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_32
+#graphify/code #graphify/INFERRED #community/Community_84

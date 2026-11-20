@@ -1,28 +1,21 @@
 ---
 type: community
-members: 15
+members: 8
 ---
 
 # Community 1214
 
-**Members:** 15 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[AgentShroud Module Inventory (Blue Team)]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
-- [[AgentShroud Module Inventory (Red Team)]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
-- [[AgentShroud Skills Library]] - document - skills/README.md
-- [[Custom Skills]] - document - skills/README.md
-- [[Directory Structure_2]] - document - skills/README.md
-- [[Enterprise Security Feature Priorities (Steve Hay Assessment, Red Team copy)]] - document - skills/custom/agentshroud-redteam/references/steve-hay-assessment.md
-- [[Module Coverage Heat Map Legend (EMAC—)]] - concept - skills/custom/agentshroud-blueteam/SKILL.md
-- [[OpenClaw Built-in Skills]] - document - skills/README.md
-- [[README_130]] - document - skills/README.md
-- [[Red Team Assessment Plan (Steve Hay Plan, Red Team copy)]] - document - skills/custom/agentshroud-redteam/references/steve-hay-plan.md
-- [[SKILL_200]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[STPA-Sec Loss Categories (L-1 Data Disclosure, L-2 Unauthorized Actions, L-3 Agent Integrity, L-4 Audit Integrity)]] - concept - skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md
-- [[STPA-Sec Methodology]] - concept - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Unsafe Control Actions (UCA-1 through UCA-17)]] - concept - skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md
-- [[Usage_143]] - document - skills/README.md
+- [[.client()_1]] - code - gateway/tests/test_report_store.py
+- [[.test_create_list_get_roundtrip()]] - code - gateway/tests/test_report_store.py
+- [[.test_cross_bot_visibility()]] - code - gateway/tests/test_report_store.py
+- [[.test_missing_content_422()]] - code - gateway/tests/test_report_store.py
+- [[.test_traversal_id_rejected_not_500()]] - code - gateway/tests/test_report_store.py
+- [[.test_unknown_report_404()]] - code - gateway/tests/test_report_store.py
+- [[Route-level POSTGET apireports through the FastAPI app (SCRUM-79).]] - rationale - gateway/tests/test_report_store.py
+- [[TestReportAPI]] - code - gateway/tests/test_report_store.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,25 +25,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 30]]
-- 1 edge to [[_COMMUNITY_Community 7]]
-- 1 edge to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 3]]
-- 1 edge to [[_COMMUNITY_Community 254]]
-- 1 edge to [[_COMMUNITY_Community 45]]
-- 1 edge to [[_COMMUNITY_Community 32]]
-- 1 edge to [[_COMMUNITY_Community 31]]
-- 1 edge to [[_COMMUNITY_Community 122]]
-- 1 edge to [[_COMMUNITY_Community 9]]
-- 1 edge to [[_COMMUNITY_Community 1281]]
-- 1 edge to [[_COMMUNITY_Community 98]]
-- 1 edge to [[_COMMUNITY_Community 26]]
-- 1 edge to [[_COMMUNITY_Community 141]]
-- 1 edge to [[_COMMUNITY_Community 8]]
-- 1 edge to [[_COMMUNITY_Community 1284]]
-- 1 edge to [[_COMMUNITY_Community 28]]
-- 1 edge to [[_COMMUNITY_Community 692]]
+- 3 edges to [[_COMMUNITY_Community 110]]
 
 ## Top bridge nodes
-- [[SKILL_200]] - degree 27, connects to 19 communities
+- [[TestReportAPI]] - degree 9, connects to 1 community
+- [[.client()_1]] - degree 2, connects to 1 community

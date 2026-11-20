@@ -1,14 +1,14 @@
 ---
 type: community
-members: 74
+members: 70
 ---
 
 # Community 71
 
-**Members:** 74 nodes
+**Members:** 70 nodes
 
 ## Members
-- [[.__init__()_116]] - code - gateway/security/network_validator.py
+- [[.__init__()_114]] - code - gateway/security/network_validator.py
 - [[._parse_service_network_config()]] - code - gateway/security/network_validator.py
 - [[._validate_container_runtime_config()]] - code - gateway/security/network_validator.py
 - [[._validate_dns_configuration()]] - code - gateway/security/network_validator.py
@@ -17,8 +17,6 @@ members: 74
 - [[._validate_port_exposure()]] - code - gateway/security/network_validator.py
 - [[._validate_privileged_containers()]] - code - gateway/security/network_validator.py
 - [[._validate_service_network_isolation()]] - code - gateway/security/network_validator.py
-- [[.detect_configuration_drift()]] - code - gateway/security/network_validator.py
-- [[.export_report()]] - code - gateway/security/network_validator.py
 - [[.get_security_report()]] - code - gateway/security/network_validator.py
 - [[.setup_method()_16]] - code - gateway/tests/test_network_validator.py
 - [[.test_clean_compose_yields_zero_critical()]] - code - gateway/tests/test_network_validator_gate.py
@@ -40,11 +38,9 @@ members: 74
 - [[.validate_runtime_configuration()]] - code - gateway/security/network_validator.py
 - [[A network security finding.]] - rationale - gateway/security/network_validator.py
 - [[A privileged container is the textbook escape-the-sandbox finding —         vali]] - rationale - gateway/tests/test_network_validator_gate.py
-- [[Any_61]] - code - gateway/security/network_validator.py
+- [[Any_57]] - code - gateway/security/network_validator.py
 - [[Container network configuration.]] - rationale - gateway/security/network_validator.py
 - [[Convenience function to validate network security.]] - rationale - gateway/security/network_validator.py
-- [[Detect drift between compose file and runtime configuration.]] - rationale - gateway/security/network_validator.py
-- [[Export network security report to file.]] - rationale - gateway/security/network_validator.py
 - [[Get comprehensive network security report.]] - rationale - gateway/security/network_validator.py
 - [[NetworkConfiguration]] - code - gateway/security/network_validator.py
 - [[NetworkSecurityFinding]] - code - gateway/security/network_validator.py
@@ -91,18 +87,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_Community 72]]
-- 10 edges to [[_COMMUNITY_Community 0]]
+- 21 edges to [[_COMMUNITY_Community 0]]
+- 3 edges to [[_COMMUNITY_Community 31]]
 - 2 edges to [[_COMMUNITY_Community 151]]
-- 1 edge to [[_COMMUNITY_Community 1]]
-- 1 edge to [[_COMMUNITY_Community 52]]
-- 1 edge to [[_COMMUNITY_Community 557]]
-- 1 edge to [[_COMMUNITY_Community 394]]
-- 1 edge to [[_COMMUNITY_Community 121]]
-- 1 edge to [[_COMMUNITY_Community 140]]
-- 1 edge to [[_COMMUNITY_Community 227]]
+- 2 edges to [[_COMMUNITY_Community 140]]
+- 1 edge to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 45]]
+- 1 edge to [[_COMMUNITY_Community 5]]
+- 1 edge to [[_COMMUNITY_Community 547]]
 
 ## Top bridge nodes
-- [[NetworkValidator]] - degree 56, connects to 9 communities
+- [[NetworkValidator]] - degree 54, connects to 7 communities
 - [[validate_network_security()]] - degree 10, connects to 1 community
 - [[network_validator.py]] - degree 6, connects to 1 community

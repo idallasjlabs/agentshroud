@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Community 330"
+community: "Community 195"
 location: "L187"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_330
+  - community/Community_195
 ---
 
 # 75 Security Modules
@@ -31,4 +31,4 @@ tags:
 - [[V-E. DNS-Layer Enforcement]] - `contains` [EXTRACTED]
 - [[V-F. Tamper-Evident Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_330
+#graphify/document #graphify/EXTRACTED #community/Community_195

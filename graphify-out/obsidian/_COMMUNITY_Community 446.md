@@ -1,17 +1,16 @@
 ---
 type: community
-members: 21
+members: 19
 ---
 
 # Community 446
 
-**Members:** 21 nodes
+**Members:** 19 nodes
 
 ## Members
 - [[Create SVG files that embed the logo PNGs as base64 data URIs.      These are sc]] - rationale - scripts/generate_branding_assets.py
 - [[FreeTypeFont]] - code - scripts/generate_branding_assets.py
 - [[Image]] - code - scripts/generate_branding_assets.py
-- [[Load source logo, optionally resize and composite onto bg.]] - rationale - scripts/generate_branding_assets.py
 - [[Paste transparent logo centred on a solid-colour canvas.]] - rationale - scripts/generate_branding_assets.py
 - [[Path_53]] - code - scripts/generate_branding_assets.py
 - [[ensure()]] - code - scripts/generate_branding_assets.py
@@ -26,7 +25,6 @@ members: 21
 - [[generate_variants()]] - code - scripts/generate_branding_assets.py
 - [[get_font()]] - code - scripts/generate_branding_assets.py
 - [[icon_on_canvas()]] - code - scripts/generate_branding_assets.py
-- [[load_logo()]] - code - scripts/generate_branding_assets.py
 - [[main()_25]] - code - scripts/generate_branding_assets.py
 - [[save()_1]] - code - scripts/generate_branding_assets.py
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_benchmark.py"
 type: "code"
-community: "Community 32"
+community: "Community 84"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Community_84
 ---
 
 # test_edge_benchmark.py
@@ -17,4 +17,4 @@ tags:
 - [[edge()_1]] - `imports` [EXTRACTED]
 - [[test_edge_read_call_latency()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_32
+#graphify/code #graphify/EXTRACTED #community/Community_84

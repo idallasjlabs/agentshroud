@@ -2,7 +2,7 @@
 source_file: "gateway/security/rbac_config.py"
 type: "code"
 community: "Community 223"
-location: "L419"
+location: "L414"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # load_paused_collaborator_ids()
 
 ## Connections
-- [[.__init__()_54]] - `calls` [EXTRACTED]
+- [[.__init__()_53]] - `calls` [EXTRACTED]
 - [[._load_paused_ids()]] - `calls` [EXTRACTED]
 - [[ContributorManager]] - `calls` [EXTRACTED]
 - [[Read persisted paused-collaborator IDs from disk.      Owner-initiated manual pa]] - `rationale_for` [EXTRACTED]

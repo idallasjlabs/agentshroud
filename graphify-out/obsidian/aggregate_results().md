@@ -2,7 +2,7 @@
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
 community: "Community 67"
-location: "L881"
+location: "L880"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -20,7 +20,7 @@ tags:
 - [[.test_timestamp_present()]] - `calls` [EXTRACTED]
 - [[.test_totals_sum_across_scanners()]] - `calls` [EXTRACTED]
 - [[Aggregate results from all security scanners into a unified dict.      Returns]] - `rationale_for` [EXTRACTED]
-- [[Any_68]] - `references` [EXTRACTED]
+- [[Any_64]] - `references` [EXTRACTED]
 - [[get_clamav_summary()]] - `calls` [EXTRACTED]
 - [[get_falco_summary()]] - `calls` [EXTRACTED]
 - [[get_fluent_bit_summary()]] - `calls` [EXTRACTED]

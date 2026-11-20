@@ -1,83 +1,97 @@
 ---
 type: community
-members: 70
+members: 84
 ---
 
 # Community 34
 
-**Members:** 70 nodes
+**Members:** 84 nodes
 
 ## Members
-- [[.process_inbound()_4]] - code - gateway/tests/test_forward_routing.py
-- [[.process_outbound()_4]] - code - gateway/tests/test_forward_routing.py
-- [[.test_blocked_outbound_replaced_with_policy_notice()]] - code - gateway/tests/test_forward_routing.py
-- [[AgentTarget]] - code - gateway/ingest_api/models.py
-- [[AgentTarget accepts custom chat_path and health_path.]] - rationale - gateway/tests/test_router.py
-- [[AgentTarget defaults chat_path and health_path correctly.]] - rationale - gateway/tests/test_router.py
-- [[Create a router configuration for testing]] - rationale - gateway/tests/test_router.py
-- [[Create a router instance for testing]] - rationale - gateway/tests/test_router.py
-- [[Downstream agent target]] - rationale - gateway/ingest_api/models.py
-- [[Empty choices list raises ForwardError.]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[Inbound passes; outbound returns blocked=True with the original text intact.]] - rationale - gateway/tests/test_forward_routing.py
-- [[Live regression 2026-08-07 Hermes's own internal LLM failover     (Anthropic cr]] - rationale - gateway/tests/test_router_streaming.py
-- [[Malformed OpenAI response (missing choices) raises ForwardError, not KeyError.]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[Test forwarding handles HTTP error responses]] - rationale - gateway/tests/test_router.py
-- [[Test forwarding handles timeout exception]] - rationale - gateway/tests/test_router.py
-- [[Test forwarding handles unexpected exceptions]] - rationale - gateway/tests/test_router.py
-- [[Test forwarding to offline agent raises ForwardError]] - rationale - gateway/tests/test_router.py
-- [[Test health check for offline agent]] - rationale - gateway/tests/test_router.py
-- [[Test health check for single target]] - rationale - gateway/tests/test_router.py
-- [[Test health check with healthy agent]] - rationale - gateway/tests/test_router.py
-- [[Test listing all configured targets]] - rationale - gateway/tests/test_router.py
-- [[Test routing to default target]] - rationale - gateway/tests/test_router.py
-- [[Test routing with explicit route_to]] - rationale - gateway/tests/test_router.py
-- [[Test routing with invalid explicit target falls back to default]] - rationale - gateway/tests/test_router.py
-- [[The OpenAI payload must include a non-empty model field.]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[_BlockedOutboundPipeline]] - code - gateway/tests/test_forward_routing.py
-- [[_mock_stream_response()]] - code - gateway/tests/test_router_streaming.py
-- [[_sse_lines()]] - code - gateway/tests/test_router_streaming.py
-- [[forward_to_agent builds URL from target.chat_path.]] - rationale - gateway/tests/test_router.py
-- [[forward_to_agent extracts choices0.message.content and returns a string.]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[forward_to_agent passes response.json() through unchanged for chat targets.]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[forward_to_agent sends the generic {content, ledger_id, ...} body for chat targ]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[forward_to_agent sends {model, messages} when chat_path ends v1chatcompleti]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[health_check builds URL from target.health_path.]] - rationale - gateway/tests/test_router.py
-- [[load_config computes CORS origins from the configured port.]] - rationale - gateway/tests/test_router.py
-- [[router()_1]] - code - gateway/tests/test_router.py
-- [[router_config()]] - code - gateway/tests/test_router.py
-- [[test_agent_target_custom_paths()]] - code - gateway/tests/test_router.py
-- [[test_agent_target_default_paths()]] - code - gateway/tests/test_router.py
-- [[test_cors_origins_include_configured_port()]] - code - gateway/tests/test_router.py
-- [[test_forward_to_agent_http_error()]] - code - gateway/tests/test_router.py
-- [[test_forward_to_agent_offline()]] - code - gateway/tests/test_router.py
-- [[test_forward_to_agent_timeout()]] - code - gateway/tests/test_router.py
-- [[test_forward_to_agent_unexpected_error()]] - code - gateway/tests/test_router.py
-- [[test_forward_uses_chat_path()]] - code - gateway/tests/test_router.py
-- [[test_generic_target_returns_json_as_is()]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_generic_target_sends_content_body()]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_health_check_healthy_agent()]] - code - gateway/tests/test_router.py
-- [[test_health_check_offline_agent()]] - code - gateway/tests/test_router.py
-- [[test_health_check_single_target()]] - code - gateway/tests/test_router.py
-- [[test_health_check_uses_health_path()]] - code - gateway/tests/test_router.py
-- [[test_list_targets()]] - code - gateway/tests/test_router.py
-- [[test_openai_empty_choices_raises_forward_error()]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_openai_malformed_response_raises_forward_error()]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_openai_payload_includes_model()]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_openai_target_returns_content_string()]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_openai_target_sends_messages_body()]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_resolve_target_default()]] - code - gateway/tests/test_router.py
-- [[test_resolve_target_explicit()]] - code - gateway/tests/test_router.py
-- [[test_resolve_target_invalid_explicit()]] - code - gateway/tests/test_router.py
-- [[test_router.py]] - code - gateway/tests/test_router.py
-- [[test_router_streaming.py]] - code - gateway/tests/test_router_streaming.py
-- [[test_stream_ignores_lines_without_data_prefix()]] - code - gateway/tests/test_router_streaming.py
-- [[test_stream_payload_sets_stream_true()]] - code - gateway/tests/test_router_streaming.py
-- [[test_stream_raises_forward_error_on_connect_failure()]] - code - gateway/tests/test_router_streaming.py
-- [[test_stream_raises_forward_error_on_http_status_error()]] - code - gateway/tests/test_router_streaming.py
-- [[test_stream_raises_forward_error_on_malformed_json()]] - code - gateway/tests/test_router_streaming.py
-- [[test_stream_rejects_non_openai_compat_target()]] - code - gateway/tests/test_router_streaming.py
-- [[test_stream_skips_chunk_missing_choices_key_and_continues()]] - code - gateway/tests/test_router_streaming.py
-- [[test_stream_yields_content_deltas_in_order()]] - code - gateway/tests/test_router_streaming.py
+- [[.__init__()_198]] - code - gateway/tests/test_middleware_coverage.py
+- [[.check_permission()_1]] - code - gateway/tests/test_middleware_coverage.py
+- [[.check_tool_permission()_2]] - code - gateway/tests/test_middleware_coverage.py
+- [[.get_user_role()_2]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_absolute_and_relative_paths()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_blocked_non_owner_denied()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_blocked_owner_exempted()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_browser_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_clean_message_allowed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_command_indicator_allowed_when_check_passes()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_command_indicator_blocked()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_context_guard_init_raise_recorded_and_logged()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_critical_attack_blocked()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_critical_finding_blocked()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_dict_message_handled()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_direct_field()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_direct_no_session_manager_blocked()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_editor_command_and_quotes()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_env_guard_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_existing_session_context_not_reinjected()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_expected_write_registered()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_fallback_without_rbac_manager()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_git_guard_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_guard_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_headers_sanitized()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_high_threat_blocked()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_invisible_chars_normalized()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_isolation_error_denied()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_isolation_fail_closed_without_session_manager()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_low_finding_allowed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_low_severity_not_blocking()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_low_threat_allowed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_message_dict_is_stringified_and_normalized()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_metadata_exception_non_blocking()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_metadata_fallback()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_missing_returns_none()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_mm_fixture_without_failed_guards_attr_is_safe()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_no_path_match_no_registration()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_no_paths()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_no_user_id_denied()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_non_critical_guard_failure_not_recorded()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_non_owner_blocked()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_non_owner_blocked_when_critical_guard_failed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_not_configured_guard_does_not_fail_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_outer_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_owner_allowed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_owner_bypass()_1]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_owner_bypass()_2]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_owner_exempt_when_critical_guard_failed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_plain_message_skips_check()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_rbac_denied()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_rbac_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_rbac_pass_logs_role_and_allows()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_rbac_requires_approval()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_repetition_attack_not_blocking()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_session_context_injected()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_session_context_priority()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_tool_permission_denied()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_tool_permission_requires_approval()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_tracker_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_with_rbac_manager()]] - code - gateway/tests/test_middleware_coverage.py
+- [[A security-critical guard whose constructor RAISES during __init__ must     NOT]] - rationale - gateway/tests/test_middleware_coverage.py
+- [[Deterministic stand-in for RBACManager.]] - rationale - gateway/tests/test_middleware_coverage.py
+- [[MiddlewareManager built via __new__ — every module attr explicitly None     so e]] - rationale - gateway/tests/test_middleware_coverage.py
+- [[TestBrowserSecurity]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestContextGuard]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestCriticalGuardInitFailClosed]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestCrossSessionAccess]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestEnvGuard]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestExtractFilePaths]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestExtractUserId]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestGitGuard_1]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestIsOwner]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestMemoryIntegrityRegistration]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestMetadataGuard_1]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestMultiTurnTracker]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestProcessRequestIdentity]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestProcessRequestRBAC]] - code - gateway/tests/test_middleware_coverage.py
+- [[_FakeRBAC]] - code - gateway/tests/test_middleware_coverage.py
+- [[_req()_1]] - code - gateway/tests/test_middleware_coverage.py
+- [[mm()]] - code - gateway/tests/test_middleware_coverage.py
+- [[temp_workspace()_1]] - code - gateway/tests/test_middleware_coverage.py
+- [[test_middleware_coverage.py]] - code - gateway/tests/test_middleware_coverage.py
+- [[usm()]] - code - gateway/tests/test_middleware_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -87,21 +101,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 23 edges to [[_COMMUNITY_Community 7]]
-- 14 edges to [[_COMMUNITY_Community 325]]
-- 9 edges to [[_COMMUNITY_Community 47]]
-- 5 edges to [[_COMMUNITY_Community 92]]
-- 3 edges to [[_COMMUNITY_Community 861]]
-- 1 edge to [[_COMMUNITY_Community 10]]
-- 1 edge to [[_COMMUNITY_Community 707]]
-- 1 edge to [[_COMMUNITY_Community 2154]]
-- 1 edge to [[_COMMUNITY_Community 37]]
-- 1 edge to [[_COMMUNITY_Community 251]]
-- 1 edge to [[_COMMUNITY_Community 516]]
+- 36 edges to [[_COMMUNITY_Community 31]]
+- 18 edges to [[_COMMUNITY_Community 60]]
+- 17 edges to [[_COMMUNITY_Community 68]]
+- 16 edges to [[_COMMUNITY_Community 7]]
+- 2 edges to [[_COMMUNITY_Community 1343]]
+- 2 edges to [[_COMMUNITY_Community 1209]]
+- 2 edges to [[_COMMUNITY_Community 605]]
+- 2 edges to [[_COMMUNITY_Community 37]]
+- 1 edge to [[_COMMUNITY_Community 0]]
+- 1 edge to [[_COMMUNITY_Community 229]]
 
 ## Top bridge nodes
-- [[AgentTarget]] - degree 58, connects to 7 communities
-- [[test_router.py]] - degree 28, connects to 4 communities
-- [[test_router_streaming.py]] - degree 17, connects to 3 communities
-- [[_BlockedOutboundPipeline]] - degree 7, connects to 2 communities
-- [[.test_blocked_outbound_replaced_with_policy_notice()]] - degree 4, connects to 2 communities
+- [[test_middleware_coverage.py]] - degree 40, connects to 9 communities
+- [[_FakeRBAC]] - degree 21, connects to 4 communities
+- [[TestProcessRequestIdentity]] - degree 13, connects to 3 communities
+- [[TestCriticalGuardInitFailClosed]] - degree 12, connects to 3 communities
+- [[TestProcessRequestRBAC]] - degree 11, connects to 3 communities

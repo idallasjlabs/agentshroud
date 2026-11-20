@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "Community 81"
+community: "Community 86"
 location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_81
+  - community/Community_86
 ---
 
 # HTTPConnectProxy
@@ -25,7 +25,6 @@ tags:
 - [[Asyncio HTTP CONNECT proxy server.      Intercepts CONNECT tunnel requests, vali]] - `rationale_for` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `uses` [INFERRED]
 - [[HTTPForwarder]] - `conceptually_related_to` [INFERRED]
-- [[PortManager]] - `conceptually_related_to` [AMBIGUOUS]
 - [[SecurityPipeline]] - `semantically_similar_to` [INFERRED]
 - [[SidecarScanner]] - `conceptually_related_to` [EXTRACTED]
 - [[StreamReader_3]] - `uses` [INFERRED]
@@ -106,4 +105,4 @@ tags:
 - [[test_tunnel_retries_then_succeeds()]] - `calls` [EXTRACTED]
 - [[test_tunnel_target_writer_close_failure_swallowed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_81
+#graphify/code #graphify/EXTRACTED #community/Community_86

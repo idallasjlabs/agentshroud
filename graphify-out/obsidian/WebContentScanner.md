@@ -2,7 +2,7 @@
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
 community: "Community 93"
-location: "L203"
+location: "L196"
 tags:
   - graphify/code
   - graphify/INFERRED
@@ -12,7 +12,7 @@ tags:
 # WebContentScanner
 
 ## Connections
-- [[.__init__()_57]] - `method` [EXTRACTED]
+- [[.__init__()_56]] - `method` [EXTRACTED]
 - [[._scan_encoded_payloads()]] - `method` [EXTRACTED]
 - [[._scan_hidden_content()]] - `method` [EXTRACTED]
 - [[._scan_pii()]] - `method` [EXTRACTED]

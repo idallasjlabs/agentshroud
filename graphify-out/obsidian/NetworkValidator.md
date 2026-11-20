@@ -2,7 +2,7 @@
 source_file: "gateway/security/network_validator.py"
 type: "code"
 community: "Community 71"
-location: "L51"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_59]] - `calls` [EXTRACTED]
-- [[.__init__()_116]] - `method` [EXTRACTED]
+- [[.__init__()_58]] - `calls` [EXTRACTED]
+- [[.__init__()_114]] - `method` [EXTRACTED]
 - [[._parse_service_network_config()]] - `method` [EXTRACTED]
 - [[._validate_container_runtime_config()]] - `method` [EXTRACTED]
 - [[._validate_dns_configuration()]] - `method` [EXTRACTED]
@@ -23,8 +23,6 @@ tags:
 - [[._validate_port_exposure()]] - `method` [EXTRACTED]
 - [[._validate_privileged_containers()]] - `method` [EXTRACTED]
 - [[._validate_service_network_isolation()]] - `method` [EXTRACTED]
-- [[.detect_configuration_drift()]] - `method` [EXTRACTED]
-- [[.export_report()]] - `method` [EXTRACTED]
 - [[.get_security_report()]] - `method` [EXTRACTED]
 - [[.setup_method()_16]] - `calls` [EXTRACTED]
 - [[.test_network_validator_init()]] - `calls` [EXTRACTED]

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "Community 121"
+community: "Community 0"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_121
+  - community/Community_0
 ---
 
 # EnvironmentGuard
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_94]] - `method` [EXTRACTED]
+- [[.__init__()_92]] - `method` [EXTRACTED]
 - [[._contains_env_access_patterns()]] - `method` [EXTRACTED]
 - [[._looks_like_credential()]] - `method` [EXTRACTED]
 - [[._record_leakage()]] - `method` [EXTRACTED]
@@ -87,4 +87,4 @@ tags:
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_121
+#graphify/code #graphify/INFERRED #community/Community_0

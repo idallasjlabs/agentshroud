@@ -2,7 +2,7 @@
 source_file: "gateway/security/browser_security.py"
 type: "code"
 community: "Community 196"
-location: "L44"
+location: "L36"
 tags:
   - graphify/code
   - graphify/INFERRED

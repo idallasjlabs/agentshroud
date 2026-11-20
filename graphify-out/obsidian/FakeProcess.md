@@ -12,7 +12,7 @@ tags:
 # FakeProcess
 
 ## Connections
-- [[.__init__()_198]] - `method` [EXTRACTED]
+- [[.__init__()_195]] - `method` [EXTRACTED]
 - [[.kill()_1]] - `method` [EXTRACTED]
 - [[.terminate()]] - `method` [EXTRACTED]
 - [[.test_start_send_and_stop()]] - `calls` [EXTRACTED]

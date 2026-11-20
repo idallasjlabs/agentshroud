@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "Community 978"
+community: "Community 254"
 location: "L310"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/Community_254
 ---
 
 # Response from POST /ssh/write_file.      success reflects whether the remote wri
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSHWriteFileResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_978
+#graphify/rationale #graphify/EXTRACTED #community/Community_254

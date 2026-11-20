@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "Community 31"
+community: "Community 1"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_31
+  - community/Community_1
 ---
 
 # PIIScanner
 
 ## Connections
-- [[.__init__()_96]] - `calls` [EXTRACTED]
+- [[.__init__()_94]] - `calls` [EXTRACTED]
 - [[.scan()_3]] - `method` [EXTRACTED]
 - [[.test_api_key_pattern_detected()]] - `calls` [EXTRACTED]
 - [[.test_credit_card_detected()]] - `calls` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[file_sandbox.py]] - `contains` [EXTRACTED]
 - [[test_file_sandbox.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_31
+#graphify/code #graphify/EXTRACTED #community/Community_1

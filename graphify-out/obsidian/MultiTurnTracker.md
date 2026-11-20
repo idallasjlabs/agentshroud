@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "Community 72"
+community: "Community 1281"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_1281
 ---
 
 # MultiTurnTracker
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_115]] - `method` [EXTRACTED]
+- [[.__init__()_113]] - `method` [EXTRACTED]
 - [[._add_disclosure_event()]] - `method` [EXTRACTED]
 - [[._analyze_agent_response()]] - `method` [EXTRACTED]
 - [[._analyze_user_message()]] - `method` [EXTRACTED]
@@ -55,4 +55,4 @@ tags:
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_multi_turn_tracker.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/Community_1281

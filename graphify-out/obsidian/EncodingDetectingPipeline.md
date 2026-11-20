@@ -12,7 +12,7 @@ tags:
 # EncodingDetectingPipeline
 
 ## Connections
-- [[.process_inbound()_9]] - `method` [EXTRACTED]
+- [[.process_inbound()_8]] - `method` [EXTRACTED]
 - [[.test_encoding_detected_on_getUpdates()]] - `calls` [EXTRACTED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[Pipeline that detects base64-encoded injections.]] - `rationale_for` [EXTRACTED]

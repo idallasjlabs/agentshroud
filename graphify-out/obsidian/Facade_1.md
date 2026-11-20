@@ -12,7 +12,7 @@ tags:
 # Facade
 
 ## Connections
-- [[.__init__()_170]] - `method` [EXTRACTED]
+- [[.__init__()_167]] - `method` [EXTRACTED]
 - [[.run()_10]] - `method` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[ApprovalStore_1]] - `uses` [INFERRED]

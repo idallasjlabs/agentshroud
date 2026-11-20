@@ -2,7 +2,7 @@
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
 community: "Community 74"
-location: "L577"
+location: "L363"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # fetch_ghsa_advisories()
 
 ## Connections
-- [[Any_90]] - `references` [EXTRACTED]
+- [[Any_86]] - `references` [EXTRACTED]
 - [[Fetch every published GitHub Security Advisory for repo (cursor-paginated)._1]] - `rationale_for` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 - [[sync_agent_ghsa()]] - `calls` [EXTRACTED]

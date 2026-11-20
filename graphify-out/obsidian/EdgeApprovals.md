@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/approvals.py"
 type: "code"
-community: "Community 32"
+community: "Community 2048"
 location: "L128"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_32
+  - community/Community_2048
 ---
 
 # EdgeApprovals
@@ -67,4 +67,4 @@ tags:
 - [[test_edge_e2e_sdk.py]] - `imports` [EXTRACTED]
 - [[test_edge_pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_32
+#graphify/code #graphify/INFERRED #community/Community_2048

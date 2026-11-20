@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_heartbeat_egress.py"
 type: "code"
-community: "Community 27"
+community: "Community 120"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_27
+  - community/Community_120
 ---
 
 # test_heartbeat_egress.py
@@ -16,4 +16,4 @@ tags:
 - [[test_hc_ping_allowed()]] - `contains` [EXTRACTED]
 - [[test_hc_ping_subdomain_not_blocked()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_27
+#graphify/code #graphify/EXTRACTED #community/Community_120

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "rationale"
-community: "Community 111"
+community: "Community 947"
 location: "L385"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_111
+  - community/Community_947
 ---
 
 # A duck-typed queue predating the ``force_tier`` kwarg — enforce() must     fall
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_LegacyStubApprovalQueue]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_111
+#graphify/rationale #graphify/EXTRACTED #community/Community_947

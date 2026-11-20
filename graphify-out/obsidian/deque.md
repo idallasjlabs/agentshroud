@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[.__init__()_40]] - `calls` [INFERRED]
 - [[.__init__()_47]] - `calls` [INFERRED]
-- [[.__init__()_68]] - `calls` [INFERRED]
-- [[.__init__()_83]] - `calls` [INFERRED]
-- [[.__init__()_107]] - `calls` [EXTRACTED]
+- [[.__init__()_66]] - `calls` [INFERRED]
+- [[.__init__()_81]] - `calls` [INFERRED]
+- [[.__init__()_105]] - `calls` [EXTRACTED]
 - [[._count_recent_events()]] - `references` [EXTRACTED]
 - [[.analyze_message()]] - `calls` [INFERRED]
 - [[KillSwitchConfig]] - `uses` [INFERRED]

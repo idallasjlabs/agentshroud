@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/service.py"
 type: "code"
-community: "Community 32"
+community: "Community 80"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Community_80
 ---
 
 # service.py
@@ -39,4 +39,4 @@ tags:
 - [[test_edge_service_routes.py]] - `imports_from` [EXTRACTED]
 - [[verify_shipped_descriptors()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_32
+#graphify/code #graphify/EXTRACTED #community/Community_80

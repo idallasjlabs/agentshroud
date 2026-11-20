@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_untrusted_envelope.py"
 type: "code"
-community: "Community 80"
+community: "Community 24"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_80
+  - community/Community_24
 ---
 
 # test_signature_verifies_and_detects_tampering()
@@ -17,4 +17,4 @@ tags:
 - [[unwrap_untrusted()]] - `calls` [EXTRACTED]
 - [[wrap_untrusted()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_80
+#graphify/code #graphify/EXTRACTED #community/Community_24

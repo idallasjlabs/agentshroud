@@ -12,7 +12,7 @@ tags:
 # main()
 
 ## Connections
-- [[.to_dict()_17]] - `calls` [EXTRACTED]
+- [[.to_dict()_15]] - `calls` [EXTRACTED]
 - [[_print_plan()]] - `calls` [EXTRACTED]
 - [[apply_remediation()]] - `calls` [EXTRACTED]
 - [[auto_remediate_cves.py]] - `contains` [EXTRACTED]

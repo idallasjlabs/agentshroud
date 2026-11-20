@@ -1,78 +1,70 @@
 ---
 type: community
-members: 65
+members: 57
 ---
 
 # Community 96
 
-**Members:** 65 nodes
+**Members:** 57 nodes
 
 ## Members
-- [[._apply_outbound_model_error_rewrites()]] - code - gateway/proxy/telegram_proxy.py
-- [[._apply_outbound_status_notices()]] - code - gateway/proxy/telegram_proxy.py
-- [[._build_ack_only_updates()]] - code - gateway/proxy/telegram_proxy.py
-- [[._check_collaborator_leakage()]] - code - gateway/proxy/telegram_proxy.py
-- [[._collaborator_safe_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._contains_critical_collaborator_leakage()]] - code - gateway/proxy/telegram_proxy.py
-- [[._contains_high_risk_collaborator_leakage()]] - code - gateway/proxy/telegram_proxy.py
-- [[._contains_internal_approval_banner()]] - code - gateway/proxy/telegram_proxy.py
-- [[._contains_legacy_block_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._escape_pii_placeholders()]] - code - gateway/proxy/telegram_proxy.py
-- [[._extract_embedded_tool_call_json()]] - code - gateway/proxy/telegram_proxy.py
-- [[._filter_outbound()_1]] - code - gateway/proxy/telegram_proxy.py
-- [[._filter_outbound_multipart()]] - code - gateway/proxy/telegram_proxy.py
-- [[._handle_outbound_tool_calls()]] - code - gateway/proxy/telegram_proxy.py
-- [[._html_tags_balanced()]] - code - gateway/proxy/telegram_proxy.py
-- [[._is_owner_chat()]] - code - gateway/proxy/telegram_proxy.py
-- [[._multipart_boundary()]] - code - gateway/proxy/telegram_proxy.py
-- [[._multipart_get_field()]] - code - gateway/proxy/telegram_proxy.py
-- [[._multipart_replace_field()]] - code - gateway/proxy/telegram_proxy.py
-- [[._notify_user_blocked()]] - code - gateway/proxy/telegram_proxy.py
-- [[._parse_tool_call_json()]] - code - gateway/proxy/telegram_proxy.py
-- [[._quarantine_outbound_block()]] - code - gateway/proxy/telegram_proxy.py
-- [[._redact_owner_ids()]] - code - gateway/proxy/telegram_proxy.py
-- [[._resolve_collaborator_mode()]] - code - gateway/proxy/telegram_proxy.py
-- [[._rewrite_known_runtime_errors()]] - code - gateway/proxy/telegram_proxy.py
-- [[._sanitize_reason()]] - code - gateway/proxy/telegram_proxy.py
-- [[._scan_outbound_text()]] - code - gateway/proxy/telegram_proxy.py
-- [[._set_outbound_block_cascade()]] - code - gateway/proxy/telegram_proxy.py
-- [[._strip_collaborator_html_markup()]] - code - gateway/proxy/telegram_proxy.py
-- [[._strip_json_fence()]] - code - gateway/proxy/telegram_proxy.py
-- [[._trigger_web_search_log()]] - code - gateway/proxy/telegram_proxy.py
-- [[Activate per-chat cascade window to prevent streaming-fragment leak-through.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Any_31]] - code - gateway/proxy/telegram_proxy.py
-- [[Concise collaborator-safe reason text without internal leakage.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Core outbound security scan shared by JSON, form, and multipart branches.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect internal approvalegress banner text that must remain owner-only.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect leakage patterns blocked for local_onlyproject_scoped collaborators.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect legacy bracket-style block notices for collaborator normalization.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect patterns that must redact for ALL non-owner chats, including full_access.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Extract a non-file text field value from a multipartform-data body.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Extract the boundary token from a multipart Content-Type header.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Filter multipartform-data outbound bodies (sendPhotosendDocument).          Te]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Filter outbound bot messages (sendMessage, etc.).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Find first embedded tool-call JSON object inside arbitrary text.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[HTML-escape PII redaction placeholders so they render as literal         text in]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Intercept leaked raw tool-call JSON in outbound text.          Shared by the JSO]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Log a web_search egress event with user attribution when raw JSON leaks.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Map internal statuspolicy texts to user-safe replacement notices.          Pure]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Map recurring runtimeprovider failures to deterministic operator guidance.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Parse leaked model tool-call JSON blobs (e.g. {'name' 'NO_REPLY', ...}).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Persist blocked outbound messages for admin review.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Redact the owner's Telegram user ID from collaborator-bound text.          Strip]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Remove Telegram HTML formatting tags from collaborator outbound text.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Replace a non-file text field value in a multipartform-data body.          Only]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Resolve effective collaboration mode for a user.          Resolution order]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Result of the shared outbound text security scan.      processed a scan path (c]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True only when every Telegram-supported HTML open tag has a matching clos]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True when chat_id belongs to the configured owner.          Handles both]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return a safe-notice replacement when protected content would leak.          Cri]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return minimal getUpdates payload entries containing only update_id.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Rewrite raw modelruntime error texts to actionable user-facing messages.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send a user-friendly notification when a message is blocked.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Strip internal paths and module names from block reasons before user display.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Strip optional markdown json fences around model output.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[_OutboundScan]] - code - gateway/proxy/telegram_proxy.py
+- [[.__init__()_91]] - code - gateway/security/encrypted_store.py
+- [[._derive_key()]] - code - gateway/security/encrypted_store.py
+- [[._resolve_secret()]] - code - gateway/security/encrypted_store.py
+- [[.decrypt()]] - code - gateway/security/encrypted_store.py
+- [[.decrypt_b64()]] - code - gateway/security/encrypted_store.py
+- [[.decrypt_json()]] - code - gateway/security/encrypted_store.py
+- [[.decrypt_str()]] - code - gateway/security/encrypted_store.py
+- [[.encrypt()]] - code - gateway/security/encrypted_store.py
+- [[.encrypt_b64()]] - code - gateway/security/encrypted_store.py
+- [[.get_blob_key_id()]] - code - gateway/security/encrypted_store.py
+- [[.rotate()]] - code - gateway/security/encrypted_store.py
+- [[.setup_method()_26]] - code - gateway/tests/test_security_hardening.py
+- [[.test_b64_roundtrip()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_custom_key_id()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_different_encryptions_differ()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_encrypt_decrypt_bytes()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_encrypt_decrypt_dict()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_encrypt_decrypt_string()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_encrypted_store_constant_time()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[.test_encrypted_store_error_no_key_leak()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[.test_env_var_secret()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_file_secret()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_get_blob_key_id()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_invalid_blob_too_short()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_invalid_blob_version()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_key_rotation()_1]] - code - gateway/tests/test_security_hardening.py
+- [[.test_key_rotation_auto_increment()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_large_data()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_no_secret_raises()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_secure_zero_bytearray()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_secure_zero_empty()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_wrong_key_fails()_1]] - code - gateway/tests/test_security_hardening.py
+- [[A single match found by the outbound filter.]] - rationale - gateway/security/outbound_filter.py
+- [[AES-256-GCM encrypted storage with key derivation and rotation support.]] - rationale - gateway/security/encrypted_store.py
+- [[Best-effort zeroing of key material using ctypes.memset.      Works on bytearray]] - rationale - gateway/security/encrypted_store.py
+- [[Decrypt a base64-encoded blob.]] - rationale - gateway/security/encrypted_store.py
+- [[Decrypt an AES-256-GCM encrypted blob.          Args             blob The encr]] - rationale - gateway/security/encrypted_store.py
+- [[Decrypt and return as UTF-8 string.]] - rationale - gateway/security/encrypted_store.py
+- [[Decrypt and return as parsed JSON dict.]] - rationale - gateway/security/encrypted_store.py
+- [[Decryption errors shouldn't expose the encryption key.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Derive a 256-bit key from master secret using PBKDF2-HMAC-SHA256.]] - rationale - gateway/security/encrypted_store.py
+- [[Encrypt and return as base64-encoded string.]] - rationale - gateway/security/encrypted_store.py
+- [[Encrypt data using AES-256-GCM.          Args             data String, bytes,]] - rationale - gateway/security/encrypted_store.py
+- [[Encrypted Store Module Badge Icon]] - image - branding/icons/modules/encrypted-store-256x256.png
+- [[EncryptedStore]] - code - gateway/security/encrypted_store.py
+- [[Encryptiondecryption time should not leak plaintext length.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Extract the key_id from an encrypted blob without decrypting.]] - rationale - gateway/security/encrypted_store.py
+- [[FR4 Data Confidentiality]] - concept - docs/compliance/iec-62443-matrix.md
+- [[FilterMatch]] - code - gateway/security/outbound_filter.py
+- [[Initialize the encrypted store.          Args             master_secret The ma]] - rationale - gateway/security/encrypted_store.py
+- [[Re-encrypt blobs with a new master secret.          Args             blobs Lis]] - rationale - gateway/security/encrypted_store.py
+- [[Resolve master secret from args, file, or environment.]] - rationale - gateway/security/encrypted_store.py
+- [[Same plaintext should produce different blobs (random saltnonce).]] - rationale - gateway/tests/test_security_hardening.py
+- [[TestEncryptedStore]] - code - gateway/tests/test_security_hardening.py
+- [[_secure_zero()]] - code - gateway/security/encrypted_store.py
+- [[encrypted_store.py]] - code - gateway/security/encrypted_store.py
+- [[outbound_filter.py]] - code - gateway/security/outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -82,22 +74,34 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 38 edges to [[_COMMUNITY_Community 14]]
-- 11 edges to [[_COMMUNITY_Community 187]]
-- 4 edges to [[_COMMUNITY_Community 1344]]
-- 2 edges to [[_COMMUNITY_Community 138]]
-- 2 edges to [[_COMMUNITY_Community 89]]
-- 2 edges to [[_COMMUNITY_Community 23]]
-- 2 edges to [[_COMMUNITY_Community 61]]
-- 2 edges to [[_COMMUNITY_Community 75]]
-- 2 edges to [[_COMMUNITY_Community 194]]
-- 2 edges to [[_COMMUNITY_Community 2073]]
-- 2 edges to [[_COMMUNITY_Community 1284]]
-- 1 edge to [[_COMMUNITY_Community 18]]
+- 30 edges to [[_COMMUNITY_Community 0]]
+- 14 edges to [[_COMMUNITY_Community 22]]
+- 4 edges to [[_COMMUNITY_Community 151]]
+- 4 edges to [[_COMMUNITY_Community 52]]
+- 3 edges to [[_COMMUNITY_Community 17]]
+- 3 edges to [[_COMMUNITY_Community 24]]
+- 3 edges to [[_COMMUNITY_Community 11]]
+- 2 edges to [[_COMMUNITY_Community 684]]
+- 2 edges to [[_COMMUNITY_Community 7]]
+- 2 edges to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 6]]
+- 1 edge to [[_COMMUNITY_Community 43]]
+- 1 edge to [[_COMMUNITY_Community 21]]
+- 1 edge to [[_COMMUNITY_Community 45]]
+- 1 edge to [[_COMMUNITY_Community 5]]
+- 1 edge to [[_COMMUNITY_Community 941]]
+- 1 edge to [[_COMMUNITY_Community 577]]
+- 1 edge to [[_COMMUNITY_Community 431]]
+- 1 edge to [[_COMMUNITY_Community 63]]
+- 1 edge to [[_COMMUNITY_Community 1105]]
+- 1 edge to [[_COMMUNITY_Community 84]]
+- 1 edge to [[_COMMUNITY_Community 626]]
+- 1 edge to [[_COMMUNITY_Community 393]]
+- 1 edge to [[_COMMUNITY_Community 466]]
 
 ## Top bridge nodes
-- [[Any_31]] - degree 17, connects to 8 communities
-- [[_OutboundScan]] - degree 9, connects to 7 communities
-- [[._filter_outbound()_1]] - degree 19, connects to 4 communities
-- [[._filter_outbound_multipart()]] - degree 12, connects to 3 communities
-- [[._collaborator_safe_notice()]] - degree 14, connects to 2 communities
+- [[EncryptedStore]] - degree 65, connects to 10 communities
+- [[TestEncryptedStore]] - degree 35, connects to 7 communities
+- [[outbound_filter.py]] - degree 8, connects to 6 communities
+- [[FR4 Data Confidentiality]] - degree 8, connects to 5 communities
+- [[encrypted_store.py]] - degree 6, connects to 2 communities

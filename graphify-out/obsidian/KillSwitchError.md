@@ -12,7 +12,7 @@ tags:
 # KillSwitchError
 
 ## Connections
-- [[.__init__()_226]] - `method` [EXTRACTED]
+- [[.__init__()_222]] - `method` [EXTRACTED]
 - [[A kill switch action did not fully take effect.      ``status_code`` is 503 when]] - `rationale_for` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]

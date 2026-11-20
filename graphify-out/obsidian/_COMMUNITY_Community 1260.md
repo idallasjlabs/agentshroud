@@ -39,11 +39,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 195]]
 - 1 edge to [[_COMMUNITY_Community 192]]
 - 1 edge to [[_COMMUNITY_Community 441]]
-- 1 edge to [[_COMMUNITY_Community 330]]
 - 1 edge to [[_COMMUNITY_Community 130]]
-- 1 edge to [[_COMMUNITY_Community 195]]
 
 ## Top bridge nodes
 - [[AgentShroud™ Security Policy]] - degree 14, connects to 3 communities

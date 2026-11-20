@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_121]] - `references` [EXTRACTED]
+- [[.__init__()_119]] - `references` [EXTRACTED]
 - [[.config()_4]] - `calls` [EXTRACTED]
 - [[.test_custom_config()_2]] - `calls` [EXTRACTED]
 - [[.test_default_config()_5]] - `calls` [EXTRACTED]
@@ -39,7 +39,7 @@ tags:
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[path_isolation.py]] - `contains` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[run()_2]] - `calls` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_path_isolation.py]] - `imports` [EXTRACTED]
 

@@ -12,6 +12,6 @@ tags:
 # Initialize the approval queue.          Args:             rules_file: Path to pe
 
 ## Connections
-- [[.__init__()_89]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_87]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_23

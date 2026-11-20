@@ -2,7 +2,7 @@
 source_file: "scripts/generate_branding_assets.py"
 type: "code"
 community: "Community 446"
-location: "L100"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED

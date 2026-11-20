@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "scripts/soak_status.py"
 type: "code"
-community: "Community 575"
-location: "L67"
+community: "Community 310"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_575
+  - community/Community_310
 ---
 
 # Any
 
 ## Connections
-- [[.recent()]] - `references` [EXTRACTED]
-- [[.tail()]] - `references` [EXTRACTED]
-- [[_check_host()]] - `references` [EXTRACTED]
+- [[_is_benign_skip()]] - `references` [EXTRACTED]
+- [[classify()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_575
+#graphify/code #graphify/EXTRACTED #community/Community_310
