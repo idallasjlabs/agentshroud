@@ -62,22 +62,56 @@ def _read(path):
 # path (cron + send_message tool) dispatches through that plugin sender. The
 # patches below are then obsolete. Never assume: exit 0 only when EVERY marker
 # is present, otherwise fall through to the legacy anchors (which fail loudly).
+#
+# 2026-11-22: v0.23.3 reshaped both halves. base_url/base_file_url now come from
+# telegram_network.bot_api_urls(extra) spread into Bot(**urls) (it still defaults
+# base_file_url to base_url), and core dispatch moved out of
+# tools/send_message_tool.py (file removed) to gateway/outbound/send.py. Each
+# layout keeps its own full marker set; any one complete set counts as native.
 _NATIVE = "/opt/hermes/plugins/platforms/telegram/standalone.py"
 _native_src = _read(_NATIVE)
-_native_markers = (
-    "def _telegram_bot(token, extra=None):",
-    'base_url = extra.get("base_url")',
-    '"base_file_url": extra.get("base_file_url") or base_url',
-    "return Bot(token=token, request=request, get_updates_request=updates_request, **urls)",
-    'extra = getattr(pconfig, "extra", None) or {}',
-    "extra=extra, notify=notify)",
+_native_marker_sets = (
+    (  # v0.23.1
+        "def _telegram_bot(token, extra=None):",
+        'base_url = extra.get("base_url")',
+        '"base_file_url": extra.get("base_file_url") or base_url',
+        "return Bot(token=token, request=request, get_updates_request=updates_request, **urls)",
+        'extra = getattr(pconfig, "extra", None) or {}',
+        "extra=extra, notify=notify)",
+    ),
+    (  # v0.23.3+
+        "def _telegram_bot(token, extra=None):",
+        'base_url = extra.get("base_url")',
+        "urls = bot_api_urls(extra)",
+        "return Bot(token=token, request=request, get_updates_request=updates_request, **urls)",
+        'extra = getattr(pconfig, "extra", None) or {}',
+        "extra=extra, notify=notify)",
+    ),
 )
-if _native_src is not None and all(m in _native_src for m in _native_markers):
-    _tool_src = _read("/opt/hermes/tools/send_message_tool.py") or ""
-    if "sender(pconfig, chat_id, message" not in _tool_src:
+_NATIVE_URLS = "/opt/hermes/plugins/platforms/telegram/telegram_network.py"
+_urls_src = _read(_NATIVE_URLS) or ""
+# v0.23.3's bot_api_urls() is what turns extra into base_url/base_file_url; it
+# must still emit both keys, or the v0.23.3 marker set proves nothing.
+_urls_ok = (
+    "def bot_api_urls(extra" in _urls_src
+    and '"base_url": norm(base_url, "/bot")' in _urls_src
+    and '"base_file_url": norm(' in _urls_src
+)
+_native_ok = _native_src is not None and any(
+    all(m in _native_src for m in markers)
+    and (_urls_ok or "urls = bot_api_urls(extra)" not in markers)
+    for markers in _native_marker_sets
+)
+if _native_ok:
+    _dispatch_files = (
+        "/opt/hermes/tools/send_message_tool.py",  # v0.23.1
+        "/opt/hermes/gateway/outbound/send.py",  # v0.23.3+
+    )
+    if not any("sender(pconfig, chat_id, message" in (_read(p) or "") for p in _dispatch_files):
         sys.exit(
-            "NATIVE base_url SUPPORT FOUND in standalone.py but send_message_tool.py "
-            "no longer dispatches Telegram through the plugin standalone sender with "
+            "NATIVE base_url SUPPORT FOUND in standalone.py but neither "
+            "tools/send_message_tool.py nor gateway/outbound/send.py "
+            "dispatches Telegram through the plugin standalone sender with "
             "pconfig; cron delivery may bypass base_url. Re-verify "
             "docker/bots/hermes/patch_telegram_send_base_url.py."
         )
