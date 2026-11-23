@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "Community 10"
+community: "soc/router.py"
 location: "L1565"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_10
+  - community/soc/routerpy
 ---
 
 # Get tool allow/deny lists for a user or group entity.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_tool_acl()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_10
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

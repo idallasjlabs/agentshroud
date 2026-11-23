@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "TrustConfig"
-location: "L883"
+community: "ingest_api/main.py"
+location: "L888"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/ingest_api/mainpy
 ---
 
 # Get a single ledger entry by ID Authentication required.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_ledger_entry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustConfig
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

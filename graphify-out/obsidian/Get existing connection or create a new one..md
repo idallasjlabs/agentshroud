@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Community 132"
+community: "MCPServerConfig"
 location: "L207"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_132
+  - community/MCPServerConfig
 ---
 
 # Get existing connection or create a new one.
 
 ## Connections
-- [[.get_or_create()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_or_create()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_132
+#graphify/rationale #graphify/EXTRACTED #community/MCPServerConfig

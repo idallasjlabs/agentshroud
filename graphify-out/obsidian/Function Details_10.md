@@ -1,23 +1,24 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/podman_engine.py.md"
 type: "document"
-community: "Community 666"
-location: "L33"
+community: "Function Details"
+location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_666
+  - community/Function_Details
 ---
 
 # Function Details
 
 ## Connections
-- [[MCPInspector._redact_pii(value)]] - `contains` [EXTRACTED]
-- [[MCPInspector._scan_text(text, path, findings, ...)]] - `contains` [EXTRACTED]
-- [[MCPInspector._scan_value(value, path, findings, ...)]] - `contains` [EXTRACTED]
-- [[MCPInspector._should_block(findings)]] - `contains` [EXTRACTED]
-- [[MCPInspector.inspect_tool_call(tool_name, params, check_injection, check_pii, check_encoding, check_sensitive)]] - `contains` [EXTRACTED]
-- [[MCPInspector.inspect_tool_result(tool_name, result_content, check_pii, check_encoding)]] - `contains` [EXTRACTED]
-- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
+- [[PodmanEngine.__init__(cli)]] - `contains` [EXTRACTED]
+- [[PodmanEngine._detect_compose()]] - `contains` [EXTRACTED]
+- [[PodmanEngine.compose_up(file, detach)  compose_down(file)]] - `contains` [EXTRACTED]
+- [[PodmanEngine.generate_systemd(name)]] - `contains` [EXTRACTED]
+- [[PodmanEngine.health_check()]] - `contains` [EXTRACTED]
+- [[PodmanEngine.ps(all)]] - `contains` [EXTRACTED]
+- [[PodmanEngine.run(image, name, , volumes, ...)]] - `contains` [EXTRACTED]
+- [[podman_engine.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_666
+#graphify/document #graphify/EXTRACTED #community/Function_Details

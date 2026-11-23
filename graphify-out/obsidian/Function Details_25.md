@@ -1,22 +1,24 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
 type: "document"
-community: "Community 727"
-location: "L36"
+community: "Function Details"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_727
+  - community/Function_Details
 ---
 
 # Function Details
 
 ## Connections
-- [[_validate_runtime(runtime)]] - `contains` [EXTRACTED]
-- [[get_features_for_runtime(runtime)]] - `contains` [EXTRACTED]
-- [[get_missing_features(runtime)]] - `contains` [EXTRACTED]
-- [[get_security_options(runtime)]] - `contains` [EXTRACTED]
-- [[security.py_2]] - `contains` [EXTRACTED]
-- [[warn_missing_features(runtime)]] - `contains` [EXTRACTED]
+- [[ConnectionPool.get_or_create(server_name, config)]] - `contains` [EXTRACTED]
+- [[MCPProxy._execute_tool_call(tool_call, sanitized_params)]] - `contains` [EXTRACTED]
+- [[MCPProxy.check_approval_required(tool_call)]] - `contains` [EXTRACTED]
+- [[MCPProxy.get_stats()]] - `contains` [EXTRACTED]
+- [[MCPProxy.process_tool_call(tool_call, execute)]] - `contains` [EXTRACTED]
+- [[MCPProxy.process_tool_result(tool_result, agent_id)]] - `contains` [EXTRACTED]
+- [[StdioConnection.send_request(method, params)]] - `contains` [EXTRACTED]
+- [[mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_727
+#graphify/document #graphify/EXTRACTED #community/Function_Details

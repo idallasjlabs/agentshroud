@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 1128"
+community: "._extract_first_egress_target"
 location: "L4686"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1128
+  - community/_extract_first_egress_target
 ---
 
 # Generic 'domain:' mention without the egress emoji must not trigger.
 
 ## Connections
-- [[.test_no_false_positive_on_domain_mention()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_no_false_positive_on_domain_mention()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1128
+#graphify/rationale #graphify/EXTRACTED #community/_extract_first_egress_target

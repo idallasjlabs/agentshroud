@@ -1,20 +1,17 @@
 ---
-source_file: "docs/user-guide.md"
+source_file: "docs/archive/README.md"
 type: "document"
-community: "Community 327"
-location: "L16"
+community: "Quick Navigation"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_327
+  - community/Quick_Navigation
 ---
 
 # Getting Started
 
 ## Connections
-- [[1. Find the Bot]] - `contains` [EXTRACTED]
-- [[2. Verify You're Authorized]] - `contains` [EXTRACTED]
-- [[3. Start Chatting]] - `contains` [EXTRACTED]
-- [[AgentShroud User Guide]] - `contains` [EXTRACTED]
+- [[Quick Navigation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_327
+#graphify/document #graphify/EXTRACTED #community/Quick_Navigation

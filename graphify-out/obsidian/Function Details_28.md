@@ -1,22 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
 type: "document"
-community: "Community 675"
-location: "L36"
+community: "canary.py"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_675
+  - community/canarypy
 ---
 
 # Function Details
 
 ## Connections
-- [[BrowserSecurityGuard.analyze_content(content)]] - `contains` [EXTRACTED]
-- [[BrowserSecurityGuard.analyze_screenshot(image_data)]] - `contains` [EXTRACTED]
-- [[BrowserSecurityGuard.can_enter_credentials(url)]] - `contains` [EXTRACTED]
-- [[BrowserSecurityGuard.check_url_reputation(url)]] - `contains` [EXTRACTED]
-- [[BrowserSecurityGuard.register_screenshot_hook(hook)]] - `contains` [EXTRACTED]
-- [[browser_security.py_2]] - `contains` [EXTRACTED]
+- [[CanaryResult.to_dict()]] - `contains` [EXTRACTED]
+- [[canary.py_1]] - `contains` [EXTRACTED]
+- [[run_canary(pipeline, forwarder)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_675
+#graphify/document #graphify/EXTRACTED #community/canarypy

@@ -1,22 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
 type: "document"
-community: "Community 618"
-location: "L41"
+community: "trust_manager.py"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_618
+  - community/trust_managerpy
 ---
 
 # Function Details
 
 ## Connections
-- [[generate_summary(alerts)_1]] - `contains` [EXTRACTED]
-- [[get_fim_events(alerts)  get_rootkit_events(alerts)]] - `contains` [EXTRACTED]
-- [[level_to_severity(level)]] - `contains` [EXTRACTED]
-- [[parse_alert(raw)_1]] - `contains` [EXTRACTED]
-- [[read_alerts(alert_dir, since)]] - `contains` [EXTRACTED]
-- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
+- [[TrustManager._apply_decay(score, last_action_time)]] - `contains` [EXTRACTED]
+- [[TrustManager._update_score(agent_id, delta, event_type, details)]] - `contains` [EXTRACTED]
+- [[TrustManager.get_history(agent_id, limit)]] - `contains` [EXTRACTED]
+- [[TrustManager.get_trust(agent_id)]] - `contains` [EXTRACTED]
+- [[TrustManager.is_action_allowed(agent_id, action)]] - `contains` [EXTRACTED]
+- [[trust_manager.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_618
+#graphify/document #graphify/EXTRACTED #community/trust_managerpy

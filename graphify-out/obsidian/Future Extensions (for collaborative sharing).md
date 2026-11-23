@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/mac-app-discovery.md"
+source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
 type: "document"
-community: "Community 823"
-location: "L364"
+community: "Mac App Discovery Skill"
+location: "L367"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_823
+  - community/Mac_App_Discovery_Skill
 ---
 
 # Future Extensions (for collaborative sharing)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mac App Discovery Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_823
+#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill

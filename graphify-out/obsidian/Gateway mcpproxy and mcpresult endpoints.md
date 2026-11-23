@@ -1,16 +1,13 @@
 ---
 source_file: "docker/scripts/mcp-proxy-wrapper.js"
 type: "concept"
-community: "Community 658"
+community: "Gateway /mcp/proxy and /mcp/result endpoints"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_658
+  - community/Gateway_/mcp/proxy_and_/mcp/result_endpoints
 ---
 
 # Gateway /mcp/proxy and /mcp/result endpoints
 
-## Connections
-- [[mcp-proxy-wrapper.js]] - `references` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/Community_658
+#graphify/concept #graphify/EXTRACTED #community/Gateway_/mcp/proxy_and_/mcp/result_endpoints

@@ -1,19 +1,24 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
 type: "document"
-community: "Community 775"
-location: "L32"
+community: "apple_engine.py"
+location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_775
+  - community/apple_enginepy
 ---
 
 # Function Details
 
 ## Connections
-- [[MCPProxyConfig.from_dict(data)]] - `contains` [EXTRACTED]
-- [[PermissionLevel comparison operators]] - `contains` [EXTRACTED]
-- [[mcp_config.py_2]] - `contains` [EXTRACTED]
+- [[AppleContainerEngine.compose_up(file, detach)  compose_down(file)]] - `contains` [EXTRACTED]
+- [[AppleContainerEngine.health_check()]] - `contains` [EXTRACTED]
+- [[AppleContainerEngine.inspect(name)]] - `contains` [EXTRACTED]
+- [[AppleContainerEngine.network_create  network_rm  volume_create  volume_rm]] - `contains` [EXTRACTED]
+- [[AppleContainerEngine.pause(name)  unpause(name)]] - `contains` [EXTRACTED]
+- [[AppleContainerEngine.ps(all)]] - `contains` [EXTRACTED]
+- [[AppleContainerEngine.run(image, name, , ports, volumes, env, privileged, caps, seccomp, detach, ...)]] - `contains` [EXTRACTED]
+- [[apple_engine.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_775
+#graphify/document #graphify/EXTRACTED #community/apple_enginepy

@@ -1,21 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
-community: "Community 766"
-location: "L33"
+community: "clamav_scanner.py"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_766
+  - community/clamav_scannerpy
 ---
 
 # Function Details
 
 ## Connections
-- [[RateLimiter.check(client_id)]] - `contains` [EXTRACTED]
-- [[auth.py_3]] - `contains` [EXTRACTED]
-- [[create_auth_dependency(config)]] - `contains` [EXTRACTED]
-- [[get_auth_dependency(config)]] - `contains` [EXTRACTED]
-- [[verify_token(token, expected_token)]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py_1]] - `contains` [EXTRACTED]
+- [[generate_summary(report)]] - `contains` [EXTRACTED]
+- [[parse_clamscan_output(output, returncode)]] - `contains` [EXTRACTED]
+- [[run_clamscan(target, recursive, timeout, clamscan_bin, exclude_patterns)]] - `contains` [EXTRACTED]
+- [[save_report(report, log_dir)]] - `contains` [EXTRACTED]
+- [[update_virus_db(freshclam_bin, timeout)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_766
+#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy

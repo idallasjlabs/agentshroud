@@ -1,22 +1,20 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
 type: "document"
-community: "Community 538"
-location: "L43"
+community: "web_config.py"
+location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_538
+  - community/web_configpy
 ---
 
 # Function Details
 
 ## Connections
-- [[EncryptedStore.__init__(master_secret, secret_path, iterations, key_id)]] - `contains` [EXTRACTED]
-- [[EncryptedStore.decrypt(blob)]] - `contains` [EXTRACTED]
-- [[EncryptedStore.encrypt(data)]] - `contains` [EXTRACTED]
-- [[EncryptedStore.rotate(blobs, new_secret, new_key_id)]] - `contains` [EXTRACTED]
-- [[_secure_zero(buffer)]] - `contains` [EXTRACTED]
-- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
+- [[WebProxyConfig.get_domain_settings(domain)]] - `contains` [EXTRACTED]
+- [[WebProxyConfig.is_domain_allowed(domain)]] - `contains` [EXTRACTED]
+- [[WebProxyConfig.is_domain_denied(domain)]] - `contains` [EXTRACTED]
+- [[web_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_538
+#graphify/document #graphify/EXTRACTED #community/web_configpy

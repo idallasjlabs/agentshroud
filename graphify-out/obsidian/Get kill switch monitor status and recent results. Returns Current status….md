@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "TrustConfig"
-location: "L3892"
+community: "ingest_api/main.py"
+location: "L3897"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/ingest_api/mainpy
 ---
 
 # Get kill switch monitor status and recent results. Returns: Current status…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[killswitch_status()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustConfig
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

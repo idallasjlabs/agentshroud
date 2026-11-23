@@ -1,14 +1,14 @@
 ---
 source_file: ".llm_settings/docs/AI_TOOLS_CONFIGURATION_GUIDE.md"
 type: "concept"
-community: "Community 1843"
+community: "GitHub Copilot CLI (QUATERNARY agent, .agent.md profiles)"
 location: "Section 4"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1843
+  - community/GitHub_Copilot_CLI_QUATERNARY_agent_agentmd_profiles
 ---
 
 # GitHub Copilot CLI (QUATERNARY agent, .agent.md profiles)
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1843
+#graphify/concept #graphify/EXTRACTED #community/GitHub_Copilot_CLI_QUATERNARY_agent_agentmd_profiles

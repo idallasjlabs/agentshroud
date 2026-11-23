@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-21-team-structure.svg"
 type: "concept"
-community: "Community 970"
+community: "Claude Code (claude-sonnet-4-6) — Lead Engineer / Primary Developer"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_970
+  - community/Claude_Code_claude-sonnet-4-6__Lead_Engineer_/_Primary_Developer
 ---
 
 # Gemini CLI — Test Engineer / Secondary Developer
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Claude Code (claude-sonnet-4-6) — Lead Engineer  Primary Developer]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_970
+#graphify/concept #graphify/EXTRACTED #community/Claude_Code_claude-sonnet-4-6__Lead_Engineer_/_Primary_Developer

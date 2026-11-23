@@ -1,22 +1,20 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
 type: "document"
-community: "Community 287"
-location: "L46"
+community: "config.py"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_287
+  - community/configpy
 ---
 
 # Function Details
 
 ## Connections
-- [[EgressFilter_3]] - `contains` [EXTRACTED]
-- [[EgressFilter._is_private_ip(host)]] - `contains` [EXTRACTED]
-- [[EgressFilter._record(agent_id, dest, port, action, rule)]] - `contains` [EXTRACTED]
-- [[EgressFilter.check(agent_id, destination, port)]] - `contains` [EXTRACTED]
-- [[EgressPolicy.matches_domain(domain)]] - `contains` [EXTRACTED]
-- [[egress_filter.py_2]] - `contains` [EXTRACTED]
+- [[RuntimeConfig.effective_rootless (property)]] - `contains` [EXTRACTED]
+- [[RuntimeConfig.from_dict(data)]] - `contains` [EXTRACTED]
+- [[RuntimeConfig.from_env()]] - `contains` [EXTRACTED]
+- [[config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_287
+#graphify/document #graphify/EXTRACTED #community/configpy

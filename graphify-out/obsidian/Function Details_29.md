@@ -1,19 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
 type: "document"
-community: "Community 730"
-location: "L38"
+community: "log_sanitizer.py"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_730
+  - community/log_sanitizerpy
 ---
 
 # Function Details
 
 ## Connections
-- [[CanaryResult.to_dict()]] - `contains` [EXTRACTED]
-- [[canary.py_2]] - `contains` [EXTRACTED]
-- [[run_canary(pipeline, forwarder)]] - `contains` [EXTRACTED]
+- [[LogSanitizer._sanitize_text(text)]] - `contains` [EXTRACTED]
+- [[LogSanitizer.filter(record)]] - `contains` [EXTRACTED]
+- [[get_sanitizer_stats()]] - `contains` [EXTRACTED]
+- [[install_log_sanitizer()_1]] - `contains` [EXTRACTED]
+- [[log_sanitizer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_730
+#graphify/document #graphify/EXTRACTED #community/log_sanitizerpy

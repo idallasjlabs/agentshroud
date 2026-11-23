@@ -1,24 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
 type: "document"
-community: "Community 719"
-location: "L34"
+community: "agent_isolation.py"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_719
+  - community/agent_isolationpy
 ---
 
 # Function Details
 
 ## Connections
-- [[MCPPermissionManager.check_agent_server_access(agent_id, server_name)]] - `contains` [EXTRACTED]
-- [[MCPPermissionManager.check_all(agent_id, server_name, tool_name)]] - `contains` [EXTRACTED]
-- [[MCPPermissionManager.check_rate_limit(agent_id, server_name, tool_name)]] - `contains` [EXTRACTED]
-- [[MCPPermissionManager.check_tool_permission(agent_id, server_name, tool_name)]] - `contains` [EXTRACTED]
-- [[MCPPermissionManager.get_trust_level(agent_id)]] - `contains` [EXTRACTED]
-- [[MCPPermissionManager.infer_permission_level(tool_name, server_config)]] - `contains` [EXTRACTED]
-- [[MCPPermissionManager.set_trust_level(agent_id, level)]] - `contains` [EXTRACTED]
-- [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
+- [[IsolationVerifier.generate_compose()]] - `contains` [EXTRACTED]
+- [[IsolationVerifier.verify_network_isolation()]] - `contains` [EXTRACTED]
+- [[IsolationVerifier.verify_shared_nothing()]] - `contains` [EXTRACTED]
+- [[IsolationVerifier.verify_volume_isolation()]] - `contains` [EXTRACTED]
+- [[agent_isolation.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_719
+#graphify/document #graphify/EXTRACTED #community/agent_isolationpy

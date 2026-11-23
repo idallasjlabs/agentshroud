@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "Community 3"
+community: "middleware.py"
 location: "L473"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_3
+  - community/middlewarepy
 ---
 
 # Get statistics about approval hardening.
 
 ## Connections
-- [[.get_stats()_13]] - `rationale_for` [EXTRACTED]
+- [[dot-get_stats()_7]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_3
+#graphify/rationale #graphify/EXTRACTED #community/middlewarepy

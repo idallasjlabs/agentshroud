@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/skills/mac-app-discovery/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mac/SKILL.md"
 type: "document"
-community: "Community 870"
+community: "Mac App Discovery Skill"
 location: "L367"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_870
+  - community/Mac_App_Discovery_Skill
 ---
 
 # Future Extensions (for collaborative sharing)
 
 ## Connections
+- [[Mac App Discovery Skill]] - `contains` [EXTRACTED]
 - [[Mac App Discovery Skill_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_870
+#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill

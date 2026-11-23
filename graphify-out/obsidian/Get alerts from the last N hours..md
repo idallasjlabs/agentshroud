@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "Community 16"
+community: "FileIntegrityRecord"
 location: "L326"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/FileIntegrityRecord
 ---
 
 # Get alerts from the last N hours.
 
 ## Connections
-- [[.get_recent_alerts()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_recent_alerts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_16
+#graphify/rationale #graphify/EXTRACTED #community/FileIntegrityRecord

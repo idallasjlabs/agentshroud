@@ -1,17 +1,17 @@
 ---
-source_file: "docs/runbooks/troubleshooting.md"
+source_file: "docs/archive/CONNECTION-GUIDE.md"
 type: "document"
-community: "Community 535"
-location: "L519"
+community: "AgentShroud Control UI Connection Guide"
+location: "L175"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_535
+  - community/AgentShroud_Control_UI_Connection_Guide
 ---
 
 # Getting Help
 
 ## Connections
-- [[Troubleshooting Runbook — AgentShroud]] - `contains` [EXTRACTED]
+- [[AgentShroud Control UI Connection Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_535
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Control_UI_Connection_Guide

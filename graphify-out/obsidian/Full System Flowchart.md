@@ -1,20 +1,19 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Full System Flowchart.md"
 type: "document"
-community: "Community 390"
+community: "Architecture Overview.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_390
+  - community/Architecture_Overviewmd
 ---
 
 # Full System Flowchart.md
 
 ## Connections
+- [[Architecture Overview]] - `references` [EXTRACTED]
+- [[Data Flow]] - `references` [EXTRACTED]
 - [[Full System Flowchart_1]] - `contains` [EXTRACTED]
-- [[Network Topology_2]] - `references` [EXTRACTED]
-- [[README_127]] - `conceptually_related_to` [INFERRED]
-- [[Security Pipeline Flow]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_390
+#graphify/document #graphify/EXTRACTED #community/Architecture_Overviewmd

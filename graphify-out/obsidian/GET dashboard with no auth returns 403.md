@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "Community 79"
+community: "asyncio"
 location: "L196"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_79
+  - community/asyncio
 ---
 
 # GET /dashboard with no auth returns 403
 
 ## Connections
-- [[.test_dashboard_no_auth_returns_403()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_dashboard_no_auth_returns_403()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_79
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

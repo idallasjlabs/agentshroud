@@ -1,19 +1,18 @@
 ---
 source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Community 502"
+community: "Google Services Setup - Calendar, Contacts, Keep"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/Community_502
+  - graphify/EXTRACTED
+  - community/Google_Services_Setup_-_Calendar_Contacts_Keep
 ---
 
 # GOOGLE-SERVICES-SETUP.md
 
 ## Connections
-- [[GOOGLE-CALENDAR-QUICK-SETUP]] - `semantically_similar_to` [INFERRED]
 - [[Google Services Setup - Calendar, Contacts, Keep]] - `contains` [EXTRACTED]
-- [[ICLOUD-SERVICES-SETUP]] - `semantically_similar_to` [INFERRED]
+- [[docsREADME]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Community_502
+#graphify/document #graphify/EXTRACTED #community/Google_Services_Setup_-_Calendar_Contacts_Keep

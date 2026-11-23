@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
 type: "document"
-community: "Community 669"
+community: "web_content_scanner.py"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_669
+  - community/web_content_scannerpy
 ---
 
 # Function Details
@@ -18,6 +18,6 @@ tags:
 - [[WebContentScanner._scan_prompt_injection(content, result)]] - `contains` [EXTRACTED]
 - [[WebContentScanner._scan_zero_width(content, result)]] - `contains` [EXTRACTED]
 - [[WebContentScanner.scan(content, content_type)]] - `contains` [EXTRACTED]
-- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
+- [[web_content_scanner.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_669
+#graphify/document #graphify/EXTRACTED #community/web_content_scannerpy

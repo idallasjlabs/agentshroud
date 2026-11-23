@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "rationale"
-community: "Community 309"
+community: "ingest_api/main.py"
 location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_309
+  - community/ingest_api/mainpy
 ---
 
 # GET /status returns service info.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_status_endpoint()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_309
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

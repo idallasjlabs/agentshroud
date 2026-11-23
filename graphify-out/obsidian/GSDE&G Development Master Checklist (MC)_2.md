@@ -1,21 +1,21 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mc/README.md"
 type: "document"
-community: "Community 1234"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1234
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # GSDE&G Development Master Checklist (MC)
 
 ## Connections
-- [[Purpose_89]] - `contains` [EXTRACTED]
-- [[README_94]] - `contains` [EXTRACTED]
+- [[Purpose_166]] - `contains` [EXTRACTED]
 - [[Related Skills_110]] - `contains` [EXTRACTED]
-- [[SKILL_152]] - `contains` [EXTRACTED]
-- [[Usage_114]] - `contains` [EXTRACTED]
+- [[Usage_123]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-mcREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1234
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

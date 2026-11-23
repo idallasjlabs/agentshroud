@@ -1,24 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/podman_engine.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: "Community 613"
-location: "L29"
+community: "event_bus.py"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_613
+  - community/event_buspy
 ---
 
 # Function Details
 
 ## Connections
-- [[PodmanEngine.__init__(cli)]] - `contains` [EXTRACTED]
-- [[PodmanEngine._detect_compose()]] - `contains` [EXTRACTED]
-- [[PodmanEngine.compose_up(file, detach)  compose_down(file)]] - `contains` [EXTRACTED]
-- [[PodmanEngine.generate_systemd(name)]] - `contains` [EXTRACTED]
-- [[PodmanEngine.health_check()]] - `contains` [EXTRACTED]
-- [[PodmanEngine.ps(all)]] - `contains` [EXTRACTED]
-- [[PodmanEngine.run(image, name, , volumes, ...)]] - `contains` [EXTRACTED]
-- [[podman_engine.py_2]] - `contains` [EXTRACTED]
+- [[EventBus.emit(event)]] - `contains` [EXTRACTED]
+- [[event_bus.py_1]] - `contains` [EXTRACTED]
+- [[make_event(event_type, summary, details, severity)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_613
+#graphify/document #graphify/EXTRACTED #community/event_buspy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Community 217"
+community: "AgentShroud Audit Specification"
 location: "L450"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_217
+  - community/AgentShroud_Audit_Specification
 ---
 
 # GDPR Article 30 Record Keeping
@@ -15,4 +15,4 @@ tags:
 - [[Compliance Mapping]] - `contains` [EXTRACTED]
 - [[Processing Activities Register]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_217
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification

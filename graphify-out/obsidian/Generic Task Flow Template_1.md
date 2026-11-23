@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-ux/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
 type: "document"
-community: "Community 264"
-location: "L146"
+community: "Skill: UX Expert (UX)"
+location: "L145"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_264
+  - community/Skill_UX_Expert_UX
 ---
 
 # Generic Task Flow Template
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[User Flow Diagrams_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_264
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

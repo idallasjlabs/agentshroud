@@ -1,23 +1,23 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md"
 type: "document"
-community: "Community 1012"
+community: "GATEWAY_OP_PROXY_URL"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1012
+  - community/GATEWAY_OP_PROXY_URL
 ---
 
 # GATEWAY_OP_PROXY_URL
 
 ## Connections
-- [[Description_3]] - `contains` [EXTRACTED]
+- [[Description_10]] - `contains` [EXTRACTED]
 - [[GATEWAY_OP_PROXY_URL]] - `contains` [EXTRACTED]
-- [[Related Notes_31]] - `contains` [EXTRACTED]
-- [[Security_26]] - `contains` [EXTRACTED]
-- [[Set In_1]] - `contains` [EXTRACTED]
+- [[Related Notes_42]] - `contains` [EXTRACTED]
+- [[Security_10]] - `contains` [EXTRACTED]
+- [[Set In_3]] - `contains` [EXTRACTED]
 - [[Usage Flow]] - `contains` [EXTRACTED]
 - [[Value_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1012
+#graphify/document #graphify/EXTRACTED #community/GATEWAY_OP_PROXY_URL

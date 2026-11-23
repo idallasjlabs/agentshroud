@@ -1,20 +1,25 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
 type: "document"
-community: "Community 705"
-location: "L36"
+community: "Function Details"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_705
+  - community/Function_Details
 ---
 
 # Function Details
 
 ## Connections
-- [[forward_to_agent(target, sanitized_content, ledger_id, metadata)]] - `contains` [EXTRACTED]
-- [[health_check(target)]] - `contains` [EXTRACTED]
-- [[resolve_target(request)]] - `contains` [EXTRACTED]
-- [[router.py_3]] - `contains` [EXTRACTED]
+- [[SubagentMonitor.check_tool_usage(session_id, agent_id, tool_name, required_trust)]] - `contains` [EXTRACTED]
+- [[SubagentMonitor.deregister(session_id, agent_id)]] - `contains` [EXTRACTED]
+- [[SubagentMonitor.get_active(session_id)]] - `contains` [EXTRACTED]
+- [[SubagentMonitor.get_audit_log(session_id, agent_id)]] - `contains` [EXTRACTED]
+- [[SubagentMonitor.get_flagged_events(session_id)]] - `contains` [EXTRACTED]
+- [[SubagentMonitor.kill_agent(session_id, agent_id)]] - `contains` [EXTRACTED]
+- [[SubagentMonitor.kill_all(session_id)]] - `contains` [EXTRACTED]
+- [[SubagentMonitor.register_spawn(session_id, agent_id, parent_id, parent_trust)]] - `contains` [EXTRACTED]
+- [[subagent_monitor.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_705
+#graphify/document #graphify/EXTRACTED #community/Function_Details

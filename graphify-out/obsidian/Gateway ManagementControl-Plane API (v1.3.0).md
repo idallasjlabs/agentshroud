@@ -1,11 +1,11 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Community 637"
+community: "Gateway Management/Control-Plane API (v1.3.0)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_637
+  - community/Gateway_Management/Control-Plane_API_v130
 ---
 
 # Gateway Management/Control-Plane API (v1.3.0)
@@ -18,4 +18,4 @@ tags:
 - [[gatewaysocrouter.py (SOC Shared Command Layer)]] - `implements` [EXTRACTED]
 - [[gatewaywebapi.py (Web control center)]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_637
+#graphify/document #graphify/EXTRACTED #community/Gateway_Management/Control-Plane_API_v130

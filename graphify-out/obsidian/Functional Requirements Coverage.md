@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Community 91"
+community: "AgentShroud Audit Specification"
 location: "L427"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_91
+  - community/AgentShroud_Audit_Specification
 ---
 
 # Functional Requirements Coverage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IEC 62443 Industrial Security Framework]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_91
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification

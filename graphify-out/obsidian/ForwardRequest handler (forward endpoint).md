@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Community 587"
+community: "Browser Extension"
 location: "gateway/ingest_api/routes/forward.py:326"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_587
+  - community/Browser_Extension
 ---
 
 # ForwardRequest handler (/forward endpoint)
 
 ## Connections
-- [[README_39]] - `references` [EXTRACTED]
+- [[browser-extensionREADME]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_587
+#graphify/code #graphify/EXTRACTED #community/Browser_Extension

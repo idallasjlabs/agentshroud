@@ -1,25 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
 type: "document"
-community: "Community 539"
-location: "L41"
+community: "browser_security.py"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_539
+  - community/browser_securitypy
 ---
 
 # Function Details
 
 ## Connections
-- [[KeyInjector.inject_for_request(url, headers, agent_id, key_name)]] - `contains` [EXTRACTED]
-- [[KeyLeakDetector.scan_outbound(text)]] - `contains` [EXTRACTED]
-- [[KeyVault.check_value_match(text)]] - `contains` [EXTRACTED]
-- [[KeyVault.get_audit_log()]] - `contains` [EXTRACTED]
-- [[KeyVault.get_key(name, agent_id)]] - `contains` [EXTRACTED]
-- [[KeyVault.redact(text)]] - `contains` [EXTRACTED]
-- [[KeyVault.rotate_key(name, new_value)]] - `contains` [EXTRACTED]
-- [[KeyVault.store_key(name, value, scopes)]] - `contains` [EXTRACTED]
-- [[key_vault.py_2]] - `contains` [EXTRACTED]
+- [[BrowserSecurityGuard.analyze_content(content)]] - `contains` [EXTRACTED]
+- [[BrowserSecurityGuard.analyze_screenshot(image_data)]] - `contains` [EXTRACTED]
+- [[BrowserSecurityGuard.can_enter_credentials(url)]] - `contains` [EXTRACTED]
+- [[BrowserSecurityGuard.check_url_reputation(url)]] - `contains` [EXTRACTED]
+- [[BrowserSecurityGuard.register_screenshot_hook(hook)]] - `contains` [EXTRACTED]
+- [[browser_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_539
+#graphify/document #graphify/EXTRACTED #community/browser_securitypy

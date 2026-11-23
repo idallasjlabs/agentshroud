@@ -1,12 +1,11 @@
 ---
-source_file: "scripts/generate_branding_assets.py"
+source_file: ""
 type: "code"
-community: "Community 446"
-location: "L44"
+community: "generate_branding_assets.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_446
+  - community/generate_branding_assetspy
 ---
 
 # FreeTypeFont
@@ -14,4 +13,4 @@ tags:
 ## Connections
 - [[get_font()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_446
+#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy

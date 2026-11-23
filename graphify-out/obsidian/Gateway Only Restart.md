@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Restart Procedure.md"
 type: "document"
-community: "Community 333"
+community: "Restart Procedure"
 location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_333
+  - community/Restart_Procedure
 ---
 
 # Gateway Only Restart
 
 ## Connections
-- [[Restart Procedure_2]] - `contains` [EXTRACTED]
+- [[Restart Procedure_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_333
+#graphify/document #graphify/EXTRACTED #community/Restart_Procedure
