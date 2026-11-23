@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
+community: "test_memory_lifecycle.py"
 location: "L410"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/test_memory_lifecyclepy
 ---
 
 # .test_integrated_memory_protection()
@@ -15,4 +15,4 @@ tags:
 - [[Test complete memory protection workflow.]] - `rationale_for` [EXTRACTED]
 - [[TestMemorySecurityIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/test_memory_lifecyclepy

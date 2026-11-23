@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: "The 8D Investigation Process"
+community: "TestAuditStore"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process
+  - community/TestAuditStore
 ---
 
 # .test_log_event()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[Test logging audit events.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditStore]] - `method` [EXTRACTED]
+- [[asyncio_80]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/The_8D_Investigation_Process
+#graphify/code #graphify/EXTRACTED #community/TestAuditStore

@@ -12,6 +12,6 @@ tags:
 # .test_kill_specific_agent()
 
 ## Connections
-- [[TestKillSwitch]] - `method` [EXTRACTED]
+- [[TestKillSwitch_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SubagentMonitor

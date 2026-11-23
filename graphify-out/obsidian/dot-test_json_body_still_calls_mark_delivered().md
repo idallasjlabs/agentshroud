@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_telegram_proxy_outbound.py"
+community: "TestReplayBufferOffsetParsing"
 location: "L4654"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy
+  - community/TestReplayBufferOffsetParsing
 ---
 
 # .test_json_body_still_calls_mark_delivered()
@@ -14,7 +14,8 @@ tags:
 ## Connections
 - [[dot-_fake_get_updates_urlopen()]] - `calls` [EXTRACTED]
 - [[dot-_make_proxy_with_mock_buffer()]] - `calls` [EXTRACTED]
-- [[JSON getUpdates body must still call mark_delivered (existing behaviour preserve]] - `rationale_for` [EXTRACTED]
+- [[JSON getUpdates body must still call mark_delivered (existing behaviour…]] - `rationale_for` [EXTRACTED]
 - [[TestReplayBufferOffsetParsing]] - `method` [EXTRACTED]
+- [[asyncio_30]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy
+#graphify/code #graphify/EXTRACTED #community/TestReplayBufferOffsetParsing

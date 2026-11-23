@@ -12,7 +12,8 @@ tags:
 # .test_invalid_default_action_string_falls_back_to_deny()
 
 ## Connections
-- [[A typo'd default_action (e.g. 'allow-all') must not silently open         the ga]] - `rationale_for` [EXTRACTED]
+- [[dot-from_dict()_11]] - `calls` [EXTRACTED]
+- [[A typo'd default_action (e.g. 'allow-all') must not silently open the gate —…]] - `rationale_for` [EXTRACTED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2APolicyConfig

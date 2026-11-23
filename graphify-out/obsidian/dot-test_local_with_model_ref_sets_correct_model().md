@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "code"
-community: "AgentShroud Phase Review — 2026-02-23"
+community: "._run_and_read"
 location: "L156"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_Review__2026-02-23
+  - community/_run_and_read
 ---
 
 # .test_local_with_model_ref_sets_correct_model()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_run_and_read()]] - `calls` [EXTRACTED]
 - [[TestSwitchModelEnvKeys]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23
+#graphify/code #graphify/EXTRACTED #community/_run_and_read

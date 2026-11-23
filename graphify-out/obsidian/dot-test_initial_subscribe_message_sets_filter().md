@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "._handler"
 location: "L732"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/_handler
 ---
 
 # .test_initial_subscribe_message_sets_filter()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_handler()]] - `calls` [EXTRACTED]
 - [[TestHandlerRun]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/_handler

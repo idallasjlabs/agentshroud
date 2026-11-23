@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap"
-location: "L92"
+community: "TestSSRFDetection"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_v080__25-Domain_Prompt_Injection_Defense_Assessment__Roadmap
+  - community/TestSSRFDetection
 ---
 
 # .test_localhost_blocked()
 
 ## Connections
-- [[TestSSRFBlocking]] - `method` [EXTRACTED]
+- [[TestSSRFDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_v080__25-Domain_Prompt_Injection_Defense_Assessment__Roadmap
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

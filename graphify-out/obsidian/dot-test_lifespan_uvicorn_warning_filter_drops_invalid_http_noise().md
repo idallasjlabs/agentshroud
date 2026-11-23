@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
+community: "lifespan"
 location: "L300"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/lifespan
 ---
 
 # .test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()
@@ -16,4 +16,4 @@ tags:
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 - [[_DropInvalidHTTPRequestFilter]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/lifespan

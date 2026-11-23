@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TestEncryptedStore"
+community: "EncryptedStore"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEncryptedStore
+  - community/EncryptedStore
 ---
 
 # .test_key_rotation_auto_increment()
@@ -15,4 +15,4 @@ tags:
 - [[EncryptedStore]] - `calls` [EXTRACTED]
 - [[TestEncryptedStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEncryptedStore
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

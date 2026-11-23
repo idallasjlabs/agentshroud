@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "TestAllowlistMode"
+community: "WebProxy"
 location: "L542"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAllowlistMode
+  - community/WebProxy
 ---
 
 # .test_listed_domain_passes()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAllowlistMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAllowlistMode
+#graphify/code #graphify/EXTRACTED #community/WebProxy

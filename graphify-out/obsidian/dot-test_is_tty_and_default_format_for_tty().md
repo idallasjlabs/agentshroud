@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "AlertDispatcher (4)"
-location: "L295"
+community: "test_cli_coverage.py"
+location: "L314"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_4
+  - community/test_cli_coveragepy
 ---
 
 # .test_is_tty_and_default_format_for_tty()
@@ -16,4 +16,4 @@ tags:
 - [[_default_format()]] - `calls` [EXTRACTED]
 - [[_is_tty()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_4
+#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy

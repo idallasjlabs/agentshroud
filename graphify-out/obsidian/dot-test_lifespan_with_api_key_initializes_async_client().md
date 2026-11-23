@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "code"
-community: "egress_filter.py"
+community: "TestLifespan"
 location: "L329"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/TestLifespan
 ---
 
 # .test_lifespan_with_api_key_initializes_async_client()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestLifespan]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_filterpy
+#graphify/code #graphify/EXTRACTED #community/TestLifespan

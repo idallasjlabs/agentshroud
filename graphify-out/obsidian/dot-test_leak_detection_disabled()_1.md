@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_credential_isolation.py"
+source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "setup-https-proxy.js"
-location: "L156"
+community: "TestLeakDetection"
+location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup-https-proxyjs
+  - community/TestLeakDetection
 ---
 
 # .test_leak_detection_disabled()
 
 ## Connections
-- [[CredentialInjector]] - `calls` [INFERRED]
-- [[TestCredentialLeakDetection]] - `method` [EXTRACTED]
+- [[CredentialInjectorConfig]] - `calls` [EXTRACTED]
+- [[TestLeakDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup-https-proxyjs
+#graphify/code #graphify/EXTRACTED #community/TestLeakDetection

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: ".agents/skills/i-chaos-engineering/SKILL.md"
+community: "_w"
 location: "L644"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-chaos-engineering/SKILLmd
+  - community/_w
 ---
 
 # .test_invalid_json_returns_empty()
@@ -15,4 +15,4 @@ tags:
 - [[TestDaemonConfigReader]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-chaos-engineering/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/_w

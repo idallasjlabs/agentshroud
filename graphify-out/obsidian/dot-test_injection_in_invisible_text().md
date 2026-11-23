@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "TestHiddenContent"
 location: "L214"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/TestHiddenContent
 ---
 
 # .test_injection_in_invisible_text()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestHiddenContent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/TestHiddenContent

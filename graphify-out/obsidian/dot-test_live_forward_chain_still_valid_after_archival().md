@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[TestArchiveOldEvents]] - `method` [EXTRACTED]
-- [[The remaining live rows' own internal chain (row N's prev_hash ==         row N-]] - `rationale_for` [EXTRACTED]
+- [[The remaining live rows' own internal chain (row N's prev_hash == row N-1's…]] - `rationale_for` [EXTRACTED]
 - [[_chain_events()]] - `calls` [EXTRACTED]
 - [[_make_live_db()]] - `calls` [EXTRACTED]
 - [[archive_old_events()]] - `calls` [EXTRACTED]

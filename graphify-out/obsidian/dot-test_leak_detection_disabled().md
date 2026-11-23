@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_credential_injector.py"
+source_file: "gateway/tests/test_credential_isolation.py"
 type: "code"
-community: "Restart Procedure (3)"
-location: "L150"
+community: "CredentialInjectorConfig"
+location: "L156"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Restart_Procedure_3
+  - community/CredentialInjectorConfig
 ---
 
 # .test_leak_detection_disabled()
 
 ## Connections
 - [[CredentialInjector]] - `calls` [EXTRACTED]
-- [[TestLeakDetection]] - `method` [EXTRACTED]
+- [[CredentialInjectorConfig]] - `calls` [EXTRACTED]
+- [[TestCredentialLeakDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Restart_Procedure_3
+#graphify/code #graphify/EXTRACTED #community/CredentialInjectorConfig

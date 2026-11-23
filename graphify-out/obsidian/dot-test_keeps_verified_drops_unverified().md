@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "TelegramAPIProxy (3)"
+community: "DraftEntry"
 location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_3
+  - community/DraftEntry
 ---
 
 # .test_keeps_verified_drops_unverified()
@@ -16,4 +16,4 @@ tags:
 - [[_draft()]] - `calls` [EXTRACTED]
 - [[_inject_fetcher()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3
+#graphify/code #graphify/EXTRACTED #community/DraftEntry

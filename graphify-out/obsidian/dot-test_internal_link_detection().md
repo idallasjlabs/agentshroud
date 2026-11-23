@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "Any"
+community: "TestToolResultSanitizer"
 location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/TestToolResultSanitizer
 ---
 
 # .test_internal_link_detection()
@@ -15,4 +15,4 @@ tags:
 - [[Test detection of internalrelative links.]] - `rationale_for` [EXTRACTED]
 - [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/TestToolResultSanitizer
