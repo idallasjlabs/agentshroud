@@ -1,0 +1,38 @@
+---
+type: community
+members: 21
+---
+
+# generate_branding_assets.py
+
+**Members:** 21 nodes
+
+## Members
+- [[AgentShroud Branding Asset Generator =====================================…]] - rationale - scripts/generate_branding_assets.py
+- [[Create SVG files that embed the logo PNGs as base64 data URIs. These are…]] - rationale - scripts/generate_branding_assets.py
+- [[FreeTypeFont]] - code
+- [[Image]] - code
+- [[Paste transparent logo centred on a solid-colour canvas.]] - rationale - scripts/generate_branding_assets.py
+- [[Path_54]] - code
+- [[branded_banner()]] - code - scripts/generate_branding_assets.py
+- [[ensure()]] - code - scripts/generate_branding_assets.py
+- [[generate_branding_assets.py]] - code - scripts/generate_branding_assets.py
+- [[generate_email()]] - code - scripts/generate_branding_assets.py
+- [[generate_favicons()]] - code - scripts/generate_branding_assets.py
+- [[generate_feature_icons()]] - code - scripts/generate_branding_assets.py
+- [[generate_icon_sizes()]] - code - scripts/generate_branding_assets.py
+- [[generate_presentation()]] - code - scripts/generate_branding_assets.py
+- [[generate_social()]] - code - scripts/generate_branding_assets.py
+- [[generate_svg_logos()]] - code - scripts/generate_branding_assets.py
+- [[generate_variants()]] - code - scripts/generate_branding_assets.py
+- [[get_font()]] - code - scripts/generate_branding_assets.py
+- [[icon_on_canvas()]] - code - scripts/generate_branding_assets.py
+- [[main()_25]] - code - scripts/generate_branding_assets.py
+- [[save()]] - code - scripts/generate_branding_assets.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/generate_branding_assetspy
+SORT file.name ASC
+```

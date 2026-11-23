@@ -1,0 +1,226 @@
+---
+type: community
+members: 107
+---
+
+# lifespan.py
+
+**Members:** 107 nodes
+
+## Members
+- [[NOTE Gateway-side Slack Socket Mode listener removed.]] - rationale - gateway/ingest_api/lifespan.py
+- [[dot-_classify_response_risk()]] - code - gateway/security/outbound_filter.py
+- [[dot-_force_demotion()]] - code - gateway/security/trust_manager.py
+- [[dot-_is_allowed_for_trust()]] - code - gateway/security/outbound_filter.py
+- [[dot-filter_response()_2]] - code - gateway/security/outbound_filter.py
+- [[dot-get_next_trust_level()]] - code - gateway/security/progressive_trust_config.py
+- [[dot-get_previous_trust_level()]] - code - gateway/security/progressive_trust_config.py
+- [[dot-get_trust_level_order()]] - code - gateway/security/progressive_trust_config.py
+- [[dot-is_tool_allowed()_1]] - code - gateway/security/progressive_trust_config.py
+- [[dot-record_violation()]] - code - gateway/security/trust_manager.py
+- [[dot-test_default_mode_is_enforce()_6]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_default_penalties_cover_all_violation_types()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_demotion_recorded_in_history()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_enforce_mode_blocks()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_everything_else_fails_closed_to_enforce()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_full_level_wildcard_allows_everything()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_get_trust_respects_stored_ceiling()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_is_tool_allowed_per_level()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_is_tool_allowed_returns_none_without_config()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_is_tool_allowed_wildcard()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_level_order()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_mapping_is_bijective_and_total()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_monitor_mode_logs_but_does_not_block_via_trust_gate()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_monitor_mode_still_allows_permitted_tools()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_monitor_token_resolves_monitor()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_next_and_previous_levels()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_non_severe_typed_violation_does_not_force_demotion()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_promotion_granted_once_thresholds_met()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_renamed_rungs_map_correctly()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_score_alone_cannot_promote_with_ladder()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_score_alone_promotes_without_config()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_severe_violation_forces_demotion()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_tool_allowed_at_level()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_tool_denied_above_level()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_typed_penalty_from_config()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_unknown_tool_returns_none()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_unregistered_agent_returns_none()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_untyped_violation_uses_legacy_points()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_vouching_required_for_top_rung()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[A ladder with thresholds small enough for unit tests.]] - rationale - gateway/tests/test_progressive_trust_integration.py
+- [[A single match found by the outbound filter.]] - rationale - gateway/security/outbound_filter.py
+- [[Application lifespan management for the AgentShroud Gateway]] - rationale - gateway/ingest_api/lifespan.py
+- [[Categories of information that may need filtering.]] - rationale - gateway/security/outbound_filter.py
+- [[Check if a disclosure category is permitted for the user's trust level. Default…]] - rationale - gateway/security/outbound_filter.py
+- [[Check if a tool is allowed for the given trust level.]] - rationale - gateway/security/progressive_trust_config.py
+- [[Classify the risk level of a response based on info disclosure density.]] - rationale - gateway/security/outbound_filter.py
+- [[Comprehensive tests for the Outbound Information Filter Tests all filtering…]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Configuration for the progressive trust system.]] - rationale - gateway/security/progressive_trust_config.py
+- [[Drop an agent one trust level immediately (severe violations).]] - rationale - gateway/security/trust_manager.py
+- [[Enum_31]] - code
+- [[Enum_32]] - code
+- [[Fail-closed resolver for the enforcement-mode env var (SCRUM-78). Returns…]] - rationale - gateway/security/progressive_trust_config.py
+- [[Filter agent response for sensitive information disclosure. Args…]] - rationale - gateway/security/outbound_filter.py
+- [[FilterMatch]] - code - gateway/security/outbound_filter.py
+- [[FilterResult_1]] - code - gateway/security/outbound_filter.py
+- [[First-ever unit tests for the config object itself.]] - rationale - gateway/tests/test_progressive_trust_integration.py
+- [[Get the next trust level for promotion, or None if already at max.]] - rationale - gateway/security/progressive_trust_config.py
+- [[Get the previous trust level for demotion, or None if already at min.]] - rationale - gateway/security/progressive_trust_config.py
+- [[Get trust levels in ascending order.]] - rationale - gateway/security/progressive_trust_config.py
+- [[High score with too few interactions must NOT climb the ladder.]] - rationale - gateway/tests/test_progressive_trust_integration.py
+- [[InfoCategory]] - code - gateway/security/outbound_filter.py
+- [[IntEnum_3]] - code
+- [[MALICIOUS_INTENT drops a level even when the score would not.]] - rationale - gateway/tests/test_progressive_trust_integration.py
+- [[Outbound Information Filter for AgentShroud Gateway Prevents disclosure of…]] - rationale - gateway/security/outbound_filter.py
+- [[ProgressiveTrustConfig]] - code - gateway/security/progressive_trust_config.py
+- [[ProgressiveTrustConfig → TrustManager integration tests. The trust ladder…]] - rationale - gateway/tests/test_progressive_trust_integration.py
+- [[PromotionThreshold]] - code - gateway/security/progressive_trust_config.py
+- [[Record a security violation, significantly decreasing trust. With a progressive…]] - rationale - gateway/security/trust_manager.py
+- [[Result of filtering agent response content.]] - rationale - gateway/security/outbound_filter.py
+- [[SCRUM-78 — operational monitor↔enforce lever.]] - rationale - gateway/tests/test_progressive_trust_integration.py
+- [[SCRUM-78 — the env-var resolver must fail CLOSED (enforce).]] - rationale - gateway/tests/test_progressive_trust_integration.py
+- [[Seed stored scorelevel directly (same technique lifespan.py uses).]] - rationale - gateway/tests/test_progressive_trust_integration.py
+- [[Stored level is the promotion ceiling when the ladder is active.]] - rationale - gateway/tests/test_progressive_trust_integration.py
+- [[TestBackwardCompat]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[TestEnforcementMode]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[TestEnforcementModeResolver]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[TestEnumMapping]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[TestGatedPromotion]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[TestProgressiveTrustConfigUnit]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[TestToolGating]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[TestTypedViolations]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[Threshold for promoting to a trust level.]] - rationale - gateway/security/progressive_trust_config.py
+- [[Tools outside the ladder vocabulary get no opinion (ACL decides).]] - rationale - gateway/tests/test_progressive_trust_integration.py
+- [[Trust levels from untrusted to verified.]] - rationale - gateway/security/progressive_trust_config.py
+- [[TrustLevel]] - code - gateway/security/progressive_trust_config.py
+- [[TrustLevel_1]] - code - gateway/security/trust_manager.py
+- [[TrustManager WITHOUT a progressive config must behave exactly as before.]] - rationale - gateway/tests/test_progressive_trust_integration.py
+- [[Types of security violations.]] - rationale - gateway/security/progressive_trust_config.py
+- [[Unambiguous malicious intent — immediate demotion, not a slow decay.]] - rationale - gateway/tests/test_a2a_trust_scoring.py
+- [[ViolationType]] - code - gateway/security/progressive_trust_config.py
+- [[_fast_ladder()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[_make_tm()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[_set_state()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[fixture_88]] - code
+- [[lifespan.py]] - code - gateway/ingest_api/lifespan.py
+- [[outbound_filter.py]] - code - gateway/security/outbound_filter.py
+- [[pipeline.py_1]] - code - gateway/proxy/pipeline.py
+- [[progressive_trust_config.py]] - code - gateway/security/progressive_trust_config.py
+- [[resolve_enforcement_mode()]] - code - gateway/security/progressive_trust_config.py
+- [[test_a2a_ssrf_callback_is_a_severe_violation_by_default()]] - code - gateway/tests/test_a2a_trust_scoring.py
+- [[test_a2a_ssrf_callback_penalty_matches_malicious_intent_tier()]] - code - gateway/tests/test_a2a_trust_scoring.py
+- [[test_a2a_task_ownership_violation_has_a_configured_penalty_heavier_than_generic_policy()]] - code - gateway/tests/test_a2a_trust_scoring.py
+- [[test_outbound_filter.py]] - code - gateway/tests/test_outbound_filter.py
+- [[test_progressive_trust_integration.py]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[trust_manager()_3]] - code - gateway/tests/test_a2a_integration.py
+- [[trust_manager()_4]] - code - gateway/tests/test_a2a_trust_scoring.py
+- [[trust_manager.py]] - code - gateway/security/trust_manager.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/lifespanpy
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 26 edges to [[_COMMUNITY_TrustManager]]
+- 13 edges to [[_COMMUNITY_A2APolicyConfig]]
+- 13 edges to [[_COMMUNITY_ToolACLEnforcer]]
+- 12 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 11 edges to [[_COMMUNITY_TrustConfig]]
+- 9 edges to [[_COMMUNITY_lifespan]]
+- 9 edges to [[_COMMUNITY_asyncio_1]]
+- 7 edges to [[_COMMUNITY_SecurityPipeline]]
+- 7 edges to [[_COMMUNITY_ingest_apiconfig.py]]
+- 6 edges to [[_COMMUNITY_AgentRegistry]]
+- 6 edges to [[_COMMUNITY_WebProxy]]
+- 5 edges to [[_COMMUNITY_middleware.py]]
+- 4 edges to [[_COMMUNITY_test_security_regressions_v1_2.py]]
+- 4 edges to [[_COMMUNITY_test_e2e_proxy.py]]
+- 4 edges to [[_COMMUNITY_test_redteam_probes.py]]
+- 4 edges to [[_COMMUNITY_test_clamav_pipeline.py]]
+- 3 edges to [[_COMMUNITY_PIIConfig]]
+- 3 edges to [[_COMMUNITY_KeyVault]]
+- 3 edges to [[_COMMUNITY_EnhancedApprovalQueue]]
+- 3 edges to [[_COMMUNITY_test_security_integration.py]]
+- 3 edges to [[_COMMUNITY_load_config]]
+- 3 edges to [[_COMMUNITY_EgressFilter]]
+- 3 edges to [[_COMMUNITY_AuditChain]]
+- 3 edges to [[_COMMUNITY_daily_cve_report.py]]
+- 3 edges to [[_COMMUNITY_test_dns_canvas_coverage.py]]
+- 2 edges to [[_COMMUNITY_FalcoAlertWatcher]]
+- 2 edges to [[_COMMUNITY_PrivacyPolicyEnforcer]]
+- 2 edges to [[_COMMUNITY_ToolResultInjectionScanner]]
+- 2 edges to [[_COMMUNITY_RateLimitGuard]]
+- 2 edges to [[_COMMUNITY_DataExfilVolumeGuard]]
+- 2 edges to [[_COMMUNITY_TestFabricatedSecurityNotice]]
+- 2 edges to [[_COMMUNITY_A2AProxy]]
+- 2 edges to [[_COMMUNITY_UserSessionManager]]
+- 2 edges to [[_COMMUNITY_MCPProxy]]
+- 2 edges to [[_COMMUNITY_test_ws_e_rt2_inbound_encoding.py]]
+- 2 edges to [[_COMMUNITY_SecurityConfig]]
+- 2 edges to [[_COMMUNITY_get_wazuh_summary]]
+- 2 edges to [[_COMMUNITY_test_edge_service_routes.py]]
+- 2 edges to [[_COMMUNITY_test_e2e_watchtower.py]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_DelegationManager]]
+- 1 edge to [[_COMMUNITY_ReportStore]]
+- 1 edge to [[_COMMUNITY_CronStateMonitor]]
+- 1 edge to [[_COMMUNITY_EncryptedStore]]
+- 1 edge to [[_COMMUNITY_EgressPolicy]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY_MemoryIntegrityMonitor]]
+- 1 edge to [[_COMMUNITY_TestTrustProgression]]
+- 1 edge to [[_COMMUNITY_ContainerSnapshot]]
+- 1 edge to [[_COMMUNITY_MemoryLifecycleManager]]
+- 1 edge to [[_COMMUNITY_LLMProxy]]
+- 1 edge to [[_COMMUNITY_MemoryLifecycleConfig]]
+- 1 edge to [[_COMMUNITY_ContextGuard]]
+- 1 edge to [[_COMMUNITY_SSHProxy]]
+- 1 edge to [[_COMMUNITY_ConfigIntegrityMonitor]]
+- 1 edge to [[_COMMUNITY_CanaryTripwire]]
+- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
+- 1 edge to [[_COMMUNITY_OutputSchemaEnforcer]]
+- 1 edge to [[_COMMUNITY_GroupRegistry]]
+- 1 edge to [[_COMMUNITY_PromptGuard]]
+- 1 edge to [[_COMMUNITY_HeuristicClassifier]]
+- 1 edge to [[_COMMUNITY_CollaboratorActivityTracker]]
+- 1 edge to [[_COMMUNITY_ApprovalStore]]
+- 1 edge to [[_COMMUNITY_test_memory_lifecycle.py]]
+- 1 edge to [[_COMMUNITY_AlertTelegramRelay]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher]]
+- 1 edge to [[_COMMUNITY_AuditStore]]
+- 1 edge to [[_COMMUNITY_DNSBlocklist]]
+- 1 edge to [[_COMMUNITY_NetworkValidator]]
+- 1 edge to [[_COMMUNITY_EgressTelegramNotifier]]
+- 1 edge to [[_COMMUNITY_DifferentialPIIDetector]]
+- 1 edge to [[_COMMUNITY_EnvelopeSigner]]
+- 1 edge to [[_COMMUNITY_HTTPConnectProxy]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
+- 1 edge to [[_COMMUNITY_test_config_hot_reload.py]]
+- 1 edge to [[_COMMUNITY_get_trivy_summary]]
+- 1 edge to [[_COMMUNITY_A2APeerTestDouble]]
+- 1 edge to [[_COMMUNITY_ResourceGuard]]
+- 1 edge to [[_COMMUNITY_read_secret]]
+- 1 edge to [[_COMMUNITY_canvas_proxy.py]]
+- 1 edge to [[_COMMUNITY_test_image_verifier.py]]
+- 1 edge to [[_COMMUNITY_test_lifespan_prune.py]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_parse_trivy_output]]
+- 1 edge to [[_COMMUNITY_mcp_proxy.py]]
+- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
+- 1 edge to [[_COMMUNITY_prompt_guard.py]]
+- 1 edge to [[_COMMUNITY_PermissionLevel]]
+- 1 edge to [[_COMMUNITY_KillSwitchConfig]]
+- 1 edge to [[_COMMUNITY_dashboard_endpoints.py]]
+- 1 edge to [[_COMMUNITY_test_hermes_forwarder_drops_non_http]]
+- 1 edge to [[_COMMUNITY_test_web_api_coverage.py]]
+- 1 edge to [[_COMMUNITY_test_telegram_pipeline.py]]
+
+## Top bridge nodes
+- [[lifespan.py]] - degree 137, connects to 77 communities
+- [[pipeline.py_1]] - degree 28, connects to 16 communities
+- [[trust_manager.py]] - degree 24, connects to 12 communities
+- [[TrustLevel_1]] - degree 41, connects to 10 communities
+- [[ProgressiveTrustConfig]] - degree 24, connects to 4 communities
