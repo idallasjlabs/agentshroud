@@ -1,18 +1,17 @@
 ---
-source_file: "docs/adr/ADR-001-proxy-layer-inversion.md"
+source_file: "docs/governance/SPRINT_CADENCE.md"
 type: "document"
-community: "Community 581"
-location: "L8"
+community: "Sprint Cadence Decision"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_581
+  - community/Sprint_Cadence_Decision
 ---
 
 # Decision
 
 ## Connections
-- [[ADR-001-proxy-layer-inversion]] - `contains` [EXTRACTED]
-- [[ADR-001 Proxy-layer inversion model]] - `contains` [EXTRACTED]
+- [[Sprint Cadence Decision]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_581
+#graphify/document #graphify/EXTRACTED #community/Sprint_Cadence_Decision

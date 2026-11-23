@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-data/README.md"
 type: "document"
-community: "Community 210"
+community: "CI/CD Pipeline Advisor (SKILL)"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_210
+  - community/CI/CD_Pipeline_Advisor_SKILL
 ---
 
 # Data Validation README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Data Validation (DATA-VAL) Skill]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_210
+#graphify/document #graphify/INFERRED #community/CI/CD_Pipeline_Advisor_SKILL

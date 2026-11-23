@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_egress_monitor.py"
+source_file: "gateway/tests/test_dns_filter.py"
 type: "rationale"
-community: "Community 140"
-location: "L37"
+community: "TestDNSFilterConfig"
+location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_140
+  - community/TestDNSFilterConfig
 ---
 
 # Default mode is enforce after v0.8.0 enforcement hardening.
 
 ## Connections
-- [[.test_default_mode_is_enforce()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_mode_is_enforce()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_140
+#graphify/rationale #graphify/EXTRACTED #community/TestDNSFilterConfig

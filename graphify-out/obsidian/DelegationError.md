@@ -1,30 +1,23 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "Community 89"
+community: "delegation.py"
 location: "L54"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_89
+  - graphify/EXTRACTED
+  - community/delegationpy
 ---
 
 # DelegationError
 
 ## Connections
-- [[._require_owner()]] - `calls` [EXTRACTED]
-- [[.delegate()]] - `calls` [EXTRACTED]
-- [[DelegationManager_1]] - `uses` [INFERRED]
+- [[dot-_require_owner()]] - `calls` [EXTRACTED]
+- [[dot-delegate()]] - `calls` [EXTRACTED]
 - [[Raised when a delegation operation is invalid.]] - `rationale_for` [EXTRACTED]
 - [[TestAccessControl]] - `uses` [INFERRED]
-- [[TestDelegateBasic]] - `uses` [INFERRED]
-- [[TestIsDelegated]] - `uses` [INFERRED]
-- [[TestListAndCleanup]] - `uses` [INFERRED]
-- [[TestRedelegation]] - `uses` [INFERRED]
-- [[TestRevoke]] - `uses` [INFERRED]
-- [[TestSerialization]] - `uses` [INFERRED]
 - [[ValueError]] - `inherits` [EXTRACTED]
 - [[delegation.py]] - `contains` [EXTRACTED]
 - [[test_delegation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_89
+#graphify/code #graphify/EXTRACTED #community/delegationpy

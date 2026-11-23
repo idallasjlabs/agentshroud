@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "Community 72"
+community: "DNSFilterConfig"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/DNSFilterConfig
 ---
 
 # DNSQuery
 
 ## Connections
-- [[.check()_4]] - `calls` [EXTRACTED]
-- [[.get_audit_log()_3]] - `references` [EXTRACTED]
-- [[.get_flagged_queries()]] - `references` [EXTRACTED]
-- [[dns_filter.py]] - `contains` [EXTRACTED]
+- [[dot-check()_1]] - `calls` [EXTRACTED]
+- [[dot-get_audit_log()_1]] - `references` [EXTRACTED]
+- [[dot-get_flagged_queries()]] - `references` [EXTRACTED]
+- [[dns_filter.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

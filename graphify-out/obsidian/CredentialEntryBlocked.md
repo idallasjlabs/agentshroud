@@ -1,23 +1,20 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "Community 196"
+community: "BrowserSecurityGuard"
 location: "L31"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_196
+  - graphify/EXTRACTED
+  - community/BrowserSecurityGuard
 ---
 
 # CredentialEntryBlocked
 
 ## Connections
-- [[.can_enter_credentials()]] - `calls` [EXTRACTED]
-- [[Exception]] - `inherits` [EXTRACTED]
+- [[dot-can_enter_credentials()]] - `calls` [EXTRACTED]
+- [[Exception_8]] - `inherits` [EXTRACTED]
 - [[TestCredentialProtection]] - `uses` [INFERRED]
-- [[TestScreenshotAnalysis]] - `uses` [INFERRED]
-- [[TestSocialEngineeringDetection]] - `uses` [INFERRED]
-- [[TestURLReputation]] - `uses` [INFERRED]
 - [[browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_196
+#graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard

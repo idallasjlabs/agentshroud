@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: "docs/operations/runbook.md"
 type: "document"
-community: "Community 413"
-location: "L404"
+community: "AgentShroud Operations Runbook"
+location: "L157"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_413
+  - community/AgentShroud_Operations_Runbook
 ---
 
 # Dashboard Access
 
 ## Connections
-- [[Step 7 Verify Installation]] - `contains` [EXTRACTED]
+- [[2. Health Monitoring]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_413
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Operations_Runbook

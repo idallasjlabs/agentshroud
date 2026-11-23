@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/eightd-root-cause-analysis/SKILL.md"
+source_file: ".github/agents/i-sec-defense.agent.md"
 type: "document"
-community: "Community 790"
-location: "L481"
+community: "AgentShroud Blue Team Security Auditor"
+location: "L147"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_790
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Critical Rules
 
 ## Connections
-- [[8D Root Cause Analysis — Data-Driven Control System Investigation_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_790
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

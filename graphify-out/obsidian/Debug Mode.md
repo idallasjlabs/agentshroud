@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/LOG_LEVEL.md"
 type: "document"
-community: "Community 73"
+community: "LOG_LEVEL"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_73
+  - community/LOG_LEVEL
 ---
 
 # Debug Mode
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LOG_LEVEL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_73
+#graphify/document #graphify/EXTRACTED #community/LOG_LEVEL

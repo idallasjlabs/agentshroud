@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "Community 657"
+community: "ledger.py"
 location: "L77"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_657
+  - community/ledgerpy
 ---
 
 # Database Schema
 
 ## Connections
-- [[ledger.py_2]] - `contains` [EXTRACTED]
+- [[ledger.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_657
+#graphify/document #graphify/EXTRACTED #community/ledgerpy

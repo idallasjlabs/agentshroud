@@ -1,17 +1,17 @@
 ---
-source_file: "docs/integrations/README.md"
+source_file: "docs/data/README.md"
 type: "document"
-community: "Community 1262"
-location: "L14"
+community: "Data Documentation"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1262
+  - community/Data_Documentation
 ---
 
 # Current Status
 
 ## Connections
-- [[Integrations Documentation]] - `contains` [EXTRACTED]
+- [[Data Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1262
+#graphify/document #graphify/EXTRACTED #community/Data_Documentation

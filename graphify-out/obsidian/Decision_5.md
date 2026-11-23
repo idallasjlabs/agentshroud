@@ -1,18 +1,19 @@
 ---
-source_file: "docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md"
+source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "Community 894"
-location: "L14"
+community: "ADR-006: Multi-Runtime Container Support"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_894
+  - community/ADR-006_Multi-Runtime_Container_Support
 ---
 
 # Decision
 
 ## Connections
-- [[ADR-004 API Keys Never in Agent Container]] - `contains` [EXTRACTED]
-- [[Implementation]] - `contains` [EXTRACTED]
+- [[ADR-006 Multi-Runtime Container Support]] - `contains` [EXTRACTED]
+- [[Cisco AnyConnect VPN Networking Fix (col0 vmnet route)]] - `references` [EXTRACTED]
+- [[Runtime Abstraction Layer]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_894
+#graphify/document #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support

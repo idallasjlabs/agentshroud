@@ -1,21 +1,17 @@
 ---
-source_file: "skills/openclaw/canvas/SKILL.md"
+source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "Community 356"
-location: "L151"
+community: "Himalaya Email CLI"
+location: "L238"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_356
+  - community/Himalaya_Email_CLI
 ---
 
 # Debugging
 
 ## Connections
-- [[node not connected error]] - `contains` [EXTRACTED]
-- [[node required error]] - `contains` [EXTRACTED]
-- [[Canvas Skill]] - `contains` [EXTRACTED]
-- [[Content not updating]] - `contains` [EXTRACTED]
-- [[White screen  content not loading]] - `contains` [EXTRACTED]
+- [[Himalaya Email CLI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_356
+#graphify/document #graphify/EXTRACTED #community/Himalaya_Email_CLI

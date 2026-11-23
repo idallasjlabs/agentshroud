@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/sec-offense.md"
+source_file: ".cursor/agents/sec-defense.md"
 type: "document"
-community: "Community 1059"
-location: "L378"
+community: "AgentShroud Blue Team Security Auditor"
+location: "L144"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1059
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Critical Rules
 
 ## Connections
-- [[AgentShroud Red Team Adversarial Tester]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1059
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

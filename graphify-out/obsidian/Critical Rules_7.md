@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/sec-defense.md"
+source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 1312"
-location: "L144"
+community: "The 8D Investigation Process"
+location: "L578"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1312
+  - community/The_8D_Investigation_Process
 ---
 
 # Critical Rules
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor_2]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1312
+#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process

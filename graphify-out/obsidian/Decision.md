@@ -1,23 +1,28 @@
 ---
 source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "Community 300"
+community: "test_module_stats.py"
 location: "L29"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_300
+  - graphify/INFERRED
+  - community/test_module_statspy
 ---
 
 # Decision
 
 ## Connections
-- [[.record()_2]] - `references` [EXTRACTED]
-- [[Enum]] - `inherits` [EXTRACTED]
-- [[TestEgressWiringEndToEnd]] - `uses` [INFERRED]
-- [[TestEnforcementWiring]] - `uses` [INFERRED]
+- [[dot-record()_2]] - `calls` [EXTRACTED]
+- [[Enum_28]] - `inherits` [EXTRACTED]
 - [[module_stats.py]] - `contains` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[str_14]] - `inherits` [EXTRACTED]
+- [[test_block_rate_computed()]] - `uses` [INFERRED]
+- [[test_empty_module_zero_rate_not_division_error()]] - `uses` [INFERRED]
 - [[test_module_stats.py]] - `imports` [EXTRACTED]
+- [[test_record_and_snapshot()]] - `uses` [INFERRED]
+- [[test_reset()]] - `uses` [INFERRED]
+- [[test_sanitize_decision()]] - `uses` [INFERRED]
+- [[test_thread_safe_under_concurrency()]] - `uses` [INFERRED]
+- [[test_unknown_module_created_on_demand()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_300
+#graphify/code #graphify/INFERRED #community/test_module_statspy

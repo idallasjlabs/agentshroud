@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Community 0"
+community: "TestWebSecurity"
 location: "L727"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/TestWebSecurity
 ---
 
 # Dashboard should have Content-Security-Policy or mention it.
 
 ## Connections
-- [[.test_dashboard_has_csp_meta()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_dashboard_has_csp_meta()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/TestWebSecurity

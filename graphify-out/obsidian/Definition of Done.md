@@ -1,12 +1,12 @@
 ---
 source_file: ".github/copilot-instructions.md"
 type: "document"
-community: "Community 2196"
+community: "2) HOW TO WORK IN THIS REPO (SDLC EXPECTATIONS)"
 location: "L601"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2196
+  - community/2_HOW_TO_WORK_IN_THIS_REPO_SDLC_EXPECTATIONS
 ---
 
 # Definition of Done
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[2) HOW TO WORK IN THIS REPO (SDLC EXPECTATIONS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2196
+#graphify/document #graphify/EXTRACTED #community/2_HOW_TO_WORK_IN_THIS_REPO_SDLC_EXPECTATIONS

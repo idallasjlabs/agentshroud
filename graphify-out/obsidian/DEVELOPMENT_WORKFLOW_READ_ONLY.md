@@ -1,20 +1,18 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Community 1315"
+community: "Development Workflow: Read-Only Filesystem Strategy"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/Community_1315
+  - graphify/EXTRACTED
+  - community/Development_Workflow_Read-Only_Filesystem_Strategy
 ---
 
 # DEVELOPMENT_WORKFLOW_READ_ONLY.md
 
 ## Connections
 - [[Development Workflow Read-Only Filesystem Strategy]] - `contains` [EXTRACTED]
-- [[Read-Only Filesystem (Planned)]] - `conceptually_related_to` [INFERRED]
-- [[SECURITY_VALUE_PROPOSITION]] - `conceptually_related_to` [INFERRED]
-- [[Three-Phase Approach]] - `references` [EXTRACTED]
+- [[docsREADME]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Community_1315
+#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read-Only_Filesystem_Strategy

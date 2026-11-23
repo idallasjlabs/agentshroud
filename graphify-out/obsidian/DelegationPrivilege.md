@@ -1,25 +1,23 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "Community 89"
+community: "telegram_proxy.py"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_89
+  - community/telegram_proxypy
 ---
 
 # DelegationPrivilege
 
 ## Connections
-- [[._filter_inbound_updates()]] - `calls` [EXTRACTED]
-- [[._revoke_by_user_privilege()]] - `references` [EXTRACTED]
-- [[.delegate()]] - `references` [EXTRACTED]
-- [[.is_delegated()]] - `references` [EXTRACTED]
-- [[.revoke()]] - `references` [EXTRACTED]
-- [[Any_31]] - `uses` [INFERRED]
-- [[DelegationManager_1]] - `uses` [INFERRED]
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
+- [[dot-_revoke_by_user_privilege()]] - `references` [EXTRACTED]
+- [[dot-delegate()]] - `references` [EXTRACTED]
+- [[dot-is_delegated()]] - `references` [EXTRACTED]
+- [[dot-revoke()]] - `references` [EXTRACTED]
+- [[Enum_20]] - `inherits` [EXTRACTED]
 - [[Subset of privileges that can be delegated by the owner.]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[TestAccessControl]] - `uses` [INFERRED]
@@ -28,14 +26,13 @@ tags:
 - [[TestListAndCleanup]] - `uses` [INFERRED]
 - [[TestRedelegation]] - `uses` [INFERRED]
 - [[TestRevoke]] - `uses` [INFERRED]
-- [[TestSerialization]] - `uses` [INFERRED]
-- [[_OutboundScan]] - `uses` [INFERRED]
-- [[create_delegation()]] - `calls` [EXTRACTED]
+- [[TestSerialization_1]] - `uses` [INFERRED]
+- [[create_delegation()]] - `uses` [INFERRED]
 - [[delegation.py]] - `contains` [EXTRACTED]
-- [[revoke_delegation()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `imports` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
-- [[telegram_proxy.py]] - `imports` [EXTRACTED]
+- [[revoke_delegation()]] - `uses` [INFERRED]
+- [[socrouter.py]] - `imports` [EXTRACTED]
+- [[str_10]] - `inherits` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
 - [[test_delegation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_89
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

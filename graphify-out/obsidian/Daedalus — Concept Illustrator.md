@@ -1,23 +1,20 @@
 ---
-source_file: ".agents/agents/daedalus.md"
+source_file: "docker/config/hermes/skills/i-daedalus/README.md"
 type: "document"
-community: "Community 1858"
-location: "L8"
+community: "Daedalus — Concept Illustrator"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1858
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Daedalus — Concept Illustrator
 
 ## Connections
-- [[Input Requirements_3]] - `contains` [EXTRACTED]
-- [[Output Format_2]] - `contains` [EXTRACTED]
-- [[Persona_2]] - `contains` [EXTRACTED]
-- [[Quality Checklist_3]] - `contains` [EXTRACTED]
-- [[Role_6]] - `contains` [EXTRACTED]
-- [[System Prompt_2]] - `contains` [EXTRACTED]
-- [[daedalus]] - `contains` [EXTRACTED]
+- [[Purpose_41]] - `contains` [EXTRACTED]
+- [[Related Skills_7]] - `contains` [EXTRACTED]
+- [[Usage_8]] - `contains` [EXTRACTED]
+- [[hermesskillsi-daedalusREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1858
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

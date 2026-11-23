@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "rationale"
-community: "Community 489"
+community: "TestEgressFilterConfig"
 location: "L290"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_489
+  - community/TestEgressFilterConfig
 ---
 
 # Create config from environment variables and AGENTSHROUD_MODE.
 
 ## Connections
-- [[.from_environment()]] - `rationale_for` [EXTRACTED]
+- [[dot-from_environment()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_489
+#graphify/rationale #graphify/EXTRACTED #community/TestEgressFilterConfig
