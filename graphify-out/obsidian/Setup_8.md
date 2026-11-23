@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/README.md"
+source_file: ".github/agents/i-icloud.agent.md"
 type: "document"
-community: "Community 659"
-location: "L64"
+community: "iCloud Services"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_659
+  - community/iCloud_Services
 ---
 
 # Setup
 
 ## Connections
-- [[1. Install Dependencies]] - `contains` [EXTRACTED]
-- [[2. Configure]] - `contains` [EXTRACTED]
-- [[3. Run]] - `contains` [EXTRACTED]
-- [[4. Test]] - `contains` [EXTRACTED]
-- [[Gateway Layer]] - `contains` [EXTRACTED]
+- [[iCloud Services_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_659
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

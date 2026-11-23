@@ -1,24 +1,24 @@
 ---
-source_file: ".agents/skills/i-bs/SKILL.md"
+source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
 type: "document"
-community: "Community 483"
-location: "L6"
+community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_483
+  - community/Required__45_for_text__30_for_UI_elements
 ---
 
 # Skill: Branding Specialist (BS)
 
 ## Connections
-- [[Anti-Patterns to Flag_8]] - `contains` [EXTRACTED]
+- [[Anti-Patterns to Flag_29]] - `contains` [EXTRACTED]
 - [[Brand System Components_1]] - `contains` [EXTRACTED]
 - [[Core Discipline Audit → Define → Apply → Enforce_1]] - `contains` [EXTRACTED]
 - [[Patterns by Output Type_1]] - `contains` [EXTRACTED]
-- [[Role_45]] - `contains` [EXTRACTED]
-- [[Rules_8]] - `contains` [EXTRACTED]
-- [[SKILL_13]] - `contains` [EXTRACTED]
-- [[SKILL_19]] - `contains` [EXTRACTED]
+- [[Role_169]] - `contains` [EXTRACTED]
+- [[Rules_31]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_483
+#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements

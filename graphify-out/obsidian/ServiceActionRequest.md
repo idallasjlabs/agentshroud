@@ -1,35 +1,28 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 10"
+community: "soc/router.py"
 location: "L565"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_10
+  - community/soc/routerpy
 ---
 
 # ServiceActionRequest
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
 - [[killswitch_freeze()]] - `references` [EXTRACTED]
 - [[killswitch_shutdown()]] - `references` [EXTRACTED]
 - [[rebuild_all_services()]] - `references` [EXTRACTED]
-- [[restart_service()_1]] - `references` [EXTRACTED]
+- [[restart_service()]] - `references` [EXTRACTED]
 - [[rollback_gateway()]] - `references` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
-- [[stop_service()_1]] - `references` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
+- [[stop_service()]] - `references` [EXTRACTED]
 - [[update_service()]] - `references` [EXTRACTED]
 - [[upgrade_bot()]] - `references` [EXTRACTED]
 - [[upgrade_gateway()]] - `references` [EXTRACTED]
 - [[upgrade_hermes()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_10
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

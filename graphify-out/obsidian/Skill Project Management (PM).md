@@ -1,23 +1,24 @@
 ---
-source_file: ".agents/agents/i-pm.md"
+source_file: ".agents/skills/i-pm/SKILL.md"
 type: "document"
-community: "Community 1011"
-location: "L8"
+community: "Skill: Project Management (PM)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1011
+  - community/Skill_Project_Management_PM
 ---
 
 # Skill: Project Management (PM)
 
 ## Connections
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-pmSKILL]] - `contains` [EXTRACTED]
 - [[Continuity Files]] - `contains` [EXTRACTED]
 - [[Project Roadmap]] - `contains` [EXTRACTED]
 - [[Risk Management]] - `contains` [EXTRACTED]
-- [[Role_23]] - `contains` [EXTRACTED]
+- [[Role_168]] - `contains` [EXTRACTED]
 - [[Status Reporting]] - `contains` [EXTRACTED]
 - [[Task Coordination]] - `contains` [EXTRACTED]
-- [[i-pm]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1011
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM

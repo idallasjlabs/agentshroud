@@ -1,31 +1,25 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Community 151"
+community: "SecurityConfig"
 location: "L128"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_151
+  - graphify/EXTRACTED
+  - community/SecurityConfig
 ---
 
 # SecurityModuleConfig
 
 ## Connections
-- [[.test_security_module_config_default_mode()]] - `calls` [EXTRACTED]
-- [[.test_security_module_config_defaults()]] - `calls` [EXTRACTED]
-- [[BaseModel]] - `inherits` [EXTRACTED]
-- [[BotConfig]] - `uses` [INFERRED]
-- [[SSHConfig]] - `uses` [INFERRED]
+- [[dot-test_security_module_config_default_mode()]] - `calls` [EXTRACTED]
+- [[dot-test_security_module_config_defaults()]] - `calls` [EXTRACTED]
+- [[BaseModel_6]] - `inherits` [EXTRACTED]
 - [[Security module configuration]] - `rationale_for` [EXTRACTED]
 - [[TestEnforceDefaults]] - `uses` [INFERRED]
-- [[TestGetModuleModeEnforceDefault]] - `uses` [INFERRED]
-- [[TestModuleConfigDefaults]] - `uses` [INFERRED]
-- [[TestModuleEnforcement]] - `uses` [INFERRED]
-- [[TestModuleInstantiationInEnforceMode]] - `uses` [INFERRED]
 - [[TestSecurityConfigDefaults]] - `uses` [INFERRED]
-- [[config.py]] - `contains` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_enforce_defaults.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_151
+#graphify/code #graphify/EXTRACTED #community/SecurityConfig

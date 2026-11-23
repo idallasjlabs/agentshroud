@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
+source_file: ".cursor/agents/icloud.md"
 type: "document"
-community: "Community 321"
-location: "L10"
+community: "iCloud Services"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_321
+  - community/iCloud_Services
 ---
 
 # Setup
 
 ## Connections
-- [[iCloud Services_7]] - `contains` [EXTRACTED]
+- [[iCloud Services_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_321
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

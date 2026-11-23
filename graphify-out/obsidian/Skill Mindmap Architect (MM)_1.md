@@ -1,31 +1,31 @@
 ---
-source_file: ".agents/skills/i-mm/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
 type: "document"
-community: "Community 313"
-location: "L6"
+community: "Skill: Mindmap Architect (MM)"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_313
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Skill: Mindmap Architect (MM)
 
 ## Connections
-- [[Anti-Patterns to Flag_9]] - `contains` [EXTRACTED]
+- [[Anti-Patterns to Flag_16]] - `contains` [EXTRACTED]
 - [[Core Discipline Frame → Structure → Generate → Validate_1]] - `contains` [EXTRACTED]
 - [[Dependencies_7]] - `contains` [EXTRACTED]
 - [[Export and Sharing Conventions_1]] - `contains` [EXTRACTED]
 - [[Hierarchy Design — Outline First_1]] - `contains` [EXTRACTED]
 - [[Markdown-to-Mindmap Conversion_1]] - `contains` [EXTRACTED]
 - [[Markmap Generation via MCP_1]] - `contains` [EXTRACTED]
-- [[Role_56]] - `contains` [EXTRACTED]
-- [[Rules_9]] - `contains` [EXTRACTED]
-- [[SKILL_19]] - `contains` [EXTRACTED]
-- [[SKILL_36]] - `contains` [EXTRACTED]
+- [[Role_135]] - `contains` [EXTRACTED]
+- [[Rules_18]] - `contains` [EXTRACTED]
 - [[Use Case Patterns_1]] - `contains` [EXTRACTED]
-- [[Validation Checklist_3]] - `contains` [EXTRACTED]
+- [[Validation Checklist_2]] - `contains` [EXTRACTED]
 - [[When to Use Mindmaps vs Other Formats_1]] - `contains` [EXTRACTED]
 - [[XMind Generation via MCP_1]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-mmSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_313
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

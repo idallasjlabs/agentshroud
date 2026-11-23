@@ -1,24 +1,24 @@
 ---
-source_file: ".cursor/agents/i-mcpm-doctor.md"
+source_file: ".agents/agents/i-mcpm-doctor.md"
 type: "document"
-community: "Community 1040"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1040
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Skill: MCP Doctor (MCPM-DOCTOR)
 
 ## Connections
+- [[dot-agentsagentsi-mcpm-doctor]] - `contains` [EXTRACTED]
 - [[Common Issues & Fixes_2]] - `contains` [EXTRACTED]
 - [[Diagnostic Capabilities_2]] - `contains` [EXTRACTED]
 - [[Diagnostic Workflow_2]] - `contains` [EXTRACTED]
-- [[Output Format_34]] - `contains` [EXTRACTED]
-- [[Related Skills_45]] - `contains` [EXTRACTED]
-- [[Role_91]] - `contains` [EXTRACTED]
-- [[When to Invoke_8]] - `contains` [EXTRACTED]
-- [[i-mcpm-doctor_1]] - `contains` [EXTRACTED]
+- [[Output Format_105]] - `contains` [EXTRACTED]
+- [[Related Skills_117]] - `contains` [EXTRACTED]
+- [[Role_252]] - `contains` [EXTRACTED]
+- [[When to Invoke_18]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1040
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

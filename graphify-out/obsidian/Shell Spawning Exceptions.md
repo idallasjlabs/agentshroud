@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/falco-rules.md"
 type: "document"
-community: "Community 532"
+community: "falco-rules.yaml"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_532
+  - community/falco-rulesyaml
 ---
 
 # Shell Spawning Exceptions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[falco-rules.yaml]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_532
+#graphify/document #graphify/EXTRACTED #community/falco-rulesyaml

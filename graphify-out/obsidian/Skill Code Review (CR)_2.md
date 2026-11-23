@@ -1,22 +1,22 @@
 ---
-source_file: ".cursor/agents/i-cr.md"
+source_file: ".agents/agents/i-cr.md"
 type: "document"
-community: "Community 2019"
+community: "Skill: Code Review (CR)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2019
+  - community/Skill_Code_Review_CR
 ---
 
 # Skill: Code Review (CR)
 
 ## Connections
+- [[dot-agentsagentsi-cr]] - `contains` [EXTRACTED]
 - [[Feedback Guidelines_2]] - `contains` [EXTRACTED]
-- [[Output Format_33]] - `contains` [EXTRACTED]
+- [[Output Format_65]] - `contains` [EXTRACTED]
 - [[Production-Specific Review Checks_2]] - `contains` [EXTRACTED]
 - [[Review Principles_2]] - `contains` [EXTRACTED]
-- [[Role_84]] - `contains` [EXTRACTED]
-- [[i-cr_1]] - `contains` [EXTRACTED]
+- [[Role_116]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2019
+#graphify/document #graphify/EXTRACTED #community/Skill_Code_Review_CR

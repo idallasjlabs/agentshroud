@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-icloud.agent.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 554"
-location: "L140"
+community: "Changed"
+location: "L702"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_554
+  - community/Changed
 ---
 
 # Security
 
 ## Connections
-- [[iCloud Services_3]] - `contains` [EXTRACTED]
+- [[1.1.0 — feat-v1.4.0-shroud-another-bot — Hermes (2026-05-29)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_554
+#graphify/document #graphify/EXTRACTED #community/Changed

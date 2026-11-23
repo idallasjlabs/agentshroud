@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_output_canary.py"
+source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "rationale"
-community: "Community 233"
-location: "L21"
+community: "ToolResultInjectionScanner"
+location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_233
+  - community/ToolResultInjectionScanner
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[.setup_method()_19]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_8]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_233
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultInjectionScanner

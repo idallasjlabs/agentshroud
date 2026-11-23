@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-pca.md"
+source_file: ".github/agents/i-pca.agent.md"
 type: "document"
-community: "Community 1256"
-location: "L8"
+community: "Output Sections (ALL required)"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1256
+  - community/Output_Sections_ALL_required
 ---
 
 # Skill: Pre-Change Analysis (PCA)
@@ -16,7 +16,7 @@ tags:
 - [[Output Format Rules_2]] - `contains` [EXTRACTED]
 - [[Output Sections (ALL required)_2]] - `contains` [EXTRACTED]
 - [[Persisted Artifact Mode (opt-in repos only)_2]] - `contains` [EXTRACTED]
-- [[Role_95]] - `contains` [EXTRACTED]
-- [[i-pca_1]] - `contains` [EXTRACTED]
+- [[Role_10]] - `contains` [EXTRACTED]
+- [[i-pca.agent]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1256
+#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required

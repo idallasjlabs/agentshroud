@@ -1,17 +1,17 @@
 ---
-source_file: ".opencode/agents/icloud.md"
+source_file: ".agents/agents/icloud.md"
 type: "document"
-community: "Community 706"
-location: "L11"
+community: "iCloud Services"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_706
+  - community/iCloud_Services
 ---
 
 # Setup
 
 ## Connections
-- [[iCloud Services_5]] - `contains` [EXTRACTED]
+- [[iCloud Services_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_706
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

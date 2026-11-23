@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Community 8"
+community: "ToolChainAnalyzer"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_8
+  - community/ToolChainAnalyzer
 ---
 
 # SessionChainContext
 
 ## Connections
-- [[._detect_chain_patterns()]] - `references` [EXTRACTED]
-- [[.analyze_tool_call()]] - `calls` [EXTRACTED]
+- [[dot-_detect_chain_patterns()]] - `references` [EXTRACTED]
+- [[dot-analyze_tool_call()]] - `calls` [EXTRACTED]
 - [[Tool call chain context for a session.]] - `rationale_for` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_8
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

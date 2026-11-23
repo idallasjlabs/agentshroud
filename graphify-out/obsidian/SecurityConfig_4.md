@@ -1,19 +1,19 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "Community 160"
+community: "SecureBrowser"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_160
+  - community/SecureBrowser
 ---
 
 # SecurityConfig
 
 ## Connections
-- [[._load_config()_3]] - `references` [EXTRACTED]
+- [[dot-_load_config()_3]] - `calls` [EXTRACTED]
 - [[Security configuration for browser automation_3]] - `rationale_for` [EXTRACTED]
-- [[browse.py_3]] - `contains` [EXTRACTED]
+- [[securebrowserscriptsbrowse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_160
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

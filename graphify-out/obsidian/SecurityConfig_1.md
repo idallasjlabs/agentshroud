@@ -1,19 +1,40 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
+source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Community 155"
-location: "L43"
+community: "SecurityConfig"
+location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_155
+  - community/SecurityConfig
 ---
 
 # SecurityConfig
 
 ## Connections
-- [[._load_config()_1]] - `references` [EXTRACTED]
-- [[Security configuration for browser automation_1]] - `rationale_for` [EXTRACTED]
-- [[browse.py_1]] - `contains` [EXTRACTED]
+- [[dot-test_get_module_mode_enforce_override()]] - `calls` [EXTRACTED]
+- [[dot-test_get_module_mode_no_override()]] - `calls` [EXTRACTED]
+- [[dot-test_get_module_mode_with_override()]] - `calls` [EXTRACTED]
+- [[dot-test_monitor_mode_warning_message_format()]] - `calls` [EXTRACTED]
+- [[dot-test_monitor_mode_warnings_all_modules()]] - `calls` [EXTRACTED]
+- [[dot-test_monitor_mode_warnings_no_warnings_in_enforce()]] - `calls` [EXTRACTED]
+- [[dot-test_pii_sanitizer_default_action()]] - `calls` [EXTRACTED]
+- [[dot-test_security_config_all_defaults_enforce()]] - `calls` [EXTRACTED]
+- [[dot-test_security_config_dns_filter_enforce()]] - `calls` [EXTRACTED]
+- [[dot-test_security_config_egress_filter_enforce()]] - `calls` [EXTRACTED]
+- [[dot-test_security_config_egress_monitor_enforce()]] - `calls` [EXTRACTED]
+- [[dot-test_security_config_killswitch_enforce()]] - `calls` [EXTRACTED]
+- [[dot-test_security_config_mcp_proxy_enforce()]] - `calls` [EXTRACTED]
+- [[dot-test_security_config_pii_sanitizer_enforce()]] - `calls` [EXTRACTED]
+- [[dot-test_security_config_prompt_guard_enforce()]] - `calls` [EXTRACTED]
+- [[dot-test_security_config_subagent_monitor_enforce()]] - `calls` [EXTRACTED]
+- [[BaseModel_6]] - `inherits` [EXTRACTED]
+- [[Complete security configuration]] - `rationale_for` [EXTRACTED]
+- [[TestEnforceDefaults]] - `uses` [INFERRED]
+- [[TestSecurityConfigDefaults]] - `uses` [INFERRED]
+- [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
+- [[load_config()]] - `calls` [EXTRACTED]
+- [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
+- [[test_enforce_defaults.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_155
+#graphify/code #graphify/EXTRACTED #community/SecurityConfig

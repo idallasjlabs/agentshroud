@@ -1,17 +1,17 @@
 ---
-source_file: ".opencode/agents/i-mcpm-aws-profile.md"
+source_file: "docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md"
 type: "document"
-community: "Community 202"
-location: "L300"
+community: "GATEWAY_OP_PROXY_URL"
+location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_202
+  - community/GATEWAY_OP_PROXY_URL
 ---
 
 # Security
 
 ## Connections
-- [[Best Practices_11]] - `contains` [EXTRACTED]
+- [[GATEWAY_OP_PROXY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_202
+#graphify/document #graphify/EXTRACTED #community/GATEWAY_OP_PROXY_URL

@@ -1,24 +1,24 @@
 ---
-source_file: ".cursor/agents/i-sec.md"
+source_file: "docker/config/openclaw/skills/i-sec/SKILL.md"
 type: "document"
-community: "Community 1496"
-location: "L8"
+community: "Skill: Security Review (SEC)"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1496
+  - community/Skill_Security_Review_SEC
 ---
 
 # Skill: Security Review (SEC)
 
 ## Connections
-- [[Anti-Patterns to Flag_18]] - `contains` [EXTRACTED]
+- [[Anti-Patterns to Flag_4]] - `contains` [EXTRACTED]
 - [[Core Principle_2]] - `contains` [EXTRACTED]
-- [[Output Format_36]] - `contains` [EXTRACTED]
+- [[Output Format_16]] - `contains` [EXTRACTED]
 - [[Review Layers_2]] - `contains` [EXTRACTED]
-- [[Role_101]] - `contains` [EXTRACTED]
+- [[Role_40]] - `contains` [EXTRACTED]
 - [[SecureClaw-Specific Threat Model_2]] - `contains` [EXTRACTED]
 - [[Verification Commands_2]] - `contains` [EXTRACTED]
-- [[i-sec_1]] - `contains` [EXTRACTED]
+- [[openclawskillsi-secSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1496
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/icloud/SKILL.md"
+source_file: "skills/openclaw/notion/SKILL.md"
 type: "document"
-community: "Community 623"
-location: "L10"
+community: "notion"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_623
+  - community/notion
 ---
 
 # Setup
 
 ## Connections
-- [[iCloud Services_1]] - `contains` [EXTRACTED]
+- [[notion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_623
+#graphify/document #graphify/EXTRACTED #community/notion

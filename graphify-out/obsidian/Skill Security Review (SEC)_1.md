@@ -1,25 +1,24 @@
 ---
-source_file: ".agents/skills/i-sec/SKILL.md"
+source_file: ".cursor/agents/i-sec.md"
 type: "document"
-community: "Community 744"
-location: "L6"
+community: "Skill: Security Review (SEC)"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_744
+  - community/Skill_Security_Review_SEC
 ---
 
 # Skill: Security Review (SEC)
 
 ## Connections
-- [[Anti-Patterns to Flag_10]] - `contains` [EXTRACTED]
+- [[dot-cursoragentsi-sec]] - `contains` [EXTRACTED]
+- [[Anti-Patterns to Flag_2]] - `contains` [EXTRACTED]
 - [[Core Principle_1]] - `contains` [EXTRACTED]
-- [[Output Format_21]] - `contains` [EXTRACTED]
+- [[Output Format_14]] - `contains` [EXTRACTED]
 - [[Review Layers_1]] - `contains` [EXTRACTED]
-- [[Role_65]] - `contains` [EXTRACTED]
-- [[SKILL_19]] - `contains` [EXTRACTED]
-- [[SKILL_50]] - `contains` [EXTRACTED]
+- [[Role_37]] - `contains` [EXTRACTED]
 - [[SecureClaw-Specific Threat Model_1]] - `contains` [EXTRACTED]
 - [[Verification Commands_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_744
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

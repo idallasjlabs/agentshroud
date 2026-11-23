@@ -1,29 +1,23 @@
 ---
 source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "Community 43"
+community: "test_e2e_proxy.py"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/test_e2e_proxypy
 ---
 
 # SidecarScanner
 
 ## Connections
-- [[.__init__()_49]] - `method` [EXTRACTED]
-- [[.get_stats()_7]] - `method` [EXTRACTED]
-- [[.scan()]] - `method` [EXTRACTED]
-- [[HTTPConnectProxy]] - `conceptually_related_to` [EXTRACTED]
-- [[SecurityPipeline]] - `calls` [EXTRACTED]
-- [[SecurityPipeline (external, referenced)]] - `shares_data_with` [EXTRACTED]
-- [[SecurityPipeline.process_inbound]] - `calls` [EXTRACTED]
-- [[Sidecar security scanner — reduced security, traffic can bypass.      This is fo]] - `rationale_for` [EXTRACTED]
-- [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder_2]] - `uses` [INFERRED]
-- [[sidecar.py]] - `contains` [EXTRACTED]
+- [[dot-__init__()_132]] - `method` [EXTRACTED]
+- [[dot-get_stats()_9]] - `method` [EXTRACTED]
+- [[dot-scan()_2]] - `method` [EXTRACTED]
+- [[Sidecar security scanner — reduced security, traffic can bypass. This is for…]] - `rationale_for` [EXTRACTED]
+- [[sidecar.py_2]] - `contains` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
-- [[test_sidecar_scanner()]] - `calls` [EXTRACTED]
+- [[test_sidecar_scanner()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
