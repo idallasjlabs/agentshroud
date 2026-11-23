@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "rationale"
-community: "Community 37"
+community: "_make_proxy"
 location: "L279"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_37
+  - community/_make_proxy
 ---
 
 # A dict text payload is JSON-serialized before the 80-char preview.
 
 ## Connections
-- [[.test_structured_text_serialized_for_preview()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_structured_text_serialized_for_preview()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_37
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

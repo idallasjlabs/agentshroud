@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "Community 92"
+community: "test_web_api_coverage.py"
 location: "L177"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_92
+  - community/test_web_api_coveragepy
 ---
 
 # A revert task is created (and is an asyncio.Task).
 
 ## Connections
-- [[.test_revert_task_created_on_put()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_revert_task_created_on_put()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_92
+#graphify/rationale #graphify/EXTRACTED #community/test_web_api_coveragepy

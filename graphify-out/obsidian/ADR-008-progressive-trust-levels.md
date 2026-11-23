@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
 type: "document"
-community: "Community 859"
+community: "ADR-008-progressive-trust-levels.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_859
+  - community/ADR-008-progressive-trust-levelsmd
 ---
 
 # ADR-008-progressive-trust-levels.md
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[ADR-008 Progressive Trust Levels for Agents]] - `contains` [EXTRACTED]
 - [[Consequences_7]] - `contains` [EXTRACTED]
-- [[Context_8]] - `contains` [EXTRACTED]
-- [[Decision_9]] - `contains` [EXTRACTED]
-- [[Status_7]] - `contains` [EXTRACTED]
+- [[Context_11]] - `contains` [EXTRACTED]
+- [[Decision_10]] - `contains` [EXTRACTED]
+- [[Status_10]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_859
+#graphify/document #graphify/EXTRACTED #community/ADR-008-progressive-trust-levelsmd

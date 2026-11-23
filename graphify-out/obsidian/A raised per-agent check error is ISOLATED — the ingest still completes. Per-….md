@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "First iteration ingests + records; second sees dedup and skips."
+community: "_sleep"
 location: "L1573"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/First_iteration_ingests__records_second_sees_dedup_and_skips
+  - community/_sleep
 ---
 
 # A raised per-agent check error is ISOLATED — the ingest still completes. Per-…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_per_agent_check_error_is_isolated_not_fatal()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/First_iteration_ingests__records_second_sees_dedup_and_skips
+#graphify/rationale #graphify/EXTRACTED #community/_sleep

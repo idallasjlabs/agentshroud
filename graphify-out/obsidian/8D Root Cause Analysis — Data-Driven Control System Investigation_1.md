@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/eightd-root-cause-analysis/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 790"
+community: "The 8D Investigation Process"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_790
+  - community/The_8D_Investigation_Process
 ---
 
 # 8D Root Cause Analysis — Data-Driven Control System Investigation
@@ -14,11 +14,12 @@ tags:
 ## Connections
 - [[Agent Interaction Protocol_1]] - `contains` [EXTRACTED]
 - [[Architecture Context_1]] - `contains` [EXTRACTED]
-- [[Critical Rules_3]] - `contains` [EXTRACTED]
-- [[Input Requirements_14]] - `contains` [EXTRACTED]
-- [[Learning System and XML Configuration Parsing_1]] - `contains` [EXTRACTED]
-- [[Overview_1]] - `contains` [EXTRACTED]
-- [[SKILL_6]] - `contains` [EXTRACTED]
+- [[Critical Rules_7]] - `contains` [EXTRACTED]
+- [[Input Requirements_51]] - `contains` [EXTRACTED]
+- [[Learning System (Continuous Improvement)_2]] - `contains` [EXTRACTED]
+- [[Overview_9]] - `contains` [EXTRACTED]
 - [[The 8D Investigation Process_1]] - `contains` [EXTRACTED]
+- [[XML Configuration File Parsing_2]] - `contains` [EXTRACTED]
+- [[openclawskillsi-eightdSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_790
+#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process

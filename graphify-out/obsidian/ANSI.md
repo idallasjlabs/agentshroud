@@ -1,17 +1,17 @@
 ---
 source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "Community 282"
+community: "ControlCenter"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_282
+  - community/ControlCenter
 ---
 
 # ANSI
 
 ## Connections
-- [[text_control_center.py]] - `contains` [EXTRACTED]
+- [[text_control_center.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_282
+#graphify/code #graphify/EXTRACTED #community/ControlCenter

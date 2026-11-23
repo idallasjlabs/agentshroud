@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "Community 74"
+community: "sync-cve-registry.py"
 location: "L147"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_74
+  - community/sync-cve-registrypy
 ---
 
 # A sync step failed; the run must exit non-zero, never report "0 new".
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SyncError]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_74
+#graphify/rationale #graphify/EXTRACTED #community/sync-cve-registrypy

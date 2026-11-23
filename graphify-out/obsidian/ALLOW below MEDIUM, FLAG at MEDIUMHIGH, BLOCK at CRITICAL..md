@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "rationale"
-community: "Community 924"
+community: "ScanResult"
 location: "L121"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_924
+  - community/ScanResult
 ---
 
 # ALLOW below MEDIUM, FLAG at MEDIUM/HIGH, BLOCK at CRITICAL.
 
 ## Connections
-- [[.recommendation()]] - `rationale_for` [EXTRACTED]
+- [[dot-recommendation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_924
+#graphify/rationale #graphify/EXTRACTED #community/ScanResult

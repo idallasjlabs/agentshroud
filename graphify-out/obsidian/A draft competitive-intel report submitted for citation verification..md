@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Community 125"
+community: "api.py"
 location: "L1142"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_125
+  - community/apipy
 ---
 
 # A draft competitive-intel report submitted for citation verification.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IntelDraftRequest]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_125
+#graphify/rationale #graphify/EXTRACTED #community/apipy

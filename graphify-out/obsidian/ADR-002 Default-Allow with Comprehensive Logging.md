@@ -1,17 +1,16 @@
 ---
 source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
 type: "concept"
-community: "Community 517"
+community: "Gateway Management/Control-Plane API (v1.3.0)"
 tags:
   - graphify/concept
-  - graphify/EXTRACTED
-  - community/Community_517
+  - graphify/AMBIGUOUS
+  - community/Gateway_Management/Control-Plane_API_v130
 ---
 
 # ADR-002: Default-Allow with Comprehensive Logging
 
 ## Connections
-- [[ADR-009 Enforce-by-Default Security Philosophy]] - `references` [EXTRACTED]
 - [[SecurityPipeline (75 modules, 7 layers)]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_517
+#graphify/concept #graphify/AMBIGUOUS #community/Gateway_Management/Control-Plane_API_v130

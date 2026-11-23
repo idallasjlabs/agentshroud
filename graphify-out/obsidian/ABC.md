@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 225"
+community: "AppleContainerEngine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_225
+  - community/AppleContainerEngine
 ---
 
 # ABC
 
 ## Connections
-- [[ContainerEngine_2]] - `inherits` [EXTRACTED]
-- [[engine.py]] - `imports_from` [EXTRACTED]
+- [[ContainerEngine]] - `inherits` [EXTRACTED]
+- [[engine.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_225
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

@@ -1,21 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-eightd/README.md"
+source_file: ".agents/skills/eightd-root-cause-analysis/README.md"
 type: "document"
-community: "Community 90"
+community: "8D Root Cause Analysis"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/8D_Root_Cause_Analysis
 ---
 
 # 8D Root Cause Analysis
 
 ## Connections
-- [[Purpose_47]] - `contains` [EXTRACTED]
-- [[README_47]] - `contains` [EXTRACTED]
-- [[README_52]] - `contains` [EXTRACTED]
-- [[Related Skills_65]] - `contains` [EXTRACTED]
-- [[Usage_69]] - `contains` [EXTRACTED]
+- [[Purpose_99]] - `contains` [EXTRACTED]
+- [[Related Skills_29]] - `contains` [EXTRACTED]
+- [[Usage_39]] - `contains` [EXTRACTED]
+- [[eightd-root-cause-analysisREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis

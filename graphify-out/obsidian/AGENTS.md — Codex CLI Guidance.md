@@ -1,21 +1,24 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "Community 1140"
+community: "AGENTS.md — Codex CLI Guidance"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1140
+  - community/AGENTSmd__Codex_CLI_Guidance
 ---
 
 # AGENTS.md — Codex CLI Guidance
 
 ## Connections
+- [[AGENTS]] - `contains` [EXTRACTED]
 - [[Codex Configuration (.codexconfig.toml)]] - `references` [EXTRACTED]
 - [[Codex Prime Directive Not Primary Developer]] - `references` [EXTRACTED]
 - [[Codex Safe Refactor Role]] - `references` [EXTRACTED]
 - [[Codex Test Augmenter Role]] - `references` [EXTRACTED]
 - [[Codex Validation Runner Role]] - `references` [EXTRACTED]
 - [[Data Lakehouse Platform (GSDL)]] - `references` [EXTRACTED]
+- [[Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]] - `contains` [EXTRACTED]
+- [[Guidance for ChatGPT Codex CLI when working in this repository.]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1140
+#graphify/document #graphify/EXTRACTED #community/AGENTSmd__Codex_CLI_Guidance
