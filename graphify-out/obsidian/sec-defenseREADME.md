@@ -1,0 +1,17 @@
+---
+source_file: ".agents/skills/sec-defense/README.md"
+type: "document"
+community: "Blue Team Security Auditor (SEC-DEFENSE)"
+location: "L1"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Blue_Team_Security_Auditor_SEC-DEFENSE
+---
+
+# sec-defense/README.md
+
+## Connections
+- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Auditor_SEC-DEFENSE
