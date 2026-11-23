@@ -1,21 +1,15 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+members: 2
 ---
 
 # security/__init__.py
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[1. Accomplishments This Phase — Delivered Security Infrastructure]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🎛️ Production-Ready Control Centers]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🎯 Complete Security Module Pipeline — 3333 Modules Active]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🏗️ Robust Infrastructure & Architecture]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🔍 Enhanced PII Detection & Compliance]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🧪 Enhanced Testing Infrastructure — 1547 Tests + 125 Security Audits]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[Security scanning and monitoring integration - Trivy Container vulnerability…]] - rationale - gateway/security/__init__.py
+- [[security__init__.py]] - code - gateway/security/__init__.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +17,3 @@ members: 6
 TABLE source_file, type FROM #community/security/__init__py
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5)]]
-
-## Top bridge nodes
-- [[1. Accomplishments This Phase — Delivered Security Infrastructure]] - degree 6, connects to 1 community

@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # plan.md
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[Rationale agentshroud-gateway MCP server disabled (no mcp route, crash-loop correlation)]] - rationale - docker/config/openclaw/mcp/servers.json
-- [[openclaw mcpservers.json (MCP server definitions)]] - document - docker/config/openclaw/mcp/servers.json
+- [[plan_1]] - document - docs/planning/redteam/plan.md
+- [[plan]] - document - docs/planning/redteam/plan.md
 
 ## Live Query (requires Dataview plugin)
 

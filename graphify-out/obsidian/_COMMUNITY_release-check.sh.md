@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # release-check.sh
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[prefetch-ghsa-registry.sh]] - code - docker/config/openclaw/cron/scripts/prefetch-ghsa-registry.sh
-- [[prefetch-ghsa-registry.sh script]] - code - docker/config/openclaw/cron/scripts/prefetch-ghsa-registry.sh
+- [[release-check.sh]] - code - scripts/testing/release-check.sh
+- [[release-check.sh script]] - code - scripts/testing/release-check.sh
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # test_default_summary_equals_openclaw_summary
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[gateway__init__.py]] - code - gateway/__init__.py
+- [[test_default_summary_equals_openclaw_summary]] - code - gateway/tests/test_agent_cve_registry.py
 
 ## Live Query (requires Dataview plugin)
 

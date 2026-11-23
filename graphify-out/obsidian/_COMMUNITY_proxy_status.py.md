@@ -1,27 +1,19 @@
 ---
 type: community
-cohesion: 0.21
-members: 12
+members: 6
 ---
 
 # proxy_status.py
 
-**Cohesion:** 0.21 - loosely connected
-**Members:** 12 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[Emit a structured per-transcription latency record for the STT AB.      Tags ea]] - rationale - voice_gateway/stt.py
-- [[Read WHISPER_MODEL_SIZE from the environment and validate it (AB knob).]] - rationale - voice_gateway/stt.py
-- [[Release the loaded model (for testing  memory pressure).]] - rationale - voice_gateway/stt.py
-- [[Resolve a requested Whisper model size, with a safe default fallback.      Pure]] - rationale - voice_gateway/stt.py
-- [[Transcribe raw 16-bit signed PCM mono audio to text.      Args         pcm_byte]] - rationale - voice_gateway/stt.py
-- [[_get_model()]] - code - voice_gateway/stt.py
-- [[_resolve_model_size()]] - code - voice_gateway/stt.py
-- [[record_transcription_latency()]] - code - voice_gateway/stt.py
-- [[reset_model()]] - code - voice_gateway/stt.py
-- [[select_model_size()]] - code - voice_gateway/stt.py
-- [[stt.py]] - code - voice_gateway/stt.py
-- [[transcribe()]] - code - voice_gateway/stt.py
+- [[Key Output]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
+- [[Purpose_90]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
+- [[Related Notes_64]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
+- [[Responsibilities_46]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
+- [[proxy_status.py_1]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
+- [[proxy_status.py]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,11 +21,3 @@ members: 12
 TABLE source_file, type FROM #community/proxy_statuspy
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]]
-- 1 edge to [[_COMMUNITY_main.rs]]
-- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
-
-## Top bridge nodes
-- [[stt.py]] - degree 9, connects to 3 communities

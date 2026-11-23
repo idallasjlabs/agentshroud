@@ -1,163 +1,50 @@
 ---
 type: community
-cohesion: 0.03
-members: 148
+members: 37
 ---
 
 # test_collaborator_tracker.py
 
-**Cohesion:** 0.03 - loosely connected
-**Members:** 148 nodes
+**Members:** 37 nodes
 
 ## Members
-- [[dot-__init__()_55]] - code - gateway/ingest_api/auth.py
-- [[dot-__init__()_56]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_active_bot_id()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_apply_outbound_status_notices()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_bot_is_mentioned()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_build_collaborator_safe_info_response()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_contains_internal_approval_banner()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_contains_legacy_block_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_enforce_group_workspace_access()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_extract_first_egress_target()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_extract_owner_target()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_extract_owner_target_resolved()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_filter_inbound_updates()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_get_user_projects()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_group_workspace_manager()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_is_group_message()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_is_no_reply_token()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_is_valid_domain_name()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_is_within_project_scope()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_allowlist_bypass_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_approval_action_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_approval_queue_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_approval_token_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_archive_exfil_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_collaborator_privacy_query()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_command_enumeration_query()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_cross_tenant_data_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_cross_user_messaging_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_encoded_exfil_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_env_secret_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_execution_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_file_metadata_question()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_file_query()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_filename_reference()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_guardrail_modification_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_hidden_channel_exfil_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_hypothetical_execution_question()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_identity_enumeration_query()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_incremental_exfil_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_internal_network_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_log_access_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_memory_access_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_metadata_endpoint_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_model_status_question()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_model_switch_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_obfuscated_command_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_pairing_or_access_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_path_traversal_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_plugin_discovery_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_policy_bypass_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_safe_collaborator_info_query()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_scheduler_or_autorun_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_secret_value_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_sensitive_path_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_service_control_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_system_prompt_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_tool_payload_text()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_tool_trace_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_unicode_obfuscation_bypass_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_unsafe_scheme_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_looks_like_web_access_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_matches_presence_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_normalize_command_token()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_notify_collaborator_command_blocked()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_resolve_collaborator_mode()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_resolve_pending_username_target()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_send_collaborator_safe_info_response()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_send_disclosure()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_send_telegram_text()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_teams_config()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_trigger_web_fetch_approval()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-get_stats()_3]] - code - gateway/proxy/telegram_proxy.py
-- [[Allow conceptual securityprocess questions that don't request executiondata ac]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Args             max_requests Maximum requests allowed in the time window]] - rationale - gateway/ingest_api/auth.py
-- [[Best-effort Telegram sender with bounded retries.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Best-effort check to avoid treating local file names as egress domains.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Best-effort guardrail collaborator prompts requesting direct file access.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Build a GroupWorkspaceManager from current teamsRBAC config.          Returns a]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Build informative but non-sensitive response for collaborator conceptual questio]] - rationale - gateway/proxy/telegram_proxy.py
-- [[CollaboratorActivityTracker.record_activity]] - code - gateway/security/collaborator_tracker.py
-- [[Detect chunkedpartial extraction prompts intended to bypass output controls.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator probes asking for direct commandtool inventories.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts asking about other userssessionsidentities.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts asking for raw secrettokenpassword values.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts asking to bypass controls via unicodeinvisible tric]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts asking to bypassdisable approvals or protections.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts asking to decodedeobfuscate and execute commands.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts attempting cross-tenantworkspace data access.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts attempting ownercollaborator identity disclosure.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts attempting path traversal style file access.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts attempting scheduledautomatic task execution.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts attempting securityconfig guardrail changes.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts attempting servicecontainer lifecycle control.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts attempting to approvedeny queued actions.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts probing sensitive filesystem pathssecrets.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting archivebulk export of internal content.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting direct memory contentsearch access.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting direct systemaudit log contents.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting environment variablesecret listings.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting external webnetwork fetch behavior.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting pairingaccess bootstrap artifacts.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting plugintool auto-discovery inventory.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting raw tool tracesargumentsresults.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting system promptagent instruction leakage.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts targeting cloud metadata endpoints.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts targeting localinternal network hosts.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts trying to bypass domain allowlistegress policy.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts trying to inspect approval queue internalsmetadata.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts trying to obtaincraft approval callback tokens.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts trying to switch runtime modelprovider configuratio]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator requests to run commands or perform direct execution.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator requests using disallowed URL schemes.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect conceptual file-purpose questions without direct content requests.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect internal approvalegress banner text that must remain owner-only.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect legacy bracket-style block notices for collaborator normalization.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect plain NO_REPLY sentinel with light punctuation wrapping.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect plain-language model status questions for deterministic local reply.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect policy questions about execution behavior (not actual execution asks).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect rawembedded tool payload text in user input.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect requests to encode sensitiveinternal content for exfiltration.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect requests to extract hidden-channel content from sensitiveinternal source]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Extract first outbound web target (URL or bare domain) for egress preflight.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Fail-closed member check for a group-context inbound message.          Returns T]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Map internal statuspolicy texts to user-safe replacement notices.          Pure]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Normalize first command token so small obfuscations don't bypass local handlers.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Normalize input text to defeat encoding-based evasion.      Applied before all s]] - rationale - gateway/security/input_normalizer.py
-- [[Notify a collaborator that a privileged command is not available.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Parse owner command target as numeric id or known collaborator alias.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Per-request bot_id for activity tracking.          Returns the bot_id set by pro]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Proxies Telegram Bot API calls through the security pipeline.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Queue an interactive egress approval when raw web_fetch JSON leaks.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[RateLimiter_1]] - code - gateway/ingest_api/auth.py
-- [[Resolve effective collaboration mode for a user.          Resolution order]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Resolve owner target from pending-request username aliases (e.g., approve ana).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Resolve target by id, static alias, or pending username alias.          Resoluti]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return TeamsConfig from app_state if available.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True if message originates from a group or supergroup chat.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True if text has any keyword overlap with the user's project focus_topics]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True if the bot is @mentioned or a bot_command targets this bot.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True when ``text`` is a bare liveness-check phrase.          Strips a lea]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return list of ProjectConfig objects for this user, or empty list.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Scan inbound messages from getUpdates for security threats.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send tailored safe informational response for collaborator conceptual query.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send the one-time collaborator disclosure notice.          Picks the appropriate]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Simple token-bucket rate limiter      Limits requests per client IP to prevent r]] - rationale - gateway/ingest_api/auth.py
-- [[TelegramAPIProxy_1]] - code - gateway/proxy/telegram_proxy.py
-- [[Validate normalized domain labels to avoid malformed allowlist entries.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[normalize_input()]] - code - gateway/security/input_normalizer.py
+- [[Owner messages are now recorded with is_owner=True (not silently dropped).]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[Real Telegram UIDs (9-10 digits) must NOT be pruned.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[Unit tests for CollaboratorActivityTracker.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[fixture_83]] - code
+- [[get_activity_summary returns a by_bot breakdown keyed by bot_id.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[log_file()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[record_activity with bot_id='hermes' stores bot_id in the entry.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[record_activity without bot_id stores bot_id=None in the entry.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[test_collaborator_entry_has_is_owner_false()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_collaborator_tracker.py]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_correlation_id_absent_when_not_provided()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_correlation_id_included_when_provided()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_get_activity_ignores_non_numeric_timestamps()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_get_activity_respects_limit()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_get_activity_respects_since()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_get_activity_returns_empty_when_no_file()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_get_activity_returns_entries_newest_first()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_get_activity_summary_includes_by_bot()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_message_preview_newlines_normalized()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_message_preview_truncated()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_multiple_entries_appended()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_owner_correlation_id_is_stored()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_owner_is_recorded_with_is_owner_flag()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_pruner_real_telegram_uids_not_flagged()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_record_activity_mirror_handles_delimiter_chars_in_username()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_record_activity_mirror_is_single_line_for_multiline_message()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_record_activity_mirrors_to_contributor_daily_log()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_record_activity_stores_bot_id_none_when_omitted()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_record_activity_stores_bot_id_when_provided()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_records_known_collaborator()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_summary_counts()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_summary_empty_when_no_file()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_summary_handles_non_numeric_timestamps()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_summary_last_activity_is_latest_timestamp()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_unknown_user_is_skipped()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_username_is_normalized_for_log_safety()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[tracker()_1]] - code - gateway/tests/test_collaborator_tracker.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -167,53 +54,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 53 edges to [[_COMMUNITY_test_collaborator_tracker.py (2)]]
-- 33 edges to [[_COMMUNITY_test_collaborator_tracker.py (3)]]
-- 18 edges to [[_COMMUNITY_colima-health-check.sh]]
-- 13 edges to [[_COMMUNITY_AlertDispatcher (3)]]
-- 13 edges to [[_COMMUNITY_dot-_proxy_request_impl()]]
-- 12 edges to [[_COMMUNITY_SecurityPipeline (2)]]
-- 11 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 9 edges to [[_COMMUNITY_dot-_make_proxy()]]
-- 9 edges to [[_COMMUNITY_test_soc_egress_endpoints.py]]
-- 8 edges to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
-- 8 edges to [[_COMMUNITY_create_auth_dependency()]]
-- 4 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
-- 4 edges to [[_COMMUNITY__t]]
-- 3 edges to [[_COMMUNITY_GroupConfig]]
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 3 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 3 edges to [[_COMMUNITY_MiddlewareManager (2)]]
-- 2 edges to [[_COMMUNITY_ForwardRequest]]
-- 2 edges to [[_COMMUNITY_SlackAPIProxy]]
-- 2 edges to [[_COMMUNITY__make_proxy]]
-- 2 edges to [[_COMMUNITY_SkillGuard]]
-- 1 edge to [[_COMMUNITY_ContextGuard]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_hermesskillsi-bsREADME.md (5)]]
-- 1 edge to [[_COMMUNITY_MultiTurnTracker]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager]]
-- 1 edge to [[_COMMUNITY_AgentShroud v0.8.0 — Full Security & Functionality Audit]]
-- 1 edge to [[_COMMUNITY_SecureBrowser (2)]]
-- 1 edge to [[_COMMUNITY__make_cve]]
-- 1 edge to [[_COMMUNITY_Phase 3A3B Implementation Verification Results]]
-- 1 edge to [[_COMMUNITY_TestDomainValidationHelper]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig (4)]]
-- 1 edge to [[_COMMUNITY_TestLooksLikeSafeCollaboratorInfoQuery]]
-- 1 edge to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal for Hermes (behind AgentShroud)]]
-- 1 edge to [[_COMMUNITY_Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]]
-- 1 edge to [[_COMMUNITY_All Dependencies.md (2)]]
-- 1 edge to [[_COMMUNITY__fw_client]]
-- 1 edge to [[_COMMUNITY_TestOutboundScanUnification]]
-- 1 edge to [[_COMMUNITY_api.py (2)]]
-- 1 edge to [[_COMMUNITY_dot-test_collaborator_web_access_imperative_with_url_queues_owner_approval()]]
-- 1 edge to [[_COMMUNITY_Any]]
-- 1 edge to [[_COMMUNITY_DelegationManager]]
-- 1 edge to [[_COMMUNITY_PromptGuard]]
+- 7 edges to [[_COMMUNITY_CollaboratorActivityTracker]]
+- 1 edge to [[_COMMUNITY_WebhookReceiver]]
+- 1 edge to [[_COMMUNITY_test_webhook_receiver_passes_agent_id_as_bot_id]]
+- 1 edge to [[_COMMUNITY_test_get_activity_filters_by_bot_id]]
+- 1 edge to [[_COMMUNITY_test_get_activity_summary_by_bot_empty_when_no_file]]
+- 1 edge to [[_COMMUNITY_test_pruner_short_numeric_ids_are_test_fixtures]]
+- 1 edge to [[_COMMUNITY_test_lifespan_prune.py]]
 
 ## Top bridge nodes
-- [[TelegramAPIProxy_1]] - degree 225, connects to 32 communities
-- [[normalize_input()]] - degree 80, connects to 10 communities
-- [[dot-_filter_inbound_updates()]] - degree 87, connects to 7 communities
-- [[RateLimiter_1]] - degree 18, connects to 5 communities
-- [[dot-_send_telegram_text()]] - degree 11, connects to 3 communities
+- [[test_collaborator_tracker.py]] - degree 42, connects to 7 communities
+- [[tracker()_1]] - degree 3, connects to 1 community

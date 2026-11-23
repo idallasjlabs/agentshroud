@@ -1,16 +1,15 @@
 ---
 type: community
-cohesion: 1.00
-members: 1
+members: 2
 ---
 
 # tests/__init__.py
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[CLASS_PROFILE]] - code - scripts/triage-cve-mitigations.py
+- [[Test Suite for AgentShroud Gateway]] - rationale - gateway/tests/__init__.py
+- [[tests__init__.py]] - code - gateway/tests/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,21 +1,18 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+members: 5
 ---
 
 # test-container-runtime.sh
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[Assess severity]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
-- [[Incident detected]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
-- [[P1 — Critical (respond immediately; owner Isaiah Jefferson; kill switch  revoke  rotate)]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
-- [[P2 — High (respond within 1 hour; restart containers, rebuild image)]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
-- [[P3 — Medium (respond within 4 hours; review logs, apply config fix)]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
-- [[P4 — Low (resolve in next session; fix branch + PR)]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
+- [[check()_4]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[make_fake_bin()]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[run_detect()]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[test-container-runtime.sh]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[test-container-runtime.sh script]] - code - scripts/smoke.d/test-container-runtime.sh
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,24 +1,24 @@
 ---
 type: community
-cohesion: 0.31
-members: 9
+members: 11
 ---
 
 # test_credential_injector.py
 
-**Cohesion:** 0.31 - loosely connected
-**Members:** 9 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[confirm()]] - code - docker/scripts/killswitch.sh
-- [[killswitch.sh]] - code - docker/scripts/killswitch.sh
-- [[killswitch.sh script]] - code - docker/scripts/killswitch.sh
-- [[op-auth-common.sh]] - code - docker/scripts/op-auth-common.sh
-- [[op-auth-common.sh script]] - code - docker/scripts/op-auth-common.sh
-- [[op-wrapper.sh]] - code - docker/scripts/op-wrapper.sh
-- [[op-wrapper.sh script]] - code - docker/scripts/op-wrapper.sh
-- [[op_authenticate()]] - code - docker/scripts/op-auth-common.sh
-- [[usage()_7]] - code - docker/scripts/killswitch.sh
+- [[dot-test_credential_never_in_logs()]] - code - gateway/tests/test_credential_injector.py
+- [[dot-test_get_status_structure()]] - code - gateway/tests/test_credential_injector.py
+- [[Create a temp secrets directory with a test credential.]] - rationale - gateway/tests/test_credential_injector.py
+- [[CredentialInjector with a custom mapping pointing at the temp secrets.]] - rationale - gateway/tests/test_credential_injector.py
+- [[TestStatus]] - code - gateway/tests/test_credential_injector.py
+- [[Tests for gatewaysecuritycredential_injector.py — verify secrets never leak.]] - rationale - gateway/tests/test_credential_injector.py
+- [[Verify that raw credential values never appear in log output.]] - rationale - gateway/tests/test_credential_injector.py
+- [[fixture_28]] - code
+- [[injector()]] - code - gateway/tests/test_credential_injector.py
+- [[secrets_dir()]] - code - gateway/tests/test_credential_injector.py
+- [[test_credential_injector.py]] - code - gateway/tests/test_credential_injector.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,3 +26,14 @@ members: 9
 TABLE source_file, type FROM #community/test_credential_injectorpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 6 edges to [[_COMMUNITY_CredentialInjectorConfig]]
+- 2 edges to [[_COMMUNITY_load_all_secret_file_values]]
+- 2 edges to [[_COMMUNITY_CredentialInjector]]
+- 1 edge to [[_COMMUNITY_TestLeakDetection]]
+- 1 edge to [[_COMMUNITY_TestOAuthInjection]]
+
+## Top bridge nodes
+- [[test_credential_injector.py]] - degree 13, connects to 5 communities
+- [[injector()]] - degree 6, connects to 2 communities

@@ -1,53 +1,206 @@
 ---
 type: community
-cohesion: 0.05
-members: 38
+members: 193
 ---
 
 # test_soc_router_coverage.py
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 38 nodes
+**Members:** 193 nodes
 
 ## Members
-- [[dot-test_alert_callbacks()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[dot-test_approval_system()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[dot-test_basic_tool_call_tracking()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[dot-test_chain_length_limits()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[dot-test_config_file_to_outbound()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[dot-test_credential_to_outbound_blocking()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[dot-test_edge_cases()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[dot-test_exec_to_network_pattern()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[dot-test_initialization()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[dot-test_normal_tool_sequences_allowed()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[dot-test_pattern_configuration()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[dot-test_rapid_file_enumeration()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[dot-test_read_to_http_exfiltration()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[dot-test_read_to_message_exfiltration()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[dot-test_risk_score_calculation()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[dot-test_session_cleanup()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[dot-test_session_stats()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[dot-test_time_window_expiry()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[Test alert callback functionality.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test approval system interface.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test basic tool call tracking functionality.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test cases for ToolChainAnalyzer class.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test cleanup of old sessions.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test detection of config file access → outbound pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test detection of exec → network communication pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test detection of rapid file enumeration.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test detection of read → HTTP exfiltration pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test detection of read → message exfiltration pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test edge cases and error conditions.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test getting session statistics.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test proper initialization of ToolChainAnalyzer.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test risk score calculation for detected chains.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test that chain length limits are respected.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test that credential access → outbound tools are blocked.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test that normal tool sequences pass through.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test that patterns are properly configured.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test that patterns don't match outside time windows.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[TestToolChainAnalyzer_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-__init__()_40]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-__init__()_41]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-__init__()_42]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-__init__()_43]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-__init__()_44]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-get_pending()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-get_recent_entries()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-is_group_admin()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-is_owner()_2]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-model_dump()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-model_dump()_1]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-require()_1]] - code - gateway/tests/test_soc_router_coverage.py
+- [[Bug 1 fix 'ok' must reflect whether the removal actually took effect, not be…]] - rationale - gateway/tests/test_soc_router_coverage.py
+- [[Coverage tests for gatewaysocrouter.py — SCL REST endpoints. Strategy a…]] - rationale - gateway/tests/test_soc_router_coverage.py
+- [[FakeAuditStore]] - code - gateway/tests/test_soc_router_coverage.py
+- [[FakeCaller]] - code - gateway/tests/test_soc_router_coverage.py
+- [[FakeGroup]] - code - gateway/tests/test_soc_router_coverage.py
+- [[Mirrors EnhancedApprovalQueue's public surface…]] - rationale - gateway/tests/test_soc_router_coverage.py
+- [[Mock container engine + two configured bots for the shared kill switch.]] - rationale - gateway/tests/test_soc_router_coverage.py
+- [[Query GitHub releases API. Returns {tag_name ..., html_url ...} or…]] - rationale - gateway/soc/router.py
+- [[Run a command inside the agentshroud-openclaw container via the Docker socket.…]] - rationale - gateway/soc/router.py
+- [[SOC agent-cves surfaces auto-registered under_review advisories honestly.]] - rationale - gateway/tests/test_soc_router_coverage.py
+- [[Stands in for SCLCaller RBAC require() is a no-op, owner is switchable.]] - rationale - gateway/tests/test_soc_router_coverage.py
+- [[_FakeDecideQueue]] - code - gateway/tests/test_soc_router_coverage.py
+- [[_Svc]] - code - gateway/tests/test_soc_router_coverage.py
+- [[__init__()_8]] - code - gateway/tests/test_soc_router_coverage.py
+- [[__init__()_9]] - code - gateway/tests/test_soc_router_coverage.py
+- [[__init__()_10]] - code - gateway/tests/test_soc_router_coverage.py
+- [[_boom()_2]] - code - gateway/tests/test_soc_router_coverage.py
+- [[_boom()_3]] - code - gateway/tests/test_soc_router_coverage.py
+- [[_boom()_4]] - code - gateway/tests/test_soc_router_coverage.py
+- [[_boom()_5]] - code - gateway/tests/test_soc_router_coverage.py
+- [[_boom()_6]] - code - gateway/tests/test_soc_router_coverage.py
+- [[_boom()_7]] - code - gateway/tests/test_soc_router_coverage.py
+- [[_boom()_8]] - code - gateway/tests/test_soc_router_coverage.py
+- [[_boom()_9]] - code - gateway/tests/test_soc_router_coverage.py
+- [[_boom()_10]] - code - gateway/tests/test_soc_router_coverage.py
+- [[_boom()_11]] - code - gateway/tests/test_soc_router_coverage.py
+- [[_boom()_12]] - code - gateway/tests/test_soc_router_coverage.py
+- [[_boom()_13]] - code - gateway/tests/test_soc_router_coverage.py
+- [[_boom()_14]] - code - gateway/tests/test_soc_router_coverage.py
+- [[_docker_exec_bot()]] - code - gateway/soc/router.py
+- [[_fake_ssh()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[_fetch_latest_release()]] - code - gateway/soc/router.py
+- [[_file_hash()]] - code - gateway/soc/router.py
+- [[_make_service_manager()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[_no_engine()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[_pending_item()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[_unix_call()]] - code - gateway/soc/router.py
+- [[client()_6]] - code - gateway/tests/test_soc_router_coverage.py
+- [[connect()_4]] - code - gateway/soc/router.py
+- [[fake_endpoint()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[fixture_27]] - code
+- [[get_group_memory()_1]] - code - gateway/tests/test_soc_router_coverage.py
+- [[get_logs()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[get_pending()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[holder()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[ks_engine()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[list_services()_1]] - code - gateway/tests/test_soc_router_coverage.py
+- [[parametrize_8]] - code
+- [[restart_service()_1]] - code - gateway/tests/test_soc_router_coverage.py
+- [[start_service()_1]] - code - gateway/tests/test_soc_router_coverage.py
+- [[state()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[stop_service()_1]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_add_collaborator()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_add_group_member_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_agent_cves_known_and_unknown()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_agent_cves_registry_error()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_agent_cves_reports_under_review()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_approvals_approve_calls_decide()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_approvals_body_optional()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_approvals_deny_calls_decide()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_approvals_mfa_required_is_403()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_approvals_missing_queue_is_503()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_approvals_pending_no_queue_is_empty()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_approvals_pending_queue_error_is_not_empty_success()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_approvals_pending_uses_get_pending()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_approvals_unexpected_error_is_500()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_approvals_unknown_id_is_404()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_audit_export_unavailable()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_audit_verify_chain_raises()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_audit_verify_chain_unavailable()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_audit_verify_chain_valid()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_auth_login_dev_mode_omits_secure_flag()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_auth_login_no_configured_token()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_auth_login_success_sets_secure_cookie()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_auth_login_wrong_token()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_auth_ws_token()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_collaborator_activity_filters()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_collaborator_activity_no_tracker()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_collaborator_activity_pairing()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_command_center_has_approvals_tab()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_config_integrity_acknowledge()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_correlation_fallback_builder()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_correlation_unavailable_on_error()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_correlation_via_engine()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_create_delegation_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_create_group_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_cve_report_error()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_dashboard_serves_template_with_cache_busting()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_delete_group_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_docker_exec_bot_create_failures()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_docker_exec_bot_socket_error()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_docker_exec_bot_success_and_frame_parsing()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_deny()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_deny_missing_queue()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_history_no_queue()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_history_revoke_no_queue()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_log_filters_egress_events()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_rule_override_no_queue()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_rule_remove_no_queue()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_emergency_block_confirmed()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_emergency_block_filter_raises_still_ok()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_emergency_block_requires_confirmation()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_fetch_latest_release_error()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_fetch_latest_release_success()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_file_hash_existing_and_missing()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_get_config_variants()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_get_group()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_get_modules_modes()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_get_modules_unavailable()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_get_updates_variants()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_group_memory_clear()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_group_memory_clear_error()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_group_memory_read()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_health_healthy_and_degraded()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_killswitch_disconnect_engine_failure_is_not_ok()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_killswitch_disconnect_owner_gate()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_killswitch_disconnect_stops_and_removes_every_bot()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_killswitch_engine_unavailable_is_not_ok()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_killswitch_failure_is_audited_as_failed()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_killswitch_freeze_engine_failure_is_not_ok()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_killswitch_freeze_pauses_every_bot()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_killswitch_freeze_requires_confirm()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_killswitch_shutdown_engine_failure_is_not_ok()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_killswitch_shutdown_requires_confirm()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_killswitch_shutdown_runs_compose_down()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_list_bots_default_and_configured()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_list_delegations()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_list_groups_empty_and_populated()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_list_services_and_bot_filter()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_llm_failover_stats()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_log_audit_survives_app_state_failure()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_pause_collaborator_endpoint()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_privacy_policies()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_remove_group_member_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_rename_group_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_revoke_collaborator()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_revoke_collaborator_ok_reflects_actual_result()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_revoke_delegation_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_risk_defaults_low_on_error()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_risk_fallback_builder()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_risk_level_label_boundaries()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_risk_summary()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_risk_summary_fallback_on_error()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_risk_via_engine_critical()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_rollback_gateway_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_sbom_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_scan_results()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_scanners_aggregate()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_scanners_aggregate_error()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_scanners_recent()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_scorecard_global_bot_and_error()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_security_alerts_dispatcher_raises()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_security_alerts_no_dispatcher()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_security_alerts_with_dispatcher()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_security_events_no_store()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_security_events_with_filters()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_service_logs()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_service_restart()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_service_start()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_service_stop_confirmation_then_stop()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_service_update()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_services_rebuild()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_set_group_mode_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_set_log_level()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_set_module_mode_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_set_user_collab_mode()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_set_user_role_invalid()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_set_user_role_non_owner_denied()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_set_user_role_owner_success()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_soc_router_coverage.py]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_ssh_compose_no_host()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_tool_acl()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_trivy_summary()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_unpause_collaborator_endpoint()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_update_display_name()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_upgrade_hermes_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_upgrade_hermes_restarts_the_real_container_name()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_websocket_route_dispatch()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[update_service()_1]] - code - gateway/tests/test_soc_router_coverage.py
+- [[update_service()_2]] - code - gateway/tests/test_soc_router_coverage.py
+- [[update_service() must be called with the real container name (agentshroud-…]] - rationale - gateway/tests/test_soc_router_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,10 +210,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_test_tool_chain_analyzer.py]]
-- 3 edges to [[_COMMUNITY_ToolChainAnalyzer]]
-- 1 edge to [[_COMMUNITY_SecurityPipeline (2)_1]]
-- 1 edge to [[_COMMUNITY_tool_chain_analyzer.py]]
+- 25 edges to [[_COMMUNITY_AsyncMock]]
+- 18 edges to [[_COMMUNITY_socrouter.py]]
+- 3 edges to [[_COMMUNITY_test_benchmark_regression.py]]
+- 2 edges to [[_COMMUNITY_ApprovalStore]]
+- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_test_dashboard_fallback_when_template_missing]]
+- 1 edge to [[_COMMUNITY_fastapi]]
+- 1 edge to [[_COMMUNITY_ingest_apiconfig.py]]
 
 ## Top bridge nodes
-- [[TestToolChainAnalyzer_1]] - degree 29, connects to 4 communities
+- [[test_soc_router_coverage.py]] - degree 175, connects to 8 communities
+- [[FakeCaller]] - degree 11, connects to 1 community
+- [[_docker_exec_bot()]] - degree 7, connects to 1 community
+- [[_fetch_latest_release()]] - degree 5, connects to 1 community
+- [[_pending_item()]] - degree 3, connects to 1 community

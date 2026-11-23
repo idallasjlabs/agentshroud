@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # prefetch-ghsa-registry.sh
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[entrypoint-agentshroud.sh]] - code - docker/scripts/entrypoint-agentshroud.sh
-- [[entrypoint-agentshroud.sh script]] - code - docker/scripts/entrypoint-agentshroud.sh
+- [[prefetch-ghsa-registry.sh]] - code - docker/config/openclaw/cron/scripts/prefetch-ghsa-registry.sh
+- [[prefetch-ghsa-registry.sh script]] - code - docker/config/openclaw/cron/scripts/prefetch-ghsa-registry.sh
 
 ## Live Query (requires Dataview plugin)
 

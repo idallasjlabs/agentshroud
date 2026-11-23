@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # ordercli/SKILL.md
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[installapiruntimes endpoint]] - concept - gateway/web/templates/installer.html
-- [[loadRuntimes()]] - code - gateway/web/templates/installer.html
+- [[ordercli]] - document - skills/openclaw/ordercli/SKILL.md
+- [[ordercliSKILL]] - document - skills/openclaw/ordercli/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

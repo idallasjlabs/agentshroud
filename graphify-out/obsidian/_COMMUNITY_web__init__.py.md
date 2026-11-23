@@ -1,16 +1,15 @@
 ---
 type: community
-cohesion: 1.00
-members: 1
+members: 2
 ---
 
 # web/__init__.py
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[Admin CLI Chat Console (OpenClaw via Gateway)]] - code - src/interfaces/chat_console.py
+- [[AgentShroud Web Management Portal.]] - rationale - gateway/web/__init__.py
+- [[web__init__.py]] - code - gateway/web/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

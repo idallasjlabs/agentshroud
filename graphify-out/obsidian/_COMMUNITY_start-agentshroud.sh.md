@@ -1,37 +1,32 @@
 ---
 type: community
-cohesion: 0.09
-members: 22
+members: 19
 ---
 
 # start-agentshroud.sh
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 22 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[ASCII Art (fallback — no renderer available)_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
-- [[Anti-Patterns to Flag_13]] - document - docker/config/hermes/skills/i-ti/SKILL.md
-- [[Architecture (C4  block) — System boundaries and components_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
-- [[Brand Theme Block (Mermaid)_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
-- [[Core Discipline Understand → Diagram → Validate → Export_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
-- [[Data Flow — How data moves and transforms_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
-- [[Dependencies_14]] - document - docker/config/hermes/skills/i-ti/SKILL.md
-- [[Diagram Types and Data Lakehouse Examples_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
-- [[ER Diagram — Table relationships and control schema_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
-- [[File and Directory Conventions_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
-- [[Gantt — Daily pipeline schedule_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
-- [[Online renderer_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
-- [[Render locally with mmdc_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
-- [[Rendering and Export_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
-- [[Role_37]] - document - docker/config/hermes/skills/i-ti/SKILL.md
-- [[Rules_14]] - document - docker/config/hermes/skills/i-ti/SKILL.md
-- [[Sequence — Order of operations between systems_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
-- [[Skill Technical Illustrator (TI)_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
-- [[State Diagram — Job or process lifecycle_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
-- [[Validate syntax without exporting_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
-- [[Validation Checklist_7]] - document - docker/config/hermes/skills/i-ti/SKILL.md
-- [[hermesskillsi-tiSKILL]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[_container_age_seconds()]] - code - docker/scripts/start-agentshroud.sh
+- [[_dns_warmup_probe()]] - code - docker/scripts/start-agentshroud.sh
+- [[_enforce_sandbox_cap()]] - code - docker/scripts/start-agentshroud.sh
+- [[_model_runtime_ready()]] - code - docker/scripts/start-agentshroud.sh
+- [[_poll_openclaw_ready()]] - code - docker/scripts/start-agentshroud.sh
+- [[_read_hc_secret()]] - code - docker/scripts/start-agentshroud.sh
+- [[_read_secret_file()]] - code - docker/scripts/start-agentshroud.sh
+- [[_reap_exited_sandboxes()]] - code - docker/scripts/start-agentshroud.sh
+- [[_reap_idle_sandboxes()]] - code - docker/scripts/start-agentshroud.sh
+- [[_reconcile_security_critical_cron()]] - code - docker/scripts/start-agentshroud.sh
+- [[_rename_to_meaningful()]] - code - docker/scripts/start-agentshroud.sh
+- [[_slack_send()]] - code - docker/scripts/start-agentshroud.sh
+- [[_telegram_bot_token()_1]] - code - docker/scripts/start-agentshroud.sh
+- [[_telegram_get_me_ready()_1]] - code - docker/scripts/start-agentshroud.sh
+- [[_telegram_send()_2]] - code - docker/scripts/start-agentshroud.sh
+- [[_telegram_send_photo()_1]] - code - docker/scripts/start-agentshroud.sh
+- [[op_proxy_read_with_retry()]] - code - docker/scripts/start-agentshroud.sh
+- [[start-agentshroud.sh]] - code - docker/scripts/start-agentshroud.sh
+- [[start-agentshroud.sh script]] - code - docker/scripts/start-agentshroud.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,9 +34,3 @@ members: 22
 TABLE source_file, type FROM #community/start-agentshroudsh
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_OpenClaw Workspace Usage Guide]]
-
-## Top bridge nodes
-- [[Skill Technical Illustrator (TI)_1]] - degree 12, connects to 1 community

@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # xmind-generator-mcp (MCP server)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[PythonBoto3AWS moto test pattern]] - concept - docker/config/openclaw/skills/i-tdd/SKILL.md
+- [[xmind-generator-mcp (MCP server)]] - concept - docker/config/hermes/skills/i-mm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,30 +1,28 @@
 ---
 type: community
-cohesion: 0.13
 members: 15
 ---
 
 # input_normalizer.py
 
-**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[Alert Actions]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Configuration  Environment Variables_17]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Default Thresholds]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[EgressMonitor.check_anomalies(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[EgressMonitor.daily_summary(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[EgressMonitor.get_events(agent_id, channel)]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[EgressMonitor.record(event)]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Function Details_31]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Key Classes  Functions_33]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Purpose_131]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Related_37]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Responsibilities_35]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Threat Model_21]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[egress_monitor.py_2]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[egress_monitor.py_1]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Environment Variables_7]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Function Details_23]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Invisible Characters Stripped]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Key Classes  Functions_25]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Mode Enforce vs Monitor_5]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Purpose_26]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Related_25]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Responsibilities_25]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Threat Model_11]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Usage Context]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[detect_base64_payloads(text)]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[input_normalizer.py_1]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[input_normalizer.py]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[normalize_input(text)]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[strip_markdown_exfil(text)]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,3 +30,9 @@ members: 15
 TABLE source_file, type FROM #community/input_normalizerpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Architecture Overview]]
+
+## Top bridge nodes
+- [[input_normalizer.py]] - degree 2, connects to 1 community

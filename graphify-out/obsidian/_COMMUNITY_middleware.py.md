@@ -1,31 +1,314 @@
 ---
 type: community
-cohesion: 0.12
-members: 16
+members: 301
 ---
 
 # middleware.py
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 16 nodes
+**Members:** 301 nodes
 
 ## Members
-- [[1. URL Forwarder]] - document - browser-extension/README.md
-- [[2. Page Clipper]] - document - browser-extension/README.md
-- [[3. Form Fill Request (Reverse Flow)]] - document - browser-extension/README.md
-- [[4. Tab Session Exporter]] - document - browser-extension/README.md
-- [[5. Reading List Queue]] - document - browser-extension/README.md
-- [[Browser Extension]] - document - browser-extension/README.md
-- [[Browser Support]] - document - browser-extension/README.md
-- [[Features_3]] - document - browser-extension/README.md
-- [[ForwardRequest handler (forward endpoint)]] - code - gateway/ingest_api/routes/forward.py
-- [[Gateway wiring]] - document - browser-extension/README.md
-- [[Privacy Features]] - document - browser-extension/README.md
-- [[Safari_6]] - document - browser-extension/README.md
-- [[Structure_1]] - document - browser-extension/README.md
-- [[Tests_3]] - document - browser-extension/README.md
-- [[browser-extension package.json (Jest test harness)]] - code - browser-extension/package.json
-- [[browser-extensionREADME]] - document - browser-extension/README.md
+- [[dot-__init__()_112]] - code - gateway/ingest_api/middleware.py
+- [[dot-__init__()_113]] - code - gateway/security/approval_hardening.py
+- [[dot-__init__()_114]] - code - gateway/security/file_sandbox.py
+- [[dot-__init__()_115]] - code - gateway/security/prompt_protection.py
+- [[dot-__init__()_116]] - code - gateway/security/xml_leak_filter.py
+- [[dot-_calculate_similarity()]] - code - gateway/security/prompt_protection.py
+- [[dot-_check()]] - code - gateway/security/file_sandbox.py
+- [[dot-_check_description_parameter_mismatch()]] - code - gateway/security/approval_hardening.py
+- [[dot-_check_misleading_language()]] - code - gateway/security/approval_hardening.py
+- [[dot-_check_parameter_obfuscation()]] - code - gateway/security/approval_hardening.py
+- [[dot-_check_repeat_request_patterns()]] - code - gateway/security/approval_hardening.py
+- [[dot-_cleanup_old_denied_requests()]] - code - gateway/security/approval_hardening.py
+- [[dot-_compile_detection_patterns()_1]] - code - gateway/security/prompt_protection.py
+- [[dot-_create_parameter_fingerprint()]] - code - gateway/security/approval_hardening.py
+- [[dot-_detect_raw_traversal()]] - code - gateway/security/file_sandbox.py
+- [[dot-_format_parameters_with_highlighting()]] - code - gateway/security/approval_hardening.py
+- [[dot-_is_immutable_file()]] - code - gateway/security/file_sandbox.py
+- [[dot-_load_protected_content()]] - code - gateway/security/prompt_protection.py
+- [[dot-_match_pattern()]] - code - gateway/security/file_sandbox.py
+- [[dot-_matches_allowed_paths()]] - code - gateway/security/file_sandbox.py
+- [[dot-_matches_blocked()]] - code - gateway/security/file_sandbox.py
+- [[dot-_normalize_description()]] - code - gateway/security/approval_hardening.py
+- [[dot-_redact_fuzzy_match()]] - code - gateway/security/prompt_protection.py
+- [[dot-add_protected_content()]] - code - gateway/security/prompt_protection.py
+- [[dot-analyze_request()]] - code - gateway/security/approval_hardening.py
+- [[dot-check_read()]] - code - gateway/security/file_sandbox.py
+- [[dot-check_write()]] - code - gateway/security/file_sandbox.py
+- [[dot-config()_1]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-detect_staging_patterns()]] - code - gateway/security/file_sandbox.py
+- [[dot-filter_function_calls_only()]] - code - gateway/security/xml_leak_filter.py
+- [[dot-filter_response()_1]] - code - gateway/security/xml_leak_filter.py
+- [[dot-format_hardened_message()]] - code - gateway/security/approval_hardening.py
+- [[dot-get_audit_log()_8]] - code - gateway/security/file_sandbox.py
+- [[dot-get_protection_stats()]] - code - gateway/security/prompt_protection.py
+- [[dot-get_security_violations()]] - code - gateway/security/file_sandbox.py
+- [[dot-get_stats()_7]] - code - gateway/security/approval_hardening.py
+- [[dot-get_temp_files()]] - code - gateway/security/file_sandbox.py
+- [[dot-get_user_role()_2]] - code - gateway/security/rbac_config.py
+- [[dot-get_users_by_role()]] - code - gateway/security/rbac_config.py
+- [[dot-hardening()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-is_admin_or_higher()]] - code - gateway/security/rbac_config.py
+- [[dot-is_collaborator_or_higher()]] - code - gateway/security/rbac_config.py
+- [[dot-is_request_in_cooldown()]] - code - gateway/security/approval_hardening.py
+- [[dot-monitor_sandbox()]] - code - gateway/tests/test_security_audit.py
+- [[dot-record_denied_request()]] - code - gateway/security/approval_hardening.py
+- [[dot-record_network_activity()]] - code - gateway/security/file_sandbox.py
+- [[dot-register_bot_hostnames()]] - code - gateway/security/prompt_protection.py
+- [[dot-scan()_1]] - code - gateway/security/file_sandbox.py
+- [[dot-scan_command_injection()]] - code - gateway/security/xml_leak_filter.py
+- [[dot-scan_response()_2]] - code - gateway/security/prompt_protection.py
+- [[dot-set_user_role()_1]] - code - gateway/security/rbac_config.py
+- [[dot-setup_method()_20]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_api_key_pattern_detected()]] - code - gateway/tests/test_file_sandbox.py
+- [[dot-test_audit_has_path()]] - code - gateway/tests/test_file_sandbox.py
+- [[dot-test_basic_detection()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_clean_response_passes_through()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_clean_text_passes()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_cleanup_old_denied_requests()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_cooldown_disabled_when_feature_disabled()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_cooldown_period_enforcement()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_credit_card_detected()_1]] - code - gateway/tests/test_file_sandbox.py
+- [[dot-test_custom_config()_2]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_deception_detection_authority_claims()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_deception_detection_benign_request()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_deception_detection_destructive_command_not_indicated()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_deception_detection_disabled()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_deception_detection_downplaying_language()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_deception_detection_misleading_description()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_default_blocks_sensitive_paths()]] - code - gateway/tests/test_file_sandbox.py
+- [[dot-test_default_config()_3]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_default_detection()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_default_has_reasonable_allowed_paths()]] - code - gateway/tests/test_file_sandbox.py
+- [[dot-test_default_mode_is_enforce()_3]] - code - gateway/tests/test_file_sandbox.py
+- [[dot-test_default_mode_is_enforce()_4]] - code - gateway/tests/test_round2_hardening.py
+- [[dot-test_denied_request_creation()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_different_requests_not_in_cooldown()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_email_detected()]] - code - gateway/tests/test_file_sandbox.py
+- [[dot-test_empty_text_returns_clean()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_file_path_removal()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_file_sandbox_mcp_write()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[dot-test_file_sandbox_staging_detection()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[dot-test_format_hardened_message_basic()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_format_hardened_message_with_normalization()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_format_hardened_message_with_security_concerns()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_format_parameters_with_highlighting()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_function_calls_xml_removal()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_get_stats()_1]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_initialization()_3]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_keyvault_instantiated_and_seeded_in_lifespan()]] - code - gateway/tests/test_round2_hardening.py
+- [[dot-test_large_write_then_network_flagged()]] - code - gateway/tests/test_file_sandbox.py
+- [[dot-test_large_write_without_network_not_flagged()]] - code - gateway/tests/test_file_sandbox.py
+- [[dot-test_monitor_mode_allows_everything()]] - code - gateway/tests/test_file_sandbox.py
+- [[dot-test_no_hardcoded_owner_id_in_lifespan()]] - code - gateway/tests/test_round2_hardening.py
+- [[dot-test_no_pii_clean()]] - code - gateway/tests/test_file_sandbox.py
+- [[dot-test_normalize_description_handles_empty()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_normalize_description_removes_misleading_phrases()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_parameter_fingerprinting_consistency()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_parameter_fingerprinting_different_params()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_parameter_obfuscation_detection_base64()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_parameter_obfuscation_detection_hex()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_parameter_obfuscation_detection_url()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_pii_in_write_flagged()]] - code - gateway/tests/test_file_sandbox.py
+- [[dot-test_pipeline_scans_outbound_for_key_leaks()]] - code - gateway/tests/test_round2_hardening.py
+- [[dot-test_project_files_allowed()]] - code - gateway/tests/test_file_sandbox.py
+- [[dot-test_python_eval_detected()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_quick_function_calls_filter()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_read_logged()]] - code - gateway/tests/test_file_sandbox.py
+- [[dot-test_repeat_request_pattern_detection()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_shell_injection_detected()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_small_writes_not_flagged()]] - code - gateway/tests/test_file_sandbox.py
+- [[dot-test_sql_injection_detected()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_ssn_detected()]] - code - gateway/tests/test_file_sandbox.py
+- [[dot-test_symlink_resolution()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_temp_file_tracking()]] - code - gateway/tests/test_file_sandbox.py
+- [[dot-test_tmp_read_allowed()]] - code - gateway/tests/test_file_sandbox.py
+- [[dot-test_tmp_write_allowed()_1]] - code - gateway/tests/test_file_sandbox.py
+- [[dot-test_wildcard_pattern_matching()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_workspace_read_allowed()_1]] - code - gateway/tests/test_file_sandbox.py
+- [[dot-test_workspace_write_allowed()_1]] - code - gateway/tests/test_file_sandbox.py
+- [[dot-test_write_logged()]] - code - gateway/tests/test_file_sandbox.py
+- [[dot-wire_teams_config()]] - code - gateway/security/rbac_config.py
+- [[dot-xml_filter()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[A piece of content that should be protected from disclosure.]] - rationale - gateway/security/prompt_protection.py
+- [[Add bot container hostnames to the infrastructure detection patterns. Called at…]] - rationale - gateway/security/prompt_protection.py
+- [[Add content to the protected registry. Args name Identifier for this content…]] - rationale - gateway/security/prompt_protection.py
+- [[Analyze an approval request for potential deception or social engineering.…]] - rationale - gateway/security/approval_hardening.py
+- [[Anti-social-engineering hardening for approval queue.]] - rationale - gateway/security/approval_hardening.py
+- [[Any_40]] - code
+- [[Any_41]] - code
+- [[ApprovalHardening]] - code - gateway/security/approval_hardening.py
+- [[ApprovalHardeningConfig]] - code - gateway/security/approval_hardening.py
+- [[Calculate similarity between text and protected content.]] - rationale - gateway/security/prompt_protection.py
+- [[Check for misleading language patterns in description.]] - rationale - gateway/security/approval_hardening.py
+- [[Check for mismatch between description and actual parameters.]] - rationale - gateway/security/approval_hardening.py
+- [[Check for obfuscated or encoded parameters.]] - rationale - gateway/security/approval_hardening.py
+- [[Check for patterns indicating repeat request attempts.]] - rationale - gateway/security/approval_hardening.py
+- [[Check if a similar request is still in cooldown period.]] - rationale - gateway/security/approval_hardening.py
+- [[Check if path is within any allowed pattern.]] - rationale - gateway/security/file_sandbox.py
+- [[Check if path matches any blocked pattern.]] - rationale - gateway/security/file_sandbox.py
+- [[Check if this is an immutable security file by name.]] - rationale - gateway/security/file_sandbox.py
+- [[Check if user has admin privileges or higher.]] - rationale - gateway/security/rbac_config.py
+- [[Check if user has collaborator privileges or higher.]] - rationale - gateway/security/rbac_config.py
+- [[Clean up old denied requests beyond cooldown period.]] - rationale - gateway/security/approval_hardening.py
+- [[Compile regex patterns for detecting disclosure attempts.]] - rationale - gateway/security/prompt_protection.py
+- [[Configuration for Role-Based Access Control.]] - rationale - gateway/security/rbac_config.py
+- [[Configuration for approval queue hardening.]] - rationale - gateway/security/approval_hardening.py
+- [[Create a PromptProtection instance for testing.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Create a fingerprint for request parameters.]] - rationale - gateway/security/approval_hardening.py
+- [[Create approval hardening instance for testing.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Create test configuration._1]] - rationale - gateway/tests/test_approval_hardening.py
+- [[DeceptionDetection]] - code - gateway/security/approval_hardening.py
+- [[DeniedRequest]] - code - gateway/security/approval_hardening.py
+- [[Detect data staging patterns (collect → compress → exfil).]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Detect path traversal attempts in raw input before normalization.]] - rationale - gateway/security/file_sandbox.py
+- [[Enhanced pattern matching for file paths.]] - rationale - gateway/security/file_sandbox.py
+- [[Even blocked paths are allowed in monitor mode (just flagged).]] - rationale - gateway/tests/test_file_sandbox.py
+- [[FileOperation]] - code - gateway/security/file_sandbox.py
+- [[FileSandbox]] - code - gateway/security/file_sandbox.py
+- [[FileSandbox in enforce mode with strict separation.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[FileSandboxConfig]] - code - gateway/security/file_sandbox.py
+- [[FileVerdict]] - code - gateway/security/file_sandbox.py
+- [[Filter outbound response content to remove sensitive information. Args…]] - rationale - gateway/security/xml_leak_filter.py
+- [[Filter to remove sensitive XML and path information from outbound responses.]] - rationale - gateway/security/xml_leak_filter.py
+- [[FilterResult]] - code - gateway/security/xml_leak_filter.py
+- [[Format an approval message with hardening measures applied.]] - rationale - gateway/security/approval_hardening.py
+- [[Format parameters with risk highlighting.]] - rationale - gateway/security/approval_hardening.py
+- [[Get all flagged operations that indicate security violations.]] - rationale - gateway/security/file_sandbox.py
+- [[Get all users with a specific role.]] - rationale - gateway/security/rbac_config.py
+- [[Get role for a user ID.]] - rationale - gateway/security/rbac_config.py
+- [[Get statistics about approval hardening.]] - rationale - gateway/security/approval_hardening.py
+- [[Get statistics about the protection system.]] - rationale - gateway/security/prompt_protection.py
+- [[Initialize all security modules.]] - rationale - gateway/ingest_api/middleware.py
+- [[Initialize prompt protection system. Args config Configuration dictionary…]] - rationale - gateway/security/prompt_protection.py
+- [[Initialize the filter with predefined patterns.]] - rationale - gateway/security/xml_leak_filter.py
+- [[Load protected content from configured sources.]] - rationale - gateway/security/prompt_protection.py
+- [[MCP file writes should go through sandbox.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Main system prompt protection engine. Maintains fingerprints of sensitive…]] - rationale - gateway/security/prompt_protection.py
+- [[Merge group membership and admin IDs from TeamsConfig into RBAC. Called from…]] - rationale - gateway/security/rbac_config.py
+- [[Middleware Manager - P1 Security Hardening Orchestrates security modules for…]] - rationale - gateway/ingest_api/middleware.py
+- [[Middleware manager for request processing tests.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Monitor-mode sandbox for comparison testing.]] - rationale - gateway/tests/test_security_audit.py
+- [[Normalize description by removing misleading language.]] - rationale - gateway/security/approval_hardening.py
+- [[PIIFinding]] - code - gateway/security/file_sandbox.py
+- [[PIIScanResult]] - code - gateway/security/file_sandbox.py
+- [[PIIScanner]] - code - gateway/security/file_sandbox.py
+- [[Per-tool call rate limit configuration.]] - rationale - gateway/security/tool_acl.py
+- [[PromptProtection]] - code - gateway/security/prompt_protection.py
+- [[ProtectedContent]] - code - gateway/security/prompt_protection.py
+- [[Quick filter that only removes function call XML (for performance). Args…]] - rationale - gateway/security/xml_leak_filter.py
+- [[RBACConfig]] - code - gateway/security/rbac_config.py
+- [[Record a denied request for cooldown tracking.]] - rationale - gateway/security/approval_hardening.py
+- [[Record of a denied approval request.]] - rationale - gateway/security/approval_hardening.py
+- [[Redact text that fuzzy matches protected content.]] - rationale - gateway/security/prompt_protection.py
+- [[RedactionResult_1]] - code - gateway/security/prompt_protection.py
+- [[Result from XML leak filtering.]] - rationale - gateway/security/xml_leak_filter.py
+- [[Result of deception detection analysis.]] - rationale - gateway/security/approval_hardening.py
+- [[Result of scanning and redacting content.]] - rationale - gateway/security/prompt_protection.py
+- [[Sample protected content for testing.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Sandbox with separation of privilege enforcement.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Scan outbound text for command  code injection patterns. Does NOT modify the…]] - rationale - gateway/security/xml_leak_filter.py
+- [[Scan text for protected content and return redacted version. Args text The…]] - rationale - gateway/security/prompt_protection.py
+- [[Set role for a user ID (owner-only operation).]] - rationale - gateway/security/rbac_config.py
+- [[Set up test fixtures._5]] - rationale - gateway/tests/test_xml_leak_filter.py
+- [[StagingPattern]] - code - gateway/security/file_sandbox.py
+- [[Symlinks should be resolved - symlink to blocked path must be caught.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[System Prompt Protection for AgentShroud Gateway Prevents extraction of system…]] - rationale - gateway/security/prompt_protection.py
+- [[Test  wildcard patterns work correctly.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Test DeceptionDetection dataclass.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test DeniedRequest dataclass.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test approval hardening configuration.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test approval hardening functionality.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test basic detection result creation.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test basic hardened message formatting.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test cases for XMLLeakFilter.]] - rationale - gateway/tests/test_xml_leak_filter.py
+- [[Test cleanup of old denied requests.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test cooldown is disabled when feature is disabled.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test cooldown period enforcement for denied requests.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test custom configuration values._1]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test deception detection with legitimate request.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test default configuration values._1]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test denied request creation.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test description normalization removes misleading language.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test detection of URL-encoded parameters.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test detection of authoritylegitimacy claims.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test detection of base64-encoded parameters.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test detection of destructive commands not indicated in description.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test detection of downplaying language.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test detection of hex-encoded parameters.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test detection of misleading descriptions.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test detection of repeat request patterns.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test detection with default values.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test file path pattern matching logic.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Test getting hardening statistics.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test hardened message formatting when description is normalized.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test hardened message formatting with security concerns.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test hardening initialization.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test normalization handles empty descriptions.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test parameter formatting with risk highlighting.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test removal of file paths from responses.]] - rationale - gateway/tests/test_xml_leak_filter.py
+- [[Test removal of function call XML blocks.]] - rationale - gateway/tests/test_xml_leak_filter.py
+- [[Test that clean responses pass through unchanged.]] - rationale - gateway/tests/test_xml_leak_filter.py
+- [[Test that deception detection can be disabled.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test that different parameters create different fingerprints.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test that different requests are not affected by cooldown.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test that parameter fingerprinting is consistent.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test the performance-optimized function calls only filter.]] - rationale - gateway/tests/test_xml_leak_filter.py
+- [[TestApprovalHardening]] - code - gateway/tests/test_approval_hardening.py
+- [[TestApprovalHardeningConfig]] - code - gateway/tests/test_approval_hardening.py
+- [[TestCommandInjectionScan]] - code - gateway/tests/test_xml_leak_filter.py
+- [[TestDRYOwnerChatID]] - code - gateway/tests/test_round2_hardening.py
+- [[TestDeceptionDetection]] - code - gateway/tests/test_approval_hardening.py
+- [[TestDeniedRequest]] - code - gateway/tests/test_approval_hardening.py
+- [[TestFileAudit]] - code - gateway/tests/test_file_sandbox.py
+- [[TestFileSandboxConfig]] - code - gateway/tests/test_file_sandbox.py
+- [[TestFileSandboxDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
+- [[TestKeyVaultWired]] - code - gateway/tests/test_round2_hardening.py
+- [[TestNormalFileOperations]] - code - gateway/tests/test_file_sandbox.py
+- [[TestPIIScanning]] - code - gateway/tests/test_file_sandbox.py
+- [[TestPatternMatching]] - code - gateway/tests/test_privilege_separation.py
+- [[TestStagingPatternDetection]] - code - gateway/tests/test_file_sandbox.py
+- [[TestXMLLeakFilter]] - code - gateway/tests/test_xml_leak_filter.py
+- [[Tests for Round 2 hardening — 9 fixes.]] - rationale - gateway/tests/test_round2_hardening.py
+- [[Tests for System Prompt Protection module.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Tests for XMLLeakFilter.]] - rationale - gateway/tests/test_xml_leak_filter.py
+- [[Tests for file IO sandboxing.]] - rationale - gateway/tests/test_file_sandbox.py
+- [[Tool-Level Access Control (v0.9.0 Tranche 2) Enforces per-user, per-group tool…]] - rationale - gateway/security/tool_acl.py
+- [[ToolRateLimit]] - code - gateway/security/tool_acl.py
+- [[XML Leak Filter — prevent sensitive XML and path information from leaking in…]] - rationale - gateway/security/xml_leak_filter.py
+- [[XMLLeakFilter]] - code - gateway/security/xml_leak_filter.py
+- [[approval_hardening.py]] - code - gateway/security/approval_hardening.py
+- [[default_config()_3]] - code - gateway/tests/test_file_sandbox.py
+- [[enforce_config()]] - code - gateway/tests/test_privilege_separation.py
+- [[enforcement-audit-script.py]] - code - docs/planning/reviews/enforcement-audit-script.py
+- [[fail()]] - code - docs/planning/reviews/enforcement-audit-script.py
+- [[file_sandbox.py]] - code - gateway/security/file_sandbox.py
+- [[fixture_72]] - code
+- [[fixture_73]] - code
+- [[fixture_74]] - code
+- [[fixture_75]] - code
+- [[fixture_76]] - code
+- [[middleware.py_2]] - code - gateway/ingest_api/middleware.py
+- [[middleware_manager()]] - code - gateway/tests/test_privilege_separation.py
+- [[ok()]] - code - docs/planning/reviews/enforcement-audit-script.py
+- [[patch_6]] - code
+- [[prompt_protection()]] - code - gateway/tests/test_prompt_protection.py
+- [[prompt_protection.py]] - code - gateway/security/prompt_protection.py
+- [[run()_1]] - code - docs/planning/reviews/enforcement-audit-script.py
+- [[sample_protected_content()]] - code - gateway/tests/test_prompt_protection.py
+- [[sandbox()]] - code - gateway/tests/test_file_sandbox.py
+- [[strict_config()_2]] - code - gateway/tests/test_file_sandbox.py
+- [[strict_sandbox()]] - code - gateway/tests/test_file_sandbox.py
+- [[strict_sandbox()_1]] - code - gateway/tests/test_privilege_separation.py
+- [[test_approval_hardening.py]] - code - gateway/tests/test_approval_hardening.py
+- [[test_file_sandbox.py]] - code - gateway/tests/test_file_sandbox.py
+- [[test_privilege_separation.py]] - code - gateway/tests/test_privilege_separation.py
+- [[test_prompt_protection.py]] - code - gateway/tests/test_prompt_protection.py
+- [[test_round2_hardening.py]] - code - gateway/tests/test_round2_hardening.py
+- [[test_xml_leak_filter.py]] - code - gateway/tests/test_xml_leak_filter.py
+- [[tool_acl.py]] - code - gateway/security/tool_acl.py
+- [[warn()]] - code - docs/planning/reviews/enforcement-audit-script.py
+- [[xml_leak_filter.py]] - code - gateway/security/xml_leak_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,9 +318,109 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_dot-githubmcp.json]]
-- 1 edge to [[_COMMUNITY_AgentShroud Development Roadmap — 2026 Gantt Chart]]
+- 30 edges to [[_COMMUNITY_socrouter.py]]
+- 16 edges to [[_COMMUNITY_MiddlewareManager]]
+- 14 edges to [[_COMMUNITY_test_all_modules_enforce.py]]
+- 8 edges to [[_COMMUNITY_test_security_audit.py]]
+- 8 edges to [[_COMMUNITY_UserSessionManager]]
+- 8 edges to [[_COMMUNITY_GitGuard]]
+- 6 edges to [[_COMMUNITY_ToolResultInjectionScanner]]
+- 6 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 5 edges to [[_COMMUNITY_deep_security_test]]
+- 5 edges to [[_COMMUNITY_DNSFilterConfig]]
+- 5 edges to [[_COMMUNITY_EgressEvent]]
+- 5 edges to [[_COMMUNITY_SubagentMonitor]]
+- 5 edges to [[_COMMUNITY_ContextGuard]]
+- 5 edges to [[_COMMUNITY_PromptGuard]]
+- 5 edges to [[_COMMUNITY_lifespan.py]]
+- 5 edges to [[_COMMUNITY_load_config]]
+- 5 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 5 edges to [[_COMMUNITY_ResourceGuard]]
+- 4 edges to [[_COMMUNITY_KeyRotationManager]]
+- 4 edges to [[_COMMUNITY_EnvironmentGuard]]
+- 4 edges to [[_COMMUNITY_PIIConfig]]
+- 4 edges to [[_COMMUNITY_PathIsolationManager]]
+- 4 edges to [[_COMMUNITY_RedactionResult]]
+- 4 edges to [[_COMMUNITY_TestPromptProtection]]
+- 4 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 4 edges to [[_COMMUNITY_test_tool_acl.py]]
+- 4 edges to [[_COMMUNITY_test_memory_lifecycle.py]]
+- 4 edges to [[_COMMUNITY_EgressFilter]]
+- 3 edges to [[_COMMUNITY_MCPPermissionManager]]
+- 3 edges to [[_COMMUNITY_ContainerSnapshot]]
+- 3 edges to [[_COMMUNITY_SecurityPipeline]]
+- 3 edges to [[_COMMUNITY_TokenValidator]]
+- 3 edges to [[_COMMUNITY_BrowserSecurityGuard]]
+- 3 edges to [[_COMMUNITY_OutputCanary]]
+- 3 edges to [[_COMMUNITY_MetadataGuard]]
+- 3 edges to [[_COMMUNITY_TestExfiltrationDetection]]
+- 3 edges to [[_COMMUNITY_lifespan]]
+- 3 edges to [[_COMMUNITY_PrivacyPolicyEnforcer]]
+- 3 edges to [[_COMMUNITY_GroupWorkspaceManager]]
+- 3 edges to [[_COMMUNITY_test_group_rbac.py]]
+- 3 edges to [[_COMMUNITY_AlertDispatcher]]
+- 3 edges to [[_COMMUNITY_NetworkValidator]]
+- 3 edges to [[_COMMUNITY_AgentRegistry]]
+- 3 edges to [[_COMMUNITY_SessionManager]]
+- 3 edges to [[_COMMUNITY_OAuthSecurityValidator]]
+- 3 edges to [[_COMMUNITY_ConsentFramework]]
+- 3 edges to [[_COMMUNITY_ToolChainAnalyzer]]
+- 2 edges to [[_COMMUNITY_GroupRole]]
+- 2 edges to [[_COMMUNITY_EgressPolicy]]
+- 2 edges to [[_COMMUNITY_MemoryIntegrityMonitor]]
+- 2 edges to [[_COMMUNITY_MemoryLifecycleManager]]
+- 2 edges to [[_COMMUNITY_TrustManager]]
+- 2 edges to [[_COMMUNITY_CanaryTripwire]]
+- 2 edges to [[_COMMUNITY_ingest_apimodels.py]]
+- 2 edges to [[_COMMUNITY_fastapi]]
+- 2 edges to [[_COMMUNITY_WebhookReceiver]]
+- 2 edges to [[_COMMUNITY_ContributorManager]]
+- 2 edges to [[_COMMUNITY_socmodels.py]]
+- 2 edges to [[_COMMUNITY_test_group_isolation.py]]
+- 2 edges to [[_COMMUNITY_test_shared_memory.py]]
+- 2 edges to [[_COMMUNITY_TeamsConfig]]
+- 2 edges to [[_COMMUNITY_test_soc_bots.py]]
+- 2 edges to [[_COMMUNITY_GroupRegistry]]
+- 2 edges to [[_COMMUNITY_SharedMemoryManager]]
+- 2 edges to [[_COMMUNITY_AuditStore]]
+- 2 edges to [[_COMMUNITY_CredentialInjector]]
+- 2 edges to [[_COMMUNITY_ToolResultSanitizerConfig]]
+- 2 edges to [[_COMMUNITY_KillSwitchMonitor]]
+- 2 edges to [[_COMMUNITY_test_ws_e_rt2_inbound_encoding.py]]
+- 2 edges to [[_COMMUNITY_MemoryLifecycleConfig]]
+- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
+- 1 edge to [[_COMMUNITY_TestRBACConfig]]
+- 1 edge to [[_COMMUNITY_TestSecurityPolicyProtection]]
+- 1 edge to [[_COMMUNITY_TestReadAccess]]
+- 1 edge to [[_COMMUNITY_TestAgentShroudSourceCodeProtection]]
+- 1 edge to [[_COMMUNITY_dot-_sanitize_reason]]
+- 1 edge to [[_COMMUNITY_TestSensitivePathBlocking]]
+- 1 edge to [[_COMMUNITY_TestConfigurationProtection]]
+- 1 edge to [[_COMMUNITY_TestSystemPathProtection]]
+- 1 edge to [[_COMMUNITY_TestWorkspaceAccessPreserved]]
+- 1 edge to [[_COMMUNITY_TestSecurityViolationLogging]]
+- 1 edge to [[_COMMUNITY_TestEdgeCases]]
+- 1 edge to [[_COMMUNITY_TestLLMProxyEndpoints]]
+- 1 edge to [[_COMMUNITY_ingest_apiconfig.py]]
+- 1 edge to [[_COMMUNITY_AuditChain]]
+- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
+- 1 edge to [[_COMMUNITY_TestCollaboratorPersistence]]
+- 1 edge to [[_COMMUNITY_GroupRoleResolver]]
+- 1 edge to [[_COMMUNITY_ToolACLEnforcer]]
+- 1 edge to [[_COMMUNITY_TestEgressFilterConfig]]
+- 1 edge to [[_COMMUNITY_KeyVault]]
+- 1 edge to [[_COMMUNITY_test_module_stats.py]]
+- 1 edge to [[_COMMUNITY_CredentialInjectorConfig]]
+- 1 edge to [[_COMMUNITY_PathRewriteResult]]
+- 1 edge to [[_COMMUNITY_check_command]]
+- 1 edge to [[_COMMUNITY_KillSwitchConfig]]
+- 1 edge to [[_COMMUNITY_TestLogSanitizer]]
+- 1 edge to [[_COMMUNITY_test_file_sandbox_message_gate.py]]
+- 1 edge to [[_COMMUNITY_test_middleware_coverage.py]]
 
 ## Top bridge nodes
-- [[Browser Extension]] - degree 6, connects to 1 community
-- [[browser-extensionREADME]] - degree 4, connects to 1 community
+- [[middleware.py_2]] - degree 98, connects to 48 communities
+- [[RBACConfig]] - degree 85, connects to 30 communities
+- [[dot-__init__()_112]] - degree 42, connects to 30 communities
+- [[run()_1]] - degree 36, connects to 19 communities
+- [[enforcement-audit-script.py]] - degree 33, connects to 19 communities

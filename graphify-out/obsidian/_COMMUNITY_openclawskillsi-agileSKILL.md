@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # openclaw/skills/i-agile/SKILL.md
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[Skill incident-response_1]] - document - docker/config/hermes/skills/i-incident-response/SKILL.md
-- [[hermesskillsi-incident-responseSKILL]] - document - docker/config/hermes/skills/i-incident-response/SKILL.md
+- [[Skill agile_4]] - document - docker/config/openclaw/skills/i-agile/SKILL.md
+- [[openclawskillsi-agileSKILL]] - document - docker/config/openclaw/skills/i-agile/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

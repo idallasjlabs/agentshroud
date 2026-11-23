@@ -1,29 +1,28 @@
 ---
 type: community
-cohesion: 0.23
-members: 14
+members: 15
 ---
 
 # skill.json
 
-**Cohesion:** 0.23 - loosely connected
-**Members:** 14 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[AgentShroud Seccomp Profile (default-deny syscall allowlist)]] - document - docker/seccomp/agentshroud-seccomp.json
-- [[AgentShroud Security Verification (13-check driver)]] - code - docker/scripts/verify-security.sh
-- [[OpenClaw Volume Architecture (persistent volumes vs tmpfs)]] - concept - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Phase 3 Container Security Hardening Baseline]] - concept - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Phase 3 Success Criteria]] - concept - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Read-Only Root FS Constraint — what breaks without proper mounts]] - rationale - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[SecureClaw Security Review (SEC)]] - document - .agents/skills/i-sec/SKILL.md
-- [[Security Review (SEC) README]] - document - .agents/skills/i-sec/README.md
-- [[check_fail()_1]] - code - docker/scripts/verify-security.sh
-- [[check_pass()_1]] - code - docker/scripts/verify-security.sh
-- [[check_warn()]] - code - docker/scripts/verify-security.sh
-- [[toggle-readonly.sh mode switcher]] - code - docker/scripts/toggle-readonly.sh
-- [[verify-security.sh_1]] - code - docker/scripts/verify-security.sh
-- [[verify-security.sh script]] - code - docker/scripts/verify-security.sh
+- [[auditLogging]] - code - skills/custom/browser-fetch/skill.json
+- [[author]] - code - skills/custom/browser-fetch/skill.json
+- [[dependencies_1]] - code - skills/custom/browser-fetch/skill.json
+- [[description_4]] - code - skills/custom/browser-fetch/skill.json
+- [[filesystemAccess]] - code - skills/custom/browser-fetch/skill.json
+- [[keywords]] - code - skills/custom/browser-fetch/skill.json
+- [[name]] - code - skills/custom/browser-fetch/skill.json
+- [[networkAccess]] - code - skills/custom/browser-fetch/skill.json
+- [[playwright]] - code - skills/custom/browser-fetch/skill.json
+- [[playwright_1]] - concept - skills/custom/browser-fetch/skill.json
+- [[requiresApproval]] - code - skills/custom/browser-fetch/skill.json
+- [[security_1]] - code - skills/custom/browser-fetch/skill.json
+- [[skill.json]] - code - skills/custom/browser-fetch/skill.json
+- [[tools]] - code - skills/custom/browser-fetch/skill.json
+- [[version]] - code - skills/custom/browser-fetch/skill.json
 
 ## Live Query (requires Dataview plugin)
 

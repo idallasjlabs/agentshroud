@@ -1,29 +1,26 @@
 ---
 type: community
-cohesion: 0.14
-members: 14
+members: 13
 ---
 
 # router.py
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 14 nodes
+**Members:** 13 nodes
 
 ## Members
-- [[1. Scope of Change]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
-- [[2. What Changes and Why]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
-- [[3. Scalability Gate]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
-- [[4. Blast Radius_3]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
-- [[5. Known Limits and Assumptions]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
-- [[6. Alternatives Considered]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
-- [[7. Open Questions]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
-- [[8. Verification Plan]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
-- [[Closing Gate_2]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
-- [[Output Format Rules_2]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
-- [[Output Sections (ALL required)]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
-- [[Role_73]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
-- [[Skill Pre-Change Analysis (PCA)_2]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
-- [[openclawskillsi-pcaSKILL]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[Config Keys Read_7]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Environment Variables Used_7]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Function Details_31]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Imports From  Exports To_7]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Key Classes  Functions_33]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Known Issues  Notes_7]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Purpose_51]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Related_33]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Responsibilities_33]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[forward_to_agent(target, sanitized_content, ledger_id, metadata)]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[health_check(target)]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[resolve_target(request)]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[router.py]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,7 +30,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_soc.js]]
+- 1 edge to [[_COMMUNITY_Architecture Overview]]
 
 ## Top bridge nodes
-- [[Skill Pre-Change Analysis (PCA)_2]] - degree 6, connects to 1 community
+- [[router.py]] - degree 10, connects to 1 community

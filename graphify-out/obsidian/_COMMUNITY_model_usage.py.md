@@ -1,34 +1,33 @@
 ---
 type: community
-cohesion: 0.11
-members: 19
+members: 20
 ---
 
 # model_usage.py
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 19 nodes
+**Members:** 20 nodes
 
 ## Members
-- [[Anti-Patterns to Flag_16]] - document - docker/config/hermes/skills/i-bs/SKILL.md
-- [[Brand Audit Checklist_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
-- [[Brand System Components_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
-- [[Color Token Definition_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
-- [[Core Discipline Audit → Define → Apply → Enforce_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
-- [[Deck  Slide Master Rules_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
-- [[Dependencies_17]] - document - docker/config/hermes/skills/i-bs/SKILL.md
-- [[Diagram Theme Block (Mermaid)_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
-- [[File & Directory Conventions_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
-- [[HTML  CSS Brand Variables_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
-- [[Patterns by Output Type_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
-- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
-- [[Role_49]] - document - docker/config/hermes/skills/i-bs/SKILL.md
-- [[Rules_17]] - document - docker/config/hermes/skills/i-bs/SKILL.md
-- [[Skill Branding Specialist (BS)_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
-- [[Typography Scale_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
-- [[Validate contrast ratio_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
-- [[Voice & Tone Guide_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
-- [[hermesskillsi-bsSKILL]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[Any_62]] - code
+- [[ModelCost]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[Summarize CodexBar local cost usage by model. Defaults to current model (most…]] - rationale - skills/openclaw/model-usage/scripts/model_usage.py
+- [[aggregate_costs()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[build_json_all()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[build_json_current()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[date]] - code
+- [[eprint()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[filter_by_days()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[latest_day_cost()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[load_payload()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[main()_27]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[model_usage.py]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[parse_daily_entries()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[parse_date()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[pick_current_model()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[render_text_all()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[render_text_current()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[run_codexbar_cost()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[usd()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,11 +35,3 @@ members: 19
 TABLE source_file, type FROM #community/model_usagepy
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 3 edges to [[_COMMUNITY_OpenClaw Workspace Usage Guide]]
-
-## Top bridge nodes
-- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_1]] - degree 10, connects to 1 community
-- [[Skill Branding Specialist (BS)_1]] - degree 8, connects to 1 community
-- [[Validate contrast ratio_1]] - degree 2, connects to 1 community

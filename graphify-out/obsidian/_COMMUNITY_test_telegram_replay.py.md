@@ -1,40 +1,59 @@
 ---
 type: community
-cohesion: 0.08
-members: 25
+members: 46
 ---
 
 # test_telegram_replay.py
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 25 nodes
+**Members:** 46 nodes
 
 ## Members
-- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Bot Account (Manual Setup Required)]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Bot Account (You Do This Manually)]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[CPU Throttling]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Clone Repo on Pi]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Cost Estimate]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Current System Profile]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Disk IO]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Memory Management]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Network]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Next Steps After Setup]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Performance Considerations]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 1 OS Hardening & Cleanup]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 3 GitHub Setup]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 4 Project Structure]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 5 CICD Pipeline (GitHub Actions)]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 6 Docker Configuration]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 7 Secret Management]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 8 Monitoring & Observability]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 9 OpenClaw Agent Configuration]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Repo Access]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[SSH Hardening]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Snap Cleanup (Free Resources)]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[System Updates]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Temperature Management]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[dot-__init__()_48]] - code - gateway/proxy/telegram_replay.py
+- [[dot-_conn_ok()]] - code - gateway/proxy/telegram_replay.py
+- [[dot-_init_db()_1]] - code - gateway/proxy/telegram_replay.py
+- [[dot-cleanup_if_due()]] - code - gateway/proxy/telegram_replay.py
+- [[dot-close()_2]] - code - gateway/proxy/telegram_replay.py
+- [[dot-mark_delivered()]] - code - gateway/proxy/telegram_replay.py
+- [[dot-pull_undelivered()]] - code - gateway/proxy/telegram_replay.py
+- [[dot-record_inbound()]] - code - gateway/proxy/telegram_replay.py
+- [[Any_18]] - code
+- [[Close the SQLite connection (idempotent).]] - rationale - gateway/proxy/telegram_replay.py
+- [[Exception during cleanup execute must be swallowed.]] - rationale - gateway/tests/test_telegram_replay.py
+- [[Exception during execute in mark_delivered must be swallowed.]] - rationale - gateway/tests/test_telegram_replay.py
+- [[Exception during execute in pull_undelivered must return empty list.]] - rationale - gateway/tests/test_telegram_replay.py
+- [[Exception during executemany (valid conn, SQL error) must be swallowed.]] - rationale - gateway/tests/test_telegram_replay.py
+- [[Mark all updates with update_id  offset as delivered (normal getUpdates ack).]] - rationale - gateway/proxy/telegram_replay.py
+- [[Periodically prune rows older than retention window.]] - rationale - gateway/proxy/telegram_replay.py
+- [[Persist inbound updates so they can be replayed after a crash.]] - rationale - gateway/proxy/telegram_replay.py
+- [[Return undelivered updates older than grace window (avoids replay storms).]] - rationale - gateway/proxy/telegram_replay.py
+- [[SQLite-backed Telegram update store, safe for concurrent asyncio callers.]] - rationale - gateway/proxy/telegram_replay.py
+- [[Telegram update replay buffer — SQLite WAL, bot-agnostic. Records every…]] - rationale - gateway/proxy/telegram_replay.py
+- [[Tests for UpdateReplayBuffer (gatewayproxytelegram_replay.py).]] - rationale - gateway/tests/test_telegram_replay.py
+- [[UpdateReplayBuffer]] - code - gateway/proxy/telegram_replay.py
+- [[_cleanup_call_count_for_next_cleanup()]] - code - gateway/tests/test_telegram_replay.py
+- [[_update()]] - code - gateway/tests/test_telegram_replay.py
+- [[buf()]] - code - gateway/tests/test_telegram_replay.py
+- [[fixture_33]] - code
+- [[telegram_replay.py]] - code - gateway/proxy/telegram_replay.py
+- [[test_cleanup_db_error_swallowed()]] - code - gateway/tests/test_telegram_replay.py
+- [[test_cleanup_drops_old_rows()]] - code - gateway/tests/test_telegram_replay.py
+- [[test_cleanup_execute_exception_swallowed()]] - code - gateway/tests/test_telegram_replay.py
+- [[test_cleanup_interval_guard()]] - code - gateway/tests/test_telegram_replay.py
+- [[test_duplicate_record_is_ignored()]] - code - gateway/tests/test_telegram_replay.py
+- [[test_grace_window_excludes_recent()]] - code - gateway/tests/test_telegram_replay.py
+- [[test_mark_delivered_db_error_swallowed()]] - code - gateway/tests/test_telegram_replay.py
+- [[test_mark_delivered_excludes_from_pull()]] - code - gateway/tests/test_telegram_replay.py
+- [[test_mark_delivered_execute_exception_swallowed()]] - code - gateway/tests/test_telegram_replay.py
+- [[test_multibot_isolation()]] - code - gateway/tests/test_telegram_replay.py
+- [[test_pull_undelivered_db_error_swallowed()]] - code - gateway/tests/test_telegram_replay.py
+- [[test_pull_undelivered_execute_exception_swallowed()]] - code - gateway/tests/test_telegram_replay.py
+- [[test_pull_undelivered_handles_corrupt_payload()]] - code - gateway/tests/test_telegram_replay.py
+- [[test_record_inbound_db_error_swallowed()]] - code - gateway/tests/test_telegram_replay.py
+- [[test_record_inbound_executemany_exception_swallowed()]] - code - gateway/tests/test_telegram_replay.py
+- [[test_record_inbound_skips_updates_without_update_id()]] - code - gateway/tests/test_telegram_replay.py
+- [[test_record_then_pull_returns_undelivered()]] - code - gateway/tests/test_telegram_replay.py
+- [[test_sqlite_failure_does_not_raise()]] - code - gateway/tests/test_telegram_replay.py
+- [[test_telegram_replay.py]] - code - gateway/tests/test_telegram_replay.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,11 +63,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_collaborator_greeter.py (3)]]
-- 1 edge to [[_COMMUNITY_test_telegram_replay.py (2)]]
-- 1 edge to [[_COMMUNITY_test_telegram_replay.py (3)]]
-- 1 edge to [[_COMMUNITY_test_telegram_replay.py (5)]]
-- 1 edge to [[_COMMUNITY_Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (3)]]
+- 2 edges to [[_COMMUNITY_ingest_apimain.py]]
 
 ## Top bridge nodes
-- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - degree 17, connects to 5 communities
+- [[UpdateReplayBuffer]] - degree 14, connects to 1 community
+- [[telegram_replay.py]] - degree 4, connects to 1 community

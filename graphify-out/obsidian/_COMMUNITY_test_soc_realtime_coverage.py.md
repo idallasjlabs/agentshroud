@@ -1,134 +1,119 @@
 ---
 type: community
-cohesion: 0.03
-members: 119
+members: 106
 ---
 
 # test_soc_realtime_coverage.py
 
-**Cohesion:** 0.03 - loosely connected
-**Members:** 119 nodes
+**Members:** 106 nodes
 
 ## Members
-- [[NOTE api.telegram.org is intentionally NOT listed here.  The bot is]] - rationale - gateway/proxy/http_proxy.py
-- [[dot-__init__()_4]] - code - gateway/proxy/web_proxy.py
-- [[dot-__init__()_5]] - code - gateway/proxy/web_proxy.py
-- [[dot-__init__()_109]] - code - gateway/proxy/http_proxy.py
-- [[dot-check()]] - code - gateway/proxy/web_proxy.py
-- [[dot-get_domain_settings()]] - code - gateway/proxy/web_config.py
-- [[dot-is_domain_allowed()]] - code - gateway/proxy/web_config.py
-- [[dot-is_domain_denied()]] - code - gateway/proxy/web_config.py
-- [[dot-readline()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-reset()]] - code - gateway/proxy/web_proxy.py
-- [[dot-test_allowed_domain_passes()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_audit_chain_valid()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_aws_key_in_response_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_base64_encoded_injection_in_html()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_base64_in_query_flagged()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_base64_in_url_path_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_blocked_request_audited()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_case_insensitive()_2]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_clean_comment_not_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_clean_content_no_injection()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_custom_denylist()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_custom_domain_size_limit()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_data_exfil_instruction_detected()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_denied_domain_blocked()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_denied_domain_malware()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_denied_subdomain_blocked()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_different_domains_independent()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_domain_denied()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_domain_not_in_denylist_passes()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_empty_allowlist_blocks_everything()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_exact_match()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_get_domain_settings_custom()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_get_domain_settings_default()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_github_passes()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_ignore_instructions_detected()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_injection_adds_security_headers()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_injection_in_hidden_div()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_injection_in_html_comment()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_injection_in_invisible_text()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_injection_in_meta_tag()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_injection_stats()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_large_response_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_long_query_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_no_audit_chain_no_crash()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_normal_content_type_not_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_normal_response_not_flagged_for_size()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_passthrough_adds_header()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_passthrough_allows_everything()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_passthrough_mode_default_off()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_passthrough_skips_content_scan()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_pii_in_response_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_pii_in_url_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_private_key_in_response_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_rate_limit_blocks_excess()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_rate_limiter_reset()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_request_audited()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_response_audited()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_role_override_detected()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_single_zwc_not_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_ssn_in_url_flagged()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_stackoverflow_passes()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_stats_tracked()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_suspicious_content_type_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_system_delimiter_detected()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_tool_invocation_detected()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_wildcard_does_not_match_other_root()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_wildcard_domain_settings()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_wildcard_matches_root_domain()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_wildcard_matches_subdomain()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_zero_width_chars_detected()]] - code - gateway/tests/test_web_proxy.py
-- [[CONNECT tunnel must NOT allow api.telegram.org — forces traffic through reverse]] - rationale - gateway/tests/test_http_proxy.py
-- [[Check if a domain is on the allowlist (used when mode == 'allowlist').]] - rationale - gateway/proxy/web_config.py
-- [[Check if a domain is on the denylist.]] - rationale - gateway/proxy/web_config.py
-- [[Check if request is within rate limit. Returns True if allowed.]] - rationale - gateway/proxy/web_proxy.py
-- [[Configuration for the web traffic proxy.      Default-allow all URLs pass unles]] - rationale - gateway/proxy/web_config.py
-- [[DomainSettings]] - code - gateway/proxy/web_config.py
-- [[EgressFilter_2]] - code - gateway/proxy/http_proxy.py
-- [[Get settings for a specific domain, falling back to defaults.]] - rationale - gateway/proxy/web_config.py
-- [[HTTP web traffic proxy for OpenClaw. Intercepts all outbound web requests, runs…]] - rationale - gateway/proxy/web_proxy.py
-- [[Per-domain configuration overrides.]] - rationale - gateway/proxy/web_config.py
-- [[Proxy works without an audit chain.]] - rationale - gateway/tests/test_web_proxy.py
-- [[RateLimiter]] - code - gateway/proxy/web_proxy.py
-- [[Simple in-memory per-domain rate limiter using sliding window.]] - rationale - gateway/proxy/web_proxy.py
-- [[Single zero-width chars are normal (e.g., word joiners).]] - rationale - gateway/tests/test_web_proxy.py
-- [[TestAuditChain_1]] - code - gateway/tests/test_web_proxy.py
-- [[TestContentTypeFiltering]] - code - gateway/tests/test_web_proxy.py
-- [[TestDataExfiltration_1]] - code - gateway/tests/test_web_proxy.py
-- [[TestDomainDenylist]] - code - gateway/tests/test_web_proxy.py
-- [[TestEncodedPayloads]] - code - gateway/tests/test_web_proxy.py
-- [[TestHiddenContent]] - code - gateway/tests/test_web_proxy.py
-- [[TestIsDomainAllowed]] - code - gateway/tests/test_web_proxy.py
-- [[TestPIIDetection_2]] - code - gateway/tests/test_web_proxy.py
-- [[TestPassthroughMode]] - code - gateway/tests/test_web_proxy.py
-- [[TestPromptInjectionDetection]] - code - gateway/tests/test_web_proxy.py
-- [[TestRateLimiting_1]] - code - gateway/tests/test_web_proxy.py
-- [[TestResponseSizeLimits]] - code - gateway/tests/test_web_proxy.py
-- [[TestStats_1]] - code - gateway/tests/test_web_proxy.py
-- [[TestWebProxyConfig]] - code - gateway/tests/test_web_proxy.py
-- [[TestZeroWidthAttacks]] - code - gateway/tests/test_web_proxy.py
-- [[URLAnalyzer]] - code
-- [[Unit tests for WebProxyConfig.is_domain_allowed().]] - rationale - gateway/tests/test_web_proxy.py
-- [[WebProxy]] - code - gateway/proxy/web_proxy.py
-- [[WebProxy_1]] - code - gateway/proxy/http_proxy.py
-- [[WebProxyConfig]] - code - gateway/proxy/web_config.py
-- [[WebProxyConfig_1]] - code
-- [[_TimeoutReader]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[audit_chain()]] - code - gateway/tests/test_web_proxy.py
-- [[config()_1]] - code - gateway/tests/test_web_proxy.py
-- [[hc-ping.com must be egress-allowlisted or Hermes dead-man's-switch heartbeat fires permanently]] - rationale - gateway/tests/test_heartbeat_egress.py
-- [[http_proxy.py]] - code - gateway/proxy/http_proxy.py
-- [[passthrough_proxy()]] - code - gateway/tests/test_web_proxy.py
-- [[proxy()_2]] - code - gateway/tests/test_web_proxy.py
-- [[readline() always raises TimeoutError — simulates a stalled client.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[test_hc_ping_allowed()]] - code - gateway/tests/test_heartbeat_egress.py
-- [[test_hc_ping_subdomain_not_blocked()]] - code - gateway/tests/test_heartbeat_egress.py
-- [[test_heartbeat_egress.py]] - code - gateway/tests/test_heartbeat_egress.py
-- [[test_telegram_api_blocked_in_connect_proxy()]] - code - gateway/tests/test_http_proxy.py
-- [[test_web_proxy.py]] - code - gateway/tests/test_web_proxy.py
-- [[web_config.py]] - code - gateway/proxy/web_config.py
+- [[dot-__init__()_178]] - code - gateway/soc/websocket.py
+- [[dot-__init__()_179]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-setup_method()_30]] - code - gateway/tests/test_soc_auth.py
+- [[dot-setup_method()_31]] - code - gateway/tests/test_soc_auth.py
+- [[dot-subscribe()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_allowed()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_bearer_header_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_bearer_header_valid()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_blocked()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_conversion_error_path()_1]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_conversion_error_path()_2]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_conversion_error_path()_3]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_cookie_raw_bearer_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_dict_form()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_different_keys_produce_different_tokens()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_different_owners_produce_different_tokens()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_empty_first_file_falls_to_second()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_empty_token_or_config()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_empty_token_rejected()_1]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_expired_token_rejected()_1]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_explicit_env_wins()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_fan_out_filters_and_forwards()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_fan_out_survives_coerce_exception()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_full_dict()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_get_rbac_manager_builds_real_manager()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_handler_exception_is_swallowed()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_invalid_token_closes_4003()_1]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_invalid_token_rejected()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_issue_and_redeem()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_issue_returns_hex_string()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_issue_session_token_prunes_expired()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_issue_ws_token_prunes_expired()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_keepalive_sends_pings()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_legacy_env_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_match()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_minimal_dict_uses_fallbacks()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_mismatch()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_missing_first_file_falls_to_second()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_multiple_tokens_independent()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_no_credentials_raises_401()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_no_sources_returns_empty()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_none_bus_returns_immediately()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_object_form_with_defaults()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_raw_gateway_password_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_redeem_expired_ws_token_returns_none()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_sanitized()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_session_cookie_valid()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_single_use()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_token_file_env()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_unauthorized_closes_4003()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_valid_ws_token_accepts()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_verify_after_clear_returns_none()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_verify_expired_token_returns_none()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_verify_unknown_token_returns_none()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_verify_valid_token()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_wrong_bearer_raises_401()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_x_soc_token_header_valid()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-unsubscribe()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[Clear token store before each test.]] - rationale - gateway/tests/test_soc_auth.py
+- [[Constant-time comparison against the gateway shared secret.]] - rationale - gateway/soc/auth.py
+- [[Consume a WS token and return the user_id, or None if invalidexpired.]] - rationale - gateway/soc/auth.py
+- [[Coverage tests for gatewaysocwebsocket.py, event_adapter.py and auth.py.…]] - rationale - gateway/tests/test_soc_realtime_coverage.py
+- [[Derive an HMAC session token and register it in the session store.]] - rationale - gateway/soc/auth.py
+- [[FastAPI WebSocket route handler for wssoc.]] - rationale - gateway/soc/websocket.py
+- [[FastAPI dependency resolve Bearercookie token → user_id → role.]] - rationale - gateway/soc/auth.py
+- [[Issue a short-lived, single-use WebSocket token for a user.]] - rationale - gateway/soc/auth.py
+- [[Make runsecrets reads deterministic (raise OSError) on any host.]] - rationale - gateway/tests/test_soc_realtime_coverage.py
+- [[Read the gateway auth token from envsecret. Resolution order (matches…]] - rationale - gateway/soc/auth.py
+- [[Remove all gateway-password env vars and clear token stores.]] - rationale - gateway/tests/test_soc_realtime_coverage.py
+- [[Return user_id if token is a valid unexpired session token, else None.]] - rationale - gateway/soc/auth.py
+- [[TestEventFanOut]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestFromAnomalyAlert]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestFromDict]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestFromPipelineResult]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestGetConfigToken]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestResolveCaller]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestSessionTokens]] - code - gateway/tests/test_soc_auth.py
+- [[TestTokenStorePruning]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestVerifyBearer]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestWSSOCEndpoint]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestWSTokens]] - code - gateway/tests/test_soc_auth.py
+- [[Tests for gatewaysocauth.py — SCL authentication and WS token issuance.]] - rationale - gateway/tests/test_soc_auth.py
+- [[WebSocket_6]] - code
+- [[_FakeBus]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[_block_run_secrets()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[_get_config_token()]] - code - gateway/soc/auth.py
+- [[_get_rbac_manager()]] - code - gateway/soc/auth.py
+- [[_make_ws()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[_resolve_caller()]] - code - gateway/soc/auth.py
+- [[_spin()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[_verify_bearer()]] - code - gateway/soc/auth.py
+- [[_verify_session_token()]] - code - gateway/soc/auth.py
+- [[blocked()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[clean_auth_env()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[fixture_116]] - code
+- [[fragile()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[guarded_open()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[issue_session_token()]] - code - gateway/soc/auth.py
+- [[issue_ws_token()]] - code - gateway/soc/auth.py
+- [[redeem_ws_token()]] - code - gateway/soc/auth.py
+- [[soc_websocket()]] - code - gateway/soc/router.py
+- [[test_soc_auth.py]] - code - gateway/tests/test_soc_auth.py
+- [[test_soc_realtime_coverage.py]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[title()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[websocket_5]] - code
+- [[ws_soc_endpoint()]] - code - gateway/soc/websocket.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -138,27 +123,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 31 edges to [[_COMMUNITY_scanner_integration.py]]
-- 24 edges to [[_COMMUNITY__pcm_bytes]]
-- 17 edges to [[_COMMUNITY_AuditChain]]
-- 16 edges to [[_COMMUNITY_HTTPConnectProxy]]
-- 8 edges to [[_COMMUNITY_TestAllowlistMode]]
-- 6 edges to [[_COMMUNITY_Usage]]
-- 5 edges to [[_COMMUNITY_AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap]]
-- 4 edges to [[_COMMUNITY_GitHub Skill]]
-- 3 edges to [[_COMMUNITY_test_main_endpoints.py]]
-- 3 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
-- 2 edges to [[_COMMUNITY_DelegationManager]]
-- 1 edge to [[_COMMUNITY_Common Queries]]
-- 1 edge to [[_COMMUNITY_TestDataExfiltration]]
-- 1 edge to [[_COMMUNITY_colima-health-check.sh]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager]]
-- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
-- 1 edge to [[_COMMUNITY_Enum]]
+- 33 edges to [[_COMMUNITY_socrouter.py]]
+- 23 edges to [[_COMMUNITY_socmodels.py]]
+- 5 edges to [[_COMMUNITY_AsyncMock]]
+- 5 edges to [[_COMMUNITY_middleware.py]]
+- 3 edges to [[_COMMUNITY__audit_entry]]
+- 1 edge to [[_COMMUNITY_dot-_handler]]
+- 1 edge to [[_COMMUNITY_fastapi]]
 
 ## Top bridge nodes
-- [[WebProxy]] - degree 70, connects to 8 communities
-- [[http_proxy.py]] - degree 15, connects to 8 communities
-- [[WebProxyConfig]] - degree 71, connects to 6 communities
-- [[test_web_proxy.py]] - degree 27, connects to 4 communities
-- [[RateLimiter]] - degree 26, connects to 3 communities
+- [[test_soc_realtime_coverage.py]] - degree 54, connects to 6 communities
+- [[ws_soc_endpoint()]] - degree 16, connects to 3 communities
+- [[redeem_ws_token()]] - degree 14, connects to 2 communities
+- [[_get_config_token()]] - degree 12, connects to 2 communities
+- [[TestResolveCaller]] - degree 11, connects to 2 communities

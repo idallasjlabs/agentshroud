@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 0.29
 members: 10
 ---
 
 # skills/icloud/scripts/calendar.js
 
-**Cohesion:** 0.29 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[CONFIG_2]] - code - .agents/skills/icloud/scripts/calendar.js
+- [[CONFIG]] - code - .agents/skills/icloud/scripts/calendar.js
 - [[args]] - code - .agents/skills/icloud/scripts/calendar.js
 - [[createEvent()]] - code - .agents/skills/icloud/scripts/calendar.js
 - [[getCredentials()]] - code - .agents/skills/icloud/scripts/calendar.js

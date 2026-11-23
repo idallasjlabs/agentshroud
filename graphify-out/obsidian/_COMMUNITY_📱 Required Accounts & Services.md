@@ -1,24 +1,22 @@
 ---
 type: community
-cohesion: 0.22
 members: 9
 ---
 
 # 📱 Required Accounts & Services
 
-**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members
-- [[4. Defense-in-Depth Container Security]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.1 Build-Time Image Scanning (Trivy)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.2 Runtime Malware Detection (ClamAV)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.3 Runtime Syscall Monitoring (Falco)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.4 Host Integrity Monitoring (Wazuh)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.5 Compliance Scanning (OpenSCAP)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.6 Daily Security Health Report]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.7 Zero-Configuration Security]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.8 Container Security — Competitive Comparison]] - document - docs/papers/agentshroud-whitepaper.md
+- [[1. Phone Number (Separate from Main)]] - document - docs/reference/PREREQUISITES.md
+- [[1Password (Optional — Teams  Shared Credentials)]] - document - docs/reference/PREREQUISITES.md
+- [[2. Gmail Account (Dedicated for Bot)]] - document - docs/reference/PREREQUISITES.md
+- [[3. Telegram Account (Bot Communication)]] - document - docs/reference/PREREQUISITES.md
+- [[4. Secrets Backend (Credential Management)]] - document - docs/reference/PREREQUISITES.md
+- [[5. OpenAI Account (LLM API)]] - document - docs/reference/PREREQUISITES.md
+- [[6. Anthropic Account (Claude API)]] - document - docs/reference/PREREQUISITES.md
+- [[macOS Keychain (Default)]] - document - docs/reference/PREREQUISITES.md
+- [[📱 Required Accounts & Services]] - document - docs/reference/PREREQUISITES.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_MiddlewareManager (9)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Prerequisites]]
 
 ## Top bridge nodes
-- [[4. Defense-in-Depth Container Security]] - degree 9, connects to 1 community
+- [[📱 Required Accounts & Services]] - degree 7, connects to 1 community

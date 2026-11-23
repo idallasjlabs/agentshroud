@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # toggle-readonly.sh
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[agentshroud-redteamreferencessteve-hay-assessment]] - document - skills/custom/agentshroud-redteam/references/steve-hay-assessment.md
-- [[feature-priorities_3]] - document - skills/custom/agentshroud-redteam/references/steve-hay-assessment.md
+- [[toggle-readonly.sh]] - code - docker/scripts/toggle-readonly.sh
+- [[toggle-readonly.sh script]] - code - docker/scripts/toggle-readonly.sh
 
 ## Live Query (requires Dataview plugin)
 

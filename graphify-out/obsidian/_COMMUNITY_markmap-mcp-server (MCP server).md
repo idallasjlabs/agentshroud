@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # markmap-mcp-server (MCP server)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[GitHub MCP Server (concept)]] - concept - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[markmap-mcp-server (MCP server)]] - concept - docker/config/hermes/skills/i-mm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

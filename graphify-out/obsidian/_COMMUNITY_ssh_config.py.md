@@ -1,30 +1,25 @@
 ---
 type: community
-cohesion: 0.13
-members: 15
+members: 12
 ---
 
 # ssh_config.py
 
-**Cohesion:** 0.13 - loosely connected
-**Members:** 15 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[AgentShroud Minimal Docker Compose]] - document - examples/docker-compose.minimal.yml
-- [[AgentShroud Production Docker Compose]] - document - examples/docker-compose.production.yml
-- [[Container management_1]] - document - examples/docker-commands.md
-- [[Container status_1]] - document - examples/docker-commands.md
-- [[Debugging read-only filesystem errors]] - document - examples/docker-commands.md
-- [[Docker Commands Reference]] - document - examples/docker-commands.md
-- [[Exec into containers]] - document - examples/docker-commands.md
-- [[Logs_3]] - document - examples/docker-commands.md
-- [[Networking_1]] - document - examples/docker-commands.md
-- [[OpenClaw CLI commands (run inside agentshroud-bot)]] - document - examples/docker-commands.md
-- [[Reading files from containers]] - document - examples/docker-commands.md
-- [[Secrets inspection (read-only check)]] - document - examples/docker-commands.md
-- [[Volume management]] - document - examples/docker-commands.md
-- [[Writing files to containers]] - document - examples/docker-commands.md
-- [[docker-commands]] - document - examples/docker-commands.md
+- [[Config Keys Read_8]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
+- [[Environment Variables Used_8]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
+- [[Imports From  Exports To_8]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
+- [[Key Classes  Functions_38]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
+- [[Known Issues  Notes_8]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
+- [[Purpose_57]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
+- [[Related_39]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
+- [[Responsibilities_38]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
+- [[SSHConfig Fields]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
+- [[SSHHostConfig Fields]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
+- [[ssh_config.py_1]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
+- [[ssh_config.py]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,7 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Restart Procedure]]
+- 1 edge to [[_COMMUNITY_Architecture Overview]]
 
 ## Top bridge nodes
-- [[AgentShroud Production Docker Compose]] - degree 3, connects to 1 community
+- [[ssh_config.py]] - degree 2, connects to 1 community

@@ -1,16 +1,15 @@
 ---
 type: community
-cohesion: 1.00
-members: 1
+members: 2
 ---
 
 # ingest_api/__init__.py
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[SOC Models ServiceDescriptor Tests]] - code - gateway/tests/test_soc_models.py
+- [[Ingest API Package - FastAPI application for content ingestion and PII…]] - rationale - gateway/ingest_api/__init__.py
+- [[ingest_api__init__.py]] - code - gateway/ingest_api/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

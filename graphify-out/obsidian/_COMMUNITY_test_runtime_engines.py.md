@@ -1,49 +1,61 @@
 ---
 type: community
-cohesion: 0.11
-members: 34
+members: 48
 ---
 
 # test_runtime_engines.py
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 34 nodes
+**Members:** 48 nodes
 
 ## Members
-- [[dot-__init__()_103]] - code - gateway/security/config_integrity.py
-- [[dot-_hash_file()]] - code - gateway/security/config_integrity.py
-- [[dot-_load_baseline()]] - code - gateway/security/config_integrity.py
-- [[dot-_save_baseline()]] - code - gateway/security/config_integrity.py
-- [[dot-check()_4]] - code - gateway/security/config_integrity.py
-- [[dot-format_alert_text()]] - code - gateway/security/config_integrity.py
-- [[dot-reset_baseline()]] - code - gateway/security/config_integrity.py
-- [[Accept current file hashes as the new baseline (owner-acknowledged rebuild).]] - rationale - gateway/security/config_integrity.py
-- [[Compare current file hashes against baseline.          Returns a list of change]] - rationale - gateway/security/config_integrity.py
-- [[Computes and verifies SHA256 hashes of monitored bot config files.      At gatew]] - rationale - gateway/security/config_integrity.py
-- [[ConfigIntegrityMonitor]] - code - gateway/security/config_integrity.py
-- [[Format Telegram alert text for detected config changes.]] - rationale - gateway/security/config_integrity.py
-- [[Load the last known baseline from disk. Returns empty dict if not found.]] - rationale - gateway/security/config_integrity.py
-- [[Path_26]] - code - gateway/security/config_integrity.py
-- [[Persist the current hashes as the new baseline.]] - rationale - gateway/security/config_integrity.py
-- [[Return (bot_config_dir, baseline_path) rooted in an isolated tmp dir.]] - rationale - gateway/tests/test_config_integrity_monitor.py
-- [[Return hex SHA256 of a file, or None if the file does not exist.]] - rationale - gateway/security/config_integrity.py
-- [[_write_openclaw()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[dirs()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_added_file_is_detected()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_baseline_advances_only_when_clean()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_config_integrity_monitor.py]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_first_boot_establishes_baseline_without_alerts()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_format_alert_text_handles_missing_hashes()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_format_alert_text_includes_event_and_hash_prefixes()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_hash_file_is_stable_and_content_sensitive()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_hash_file_returns_none_for_missing()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_load_baseline_missing_file_returns_empty()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_load_baseline_tolerates_corrupt_json()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_modified_file_is_detected()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_removed_file_is_detected()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_reset_baseline_accepts_current_state()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_tamper_baseline_is_not_advanced_so_alert_refires()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_unchanged_second_run_reports_no_changes()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[dot-client()_1]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-client()_2]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-client()_3]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-client()_4]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_apple_script_custom_services()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_compose_depends_on()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_compose_has_security_opts()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_compose_healthcheck()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_dashboard_page()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_generate_apple_script()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_generate_custom_services()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_generate_docker_compose()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_generate_podman_compose()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_get_features_apple()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_get_features_docker()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_get_features_podman()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_install()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_installer_page()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_missing_features()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_prerequisites()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_put_then_get()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_runtimes()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_security_comparison()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_security_options_apple()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_security_options_docker()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_security_options_podman()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_security_options_unknown()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_warn_missing()]] - code - gateway/tests/test_runtime_engines.py
+- [[Definition of a single service for compose generation.]] - rationale - gateway/runtime/compose_generator.py
+- [[Generate a compose YAML file for Docker or Podman. Args services List of…]] - rationale - gateway/runtime/compose_generator.py
+- [[Generate a shell script to start services with Apple Containers. Apple…]] - rationale - gateway/runtime/compose_generator.py
+- [[Installer must not fake completion SCRUM-107. The endpoint has no automated…]] - rationale - gateway/tests/test_runtime_engines.py
+- [[Return features available for a given runtime.]] - rationale - gateway/runtime/security.py
+- [[Return recommended security CLI options for a runtime.]] - rationale - gateway/runtime/security.py
+- [[ServiceDef]] - code - gateway/runtime/compose_generator.py
+- [[TestComposeGenerator]] - code - gateway/tests/test_runtime_engines.py
+- [[TestConfigRoundTrip]] - code - gateway/tests/test_runtime_engines.py
+- [[TestInstallerAPI]] - code - gateway/tests/test_runtime_engines.py
+- [[TestManagementPage]] - code - gateway/tests/test_runtime_engines.py
+- [[TestSecurityFeatures]] - code - gateway/tests/test_runtime_engines.py
+- [[Tests for multi-runtime container abstraction layer. Covers all three engines…]] - rationale - gateway/tests/test_runtime_engines.py
+- [[compose_generator.py_2]] - code - gateway/runtime/compose_generator.py
+- [[fixture_37]] - code
+- [[generate_apple_script()]] - code - gateway/runtime/compose_generator.py
+- [[generate_compose()]] - code - gateway/runtime/compose_generator.py
+- [[get_features_for_runtime()]] - code - gateway/runtime/security.py
+- [[get_security_options()]] - code - gateway/runtime/security.py
+- [[test_runtime_engines.py]] - code - gateway/tests/test_runtime_engines.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -53,7 +65,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_HeuristicClassifier]]
+- 13 edges to [[_COMMUNITY_api.py]]
+- 10 edges to [[_COMMUNITY_patch]]
+- 3 edges to [[_COMMUNITY_AppleContainerEngine]]
+- 1 edge to [[_COMMUNITY_PodmanEngine]]
+- 1 edge to [[_COMMUNITY_DockerEngine]]
+- 1 edge to [[_COMMUNITY_test_web_api_coverage.py]]
 
 ## Top bridge nodes
-- [[ConfigIntegrityMonitor]] - degree 24, connects to 1 community
+- [[test_runtime_engines.py]] - degree 30, connects to 6 communities
+- [[get_features_for_runtime()]] - degree 8, connects to 1 community
+- [[get_security_options()]] - degree 8, connects to 1 community
+- [[dot-test_runtimes()]] - degree 2, connects to 1 community
+- [[dot-test_missing_features()]] - degree 2, connects to 1 community

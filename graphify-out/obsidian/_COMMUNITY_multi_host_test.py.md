@@ -1,25 +1,28 @@
 ---
 type: community
-cohesion: 0.20
-members: 10
+members: 15
 ---
 
 # multi_host_test.py
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 10 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[dot-test_anthropic_default_strips_x_api_key()]] - code - gateway/tests/test_credential_injector.py
-- [[dot-test_credential_injected_into_request()]] - code - gateway/tests/test_credential_injector.py
-- [[dot-test_credential_not_injected_for_unknown_domain()]] - code - gateway/tests/test_credential_injector.py
-- [[dot-test_has_credential_false_for_missing()]] - code - gateway/tests/test_credential_injector.py
-- [[dot-test_has_credential_true_for_loaded()]] - code - gateway/tests/test_credential_injector.py
-- [[dot-test_injection_disabled()]] - code - gateway/tests/test_credential_injector.py
-- [[dot-test_strip_headers_removes_conflicting_header()]] - code - gateway/tests/test_credential_injector.py
-- [[Default Anthropic mapping must strip x-api-key (regression guard).]] - rationale - gateway/tests/test_credential_injector.py
-- [[TestCredentialInjection]] - code - gateway/tests/test_credential_injector.py
-- [[strip_headers must remove x-api-key before injecting Authorization Bearer.]] - rationale - gateway/tests/test_credential_injector.py
+- [[dot-test_argv_shape()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_custom_user()]] - code - gateway/tests/test_multi_host_test.py
+- [[Build the ssh argv for a host. Non-interactive, fail-fast on connect.…]] - rationale - gateway/tools/multi_host_test.py
+- [[Describe exactly what would run, without executing anything.]] - rationale - gateway/tools/multi_host_test.py
+- [[Enum_7]] - code
+- [[HostStatus]] - code - gateway/tools/multi_host_test.py
+- [[Outcome classification for a single host.]] - rationale - gateway/tools/multi_host_test.py
+- [[TestBuildSshArgv]] - code - gateway/tests/test_multi_host_test.py
+- [[Turn argparse REMAINDER tokens into a command string. Drops a leading ``--``…]] - rationale - gateway/tools/multi_host_test.py
+- [[_dry_run_report()]] - code - gateway/tools/multi_host_test.py
+- [[_resolve_command()]] - code - gateway/tools/multi_host_test.py
+- [[_run()_1]] - code - gateway/tools/multi_host_test.py
+- [[build_ssh_argv()]] - code - gateway/tools/multi_host_test.py
+- [[multi_host_test.py]] - code - gateway/tools/multi_host_test.py
+- [[str_3]] - code
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,11 +32,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_setup-https-proxy.js]]
-- 1 edge to [[_COMMUNITY_test_voice_latency_guard.py (2)]]
+- 5 edges to [[_COMMUNITY_test_multi_host_test.py]]
+- 5 edges to [[_COMMUNITY_main]]
+- 4 edges to [[_COMMUNITY_MultiHostResult]]
+- 3 edges to [[_COMMUNITY_classify]]
+- 2 edges to [[_COMMUNITY_run_multi_host]]
+- 1 edge to [[_COMMUNITY_parse_hosts]]
+- 1 edge to [[_COMMUNITY_tail]]
 
 ## Top bridge nodes
-- [[TestCredentialInjection]] - degree 9, connects to 2 communities
-- [[dot-test_anthropic_default_strips_x_api_key()]] - degree 3, connects to 1 community
-- [[dot-test_strip_headers_removes_conflicting_header()]] - degree 3, connects to 1 community
-- [[dot-test_injection_disabled()]] - degree 2, connects to 1 community
+- [[multi_host_test.py]] - degree 15, connects to 7 communities
+- [[HostStatus]] - degree 10, connects to 4 communities
+- [[build_ssh_argv()]] - degree 7, connects to 1 community
+- [[_dry_run_report()]] - degree 4, connects to 1 community
+- [[TestBuildSshArgv]] - degree 3, connects to 1 community

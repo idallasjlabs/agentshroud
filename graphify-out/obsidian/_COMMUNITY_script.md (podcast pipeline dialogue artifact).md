@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # script.md (podcast pipeline dialogue artifact)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[CLAUDE.md as the repo constitution]] - rationale - .llm_settings/docs/Claude-Code-TDD-Playbook.md
+- [[script.md (podcast pipeline dialogue artifact)]] - concept - docker/config/hermes/skills/i-mnemosyne/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

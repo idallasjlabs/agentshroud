@@ -1,18 +1,16 @@
 ---
 type: community
-cohesion: 0.67
 members: 3
 ---
 
 # test_bot_boot_live.sh
 
-**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[Test Kill Switch Monitor]] - code - gateway/tests/test_killswitch_monitor.py
-- [[Test Kill Switch Script Modes]] - code - gateway/tests/test_killswitch_modes.py
-- [[Test Observatory Mode API and Kill Switch Verification]] - code - gateway/tests/test_observatory_mode.py
+- [[check()_9]] - code - tests/startup_smoke/test_bot_boot_live.sh
+- [[test_bot_boot_live.sh]] - code - tests/startup_smoke/test_bot_boot_live.sh
+- [[test_bot_boot_live.sh script]] - code - tests/startup_smoke/test_bot_boot_live.sh
 
 ## Live Query (requires Dataview plugin)
 

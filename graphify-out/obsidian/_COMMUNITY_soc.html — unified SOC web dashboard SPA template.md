@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # soc.html — unified SOC web dashboard SPA template
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[PIISanitizer.block_credentials]] - code - gateway/ingest_api/sanitizer.py
+- [[soc.html — unified SOC web dashboard SPA template]] - document - gateway/soc/templates/soc.html
 
 ## Live Query (requires Dataview plugin)
 

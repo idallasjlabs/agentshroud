@@ -1,38 +1,28 @@
 ---
 type: community
-cohesion: 0.09
-members: 23
+members: 15
 ---
 
 # mcp_inspector.py
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 23 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[Also in v0.9.0]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Blocked By]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Components]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Current Execution Tracker (2026-03-14)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Current hard gate]] - document - docs/planning/RELEASE-PLAN.md
-- [[Current status snapshot]] - document - docs/planning/RELEASE-PLAN.md
-- [[Dependencies_12]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Goal]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Key Changes (2026-03-04 1216 UTC)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Key Changes (2026-04-08)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Live tracker files]] - document - docs/planning/RELEASE-PLAN.md
-- [[Milestones]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Prerequisites_4]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Secure Voice Conversations (ElevenLabs + Twilio)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Status_1]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Success Criteria_2]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Summary_13]] - document - docs/planning/RELEASE-PLAN.md
-- [[v0.8.0-release-plan]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[v0.9.0 — Apple Messages Integration]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[v0.9.0-release-plan]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[v1.1.0 Groups — Workspaces for Teams (6 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[v1.2.0 Local LLMs — Offline Model Support (4 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🛡️ AgentShroud Release Plan]] - document - docs/planning/RELEASE-PLAN.md
+- [[Configuration  Environment Variables_7]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Detection Patterns]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Function Details_15]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Key Classes  Functions_17]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[MCPInspector._redact_pii(value)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[MCPInspector._scan_text(text, path, findings, ...)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[MCPInspector._scan_value(value, path, findings, ...)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[MCPInspector._should_block(findings)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[MCPInspector.inspect_tool_call(tool_name, params, check_injection, check_pii, check_encoding, check_sensitive)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[MCPInspector.inspect_tool_result(tool_name, result_content, check_pii, check_encoding)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Purpose_18]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Related_17]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Responsibilities_17]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[mcp_inspector.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[mcp_inspector.py]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,16 +30,3 @@ members: 23
 TABLE source_file, type FROM #community/mcp_inspectorpy
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Restart Procedure (2)]]
-- 1 edge to [[_COMMUNITY_First Time Setup (2)_1]]
-- 1 edge to [[_COMMUNITY_AgentShroud Weekly Upgrade — 2026-09-06 (2)]]
-- 1 edge to [[_COMMUNITY_Flip core security modules from monitor to enforce mode]]
-- 1 edge to [[_COMMUNITY_mcp_audit.py]]
-- 1 edge to [[_COMMUNITY_3. Remaining Work — Prioritized by Value]]
-- 1 edge to [[_COMMUNITY_test-sunday-upgrade-scan.sh]]
-- 1 edge to [[_COMMUNITY_AsyncMock (2)]]
-
-## Top bridge nodes
-- [[🛡️ AgentShroud Release Plan]] - degree 18, connects to 8 communities

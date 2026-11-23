@@ -1,16 +1,15 @@
 ---
 type: community
-cohesion: 1.00
-members: 1
+members: 2
 ---
 
 # soc/__init__.py
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[detect_runtime]] - code - gateway/runtime/__init__.py
+- [[AgentShroud SOC — Shared Command Layer (SCL) for v0.9.0. Provides the socv1…]] - rationale - gateway/soc/__init__.py
+- [[soc__init__.py]] - code - gateway/soc/__init__.py
 
 ## Live Query (requires Dataview plugin)
 
