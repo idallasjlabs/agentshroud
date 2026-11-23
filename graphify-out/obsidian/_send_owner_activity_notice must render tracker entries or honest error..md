@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 436"
+community: ".test_activity_command_renders_entries"
 location: "L4790"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_436
+  - community/test_activity_command_renders_entries
 ---
 
 # _send_owner_activity_notice must render tracker entries or honest error.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOwnerActivityNotice]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_436
+#graphify/rationale #graphify/EXTRACTED #community/test_activity_command_renders_entries

@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Community 67"
+community: "test_scanner_integration.py"
 location: "L1034"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_67
+  - community/test_scanner_integrationpy
 ---
 
 # _score_runtime_protection()
 
 ## Connections
-- [[.test_initial_when_not_run()_1]] - `calls` [EXTRACTED]
-- [[.test_managed_when_has_criticals()]] - `calls` [EXTRACTED]
-- [[.test_optimizing_when_clean_zero_findings()]] - `calls` [EXTRACTED]
-- [[Any_64]] - `references` [EXTRACTED]
-- [[Score domain 5 Runtime Protection (0-5).      1=module exists, 2=running with c]] - `rationale_for` [EXTRACTED]
+- [[dot-test_initial_when_not_run()_2]] - `calls` [EXTRACTED]
+- [[dot-test_managed_when_has_criticals()]] - `calls` [EXTRACTED]
+- [[dot-test_optimizing_when_clean_zero_findings()]] - `calls` [EXTRACTED]
+- [[Any_65]] - `references` [EXTRACTED]
+- [[Score domain 5 Runtime Protection (0-5). 1=module exists, 2=running with…]] - `rationale_for` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_67
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

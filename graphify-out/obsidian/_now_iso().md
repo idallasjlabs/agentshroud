@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 38"
+community: "soc/models.py"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/soc/modelspy
 ---
 
 # _now_iso()
 
 ## Connections
-- [[models.py_1]] - `contains` [EXTRACTED]
+- [[socmodels.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_38
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

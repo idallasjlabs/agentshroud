@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "Community 118"
+community: "upgrade-2026-09-21.md"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_118
+  - graphify/EXTRACTED
+  - community/upgrade-2026-09-21md
 ---
 
 # _read_running_version_str
@@ -14,4 +14,4 @@ tags:
 - [[check-version-pins-parity.sh]] - `semantically_similar_to` [INFERRED]
 - [[versions.env]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_118
+#graphify/code #graphify/EXTRACTED #community/upgrade-2026-09-21md

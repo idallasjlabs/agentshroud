@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/init-openclaw-config.sh"
 type: "code"
-community: "Community 2173"
+community: "init-openclaw-config.sh"
 location: "L495"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2173
+  - community/init-openclaw-configsh
 ---
 
 # _oc_config_set()
@@ -15,4 +15,4 @@ tags:
 - [[init-openclaw-config.sh]] - `defines` [EXTRACTED]
 - [[init-openclaw-config.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2173
+#graphify/code #graphify/EXTRACTED #community/init-openclaw-configsh

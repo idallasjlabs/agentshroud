@@ -1,22 +1,22 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "Community 74"
+community: "sync-cve-registry.py"
 location: "L672"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_74
+  - community/sync-cve-registrypy
 ---
 
 # _run_nvd_sync()
 
 ## Connections
 - [[Namespace_1]] - `references` [EXTRACTED]
-- [[Report the NVD keyword backlog for OpenClaw + Hermes. Writes NOTHING.      The N]] - `rationale_for` [EXTRACTED]
+- [[Report the NVD keyword backlog for OpenClaw + Hermes. Writes NOTHING. The NVD…]] - `rationale_for` [EXTRACTED]
 - [[_nvd_backlog()]] - `calls` [EXTRACTED]
 - [[fetch_nvd_cves()]] - `calls` [EXTRACTED]
-- [[main()_29]] - `calls` [EXTRACTED]
+- [[main()_34]] - `calls` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_74
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

@@ -1,20 +1,20 @@
 ---
 source_file: "docker/bots/hermes/dashboard_bridge.py"
 type: "code"
-community: "Community 591"
+community: "_handle"
 location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_591
+  - community/_handle
 ---
 
 # _read_request_headers()
 
 ## Connections
-- [[Read up to the end of the request's header block (rnrn).      Returns (h]] - `rationale_for` [EXTRACTED]
-- [[StreamReader]] - `references` [EXTRACTED]
-- [[_handle()]] - `calls` [EXTRACTED]
+- [[Read up to the end of the request's header block (rnrn). Returns…]] - `rationale_for` [EXTRACTED]
+- [[StreamReader_1]] - `references` [EXTRACTED]
+- [[_handle()_4]] - `calls` [EXTRACTED]
 - [[dashboard_bridge.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_591
+#graphify/code #graphify/EXTRACTED #community/_handle

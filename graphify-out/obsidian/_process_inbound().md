@@ -1,28 +1,25 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Community 2154"
+community: "ingest_api/models.py"
 location: "L386"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2154
+  - community/ingest_api/modelspy
 ---
 
 # _process_inbound()
 
 ## Connections
-- [[ForwardRequest]] - `shares_data_with` [EXTRACTED]
-- [[ForwardRequest_2]] - `references` [EXTRACTED]
-- [[HTTPException]] - `calls` [INFERRED]
-- [[MiddlewareManager.process_request()]] - `calls` [EXTRACTED]
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
-- [[Request_5]] - `references` [EXTRACTED]
-- [[SecurityPipeline]] - `calls` [EXTRACTED]
-- [[Target resolution + P1 middleware + inbound security pipeline —     shared by th]] - `rationale_for` [EXTRACTED]
-- [[_InboundResult]] - `references` [EXTRACTED]
+- [[ForwardRequest]] - `uses` [INFERRED]
+- [[RBACConfig]] - `calls` [EXTRACTED]
+- [[Request_3]] - `references` [EXTRACTED]
+- [[Target resolution + P1 middleware + inbound security pipeline — shared by the…]] - `rationale_for` [EXTRACTED]
+- [[_InboundResult]] - `calls` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]
 - [[forward_content()]] - `calls` [EXTRACTED]
 - [[forward_content_stream()]] - `calls` [EXTRACTED]
+- [[source()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2154
+#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy

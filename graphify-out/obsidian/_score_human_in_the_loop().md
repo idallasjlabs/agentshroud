@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Community 29"
+community: "scanner_integration.py"
 location: "L1990"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_29
+  - community/scanner_integrationpy
 ---
 
 # _score_human_in_the_loop()
 
 ## Connections
-- [[Score domain 31 Human-in-the-Loop Controls (0-5). NIST AI RMF MANAGE, ISO 42001]] - `rationale_for` [EXTRACTED]
+- [[Score domain 31 Human-in-the-Loop Controls (0-5). NIST AI RMF MANAGE, ISO…]] - `rationale_for` [EXTRACTED]
 - [[_app_state_has()]] - `calls` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_29
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

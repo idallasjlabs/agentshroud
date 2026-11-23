@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "Community 47"
+community: "test_forward_stream.py"
 location: "L324"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_47
+  - community/test_forward_streampy
 ---
 
 # _post_stream()
 
 ## Connections
+- [[app()]] - `indirect_call` [INFERRED]
 - [[test_forward_stream.py]] - `contains` [EXTRACTED]
 - [[test_forward_stream_503_when_no_pipeline_configured()]] - `calls` [EXTRACTED]
 - [[test_forward_stream_drops_credential_bearing_sentence()]] - `calls` [EXTRACTED]
@@ -23,4 +24,4 @@ tags:
 - [[test_forward_stream_returns_early_response_when_queued_for_approval()]] - `calls` [EXTRACTED]
 - [[test_forward_stream_unexpected_error_still_emits_done_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_47
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

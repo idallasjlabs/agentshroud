@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "Community 420"
+community: "plan_remediation"
 location: "L287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_420
+  - community/plan_remediation
 ---
 
 # _print_plan()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[RemediationPlan]] - `references` [EXTRACTED]
 - [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
-- [[main()_17]] - `calls` [EXTRACTED]
+- [[main()_24]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_420
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

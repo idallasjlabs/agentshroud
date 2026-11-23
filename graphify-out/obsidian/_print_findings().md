@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/skills/scan.py"
 type: "code"
-community: "Community 924"
+community: "ScanResult"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_924
+  - community/ScanResult
 ---
 
 # _print_findings()
 
 ## Connections
-- [[ScanResult_3]] - `references` [EXTRACTED]
-- [[main()_15]] - `calls` [EXTRACTED]
+- [[ScanResult_2]] - `uses` [INFERRED]
+- [[main()_37]] - `calls` [EXTRACTED]
 - [[scan.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_924
+#graphify/code #graphify/EXTRACTED #community/ScanResult

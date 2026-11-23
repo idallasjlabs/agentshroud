@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/llm-init.sh"
 type: "code"
-community: "scripts/render-agents.sh (agents-src -> .llm_settings)"
+community: "llm-init.sh"
 location: "L797"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/render-agentssh_agents-src_-_llm_settings
+  - community/llm-initsh
 ---
 
 # _llm_init_render_gmail()
@@ -15,4 +15,4 @@ tags:
 - [[_llm_init_render_mcp()]] - `calls` [EXTRACTED]
 - [[llm-init.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/render-agentssh_agents-src_-_llm_settings
+#graphify/code #graphify/EXTRACTED #community/llm-initsh

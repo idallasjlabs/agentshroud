@@ -1,18 +1,21 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
+source_file: ".llm_settings/scripts/mcp_oauth_preflight.py"
 type: "code"
-community: "Community 148"
-location: "L196"
+community: "mcp_oauth_preflight.py"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_148
+  - community/mcp_oauth_preflightpy
 ---
 
 # _http_request()
 
 ## Connections
-- [[Issue one HTTP request and return (status_code, response_text).      HTTPError i]] - `rationale_for` [EXTRACTED]
-- [[jira_dev_ticket.py]] - `contains` [EXTRACTED]
+- [[_read_body()]] - `calls` [EXTRACTED]
+- [[cmd_reachability()]] - `calls` [EXTRACTED]
+- [[mcp_oauth_preflight.py]] - `contains` [EXTRACTED]
+- [[oauth_atlassian()]] - `calls` [EXTRACTED]
+- [[oauth_github()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_148
+#graphify/code #graphify/EXTRACTED #community/mcp_oauth_preflightpy

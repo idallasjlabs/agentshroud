@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "create_auth_dependency"
+community: "test_telegram_proxy_inbound.py"
 location: "L57"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/create_auth_dependency
+  - community/test_telegram_proxy_inboundpy
 ---
 
 # _refuse()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_no_real_telegram_network()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/create_auth_dependency
+#graphify/code #graphify/INFERRED #community/test_telegram_proxy_inboundpy

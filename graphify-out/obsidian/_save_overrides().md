@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Community 18"
+community: "telegram_proxy.py"
 location: "L241"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/telegram_proxypy
 ---
 
 # _save_overrides()
@@ -20,4 +20,4 @@ tags:
 - [[persist_group_member_remove()]] - `calls` [EXTRACTED]
 - [[persist_user_collab_mode()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_18
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

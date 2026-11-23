@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 10"
+community: "soc/router.py"
 location: "L3266"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_10
+  - community/soc/routerpy
 ---
 
 # _minimal_dashboard_html()
 
 ## Connections
 - [[Fallback minimal dashboard when template file is missing.]] - `rationale_for` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 - [[soc_dashboard()]] - `calls` [EXTRACTED]
+- [[test_minimal_dashboard_html_contents()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_10
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

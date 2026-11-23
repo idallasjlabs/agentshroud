@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Community 368"
+community: "daily_cve_report.py"
 location: "L787"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_368
+  - community/daily_cve_reportpy
 ---
 
 # _save_alerted_ghsa()
@@ -15,4 +15,4 @@ tags:
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
 - [[run_upstream_cve_check()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_368
+#graphify/code #graphify/EXTRACTED #community/daily_cve_reportpy

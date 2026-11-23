@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "Community 24"
+community: "test_ws_e_rt2_inbound_encoding.py"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/test_ws_e_rt2_inbound_encodingpy
 ---
 
 # _make_pipeline()
@@ -15,10 +15,9 @@ tags:
 - [[EncodingDetector]] - `calls` [EXTRACTED]
 - [[PIIConfig]] - `calls` [EXTRACTED]
 - [[PIISanitizer]] - `calls` [EXTRACTED]
-- [[Pipeline wired with the guards relevant to inbound encoding defence.      No Tru]] - `rationale_for` [EXTRACTED]
+- [[Pipeline wired with the guards relevant to inbound encoding defence. No…]] - `rationale_for` [EXTRACTED]
 - [[PromptGuard]] - `calls` [EXTRACTED]
 - [[SecurityPipeline]] - `calls` [EXTRACTED]
-- [[SecurityPipeline_2]] - `references` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
 - [[test_inbound_base64_injection_blocked()]] - `calls` [EXTRACTED]
 - [[test_inbound_benign_base64_not_blocked()]] - `calls` [EXTRACTED]
@@ -33,4 +32,4 @@ tags:
 - [[test_inbound_url_encoded_injection_blocked()]] - `calls` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_24
+#graphify/code #graphify/EXTRACTED #community/test_ws_e_rt2_inbound_encodingpy

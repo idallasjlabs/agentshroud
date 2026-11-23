@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 125"
+community: "api.py"
 location: "L1152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_125
+  - community/apipy
 ---
 
 # _intel_verifier()
 
 ## Connections
-- [[Build a CitationVerifier wired to the production (httpx) fetcher.      Isolated]] - `rationale_for` [EXTRACTED]
+- [[Build a CitationVerifier wired to the production (httpx) fetcher. Isolated in a…]] - `rationale_for` [EXTRACTED]
 - [[CitationVerifier]] - `calls` [EXTRACTED]
-- [[api.py]] - `contains` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
 - [[make_httpx_fetcher()]] - `calls` [EXTRACTED]
 - [[submit_competitive_intel()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_125
+#graphify/code #graphify/EXTRACTED #community/apipy

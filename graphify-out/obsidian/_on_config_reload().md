@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L1666"
+community: "lifespan"
+location: "L1685"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/lifespan
 ---
 
 # _on_config_reload()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[lifespan()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/INFERRED #community/lifespan

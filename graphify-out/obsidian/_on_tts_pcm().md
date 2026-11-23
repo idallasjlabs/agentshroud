@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Community 378"
+community: "app_main.c"
 location: "L460"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_378
+  - community/app_mainc
 ---
 
 # _on_tts_pcm()
@@ -15,4 +15,4 @@ tags:
 - [[app_main.c]] - `contains` [EXTRACTED]
 - [[wakeword_tts_stop_requested()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_378
+#graphify/code #graphify/EXTRACTED #community/app_mainc

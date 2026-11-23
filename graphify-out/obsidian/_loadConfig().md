@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "Community 917"
+community: "soc.js"
 location: "L1967"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_917
+  - community/socjs
 ---
 
 # _loadConfig()
 
 ## Connections
 - [[_botParam()]] - `calls` [EXTRACTED]
+- [[_esc()_1]] - `calls` [EXTRACTED]
 - [[_get()]] - `calls` [EXTRACTED]
-- [[soc.js]] - `contains` [EXTRACTED]
+- [[soc.js]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_917
+#graphify/code #graphify/EXTRACTED #community/socjs

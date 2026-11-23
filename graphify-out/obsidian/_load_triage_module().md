@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "Community 42"
+community: "test_agent_cve_registry.py"
 location: "L589"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_42
+  - community/test_agent_cve_registrypy
 ---
 
 # _load_triage_module()
 
 ## Connections
-- [[Import the triage script by path.      It must be registered in sys.modules befo]] - `rationale_for` [EXTRACTED]
+- [[Import the triage script by path. It must be registered in sys.modules before…]] - `rationale_for` [EXTRACTED]
 - [[test_agent_cve_registry.py]] - `contains` [EXTRACTED]
 - [[test_gap_reports_are_per_agent()]] - `calls` [EXTRACTED]
 - [[test_untriageable_agents_are_refused_not_guessed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_42
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy

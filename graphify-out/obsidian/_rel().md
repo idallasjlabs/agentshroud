@@ -1,20 +1,20 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "Community 104"
+community: "triage-cve-mitigations.py"
 location: "L1246"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_104
+  - community/triage-cve-mitigationspy
 ---
 
 # _rel()
 
 ## Connections
 - [[Best-effort repo-relative path string for display (falls back to str).]] - `rationale_for` [EXTRACTED]
-- [[Path_56]] - `references` [EXTRACTED]
-- [[main()_30]] - `calls` [EXTRACTED]
+- [[Path_1]] - `references` [EXTRACTED]
+- [[main()]] - `calls` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_104
+#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
 type: "document"
-community: "Community 593"
+community: "sanitizer.py"
 location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_593
+  - community/sanitizerpy
 ---
 
 # _sanitize_regex(content)
 
 ## Connections
-- [[Function Details_4]] - `contains` [EXTRACTED]
+- [[Function Details_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_593
+#graphify/document #graphify/EXTRACTED #community/sanitizerpy

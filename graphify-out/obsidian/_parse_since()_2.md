@@ -1,22 +1,22 @@
 ---
 source_file: "scripts/export-telegram-history.py"
 type: "code"
-community: "Community 777"
+community: "export-bot-conversations.py"
 location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_777
+  - community/export-bot-conversationspy
 ---
 
 # _parse_since()
 
 ## Connections
-- [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD_2]] - `rationale_for` [EXTRACTED]
-- [[_parse_since()]] - `semantically_similar_to` [INFERRED]
+- [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or 'YYYY-MM-DD…_2]] - `rationale_for` [EXTRACTED]
 - [[_parse_since()_1]] - `semantically_similar_to` [INFERRED]
-- [[datetime_9]] - `references` [EXTRACTED]
+- [[_parse_since()]] - `semantically_similar_to` [INFERRED]
+- [[datetime_8]] - `references` [EXTRACTED]
 - [[export-telegram-history.py]] - `contains` [EXTRACTED]
-- [[main()_22]] - `calls` [EXTRACTED]
+- [[main()_36]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_777
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy

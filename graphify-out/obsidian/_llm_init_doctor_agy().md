@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/llm-init.sh"
 type: "code"
-community: "_agy_doc_bad()"
+community: "llm-init.sh"
 location: "L2275"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_agy_doc_bad
+  - community/llm-initsh
 ---
 
 # _llm_init_doctor_agy()
@@ -23,4 +23,4 @@ tags:
 - [[llm-init()]] - `calls` [EXTRACTED]
 - [[llm-init.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_agy_doc_bad
+#graphify/code #graphify/EXTRACTED #community/llm-initsh

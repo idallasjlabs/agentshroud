@@ -1,19 +1,19 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "Community 1006"
+community: "server.py"
 location: "L357"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1006
+  - community/serverpy
 ---
 
 # _lifespan()
 
 ## Connections
-- [[FastAPI_3]] - `references` [EXTRACTED]
+- [[FastAPI]] - `references` [EXTRACTED]
 - [[_warm()]] - `indirect_call` [INFERRED]
 - [[server.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1006
+#graphify/code #graphify/EXTRACTED #community/serverpy
