@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/vulcan.md"
+source_file: ".agents/skills/sf/SKILL.md"
 type: "document"
-community: "Community 1951"
-location: "L28"
+community: "Salesforce CLI (`sf`) Agent"
+location: "L129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1951
+  - community/Salesforce_CLI_sf_Agent
 ---
 
 # Output Format
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor]] - `contains` [EXTRACTED]
+- [[Salesforce CLI (`sf`) Agent_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1951
+#graphify/document #graphify/EXTRACTED #community/Salesforce_CLI_sf_Agent

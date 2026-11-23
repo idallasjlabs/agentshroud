@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/eightd-root-cause-analysis.md"
+source_file: "docs/security/security-supply-chain.md"
 type: "document"
-community: "Community 765"
-location: "L10"
+community: "Features"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_765
+  - community/Features
 ---
 
 # Overview
 
 ## Connections
-- [[8D Root Cause Analysis — Data-Driven Control System Investigation]] - `contains` [EXTRACTED]
+- [[Security Supply Chain Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_765
+#graphify/document #graphify/EXTRACTED #community/Features

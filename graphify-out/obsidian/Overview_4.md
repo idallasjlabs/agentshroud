@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-eightd.agent.md"
+source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "Community 768"
-location: "L13"
+community: "IEC 62443 Compliance Matrix — AgentShroud"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_768
+  - community/IEC_62443_Compliance_Matrix__AgentShroud
 ---
 
 # Overview
 
 ## Connections
-- [[8D Root Cause Analysis — Data-Driven Control System Investigation_3]] - `contains` [EXTRACTED]
+- [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_768
+#graphify/document #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud

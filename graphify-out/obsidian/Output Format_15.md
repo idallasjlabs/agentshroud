@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/atlas/SKILL.md"
+source_file: ".cursor/agents/sf.md"
 type: "document"
-community: "Community 1169"
-location: "L26"
+community: "Salesforce CLI (`sf`) Agent"
+location: "L131"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1169
+  - community/Salesforce_CLI_sf_Agent
 ---
 
 # Output Format
 
 ## Connections
-- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
+- [[Salesforce CLI (`sf`) Agent_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1169
+#graphify/document #graphify/EXTRACTED #community/Salesforce_CLI_sf_Agent

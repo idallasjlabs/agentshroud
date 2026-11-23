@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/sav/SKILL.md"
+source_file: ".omp/agents/atlas.md"
 type: "document"
-community: "Community 426"
-location: "L396"
+community: "Atlas — Curriculum Architect"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_426
+  - community/Atlas__Curriculum_Architect
 ---
 
-# OUTPUT FORMAT
+# Output Format
 
 ## Connections
-- [[System Audit Vault (Obsidian)_1]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_426
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

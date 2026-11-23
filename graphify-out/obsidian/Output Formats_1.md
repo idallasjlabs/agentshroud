@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/himalaya/SKILL.md"
+source_file: "skills/openclaw/apple-reminders/SKILL.md"
 type: "document"
-community: "Community 874"
-location: "L229"
+community: "Apple Reminders CLI (remindctl)"
+location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_874
+  - community/Apple_Reminders_CLI_remindctl
 ---
 
 # Output Formats
 
 ## Connections
-- [[Himalaya Email CLI]] - `contains` [EXTRACTED]
+- [[Common Commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_874
+#graphify/document #graphify/EXTRACTED #community/Apple_Reminders_CLI_remindctl

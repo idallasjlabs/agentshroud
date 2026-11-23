@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/skills/socrates/SKILL.md"
+source_file: ".github/agents/i-athena.agent.md"
 type: "document"
-community: "Community 1124"
-location: "L40"
+community: "Athena — Knowledge Distiller"
+location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1124
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Output Format
 
 ## Connections
-- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_3]] - `contains` [EXTRACTED]
+- [[show_notes_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1124
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

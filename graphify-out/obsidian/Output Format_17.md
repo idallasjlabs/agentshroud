@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/hermes/SKILL.md"
+source_file: ".github/agents/i-sec.agent.md"
 type: "document"
-community: "Community 1993"
-location: "L26"
+community: "Skill: Security Review (SEC)"
+location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1993
+  - community/Skill_Security_Review_SEC
 ---
 
 # Output Format
 
 ## Connections
-- [[Hermes — Reference Verifier_1]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1993
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

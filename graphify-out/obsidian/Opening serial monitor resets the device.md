@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "document"
-community: "Community 288"
+community: "10. Troubleshooting"
 location: "L390"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_288
+  - community/10_Troubleshooting
 ---
 
 # Opening serial monitor resets the device
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[10. Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_288
+#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting

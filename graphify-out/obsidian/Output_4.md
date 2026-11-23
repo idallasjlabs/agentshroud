@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/apollo.md"
+source_file: ".omp/agents/apollo.md"
 type: "document"
-community: "Community 1404"
-location: "L134"
+community: "Technical Specification"
+location: "L133"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1404
+  - community/Technical_Specification
 ---
 
 # Output
 
 ## Connections
-- [[Apollo — Audio Systems Producer_3]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1404
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

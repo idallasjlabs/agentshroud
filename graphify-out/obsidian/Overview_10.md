@@ -1,18 +1,17 @@
 ---
-source_file: "docs/api/integration-guide.md"
+source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Community 546"
-location: "L4"
+community: "AgentShroud Audit Specification"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_546
+  - community/AgentShroud_Audit_Specification
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud v0.9.0]] - `contains` [EXTRACTED]
-- [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
+- [[AgentShroud Audit Specification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_546
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification

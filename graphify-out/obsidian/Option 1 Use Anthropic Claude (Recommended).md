@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "Community 510"
+community: "API Keys Setup Guide"
 location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_510
+  - community/API_Keys_Setup_Guide
 ---
 
 # Option 1: Use Anthropic Claude (Recommended)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 4 Set Default Model]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_510
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

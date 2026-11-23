@@ -1,17 +1,20 @@
 ---
-source_file: ".cursor/agents/i-mcpm-doctor.md"
+source_file: ".omp/agents/daedalus.md"
 type: "document"
-community: "Community 1040"
-location: "L157"
+community: "Daedalus — Concept Illustrator"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1040
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_6]] - `contains` [EXTRACTED]
+- [[architecture.puml (PlantUML)_4]] - `contains` [EXTRACTED]
+- [[diagramsREADME_4]] - `contains` [EXTRACTED]
+- [[flow.mmd (Mermaid)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1040
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

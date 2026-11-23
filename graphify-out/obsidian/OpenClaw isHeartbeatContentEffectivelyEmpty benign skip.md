@@ -1,17 +1,16 @@
 ---
 source_file: "scripts/soak_status.py"
 type: "concept"
-community: "Community 310"
+community: "classify"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_310
+  - community/classify
 ---
 
 # OpenClaw isHeartbeatContentEffectivelyEmpty benign skip
 
 ## Connections
-- [[TestClassify_1]] - `references` [EXTRACTED]
 - [[_is_benign_skip]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_310
+#graphify/concept #graphify/EXTRACTED #community/classify

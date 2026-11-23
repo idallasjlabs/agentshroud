@@ -1,17 +1,20 @@
 ---
-source_file: ".cursor/agents/atlas.md"
+source_file: ".agents/agents/daedalus.md"
 type: "document"
-community: "Community 1179"
-location: "L28"
+community: "Daedalus — Concept Illustrator"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1179
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Output Format
 
 ## Connections
-- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_2]] - `contains` [EXTRACTED]
+- [[architecture.puml (PlantUML)]] - `contains` [EXTRACTED]
+- [[diagramsREADME]] - `contains` [EXTRACTED]
+- [[flow.mmd (Mermaid)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1179
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

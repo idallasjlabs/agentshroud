@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_FIX.md"
 type: "document"
-community: "Community 502"
+community: "iMessage Integration Fix - Using imsg + imessage-exporter"
 location: "L60"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_502
+  - community/iMessage_Integration_Fix_-_Using_imsg__imessage-exporter
 ---
 
 # Option 2: Check if Messages.app is Signed In
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[The Fix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_502
+#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Fix_-_Using_imsg__imessage-exporter

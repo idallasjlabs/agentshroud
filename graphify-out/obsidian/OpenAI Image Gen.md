@@ -1,20 +1,20 @@
 ---
 source_file: "skills/openclaw/openai-image-gen/SKILL.md"
 type: "document"
-community: "Community 382"
+community: "Model-Specific Parameters"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_382
+  - community/Model-Specific_Parameters
 ---
 
 # OpenAI Image Gen
 
 ## Connections
 - [[Model-Specific Parameters]] - `contains` [EXTRACTED]
-- [[Output_18]] - `contains` [EXTRACTED]
+- [[Output_7]] - `contains` [EXTRACTED]
 - [[Run]] - `contains` [EXTRACTED]
-- [[SKILL_230]] - `contains` [EXTRACTED]
+- [[openai-image-genSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_382
+#graphify/document #graphify/EXTRACTED #community/Model-Specific_Parameters

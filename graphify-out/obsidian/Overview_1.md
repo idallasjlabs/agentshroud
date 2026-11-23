@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/eightd-root-cause-analysis/SKILL.md"
+source_file: "docs/requirements/use-cases.md"
 type: "document"
-community: "Community 790"
-location: "L16"
+community: "Use Cases"
+location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_790
+  - community/Use_Cases
 ---
 
 # Overview
 
 ## Connections
-- [[8D Root Cause Analysis — Data-Driven Control System Investigation_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Proxy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_790
+#graphify/document #graphify/EXTRACTED #community/Use_Cases

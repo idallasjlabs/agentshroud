@@ -1,20 +1,23 @@
 ---
-source_file: ".agents/skills/oracle/README.md"
+source_file: ".agents/agents/oracle.md"
 type: "document"
-community: "Community 2088"
-location: "L1"
+community: "Oracle — Feedback Analyst"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2088
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Oracle — Feedback Analyst
 
 ## Connections
-- [[Purpose_30]] - `contains` [EXTRACTED]
-- [[README_30]] - `contains` [EXTRACTED]
-- [[Related Skills_36]] - `contains` [EXTRACTED]
-- [[Usage_36]] - `contains` [EXTRACTED]
+- [[dot-agentsagentsoracle]] - `contains` [EXTRACTED]
+- [[Input Requirements_31]] - `contains` [EXTRACTED]
+- [[Output Format_46]] - `contains` [EXTRACTED]
+- [[Persona_25]] - `contains` [EXTRACTED]
+- [[Quality Checklist_31]] - `contains` [EXTRACTED]
+- [[Role_96]] - `contains` [EXTRACTED]
+- [[System Prompt_25]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2088
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

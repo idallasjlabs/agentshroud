@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "Community 930"
+community: "Required Software"
 location: "L239"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_930
+  - community/Required_Software
 ---
 
 # Operating System
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[💻 System Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_930
+#graphify/document #graphify/EXTRACTED #community/Required_Software

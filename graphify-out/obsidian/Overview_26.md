@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
+source_file: ".opencode/agents/eightd-root-cause-analysis.md"
 type: "document"
-community: "Community 401"
-location: "L13"
+community: "The 8D Investigation Process"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_401
+  - community/The_8D_Investigation_Process
 ---
 
 # Overview
 
 ## Connections
-- [[main.py_4]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_401
+#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process

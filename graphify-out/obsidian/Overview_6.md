@@ -1,17 +1,17 @@
 ---
-source_file: ".opencode/agents/eightd-root-cause-analysis.md"
+source_file: "skills/openclaw/model-usage/SKILL.md"
 type: "document"
-community: "Community 802"
-location: "L9"
+community: "Model usage"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_802
+  - community/Model_usage
 ---
 
 # Overview
 
 ## Connections
-- [[8D Root Cause Analysis — Data-Driven Control System Investigation_5]] - `contains` [EXTRACTED]
+- [[Model usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_802
+#graphify/document #graphify/EXTRACTED #community/Model_usage

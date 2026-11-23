@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/HEXSTRIKE_PROXY_PLAN.md"
 type: "document"
-community: "Community 876"
+community: "Plan: Proxying HexStrike AI MCP Agents via AgentShroud"
 location: "L163"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_876
+  - community/Plan_Proxying_HexStrike_AI_MCP_Agents_via_AgentShroud
 ---
 
 # Out of scope (explicitly)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Plan Proxying HexStrike AI MCP Agents via AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_876
+#graphify/document #graphify/EXTRACTED #community/Plan_Proxying_HexStrike_AI_MCP_Agents_via_AgentShroud

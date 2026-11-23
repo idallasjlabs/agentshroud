@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Community 255"
-location: "L16"
+community: "SecureBrowser Skill"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_255
+  - community/SecureBrowser_Skill
 ---
 
 # Overview
 
 ## Connections
-- [[8D Root Cause Analysis — Data-Driven Control System Investigation_6]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_255
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

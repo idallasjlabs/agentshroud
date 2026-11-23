@@ -1,17 +1,17 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "rationale"
-community: "Community 95"
+community: "TestErrorSanitization"
 location: "L167"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_95
+  - community/TestErrorSanitization
 ---
 
 # OpenAI AuthenticationError returns 503 without leaking the key.
 
 ## Connections
-- [[.test_openai_auth_error_returns_503()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_openai_auth_error_returns_503()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_95
+#graphify/rationale #graphify/EXTRACTED #community/TestErrorSanitization

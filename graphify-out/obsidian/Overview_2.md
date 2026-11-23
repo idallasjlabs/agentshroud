@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/eightd-root-cause-analysis.md"
+source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "Community 786"
+community: "Startup Sequence"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_786
+  - community/Startup_Sequence
 ---
 
 # Overview
 
 ## Connections
-- [[8D Root Cause Analysis — Data-Driven Control System Investigation_2]] - `contains` [EXTRACTED]
+- [[Startup Sequence]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_786
+#graphify/document #graphify/EXTRACTED #community/Startup_Sequence

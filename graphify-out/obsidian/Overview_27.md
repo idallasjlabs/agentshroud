@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
+source_file: "docs/ssh-capability.md"
 type: "document"
-community: "Community 408"
-location: "L22"
+community: "SSH Capability Architecture Document"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_408
+  - community/SSH_Capability_Architecture_Document
 ---
 
 # Overview
 
 ## Connections
-- [[llm_proxy.py_2]] - `contains` [EXTRACTED]
+- [[SSH Capability Architecture Document]] - `contains` [EXTRACTED]
+- [[SSH Capability — Architecture Document]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_408
+#graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document

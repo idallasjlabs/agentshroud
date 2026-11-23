@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "code"
-community: "Community 199"
+community: "Telegram Formatting Rule (bold only, no headers or tables)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_199
+  - community/Telegram_Formatting_Rule_bold_only_no_headers_or_tables
 ---
 
 # OpenClaw cron: AgentShroud Weekly Summary
@@ -16,4 +16,4 @@ tags:
 - [[SHIPPED  FRICTION  IMPROVE Retrospective Format]] - `semantically_similar_to` [INFERRED]
 - [[Telegram Formatting Rule (bold only, no headers or tables)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_199
+#graphify/code #graphify/EXTRACTED #community/Telegram_Formatting_Rule_bold_only_no_headers_or_tables

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "Community 1328"
+community: "AgentShroud Operations Runbook"
 location: "L345"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1328
+  - community/AgentShroud_Operations_Runbook
 ---
 
 # OpenClaw API Key
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[5. API Key Rotation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1328
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Operations_Runbook

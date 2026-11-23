@@ -1,50 +1,37 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "Community 233"
+community: "OutputCanary"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_233
+  - community/OutputCanary
 ---
 
 # OutputCanary
 
 ## Connections
-- [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_117]] - `method` [EXTRACTED]
-- [[._create_detection_patterns()]] - `method` [EXTRACTED]
-- [[._create_invisible_canary()]] - `method` [EXTRACTED]
-- [[._scan_for_canary()]] - `method` [EXTRACTED]
-- [[.check_response()]] - `method` [EXTRACTED]
-- [[.cleanup_expired_canaries()]] - `method` [EXTRACTED]
-- [[.generate_canary()]] - `method` [EXTRACTED]
-- [[.get_status()_1]] - `method` [EXTRACTED]
-- [[.setup_method()_19]] - `calls` [EXTRACTED]
-- [[.test_incident_logging()]] - `calls` [EXTRACTED]
-- [[.test_output_canary_instantiates()]] - `calls` [EXTRACTED]
-- [[.test_partial_canary_match_handling()]] - `calls` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any_18]] - `uses` [INFERRED]
-- [[Exception_2]] - `uses` [INFERRED]
-- [[LogSanitizer]] - `uses` [INFERRED]
-- [[Main Output Canary System for detecting prompt leakage.      This system generat]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_112]] - `calls` [EXTRACTED]
+- [[dot-__init__()_88]] - `method` [EXTRACTED]
+- [[dot-_create_detection_patterns()]] - `method` [EXTRACTED]
+- [[dot-_create_invisible_canary()]] - `method` [EXTRACTED]
+- [[dot-_scan_for_canary()]] - `method` [EXTRACTED]
+- [[dot-check_response()_1]] - `method` [EXTRACTED]
+- [[dot-cleanup_expired_canaries()]] - `method` [EXTRACTED]
+- [[dot-generate_canary()]] - `method` [EXTRACTED]
+- [[dot-get_status()]] - `method` [EXTRACTED]
+- [[dot-setup_method()_14]] - `calls` [EXTRACTED]
+- [[dot-test_incident_logging()]] - `calls` [EXTRACTED]
+- [[dot-test_output_canary_instantiates()]] - `calls` [EXTRACTED]
+- [[dot-test_partial_canary_match_handling()]] - `calls` [EXTRACTED]
+- [[Main Output Canary System for detecting prompt leakage. This system generates…]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[OutboundInfoFilter]] - `conceptually_related_to` [INFERRED]
-- [[Output Canary System Tests]] - `references` [EXTRACTED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
-- [[TestGetModuleModeEnforceDefault]] - `uses` [INFERRED]
-- [[TestModuleConfigDefaults]] - `uses` [INFERRED]
 - [[TestModuleInstantiationInEnforceMode]] - `uses` [INFERRED]
 - [[TestOutputCanary]] - `uses` [INFERRED]
-- [[TestSecurityConfigDefaults]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
-- [[middleware.py]] - `imports` [EXTRACTED]
+- [[middleware.py_2]] - `imports` [EXTRACTED]
 - [[output_canary.py]] - `contains` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_output_canary.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_233
+#graphify/code #graphify/EXTRACTED #community/OutputCanary

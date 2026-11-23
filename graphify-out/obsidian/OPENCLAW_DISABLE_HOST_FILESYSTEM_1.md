@@ -1,22 +1,22 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
 type: "document"
-community: "Community 1210"
+community: "OPENCLAW_SANDBOX_MODE"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1210
+  - community/OPENCLAW_SANDBOX_MODE
 ---
 
 # OPENCLAW_DISABLE_HOST_FILESYSTEM
 
 ## Connections
-- [[Description_7]] - `contains` [EXTRACTED]
+- [[Description_2]] - `contains` [EXTRACTED]
 - [[Effect]] - `contains` [EXTRACTED]
 - [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - `contains` [EXTRACTED]
-- [[Related Notes_35]] - `contains` [EXTRACTED]
-- [[Set In_3]] - `contains` [EXTRACTED]
-- [[Value_4]] - `contains` [EXTRACTED]
+- [[Related Notes_6]] - `contains` [EXTRACTED]
+- [[Set In_1]] - `contains` [EXTRACTED]
+- [[Value_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1210
+#graphify/document #graphify/EXTRACTED #community/OPENCLAW_SANDBOX_MODE

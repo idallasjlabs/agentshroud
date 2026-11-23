@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "rationale"
-community: "Community 396"
+community: "Credential Security Policy"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_396
+  - community/Credential_Security_Policy
 ---
 
 # Option 2: Approval Queue for Credential Ops
@@ -13,6 +13,6 @@ tags:
 ## Connections
 - [[CREDENTIAL-SECURITY-POLICY]] - `references` [EXTRACTED]
 - [[Implementation Status]] - `contains` [EXTRACTED]
-- [[Implementation Strategy_1]] - `contains` [EXTRACTED]
+- [[Implementation Strategy]] - `contains` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_396
+#graphify/rationale #graphify/EXTRACTED #community/Credential_Security_Policy

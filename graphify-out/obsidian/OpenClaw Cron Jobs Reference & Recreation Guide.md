@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/cron/JOBS-REFERENCE.md"
 type: "document"
-community: "Community 371"
+community: "OpenClaw Cron Jobs Reference & Recreation Guide"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_371
+  - community/OpenClaw_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # OpenClaw Cron Jobs Reference & Recreation Guide
@@ -13,9 +13,8 @@ tags:
 ## Connections
 - [[2026-08-24 incident history (for context, not action items)]] - `contains` [EXTRACTED]
 - [[AgentShroud Branded Report Template]] - `references` [EXTRACTED]
-- [[How to recreate a job_1]] - `contains` [EXTRACTED]
-- [[JOBS-REFERENCE_1]] - `contains` [EXTRACTED]
-- [[Job index_1]] - `contains` [EXTRACTED]
+- [[How to recreate a job]] - `contains` [EXTRACTED]
+- [[Job index]] - `contains` [EXTRACTED]
 - [[Known drift from `dockerconfigopenclawcronjobs.json`]] - `contains` [EXTRACTED]
 - [[OpenClaw cron AgentShroud Weekly Summary]] - `references` [EXTRACTED]
 - [[Prompt Daily Memory Journal]] - `references` [EXTRACTED]
@@ -23,5 +22,6 @@ tags:
 - [[Shared dependencies (must exist before dependent jobs run)]] - `contains` [EXTRACTED]
 - [[Stdin-Pipe Deploy Pattern (never docker cp)]] - `rationale_for` [EXTRACTED]
 - [[cve_prefetch.py (CVE fetch-and-diff)]] - `references` [EXTRACTED]
+- [[openclawcronJOBS-REFERENCE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_371
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Cron_Jobs_Reference__Recreation_Guide

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "Community 469"
+community: "OpenClaw Management Scripts"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_469
+  - community/OpenClaw_Management_Scripts
 ---
 
 # OpenClaw Management Scripts
@@ -15,16 +15,16 @@ tags:
 - [[Common Tasks]] - `contains` [EXTRACTED]
 - [[Direct Docker Commands]] - `contains` [EXTRACTED]
 - [[File Locations_1]] - `contains` [EXTRACTED]
-- [[Quick Reference_8]] - `contains` [EXTRACTED]
-- [[README_116]] - `contains` [EXTRACTED]
-- [[Security Notes]] - `contains` [EXTRACTED]
-- [[Troubleshooting_36]] - `contains` [EXTRACTED]
+- [[Quick Reference_13]] - `contains` [EXTRACTED]
+- [[Security Notes_4]] - `contains` [EXTRACTED]
+- [[Troubleshooting_39]] - `contains` [EXTRACTED]
 - [[check-status.sh_1]] - `contains` [EXTRACTED]
 - [[devices.sh_1]] - `contains` [EXTRACTED]
 - [[dockerscripts README]] - `contains` [EXTRACTED]
+- [[dockerscriptsREADME]] - `contains` [EXTRACTED]
 - [[logs.sh_1]] - `contains` [EXTRACTED]
 - [[restart.sh_1]] - `contains` [EXTRACTED]
 - [[set-model.sh_1]] - `contains` [EXTRACTED]
 - [[telegram.sh_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_469
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/redteam/06-outbound-info-filter.md"
 type: "document"
-community: "Community 422"
+community: "Enterprise Security Feature Priorities"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_422
+  - community/Enterprise_Security_Feature_Priorities
 ---
 
 # Outbound Information Filter Planning
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Enterprise Security Feature Priorities]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_422
+#graphify/document #graphify/EXTRACTED #community/Enterprise_Security_Feature_Priorities

@@ -1,12 +1,12 @@
 ---
 source_file: ".github/copilot-instructions.md"
 type: "document"
-community: "Community 2081"
+community: "11. Hard Guardrails (Non-Negotiables)"
 location: "L380"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2081
+  - community/11_Hard_Guardrails_Non-Negotiables
 ---
 
 # Operations
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[11. Hard Guardrails (Non-Negotiables)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2081
+#graphify/document #graphify/EXTRACTED #community/11_Hard_Guardrails_Non-Negotiables

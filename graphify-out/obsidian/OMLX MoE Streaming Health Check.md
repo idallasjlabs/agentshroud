@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/cron/prompts/omlx-moe-streaming-health-check.txt"
+source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
 type: "document"
-community: "Community 958"
+community: "Job details"
+location: "L254"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_958
+  - community/Job_details
 ---
 
-# oMLX MoE Streaming Health Check
+# OMLX MoE Streaming Health Check
 
 ## Connections
-- [[MoE (Mixture-of-Experts) Streaming Inference]] - `references` [EXTRACTED]
-- [[oMLX (local model backend)]] - `references` [EXTRACTED]
+- [[Job details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_958
+#graphify/document #graphify/EXTRACTED #community/Job_details

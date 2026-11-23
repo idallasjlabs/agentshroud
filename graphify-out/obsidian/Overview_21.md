@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/HERMES_SETUP.md"
+source_file: ".agents/agents/eightd-root-cause-analysis.md"
 type: "document"
-community: "Community 433"
-location: "L33"
+community: "The 8D Investigation Process"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_433
+  - community/The_8D_Investigation_Process
 ---
 
 # Overview
 
 ## Connections
-- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_433
+#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process

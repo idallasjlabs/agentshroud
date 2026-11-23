@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "Community 218"
+community: "OpenClaw Bot SSH Configuration"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_218
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # OpenClaw Bot SSH Configuration
@@ -14,16 +14,15 @@ tags:
 ## Connections
 - [[Adding Additional Hosts]] - `contains` [EXTRACTED]
 - [[Backup and Recovery]] - `contains` [EXTRACTED]
-- [[Next Steps_8]] - `contains` [EXTRACTED]
-- [[OPENCLAW_SETUP]] - `contains` [EXTRACTED]
+- [[Next Steps_5]] - `contains` [EXTRACTED]
 - [[OPENCLAW_SSH_SETUP]] - `contains` [EXTRACTED]
-- [[Quick Reference_12]] - `contains` [EXTRACTED]
+- [[Quick Reference_4]] - `contains` [EXTRACTED]
 - [[SSH Configuration Details]] - `contains` [EXTRACTED]
 - [[SSH Key Generated]] - `contains` [EXTRACTED]
-- [[Security Considerations]] - `contains` [EXTRACTED]
+- [[Security Considerations_1]] - `contains` [EXTRACTED]
 - [[Setup Instructions]] - `contains` [EXTRACTED]
-- [[Troubleshooting_50]] - `contains` [EXTRACTED]
-- [[Usage Examples_1]] - `contains` [EXTRACTED]
-- [[Verification Checklist_8]] - `contains` [EXTRACTED]
+- [[Troubleshooting_11]] - `contains` [EXTRACTED]
+- [[Usage Examples]] - `contains` [EXTRACTED]
+- [[Verification Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_218
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

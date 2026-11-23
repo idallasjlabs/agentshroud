@@ -1,17 +1,17 @@
 ---
-source_file: ".omp/agents/sav.md"
+source_file: ".agents/agents/sec-defense.md"
 type: "document"
-community: "Community 359"
-location: "L397"
+community: "AgentShroud Blue Team Security Auditor"
+location: "L131"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_359
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
-# OUTPUT FORMAT
+# Output Format
 
 ## Connections
-- [[System Audit Vault (Obsidian)_4]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_359
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

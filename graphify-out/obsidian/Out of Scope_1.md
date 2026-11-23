@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/GSD_CADENCE.md"
 type: "document"
-community: "Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (2)"
+community: "Multi-Agent Role Matrix"
 location: "L79"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_2
+  - community/Multi-Agent_Role_Matrix
 ---
 
 # Out of Scope
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GSD Cadence — Get Shit Done Governance]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_2
+#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix

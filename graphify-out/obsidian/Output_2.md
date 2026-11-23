@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/apollo/SKILL.md"
+source_file: ".cursor/agents/apollo.md"
 type: "document"
-community: "Community 1379"
-location: "L132"
+community: "Technical Specification"
+location: "L134"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1379
+  - community/Technical_Specification
 ---
 
 # Output
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Apollo — Audio Systems Producer_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1379
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

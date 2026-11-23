@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-ti.md"
+source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
 type: "document"
-community: "Community 893"
-location: "L260"
+community: "Skill: Technical Illustrator (TI)"
+location: "L257"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_893
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # Online renderer
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Rendering and Export_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_893
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

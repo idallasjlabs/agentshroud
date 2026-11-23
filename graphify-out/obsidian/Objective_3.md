@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-qa/SKILL.md"
+source_file: ".github/agents/i-pr.agent.md"
 type: "document"
-community: "Community 462"
-location: "L14"
+community: "Skill: Pull Request (PR) Generator"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_462
+  - community/Skill_Pull_Request_PR_Generator
 ---
 
 # Objective
 
 ## Connections
-- [[Skill Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_462
+#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator

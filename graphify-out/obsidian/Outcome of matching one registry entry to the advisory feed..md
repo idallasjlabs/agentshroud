@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "rationale"
-community: "Community 265"
+community: "migrate-cve-registry-ghsa.py"
 location: "L174"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_265
+  - community/migrate-cve-registry-ghsapy
 ---
 
 # Outcome of matching one registry entry to the advisory feed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MatchResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_265
+#graphify/rationale #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

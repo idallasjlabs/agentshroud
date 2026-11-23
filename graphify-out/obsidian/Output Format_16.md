@@ -1,20 +1,17 @@
 ---
-source_file: ".agents/skills/daedalus/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-sec/SKILL.md"
 type: "document"
-community: "Community 1918"
-location: "L25"
+community: "Skill: Security Review (SEC)"
+location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1918
+  - community/Skill_Security_Review_SEC
 ---
 
 # Output Format
 
 ## Connections
-- [[Daedalus — Concept Illustrator_2]] - `contains` [EXTRACTED]
-- [[architecture.puml (PlantUML)_1]] - `contains` [EXTRACTED]
-- [[diagramsREADME_1]] - `contains` [EXTRACTED]
-- [[flow.mmd (Mermaid)_1]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1918
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

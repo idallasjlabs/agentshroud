@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/athena/SKILL.md"
+source_file: ".cursor/agents/i-sec.md"
 type: "document"
-community: "Community 1568"
-location: "L26"
+community: "Skill: Security Review (SEC)"
+location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1568
+  - community/Skill_Security_Review_SEC
 ---
 
 # Output Format
 
 ## Connections
-- [[Athena — Knowledge Distiller_2]] - `contains` [EXTRACTED]
-- [[show_notes_1]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1568
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

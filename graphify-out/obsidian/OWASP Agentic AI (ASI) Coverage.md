@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "Community 215"
+community: "AgentShroud™ CVE Mitigation Matrix"
 location: "L470"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_215
+  - community/AgentShroud_CVE_Mitigation_Matrix
 ---
 
 # OWASP Agentic AI (ASI) Coverage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud™ CVE Mitigation Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_215
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix
