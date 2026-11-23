@@ -1,18 +1,18 @@
 ---
-source_file: ".agents/skills/i-sre/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sre/SKILL.md"
 type: "document"
-community: "Community 117"
-location: "L6"
+community: "hermes/skills/i-cr/SKILL.md"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_117
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # Skill: sre
 
 ## Connections
-- [[SKILL_19]] - `contains` [EXTRACTED]
-- [[SKILL_53]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-sreSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_117
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

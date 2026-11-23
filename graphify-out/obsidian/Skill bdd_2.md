@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-bdd.md"
+source_file: ".agents/agents/i-bdd.md"
 type: "document"
-community: "Community 2248"
+community: ".agents/agents/i-bdd.md"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2248
+  - community/agents/agents/i-bddmd
 ---
 
 # Skill: bdd
 
 ## Connections
-- [[i-bdd_1]] - `contains` [EXTRACTED]
+- [[dot-agentsagentsi-bdd]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2248
+#graphify/document #graphify/EXTRACTED #community/agents/agents/i-bddmd

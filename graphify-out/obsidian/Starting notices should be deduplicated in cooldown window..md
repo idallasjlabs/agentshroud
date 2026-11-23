@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 2"
+community: "_make_sanitizer"
 location: "L2292"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2
+  - community/_make_sanitizer
 ---
 
 # Starting notices should be deduplicated in cooldown window.
 
 ## Connections
-- [[.test_proxy_request_suppresses_duplicate_starting_notice()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_proxy_request_suppresses_duplicate_starting_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2
+#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer

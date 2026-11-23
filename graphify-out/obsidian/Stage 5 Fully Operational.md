@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "Community 1555"
+community: "Startup Sequence"
 location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1555
+  - community/Startup_Sequence
 ---
 
 # Stage 5: Fully Operational
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Boot Sequence (Numbered)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1555
+#graphify/document #graphify/EXTRACTED #community/Startup_Sequence

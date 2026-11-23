@@ -1,18 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md"
+source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "Community 630"
-location: "L3"
+community: "🛡️ AgentShroud Release Plan"
+location: "L391"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_630
+  - community/_AgentShroud_Release_Plan
 ---
 
 # Status
 
 ## Connections
-- [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - `contains` [EXTRACTED]
-- [[ADR-005 SHA-256 Hash Chain for Audit Integrity]] - `contains` [EXTRACTED]
+- [[v0.9.0 — Apple Messages Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_630
+#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan

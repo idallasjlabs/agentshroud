@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/agents/i-sre.md"
+source_file: ".agents/skills/i-sre/SKILL.md"
 type: "document"
-community: "Community 2226"
-location: "L8"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2226
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Skill: sre
 
 ## Connections
-- [[i-sre]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-sreSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2226
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

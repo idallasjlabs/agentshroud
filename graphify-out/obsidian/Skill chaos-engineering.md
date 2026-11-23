@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-chaos-engineering.md"
+source_file: ".agents/skills/i-chaos-engineering/SKILL.md"
 type: "document"
-community: "Community 2214"
-location: "L8"
+community: ".agents/skills/i-chaos-engineering/SKILL.md"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2214
+  - community/agents/skills/i-chaos-engineering/SKILLmd
 ---
 
 # Skill: chaos-engineering
 
 ## Connections
-- [[i-chaos-engineering]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-chaos-engineeringSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2214
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-chaos-engineering/SKILLmd

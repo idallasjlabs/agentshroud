@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Community 1330"
+community: "Manual Usage (Current Method)"
 location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1330
+  - community/Manual_Usage_Current_Method
 ---
 
 # Step 3: Parse Output
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Manual Usage (Current Method)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1330
+#graphify/document #graphify/EXTRACTED #community/Manual_Usage_Current_Method

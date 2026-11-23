@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/deployment.md"
 type: "document"
-community: "Community 725"
+community: "Deployment Runbook — AgentShroud"
 location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_725
+  - community/Deployment_Runbook__AgentShroud
 ---
 
 # Standard Deployment
@@ -17,7 +17,7 @@ tags:
 - [[3. Update Dependencies (if changed)]] - `contains` [EXTRACTED]
 - [[4. Build Containers]] - `contains` [EXTRACTED]
 - [[5. Deploy]] - `contains` [EXTRACTED]
-- [[6. Verify_3]] - `contains` [EXTRACTED]
+- [[6. Verify]] - `contains` [EXTRACTED]
 - [[Deployment Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_725
+#graphify/document #graphify/EXTRACTED #community/Deployment_Runbook__AgentShroud

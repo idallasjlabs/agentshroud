@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-ab/SKILL.md"
+source_file: ".cursor/agents/i-ab.md"
 type: "document"
-community: "Community 632"
-location: "L58"
+community: "Skill: Audit Branch (AB) — Merge Regression Detection"
+location: "L60"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_632
+  - community/Skill_Audit_Branch_AB__Merge_Regression_Detection
 ---
 
 # Step 3 — Run the audit script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Audit Branch (AB) — Merge Regression Detection_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_632
+#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Detection

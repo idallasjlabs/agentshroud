@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/redteam/05-credential-isolation.md"
 type: "document"
-community: "Community 609"
+community: "Remediation"
 location: "L88"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_609
+  - community/Remediation
 ---
 
 # Step 3: Remove credential environment variables from agent container
 
 ## Connections
-- [[Remediation_6]] - `contains` [EXTRACTED]
+- [[Remediation_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_609
+#graphify/document #graphify/EXTRACTED #community/Remediation

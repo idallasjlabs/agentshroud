@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-value-stream-mapping.md"
+source_file: ".agents/agents/i-value-stream-mapping.md"
 type: "document"
-community: "Community 2263"
+community: ".agents/agents/i-value-stream-mapping.md"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2263
+  - community/agents/agents/i-value-stream-mappingmd
 ---
 
 # Skill: value-stream-mapping
 
 ## Connections
-- [[i-value-stream-mapping_1]] - `contains` [EXTRACTED]
+- [[dot-agentsagentsi-value-stream-mapping]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2263
+#graphify/document #graphify/EXTRACTED #community/agents/agents/i-value-stream-mappingmd

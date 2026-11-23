@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-ab.md"
+source_file: ".github/agents/i-ab.agent.md"
 type: "document"
-community: "Community 1296"
-location: "L43"
+community: "Skill: Audit Branch (AB) — Merge Regression Detection"
+location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1296
+  - community/Skill_Audit_Branch_AB__Merge_Regression_Detection
 ---
 
 # Step 2 — Determine the target
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Audit Branch (AB) — Merge Regression Detection_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1296
+#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Detection

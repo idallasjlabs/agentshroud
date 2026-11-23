@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-kanban.md"
+source_file: ".agents/agents/i-kanban.md"
 type: "document"
-community: "Community 2256"
+community: ".agents/agents/i-kanban.md"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2256
+  - community/agents/agents/i-kanbanmd
 ---
 
 # Skill: kanban
 
 ## Connections
-- [[i-kanban_1]] - `contains` [EXTRACTED]
+- [[dot-agentsagentsi-kanban]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2256
+#graphify/document #graphify/EXTRACTED #community/agents/agents/i-kanbanmd

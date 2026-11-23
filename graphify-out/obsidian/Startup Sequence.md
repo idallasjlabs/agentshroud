@@ -1,26 +1,23 @@
 ---
 source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "Community 94"
-location: "L1"
+community: "Startup Sequence"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_94
+  - community/Startup_Sequence
 ---
 
-# Startup Sequence.md
+# Startup Sequence
 
 ## Connections
-- [[Architecture Overview_2]] - `references` [EXTRACTED]
-- [[DataLedger]] - `references` [EXTRACTED]
-- [[EgressFilter_1]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `references` [EXTRACTED]
-- [[Home]] - `references` [EXTRACTED]
-- [[MiddlewareManager]] - `references` [EXTRACTED]
-- [[PromptGuard]] - `references` [EXTRACTED]
-- [[Shutdown & Recovery]] - `references` [EXTRACTED]
+- [[Boot Sequence (Numbered)]] - `contains` [EXTRACTED]
+- [[Common Startup Failures]] - `contains` [EXTRACTED]
+- [[First-Boot Notes]] - `contains` [EXTRACTED]
+- [[Overview_2]] - `contains` [EXTRACTED]
+- [[Related Notes_16]] - `contains` [EXTRACTED]
+- [[Startup Indicators]] - `contains` [EXTRACTED]
 - [[Startup Sequence_1]] - `contains` [EXTRACTED]
-- [[main.py_3]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_94
+#graphify/document #graphify/EXTRACTED #community/Startup_Sequence

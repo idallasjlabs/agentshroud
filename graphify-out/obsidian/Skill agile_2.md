@@ -1,17 +1,17 @@
 ---
 source_file: ".cursor/agents/i-agile.md"
 type: "document"
-community: "Community 2246"
+community: ".cursor/agents/i-agile.md"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2246
+  - community/cursor/agents/i-agilemd
 ---
 
 # Skill: agile
 
 ## Connections
-- [[i-agile_1]] - `contains` [EXTRACTED]
+- [[dot-cursoragentsi-agile]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2246
+#graphify/document #graphify/EXTRACTED #community/cursor/agents/i-agilemd

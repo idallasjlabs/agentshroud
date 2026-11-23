@@ -1,17 +1,17 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Community 107"
+community: "Step-by-Step Deployment"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_107
+  - community/Step-by-Step_Deployment
 ---
 
 # Software Dependencies
 
 ## Connections
-- [[Prerequisites_3]] - `contains` [EXTRACTED]
+- [[Prerequisites_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_107
+#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Deployment

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "Community 44"
+community: "ingest_api/config.py"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_44
+  - community/ingest_api/configpy
 ---
 
 # Source code uses StrictHostKeyChecking=yes
 
 ## Connections
-- [[.test_strict_host_key_checking_in_source()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_strict_host_key_checking_in_source()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_44
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/configpy

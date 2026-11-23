@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-incident-response.md"
+source_file: ".agents/skills/i-incident-response/SKILL.md"
 type: "document"
-community: "Community 2218"
-location: "L8"
+community: ".agents/skills/i-incident-response/SKILL.md"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2218
+  - community/agents/skills/i-incident-response/SKILLmd
 ---
 
 # Skill: incident-response
 
 ## Connections
-- [[i-incident-response]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-incident-responseSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2218
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-incident-response/SKILLmd

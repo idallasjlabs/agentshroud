@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/graphify.md"
+source_file: ".agents/skills/graphify/SKILL.md"
 type: "document"
-community: "Community 920"
-location: "L148"
+community: "What You Must Do When Invoked"
+location: "L146"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_920
+  - community/What_You_Must_Do_When_Invoked
 ---
 
 # Step 3 - Extract entities and relationships
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[What You Must Do When Invoked]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_920
+#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked

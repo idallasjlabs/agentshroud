@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-25.md"
 type: "rationale"
-community: "Community 1924"
+community: "sunday-upgrade.sh"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1924
+  - community/sunday-upgradesh
 ---
 
 # Soak status: boot-proof is not work-proof
@@ -16,4 +16,4 @@ tags:
 - [[upgrade-2026-09-25]] - `references` [EXTRACTED]
 - [[upgrade-2026-09-27]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1924
+#graphify/rationale #graphify/EXTRACTED #community/sunday-upgradesh

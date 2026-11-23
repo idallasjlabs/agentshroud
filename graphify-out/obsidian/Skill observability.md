@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-observability.md"
+source_file: ".agents/skills/i-observability/SKILL.md"
 type: "document"
-community: "Community 2221"
-location: "L8"
+community: ".agents/skills/i-observability/SKILL.md"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2221
+  - community/agents/skills/i-observability/SKILLmd
 ---
 
 # Skill: observability
 
 ## Connections
-- [[i-observability]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-observabilitySKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2221
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-observability/SKILLmd

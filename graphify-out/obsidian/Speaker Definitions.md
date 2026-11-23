@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/socrates.md"
+source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Community 1071"
-location: "L22"
+community: "Socrates — Dialogue Architect"
+location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1071
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Speaker Definitions
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[EXPERT]] - `contains` [EXTRACTED]
 - [[HOST]] - `contains` [EXTRACTED]
-- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1071
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

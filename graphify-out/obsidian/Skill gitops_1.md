@@ -1,18 +1,18 @@
 ---
-source_file: ".agents/skills/i-gitops/SKILL.md"
+source_file: "docker/config/hermes/skills/i-gitops/SKILL.md"
 type: "document"
-community: "Community 117"
-location: "L6"
+community: "hermes/skills/i-cr/SKILL.md"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_117
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # Skill: gitops
 
 ## Connections
-- [[SKILL_19]] - `contains` [EXTRACTED]
-- [[SKILL_25]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-gitopsSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_117
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-ci.md"
+source_file: ".agents/skills/i-ci/SKILL.md"
 type: "document"
-community: "Community 2251"
-location: "L8"
+community: ".agents/skills/i-ci/SKILL.md"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2251
+  - community/agents/skills/i-ci/SKILLmd
 ---
 
 # Skill: ci
 
 ## Connections
-- [[i-ci_1]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-ciSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2251
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-ci/SKILLmd

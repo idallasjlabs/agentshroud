@@ -1,28 +1,28 @@
 ---
-source_file: ".cursor/agents/socrates.md"
+source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Community 1081"
-location: "L8"
+community: "Socrates — Dialogue Architect"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1081
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Socrates — Dialogue Architect
 
 ## Connections
-- [[Dialogue Techniques_2]] - `contains` [EXTRACTED]
-- [[ElevenLabs v3 Audio Tags_2]] - `contains` [EXTRACTED]
-- [[Input Requirements_28]] - `contains` [EXTRACTED]
-- [[OKE Channel — CPA Exam Prep Dialogue Guidelines_2]] - `contains` [EXTRACTED]
-- [[Output Format_41]] - `contains` [EXTRACTED]
-- [[Persona_22]] - `contains` [EXTRACTED]
-- [[Quality Checklist_25]] - `contains` [EXTRACTED]
-- [[Role_110]] - `contains` [EXTRACTED]
-- [[Speaker Definitions_2]] - `contains` [EXTRACTED]
-- [[System Prompt_22]] - `contains` [EXTRACTED]
-- [[User Prompt Template_10]] - `contains` [EXTRACTED]
-- [[socrates_1]] - `contains` [EXTRACTED]
+- [[Dialogue Techniques]] - `contains` [EXTRACTED]
+- [[ElevenLabs v3 Audio Tags]] - `contains` [EXTRACTED]
+- [[Input Requirements_53]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Prep Dialogue Guidelines]] - `contains` [EXTRACTED]
+- [[Output Format_87]] - `contains` [EXTRACTED]
+- [[Persona_45]] - `contains` [EXTRACTED]
+- [[Quality Checklist_51]] - `contains` [EXTRACTED]
+- [[Role_173]] - `contains` [EXTRACTED]
+- [[Speaker Definitions]] - `contains` [EXTRACTED]
+- [[System Prompt_45]] - `contains` [EXTRACTED]
+- [[User Prompt Template_17]] - `contains` [EXTRACTED]
+- [[hermesskillsi-socratesSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1081
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

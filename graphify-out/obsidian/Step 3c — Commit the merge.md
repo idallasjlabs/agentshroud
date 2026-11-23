@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/agents/i-crpr.md"
 type: "document"
-community: "Community 1276"
+community: "Skill: Create PR with Pre-Flight Audit (CRPR)"
 location: "L173"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1276
+  - community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
 ---
 
 # Step 3c — Commit the merge
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Create PR with Pre-Flight Audit (CRPR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1276
+#graphify/document #graphify/EXTRACTED #community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR

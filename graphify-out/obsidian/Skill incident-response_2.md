@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-incident-response.md"
+source_file: "docker/config/openclaw/skills/i-incident-response/SKILL.md"
 type: "document"
-community: "Community 2254"
-location: "L8"
+community: "openclaw/skills/i-incident-response/SKILL.md"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2254
+  - community/openclaw/skills/i-incident-response/SKILLmd
 ---
 
 # Skill: incident-response
 
 ## Connections
-- [[i-incident-response_1]] - `contains` [EXTRACTED]
+- [[openclawskillsi-incident-responseSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2254
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-incident-response/SKILLmd

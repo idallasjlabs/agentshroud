@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-scrum.md"
+source_file: ".agents/agents/i-scrum.md"
 type: "document"
-community: "Community 2259"
+community: ".agents/agents/i-scrum.md"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2259
+  - community/agents/agents/i-scrummd
 ---
 
 # Skill: scrum
 
 ## Connections
-- [[i-scrum_1]] - `contains` [EXTRACTED]
+- [[dot-agentsagentsi-scrum]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2259
+#graphify/document #graphify/EXTRACTED #community/agents/agents/i-scrummd

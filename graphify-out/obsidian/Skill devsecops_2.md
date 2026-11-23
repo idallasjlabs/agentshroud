@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-devsecops.md"
+source_file: ".agents/agents/i-devsecops.md"
 type: "document"
-community: "Community 2252"
+community: ".agents/agents/i-devsecops.md"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2252
+  - community/agents/agents/i-devsecopsmd
 ---
 
 # Skill: devsecops
 
 ## Connections
-- [[i-devsecops_1]] - `contains` [EXTRACTED]
+- [[dot-agentsagentsi-devsecops]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2252
+#graphify/document #graphify/EXTRACTED #community/agents/agents/i-devsecopsmd

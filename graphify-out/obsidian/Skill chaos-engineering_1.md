@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-chaos-engineering/SKILL.md"
+source_file: "docker/config/hermes/skills/i-chaos-engineering/SKILL.md"
 type: "document"
-community: "Community 1434"
-location: "L6"
+community: "hermes/skills/i-chaos-engineering/SKILL.md"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1434
+  - community/hermes/skills/i-chaos-engineering/SKILLmd
 ---
 
 # Skill: chaos-engineering
 
 ## Connections
-- [[SKILL_15]] - `contains` [EXTRACTED]
+- [[hermesskillsi-chaos-engineeringSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1434
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-chaos-engineering/SKILLmd

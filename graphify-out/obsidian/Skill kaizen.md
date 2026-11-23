@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/agents/i-kaizen.md"
+source_file: ".agents/skills/i-kaizen/SKILL.md"
 type: "document"
-community: "Community 2219"
-location: "L8"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2219
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Skill: kaizen
 
 ## Connections
-- [[i-kaizen]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-kaizenSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2219
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
