@@ -1,25 +1,21 @@
 ---
 source_file: ".agents/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "Community 582"
+community: "MCP AWS Profile Configuration README"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_582
+  - community/MCP_AWS_Profile_Configuration_README
 ---
 
 # MCP AWS Profile Configuration README
 
 ## Connections
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-mcpm-aws-profileREADME]] - `contains` [EXTRACTED]
 - [[MCP AWS Profile Configuration Skill_1]] - `references` [INFERRED]
-- [[Purpose_15]] - `contains` [EXTRACTED]
-- [[Purpose_54]] - `contains` [EXTRACTED]
-- [[README_15]] - `contains` [EXTRACTED]
-- [[Related Skills_19]] - `contains` [EXTRACTED]
-- [[Related Skills_73]] - `contains` [EXTRACTED]
-- [[SKILL_19]] - `contains` [EXTRACTED]
-- [[SKILL_106]] - `contains` [EXTRACTED]
-- [[Usage_21]] - `contains` [EXTRACTED]
-- [[Usage_77]] - `contains` [EXTRACTED]
+- [[Purpose_168]] - `contains` [EXTRACTED]
+- [[Related Skills_112]] - `contains` [EXTRACTED]
+- [[Usage_125]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_582
+#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_README

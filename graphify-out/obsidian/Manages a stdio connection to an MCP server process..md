@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Community 132"
+community: "MCPServerConfig"
 location: "L93"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_132
+  - community/MCPServerConfig
 ---
 
 # Manages a stdio connection to an MCP server process.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[StdioConnection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_132
+#graphify/rationale #graphify/EXTRACTED #community/MCPServerConfig

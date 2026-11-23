@@ -1,17 +1,17 @@
 ---
-source_file: "docs/runbooks/colima-docker-guide.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
 type: "document"
-community: "Community 168"
-location: "L137"
+community: "agentshroud-bot"
+location: "L119"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_168
+  - community/agentshroud-bot
 ---
 
 # Logs
 
 ## Connections
-- [[5. Container Management]] - `contains` [EXTRACTED]
+- [[agentshroud-bot_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_168
+#graphify/document #graphify/EXTRACTED #community/agentshroud-bot

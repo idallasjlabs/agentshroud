@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "Community 582"
+community: "MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_582
+  - community/MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # MCP AWS Profile Configuration (MCPM-AWS-PROFILE)
 
 ## Connections
-- [[Purpose_54]] - `contains` [EXTRACTED]
-- [[README_59]] - `contains` [EXTRACTED]
-- [[Related Skills_73]] - `contains` [EXTRACTED]
-- [[Usage_77]] - `contains` [EXTRACTED]
+- [[Purpose_123]] - `contains` [EXTRACTED]
+- [[Related Skills_53]] - `contains` [EXTRACTED]
+- [[Usage_63]] - `contains` [EXTRACTED]
+- [[hermesskillsi-mcpm-aws-profileREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_582
+#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

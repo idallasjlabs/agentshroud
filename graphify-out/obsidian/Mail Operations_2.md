@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/icloud.md"
+source_file: ".agents/agents/icloud.md"
 type: "document"
-community: "Community 635"
+community: "iCloud Services"
 location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_635
+  - community/iCloud_Services
 ---
 
 # Mail Operations
@@ -17,4 +17,4 @@ tags:
 - [[Send Email_2]] - `contains` [EXTRACTED]
 - [[iCloud Services_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_635
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

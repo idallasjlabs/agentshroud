@@ -1,35 +1,25 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "code"
-community: "Community 16"
+community: "test_memory_lifecycle.py"
 location: "L97"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_16
+  - graphify/EXTRACTED
+  - community/test_memory_lifecyclepy
 ---
 
 # MemorySecurityConfig
 
 ## Connections
-- [[.from_env()_2]] - `method` [EXTRACTED]
-- [[.setup_method()_11]] - `calls` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any_18]] - `uses` [INFERRED]
+- [[dot-from_env()_2]] - `method` [EXTRACTED]
+- [[dot-setup_method()_28]] - `calls` [EXTRACTED]
 - [[Combined memory security configuration.]] - `rationale_for` [EXTRACTED]
-- [[Exception_2]] - `uses` [INFERRED]
-- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
-- [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]
-- [[TestMemoryLifecycleManager]] - `uses` [INFERRED]
 - [[TestMemorySecurityIntegration]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
 - [[memory_config.py]] - `contains` [EXTRACTED]
-- [[middleware.py]] - `imports` [EXTRACTED]
+- [[middleware.py_2]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_16
+#graphify/code #graphify/EXTRACTED #community/test_memory_lifecyclepy

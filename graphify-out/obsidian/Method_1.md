@@ -1,17 +1,21 @@
 ---
-source_file: "docs/planning/v1.2/blue-team-assessment-v1.2.0.md"
-type: "document"
-community: "Community 1004"
-location: "L11"
+source_file: "cli/src/main.rs"
+type: "code"
+community: "main.rs"
+location: "L213"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1004
+  - community/mainrs
 ---
 
 # Method
 
 ## Connections
-- [[AgentShroud v1.2.0 — Blue Team Security Assessment]] - `contains` [EXTRACTED]
+- [[dot-request()_2]] - `references` [EXTRACTED]
+- [[dot-request()_3]] - `references` [EXTRACTED]
+- [[dot-request()_4]] - `references` [EXTRACTED]
+- [[FakeTransport]] - `references` [EXTRACTED]
+- [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1004
+#graphify/code #graphify/EXTRACTED #community/mainrs

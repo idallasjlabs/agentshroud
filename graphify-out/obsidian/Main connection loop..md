@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "rationale"
-community: "Community 6"
+community: "soc/models.py"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/soc/modelspy
 ---
 
 # Main connection loop.
 
 ## Connections
-- [[.run()_9]] - `rationale_for` [EXTRACTED]
+- [[dot-run()_9]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/soc/modelspy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md"
 type: "document"
-community: "Community 1926"
+community: "LOW — Informational"
 location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1926
+  - community/LOW__Informational
 ---
 
 # MEDIUM — Fix Soon
@@ -19,4 +19,4 @@ tags:
 - [[M8 Unpinned Base Images and `@latest` Tags]] - `contains` [EXTRACTED]
 - [[New Findings]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1926
+#graphify/document #graphify/EXTRACTED #community/LOW__Informational

@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Community 177"
+community: "MCP Tools Usage (README)"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_177
+  - community/MCP_Tools_Usage_README
 ---
 
 # MCP Tools Usage (SKILL)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[MCP Tools Usage (README)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_177
+#graphify/document #graphify/INFERRED #community/MCP_Tools_Usage_README

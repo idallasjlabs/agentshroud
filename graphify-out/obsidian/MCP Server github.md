@@ -1,13 +1,13 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "Community 1602"
+community: "MCP Server: github"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1602
+  - community/MCP_Server_github
 ---
 
 # MCP Server: github
 
-#graphify/code #graphify/EXTRACTED #community/Community_1602
+#graphify/code #graphify/EXTRACTED #community/MCP_Server_github

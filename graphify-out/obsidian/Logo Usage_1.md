@@ -1,17 +1,17 @@
 ---
-source_file: "branding/README.md"
+source_file: "docker/config/openclaw/workspace/BRAND.md"
 type: "document"
-community: "Community 192"
-location: "L31"
+community: "AgentShroud™ Brand Guidelines"
+location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_192
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Logo Usage
 
 ## Connections
-- [[Logos]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_192
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

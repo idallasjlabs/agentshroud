@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/i-sec-defense.agent.md"
 type: "document"
-community: "Community 1295"
+community: "AgentShroud Blue Team Security Auditor"
 location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1295
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Loss Categories
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Methodology_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1295
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

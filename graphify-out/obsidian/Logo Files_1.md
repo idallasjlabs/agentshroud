@@ -1,17 +1,17 @@
 ---
-source_file: "branding/QUICK-REFERENCE.md"
+source_file: "branding/INDEX.md"
 type: "document"
-community: "Community 586"
-location: "L3"
+community: "🎨 Quick Access"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_586
+  - community/_Quick_Access
 ---
 
 # Logo Files
 
 ## Connections
-- [[AgentShroud Brand Quick Reference]] - `contains` [EXTRACTED]
+- [[🎨 Quick Access]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_586
+#graphify/document #graphify/EXTRACTED #community/_Quick_Access

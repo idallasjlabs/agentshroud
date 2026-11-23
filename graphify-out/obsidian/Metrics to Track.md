@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Community 748"
+community: "AgentShroud System Architecture Document (SAD)"
 location: "L567"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_748
+  - community/AgentShroud_System_Architecture_Document_SAD
 ---
 
 # Metrics to Track
@@ -15,4 +15,4 @@ tags:
 - [[Monitoring & Observability]] - `contains` [EXTRACTED]
 - [[Monitoring and Observability]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_748
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD

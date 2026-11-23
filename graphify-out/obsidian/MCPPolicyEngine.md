@@ -1,46 +1,43 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "Community 35"
+community: "load_config"
 location: "L241"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/load_config
 ---
 
 # MCPPolicyEngine
 
 ## Connections
-- [[.__init__()_107]] - `method` [EXTRACTED]
-- [[._decide()_1]] - `method` [EXTRACTED]
-- [[._tier_for()_1]] - `method` [EXTRACTED]
-- [[.enforce()_1]] - `method` [EXTRACTED]
-- [[.evaluate()_1]] - `method` [EXTRACTED]
-- [[.test_engine_allows_known_server_under_default()]] - `calls` [EXTRACTED]
-- [[.test_engine_denies_unknown_server_under_default()]] - `calls` [EXTRACTED]
-- [[.test_engine_requires_approval_for_destructive_tool_on_known_server()]] - `calls` [EXTRACTED]
-- [[.test_no_mcp_section_still_deny_by_default()]] - `calls` [EXTRACTED]
-- [[Decides allow  deny  require-approval for MCP tool calls.      Usage]] - `rationale_for` [EXTRACTED]
-- [[GroupRoleResolver]] - `semantically_similar_to` [INFERRED]
-- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
-- [[MCPPolicyEngine_1]] - `uses` [INFERRED]
-- [[MonkeyPatch]] - `uses` [INFERRED]
-- [[Path_36]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[dot-__init__()_142]] - `method` [EXTRACTED]
+- [[dot-_decide()]] - `method` [EXTRACTED]
+- [[dot-_tier_for()]] - `method` [EXTRACTED]
+- [[dot-enforce()]] - `method` [EXTRACTED]
+- [[dot-evaluate()]] - `method` [EXTRACTED]
+- [[dot-test_engine_allows_known_server_under_default()]] - `calls` [EXTRACTED]
+- [[dot-test_engine_denies_unknown_server_under_default()]] - `calls` [EXTRACTED]
+- [[dot-test_engine_requires_approval_for_destructive_tool_on_known_server()]] - `calls` [EXTRACTED]
+- [[dot-test_no_mcp_section_still_deny_by_default()]] - `calls` [EXTRACTED]
+- [[Decides allow  deny  require-approval for MCP tool calls. Usage engine =…]] - `rationale_for` [EXTRACTED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `uses` [INFERRED]
 - [[TestDefaultPolicyNoMcpServers]] - `uses` [INFERRED]
-- [[_FakeApprovalQueue]] - `uses` [INFERRED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[engine()]] - `uses` [INFERRED]
+- [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[mcp_policy.py]] - `contains` [EXTRACTED]
-- [[rbac_config.py]] - `calls` [EXTRACTED]
+- [[test_allowlisted_server_safe_tool_is_allowed()]] - `uses` [INFERRED]
 - [[test_bare_tool_name_risk_tier_applies_across_servers()]] - `calls` [EXTRACTED]
+- [[test_critical_tool_requires_approval()]] - `uses` [INFERRED]
 - [[test_decision_records_soc_heatmap()]] - `calls` [EXTRACTED]
 - [[test_default_allow_opt_in_permits_non_allowlisted_safe_tool()]] - `calls` [EXTRACTED]
 - [[test_default_deny_posture_when_no_config()]] - `calls` [EXTRACTED]
 - [[test_denied_tool_can_be_specified_bare_or_qualified()]] - `calls` [EXTRACTED]
 - [[test_denylist_wins_over_allowlist()]] - `calls` [EXTRACTED]
+- [[test_denylisted_server_is_denied_even_if_tool_safe()]] - `uses` [INFERRED]
+- [[test_denylisted_tool_is_denied()]] - `uses` [INFERRED]
 - [[test_enforce_allows_allowlisted_safe_tool()]] - `calls` [EXTRACTED]
 - [[test_enforce_blocks_unknown_server()]] - `calls` [EXTRACTED]
 - [[test_enforce_high_risk_denied_on_rejection()]] - `calls` [EXTRACTED]
@@ -49,6 +46,7 @@ tags:
 - [[test_enforce_high_risk_without_queue_denies_closed()]] - `calls` [EXTRACTED]
 - [[test_enforce_real_queue_high_risk_not_downgraded_to_allow()]] - `calls` [EXTRACTED]
 - [[test_enforce_unicode_evasion_still_denied()]] - `calls` [EXTRACTED]
+- [[test_high_risk_tool_requires_approval()]] - `uses` [INFERRED]
 - [[test_invalid_default_action_falls_back_to_deny()]] - `calls` [EXTRACTED]
 - [[test_keyword_heuristic_auto_classifies_unlisted_destructive_tool()]] - `calls` [EXTRACTED]
 - [[test_mcp_policy.py]] - `imports` [EXTRACTED]
@@ -58,5 +56,7 @@ tags:
 - [[test_mcp_proxy_real_queue_high_risk_never_executes_without_approval()]] - `calls` [EXTRACTED]
 - [[test_owner_bypass_defaults_to_rbac_owner_identity()]] - `calls` [EXTRACTED]
 - [[test_owner_bypasses_approval_but_not_hard_deny()]] - `calls` [EXTRACTED]
+- [[test_server_and_tool_matching_is_case_insensitive()]] - `uses` [INFERRED]
+- [[test_unknown_server_is_denied_by_default()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_35
+#graphify/code #graphify/EXTRACTED #community/load_config

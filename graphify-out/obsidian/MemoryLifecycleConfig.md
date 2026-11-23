@@ -1,34 +1,26 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "code"
-community: "Community 16"
+community: "MemoryLifecycleConfig"
 location: "L48"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_16
+  - graphify/EXTRACTED
+  - community/MemoryLifecycleConfig
 ---
 
 # MemoryLifecycleConfig
 
 ## Connections
-- [[.setup_method()_10]] - `calls` [EXTRACTED]
-- [[Any_55]] - `uses` [INFERRED]
+- [[dot-__init__()_47]] - `references` [EXTRACTED]
+- [[dot-setup_method()_13]] - `calls` [EXTRACTED]
 - [[Configuration for memory lifecycle management.]] - `rationale_for` [EXTRACTED]
-- [[ContentThreat]] - `uses` [INFERRED]
-- [[ContentThreatType]] - `uses` [INFERRED]
-- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
 - [[MemoryLifecycleManager]] - `uses` [INFERRED]
-- [[Path_18]] - `uses` [INFERRED]
-- [[RetentionAction]] - `uses` [INFERRED]
-- [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
-- [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]
 - [[TestMemoryLifecycleManager]] - `uses` [INFERRED]
-- [[TestMemorySecurityIntegration]] - `uses` [INFERRED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[memory_config.py]] - `contains` [EXTRACTED]
 - [[memory_lifecycle.py]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_16
+#graphify/code #graphify/EXTRACTED #community/MemoryLifecycleConfig

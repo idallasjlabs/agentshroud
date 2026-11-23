@@ -1,22 +1,18 @@
 ---
-source_file: "branding/guidelines/brand-guidelines.md"
+source_file: "BRAND.md"
 type: "document"
-community: "Community 231"
-location: "L51"
+community: "AgentShroud™ Brand Guidelines"
+location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_231
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Logo Usage
 
 ## Connections
-- [[AgentShroud Brand Guidelines_1]] - `contains` [EXTRACTED]
-- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
-- [[Backgrounds]] - `contains` [EXTRACTED]
-- [[Clear Space]] - `contains` [EXTRACTED]
-- [[Minimum Size]] - `contains` [EXTRACTED]
-- [[Prohibited Uses]] - `contains` [EXTRACTED]
+- [[AgentShroud Transparent Logo (SVG)]] - `references` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_231
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

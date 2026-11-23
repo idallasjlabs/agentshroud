@@ -1,18 +1,16 @@
 ---
 source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Community 582"
+community: "MCP Auth Reset README"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/Community_582
+  - graphify/INFERRED
+  - community/MCP_Auth_Reset_README
 ---
 
 # MCP Auth Reset Skill
 
 ## Connections
-- [[MCP AWS Profile Configuration Skill_1]] - `references` [EXTRACTED]
 - [[MCP Auth Reset README]] - `references` [INFERRED]
-- [[MCP Doctor Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_582
+#graphify/document #graphify/INFERRED #community/MCP_Auth_Reset_README

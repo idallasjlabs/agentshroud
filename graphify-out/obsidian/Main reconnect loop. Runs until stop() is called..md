@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/slack_socket_client.py"
 type: "rationale"
-community: "Community 176"
+community: "SlackSocketClient"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_176
+  - community/SlackSocketClient
 ---
 
 # Main reconnect loop. Runs until stop() is called.
 
 ## Connections
-- [[.run()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-run()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_176
+#graphify/rationale #graphify/EXTRACTED #community/SlackSocketClient

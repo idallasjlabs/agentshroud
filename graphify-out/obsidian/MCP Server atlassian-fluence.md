@@ -1,13 +1,13 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "Community 1598"
+community: "MCP Server: atlassian-fluence"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1598
+  - community/MCP_Server_atlassian-fluence
 ---
 
 # MCP Server: atlassian-fluence
 
-#graphify/code #graphify/EXTRACTED #community/Community_1598
+#graphify/code #graphify/EXTRACTED #community/MCP_Server_atlassian-fluence

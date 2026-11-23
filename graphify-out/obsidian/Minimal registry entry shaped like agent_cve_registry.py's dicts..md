@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_auto_remediate_cves.py"
 type: "rationale"
-community: "Community 420"
+community: "plan_remediation"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_420
+  - community/plan_remediation
 ---
 
 # Minimal registry entry shaped like agent_cve_registry.py's dicts.
 
 ## Connections
-- [[_entry()]] - `rationale_for` [EXTRACTED]
+- [[_entry()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_420
+#graphify/rationale #graphify/EXTRACTED #community/plan_remediation

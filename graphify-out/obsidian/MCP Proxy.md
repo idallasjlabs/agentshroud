@@ -1,19 +1,19 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Community 637"
+community: "Proxy Layer"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_637
+  - community/Proxy_Layer
 ---
 
 # MCP Proxy
 
 ## Connections
 - [[MCP Server Integration Guide]] - `conceptually_related_to` [INFERRED]
-- [[TrustManager_5]] - `calls` [EXTRACTED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
 - [[mcp-config.yml]] - `conceptually_related_to` [EXTRACTED]
 - [[mcp_proxy.py (MCP tool call gate)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_637
+#graphify/concept #graphify/EXTRACTED #community/Proxy_Layer

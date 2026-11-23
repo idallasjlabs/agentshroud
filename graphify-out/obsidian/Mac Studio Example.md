@@ -1,18 +1,17 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 350"
+community: "AgentShroud Setup Guide"
 location: "L675"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_350
+  - community/AgentShroud_Setup_Guide
 ---
 
 # Mac Studio Example
 
 ## Connections
 - [[Multi-Instance Setup]] - `contains` [EXTRACTED]
-- [[Multi-Instance Setup_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_350
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

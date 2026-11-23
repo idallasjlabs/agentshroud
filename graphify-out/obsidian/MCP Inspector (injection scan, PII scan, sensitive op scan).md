@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-14-logic-flow.svg"
 type: "concept"
-community: "Community 916"
+community: "Approval queue (notify Isaiah via Telegram, wait up to 1 hour)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_916
+  - community/Approval_queue_notify_Isaiah_via_Telegram_wait_up_to_1_hour
 ---
 
 # MCP Inspector (injection scan, PII scan, sensitive op scan)
@@ -14,4 +14,4 @@ tags:
 - [[LLM inference (OpenAI GPT-4o or Anthropic Claude)]] - `calls` [EXTRACTED]
 - [[Threat level (NONELOW, MEDIUM, HIGH)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_916
+#graphify/concept #graphify/EXTRACTED #community/Approval_queue_notify_Isaiah_via_Telegram_wait_up_to_1_hour

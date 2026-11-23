@@ -1,19 +1,17 @@
 ---
-source_file: "BRAND.md"
+source_file: "branding/README.md"
 type: "document"
-community: "Community 192"
-location: "L30"
+community: "AgentShroud Brand Guidelines"
+location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_192
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Logo Usage
 
 ## Connections
-- [[AgentShroud Transparent Logo (SVG)]] - `references` [EXTRACTED]
-- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
-- [[AgentShroud™ Brand Guidelines_1]] - `references` [EXTRACTED]
+- [[Logos]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_192
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

@@ -1,17 +1,17 @@
 ---
-source_file: "branding/INDEX.md"
+source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 585"
-location: "L67"
+community: "AgentShroud Brand Guidelines"
+location: "L147"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_585
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Logo Files
 
 ## Connections
-- [[🎨 Quick Access]] - `contains` [EXTRACTED]
+- [[File Formats & Deliverables]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_585
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

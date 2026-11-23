@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "Community 2154"
+community: "MiddlewareManager.process_request"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2154
+  - community/MiddlewareManagerprocess_request
 ---
 
 # MiddlewareManager.process_request()
 
-## Connections
-- [[_process_inbound()]] - `calls` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_2154
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManagerprocess_request

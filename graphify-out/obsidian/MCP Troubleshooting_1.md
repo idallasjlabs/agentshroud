@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-mcpm/SKILL.md"
+source_file: ".cursor/agents/i-mcpm.md"
 type: "document"
-community: "Community 288"
-location: "L126"
+community: "Available MCP Servers"
+location: "L128"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_288
+  - community/Available_MCP_Servers
 ---
 
 # MCP Troubleshooting
@@ -16,4 +16,4 @@ tags:
 - [[Common Errors_1]] - `contains` [EXTRACTED]
 - [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_288
+#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers

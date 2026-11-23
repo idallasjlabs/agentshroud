@@ -1,17 +1,16 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
+source_file: ""
 type: "code"
-community: "Community 2003"
-location: "L63"
+community: "lifespan"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2003
+  - community/lifespan
 ---
 
 # LogRecord
 
 ## Connections
-- [[.filter()_1]] - `references` [EXTRACTED]
+- [[dot-filter()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2003
+#graphify/code #graphify/EXTRACTED #community/lifespan
