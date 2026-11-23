@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "A2AMethod"
+community: "KeyRotationManager"
 location: "L362"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AMethod
+  - community/KeyRotationManager
 ---
 
 # .test_emergency_rotation()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[Test emergency rotation workflow.]] - `rationale_for` [EXTRACTED]
 - [[TestKeyRotationWorkflow]] - `method` [EXTRACTED]
+- [[asyncio_8]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AMethod
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

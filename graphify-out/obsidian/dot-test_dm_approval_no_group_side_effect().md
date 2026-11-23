@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "code"
-community: "test_a2a_proxy.py"
+community: "ApprovalRequest"
 location: "L194"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/ApprovalRequest
 ---
 
 # .test_dm_approval_no_group_side_effect()
 
 ## Connections
-- [[ApprovalRequest_2]] - `calls` [EXTRACTED]
+- [[ApprovalRequest]] - `calls` [EXTRACTED]
 - [[DM approval must not send any message to a group chat ID.]] - `rationale_for` [EXTRACTED]
 - [[TestDMApprovalOwnerOnly]] - `method` [EXTRACTED]
+- [[asyncio_11]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

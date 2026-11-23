@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "TestOutboundPipelineIntegration"
+community: "MetadataGuard"
 location: "L626"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundPipelineIntegration
+  - community/MetadataGuard
 ---
 
 # .test_egress_filter_loaded()
@@ -15,4 +15,4 @@ tags:
 - [[EgressPolicy]] - `calls` [EXTRACTED]
 - [[TestNetworkSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration
+#graphify/code #graphify/EXTRACTED #community/MetadataGuard

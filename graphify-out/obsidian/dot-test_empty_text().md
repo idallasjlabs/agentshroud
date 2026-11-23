@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_blocklist.py"
+source_file: "gateway/tests/test_heuristic_classifier.py"
 type: "code"
-community: "Pydantic"
-location: "L131"
+community: "TestHeuristicClassifier"
+location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Pydantic
+  - community/TestHeuristicClassifier
 ---
 
 # .test_empty_text()
 
 ## Connections
-- [[TestLoadFromText]] - `method` [EXTRACTED]
+- [[TestHeuristicClassifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Pydantic
+#graphify/code #graphify/EXTRACTED #community/TestHeuristicClassifier

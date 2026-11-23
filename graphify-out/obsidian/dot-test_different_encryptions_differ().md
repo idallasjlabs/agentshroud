@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TestEncryptedStore"
+community: "EncryptedStore"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEncryptedStore
+  - community/EncryptedStore
 ---
 
 # .test_different_encryptions_differ()
@@ -15,4 +15,4 @@ tags:
 - [[Same plaintext should produce different blobs (random saltnonce).]] - `rationale_for` [EXTRACTED]
 - [[TestEncryptedStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEncryptedStore
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

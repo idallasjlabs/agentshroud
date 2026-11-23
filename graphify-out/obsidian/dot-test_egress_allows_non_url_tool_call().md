@@ -13,10 +13,13 @@ tags:
 
 ## Connections
 - [[MCPAuditTrail]] - `calls` [EXTRACTED]
-- [[MCPInspector_1]] - `calls` [EXTRACTED]
+- [[MCPInspector]] - `calls` [EXTRACTED]
 - [[MCPPermissionManager]] - `calls` [EXTRACTED]
-- [[MCPProxy_1]] - `calls` [EXTRACTED]
-- [[MCPToolCall_1]] - `calls` [EXTRACTED]
+- [[MCPProxy]] - `calls` [EXTRACTED]
+- [[MCPToolCall]] - `calls` [EXTRACTED]
 - [[TestProxyInterception]] - `method` [EXTRACTED]
+- [[__init__()]] - `contains` [EXTRACTED]
+- [[asyncio_4]] - `references` [EXTRACTED]
+- [[check_async()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPToolCall

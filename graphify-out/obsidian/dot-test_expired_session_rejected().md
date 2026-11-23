@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "TelegramAPIProxy (2)"
+community: "SessionManager"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/SessionManager
 ---
 
 # .test_expired_session_rejected()
 
 ## Connections
-- [[SessionManager]] - `calls` [EXTRACTED]
+- [[SessionManager]] - `calls` [INFERRED]
 - [[TestSessionValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/code #graphify/EXTRACTED #community/SessionManager

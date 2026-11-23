@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_dns_blocklist.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "AgentShroud Security Architecture"
-location: "L63"
+community: "WebProxy"
+location: "L579"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/WebProxy
 ---
 
 # .test_exact_match()
 
 ## Connections
-- [[TestIsBlocked]] - `method` [EXTRACTED]
+- [[TestIsDomainAllowed]] - `method` [EXTRACTED]
+- [[WebProxyConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/code #graphify/EXTRACTED #community/WebProxy

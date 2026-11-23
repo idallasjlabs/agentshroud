@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_dtd_control.py"
 type: "code"
-community: "test_main_endpoints.py"
+community: "WebContentScanner"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/WebContentScanner
 ---
 
 # .test_external_dtd_reference_detected()
@@ -15,4 +15,4 @@ tags:
 - [[No internal subset, but still pulls a remote DTD.]] - `rationale_for` [EXTRACTED]
 - [[TestDangerousXMLDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

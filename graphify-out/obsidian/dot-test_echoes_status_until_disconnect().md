@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "AsyncMock"
+community: "test_web_api_coverage.py"
 location: "L971"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/test_web_api_coveragepy
 ---
 
 # .test_echoes_status_until_disconnect()
@@ -15,4 +15,4 @@ tags:
 - [[TestWsUpdates]] - `method` [EXTRACTED]
 - [[_fake_ws()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/test_web_api_coveragepy

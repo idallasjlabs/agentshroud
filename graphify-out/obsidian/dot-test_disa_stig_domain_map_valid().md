@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_mfa_guard.py"
+community: "scanner_integration.py"
 location: "L961"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/scanner_integrationpy
 ---
 
 # .test_disa_stig_domain_map_valid()
 
 ## Connections
 - [[DISA STIG domain map references only valid domain IDs.]] - `rationale_for` [EXTRACTED]
-- [[TestComputeScorecard]] - `method` [EXTRACTED]
+- [[TestComputeScorecard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

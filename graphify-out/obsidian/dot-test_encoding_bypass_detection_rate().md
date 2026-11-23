@@ -1,21 +1,19 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "test_soc_egress_endpoints.py"
+community: "test_adversarial_injection.py"
 location: "L355"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_egress_endpointspy
+  - community/test_adversarial_injectionpy
 ---
 
 # .test_encoding_bypass_detection_rate()
 
 ## Connections
-- [[HeuristicClassifier]] - `calls` [EXTRACTED]
-- [[PromptGuard]] - `calls` [EXTRACTED]
 - [[TestEncodingBypass]] - `method` [EXTRACTED]
 - [[_any_detector_fires()]] - `calls` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy
+#graphify/code #graphify/EXTRACTED #community/test_adversarial_injectionpy

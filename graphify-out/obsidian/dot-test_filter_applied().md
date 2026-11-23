@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "MiddlewareManager"
+community: "TestFilterOutboundResponse"
 location: "L876"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/TestFilterOutboundResponse
 ---
 
 # .test_filter_applied()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFilterOutboundResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/TestFilterOutboundResponse

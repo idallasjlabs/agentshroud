@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "test_security_regressions_v1_2.py (6)"
+community: "TestScoreIncidentResponse"
 location: "L547"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_regressions_v1_2py_6
+  - community/TestScoreIncidentResponse
 ---
 
 # .test_five_with_soc_correlation_and_killswitch()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestScoreIncidentResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py_6
+#graphify/code #graphify/EXTRACTED #community/TestScoreIncidentResponse

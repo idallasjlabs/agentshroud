@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "AgentRegistry"
+community: "AsyncMock"
 location: "L643"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/AsyncMock
 ---
 
 # .test_file_upload_initial_comment_scanned()
@@ -16,6 +16,7 @@ tags:
 - [[TestMultiFieldOutboundScanning]] - `method` [EXTRACTED]
 - [[_make_proxy()_1]] - `calls` [EXTRACTED]
 - [[_pass_result()]] - `calls` [EXTRACTED]
+- [[asyncio_41]] - `references` [EXTRACTED]
 - [[files.upload initial_commenttitle text is scanned.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

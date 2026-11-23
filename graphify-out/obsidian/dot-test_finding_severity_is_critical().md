@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_dtd_control.py"
 type: "code"
-community: "test_main_endpoints.py"
+community: "WebContentScanner"
 location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/WebContentScanner
 ---
 
 # .test_finding_severity_is_critical()
@@ -15,4 +15,4 @@ tags:
 - [[TestDangerousXMLIsBlockedNotFlagged]] - `method` [EXTRACTED]
 - [[WebContentScanner]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

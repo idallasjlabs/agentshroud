@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "test_soc_services_coverage.py"
+community: "_patch_open"
 location: "L273"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_services_coveragepy
+  - community/_patch_open
 ---
 
 # .test_esrch_falls_through_to_proc_scan()
@@ -14,6 +14,8 @@ tags:
 ## Connections
 - [[Stale PID (ESRCH) is not EPERM — falls through to proc scan, then standby.]] - `rationale_for` [EXTRACTED]
 - [[TestCheckWazuhAgent]] - `method` [EXTRACTED]
+- [[_kill()]] - `contains` [EXTRACTED]
+- [[_kill()_1]] - `indirect_call` [INFERRED]
 - [[_patch_open()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_services_coveragepy
+#graphify/code #graphify/EXTRACTED #community/_patch_open

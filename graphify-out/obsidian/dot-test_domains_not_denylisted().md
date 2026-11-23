@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "EgressFilterConfig (2)"
+community: "EgressPolicy"
 location: "L682"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/EgressPolicy
 ---
 
 # .test_domains_not_denylisted()
@@ -16,4 +16,4 @@ tags:
 - [[None of the four domains should match the default denylist.]] - `rationale_for` [EXTRACTED]
 - [[TestOpenClawResearchDomainsAllowlisted]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/EgressPolicy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "Sunday Upgrade prompt"
+community: "TestFetchDockerhubTagsUsesCurl"
 location: "L413"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/TestFetchDockerhubTagsUsesCurl
 ---
 
 # .test_fetches_through_curl_with_a_bounded_time()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_fake_run()]] - `calls` [EXTRACTED]
 - [[TestFetchDockerhubTagsUsesCurl]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/code #graphify/EXTRACTED #community/TestFetchDockerhubTagsUsesCurl

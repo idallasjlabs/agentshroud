@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "code"
-community: "Any"
+community: "middleware.py"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/middlewarepy
 ---
 
 # .test_file_path_removal()
@@ -15,4 +15,4 @@ tags:
 - [[Test removal of file paths from responses.]] - `rationale_for` [EXTRACTED]
 - [[TestXMLLeakFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

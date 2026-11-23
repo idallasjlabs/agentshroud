@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "_make_proxy"
+community: "TestAccessControl"
 location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/TestAccessControl
 ---
 
 # .test_duration_zero_rejected()
 
 ## Connections
-- [[TestAccessControl_2]] - `method` [EXTRACTED]
+- [[TestAccessControl]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/TestAccessControl

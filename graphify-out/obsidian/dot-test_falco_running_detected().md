@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "iCloud Data Manager (ICLOUD) (2)"
+community: "_w"
 location: "L196"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/iCloud_Data_Manager_ICLOUD_2
+  - community/_w
 ---
 
 # .test_falco_running_detected()
@@ -15,4 +15,4 @@ tags:
 - [[TestProcScans]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD_2
+#graphify/code #graphify/EXTRACTED #community/_w

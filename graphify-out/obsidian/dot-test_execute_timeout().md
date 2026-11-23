@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "MCPPermissionManager (2)"
+community: "SSHProxy"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/SSHProxy
 ---
 
 # .test_execute_timeout()
@@ -15,5 +15,6 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[SSHProxy]] - `references` [EXTRACTED]
 - [[TestExecute]] - `method` [EXTRACTED]
+- [[asyncio_35]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

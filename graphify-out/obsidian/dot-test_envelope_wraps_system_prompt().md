@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "code"
-community: "KeyVaultConfig"
+community: "TestEnvelopeSigner"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/TestEnvelopeSigner
 ---
 
 # .test_envelope_wraps_system_prompt()
@@ -15,4 +15,4 @@ tags:
 - [[TestEnvelopeSigner]] - `method` [EXTRACTED]
 - [[wrap_system_prompt() sets issuer='system' and passes verification.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/code #graphify/EXTRACTED #community/TestEnvelopeSigner

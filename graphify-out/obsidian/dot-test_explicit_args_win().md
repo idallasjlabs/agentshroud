@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "→ {\"site\": \"site1\", \"test_mode\": True, \"output_prefix\": \"_test/site1/\"}"
-location: "L259"
+community: "test_cli_coverage.py"
+location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_site_site1_test_mode_True_output_prefix__test/site1/
+  - community/test_cli_coveragepy
 ---
 
 # .test_explicit_args_win()
@@ -15,4 +15,4 @@ tags:
 - [[TestClientFromEnv]] - `method` [EXTRACTED]
 - [[client_from_env()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_site_site1_test_mode_True_output_prefix__test/site1/
+#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy

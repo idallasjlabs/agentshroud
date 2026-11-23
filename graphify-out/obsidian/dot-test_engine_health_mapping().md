@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "test_soc_services_coverage.py"
+community: "TestStatusMappings"
 location: "L359"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_services_coveragepy
+  - community/TestStatusMappings
 ---
 
 # .test_engine_health_mapping()
 
 ## Connections
 - [[TestStatusMappings]] - `method` [EXTRACTED]
+- [[parametrize_15]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_services_coveragepy
+#graphify/code #graphify/EXTRACTED #community/TestStatusMappings

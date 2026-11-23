@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "TestLeakDetection"
+community: "make_fake_socket_module"
 location: "L189"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestLeakDetection
+  - community/make_fake_socket_module
 ---
 
 # .test_failover_to_second_upstream()
@@ -16,4 +16,4 @@ tags:
 - [[forward_query()]] - `calls` [EXTRACTED]
 - [[make_fake_socket_module()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestLeakDetection
+#graphify/code #graphify/EXTRACTED #community/make_fake_socket_module

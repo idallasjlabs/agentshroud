@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "PathIsolationManager"
+community: "TestPathIsolationManager"
 location: "L245"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/TestPathIsolationManager
 ---
 
 # .test_dont_cleanup_active_user_directories()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[Test that active user directories are not cleaned up.]] - `rationale_for` [EXTRACTED]
 - [[TestPathIsolationManager]] - `method` [EXTRACTED]
+- [[patch_5]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "soc/models.py"
 location: "L418"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/soc/modelspy
 ---
 
 # .test_dict_allowed_without_reason()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFromEgressAttempt]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

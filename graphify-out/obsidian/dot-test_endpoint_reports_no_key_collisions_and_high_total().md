@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "code"
-community: "test_forward_stream.py"
+community: "MiddlewareManager"
 location: "L192"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/MiddlewareManager
 ---
 
 # .test_endpoint_reports_no_key_collisions_and_high_total()
 
 ## Connections
-- [[Execute the real endpoint against a fully-populated app_state and         verify]] - `rationale_for` [EXTRACTED]
+- [[Execute the real endpoint against a fully-populated app_state and verify it…]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `calls` [EXTRACTED]
 - [[TestManageModulesEndpointAccuracy]] - `method` [EXTRACTED]
+- [[asyncio]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
