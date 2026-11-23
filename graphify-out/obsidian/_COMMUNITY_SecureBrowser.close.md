@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # SecureBrowser.close
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Newsletter Chat Front-ends & Search Infra_1]] - document - docker/config/hermes/cron/prompts/newsletter-chat-front-ends-search-infra.txt
+- [[SecureBrowser.close()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 
 ## Live Query (requires Dataview plugin)
 

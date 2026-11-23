@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # SCHEMA_VERSION entity
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[--cluster-only Flow]] - concept - docker/config/openclaw/skills/graphify/references/update.md
+- [[SCHEMA_VERSION entity]] - concept - docs/diagrams/images/diagram-08-erd.svg
 
 ## Live Query (requires Dataview plugin)
 

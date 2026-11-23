@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # Hermes Cannot Force-Switch to Custom-Named Local Model (Gap #8)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[Skill agile_1]] - document - docker/config/openclaw/skills/i-agile/SKILL.md
-- [[openclawskillsi-agileSKILL]] - document - docker/config/openclaw/skills/i-agile/SKILL.md
+- [[Hermes Cannot Force-Switch to Custom-Named Local Model (Gap 8)]] - rationale - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[Turbo Fieldflare Local Backend]] - concept - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
 
 ## Live Query (requires Dataview plugin)
 

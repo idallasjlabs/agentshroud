@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # MCP Integrations (GitHub, Atlassian, AWS, XMind)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[PII redaction — presidio engine 0.9 confidence minimum]] - rationale - CLAUDE.md
+- [[MCP Integrations (GitHub, Atlassian, AWS, XMind)]] - concept - docs/architecture/agentic-os.md
 
 ## Live Query (requires Dataview plugin)
 

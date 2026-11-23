@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # LLM writes its own Whisper domain-hint prompt
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[patch_edge_tts_proxy.py]] - code - docker/bots/hermes/patch_edge_tts_proxy.py
+- [[LLM writes its own Whisper domain-hint prompt]] - rationale - docker/config/hermes/skills/graphify/references/transcribe.md
 
 ## Live Query (requires Dataview plugin)
 

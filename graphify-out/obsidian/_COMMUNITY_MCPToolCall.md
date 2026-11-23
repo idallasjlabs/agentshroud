@@ -1,94 +1,86 @@
 ---
 type: community
-cohesion: 0.06
-members: 79
+members: 73
 ---
 
 # MCPToolCall
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 79 nodes
+**Members:** 73 nodes
 
 ## Members
-- [[dot-__post_init__()_8]] - code - gateway/proxy/mcp_proxy.py
-- [[dot-set_event_bus()_2]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-__post_init__()_1]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-__post_init__()_2]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-test_admin_private_data_not_redacted_for_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_admin_private_data_redacted_for_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_audit_entry_created()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_blocked_entries()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_chain_includes_blocked()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_chain_valid_after_calls()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_clean_call_allowed()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_clean_result_passes()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_egress_allows_non_url_tool_call()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_egress_denied_blocks_url_tool_call()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_elevated_agent_can_execute()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_error_result_logged()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_execute_none_content_result_does_not_unbind()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_execute_with_content_still_inspects()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_failed_entries()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_filter_by_agent()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_filter_by_server()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_filter_by_tool()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_from_dict_basic()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_from_dict_defaults()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_from_dict_http_transport()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_gateway_contributor_paths_redacted_for_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_gateway_data_parameter_violation_blocks_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_generate_report()_1]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_heavy_url_encoding_flagged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_highest_threat_high()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_highest_threat_none()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_injection_blocked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_inspection_result_threat_level()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_large_base64_flagged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_memory_markers_redacted_for_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_mixed_allowed_blocked_chain()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_network_request_flagged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_passthrough_allows_everything()_1]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_passthrough_allows_everything()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_passthrough_still_audits()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_pii_redacted_in_params()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_pii_redacted_in_result()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_private_parameter_violation_blocks_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_private_redaction_emits_privacy_event()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_private_tool_violation_emits_event()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_processing_time_recorded()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_rate_limit_enforced()_1]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_rate_limit_enforced()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_read_only_agent_can_read()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_read_only_agent_denied_execute()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_sensitive_blocked_strict_with_injection()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_sensitive_not_blocked_default()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_result_audit_logged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_result_processing_time()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_session_store_parameter_violation_blocks_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_shell_command_flagged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_small_base64_ok()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_stats_blocked_counted()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_stats_tracking()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_unknown_server_default_allow()_1]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_tool_call_generates_id_and_timestamp()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_tool_result_timestamp_default()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_unknown_server_default_allow()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_workspace_contributor_parameter_violation_blocks_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
-- [[FindingType]] - code - gateway/proxy/mcp_inspector.py
-- [[In strict mode, sensitive ops with injection ARE blocked.]] - rationale - gateway/tests/test_mcp_proxy.py
-- [[MCPProxy_1]] - code - gateway/proxy/mcp_proxy.py
-- [[MCPToolCall_1]] - code - gateway/proxy/mcp_proxy.py
-- [[Main MCP proxy that intercepts tool calls and routes through security.      Tran]] - rationale - gateway/proxy/mcp_proxy.py
+- [[A policy-permitted call passes the policy gate (inspectionpermission layers…]] - rationale - gateway/tests/test_mcp_policy.py
+- [[MCPToolCall]] - code - gateway/proxy/mcp_proxy.py
+- [[MCPToolResult]] - code - gateway/proxy/mcp_proxy.py
 - [[Mix of allowed, blocked, and result entries all in one chain.]] - rationale - gateway/tests/test_mcp_proxy.py
-- [[Regression result_inspection was possibly-unbound when the executed tool     re]] - rationale - gateway/tests/test_mcp_proxy.py
+- [[Regression result_inspection was possibly-unbound when the executed tool…]] - rationale - gateway/tests/test_mcp_proxy.py
+- [[Represents an MCP tool result.]] - rationale - gateway/proxy/mcp_proxy.py
 - [[Represents an MCP tool_use request.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Sensitive ops are flagged but not blocked in default mode.]] - rationale - gateway/tests/test_mcp_proxy.py
-- [[TestAllowDenyList]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestAuditQueries]] - code - gateway/tests/test_mcp_proxy.py
 - [[TestChainIntegrityMultiple]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestConfigParsing]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestDataclasses]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[TestExecuteResultInspectionBinding]] - code - gateway/tests/test_mcp_proxy.py
 - [[TestHashChainIntegration]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestPassthroughMode_1]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestPassthroughMode]] - code - gateway/tests/test_mcp_proxy.py
 - [[TestPrivacyPolicyEvents]] - code - gateway/tests/test_mcp_proxy.py
 - [[TestProcessingTime]] - code - gateway/tests/test_mcp_proxy.py
 - [[TestProxyInterception]] - code - gateway/tests/test_mcp_proxy.py
 - [[TestProxyPermissions]] - code - gateway/tests/test_mcp_proxy.py
 - [[TestProxyRateLimiting]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestProxyResultProcessing]] - code - gateway/tests/test_mcp_proxy.py
 - [[TestProxyStats]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestSensitiveOps]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestSuspiciousEncoding]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestThreatLevelCalc]] - code - gateway/tests/test_mcp_proxy.py
-- [[Threat level classification.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[ThreatLevel_1]] - code - gateway/proxy/mcp_inspector.py
-- [[Type of security finding.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[Wire optional event bus for privacysecurity telemetry.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[passthrough_proxy()_1]] - code - gateway/tests/test_mcp_proxy.py
-- [[proxy()_4]] - code - gateway/tests/test_mcp_proxy.py
-- [[test_mcp_proxy.py]] - code - gateway/tests/test_mcp_proxy.py
+- [[__init__()]] - code - gateway/tests/test_mcp_proxy.py
+- [[_fake_execute()]] - code - gateway/tests/test_mcp_proxy.py
+- [[_fake_execute()_1]] - code - gateway/tests/test_mcp_proxy.py
+- [[_ok()]] - code - gateway/tests/test_mcp_policy.py
+- [[asyncio_4]] - code
+- [[check_async()]] - code - gateway/tests/test_mcp_proxy.py
+- [[check_async()_1]] - code - gateway/tests/test_mcp_proxy.py
+- [[emit()]] - code - gateway/tests/test_mcp_proxy.py
+- [[emit()_1]] - code - gateway/tests/test_mcp_proxy.py
+- [[emit()_2]] - code - gateway/tests/test_mcp_proxy.py
+- [[emit()_3]] - code - gateway/tests/test_mcp_proxy.py
+- [[emit()_4]] - code - gateway/tests/test_mcp_proxy.py
+- [[emit()_5]] - code - gateway/tests/test_mcp_proxy.py
+- [[test_mcp_proxy_allows_policy_permitted_call()]] - code - gateway/tests/test_mcp_policy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -98,26 +90,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 84 edges to [[_COMMUNITY_CrossBotTrustLedger]]
-- 48 edges to [[_COMMUNITY_MCPInspector]]
-- 39 edges to [[_COMMUNITY_What Does OpenClaw Actually Need to Write]]
-- 33 edges to [[_COMMUNITY_MCPToolResult]]
-- 22 edges to [[_COMMUNITY_test_bots_ssh_exec_wrapper.py]]
-- 22 edges to [[_COMMUNITY_MCPPermissionManager (2)_1]]
-- 16 edges to [[_COMMUNITY_ToolResultSanitizer]]
-- 15 edges to [[_COMMUNITY_ContextSegment]]
-- 13 edges to [[_COMMUNITY_StdioConnection]]
-- 7 edges to [[_COMMUNITY_AgentShroud Security Value Proposition]]
-- 5 edges to [[_COMMUNITY_TestInspectorEdgeCases]]
-- 5 edges to [[_COMMUNITY_TestPIIDetection]]
-- 5 edges to [[_COMMUNITY_Egress Filter Errors]]
-- 2 edges to [[_COMMUNITY_Enum]]
-- 1 edge to [[_COMMUNITY_SecurityPipeline (2)]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager]]
+- 18 edges to [[_COMMUNITY_test_mcp_proxy.py]]
+- 15 edges to [[_COMMUNITY_MCPProxy]]
+- 9 edges to [[_COMMUNITY_test_mcp_proxy_coverage.py]]
+- 8 edges to [[_COMMUNITY_load_config]]
+- 4 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 3 edges to [[_COMMUNITY_MCPPermissionManager]]
+- 3 edges to [[_COMMUNITY_MCPAuditTrail]]
+- 2 edges to [[_COMMUNITY_mcp_proxy.py]]
+- 1 edge to [[_COMMUNITY_EnhancedApprovalQueue]]
 
 ## Top bridge nodes
-- [[MCPProxy_1]] - degree 87, connects to 15 communities
-- [[MCPToolCall_1]] - degree 100, connects to 13 communities
-- [[test_mcp_proxy.py]] - degree 46, connects to 8 communities
-- [[ThreatLevel_1]] - degree 28, connects to 7 communities
-- [[FindingType]] - degree 27, connects to 6 communities
+- [[MCPToolCall]] - degree 59, connects to 7 communities
+- [[MCPToolResult]] - degree 37, connects to 6 communities
+- [[TestProxyInterception]] - degree 12, connects to 4 communities
+- [[dot-test_egress_allows_non_url_tool_call()]] - degree 9, connects to 4 communities
+- [[dot-test_egress_denied_blocks_url_tool_call()]] - degree 8, connects to 4 communities

@@ -1,19 +1,17 @@
 ---
 type: community
-cohesion: 0.50
 members: 4
 ---
 
 # Manual Usage (Current Method)
 
-**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[Discrete confidence-score rubric]] - rationale - docker/config/hermes/skills/graphify/references/extraction-spec.md
-- [[Finding Triage Classes (CONFIRMEDPROBABLESELF_HEALEDFALSE_POSITIVEGOOD_DIRECTION)]] - concept - docker/config/openclaw/skills/i-ab/SKILL.md
-- [[GSDL-715 (silent regression incident)]] - concept - docker/config/hermes/skills/i-ab/SKILL.md
-- [[scriptsaudit_merge_regression.py]] - concept - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Manual Usage (Current Method)]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Step 1 Create 1Password Share Link]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Step 2 Fetch with Browser-Fetch Skill]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Step 3 Parse Output]] - document - docs/reference/BROWSER_FETCH_SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +19,9 @@ members: 4
 TABLE source_file, type FROM #community/Manual_Usage_Current_Method
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Browser-Fetch Skill for 1Password Share Links]]
+
+## Top bridge nodes
+- [[Manual Usage (Current Method)]] - degree 4, connects to 1 community

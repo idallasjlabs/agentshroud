@@ -1,26 +1,24 @@
 ---
 type: community
-cohesion: 0.18
 members: 11
 ---
 
 # Route map (by router)
 
-**Cohesion:** 0.18 - loosely connected
 **Members:** 11 nodes
 
 ## Members
-- [[ADR-003-two-network-container-isolation]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[ADR-003 Two-Network Container Isolation]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Consequences_5]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Context_8]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Decision_8]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Mitigation_1]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Negative Consequences_4]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Network Configuration]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Positive Consequences_4]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Status_8]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
-- [[Three-Network Architecture (externalmgmtinternal)]] - concept - docs/architecture/deployment-diagram.md
+- [[Agent-facing proxy endpoints (not control-plane)]] - document - docs/api/api-reference.md
+- [[Audit  ledger]] - document - docs/api/api-reference.md
+- [[DNS]] - document - docs/api/api-reference.md
+- [[Egress control]] - document - docs/api/api-reference.md
+- [[Health & status]] - document - docs/api/api-reference.md
+- [[Quarantine]] - document - docs/api/api-reference.md
+- [[RBAC]] - document - docs/api/api-reference.md
+- [[Route map (by router)]] - document - docs/api/api-reference.md
+- [[SOC — Shared Command Layer (`socv1`, `gatewaysocrouter.py`)]] - document - docs/api/api-reference.md
+- [[Scanning]] - document - docs/api/api-reference.md
+- [[Web control center (`gatewaywebapi.py`)]] - document - docs/api/api-reference.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,8 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Mnemosyne — Retention Engineer (2)]]
-- 1 edge to [[_COMMUNITY_Control Center]]
+- 1 edge to [[_COMMUNITY_Integration Guide]]
 
 ## Top bridge nodes
-- [[ADR-003 Two-Network Container Isolation]] - degree 8, connects to 2 communities
+- [[Route map (by router)]] - degree 11, connects to 1 community

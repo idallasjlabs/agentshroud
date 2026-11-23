@@ -1,34 +1,22 @@
 ---
 type: community
-cohesion: 0.10
-members: 20
+members: 10
 ---
 
 # Seccomp Profiles
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 20 nodes
+**Members:** 10 nodes
 
 ## Members
 - [[Allowed Syscall Categories]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
-- [[Alternate Compose Files]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
 - [[Applied By]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
 - [[Architecture Support]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
 - [[Blocked Syscalls (Notable)]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
 - [[Default Action]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
 - [[Gateway vs Bot Profile Differences]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
-- [[Networks_1]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
-- [[Purpose_84]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
-- [[Related Notes_41]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
-- [[Related Notes_42]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
+- [[Purpose_64]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
+- [[Related Notes_26]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
 - [[Seccomp Profiles]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
-- [[Secrets Files]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
-- [[Services]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
-- [[Volumes_1]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
-- [[agentshroud (agentshroud-bot)]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
-- [[docker-compose.yml_1]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
-- [[docker-compose.yml]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
-- [[gateway (agentshroud-gateway)]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
 - [[seccomp-profiles]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
 
 ## Live Query (requires Dataview plugin)
@@ -37,3 +25,9 @@ members: 20
 TABLE source_file, type FROM #community/Seccomp_Profiles
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Architecture Overview]]
+
+## Top bridge nodes
+- [[seccomp-profiles]] - degree 2, connects to 1 community

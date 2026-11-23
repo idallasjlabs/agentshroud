@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # MCP Server: home-assistant
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[scriptscheck-vendor-compat.sh — A2A JSON-RPC smoke check]] - rationale - CHANGELOG.md
+- [[MCP Server home-assistant]] - code - .mcp.json
 
 ## Live Query (requires Dataview plugin)
 

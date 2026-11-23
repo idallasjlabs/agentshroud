@@ -1,20 +1,18 @@
 ---
 type: community
-cohesion: 0.40
 members: 5
 ---
 
 # Quality Assurance (QA)
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Daedalus — Concept Illustrator]] - document - docker/config/hermes/skills/i-daedalus/README.md
-- [[Purpose_23]] - document - docker/config/hermes/skills/i-daedalus/README.md
-- [[Related Skills_9]] - document - docker/config/hermes/skills/i-daedalus/README.md
-- [[Usage_12]] - document - docker/config/hermes/skills/i-daedalus/README.md
-- [[hermesskillsi-daedalusREADME]] - document - docker/config/hermes/skills/i-daedalus/README.md
+- [[Purpose_148]] - document - docker/config/openclaw/skills/i-qa/README.md
+- [[Quality Assurance (QA)_2]] - document - docker/config/openclaw/skills/i-qa/README.md
+- [[Related Skills_78]] - document - docker/config/openclaw/skills/i-qa/README.md
+- [[Usage_88]] - document - docker/config/openclaw/skills/i-qa/README.md
+- [[openclawskillsi-qaREADME]] - document - docker/config/openclaw/skills/i-qa/README.md
 
 ## Live Query (requires Dataview plugin)
 

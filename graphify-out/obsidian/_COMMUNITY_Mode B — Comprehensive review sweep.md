@@ -1,20 +1,18 @@
 ---
 type: community
-cohesion: 0.40
 members: 5
 ---
 
 # Mode B — Comprehensive review sweep
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[DOCKER_HOST]] - code - scripts/launch-instance.sh
-- [[PATH_10]] - code - scripts/launch-instance.sh
-- [[find_port()]] - code - scripts/launch-instance.sh
-- [[launch-instance.sh]] - code - scripts/launch-instance.sh
-- [[launch-instance.sh script]] - code - scripts/launch-instance.sh
+- [[Mode B — Comprehensive review sweep]] - document - .agents/skills/i-hdev/references/mode-b-sweep.md
+- [[Step 1 — One branch + worktree for the whole sweep]] - document - .agents/skills/i-hdev/references/mode-b-sweep.md
+- [[Step 2 — Work through directories one at a time]] - document - .agents/skills/i-hdev/references/mode-b-sweep.md
+- [[Step 3 — After the last directory (or a natural stopping point)]] - document - .agents/skills/i-hdev/references/mode-b-sweep.md
+- [[i-hdevreferencesmode-b-sweep]] - document - .agents/skills/i-hdev/references/mode-b-sweep.md
 
 ## Live Query (requires Dataview plugin)
 

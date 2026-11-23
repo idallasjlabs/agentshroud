@@ -1,48 +1,40 @@
 ---
 type: community
-cohesion: 0.09
-members: 33
+members: 27
 ---
 
 # PodmanEngine
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 33 nodes
+**Members:** 27 nodes
 
 ## Members
-- [[dot-__init__()_105]] - code - gateway/runtime/podman_engine.py
-- [[dot-_cmd()]] - code - gateway/runtime/podman_engine.py
+- [[dot-__init__()_96]] - code - gateway/runtime/podman_engine.py
+- [[dot-_cmd()_1]] - code - gateway/runtime/podman_engine.py
 - [[dot-_detect_compose()]] - code - gateway/runtime/podman_engine.py
-- [[dot-build()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-compose_down()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-compose_up()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-exec()_1]] - code - gateway/runtime/podman_engine.py
+- [[dot-build()_2]] - code - gateway/runtime/podman_engine.py
+- [[dot-compose_down()_2]] - code - gateway/runtime/podman_engine.py
+- [[dot-compose_up()_2]] - code - gateway/runtime/podman_engine.py
+- [[dot-exec()_2]] - code - gateway/runtime/podman_engine.py
 - [[dot-generate_systemd()]] - code - gateway/runtime/podman_engine.py
-- [[dot-health_check()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-inspect()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-logs()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-network_create()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-network_rm()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-pause()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-pull()_1]] - code - gateway/runtime/podman_engine.py
+- [[dot-health_check()_2]] - code - gateway/runtime/podman_engine.py
+- [[dot-inspect()_2]] - code - gateway/runtime/podman_engine.py
+- [[dot-logs()_2]] - code - gateway/runtime/podman_engine.py
+- [[dot-network_create()_2]] - code - gateway/runtime/podman_engine.py
+- [[dot-network_rm()_2]] - code - gateway/runtime/podman_engine.py
+- [[dot-pause()_2]] - code - gateway/runtime/podman_engine.py
+- [[dot-pull()_2]] - code - gateway/runtime/podman_engine.py
 - [[dot-push()_2]] - code - gateway/runtime/podman_engine.py
-- [[dot-rm()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-run()_2]] - code - gateway/runtime/podman_engine.py
-- [[dot-setup_method()_16]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-stop()_7]] - code - gateway/runtime/podman_engine.py
-- [[dot-test_generate_systemd()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_health_check()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_ps_json()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_run_selinux_volumes()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-unpause()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-volume_create()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-volume_rm()_1]] - code - gateway/runtime/podman_engine.py
-- [[Any_35]] - code - gateway/runtime/podman_engine.py
+- [[dot-rm()_2]] - code - gateway/runtime/podman_engine.py
+- [[dot-run()_3]] - code - gateway/runtime/podman_engine.py
+- [[dot-stop()_8]] - code - gateway/runtime/podman_engine.py
+- [[dot-unpause()_2]] - code - gateway/runtime/podman_engine.py
+- [[dot-volume_create()_2]] - code - gateway/runtime/podman_engine.py
+- [[dot-volume_rm()_2]] - code - gateway/runtime/podman_engine.py
+- [[Any_34]] - code
 - [[Container engine backed by the Podman CLI.]] - rationale - gateway/runtime/podman_engine.py
 - [[Detect podman compose or podman-compose.]] - rationale - gateway/runtime/podman_engine.py
 - [[Generate a systemd unit file for a container.]] - rationale - gateway/runtime/podman_engine.py
 - [[PodmanEngine]] - code - gateway/runtime/podman_engine.py
-- [[TestPodmanEngine]] - code - gateway/tests/test_runtime_engines.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,20 +44,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_jira_weekly_review.py]]
-- 5 edges to [[_COMMUNITY_egress_retry.py]]
-- 3 edges to [[_COMMUNITY_pipeline.py — Security Pipeline]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager (6)]]
-- 2 edges to [[_COMMUNITY_Approval Queue (human-in-the-loop)]]
-- 2 edges to [[_COMMUNITY_Workflow (follow in order)]]
-- 1 edge to [[_COMMUNITY_hermesskillsi-browserbrowse.js]]
-- 1 edge to [[_COMMUNITY_server.py]]
-- 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 Master Plan]]
-- 1 edge to [[_COMMUNITY__get_gmail_app_password]]
-- 1 edge to [[_COMMUNITY_tts.py]]
-- 1 edge to [[_COMMUNITY_AppleContainerEngine]]
+- 5 edges to [[_COMMUNITY_AppleContainerEngine]]
+- 4 edges to [[_COMMUNITY_patch]]
+- 1 edge to [[_COMMUNITY_test_runtime_engines.py]]
 
 ## Top bridge nodes
-- [[PodmanEngine]] - degree 45, connects to 11 communities
-- [[TestPodmanEngine]] - degree 11, connects to 4 communities
-- [[Any_35]] - degree 3, connects to 2 communities
+- [[PodmanEngine]] - degree 33, connects to 3 communities

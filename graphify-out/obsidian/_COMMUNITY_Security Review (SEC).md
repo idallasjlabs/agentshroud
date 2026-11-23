@@ -1,23 +1,22 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+members: 9
 ---
 
 # Security Review (SEC)
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[Contents]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Coverage Requirements]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Purpose_2]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Related Notes_2]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Test Execution]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Test Locations]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Why `tmppytest_cache`]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[pytest.ini]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[dot-agentsskillsi-secREADME]] - document - .agents/skills/i-sec/README.md
+- [[Purpose_6]] - document - .agents/skills/i-sec/README.md
+- [[Related Skills]] - document - .agents/skills/i-sec/README.md
+- [[Security Review (SEC)]] - document - .agents/skills/i-sec/README.md
+- [[Usage]] - document - .agents/skills/i-sec/README.md
+- [[hermesagentsi-security-reviewer]] - document - docker/config/hermes/agents/i-security-reviewer.md
+- [[openclawagentsi-security-reviewer]] - document - docker/config/openclaw/agents/i-security-reviewer.md
+- [[security-reviewer]] - document - docker/config/hermes/agents/i-security-reviewer.md
+- [[security-reviewer_1]] - document - docker/config/openclaw/agents/i-security-reviewer.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_EgressFilter]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[pytest.ini]] - degree 8, connects to 1 community
+- [[Security Review (SEC)]] - degree 7, connects to 1 community

@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Newsletter: Mac Clustering
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Daily Check-in (disabled — bot-identity-locked to dev)]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[Newsletter Mac Clustering_1]] - document - docker/config/hermes/cron/prompts/newsletter-mac-clustering.txt
 
 ## Live Query (requires Dataview plugin)
 

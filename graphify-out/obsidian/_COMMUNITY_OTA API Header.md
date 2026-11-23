@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # OTA API Header
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Redaction]] - concept - docs/project/glossary.md
+- [[OTA API Header]] - code - firmware/voice-terminal/main/ota.h
 
 ## Live Query (requires Dataview plugin)
 

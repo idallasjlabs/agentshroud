@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Newsletter: Personal AI Assistants
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[CVE-2026-9367 — command injection bypass via terminal_tool]] - document - gateway/security/tool_acl.py
+- [[Newsletter Personal AI Assistants_1]] - document - docker/config/hermes/cron/prompts/newsletter-personal-ai-assistants.txt
 
 ## Live Query (requires Dataview plugin)
 

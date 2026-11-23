@@ -1,85 +1,93 @@
 ---
 type: community
-cohesion: 0.07
-members: 70
+members: 80
 ---
 
 # HTTPConnectProxy
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 70 nodes
+**Members:** 80 nodes
 
 ## Members
-- [[dot-__init__()_188]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-__init__()_189]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-close()_17]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-close()_18]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-drain()_1]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-get_extra_info()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-write()_1]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[Bytes relayed before a connection error are still sampled for scanning.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[CONNECT tunnel establishment must race IPv4IPv6 (RFC 8305) instead of     tryin]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[Egress filter without _approval_queue attr - bypass proceeds silently.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[First open_connection attempt fails; retry (with patched sleep) succeeds.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[HTTPConnectProxy]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[Host-only CONNECT target defaults to port 443; blocked host - 403.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[Minimal StreamWriter stand-in that records written bytes.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[Port-443 tunnel bytes are TLS ciphertext — clamscan can never match a     signat]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[Port-80 downloads are plaintext — malware sampling must keep working.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[Real-world regression (2026-07-29) uvloop (the active event loop under     uvic]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[StreamReader_3]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[Transport without an underlying socket (None) is skipped cleanly.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[Writer exposing a .transport whose socket records setsockopt calls.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[_CloseRaisesWriter]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_MockWriter]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_SocketTransportWriter]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_allowlist_proxy()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_capture_scans()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_eof_target_connection()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_make_stream()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[asyncio.open_connection replacement returning an immediately-EOF stream.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[clamscan binary missing (sidecar down) - no exception, temp file removed.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[clamscan runs must never share the default executor with LLM upstream     calls]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[get_extra_info raising must not break the established tunnel.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[log_external_decision raising must not break the CONNECT.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[target_writer.close() raising after relay completes must not propagate.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[test_bypass_logging_failure_does_not_block_tunnel()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_bypass_with_egress_filter_lacking_approval_queue()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_clamav_scan_clean_records_nothing()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_clamav_scan_infected_records_stats()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_clamav_scan_unavailable_degrades_silently()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_clamav_scan_unlink_failure_swallowed()]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-__init__()_217]] - code - gateway/tests/test_http_proxy.py
+- [[dot-close()_21]] - code - gateway/tests/test_http_proxy.py
+- [[dot-close()_22]] - code - gateway/tests/test_http_proxy.py
+- [[dot-drain()_2]] - code - gateway/tests/test_http_proxy.py
+- [[dot-drain()_3]] - code - gateway/tests/test_http_proxy.py
+- [[dot-get_extra_info()_1]] - code - gateway/tests/test_http_proxy.py
+- [[dot-get_stats()_18]] - code - gateway/proxy/http_proxy.py
+- [[dot-start()_2]] - code - gateway/proxy/http_proxy.py
+- [[dot-stop()_12]] - code - gateway/proxy/http_proxy.py
+- [[dot-write()_2]] - code - gateway/tests/test_http_proxy.py
+- [[dot-write()_3]] - code - gateway/tests/test_http_proxy.py
+- [[Asyncio HTTP CONNECT proxy server. Intercepts CONNECT tunnel requests,…]] - rationale - gateway/proxy/http_proxy.py
+- [[CONNECT to a private IP is blocked by SSRF protection.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Create a StreamReader loaded with data and a mock StreamWriter.]] - rationale - gateway/tests/test_http_proxy.py
+- [[HTTPConnectProxy]] - code - gateway/proxy/http_proxy.py
+- [[HTTPConnectProxy ships with a populated default allowlist.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Minimal asyncio.StreamWriter mock that captures written bytes.]] - rationale - gateway/tests/test_http_proxy.py
+- [[None peer falls back to generic label without error.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Return proxy traffic statistics.]] - rationale - gateway/proxy/http_proxy.py
+- [[Second call for same IP uses cache; rDNS is only called once, fDNS never.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Start the CONNECT proxy server.]] - rationale - gateway/proxy/http_proxy.py
+- [[Startup registry hit returns correct bot_id immediately.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Stop the CONNECT proxy server.]] - rationale - gateway/proxy/http_proxy.py
+- [[System bypass domains should be logged to the SOC decision history.]] - rationale - gateway/tests/test_http_proxy.py
+- [[System bypass domains should not error when egress_filter is None.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Tests for HTTPConnectProxy — CONNECT tunnel server on port 8181.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Unknown IP resolved via reverse-DNS to a known bot hostname → correct bot_id…]] - rationale - gateway/tests/test_http_proxy.py
+- [[Unknown IP whose rDNS doesn't match any bot, and fDNS fails → generic label,…]] - rationale - gateway/tests/test_http_proxy.py
+- [[Unknown IP with no bot_hostnames registered → generic label, cached.]] - rationale - gateway/tests/test_http_proxy.py
+- [[_DummyTargetWriter_1]] - code - gateway/tests/test_http_proxy.py
+- [[_MockWriter_1]] - code - gateway/tests/test_http_proxy.py
+- [[_fdns()]] - code - gateway/tests/test_http_proxy.py
+- [[_make_stream()_1]] - code - gateway/tests/test_http_proxy.py
+- [[_open_conn()_3]] - code - gateway/tests/test_http_proxy.py
+- [[_open_conn()_4]] - code - gateway/tests/test_http_proxy.py
+- [[_open_conn()_5]] - code - gateway/tests/test_http_proxy.py
+- [[_open_conn()_6]] - code - gateway/tests/test_http_proxy.py
+- [[_rdns()]] - code - gateway/tests/test_http_proxy.py
+- [[api.telegram.org must NOT be a system bypass domain. Direct CONNECT tunnels to…]] - rationale - gateway/tests/test_http_proxy.py
+- [[asyncio_82]] - code
+- [[check_async()_63]] - code - gateway/tests/test_http_proxy.py
+- [[check_async()_64]] - code - gateway/tests/test_http_proxy.py
+- [[check_async()_65]] - code - gateway/tests/test_http_proxy.py
+- [[clamscan runs must never share the default executor with LLM upstream calls…]] - rationale - gateway/tests/test_http_proxy_coverage.py
+- [[log_external_decision()_3]] - code - gateway/tests/test_http_proxy.py
+- [[rDNS fails; forward DNS resolves bot hostname to source IP → correct bot_id…]] - rationale - gateway/tests/test_http_proxy.py
+- [[rDNS fails; forward DNS resolves to a DIFFERENT IP → generic label, cached.]] - rationale - gateway/tests/test_http_proxy.py
+- [[rDNS failure + fDNS failure → generic label, cached, no exception.]] - rationale - gateway/tests/test_http_proxy.py
+- [[rDNS returns non-matching hostname; forward DNS matches → correct bot_id cached.]] - rationale - gateway/tests/test_http_proxy.py
+- [[start() binds a real loopback server; a client gets a parsed response; stop()…]] - rationale - gateway/tests/test_http_proxy_coverage.py
+- [[test_agent_id_for_peer_cached_after_first_lookup()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_forward_dns_hit()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_forward_dns_no_ip_match()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_known_ip()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_lazy_rdns_error()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_lazy_rdns_hit()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_lazy_rdns_miss()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_none_peer()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_rdns_miss_forward_dns_hit()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_unknown_no_hostnames()]] - code - gateway/tests/test_http_proxy.py
+- [[test_blocked_domain_is_tracked_in_recent()]] - code - gateway/tests/test_http_proxy.py
 - [[test_clamav_scans_use_dedicated_single_thread_executor()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_empty_request_line_returns_nothing()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_handle_client_swallows_generic_exception()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_handle_client_swallows_timeout_and_closes_writer()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_handle_client_tolerates_writer_close_failure()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_header_read_timeout_returns_408()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_http_proxy_coverage.py]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_keepalive_set_on_both_tunnel_ends()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_keepalive_skipped_when_socket_is_none()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_keepalive_socket_lookup_failure_is_swallowed()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_non_numeric_port_returns_400()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_recent_stats_trimmed_to_100_entries()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_and_scan_idle_timeout_no_data_no_scan()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_and_scan_limit_reached_scans_once()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_and_scan_plain_http_port_still_scans()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_and_scan_read_error_scans_partial_buffer()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_and_scan_small_download_scanned_at_eof()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_and_scan_swallows_writer_close_failure()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_and_scan_tls_tunnel_skips_ciphertext_scan()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_copies_bytes_until_eof()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_idle_timeout_closes_writer()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_swallows_read_errors()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_swallows_writer_close_failure()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_request_line_timeout_returns_408()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_stop_without_start_is_noop()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_target_without_port_defaults_to_443()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_tunnel_all_attempts_fail_returns_502()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_tunnel_connect_falls_back_when_happy_eyeballs_unsupported()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_tunnel_connect_uses_happy_eyeballs()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_tunnel_retries_then_succeeds()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_tunnel_target_writer_close_failure_swallowed()]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[test_connect_blocked_domain_returns_403()]] - code - gateway/tests/test_http_proxy.py
+- [[test_connect_denied_by_egress_filter_returns_403()]] - code - gateway/tests/test_http_proxy.py
+- [[test_connect_system_bypass_domain_skips_policy_checks()]] - code - gateway/tests/test_http_proxy.py
+- [[test_connect_unknown_domain_can_be_allowed_by_interactive_egress()]] - code - gateway/tests/test_http_proxy.py
+- [[test_default_allowed_domains_non_empty()]] - code - gateway/tests/test_http_proxy.py
+- [[test_http_proxy.py]] - code - gateway/tests/test_http_proxy.py
+- [[test_initial_stats_are_zero()]] - code - gateway/tests/test_http_proxy.py
+- [[test_malformed_request_line_returns_400()]] - code - gateway/tests/test_http_proxy.py
+- [[test_non_connect_method_returns_405()]] - code - gateway/tests/test_http_proxy.py
+- [[test_proxy_created_with_custom_web_proxy()]] - code - gateway/tests/test_http_proxy.py
+- [[test_proxy_created_with_default_web_proxy()]] - code - gateway/tests/test_http_proxy.py
+- [[test_proxy_created_with_egress_filter()]] - code - gateway/tests/test_http_proxy.py
+- [[test_ssrf_attempt_returns_403()]] - code - gateway/tests/test_http_proxy.py
+- [[test_start_serves_and_stop_closes_loopback()]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[test_stats_structure()]] - code - gateway/tests/test_http_proxy.py
+- [[test_system_bypass_domain_logs_external_decision()]] - code - gateway/tests/test_http_proxy.py
+- [[test_system_bypass_without_egress_filter()]] - code - gateway/tests/test_http_proxy.py
+- [[test_telegram_is_force_blocked_not_bypass()]] - code - gateway/tests/test_http_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -89,13 +97,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 39 edges to [[_COMMUNITY__pcm_bytes]]
-- 16 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
-- 6 edges to [[_COMMUNITY_Usage]]
+- 33 edges to [[_COMMUNITY_test_http_proxy_coverage.py]]
+- 22 edges to [[_COMMUNITY_WebProxy]]
+- 7 edges to [[_COMMUNITY_dot-_relay]]
+- 5 edges to [[_COMMUNITY_EgressPolicy]]
+- 4 edges to [[_COMMUNITY_test_clamav_scan_unavailable_degrades_silently]]
+- 2 edges to [[_COMMUNITY_EgressFilter]]
+- 1 edge to [[_COMMUNITY_SecurityPipeline]]
+- 1 edge to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_lifespan]]
 
 ## Top bridge nodes
-- [[test_http_proxy_coverage.py]] - degree 53, connects to 3 communities
-- [[HTTPConnectProxy]] - degree 36, connects to 3 communities
-- [[_MockWriter]] - degree 36, connects to 2 communities
-- [[StreamReader_3]] - degree 15, connects to 2 communities
-- [[_CloseRaisesWriter]] - degree 9, connects to 2 communities
+- [[HTTPConnectProxy]] - degree 84, connects to 10 communities
+- [[test_http_proxy.py]] - degree 41, connects to 3 communities
+- [[test_connect_unknown_domain_can_be_allowed_by_interactive_egress()]] - degree 11, connects to 2 communities
+- [[test_connect_system_bypass_domain_skips_policy_checks()]] - degree 10, connects to 2 communities
+- [[test_connect_denied_by_egress_filter_returns_403()]] - degree 9, connects to 2 communities

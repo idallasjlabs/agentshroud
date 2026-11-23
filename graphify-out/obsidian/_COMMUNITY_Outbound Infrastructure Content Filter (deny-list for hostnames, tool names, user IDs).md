@@ -1,20 +1,17 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+members: 4
 ---
 
 # Outbound Infrastructure Content Filter (deny-list for hostnames, tool names, user IDs)
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[dot-test_installed_not_running_is_clean_note()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_not_installed_not_running()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_running_with_alerts_sets_timestamp()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_running_without_alert_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestFalcoSummary_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Monitor-First Design Rationale Observe → Tune → Enforce (operator must flip before production)]] - rationale - docs/planning/redteam/01-enforce-by-default.md
+- [[Outbound Infrastructure Content Filter (deny-list for hostnames, tool names, user IDs)]] - concept - docs/planning/redteam/00-information-disclosure.md
+- [[Red Team Finding 00 Agent Self-Disclosure of Internal Architecture]] - document - docs/planning/redteam/00-information-disclosure.md
+- [[Red Team Finding 01 Security Modules Default to Monitor Mode — Zero Active Defense]] - document - docs/planning/redteam/01-enforce-by-default.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,11 +19,3 @@ members: 5
 TABLE source_file, type FROM #community/Outbound_Infrastructure_Content_Filter_deny-list_for_hostnames_tool_names_user_IDs
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_UserSessionManager (3) (2)]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (3) (2)]]
-
-## Top bridge nodes
-- [[TestFalcoSummary_1]] - degree 5, connects to 1 community
-- [[dot-test_installed_not_running_is_clean_note()]] - degree 2, connects to 1 community

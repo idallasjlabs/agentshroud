@@ -1,23 +1,21 @@
 ---
 type: community
-cohesion: 0.06
-members: 60
+members: 61
 ---
 
 # KeyVault
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 60 nodes
+**Members:** 61 nodes
 
 ## Members
-- [[dot-__init__()_21]] - code - gateway/security/key_vault.py
-- [[dot-__init__()_22]] - code - gateway/security/key_vault.py
-- [[dot-__init__()_23]] - code - gateway/security/key_vault.py
+- [[dot-__init__()_34]] - code - gateway/security/key_vault.py
+- [[dot-__init__()_35]] - code - gateway/security/key_vault.py
+- [[dot-__init__()_36]] - code - gateway/security/key_vault.py
 - [[dot-_agent_in_scope()]] - code - gateway/security/key_vault.py
 - [[dot-_log_audit()]] - code - gateway/security/key_vault.py
 - [[dot-check_value_match()]] - code - gateway/security/key_vault.py
 - [[dot-delete_key()]] - code - gateway/security/key_vault.py
-- [[dot-get_audit_log()_1]] - code - gateway/security/key_vault.py
+- [[dot-get_audit_log()]] - code - gateway/security/key_vault.py
 - [[dot-get_key()]] - code - gateway/security/key_vault.py
 - [[dot-inject_for_request()]] - code - gateway/security/key_vault.py
 - [[dot-list_keys()]] - code - gateway/security/key_vault.py
@@ -25,7 +23,7 @@ members: 60
 - [[dot-rotate_key()]] - code - gateway/security/key_vault.py
 - [[dot-scan_outbound()]] - code - gateway/security/key_vault.py
 - [[dot-store_key()]] - code - gateway/security/key_vault.py
-- [[dot-test_default_config()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_default_config()_1]] - code - gateway/tests/test_key_vault.py
 - [[dot-test_delete_key()]] - code - gateway/tests/test_key_vault.py
 - [[dot-test_detect_api_key_patterns()]] - code - gateway/tests/test_key_vault.py
 - [[dot-test_detect_key_in_outbound()]] - code - gateway/tests/test_key_vault.py
@@ -55,10 +53,9 @@ members: 60
 - [[KeyEntry]] - code - gateway/security/key_vault.py
 - [[KeyInjector]] - code - gateway/security/key_vault.py
 - [[KeyLeakDetector]] - code - gateway/security/key_vault.py
-- [[KeyScope]] - code - gateway/security/key_vault.py
 - [[KeyVault]] - code - gateway/security/key_vault.py
+- [[KeyVaultConfig]] - code - gateway/security/key_vault.py
 - [[LeakScanResult]] - code - gateway/security/key_vault.py
-- [[Per-agent API key scoping, redaction, leak detection, and rotation]] - concept - gateway/tests/test_key_vault.py
 - [[TestKeyInjection]] - code - gateway/tests/test_key_vault.py
 - [[TestKeyLeakDetection]] - code - gateway/tests/test_key_vault.py
 - [[TestKeyRedaction]] - code - gateway/tests/test_key_vault.py
@@ -66,7 +63,9 @@ members: 60
 - [[TestKeyScoping]] - code - gateway/tests/test_key_vault.py
 - [[TestKeyStorage]] - code - gateway/tests/test_key_vault.py
 - [[TestKeyVaultConfig]] - code - gateway/tests/test_key_vault.py
+- [[Tests for API key isolation and vault.]] - rationale - gateway/tests/test_key_vault.py
 - [[config()]] - code - gateway/tests/test_key_vault.py
+- [[fixture_24]] - code
 - [[key_vault.py]] - code - gateway/security/key_vault.py
 - [[test_key_vault.py]] - code - gateway/tests/test_key_vault.py
 - [[vault()]] - code - gateway/tests/test_key_vault.py
@@ -79,18 +78,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 37 edges to [[_COMMUNITY_KeyVaultConfig]]
-- 13 edges to [[_COMMUNITY_ContextGuard]]
-- 4 edges to [[_COMMUNITY_AuditChain]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL.md (2)]]
-- 1 edge to [[_COMMUNITY_Any]]
-- 1 edge to [[_COMMUNITY_check_command]]
-- 1 edge to [[_COMMUNITY__wrap_response()]]
-- 1 edge to [[_COMMUNITY_dot-_make_proxy()]]
+- 9 edges to [[_COMMUNITY_asyncio_1]]
+- 3 edges to [[_COMMUNITY_EncryptedStore]]
+- 3 edges to [[_COMMUNITY_lifespan.py]]
+- 3 edges to [[_COMMUNITY_lifespan]]
+- 2 edges to [[_COMMUNITY_test_security_audit.py]]
+- 1 edge to [[_COMMUNITY_middleware.py]]
 
 ## Top bridge nodes
-- [[KeyVault]] - degree 53, connects to 5 communities
-- [[key_vault.py]] - degree 12, connects to 5 communities
-- [[KeyLeakDetector]] - degree 29, connects to 2 communities
-- [[dot-test_key_vault_init()]] - degree 3, connects to 2 communities
-- [[test_key_vault.py]] - degree 13, connects to 1 community
+- [[KeyVault]] - degree 26, connects to 5 communities
+- [[KeyVaultConfig]] - degree 14, connects to 5 communities
+- [[KeyLeakDetector]] - degree 14, connects to 3 communities
+- [[dot-scan_outbound()]] - degree 3, connects to 1 community
+- [[dot-test_key_vault_init()]] - degree 3, connects to 1 community

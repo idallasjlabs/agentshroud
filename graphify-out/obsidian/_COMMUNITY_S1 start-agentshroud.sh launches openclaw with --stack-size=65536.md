@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # S1 start-agentshroud.sh launches openclaw with --stack-size=65536
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[SCRUM-154 — blocking response.read() froze the gateway event loop]] - concept - gateway/tests/test_llm_proxy_failover.py
+- [[S1 start-agentshroud.sh launches openclaw with --stack-size=65536]] - concept - tests/startup_smoke/test_bot_boot_static.sh
 
 ## Live Query (requires Dataview plugin)
 

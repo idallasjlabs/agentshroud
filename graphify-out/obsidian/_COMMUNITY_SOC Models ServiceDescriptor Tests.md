@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # SOC Models ServiceDescriptor Tests
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[test_alert_telegram_relay.py — AlertTelegramRelay tests]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[SOC Models ServiceDescriptor Tests]] - code - gateway/tests/test_soc_models.py
 
 ## Live Query (requires Dataview plugin)
 

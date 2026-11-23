@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Native CLAUDE.md Integration
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[BDD Skill (Gherkin GivenWhenThen specs)]] - document - docker/config/hermes/skills/i-bdd/SKILL.md
+- [[Native CLAUDE.md Integration]] - concept - docker/config/openclaw/skills/graphify/references/hooks.md
 
 ## Live Query (requires Dataview plugin)
 

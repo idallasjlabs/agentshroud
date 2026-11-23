@@ -1,53 +1,49 @@
 ---
 type: community
-cohesion: 0.07
-members: 38
+members: 36
 ---
 
 # Hermes Cron Jobs Reference & Recreation Guide
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 38 nodes
+**Members:** 36 nodes
 
 ## Members
-- [[dot-start-history Epoch Restart Ledger]] - concept - docker/config/hermes/cron/prompts/weekly-hermes-stability-report.txt
-- [[AgentShroud Daily Check-in (Hermes Prompt)]] - document - docker/config/hermes/cron/prompts/agentshroud-daily-check-in.txt
-- [[Cron Job Recreation Procedure (create + model pin edit)]] - concept - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[dot-finding-scratch.md Overwrite-Per-Query Protocol]] - concept - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
+- [[Apple Silicon Local-LLM Stack (oMLX, MLX-LM, MLX-VLM, vLLM-MLX, Ollama, Turbo Fieldfare)]] - concept - docker/config/hermes/cron/prompts/newsletter-local-inference-engines.txt
+- [[Autonomous Cron Agent Persona (no narration)]] - rationale - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
 - [[Cron Daily Competitive Landscape Update]] - document - docker/bots/openclaw/config/cron/jobs.json
+- [[Dated Job-Log Snapshot Copy (optdataworkspacejob-logs)]] - concept - docker/config/hermes/cron/prompts/today-in-ai.txt
+- [[Distributed Mac Inference Topic (exo, MLX Thunderbolt, prima.cpp, llama.cpp RPC)]] - concept - docker/config/hermes/cron/prompts/newsletter-mac-clustering.txt
 - [[Hermes Cron Jobs Reference & Recreation Guide]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Hermes Failure Scenario Catalog (gateway crash, volume corruption, bot disconnect, dependency outage)]] - concept - docker/config/hermes/cron/prompts/monthly-chaos-engineering-drill.txt
-- [[Hermes Live Cron Store (optdatacronjobs.json)]] - concept - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[How to recreate a job]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Job index]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Monthly Chaos Engineering Drill (Hermes Prompt)]] - document - docker/config/hermes/cron/prompts/monthly-chaos-engineering-drill.txt
-- [[Never docker cp Prompt Files (pipe via stdin instead)]] - rationale - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[OpenClaw cron AgentShroud Weekly Summary]] - code - docker/bots/openclaw/config/cron/jobs.json
-- [[PrepSend Job Split (agent prep job + no-agent email job)]] - rationale - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Prompt AgentShroud Daily Check-in]] - document - docker/config/hermes/cron/prompts/agentshroud-daily-check-in.txt
-- [[Prompt Daily Component Health Digest]] - document - docker/config/hermes/cron/prompts/daily-component-health-digest.txt
-- [[Prompt Monthly Chaos Engineering Drill]] - document - docker/config/hermes/cron/prompts/monthly-chaos-engineering-drill.txt
+- [[Hermes Cron Jobs — Reference & Recreation Guide]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[How to recreate a job_1]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Job index_1]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Minimal GitHub API Polling (2 calls, last 1-2 comments only)]] - rationale - docker/config/hermes/cron/prompts/turbo-fieldfare-fix-watch.txt
+- [[MoE Expert SSD Offload  Streaming Technique]] - concept - docker/config/hermes/cron/prompts/newsletter-moe-streaming-ssd-offload.txt
+- [[Pre-Written Dated Report Header (agent must not compute the date)]] - rationale - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
+- [[Prompt Newsletter — Chat Front-Ends & Search Infra]] - document - docker/config/hermes/cron/prompts/newsletter-chat-front-ends-search-infra.txt
+- [[Prompt Newsletter — Coding-Agent CLIs]] - document - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
+- [[Prompt Newsletter — Local Inference Engines]] - document - docker/config/hermes/cron/prompts/newsletter-local-inference-engines.txt
+- [[Prompt Newsletter — Mac Clustering]] - document - docker/config/hermes/cron/prompts/newsletter-mac-clustering.txt
+- [[Prompt Newsletter — MoE Streaming & SSD Offload]] - document - docker/config/hermes/cron/prompts/newsletter-moe-streaming-ssd-offload.txt
 - [[Prompt Newsletter — Model Version Tracker]] - document - docker/config/hermes/cron/prompts/newsletter-model-version-tracker.txt
+- [[Prompt Newsletter — Personal AI Assistants]] - document - docker/config/hermes/cron/prompts/newsletter-personal-ai-assistants.txt
 - [[Prompt OMLX MoE Streaming Health Check]] - document - docker/config/hermes/cron/prompts/omlx-moe-streaming-health-check.txt
-- [[Prompt Weekly Hermes Stability Report]] - document - docker/config/hermes/cron/prompts/weekly-hermes-stability-report.txt
-- [[Prompt Weekly Kaizen Review]] - document - docker/config/hermes/cron/prompts/weekly-kaizen-review.txt
-- [[Provider Must Be `custom` (not ollama  openai-local)]] - rationale - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Prompt Today in AI (12-Query Sweep)]] - document - docker/config/hermes/cron/prompts/today-in-ai.txt
+- [[Prompt Turbo Fieldfare Fix Watch]] - document - docker/config/hermes/cron/prompts/turbo-fieldfare-fix-watch.txt
 - [[Provider-Must-Be-Custom Rule]] - rationale - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Restart Backoff Pause (5-minute sleep)]] - concept - docker/config/hermes/cron/prompts/weekly-hermes-stability-report.txt
-- [[SHIPPED  FRICTION  IMPROVE Retrospective Format]] - concept - docker/config/hermes/cron/prompts/weekly-kaizen-review.txt
-- [[Script-Output-Only Constraint (no tools, no recomputation)]] - rationale - docker/config/hermes/cron/prompts/daily-component-health-digest.txt
-- [[Seed Job AgentShroud Daily Check-in]] - document - docker/config/hermes/cron/jobs.yaml
-- [[Seed Job Monthly Chaos Engineering Drill]] - document - docker/config/hermes/cron/jobs.yaml
-- [[Seed Job Weekly Hermes Stability Report]] - document - docker/config/hermes/cron/jobs.yaml
-- [[Seed Job Weekly Kaizen Review]] - document - docker/config/hermes/cron/jobs.yaml
-- [[Stale Trivy Scan Disclosure Requirement]] - rationale - docker/config/hermes/cron/prompts/daily-component-health-digest.txt
-- [[Stale `model_provider ollama` in Seed YAML]] - rationale - docker/config/hermes/cron/jobs.yaml
-- [[Telegram Formatting Rule (bold only, no headers or tables)]] - rationale - docker/config/hermes/cron/prompts/agentshroud-daily-check-in.txt
+- [[Search-Snippets-Only Rule (web_extractfetchbrowse unconfigured)]] - rationale - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
+- [[Streaming Probe Metrics (time-to-first-token, stall detection, total latency)]] - concept - docker/config/hermes/cron/prompts/omlx-moe-streaming-health-check.txt
+- [[Strict Sequential 4-Query Search Protocol]] - concept - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
+- [[TL;DR Cross-Query Synthesis Step]] - concept - docker/config/hermes/cron/prompts/today-in-ai.txt
 - [[Tracked Open-Weight Model Families (Qwen, DeepSeek, Gemma, gpt-oss, GLM)]] - concept - docker/config/hermes/cron/prompts/newsletter-model-version-tracker.txt
-- [[Weekly Kaizen Review (Hermes Prompt)]] - document - docker/config/hermes/cron/prompts/weekly-kaizen-review.txt
-- [[gateway-exit-diag.log RestartExit Telemetry]] - concept - docker/config/hermes/cron/prompts/weekly-hermes-stability-report.txt
-- [[gemma-4-26b-a4b-it Model Pin]] - concept - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Tracked Personal Agent Platforms (OpenClaw, IronClaw, Hermes, Grok Bot)]] - concept - docker/config/hermes/cron/prompts/newsletter-personal-ai-assistants.txt
+- [[Turbo Fieldfare Issue 84 (decoder_consume malformed tool-call bug)]] - concept - docker/config/hermes/cron/prompts/turbo-fieldfare-fix-watch.txt
+- [[append_finding.py Finding-Append Script]] - concept - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
+- [[append_trend_log.py Trend-Log Append Script]] - concept - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
 - [[hermescronJOBS-REFERENCE]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
 - [[oMLX Chat Completions Endpoint (host.docker.internal8000v1)]] - concept - docker/config/hermes/cron/prompts/omlx-moe-streaming-health-check.txt
+- [[trend-log.md Rolling One-Line Summary Log]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,17 +53,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_DockerEngine]]
-- 5 edges to [[_COMMUNITY_Atlas — Curriculum Architect (3)]]
-- 4 edges to [[_COMMUNITY_hermesskillsi-icloudscriptscalendar.js]]
-- 2 edges to [[_COMMUNITY_Report Delivery Format Instructions (2)]]
-- 1 edge to [[_COMMUNITY_test_security_regressions_v1_2.py (4)]]
-- 1 edge to [[_COMMUNITY_AgentTarget (5)]]
-- 1 edge to [[_COMMUNITY_Browser — Secure Browser Automation]]
+- 5 edges to [[_COMMUNITY_Prompt Daily Component Health Digest]]
+- 3 edges to [[_COMMUNITY_Telegram Formatting Rule (bold only, no headers or tables)]]
+- 2 edges to [[_COMMUNITY_Job details]]
+- 1 edge to [[_COMMUNITY_OpenClaw Cron Jobs Reference & Recreation Guide]]
+- 1 edge to [[_COMMUNITY_AgentShroud Changelog]]
 
 ## Top bridge nodes
-- [[Hermes Cron Jobs Reference & Recreation Guide]] - degree 31, connects to 5 communities
-- [[Prompt Daily Component Health Digest]] - degree 7, connects to 2 communities
-- [[OpenClaw cron AgentShroud Weekly Summary]] - degree 5, connects to 2 communities
-- [[gemma-4-26b-a4b-it Model Pin]] - degree 5, connects to 1 community
-- [[Prompt OMLX MoE Streaming Health Check]] - degree 5, connects to 1 community
+- [[Hermes Cron Jobs Reference & Recreation Guide]] - degree 21, connects to 5 communities
+- [[Strict Sequential 4-Query Search Protocol]] - degree 12, connects to 1 community
+- [[Hermes Cron Jobs — Reference & Recreation Guide]] - degree 4, connects to 1 community
+- [[Prompt OMLX MoE Streaming Health Check]] - degree 4, connects to 1 community
+- [[trend-log.md Rolling One-Line Summary Log]] - degree 2, connects to 1 community

@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # MCP Server: github-idallasj
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Build-config pinning — sdkconfig.defaults pins TCP_MSSstackWDTTCP buffers]] - rationale - CHANGELOG.md
+- [[MCP Server github-idallasj]] - code - .mcp.json
 
 ## Live Query (requires Dataview plugin)
 

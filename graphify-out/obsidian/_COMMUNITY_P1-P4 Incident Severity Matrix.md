@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # P1-P4 Incident Severity Matrix
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[SCRUM-110 restart recovery must preserve original timeout_action, not hardcoded deny]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[P1-P4 Incident Severity Matrix]] - concept - docker/config/openclaw/skills/i-production/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

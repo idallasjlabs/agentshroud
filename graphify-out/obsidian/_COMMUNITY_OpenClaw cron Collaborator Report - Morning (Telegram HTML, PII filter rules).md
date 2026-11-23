@@ -1,18 +1,16 @@
 ---
 type: community
-cohesion: 0.67
 members: 3
 ---
 
 # OpenClaw cron: Collaborator Report - Morning (Telegram HTML, PII filter rules)
 
-**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[deploy-crush.sh — global Crush skill deployment]] - concept - .llm_settings/scripts/README.md
-- [[deploy-opencode.sh — global OpenCode agent deployment]] - concept - .llm_settings/scripts/README.md
-- [[i- prefix rename of all 58 skills]] - rationale - .llm_settings/UPGRADE_LOG.md
+- [[OpenClaw cron Collaborator Daily Digest]] - code - docker/bots/openclaw/config/cron/jobs.json
+- [[OpenClaw cron Collaborator Report - Evening]] - code - docker/bots/openclaw/config/cron/jobs.json
+- [[OpenClaw cron Collaborator Report - Morning (Telegram HTML, PII filter rules)]] - code - docker/bots/openclaw/config/cron/jobs.json
 
 ## Live Query (requires Dataview plugin)
 

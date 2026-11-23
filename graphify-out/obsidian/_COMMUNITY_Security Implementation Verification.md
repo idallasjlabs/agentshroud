@@ -1,31 +1,36 @@
 ---
 type: community
-cohesion: 0.12
-members: 16
+members: 23
 ---
 
 # Security Implementation Verification
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 16 nodes
+**Members:** 23 nodes
 
 ## Members
-- [[Configuration  Environment Variables_8]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[Function Details_17]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[Key Classes  Functions_19]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[Key Differences from DockerEngine]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine.__init__(cli)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine._detect_compose()]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine.compose_up(file, detach)  compose_down(file)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine.generate_systemd(name)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine.health_check()]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine.ps(all)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine.run(image, name, , volumes, ...)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[Purpose_117]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[Related_23]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[Responsibilities_21]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[podman_engine.py_2]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[podman_engine.py_1]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[1. Defense in Depth]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[2. Simple Rules Are Secure]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[3. Bot's Superior Reasoning]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Layer 1 Bot Instructions (Primary Defense)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Layer 2 Gateway Blocking (Defense in Depth)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Layer 3 Audit Logging (Monitoring)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Security Implementation Verification]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Test 1 Telegram Access (Should Refuse + Block)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Test 2 Control UI Access (Should Refuse)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Test 3 Console Access (Should Display)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Test 4 Internal Use (Should Work)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Ultra-Conservative Policy Requirements]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[✅ Authoritative Files (Active)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[✅ Verification Tests]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[❌ Removed Files (Outdated)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[🎓 Key Principles]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[🎯 Policy Compliance Check]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[🎯 Summary]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[🏗️ Architecture Overview]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[📁 Current File Status]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[📊 Multi-Layer Defense]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[📋 Compliance Checklist]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[🔍 Container Status]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,3 +38,9 @@ members: 16
 TABLE source_file, type FROM #community/Security_Implementation_Verification
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_SECURITY_VALUE_PROPOSITION]]
+
+## Top bridge nodes
+- [[Security Implementation Verification]] - degree 10, connects to 1 community

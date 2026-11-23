@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Production testing guidelines (test isolation patterns)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Bug Report Issue Template]] - document - .github/ISSUE_TEMPLATE/bug_report.yml
+- [[Production testing guidelines (test isolation patterns)]] - rationale - .llm_settings/docs/SKILLS_REFERENCE.md
 
 ## Live Query (requires Dataview plugin)
 

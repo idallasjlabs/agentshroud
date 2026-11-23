@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # MCP Server: awslabs.aws-api-mcp-server
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Observability Skill]] - document - .agents/skills/i-observability/SKILL.md
+- [[MCP Server awslabs.aws-api-mcp-server]] - code - .mcp.json
 
 ## Live Query (requires Dataview plugin)
 

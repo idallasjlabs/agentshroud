@@ -1,55 +1,51 @@
 ---
 type: community
-cohesion: 0.06
-members: 40
+members: 38
 ---
 
 # OpenClaw Bot SSH Configuration
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 40 nodes
+**Members:** 38 nodes
 
 ## Members
-- [[dot-agentsskillsi-pmREADME]] - document - .agents/skills/i-pm/README.md
-- [[dot-agentsskillsi-productionREADME]] - document - .agents/skills/i-production/README.md
-- [[dot-agentsskillsi-psREADME]] - document - .agents/skills/i-ps/README.md
-- [[dot-agentsskillsi-qaREADME]] - document - .agents/skills/i-qa/README.md
-- [[Incident Response (SKILL)]] - document - .agents/skills/i-production/SKILL.md
-- [[MCP Tools Usage (README)]] - document - .agents/skills/i-mcpm/README.md
-- [[MCP Tools Usage (SKILL)]] - document - .agents/skills/i-mcpm/SKILL.md
-- [[Production Safety Checklist (PROD-SAFETY)_1]] - document - docker/config/hermes/skills/i-ps/README.md
-- [[Production Safety Checklist (SKILL)]] - document - .agents/skills/i-ps/SKILL.md
-- [[Project Management (PM)]] - document - docker/config/hermes/skills/i-pm/README.md
-- [[Project Management (README)]] - document - .agents/skills/i-pm/README.md
-- [[Purpose_62]] - document - .agents/skills/i-pm/README.md
-- [[Purpose_63]] - document - .agents/skills/i-production/README.md
-- [[Purpose_64]] - document - .agents/skills/i-ps/README.md
-- [[Purpose_65]] - document - .agents/skills/i-qa/README.md
-- [[Purpose_66]] - document - docker/config/hermes/skills/i-pm/README.md
-- [[Purpose_67]] - document - docker/config/hermes/skills/i-ps/README.md
-- [[Purpose_68]] - document - docker/config/hermes/skills/i-qa/README.md
-- [[Quality Assurance (QA)_1]] - document - docker/config/hermes/skills/i-qa/README.md
-- [[Quality Assurance (README)]] - document - .agents/skills/i-qa/README.md
-- [[Quality Assurance (SKILL)]] - document - .agents/skills/i-qa/SKILL.md
-- [[Related Skills_49]] - document - .agents/skills/i-pm/README.md
-- [[Related Skills_50]] - document - .agents/skills/i-production/README.md
-- [[Related Skills_51]] - document - .agents/skills/i-ps/README.md
-- [[Related Skills_52]] - document - .agents/skills/i-qa/README.md
-- [[Related Skills_53]] - document - docker/config/hermes/skills/i-pm/README.md
-- [[Related Skills_54]] - document - docker/config/hermes/skills/i-ps/README.md
-- [[Related Skills_55]] - document - docker/config/hermes/skills/i-qa/README.md
-- [[Skills Guide (catalog)]] - document - .agents/skills/reference/SKILLS_GUIDE.md
-- [[Usage_51]] - document - .agents/skills/i-pm/README.md
-- [[Usage_52]] - document - .agents/skills/i-production/README.md
-- [[Usage_53]] - document - .agents/skills/i-ps/README.md
-- [[Usage_54]] - document - .agents/skills/i-qa/README.md
-- [[Usage_55]] - document - docker/config/hermes/skills/i-pm/README.md
-- [[Usage_56]] - document - docker/config/hermes/skills/i-ps/README.md
-- [[Usage_57]] - document - docker/config/hermes/skills/i-qa/README.md
-- [[hermesskillsi-pmREADME]] - document - docker/config/hermes/skills/i-pm/README.md
-- [[hermesskillsi-psREADME]] - document - docker/config/hermes/skills/i-ps/README.md
-- [[hermesskillsi-qaREADME]] - document - docker/config/hermes/skills/i-qa/README.md
-- [[operationsincident-response]] - document - docs/operations/incident-response.md
+- [[1. Add Public Key to Target Host]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[2. Add Host Configuration (Optional but Recommended)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[3. Test Connection]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Adding Additional Hosts]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Backup SSH Keys]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Backup and Recovery]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Configured Hosts_1]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Default Settings (All Hosts)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[From Docker Command Line]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[From OpenClaw Bot (Natural Language)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Next Steps_5]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[OPENCLAW_SSH_SETUP]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[One-Liner to Add to Pi]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[OpenClaw Bot SSH Configuration]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Problem Bad owner or permissions on ~.sshconfig]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Problem Connection timeout]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Problem Host key verification failed]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Problem Permission denied (publickey)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Public Key]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Public Key (Copy-Paste Ready)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Quick Reference_4]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Raspberry Pi (pi-dev)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Restore SSH Keys]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[SSH Config File Location]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[SSH Configuration Details]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[SSH Key Generated]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Security Considerations_1]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Setup Instructions]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Step 1 Add Public Key to Raspberry Pi]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Step 2 Test SSH Connection from OpenClaw Bot]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Step 3 Verify from OpenClaw UI or Telegram]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Test Connection]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Troubleshooting_11]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Usage Examples]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Verification Checklist]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[⚠️ Important Security Notes]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[✅ Security Features Enabled]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[🔐 Credentials in 1Password]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,16 +53,3 @@ members: 40
 TABLE source_file, type FROM #community/OpenClaw_Bot_SSH_Configuration
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (2)]]
-- 3 edges to [[_COMMUNITY_TestOutboundInfoFilter]]
-- 3 edges to [[_COMMUNITY_Skill Mindmap Architect (MM)]]
-- 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan]]
-
-## Top bridge nodes
-- [[Quality Assurance (SKILL)]] - degree 12, connects to 3 communities
-- [[Project Management (README)]] - degree 11, connects to 3 communities
-- [[Production Safety Checklist (SKILL)]] - degree 12, connects to 2 communities
-- [[operationsincident-response]] - degree 8, connects to 2 communities
-- [[Skills Guide (catalog)]] - degree 6, connects to 1 community

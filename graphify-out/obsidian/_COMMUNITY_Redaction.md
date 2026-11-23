@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Redaction
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[script.md (Vulcan-approved dialogue input)]] - concept - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Redaction]] - concept - docs/project/glossary.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,41 +1,40 @@
 ---
 type: community
-cohesion: 0.08
-members: 26
+members: 27
 ---
 
 # LOW — Informational
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 26 nodes
+**Members:** 27 nodes
 
 ## Members
-- [[1Password Authentication Failed]] - document - docs/setup/setup-guide.md
-- [[1Password Integration_1]] - document - docs/setup/setup-guide.md
-- [[AgentShroud Setup Guide]] - document - docs/setup/setup-guide.md
-- [[Audit Trail Verification]] - document - docs/setup/setup-guide.md
-- [[Configure AgentShroud]] - document - docs/setup/setup-guide.md
-- [[Container Unhealthy_1]] - document - docs/setup/setup-guide.md
-- [[Create a Service Account]] - document - docs/setup/setup-guide.md
-- [[Dashboard Security Events]] - document - docs/setup/setup-guide.md
-- [[Gmail Connection Issues]] - document - docs/setup/setup-guide.md
-- [[Health Check Verification]] - document - docs/setup/setup-guide.md
-- [[Important Notes_1]] - document - docs/setup/setup-guide.md
-- [[Optional Requirements]] - document - docs/setup/setup-guide.md
-- [[Performance Issues_1]] - document - docs/setup/setup-guide.md
-- [[Port Already in Use_2]] - document - docs/setup/setup-guide.md
-- [[Prerequisites_3]] - document - docs/setup/setup-guide.md
-- [[Production Checklist]] - document - docs/setup/setup-guide.md
-- [[Quick Start (5 minutes)]] - document - docs/setup/setup-guide.md
-- [[Security Testing]] - document - docs/setup/setup-guide.md
-- [[Security Verification]] - document - docs/setup/setup-guide.md
-- [[Set Up Vault Access]] - document - docs/setup/setup-guide.md
-- [[Supported Platforms]] - document - docs/setup/setup-guide.md
-- [[System Requirements_1]] - document - docs/setup/setup-guide.md
-- [[Tests Failing_1]] - document - docs/setup/setup-guide.md
-- [[Troubleshooting_23]] - document - docs/setup/setup-guide.md
-- [[What is AgentShroud_1]] - document - docs/setup/setup-guide.md
-- [[What's Next]] - document - docs/setup/setup-guide.md
+- [[AgentShroud v0.8.0 — Blue Team Security Assessment (Final)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[C4 Root Endpoint `` Exposes System Metrics Without Authentication]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[C5 `status` Endpoint Exposes Security Posture Without Authentication]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[CRITICAL — Must Fix Before Release]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[Fixes Applied]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[H4 Docker Network `agentshroud-isolated` Not Actually Isolated]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[H5 `dashboardws-token` Returns Master Auth Token to Browser]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[H6 Session Manager Path Traversal via Crafted User ID]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[H7 Error Messages Disclose Internal Details]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[HIGH — Should Fix Before Release]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[L4 CSP Allows `unsafe-inline` for Scripts and Styles]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[L5 WebSocket Token in Query String]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[L6 Auto-Refresh via JavaScript on Root Page]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[L7 Dead Code After Return in webhook_receiver.py]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[L8 `python-jose` Dependency Has Known CVEs]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[LOW — Informational]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[M4 Pi-hole Auth Token Passed in URL Query String]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[M5 LLM Proxy Endpoint `v1{path}` Has No Authentication]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[M6 Telegram API Proxy Passes Raw Bot Token Without Validation]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[M7 Dockerfile Uses `curl  sh` for Trivy Installation]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[M8 Unpinned Base Images and `@latest` Tags]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[MEDIUM — Fix Soon]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[New Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[Prior Assessment (v0.8.0) — Status]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[Summary_39]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[Test Results]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[blue-team-assessment-v0.8.0-final]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,13 +42,3 @@ members: 26
 TABLE source_file, type FROM #community/LOW__Informational
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_EgressFilterConfig (3) (2)]]
-- 1 edge to [[_COMMUNITY_ApprovalHardening]]
-- 1 edge to [[_COMMUNITY_TestNewPatternsV080]]
-- 1 edge to [[_COMMUNITY_Implement gateway-level outbound information filtering module]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig (3)]]
-
-## Top bridge nodes
-- [[AgentShroud Setup Guide]] - degree 12, connects to 5 communities

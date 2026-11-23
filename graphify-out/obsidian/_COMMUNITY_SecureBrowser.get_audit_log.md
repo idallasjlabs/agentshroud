@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # SecureBrowser.get_audit_log
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Newsletter Mac Clustering_1]] - document - docker/config/hermes/cron/prompts/newsletter-mac-clustering.txt
+- [[SecureBrowser.get_audit_log()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 
 ## Live Query (requires Dataview plugin)
 

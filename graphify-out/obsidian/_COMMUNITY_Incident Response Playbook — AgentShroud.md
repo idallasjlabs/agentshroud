@@ -1,31 +1,33 @@
 ---
 type: community
-cohesion: 0.12
-members: 16
+members: 20
 ---
 
 # Incident Response Playbook — AgentShroud
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 16 nodes
+**Members:** 20 nodes
 
 ## Members
-- [[02-human-in-the-loop]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Constraints_1]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Evidence_1]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Problem_3]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Remediation_2]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Root Cause_2]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Severity_2]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Step 1 Define MCP tool risk tiers]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Step 2 Configure approval requirements per tier]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Step 3 Wire MCP Proxy to Approval Queue]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Step 4 Set Approval Queue to enforce mode]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Step 5 Add approval UI to the control center dashboard]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Step 6 Add Telegram admin notification for critical-tier tools]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Step 7 Return clear error messages to the agent]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Verification_6]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[1. Detection — What Triggers an Incident]] - document - docs/security/incident-response.md
+- [[2. Severity Classification]] - document - docs/security/incident-response.md
+- [[3. Response Procedures]] - document - docs/security/incident-response.md
+- [[4. Kill Switch Usage Guide]] - document - docs/security/incident-response.md
+- [[5. Evidence Preservation]] - document - docs/security/incident-response.md
+- [[6. Post-Incident Review Template]] - document - docs/security/incident-response.md
+- [[7. Communication Templates]] - document - docs/security/incident-response.md
+- [[8. Contacts and Escalation]] - document - docs/security/incident-response.md
+- [[Audit Ledger Export]] - document - docs/security/incident-response.md
+- [[Decision Tree]] - document - docs/security/incident-response.md
+- [[Incident Response Playbook — AgentShroud]] - document - docs/security/incident-response.md
+- [[Internal Alert (Telegram)]] - document - docs/security/incident-response.md
+- [[P1 — Critical]] - document - docs/security/incident-response.md
+- [[P2 — High]] - document - docs/security/incident-response.md
+- [[P3 — Medium]] - document - docs/security/incident-response.md
+- [[P4 — Low]] - document - docs/security/incident-response.md
+- [[Recovering from Kill Switch]] - document - docs/security/incident-response.md
+- [[Stakeholder Notification]] - document - docs/security/incident-response.md
+- [[What to Capture]] - document - docs/security/incident-response.md
+- [[securityincident-response]] - document - docs/security/incident-response.md
 
 ## Live Query (requires Dataview plugin)
 

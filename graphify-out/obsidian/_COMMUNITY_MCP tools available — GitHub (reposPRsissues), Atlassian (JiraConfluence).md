@@ -1,19 +1,16 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+members: 3
 ---
 
 # MCP tools available — GitHub (repos/PRs/issues), Atlassian (Jira/Confluence)
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[dot-test_not_running()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_running_with_fresh_log()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_running_without_logs()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestFluentBitSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[MCP Server atlassian-agentshroud]] - code - .mcp.json
+- [[MCP Server github-agentshroud]] - code - .mcp.json
+- [[MCP tools available — GitHub (reposPRsissues), Atlassian (JiraConfluence)]] - rationale - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,11 +18,3 @@ members: 4
 TABLE source_file, type FROM #community/MCP_tools_available__GitHub_repos/PRs/issues_Atlassian_Jira/Confluence
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_UserSessionManager (3) (2)]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (3) (2)]]
-
-## Top bridge nodes
-- [[TestFluentBitSummary]] - degree 4, connects to 1 community
-- [[dot-test_running_with_fresh_log()]] - degree 2, connects to 1 community

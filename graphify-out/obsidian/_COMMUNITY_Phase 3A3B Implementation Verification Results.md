@@ -1,35 +1,38 @@
 ---
 type: community
-cohesion: 0.19
-members: 20
+members: 25
 ---
 
 # Phase 3A/3B Implementation Verification Results
 
-**Cohesion:** 0.19 - loosely connected
-**Members:** 20 nodes
+**Members:** 25 nodes
 
 ## Members
-- [[dot-_resp()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_architecture_existing_branch()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_collaboration_capability()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_credit_card_privacy()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_fallback_for_unmatched()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_greeting_contains_capability_hint()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_greeting_good_morning()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_greeting_hello()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_greeting_hi()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_input_consistency_formatting_trick()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_input_consistency_spaces_or_dashes()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_password_credential_branch()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_pii_sanitization()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_restriction_not_allowed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_restriction_refuse()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_security_approach()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_security_model()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_what_can_you_capability()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Static response builder for collaborator conceptual queries.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[TestBuildCollaboratorSafeInfoResponse]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[After Phase 3A3B]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Before Phase 3A]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Container Status_1]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Created (4 files)]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Deployment Readiness]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Development Environment_1]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Disconnect Mode]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Files ModifiedCreated]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Freeze Mode]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Kill Switch Testing]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Manual Testing (Next Session)]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Modified (4 files)]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Next Steps (Not in Phase 3A3B)]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[OpenClaw Bot Logs (Recent)]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Phase 3A Implementation Status]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Phase 3A.8 Note DM Policy]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Phase 3A3B Implementation Verification Results]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Phase 3B.1 Implementation Status]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Production Environment]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Remaining Work]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Security Improvements Delivered]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Security Verification Results]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Shutdown Mode]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Testing Recommendations]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[VERIFICATION_RESULTS]] - document - docs/security/VERIFICATION_RESULTS.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,11 +42,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
-- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
+- 1 edge to [[_COMMUNITY_docsREADME]]
 
 ## Top bridge nodes
-- [[TestBuildCollaboratorSafeInfoResponse]] - degree 24, connects to 5 communities
+- [[VERIFICATION_RESULTS]] - degree 2, connects to 1 community
