@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/himalaya/references/configuration.md"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
-community: "Community 610"
-location: "L1"
+community: "clamav_scanner.py"
+location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_610
+  - community/clamav_scannerpy
 ---
 
-# configuration.md
+# Configuration
 
 ## Connections
-- [[Himalaya Configuration Reference]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_610
+#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy

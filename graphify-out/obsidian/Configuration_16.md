@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
+source_file: ".agents/skills/icloud/SKILL.md"
 type: "document"
-community: "Community 536"
-location: "L70"
+community: "iCloud Services"
+location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_536
+  - community/iCloud_Services
 ---
 
 # Configuration
 
 ## Connections
-- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
+- [[iCloud Services_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_536
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

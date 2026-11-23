@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
+source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 517"
-location: "L51"
+community: "iCloud Services"
+location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_517
+  - community/iCloud_Services
 ---
 
 # Configuration
 
 ## Connections
-- [[Decision_10]] - `contains` [EXTRACTED]
+- [[iCloud Services]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_517
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

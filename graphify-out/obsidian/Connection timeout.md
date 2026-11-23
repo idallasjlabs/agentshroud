@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/icloud.md"
+source_file: "docs/archive/CONNECTION-GUIDE.md"
 type: "document"
-community: "Community 530"
-location: "L149"
+community: "AgentShroud Control UI Connection Guide"
+location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_530
+  - community/AgentShroud_Control_UI_Connection_Guide
 ---
 
 # "Connection timeout"
 
 ## Connections
-- [[Troubleshooting_3]] - `contains` [EXTRACTED]
+- [[Troubleshooting_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_530
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Control_UI_Connection_Guide

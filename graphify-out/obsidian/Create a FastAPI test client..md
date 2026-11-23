@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_api_contract.py"
 type: "rationale"
-community: "Community 574"
+community: "TestOpenAPIContract"
 location: "L29"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_574
+  - community/TestOpenAPIContract
 ---
 
 # Create a FastAPI test client.
 
 ## Connections
-- [[.client()]] - `rationale_for` [EXTRACTED]
+- [[dot-client()_7]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_574
+#graphify/rationale #graphify/EXTRACTED #community/TestOpenAPIContract

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/ci-workflows.md"
 type: "document"
-community: "Community 1360"
+community: "CI Workflows"
 location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1360
+  - community/CI_Workflows
 ---
 
 # Coverage Threshold
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CI Workflows]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1360
+#graphify/document #graphify/EXTRACTED #community/CI_Workflows

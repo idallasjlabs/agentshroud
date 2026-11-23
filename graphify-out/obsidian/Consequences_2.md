@@ -1,20 +1,20 @@
 ---
-source_file: "docs/architecture/adr/ADR-003-two-network-container-isolation.md"
+source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "Community 857"
-location: "L33"
+community: "ADR-006: Multi-Runtime Container Support"
+location: "L198"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_857
+  - community/ADR-006_Multi-Runtime_Container_Support
 ---
 
 # Consequences
 
 ## Connections
-- [[ADR-003 Two-Network Container Isolation]] - `contains` [EXTRACTED]
-- [[Mitigation]] - `contains` [EXTRACTED]
-- [[Negative Consequences_2]] - `contains` [EXTRACTED]
-- [[Positive Consequences_2]] - `contains` [EXTRACTED]
+- [[ADR-006 Multi-Runtime Container Support]] - `contains` [EXTRACTED]
+- [[Mitigation_1]] - `contains` [EXTRACTED]
+- [[Negative]] - `contains` [EXTRACTED]
+- [[Positive]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_857
+#graphify/document #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support

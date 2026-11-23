@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/trello/SKILL.md"
 type: "document"
-community: "Community 796"
+community: "Usage"
 location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_796
+  - community/Usage
 ---
 
 # Create a card
 
 ## Connections
-- [[Usage_146]] - `contains` [EXTRACTED]
+- [[Usage_18]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_796
+#graphify/document #graphify/EXTRACTED #community/Usage

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
+source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "Community 321"
-location: "L125"
+community: "ADR-009: Enforce-by-Default Security Philosophy"
+location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_321
+  - community/ADR-009_Enforce-by-Default_Security_Philosophy
 ---
 
 # Configuration
 
 ## Connections
-- [[iCloud Services_7]] - `contains` [EXTRACTED]
+- [[Decision_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_321
+#graphify/document #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy

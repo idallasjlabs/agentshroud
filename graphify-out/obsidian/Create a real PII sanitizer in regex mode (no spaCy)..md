@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "Community 123"
+community: "PIIConfig"
 location: "L31"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_123
+  - community/PIIConfig
 ---
 
 # Create a real PII sanitizer in regex mode (no spaCy).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_pii_sanitizer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_123
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

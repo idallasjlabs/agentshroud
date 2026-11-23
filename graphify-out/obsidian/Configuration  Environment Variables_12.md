@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
 type: "document"
-community: "Community 776"
-location: "L67"
+community: "egress_monitor.py"
+location: "L60"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_776
+  - community/egress_monitorpy
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[web_proxy.py_2]] - `contains` [EXTRACTED]
+- [[egress_monitor.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_776
+#graphify/document #graphify/EXTRACTED #community/egress_monitorpy

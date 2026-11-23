@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "Community 980"
+community: "test_group_isolation.py"
 location: "L151"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_980
+  - community/test_group_isolationpy
 ---
 
 # Content written to a group must not appear in any user's private DM memory.
 
 ## Connections
-- [[.test_group_write_invisible_from_user_dm()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_group_write_invisible_from_user_dm()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_980
+#graphify/rationale #graphify/EXTRACTED #community/test_group_isolationpy

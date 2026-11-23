@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md"
+source_file: "docs/planning/HEXSTRIKE_PROXY_PLAN.md"
 type: "document"
-community: "Community 850"
-location: "L3"
+community: "Plan: Proxying HexStrike AI MCP Agents via AgentShroud"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_850
+  - community/Plan_Proxying_HexStrike_AI_MCP_Agents_via_AgentShroud
 ---
 
 # Context
 
 ## Connections
-- [[AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap]] - `contains` [EXTRACTED]
+- [[Plan Proxying HexStrike AI MCP Agents via AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_850
+#graphify/document #graphify/EXTRACTED #community/Plan_Proxying_HexStrike_AI_MCP_Agents_via_AgentShroud

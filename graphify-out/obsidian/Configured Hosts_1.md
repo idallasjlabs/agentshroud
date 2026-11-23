@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
+source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "Community 979"
-location: "L45"
+community: "OpenClaw Bot SSH Configuration"
+location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_979
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # Configured Hosts
 
 ## Connections
-- [[ssh_proxy.py_1]] - `contains` [EXTRACTED]
+- [[Raspberry Pi (pi-dev)]] - `contains` [EXTRACTED]
+- [[SSH Configuration Details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_979
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

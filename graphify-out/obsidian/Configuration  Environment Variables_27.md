@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
 type: "document"
-community: "Community 540"
-location: "L74"
+community: "Function Details"
+location: "L77"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_540
+  - community/Function_Details
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[resource_guard.py_2]] - `contains` [EXTRACTED]
+- [[oauth_security.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_540
+#graphify/document #graphify/EXTRACTED #community/Function_Details

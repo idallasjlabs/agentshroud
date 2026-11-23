@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-mcpm-aws-profile.md"
+source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "Community 171"
-location: "L354"
+community: "Quick Reference — AgentShroud"
+location: "L149"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_171
+  - community/Quick_Reference__AgentShroud
 ---
 
 # Configuration Files
 
 ## Connections
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
+- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_171
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference__AgentShroud

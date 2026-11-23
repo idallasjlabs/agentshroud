@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
 type: "document"
-community: "Community 667"
+community: "Function Details"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_667
+  - community/Function_Details
 ---
 
 # ConnectionPool.get_or_create(server_name, config)
 
 ## Connections
-- [[Function Details_12]] - `contains` [EXTRACTED]
+- [[Function Details_25]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_667
+#graphify/document #graphify/EXTRACTED #community/Function_Details

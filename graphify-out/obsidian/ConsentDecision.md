@@ -1,49 +1,26 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "Community 0"
+community: "ConsentFramework"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_0
+  - community/ConsentFramework
 ---
 
 # ConsentDecision
 
 ## Connections
-- [[.test_decision_approved()]] - `calls` [EXTRACTED]
-- [[.test_decision_denied()]] - `calls` [EXTRACTED]
-- [[.test_decision_has_timestamp()]] - `calls` [EXTRACTED]
-- [[.validate_config()]] - `references` [EXTRACTED]
-- [[.validate_configs()]] - `references` [EXTRACTED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
+- [[dot-test_decision_approved()]] - `calls` [INFERRED]
+- [[dot-test_decision_denied()]] - `calls` [INFERRED]
+- [[dot-test_decision_has_timestamp()]] - `calls` [INFERRED]
+- [[dot-validate_config()]] - `calls` [EXTRACTED]
+- [[dot-validate_configs()]] - `references` [EXTRACTED]
 - [[TestAuth_1]] - `uses` [INFERRED]
-- [[TestConcurrency_1]] - `uses` [INFERRED]
 - [[TestConsentDecision]] - `uses` [INFERRED]
-- [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
-- [[TestCryptography]] - `uses` [INFERRED]
-- [[TestDependencySecurity]] - `uses` [INFERRED]
-- [[TestDoSPrevention]] - `uses` [INFERRED]
-- [[TestEnvironmentValidation]] - `uses` [INFERRED]
-- [[TestExfiltrationDetection]] - `uses` [INFERRED]
-- [[TestFileSandbox]] - `uses` [INFERRED]
-- [[TestHTTPSecurity]] - `uses` [INFERRED]
-- [[TestInfoLeakage]] - `uses` [INFERRED]
-- [[TestLoggingSecurity]] - `uses` [INFERRED]
-- [[TestMCPSecurity]] - `uses` [INFERRED]
-- [[TestNetworkSecurity]] - `uses` [INFERRED]
-- [[TestPIIDetection_1]] - `uses` [INFERRED]
 - [[TestPrivilegeEscalation]] - `uses` [INFERRED]
-- [[TestPromptGuard]] - `uses` [INFERRED]
-- [[TestResourceProtection]] - `uses` [INFERRED]
-- [[TestServerConfigValidation]] - `uses` [INFERRED]
-- [[TestSupplyChain_1]] - `uses` [INFERRED]
-- [[TestTimingAttacks]] - `uses` [INFERRED]
-- [[TestWebSecurity]] - `uses` [INFERRED]
-- [[TestWhitelistBlacklist]] - `uses` [INFERRED]
-- [[consent_framework.py]] - `contains` [EXTRACTED]
+- [[consent_framework.py_2]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_0
+#graphify/code #graphify/INFERRED #community/ConsentFramework

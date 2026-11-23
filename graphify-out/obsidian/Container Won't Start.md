@@ -1,17 +1,17 @@
 ---
-source_file: "docker/QUICKSTART.md"
+source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Community 258"
-location: "L234"
+community: "Step-by-Step Deployment"
+location: "L598"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_258
+  - community/Step-by-Step_Deployment
 ---
 
 # Container Won't Start
 
 ## Connections
-- [[Troubleshooting_25]] - `contains` [EXTRACTED]
+- [[Troubleshooting Common Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_258
+#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Deployment

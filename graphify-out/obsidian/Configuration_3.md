@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-icloud.agent.md"
+source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
 type: "document"
-community: "Community 554"
-location: "L130"
+community: "Gateway Python Dependencies (`gateway/requirements.txt`)"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_554
+  - community/Gateway_Python_Dependencies_gateway/requirementstxt
 ---
 
 # Configuration
 
 ## Connections
-- [[iCloud Services_3]] - `contains` [EXTRACTED]
+- [[Gateway Python Dependencies (`gatewayrequirements.txt`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_554
+#graphify/document #graphify/EXTRACTED #community/Gateway_Python_Dependencies_gateway/requirementstxt

@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-sec-offense.agent.md"
+source_file: ".agents/agents/sec-offense.md"
 type: "document"
-community: "Community 1075"
-location: "L328"
+community: "AgentShroud Red Team Adversarial Tester"
+location: "L325"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1075
+  - community/AgentShroud_Red_Team_Adversarial_Tester
 ---
 
 # Coverage Requirements
 
 ## Connections
-- [[Writing Exploit Tests_3]] - `contains` [EXTRACTED]
+- [[Writing Exploit Tests_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1075
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester

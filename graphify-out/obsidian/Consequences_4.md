@@ -1,21 +1,21 @@
 ---
-source_file: "docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md"
+source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
 type: "document"
-community: "Community 630"
-location: "L38"
+community: "ADR-001: Transparent Proxy vs Agent Modification"
+location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_630
+  - community/ADR-001_Transparent_Proxy_vs_Agent_Modification
 ---
 
 # Consequences
 
 ## Connections
-- [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - `contains` [EXTRACTED]
-- [[ADR-005 SHA-256 Hash Chain for Audit Integrity]] - `contains` [EXTRACTED]
-- [[Implementation Details]] - `contains` [EXTRACTED]
-- [[Negative Consequences_4]] - `contains` [EXTRACTED]
-- [[Positive Consequences_4]] - `contains` [EXTRACTED]
+- [[ADR-001 Transparent Proxy vs Agent Modification]] - `contains` [EXTRACTED]
+- [[Mitigation Strategies]] - `contains` [EXTRACTED]
+- [[Negative Consequences_3]] - `contains` [EXTRACTED]
+- [[Positive Consequences_3]] - `contains` [EXTRACTED]
+- [[Risk Assessment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_630
+#graphify/document #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_vs_Agent_Modification

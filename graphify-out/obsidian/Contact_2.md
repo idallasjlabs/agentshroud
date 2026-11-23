@@ -1,17 +1,17 @@
 ---
-source_file: "docs/project/legal/TRADEMARK.md"
+source_file: "docker/bots/openclaw/config/workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Community 1175"
-location: "L37"
+community: "AgentShroud — Collaborator Knowledge Base"
+location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1175
+  - community/AgentShroud__Collaborator_Knowledge_Base
 ---
 
 # Contact
 
 ## Connections
-- [[Trademark Notice_3]] - `contains` [EXTRACTED]
+- [[AgentShroud — Collaborator Knowledge Base]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1175
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Collaborator_Knowledge_Base

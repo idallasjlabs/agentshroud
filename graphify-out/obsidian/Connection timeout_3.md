@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-icloud.agent.md"
+source_file: "docs/setup/ICLOUD-SERVICES-SETUP.md"
 type: "document"
-community: "Community 554"
-location: "L152"
+community: "iCloud Services Setup - Complete Guide"
+location: "L444"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_554
+  - community/iCloud_Services_Setup_-_Complete_Guide
 ---
 
 # "Connection timeout"
 
 ## Connections
-- [[Troubleshooting_14]] - `contains` [EXTRACTED]
+- [[🔍 Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_554
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services_Setup_-_Complete_Guide

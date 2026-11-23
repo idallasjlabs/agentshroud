@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pr/SKILL.md"
+source_file: "docs/planning/redteam/06-outbound-info-filter.md"
 type: "document"
-community: "Community 962"
-location: "L48"
+community: "Implement gateway-level outbound information filtering module"
+location: "L383"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_962
+  - community/Implement_gateway-level_outbound_information_filtering_module
 ---
 
 # Constraints
 
 ## Connections
-- [[Skill Pull Request (PR) Generator_6]] - `contains` [EXTRACTED]
+- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_962
+#graphify/document #graphify/EXTRACTED #community/Implement_gateway-level_outbound_information_filtering_module

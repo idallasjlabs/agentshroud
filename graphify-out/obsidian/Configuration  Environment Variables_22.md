@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
 type: "document"
-community: "Community 678"
-location: "L68"
+community: "config.py"
+location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_678
+  - community/configpy
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
+- [[config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_678
+#graphify/document #graphify/EXTRACTED #community/configpy

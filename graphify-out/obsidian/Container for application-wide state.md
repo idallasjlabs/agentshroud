@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/state.py"
 type: "rationale"
-community: "Community 7"
+community: "SecurityPipeline"
 location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/SecurityPipeline
 ---
 
 # Container for application-wide state
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AppState]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_7
+#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline

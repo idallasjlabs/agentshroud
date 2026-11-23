@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "rationale"
-community: "Community 24"
+community: "InstructionEnvelope"
 location: "L90"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/InstructionEnvelope
 ---
 
 # Convenience: sign a tool result as issuer='tool:<tool_name>'.
 
 ## Connections
-- [[.wrap_tool_result()]] - `rationale_for` [EXTRACTED]
+- [[dot-wrap_tool_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_24
+#graphify/rationale #graphify/EXTRACTED #community/InstructionEnvelope

@@ -1,13 +1,13 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "concept"
-community: "Community 1667"
+community: "ConfigurationSetting (data entity)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1667
+  - community/ConfigurationSetting_data_entity
 ---
 
 # ConfigurationSetting (data entity)
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1667
+#graphify/concept #graphify/EXTRACTED #community/ConfigurationSetting_data_entity

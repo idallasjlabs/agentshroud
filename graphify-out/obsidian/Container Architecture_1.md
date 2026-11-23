@@ -1,17 +1,19 @@
 ---
-source_file: "docs/architecture/agentic-os.md"
+source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "Community 178"
-location: "L693"
+community: "Architecture Overview"
+location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_178
+  - community/Architecture_Overview
 ---
 
 # Container Architecture
 
 ## Connections
-- [[10. Infrastructure & Runtime]] - `contains` [EXTRACTED]
+- [[Architecture Overview_1]] - `contains` [EXTRACTED]
+- [[Bot Container (`agentshroud-bot`)]] - `contains` [EXTRACTED]
+- [[Gateway Container (`agentshroud-gateway`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_178
+#graphify/document #graphify/EXTRACTED #community/Architecture_Overview

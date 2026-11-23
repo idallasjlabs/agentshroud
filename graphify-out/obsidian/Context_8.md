@@ -1,18 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
+source_file: "docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md"
 type: "document"
-community: "Community 859"
-location: "L6"
+community: "AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_859
+  - community/AgentShroud_v080__25-Domain_Prompt_Injection_Defense_Assessment__Roadmap
 ---
 
 # Context
 
 ## Connections
-- [[ADR-008-progressive-trust-levels]] - `contains` [EXTRACTED]
-- [[ADR-008 Progressive Trust Levels for Agents]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_859
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080__25-Domain_Prompt_Injection_Defense_Assessment__Roadmap

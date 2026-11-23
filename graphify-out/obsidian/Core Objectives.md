@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Community 195"
+community: "AgentShroud™ README"
 location: "L391"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_195
+  - community/AgentShroud_README
 ---
 
 # Core Objectives
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Why AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_195
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_README

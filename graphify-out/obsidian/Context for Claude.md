@@ -1,12 +1,12 @@
 ---
 source_file: "docs/claude-security-audit-prompt.md"
 type: "document"
-community: "Community 470"
+community: "AgentShroud v0.8.0 — Full Security & Functionality Audit"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_470
+  - community/AgentShroud_v080__Full_Security__Functionality_Audit
 ---
 
 # Context for Claude
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_470
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080__Full_Security__Functionality_Audit

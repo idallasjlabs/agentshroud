@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "Community 325"
+community: "ingest_api/config.py"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_325
+  - community/ingest_api/configpy
 ---
 
 # Create a router instance for testing
 
 ## Connections
-- [[router()_1]] - `rationale_for` [EXTRACTED]
+- [[router()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_325
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/configpy

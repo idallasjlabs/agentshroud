@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "Community 2031"
+community: "middleware.py"
 location: "L20"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2031
+  - community/middlewarepy
 ---
 
 # Create a PromptProtection instance for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[prompt_protection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2031
+#graphify/rationale #graphify/EXTRACTED #community/middlewarepy

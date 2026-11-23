@@ -1,20 +1,21 @@
 ---
-source_file: "docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md"
+source_file: "docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md"
 type: "document"
-community: "Community 894"
-location: "L39"
+community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_894
+  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
 ---
 
 # Consequences
 
 ## Connections
-- [[ADR-004 API Keys Never in Agent Container]] - `contains` [EXTRACTED]
-- [[Mitigation_1]] - `contains` [EXTRACTED]
-- [[Negative Consequences_3]] - `contains` [EXTRACTED]
-- [[Positive Consequences_3]] - `contains` [EXTRACTED]
+- [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - `contains` [EXTRACTED]
+- [[ADR-005 SHA-256 Hash Chain for Audit Integrity]] - `contains` [EXTRACTED]
+- [[Implementation Details]] - `contains` [EXTRACTED]
+- [[Negative Consequences_2]] - `contains` [EXTRACTED]
+- [[Positive Consequences_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_894
+#graphify/document #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity

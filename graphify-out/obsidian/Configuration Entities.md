@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "Community 491"
+community: "Himalaya Email CLI"
 location: "L208"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_491
+  - community/Himalaya_Email_CLI
 ---
 
 # Configuration Entities
@@ -16,4 +16,4 @@ tags:
 - [[Configuration Setup]] - `contains` [EXTRACTED]
 - [[ConfigurationSetting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_491
+#graphify/document #graphify/EXTRACTED #community/Himalaya_Email_CLI

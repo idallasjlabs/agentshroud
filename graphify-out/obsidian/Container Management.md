@@ -1,17 +1,17 @@
 ---
-source_file: "examples/docker-commands.md"
+source_file: "docker/scripts/README.md"
 type: "document"
-community: "Community 656"
-location: "L5"
+community: "OpenClaw Management Scripts"
+location: "L195"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_656
+  - community/OpenClaw_Management_Scripts
 ---
 
-# Container management
+# Container Management
 
 ## Connections
-- [[Docker Commands Reference]] - `contains` [EXTRACTED]
+- [[Direct Docker Commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_656
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts

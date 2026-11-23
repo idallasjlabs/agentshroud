@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "rationale"
-community: "Community 54"
+community: "MCPServerConfig"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/MCPServerConfig
 ---
 
 # Configuration for an MCP server.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCPServerConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_54
+#graphify/rationale #graphify/EXTRACTED #community/MCPServerConfig
