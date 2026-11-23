@@ -1,18 +1,16 @@
 ---
 source_file: "docker/config/hermes/skills/i-sav/README.md"
 type: "document"
-community: "Community 442"
+community: "Architecture Overview.md"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/Community_442
+  - graphify/INFERRED
+  - community/Architecture_Overviewmd
 ---
 
 # i-sav README (System Audit Vault)
 
 ## Connections
-- [[GSDE&G Skills Reference Guide_1]] - `references` [EXTRACTED]
-- [[i-sad README (System Audit Documentation)]] - `references` [EXTRACTED]
 - [[i-sav SKILL (System Audit Vault, Obsidian)]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_442
+#graphify/document #graphify/INFERRED #community/Architecture_Overviewmd

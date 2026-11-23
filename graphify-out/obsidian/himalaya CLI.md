@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "concept"
-community: "Community 818"
+community: "Himalaya Email CLI"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_818
+  - community/Himalaya_Email_CLI
 ---
 
 # himalaya CLI
 
 ## Connections
-- [[SKILL_223]] - `implements` [EXTRACTED]
+- [[himalayaSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_818
+#graphify/concept #graphify/EXTRACTED #community/Himalaya_Email_CLI

@@ -1,18 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-sad/README.md"
 type: "document"
-community: "Community 442"
+community: "i-sad README (System Audit Documentation)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_442
+  - community/i-sad_README_System_Audit_Documentation
 ---
 
 # i-sad README (System Audit Documentation)
 
-## Connections
-- [[GSDE&G Skills Reference Guide_1]] - `references` [EXTRACTED]
-- [[i-sav README (System Audit Vault)]] - `references` [EXTRACTED]
-- [[i-sav SKILL (System Audit Vault, Obsidian)]] - `references` [EXTRACTED]
-
-#graphify/document #graphify/EXTRACTED #community/Community_442
+#graphify/document #graphify/EXTRACTED #community/i-sad_README_System_Audit_Documentation

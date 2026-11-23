@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "code"
-community: "Community 918"
+community: "installer.py"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_918
+  - community/installerpy
 ---
 
 # installer_page()
 
 ## Connections
-- [[Request_9]] - `references` [EXTRACTED]
+- [[Request_10]] - `references` [EXTRACTED]
 - [[Serve the installer wizard HTML.]] - `rationale_for` [EXTRACTED]
-- [[installer.py]] - `contains` [EXTRACTED]
+- [[get_10]] - `references` [EXTRACTED]
+- [[installer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_918
+#graphify/code #graphify/EXTRACTED #community/installerpy

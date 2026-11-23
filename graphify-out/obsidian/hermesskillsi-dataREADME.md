@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-data/README.md"
 type: "document"
-community: "TestOutboundInfoFilter"
+community: "hermes/skills/i-bs/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # hermes/skills/i-data/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Data Validation (DATA-VAL)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

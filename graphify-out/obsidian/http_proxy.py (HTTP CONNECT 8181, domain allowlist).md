@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "Community 637"
+community: "Proxy Layer"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_637
+  - community/Proxy_Layer
 ---
 
 # http_proxy.py (HTTP CONNECT :8181, domain allowlist)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Proxy Layer_1]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_637
+#graphify/image #graphify/EXTRACTED #community/Proxy_Layer

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
 type: "document"
-community: "How to Fix (5 Minutes)"
+community: "Mac App Discovery Skill"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/How_to_Fix_5_Minutes
+  - community/Mac_App_Discovery_Skill
 ---
 
 # hermes/skills/i-mac/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mac App Discovery Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/How_to_Fix_5_Minutes
+#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill

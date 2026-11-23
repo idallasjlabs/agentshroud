@@ -1,18 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec/SKILL.md"
 type: "document"
-community: "Community 442"
+community: "i-sec-defense SKILL (Blue Team Security Auditor, AgentShroud)"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/Community_442
+  - graphify/AMBIGUOUS
+  - community/i-sec-defense_SKILL_Blue_Team_Security_Auditor_AgentShroud
 ---
 
 # i-sec SKILL (Security Review / SEC, SecureClaw)
 
 ## Connections
-- [[GSDE&G Skills Reference Guide_1]] - `references` [EXTRACTED]
 - [[i-sec README (Security Review, SecureClaw)]] - `references` [INFERRED]
 - [[i-sec-defense SKILL (Blue Team Security Auditor, AgentShroud)]] - `semantically_similar_to` [AMBIGUOUS]
 
-#graphify/document #graphify/EXTRACTED #community/Community_442
+#graphify/document #graphify/AMBIGUOUS #community/i-sec-defense_SKILL_Blue_Team_Security_Auditor_AgentShroud

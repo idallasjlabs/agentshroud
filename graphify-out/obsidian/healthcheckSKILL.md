@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "oracle — best use"
+community: "gh-issues/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/oracle__best_use
+  - community/gh-issues/SKILLmd
 ---
 
 # healthcheck/SKILL.md
@@ -17,4 +17,4 @@ tags:
 - [[Stable-named cron scheduling for periodic audits]] - `implements` [EXTRACTED]
 - [[openclaw security audit command family]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/oracle__best_use
+#graphify/document #graphify/EXTRACTED #community/gh-issues/SKILLmd

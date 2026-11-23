@@ -1,30 +1,30 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
 type: "document"
-community: "Community 407"
+community: "http_proxy.py"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_407
+  - community/http_proxypy
 ---
 
 # http_proxy.py
 
 ## Connections
 - [[CONNECT Retry Logic]] - `contains` [EXTRACTED]
-- [[Configuration  Environment Variables_1]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_29]] - `contains` [EXTRACTED]
 - [[Constructor Parameters]] - `contains` [EXTRACTED]
 - [[Domain Policy Decision Tree]] - `contains` [EXTRACTED]
-- [[Function Details_7]] - `contains` [EXTRACTED]
+- [[Function Details_43]] - `contains` [EXTRACTED]
 - [[Internal State (`_stats`)]] - `contains` [EXTRACTED]
 - [[Key Classes]] - `contains` [EXTRACTED]
 - [[Module-level Constants]] - `contains` [EXTRACTED]
-- [[Purpose_128]] - `contains` [EXTRACTED]
-- [[Related_12]] - `contains` [EXTRACTED]
-- [[Responsibilities_12]] - `contains` [EXTRACTED]
+- [[Purpose_172]] - `contains` [EXTRACTED]
+- [[Related_47]] - `contains` [EXTRACTED]
+- [[Responsibilities_50]] - `contains` [EXTRACTED]
 - [[Security Notes_6]] - `contains` [EXTRACTED]
 - [[TCP Keepalive]] - `contains` [EXTRACTED]
 - [[http_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_407
+#graphify/document #graphify/EXTRACTED #community/http_proxypy

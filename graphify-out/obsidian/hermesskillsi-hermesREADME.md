@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-hermes/README.md"
 type: "document"
-community: "TestOutboundInfoFilter (3)"
+community: "hermes/skills/i-bs/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_3
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # hermes/skills/i-hermes/README.md
 
 ## Connections
-- [[Hermes — Podcast Production Orchestrator]] - `contains` [EXTRACTED]
+- [[Hermes — Podcast Production Orchestrator_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_3
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

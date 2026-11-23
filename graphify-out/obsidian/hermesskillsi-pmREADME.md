@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-pm/README.md"
 type: "document"
-community: "OpenClaw Bot SSH Configuration"
+community: "Project Management (PM)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_SSH_Configuration
+  - community/Project_Management_PM
 ---
 
 # hermes/skills/i-pm/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Project Management (PM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration
+#graphify/document #graphify/EXTRACTED #community/Project_Management_PM

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-production/SKILL.md"
 type: "document"
-community: "Atlas — Curriculum Architect"
+community: "Phase 3: MITIGATE (Rollback First!)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
 # hermes/skills/i-production/SKILL.md
 
 ## Connections
-- [[Skill Incident Response (INCIDENT)_2]] - `contains` [EXTRACTED]
+- [[Skill Incident Response (INCIDENT)_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First

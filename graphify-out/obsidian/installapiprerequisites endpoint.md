@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/templates/installer.html"
 type: "concept"
-community: "Community 1501"
+community: "checkPrereqs"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1501
+  - community/checkPrereqs
 ---
 
 # /install/api/prerequisites endpoint
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[checkPrereqs()]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1501
+#graphify/concept #graphify/EXTRACTED #community/checkPrereqs

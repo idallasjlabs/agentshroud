@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-qa/README.md"
 type: "document"
-community: "OpenClaw Bot SSH Configuration"
+community: "Quality Assurance (SKILL)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_SSH_Configuration
+  - community/Quality_Assurance_SKILL
 ---
 
 # hermes/skills/i-qa/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration
+#graphify/document #graphify/EXTRACTED #community/Quality_Assurance_SKILL

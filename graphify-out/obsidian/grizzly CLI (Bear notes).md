@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/bear-notes/SKILL.md"
 type: "concept"
-community: "Community 860"
+community: "Bear Notes"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_860
+  - community/Bear_Notes
 ---
 
 # grizzly CLI (Bear notes)
 
 ## Connections
-- [[SKILL_207]] - `implements` [EXTRACTED]
+- [[bear-notesSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_860
+#graphify/concept #graphify/EXTRACTED #community/Bear_Notes

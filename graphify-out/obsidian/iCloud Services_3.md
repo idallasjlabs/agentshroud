@@ -1,25 +1,25 @@
 ---
-source_file: ".github/agents/i-icloud.agent.md"
+source_file: ".agents/skills/icloud/SKILL.md"
 type: "document"
-community: "Community 554"
-location: "L11"
+community: "iCloud Services"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_554
+  - community/iCloud_Services
 ---
 
 # iCloud Services
 
 ## Connections
 - [[Calendar Operations_3]] - `contains` [EXTRACTED]
-- [[Configuration_3]] - `contains` [EXTRACTED]
+- [[Configuration_16]] - `contains` [EXTRACTED]
 - [[Contact Operations_3]] - `contains` [EXTRACTED]
 - [[Mail Operations_3]] - `contains` [EXTRACTED]
 - [[Notes Operations_3]] - `contains` [EXTRACTED]
-- [[Security_6]] - `contains` [EXTRACTED]
-- [[Setup_3]] - `contains` [EXTRACTED]
-- [[Troubleshooting_14]] - `contains` [EXTRACTED]
-- [[i-icloud.agent]] - `contains` [EXTRACTED]
+- [[Security_25]] - `contains` [EXTRACTED]
+- [[Setup_6]] - `contains` [EXTRACTED]
+- [[Troubleshooting_49]] - `contains` [EXTRACTED]
+- [[skillsicloudSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_554
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

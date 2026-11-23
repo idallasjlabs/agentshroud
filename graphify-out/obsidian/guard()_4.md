@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_skill_guard.py"
+source_file: "gateway/tests/test_resource_guard_limits.py"
 type: "code"
-community: "Community 133"
-location: "L46"
+community: "ResourceGuard"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_133
+  - community/ResourceGuard
 ---
 
 # guard()
 
 ## Connections
-- [[SkillGuard_1]] - `references` [EXTRACTED]
-- [[test_skill_guard.py]] - `contains` [EXTRACTED]
+- [[ResourceGuard]] - `uses` [INFERRED]
+- [[ResourceLimits]] - `uses` [INFERRED]
+- [[fixture_105]] - `references` [EXTRACTED]
+- [[test_resource_guard_limits.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_133
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

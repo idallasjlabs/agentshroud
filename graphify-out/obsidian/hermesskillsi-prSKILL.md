@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-pr/SKILL.md"
 type: "document"
-community: "Claude Code (claude-sonnet-4-6) — Lead Engineer / Primary Developer"
+community: "Skill: Pull Request (PR) Generator"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Claude_Code_claude-sonnet-4-6__Lead_Engineer_/_Primary_Developer
+  - community/Skill_Pull_Request_PR_Generator
 ---
 
 # hermes/skills/i-pr/SKILL.md
 
 ## Connections
-- [[Skill Pull Request (PR) Generator_1]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Claude_Code_claude-sonnet-4-6__Lead_Engineer_/_Primary_Developer
+#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator

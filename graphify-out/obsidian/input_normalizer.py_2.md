@@ -1,27 +1,27 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
-type: "document"
-community: "Community 679"
-location: "L10"
+source_file: "gateway/security/input_normalizer.py"
+type: "code"
+community: "ToolResultInjectionScanner"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_679
+  - community/ToolResultInjectionScanner
 ---
 
 # input_normalizer.py
 
 ## Connections
-- [[Environment Variables_14]] - `contains` [EXTRACTED]
-- [[Function Details_41]] - `contains` [EXTRACTED]
-- [[Invisible Characters Stripped]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_44]] - `contains` [EXTRACTED]
-- [[Mode Enforce vs Monitor_9]] - `contains` [EXTRACTED]
-- [[Purpose_162]] - `contains` [EXTRACTED]
-- [[Related_48]] - `contains` [EXTRACTED]
-- [[Responsibilities_46]] - `contains` [EXTRACTED]
-- [[Threat Model_17]] - `contains` [EXTRACTED]
-- [[Usage Context]] - `contains` [EXTRACTED]
-- [[input_normalizer.py_1]] - `contains` [EXTRACTED]
+- [[Input Normalization — pre-process text before security scanning. Strips…]] - `rationale_for` [EXTRACTED]
+- [[call_pipeline.py]] - `imports_from` [EXTRACTED]
+- [[context_guard.py]] - `imports_from` [EXTRACTED]
+- [[detect_base64_payloads()]] - `contains` [EXTRACTED]
+- [[middleware.py_2]] - `imports_from` [EXTRACTED]
+- [[normalize_input()]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_2]] - `imports_from` [EXTRACTED]
+- [[strip_markdown_exfil()]] - `contains` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `imports_from` [EXTRACTED]
+- [[test_adversarial_injection.py]] - `imports_from` [EXTRACTED]
+- [[tool_result_injection.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_679
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

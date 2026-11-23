@@ -1,25 +1,26 @@
 ---
-source_file: ".agents/agents/icloud.md"
+source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 530"
-location: "L8"
+community: "iCloud Services"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_530
+  - community/iCloud_Services
 ---
 
 # iCloud Services
 
 ## Connections
 - [[Calendar Operations]] - `contains` [EXTRACTED]
-- [[Configuration]] - `contains` [EXTRACTED]
+- [[Configuration_11]] - `contains` [EXTRACTED]
 - [[Contact Operations]] - `contains` [EXTRACTED]
 - [[Mail Operations]] - `contains` [EXTRACTED]
 - [[Notes Operations]] - `contains` [EXTRACTED]
-- [[Security_1]] - `contains` [EXTRACTED]
-- [[Setup]] - `contains` [EXTRACTED]
-- [[Troubleshooting_3]] - `contains` [EXTRACTED]
-- [[icloud]] - `contains` [EXTRACTED]
+- [[Security_16]] - `contains` [EXTRACTED]
+- [[Setup_2]] - `contains` [EXTRACTED]
+- [[Troubleshooting_19]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-icloudSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_530
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

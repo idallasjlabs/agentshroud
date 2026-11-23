@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_browser_security.py"
+source_file: "gateway/tests/test_context_integrity.py"
 type: "code"
-community: "Community 196"
-location: "L26"
+community: "ContextGuard"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_196
+  - community/ContextGuard
 ---
 
 # guard()
 
 ## Connections
-- [[BrowserSecurityGuard]] - `calls` [EXTRACTED]
-- [[test_browser_security.py]] - `contains` [EXTRACTED]
+- [[PromptGuard]] - `uses` [INFERRED]
+- [[fixture_47]] - `references` [EXTRACTED]
+- [[test_context_integrity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_196
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/graphify/references/transcribe.md"
 type: "document"
-community: "Community 461"
+community: "graphify Skill"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_461
+  - community/graphify_Skill
 ---
 
 # graphify Transcribe Reference
@@ -14,4 +14,4 @@ tags:
 - [[Whisper Transcription]] - `references` [EXTRACTED]
 - [[graphify Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_461
+#graphify/document #graphify/EXTRACTED #community/graphify_Skill

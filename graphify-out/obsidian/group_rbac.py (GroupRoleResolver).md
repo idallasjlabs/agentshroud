@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "Community 194"
+community: "group_rbac.py (GroupRoleResolver)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_194
+  - community/group_rbacpy_GroupRoleResolver
 ---
 
 # group_rbac.py (GroupRoleResolver)
 
-## Connections
-- [[test_group_rbac.py]] - `implements` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_194
+#graphify/code #graphify/EXTRACTED #community/group_rbacpy_GroupRoleResolver

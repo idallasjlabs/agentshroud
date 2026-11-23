@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/graphify/references/hooks.md"
+source_file: "docker/config/hermes/skills/graphify/references/hooks.md"
 type: "document"
-community: "Community 335"
+community: "graphify reference: commit hook and native CLAUDE.md integration"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_335
+  - community/graphify_reference_commit_hook_and_native_CLAUDEmd_integration
 ---
 
 # graphify reference: commit hook and native CLAUDE.md integration
@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[For git commit hook]] - `contains` [EXTRACTED]
 - [[For native CLAUDE.md integration]] - `contains` [EXTRACTED]
-- [[hooks]] - `contains` [EXTRACTED]
-- [[query]] - `contains` [EXTRACTED]
+- [[hermesskillsgraphifyreferenceshooks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_335
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_commit_hook_and_native_CLAUDEmd_integration

@@ -1,24 +1,27 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
-type: "document"
-community: "Community 566"
-location: "L10"
+source_file: "gateway/security/health_report.py"
+type: "code"
+community: "test_security_toolchain.py"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_566
+  - community/test_security_toolchainpy
 ---
 
 # health_report.py
 
 ## Connections
-- [[Configuration  Environment Variables_23]] - `contains` [EXTRACTED]
-- [[Function Details_40]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_43]] - `contains` [EXTRACTED]
-- [[Purpose_161]] - `contains` [EXTRACTED]
-- [[Related_47]] - `contains` [EXTRACTED]
-- [[Responsibilities_45]] - `contains` [EXTRACTED]
-- [[Threat Model_16]] - `contains` [EXTRACTED]
-- [[health_report.py_1]] - `contains` [EXTRACTED]
+- [[calculate_overall_score()]] - `contains` [EXTRACTED]
+- [[calculate_tool_score()]] - `contains` [EXTRACTED]
+- [[format_report()]] - `contains` [EXTRACTED]
+- [[generate_report()]] - `contains` [EXTRACTED]
+- [[get_trend()]] - `contains` [EXTRACTED]
+- [[init_db()]] - `contains` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[save_to_history()]] - `contains` [EXTRACTED]
+- [[score_to_grade()]] - `contains` [EXTRACTED]
+- [[test_security_audit.py]] - `imports_from` [EXTRACTED]
+- [[test_security_toolchain.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_566
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

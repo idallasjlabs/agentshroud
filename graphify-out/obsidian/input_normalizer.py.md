@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/input_normalizer.py"
-type: "code"
-community: "Community 154"
+source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
+type: "document"
+community: "input_normalizer.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_154
+  - community/input_normalizerpy
 ---
 
-# input_normalizer.py
+# input_normalizer.py.md
 
 ## Connections
-- [[detect_base64_payloads()]] - `contains` [EXTRACTED]
-- [[egress_filter.py]] - `references` [EXTRACTED]
-- [[normalize_input()]] - `contains` [EXTRACTED]
-- [[strip_markdown_exfil()]] - `contains` [EXTRACTED]
+- [[Data Flow]] - `references` [EXTRACTED]
+- [[input_normalizer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_154
+#graphify/document #graphify/EXTRACTED #community/input_normalizerpy

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-data/SKILL.md"
 type: "document"
-community: "Skill: MCP Tools Usage (MCP-TOOLS)"
+community: "Skill: Data Validation (DATA-VAL)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Tools_Usage_MCP-TOOLS
+  - community/Skill_Data_Validation_DATA-VAL
 ---
 
 # hermes/skills/i-data/SKILL.md
 
 ## Connections
-- [[Skill Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
+- [[Skill Data Validation (DATA-VAL)_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Tools_Usage_MCP-TOOLS
+#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL

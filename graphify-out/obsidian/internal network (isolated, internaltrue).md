@@ -1,11 +1,11 @@
 ---
 source_file: "docker-compose.secure.yml"
 type: "code"
-community: "Community 636"
+community: "internal network (isolated, internal:true)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_636
+  - community/internal_network_isolated_internaltrue
 ---
 
 # internal network (isolated, internal:true)
@@ -14,4 +14,4 @@ tags:
 - [[openclaw service (proxy mode, internal-only network)]] - `shares_data_with` [EXTRACTED]
 - [[wazuh service (proxy-mode HIDS sidecar)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_636
+#graphify/code #graphify/EXTRACTED #community/internal_network_isolated_internaltrue

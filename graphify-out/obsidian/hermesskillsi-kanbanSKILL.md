@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-kanban/SKILL.md"
 type: "document"
-community: "curriculum.md (input requirement)"
+community: "hermes/skills/i-kanban/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/curriculummd_input_requirement
+  - community/hermes/skills/i-kanban/SKILLmd
 ---
 
 # hermes/skills/i-kanban/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill kanban_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/curriculummd_input_requirement
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-kanban/SKILLmd

@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_resource_guard_limits.py"
+source_file: "gateway/tests/test_env_guard_class.py"
 type: "code"
-community: "Community 5"
-location: "L30"
+community: "test_env_guard_class.py"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_5
+  - community/test_env_guard_classpy
 ---
 
 # guard()
 
 ## Connections
-- [[ResourceGuard]] - `calls` [EXTRACTED]
-- [[ResourceLimits]] - `calls` [EXTRACTED]
-- [[test_resource_guard_limits.py]] - `contains` [EXTRACTED]
+- [[EnvironmentGuard]] - `uses` [INFERRED]
+- [[fixture_87]] - `references` [EXTRACTED]
+- [[test_env_guard_class.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_5
+#graphify/code #graphify/EXTRACTED #community/test_env_guard_classpy

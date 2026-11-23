@@ -1,21 +1,20 @@
 ---
 source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 1092"
+community: "i-icloud SKILL — iCloud Services"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1092
+  - community/i-icloud_SKILL__iCloud_Services
 ---
 
 # i-icloud SKILL — iCloud Services
 
 ## Connections
 - [[1Password credential store]] - `references` [EXTRACTED]
-- [[calendar.js — iCloud Calendar Management]] - `references` [EXTRACTED]
 - [[i-icloud README — iCloud Data Manager (ICLOUD)]] - `references` [EXTRACTED]
 - [[scriptscontacts.js]] - `references` [EXTRACTED]
 - [[scriptsmail.js]] - `references` [EXTRACTED]
 - [[scriptsnotes.js]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1092
+#graphify/document #graphify/EXTRACTED #community/i-icloud_SKILL__iCloud_Services
