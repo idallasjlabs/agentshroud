@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "SessionManager"
-location: "L317"
+community: "GitGuard"
+location: "L316"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/GitGuard
 ---
 
 # ._analyze_script_file()
@@ -17,7 +17,7 @@ tags:
 - [[dot-_scan_setup_py()]] - `calls` [EXTRACTED]
 - [[Analyze a script file for malicious patterns.]] - `rationale_for` [EXTRACTED]
 - [[GitGuard]] - `method` [EXTRACTED]
-- [[Path_8]] - `references` [EXTRACTED]
+- [[Path_39]] - `references` [EXTRACTED]
 - [[SecurityFinding]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/GitGuard

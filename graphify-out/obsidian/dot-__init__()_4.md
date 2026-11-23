@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L100"
+community: "FalcoAlertWatcher"
+location: "L194"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/FalcoAlertWatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[RateLimiter]] - `method` [EXTRACTED]
+- [[FalcoAlertWatcher]] - `method` [EXTRACTED]
+- [[Path]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

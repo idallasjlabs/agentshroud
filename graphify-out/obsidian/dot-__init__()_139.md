@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "AlertDispatcher (5)"
-location: "L125"
+community: "test_cli_coverage.py"
+location: "L680"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_5
+  - community/test_cli_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[AuditStore]] - `method` [EXTRACTED]
-- [[Path_37]] - `references` [EXTRACTED]
+- [[_FakeConnect]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_5
+#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy

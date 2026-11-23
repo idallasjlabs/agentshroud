@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/tool_acl.py"
+source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L214"
+community: "ControlCenter"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/ControlCenter
 ---
 
 # .__init__()
 
 ## Connections
-- [[ToolACLConfig]] - `references` [EXTRACTED]
-- [[ToolACLEnforcer]] - `method` [EXTRACTED]
+- [[ControlCenter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/ControlCenter

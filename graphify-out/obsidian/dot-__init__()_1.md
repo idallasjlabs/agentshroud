@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/soc/auth.py"
 type: "code"
-community: "KeyRotationManager (3)"
-location: "L818"
+community: "soc/router.py"
+location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager_3
+  - community/soc/routerpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_HeadFakeClient]] - `method` [EXTRACTED]
+- [[RBACManager]] - `references` [EXTRACTED]
+- [[Role]] - `references` [EXTRACTED]
+- [[SCLCaller]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager_3
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

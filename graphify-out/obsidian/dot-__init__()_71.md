@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/proxy/webhook_receiver.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "WebhookReceiver"
-location: "L37"
+community: "_FakeAsyncClient"
+location: "L598"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/_FakeAsyncClient
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_can_create_directory()]] - `calls` [EXTRACTED]
-- [[Path_18]] - `calls` [EXTRACTED]
-- [[RBACConfig_3]] - `calls` [EXTRACTED]
-- [[UserSessionManager]] - `calls` [EXTRACTED]
-- [[WebhookReceiver]] - `method` [EXTRACTED]
+- [[_FakeAsyncClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/code #graphify/EXTRACTED #community/_FakeAsyncClient

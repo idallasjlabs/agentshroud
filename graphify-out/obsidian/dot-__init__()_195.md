@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/delegation.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "_make_proxy"
-location: "L103"
+community: "AgentRegistry"
+location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/AgentRegistry
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load()]] - `calls` [EXTRACTED]
-- [[DelegationManager_1]] - `method` [EXTRACTED]
+- [[AgentRegistry]] - `references` [EXTRACTED]
+- [[IsolationVerifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

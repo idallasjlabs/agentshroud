@@ -1,18 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: ".proxy_messages()"
-location: "L65"
+community: "services.py"
+location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/proxy_messages
+  - community/servicespy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_config()_1]] - `calls` [EXTRACTED]
-- [[SecureBrowser_1]] - `method` [EXTRACTED]
+- [[Any_26]] - `references` [EXTRACTED]
+- [[ServiceManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/proxy_messages
+#graphify/code #graphify/EXTRACTED #community/servicespy

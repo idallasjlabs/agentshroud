@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/egress_monitor.py"
+source_file: "gateway/inbound_edge/call_pipeline.py"
 type: "code"
-community: "Any"
-location: "L86"
+community: "EnhancedApprovalQueue"
+location: "L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/EnhancedApprovalQueue
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressMonitor]] - `method` [EXTRACTED]
-- [[EgressMonitorConfig]] - `references` [EXTRACTED]
+- [[_Window]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

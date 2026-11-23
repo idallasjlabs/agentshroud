@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/tests/test_gateway_email_service.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
-location: "L65"
+community: "GatewayEmailService"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/GatewayEmailService
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_integrity_database()]] - `calls` [EXTRACTED]
-- [[dot-_load_write_windows()]] - `calls` [EXTRACTED]
-- [[MemoryIntegrityConfig]] - `references` [EXTRACTED]
-- [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
-- [[Path_16]] - `references` [EXTRACTED]
+- [[_FakeSmtp]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

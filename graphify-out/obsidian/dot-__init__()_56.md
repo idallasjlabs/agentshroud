@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/proxy/telegram_proxy.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "test_collaborator_tracker.py"
-location: "L398"
+community: "MCPServerConfig"
+location: "L201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/MCPServerConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[ProgressiveLockdown]] - `calls` [EXTRACTED]
-- [[RBACConfig_3]] - `calls` [EXTRACTED]
-- [[RateLimiter_1]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
-- [[load_paused_collaborator_ids()]] - `calls` [EXTRACTED]
+- [[ConnectionPool]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/MCPServerConfig

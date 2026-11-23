@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/rate_limit_guard.py"
+source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "CI/CD Pipeline Advisor (SKILL)"
-location: "L82"
+community: "MetadataGuard"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_SKILL
+  - community/MetadataGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[RateLimitConfig]] - `references` [EXTRACTED]
-- [[RateLimitGuard]] - `method` [EXTRACTED]
+- [[MetadataGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL
+#graphify/code #graphify/EXTRACTED #community/MetadataGuard

@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "UserSessionManager (2)"
-location: "L148"
+community: "TestWebProxySecurityIntegration"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/TestWebProxySecurityIntegration
 ---
 
 # .__init__()
 
 ## Connections
-- [[A2APolicyEngine_3]] - `references` [EXTRACTED]
-- [[A2AProxy_1]] - `method` [EXTRACTED]
-- [[Any_39]] - `references` [EXTRACTED]
+- [[MockEgressEvent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/code #graphify/EXTRACTED #community/TestWebProxySecurityIntegration

@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/ingest_api/alert_telegram_relay.py"
+source_file: "gateway/tests/test_edge_jwt.py"
 type: "code"
-community: "AlertTelegramRelay"
-location: "L73"
+community: "EnhancedApprovalQueue"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - community/EnhancedApprovalQueue
 ---
 
 # .__call__()
 
 ## Connections
-- [[dot-_handle()_1]] - `calls` [EXTRACTED]
-- [[AlertTelegramRelay]] - `method` [EXTRACTED]
-- [[Any_32]] - `references` [EXTRACTED]
+- [[Clock]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

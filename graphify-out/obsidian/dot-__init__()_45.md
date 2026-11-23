@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/citation_verifier.py"
+source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "MCPPolicyEngine (2)"
-location: "L126"
+community: "test_forward_stream.py"
+location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine_2
+  - community/test_forward_streampy
 ---
 
 # .__init__()
 
 ## Connections
-- [[CitationVerifier]] - `method` [EXTRACTED]
-- [[Fetcher]] - `references` [EXTRACTED]
+- [[_PassthroughPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

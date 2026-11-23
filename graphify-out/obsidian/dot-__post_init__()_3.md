@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
+community: "ContentThreat"
 location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/ContentThreat
 ---
 
 # .__post_init__()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ContentThreat]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/ContentThreat

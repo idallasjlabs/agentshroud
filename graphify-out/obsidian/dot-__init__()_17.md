@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
+source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "ContextGuard"
-location: "L20"
+community: "ToolResultSanitizer"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/ToolResultSanitizer
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_compile_patterns()]] - `calls` [EXTRACTED]
-- [[LogSanitizer]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer]] - `method` [EXTRACTED]
+- [[ToolResultSanitizerConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

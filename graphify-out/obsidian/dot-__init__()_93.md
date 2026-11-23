@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/context_integrity.py"
+source_file: "gateway/security/rate_limit_guard.py"
 type: "code"
-community: "PromptGuard"
-location: "L64"
+community: "RateLimitGuard"
+location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/RateLimitGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_29]] - `references` [EXTRACTED]
-- [[ContextIntegrityScorer]] - `method` [EXTRACTED]
+- [[RateLimitConfig]] - `calls` [EXTRACTED]
+- [[RateLimitGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptGuard
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard

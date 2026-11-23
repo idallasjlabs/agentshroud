@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "AgentShroud v0.7.0 Blue Team Security Audit Report"
-location: "L797"
+community: "soc/router.py"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Blue_Team_Security_Audit_Report
+  - community/soc/routerpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_HeadFakeResponse]] - `method` [EXTRACTED]
+- [[dot-_build_permission_matrix()]] - `calls` [EXTRACTED]
+- [[dot-_build_tool_permissions()]] - `calls` [EXTRACTED]
+- [[Initialize RBAC manager with configuration.]] - `rationale_for` [EXTRACTED]
+- [[RBACConfig]] - `references` [EXTRACTED]
+- [[RBACManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_v070_Blue_Team_Security_Audit_Report
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

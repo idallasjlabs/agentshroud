@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Usage"
-location: "L78"
+community: "ingest_api/main.py"
+location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Usage
+  - community/ingest_api/mainpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_HeaderTimeoutReader]] - `method` [EXTRACTED]
+- [[dot-_load_rules()]] - `calls` [EXTRACTED]
+- [[EgressApprovalQueue]] - `method` [EXTRACTED]
+- [[Initialize the approval queue. Args rules_file Path to persistent rules…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Usage
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

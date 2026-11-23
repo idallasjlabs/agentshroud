@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/slack_proxy.py"
+source_file: "gateway/security/xml_leak_filter.py"
 type: "code"
-community: "SlackAPIProxy"
-location: "L69"
+community: "middleware.py"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/middlewarepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[SlackAPIProxy]] - `method` [EXTRACTED]
+- [[Initialize the filter with predefined patterns.]] - `rationale_for` [EXTRACTED]
+- [[XMLLeakFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

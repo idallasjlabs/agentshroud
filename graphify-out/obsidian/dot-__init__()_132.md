@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/file_sandbox.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "FileSandbox"
-location: "L187"
+community: "test_e2e_proxy.py"
+location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/test_e2e_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[FileSandbox]] - `method` [EXTRACTED]
-- [[FileSandboxConfig]] - `references` [EXTRACTED]
-- [[PIIScanner]] - `calls` [EXTRACTED]
+- [[SidecarScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

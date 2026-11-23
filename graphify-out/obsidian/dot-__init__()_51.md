@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "TelegramAPIProxy (3)"
-location: "L29"
+community: "DNSFilterConfig"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_3
+  - community/DNSFilterConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeFetcher_1]] - `method` [EXTRACTED]
+- [[DNSFilter]] - `method` [EXTRACTED]
+- [[DNSFilterConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

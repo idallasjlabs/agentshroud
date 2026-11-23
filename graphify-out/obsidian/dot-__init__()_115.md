@@ -1,17 +1,21 @@
 ---
-source_file: "src/interfaces/text_control_center.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Path (2)"
-location: "L66"
+community: "middleware.py"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path_2
+  - community/middlewarepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[ControlCenter]] - `method` [EXTRACTED]
+- [[dot-_compile_detection_patterns()_1]] - `calls` [EXTRACTED]
+- [[dot-_load_protected_content()]] - `calls` [EXTRACTED]
+- [[Any_41]] - `references` [EXTRACTED]
+- [[Initialize prompt protection system. Args config Configuration dictionary…]] - `rationale_for` [EXTRACTED]
+- [[PromptProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path_2
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/telegram_gateway_relay.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "Required Software"
-location: "L53"
+community: "AuditEvent"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Required_Software
+  - community/AuditEvent
 ---
 
 # .__init__()
 
 ## Connections
-- [[TelegramGatewayRelay]] - `method` [EXTRACTED]
+- [[dot-_generate_event_id()]] - `calls` [EXTRACTED]
+- [[AuditEvent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Required_Software
+#graphify/code #graphify/EXTRACTED #community/AuditEvent

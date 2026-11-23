@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/prompt_guard.py"
+source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
-community: "PromptGuard"
-location: "L584"
+community: "RateLimitGuard"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/RateLimitGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args             block_threshold Score at or above which input is blocked.]] - `rationale_for` [EXTRACTED]
-- [[PatternRule]] - `references` [EXTRACTED]
-- [[PromptGuard_1]] - `method` [EXTRACTED]
+- [[FakeClock_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptGuard
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard

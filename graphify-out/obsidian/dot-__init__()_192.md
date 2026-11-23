@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_http_proxy.py"
+source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "_pcm_bytes"
-location: "L91"
+community: "NetworkValidator"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/NetworkValidator
 ---
 
 # .__init__()
 
 ## Connections
-- [[_MockWriter_1]] - `method` [EXTRACTED]
+- [[NetworkValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/code #graphify/EXTRACTED #community/NetworkValidator

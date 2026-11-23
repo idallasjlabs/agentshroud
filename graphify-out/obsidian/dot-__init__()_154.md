@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_forward_stream.py"
+source_file: "gateway/inbound_edge/edge_app.py"
 type: "code"
-community: "UserSessionManager (2) (2)"
-location: "L140"
+community: "test_edge_service_routes.py"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2_2
+  - community/test_edge_service_routespy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_PassthroughPipeline]] - `method` [EXTRACTED]
+- [[dot-__init__()_151]] - `calls` [EXTRACTED]
+- [[Any_55]] - `references` [EXTRACTED]
+- [[GatewayError]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_2
+#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy

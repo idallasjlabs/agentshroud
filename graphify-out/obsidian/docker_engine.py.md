@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/runtime/docker_engine.py"
-type: "code"
-community: "Community 225"
+source_file: "docs/vault/02 - Modules/Runtime/docker_engine.py.md"
+type: "document"
+community: "docker_engine.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_225
+  - community/docker_enginepy
 ---
 
-# docker_engine.py
+# docker_engine.py.md
 
 ## Connections
-- [[ADR-006 Multi-Runtime Container Support]] - `implements` [EXTRACTED]
-- [[ContainerEngine_2]] - `imports` [EXTRACTED]
-- [[ContainerInfo_2]] - `imports` [EXTRACTED]
-- [[DockerEngine]] - `contains` [EXTRACTED]
-- [[RuntimeConfig]] - `references` [EXTRACTED]
-- [[__init__.py_9]] - `re_exports` [EXTRACTED]
-- [[compose_generator.py]] - `references` [EXTRACTED]
-- [[engine.py]] - `imports_from` [EXTRACTED]
-- [[security.py]] - `references` [EXTRACTED]
+- [[docker_engine.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_225
+#graphify/document #graphify/EXTRACTED #community/docker_enginepy

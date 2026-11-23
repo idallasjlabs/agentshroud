@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_egress_filter.py"
+source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "TestOutboundPipelineIntegration"
-location: "L278"
+community: "ConfigIntegrityMonitor"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundPipelineIntegration
+  - community/ConfigIntegrityMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeAuditStore_1]] - `method` [EXTRACTED]
+- [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
+- [[Path_31]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration
+#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor

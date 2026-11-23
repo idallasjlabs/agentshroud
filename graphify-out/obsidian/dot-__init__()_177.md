@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/network_validator.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "WebProxy"
-location: "L54"
+community: "AuditStore"
+location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/AuditStore
 ---
 
 # .__init__()
 
 ## Connections
-- [[NetworkValidator]] - `method` [EXTRACTED]
+- [[AuditStore]] - `method` [EXTRACTED]
+- [[Path_61]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/AuditStore

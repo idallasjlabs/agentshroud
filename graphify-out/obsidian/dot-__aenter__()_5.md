@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "Deploying AgentShroud on Raspberry Pi (aarch64)"
-location: "L603"
+community: "test_cli_coverage.py"
+location: "L688"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
+  - community/test_cli_coveragepy
 ---
 
 # .__aenter__()
 
 ## Connections
-- [[_FakeAsyncClient]] - `method` [EXTRACTED]
+- [[_FakeConnect]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
+#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy

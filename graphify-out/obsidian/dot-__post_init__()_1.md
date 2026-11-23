@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/trust_manager.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "soc/router.py"
-location: "L68"
+community: "MCPToolCall"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/MCPToolCall
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[TrustConfig]] - `method` [EXTRACTED]
+- [[MCPToolCall]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/MCPToolCall

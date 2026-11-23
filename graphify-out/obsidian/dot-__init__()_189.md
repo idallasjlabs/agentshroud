@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "HTTPConnectProxy"
-location: "L480"
+community: "fastapi.md"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/fastapimd
 ---
 
 # .__init__()
 
 ## Connections
-- [[_SocketTransportWriter]] - `method` [EXTRACTED]
+- [[Args max_requests Maximum requests allowed in the time window window_seconds…]] - `rationale_for` [EXTRACTED]
+- [[RateLimiter_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/code #graphify/EXTRACTED #community/fastapimd

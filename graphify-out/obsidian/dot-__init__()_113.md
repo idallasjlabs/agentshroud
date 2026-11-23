@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "openclaw/skills/i-cr/SKILL.md"
-location: "L28"
+community: "middleware.py"
+location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/middlewarepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_41]] - `references` [EXTRACTED]
-- [[PIIConfig_1]] - `references` [EXTRACTED]
-- [[ToolResultPIIConfig]] - `method` [EXTRACTED]
+- [[ApprovalHardening]] - `method` [EXTRACTED]
+- [[ApprovalHardeningConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

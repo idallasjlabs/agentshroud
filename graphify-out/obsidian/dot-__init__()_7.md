@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/security/delegation.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
-location: "L157"
+community: "DelegationManager"
+location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/DelegationManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeRBAC]] - `method` [EXTRACTED]
+- [[dot-_load()]] - `calls` [EXTRACTED]
+- [[DelegationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

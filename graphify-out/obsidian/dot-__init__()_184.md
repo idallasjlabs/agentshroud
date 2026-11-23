@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/soc/services.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Enum"
-location: "L218"
+community: "AuditChain"
+location: "L348"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/AuditChain
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_76]] - `references` [EXTRACTED]
-- [[ServiceManager]] - `method` [EXTRACTED]
+- [[AuditChain]] - `calls` [EXTRACTED]
+- [[RBACConfig]] - `calls` [EXTRACTED]
+- [[SecurityPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/AuditChain

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/group_rbac.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "test_soc_bots.py"
-location: "L87"
+community: "test_e2e_proxy.py"
+location: "L412"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/test_e2e_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[GroupRoleResolver]] - `method` [EXTRACTED]
+- [[_StubForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_cron_state_monitor.py"
+source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: ".agents/skills/i-cr/SKILL.md"
-location: "L193"
+community: "ToolResultInjectionScanner"
+location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/ToolResultInjectionScanner
 ---
 
 # .__init__()
 
 ## Connections
-- [[_DedupDispatchFake]] - `method` [EXTRACTED]
+- [[Initialize the scanner with optional custom rules. Args custom_rules…]] - `rationale_for` [EXTRACTED]
+- [[InjectionRule]] - `references` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

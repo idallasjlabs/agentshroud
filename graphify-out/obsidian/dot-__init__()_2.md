@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/web_content_scanner.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "test_main_endpoints.py"
-location: "L209"
+community: "soc/router.py"
+location: "L167"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/soc/routerpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[WebContentScanner]] - `method` [EXTRACTED]
+- [[PermissionResult]] - `calls` [EXTRACTED]
+- [[_FakeRBAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

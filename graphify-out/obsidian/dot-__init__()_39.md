@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "Browser — Secure Browser Automation (6)"
-location: "L36"
+community: "deep_security_test"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_6
+  - community/deep_security_test
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeHTTPResponse]] - `method` [EXTRACTED]
+- [[dot-__init__()_39]] - `calls` [EXTRACTED]
+- [[dot-_compile_patterns()]] - `calls` [EXTRACTED]
+- [[LogSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_6
+#graphify/code #graphify/EXTRACTED #community/deep_security_test

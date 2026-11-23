@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "AgentTarget"
-location: "L424"
+community: "make_httpx_fetcher"
+location: "L319"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/make_httpx_fetcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[_PassInboundPipeline]] - `method` [EXTRACTED]
+- [[_FakeStreamResponse_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/make_httpx_fetcher

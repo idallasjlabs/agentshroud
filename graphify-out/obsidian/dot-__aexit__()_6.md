@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "1. GitHub MCP Authentication Reset (2)"
-location: "L641"
+community: "test_llm_proxy.py"
+location: "L805"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/1_GitHub_MCP_Authentication_Reset_2
+  - community/test_llm_proxypy
 ---
 
 # .__aexit__()
 
 ## Connections
-- [[_FakeConnect]] - `method` [EXTRACTED]
+- [[_HeadFakeResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset_2
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

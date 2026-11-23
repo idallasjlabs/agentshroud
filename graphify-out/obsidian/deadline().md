@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/smoke.d/test-sunday-upgrade-scan.sh"
 type: "code"
-community: "Community 1111"
+community: "test-sunday-upgrade-scan.sh"
 location: "L454"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1111
+  - community/test-sunday-upgrade-scansh
 ---
 
 # deadline()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test-sunday-upgrade-scan.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1111
+#graphify/code #graphify/EXTRACTED #community/test-sunday-upgrade-scansh

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/a2a_governance.py"
+source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "api.py"
-location: "L190"
+community: "WebContentScanner"
+location: "L202"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/WebContentScanner
 ---
 
 # .__init__()
 
 ## Connections
-- [[A2AGovernanceConfig]] - `references` [EXTRACTED]
-- [[A2AGovernanceProxy]] - `method` [EXTRACTED]
+- [[WebContentScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

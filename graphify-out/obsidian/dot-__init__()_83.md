@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_contributors.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "ServiceManager"
-location: "L25"
+community: "_StubAuditStore"
+location: "L446"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/_StubAuditStore
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeRBAC_1]] - `method` [EXTRACTED]
+- [[_Event]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/_StubAuditStore

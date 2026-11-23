@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "api.py (2)"
-location: "L8633"
+community: "MCPPermissionManager"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy_2
+  - community/MCPPermissionManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[AsyncMock]] - `method` [EXTRACTED]
+- [[dot-_load_privacy_policy()]] - `calls` [EXTRACTED]
+- [[dot-_recompile_private_data_patterns()]] - `calls` [EXTRACTED]
+- [[MCPPermissionManager]] - `method` [EXTRACTED]
+- [[MCPProxyConfig]] - `references` [EXTRACTED]
+- [[RBACConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy_2
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

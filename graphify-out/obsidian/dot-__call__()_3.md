@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_citation_verifier.py"
+source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "MCPPolicyEngine (2)"
-location: "L33"
+community: "._handle"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine_2
+  - community/_handle
 ---
 
 # .__call__()
 
 ## Connections
-- [[FetchOutcome]] - `references` [EXTRACTED]
-- [[_FakeFetcher]] - `method` [EXTRACTED]
+- [[dot-_handle()]] - `calls` [EXTRACTED]
+- [[AlertTelegramRelay]] - `method` [EXTRACTED]
+- [[Any_13]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2
+#graphify/code #graphify/EXTRACTED #community/_handle

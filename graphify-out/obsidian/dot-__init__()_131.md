@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_a2a_policy.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "A2APolicyConfig"
-location: "L388"
+community: "test_e2e_proxy.py"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyConfig
+  - community/test_e2e_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_LegacyStubApprovalQueue]] - `method` [EXTRACTED]
+- [[ForwarderConfig]] - `calls` [EXTRACTED]
+- [[HTTPForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

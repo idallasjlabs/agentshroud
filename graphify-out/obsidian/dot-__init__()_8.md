@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/llm_proxy.py"
+source_file: "gateway/security/report_store.py"
 type: "code"
-community: "ModeRequest"
-location: "L251"
+community: "ReportStore"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/ReportStore
 ---
 
 # .__init__()
 
 ## Connections
-- [[LLMProxy]] - `method` [EXTRACTED]
+- [[ReportStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModeRequest
+#graphify/code #graphify/EXTRACTED #community/ReportStore

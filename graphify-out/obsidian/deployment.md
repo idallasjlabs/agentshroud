@@ -1,20 +1,17 @@
 ---
 source_file: "docs/runbooks/deployment.md"
 type: "document"
-community: "Community 559"
+community: "Deployment Runbook — AgentShroud"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/Community_559
+  - graphify/EXTRACTED
+  - community/Deployment_Runbook__AgentShroud
 ---
 
 # deployment.md
 
 ## Connections
 - [[Deployment Runbook — AgentShroud]] - `contains` [EXTRACTED]
-- [[RUNBOOK]] - `conceptually_related_to` [INFERRED]
-- [[Rollback Procedure]] - `semantically_similar_to` [INFERRED]
-- [[raspberry-pi]] - `references` [AMBIGUOUS]
 
-#graphify/document #graphify/INFERRED #community/Community_559
+#graphify/document #graphify/EXTRACTED #community/Deployment_Runbook__AgentShroud

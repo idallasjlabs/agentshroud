@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/security/token_validation.py"
 type: "code"
-community: "TelegramAPIProxy (3)"
-location: "L191"
+community: "TokenValidator"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_3
+  - community/TokenValidator
 ---
 
 # .__init__()
 
 ## Connections
-- [[_StreamResp]] - `method` [EXTRACTED]
+- [[TokenValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3
+#graphify/code #graphify/EXTRACTED #community/TokenValidator

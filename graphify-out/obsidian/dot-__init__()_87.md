@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "AuditChain"
-location: "L348"
+community: "test_mcp_proxy.py"
+location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/test_mcp_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[AuditChain]] - `calls` [EXTRACTED]
-- [[RBACConfig_3]] - `calls` [EXTRACTED]
-- [[SecurityPipeline_1]] - `method` [EXTRACTED]
+- [[MCPInspector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

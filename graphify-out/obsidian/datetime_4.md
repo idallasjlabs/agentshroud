@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: ""
 type: "code"
-community: "Community 102"
-location: "L67"
+community: "daily_cve_report.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_102
+  - community/daily_cve_reportpy
 ---
 
 # datetime
 
 ## Connections
-- [[falco_monitor.py]] - `imports_from` [EXTRACTED]
-- [[read_alerts()]] - `references` [EXTRACTED]
+- [[_already_checked_upstream_today()]] - `references` [EXTRACTED]
+- [[_already_ingested_ghsa_today()]] - `references` [EXTRACTED]
+- [[_already_sent_today()]] - `references` [EXTRACTED]
+- [[daily_cve_report.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_102
+#graphify/code #graphify/EXTRACTED #community/daily_cve_reportpy

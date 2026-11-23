@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "api.py (3)"
-location: "L145"
+community: "ToolChainAnalyzer"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy_3
+  - community/ToolChainAnalyzer
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeResp]] - `method` [EXTRACTED]
+- [[dot-_load_custom_patterns()]] - `calls` [EXTRACTED]
+- [[dot-_load_default_patterns()]] - `calls` [EXTRACTED]
+- [[Any_83]] - `references` [EXTRACTED]
+- [[Initialize the tool chain analyzer. Args config Configuration dictionary with…]] - `rationale_for` [EXTRACTED]
+- [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy_3
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

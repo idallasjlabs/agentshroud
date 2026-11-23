@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/canary_tripwire.py"
+source_file: "gateway/inbound_edge/edge_app.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L45"
+community: "test_edge_service_routes.py"
+location: "L395"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/test_edge_service_routespy
 ---
 
 # .__init__()
 
 ## Connections
-- [[CanaryConfig_1]] - `references` [EXTRACTED]
-- [[CanaryTripwire]] - `method` [EXTRACTED]
+- [[dot-__init__()_154]] - `calls` [EXTRACTED]
+- [[EdgeGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy

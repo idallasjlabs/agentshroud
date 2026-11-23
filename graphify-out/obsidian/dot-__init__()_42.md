@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_web_proxy_security.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "scanner_integration.py"
-location: "L39"
+community: "test_soc_router_coverage.py"
+location: "L1510"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/test_soc_router_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[MockURLResult]] - `method` [EXTRACTED]
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[_FakeDecideQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

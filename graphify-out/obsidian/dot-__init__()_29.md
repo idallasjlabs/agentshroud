@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/report_store.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "test_dashboard.py"
-location: "L66"
+community: "_FakeWSConnect"
+location: "L745"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/_FakeWSConnect
 ---
 
 # .__init__()
 
 ## Connections
-- [[ReportStore]] - `method` [EXTRACTED]
+- [[_FakeWSConnect]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/_FakeWSConnect

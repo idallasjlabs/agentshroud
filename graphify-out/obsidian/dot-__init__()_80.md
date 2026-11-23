@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/proxy/collaborator_greeter.py"
+source_file: "gateway/dashboard/proxy_status.py"
 type: "code"
-community: "export-bot-conversations.py (2)"
-location: "L36"
+community: "ProxyDashboard"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy_2
+  - community/ProxyDashboard
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_state()]] - `calls` [EXTRACTED]
-- [[dot-_load_taglines()]] - `calls` [EXTRACTED]
-- [[AsyncClient]] - `references` [EXTRACTED]
-- [[CollaboratorGreeter]] - `method` [EXTRACTED]
+- [[ProxyDashboard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy_2
+#graphify/code #graphify/EXTRACTED #community/ProxyDashboard

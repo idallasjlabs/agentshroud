@@ -1,17 +1,19 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Job details"
-location: "L186"
+community: "prompt_guard.py"
+location: "L584"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Job_details
+  - community/prompt_guardpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[MatchResult]] - `method` [EXTRACTED]
+- [[Args block_threshold Score at or above which input is blocked.…]] - `rationale_for` [EXTRACTED]
+- [[PatternRule]] - `references` [EXTRACTED]
+- [[PromptGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Job_details
+#graphify/code #graphify/EXTRACTED #community/prompt_guardpy

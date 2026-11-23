@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_jira_dev_ticket.py"
+source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
-community: "AgentShroud™ Brand Guidelines"
-location: "L266"
+community: "RateLimitGuard"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/RateLimitGuard
 ---
 
 # .__call__()
 
 ## Connections
-- [[_MockTransport]] - `method` [EXTRACTED]
+- [[FakeClock_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard

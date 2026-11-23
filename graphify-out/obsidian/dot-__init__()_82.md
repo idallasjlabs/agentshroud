@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/soc/contributors.py"
+source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "ServiceManager"
-location: "L27"
+community: "_LegacyStubApprovalQueue"
+location: "L388"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/_LegacyStubApprovalQueue
 ---
 
 # .__init__()
 
 ## Connections
-- [[ContributorManager]] - `method` [EXTRACTED]
+- [[_LegacyStubApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/_LegacyStubApprovalQueue

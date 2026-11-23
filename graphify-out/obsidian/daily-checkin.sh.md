@@ -1,19 +1,18 @@
 ---
 source_file: "docker/config/openclaw/cron/scripts/daily-checkin.sh"
 type: "code"
-community: "Community 1029"
+community: "daily-checkin.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1029
+  - community/daily-checkinsh
 ---
 
 # daily-checkin.sh
 
 ## Connections
 - [[_fmt()]] - `defines` [EXTRACTED]
-- [[agentshroud-ssh-exec.sh]] - `calls` [EXTRACTED]
 - [[daily-checkin.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1029
+#graphify/code #graphify/EXTRACTED #community/daily-checkinsh

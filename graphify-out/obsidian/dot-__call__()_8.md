@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_alert_telegram_relay.py"
+source_file: "gateway/tests/test_edge_pipeline.py"
 type: "code"
-community: "AlertTelegramRelay"
-location: "L17"
+community: "EnhancedApprovalQueue"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - community/EnhancedApprovalQueue
 ---
 
 # .__call__()
 
 ## Connections
-- [[_SendSpy]] - `method` [EXTRACTED]
+- [[Clock_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

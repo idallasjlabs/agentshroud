@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/intel_report.py"
+source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "KillSwitchMonitor (3)"
-location: "L205"
+community: "test_llm_proxy.py"
+location: "L540"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_3
+  - community/test_llm_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[IntelReportStore_1]] - `method` [EXTRACTED]
-- [[Path_51]] - `references` [EXTRACTED]
+- [[_FakeToolACL]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_a2a_integration.py"
+source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "UserSessionManager"
-location: "L55"
+community: "AuditExportConfig"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/AuditExportConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[A2APeerTestDouble]] - `method` [EXTRACTED]
+- [[dot-_default_jsonld_context()]] - `calls` [EXTRACTED]
+- [[AuditExportConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/AuditExportConfig

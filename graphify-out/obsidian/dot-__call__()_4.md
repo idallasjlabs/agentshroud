@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/tests/test_jira_dev_ticket.py"
 type: "code"
-community: "TelegramAPIProxy (3)"
-location: "L32"
+community: "test_jira_dev_ticket.py"
+location: "L258"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_3
+  - community/test_jira_dev_ticketpy
 ---
 
 # .__call__()
 
 ## Connections
-- [[FetchOutcome_1]] - `calls` [EXTRACTED]
-- [[_FakeFetcher_1]] - `method` [EXTRACTED]
+- [[_MockTransport]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3
+#graphify/code #graphify/EXTRACTED #community/test_jira_dev_ticketpy

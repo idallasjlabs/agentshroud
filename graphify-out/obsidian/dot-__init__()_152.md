@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/inbound_edge/edge_app.py"
 type: "code"
-community: "Deploying AgentShroud on Raspberry Pi (aarch64)"
-location: "L598"
+community: "test_edge_service_routes.py"
+location: "L131"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
+  - community/test_edge_service_routespy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeAsyncClient]] - `method` [EXTRACTED]
+- [[EdgeSettings]] - `references` [EXTRACTED]
+- [[GatewayBackedProvider]] - `method` [EXTRACTED]
+- [[GatewayClient]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
+#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy

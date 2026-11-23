@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/security/config_integrity.py"
+source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "test_runtime_engines.py"
-location: "L49"
+community: "TrustManager"
+location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy
+  - community/TrustManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
-- [[Path_26]] - `references` [EXTRACTED]
+- [[dot-_init_db()_2]] - `calls` [EXTRACTED]
+- [[ProgressiveTrustConfig]] - `references` [EXTRACTED]
+- [[TrustConfig]] - `calls` [EXTRACTED]
+- [[TrustLevel_1]] - `references` [EXTRACTED]
+- [[TrustManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy
+#graphify/code #graphify/EXTRACTED #community/TrustManager

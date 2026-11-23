@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "EgressFilterConfig"
+community: ".record_activity"
 location: "L193"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/record_activity
 ---
 
 # ._append_contributor_log()
 
 ## Connections
 - [[dot-record_activity()]] - `calls` [EXTRACTED]
-- [[CollaboratorActivityTracker_1]] - `method` [EXTRACTED]
+- [[CollaboratorActivityTracker]] - `method` [EXTRACTED]
 - [[Mirror activity into workspace contributor logs used by daily digests.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/record_activity

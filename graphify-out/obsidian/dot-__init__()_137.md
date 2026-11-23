@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/inbound_edge/oauth_service.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L252"
+community: "EdgeOAuthService"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/EdgeOAuthService
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPPolicyConfig_1]] - `references` [EXTRACTED]
-- [[MCPPolicyEngine_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_136]] - `calls` [EXTRACTED]
+- [[OAuthFailure]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/EdgeOAuthService

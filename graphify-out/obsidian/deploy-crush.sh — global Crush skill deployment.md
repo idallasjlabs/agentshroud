@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/README.md"
 type: "concept"
-community: "Community 1367"
+community: "deploy-crush.sh — global Crush skill deployment"
 location: "Global Tool Deployment"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_1367
+  - community/deploy-crushsh__global_Crush_skill_deployment
 ---
 
 # deploy-crush.sh — global Crush skill deployment
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[deploy-opencode.sh — global OpenCode agent deployment]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_1367
+#graphify/concept #graphify/INFERRED #community/deploy-crushsh__global_Crush_skill_deployment

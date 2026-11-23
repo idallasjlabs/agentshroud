@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_alert_telegram_relay.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "AlertTelegramRelay"
-location: "L13"
+community: "PodmanEngine"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - community/PodmanEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[_SendSpy]] - `method` [EXTRACTED]
+- [[dot-_detect_compose()]] - `calls` [EXTRACTED]
+- [[PodmanEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/code #graphify/EXTRACTED #community/PodmanEngine

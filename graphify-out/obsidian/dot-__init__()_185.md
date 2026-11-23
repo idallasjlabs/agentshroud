@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "Enum"
-location: "L29"
+community: "WebhookReceiver"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/WebhookReceiver
 ---
 
 # .__init__()
 
 ## Connections
-- [[SOCWebSocketHandler_2]] - `method` [EXTRACTED]
-- [[WebSocket_8]] - `references` [EXTRACTED]
+- [[dot-_can_create_directory()]] - `calls` [EXTRACTED]
+- [[RBACConfig]] - `calls` [EXTRACTED]
+- [[UserSessionManager]] - `calls` [EXTRACTED]
+- [[WebhookReceiver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/WebhookReceiver

@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "MCPToolResult"
-location: "L66"
+community: "load_config"
+location: "L169"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPToolResult
+  - community/load_config
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[MCPToolResult]] - `method` [EXTRACTED]
+- [[MCPPolicyConfig]] - `method` [EXTRACTED]
+- [[RBACConfig]] - `calls` [EXTRACTED]
+- [[_norm()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPToolResult
+#graphify/code #graphify/EXTRACTED #community/load_config

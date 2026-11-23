@@ -1,16 +1,13 @@
 ---
 source_file: "docker/bots/hermes/dashboard_bridge.py"
 type: "code"
-community: "Community 808"
+community: "dashboard_bridge.py (Hermes)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_808
+  - community/dashboard_bridgepy_Hermes
 ---
 
 # dashboard_bridge.py (Hermes)
 
-## Connections
-- [[test_hermes_dashboard_bridge.py]] - `implements` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_808
+#graphify/code #graphify/EXTRACTED #community/dashboard_bridgepy_Hermes

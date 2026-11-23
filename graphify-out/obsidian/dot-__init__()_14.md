@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/drift_detector.py"
+source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "ContextGuard"
-location: "L62"
+community: "_make_proxy"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/_make_proxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_db()]] - `calls` [EXTRACTED]
-- [[DriftDetector]] - `method` [EXTRACTED]
+- [[_RaisingRedactionResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

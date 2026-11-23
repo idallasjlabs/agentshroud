@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/context_guard.py"
+source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "ContextGuard"
-location: "L70"
+community: "PrivacyPolicyEnforcer"
+location: "L181"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/PrivacyPolicyEnforcer
 ---
 
 # .__init__()
 
 ## Connections
-- [[ContextGuard]] - `method` [EXTRACTED]
+- [[dot-default()]] - `calls` [EXTRACTED]
+- [[PrivacyPolicy]] - `references` [EXTRACTED]
+- [[PrivacyPolicyEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

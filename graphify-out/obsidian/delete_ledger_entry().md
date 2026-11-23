@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 978"
+community: "ingest_api/main.py"
 location: "L899"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/ingest_api/mainpy
 ---
 
 # delete_ledger_entry()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
-- [[Forget this' - permanently delete a ledger entry      Implements right to erasur]] - `rationale_for` [EXTRACTED]
-- [[HTTPException]] - `calls` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[Forget this' - permanently delete a ledger entry Implements right to erasure.…_1]] - `rationale_for` [EXTRACTED]
+- [[delete_1]] - `references` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_978
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

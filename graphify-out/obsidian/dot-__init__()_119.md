@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/approval_hardening.py"
+source_file: "gateway/inbound_edge/call_pipeline.py"
 type: "code"
-community: "Any"
-location: "L114"
+community: "EnhancedApprovalQueue"
+location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/EnhancedApprovalQueue
 ---
 
 # .__init__()
 
 ## Connections
-- [[ApprovalHardening]] - `method` [EXTRACTED]
-- [[ApprovalHardeningConfig]] - `references` [EXTRACTED]
+- [[dot-__init__()_120]] - `calls` [EXTRACTED]
+- [[_Denied]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

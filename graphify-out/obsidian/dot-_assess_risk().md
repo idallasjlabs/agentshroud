@@ -1,21 +1,20 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "SkillGuard"
+community: "ingest_api/main.py"
 location: "L238"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/ingest_api/mainpy
 ---
 
 # ._assess_risk()
 
 ## Connections
+- [[dot-assess_risk()]] - `calls` [EXTRACTED]
 - [[dot-request_approval()]] - `calls` [EXTRACTED]
-- [[Assess risk level for a domainport combination.          Returns             R]] - `rationale_for` [EXTRACTED]
 - [[EgressApprovalQueue]] - `method` [EXTRACTED]
-- [[Public risk assessment helper for managementAPI surfaces.]] - `rationale_for` [EXTRACTED]
-- [[RiskLevel_4]] - `references` [EXTRACTED]
+- [[RiskLevel]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_policy.py"
+source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L278"
+community: "test_forward_routing.py"
+location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/test_forward_routingpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeApprovalQueue]] - `method` [EXTRACTED]
+- [[_PipelineCaptor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/test_forward_routingpy

@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L138"
+community: "KeyRotationManager"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/KeyRotationManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_sessions()]] - `calls` [EXTRACTED]
-- [[Initialize session manager.          Args             base_workspace Base dire]] - `rationale_for` [EXTRACTED]
-- [[Path_1]] - `references` [EXTRACTED]
-- [[UserSessionManager]] - `method` [EXTRACTED]
+- [[MockValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

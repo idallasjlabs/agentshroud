@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/subagent_governance.py"
+source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "SubagentGovernance"
-location: "L209"
+community: "load_config"
+location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentGovernance
+  - community/load_config
 ---
 
 # .__init__()
 
 ## Connections
-- [[GovernanceConfig]] - `references` [EXTRACTED]
-- [[SubagentGovernance]] - `method` [EXTRACTED]
+- [[_FakeApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentGovernance
+#graphify/code #graphify/EXTRACTED #community/load_config

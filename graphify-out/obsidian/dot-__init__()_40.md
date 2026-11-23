@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_web_proxy_security.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "scanner_integration.py"
-location: "L24"
+community: "test_soc_router_coverage.py"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/test_soc_router_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[MockDNSVerdict]] - `method` [EXTRACTED]
+- [[FakeAuditStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

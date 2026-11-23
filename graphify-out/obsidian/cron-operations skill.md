@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt"
 type: "concept"
-community: "Community 522"
+community: "competitive-report-*.md dated reports"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_522
+  - community/competitive-report-md_dated_reports
 ---
 
 # cron-operations skill
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Hermes Competitive Intelligence Email (AMPM)_1]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_522
+#graphify/concept #graphify/EXTRACTED #community/competitive-report-md_dated_reports

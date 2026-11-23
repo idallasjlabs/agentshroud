@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/tests/test_gateway_email_service.py"
 type: "code"
-community: "Browser — Secure Browser Automation (6)"
-location: "L45"
+community: "GatewayEmailService"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_6
+  - community/GatewayEmailService
 ---
 
 # .__exit__()
 
 ## Connections
-- [[_FakeHTTPResponse]] - `method` [EXTRACTED]
+- [[_FakeSmtp]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_6
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

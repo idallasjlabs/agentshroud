@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "Community 49"
+community: "EgressFilter"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/EgressFilter
 ---
 
 # dashboard_main()
 
 ## Connections
-- [[Path_47]] - `calls` [EXTRACTED]
 - [[Serve the main dashboard page.]] - `rationale_for` [EXTRACTED]
+- [[get_3]] - `references` [EXTRACTED]
 - [[management.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_49
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

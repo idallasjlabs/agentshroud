@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "rationale"
-community: "Community 25"
+community: "SSHResult"
 location: "L198"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_25
+  - community/SSHResult
 ---
 
 # cwd with shell metacharacters is rejected before execution.
 
 ## Connections
-- [[.test_ssh_exec_cwd_invalid_rejects_400()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_ssh_exec_cwd_invalid_rejects_400()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_25
+#graphify/rationale #graphify/EXTRACTED #community/SSHResult

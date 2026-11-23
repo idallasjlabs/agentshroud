@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ingest_api/email_service.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "AgentShroud Access Control Matrix"
-location: "L51"
+community: "_StubAuditStore"
+location: "L449"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/_StubAuditStore
 ---
 
 # .__init__()
 
 ## Connections
-- [[GatewayEmailService_1]] - `method` [EXTRACTED]
-- [[TransportFactory]] - `references` [EXTRACTED]
+- [[_StubAuditStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/code #graphify/EXTRACTED #community/_StubAuditStore

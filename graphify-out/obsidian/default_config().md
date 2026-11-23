@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_differential_pii_detector.py"
+source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "Community 56"
-location: "L35"
+community: "DNSFilterConfig"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_56
+  - community/DNSFilterConfig
 ---
 
 # default_config()
 
 ## Connections
-- [[DifferentialPIIConfig_1]] - `references` [EXTRACTED]
-- [[test_differential_pii_detector.py]] - `contains` [EXTRACTED]
+- [[DNSFilterConfig]] - `uses` [INFERRED]
+- [[fixture_34]] - `references` [EXTRACTED]
+- [[test_dns_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_56
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

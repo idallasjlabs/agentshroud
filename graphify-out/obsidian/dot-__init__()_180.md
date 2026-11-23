@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/tests/test_progressive_lockdown.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "AlertDispatcher (3)"
-location: "L34"
+community: ".get_or_create_session"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/get_or_create_session
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeRBAC_1]] - `method` [EXTRACTED]
+- [[dot-_load_sessions()]] - `calls` [EXTRACTED]
+- [[Initialize session manager. Args base_workspace Base directory for user…]] - `rationale_for` [EXTRACTED]
+- [[Path_64]] - `references` [EXTRACTED]
+- [[UserSessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/code #graphify/EXTRACTED #community/get_or_create_session

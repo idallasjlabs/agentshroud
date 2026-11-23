@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "MiddlewareManager (2)"
-location: "L167"
+community: "AlertTelegramRelay"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/AlertTelegramRelay
 ---
 
 # .__init__()
 
 ## Connections
-- [[PermissionResult]] - `calls` [EXTRACTED]
-- [[SimpleNamespace_1]] - `calls` [EXTRACTED]
-- [[_FakeRBAC_2]] - `method` [EXTRACTED]
+- [[_SendSpy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

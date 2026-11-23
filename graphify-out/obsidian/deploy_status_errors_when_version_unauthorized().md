@@ -1,19 +1,19 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "Community 39"
+community: ".new"
 location: "L1207"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/new
 ---
 
 # deploy_status_errors_when_version_unauthorized()
 
 ## Connections
-- [[.new()_2]] - `calls` [EXTRACTED]
-- [[.with()]] - `calls` [EXTRACTED]
+- [[dot-new()_2]] - `calls` [EXTRACTED]
+- [[dot-with()]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_39
+#graphify/code #graphify/EXTRACTED #community/new

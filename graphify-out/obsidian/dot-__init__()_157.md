@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L941"
+community: "ApprovalStore"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/ApprovalStore
 ---
 
 # .__init__()
 
 ## Connections
-- [[SkillGuardBlocked]] - `method` [EXTRACTED]
+- [[ApprovalStore]] - `method` [EXTRACTED]
+- [[Path_52]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/ApprovalStore

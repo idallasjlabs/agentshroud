@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/security/encoding_detector.py"
+source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "test_agent_cve_registry.py (2)"
-location: "L69"
+community: "fastapi.md"
+location: "L398"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy_2
+  - community/fastapimd
 ---
 
 # .__init__()
 
 ## Connections
-- [[EncodingConfig]] - `references` [EXTRACTED]
-- [[EncodingDetector]] - `method` [EXTRACTED]
+- [[ProgressiveLockdown]] - `calls` [EXTRACTED]
+- [[RBACConfig]] - `calls` [EXTRACTED]
+- [[RateLimiter_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[load_paused_collaborator_ids()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy_2
+#graphify/code #graphify/EXTRACTED #community/fastapimd

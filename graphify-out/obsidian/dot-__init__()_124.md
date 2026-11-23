@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/xml_leak_filter.py"
+source_file: "gateway/tests/test_edge_jwt.py"
 type: "code"
-community: "Any"
-location: "L50"
+community: "EnhancedApprovalQueue"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/EnhancedApprovalQueue
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize the filter with predefined patterns.]] - `rationale_for` [EXTRACTED]
-- [[XMLLeakFilter]] - `method` [EXTRACTED]
+- [[Clock]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

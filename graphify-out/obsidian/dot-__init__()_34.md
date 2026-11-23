@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "iot_button_register_cb (2)"
-location: "L41"
+community: "KeyVault"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/iot_button_register_cb_2
+  - community/KeyVault
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_pending_store()]] - `calls` [EXTRACTED]
-- [[ApprovalQueue]] - `method` [EXTRACTED]
-- [[ApprovalQueueConfig]] - `references` [EXTRACTED]
-- [[Initialize approval queue          Args             config Approval queue conf]] - `rationale_for` [EXTRACTED]
-- [[MFAGuard]] - `references` [EXTRACTED]
+- [[KeyInjector]] - `method` [EXTRACTED]
+- [[KeyVault]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/iot_button_register_cb_2
+#graphify/code #graphify/EXTRACTED #community/KeyVault

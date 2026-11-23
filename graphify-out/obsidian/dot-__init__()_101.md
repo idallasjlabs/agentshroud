@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/tool_result_injection.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "_t"
-location: "L176"
+community: "migrate-cve-registry-ghsa.py"
+location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/migrate-cve-registry-ghsapy
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize the scanner with optional custom rules.          Args             cu]] - `rationale_for` [EXTRACTED]
-- [[InjectionRule]] - `references` [EXTRACTED]
-- [[ToolResultInjectionScanner]] - `method` [EXTRACTED]
+- [[MatchResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

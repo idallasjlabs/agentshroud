@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/package.json"
+source_file: "browser-extension/package.json"
 type: "code"
-community: "Approval queue (notify Isaiah via Telegram, wait up to 1 hour)"
-location: "L4"
+community: "browser-extension/package.json"
+location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_queue_notify_Isaiah_via_Telegram_wait_up_to_1_hour
+  - community/browser-extension/packagejson
 ---
 
 # description
 
 ## Connections
-- [[openclawskillsi-browserpackage.json]] - `contains` [EXTRACTED]
+- [[browser-extensionpackage.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_queue_notify_Isaiah_via_Telegram_wait_up_to_1_hour
+#graphify/code #graphify/EXTRACTED #community/browser-extension/packagejson

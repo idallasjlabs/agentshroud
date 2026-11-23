@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
+community: "MemoryLifecycleManager"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/MemoryLifecycleManager
 ---
 
 # .__post_init__()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RetentionAction]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/MemoryLifecycleManager

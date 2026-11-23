@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/ssh_proxy/proxy.py"
+source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "SSHProxy"
-location: "L138"
+community: "WebProxy"
+location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/WebProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[SSHConfig_1]] - `references` [EXTRACTED]
-- [[SSHProxy_1]] - `method` [EXTRACTED]
+- [[EgressFilter]] - `references` [EXTRACTED]
+- [[HTTPConnectProxy]] - `method` [EXTRACTED]
+- [[WebProxy]] - `references` [EXTRACTED]
+- [[WebProxyConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/WebProxy

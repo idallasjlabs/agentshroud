@@ -1,17 +1,23 @@
 ---
-source_file: "gateway/tests/test_slack_proxy_coverage.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "SlackAPIProxy"
-location: "L78"
+community: "EnhancedApprovalQueue"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/EnhancedApprovalQueue
 ---
 
 # .__init__()
 
 ## Connections
-- [[_RaisingRedactionResult]] - `method` [EXTRACTED]
+- [[dot-from_env()]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `references` [EXTRACTED]
+- [[ApprovalStore]] - `references` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
+- [[Initialize enhanced approval queue. Args config Basic approval queue…]] - `rationale_for` [EXTRACTED]
+- [[MFAGuard]] - `references` [EXTRACTED]
+- [[ToolRiskConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

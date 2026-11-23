@@ -1,17 +1,28 @@
 ---
-source_file: "gateway/tests/test_citation_verifier.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "TelegramAPIProxy (3)"
-location: "L319"
+community: "DNSFilterConfig"
+location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_3
+  - community/DNSFilterConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeStreamResponse_1]] - `method` [EXTRACTED]
+- [[BrowserSecurityGuard]] - `calls` [EXTRACTED]
+- [[DNSFilter]] - `calls` [EXTRACTED]
+- [[DNSFilterConfig]] - `calls` [EXTRACTED]
+- [[EgressMonitor]] - `calls` [EXTRACTED]
+- [[EgressMonitorConfig]] - `calls` [EXTRACTED]
+- [[NetworkValidator]] - `calls` [EXTRACTED]
+- [[OAuthSecurityValidator]] - `calls` [EXTRACTED]
+- [[RateLimiter]] - `calls` [EXTRACTED]
+- [[URLAnalyzer]] - `references` [EXTRACTED]
+- [[WebContentScanner]] - `references` [EXTRACTED]
+- [[WebProxy]] - `method` [EXTRACTED]
+- [[WebProxyConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

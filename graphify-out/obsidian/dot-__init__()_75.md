@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_jira_dev_ticket.py"
+source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "AgentShroud™ Brand Guidelines"
-location: "L256"
+community: "_FakeStreamResponse"
+location: "L1413"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/_FakeStreamResponse
 ---
 
 # .__init__()
 
 ## Connections
-- [[_MockTransport]] - `method` [EXTRACTED]
+- [[_FakeStreamResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/code #graphify/EXTRACTED #community/_FakeStreamResponse

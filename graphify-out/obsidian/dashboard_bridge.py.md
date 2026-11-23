@@ -1,22 +1,22 @@
 ---
 source_file: "docker/bots/hermes/dashboard_bridge.py"
 type: "code"
-community: "Community 591"
+community: "_handle"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_591
+  - community/_handle
 ---
 
 # dashboard_bridge.py
 
 ## Connections
-- [[_handle()]] - `contains` [EXTRACTED]
-- [[_pipe()]] - `contains` [EXTRACTED]
+- [[Relays 0.0.0.0HERMES_DASHBOARD_BRIDGE_PORT - 127.0.0.1HERMES_DASHBOARD_PORT.…]] - `rationale_for` [EXTRACTED]
+- [[_handle()_4]] - `contains` [EXTRACTED]
+- [[_pipe()_3]] - `contains` [EXTRACTED]
 - [[_read_request_headers()]] - `contains` [EXTRACTED]
-- [[docker_proxy_relay.py]] - `semantically_similar_to` [EXTRACTED]
-- [[main()_2]] - `contains` [EXTRACTED]
+- [[main()_32]] - `contains` [EXTRACTED]
 - [[rewrite_request_headers()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_591
+#graphify/code #graphify/EXTRACTED #community/_handle

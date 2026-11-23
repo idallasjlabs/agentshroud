@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_key_rotation.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "env_guard.py"
-location: "L30"
+community: "AuditChain"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/env_guardpy
+  - community/AuditChain
 ---
 
 # .__init__()
 
 ## Connections
-- [[MockValidator]] - `method` [EXTRACTED]
+- [[AuditChain]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/env_guardpy
+#graphify/code #graphify/EXTRACTED #community/AuditChain

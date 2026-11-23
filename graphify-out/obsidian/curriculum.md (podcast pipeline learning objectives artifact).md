@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-mnemosyne/SKILL.md"
 type: "concept"
-community: "Community 1861"
+community: "curriculum.md (podcast pipeline learning objectives artifact)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1861
+  - community/curriculummd_podcast_pipeline_learning_objectives_artifact
 ---
 
 # curriculum.md (podcast pipeline learning objectives artifact)
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1861
+#graphify/concept #graphify/EXTRACTED #community/curriculummd_podcast_pipeline_learning_objectives_artifact

@@ -1,12 +1,11 @@
 ---
-source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
+source_file: ""
 type: "code"
-community: "Community 492"
-location: "L78"
+community: "model_usage.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_492
+  - community/model_usagepy
 ---
 
 # date
@@ -14,4 +13,4 @@ tags:
 ## Connections
 - [[parse_date()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_492
+#graphify/code #graphify/EXTRACTED #community/model_usagepy

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/approval_queue/store.py"
+source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: "ApprovalStore"
-location: "L43"
+community: "SharedMemoryManager"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalStore
+  - community/SharedMemoryManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[ApprovalStore]] - `method` [EXTRACTED]
-- [[Path_23]] - `references` [EXTRACTED]
+- [[SharedMemoryManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalStore
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

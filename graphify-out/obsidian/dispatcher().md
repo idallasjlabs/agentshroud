@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_alert_dispatcher_retry.py"
 type: "code"
-community: "Community 944"
+community: "AlertDispatcher"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_944
+  - community/AlertDispatcher
 ---
 
 # dispatcher()
 
 ## Connections
-- [[AlertDispatcher]] - `calls` [EXTRACTED]
-- [[Path_25]] - `references` [EXTRACTED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
+- [[Path_58]] - `references` [EXTRACTED]
+- [[fixture_111]] - `references` [EXTRACTED]
 - [[test_alert_dispatcher_retry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_944
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

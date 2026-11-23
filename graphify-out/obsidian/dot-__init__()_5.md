@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L155"
+community: "_FakeRBAC"
+location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/_FakeRBAC
 ---
 
 # .__init__()
 
 ## Connections
-- [[RateLimiter]] - `calls` [EXTRACTED]
-- [[URLAnalyzer]] - `references` [EXTRACTED]
-- [[WebContentScanner]] - `references` [EXTRACTED]
-- [[WebProxy]] - `method` [EXTRACTED]
-- [[WebProxyConfig_1]] - `references` [EXTRACTED]
+- [[_FakeRBAC_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

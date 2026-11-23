@@ -1,18 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+source_file: "gateway/ingest_api/email_service.py"
 type: "code"
-community: "ProxyDashboard"
-location: "L65"
+community: "GatewayEmailService"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/GatewayEmailService
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_config()_2]] - `calls` [EXTRACTED]
-- [[SecureBrowser_2]] - `method` [EXTRACTED]
+- [[GatewayEmailService]] - `method` [EXTRACTED]
+- [[TransportFactory]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
