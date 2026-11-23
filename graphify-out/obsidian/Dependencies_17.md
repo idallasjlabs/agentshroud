@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-ux.md"
+source_file: ".github/agents/i-ux.agent.md"
 type: "document"
-community: "Community 342"
-location: "L282"
+community: "Skill: UX Expert (UX)"
+location: "L285"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_342
+  - community/Skill_UX_Expert_UX
 ---
 
 # Dependencies
 
 ## Connections
-- [[Skill UX Expert (UX)_2]] - `contains` [EXTRACTED]
+- [[Skill UX Expert (UX)_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_342
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

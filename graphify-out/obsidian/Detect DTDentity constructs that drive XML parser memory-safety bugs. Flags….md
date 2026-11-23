@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "rationale"
-community: "test_main_endpoints.py"
-location: "L425"
+community: "ScanResult"
+location: "L418"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/ScanResult
 ---
 
 # Detect DTD/entity constructs that drive XML parser memory-safety bugs. Flags…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_scan_xml_dtd()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/rationale #graphify/EXTRACTED #community/ScanResult

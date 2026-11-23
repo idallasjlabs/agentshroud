@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/dns_blocklist.py"
 type: "rationale"
-community: "Community 708"
+community: "DNSBlocklist"
 location: "L199"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_708
+  - community/DNSBlocklist
 ---
 
 # Download a blocklist URL. Uses the gateway's own HTTP client.
 
 ## Connections
-- [[.download_blocklist()]] - `rationale_for` [EXTRACTED]
+- [[dot-download_blocklist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_708
+#graphify/rationale #graphify/EXTRACTED #community/DNSBlocklist

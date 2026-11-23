@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "Community 739"
+community: "All Environment Variables"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_739
+  - community/All_Environment_Variables
 ---
 
 # Derived (set at runtime by `config.py`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Gateway Container (`agentshroud-gateway`)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_739
+#graphify/document #graphify/EXTRACTED #community/All_Environment_Variables

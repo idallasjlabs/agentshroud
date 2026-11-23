@@ -1,17 +1,18 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
 type: "document"
-community: "Community 739"
+community: "Dockerfile — Bot (OpenClaw)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_739
+  - community/Dockerfile__Bot_OpenClaw
 ---
 
 # Dockerfile.bot.md
 
 ## Connections
 - [[Dockerfile — Bot (OpenClaw)]] - `contains` [EXTRACTED]
+- [[Startup Sequence_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_739
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw

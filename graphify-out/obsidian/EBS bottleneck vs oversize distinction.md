@@ -1,17 +1,17 @@
 ---
 source_file: ".llm_settings/docs/AWS_AGENT_README.md"
 type: "rationale"
-community: "Community 494"
+community: "AWS Cloud Management & FinOps Agent"
 location: "Rightsizing Recommendations / Troubleshooting"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_494
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # EBS bottleneck vs oversize distinction
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent_6]] - `rationale_for` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_7]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_494
+#graphify/rationale #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

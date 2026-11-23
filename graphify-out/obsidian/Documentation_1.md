@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Community 195"
+community: "AgentShroud™ README"
 location: "L430"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_195
+  - community/AgentShroud_README
 ---
 
 # Documentation
@@ -15,7 +15,6 @@ tags:
 - [[AgentShroud™ README]] - `contains` [EXTRACTED]
 - [[Development Resources]] - `contains` [EXTRACTED]
 - [[Quick Start]] - `contains` [EXTRACTED]
-- [[README_37]] - `contains` [EXTRACTED]
 - [[Technical Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_195
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_README

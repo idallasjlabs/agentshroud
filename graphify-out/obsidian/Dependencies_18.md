@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-bs.agent.md"
+source_file: ".omp/agents/i-ux.md"
 type: "document"
-community: "Community 1013"
-location: "L303"
+community: "Skill: UX Expert (UX)"
+location: "L281"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1013
+  - community/Skill_UX_Expert_UX
 ---
 
 # Dependencies
 
 ## Connections
-- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_3]] - `contains` [EXTRACTED]
+- [[Skill UX Expert (UX)_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1013
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

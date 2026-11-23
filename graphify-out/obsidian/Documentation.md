@@ -1,17 +1,17 @@
 ---
-source_file: ".github/copilot-instructions.md"
+source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Community 2081"
-location: "L387"
+community: "Resources"
+location: "L636"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2081
+  - community/Resources
 ---
 
 # Documentation
 
 ## Connections
-- [[11. Hard Guardrails (Non-Negotiables)]] - `contains` [EXTRACTED]
+- [[Resources]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2081
+#graphify/document #graphify/EXTRACTED #community/Resources

@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "Community 874"
+community: "Common Operations"
 location: "L181"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_874
+  - community/Common_Operations
 ---
 
 # Delete an Email
 
 ## Connections
-- [[Common Operations]] - `contains` [EXTRACTED]
+- [[Common Operations_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_874
+#graphify/document #graphify/EXTRACTED #community/Common_Operations

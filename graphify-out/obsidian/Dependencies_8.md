@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ti/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
 type: "document"
-community: "Community 419"
-location: "L302"
+community: "Skill: UI Expert (UI)"
+location: "L390"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_419
+  - community/Skill_UI_Expert_UI
 ---
 
 # Dependencies
 
 ## Connections
-- [[Skill Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
+- [[Skill UI Expert (UI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_419
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-devsecops/SKILL.md"
 type: "document"
-community: "Community 1576"
+community: "DevSecOps Skill"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1576
+  - community/DevSecOps_Skill
 ---
 
 # DevSecOps Skill
 
-#graphify/document #graphify/EXTRACTED #community/Community_1576
+#graphify/document #graphify/EXTRACTED #community/DevSecOps_Skill

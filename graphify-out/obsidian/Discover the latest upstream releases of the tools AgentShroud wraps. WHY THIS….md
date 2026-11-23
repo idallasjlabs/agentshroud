@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "rationale"
-community: "Sunday Upgrade prompt"
+community: "discover_upstream_versions.py"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/discover_upstream_versionspy
 ---
 
 # Discover the latest upstream releases of the tools AgentShroud wraps. WHY THIS…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[discover_upstream_versions.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/rationale #graphify/EXTRACTED #community/discover_upstream_versionspy
