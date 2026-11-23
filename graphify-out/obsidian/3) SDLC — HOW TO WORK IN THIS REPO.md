@@ -1,19 +1,19 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Community 695"
+community: "Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)"
 location: "L298"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_695
+  - community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary
 ---
 
 # 3) SDLC — HOW TO WORK IN THIS REPO
 
 ## Connections
 - [[Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]] - `contains` [EXTRACTED]
-- [[Preferred workflow]] - `contains` [EXTRACTED]
+- [[Preferred workflow_1]] - `contains` [EXTRACTED]
 - [[Session start checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_695
+#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary

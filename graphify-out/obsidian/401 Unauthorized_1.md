@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/icloud/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 623"
+community: "iCloud Services"
 location: "L144"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_623
+  - community/iCloud_Services
 ---
 
 # "401 Unauthorized"
 
 ## Connections
-- [[Troubleshooting_7]] - `contains` [EXTRACTED]
+- [[Troubleshooting_20]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_623
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

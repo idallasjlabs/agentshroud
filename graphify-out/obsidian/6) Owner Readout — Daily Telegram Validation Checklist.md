@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-execution-summary-draft.md"
 type: "document"
-community: "Community 366"
+community: "AgentShroud v0.8.0 \"Watchtower\" — Execution Summary (Draft)"
 location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_366
+  - community/AgentShroud_v080_Watchtower__Execution_Summary_Draft
 ---
 
 # 6) Owner Readout — Daily Telegram Validation Checklist
@@ -21,4 +21,4 @@ tags:
 - [[F. Rate-limit UX]] - `contains` [EXTRACTED]
 - [[G. Daily evidence capture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_366
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Execution_Summary_Draft
