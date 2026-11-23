@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "code"
-community: "EgressFilterConfig (2)"
+community: "TestEgressFilterConfig"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/TestEgressFilterConfig
 ---
 
 # .test_from_environment_enforce()
 
 ## Connections
+- [[dot-from_environment()]] - `calls` [EXTRACTED]
 - [[Test config creation from environment in enforce mode.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressFilterConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/TestEgressFilterConfig

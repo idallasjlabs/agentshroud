@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_generate_cve_page.py"
 type: "code"
-community: "GatewayEmailService"
+community: "_make_cve"
 location: "L347"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/_make_cve
 ---
 
 # .test_generate_returns_true_when_changed()
@@ -15,5 +15,6 @@ tags:
 - [[TestGenerate]] - `method` [EXTRACTED]
 - [[_get_mod()]] - `calls` [EXTRACTED]
 - [[_make_cve()]] - `calls` [EXTRACTED]
+- [[fake_resolve()_1]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/code #graphify/EXTRACTED #community/_make_cve

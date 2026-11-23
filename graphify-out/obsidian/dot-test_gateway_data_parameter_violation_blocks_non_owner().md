@@ -12,7 +12,9 @@ tags:
 # .test_gateway_data_parameter_violation_blocks_non_owner()
 
 ## Connections
-- [[MCPToolCall_1]] - `calls` [EXTRACTED]
+- [[MCPToolCall]] - `calls` [EXTRACTED]
 - [[TestPrivacyPolicyEvents]] - `method` [EXTRACTED]
+- [[asyncio_4]] - `references` [EXTRACTED]
+- [[emit()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPToolCall

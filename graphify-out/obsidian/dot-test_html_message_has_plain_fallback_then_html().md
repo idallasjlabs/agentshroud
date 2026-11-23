@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gateway_email_service.py"
 type: "code"
-community: "AgentShroud Access Control Matrix"
+community: "GatewayEmailService"
 location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/GatewayEmailService
 ---
 
 # .test_html_message_has_plain_fallback_then_html()
@@ -15,4 +15,4 @@ tags:
 - [[TestBuildMessage]] - `method` [EXTRACTED]
 - [[_service()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TestEncryptedStore"
+community: "EncryptedStore"
 location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEncryptedStore
+  - community/EncryptedStore
 ---
 
 # .test_get_blob_key_id()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEncryptedStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEncryptedStore
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "WebContentScanner"
+community: "MiddlewareManager"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebContentScanner
+  - community/MiddlewareManager
 ---
 
 # .test_forward_middleware_allowed()
@@ -15,4 +15,4 @@ tags:
 - [[Test that middleware allows requests when they pass checks.]] - `rationale_for` [EXTRACTED]
 - [[TestForwardEndpoint]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebContentScanner
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "SecurityPipeline (2)"
+community: "TestPathIsolationManager"
 location: "L297"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline_2
+  - community/TestPathIsolationManager
 ---
 
 # .test_get_stats()
@@ -15,4 +15,4 @@ tags:
 - [[Test getting statistics.]] - `rationale_for` [EXTRACTED]
 - [[TestPathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_2
+#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager

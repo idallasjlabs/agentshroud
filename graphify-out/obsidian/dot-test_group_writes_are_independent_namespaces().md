@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "KillSwitchMonitor (5)"
+community: "test_group_isolation.py"
 location: "L112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_5
+  - community/test_group_isolationpy
 ---
 
 # .test_group_writes_are_independent_namespaces()
@@ -15,4 +15,4 @@ tags:
 - [[Both groups store separate content with no cross-contamination.]] - `rationale_for` [EXTRACTED]
 - [[TestGroupMemoryNamespaceIsolation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_5
+#graphify/code #graphify/EXTRACTED #community/test_group_isolationpy

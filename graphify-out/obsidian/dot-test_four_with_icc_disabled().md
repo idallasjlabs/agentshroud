@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary) (2)"
+community: "TestScoreNetworkSegmentation"
 location: "L389"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary_2
+  - community/TestScoreNetworkSegmentation
 ---
 
 # .test_four_with_icc_disabled()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestScoreNetworkSegmentation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary_2
+#graphify/code #graphify/EXTRACTED #community/TestScoreNetworkSegmentation

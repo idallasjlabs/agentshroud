@@ -1,7 +1,7 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "_adv()"
+community: "_adv"
 location: "L103"
 tags:
   - graphify/code

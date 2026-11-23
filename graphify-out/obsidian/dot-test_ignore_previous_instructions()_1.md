@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_tool_result_injection.py"
+source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "ProxyAction"
-location: "L31"
+community: "test_security_audit.py"
+location: "L224"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/test_security_auditpy
 ---
 
 # .test_ignore_previous_instructions()
 
 ## Connections
-- [[TestHighSeverity]] - `method` [EXTRACTED]
+- [[TestPromptGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/EXTRACTED #community/test_security_auditpy

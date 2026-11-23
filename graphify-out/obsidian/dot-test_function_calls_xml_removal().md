@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "code"
-community: "Any"
+community: "middleware.py"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/middlewarepy
 ---
 
 # .test_function_calls_xml_removal()
@@ -15,4 +15,4 @@ tags:
 - [[Test removal of function call XML blocks.]] - `rationale_for` [EXTRACTED]
 - [[TestXMLLeakFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "A2AMethod"
+community: "KeyRotationManager"
 location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AMethod
+  - community/KeyRotationManager
 ---
 
 # .test_get_op_reference_builds_correctly()
@@ -16,4 +16,4 @@ tags:
 - [[Test op reference building.]] - `rationale_for` [EXTRACTED]
 - [[TestKeyRotationConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AMethod
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

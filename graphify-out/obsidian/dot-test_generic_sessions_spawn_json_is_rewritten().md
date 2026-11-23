@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "_req (8)"
+community: "_make_sanitizer"
 location: "L530"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req_8
+  - community/_make_sanitizer
 ---
 
 # .test_generic_sessions_spawn_json_is_rewritten()
 
 ## Connections
 - [[Generic session spawn JSON should be rewritten, not shown raw.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
+- [[asyncio_30]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req_8
+#graphify/code #graphify/EXTRACTED #community/_make_sanitizer

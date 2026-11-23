@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "KillSwitchConfig"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/KillSwitchConfig
 ---
 
 # .test_get_status()
 
 ## Connections
-- [[KillSwitchConfig_1]] - `calls` [EXTRACTED]
+- [[KillSwitchConfig]] - `calls` [EXTRACTED]
 - [[KillSwitchMonitor]] - `calls` [EXTRACTED]
 - [[Test status retrieval.]] - `rationale_for` [EXTRACTED]
 - [[TestKillSwitchMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/KillSwitchConfig

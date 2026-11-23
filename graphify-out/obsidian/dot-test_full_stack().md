@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: ".agents/skills/i-devsecops/SKILL.md"
-location: "L719"
+community: "test_scanner_integration_coverage.py"
+location: "L737"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-devsecops/SKILLmd
+  - community/test_scanner_integration_coveragepy
 ---
 
 # .test_full_stack()
 
 ## Connections
-- [[TestIdentityAuth]] - `method` [EXTRACTED]
+- [[TestDataConfidentiality]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-devsecops/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integration_coveragepy

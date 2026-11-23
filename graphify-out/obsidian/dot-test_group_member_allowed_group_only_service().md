@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "chatbot/main.py"
+community: "PrivacyPolicyEnforcer"
 location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/PrivacyPolicyEnforcer
 ---
 
 # .test_group_member_allowed_group_only_service()
 
 ## Connections
+- [[dot-from_dict()]] - `calls` [EXTRACTED]
 - [[PrivacyPolicyEnforcer]] - `calls` [EXTRACTED]
 - [[TestServiceAccessControl]] - `method` [EXTRACTED]
-- [[_make_rbac()_1]] - `calls` [EXTRACTED]
+- [[_make_rbac()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

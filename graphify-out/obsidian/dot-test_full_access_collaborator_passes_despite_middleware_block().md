@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "iCloud Services (4)"
+community: ".test_full_access_collaborator_passes_despite_multi_turn_middleware_block_without_interrogative"
 location: "L9410"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/iCloud_Services_4
+  - community/test_full_access_collaborator_passes_despite_multi_turn_middleware_block_without_interrogative
 ---
 
 # .test_full_access_collaborator_passes_despite_middleware_block()
@@ -17,8 +17,8 @@ tags:
 - [[TestFullAccessMiddlewareBypass]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[asyncio_21]] - `references` [EXTRACTED]
 - [[fake_notify_blocked()]] - `indirect_call` [INFERRED]
 - [[process_request()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/iCloud_Services_4
+#graphify/code #graphify/EXTRACTED #community/test_full_access_collaborator_passes_despite_multi_turn_middleware_block_without_interrogative

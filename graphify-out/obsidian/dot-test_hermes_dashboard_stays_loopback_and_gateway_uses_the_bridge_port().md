@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "create_auth_dependency (5)"
+community: "test_security_regressions_v1_2.py"
 location: "L356"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency_5
+  - community/test_security_regressions_v1_2py
 ---
 
 # .test_hermes_dashboard_stays_loopback_and_gateway_uses_the_bridge_port()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestHermesDashboardBridgeReachability]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_5
+#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "test_a2a_policy.py"
+community: "AgentRegistry"
 location: "L226"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/AgentRegistry
 ---
 
 # .test_group_and_collab_identities_coexist()
 
 ## Connections
 - [[AgentRegistry]] - `calls` [EXTRACTED]
-- [[ContainerConfig_1]] - `calls` [EXTRACTED]
+- [[ContainerConfig]] - `calls` [EXTRACTED]
 - [[TestAgentRegistryGroupIdentity]] - `method` [EXTRACTED]
 - [[group-{chat_id} and collab-{uid} identities can coexist in the same registry.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry
