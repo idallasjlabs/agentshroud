@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # graphify.serve MCP stdio Server
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[Skill devsecops_1]] - document - docker/config/hermes/skills/i-devsecops/SKILL.md
-- [[hermesskillsi-devsecopsSKILL]] - document - docker/config/hermes/skills/i-devsecops/SKILL.md
+- [[God Nodes Analysis]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
+- [[graphify.serve MCP stdio Server]] - concept - docker/config/openclaw/skills/graphify/references/exports.md
 
 ## Live Query (requires Dataview plugin)
 

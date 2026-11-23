@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # hermes-cron-dedup.sh
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[deploy-gateway.sh]] - code - scripts/deploy-gateway.sh
-- [[deploy-gateway.sh script]] - code - scripts/deploy-gateway.sh
+- [[hermes-cron-dedup.sh]] - code - docker/scripts/hermes-cron-dedup.sh
+- [[hermes-cron-dedup.sh script]] - code - docker/scripts/hermes-cron-dedup.sh
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,29 +1,37 @@
 ---
 type: community
-cohesion: 0.14
-members: 14
+members: 24
 ---
 
 # http_proxy.py
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 14 nodes
+**Members:** 24 nodes
 
 ## Members
-- [[1. Anthropic API Credits & Rate Limits]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[10. Seccomp Profile Conflicts (x86_64)]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[11. Bot Token Migration Confusion]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[12. PandocLaTeX Dependency Issues]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[13. Hallucination in Competitor Reports]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[2. Bot Startup Crash-Loops (Config Errors)]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[3. 1Password Session Expiry (`op-proxy`)]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[4. SSH Key Regeneration on Restart]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[8. Colima  Docker Stability (Marvin)]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[9. Glibc TLS Incompatibility (Trillian)]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[AgentShroud™ Telegram-Reported Issues]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[🔴 CRITICAL System Blockers]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[🔵 LOW User Experience & Documentation]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[🟡 MEDIUM Infrastructure & Deployment]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[CONNECT Retry Logic]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Configuration  Environment Variables_29]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Constructor Parameters]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Domain Policy Decision Tree]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Function Details_43]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Internal State (`_stats`)]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Key Classes]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Module-level Constants]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Purpose_172]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Related_47]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Responsibilities_50]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Security Notes_6]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[TCP Keepalive]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy._agent_id_for_peer(peer)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy._clamav_scan_bytes(data bytes, host str)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy._handle_client(reader, writer)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy._process_connect(reader, writer)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy._relay(reader, writer, idle_timeout=120.0)` (static)]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy._relay_and_scan(reader, writer, host, scan_limit=410241024)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy.get_stats()`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy.start()`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy.stop()`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[http_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[http_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,10 +39,3 @@ members: 14
 TABLE source_file, type FROM #community/http_proxypy
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_TELEGRAM_ISSUES]]
-- 1 edge to [[_COMMUNITY_http_proxy.py (2)]]
-
-## Top bridge nodes
-- [[AgentShroud™ Telegram-Reported Issues]] - degree 5, connects to 2 communities

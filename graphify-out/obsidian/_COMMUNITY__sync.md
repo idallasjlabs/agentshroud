@@ -1,30 +1,28 @@
 ---
 type: community
-cohesion: 0.13
 members: 15
 ---
 
 # _sync
 
-**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[Backup & Restore Runbook — AgentShroud]] - document - docs/runbooks/backup-restore.md
-- [[Backup Procedure]] - document - docs/runbooks/backup-restore.md
-- [[Backup Retention]] - document - docs/runbooks/backup-restore.md
-- [[Daily Audit Ledger Review]] - concept - docs/runbooks/daily-operations.md
-- [[Daily Automated Backup]] - document - docs/runbooks/backup-restore.md
-- [[Disaster Recovery (Full Rebuild)]] - document - docs/runbooks/backup-restore.md
-- [[Disaster Recovery Full Rebuild Procedure]] - concept - docs/runbooks/backup-restore.md
-- [[Manual Backup]] - document - docs/runbooks/backup-restore.md
-- [[Off-Site Backup]] - document - docs/runbooks/backup-restore.md
-- [[Restore Procedure]] - document - docs/runbooks/backup-restore.md
-- [[Restore from Backup]] - document - docs/runbooks/backup-restore.md
-- [[Tamper-Evident Audit (SHA-256 Hash Chain)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[What to Back Up]] - document - docs/runbooks/backup-restore.md
-- [[backup-restore]] - document - docs/runbooks/backup-restore.md
-- [[daily-operations]] - document - docs/runbooks/daily-operations.md
+- [[dot-test_agent_var_resolved_from_registry_dict()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[dot-test_append_targets_correct_agent_list()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[dot-test_dry_run_writes_nothing()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[dot-test_entry_to_py_handles_none_cvss()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[dot-test_entry_to_py_roundtrips()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[dot-test_insert_adds_exactly_n_entries_and_still_parses()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[dot-test_missing_variable_raises()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[dot-test_non_list_value_raises()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[dot-test_string_literals_match_black_quote_preference()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[CI runs black on gateway; an appended registry block must already be clean.]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestListLocator]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestSerialization]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[_exec_registry()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[_sync()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[parametrize_4]] - code
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,11 +32,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_dot-mcp.json]]
-- 1 edge to [[_COMMUNITY_security.py]]
-- 1 edge to [[_COMMUNITY_TestNewPatternsV080]]
+- 13 edges to [[_COMMUNITY__adv]]
+- 6 edges to [[_COMMUNITY_test_sync_cve_registry_ghsa.py]]
+- 5 edges to [[_COMMUNITY_TestNvdAppend]]
+- 5 edges to [[_COMMUNITY_TestFailsLoudly]]
+- 5 edges to [[_COMMUNITY_dot-test_fetch_paginates_via_link_cursor]]
+- 3 edges to [[_COMMUNITY_TestNvdReportOnly]]
+- 3 edges to [[_COMMUNITY_TestSnapshotSmoke]]
 
 ## Top bridge nodes
-- [[daily-operations]] - degree 3, connects to 1 community
-- [[Tamper-Evident Audit (SHA-256 Hash Chain)]] - degree 2, connects to 1 community
-- [[Disaster Recovery Full Rebuild Procedure]] - degree 2, connects to 1 community
+- [[_sync()]] - degree 41, connects to 7 communities
+- [[_exec_registry()]] - degree 4, connects to 2 communities
+- [[TestSerialization]] - degree 6, connects to 1 community
+- [[TestListLocator]] - degree 5, connects to 1 community
+- [[dot-test_append_targets_correct_agent_list()]] - degree 4, connects to 1 community

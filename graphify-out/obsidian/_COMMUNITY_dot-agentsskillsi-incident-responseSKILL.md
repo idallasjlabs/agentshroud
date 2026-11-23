@@ -1,18 +1,15 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+members: 2
 ---
 
 # .agents/skills/i-incident-response/SKILL.md
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[dot-test_gates_pass_with_full_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_gates_zero_affected_domains()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestMandatoryGates]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-agentsskillsi-incident-responseSKILL]] - document - .agents/skills/i-incident-response/SKILL.md
+- [[Skill incident-response]] - document - .agents/skills/i-incident-response/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,12 +17,3 @@ members: 3
 TABLE source_file, type FROM #community/agents/skills/i-incident-response/SKILLmd
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_MiddlewareManager (3) (2)]]
-- 1 edge to [[_COMMUNITY_UserSessionManager (3) (2)]]
-
-## Top bridge nodes
-- [[TestMandatoryGates]] - degree 3, connects to 1 community
-- [[dot-test_gates_pass_with_full_evidence()]] - degree 2, connects to 1 community
-- [[dot-test_gates_zero_affected_domains()]] - degree 2, connects to 1 community

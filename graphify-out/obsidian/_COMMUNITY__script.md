@@ -1,25 +1,22 @@
 ---
 type: community
-cohesion: 0.51
-members: 10
+members: 9
 ---
 
 # _script
 
-**Cohesion:** 0.51 - moderately connected
-**Members:** 10 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[container-net-diag.sh]] - code - docker/scripts/container-net-diag.sh
-- [[container-net-diag.sh script]] - code - docker/scripts/container-net-diag.sh
-- [[fail()_5]] - code - docker/scripts/container-net-diag.sh
-- [[has()]] - code - docker/scripts/container-net-diag.sh
-- [[header()]] - code - docker/scripts/container-net-diag.sh
-- [[http_test()]] - code - docker/scripts/container-net-diag.sh
-- [[info()_2]] - code - docker/scripts/container-net-diag.sh
-- [[pass()_4]] - code - docker/scripts/container-net-diag.sh
-- [[tcp_test()]] - code - docker/scripts/container-net-diag.sh
-- [[warn()_5]] - code - docker/scripts/container-net-diag.sh
+- [[dot-test_against_the_real_registry()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[dot-test_empty_registries_print_nothing()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[dot-test_prints_every_ghsa_id_one_per_line()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[dot-test_skips_none_ghsa_id_entries()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[Smoke test against the actual committed registry — every real ghsa_id currently…]] - rationale - gateway/tests/test_list_registry_ghsa_ids.py
+- [[TestListRegistryGhsaIds]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[Tests for scriptslist_registry_ghsa_ids.py. Exists so the daily CVE triage job…]] - rationale - gateway/tests/test_list_registry_ghsa_ids.py
+- [[_script()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[test_list_registry_ghsa_ids.py]] - code - gateway/tests/test_list_registry_ghsa_ids.py
 
 ## Live Query (requires Dataview plugin)
 

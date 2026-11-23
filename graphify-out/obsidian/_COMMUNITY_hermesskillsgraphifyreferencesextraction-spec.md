@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # hermes/skills/graphify/references/extraction-spec.md
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[Container Architecture (gateway + bot hardening)]] - concept - docs/architecture/agentic-os.md
-- [[asb CLI — Deployment Tool]] - code - docs/architecture/agentic-os.md
+- [[graphify reference extraction subagent prompt_1]] - document - docker/config/hermes/skills/graphify/references/extraction-spec.md
+- [[hermesskillsgraphifyreferencesextraction-spec]] - document - docker/config/hermes/skills/graphify/references/extraction-spec.md
 
 ## Live Query (requires Dataview plugin)
 

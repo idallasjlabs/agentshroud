@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # audio_volume_tick() — zipper-free ramp + NVS persist
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Phase Review v0.8.0 Enforcement Hardening Round 1 — 2026-03-05]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[audio_volume_tick() — zipper-free ramp + NVS persist]] - code - firmware/voice-terminal/main/audio.c
 
 ## Live Query (requires Dataview plugin)
 

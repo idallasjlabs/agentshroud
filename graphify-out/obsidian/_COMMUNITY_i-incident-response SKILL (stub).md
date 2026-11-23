@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # i-incident-response SKILL (stub)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[Daily Component Health Digest_1]] - document - docker/config/hermes/cron/prompts/daily-component-health-digest.txt
-- [[Trivy (vulnerability scanner)]] - concept - docker/config/hermes/cron/prompts/daily-component-health-digest.txt
+- [[i-incident-response SKILL (stub)]] - document - docker/config/hermes/skills/i-incident-response/SKILL.md
+- [[i-kaizen SKILL (stub)]] - document - docker/config/hermes/skills/i-kaizen/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

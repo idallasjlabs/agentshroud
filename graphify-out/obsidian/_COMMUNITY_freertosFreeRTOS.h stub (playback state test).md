@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # freertos/FreeRTOS.h stub (playback state test)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[sunday-upgrade-report.sh]] - code - scripts/hermes-cron/sunday-upgrade-report.sh
-- [[sunday-upgrade-report.sh script]] - code - scripts/hermes-cron/sunday-upgrade-report.sh
+- [[freertosFreeRTOS.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/FreeRTOS.h
+- [[freertostask.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/task.h
 
 ## Live Query (requires Dataview plugin)
 

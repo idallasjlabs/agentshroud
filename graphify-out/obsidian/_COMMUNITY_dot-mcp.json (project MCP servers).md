@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # .mcp.json (project MCP servers)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Block Destructive Branches — CI guard for flagged or mass-deletion PRs]] - document - .github/workflows/block-destructive-branch.yml
+- [[dot-mcp.json (project MCP servers)]] - document - .mcp.json
 
 ## Live Query (requires Dataview plugin)
 

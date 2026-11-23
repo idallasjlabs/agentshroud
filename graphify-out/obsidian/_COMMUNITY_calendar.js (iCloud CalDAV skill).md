@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # calendar.js (iCloud CalDAV skill)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[SlackSocketClient Reconnect Backoff Tests]] - code - gateway/tests/test_slack_socket_client.py
+- [[calendar.js (iCloud CalDAV skill)]] - code - skills/custom/icloud/scripts/calendar.js
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,18 +1,16 @@
 ---
 type: community
-cohesion: 0.67
 members: 3
 ---
 
 # deploy.sh
 
-**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[TrustManager._promotion_allowed]] - code - gateway/security/trust_manager.py
-- [[TrustManager._update_score]] - code - gateway/security/trust_manager.py
-- [[TrustManager.record_violation]] - code - gateway/security/trust_manager.py
+- [[PATH_13]] - code - scripts/deploy.sh
+- [[deploy.sh]] - code - scripts/deploy.sh
+- [[deploy.sh script]] - code - scripts/deploy.sh
 
 ## Live Query (requires Dataview plugin)
 

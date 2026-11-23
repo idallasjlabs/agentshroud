@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # docker-compose.secure.yml — Proxy Mode Deployment
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Chatbot Service Dependencies (requirements.txt)]] - code - chatbot/requirements.txt
+- [[docker-compose.secure.yml — Proxy Mode Deployment]] - document - docker-compose.secure.yml
 
 ## Live Query (requires Dataview plugin)
 

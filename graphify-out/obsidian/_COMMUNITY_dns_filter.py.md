@@ -1,31 +1,29 @@
 ---
 type: community
-cohesion: 0.12
 members: 16
 ---
 
 # dns_filter.py
 
-**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[05-credential-isolation]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Constraints_3]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Evidence_3]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Problem_5]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Remediation_4]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Remove secret mounts from agent container and implement transparent credential injection]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Severity_4]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 1 Audit current secret mounts]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 2 Move all secrets to gateway-only Docker Secrets]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 3 Remove credential environment variables from agent container]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 4 Implement transparent credential injection in the gateway]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 5 Route all outbound requests through the gateway egress proxy]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 6 Handle 1Password specifically]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 7 Add credential leak detection to egress filtering]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 8 Verify no credentials remain in agent container]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Verification_8]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Allowlist Behavior]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Audit Log]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Configuration (DNSFilterConfig)]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[DNSFilter._detect_tunneling(domain)]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[DNSFilter.check(domain, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[EntropyCalculator.shannon_entropy(s)]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Environment Variables_3]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Function Details_12]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Key Classes  Functions_14]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Mode Enforce vs Monitor_3]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Purpose_15]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Related_14]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Responsibilities_14]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Threat Model_5]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[dns_filter.py_1]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[dns_filter.py]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,3 +31,9 @@ members: 16
 TABLE source_file, type FROM #community/dns_filterpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Architecture Overview]]
+
+## Top bridge nodes
+- [[dns_filter.py]] - degree 2, connects to 1 community

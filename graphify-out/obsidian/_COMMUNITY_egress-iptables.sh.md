@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # egress-iptables.sh
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[canary-cron.sh]] - code - scripts/canary-cron.sh
-- [[canary-cron.sh script]] - code - scripts/canary-cron.sh
+- [[egress-iptables.sh]] - code - scripts/egress-iptables.sh
+- [[egress-iptables.sh script]] - code - scripts/egress-iptables.sh
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,22 +1,19 @@
 ---
 type: community
-cohesion: 0.57
-members: 7
+members: 6
 ---
 
 # browser/browse.js
 
-**Cohesion:** 0.57 - moderately connected
-**Members:** 7 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[error()]] - code - scripts/security-scan.sh
-- [[info()_1]] - code - scripts/security-scan.sh
-- [[require_tool()]] - code - scripts/security-scan.sh
-- [[scriptssecurity-scan.sh]] - code - scripts/security-scan.sh
-- [[security-scan.sh script]] - code - scripts/security-scan.sh
-- [[success()]] - code - scripts/security-scan.sh
-- [[warn()]] - code - scripts/security-scan.sh
+- [[appendLog()]] - code - .agents/skills/browser/browse.js
+- [[browserbrowse.js]] - code - .agents/skills/browser/browse.js
+- [[browserFetch()]] - code - .agents/skills/browser/browse.js
+- [[fs_2]] - code - .agents/skills/browser/browse.js
+- [[path_26]] - code - .agents/skills/browser/browse.js
+- [[{ chromium }]] - code - .agents/skills/browser/browse.js
 
 ## Live Query (requires Dataview plugin)
 

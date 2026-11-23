@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # dashboard/__init__.py
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Presentation Title Slide]] - image - branding/presentation/title-slide-1920x1080.png
+- [[dashboard__init__.py]] - code - gateway/dashboard/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

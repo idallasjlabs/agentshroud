@@ -1,31 +1,29 @@
 ---
 type: community
-cohesion: 0.12
 members: 16
 ---
 
 # apple_engine.py
 
-**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[AgentShroud System Status Report]] - document - docs/project/SYSTEM_STATUS.md
-- [[Critical Issues]] - document - docs/project/SYSTEM_STATUS.md
-- [[Features Confirmed Working]] - document - docs/project/SYSTEM_STATUS.md
-- [[Immediate (Required for Bot to Work)]] - document - docs/project/SYSTEM_STATUS.md
-- [[Infrastructure_5]] - document - docs/project/SYSTEM_STATUS.md
-- [[Local]] - document - docs/project/SYSTEM_STATUS.md
-- [[Remote (Tailscale)]] - document - docs/project/SYSTEM_STATUS.md
-- [[When Ready to Continue]] - document - docs/project/SYSTEM_STATUS.md
-- [[iMessage Fix Required]] - document - docs/project/SYSTEM_STATUS.md
-- [[⚠️ What's NOT Working]] - document - docs/project/SYSTEM_STATUS.md
-- [[✅ What's WORKING]] - document - docs/project/SYSTEM_STATUS.md
-- [[🎯 Current Focus]] - document - docs/project/SYSTEM_STATUS.md
-- [[📁 Documentation]] - document - docs/project/SYSTEM_STATUS.md
-- [[📊 Container Status]] - document - docs/project/SYSTEM_STATUS.md
-- [[📋 Next Steps for User]] - document - docs/project/SYSTEM_STATUS.md
-- [[🔧 System Access]] - document - docs/project/SYSTEM_STATUS.md
+- [[Apple Containers vs DockerPodman]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[AppleContainerEngine.compose_up(file, detach)  compose_down(file)]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[AppleContainerEngine.health_check()]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[AppleContainerEngine.inspect(name)]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[AppleContainerEngine.network_create  network_rm  volume_create  volume_rm]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[AppleContainerEngine.pause(name)  unpause(name)]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[AppleContainerEngine.ps(all)]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[AppleContainerEngine.run(image, name, , ports, volumes, env, privileged, caps, seccomp, detach, ...)]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[Configuration  Environment Variables_3]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[Function Details_9]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[Key Classes  Functions_11]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[Purpose_12]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[Related_11]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[Responsibilities_11]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[apple_engine.py_1]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[apple_engine.py]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,9 +31,3 @@ members: 16
 TABLE source_file, type FROM #community/apple_enginepy
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_TELEGRAM_ISSUES]]
-
-## Top bridge nodes
-- [[AgentShroud System Status Report]] - degree 8, connects to 1 community

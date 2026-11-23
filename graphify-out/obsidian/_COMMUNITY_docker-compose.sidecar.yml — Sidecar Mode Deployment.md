@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # docker-compose.sidecar.yml — Sidecar Mode Deployment
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[agentshroud-soc Cargo package]] - document - cli/Cargo.toml
+- [[docker-compose.sidecar.yml — Sidecar Mode Deployment]] - document - docker-compose.sidecar.yml
 
 ## Live Query (requires Dataview plugin)
 

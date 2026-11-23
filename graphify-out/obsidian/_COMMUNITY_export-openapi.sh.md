@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # export-openapi.sh
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[colima-firewall.sh]] - code - docker/scripts/colima-firewall.sh
-- [[colima-firewall.sh script]] - code - docker/scripts/colima-firewall.sh
+- [[export-openapi.sh]] - code - scripts/export-openapi.sh
+- [[export-openapi.sh script]] - code - scripts/export-openapi.sh
 
 ## Live Query (requires Dataview plugin)
 

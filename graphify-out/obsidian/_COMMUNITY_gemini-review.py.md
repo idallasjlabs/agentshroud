@@ -1,22 +1,21 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+members: 8
 ---
 
 # gemini-review.py
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Bot Container (agent decides reply + tool call)]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
-- [[Gateway (HMAC auth check, PII redaction via Presidio, route to agent)]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
-- [[Isaiah (Telegram)]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
-- [[MCP inspection (injection scan NONE, PII scan NONE, sensitive op NONE)]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
-- [[OpenAI API (POST v1chatcompletions)]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
-- [[Telegram API]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
-- [[ledger.db (INSERT INTO ledger)]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
+- [[Call Gemini API and return the review text and exit code. Returns tuple…]] - rationale - scripts/gemini-review.py
+- [[Lightweight Gemini API reviewer — no heavy CLI, just REST calls. Usage echo…]] - rationale - scripts/gemini-review.py
+- [[PATH_4]] - code - scripts/peer-review.sh
+- [[call_gemini()]] - code - scripts/gemini-review.py
+- [[gemini-review.py]] - code - scripts/gemini-review.py
+- [[main()_1]] - code - scripts/gemini-review.py
+- [[peer-review.sh]] - code - scripts/peer-review.sh
+- [[peer-review.sh script]] - code - scripts/peer-review.sh
 
 ## Live Query (requires Dataview plugin)
 

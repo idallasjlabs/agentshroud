@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # /i-crpr skill
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Cron Agentic AI Threat Intelligence]] - document - docker/bots/openclaw/config/cron/jobs.json
+- [[i-crpr skill]] - concept - docker/config/hermes/skills/i-ab/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

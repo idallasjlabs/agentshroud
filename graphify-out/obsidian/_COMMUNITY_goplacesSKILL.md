@@ -1,18 +1,16 @@
 ---
 type: community
-cohesion: 0.67
 members: 3
 ---
 
 # goplaces/SKILL.md
 
-**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given)_1]] - document - docker/config/hermes/skills/graphify/references/github-and-merge.md
-- [[graphify reference GitHub clone and cross-repo merge_1]] - document - docker/config/hermes/skills/graphify/references/github-and-merge.md
-- [[hermesskillsgraphifyreferencesgithub-and-merge]] - document - docker/config/hermes/skills/graphify/references/github-and-merge.md
+- [[goplaces]] - document - skills/openclaw/goplaces/SKILL.md
+- [[goplaces CLI]] - concept - skills/openclaw/goplaces/SKILL.md
+- [[goplacesSKILL]] - document - skills/openclaw/goplaces/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

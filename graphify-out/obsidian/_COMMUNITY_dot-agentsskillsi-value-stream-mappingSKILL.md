@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # .agents/skills/i-value-stream-mapping/SKILL.md
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[dot-agentsskillsgraphifyreferencesextraction-spec]] - document - .agents/skills/graphify/references/extraction-spec.md
-- [[graphify reference extraction subagent prompt]] - document - .agents/skills/graphify/references/extraction-spec.md
+- [[dot-agentsskillsi-value-stream-mappingSKILL]] - document - .agents/skills/i-value-stream-mapping/SKILL.md
+- [[Skill value-stream-mapping]] - document - .agents/skills/i-value-stream-mapping/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

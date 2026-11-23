@@ -1,25 +1,21 @@
 ---
 type: community
-cohesion: 0.20
-members: 10
+members: 8
 ---
 
 # docker/scripts/security-scan.sh
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 10 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[ANTI-HALLUCINATION CHECKLIST]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[CRITICAL RULES — READ BEFORE DOING ANYTHING]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[Competitive Intelligence Report — Standard Prompt (Hermes Agent)]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[OUTPUT REQUIREMENTS]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[REPORT STRUCTURE]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[SECTION 1 MARKET ANALYSIS]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[SECTION 2 COMPETITIVE ANALYSIS — AGENT SECURITY TOOLS]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[SECTION 3 AUTONOMOUS AGENT ECOSYSTEM UPDATE]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[SECTION 4 NEXT STEPS TO STAY AHEAD]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[hermesworkspacecompetitive-analysis]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[alert_if_critical()]] - code - docker/scripts/security-scan.sh
+- [[dockerscriptssecurity-scan.sh]] - code - docker/scripts/security-scan.sh
+- [[log()_4]] - code - docker/scripts/security-scan.sh
+- [[run_clamav()]] - code - docker/scripts/security-scan.sh
+- [[run_oscap()]] - code - docker/scripts/security-scan.sh
+- [[run_sbom()]] - code - docker/scripts/security-scan.sh
+- [[run_trivy()]] - code - docker/scripts/security-scan.sh
+- [[security-scan.sh script_1]] - code - docker/scripts/security-scan.sh
 
 ## Live Query (requires Dataview plugin)
 

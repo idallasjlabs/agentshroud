@@ -1,20 +1,17 @@
 ---
 type: community
-cohesion: 0.70
-members: 5
+members: 4
 ---
 
 # camsnap/SKILL.md
 
-**Cohesion:** 0.70 - tightly connected
-**Members:** 5 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[bad()]] - code - tests/startup_smoke/test_launchd_install.sh
-- [[ok()]] - code - tests/startup_smoke/test_launchd_install.sh
-- [[run_install()]] - code - tests/startup_smoke/test_launchd_install.sh
-- [[test_launchd_install.sh]] - code - tests/startup_smoke/test_launchd_install.sh
-- [[test_launchd_install.sh script]] - code - tests/startup_smoke/test_launchd_install.sh
+- [[camsnap]] - document - skills/openclaw/camsnap/SKILL.md
+- [[camsnap CLI]] - concept - skills/openclaw/camsnap/SKILL.md
+- [[camsnapSKILL]] - document - skills/openclaw/camsnap/SKILL.md
+- [[ffmpeg dependency]] - concept - skills/openclaw/camsnap/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

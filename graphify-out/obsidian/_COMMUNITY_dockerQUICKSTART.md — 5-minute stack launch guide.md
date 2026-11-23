@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # docker/QUICKSTART.md — 5-minute stack launch guide
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[graphify add URL Ingestion]] - concept - docker/config/openclaw/skills/graphify/references/add-watch.md
+- [[dockerQUICKSTART.md — 5-minute stack launch guide]] - document - docker/QUICKSTART.md
 
 ## Live Query (requires Dataview plugin)
 

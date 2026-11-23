@@ -1,28 +1,34 @@
 ---
 type: community
-cohesion: 0.15
-members: 13
+members: 21
 ---
 
 # env_guard.py
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 13 nodes
+**Members:** 21 nodes
 
 ## Members
-- [[dot-__init__()_183]] - code - gateway/tests/test_key_rotation.py
-- [[dot-setup_manager_with_credential()]] - code - gateway/tests/test_key_rotation.py
-- [[dot-test_check_and_rotate_due_credentials()]] - code - gateway/tests/test_key_rotation.py
-- [[dot-test_register_validator()]] - code - gateway/tests/test_key_rotation.py
-- [[dot-test_rotation_with_validation_failure()]] - code - gateway/tests/test_key_rotation.py
-- [[dot-validate()_2]] - code - gateway/tests/test_key_rotation.py
-- [[Mock validation that can be controlled.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Mock validator for testing.]] - rationale - gateway/tests/test_key_rotation.py
-- [[MockValidator]] - code - gateway/tests/test_key_rotation.py
-- [[Set up manager with a credential that needs rotation.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test bulk rotation check and execution.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test rotation workflow with validation failure and rollback.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test validator registration.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Blocked Command Patterns (via `_contains_env_access_patterns`)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Blocked Commands]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Blocked Paths]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Environment Variables_14]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[EnvironmentGuard.check_command_execution(command, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[EnvironmentGuard.check_file_access(file_path, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[EnvironmentGuard.monitor_environment_access(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[EnvironmentGuard.scrub_command_output(output, command)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Function Details_45]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Global Singleton]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Key Classes  Functions_48]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Mode Enforce vs Monitor_7]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Purpose_175]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Related_52]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Responsibilities_52]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Threat Model_22]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Tracked Credential Variable Names (subset)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[check_command(cmd)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[env_guard.py_2]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[env_guard.py_1]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[scrub_output(text)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,13 +38,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_A2AMethod]]
-- 3 edges to [[_COMMUNITY_TestNormalizeForSpeech]]
-- 3 edges to [[_COMMUNITY_CredentialInfo]]
+- 1 edge to [[_COMMUNITY_Architecture Overview]]
 
 ## Top bridge nodes
-- [[MockValidator]] - degree 14, connects to 3 communities
-- [[dot-setup_manager_with_credential()]] - degree 6, connects to 3 communities
-- [[dot-test_check_and_rotate_due_credentials()]] - degree 6, connects to 3 communities
-- [[dot-test_register_validator()]] - degree 3, connects to 1 community
-- [[dot-test_rotation_with_validation_failure()]] - degree 3, connects to 1 community
+- [[env_guard.py_1]] - degree 2, connects to 1 community

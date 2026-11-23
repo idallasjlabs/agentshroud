@@ -1,18 +1,15 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+members: 2
 ---
 
 # .agents/skills/i-observability/SKILL.md
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[dot-test_five_all_conditions_met()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[dot-test_two_baseline_no_extras()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreSecretsManagement]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-agentsskillsi-observabilitySKILL]] - document - .agents/skills/i-observability/SKILL.md
+- [[Skill observability]] - document - .agents/skills/i-observability/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,9 +17,3 @@ members: 3
 TABLE source_file, type FROM #community/agents/skills/i-observability/SKILLmd
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Feature Global Monitor-Only Mode (Observatory Mode)]]
-
-## Top bridge nodes
-- [[TestScoreSecretsManagement]] - degree 3, connects to 1 community
