@@ -1,20 +1,13 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 137"
+community: "web/api.py (POST /api/intel/reports)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_137
+  - community/web/apipy_POST_/api/intel/reports
 ---
 
 # web/api.py (POST /api/intel/reports)
 
-## Connections
-- [[test_intel_endpoint.py]] - `implements` [EXTRACTED]
-- [[test_security_audit_advanced.py]] - `references` [INFERRED]
-- [[test_skill_guard.py]] - `references` [EXTRACTED]
-- [[test_skills_manifest_sync.py]] - `references` [EXTRACTED]
-- [[test_web_api_coverage.py]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_137
+#graphify/code #graphify/EXTRACTED #community/web/apipy_POST_/api/intel/reports

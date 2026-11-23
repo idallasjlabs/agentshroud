@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 12"
+community: "._make_proxy"
 location: "L8156"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_12
+  - community/_make_proxy
 ---
 
 # /unlock for a user with no lockdown state must say so.
 
 ## Connections
-- [[.test_unlock_unknown_user_returns_no_state_notice()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_unlock_unknown_user_returns_no_state_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_12
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

@@ -1,24 +1,23 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
-type: "document"
-community: "Community 669"
-location: "L10"
+source_file: "gateway/proxy/web_content_scanner.py"
+type: "code"
+community: "WebContentScanner"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_669
+  - community/WebContentScanner
 ---
 
 # web_content_scanner.py
 
 ## Connections
-- [[Configuration  Environment Variables_11]] - `contains` [EXTRACTED]
-- [[Function Details_17]] - `contains` [EXTRACTED]
-- [[Injection Pattern Weights]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_20]] - `contains` [EXTRACTED]
-- [[Purpose_138]] - `contains` [EXTRACTED]
-- [[Related_24]] - `contains` [EXTRACTED]
-- [[Responsibilities_22]] - `contains` [EXTRACTED]
-- [[web_content_scanner.py_1]] - `contains` [EXTRACTED]
+- [[ContentFinding]] - `contains` [EXTRACTED]
+- [[Enum_34]] - `imports_from` [EXTRACTED]
+- [[FindingSeverity]] - `contains` [EXTRACTED]
+- [[ScanResult_1]] - `contains` [EXTRACTED]
+- [[WebContentScanner]] - `contains` [EXTRACTED]
+- [[test_xml_dtd_control.py]] - `imports_from` [EXTRACTED]
+- [[web_proxy.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_669
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

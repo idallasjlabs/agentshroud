@@ -1,19 +1,18 @@
 ---
-source_file: "docker/scripts/workspace.sh"
+source_file: "docker/scripts/docker-cleanup.sh"
 type: "code"
-community: "Community 763"
-location: "L13"
+community: "docker-cleanup.sh"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_763
+  - community/docker-cleanupsh
 ---
 
 # usage()
 
 ## Connections
-- [[main command dispatcher (case $COMMAND)]] - `calls` [EXTRACTED]
-- [[workspace.sh]] - `defines` [EXTRACTED]
-- [[workspace.sh script]] - `calls` [EXTRACTED]
+- [[docker-cleanup.sh]] - `defines` [EXTRACTED]
+- [[docker-cleanup.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_763
+#graphify/code #graphify/EXTRACTED #community/docker-cleanupsh

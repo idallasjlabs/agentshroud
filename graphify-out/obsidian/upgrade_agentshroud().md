@@ -1,22 +1,24 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 68"
+community: "api.py"
 location: "L703"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_68
+  - community/apipy
 ---
 
 # upgrade_agentshroud()
 
 ## Connections
+- [[dot-from_env()_1]] - `calls` [EXTRACTED]
 - [[Pull latest AgentShroud, test, rebuild, restart. Auto-rollback on failure.]] - `rationale_for` [EXTRACTED]
-- [[RuntimeError]] - `calls` [INFERRED]
+- [[RuntimeConfig]] - `uses` [INFERRED]
 - [[UpdateRequest]] - `references` [EXTRACTED]
 - [[_get_engine()]] - `calls` [EXTRACTED]
-- [[api.py]] - `contains` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
+- [[post_5]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_68
+#graphify/code #graphify/EXTRACTED #community/apipy

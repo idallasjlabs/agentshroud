@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "Community 8"
+community: "ToolChainAnalyzer"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_8
+  - community/ToolChainAnalyzer
 ---
 
 # tool_chain_analyzer()
 
 ## Connections
 - [[Create a ToolChainAnalyzer instance for testing.]] - `rationale_for` [EXTRACTED]
-- [[ToolChainAnalyzer]] - `calls` [EXTRACTED]
+- [[ToolChainAnalyzer]] - `uses` [INFERRED]
+- [[fixture_130]] - `references` [EXTRACTED]
 - [[test_tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_8
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

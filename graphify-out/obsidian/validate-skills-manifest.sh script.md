@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/validate-skills-manifest.sh"
 type: "code"
-community: "Community 710"
+community: "validate-skills-manifest.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_710
+  - community/validate-skills-manifestsh
 ---
 
 # validate-skills-manifest.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[validate-skills-manifest.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_710
+#graphify/code #graphify/EXTRACTED #community/validate-skills-manifestsh

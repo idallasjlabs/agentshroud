@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-23.md"
 type: "document"
-community: "Community 2045"
+community: "1. Accomplishments This Phase"
 location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2045
+  - community/1_Accomplishments_This_Phase
 ---
 
 # ⚠️ Partial Value / Needs Hardening
 
 ## Connections
-- [[2. Security Value Audit]] - `contains` [EXTRACTED]
+- [[2. Security Value Audit_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2045
+#graphify/document #graphify/EXTRACTED #community/1_Accomplishments_This_Phase

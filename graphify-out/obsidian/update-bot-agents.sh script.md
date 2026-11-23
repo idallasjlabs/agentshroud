@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/update-bot-agents.sh"
 type: "code"
-community: "Community 644"
+community: "update-bot-agents.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_644
+  - community/update-bot-agentssh
 ---
 
 # update-bot-agents.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[update-bot-agents.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_644
+#graphify/code #graphify/EXTRACTED #community/update-bot-agentssh

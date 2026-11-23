@@ -1,24 +1,17 @@
 ---
-source_file: "gateway/proxy/url_analyzer.py"
-type: "code"
-community: "Community 1000"
+source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
+type: "document"
+community: "url_analyzer.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1000
+  - community/url_analyzerpy
 ---
 
-# url_analyzer.py
+# url_analyzer.py.md
 
 ## Connections
-- [[Enum]] - `imports_from` [EXTRACTED]
-- [[URLAnalysisResult]] - `contains` [EXTRACTED]
-- [[URLAnalyzer]] - `contains` [EXTRACTED]
-- [[URLFinding]] - `contains` [EXTRACTED]
-- [[URLVerdict]] - `contains` [EXTRACTED]
-- [[_looks_like_base64()]] - `contains` [EXTRACTED]
-- [[web_config.py]] - `references` [EXTRACTED]
-- [[web_proxy.py]] - `imports_from` [EXTRACTED]
+- [[url_analyzer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1000
+#graphify/document #graphify/EXTRACTED #community/url_analyzerpy

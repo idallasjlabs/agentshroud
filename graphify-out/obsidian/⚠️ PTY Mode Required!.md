@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "document"
-community: "Community 336"
+community: "Coding Agent (bash-first)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_336
+  - community/Coding_Agent_bash-first
 ---
 
 # ⚠️ PTY Mode Required!
@@ -16,4 +16,4 @@ tags:
 - [[Coding Agent (bash-first)]] - `contains` [EXTRACTED]
 - [[Process Tool Actions (for background sessions)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_336
+#graphify/document #graphify/EXTRACTED #community/Coding_Agent_bash-first

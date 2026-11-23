@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "rationale"
-community: "Community 24"
+community: "TestEnvelopeSigner"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/TestEnvelopeSigner
 ---
 
 # wrap_tool_result() sets issuer='tool:<name>' and passes verification.
 
 ## Connections
-- [[.test_envelope_wraps_tool_result()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_envelope_wraps_tool_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_24
+#graphify/rationale #graphify/EXTRACTED #community/TestEnvelopeSigner

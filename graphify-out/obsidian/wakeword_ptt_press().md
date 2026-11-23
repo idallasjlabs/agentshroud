@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "Community 341"
+community: "wakeword.c"
 location: "L445"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_341
+  - community/wakewordc
 ---
 
 # wakeword_ptt_press()
@@ -19,4 +19,4 @@ tags:
 - [[test_drain_keeps_face_off_idle_when_retriggered()]] - `calls` [INFERRED]
 - [[wakeword.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_341
+#graphify/code #graphify/INFERRED #community/wakewordc

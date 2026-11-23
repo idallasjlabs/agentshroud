@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "Community 83"
+community: ".from_source"
 location: "L252"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_83
+  - community/from_source
 ---
 
 # validate_manifest()
 
 ## Connections
-- [[.test_drift_detected_on_hash_mismatch()]] - `calls` [EXTRACTED]
-- [[.test_drift_detected_on_missing_file()]] - `calls` [EXTRACTED]
-- [[.test_no_drift_returns_empty_list()]] - `calls` [EXTRACTED]
-- [[.test_returns_all_drifted_items()]] - `calls` [EXTRACTED]
-- [[Path_23]] - `references` [EXTRACTED]
-- [[Return names of entries that are missing or hash-mismatched in dest.      Retu]] - `rationale_for` [EXTRACTED]
+- [[dot-test_drift_detected_on_hash_mismatch()]] - `calls` [EXTRACTED]
+- [[dot-test_drift_detected_on_missing_file()]] - `calls` [EXTRACTED]
+- [[dot-test_no_drift_returns_empty_list()]] - `calls` [EXTRACTED]
+- [[dot-test_returns_all_drifted_items()]] - `calls` [EXTRACTED]
+- [[Path_55]] - `references` [EXTRACTED]
+- [[Return names of entries that are missing or hash-mismatched in dest. Returns…]] - `rationale_for` [EXTRACTED]
 - [[SkillsManifest]] - `references` [EXTRACTED]
 - [[manifest.py]] - `contains` [EXTRACTED]
 - [[test_skills_manifest_sync.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_83
+#graphify/code #graphify/EXTRACTED #community/from_source

@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 49"
+community: "api.py"
 location: "L905"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/apipy
 ---
 
 # ws_logs()
 
 ## Connections
-- [[WebSocket_7]] - `references` [EXTRACTED]
 - [[WebSocket endpoint for real-time log streaming. Requires scoped WS token.]] - `rationale_for` [EXTRACTED]
 - [[_bot_service_names()]] - `calls` [EXTRACTED]
 - [[_get_engine()]] - `calls` [EXTRACTED]
 - [[_validate_mgmt_ws_token()]] - `calls` [EXTRACTED]
-- [[api.py]] - `contains` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
+- [[websocket_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_49
+#graphify/code #graphify/EXTRACTED #community/apipy

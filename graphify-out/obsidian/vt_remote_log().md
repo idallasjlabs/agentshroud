@@ -1,21 +1,30 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Community 378"
+community: "wakeword.c"
 location: "L521"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_378
+  - graphify/INFERRED
+  - community/wakewordc
 ---
 
 # vt_remote_log()
 
 ## Connections
+- [[_btn_pressed()]] - `calls` [INFERRED]
 - [[_deliver_utterance()]] - `calls` [EXTRACTED]
+- [[_on_event()]] - `calls` [INFERRED]
 - [[_on_ws_ctrl()]] - `calls` [EXTRACTED]
+- [[_ptt_start()]] - `calls` [INFERRED]
+- [[_report_and_place_canvas()]] - `calls` [INFERRED]
+- [[_touch_pressed()]] - `calls` [INFERRED]
+- [[_touch_start_only()]] - `calls` [INFERRED]
 - [[app_main.c]] - `contains` [EXTRACTED]
 - [[voice_task()]] - `calls` [EXTRACTED]
+- [[wakeword_ptt_finish()]] - `calls` [INFERRED]
+- [[wakeword_push_frame()]] - `calls` [INFERRED]
+- [[wakeword_tick()]] - `calls` [INFERRED]
 - [[wifi_event_handler()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_378
+#graphify/code #graphify/INFERRED #community/wakewordc

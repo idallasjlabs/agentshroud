@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/switch_model.sh"
+source_file: "skills/openclaw/tmux/scripts/find-sessions.sh"
 type: "code"
-community: "Community 991"
-location: "L18"
+community: "find-sessions.sh"
+location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_991
+  - community/find-sessionssh
 ---
 
 # usage()
 
 ## Connections
-- [[switch_model.sh]] - `defines` [EXTRACTED]
-- [[switch_model.sh script]] - `calls` [EXTRACTED]
+- [[find-sessions.sh]] - `defines` [EXTRACTED]
+- [[find-sessions.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_991
+#graphify/code #graphify/EXTRACTED #community/find-sessionssh

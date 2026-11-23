@@ -1,11 +1,11 @@
 ---
 source_file: "docker/versions.env"
 type: "document"
-community: "Community 118"
+community: "upgrade-2026-09-21.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_118
+  - community/upgrade-2026-09-21md
 ---
 
 # versions.env
@@ -17,4 +17,4 @@ tags:
 - [[check-version-pins-parity.sh]] - `references` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `imports_from` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_118
+#graphify/document #graphify/EXTRACTED #community/upgrade-2026-09-21md

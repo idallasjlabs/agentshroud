@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_a2a_trust_scoring.py"
+source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "Community 307"
-location: "L74"
+community: "test_security_regressions_v1_2.py"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_307
+  - community/test_security_regressions_v1_2py
 ---
 
 # trust_manager()
 
 ## Connections
-- [[ProgressiveTrustConfig]] - `calls` [EXTRACTED]
-- [[TrustManager_2]] - `calls` [EXTRACTED]
-- [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
+- [[TrustManager]] - `uses` [INFERRED]
+- [[fixture_25]] - `references` [EXTRACTED]
+- [[test_security_regressions_v1_2.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_307
+#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py

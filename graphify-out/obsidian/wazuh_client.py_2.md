@@ -1,26 +1,27 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
-type: "document"
-community: "Community 618"
-location: "L10"
+source_file: "gateway/security/wazuh_client.py"
+type: "code"
+community: "get_wazuh_summary"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_618
+  - community/get_wazuh_summary
 ---
 
 # wazuh_client.py
 
 ## Connections
-- [[Configuration  Environment Variables_31]] - `contains` [EXTRACTED]
-- [[Function Details_51]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_54]] - `contains` [EXTRACTED]
-- [[Key Rule ID Sets]] - `contains` [EXTRACTED]
-- [[Purpose_172]] - `contains` [EXTRACTED]
-- [[Related_58]] - `contains` [EXTRACTED]
-- [[Responsibilities_56]] - `contains` [EXTRACTED]
-- [[Threat Model_27]] - `contains` [EXTRACTED]
-- [[Wazuh Level to Severity Mapping]] - `contains` [EXTRACTED]
-- [[wazuh_client.py_1]] - `contains` [EXTRACTED]
+- [[datetime_3]] - `imports_from` [EXTRACTED]
+- [[generate_summary()_3]] - `contains` [EXTRACTED]
+- [[get_fim_events()]] - `contains` [EXTRACTED]
+- [[get_rootkit_events()]] - `contains` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
+- [[level_to_severity()]] - `contains` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[parse_alert()_1]] - `contains` [EXTRACTED]
+- [[read_alerts()_1]] - `contains` [EXTRACTED]
+- [[test_security_audit.py]] - `imports_from` [EXTRACTED]
+- [[test_security_toolchain.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_618
+#graphify/code #graphify/EXTRACTED #community/get_wazuh_summary

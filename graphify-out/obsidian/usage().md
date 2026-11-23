@@ -1,18 +1,18 @@
 ---
-source_file: "docker/scripts/docker-cleanup.sh"
+source_file: "scripts/agentshroud-manage.sh"
 type: "code"
-community: "Community 1063"
-location: "L19"
+community: "agentshroud-manage.sh"
+location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1063
+  - community/agentshroud-managesh
 ---
 
 # usage()
 
 ## Connections
-- [[docker-cleanup.sh]] - `defines` [EXTRACTED]
-- [[docker-cleanup.sh script]] - `calls` [EXTRACTED]
+- [[agentshroud-manage.sh]] - `defines` [EXTRACTED]
+- [[agentshroud-manage.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1063
+#graphify/code #graphify/EXTRACTED #community/agentshroud-managesh

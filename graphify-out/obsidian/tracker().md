@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_collaborator_tracker.py"
+source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "Community 99"
-location: "L18"
+community: "RedactionResult"
+location: "L278"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_99
+  - graphify/INFERRED
+  - community/RedactionResult
 ---
 
 # tracker()
 
 ## Connections
-- [[CollaboratorActivityTracker]] - `calls` [EXTRACTED]
-- [[test_collaborator_tracker.py]] - `contains` [EXTRACTED]
+- [[dot-_close_middleware_after()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_99
+#graphify/code #graphify/INFERRED #community/RedactionResult

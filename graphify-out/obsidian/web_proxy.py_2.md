@@ -1,24 +1,46 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
-type: "document"
-community: "Community 776"
-location: "L10"
+source_file: "gateway/proxy/web_proxy.py"
+type: "code"
+community: "WebProxy"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_776
+  - community/WebProxy
 ---
 
 # web_proxy.py
 
 ## Connections
-- [[Configuration  Environment Variables_12]] - `contains` [EXTRACTED]
-- [[Function Details_18]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_21]] - `contains` [EXTRACTED]
-- [[Purpose_139]] - `contains` [EXTRACTED]
-- [[Related_25]] - `contains` [EXTRACTED]
-- [[Responsibilities_23]] - `contains` [EXTRACTED]
-- [[Security Check Order (check_request)]] - `contains` [EXTRACTED]
-- [[web_proxy.py_1]] - `contains` [EXTRACTED]
+- [[BrowserSecurityGuard]] - `imports` [EXTRACTED]
+- [[DNSFilter]] - `imports` [EXTRACTED]
+- [[DNSFilterConfig]] - `imports` [EXTRACTED]
+- [[EgressChannel]] - `imports` [EXTRACTED]
+- [[EgressEvent]] - `imports` [EXTRACTED]
+- [[EgressMonitor]] - `imports` [EXTRACTED]
+- [[EgressMonitorConfig]] - `imports` [EXTRACTED]
+- [[Enum_35]] - `imports_from` [EXTRACTED]
+- [[NetworkValidator]] - `imports` [EXTRACTED]
+- [[OAuthSecurityValidator]] - `imports` [EXTRACTED]
+- [[ProxyAction]] - `contains` [EXTRACTED]
+- [[RateLimiter]] - `contains` [EXTRACTED]
+- [[URLAnalyzer]] - `imports` [EXTRACTED]
+- [[WebContentScanner]] - `imports` [EXTRACTED]
+- [[WebProxy]] - `contains` [EXTRACTED]
+- [[WebProxyConfig]] - `imports` [EXTRACTED]
+- [[WebProxyResult]] - `contains` [EXTRACTED]
+- [[browser_security.py]] - `imports_from` [EXTRACTED]
+- [[dns_filter.py_2]] - `imports_from` [EXTRACTED]
+- [[egress_monitor.py_2]] - `imports_from` [EXTRACTED]
+- [[http_proxy.py]] - `imports_from` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[network_validator.py]] - `imports_from` [EXTRACTED]
+- [[oauth_security.py_2]] - `imports_from` [EXTRACTED]
+- [[test_http_proxy.py]] - `imports_from` [EXTRACTED]
+- [[test_http_proxy_coverage.py]] - `imports_from` [EXTRACTED]
+- [[test_web_proxy.py]] - `imports_from` [EXTRACTED]
+- [[url_analyzer.py_2]] - `imports_from` [EXTRACTED]
+- [[web_config.py_2]] - `imports_from` [EXTRACTED]
+- [[web_content_scanner.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_776
+#graphify/code #graphify/EXTRACTED #community/WebProxy

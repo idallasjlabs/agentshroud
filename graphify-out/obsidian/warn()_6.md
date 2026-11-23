@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/tailscale-check.sh"
 type: "code"
-community: "Community 933"
+community: "verify-proxy.sh"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_933
+  - community/verify-proxysh
 ---
 
 # warn()
@@ -15,4 +15,4 @@ tags:
 - [[tailscale-check.sh]] - `defines` [EXTRACTED]
 - [[tailscale-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_933
+#graphify/code #graphify/EXTRACTED #community/verify-proxysh

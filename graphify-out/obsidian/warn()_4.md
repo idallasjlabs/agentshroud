@@ -1,18 +1,19 @@
 ---
-source_file: "scripts/security-scan.sh"
+source_file: "scripts/check-vendor-compat.sh"
 type: "code"
-community: "Community 1121"
-location: "L51"
+community: "check-vendor-compat.sh"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1121
+  - community/check-vendor-compatsh
 ---
 
 # warn()
 
 ## Connections
-- [[security-scan.sh_1]] - `defines` [EXTRACTED]
-- [[security-scan.sh script_1]] - `calls` [EXTRACTED]
+- [[check-vendor-compat.sh]] - `defines` [EXTRACTED]
+- [[check_hermes()]] - `calls` [EXTRACTED]
+- [[check_openclaw()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1121
+#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh

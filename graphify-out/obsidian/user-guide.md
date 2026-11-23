@@ -1,17 +1,18 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: "Community 327"
+community: "AgentShroud User Guide"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_327
+  - community/AgentShroud_User_Guide
 ---
 
 # user-guide.md
 
 ## Connections
 - [[AgentShroud User Guide]] - `contains` [EXTRACTED]
+- [[AgentShroud™ README]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_327
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_User_Guide
