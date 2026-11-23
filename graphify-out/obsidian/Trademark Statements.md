@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Community 805"
+community: "Trademark Statements"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_805
+  - community/Trademark_Statements
 ---
 
 # Trademark Statements
@@ -16,7 +16,7 @@ tags:
 - [[Option 1 — Professional (email, formal)]] - `contains` [EXTRACTED]
 - [[Option 2 — Compact (Telegram, Slack — default)]] - `contains` [EXTRACTED]
 - [[Option 3 — Full Collaborator Notice (first contact only)]] - `contains` [EXTRACTED]
-- [[Rules_49]] - `contains` [EXTRACTED]
+- [[Rules_61]] - `contains` [EXTRACTED]
 - [[Which statement to use]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_805
+#graphify/document #graphify/EXTRACTED #community/Trademark_Statements

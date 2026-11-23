@@ -1,20 +1,21 @@
 ---
-source_file: ".agents/agents/icloud.md"
+source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Community 530"
-location: "L144"
+community: "Troubleshooting"
+location: "L237"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_530
+  - community/Troubleshooting
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[401 Unauthorized]] - `contains` [EXTRACTED]
-- [[CalendarContacts not found]] - `contains` [EXTRACTED]
-- [[Connection timeout]] - `contains` [EXTRACTED]
-- [[iCloud Services]] - `contains` [EXTRACTED]
+- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
+- [[Problem 1Password link shows only page shell]] - `contains` [EXTRACTED]
+- [[Problem Browser binaries not found]] - `contains` [EXTRACTED]
+- [[Problem Permission denied executing browser]] - `contains` [EXTRACTED]
+- [[Problem Skill not auto-discovered by bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_530
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting

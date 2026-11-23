@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "document"
-community: "Community 524"
+community: "AgentShroud Schema Documentation"
 location: "L163"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_524
+  - community/AgentShroud_Schema_Documentation
 ---
 
 # Trust Level Cache
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[In-Memory Data Structures]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_524
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Schema_Documentation

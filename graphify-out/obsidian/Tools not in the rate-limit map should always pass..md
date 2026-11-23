@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "rationale"
-community: "Community 194"
+community: "TestToolRateLimiting"
 location: "L294"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_194
+  - community/TestToolRateLimiting
 ---
 
 # Tools not in the rate-limit map should always pass.
 
 ## Connections
-- [[.test_unlisted_tool_always_passes()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_unlisted_tool_always_passes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_194
+#graphify/rationale #graphify/EXTRACTED #community/TestToolRateLimiting

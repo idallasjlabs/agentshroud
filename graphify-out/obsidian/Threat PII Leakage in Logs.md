@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "Community 1274"
+community: "I - Information Disclosure"
 location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1274
+  - community/I_-_Information_Disclosure
 ---
 
 # Threat: PII Leakage in Logs
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[I - Information Disclosure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1274
+#graphify/document #graphify/EXTRACTED #community/I_-_Information_Disclosure

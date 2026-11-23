@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/tests/test_progressive_trust_integration.py"
-type: "code"
-community: "Community 11"
-location: "L63"
+source_file: "docs/data/data-dictionary.md"
+type: "document"
+community: "AgentShroud Data Dictionary"
+location: "L83"
 tags:
-  - graphify/code
-  - graphify/INFERRED
-  - community/Community_11
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/AgentShroud_Data_Dictionary
 ---
 
 # TrustLevel
 
 ## Connections
-- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
-- [[PromotionThreshold]] - `uses` [INFERRED]
-- [[ToolACLEnforcer]] - `uses` [INFERRED]
-- [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel]] - `uses` [INFERRED]
-- [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
-- [[ViolationType]] - `uses` [INFERRED]
-- [[_set_state()]] - `references` [EXTRACTED]
+- [[Security Management Entities]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_11
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary

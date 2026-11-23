@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "Community 971"
+community: "Threat Model"
 location: "L163"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_971
+  - community/Threat_Model
 ---
 
 # Threat: Resource Exhaustion
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[D - Denial of Service]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_971
+#graphify/document #graphify/EXTRACTED #community/Threat_Model

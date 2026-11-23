@@ -1,20 +1,17 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Community 91"
+community: "WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_91
+  - community/WS-E_Security_Audit__AgentShroud_v12_Gateway__OpenClaw__Hermes
 ---
 
 # Trust Level
 
 ## Connections
 - [[AgentShroud Security Architecture]] - `references` [EXTRACTED]
-- [[AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]] - `references` [EXTRACTED]
 - [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `references` [EXTRACTED]
-- [[access-control-matrix]] - `references` [EXTRACTED]
-- [[use-cases]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_91
+#graphify/concept #graphify/EXTRACTED #community/WS-E_Security_Audit__AgentShroud_v12_Gateway__OpenClaw__Hermes

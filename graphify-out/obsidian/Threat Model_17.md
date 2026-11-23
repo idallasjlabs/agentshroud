@@ -1,17 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
+source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "Community 679"
-location: "L15"
+community: "SecureBrowser Security Policies"
+location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_679
+  - community/SecureBrowser_Security_Policies
 ---
 
 # Threat Model
 
 ## Connections
-- [[input_normalizer.py_2]] - `contains` [EXTRACTED]
+- [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
+- [[What We Don't Protect Against_1]] - `contains` [EXTRACTED]
+- [[What We Protect Against_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_679
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Security_Policies

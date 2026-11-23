@@ -1,17 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
+source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "Community 678"
-location: "L15"
+community: "AgentShroud Security Architecture"
+location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_678
+  - community/AgentShroud_Security_Architecture
 ---
 
 # Threat Model
 
 ## Connections
-- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Architecture]] - `references` [EXTRACTED]
+- [[What AgentShroud Does]] - `contains` [EXTRACTED]
+- [[What We're Protecting Against]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_678
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

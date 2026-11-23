@@ -1,16 +1,13 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Community 91"
+community: "Trust Management"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_91
+  - community/Trust_Management
 ---
 
 # Trust Management
 
-## Connections
-- [[system-requirements]] - `references` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/Community_91
+#graphify/concept #graphify/EXTRACTED #community/Trust_Management

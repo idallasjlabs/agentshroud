@@ -1,17 +1,17 @@
 ---
 source_file: ".cursor/agents/i-session-prompt.md"
 type: "document"
-community: "Community 1497"
+community: "Workflow: Survey → Draft → Inject → Confirm"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1497
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Trigger
 
 ## Connections
-- [[Skill Session Prompt Generator (SESSION-PROMPT)_2]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1497
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

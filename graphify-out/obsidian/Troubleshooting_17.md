@@ -1,22 +1,22 @@
 ---
-source_file: ".omp/agents/browser.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Community 476"
-location: "L282"
+community: "10. Troubleshooting"
+location: "L161"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_476
+  - community/10_Troubleshooting
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Action requires approval but none granted_4]] - `contains` [EXTRACTED]
-- [[Browser timeout_4]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected_4]] - `contains` [EXTRACTED]
-- [[Rate limit exceeded_4]] - `contains` [EXTRACTED]
-- [[URL not in allowlist_4]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
+- [[AWS Token expired (SSO)]] - `contains` [EXTRACTED]
+- [[AWS Unable to locate credentials]] - `contains` [EXTRACTED]
+- [[Atlassian OAuth flow failed]] - `contains` [EXTRACTED]
+- [[GitHub Bad credentials]] - `contains` [EXTRACTED]
+- [[GitHub Docker image not found]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_476
+#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting

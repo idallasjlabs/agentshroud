@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_xml_dtd_control.py"
 type: "rationale"
-community: "Community 647"
+community: "TestTriageClassLevelCoverage"
 location: "L178"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_647
+  - community/TestTriageClassLevelCoverage
 ---
 
 # The new rule runs first, so prove it does not swallow neighbours.
 
 ## Connections
-- [[.test_unrelated_classes_unchanged()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_unrelated_classes_unchanged()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_647
+#graphify/rationale #graphify/EXTRACTED #community/TestTriageClassLevelCoverage

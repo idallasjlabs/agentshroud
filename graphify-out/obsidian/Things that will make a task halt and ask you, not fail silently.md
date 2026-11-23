@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/hermes-openclaw-dev-workflow.md"
 type: "document"
-community: "Community 644"
+community: "Starting a Development Task via Hermes / OpenClaw"
 location: "L136"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_644
+  - community/Starting_a_Development_Task_via_Hermes_/_OpenClaw
 ---
 
 # Things that will make a task halt and ask you, not fail silently
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Starting a Development Task via Hermes  OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_644
+#graphify/document #graphify/EXTRACTED #community/Starting_a_Development_Task_via_Hermes_/_OpenClaw

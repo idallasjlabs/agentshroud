@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "Community 204"
+community: "AgentShroud Access Control Matrix"
 location: "L220"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_204
+  - community/AgentShroud_Access_Control_Matrix
 ---
 
 # Trust Degradation Rules
@@ -16,4 +16,4 @@ tags:
 - [[Security Violation Penalties]] - `contains` [EXTRACTED]
 - [[Trust Level Progression Rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_204
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix

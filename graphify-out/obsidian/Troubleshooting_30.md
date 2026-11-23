@@ -1,22 +1,22 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: ".cursor/agents/i-mcpm-auth-reset.md"
 type: "document"
-community: "Community 550"
-location: "L160"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
+location: "L163"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_550
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AWS Token expired (SSO)_6]] - `contains` [EXTRACTED]
-- [[AWS Unable to locate credentials_6]] - `contains` [EXTRACTED]
-- [[Atlassian OAuth flow failed_6]] - `contains` [EXTRACTED]
-- [[GitHub Bad credentials_6]] - `contains` [EXTRACTED]
-- [[GitHub Docker image not found_6]] - `contains` [EXTRACTED]
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_6]] - `contains` [EXTRACTED]
+- [[AWS Token expired (SSO)_2]] - `contains` [EXTRACTED]
+- [[AWS Unable to locate credentials_2]] - `contains` [EXTRACTED]
+- [[Atlassian OAuth flow failed_2]] - `contains` [EXTRACTED]
+- [[GitHub Bad credentials_2]] - `contains` [EXTRACTED]
+- [[GitHub Docker image not found_2]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_550
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

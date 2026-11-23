@@ -1,25 +1,25 @@
 ---
-source_file: "gateway/security/browser_security.py"
+source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "Community 196"
-location: "L23"
+community: "test_mcp_proxy.py"
+location: "L66"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_196
+  - graphify/EXTRACTED
+  - community/test_mcp_proxypy
 ---
 
 # ThreatLevel
 
 ## Connections
-- [[.check_url_reputation()]] - `references` [EXTRACTED]
-- [[IntEnum]] - `inherits` [EXTRACTED]
-- [[MockThreatLevel]] - `shares_data_with` [AMBIGUOUS]
-- [[TestCredentialProtection]] - `uses` [INFERRED]
-- [[TestScreenshotAnalysis]] - `uses` [INFERRED]
-- [[TestSocialEngineeringDetection]] - `uses` [INFERRED]
-- [[TestURLReputation]] - `uses` [INFERRED]
-- [[ThreatLevel_2]] - `semantically_similar_to` [INFERRED]
-- [[browser_security.py]] - `contains` [EXTRACTED]
+- [[dot-highest_threat()]] - `references` [EXTRACTED]
+- [[Enum_25]] - `inherits` [EXTRACTED]
+- [[TestInjectionDetection]] - `uses` [INFERRED]
+- [[TestPIIDetection_1]] - `uses` [INFERRED]
+- [[TestThreatLevelCalc]] - `uses` [INFERRED]
+- [[Threat level classification.]] - `rationale_for` [EXTRACTED]
+- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
+- [[proxy__init__.py]] - `imports` [EXTRACTED]
+- [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_196
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

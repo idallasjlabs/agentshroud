@@ -1,22 +1,21 @@
 ---
-source_file: ".cursor/agents/browser.md"
+source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "Community 473"
-location: "L283"
+community: "Troubleshooting"
+location: "L392"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_473
+  - community/Troubleshooting
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Action requires approval but none granted_2]] - `contains` [EXTRACTED]
-- [[Browser timeout_2]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected_2]] - `contains` [EXTRACTED]
-- [[Rate limit exceeded_2]] - `contains` [EXTRACTED]
-- [[URL not in allowlist_2]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_3]] - `contains` [EXTRACTED]
+- [[Agent Not Found]] - `contains` [EXTRACTED]
+- [[Authentication Issues_5]] - `contains` [EXTRACTED]
+- [[Configuration Not Loading]] - `contains` [EXTRACTED]
+- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
+- [[Path Permission Denied]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_473
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting

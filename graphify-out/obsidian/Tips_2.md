@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/himalaya/SKILL.md"
+source_file: "docs/user-guide.md"
 type: "document"
-community: "Community 874"
-location: "L252"
+community: "AgentShroud User Guide"
+location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_874
+  - community/AgentShroud_User_Guide
 ---
 
 # Tips
 
 ## Connections
-- [[Himalaya Email CLI]] - `contains` [EXTRACTED]
+- [[Interacting via Telegram]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_874
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_User_Guide

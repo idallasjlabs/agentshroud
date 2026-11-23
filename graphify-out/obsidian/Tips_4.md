@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/session-logs/SKILL.md"
+source_file: "skills/openclaw/himalaya/references/message-composition.md"
 type: "document"
-community: "Community 273"
-location: "L104"
+community: "Message Composition with MML (MIME Meta Language)"
+location: "L194"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_273
+  - community/Message_Composition_with_MML_MIME_Meta_Language
 ---
 
 # Tips
 
 ## Connections
-- [[session-logs]] - `contains` [EXTRACTED]
+- [[Message Composition with MML (MIME Meta Language)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_273
+#graphify/document #graphify/EXTRACTED #community/Message_Composition_with_MML_MIME_Meta_Language

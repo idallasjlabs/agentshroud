@@ -1,24 +1,40 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Community 30"
-location: "L47"
+community: "EnhancedApprovalQueue"
+location: "L201"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_30
+  - graphify/EXTRACTED
+  - community/EnhancedApprovalQueue
 ---
 
 # ToolRiskConfig
 
 ## Connections
-- [[.__init__()_3]] - `references` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
-- [[ApprovalRequest_3]] - `uses` [INFERRED]
-- [[ApprovalStore_1]] - `uses` [INFERRED]
-- [[MFAGuard_2]] - `uses` [INFERRED]
-- [[ToolRiskConfig_1]] - `uses` [INFERRED]
-- [[ToolRiskPolicy_1]] - `uses` [INFERRED]
+- [[dot-__init__()_117]] - `references` [EXTRACTED]
+- [[dot-test_restart_recovery_preserves_timeout_action()]] - `calls` [EXTRACTED]
+- [[BaseModel_6]] - `inherits` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
+- [[TestPersistence_2]] - `uses` [INFERRED]
+- [[Tool risk tier configuration]] - `rationale_for` [EXTRACTED]
+- [[_real_queue()]] - `calls` [EXTRACTED]
+- [[edge()]] - `uses` [INFERRED]
+- [[enhanced_mfa_queue()]] - `uses` [INFERRED]
+- [[enhanced_queue.py]] - `imports` [EXTRACTED]
+- [[env()]] - `uses` [INFERRED]
+- [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
+- [[load_config()]] - `calls` [EXTRACTED]
+- [[stack()]] - `uses` [INFERRED]
+- [[test_broadcast_does_not_hang_forever_on_dead_client()_1]] - `uses` [INFERRED]
+- [[test_edge_approvals.py]] - `imports` [EXTRACTED]
+- [[test_edge_e2e_sdk.py]] - `imports` [EXTRACTED]
+- [[test_edge_pipeline.py]] - `imports` [EXTRACTED]
+- [[test_enhanced_approval.py]] - `imports` [EXTRACTED]
+- [[test_mcp_policy.py]] - `imports` [EXTRACTED]
+- [[test_mfa_guard.py]] - `imports` [EXTRACTED]
+- [[test_submit_does_not_deadlock_on_hung_websocket_client()_1]] - `uses` [INFERRED]
+- [[test_websocket_notifications()]] - `uses` [INFERRED]
+- [[tool_risk_config()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_30
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

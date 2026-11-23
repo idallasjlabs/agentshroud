@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "Community 196"
+community: "GitGuard"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_196
+  - community/GitGuard
 ---
 
 # Threat levels for detected issues.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ThreatLevel_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_196
+#graphify/rationale #graphify/EXTRACTED #community/GitGuard

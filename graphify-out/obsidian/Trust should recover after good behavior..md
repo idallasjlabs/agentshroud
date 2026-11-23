@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Community 11"
+community: "TestAuth"
 location: "L442"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_11
+  - community/TestAuth
 ---
 
 # Trust should recover after good behavior.
 
 ## Connections
-- [[.test_trust_recovery()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_trust_recovery()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_11
+#graphify/rationale #graphify/EXTRACTED #community/TestAuth

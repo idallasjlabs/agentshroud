@@ -1,17 +1,17 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "Community 418"
+community: "AgentShroud Deployment Architecture"
 location: "L220"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_418
+  - community/AgentShroud_Deployment_Architecture
 ---
 
 # Three-Network Architecture
 
 ## Connections
-- [[Network Topology]] - `contains` [EXTRACTED]
+- [[Network Topology_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_418
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture

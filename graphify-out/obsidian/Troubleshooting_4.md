@@ -1,22 +1,21 @@
 ---
-source_file: ".agents/skills/browser/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Community 450"
-location: "L281"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
+location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_450
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Action requires approval but none granted_1]] - `contains` [EXTRACTED]
-- [[Browser timeout_1]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected_1]] - `contains` [EXTRACTED]
-- [[Rate limit exceeded_1]] - `contains` [EXTRACTED]
-- [[URL not in allowlist_1]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_2]] - `contains` [EXTRACTED]
+- [[Access Denied]] - `contains` [EXTRACTED]
+- [[Token expired (SSO)]] - `contains` [EXTRACTED]
+- [[Unable to locate credentials]] - `contains` [EXTRACTED]
+- [[MCP Not Using Profile]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_450
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

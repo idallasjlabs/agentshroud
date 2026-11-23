@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "Community 1825"
+community: "ToolChainAnalyzer Exfiltration Pattern Detection Tests"
 location: "line 36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1825
+  - community/ToolChainAnalyzer_Exfiltration_Pattern_Detection_Tests
 ---
 
 # ToolChainAnalyzer Exfiltration Pattern Detection Tests
 
-#graphify/code #graphify/EXTRACTED #community/Community_1825
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer_Exfiltration_Pattern_Detection_Tests

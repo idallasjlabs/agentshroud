@@ -1,24 +1,17 @@
 ---
-source_file: "docs/ssh-security-review.md"
+source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
 type: "document"
-community: "Community 971"
-location: "L5"
+community: "Function Details"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_971
+  - community/Function_Details
 ---
 
 # Threat Model
 
 ## Connections
-- [[1. Command Injection]] - `contains` [EXTRACTED]
-- [[2. Host Spoofing  Man-in-the-Middle]] - `contains` [EXTRACTED]
-- [[3. Credential Theft]] - `contains` [EXTRACTED]
-- [[4. Privilege Escalation]] - `contains` [EXTRACTED]
-- [[5. Denial of Service]] - `contains` [EXTRACTED]
-- [[6. Audit Log Tampering  PII Leakage]] - `contains` [EXTRACTED]
-- [[D - Denial of Service]] - `contains` [EXTRACTED]
-- [[SSH Security Review]] - `contains` [EXTRACTED]
+- [[health_report.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_971
+#graphify/document #graphify/EXTRACTED #community/Function_Details

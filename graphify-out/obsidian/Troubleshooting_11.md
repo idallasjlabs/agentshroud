@@ -1,20 +1,21 @@
 ---
-source_file: ".cursor/agents/icloud.md"
+source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "Community 635"
-location: "L144"
+community: "OpenClaw Bot SSH Configuration"
+location: "L242"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_635
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[401 Unauthorized_2]] - `contains` [EXTRACTED]
-- [[CalendarContacts not found_2]] - `contains` [EXTRACTED]
-- [[Connection timeout_2]] - `contains` [EXTRACTED]
-- [[iCloud Services_2]] - `contains` [EXTRACTED]
+- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
+- [[Problem Bad owner or permissions on ~.sshconfig]] - `contains` [EXTRACTED]
+- [[Problem Connection timeout]] - `contains` [EXTRACTED]
+- [[Problem Host key verification failed]] - `contains` [EXTRACTED]
+- [[Problem Permission denied (publickey)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_635
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration
