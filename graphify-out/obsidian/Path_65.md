@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/tests/test_multi_host_test.py"
+source_file: ""
 type: "code"
-community: "VIII. Evaluation"
-location: "L324"
+community: "ingest_api/main.py"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/VIII_Evaluation
+  - graphify/EXTRACTED
+  - community/ingest_api/mainpy
 ---
 
 # Path
 
 ## Connections
-- [[HostResult]] - `uses` [INFERRED]
-- [[HostStatus]] - `uses` [INFERRED]
-- [[MultiHostResult]] - `uses` [INFERRED]
-- [[_run_wrapper()]] - `references` [EXTRACTED]
-- [[_write_exec()]] - `references` [EXTRACTED]
+- [[_load_contributor_logs()]] - `references` [EXTRACTED]
+- [[_parse_collaborator_log_dirs()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/VIII_Evaluation
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

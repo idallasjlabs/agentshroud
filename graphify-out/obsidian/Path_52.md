@@ -1,18 +1,16 @@
 ---
-source_file: "scripts/export-telegram-history.py"
+source_file: ""
 type: "code"
-community: "Community 777"
-location: "L101"
+community: "ApprovalStore"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_777
+  - community/ApprovalStore
 ---
 
 # Path
 
 ## Connections
-- [[export()]] - `references` [EXTRACTED]
-- [[main()_22]] - `calls` [EXTRACTED]
+- [[dot-__init__()_157]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_777
+#graphify/code #graphify/EXTRACTED #community/ApprovalStore

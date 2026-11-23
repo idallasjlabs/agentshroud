@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Community 119"
+community: "TestFabricatedSecurityNotice"
 location: "L569"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_119
+  - community/TestFabricatedSecurityNotice
 ---
 
 # Pattern is case-insensitive.
 
 ## Connections
-- [[.test_case_insensitive()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_case_insensitive()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_119
+#graphify/rationale #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

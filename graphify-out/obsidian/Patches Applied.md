@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
 type: "document"
-community: "Community 826"
+community: "apply-patches.js"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_826
+  - community/apply-patchesjs
 ---
 
 # Patches Applied
@@ -16,6 +16,6 @@ tags:
 - [[Patch 1 Main Agent as Default]] - `contains` [EXTRACTED]
 - [[Patch 2 Telegram Binding]] - `contains` [EXTRACTED]
 - [[Patch 3 Telegram Bot Token (if $TELEGRAM_BOT_TOKEN is set)]] - `contains` [EXTRACTED]
-- [[apply-patches.js_2]] - `contains` [EXTRACTED]
+- [[apply-patches.js_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_826
+#graphify/document #graphify/EXTRACTED #community/apply-patchesjs

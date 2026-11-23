@@ -1,17 +1,16 @@
 ---
-source_file: "gateway/tests/test_credential_injector.py"
+source_file: ""
 type: "code"
-community: "Community 596"
-location: "L209"
+community: "test_clamav_pipeline.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_596
+  - community/test_clamav_pipelinepy
 ---
 
 # Path
 
 ## Connections
-- [[._make_anthropic_injector()]] - `references` [EXTRACTED]
+- [[save_report()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_596
+#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy

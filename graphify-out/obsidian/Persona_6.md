@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/socrates.md"
+source_file: ".cursor/agents/athena.md"
 type: "document"
-community: "Community 1071"
+community: "Athena — Knowledge Distiller"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1071
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Persona
 
 ## Connections
-- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1071
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

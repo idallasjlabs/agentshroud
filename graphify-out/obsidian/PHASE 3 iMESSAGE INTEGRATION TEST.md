@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/recovery/RECOVERY_PLAN.md"
 type: "document"
-community: "Community 2091"
+community: "PHASE 3: iMESSAGE INTEGRATION TEST"
 location: "L272"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2091
+  - community/PHASE_3_iMESSAGE_INTEGRATION_TEST
 ---
 
 # PHASE 3: iMESSAGE INTEGRATION TEST
@@ -18,4 +18,4 @@ tags:
 - [[3.4 Verify End-to-End Message Flow]] - `contains` [EXTRACTED]
 - [[AgentShroud Recovery Plan v0.4.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2091
+#graphify/document #graphify/EXTRACTED #community/PHASE_3_iMESSAGE_INTEGRATION_TEST

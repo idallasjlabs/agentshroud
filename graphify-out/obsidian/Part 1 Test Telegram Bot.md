@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "Community 244"
+community: "Telegram & Gmail Integration Guide"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_244
+  - community/Telegram__Gmail_Integration_Guide
 ---
 
 # Part 1: Test Telegram Bot
@@ -17,4 +17,4 @@ tags:
 - [[Test Now]] - `contains` [EXTRACTED]
 - [[✅ Current Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_244
+#graphify/document #graphify/EXTRACTED #community/Telegram__Gmail_Integration_Guide

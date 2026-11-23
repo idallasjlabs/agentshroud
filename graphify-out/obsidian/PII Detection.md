@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/SECURITY_PLAN.md"
+source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
 type: "document"
-community: "Community 415"
-location: "L350"
+community: "Gateway Python Dependencies (`gateway/requirements.txt`)"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_415
+  - community/Gateway_Python_Dependencies_gateway/requirementstxt
 ---
 
 # PII Detection
 
 ## Connections
-- [[Current State (2026-02-24)]] - `contains` [EXTRACTED]
+- [[Gateway Python Dependencies (`gatewayrequirements.txt`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_415
+#graphify/document #graphify/EXTRACTED #community/Gateway_Python_Dependencies_gateway/requirementstxt

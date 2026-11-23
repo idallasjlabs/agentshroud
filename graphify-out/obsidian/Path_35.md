@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_lifespan_prune.py"
+source_file: ""
 type: "code"
-community: "Community 436"
-location: "L43"
+community: "get_trivy_summary"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_436
+  - graphify/EXTRACTED
+  - community/get_trivy_summary
 ---
 
 # Path
 
 ## Connections
-- [[CollaboratorActivityTracker]] - `uses` [INFERRED]
-- [[_make_md()]] - `references` [EXTRACTED]
+- [[_is_fresh()]] - `references` [EXTRACTED]
+- [[_load_latest_json()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_436
+#graphify/code #graphify/EXTRACTED #community/get_trivy_summary

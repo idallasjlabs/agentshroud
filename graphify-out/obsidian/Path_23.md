@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/skills/manifest.py"
+source_file: ""
 type: "code"
-community: "Community 489"
-location: "L62"
+community: "check_benchmark_regression.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_489
+  - community/check_benchmark_regressionpy
 ---
 
 # Path
 
 ## Connections
-- [[.from_file()]] - `references` [EXTRACTED]
-- [[.from_source()]] - `references` [EXTRACTED]
-- [[deploy_manifest()]] - `references` [EXTRACTED]
-- [[plan_deploy()]] - `references` [EXTRACTED]
-- [[validate_manifest()]] - `references` [EXTRACTED]
+- [[_load_json()]] - `references` [EXTRACTED]
+- [[check()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_489
+#graphify/code #graphify/EXTRACTED #community/check_benchmark_regressionpy

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "rationale"
-community: "Community 54"
+community: "PermissionLevel"
 location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/PermissionLevel
 ---
 
 # Parse config from a dictionary (e.g. loaded from YAML).
 
 ## Connections
-- [[.from_dict()]] - `rationale_for` [EXTRACTED]
+- [[dot-from_dict()_8]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_54
+#graphify/rationale #graphify/EXTRACTED #community/PermissionLevel

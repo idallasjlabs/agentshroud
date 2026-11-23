@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
+source_file: "docs/planning/v0.8/SECURITY_PLAN.md"
 type: "document"
-community: "Community 579"
-location: "L22"
+community: "AgentShroud Security Hardening Plan"
+location: "L350"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_579
+  - community/AgentShroud_Security_Hardening_Plan
 ---
 
 # PII Detection
 
 ## Connections
-- [[Gateway Python Dependencies (`gatewayrequirements.txt`)]] - `contains` [EXTRACTED]
+- [[Current State (2026-02-24)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_579
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Hardening_Plan

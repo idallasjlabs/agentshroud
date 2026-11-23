@@ -1,13 +1,13 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: "Community 1595"
+community: "PII redaction — presidio engine 0.9 confidence minimum"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1595
+  - community/PII_redaction__presidio_engine_09_confidence_minimum
 ---
 
 # PII redaction — presidio engine 0.9 confidence minimum
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1595
+#graphify/rationale #graphify/EXTRACTED #community/PII_redaction__presidio_engine_09_confidence_minimum

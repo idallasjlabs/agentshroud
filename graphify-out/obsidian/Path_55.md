@@ -1,19 +1,20 @@
 ---
-source_file: "scripts/sync-cve-registry.py"
+source_file: ""
 type: "code"
-community: "Community 74"
-location: "L580"
+community: "ManifestEntry"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_74
+  - community/ManifestEntry
 ---
 
 # Path
 
 ## Connections
-- [[main()_29]] - `calls` [EXTRACTED]
-- [[run_ghsa_sync()]] - `references` [EXTRACTED]
-- [[sync_agent_ghsa()]] - `references` [EXTRACTED]
+- [[dot-from_file()]] - `references` [EXTRACTED]
+- [[dot-from_source()]] - `references` [EXTRACTED]
+- [[deploy_manifest()]] - `references` [EXTRACTED]
+- [[plan_deploy()]] - `references` [EXTRACTED]
+- [[validate_manifest()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_74
+#graphify/code #graphify/EXTRACTED #community/ManifestEntry

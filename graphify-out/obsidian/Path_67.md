@@ -1,17 +1,16 @@
 ---
-source_file: "gateway/security/collaborator_tracker.py"
+source_file: ""
 type: "code"
-community: "EgressFilterConfig"
-location: "L54"
+community: "DNSBlocklist"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/DNSBlocklist
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_204]] - `references` [EXTRACTED]
+- [[dot-__init__()_191]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/DNSBlocklist

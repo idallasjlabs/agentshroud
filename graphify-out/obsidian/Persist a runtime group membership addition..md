@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "Community 18"
+community: "telegram_proxy.py"
 location: "L256"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/telegram_proxypy
 ---
 
 # Persist a runtime group membership addition.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[persist_group_member_add()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_18
+#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy

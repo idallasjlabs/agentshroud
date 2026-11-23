@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "rationale"
-community: "Community 336"
+community: "Coding Agent (bash-first)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_336
+  - community/Coding_Agent_bash-first
 ---
 
 # PTY Mode Required for Interactive Coding Agents
 
 ## Connections
-- [[SKILL_213]] - `rationale_for` [EXTRACTED]
+- [[coding-agentSKILL]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_336
+#graphify/rationale #graphify/EXTRACTED #community/Coding_Agent_bash-first

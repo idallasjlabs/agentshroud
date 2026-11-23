@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/approval_queue/store.py"
+source_file: ""
 type: "code"
-community: "Community 30"
-location: "L43"
+community: "FalcoAlertWatcher"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_30
+  - community/FalcoAlertWatcher
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_6]] - `references` [EXTRACTED]
+- [[dot-__init__()_4]] - `references` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_30
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

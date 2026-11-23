@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/intel_report.py"
+source_file: ""
 type: "code"
-community: "Community 57"
-location: "L205"
+community: "test_config_hot_reload.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_57
+  - community/test_config_hot_reloadpy
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_100]] - `references` [EXTRACTED]
-- [[._load_latest_file()]] - `references` [EXTRACTED]
-- [[.save()_1]] - `references` [EXTRACTED]
+- [[_load()_1]] - `references` [EXTRACTED]
+- [[_write()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_57
+#graphify/code #graphify/EXTRACTED #community/test_config_hot_reloadpy

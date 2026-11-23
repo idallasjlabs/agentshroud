@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
 type: "document"
-community: "Community 1559"
+community: "PII Pipeline Errors"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1559
+  - community/PII_Pipeline_Errors
 ---
 
 # PII Pipeline Errors
@@ -17,8 +17,8 @@ tags:
 - [[PII Not Being Detected]] - `contains` [EXTRACTED]
 - [[PII Pipeline Errors_1]] - `contains` [EXTRACTED]
 - [[Redaction Breaking JSONStructured Data]] - `contains` [EXTRACTED]
-- [[Related Notes_60]] - `contains` [EXTRACTED]
+- [[Related Notes_40]] - `contains` [EXTRACTED]
 - [[Tool Result PII Not Scanned]] - `contains` [EXTRACTED]
 - [[spaCy Model Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1559
+#graphify/document #graphify/EXTRACTED #community/PII_Pipeline_Errors

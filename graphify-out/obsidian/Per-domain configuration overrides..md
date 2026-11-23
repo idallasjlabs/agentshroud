@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "rationale"
-community: "Community 120"
+community: "WebProxy"
 location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_120
+  - community/WebProxy
 ---
 
 # Per-domain configuration overrides.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DomainSettings]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_120
+#graphify/rationale #graphify/EXTRACTED #community/WebProxy

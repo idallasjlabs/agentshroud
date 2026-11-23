@@ -1,18 +1,14 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Community 194"
+community: "PRIVATE_TOOLS"
 location: "41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_194
+  - community/PRIVATE_TOOLS
 ---
 
 # PRIVATE_TOOLS
 
-## Connections
-- [[ToolACLEnforcer]] - `shares_data_with` [EXTRACTED]
-- [[test_tool_acl.py]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_194
+#graphify/code #graphify/EXTRACTED #community/PRIVATE_TOOLS

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "Community 254"
+community: "ingest_api/models.py"
 location: "L153"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_254
+  - community/ingest_api/modelspy
 ---
 
 # Paginated ledger query results
 
 ## Connections
-- [[LedgerQueryResponse_1]] - `rationale_for` [EXTRACTED]
+- [[LedgerQueryResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_254
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/modelspy

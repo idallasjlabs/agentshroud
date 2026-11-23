@@ -1,18 +1,17 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: ""
 type: "code"
-community: "Community 265"
-location: "L464"
+community: "generate_branding_assets.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_265
+  - community/generate_branding_assetspy
 ---
 
 # Path
 
 ## Connections
-- [[gather_advisories()]] - `calls` [EXTRACTED]
-- [[load_snapshot()]] - `references` [EXTRACTED]
+- [[ensure()]] - `references` [EXTRACTED]
+- [[save()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_265
+#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy

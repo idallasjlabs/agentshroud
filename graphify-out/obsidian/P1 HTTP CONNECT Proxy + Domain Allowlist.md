@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "Community 481"
+community: "Plan: AgentShroud Security Hardening — Real Agent Containment"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_481
+  - community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment
 ---
 
 # P1: HTTP CONNECT Proxy + Domain Allowlist
@@ -15,8 +15,8 @@ tags:
 - [[Changes]] - `contains` [EXTRACTED]
 - [[Plan AgentShroud Security Hardening — Real Agent Containment]] - `contains` [EXTRACTED]
 - [[Tests (TDD)]] - `contains` [EXTRACTED]
-- [[Verification_9]] - `contains` [EXTRACTED]
-- [[Verification_10]] - `contains` [EXTRACTED]
+- [[Verification_5]] - `contains` [EXTRACTED]
+- [[Verification_6]] - `contains` [EXTRACTED]
 - [[What Exists]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_481
+#graphify/document #graphify/EXTRACTED #community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment

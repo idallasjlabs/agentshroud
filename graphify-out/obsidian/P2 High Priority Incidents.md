@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Community 164"
+community: "AgentShroud Incident Response Plan"
 location: "L281"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_164
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # P2 High Priority Incidents
@@ -17,4 +17,4 @@ tags:
 - [[PII Leak Incident]] - `contains` [EXTRACTED]
 - [[Prompt Injection Detected]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_164
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

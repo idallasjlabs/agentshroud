@@ -1,19 +1,16 @@
 ---
-source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
+source_file: ""
 type: "code"
-community: "Community 382"
-location: "L22"
+community: "AlertDispatcher"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_382
+  - community/AlertDispatcher
 ---
 
 # Path
 
 ## Connections
-- [[default_out_dir()]] - `references` [EXTRACTED]
-- [[main()_34]] - `calls` [EXTRACTED]
-- [[write_gallery()]] - `references` [EXTRACTED]
+- [[dot-__init__()_171]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_382
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

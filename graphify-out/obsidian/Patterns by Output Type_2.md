@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-bs.md"
+source_file: "docker/config/openclaw/skills/i-bs/SKILL.md"
 type: "document"
-community: "Community 1020"
-location: "L58"
+community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
+location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1020
+  - community/Required__45_for_text__30_for_UI_elements
 ---
 
 # Patterns by Output Type
@@ -15,4 +15,4 @@ tags:
 - [[Color Token Definition_2]] - `contains` [EXTRACTED]
 - [[Skill Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1020
+#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements

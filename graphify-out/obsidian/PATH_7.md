@@ -1,17 +1,17 @@
 ---
-source_file: "scripts/deploy.sh"
+source_file: "scripts/launch-instance.sh"
 type: "code"
-community: "Community 1418"
-location: "L12"
+community: "launch-instance.sh"
+location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1418
+  - community/launch-instancesh
 ---
 
 # PATH
 
 ## Connections
-- [[deploy.sh]] - `defines` [EXTRACTED]
+- [[launch-instance.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1418
+#graphify/code #graphify/EXTRACTED #community/launch-instancesh

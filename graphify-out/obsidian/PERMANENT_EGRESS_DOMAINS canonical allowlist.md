@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "Community 2479"
+community: "PERMANENT_EGRESS_DOMAINS canonical allowlist"
 location: "23-148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2479
+  - community/PERMANENT_EGRESS_DOMAINS_canonical_allowlist
 ---
 
 # PERMANENT_EGRESS_DOMAINS canonical allowlist
 
-#graphify/code #graphify/EXTRACTED #community/Community_2479
+#graphify/code #graphify/EXTRACTED #community/PERMANENT_EGRESS_DOMAINS_canonical_allowlist

@@ -1,19 +1,16 @@
 ---
-source_file: "scripts/export-email-reports.py"
+source_file: ""
 type: "code"
-community: "export_bot()"
-location: "L96"
+community: ".get_or_create_session"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/get_or_create_session
 ---
 
 # Path
 
 ## Connections
-- [[_report_date()]] - `calls` [EXTRACTED]
-- [[export_bot()]] - `references` [EXTRACTED]
-- [[main()_33]] - `calls` [EXTRACTED]
+- [[dot-__init__()_180]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export_bot
+#graphify/code #graphify/EXTRACTED #community/get_or_create_session

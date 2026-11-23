@@ -1,18 +1,16 @@
 ---
-source_file: "scripts/export-telegram-history.py"
+source_file: ""
 type: "code"
-community: "export()"
-location: "L101"
+community: "WebhookReceiver"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export
+  - community/WebhookReceiver
 ---
 
 # Path
 
 ## Connections
-- [[export()]] - `references` [EXTRACTED]
-- [[main()_35]] - `calls` [EXTRACTED]
+- [[dot-_can_create_directory()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export
+#graphify/code #graphify/EXTRACTED #community/WebhookReceiver

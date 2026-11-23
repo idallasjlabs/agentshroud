@@ -1,17 +1,17 @@
 ---
-source_file: "scripts/sunday-upgrade-apply.sh"
+source_file: "docker/scripts/colima-health-check.sh"
 type: "code"
-community: "Community 126"
-location: "L71"
+community: "colima-health-check.sh"
+location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_126
+  - community/colima-health-checksh
 ---
 
 # PATH
 
 ## Connections
-- [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
+- [[colima-health-check.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_126
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

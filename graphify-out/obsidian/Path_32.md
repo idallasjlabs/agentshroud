@@ -1,17 +1,16 @@
 ---
-source_file: "gateway/tests/test_edge_network_isolation.py"
+source_file: ""
 type: "code"
-community: "Community 108"
-location: "L71"
+community: "get_wazuh_summary"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_108
+  - community/get_wazuh_summary
 ---
 
 # Path
 
 ## Connections
-- [[_load()_1]] - `references` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_108
+#graphify/code #graphify/EXTRACTED #community/get_wazuh_summary

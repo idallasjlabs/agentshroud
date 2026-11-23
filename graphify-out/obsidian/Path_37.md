@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/tests/test_multi_host_test.py"
+source_file: ""
 type: "code"
-community: "Community 973"
-location: "L324"
+community: "EnhancedApprovalQueue"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_973
+  - graphify/EXTRACTED
+  - community/EnhancedApprovalQueue
 ---
 
 # Path
 
 ## Connections
-- [[HostResult]] - `uses` [INFERRED]
-- [[HostStatus]] - `uses` [INFERRED]
-- [[MultiHostResult]] - `uses` [INFERRED]
-- [[_run_wrapper()]] - `references` [EXTRACTED]
-- [[_write_exec()]] - `references` [EXTRACTED]
+- [[_parse()]] - `references` [EXTRACTED]
+- [[load_profiles()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_973
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

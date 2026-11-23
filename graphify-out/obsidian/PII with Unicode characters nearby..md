@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Community 0"
+community: "TestPIIDetection"
 location: "L189"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/TestPIIDetection
 ---
 
 # PII with Unicode characters nearby.
 
 ## Connections
-- [[.test_unicode_pii()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_unicode_pii()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/TestPIIDetection

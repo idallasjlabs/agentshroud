@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 4"
+community: "FakeRBAC"
 location: "L606"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_4
+  - community/FakeRBAC
 ---
 
 # Owner /whoami@bot should be normalized and handled locally.
 
 ## Connections
-- [[.test_owner_whoami_with_bot_mention_uses_local_notice()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_owner_whoami_with_bot_mention_uses_local_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_4
+#graphify/rationale #graphify/EXTRACTED #community/FakeRBAC

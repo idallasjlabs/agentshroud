@@ -1,18 +1,16 @@
 ---
-source_file: "gateway/tests/test_network_validator_gate.py"
+source_file: ""
 type: "code"
-community: "Community 71"
-location: "L33"
+community: "get_trivy_image_summaries"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_71
+  - graphify/EXTRACTED
+  - community/get_trivy_image_summaries
 ---
 
 # Path
 
 ## Connections
-- [[NetworkValidator]] - `uses` [INFERRED]
-- [[tmp_compose()]] - `references` [EXTRACTED]
+- [[_write_image_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_71
+#graphify/code #graphify/EXTRACTED #community/get_trivy_image_summaries

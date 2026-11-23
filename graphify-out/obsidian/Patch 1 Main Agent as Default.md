@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
 type: "document"
-community: "Community 826"
+community: "apply-patches.js"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_826
+  - community/apply-patchesjs
 ---
 
 # Patch 1: Main Agent as Default
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Patches Applied]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_826
+#graphify/document #graphify/EXTRACTED #community/apply-patchesjs

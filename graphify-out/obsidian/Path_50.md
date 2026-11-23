@@ -1,20 +1,17 @@
 ---
-source_file: "scripts/export-bot-conversations.py"
+source_file: ""
 type: "code"
-community: "Community 777"
-location: "L60"
+community: "plan_remediation"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_777
+  - community/plan_remediation
 ---
 
 # Path
 
 ## Connections
-- [[_docker_read_file()]] - `references` [EXTRACTED]
-- [[export_hermes()]] - `references` [EXTRACTED]
-- [[export_openclaw()]] - `references` [EXTRACTED]
-- [[main()_20]] - `calls` [EXTRACTED]
+- [[read_pin()]] - `references` [EXTRACTED]
+- [[write_pin()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_777
+#graphify/code #graphify/EXTRACTED #community/plan_remediation
