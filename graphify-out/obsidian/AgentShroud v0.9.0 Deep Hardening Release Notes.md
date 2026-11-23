@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v0.9/release-notes-v0.9.0.md"
 type: "document"
-community: "Community 91"
+community: "AgentShroud v0.8.0 \"Watchtower\" Release Plan"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_91
+  - community/AgentShroud_v080_Watchtower_Release_Plan
 ---
 
 # AgentShroud v0.9.0 "Deep Hardening" Release Notes
@@ -22,4 +22,4 @@ tags:
 - [[STPA-Sec (Systems-Theoretic Process Analysis for Security)]] - `references` [EXTRACTED]
 - [[Steven Hay (Security Advisor)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_91
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower_Release_Plan

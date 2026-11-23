@@ -1,12 +1,12 @@
 ---
 source_file: "reports/upgrade-2026-09-20-20260920-0802.md"
 type: "document"
-community: "Community 1060"
+community: "AgentShroud Sunday Upgrade Report — 2026-09-20 (PROD run)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1060
+  - community/AgentShroud_Sunday_Upgrade_Report__2026-09-20_PROD_run
 ---
 
 # AgentShroud Sunday Upgrade — 2026-09-20 (PROD run)
@@ -14,6 +14,5 @@ tags:
 ## Connections
 - [[0. Dev handoff check (BLOCKING)]] - `contains` [EXTRACTED]
 - [[Sunday Upgrade — 2026-09-20 PROD run header (dev handoff check)]] - `contains` [EXTRACTED]
-- [[upgrade-2026-09-20-20260920-0802]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1060
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Sunday_Upgrade_Report__2026-09-20_PROD_run

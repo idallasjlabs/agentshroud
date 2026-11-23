@@ -1,21 +1,21 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "Community 510"
+community: "API Keys Setup Guide"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_510
+  - community/API_Keys_Setup_Guide
 ---
 
 # API Keys Setup Guide
 
 ## Connections
-- [[Overview_22]] - `contains` [EXTRACTED]
-- [[Quick Reference_13]] - `contains` [EXTRACTED]
+- [[Overview_17]] - `contains` [EXTRACTED]
+- [[Quick Reference_14]] - `contains` [EXTRACTED]
 - [[SETUP_API_KEYS]] - `contains` [EXTRACTED]
-- [[Security Notes_3]] - `contains` [EXTRACTED]
+- [[Security Notes_5]] - `contains` [EXTRACTED]
 - [[Step 1 Save API Keys to Secret Files]] - `contains` [EXTRACTED]
 - [[Step 2 Restart OpenClaw Container]] - `contains` [EXTRACTED]
 - [[Step 3 Configure API Keys in OpenClaw]] - `contains` [EXTRACTED]
@@ -24,6 +24,6 @@ tags:
 - [[Step 6 Add Telegram Bot]] - `contains` [EXTRACTED]
 - [[Step 7 Test the Bot]] - `contains` [EXTRACTED]
 - [[Summary Checklist]] - `contains` [EXTRACTED]
-- [[Troubleshooting_52]] - `contains` [EXTRACTED]
+- [[Troubleshooting_45]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_510
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

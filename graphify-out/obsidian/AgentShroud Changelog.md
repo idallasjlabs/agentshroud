@@ -1,11 +1,11 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 901"
+community: "AgentShroud Changelog"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_901
+  - community/AgentShroud_Changelog
 ---
 
 # AgentShroud Changelog
@@ -20,4 +20,4 @@ tags:
 - [[TrustManager Progressive-Trust Ladder]] - `references` [EXTRACTED]
 - [[Voice Gateway]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_901
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Changelog

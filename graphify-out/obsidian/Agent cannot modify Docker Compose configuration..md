@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "Community 1"
+community: "TestConfigurationProtection"
 location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1
+  - community/TestConfigurationProtection
 ---
 
 # Agent cannot modify Docker Compose configuration.
 
 ## Connections
-- [[.test_docker_compose_write_blocked()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_docker_compose_write_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1
+#graphify/rationale #graphify/EXTRACTED #community/TestConfigurationProtection

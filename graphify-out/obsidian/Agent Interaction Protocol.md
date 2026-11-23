@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/eightd-root-cause-analysis.md"
+source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 765"
-location: "L429"
+community: "The 8D Investigation Process"
+location: "L532"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_765
+  - community/The_8D_Investigation_Process
 ---
 
 # Agent Interaction Protocol
@@ -16,4 +16,4 @@ tags:
 - [[How to Collaborate with the AWS Agent]] - `contains` [EXTRACTED]
 - [[How to Interact with the Human Investigator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_765
+#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "pick_latest_stable"
-location: "L367"
+community: "ingest_api/main.py"
+location: "L372"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/pick_latest_stable
+  - community/ingest_api/mainpy
 ---
 
 # Add security headers to all responses (defense-in-depth). Also catches Python…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[security_headers_middleware()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/pick_latest_stable
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "rationale"
-community: "Community 1023"
+community: "_stub_client"
 location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1023
+  - community/_stub_client
 ---
 
 # AgentShroud SOC CLI — Shared Command Layer.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[cli()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1023
+#graphify/rationale #graphify/EXTRACTED #community/_stub_client

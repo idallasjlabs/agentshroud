@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "Community 1"
+community: "TestSystemPathProtection"
 location: "L170"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1
+  - community/TestSystemPathProtection
 ---
 
 # Agent cannot write to /usr/bin/ system binaries.
 
 ## Connections
-- [[.test_usr_bin_write_blocked()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_usr_bin_write_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1
+#graphify/rationale #graphify/EXTRACTED #community/TestSystemPathProtection

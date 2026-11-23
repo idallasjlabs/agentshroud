@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/04-security.md"
 type: "document"
-community: "Community 466"
+community: "IEC 62443 Compliance Matrix — AgentShroud"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_466
+  - community/IEC_62443_Compliance_Matrix__AgentShroud
 ---
 
 # AgentShroud — Security & Access Diagrams
@@ -17,4 +17,4 @@ tags:
 - [[12. Credential Flow Diagram]] - `contains` [EXTRACTED]
 - [[13. Network Security Diagram — Egress Controls]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_466
+#graphify/document #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud

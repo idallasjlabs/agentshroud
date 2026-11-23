@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "document"
-community: "Community 396"
+community: "Credential Security Policy"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_396
+  - community/Credential_Security_Policy
 ---
 
 # Access Control (7)
@@ -15,4 +15,4 @@ tags:
 - [[Credential Security Policy]] - `contains` [EXTRACTED]
 - [[Security Modules (58)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_396
+#graphify/document #graphify/EXTRACTED #community/Credential_Security_Policy

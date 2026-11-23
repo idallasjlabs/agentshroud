@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Community 356"
+community: "Canvas Skill"
 location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_356
+  - community/Canvas_Skill
 ---
 
 # Actions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Canvas Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_356
+#graphify/document #graphify/EXTRACTED #community/Canvas_Skill

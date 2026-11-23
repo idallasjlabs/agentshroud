@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/openai-whisper-api/SKILL.md"
 type: "document"
-community: "Community 772"
+community: "OpenAI Whisper API (curl)"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_772
+  - community/OpenAI_Whisper_API_curl
 ---
 
 # API key
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenAI Whisper API (curl)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_772
+#graphify/document #graphify/EXTRACTED #community/OpenAI_Whisper_API_curl

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "Community 1"
+community: "TestConfigurationProtection"
 location: "L135"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1
+  - community/TestConfigurationProtection
 ---
 
 # Agent cannot modify AgentShroud configuration files.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestConfigurationProtection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1
+#graphify/rationale #graphify/EXTRACTED #community/TestConfigurationProtection

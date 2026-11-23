@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-04.md"
 type: "document"
-community: "Community 153"
+community: "2. Security Analysis"
 location: "L139"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_153
+  - community/2_Security_Analysis
 ---
 
 # Action Items Before Merge
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[6. Verdict]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_153
+#graphify/document #graphify/EXTRACTED #community/2_Security_Analysis

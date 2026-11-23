@@ -1,11 +1,11 @@
 ---
 source_file: "branding/colors/palette.md"
 type: "concept"
-community: "Community 395"
+community: "Planning Docs Index (redteam, reviews, recovery, version buckets)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_395
+  - community/Planning_Docs_Index_redteam_reviews_recovery_version_buckets
 ---
 
 # AgentShroud Blue #1583f0
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Color Palette]] - `references` [EXTRACTED]
 - [[Master Feature List (historical index)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_395
+#graphify/concept #graphify/EXTRACTED #community/Planning_Docs_Index_redteam_reviews_recovery_version_buckets

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/slack/SKILL.md"
 type: "document"
-community: "Community 573"
+community: "Actions"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_573
+  - community/Actions
 ---
 
 # Actions
@@ -26,4 +26,4 @@ tags:
 - [[Slack Actions]] - `contains` [EXTRACTED]
 - [[Unpin a message]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_573
+#graphify/document #graphify/EXTRACTED #community/Actions

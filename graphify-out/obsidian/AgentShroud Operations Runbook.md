@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "Community 107"
+community: "AgentShroud Operations Runbook"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_107
+  - community/AgentShroud_Operations_Runbook
 ---
 
 # AgentShroud Operations Runbook
@@ -20,11 +20,7 @@ tags:
 - [[6. System Updates]] - `contains` [EXTRACTED]
 - [[7. Backup and Restore Procedures]] - `contains` [EXTRACTED]
 - [[8. Common Troubleshooting Scenarios]] - `contains` [EXTRACTED]
-- [[AgentShroud Deployment Procedure]] - `conceptually_related_to` [INFERRED]
-- [[AgentShroud Incident Response Plan]] - `references` [EXTRACTED]
-- [[Kill Switch (FREEZESHUTDOWNDISCONNECT)]] - `references` [EXTRACTED]
 - [[System Architecture Overview]] - `contains` [EXTRACTED]
-- [[Trust Manager  Progressive Trust System]] - `references` [EXTRACTED]
 - [[runbook]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_107
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Operations_Runbook

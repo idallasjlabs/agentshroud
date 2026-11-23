@@ -1,18 +1,18 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "Community 249"
+community: "AgentShroud Documentation"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_249
+  - community/AgentShroud_Documentation
 ---
 
 # AgentShroud Documentation
 
 ## Connections
-- [[README_117]] - `contains` [EXTRACTED]
+- [[docsREADME]] - `contains` [EXTRACTED]
 - [[🎯 Use Cases]] - `contains` [EXTRACTED]
 - [[📋 Current Status]] - `contains` [EXTRACTED]
 - [[📚 Documentation Structure]] - `contains` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[🗂️ Archive]] - `contains` [EXTRACTED]
 - [[🚀 Quick Start]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_249
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Documentation

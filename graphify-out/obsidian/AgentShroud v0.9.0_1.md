@@ -1,23 +1,18 @@
 ---
-source_file: "docs/requirements/system-requirements.md"
+source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Community 508"
+community: "Integration Guide"
 location: "L2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_508
+  - community/Integration_Guide
 ---
 
 # AgentShroud v0.9.0
 
 ## Connections
-- [[1. Purpose and Scope]] - `contains` [EXTRACTED]
-- [[2. Functional Requirements]] - `contains` [EXTRACTED]
-- [[3. Non-Functional Requirements]] - `contains` [EXTRACTED]
-- [[4. Constraints and Assumptions]] - `contains` [EXTRACTED]
-- [[5. Compliance Requirements]] - `contains` [EXTRACTED]
-- [[6. Risk Assessment]] - `contains` [EXTRACTED]
-- [[System Requirements Specification (SRS)]] - `contains` [EXTRACTED]
+- [[Integration Guide]] - `contains` [EXTRACTED]
+- [[Overview_19]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_508
+#graphify/document #graphify/EXTRACTED #community/Integration_Guide

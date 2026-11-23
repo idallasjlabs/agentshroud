@@ -1,20 +1,18 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "Community 502"
+community: "Apple Services Setup Guide"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/Community_502
+  - graphify/EXTRACTED
+  - community/Apple_Services_Setup_Guide
 ---
 
 # APPLE-SERVICES-SETUP.md
 
 ## Connections
 - [[Apple Services Setup Guide]] - `contains` [EXTRACTED]
-- [[Bot Identity Separation (Separate Accounts)]] - `conceptually_related_to` [INFERRED]
-- [[ICLOUD-SERVICES-SETUP]] - `semantically_similar_to` [INFERRED]
-- [[IMESSAGE_FIX]] - `conceptually_related_to` [INFERRED]
+- [[docsREADME]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Community_502
+#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide

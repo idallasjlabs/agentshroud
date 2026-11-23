@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/agents/hermes-soul.md"
+source_file: "docker/config/openclaw/agents/hermes-soul.md"
 type: "document"
-community: "Community 1025"
+community: "AgentShroud Hermes — System Identity"
 location: "L2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1025
+  - community/AgentShroud_Hermes__System_Identity
 ---
 
 # AgentShroud Hermes — System Identity
@@ -18,6 +18,6 @@ tags:
 - [[Remote Hosts (SSH via gateway)_1]] - `contains` [EXTRACTED]
 - [[Trademark Notice_1]] - `contains` [EXTRACTED]
 - [[Your Role_1]] - `contains` [EXTRACTED]
-- [[hermes-soul]] - `contains` [EXTRACTED]
+- [[openclawagentshermes-soul]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1025
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Hermes__System_Identity

@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/sec-offense.md"
+source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Community 1059"
-location: "L8"
+community: "AgentShroud Red Team Adversarial Tester"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1059
+  - community/AgentShroud_Red_Team_Adversarial_Tester
 ---
 
 # AgentShroud Red Team Adversarial Tester
@@ -14,10 +14,11 @@ tags:
 ## Connections
 - [[Adversary Model]] - `contains` [EXTRACTED]
 - [[Attack Phases]] - `contains` [EXTRACTED]
-- [[Critical Rules_2]] - `contains` [EXTRACTED]
-- [[Infrastructure_1]] - `contains` [EXTRACTED]
-- [[Output_1]] - `contains` [EXTRACTED]
+- [[Critical Rules_9]] - `contains` [EXTRACTED]
+- [[Infrastructure_8]] - `contains` [EXTRACTED]
+- [[Output_8]] - `contains` [EXTRACTED]
 - [[Writing Exploit Tests]] - `contains` [EXTRACTED]
-- [[sec-offense]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-sec-offenseSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1059
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester

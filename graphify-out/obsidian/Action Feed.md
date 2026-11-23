@@ -1,17 +1,17 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "Community 465"
+community: "Features"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_465
+  - community/Features
 ---
 
 # Action Feed
 
 ## Connections
-- [[Features_1]] - `contains` [EXTRACTED]
+- [[Features]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_465
+#graphify/document #graphify/EXTRACTED #community/Features

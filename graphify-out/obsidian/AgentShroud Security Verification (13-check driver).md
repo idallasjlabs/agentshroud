@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/verify-security.sh"
 type: "code"
-community: "Community 691"
+community: "AgentShroud Security Verification (13-check driver)"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_691
+  - community/AgentShroud_Security_Verification_13-check_driver
 ---
 
 # AgentShroud Security Verification (13-check driver)
@@ -14,9 +14,6 @@ tags:
 - [[AgentShroud Seccomp Profile (default-deny syscall allowlist)]] - `conceptually_related_to` [INFERRED]
 - [[Phase 3 Container Security Hardening Baseline]] - `semantically_similar_to` [INFERRED]
 - [[Read-Only Root FS Constraint — what breaks without proper mounts]] - `semantically_similar_to` [INFERRED]
-- [[check_fail()_1]] - `calls` [EXTRACTED]
-- [[check_pass()_1]] - `calls` [EXTRACTED]
-- [[check_warn()]] - `calls` [EXTRACTED]
 - [[toggle-readonly.sh mode switcher]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_691
+#graphify/code #graphify/INFERRED #community/AgentShroud_Security_Verification_13-check_driver

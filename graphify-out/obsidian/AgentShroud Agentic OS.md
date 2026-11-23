@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Community 178"
+community: "AgentShroud Agentic OS"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_178
+  - community/AgentShroud_Agentic_OS
 ---
 
 # AgentShroud Agentic OS
@@ -29,7 +29,6 @@ tags:
 - [[AI-Native Development Framework]] - `contains` [EXTRACTED]
 - [[Appendix A File Structure Reference]] - `contains` [EXTRACTED]
 - [[Table of Contents]] - `contains` [EXTRACTED]
-- [[`SecurityPipeline`]] - `contains` [EXTRACTED]
 - [[agentic-os]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_178
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Agentic_OS

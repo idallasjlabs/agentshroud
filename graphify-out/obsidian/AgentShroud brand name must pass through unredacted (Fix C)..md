@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Community 98"
+community: "TestOutboundInfoFilter"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_98
+  - community/TestOutboundInfoFilter
 ---
 
 # AgentShroud brand name must pass through unredacted (Fix C).
 
 ## Connections
-- [[.test_agentshroud_name_not_redacted()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_agentshroud_name_not_redacted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_98
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter

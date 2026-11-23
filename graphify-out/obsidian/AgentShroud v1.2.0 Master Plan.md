@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v1.2/v1.2.0-master-plan.md"
 type: "document"
-community: "Community 1973"
+community: "AgentShroud v1.2.0 Master Plan"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1973
+  - community/AgentShroud_v120_Master_Plan
 ---
 
 # AgentShroud v1.2.0 Master Plan
@@ -14,6 +14,7 @@ tags:
 - [[Cross-cutting branches + PR train]] - `contains` [EXTRACTED]
 - [[Open clarifications before coding starts]] - `contains` [EXTRACTED]
 - [[Out of scope for v1.2.0]] - `contains` [EXTRACTED]
+- [[Planning Docs Index (redteam, reviews, recovery, version buckets)]] - `references` [EXTRACTED]
 - [[Red Team Assessment v1.2.0]] - `references` [EXTRACTED]
 - [[Tracking + cadence]] - `contains` [EXTRACTED]
 - [[Why v1.2.0]] - `contains` [EXTRACTED]
@@ -25,4 +26,4 @@ tags:
 - [[Workstream E Blue and Red Team Security Scan (Both Bots)]] - `references` [EXTRACTED]
 - [[v1.2.0-master-plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1973
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v120_Master_Plan

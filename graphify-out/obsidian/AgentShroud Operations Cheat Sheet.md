@@ -1,18 +1,18 @@
 ---
 source_file: "CHEATSHEET.md"
 type: "document"
-community: "Community 441"
+community: "AgentShroud Operations Cheat Sheet"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_441
+  - community/AgentShroud_Operations_Cheat_Sheet
 ---
 
 # AgentShroud Operations Cheat Sheet
 
 ## Connections
-- [[CHEATSHEET]] - `contains` [EXTRACTED]
+- [[CHEATSHEET_6]] - `contains` [EXTRACTED]
 - [[Colima VM]] - `references` [EXTRACTED]
 - [[Container Basics]] - `contains` [EXTRACTED]
 - [[Hermes Agent Management]] - `contains` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[OpenClaw (Bot) Management]] - `contains` [EXTRACTED]
 - [[SOC API]] - `references` [EXTRACTED]
 - [[SOC API — Common Queries]] - `contains` [EXTRACTED]
-- [[Secrets]] - `contains` [EXTRACTED]
+- [[Secrets_3]] - `contains` [EXTRACTED]
 - [[Security Scanners]] - `references` [EXTRACTED]
 - [[Telegram Bot Commands (Owner)]] - `contains` [EXTRACTED]
 - [[Tests_5]] - `contains` [EXTRACTED]
@@ -33,4 +33,4 @@ tags:
 - [[Web Management UI]] - `contains` [EXTRACTED]
 - [[asb Wrapper Script]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_441
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet

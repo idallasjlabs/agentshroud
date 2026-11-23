@@ -1,22 +1,22 @@
 ---
 source_file: ".agents/skills/sec-defense/SKILL.md"
 type: "document"
-community: "Community 1341"
+community: "AgentShroud Blue Team Security Auditor"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1341
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # AgentShroud Blue Team Security Auditor
 
 ## Connections
 - [[Audit Procedure_1]] - `contains` [EXTRACTED]
-- [[Critical Rules_4]] - `contains` [EXTRACTED]
-- [[Infrastructure_2]] - `contains` [EXTRACTED]
+- [[Critical Rules_1]] - `contains` [EXTRACTED]
+- [[Infrastructure_1]] - `contains` [EXTRACTED]
 - [[Methodology_1]] - `contains` [EXTRACTED]
-- [[Output Format_24]] - `contains` [EXTRACTED]
-- [[SKILL_69]] - `contains` [EXTRACTED]
+- [[Output Format_5]] - `contains` [EXTRACTED]
+- [[sec-defenseSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1341
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor
