@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "rationale"
-community: "Community 43"
+community: "SecurityPipeline"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/SecurityPipeline
 ---
 
 # Canary should fail when no pipeline configured.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_canary_fails_without_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_43
+#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline

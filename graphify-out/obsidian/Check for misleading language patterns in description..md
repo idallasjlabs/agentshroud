@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "Community 3"
+community: "middleware.py"
 location: "L255"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_3
+  - community/middlewarepy
 ---
 
 # Check for misleading language patterns in description.
 
 ## Connections
-- [[._check_misleading_language()]] - `rationale_for` [EXTRACTED]
+- [[dot-_check_misleading_language()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_3
+#graphify/rationale #graphify/EXTRACTED #community/middlewarepy

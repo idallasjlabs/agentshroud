@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-browser.agent.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 449"
-location: "L300"
+community: "Browser — Secure Browser Automation"
+location: "L295"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_449
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # "CAPTCHA detected"
 
 ## Connections
-- [[Troubleshooting_13]] - `contains` [EXTRACTED]
+- [[Troubleshooting_15]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_449
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

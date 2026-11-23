@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/sag/SKILL.md"
 type: "document"
-community: "Community 772"
+community: "sag"
 location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_772
+  - community/sag
 ---
 
 # Chat voice responses
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sag]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_772
+#graphify/document #graphify/EXTRACTED #community/sag

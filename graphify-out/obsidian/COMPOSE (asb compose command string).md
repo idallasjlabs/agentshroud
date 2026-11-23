@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "Community 126"
+community: "sunday-upgrade-apply.sh"
 location: "L60-L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_126
+  - community/sunday-upgrade-applysh
 ---
 
 # COMPOSE (asb compose command string)
@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[COMPOSE_CMD]] - `references` [EXTRACTED]
 - [[PROJECT (compose project name)]] - `shares_data_with` [EXTRACTED]
-- [[detect_container_runtime()]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply main sequence]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_126
+#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

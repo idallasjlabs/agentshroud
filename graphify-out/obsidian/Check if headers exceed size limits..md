@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "rationale"
-community: "Community 0"
+community: "MetadataGuard"
 location: "L189"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/MetadataGuard
 ---
 
 # Check if headers exceed size limits.
 
 ## Connections
-- [[.check_oversized_headers()]] - `rationale_for` [EXTRACTED]
+- [[dot-check_oversized_headers()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/MetadataGuard

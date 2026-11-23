@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "Community 469"
+community: "OpenClaw Management Scripts"
 location: "L162"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_469
+  - community/OpenClaw_Management_Scripts
 ---
 
 # Changing AI Model
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Tasks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_469
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts

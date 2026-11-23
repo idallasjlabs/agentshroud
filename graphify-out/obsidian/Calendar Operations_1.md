@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/icloud/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 623"
+community: "iCloud Services"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_623
+  - community/iCloud_Services
 ---
 
 # Calendar Operations
@@ -18,4 +18,4 @@ tags:
 - [[Update Event_1]] - `contains` [EXTRACTED]
 - [[iCloud Services_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_623
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

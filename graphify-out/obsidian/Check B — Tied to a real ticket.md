@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/agents/i-ab.md"
 type: "document"
-community: "Community 1275"
+community: "Skill: Audit Branch (AB) — Merge Regression Detection"
 location: "L111"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1275
+  - community/Skill_Audit_Branch_AB__Merge_Regression_Detection
 ---
 
 # Check B — Tied to a real ticket?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 4 — Triage each finding]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1275
+#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Detection

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "Community 74"
+community: "sync-cve-registry.py"
 location: "L664"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_74
+  - community/sync-cve-registrypy
 ---
 
 # CVE ids NVD lists for *label* that no registry entry carries as ``cve_id``.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_nvd_backlog()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_74
+#graphify/rationale #graphify/EXTRACTED #community/sync-cve-registrypy

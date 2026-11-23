@@ -1,17 +1,17 @@
 ---
-source_file: "docker/QUICKSTART.md"
+source_file: "docker/README.md"
 type: "document"
-community: "Community 258"
-location: "L50"
+community: "Usage"
+location: "L286"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_258
+  - community/Usage
 ---
 
 # Check Status
 
 ## Connections
-- [[Launch the Stack]] - `contains` [EXTRACTED]
+- [[Usage_26]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_258
+#graphify/document #graphify/EXTRACTED #community/Usage

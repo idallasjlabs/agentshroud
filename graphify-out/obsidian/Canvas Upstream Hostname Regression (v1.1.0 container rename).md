@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/tests/test_canvas_proxy.py"
 type: "rationale"
-community: "Community 1300"
+community: "Canvas Upstream Hostname Regression (v1.1.0 container rename)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1300
+  - community/Canvas_Upstream_Hostname_Regression_v110_container_rename
 ---
 
 # Canvas Upstream Hostname Regression (v1.1.0 container rename)
 
-## Connections
-- [[test_canvas_proxy.py]] - `references` [EXTRACTED]
-
-#graphify/rationale #graphify/EXTRACTED #community/Community_1300
+#graphify/rationale #graphify/EXTRACTED #community/Canvas_Upstream_Hostname_Regression_v110_container_rename

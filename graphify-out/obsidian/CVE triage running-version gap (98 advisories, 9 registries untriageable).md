@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-22.md"
 type: "concept"
-community: "Community 118"
+community: "upgrade-2026-09-21.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_118
+  - community/upgrade-2026-09-21md
 ---
 
 # CVE triage running-version gap (98 advisories, 9 registries untriageable)
@@ -21,4 +21,4 @@ tags:
 - [[upgrade-2026-09-26]] - `references` [EXTRACTED]
 - [[upgrade-2026-09-27]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_118
+#graphify/concept #graphify/EXTRACTED #community/upgrade-2026-09-21md

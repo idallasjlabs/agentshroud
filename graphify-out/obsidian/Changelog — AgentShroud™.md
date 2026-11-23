@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 1255"
+community: "Changelog — AgentShroud™"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1255
+  - community/Changelog__AgentShroud
 ---
 
 # Changelog — AgentShroud™
@@ -40,4 +40,4 @@ tags:
 - [[Unreleased — featv0.8.0-enforcement-hardening (session 2 — 2026-03-14)]] - `contains` [EXTRACTED]
 - [[Unreleased — featv0.8.0-enforcement-hardening (session 3 — 2026-03-15)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1255
+#graphify/document #graphify/EXTRACTED #community/Changelog__AgentShroud

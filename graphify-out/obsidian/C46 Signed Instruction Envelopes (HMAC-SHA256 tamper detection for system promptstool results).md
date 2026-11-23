@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "concept"
-community: "Community 24"
+community: "C46 Signed Instruction Envelopes (HMAC-SHA256 tamper detection for system prompts/tool results)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/C46_Signed_Instruction_Envelopes_HMAC-SHA256_tamper_detection_for_system_prompts/tool_results
 ---
 
 # C46 Signed Instruction Envelopes (HMAC-SHA256 tamper detection for system prompts/tool results)
 
-## Connections
-- [[EnvelopeSigner_1]] - `rationale_for` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/Community_24
+#graphify/concept #graphify/EXTRACTED #community/C46_Signed_Instruction_Envelopes_HMAC-SHA256_tamper_detection_for_system_prompts/tool_results

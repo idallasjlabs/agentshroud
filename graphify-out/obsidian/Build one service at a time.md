@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "rationale"
-community: "Community 126"
+community: "sunday-upgrade-apply.sh"
 location: "L983-L1022"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_126
+  - community/sunday-upgrade-applysh
 ---
 
 # Build one service at a time
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[phase_apply()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_126
+#graphify/rationale #graphify/EXTRACTED #community/sunday-upgrade-applysh

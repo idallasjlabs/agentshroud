@@ -1,20 +1,20 @@
 ---
-source_file: ".agents/skills/i-cicd/README.md"
+source_file: "docker/config/hermes/skills/i-cicd/README.md"
 type: "document"
-community: "Community 1877"
+community: "CI/CD Pipeline Advisor (SKILL)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1877
+  - community/CI/CD_Pipeline_Advisor_SKILL
 ---
 
 # CI/CD Pipeline Advisor (CICD)
 
 ## Connections
-- [[Purpose_9]] - `contains` [EXTRACTED]
-- [[README_9]] - `contains` [EXTRACTED]
-- [[Related Skills_12]] - `contains` [EXTRACTED]
-- [[Usage_14]] - `contains` [EXTRACTED]
+- [[Purpose_87]] - `contains` [EXTRACTED]
+- [[Related Skills_22]] - `contains` [EXTRACTED]
+- [[Usage_29]] - `contains` [EXTRACTED]
+- [[hermesskillsi-cicdREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1877
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL

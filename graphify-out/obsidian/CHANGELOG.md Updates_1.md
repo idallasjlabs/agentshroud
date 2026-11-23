@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-pm/SKILL.md"
+source_file: "docker/config/hermes/skills/i-pm/SKILL.md"
 type: "document"
-community: "Community 486"
-location: "L122"
+community: "Skill: Project Management (PM)"
+location: "L121"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_486
+  - community/Skill_Project_Management_PM
 ---
 
 # CHANGELOG.md Updates
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Status Reporting_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_486
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM

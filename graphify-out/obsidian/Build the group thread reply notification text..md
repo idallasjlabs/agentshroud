@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/group_router.py"
 type: "rationale"
-community: "Community 124"
+community: "ApprovalRequest"
 location: "L140"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_124
+  - community/ApprovalRequest
 ---
 
 # Build the group thread reply notification text.
 
 ## Connections
-- [[._build_group_reply_text()]] - `rationale_for` [EXTRACTED]
+- [[dot-_build_group_reply_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_124
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest
