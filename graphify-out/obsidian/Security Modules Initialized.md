@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
 type: "document"
-community: "Community 592"
+community: "middleware.py"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_592
+  - community/middlewarepy
 ---
 
 # Security Modules Initialized
@@ -16,6 +16,6 @@ tags:
 - [[Memory Security]] - `contains` [EXTRACTED]
 - [[P1 Core Guards]] - `contains` [EXTRACTED]
 - [[Tool Security]] - `contains` [EXTRACTED]
-- [[middleware.py_2]] - `contains` [EXTRACTED]
+- [[middleware.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_592
+#graphify/document #graphify/EXTRACTED #community/middlewarepy

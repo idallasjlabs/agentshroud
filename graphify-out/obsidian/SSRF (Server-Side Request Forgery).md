@@ -1,17 +1,13 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Community 91"
+community: "SSRF (Server-Side Request Forgery)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_91
+  - community/SSRF_Server-Side_Request_Forgery
 ---
 
 # SSRF (Server-Side Request Forgery)
 
-## Connections
-- [[system-requirements]] - `references` [EXTRACTED]
-- [[use-cases]] - `references` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/Community_91
+#graphify/concept #graphify/EXTRACTED #community/SSRF_Server-Side_Request_Forgery

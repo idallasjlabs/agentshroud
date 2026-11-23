@@ -1,20 +1,22 @@
 ---
-source_file: ".agents/agents/i-mcpm-auth-reset.md"
+source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Community 211"
-location: "L202"
+community: "AgentShroud Device Pairing Management"
+location: "L286"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_211
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # Security Best Practices
 
 ## Connections
-- [[AWS Credentials]] - `contains` [EXTRACTED]
-- [[Atlassian OAuth]] - `contains` [EXTRACTED]
-- [[GitHub PAT]] - `contains` [EXTRACTED]
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
+- [[1. Regular Audits]] - `contains` [EXTRACTED]
+- [[2. Principle of Least Privilege]] - `contains` [EXTRACTED]
+- [[3. Monitor Remote IPs]] - `contains` [EXTRACTED]
+- [[4. Document Your Devices]] - `contains` [EXTRACTED]
+- [[5. Rotate on Compromise]] - `contains` [EXTRACTED]
+- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_211
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

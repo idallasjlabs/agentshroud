@@ -1,21 +1,21 @@
 ---
 source_file: "docs/security/security-supply-chain.md"
 type: "document"
-community: "Community 570"
+community: "Features"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_570
+  - community/Features
 ---
 
 # Security Supply Chain Analysis
 
 ## Connections
 - [[Detailed Profiles]] - `contains` [EXTRACTED]
-- [[Overview_19]] - `contains` [EXTRACTED]
-- [[Recommendations_1]] - `contains` [EXTRACTED]
+- [[Overview]] - `contains` [EXTRACTED]
+- [[Recommendations]] - `contains` [EXTRACTED]
 - [[Verdict Summary]] - `contains` [EXTRACTED]
 - [[security-supply-chain]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_570
+#graphify/document #graphify/EXTRACTED #community/Features

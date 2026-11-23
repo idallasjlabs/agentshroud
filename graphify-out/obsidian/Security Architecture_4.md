@@ -1,17 +1,17 @@
 ---
-source_file: ".omp/agents/browser.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 476"
-location: "L24"
+community: "Browser — Secure Browser Automation"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_476
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Security Architecture
 
 ## Connections
-- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_476
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "rationale"
-community: "Community 220"
+community: "test_clamav_pipeline.py"
 location: "L187"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_220
+  - community/test_clamav_pipelinepy
 ---
 
 # Save a ClamAV report to the log directory.
 
 ## Connections
-- [[save_report()]] - `rationale_for` [EXTRACTED]
+- [[save_report()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_220
+#graphify/rationale #graphify/EXTRACTED #community/test_clamav_pipelinepy

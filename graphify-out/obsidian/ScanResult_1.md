@@ -1,34 +1,26 @@
 ---
-source_file: "gateway/security/prompt_guard.py"
+source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "Community 24"
-location: "L36"
+community: "ScanResult"
+location: "L45"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_24
+  - graphify/EXTRACTED
+  - community/ScanResult
 ---
 
 # ScanResult
 
 ## Connections
-- [[._blocking_prompt_guard()]] - `calls` [EXTRACTED]
-- [[.scan()_4]] - `references` [EXTRACTED]
-- [[.scan_tool_result()_2]] - `references` [EXTRACTED]
-- [[TestAuditChain]] - `uses` [INFERRED]
-- [[TestAuditChainBounded]] - `uses` [INFERRED]
-- [[TestContextGuardInPipeline]] - `uses` [INFERRED]
-- [[TestContextIntegrityInPipeline]] - `uses` [INFERRED]
-- [[TestEnvelopeSignerInPipeline]] - `uses` [INFERRED]
-- [[TestInboundPIIOwnerExemption]] - `uses` [INFERRED]
-- [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
-- [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
-- [[TestPIIBlockModeInPipeline]] - `uses` [INFERRED]
-- [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
-- [[TestTrustViolationRecording]] - `uses` [INFERRED]
-- [[_FakeAttack]] - `uses` [INFERRED]
-- [[_FakeIntegrityScore]] - `uses` [INFERRED]
-- [[prompt_guard.py]] - `contains` [EXTRACTED]
-- [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
+- [[dot-_scan_encoded_payloads()]] - `references` [EXTRACTED]
+- [[dot-_scan_hidden_content()]] - `references` [EXTRACTED]
+- [[dot-_scan_pii()]] - `references` [EXTRACTED]
+- [[dot-_scan_prompt_injection()]] - `references` [EXTRACTED]
+- [[dot-_scan_xml_dtd()]] - `references` [EXTRACTED]
+- [[dot-_scan_zero_width()]] - `references` [EXTRACTED]
+- [[dot-flagged()_2]] - `method` [EXTRACTED]
+- [[dot-scan()_4]] - `calls` [EXTRACTED]
+- [[Result of scanning web content.]] - `rationale_for` [EXTRACTED]
+- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_24
+#graphify/code #graphify/EXTRACTED #community/ScanResult

@@ -1,17 +1,31 @@
 ---
-source_file: "skills/custom/securebrowser/SKILL.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Community 193"
+community: "SecureBrowser Skill"
+location: "L1"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/Community_193
+  - graphify/EXTRACTED
+  - community/SecureBrowser_Skill
 ---
 
-# SecureBrowser SKILL
+# SecureBrowser Skill
 
 ## Connections
-- [[SKILL_204]] - `references` [EXTRACTED]
-- [[browser-fetch.js]] - `semantically_similar_to` [INFERRED]
+- [[CLI Reference]] - `contains` [EXTRACTED]
+- [[Configuration_9]] - `contains` [EXTRACTED]
+- [[Integration_2]] - `contains` [EXTRACTED]
+- [[Key Features_2]] - `contains` [EXTRACTED]
+- [[License_6]] - `contains` [EXTRACTED]
+- [[Limitations_1]] - `contains` [EXTRACTED]
+- [[Overview_7]] - `contains` [EXTRACTED]
+- [[Publishing to ClawHub]] - `contains` [EXTRACTED]
+- [[Quick Start_5]] - `contains` [EXTRACTED]
+- [[Security Guarantees_1]] - `contains` [EXTRACTED]
+- [[Security Model]] - `contains` [EXTRACTED]
+- [[Support_1]] - `contains` [EXTRACTED]
+- [[Troubleshooting_12]] - `contains` [EXTRACTED]
+- [[Usage Examples_1]] - `contains` [EXTRACTED]
+- [[securebrowserREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Community_193
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "Community 1177"
+community: "AgentShroud Operations Runbook"
 location: "L677"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1177
+  - community/AgentShroud_Operations_Runbook
 ---
 
 # SSL/TLS Certificate Issues
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[8. Common Troubleshooting Scenarios]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1177
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Operations_Runbook

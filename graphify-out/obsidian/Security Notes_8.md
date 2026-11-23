@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "v0.8.0 \"Watchtower\" — Security Fixes + Module Wiring (104 items)"
-location: "L58"
+community: "main.py"
+location: "L446"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/v080_Watchtower__Security_Fixes__Module_Wiring_104_items
+  - community/mainpy
 ---
 
 # Security Notes
 
 ## Connections
-- [[ssh_proxy.py_1]] - `contains` [EXTRACTED]
+- [[main.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/v080_Watchtower__Security_Fixes__Module_Wiring_104_items
+#graphify/document #graphify/EXTRACTED #community/mainpy

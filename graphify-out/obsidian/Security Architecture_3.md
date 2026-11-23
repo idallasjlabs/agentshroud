@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-browser.agent.md"
+source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 449"
-location: "L28"
+community: "Browser — Secure Browser Automation"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_449
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Security Architecture
 
 ## Connections
-- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_449
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

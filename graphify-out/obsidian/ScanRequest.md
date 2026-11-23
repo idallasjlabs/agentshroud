@@ -1,23 +1,19 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 43"
-location: "L33"
+community: "soc/router.py"
+location: "L2571"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/soc/routerpy
 ---
 
 # ScanRequest
 
 ## Connections
-- [[.scan()]] - `references` [EXTRACTED]
-- [[Request to scan a message.]] - `rationale_for` [EXTRACTED]
-- [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder_2]] - `uses` [INFERRED]
-- [[sidecar.py]] - `contains` [EXTRACTED]
-- [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
-- [[test_sidecar_scanner()]] - `calls` [EXTRACTED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[run_scanner()]] - `references` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

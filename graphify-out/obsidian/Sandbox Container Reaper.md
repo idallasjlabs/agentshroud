@@ -1,14 +1,14 @@
 ---
 source_file: "docker/config/openclaw/cron/JOBS-REFERENCE.md"
 type: "rationale"
-community: "Community 2456"
+community: "Sandbox Container Reaper"
 location: "L114-L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2456
+  - community/Sandbox_Container_Reaper
 ---
 
 # Sandbox Container Reaper
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2456
+#graphify/rationale #graphify/EXTRACTED #community/Sandbox_Container_Reaper

@@ -1,19 +1,14 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Community 549"
+community: "SecureBrowser._classify_risk"
 location: "browse.py:144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_549
+  - community/SecureBrowser_classify_risk
 ---
 
 # SecureBrowser._classify_risk()
 
-## Connections
-- [[SecureBrowser.click()]] - `calls` [EXTRACTED]
-- [[SecureBrowser.fill_field()]] - `calls` [EXTRACTED]
-- [[SecureBrowser.navigate()]] - `calls` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_549
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_classify_risk

@@ -1,12 +1,12 @@
 ---
-source_file: ".omp/agents/browser.md"
+source_file: ".agents/agents/browser.md"
 type: "document"
-community: "Community 476"
-location: "L299"
+community: "Browser — Secure Browser Automation"
+location: "L300"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_476
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Security Guarantees
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_476
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

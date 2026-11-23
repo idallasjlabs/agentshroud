@@ -1,20 +1,20 @@
 ---
-source_file: ".github/agents/i-mcpm-auth-reset.agent.md"
+source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Community 239"
-location: "L205"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
+location: "L199"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_239
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # Security Best Practices
 
 ## Connections
-- [[AWS Credentials_3]] - `contains` [EXTRACTED]
-- [[Atlassian OAuth_3]] - `contains` [EXTRACTED]
-- [[GitHub PAT_3]] - `contains` [EXTRACTED]
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_3]] - `contains` [EXTRACTED]
+- [[AWS Credentials_2]] - `contains` [EXTRACTED]
+- [[Atlassian OAuth_2]] - `contains` [EXTRACTED]
+- [[GitHub PAT_2]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_239
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

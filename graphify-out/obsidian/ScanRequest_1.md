@@ -1,26 +1,21 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "Community 890"
-location: "L2571"
+community: "test_e2e_proxy.py"
+location: "L33"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_890
+  - graphify/EXTRACTED
+  - community/test_e2e_proxypy
 ---
 
 # ScanRequest
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult]] - `uses` [INFERRED]
-- [[BaseModel]] - `inherits` [EXTRACTED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
-- [[router.py_1]] - `contains` [EXTRACTED]
-- [[run_scanner()]] - `references` [EXTRACTED]
+- [[dot-scan()_2]] - `references` [EXTRACTED]
+- [[Request to scan a message.]] - `rationale_for` [EXTRACTED]
+- [[sidecar.py_2]] - `contains` [EXTRACTED]
+- [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
+- [[test_sidecar_scanner()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_890
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

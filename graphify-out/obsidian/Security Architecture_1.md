@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/browser/SKILL.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Community 450"
-location: "L23"
+community: "SecureBrowser - Enterprise Secure Browser Automation"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_450
+  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
 ---
 
 # Security Architecture
 
 ## Connections
-- [[Browser — Secure Browser Automation_2]] - `contains` [EXTRACTED]
+- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_450
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation

@@ -1,17 +1,13 @@
 ---
 source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "hermes/workspace/jira_dev_ticket.py"
+community: "SecureBrowser SKILL"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/workspace/jira_dev_ticketpy
+  - community/SecureBrowser_SKILL
 ---
 
 # SecureBrowser SKILL
 
-## Connections
-- [[browser-fetch.js_2]] - `semantically_similar_to` [INFERRED]
-- [[securebrowserSKILL]] - `references` [EXTRACTED]
-
-#graphify/document #graphify/EXTRACTED #community/hermes/workspace/jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_SKILL

@@ -1,48 +1,30 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "Community 924"
+community: "ScanResult"
 location: "L107"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_924
+  - graphify/EXTRACTED
+  - community/ScanResult
 ---
 
 # ScanResult
 
 ## Connections
-- [[._scan_opaque_blobs()]] - `references` [EXTRACTED]
-- [[.blocked()]] - `method` [EXTRACTED]
-- [[.extend()]] - `method` [EXTRACTED]
-- [[.recommendation()]] - `method` [EXTRACTED]
-- [[.scan_file()_1]] - `references` [EXTRACTED]
-- [[.scan_skill_tree()]] - `references` [EXTRACTED]
-- [[.severity()]] - `method` [EXTRACTED]
+- [[dot-_scan_opaque_blobs()]] - `references` [EXTRACTED]
+- [[dot-blocked()]] - `method` [EXTRACTED]
+- [[dot-extend()]] - `method` [EXTRACTED]
+- [[dot-recommendation()]] - `method` [EXTRACTED]
+- [[dot-scan_file()_1]] - `calls` [EXTRACTED]
+- [[dot-scan_skill_tree()]] - `calls` [EXTRACTED]
+- [[dot-severity()]] - `method` [EXTRACTED]
 - [[Aggregated result of scanning a skill file or an entire skill tree.]] - `rationale_for` [EXTRACTED]
-- [[CompletedProcess_5]] - `uses` [INFERRED]
-- [[Path_24]] - `uses` [INFERRED]
-- [[Path_42]] - `uses` [INFERRED]
-- [[ScanResult_3]] - `uses` [INFERRED]
-- [[ScanResult_4]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
 - [[TestAggregation]] - `uses` [INFERRED]
-- [[TestCleanSkill]] - `uses` [INFERRED]
-- [[TestClient]] - `uses` [INFERRED]
-- [[TestExecOfDownload]] - `uses` [INFERRED]
-- [[TestExfiltration]] - `uses` [INFERRED]
-- [[TestKnownMalicious]] - `uses` [INFERRED]
-- [[TestObfuscation]] - `uses` [INFERRED]
-- [[TestOversizedUnscannable]] - `uses` [INFERRED]
-- [[TestPathTraversal]] - `uses` [INFERRED]
-- [[TestPrivilegeEscalation_1]] - `uses` [INFERRED]
-- [[TestReloadIntegration]] - `uses` [INFERRED]
-- [[TestScanEntrypoint]] - `uses` [INFERRED]
-- [[TestScanEntrypointInProcess]] - `uses` [INFERRED]
-- [[TestSecretAccess]] - `uses` [INFERRED]
-- [[TestSyncScriptPreflight]] - `uses` [INFERRED]
+- [[_finding_categories()]] - `uses` [INFERRED]
+- [[_print_findings()]] - `uses` [INFERRED]
 - [[scan.py]] - `imports` [EXTRACTED]
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_924
+#graphify/code #graphify/EXTRACTED #community/ScanResult

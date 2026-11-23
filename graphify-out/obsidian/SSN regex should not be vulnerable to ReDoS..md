@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Community 0"
+community: "PIIConfig"
 location: "L299"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/PIIConfig
 ---
 
 # SSN regex should not be vulnerable to ReDoS.
 
 ## Connections
-- [[.test_regex_redos_ssn()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_regex_redos_ssn()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

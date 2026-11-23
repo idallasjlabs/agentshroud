@@ -1,11 +1,11 @@
 ---
 source_file: "docs/ssh-capability.md"
 type: "document"
-community: "Community 703"
+community: "SSH Capability Architecture Document"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_703
+  - community/SSH_Capability_Architecture_Document
 ---
 
 # SSH Capability Architecture Document
@@ -13,9 +13,10 @@ tags:
 ## Connections
 - [[Architecture_11]] - `contains` [EXTRACTED]
 - [[Components_1]] - `contains` [EXTRACTED]
-- [[Overview_23]] - `contains` [EXTRACTED]
+- [[Overview_27]] - `contains` [EXTRACTED]
 - [[Request Flow]] - `contains` [EXTRACTED]
+- [[SSH Capability — Architecture Document]] - `contains` [EXTRACTED]
 - [[SSHProxy Controlled Remote Command Execution via Gateway API]] - `references` [EXTRACTED]
 - [[Security Layers]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_703
+#graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document

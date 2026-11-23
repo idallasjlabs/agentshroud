@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "Community 1823"
+community: "SSH Exec Endpoint Tests (allowlist, deny, injection)"
 location: "line 103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1823
+  - community/SSH_Exec_Endpoint_Tests_allowlist_deny_injection
 ---
 
 # SSH Exec Endpoint Tests (allowlist, deny, injection)
 
-#graphify/code #graphify/EXTRACTED #community/Community_1823
+#graphify/code #graphify/EXTRACTED #community/SSH_Exec_Endpoint_Tests_allowlist_deny_injection
