@@ -1,18 +1,20 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 516"
+community: "fs"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_516
+  - community/fs
 ---
 
 # fs()
 
 ## Connections
-- [[Redirect every Path(...) constructed inside the module into a sandbox.      Abso]] - `rationale_for` [EXTRACTED]
+- [[Redirect every Path(...) constructed inside the module into a sandbox. Absolute…]] - `rationale_for` [EXTRACTED]
+- [[fake_path()]] - `indirect_call` [INFERRED]
+- [[fixture_42]] - `references` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_516
+#graphify/code #graphify/EXTRACTED #community/fs

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/falco-rules.md"
 type: "document"
-community: "Community 532"
+community: "falco-rules.yaml"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_532
+  - community/falco-rulesyaml
 ---
 
 # falco-rules.yaml
@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[Integration]] - `contains` [EXTRACTED]
 - [[Network Enforcement]] - `contains` [EXTRACTED]
-- [[Priority Levels_1]] - `contains` [EXTRACTED]
-- [[Purpose_178]] - `contains` [EXTRACTED]
-- [[Related Notes_22]] - `contains` [EXTRACTED]
+- [[Priority Levels]] - `contains` [EXTRACTED]
+- [[Purpose_71]] - `contains` [EXTRACTED]
+- [[Related Notes_34]] - `contains` [EXTRACTED]
 - [[Rules Defined]] - `contains` [EXTRACTED]
 - [[Shell Spawning Exceptions]] - `contains` [EXTRACTED]
 - [[falco-rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_532
+#graphify/document #graphify/EXTRACTED #community/falco-rulesyaml

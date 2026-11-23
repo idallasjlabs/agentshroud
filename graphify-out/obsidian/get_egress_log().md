@@ -1,22 +1,25 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 51"
+community: "soc/router.py"
 location: "L363"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_51
+  - community/soc/routerpy
 ---
 
 # get_egress_log()
 
 ## Connections
-- [[.test_filters_egress_log_by_bot_id()]] - `calls` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[dot-test_filters_egress_log_by_bot_id()]] - `calls` [EXTRACTED]
+- [[Action]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[collect_recent_events()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[get]] - `references` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_51
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "Community 240"
+community: "gateway/runtime/docker_engine.py (DockerEngine)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_240
+  - community/gateway/runtime/docker_enginepy_DockerEngine
 ---
 
 # gateway/runtime/docker_engine.py (DockerEngine)
 
-## Connections
-- [[test_runtime_engines.py]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_240
+#graphify/code #graphify/EXTRACTED #community/gateway/runtime/docker_enginepy_DockerEngine

@@ -1,26 +1,21 @@
 ---
-source_file: "gateway/security/trivy_report.py"
+source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "Community 131"
-location: "L188"
+community: "test_clamav_pipeline.py"
+location: "L259"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_131
+  - community/test_clamav_pipelinepy
 ---
 
 # generate_summary()
 
 ## Connections
-- [[Any_70]] - `references` [EXTRACTED]
-- [[Generate a summary dict suitable for the health report.      Args         alert_1]] - `rationale_for` [EXTRACTED]
-- [[Generate a summary dict suitable for the health report.      Args         repor_1]] - `rationale_for` [EXTRACTED]
-- [[daily_cve_report.py]] - `imports` [EXTRACTED]
-- [[format_cve_report()]] - `calls` [EXTRACTED]
-- [[run_and_send_cve_report()]] - `calls` [EXTRACTED]
-- [[run_trivy_scan()_1]] - `shares_data_with` [EXTRACTED]
+- [[Any_28]] - `references` [EXTRACTED]
+- [[Generate a summary dict suitable for the health report. Args report Parsed…_1]] - `rationale_for` [EXTRACTED]
+- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
 - [[scanner_integration.py]] - `imports` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
-- [[trivy_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_131
+#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy

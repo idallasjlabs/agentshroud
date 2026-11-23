@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
 type: "code"
-community: "Community 382"
+community: "gen.py"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_382
+  - community/genpy
 ---
 
 # get_model_defaults()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Return (default_size, default_quality) for the given model.]] - `rationale_for` [EXTRACTED]
 - [[gen.py]] - `contains` [EXTRACTED]
-- [[main()_34]] - `calls` [EXTRACTED]
+- [[main()_20]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_382
+#graphify/code #graphify/EXTRACTED #community/genpy

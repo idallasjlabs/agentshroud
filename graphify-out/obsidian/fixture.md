@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "fixture (2)"
+community: "test_mfa_guard.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/fixture_2
+  - community/test_mfa_guardpy
 ---
 
 # fixture
 
 ## Connections
-- [[dot-registry()]] - `references` [EXTRACTED]
+- [[enhanced_mfa_queue()]] - `references` [EXTRACTED]
+- [[now()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/fixture_2
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

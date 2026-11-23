@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_voice_gateway.py"
-location: "L416"
+community: "fake_urlopen"
+location: "L5569"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/test_voice_gatewaypy
+  - graphify/EXTRACTED
+  - community/fake_urlopen
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[_make_fake_urlopen()]] - `indirect_call` [INFERRED]
+- [[dot-test_self_diagnose_dedupe_handles_missing_update_id_different_messages()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/fake_urlopen

@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/runtime/config.py"
 type: "code"
-community: "Community 240"
+community: "gateway/runtime/config.py (RuntimeConfig)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_240
+  - community/gateway/runtime/configpy_RuntimeConfig
 ---
 
 # gateway/runtime/config.py (RuntimeConfig)
 
-## Connections
-- [[test_runtime_engines.py]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_240
+#graphify/code #graphify/EXTRACTED #community/gateway/runtime/configpy_RuntimeConfig

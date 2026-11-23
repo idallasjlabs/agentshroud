@@ -1,27 +1,26 @@
 ---
 source_file: "gateway/runtime/compose_generator.py"
 type: "code"
-community: "Community 240"
+community: "test_runtime_engines.py"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_240
+  - community/test_runtime_enginespy
 ---
 
 # generate_compose()
 
 ## Connections
-- [[.test_compose_depends_on()]] - `calls` [EXTRACTED]
-- [[.test_compose_has_security_opts()]] - `calls` [EXTRACTED]
-- [[.test_compose_healthcheck()]] - `calls` [EXTRACTED]
-- [[.test_generate_custom_services()]] - `calls` [EXTRACTED]
-- [[.test_generate_docker_compose()]] - `calls` [EXTRACTED]
-- [[.test_generate_podman_compose()]] - `calls` [EXTRACTED]
-- [[Generate a compose YAML file for Docker or Podman.      Args         services]] - `rationale_for` [EXTRACTED]
+- [[dot-test_compose_depends_on()]] - `calls` [EXTRACTED]
+- [[dot-test_compose_has_security_opts()]] - `calls` [EXTRACTED]
+- [[dot-test_compose_healthcheck()]] - `calls` [EXTRACTED]
+- [[dot-test_generate_custom_services()]] - `calls` [EXTRACTED]
+- [[dot-test_generate_docker_compose()]] - `calls` [EXTRACTED]
+- [[dot-test_generate_podman_compose()]] - `calls` [EXTRACTED]
+- [[Generate a compose YAML file for Docker or Podman. Args services List of…]] - `rationale_for` [EXTRACTED]
 - [[ServiceDef]] - `references` [EXTRACTED]
-- [[compose_generator.py]] - `contains` [EXTRACTED]
-- [[get_security_options()]] - `shares_data_with` [INFERRED]
+- [[compose_generator.py_2]] - `contains` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_240
+#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy

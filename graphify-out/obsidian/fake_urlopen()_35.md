@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TestInboundPipelineOnGetUpdates"
-location: "L757"
+community: ".test_collaborator_direct_file_query_returns_protect_file_notice"
+location: "L2461"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInboundPipelineOnGetUpdates
+  - community/test_collaborator_direct_file_query_returns_protect_file_notice
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_owner_revoke_command_cannot_revoke_owner()]] - `contains` [EXTRACTED]
+- [[dot-test_collaborator_direct_file_query_returns_protect_file_notice()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_direct_file_query_returns_protect_file_notice

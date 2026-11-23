@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_healthcheck_with_mention_and_punctuation_is_handled_locally()"
-location: "L4793"
+community: "fake_urlopen"
+location: "L2248"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_healthcheck_with_mention_and_punctuation_is_handled_locally
+  - community/fake_urlopen
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_healthcheck_with_mention_and_punctuation_is_handled_locally()]] - `contains` [EXTRACTED]
+- [[dot-test_collaborator_identity_enumeration_query_gets_privacy_safe_info()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_healthcheck_with_mention_and_punctuation_is_handled_locally
+#graphify/code #graphify/EXTRACTED #community/fake_urlopen

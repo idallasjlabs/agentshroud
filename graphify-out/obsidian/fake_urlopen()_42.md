@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TestInboundPipelineOnGetUpdates"
-location: "L4716"
+community: ".test_collaborator_web_access_imperative_with_url_queues_owner_approval"
+location: "L2040"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInboundPipelineOnGetUpdates
+  - community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_plain_model_question_is_handled_locally()]] - `contains` [EXTRACTED]
+- [[dot-test_collaborator_web_access_policy_question_gets_safe_info_not_blocked()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_web_access_imperative_with_url_queues_owner_approval

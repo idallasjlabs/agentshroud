@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_clamav_pipeline.py"
+source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "asyncio"
-location: "L310"
+community: "main"
+location: "L212"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/asyncio
+  - community/main
 ---
 
 # fake_run()
 
 ## Connections
-- [[_run_capture()]] - `indirect_call` [INFERRED]
+- [[dot-test_ssh_runner_uses_subprocess()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/asyncio
+#graphify/code #graphify/INFERRED #community/main

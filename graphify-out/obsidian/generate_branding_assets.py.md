@@ -1,17 +1,18 @@
 ---
 source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "Community 446"
+community: "generate_branding_assets.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_446
+  - community/generate_branding_assetspy
 ---
 
 # generate_branding_assets.py
 
 ## Connections
+- [[AgentShroud Branding Asset Generator =====================================…]] - `rationale_for` [EXTRACTED]
 - [[ensure()]] - `contains` [EXTRACTED]
 - [[generate_email()]] - `contains` [EXTRACTED]
 - [[generate_favicons()]] - `contains` [EXTRACTED]
@@ -24,6 +25,6 @@ tags:
 - [[get_font()]] - `contains` [EXTRACTED]
 - [[icon_on_canvas()]] - `contains` [EXTRACTED]
 - [[main()_25]] - `contains` [EXTRACTED]
-- [[save()_1]] - `contains` [EXTRACTED]
+- [[save()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_446
+#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy

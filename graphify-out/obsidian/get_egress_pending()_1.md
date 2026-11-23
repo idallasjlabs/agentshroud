@@ -1,22 +1,22 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/cli/main.py"
 type: "code"
-community: "Community 51"
-location: "L316"
+community: "cli/main.py"
+location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_51
+  - community/cli/mainpy
 ---
 
 # get_egress_pending()
 
 ## Connections
-- [[.test_filters_pending_by_bot_id()]] - `calls` [EXTRACTED]
-- [[.test_no_bot_id_returns_all_pending()]] - `calls` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
-- [[_app_state()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
-- [[test_soc_bots.py]] - `imports` [EXTRACTED]
+- [[SCLClient]] - `uses` [INFERRED]
+- [[Show pending egress approval requests.]] - `rationale_for` [EXTRACTED]
+- [[_output()]] - `calls` [EXTRACTED]
+- [[climain.py]] - `contains` [EXTRACTED]
+- [[command_9]] - `references` [EXTRACTED]
+- [[pass_context]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_51
+#graphify/code #graphify/EXTRACTED #community/cli/mainpy

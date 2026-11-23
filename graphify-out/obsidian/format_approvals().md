@@ -1,22 +1,22 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "Community 39"
+community: "main.rs"
 location: "L394"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/mainrs
 ---
 
 # format_approvals()
 
 ## Connections
 - [[String]] - `references` [EXTRACTED]
-- [[Value]] - `references` [EXTRACTED]
+- [[Value_5]] - `references` [EXTRACTED]
 - [[format_approvals_single_object()]] - `calls` [EXTRACTED]
 - [[json_str()]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[run_approvals_list()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_39
+#graphify/code #graphify/EXTRACTED #community/mainrs

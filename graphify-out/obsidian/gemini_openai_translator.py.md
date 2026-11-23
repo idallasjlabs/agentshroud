@@ -1,24 +1,27 @@
 ---
 source_file: "gateway/proxy/gemini_openai_translator.py"
 type: "code"
-community: "Community 361"
+community: "test_gemini_openai_translator.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_361
+  - community/test_gemini_openai_translatorpy
 ---
 
 # gemini_openai_translator.py
 
 ## Connections
+- [[Google Gemini generateContent API ↔ Ollama OpenAI-compat translator. Pure…]] - `rationale_for` [EXTRACTED]
 - [[_openai_content_to_parts()]] - `contains` [EXTRACTED]
 - [[_parts_to_text()]] - `contains` [EXTRACTED]
 - [[_system_instruction_text()]] - `contains` [EXTRACTED]
 - [[gemini_failover_unsupported_reason()]] - `contains` [EXTRACTED]
 - [[gemini_to_openai_request()]] - `contains` [EXTRACTED]
 - [[gemini_to_openai_response()]] - `contains` [EXTRACTED]
+- [[llm_proxy.py]] - `imports_from` [EXTRACTED]
 - [[openai_to_gemini_request()]] - `contains` [EXTRACTED]
 - [[openai_to_gemini_response()]] - `contains` [EXTRACTED]
+- [[test_gemini_openai_translator.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_361
+#graphify/code #graphify/EXTRACTED #community/test_gemini_openai_translatorpy

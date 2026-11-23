@@ -1,18 +1,20 @@
 ---
-source_file: ".cursor/mcp.json"
+source_file: "opencode.json"
 type: "code"
-community: "Community 397"
-location: "L1"
+community: "mcp"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_397
+  - community/mcp
 ---
 
 # github-agentshroud
 
 ## Connections
-- [[.llm_settingsmcp-serversgithubagentshroudgithub-mcp-wrapper.sh]] - `references` [EXTRACTED]
-- [[mcp.json]] - `contains` [EXTRACTED]
+- [[command_3]] - `contains` [EXTRACTED]
+- [[enabled_4]] - `contains` [EXTRACTED]
+- [[mcp]] - `contains` [EXTRACTED]
+- [[type_21]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_397
+#graphify/code #graphify/EXTRACTED #community/mcp

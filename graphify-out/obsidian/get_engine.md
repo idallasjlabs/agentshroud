@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/runtime/__init__.py"
 type: "code"
-community: "Community 203"
+community: "get_engine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_203
+  - community/get_engine
 ---
 
 # get_engine
 
-## Connections
-- [[AppleContainerEngine]] - `calls` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_203
+#graphify/code #graphify/EXTRACTED #community/get_engine

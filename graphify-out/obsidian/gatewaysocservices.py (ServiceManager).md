@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Community 20"
+community: "gateway/soc/services.py (ServiceManager)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_20
+  - community/gateway/soc/servicespy_ServiceManager
 ---
 
 # gateway/soc/services.py (ServiceManager)
 
-## Connections
-- [[test_soc_services_coverage.py]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_20
+#graphify/code #graphify/EXTRACTED #community/gateway/soc/servicespy_ServiceManager

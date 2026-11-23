@@ -1,17 +1,17 @@
 ---
-source_file: "tests/startup_smoke/test_apply_patches.js"
+source_file: "skills/custom/browser-fetch/browser-fetch.js"
 type: "code"
-community: "Community 994"
-location: "L24"
+community: "browser-fetch.js"
+location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_994
+  - community/browser-fetchjs
 ---
 
 # fs
 
 ## Connections
-- [[test_apply_patches.js]] - `contains` [EXTRACTED]
+- [[browser-fetch.js_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_994
+#graphify/code #graphify/EXTRACTED #community/browser-fetchjs

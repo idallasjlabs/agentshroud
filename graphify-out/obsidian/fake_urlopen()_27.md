@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TestInboundPipelineOnGetUpdates"
-location: "L4965"
+community: "asyncio"
+location: "L4716"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInboundPipelineOnGetUpdates
+  - community/asyncio
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_healthcheck_with_fullwidth_mention_and_punctuation_is_handled_locally()]] - `contains` [EXTRACTED]
+- [[dot-test_plain_model_question_is_handled_locally()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates
+#graphify/code #graphify/EXTRACTED #community/asyncio

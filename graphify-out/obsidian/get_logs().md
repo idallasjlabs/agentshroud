@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "Community 87"
-location: "L196"
+community: "test_soc_router_coverage.py"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_87
+  - community/test_soc_router_coveragepy
 ---
 
 # get_logs()
 
 ## Connections
-- [[Get container logs for a service.]] - `rationale_for` [EXTRACTED]
-- [[get()]] - `calls` [EXTRACTED]
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[_make_service_manager()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_87
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

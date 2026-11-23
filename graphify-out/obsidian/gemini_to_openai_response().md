@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/gemini_openai_translator.py"
 type: "code"
-community: "Community 361"
+community: "test_gemini_openai_translator.py"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_361
+  - community/test_gemini_openai_translatorpy
 ---
 
 # gemini_to_openai_response()
 
 ## Connections
-- [[.proxy_messages()]] - `calls` [EXTRACTED]
-- [[Translate a Gemini generateContent response to OpenAI chatcompletions     shape]] - `rationale_for` [EXTRACTED]
+- [[dot-proxy_messages()]] - `calls` [EXTRACTED]
+- [[Translate a Gemini generateContent response to OpenAI chatcompletions shape.…]] - `rationale_for` [EXTRACTED]
 - [[_parts_to_text()]] - `calls` [EXTRACTED]
 - [[gemini_openai_translator.py]] - `contains` [EXTRACTED]
 - [[llm_proxy.py]] - `imports` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[test_gemini_to_openai_response_max_tokens_finish_reason()]] - `calls` [EXTRACTED]
 - [[test_gemini_to_openai_roundtrip_with_openai_to_gemini_response()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_361
+#graphify/code #graphify/EXTRACTED #community/test_gemini_openai_translatorpy

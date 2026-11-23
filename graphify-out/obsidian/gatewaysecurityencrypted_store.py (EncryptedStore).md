@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "Community 0"
+community: "gateway/security/encrypted_store.py (EncryptedStore)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/gateway/security/encrypted_storepy_EncryptedStore
 ---
 
 # gateway/security/encrypted_store.py (EncryptedStore)
 
-## Connections
-- [[test_security_audit.py]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_0
+#graphify/code #graphify/EXTRACTED #community/gateway/security/encrypted_storepy_EncryptedStore

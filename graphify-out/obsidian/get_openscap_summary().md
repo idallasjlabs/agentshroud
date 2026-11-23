@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Community 363"
+community: "Any"
 location: "L777"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_363
+  - community/Any
 ---
 
 # get_openscap_summary()
 
 ## Connections
-- [[.test_clean_report()]] - `calls` [EXTRACTED]
-- [[.test_critical_on_critical_findings()]] - `calls` [EXTRACTED]
-- [[.test_not_run_when_no_report()_1]] - `calls` [EXTRACTED]
-- [[.test_warning_on_failures()]] - `calls` [EXTRACTED]
-- [[Any_64]] - `references` [EXTRACTED]
+- [[dot-test_clean_report()]] - `calls` [EXTRACTED]
+- [[dot-test_critical_on_critical_findings()]] - `calls` [EXTRACTED]
+- [[dot-test_not_run_when_no_report()_1]] - `calls` [EXTRACTED]
+- [[dot-test_warning_on_failures()]] - `calls` [EXTRACTED]
+- [[Any_65]] - `references` [EXTRACTED]
 - [[Return latest OpenSCAP compliance summary from saved reports.]] - `rationale_for` [EXTRACTED]
 - [[_load_latest_json()]] - `calls` [EXTRACTED]
 - [[aggregate_results()]] - `calls` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_363
+#graphify/code #graphify/EXTRACTED #community/Any

@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "Community 19"
+community: "gateway/soc/auth.py (get_caller)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_19
+  - community/gateway/soc/authpy_get_caller
 ---
 
 # gateway/soc/auth.py (get_caller)
 
-## Connections
-- [[test_soc_router_coverage.py]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_19
+#graphify/code #graphify/EXTRACTED #community/gateway/soc/authpy_get_caller

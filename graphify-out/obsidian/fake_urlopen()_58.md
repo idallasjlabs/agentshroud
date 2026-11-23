@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_healthcheck_word_with_punctuation_is_handled_locally()"
-location: "L4861"
+community: "fake_urlopen"
+location: "L2987"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_healthcheck_word_with_punctuation_is_handled_locally
+  - community/fake_urlopen
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_healthcheck_word_with_punctuation_is_handled_locally()]] - `contains` [EXTRACTED]
+- [[dot-test_collaborator_mixed_file_purpose_plus_show_question_gets_safe_info()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_healthcheck_word_with_punctuation_is_handled_locally
+#graphify/code #graphify/EXTRACTED #community/fake_urlopen

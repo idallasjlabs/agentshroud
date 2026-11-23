@@ -1,17 +1,13 @@
 ---
 source_file: "gateway/skills/scan.py"
 type: "code"
-community: "Community 710"
+community: "gateway/skills/scan.py (scan CLI)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_710
+  - community/gateway/skills/scanpy_scan_CLI
 ---
 
 # gateway/skills/scan.py (scan CLI)
 
-## Connections
-- [[sync-llm-settings.sh]] - `calls` [EXTRACTED]
-- [[test_skill_guard.py]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_710
+#graphify/code #graphify/EXTRACTED #community/gateway/skills/scanpy_scan_CLI

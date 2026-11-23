@@ -1,18 +1,17 @@
 ---
 source_file: "skills/openclaw/gemini/SKILL.md"
 type: "document"
-community: "Prompt: Hermes Competitive Intelligence Email (AM/PM)"
+community: "gemini/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM
+  - community/gemini/SKILLmd
 ---
 
 # gemini/SKILL.md
 
 ## Connections
 - [[Gemini CLI]] - `contains` [EXTRACTED]
-- [[coding-agentSKILL]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM
+#graphify/document #graphify/EXTRACTED #community/gemini/SKILLmd

@@ -1,27 +1,18 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "Community 87"
+community: "cli/main.py"
 location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_87
+  - community/cli/mainpy
 ---
 
 # get()
 
 ## Connections
-- [[_edge_result()]] - `calls` [EXTRACTED]
-- [[_print_table()]] - `calls` [EXTRACTED]
-- [[_tail_ws()]] - `calls` [EXTRACTED]
-- [[cli()]] - `calls` [EXTRACTED]
-- [[edge_status()]] - `calls` [EXTRACTED]
-- [[freeze()]] - `calls` [EXTRACTED]
-- [[get_logs()]] - `calls` [EXTRACTED]
-- [[main.py_1]] - `contains` [EXTRACTED]
-- [[restart_service()]] - `calls` [EXTRACTED]
-- [[stop_service()]] - `calls` [EXTRACTED]
-- [[tail()]] - `calls` [EXTRACTED]
+- [[climain.py]] - `contains` [EXTRACTED]
+- [[group_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_87
+#graphify/code #graphify/EXTRACTED #community/cli/mainpy

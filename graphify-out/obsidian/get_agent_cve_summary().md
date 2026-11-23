@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "Community 42"
+community: "test_agent_cve_registry.py"
 location: "L18900"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_42
+  - community/test_agent_cve_registrypy
 ---
 
 # get_agent_cve_summary()
 
 ## Connections
-- [[Any_40]] - `references` [EXTRACTED]
-- [[Return a summary of the advisory registry for the specified agent.      Counts a]] - `rationale_for` [EXTRACTED]
+- [[Any_57]] - `references` [EXTRACTED]
+- [[Return a summary of the advisory registry for the specified agent. Counts are…]] - `rationale_for` [EXTRACTED]
 - [[_resolve_registries()]] - `calls` [EXTRACTED]
 - [[agent_cve_registry.py]] - `contains` [EXTRACTED]
 - [[generate-cve-page.py]] - `imports` [EXTRACTED]
 - [[get_agent_cves()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `imports` [EXTRACTED]
+- [[socrouter.py]] - `imports` [EXTRACTED]
 - [[test_agent_cve_registry.py]] - `imports` [EXTRACTED]
 - [[test_default_summary_equals_openclaw_summary()]] - `calls` [EXTRACTED]
 - [[test_default_summary_wrapped_agent_openclaw()]] - `calls` [EXTRACTED]
@@ -40,4 +40,4 @@ tags:
 - [[test_openclaw_summary_keys()]] - `calls` [EXTRACTED]
 - [[test_unknown_bot_id_raises_key_error()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_42
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy

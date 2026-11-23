@@ -1,20 +1,20 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "Community 74"
+community: "sync-cve-registry.py"
 location: "L363"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_74
+  - community/sync-cve-registrypy
 ---
 
 # fetch_ghsa_advisories()
 
 ## Connections
-- [[Any_86]] - `references` [EXTRACTED]
-- [[Fetch every published GitHub Security Advisory for repo (cursor-paginated)._1]] - `rationale_for` [EXTRACTED]
+- [[Any_81]] - `references` [EXTRACTED]
+- [[Fetch every published GitHub Security Advisory for repo (cursor-paginated).…_1]] - `rationale_for` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 - [[sync_agent_ghsa()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_74
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

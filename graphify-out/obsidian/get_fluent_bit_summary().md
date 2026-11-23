@@ -1,22 +1,21 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Community 29"
+community: "Any"
 location: "L835"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_29
+  - community/Any
 ---
 
 # get_fluent_bit_summary()
 
 ## Connections
-- [[Any_64]] - `references` [EXTRACTED]
-- [[Path_19]] - `calls` [EXTRACTED]
-- [[Return Fluent Bit log collector status.      Fluent Bit is a log shipper, not a]] - `rationale_for` [EXTRACTED]
+- [[Any_65]] - `references` [EXTRACTED]
+- [[Return Fluent Bit log collector status. Fluent Bit is a log shipper, not a…]] - `rationale_for` [EXTRACTED]
 - [[_is_fluent_bit_running()]] - `calls` [EXTRACTED]
 - [[aggregate_results()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_29
+#graphify/code #graphify/EXTRACTED #community/Any

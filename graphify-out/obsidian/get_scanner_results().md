@@ -1,24 +1,27 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 51"
+community: "soc/router.py"
 location: "L2624"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_51
+  - community/soc/routerpy
 ---
 
 # get_scanner_results()
 
 ## Connections
-- [[.test_bot_id_augments_result_with_image_scan()]] - `calls` [EXTRACTED]
-- [[.test_no_bot_id_omits_bot_keys()]] - `calls` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
-- [[Unified scanner aggregation Trivy, Falco, ClamAV, Wazuh, OpenSCAP.      Returns]] - `rationale_for` [EXTRACTED]
+- [[dot-test_bot_id_augments_result_with_image_scan()]] - `calls` [EXTRACTED]
+- [[dot-test_no_bot_id_omits_bot_keys()]] - `calls` [EXTRACTED]
+- [[Action]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
+- [[Unified scanner aggregation Trivy, Falco, ClamAV, Wazuh, OpenSCAP. Returns…]] - `rationale_for` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[aggregate_results()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[get]] - `references` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_51
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

@@ -1,21 +1,22 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/cli/main.py"
 type: "code"
-community: "Community 10"
-location: "L1779"
+community: "cli/main.py"
+location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_10
+  - community/cli/mainpy
 ---
 
 # get_health()
 
 ## Connections
-- [[SCLCaller_1]] - `references` [EXTRACTED]
-- [[ServiceManager]] - `calls` [EXTRACTED]
-- [[_app_state()]] - `calls` [EXTRACTED]
-- [[list_services()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[Aggregate health report.]] - `rationale_for` [EXTRACTED]
+- [[SCLClient]] - `uses` [INFERRED]
+- [[_output()]] - `calls` [EXTRACTED]
+- [[climain.py]] - `contains` [EXTRACTED]
+- [[command_9]] - `references` [EXTRACTED]
+- [[pass_context]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_10
+#graphify/code #graphify/EXTRACTED #community/cli/mainpy

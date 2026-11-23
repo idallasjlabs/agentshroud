@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/generate-cve-page.py"
 type: "code"
-community: "Community 399"
+community: "generate-cve-page.py"
 location: "L394"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_399
+  - community/generate-cve-pagepy
 ---
 
 # generate()
 
 ## Connections
-- [[Regenerate all CVE sections in docsindex.html.  Returns True if changed.]] - `rationale_for` [EXTRACTED]
+- [[Regenerate all CVE sections in docsindex.html. Returns True if changed.]] - `rationale_for` [EXTRACTED]
 - [[_agent_display_name()]] - `calls` [EXTRACTED]
 - [[_build_heading()]] - `calls` [EXTRACTED]
 - [[_build_table()]] - `calls` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[_resolve_registries()]] - `calls` [EXTRACTED]
 - [[generate-cve-page.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_399
+#graphify/code #graphify/EXTRACTED #community/generate-cve-pagepy

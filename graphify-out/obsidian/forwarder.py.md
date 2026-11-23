@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
-type: "code"
-community: "Community 43"
+source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
+type: "document"
+community: "forwarder.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/forwarderpy
 ---
 
-# forwarder.py
+# forwarder.py.md
 
 ## Connections
-- [[ForwardResult]] - `contains` [EXTRACTED]
-- [[ForwarderConfig]] - `contains` [EXTRACTED]
-- [[HTTPForwarder]] - `contains` [EXTRACTED]
+- [[forwarder.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/document #graphify/EXTRACTED #community/forwarderpy

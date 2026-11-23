@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/runtime/security.py"
 type: "code"
-community: "Community 240"
+community: "gateway/runtime/security.py (get_features_for_runtime)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_240
+  - community/gateway/runtime/securitypy_get_features_for_runtime
 ---
 
 # gateway/runtime/security.py (get_features_for_runtime)
 
-## Connections
-- [[test_runtime_engines.py]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_240
+#graphify/code #graphify/EXTRACTED #community/gateway/runtime/securitypy_get_features_for_runtime
