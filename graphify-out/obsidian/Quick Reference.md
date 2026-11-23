@@ -1,17 +1,24 @@
 ---
-source_file: ".agents/agents/i-mcpm-aws-profile.md"
+source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "Community 171"
-location: "L322"
+community: "Architecture Overview.md"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_171
+  - community/Architecture_Overviewmd
 ---
 
-# Quick Reference
+# Quick Reference.md
 
 ## Connections
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
+- [[Error Index]] - `references` [EXTRACTED]
+- [[First Time Setup_1]] - `references` [EXTRACTED]
+- [[Health Checks]] - `references` [EXTRACTED]
+- [[Home]] - `references` [EXTRACTED]
+- [[Kill Switch Procedure_1]] - `references` [EXTRACTED]
+- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
+- [[Restart Procedure]] - `references` [EXTRACTED]
+- [[Troubleshooting Matrix]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_171
+#graphify/document #graphify/EXTRACTED #community/Architecture_Overviewmd

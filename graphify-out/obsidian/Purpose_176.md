@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
+source_file: ".agents/skills/i-ti/README.md"
 type: "document"
-community: "Community 73"
-location: "L16"
+community: "Technical Illustrator (i-ti)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_73
+  - community/Technical_Illustrator_i-ti
 ---
 
 # Purpose
 
 ## Connections
-- [[agentshroud.yaml_1]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_73
+#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_i-ti

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mc/README.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
 type: "document"
-community: "Community 90"
-location: "L6"
+community: "mcp_config.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/mcp_configpy
 ---
 
 # Purpose
 
 ## Connections
-- [[GSDE&G Development Master Checklist (MC)_1]] - `contains` [EXTRACTED]
+- [[mcp_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/mcp_configpy

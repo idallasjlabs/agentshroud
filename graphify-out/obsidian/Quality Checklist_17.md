@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/vulcan/SKILL.md"
+source_file: ".agents/skills/daedalus/SKILL.md"
 type: "document"
-community: "Community 1974"
-location: "L127"
+community: "Daedalus — Concept Illustrator"
+location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1974
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_2]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1974
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
+source_file: "docker/config/hermes/skills/i-pr/README.md"
 type: "document"
-community: "Community 665"
-location: "L12"
+community: "Pull Request Generator (PR)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_665
+  - community/Pull_Request_Generator_PR
 ---
 
 # Purpose
 
 ## Connections
-- [[mcp_audit.py_2]] - `contains` [EXTRACTED]
+- [[Pull Request Generator (PR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_665
+#graphify/document #graphify/EXTRACTED #community/Pull_Request_Generator_PR

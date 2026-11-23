@@ -1,18 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
+source_file: "docs/vault/05 - Dependencies/openscap.md"
 type: "document"
-community: "Community 392"
-location: "L12"
+community: "OpenSCAP"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_392
+  - community/OpenSCAP
 ---
 
 # Purpose
 
 ## Connections
-- [[TrustManager_5]] - `contains` [EXTRACTED]
-- [[trust_manager.py_2]] - `contains` [EXTRACTED]
+- [[OpenSCAP_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_392
+#graphify/document #graphify/EXTRACTED #community/OpenSCAP

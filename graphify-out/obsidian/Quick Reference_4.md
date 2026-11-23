@@ -1,17 +1,21 @@
 ---
-source_file: ".omp/agents/i-mcpm-aws-profile.md"
+source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "Community 183"
-location: "L321"
+community: "OpenClaw Bot SSH Configuration"
+location: "L375"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_183
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # Quick Reference
 
 ## Connections
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_4]] - `contains` [EXTRACTED]
+- [[One-Liner to Add to Pi]] - `contains` [EXTRACTED]
+- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
+- [[Public Key (Copy-Paste Ready)]] - `contains` [EXTRACTED]
+- [[Test Connection]] - `contains` [EXTRACTED]
+- [[🔐 Credentials in 1Password]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_183
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

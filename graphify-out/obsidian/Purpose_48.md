@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-gg/README.md"
+source_file: "docker/config/openclaw/skills/i-hermes/README.md"
 type: "document"
-community: "Community 90"
+community: "Hermes — Podcast Production Orchestrator"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/Hermes__Podcast_Production_Orchestrator
 ---
 
 # Purpose
 
 ## Connections
-- [[Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
+- [[Hermes — Podcast Production Orchestrator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/Hermes__Podcast_Production_Orchestrator

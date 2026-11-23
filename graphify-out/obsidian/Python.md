@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Community 1657"
+community: "Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)"
 location: "L341"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1657
+  - community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary
 ---
 
 # Python
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[5) LANGUAGE & TOOLING STANDARDS]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1657
+#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary

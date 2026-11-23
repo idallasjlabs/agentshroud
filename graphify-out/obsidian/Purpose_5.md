@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/daedalus/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
 type: "document"
-community: "Community 2069"
-location: "L6"
+community: "Function Details"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2069
+  - community/Function_Details
 ---
 
 # Purpose
 
 ## Connections
-- [[Daedalus — Concept Illustrator_1]] - `contains` [EXTRACTED]
+- [[subagent_monitor.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2069
+#graphify/document #graphify/EXTRACTED #community/Function_Details

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/daedalus.md"
+source_file: "docker/config/hermes/skills/i-oracle/SKILL.md"
 type: "document"
-community: "Community 1858"
-location: "L80"
+community: "Oracle — Feedback Analyst"
+location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1858
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Daedalus — Concept Illustrator]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1858
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

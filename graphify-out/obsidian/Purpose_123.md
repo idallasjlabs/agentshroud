@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "Community 1219"
-location: "L15"
+community: "MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1219
+  - community/MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # Purpose
 
 ## Connections
-- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1219
+#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

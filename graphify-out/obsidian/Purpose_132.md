@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
+source_file: "docker/config/openclaw/skills/i-apollo/README.md"
 type: "document"
-community: "Community 719"
-location: "L12"
+community: "Apollo — Audio Systems Producer"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_719
+  - community/Apollo__Audio_Systems_Producer
 ---
 
 # Purpose
 
 ## Connections
-- [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_719
+#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer

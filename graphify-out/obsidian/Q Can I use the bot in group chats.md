@@ -1,17 +1,17 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: "Community 327"
+community: "AgentShroud User Guide"
 location: "L126"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_327
+  - community/AgentShroud_User_Guide
 ---
 
 # Q: Can I use the bot in group chats?
 
 ## Connections
-- [[FAQ_1]] - `contains` [EXTRACTED]
+- [[FAQ]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_327
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_User_Guide

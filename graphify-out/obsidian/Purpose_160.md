@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
+source_file: "docker/config/hermes/skills/i-tdd/README.md"
 type: "document"
-community: "Community 678"
-location: "L12"
+community: "Test-Driven Development README"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_678
+  - community/Test-Driven_Development_README
 ---
 
 # Purpose
 
 ## Connections
-- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
+- [[Test-Driven Development (TDD)_2]] - `contains` [EXTRACTED]
+- [[Test-Driven Development README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_678
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README

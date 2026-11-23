@@ -1,20 +1,20 @@
 ---
-source_file: ".agents/skills/i-pm/README.md"
+source_file: "docker/config/hermes/skills/i-pm/README.md"
 type: "document"
-community: "Community 1915"
+community: "Project Management (PM)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1915
+  - community/Project_Management_PM
 ---
 
 # Project Management (PM)
 
 ## Connections
-- [[Purpose_18]] - `contains` [EXTRACTED]
-- [[README_18]] - `contains` [EXTRACTED]
-- [[Related Skills_24]] - `contains` [EXTRACTED]
-- [[Usage_24]] - `contains` [EXTRACTED]
+- [[Purpose_128]] - `contains` [EXTRACTED]
+- [[Related Skills_58]] - `contains` [EXTRACTED]
+- [[Usage_68]] - `contains` [EXTRACTED]
+- [[hermesskillsi-pmREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1915
+#graphify/document #graphify/EXTRACTED #community/Project_Management_PM

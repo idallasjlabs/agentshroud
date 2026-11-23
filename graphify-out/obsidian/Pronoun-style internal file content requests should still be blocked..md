@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 4"
+community: "FakeRBAC"
 location: "L2498"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_4
+  - community/FakeRBAC
 ---
 
 # Pronoun-style internal file content requests should still be blocked.
 
 ## Connections
-- [[.test_collaborator_internal_file_content_request_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_collaborator_internal_file_content_request_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_4
+#graphify/rationale #graphify/EXTRACTED #community/FakeRBAC

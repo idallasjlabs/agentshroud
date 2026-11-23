@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "SecureBrowser (4)"
+community: "LLMProxy"
 location: "L1346"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecureBrowser_4
+  - community/LLMProxy
 ---
 
 # Proxy a streaming LLM API request, yielding SSE chunks as they arrive. Used…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-proxy_messages_streaming()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser_4
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

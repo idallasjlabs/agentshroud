@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
+source_file: "docker/config/hermes/skills/i-oracle/README.md"
 type: "document"
-community: "Community 833"
-location: "L12"
+community: "Oracle — Feedback Analyst"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_833
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Purpose
 
 ## Connections
-- [[forwarder.py_2]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_833
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

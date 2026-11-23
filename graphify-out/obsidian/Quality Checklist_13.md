@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/hermes/SKILL.md"
+source_file: ".github/agents/i-athena.agent.md"
 type: "document"
-community: "Community 1993"
-location: "L71"
+community: "Athena — Knowledge Distiller"
+location: "L154"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1993
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Hermes — Reference Verifier_1]] - `contains` [EXTRACTED]
+- [[description of what this does_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1993
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

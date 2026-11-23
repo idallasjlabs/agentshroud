@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Community 299"
+community: "SecureBrowser Skill"
 location: "L355"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_299
+  - community/SecureBrowser_Skill
 ---
 
 # Publishing to ClawHub
@@ -17,4 +17,4 @@ tags:
 - [[Step 2 Test Locally]] - `contains` [EXTRACTED]
 - [[Step 3 Publish]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_299
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

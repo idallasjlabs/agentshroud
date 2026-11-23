@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sad/README.md"
+source_file: ".agents/skills/i-bs/README.md"
 type: "document"
-community: "Community 58"
+community: "Branding Specialist (BS)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/Branding_Specialist_BS
 ---
 
 # Purpose
 
 ## Connections
-- [[System Audit Documentation_2]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_58
+#graphify/document #graphify/EXTRACTED #community/Branding_Specialist_BS

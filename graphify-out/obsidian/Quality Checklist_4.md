@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/hermes.md"
+source_file: ".agents/agents/apollo.md"
 type: "document"
-community: "Community 1977"
-location: "L73"
+community: "Technical Specification"
+location: "L139"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1977
+  - community/Technical_Specification
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1977
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

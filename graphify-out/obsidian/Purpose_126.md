@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/text_control_center.py.md"
+source_file: "docker/config/hermes/skills/i-mnemosyne/README.md"
 type: "document"
-community: "Community 1178"
-location: "L14"
+community: "Mnemosyne — Retention Engineer"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1178
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Purpose
 
 ## Connections
-- [[text_control_center.py  agentshroud_manager.py]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1178
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-pm/README.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
 type: "document"
-community: "Community 1915"
-location: "L6"
+community: "mcp_inspector.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1915
+  - community/mcp_inspectorpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Project Management (PM)]] - `contains` [EXTRACTED]
-- [[Project Management (README)]] - `contains` [EXTRACTED]
+- [[mcp_inspector.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1915
+#graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy

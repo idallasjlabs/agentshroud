@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/README.md"
+source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
 type: "document"
-community: "Community 175"
-location: "L6"
+community: "aiosqlite"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_175
+  - community/aiosqlite
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
+- [[aiosqlite]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_175
+#graphify/document #graphify/EXTRACTED #community/aiosqlite

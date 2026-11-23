@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/vulcan/README.md"
+source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
 type: "document"
-community: "Community 2102"
-location: "L6"
+community: "security.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2102
+  - community/securitypy
 ---
 
 # Purpose
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_1]] - `contains` [EXTRACTED]
+- [[security.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2102
+#graphify/document #graphify/EXTRACTED #community/securitypy

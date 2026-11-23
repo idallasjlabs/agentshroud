@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-bs/README.md"
+source_file: "docker/config/hermes/skills/i-icloud/README.md"
 type: "document"
-community: "Community 90"
+community: "iCloud Data Manager (ICLOUD)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/iCloud_Data_Manager_ICLOUD
 ---
 
 # Purpose
 
 ## Connections
-- [[Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
+- [[iCloud Data Manager (ICLOUD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD

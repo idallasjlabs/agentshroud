@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
+source_file: "docker/config/hermes/skills/i-mc/README.md"
 type: "document"
-community: "Community 1174"
-location: "L14"
+community: "GSDE&G Development Master Checklist (MC)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1174
+  - community/GSDEG_Development_Master_Checklist_MC
 ---
 
 # Purpose
 
 ## Connections
-- [[browser-fetch.js_2]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1174
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_MC

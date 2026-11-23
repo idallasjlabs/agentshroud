@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-cr/README.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
 type: "document"
-community: "Community 544"
-location: "L6"
+community: "version_routes.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_544
+  - community/version_routespy
 ---
 
 # Purpose
 
 ## Connections
-- [[Code Review (CR)]] - `contains` [EXTRACTED]
-- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
+- [[version_routes.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_544
+#graphify/document #graphify/EXTRACTED #community/version_routespy

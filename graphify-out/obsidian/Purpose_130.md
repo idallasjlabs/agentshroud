@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
+source_file: "docker/config/hermes/skills/i-sad/README.md"
 type: "document"
-community: "Community 775"
-location: "L12"
+community: "System Audit Documentation"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_775
+  - community/System_Audit_Documentation
 ---
 
 # Purpose
 
 ## Connections
-- [[mcp_config.py_2]] - `contains` [EXTRACTED]
+- [[System Audit Documentation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_775
+#graphify/document #graphify/EXTRACTED #community/System_Audit_Documentation

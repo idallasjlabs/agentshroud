@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/atlas/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
-community: "Community 2065"
-location: "L6"
+community: "clamav_scanner.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2065
+  - community/clamav_scannerpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2065
+#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy

@@ -1,17 +1,16 @@
 ---
 source_file: ".agents/skills/i-pr/README.md"
 type: "document"
-community: "Community 177"
+community: "Project Management (SKILL)"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/Community_177
+  - graphify/INFERRED
+  - community/Project_Management_SKILL
 ---
 
 # Pull Request Generator (README)
 
 ## Connections
 - [[Pull Request Generator (SKILL)]] - `conceptually_related_to` [INFERRED]
-- [[Skills Guide (catalog)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_177
+#graphify/document #graphify/INFERRED #community/Project_Management_SKILL

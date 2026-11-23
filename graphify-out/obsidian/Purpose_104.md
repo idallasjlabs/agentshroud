@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-offense/README.md"
+source_file: ".agents/skills/i-mc/README.md"
 type: "document"
-community: "Community 1242"
+community: "GSDE&G Development Master Checklist (MC)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1242
+  - community/GSDEG_Development_Master_Checklist_MC
 ---
 
 # Purpose
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)_2]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1242
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_MC

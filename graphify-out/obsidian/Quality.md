@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/openai-image-gen/SKILL.md"
 type: "document"
-community: "Community 382"
+community: "Model-Specific Parameters"
 location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_382
+  - community/Model-Specific_Parameters
 ---
 
 # Quality
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Model-Specific Parameters]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_382
+#graphify/document #graphify/EXTRACTED #community/Model-Specific_Parameters

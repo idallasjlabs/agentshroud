@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
+source_file: "docker/config/hermes/skills/i-pm/README.md"
 type: "document"
-community: "Community 407"
-location: "L12"
+community: "Project Management (PM)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_407
+  - community/Project_Management_PM
 ---
 
 # Purpose
 
 ## Connections
-- [[http_proxy.py_2]] - `contains` [EXTRACTED]
+- [[Project Management (PM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_407
+#graphify/document #graphify/EXTRACTED #community/Project_Management_PM

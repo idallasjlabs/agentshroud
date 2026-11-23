@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/agentshroud-daily-check-in.txt"
 type: "document"
-community: "Community 199"
+community: "Telegram Formatting Rule (bold only, no headers or tables)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_199
+  - community/Telegram_Formatting_Rule_bold_only_no_headers_or_tables
 ---
 
 # Prompt: AgentShroud Daily Check-in
@@ -15,4 +15,4 @@ tags:
 - [[Hermes Cron Jobs Reference & Recreation Guide]] - `references` [EXTRACTED]
 - [[Telegram Formatting Rule (bold only, no headers or tables)]] - `rationale_for` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_199
+#graphify/document #graphify/EXTRACTED #community/Telegram_Formatting_Rule_bold_only_no_headers_or_tables

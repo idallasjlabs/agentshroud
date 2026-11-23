@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-eightd/README.md"
+source_file: "docs/vault/05 - Dependencies/playwright.md"
 type: "document"
-community: "Community 1231"
-location: "L6"
+community: "Playwright"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1231
+  - community/Playwright
 ---
 
 # Purpose
 
 ## Connections
-- [[8D Root Cause Analysis_2]] - `contains` [EXTRACTED]
+- [[Playwright_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1231
+#graphify/document #graphify/EXTRACTED #community/Playwright

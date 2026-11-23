@@ -1,19 +1,18 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
 type: "document"
-community: "Community 389"
+community: "Prompt Injection Blocks"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_389
+  - community/Prompt_Injection_Blocks
 ---
 
 # Prompt Injection Blocks.md
 
 ## Connections
-- [[Error Index]] - `references` [EXTRACTED]
-- [[PII Pipeline Errors_1]] - `semantically_similar_to` [INFERRED]
+- [[Data Flow]] - `references` [EXTRACTED]
 - [[Prompt Injection Blocks_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_389
+#graphify/document #graphify/EXTRACTED #community/Prompt_Injection_Blocks

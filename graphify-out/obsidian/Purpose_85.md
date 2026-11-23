@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-gg/README.md"
+source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "Community 58"
-location: "L6"
+community: "Pydantic"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/Pydantic
 ---
 
 # Purpose
 
 ## Connections
-- [[Git Workflow Guardian (GIT-GUARD)_2]] - `contains` [EXTRACTED]
+- [[Pydantic]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_58
+#graphify/document #graphify/EXTRACTED #community/Pydantic

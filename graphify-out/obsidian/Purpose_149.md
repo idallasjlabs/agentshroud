@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
+source_file: "docker/config/openclaw/skills/i-sad/README.md"
 type: "document"
-community: "Community 675"
-location: "L12"
+community: "System Audit Documentation"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_675
+  - community/System_Audit_Documentation
 ---
 
 # Purpose
 
 ## Connections
-- [[browser_security.py_2]] - `contains` [EXTRACTED]
+- [[System Audit Documentation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_675
+#graphify/document #graphify/EXTRACTED #community/System_Audit_Documentation

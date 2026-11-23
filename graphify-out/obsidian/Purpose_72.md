@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/README.md"
+source_file: "docs/vault/03 - Configuration/pytest.ini.md"
 type: "document"
-community: "Community 90"
-location: "L6"
+community: "pytest.ini"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/pytestini
 ---
 
 # Purpose
 
 ## Connections
-- [[Technical Writer (TW)_1]] - `contains` [EXTRACTED]
+- [[pytest.ini_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/pytestini

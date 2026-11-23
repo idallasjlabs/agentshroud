@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/mnemosyne.md"
+source_file: ".agents/skills/apollo/SKILL.md"
 type: "document"
-community: "Community 1978"
-location: "L103"
+community: "Technical Specification"
+location: "L137"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1978
+  - community/Technical_Specification
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Mnemosyne — Retention Engineer]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1978
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

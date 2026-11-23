@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/README.md"
+source_file: "docker/config/hermes/skills/i-daedalus/README.md"
 type: "document"
-community: "Community 1207"
+community: "Daedalus — Concept Illustrator"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1207
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Purpose
 
 ## Connections
-- [[Browser — Secure Browser Automation_7]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1207
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

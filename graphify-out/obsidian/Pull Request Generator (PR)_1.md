@@ -1,21 +1,20 @@
 ---
 source_file: "docker/config/hermes/skills/i-pr/README.md"
 type: "document"
-community: "Community 90"
+community: "Pull Request Generator (PR)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/Pull_Request_Generator_PR
 ---
 
 # Pull Request Generator (PR)
 
 ## Connections
-- [[Purpose_60]] - `contains` [EXTRACTED]
-- [[README_47]] - `contains` [EXTRACTED]
-- [[README_65]] - `contains` [EXTRACTED]
-- [[Related Skills_81]] - `contains` [EXTRACTED]
-- [[Usage_83]] - `contains` [EXTRACTED]
+- [[Purpose_129]] - `contains` [EXTRACTED]
+- [[Related Skills_59]] - `contains` [EXTRACTED]
+- [[Usage_69]] - `contains` [EXTRACTED]
+- [[hermesskillsi-prREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/Pull_Request_Generator_PR

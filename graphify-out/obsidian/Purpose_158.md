@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
+source_file: "docker/config/openclaw/skills/i-vulcan/README.md"
 type: "document"
-community: "Community 538"
-location: "L12"
+community: "Vulcan — Subject Matter Auditor"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_538
+  - community/Vulcan__Subject_Matter_Auditor
 ---
 
 # Purpose
 
 ## Connections
-- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_538
+#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor

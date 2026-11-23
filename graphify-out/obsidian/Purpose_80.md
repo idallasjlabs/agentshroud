@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cicd/README.md"
+source_file: "docs/vault/03 - Configuration/ci-workflows.md"
 type: "document"
-community: "Community 1228"
-location: "L6"
+community: "CI Workflows"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1228
+  - community/CI_Workflows
 ---
 
 # Purpose
 
 ## Connections
-- [[CICD Pipeline Advisor (CICD)_2]] - `contains` [EXTRACTED]
+- [[CI Workflows]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1228
+#graphify/document #graphify/EXTRACTED #community/CI_Workflows

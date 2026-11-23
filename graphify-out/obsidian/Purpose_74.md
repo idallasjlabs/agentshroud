@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-apollo/README.md"
+source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "document"
-community: "Community 1224"
-location: "L6"
+community: "Presidio Analyzer"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1224
+  - community/Presidio_Analyzer
 ---
 
 # Purpose
 
 ## Connections
-- [[Apollo — Audio Systems Producer_9]] - `contains` [EXTRACTED]
+- [[Presidio Analyzer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1224
+#graphify/document #graphify/EXTRACTED #community/Presidio_Analyzer

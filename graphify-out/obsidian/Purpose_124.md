@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
+source_file: "docker/config/hermes/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "Community 1053"
-location: "L15"
+community: "MCP Doctor (MCPM-DOCTOR)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1053
+  - community/MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Purpose
 
 ## Connections
-- [[port_manager.py_1]] - `contains` [EXTRACTED]
+- [[MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1053
+#graphify/document #graphify/EXTRACTED #community/MCP_Doctor_MCPM-DOCTOR

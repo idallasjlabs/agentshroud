@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
 type: "document"
-community: "Community 733"
+community: "browser_security.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_733
+  - community/browser_securitypy
 ---
 
 # Purpose
 
 ## Connections
-- [[trivy_report.py_2]] - `contains` [EXTRACTED]
+- [[browser_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_733
+#graphify/document #graphify/EXTRACTED #community/browser_securitypy

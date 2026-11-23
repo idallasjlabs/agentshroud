@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
+source_file: "docker/config/hermes/skills/i-sec-defense/README.md"
 type: "document"
-community: "Community 666"
-location: "L12"
+community: "Blue Team Security Auditor (SEC-DEFENSE)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_666
+  - community/Blue_Team_Security_Auditor_SEC-DEFENSE
 ---
 
 # Purpose
 
 ## Connections
-- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_666
+#graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Auditor_SEC-DEFENSE

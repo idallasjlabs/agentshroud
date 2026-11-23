@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/eightd-root-cause-analysis/README.md"
+source_file: ".agents/skills/i-sec/README.md"
 type: "document"
-community: "Community 2076"
+community: "Security Review (SEC)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2076
+  - community/Security_Review_SEC
 ---
 
 # Purpose
 
 ## Connections
-- [[8D Root Cause Analysis]] - `contains` [EXTRACTED]
+- [[Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2076
+#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC

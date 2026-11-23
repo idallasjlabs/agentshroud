@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "Community 783"
-location: "L12"
+community: "MCP Doctor (MCPM-DOCTOR)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_783
+  - community/MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Purpose
 
 ## Connections
-- [[compose_generator.py_2]] - `contains` [EXTRACTED]
+- [[MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_783
+#graphify/document #graphify/EXTRACTED #community/MCP_Doctor_MCPM-DOCTOR

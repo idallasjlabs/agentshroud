@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/QUICK_REFERENCE.md"
 type: "document"
-community: "Community 764"
+community: "docs/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_764
+  - community/docs/READMEmd
 ---
 
 # Quick Reference Card
@@ -15,11 +15,11 @@ tags:
 - [[AI Models]] - `contains` [EXTRACTED]
 - [[API Keys_1]] - `contains` [EXTRACTED]
 - [[Access Points]] - `contains` [EXTRACTED]
-- [[Container Management_1]] - `contains` [EXTRACTED]
+- [[Container Management_2]] - `contains` [EXTRACTED]
 - [[Files_2]] - `contains` [EXTRACTED]
 - [[Most Common Commands]] - `contains` [EXTRACTED]
 - [[QUICK_REFERENCE]] - `contains` [EXTRACTED]
 - [[Telegram Bot]] - `contains` [EXTRACTED]
-- [[Troubleshooting_41]] - `contains` [EXTRACTED]
+- [[Troubleshooting_57]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_764
+#graphify/document #graphify/EXTRACTED #community/docs/READMEmd

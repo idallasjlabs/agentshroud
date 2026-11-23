@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
 type: "document"
-community: "Community 618"
+community: "http_proxy.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_618
+  - community/http_proxypy
 ---
 
 # Purpose
 
 ## Connections
-- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
+- [[http_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_618
+#graphify/document #graphify/EXTRACTED #community/http_proxypy

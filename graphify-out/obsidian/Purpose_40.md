@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/README.md"
+source_file: "docker/config/hermes/skills/i-browser/README.md"
 type: "document"
-community: "Community 90"
+community: "Browser — Secure Browser Automation"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Purpose
 
 ## Connections
-- [[AWS Cloud Management & FinOps_1]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

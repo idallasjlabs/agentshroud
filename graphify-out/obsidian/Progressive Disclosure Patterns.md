@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/SKILL.md"
 type: "document"
-community: "Community 843"
+community: "Skill Creation Process"
 location: "L121"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_843
+  - community/Skill_Creation_Process
 ---
 
 # Progressive Disclosure Patterns
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Progressive Disclosure Design Principle]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_843
+#graphify/document #graphify/EXTRACTED #community/Skill_Creation_Process

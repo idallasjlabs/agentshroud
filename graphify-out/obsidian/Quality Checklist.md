@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/apollo.md"
+source_file: ".github/agents/i-atlas.agent.md"
 type: "document"
-community: "Community 1351"
-location: "L139"
+community: "Atlas — Curriculum Architect"
+location: "L206"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1351
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Apollo — Audio Systems Producer]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1351
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

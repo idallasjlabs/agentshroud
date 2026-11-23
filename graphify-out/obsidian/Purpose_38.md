@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
 type: "document"
-community: "Community 2178"
-location: "L6"
+community: "log_sanitizer.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2178
+  - community/log_sanitizerpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Athena — Knowledge Distiller_7]] - `contains` [EXTRACTED]
+- [[log_sanitizer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2178
+#graphify/document #graphify/EXTRACTED #community/log_sanitizerpy

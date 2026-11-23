@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/podman_engine.py.md"
+source_file: "docker/config/openclaw/skills/i-pr/README.md"
 type: "document"
-community: "Community 613"
-location: "L12"
+community: "Pull Request Generator (PR)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_613
+  - community/Pull_Request_Generator_PR
 ---
 
 # Purpose
 
 ## Connections
-- [[podman_engine.py_2]] - `contains` [EXTRACTED]
+- [[Pull Request Generator (PR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_613
+#graphify/document #graphify/EXTRACTED #community/Pull_Request_Generator_PR

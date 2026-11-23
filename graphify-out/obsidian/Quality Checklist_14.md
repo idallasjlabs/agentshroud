@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/mnemosyne/SKILL.md"
+source_file: ".omp/agents/athena.md"
 type: "document"
-community: "Community 1994"
-location: "L101"
+community: "Athena — Knowledge Distiller"
+location: "L150"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1994
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_2]] - `contains` [EXTRACTED]
+- [[description of what this does_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1994
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

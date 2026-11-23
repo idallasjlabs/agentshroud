@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
+source_file: "docker/config/hermes/skills/i-cr/README.md"
 type: "document"
-community: "Community 679"
-location: "L12"
+community: "Project Management (SKILL)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_679
+  - community/Project_Management_SKILL
 ---
 
 # Purpose
 
 ## Connections
-- [[input_normalizer.py_2]] - `contains` [EXTRACTED]
+- [[Code Review (CR)_2]] - `contains` [EXTRACTED]
+- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_679
+#graphify/document #graphify/EXTRACTED #community/Project_Management_SKILL

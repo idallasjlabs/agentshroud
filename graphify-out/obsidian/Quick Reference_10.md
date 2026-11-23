@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
+source_file: ".omp/agents/i-mcpm-aws-profile.md"
 type: "document"
-community: "Community 837"
-location: "L381"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
+location: "L321"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_837
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # Quick Reference
 
 ## Connections
-- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_837
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

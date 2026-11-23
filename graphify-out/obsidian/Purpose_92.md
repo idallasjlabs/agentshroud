@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-doctor/README.md"
+source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "Community 58"
-location: "L6"
+community: "httpx"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/httpx
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
+- [[httpx]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_58
+#graphify/document #graphify/EXTRACTED #community/httpx

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/athena/SKILL.md"
+source_file: ".agents/agents/athena.md"
 type: "document"
-community: "Community 1568"
-location: "L149"
+community: "Athena — Knowledge Distiller"
+location: "L151"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1568
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[description of what this does_1]] - `contains` [EXTRACTED]
+- [[description of what this does]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1568
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

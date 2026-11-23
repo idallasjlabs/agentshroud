@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mac/README.md"
+source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
 type: "document"
-community: "Community 58"
-location: "L6"
+community: "browser-fetch.js"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/browser-fetchjs
 ---
 
 # Purpose
 
 ## Connections
-- [[macOS System Administrator (MAC)_2]] - `contains` [EXTRACTED]
+- [[browser-fetch.js_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_58
+#graphify/document #graphify/EXTRACTED #community/browser-fetchjs

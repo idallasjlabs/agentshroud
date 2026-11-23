@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-cr.md"
+source_file: ".agents/skills/i-cr/SKILL.md"
 type: "document"
-community: "Community 2013"
-location: "L27"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2013
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Production-Specific Review Checks
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Code Review (CR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2013
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

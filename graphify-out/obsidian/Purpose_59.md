@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pm/README.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
 type: "document"
-community: "Community 1915"
-location: "L6"
+community: "forwarder.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1915
+  - community/forwarderpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Project Management (PM)_1]] - `contains` [EXTRACTED]
-- [[Project Management (README)]] - `contains` [EXTRACTED]
+- [[forwarder.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1915
+#graphify/document #graphify/EXTRACTED #community/forwarderpy

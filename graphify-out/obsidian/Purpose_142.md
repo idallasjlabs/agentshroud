@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
+source_file: "docker/config/openclaw/skills/i-mnemosyne/README.md"
 type: "document"
-community: "Community 784"
-location: "L12"
+community: "Mnemosyne — Retention Engineer"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_784
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Purpose
 
 ## Connections
-- [[config.py_3]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_784
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/aws/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
 type: "document"
-community: "Community 2066"
-location: "L6"
+community: "Function Details"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2066
+  - community/Function_Details
 ---
 
 # Purpose
 
 ## Connections
-- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
+- [[health_report.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2066
+#graphify/document #graphify/EXTRACTED #community/Function_Details

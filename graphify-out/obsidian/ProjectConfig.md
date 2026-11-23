@@ -1,33 +1,26 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Community 18"
+community: "test_collaborator_responses.py"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/test_collaborator_responsespy
 ---
 
 # ProjectConfig
 
 ## Connections
-- [[.get_user_projects()]] - `references` [EXTRACTED]
-- [[.matches_topic()]] - `method` [EXTRACTED]
-- [[.normalise_topics()]] - `method` [EXTRACTED]
+- [[dot-get_user_projects()]] - `references` [EXTRACTED]
+- [[dot-matches_topic()]] - `method` [EXTRACTED]
+- [[dot-normalise_topics()]] - `method` [EXTRACTED]
 - [[A project defines a scoped focus area for a team.]] - `rationale_for` [EXTRACTED]
-- [[BaseModel]] - `inherits` [EXTRACTED]
-- [[TestBuildProjectContextInjection]] - `uses` [INFERRED]
-- [[TestConstantMessages]] - `uses` [INFERRED]
-- [[TestErrorFormatters]] - `uses` [INFERRED]
-- [[TestFormatGroupInfo]] - `uses` [INFERRED]
-- [[TestFormatGroupsList]] - `uses` [INFERRED]
-- [[TestFormatProjectsList]] - `uses` [INFERRED]
-- [[TestMutationFormatters]] - `uses` [INFERRED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[collaborator_responses.py]] - `imports` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
-- [[project()]] - `calls` [EXTRACTED]
-- [[teams()]] - `calls` [EXTRACTED]
+- [[project()]] - `uses` [INFERRED]
+- [[teams()]] - `uses` [INFERRED]
 - [[test_collaborator_responses.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_18
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_responsespy

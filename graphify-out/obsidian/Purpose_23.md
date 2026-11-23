@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
 type: "document"
-community: "Community 1021"
-location: "L6"
+community: "egress_filter.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1021
+  - community/egress_filterpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Security Review (SEC)]] - `contains` [EXTRACTED]
+- [[egress_filter.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1021
+#graphify/document #graphify/EXTRACTED #community/egress_filterpy

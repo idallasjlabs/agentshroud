@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-vulcan/README.md"
+source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "Community 90"
-location: "L6"
+community: "wazuh-ossec.conf"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/wazuh-ossecconf
 ---
 
 # Purpose
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_7]] - `contains` [EXTRACTED]
+- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/wazuh-ossecconf

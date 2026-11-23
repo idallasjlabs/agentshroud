@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
+source_file: "docker/config/hermes/skills/i-apollo/README.md"
 type: "document"
-community: "Community 820"
-location: "L12"
+community: "Apollo — Audio Systems Producer"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_820
+  - community/Apollo__Audio_Systems_Producer
 ---
 
 # Purpose
 
 ## Connections
-- [[ssh_config.py_2]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_820
+#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer

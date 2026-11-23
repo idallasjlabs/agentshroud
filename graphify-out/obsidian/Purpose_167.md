@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
+source_file: "docker/config/openclaw/skills/i-mcpm/README.md"
 type: "document"
-community: "Community 540"
-location: "L12"
+community: "openclaw/skills/i-cr/SKILL.md"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_540
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Purpose
 
 ## Connections
-- [[resource_guard.py_2]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_540
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "Community 11"
+community: "Progressive Trust Ladder (threshold-gated promotion + typed-violation demotion)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_11
+  - community/Progressive_Trust_Ladder_threshold-gated_promotion__typed-violation_demotion
 ---
 
 # Progressive Trust Ladder (threshold-gated promotion + typed-violation demotion)
 
-## Connections
-- [[progressive_trust_config.py]] - `rationale_for` [EXTRACTED]
-
-#graphify/rationale #graphify/EXTRACTED #community/Community_11
+#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Ladder_threshold-gated_promotion__typed-violation_demotion

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
+source_file: "docker/config/openclaw/skills/i-cicd/README.md"
 type: "document"
-community: "Community 669"
-location: "L12"
+community: "CI/CD Pipeline Advisor (CICD)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_669
+  - community/CI/CD_Pipeline_Advisor_CICD
 ---
 
 # Purpose
 
 ## Connections
-- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (CICD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_669
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_CICD

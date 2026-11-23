@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/docker_engine.py.md"
+source_file: "docker/config/openclaw/skills/i-oracle/README.md"
 type: "document"
-community: "Community 673"
-location: "L12"
+community: "Oracle — Feedback Analyst"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_673
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Purpose
 
 ## Connections
-- [[docker_engine.py_2]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_10]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_673
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

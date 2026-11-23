@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/engine.py.md"
+source_file: "docker/config/openclaw/skills/i-pm/README.md"
 type: "document"
-community: "Community 931"
-location: "L12"
+community: "Project Management (PM)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_931
+  - community/Project_Management_PM
 ---
 
 # Purpose
 
 ## Connections
-- [[engine.py_2]] - `contains` [EXTRACTED]
+- [[Project Management (PM)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_931
+#graphify/document #graphify/EXTRACTED #community/Project_Management_PM

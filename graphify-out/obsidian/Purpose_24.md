@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-tdd/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
 type: "document"
-community: "Community 518"
-location: "L6"
+community: "egress_monitor.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_518
+  - community/egress_monitorpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
-- [[Test-Driven Development README]] - `contains` [EXTRACTED]
+- [[egress_monitor.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_518
+#graphify/document #graphify/EXTRACTED #community/egress_monitorpy

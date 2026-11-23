@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-qa/README.md"
+source_file: "docs/vault/02 - Modules/Runtime/engine.py.md"
 type: "document"
-community: "Community 177"
-location: "L6"
+community: "engine.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_177
+  - community/enginepy
 ---
 
 # Purpose
 
 ## Connections
-- [[Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
-- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
+- [[engine.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_177
+#graphify/document #graphify/EXTRACTED #community/enginepy

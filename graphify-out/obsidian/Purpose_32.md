@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/sav/README.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: "Community 2094"
-location: "L6"
+community: "event_bus.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2094
+  - community/event_buspy
 ---
 
 # Purpose
 
 ## Connections
-- [[System Audit Vault]] - `contains` [EXTRACTED]
+- [[event_bus.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2094
+#graphify/document #graphify/EXTRACTED #community/event_buspy

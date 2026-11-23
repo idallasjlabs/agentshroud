@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
+source_file: "docker/config/hermes/skills/i-mcpm/README.md"
 type: "document"
-community: "Community 979"
-location: "L15"
+community: "MCP Tools Usage (MCPM)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_979
+  - community/MCP_Tools_Usage_MCPM
 ---
 
 # Purpose
 
 ## Connections
-- [[ssh_proxy.py_1]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_979
+#graphify/document #graphify/EXTRACTED #community/MCP_Tools_Usage_MCPM

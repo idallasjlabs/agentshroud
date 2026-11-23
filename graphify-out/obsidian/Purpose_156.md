@@ -1,18 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
+source_file: "docker/config/openclaw/skills/i-ti/README.md"
 type: "document"
-community: "Community 287"
-location: "L12"
+community: "Technical Illustrator (TI)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_287
+  - community/Technical_Illustrator_TI
 ---
 
 # Purpose
 
 ## Connections
-- [[EgressFilter_3]] - `contains` [EXTRACTED]
-- [[egress_filter.py_2]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_287
+#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_TI

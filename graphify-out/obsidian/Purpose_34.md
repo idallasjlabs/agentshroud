@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/sec-offense/README.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
 type: "document"
-community: "Community 2096"
-location: "L6"
+community: "Function Details"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2096
+  - community/Function_Details
 ---
 
 # Purpose
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - `contains` [EXTRACTED]
+- [[mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2096
+#graphify/document #graphify/EXTRACTED #community/Function_Details

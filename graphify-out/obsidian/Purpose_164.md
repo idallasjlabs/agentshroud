@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
 type: "document"
-community: "Community 732"
+community: "Function Details"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_732
+  - community/Function_Details
 ---
 
 # Purpose
 
 ## Connections
-- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[session_security.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_732
+#graphify/document #graphify/EXTRACTED #community/Function_Details

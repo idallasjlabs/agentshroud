@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/daily-memory-journal.txt"
 type: "document"
-community: "Community 371"
+community: "OpenClaw Cron Jobs Reference & Recreation Guide"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_371
+  - community/OpenClaw_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # Prompt: Daily Memory Journal
@@ -16,4 +16,4 @@ tags:
 - [[NO_REPLY Suppression Token]] - `references` [EXTRACTED]
 - [[OpenClaw Cron Jobs Reference & Recreation Guide]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_371
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Cron_Jobs_Reference__Recreation_Guide

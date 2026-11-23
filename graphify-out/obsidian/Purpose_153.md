@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
+source_file: "docker/config/openclaw/skills/i-sec/README.md"
 type: "document"
-community: "Community 616"
-location: "L12"
+community: "Security Review (SEC)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_616
+  - community/Security_Review_SEC
 ---
 
 # Purpose
 
 ## Connections
-- [[dns_filter.py_2]] - `contains` [EXTRACTED]
+- [[Security Review (SEC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_616
+#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC

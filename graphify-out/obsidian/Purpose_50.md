@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/README.md"
 type: "document"
-community: "Community 1211"
+community: "MCP Auth Reset (MCPM-AUTH-RESET)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1211
+  - community/MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # Purpose
 
 ## Connections
-- [[iCloud Data Manager (ICLOUD)_1]] - `contains` [EXTRACTED]
+- [[MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1211
+#graphify/document #graphify/EXTRACTED #community/MCP_Auth_Reset_MCPM-AUTH-RESET
