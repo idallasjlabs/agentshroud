@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 2323"
-location: "L404"
+community: "test_security_toolchain.py"
+location: "L705"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2323
+  - community/test_security_toolchainpy
 ---
 
 # TestWazuhSummary
 
 ## Connections
-- [[.test_installed_not_running()]] - `method` [EXTRACTED]
-- [[.test_not_installed()]] - `method` [EXTRACTED]
-- [[.test_running_no_alert_dir()]] - `method` [EXTRACTED]
-- [[.test_running_with_alert_dir()]] - `method` [EXTRACTED]
-- [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
+- [[dot-test_summary_clean()_2]] - `method` [EXTRACTED]
+- [[dot-test_summary_with_rootkit()]] - `method` [EXTRACTED]
+- [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2323
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 579"
-location: "L63"
+community: "Fixed"
+location: "L110"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_579
+  - community/Fixed
 ---
 
 # Testing
 
 ## Connections
-- [[Gateway Python Dependencies (`gatewayrequirements.txt`)]] - `contains` [EXTRACTED]
+- [[1.6.0 (2026-08-28)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_579
+#graphify/document #graphify/EXTRACTED #community/Fixed

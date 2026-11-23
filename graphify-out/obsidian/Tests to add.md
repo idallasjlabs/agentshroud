@@ -1,22 +1,17 @@
 ---
 source_file: "docs/planning/v1.2/v1.2.0-master-plan.md"
 type: "document"
-community: "Community 387"
-location: "L58"
+community: "Workstream B: Security Features from Competitive Intel"
+location: "L99"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_387
+  - community/Workstream_B_Security_Features_from_Competitive_Intel
 ---
 
 # Tests to add
 
 ## Connections
-- [[Workstream A — Groups & Teamwork in OpenClaw]] - `contains` [EXTRACTED]
-- [[Workstream A Groups and Teamwork in OpenClaw]] - `contains` [EXTRACTED]
-- [[Workstream B Security Features from Competitive Intel]] - `contains` [EXTRACTED]
-- [[Workstream C Full Local-Model Parity (Both Bots)]] - `contains` [EXTRACTED]
-- [[Workstream D — Sync agentsskillsMCP from `~.llm_settings` into both bots]] - `contains` [EXTRACTED]
-- [[Workstream E Blue and Red Team Security Scan (Both Bots)]] - `contains` [EXTRACTED]
+- [[Workstream B — Security features from competitive intel]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_387
+#graphify/document #graphify/EXTRACTED #community/Workstream_B_Security_Features_from_Competitive_Intel

@@ -1,27 +1,25 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "Community 28"
+community: "RedactionResult"
 location: "L440"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_28
+  - community/RedactionResult
 ---
 
 # TestRealWorldScenarios
 
 ## Connections
-- [[.test_email_content_scanning()]] - `method` [EXTRACTED]
-- [[.test_icloud_contact_scanning()]] - `method` [EXTRACTED]
-- [[GatewayConfig_1]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[dot-test_email_content_scanning()]] - `method` [EXTRACTED]
+- [[dot-test_icloud_contact_scanning()]] - `method` [EXTRACTED]
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[RedactionDetail]] - `uses` [INFERRED]
 - [[RedactionResult]] - `uses` [INFERRED]
 - [[Test realistic tool result scenarios]] - `rationale_for` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `uses` [INFERRED]
-- [[ToolResultSanitizer]] - `uses` [INFERRED]
+- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
 - [[test_tool_result_pii.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_28
+#graphify/code #graphify/INFERRED #community/RedactionResult

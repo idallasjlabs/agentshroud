@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "Community 995"
+community: "test_credential_injector.py"
 location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_995
+  - community/test_credential_injectorpy
 ---
 
 # TestStatus
 
 ## Connections
-- [[.test_credential_never_in_logs()]] - `method` [EXTRACTED]
-- [[.test_get_status_structure()]] - `method` [EXTRACTED]
+- [[dot-test_credential_never_in_logs()]] - `method` [EXTRACTED]
+- [[dot-test_get_status_structure()]] - `method` [EXTRACTED]
 - [[test_credential_injector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_995
+#graphify/code #graphify/EXTRACTED #community/test_credential_injectorpy

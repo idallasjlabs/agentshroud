@@ -1,20 +1,18 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "Community 60"
+community: "test_session_manager.py"
 location: "L148"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_60
+  - graphify/EXTRACTED
+  - community/test_session_managerpy
 ---
 
 # TestTrustLevel
 
 ## Connections
-- [[.test_update_trust_level()]] - `method` [EXTRACTED]
-- [[UserSession]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
+- [[dot-test_update_trust_level()]] - `method` [EXTRACTED]
 - [[test_session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_60
+#graphify/code #graphify/EXTRACTED #community/test_session_managerpy

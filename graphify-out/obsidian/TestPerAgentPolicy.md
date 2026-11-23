@@ -1,25 +1,21 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Community 21"
+community: "EgressPolicy"
 location: "L157"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_21
+  - graphify/EXTRACTED
+  - community/EgressPolicy
 ---
 
 # TestPerAgentPolicy
 
 ## Connections
-- [[.test_agent_specific_policy()]] - `method` [EXTRACTED]
-- [[ApprovalResult]] - `uses` [INFERRED]
+- [[dot-test_agent_specific_policy()]] - `method` [EXTRACTED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressAttempt]] - `uses` [INFERRED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
-- [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[Per-agent policies override the default.]] - `rationale_for` [EXTRACTED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_21
+#graphify/code #graphify/EXTRACTED #community/EgressPolicy

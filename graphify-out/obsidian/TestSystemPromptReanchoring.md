@@ -1,22 +1,20 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "Community 60"
+community: "test_session_manager.py"
 location: "L432"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_60
+  - community/test_session_managerpy
 ---
 
 # TestSystemPromptReanchoring
 
 ## Connections
-- [[.test_reanchor_contains_security_notice()]] - `method` [EXTRACTED]
-- [[.test_reanchor_prepends_preamble()]] - `method` [EXTRACTED]
-- [[.test_reanchor_preserves_original_content()]] - `method` [EXTRACTED]
-- [[UserSession]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
+- [[dot-test_reanchor_contains_security_notice()]] - `method` [EXTRACTED]
+- [[dot-test_reanchor_prepends_preamble()]] - `method` [EXTRACTED]
+- [[dot-test_reanchor_preserves_original_content()]] - `method` [EXTRACTED]
 - [[test_session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_60
+#graphify/code #graphify/EXTRACTED #community/test_session_managerpy

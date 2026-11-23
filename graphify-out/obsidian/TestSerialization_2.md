@@ -1,22 +1,19 @@
 ---
-source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
+source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "Community 55"
-location: "L160"
+community: "test_session_manager.py"
+location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_55
+  - community/test_session_managerpy
 ---
 
 # TestSerialization
 
 ## Connections
-- [[.test_append_targets_correct_agent_list()]] - `method` [EXTRACTED]
-- [[.test_dry_run_writes_nothing()]] - `method` [EXTRACTED]
-- [[.test_entry_to_py_handles_none_cvss()]] - `method` [EXTRACTED]
-- [[.test_entry_to_py_roundtrips()]] - `method` [EXTRACTED]
-- [[.test_string_literals_match_black_quote_preference()]] - `method` [EXTRACTED]
-- [[test_sync_cve_registry_ghsa.py]] - `contains` [EXTRACTED]
+- [[dot-test_session_to_dict_and_back()]] - `method` [EXTRACTED]
+- [[UserSession]] - `uses` [INFERRED]
+- [[test_session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_55
+#graphify/code #graphify/EXTRACTED #community/test_session_managerpy

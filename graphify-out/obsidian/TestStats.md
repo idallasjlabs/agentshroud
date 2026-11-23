@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/tests/test_dns_blocklist.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Community 158"
-location: "L136"
+community: "WebProxy"
+location: "L461"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_158
+  - community/WebProxy
 ---
 
 # TestStats
 
 ## Connections
-- [[.test_stats_attributes()]] - `method` [EXTRACTED]
-- [[DNSBlocklist]] - `uses` [INFERRED]
-- [[stats() — verify blockedallowlistdenylist counts.]] - `rationale_for` [EXTRACTED]
-- [[test_dns_blocklist.py]] - `contains` [EXTRACTED]
+- [[dot-test_injection_stats()]] - `method` [EXTRACTED]
+- [[dot-test_stats_tracked()]] - `method` [EXTRACTED]
+- [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_158
+#graphify/code #graphify/EXTRACTED #community/WebProxy

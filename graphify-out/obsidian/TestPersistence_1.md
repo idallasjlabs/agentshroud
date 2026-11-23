@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/tests/test_report_store.py"
+source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "Community 110"
-location: "L90"
+community: "TrustManager"
+location: "L184"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_110
+  - community/TrustManager
 ---
 
 # TestPersistence
 
 ## Connections
-- [[.test_delete()]] - `method` [EXTRACTED]
-- [[.test_survives_new_instance()]] - `method` [EXTRACTED]
-- [[ReportStore]] - `uses` [INFERRED]
-- [[test_report_store.py]] - `contains` [EXTRACTED]
+- [[dot-test_persistence_across_instances()]] - `method` [EXTRACTED]
+- [[Test trust survives restart.]] - `rationale_for` [EXTRACTED]
+- [[TrustManager]] - `uses` [INFERRED]
+- [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_110
+#graphify/code #graphify/EXTRACTED #community/TrustManager

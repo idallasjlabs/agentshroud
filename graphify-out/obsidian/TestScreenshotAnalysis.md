@@ -1,24 +1,22 @@
 ---
 source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "Community 196"
+community: "BrowserSecurityGuard"
 location: "L118"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_196
+  - graphify/EXTRACTED
+  - community/BrowserSecurityGuard
 ---
 
 # TestScreenshotAnalysis
 
 ## Connections
-- [[.test_hook_can_flag_threat()]] - `method` [EXTRACTED]
-- [[.test_no_hook_returns_none_threat()]] - `method` [EXTRACTED]
-- [[.test_screenshot_hook_registered()]] - `method` [EXTRACTED]
-- [[BrowserSecurityGuard]] - `uses` [INFERRED]
-- [[CredentialEntryBlocked]] - `uses` [INFERRED]
+- [[dot-test_hook_can_flag_threat()]] - `method` [EXTRACTED]
+- [[dot-test_no_hook_returns_none_threat()]] - `method` [EXTRACTED]
+- [[dot-test_screenshot_hook_registered()]] - `method` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[ThreatLevel_1]] - `uses` [INFERRED]
+- [[ThreatLevel]] - `uses` [INFERRED]
 - [[test_browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_196
+#graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard

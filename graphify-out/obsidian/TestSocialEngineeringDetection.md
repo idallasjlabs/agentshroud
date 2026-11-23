@@ -1,28 +1,25 @@
 ---
 source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "Community 196"
+community: "BrowserSecurityGuard"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_196
+  - community/BrowserSecurityGuard
 ---
 
 # TestSocialEngineeringDetection
 
 ## Connections
-- [[.test_fake_captcha()]] - `method` [EXTRACTED]
-- [[.test_fake_dialog_detected()]] - `method` [EXTRACTED]
-- [[.test_fake_windows_alert()]] - `method` [EXTRACTED]
-- [[.test_multiple_threats_aggregated()]] - `method` [EXTRACTED]
-- [[.test_safe_content_passes()]] - `method` [EXTRACTED]
-- [[.test_tech_support_scam()]] - `method` [EXTRACTED]
-- [[.test_urgent_action_required()]] - `method` [EXTRACTED]
-- [[BrowserSecurityGuard]] - `uses` [INFERRED]
-- [[CredentialEntryBlocked]] - `uses` [INFERRED]
-- [[ThreatAssessment]] - `uses` [INFERRED]
-- [[ThreatLevel_1]] - `uses` [INFERRED]
+- [[dot-test_fake_captcha()]] - `method` [EXTRACTED]
+- [[dot-test_fake_dialog_detected()]] - `method` [EXTRACTED]
+- [[dot-test_fake_windows_alert()]] - `method` [EXTRACTED]
+- [[dot-test_multiple_threats_aggregated()]] - `method` [EXTRACTED]
+- [[dot-test_safe_content_passes()]] - `method` [EXTRACTED]
+- [[dot-test_tech_support_scam()]] - `method` [EXTRACTED]
+- [[dot-test_urgent_action_required()]] - `method` [EXTRACTED]
+- [[ThreatLevel]] - `uses` [INFERRED]
 - [[test_browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_196
+#graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard

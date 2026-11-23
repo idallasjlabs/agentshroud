@@ -1,22 +1,19 @@
 ---
 source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "Community 89"
+community: "test_delegation.py"
 location: "L141"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_89
+  - graphify/EXTRACTED
+  - community/test_delegationpy
 ---
 
 # TestRedelegation
 
 ## Connections
-- [[.test_redelegate_replaces_existing()]] - `method` [EXTRACTED]
-- [[Delegation]] - `uses` [INFERRED]
-- [[DelegationError]] - `uses` [INFERRED]
-- [[DelegationManager]] - `uses` [INFERRED]
+- [[dot-test_redelegate_replaces_existing()]] - `method` [EXTRACTED]
 - [[DelegationPrivilege]] - `uses` [INFERRED]
 - [[test_delegation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_89
+#graphify/code #graphify/EXTRACTED #community/test_delegationpy

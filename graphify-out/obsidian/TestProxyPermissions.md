@@ -1,33 +1,21 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Community 64"
+community: "MCPToolCall"
 location: "L569"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_64
+  - graphify/EXTRACTED
+  - community/MCPToolCall
 ---
 
 # TestProxyPermissions
 
 ## Connections
-- [[.test_elevated_agent_can_execute()]] - `method` [EXTRACTED]
-- [[.test_read_only_agent_can_read()]] - `method` [EXTRACTED]
-- [[.test_read_only_agent_denied_execute()]] - `method` [EXTRACTED]
-- [[FindingType]] - `uses` [INFERRED]
-- [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxy]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPServerConfig]] - `uses` [INFERRED]
+- [[dot-test_elevated_agent_can_execute()]] - `method` [EXTRACTED]
+- [[dot-test_read_only_agent_can_read()]] - `method` [EXTRACTED]
+- [[dot-test_read_only_agent_denied_execute()]] - `method` [EXTRACTED]
 - [[MCPToolCall]] - `uses` [INFERRED]
-- [[MCPToolConfig]] - `uses` [INFERRED]
-- [[MCPToolResult]] - `uses` [INFERRED]
-- [[MCPTransport]] - `uses` [INFERRED]
-- [[PermissionLevel]] - `uses` [INFERRED]
-- [[ThreatLevel]] - `uses` [INFERRED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_64
+#graphify/code #graphify/EXTRACTED #community/MCPToolCall

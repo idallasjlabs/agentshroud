@@ -1,20 +1,22 @@
 ---
-source_file: "gateway/tests/test_scanner_integration.py"
+source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Community 842"
-location: "L682"
+community: "_mock_dir_with_files"
+location: "L255"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_842
+  - community/_mock_dir_with_files
 ---
 
 # TestScoreSupplyChain
 
 ## Connections
-- [[.test_two_when_sbom_present()]] - `method` [EXTRACTED]
-- [[.test_zero_when_empty_sbom_dir()]] - `method` [EXTRACTED]
-- [[.test_zero_when_no_sbom_dir()]] - `method` [EXTRACTED]
-- [[test_scanner_integration.py]] - `contains` [EXTRACTED]
+- [[dot-test_five_sbom_and_trivy_clean()]] - `method` [EXTRACTED]
+- [[dot-test_four_sbom_and_trivy_with_criticals()]] - `method` [EXTRACTED]
+- [[dot-test_three_sbom_has_packages_no_trivy()]] - `method` [EXTRACTED]
+- [[dot-test_two_empty_sbom()]] - `method` [EXTRACTED]
+- [[dot-test_zero_without_sbom()]] - `method` [EXTRACTED]
+- [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_842
+#graphify/code #graphify/EXTRACTED #community/_mock_dir_with_files

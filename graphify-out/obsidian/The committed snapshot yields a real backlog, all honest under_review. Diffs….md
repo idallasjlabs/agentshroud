@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "rationale"
-community: "ControlCenter"
+community: "TestSnapshotSmoke"
 location: "L627"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ControlCenter
+  - community/TestSnapshotSmoke
 ---
 
 # The committed snapshot yields a real backlog, all honest under_review. Diffs…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_openclaw_snapshot_registers_backlog_as_under_review()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ControlCenter
+#graphify/rationale #graphify/EXTRACTED #community/TestSnapshotSmoke

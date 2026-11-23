@@ -1,27 +1,23 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "Community 45"
+community: "OAuthSecurityValidator"
 location: "L163"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_45
+  - graphify/EXTRACTED
+  - community/OAuthSecurityValidator
 ---
 
 # TestRedirectURI
 
 ## Connections
-- [[.test_different_uri_rejected()]] - `method` [EXTRACTED]
-- [[.test_exact_match_accepted()]] - `method` [EXTRACTED]
-- [[.test_http_rejected()]] - `method` [EXTRACTED]
-- [[.test_path_traversal_rejected()]] - `method` [EXTRACTED]
-- [[ConfusedDeputyError]] - `uses` [INFERRED]
-- [[OAuthError]] - `uses` [INFERRED]
-- [[OAuthRequest]] - `uses` [INFERRED]
+- [[dot-test_different_uri_rejected()]] - `method` [EXTRACTED]
+- [[dot-test_exact_match_accepted()]] - `method` [EXTRACTED]
+- [[dot-test_http_rejected()]] - `method` [EXTRACTED]
+- [[dot-test_path_traversal_rejected()_1]] - `method` [EXTRACTED]
 - [[OAuthSecurityValidator]] - `uses` [INFERRED]
-- [[PKCEViolation]] - `uses` [INFERRED]
 - [[RedirectMismatch]] - `uses` [INFERRED]
 - [[test_oauth_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_45
+#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator

@@ -1,22 +1,19 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "Community 40"
+community: "_engine"
 location: "L490"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_40
+  - community/_engine
 ---
 
 # TestRebuild
 
 ## Connections
-- [[.test_rebuild_failure_returns_500()]] - `method` [EXTRACTED]
-- [[.test_rebuild_success()]] - `method` [EXTRACTED]
-- [[KillSwitchAction]] - `uses` [INFERRED]
-- [[ModeRequest]] - `uses` [INFERRED]
-- [[UpdateRequest]] - `uses` [INFERRED]
+- [[dot-test_rebuild_failure_returns_500()]] - `method` [EXTRACTED]
+- [[dot-test_rebuild_success()]] - `method` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_40
+#graphify/code #graphify/EXTRACTED #community/_engine

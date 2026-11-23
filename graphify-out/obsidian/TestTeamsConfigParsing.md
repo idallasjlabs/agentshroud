@@ -1,22 +1,21 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "Community 18"
+community: "TeamsConfig"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/TeamsConfig
 ---
 
 # TestTeamsConfigParsing
 
 ## Connections
-- [[.test_empty_teams_parses()]] - `method` [EXTRACTED]
-- [[.test_parses_groups()]] - `method` [EXTRACTED]
-- [[.test_parses_projects()]] - `method` [EXTRACTED]
-- [[GroupConfig]] - `uses` [INFERRED]
+- [[dot-test_empty_teams_parses()]] - `method` [EXTRACTED]
+- [[dot-test_parses_groups()]] - `method` [EXTRACTED]
+- [[dot-test_parses_projects()]] - `method` [EXTRACTED]
 - [[TeamsConfig]] - `uses` [INFERRED]
 - [[test_group_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_18
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

@@ -1,19 +1,23 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "Community 38"
+community: "soc/models.py"
 location: "L79"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_38
+  - graphify/INFERRED
+  - community/soc/modelspy
 ---
 
 # TestServiceDescriptor
 
 ## Connections
-- [[.test_defaults()_2]] - `method` [EXTRACTED]
-- [[.test_with_resource_usage()]] - `method` [EXTRACTED]
+- [[dot-test_defaults()_2]] - `method` [EXTRACTED]
+- [[dot-test_with_resource_usage()]] - `method` [EXTRACTED]
+- [[HealthStatus]] - `uses` [INFERRED]
+- [[ResourceUsage_1]] - `uses` [INFERRED]
+- [[ServiceDescriptor]] - `uses` [INFERRED]
+- [[ServiceStatus]] - `uses` [INFERRED]
 - [[test_soc_models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_38
+#graphify/code #graphify/INFERRED #community/soc/modelspy

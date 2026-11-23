@@ -1,28 +1,26 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "Community 1790"
+community: "SessionManager"
 location: "L50"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_1790
+  - graphify/EXTRACTED
+  - community/SessionManager
 ---
 
 # TestSessionValidation
 
 ## Connections
-- [[.test_expired_session_rejected()]] - `method` [EXTRACTED]
-- [[.test_unknown_session_rejected()]] - `method` [EXTRACTED]
-- [[.test_valid_session_accepted()]] - `method` [EXTRACTED]
-- [[.test_wrong_ip_rejected()]] - `method` [EXTRACTED]
-- [[.test_wrong_user_agent_rejected()]] - `method` [EXTRACTED]
-- [[EventInjectionError]] - `uses` [INFERRED]
-- [[RateLimitExceeded]] - `uses` [INFERRED]
+- [[dot-test_expired_session_rejected()]] - `method` [EXTRACTED]
+- [[dot-test_unknown_session_rejected()]] - `method` [EXTRACTED]
+- [[dot-test_valid_session_accepted()]] - `method` [EXTRACTED]
+- [[dot-test_wrong_ip_rejected()]] - `method` [EXTRACTED]
+- [[dot-test_wrong_user_agent_rejected()]] - `method` [EXTRACTED]
 - [[SessionBindingError]] - `uses` [INFERRED]
 - [[SessionError]] - `uses` [INFERRED]
 - [[SessionExpired]] - `uses` [INFERRED]
 - [[SessionManager]] - `uses` [INFERRED]
 - [[test_session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1790
+#graphify/code #graphify/EXTRACTED #community/SessionManager

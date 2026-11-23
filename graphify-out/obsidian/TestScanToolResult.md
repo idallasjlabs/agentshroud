@@ -1,27 +1,23 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Community 1209"
+community: "TestScanToolResult"
 location: "L836"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1209
+  - community/TestScanToolResult
 ---
 
 # TestScanToolResult
 
 ## Connections
-- [[.test_exception_fails_open()]] - `method` [EXTRACTED]
-- [[.test_log_action_no_patterns_returns_original()]] - `method` [EXTRACTED]
-- [[.test_log_action_with_patterns_returns_original()]] - `method` [EXTRACTED]
-- [[.test_no_scanner_passthrough()]] - `method` [EXTRACTED]
-- [[.test_strip_action_returns_sanitized()]] - `method` [EXTRACTED]
-- [[.test_warn_action_returns_sanitized()]] - `method` [EXTRACTED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
+- [[dot-test_exception_fails_open()]] - `method` [EXTRACTED]
+- [[dot-test_log_action_no_patterns_returns_original()]] - `method` [EXTRACTED]
+- [[dot-test_log_action_with_patterns_returns_original()]] - `method` [EXTRACTED]
+- [[dot-test_no_scanner_passthrough()]] - `method` [EXTRACTED]
+- [[dot-test_strip_action_returns_sanitized()]] - `method` [EXTRACTED]
+- [[dot-test_warn_action_returns_sanitized()]] - `method` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1209
+#graphify/code #graphify/EXTRACTED #community/TestScanToolResult

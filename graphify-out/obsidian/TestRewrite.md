@@ -1,23 +1,22 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "Community 1808"
+community: "._results"
 location: "L421"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1808
+  - community/_results
 ---
 
 # TestRewrite
 
 ## Connections
-- [[._results()]] - `method` [EXTRACTED]
-- [[.test_rewrite_is_idempotent()]] - `method` [EXTRACTED]
-- [[.test_rewrite_never_touches_hermes()]] - `method` [EXTRACTED]
-- [[.test_rewrite_sets_status_and_layers()]] - `method` [EXTRACTED]
-- [[.test_rewrite_untargeted_id_unchanged()]] - `method` [EXTRACTED]
-- [[WebContentScanner]] - `uses` [INFERRED]
+- [[dot-_results()]] - `method` [EXTRACTED]
+- [[dot-test_rewrite_is_idempotent()]] - `method` [EXTRACTED]
+- [[dot-test_rewrite_never_touches_hermes()]] - `method` [EXTRACTED]
+- [[dot-test_rewrite_sets_status_and_layers()]] - `method` [EXTRACTED]
+- [[dot-test_rewrite_untargeted_id_unchanged()]] - `method` [EXTRACTED]
 - [[test_triage_cve_mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1808
+#graphify/code #graphify/EXTRACTED #community/_results

@@ -1,28 +1,24 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "Community 8"
+community: "ToolChainAnalyzer"
 location: "L525"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_8
+  - graphify/EXTRACTED
+  - community/ToolChainAnalyzer
 ---
 
 # TestReversibilityScoring
 
 ## Connections
-- [[.analyzer()_1]] - `method` [EXTRACTED]
-- [[.test_delete_file_mostly_irreversible()]] - `method` [EXTRACTED]
-- [[.test_read_file_fully_reversible()]] - `method` [EXTRACTED]
-- [[.test_reversibility_below_threshold_has_reasoning()]] - `method` [EXTRACTED]
-- [[.test_unknown_tool_defaults_low()]] - `method` [EXTRACTED]
-- [[ChainAction]] - `uses` [INFERRED]
-- [[ChainMatch]] - `uses` [INFERRED]
-- [[ParamScanResult]] - `uses` [INFERRED]
+- [[dot-analyzer()_1]] - `method` [EXTRACTED]
+- [[dot-test_delete_file_mostly_irreversible()]] - `method` [EXTRACTED]
+- [[dot-test_read_file_fully_reversible()]] - `method` [EXTRACTED]
+- [[dot-test_reversibility_below_threshold_has_reasoning()]] - `method` [EXTRACTED]
+- [[dot-test_unknown_tool_defaults_low()]] - `method` [EXTRACTED]
 - [[ReversibilityScore]] - `uses` [INFERRED]
-- [[RiskLevel_4]] - `uses` [INFERRED]
 - [[ToolChainAnalyzer]] - `uses` [INFERRED]
 - [[test_tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_8
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

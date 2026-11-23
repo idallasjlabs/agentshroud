@@ -1,26 +1,22 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "Community 120"
-location: "L326"
+community: "SessionManager"
+location: "L110"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_120
+  - graphify/EXTRACTED
+  - community/SessionManager
 ---
 
 # TestRateLimiting
 
 ## Connections
-- [[.test_different_domains_independent()]] - `method` [EXTRACTED]
-- [[.test_rate_limit_blocks_excess()]] - `method` [EXTRACTED]
-- [[.test_rate_limiter_reset()]] - `method` [EXTRACTED]
-- [[AuditChain]] - `uses` [INFERRED]
-- [[DomainSettings]] - `uses` [INFERRED]
-- [[ProxyAction]] - `uses` [INFERRED]
-- [[RateLimiter_1]] - `uses` [INFERRED]
-- [[WebProxy_1]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
-- [[test_web_proxy.py]] - `contains` [EXTRACTED]
+- [[dot-test_different_ips_not_rate_limited()]] - `method` [EXTRACTED]
+- [[dot-test_rate_limit_exceeded()]] - `method` [EXTRACTED]
+- [[dot-test_rate_limit_resets_after_window()]] - `method` [EXTRACTED]
+- [[RateLimitExceeded]] - `uses` [INFERRED]
+- [[SessionManager]] - `uses` [INFERRED]
+- [[test_session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_120
+#graphify/code #graphify/EXTRACTED #community/SessionManager
