@@ -1,37 +1,22 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "Community 45"
+community: "OAuthSecurityValidator"
 location: "L39"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_45
+  - graphify/EXTRACTED
+  - community/OAuthSecurityValidator
 ---
 
 # RedirectMismatch
 
 ## Connections
-- [[.validate_redirect_uri()]] - `calls` [EXTRACTED]
+- [[dot-validate_redirect_uri()]] - `calls` [EXTRACTED]
 - [[OAuthError]] - `inherits` [EXTRACTED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth_1]] - `uses` [INFERRED]
-- [[TestClientValidation]] - `uses` [INFERRED]
-- [[TestConsentCookieBinding]] - `uses` [INFERRED]
-- [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
-- [[TestCryptography]] - `uses` [INFERRED]
-- [[TestFileSandbox]] - `uses` [INFERRED]
-- [[TestLoggingSecurity]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
-- [[TestPIIDetection_1]] - `uses` [INFERRED]
-- [[TestPKCE]] - `uses` [INFERRED]
-- [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestRedirectURI]] - `uses` [INFERRED]
-- [[TestResourceProtection]] - `uses` [INFERRED]
-- [[TestStateValidation]] - `uses` [INFERRED]
-- [[TestSupplyChain_1]] - `uses` [INFERRED]
-- [[oauth_security.py]] - `contains` [EXTRACTED]
+- [[oauth_security.py_2]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_45
+#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator

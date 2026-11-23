@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "Community 766"
+community: "auth.py"
 location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_766
+  - community/authpy
 ---
 
 # RateLimiter.check(client_id)
 
 ## Connections
-- [[Function Details]] - `contains` [EXTRACTED]
+- [[Function Details_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_766
+#graphify/document #graphify/EXTRACTED #community/authpy

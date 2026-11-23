@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Community 337"
+community: ".agents/skills/i-tw/SKILL.md"
 location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_337
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # README — Entry Point for a Repo or Service
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Document-Type Patterns_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_337
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

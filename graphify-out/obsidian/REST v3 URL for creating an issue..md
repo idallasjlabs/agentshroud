@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "rationale"
-community: "Community 148"
+community: "jira_dev_ticket.py"
 location: "L111"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_148
+  - community/jira_dev_ticketpy
 ---
 
 # REST v3 URL for creating an issue.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[build_issue_url()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_148
+#graphify/rationale #graphify/EXTRACTED #community/jira_dev_ticketpy

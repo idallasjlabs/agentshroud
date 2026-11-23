@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/sav/SKILL.md"
+source_file: ".agents/agents/sav.md"
 type: "document"
-community: "Community 426"
-location: "L103"
+community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE"
+location: "L105"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_426
+  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE
 ---
 
 # REQUIRED NOTES — PRODUCE EVERY ONE OF THESE
@@ -35,4 +35,4 @@ tags:
 - [[`09 - DiagramsFull System Flowchart.md`_1]] - `contains` [EXTRACTED]
 - [[`09 - DiagramsStartup Flow Diagram.md`_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_426
+#graphify/document #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE

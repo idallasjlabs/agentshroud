@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/security-supply-chain.md"
+source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Community 570"
-location: "L116"
+community: "OpenClaw Setup Guide - agentshroud.ai Bot"
+location: "L435"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_570
+  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
 ---
 
 # Recommendations
 
 ## Connections
-- [[Security Supply Chain Analysis]] - `contains` [EXTRACTED]
+- [[Security Notes_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_570
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot

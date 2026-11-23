@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
+source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
 type: "document"
-community: "Community 1136"
-location: "L42"
+community: "Kill Switch Procedure"
+location: "L141"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1136
+  - community/Kill_Switch_Procedure
 ---
 
 # Related Notes
 
 ## Connections
-- [[installer.py_2]] - `contains` [EXTRACTED]
+- [[Kill Switch Procedure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1136
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch_Procedure

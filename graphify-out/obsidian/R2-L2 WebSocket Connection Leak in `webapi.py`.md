@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md"
 type: "document"
-community: "Community 357"
+community: "Blue Team Security Assessment — AgentShroud v0.8.0 Round 2"
 location: "L170"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_357
+  - community/Blue_Team_Security_Assessment__AgentShroud_v080_Round_2
 ---
 
 # R2-L2: WebSocket Connection Leak in `web/api.py`
 
 ## Connections
-- [[LOW Findings]] - `contains` [EXTRACTED]
+- [[LOW Findings_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_357
+#graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Assessment__AgentShroud_v080_Round_2

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "Community 684"
+community: "EnvironmentGuard"
 location: "L345"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_684
+  - community/EnvironmentGuard
 ---
 
 # Record a detected environment leakage.
 
 ## Connections
-- [[._record_leakage()]] - `rationale_for` [EXTRACTED]
+- [[dot-_record_leakage()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_684
+#graphify/rationale #graphify/EXTRACTED #community/EnvironmentGuard

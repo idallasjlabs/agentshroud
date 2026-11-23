@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
 type: "document"
-community: "Community 556"
+community: "models.py"
 location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_556
+  - community/modelspy
 ---
 
 # RedactionDetail
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Model Details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_556
+#graphify/document #graphify/EXTRACTED #community/modelspy

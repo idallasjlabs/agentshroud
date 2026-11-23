@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "rationale"
-community: "Community 2133"
+community: "TestSnapshotSmoke"
 location: "L667"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2133
+  - community/TestSnapshotSmoke
 ---
 
 # Re-running against the LIVE registry adds nothing (backlog already synced).
 
 ## Connections
-- [[.test_live_registry_is_idempotent_no_new_backlog()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_live_registry_is_idempotent_no_new_backlog()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2133
+#graphify/rationale #graphify/EXTRACTED #community/TestSnapshotSmoke

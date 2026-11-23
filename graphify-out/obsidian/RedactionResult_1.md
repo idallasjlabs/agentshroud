@@ -1,23 +1,19 @@
 ---
-source_file: "gateway/ingest_api/sanitizer.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Community 84"
-location: "L195"
+community: "middleware.py"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_84
+  - community/middlewarepy
 ---
 
 # RedactionResult
 
 ## Connections
-- [[._apply_enforcement()]] - `references` [EXTRACTED]
-- [[._sanitize_presidio()]] - `references` [EXTRACTED]
-- [[._sanitize_regex()]] - `references` [EXTRACTED]
-- [[.sanitize()]] - `references` [EXTRACTED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[RedactionDetail]] - `uses` [INFERRED]
-- [[RedactionResult]] - `uses` [INFERRED]
+- [[dot-scan_response()_2]] - `calls` [EXTRACTED]
+- [[Result of scanning and redacting content.]] - `rationale_for` [EXTRACTED]
+- [[prompt_protection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_84
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

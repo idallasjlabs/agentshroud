@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
+source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "document"
-community: "Community 853"
-location: "L40"
+community: "Dockerfile — Gateway"
+location: "L96"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_853
+  - community/Dockerfile__Gateway
 ---
 
 # Related Notes
 
 ## Connections
-- [[proxy_status.py_2]] - `contains` [EXTRACTED]
+- [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_853
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Gateway

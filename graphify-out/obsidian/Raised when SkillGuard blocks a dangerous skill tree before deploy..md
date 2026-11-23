@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Community 49"
+community: "_skills_reload_impl"
 location: "L962"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/_skills_reload_impl
 ---
 
 # Raised when SkillGuard blocks a dangerous skill tree before deploy.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SkillGuardBlocked]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_49
+#graphify/rationale #graphify/EXTRACTED #community/_skills_reload_impl

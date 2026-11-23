@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/text_control_center.py.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md"
 type: "document"
-community: "Community 1178"
-location: "L31"
+community: "Troubleshooting Matrix"
+location: "L143"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1178
+  - community/Troubleshooting_Matrix
 ---
 
 # Related Notes
 
 ## Connections
-- [[text_control_center.py  agentshroud_manager.py]] - `contains` [EXTRACTED]
+- [[Troubleshooting Matrix_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1178
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting_Matrix

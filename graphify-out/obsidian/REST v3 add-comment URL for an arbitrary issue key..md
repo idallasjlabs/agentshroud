@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "rationale"
-community: "Community 148"
+community: "jira_dev_ticket.py"
 location: "L116"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_148
+  - community/jira_dev_ticketpy
 ---
 
 # REST v3 add-comment URL for an arbitrary issue key.
 
 ## Connections
-- [[build_comment_url()]] - `rationale_for` [EXTRACTED]
+- [[build_comment_url()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_148
+#graphify/rationale #graphify/EXTRACTED #community/jira_dev_ticketpy

@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 231"
+community: "Typography in Practice"
 location: "L107"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_231
+  - community/Typography_in_Practice
 ---
 
 # Readability
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Typography in Practice]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_231
+#graphify/document #graphify/EXTRACTED #community/Typography_in_Practice
