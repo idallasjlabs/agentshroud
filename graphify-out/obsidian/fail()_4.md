@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/tailscale-check.sh"
+source_file: "docker/tests/test-get-credential.sh"
 type: "code"
-community: "Community 933"
-location: "L17"
+community: "test-get-credential.sh"
+location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_933
+  - community/test-get-credentialsh
 ---
 
 # fail()
 
 ## Connections
-- [[tailscale-check.sh]] - `defines` [EXTRACTED]
-- [[tailscale-check.sh script]] - `calls` [EXTRACTED]
+- [[test-get-credential.sh]] - `defines` [EXTRACTED]
+- [[test-get-credential.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_933
+#graphify/code #graphify/EXTRACTED #community/test-get-credentialsh

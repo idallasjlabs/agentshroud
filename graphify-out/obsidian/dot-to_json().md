@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "SecurityPipeline (3)"
+community: ".from_source"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline_3
+  - community/from_source
 ---
 
 # .to_json()
@@ -14,6 +14,5 @@ tags:
 ## Connections
 - [[dot-to_dict()_14]] - `calls` [EXTRACTED]
 - [[SkillsManifest]] - `method` [EXTRACTED]
-- [[deploy_manifest()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_3
+#graphify/code #graphify/EXTRACTED #community/from_source

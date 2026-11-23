@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_privacy_policy.py"
+source_file: "gateway/tests/test_output_schema.py"
 type: "code"
-community: "Community 97"
-location: "L56"
+community: "OutputSchemaEnforcer"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_97
+  - community/OutputSchemaEnforcer
 ---
 
 # enforcer()
 
 ## Connections
-- [[PrivacyPolicyEnforcer]] - `calls` [EXTRACTED]
-- [[test_privacy_policy.py]] - `contains` [EXTRACTED]
+- [[OutputSchemaEnforcer]] - `uses` [INFERRED]
+- [[fixture_94]] - `references` [EXTRACTED]
+- [[test_output_schema.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_97
+#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer

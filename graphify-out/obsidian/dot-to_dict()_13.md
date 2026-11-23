@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/skills/manifest.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "SecurityPipeline (3)"
-location: "L68"
+community: "AuditEvent"
+location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline_3
+  - community/AuditEvent
 ---
 
 # .to_dict()
 
 ## Connections
-- [[ManifestEntry]] - `method` [EXTRACTED]
+- [[AuditEvent]] - `method` [EXTRACTED]
+- [[Convert to dictionary representation.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_3
+#graphify/code #graphify/EXTRACTED #community/AuditEvent

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_privilege_separation.py"
+source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "._make_proxy()"
-location: "L212"
+community: "middleware.py"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/middlewarepy
 ---
 
 # .test_workspace_read_allowed()
 
 ## Connections
-- [[Agent can read its own workspace.]] - `rationale_for` [EXTRACTED]
-- [[TestReadAccess]] - `method` [EXTRACTED]
+- [[TestNormalFileOperations]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

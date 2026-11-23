@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary_tripwire.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "CanaryTripwire"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/CanaryTripwire
 ---
 
 # .test_zero_width_bypass()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/CanaryTripwire

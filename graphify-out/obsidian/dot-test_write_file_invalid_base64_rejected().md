@@ -12,7 +12,7 @@ tags:
 # .test_write_file_invalid_base64_rejected()
 
 ## Connections
-- [[Malformed base64 is rejected at the Pydantic model layer (422),         never si]] - `rationale_for` [EXTRACTED]
+- [[Malformed base64 is rejected at the Pydantic model layer (422), never silently…]] - `rationale_for` [EXTRACTED]
 - [[TestSSHWriteFileEndpoint]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SSHProxy

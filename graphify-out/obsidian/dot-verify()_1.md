@@ -1,22 +1,20 @@
 ---
-source_file: "gateway/security/mfa_guard.py"
+source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "test_voice_latency_guard.py"
-location: "L209"
+community: "InstructionEnvelope"
+location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/InstructionEnvelope
 ---
 
 # .verify()
 
 ## Connections
-- [[dot-_prune_used()]] - `calls` [EXTRACTED]
-- [[dot-_totp_for_counter()]] - `calls` [EXTRACTED]
-- [[dot-is_required()]] - `calls` [EXTRACTED]
-- [[MFAGuard_2]] - `method` [EXTRACTED]
-- [[MFAResult]] - `references` [EXTRACTED]
-- [[Verify the second factor for a high-risk action.          Args             acti]] - `rationale_for` [EXTRACTED]
+- [[dot-_compute_signature()]] - `calls` [EXTRACTED]
+- [[EnvelopeSigner]] - `method` [EXTRACTED]
+- [[InstructionEnvelope]] - `references` [EXTRACTED]
+- [[Return True if the envelope's signature is valid.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/code #graphify/EXTRACTED #community/InstructionEnvelope

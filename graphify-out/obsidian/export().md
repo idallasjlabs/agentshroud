@@ -1,23 +1,23 @@
 ---
 source_file: "scripts/export-telegram-history.py"
 type: "code"
-community: "Community 777"
+community: "export-bot-conversations.py"
 location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_777
+  - community/export-bot-conversationspy
 ---
 
 # export()
 
 ## Connections
-- [[Path_52]] - `references` [EXTRACTED]
+- [[Path_71]] - `references` [EXTRACTED]
 - [[_require_env()]] - `calls` [EXTRACTED]
 - [[_serialize()]] - `calls` [EXTRACTED]
-- [[datetime_9]] - `references` [EXTRACTED]
+- [[datetime_8]] - `references` [EXTRACTED]
 - [[export-telegram-history.py]] - `contains` [EXTRACTED]
 - [[export_hermes()]] - `conceptually_related_to` [INFERRED]
-- [[main()_22]] - `calls` [EXTRACTED]
+- [[main()_36]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_777
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/agent_isolation.py"
+source_file: "gateway/security/soc_correlation.py"
 type: "code"
-community: "test_a2a_policy.py"
-location: "L74"
+community: "ingest_api/main.py"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/ingest_api/mainpy
 ---
 
 # .to_dict()
 
 ## Connections
-- [[AgentRegistry]] - `method` [EXTRACTED]
-- [[Serialize registry to dict.]] - `rationale_for` [EXTRACTED]
+- [[Any_73]] - `references` [EXTRACTED]
+- [[CorrelationSummary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

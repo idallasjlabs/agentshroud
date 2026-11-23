@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "PromptGuard"
+community: "PIIConfig"
 location: "L378"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/PIIConfig
 ---
 
 # .test_write_baseline_json()
 
 ## Connections
-- [[PromptGuard_1]] - `calls` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
 - [[Run standard benchmarks and write results to .benchmarksbaseline-v1.0.0.json.]] - `rationale_for` [EXTRACTED]
 - [[TestBenchmarkBaseline]] - `method` [EXTRACTED]
-- [[TrustManager_1]] - `calls` [EXTRACTED]
+- [[TrustManager]] - `calls` [EXTRACTED]
+- [[asyncio_15]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptGuard
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

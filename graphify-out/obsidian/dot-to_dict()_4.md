@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/security/delegation.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
-location: "L49"
+community: "Delegation"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/Delegation
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-_save_integrity_database()]] - `calls` [EXTRACTED]
-- [[Any_19]] - `references` [EXTRACTED]
-- [[Convert to dictionary for JSON serialization.]] - `rationale_for` [EXTRACTED]
-- [[FileIntegrityRecord]] - `method` [EXTRACTED]
+- [[Delegation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/Delegation

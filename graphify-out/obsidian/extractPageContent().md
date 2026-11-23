@@ -1,17 +1,18 @@
 ---
 source_file: "browser-extension/background.js"
 type: "code"
-community: "Community 464"
+community: "background.js"
 location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_464
+  - community/backgroundjs
 ---
 
 # extractPageContent()
 
 ## Connections
-- [[background.js]] - `references` [EXTRACTED]
+- [[background.js]] - `contains` [EXTRACTED]
+- [[clipPage()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_464
+#graphify/code #graphify/EXTRACTED #community/backgroundjs

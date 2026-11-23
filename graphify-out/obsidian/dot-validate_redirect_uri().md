@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "_wrap_response()"
+community: "OAuthSecurityValidator"
 location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/OAuthSecurityValidator
 ---
 
 # .validate_redirect_uri()
@@ -16,4 +16,4 @@ tags:
 - [[OAuthSecurityValidator]] - `method` [EXTRACTED]
 - [[RedirectMismatch]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator

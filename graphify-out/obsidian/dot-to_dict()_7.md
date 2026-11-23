@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
-location: "L88"
+community: ".get_or_create_session"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue_enhanced_queuepy
+  - community/get_or_create_session
 ---
 
 # .to_dict()
 
 ## Connections
-- [[AuditEvent_1]] - `method` [EXTRACTED]
-- [[Convert to dictionary representation.]] - `rationale_for` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
+- [[Convert session to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
+- [[UserSession]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy
+#graphify/code #graphify/EXTRACTED #community/get_or_create_session

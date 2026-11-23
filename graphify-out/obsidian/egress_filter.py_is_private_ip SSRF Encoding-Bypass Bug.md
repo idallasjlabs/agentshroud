@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "Community 1563"
+community: "Cross-Turn Correlation Capability"
 location: "lines 459-480"
 tags:
   - graphify/rationale
-  - graphify/EXTRACTED
-  - community/Community_1563
+  - graphify/INFERRED
+  - community/Cross-Turn_Correlation_Capability
 ---
 
 # egress_filter.py::_is_private_ip SSRF Encoding-Bypass Bug
 
 ## Connections
 - [[EgressFilter.check()]] - `shares_data_with` [INFERRED]
-- [[a2a_policy.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1563
+#graphify/rationale #graphify/INFERRED #community/Cross-Turn_Correlation_Capability

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "VIII. Evaluation"
+community: "test_multi_host_test.py"
 location: "L366"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/VIII_Evaluation
+  - community/test_multi_host_testpy
 ---
 
 # .test_wrapper_mixed_exit_codes_fail()
@@ -16,4 +16,4 @@ tags:
 - [[_run_wrapper()]] - `calls` [EXTRACTED]
 - [[_write_exec()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/VIII_Evaluation
+#graphify/code #graphify/EXTRACTED #community/test_multi_host_testpy

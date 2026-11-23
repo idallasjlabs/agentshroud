@@ -1,17 +1,18 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "Community 537"
+community: "drift_detector.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_537
+  - community/drift_detectorpy
 ---
 
 # drift_detector.py.md
 
 ## Connections
+- [[Data Flow]] - `references` [EXTRACTED]
 - [[drift_detector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_537
+#graphify/document #graphify/EXTRACTED #community/drift_detectorpy

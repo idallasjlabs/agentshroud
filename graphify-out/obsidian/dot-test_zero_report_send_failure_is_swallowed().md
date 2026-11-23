@@ -15,6 +15,6 @@ tags:
 - [[A Telegram failure on the zero-report path never raises.]] - `rationale_for` [EXTRACTED]
 - [[TestPerAgentUpstreamChecks]] - `method` [EXTRACTED]
 - [[_boom_send()_1]] - `indirect_call` [INFERRED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[asyncio_20]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

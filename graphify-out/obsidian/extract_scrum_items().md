@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "Community 238"
+community: "jira_weekly_review.py"
 location: "L185"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_238
+  - community/jira_weekly_reviewpy
 ---
 
 # extract_scrum_items()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Extract SCRUM-n keys mentioned in commit subjects.]] - `rationale_for` [EXTRACTED]
 - [[jira_weekly_review.py]] - `contains` [EXTRACTED]
-- [[run()_1]] - `calls` [EXTRACTED]
+- [[run()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_238
+#graphify/code #graphify/EXTRACTED #community/jira_weekly_reviewpy

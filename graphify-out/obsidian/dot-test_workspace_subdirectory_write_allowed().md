@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "._make_proxy()"
+community: "TestWorkspaceAccessPreserved"
 location: "L201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/TestWorkspaceAccessPreserved
 ---
 
 # .test_workspace_subdirectory_write_allowed()
@@ -15,4 +15,4 @@ tags:
 - [[Agent can write to subdirectories in workspace.]] - `rationale_for` [EXTRACTED]
 - [[TestWorkspaceAccessPreserved]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/TestWorkspaceAccessPreserved

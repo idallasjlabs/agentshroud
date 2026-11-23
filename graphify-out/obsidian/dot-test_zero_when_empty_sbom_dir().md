@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "FalcoAlertWatcher (2)"
+community: "get_sbom"
 location: "L690"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher_2
+  - community/get_sbom
 ---
 
 # .test_zero_when_empty_sbom_dir()
@@ -15,4 +15,4 @@ tags:
 - [[TestScoreSupplyChain_1]] - `method` [EXTRACTED]
 - [[_score_supply_chain()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher_2
+#graphify/code #graphify/EXTRACTED #community/get_sbom

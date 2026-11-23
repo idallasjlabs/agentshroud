@@ -1,22 +1,21 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "Community 96"
+community: "EncryptedStore"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_96
+  - community/EncryptedStore
 ---
 
 # encrypted_store.py
 
 ## Connections
-- [[Encrypted Store Module Badge Icon]] - `conceptually_related_to` [INFERRED]
+- [[Encrypted Memory Store — AES-256-GCM encryption for data at rest. Provides…]] - `rationale_for` [EXTRACTED]
 - [[EncryptedStore]] - `contains` [EXTRACTED]
-- [[FR4 Data Confidentiality]] - `references` [EXTRACTED]
 - [[_secure_zero()]] - `contains` [EXTRACTED]
-- [[canary.py]] - `references` [EXTRACTED]
-- [[env_guard.py]] - `references` [EXTRACTED]
+- [[test_security_hardening.py]] - `imports_from` [EXTRACTED]
+- [[test_security_integration.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_96
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

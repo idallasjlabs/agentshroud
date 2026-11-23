@@ -12,8 +12,8 @@ tags:
 # .test_whitespace_only_path_rejected_at_proxy_layer()
 
 ## Connections
-- [[Direct unit coverage of validate_write_file()'s own empty-path guard         (th]] - `rationale_for` [EXTRACTED]
-- [[SSHProxy_1]] - `calls` [EXTRACTED]
+- [[Direct unit coverage of validate_write_file()'s own empty-path guard (the…]] - `rationale_for` [EXTRACTED]
+- [[SSHProxy]] - `calls` [EXTRACTED]
 - [[TestSSHProxyValidateWriteFile]] - `method` [EXTRACTED]
 - [[_b64()]] - `calls` [EXTRACTED]
 

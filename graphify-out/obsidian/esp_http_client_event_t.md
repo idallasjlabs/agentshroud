@@ -1,12 +1,11 @@
 ---
-source_file: "firmware/voice-terminal/main/ota.c"
+source_file: ""
 type: "code"
-community: "Community 1039"
-location: "L14"
+community: "ota.c"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1039
+  - community/otac
 ---
 
 # esp_http_client_event_t
@@ -14,4 +13,4 @@ tags:
 ## Connections
 - [[_http_event_handler()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1039
+#graphify/code #graphify/EXTRACTED #community/otac

@@ -1,24 +1,23 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/engine.py.md"
-type: "document"
-community: "Community 931"
-location: "L10"
+source_file: "gateway/runtime/engine.py"
+type: "code"
+community: "AppleContainerEngine"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_931
+  - community/AppleContainerEngine
 ---
 
 # engine.py
 
 ## Connections
-- [[Abstract Method Reference]] - `contains` [EXTRACTED]
-- [[Configuration  Environment Variables_17]] - `contains` [EXTRACTED]
-- [[Function Details_23]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_26]] - `contains` [EXTRACTED]
-- [[Purpose_144]] - `contains` [EXTRACTED]
-- [[Related_30]] - `contains` [EXTRACTED]
-- [[Responsibilities_28]] - `contains` [EXTRACTED]
-- [[engine.py_1]] - `contains` [EXTRACTED]
+- [[ABC]] - `imports_from` [EXTRACTED]
+- [[ContainerEngine]] - `contains` [EXTRACTED]
+- [[ContainerInfo]] - `contains` [EXTRACTED]
+- [[apple_engine.py_2]] - `imports_from` [EXTRACTED]
+- [[docker_engine.py_2]] - `imports_from` [EXTRACTED]
+- [[podman_engine.py_2]] - `imports_from` [EXTRACTED]
+- [[runtime__init__.py]] - `re_exports` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_931
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

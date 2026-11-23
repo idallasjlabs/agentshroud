@@ -12,8 +12,13 @@ tags:
 # .test_write_file_sends_path_and_content_via_stdin()
 
 ## Connections
-- [[SSHProxy_1]] - `calls` [EXTRACTED]
+- [[SSHProxy]] - `calls` [EXTRACTED]
 - [[TestSSHProxyWriteFileTransport]] - `method` [EXTRACTED]
 - [[_b64()]] - `calls` [EXTRACTED]
+- [[asyncio_36]] - `references` [EXTRACTED]
+- [[communicate()_2]] - `contains` [EXTRACTED]
+- [[fake_create_subprocess_exec()_3]] - `indirect_call` [INFERRED]
+- [[kill()_2]] - `contains` [EXTRACTED]
+- [[wait()_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SSHProxy

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "pick_latest_stable"
+community: "ingest_api/models.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pick_latest_stable
+  - community/ingest_api/modelspy
 ---
 
 # exception_handler
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[global_exception_handler()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pick_latest_stable
+#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy

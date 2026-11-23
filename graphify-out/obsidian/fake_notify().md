@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "FakeRBAC"
 location: "L1282"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig_2
+  - community/FakeRBAC
 ---
 
 # fake_notify()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collaborator_revoke_command_is_blocked()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/INFERRED #community/FakeRBAC

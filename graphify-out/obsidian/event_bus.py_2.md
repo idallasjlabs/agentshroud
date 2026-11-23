@@ -1,27 +1,34 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
-type: "document"
-community: "Community 767"
-location: "L10"
+source_file: "gateway/ingest_api/event_bus.py"
+type: "code"
+community: "ingest_api/main.py"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_767
+  - community/ingest_api/mainpy
 ---
 
 # event_bus.py
 
 ## Connections
-- [[Config Keys Read_1]] - `contains` [EXTRACTED]
-- [[Environment Variables Used_1]] - `contains` [EXTRACTED]
-- [[Event Types Emitted by main.py]] - `contains` [EXTRACTED]
-- [[Function Details_1]] - `contains` [EXTRACTED]
-- [[Imports From  Exports To_1]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_1]] - `contains` [EXTRACTED]
-- [[Known Issues  Notes_1]] - `contains` [EXTRACTED]
-- [[Purpose_112]] - `contains` [EXTRACTED]
-- [[Related_2]] - `contains` [EXTRACTED]
-- [[Responsibilities_1]] - `contains` [EXTRACTED]
-- [[event_bus.py_1]] - `contains` [EXTRACTED]
+- [[EventBus]] - `contains` [EXTRACTED]
+- [[GatewayEvent]] - `contains` [EXTRACTED]
+- [[approval.py]] - `imports_from` [EXTRACTED]
+- [[call_pipeline.py]] - `imports_from` [EXTRACTED]
+- [[dashboard.py]] - `imports_from` [EXTRACTED]
+- [[forward.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[make_event()]] - `contains` [EXTRACTED]
+- [[service.py]] - `imports_from` [EXTRACTED]
+- [[state.py]] - `imports_from` [EXTRACTED]
+- [[test_alert_telegram_relay.py]] - `imports_from` [EXTRACTED]
+- [[test_dashboard.py]] - `imports_from` [EXTRACTED]
+- [[test_e2e.py]] - `imports_from` [EXTRACTED]
+- [[test_event_bus.py]] - `imports_from` [EXTRACTED]
+- [[test_soc_edge.py]] - `imports_from` [EXTRACTED]
+- [[test_soc_egress_endpoints.py]] - `imports_from` [EXTRACTED]
+- [[websocket.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_767
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

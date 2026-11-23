@@ -1,18 +1,20 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "Community 7"
+community: "test_security_integration.py"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/test_security_integrationpy
 ---
 
 # encrypted_store()
 
 ## Connections
-- [[EncryptedStore]] - `calls` [EXTRACTED]
+- [[EncryptedStore]] - `uses` [INFERRED]
+- [[fixture_107]] - `references` [EXTRACTED]
+- [[t_encrypt()]] - `indirect_call` [INFERRED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/test_security_integrationpy

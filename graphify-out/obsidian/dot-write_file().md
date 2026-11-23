@@ -12,8 +12,8 @@ tags:
 # .write_file()
 
 ## Connections
-- [[SSHProxy_1]] - `method` [EXTRACTED]
-- [[SSHWriteResult]] - `references` [EXTRACTED]
-- [[Write file content to a remote host via structured (non-shell-string) transport.]] - `rationale_for` [EXTRACTED]
+- [[SSHProxy]] - `method` [EXTRACTED]
+- [[SSHWriteResult]] - `calls` [EXTRACTED]
+- [[Write file content to a remote host via structured (non-shell-string)…]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SSHProxy

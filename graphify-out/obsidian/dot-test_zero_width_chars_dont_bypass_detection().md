@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "ProxyAction"
+community: "ToolResultInjectionScanner"
 location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/ToolResultInjectionScanner
 ---
 
 # .test_zero_width_chars_dont_bypass_detection()
@@ -15,4 +15,4 @@ tags:
 - [[TestUnicodeObfuscation]] - `method` [EXTRACTED]
 - [[Zero-width chars are stripped by normalize_input, so injection is still caught.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

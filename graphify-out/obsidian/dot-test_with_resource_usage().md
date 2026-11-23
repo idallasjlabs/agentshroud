@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "Enum"
+community: "soc/models.py"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/soc/modelspy
 ---
 
 # .test_with_resource_usage()
 
 ## Connections
-- [[ResourceUsage_2]] - `calls` [EXTRACTED]
-- [[ServiceDescriptor_1]] - `calls` [EXTRACTED]
+- [[ResourceUsage_1]] - `calls` [EXTRACTED]
+- [[ServiceDescriptor]] - `calls` [EXTRACTED]
 - [[TestServiceDescriptor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

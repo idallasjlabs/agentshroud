@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/soc_correlation.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "ResourceGuard (2)"
-location: "L44"
+community: "AgentRegistry"
+location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard_2
+  - community/AgentRegistry
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_77]] - `references` [EXTRACTED]
-- [[CorrelationSummary]] - `method` [EXTRACTED]
+- [[AgentRegistry]] - `method` [EXTRACTED]
+- [[Serialize registry to dict.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard_2
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

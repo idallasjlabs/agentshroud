@@ -1,26 +1,18 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
-type: "code"
-community: "Community 62"
+source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
+type: "document"
+community: "event_bus.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/event_buspy
 ---
 
-# event_bus.py
+# event_bus.py.md
 
 ## Connections
-- [[EventBus]] - `contains` [EXTRACTED]
-- [[GatewayEvent]] - `contains` [EXTRACTED]
-- [[approval.py]] - `imports_from` [EXTRACTED]
-- [[dashboard.py]] - `imports_from` [EXTRACTED]
-- [[forward.py]] - `imports_from` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[main.py_2]] - `imports_from` [EXTRACTED]
-- [[make_event()]] - `contains` [EXTRACTED]
-- [[state.py]] - `imports_from` [EXTRACTED]
-- [[websocket.py]] - `imports_from` [EXTRACTED]
+- [[Architecture Overview]] - `references` [EXTRACTED]
+- [[event_bus.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_62
+#graphify/document #graphify/EXTRACTED #community/event_buspy

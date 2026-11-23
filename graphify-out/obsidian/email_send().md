@@ -1,29 +1,27 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Community 2154"
+community: "ingest_api/models.py"
 location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2154
+  - community/ingest_api/modelspy
 ---
 
 # email_send()
 
 ## Connections
-- [[ApprovalRequest_3]] - `calls` [EXTRACTED]
-- [[AuthRequired_3]] - `references` [EXTRACTED]
-- [[Email send gateway (P3 channel ownership).      The bot submits email send requ]] - `rationale_for` [EXTRACTED]
-- [[EmailSendRequest_1]] - `references` [EXTRACTED]
-- [[EmailSendResponse]] - `calls` [EXTRACTED]
-- [[GatewayEmailService]] - `calls` [EXTRACTED]
-- [[HTTPException]] - `calls` [INFERRED]
-- [[Owner-allowlist checked before PII sanitisation to avoid CVEdate-dense body collapse]] - `rationale_for` [EXTRACTED]
-- [[Request_5]] - `references` [EXTRACTED]
+- [[ApprovalRequest]] - `uses` [INFERRED]
+- [[AuthRequired]] - `references` [EXTRACTED]
+- [[Email send gateway (P3 channel ownership). The bot submits email send requests…]] - `rationale_for` [EXTRACTED]
+- [[EmailSendRequest]] - `uses` [INFERRED]
+- [[EmailSendResponse]] - `uses` [INFERRED]
+- [[Request_3]] - `references` [EXTRACTED]
+- [[_get_gmail_app_password()]] - `indirect_call` [INFERRED]
 - [[_is_email_recipient_allowed()]] - `calls` [EXTRACTED]
 - [[email_send_owner()]] - `calls` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]
-- [[test_email_owner_bypasses_pii.py]] - `calls` [EXTRACTED]
+- [[post_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2154
+#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy

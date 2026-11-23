@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "SecurityPipeline (2)"
+community: "AuditChain"
 location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline_2
+  - community/AuditChain
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_67]] - `references` [EXTRACTED]
-- [[PipelineResult_1]] - `method` [EXTRACTED]
+- [[Any_74]] - `references` [EXTRACTED]
+- [[PipelineResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_2
+#graphify/code #graphify/EXTRACTED #community/AuditChain
