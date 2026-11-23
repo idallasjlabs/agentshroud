@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-mm.md"
+source_file: ".agents/agents/i-tdd.md"
 type: "document"
-community: "Community 513"
-location: "L45"
+community: "Skill: Test-Driven Development (TDD)"
+location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_513
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Mindmap Architect (MM)]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_513
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

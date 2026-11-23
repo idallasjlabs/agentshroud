@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "rationale"
-community: "Community 514"
+community: "MultiHostResult"
 location: "L126"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_514
+  - community/MultiHostResult
 ---
 
 # Aggregated outcome across all hosts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MultiHostResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_514
+#graphify/rationale #graphify/EXTRACTED #community/MultiHostResult

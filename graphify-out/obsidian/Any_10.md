@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/inbound_edge/facades.py"
+source_file: ""
 type: "code"
-community: "Community 80"
-location: "L56"
+community: "EnvironmentGuard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_80
+  - community/EnvironmentGuard
 ---
 
 # Any
 
 ## Connections
-- [[._parse()]] - `references` [EXTRACTED]
-- [[.run()_1]] - `references` [EXTRACTED]
-- [[.run()_3]] - `references` [EXTRACTED]
-- [[.run()_2]] - `references` [EXTRACTED]
-- [[EnvelopeSigner_1]] - `uses` [INFERRED]
+- [[dot-get_leakage_summary()]] - `references` [EXTRACTED]
+- [[dot-monitor_environment_access()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_80
+#graphify/code #graphify/EXTRACTED #community/EnvironmentGuard

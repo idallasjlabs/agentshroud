@@ -1,33 +1,16 @@
 ---
-source_file: "gateway/inbound_edge/call_pipeline.py"
+source_file: ""
 type: "code"
-community: "Community 2048"
-location: "L77"
+community: "TestAggregateResults"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_2048
+  - graphify/EXTRACTED
+  - community/TestAggregateResults
 ---
 
 # Any
 
 ## Connections
-- [[._p0()]] - `references` [EXTRACTED]
-- [[._record()]] - `references` [EXTRACTED]
-- [[._scrub()]] - `references` [EXTRACTED]
-- [[.call_tool()]] - `references` [EXTRACTED]
-- [[.list_tools()]] - `references` [EXTRACTED]
-- [[.run()]] - `references` [EXTRACTED]
-- [[ApprovalContext]] - `uses` [INFERRED]
-- [[ApprovalDenied]] - `uses` [INFERRED]
-- [[ApprovalPending]] - `uses` [INFERRED]
-- [[EdgeApprovals]] - `uses` [INFERRED]
-- [[EdgePrincipal_1]] - `uses` [INFERRED]
-- [[LockdownLevel_1]] - `uses` [INFERRED]
-- [[TokenRejected]] - `uses` [INFERRED]
-- [[TokenService]] - `uses` [INFERRED]
-- [[VendorProfile_2]] - `uses` [INFERRED]
-- [[_result()]] - `references` [EXTRACTED]
-- [[_string_leaves()]] - `references` [EXTRACTED]
+- [[_stub_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_2048
+#graphify/code #graphify/EXTRACTED #community/TestAggregateResults

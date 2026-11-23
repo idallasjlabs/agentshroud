@@ -1,20 +1,16 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: ""
 type: "code"
-community: "Community 229"
-location: "L35"
+community: "SecurityPipeline"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_229
+  - community/SecurityPipeline
 ---
 
 # Any
 
 ## Connections
-- [[.get_recent()]] - `references` [EXTRACTED]
-- [[.get_stats()]] - `references` [EXTRACTED]
-- [[.to_dict()]] - `references` [EXTRACTED]
-- [[make_event()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_229
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

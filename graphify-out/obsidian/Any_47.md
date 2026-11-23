@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/env_guard.py"
+source_file: ""
 type: "code"
-community: "Community 1287"
-location: "L289"
+community: "classify"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1287
+  - community/classify
 ---
 
 # Any
 
 ## Connections
-- [[.get_leakage_summary()]] - `references` [EXTRACTED]
-- [[.monitor_environment_access()]] - `references` [EXTRACTED]
+- [[_is_benign_skip()]] - `references` [EXTRACTED]
+- [[classify()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1287
+#graphify/code #graphify/EXTRACTED #community/classify

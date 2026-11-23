@@ -1,19 +1,16 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: ""
 type: "code"
-community: "Community 420"
-location: "L153"
+community: "SessionManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_420
+  - community/SessionManager
 ---
 
 # Any
 
 ## Connections
-- [[.to_dict()_15]] - `references` [EXTRACTED]
-- [[load_registry()]] - `references` [EXTRACTED]
-- [[plan_remediation()]] - `references` [EXTRACTED]
+- [[dot-validate_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_420
+#graphify/code #graphify/EXTRACTED #community/SessionManager

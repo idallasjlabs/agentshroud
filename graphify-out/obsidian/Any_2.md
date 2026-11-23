@@ -1,18 +1,24 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: ""
 type: "code"
-community: "Community 439"
-location: "L369"
+community: "soc/router.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_439
+  - community/soc/routerpy
 ---
 
 # Any
 
 ## Connections
-- [[._append_audit_event()]] - `references` [EXTRACTED]
-- [[.broadcast()_1]] - `references` [EXTRACTED]
+- [[_deployment_state()]] - `references` [EXTRACTED]
+- [[_edge_snapshot()]] - `references` [EXTRACTED]
+- [[_hosted_edge_rows()]] - `references` [EXTRACTED]
+- [[_hosted_status()]] - `references` [EXTRACTED]
+- [[_log_audit()]] - `references` [EXTRACTED]
+- [[_profile_catalog()]] - `references` [EXTRACTED]
+- [[_run_killswitch()]] - `references` [EXTRACTED]
+- [[_unhooked_hosted_rows()]] - `references` [EXTRACTED]
+- [[auth_ws_token()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_439
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

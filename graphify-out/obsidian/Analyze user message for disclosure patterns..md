@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "Community 1281"
+community: "test_all_modules_enforce.py"
 location: "L213"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1281
+  - community/test_all_modules_enforcepy
 ---
 
 # Analyze user message for disclosure patterns.
 
 ## Connections
-- [[._analyze_user_message()]] - `rationale_for` [EXTRACTED]
+- [[dot-_analyze_user_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1281
+#graphify/rationale #graphify/EXTRACTED #community/test_all_modules_enforcepy

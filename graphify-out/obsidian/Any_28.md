@@ -1,29 +1,21 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: ""
 type: "code"
-community: "Community 965"
-location: "L119"
+community: "test_clamav_pipeline.py"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_965
+  - graphify/EXTRACTED
+  - community/test_clamav_pipelinepy
 ---
 
 # Any
 
 ## Connections
-- [[._execute_tool_call()]] - `references` [EXTRACTED]
-- [[._extract_egress_targets()]] - `references` [EXTRACTED]
-- [[._sanitize_admin_private_data()]] - `references` [EXTRACTED]
-- [[.get_stats()_5]] - `references` [EXTRACTED]
-- [[.send_request()]] - `references` [EXTRACTED]
-- [[.send_request()_1]] - `references` [EXTRACTED]
-- [[InspectionResult]] - `uses` [INFERRED]
-- [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPServerConfig]] - `uses` [INFERRED]
-- [[MCPTransport]] - `uses` [INFERRED]
+- [[generate_summary()_2]] - `references` [EXTRACTED]
+- [[parse_clamscan_output()]] - `references` [EXTRACTED]
+- [[run_clamscan()]] - `references` [EXTRACTED]
+- [[save_report()_1]] - `references` [EXTRACTED]
+- [[scan_bytes()]] - `references` [EXTRACTED]
+- [[update_virus_db()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_965
+#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy

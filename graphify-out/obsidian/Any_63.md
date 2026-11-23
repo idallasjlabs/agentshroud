@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/security/resource_guard.py"
+source_file: ""
 type: "code"
-community: "Community 5"
-location: "L102"
+community: "ResourceGuard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_5
+  - community/ResourceGuard
 ---
 
 # Any
 
 ## Connections
-- [[._alert_high_usage()]] - `references` [EXTRACTED]
-- [[._get_disk_io_stats()]] - `references` [EXTRACTED]
-- [[.add_alert_callback()_1]] - `references` [EXTRACTED]
-- [[.get_usage_stats()]] - `references` [EXTRACTED]
+- [[dot-_alert_high_usage()]] - `references` [EXTRACTED]
+- [[dot-_get_disk_io_stats()]] - `references` [EXTRACTED]
+- [[dot-add_alert_callback()_1]] - `references` [EXTRACTED]
+- [[dot-get_usage_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_5
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

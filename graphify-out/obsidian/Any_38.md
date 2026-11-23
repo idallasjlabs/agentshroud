@@ -1,19 +1,25 @@
 ---
-source_file: "gateway/runtime/podman_engine.py"
+source_file: ""
 type: "code"
-community: "Community 250"
-location: "L159"
+community: "migrate-cve-registry-ghsa.py"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_250
+  - graphify/EXTRACTED
+  - community/migrate-cve-registry-ghsapy
 ---
 
 # Any
 
 ## Connections
-- [[.inspect()_3]] - `references` [EXTRACTED]
-- [[ContainerEngine_2]] - `uses` [INFERRED]
-- [[ContainerInfo_2]] - `uses` [INFERRED]
+- [[_advisory_text_tokens()]] - `references` [EXTRACTED]
+- [[build_id_plan()]] - `references` [EXTRACTED]
+- [[compute_stats()]] - `references` [EXTRACTED]
+- [[fetch_advisories()]] - `references` [EXTRACTED]
+- [[gather_advisories()]] - `references` [EXTRACTED]
+- [[load_registry()]] - `references` [EXTRACTED]
+- [[load_snapshot()]] - `references` [EXTRACTED]
+- [[match_entry()]] - `references` [EXTRACTED]
+- [[render_manual_review()]] - `references` [EXTRACTED]
+- [[rewrite_registry_text()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_250
+#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

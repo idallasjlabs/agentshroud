@@ -1,30 +1,16 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: ""
 type: "code"
-community: "Community 63"
-location: "L88"
+community: "AppleContainerEngine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_63
+  - community/AppleContainerEngine
 ---
 
 # Any
 
 ## Connections
-- [[._process_inbound_core()]] - `references` [EXTRACTED]
-- [[._process_outbound_core()]] - `references` [EXTRACTED]
-- [[.append()]] - `references` [EXTRACTED]
-- [[.append_block()]] - `references` [EXTRACTED]
-- [[.append_owner_bypass()]] - `references` [EXTRACTED]
-- [[.get_stats()_6]] - `references` [EXTRACTED]
-- [[.process_inbound()]] - `references` [EXTRACTED]
-- [[.process_outbound()]] - `references` [EXTRACTED]
-- [[.to_dict()_1]] - `references` [EXTRACTED]
-- [[BotIncidentSeverity]] - `uses` [INFERRED]
-- [[FilterResult]] - `uses` [INFERRED]
-- [[InjectionAction]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[ViolationType]] - `uses` [INFERRED]
+- [[dot-inspect()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_63
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

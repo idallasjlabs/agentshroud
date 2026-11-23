@@ -1,17 +1,22 @@
 ---
-source_file: "docs/setup-slack.md"
+source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Community 324"
-location: "L3"
+community: "AgentShroud™ — Project Knowledge Base"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_324
+  - community/AgentShroud__Project_Knowledge_Base
 ---
 
 # Architecture
 
 ## Connections
-- [[Slack Channel Setup]] - `contains` [EXTRACTED]
+- [[AgentShroud™ — Project Knowledge Base]] - `contains` [EXTRACTED]
+- [[Design Philosophy_1]] - `contains` [EXTRACTED]
+- [[Infrastructure_7]] - `contains` [EXTRACTED]
+- [[Multi-Platform Support]] - `contains` [EXTRACTED]
+- [[Security Modules]] - `contains` [EXTRACTED]
+- [[The Security Pipeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_324
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Project_Knowledge_Base

@@ -1,19 +1,16 @@
 ---
-source_file: "gateway/security/network_validator.py"
+source_file: ""
 type: "code"
-community: "Community 71"
-location: "L122"
+community: "test_agent_cve_registry.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_71
+  - community/test_agent_cve_registrypy
 ---
 
 # Any
 
 ## Connections
-- [[._parse_service_network_config()]] - `references` [EXTRACTED]
-- [[._validate_network_definitions()]] - `references` [EXTRACTED]
-- [[.get_security_report()]] - `references` [EXTRACTED]
+- [[get_agent_cve_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_71
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy

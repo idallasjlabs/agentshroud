@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/cli/client.py"
+source_file: ""
 type: "code"
-community: "Community 170"
-location: "L23"
+community: "FalcoAlertWatcher"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_170
+  - community/FalcoAlertWatcher
 ---
 
 # Any
 
 ## Connections
-- [[._request()]] - `references` [EXTRACTED]
-- [[.delete()]] - `references` [EXTRACTED]
-- [[.get()_2]] - `references` [EXTRACTED]
-- [[.post()_2]] - `references` [EXTRACTED]
-- [[.put()]] - `references` [EXTRACTED]
+- [[dot-_handle_critical()]] - `references` [EXTRACTED]
+- [[categorize_alerts()]] - `references` [EXTRACTED]
+- [[generate_summary()]] - `references` [EXTRACTED]
+- [[parse_alert()]] - `references` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_170
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

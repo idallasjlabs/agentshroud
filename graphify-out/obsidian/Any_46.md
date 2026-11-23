@@ -1,22 +1,16 @@
 ---
-source_file: "gateway/security/daily_cve_report.py"
+source_file: ""
 type: "code"
-community: "Community 368"
-location: "L89"
+community: "test_e2e_proxy.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_368
+  - community/test_e2e_proxypy
 ---
 
 # Any
 
 ## Connections
-- [[check_upstream_cves()]] - `references` [EXTRACTED]
-- [[format_cve_report()]] - `references` [EXTRACTED]
-- [[format_upstream_cve_alert()]] - `references` [EXTRACTED]
-- [[run_and_send_cve_report()]] - `references` [EXTRACTED]
-- [[run_upstream_cve_check()]] - `references` [EXTRACTED]
-- [[run_upstream_cve_check_all_agents()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_9]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_368
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

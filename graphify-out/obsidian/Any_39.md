@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: ""
 type: "code"
-community: "Community 947"
-location: "L210"
+community: "RedactionResult"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_947
+  - community/RedactionResult
 ---
 
 # Any
 
 ## Connections
-- [[.from_dict()_2]] - `references` [EXTRACTED]
+- [[dot-__init__()_106]] - `references` [EXTRACTED]
+- [[dot-_extract_dict_content()]] - `references` [EXTRACTED]
+- [[dot-_extract_scannable_content()]] - `references` [EXTRACTED]
+- [[dot-_reconstruct_result()]] - `references` [EXTRACTED]
+- [[dot-sanitize_tool_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_947
+#graphify/code #graphify/EXTRACTED #community/RedactionResult

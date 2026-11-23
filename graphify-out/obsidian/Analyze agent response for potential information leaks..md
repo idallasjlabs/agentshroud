@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "Community 1281"
+community: "test_all_modules_enforce.py"
 location: "L251"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1281
+  - community/test_all_modules_enforcepy
 ---
 
 # Analyze agent response for potential information leaks.
 
 ## Connections
-- [[._analyze_agent_response()]] - `rationale_for` [EXTRACTED]
+- [[dot-_analyze_agent_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1281
+#graphify/rationale #graphify/EXTRACTED #community/test_all_modules_enforcepy

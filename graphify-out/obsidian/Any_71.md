@@ -1,21 +1,22 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: ""
 type: "code"
-community: "Community 102"
-location: "L66"
+community: "soc/models.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_102
+  - community/soc/modelspy
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()_3]] - `references` [EXTRACTED]
-- [[get_fim_events()]] - `references` [EXTRACTED]
-- [[get_rootkit_events()]] - `references` [EXTRACTED]
-- [[parse_alert()_1]] - `references` [EXTRACTED]
-- [[read_alerts()_1]] - `references` [EXTRACTED]
+- [[_map_severity()]] - `references` [EXTRACTED]
+- [[collect_recent_events()]] - `references` [EXTRACTED]
+- [[from_anomaly_alert()]] - `references` [EXTRACTED]
+- [[from_audit_chain_entry()]] - `references` [EXTRACTED]
+- [[from_dict()]] - `references` [EXTRACTED]
+- [[from_egress_attempt()]] - `references` [EXTRACTED]
+- [[from_pipeline_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_102
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

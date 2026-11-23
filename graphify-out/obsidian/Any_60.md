@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/prompt_protection.py"
+source_file: ""
 type: "code"
-community: "Community 141"
-location: "L56"
+community: "AgentTarget"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_141
+  - community/AgentTarget
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_123]] - `references` [EXTRACTED]
-- [[.get_protection_stats()]] - `references` [EXTRACTED]
+- [[dot-_build_forward_payload()]] - `references` [EXTRACTED]
+- [[dot-forward_to_agent()]] - `references` [EXTRACTED]
+- [[dot-forward_to_agent_stream()]] - `references` [EXTRACTED]
+- [[dot-health_check()_5]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_141
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

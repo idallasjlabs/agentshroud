@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: ""
 type: "code"
-community: "Community 16"
-location: "L379"
+community: "test_edge_service_routes.py"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_16
+  - graphify/EXTRACTED
+  - community/test_edge_service_routespy
 ---
 
 # Any
 
 ## Connections
-- [[.get_lifecycle_status()]] - `references` [EXTRACTED]
-- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
+- [[dot-__init__()_154]] - `references` [EXTRACTED]
+- [[dot-_token()]] - `references` [EXTRACTED]
+- [[dot-call()]] - `references` [EXTRACTED]
+- [[dot-exchange_identity_assertion()]] - `references` [EXTRACTED]
+- [[dot-revoke_token()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_16
+#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy

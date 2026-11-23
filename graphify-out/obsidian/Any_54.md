@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: ""
 type: "code"
-community: "Community 16"
-location: "L49"
+community: "test_edge_service_routes.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/test_edge_service_routespy
 ---
 
 # Any
 
 ## Connections
-- [[.from_dict()_8]] - `references` [EXTRACTED]
-- [[.get_integrity_status()]] - `references` [EXTRACTED]
-- [[.get_recent_alerts()]] - `references` [EXTRACTED]
-- [[.to_dict()_10]] - `references` [EXTRACTED]
-- [[MemoryIntegrityConfig]] - `uses` [INFERRED]
+- [[build_manifest()]] - `references` [EXTRACTED]
+- [[canonical_bytes()]] - `references` [EXTRACTED]
+- [[descriptor_hash()]] - `references` [EXTRACTED]
+- [[verify_descriptors()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_16
+#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy

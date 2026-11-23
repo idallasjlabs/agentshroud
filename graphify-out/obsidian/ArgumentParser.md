@@ -1,12 +1,11 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
+source_file: ""
 type: "code"
-community: "Community 148"
-location: "L333"
+community: "jira_dev_ticket.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_148
+  - community/jira_dev_ticketpy
 ---
 
 # ArgumentParser
@@ -14,4 +13,4 @@ tags:
 ## Connections
 - [[_build_arg_parser()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_148
+#graphify/code #graphify/EXTRACTED #community/jira_dev_ticketpy

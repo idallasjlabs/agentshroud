@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
 type: "document"
-community: "Community 536"
+community: "alert_dispatcher.py"
 location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_536
+  - community/alert_dispatcherpy
 ---
 
 # AlertDispatcher.dispatch(alert)
 
 ## Connections
-- [[Function Details_27]] - `contains` [EXTRACTED]
+- [[Function Details_46]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_536
+#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy

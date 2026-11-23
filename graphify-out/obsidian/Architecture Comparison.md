@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Community 463"
+community: "Distributed OpenClaw Node Architecture — Raspberry Pi 4"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_463
+  - community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
 ---
 
 # Architecture Comparison
@@ -16,4 +16,4 @@ tags:
 - [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
 - [[Future Approach (Option 2 Distributed Node)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_463
+#graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4

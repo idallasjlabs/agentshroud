@@ -1,22 +1,22 @@
 ---
-source_file: ".agents/skills/apollo/SKILL.md"
+source_file: ".cursor/agents/apollo.md"
 type: "document"
-community: "Community 1379"
-location: "L6"
+community: "Technical Specification"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1379
+  - community/Technical_Specification
 ---
 
 # Apollo — Audio Systems Producer
 
 ## Connections
-- [[Input Requirements_10]] - `contains` [EXTRACTED]
+- [[dot-cursoragentsapollo]] - `contains` [EXTRACTED]
+- [[Input Requirements_6]] - `contains` [EXTRACTED]
 - [[Output_2]] - `contains` [EXTRACTED]
-- [[Quality Checklist_9]] - `contains` [EXTRACTED]
-- [[Role_39]] - `contains` [EXTRACTED]
-- [[SKILL]] - `contains` [EXTRACTED]
-- [[Technical Specification_1]] - `contains` [EXTRACTED]
+- [[Quality Checklist_6]] - `contains` [EXTRACTED]
+- [[Role_27]] - `contains` [EXTRACTED]
+- [[Technical Specification_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1379
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

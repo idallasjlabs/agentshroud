@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "rationale"
-community: "Community 1305"
+community: "SharedMemoryManager"
 location: "L217"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1305
+  - community/SharedMemoryManager
 ---
 
 # An empty/None author is never authorized.
 
 ## Connections
-- [[.test_empty_author_is_denied()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_empty_author_is_denied()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1305
+#graphify/rationale #graphify/EXTRACTED #community/SharedMemoryManager

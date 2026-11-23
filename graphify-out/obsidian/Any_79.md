@@ -1,23 +1,16 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: ""
 type: "code"
-community: "Community 6"
-location: "L726"
+community: "tts.py"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_6
+  - graphify/EXTRACTED
+  - community/ttspy
 ---
 
 # Any
 
 ## Connections
-- [[._handler()]] - `references` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler]] - `uses` [INFERRED]
+- [[_get_pipeline()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/ttspy

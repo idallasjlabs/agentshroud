@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-bs/SKILL.md"
+source_file: ".omp/agents/i-tdd.md"
 type: "document"
-community: "Community 483"
-location: "L31"
+community: "Skill: Test-Driven Development (TDD)"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_483
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_483
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

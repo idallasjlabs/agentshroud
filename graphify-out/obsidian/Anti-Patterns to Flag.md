@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-bs.md"
+source_file: ".agents/agents/i-sec.md"
 type: "document"
-community: "Community 1009"
-location: "L33"
+community: "Skill: Security Review (SEC)"
+location: "L100"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1009
+  - community/Skill_Security_Review_SEC
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Branding Specialist (BS)]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1009
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

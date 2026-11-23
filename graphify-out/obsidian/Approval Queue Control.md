@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "rationale"
-community: "Community 1315"
+community: "SECURITY_VALUE_PROPOSITION.md"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1315
+  - community/SECURITY_VALUE_PROPOSITIONmd
 ---
 
 # Approval Queue Control
@@ -15,4 +15,4 @@ tags:
 - [[Approval Queue — Core Security Value]] - `semantically_similar_to` [INFERRED]
 - [[Four-Layer Access Security Model (Password  Pairing  Allowlist  Approval)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1315
+#graphify/rationale #graphify/EXTRACTED #community/SECURITY_VALUE_PROPOSITIONmd

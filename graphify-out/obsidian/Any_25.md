@@ -1,18 +1,26 @@
 ---
-source_file: "gateway/proxy/mcp_audit.py"
+source_file: ""
 type: "code"
-community: "Community 184"
-location: "L93"
+community: "Any"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_184
+  - community/Any
 ---
 
 # Any
 
 ## Connections
-- [[.generate_report()]] - `references` [EXTRACTED]
-- [[.log_tool_call()]] - `references` [EXTRACTED]
+- [[dot-_generate_new_credential()]] - `references` [EXTRACTED]
+- [[dot-_validate_credential()]] - `references` [EXTRACTED]
+- [[dot-check_and_rotate_due_credentials()]] - `references` [EXTRACTED]
+- [[dot-cleanup_retired_credentials()]] - `references` [EXTRACTED]
+- [[dot-emergency_rotate_credential()]] - `references` [EXTRACTED]
+- [[dot-get_all_credentials_status()]] - `references` [EXTRACTED]
+- [[dot-get_credential_status()]] - `references` [EXTRACTED]
+- [[dot-get_health_score()]] - `references` [EXTRACTED]
+- [[dot-register_credential()]] - `references` [EXTRACTED]
+- [[dot-rotate_credential()]] - `references` [EXTRACTED]
+- [[dot-validate()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_184
+#graphify/code #graphify/EXTRACTED #community/Any

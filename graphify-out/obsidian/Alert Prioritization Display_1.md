@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-ux/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
 type: "document"
-community: "Community 264"
-location: "L233"
+community: "Skill: UX Expert (UX)"
+location: "L232"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_264
+  - community/Skill_UX_Expert_UX
 ---
 
 # Alert Prioritization Display
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Dashboard UX_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_264
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

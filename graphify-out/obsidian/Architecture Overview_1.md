@@ -1,17 +1,23 @@
 ---
-source_file: "docs/setup/OPENCLAW_SETUP.md"
+source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "Community 243"
-location: "L279"
+community: "Architecture Overview"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_243
+  - community/Architecture_Overview
 ---
 
 # Architecture Overview
 
 ## Connections
-- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
+- [[Architecture Overview]] - `contains` [EXTRACTED]
+- [[Container Architecture_1]] - `contains` [EXTRACTED]
+- [[Full System Diagram]] - `contains` [EXTRACTED]
+- [[Gateway Internal Layer Order]] - `contains` [EXTRACTED]
+- [[Network Topology]] - `contains` [EXTRACTED]
+- [[Related Notes_31]] - `contains` [EXTRACTED]
+- [[Summary_20]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_243
+#graphify/document #graphify/EXTRACTED #community/Architecture_Overview

@@ -1,19 +1,16 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: ""
 type: "code"
-community: "Community 1281"
-location: "L94"
+community: "test_edge_service_routes.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1281
+  - community/test_edge_service_routespy
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_113]] - `references` [EXTRACTED]
-- [[.get_global_stats()]] - `references` [EXTRACTED]
-- [[.get_session_stats()]] - `references` [EXTRACTED]
+- [[build_edge_service()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1281
+#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy

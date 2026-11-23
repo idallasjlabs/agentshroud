@@ -1,25 +1,90 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Community 30"
-location: "L215"
+community: "ApprovalRequest"
+location: "L82"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_30
+  - graphify/EXTRACTED
+  - community/ApprovalRequest
 ---
 
 # ApprovalRequest
 
 ## Connections
-- [[.submit()]] - `references` [EXTRACTED]
-- [[.submit_tool_request()]] - `calls` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
-- [[ApprovalRequest_3]] - `uses` [INFERRED]
-- [[ApprovalStore_1]] - `uses` [INFERRED]
-- [[MFAGuard_2]] - `uses` [INFERRED]
-- [[ToolRiskConfig_1]] - `uses` [INFERRED]
-- [[ToolRiskPolicy_1]] - `uses` [INFERRED]
+- [[dot-_build_group_reply_text()]] - `references` [EXTRACTED]
+- [[dot-_build_owner_dm_text()]] - `references` [EXTRACTED]
+- [[dot-request()_1]] - `calls` [EXTRACTED]
+- [[dot-route_approval()]] - `references` [EXTRACTED]
+- [[dot-submit()]] - `references` [EXTRACTED]
+- [[dot-submit()_1]] - `references` [EXTRACTED]
+- [[dot-test_both_owner_dm_and_group_notified()]] - `calls` [EXTRACTED]
+- [[dot-test_concurrent_submit_and_decide()]] - `calls` [EXTRACTED]
+- [[dot-test_dm_approval_no_group_side_effect()]] - `calls` [EXTRACTED]
+- [[dot-test_dm_approval_routes_only_to_owner()]] - `calls` [EXTRACTED]
+- [[dot-test_double_decide_raises()]] - `calls` [EXTRACTED]
+- [[dot-test_expired_request_cannot_be_decided()]] - `calls` [EXTRACTED]
+- [[dot-test_get_pending_expires_stale()]] - `calls` [EXTRACTED]
+- [[dot-test_group_chat_receives_thread_reply()]] - `calls` [EXTRACTED]
+- [[dot-test_owner_dm_contains_action_type()]] - `calls` [EXTRACTED]
+- [[dot-test_owner_dm_references_group_chat_id()]] - `calls` [EXTRACTED]
+- [[dot-test_owner_receives_dm_for_group_approval()]] - `calls` [EXTRACTED]
+- [[dot-test_route_approval_auto_detects_group_context()]] - `calls` [EXTRACTED]
+- [[dot-test_router_works_without_send_fn()]] - `calls` [EXTRACTED]
+- [[dot-test_timeout_auto_deny()]] - `calls` [EXTRACTED]
+- [[ApprovalQueue]] - `uses` [INFERRED]
+- [[BaseModel_3]] - `inherits` [EXTRACTED]
+- [[EdgeApprovals]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
+- [[GroupApprovalRouter]] - `uses` [INFERRED]
+- [[Request for human approval of a sensitive action Submitted by an agent when…]] - `rationale_for` [EXTRACTED]
+- [[TestApprovalTimeout]] - `uses` [INFERRED]
+- [[TestApprovalWorkflow]] - `uses` [INFERRED]
+- [[TestAutoExpire]] - `uses` [INFERRED]
+- [[TestConcurrentApprovalRequests]] - `uses` [INFERRED]
+- [[TestDMApprovalOwnerOnly]] - `uses` [INFERRED]
+- [[TestGroupApprovalOwnerDM]] - `uses` [INFERRED]
+- [[TestGroupApprovalRouterContextDetection]] - `uses` [INFERRED]
+- [[TestGroupApprovalRouterDefaultSend]] - `uses` [INFERRED]
+- [[_submit_enhanced_high_risk()]] - `calls` [EXTRACTED]
+- [[_submit_high_risk()]] - `calls` [EXTRACTED]
+- [[approval.py]] - `imports` [EXTRACTED]
+- [[approvals.py]] - `imports` [EXTRACTED]
+- [[email_send()]] - `uses` [INFERRED]
+- [[enhanced_queue.py]] - `imports` [EXTRACTED]
+- [[forward.py]] - `imports` [EXTRACTED]
+- [[group_router.py]] - `imports` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports` [EXTRACTED]
+- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
+- [[mcp_proxy_endpoint()]] - `uses` [INFERRED]
+- [[queue.py]] - `imports` [EXTRACTED]
+- [[ssh_exec()]] - `uses` [INFERRED]
+- [[submit_approval_request()]] - `uses` [INFERRED]
+- [[submit_one()]] - `calls` [EXTRACTED]
+- [[test_approval_queue.py]] - `imports` [EXTRACTED]
+- [[test_approval_request_valid()]] - `uses` [INFERRED]
+- [[test_approval_stress.py]] - `imports` [EXTRACTED]
+- [[test_cleanup_decided_keeps_pending_items()]] - `uses` [INFERRED]
+- [[test_cleanup_decided_keeps_recent_decided_items()]] - `uses` [INFERRED]
+- [[test_cleanup_decided_persists_removal_to_disk()]] - `uses` [INFERRED]
+- [[test_cleanup_decided_removes_old_decided_items()]] - `uses` [INFERRED]
+- [[test_concurrent_decisions()]] - `uses` [INFERRED]
+- [[test_decide_already_decided()]] - `uses` [INFERRED]
+- [[test_decide_approval_approve()]] - `uses` [INFERRED]
+- [[test_decide_approval_reject()]] - `uses` [INFERRED]
+- [[test_decide_expired_request()]] - `uses` [INFERRED]
+- [[test_enhanced_approval.py]] - `imports` [EXTRACTED]
+- [[test_enhanced_tool_call_medium_not_gated()]] - `uses` [INFERRED]
+- [[test_get_item()]] - `uses` [INFERRED]
+- [[test_get_pending()]] - `uses` [INFERRED]
+- [[test_get_pending_excludes_decided()]] - `uses` [INFERRED]
+- [[test_group_approval_routing.py]] - `imports` [EXTRACTED]
+- [[test_main_simple.py]] - `imports` [EXTRACTED]
+- [[test_mfa_guard.py]] - `imports` [EXTRACTED]
+- [[test_persist_pending_store_writes_atomically()]] - `uses` [INFERRED]
+- [[test_request_expiration()]] - `uses` [INFERRED]
+- [[test_store_persists_submit_and_decision()]] - `uses` [INFERRED]
+- [[test_submit_approval_request()]] - `uses` [INFERRED]
+- [[test_submit_does_not_deadlock_on_hung_websocket_client()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_30
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

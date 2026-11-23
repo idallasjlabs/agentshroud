@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: ""
 type: "code"
-community: "Community 87"
-location: "L40"
+community: "WebProxyResult"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_87
+  - community/WebProxyResult
 ---
 
 # Any
 
 ## Connections
-- [[SCLClient]] - `uses` [INFERRED]
-- [[_edge_result()]] - `references` [EXTRACTED]
-- [[_output()]] - `references` [EXTRACTED]
+- [[dot-_audit()]] - `references` [EXTRACTED]
+- [[dot-get_stats()]] - `references` [EXTRACTED]
+- [[dot-to_dict()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_87
+#graphify/code #graphify/EXTRACTED #community/WebProxyResult

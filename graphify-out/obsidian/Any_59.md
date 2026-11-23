@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: ""
 type: "code"
-community: "Community 233"
-location: "L231"
+community: "ApprovalStore"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_233
+  - community/ApprovalStore
 ---
 
 # Any
 
 ## Connections
-- [[._scan_for_canary()]] - `references` [EXTRACTED]
-- [[.get_status()_1]] - `references` [EXTRACTED]
+- [[dot-_append_audit_event()]] - `references` [EXTRACTED]
+- [[dot-broadcast()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_233
+#graphify/code #graphify/EXTRACTED #community/ApprovalStore

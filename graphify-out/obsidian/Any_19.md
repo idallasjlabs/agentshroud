@@ -1,23 +1,20 @@
 ---
-source_file: "gateway/ingest_api/router.py"
+source_file: ""
 type: "code"
-community: "Community 861"
-location: "L152"
+community: "SCLClient"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_861
+  - community/SCLClient
 ---
 
 # Any
 
 ## Connections
-- [[._build_forward_payload()]] - `references` [EXTRACTED]
-- [[.forward_to_agent()]] - `references` [EXTRACTED]
-- [[.forward_to_agent_stream()]] - `references` [EXTRACTED]
-- [[.health_check()]] - `references` [EXTRACTED]
-- [[AgentTarget]] - `uses` [INFERRED]
-- [[ForwardRequest]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[dot-_request()]] - `references` [EXTRACTED]
+- [[dot-delete()_1]] - `references` [EXTRACTED]
+- [[dot-get()]] - `references` [EXTRACTED]
+- [[dot-post()]] - `references` [EXTRACTED]
+- [[dot-put()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_861
+#graphify/code #graphify/EXTRACTED #community/SCLClient

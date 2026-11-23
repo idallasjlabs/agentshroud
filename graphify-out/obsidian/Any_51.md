@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/killswitch_config.py"
+source_file: ""
 type: "code"
-community: "Community 92"
-location: "L100"
+community: "load_config"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_92
+  - community/load_config
 ---
 
 # Any
 
 ## Connections
-- [[.to_dict()_9]] - `references` [EXTRACTED]
+- [[dot-enforce()]] - `references` [EXTRACTED]
+- [[dot-evaluate()]] - `references` [EXTRACTED]
+- [[dot-from_dict()_6]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_92
+#graphify/code #graphify/EXTRACTED #community/load_config

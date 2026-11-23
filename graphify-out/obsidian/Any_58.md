@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/outbound_filter.py"
+source_file: ""
 type: "code"
-community: "Community 24"
-location: "L73"
+community: "plan_remediation"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/plan_remediation
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_116]] - `references` [EXTRACTED]
-- [[._compile_patterns()_1]] - `references` [EXTRACTED]
-- [[.get_stats()_17]] - `references` [EXTRACTED]
+- [[dot-to_dict()_5]] - `references` [EXTRACTED]
+- [[load_registry()_1]] - `references` [EXTRACTED]
+- [[plan_remediation()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_24
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

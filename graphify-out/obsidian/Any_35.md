@@ -1,19 +1,16 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
+source_file: ""
 type: "code"
-community: "Community 203"
-location: "L149"
+community: "ingest_api/config.py"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_203
+  - graphify/EXTRACTED
+  - community/ingest_api/configpy
 ---
 
 # Any
 
 ## Connections
-- [[.inspect()]] - `references` [EXTRACTED]
-- [[ContainerEngine_2]] - `uses` [INFERRED]
-- [[ContainerInfo_2]] - `uses` [INFERRED]
+- [[dot-get_stats()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_203
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

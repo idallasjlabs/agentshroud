@@ -1,24 +1,18 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: ""
 type: "code"
-community: "Community 28"
-location: "L28"
+community: "canvas_proxy.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_28
+  - community/canvas_proxypy
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_136]] - `references` [EXTRACTED]
-- [[._extract_dict_content()]] - `references` [EXTRACTED]
-- [[._extract_scannable_content()]] - `references` [EXTRACTED]
-- [[._reconstruct_result()]] - `references` [EXTRACTED]
-- [[.sanitize_tool_result()]] - `references` [EXTRACTED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[RedactionResult]] - `uses` [INFERRED]
+- [[_handle_http()]] - `references` [EXTRACTED]
+- [[_handle_websocket()]] - `references` [EXTRACTED]
+- [[canvas_proxy_app()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_28
+#graphify/code #graphify/EXTRACTED #community/canvas_proxypy

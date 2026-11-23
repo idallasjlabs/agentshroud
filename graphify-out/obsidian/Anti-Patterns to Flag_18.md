@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-sec.md"
+source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Community 1496"
-location: "L100"
+community: ".agents/skills/i-tw/SKILL.md"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1496
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Security Review (SEC)_2]] - `contains` [EXTRACTED]
+- [[Skill Technical Writer (TW)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1496
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

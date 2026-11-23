@@ -1,28 +1,48 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Community 30"
-location: "L215"
+community: "ApprovalStore"
+location: "L181"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_30
+  - graphify/EXTRACTED
+  - community/ApprovalStore
 ---
 
 # ApprovalQueueItem
 
 ## Connections
-- [[._notify_telegram()]] - `references` [EXTRACTED]
-- [[.decide()]] - `references` [EXTRACTED]
-- [[.get_item()]] - `references` [EXTRACTED]
-- [[.get_pending()]] - `references` [EXTRACTED]
-- [[.submit()]] - `references` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
-- [[ApprovalRequest_3]] - `uses` [INFERRED]
-- [[ApprovalStore_1]] - `uses` [INFERRED]
-- [[MFAGuard_2]] - `uses` [INFERRED]
-- [[ToolRiskConfig_1]] - `uses` [INFERRED]
-- [[ToolRiskPolicy_1]] - `uses` [INFERRED]
+- [[dot-_notify_telegram()]] - `references` [EXTRACTED]
+- [[dot-decide()]] - `references` [EXTRACTED]
+- [[dot-decide()_1]] - `references` [EXTRACTED]
+- [[dot-get_item()_1]] - `references` [EXTRACTED]
+- [[dot-get_item()_2]] - `references` [EXTRACTED]
+- [[dot-get_pending()_1]] - `references` [EXTRACTED]
+- [[dot-get_pending()_2]] - `references` [EXTRACTED]
+- [[dot-load_all()]] - `references` [EXTRACTED]
+- [[dot-load_pending()]] - `references` [EXTRACTED]
+- [[dot-save()_1]] - `references` [EXTRACTED]
+- [[dot-submit()]] - `references` [EXTRACTED]
+- [[dot-submit()_1]] - `references` [EXTRACTED]
+- [[dot-test_store_expires_old_items()]] - `calls` [EXTRACTED]
+- [[dot-test_store_persists_across_reopen()]] - `calls` [EXTRACTED]
+- [[dot-test_store_save_and_load()]] - `calls` [EXTRACTED]
+- [[dot-test_store_update_status()]] - `calls` [EXTRACTED]
+- [[A pending approval request in the queue]] - `rationale_for` [EXTRACTED]
+- [[ApprovalQueue]] - `uses` [INFERRED]
+- [[ApprovalStore]] - `uses` [INFERRED]
+- [[BaseModel_3]] - `inherits` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
+- [[TestApprovalStorePersistence]] - `uses` [INFERRED]
+- [[_make_item()]] - `calls` [EXTRACTED]
+- [[_pending_item()]] - `calls` [EXTRACTED]
+- [[approval.py]] - `imports` [EXTRACTED]
+- [[approval_queuestore.py]] - `imports` [EXTRACTED]
+- [[enhanced_queue.py]] - `imports` [EXTRACTED]
+- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
+- [[queue.py]] - `imports` [EXTRACTED]
+- [[test_approval_store.py]] - `imports` [EXTRACTED]
+- [[test_approval_stress.py]] - `imports` [EXTRACTED]
+- [[test_soc_router_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_30
+#graphify/code #graphify/EXTRACTED #community/ApprovalStore

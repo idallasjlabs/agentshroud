@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_benchmark_regression.py"
 type: "rationale"
-community: "Community 511"
+community: "test_benchmark_regression.py"
 location: "L91"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_511
+  - community/test_benchmark_regressionpy
 ---
 
 # Assert measured value is within THRESHOLD of baseline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[assert_within_threshold()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_511
+#graphify/rationale #graphify/EXTRACTED #community/test_benchmark_regressionpy

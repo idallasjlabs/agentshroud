@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-ui.md"
+source_file: ".agents/agents/i-ux.md"
 type: "document"
-community: "Community 629"
+community: "Skill: UX Expert (UX)"
 location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_629
+  - community/Skill_UX_Expert_UX
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill UI Expert (UI)_2]] - `contains` [EXTRACTED]
+- [[Skill UX Expert (UX)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_629
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/canvas/SKILL.md"
+source_file: "docs/planning/v0.8/container-security-audit-v0.8.0.md"
 type: "document"
-community: "Community 356"
-location: "L15"
+community: "Findings & Mitigations"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_356
+  - community/Findings__Mitigations
 ---
 
 # Architecture
 
 ## Connections
-- [[How It Works_3]] - `contains` [EXTRACTED]
+- [[Container Security Audit — AgentShroud v0.8.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_356
+#graphify/document #graphify/EXTRACTED #community/Findings__Mitigations
