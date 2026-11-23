@@ -1,20 +1,22 @@
 ---
 source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "Community 229"
+community: "AlertTelegramRelay"
 location: "L244"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_229
+  - community/AlertTelegramRelay
 ---
 
 # test_async_sanitizer_supported()
 
 ## Connections
-- [[AlertTelegramRelay]] - `calls` [EXTRACTED]
+- [[AlertTelegramRelay]] - `uses` [INFERRED]
 - [[_SendSpy]] - `calls` [EXTRACTED]
 - [[_alert_event()]] - `calls` [EXTRACTED]
+- [[_san()_3]] - `indirect_call` [INFERRED]
+- [[asyncio_67]] - `references` [EXTRACTED]
 - [[test_alert_telegram_relay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_229
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

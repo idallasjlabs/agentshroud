@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_latency_guard.py"
 type: "code"
-community: "Community 77"
+community: "test_voice_latency_guard.py"
 location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_77
+  - community/test_voice_latency_guardpy
 ---
 
 # test_call_agent_no_memory_on_adds_ephemeral_tag()
@@ -14,7 +14,9 @@ tags:
 ## Connections
 - [[ON forwardstream body carries metadata={no_memory True}.]] - `rationale_for` [EXTRACTED]
 - [[_call_agent_stream()]] - `calls` [EXTRACTED]
-- [[_voice_forward_metadata()]] - `calls` [EXTRACTED]
+- [[asyncio_78]] - `references` [EXTRACTED]
+- [[mock_stream()_26]] - `contains` [EXTRACTED]
+- [[mock_stream()_25]] - `indirect_call` [INFERRED]
 - [[test_voice_latency_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_77
+#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy

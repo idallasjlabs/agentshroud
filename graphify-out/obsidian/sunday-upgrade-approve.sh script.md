@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade-approve.sh"
 type: "code"
-community: "Community 139"
+community: "upgrade-2026-10-12.md"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/upgrade-2026-10-12md
 ---
 
 # sunday-upgrade-approve.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sunday-upgrade-approve.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_139
+#graphify/code #graphify/EXTRACTED #community/upgrade-2026-10-12md

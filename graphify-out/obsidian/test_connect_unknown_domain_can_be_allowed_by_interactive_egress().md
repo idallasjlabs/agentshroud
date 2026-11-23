@@ -1,22 +1,27 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Community 86"
+community: "HTTPConnectProxy"
 location: "L254"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_86
+  - community/HTTPConnectProxy
 ---
 
 # test_connect_unknown_domain_can_be_allowed_by_interactive_egress()
 
 ## Connections
-- [[HTTPConnectProxy]] - `calls` [EXTRACTED]
-- [[WebProxy_1]] - `calls` [EXTRACTED]
-- [[WebProxyConfig]] - `calls` [EXTRACTED]
-- [[_MockWriter]] - `calls` [EXTRACTED]
-- [[_make_stream()]] - `calls` [EXTRACTED]
+- [[EgressAction]] - `uses` [INFERRED]
+- [[HTTPConnectProxy]] - `uses` [INFERRED]
+- [[WebProxy]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[_MockWriter_1]] - `calls` [EXTRACTED]
+- [[_make_stream()_1]] - `calls` [EXTRACTED]
+- [[_open_conn()_4]] - `contains` [EXTRACTED]
+- [[_open_conn()_3]] - `indirect_call` [INFERRED]
+- [[asyncio_82]] - `references` [EXTRACTED]
+- [[check_async()_65]] - `contains` [EXTRACTED]
 - [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_86
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

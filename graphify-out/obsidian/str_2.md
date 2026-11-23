@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "._run_and_read"
+community: "triage-cve-mitigations.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run_and_read
+  - community/triage-cve-mitigationspy
 ---
 
 # str
@@ -14,4 +14,4 @@ tags:
 - [[Coverage]] - `inherits` [EXTRACTED]
 - [[VulnClass]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run_and_read
+#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

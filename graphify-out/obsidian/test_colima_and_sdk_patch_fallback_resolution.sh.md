@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh"
 type: "code"
-community: "Community 1190"
+community: "test_colima_and_sdk_patch_fallback_resolution.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1190
+  - community/test_colima_and_sdk_patch_fallback_resolutionsh
 ---
 
 # test_colima_and_sdk_patch_fallback_resolution.sh
@@ -25,8 +25,8 @@ tags:
 - [[_up_says()]] - `defines` [EXTRACTED]
 - [[_ver_verdict()]] - `defines` [EXTRACTED]
 - [[_wait_result()]] - `defines` [EXTRACTED]
-- [[check()_10]] - `defines` [EXTRACTED]
+- [[check()_1]] - `defines` [EXTRACTED]
 - [[hc_run()]] - `defines` [EXTRACTED]
 - [[test_colima_and_sdk_patch_fallback_resolution.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1190
+#graphify/code #graphify/EXTRACTED #community/test_colima_and_sdk_patch_fallback_resolutionsh

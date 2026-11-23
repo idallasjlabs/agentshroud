@@ -1,19 +1,22 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "Community 1278"
+community: "test_llm_proxy.py"
 location: "L712"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1278
+  - community/test_llm_proxypy
 ---
 
 # test_cloud_backend_connect_failure_still_returns_502()
 
 ## Connections
 - [[Connect failures to cloud providers keep the existing 502 behavior.]] - `rationale_for` [EXTRACTED]
-- [[LLMProxy]] - `calls` [EXTRACTED]
+- [[LLMProxy]] - `uses` [INFERRED]
+- [[asyncio_65]] - `references` [EXTRACTED]
+- [[mock_forward()_21]] - `contains` [EXTRACTED]
+- [[mock_forward()_19]] - `indirect_call` [INFERRED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1278
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

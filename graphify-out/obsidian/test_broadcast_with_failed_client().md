@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Community 37"
+community: "ApprovalRequest"
 location: "L314"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_37
+  - graphify/EXTRACTED
+  - community/ApprovalRequest
 ---
 
 # test_broadcast_with_failed_client()
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[Exception]] - `calls` [INFERRED]
 - [[Test broadcast handles failed client sends]] - `rationale_for` [EXTRACTED]
+- [[asyncio_10]] - `references` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_37
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

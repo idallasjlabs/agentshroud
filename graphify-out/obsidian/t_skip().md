@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/testing/lib.sh"
 type: "code"
-community: "Community 1543"
+community: "lib.sh"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1543
+  - community/libsh
 ---
 
 # t_skip()
@@ -16,4 +16,4 @@ tags:
 - [[t_have()]] - `calls` [EXTRACTED]
 - [[t_record()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1543
+#graphify/code #graphify/EXTRACTED #community/libsh

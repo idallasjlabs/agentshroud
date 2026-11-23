@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "Community 111"
+community: "A2APolicyEngine"
 location: "L232"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_111
+  - community/A2APolicyEngine
 ---
 
 # test_callback_url_ssrf_bypass_encodings_are_rejected()
 
 ## Connections
 - [[is_safe_a2a_callback_url()]] - `calls` [EXTRACTED]
+- [[parametrize_25]] - `references` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_111
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

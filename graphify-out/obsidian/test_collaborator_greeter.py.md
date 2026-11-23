@@ -1,21 +1,24 @@
 ---
 source_file: "gateway/tests/test_collaborator_greeter.py"
 type: "code"
-community: "Community 738"
+community: "test_collaborator_greeter.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_738
+  - community/test_collaborator_greeterpy
 ---
 
 # test_collaborator_greeter.py
 
 ## Connections
 - [[CollaboratorGreeter]] - `imports` [EXTRACTED]
+- [[Tests for CollaboratorGreeter (gatewayproxycollaborator_greeter.py).]] - `rationale_for` [EXTRACTED]
 - [[_err_response()]] - `contains` [EXTRACTED]
 - [[_make_greeter()]] - `contains` [EXTRACTED]
 - [[_ok_response()]] - `contains` [EXTRACTED]
+- [[collaborator_greeter.py]] - `imports_from` [EXTRACTED]
+- [[httpx_1]] - `imports` [EXTRACTED]
 - [[test_bot_isolation()]] - `contains` [EXTRACTED]
 - [[test_caption_length_clamped()]] - `contains` [EXTRACTED]
 - [[test_exception_in_maybe_greet_returns_false()]] - `contains` [EXTRACTED]
@@ -35,4 +38,4 @@ tags:
 - [[test_send_failure_does_not_persist_state()]] - `contains` [EXTRACTED]
 - [[test_state_file_corruption_recovers()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_738
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy

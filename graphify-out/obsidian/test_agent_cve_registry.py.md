@@ -1,21 +1,23 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "Community 42"
+community: "test_agent_cve_registry.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_42
+  - community/test_agent_cve_registrypy
 ---
 
 # test_agent_cve_registry.py
 
 ## Connections
+- [[Tests for gatewaysecurityagent_cve_registry.py — multi-agent advisory…]] - `rationale_for` [EXTRACTED]
 - [[_all_entries()]] - `contains` [EXTRACTED]
 - [[_hermes_by_title()]] - `contains` [EXTRACTED]
 - [[_load_triage_module()]] - `contains` [EXTRACTED]
 - [[_run_triage()]] - `contains` [EXTRACTED]
+- [[agent_cve_registry.py]] - `imports_from` [EXTRACTED]
 - [[get_agent_cve_summary()]] - `imports` [EXTRACTED]
 - [[list_cve_agents()]] - `imports` [EXTRACTED]
 - [[test_agent_cve_registries_contains_both()]] - `contains` [EXTRACTED]
@@ -79,4 +81,4 @@ tags:
 - [[test_untriageable_agents_are_refused_not_guessed()]] - `contains` [EXTRACTED]
 - [[test_wrapped_agent_constant_unchanged()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_42
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy

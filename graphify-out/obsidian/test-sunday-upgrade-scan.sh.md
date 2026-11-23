@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/smoke.d/test-sunday-upgrade-scan.sh"
 type: "code"
-community: "Community 1111"
+community: "test-sunday-upgrade-scan.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1111
+  - community/test-sunday-upgrade-scansh
 ---
 
 # test-sunday-upgrade-scan.sh
 
 ## Connections
-- [[check()_7]] - `defines` [EXTRACTED]
+- [[check()_17]] - `defines` [EXTRACTED]
 - [[deadline()]] - `defines` [EXTRACTED]
 - [[dev_gate()]] - `defines` [EXTRACTED]
 - [[handoff_status()]] - `defines` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[lib_call()]] - `defines` [EXTRACTED]
 - [[make_apply_bin()]] - `defines` [EXTRACTED]
 - [[make_fake_repo()]] - `defines` [EXTRACTED]
-- [[notify()_2]] - `defines` [EXTRACTED]
+- [[notify()_4]] - `defines` [EXTRACTED]
 - [[outcome30()]] - `defines` [EXTRACTED]
 - [[restore()_1]] - `defines` [EXTRACTED]
 - [[revs30()]] - `defines` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[write_dev_result()]] - `defines` [EXTRACTED]
 - [[write_fake()]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1111
+#graphify/code #graphify/EXTRACTED #community/test-sunday-upgrade-scansh

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "Community 151"
+community: "test_config_hot_reload.py"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_151
+  - community/test_config_hot_reloadpy
 ---
 
 # test_apply_swaps_only_reloadable_fields()
 
 ## Connections
-- [[_load()]] - `calls` [EXTRACTED]
+- [[_load()_1]] - `calls` [EXTRACTED]
 - [[_write()]] - `calls` [EXTRACTED]
 - [[apply_reloadable_config()]] - `calls` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_151
+#graphify/code #graphify/EXTRACTED #community/test_config_hot_reloadpy

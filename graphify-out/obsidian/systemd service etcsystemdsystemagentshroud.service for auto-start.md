@@ -1,11 +1,11 @@
 ---
 source_file: "docs/operations/linux.md"
 type: "concept"
-community: "Community 421"
+community: "Updating AgentShroud"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_421
+  - community/Updating_AgentShroud
 ---
 
 # systemd service /etc/systemd/system/agentshroud.service for auto-start
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Deploying AgentShroud on Linux (docsoperationslinux.md)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_421
+#graphify/concept #graphify/EXTRACTED #community/Updating_AgentShroud

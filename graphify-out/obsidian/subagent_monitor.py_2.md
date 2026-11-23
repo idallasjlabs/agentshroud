@@ -1,24 +1,26 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
-type: "document"
-community: "Community 569"
-location: "L10"
+source_file: "gateway/security/subagent_monitor.py"
+type: "code"
+community: "SubagentMonitor"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_569
+  - community/SubagentMonitor
 ---
 
 # subagent_monitor.py
 
 ## Connections
-- [[Configuration  Environment Variables_29]] - `contains` [EXTRACTED]
-- [[Function Details_48]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_51]] - `contains` [EXTRACTED]
-- [[Purpose_169]] - `contains` [EXTRACTED]
-- [[Related_55]] - `contains` [EXTRACTED]
-- [[Responsibilities_53]] - `contains` [EXTRACTED]
-- [[Threat Model_24]] - `contains` [EXTRACTED]
-- [[subagent_monitor.py_1]] - `contains` [EXTRACTED]
+- [[Enum_18]] - `imports_from` [EXTRACTED]
+- [[SubagentEvent]] - `contains` [EXTRACTED]
+- [[SubagentEventType]] - `contains` [EXTRACTED]
+- [[SubagentInfo]] - `contains` [EXTRACTED]
+- [[SubagentMonitor]] - `contains` [EXTRACTED]
+- [[SubagentMonitorConfig]] - `contains` [EXTRACTED]
+- [[ToolCheckResult]] - `contains` [EXTRACTED]
+- [[middleware.py_2]] - `imports_from` [EXTRACTED]
+- [[test_all_modules_enforce.py]] - `imports_from` [EXTRACTED]
+- [[test_subagent_monitor.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_569
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

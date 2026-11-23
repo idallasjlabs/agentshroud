@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Community 86"
+community: "HTTPConnectProxy"
 location: "L412"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_86
+  - community/HTTPConnectProxy
 ---
 
 # test_agent_id_for_peer_lazy_rdns_miss()
 
 ## Connections
 - [[HTTPConnectProxy]] - `calls` [EXTRACTED]
-- [[Unknown IP whose rDNS doesn't match any bot, and fDNS fails → generic label, cac]] - `rationale_for` [EXTRACTED]
+- [[Unknown IP whose rDNS doesn't match any bot, and fDNS fails → generic label,…]] - `rationale_for` [EXTRACTED]
 - [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_86
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agentshroud_manager.py"
 type: "code"
-community: "Community 66"
+community: "version_routes.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_66
+  - community/version_routespy
 ---
 
 # test_agentshroud_manager.py
@@ -19,7 +19,9 @@ tags:
 - [[TestMaskCredentials]] - `contains` [EXTRACTED]
 - [[TestRollback]] - `contains` [EXTRACTED]
 - [[TestSecurityReview]] - `contains` [EXTRACTED]
-- [[TestUpgrade]] - `contains` [EXTRACTED]
+- [[TestUpgrade_1]] - `contains` [EXTRACTED]
+- [[Tests for OpenClaw Version Manager.]] - `rationale_for` [EXTRACTED]
+- [[agentshroud_manager.py]] - `imports_from` [EXTRACTED]
 - [[check_current_version()]] - `imports` [EXTRACTED]
 - [[downgrade()]] - `imports` [EXTRACTED]
 - [[list_available_versions()]] - `imports` [EXTRACTED]
@@ -30,4 +32,4 @@ tags:
 - [[tmp_db()]] - `contains` [EXTRACTED]
 - [[upgrade()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_66
+#graphify/code #graphify/EXTRACTED #community/version_routespy

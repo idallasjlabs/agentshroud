@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/testing/telemetry-check.sh"
 type: "code"
-community: "Community 2314"
+community: "telemetry-check.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2314
+  - community/telemetry-checksh
 ---
 
 # telemetry-check.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[telemetry-check.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2314
+#graphify/code #graphify/EXTRACTED #community/telemetry-checksh

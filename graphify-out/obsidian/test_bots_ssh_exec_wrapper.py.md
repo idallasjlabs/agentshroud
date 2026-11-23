@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "code"
-community: "Community 167"
+community: "test_bots_ssh_exec_wrapper.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_167
+  - community/test_bots_ssh_exec_wrapperpy
 ---
 
 # test_bots_ssh_exec_wrapper.py
 
 ## Connections
+- [[Validate the internal-gateway SSH-exec wrapper fix for both bots. Bug both bot…]] - `rationale_for` [EXTRACTED]
 - [[_bearer_from_argv()]] - `contains` [EXTRACTED]
 - [[_build_payload_via_shell()]] - `contains` [EXTRACTED]
 - [[_extract_payload_builder()]] - `contains` [EXTRACTED]
@@ -34,4 +35,4 @@ tags:
 - [[test_wrapper_never_sends_empty_bearer()]] - `contains` [EXTRACTED]
 - [[test_wrapper_targets_only_internal_gateway_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_167
+#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/browser/package.json"
 type: "code"
-community: "Community 1933"
+community: "browser/package.json"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1933
+  - community/browser/packagejson
 ---
 
 # test
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[scripts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1933
+#graphify/code #graphify/EXTRACTED #community/browser/packagejson

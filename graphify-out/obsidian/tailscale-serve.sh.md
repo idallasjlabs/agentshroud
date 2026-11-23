@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/tailscale-serve.sh"
 type: "code"
-community: "Community 875"
+community: "tailscale-serve.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_875
+  - community/tailscale-servesh
 ---
 
 # tailscale-serve.sh
@@ -26,4 +26,4 @@ tags:
 - [[hermes-dashboard-relay container (9119 Tailscale bypass of gateway)]] - `references` [EXTRACTED]
 - [[tailscale-serve.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_875
+#graphify/code #graphify/EXTRACTED #community/tailscale-servesh

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_data_exfil_volume_guard.py"
 type: "code"
-community: "Community 205"
+community: "DataExfilVolumeGuard"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_205
+  - community/DataExfilVolumeGuard
 ---
 
 # test_blocked_response_does_not_add_to_cumulative()
 
 ## Connections
-- [[A blocked (undelivered) response must not consume the session budget,     otherw]] - `rationale_for` [EXTRACTED]
+- [[A blocked (undelivered) response must not consume the session budget, otherwise…]] - `rationale_for` [EXTRACTED]
 - [[DataExfilVolumeConfig]] - `calls` [EXTRACTED]
 - [[DataExfilVolumeGuard]] - `calls` [EXTRACTED]
 - [[test_data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_205
+#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

@@ -1,23 +1,25 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "Community 151"
+community: "test_config_hot_reload.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_151
+  - community/test_config_hot_reloadpy
 ---
 
 # test_config_hot_reload.py
 
 ## Connections
-- [[GatewayConfig_1]] - `imports` [EXTRACTED]
+- [[GatewayConfig]] - `imports` [EXTRACTED]
+- [[Tests for SCRUM-89 config hot-reload (config.py). Covers the validated, fail-…]] - `rationale_for` [EXTRACTED]
 - [[_default_mtime()]] - `imports` [EXTRACTED]
-- [[_load()]] - `contains` [EXTRACTED]
+- [[_load()_1]] - `contains` [EXTRACTED]
 - [[_write()]] - `contains` [EXTRACTED]
 - [[apply_reloadable_config()]] - `imports` [EXTRACTED]
 - [[config_watcher()]] - `imports` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 - [[load_config()]] - `imports` [EXTRACTED]
 - [[reload_config()]] - `imports` [EXTRACTED]
 - [[resolve_config_path()]] - `imports` [EXTRACTED]
@@ -34,4 +36,4 @@ tags:
 - [[test_watcher_reloads_on_mtime_change()]] - `contains` [EXTRACTED]
 - [[test_watcher_stops_on_event()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_151
+#graphify/code #graphify/EXTRACTED #community/test_config_hot_reloadpy

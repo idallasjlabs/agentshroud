@@ -1,17 +1,18 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "code"
-community: "Community 851"
+community: "test_voice_stt_model_ab.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_851
+  - community/test_voice_stt_model_abpy
 ---
 
 # stt.py
 
 ## Connections
+- [[Speech-to-Text using faster-whisper (local CPU inference).]] - `rationale_for` [EXTRACTED]
 - [[_get_model()]] - `contains` [EXTRACTED]
 - [[_resolve_model_size()]] - `contains` [EXTRACTED]
 - [[record_transcription_latency()]] - `contains` [EXTRACTED]
@@ -22,4 +23,4 @@ tags:
 - [[test_voice_stt_model_ab.py]] - `imports` [EXTRACTED]
 - [[transcribe()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_851
+#graphify/code #graphify/EXTRACTED #community/test_voice_stt_model_abpy

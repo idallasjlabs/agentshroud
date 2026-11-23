@@ -2,7 +2,7 @@
 source_file: "gateway/ingest_api/main.py"
 type: "code"
 community: "deep_security_test"
-location: "L3358"
+location: "L3363"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,7 @@ tags:
 # t_prompt()
 
 ## Connections
+- [[PromptGuard]] - `calls` [EXTRACTED]
 - [[deep_security_test()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/deep_security_test

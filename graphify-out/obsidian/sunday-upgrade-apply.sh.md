@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "Community 126"
+community: "sunday-upgrade-apply.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_126
+  - community/sunday-upgrade-applysh
 ---
 
 # sunday-upgrade-apply.sh
@@ -16,11 +16,10 @@ tags:
 - [[Base docker-compose stack]] - `references` [EXTRACTED]
 - [[Exclusive mkdir run lock + HEAD-pinned build guard (PR 475)]] - `rationale_for` [EXTRACTED]
 - [[Exit 50 build failed and rollback failed (stack may be degraded)]] - `references` [EXTRACTED]
-- [[PATH_10]] - `defines` [EXTRACTED]
+- [[PATH_6]] - `defines` [EXTRACTED]
 - [[Refuse to build with uncommitted changes in build context]] - `rationale_for` [EXTRACTED]
 - [[Sunday Upgrade Report 2026-09-06 (prod, disk-exhaustion incident)]] - `references` [EXTRACTED]
 - [[Sunday Upgrade Report 2026-09-14 (dev account)]] - `references` [EXTRACTED]
-- [[TestKnownServices]] - `shares_data_with` [INFERRED]
 - [[_agent_selfcheck()]] - `defines` [EXTRACTED]
 - [[_assert_head_unchanged()]] - `defines` [EXTRACTED]
 - [[_attempt_rollback()]] - `defines` [EXTRACTED]
@@ -50,23 +49,25 @@ tags:
 - [[auto_remediate_cves.py]] - `conceptually_related_to` [EXTRACTED]
 - [[check_noop_gate()]] - `defines` [EXTRACTED]
 - [[check_openclaw()]] - `conceptually_related_to` [INFERRED]
+- [[container-runtime.sh]] - `imports_from` [INFERRED]
 - [[dev-result-date.json dev-prod handoff contract]] - `shares_data_with` [EXTRACTED]
-- [[die()_2]] - `defines` [EXTRACTED]
-- [[err()_1]] - `defines` [EXTRACTED]
-- [[log()_9]] - `defines` [EXTRACTED]
+- [[die()_1]] - `defines` [EXTRACTED]
+- [[err()]] - `defines` [EXTRACTED]
+- [[log()_1]] - `defines` [EXTRACTED]
 - [[phase_apply()]] - `defines` [EXTRACTED]
 - [[phase_baseline()]] - `defines` [EXTRACTED]
 - [[phase_discover()]] - `defines` [EXTRACTED]
 - [[phase_preflight()]] - `defines` [EXTRACTED]
 - [[phase_scan()]] - `defines` [EXTRACTED]
 - [[phase_verify()]] - `defines` [EXTRACTED]
+- [[sunday-scan.sh]] - `imports_from` [INFERRED]
 - [[sunday-upgrade-apply.sh script]] - `contains` [EXTRACTED]
 - [[sunday-upgrade.sh]] - `references` [EXTRACTED]
 - [[sunday-upgrade.sh (remote-control launcher)]] - `conceptually_related_to` [INFERRED]
 - [[upgrade-2026-09-20-dev]] - `references` [EXTRACTED]
 - [[upgrade-2026-10-18]] - `references` [EXTRACTED]
 - [[versions.env]] - `imports_from` [INFERRED]
-- [[warn()_5]] - `defines` [EXTRACTED]
+- [[warn()_2]] - `defines` [EXTRACTED]
 - [[write_handoff()]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_126
+#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

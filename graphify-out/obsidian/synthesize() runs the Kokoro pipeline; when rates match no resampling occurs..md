@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Community 46"
+community: "test_voice_gateway.py"
 location: "L142"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_46
+  - community/test_voice_gatewaypy
 ---
 
 # synthesize() runs the Kokoro pipeline; when rates match no resampling occurs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_tts_synthesize_via_kokoro()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_46
+#graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy

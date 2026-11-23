@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "code"
-community: "Community 307"
+community: "lifespan.py"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_307
+  - community/lifespanpy
 ---
 
 # test_a2a_ssrf_callback_is_a_severe_violation_by_default()
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[ProgressiveTrustConfig]] - `calls` [EXTRACTED]
 - [[Unambiguous malicious intent — immediate demotion, not a slow decay.]] - `rationale_for` [EXTRACTED]
+- [[ViolationType]] - `uses` [INFERRED]
 - [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_307
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

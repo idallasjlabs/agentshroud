@@ -1,22 +1,27 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Community 115"
+community: "ApprovalRequest"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_115
+  - community/ApprovalRequest
 ---
 
 # test_approval_queue.py
 
 ## Connections
 - [[ApprovalQueue]] - `imports` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_3]] - `imports` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `imports` [EXTRACTED]
+- [[ApprovalRequest]] - `imports` [EXTRACTED]
+- [[Tests for approval queue]] - `rationale_for` [EXTRACTED]
 - [[_HangingWebSocket]] - `contains` [EXTRACTED]
 - [[approval_queue()]] - `contains` [EXTRACTED]
+- [[asyncio_10]] - `imports` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
+- [[queue.py]] - `imports_from` [EXTRACTED]
 - [[queue_config()]] - `contains` [EXTRACTED]
 - [[test_broadcast_does_not_hang_forever_on_dead_client()]] - `contains` [EXTRACTED]
 - [[test_broadcast_with_failed_client()]] - `contains` [EXTRACTED]
@@ -43,4 +48,4 @@ tags:
 - [[test_websocket_connect()]] - `contains` [EXTRACTED]
 - [[test_websocket_disconnect()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_115
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

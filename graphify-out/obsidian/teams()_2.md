@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_group_isolation.py"
+source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "Community 1305"
-location: "L71"
+community: "GroupWorkspaceManager"
+location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1305
+  - community/GroupWorkspaceManager
 ---
 
 # teams()
 
 ## Connections
-- [[TeamsConfig]] - `calls` [EXTRACTED]
-- [[test_group_isolation.py]] - `contains` [EXTRACTED]
+- [[TeamsConfig]] - `uses` [INFERRED]
+- [[fixture_22]] - `references` [EXTRACTED]
+- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1305
+#graphify/code #graphify/EXTRACTED #community/GroupWorkspaceManager

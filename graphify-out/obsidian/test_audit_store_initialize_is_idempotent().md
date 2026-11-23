@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "Community 30"
+community: "ApprovalStore"
 location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_30
+  - community/ApprovalStore
 ---
 
 # test_audit_store_initialize_is_idempotent()
 
 ## Connections
-- [[AuditStore_1]] - `calls` [EXTRACTED]
+- [[AuditStore]] - `uses` [INFERRED]
 - [[AuditStore same idempotency contract as ApprovalStore.]] - `rationale_for` [EXTRACTED]
-- [[Path_26]] - `references` [EXTRACTED]
+- [[Path_53]] - `references` [EXTRACTED]
+- [[asyncio_56]] - `references` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_30
+#graphify/code #graphify/EXTRACTED #community/ApprovalStore

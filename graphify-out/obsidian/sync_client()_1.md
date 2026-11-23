@@ -1,18 +1,20 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "Community 44"
+community: "app"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_44
+  - community/app
 ---
 
 # sync_client()
 
 ## Connections
 - [[Sync TestClient for WebSocket tests_1]] - `rationale_for` [EXTRACTED]
+- [[app()]] - `indirect_call` [INFERRED]
+- [[fixture_5]] - `references` [EXTRACTED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_44
+#graphify/code #graphify/EXTRACTED #community/app

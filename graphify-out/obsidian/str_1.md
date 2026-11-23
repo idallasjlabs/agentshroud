@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_main_endpoints.py"
+community: "soc/router.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/soc/routerpy
 ---
 
 # str
 
 ## Connections
-- [[FindingSeverity]] - `inherits` [EXTRACTED]
+- [[Action]] - `inherits` [EXTRACTED]
+- [[Resource]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

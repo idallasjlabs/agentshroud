@@ -1,19 +1,21 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "Community 11"
+community: "TrustConfig"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_11
+  - community/TrustConfig
 ---
 
 # strict_config()
 
 ## Connections
 - [[Config with strict thresholds.]] - `rationale_for` [EXTRACTED]
-- [[TrustConfig]] - `calls` [EXTRACTED]
+- [[TrustConfig]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
+- [[fixture_135]] - `references` [EXTRACTED]
 - [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_11
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

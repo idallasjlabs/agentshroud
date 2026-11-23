@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "Community 43"
+community: "test_e2e_proxy.py"
 location: "L545"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/test_e2e_proxypy
 ---
 
 # test_clean_message_passes()
 
 ## Connections
-- [[.process_inbound()_1]] - `calls` [EXTRACTED]
+- [[PipelineAction]] - `uses` [INFERRED]
 - [[Verify clean messages pass through without blocking.]] - `rationale_for` [EXTRACTED]
+- [[asyncio_49]] - `references` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

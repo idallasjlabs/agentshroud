@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/testing/lib.sh"
 type: "code"
-community: "Community 1543"
+community: "lib.sh"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1543
+  - community/libsh
 ---
 
 # t_json_escape()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[lib.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1543
+#graphify/code #graphify/EXTRACTED #community/libsh

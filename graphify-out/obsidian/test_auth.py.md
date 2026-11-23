@@ -1,19 +1,22 @@
 ---
 source_file: "gateway/tests/test_auth.py"
 type: "code"
-community: "Community 707"
+community: "fastapi.md"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_707
+  - community/fastapimd
 ---
 
 # test_auth.py
 
 ## Connections
-- [[RateLimiter]] - `imports` [EXTRACTED]
+- [[RateLimiter_1]] - `imports` [EXTRACTED]
+- [[Tests for authentication and rate limiting]] - `rationale_for` [EXTRACTED]
 - [[create_auth_dependency()]] - `imports` [EXTRACTED]
+- [[fastapi_3]] - `imports_from` [EXTRACTED]
+- [[ingest_apiauth.py]] - `imports_from` [EXTRACTED]
 - [[test_auth_dependency_invalid_scheme()]] - `contains` [EXTRACTED]
 - [[test_auth_dependency_invalid_token()]] - `contains` [EXTRACTED]
 - [[test_auth_dependency_missing_header()]] - `contains` [EXTRACTED]
@@ -27,4 +30,4 @@ tags:
 - [[test_verify_token_valid()]] - `contains` [EXTRACTED]
 - [[verify_token()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_707
+#graphify/code #graphify/EXTRACTED #community/fastapimd

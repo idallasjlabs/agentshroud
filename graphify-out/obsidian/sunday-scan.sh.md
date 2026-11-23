@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/lib/sunday-scan.sh"
 type: "code"
-community: "Community 869"
+community: "sunday-scan.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_869
+  - community/sunday-scansh
 ---
 
 # sunday-scan.sh
@@ -17,10 +17,11 @@ tags:
 - [[_sunday_json_field()]] - `defines` [EXTRACTED]
 - [[_sunday_trivy_db_fresh()]] - `defines` [EXTRACTED]
 - [[_sunday_warn_expiring_acceptances()]] - `defines` [EXTRACTED]
-- [[die()_1]] - `defines` [EXTRACTED]
-- [[err()]] - `defines` [EXTRACTED]
-- [[log()_7]] - `defines` [EXTRACTED]
+- [[die()_2]] - `defines` [EXTRACTED]
+- [[err()_2]] - `defines` [EXTRACTED]
+- [[log()_11]] - `defines` [EXTRACTED]
 - [[sunday-scan.sh script]] - `contains` [EXTRACTED]
+- [[sunday-upgrade-apply.sh]] - `imports_from` [INFERRED]
 - [[sunday_build_revision()]] - `defines` [EXTRACTED]
 - [[sunday_catchup_pending()]] - `defines` [EXTRACTED]
 - [[sunday_deadline_epoch()]] - `defines` [EXTRACTED]
@@ -50,6 +51,6 @@ tags:
 - [[sunday_telegram_post()]] - `defines` [EXTRACTED]
 - [[sunday_wait_for_file()]] - `defines` [EXTRACTED]
 - [[sunday_write_launcher_status()]] - `defines` [EXTRACTED]
-- [[warn()_3]] - `defines` [EXTRACTED]
+- [[warn()_5]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_869
+#graphify/code #graphify/EXTRACTED #community/sunday-scansh

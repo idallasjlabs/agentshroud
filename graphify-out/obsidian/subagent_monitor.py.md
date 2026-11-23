@@ -1,26 +1,17 @@
 ---
-source_file: "gateway/security/subagent_monitor.py"
-type: "code"
-community: "Community 146"
+source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
+type: "document"
+community: "Function Details"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_146
+  - community/Function_Details
 ---
 
-# subagent_monitor.py
+# subagent_monitor.py.md
 
 ## Connections
-- [[Enum]] - `imports_from` [EXTRACTED]
-- [[SubagentEvent]] - `contains` [EXTRACTED]
-- [[SubagentEventType]] - `contains` [EXTRACTED]
-- [[SubagentInfo]] - `contains` [EXTRACTED]
-- [[SubagentMonitor]] - `contains` [EXTRACTED]
-- [[SubagentMonitorConfig]] - `contains` [EXTRACTED]
-- [[ToolCheckResult]] - `contains` [EXTRACTED]
-- [[falco_monitor.py]] - `references` [EXTRACTED]
-- [[resource_guard.py]] - `references` [EXTRACTED]
-- [[session_security.py]] - `references` [EXTRACTED]
+- [[subagent_monitor.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_146
+#graphify/document #graphify/EXTRACTED #community/Function_Details

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_group_config.py"
+source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "Community 18"
-location: "L68"
+community: "test_group_rbac.py"
+location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/test_group_rbacpy
 ---
 
 # teams()
 
 ## Connections
-- [[TeamsConfig_1]] - `references` [EXTRACTED]
-- [[test_group_config.py]] - `contains` [EXTRACTED]
+- [[TeamsConfig]] - `uses` [INFERRED]
+- [[fixture_12]] - `references` [EXTRACTED]
+- [[test_group_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_18
+#graphify/code #graphify/EXTRACTED #community/test_group_rbacpy
