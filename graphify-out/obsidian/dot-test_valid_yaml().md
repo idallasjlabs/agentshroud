@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_docker_compose.py"
 type: "code"
-community: "Telegram & Gmail Integration Guide"
+community: "TestProductionCompose"
 location: "L143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram__Gmail_Integration_Guide
+  - community/TestProductionCompose
 ---
 
 # .test_valid_yaml()
 
 ## Connections
 - [[TestAllComposeFilesValid]] - `method` [EXTRACTED]
+- [[parametrize_17]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram__Gmail_Integration_Guide
+#graphify/code #graphify/EXTRACTED #community/TestProductionCompose

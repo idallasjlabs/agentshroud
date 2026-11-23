@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "code"
-community: "egress_filter.py"
+community: "TestAsyncClient"
 location: "L198"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/TestAsyncClient
 ---
 
 # .test_uses_async_openai_client()
@@ -15,4 +15,4 @@ tags:
 - [[TestAsyncClient]] - `method` [EXTRACTED]
 - [[Verify the module uses AsyncOpenAI, not sync OpenAI.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_filterpy
+#graphify/code #graphify/EXTRACTED #community/TestAsyncClient

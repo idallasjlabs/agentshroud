@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_generate_cve_page.py"
 type: "code"
-community: "GatewayEmailService"
+community: "_make_cve"
 location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/_make_cve
 ---
 
 # .test_under_review_in_heading_not_all_mitigated()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_call()_1]] - `calls` [EXTRACTED]
 - [[TestBuildHeading]] - `method` [EXTRACTED]
-- [[When some advisories are under_review the heading is honest, NOT 'all mitigated']] - `rationale_for` [EXTRACTED]
+- [[When some advisories are under_review the heading is honest, NOT 'all…]] - `rationale_for` [EXTRACTED]
 - [[_make_cve()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/code #graphify/EXTRACTED #community/_make_cve

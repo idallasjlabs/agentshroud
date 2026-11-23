@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "._make_proxy()"
+community: "middleware.py"
 location: "L252"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/middlewarepy
 ---
 
 # .test_symlink_resolution()
@@ -15,4 +15,4 @@ tags:
 - [[Symlinks should be resolved - symlink to blocked path must be caught.]] - `rationale_for` [EXTRACTED]
 - [[TestPatternMatching]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "AuditStore"
+community: "test_skill_guard.py"
 location: "L578"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/test_skill_guardpy
 ---
 
 # .test_sync_aborts_on_dangerous_tree()
 
 ## Connections
 - [[dot-_run_sync()]] - `calls` [EXTRACTED]
-- [[Path_30]] - `references` [EXTRACTED]
+- [[Path_34]] - `references` [EXTRACTED]
 - [[TestSyncScriptPreflight]] - `method` [EXTRACTED]
 - [[_write_tree()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/test_skill_guardpy

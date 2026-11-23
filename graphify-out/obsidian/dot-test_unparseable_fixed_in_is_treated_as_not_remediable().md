@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auto_remediate_cves.py"
 type: "code"
-community: "test_daily_cve_report.py (2)"
-location: "L102"
+community: "plan_remediation"
+location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy_2
+  - community/plan_remediation
 ---
 
 # .test_unparseable_fixed_in_is_treated_as_not_remediable()
@@ -16,4 +16,4 @@ tags:
 - [[_entry()_1]] - `calls` [EXTRACTED]
 - [[plan_remediation()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy_2
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

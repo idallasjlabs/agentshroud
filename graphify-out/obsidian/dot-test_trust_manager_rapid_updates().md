@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "ContextGuard"
+community: "TrustManager"
 location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/TrustManager
 ---
 
 # .test_trust_manager_rapid_updates()
 
 ## Connections
 - [[Rapid trust score updates shouldn't corrupt state.]] - `rationale_for` [EXTRACTED]
-- [[TestConcurrency]] - `method` [EXTRACTED]
+- [[TestConcurrency_1]] - `method` [EXTRACTED]
+- [[TrustManager]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/TrustManager

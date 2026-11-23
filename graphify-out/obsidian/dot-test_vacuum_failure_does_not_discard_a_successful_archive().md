@@ -12,10 +12,12 @@ tags:
 # .test_vacuum_failure_does_not_discard_a_successful_archive()
 
 ## Connections
-- [[A full disk (or any VACUUM-specific OperationalError) must not         raise pas]] - `rationale_for` [EXTRACTED]
+- [[A full disk (or any VACUUM-specific OperationalError) must not raise past a…]] - `rationale_for` [EXTRACTED]
 - [[TestArchiveOldEvents]] - `method` [EXTRACTED]
 - [[_chain_events()]] - `calls` [EXTRACTED]
 - [[_make_live_db()]] - `calls` [EXTRACTED]
 - [[archive_old_events()]] - `calls` [EXTRACTED]
+- [[execute()]] - `contains` [EXTRACTED]
+- [[failing_vacuum_connect()]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/archive_old_events

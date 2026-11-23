@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "_fake_stats"
 location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/_fake_stats
 ---
 
 # .test_system_resource_cpu_anomaly()
 
 ## Connections
 - [[KillSwitchMonitor]] - `calls` [EXTRACTED]
-- [[TestAnomalyDetection_1]] - `method` [EXTRACTED]
+- [[TestAnomalyDetection]] - `method` [EXTRACTED]
 - [[_fake_stats()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/_fake_stats

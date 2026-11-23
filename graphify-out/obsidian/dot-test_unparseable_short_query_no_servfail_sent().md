@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "test_scorecard_scoring.py"
+community: "DNSForwarderProtocol"
 location: "L304"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scorecard_scoringpy
+  - community/DNSForwarderProtocol
 ---
 
 # .test_unparseable_short_query_no_servfail_sent()
@@ -16,4 +16,4 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestDNSForwarderProtocol]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scorecard_scoringpy
+#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol

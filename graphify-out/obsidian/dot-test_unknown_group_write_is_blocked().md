@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "Local LLM Support — Implementation Review"
+community: "TestGroupMemoryWriteACL"
 location: "L139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Local_LLM_Support__Implementation_Review
+  - community/TestGroupMemoryWriteACL
 ---
 
 # .test_unknown_group_write_is_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[TestGroupMemoryWriteACL]] - `method` [EXTRACTED]
 - [[Writing to a group that does not exist in the RBAC config is denied.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Local_LLM_Support__Implementation_Review
+#graphify/code #graphify/EXTRACTED #community/TestGroupMemoryWriteACL

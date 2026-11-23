@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "MiddlewareManager (3) (2)"
+community: "TestContainerRuntimeIsolation"
 location: "L912"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3_2
+  - community/TestContainerRuntimeIsolation
 ---
 
 # .test_unreadable_status_zero()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestContainerRuntimeIsolation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3_2
+#graphify/code #graphify/EXTRACTED #community/TestContainerRuntimeIsolation

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "MCPPolicyEngine (2)"
+community: "DraftEntry"
 location: "L261"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine_2
+  - community/DraftEntry
 ---
 
 # .test_verified_report_persists_with_intact_hashchain()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_verifier()_1]] - `calls` [EXTRACTED]
 - [[DraftEntry]] - `calls` [EXTRACTED]
-- [[IntelReportStore_1]] - `calls` [EXTRACTED]
+- [[IntelReportStore]] - `calls` [EXTRACTED]
 - [[TestVerifyReport]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2
+#graphify/code #graphify/EXTRACTED #community/DraftEntry

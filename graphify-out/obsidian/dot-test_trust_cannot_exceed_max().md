@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "ContextGuard"
+community: "TrustManager"
 location: "L514"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/TrustManager
 ---
 
 # .test_trust_cannot_exceed_max()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[TestPrivilegeEscalation]] - `method` [EXTRACTED]
 - [[Trust score should have an upper bound.]] - `rationale_for` [EXTRACTED]
+- [[TrustManager]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/TrustManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "OpenSCAP"
+community: "_mock_dir_with_files"
 location: "L260"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OpenSCAP
+  - community/_mock_dir_with_files
 ---
 
 # .test_two_empty_sbom()
@@ -15,4 +15,4 @@ tags:
 - [[TestScoreSupplyChain]] - `method` [EXTRACTED]
 - [[_mock_dir_with_files()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OpenSCAP
+#graphify/code #graphify/EXTRACTED #community/_mock_dir_with_files

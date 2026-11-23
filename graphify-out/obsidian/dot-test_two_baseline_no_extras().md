@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: ".agents/skills/i-observability/SKILL.md"
+community: "TestScoreSecretsManagement"
 location: "L410"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-observability/SKILLmd
+  - community/TestScoreSecretsManagement
 ---
 
 # .test_two_baseline_no_extras()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestScoreSecretsManagement]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-observability/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/TestScoreSecretsManagement

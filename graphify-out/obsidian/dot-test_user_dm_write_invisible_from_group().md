@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "KillSwitchMonitor (5)"
+community: "test_group_isolation.py"
 location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_5
+  - community/test_group_isolationpy
 ---
 
 # .test_user_dm_write_invisible_from_group()
@@ -15,4 +15,4 @@ tags:
 - [[Content written to a user DM must not appear in any group memory.]] - `rationale_for` [EXTRACTED]
 - [[TestGroupMemoryInvisibleFromDM]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_5
+#graphify/code #graphify/EXTRACTED #community/test_group_isolationpy

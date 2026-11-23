@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "Path"
+community: "_t"
 location: "L533"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/_t
 ---
 
 # .test_triage_agent_full_covers_every_entry_regardless_of_status()
@@ -15,4 +15,4 @@ tags:
 - [[TestDriverIsolation]] - `method` [EXTRACTED]
 - [[_t()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/_t

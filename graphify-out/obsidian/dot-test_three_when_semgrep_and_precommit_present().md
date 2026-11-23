@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_mfa_guard.py"
+community: "_score_secure_development"
 location: "L822"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/_score_secure_development
 ---
 
 # .test_three_when_semgrep_and_precommit_present()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[TestScoreSecureDevelopment]] - `method` [EXTRACTED]
 - [[_score_secure_development()]] - `calls` [EXTRACTED]
+- [[path_factory()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/_score_secure_development

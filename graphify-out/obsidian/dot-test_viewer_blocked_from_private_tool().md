@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "test_tool_acl.py"
 location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/test_tool_aclpy
 ---
 
 # .test_viewer_blocked_from_private_tool()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestViewerAccess]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/test_tool_aclpy

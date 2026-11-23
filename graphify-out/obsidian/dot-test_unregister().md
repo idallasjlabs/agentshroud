@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "test_a2a_policy.py"
+community: "AgentRegistry"
 location: "L674"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/AgentRegistry
 ---
 
 # .test_unregister()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAgentIsolation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

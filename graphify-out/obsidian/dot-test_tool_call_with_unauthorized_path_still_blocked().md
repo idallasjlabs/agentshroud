@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "MiddlewareManager"
+community: "test_file_sandbox_message_gate.py"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/test_file_sandbox_message_gatepy
 ---
 
 # .test_tool_call_with_unauthorized_path_still_blocked()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[TestFileSandboxSkippedForPlainMessages]] - `method` [EXTRACTED]
 - [[_tool_call_msg()]] - `calls` [EXTRACTED]
+- [[asyncio_61]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/test_file_sandbox_message_gatepy
