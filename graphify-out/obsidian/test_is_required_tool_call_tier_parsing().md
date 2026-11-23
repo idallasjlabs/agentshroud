@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "Community 70"
+community: "test_mfa_guard.py"
 location: "L564"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_70
+  - community/test_mfa_guardpy
 ---
 
 # test_is_required_tool_call_tier_parsing()
 
 ## Connections
-- [[MFAGuard_2]] - `calls` [EXTRACTED]
+- [[MFAGuard]] - `uses` [INFERRED]
+- [[parametrize_1]] - `references` [EXTRACTED]
 - [[test_mfa_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_70
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

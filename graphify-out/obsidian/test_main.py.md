@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "code"
-community: "Community 95"
+community: "test_main.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_95
+  - community/test_mainpy
 ---
 
 # test_main.py
@@ -19,8 +19,8 @@ tags:
 - [[TestHealthCheck]] - `contains` [EXTRACTED]
 - [[TestLifespan]] - `contains` [EXTRACTED]
 - [[TestRateLimit]] - `contains` [EXTRACTED]
-- [[Tests for chatbotmain.py.  Covers the four SCRUM-109 fixes 1. Auth enforcement]] - `rationale_for` [EXTRACTED]
-- [[app()]] - `contains` [EXTRACTED]
-- [[client()]] - `contains` [EXTRACTED]
+- [[Tests for chatbotmain.py. Covers the four SCRUM-109 fixes 1. Auth enforcement…]] - `rationale_for` [EXTRACTED]
+- [[app()_1]] - `contains` [EXTRACTED]
+- [[client()_9]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_95
+#graphify/code #graphify/EXTRACTED #community/test_mainpy

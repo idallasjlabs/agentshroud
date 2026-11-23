@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Community 115"
+community: "ApprovalRequest"
 location: "L470"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_115
+  - community/ApprovalRequest
 ---
 
 # test_persist_pending_store_writes_atomically()
 
 ## Connections
-- [[ApprovalQueue]] - `calls` [EXTRACTED]
-- [[ApprovalRequest_3]] - `calls` [EXTRACTED]
-- [[SCRUM-110 writes go through a temp file + os.replace so a crash     mid-write c]] - `rationale_for` [EXTRACTED]
+- [[ApprovalQueue]] - `uses` [INFERRED]
+- [[ApprovalRequest]] - `uses` [INFERRED]
+- [[SCRUM-110 writes go through a temp file + os.replace so a crash mid-write can…]] - `rationale_for` [EXTRACTED]
+- [[asyncio_10]] - `references` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_115
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "Community 260"
+community: "_is_op_reference_allowed"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_260
+  - community/_is_op_reference_allowed
 ---
 
 # test_op_proxy.py
@@ -15,8 +15,10 @@ tags:
 - [[TestIsOpReferenceAllowed]] - `contains` [EXTRACTED]
 - [[TestOpProxyEndpoint]] - `contains` [EXTRACTED]
 - [[TestOpRefAllowlistCoverage]] - `contains` [EXTRACTED]
+- [[Tests for POST credentialsop-proxy endpoint (P2 credential isolation).]] - `rationale_for` [EXTRACTED]
 - [[_is_op_reference_allowed()]] - `imports` [EXTRACTED]
 - [[auth_dep()]] - `imports` [EXTRACTED]
-- [[client()_12]] - `contains` [EXTRACTED]
+- [[client()_16]] - `contains` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_260
+#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed

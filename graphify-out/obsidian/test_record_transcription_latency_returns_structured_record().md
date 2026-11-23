@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "code"
-community: "Community 305"
+community: "test_voice_stt_model_ab.py"
 location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_305
+  - community/test_voice_stt_model_abpy
 ---
 
 # test_record_transcription_latency_returns_structured_record()
 
 ## Connections
 - [[The helper returns a record tagged with model size + duration.]] - `rationale_for` [EXTRACTED]
+- [[record_transcription_latency()]] - `calls` [EXTRACTED]
 - [[test_voice_stt_model_ab.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_305
+#graphify/code #graphify/EXTRACTED #community/test_voice_stt_model_abpy

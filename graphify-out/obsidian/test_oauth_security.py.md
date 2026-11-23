@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "Community 45"
+community: "OAuthRequest"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_45
+  - community/OAuthRequest
 ---
 
 # test_oauth_security.py
@@ -17,7 +17,8 @@ tags:
 - [[TestPKCE]] - `contains` [EXTRACTED]
 - [[TestRedirectURI]] - `contains` [EXTRACTED]
 - [[TestStateValidation]] - `contains` [EXTRACTED]
-- [[oauth_security.py]] - `references` [EXTRACTED]
-- [[validator()]] - `contains` [EXTRACTED]
+- [[Tests for oauth_security module - MCP OAuth proxy security. TDD Written before…]] - `rationale_for` [EXTRACTED]
+- [[oauth_security.py_2]] - `imports_from` [EXTRACTED]
+- [[validator()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_45
+#graphify/code #graphify/EXTRACTED #community/OAuthRequest

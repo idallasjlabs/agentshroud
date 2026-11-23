@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_cron_seed.py"
 type: "code"
-community: "Community 190"
+community: "test_hermes_cron_seed.py"
 location: "L139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_190
+  - community/test_hermes_cron_seedpy
 ---
 
 # test_jira_weekly_review_schedule_is_sunday_9am()
@@ -15,4 +15,4 @@ tags:
 - [[The schedule must be '0 9   0' (Sunday 0900) in both files.]] - `rationale_for` [EXTRACTED]
 - [[test_hermes_cron_seed.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_190
+#graphify/code #graphify/EXTRACTED #community/test_hermes_cron_seedpy

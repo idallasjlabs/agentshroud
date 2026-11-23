@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "Community 208"
+community: "LLMProxy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_208
+  - community/LLMProxy
 ---
 
 # test_llm_proxy_local_parity.py
@@ -16,17 +16,19 @@ tags:
 - [[ResourceGuard]] - `imports` [EXTRACTED]
 - [[ResourceLimits]] - `imports` [EXTRACTED]
 - [[VRAMHeadroomError]] - `imports` [EXTRACTED]
+- [[Workstream C — Full local-model parity for both bots. Tests that every cloud-…]] - `rationale_for` [EXTRACTED]
 - [[_FakeSanitizer_1]] - `contains` [EXTRACTED]
 - [[_FakeStreamClient]] - `contains` [EXTRACTED]
-- [[_FakeStreamResponse_1]] - `contains` [EXTRACTED]
+- [[_FakeStreamResponse]] - `contains` [EXTRACTED]
 - [[_anthropic_ok()]] - `contains` [EXTRACTED]
 - [[_anthropic_tool_use_ok()]] - `contains` [EXTRACTED]
-- [[_make_proxy()]] - `contains` [EXTRACTED]
+- [[_make_proxy()_4]] - `contains` [EXTRACTED]
 - [[_op()]] - `contains` [EXTRACTED]
 - [[_openai_ok()]] - `contains` [EXTRACTED]
 - [[_openai_tool_use_ok()]] - `contains` [EXTRACTED]
 - [[_skill_manage_like_request()]] - `contains` [EXTRACTED]
 - [[llm_proxy.py]] - `imports_from` [EXTRACTED]
+- [[resource_guard.py]] - `imports_from` [EXTRACTED]
 - [[test_cloud_mode_anthropic_tool_use_shape_passes_through()]] - `contains` [EXTRACTED]
 - [[test_deepseek_r1_routes_to_mlxlm()]] - `contains` [EXTRACTED]
 - [[test_fieldflare_route_strips_unsupported_fields_non_streaming()]] - `contains` [EXTRACTED]
@@ -94,4 +96,4 @@ tags:
 - [[test_stats_local_secondary_failover_succeeded_incremented()]] - `contains` [EXTRACTED]
 - [[test_vram_headroom_error_is_not_resource_warning()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_208
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "Community 7"
+community: "PIIConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/PIIConfig
 ---
 
 # test_performance.py
@@ -16,6 +16,7 @@ tags:
 - [[LedgerConfig]] - `imports` [EXTRACTED]
 - [[PIIConfig]] - `imports` [EXTRACTED]
 - [[PIISanitizer]] - `imports` [EXTRACTED]
+- [[Performance Baseline Tests — latency and throughput benchmarks.]] - `rationale_for` [EXTRACTED]
 - [[PromptGuard]] - `imports` [EXTRACTED]
 - [[SecurityPipeline]] - `imports` [EXTRACTED]
 - [[TestAuditChainPerformance]] - `contains` [EXTRACTED]
@@ -25,8 +26,11 @@ tags:
 - [[TestPromptGuardPerformance]] - `contains` [EXTRACTED]
 - [[TestSecurityPipelineChainLatency]] - `contains` [EXTRACTED]
 - [[TestTrustManagerPerformance]] - `contains` [EXTRACTED]
-- [[TrustManager_1]] - `imports` [EXTRACTED]
-- [[test_prompt_guard.py]] - `shares_data_with` [INFERRED]
-- [[test_sanitizer.py]] - `shares_data_with` [INFERRED]
+- [[TrustManager]] - `imports` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
+- [[ledger.py_2]] - `imports_from` [EXTRACTED]
+- [[prompt_guard.py_2]] - `imports_from` [EXTRACTED]
+- [[sanitizer.py_2]] - `imports_from` [EXTRACTED]
+- [[trust_manager.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

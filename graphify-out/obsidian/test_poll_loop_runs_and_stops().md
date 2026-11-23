@@ -1,21 +1,22 @@
 ---
 source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
-community: "Community 113"
+community: "CronStateMonitor"
 location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_113
+  - community/CronStateMonitor
 ---
 
 # test_poll_loop_runs_and_stops()
 
 ## Connections
-- [[CronStateMonitor]] - `calls` [EXTRACTED]
+- [[CronStateMonitor]] - `uses` [INFERRED]
 - [[_DispatchSpy]] - `calls` [EXTRACTED]
 - [[_oc_job()]] - `calls` [EXTRACTED]
 - [[_openclaw_store()]] - `calls` [EXTRACTED]
+- [[asyncio_6]] - `references` [EXTRACTED]
 - [[test_cron_state_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_113
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

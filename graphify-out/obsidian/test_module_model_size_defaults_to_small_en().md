@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "code"
-community: "Community 305"
+community: "test_voice_stt_model_ab.py"
 location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_305
+  - community/test_voice_stt_model_abpy
 ---
 
 # test_module_model_size_defaults_to_small_en()
 
 ## Connections
 - [[With WHISPER_MODEL_SIZE unset, the resolved size stays small.en.]] - `rationale_for` [EXTRACTED]
+- [[_resolve_model_size()]] - `calls` [EXTRACTED]
 - [[test_voice_stt_model_ab.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_305
+#graphify/code #graphify/EXTRACTED #community/test_voice_stt_model_abpy

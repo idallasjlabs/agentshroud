@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "code"
-community: "Community 99"
+community: "test_pruner_short_numeric_ids_are_test_fixtures"
 location: "L383"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_99
+  - community/test_pruner_short_numeric_ids_are_test_fixtures
 ---
 
 # test_pruner_short_numeric_ids_are_test_fixtures()
@@ -15,4 +15,4 @@ tags:
 - [[IDs  10000 should be treated as test fixtures by the pruner heuristic.]] - `rationale_for` [EXTRACTED]
 - [[test_collaborator_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_99
+#graphify/code #graphify/EXTRACTED #community/test_pruner_short_numeric_ids_are_test_fixtures

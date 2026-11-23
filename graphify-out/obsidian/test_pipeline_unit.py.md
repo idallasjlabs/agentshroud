@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "Community 24"
+community: "asyncio"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/asyncio
 ---
 
 # test_pipeline_unit.py
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AuditChain]] - `imports` [EXTRACTED]
 - [[CrossBotTrustLedger]] - `imports` [EXTRACTED]
-- [[EnvelopeSigner_1]] - `imports` [EXTRACTED]
+- [[EnvelopeSigner]] - `imports` [EXTRACTED]
 - [[InjectionAction]] - `imports` [EXTRACTED]
 - [[InstructionEnvelope]] - `imports` [EXTRACTED]
 - [[KeyLeakDetector]] - `imports` [EXTRACTED]
@@ -24,9 +24,9 @@ tags:
 - [[PIIConfig]] - `imports` [EXTRACTED]
 - [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[PipelineAction]] - `imports` [EXTRACTED]
-- [[ScanResult_1]] - `imports` [EXTRACTED]
+- [[ScanResult]] - `imports` [EXTRACTED]
 - [[SecurityPipeline]] - `imports` [EXTRACTED]
-- [[TestAuditChain]] - `contains` [EXTRACTED]
+- [[TestAuditChain_1]] - `contains` [EXTRACTED]
 - [[TestAuditChainBounded]] - `contains` [EXTRACTED]
 - [[TestContextGuardInPipeline]] - `contains` [EXTRACTED]
 - [[TestContextIntegrityInPipeline]] - `contains` [EXTRACTED]
@@ -39,12 +39,13 @@ tags:
 - [[TestTrustViolationRecording]] - `contains` [EXTRACTED]
 - [[ThreatAction]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
-- [[TrustManager_1]] - `imports` [EXTRACTED]
+- [[TrustManager]] - `imports` [EXTRACTED]
+- [[Unit tests for pipeline components.]] - `rationale_for` [EXTRACTED]
 - [[_FakeAttack]] - `contains` [EXTRACTED]
 - [[_FakeIntegrityScore]] - `contains` [EXTRACTED]
 - [[_make_integrity_pipeline()]] - `contains` [EXTRACTED]
-- [[_make_pipeline()_2]] - `contains` [EXTRACTED]
+- [[_make_pipeline()_1]] - `contains` [EXTRACTED]
 - [[_make_signer_pipeline()]] - `contains` [EXTRACTED]
-- [[pipeline.py]] - `references` [EXTRACTED]
+- [[pipeline.py_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_24
+#graphify/code #graphify/EXTRACTED #community/asyncio

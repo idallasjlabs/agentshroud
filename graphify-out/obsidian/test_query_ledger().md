@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "code"
-community: "Community 531"
+community: "ingest_api/config.py"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_531
+  - community/ingest_api/configpy
 ---
 
 # test_query_ledger()
 
 ## Connections
 - [[Test paginated ledger query]] - `rationale_for` [EXTRACTED]
+- [[asyncio_42]] - `references` [EXTRACTED]
 - [[test_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_531
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

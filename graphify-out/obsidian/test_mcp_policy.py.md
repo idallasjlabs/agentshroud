@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "Community 35"
+community: "load_config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/load_config
 ---
 
 # test_mcp_policy.py
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[ApprovalStore_1]] - `imports` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `imports` [EXTRACTED]
+- [[ApprovalStore]] - `imports` [EXTRACTED]
 - [[EnhancedApprovalQueue]] - `imports` [EXTRACTED]
 - [[MCPPolicyAction]] - `imports` [EXTRACTED]
 - [[MCPPolicyConfig]] - `imports` [EXTRACTED]
@@ -22,13 +22,14 @@ tags:
 - [[MCPProxy]] - `imports` [EXTRACTED]
 - [[MCPToolCall]] - `imports` [EXTRACTED]
 - [[MCPToolResult]] - `imports` [EXTRACTED]
-- [[RBACConfig_1]] - `imports` [EXTRACTED]
-- [[ToolRiskConfig_1]] - `imports` [EXTRACTED]
+- [[RBACConfig]] - `imports` [EXTRACTED]
+- [[Tests for the MCP (Model Context Protocol) security policy engine (SCRUM-84).…]] - `rationale_for` [EXTRACTED]
+- [[ToolRiskConfig]] - `imports` [EXTRACTED]
 - [[_FakeApprovalQueue]] - `contains` [EXTRACTED]
-- [[_base_config()_1]] - `contains` [EXTRACTED]
+- [[_base_config()]] - `contains` [EXTRACTED]
 - [[_real_queue()]] - `contains` [EXTRACTED]
-- [[engine()_1]] - `contains` [EXTRACTED]
-- [[mcp_policy.py]] - `references` [EXTRACTED]
+- [[engine()]] - `contains` [EXTRACTED]
+- [[mcp_policy.py]] - `imports_from` [EXTRACTED]
 - [[test_allowlisted_server_safe_tool_is_allowed()]] - `contains` [EXTRACTED]
 - [[test_bare_tool_name_risk_tier_applies_across_servers()]] - `contains` [EXTRACTED]
 - [[test_critical_tool_requires_approval()]] - `contains` [EXTRACTED]
@@ -45,7 +46,6 @@ tags:
 - [[test_enforce_high_risk_enqueues_and_allows_on_approval()]] - `contains` [EXTRACTED]
 - [[test_enforce_high_risk_queue_no_wait_denies_closed()]] - `contains` [EXTRACTED]
 - [[test_enforce_high_risk_without_queue_denies_closed()]] - `contains` [EXTRACTED]
-- [[test_enforce_real_queue_high_risk_not_downgraded_to_allow (regression guard)]] - `references` [EXTRACTED]
 - [[test_enforce_real_queue_high_risk_not_downgraded_to_allow()]] - `contains` [EXTRACTED]
 - [[test_enforce_unicode_evasion_still_denied()]] - `contains` [EXTRACTED]
 - [[test_high_risk_tool_requires_approval()]] - `contains` [EXTRACTED]
@@ -59,4 +59,4 @@ tags:
 - [[test_server_and_tool_matching_is_case_insensitive()]] - `contains` [EXTRACTED]
 - [[test_unknown_server_is_denied_by_default()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_35
+#graphify/code #graphify/EXTRACTED #community/load_config

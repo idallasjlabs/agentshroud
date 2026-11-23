@@ -1,20 +1,23 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "Community 251"
+community: "test_llm_proxy_failover.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_251
+  - community/test_llm_proxy_failoverpy
 ---
 
 # test_llm_proxy_failover.py
 
 ## Connections
 - [[LLMProxy]] - `imports` [EXTRACTED]
+- [[Tests for the cloud→local quota failover orchestrator in LLMProxy.]] - `rationale_for` [EXTRACTED]
 - [[_call_proxy()]] - `contains` [EXTRACTED]
-- [[make_proxy()]] - `contains` [EXTRACTED]
+- [[asyncio_19]] - `imports` [EXTRACTED]
+- [[llm_proxy.py]] - `imports_from` [EXTRACTED]
+- [[make_proxy()_1]] - `contains` [EXTRACTED]
 - [[test_already_local_request_does_not_failover()]] - `contains` [EXTRACTED]
 - [[test_failover_notification_cooldown()]] - `contains` [EXTRACTED]
 - [[test_failover_notification_distinguishes_translated_vs_not()]] - `contains` [EXTRACTED]
@@ -36,6 +39,5 @@ tags:
 - [[test_proxy_failover_openai_quota_dropin()]] - `contains` [EXTRACTED]
 - [[test_proxy_normal_200_passthrough_untouched()]] - `contains` [EXTRACTED]
 - [[test_proxy_post_retry_429_now_failovers()]] - `contains` [EXTRACTED]
-- [[test_router_streaming.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_251
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

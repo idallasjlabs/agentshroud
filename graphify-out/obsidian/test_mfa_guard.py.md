@@ -1,36 +1,39 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "Community 70"
+community: "test_mfa_guard.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_70
+  - community/test_mfa_guardpy
 ---
 
 # test_mfa_guard.py
 
 ## Connections
 - [[ApprovalQueue]] - `imports` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_3]] - `imports` [EXTRACTED]
-- [[ApprovalStore_1]] - `imports` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `imports` [EXTRACTED]
+- [[ApprovalRequest]] - `imports` [EXTRACTED]
+- [[ApprovalStore]] - `imports` [EXTRACTED]
 - [[EnhancedApprovalQueue]] - `imports` [EXTRACTED]
-- [[MFAGuard_2]] - `imports` [EXTRACTED]
+- [[MFAGuard]] - `imports` [EXTRACTED]
 - [[MFAResult]] - `imports` [EXTRACTED]
-- [[ToolRiskConfig_1]] - `imports` [EXTRACTED]
+- [[Tests for MFAGuard — second factor for high-risk owner operations. SCRUM-93 —…]] - `rationale_for` [EXTRACTED]
+- [[ToolRiskConfig]] - `imports` [EXTRACTED]
 - [[_queue()]] - `contains` [EXTRACTED]
 - [[_ref_totp()]] - `contains` [EXTRACTED]
 - [[_submit_enhanced_high_risk()]] - `contains` [EXTRACTED]
 - [[_submit_high_risk()]] - `contains` [EXTRACTED]
 - [[_submit_tool_call()]] - `contains` [EXTRACTED]
+- [[approval_queuestore.py]] - `imports_from` [EXTRACTED]
 - [[enhanced_mfa_queue()]] - `contains` [EXTRACTED]
-- [[enhanced_queue.py]] - `references` [EXTRACTED]
-- [[mfa_guard.py]] - `references` [EXTRACTED]
-- [[now()_1]] - `contains` [EXTRACTED]
-- [[queue.py]] - `references` [EXTRACTED]
-- [[store.py]] - `references` [EXTRACTED]
+- [[enhanced_queue.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
+- [[mfa_guard.py]] - `imports_from` [EXTRACTED]
+- [[now()]] - `contains` [EXTRACTED]
+- [[queue.py]] - `imports_from` [EXTRACTED]
 - [[test_counter_below_zero_skipped()]] - `contains` [EXTRACTED]
 - [[test_custom_high_risk_action_types()]] - `contains` [EXTRACTED]
 - [[test_decide_mfa_disabled_approves_without_code()]] - `contains` [EXTRACTED]
@@ -73,4 +76,4 @@ tags:
 - [[test_valid_totp_prev_window_allowed()]] - `contains` [EXTRACTED]
 - [[test_wrong_length_code_denies()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_70
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

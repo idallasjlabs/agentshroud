@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_module_stats.py"
 type: "code"
-community: "Community 300"
+community: "test_module_stats.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_300
+  - community/test_module_statspy
 ---
 
 # test_module_stats.py
@@ -14,13 +14,14 @@ tags:
 ## Connections
 - [[Decision]] - `imports` [EXTRACTED]
 - [[EgressAction]] - `imports` [EXTRACTED]
-- [[EgressFilter_1]] - `imports` [EXTRACTED]
+- [[EgressFilter]] - `imports` [EXTRACTED]
 - [[ModuleStatsCollector]] - `imports` [EXTRACTED]
 - [[TestEgressWiringEndToEnd]] - `contains` [EXTRACTED]
 - [[TestEnforcementWiring]] - `contains` [EXTRACTED]
+- [[Tests for ModuleStatsCollector (SCRUM-80) — live per-module enforcement counts.]] - `rationale_for` [EXTRACTED]
 - [[ToolACLEnforcer]] - `imports` [EXTRACTED]
 - [[get_collector()]] - `imports` [EXTRACTED]
-- [[module_stats.py]] - `references` [EXTRACTED]
+- [[module_stats.py]] - `imports_from` [EXTRACTED]
 - [[record_decision()]] - `imports` [EXTRACTED]
 - [[test_block_rate_computed()]] - `contains` [EXTRACTED]
 - [[test_empty_module_zero_rate_not_division_error()]] - `contains` [EXTRACTED]
@@ -31,4 +32,4 @@ tags:
 - [[test_thread_safe_under_concurrency()]] - `contains` [EXTRACTED]
 - [[test_unknown_module_created_on_demand()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_300
+#graphify/code #graphify/EXTRACTED #community/test_module_statspy

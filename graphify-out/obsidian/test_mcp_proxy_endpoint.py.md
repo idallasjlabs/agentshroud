@@ -1,21 +1,24 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "code"
-community: "Community 54"
+community: "mcp_proxy.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/mcp_proxypy
 ---
 
 # test_mcp_proxy_endpoint.py
 
 ## Connections
+- [[Integration tests for POST mcpproxy endpoint (P4 MCP proxy wiring).]] - `rationale_for` [EXTRACTED]
 - [[ProxyResult]] - `imports` [EXTRACTED]
-- [[TestMCPProxyEndpoint_1]] - `contains` [EXTRACTED]
-- [[client()_9]] - `contains` [EXTRACTED]
-- [[test_mcp_permissions.py]] - `conceptually_related_to` [INFERRED]
-- [[test_mcp_proxy_coverage.py]] - `conceptually_related_to` [INFERRED]
+- [[TestMCPProxyEndpoint]] - `contains` [EXTRACTED]
+- [[client()_3]] - `contains` [EXTRACTED]
+- [[httpx_1]] - `imports_from` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
+- [[mcp_proxy.py_2]] - `imports_from` [EXTRACTED]
+- [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_54
+#graphify/code #graphify/EXTRACTED #community/mcp_proxypy

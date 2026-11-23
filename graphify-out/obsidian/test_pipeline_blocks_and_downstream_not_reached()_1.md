@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/tests/test_rate_limit_guard.py"
+source_file: "gateway/tests/test_data_exfil_volume_guard.py"
 type: "code"
-community: "Community 206"
-location: "L254"
+community: "DataExfilVolumeGuard"
+location: "L251"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_206
+  - community/DataExfilVolumeGuard
 ---
 
 # test_pipeline_blocks_and_downstream_not_reached()
 
 ## Connections
-- [[RateLimitConfig]] - `calls` [EXTRACTED]
-- [[RateLimitGuard]] - `calls` [EXTRACTED]
+- [[DataExfilVolumeConfig]] - `uses` [INFERRED]
+- [[DataExfilVolumeGuard]] - `uses` [INFERRED]
 - [[_make_pipeline()_3]] - `calls` [EXTRACTED]
-- [[test_rate_limit_guard.py]] - `contains` [EXTRACTED]
+- [[asyncio_44]] - `references` [EXTRACTED]
+- [[test_data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_206
+#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard
