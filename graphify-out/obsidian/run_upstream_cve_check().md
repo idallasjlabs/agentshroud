@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Community 368"
+community: "daily_cve_report.py"
 location: "L662"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_368
+  - community/daily_cve_reportpy
 ---
 
 # run_upstream_cve_check()
 
 ## Connections
-- [[Any_46]] - `references` [EXTRACTED]
-- [[Fetch one agent's upstream CVEs, alert via Telegram, honestly.      Runs a singl]] - `rationale_for` [EXTRACTED]
+- [[Any_52]] - `references` [EXTRACTED]
+- [[Fetch one agent's upstream CVEs, alert via Telegram, honestly. Runs a single…]] - `rationale_for` [EXTRACTED]
 - [[_load_alerted_ghsa()]] - `calls` [EXTRACTED]
 - [[_save_alerted_ghsa()]] - `calls` [EXTRACTED]
 - [[_send_telegram()]] - `calls` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[get_agent_cve_source()]] - `calls` [EXTRACTED]
 - [[run_upstream_cve_check_all_agents()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_368
+#graphify/code #graphify/EXTRACTED #community/daily_cve_reportpy

@@ -1,17 +1,18 @@
 ---
 source_file: "scripts/smoke.d/test-sunday-upgrade-scan.sh"
 type: "code"
-community: "Community 1111"
+community: "test-sunday-upgrade-scan.sh"
 location: "L476"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1111
+  - community/test-sunday-upgrade-scansh
 ---
 
 # restore()
 
 ## Connections
 - [[test-sunday-upgrade-scan.sh]] - `defines` [EXTRACTED]
+- [[test-sunday-upgrade-scan.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1111
+#graphify/code #graphify/EXTRACTED #community/test-sunday-upgrade-scansh

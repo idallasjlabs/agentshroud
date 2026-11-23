@@ -1,28 +1,28 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "Community 39"
+community: "main.rs"
 location: "L585"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/mainrs
 ---
 
 # run_approvals_decide()
 
 ## Connections
-- [[.post()_1]] - `calls` [EXTRACTED]
-- [[GatewayClient]] - `references` [EXTRACTED]
+- [[dot-post()_2]] - `calls` [EXTRACTED]
+- [[GatewayClient_1]] - `references` [EXTRACTED]
 - [[Result]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
-- [[T]] - `references` [EXTRACTED]
+- [[T_1]] - `references` [EXTRACTED]
 - [[approve_sends_correct_body_and_path()]] - `calls` [EXTRACTED]
 - [[decide_errors_on_404()]] - `calls` [EXTRACTED]
 - [[decide_errors_on_409_conflict()]] - `calls` [EXTRACTED]
 - [[deny_sends_false_and_formats()]] - `calls` [EXTRACTED]
 - [[format_decision()]] - `calls` [EXTRACTED]
-- [[main()_1]] - `calls` [EXTRACTED]
+- [[main()_39]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_39
+#graphify/code #graphify/EXTRACTED #community/mainrs

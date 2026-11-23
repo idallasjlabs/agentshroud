@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "Community 87"
+community: "cli/main.py"
 location: "L310"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_87
+  - community/cli/mainpy
 ---
 
 # set()
 
 ## Connections
-- [[Add a user to a group.]] - `rationale_for` [EXTRACTED]
 - [[Set configuration values.]] - `rationale_for` [EXTRACTED]
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[climain.py]] - `contains` [EXTRACTED]
+- [[group_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_87
+#graphify/code #graphify/EXTRACTED #community/cli/mainpy

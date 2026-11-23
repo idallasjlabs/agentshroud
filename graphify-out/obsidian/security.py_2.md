@@ -1,24 +1,25 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
-type: "document"
-community: "Community 727"
-location: "L10"
+source_file: "gateway/runtime/security.py"
+type: "code"
+community: "api.py"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_727
+  - community/apipy
 ---
 
 # security.py
 
 ## Connections
-- [[Configuration  Environment Variables_19]] - `contains` [EXTRACTED]
-- [[Function Details_25]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_28]] - `contains` [EXTRACTED]
-- [[Purpose_146]] - `contains` [EXTRACTED]
-- [[Related_32]] - `contains` [EXTRACTED]
-- [[Responsibilities_30]] - `contains` [EXTRACTED]
-- [[Security Feature Registry]] - `contains` [EXTRACTED]
-- [[security.py_1]] - `contains` [EXTRACTED]
+- [[SecurityFeature]] - `contains` [EXTRACTED]
+- [[_validate_runtime()]] - `contains` [EXTRACTED]
+- [[api.py_2]] - `imports_from` [EXTRACTED]
+- [[get_features_for_runtime()]] - `contains` [EXTRACTED]
+- [[get_missing_features()]] - `contains` [EXTRACTED]
+- [[get_security_comparison()]] - `contains` [EXTRACTED]
+- [[get_security_options()]] - `contains` [EXTRACTED]
+- [[installer.py_2]] - `imports_from` [EXTRACTED]
+- [[warn_missing_features()]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_727
+#graphify/code #graphify/EXTRACTED #community/apipy

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_slack_socket_client.py"
 type: "rationale"
-community: "Community 176"
+community: "_make_client"
 location: "L100"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_176
+  - community/_make_client
 ---
 
 # stop() signals the run loop to exit.
 
 ## Connections
-- [[.test_stop_sets_running_false()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_stop_sets_running_false()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_176
+#graphify/rationale #graphify/EXTRACTED #community/_make_client

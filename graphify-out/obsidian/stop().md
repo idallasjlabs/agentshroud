@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "Community 87"
+community: "cli/main.py"
 location: "L232"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_87
+  - community/cli/mainpy
 ---
 
 # stop()
 
 ## Connections
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[climain.py]] - `contains` [EXTRACTED]
+- [[group_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_87
+#graphify/code #graphify/EXTRACTED #community/cli/mainpy

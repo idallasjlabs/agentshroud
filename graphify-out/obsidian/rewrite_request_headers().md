@@ -1,19 +1,19 @@
 ---
 source_file: "docker/bots/hermes/dashboard_bridge.py"
 type: "code"
-community: "Community 591"
+community: "_handle"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_591
+  - community/_handle
 ---
 
 # rewrite_request_headers()
 
 ## Connections
-- [[Rewrite the Host header to `new_host` and normalize Connection framing.      `he]] - `rationale_for` [EXTRACTED]
-- [[_handle()]] - `calls` [EXTRACTED]
+- [[Rewrite the Host header to `new_host` and normalize Connection framing.…]] - `rationale_for` [EXTRACTED]
+- [[_handle()_4]] - `calls` [EXTRACTED]
 - [[dashboard_bridge.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_591
+#graphify/code #graphify/EXTRACTED #community/_handle

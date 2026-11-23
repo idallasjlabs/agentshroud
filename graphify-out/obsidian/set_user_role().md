@@ -1,22 +1,26 @@
 ---
-source_file: "gateway/ingest_api/main.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 978"
-location: "L3963"
+community: "soc/router.py"
+location: "L1105"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_978
+  - graphify/INFERRED
+  - community/soc/routerpy
 ---
 
 # set_user_role()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
-- [[HTTPException]] - `calls` [EXTRACTED]
-- [[Request_2]] - `references` [EXTRACTED]
-- [[Role_1]] - `calls` [EXTRACTED]
-- [[Set a user's role (owner only).]] - `rationale_for` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
+- [[Action]] - `uses` [INFERRED]
+- [[RBACConfig]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
+- [[Role]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
+- [[SetRoleRequest]] - `references` [EXTRACTED]
+- [[_log_audit()]] - `calls` [EXTRACTED]
+- [[put]] - `references` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_978
+#graphify/code #graphify/INFERRED #community/soc/routerpy

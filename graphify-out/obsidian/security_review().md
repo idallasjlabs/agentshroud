@@ -1,28 +1,27 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "Community 66"
+community: "version_routes.py"
 location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_66
+  - community/version_routespy
 ---
 
 # security_review()
 
 ## Connections
-- [[.test_has_timestamp()]] - `calls` [EXTRACTED]
-- [[.test_invalid_version_format()]] - `calls` [EXTRACTED]
-- [[.test_valid_version()]] - `calls` [EXTRACTED]
-- [[Any_80]] - `references` [EXTRACTED]
-- [[Perform a security review before version change.      Checks     - Known CVEs f]] - `rationale_for` [EXTRACTED]
+- [[dot-test_has_timestamp()]] - `calls` [EXTRACTED]
+- [[dot-test_invalid_version_format()]] - `calls` [EXTRACTED]
+- [[dot-test_valid_version()]] - `calls` [EXTRACTED]
+- [[Any_77]] - `references` [EXTRACTED]
+- [[Perform a security review before version change. Checks - Known CVEs for the…]] - `rationale_for` [EXTRACTED]
 - [[agentshroud_manager.py]] - `contains` [EXTRACTED]
-- [[check-vendor-compat.sh]] - `semantically_similar_to` [INFERRED]
 - [[downgrade()]] - `calls` [EXTRACTED]
 - [[review_version()]] - `calls` [EXTRACTED]
 - [[test_agentshroud_manager.py]] - `imports` [EXTRACTED]
 - [[upgrade()]] - `calls` [EXTRACTED]
-- [[version_routes.py]] - `imports` [EXTRACTED]
+- [[version_routes.py_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_66
+#graphify/code #graphify/EXTRACTED #community/version_routespy

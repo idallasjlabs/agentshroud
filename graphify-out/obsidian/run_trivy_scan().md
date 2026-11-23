@@ -1,22 +1,33 @@
 ---
-source_file: "gateway/ingest_api/main.py"
+source_file: "gateway/security/trivy_report.py"
 type: "code"
-community: "Community 978"
-location: "L1530"
+community: "run_trivy_scan"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/run_trivy_scan
 ---
 
 # run_trivy_scan()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
-- [[HTTPException]] - `calls` [EXTRACTED]
-- [[Run Trivy vulnerability scan.]] - `rationale_for` [EXTRACTED]
-- [[_record_scanner_result()]] - `calls` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
-- [[run_all_scanners()]] - `calls` [EXTRACTED]
+- [[dot-test_run_binary_not_found()]] - `calls` [EXTRACTED]
+- [[dot-test_run_empty_stdout_is_error_not_clean()]] - `calls` [EXTRACTED]
+- [[dot-test_run_image_scan_type()]] - `calls` [EXTRACTED]
+- [[dot-test_run_nonzero_exit_code_is_error()]] - `calls` [EXTRACTED]
+- [[dot-test_run_parse_error()]] - `calls` [EXTRACTED]
+- [[dot-test_run_success()]] - `calls` [EXTRACTED]
+- [[dot-test_run_timeout()]] - `calls` [EXTRACTED]
+- [[dot-test_run_whitespace_only_stdout_is_error()]] - `calls` [EXTRACTED]
+- [[dot-test_trivy_binary_not_found()]] - `calls` [EXTRACTED]
+- [[Any_11]] - `references` [EXTRACTED]
+- [[Run a Trivy scan and return parsed results. Args target Scan target…]] - `rationale_for` [EXTRACTED]
+- [[daily_cve_report.py]] - `imports` [EXTRACTED]
+- [[parse_trivy_output()]] - `calls` [EXTRACTED]
+- [[run_and_send_cve_report()]] - `calls` [EXTRACTED]
+- [[test_security_audit.py]] - `imports` [EXTRACTED]
+- [[test_security_toolchain.py]] - `imports` [EXTRACTED]
+- [[trivy_report.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_978
+#graphify/code #graphify/EXTRACTED #community/run_trivy_scan

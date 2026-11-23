@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/runtime/config.py"
 type: "code"
-community: "pipeline.py — Security Pipeline"
+community: "api.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pipelinepy__Security_Pipeline
+  - community/apipy
 ---
 
 # runtime/config.py
 
 ## Connections
+- [[Runtime configuration for multi-engine container support.]] - `rationale_for` [EXTRACTED]
 - [[RuntimeConfig]] - `contains` [EXTRACTED]
 - [[api.py_2]] - `imports_from` [EXTRACTED]
-- [[engine.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline
+#graphify/code #graphify/EXTRACTED #community/apipy

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 978"
+community: "ingest_api/main.py"
 location: "L1497"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/ingest_api/mainpy
 ---
 
 # run_clamav_scan()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
-- [[HTTPException]] - `calls` [EXTRACTED]
-- [[Run ClamAV antivirus scan. Tries clamdscan (daemon) first, falls back to clamsca]] - `rationale_for` [EXTRACTED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[Run ClamAV antivirus scan. Tries clamdscan (daemon) first, falls back to…]] - `rationale_for` [EXTRACTED]
 - [[_record_scanner_result()]] - `calls` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
+- [[post_6]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_978
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

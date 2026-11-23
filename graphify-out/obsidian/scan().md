@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "Community 87"
-location: "L346"
+community: "AsyncMock"
+location: "L605"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_87
+  - community/AsyncMock
 ---
 
 # scan()
 
 ## Connections
-- [[Trigger a security scan.]] - `rationale_for` [EXTRACTED]
-- [[_output()]] - `calls` [EXTRACTED]
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[dot-test_attachments_scanned()]] - `contains` [EXTRACTED]
+- [[_pass_result()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_87
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

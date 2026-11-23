@@ -1,19 +1,18 @@
 ---
 source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
 type: "code"
-community: "Community 382"
+community: "gen.py"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_382
+  - community/genpy
 ---
 
 # request_images()
 
 ## Connections
-- [[RuntimeError]] - `calls` [INFERRED]
 - [[gen.py]] - `contains` [EXTRACTED]
-- [[main()_34]] - `calls` [EXTRACTED]
+- [[main()_20]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_382
+#graphify/code #graphify/EXTRACTED #community/genpy

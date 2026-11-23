@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/restore-backup.sh"
 type: "code"
-community: "Community 227"
+community: "check-vendor-compat.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_227
+  - community/check-vendor-compatsh
 ---
 
 # restore-backup.sh script
@@ -15,4 +15,4 @@ tags:
 - [[restore-backup.sh]] - `contains` [EXTRACTED]
 - [[restore_tar_to_volume()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_227
+#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh

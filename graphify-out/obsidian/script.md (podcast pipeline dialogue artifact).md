@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-mnemosyne/SKILL.md"
 type: "concept"
-community: "Community 1862"
+community: "script.md (podcast pipeline dialogue artifact)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1862
+  - community/scriptmd_podcast_pipeline_dialogue_artifact
 ---
 
 # script.md (podcast pipeline dialogue artifact)
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1862
+#graphify/concept #graphify/EXTRACTED #community/scriptmd_podcast_pipeline_dialogue_artifact

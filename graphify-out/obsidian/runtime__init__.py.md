@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/__init__.py"
 type: "code"
-community: "pipeline.py — Security Pipeline"
+community: "AppleContainerEngine"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pipelinepy__Security_Pipeline
+  - community/AppleContainerEngine
 ---
 
 # runtime/__init__.py
@@ -15,12 +15,15 @@ tags:
 - [[AppleContainerEngine]] - `imports` [EXTRACTED]
 - [[ContainerEngine]] - `imports` [EXTRACTED]
 - [[DockerEngine]] - `imports` [EXTRACTED]
+- [[Multi-runtime container abstraction layer. Supports Docker, Podman, and Apple…]] - `rationale_for` [EXTRACTED]
 - [[PodmanEngine]] - `imports` [EXTRACTED]
-- [[apple_engine.py]] - `re_exports` [EXTRACTED]
+- [[api.py_2]] - `imports_from` [EXTRACTED]
+- [[apple_engine.py_2]] - `re_exports` [EXTRACTED]
 - [[detect_runtime()]] - `contains` [EXTRACTED]
-- [[docker_engine.py]] - `re_exports` [EXTRACTED]
-- [[engine.py]] - `re_exports` [EXTRACTED]
+- [[docker_engine.py_2]] - `re_exports` [EXTRACTED]
+- [[engine.py_2]] - `re_exports` [EXTRACTED]
 - [[get_engine()]] - `contains` [EXTRACTED]
-- [[podman_engine.py]] - `re_exports` [EXTRACTED]
+- [[installer.py_2]] - `imports_from` [EXTRACTED]
+- [[podman_engine.py_2]] - `re_exports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

@@ -12,7 +12,7 @@ tags:
 # skills/icloud/scripts/calendar.js
 
 ## Connections
-- [[CONFIG_2]] - `contains` [EXTRACTED]
+- [[CONFIG]] - `contains` [EXTRACTED]
 - [[args]] - `contains` [EXTRACTED]
 - [[createEvent()]] - `contains` [EXTRACTED]
 - [[getCredentials()]] - `contains` [EXTRACTED]

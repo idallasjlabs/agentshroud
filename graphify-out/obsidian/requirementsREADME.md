@@ -1,18 +1,17 @@
 ---
 source_file: "docs/requirements/README.md"
 type: "document"
-community: "test_api_contract_fuzz.py"
+community: "Requirements Documentation"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_api_contract_fuzzpy
+  - community/Requirements_Documentation
 ---
 
 # requirements/README.md
 
 ## Connections
 - [[Requirements Documentation]] - `contains` [EXTRACTED]
-- [[projectREADME]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/test_api_contract_fuzzpy
+#graphify/document #graphify/EXTRACTED #community/Requirements_Documentation

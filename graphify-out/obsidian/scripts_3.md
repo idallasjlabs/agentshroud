@@ -1,18 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/package.json"
+source_file: "skills/custom/browser-fetch/package.json"
 type: "code"
-community: "Community 909"
+community: "browser-fetch/package.json"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_909
+  - community/browser-fetch/packagejson
 ---
 
 # scripts
 
 ## Connections
-- [[package.json_3]] - `contains` [EXTRACTED]
+- [[browser-fetchpackage.json]] - `contains` [EXTRACTED]
 - [[test_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_909
+#graphify/code #graphify/EXTRACTED #community/browser-fetch/packagejson

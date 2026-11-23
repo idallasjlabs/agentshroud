@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "test_security.py"
+community: "SecureBrowser Skill"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_securitypy
+  - community/SecureBrowser_Skill
 ---
 
 # securebrowser/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_securitypy
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

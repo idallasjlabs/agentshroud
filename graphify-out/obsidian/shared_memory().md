@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_group_isolation.py"
+source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "Community 1305"
-location: "L86"
+community: "GroupWorkspaceManager"
+location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1305
+  - community/GroupWorkspaceManager
 ---
 
 # shared_memory()
 
 ## Connections
-- [[SharedMemoryManager]] - `calls` [EXTRACTED]
-- [[test_group_isolation.py]] - `contains` [EXTRACTED]
+- [[SharedMemoryManager]] - `uses` [INFERRED]
+- [[fixture_22]] - `references` [EXTRACTED]
+- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1305
+#graphify/code #graphify/EXTRACTED #community/GroupWorkspaceManager

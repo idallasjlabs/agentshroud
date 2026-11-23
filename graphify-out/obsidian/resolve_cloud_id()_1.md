@@ -1,22 +1,20 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
+source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "code"
-community: "Community 238"
-location: "L237"
+community: "jira_dev_ticket.py"
+location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_238
+  - community/jira_dev_ticketpy
 ---
 
 # resolve_cloud_id()
 
 ## Connections
-- [[Resolve a site domain to its Atlassian cloud ID via the public,     unauthentica_1]] - `rationale_for` [EXTRACTED]
-- [[RuntimeError]] - `calls` [INFERRED]
+- [[Resolve a site domain to its Atlassian cloud ID via the public, unauthenticated…_1]] - `rationale_for` [EXTRACTED]
 - [[build_tenant_info_url()_1]] - `calls` [EXTRACTED]
-- [[jira_dev_ticket resolve_cloud_id()]] - `semantically_similar_to` [INFERRED]
-- [[jira_weekly_review.py]] - `contains` [EXTRACTED]
-- [[run()_1]] - `calls` [EXTRACTED]
+- [[fetch_credentials()]] - `calls` [EXTRACTED]
+- [[jira_dev_ticket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_238
+#graphify/code #graphify/EXTRACTED #community/jira_dev_ticketpy

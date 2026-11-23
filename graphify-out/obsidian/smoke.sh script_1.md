@@ -1,17 +1,18 @@
 ---
-source_file: "scripts/testing/smoke.sh"
+source_file: "scripts/smoke.sh"
 type: "code"
-community: "Community 2312"
+community: "deployment-mode.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2312
+  - community/deployment-modesh
 ---
 
 # smoke.sh script
 
 ## Connections
-- [[smoke.sh_1]] - `contains` [EXTRACTED]
+- [[run_test()]] - `calls` [EXTRACTED]
+- [[scriptssmoke.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2312
+#graphify/code #graphify/EXTRACTED #community/deployment-modesh

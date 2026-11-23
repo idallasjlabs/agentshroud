@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "test_wazuh_watchdog.py"
+community: "_run_4b"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_wazuh_watchdogpy
+  - community/_run_4b
 ---
 
 # skipif
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[TestHealthCheckWazuhStep]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_wazuh_watchdogpy
+#graphify/code #graphify/EXTRACTED #community/_run_4b

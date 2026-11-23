@@ -1,31 +1,32 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Community 38"
+community: "services.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/servicespy
 ---
 
 # services.py
 
 ## Connections
 - [[HealthStatus]] - `imports` [EXTRACTED]
+- [[SOC Service Manager — wraps container runtime engine to produce…]] - `rationale_for` [EXTRACTED]
 - [[ServiceDescriptor]] - `imports` [EXTRACTED]
-- [[ServiceManager]] - `references` [EXTRACTED]
+- [[ServiceManager]] - `contains` [EXTRACTED]
 - [[ServiceStatus]] - `imports` [EXTRACTED]
-- [[_INTERNAL_SERVICE_ATTRS (internal gateway service table)]] - `references` [EXTRACTED]
-- [[_check_clamd()]] - `references` [EXTRACTED]
-- [[_check_fluent_bit()]] - `references` [EXTRACTED]
-- [[_check_openscap()]] - `contains` [EXTRACTED]
-- [[_check_wazuh_agent()]] - `references` [EXTRACTED]
+- [[_check_clamd()]] - `indirect_call` [INFERRED]
+- [[_check_fluent_bit()]] - `indirect_call` [INFERRED]
+- [[_check_openscap()]] - `indirect_call` [INFERRED]
+- [[_check_wazuh_agent()]] - `indirect_call` [INFERRED]
 - [[_engine_health_to_health()]] - `contains` [EXTRACTED]
 - [[_engine_status_to_service_status()]] - `contains` [EXTRACTED]
 - [[_inspect_via_socket()]] - `contains` [EXTRACTED]
-- [[_known_services()]] - `references` [EXTRACTED]
+- [[_known_services()]] - `contains` [EXTRACTED]
 - [[load_config()]] - `imports` [EXTRACTED]
-- [[models.py_1]] - `imports_from` [EXTRACTED]
+- [[socmodels.py]] - `imports_from` [EXTRACTED]
+- [[test_soc_services_coverage.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_38
+#graphify/code #graphify/EXTRACTED #community/servicespy

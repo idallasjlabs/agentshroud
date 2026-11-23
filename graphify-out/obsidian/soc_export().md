@@ -1,21 +1,22 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 254"
+community: "ingest_api/main.py"
 location: "L2510"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_254
+  - community/ingest_api/mainpy
 ---
 
 # soc_export()
 
 ## Connections
-- [[AuditExportConfig_1]] - `calls` [EXTRACTED]
-- [[AuditExporter]] - `calls` [EXTRACTED]
-- [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuditExportConfig]] - `uses` [INFERRED]
+- [[AuditExporter]] - `uses` [INFERRED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
 - [[Export tamper-evident audit events in SOCSIEM formats.]] - `rationale_for` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
+- [[get_4]] - `references` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_254
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

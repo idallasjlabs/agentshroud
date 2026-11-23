@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_group_isolation.py"
+source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "Community 1305"
-location: "L66"
+community: "test_security_regressions_v1_2.py"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1305
+  - community/test_security_regressions_v1_2py
 ---
 
 # session_manager()
 
 ## Connections
-- [[UserSessionManager]] - `calls` [EXTRACTED]
-- [[test_group_isolation.py]] - `contains` [EXTRACTED]
+- [[UserSessionManager]] - `uses` [INFERRED]
+- [[fixture_25]] - `references` [EXTRACTED]
+- [[test_security_regressions_v1_2.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1305
+#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py

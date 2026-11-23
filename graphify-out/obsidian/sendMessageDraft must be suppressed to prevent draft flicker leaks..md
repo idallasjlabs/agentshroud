@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "rationale"
-community: "Community 63"
+community: "test_telegram_pipeline.py"
 location: "L216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_63
+  - community/test_telegram_pipelinepy
 ---
 
 # sendMessageDraft must be suppressed to prevent draft flicker leaks.
 
 ## Connections
-- [[.test_send_message_draft_also_runs_outbound_filtering()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_send_message_draft_also_runs_outbound_filtering()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_63
+#graphify/rationale #graphify/EXTRACTED #community/test_telegram_pipelinepy

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/README.md"
 type: "document"
-community: "version_routes.py"
+community: "Contributing to AgentShroud™"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/Contributing_to_AgentShroud
 ---
 
 # scripts/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Utility Scripts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/version_routespy
+#graphify/document #graphify/EXTRACTED #community/Contributing_to_AgentShroud

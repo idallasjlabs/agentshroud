@@ -1,23 +1,25 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 10"
+community: "soc/router.py"
 location: "L1508"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_10
+  - community/soc/routerpy
 ---
 
 # revoke_delegation()
 
 ## Connections
-- [[DelegationPrivilege]] - `calls` [EXTRACTED]
-- [[HTTPException]] - `calls` [EXTRACTED]
+- [[Action]] - `uses` [INFERRED]
+- [[DelegationPrivilege]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[Revoke a privilege delegation. Omit privilege to revoke all for the user.]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[SCLCaller]] - `uses` [INFERRED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[delete]] - `references` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_10
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

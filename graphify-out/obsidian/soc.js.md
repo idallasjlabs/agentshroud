@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "Community 82"
+community: "soc.js"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_82
+  - community/socjs
 ---
 
 # soc.js
@@ -43,20 +43,20 @@ tags:
 - [[_handleWSEvent()]] - `contains` [EXTRACTED]
 - [[_initBotSelector()]] - `contains` [EXTRACTED]
 - [[_initTheme()]] - `contains` [EXTRACTED]
-- [[_loadAgentCves()]] - `contains` [EXTRACTED]
-- [[_loadAgents()]] - `contains` [EXTRACTED]
-- [[_loadApprovals()]] - `contains` [EXTRACTED]
-- [[_loadConfig()]] - `contains` [EXTRACTED]
+- [[_loadAgentCves()]] - `indirect_call` [INFERRED]
+- [[_loadAgents()]] - `indirect_call` [INFERRED]
+- [[_loadApprovals()]] - `indirect_call` [INFERRED]
+- [[_loadConfig()]] - `indirect_call` [INFERRED]
 - [[_loadContributors()]] - `contains` [EXTRACTED]
 - [[_loadEdge()]] - `contains` [EXTRACTED]
 - [[_loadEgress()]] - `contains` [EXTRACTED]
-- [[_loadLogs()]] - `contains` [EXTRACTED]
-- [[_loadOverview()]] - `contains` [EXTRACTED]
-- [[_loadScanners()]] - `contains` [EXTRACTED]
-- [[_loadScorecard()]] - `contains` [EXTRACTED]
-- [[_loadSecurity()]] - `contains` [EXTRACTED]
-- [[_loadServices()]] - `contains` [EXTRACTED]
-- [[_post()]] - `contains` [EXTRACTED]
+- [[_loadLogs()]] - `indirect_call` [INFERRED]
+- [[_loadOverview()]] - `indirect_call` [INFERRED]
+- [[_loadScanners()]] - `indirect_call` [INFERRED]
+- [[_loadScorecard()]] - `indirect_call` [INFERRED]
+- [[_loadSecurity()]] - `indirect_call` [INFERRED]
+- [[_loadServices()]] - `indirect_call` [INFERRED]
+- [[_post()_1]] - `contains` [EXTRACTED]
 - [[_put()]] - `contains` [EXTRACTED]
 - [[_registerTab()]] - `contains` [EXTRACTED]
 - [[_renderActivityLog()]] - `contains` [EXTRACTED]
@@ -93,6 +93,5 @@ tags:
 - [[_token]] - `contains` [EXTRACTED]
 - [[_ts()]] - `contains` [EXTRACTED]
 - [[_uptime()]] - `contains` [EXTRACTED]
-- [[router.py_1]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_82
+#graphify/code #graphify/EXTRACTED #community/socjs

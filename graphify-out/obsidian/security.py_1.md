@@ -1,17 +1,24 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
 type: "document"
-community: "Community 727"
-location: "L1"
+community: "security.py"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_727
+  - community/securitypy
 ---
 
-# security.py.md
+# security.py
 
 ## Connections
-- [[security.py_2]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_16]] - `contains` [EXTRACTED]
+- [[Function Details_27]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_29]] - `contains` [EXTRACTED]
+- [[Purpose_36]] - `contains` [EXTRACTED]
+- [[Related_29]] - `contains` [EXTRACTED]
+- [[Responsibilities_29]] - `contains` [EXTRACTED]
+- [[Security Feature Registry]] - `contains` [EXTRACTED]
+- [[security.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_727
+#graphify/document #graphify/EXTRACTED #community/securitypy

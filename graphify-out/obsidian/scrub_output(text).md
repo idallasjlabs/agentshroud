@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
 type: "document"
-community: "Community 456"
+community: "env_guard.py"
 location: "L75"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_456
+  - community/env_guardpy
 ---
 
 # scrub_output(text)
 
 ## Connections
-- [[Function Details_38]] - `contains` [EXTRACTED]
+- [[Function Details_45]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_456
+#graphify/document #graphify/EXTRACTED #community/env_guardpy

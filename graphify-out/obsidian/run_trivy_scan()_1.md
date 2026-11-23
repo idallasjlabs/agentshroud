@@ -1,34 +1,17 @@
 ---
-source_file: "gateway/security/trivy_report.py"
+source_file: "gateway/tests/test_soc_egress_endpoints.py"
 type: "code"
-community: "Community 131"
-location: "L27"
+community: "test_soc_egress_endpoints.py"
+location: "L479"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_131
+  - community/test_soc_egress_endpointspy
 ---
 
 # run_trivy_scan()
 
 ## Connections
-- [[.test_run_binary_not_found()]] - `calls` [EXTRACTED]
-- [[.test_run_empty_stdout_is_error_not_clean()]] - `calls` [EXTRACTED]
-- [[.test_run_image_scan_type()]] - `calls` [EXTRACTED]
-- [[.test_run_nonzero_exit_code_is_error()]] - `calls` [EXTRACTED]
-- [[.test_run_parse_error()]] - `calls` [EXTRACTED]
-- [[.test_run_success()]] - `calls` [EXTRACTED]
-- [[.test_run_timeout()]] - `calls` [EXTRACTED]
-- [[.test_run_whitespace_only_stdout_is_error()]] - `calls` [EXTRACTED]
-- [[.test_trivy_binary_not_found()]] - `calls` [EXTRACTED]
-- [[Any_70]] - `references` [EXTRACTED]
-- [[Run a Trivy scan and return parsed results.      Args         target Scan targ]] - `rationale_for` [EXTRACTED]
-- [[daily_cve_report.py]] - `imports` [EXTRACTED]
-- [[generate_summary()_2]] - `shares_data_with` [EXTRACTED]
-- [[parse_trivy_output()]] - `calls` [EXTRACTED]
-- [[run_and_send_cve_report()]] - `calls` [EXTRACTED]
-- [[test_security_audit.py]] - `imports` [EXTRACTED]
-- [[test_security_toolchain.py]] - `imports` [EXTRACTED]
-- [[trivy_report.py]] - `contains` [EXTRACTED]
+- [[test_manage_scan_all_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_131
+#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy

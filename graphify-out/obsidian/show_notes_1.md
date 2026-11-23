@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/athena/SKILL.md"
 type: "document"
-community: "Community 1568"
+community: "Athena — Knowledge Distiller"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1568
+  - community/Athena__Knowledge_Distiller
 ---
 
 # show_notes.md
 
 ## Connections
-- [[Output Format_14]] - `contains` [EXTRACTED]
+- [[Output Format_24]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1568
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

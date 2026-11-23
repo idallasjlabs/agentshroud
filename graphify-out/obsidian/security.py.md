@@ -1,29 +1,17 @@
 ---
-source_file: "gateway/runtime/security.py"
-type: "code"
-community: "Community 225"
+source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
+type: "document"
+community: "security.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_225
+  - community/securitypy
 ---
 
-# security.py
+# security.py.md
 
 ## Connections
-- [[SecurityFeature]] - `contains` [EXTRACTED]
-- [[_validate_runtime()]] - `contains` [EXTRACTED]
-- [[api.py]] - `imports_from` [EXTRACTED]
-- [[apple_engine.py]] - `references` [EXTRACTED]
-- [[compose_generator.py]] - `references` [EXTRACTED]
-- [[docker_engine.py]] - `references` [EXTRACTED]
-- [[get_features_for_runtime()]] - `contains` [EXTRACTED]
-- [[get_missing_features()]] - `contains` [EXTRACTED]
-- [[get_security_comparison()]] - `contains` [EXTRACTED]
-- [[get_security_options()]] - `contains` [EXTRACTED]
-- [[installer.py]] - `imports_from` [EXTRACTED]
-- [[podman_engine.py]] - `references` [EXTRACTED]
-- [[warn_missing_features()]] - `contains` [EXTRACTED]
+- [[security.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_225
+#graphify/document #graphify/EXTRACTED #community/securitypy

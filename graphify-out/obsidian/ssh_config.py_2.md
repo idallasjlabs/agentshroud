@@ -1,27 +1,24 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
-type: "document"
-community: "Community 820"
-location: "L10"
+source_file: "gateway/ingest_api/ssh_config.py"
+type: "code"
+community: "ingest_api/config.py"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_820
+  - community/ingest_api/configpy
 ---
 
 # ssh_config.py
 
 ## Connections
-- [[Config Keys Read_7]] - `contains` [EXTRACTED]
-- [[Environment Variables Used_8]] - `contains` [EXTRACTED]
-- [[Imports From  Exports To_7]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_7]] - `contains` [EXTRACTED]
-- [[Known Issues  Notes_8]] - `contains` [EXTRACTED]
-- [[Purpose_118]] - `contains` [EXTRACTED]
-- [[Related_9]] - `contains` [EXTRACTED]
-- [[Responsibilities_7]] - `contains` [EXTRACTED]
-- [[SSHConfig Fields]] - `contains` [EXTRACTED]
-- [[SSHHostConfig Fields]] - `contains` [EXTRACTED]
-- [[ssh_config.py_1]] - `contains` [EXTRACTED]
+- [[SSHConfig]] - `contains` [EXTRACTED]
+- [[SSHHostConfig]] - `contains` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
+- [[proxy.py]] - `imports_from` [EXTRACTED]
+- [[pydantic_1]] - `imports_from` [EXTRACTED]
+- [[test_ssh_endpoints.py]] - `imports_from` [EXTRACTED]
+- [[test_ssh_proxy.py]] - `imports_from` [EXTRACTED]
+- [[test_ssh_write_file_endpoint.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_820
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

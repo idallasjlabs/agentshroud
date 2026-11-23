@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "Community 185"
+community: "test_security_toolchain.py"
 location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_185
+  - community/test_security_toolchainpy
 ---
 
 # save_to_history()
 
 ## Connections
-- [[Any_49]] - `references` [EXTRACTED]
-- [[Path_15]] - `references` [EXTRACTED]
-- [[Save a health report to history.      Args         score Overall score.]] - `rationale_for` [EXTRACTED]
+- [[Any_23]] - `references` [EXTRACTED]
+- [[Path_22]] - `references` [EXTRACTED]
+- [[Save a health report to history. Args score Overall score. grade Letter…]] - `rationale_for` [EXTRACTED]
 - [[generate_report()]] - `calls` [EXTRACTED]
-- [[health_report.py]] - `contains` [EXTRACTED]
+- [[health_report.py_2]] - `contains` [EXTRACTED]
 - [[init_db()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_185
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

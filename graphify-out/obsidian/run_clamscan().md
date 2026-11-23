@@ -1,26 +1,27 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "Community 220"
+community: "test_clamav_pipeline.py"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_220
+  - community/test_clamav_pipelinepy
 ---
 
 # run_clamscan()
 
 ## Connections
-- [[._clamav_scan_bytes()]] - `calls` [EXTRACTED]
-- [[.test_clamav_binary_not_found()]] - `calls` [EXTRACTED]
-- [[.test_run_not_found()]] - `calls` [EXTRACTED]
-- [[Any_44]] - `references` [EXTRACTED]
-- [[Run ClamAV scan and return parsed results.      Args         target Directory]] - `rationale_for` [EXTRACTED]
-- [[clamav_scanner.py]] - `contains` [EXTRACTED]
+- [[dot-_clamav_scan_bytes()]] - `calls` [EXTRACTED]
+- [[dot-test_clamav_binary_not_found()]] - `calls` [EXTRACTED]
+- [[dot-test_run_not_found()]] - `calls` [EXTRACTED]
+- [[Any_28]] - `references` [EXTRACTED]
+- [[Run ClamAV scan and return parsed results. Args target Directory or file to…]] - `rationale_for` [EXTRACTED]
+- [[_run_capture()]] - `calls` [EXTRACTED]
+- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
 - [[http_proxy.py]] - `imports` [EXTRACTED]
 - [[parse_clamscan_output()]] - `calls` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_220
+#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy

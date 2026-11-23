@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/testing/run-unit.sh"
 type: "code"
-community: "Community 2309"
+community: "run-unit.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2309
+  - community/run-unitsh
 ---
 
 # run-unit.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run-unit.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2309
+#graphify/code #graphify/EXTRACTED #community/run-unitsh

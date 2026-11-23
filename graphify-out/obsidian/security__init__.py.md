@@ -1,20 +1,17 @@
 ---
 source_file: "gateway/security/__init__.py"
 type: "code"
-community: "MCP Auth Reset (MCPM-AUTH-RESET) (2)"
+community: "security/__init__.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Auth_Reset_MCPM-AUTH-RESET_2
+  - community/security/__init__py
 ---
 
 # security/__init__.py
 
 ## Connections
-- [[ClamAV (malware detection)]] - `references` [EXTRACTED]
-- [[Falco (runtime security monitoring)]] - `references` [EXTRACTED]
-- [[Trivy (container vulnerability scanning)]] - `references` [EXTRACTED]
-- [[Wazuh (file integrity monitoring)]] - `references` [EXTRACTED]
+- [[Security scanning and monitoring integration - Trivy Container vulnerability…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Auth_Reset_MCPM-AUTH-RESET_2
+#graphify/code #graphify/EXTRACTED #community/security/__init__py

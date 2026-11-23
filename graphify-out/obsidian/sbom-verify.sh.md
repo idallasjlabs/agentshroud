@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/testing/sbom-verify.sh"
 type: "code"
-community: "Community 2310"
+community: "sbom-verify.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2310
+  - community/sbom-verifysh
 ---
 
 # sbom-verify.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sbom-verify.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2310
+#graphify/code #graphify/EXTRACTED #community/sbom-verifysh

@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "code"
-community: "Community 918"
+community: "installer.py"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_918
+  - community/installerpy
 ---
 
 # start_install()
 
 ## Connections
 - [[InstallConfig]] - `references` [EXTRACTED]
-- [[Start the installation process.      This endpoint kicks off the install and ret]] - `rationale_for` [EXTRACTED]
-- [[installer.py]] - `contains` [EXTRACTED]
+- [[Start the installation process. This endpoint kicks off the install and returns…]] - `rationale_for` [EXTRACTED]
+- [[installer.py_2]] - `contains` [EXTRACTED]
+- [[post_9]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_918
+#graphify/code #graphify/EXTRACTED #community/installerpy

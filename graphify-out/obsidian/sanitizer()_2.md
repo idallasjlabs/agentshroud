@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_e2e_watchtower.py"
+source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "code"
-community: "Community 84"
-location: "L49"
+community: "PIIConfig"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_84
+  - community/PIIConfig
 ---
 
 # sanitizer()
 
 ## Connections
-- [[PIISanitizer]] - `calls` [EXTRACTED]
-- [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[fixture_20]] - `references` [EXTRACTED]
+- [[test_filter_xml_blocks.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_84
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

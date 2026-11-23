@@ -1,18 +1,17 @@
 ---
 source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "Community 398"
+community: "AgentShroud Security Scripts Reference"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_398
+  - community/AgentShroud_Security_Scripts_Reference
 ---
 
 # scan.sh
 
 ## Connections
 - [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
-- [[SECURITY_SCRIPTS_REFERENCE]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_398
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Scripts_Reference

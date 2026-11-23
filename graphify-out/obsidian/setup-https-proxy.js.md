@@ -1,26 +1,25 @@
 ---
 source_file: "docker/config/openclaw/setup-https-proxy.js"
 type: "code"
-community: "Community 191"
+community: "setup-https-proxy.js"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_191
+  - community/setup-https-proxyjs
 ---
 
 # setup-https-proxy.js
 
 ## Connections
 - [[ConnectProxyAgent]] - `contains` [EXTRACTED]
-- [[Falco Rule Unexpected Outbound Connection]] - `conceptually_related_to` [INFERRED]
 - [[NO_PROXY_HOSTS]] - `contains` [EXTRACTED]
 - [[PatchedWebSocket]] - `contains` [EXTRACTED]
-- [[http]] - `contains` [EXTRACTED]
-- [[https_2]] - `contains` [EXTRACTED]
+- [[http_1]] - `contains` [EXTRACTED]
+- [[https_1]] - `contains` [EXTRACTED]
 - [[net]] - `contains` [EXTRACTED]
 - [[proxyCreateConnection()]] - `contains` [EXTRACTED]
 - [[shouldBypass()]] - `contains` [EXTRACTED]
 - [[tls]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_191
+#graphify/code #graphify/EXTRACTED #community/setup-https-proxyjs

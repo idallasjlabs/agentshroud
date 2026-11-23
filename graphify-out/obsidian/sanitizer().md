@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/tests/conftest.py"
+source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "Community 7"
-location: "L173"
+community: "test_e2e_watchtower.py"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/test_e2e_watchtowerpy
 ---
 
 # sanitizer()
 
 ## Connections
-- [[Create a PIISanitizer instance for testing]] - `rationale_for` [EXTRACTED]
-- [[GatewayConfig_2]] - `references` [EXTRACTED]
-- [[PIISanitizer_2]] - `references` [EXTRACTED]
-- [[conftest.py]] - `contains` [EXTRACTED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[fixture_15]] - `references` [EXTRACTED]
+- [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/test_e2e_watchtowerpy

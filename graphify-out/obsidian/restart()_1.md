@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "docker/wazuh/services.d/wazuh-watchdog/run"
 type: "code"
-community: "AlertDispatcher (4)"
-location: "L199"
+community: "run"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_4
+  - community/run
 ---
 
 # restart()
 
 ## Connections
-- [[climain.py]] - `contains` [EXTRACTED]
+- [[run_1]] - `defines` [EXTRACTED]
+- [[run script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_4
+#graphify/code #graphify/EXTRACTED #community/run

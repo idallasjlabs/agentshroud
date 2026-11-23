@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/ingest_api/version_routes.py"
 type: "code"
-community: "Community 66"
+community: "version_routes.py"
 location: "L118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_66
+  - community/version_routespy
 ---
 
 # rollback_version()
 
 ## Connections
-- [[Any_20]] - `references` [EXTRACTED]
-- [[HTTPException]] - `calls` [INFERRED]
+- [[Any_76]] - `references` [EXTRACTED]
 - [[Rollback to the previous version. Requires approval_id.]] - `rationale_for` [EXTRACTED]
 - [[RollbackRequest]] - `references` [EXTRACTED]
+- [[post_8]] - `references` [EXTRACTED]
 - [[rollback()]] - `calls` [EXTRACTED]
-- [[version_routes.py]] - `contains` [EXTRACTED]
+- [[version_routes.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_66
+#graphify/code #graphify/EXTRACTED #community/version_routespy

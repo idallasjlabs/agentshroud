@@ -1,17 +1,21 @@
 ---
-source_file: "browser-extension/README.md"
-type: "document"
-community: "Community 587"
-location: "L42"
+source_file: "opencode.json"
+type: "code"
+community: "mcp"
+location: "L53"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_587
+  - community/mcp
 ---
 
-# Safari
+# safari
 
 ## Connections
-- [[Structure]] - `contains` [EXTRACTED]
+- [[command_7]] - `contains` [EXTRACTED]
+- [[enabled_8]] - `contains` [EXTRACTED]
+- [[environment]] - `contains` [EXTRACTED]
+- [[mcp]] - `contains` [EXTRACTED]
+- [[type_25]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_587
+#graphify/code #graphify/EXTRACTED #community/mcp

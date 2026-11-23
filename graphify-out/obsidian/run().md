@@ -1,23 +1,17 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
+source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "Community 148"
-location: "L356"
+community: "TestFetchDockerhubTagsUsesCurl"
+location: "L407"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_148
+  - graphify/INFERRED
+  - community/TestFetchDockerhubTagsUsesCurl
 ---
 
 # run()
 
 ## Connections
-- [[Parse argv, resolve credentials, dispatch the subcommand. Returns exit code.]] - `rationale_for` [EXTRACTED]
-- [[_build_arg_parser()]] - `calls` [EXTRACTED]
-- [[add_comment()]] - `calls` [EXTRACTED]
-- [[create_issue()]] - `calls` [EXTRACTED]
-- [[fetch_credentials()]] - `calls` [EXTRACTED]
-- [[jira_dev_ticket.py]] - `contains` [EXTRACTED]
-- [[transition_issue()]] - `calls` [EXTRACTED]
+- [[dot-_fake_run()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_148
+#graphify/code #graphify/INFERRED #community/TestFetchDockerhubTagsUsesCurl

@@ -1,18 +1,18 @@
 ---
 source_file: "docs/vault/03 - Configuration/ssh-config.md"
 type: "document"
-community: "Community 799"
+community: "SSH Config"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_799
+  - community/SSH_Config
 ---
 
 # ssh-config.md
 
 ## Connections
 - [[SSH Config]] - `contains` [EXTRACTED]
-- [[agentshroud.yaml]] - `references` [EXTRACTED]
+- [[Startup Sequence_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_799
+#graphify/document #graphify/EXTRACTED #community/SSH_Config

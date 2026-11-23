@@ -1,22 +1,22 @@
 ---
 source_file: "docker/bots/hermes/render_md_email.py"
 type: "code"
-community: "Community 522"
+community: "render_md_email.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_522
+  - community/render_md_emailpy
 ---
 
 # render_md_email.py
 
 ## Connections
-- [[Hermes Competitive Intelligence Email (AMPM)_1]] - `references` [EXTRACTED]
+- [[Markdown → HTML email renderer (Python stdlib only, no pip installs). Pre-…]] - `rationale_for` [EXTRACTED]
 - [[_esc()]] - `contains` [EXTRACTED]
 - [[_inline()]] - `contains` [EXTRACTED]
 - [[_render_table()]] - `contains` [EXTRACTED]
-- [[main()_4]] - `contains` [EXTRACTED]
-- [[render()]] - `references` [EXTRACTED]
+- [[main()_8]] - `contains` [EXTRACTED]
+- [[render()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_522
+#graphify/code #graphify/EXTRACTED #community/render_md_emailpy

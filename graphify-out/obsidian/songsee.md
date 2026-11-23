@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/songsee/SKILL.md"
 type: "document"
-community: "Community 428"
+community: "songsee/SKILL.md"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_428
+  - community/songsee/SKILLmd
 ---
 
 # songsee
 
 ## Connections
-- [[SKILL_240]] - `contains` [EXTRACTED]
+- [[songseeSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_428
+#graphify/document #graphify/EXTRACTED #community/songsee/SKILLmd
