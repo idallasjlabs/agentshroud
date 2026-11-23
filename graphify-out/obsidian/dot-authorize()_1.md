@@ -1,0 +1,20 @@
+---
+source_file: "gateway/inbound_edge/edge_app.py"
+type: "code"
+community: "test_edge_service_routes.py"
+location: "L165"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/test_edge_service_routespy
+---
+
+# .authorize()
+
+## Connections
+- [[dot-_oauth_code()]] - `calls` [EXTRACTED]
+- [[AuthorizationParams]] - `references` [EXTRACTED]
+- [[GatewayBackedProvider]] - `method` [EXTRACTED]
+- [[OAuthClientInformationFull]] - `references` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy
