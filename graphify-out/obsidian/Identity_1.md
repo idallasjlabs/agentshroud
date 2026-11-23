@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/IDENTITY.md"
+source_file: ".agents/skills/sf/SKILL.md"
 type: "document"
-community: "Community 899"
-location: "L1"
+community: "Salesforce CLI (`sf`) Agent"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_899
+  - community/Salesforce_CLI_sf_Agent
 ---
 
-# IDENTITY.md
+# Identity
 
 ## Connections
-- [[Identity Reference - AgentShroud System]] - `contains` [EXTRACTED]
+- [[Salesforce CLI (`sf`) Agent_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_899
+#graphify/document #graphify/EXTRACTED #community/Salesforce_CLI_sf_Agent

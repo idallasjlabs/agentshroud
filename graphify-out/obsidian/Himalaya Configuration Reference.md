@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/references/configuration.md"
 type: "document"
-community: "Community 610"
+community: "Himalaya Configuration Reference"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_610
+  - community/Himalaya_Configuration_Reference
 ---
 
 # Himalaya Configuration Reference
@@ -16,12 +16,11 @@ tags:
 - [[Folder Aliases]] - `contains` [EXTRACTED]
 - [[Gmail Configuration]] - `contains` [EXTRACTED]
 - [[Minimal IMAP + SMTP Setup]] - `contains` [EXTRACTED]
-- [[Multiple Accounts_1]] - `contains` [EXTRACTED]
+- [[Multiple Accounts]] - `contains` [EXTRACTED]
 - [[Notmuch Backend (local mail)]] - `contains` [EXTRACTED]
 - [[OAuth2 Authentication (for providers that support it)]] - `contains` [EXTRACTED]
 - [[Password Options]] - `contains` [EXTRACTED]
-- [[configuration]] - `contains` [EXTRACTED]
+- [[configuration_4]] - `contains` [EXTRACTED]
 - [[iCloud Configuration]] - `contains` [EXTRACTED]
-- [[ssh-configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_610
+#graphify/document #graphify/EXTRACTED #community/Himalaya_Configuration_Reference

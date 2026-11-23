@@ -1,51 +1,28 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 132"
+community: "MCPServerConfig"
 location: "L158"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_132
+  - graphify/EXTRACTED
+  - community/MCPServerConfig
 ---
 
 # HttpSseConnection
 
 ## Connections
-- [[.__init__()_44]] - `method` [EXTRACTED]
-- [[.get_or_create()]] - `references` [EXTRACTED]
-- [[.send_request()_1]] - `method` [EXTRACTED]
-- [[.stop()_3]] - `method` [EXTRACTED]
-- [[.test_missing_aiohttp_raises_runtime_error()]] - `calls` [EXTRACTED]
-- [[.test_send_request_and_session_reuse()]] - `calls` [EXTRACTED]
-- [[Exception_4]] - `uses` [INFERRED]
-- [[FakeApprovalQueue]] - `uses` [INFERRED]
-- [[FakeConn]] - `uses` [INFERRED]
-- [[FakeProcess]] - `uses` [INFERRED]
-- [[InspectionResult]] - `uses` [INFERRED]
-- [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxy_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
+- [[dot-__init__()_57]] - `method` [EXTRACTED]
+- [[dot-get_or_create()]] - `calls` [EXTRACTED]
+- [[dot-send_request()_2]] - `method` [EXTRACTED]
+- [[dot-stop()_4]] - `method` [EXTRACTED]
+- [[dot-test_missing_aiohttp_raises_runtime_error()]] - `calls` [EXTRACTED]
+- [[dot-test_send_request_and_session_reuse()]] - `calls` [EXTRACTED]
 - [[MCPServerConfig]] - `uses` [INFERRED]
-- [[MCPToolCall_1]] - `uses` [INFERRED]
-- [[MCPTransport]] - `uses` [INFERRED]
 - [[Manages an HTTPSSE connection to an MCP server.]] - `rationale_for` [EXTRACTED]
-- [[TestApprovalQueue]] - `uses` [INFERRED]
 - [[TestConnectionPool]] - `uses` [INFERRED]
-- [[TestDataclasses]] - `uses` [INFERRED]
-- [[TestEgressFilterPaths]] - `uses` [INFERRED]
-- [[TestEmitPrivacyEvent]] - `uses` [INFERRED]
-- [[TestExecuteToolCall]] - `uses` [INFERRED]
-- [[TestExtractEgressTargets]] - `uses` [INFERRED]
 - [[TestHttpSseConnection]] - `uses` [INFERRED]
-- [[TestPassthrough]] - `uses` [INFERRED]
-- [[TestResultProcessingAndLifecycle]] - `uses` [INFERRED]
-- [[TestSanitizeAdminPrivateData]] - `uses` [INFERRED]
-- [[TestStdioConnection]] - `uses` [INFERRED]
-- [[mcp_proxy.py]] - `contains` [EXTRACTED]
+- [[mcp_proxy.py_2]] - `contains` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_132
+#graphify/code #graphify/EXTRACTED #community/MCPServerConfig

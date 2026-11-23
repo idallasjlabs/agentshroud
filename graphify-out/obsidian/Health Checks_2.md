@@ -1,26 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Health Checks.md"
+source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "Community 1193"
-location: "L9"
+community: "Quick Reference — AgentShroud"
+location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1193
+  - community/Quick_Reference__AgentShroud
 ---
 
 # Health Checks
 
 ## Connections
-- [[Approval Queue Health]] - `contains` [EXTRACTED]
-- [[Bot Health Check]] - `contains` [EXTRACTED]
-- [[Container Health Check]] - `contains` [EXTRACTED]
-- [[Gateway Health Endpoints]] - `contains` [EXTRACTED]
-- [[Health Check Intervals (Docker)]] - `contains` [EXTRACTED]
-- [[Health Checks_1]] - `contains` [EXTRACTED]
-- [[Ledger Health]] - `contains` [EXTRACTED]
-- [[Monitoring Script]] - `contains` [EXTRACTED]
-- [[Related Notes_67]] - `contains` [EXTRACTED]
-- [[Security Health Report]] - `contains` [EXTRACTED]
+- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1193
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference__AgentShroud

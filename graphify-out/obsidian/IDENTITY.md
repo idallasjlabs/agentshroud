@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/workspace/IDENTITY.md"
+source_file: ".agents/agents/sf.md"
 type: "document"
-community: "Community 853"
-location: "L1"
+community: "Salesforce CLI (`sf`) Agent"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_853
+  - community/Salesforce_CLI_sf_Agent
 ---
 
-# IDENTITY.md
+# Identity
 
 ## Connections
-- [[IDENTITY.md - Who I Am_2]] - `contains` [EXTRACTED]
+- [[Salesforce CLI (`sf`) Agent]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_853
+#graphify/document #graphify/EXTRACTED #community/Salesforce_CLI_sf_Agent

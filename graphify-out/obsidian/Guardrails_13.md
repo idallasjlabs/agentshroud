@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-crpr.md"
+source_file: ".agents/skills/aws/SKILL.md"
 type: "document"
-community: "Community 1303"
-location: "L257"
+community: "AWS Cloud Management & FinOps Agent"
+location: "L388"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1303
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill Create PR with Pre-Flight Audit (CRPR)_2]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1303
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

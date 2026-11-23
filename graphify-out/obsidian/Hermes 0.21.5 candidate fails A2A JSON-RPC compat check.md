@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-24.md"
 type: "concept"
-community: "Community 227"
+community: "check-vendor-compat.sh"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_227
+  - community/check-vendor-compatsh
 ---
 
 # Hermes 0.21.5 candidate fails A2A JSON-RPC compat check
@@ -15,4 +15,4 @@ tags:
 - [[check-vendor-compat.sh]] - `references` [EXTRACTED]
 - [[upgrade-2026-09-24]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_227
+#graphify/concept #graphify/EXTRACTED #community/check-vendor-compatsh

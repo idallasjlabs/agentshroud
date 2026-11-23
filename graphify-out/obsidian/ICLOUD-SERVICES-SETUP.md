@@ -1,19 +1,18 @@
 ---
 source_file: "docs/setup/ICLOUD-SERVICES-SETUP.md"
 type: "document"
-community: "Community 502"
+community: "iCloud Services Setup - Complete Guide"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/Community_502
+  - graphify/EXTRACTED
+  - community/iCloud_Services_Setup_-_Complete_Guide
 ---
 
 # ICLOUD-SERVICES-SETUP.md
 
 ## Connections
-- [[APPLE-SERVICES-SETUP]] - `semantically_similar_to` [INFERRED]
-- [[GOOGLE-SERVICES-SETUP]] - `semantically_similar_to` [INFERRED]
+- [[docsREADME]] - `references` [EXTRACTED]
 - [[iCloud Services Setup - Complete Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Community_502
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services_Setup_-_Complete_Guide

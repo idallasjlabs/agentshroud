@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-pr/SKILL.md"
+source_file: ".cursor/agents/i-pr.md"
 type: "document"
-community: "Community 951"
-location: "L18"
+community: "Skill: Pull Request (PR) Generator"
+location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_951
+  - community/Skill_Pull_Request_PR_Generator
 ---
 
 # Header
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Content Requirements_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_951
+#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator

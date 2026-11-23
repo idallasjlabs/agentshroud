@@ -1,34 +1,27 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "Community 307"
+community: "A2APolicyConfig"
 location: "L425"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_307
+  - community/A2APolicyConfig
 ---
 
 # HermesA2AForwarder
 
 ## Connections
-- [[.__init__()_33]] - `method` [EXTRACTED]
-- [[.close()_9]] - `method` [EXTRACTED]
-- [[.forward()]] - `method` [EXTRACTED]
-- [[A2AMethod]] - `uses` [INFERRED]
-- [[A2APeerTestDouble]] - `uses` [INFERRED]
-- [[A2APolicyEngine_1]] - `uses` [INFERRED]
-- [[A2AProxy]] - `calls` [EXTRACTED]
-- [[Real HTTP forwarder to Hermes's internal A2A JSON-RPC listener.      Matches the]] - `rationale_for` [EXTRACTED]
-- [[Request_8]] - `uses` [INFERRED]
-- [[Response]] - `uses` [INFERRED]
-- [[ViolationType]] - `uses` [INFERRED]
+- [[dot-__init__()_224]] - `method` [EXTRACTED]
+- [[dot-close()_23]] - `method` [EXTRACTED]
+- [[dot-forward()_3]] - `method` [EXTRACTED]
+- [[Real HTTP forwarder to Hermes's internal A2A JSON-RPC listener. Matches the…]] - `rationale_for` [EXTRACTED]
 - [[a2a_proxy.py]] - `contains` [EXTRACTED]
 - [[test_a2a_integration.py]] - `imports` [EXTRACTED]
-- [[test_adversarial_ssrf_callback_bypass_attempts_over_real_http()]] - `calls` [EXTRACTED]
-- [[test_adversarial_task_ownership_hijack_attempt_over_real_http()]] - `calls` [EXTRACTED]
-- [[test_full_round_trip_allowed_request_reaches_the_peer()]] - `calls` [EXTRACTED]
-- [[test_full_round_trip_denied_request_never_reaches_the_peer()]] - `calls` [EXTRACTED]
-- [[test_legitimate_callback_url_is_forwarded_over_real_http()]] - `calls` [EXTRACTED]
+- [[test_adversarial_ssrf_callback_bypass_attempts_over_real_http()]] - `uses` [INFERRED]
+- [[test_adversarial_task_ownership_hijack_attempt_over_real_http()]] - `uses` [INFERRED]
+- [[test_full_round_trip_allowed_request_reaches_the_peer()]] - `uses` [INFERRED]
+- [[test_full_round_trip_denied_request_never_reaches_the_peer()]] - `uses` [INFERRED]
+- [[test_legitimate_callback_url_is_forwarded_over_real_http()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_307
+#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig

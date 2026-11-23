@@ -1,35 +1,29 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "Community 43"
+community: "test_e2e_proxy.py"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/test_e2e_proxypy
 ---
 
 # HTTPForwarder
 
 ## Connections
-- [[.__init__()_37]] - `method` [EXTRACTED]
-- [[.forward()_1]] - `method` [EXTRACTED]
-- [[.get_stats()_2]] - `method` [EXTRACTED]
-- [[.health_check()_1]] - `method` [EXTRACTED]
-- [[.set_response_handler()]] - `method` [EXTRACTED]
-- [[Forwards sanitized requests to the OpenClaw backend.      In production, uses ai]] - `rationale_for` [EXTRACTED]
-- [[HTTPConnectProxy]] - `conceptually_related_to` [INFERRED]
-- [[MultiAgentRouter]] - `semantically_similar_to` [INFERRED]
-- [[SecurityPipeline]] - `references` [EXTRACTED]
-- [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder_2]] - `uses` [INFERRED]
-- [[forwarder()_1]] - `calls` [EXTRACTED]
-- [[forwarder.py]] - `contains` [EXTRACTED]
-- [[healthy_forwarder()]] - `calls` [EXTRACTED]
-- [[run_canary()]] - `calls` [INFERRED]
+- [[dot-__init__()_131]] - `method` [EXTRACTED]
+- [[dot-forward()]] - `method` [EXTRACTED]
+- [[dot-get_stats()_8]] - `method` [EXTRACTED]
+- [[dot-health_check()_3]] - `method` [EXTRACTED]
+- [[dot-set_response_handler()]] - `method` [EXTRACTED]
+- [[Forwards sanitized requests to the OpenClaw backend. In production, uses…]] - `rationale_for` [EXTRACTED]
+- [[forwarder()]] - `uses` [INFERRED]
+- [[forwarder.py_2]] - `contains` [EXTRACTED]
+- [[healthy_forwarder()]] - `uses` [INFERRED]
 - [[test_canary.py]] - `imports` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
-- [[test_forwarder_error_handling()]] - `calls` [EXTRACTED]
-- [[unhealthy_forwarder()]] - `calls` [EXTRACTED]
+- [[test_forwarder_error_handling()]] - `uses` [INFERRED]
+- [[unhealthy_forwarder()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

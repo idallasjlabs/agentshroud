@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "Community 433"
+community: "Hermes Agent — Connection Setup"
 location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_433
+  - community/Hermes_Agent__Connection_Setup
 ---
 
 # Hermes Agent — Connection Setup
@@ -15,10 +15,10 @@ tags:
 - [[HCI (Hermes Control Interface)]] - `contains` [EXTRACTED]
 - [[HERMES_SETUP]] - `contains` [EXTRACTED]
 - [[Hermes OpenAI-Compatible API]] - `contains` [EXTRACTED]
-- [[Overview_21]] - `contains` [EXTRACTED]
-- [[Prerequisites_10]] - `contains` [EXTRACTED]
-- [[Security Model]] - `contains` [EXTRACTED]
+- [[Overview_16]] - `contains` [EXTRACTED]
+- [[Prerequisites_11]] - `contains` [EXTRACTED]
+- [[Security Model_1]] - `contains` [EXTRACTED]
 - [[Table of Contents_1]] - `contains` [EXTRACTED]
-- [[Troubleshooting_48]] - `contains` [EXTRACTED]
+- [[Troubleshooting_35]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_433
+#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup

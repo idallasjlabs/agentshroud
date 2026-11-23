@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-10-18.md"
 type: "concept"
-community: "Community 139"
+community: "upgrade-2026-10-12.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/upgrade-2026-10-12md
 ---
 
 # Host trivy cannot reach registries (scans_failed=3 root cause)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[upgrade-2026-10-18]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_139
+#graphify/concept #graphify/EXTRACTED #community/upgrade-2026-10-12md

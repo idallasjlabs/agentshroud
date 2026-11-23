@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
+source_file: "docs/TEAM.md"
 type: "document"
-community: "mcp_permissions.py"
-location: "L21"
+community: "AgentShroud Development Team — Agile Structure"
+location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_permissionspy
+  - community/AgentShroud_Development_Team__Agile_Structure
 ---
 
 # How It Works
 
 ## Connections
-- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
+- [[AgentShroud Development Team — Agile Structure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_permissionspy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Development_Team__Agile_Structure

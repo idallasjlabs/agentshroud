@@ -1,23 +1,23 @@
 ---
 source_file: ".agents/skills/hermes/SKILL.md"
 type: "document"
-community: "Community 1993"
+community: "Hermes — Reference Verifier"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1993
+  - community/Hermes__Reference_Verifier
 ---
 
 # Hermes — Reference Verifier
 
 ## Connections
-- [[Input Requirements_15]] - `contains` [EXTRACTED]
-- [[Output Format_17]] - `contains` [EXTRACTED]
-- [[Persona_11]] - `contains` [EXTRACTED]
-- [[Quality Checklist_13]] - `contains` [EXTRACTED]
-- [[Role_43]] - `contains` [EXTRACTED]
-- [[SKILL_8]] - `contains` [EXTRACTED]
-- [[System Prompt_11]] - `contains` [EXTRACTED]
+- [[Input Requirements_32]] - `contains` [EXTRACTED]
+- [[Output Format_47]] - `contains` [EXTRACTED]
+- [[Persona_26]] - `contains` [EXTRACTED]
+- [[Quality Checklist_32]] - `contains` [EXTRACTED]
+- [[Role_97]] - `contains` [EXTRACTED]
+- [[System Prompt_26]] - `contains` [EXTRACTED]
+- [[hermesSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1993
+#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier

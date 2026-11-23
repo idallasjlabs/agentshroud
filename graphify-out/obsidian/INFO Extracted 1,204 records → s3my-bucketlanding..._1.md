@@ -1,18 +1,18 @@
 ---
 source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Community 337"
+community: ".agents/skills/i-tw/SKILL.md"
 location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_337
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # [INFO] Extracted 1,204 records → s3://my-bucket/landing/...
 
 ## Connections
+- [[dot-agentsskillsi-twSKILL]] - `contains` [EXTRACTED]
 - [[Runbook — Operational Decision Tree_1]] - `contains` [EXTRACTED]
-- [[SKILL_58]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_337
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

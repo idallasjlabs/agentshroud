@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "rationale"
-community: "Community 1305"
+community: "SharedMemoryManager"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1305
+  - community/SharedMemoryManager
 ---
 
 # High-level shared-memory API wrapping UserSessionManager storage.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SharedMemoryManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1305
+#graphify/rationale #graphify/EXTRACTED #community/SharedMemoryManager

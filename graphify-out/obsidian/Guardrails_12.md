@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-ab.md"
+source_file: ".agents/agents/aws.md"
 type: "document"
-community: "Community 1296"
-location: "L229"
+community: "AWS Cloud Management & FinOps Agent"
+location: "L390"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1296
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill Audit Branch (AB) — Merge Regression Detection_2]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1296
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

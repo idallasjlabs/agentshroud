@@ -1,17 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/SETUP.md"
+source_file: "docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md"
 type: "document"
-community: "Community 2101"
-location: "L494"
+community: "ANTHROPIC_BASE_URL"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2101
+  - community/ANTHROPIC_BASE_URL
 ---
 
-# How it works
+# How It Works
 
 ## Connections
-- [[12. OTA Wireless Firmware Updates]] - `contains` [EXTRACTED]
+- [[ANTHROPIC_BASE_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2101
+#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL

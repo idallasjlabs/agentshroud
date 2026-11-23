@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "rationale"
-community: "Community 924"
+community: "soc/models.py"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_924
+  - community/soc/modelspy
 ---
 
 # Highest severity across all findings (``NONE`` when clean).
 
 ## Connections
-- [[.severity()]] - `rationale_for` [EXTRACTED]
+- [[dot-severity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_924
+#graphify/rationale #graphify/EXTRACTED #community/soc/modelspy

@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/socrates.md"
+source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Community 1071"
-location: "L24"
+community: "Socrates — Dialogue Architect"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1071
+  - community/Socrates__Dialogue_Architect
 ---
 
 # HOST
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Speaker Definitions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1071
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
