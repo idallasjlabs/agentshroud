@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_soc_edge.py"
+type: "code"
+community: "TestEdgeEnroll"
+location: "L615"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/TestEdgeEnroll
+---
+
+# .test_confirm_required()
+
+## Connections
+- [[TestEdgeEnroll]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/TestEdgeEnroll
