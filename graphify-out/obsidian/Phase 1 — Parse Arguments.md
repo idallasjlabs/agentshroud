@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gh-issues/SKILL.md"
 type: "document"
-community: "Community 533"
+community: "gh-issues — Auto-fix GitHub Issues with Parallel Sub-agents"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_533
+  - community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel_Sub-agents
 ---
 
 # Phase 1 — Parse Arguments
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[gh-issues — Auto-fix GitHub Issues with Parallel Sub-agents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_533
+#graphify/document #graphify/EXTRACTED #community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel_Sub-agents

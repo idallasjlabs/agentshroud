@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Community 107"
+community: "Step-by-Step Deployment"
 location: "L473"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_107
+  - community/Step-by-Step_Deployment
 ---
 
 # Production Hardening
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[AgentShroud Deployment Procedure]] - `contains` [EXTRACTED]
 - [[Performance Tuning]] - `contains` [EXTRACTED]
-- [[Security Hardening]] - `contains` [EXTRACTED]
+- [[Security Hardening_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_107
+#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Deployment

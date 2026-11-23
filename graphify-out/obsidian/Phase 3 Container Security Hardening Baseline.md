@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "concept"
-community: "Community 691"
+community: "AgentShroud Security Verification (13-check driver)"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_691
+  - community/AgentShroud_Security_Verification_13-check_driver
 ---
 
 # Phase 3 Container Security Hardening Baseline
@@ -16,4 +16,4 @@ tags:
 - [[Phase 3 Success Criteria]] - `conceptually_related_to` [EXTRACTED]
 - [[Read-Only Root FS Constraint — what breaks without proper mounts]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_691
+#graphify/concept #graphify/INFERRED #community/AgentShroud_Security_Verification_13-check_driver

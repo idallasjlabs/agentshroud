@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-tdd.md"
+source_file: ".github/agents/i-tdd.agent.md"
 type: "document"
-community: "Community 1498"
-location: "L78"
+community: "Skill: Test-Driven Development (TDD)"
+location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1498
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # PostgreSQL  →  `SAVEPOINT` + `ROLLBACK`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Stack-Specific Testing Patterns_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1498
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

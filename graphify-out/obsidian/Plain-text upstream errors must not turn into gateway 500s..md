@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "Community 2050"
+community: "app"
 location: "L244"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2050
+  - community/app
 ---
 
 # Plain-text upstream errors must not turn into gateway 500s.
 
 ## Connections
-- [[.test_google_proxy_non_json_body_passthrough()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_google_proxy_non_json_body_passthrough()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2050
+#graphify/rationale #graphify/EXTRACTED #community/app

@@ -1,19 +1,19 @@
 ---
 source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "Community 481"
+community: "Plan: AgentShroud Security Hardening — Real Agent Containment"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_481
+  - community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment
 ---
 
 # Plan: AgentShroud Security Hardening — Real Agent Containment
 
 ## Connections
 - [[AGENTSHROUD_PLAN-RESET-20260222-0912]] - `contains` [EXTRACTED]
-- [[Context_11]] - `contains` [EXTRACTED]
+- [[Context_5]] - `contains` [EXTRACTED]
 - [[Execution Order & Parallelism]] - `contains` [EXTRACTED]
 - [[FINAL Network Lockdown Activation]] - `contains` [EXTRACTED]
 - [[GitHub Workflow Rules]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[P4 Wire MCP Proxy]] - `contains` [EXTRACTED]
 - [[P5 Wire SecurityPipeline to forward]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_481
+#graphify/document #graphify/EXTRACTED #community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment

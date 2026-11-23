@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-mc.md"
+source_file: ".agents/skills/i-mc/SKILL.md"
 type: "document"
-community: "Community 1562"
-location: "L25"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1562
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Phase 3 · QA  → `qa/SKILL.md`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GSDE&G Development Master Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1562
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

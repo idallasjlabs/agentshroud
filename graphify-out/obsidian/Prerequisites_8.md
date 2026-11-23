@@ -1,17 +1,20 @@
 ---
-source_file: "docs/runbooks/deployment.md"
+source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "Community 725"
-location: "L5"
+community: "xurl — Agent Skill Reference"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_725
+  - community/xurl__Agent_Skill_Reference
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Deployment Runbook — AgentShroud]] - `contains` [EXTRACTED]
+- [[Other auth methods]] - `contains` [EXTRACTED]
+- [[Register an app (recommended)]] - `contains` [EXTRACTED]
+- [[Secret Safety (Mandatory)]] - `contains` [EXTRACTED]
+- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_725
+#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference

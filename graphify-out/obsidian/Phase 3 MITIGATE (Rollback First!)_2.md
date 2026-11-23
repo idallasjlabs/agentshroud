@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-production.md"
+source_file: ".opencode/agents/i-production.md"
 type: "document"
-community: "Community 1180"
-location: "L60"
+community: "Phase 3: MITIGATE (Rollback First!)"
+location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1180
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
 # Phase 3: MITIGATE (Rollback First!)
@@ -19,4 +19,4 @@ tags:
 - [[Step Function Rollback_2]] - `contains` [EXTRACTED]
 - [[Zabbix Rollback_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1180
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First

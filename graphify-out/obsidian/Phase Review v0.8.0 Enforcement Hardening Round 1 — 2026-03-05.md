@@ -1,13 +1,13 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05.md"
 type: "document"
-community: "Community 1744"
+community: "Phase Review v0.8.0 Enforcement Hardening Round 1 — 2026-03-05"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1744
+  - community/Phase_Review_v080_Enforcement_Hardening_Round_1__2026-03-05
 ---
 
 # Phase Review v0.8.0 Enforcement Hardening Round 1 — 2026-03-05
 
-#graphify/document #graphify/EXTRACTED #community/Community_1744
+#graphify/document #graphify/EXTRACTED #community/Phase_Review_v080_Enforcement_Hardening_Round_1__2026-03-05

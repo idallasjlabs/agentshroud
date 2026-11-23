@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
 type: "document"
-community: "Community 678"
+community: "falco_monitor.py"
 location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_678
+  - community/falco_monitorpy
 ---
 
 # Priority Mapping
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[falco_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_678
+#graphify/document #graphify/EXTRACTED #community/falco_monitorpy

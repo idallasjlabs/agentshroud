@@ -1,67 +1,51 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Community 84"
+community: "test_e2e_proxy.py"
 location: "L44"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_84
+  - community/test_e2e_proxypy
 ---
 
 # PipelineAction
 
 ## Connections
-- [[BotIncidentSeverity]] - `uses` [INFERRED]
-- [[Enum]] - `inherits` [EXTRACTED]
-- [[FilterResult]] - `uses` [INFERRED]
-- [[InjectionAction]] - `uses` [INFERRED]
-- [[PipelineResult_1]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[SecurityPipeline_2]] - `uses` [INFERRED]
-- [[TestAuditChain]] - `uses` [INFERRED]
-- [[TestAuditChainBounded]] - `uses` [INFERRED]
+- [[Enum_29]] - `inherits` [EXTRACTED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
 - [[TestContextIntegrityInPipeline]] - `uses` [INFERRED]
 - [[TestE2E01PromptGuardBlocking]] - `uses` [INFERRED]
-- [[TestE2E02InboundPIIRedaction]] - `uses` [INFERRED]
-- [[TestE2E03OutboundPIIRedaction]] - `uses` [INFERRED]
-- [[TestE2E04ContextGuardBlocking]] - `uses` [INFERRED]
 - [[TestE2E05CanaryTripwire]] - `uses` [INFERRED]
-- [[TestE2E06EncodingBypassDetection]] - `uses` [INFERRED]
-- [[TestE2E07TrustEnforcement]] - `uses` [INFERRED]
-- [[TestE2E08AuditChainIntegrity]] - `uses` [INFERRED]
 - [[TestE2E09SessionIsolation]] - `uses` [INFERRED]
-- [[TestE2E10FailClosed]] - `uses` [INFERRED]
-- [[TestEnvelopeSignerInPipeline]] - `uses` [INFERRED]
-- [[TestInboundFallbackToDirectSanitizer]] - `uses` [INFERRED]
-- [[TestInboundPIIOwnerExemption]] - `uses` [INFERRED]
-- [[TestInboundPipelineBlockedNonOwner]] - `uses` [INFERRED]
-- [[TestInboundPipelineBlockedOwner]] - `uses` [INFERRED]
-- [[TestInboundPipelineExceptionNonOwner]] - `uses` [INFERRED]
-- [[TestInboundPipelineExceptionOwner]] - `uses` [INFERRED]
-- [[TestInboundPipelineWired]] - `uses` [INFERRED]
-- [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
-- [[TestOutboundPipelineBlocked]] - `uses` [INFERRED]
-- [[TestOutboundPipelineWired]] - `uses` [INFERRED]
 - [[TestPIIBlockModeInPipeline]] - `uses` [INFERRED]
-- [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
-- [[TestTrustViolationRecording]] - `uses` [INFERRED]
-- [[ViolationType]] - `uses` [INFERRED]
-- [[_BrokenOutputCanary]] - `uses` [INFERRED]
-- [[_BrokenSanitizer]] - `uses` [INFERRED]
-- [[_FakeAttack]] - `uses` [INFERRED]
-- [[_FakeIntegrityScore]] - `uses` [INFERRED]
-- [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder_2]] - `uses` [INFERRED]
-- [[pipeline.py]] - `contains` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[_make_pipeline_result()]] - `uses` [INFERRED]
+- [[pipeline.py_1]] - `contains` [EXTRACTED]
+- [[str_15]] - `inherits` [EXTRACTED]
+- [[test_approval_queue_enforced()]] - `uses` [INFERRED]
 - [[test_clamav_pipeline.py]] - `imports` [EXTRACTED]
+- [[test_clean_message_passes()]] - `uses` [INFERRED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
+- [[test_egress_allowed_domain()]] - `uses` [INFERRED]
+- [[test_egress_blocked()]] - `uses` [INFERRED]
+- [[test_inbound_base64_injection_blocked()]] - `uses` [INFERRED]
+- [[test_inbound_outbound_both_audited()]] - `uses` [INFERRED]
+- [[test_inbound_owner_encoded_injection_allowed()]] - `uses` [INFERRED]
+- [[test_kill_switch_freezes()]] - `uses` [INFERRED]
+- [[test_mixed_pii_and_injection()]] - `uses` [INFERRED]
+- [[test_outbound_pii_stripped()]] - `uses` [INFERRED]
+- [[test_pii_stripped_inbound()]] - `uses` [INFERRED]
+- [[test_pipeline_clamav_clean_payload()]] - `uses` [INFERRED]
+- [[test_pipeline_clamav_error_fail_open()]] - `uses` [INFERRED]
+- [[test_pipeline_clamav_malware_blocked()]] - `uses` [INFERRED]
+- [[test_pipeline_clamav_not_configured()]] - `uses` [INFERRED]
+- [[test_pipeline_short_base64_not_scanned()]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
+- [[test_prompt_injection_blocked()]] - `uses` [INFERRED]
 - [[test_telegram_pipeline.py]] - `imports` [EXTRACTED]
+- [[test_trust_level_enforced()]] - `uses` [INFERRED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_84
+#graphify/code #graphify/INFERRED #community/test_e2e_proxypy

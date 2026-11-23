@@ -1,17 +1,17 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Community 1181"
+community: "Future Enhancements"
 location: "L355"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1181
+  - community/Future_Enhancements
 ---
 
 # Priority 4: Multi-Page Support
 
 ## Connections
-- [[Future Enhancements_1]] - `contains` [EXTRACTED]
+- [[Future Enhancements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1181
+#graphify/document #graphify/EXTRACTED #community/Future_Enhancements

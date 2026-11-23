@@ -1,12 +1,12 @@
 ---
 source_file: "branding/typography/typography.md"
 type: "document"
-community: "Community 542"
+community: "Platform-Specific"
 location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_542
+  - community/Platform-Specific
 ---
 
 # Platform-Specific
@@ -17,4 +17,4 @@ tags:
 - [[Print]] - `contains` [EXTRACTED]
 - [[Web]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_542
+#graphify/document #graphify/EXTRACTED #community/Platform-Specific

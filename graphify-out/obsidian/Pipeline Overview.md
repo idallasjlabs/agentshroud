@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Community 178"
+community: "7. CI/CD Quality Gates"
 location: "L490"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_178
+  - community/7_CI/CD_Quality_Gates
 ---
 
 # Pipeline Overview
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[7. CICD Quality Gates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_178
+#graphify/document #graphify/EXTRACTED #community/7_CI/CD_Quality_Gates

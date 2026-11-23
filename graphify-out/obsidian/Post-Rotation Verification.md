@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/history-purge-plan.md"
 type: "document"
-community: "Community 655"
+community: "Git History Purge Plan"
 location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_655
+  - community/Git_History_Purge_Plan
 ---
 
 # Post-Rotation Verification
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Git History Purge Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_655
+#graphify/document #graphify/EXTRACTED #community/Git_History_Purge_Plan

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup-telegram.md"
+source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "Community 889"
-location: "L3"
+community: "🛡️ AgentShroud Release Plan"
+location: "L375"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_889
+  - community/_AgentShroud_Release_Plan
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Telegram Channel Setup]] - `contains` [EXTRACTED]
+- [[v0.9.0 — Apple Messages Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_889
+#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan

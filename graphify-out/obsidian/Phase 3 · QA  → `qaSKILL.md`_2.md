@@ -1,12 +1,12 @@
 ---
 source_file: ".cursor/agents/i-mc.md"
 type: "document"
-community: "Community 1653"
+community: "GSDE&G Development Master Checklist"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1653
+  - community/GSDEG_Development_Master_Checklist
 ---
 
 # Phase 3 · QA  → `qa/SKILL.md`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GSDE&G Development Master Checklist_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1653
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist

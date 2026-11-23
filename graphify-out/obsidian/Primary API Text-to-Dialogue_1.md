@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/apollo/SKILL.md"
 type: "document"
-community: "Community 1379"
+community: "Technical Specification"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1379
+  - community/Technical_Specification
 ---
 
 # Primary API: Text-to-Dialogue
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Technical Specification_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1379
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

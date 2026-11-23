@@ -1,20 +1,17 @@
 ---
-source_file: "docs/reference/PREREQUISITES.md"
+source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "Community 764"
-location: "L1"
+community: "Himalaya Email CLI"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_764
+  - community/Himalaya_Email_CLI
 ---
 
-# PREREQUISITES.md
+# Prerequisites
 
 ## Connections
-- [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
-- [[QUICK_REFERENCE]] - `conceptually_related_to` [INFERRED]
-- [[Secrets Backend Auto-Detection]] - `references` [EXTRACTED]
-- [[Separation of Concerns  Isolated Bot Accounts]] - `references` [EXTRACTED]
+- [[Himalaya Email CLI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_764
+#graphify/document #graphify/EXTRACTED #community/Himalaya_Email_CLI

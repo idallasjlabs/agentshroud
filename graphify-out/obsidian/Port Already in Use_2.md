@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
+source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Community 1191"
-location: "L78"
+community: "Step-by-Step Deployment"
+location: "L565"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1191
+  - community/Step-by-Step_Deployment
 ---
 
 # Port Already in Use
 
 ## Connections
-- [[Container Errors_1]] - `contains` [EXTRACTED]
+- [[Troubleshooting Common Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1191
+#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Deployment

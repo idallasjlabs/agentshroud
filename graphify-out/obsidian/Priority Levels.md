@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/incident-response.md"
+source_file: "docs/vault/03 - Configuration/falco-rules.md"
 type: "document"
-community: "Community 2201"
-location: "L7"
+community: "falco-rules.yaml"
+location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2201
+  - community/falco-rulesyaml
 ---
 
 # Priority Levels
 
 ## Connections
-- [[Incident Classification System]] - `contains` [EXTRACTED]
+- [[falco-rules.yaml]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2201
+#graphify/document #graphify/EXTRACTED #community/falco-rulesyaml

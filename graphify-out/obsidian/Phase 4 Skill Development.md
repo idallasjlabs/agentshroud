@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Community 640"
+community: "1.4 Implementation Plan"
 location: "L272"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_640
+  - community/14_Implementation_Plan
 ---
 
 # Phase 4: Skill Development
@@ -15,4 +15,4 @@ tags:
 - [[1.4 Implementation Plan]] - `contains` [EXTRACTED]
 - [[Implementation Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_640
+#graphify/document #graphify/EXTRACTED #community/14_Implementation_Plan

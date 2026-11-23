@@ -1,17 +1,19 @@
 ---
 source_file: "docs/planning/README.md"
 type: "document"
-community: "Community 1036"
+community: "Planning Docs Index (redteam, reviews, recovery, version buckets)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1036
+  - community/Planning_Docs_Index_redteam_reviews_recovery_version_buckets
 ---
 
 # Planning Docs Index (redteam, reviews, recovery, version buckets)
 
 ## Connections
+- [[AgentShroud v1.2.0 Master Plan]] - `references` [EXTRACTED]
+- [[Master Feature List (historical index)]] - `references` [EXTRACTED]
 - [[Recovery Plan v0.4.0 — Systematic Stabilization]] - `references` [EXTRACTED]
 - [[Security Hardening Plan Reset — Real Agent Containment v0.8]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1036
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs_Index_redteam_reviews_recovery_version_buckets

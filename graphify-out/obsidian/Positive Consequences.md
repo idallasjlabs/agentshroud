@@ -1,12 +1,12 @@
 ---
-source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
+source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "Community 631"
-location: "L65"
+community: "ADR-009: Enforce-by-Default Security Philosophy"
+location: "L75"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_631
+  - community/ADR-009_Enforce-by-Default_Security_Philosophy
 ---
 
 # Positive Consequences
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Consequences]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_631
+#graphify/document #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy
