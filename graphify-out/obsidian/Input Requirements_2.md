@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/atlas.md"
+source_file: ".opencode/agents/atlas.md"
 type: "document"
-community: "Community 1138"
-location: "L22"
+community: "Atlas — Curriculum Architect"
+location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1138
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Input Requirements
 
 ## Connections
-- [[Atlas — Curriculum Architect]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1138
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

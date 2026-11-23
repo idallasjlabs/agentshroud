@@ -1,18 +1,18 @@
 ---
-source_file: "docker/config/openclaw/cron/JOBS-REFERENCE.md"
+source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
 type: "document"
-community: "Community 371"
-location: "L54"
+community: "Hermes Cron Jobs Reference & Recreation Guide"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_371
+  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # Job index
 
 ## Connections
-- [[OpenClaw Cron Jobs Reference & Recreation Guide]] - `contains` [EXTRACTED]
-- [[OpenClaw Cron Jobs — Reference & Recreation Guide]] - `contains` [EXTRACTED]
+- [[Hermes Cron Jobs Reference & Recreation Guide]] - `contains` [EXTRACTED]
+- [[Hermes Cron Jobs — Reference & Recreation Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_371
+#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide

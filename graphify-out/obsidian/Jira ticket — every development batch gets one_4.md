@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-hdev.md"
+source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Community 841"
-location: "L72"
+community: "Mode A — Single task"
+location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_841
+  - community/Mode_A__Single_task
 ---
 
 # Jira ticket — every development batch gets one
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Hermes Dev Workflow (HDEV)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_841
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

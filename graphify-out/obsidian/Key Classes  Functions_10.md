@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
 type: "document"
-community: "Community 408"
-location: "L30"
+community: "Function Details"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_408
+  - community/Function_Details
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[llm_proxy.py_2]] - `contains` [EXTRACTED]
+- [[mcp_permissions.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_408
+#graphify/document #graphify/EXTRACTED #community/Function_Details

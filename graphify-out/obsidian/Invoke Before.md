@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-ps.md"
+source_file: ".agents/skills/i-ps/SKILL.md"
 type: "document"
-community: "Community 921"
-location: "L14"
+community: "Pre-Deployment Checklist"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_921
+  - community/Pre-Deployment_Checklist
 ---
 
 # Invoke Before
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_921
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

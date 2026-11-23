@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
 type: "document"
-community: "Community 612"
-location: "L23"
+community: "egress_filter.py"
+location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_612
+  - community/egress_filterpy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[apple_engine.py_2]] - `contains` [EXTRACTED]
+- [[egress_filter.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_612
+#graphify/document #graphify/EXTRACTED #community/egress_filterpy

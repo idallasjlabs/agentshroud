@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/vulcan.md"
+source_file: ".opencode/agents/apollo.md"
 type: "document"
-community: "Community 1951"
-location: "L23"
+community: "Technical Specification"
+location: "L128"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1951
+  - community/Technical_Specification
 ---
 
 # Input Requirements
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1951
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

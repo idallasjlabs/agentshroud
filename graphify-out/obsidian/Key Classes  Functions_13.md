@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
 type: "document"
-community: "Community 666"
-location: "L23"
+community: "agent_isolation.py"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_666
+  - community/agent_isolationpy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
+- [[agent_isolation.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_666
+#graphify/document #graphify/EXTRACTED #community/agent_isolationpy

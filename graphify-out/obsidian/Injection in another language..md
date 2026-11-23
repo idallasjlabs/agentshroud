@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Community 45"
+community: "test_security_audit.py"
 location: "L257"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_45
+  - community/test_security_auditpy
 ---
 
 # Injection in another language.
 
 ## Connections
-- [[.test_multilingual_injection()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_multilingual_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_45
+#graphify/rationale #graphify/EXTRACTED #community/test_security_auditpy

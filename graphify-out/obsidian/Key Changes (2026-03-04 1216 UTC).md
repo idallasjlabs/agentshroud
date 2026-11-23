@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Community 406"
+community: "Summary"
 location: "L459"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_406
+  - community/Summary
 ---
 
 # Key Changes (2026-03-04 12:16 UTC)
 
 ## Connections
-- [[Summary_28]] - `contains` [EXTRACTED]
+- [[Summary_32]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_406
+#graphify/document #graphify/EXTRACTED #community/Summary

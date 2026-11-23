@@ -1,16 +1,16 @@
 ---
 source_file: "branding/typography/typography.md"
 type: "concept"
-community: "Community 542"
+community: "AgentShroud Typography Guidelines"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_542
+  - community/AgentShroud_Typography_Guidelines
 ---
 
 # Inter Typeface (Primary)
 
 ## Connections
-- [[typography]] - `references` [EXTRACTED]
+- [[typography_1]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_542
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Typography_Guidelines

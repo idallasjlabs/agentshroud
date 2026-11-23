@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
 type: "document"
-community: "Community 784"
-location: "L21"
+community: "falco_monitor.py"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_784
+  - community/falco_monitorpy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[config.py_3]] - `contains` [EXTRACTED]
+- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_784
+#graphify/document #graphify/EXTRACTED #community/falco_monitorpy

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/hermes.md"
+source_file: ".agents/skills/apollo/SKILL.md"
 type: "document"
-community: "Community 1977"
-location: "L22"
+community: "Technical Specification"
+location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1977
+  - community/Technical_Specification
 ---
 
 # Input Requirements
 
 ## Connections
-- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1977
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

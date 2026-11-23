@@ -1,18 +1,17 @@
 ---
-source_file: "scripts/generate_branding_assets.py"
+source_file: ""
 type: "code"
-community: "Community 446"
-location: "L60"
+community: "generate_branding_assets.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_446
+  - community/generate_branding_assetspy
 ---
 
 # Image
 
 ## Connections
 - [[icon_on_canvas()]] - `references` [EXTRACTED]
-- [[save()_1]] - `references` [EXTRACTED]
+- [[save()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_446
+#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy

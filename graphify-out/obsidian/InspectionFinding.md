@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "Community 54"
+community: "test_mcp_proxy.py"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/test_mcp_proxypy
 ---
 
 # InspectionFinding
 
 ## Connections
-- [[._scan_text()]] - `references` [EXTRACTED]
-- [[._scan_value()]] - `references` [EXTRACTED]
-- [[._should_block()]] - `references` [EXTRACTED]
+- [[dot-_scan_text()]] - `calls` [EXTRACTED]
+- [[dot-_scan_value()]] - `references` [EXTRACTED]
+- [[dot-_should_block()]] - `references` [EXTRACTED]
 - [[A single finding from inspection.]] - `rationale_for` [EXTRACTED]
-- [[__init__.py_8]] - `imports` [EXTRACTED]
-- [[mcp_inspector.py]] - `contains` [EXTRACTED]
+- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
+- [[proxy__init__.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_54
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

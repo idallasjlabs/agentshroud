@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
 type: "document"
-community: "Community 877"
+community: "mcp_audit.py"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_877
+  - community/mcp_auditpy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[sidecar.py_2]] - `contains` [EXTRACTED]
+- [[mcp_audit.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_877
+#graphify/document #graphify/EXTRACTED #community/mcp_auditpy

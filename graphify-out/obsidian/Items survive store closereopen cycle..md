@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "rationale"
-community: "Community 30"
+community: "ApprovalStore"
 location: "L160"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_30
+  - community/ApprovalStore
 ---
 
 # Items survive store close/reopen cycle.
 
 ## Connections
-- [[.test_store_persists_across_reopen()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_store_persists_across_reopen()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_30
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalStore

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: "Community 327"
+community: "AgentShroud User Guide"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_327
+  - community/AgentShroud_User_Guide
 ---
 
 # Interacting via Telegram
@@ -15,6 +15,6 @@ tags:
 - [[AgentShroud User Guide]] - `contains` [EXTRACTED]
 - [[Commands_2]] - `contains` [EXTRACTED]
 - [[Regular Messages]] - `contains` [EXTRACTED]
-- [[Tips]] - `contains` [EXTRACTED]
+- [[Tips_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_327
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_User_Guide

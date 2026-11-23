@@ -1,17 +1,17 @@
 ---
-source_file: ".omp/agents/sec-offense.md"
+source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Community 1083"
-location: "L368"
+community: "AgentShroud Red Team Adversarial Tester"
+location: "L367"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1083
+  - community/AgentShroud_Red_Team_Adversarial_Tester
 ---
 
 # Infrastructure
 
 ## Connections
-- [[AgentShroud Red Team Adversarial Tester_4]] - `contains` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1083
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester

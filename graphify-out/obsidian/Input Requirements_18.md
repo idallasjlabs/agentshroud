@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/socrates/SKILL.md"
+source_file: ".cursor/agents/daedalus.md"
 type: "document"
-community: "Community 1124"
-location: "L34"
+community: "Daedalus — Concept Illustrator"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1124
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Input Requirements
 
 ## Connections
-- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1124
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

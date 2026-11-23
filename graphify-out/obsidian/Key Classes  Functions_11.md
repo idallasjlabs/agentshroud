@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
 type: "document"
-community: "Community 665"
-location: "L22"
+community: "apple_engine.py"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_665
+  - community/apple_enginepy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[mcp_audit.py_2]] - `contains` [EXTRACTED]
+- [[apple_engine.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_665
+#graphify/document #graphify/EXTRACTED #community/apple_enginepy

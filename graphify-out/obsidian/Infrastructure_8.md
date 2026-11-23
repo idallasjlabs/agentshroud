@@ -1,17 +1,17 @@
 ---
-source_file: ".omp/agents/sec-defense.md"
+source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Community 1332"
-location: "L151"
+community: "AgentShroud Red Team Adversarial Tester"
+location: "L367"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1332
+  - community/AgentShroud_Red_Team_Adversarial_Tester
 ---
 
 # Infrastructure
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor_4]] - `contains` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1332
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester

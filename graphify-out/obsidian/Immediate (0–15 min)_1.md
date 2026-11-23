@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-ps/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ps/SKILL.md"
 type: "document"
-community: "Community 438"
-location: "L152"
+community: "Pre-Deployment Checklist"
+location: "L151"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_438
+  - community/Pre-Deployment_Checklist
 ---
 
 # Immediate (0–15 min)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Deployment Verification_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_438
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

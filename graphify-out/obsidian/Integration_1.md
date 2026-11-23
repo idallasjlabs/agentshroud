@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
 type: "document"
-community: "Community 1080"
+community: "gitleaks.toml"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1080
+  - community/gitleakstoml
 ---
 
 # Integration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[gitleaks.toml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1080
+#graphify/document #graphify/EXTRACTED #community/gitleakstoml

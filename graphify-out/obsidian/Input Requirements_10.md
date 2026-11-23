@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/apollo/SKILL.md"
+source_file: ".agents/agents/athena.md"
 type: "document"
-community: "Community 1379"
-location: "L127"
+community: "Athena — Knowledge Distiller"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1379
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Input Requirements
 
 ## Connections
-- [[Apollo — Audio Systems Producer_2]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1379
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

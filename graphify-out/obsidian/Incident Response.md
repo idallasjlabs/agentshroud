@@ -1,19 +1,18 @@
 ---
-source_file: "skills/custom/securebrowser/references/security-policies.md"
+source_file: "docs/archive/SECURITY.md"
 type: "document"
-community: "Community 453"
-location: "L290"
+community: "Security Architecture"
+location: "L313"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_453
+  - community/Security_Architecture
 ---
 
 # Incident Response
 
 ## Connections
-- [[Incident Playbook]] - `contains` [EXTRACTED]
-- [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
-- [[Security Event Triggers]] - `contains` [EXTRACTED]
+- [[If Compromise Suspected]] - `contains` [EXTRACTED]
+- [[Security Architecture_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_453
+#graphify/document #graphify/EXTRACTED #community/Security_Architecture

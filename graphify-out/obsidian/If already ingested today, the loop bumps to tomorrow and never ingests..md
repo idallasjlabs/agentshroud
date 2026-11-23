@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "Community 736"
+community: "_sleep"
 location: "L1540"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_736
+  - community/_sleep
 ---
 
 # If already ingested today, the loop bumps to tomorrow and never ingests.
 
 ## Connections
-- [[.test_skips_when_already_ingested_today()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_skips_when_already_ingested_today()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_736
+#graphify/rationale #graphify/EXTRACTED #community/_sleep

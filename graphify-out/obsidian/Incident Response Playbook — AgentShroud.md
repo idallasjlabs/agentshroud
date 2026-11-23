@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/incident-response.md"
 type: "document"
-community: "Community 615"
+community: "Incident Response Playbook — AgentShroud"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_615
+  - community/Incident_Response_Playbook__AgentShroud
 ---
 
 # Incident Response Playbook — AgentShroud
@@ -20,7 +20,6 @@ tags:
 - [[6. Post-Incident Review Template]] - `contains` [EXTRACTED]
 - [[7. Communication Templates]] - `contains` [EXTRACTED]
 - [[8. Contacts and Escalation]] - `contains` [EXTRACTED]
-- [[Communication Templates]] - `contains` [EXTRACTED]
-- [[incident-response_1]] - `contains` [EXTRACTED]
+- [[securityincident-response]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_615
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_Playbook__AgentShroud

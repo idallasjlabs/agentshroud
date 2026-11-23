@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "Community 719"
-location: "L23"
+community: "dns_filter.py"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_719
+  - community/dns_filterpy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
+- [[dns_filter.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_719
+#graphify/document #graphify/EXTRACTED #community/dns_filterpy

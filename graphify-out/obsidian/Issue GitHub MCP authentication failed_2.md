@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-mcpm-doctor.md"
+source_file: ".agents/agents/i-mcpm-doctor.md"
 type: "document"
-community: "Community 1040"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
 location: "L88"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1040
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Issue: "GitHub MCP authentication failed"
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Issues & Fixes_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1040
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

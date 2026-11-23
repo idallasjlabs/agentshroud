@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "rationale"
-community: "Community 83"
+community: ".from_source"
 location: "L79"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_83
+  - community/from_source
 ---
 
 # In-memory representation of the skills/agents/MCP manifest.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SkillsManifest]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_83
+#graphify/rationale #graphify/EXTRACTED #community/from_source

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/eightd-root-cause-analysis/SKILL.md"
+source_file: ".omp/agents/athena.md"
 type: "document"
-community: "Community 790"
-location: "L46"
+community: "Athena — Knowledge Distiller"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_790
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Input Requirements
 
 ## Connections
-- [[8D Root Cause Analysis — Data-Driven Control System Investigation_1]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_790
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

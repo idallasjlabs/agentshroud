@@ -1,51 +1,30 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "Community 24"
+community: "ToolResultInjectionScanner"
 location: "L30"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_24
+  - graphify/EXTRACTED
+  - community/ToolResultInjectionScanner
 ---
 
 # InjectionAction
 
 ## Connections
-- [[Any_29]] - `uses` [INFERRED]
-- [[AuditChain]] - `uses` [INFERRED]
-- [[AuditChainEntry]] - `uses` [INFERRED]
-- [[Enum]] - `inherits` [EXTRACTED]
-- [[PipelineAction]] - `uses` [INFERRED]
-- [[PipelineResult]] - `uses` [INFERRED]
+- [[Enum_14]] - `inherits` [EXTRACTED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
-- [[SecurityPipeline_2]] - `uses` [INFERRED]
-- [[TestAuditChain]] - `uses` [INFERRED]
-- [[TestAuditChainBounded]] - `uses` [INFERRED]
-- [[TestCleanContent]] - `uses` [INFERRED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
-- [[TestContextIntegrityInPipeline]] - `uses` [INFERRED]
-- [[TestEncodedInjection]] - `uses` [INFERRED]
-- [[TestEnvelopeSignerInPipeline]] - `uses` [INFERRED]
 - [[TestHighSeverity]] - `uses` [INFERRED]
-- [[TestInboundPIIOwnerExemption]] - `uses` [INFERRED]
-- [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
-- [[TestMediumSeverity]] - `uses` [INFERRED]
-- [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
-- [[TestPIIBlockModeInPipeline]] - `uses` [INFERRED]
-- [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
 - [[TestSanitization]] - `uses` [INFERRED]
 - [[TestToolResultInjectionScanner]] - `uses` [INFERRED]
-- [[TestTrustViolationRecording]] - `uses` [INFERRED]
-- [[TestUnicodeObfuscation]] - `uses` [INFERRED]
-- [[_FakeAttack]] - `uses` [INFERRED]
-- [[_FakeIntegrityScore]] - `uses` [INFERRED]
-- [[pipeline.py]] - `imports` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[pipeline.py_1]] - `imports` [EXTRACTED]
+- [[str_9]] - `inherits` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_tool_injection_scan.py]] - `imports` [EXTRACTED]
+- [[test_tool_injection_scan_blocks_encoded_lower_ranked_rule()]] - `uses` [INFERRED]
 - [[test_tool_result_injection.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 - [[tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_24
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

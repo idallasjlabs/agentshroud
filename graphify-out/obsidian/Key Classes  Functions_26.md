@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/engine.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: "Community 931"
-location: "L21"
+community: "event_bus.py"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_931
+  - community/event_buspy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[engine.py_2]] - `contains` [EXTRACTED]
+- [[event_bus.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_931
+#graphify/document #graphify/EXTRACTED #community/event_buspy

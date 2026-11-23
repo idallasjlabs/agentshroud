@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/docker_engine.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
 type: "document"
-community: "Community 673"
-location: "L22"
+community: "input_normalizer.py"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_673
+  - community/input_normalizerpy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[docker_engine.py_2]] - `contains` [EXTRACTED]
+- [[input_normalizer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_673
+#graphify/document #graphify/EXTRACTED #community/input_normalizerpy

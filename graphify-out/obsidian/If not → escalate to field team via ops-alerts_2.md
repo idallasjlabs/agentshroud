@@ -1,19 +1,19 @@
 ---
-source_file: ".cursor/agents/i-tw.md"
+source_file: ".agents/agents/i-tw.md"
 type: "document"
-community: "Community 729"
+community: ".agents/agents/i-tw.md"
 location: "L117"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_729
+  - community/agents/agents/i-twmd
 ---
 
 # If not → escalate to field team via #ops-alerts
 
 ## Connections
+- [[dot-agentsagentsi-tw]] - `contains` [EXTRACTED]
 - [[API  Function Reference_2]] - `contains` [EXTRACTED]
 - [[Architecture Decision Record (ADR)_2]] - `contains` [EXTRACTED]
-- [[i-tw_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_729
+#graphify/document #graphify/EXTRACTED #community/agents/agents/i-twmd

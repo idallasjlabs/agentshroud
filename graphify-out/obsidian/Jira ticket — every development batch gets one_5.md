@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-odev.md"
+source_file: ".agents/skills/i-odev/SKILL.md"
 type: "document"
-community: "Community 844"
-location: "L72"
+community: "Mode A — Single task"
+location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_844
+  - community/Mode_A__Single_task
 ---
 
 # Jira ticket — every development batch gets one
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill OpenClaw Dev Workflow (ODEV)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_844
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 4"
+community: "fake_urlopen"
 location: "L3356"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_4
+  - community/fake_urlopen
 ---
 
 # Infrastructure/topology questions should return high-level safe guidance.
 
 ## Connections
-- [[.test_collaborator_network_infrastructure_question_gets_safe_guidance()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_collaborator_network_infrastructure_question_gets_safe_guidance()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_4
+#graphify/rationale #graphify/EXTRACTED #community/fake_urlopen

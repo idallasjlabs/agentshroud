@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "rationale"
-community: "Community 24"
+community: "test_ws_e_rt2_inbound_encoding.py"
 location: "L216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/test_ws_e_rt2_inbound_encodingpy
 ---
 
 # If the encoding detector raises, non-owner traffic is blocked (fail-closed).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_inbound_encoding_detector_error_fails_closed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_24
+#graphify/rationale #graphify/EXTRACTED #community/test_ws_e_rt2_inbound_encodingpy
