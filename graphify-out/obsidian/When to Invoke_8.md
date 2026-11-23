@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-mcpm-doctor.md"
+source_file: ".agents/agents/i-mcpm-auth-reset.md"
 type: "document"
-community: "Community 1040"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
 location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1040
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # When to Invoke
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1040
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

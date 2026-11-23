@@ -1,13 +1,11 @@
 ---
 type: community
-cohesion: 0.06
-members: 33
+members: 32
 ---
 
 # AgentShroud Documentation
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 33 nodes
+**Members:** 32 nodes
 
 ## Members
 - [[Active Protections]] - document - docs/README.md
@@ -27,7 +25,6 @@ members: 33
 - [[reference(.reference) - Reference Guides]] - document - docs/README.md
 - [[security(.security) - Security Documentation]] - document - docs/README.md
 - [[setup(.setup) - Setup & Configuration Guides]] - document - docs/README.md
-- [[docsREADME]] - document - docs/README.md
 - [[⏳ Phase 4 SSH Capability (In Progress)]] - document - docs/README.md
 - [[✅ Phase 1 Foundation (Complete)]] - document - docs/README.md
 - [[✅ Phase 2 Gateway & Integration (Complete)]] - document - docs/README.md
@@ -50,3 +47,9 @@ members: 33
 TABLE source_file, type FROM #community/AgentShroud_Documentation
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_docsREADME]]
+
+## Top bridge nodes
+- [[AgentShroud Documentation]] - degree 9, connects to 1 community

@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # AgentShroud Badge Icon 60x60
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[MCP Integrations (GitHub, Atlassian, AWS, XMind)]] - concept - docs/architecture/agentic-os.md
+- [[AgentShroud Badge Icon 60x60]] - image - branding/logos/variants/badge-60x60.png
 
 ## Live Query (requires Dataview plugin)
 

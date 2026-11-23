@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_latency_guard.py"
 type: "rationale"
-community: "Community 77"
+community: "test_voice_latency_guard.py"
 location: "L93"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_77
+  - community/test_voice_latency_guardpy
 ---
 
 # When soft_threshold_s is omitted it is read from the module config at call time.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_record_turn_latency_default_threshold_from_module()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_77
+#graphify/rationale #graphify/EXTRACTED #community/test_voice_latency_guardpy

@@ -1,19 +1,16 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+members: 3
 ---
 
 # AgentShroud Config with Tool Risk Tiers (example)
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[Elevator pitch]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[Key Messaging]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[One-liner]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[What it is NOT]] - document - docker/config/openclaw/workspace/BRAND.md
+- [[AgentShroud Config with Tool Risk Tiers (example)]] - document - examples/agentshroud-with-tool-risk.yaml
+- [[PII confidence 0.8 (example) vs 0.9 floor (CLAUDE.md §7) discrepancy]] - rationale - examples/agentshroud-with-tool-risk.yaml
+- [[Tool Risk Tier Policy (criticalhighmediumlow)]] - concept - examples/agentshroud-with-tool-risk.yaml
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +18,3 @@ members: 4
 TABLE source_file, type FROM #community/AgentShroud_Config_with_Tool_Risk_Tiers_example
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_hermes_model_resolver.py]]
-
-## Top bridge nodes
-- [[Key Messaging]] - degree 4, connects to 1 community

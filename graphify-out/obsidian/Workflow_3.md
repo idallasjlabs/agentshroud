@@ -1,17 +1,22 @@
 ---
-source_file: ".github/agents/i-aws.agent.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Community 222"
-location: "L369"
+community: "Canvas Skill"
+location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_222
+  - community/Canvas_Skill
 ---
 
 # Workflow
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent_3]] - `contains` [EXTRACTED]
+- [[1. Create HTML content]] - `contains` [EXTRACTED]
+- [[2. Find your canvas host URL]] - `contains` [EXTRACTED]
+- [[3. Find connected nodes]] - `contains` [EXTRACTED]
+- [[4. Present content]] - `contains` [EXTRACTED]
+- [[5. Navigate, snapshot, or hide]] - `contains` [EXTRACTED]
+- [[Canvas Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_222
+#graphify/document #graphify/EXTRACTED #community/Canvas_Skill

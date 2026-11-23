@@ -1,44 +1,42 @@
 ---
 type: community
-cohesion: 0.07
 members: 29
 ---
 
 # 10. Troubleshooting
 
-**Cohesion:** 0.07 - loosely connected
 **Members:** 29 nodes
 
 ## Members
-- [[For --cluster-only]] - document - docker/config/hermes/skills/graphify/references/update.md
-- [[For --update (incremental re-extraction)]] - document - docker/config/hermes/skills/graphify/references/update.md
-- [[For --watch]] - document - docker/config/hermes/skills/graphify/references/add-watch.md
-- [[For graphify add]] - document - docker/config/hermes/skills/graphify/references/add-watch.md
-- [[For graphify explain]] - document - docker/config/hermes/skills/graphify/references/query.md
-- [[For graphify path]] - document - docker/config/hermes/skills/graphify/references/query.md
-- [[For git commit hook]] - document - docker/config/hermes/skills/graphify/references/hooks.md
-- [[For native CLAUDE.md integration]] - document - docker/config/hermes/skills/graphify/references/hooks.md
-- [[Step 0 — Constrained query expansion (REQUIRED before traversal)]] - document - docker/config/hermes/skills/graphify/references/query.md
-- [[Step 1 — Traversal]] - document - docker/config/hermes/skills/graphify/references/query.md
-- [[Step 2.5 - Transcribe video  audio files (only if video files detected)_1]] - document - docker/config/hermes/skills/graphify/references/transcribe.md
-- [[Step 6b - Wiki (only if --wiki flag)]] - document - docker/config/hermes/skills/graphify/references/exports.md
-- [[Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag)]] - document - docker/config/hermes/skills/graphify/references/exports.md
-- [[Step 7b - SVG export (only if --svg flag)]] - document - docker/config/hermes/skills/graphify/references/exports.md
-- [[Step 7c - GraphML export (only if --graphml flag)]] - document - docker/config/hermes/skills/graphify/references/exports.md
-- [[Step 7d - MCP server (only if --mcp flag)]] - document - docker/config/hermes/skills/graphify/references/exports.md
-- [[Step 8 - Token reduction benchmark (only if total_words  5000)]] - document - docker/config/hermes/skills/graphify/references/exports.md
-- [[graphify reference add a URL and watch a folder]] - document - docker/config/hermes/skills/graphify/references/add-watch.md
-- [[graphify reference commit hook and native CLAUDE.md integration]] - document - docker/config/hermes/skills/graphify/references/hooks.md
-- [[graphify reference extra exports and benchmark]] - document - docker/config/hermes/skills/graphify/references/exports.md
-- [[graphify reference incremental update and cluster-only]] - document - docker/config/hermes/skills/graphify/references/update.md
-- [[graphify reference query, path, explain]] - document - docker/config/hermes/skills/graphify/references/query.md
-- [[graphify reference transcribe video and audio_1]] - document - docker/config/hermes/skills/graphify/references/transcribe.md
-- [[hermesskillsgraphifyreferencesadd-watch]] - document - docker/config/hermes/skills/graphify/references/add-watch.md
-- [[hermesskillsgraphifyreferencesexports]] - document - docker/config/hermes/skills/graphify/references/exports.md
-- [[hermesskillsgraphifyreferenceshooks]] - document - docker/config/hermes/skills/graphify/references/hooks.md
-- [[hermesskillsgraphifyreferencesquery]] - document - docker/config/hermes/skills/graphify/references/query.md
-- [[hermesskillsgraphifyreferencestranscribe]] - document - docker/config/hermes/skills/graphify/references/transcribe.md
-- [[hermesskillsgraphifyreferencesupdate]] - document - docker/config/hermes/skills/graphify/references/update.md
+- [[dot-agentsskillsi-mcpmSKILL]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[10. Troubleshooting]] - document - firmware/voice-terminal/SETUP.md
+- [[AWS Token expired (SSO)]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[AWS Unable to locate credentials]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Atlassian OAuth flow failed]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Authentication Issues_6]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[Authentication Issues_7]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[Boot loop — abort() in i2c.c before app_main]] - document - firmware/voice-terminal/SETUP.md
+- [[Button component v4.x API error at build time]] - document - firmware/voice-terminal/SETUP.md
+- [[Common Errors_5]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[Common Errors_6]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[First reply is slow (~5-7 s extra thinking)]] - document - firmware/voice-terminal/SETUP.md
+- [[GitHub Bad credentials]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[GitHub Docker image not found]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[LVGL compile error — undefined symbol `lv_screen_active` or `.rotate` field]] - document - firmware/voice-terminal/SETUP.md
+- [[MCP Troubleshooting_5]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[MCP Troubleshooting_6]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[Opening serial monitor resets the device]] - document - firmware/voice-terminal/SETUP.md
+- [[PSRAM shows 0 KB in logs]] - document - firmware/voice-terminal/SETUP.md
+- [[Role_129]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[Role_130]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[Skill MCP Tools Usage (MCP-TOOLS)_5]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[Skill MCP Tools Usage (MCP-TOOLS)_6]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[Troubleshooting_17]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Undeclared symbol `lv_font_montserrat_28`]] - document - firmware/voice-terminal/SETUP.md
+- [[WebSocket connect times out forever (handshake reaches HTTP 101, then dies)]] - document - firmware/voice-terminal/SETUP.md
+- [[WiFi won't connect — reason=201 NO_AP_FOUND]] - document - firmware/voice-terminal/SETUP.md
+- [[hermesskillsi-mcpmSKILL]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[sdkconfig.defaults SSID change doesn't take]] - document - firmware/voice-terminal/SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,3 +44,17 @@ members: 29
 TABLE source_file, type FROM #community/10_Troubleshooting
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Skill MCP Auth Reset (MCPM-AUTH-RESET)_7]]
+- 1 edge to [[_COMMUNITY_Available MCP Servers]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_Available MCP Servers_6]]
+- 1 edge to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook]]
+
+## Top bridge nodes
+- [[10. Troubleshooting]] - degree 23, connects to 2 communities
+- [[Skill MCP Tools Usage (MCP-TOOLS)_5]] - degree 6, connects to 2 communities
+- [[Skill MCP Tools Usage (MCP-TOOLS)_6]] - degree 6, connects to 2 communities
+- [[Troubleshooting_17]] - degree 6, connects to 1 community

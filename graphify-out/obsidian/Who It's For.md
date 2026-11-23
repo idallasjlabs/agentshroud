@@ -1,18 +1,17 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Community 195"
+community: "AgentShroud™ README"
 location: "L500"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_195
+  - community/AgentShroud_README
 ---
 
 # Who It's For
 
 ## Connections
 - [[AgentShroud™ README]] - `contains` [EXTRACTED]
-- [[README_37]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_195
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_README

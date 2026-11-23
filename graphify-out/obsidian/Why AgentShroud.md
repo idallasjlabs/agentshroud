@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Community 195"
+community: "AgentShroud™ README"
 location: "L385"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_195
+  - community/AgentShroud_README
 ---
 
 # Why AgentShroud
@@ -15,6 +15,5 @@ tags:
 - [[AgentShroud vs Unprotected Agent]] - `contains` [EXTRACTED]
 - [[AgentShroud™ README]] - `contains` [EXTRACTED]
 - [[Core Objectives]] - `contains` [EXTRACTED]
-- [[README_37]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_195
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_README

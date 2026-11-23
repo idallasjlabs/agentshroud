@@ -1,34 +1,33 @@
 ---
 type: community
-cohesion: 0.11
-members: 19
+members: 20
 ---
 
 # AgentShroud Consolidated Issues Report
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 19 nodes
+**Members:** 20 nodes
 
 ## Members
-- [[dot-test_clean_fresh_and_stale_reports()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_clean_no_report_three()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_critical_high_medium_branches()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_failures_score_two()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_fresh_clean_is_optimizing()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_malware_30h_old_scan_measured()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_malware_fresh_scan_optimizing()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_malware_running_but_nothing_scanned()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_not_run_no_binary()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_oscap_binary_present_not_run()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_runtime_noncritical_findings_scores_four()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_stale_report_caps_at_one()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_two_day_old_clean_is_measured()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[Path_49]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[Set a file's mtime to `hours` hours in the past.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
-- [[TestComplianceAuditing]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestRuntimeProtectionAndMalware]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestVulnerabilityManagement]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[_age()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[1. Anthropic API Credits Exhausted]] - document - docs/project/REPORTED_ISSUES.md
+- [[10. Colima VM Internet Connectivity Loss]] - document - docs/project/REPORTED_ISSUES.md
+- [[11. Missing Test Coverage for Core Modules]] - document - docs/project/REPORTED_ISSUES.md
+- [[12. PII Redaction Issues]] - document - docs/project/REPORTED_ISSUES.md
+- [[13. Duplicate Imports & Verbose Pydantic Init]] - document - docs/project/REPORTED_ISSUES.md
+- [[14. Hardcoded Database Paths]] - document - docs/project/REPORTED_ISSUES.md
+- [[15. Debug Artifacts in Production Code]] - document - docs/project/REPORTED_ISSUES.md
+- [[16. Missing Newlines]] - document - docs/project/REPORTED_ISSUES.md
+- [[17. Hardcoded JWT Metadata]] - document - docs/project/REPORTED_ISSUES.md
+- [[2. iMessage Integration Permission Denied]] - document - docs/project/REPORTED_ISSUES.md
+- [[3. Unpinned Base Image in Dockerfile]] - document - docs/project/REPORTED_ISSUES.md
+- [[9. Streaming Responses Bypass Outbound Filtering]] - document - docs/project/REPORTED_ISSUES.md
+- [[AgentShroud Consolidated Issues Report]] - document - docs/project/REPORTED_ISSUES.md
+- [[AgentShroud™ Consolidated Issues Report]] - document - docs/project/REPORTED_ISSUES.md
+- [[REPORTED_ISSUES]] - document - docs/project/REPORTED_ISSUES.md
+- [[📁 Infrastructure Limitations]] - document - docs/project/REPORTED_ISSUES.md
+- [[📝 General TODOs & Wishlist]] - document - docs/project/REPORTED_ISSUES.md
+- [[🔴 CRITICAL Operational Blockers]] - document - docs/project/REPORTED_ISSUES.md
+- [[🔵 LOW Improvements & Formatting]] - document - docs/project/REPORTED_ISSUES.md
+- [[🟡 MEDIUM Technical Debt & Bugs]] - document - docs/project/REPORTED_ISSUES.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,13 +37,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_MiddlewareManager (3) (2)]]
-- 4 edges to [[_COMMUNITY_UserSessionManager (3) (2)]]
-- 1 edge to [[_COMMUNITY_SECTION 7 FILING CHECKLIST]]
+- 2 edges to [[_COMMUNITY_🟠 HIGH Security & Logic Issues]]
+- 1 edge to [[_COMMUNITY_Red Team Assessment v1.2.0]]
 
 ## Top bridge nodes
-- [[_age()]] - degree 7, connects to 2 communities
-- [[TestComplianceAuditing]] - degree 6, connects to 1 community
-- [[TestRuntimeProtectionAndMalware]] - degree 5, connects to 1 community
-- [[TestVulnerabilityManagement]] - degree 5, connects to 1 community
-- [[dot-test_clean_fresh_and_stale_reports()]] - degree 3, connects to 1 community
+- [[AgentShroud Consolidated Issues Report]] - degree 8, connects to 2 communities
+- [[AgentShroud™ Consolidated Issues Report]] - degree 7, connects to 1 community

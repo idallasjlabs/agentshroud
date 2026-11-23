@@ -1,22 +1,19 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "Community 61"
+community: "GroupWorkspaceManager"
 location: "L63"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_61
+  - graphify/EXTRACTED
+  - community/GroupWorkspaceManager
 ---
 
 # WorkspaceContext
 
 ## Connections
-- [[.resolve_workspace()]] - `references` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Resolved workspacecontext identity for a single inbound message.      Attribute]] - `rationale_for` [EXTRACTED]
-- [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
+- [[dot-resolve_workspace()]] - `calls` [EXTRACTED]
+- [[Resolved workspacecontext identity for a single inbound message. Attributes…]] - `rationale_for` [EXTRACTED]
 - [[group_workspace.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_61
+#graphify/code #graphify/EXTRACTED #community/GroupWorkspaceManager

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/httpx.md"
+source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "Community 1284"
-location: "L19"
+community: "Pydantic"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1284
+  - community/Pydantic
 ---
 
 # Where Used
 
 ## Connections
-- [[httpx_1]] - `contains` [EXTRACTED]
+- [[Pydantic]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1284
+#graphify/document #graphify/EXTRACTED #community/Pydantic

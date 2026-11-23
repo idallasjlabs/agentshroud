@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.21
 members: 13
 ---
 
 # AgentShroud (system, C4 context)
 
-**Cohesion:** 0.21 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -32,10 +30,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_sanitizer.py (2)]]
+- 1 edge to [[_COMMUNITY_ADR-001 Transparent Proxy Decision]]
+- 1 edge to [[_COMMUNITY_TrustManager_1]]
 - 1 edge to [[_COMMUNITY_ADR-006 Multi-Runtime Container Support]]
 - 1 edge to [[_COMMUNITY_ADR-005 SHA-256 Hash Chain Audit Integrity]]
-- 1 edge to [[_COMMUNITY_ADR-007 Zero-Config Security (docker-compose up = fully secured)]]
 
 ## Top bridge nodes
 - [[Gateway Container (Python 3.11FastAPI 8080)]] - degree 9, connects to 3 communities

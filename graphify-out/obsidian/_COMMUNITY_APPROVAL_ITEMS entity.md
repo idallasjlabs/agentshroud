@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # APPROVAL_ITEMS entity
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[God Nodes Analysis]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
-- [[graphify.serve MCP stdio Server]] - concept - docker/config/openclaw/skills/graphify/references/exports.md
+- [[APPROVAL_ITEMS entity]] - concept - docs/diagrams/images/diagram-08-erd.svg
+- [[LEDGER entity (id, timestamp, source, content_hash, original_content_hash, sanitized, size, redaction_count, redaction_types, forwarded_to, content_type, metadata, created_at, expires_at)]] - concept - docs/diagrams/images/diagram-08-erd.svg
 
 ## Live Query (requires Dataview plugin)
 

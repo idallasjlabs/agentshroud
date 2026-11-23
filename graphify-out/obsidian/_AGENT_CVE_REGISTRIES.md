@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "Community 104"
+community: "triage-cve-mitigations.py"
 location: "18008"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_104
+  - community/triage-cve-mitigationspy
 ---
 
 # _AGENT_CVE_REGISTRIES
@@ -16,4 +16,4 @@ tags:
 - [[_OPENCLAW_CVE_REGISTRY]] - `shares_data_with` [EXTRACTED]
 - [[triage_entry()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_104
+#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

@@ -1,29 +1,27 @@
 ---
 type: community
-cohesion: 0.14
 members: 14
 ---
 
 # AgentShroud Deployment & Troubleshooting Runbook
 
-**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
-- [[2. Security Analysis]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[2a. Owner Bypass (`OWNER_USER_IDS`) — ⚠️ WARNING]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[2b. Telegram SDK Patch Removal — ⚠️ WARNING]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[2c. Telegram Proxy Auth Added — ✅ GOOD]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[2d. Credential Reference Fixes — ✅ GOOD]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[2e. Gateway Auth Simplification — ✅ GOOD]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[3a. Enforcement Mode Flip — ✅ EXCELLENT]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[3b. ContextGuard Pipeline Integration — ✅ GOOD]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[3c. Observatory Mode API — ✅ GOOD with note]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[3d. 20 New Prompt Injection Patterns — ✅ GOOD]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[3e. Docker Hardening — ✅ GOOD (minus YAML bugs)]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[4a. Blue Team Fixes — ✅ EXCELLENT]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[4b. Remaining Risk Tailscale Networking (E1)]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[4c. Test Coverage Improvements]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[Fatal glibc error Cannot allocate TLS block]] - document - docs/runbooks/RUNBOOK.md
+- [[AgentShroud Deployment & Troubleshooting Runbook]] - document - docs/runbooks/RUNBOOK.md
+- [[Architecture Notes_1]] - document - docs/runbooks/RUNBOOK.md
+- [[Check Gateway Health]] - document - docs/runbooks/RUNBOOK.md
+- [[Colima won't start]] - document - docs/runbooks/RUNBOOK.md
+- [[Container starts but unhealthy]] - document - docs/runbooks/RUNBOOK.md
+- [[Deploy Latest Code (Any Host)]] - document - docs/runbooks/RUNBOOK.md
+- [[Deploy to Production]] - document - docs/runbooks/RUNBOOK.md
+- [[Docker says Cannot connect to Docker daemon]] - document - docs/runbooks/RUNBOOK.md
+- [[Infrastructure_14]] - document - docs/runbooks/RUNBOOK.md
+- [[Quick Restart (No Rebuild)]] - document - docs/runbooks/RUNBOOK.md
+- [[Run Tests on Any Host]] - document - docs/runbooks/RUNBOOK.md
+- [[Tests failing after deploy]] - document - docs/runbooks/RUNBOOK.md
+- [[Troubleshooting_56]] - document - docs/runbooks/RUNBOOK.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,7 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5)]]
+- 1 edge to [[_COMMUNITY_TELEGRAM_ISSUES]]
 
 ## Top bridge nodes
-- [[2. Security Analysis]] - degree 14, connects to 1 community
+- [[AgentShroud Deployment & Troubleshooting Runbook]] - degree 9, connects to 1 community

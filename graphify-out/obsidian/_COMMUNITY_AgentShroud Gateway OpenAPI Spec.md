@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # AgentShroud Gateway OpenAPI Spec
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[wakeword.h (PTTWakeNet public API)]] - code - firmware/voice-terminal/main/wakeword.h
+- [[AgentShroud Gateway OpenAPI Spec]] - document - gateway/openapi.json
 
 ## Live Query (requires Dataview plugin)
 

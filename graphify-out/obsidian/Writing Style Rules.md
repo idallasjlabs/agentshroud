@@ -1,20 +1,20 @@
 ---
-source_file: ".agents/agents/i-tw.md"
+source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
 type: "document"
-community: "Community 712"
-location: "L202"
+community: "hermes/skills/i-cr/SKILL.md"
+location: "L199"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_712
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # Writing Style Rules
 
 ## Connections
 - [[Formatting]] - `contains` [EXTRACTED]
-- [[Voice & Tone]] - `contains` [EXTRACTED]
+- [[Voice & Tone_1]] - `contains` [EXTRACTED]
 - [[What Belongs Where]] - `contains` [EXTRACTED]
 - [[→ {site site1, test_mode True, output_prefix _testsite1}]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_712
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

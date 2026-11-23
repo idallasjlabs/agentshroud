@@ -1,36 +1,39 @@
 ---
 type: community
-cohesion: 0.10
-members: 21
+members: 26
 ---
 
 # AgentShroud: A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 21 nodes
+**Members:** 26 nodes
 
 ## Members
-- [[Audit Access]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Audit Retention]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Audit Trail Standards]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Automated Tests]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Compliance_1]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Future Enhancements_1]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Incident Playbook]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Incident Response]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Manual Security Review]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Planned Features]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Risk Classification Matrix]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Risk Elevation Factors]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[SecureBrowser Security Policies]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Security Event Triggers]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Security Testing_1]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Standards Alignment]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Threat Model_3]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[What Gets Logged]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[What We Don't Protect Against]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[What We Protect Against]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[security-policies]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Abstract]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[I. Introduction]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[II-A. AI Agent Security]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[II-B. STPA-Sec]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[II-C. Transparent Proxy Architectures]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[II. Related Work]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[III-A. Attacker Model]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[III. Threat Model]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IV-A. Transparent Proxy Design]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IV-B. Security Pipeline]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IV-C. Middleware Manager]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IV-D. MCP Proxy Layer]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IV. System Architecture]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IX-A. Limitations]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IX-B. STPA-Sec as Applied to AI Agent Systems]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IX-C. Industry Implications]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IX. Discussion]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[References_3]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[TABLE II Unsafe Control Action Distribution]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[TABLE III STPA-Sec Requirement Tiers]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VI-A. Methodology]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VI-B. Findings]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VI-C. Requirements]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VI. STPA-Sec Analysis]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[X. Conclusion and Future Work]] - document - docs/papers/agentshroud-ieee-paper.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,8 +43,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Operations Cheat Sheet]]
-- 1 edge to [[_COMMUNITY_Core Security Principles]]
+- 2 edges to [[_COMMUNITY_75 Security Modules]]
+- 1 edge to [[_COMMUNITY_VIII. Evaluation]]
+- 1 edge to [[_COMMUNITY_VII. v0.8.0 Remediation]]
+- 1 edge to [[_COMMUNITY_agentshroud-ieee-paper]]
 
 ## Top bridge nodes
-- [[SecureBrowser Security Policies]] - degree 10, connects to 2 communities
+- [[AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]] - degree 14, connects to 4 communities

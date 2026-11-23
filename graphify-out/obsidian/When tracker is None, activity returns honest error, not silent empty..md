@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 436"
+community: ".test_activity_command_renders_entries"
 location: "L4833"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_436
+  - community/test_activity_command_renders_entries
 ---
 
 # When tracker is None, /activity returns honest error, not silent empty.
 
 ## Connections
-- [[.test_activity_command_reports_tracker_unhealthy()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_activity_command_reports_tracker_unhealthy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_436
+#graphify/rationale #graphify/EXTRACTED #community/test_activity_command_renders_entries
