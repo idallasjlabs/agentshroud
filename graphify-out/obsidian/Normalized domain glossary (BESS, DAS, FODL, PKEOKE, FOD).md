@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/CLAUDE.md"
 type: "concept"
-community: "Community 1942"
+community: "Claude Code skill catalog (59 skills)"
 location: "Section 10"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_1942
+  - community/Claude_Code_skill_catalog_59_skills
 ---
 
 # Normalized domain glossary (BESS, DAS, FODL, PKE/OKE, FOD)
@@ -16,4 +16,4 @@ tags:
 - [[LLM Operating Context — Isaiah Jefferson_1]] - `references` [EXTRACTED]
 - [[Zabbix MCP server]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_1942
+#graphify/concept #graphify/INFERRED #community/Claude_Code_skill_catalog_59_skills

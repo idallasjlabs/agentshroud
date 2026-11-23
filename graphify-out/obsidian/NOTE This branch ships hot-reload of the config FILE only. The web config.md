@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Community 151"
+community: "ingest_api/config.py"
 location: "L690"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_151
+  - community/ingest_api/configpy
 ---
 
 # # NOTE: This branch ships hot-reload of the config FILE only. The web config
 
 ## Connections
-- [[config.py]] - `rationale_for` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_151
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/configpy

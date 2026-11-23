@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
 type: "document"
-community: "Community 456"
-location: "L97"
+community: "alert_dispatcher.py"
+location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_456
+  - community/alert_dispatcherpy
 ---
 
 # Mode: Enforce vs Monitor
 
 ## Connections
-- [[env_guard.py_2]] - `contains` [EXTRACTED]
+- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_456
+#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy

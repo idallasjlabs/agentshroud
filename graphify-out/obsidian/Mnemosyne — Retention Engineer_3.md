@@ -1,23 +1,23 @@
 ---
-source_file: ".cursor/agents/mnemosyne.md"
+source_file: "docker/config/openclaw/skills/i-mnemosyne/SKILL.md"
 type: "document"
-community: "Community 1987"
-location: "L8"
+community: "Mnemosyne — Retention Engineer"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1987
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Mnemosyne — Retention Engineer
 
 ## Connections
-- [[Input Requirements_26]] - `contains` [EXTRACTED]
-- [[Output Format_37]] - `contains` [EXTRACTED]
-- [[Persona_20]] - `contains` [EXTRACTED]
-- [[Quality Checklist_23]] - `contains` [EXTRACTED]
-- [[Role_108]] - `contains` [EXTRACTED]
-- [[System Prompt_20]] - `contains` [EXTRACTED]
-- [[mnemosyne_1]] - `contains` [EXTRACTED]
+- [[Input Requirements_39]] - `contains` [EXTRACTED]
+- [[Output Format_54]] - `contains` [EXTRACTED]
+- [[Persona_33]] - `contains` [EXTRACTED]
+- [[Quality Checklist_39]] - `contains` [EXTRACTED]
+- [[Role_104]] - `contains` [EXTRACTED]
+- [[System Prompt_33]] - `contains` [EXTRACTED]
+- [[openclawskillsi-mnemosyneSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1987
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

@@ -1,17 +1,17 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Community 463"
+community: "Distributed OpenClaw Node Architecture — Raspberry Pi 4"
 location: "L556"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_463
+  - community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
 ---
 
 # Not Ideal For
 
 ## Connections
-- [[Use Cases]] - `contains` [EXTRACTED]
+- [[Use Cases_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_463
+#graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4

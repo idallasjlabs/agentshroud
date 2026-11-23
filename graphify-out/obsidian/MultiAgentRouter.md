@@ -1,63 +1,49 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "Community 7"
+community: "ingest_api/config.py"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/ingest_api/configpy
 ---
 
 # MultiAgentRouter
 
 ## Connections
-- [[.__init__()_30]] - `method` [EXTRACTED]
-- [[._build_forward_payload()]] - `method` [EXTRACTED]
-- [[.disabled_client()]] - `calls` [EXTRACTED]
-- [[.forward_to_agent()]] - `method` [EXTRACTED]
-- [[.forward_to_agent_stream()]] - `method` [EXTRACTED]
-- [[.health_check()]] - `method` [EXTRACTED]
-- [[.list_targets()]] - `method` [EXTRACTED]
-- [[.no_approval_client()]] - `calls` [EXTRACTED]
-- [[.register_bots()]] - `method` [EXTRACTED]
-- [[.resolve_target()]] - `method` [EXTRACTED]
+- [[dot-__init__()_99]] - `method` [EXTRACTED]
+- [[dot-_build_forward_payload()]] - `method` [EXTRACTED]
+- [[dot-disabled_client()]] - `calls` [EXTRACTED]
+- [[dot-forward_to_agent()]] - `method` [EXTRACTED]
+- [[dot-forward_to_agent_stream()]] - `method` [EXTRACTED]
+- [[dot-health_check()_5]] - `method` [EXTRACTED]
+- [[dot-list_targets()]] - `method` [EXTRACTED]
+- [[dot-no_approval_client()]] - `calls` [EXTRACTED]
+- [[dot-register_bots()]] - `method` [EXTRACTED]
+- [[dot-resolve_target()]] - `method` [EXTRACTED]
 - [[AgentTarget]] - `uses` [INFERRED]
 - [[AppState]] - `uses` [INFERRED]
-- [[FastAPI_1]] - `uses` [INFERRED]
 - [[ForwardRequest]] - `uses` [INFERRED]
-- [[HTTPForwarder]] - `semantically_similar_to` [INFERRED]
-- [[LogRecord]] - `uses` [INFERRED]
 - [[RouterConfig]] - `uses` [INFERRED]
-- [[Routes content to appropriate agent containers      Routing priority     1. Exp]] - `rationale_for` [EXTRACTED]
+- [[Routes content to appropriate agent containers Routing priority 1. Explicit…]] - `rationale_for` [EXTRACTED]
 - [[TestSSHDisabledEndpoint]] - `uses` [INFERRED]
-- [[TestSSHExec]] - `uses` [INFERRED]
-- [[TestSSHHistory]] - `uses` [INFERRED]
-- [[TestSSHHosts]] - `uses` [INFERRED]
-- [[TestSSHProxyValidateWriteFile]] - `uses` [INFERRED]
-- [[TestSSHProxyWriteFileTransport]] - `uses` [INFERRED]
 - [[TestSSHRequireApprovalFalse]] - `uses` [INFERRED]
-- [[TestSSHValidateCwd]] - `uses` [INFERRED]
-- [[TestSSHWriteFileEndpoint]] - `uses` [INFERRED]
-- [[TestSSHWriteFileLedgerAudit]] - `uses` [INFERRED]
-- [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - `uses` [INFERRED]
-- [[_DropInvalidHTTPRequestFilter]] - `uses` [INFERRED]
-- [[client()_17]] - `calls` [EXTRACTED]
-- [[client()_18]] - `calls` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[client()_11]] - `uses` [INFERRED]
+- [[client()_12]] - `uses` [INFERRED]
+- [[ingest_apirouter.py]] - `contains` [EXTRACTED]
+- [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main.py_3]] - `references` [EXTRACTED]
-- [[router()_2]] - `calls` [EXTRACTED]
-- [[router()_1]] - `calls` [EXTRACTED]
-- [[router()_3]] - `calls` [EXTRACTED]
-- [[router.py]] - `contains` [EXTRACTED]
+- [[router()_1]] - `uses` [INFERRED]
+- [[router()_2]] - `uses` [INFERRED]
+- [[router()_3]] - `uses` [INFERRED]
 - [[state.py]] - `imports` [EXTRACTED]
-- [[test_hermes_and_openclaw_coexist()]] - `calls` [EXTRACTED]
-- [[test_resolves_hermes_target()]] - `calls` [EXTRACTED]
+- [[test_hermes_and_openclaw_coexist()]] - `uses` [INFERRED]
+- [[test_resolves_hermes_target()]] - `uses` [INFERRED]
 - [[test_router.py]] - `imports` [EXTRACTED]
 - [[test_router_openai_translation.py]] - `imports` [EXTRACTED]
 - [[test_router_streaming.py]] - `imports` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

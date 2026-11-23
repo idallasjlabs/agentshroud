@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
+source_file: "skills/openclaw/trello/SKILL.md"
 type: "document"
-community: "Community 370"
-location: "L364"
+community: "Usage"
+location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_370
+  - community/Usage
 ---
 
 # Notes
 
 ## Connections
-- [[Phase 3 Requirements Working Chat Container]] - `contains` [EXTRACTED]
+- [[Trello Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_370
+#graphify/document #graphify/EXTRACTED #community/Usage

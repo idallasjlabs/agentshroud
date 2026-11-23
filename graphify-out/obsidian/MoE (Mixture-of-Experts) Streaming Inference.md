@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-moe-streaming-ssd-offload.txt"
 type: "concept"
-community: "Community 958"
+community: "Turbo Fieldfare (MLX inference backend)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_958
+  - community/Turbo_Fieldfare_MLX_inference_backend
 ---
 
 # MoE (Mixture-of-Experts) Streaming Inference
@@ -13,6 +13,6 @@ tags:
 ## Connections
 - [[Newsletter MoE Streaming  SSD Offload]] - `references` [EXTRACTED]
 - [[Today in AI (Daily Newsletter)]] - `references` [EXTRACTED]
-- [[oMLX MoE Streaming Health Check]] - `references` [EXTRACTED]
+- [[oMLX MoE Streaming Health Check_1]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_958
+#graphify/concept #graphify/EXTRACTED #community/Turbo_Fieldfare_MLX_inference_backend

@@ -1,21 +1,20 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 350"
-location: "L327"
+community: "AgentShroud Setup Guide"
+location: "L667"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_350
+  - community/AgentShroud_Setup_Guide
 ---
 
 # Multi-Instance Setup
 
 ## Connections
 - [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
-- [[Environment Variables_1]] - `contains` [EXTRACTED]
+- [[Environment Variables_11]] - `contains` [EXTRACTED]
 - [[Mac Studio Example]] - `contains` [EXTRACTED]
 - [[Port Auto-Detection]] - `contains` [EXTRACTED]
-- [[Step 5 Configure Ports]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_350
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/RELEASE-PLAN.md"
+source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "Community 663"
-location: "L414"
+community: "Post-v1.0.0 — Deferred"
+location: "L366"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_663
+  - community/Post-v100__Deferred
 ---
 
 # Multi-Host Deployment
 
 ## Connections
-- [[v1.3.0 — Platform Expansion (53 items)]] - `contains` [EXTRACTED]
+- [[Post-v1.0.0 — Deferred]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_663
+#graphify/document #graphify/EXTRACTED #community/Post-v100__Deferred

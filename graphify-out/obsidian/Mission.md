@@ -1,17 +1,17 @@
 ---
-source_file: "branding/guidelines/brand-guidelines.md"
+source_file: "prompts/sunday-upgrade.md"
 type: "document"
-community: "Community 231"
+community: "Procedure"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_231
+  - community/Procedure
 ---
 
 # Mission
 
 ## Connections
-- [[Brand Identity_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Weekly Upgrade — Sunday Maintenance Run]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_231
+#graphify/document #graphify/EXTRACTED #community/Procedure

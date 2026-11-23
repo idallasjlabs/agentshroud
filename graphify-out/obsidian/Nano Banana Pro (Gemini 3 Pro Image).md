@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/nano-banana-pro/SKILL.md"
 type: "document"
-community: "Community 382"
+community: "nano-banana-pro/SKILL.md"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_382
+  - community/nano-banana-pro/SKILLmd
 ---
 
 # Nano Banana Pro (Gemini 3 Pro Image)
 
 ## Connections
-- [[SKILL_226]] - `contains` [EXTRACTED]
+- [[nano-banana-proSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_382
+#graphify/document #graphify/EXTRACTED #community/nano-banana-pro/SKILLmd

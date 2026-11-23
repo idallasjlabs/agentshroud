@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "rationale"
-community: "Community 22"
+community: "PromptGuard"
 location: "L232"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_22
+  - community/PromptGuard
 ---
 
 # Normal markdown headers (# Title) should not be stripped.
 
 ## Connections
-- [[.test_preserves_legitimate_markdown()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_preserves_legitimate_markdown()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_22
+#graphify/rationale #graphify/EXTRACTED #community/PromptGuard

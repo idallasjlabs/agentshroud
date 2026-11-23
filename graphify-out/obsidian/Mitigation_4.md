@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
+source_file: "docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md"
 type: "document"
-community: "Community 859"
-location: "L50"
+community: "ADR-004: API Keys Never in Agent Container"
+location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_859
+  - community/ADR-004_API_Keys_Never_in_Agent_Container
 ---
 
 # Mitigation
 
 ## Connections
-- [[Consequences_7]] - `contains` [EXTRACTED]
+- [[Consequences_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_859
+#graphify/document #graphify/EXTRACTED #community/ADR-004_API_Keys_Never_in_Agent_Container

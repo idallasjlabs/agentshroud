@@ -1,48 +1,37 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "Community 45"
+community: "OAuthSecurityValidator"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_45
+  - community/OAuthSecurityValidator
 ---
 
 # OAuthSecurityValidator
 
 ## Connections
-- [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_58]] - `calls` [EXTRACTED]
-- [[.__init__()_115]] - `method` [EXTRACTED]
-- [[.check_state_reuse()]] - `method` [EXTRACTED]
-- [[.create_consent_cookie()]] - `method` [EXTRACTED]
-- [[.record_state_used()]] - `method` [EXTRACTED]
-- [[.register_known_shared_ids()]] - `method` [EXTRACTED]
-- [[.test_cookie_custom_max_age_expires_sooner()]] - `calls` [EXTRACTED]
-- [[.test_http_rejected()]] - `calls` [EXTRACTED]
-- [[.validate_consent_cookie()]] - `method` [EXTRACTED]
-- [[.validate_redirect_uri()]] - `method` [EXTRACTED]
-- [[.validate_request()]] - `method` [EXTRACTED]
-- [[.verify_pkce()]] - `method` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any_18]] - `uses` [INFERRED]
-- [[Exception_2]] - `uses` [INFERRED]
-- [[LogSanitizer]] - `uses` [INFERRED]
-- [[MFAGuard_2]] - `semantically_similar_to` [INFERRED]
+- [[dot-__init__()_112]] - `calls` [EXTRACTED]
+- [[dot-__init__()_50]] - `calls` [EXTRACTED]
+- [[dot-__init__()_201]] - `method` [EXTRACTED]
+- [[dot-check_state_reuse()]] - `method` [EXTRACTED]
+- [[dot-create_consent_cookie()]] - `method` [EXTRACTED]
+- [[dot-record_state_used()]] - `method` [EXTRACTED]
+- [[dot-register_known_shared_ids()]] - `method` [EXTRACTED]
+- [[dot-test_cookie_custom_max_age_expires_sooner()]] - `calls` [INFERRED]
+- [[dot-test_http_rejected()]] - `calls` [INFERRED]
+- [[dot-validate_consent_cookie()]] - `method` [EXTRACTED]
+- [[dot-validate_redirect_uri()]] - `method` [EXTRACTED]
+- [[dot-validate_request()]] - `method` [EXTRACTED]
+- [[dot-verify_pkce()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
-- [[TestClientValidation]] - `uses` [INFERRED]
 - [[TestConsentCookieBinding]] - `uses` [INFERRED]
-- [[TestPKCE]] - `uses` [INFERRED]
 - [[TestRedirectURI]] - `uses` [INFERRED]
-- [[TestStateValidation]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
-- [[middleware.py]] - `imports` [EXTRACTED]
-- [[oauth_security.py]] - `contains` [EXTRACTED]
-- [[validator()]] - `calls` [EXTRACTED]
-- [[web_proxy.py]] - `imports` [EXTRACTED]
+- [[WebProxy]] - `uses` [INFERRED]
+- [[middleware.py_2]] - `imports` [EXTRACTED]
+- [[oauth_security.py_2]] - `contains` [EXTRACTED]
+- [[validator()_1]] - `uses` [INFERRED]
+- [[web_proxy.py_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_45
+#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator

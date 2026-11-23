@@ -1,29 +1,16 @@
 ---
-source_file: "gateway/tests/test_mcp_policy.py"
+source_file: ""
 type: "code"
-community: "Community 35"
-location: "L252"
+community: "load_config"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_35
+  - graphify/EXTRACTED
+  - community/load_config
 ---
 
 # MonkeyPatch
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalStore_1]] - `uses` [INFERRED]
-- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
-- [[MCPPolicyAction]] - `uses` [INFERRED]
-- [[MCPPolicyConfig]] - `uses` [INFERRED]
-- [[MCPPolicyDecision]] - `uses` [INFERRED]
-- [[MCPPolicyEngine]] - `uses` [INFERRED]
-- [[MCPProxy]] - `uses` [INFERRED]
-- [[MCPToolCall]] - `uses` [INFERRED]
-- [[MCPToolResult]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[ToolRiskConfig_1]] - `uses` [INFERRED]
 - [[test_decision_records_soc_heatmap()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_35
+#graphify/code #graphify/EXTRACTED #community/load_config

@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-ux.md"
+source_file: ".agents/skills/i-ux/SKILL.md"
 type: "document"
-community: "Community 296"
-location: "L60"
+community: "Skill: UX Expert (UX)"
+location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_296
+  - community/Skill_UX_Expert_UX
 ---
 
 # Navigation Hierarchy Rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Information Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_296
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

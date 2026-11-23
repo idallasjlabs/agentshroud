@@ -1,18 +1,17 @@
 ---
-source_file: "docs/planning/v1.0/POST_FABLE5_TASK_DELEGATION.md"
+source_file: "skills/openclaw/weather/SKILL.md"
 type: "document"
-community: "Community 386"
-location: "L27"
+community: "Weather Skill"
+location: "L107"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_386
+  - community/Weather_Skill
 ---
 
 # Notes
 
 ## Connections
-- [[POST_FABLE5_TASK_DELEGATION]] - `contains` [EXTRACTED]
-- [[Post-fable-5 Task Delegation]] - `contains` [EXTRACTED]
+- [[Weather Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_386
+#graphify/document #graphify/EXTRACTED #community/Weather_Skill

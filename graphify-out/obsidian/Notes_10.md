@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/weather/SKILL.md"
+source_file: "skills/openclaw/bear-notes/SKILL.md"
 type: "document"
-community: "Community 852"
-location: "L107"
+community: "Bear Notes"
+location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_852
+  - community/Bear_Notes
 ---
 
 # Notes
 
 ## Connections
-- [[Weather Skill]] - `contains` [EXTRACTED]
+- [[Bear Notes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_852
+#graphify/document #graphify/EXTRACTED #community/Bear_Notes

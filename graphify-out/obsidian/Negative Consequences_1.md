@@ -1,12 +1,12 @@
 ---
-source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
+source_file: "docs/architecture/adr/ADR-003-two-network-container-isolation.md"
 type: "document"
-community: "Community 856"
-location: "L56"
+community: "ADR-003: Two-Network Container Isolation"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_856
+  - community/ADR-003_Two-Network_Container_Isolation
 ---
 
 # Negative Consequences
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Consequences_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_856
+#graphify/document #graphify/EXTRACTED #community/ADR-003_Two-Network_Container_Isolation

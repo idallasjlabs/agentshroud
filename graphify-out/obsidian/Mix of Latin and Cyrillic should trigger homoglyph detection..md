@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Community 22"
+community: "PromptGuard"
 location: "L835"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_22
+  - community/PromptGuard
 ---
 
 # Mix of Latin and Cyrillic should trigger homoglyph detection.
 
 ## Connections
-- [[.test_homoglyph_detection()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_homoglyph_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_22
+#graphify/rationale #graphify/EXTRACTED #community/PromptGuard

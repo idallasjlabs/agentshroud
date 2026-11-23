@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/trello/SKILL.md"
+source_file: "skills/openclaw/github/SKILL.md"
 type: "document"
-community: "Community 796"
-location: "L78"
+community: "GitHub Skill"
+location: "L159"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_796
+  - community/GitHub_Skill
 ---
 
 # Notes
 
 ## Connections
-- [[Trello Skill]] - `contains` [EXTRACTED]
+- [[GitHub Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_796
+#graphify/document #graphify/EXTRACTED #community/GitHub_Skill

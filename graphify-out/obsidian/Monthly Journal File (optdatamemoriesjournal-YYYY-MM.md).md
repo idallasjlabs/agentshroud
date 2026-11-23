@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/daily-memory-journal.txt"
 type: "concept"
-community: "Community 371"
+community: "OpenClaw Cron Jobs Reference & Recreation Guide"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_371
+  - community/OpenClaw_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # Monthly Journal File (/opt/data/memories/journal-YYYY-MM.md)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Prompt Daily Memory Journal]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_371
+#graphify/concept #graphify/EXTRACTED #community/OpenClaw_Cron_Jobs_Reference__Recreation_Guide

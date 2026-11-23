@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "Community 312"
+community: "GitGuard"
 location: "L408"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_312
+  - community/GitGuard
 ---
 
 # Move suspicious files to quarantine directory.
 
 ## Connections
-- [[._quarantine_suspicious_files()]] - `rationale_for` [EXTRACTED]
+- [[dot-_quarantine_suspicious_files()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_312
+#graphify/rationale #graphify/EXTRACTED #community/GitGuard

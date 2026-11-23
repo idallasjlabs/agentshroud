@@ -1,20 +1,17 @@
 ---
-source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
+source_file: "docs/setup/VAULT-SHARING-INSTRUCTIONS.md"
 type: "document"
-community: "Community 463"
-location: "L608"
+community: "1Password Vault Sharing Instructions"
+location: "L204"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_463
+  - community/1Password_Vault_Sharing_Instructions
 ---
 
 # Next Steps
 
 ## Connections
-- [[Decision Points]] - `contains` [EXTRACTED]
-- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
-- [[Implementation Timeline]] - `contains` [EXTRACTED]
-- [[Prerequisites (Before Implementation)]] - `contains` [EXTRACTED]
+- [[1Password Vault Sharing Instructions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_463
+#graphify/document #graphify/EXTRACTED #community/1Password_Vault_Sharing_Instructions

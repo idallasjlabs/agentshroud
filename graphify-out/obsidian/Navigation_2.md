@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-ui.md"
+source_file: ".agents/agents/i-ui.md"
 type: "document"
-community: "Community 629"
+community: "Skill: UI Expert (UI)"
 location: "L205"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_629
+  - community/Skill_UI_Expert_UI
 ---
 
 # Navigation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Component Patterns_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_629
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

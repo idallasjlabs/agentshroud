@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "Community 491"
+community: "AgentShroud Data Dictionary"
 location: "L108"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_491
+  - community/AgentShroud_Data_Dictionary
 ---
 
 # Network Security Entities
@@ -18,4 +18,4 @@ tags:
 - [[SecurityFinding_1]] - `contains` [EXTRACTED]
 - [[URLAnalysisResult_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_491
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary

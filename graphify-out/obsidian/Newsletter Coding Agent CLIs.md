@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt"
 type: "document"
-community: "Community 1681"
+community: "Newsletter: Coding Agent CLIs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1681
+  - community/Newsletter_Coding_Agent_CLIs
 ---
 
 # Newsletter: Coding Agent CLIs
 
-#graphify/document #graphify/EXTRACTED #community/Community_1681
+#graphify/document #graphify/EXTRACTED #community/Newsletter_Coding_Agent_CLIs
