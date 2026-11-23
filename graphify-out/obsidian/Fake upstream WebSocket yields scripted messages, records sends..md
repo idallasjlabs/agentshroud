@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "rationale"
-community: "Community 302"
+community: "_run_asgi"
 location: "L716"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_302
+  - community/_run_asgi
 ---
 
 # Fake upstream WebSocket: yields scripted messages, records sends.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeUpstreamWS]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_302
+#graphify/rationale #graphify/EXTRACTED #community/_run_asgi

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "rationale"
-community: "format_cve_report() (2)"
+community: "_make_report"
 location: "L90"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/format_cve_report_2
+  - community/_make_report
 ---
 
 # Format a Trivy scan result into a Telegram-ready Markdown message. Args:…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[format_cve_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/format_cve_report_2
+#graphify/rationale #graphify/EXTRACTED #community/_make_report

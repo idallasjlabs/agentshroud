@@ -1,17 +1,17 @@
 ---
-source_file: "scripts/sync-cve-registry.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "rationale"
-community: "browser/scripts/browse.py"
-location: "L578"
+community: "migrate-cve-registry-ghsa.py"
+location: "L123"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/browser/scripts/browsepy
+  - community/migrate-cve-registry-ghsapy
 ---
 
 # Fetch every published GitHub Security Advisory for *repo* (cursor-paginated).…
 
 ## Connections
-- [[fetch_ghsa_advisories()]] - `rationale_for` [EXTRACTED]
+- [[fetch_advisories()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/browser/scripts/browsepy
+#graphify/rationale #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

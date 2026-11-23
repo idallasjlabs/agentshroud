@@ -1,22 +1,17 @@
 ---
-source_file: "dashboard/README.md"
+source_file: "skills/custom/browser-fetch/SKILL.md"
 type: "document"
-community: "Community 465"
-location: "L20"
+community: "Browser Fetch Skill"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_465
+  - community/Browser_Fetch_Skill
 ---
 
 # Features
 
 ## Connections
-- [[Action Feed]] - `contains` [EXTRACTED]
-- [[AgentShroud Dashboard]] - `contains` [EXTRACTED]
-- [[Data Ledger Viewer]] - `contains` [EXTRACTED]
-- [[Kill Switch]] - `contains` [EXTRACTED]
-- [[Memory Browser]] - `contains` [EXTRACTED]
-- [[Network Inspector]] - `contains` [EXTRACTED]
+- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_465
+#graphify/document #graphify/EXTRACTED #community/Browser_Fetch_Skill

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 14"
+community: "ToolResultInjectionScanner"
 location: "L3245"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/ToolResultInjectionScanner
 ---
 
 # Filter outbound bot messages (sendMessage, etc.).
 
 ## Connections
-- [[._filter_outbound()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-_filter_outbound()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_14
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultInjectionScanner

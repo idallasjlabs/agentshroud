@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/ingest_api/main.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "TrustConfig"
-location: "L895"
+community: "ingest_api/config.py"
+location: "L326"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/ingest_api/configpy
 ---
 
 # Forget this' - permanently delete a ledger entry Implements right to erasure.…
 
 ## Connections
-- [[delete_ledger_entry()]] - `rationale_for` [EXTRACTED]
+- [[dot-delete_entry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustConfig
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/configpy

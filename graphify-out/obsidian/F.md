@@ -1,17 +1,17 @@
 ---
-source_file: "docs/project/glossary.md"
-type: "document"
-community: "Community 345"
-location: "L50"
+source_file: "browser-extension/lib/forwarder.test.js"
+type: "code"
+community: "forwarder.js"
+location: "L8"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_345
+  - community/forwarderjs
 ---
 
 # F
 
 ## Connections
-- [[AgentShroud Project Terminology]] - `contains` [EXTRACTED]
+- [[forwarder.test.js]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_345
+#graphify/code #graphify/EXTRACTED #community/forwarderjs

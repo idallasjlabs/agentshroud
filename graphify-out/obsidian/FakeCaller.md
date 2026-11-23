@@ -1,35 +1,27 @@
 ---
-source_file: "gateway/tests/test_soc_edge.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "Community 75"
-location: "L41"
+community: "test_soc_router_coverage.py"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/test_soc_router_coveragepy
 ---
 
 # FakeCaller
 
 ## Connections
-- [[.__init__()_207]] - `method` [EXTRACTED]
-- [[.is_owner()_4]] - `method` [EXTRACTED]
-- [[.require()_1]] - `method` [EXTRACTED]
-- [[.test_owner_only()]] - `calls` [EXTRACTED]
-- [[.test_rbac_denial_is_403()]] - `calls` [EXTRACTED]
-- [[.test_requires_manage_and_owner()]] - `calls` [EXTRACTED]
-- [[.test_unkill_owner_only()]] - `calls` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[EdgeService]] - `uses` [INFERRED]
-- [[EventBus]] - `uses` [INFERRED]
-- [[LockdownLevel_1]] - `uses` [INFERRED]
-- [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[RBAC is recorded, not enforced; owner is switchable.]] - `rationale_for` [EXTRACTED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler]] - `uses` [INFERRED]
-- [[VendorStats]] - `uses` [INFERRED]
+- [[dot-__init__()_41]] - `method` [EXTRACTED]
+- [[dot-is_group_admin()]] - `method` [EXTRACTED]
+- [[dot-is_owner()_2]] - `method` [EXTRACTED]
+- [[dot-require()_1]] - `method` [EXTRACTED]
+- [[Role]] - `uses` [INFERRED]
+- [[Stands in for SCLCaller RBAC require() is a no-op, owner is switchable.]] - `rationale_for` [EXTRACTED]
 - [[holder()]] - `calls` [EXTRACTED]
-- [[test_soc_edge.py]] - `contains` [EXTRACTED]
+- [[test_add_group_member_paths()]] - `calls` [EXTRACTED]
+- [[test_set_user_role_non_owner_denied()]] - `calls` [EXTRACTED]
+- [[test_set_user_role_owner_success()]] - `calls` [EXTRACTED]
+- [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_75
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

@@ -1,20 +1,17 @@
 ---
-source_file: "docker/README.md"
+source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Community 213"
-location: "L90"
+community: "Technical Details"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_213
+  - community/Technical_Details
 ---
 
 # Files
 
 ## Connections
-- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
-- [[Core Configuration]] - `contains` [EXTRACTED]
-- [[Documentation_4]] - `contains` [EXTRACTED]
-- [[Secrets_1]] - `contains` [EXTRACTED]
+- [[Technical Details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_213
+#graphify/document #graphify/EXTRACTED #community/Technical_Details

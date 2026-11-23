@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "Community 204"
+community: "AgentShroud Access Control Matrix"
 location: "L120"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_204
+  - community/AgentShroud_Access_Control_Matrix
 ---
 
 # External Service Access
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Agent Operational Permissions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_204
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix

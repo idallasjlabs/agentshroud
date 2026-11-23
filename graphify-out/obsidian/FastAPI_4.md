@@ -1,21 +1,21 @@
 ---
 source_file: "docs/vault/05 - Dependencies/fastapi.md"
 type: "document"
-community: "Community 1082"
+community: "fastapi.md"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1082
+  - community/fastapimd
 ---
 
 # FastAPI
 
 ## Connections
 - [[Key FastAPI Features Used]] - `contains` [EXTRACTED]
-- [[Purpose_186]] - `contains` [EXTRACTED]
-- [[Related Notes_41]] - `contains` [EXTRACTED]
-- [[Where Used_1]] - `contains` [EXTRACTED]
-- [[fastapi]] - `contains` [EXTRACTED]
+- [[Purpose_173]] - `contains` [EXTRACTED]
+- [[Related Notes_70]] - `contains` [EXTRACTED]
+- [[Where Used_5]] - `contains` [EXTRACTED]
+- [[fastapi_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1082
+#graphify/document #graphify/EXTRACTED #community/fastapimd

@@ -1,37 +1,27 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "Community 137"
+community: "DraftEntry"
 location: "L46"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_137
+  - graphify/EXTRACTED
+  - community/DraftEntry
 ---
 
 # FetchOutcome
 
 ## Connections
-- [[.__call__()_9]] - `calls` [EXTRACTED]
-- [[.ok()_1]] - `method` [EXTRACTED]
-- [[Citation_1]] - `uses` [INFERRED]
-- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
-- [[CompetitorEntry_1]] - `uses` [INFERRED]
-- [[FetchOutcome_1]] - `uses` [INFERRED]
+- [[dot-__call__()_14]] - `calls` [EXTRACTED]
+- [[dot-__call__()_13]] - `references` [EXTRACTED]
+- [[dot-ok()_1]] - `method` [EXTRACTED]
 - [[Result of re-fetching a candidate citation URL through the web proxy.]] - `rationale_for` [EXTRACTED]
 - [[TestFetchOutcome]] - `uses` [INFERRED]
-- [[TestHttpxFetcher]] - `uses` [INFERRED]
-- [[TestMakeHttpxFetcher]] - `uses` [INFERRED]
-- [[TestSubmitAuth]] - `uses` [INFERRED]
-- [[TestSubmitEndpoint]] - `uses` [INFERRED]
-- [[TestVerifyEntry]] - `uses` [INFERRED]
-- [[TestVerifyReport]] - `uses` [INFERRED]
 - [[_FakeFetcher]] - `uses` [INFERRED]
 - [[_FakeFetcher_1]] - `uses` [INFERRED]
-- [[_FakeStreamResponse]] - `uses` [INFERRED]
-- [[_StreamResp]] - `uses` [INFERRED]
+- [[_fetch()]] - `calls` [EXTRACTED]
 - [[citation_verifier.py]] - `contains` [EXTRACTED]
 - [[test_citation_verifier.py]] - `imports` [EXTRACTED]
 - [[test_intel_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_137
+#graphify/code #graphify/EXTRACTED #community/DraftEntry

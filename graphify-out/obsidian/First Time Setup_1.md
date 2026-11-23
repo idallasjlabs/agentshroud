@@ -1,29 +1,19 @@
 ---
 source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
 type: "document"
-community: "Community 816"
-location: "L9"
+community: "Architecture Overview.md"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_816
+  - community/Architecture_Overviewmd
 ---
 
-# First Time Setup
+# First Time Setup.md
 
 ## Connections
 - [[First Time Setup]] - `contains` [EXTRACTED]
-- [[Prerequisites_13]] - `contains` [EXTRACTED]
-- [[Related Notes_66]] - `contains` [EXTRACTED]
-- [[Step 1 Create Secret Files]] - `contains` [EXTRACTED]
-- [[Step 2 Configure agentshroud.yaml]] - `contains` [EXTRACTED]
-- [[Step 3 Configure 1Password Items]] - `contains` [EXTRACTED]
-- [[Step 4 Build Container Images]] - `contains` [EXTRACTED]
-- [[Step 5 Configure agentshroud.yaml]] - `contains` [EXTRACTED]
-- [[Step 5 Start Containers]] - `contains` [EXTRACTED]
-- [[Step 6 Verify Setup]] - `contains` [EXTRACTED]
-- [[Step 7 Configure iOS Shortcuts (Optional)]] - `contains` [EXTRACTED]
-- [[Step 8 Verify Security Posture]] - `contains` [EXTRACTED]
-- [[Troubleshooting First Setup]] - `contains` [EXTRACTED]
+- [[Quick Reference]] - `references` [EXTRACTED]
+- [[Startup Sequence_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_816
+#graphify/document #graphify/EXTRACTED #community/Architecture_Overviewmd

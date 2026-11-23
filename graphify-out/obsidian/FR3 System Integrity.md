@@ -1,11 +1,11 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "concept"
-community: "Community 162"
+community: "IEC 62443 Compliance Matrix — AgentShroud"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_162
+  - community/IEC_62443_Compliance_Matrix__AgentShroud
 ---
 
 # FR3: System Integrity
@@ -13,10 +13,6 @@ tags:
 ## Connections
 - [[AgentShroud Semgrep SAST Configuration]] - `references` [EXTRACTED]
 - [[Re-enable Seccomp Profiles (ARM64 syscalls)]] - `conceptually_related_to` [INFERRED]
-- [[config_integrity.py]] - `references` [EXTRACTED]
-- [[encoding_detector.py]] - `references` [EXTRACTED]
-- [[heuristic_classifier.py]] - `references` [EXTRACTED]
 - [[iec-62443-matrix]] - `conceptually_related_to` [EXTRACTED]
-- [[prompt_guard.py]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_162
+#graphify/concept #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud

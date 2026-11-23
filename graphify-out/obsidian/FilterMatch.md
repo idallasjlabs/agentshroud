@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "Community 96"
+community: "lifespan.py"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_96
+  - community/lifespanpy
 ---
 
 # FilterMatch
 
 ## Connections
-- [[._classify_response_risk()]] - `references` [EXTRACTED]
-- [[.filter_response()]] - `calls` [EXTRACTED]
+- [[dot-_classify_response_risk()]] - `references` [EXTRACTED]
+- [[dot-filter_response()_2]] - `calls` [EXTRACTED]
 - [[A single match found by the outbound filter.]] - `rationale_for` [EXTRACTED]
 - [[outbound_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_96
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

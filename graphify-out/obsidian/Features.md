@@ -1,22 +1,22 @@
 ---
-source_file: "browser-extension/README.md"
+source_file: "dashboard/README.md"
 type: "document"
-community: "Community 587"
-location: "L47"
+community: "Features"
+location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_587
+  - community/Features
 ---
 
 # Features
 
 ## Connections
-- [[1. URL Forwarder]] - `contains` [EXTRACTED]
-- [[2. Page Clipper]] - `contains` [EXTRACTED]
-- [[3. Form Fill Request (Reverse Flow)]] - `contains` [EXTRACTED]
-- [[4. Tab Session Exporter]] - `contains` [EXTRACTED]
-- [[5. Reading List Queue]] - `contains` [EXTRACTED]
-- [[Browser Extension]] - `contains` [EXTRACTED]
+- [[Action Feed]] - `contains` [EXTRACTED]
+- [[AgentShroud Dashboard]] - `contains` [EXTRACTED]
+- [[Data Ledger Viewer]] - `contains` [EXTRACTED]
+- [[Kill Switch]] - `contains` [EXTRACTED]
+- [[Memory Browser]] - `contains` [EXTRACTED]
+- [[Network Inspector]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_587
+#graphify/document #graphify/EXTRACTED #community/Features

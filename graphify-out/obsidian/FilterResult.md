@@ -1,26 +1,22 @@
 ---
-source_file: "gateway/security/outbound_filter.py"
+source_file: "gateway/security/xml_leak_filter.py"
 type: "code"
-community: "Community 63"
-location: "L54"
+community: "middleware.py"
+location: "L20"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_63
+  - graphify/EXTRACTED
+  - community/middlewarepy
 ---
 
 # FilterResult
 
 ## Connections
-- [[.filter_response()]] - `references` [EXTRACTED]
-- [[Any_29]] - `uses` [INFERRED]
-- [[AuditChain]] - `uses` [INFERRED]
-- [[AuditChainEntry]] - `uses` [INFERRED]
-- [[PipelineAction]] - `uses` [INFERRED]
-- [[PipelineResult]] - `uses` [INFERRED]
-- [[Result of filtering agent response content.]] - `rationale_for` [EXTRACTED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
-- [[outbound_filter.py]] - `contains` [EXTRACTED]
-- [[pipeline.py]] - `imports` [EXTRACTED]
+- [[dot-filter_response()_1]] - `calls` [EXTRACTED]
+- [[dot-scan_command_injection()]] - `calls` [EXTRACTED]
+- [[Result from XML leak filtering.]] - `rationale_for` [EXTRACTED]
+- [[TestCommandInjectionScan]] - `uses` [INFERRED]
+- [[test_xml_leak_filter.py]] - `imports` [EXTRACTED]
+- [[xml_leak_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_63
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

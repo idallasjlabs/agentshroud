@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "Community 164"
+community: "AgentShroud Security Architecture"
 location: "L506"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_164
+  - community/AgentShroud_Security_Architecture
 ---
 
 # For Open-Source Contributors
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
 - [[Contributing]] - `contains` [EXTRACTED]
-- [[Project Goals_1]] - `contains` [EXTRACTED]
+- [[Project Goals]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_164
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
